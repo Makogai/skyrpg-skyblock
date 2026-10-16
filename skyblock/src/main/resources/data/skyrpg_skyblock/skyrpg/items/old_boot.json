@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "OLD_BOOT",
+ "base": "minecraft:leather_boots",
+ "name": "Old Boot",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

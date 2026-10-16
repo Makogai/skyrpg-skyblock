@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ELECTRON_TRANSMITTER",
+ "base": "minecraft:paper",
+ "name": "Electron Transmitter",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

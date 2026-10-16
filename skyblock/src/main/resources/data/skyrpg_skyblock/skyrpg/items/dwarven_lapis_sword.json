@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "DWARVEN_LAPIS_SWORD",
+ "base": "minecraft:diamond_sword",
+ "name": "Scavenged Lapis Sword",
+ "rarity": "special",
+ "type": "",
+ "glint": true
+}

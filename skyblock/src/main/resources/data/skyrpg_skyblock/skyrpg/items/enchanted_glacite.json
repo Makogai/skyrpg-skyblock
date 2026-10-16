@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_GLACITE",
+ "base": "minecraft:packed_ice",
+ "name": "Enchanted Glacite",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1920,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GOLDEN_CARROT",
+ "base": "minecraft:golden_carrot",
+ "name": "Golden Carrot",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   }
+  }
+ }
+}

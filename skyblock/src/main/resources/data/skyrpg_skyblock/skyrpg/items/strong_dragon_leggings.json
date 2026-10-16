@@ -1,0 +1,96 @@
+{
+ "skyblock_id": "STRONG_DRAGON_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Strong Dragon Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 25,
+  "health": 100,
+  "defense": 140
+ },
+ "color": "#E09419",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 60
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 65
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 110
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 160
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 16
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 12
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "STRONG_DRAGON": 10
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

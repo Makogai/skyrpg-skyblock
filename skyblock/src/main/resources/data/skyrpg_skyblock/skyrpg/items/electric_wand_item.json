@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ELECTRIC_WAND_ITEM",
+ "base": "minecraft:stick",
+ "name": "Electric Wand",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 10
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

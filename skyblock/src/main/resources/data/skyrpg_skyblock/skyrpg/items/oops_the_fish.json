@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OOPS_THE_FISH",
+ "base": "minecraft:tropical_fish",
+ "name": "Oops the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

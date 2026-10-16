@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_MUSHROOM_SOUP",
+ "base": "minecraft:mushroom_stew",
+ "name": "Enchanted Mushroom Soup",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 82000
+ }
+}

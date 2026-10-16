@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WET_BOOK",
+ "base": "minecraft:book",
+ "name": "Wet Book",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 38400,
+  "has_uuid": true
+ }
+}

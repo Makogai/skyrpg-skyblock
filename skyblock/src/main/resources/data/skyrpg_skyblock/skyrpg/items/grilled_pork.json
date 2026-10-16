@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GRILLED_PORK",
+ "base": "minecraft:cooked_porkchop",
+ "name": "Cooked Porkchop",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

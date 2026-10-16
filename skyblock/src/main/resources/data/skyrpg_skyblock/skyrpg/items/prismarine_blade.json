@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "PRISMARINE_BLADE",
+ "base": "minecraft:prismarine_shard",
+ "name": "Prismarine Blade",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 50,
+  "strength": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 160,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

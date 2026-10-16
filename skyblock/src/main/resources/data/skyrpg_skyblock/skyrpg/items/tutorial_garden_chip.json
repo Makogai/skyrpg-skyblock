@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "TUTORIAL_GARDEN_CHIP",
+ "base": "minecraft:paper",
+ "name": "Cropshot Chip",
+ "rarity": "rare",
+ "category": "GARDEN_CHIP",
+ "type": "Garden Chip",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_trade": false,
+  "has_uuid": true,
+  "can_auction": false
+ }
+}

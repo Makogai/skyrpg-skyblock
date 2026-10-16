@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "EMBER_ROD",
+ "base": "minecraft:blaze_rod",
+ "name": "Ember Rod",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 80,
+  "strength": 35,
+  "weapon_ability_damage": 30,
+  "intelligence": 50
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum": true
+ }
+}

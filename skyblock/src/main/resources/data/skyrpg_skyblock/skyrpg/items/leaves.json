@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVES",
+ "base": "minecraft:oak_leaves",
+ "name": "Oak Leaves",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

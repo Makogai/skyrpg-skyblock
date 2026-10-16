@@ -1,0 +1,48 @@
+{
+ "skyblock_id": "CHAMP_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Rod of Champions",
+ "rarity": "rare",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 100,
+  "strength": 100,
+  "sea_creature_chance": 4,
+  "fishing_speed": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 17800,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 15
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "parent": {
+    "CHAMP_ROD": "LEGEND_ROD"
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

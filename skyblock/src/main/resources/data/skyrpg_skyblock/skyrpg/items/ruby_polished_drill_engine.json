@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "RUBY_POLISHED_DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Ruby-Polished Drill Engine",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 103000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 8,
+   "game_stage": "EXPERT",
+   "parent": {
+    "RUBY_POLISHED_DRILL_ENGINE": "SAPPHIRE_POLISHED_DRILL_ENGINE"
+   }
+  }
+ }
+}

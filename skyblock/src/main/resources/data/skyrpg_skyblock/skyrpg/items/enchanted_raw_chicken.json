@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_RAW_CHICKEN",
+ "base": "minecraft:chicken",
+ "name": "Enchanted Raw Chicken",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

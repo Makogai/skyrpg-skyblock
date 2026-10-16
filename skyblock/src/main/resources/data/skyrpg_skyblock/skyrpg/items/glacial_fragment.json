@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "GLACIAL_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Glacial Fragment",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7A small piece of a giant glacier. Doesn't ever melt.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "GLACIAL_RING"
+    ]
+   }
+  ]
+ }
+}

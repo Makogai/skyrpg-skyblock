@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "EVERBURNING_FLAME",
+ "base": "minecraft:paper",
+ "name": "Everburning Flame",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 159855
+ }
+}

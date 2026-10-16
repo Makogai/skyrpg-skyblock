@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WILD_ROSE",
+ "base": "minecraft:rose_bush",
+ "name": "Wild Rose",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 4,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

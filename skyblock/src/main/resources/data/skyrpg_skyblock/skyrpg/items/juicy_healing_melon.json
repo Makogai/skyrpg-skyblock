@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "JUICY_HEALING_MELON",
+ "base": "minecraft:melon_slice",
+ "name": "Juicy Healing Melon",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "motes_sell_price": 5,
+  "origin": "RIFT",
+  "item_specific": {
+   "heal": 9,
+   "mana_cost": 50
+  },
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 2
+   }
+  ]
+ }
+}

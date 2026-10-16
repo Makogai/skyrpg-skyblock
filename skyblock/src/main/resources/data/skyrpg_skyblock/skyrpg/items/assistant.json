@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ASSISTANT",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Move Jerry",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_auction": false
+ }
+}

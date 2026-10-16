@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DOUBLE_PLANT",
+ "base": "minecraft:sunflower",
+ "name": "Sunflower",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 2.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

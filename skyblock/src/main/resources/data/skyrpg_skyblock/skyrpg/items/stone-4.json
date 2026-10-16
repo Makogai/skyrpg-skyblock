@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:4",
+ "base": "minecraft:polished_diorite",
+ "name": "Polished Diorite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

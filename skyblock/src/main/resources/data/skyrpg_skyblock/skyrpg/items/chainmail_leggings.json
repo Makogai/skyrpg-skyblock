@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CHAINMAIL_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Chainmail Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

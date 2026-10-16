@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WOOL",
+ "base": "minecraft:white_wool",
+ "name": "White Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.1,
+    "COLLECT_ITEM": 2.0
+   }
+  }
+ }
+}

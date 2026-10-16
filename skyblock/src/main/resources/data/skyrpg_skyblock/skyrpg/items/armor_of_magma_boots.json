@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_MAGMA_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Armor of Magma Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 45,
+  "defense": 15
+ },
+ "color": "#FF9300",
+ "hypixel": {
+  "npc_sell_price": 30000,
+  "museum": true
+ }
+}

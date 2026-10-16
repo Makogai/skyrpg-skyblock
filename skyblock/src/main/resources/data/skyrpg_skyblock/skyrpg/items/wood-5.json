@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD:5",
+ "base": "minecraft:dark_oak_planks",
+ "name": "Dark Oak Planks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

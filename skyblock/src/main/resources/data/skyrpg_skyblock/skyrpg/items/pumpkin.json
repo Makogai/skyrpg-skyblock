@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PUMPKIN",
+ "base": "minecraft:pumpkin",
+ "name": "Pumpkin",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 4.5,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

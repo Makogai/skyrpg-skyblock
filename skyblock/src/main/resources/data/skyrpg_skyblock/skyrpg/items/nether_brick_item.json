@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "NETHER_BRICK_ITEM",
+ "base": "minecraft:nether_brick",
+ "name": "Nether Brick",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

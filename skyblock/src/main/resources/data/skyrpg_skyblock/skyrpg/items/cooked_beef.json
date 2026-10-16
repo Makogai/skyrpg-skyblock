@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKED_BEEF",
+ "base": "minecraft:cooked_beef",
+ "name": "Cooked Beef",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RUBBER_SNORKEL",
+ "base": "minecraft:paper",
+ "name": "Rubber Snorkel",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "hypixel": {
+  "npc_sell_price": 25000
+ }
+}

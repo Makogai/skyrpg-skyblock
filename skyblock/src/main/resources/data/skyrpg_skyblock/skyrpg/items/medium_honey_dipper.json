@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MEDIUM_HONEY_DIPPER",
+ "base": "minecraft:paper",
+ "name": "Medium Honey Dipper",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_auction": false,
+  "can_recombobulate": false
+ }
+}

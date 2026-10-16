@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DASHING_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Dashing Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 1,
+  "speed": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

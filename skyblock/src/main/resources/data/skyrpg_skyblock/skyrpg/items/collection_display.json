@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "COLLECTION_DISPLAY",
+ "base": "minecraft:diamond_block",
+ "name": "Collection Display",
+ "rarity": "uncommon",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Show off your collection progress!",
+ "unstackable": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false
+ }
+}

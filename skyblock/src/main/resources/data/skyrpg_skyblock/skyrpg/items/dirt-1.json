@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DIRT:1",
+ "base": "minecraft:coarse_dirt",
+ "name": "Coarse Dirt",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

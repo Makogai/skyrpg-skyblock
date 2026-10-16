@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SPOOKY_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Spooky Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 50
+ },
+ "color": "#606060",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "SPOOKY": "BAT_PERSON"
+   },
+   "armor_set_donation_xp": {
+    "SPOOKY": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

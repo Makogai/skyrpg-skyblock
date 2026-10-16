@@ -1,0 +1,52 @@
+{
+ "skyblock_id": "HEARTMAW_DAGGER",
+ "base": "minecraft:iron_sword",
+ "name": "Deathripper Dagger",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 160,
+  "strength": 75,
+  "crit_chance": 10,
+  "crit_damage": 25,
+  "attack_speed": 20
+ },
+ "hypixel": {
+  "sword_type": "DAGGER",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   },
+   {
+    "slot_type": "OPAL",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 500000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 20,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

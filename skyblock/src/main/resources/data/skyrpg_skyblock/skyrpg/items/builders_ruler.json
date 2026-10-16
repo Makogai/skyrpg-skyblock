@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "BUILDERS_RULER",
+ "base": "minecraft:paper",
+ "name": "Builder's Ruler",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

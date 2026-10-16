@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "IRON_HOE",
+ "base": "minecraft:iron_hoe",
+ "name": "Iron Hoe",
+ "rarity": "common",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

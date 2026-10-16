@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MINING_PUMPKIN",
+ "base": "minecraft:pumpkin_pie",
+ "name": "Powder Pie",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 1
+   }
+  ]
+ }
+}

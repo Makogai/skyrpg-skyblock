@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENDER_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Ender Necklace",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "health": 15,
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 12
+   }
+  ],
+  "soulbound": "COOP"
+ }
+}

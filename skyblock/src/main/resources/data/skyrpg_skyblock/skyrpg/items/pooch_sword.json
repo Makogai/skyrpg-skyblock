@@ -1,0 +1,46 @@
+{
+ "skyblock_id": "POOCH_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Pooch Sword",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 160,
+  "strength": 80,
+  "attack_speed": 5,
+  "speed": 10
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

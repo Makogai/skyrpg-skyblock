@@ -1,0 +1,110 @@
+{
+ "skyblock_id": "SKELETON_GRUNT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Skeleton Grunt Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "crit_damage": 15,
+  "health": 33,
+  "defense": 38
+ },
+ "color": "#E1EB34",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 1
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_GRUNT": 3
+   },
+   "game_stage": "AMATEUR"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    38,
+    41,
+    44,
+    49,
+    52,
+    57,
+    62,
+    67,
+    73,
+    80
+   ],
+   "HEALTH": [
+    33,
+    36,
+    38,
+    41,
+    43,
+    46,
+    50,
+    52,
+    56,
+    60
+   ],
+   "CRITICAL_DAMAGE": [
+    15,
+    16,
+    18,
+    19,
+    21,
+    23,
+    24,
+    27,
+    29,
+    32
+   ]
+  }
+ }
+}

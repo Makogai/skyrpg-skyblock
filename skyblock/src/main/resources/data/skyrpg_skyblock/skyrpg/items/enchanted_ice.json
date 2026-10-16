@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_ICE",
+ "base": "minecraft:ice",
+ "name": "Enchanted Ice",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 80,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 80.0
+   }
+  }
+ }
+}

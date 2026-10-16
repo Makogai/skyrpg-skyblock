@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "NIGHT_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Night Crystal",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 52000
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HOPPER_MINECART",
+ "base": "minecraft:hopper_minecart",
+ "name": "Minecart with Hopper",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 22
+ }
+}

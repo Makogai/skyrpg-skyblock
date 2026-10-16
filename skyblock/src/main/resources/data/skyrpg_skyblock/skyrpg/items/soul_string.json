@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SOUL_STRING",
+ "base": "minecraft:paper",
+ "name": "Soul String",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Rare string that can be used to craft weapons that are infused with the power of Arachne.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "can_recombobulate": false,
+  "force_wipe_recomb": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

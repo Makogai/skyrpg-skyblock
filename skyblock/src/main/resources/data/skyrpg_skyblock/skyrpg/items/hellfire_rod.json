@@ -1,0 +1,250 @@
+{
+ "skyblock_id": "HELLFIRE_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Hellfire Rod",
+ "rarity": "legendary",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 225,
+  "strength": 225,
+  "sea_creature_chance": 14,
+  "fishing_speed": 60,
+  "trophy_fish_chance": 25
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 35
+   }
+  ],
+  "npc_sell_price": 5634000,
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MOOGMA_PELT",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "CUP_OF_BLOOD",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 160
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "FLAMING_HEART",
+     "amount": 70
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 50
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "ORB_OF_ENERGY",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 60
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HORN_OF_TAURUS",
+     "amount": 90
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 25
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1600
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 4
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 20,
+   "category": "FISHING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

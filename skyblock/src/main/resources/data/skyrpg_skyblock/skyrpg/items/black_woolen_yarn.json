@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BLACK_WOOLEN_YARN",
+ "base": "minecraft:black_wool",
+ "name": "Black Woolen Yarn",
+ "rarity": "mythic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0,
+  "hide_from_viewrecipe_command": true,
+  "can_recombobulate": false
+ }
+}

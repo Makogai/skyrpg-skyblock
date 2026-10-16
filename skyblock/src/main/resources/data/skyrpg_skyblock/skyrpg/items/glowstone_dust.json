@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "GLOWSTONE_DUST",
+ "base": "minecraft:glowstone_dust",
+ "name": "Glowstone Dust",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SPARKLING_AMULET",
+ "base": "minecraft:paper",
+ "name": "Sparkling Amulet",
+ "rarity": "special",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "hypixel": {
+  "safari_only": true
+ }
+}

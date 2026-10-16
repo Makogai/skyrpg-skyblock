@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "FEMURGROWTH_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Femurgrowth Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "rift_time": 65,
+  "rift_mana_regen": 5,
+  "rift_walk_speed": -4
+ },
+ "description": "§8It's infected slime, it makes you slower.",
+ "color": "#48FF00",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

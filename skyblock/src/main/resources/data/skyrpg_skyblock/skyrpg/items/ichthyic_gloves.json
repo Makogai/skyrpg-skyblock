@@ -1,0 +1,95 @@
+{
+ "skyblock_id": "ICHTHYIC_GLOVES",
+ "base": "minecraft:paper",
+ "name": "Ichthyic Gloves",
+ "rarity": "rare",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "health": 8,
+  "fishing_speed": 6
+ },
+ "hypixel": {
+  "npc_sell_price": 4500,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MOOGMA_PELT",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "CUP_OF_BLOOD",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "ICHTHYIC": 6
+   },
+   "parent": {
+    "ICHTHYIC": "FINWAVE"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

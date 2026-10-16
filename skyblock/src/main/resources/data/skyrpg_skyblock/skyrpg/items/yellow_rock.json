@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "YELLOW_ROCK",
+ "base": "minecraft:gold_nugget",
+ "name": "Yellow Rock",
+ "rarity": "common",
+ "type": "",
+ "description": "§8§oA little rough around the edges, but beauty can be found within.",
+ "glint": true
+}

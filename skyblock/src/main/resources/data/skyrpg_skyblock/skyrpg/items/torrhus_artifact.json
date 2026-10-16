@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "TORRHUS_ARTIFACT",
+ "base": "minecraft:paper",
+ "name": "Torrhus Artifact",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "helix_fortune": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 30000
+ }
+}

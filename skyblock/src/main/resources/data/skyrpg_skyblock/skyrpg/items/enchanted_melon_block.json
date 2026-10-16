@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_MELON_BLOCK",
+ "base": "minecraft:melon",
+ "name": "Enchanted Melon",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 51200,
+  "can_place": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_COAL",
+ "base": "minecraft:coal",
+ "name": "Enchanted Coal",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 100.0
+   },
+   "mining": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

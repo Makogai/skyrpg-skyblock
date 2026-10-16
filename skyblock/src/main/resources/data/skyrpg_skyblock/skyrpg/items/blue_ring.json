@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BLUE_RING",
+ "base": "minecraft:paper",
+ "name": "Blue Ring",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7As the Octopus makes its great escape, it accidentally leaves something behind...",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

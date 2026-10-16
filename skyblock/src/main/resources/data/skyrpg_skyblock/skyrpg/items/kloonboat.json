@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "KLOONBOAT",
+ "base": "minecraft:oak_boat",
+ "name": "Kloonboat",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "has_uuid": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

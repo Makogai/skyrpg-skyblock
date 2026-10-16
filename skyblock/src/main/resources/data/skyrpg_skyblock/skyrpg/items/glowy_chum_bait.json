@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GLOWY_CHUM_BAIT",
+ "base": "minecraft:paper",
+ "name": "Glowy Chum Bait",
+ "rarity": "uncommon",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 25
+ }
+}

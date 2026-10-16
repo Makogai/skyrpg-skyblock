@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HORSEZOOKA",
+ "base": "minecraft:furnace_minecart",
+ "name": "Horsezooka",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

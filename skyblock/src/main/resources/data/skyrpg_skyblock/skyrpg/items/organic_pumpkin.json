@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_PUMPKIN",
+ "base": "minecraft:pumpkin",
+ "name": "Organic Pumpkin",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

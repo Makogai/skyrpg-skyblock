@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ABSOLUTE_ENDER_PEARL",
+ "base": "minecraft:paper",
+ "name": "Absolute Ender Pearl",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 11200,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 720.0
+   }
+  }
+ }
+}

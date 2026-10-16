@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "TACTICIAN_SWORD",
+ "base": "minecraft:wooden_sword",
+ "name": "Tactician's Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 50,
+  "crit_chance": 20
+ },
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

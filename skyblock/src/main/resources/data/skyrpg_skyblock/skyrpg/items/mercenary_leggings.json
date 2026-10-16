@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "MERCENARY_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Mercenary Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 10,
+  "health": 60,
+  "defense": 60
+ },
+ "hypixel": {
+  "npc_sell_price": 15000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MERCENARY": 1
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

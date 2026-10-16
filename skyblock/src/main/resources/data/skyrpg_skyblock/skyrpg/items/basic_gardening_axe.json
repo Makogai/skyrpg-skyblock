@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "BASIC_GARDENING_AXE",
+ "base": "minecraft:iron_axe",
+ "name": "Basic Gardening Axe",
+ "rarity": "uncommon",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "stats": {
+  "farming_fortune": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "BASIC_GARDENING_AXE": "ADVANCED_GARDENING_AXE"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

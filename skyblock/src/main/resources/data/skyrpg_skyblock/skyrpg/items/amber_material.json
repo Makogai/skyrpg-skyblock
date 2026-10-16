@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "AMBER_MATERIAL",
+ "base": "minecraft:paper",
+ "name": "Amber Material",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

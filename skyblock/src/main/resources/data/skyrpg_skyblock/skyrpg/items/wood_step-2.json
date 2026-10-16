@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP:2",
+ "base": "minecraft:birch_slab",
+ "name": "Birch Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

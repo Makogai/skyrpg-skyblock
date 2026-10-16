@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WOOD_HOE",
+ "base": "minecraft:wooden_hoe",
+ "name": "Wooden Hoe",
+ "rarity": "common",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

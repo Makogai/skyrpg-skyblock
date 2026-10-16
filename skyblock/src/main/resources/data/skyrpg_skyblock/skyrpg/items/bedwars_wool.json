@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BEDWARS_WOOL",
+ "base": "minecraft:brown_wool",
+ "name": "Tree-like Wool",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Good for bridging.",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 10
+ }
+}

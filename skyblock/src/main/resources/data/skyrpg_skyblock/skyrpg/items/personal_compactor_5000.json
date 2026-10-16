@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PERSONAL_COMPACTOR_5000",
+ "base": "minecraft:dropper",
+ "name": "Personal Compactor 5000",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "glint": true,
+ "unstackable": true
+}

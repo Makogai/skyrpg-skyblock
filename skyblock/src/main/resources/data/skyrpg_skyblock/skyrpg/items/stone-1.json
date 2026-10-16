@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:1",
+ "base": "minecraft:granite",
+ "name": "Granite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

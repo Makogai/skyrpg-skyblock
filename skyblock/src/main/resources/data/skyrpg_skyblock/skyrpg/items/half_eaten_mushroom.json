@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "HALF_EATEN_MUSHROOM",
+ "base": "minecraft:paper",
+ "name": "Half-Eaten Mushroom",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§8§oWhatever was tasked with guarding this valuable mushroom looks to have gotten a little hungry.",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "item_specific": {
+   "permanent_health": 5,
+   "permanent_crops_farming_fortune": 12
+  }
+ }
+}

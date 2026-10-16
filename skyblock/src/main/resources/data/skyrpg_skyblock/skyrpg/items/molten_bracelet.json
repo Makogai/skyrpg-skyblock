@@ -1,0 +1,125 @@
+{
+ "skyblock_id": "MOLTEN_BRACELET",
+ "base": "minecraft:paper",
+ "name": "Molten Bracelet",
+ "rarity": "epic",
+ "category": "BRACELET",
+ "type": "Bracelet",
+ "stats": {
+  "strength": 20,
+  "health": 30,
+  "defense": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 93750,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 5000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 10000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 15000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 30000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 6
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 8
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 70000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 10
+    }
+   ]
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 500
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MOLTEN": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

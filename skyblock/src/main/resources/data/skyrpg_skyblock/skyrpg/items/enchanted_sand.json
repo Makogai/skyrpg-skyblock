@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SAND",
+ "base": "minecraft:sand",
+ "name": "Enchanted Sand",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

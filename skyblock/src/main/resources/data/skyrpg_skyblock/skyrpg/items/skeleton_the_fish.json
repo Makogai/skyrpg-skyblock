@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKELETON_THE_FISH",
+ "base": "minecraft:cooked_cod",
+ "name": "Skeleton the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

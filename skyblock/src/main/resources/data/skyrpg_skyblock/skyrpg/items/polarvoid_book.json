@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "POLARVOID_BOOK",
+ "base": "minecraft:book",
+ "name": "Polarvoid Book",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

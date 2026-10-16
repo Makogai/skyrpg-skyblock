@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ENCHANTED_RUBY_VEILSHROOM",
+ "base": "minecraft:paper",
+ "name": "Enchanted Ruby Veilshroom",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Ruby Veilshrooms only grow in Torrhus Canyon, nurtured by the relentless heat of the blazing sun beating down upon them.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "sort_by_accessory_tier": true
+   }
+  ]
+ }
+}

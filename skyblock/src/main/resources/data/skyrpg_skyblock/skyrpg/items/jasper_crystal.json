@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "JASPER_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Jasper Crystal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

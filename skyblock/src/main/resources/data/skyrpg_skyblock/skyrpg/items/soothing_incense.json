@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SOOTHING_INCENSE",
+ "base": "minecraft:paper",
+ "name": "Soothing Incense",
+ "rarity": "special",
+ "type": "",
+ "description": "§8§oA stick of a sweet-smelling incense. It makes you feel at ease.",
+ "hypixel": {
+  "safari_only": true
+ }
+}

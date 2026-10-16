@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "POLYMORPH_WAND",
+ "base": "minecraft:stick",
+ "name": "Polymorph Wand",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 64000
+ }
+}

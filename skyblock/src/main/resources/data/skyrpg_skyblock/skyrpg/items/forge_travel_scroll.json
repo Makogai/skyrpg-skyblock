@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "FORGE_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the Dwarven Forge",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

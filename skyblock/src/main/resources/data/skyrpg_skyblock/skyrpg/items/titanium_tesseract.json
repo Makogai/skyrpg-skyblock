@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TITANIUM_TESSERACT",
+ "base": "minecraft:paper",
+ "name": "Titanium Tesseract",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

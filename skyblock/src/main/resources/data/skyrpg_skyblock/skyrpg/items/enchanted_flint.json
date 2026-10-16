@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_FLINT",
+ "base": "minecraft:flint",
+ "name": "Enchanted Flint",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

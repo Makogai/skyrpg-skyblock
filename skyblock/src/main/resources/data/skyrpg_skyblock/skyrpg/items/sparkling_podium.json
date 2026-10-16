@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SPARKLING_PODIUM",
+ "base": "minecraft:paper",
+ "name": "Sparkling Podium",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "furniture": "SPARKLING_PODIUM",
+  "soulbound": "COOP"
+ }
+}

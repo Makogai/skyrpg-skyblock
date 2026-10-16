@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "GLACITE_SHARD",
+ "base": "minecraft:paper",
+ "name": "Glacite Chunk",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 25
+   }
+  ]
+ }
+}

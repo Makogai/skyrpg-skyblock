@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "MINERAL_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Mineral Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 125,
+  "speed": 15,
+  "block_fortune": 25
+ },
+ "color": "#CCE5FF",
+ "hypixel": {
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "MINERAL": "GLOSSY_MINERAL"
+   },
+   "armor_set_donation_xp": {
+    "MINERAL": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

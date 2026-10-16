@@ -1,0 +1,50 @@
+{
+ "skyblock_id": "GEMSTONE_GAUNTLET",
+ "base": "minecraft:player_head",
+ "name": "Gemstone Gauntlet",
+ "rarity": "legendary",
+ "category": "GAUNTLET",
+ "type": "Gauntlet",
+ "stats": {
+  "damage": 300,
+  "strength": 50,
+  "mining_speed": 800,
+  "breaking_power": 8
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYxODUyMTY2MzY1NCwKICAicHJvZmlsZUlkIiA6ICIxZDUyMzNkMzg4NjI0YmFmYjAwZTMxNTBhN2FhM2E4OSIsCiAgInByb2ZpbGVOYW1lIiA6ICIwMDAwMDAwMDAwMDAwMDBKIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdiZjAxYzE5OGY2ZTE2OTY1ZTIzMDIzNWNkMjJhNWE5ZjRhNDBlNDA5NDEyMzQ0Nzg5NDhmZjlhNTZlNTE3NzUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "SOQb/wJC4uwWbZOKEdbt9k6yVTvofC/ax8qME9rSairtZhZe4vuA7iV+QVXi9rYP1ssh9gMCyeuIA7+jcQ1xwg4l+TUzZUUTV9zPz+lvKTKdQNFLHbfUWo452MTy3Gf79UbRQprkCBSgi8Tl4NPwlIVxFV7s+D+/agS4oga6skqvZDX5/lakZBVWeed6gJtgBOsRJQZWAolJrOK7nz1wLR2I5w4nWKZhuKsHa5Xe47OKwopEuGLH8ZH4hjovY77vszmjJ6g31dq92WnKKhwkifb9k520FYlwZcH1tbXf5h8RBqoT7dylBlMuQg3MaRqn3QMb1ZeU8Y/3On/VmWP8GGH/rv44MoBQ0bNlG9ZI3b2qhRF5lCVER2cRt2J2U2NNLFTL8AkcHNqWt8bVnlFIFPzhypdVRzUKi6xOtDVwQZmvlHUPnQUbH30Xkb99nducU0JNcQPIFIV1WDdEXKvM7541zVBl3tqQogUVqfHza+wzH3uQZUGqY2xmQA70HcQDby35d4ilQh++AMoqK/J97Z3QIde/znWEv2M3z9IF1no+GRmclq/bM4MAcdhN5PxsH60hOINwwVmQCtPV8spWQHYia5zM8nXuyOsEfKNQBLuJHUXirHKf3kiWiRbt5aTqtkUHh1k2DYpAiHViAlY2cpWHnwUByxiRTDAoDUEMaLw="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JADE"
+   },
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "TOPAZ"
+   },
+   {
+    "slot_type": "SAPPHIRE"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

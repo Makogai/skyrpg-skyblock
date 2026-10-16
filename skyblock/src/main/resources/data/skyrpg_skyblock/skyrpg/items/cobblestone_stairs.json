@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COBBLESTONE_STAIRS",
+ "base": "minecraft:cobblestone_stairs",
+ "name": "Cobblestone Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

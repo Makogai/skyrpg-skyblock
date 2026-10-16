@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PARTY_THE_FISH",
+ "base": "minecraft:tropical_fish",
+ "name": "Party the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "museum": true
+ }
+}

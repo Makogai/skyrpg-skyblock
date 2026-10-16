@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "STONE_AXE",
+ "base": "minecraft:stone_axe",
+ "name": "Stone Axe",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

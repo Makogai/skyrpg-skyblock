@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_GUNPOWDER",
+ "base": "minecraft:gunpowder",
+ "name": "Enchanted Gunpowder",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 500.0
+   },
+   "combat": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

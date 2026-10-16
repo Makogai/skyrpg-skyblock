@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "STARLIGHT_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Starlight Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 15,
+  "defense": 15,
+  "intelligence": 30
+ },
+ "color": "#D400FF",
+ "hypixel": {
+  "npc_sell_price": 15000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "STARLIGHT": 2
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

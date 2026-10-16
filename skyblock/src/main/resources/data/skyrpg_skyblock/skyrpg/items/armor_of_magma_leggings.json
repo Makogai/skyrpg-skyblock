@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_MAGMA_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Armor of Magma Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 75,
+  "defense": 25
+ },
+ "color": "#FF9300",
+ "hypixel": {
+  "npc_sell_price": 53000,
+  "museum": true
+ }
+}

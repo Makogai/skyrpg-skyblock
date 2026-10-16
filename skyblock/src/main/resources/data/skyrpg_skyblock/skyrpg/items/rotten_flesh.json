@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ROTTEN_FLESH",
+ "base": "minecraft:rotten_flesh",
+ "name": "Rotten Flesh",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

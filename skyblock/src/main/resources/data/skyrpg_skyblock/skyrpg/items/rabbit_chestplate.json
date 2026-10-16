@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "RABBIT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Rabbit Chestplate",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 40,
+  "speed": 5
+ },
+ "color": "#CBD2DB",
+ "hypixel": {
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "RABBIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

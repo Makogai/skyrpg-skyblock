@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JACOBS_TICKET",
+ "base": "minecraft:paper",
+ "name": "Jacob's Ticket",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10000
+ }
+}

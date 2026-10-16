@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GRASS",
+ "base": "minecraft:grass_block",
+ "name": "Grass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

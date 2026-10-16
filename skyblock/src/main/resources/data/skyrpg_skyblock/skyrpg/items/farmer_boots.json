@@ -1,0 +1,49 @@
+{
+ "skyblock_id": "FARMER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Farmer Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 40,
+  "defense": 20,
+  "speed": 10
+ },
+ "color": "#CC5500",
+ "hypixel": {
+  "npc_sell_price": 163840,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 18
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FARMING",
+   "parent": {
+    "FARMER_BOOTS": "RANCHERS_BOOTS"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

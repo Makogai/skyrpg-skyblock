@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BIRCH_FOREST_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Birch Forest Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

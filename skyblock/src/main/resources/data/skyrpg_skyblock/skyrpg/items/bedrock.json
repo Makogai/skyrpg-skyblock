@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "BEDROCK",
+ "base": "minecraft:paper",
+ "name": "Bedrock",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§cI guess you have this now.",
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "can_place": false
+ }
+}

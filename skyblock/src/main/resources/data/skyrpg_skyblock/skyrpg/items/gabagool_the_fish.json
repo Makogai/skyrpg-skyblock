@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GABAGOOL_THE_FISH",
+ "base": "minecraft:salmon",
+ "name": "Gabagool the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

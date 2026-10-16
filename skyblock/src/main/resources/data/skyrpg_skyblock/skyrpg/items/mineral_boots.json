@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "MINERAL_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Mineral Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 70,
+  "speed": 10,
+  "block_fortune": 25
+ },
+ "color": "#CCE5FF",
+ "hypixel": {
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "MINERAL": "GLOSSY_MINERAL"
+   },
+   "armor_set_donation_xp": {
+    "MINERAL": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

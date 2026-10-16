@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_MITHRIL",
+ "base": "minecraft:prismarine_crystals",
+ "name": "Enchanted Mithril",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1280,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 64.0
+   }
+  }
+ }
+}

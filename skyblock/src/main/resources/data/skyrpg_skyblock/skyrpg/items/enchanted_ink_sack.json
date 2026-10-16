@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_INK_SACK",
+ "base": "minecraft:ink_sac",
+ "name": "Enchanted Ink Sac",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "skyblock_id": "HELIX_ARMOR_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Helix Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 100,
+  "defense": 35,
+  "foraging_fortune": 45,
+  "sweep": 20
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc4NDEyNjkyODQwNiwKICAicHJvZmlsZUlkIiA6ICJkODYwY2JiYWM0Njg0ODhjOWI4MTY3MGVjZjQ5OGRmMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDb2FzdGxpbmVDcmVhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IyYWQyMzViOTQ1OGNjMjZjOWRkNzk0YTM1YzExMDBlMWI1YmJlNGEwYzZjM2RhNmZmZDQ4MzAwMDY2ODNjYjkiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "PyKZ5r+BZE7eh0XCqs8xtq+80U2OsOcLcbG5YJvkC+f7x46vBmVVkumUFdBOQrRGJf6YjfNgeBrqeVX1YJ5dhoTRkwcM94L/vAoT/ahWJrGGiKnDhwcLt8/yWkNJuRTFXyn0UKhLGbu0adecMMX0DwATrfZ7esoJ4O/4HnyxMW2EaZ1GspDCzCHY2zu2GH1G5yHrnyF/1v2kjpUEhBKlhni4elJ9pr/9aH550onSd4BhVU4S+a0s09h0fZyIM9Xz/xpl3Ievp58FYM24i5va9AAg6XWMTmxF1wWlVW2oPdxp9WYXRELu+vu1NtW3wqaCIzNk0/B5PTC8UBjC987nWo+ScthQaT/5Kfn6TvA2ZvkgmwWLBQjmB7xAC0tHhEg6QBTJB1mLyiHU6CjPjNO3ZqSFyZ3G906sKVD10r38CnAh2o4Rhb8i+zyeiereUoIGBvuMB+vVcc9iD2lhlUGa6GFEVslPgMjCTkjLH6mQNPluJAFtkT7+DtNCh35JCQtfiE5plsf0qHGPulTg8197IvzUDgyH+jRJkHSduE4GsB3rENIEKuuia9aPyRqgR29j+sa6JlmErsLZyK5v6C9juxmhKevQRLiFHqandLl2JL08h1GbTu0SXxoQ/N+2g3WvBhnuM13Jpx15ECV0stPJi8K2q39iLj5o7Y9I54iwu28="
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 25
+   }
+  ],
+  "npc_sell_price": 5600,
+  "gemstone_slots": [
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "HELIX_ARMOR": 9
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

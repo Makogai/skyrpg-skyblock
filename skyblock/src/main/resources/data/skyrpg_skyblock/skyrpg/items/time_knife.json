@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "TIME_KNIFE",
+ "base": "minecraft:nether_star",
+ "name": "Time Shuriken",
+ "rarity": "special",
+ "category": "SWORD",
+ "type": "Sword",
+ "hypixel": {
+  "origin": "RIFT",
+  "soulbound": "SOLO",
+  "has_uuid": "false",
+  "serializable": false
+ }
+}

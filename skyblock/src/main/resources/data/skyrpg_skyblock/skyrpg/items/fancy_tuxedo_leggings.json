@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "FANCY_TUXEDO_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Fancy Tuxedo Pants",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "crit_damage": 35,
+  "intelligence": 75
+ },
+ "color": "#D4D4D4",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "FANCY_TUXEDO": "ELEGANT_TUXEDO"
+   },
+   "armor_set_donation_xp": {
+    "FANCY_TUXEDO": 4
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

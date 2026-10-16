@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "ROSETTA_HELMET",
+ "base": "minecraft:diamond_helmet",
+ "name": "Rosetta's Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 525,
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ROSETTA": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

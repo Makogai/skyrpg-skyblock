@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "GOLEM_ARMOR_LEGGINGS",
+ "base": "minecraft:iron_leggings",
+ "name": "Golem Armor Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 55,
+  "defense": 75
+ },
+ "hypixel": {
+  "npc_sell_price": 16800,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GOLEM_ARMOR": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

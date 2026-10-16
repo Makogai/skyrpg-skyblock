@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TREASURITE",
+ "base": "minecraft:paper",
+ "name": "Treasurite",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Origin unknown.",
+ "hypixel": {
+  "npc_sell_price": 5000
+ }
+}

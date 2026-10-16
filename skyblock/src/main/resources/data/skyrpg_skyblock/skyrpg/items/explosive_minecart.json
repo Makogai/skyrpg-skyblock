@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "EXPLOSIVE_MINECART",
+ "base": "minecraft:tnt_minecart",
+ "name": "Minecart with TNT",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 22
+ }
+}

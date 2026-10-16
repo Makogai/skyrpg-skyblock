@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "POWDER_OF_ONE",
+ "base": "minecraft:paper",
+ "name": "Powder of One",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "item_specific": {
+   "powders": [
+    "MITHRIL"
+   ],
+   "bonus": 2.5
+  },
+  "components": [
+   {
+    "type": "FORGE_RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

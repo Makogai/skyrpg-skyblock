@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "THERMODYNAMIC_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Thermodynamic Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "attack_speed": 5,
+  "defense": 125,
+  "speed": 25
+ },
+ "color": "#FF700A",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 30
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "THERMODYNAMIC": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "skyblock_id": "SKELETON_LORD_HELMET",
+ "base": "minecraft:golden_helmet",
+ "name": "Skeleton Lord Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "crit_chance": 1,
+  "crit_damage": 19,
+  "health": 16,
+  "defense": 32
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_LORD": 10
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    32,
+    35,
+    38,
+    41,
+    45,
+    49,
+    53,
+    57,
+    63,
+    68
+   ],
+   "HEALTH": [
+    16,
+    17,
+    19,
+    21,
+    22,
+    24,
+    26,
+    29,
+    31,
+    34
+   ],
+   "CRITICAL_DAMAGE": [
+    19,
+    22,
+    24,
+    27,
+    30,
+    33,
+    36,
+    41,
+    45,
+    50
+   ],
+   "CRITICAL_CHANCE": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  }
+ }
+}

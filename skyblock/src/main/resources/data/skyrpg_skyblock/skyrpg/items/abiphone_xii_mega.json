@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ABIPHONE_XII_MEGA",
+ "base": "minecraft:paper",
+ "name": "Abiphone XII Amber",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 9,
+   "max_musicdiscs": 10,
+   "model": "abiphone_xii"
+  },
+  "double_tap_to_drop": true
+ }
+}

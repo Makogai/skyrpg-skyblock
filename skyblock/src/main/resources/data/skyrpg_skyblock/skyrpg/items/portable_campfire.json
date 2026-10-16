@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PORTABLE_CAMPFIRE",
+ "base": "minecraft:furnace",
+ "name": "Portable Campfire",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "can_place": false
+ }
+}

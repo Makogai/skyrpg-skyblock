@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ROCK_THE_FISH",
+ "base": "minecraft:cod",
+ "name": "Rock the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

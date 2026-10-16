@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CHUM_SINKER",
+ "base": "minecraft:paper",
+ "name": "Chum Sinker",
+ "rarity": "common",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

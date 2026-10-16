@@ -1,0 +1,105 @@
+{
+ "skyblock_id": "MACHINE_GUN_BOW",
+ "base": "minecraft:bow",
+ "name": "Machine Gun Shortbow",
+ "rarity": "rare",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 75,
+  "strength": 20,
+  "crit_damage": 12
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 2
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DAMAGE": [
+    75,
+    82,
+    89,
+    96,
+    105,
+    114,
+    124,
+    135,
+    146,
+    159
+   ],
+   "STRENGTH": [
+    20,
+    23,
+    25,
+    27,
+    29,
+    32,
+    34,
+    37,
+    40,
+    44
+   ],
+   "CRITICAL_DAMAGE": [
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    20,
+    22,
+    24,
+    26
+   ]
+  }
+ }
+}

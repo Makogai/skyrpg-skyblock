@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "SAND:1",
+ "base": "minecraft:red_sand",
+ "name": "Red Sand",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "BREAK_BLOCK": 3.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

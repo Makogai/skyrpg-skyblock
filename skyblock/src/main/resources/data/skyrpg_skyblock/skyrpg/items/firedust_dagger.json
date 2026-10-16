@@ -1,0 +1,43 @@
+{
+ "skyblock_id": "FIREDUST_DAGGER",
+ "base": "minecraft:stone_sword",
+ "name": "Firedust Dagger",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 90,
+  "strength": 45,
+  "crit_damage": 15
+ },
+ "hypixel": {
+  "sword_type": "DAGGER",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 2
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {
+    "FIREDUST_DAGGER": "BURSTFIRE_DAGGER"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

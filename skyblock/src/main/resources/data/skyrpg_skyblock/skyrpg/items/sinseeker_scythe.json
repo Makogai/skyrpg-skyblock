@@ -1,0 +1,76 @@
+{
+ "skyblock_id": "SINSEEKER_SCYTHE",
+ "base": "minecraft:golden_hoe",
+ "name": "Sinseeker Scythe",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 100,
+  "strength": 100
+ },
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 250
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 70
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 140
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 210
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 350
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 600
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 6
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 23
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

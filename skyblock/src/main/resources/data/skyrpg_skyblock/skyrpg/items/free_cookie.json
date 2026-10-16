@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "FREE_COOKIE",
+ "base": "minecraft:cookie",
+ "name": "Booster Cookie (FREE)",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "has_uuid": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "TITANIUM_DRILL_1",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Titanium Drill DR-X355",
+ "rarity": "epic",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 700,
+  "mining_fortune": 25,
+  "breaking_power": 7
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 36000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "MINING",
+   "parent": {
+    "TITANIUM_DRILL_1": "TITANIUM_DRILL_2"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RABBIT",
+ "base": "minecraft:rabbit",
+ "name": "Raw Rabbit",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

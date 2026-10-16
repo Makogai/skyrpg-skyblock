@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SNOW_BLOCK",
+ "base": "minecraft:snow_block",
+ "name": "Snow Block",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

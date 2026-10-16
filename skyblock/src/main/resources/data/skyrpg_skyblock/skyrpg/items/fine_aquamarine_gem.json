@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_AQUAMARINE_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Aquamarine Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25600
+ }
+}

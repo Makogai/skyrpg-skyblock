@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GARDEN_SCYTHE",
+ "base": "minecraft:iron_hoe",
+ "name": "Garden Scythe",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

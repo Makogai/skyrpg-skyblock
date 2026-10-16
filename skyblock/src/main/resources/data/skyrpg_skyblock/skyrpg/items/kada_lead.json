@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "KADA_LEAD",
+ "base": "minecraft:lead",
+ "name": "Kada Lead",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7The lead has to be exceedingly soft due to the nature of the mount. The chicken needs to be comfy.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "can_interact": false,
+  "can_interact_entity": false,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "SMALL_NETHER_SACK"
+    ]
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

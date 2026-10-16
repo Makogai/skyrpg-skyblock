@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARNIVAL_TICKET",
+ "base": "minecraft:name_tag",
+ "name": "Carnival Ticket",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

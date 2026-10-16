@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DOUBLE_PLANT:1",
+ "base": "minecraft:lilac",
+ "name": "Lilac",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 2.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

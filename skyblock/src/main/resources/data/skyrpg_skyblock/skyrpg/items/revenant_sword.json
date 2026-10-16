@@ -1,0 +1,76 @@
+{
+ "skyblock_id": "REVENANT_SWORD",
+ "base": "minecraft:diamond_sword",
+ "name": "Revenant Falchion",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 90,
+  "strength": 50,
+  "intelligence": 100
+ },
+ "hypixel": {
+  "is_upgradeable_without_soulbinding": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 800
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 1000
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 3
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "REVENANT_SWORD": "REAPER_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

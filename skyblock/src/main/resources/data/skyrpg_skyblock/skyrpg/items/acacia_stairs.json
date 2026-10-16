@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ACACIA_STAIRS",
+ "base": "minecraft:acacia_stairs",
+ "name": "Acacia Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

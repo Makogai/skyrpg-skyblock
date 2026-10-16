@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LONG_GRASS:2",
+ "base": "minecraft:fern",
+ "name": "Fern",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

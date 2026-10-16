@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_COMBAT_SKILL_BOOST_RARE",
+ "base": "minecraft:iron_sword",
+ "name": "Combat Exp Boost",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

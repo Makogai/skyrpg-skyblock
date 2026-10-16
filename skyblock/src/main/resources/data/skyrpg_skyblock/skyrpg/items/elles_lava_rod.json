@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ELLES_LAVA_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Elle's Lava Rod",
+ "rarity": "special",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 50,
+  "strength": 50,
+  "fishing_speed": 8
+ },
+ "hypixel": {
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

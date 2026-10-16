@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE_BRIDGE",
+ "base": "minecraft:egg",
+ "name": "Stone Platform",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

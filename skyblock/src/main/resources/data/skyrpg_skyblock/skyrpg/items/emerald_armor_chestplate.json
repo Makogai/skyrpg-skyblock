@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "EMERALD_ARMOR_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Emerald Armor Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 100
+ },
+ "color": "#00FF00",
+ "hypixel": {
+  "npc_sell_price": 615000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "EMERALD_ARMOR": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

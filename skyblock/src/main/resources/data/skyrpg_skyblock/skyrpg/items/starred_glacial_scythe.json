@@ -1,0 +1,71 @@
+{
+ "skyblock_id": "STARRED_GLACIAL_SCYTHE",
+ "base": "minecraft:diamond_hoe",
+ "name": "Glacial Scythe",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 130,
+  "weapon_ability_damage": 1700,
+  "intelligence": 40
+ },
+ "hypixel": {
+  "sword_type": "SCYTHE",
+  "ability_damage_scaling": 0.3,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   }
+  ],
+  "npc_sell_price": 500,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "ICE",
+   "amount": 50
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 30
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 10
+   }
+  ]
+ }
+}

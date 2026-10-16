@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "COMPASS_TALISMAN",
+ "base": "minecraft:compass",
+ "name": "Compass Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 85
+ }
+}

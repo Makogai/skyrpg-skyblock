@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "MINING_CORE",
+ "base": "minecraft:firework_star",
+ "name": "Mining Core",
+ "rarity": "common",
+ "type": "",
+ "color": "#FF0000"
+}

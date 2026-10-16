@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "AQUAMARINE_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Aquamarine Crystal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "RUSTY_SPOON",
+ "base": "minecraft:wooden_shovel",
+ "name": "Rusty Spoon",
+ "rarity": "special",
+ "category": "MEMENTO",
+ "type": "Memento",
+ "hypixel": {
+  "hide_from_api": false,
+  "has_uuid": true
+ }
+}

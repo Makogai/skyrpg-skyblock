@@ -1,0 +1,48 @@
+{
+ "skyblock_id": "SALMON_LEGGINGS_NEW",
+ "base": "minecraft:leather_leggings",
+ "name": "Salmon Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 115,
+  "defense": 45,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#A82B76",
+ "hypixel": {
+  "npc_sell_price": 175,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SALMON_NEW": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

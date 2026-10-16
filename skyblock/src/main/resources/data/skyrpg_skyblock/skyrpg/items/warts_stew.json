@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WARTS_STEW",
+ "base": "minecraft:rabbit_stew",
+ "name": "Mushroom & Warts Stew",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oMade with love, and an array of slightly more questionable ingredients.",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

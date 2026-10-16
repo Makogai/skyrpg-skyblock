@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TRAPPED_CHEST",
+ "base": "minecraft:trapped_chest",
+ "name": "Trapped Chest",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

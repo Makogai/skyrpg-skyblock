@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_RAW_SALMON",
+ "base": "minecraft:salmon",
+ "name": "Enchanted Raw Salmon",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 112.0
+   }
+  }
+ }
+}

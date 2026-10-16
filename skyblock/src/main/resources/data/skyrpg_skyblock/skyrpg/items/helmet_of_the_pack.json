@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "HELMET_OF_THE_PACK",
+ "base": "minecraft:leather_helmet",
+ "name": "Helmet of the Pack",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 70,
+  "defense": 65
+ },
+ "color": "#FFFFFF",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARMOR_OF_THE_PACK": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

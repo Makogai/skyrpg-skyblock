@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKED_CHICKEN",
+ "base": "minecraft:cooked_chicken",
+ "name": "Cooked Chicken",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

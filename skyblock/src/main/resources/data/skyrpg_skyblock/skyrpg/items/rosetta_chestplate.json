@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "ROSETTA_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Rosetta's Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 660,
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ROSETTA": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

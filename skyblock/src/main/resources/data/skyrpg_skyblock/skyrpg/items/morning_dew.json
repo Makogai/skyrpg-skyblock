@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MORNING_DEW",
+ "base": "minecraft:paper",
+ "name": "Morning Dew",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 100000
+ }
+}

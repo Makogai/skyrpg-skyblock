@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MUSHROOM_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Mushroom Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 400
+ }
+}

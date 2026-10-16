@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PRESUMED_GALLON_OF_RED_PAINT",
+ "base": "minecraft:paper",
+ "name": "Presumed Gallon of Red Paint",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

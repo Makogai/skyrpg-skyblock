@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GLOWSTONE_DUST_DISTILLATE",
+ "base": "minecraft:paper",
+ "name": "Glowstone Distillate",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ENCHANTED_HARD_STONE",
+ "base": "minecraft:stone",
+ "name": "Enchanted Hard Stone",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A refined form of heavy rock from the darkest depths.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 576,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 57.6
+   }
+  }
+ }
+}

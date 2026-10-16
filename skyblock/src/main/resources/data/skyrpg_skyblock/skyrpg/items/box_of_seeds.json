@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BOX_OF_SEEDS",
+ "base": "minecraft:paper",
+ "name": "Box of Seeds",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 76800,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

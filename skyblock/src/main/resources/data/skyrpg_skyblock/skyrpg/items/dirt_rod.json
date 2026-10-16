@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIRT_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Dirt Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "fishing_speed": 20
+ },
+ "hypixel": {
+  "museum": true
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "skyblock_id": "LEGEND_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Rod of Legends",
+ "rarity": "epic",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 125,
+  "strength": 125,
+  "sea_creature_chance": 6,
+  "fishing_speed": 65
+ },
+ "hypixel": {
+  "npc_sell_price": 111000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "FISHING",
+   "parent": {
+    "LEGEND_ROD": "ROD_OF_THE_SEA"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

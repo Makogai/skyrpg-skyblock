@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "FEATHER",
+ "base": "minecraft:feather",
+ "name": "Feather",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "farming": {
+    "MINION_STORAGE": 0.2,
+    "COLLECT_ITEM": 2.0
+   }
+  }
+ }
+}

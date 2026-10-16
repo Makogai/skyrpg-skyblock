@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "REFINED_BOTTLE_OF_JYRRE",
+ "base": "minecraft:potion",
+ "name": "Refined Bottle of Jyrre",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 30000
+ }
+}

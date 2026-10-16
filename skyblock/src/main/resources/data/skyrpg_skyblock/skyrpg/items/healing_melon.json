@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "HEALING_MELON",
+ "base": "minecraft:glistering_melon_slice",
+ "name": "Healing Melon",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "motes_sell_price": 5,
+  "origin": "RIFT",
+  "item_specific": {
+   "heal": 7,
+   "mana_cost": 50
+  }
+ }
+}

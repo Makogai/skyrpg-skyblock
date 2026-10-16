@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "FRESH_SPRING_WATER",
+ "base": "minecraft:water_bucket",
+ "name": "Fresh Spring Water",
+ "rarity": "rare",
+ "type": "",
+ "glint": true
+}

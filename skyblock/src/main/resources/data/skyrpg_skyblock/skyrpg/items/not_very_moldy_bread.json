@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "NOT_VERY_MOLDY_BREAD",
+ "base": "minecraft:bread",
+ "name": "Not Very Moldy Bread",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true
+}

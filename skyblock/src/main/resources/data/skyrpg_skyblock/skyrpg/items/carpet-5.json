@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET:5",
+ "base": "minecraft:lime_carpet",
+ "name": "Lime Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

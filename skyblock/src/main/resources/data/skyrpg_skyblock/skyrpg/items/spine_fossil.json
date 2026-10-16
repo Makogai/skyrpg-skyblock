@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SPINE_FOSSIL",
+ "base": "minecraft:paper",
+ "name": "Spine Fossil",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A well-preserved set of neural spines. Whatever possessed these was an adept swimmer.",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 50
+   }
+  ],
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 50000,
+    "render_lore": false
+   }
+  ]
+ }
+}

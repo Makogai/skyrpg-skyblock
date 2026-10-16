@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SEEDS",
+ "base": "minecraft:wheat_seeds",
+ "name": "Seeds",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

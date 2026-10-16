@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_GOLD_BLOCK",
+ "base": "minecraft:gold_block",
+ "name": "Enchanted Gold Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 76800,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 15000.0
+   },
+   "mining": {
+    "MINION_STORAGE": 10240.0
+   }
+  }
+ }
+}

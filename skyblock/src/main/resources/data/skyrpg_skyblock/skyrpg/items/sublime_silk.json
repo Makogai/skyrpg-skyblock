@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SUBLIME_SILK",
+ "base": "minecraft:paper",
+ "name": "Sublime Silk",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Dropped by the §6Silkbreeze §7in §6Torrhus Canyon§7.\n\n§8§oA type of silk woven by the Silkbreeze. It's so soft that it practically trickles through your fingers as you hold it.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

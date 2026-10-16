@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_9",
+ "base": "minecraft:music_disc_strad",
+ "name": "Music Disc - Strad",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

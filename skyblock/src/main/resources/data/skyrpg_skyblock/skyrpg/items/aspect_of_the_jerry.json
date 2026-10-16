@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_JERRY",
+ "base": "minecraft:wooden_sword",
+ "name": "Aspect of the Jerry",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 1
+ },
+ "hypixel": {
+  "museum": true,
+  "can_auction": false,
+  "can_have_power_scroll": true,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "game_stage": "STARTER"
+  }
+ }
+}

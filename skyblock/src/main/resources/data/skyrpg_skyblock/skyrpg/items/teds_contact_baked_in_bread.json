@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TEDS_CONTACT_BAKED_IN_BREAD",
+ "base": "minecraft:name_tag",
+ "name": "Ted's Contact Baked In Bread",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

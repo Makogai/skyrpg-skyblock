@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "BAT_PERSON_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Bat Person Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15
+ },
+ "color": "#000000",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BAT_PERSON": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

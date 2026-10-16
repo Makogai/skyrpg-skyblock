@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENDER_STONE",
+ "base": "minecraft:end_stone",
+ "name": "End Stone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 3.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

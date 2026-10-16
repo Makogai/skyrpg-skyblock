@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BARRIER",
+ "base": "minecraft:paper",
+ "name": "Barrier",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "can_place": false
+ }
+}

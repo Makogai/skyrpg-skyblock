@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "BEACON_1",
+ "base": "minecraft:beacon",
+ "name": "Beacon I",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1540,
+  "requirements": [
+   {
+    "type": "ANY_OF",
+    "requirements": [
+     {
+      "type": "HEART_OF_THE_MOUNTAIN",
+      "tier": 1
+     },
+     {
+      "type": "PROFILE_TYPE",
+      "profile_type": "ISLAND"
+     }
+    ]
+   }
+  ]
+ }
+}

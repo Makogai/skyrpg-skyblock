@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PRISMARINE:2",
+ "base": "minecraft:dark_prismarine",
+ "name": "Dark Prismarine",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

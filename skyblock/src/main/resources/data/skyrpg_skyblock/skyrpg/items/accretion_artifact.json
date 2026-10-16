@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "ACCRETION_ARTIFACT",
+ "base": "minecraft:paper",
+ "name": "Accretion Artifact",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

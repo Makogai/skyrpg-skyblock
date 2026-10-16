@@ -1,0 +1,7 @@
+{
+ "skyblock_id": "BAT_FIREWORK",
+ "base": "minecraft:firework_rocket",
+ "name": "Bat Firework",
+ "rarity": "rare",
+ "type": ""
+}

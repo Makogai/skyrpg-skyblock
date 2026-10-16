@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BOTTLED_ODONATA",
+ "base": "minecraft:experience_bottle",
+ "name": "Bottled Odonata",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "can_place": false,
+  "can_interact": false
+ }
+}

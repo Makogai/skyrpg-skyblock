@@ -1,0 +1,60 @@
+{
+ "skyblock_id": "RUNIC_STAFF",
+ "base": "minecraft:blaze_rod",
+ "name": "Aurora Staff",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20,
+  "weapon_ability_damage": 10000,
+  "intelligence": 250
+ },
+ "hypixel": {
+  "npc_sell_price": 46875,
+  "ability_damage_scaling": 0.2,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   },
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "game_stage": "EXPERT"
+  },
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "NONE"
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 500
+   }
+  ]
+ }
+}

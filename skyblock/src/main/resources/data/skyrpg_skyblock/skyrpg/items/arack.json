@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "ARACK",
+ "base": "minecraft:iron_sword",
+ "name": "Arack",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 90
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "SPIDER",
+    "amount": 5
+   }
+  ],
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 30
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 65
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

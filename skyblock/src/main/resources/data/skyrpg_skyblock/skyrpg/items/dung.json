@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DUNG",
+ "base": "minecraft:paper",
+ "name": "Dung",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

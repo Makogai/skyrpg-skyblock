@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENCHANTED_TIME_CLOCK",
+ "base": "minecraft:clock",
+ "name": "Enchanted Clock",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "MINING",
+   "game_stage": "EXPERT"
+  },
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "GOLD_INGOT",
+    "tier": 10
+   }
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DWARVEN_TREASURE",
+ "base": "minecraft:paper",
+ "name": "Dwarven Treasure",
+ "rarity": "uncommon",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

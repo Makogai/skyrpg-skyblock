@@ -3,6 +3,7 @@ import re
 
 CATEGORIES = [
     ("getting-started", "Getting Started", "minecraft:compass"),
+    ("skyblock", "SkyBlock", "minecraft:player_head"),
     ("skyhaven", "Skyhaven", "minecraft:bell"),
     ("economy", "Economy", "minecraft:gold_ingot"),
     ("skills", "Skills", "minecraft:iron_pickaxe"),
@@ -18,6 +19,7 @@ CATEGORY_IDS = [c[0] for c in CATEGORIES]
 
 PAGE_LIST = {
     "getting-started": ["welcome", "skyrpg-mods", "first-launch", "first-steps", "controls-and-keys", "mods-and-shaders", "progression-guide"],
+    "skyblock": ["skyblock-items"],
     "skyhaven": ["skyhaven", "npcs", "quests-and-journal", "events"],
     "economy": ["coins-and-bank", "selling-and-shops", "contracts", "collections"],
     "skills": ["skills-overview", "mining", "farming", "foraging", "fishing", "enchanting", "crafting", "delving"],

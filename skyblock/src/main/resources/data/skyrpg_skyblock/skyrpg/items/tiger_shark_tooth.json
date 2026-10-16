@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "TIGER_SHARK_TOOTH",
+ "base": "minecraft:ghast_tear",
+ "name": "Tiger Shark Tooth",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Dropped by a Shark during Fishing Festival.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "SHARP_SHARK_TOOTH_NECKLACE"
+    ]
+   }
+  ]
+ }
+}

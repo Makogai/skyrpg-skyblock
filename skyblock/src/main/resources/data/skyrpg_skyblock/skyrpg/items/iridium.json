@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "IRIDIUM",
+ "base": "minecraft:paper",
+ "name": "Iridium",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Can be used at §aSkyMart §7to upgrade the §5AquaMaster X §7to the §6AquaMaster HydroMax§7.",
+ "hypixel": {
+  "can_auction": false
+ }
+}

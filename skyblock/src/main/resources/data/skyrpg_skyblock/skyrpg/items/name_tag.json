@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NAME_TAG",
+ "base": "minecraft:name_tag",
+ "name": "Name Tag",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "museum": true,
+  "has_uuid": true
+ }
+}

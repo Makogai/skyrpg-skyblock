@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "LIL_PAD",
+ "base": "minecraft:lily_pad",
+ "name": "Lil' Pad",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Can be placed on water, especially if you're scared of said water.",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 5
+ }
+}

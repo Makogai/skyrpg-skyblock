@@ -1,0 +1,37 @@
+{
+ "skyblock_id": "LOTUS_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Peony Necklace",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "health": 10,
+  "farming_fortune": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "double_tap_to_drop": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 4
+   },
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 10
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "LOTUS": "BLOSSOM"
+   },
+   "armor_set_donation_xp": {
+    "LOTUS": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

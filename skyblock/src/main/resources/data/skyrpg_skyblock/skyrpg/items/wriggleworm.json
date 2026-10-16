@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WRIGGLEWORM",
+ "base": "minecraft:paper",
+ "name": "Wriggleworm",
+ "rarity": "special",
+ "type": "",
+ "description": "§8§oSome odd-looking worm, and it's still alive!",
+ "hypixel": {
+  "safari_only": true
+ }
+}

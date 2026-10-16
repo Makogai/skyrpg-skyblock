@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CHILL_THE_FISH",
+ "base": "minecraft:cooked_cod",
+ "name": "Chill the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

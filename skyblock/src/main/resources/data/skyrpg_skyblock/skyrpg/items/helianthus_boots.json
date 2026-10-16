@@ -1,0 +1,62 @@
+{
+ "skyblock_id": "HELIANTHUS_BOOTS",
+ "base": "minecraft:iron_boots",
+ "name": "Helianthus Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 140,
+  "defense": 50,
+  "speed": 6,
+  "farming_fortune": 35,
+  "bonus_pest_chance": 20
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 50
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "HELIANTHUS": 15
+   },
+   "game_stage": "MASTER"
+  }
+ }
+}

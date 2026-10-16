@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "CHRONO_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Chrono Pickaxe",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 5
+ },
+ "hypixel": {
+  "motes_sell_price": 25,
+  "origin": "RIFT"
+ }
+}

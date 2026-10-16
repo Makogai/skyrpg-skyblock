@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "MUSHROOM_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Mushroom Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 10,
+  "defense": 5
+ },
+ "color": "#FF0000",
+ "hypixel": {
+  "npc_sell_price": 14,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "MUSHROOM": "BIOHAZARD"
+   },
+   "armor_set_donation_xp": {
+    "MUSHROOM": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "DWARVEN_DIAMOND_AXE",
+ "base": "minecraft:diamond_axe",
+ "name": "Scavenged Diamond Axe",
+ "rarity": "special",
+ "type": "",
+ "glint": true
+}

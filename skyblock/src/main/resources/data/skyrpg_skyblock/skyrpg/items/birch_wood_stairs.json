@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BIRCH_WOOD_STAIRS",
+ "base": "minecraft:birch_stairs",
+ "name": "Birch Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

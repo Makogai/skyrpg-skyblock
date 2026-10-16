@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SWEEP_BOOSTER",
+ "base": "minecraft:paper",
+ "name": "Common Sweep Booster",
+ "rarity": "common",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

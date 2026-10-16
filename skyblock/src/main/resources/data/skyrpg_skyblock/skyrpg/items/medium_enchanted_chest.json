@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MEDIUM_ENCHANTED_CHEST",
+ "base": "minecraft:chest",
+ "name": "Medium Storage",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1200
+ }
+}

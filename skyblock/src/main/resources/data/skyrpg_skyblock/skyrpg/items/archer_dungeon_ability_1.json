@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ARCHER_DUNGEON_ABILITY_1",
+ "base": "minecraft:paper",
+ "name": "Drop Arrows",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

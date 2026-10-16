@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "MASTER_THESIS",
+ "base": "minecraft:player_head",
+ "name": "Master's Thesis",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "trophy_fish_chance": 3
+ },
+ "description": "§8§oA well-written paper, complete with labeled diagrams. It explores frog biodiversity and details key efforts made in the name of conservation.",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0NTAxNDcwNDQ0OSwKICAicHJvZmlsZUlkIiA6ICI1MjhlYzVmMmEzZmM0MDA0YjYwY2IwOTA5Y2JiMjdjYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQdWxpenppIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFlMDgyNDc1MjIwZmRhODNkYmExMWIzOWQzZmNjMWMzZmNiOWI2ZjFmYjhhMGZlM2FlN2Q2ODM1OWYzOGFkNGIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "PUkUwPVuVGujzVPYsCerUJ5MH/76I7n2l7lHXDg2kIW7+OHidw63gz5IuIUz6rF+2IWSpiLjz7go5wrENzUEi93/RGBgOXWpixXwrsbqVMqA/s66SlQrwxAhbjatfN5GlrsY0YB8s74SQmy9vjDVmhmEx9ynBQ5e325CQAZgCGCBoJjnD0QfRxg9p+RpJu0N9qGfnwBrgcnPHu/eRF2PA6iJYqIPta2F5B6St/U2A9D4o5BkLK8Q0u9Kbu8rYzUcPyrtWO1czJvMGuiddljP5FmkXAoIOK8EbMQbFRnbhQkl9Javhd8XJj5YcxzihsNuKpg6qS3bTkQdTKEuOPxBKgVo21DH3q88vMGYxNhk2yZ33HMuE8v2FZhjlP10rmL2tdMUa/PglAKuI/zKcgQnYA1+vmlbGVfOvi1YZhrceCJ2nw18aW3KeBCw9v+eT27rdO33Ad/yH3+qye9z4/GImIkUh2eN6/VWp/V+S3vGLCJfHLUsMYtnWBUQQMKPFvsfLN5oMPlzBr7/qT0yzsK6xAJd6tSOZaXYS+44SFX6PQPydnyzXjz4NiAMRKtKyOi7p8Gk+vrawARwON+y68vD6J2KLu+EG6JC+Oz0wUg1LKDYzNkrsUhhU9Re7z8sPP5V+9tr5URI4Umt1QAjLWkKPwM8VnXKBHfrbMK2XY+5IAU="
+ },
+ "hypixel": {
+  "soulbound": "SOLO",
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "trophy_type": "FROG",
+    "reward": "GOLD"
+   }
+  ]
+ }
+}

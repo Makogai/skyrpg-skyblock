@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "HEAVY_PEARL",
+ "base": "minecraft:paper",
+ "name": "Heavy Pearl",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7It can take years for Hellwisp to create a pearl, but the Matriarch secretes so much fluid that it can make multiple of those pearls every day.",
+ "hypixel": {
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "RUNAANS_BOW",
+ "base": "minecraft:bow",
+ "name": "Runaan's Bow",
+ "rarity": "legendary",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 160,
+  "strength": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 86000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 20
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

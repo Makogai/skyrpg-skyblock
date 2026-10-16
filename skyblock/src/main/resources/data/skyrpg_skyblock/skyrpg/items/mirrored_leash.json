@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_LEASH",
+ "base": "minecraft:lead",
+ "name": "daeL",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 75
+ }
+}

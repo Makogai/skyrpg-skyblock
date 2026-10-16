@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_FISH:2",
+ "base": "minecraft:tropical_fish",
+ "name": "Enchanted Clownfish",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3200
+ }
+}

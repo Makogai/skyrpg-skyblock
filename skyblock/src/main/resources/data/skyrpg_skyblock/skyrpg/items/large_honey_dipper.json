@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "LARGE_HONEY_DIPPER",
+ "base": "minecraft:paper",
+ "name": "Large Honey Dipper",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_auction": false,
+  "can_recombobulate": false
+ }
+}

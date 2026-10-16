@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_BUTTON",
+ "base": "minecraft:oak_button",
+ "name": "Wooden Button",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

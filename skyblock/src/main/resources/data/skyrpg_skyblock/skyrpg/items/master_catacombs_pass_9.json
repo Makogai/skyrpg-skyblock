@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MASTER_CATACOMBS_PASS_9",
+ "base": "minecraft:player_head",
+ "name": "Master Catacombs Pass IX",
+ "rarity": "legendary",
+ "category": "DUNGEON_PASS",
+ "type": "Dungeon Pass",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYxNzExMDc4MTM4OCwKICAicHJvZmlsZUlkIiA6ICJmZDYwZjM2ZjU4NjE0ZjEyYjNjZDQ3YzJkODU1Mjk5YSIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWFkIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjM2Q0NWZmNjcyOTg4YjQ2MzU4MTM3YmUzMmMzYzlhZGZkOWE2MjkxOTVjMmI2NDgxNGE5MzQ5OWRkNjYwNiIKICAgIH0KICB9Cn0=",
+  "signature": "msEt11B3RbKgNXoHBQ9x/eSt3w8mD1jjxmpa/4TLILBTZeG10nHhSOd/LplTrL+MPcs4/WkYy3B9qCbnsJv5PpI73rRSA+cvQ3dpQVSoHylSASfjj67VmJBjqVGzDJ3zwodbfXvtY1gH+lC+XG94Y8GQG8EZGa1DE63chKN3nzYVvOfnCXKCow8xmWI6ZzlgsZ5HYS94Pdu9XQMKqbCV5HujxcdjkcENgOBIRGm4leHBUgKs+d1gLyK7ubgSalnNzp6KJueDh9W722zzLXBWrLOCKyC01ylAc1QQCyqTo0rMKOQpr8nQ4iLq9vsSwX964qqTh14GrRuhQNietilW1HtAqz0VDug+qPQtk+bym4YCVNvjJo50xP5pr/zhjPg0NaybesVgXNyVvm/N/T7RgLdWAuRnw4WIHtR3aYFQ9VY4UtuIuhgYCy8xi89kk282ZqwqvPRjcAc2mjwZdBje2ZNaLH8jN6k0nqZFGqDgV7CNOf97nzfcxqSFvjMJieXjcCRoMaCV4GfaTvC188JE3w2qlF2f5KW+gy7TRgcgH3OmP3yPoP/86wXuUMlYQPw8y0Q3xhCVM/tonXvwEsGyNeC6QOg+Tz0lBS+pTMZ3ousGYUhzrSq6bWksx3KNekdWh4VzKsr2lmzkUD2EXc451O3yE+sZJ2sGsqC0c3pVcbA="
+ },
+ "hypixel": {
+  "dungeon_item": true
+ }
+}

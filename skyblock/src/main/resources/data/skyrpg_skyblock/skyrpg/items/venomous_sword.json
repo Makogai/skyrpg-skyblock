@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "VENOMOUS_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Venomous Sword",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

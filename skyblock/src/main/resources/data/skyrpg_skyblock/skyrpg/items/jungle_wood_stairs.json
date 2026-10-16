@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JUNGLE_WOOD_STAIRS",
+ "base": "minecraft:jungle_stairs",
+ "name": "Jungle Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

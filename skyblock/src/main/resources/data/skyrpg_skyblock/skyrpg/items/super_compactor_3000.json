@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SUPER_COMPACTOR_3000",
+ "base": "minecraft:dropper",
+ "name": "Super Compactor 3000",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "museum": true
+ }
+}

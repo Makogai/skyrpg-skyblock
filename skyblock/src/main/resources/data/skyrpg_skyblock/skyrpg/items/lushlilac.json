@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "LUSHLILAC",
+ "base": "minecraft:paper",
+ "name": "Lushlilac",
+ "rarity": "uncommon",
+ "category": "SALT",
+ "type": "Salt",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "LUSHLILAC_BONBON",
+     "PRIME_LUSHLILAC_BONBON"
+    ],
+    "show_items_last": [
+     "OCEANDY"
+    ]
+   }
+  ]
+ }
+}

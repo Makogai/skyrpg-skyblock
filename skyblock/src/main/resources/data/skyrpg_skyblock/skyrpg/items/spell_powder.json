@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "SPELL_POWDER",
+ "base": "minecraft:glowstone_dust",
+ "name": "Spell Powder",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Looks like Sulphur, smells like Sulphur... Suspicious.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

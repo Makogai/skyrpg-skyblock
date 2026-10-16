@@ -1,0 +1,53 @@
+{
+ "skyblock_id": "GLACITE_HELMET",
+ "base": "minecraft:packed_ice",
+ "name": "Glacite Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 70,
+  "speed": 10,
+  "true_defense": 5,
+  "mining_speed": 10,
+  "mining_fortune": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 1750,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 2
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 5000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GLACITE": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

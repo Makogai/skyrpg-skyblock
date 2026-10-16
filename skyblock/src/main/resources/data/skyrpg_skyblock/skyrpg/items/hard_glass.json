@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HARD_GLASS",
+ "base": "minecraft:gray_stained_glass",
+ "name": "Hard Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GREAT_SPOOK_STAFF",
+ "base": "minecraft:dead_bush",
+ "name": "Great Spook Staff",
+ "rarity": "legendary",
+ "type": "",
+ "stats": {
+  "fear": 10
+ },
+ "unstackable": true,
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

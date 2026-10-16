@@ -1,0 +1,38 @@
+{
+ "skyblock_id": "TITANIUM_DRILL_2",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Titanium Drill DR-X455",
+ "rarity": "epic",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 900,
+  "mining_fortune": 40,
+  "breaking_power": 8
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 103200,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 15,
+   "category": "MINING",
+   "parent": {
+    "TITANIUM_DRILL_2": "TITANIUM_DRILL_3"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

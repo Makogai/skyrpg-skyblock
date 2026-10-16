@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DAEDALUS_NOTES",
+ "base": "minecraft:paper",
+ "name": "Daedalus' Notes",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

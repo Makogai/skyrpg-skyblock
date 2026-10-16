@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "DUECES_BUILDER_CLAY",
+ "base": "minecraft:red_terracotta",
+ "name": "The Builder's Clay",
+ "rarity": "special",
+ "category": "HELMET",
+ "type": "Helmet",
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

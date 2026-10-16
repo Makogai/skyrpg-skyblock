@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEVER",
+ "base": "minecraft:lever",
+ "name": "Lever",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

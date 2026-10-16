@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "WASTELAND_PORTAL",
+ "base": "minecraft:player_head",
+ "name": "Portal to The Wasteland",
+ "rarity": "common",
+ "category": "PORTAL",
+ "type": "Portal",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYxOTI2NzY5Mzk3MSwKICAicHJvZmlsZUlkIiA6ICJkYmNlZjMyZjI5ZDc0Y2UzOTUzOWMwYjBhMTE1YjZiZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJyYW1waXJlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkyYmYwM2VjNjhhOWZhNDE5OTFhYzg2Y2RmYjE2MWQ5ZDQ3YmZjOGQ1NmJlOWJlOTdmMWVkMzA3YjQ3YzM2NzQiCiAgICB9CiAgfQp9",
+  "signature": "iijr5wVSA/0KPOC9xDiKS/ffVDzybgMY7G9Xmhj2C0OfVPC/YJ37eHPzACa7R0nZFekbc8q6k0Z8YIt3RsVkf31OcjHJo+CWcrsMigrzeLGexwBUyLG53/O1dw5Xlb3vHogd6ewLZ9eTYSs9qhJsaLYT2oS+/0UarHp5qDaRkEyw3dQdipOe7Cyw4FnUMABf1VzuqCAldyjF9cd1ATmsGhum6WqOr9Npyx+j9NMvG/qMQQgVYyLfglqHZpAqP4ITIljw+IMNwgHG4/UVqsTVgSB2s8THiLrNpAEE32RSUI9GYK5d8WJWNPn3LmQiPERzoY7LyOqglQ+1U1RudWNEAEppfULZ1aQEQdP5VNrdurO31Z8y8jJjhlnAkFsZxyY7Z8ew3mJ00SjxgW51tMix+obLpfMQLzX+g4Xcg4aF0BxJCWum31VTBUME+C1UuMzdj8uRCiRdtfjOqtzih1BUPUkAqivfMc2bTB/DBONzCuw5IghMotzYiTWV3M5L9dIYHYMY3AOUBhot2vJCPtwEH3cEIirJlK3lE0Ih2hQ7M6vZPujfH6WaX0GXCR9L8Um/qB1tUFtmduUrwYpLI5RZByqOfR6NpQ4jmNhnsv1shYdlpwgwOENF62Amz/15jKONebxuXkLlkI6kZufB3eJz+EHnTuD5I/FmLSAOL+FVZ5M="
+ },
+ "hypixel": {
+  "item_specific": {
+   "portal": {
+    "holo_name": "The Wasteland",
+    "description_name": "%%red%%The Wasteland",
+    "destination_mode": "crimson_isle",
+    "location_tag": "wasteland",
+    "schematic_file": "sb_portal_wasteland",
+    "offset": "NEW",
+    "skill_requirement": {
+     "skill": "COMBAT",
+     "level": 22
+    }
+   }
+  }
+ }
+}

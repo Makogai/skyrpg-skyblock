@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FULL_TREE_AXE",
+ "base": "minecraft:diamond_axe",
+ "name": "Full-Tree Axe",
+ "rarity": "unobtainable",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "sweep": 500
+ }
+}

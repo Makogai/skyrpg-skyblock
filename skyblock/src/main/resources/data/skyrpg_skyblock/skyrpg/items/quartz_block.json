@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "QUARTZ_BLOCK",
+ "base": "minecraft:quartz_block",
+ "name": "Block of Quartz",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 16,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 1.2
+   }
+  }
+ }
+}

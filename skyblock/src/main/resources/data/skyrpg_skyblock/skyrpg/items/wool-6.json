@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:6",
+ "base": "minecraft:pink_wool",
+ "name": "Pink Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

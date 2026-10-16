@@ -1,0 +1,254 @@
+{
+ "skyblock_id": "DOJO_BLACK_BELT",
+ "base": "minecraft:paper",
+ "name": "Black Belt",
+ "rarity": "legendary",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 35,
+  "defense": 25
+ },
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 120
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 150
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 180
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 300
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 350
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 4000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 400
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 500
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 6000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 600
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 700
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 8000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 800
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 900
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 10000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 1200
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 1300
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 12000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 1500
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 1700
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 15000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 2000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 2200
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 7
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 17000
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 12,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

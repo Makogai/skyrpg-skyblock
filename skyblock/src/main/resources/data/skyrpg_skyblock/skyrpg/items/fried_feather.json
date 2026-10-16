@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "FRIED_FEATHER",
+ "base": "minecraft:feather",
+ "name": "Fried Feather",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A greasy feather, somehow still in one piece despite having been doused in boiling-hot lava.",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

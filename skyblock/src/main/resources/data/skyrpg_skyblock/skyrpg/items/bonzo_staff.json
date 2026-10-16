@@ -1,0 +1,75 @@
+{
+ "skyblock_id": "BONZO_STAFF",
+ "base": "minecraft:blaze_rod",
+ "name": "Bonzo's Staff",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 160,
+  "weapon_ability_damage": 1000,
+  "intelligence": 250
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.2,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 1
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_BONZO_STAFF"
+   ],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ICEBREAKER",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Icebreaker",
+ "rarity": "special",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "glint": true,
+ "hypixel": {
+  "safari_only": true
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "IRON_SPADE",
+ "base": "minecraft:iron_shovel",
+ "name": "Iron Shovel",
+ "rarity": "common",
+ "category": "SPADE",
+ "type": "Spade",
+ "stats": {
+  "damage": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

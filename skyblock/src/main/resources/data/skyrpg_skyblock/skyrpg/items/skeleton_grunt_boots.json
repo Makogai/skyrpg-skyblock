@@ -1,0 +1,110 @@
+{
+ "skyblock_id": "SKELETON_GRUNT_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Skeleton Grunt Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "crit_damage": 15,
+  "health": 23,
+  "defense": 20
+ },
+ "color": "#E1EB34",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 1
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_GRUNT": 3
+   },
+   "game_stage": "AMATEUR"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    20,
+    23,
+    23,
+    26,
+    29,
+    31,
+    34,
+    37,
+    40,
+    43
+   ],
+   "HEALTH": [
+    23,
+    24,
+    24,
+    26,
+    27,
+    29,
+    31,
+    33,
+    34,
+    36
+   ],
+   "CRITICAL_DAMAGE": [
+    15,
+    16,
+    18,
+    19,
+    21,
+    23,
+    24,
+    27,
+    29,
+    32
+   ]
+  }
+ }
+}

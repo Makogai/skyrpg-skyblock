@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "ANGLER_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Angler Necklace",
+ "rarity": "common",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "sea_creature_chance": 0.5,
+  "fishing_speed": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 50,
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "ANGLER": 2
+   },
+   "parent": {
+    "ANGLER": "BACKWATER"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

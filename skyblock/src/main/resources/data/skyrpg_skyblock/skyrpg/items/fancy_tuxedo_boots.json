@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "FANCY_TUXEDO_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Fancy Tuxedo Oxfords",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "crit_damage": 35,
+  "speed": 10,
+  "intelligence": 75
+ },
+ "color": "#332A2A",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "FANCY_TUXEDO": "ELEGANT_TUXEDO"
+   },
+   "armor_set_donation_xp": {
+    "FANCY_TUXEDO": 4
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

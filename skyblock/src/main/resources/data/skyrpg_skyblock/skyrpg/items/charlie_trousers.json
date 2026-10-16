@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "CHARLIE_TROUSERS",
+ "base": "minecraft:leather_leggings",
+ "name": "Charlie's Trousers",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 45,
+  "defense": 15,
+  "foraging_fortune": 6
+ },
+ "color": "#F6DE51",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_recombobulate": false,
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "PARK": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ASCENSION_ROPE",
+ "base": "minecraft:paper",
+ "name": "Ascension Rope",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

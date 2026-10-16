@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CHALLENGER_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Challenger's Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 25,
+  "health": 80,
+  "defense": 40
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CHALLENGER": "MYTHOS"
+   },
+   "armor_set_donation_xp": {
+    "CHALLENGER": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

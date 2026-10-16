@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "BOOTS_OF_THE_PACK",
+ "base": "minecraft:iron_boots",
+ "name": "Boots of the Pack",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 50,
+  "defense": 45
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARMOR_OF_THE_PACK": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

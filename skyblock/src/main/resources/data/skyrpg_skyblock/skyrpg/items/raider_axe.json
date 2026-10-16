@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "RAIDER_AXE",
+ "base": "minecraft:iron_sword",
+ "name": "Raider Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 80,
+  "strength": 50
+ },
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SPRUCE_FENCE",
+ "base": "minecraft:spruce_fence",
+ "name": "Spruce Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

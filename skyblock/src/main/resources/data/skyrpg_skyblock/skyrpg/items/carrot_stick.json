@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARROT_STICK",
+ "base": "minecraft:carrot_on_a_stick",
+ "name": "Carrot on a Stick",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

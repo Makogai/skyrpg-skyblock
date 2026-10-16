@@ -1,0 +1,76 @@
+{
+ "skyblock_id": "WEREWOLF_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Werewolf Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 135,
+  "intelligence": 50,
+  "ferocity": 10
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYwMzY2ODk3MjkwMywKICAicHJvZmlsZUlkIiA6ICIzYTNmNzhkZmExZjQ0OTllYjE5NjlmYzlkOTEwZGYwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVyb2Ryb2dvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NlNDYwNmM2ZDk3M2E5OTlhZWMxNjg3YzdlMDc1ZjdkMzdkYjgxODVlODhiODQ0NTA3ZjE2YjNlMmIzZWI2OTAiCiAgICB9CiAgfQp9",
+  "signature": "GbiJkLsTBo9a9iTbQGkgyW8jEi/bFOYIzMJigDAKqpTtz6/KGQjykmQqnt+9VXvFs6JKWdMNHzgpNz/5jEXP0DTRa/Rz4JzcfYlACs2J1aVBt7hDKBePd8lGBKxaiNrdic2jZuYDouJUSuWnleJ+gH7YKw5zHlcb8YbFKj0OI7w4e3nvCEjcZeUzFL71hGNzlsxmL9uYgL+1KpxLBqZhGMDham54vZEjTf2OGKZKUUMDcMFz5LQRkeKq+q+MRDrBF7SGq6eBQYsKU20ecNICq8BXa8Qeu6TT7F/ybsE8V5Pk98TkkRjWKKE2Q2BK+FSuRi5lisHpGsCmqb5IGsvCsATr+5IfUn4w3RqbI9DvCScQT/gcg/6Mb2giepFBn9BQQvoJ/T6phEh63LeRgGRkzXQ2K9m3IRW7EcvDRYdgfKy5lhHfkwz5V1RKwNc8/qaCwrqeRTgtqpJxT1pFd64uvykdEMdrFtytijCH85dGNt2iyMCZQmgfKU3yDEYh4O+eDLP8WvalbPx/0S11wuHPsnFbXjvQgwxSlPoVJncEnIDjQtnkr9PT0CARpMGTpacoQVcF6NXe1OxcRZOGBdZnXak8G/3zzJPeTREkEhBaD3TnZ6iJLPdC8FFgOYIA3wRG4F0+47D2cUoUZ/S9vAi21zJMNiSlo5ZgErFOhXdO3UE="
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 500
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "WEREWOLF": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PERFECT_AQUAMARINE_GEM",
+ "base": "minecraft:paper",
+ "name": "Perfect Aquamarine Gemstone",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CRYSTAL_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Crystal Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15,
+  "intelligence": 60
+ },
+ "color": "#FCF3FF",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "CRYSTAL": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

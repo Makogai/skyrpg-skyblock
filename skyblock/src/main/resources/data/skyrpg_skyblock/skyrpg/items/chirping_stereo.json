@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CHIRPING_STEREO",
+ "base": "minecraft:paper",
+ "name": "Chirping Stereo",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§8§oWhile nobody is sure who came up with the genius design, everyone agrees that they are one of the true engineering greats.",
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

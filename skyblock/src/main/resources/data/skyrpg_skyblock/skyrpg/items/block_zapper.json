@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "BLOCK_ZAPPER",
+ "base": "minecraft:flint",
+ "name": "Block Zapper",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

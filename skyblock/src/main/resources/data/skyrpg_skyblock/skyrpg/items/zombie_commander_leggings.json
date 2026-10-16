@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "ZOMBIE_COMMANDER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Zombie Commander Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 8,
+  "health": 51,
+  "defense": 30,
+  "intelligence": 4
+ },
+ "color": "#D51230",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_COMMANDER": 8
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    30,
+    32,
+    36,
+    41,
+    45,
+    50,
+    55,
+    62,
+    70,
+    77
+   ],
+   "HEALTH": [
+    51,
+    57,
+    64,
+    71,
+    78,
+    87,
+    97,
+    107,
+    120,
+    134
+   ],
+   "STRENGTH": [
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    19,
+    22
+   ],
+   "INTELLIGENCE": [
+    4,
+    5,
+    5,
+    6,
+    7,
+    7,
+    8,
+    8,
+    10,
+    11
+   ]
+  }
+ }
+}

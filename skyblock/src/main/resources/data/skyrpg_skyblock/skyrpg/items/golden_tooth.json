@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GOLDEN_TOOTH",
+ "base": "minecraft:gold_nugget",
+ "name": "Golden Tooth",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

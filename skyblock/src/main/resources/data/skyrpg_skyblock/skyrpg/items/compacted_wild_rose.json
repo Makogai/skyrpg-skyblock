@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "COMPACTED_WILD_ROSE",
+ "base": "minecraft:paper",
+ "name": "Compacted Wild Rose",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 102400,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 7680.0
+   }
+  }
+ }
+}

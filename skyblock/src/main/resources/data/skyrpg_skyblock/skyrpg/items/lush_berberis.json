@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "LUSH_BERBERIS",
+ "base": "minecraft:large_fern",
+ "name": "Lush Berberis",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A wonderful plant!",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 10.0
+   }
+  }
+ }
+}

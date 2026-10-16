@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "IRON_DOOR",
+ "base": "minecraft:iron_door",
+ "name": "Iron Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

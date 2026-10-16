@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_IMAGINE_DRAGONFLIES",
+ "base": "minecraft:music_disc_cat",
+ "name": "Imagine Dragonflies Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

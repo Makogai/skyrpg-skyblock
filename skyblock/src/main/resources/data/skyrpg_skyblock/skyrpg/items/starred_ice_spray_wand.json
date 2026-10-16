@@ -1,0 +1,109 @@
+{
+ "skyblock_id": "STARRED_ICE_SPRAY_WAND",
+ "base": "minecraft:stick",
+ "name": "Ice Spray Wand",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 60,
+  "weapon_ability_damage": 19000,
+  "intelligence": 135
+ },
+ "glint": true,
+ "hypixel": {
+  "ability_damage_scaling": 0.1,
+  "npc_sell_price": 10000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 20,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 20
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "tiered_stats": {
+   "DAMAGE": [
+    60,
+    64,
+    69,
+    74,
+    80,
+    86,
+    92,
+    99,
+    107,
+    115
+   ],
+   "WEAPON_ABILITY_DAMAGE": [
+    19000
+   ],
+   "INTELLIGENCE": [
+    135,
+    147,
+    160,
+    175,
+    190,
+    206,
+    224,
+    244,
+    265,
+    290
+   ]
+  }
+ }
+}

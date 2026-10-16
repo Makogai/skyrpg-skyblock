@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "KUUDRA_TENTACLE",
+ "base": "minecraft:paper",
+ "name": "Kuudra Tentacle",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

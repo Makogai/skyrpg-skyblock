@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP:5",
+ "base": "minecraft:dark_oak_slab",
+ "name": "Dark Oak Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COBBLE_WALL",
+ "base": "minecraft:cobblestone_wall",
+ "name": "Cobblestone Wall",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

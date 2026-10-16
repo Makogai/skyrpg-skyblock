@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ALL_IN_ALOE_FRAGMENT",
+ "base": "minecraft:gold_nugget",
+ "name": "All-in Aloe Fragment",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Hope you hit it big!",
+ "hypixel": {
+  "npc_sell_price": 0,
+  "soulbound": "COOP",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

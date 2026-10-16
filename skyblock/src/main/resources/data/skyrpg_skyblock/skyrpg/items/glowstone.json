@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GLOWSTONE",
+ "base": "minecraft:glowstone",
+ "name": "Glowstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 7.0,
+    "MINION_STORAGE": 0.8
+   }
+  }
+ }
+}

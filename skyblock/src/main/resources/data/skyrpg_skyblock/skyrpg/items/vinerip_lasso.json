@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "VINERIP_LASSO",
+ "base": "minecraft:paper",
+ "name": "Vinerip Lasso",
+ "rarity": "uncommon",
+ "category": "LASSO",
+ "type": "Lasso",
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false,
+  "can_interact": false,
+  "can_interact_right_click": false,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 2,
+   "parent": {
+    "VINERIP_LASSO": "ENTANGLER_LASSO"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

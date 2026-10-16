@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TUNGSTEN_KEY",
+ "base": "minecraft:paper",
+ "name": "Tungsten Key",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false
+ }
+}

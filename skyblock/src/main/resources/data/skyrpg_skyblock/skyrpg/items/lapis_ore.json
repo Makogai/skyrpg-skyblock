@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LAPIS_ORE",
+ "base": "minecraft:lapis_ore",
+ "name": "Lapis Lazuli Ore",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 7.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

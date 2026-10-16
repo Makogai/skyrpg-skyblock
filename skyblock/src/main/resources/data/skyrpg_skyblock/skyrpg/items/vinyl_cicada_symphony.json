@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_CICADA_SYMPHONY",
+ "base": "minecraft:music_disc_blocks",
+ "name": "Cicada Symphony Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

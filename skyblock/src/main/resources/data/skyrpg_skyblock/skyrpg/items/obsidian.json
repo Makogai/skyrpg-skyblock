@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "OBSIDIAN",
+ "base": "minecraft:obsidian",
+ "name": "Obsidian",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 7,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 15.0
+   },
+   "mining": {
+    "BREAK_BLOCK": 20.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

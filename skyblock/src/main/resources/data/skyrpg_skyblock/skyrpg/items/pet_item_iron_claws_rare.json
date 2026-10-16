@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_IRON_CLAWS_RARE",
+ "base": "minecraft:iron_ingot",
+ "name": "Iron Claws",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Golden Chestplate",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 16
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "UGLY_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Ugly Boots",
+ "rarity": "mythic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "rift_time": 80,
+  "rift_walk_speed": 9
+ },
+ "color": "#3333FF",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

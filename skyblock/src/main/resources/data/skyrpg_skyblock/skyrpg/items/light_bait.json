@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LIGHT_BAIT",
+ "base": "minecraft:paper",
+ "name": "Light Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 16
+ }
+}

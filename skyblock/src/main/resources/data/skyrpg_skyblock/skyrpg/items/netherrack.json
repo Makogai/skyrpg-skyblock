@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "NETHERRACK",
+ "base": "minecraft:netherrack",
+ "name": "Netherrack",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "BREAK_BLOCK": 0.5,
+    "MINION_STORAGE": 0.05
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "POWER_CRYSTAL",
+ "base": "minecraft:nether_star",
+ "name": "Power Crystal",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1920
+ }
+}

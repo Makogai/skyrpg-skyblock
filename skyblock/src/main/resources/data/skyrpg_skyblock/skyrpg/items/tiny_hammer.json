@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "TINY_HAMMER",
+ "base": "minecraft:iron_axe",
+ "name": "remmaH yniT",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7.wohemoS",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 495
+ }
+}

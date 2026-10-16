@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_MAGMA_CREAM",
+ "base": "minecraft:magma_cream",
+ "name": "Enchanted Magma Cream",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1280,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 32.0
+   },
+   "fishing": {
+    "FISH_ITEM": 100.0
+   }
+  }
+ }
+}

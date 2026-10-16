@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAPLING:4",
+ "base": "minecraft:acacia_sapling",
+ "name": "Acacia Sapling",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25
+ }
+}

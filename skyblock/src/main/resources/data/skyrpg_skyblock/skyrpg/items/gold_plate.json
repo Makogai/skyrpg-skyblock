@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GOLD_PLATE",
+ "base": "minecraft:light_weighted_pressure_plate",
+ "name": "Light Weighted Pressure Plate",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "TITANIUM_DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Titanium-Plated Drill Engine",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 103000,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 6,
+   "game_stage": "SKILLED",
+   "parent": {
+    "TITANIUM_DRILL_ENGINE": "RUBY_POLISHED_DRILL_ENGINE"
+   }
+  }
+ }
+}

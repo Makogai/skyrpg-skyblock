@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:13",
+ "base": "minecraft:magenta_dye",
+ "name": "Magenta Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

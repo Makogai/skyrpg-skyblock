@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "SALTY_SPRAYONATOR",
+ "base": "minecraft:paper",
+ "name": "Salty Sprayonator",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "FARMING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

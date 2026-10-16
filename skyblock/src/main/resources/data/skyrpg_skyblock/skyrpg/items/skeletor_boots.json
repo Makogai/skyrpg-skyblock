@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "SKELETOR_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Skeletor Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "crit_chance": 2,
+  "crit_damage": 20,
+  "health": 13,
+  "defense": 20
+ },
+ "color": "#918F89",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 15
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETOR": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    20,
+    22,
+    25,
+    26,
+    29,
+    32,
+    34,
+    38,
+    41,
+    44
+   ],
+   "HEALTH": [
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    21,
+    23,
+    25,
+    27
+   ],
+   "CRITICAL_DAMAGE": [
+    20,
+    22,
+    23,
+    25,
+    28,
+    30,
+    33,
+    36,
+    39,
+    42
+   ],
+   "CRITICAL_CHANCE": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    4
+   ]
+  }
+ }
+}

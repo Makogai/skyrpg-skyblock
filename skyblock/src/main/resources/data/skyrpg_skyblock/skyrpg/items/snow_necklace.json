@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SNOW_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Snow Necklace",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "health": 5,
+  "speed": 2,
+  "intelligence": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

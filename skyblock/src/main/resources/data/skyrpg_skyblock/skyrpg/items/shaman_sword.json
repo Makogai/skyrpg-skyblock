@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "SHAMAN_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Shaman Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 100,
+  "strength": 20,
+  "speed": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {
+    "SHAMAN_SWORD": "POOCH_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

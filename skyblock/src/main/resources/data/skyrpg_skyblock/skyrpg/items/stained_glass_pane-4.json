@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS_PANE:4",
+ "base": "minecraft:yellow_stained_glass_pane",
+ "name": "Yellow Stained Glass Pane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.75
+ }
+}

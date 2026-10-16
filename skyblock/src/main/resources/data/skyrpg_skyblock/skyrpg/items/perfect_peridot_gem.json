@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PERFECT_PERIDOT_GEM",
+ "base": "minecraft:paper",
+ "name": "Perfect Peridot Gemstone",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

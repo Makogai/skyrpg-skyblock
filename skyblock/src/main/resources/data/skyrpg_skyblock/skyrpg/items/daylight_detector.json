@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DAYLIGHT_DETECTOR",
+ "base": "minecraft:daylight_detector",
+ "name": "Daylight Detector",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9
+ }
+}

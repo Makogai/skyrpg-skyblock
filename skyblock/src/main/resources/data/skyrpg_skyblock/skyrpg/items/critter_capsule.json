@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CRITTER_CAPSULE",
+ "base": "minecraft:paper",
+ "name": "Critter Capsule",
+ "rarity": "special",
+ "category": "CAPSULE",
+ "type": "Capsule",
+ "hypixel": {
+  "safari_only": true
+ }
+}

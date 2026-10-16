@@ -1,0 +1,54 @@
+{
+ "skyblock_id": "BLAZE_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Blaze Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 30,
+  "defense": 90,
+  "speed": 2
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0MzE4ODMwMSwKICAicHJvZmlsZUlkIiA6ICIzZDU1OGQ3Y2NmZjk0ODdkYWE1MzhkMjM4NGE3OWFkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJDcnlwdGljTG9zZXIxMyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81MzFiMjE4MzM5MmViY2ZmZTIxN2E5ODNjOTZhNTczY2Y5MGRkNTg2ODdkMThmZDYzMDM2Y2NjNTllYjJmNDdkIgogICAgfQogIH0KfQ==",
+  "signature": "ivnfPyZ0z10MEDvezwNheMSCZ5OvCJgKuE1xzsttxOqEtG1T6nnFniaZ8R4NL6hOeanKU+y9f4bAgEHcKMx5+cggSOM0wIZf2QizX3y+ywcK6MXrbWAIGS7TD9eCjS2tmNJdp/toMQbQ7MQClHZLAxuFOrjIZ7GPswvG8q84JrMZ9a1/xUfIh29//S88pnsknv8+KsnEZAi96W/PLqBWWX/ZZi4zkGFFy1exJbcFWV/MDk3tLTNP8LbeJeR9DsSXZ6iA/A4p1hYxJk9QhXVdFhOMIbgjprvfcC/ci2VfXxXuiLfPNdyI3k+YDuoWFdD1dkNLy9kX2lUuKNiXvCZl/XjAJZPN6avhGJW3xtp2VzRbqpjA58LVCqjgM8xYHrBP8BY4OckXMgg/rHlKmPPPmRo9lazwZUtgEjE3BMScRtRVN1z9HP1cm/QKvsA6+CA+ngZDRdLWVIdV4BKKA/KpuPlXRurj5YaTxVV45Tdj+c2IYZHNAtSfWLNww3nBTRTrLcsqJZlnihBF2oy81HnSLBdqvq8UjpQkp3cJAC3lq3JyohJ7DPo8Sf2HGb9g2cX6nENqGPTl0JTlMNUOZ5bmoVT48Fb6IeaVvo/Rk3CzdE3PiO6Qndi1eHChMHGGYVnkI1Oq0zwycjCcpL+ZhQiTmE0Htxkbig+VSPUT9UWjH9U="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "npc_sell_price": 576000,
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "BLAZE": "FROZEN_BLAZE"
+   },
+   "armor_set_donation_xp": {
+    "BLAZE": 7,
+    "CRIMSON_HUNTER": 4
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

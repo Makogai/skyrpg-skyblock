@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GLASS_BOTTLE",
+ "base": "minecraft:glass_bottle",
+ "name": "Glass Bottle",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

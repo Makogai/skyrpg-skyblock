@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "TENTACLE_MEAT",
+ "base": "minecraft:paper",
+ "name": "Tentacle Meat",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

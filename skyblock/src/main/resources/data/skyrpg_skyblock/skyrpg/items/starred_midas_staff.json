@@ -1,0 +1,65 @@
+{
+ "skyblock_id": "STARRED_MIDAS_STAFF",
+ "base": "minecraft:golden_shovel",
+ "name": "Midas Staff",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 130,
+  "strength": 150,
+  "weapon_ability_damage": 6000,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.3,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "GOLD",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 250
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ]
+ }
+}

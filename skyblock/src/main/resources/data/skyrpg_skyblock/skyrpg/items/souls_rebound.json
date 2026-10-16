@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "SOULS_REBOUND",
+ "base": "minecraft:bow",
+ "name": "Souls Rebound",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 450
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 20
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 30
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

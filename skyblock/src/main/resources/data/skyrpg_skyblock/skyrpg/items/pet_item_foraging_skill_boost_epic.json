@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_FORAGING_SKILL_BOOST_EPIC",
+ "base": "minecraft:iron_axe",
+ "name": "Foraging Exp Boost",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

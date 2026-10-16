@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TUNGSTEN",
+ "base": "minecraft:paper",
+ "name": "Tungsten",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Considered for a long time to be unbreakable prior to the discovery of the Crystal Hollows.",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

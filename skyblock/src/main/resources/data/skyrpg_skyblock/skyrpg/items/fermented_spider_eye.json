@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FERMENTED_SPIDER_EYE",
+ "base": "minecraft:fermented_spider_eye",
+ "name": "Fermented Spider Eye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   }
+  }
+ }
+}

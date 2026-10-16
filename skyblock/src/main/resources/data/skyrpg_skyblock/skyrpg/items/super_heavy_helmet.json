@@ -1,0 +1,97 @@
+{
+ "skyblock_id": "SUPER_HEAVY_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Super Heavy Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 70,
+  "speed": -10
+ },
+ "color": "#E6E6E6",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 15
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SUPER_HEAVY": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "WALK_SPEED": [
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10
+   ],
+   "DEFENSE": [
+    70,
+    78,
+    86,
+    96,
+    106,
+    118,
+    131,
+    146,
+    162,
+    180
+   ]
+  }
+ }
+}

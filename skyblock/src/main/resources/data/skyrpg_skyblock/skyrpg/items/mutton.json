@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "MUTTON",
+ "base": "minecraft:mutton",
+ "name": "Raw Mutton",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "farming": {
+    "MINION_STORAGE": 0.1,
+    "COLLECT_ITEM": 2.0
+   }
+  }
+ }
+}

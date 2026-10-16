@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_MYCELIUM",
+ "base": "minecraft:mycelium",
+ "name": "Enchanted Mycelium",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

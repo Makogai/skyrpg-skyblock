@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "LAVA_SHELL",
+ "base": "minecraft:paper",
+ "name": "Lava Shell",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

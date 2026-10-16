@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "STAR_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Chestplate of the Stars",
+ "rarity": "unobtainable",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 20000,
+  "defense": 5000,
+  "intelligence": 2000
+ }
+}

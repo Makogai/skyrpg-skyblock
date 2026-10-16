@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DEEP_SEA_ORB",
+ "base": "minecraft:paper",
+ "name": "Deep Sea Orb",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

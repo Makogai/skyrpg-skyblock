@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RANDOM_FIREWORK",
+ "base": "minecraft:firework_rocket",
+ "name": "Random Firework",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5200
+ }
+}

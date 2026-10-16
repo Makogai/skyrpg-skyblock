@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "BIGGER_SPRING_BOOTS",
+ "base": "minecraft:iron_boots",
+ "name": "Bigger Spring Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

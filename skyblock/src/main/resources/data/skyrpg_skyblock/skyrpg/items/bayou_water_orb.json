@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BAYOU_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Bayou Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A green mass of coagulated swamp.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

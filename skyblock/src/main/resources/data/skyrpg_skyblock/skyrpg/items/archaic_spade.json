@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ARCHAIC_SPADE",
+ "base": "minecraft:stone_shovel",
+ "name": "Archaic Spade",
+ "rarity": "epic",
+ "category": "SPADE",
+ "type": "Spade",
+ "glint": true,
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "ARCHAIC_SPADE": "DEIFIC_SPADE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

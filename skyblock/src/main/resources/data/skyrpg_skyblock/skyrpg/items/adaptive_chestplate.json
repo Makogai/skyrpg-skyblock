@@ -1,0 +1,77 @@
+{
+ "skyblock_id": "ADAPTIVE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Adaptive Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 15,
+  "health": 170,
+  "defense": 85,
+  "intelligence": 15
+ },
+ "color": "#BFBCB2",
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 3
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "DEFENSIVE"
+   }
+  ],
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ADAPTIVE": 7
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

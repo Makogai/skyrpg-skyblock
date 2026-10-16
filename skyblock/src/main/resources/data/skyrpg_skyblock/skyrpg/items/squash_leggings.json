@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "SQUASH_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Squash Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 180,
+  "defense": 35,
+  "speed": 5,
+  "farming_fortune": 30,
+  "bonus_pest_chance": 15
+ },
+ "color": "#0C4A16",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 35
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "SQUASH": "FERMENTO"
+   },
+   "armor_set_donation_xp": {
+    "SQUASH": 9
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

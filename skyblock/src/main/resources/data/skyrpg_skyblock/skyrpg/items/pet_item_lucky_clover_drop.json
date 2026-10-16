@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "PET_ITEM_LUCKY_CLOVER_DROP",
+ "base": "minecraft:lime_dye",
+ "name": "Lucky Clover Core",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Used to craft the Lucky Clover pet item.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

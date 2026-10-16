@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOTUS_SILVER",
+ "base": "minecraft:paper",
+ "name": "Silver Lotus",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 1200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

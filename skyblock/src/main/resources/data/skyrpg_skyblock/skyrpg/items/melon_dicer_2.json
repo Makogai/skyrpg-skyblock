@@ -1,0 +1,105 @@
+{
+ "skyblock_id": "MELON_DICER_2",
+ "base": "minecraft:golden_axe",
+ "name": "Melon Dicer Mk. II",
+ "rarity": "rare",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "description": "§oSame as the Melon Dicer Mk. I, just better!",
+ "hypixel": {
+  "can_auction": false,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 15
+   },
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ],
+    "requirements": [
+     {
+      "type": "ITEM_DATA",
+      "data_key": "levelable_lvl",
+      "value": "5",
+      "operator": "GREATER_THAN_OR_EQUALS"
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ],
+    "requirements": [
+     {
+      "type": "ITEM_DATA",
+      "data_key": "levelable_lvl",
+      "value": "15",
+      "operator": "GREATER_THAN_OR_EQUALS"
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_PERIDOT_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ],
+    "requirements": [
+     {
+      "type": "ITEM_DATA",
+      "data_key": "levelable_lvl",
+      "value": "25",
+      "operator": "GREATER_THAN_OR_EQUALS"
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "FARMING",
+   "parent": {
+    "MELON_DICER_2": "MELON_DICER_3"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  },
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

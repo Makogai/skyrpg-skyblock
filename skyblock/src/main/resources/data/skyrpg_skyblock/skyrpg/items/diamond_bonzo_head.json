@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "DIAMOND_BONZO_HEAD",
+ "base": "minecraft:player_head",
+ "name": "Diamond Bonzo Head",
+ "rarity": "special",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 10,
+  "health": 50,
+  "defense": 20
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0MzYzODUyNCwKICAicHJvZmlsZUlkIiA6ICI5YjhhN2NlMmJlYjI0NjdkYTJjZmU4MzQ1YTNjOTZkOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdGFyR2FtZXJTaGFsb20iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmFlMjAxYjA2ZjEwYjViNGViMDEzMGVjZDdkNTlmYWM3ZTRlMDEzYmJkNGY1ZDVkMDQ2MzU4MGZiMDU0OWE4YiIKICAgIH0KICB9Cn0=",
+  "signature": "aZs1idGGgV8PeTpnB69yX/xa+HmxAYs6Rq+fHC1DryvsAk12PiuzSb6j4i7MdVFQXU8lJqGHRfUerz8PNHofQ+lRLS4GtIpdloZsqk5gZEJiwrfJlcTSsxPZifuK4MQ+SeSc3Zzt4gZJ/0SlUdBHLhLs9yHYIo+HIMI2ZJy99EHTHKU4PtK/8jyiifnF4iQkFMbNb2uQNtu98sSeIQkDFsitx4UuAStd1FhN81vOlU2Dkz7jM0CHAA0pwOJxdS+FQtPIdZ1t2a9YHye0CzS8Ux4hgFaPsU5FUkzGi1q8bXDVqTxLQU/z0I019WLnOU6xw3PM7QRlWVgMsnfSjabeHlLg9FEOk8HCnAQPvnVx3HswZgJ9UQ+v/E2ducIpgGjs+GgbSDUolaVwFTD7s+rYKPEwTphaU7JStq/NZ3GYOHLGKQXXTgM7kLXHqd5Azfd36DBsq4lD+7rMdOWCyFz14maqj1ctV/OjE0gZ0STNPOSkejMwBYVpVz2+xbrYVGDH8UV8fodRpndrcOxB06UZ9sb3yo7uxuy0IhQXXcGvXtIg4L6RWTxsxudRXH3/7THsCzyCYRyXaULpSf/uwi98ryNbkZHZT+cpd9UwacagyFqsQvH9D83M2upv5VXsWmX+C5GdGCpu2C4Yy574KyU5c83m5pbTrMitlmlmnRpcGpk="
+ },
+ "hypixel": {
+  "soulbound": "COOP",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_BOSS_COLLECTION",
+    "dungeon_type": "CATACOMBS",
+    "tier": 1,
+    "amount": 1000
+   }
+  ],
+  "rarity_salvageable": false,
+  "dungeon_item": true,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "DUNGEONEERING",
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

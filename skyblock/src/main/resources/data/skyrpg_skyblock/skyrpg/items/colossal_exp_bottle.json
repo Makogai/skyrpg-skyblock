@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "COLOSSAL_EXP_BOTTLE",
+ "base": "minecraft:experience_bottle",
+ "name": "Colossal Experience Bottle",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000
+ }
+}

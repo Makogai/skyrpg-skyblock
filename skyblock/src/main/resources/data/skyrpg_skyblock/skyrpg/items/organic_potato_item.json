@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_POTATO_ITEM",
+ "base": "minecraft:potato",
+ "name": "Organic Potato",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

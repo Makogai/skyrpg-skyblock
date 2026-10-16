@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "CACTUS",
+ "base": "minecraft:cactus",
+ "name": "Cactus",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "farming": {
+    "BREAK_BLOCK": 2.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

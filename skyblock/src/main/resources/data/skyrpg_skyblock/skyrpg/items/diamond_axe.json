@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_AXE",
+ "base": "minecraft:diamond_axe",
+ "name": "Diamond Axe",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

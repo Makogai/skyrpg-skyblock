@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PET_SATCHEL",
+ "base": "minecraft:flower_pot",
+ "name": "Pet Satchel",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_place": false
+ }
+}

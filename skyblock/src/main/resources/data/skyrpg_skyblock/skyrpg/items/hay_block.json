@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "HAY_BLOCK",
+ "base": "minecraft:hay_block",
+ "name": "Hay Bale",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 54,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 1.8
+   }
+  }
+ }
+}

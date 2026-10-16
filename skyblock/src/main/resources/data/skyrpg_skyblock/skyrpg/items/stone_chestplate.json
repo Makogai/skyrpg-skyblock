@@ -1,0 +1,61 @@
+{
+ "skyblock_id": "STONE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Stone Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 130
+ },
+ "color": "#D9D9D9",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "STONE_CHESTPLATE": "METAL_CHESTPLATE"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

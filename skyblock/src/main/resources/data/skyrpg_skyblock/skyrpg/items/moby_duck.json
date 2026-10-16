@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MOBY_DUCK",
+ "base": "minecraft:book",
+ "name": "Moby-Duck",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oA series of tales following a fellow named Moby and his waterfowl best friend. Who would be so egregious as to thrust such a literary masterpiece into the sea?",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 1000000,
+  "can_recombobulate": false
+ }
+}

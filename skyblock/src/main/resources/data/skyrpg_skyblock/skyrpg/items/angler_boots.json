@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ANGLER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Angler Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15,
+  "sea_creature_chance": 1
+ },
+ "color": "#0B004F",
+ "hypixel": {
+  "npc_sell_price": 12,
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "ANGLER": 2
+   },
+   "parent": {
+    "ANGLER": "BACKWATER"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

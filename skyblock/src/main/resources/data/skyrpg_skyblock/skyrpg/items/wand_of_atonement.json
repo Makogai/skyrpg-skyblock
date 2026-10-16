@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "WAND_OF_ATONEMENT",
+ "base": "minecraft:stick",
+ "name": "Wand of Atonement",
+ "rarity": "legendary",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

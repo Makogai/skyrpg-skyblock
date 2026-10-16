@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "GLOSSY_MINERAL_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Glossy Mineral Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 90,
+  "speed": 20,
+  "block_fortune": 50
+ },
+ "color": "#5B0DAE",
+ "hypixel": {
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GLOSSY_MINERAL": 7
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "BLOODBADGE",
+ "base": "minecraft:red_dye",
+ "name": "Bloodbadge",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7You and killing stuff in the rift, name a more iconic duo.",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 2000,
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 3
+   }
+  ]
+ }
+}

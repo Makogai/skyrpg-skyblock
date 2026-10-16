@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "THUNDERBOLT_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Thunderbolt Necklace",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "health": 40,
+  "defense": 30,
+  "sea_creature_chance": 1.5
+ },
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 75000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 36
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "THUNDER": 15
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

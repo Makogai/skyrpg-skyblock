@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "CORRUPTED_NETHER_STAR",
+ "base": "minecraft:nether_star",
+ "name": "Nether Star",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "museum": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

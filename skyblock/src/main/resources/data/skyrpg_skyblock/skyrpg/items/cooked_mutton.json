@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKED_MUTTON",
+ "base": "minecraft:cooked_mutton",
+ "name": "Cooked Mutton",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

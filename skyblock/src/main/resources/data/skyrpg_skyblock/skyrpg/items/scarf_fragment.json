@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SCARF_FRAGMENT",
+ "base": "minecraft:poppy",
+ "name": "Scarf Fragment",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

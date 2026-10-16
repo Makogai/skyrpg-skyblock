@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "FARM_SUIT_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Farmhand Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 10,
+  "farming_fortune": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 20,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FARM_SUIT": "FARM_ARMOR"
+   },
+   "armor_set_donation_xp": {
+    "FARM_SUIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

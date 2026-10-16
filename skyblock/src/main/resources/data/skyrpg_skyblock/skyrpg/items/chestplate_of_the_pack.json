@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "CHESTPLATE_OF_THE_PACK",
+ "base": "minecraft:leather_chestplate",
+ "name": "Chestplate of the Pack",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 100,
+  "defense": 95
+ },
+ "color": "#FF0000",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARMOR_OF_THE_PACK": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

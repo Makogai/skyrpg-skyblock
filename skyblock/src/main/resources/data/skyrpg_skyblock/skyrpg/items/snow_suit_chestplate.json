@@ -1,0 +1,34 @@
+{
+ "skyblock_id": "SNOW_SUIT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Snow Suit Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 100,
+  "defense": 40
+ },
+ "color": "#FFFFFF",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 10
+   }
+  ],
+  "rarity_salvageable": true,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "SNOW_SUIT": "NUTCRACKER"
+   },
+   "armor_set_donation_xp": {
+    "SNOW_SUIT": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

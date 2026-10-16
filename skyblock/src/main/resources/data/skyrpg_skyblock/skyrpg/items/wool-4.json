@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:4",
+ "base": "minecraft:yellow_wool",
+ "name": "Yellow Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MINOS_HUNTER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Minos Hunter Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "color": "#FF0A0A",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

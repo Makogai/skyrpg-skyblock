@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SULPHUR",
+ "base": "minecraft:gunpowder",
+ "name": "Gunpowder",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "combat": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

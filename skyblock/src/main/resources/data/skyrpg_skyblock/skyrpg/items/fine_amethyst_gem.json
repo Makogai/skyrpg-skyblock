@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_AMETHYST_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Amethyst Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 19200
+ }
+}

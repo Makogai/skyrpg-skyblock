@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FALLEN_STAR_BOOTS",
+ "base": "minecraft:leather_chestplate",
+ "name": "Fallen Star Boots",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "color": "#586158",
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

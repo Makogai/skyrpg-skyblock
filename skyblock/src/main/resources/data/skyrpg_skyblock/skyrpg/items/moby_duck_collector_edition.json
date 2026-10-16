@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "MOBY_DUCK_COLLECTOR_EDITION",
+ "base": "minecraft:book",
+ "name": "Moby-Duck: Collector's Edition",
+ "rarity": "epic",
+ "type": "",
+ "description": "§8§oA series of tales following a fellow named Moby and his waterfowl best friend. Who would be so egregious as to thrust such a literary masterpiece into the sea?",
+ "glint": true,
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 1000000,
+  "can_recombobulate": false
+ }
+}

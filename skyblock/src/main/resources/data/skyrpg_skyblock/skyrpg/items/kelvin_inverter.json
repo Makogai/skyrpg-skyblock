@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "KELVIN_INVERTER",
+ "base": "minecraft:paper",
+ "name": "Kelvin Inverter",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Drops rarely from the Inferno Demonlord.",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

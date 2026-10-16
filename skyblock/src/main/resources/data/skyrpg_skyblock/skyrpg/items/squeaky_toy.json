@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SQUEAKY_TOY",
+ "base": "minecraft:paper",
+ "name": "Squeaky Toy",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 50000
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "GOLDEN_FLEECE",
+ "base": "minecraft:paper",
+ "name": "Golden Fleece",
+ "rarity": "legendary",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "strength": 20,
+  "crit_damage": 15,
+  "true_defense": 10
+ },
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RED_THORNLEAF",
+ "base": "minecraft:dead_bush",
+ "name": "Red Thornleaf",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§8§oA leaf that grows on the ground. Really pushing the envelope.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 20,
+  "can_place": false,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 200
+   }
+  ]
+ }
+}

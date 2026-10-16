@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "SKYMART_HYPER_VACUUM",
+ "base": "minecraft:paper",
+ "name": "SkyMart Hyper Vacuum",
+ "rarity": "rare",
+ "category": "VACUUM",
+ "type": "Vacuum",
+ "stats": {
+  "damage": 200,
+  "farming_fortune": 15
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FARMING",
+   "parent": {
+    "SKYMART_HYPER_VACUUM": "INFINI_VACUUM"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

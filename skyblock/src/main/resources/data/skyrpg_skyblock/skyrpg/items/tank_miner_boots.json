@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "TANK_MINER_BOOTS",
+ "base": "minecraft:diamond_boots",
+ "name": "Miner Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15,
+  "mining_speed": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "TANK_MINER": "HEAT"
+   },
+   "armor_set_donation_xp": {
+    "TANK_MINER": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

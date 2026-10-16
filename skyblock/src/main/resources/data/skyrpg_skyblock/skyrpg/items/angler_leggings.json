@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ANGLER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Angler Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 30,
+  "sea_creature_chance": 1
+ },
+ "color": "#0B004F",
+ "hypixel": {
+  "npc_sell_price": 21,
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "ANGLER": 2
+   },
+   "parent": {
+    "ANGLER": "BACKWATER"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

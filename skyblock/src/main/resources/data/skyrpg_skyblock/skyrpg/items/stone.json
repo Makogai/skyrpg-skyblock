@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "STONE",
+ "base": "minecraft:stone",
+ "name": "Stone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CHUM_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Chum Rod",
+ "rarity": "rare",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 55,
+  "strength": 40,
+  "sea_creature_chance": 2,
+  "fishing_speed": 70
+ },
+ "hypixel": {
+  "npc_sell_price": 750,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ]
+ }
+}

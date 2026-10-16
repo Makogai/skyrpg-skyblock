@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SMALL_SLOTH_CLAW",
+ "base": "minecraft:paper",
+ "name": "Small Sloth Claw",
+ "rarity": "uncommon",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 25000
+ }
+}

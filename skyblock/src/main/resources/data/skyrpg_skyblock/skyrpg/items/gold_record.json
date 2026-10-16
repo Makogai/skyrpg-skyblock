@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GOLD_RECORD",
+ "base": "minecraft:music_disc_13",
+ "name": "Music Disc - 13",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

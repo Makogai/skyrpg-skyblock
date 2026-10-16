@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "LOTUS_CROWN",
+ "base": "minecraft:player_head",
+ "name": "Lotus Crown",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "description": "§8§oA splendid, yet tiny crown; just about the right size for your pet!",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc3NTE0Nzk2OTI4MSwKICAicHJvZmlsZUlkIiA6ICI5ZjJiY2M1M2U4YzM0OTY4YTc5Yzc0NTExYWQ2NmQyYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJLYWJveWlvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcyMTBjOGZiOGJkZmNkNTkyNmE3YWNiMDA2MzA1OTIyZmU4NjJjZDFlMjQ1MDVlNmVjZTliN2YxNzRkNWUzZDYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "n/QUb92orWHYSoptydiybYpX6cvfa1lctCzFKReS2M3TFDqexHBF2/SC7P3F4Jp3rA8sPE5uIapgqpLD3/1uzd/upxBKhFdxpWpdCODmylAn6FKdvnaeEqGvGXq2HLbj+W6iKsmgjDvo+3hIs7+u7SErUv/zSxy1vWciCATpPKEHdWGDdM5VlkzN74zd/BvDw0IuuEIE9OUjb7e5i4JPw7OfWTWJUqFrEfoZSAMMNMKo43MD1vfwvlfNQzD2kM6r+wEK1Swkqb+NGUeEWnRMJScNdPb0tq9RDsWbSyqp8JBJIPyqQ/nOfzMIZv871uEKYoO8YAmgru+OaUsBLeZHzpfPUaIdT4etiTn4dK8cPSKbYra3qVodHcrs0WmkQrjp3KAfXFbNcD4AkwSAfo3lq2GTGWLhLapl9GQwDUZEUEHNbcEDkBm3Sa8pJNG4hdMajeAXwDjxkFDqd6XWNvEQWaccWtjyU5dmibhOHbNiDYQ14fuAbnknESN6zTgFbSO+B3Q+pxG1n2ADXy+v8xEg648bj5Oi5AILdZyx4+q7DbUSGSiJep6OYHCX6o8s0w6xUzu4BaMoK7adWk2Bk60dpdlgeGIs2kaNJDy/Fe4tbH4Z6OwYAGj14JY8NPlWnAOxwWxY7nCpD8g/eK/1neb1SccNUUl4AYdPYfsDIwsg7Fc="
+ }
+}

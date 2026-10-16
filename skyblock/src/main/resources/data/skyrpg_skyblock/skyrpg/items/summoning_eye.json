@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SUMMONING_EYE",
+ "base": "minecraft:paper",
+ "name": "Summoning Eye",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "has_uuid": true
+ }
+}

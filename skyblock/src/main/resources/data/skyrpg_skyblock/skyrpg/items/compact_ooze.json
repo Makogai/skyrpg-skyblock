@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "COMPACT_OOZE",
+ "base": "minecraft:paper",
+ "name": "Compact Ooze",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Piglins sometimes chew on them, they can even blow bubbles out of them.",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

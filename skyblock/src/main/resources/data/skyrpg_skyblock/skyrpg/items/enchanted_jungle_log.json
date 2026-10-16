@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_JUNGLE_LOG",
+ "base": "minecraft:jungle_log",
+ "name": "Enchanted Jungle Log",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "can_place": false,
+  "experience": {
+   "foraging": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_LAPIS_LAZULI",
+ "base": "minecraft:lapis_lazuli",
+ "name": "Enchanted Lapis Lazuli",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

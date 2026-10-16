@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PISTON_STICKY_BASE",
+ "base": "minecraft:sticky_piston",
+ "name": "Sticky Piston",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

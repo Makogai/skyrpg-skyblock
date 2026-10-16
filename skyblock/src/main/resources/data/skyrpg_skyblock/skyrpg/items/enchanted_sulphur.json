@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SULPHUR",
+ "base": "minecraft:glowstone_dust",
+ "name": "Enchanted Sulphur",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

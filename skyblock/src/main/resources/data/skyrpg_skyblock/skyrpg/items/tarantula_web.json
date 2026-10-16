@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TARANTULA_WEB",
+ "base": "minecraft:paper",
+ "name": "Tarantula Web",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

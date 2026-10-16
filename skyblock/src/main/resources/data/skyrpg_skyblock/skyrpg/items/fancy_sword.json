@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "FANCY_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Fancy Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 50,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

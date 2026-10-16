@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ANCESTRAL_SPADE",
+ "base": "minecraft:wooden_shovel",
+ "name": "Ancestral Spade",
+ "rarity": "rare",
+ "category": "SPADE",
+ "type": "Spade",
+ "glint": true,
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "ANCESTRAL_SPADE": "ARCHAIC_SPADE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

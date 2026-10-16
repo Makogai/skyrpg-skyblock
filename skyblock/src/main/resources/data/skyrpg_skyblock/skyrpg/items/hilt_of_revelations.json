@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "HILT_OF_REVELATIONS",
+ "base": "minecraft:stick",
+ "name": "Hilt of Revelations",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A rusted hilt, dropped by the Minos Hunter.",
+ "hypixel": {
+  "npc_sell_price": 150000,
+  "has_uuid": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

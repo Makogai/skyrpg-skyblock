@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "MELON_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Tater Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 100,
+  "defense": 25,
+  "speed": 2,
+  "farming_fortune": 15,
+  "bonus_pest_chance": 10
+ },
+ "color": "#9A5500",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "MELON": "CROPIE"
+   },
+   "armor_set_donation_xp": {
+    "MELON": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

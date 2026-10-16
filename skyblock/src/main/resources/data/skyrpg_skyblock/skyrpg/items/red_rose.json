@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "RED_ROSE",
+ "base": "minecraft:poppy",
+ "name": "Poppy",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.1
+   }
+  },
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 2,
+    "render_lore": false
+   }
+  ]
+ }
+}

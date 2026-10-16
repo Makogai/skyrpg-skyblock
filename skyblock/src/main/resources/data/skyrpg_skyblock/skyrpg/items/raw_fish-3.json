@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RAW_FISH:3",
+ "base": "minecraft:pufferfish",
+ "name": "Pufferfish",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 15,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 12.0
+   },
+   "fishing": {
+    "MINION_STORAGE": 1.0,
+    "FISH_ITEM": 50.0
+   }
+  }
+ }
+}

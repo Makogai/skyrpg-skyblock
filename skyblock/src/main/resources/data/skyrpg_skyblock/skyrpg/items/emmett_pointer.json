@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "EMMETT_POINTER",
+ "base": "minecraft:blaze_rod",
+ "name": "Emmett Pointer",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

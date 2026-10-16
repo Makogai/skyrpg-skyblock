@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "SKELETON_LORD_BOW",
+ "base": "minecraft:bow",
+ "name": "Skeleton Lord Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 109,
+  "strength": 18,
+  "crit_damage": 36
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 30
+   }
+  ],
+  "dungeon_item": true,
+  "tiered_stats": {
+   "DAMAGE": [
+    109,
+    119,
+    129,
+    140,
+    152,
+    166,
+    180,
+    135,
+    146,
+    159
+   ],
+   "STRENGTH": [
+    18,
+    20,
+    21,
+    23,
+    25,
+    28,
+    30,
+    37,
+    40,
+    44
+   ],
+   "CRITICAL_DAMAGE": [
+    36,
+    40,
+    43,
+    47,
+    51,
+    55,
+    60,
+    22,
+    24,
+    26
+   ]
+  }
+ }
+}

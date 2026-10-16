@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MIXED_MITE_GEL",
+ "base": "minecraft:orange_dye",
+ "name": "Mixed Mite Gel",
+ "rarity": "mythic",
+ "type": "",
+ "description": "§8§oPowerful substance combined from the plasma membrane of many Endermites.",
+ "glint": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 15000
+ }
+}

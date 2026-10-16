@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WORKBENCH",
+ "base": "minecraft:crafting_table",
+ "name": "Crafting Table",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

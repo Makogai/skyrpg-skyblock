@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_BOW",
+ "base": "minecraft:bow",
+ "name": "woB",
+ "rarity": "common",
+ "category": "BOW",
+ "type": "Bow",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

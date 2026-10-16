@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_RABBIT_HIDE",
+ "base": "minecraft:rabbit_hide",
+ "name": "Enchanted Rabbit Hide",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 550.0
+   },
+   "farming": {
+    "MINION_STORAGE": 115.0
+   }
+  }
+ }
+}

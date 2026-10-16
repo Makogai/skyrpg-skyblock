@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SEARED_ESCARGOT",
+ "base": "minecraft:paper",
+ "name": "Seared Escargot",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7All that remains of an especially adventurous snail that ventured too deep into the fiery depths.",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

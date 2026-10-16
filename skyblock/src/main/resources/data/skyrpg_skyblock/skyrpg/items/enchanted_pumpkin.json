@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_PUMPKIN",
+ "base": "minecraft:pumpkin",
+ "name": "Enchanted Pumpkin",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600,
+  "can_place": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

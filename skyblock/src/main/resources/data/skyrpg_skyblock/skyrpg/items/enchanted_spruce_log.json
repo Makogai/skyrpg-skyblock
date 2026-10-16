@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SPRUCE_LOG",
+ "base": "minecraft:spruce_log",
+ "name": "Enchanted Spruce Log",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "can_place": false,
+  "experience": {
+   "foraging": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

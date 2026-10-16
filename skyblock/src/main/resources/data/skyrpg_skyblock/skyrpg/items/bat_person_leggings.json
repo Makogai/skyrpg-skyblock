@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "BAT_PERSON_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Bat Person Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 25
+ },
+ "color": "#000000",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BAT_PERSON": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

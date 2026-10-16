@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PARKOUR_POINT",
+ "base": "minecraft:heavy_weighted_pressure_plate",
+ "name": "Parkour Checkpoint",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 1
+   }
+  ]
+ }
+}

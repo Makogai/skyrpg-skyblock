@@ -1,0 +1,68 @@
+{
+ "skyblock_id": "FEL_SWORD",
+ "base": "minecraft:stone_sword",
+ "name": "Fel Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 190,
+  "strength": 135
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 20
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

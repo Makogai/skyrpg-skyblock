@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ENDSTONE_GEODE",
+ "base": "minecraft:paper",
+ "name": "End Stone Geode",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

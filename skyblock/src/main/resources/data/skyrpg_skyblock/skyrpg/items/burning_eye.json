@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "BURNING_EYE",
+ "base": "minecraft:paper",
+ "name": "Burning Eye",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Probably the single most regrettable effect of Sulphur on the island's fauna. You can't kill a spider with fire if it's already burning.",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

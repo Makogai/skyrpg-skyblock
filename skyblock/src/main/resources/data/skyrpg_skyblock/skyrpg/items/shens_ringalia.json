@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SHENS_RINGALIA",
+ "base": "minecraft:paper",
+ "name": "Shen's Ringalia",
+ "rarity": "legendary",
+ "category": "BRACELET",
+ "type": "Bracelet",
+ "stats": {
+  "rift_time": 50
+ },
+ "description": "§7§oNo matter the place or when, anyone marked by Shen will gain control.",
+ "hypixel": {
+  "origin": "RIFT",
+  "soulbound": "SOLO"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GREAT_CARROT_CANDY",
+ "base": "minecraft:carrot",
+ "name": "Great Carrot Candy",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "TITANIUM_FUEL_TANK",
+ "base": "minecraft:paper",
+ "name": "Titanium-Infused Fuel Tank",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 46000,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 7,
+   "game_stage": "EXPERT",
+   "parent": {
+    "TITANIUM_FUEL_TANK": "GEMSTONE_FUEL_TANK"
+   }
+  }
+ }
+}

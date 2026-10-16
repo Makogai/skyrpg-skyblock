@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WIZARD_BREADCRUMBS",
+ "base": "minecraft:glowstone_dust",
+ "name": "%%yellow%%Wizard's Breadcrumbs",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

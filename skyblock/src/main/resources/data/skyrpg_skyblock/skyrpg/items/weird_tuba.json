@@ -1,0 +1,42 @@
+{
+ "skyblock_id": "WEIRD_TUBA",
+ "base": "minecraft:paper",
+ "name": "Weird Tuba",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 5
+   }
+  ],
+  "rift_transferrable": true,
+  "can_place": false,
+  "item_specific": {
+   "stats": {
+    "strength": 30,
+    "walk_speed": 30
+   },
+   "rift_stats": {
+    "rift_damage": 1,
+    "rift_walk_speed": 10
+   },
+   "duration_seconds": 20,
+   "cooldown_seconds": 20,
+   "range": 10,
+   "max_other_players": 4
+  },
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "WEIRD_TUBA": "WEIRDER_TUBA"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

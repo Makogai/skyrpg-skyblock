@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MOSSY_COBBLESTONE",
+ "base": "minecraft:mossy_cobblestone",
+ "name": "Moss Stone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

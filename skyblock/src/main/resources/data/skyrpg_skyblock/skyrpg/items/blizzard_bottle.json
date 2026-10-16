@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "BLIZZARD_BOTTLE",
+ "base": "minecraft:paper",
+ "name": "Blizzard in a Bottle Mixin",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true
+}

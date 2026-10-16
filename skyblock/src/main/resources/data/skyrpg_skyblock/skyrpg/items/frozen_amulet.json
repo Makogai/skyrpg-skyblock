@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "FROZEN_AMULET",
+ "base": "minecraft:paper",
+ "name": "Frozen Amulet",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "sea_creature_chance": 1,
+  "fishing_speed": 3,
+  "treasure_chance": 0.5
+ },
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "museum_data": {
+   "armor_set_donation_xp": {
+    "FROZEN": 4
+   },
+   "category": "FISHING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

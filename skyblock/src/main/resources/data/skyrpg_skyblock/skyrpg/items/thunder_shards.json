@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "THUNDER_SHARDS",
+ "base": "minecraft:paper",
+ "name": "Thunder Fragment",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Wear gloves when handling, and be cautious around water pools.",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "THUNDERBOLT_NECKLACE"
+    ]
+   }
+  ]
+ }
+}

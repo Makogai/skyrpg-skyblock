@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_TIER_BOOST",
+ "base": "minecraft:hopper",
+ "name": "Tier Boost",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

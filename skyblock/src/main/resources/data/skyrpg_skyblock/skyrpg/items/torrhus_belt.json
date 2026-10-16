@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "TORRHUS_BELT",
+ "base": "minecraft:paper",
+ "name": "Torrhus Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "foraging_fortune": 10,
+  "sweep": 2
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 24
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "donation_xp": 8,
+   "parent": {},
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

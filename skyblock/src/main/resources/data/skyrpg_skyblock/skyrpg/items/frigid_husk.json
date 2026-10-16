@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FRIGID_HUSK",
+ "base": "minecraft:paper",
+ "name": "Frigid Husk",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

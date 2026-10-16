@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "CORRUPTED_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Corrupted Fragment",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Spreads fast.",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

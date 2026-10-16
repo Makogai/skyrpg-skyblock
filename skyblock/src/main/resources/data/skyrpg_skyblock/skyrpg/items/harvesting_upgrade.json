@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HARVESTING_UPGRADE",
+ "base": "minecraft:iron_hoe",
+ "name": "Harvesting Upgrade",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2600
+ }
+}

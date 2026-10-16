@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FEAST_BURGER",
+ "base": "minecraft:paper",
+ "name": "Feast Burger with a Side of Deepfries",
+ "rarity": "epic",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "game_stage": "SKILLED",
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "EPOCH_CAKE_BLACK",
+ "base": "minecraft:player_head",
+ "name": "Century Cake of the Next Dungeon Floor",
+ "rarity": "uncommon",
+ "type": "",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxOTQ1NjkxMjk0OCwKICAicHJvZmlsZUlkIiA6ICI1ZjU5NmViY2JlOTQ0NmQxYmI0M2JlNGYzZjRiOGJlNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJUZWlsMHNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY0NTkyNzQ2Y2MzNTY3MmVlMjliYjNhMTUzZDc0ZjdhNWQwZTVmZTg2MTI3MjlhMzRmYWQyNTJmZTc5MDQyODMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "pvT1gUg5PTsdNNoX3CVnrJBigOwUirylWHWdjHCkckKx6Zln/pa+SihU/23mztw6YWJND3Jk5FRkJqCUVqsGJBxW6QyufmLmFZymGACUMC91et8pnr8Y1TlZf0ug0lPsHtE5VyWzatw+C1l0gK0Pso1dz5HqKNznASUQCIJ3eeMBnYRltvHxlE+SElBZyctWVFdACN2YMLB3lELYMLEOrkXANdAew8IFj1F26cO2ijwvrEh1C+HwXaVzAUmonS/Q4tsNNdt/k5XzksH97sQc4T3kWXAlez8PocIEW3VMI5rWJNidgdCPxxwcXCjJ1v3/IGbFO6diCOCu6rSH1fG+hXaAjdKL+gg3FkgcHod82gnmmRLT2cW3CKsgf1DNu3+W6DDLrDIwFYoATJQG5UiSthfmp8WsxXEdD1OKSly44Xn54vBPMNylgiN44SJOFCZM99Wqd3+pdAVD+uWkNzzVw/gHFeoyAKaXXqNq4Dnlr63rJurpIMXQxXgc3W50T8yhnZ1FpzoL3N3dGkF/umrEPhlWxZ8XfOpp6AmbUsGsUtuCK2HYCEYIV8u6w+470eSQ6c4sSA6DQKWwHAncy+7GwoGqzVKx8X2UhN7P/99EMbIgdqXKaQntGx4zmzO+1/CcJSwJehmmay8VQxF0mk75lRXYfYXZW3wzQjqEp8Lab10="
+ },
+ "hypixel": {
+  "furniture": "EPOCH_CAKE_BLACK",
+  "museum": true
+ }
+}

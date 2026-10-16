@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRIA_COUPON",
+ "base": "minecraft:name_tag",
+ "name": "Miria's Coupon",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Can be spent in §bMiria's Shop§7!",
+ "hypixel": {
+  "npc_sell_price": 15000
+ }
+}

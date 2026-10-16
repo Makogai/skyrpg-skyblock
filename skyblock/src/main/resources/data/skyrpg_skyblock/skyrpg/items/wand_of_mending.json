@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "WAND_OF_MENDING",
+ "base": "minecraft:stick",
+ "name": "Wand of Mending",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "WAND_OF_MENDING": "WAND_OF_RESTORATION"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

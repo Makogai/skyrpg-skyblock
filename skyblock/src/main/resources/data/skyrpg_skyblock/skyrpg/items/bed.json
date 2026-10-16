@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BED",
+ "base": "minecraft:red_bed",
+ "name": "Bed",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

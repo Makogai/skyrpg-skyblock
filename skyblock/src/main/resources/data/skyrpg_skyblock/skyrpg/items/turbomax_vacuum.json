@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TURBOMAX_VACUUM",
+ "base": "minecraft:hopper_minecart",
+ "name": "Turbomax Vacuum Cleaner",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

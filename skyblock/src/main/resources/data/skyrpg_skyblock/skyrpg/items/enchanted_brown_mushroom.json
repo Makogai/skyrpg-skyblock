@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_BROWN_MUSHROOM",
+ "base": "minecraft:brown_mushroom",
+ "name": "Enchanted Brown Mushroom",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600,
+  "can_place": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

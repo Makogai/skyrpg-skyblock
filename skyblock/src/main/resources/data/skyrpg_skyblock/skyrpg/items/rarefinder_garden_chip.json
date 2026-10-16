@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "RAREFINDER_GARDEN_CHIP",
+ "base": "minecraft:paper",
+ "name": "Rarefinder Chip",
+ "rarity": "rare",
+ "category": "GARDEN_CHIP",
+ "type": "Garden Chip",
+ "hypixel": {
+  "can_auction": false,
+  "npc_sell_price": 1000000
+ }
+}

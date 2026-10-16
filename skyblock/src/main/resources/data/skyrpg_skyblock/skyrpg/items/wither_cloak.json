@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "WITHER_CLOAK",
+ "base": "minecraft:stone_sword",
+ "name": "Wither Cloak Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 190,
+  "strength": 135,
+  "defense": 250
+ },
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "npc_sell_price": 1000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 1200
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

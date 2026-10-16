@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "RED_SWEATER",
+ "base": "minecraft:leather_chestplate",
+ "name": "Red Sweater",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "trophy_fish_chance": 4
+ },
+ "description": "§7Seems to attract §aBullfrogs §7due to its red hue.",
+ "color": "#FF0000",
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

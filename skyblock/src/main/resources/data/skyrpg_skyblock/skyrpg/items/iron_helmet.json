@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "IRON_HELMET",
+ "base": "minecraft:iron_helmet",
+ "name": "Iron Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 12
+ },
+ "hypixel": {
+  "npc_sell_price": 7
+ }
+}

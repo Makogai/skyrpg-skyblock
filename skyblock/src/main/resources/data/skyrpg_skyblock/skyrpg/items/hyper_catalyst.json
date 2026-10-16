@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HYPER_CATALYST",
+ "base": "minecraft:nether_star",
+ "name": "Hyper Catalyst",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "VOIDWALKER_KATANA",
+ "base": "minecraft:blaze_rod",
+ "name": "Voidwalker Katana",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 105,
+  "strength": 40,
+  "crit_damage": 15
+ },
+ "hypixel": {
+  "sword_type": "KATANA",
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {
+    "VOIDWALKER_KATANA": "VOIDEDGE_KATANA"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BOTTLED_MISCHIEF",
+ "base": "minecraft:paper",
+ "name": "Bottled Mischief",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Dropped by the §9Puck §7in §6Torrhus Canyon§7.\n\n§8§oThe very essence of a Puck is mischief. Though it seldom means harm, it should never be trusted.",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "CRYSTAL_HOLLOWS_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the Crystal Hollows",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

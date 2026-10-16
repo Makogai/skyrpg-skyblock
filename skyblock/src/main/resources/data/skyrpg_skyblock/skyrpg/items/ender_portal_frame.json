@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENDER_PORTAL_FRAME",
+ "base": "minecraft:paper",
+ "name": "End Portal Frame",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "can_place": false
+ }
+}

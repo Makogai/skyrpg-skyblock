@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "PERSONAL_DELETOR_6000",
+ "base": "minecraft:dispenser",
+ "name": "Personal Deletor 6000",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "can_auction": false,
+  "can_trade": false
+ }
+}

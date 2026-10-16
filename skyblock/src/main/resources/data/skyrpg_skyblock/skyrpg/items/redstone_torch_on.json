@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "REDSTONE_TORCH_ON",
+ "base": "minecraft:redstone_torch",
+ "name": "Redstone Torch",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

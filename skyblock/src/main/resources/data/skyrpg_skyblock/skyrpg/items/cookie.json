@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKIE",
+ "base": "minecraft:cookie",
+ "name": "Cookie",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.3
+ }
+}

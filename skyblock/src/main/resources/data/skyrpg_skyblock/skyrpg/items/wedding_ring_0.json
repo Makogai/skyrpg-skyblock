@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WEDDING_RING_0",
+ "base": "minecraft:gold_nugget",
+ "name": "Shiny Yellow Rock",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

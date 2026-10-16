@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOG:2",
+ "base": "minecraft:birch_log",
+ "name": "Birch Log",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 6.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

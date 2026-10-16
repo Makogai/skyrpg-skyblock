@@ -1,0 +1,215 @@
+{
+ "skyblock_id": "THUNDER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Thunder Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 25,
+  "health": 250,
+  "defense": 225,
+  "sea_creature_chance": 4
+ },
+ "color": "#24DDE5",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 36
+   }
+  ],
+  "npc_sell_price": 200000,
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 6
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 8
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 160
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 15
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "THUNDER_SHARDS",
+     "amount": 25
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HORN_OF_TAURUS",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HORN_OF_TAURUS",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 800
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 4
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "THUNDER": 15
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

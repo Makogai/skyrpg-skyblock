@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS:2",
+ "base": "minecraft:magenta_stained_glass",
+ "name": "Magenta Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

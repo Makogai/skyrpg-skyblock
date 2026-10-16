@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TUNING_FORK",
+ "base": "minecraft:birch_fence",
+ "name": "Tuning Fork",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_GRILLED_PORK",
+ "base": "minecraft:cooked_porkchop",
+ "name": "Enchanted Cooked Porkchop",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128000,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

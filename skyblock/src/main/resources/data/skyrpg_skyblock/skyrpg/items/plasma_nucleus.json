@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PLASMA_NUCLEUS",
+ "base": "minecraft:purple_dye",
+ "name": "Plasma Nucleus",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Combine with an §5Overflux Power Orb §7to increase its strength and create a §6Plasmaflux Power Orb§7.",
+ "unstackable": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

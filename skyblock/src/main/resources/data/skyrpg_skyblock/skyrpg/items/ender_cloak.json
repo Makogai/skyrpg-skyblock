@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENDER_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Ender Cloak",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "health": 15,
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 12
+   }
+  ],
+  "soulbound": "COOP"
+ }
+}

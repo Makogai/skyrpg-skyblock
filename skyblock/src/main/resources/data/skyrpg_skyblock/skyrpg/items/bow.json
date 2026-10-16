@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BOW",
+ "base": "minecraft:bow",
+ "name": "Bow",
+ "rarity": "common",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 9,
+  "motes_sell_price": 105
+ }
+}

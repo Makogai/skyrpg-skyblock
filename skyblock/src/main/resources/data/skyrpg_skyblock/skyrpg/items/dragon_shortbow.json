@@ -1,0 +1,75 @@
+{
+ "skyblock_id": "DRAGON_SHORTBOW",
+ "base": "minecraft:bow",
+ "name": "Dragon Shortbow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 120,
+  "strength": 40,
+  "crit_chance": 15,
+  "crit_damage": 50
+ },
+ "hypixel": {
+  "enchantments": {
+   "aiming": 5
+  },
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 50
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 8
+   }
+  ],
+  "soulbound": "COOP",
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

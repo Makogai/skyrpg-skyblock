@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SUNFLOWER",
+ "base": "minecraft:sunflower",
+ "name": "Enchanted Sunflower",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 640,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

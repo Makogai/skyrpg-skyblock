@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "PEST_VEST",
+ "base": "minecraft:paper",
+ "name": "Pest Vest",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "bonus_pest_chance": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 0,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FARMING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

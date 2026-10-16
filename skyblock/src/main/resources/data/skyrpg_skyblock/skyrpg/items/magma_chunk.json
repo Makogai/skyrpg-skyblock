@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "MAGMA_CHUNK",
+ "base": "minecraft:paper",
+ "name": "Magma Chunk",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7§o\"If Magma Cream is the cement, Magma Chunks are the bricks.\" - Magma Cube local expert.",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

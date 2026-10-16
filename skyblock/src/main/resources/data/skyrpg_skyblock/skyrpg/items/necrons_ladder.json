@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NECRONS_LADDER",
+ "base": "minecraft:ladder",
+ "name": "Necron's Ladder",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false
+ }
+}

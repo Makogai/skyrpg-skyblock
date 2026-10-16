@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MOLTEN_POWDER",
+ "base": "minecraft:blaze_powder",
+ "name": "Molten Powder",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

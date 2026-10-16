@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "STAR_HELMET",
+ "base": "minecraft:golden_helmet",
+ "name": "Helmet of the Stars",
+ "rarity": "unobtainable",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 10000,
+  "defense": 3000,
+  "intelligence": 1000
+ }
+}

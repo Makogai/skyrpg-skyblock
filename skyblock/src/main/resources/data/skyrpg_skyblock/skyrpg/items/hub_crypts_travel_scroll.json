@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HUB_CRYPTS_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Hub Crypts",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

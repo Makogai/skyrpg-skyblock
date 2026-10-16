@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "SILVA_DOMINUS",
+ "base": "minecraft:golden_axe",
+ "name": "Sharpened Huntaxe - Dominus",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 10
+ },
+ "description": "§8§oSilva vocat, Dominus respondet.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 2,
+   "parent": {
+    "SILVA_DOMINUS": "CURSUS_FERAE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

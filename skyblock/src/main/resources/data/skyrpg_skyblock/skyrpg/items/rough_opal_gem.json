@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_OPAL_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Opal Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

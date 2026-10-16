@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_SEEDS",
+ "base": "minecraft:wheat_seeds",
+ "name": "Enchanted Seeds",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "can_place": false,
+  "can_interact_right_click": false,
+  "can_interact_entity": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

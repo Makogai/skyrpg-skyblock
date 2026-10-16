@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "MITE_GEL",
+ "base": "minecraft:purple_dye",
+ "name": "Mite Gel",
+ "rarity": "epic",
+ "type": "",
+ "description": "§8§oSticky goo scraped off an Endermite.",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "MIXED_MITE_GEL"
+    ]
+   }
+  ]
+ }
+}

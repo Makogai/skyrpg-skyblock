@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOTUS_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Diamond Lotus",
+ "rarity": "legendary",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_DRAGON",
+ "base": "minecraft:diamond_sword",
+ "name": "Aspect of the Dragons",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 225,
+  "strength": 100,
+  "weapon_ability_damage": 12000
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.1,
+  "npc_sell_price": 100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 150
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 400
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 18
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 12
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

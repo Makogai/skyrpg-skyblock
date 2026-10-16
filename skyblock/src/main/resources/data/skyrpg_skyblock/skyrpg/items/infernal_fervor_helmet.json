@@ -1,0 +1,263 @@
+{
+ "skyblock_id": "INFERNAL_FERVOR_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Infernal Fervor Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 454,
+  "defense": 252,
+  "intelligence": 38,
+  "true_defense": 12
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0NTUwNDI1ODUyOCwKICAicHJvZmlsZUlkIiA6ICI0NWY3YTJlNjE3ODE0YjJjODAwODM5MmRmN2IzNWY0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfSnVzdERvSXQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0N2NmNmUxMmQxMmE1ZWIxNjE3NTliYTk1Njg5YTkyMzdlYzExMTQ3M2U5MmExNDBlY2FiMDE1OGRmZDI1OCIKICAgIH0KICB9Cn0=",
+  "signature": "o26mpcctAu3c/2g5U8adBfaFBZAv3Vyvk20WFmPzzl4BImRUt6H5MyGIoQrpqy34V1JePL6BQGev4t0Gq1KyiZWpu/1x+ra0eL84Epv7hu28NP/UVWT3qfVkIyMqjFP9IEfHFX9v6XasaEOui+Z0QbUUz/qGW62/DHBSy+TkAsgpfPRruSgzmBX2Begie1lmu51TT/l34M5zDItxa5KvqJmgP6+yv+2tS13S7rZpy4HBsy27JOSHV0wQluqkjzepYznLgw0xlm7AkFh910ChZsz45tKKnhfkc4njwLWyhq2RHVLcFzEevwCEwmf3P0F9qNhuGGQneo5BKSbzLNzA6cfTBUKPh+bjZoz/jKXJOag3BoURYDaq/epPi4VfFoutYYcuyAEiOJiC5aUwrISGuCe5aPnC746fzupsxw2H0kKvlgh688LOn9VDlYrBrzORfvRh87ZfYiDumBHmKg6KX5X+DKCSy0FI3Gw3GGjRYTAAstRl0wHd/tgN4ZlSslWNFqApNud8bZLiO3bLPoG/Z2L/m4Gl/E6TC8q8dlSGc/xwoz1Iml1P+3P7ipPLcUOnII41FDrZ9M1KjgyHrN6OUFUV/N4VR8/GMANi+sCNyq9DZB4cbQOf9zStGTN7L3tBE2hDRs2uHpgyq6eIMOJQWQK2UCiKlykB37Wo9LGdOpE="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 42
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "INFERNAL"
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 30000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 35000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 41000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 48000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 56000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 65500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 76000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 89000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 105000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 120000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 140000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 6
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 165000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 7
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 192000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 225000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 9
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 265000
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 100
+    }
+   ]
+  ]
+ }
+}

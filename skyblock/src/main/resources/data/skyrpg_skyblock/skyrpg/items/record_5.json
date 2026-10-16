@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_5",
+ "base": "minecraft:music_disc_far",
+ "name": "Music Disc - Far",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

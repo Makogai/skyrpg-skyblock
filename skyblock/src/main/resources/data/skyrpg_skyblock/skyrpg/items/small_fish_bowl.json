@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "SMALL_FISH_BOWL",
+ "base": "minecraft:player_head",
+ "name": "Small Fish Bowl",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "skin": {
+  "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc3NDQ3YzljODE1ZjAyZTdjZTk0MTRiNzQ5YTMyNmFiODNiZWI0ZjE0YjljODQ0MThmMGIxMWI3YjAxMzczNSJ9fX0="
+ },
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

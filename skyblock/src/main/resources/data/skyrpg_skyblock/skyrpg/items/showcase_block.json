@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SHOWCASE_BLOCK",
+ "base": "minecraft:glass",
+ "name": "Showcase Block",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 10
+   }
+  ],
+  "has_uuid": true
+ }
+}

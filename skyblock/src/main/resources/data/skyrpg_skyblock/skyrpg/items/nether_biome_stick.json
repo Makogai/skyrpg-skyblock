@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "NETHER_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Nether Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 512
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_CITRINE_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Citrine Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25600
+ }
+}

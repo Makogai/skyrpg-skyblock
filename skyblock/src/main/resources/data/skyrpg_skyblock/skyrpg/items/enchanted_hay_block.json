@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_HAY_BLOCK",
+ "base": "minecraft:hay_block",
+ "name": "Enchanted Hay Bale",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "soulbound": "COOP",
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 288.0
+   }
+  }
+ }
+}

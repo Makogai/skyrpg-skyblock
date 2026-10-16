@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SUNFLOWER_BUTTER",
+ "base": "minecraft:paper",
+ "name": "Sunflower Butter",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

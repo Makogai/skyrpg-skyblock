@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "INK_SACK:2",
+ "base": "minecraft:green_dye",
+ "name": "Cactus Green",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

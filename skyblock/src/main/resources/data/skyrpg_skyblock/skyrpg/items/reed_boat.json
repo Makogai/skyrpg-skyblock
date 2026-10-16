@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "REED_BOAT",
+ "base": "minecraft:oak_boat",
+ "name": "Rift Boat",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Built by Reed, who turns out to be a bit of a scammer.",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

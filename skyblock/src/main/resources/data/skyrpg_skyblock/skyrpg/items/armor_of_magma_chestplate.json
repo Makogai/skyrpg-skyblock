@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_MAGMA_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Armor of Magma Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 100,
+  "defense": 30
+ },
+ "color": "#FF9300",
+ "hypixel": {
+  "npc_sell_price": 61000,
+  "museum": true
+ }
+}

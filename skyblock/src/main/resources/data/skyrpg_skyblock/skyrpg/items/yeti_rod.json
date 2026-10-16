@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "YETI_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Yeti Rod",
+ "rarity": "epic",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 150,
+  "strength": 130,
+  "fishing_speed": 75
+ },
+ "hypixel": {
+  "npc_sell_price": 150000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 25
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 20
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_AMETHYST_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Amethyst Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "SPEEDSTER_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Speedster Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 45,
+  "speed": 15
+ },
+ "color": "#E0FCF7",
+ "hypixel": {
+  "npc_sell_price": 3200,
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "SPEEDSTER": "THERMODYNAMIC"
+   },
+   "armor_set_donation_xp": {
+    "SPEEDSTER": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

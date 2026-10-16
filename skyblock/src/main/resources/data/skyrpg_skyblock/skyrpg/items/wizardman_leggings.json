@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "WIZARDMAN_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Wizardman Leggings",
+ "rarity": "mythic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "rift_time": 100,
+  "rift_health": 1,
+  "rift_mana_regen": 8
+ },
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "range_blocks": 65,
+   "max_players": 3,
+   "damage_per_player": 1,
+   "mana_regen_per_player": 2
+  }
+ }
+}

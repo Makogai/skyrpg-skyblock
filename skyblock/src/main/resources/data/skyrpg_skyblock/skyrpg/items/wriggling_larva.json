@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WRIGGLING_LARVA",
+ "base": "minecraft:paper",
+ "name": "Wriggling Larva",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 250000
+ }
+}

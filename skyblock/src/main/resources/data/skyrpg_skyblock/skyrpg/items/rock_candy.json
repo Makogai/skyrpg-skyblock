@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ROCK_CANDY",
+ "base": "minecraft:paper",
+ "name": "Rock Candy",
+ "rarity": "uncommon",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 770
+ }
+}

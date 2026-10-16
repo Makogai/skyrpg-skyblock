@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_CRICKET_CHOIR",
+ "base": "minecraft:music_disc_chirp",
+ "name": "Cricket Choir Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

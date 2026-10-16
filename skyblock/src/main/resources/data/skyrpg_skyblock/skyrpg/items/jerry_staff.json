@@ -1,0 +1,60 @@
+{
+ "skyblock_id": "JERRY_STAFF",
+ "base": "minecraft:golden_horse_armor",
+ "name": "Jerry-chine Gun",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 80,
+  "weapon_ability_damage": 500,
+  "intelligence": 200
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.2,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

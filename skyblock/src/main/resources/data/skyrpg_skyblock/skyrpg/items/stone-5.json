@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:5",
+ "base": "minecraft:andesite",
+ "name": "Andesite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "skyblock_id": "SKELETON_HELMET",
+ "base": "minecraft:iron_helmet",
+ "name": "Skeleton's Helmet",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 75
+ },
+ "hypixel": {
+  "npc_sell_price": 51000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 90
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "MONSTER_HUNTER": "MONSTER_RAIDER"
+   },
+   "armor_set_donation_xp": {
+    "MONSTER_HUNTER": 4,
+    "MONSTER_RAIDER": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

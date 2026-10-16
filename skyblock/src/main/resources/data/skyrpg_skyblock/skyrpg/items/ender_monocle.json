@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENDER_MONOCLE",
+ "base": "minecraft:paper",
+ "name": "Ender Monocle",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "DRAGON",
+    "amount": 5
+   }
+  ]
+ }
+}

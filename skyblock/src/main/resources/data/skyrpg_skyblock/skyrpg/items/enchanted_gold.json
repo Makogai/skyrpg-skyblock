@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_GOLD",
+ "base": "minecraft:gold_ingot",
+ "name": "Enchanted Gold Ingot",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   },
+   "mining": {
+    "MINION_STORAGE": 64.0
+   }
+  }
+ }
+}

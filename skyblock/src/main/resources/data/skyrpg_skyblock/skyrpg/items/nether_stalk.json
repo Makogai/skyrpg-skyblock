@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "NETHER_STALK",
+ "base": "minecraft:nether_wart",
+ "name": "Nether Wart",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "fishing": {
+    "FISH_ITEM": 65.0
+   },
+   "farming": {
+    "BREAK_BLOCK": 4.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

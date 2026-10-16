@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PET_SKIN_SHEEP_MAGENTA",
+ "base": "minecraft:player_head",
+ "name": "MagentaSheep",
+ "rarity": "uncommon",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0MzExMzMwNTE0OCwKICAicHJvZmlsZUlkIiA6ICJiOTE5M2NiMjkzMWI0M2FhYmM1OGQ2NjAwMTg3NGRjMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiMmJsYWtlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q0ODI5ZDM5YTU0ZWQwNmJiNWQwNGEyYTIxZDI2MzZjNWRkZjI3YjUzZGM4NDQ4MjYyZmRhYmM3NzVlYzY0MGEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "wQdF7bFAK61JsONOGHB4J8di4xn00sXfjybC7jsozNOHIndJOMDP5PgGtsrVcbIXfPN0eMYLpBTwXhEedYZCBF0sxnaI1bfF8Ian21PMf9ZwyxPMMO9+DCUE3aYAbkuTj+vzzc45VNLuC5csiLx2gZcqeca5m9vqE8w+dW692JnMxciNYAIHr3lP++Flwyub6wJe0VKtkwjGnKNlNVWTaf5lmUk9Q40bEG9FaacxSgjOkYrHo3EgbVT/n57Xt7QYDju8EBv0F8hn5Ufjthexmbq/pmdkoHEJR0OH8XUgXNrVDdjL8vpaIOaZ/mes0D5bT5btmWRuw2FR7GblSov/8Ojj2ZCIswnyQK4HqtFHdAZsyTEY/LUQYtIIO4/2jWR1lmdqyKIG+k5xhCT64d5KetpQMocN4ouYvMM8xiNkxgHfjenG6xY5lCFNrumTJkeik/rMu3MLyxHQhdVmu5CAk8uVL0x/dk48/kg1m0qvKsXvEeMtMgMekM29BCvcqJRjyJAC46PA0HiASFkrRroHGH9/jpRSgEmryyaJa+uGe+5gLkjEyo8758jSm9KmaQCKJfsAIxeJFJ/dvNgkhVJ6Ar3Z0iqD/3EZhKrDwBmqXCaSofoXMrILXM+3OACkW+INm0vu9G58G9AUBOZEM2iKvB4WtlplfAO+JOvFV2R69rI="
+ },
+ "hypixel": {
+  "museum": true
+ }
+}

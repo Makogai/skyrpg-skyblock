@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "POIGNANT_LUCKY_CLOVER",
+ "base": "minecraft:paper",
+ "name": "Poignant Lucky Clover",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

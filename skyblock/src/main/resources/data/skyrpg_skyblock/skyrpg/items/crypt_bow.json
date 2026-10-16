@@ -1,0 +1,85 @@
+{
+ "skyblock_id": "CRYPT_BOW",
+ "base": "minecraft:bow",
+ "name": "Soulstealer Bow",
+ "rarity": "rare",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "strength": 50,
+  "intelligence": 157
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 5
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "STRENGTH": [
+    50
+   ],
+   "INTELLIGENCE": [
+    157,
+    171,
+    186,
+    202,
+    219,
+    239,
+    259,
+    282,
+    306,
+    333
+   ]
+  }
+ }
+}

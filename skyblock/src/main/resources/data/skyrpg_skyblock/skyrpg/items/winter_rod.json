@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "WINTER_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Winter Rod",
+ "rarity": "rare",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 50,
+  "strength": 50,
+  "fishing_speed": 75
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "rarity_salvageable": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 10
+   }
+  ]
+ }
+}

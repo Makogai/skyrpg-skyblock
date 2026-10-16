@@ -1,0 +1,124 @@
+{
+ "skyblock_id": "BRONZE_HUNTER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Bronze Hunter Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 25
+ },
+ "hypixel": {
+  "can_have_attributes": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "trophy_type": "LAVA",
+    "reward": "BRONZE"
+   }
+  ],
+  "soulbound": "SOLO",
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "BRONZE_HUNTER": "SILVER_HUNTER"
+   },
+   "armor_set_donation_xp": {
+    "BRONZE_HUNTER": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

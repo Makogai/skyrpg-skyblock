@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "AMBER_POLISHED_DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Amber-Polished Drill Engine",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 103000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 7
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 15,
+   "game_stage": "MASTER"
+  }
+ }
+}

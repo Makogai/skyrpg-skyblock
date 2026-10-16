@@ -1,0 +1,232 @@
+{
+ "skyblock_id": "FLAMING_FIST",
+ "base": "minecraft:paper",
+ "name": "Flaming Fist",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "strength": 10,
+  "crit_damage": 10,
+  "health": 30,
+  "defense": 20,
+  "ferocity": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 12750,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 50
+   },
+   {
+    "type": "ITEM",
+    "item_id": "LEATHER_CLOTH",
+    "amount": 3
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 5
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 8
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 12
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 16
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 24
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 4000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 28
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 6000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 60
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 32
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 8000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 70
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 36
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 10000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "BEZOS",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 12000
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 15,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

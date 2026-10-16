@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ARCHITECT_FIRST_DRAFT",
+ "base": "minecraft:paper",
+ "name": "Architect's First Draft",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "SQUIRE_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Squire Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 5,
+  "health": 20,
+  "defense": 20
+ },
+ "color": "#545454",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "SQUIRE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

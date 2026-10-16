@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "DECENT_AXE",
+ "base": "minecraft:wooden_axe",
+ "name": "Decent Axe",
+ "rarity": "rare",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 20,
+  "foraging_fortune": 5,
+  "sweep": 24
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "donation_xp": 2,
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

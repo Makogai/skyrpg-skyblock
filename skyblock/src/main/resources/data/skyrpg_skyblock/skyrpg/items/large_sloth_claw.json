@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "LARGE_SLOTH_CLAW",
+ "base": "minecraft:paper",
+ "name": "Large Sloth Claw",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 75000
+ }
+}

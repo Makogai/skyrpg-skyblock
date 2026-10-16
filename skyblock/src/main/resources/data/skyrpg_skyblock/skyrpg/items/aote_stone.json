@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "AOTE_STONE",
+ "base": "minecraft:paper",
+ "name": "Warped Stone",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

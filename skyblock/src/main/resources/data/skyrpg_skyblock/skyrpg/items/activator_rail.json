@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ACTIVATOR_RAIL",
+ "base": "minecraft:activator_rail",
+ "name": "Activator Rail",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

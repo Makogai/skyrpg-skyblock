@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "FEL_PEARL",
+ "base": "minecraft:paper",
+ "name": "Fel Pearl",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

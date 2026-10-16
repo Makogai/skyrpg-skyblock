@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FLORAL_GELATIN",
+ "base": "minecraft:paper",
+ "name": "Floral Gelatin",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

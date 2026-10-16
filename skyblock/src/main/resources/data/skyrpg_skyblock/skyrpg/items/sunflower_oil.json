@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SUNFLOWER_OIL",
+ "base": "minecraft:paper",
+ "name": "Sunflower Oil",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oCan be used in your daily diet or in heavy machinery.",
+ "hypixel": {
+  "npc_sell_price": 3200,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 20000
+   }
+  ]
+ }
+}

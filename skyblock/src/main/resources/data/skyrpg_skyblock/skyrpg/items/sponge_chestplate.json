@@ -1,0 +1,49 @@
+{
+ "skyblock_id": "SPONGE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Sponge Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 150,
+  "sea_creature_chance": 2
+ },
+ "color": "#FFDC51",
+ "hypixel": {
+  "npc_sell_price": 64000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 17
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "SPONGE": "SHARK_SCALE"
+   },
+   "armor_set_donation_xp": {
+    "SPONGE": 6
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

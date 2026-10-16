@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FLY_SWATTER",
+ "base": "minecraft:paper",
+ "name": "Fly Swatter",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500000,
+  "has_uuid": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BROWN_MUSHROOM",
+ "base": "minecraft:brown_mushroom",
+ "name": "Brown Mushroom",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 6.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

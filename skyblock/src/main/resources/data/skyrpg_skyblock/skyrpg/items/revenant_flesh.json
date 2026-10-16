@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "REVENANT_FLESH",
+ "base": "minecraft:rotten_flesh",
+ "name": "Revenant Flesh",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

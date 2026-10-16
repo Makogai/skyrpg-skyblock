@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_TEXTBOOK",
+ "base": "minecraft:book",
+ "name": "Textbook",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

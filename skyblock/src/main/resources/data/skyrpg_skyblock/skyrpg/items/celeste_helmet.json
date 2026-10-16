@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "CELESTE_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Celeste Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 15,
+  "defense": 15,
+  "intelligence": 30
+ },
+ "color": "#D48EF2",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "CELESTE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

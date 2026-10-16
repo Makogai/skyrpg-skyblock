@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "COMPACTOR",
+ "base": "minecraft:dropper",
+ "name": "Compactor",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

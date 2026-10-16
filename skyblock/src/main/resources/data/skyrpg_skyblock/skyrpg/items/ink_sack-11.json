@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:11",
+ "base": "minecraft:yellow_dye",
+ "name": "Dandelion Yellow",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

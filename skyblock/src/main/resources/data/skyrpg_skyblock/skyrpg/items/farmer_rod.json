@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "FARMER_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Farmer's Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 50,
+  "strength": 20,
+  "fishing_speed": 60
+ },
+ "hypixel": {
+  "npc_sell_price": 1050,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 8
+   }
+  ]
+ }
+}

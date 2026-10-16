@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "LEAFLET_HELMET",
+ "base": "minecraft:oak_leaves",
+ "name": "Leaflet Hat",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 70,
+  "foraging_fortune": 3
+ },
+ "hypixel": {
+  "npc_sell_price": 2,
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LEAFLET": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

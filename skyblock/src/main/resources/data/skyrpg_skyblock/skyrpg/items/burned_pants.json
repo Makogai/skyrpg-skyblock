@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BURNED_PANTS",
+ "base": "minecraft:leather_leggings",
+ "name": "Burned Pants",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "rift_time": -4
+ },
+ "description": "§8Maybe encouraging him wasn't a great idea.",
+ "color": "#0C0C96",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

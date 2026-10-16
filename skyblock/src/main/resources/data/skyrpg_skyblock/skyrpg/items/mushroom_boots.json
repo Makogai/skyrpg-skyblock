@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "MUSHROOM_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Mushroom Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 15
+ },
+ "color": "#FF0000",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "MUSHROOM": "BIOHAZARD"
+   },
+   "armor_set_donation_xp": {
+    "MUSHROOM": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

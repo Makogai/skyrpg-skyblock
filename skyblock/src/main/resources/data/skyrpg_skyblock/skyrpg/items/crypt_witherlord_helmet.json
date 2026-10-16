@@ -1,0 +1,36 @@
+{
+ "skyblock_id": "CRYPT_WITHERLORD_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Crypt Witherlord Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 70,
+  "speed": 5
+ },
+ "color": "#450101",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true,
+  "tiered_stats": {
+   "WALK_SPEED": [
+    5,
+    6
+   ],
+   "DEFENSE": [
+    70,
+    80
+   ]
+  }
+ }
+}

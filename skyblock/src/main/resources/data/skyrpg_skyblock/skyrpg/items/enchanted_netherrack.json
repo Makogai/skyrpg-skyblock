@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ENCHANTED_NETHERRACK",
+ "base": "minecraft:netherrack",
+ "name": "Enchanted Netherrack",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160,
+  "can_place": false
+ }
+}

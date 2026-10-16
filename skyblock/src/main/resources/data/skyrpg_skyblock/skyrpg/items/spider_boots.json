@@ -1,0 +1,75 @@
+{
+ "skyblock_id": "SPIDER_BOOTS",
+ "base": "minecraft:iron_boots",
+ "name": "Spider's Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 45,
+  "speed": 5,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 74000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 20
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 30
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 9
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "MONSTER_HUNTER": "MONSTER_RAIDER"
+   },
+   "armor_set_donation_xp": {
+    "MONSTER_HUNTER": 4,
+    "MONSTER_RAIDER": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

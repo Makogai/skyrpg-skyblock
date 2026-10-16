@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SQUEAKY_MOUSEMAT",
+ "base": "minecraft:paper",
+ "name": "Squeaky Mousemat",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1000000,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "FARMING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

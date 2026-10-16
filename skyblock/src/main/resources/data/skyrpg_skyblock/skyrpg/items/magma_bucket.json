@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MAGMA_BUCKET",
+ "base": "minecraft:paper",
+ "name": "Magma Bucket",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

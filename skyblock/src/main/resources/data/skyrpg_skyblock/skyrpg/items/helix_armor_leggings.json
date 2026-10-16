@@ -1,0 +1,64 @@
+{
+ "skyblock_id": "HELIX_ARMOR_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Helix Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 165,
+  "defense": 45,
+  "foraging_fortune": 45,
+  "sweep": 20
+ },
+ "color": "#E25A16",
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 25
+   }
+  ],
+  "npc_sell_price": 7840,
+  "gemstone_slots": [
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "HELIX_ARMOR": 9
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

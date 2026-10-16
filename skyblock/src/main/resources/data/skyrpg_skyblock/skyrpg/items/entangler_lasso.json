@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENTANGLER_LASSO",
+ "base": "minecraft:paper",
+ "name": "Entangler Lasso",
+ "rarity": "rare",
+ "category": "LASSO",
+ "type": "Lasso",
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false,
+  "can_interact": false,
+  "can_interact_right_click": false,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 4,
+   "parent": {
+    "ENTANGLER_LASSO": "EVERSTRETCH_LASSO"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

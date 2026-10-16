@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WYLD_CHESTPLATE",
+ "base": "minecraft:chainmail_chestplate",
+ "name": "Wyld Chain Top",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_time": 15
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

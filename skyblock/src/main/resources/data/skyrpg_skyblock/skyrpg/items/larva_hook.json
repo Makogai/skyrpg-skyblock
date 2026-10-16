@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LARVA_HOOK",
+ "base": "minecraft:tripwire_hook",
+ "name": "Larva Hook",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

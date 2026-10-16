@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CROWN_OF_GREED",
+ "base": "minecraft:golden_helmet",
+ "name": "Crown of Greed",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 100,
+  "defense": 50
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000000,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {
+    "CROWN_OF_GREED": "CROWN_OF_AVARICE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

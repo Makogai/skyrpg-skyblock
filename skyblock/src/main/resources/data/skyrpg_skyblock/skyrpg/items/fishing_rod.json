@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "FISHING_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Fishing Rod",
+ "rarity": "common",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 15,
+  "strength": 15,
+  "sea_creature_chance": 1,
+  "fishing_speed": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 2,
+  "motes_sell_price": 105
+ }
+}

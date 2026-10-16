@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "UNLUCKY_DOUBLOON",
+ "base": "minecraft:paper",
+ "name": "Unlucky Doubloon",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The prized possession of an ill-fated captain. It was thought by his crew to bring him good luck.",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

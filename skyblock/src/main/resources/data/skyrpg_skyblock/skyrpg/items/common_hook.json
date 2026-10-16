@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "COMMON_HOOK",
+ "base": "minecraft:paper",
+ "name": "Common Hook",
+ "rarity": "common",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 10
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "EDITOR_PENCIL",
+ "base": "minecraft:feather",
+ "name": "Editor's Pencil",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "COOP",
+  "museum": true,
+  "has_uuid": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

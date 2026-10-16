@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WEDDING_RING_1",
+ "base": "minecraft:gold_nugget",
+ "name": "Yellow Rock of Love",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

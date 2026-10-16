@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DARK_OAK_DOOR_ITEM",
+ "base": "minecraft:dark_oak_door",
+ "name": "Dark Oak Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

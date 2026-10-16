@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CARNIVAL_FISHING_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Carnival Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "description": "§7Used to catch §3fish §7in the §3Catch a Fish §7game.",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "has_uuid": true,
+  "serializable": false
+ }
+}

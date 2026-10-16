@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_WHEAT",
+ "base": "minecraft:wheat",
+ "name": "Organic Wheat",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

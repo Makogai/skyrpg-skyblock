@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "FLINT_SHOVEL",
+ "base": "minecraft:iron_shovel",
+ "name": "Flint Shovel",
+ "rarity": "common",
+ "category": "SPADE",
+ "type": "Spade",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "MINING",
+   "game_stage": "STARTER"
+  }
+ }
+}

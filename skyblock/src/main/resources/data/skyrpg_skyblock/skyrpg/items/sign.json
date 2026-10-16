@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SIGN",
+ "base": "minecraft:oak_sign",
+ "name": "Oak Sign",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

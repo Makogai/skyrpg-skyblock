@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CENTURY_THE_FISH",
+ "base": "minecraft:tropical_fish",
+ "name": "Century the Fish",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true
+ }
+}

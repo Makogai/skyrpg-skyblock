@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SALTED_SUNFLOWER_SEEDS",
+ "base": "minecraft:paper",
+ "name": "Salted Sunflower Seeds",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

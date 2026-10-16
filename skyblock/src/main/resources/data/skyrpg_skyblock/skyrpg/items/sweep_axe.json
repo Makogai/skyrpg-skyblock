@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SWEEP_AXE",
+ "base": "minecraft:iron_axe",
+ "name": "Sweep Axe",
+ "rarity": "unobtainable",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "sweep": 8
+ }
+}

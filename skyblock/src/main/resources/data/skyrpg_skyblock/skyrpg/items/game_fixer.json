@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GAME_FIXER",
+ "base": "minecraft:wooden_pickaxe",
+ "name": "Game Fixer",
+ "rarity": "very_special",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "description": "§7Given to individuals who broke the game too many times. Thanks for your great help!",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "COOP",
+  "museum": true
+ }
+}

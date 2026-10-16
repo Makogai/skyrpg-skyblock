@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CAULDRON_ITEM",
+ "base": "minecraft:cauldron",
+ "name": "Cauldron",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MITHRIL_PLATE",
+ "base": "minecraft:paper",
+ "name": "Mithril Plate",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10108
+ }
+}

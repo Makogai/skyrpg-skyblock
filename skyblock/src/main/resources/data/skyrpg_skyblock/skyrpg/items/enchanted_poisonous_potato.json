@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_POISONOUS_POTATO",
+ "base": "minecraft:poisonous_potato",
+ "name": "Enchanted Poisonous Potato",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

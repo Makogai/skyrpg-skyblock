@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "EXP_BOTTLE",
+ "base": "minecraft:experience_bottle",
+ "name": "Experience Bottle",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

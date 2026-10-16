@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "AQUAMASTER_X",
+ "base": "minecraft:carrot_on_a_stick",
+ "name": "AquaMaster™ X",
+ "rarity": "epic",
+ "category": "WATERING_CAN",
+ "type": "Watering Can",
+ "hypixel": {
+  "has_uuid": true,
+  "can_recombobulate": false,
+  "can_place": false,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "FARMING",
+   "parent": {
+    "AQUAMASTER_X": "AQUAMASTER_HYDROMAX"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

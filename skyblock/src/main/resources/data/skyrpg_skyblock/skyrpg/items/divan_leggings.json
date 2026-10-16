@@ -1,0 +1,83 @@
+{
+ "skyblock_id": "DIVAN_LEGGINGS",
+ "base": "minecraft:golden_leggings",
+ "name": "Leggings of Divan",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 130,
+  "defense": 170,
+  "mining_speed": 80,
+  "mining_fortune": 30,
+  "heat_resistance": 10
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "TOPAZ",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "DIVAN": 20
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

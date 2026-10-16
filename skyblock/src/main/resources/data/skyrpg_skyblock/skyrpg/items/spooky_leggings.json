@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SPOOKY_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Spooky Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 35
+ },
+ "color": "#606060",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "SPOOKY": "BAT_PERSON"
+   },
+   "armor_set_donation_xp": {
+    "SPOOKY": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

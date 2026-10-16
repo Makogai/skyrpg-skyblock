@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FACTION_RABBIT",
+ "base": "minecraft:player_head",
+ "name": "Faction Rabbit",
+ "rarity": "common",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_auction": false
+ }
+}

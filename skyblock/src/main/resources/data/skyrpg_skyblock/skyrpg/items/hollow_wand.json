@@ -1,0 +1,44 @@
+{
+ "skyblock_id": "HOLLOW_WAND",
+ "base": "minecraft:feather",
+ "name": "Hollow Wand",
+ "rarity": "legendary",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "damage": 150,
+  "strength": 20,
+  "weapon_ability_damage": 15000,
+  "intelligence": 120
+ },
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "NONE"
+   }
+  ],
+  "npc_sell_price": 10000,
+  "salvageable_from_recipe": true,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  },
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 500
+   }
+  ]
+ }
+}

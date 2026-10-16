@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "FINAL_DESTINATION_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Final Destination Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 100,
+  "defense": 100,
+  "intelligence": 100
+ },
+ "color": "#0A0011",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FINAL_DESTINATION": 8
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

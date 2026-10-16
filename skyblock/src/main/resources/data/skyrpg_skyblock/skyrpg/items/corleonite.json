@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CORLEONITE",
+ "base": "minecraft:paper",
+ "name": "Corleonite",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

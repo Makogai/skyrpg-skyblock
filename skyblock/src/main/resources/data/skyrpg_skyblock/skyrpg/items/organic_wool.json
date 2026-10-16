@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_WOOL",
+ "base": "minecraft:white_wool",
+ "name": "Organic Wool",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

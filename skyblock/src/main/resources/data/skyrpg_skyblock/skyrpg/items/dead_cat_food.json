@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DEAD_CAT_FOOD",
+ "base": "minecraft:cooked_cod",
+ "name": "Dead Cat Food",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "hypixel": {
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

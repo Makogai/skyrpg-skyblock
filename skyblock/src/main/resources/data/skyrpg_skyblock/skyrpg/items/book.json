@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BOOK",
+ "base": "minecraft:book",
+ "name": "Book",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

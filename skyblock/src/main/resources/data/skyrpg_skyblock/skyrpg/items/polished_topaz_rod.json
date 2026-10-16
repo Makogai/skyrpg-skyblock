@@ -1,0 +1,50 @@
+{
+ "skyblock_id": "POLISHED_TOPAZ_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Topaz Rod",
+ "rarity": "rare",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 100,
+  "strength": 100,
+  "sea_creature_chance": 2,
+  "fishing_speed": 50
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 19
+   },
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "FISHING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

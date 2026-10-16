@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ACACIA_DOOR_ITEM",
+ "base": "minecraft:acacia_door",
+ "name": "Acacia Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

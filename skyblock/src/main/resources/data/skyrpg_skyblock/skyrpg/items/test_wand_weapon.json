@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TEST_WAND_WEAPON",
+ "base": "minecraft:stick",
+ "name": "Test Rift Wand",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "rift_damage": 20
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_JASPER_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Jasper Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25600
+ }
+}

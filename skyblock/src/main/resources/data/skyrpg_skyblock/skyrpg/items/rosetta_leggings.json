@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "ROSETTA_LEGGINGS",
+ "base": "minecraft:diamond_leggings",
+ "name": "Rosetta's Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 600,
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ROSETTA": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "RETIA_SUPREMA",
+ "base": "minecraft:paper",
+ "name": "Astral Huntrap",
+ "rarity": "legendary",
+ "category": "TRAP",
+ "type": "Trap",
+ "description": "§7§oSuprema inter retia, nulla praeda elabitur.",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "HUNTING",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 5,
+   "game_stage": "EXPERT"
+  }
+ }
+}

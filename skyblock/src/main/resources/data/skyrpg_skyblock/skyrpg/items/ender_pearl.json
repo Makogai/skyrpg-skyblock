@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ENDER_PEARL",
+ "base": "minecraft:ender_pearl",
+ "name": "Ender Pearl",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 7,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

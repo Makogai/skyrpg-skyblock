@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_CLOCK",
+ "base": "minecraft:clock",
+ "name": "Enchanted Clock",
+ "rarity": "unobtainable",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 205000
+ }
+}

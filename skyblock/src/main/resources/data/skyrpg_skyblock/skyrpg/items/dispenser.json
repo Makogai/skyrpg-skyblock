@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DISPENSER",
+ "base": "minecraft:dispenser",
+ "name": "Dispenser",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

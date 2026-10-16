@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "REVENGE",
+ "base": "minecraft:music_disc_cat",
+ "name": "Music Disc - Revenge",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "museum": true
+ }
+}

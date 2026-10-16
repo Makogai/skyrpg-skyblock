@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "FARM_ARMOR_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Haymaker Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 15,
+  "farming_fortune": 10
+ },
+ "color": "#FFD700",
+ "hypixel": {
+  "npc_sell_price": 4500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 10
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FARM_ARMOR": "PUMPKIN"
+   },
+   "armor_set_donation_xp": {
+    "FARM_ARMOR": 2
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

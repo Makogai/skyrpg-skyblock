@@ -1,0 +1,38 @@
+{
+ "skyblock_id": "GLACITE_CHISEL",
+ "base": "minecraft:armor_stand",
+ "name": "Glacite-Plated Chisel",
+ "rarity": "epic",
+ "category": "CHISEL",
+ "type": "Chisel",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "item_specific": {
+   "chisel_charges": 20
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "CHISEL"
+   },
+   {
+    "slot_type": "CHISEL"
+   }
+  ],
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 9
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "MINING",
+   "parent": {
+    "GLACITE_CHISEL": "PERFECT_CHISEL"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

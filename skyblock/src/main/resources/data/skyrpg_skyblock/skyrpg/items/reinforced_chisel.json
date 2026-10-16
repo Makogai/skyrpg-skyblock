@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "REINFORCED_CHISEL",
+ "base": "minecraft:armor_stand",
+ "name": "Reinforced Chisel",
+ "rarity": "rare",
+ "category": "CHISEL",
+ "type": "Chisel",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "item_specific": {
+   "chisel_charges": 18
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "CHISEL"
+   }
+  ],
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "MINING",
+   "parent": {
+    "REINFORCED_CHISEL": "GLACITE_CHISEL"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

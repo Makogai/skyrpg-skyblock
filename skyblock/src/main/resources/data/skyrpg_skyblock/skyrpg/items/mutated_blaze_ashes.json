@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "MUTATED_BLAZE_ASHES",
+ "base": "minecraft:paper",
+ "name": "Mutated Blaze Ashes",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Blazes are ephemeral creatures, constantly consuming themselves. Their ashes are said to bring good fortune.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

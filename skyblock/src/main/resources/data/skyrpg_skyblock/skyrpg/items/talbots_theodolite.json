@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "TALBOTS_THEODOLITE",
+ "base": "minecraft:repeater",
+ "name": "Talbot's Theodolite",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 10,
+  "can_place": false,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 4,
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

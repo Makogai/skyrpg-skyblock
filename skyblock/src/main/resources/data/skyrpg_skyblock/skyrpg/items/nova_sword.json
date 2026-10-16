@@ -1,0 +1,40 @@
+{
+ "skyblock_id": "NOVA_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Sword of the Universe",
+ "rarity": "unobtainable",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 99999999,
+  "swing_range": 99999999
+ },
+ "hypixel": {
+  "enchantments": {
+   "sharpness": 50
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT"
+   }
+  ]
+ }
+}

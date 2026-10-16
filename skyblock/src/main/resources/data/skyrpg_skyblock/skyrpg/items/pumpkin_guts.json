@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "PUMPKIN_GUTS",
+ "base": "minecraft:pumpkin_seeds",
+ "name": "Pumpkin Guts",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Why does Halloween have to be so gross?",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

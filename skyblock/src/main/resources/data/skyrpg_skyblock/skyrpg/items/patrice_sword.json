@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PATRICE_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Épée de Patrice",
+ "rarity": "legendary",
+ "type": "",
+ "stats": {
+  "damage": 100,
+  "strength": 50
+ }
+}

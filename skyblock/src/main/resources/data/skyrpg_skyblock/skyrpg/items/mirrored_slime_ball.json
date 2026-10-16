@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_SLIME_BALL",
+ "base": "minecraft:slime_ball",
+ "name": "llabemilS",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 30
+ }
+}

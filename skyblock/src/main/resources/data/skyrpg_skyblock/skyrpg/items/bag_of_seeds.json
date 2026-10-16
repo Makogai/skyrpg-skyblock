@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BAG_OF_SEEDS",
+ "base": "minecraft:paper",
+ "name": "Bag of Seeds",
+ "rarity": "special",
+ "type": "",
+ "description": "§8§oA small bag containing a large amount of birdseed.",
+ "hypixel": {
+  "safari_only": true
+ }
+}

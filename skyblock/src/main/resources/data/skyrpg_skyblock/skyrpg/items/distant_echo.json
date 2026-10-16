@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DISTANT_ECHO",
+ "base": "minecraft:paper",
+ "name": "Distant Echo",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§8§oThe Silkbreeze passes through the forest at such speed that, in most cases, it can only be heard, not seen.",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 1000000
+ }
+}

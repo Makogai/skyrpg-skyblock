@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "WINTER_BARN_BARN_SKIN",
+ "base": "minecraft:snow_block",
+ "name": "Winter Barn Skin",
+ "rarity": "uncommon",
+ "category": "COSMETIC",
+ "type": "Cosmetic"
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GOLD_INGOT",
+ "base": "minecraft:gold_ingot",
+ "name": "Gold Ingot",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "mining": {
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

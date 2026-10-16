@@ -1,0 +1,48 @@
+{
+ "skyblock_id": "SALMON_BOOTS_NEW",
+ "base": "minecraft:leather_boots",
+ "name": "Salmon Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 85,
+  "defense": 20,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#C13C0F",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SALMON_NEW": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

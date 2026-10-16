@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STAIRS",
+ "base": "minecraft:oak_stairs",
+ "name": "Oak Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

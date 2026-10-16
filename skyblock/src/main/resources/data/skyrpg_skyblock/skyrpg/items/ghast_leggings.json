@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GHAST_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Ghast Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 150
+ },
+ "hypixel": {
+  "npc_sell_price": 2800
+ }
+}

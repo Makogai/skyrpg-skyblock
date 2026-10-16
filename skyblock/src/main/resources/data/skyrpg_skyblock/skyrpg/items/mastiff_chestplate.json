@@ -1,0 +1,79 @@
+{
+ "skyblock_id": "MASTIFF_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Mastiff Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "crit_damage": 15,
+  "health": 500
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 4
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "RUBY"
+   },
+   {
+    "slot_type": "RUBY"
+   },
+   {
+    "slot_type": "RUBY",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 5000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "RUBY",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 20000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 4
+     }
+    ]
+   },
+   {
+    "slot_type": "RUBY",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 16
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MASTIFF": 8
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

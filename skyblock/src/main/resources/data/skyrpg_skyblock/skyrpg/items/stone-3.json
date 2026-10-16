@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:3",
+ "base": "minecraft:diorite",
+ "name": "Diorite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

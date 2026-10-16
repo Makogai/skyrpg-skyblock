@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "FESTIVE_FRISBEE",
+ "base": "minecraft:heavy_weighted_pressure_plate",
+ "name": "Festive Frisbee",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Doesn't do anything... yet!",
+ "glint": true
+}

@@ -1,0 +1,122 @@
+{
+ "skyblock_id": "ZOMBIE_LORD_HELMET",
+ "base": "minecraft:golden_helmet",
+ "name": "Zombie Lord Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 7,
+  "health": 56,
+  "defense": 25,
+  "intelligence": 7
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_LORD": 10
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    25,
+    28,
+    31,
+    34,
+    38,
+    42,
+    47,
+    53,
+    58,
+    65
+   ],
+   "HEALTH": [
+    56,
+    62,
+    69,
+    77,
+    86,
+    95,
+    106,
+    117,
+    130,
+    145
+   ],
+   "STRENGTH": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    18
+   ],
+   "INTELLIGENCE": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    18
+   ]
+  }
+ }
+}

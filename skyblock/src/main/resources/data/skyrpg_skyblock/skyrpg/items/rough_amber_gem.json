@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_AMBER_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Amber Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

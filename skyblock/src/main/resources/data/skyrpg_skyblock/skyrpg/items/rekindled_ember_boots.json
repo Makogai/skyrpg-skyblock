@@ -1,0 +1,226 @@
+{
+ "skyblock_id": "REKINDLED_EMBER_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Rekindled Ember Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 30,
+  "crit_damage": 15,
+  "health": 140,
+  "defense": 40,
+  "intelligence": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 40000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 5
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 6
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 6
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 7
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 7
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 4000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 9
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 9
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 5000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMINO_FIBER",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 6000
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "REKINDLED_EMBER": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

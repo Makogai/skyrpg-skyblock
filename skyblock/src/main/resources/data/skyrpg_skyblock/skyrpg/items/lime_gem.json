@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "LIME_GEM",
+ "base": "minecraft:player_head",
+ "name": "Lime Gem",
+ "rarity": "special",
+ "type": "",
+ "description": "§8A fabulous lime gem. It reminds you of a meadow.",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc4MjIzNDA1NTE5MSwKICAicHJvZmlsZUlkIiA6ICJkM2VmYjJmMThjMDU0YmRhYTE0OTVlZTY0ZDgxZjdlOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNTEsxNSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83ZmI5OGY1YjkyNzY4NjI3ZTlmM2U0MjYwOTU2MWNjYjQ2MzhhZDlkNzZkZjk3NjE2NzRiMjdmNjgyMGZkYzA5IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "U2ghkqOVwA5GUGNcHu41nlBnd+lxQ/wjDxO8hLsp6rYPlm0NMRwufMJbv3BfIfA9d/IbqbCtPfkp4ij/ICUoHOFGO54Sc1KCnJDiIwviHGnJ0b2Wu/k5A5ucNlhcwsA6CkYtqjPBKFpqFRyMIva0X2FuCfO306CsnAWQa5RWyRrO3Q1YK8rDyIdEAYELfVqSQplZbqGIWL+Jbq9jwBVBD1bKwoyrV2+COxURb37i83rfo1lD8ozIgHZhRZcOdh32ORz5O+AenjmkabHnGTSUwqnP39piW/2Cs5lBcR/0c+Vlg9xFnncqow5s0ix9/s7LqzsvwNkGqzc3Sn4EplVjEfa9YKLd5syO1xS5cfBs6OfKaB61cCA7bIdZxzefv1JkcYvjgZ3S2qiFktZHEU5ykSagr6itA1LymixVBAEkMLaAzSEaF8J/Qkg55NtFIgHnyC2vj1Y8blrFnRsBUI+noX9w3ojZ6QN0BFCJjUGmRkHTzD60dz9hKewI+/jB55TZsMVjQn7LMWDaQDKPjq17KfzrsYVU80AHPfu8AuUMDCkIixL+JEJ6sXFvghld0+JNkpfUh7ilHsRHVg5oBOoIb0FDL5VXbW6X9j7XpDyAGz9G/TT4jv9LAzzxiv//wAHun5l9KvTg5uD4Ee5qCzRth2PiuwnUy1hWcQg3KBJbsew="
+ },
+ "hypixel": {
+  "safari_only": true
+ }
+}

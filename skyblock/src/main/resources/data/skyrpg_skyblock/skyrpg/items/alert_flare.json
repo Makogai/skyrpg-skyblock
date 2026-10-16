@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "ALERT_FLARE",
+ "base": "minecraft:firework_rocket",
+ "name": "Alert Flare",
+ "rarity": "rare",
+ "category": "DEPLOYABLE",
+ "type": "Deployable",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "COMBAT",
+   "parent": {
+    "ALERT_FLARE": "SOS_FLARE"
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "ALL_SKILLS_SUPER_BOOST",
+ "base": "minecraft:diamond",
+ "name": "All Skills Exp Super-Boost",
+ "rarity": "uncommon",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

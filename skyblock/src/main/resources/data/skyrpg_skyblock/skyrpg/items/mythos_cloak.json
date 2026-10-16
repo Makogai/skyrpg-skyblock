@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "MYTHOS_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Mythos Cloak",
+ "rarity": "legendary",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "strength": 15,
+  "health": 25,
+  "defense": 15
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MYTHOS": 12
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

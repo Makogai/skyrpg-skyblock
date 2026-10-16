@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "DEFUSE_KIT",
+ "base": "minecraft:shears",
+ "name": "Defuse Kit",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "museum": true
+ }
+}

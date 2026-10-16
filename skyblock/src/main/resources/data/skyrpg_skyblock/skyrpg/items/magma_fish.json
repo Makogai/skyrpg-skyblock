@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MAGMA_FISH",
+ "base": "minecraft:paper",
+ "name": "Magmafish",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

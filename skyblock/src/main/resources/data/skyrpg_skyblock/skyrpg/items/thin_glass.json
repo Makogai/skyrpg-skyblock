@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "THIN_GLASS",
+ "base": "minecraft:glass_pane",
+ "name": "Glass Pane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.75
+ }
+}

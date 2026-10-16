@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "HOE_OF_GREATER_TILLING",
+ "base": "minecraft:iron_hoe",
+ "name": "Hoe of Greater Tilling",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "game_stage": "INTERMEDIATE",
+   "category": "FARMING",
+   "parent": {
+    "HOE_OF_GREATER_TILLING": "HOE_OF_GREATEST_TILLING"
+   }
+  }
+ }
+}

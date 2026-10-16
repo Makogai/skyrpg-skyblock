@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "CRYSTALIZED_MOONLIGHT",
+ "base": "minecraft:paper",
+ "name": "Crystalized Moonlight",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

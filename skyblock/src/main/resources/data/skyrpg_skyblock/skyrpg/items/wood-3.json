@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD:3",
+ "base": "minecraft:jungle_planks",
+ "name": "Jungle Planks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

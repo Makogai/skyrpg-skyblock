@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MAGMA_FISH_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Diamond Magmafish",
+ "rarity": "mythic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "has_uuid": true
+ }
+}

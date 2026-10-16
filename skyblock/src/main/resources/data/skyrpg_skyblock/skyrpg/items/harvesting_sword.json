@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "HARVESTING_SWORD",
+ "base": "minecraft:diamond_sword",
+ "name": "Harvesting Sword",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

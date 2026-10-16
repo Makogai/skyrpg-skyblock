@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP:6",
+ "base": "minecraft:nether_brick_slab",
+ "name": "Nether Brick Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

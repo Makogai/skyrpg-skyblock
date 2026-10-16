@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "PARK_CAVE_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Howling Cave",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

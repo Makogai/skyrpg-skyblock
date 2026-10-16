@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DARK_PEBBLE",
+ "base": "minecraft:flint",
+ "name": "Dark Pebble",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

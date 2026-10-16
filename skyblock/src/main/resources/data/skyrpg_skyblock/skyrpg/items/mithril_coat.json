@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "MITHRIL_COAT",
+ "base": "minecraft:chainmail_chestplate",
+ "name": "Mithril Coat",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 125,
+  "speed": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

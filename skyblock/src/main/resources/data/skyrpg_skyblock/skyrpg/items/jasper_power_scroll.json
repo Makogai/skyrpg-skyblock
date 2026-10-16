@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "JASPER_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Jasper Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

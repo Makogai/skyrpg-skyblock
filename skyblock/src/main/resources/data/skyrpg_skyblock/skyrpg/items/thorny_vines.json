@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "THORNY_VINES",
+ "base": "minecraft:vine",
+ "name": "Thorny Vines",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 10240
+ }
+}

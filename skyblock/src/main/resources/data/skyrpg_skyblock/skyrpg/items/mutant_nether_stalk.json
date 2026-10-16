@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MUTANT_NETHER_STALK",
+ "base": "minecraft:paper",
+ "name": "Mutant Nether Wart",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 102400,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

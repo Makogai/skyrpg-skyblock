@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MYSTERIOUS_MEAT",
+ "base": "minecraft:rotten_flesh",
+ "name": "Mysterious Meat",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

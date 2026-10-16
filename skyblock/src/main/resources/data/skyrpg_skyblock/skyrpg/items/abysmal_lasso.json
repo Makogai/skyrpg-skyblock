@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "ABYSMAL_LASSO",
+ "base": "minecraft:paper",
+ "name": "Abysmal Lasso",
+ "rarity": "common",
+ "category": "LASSO",
+ "type": "Lasso",
+ "description": "§7§oThis is barely holding together, seriously who made this?",
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_place": false,
+  "can_interact": false,
+  "can_interact_right_click": false,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 1,
+   "parent": {
+    "ABYSMAL_LASSO": "VINERIP_LASSO"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MUSHROOM_SOUP",
+ "base": "minecraft:mushroom_stew",
+ "name": "Mushroom Soup",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

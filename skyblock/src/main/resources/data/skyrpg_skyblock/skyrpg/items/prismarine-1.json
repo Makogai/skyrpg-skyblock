@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PRISMARINE:1",
+ "base": "minecraft:prismarine_bricks",
+ "name": "Prismarine Bricks",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

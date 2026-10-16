@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DEAD_CAT_DETECTOR",
+ "base": "minecraft:pink_tulip",
+ "name": "Cat Detector",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

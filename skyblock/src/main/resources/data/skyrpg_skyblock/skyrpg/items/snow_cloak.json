@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SNOW_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Snow Cloak",
+ "rarity": "rare",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "health": 5,
+  "speed": 2,
+  "intelligence": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

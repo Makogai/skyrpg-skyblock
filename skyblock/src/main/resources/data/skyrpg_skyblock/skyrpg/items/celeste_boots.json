@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "CELESTE_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Celeste Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 10,
+  "defense": 10,
+  "intelligence": 20
+ },
+ "color": "#FF8EB6",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "CELESTE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

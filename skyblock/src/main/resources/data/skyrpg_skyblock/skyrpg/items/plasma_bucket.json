@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PLASMA_BUCKET",
+ "base": "minecraft:paper",
+ "name": "Plasma Bucket",
+ "rarity": "mythic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

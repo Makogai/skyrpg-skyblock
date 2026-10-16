@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SUGAR",
+ "base": "minecraft:sugar",
+ "name": "Enchanted Sugar",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "alchemy": {
+    "MINION_STORAGE": 16.0,
+    "INGREDIENT_BREW": 300.0
+   }
+  }
+ }
+}

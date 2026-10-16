@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "MYCEL",
+ "base": "minecraft:mycelium",
+ "name": "Mycelium",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "BREAK_BLOCK": 3.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

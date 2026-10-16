@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PRE_DIGESTION_FISH",
+ "base": "minecraft:cod",
+ "name": "Pre-Digestion Fish",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The obvious result of mixing cat food, spacetime bending and mystical mythology.",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

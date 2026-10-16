@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "NETHER_FORTRESS_BOSS_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Dusty Travel Scroll to the Kuudra Skull",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

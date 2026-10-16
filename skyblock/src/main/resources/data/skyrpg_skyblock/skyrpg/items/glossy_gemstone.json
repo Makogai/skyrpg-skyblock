@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GLOSSY_GEMSTONE",
+ "base": "minecraft:purple_dye",
+ "name": "Glossy Gemstone",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Drops rarely from §dGemstones§7 while §bMayor Cole's §6Mining Fiesta §7is active.\n\n§8§oYou can see thousands of glittering reflections as you stare into its intricate patterns. Maybe you should stop gazing and keep mining...",
+ "hypixel": {
+  "npc_sell_price": 200000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

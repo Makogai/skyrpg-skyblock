@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MILK_BUCKET",
+ "base": "minecraft:milk_bucket",
+ "name": "Milk Bucket",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

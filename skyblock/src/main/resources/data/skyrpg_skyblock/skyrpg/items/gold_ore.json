@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GOLD_ORE",
+ "base": "minecraft:gold_ore",
+ "name": "Gold Ore",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 6.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

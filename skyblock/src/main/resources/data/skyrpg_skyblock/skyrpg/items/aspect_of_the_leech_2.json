@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_LEECH_2",
+ "base": "minecraft:wooden_shovel",
+ "name": "Aspect of the Leech",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

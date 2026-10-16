@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "HOT_POTATO_BOOK",
+ "base": "minecraft:book",
+ "name": "Hot Potato Book",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 38400,
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "skyblock_id": "BURSTFIRE_DAGGER",
+ "base": "minecraft:stone_sword",
+ "name": "Kindlebane Dagger",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 130,
+  "strength": 55,
+  "crit_damage": 20,
+  "attack_speed": 10
+ },
+ "hypixel": {
+  "sword_type": "DAGGER",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 4
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   },
+   {
+    "slot_type": "OPAL",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 500000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "COMBAT",
+   "parent": {
+    "BURSTFIRE_DAGGER": "HEARTFIRE_DAGGER"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

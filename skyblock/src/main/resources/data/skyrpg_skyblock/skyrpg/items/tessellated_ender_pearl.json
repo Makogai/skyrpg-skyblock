@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TESSELLATED_ENDER_PEARL",
+ "base": "minecraft:paper",
+ "name": "Tessellated Ender Pearl",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 96000
+ }
+}

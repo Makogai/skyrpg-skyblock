@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "POLISHED_PEBBLE",
+ "base": "minecraft:flint",
+ "name": "Polished Pebble",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

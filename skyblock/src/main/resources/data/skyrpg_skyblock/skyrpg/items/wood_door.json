@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_DOOR",
+ "base": "minecraft:oak_door",
+ "name": "Oak Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

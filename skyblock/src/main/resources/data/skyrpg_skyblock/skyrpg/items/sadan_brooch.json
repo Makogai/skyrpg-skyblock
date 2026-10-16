@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SADAN_BROOCH",
+ "base": "minecraft:paper",
+ "name": "Sadan's Brooch",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

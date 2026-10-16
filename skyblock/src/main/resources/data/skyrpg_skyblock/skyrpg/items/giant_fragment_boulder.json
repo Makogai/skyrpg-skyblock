@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "GIANT_FRAGMENT_BOULDER",
+ "base": "minecraft:paper",
+ "name": "Jolly Pink Rock",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The hottest shade of pink ever worn by a Giant.",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

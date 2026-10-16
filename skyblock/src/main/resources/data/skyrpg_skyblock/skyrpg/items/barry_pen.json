@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BARRY_PEN",
+ "base": "minecraft:lever",
+ "name": "Barry's Montgray Pen",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Use at the old election box in the back of the HQ.\n\n§8Signature Edition - get it?",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

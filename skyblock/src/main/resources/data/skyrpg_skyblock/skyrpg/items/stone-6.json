@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:6",
+ "base": "minecraft:polished_andesite",
+ "name": "Polished Andesite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

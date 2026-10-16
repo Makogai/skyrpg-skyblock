@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "NEW_BOTTLE_OF_JYRRE",
+ "base": "minecraft:potion",
+ "name": "Bottle of Jyrre",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "has_uuid": true
+ }
+}

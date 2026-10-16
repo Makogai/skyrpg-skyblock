@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "BOBBIN_SCRIPTURES",
+ "base": "minecraft:paper",
+ "name": "Bobbin' Scriptures",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7The sacred ways of bobbin', written by a long-forgotten worshipper of Kuudra.",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 250000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

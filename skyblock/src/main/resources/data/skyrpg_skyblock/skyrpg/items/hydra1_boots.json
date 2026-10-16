@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "HYDRA1_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Water Hydra Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "color": "#101555",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS:1",
+ "base": "minecraft:orange_stained_glass",
+ "name": "Orange Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

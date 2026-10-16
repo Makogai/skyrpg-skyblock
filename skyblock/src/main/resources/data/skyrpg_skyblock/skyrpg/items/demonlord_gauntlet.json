@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "DEMONLORD_GAUNTLET",
+ "base": "minecraft:paper",
+ "name": "Demonslayer Gauntlet",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "crit_damage": 25,
+  "health": 40,
+  "defense": 20,
+  "true_defense": 20
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 12,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

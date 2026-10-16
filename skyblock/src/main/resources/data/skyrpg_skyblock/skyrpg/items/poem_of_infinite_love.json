@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "POEM_OF_INFINITE_LOVE",
+ "base": "minecraft:paper",
+ "name": "Poem of True Love",
+ "rarity": "epic",
+ "type": "",
+ "description": "§8§oFilled with poor punctuation and misspellings, but its message is profound.",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "SKELETON_LORD_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Skeleton Lord Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "crit_chance": 1,
+  "crit_damage": 19,
+  "health": 26,
+  "defense": 52
+ },
+ "color": "#268105",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_LORD": 10
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    52,
+    56,
+    61,
+    67,
+    72,
+    79,
+    86,
+    93,
+    101,
+    110
+   ],
+   "HEALTH": [
+    26,
+    29,
+    31,
+    34,
+    37,
+    40,
+    44,
+    47,
+    51,
+    56
+   ],
+   "CRITICAL_DAMAGE": [
+    19,
+    22,
+    24,
+    27,
+    30,
+    33,
+    36,
+    41,
+    45,
+    50
+   ],
+   "CRITICAL_CHANCE": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  }
+ }
+}

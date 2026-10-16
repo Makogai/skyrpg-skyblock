@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS_PANE:5",
+ "base": "minecraft:lime_stained_glass_pane",
+ "name": "Lime Stained Glass Pane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.75
+ }
+}

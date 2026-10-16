@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "TORRHUS_TALISMAN",
+ "base": "minecraft:paper",
+ "name": "Torrhus Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "helix_fortune": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 10000
+ }
+}

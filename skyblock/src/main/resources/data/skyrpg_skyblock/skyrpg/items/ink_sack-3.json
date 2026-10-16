@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "INK_SACK:3",
+ "base": "minecraft:cocoa_beans",
+ "name": "Cocoa Beans",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "farming": {
+    "MINION_STORAGE": 0.2,
+    "BREAK_BLOCK": 4.0
+   }
+  }
+ }
+}

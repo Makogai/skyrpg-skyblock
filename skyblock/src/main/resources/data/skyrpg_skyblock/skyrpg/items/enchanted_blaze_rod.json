@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "ENCHANTED_BLAZE_ROD",
+ "base": "minecraft:blaze_rod",
+ "name": "Enchanted Blaze Rod",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 230400,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 23000.0
+   },
+   "combat": {
+    "MINION_STORAGE": 7680.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

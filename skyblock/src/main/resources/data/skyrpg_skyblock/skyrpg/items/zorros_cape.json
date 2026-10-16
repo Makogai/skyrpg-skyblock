@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "ZORROS_CAPE",
+ "base": "minecraft:paper",
+ "name": "Zorro's Cape",
+ "rarity": "legendary",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "strength": 10,
+  "ferocity": 2,
+  "farming_fortune": 10,
+  "farming_wisdom": 1
+ },
+ "description": "§8§oNot all Rabbits wear capes.",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "EASTER_RABBIT",
+    "rabbit": "ZORRO"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 15,
+   "category": "FARMING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

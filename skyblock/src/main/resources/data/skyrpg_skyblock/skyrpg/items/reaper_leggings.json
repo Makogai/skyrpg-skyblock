@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "REAPER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Reaper Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 25,
+  "health": 120,
+  "defense": 50,
+  "intelligence": 250
+ },
+ "color": "#1B1B1B",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 7
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 5
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "REAPER": 7
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

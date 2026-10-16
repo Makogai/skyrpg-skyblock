@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MOONLIGHT_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Moonlight Crystal",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 1500000
+ }
+}

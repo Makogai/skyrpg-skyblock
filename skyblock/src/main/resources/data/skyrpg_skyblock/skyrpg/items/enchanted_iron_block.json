@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_IRON_BLOCK",
+ "base": "minecraft:iron_block",
+ "name": "Enchanted Iron Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 51200,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 7680.0
+   }
+  }
+ }
+}

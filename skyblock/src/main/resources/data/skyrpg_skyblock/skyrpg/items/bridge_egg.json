@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BRIDGE_EGG",
+ "base": "minecraft:egg",
+ "name": "Bridge Egg",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

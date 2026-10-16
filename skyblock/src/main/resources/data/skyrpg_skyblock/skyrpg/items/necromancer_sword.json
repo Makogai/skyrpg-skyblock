@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "NECROMANCER_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Necromancer Sword",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 250,
+  "strength": 125,
+  "defense": 125
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 70
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 450
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 750
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 6
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

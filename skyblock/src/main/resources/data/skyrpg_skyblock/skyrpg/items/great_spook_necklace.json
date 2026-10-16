@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GREAT_SPOOK_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Great Spook Necklace",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "fear": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

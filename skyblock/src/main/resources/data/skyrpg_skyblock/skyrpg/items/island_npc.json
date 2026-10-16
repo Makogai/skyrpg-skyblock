@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ISLAND_NPC",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Island NPC",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 5
+   }
+  ],
+  "has_uuid": true
+ }
+}

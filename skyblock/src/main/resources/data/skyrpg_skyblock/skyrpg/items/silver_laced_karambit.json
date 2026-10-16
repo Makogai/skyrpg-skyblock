@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "SILVER_LACED_KARAMBIT",
+ "base": "minecraft:iron_sword",
+ "name": "Silver-Laced Karambit",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 5,
+  "rift_walk_speed": 10
+ },
+ "hypixel": {
+  "sword_type": "KARAMBIT",
+  "origin": "RIFT",
+  "item_specific": {
+   "mana_refund": 5,
+   "bonus_rift_damage_vs_vampire": 3
+  },
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 1
+   }
+  ]
+ }
+}

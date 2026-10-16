@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PLASMA",
+ "base": "minecraft:paper",
+ "name": "Plasma",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Stable magnetic field, but handle with caution.",
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

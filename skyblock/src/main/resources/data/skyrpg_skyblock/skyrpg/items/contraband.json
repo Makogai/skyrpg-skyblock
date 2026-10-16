@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "CONTRABAND",
+ "base": "minecraft:paper",
+ "name": "Drone Mod: Contraband",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "can_recombobulate": false
+ }
+}

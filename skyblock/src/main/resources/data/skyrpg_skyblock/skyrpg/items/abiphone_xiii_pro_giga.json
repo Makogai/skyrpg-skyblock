@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ABIPHONE_XIII_PRO_GIGA",
+ "base": "minecraft:paper",
+ "name": "Abiphone XIII Sapphire",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 10,
+   "max_musicdiscs": 20,
+   "model": "abiphone_xiii"
+  }
+ }
+}

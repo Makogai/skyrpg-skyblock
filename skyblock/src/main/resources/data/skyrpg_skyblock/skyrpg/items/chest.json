@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CHEST",
+ "base": "minecraft:chest",
+ "name": "Chest",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

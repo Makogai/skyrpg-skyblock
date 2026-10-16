@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "APPLE",
+ "base": "minecraft:apple",
+ "name": "Apple",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

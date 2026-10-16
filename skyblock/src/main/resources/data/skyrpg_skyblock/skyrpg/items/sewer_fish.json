@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SEWER_FISH",
+ "base": "minecraft:cod",
+ "name": "Sewer Fish",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Where did you find these? They stink!",
+ "hypixel": {
+  "soulbound": "COOP",
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HOT_BAIT",
+ "base": "minecraft:paper",
+ "name": "Hot Bait",
+ "rarity": "uncommon",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 30
+ }
+}

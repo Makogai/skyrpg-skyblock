@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "VANGUARD_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Vanguard Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "cold_resistance": 1
+ },
+ "color": "#3588FF"
+}

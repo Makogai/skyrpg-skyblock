@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BOTTLE_OF_JYRRE",
+ "base": "minecraft:potion",
+ "name": "Lost Bottle of Jyrre",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "has_uuid": true
+ }
+}

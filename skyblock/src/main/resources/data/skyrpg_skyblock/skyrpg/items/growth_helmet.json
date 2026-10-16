@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "GROWTH_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Helmet of Growth",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 50,
+  "defense": 30
+ },
+ "color": "#00BE00",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "GROWTH": "MASTIFF"
+   },
+   "armor_set_donation_xp": {
+    "GROWTH": 3
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

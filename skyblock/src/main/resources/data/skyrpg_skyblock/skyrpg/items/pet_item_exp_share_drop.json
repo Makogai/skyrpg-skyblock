@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PET_ITEM_EXP_SHARE_DROP",
+ "base": "minecraft:yellow_dye",
+ "name": "Exp Share Core",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Used to craft the Exp Share pet item.",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

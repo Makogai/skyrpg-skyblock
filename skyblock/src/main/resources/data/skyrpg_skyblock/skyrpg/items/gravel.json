@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GRAVEL",
+ "base": "minecraft:gravel",
+ "name": "Gravel",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

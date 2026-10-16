@@ -20,6 +20,7 @@ public final class ItemRegistry {
     public static final String SETS_DIRECTORY = "skyrpg/item_sets";
 
     private static Map<Identifier, ItemDefinition> items = Map.of();
+    private static Map<String, ItemDefinition> skyblock = Map.of();
     private static Map<Identifier, ItemSet> sets = Map.of();
 
     private ItemRegistry() {
@@ -34,11 +35,25 @@ public final class ItemRegistry {
         return items.get(BuiltInRegistries.ITEM.getKey(item));
     }
 
-    /** Matches "skyrpg_items:harvester_helmet" exactly, or just "harvester_helmet" by path. */
+    /** The SkyBlock item with this id ("ASPECT_OF_THE_END"), or null. */
+    public static ItemDefinition skyblock(String skyblockId) {
+        return skyblock.get(skyblockId);
+    }
+
+    /** Whether any SkyBlock items are loaded (stacks then need their custom data checked). */
+    public static boolean hasSkyblockItems() {
+        return !skyblock.isEmpty();
+    }
+
+    /** Matches "skyrpg_items:harvester_helmet" exactly, a SkyBlock id ("aspect_of_the_end"), or just "harvester_helmet" by path. */
     public static ItemDefinition find(Identifier id) {
         ItemDefinition exact = items.get(id);
         if (exact != null) {
             return exact;
+        }
+        ItemDefinition bySkyblockId = skyblock.get(id.getPath().toUpperCase(java.util.Locale.ROOT));
+        if (bySkyblockId != null) {
+            return bySkyblockId;
         }
         return items.values().stream().filter(def -> def.id().getPath().equals(id.getPath())).findFirst().orElse(null);
     }
@@ -56,8 +71,19 @@ public final class ItemRegistry {
     }
 
     static void loadItems(Map<Identifier, JsonElement> files) {
-        items = parseAll(files, ItemDefinition::parse, "item");
-        SkyRpgItems.LOGGER.info("Loaded {} items", items.size());
+        setItems(parseAll(files, ItemDefinition::parse, "item"));
+        SkyRpgItems.LOGGER.info("Loaded {} items ({} SkyBlock items)", items.size(), skyblock.size());
+    }
+
+    private static void setItems(Map<Identifier, ItemDefinition> loaded) {
+        Map<String, ItemDefinition> bySkyblockId = new LinkedHashMap<>();
+        for (ItemDefinition def : loaded.values()) {
+            if (def.skyblock() && bySkyblockId.putIfAbsent(def.skyblockId(), def) != null) {
+                SkyRpgItems.LOGGER.error("Two items share the SkyBlock id {}; keeping {}", def.skyblockId(), bySkyblockId.get(def.skyblockId()).id());
+            }
+        }
+        items = loaded;
+        skyblock = Collections.unmodifiableMap(bySkyblockId);
     }
 
     static void loadSets(Map<Identifier, JsonElement> files) {
@@ -67,7 +93,7 @@ public final class ItemRegistry {
 
     /** Replaces everything with definitions sent by the server (client side). */
     public static void replace(Map<Identifier, JsonElement> itemFiles, Map<Identifier, JsonElement> setFiles) {
-        items = parseAll(itemFiles, ItemDefinition::parse, "item");
+        setItems(parseAll(itemFiles, ItemDefinition::parse, "item"));
         sets = parseAll(setFiles, ItemSet::parse, "item set");
     }
 

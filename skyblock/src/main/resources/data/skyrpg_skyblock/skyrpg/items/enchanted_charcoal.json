@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_CHARCOAL",
+ "base": "minecraft:charcoal",
+ "name": "Enchanted Charcoal",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 192
+ }
+}

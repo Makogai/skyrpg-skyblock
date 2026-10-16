@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_COOKED_RABBIT",
+ "base": "minecraft:cooked_rabbit",
+ "name": "Enchanted Cooked Rabbit",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 102400,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

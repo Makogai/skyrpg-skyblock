@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVES:3",
+ "base": "minecraft:jungle_leaves",
+ "name": "Jungle Leaves",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

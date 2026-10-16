@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "AMBER_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Amber Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

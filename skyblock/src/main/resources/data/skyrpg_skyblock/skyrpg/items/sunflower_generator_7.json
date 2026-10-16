@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SUNFLOWER_GENERATOR_7",
+ "base": "minecraft:player_head",
+ "name": "Sunflower Minion VII",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "generator": "SUNFLOWER",
+  "generator_tier": 7
+ }
+}

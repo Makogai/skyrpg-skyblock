@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "HYDRA1_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Water Hydra Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "color": "#101555",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "SPRING_BARN_BARN_SKIN",
+ "base": "minecraft:hay_block",
+ "name": "Spring Barn Skin",
+ "rarity": "uncommon",
+ "category": "COSMETIC",
+ "type": "Cosmetic"
+}

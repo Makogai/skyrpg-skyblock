@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "VISITORS_GRATITUDE",
+ "base": "minecraft:paper",
+ "name": "Visitors' Gratitude",
+ "rarity": "common",
+ "type": "",
+ "description": "§7You made someone smile today! §d❤",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

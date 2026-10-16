@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "MITHRIL_BELT",
+ "base": "minecraft:paper",
+ "name": "Mithril Belt",
+ "rarity": "uncommon",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "mining_speed": 20,
+  "mining_fortune": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 2
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "armor_set_donation_xp": {
+    "MITHRIL": 3
+   },
+   "parent": {
+    "MITHRIL": "TITANIUM"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

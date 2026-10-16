@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "QUARTZ",
+ "base": "minecraft:quartz",
+ "name": "Nether Quartz",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

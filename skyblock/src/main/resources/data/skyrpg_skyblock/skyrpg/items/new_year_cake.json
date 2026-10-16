@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "NEW_YEAR_CAKE",
+ "base": "minecraft:cake",
+ "name": "New Year Cake",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100,
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

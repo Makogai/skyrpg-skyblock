@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENCHANTED_POPPY",
+ "base": "minecraft:poppy",
+ "name": "Enchanted Poppy",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 576,
+  "can_place": false,
+  "experience": {
+   "foraging": {
+    "MINION_STORAGE": 57.6
+   }
+  },
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 1024
+   }
+  ]
+ }
+}

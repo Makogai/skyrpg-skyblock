@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_FISHING_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "doR gnihsiF",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 30
+ }
+}

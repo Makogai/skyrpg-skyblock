@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SYNTHETIC_HEART",
+ "base": "minecraft:paper",
+ "name": "Synthetic Heart",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

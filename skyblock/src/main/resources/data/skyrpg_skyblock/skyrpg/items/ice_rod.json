@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "ICE_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Ice Rod",
+ "rarity": "rare",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 30,
+  "fishing_speed": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 3
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 5
+   }
+  ],
+  "rarity_salvageable": true
+ }
+}

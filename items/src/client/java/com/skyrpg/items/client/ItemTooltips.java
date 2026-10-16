@@ -12,7 +12,6 @@ import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.backpack.Backpacks;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -55,10 +54,13 @@ final class ItemTooltips {
         out.add(stack.has(DataComponents.CUSTOM_NAME) ? lines.getFirst() : Component.literal(def.name()).withColor(def.rarity().color()));
         wrapWidth = Mth.clamp(Minecraft.getInstance().font.width(out.getFirst()), MIN_WRAP, MAX_WRAP);
 
-        // Weapon damage first, then the rest in the usual stat order.
+        // Weapon damage first, then the rest in the usual stat order; SkyBlock items in Hypixel's order, as listed.
         List<StatType> order = new ArrayList<>(StatTypes.all());
         order.remove(StatTypes.DAMAGE);
         order.addFirst(StatTypes.DAMAGE);
+        if (def.skyblock()) {
+            order = List.copyOf(def.stats().keySet());
+        }
         for (StatType stat : order) {
             double value = def.stat(stat);
             if (value != 0) {
@@ -94,7 +96,12 @@ final class ItemTooltips {
 
         if (!def.description().isEmpty()) {
             out.add(Component.empty());
-            wrap(def.description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC)));
+            if (def.skyblock()) {
+                // Hypixel's lore, with its own formatting codes.
+                wrapFormatted(def.description()).forEach(line -> out.add(Component.literal(line)));
+            } else {
+                wrap(def.description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC)));
+            }
         }
 
         if (Backpacks.isBackpack(stack)) {
@@ -144,7 +151,13 @@ final class ItemTooltips {
         }
 
         out.add(Component.empty());
-        out.add(Component.literal("\u25C6 " + label(def.rarity().name()) + " " + SkyItems.typeLabel(def)).withColor(def.rarity().color()));
+        if (def.skyblock()) {
+            // Hypixel's rarity line: "LEGENDARY HELMET", bold.
+            out.add(Component.literal((def.rarity().label() + " " + SkyItems.typeLabel(def)).trim().toUpperCase(java.util.Locale.ROOT))
+                    .withStyle(style -> style.withColor(def.rarity().color()).withBold(true)));
+        } else {
+            out.add(Component.literal("\u25C6 " + def.rarity().label() + " " + SkyItems.typeLabel(def)).withColor(def.rarity().color()));
+        }
         if (flag.isAdvanced()) {
             out.add(Component.literal(def.id().toString()).withStyle(ChatFormatting.DARK_GRAY));
         }
@@ -179,8 +192,44 @@ final class ItemTooltips {
     }
 
     /** "UNCOMMON" -> "Uncommon". */
-    private static String label(String name) {
-        return name.charAt(0) + name.substring(1).toLowerCase(Locale.ROOT);
+    /**
+     * Like {@link #wrap}, for text with formatting codes and line breaks: each wrapped line starts with the colour and
+     * styles still active where the previous one ended.
+     */
+    private static List<String> wrapFormatted(String text) {
+        List<String> lines = new ArrayList<>();
+        for (String paragraph : text.split("\n", -1)) {
+            String carried = "";
+            for (String line : wrap(paragraph)) {
+                String full = carried + line;
+                lines.add(full);
+                carried = activeCodes(full);
+            }
+        }
+        return lines;
+    }
+
+    /** The colour and style codes in effect at the end of this text ("\u00a77\u00a7o"). */
+    private static String activeCodes(String text) {
+        String color = "";
+        StringBuilder styles = new StringBuilder();
+        for (int i = 0; i + 1 < text.length(); i++) {
+            if (text.charAt(i) != '\u00a7') {
+                continue;
+            }
+            char code = Character.toLowerCase(text.charAt(i + 1));
+            if ("0123456789abcdef".indexOf(code) >= 0) {
+                color = "\u00a7" + code;
+                styles.setLength(0);
+            } else if (code == 'r') {
+                color = "";
+                styles.setLength(0);
+            } else if ("klmno".indexOf(code) >= 0) {
+                styles.append('\u00a7').append(code);
+            }
+            i++;
+        }
+        return color + styles;
     }
 
     /** Splits text into lines at word boundaries, as wide as the tooltip's name line (within limits). */

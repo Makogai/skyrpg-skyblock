@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ROCK_PAPER_SHEARS",
+ "base": "minecraft:shears",
+ "name": "Rock Paper Shears",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 8
+   }
+  ]
+ }
+}

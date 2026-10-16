@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMOOTH_BRICK:1",
+ "base": "minecraft:mossy_stone_bricks",
+ "name": "Mossy Stone Bricks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

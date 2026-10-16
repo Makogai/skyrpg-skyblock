@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_SWORD",
+ "base": "minecraft:diamond_sword",
+ "name": "Diamond Sword",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 35
+ },
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

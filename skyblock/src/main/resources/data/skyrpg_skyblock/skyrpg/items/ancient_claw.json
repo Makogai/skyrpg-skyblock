@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ANCIENT_CLAW",
+ "base": "minecraft:flint",
+ "name": "Ancient Claw",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7The claw of an ancient beast, hardened by time and countless battles.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "ANCESTRAL_SPADE"
+    ]
+   }
+  ]
+ }
+}

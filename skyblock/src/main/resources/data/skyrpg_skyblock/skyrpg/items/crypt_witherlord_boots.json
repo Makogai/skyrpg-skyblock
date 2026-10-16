@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CRYPT_WITHERLORD_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Crypt Witherlord Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 65,
+  "speed": 5
+ },
+ "color": "#450101",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKELETON_KEY",
+ "base": "minecraft:paper",
+ "name": "Skeleton Key",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "can_place": false
+ }
+}

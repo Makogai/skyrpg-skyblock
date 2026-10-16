@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DIAMOND_HOE",
+ "base": "minecraft:diamond_hoe",
+ "name": "Diamond Hoe",
+ "rarity": "uncommon",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

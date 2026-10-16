@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "NETHERITE_HELMET",
+ "base": "minecraft:chainmail_helmet",
+ "name": "Netherite Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 40,
+  "defense": 40,
+  "mining_speed": 25,
+  "mining_fortune": 10
+ },
+ "hypixel": {
+  "soulbound": "COOP",
+  "salvage": {
+   "item_id": "FIRE_SOUL",
+   "amount": 12
+  }
+ }
+}

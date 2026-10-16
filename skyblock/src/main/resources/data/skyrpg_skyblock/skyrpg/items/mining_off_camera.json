@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MINING_OFF_CAMERA",
+ "base": "minecraft:paper",
+ "name": "Drone Mod: Mining Off Camera",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "can_recombobulate": false
+ }
+}

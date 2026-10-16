@@ -1,0 +1,96 @@
+{
+ "skyblock_id": "WISE_DRAGON_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Wise Dragon Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 120,
+  "defense": 160,
+  "intelligence": 75
+ },
+ "color": "#29F0E9",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 70
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 180
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 16
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 12
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "WISE_DRAGON": 10
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "MITHRIL_PICKAXE",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Mithril Pickaxe",
+ "rarity": "uncommon",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 40,
+  "mining_speed": 300,
+  "mining_fortune": 7,
+  "breaking_power": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 400,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 2
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "MINING",
+   "parent": {
+    "MITHRIL_PICKAXE": "REFINED_MITHRIL_PICKAXE"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

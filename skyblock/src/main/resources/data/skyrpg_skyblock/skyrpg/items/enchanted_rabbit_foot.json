@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_RABBIT_FOOT",
+ "base": "minecraft:rabbit_foot",
+ "name": "Enchanted Rabbit Foot",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 600.0
+   },
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

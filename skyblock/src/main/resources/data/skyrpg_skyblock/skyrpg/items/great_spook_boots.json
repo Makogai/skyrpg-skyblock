@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GREAT_SPOOK_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Great Spook Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "fear": 5
+ },
+ "color": "#993399",
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

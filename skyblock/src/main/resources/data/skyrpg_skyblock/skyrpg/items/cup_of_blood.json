@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CUP_OF_BLOOD",
+ "base": "minecraft:paper",
+ "name": "Cup of Blood",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7§oEww",
+ "hypixel": {
+  "npc_sell_price": 200
+ }
+}

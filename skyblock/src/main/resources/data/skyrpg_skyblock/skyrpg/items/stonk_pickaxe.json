@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "STONK_PICKAXE",
+ "base": "minecraft:golden_pickaxe",
+ "name": "Stonk",
+ "rarity": "epic",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "mining_speed": 380,
+  "breaking_power": 1
+ },
+ "hypixel": {
+  "enchantments": {
+   "efficiency": 6
+  },
+  "npc_sell_price": 9999,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

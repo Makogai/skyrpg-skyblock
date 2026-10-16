@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SEA_LUMIES",
+ "base": "minecraft:paper",
+ "name": "Sea Lumies",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Luminous wonders from the ocean's depths, lighting up the watery abyss.",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

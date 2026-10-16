@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_AXE",
+ "base": "minecraft:golden_axe",
+ "name": "Golden Axe",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

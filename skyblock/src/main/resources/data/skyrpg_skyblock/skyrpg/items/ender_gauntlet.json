@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENDER_GAUNTLET",
+ "base": "minecraft:paper",
+ "name": "Ender Gauntlet",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "health": 15,
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 12
+   }
+  ],
+  "soulbound": "COOP"
+ }
+}

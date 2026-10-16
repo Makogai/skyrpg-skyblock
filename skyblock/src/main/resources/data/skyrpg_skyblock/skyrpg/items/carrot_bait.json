@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CARROT_BAIT",
+ "base": "minecraft:paper",
+ "name": "Carrot Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 7
+ }
+}

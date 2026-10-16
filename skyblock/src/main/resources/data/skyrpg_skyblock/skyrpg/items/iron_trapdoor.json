@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "IRON_TRAPDOOR",
+ "base": "minecraft:iron_trapdoor",
+ "name": "Iron Trapdoor",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

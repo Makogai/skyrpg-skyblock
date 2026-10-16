@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TARANTULA_SILK",
+ "base": "minecraft:paper",
+ "name": "Tarantula Silk",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

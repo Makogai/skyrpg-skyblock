@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "AMALGAMATED_CRIMSONITE_NEW",
+ "base": "minecraft:paper",
+ "name": "Amalgamated Crimsonite",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

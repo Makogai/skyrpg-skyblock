@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "FOSSIL_THE_FISH",
+ "base": "minecraft:cooked_salmon",
+ "name": "Fossil the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "museum": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 25
+   }
+  ]
+ }
+}

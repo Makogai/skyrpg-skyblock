@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SUGAR_CANE",
+ "base": "minecraft:sugar_cane",
+ "name": "Sugar Cane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 2.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

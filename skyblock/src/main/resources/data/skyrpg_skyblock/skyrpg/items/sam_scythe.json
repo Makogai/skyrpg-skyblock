@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "SAM_SCYTHE",
+ "base": "minecraft:iron_hoe",
+ "name": "Sam's Scythe",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "soulbound": "COOP",
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "SAM_SCYTHE": "GARDEN_SCYTHE"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

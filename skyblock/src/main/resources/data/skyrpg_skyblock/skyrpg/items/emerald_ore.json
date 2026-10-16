@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "EMERALD_ORE",
+ "base": "minecraft:emerald_ore",
+ "name": "Emerald Ore",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 9.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ECTOPLASM",
+ "base": "minecraft:prismarine_crystals",
+ "name": "Ectoplasm",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Spooky, yet practical.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

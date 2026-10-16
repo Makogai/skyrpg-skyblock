@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEASH",
+ "base": "minecraft:lead",
+ "name": "Lead",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

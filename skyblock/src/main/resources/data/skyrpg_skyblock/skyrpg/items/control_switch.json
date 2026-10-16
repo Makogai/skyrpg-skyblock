@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CONTROL_SWITCH",
+ "base": "minecraft:paper",
+ "name": "Control Switch",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

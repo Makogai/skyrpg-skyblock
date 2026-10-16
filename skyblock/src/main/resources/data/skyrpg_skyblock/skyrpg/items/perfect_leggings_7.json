@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "PERFECT_LEGGINGS_7",
+ "base": "minecraft:diamond_leggings",
+ "name": "Perfect Leggings - Tier VII",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 260
+ },
+ "hypixel": {
+  "npc_sell_price": 3174400,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 60
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 65
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 110
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 160
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 14
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ]
+ }
+}

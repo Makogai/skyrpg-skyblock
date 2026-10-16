@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BLOOMING_THORNS",
+ "base": "minecraft:paper",
+ "name": "Blooming Thorns",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

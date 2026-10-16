@@ -1,0 +1,65 @@
+{
+ "skyblock_id": "HARDENED_DIAMOND_LEGGINGS",
+ "base": "minecraft:diamond_leggings",
+ "name": "Hardened Diamond Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 95
+ },
+ "hypixel": {
+  "npc_sell_price": 4480,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 10
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 25
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "HARDENED_DIAMOND": "MINERAL"
+   },
+   "armor_set_donation_xp": {
+    "HARDENED_DIAMOND": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "skyblock_id": "PERFECT_LEGGINGS_13",
+ "base": "minecraft:diamond_leggings",
+ "name": "Perfect Leggings - Tier XIII",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 380
+ },
+ "hypixel": {
+  "npc_sell_price": 5222400,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 60
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 65
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 110
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 160
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 21
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "PERFECT_TIER_13": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

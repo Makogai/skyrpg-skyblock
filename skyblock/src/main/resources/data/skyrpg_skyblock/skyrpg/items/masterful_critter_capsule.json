@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MASTERFUL_CRITTER_CAPSULE",
+ "base": "minecraft:paper",
+ "name": "Masterful Critter Capsule",
+ "rarity": "special",
+ "category": "CAPSULE",
+ "type": "Capsule",
+ "hypixel": {
+  "safari_only": true
+ }
+}

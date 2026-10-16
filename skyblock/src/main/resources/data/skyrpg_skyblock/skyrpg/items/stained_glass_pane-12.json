@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS_PANE:12",
+ "base": "minecraft:brown_stained_glass_pane",
+ "name": "Brown Stained Glass Pane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.75
+ }
+}

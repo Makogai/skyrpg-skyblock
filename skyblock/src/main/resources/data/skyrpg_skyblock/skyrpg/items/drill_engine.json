@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Drill Motor",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5884
+ }
+}

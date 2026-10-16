@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SPONGE_SINKER",
+ "base": "minecraft:paper",
+ "name": "Sponge Sinker",
+ "rarity": "common",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 560,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "game_stage": "STARTER"
+  }
+ }
+}

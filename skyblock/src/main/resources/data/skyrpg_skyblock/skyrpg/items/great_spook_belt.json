@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GREAT_SPOOK_BELT",
+ "base": "minecraft:paper",
+ "name": "Great Spook Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "fear": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

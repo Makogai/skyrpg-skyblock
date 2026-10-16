@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FULL_JAW_FANGING_KIT",
+ "base": "minecraft:paper",
+ "name": "Full-Jaw Fanging Kit",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "glint": true,
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

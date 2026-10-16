@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WAND_OF_WARDING",
+ "base": "minecraft:diamond",
+ "name": "%%aqua%%Warding Diamathame",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

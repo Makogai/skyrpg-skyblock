@@ -1,0 +1,115 @@
+{
+ "skyblock_id": "VALKYRIE",
+ "base": "minecraft:iron_sword",
+ "name": "Valkyrie",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 270,
+  "strength": 145,
+  "intelligence": 60,
+  "ferocity": 60
+ },
+ "hypixel": {
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 900
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 1500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 2
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "VALKYRIE": "HYPERION"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

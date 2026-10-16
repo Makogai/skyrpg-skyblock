@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CLEAVER",
+ "base": "minecraft:golden_sword",
+ "name": "Cleaver",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 40,
+  "strength": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 8,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "CLEAVER": "SUPER_CLEAVER"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

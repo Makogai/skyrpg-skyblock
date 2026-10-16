@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SPIDER_EYE",
+ "base": "minecraft:spider_eye",
+ "name": "Spider Eye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "combat": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ENCHANTED_EYE_OF_ENDER",
+ "base": "minecraft:ender_eye",
+ "name": "Enchanted Eye of Ender",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3520,
+  "can_interact": false
+ }
+}

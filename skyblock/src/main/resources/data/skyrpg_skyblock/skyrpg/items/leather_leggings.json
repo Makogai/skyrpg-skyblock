@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "LEATHER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Leather Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

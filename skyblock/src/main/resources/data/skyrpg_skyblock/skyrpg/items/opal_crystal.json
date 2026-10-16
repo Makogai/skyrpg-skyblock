@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "OPAL_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Opal Crystal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

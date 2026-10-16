@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "VOIDEDGE_KATANA",
+ "base": "minecraft:blaze_rod",
+ "name": "Voidedge Katana",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 155,
+  "strength": 60,
+  "crit_damage": 25,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "sword_type": "KATANA",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 3
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   },
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 40
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {
+    "VOIDEDGE_KATANA": "VORPAL_KATANA"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

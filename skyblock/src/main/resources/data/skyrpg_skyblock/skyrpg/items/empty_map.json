@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "EMPTY_MAP",
+ "base": "minecraft:map",
+ "name": "Empty Map",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25
+ }
+}

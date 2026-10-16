@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CRUNCHY_BUG",
+ "base": "minecraft:paper",
+ "name": "Crunchy Bug",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "npc_sell_price": 5
+ }
+}

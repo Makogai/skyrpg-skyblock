@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "OPAL_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Opal Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

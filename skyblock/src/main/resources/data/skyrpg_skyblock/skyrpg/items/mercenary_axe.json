@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "MERCENARY_AXE",
+ "base": "minecraft:iron_sword",
+ "name": "Mercenary Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 70,
+  "strength": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 15000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

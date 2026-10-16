@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "LITTLEFOOT_FLUFF",
+ "base": "minecraft:light_gray_dye",
+ "name": "Littlefoot Fluff",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A poignant reminder of the day you almost caught Bigfoot’s younger, lesser-known brother. Even collectors don’t want it, so it’s yours to keep.",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1000000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

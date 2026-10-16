@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "GREENHOUSE_BLUEPRINT",
+ "base": "minecraft:paper",
+ "name": "Greenhouse Blueprint",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7This blueprint depicts some sort of §aGreenhouse §7structure, maybe §bSam §7would find some use with it.",
+ "hypixel": {
+  "has_uuid": true,
+  "soulbound": "COOP"
+ }
+}

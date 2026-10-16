@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PUMPKIN_PIE",
+ "base": "minecraft:pumpkin_pie",
+ "name": "Pumpkin Pie",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9
+ }
+}

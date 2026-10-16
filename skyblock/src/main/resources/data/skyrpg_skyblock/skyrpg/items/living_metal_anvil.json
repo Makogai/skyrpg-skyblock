@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "LIVING_METAL_ANVIL",
+ "base": "minecraft:anvil",
+ "name": "Living Metal Anchor",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7This anchor has a life.\n§7It likes music!\n§7Its favorite genre?\n§7Heavy metal.\n\n§8Reed needs this item.",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "motes_sell_price": 100,
+  "origin": "RIFT"
+ }
+}

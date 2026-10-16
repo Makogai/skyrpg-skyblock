@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "GOBLIN_OMELETTE",
+ "base": "minecraft:paper",
+ "name": "Goblin Omelette",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7§oMay cause diseases",
+ "hypixel": {
+  "npc_sell_price": 20840,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 4,
+   "parent": {
+    "GOBLIN_OMELETTE": "GOBLIN_OMELETTE_PESTO"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

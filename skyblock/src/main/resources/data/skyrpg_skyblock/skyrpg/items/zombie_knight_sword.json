@@ -1,0 +1,95 @@
+{
+ "skyblock_id": "ZOMBIE_KNIGHT_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Zombie Knight Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 82,
+  "strength": 21
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 320
+    }
+   ]
+  ],
+  "gear_score": 20,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 14
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DAMAGE": [
+    82,
+    86,
+    91,
+    95,
+    101,
+    106,
+    111,
+    117,
+    123,
+    130
+   ],
+   "STRENGTH": [
+    21,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    36,
+    37,
+    40
+   ]
+  }
+ }
+}

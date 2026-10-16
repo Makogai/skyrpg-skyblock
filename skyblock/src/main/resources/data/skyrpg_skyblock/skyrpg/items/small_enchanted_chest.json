@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMALL_ENCHANTED_CHEST",
+ "base": "minecraft:chest",
+ "name": "Small Storage",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 65
+ }
+}

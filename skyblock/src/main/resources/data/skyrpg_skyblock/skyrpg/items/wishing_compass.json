@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WISHING_COMPASS",
+ "base": "minecraft:paper",
+ "name": "Wishing Compass",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

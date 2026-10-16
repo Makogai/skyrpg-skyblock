@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "BASIC_GARDENING_HOE",
+ "base": "minecraft:iron_hoe",
+ "name": "Basic Gardening Hoe",
+ "rarity": "uncommon",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "stats": {
+  "farming_fortune": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 1
+   },
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "BASIC_GARDENING_HOE": "ADVANCED_GARDENING_HOE"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

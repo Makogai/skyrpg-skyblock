@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "POISON_SAMPLE",
+ "base": "minecraft:paper",
+ "name": "Poison Sample",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Dropped from §aSlimes§7, but only the especially toxic ones!",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

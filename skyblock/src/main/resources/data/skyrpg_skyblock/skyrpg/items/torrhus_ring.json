@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "TORRHUS_RING",
+ "base": "minecraft:paper",
+ "name": "Torrhus Ring",
+ "rarity": "uncommon",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "helix_fortune": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 20000
+ }
+}

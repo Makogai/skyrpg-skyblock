@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_COCOA",
+ "base": "minecraft:cocoa_beans",
+ "name": "Enchanted Cocoa Beans",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   },
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "GLOOMLOCK_GRIMOIRE",
+ "base": "minecraft:book",
+ "name": "Gloomlock Grimoire",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 5
+   }
+  ],
+  "can_have_power_scroll": true,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "game_stage": "EXPERT"
+  }
+ }
+}

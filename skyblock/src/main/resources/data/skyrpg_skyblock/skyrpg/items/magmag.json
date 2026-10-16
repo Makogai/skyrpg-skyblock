@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MAGMAG",
+ "base": "minecraft:paper",
+ "name": "Magmag",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Used in love potions, and laxatives.",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

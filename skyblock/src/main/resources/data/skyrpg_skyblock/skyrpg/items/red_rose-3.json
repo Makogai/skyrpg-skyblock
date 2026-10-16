@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RED_ROSE:3",
+ "base": "minecraft:azure_bluet",
+ "name": "Azure Bluet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

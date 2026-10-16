@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "LANTERN_OF_THE_DEAD",
+ "base": "minecraft:redstone_lamp",
+ "name": "Lantern of the Dead",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true,
+  "can_place": false
+ }
+}

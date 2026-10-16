@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_SHARPENED_CLAWS_UNCOMMON",
+ "base": "minecraft:prismarine_shard",
+ "name": "Sharpened Claws",
+ "rarity": "uncommon",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

@@ -1,0 +1,65 @@
+{
+ "skyblock_id": "FERMENTO_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Fermento Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 195,
+  "defense": 40,
+  "speed": 6,
+  "farming_fortune": 35,
+  "bonus_pest_chance": 17.5
+ },
+ "color": "#6A9C1B",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 40
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FERMENTO": "HELIANTHUS"
+   },
+   "armor_set_donation_xp": {
+    "FERMENTO": 12
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

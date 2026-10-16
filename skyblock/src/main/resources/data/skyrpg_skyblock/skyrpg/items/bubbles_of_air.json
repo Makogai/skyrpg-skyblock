@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BUBBLES_OF_AIR",
+ "base": "minecraft:paper",
+ "name": "Bubbles of Air",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "has_uuid": true
+ }
+}

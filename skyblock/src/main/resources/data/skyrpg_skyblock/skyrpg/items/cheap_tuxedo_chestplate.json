@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CHEAP_TUXEDO_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Cheap Tuxedo Jacket",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "crit_damage": 50,
+  "intelligence": 50
+ },
+ "color": "#383838",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CHEAP_TUXEDO": "FANCY_TUXEDO"
+   },
+   "armor_set_donation_xp": {
+    "CHEAP_TUXEDO": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

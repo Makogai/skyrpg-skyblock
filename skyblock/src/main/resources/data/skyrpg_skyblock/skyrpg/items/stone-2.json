@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE:2",
+ "base": "minecraft:polished_granite",
+ "name": "Polished Granite",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

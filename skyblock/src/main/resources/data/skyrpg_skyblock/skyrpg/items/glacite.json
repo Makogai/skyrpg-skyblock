@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "GLACITE",
+ "base": "minecraft:packed_ice",
+ "name": "Glacite",
+ "rarity": "common",
+ "type": "",
+ "description": "§7An unnatural, nigh-unbreakable material. Of those unlucky few who have discovered where it originates, none have lived to tell the tale.",
+ "hypixel": {
+  "npc_sell_price": 12,
+  "can_place": false
+ }
+}

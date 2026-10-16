@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "OMEGA_EGG",
+ "base": "minecraft:paper",
+ "name": "Omega Enchanted Egg",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Used to craft the strangest of pets.",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 149040.0
+   }
+  }
+ }
+}

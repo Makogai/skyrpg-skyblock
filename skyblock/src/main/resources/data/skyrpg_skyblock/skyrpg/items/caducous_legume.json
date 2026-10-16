@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CADUCOUS_LEGUME",
+ "base": "minecraft:sugar_cane",
+ "name": "Caducous Legume",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "rift_time_gain": 90
+  }
+ }
+}

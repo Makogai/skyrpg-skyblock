@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_THE_RESISTANCE_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Boots of the Rising Sun",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 8,
+  "defense": 8
+ },
+ "color": "#9F8609",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "museum": true
+ }
+}

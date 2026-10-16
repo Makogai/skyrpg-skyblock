@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "FLAMEBREAKER_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Ember Ash Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "mining_speed": 15,
+  "mining_fortune": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "HARD_STONE",
+    "tier": 5
+   }
+  ],
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

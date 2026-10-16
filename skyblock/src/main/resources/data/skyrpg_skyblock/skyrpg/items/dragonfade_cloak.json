@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "DRAGONFADE_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Dragonfade Cloak",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "strength": 5,
+  "health": 30,
+  "defense": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

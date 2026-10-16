@@ -1,0 +1,108 @@
+{
+ "skyblock_id": "ZOMBIE_SOLDIER_CUTLASS",
+ "base": "minecraft:iron_sword",
+ "name": "Zombie Soldier Cutlass",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 52,
+  "strength": 26,
+  "attack_speed": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 5
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DAMAGE": [
+    52,
+    56,
+    60,
+    65,
+    70,
+    75,
+    80,
+    86,
+    93,
+    100
+   ],
+   "ATTACK_SPEED": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "STRENGTH": [
+    26,
+    28,
+    30,
+    32,
+    35,
+    37,
+    40,
+    43,
+    47,
+    50
+   ]
+  }
+ }
+}

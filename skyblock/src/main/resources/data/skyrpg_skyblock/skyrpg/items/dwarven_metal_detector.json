@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DWARVEN_METAL_DETECTOR",
+ "base": "minecraft:iron_hoe",
+ "name": "Metal Detector",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "can_place": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

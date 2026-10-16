@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "TERRY_SNOWGLOBE",
+ "base": "minecraft:paper",
+ "name": "Terry's Snowglobe",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

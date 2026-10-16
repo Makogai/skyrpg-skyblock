@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "DEEP_ROOT",
+ "base": "minecraft:paper",
+ "name": "Deep Root",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7These roots delve deep into the earth, drawing nutrients from below the waterline to nourish the mighty mangrove.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "PRESSURE_TALISMAN"
+    ],
+    "show_items_last": [
+     "PRESSURE_ARTIFACT"
+    ]
+   }
+  ]
+ }
+}

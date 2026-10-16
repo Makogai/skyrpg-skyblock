@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "PACKED_ICE",
+ "base": "minecraft:packed_ice",
+ "name": "Packed Ice",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4.5,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 4.5
+   }
+  }
+ }
+}

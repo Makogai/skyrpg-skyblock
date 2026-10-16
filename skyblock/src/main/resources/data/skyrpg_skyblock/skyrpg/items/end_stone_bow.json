@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "END_STONE_BOW",
+ "base": "minecraft:bow",
+ "name": "End Stone Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 140
+ },
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 15
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "DRAGON",
+    "amount": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

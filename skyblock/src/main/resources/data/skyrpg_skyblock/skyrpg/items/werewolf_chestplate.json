@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "WEREWOLF_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Werewolf Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 240,
+  "intelligence": 50,
+  "ferocity": 10
+ },
+ "color": "#1D1105",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 1000
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 800
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 1200
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "WEREWOLF": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

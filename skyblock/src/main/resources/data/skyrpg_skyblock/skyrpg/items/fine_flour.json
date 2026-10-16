@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "FINE_FLOUR",
+ "base": "minecraft:paper",
+ "name": "Fine Flour",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "item_specific": {
+   "permanent_health": 5,
+   "permanent_crops_farming_fortune": 12
+  }
+ }
+}

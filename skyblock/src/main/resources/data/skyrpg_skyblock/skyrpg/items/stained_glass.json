@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS",
+ "base": "minecraft:white_stained_glass",
+ "name": "White Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

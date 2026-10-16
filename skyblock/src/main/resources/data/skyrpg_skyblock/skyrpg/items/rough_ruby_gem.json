@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_RUBY_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Ruby Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "CONCENTRATED_STONE",
+ "base": "minecraft:paper",
+ "name": "Concentrated Stone",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7The purest form of stone. How can something so simple, be so heavy?",
+ "hypixel": {
+  "npc_sell_price": 200000,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 33177.6
+   }
+  }
+ }
+}

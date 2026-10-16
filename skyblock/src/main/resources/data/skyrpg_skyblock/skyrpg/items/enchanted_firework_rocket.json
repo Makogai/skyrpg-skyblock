@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "ENCHANTED_FIREWORK_ROCKET",
+ "base": "minecraft:firework_rocket",
+ "name": "Enchanted Firework Rocket",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 41000,
+  "can_interact": false,
+  "can_interact_right_click": false
+ }
+}

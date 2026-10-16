@@ -1,0 +1,74 @@
+{
+ "skyblock_id": "STONE_BLADE",
+ "base": "minecraft:stone_sword",
+ "name": "Adaptive Blade",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 170
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 2
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "DEFENSIVE"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_STONE_BLADE"
+   ],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

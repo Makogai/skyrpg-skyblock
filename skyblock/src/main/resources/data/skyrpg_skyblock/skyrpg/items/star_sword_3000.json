@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "STAR_SWORD_3000",
+ "base": "minecraft:golden_sword",
+ "name": "Sword of the Stars 3000",
+ "rarity": "unobtainable",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 999999
+ },
+ "hypixel": {
+  "enchantments": {
+   "sharpness": 25
+  }
+ }
+}

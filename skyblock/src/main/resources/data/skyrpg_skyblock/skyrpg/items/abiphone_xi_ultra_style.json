@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ABIPHONE_XI_ULTRA_STYLE",
+ "base": "minecraft:paper",
+ "name": "Abiphone XI Green",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 8,
+   "max_musicdiscs": 5,
+   "model": "abiphone_xi"
+  },
+  "double_tap_to_drop": true
+ }
+}

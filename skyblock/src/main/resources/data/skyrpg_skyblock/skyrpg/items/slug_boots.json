@@ -1,0 +1,208 @@
+{
+ "skyblock_id": "SLUG_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Slug Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 20,
+  "health": 150,
+  "defense": 125,
+  "sea_creature_chance": 3
+ },
+ "color": "#276114",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "rarity_salvageable": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 27
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 15
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 50
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 60
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 90
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 350
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LAVA_SEA_CREATURE": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

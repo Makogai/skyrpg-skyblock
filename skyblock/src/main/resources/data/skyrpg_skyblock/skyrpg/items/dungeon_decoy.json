@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DUNGEON_DECOY",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Decoy",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 500
+ }
+}

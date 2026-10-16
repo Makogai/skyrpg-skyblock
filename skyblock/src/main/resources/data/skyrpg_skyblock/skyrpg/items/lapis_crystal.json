@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "LAPIS_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Lapis Crystal",
+ "rarity": "uncommon",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 50
+ }
+}

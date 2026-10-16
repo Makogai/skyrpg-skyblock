@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "GOBLIN_OMELETTE_PESTO",
+ "base": "minecraft:paper",
+ "name": "Pesto Goblin Omelette",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7§oMay cause nausea",
+ "hypixel": {
+  "npc_sell_price": 20840,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 6,
+   "game_stage": "SKILLED"
+  }
+ }
+}

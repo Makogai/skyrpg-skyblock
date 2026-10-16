@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "DECENT_BOW",
+ "base": "minecraft:bow",
+ "name": "Decent Bow",
+ "rarity": "uncommon",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 45
+ },
+ "hypixel": {
+  "npc_sell_price": 99,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

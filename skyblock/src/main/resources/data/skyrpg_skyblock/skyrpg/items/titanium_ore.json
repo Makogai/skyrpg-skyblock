@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TITANIUM_ORE",
+ "base": "minecraft:paper",
+ "name": "Titanium",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Its strength and resistance to corrosion are the highest of any metallic element.",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

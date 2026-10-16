@@ -1,0 +1,74 @@
+{
+ "skyblock_id": "LEAPING_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Leaping Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 150,
+  "strength": 100,
+  "crit_damage": 25,
+  "weapon_ability_damage": 350
+ },
+ "hypixel": {
+  "npc_sell_price": 375000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 20
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {
+    "LEAPING_SWORD": "SILK_EDGE_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

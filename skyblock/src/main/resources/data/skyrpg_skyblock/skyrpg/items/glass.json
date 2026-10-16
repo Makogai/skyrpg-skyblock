@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GLASS",
+ "base": "minecraft:glass",
+ "name": "Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

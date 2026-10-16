@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "INFINIDIRT_WAND",
+ "base": "minecraft:stick",
+ "name": "InfiniDirt™ Wand",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "can_auction": false,
+  "can_trade": false
+ }
+}

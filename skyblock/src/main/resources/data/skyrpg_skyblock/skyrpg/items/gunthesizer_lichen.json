@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GUNTHESIZER_LICHEN",
+ "base": "minecraft:green_dye",
+ "name": "Gunthesizer Lichen",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

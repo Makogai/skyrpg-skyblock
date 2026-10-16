@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "SAPPHIRE_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Sapphire Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

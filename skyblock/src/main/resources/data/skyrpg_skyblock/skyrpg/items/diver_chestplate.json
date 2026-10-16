@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "DIVER_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Diver's Shirt",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 200,
+  "defense": 100,
+  "sea_creature_chance": 2,
+  "pressure_resistance": 15,
+  "respiration": 3
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "DIVER": "ABYSSAL"
+   },
+   "armor_set_donation_xp": {
+    "DIVER": 10
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

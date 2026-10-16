@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ENCHANTED_BOOKSHELF",
+ "base": "minecraft:paper",
+ "name": "Enchanted Bookshelf",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "force_wipe_recomb": true,
+  "npc_sell_price": 2700,
+  "soulbound": "COOP"
+ }
+}

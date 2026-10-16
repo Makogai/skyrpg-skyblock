@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WOODEN_BAIT",
+ "base": "minecraft:paper",
+ "name": "Wooden Bait",
+ "rarity": "uncommon",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

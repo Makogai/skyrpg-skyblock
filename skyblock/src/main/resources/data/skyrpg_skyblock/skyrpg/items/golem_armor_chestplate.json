@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "GOLEM_ARMOR_CHESTPLATE",
+ "base": "minecraft:iron_chestplate",
+ "name": "Golem Armor Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 65,
+  "defense": 90
+ },
+ "hypixel": {
+  "npc_sell_price": 19200,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GOLEM_ARMOR": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

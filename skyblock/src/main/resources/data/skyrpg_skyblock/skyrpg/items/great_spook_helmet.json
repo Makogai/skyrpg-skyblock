@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GREAT_SPOOK_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Great Spook Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "fear": 5
+ },
+ "color": "#993399",
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

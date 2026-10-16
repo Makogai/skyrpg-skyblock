@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SNOWMAN_MASK",
+ "base": "minecraft:player_head",
+ "name": "Snowman Mask",
+ "rarity": "rare",
+ "category": "CARNIVAL_MASK",
+ "type": "Carnival Mask",
+ "stats": {
+  "health": 10
+ },
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxNDI0NjMwMzE1MywKICAicHJvZmlsZUlkIiA6ICJlY2Q0ZTI4NjdkMmE0MTE2OTljYzlkMjMzYmM1YmEyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJSYXRlZEtub3QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMyMWMxMmQ0ZDg4MjczYWJiYTRmYTJmNWY5YTkwZjNkMTQ0NTIyOWRjN2NjYWE1NzExOTc1YzhiMGE4MzNiNyIKICAgIH0KICB9Cn0=",
+  "signature": "uI7IwIp5ZBYpRVO4s5VNOSw7xSusfwT6DRFmC9XyANF3K/NQRxIFcDzE124ZfpSR+c923HVPKnWPcSyh67G4+cSjV1/2KZBSBPxPnU/SybkTITEWxKENsQbbK4Gfz1fx9MnZYp/u/C8dXX76cMgNVSCniMkWNhE0Isy+lHVFwH/Rn3axRw3cRGi53A3unKMeiMnnU7yKXajunsZrVrPXdS4y/ynh7lhQ+j6k/iRu7QwydWDxxGMJBcCpQUBAP81GCgwFh8N9x1K4ru2yrdrgbtHQMwXd78ifuage+qqLsESjLIK0cp//3iztbaK46htSI2sNaeRmKdL+Iye98DalDQRG8RKfwBbCzQDk7Lr4h/K4hg2VRuTTagW9fF6FIxCrb7+bZX9dZ8exRgggJSubrzjHZjCSyRbPd84PaXh2qMHSHmfdICuBivnKwN+tQsJj0ChzriA16eenO1imE8j8bP0NcZTmQdBdJdIgTtsiFqLkFr9fzUWL69lnQCbBV7ySBImaXPJnlMe8gKENdkbc+CAtPi/nduscXbMbHg47jS1fCuE988tfYHkGWIENPjSSDdwDMfk0tj9c5V0BVYbhF9wqsFXJNbhw8TF0dWIskwnk6Rj8TtD9C56oLX+vuXxNvVivDkzbVL4/9Hf/KsRoMvHQ14Tdry5nvSpxvTjef0E="
+ },
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

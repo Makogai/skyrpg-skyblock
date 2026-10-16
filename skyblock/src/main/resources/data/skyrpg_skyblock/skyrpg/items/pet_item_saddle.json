@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_SADDLE",
+ "base": "minecraft:saddle",
+ "name": "Saddle",
+ "rarity": "uncommon",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

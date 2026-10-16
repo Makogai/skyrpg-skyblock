@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "PROMISING_SPADE",
+ "base": "minecraft:iron_shovel",
+ "name": "Promising Shovel",
+ "rarity": "uncommon",
+ "category": "SPADE",
+ "type": "Spade",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "MINING",
+   "game_stage": "STARTER"
+  }
+ }
+}

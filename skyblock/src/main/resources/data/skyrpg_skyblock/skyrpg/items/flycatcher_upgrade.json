@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FLYCATCHER_UPGRADE",
+ "base": "minecraft:cobweb",
+ "name": "Flycatcher",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 6
+   }
+  ]
+ }
+}

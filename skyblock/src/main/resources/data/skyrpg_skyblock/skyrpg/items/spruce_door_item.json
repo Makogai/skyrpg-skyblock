@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SPRUCE_DOOR_ITEM",
+ "base": "minecraft:spruce_door",
+ "name": "Spruce Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

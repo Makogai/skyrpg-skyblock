@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "POLISHED_PUMPKIN",
+ "base": "minecraft:paper",
+ "name": "Polished Pumpkin",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 256000,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 7680.0
+   }
+  }
+ }
+}

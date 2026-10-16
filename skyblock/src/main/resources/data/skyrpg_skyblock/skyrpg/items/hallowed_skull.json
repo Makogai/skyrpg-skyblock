@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "HALLOWED_SKULL",
+ "base": "minecraft:paper",
+ "name": "Hallowed Skull",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Incredibly heavy. Put one on each side of a stick and you just crafted yourself very stylish dumbbells.",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

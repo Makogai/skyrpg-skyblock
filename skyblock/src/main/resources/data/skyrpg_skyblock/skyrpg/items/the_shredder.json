@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "THE_SHREDDER",
+ "base": "minecraft:fishing_rod",
+ "name": "Shredder",
+ "rarity": "legendary",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 120,
+  "ferocity": 50,
+  "fishing_speed": 115
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   }
+  ]
+ }
+}

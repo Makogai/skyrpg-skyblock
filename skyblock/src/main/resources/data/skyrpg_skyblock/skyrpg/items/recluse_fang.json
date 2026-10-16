@@ -1,0 +1,72 @@
+{
+ "skyblock_id": "RECLUSE_FANG",
+ "base": "minecraft:iron_sword",
+ "name": "Recluse Fang",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 60,
+  "strength": 30,
+  "crit_damage": 10
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 2
+   }
+  ],
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 250
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "RECLUSE_FANG": "TARANTULA_FANG"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

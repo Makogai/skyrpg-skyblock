@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "LAPIS_ARMOR_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Lapis Armor Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 40,
+  "mining_speed": 20,
+  "mining_fortune": 2
+ },
+ "color": "#0000FF",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "MINING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LAPIS_ARMOR": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

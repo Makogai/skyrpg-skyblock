@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "TROPHY_LINE",
+ "base": "minecraft:paper",
+ "name": "Trophy Line",
+ "rarity": "rare",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   },
+   {
+    "type": "COLLECTION",
+    "collection": "LOTUS",
+    "tier": 9
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "FISHING",
+   "game_stage": "EXPERT"
+  }
+ }
+}

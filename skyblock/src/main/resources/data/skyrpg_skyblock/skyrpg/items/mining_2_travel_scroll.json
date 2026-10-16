@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "MINING_2_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Deep Caverns",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

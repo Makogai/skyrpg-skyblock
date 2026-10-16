@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CHUM",
+ "base": "minecraft:paper",
+ "name": "Chum",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "WEAK_WOLF_CATALYST",
+ "base": "minecraft:bone",
+ "name": "Weak Wolf Catalyst",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

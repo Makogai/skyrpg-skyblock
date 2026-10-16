@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "JUICY_NOZZLE",
+ "base": "minecraft:paper",
+ "name": "Juicy Nozzle",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Can be used at §aSkyMart §7to upgrade the §aSprayonator §7to the §9Juicy Sprayonator§7.",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HUB_WIZARD_TOWER_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the Wizard Tower",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

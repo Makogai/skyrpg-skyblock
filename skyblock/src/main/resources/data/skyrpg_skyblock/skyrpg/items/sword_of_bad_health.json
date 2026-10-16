@@ -1,0 +1,175 @@
+{
+ "skyblock_id": "SWORD_OF_BAD_HEALTH",
+ "base": "minecraft:wooden_sword",
+ "name": "Sword of Bad Health",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 200,
+  "strength": 50,
+  "crit_damage": 50
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "npc_sell_price": 4000,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 5
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 50
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 60
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 90
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "SPECTRE_DUST",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 350
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

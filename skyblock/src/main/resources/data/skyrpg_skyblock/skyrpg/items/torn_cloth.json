@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TORN_CLOTH",
+ "base": "minecraft:paper",
+ "name": "Torn Cloth",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A torn article of men's clothing, waterlogged and mossy. Probably too late to ask for a refund.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

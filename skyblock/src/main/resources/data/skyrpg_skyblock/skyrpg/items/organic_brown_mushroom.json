@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_BROWN_MUSHROOM",
+ "base": "minecraft:brown_mushroom",
+ "name": "Organic Brown Mushroom",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

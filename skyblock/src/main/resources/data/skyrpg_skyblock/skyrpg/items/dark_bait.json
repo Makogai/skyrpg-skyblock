@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DARK_BAIT",
+ "base": "minecraft:paper",
+ "name": "Dark Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

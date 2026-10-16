@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "ANNIHILATION_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Annihilation Cloak",
+ "rarity": "legendary",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "strength": 20,
+  "crit_damage": 20,
+  "health": 80,
+  "magic_find": 2,
+  "foraging_wisdom": 2
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 16,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

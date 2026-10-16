@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SADDLE",
+ "base": "minecraft:saddle",
+ "name": "Saddle",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "soulbound": "COOP"
+ }
+}

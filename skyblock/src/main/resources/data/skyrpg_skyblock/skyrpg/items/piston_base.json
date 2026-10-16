@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PISTON_BASE",
+ "base": "minecraft:piston",
+ "name": "Piston",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PLANT_DIAGNOSTICS_TOOL",
+ "base": "minecraft:paper",
+ "name": "Plant Diagnostics Tool",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {},
+   "game_stage": "AMATEUR"
+  }
+ }
+}

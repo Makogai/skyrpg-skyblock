@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_12",
+ "base": "minecraft:music_disc_wait",
+ "name": "Music Disc - Wait",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

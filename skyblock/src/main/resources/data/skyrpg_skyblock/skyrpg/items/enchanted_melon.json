@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_MELON",
+ "base": "minecraft:melon_slice",
+ "name": "Enchanted Melon Slice",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 250.0
+   },
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

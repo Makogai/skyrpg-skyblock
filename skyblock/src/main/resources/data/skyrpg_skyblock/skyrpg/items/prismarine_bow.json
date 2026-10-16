@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "PRISMARINE_BOW",
+ "base": "minecraft:bow",
+ "name": "Prismarine Bow",
+ "rarity": "uncommon",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 50,
+  "strength": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 120,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

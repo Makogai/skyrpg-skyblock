@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "EMPEROR_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Emperor Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "color": "#990D00"
+}

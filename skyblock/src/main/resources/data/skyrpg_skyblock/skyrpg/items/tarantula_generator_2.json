@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "TARANTULA_GENERATOR_2",
+ "base": "minecraft:player_head",
+ "name": "Tarantula Minion II",
+ "rarity": "rare",
+ "type": "",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxOTQzNzYzNzE5MywKICAicHJvZmlsZUlkIiA6ICI1ZjU5NmViY2JlOTQ0NmQxYmI0M2JlNGYzZjRiOGJlNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJUZWlsMHNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3OGZlYTIzOWJiMzg4MWFlNTNkNmM3MzViOGFmNjlkOGM2YjQ3N2MwZjVjMzRiYzdjYmVkNTc5Mjg2OWNhNjciLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "sV2KEx7JQHFjnWiOuyNYwapxF3JGTAZJen3I+4Gpdq1w/Yq5NFCgnlhh1Tops9EHnTvSNrrOZhmK6O32qeZvDO3XYrpczX+BahAO7JlsCPAhpvzO7vGrIJOQibnsyZq2nLKuv1cbbePyoNedL73kMU0pPfW+PNPvS8w8s1tnq2GqbZkNs3fikT6YvFK37n3x199+EnojvImY/7YS8kLxn8aeSVtYYaZhyrhf5EKyELNrv486rAweYngd1uTHFzCYSLP2nsOkxyuDD1IEnmkcSDdMNRvoBUHnlFHWsSfmyG2nULkmdeyUz6+4X9tp47r4fGz+8kBN7bh70c5ArQ2gXW5dh28o3BqBZYM9YuZsykNkGBzIsRT5bOctz4vph54i9lGwoBom8lqVPpx4RMnfe1nUvkzpRfUcrx/6/YOL5aT0F0wpfsHDhbfUBqyjS9kPFWlDJY/u1Kfa7P/kurQLfN1zgMKY/nUlfoZrduFG3Fsk/+KPH8qbN9v/Yt+HKz8Hs7kicaIIHyS+bg/xdBVw2UCdwWCx0ucTJXs2/V1gUv28E5O1/01CJcn92LXck+gmBKI1a+WChtnBpqJ5/5fAewc15lIS9rLS6YuSQc/GgzFW0YId9dwQkLsw9mHBzB01IebSrvzVFrPdpbvi5SjOAcLKxnHXnsl2jZNKcFMCXxs="
+ },
+ "hypixel": {
+  "generator": "TARANTULA",
+  "generator_tier": 2
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "SKELETOR_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Skeletor Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "crit_chance": 2,
+  "crit_damage": 20,
+  "health": 22,
+  "defense": 36
+ },
+ "color": "#918F89",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 15
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETOR": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    36,
+    38,
+    42,
+    46,
+    50,
+    54,
+    58,
+    63,
+    69,
+    74
+   ],
+   "HEALTH": [
+    22,
+    24,
+    26,
+    28,
+    31,
+    34,
+    36,
+    40,
+    43,
+    47
+   ],
+   "CRITICAL_DAMAGE": [
+    20,
+    22,
+    24,
+    26,
+    28,
+    31,
+    33,
+    36,
+    40,
+    43
+   ],
+   "CRITICAL_CHANCE": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    4
+   ]
+  }
+ }
+}

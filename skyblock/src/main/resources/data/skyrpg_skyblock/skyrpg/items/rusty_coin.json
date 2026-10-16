@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RUSTY_COIN",
+ "base": "minecraft:paper",
+ "name": "Rusty Coin",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§8§oCompletely covered in copious amounts of rust and grime.",
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

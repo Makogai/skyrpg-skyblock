@@ -1,0 +1,176 @@
+{
+ "skyblock_id": "STAFF_OF_THE_VOLCANO",
+ "base": "minecraft:wheat",
+ "name": "Staff of the Volcano",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "damage": 60,
+  "weapon_ability_damage": 24000,
+  "intelligence": 150
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "ability_damage_scaling": 0.3,
+  "npc_sell_price": 5000,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "CRIMSON",
+    "amount": 10
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 15
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 25
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 35
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 350
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

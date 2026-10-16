@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BONE",
+ "base": "minecraft:bone",
+ "name": "Bone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

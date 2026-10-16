@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "MAGE_DUNGEON_ABILITY_1",
+ "base": "minecraft:bricks",
+ "name": "Pop-up Wall",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_10",
+ "base": "minecraft:music_disc_ward",
+ "name": "Music Disc - Ward",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

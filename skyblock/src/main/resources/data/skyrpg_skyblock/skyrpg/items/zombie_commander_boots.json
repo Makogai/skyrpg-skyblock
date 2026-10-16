@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "ZOMBIE_COMMANDER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Zombie Commander Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 8,
+  "health": 32,
+  "defense": 17,
+  "intelligence": 4
+ },
+ "color": "#D51230",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_COMMANDER": 8
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    17,
+    19,
+    22,
+    23,
+    26,
+    30,
+    32,
+    36,
+    41,
+    45
+   ],
+   "HEALTH": [
+    32,
+    34,
+    38,
+    43,
+    48,
+    52,
+    59,
+    65,
+    72,
+    80
+   ],
+   "STRENGTH": [
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    19,
+    22
+   ],
+   "INTELLIGENCE": [
+    4,
+    5,
+    5,
+    6,
+    7,
+    7,
+    8,
+    8,
+    10,
+    11
+   ]
+  }
+ }
+}

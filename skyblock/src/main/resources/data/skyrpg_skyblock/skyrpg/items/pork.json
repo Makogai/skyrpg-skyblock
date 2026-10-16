@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PORK",
+ "base": "minecraft:porkchop",
+ "name": "Raw Porkchop",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.2,
+    "COLLECT_ITEM": 2.0
+   }
+  }
+ }
+}

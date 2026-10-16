@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "REKINDLED_EMBER_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Rekindled Ember Fragment",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

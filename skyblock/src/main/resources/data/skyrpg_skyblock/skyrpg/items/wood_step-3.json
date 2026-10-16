@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP:3",
+ "base": "minecraft:jungle_slab",
+ "name": "Jungle Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

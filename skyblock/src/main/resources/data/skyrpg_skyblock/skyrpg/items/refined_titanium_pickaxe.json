@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "REFINED_TITANIUM_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Polished Titanium Pickaxe",
+ "rarity": "rare",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 65,
+  "mining_speed": 200,
+  "breaking_power": 6
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 14500,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "MINING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

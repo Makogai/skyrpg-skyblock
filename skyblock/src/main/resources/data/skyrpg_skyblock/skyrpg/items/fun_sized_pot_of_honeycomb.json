@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FUN_SIZED_POT_OF_HONEYCOMB",
+ "base": "minecraft:paper",
+ "name": "Fun-Sized Pot of Honeycomb",
+ "rarity": "uncommon",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "HONEYCOMB",
+    "tier": 1
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FROGS_SPIRIT_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Frog's Spirit",
+ "rarity": "uncommon",
+ "category": "ABILITY_SCROLL",
+ "type": "Ability Scroll",
+ "glint": true,
+ "unstackable": true
+}

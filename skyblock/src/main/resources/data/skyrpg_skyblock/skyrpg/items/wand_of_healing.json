@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "WAND_OF_HEALING",
+ "base": "minecraft:stick",
+ "name": "Wand of Healing",
+ "rarity": "uncommon",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 1
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "WAND_OF_HEALING": "WAND_OF_MENDING"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

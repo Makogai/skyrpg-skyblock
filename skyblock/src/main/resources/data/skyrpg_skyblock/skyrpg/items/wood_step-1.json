@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP:1",
+ "base": "minecraft:spruce_slab",
+ "name": "Spruce Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

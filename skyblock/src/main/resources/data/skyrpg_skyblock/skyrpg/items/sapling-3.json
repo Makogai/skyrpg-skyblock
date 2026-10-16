@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAPLING:3",
+ "base": "minecraft:jungle_sapling",
+ "name": "Jungle Sapling",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25
+ }
+}

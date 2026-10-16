@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BUBBA_BLISTER",
+ "base": "minecraft:paper",
+ "name": "Bubba Blister",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "motes_sell_price": 10000,
+  "npc_sell_price": 10000,
+  "rift_transferrable": true,
+  "lose_motes_value_on_transfer": true,
+  "origin": "RIFT"
+ }
+}

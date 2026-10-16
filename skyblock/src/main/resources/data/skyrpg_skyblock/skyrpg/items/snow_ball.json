@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SNOW_BALL",
+ "base": "minecraft:snowball",
+ "name": "Snowball",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

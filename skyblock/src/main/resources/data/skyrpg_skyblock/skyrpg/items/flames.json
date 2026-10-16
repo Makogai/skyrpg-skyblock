@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "FLAMES",
+ "base": "minecraft:blaze_powder",
+ "name": "Flames",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Some say that the same substance can be found in the abdomen of Dragons, allowing them to breathe fire. Cinderbats are much cuter though.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

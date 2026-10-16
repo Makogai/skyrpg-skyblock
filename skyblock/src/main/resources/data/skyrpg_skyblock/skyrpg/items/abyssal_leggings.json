@@ -1,0 +1,64 @@
+{
+ "skyblock_id": "ABYSSAL_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Abyssal Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 150,
+  "defense": 170,
+  "sea_creature_chance": 2,
+  "pressure_resistance": 20,
+  "respiration": 5
+ },
+ "color": "#0E666D",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 22
+   }
+  ],
+  "npc_sell_price": 15000,
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   },
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ABYSSAL": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

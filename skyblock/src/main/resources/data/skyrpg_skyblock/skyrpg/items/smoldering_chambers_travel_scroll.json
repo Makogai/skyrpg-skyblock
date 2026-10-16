@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SMOLDERING_CHAMBERS_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the Smoldering Tomb",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 4
+   }
+  ]
+ }
+}

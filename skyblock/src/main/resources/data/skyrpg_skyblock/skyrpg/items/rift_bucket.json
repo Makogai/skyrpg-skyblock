@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RIFT_BUCKET",
+ "base": "minecraft:water_bucket",
+ "name": "Plumber's Bucket",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

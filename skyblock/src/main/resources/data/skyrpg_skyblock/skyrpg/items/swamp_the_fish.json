@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SWAMP_THE_FISH",
+ "base": "minecraft:cooked_salmon",
+ "name": "Swamp the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 50000
+ }
+}

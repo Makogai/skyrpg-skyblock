@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOTUS_GOLD",
+ "base": "minecraft:paper",
+ "name": "Gold Lotus",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 96000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "CONDENSED_HELIANTHUS",
+ "base": "minecraft:paper",
+ "name": "Condensed Helianthus",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7The Crème de la Crop",
+ "hypixel": {
+  "npc_sell_price": 2475000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "sort_by_category": true
+   }
+  ]
+ }
+}

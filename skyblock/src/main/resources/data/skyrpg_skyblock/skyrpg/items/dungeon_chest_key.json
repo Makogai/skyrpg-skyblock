@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "DUNGEON_CHEST_KEY",
+ "base": "minecraft:paper",
+ "name": "Dungeon Chest Key",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "dungeon_item": true,
+  "can_place": false,
+  "can_interact": false
+ }
+}

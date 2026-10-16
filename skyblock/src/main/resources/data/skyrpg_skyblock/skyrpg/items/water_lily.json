@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "WATER_LILY",
+ "base": "minecraft:lily_pad",
+ "name": "Lily Pad",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 0.8
+   }
+  }
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "skyblock_id": "ZOMBIE_KNIGHT_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Zombie Knight Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 20,
+  "defense": 96,
+  "speed": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 320
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 14
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_KNIGHT": 7
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "WALK_SPEED": [
+    5,
+    5,
+    5,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    8
+   ],
+   "DEFENSE": [
+    96,
+    105,
+    115,
+    123,
+    135,
+    148,
+    161,
+    176,
+    192,
+    209
+   ],
+   "STRENGTH": [
+    20,
+    22,
+    23,
+    26,
+    28,
+    31,
+    33,
+    36,
+    40,
+    43
+   ]
+  }
+ }
+}

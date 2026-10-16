@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PET_ITEM_VAMPIRE_FANG",
+ "base": "minecraft:ghast_tear",
+ "name": "Vampire Fang",
+ "rarity": "mythic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 500000
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "PELT_BELT",
+ "base": "minecraft:paper",
+ "name": "Pelt Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "farming_wisdom": 1
+ },
+ "hypixel": {
+  "item_specific": {
+   "speed_on_farming_island": 30,
+   "extra_pelts": 1
+  },
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "HUNTING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

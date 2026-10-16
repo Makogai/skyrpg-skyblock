@@ -1,0 +1,7 @@
+{
+ "skyblock_id": "WEATHER_NODE",
+ "base": "minecraft:lapis_block",
+ "name": "Weather Node",
+ "rarity": "uncommon",
+ "type": ""
+}

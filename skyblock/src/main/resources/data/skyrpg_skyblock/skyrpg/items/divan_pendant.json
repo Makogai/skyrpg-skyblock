@@ -1,0 +1,53 @@
+{
+ "skyblock_id": "DIVAN_PENDANT",
+ "base": "minecraft:paper",
+ "name": "Pendant of Divan",
+ "rarity": "legendary",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "mining_speed": 100,
+  "mining_fortune": 25,
+  "cold_resistance": 10
+ },
+ "description": "§8§oAn item treasured by the greatest Dwarf who ever lived. Why would he leave it behind?",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 10
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "GEMSTONE_CHAMBER",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "armor_set_donation_xp": {
+    "DIVAN_EQUIPMENT": 25
+   },
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

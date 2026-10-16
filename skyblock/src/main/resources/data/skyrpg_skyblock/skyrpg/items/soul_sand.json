@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SOUL_SAND",
+ "base": "minecraft:soul_sand",
+ "name": "Soul Sand",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_FARMING_SKILL_BOOST_COMMON",
+ "base": "minecraft:iron_hoe",
+ "name": "Farming Exp Boost",
+ "rarity": "common",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

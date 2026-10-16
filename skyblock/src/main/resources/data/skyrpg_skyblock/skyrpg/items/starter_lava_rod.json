@@ -1,0 +1,36 @@
+{
+ "skyblock_id": "STARTER_LAVA_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Starter Lava Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 50,
+  "strength": 50,
+  "fishing_speed": 10,
+  "trophy_fish_chance": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 10
+   }
+  ],
+  "soulbound": "COOP",
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FISHING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE"
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WOLF_TOOTH",
+ "base": "minecraft:ghast_tear",
+ "name": "Wolf Tooth",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

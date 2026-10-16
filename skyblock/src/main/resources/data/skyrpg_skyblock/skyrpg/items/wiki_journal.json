@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WIKI_JOURNAL",
+ "base": "minecraft:book",
+ "name": "Wiki Journal",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "COOP",
+  "museum": true,
+  "has_uuid": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

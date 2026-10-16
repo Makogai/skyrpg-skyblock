@@ -1,0 +1,189 @@
+{
+ "skyblock_id": "HOT_AURORA_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Hot Aurora Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 258,
+  "defense": 69,
+  "intelligence": 221
+ },
+ "color": "#3F56FB",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 27
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "HOT"
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 170
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 190
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 215
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 240
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 270
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 340
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 390
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 440
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ]
+  ],
+  "prestige": {
+   "item_id": "BURNING_AURORA_LEGGINGS",
+   "costs": [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 800
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 20
+    }
+   ]
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ]
+ }
+}

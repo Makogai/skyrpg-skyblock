@@ -1,0 +1,97 @@
+{
+ "skyblock_id": "ROTTEN_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Rotten Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 15,
+  "health": 110
+ },
+ "color": "#017D31",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 160
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 1
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ROTTEN": 2
+   },
+   "game_stage": "AMATEUR"
+  },
+  "tiered_stats": {
+   "HEALTH": [
+    110,
+    120,
+    131,
+    142,
+    155,
+    169,
+    184,
+    201,
+    219,
+    239
+   ],
+   "STRENGTH": [
+    15,
+    16,
+    18,
+    19,
+    21,
+    23,
+    25,
+    27,
+    30,
+    33
+   ]
+  }
+ }
+}

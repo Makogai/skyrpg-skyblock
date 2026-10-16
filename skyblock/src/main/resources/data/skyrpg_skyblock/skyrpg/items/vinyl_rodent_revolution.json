@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_RODENT_REVOLUTION",
+ "base": "minecraft:music_disc_13",
+ "name": "Rodent Revolution Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

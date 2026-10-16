@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DEAD_PLANT",
+ "base": "minecraft:dead_bush",
+ "name": "Dead Plant",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Once full of life, now a reminder of your terrible gardening skills.",
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

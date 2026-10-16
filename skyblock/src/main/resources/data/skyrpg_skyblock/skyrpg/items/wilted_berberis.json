@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WILTED_BERBERIS",
+ "base": "minecraft:dead_bush",
+ "name": "Wilted Berberis",
+ "rarity": "common",
+ "type": "",
+ "description": "§7The plant equivalent of an alien zombie.",
+ "hypixel": {
+  "origin": "RIFT",
+  "can_place": false
+ }
+}

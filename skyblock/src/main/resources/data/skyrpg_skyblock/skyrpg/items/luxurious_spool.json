@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "LUXURIOUS_SPOOL",
+ "base": "minecraft:paper",
+ "name": "Luxurious Spool",
+ "rarity": "uncommon",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "SPIDER",
+    "amount": 1
+   }
+  ],
+  "rarity_salvageable": true
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NETHER_STAR",
+ "base": "minecraft:nether_star",
+ "name": "Nether Star",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

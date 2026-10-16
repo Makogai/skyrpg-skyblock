@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "REDSTONE_LAMP_OFF",
+ "base": "minecraft:redstone_lamp",
+ "name": "Redstone Lamp",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

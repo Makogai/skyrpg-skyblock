@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DEEPFRIES",
+ "base": "minecraft:paper",
+ "name": "Deepfries",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

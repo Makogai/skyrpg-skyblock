@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ROSEWATER_FLASK",
+ "base": "minecraft:paper",
+ "name": "Rosewater Flask",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 400000
+ }
+}

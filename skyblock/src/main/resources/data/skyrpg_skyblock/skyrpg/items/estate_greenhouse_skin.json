@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "ESTATE_GREENHOUSE_SKIN",
+ "base": "minecraft:quartz_block",
+ "name": "Estate Greenhouse Skin",
+ "rarity": "epic",
+ "category": "COSMETIC",
+ "type": "Cosmetic"
+}

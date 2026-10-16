@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_PLATE",
+ "base": "minecraft:oak_pressure_plate",
+ "name": "Wooden Pressure Plate",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

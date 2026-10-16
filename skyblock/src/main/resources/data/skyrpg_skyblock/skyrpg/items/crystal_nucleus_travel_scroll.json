@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CRYSTAL_NUCLEUS_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the Crystal Nucleus",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

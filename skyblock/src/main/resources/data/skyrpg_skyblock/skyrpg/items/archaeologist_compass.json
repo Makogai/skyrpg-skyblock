@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "ARCHAEOLOGIST_COMPASS",
+ "base": "minecraft:compass",
+ "name": "Archaeologist's Compass",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "soulbound": "SOLO",
+  "has_uuid": true
+ }
+}

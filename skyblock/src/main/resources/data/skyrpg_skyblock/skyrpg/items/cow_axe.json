@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "COW_AXE",
+ "base": "minecraft:stone_axe",
+ "name": "Advanced Cow Axe",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "donation_xp": 2,
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

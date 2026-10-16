@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_FEATHER",
+ "base": "minecraft:feather",
+ "name": "Enchanted Feather",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

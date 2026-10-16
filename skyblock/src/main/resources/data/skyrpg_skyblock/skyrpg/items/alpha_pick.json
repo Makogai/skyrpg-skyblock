@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ALPHA_PICK",
+ "base": "minecraft:wooden_pickaxe",
+ "name": "Pioneer Pickaxe",
+ "rarity": "special",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "mining_speed": 1,
+  "breaking_power": 1
+ },
+ "description": "§8§oThe very first pickaxe model! Invented by the famous Thomas Pickson.",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

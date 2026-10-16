@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "REDSTONE_TIPPED_ARROW",
+ "base": "minecraft:arrow",
+ "name": "Redstone-tipped Arrow",
+ "rarity": "uncommon",
+ "category": "ARROW",
+ "type": "Arrow",
+ "stats": {
+  "damage": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 13
+   },
+   {
+    "type": "TARGET_PRACTICE",
+    "mode": "I"
+   }
+  ]
+ }
+}

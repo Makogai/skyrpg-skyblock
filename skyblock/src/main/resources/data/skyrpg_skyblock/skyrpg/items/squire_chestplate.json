@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "SQUIRE_CHESTPLATE",
+ "base": "minecraft:iron_chestplate",
+ "name": "Squire Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 5,
+  "health": 40,
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 4000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "SQUIRE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

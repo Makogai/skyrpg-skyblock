@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRIA_PRIZE",
+ "base": "minecraft:paper",
+ "name": "Miria's Prize",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Used to purchase certain items from §bMiria's Shop§7!",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

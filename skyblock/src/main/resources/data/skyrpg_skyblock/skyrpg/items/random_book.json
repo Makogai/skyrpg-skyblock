@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "RANDOM_BOOK",
+ "base": "minecraft:enchanted_book",
+ "name": "Random Book",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true
+}

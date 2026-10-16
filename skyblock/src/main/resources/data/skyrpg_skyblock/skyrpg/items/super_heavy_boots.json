@@ -1,0 +1,97 @@
+{
+ "skyblock_id": "SUPER_HEAVY_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Super Heavy Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 63,
+  "speed": -10
+ },
+ "color": "#E6E6E6",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 15
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SUPER_HEAVY": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "WALK_SPEED": [
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10,
+    -10
+   ],
+   "DEFENSE": [
+    63,
+    70,
+    77,
+    85,
+    95,
+    105,
+    117,
+    130,
+    144,
+    160
+   ]
+  }
+ }
+}

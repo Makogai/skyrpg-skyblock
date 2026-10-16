@@ -1,0 +1,230 @@
+{
+ "skyblock_id": "MAGMA_LORD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Magma Lord Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 10,
+  "crit_damage": 35,
+  "health": 250,
+  "defense": 200,
+  "sea_creature_chance": 4.5
+ },
+ "color": "#6F0F08",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 45
+   }
+  ],
+  "npc_sell_price": 350000,
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 160
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 240
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 320
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 7
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 800
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 12
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_LORD_FRAGMENT",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1600
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 4
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MAGMA_LORD": 20
+   },
+   "game_stage": "MASTER"
+  }
+ }
+}

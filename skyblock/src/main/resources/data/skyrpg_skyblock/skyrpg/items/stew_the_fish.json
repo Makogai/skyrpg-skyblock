@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STEW_THE_FISH",
+ "base": "minecraft:cod",
+ "name": "Stew the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

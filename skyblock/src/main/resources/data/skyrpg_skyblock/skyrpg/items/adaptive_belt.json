@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "ADAPTIVE_BELT",
+ "base": "minecraft:paper",
+ "name": "Adaptive Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "strength": 5,
+  "health": 10,
+  "defense": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 0,
+  "dungeon_item": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 75
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 2
+   }
+  ],
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ADAPTIVE": 7
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

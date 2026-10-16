@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "FANCY_TUXEDO_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Fancy Tuxedo Jacket",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "crit_damage": 80,
+  "intelligence": 150
+ },
+ "color": "#332A2A",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "FANCY_TUXEDO": "ELEGANT_TUXEDO"
+   },
+   "armor_set_donation_xp": {
+    "FANCY_TUXEDO": 4
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

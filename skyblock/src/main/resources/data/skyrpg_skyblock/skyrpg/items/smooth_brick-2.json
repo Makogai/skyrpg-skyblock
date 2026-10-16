@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMOOTH_BRICK:2",
+ "base": "minecraft:cracked_stone_bricks",
+ "name": "Cracked Stone Bricks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

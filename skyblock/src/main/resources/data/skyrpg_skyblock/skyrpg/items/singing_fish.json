@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "SINGING_FISH",
+ "base": "minecraft:salmon",
+ "name": "Singing Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

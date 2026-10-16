@@ -1,0 +1,34 @@
+{
+ "skyblock_id": "SNORKELING_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Snorkeling Pants",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 75,
+  "defense": 85,
+  "pressure_resistance": 10
+ },
+ "color": "#000000",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 16
+   }
+  ],
+  "npc_sell_price": 15000,
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "SNORKELING": "DIVER"
+   },
+   "armor_set_donation_xp": {
+    "SNORKELING": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "BAT_PERSON_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Bat Person Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 30
+ },
+ "color": "#000000",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BAT_PERSON": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

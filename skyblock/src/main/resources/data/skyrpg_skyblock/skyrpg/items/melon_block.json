@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MELON_BLOCK",
+ "base": "minecraft:melon",
+ "name": "Melon",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 18,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 4.0,
+    "MINION_STORAGE": 0.9
+   }
+  }
+ }
+}

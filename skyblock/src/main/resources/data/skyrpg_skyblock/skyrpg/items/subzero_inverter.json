@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SUBZERO_INVERTER",
+ "base": "minecraft:paper",
+ "name": "Subzero Inverter",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Drops extremely rarely from the Inferno Demonlord.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

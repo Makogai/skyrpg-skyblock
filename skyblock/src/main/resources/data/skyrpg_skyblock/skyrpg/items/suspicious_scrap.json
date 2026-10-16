@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SUSPICIOUS_SCRAP",
+ "base": "minecraft:paper",
+ "name": "Suspicious Scrap",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 5
+   }
+  ]
+ }
+}

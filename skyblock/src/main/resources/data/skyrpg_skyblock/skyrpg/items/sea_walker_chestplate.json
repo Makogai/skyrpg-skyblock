@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SEA_WALKER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Sea Walker Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "color": "#10616E",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

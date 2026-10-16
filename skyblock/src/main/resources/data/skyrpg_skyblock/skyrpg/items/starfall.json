@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STARFALL",
+ "base": "minecraft:paper",
+ "name": "Starfall",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7No one knows how and when the Starfall appeared. All we know is that it was already there when the Dwarves discovered the cavern.",
+ "hypixel": {
+  "npc_sell_price": 15
+ }
+}

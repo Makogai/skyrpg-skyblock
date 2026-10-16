@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_HONEYCOMB",
+ "base": "minecraft:paper",
+ "name": "Enchanted Honeycomb",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A block of sparkling honey. It smells incredible.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 16000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

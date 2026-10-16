@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "PERFECT_BOOTS_11",
+ "base": "minecraft:diamond_boots",
+ "name": "Perfect Boots - Tier XI",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 290
+ },
+ "hypixel": {
+  "npc_sell_price": 4505600,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 35
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 90
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 140
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 19
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ]
+ }
+}

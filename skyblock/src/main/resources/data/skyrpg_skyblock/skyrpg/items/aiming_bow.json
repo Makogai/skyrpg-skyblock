@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "AIMING_BOW",
+ "base": "minecraft:bow",
+ "name": "Aiming Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 340
+ }
+}

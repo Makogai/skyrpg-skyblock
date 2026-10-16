@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "FARM_SUIT_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Farmhand Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 10,
+  "farming_fortune": 5
+ },
+ "color": "#FDE862",
+ "hypixel": {
+  "npc_sell_price": 25,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FARM_SUIT": "FARM_ARMOR"
+   },
+   "armor_set_donation_xp": {
+    "FARM_SUIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "GHOUL_BUSTER",
+ "base": "minecraft:iron_hoe",
+ "name": "Ghoul Buster",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 140,
+  "strength": 90,
+  "crit_damage": 25
+ },
+ "hypixel": {
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

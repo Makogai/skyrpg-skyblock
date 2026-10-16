@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SUGAR",
+ "base": "minecraft:sugar",
+ "name": "Sugar",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   }
+  }
+ }
+}

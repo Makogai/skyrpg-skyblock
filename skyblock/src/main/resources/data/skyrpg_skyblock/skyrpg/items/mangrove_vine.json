@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "MANGROVE_VINE",
+ "base": "minecraft:paper",
+ "name": "Moonglade Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "foraging_fortune": 5,
+  "sweep": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 51440,
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "donation_xp": 5,
+   "parent": {
+    "MANGROVE_VINE": "TORRHUS_BELT"
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TRAP_DOOR",
+ "base": "minecraft:oak_trapdoor",
+ "name": "Wooden Trapdoor",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1.5
+ }
+}

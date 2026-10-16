@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_WINGS_OF_HARMONY",
+ "base": "minecraft:music_disc_wait",
+ "name": "Wings of Harmony Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

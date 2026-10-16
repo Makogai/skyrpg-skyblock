@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SPIRIT_WING",
+ "base": "minecraft:paper",
+ "name": "Spirit Wing",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Spirits of bats often take refuge in their own wings. They sometimes grow in power and gain tremendous magical properties.",
+ "hypixel": {
+  "dungeon_item": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

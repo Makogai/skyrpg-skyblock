@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RAINBOW_FEATHER",
+ "base": "minecraft:paper",
+ "name": "Rainbow Feather",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

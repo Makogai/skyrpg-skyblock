@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "HURRICANE_BOW",
+ "base": "minecraft:bow",
+ "name": "Hurricane Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 120,
+  "strength": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 15500,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

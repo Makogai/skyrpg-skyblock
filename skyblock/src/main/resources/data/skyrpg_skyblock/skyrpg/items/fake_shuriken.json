@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "FAKE_SHURIKEN",
+ "base": "minecraft:nether_star",
+ "name": "Extremely Real Shuriken",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "rift_transferrable": true,
+  "can_trade": true,
+  "can_auction": true
+ }
+}

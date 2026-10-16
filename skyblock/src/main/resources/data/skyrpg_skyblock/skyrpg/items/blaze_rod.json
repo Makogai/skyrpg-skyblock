@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "BLAZE_ROD",
+ "base": "minecraft:blaze_rod",
+ "name": "Blaze Rod",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 0.3
+   },
+   "fishing": {
+    "FISH_ITEM": 50.0
+   }
+  }
+ }
+}

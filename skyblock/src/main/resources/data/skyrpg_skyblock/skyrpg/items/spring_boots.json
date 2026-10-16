@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SPRING_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Spring Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "unstackable": true,
+ "hypixel": {
+  "enchantments": {
+   "feather_falling": 20
+  },
+  "museum": true
+ }
+}

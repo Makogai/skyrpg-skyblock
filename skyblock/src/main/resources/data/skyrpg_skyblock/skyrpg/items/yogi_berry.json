@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "YOGI_BERRY",
+ "base": "minecraft:paper",
+ "name": "Yogi Berry",
+ "rarity": "special",
+ "type": "",
+ "description": "§8§oA large, tasty berry. Whatever critter eats this won't be hungry anytime soon.",
+ "hypixel": {
+  "safari_only": true
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "QUARTZ_STAIRS",
+ "base": "minecraft:quartz_stairs",
+ "name": "Quartz Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

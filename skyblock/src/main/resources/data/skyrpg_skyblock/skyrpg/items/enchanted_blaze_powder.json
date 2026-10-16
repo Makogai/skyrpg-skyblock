@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "ENCHANTED_BLAZE_POWDER",
+ "base": "minecraft:blaze_powder",
+ "name": "Enchanted Blaze Powder",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1440,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 500.0
+   },
+   "combat": {
+    "MINION_STORAGE": 48.0
+   },
+   "fishing": {
+    "FISH_ITEM": 100.0
+   }
+  }
+ }
+}

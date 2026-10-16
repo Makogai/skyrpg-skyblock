@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "RIFT_COMPLETION_MEMENTO",
+ "base": "minecraft:book",
+ "name": "There and Back Again",
+ "rarity": "special",
+ "category": "MEMENTO",
+ "type": "Memento",
+ "description": "§7§oThis book will never find a publisher.",
+ "unstackable": true,
+ "hypixel": {
+  "item_specific": {
+   "memorable_event_key": "rift_completion"
+  }
+ }
+}

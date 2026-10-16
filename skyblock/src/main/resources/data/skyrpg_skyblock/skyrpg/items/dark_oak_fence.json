@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DARK_OAK_FENCE",
+ "base": "minecraft:dark_oak_fence",
+ "name": "Dark Oak Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

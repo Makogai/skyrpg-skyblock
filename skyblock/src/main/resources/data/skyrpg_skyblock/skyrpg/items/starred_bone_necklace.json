@@ -1,0 +1,60 @@
+{
+ "skyblock_id": "STARRED_BONE_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Bone Necklace",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "crit_chance": 5,
+  "defense": 45
+ },
+ "hypixel": {
+  "npc_sell_price": 0,
+  "dungeon_item": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 4
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "REFINED_MITHRIL_PICKAXE",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Refined Mithril Pickaxe",
+ "rarity": "rare",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 50,
+  "mining_speed": 350,
+  "mining_fortune": 10,
+  "breaking_power": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "MINING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS_PANE:8",
+ "base": "minecraft:light_gray_stained_glass_pane",
+ "name": "Light Gray Stained Glass Pane",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.75
+ }
+}

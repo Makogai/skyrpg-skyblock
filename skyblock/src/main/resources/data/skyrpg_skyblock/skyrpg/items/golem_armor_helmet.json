@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "GOLEM_ARMOR_HELMET",
+ "base": "minecraft:iron_helmet",
+ "name": "Golem Armor Helmet",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 45,
+  "defense": 45
+ },
+ "hypixel": {
+  "npc_sell_price": 12000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GOLEM_ARMOR": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

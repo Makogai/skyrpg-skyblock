@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_HELMET",
+ "base": "minecraft:diamond_helmet",
+ "name": "Diamond Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

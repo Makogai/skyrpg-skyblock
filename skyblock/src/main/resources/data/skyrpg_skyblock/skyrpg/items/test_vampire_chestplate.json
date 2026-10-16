@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "TEST_VAMPIRE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Test Vampire Chestplate",
+ "rarity": "unobtainable",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_damage": 60,
+  "rift_intelligence": 50,
+  "rift_health": 2,
+  "rift_mana_regen": 25
+ },
+ "hypixel": {
+  "motes_sell_price": 15,
+  "origin": "RIFT"
+ }
+}

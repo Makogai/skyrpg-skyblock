@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ARROW",
+ "base": "minecraft:arrow",
+ "name": "Flint Arrow",
+ "rarity": "common",
+ "category": "ARROW",
+ "type": "Arrow",
+ "stats": {
+  "damage": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

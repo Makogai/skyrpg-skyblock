@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BLUE_ICE_HUNK",
+ "base": "minecraft:paper",
+ "name": "Hunk of Blue Ice",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

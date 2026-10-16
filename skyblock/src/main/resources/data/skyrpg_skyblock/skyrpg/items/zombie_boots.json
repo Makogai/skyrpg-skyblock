@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "ZOMBIE_BOOTS",
+ "base": "minecraft:diamond_boots",
+ "name": "Zombie Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 120,
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 120000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 120
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 65
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 16
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "ZOMBIE": "REVENANT"
+   },
+   "armor_set_donation_xp": {
+    "ZOMBIE": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

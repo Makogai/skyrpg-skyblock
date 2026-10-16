@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ATTRIBUTE_SHARD",
+ "base": "minecraft:prismarine_shard",
+ "name": "Attribute Shard",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_auction": false
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "REINFORCED_SCALES",
+ "base": "minecraft:prismarine_crystals",
+ "name": "Reinforced Scales",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

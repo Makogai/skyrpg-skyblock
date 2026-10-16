@@ -1,0 +1,40 @@
+{
+ "skyblock_id": "GOBLIN_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Goblin Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 140,
+  "intelligence": -1,
+  "mining_speed": 10,
+  "mining_fortune": 4
+ },
+ "color": "#37B042",
+ "hypixel": {
+  "npc_sell_price": 1500,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   },
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 5000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GOBLIN": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

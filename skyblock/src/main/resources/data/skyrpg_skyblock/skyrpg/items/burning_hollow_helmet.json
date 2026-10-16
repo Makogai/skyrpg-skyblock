@@ -1,0 +1,194 @@
+{
+ "skyblock_id": "BURNING_HOLLOW_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Burning Hollow Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 273,
+  "defense": 86,
+  "speed": 8,
+  "intelligence": 206,
+  "mending": 8
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0NTUwNDIwNjg0MCwKICAicHJvZmlsZUlkIiA6ICIzYTNmNzhkZmExZjQ0OTllYjE5NjlmYzlkOTEwZGYwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb19jcmVyYXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJhYTE3YzMyZDI3YjkyODE2YjAwMzYyYzJmNjlkODY3Y2Q5OWJhMzc2ZDEwYjA5Nzc5NjM2ODI4NzgzNGVhMSIKICAgIH0KICB9Cn0=",
+  "signature": "CTECTLIfLXDngT5CvbqenjIw5fFy0YBguR6KDEgFYmsSp2/M1RLwTzcHuCiaSFH0hTk3f3IC2+5dx5i4IMW2F6haI57RHxs6FW9gj8AiNS2lQg2Do84syboIp9NwYZASKdJscY7n54qL9EEC4vCkeUsPgKwZdlFu+4nNrccYNccreq90YTREyVXhu6Vx4XIXbY/GDrB54qoo5frTnXShi93Xqor1/YCSFS5r1Ur3jkkMHasj7n6Fmwj/1vrkFKQKU4jQXEQo5iQLcJ6jNTaKswa/KMtaPOJzYn5wJD5nQIsY7LQrl2RoFYhSbi1jN55iD7d9OGpnbZWZW32dQujJI+2KVqhW6cbbsa1KIaoJg9KAW0G/UsPO2gd9ckeVOpfw1pIf2q7IaupEcunyDANMI55X+8xBzHG2+eWdpQDYqS7YnB85WC9vc6K+r1hoUqe2n603W3eI+8wjfoCOfHyaS6JsFHUlHaTSO7QcGCBJTBvpYJ3U6F4M4Sn4NoLjhaekLvVJ3IuWWaDYJ4FrUhjvJ46JkRPe4bioU6dqHOfGkVXzPeQ6XMDPs/S/R5DRXZVc0Dj1o4unT2koHnocpzfN3Pcy+O3imIyL5Aod9LrXv6CMhETvOEqJC6MiseUvcPt40pH1zOyPExMAVz5eBbHQBW7T9GhKivwxNuDhtmV+RSY="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 32
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "BURNING"
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 900
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1125
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1270
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1450
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1650
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1850
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2350
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2650
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ]
+  ],
+  "prestige": {
+   "item_id": "FIERY_HOLLOW_HELMET",
+   "costs": [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 4500
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 50
+    }
+   ]
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ]
+ }
+}

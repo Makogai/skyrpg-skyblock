@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WAND_OF_RECALL",
+ "base": "minecraft:iron_hoe",
+ "name": "Wand of Recall",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

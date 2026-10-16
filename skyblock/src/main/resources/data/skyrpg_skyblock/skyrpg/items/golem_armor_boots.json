@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "GOLEM_ARMOR_BOOTS",
+ "base": "minecraft:iron_boots",
+ "name": "Golem Armor Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 40,
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 9600,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "GOLEM_ARMOR": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

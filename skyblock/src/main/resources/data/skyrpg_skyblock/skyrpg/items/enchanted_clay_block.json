@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ENCHANTED_CLAY_BLOCK",
+ "base": "minecraft:clay",
+ "name": "Enchanted Clay Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 76800,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 2560.0,
+    "FISH_ITEM": 2560.0
+   }
+  }
+ }
+}

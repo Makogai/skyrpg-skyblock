@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_3",
+ "base": "minecraft:music_disc_blocks",
+ "name": "Music Disc - Blocks",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

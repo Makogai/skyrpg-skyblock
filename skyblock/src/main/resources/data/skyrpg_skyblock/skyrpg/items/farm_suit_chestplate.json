@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "FARM_SUIT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Farmhand Chestplate",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 10,
+  "farming_fortune": 5
+ },
+ "color": "#EC041F",
+ "hypixel": {
+  "npc_sell_price": 40,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FARM_SUIT": "FARM_ARMOR"
+   },
+   "armor_set_donation_xp": {
+    "FARM_SUIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

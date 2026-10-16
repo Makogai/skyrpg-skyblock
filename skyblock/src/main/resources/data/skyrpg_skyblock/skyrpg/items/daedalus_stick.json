@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "DAEDALUS_STICK",
+ "base": "minecraft:stick",
+ "name": "Daedalus Stick",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Drops rarely off of Minotaurs from Diana's Mythological Ritual.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500000,
+  "has_uuid": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

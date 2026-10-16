@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "LAPIS_BLOCK",
+ "base": "minecraft:lapis_block",
+ "name": "Block of Lapis Lazuli",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.9
+   }
+  }
+ }
+}

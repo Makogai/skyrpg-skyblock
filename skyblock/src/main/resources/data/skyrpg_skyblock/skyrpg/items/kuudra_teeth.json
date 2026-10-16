@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "KUUDRA_TEETH",
+ "base": "minecraft:paper",
+ "name": "Kuudra Teeth",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Also known as mandibles.",
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

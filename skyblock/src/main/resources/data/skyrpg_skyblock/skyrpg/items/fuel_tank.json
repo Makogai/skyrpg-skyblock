@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FUEL_TANK",
+ "base": "minecraft:paper",
+ "name": "Fuel Canister",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 510
+ }
+}

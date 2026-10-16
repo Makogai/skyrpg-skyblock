@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "SPECTRE_DUST",
+ "base": "minecraft:paper",
+ "name": "Spectre Dust",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A famous Wizard used a wand made out of these.",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

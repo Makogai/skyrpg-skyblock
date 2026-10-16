@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LEECH_BELT",
+ "base": "minecraft:paper",
+ "name": "Leech Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "rift_time": 80,
+  "rift_walk_speed": 3,
+  "rift_intelligence": 5
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

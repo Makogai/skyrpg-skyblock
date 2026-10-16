@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "UMBER_KEY",
+ "base": "minecraft:dead_bush",
+ "name": "Umber Key",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false
+ }
+}

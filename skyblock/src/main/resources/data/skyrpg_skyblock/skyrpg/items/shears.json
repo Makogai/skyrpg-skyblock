@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SHEARS",
+ "base": "minecraft:shears",
+ "name": "Shears",
+ "rarity": "common",
+ "category": "SHEARS",
+ "type": "Shears",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

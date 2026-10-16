@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ROOKIE_PICKAXE",
+ "base": "minecraft:stone_pickaxe",
+ "name": "Rookie Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 15,
+  "mining_speed": 150,
+  "ore_fortune": 5,
+  "breaking_power": 2
+ },
+ "hypixel": {
+  "npc_sell_price": 2,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "MINING",
+   "game_stage": "STARTER"
+  }
+ }
+}

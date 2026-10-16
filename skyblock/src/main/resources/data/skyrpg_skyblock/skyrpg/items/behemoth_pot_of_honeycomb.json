@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "BEHEMOTH_POT_OF_HONEYCOMB",
+ "base": "minecraft:paper",
+ "name": "Behemoth Pot of Honeycomb",
+ "rarity": "legendary",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 30
+   }
+  ]
+ }
+}

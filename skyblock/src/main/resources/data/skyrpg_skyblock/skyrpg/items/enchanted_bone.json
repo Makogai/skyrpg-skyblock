@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_BONE",
+ "base": "minecraft:bone",
+ "name": "Enchanted Bone",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

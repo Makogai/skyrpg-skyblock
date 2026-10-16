@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "STORM_IN_A_BOTTLE_EMPTY",
+ "base": "minecraft:player_head",
+ "name": "Empty Storm Bottle",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTczMTcxMDg4ODA4MSwKICAicHJvZmlsZUlkIiA6ICI1OTgyOWY1ZGY3MmM0ZmFlOTBmOGVhYmM0MjFjMzJkYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQZXBwZXJEcmlua2VyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdjNDg3ZGRiN2FmMGJlM2RhOThhMWNkZjkwMTAwODEwMTFmNTJhYzk0YWVhNDdiNzFkNGFkZmFiNjVkMmU0ZWIiCiAgICB9CiAgfQp9",
+  "signature": "VfWQmCBuNtlu1Iuu24acRDa1tvgy2siYsU6xlPlBD+kgjDwEs7wBWsVltbKjTOEVfD5BhVp64n4621p73vIo5kPlKOEoh15mW5HILnjT/9FBEInqI/LfJV8qdD9GrKp/hefPQg7qMvZ+RB/IFXGOOUZC9OcVThQX0l3AAjBdBP+heGNk6tL5S07OLtVvEJm1z2p7kTgA4S1mHg5qeC0Im0nnSKawqVPdsuLZK1UVrPvxQSH54GIyjEg0SIFrKwdaPmyYAkkXDffHOLc7UP9NTDZBbQ4709RIrV4vYZ/K3vjWaHIartLetCs6wbY4PqCeSsVzuHgdFcXAwwtsoO19xuTJJJwDyjkn0Vq3hxmgFiMuI7T0RaGpxXlHpcHa0PA0r8LPgPLNuaf9MtxwunG6l1jGrz4zREQDhA1mrSGyO65L6tWmerJdw/1tpXD5CEKpPkODgN34Q3TLYltmYVcciU70I+AoAdUlhl6tM9KgWgC3pUIon/7l/uh1/RH9IRmCb08VjojaXRipODVJbfohlMEVJpmpMQhgxXYxz49iuT4xURUJX3MWTZD6htcO8BG5W+3FIu3zX2mCzuaa0pX+75wxGj3Az5OlrpsRZeWy+DLNw+ZkkSIG+rZyfo2tY7GbDArxaqg3La4EJbLKyeFPVi+iIqjpD93vJtHPx42M/UQ="
+ },
+ "hypixel": {
+  "npc_sell_price": 5000
+ }
+}

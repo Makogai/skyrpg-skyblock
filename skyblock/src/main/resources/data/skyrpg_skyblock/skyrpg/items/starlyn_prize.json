@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STARLYN_PRIZE",
+ "base": "minecraft:paper",
+ "name": "Agatha's Prize",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Used to purchase certain items from §bAgatha's Shop§7!",
+ "hypixel": {
+  "npc_sell_price": 20000
+ }
+}

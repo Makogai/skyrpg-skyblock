@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HOSTAGE_COMPASS",
+ "base": "minecraft:compass",
+ "name": "Hostage Compass",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

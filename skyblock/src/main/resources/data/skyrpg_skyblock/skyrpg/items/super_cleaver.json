@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "SUPER_CLEAVER",
+ "base": "minecraft:golden_sword",
+ "name": "Super Cleaver",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 105,
+  "strength": 20,
+  "crit_damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 3
+    }
+   ]
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "SUPER_CLEAVER": "HYPER_CLEAVER"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

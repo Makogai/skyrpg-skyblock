@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GATEWAY_WAND",
+ "base": "minecraft:paper",
+ "name": "Gateway Wand",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

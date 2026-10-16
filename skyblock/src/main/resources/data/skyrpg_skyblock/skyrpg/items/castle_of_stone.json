@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "CASTLE_OF_STONE",
+ "base": "minecraft:bedrock",
+ "name": "Castle of Stone",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

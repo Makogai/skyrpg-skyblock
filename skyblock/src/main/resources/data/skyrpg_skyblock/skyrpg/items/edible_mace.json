@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "EDIBLE_MACE",
+ "base": "minecraft:mutton",
+ "name": "Edible Mace",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 125,
+  "strength": 25
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

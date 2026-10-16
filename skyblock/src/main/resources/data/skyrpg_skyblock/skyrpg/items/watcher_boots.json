@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "WATCHER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Watcher Boots",
+ "rarity": "common",
+ "type": "",
+ "color": "#000000"
+}

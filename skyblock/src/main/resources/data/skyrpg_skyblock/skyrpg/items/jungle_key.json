@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "JUNGLE_KEY",
+ "base": "minecraft:tripwire_hook",
+ "name": "Jungle Key",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Used to open the entrance to the Jungle Temple.",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "can_interact": false
+ }
+}

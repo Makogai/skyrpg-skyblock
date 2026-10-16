@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "ENCHANTED_GLOWSTONE_DUST",
+ "base": "minecraft:glowstone_dust",
+ "name": "Enchanted Glowstone Dust",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

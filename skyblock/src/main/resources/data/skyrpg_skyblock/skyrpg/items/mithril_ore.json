@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "MITHRIL_ORE",
+ "base": "minecraft:prismarine_crystals",
+ "name": "Mithril",
+ "rarity": "common",
+ "type": "",
+ "description": "§7§o\"The Man called it \"true-silver\" while the Dwarves, who loved it above all things, had their own, secret name for it.\"",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   }
+  }
+ }
+}

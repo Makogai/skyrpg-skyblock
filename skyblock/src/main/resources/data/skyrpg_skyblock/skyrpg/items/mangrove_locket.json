@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "MANGROVE_LOCKET",
+ "base": "minecraft:paper",
+ "name": "Mangrove Locket",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "foraging_fortune": 5,
+  "sweep": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 12848,
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "armor_set_donation_xp": {
+    "MANGROVE": 8
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

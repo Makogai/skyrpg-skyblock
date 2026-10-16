@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "GUARDIAN_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Guardian Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 20,
+  "defense": 50
+ },
+ "color": "#117391",
+ "hypixel": {
+  "npc_sell_price": 1200,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "MONSTER_HUNTER": "MONSTER_RAIDER"
+   },
+   "armor_set_donation_xp": {
+    "MONSTER_HUNTER": 4,
+    "MONSTER_RAIDER": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

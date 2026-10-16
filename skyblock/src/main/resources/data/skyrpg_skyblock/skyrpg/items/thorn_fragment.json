@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "THORN_FRAGMENT",
+ "base": "minecraft:ghast_tear",
+ "name": "Thorn Fragment",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

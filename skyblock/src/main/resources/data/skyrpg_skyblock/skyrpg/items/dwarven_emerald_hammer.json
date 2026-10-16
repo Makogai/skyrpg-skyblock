@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "DWARVEN_EMERALD_HAMMER",
+ "base": "minecraft:wooden_axe",
+ "name": "Scavenged Emerald Hammer",
+ "rarity": "special",
+ "type": "",
+ "glint": true
+}

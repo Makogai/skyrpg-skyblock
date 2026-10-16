@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BOOK_AND_QUILL",
+ "base": "minecraft:writable_book",
+ "name": "Book and Quill",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9
+ }
+}

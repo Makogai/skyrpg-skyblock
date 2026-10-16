@@ -1,0 +1,130 @@
+{
+ "skyblock_id": "DARK_CLAYMORE",
+ "base": "minecraft:stone_sword",
+ "name": "Dark Claymore",
+ "rarity": "legendary",
+ "category": "LONGSWORD",
+ "type": "Longsword",
+ "stats": {
+  "damage": 500,
+  "strength": 100,
+  "crit_damage": 100,
+  "swing_range": 2
+ },
+ "description": "§8§oThat thing was too big to be called a sword, it was more like a large hunk of stone.",
+ "hypixel": {
+  "npc_sell_price": 0,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 900
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 1500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "MASTER_CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 40
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 40
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 30,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

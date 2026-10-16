@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "HYDRA1_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Water Hydra Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "color": "#101555",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GREEN_RECORD",
+ "base": "minecraft:music_disc_cat",
+ "name": "Music Disc - Cat",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

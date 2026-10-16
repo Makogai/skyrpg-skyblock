@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "NEX_TITANUM",
+ "base": "minecraft:golden_axe",
+ "name": "Prime Huntaxe - Nex Titanum",
+ "rarity": "legendary",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 25
+ },
+ "description": "§8§oTitanum ruina, mundi mutatio.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 15,
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "skyblock_id": "TERMINATOR",
+ "base": "minecraft:bow",
+ "name": "Terminator",
+ "rarity": "legendary",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 310,
+  "strength": 50,
+  "crit_damage": 250,
+  "attack_speed": 40
+ },
+ "glint": true,
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 300
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 750
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 7
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 27
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 18,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

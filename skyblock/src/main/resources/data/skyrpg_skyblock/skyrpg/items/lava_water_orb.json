@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LAVA_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Lava Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Extremely hot to the touch.\n\n§8Shouldn't this be steam..?",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

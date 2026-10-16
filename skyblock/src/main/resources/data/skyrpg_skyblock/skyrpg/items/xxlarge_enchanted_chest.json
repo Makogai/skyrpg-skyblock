@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "XXLARGE_ENCHANTED_CHEST",
+ "base": "minecraft:chest",
+ "name": "XX-Large Storage",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 40000
+ }
+}

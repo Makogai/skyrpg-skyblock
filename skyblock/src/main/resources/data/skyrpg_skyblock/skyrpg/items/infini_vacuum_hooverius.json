@@ -1,0 +1,47 @@
+{
+ "skyblock_id": "INFINI_VACUUM_HOOVERIUS",
+ "base": "minecraft:paper",
+ "name": "InfiniVacuum™ Hooverius",
+ "rarity": "legendary",
+ "category": "VACUUM",
+ "type": "Vacuum",
+ "stats": {
+  "damage": 400,
+  "farming_fortune": 25
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT"
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "FARMING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

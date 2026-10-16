@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "GIANT_CLEAVER",
+ "base": "minecraft:golden_sword",
+ "name": "Giant Cleaver",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 235,
+  "strength": 120,
+  "crit_damage": 120
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 50
+    }
+   ]
+  ],
+  "gear_score": 50,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 6
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

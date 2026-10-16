@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "EMPEROR_SHOES",
+ "base": "minecraft:leather_boots",
+ "name": "Emperor Shoes",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "color": "#990D00"
+}

@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "TUSK_FOSSIL",
+ "base": "minecraft:paper",
+ "name": "Tusk Fossil",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A great and powerful tusk belonging to a now-extinct creature.",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 50
+   }
+  ],
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 50000,
+    "render_lore": false
+   }
+  ]
+ }
+}

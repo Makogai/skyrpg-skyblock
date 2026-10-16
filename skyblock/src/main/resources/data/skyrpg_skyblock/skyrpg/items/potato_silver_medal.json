@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "POTATO_SILVER_MEDAL",
+ "base": "minecraft:iron_ingot",
+ "name": "Potato War Silver Medal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

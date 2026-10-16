@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ECCENTRIC_PAINTING",
+ "base": "minecraft:paper",
+ "name": "Eccentric Painting",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

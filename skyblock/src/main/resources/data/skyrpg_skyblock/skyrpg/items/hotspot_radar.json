@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "HOTSPOT_RADAR",
+ "base": "minecraft:paper",
+ "name": "Hotspot Radar",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

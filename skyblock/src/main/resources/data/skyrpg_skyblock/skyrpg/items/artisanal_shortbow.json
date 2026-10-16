@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "ARTISANAL_SHORTBOW",
+ "base": "minecraft:bow",
+ "name": "Artisanal Shortbow",
+ "rarity": "rare",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 200,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "IRON_BARDING",
+ "base": "minecraft:iron_horse_armor",
+ "name": "Iron Horse Armor",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

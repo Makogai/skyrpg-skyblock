@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DIAMOND_PICKAXE",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Diamond Pickaxe",
+ "rarity": "uncommon",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 30,
+  "mining_speed": 220,
+  "breaking_power": 4
+ },
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

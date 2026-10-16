@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "MAGICAL_MILK_BUCKET",
+ "base": "minecraft:milk_bucket",
+ "name": "Magical Milk Bucket",
+ "rarity": "common",
+ "type": "",
+ "glint": true
+}

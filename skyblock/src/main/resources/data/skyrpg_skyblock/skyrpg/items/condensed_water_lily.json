@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "CONDENSED_WATER_LILY",
+ "base": "minecraft:paper",
+ "name": "Condensed Lily Pad",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A truly massive amount of Lily Pads mashed into a large ball.",
+ "hypixel": {
+  "npc_sell_price": 256000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 20480.0
+   }
+  }
+ }
+}

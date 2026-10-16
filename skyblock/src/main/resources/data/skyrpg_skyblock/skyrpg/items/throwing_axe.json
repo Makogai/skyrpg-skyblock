@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "THROWING_AXE",
+ "base": "minecraft:golden_axe",
+ "name": "Throwing Axe",
+ "rarity": "unobtainable",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 120,
+  "strength": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

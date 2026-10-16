@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ROCK_GEMSTONE",
+ "base": "minecraft:paper",
+ "name": "Dwarven Geode",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 23000
+ }
+}

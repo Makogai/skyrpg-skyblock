@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ANTIQUE_REMEDIES",
+ "base": "minecraft:azure_bluet",
+ "name": "Antique Remedies",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 250000
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "CANOPY_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Canopy Sandals",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 50,
+  "defense": 20,
+  "sweep": 6
+ },
+ "color": "#331900",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {
+    "CANOPY": "FIG"
+   },
+   "armor_set_donation_xp": {
+    "CANOPY": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

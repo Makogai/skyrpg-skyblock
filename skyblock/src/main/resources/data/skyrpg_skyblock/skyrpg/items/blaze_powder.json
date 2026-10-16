@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "BLAZE_POWDER",
+ "base": "minecraft:blaze_powder",
+ "name": "Blaze Powder",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "fishing": {
+    "FISH_ITEM": 45.0
+   }
+  }
+ }
+}

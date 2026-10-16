@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "SOS_FLARE",
+ "base": "minecraft:firework_rocket",
+ "name": "SOS Flare",
+ "rarity": "epic",
+ "category": "DEPLOYABLE",
+ "type": "Deployable",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 25,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

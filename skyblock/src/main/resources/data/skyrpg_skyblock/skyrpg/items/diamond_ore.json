@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DIAMOND_ORE",
+ "base": "minecraft:diamond_ore",
+ "name": "Diamond Ore",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 10.0,
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

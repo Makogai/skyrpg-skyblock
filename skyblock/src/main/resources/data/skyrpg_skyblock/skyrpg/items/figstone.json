@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FIGSTONE",
+ "base": "minecraft:paper",
+ "name": "Figstone",
+ "rarity": "rare",
+ "type": "",
+ "description": "§oA dense testament to time, holding the chronicles of ancient figs.",
+ "hypixel": {
+  "npc_sell_price": 204800
+ }
+}

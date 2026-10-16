@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OVERPRICED_DRINK",
+ "base": "minecraft:paper",
+ "name": "Overpriced Drink",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "DAVIDS_CLOAK",
+ "base": "minecraft:paper",
+ "name": "David's Cloak",
+ "rarity": "common",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "health": 50,
+  "magic_find": 2
+ },
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_recombobulate": false,
+  "can_have_booster": true,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 2,
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

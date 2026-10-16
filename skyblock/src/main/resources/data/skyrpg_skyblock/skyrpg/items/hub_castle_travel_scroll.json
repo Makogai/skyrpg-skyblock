@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HUB_CASTLE_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Hub Castle",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

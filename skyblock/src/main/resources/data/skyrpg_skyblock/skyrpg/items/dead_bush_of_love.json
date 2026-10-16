@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "DEAD_BUSH_OF_LOVE",
+ "base": "minecraft:dead_bush",
+ "name": "Dead Bush of Love",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

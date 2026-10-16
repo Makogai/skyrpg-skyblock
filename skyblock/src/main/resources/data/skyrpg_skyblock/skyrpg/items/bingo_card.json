@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BINGO_CARD",
+ "base": "minecraft:paper",
+ "name": "Bingo Card",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

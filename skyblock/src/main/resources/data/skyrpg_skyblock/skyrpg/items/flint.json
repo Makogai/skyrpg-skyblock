@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "FLINT",
+ "base": "minecraft:flint",
+ "name": "Flint",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "mining": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

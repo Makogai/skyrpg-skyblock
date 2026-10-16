@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "HORN_OF_TAURUS",
+ "base": "minecraft:paper",
+ "name": "Horn of Taurus",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Popular among Piglins, often used as a war charm.",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

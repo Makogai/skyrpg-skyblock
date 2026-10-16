@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "GAZING_PEARL",
+ "base": "minecraft:paper",
+ "name": "Gazing Pearl",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Can be used instead of a lamp, if you enjoy living on the edge.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

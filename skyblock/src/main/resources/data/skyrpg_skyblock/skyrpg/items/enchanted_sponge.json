@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SPONGE",
+ "base": "minecraft:sponge",
+ "name": "Enchanted Sponge",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 20.0
+   }
+  }
+ }
+}

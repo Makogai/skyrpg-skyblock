@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_CARROT",
+ "base": "minecraft:carrot",
+ "name": "Enchanted Carrot",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "can_place": false,
+  "can_interact_right_click": false,
+  "can_interact_entity": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

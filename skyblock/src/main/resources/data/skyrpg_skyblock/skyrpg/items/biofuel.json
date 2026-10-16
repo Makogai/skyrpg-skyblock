@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "BIOFUEL",
+ "base": "minecraft:green_dye",
+ "name": "Biofuel",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§o100% renewable energy!",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 3000
+   }
+  ]
+ }
+}

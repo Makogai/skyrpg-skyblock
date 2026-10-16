@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_UMBER",
+ "base": "minecraft:paper",
+ "name": "Enchanted Umber",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1600
+ }
+}

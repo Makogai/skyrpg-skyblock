@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "AGGOURDIAN",
+ "base": "minecraft:paper",
+ "name": "Aggourdian",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

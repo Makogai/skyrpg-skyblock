@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LM_EGG_LEGS",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Living Metal Pantspawn",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 100
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BOOKWORM_BOOK",
+ "base": "minecraft:book",
+ "name": "Bookworm's Favorite Book",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "SLIME_BALL",
+ "base": "minecraft:slime_ball",
+ "name": "Slimeball",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "motes_sell_price": 30,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "combat": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

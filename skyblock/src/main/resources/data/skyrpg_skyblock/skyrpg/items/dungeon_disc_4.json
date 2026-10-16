@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DUNGEON_DISC_4",
+ "base": "minecraft:music_disc_11",
+ "name": "Old Disc",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true
+ }
+}

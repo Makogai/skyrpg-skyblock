@@ -1,0 +1,112 @@
+{
+ "skyblock_id": "CRYPT_DREADLORD_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Dreadlord Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 52,
+  "strength": 23,
+  "weapon_ability_damage": 500,
+  "intelligence": 85
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.3,
+  "npc_sell_price": 200,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 3
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DAMAGE": [
+    52,
+    56,
+    60,
+    65,
+    70,
+    75,
+    80,
+    86,
+    93,
+    100
+   ],
+   "STRENGTH": [
+    23,
+    25,
+    27,
+    29,
+    31,
+    34,
+    36,
+    39,
+    42,
+    45
+   ],
+   "WEAPON_ABILITY_DAMAGE": [
+    500
+   ],
+   "INTELLIGENCE": [
+    85,
+    92,
+    100,
+    109,
+    119,
+    129,
+    140,
+    152,
+    166,
+    180
+   ]
+  }
+ }
+}

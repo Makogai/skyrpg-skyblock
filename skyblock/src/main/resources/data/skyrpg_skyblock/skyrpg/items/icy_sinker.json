@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "ICY_SINKER",
+ "base": "minecraft:paper",
+ "name": "Icy Sinker",
+ "rarity": "common",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 20
+   }
+  ],
+  "rarity_salvageable": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

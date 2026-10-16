@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HORSEMAN_SCYTHE",
+ "base": "minecraft:diamond_hoe",
+ "name": "Horseman's Scythe",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 100
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MAGMA_CORE",
+ "base": "minecraft:magma_cream",
+ "name": "Magma Core",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 200000
+ }
+}

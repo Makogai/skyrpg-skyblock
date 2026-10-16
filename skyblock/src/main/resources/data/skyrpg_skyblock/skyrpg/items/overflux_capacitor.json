@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "OVERFLUX_CAPACITOR",
+ "base": "minecraft:quartz",
+ "name": "Overflux Capacitor",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "has_uuid": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

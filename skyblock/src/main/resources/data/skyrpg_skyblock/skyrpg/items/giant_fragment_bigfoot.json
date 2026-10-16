@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GIANT_FRAGMENT_BIGFOOT",
+ "base": "minecraft:lead",
+ "name": "Bigfoot's Bola",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Hard to throw, even harder to catch.",
+ "glint": true,
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

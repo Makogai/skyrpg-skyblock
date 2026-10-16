@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_BUZZIN_BEATS",
+ "base": "minecraft:music_disc_ward",
+ "name": "Buzzin' Beats Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

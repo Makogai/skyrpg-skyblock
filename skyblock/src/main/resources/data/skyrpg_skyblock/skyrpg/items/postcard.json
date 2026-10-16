@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "POSTCARD",
+ "base": "minecraft:paper",
+ "name": "Postcard",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

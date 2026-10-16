@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "TORRHUS_SAFARI_ENTRANCE_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Critter Safari Entrance",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

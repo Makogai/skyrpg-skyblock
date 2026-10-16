@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GOBLIN_EGG",
+ "base": "minecraft:paper",
+ "name": "Goblin Egg",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7§oWhat came first the goblin or the egg?",
+ "hypixel": {
+  "npc_sell_price": 421,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 2000,
+    "render_lore": false
+   }
+  ]
+ }
+}

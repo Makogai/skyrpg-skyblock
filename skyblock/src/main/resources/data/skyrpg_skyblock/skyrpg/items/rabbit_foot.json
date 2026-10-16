@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RABBIT_FOOT",
+ "base": "minecraft:rabbit_foot",
+ "name": "Rabbit's Foot",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 12.0
+   },
+   "farming": {
+    "MINION_STORAGE": 0.2,
+    "COLLECT_ITEM": 2.0
+   }
+  }
+ }
+}

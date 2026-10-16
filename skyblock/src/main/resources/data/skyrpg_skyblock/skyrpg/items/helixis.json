@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "HELIXIS",
+ "base": "minecraft:paper",
+ "name": "Helixis",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Perhaps even the trees of Galatea have something to say about its technological intricacies.",
+ "hypixel": {
+  "npc_sell_price": 512000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

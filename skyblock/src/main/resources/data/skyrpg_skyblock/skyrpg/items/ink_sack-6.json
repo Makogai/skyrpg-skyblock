@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:6",
+ "base": "minecraft:cyan_dye",
+ "name": "Cyan Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

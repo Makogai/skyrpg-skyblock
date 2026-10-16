@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DIAMOND_BLOCK",
+ "base": "minecraft:diamond_block",
+ "name": "Block of Diamond",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 72,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 15.0,
+    "MINION_STORAGE": 3.6
+   }
+  }
+ }
+}

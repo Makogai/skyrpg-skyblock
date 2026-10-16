@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TARANTULA_CATALYST",
+ "base": "minecraft:paper",
+ "name": "Tarantula Catalyst",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Drops rarely from Tarantula Broodfather when you are at least Spider Slayer LVL 6.",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_OBSIDIAN",
+ "base": "minecraft:obsidian",
+ "name": "Enchanted Obsidian",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1440,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 64.0
+   }
+  }
+ }
+}

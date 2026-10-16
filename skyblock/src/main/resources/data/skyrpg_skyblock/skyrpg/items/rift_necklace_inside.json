@@ -1,0 +1,88 @@
+{
+ "skyblock_id": "RIFT_NECKLACE_INSIDE",
+ "base": "minecraft:paper",
+ "name": "%%light_purple%%Rift Necklace",
+ "rarity": "mythic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "origin": "RIFT",
+  "item_specific": {
+   "scaling": {
+    "tiers": [
+     {
+      "numeric": 1,
+      "stats": {
+       "RIFT_TIME": 60
+      }
+     },
+     {
+      "numeric": 2,
+      "stats": {
+       "RIFT_TIME": 110
+      }
+     },
+     {
+      "numeric": 3,
+      "stats": {
+       "RIFT_TIME": 155,
+       "rift_walk_speed": 1,
+       "rift_intelligence": 5
+      }
+     },
+     {
+      "numeric": 4,
+      "stats": {
+       "RIFT_TIME": 200,
+       "rift_walk_speed": 2,
+       "rift_intelligence": 5,
+       "rift_mana_regen": 10
+      }
+     },
+     {
+      "numeric": 5,
+      "stats": {
+       "RIFT_TIME": 245,
+       "rift_walk_speed": 3,
+       "rift_intelligence": 10,
+       "rift_mana_regen": 10
+      }
+     },
+     {
+      "numeric": 6,
+      "stats": {
+       "RIFT_TIME": 290,
+       "rift_walk_speed": 4,
+       "rift_intelligence": 10,
+       "rift_mana_regen": 15,
+       "rift_damage": 1
+      }
+     },
+     {
+      "numeric": 7,
+      "stats": {
+       "RIFT_TIME": 335,
+       "rift_walk_speed": 5,
+       "rift_intelligence": 10,
+       "rift_mana_regen": 20,
+       "rift_damage": 1,
+       "rift_health": 1
+      }
+     },
+     {
+      "numeric": 8,
+      "stats": {
+       "RIFT_TIME": 380,
+       "rift_walk_speed": 6,
+       "rift_intelligence": 10,
+       "rift_mana_regen": 25,
+       "rift_damage": 1,
+       "rift_health": 1
+      }
+     }
+    ]
+   }
+  }
+ }
+}

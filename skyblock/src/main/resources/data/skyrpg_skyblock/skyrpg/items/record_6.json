@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_6",
+ "base": "minecraft:music_disc_mall",
+ "name": "Music Disc - Mall",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

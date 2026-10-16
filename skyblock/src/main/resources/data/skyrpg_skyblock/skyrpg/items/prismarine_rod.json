@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "PRISMARINE_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Prismarine Rod",
+ "rarity": "common",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 15,
+  "strength": 10,
+  "fishing_speed": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 10,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 3
+   }
+  ]
+ }
+}

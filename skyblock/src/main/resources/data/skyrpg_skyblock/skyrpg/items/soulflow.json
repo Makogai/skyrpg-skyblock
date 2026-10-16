@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SOULFLOW",
+ "base": "minecraft:paper",
+ "name": "Soulflow",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

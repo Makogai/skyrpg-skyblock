@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SUPERLITE_MOTOR",
+ "base": "minecraft:paper",
+ "name": "Superlite Motor",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

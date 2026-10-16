@@ -1,0 +1,65 @@
+{
+ "skyblock_id": "THE_PRIMORDIAL",
+ "base": "minecraft:paper",
+ "name": "The Primordial",
+ "rarity": "legendary",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "strength": 15,
+  "crit_damage": 20
+ },
+ "hypixel": {
+  "is_upgradeable_without_soulbinding": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 1500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 12,
+   "category": "COMBAT",
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

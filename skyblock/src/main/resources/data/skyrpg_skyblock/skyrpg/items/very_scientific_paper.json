@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VERY_SCIENTIFIC_PAPER",
+ "base": "minecraft:filled_map",
+ "name": "Very Scientific Paper",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Authored, peer-reviewed and published by Kay.",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

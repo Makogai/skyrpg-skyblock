@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAPLING:1",
+ "base": "minecraft:spruce_sapling",
+ "name": "Spruce Sapling",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25
+ }
+}

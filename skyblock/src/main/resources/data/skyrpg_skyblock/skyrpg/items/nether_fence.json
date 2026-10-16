@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "NETHER_FENCE",
+ "base": "minecraft:nether_brick_fence",
+ "name": "Nether Brick Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

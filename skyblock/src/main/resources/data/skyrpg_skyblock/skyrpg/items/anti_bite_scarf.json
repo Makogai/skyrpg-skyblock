@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "ANTI_BITE_SCARF",
+ "base": "minecraft:red_carpet",
+ "name": "Anti-Bite Scarf",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "rift_time": 100,
+  "rift_intelligence": 20,
+  "rift_health": 1
+ },
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "rift_time_regain_on_kill": 2,
+   "hearts_reduction": 0.3
+  },
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 1
+   }
+  ]
+ }
+}

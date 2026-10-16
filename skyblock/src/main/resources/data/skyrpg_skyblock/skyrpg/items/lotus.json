@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOTUS",
+ "base": "minecraft:paper",
+ "name": "Lotus",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 15,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

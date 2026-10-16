@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "POTION",
+ "base": "minecraft:potion",
+ "name": "Water Bottle",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "has_uuid": false
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GILL_MEMBRANE",
+ "base": "minecraft:paper",
+ "name": "Gill Membrane",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7It really stinks, but...yeah it mostly stinks.",
+ "hypixel": {
+  "npc_sell_price": 70,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DISINFESTOR_GLOVES",
+ "base": "minecraft:paper",
+ "name": "Disinfestor Gloves",
+ "rarity": "rare",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "rift_time": 30
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

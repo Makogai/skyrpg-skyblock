@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "SPONGE_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Sponge Rod",
+ "rarity": "common",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 20,
+  "strength": 15,
+  "fishing_speed": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 36,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ]
+ }
+}

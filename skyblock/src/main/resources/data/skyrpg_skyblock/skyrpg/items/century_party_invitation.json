@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "CENTURY_PARTY_INVITATION",
+ "base": "minecraft:paper",
+ "name": "Century Party Invitation",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

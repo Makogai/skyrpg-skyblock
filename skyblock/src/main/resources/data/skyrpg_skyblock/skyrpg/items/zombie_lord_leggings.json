@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "ZOMBIE_LORD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Zombie Lord Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 7,
+  "health": 73,
+  "defense": 33,
+  "intelligence": 7
+ },
+ "color": "#9B01C1",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_LORD": 10
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    33,
+    36,
+    40,
+    45,
+    50,
+    56,
+    62,
+    69,
+    77,
+    85
+   ],
+   "HEALTH": [
+    73,
+    82,
+    91,
+    101,
+    112,
+    125,
+    138,
+    153,
+    171,
+    190
+   ],
+   "STRENGTH": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    18
+   ],
+   "INTELLIGENCE": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    18
+   ]
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GRIFFIN_FEATHER",
+ "base": "minecraft:feather",
+ "name": "Griffin Feather",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7The feather of a mythical creature that was buried for centuries. It still retains its pleasant scent and fluffiness despite the damage.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "can_recombobulate": false,
+  "force_wipe_recomb": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

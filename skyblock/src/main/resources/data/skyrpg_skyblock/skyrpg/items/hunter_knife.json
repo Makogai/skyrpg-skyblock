@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "HUNTER_KNIFE",
+ "base": "minecraft:iron_sword",
+ "name": "Hunter Knife",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 50,
+  "speed": 40
+ },
+ "hypixel": {
+  "soulbound": "COOP",
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

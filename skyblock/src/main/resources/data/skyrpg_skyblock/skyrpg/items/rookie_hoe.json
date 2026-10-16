@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "ROOKIE_HOE",
+ "base": "minecraft:stone_hoe",
+ "name": "Rookie Hoe",
+ "rarity": "common",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "stats": {
+  "farming_fortune": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 3,
+  "museum": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 1
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "FARMING",
+   "game_stage": "STARTER"
+  }
+ }
+}

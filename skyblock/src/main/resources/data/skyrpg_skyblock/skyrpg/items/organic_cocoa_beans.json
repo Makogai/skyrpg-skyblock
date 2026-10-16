@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_COCOA_BEANS",
+ "base": "minecraft:cocoa_beans",
+ "name": "Organic Cocoa Beans",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

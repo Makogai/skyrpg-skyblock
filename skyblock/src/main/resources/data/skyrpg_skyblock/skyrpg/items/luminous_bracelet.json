@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "LUMINOUS_BRACELET",
+ "base": "minecraft:paper",
+ "name": "Luminous Bracelet",
+ "rarity": "uncommon",
+ "category": "BRACELET",
+ "type": "Bracelet",
+ "stats": {
+  "sea_creature_chance": 1,
+  "fishing_speed": 1
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

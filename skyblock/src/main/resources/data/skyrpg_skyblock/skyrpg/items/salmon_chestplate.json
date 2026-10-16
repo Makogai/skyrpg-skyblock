@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SALMON_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Salmon Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 130,
+  "defense": 55,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#A82B76",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "museum": true
+ }
+}

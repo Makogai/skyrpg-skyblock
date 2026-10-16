@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "APEX_PRAEDATOR",
+ "base": "minecraft:golden_axe",
+ "name": "Savage Huntaxe - Praedator",
+ "rarity": "epic",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 20
+ },
+ "description": "§8§oSupra omnes, Apex Praedator solus regnat.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 10,
+   "parent": {
+    "APEX_PRAEDATOR": "NEX_TITANUM"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

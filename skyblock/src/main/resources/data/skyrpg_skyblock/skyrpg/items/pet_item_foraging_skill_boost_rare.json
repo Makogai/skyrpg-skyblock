@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PET_ITEM_FORAGING_SKILL_BOOST_RARE",
+ "base": "minecraft:iron_axe",
+ "name": "Foraging Exp Boost",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

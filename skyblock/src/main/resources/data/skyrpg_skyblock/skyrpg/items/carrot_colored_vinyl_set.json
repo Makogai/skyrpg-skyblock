@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARROT_COLORED_VINYL_SET",
+ "base": "minecraft:chest_minecart",
+ "name": "Empty Carrot-Colored Vinyl Set",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

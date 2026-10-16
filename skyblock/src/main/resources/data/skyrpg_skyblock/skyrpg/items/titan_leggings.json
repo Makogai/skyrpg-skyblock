@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "TITAN_LEGGINGS",
+ "base": "minecraft:diamond_leggings",
+ "name": "Titan's Leggings",
+ "rarity": "unobtainable",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "strength": 15,
+  "health": 200,
+  "defense": 175,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 75000
+ }
+}

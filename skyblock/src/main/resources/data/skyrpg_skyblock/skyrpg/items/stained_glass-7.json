@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS:7",
+ "base": "minecraft:gray_stained_glass",
+ "name": "Gray Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "SILVERTWIST_KARAMBIT",
+ "base": "minecraft:iron_sword",
+ "name": "Silver-Twist Karambit",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 6,
+  "rift_walk_speed": 15
+ },
+ "glint": true,
+ "hypixel": {
+  "sword_type": "KARAMBIT",
+  "origin": "RIFT",
+  "item_specific": {
+   "mana_refund": 6,
+   "bonus_rift_damage_vs_vampire": 5,
+   "heal_on_hit": 0.5
+  },
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 4
+   }
+  ]
+ }
+}

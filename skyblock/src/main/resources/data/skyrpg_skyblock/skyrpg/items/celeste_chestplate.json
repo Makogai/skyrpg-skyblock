@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "CELESTE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Celeste Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 25,
+  "defense": 25,
+  "intelligence": 60
+ },
+ "color": "#FF8EDE",
+ "hypixel": {
+  "npc_sell_price": 4000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "CELESTE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

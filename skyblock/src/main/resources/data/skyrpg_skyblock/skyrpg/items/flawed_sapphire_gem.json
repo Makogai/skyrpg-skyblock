@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FLAWED_SAPPHIRE_GEM",
+ "base": "minecraft:paper",
+ "name": "Flawed Sapphire Gemstone",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 240
+ }
+}

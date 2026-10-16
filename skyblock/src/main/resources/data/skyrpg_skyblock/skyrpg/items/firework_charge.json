@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FIREWORK_CHARGE",
+ "base": "minecraft:firework_star",
+ "name": "Firework Star",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

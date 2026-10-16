@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_BOOTS",
+ "base": "minecraft:diamond_boots",
+ "name": "Diamond Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 16
+ }
+}

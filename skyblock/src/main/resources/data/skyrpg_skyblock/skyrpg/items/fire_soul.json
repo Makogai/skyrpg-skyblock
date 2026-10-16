@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FIRE_SOUL",
+ "base": "minecraft:blaze_powder",
+ "name": "Fire Soul",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

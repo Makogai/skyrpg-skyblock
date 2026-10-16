@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SLIME_BLOCK",
+ "base": "minecraft:slime_block",
+ "name": "Slime Block",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 45,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 1.8
+   }
+  }
+ }
+}

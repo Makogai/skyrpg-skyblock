@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "LAPIS_ARMOR_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Lapis Armor Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 20,
+  "mining_speed": 20,
+  "mining_fortune": 2
+ },
+ "color": "#0000FF",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "MINING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LAPIS_ARMOR": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

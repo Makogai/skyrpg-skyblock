@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MOBYS_SHEARS",
+ "base": "minecraft:shears",
+ "name": "Moby's Shears",
+ "rarity": "rare",
+ "category": "SHEARS",
+ "type": "Shears",
+ "hypixel": {
+  "can_place": false,
+  "museum_data": {
+   "category": "FARMING",
+   "donation_xp": 4,
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

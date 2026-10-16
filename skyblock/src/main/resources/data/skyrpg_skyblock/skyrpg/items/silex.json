@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SILEX",
+ "base": "minecraft:quartz",
+ "name": "Sharp Rock",
+ "rarity": "common",
+ "type": "",
+ "description": "§7A sharp rock with sturdy construction.",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

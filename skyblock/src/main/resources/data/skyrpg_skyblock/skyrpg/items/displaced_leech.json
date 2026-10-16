@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DISPLACED_LEECH",
+ "base": "minecraft:paper",
+ "name": "Displaced Leech",
+ "rarity": "uncommon",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DARK_QUEENS_SOUL_DROP",
+ "base": "minecraft:clay_ball",
+ "name": "Dark Queen's Soul",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7A portion of Arachne's Soul that can be used to craft items.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

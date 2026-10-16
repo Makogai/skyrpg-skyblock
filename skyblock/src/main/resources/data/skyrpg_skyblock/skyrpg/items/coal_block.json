@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "COAL_BLOCK",
+ "base": "minecraft:coal_block",
+ "name": "Block of Coal",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 2.7
+   }
+  }
+ }
+}

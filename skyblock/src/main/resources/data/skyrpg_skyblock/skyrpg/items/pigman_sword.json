@@ -1,0 +1,77 @@
+{
+ "skyblock_id": "PIGMAN_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Pigman Sword",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 200,
+  "strength": 100,
+  "crit_chance": 5,
+  "crit_damage": 30,
+  "weapon_ability_damage": 30000,
+  "intelligence": 300
+ },
+ "glint": true,
+ "hypixel": {
+  "ability_damage_scaling": 0.1,
+  "npc_sell_price": 3100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 200
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ]
+  ],
+  "gear_score": 30,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

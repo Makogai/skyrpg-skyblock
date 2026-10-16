@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CRYSTAL_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Crystal Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 35,
+  "intelligence": 120
+ },
+ "color": "#FCF3FF",
+ "hypixel": {
+  "npc_sell_price": 4000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "CRYSTAL": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

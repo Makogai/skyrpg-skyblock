@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "PRINCE_CROWN_JEWEL",
+ "base": "minecraft:gold_nugget",
+ "name": "Prince's Crown Jewel",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A splendid jewel, once thrown into the Lotus Eater's pond as tribute. It now serves as the centerpiece of the Frog Prince's makeshift crown.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

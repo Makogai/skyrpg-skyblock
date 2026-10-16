@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "STAR_BOOTS",
+ "base": "minecraft:golden_boots",
+ "name": "Boots of the Stars",
+ "rarity": "unobtainable",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 7500,
+  "defense": 2500,
+  "intelligence": 1000
+ }
+}

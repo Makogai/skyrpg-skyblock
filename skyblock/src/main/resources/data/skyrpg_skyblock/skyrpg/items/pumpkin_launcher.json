@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "PUMPKIN_LAUNCHER",
+ "base": "minecraft:pumpkin",
+ "name": "Pumpkin Launcher",
+ "rarity": "epic",
+ "type": "",
+ "stats": {
+  "weapon_ability_damage": 3000
+ },
+ "glint": true,
+ "hypixel": {
+  "ability_damage_scaling": 0.2,
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

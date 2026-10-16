@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HUNTING_TOOLKIT",
+ "base": "minecraft:paper",
+ "name": "Hunting Toolkit",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true
+}

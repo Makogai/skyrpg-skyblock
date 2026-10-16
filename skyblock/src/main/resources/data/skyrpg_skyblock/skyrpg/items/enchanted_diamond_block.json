@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_DIAMOND_BLOCK",
+ "base": "minecraft:diamond_block",
+ "name": "Enchanted Diamond Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 204800,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 10240.0
+   }
+  }
+ }
+}

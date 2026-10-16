@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_BONE_BLOCK",
+ "base": "minecraft:chiseled_quartz_block",
+ "name": "Enchanted Bone Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 51200,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

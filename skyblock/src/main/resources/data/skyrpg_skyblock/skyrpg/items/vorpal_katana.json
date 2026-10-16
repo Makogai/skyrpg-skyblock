@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "VORPAL_KATANA",
+ "base": "minecraft:blaze_rod",
+ "name": "Vorpal Katana",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 190,
+  "strength": 80,
+  "crit_damage": 30,
+  "intelligence": 200
+ },
+ "hypixel": {
+  "sword_type": "KATANA",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 20
+     }
+    ]
+   },
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 40
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "COMBAT",
+   "parent": {
+    "VORPAL_KATANA": "ATOMSPLIT_KATANA"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

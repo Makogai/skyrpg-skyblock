@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TUNGSTEN_PLATE",
+ "base": "minecraft:paper",
+ "name": "Tungsten Plate",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "can_place": false
+ }
+}

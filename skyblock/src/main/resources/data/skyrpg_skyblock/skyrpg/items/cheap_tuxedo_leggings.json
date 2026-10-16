@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CHEAP_TUXEDO_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Cheap Tuxedo Pants",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "crit_damage": 25,
+  "intelligence": 25
+ },
+ "color": "#C7C7C7",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CHEAP_TUXEDO": "FANCY_TUXEDO"
+   },
+   "armor_set_donation_xp": {
+    "CHEAP_TUXEDO": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

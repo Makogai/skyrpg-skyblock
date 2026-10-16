@@ -1,0 +1,148 @@
+{
+ "skyblock_id": "GOLD_HUNTER_LEGGINGS",
+ "base": "minecraft:golden_leggings",
+ "name": "Gold Hunter Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 125
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "trophy_type": "LAVA",
+    "reward": "GOLD"
+   }
+  ],
+  "soulbound": "SOLO",
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 4
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "GOLD_HUNTER": "DIAMOND_HUNTER"
+   },
+   "armor_set_donation_xp": {
+    "GOLD_HUNTER": 16
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

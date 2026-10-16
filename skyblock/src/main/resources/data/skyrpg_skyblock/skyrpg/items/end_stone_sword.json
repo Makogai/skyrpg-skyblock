@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "END_STONE_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "End Stone Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 120,
+  "strength": 80
+ },
+ "hypixel": {
+  "npc_sell_price": 20480,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CHAINMAIL_CHESTPLATE",
+ "base": "minecraft:chainmail_chestplate",
+ "name": "Chainmail Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

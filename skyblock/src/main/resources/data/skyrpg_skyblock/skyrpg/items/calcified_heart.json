@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "CALCIFIED_HEART",
+ "base": "minecraft:paper",
+ "name": "Calcified Heart",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "description": "§8§oA cold and hardened heart that was once brimming with eager love.",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 5000
+ }
+}

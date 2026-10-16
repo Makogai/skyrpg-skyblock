@@ -1,0 +1,52 @@
+{
+ "skyblock_id": "TITANIUM_DRILL_3",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Titanium Drill DR-X555",
+ "rarity": "epic",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 1200,
+  "mining_fortune": 70,
+  "breaking_power": 9
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 253000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 15,
+   "category": "MINING",
+   "parent": {
+    "TITANIUM_DRILL_3": "TITANIUM_DRILL_4"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

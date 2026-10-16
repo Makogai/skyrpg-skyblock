@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SOLAR_PANEL",
+ "base": "minecraft:daylight_detector",
+ "name": "Solar Panel",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10000
+ }
+}

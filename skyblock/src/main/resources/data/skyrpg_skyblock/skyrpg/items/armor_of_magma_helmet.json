@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_MAGMA_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Armor of Magma Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 50,
+  "defense": 15
+ },
+ "color": "#FF9300",
+ "hypixel": {
+  "npc_sell_price": 38000,
+  "museum": true
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ENDER_CHEST",
+ "base": "minecraft:ender_chest",
+ "name": "Ender Chest",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 55
+ }
+}

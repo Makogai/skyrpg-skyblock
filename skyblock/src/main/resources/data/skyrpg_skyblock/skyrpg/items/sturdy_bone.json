@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "STURDY_BONE",
+ "base": "minecraft:paper",
+ "name": "Sturdy Bone",
+ "rarity": "rare",
+ "type": "",
+ "description": "§oThis bone is as hard as stone and twice as eerie. It bears the mark of countless battles fought beneath the waves.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "MEDIUM_FISHING_NET"
+    ]
+   }
+  ]
+ }
+}

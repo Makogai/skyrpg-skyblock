@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TORCH",
+ "base": "minecraft:torch",
+ "name": "Torch",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.3
+ }
+}

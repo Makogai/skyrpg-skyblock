@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "GROWTH_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Boots of Growth",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 50,
+  "defense": 25
+ },
+ "color": "#00BE00",
+ "hypixel": {
+  "npc_sell_price": 40000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "GROWTH": "MASTIFF"
+   },
+   "armor_set_donation_xp": {
+    "GROWTH": 3
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

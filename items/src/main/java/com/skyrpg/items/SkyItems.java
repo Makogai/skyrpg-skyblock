@@ -1,14 +1,23 @@
 package com.skyrpg.items;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.gson.JsonObject;
+import com.mojang.authlib.GameProfile;
+import com.mojang.authlib.properties.Property;
+import com.mojang.authlib.properties.PropertyMap;
 import com.skyrpg.core.stats.StatTypes;
+import com.skyrpg.items.mixin.CustomDataAccess;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.SequencedSet;
+import java.util.UUID;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
@@ -21,14 +30,16 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.ResolvableProfile;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.equipment.Equippable;
 
 /**
- * Item stacks of SkyRPG items. A stack is a SkyRPG item when its item has a definition; its name colour,
- * attack damage and glint are re-applied from the current definition by {@link #normalize}, so balance
- * changes reach items players already own.
+ * Item stacks of SkyRPG items. A stack is a SkyRPG item when its item has a definition, or (a SkyBlock item) when
+ * its {@code custom_data} names a SkyBlock id that has one; its name colour, attack damage and glint are re-applied
+ * from the current definition by {@link #normalize}, so balance changes reach items players already own.
  */
 public final class SkyItems {
     public static final EquipmentSlot[] ARMOR_SLOTS = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
@@ -62,6 +73,9 @@ public final class SkyItems {
         LEGACY_IDS.put("healing_wand", "mending_wand");
     }
 
+    /** The custom-data key holding a SkyBlock item's id, as on Hypixel. */
+    public static final String SKYBLOCK_ID = "id";
+
     private SkyItems() {
     }
 
@@ -80,13 +94,69 @@ public final class SkyItems {
 
     /** The definition behind this stack, or null if it isn't a (known) SkyRPG item. */
     public static ItemDefinition definition(ItemStack stack) {
-        return stack.isEmpty() ? null : ItemRegistry.item(stack.getItem());
+        if (stack.isEmpty()) {
+            return null;
+        }
+        if (ItemRegistry.hasSkyblockItems()) {
+            String skyblockId = skyblockId(stack);
+            ItemDefinition def = skyblockId == null ? null : ItemRegistry.skyblock(skyblockId);
+            if (def != null) {
+                return def;
+            }
+        }
+        return ItemRegistry.item(stack.getItem());
+    }
+
+    /** The SkyBlock id in this stack's custom data ("ASPECT_OF_THE_END"), or null. Reads the tag without copying it. */
+    public static String skyblockId(ItemStack stack) {
+        CustomData data = stack.get(DataComponents.CUSTOM_DATA);
+        if (data == null || data.isEmpty()) {
+            return null;
+        }
+        return ((CustomDataAccess) (Object) data).skyrpg$tag().getString(SKYBLOCK_ID).orElse(null);
     }
 
     /** A fresh stack of this item, or EMPTY if it's unknown. */
     public static ItemStack create(Identifier id, int count) {
         ItemDefinition def = ItemRegistry.find(id);
-        return def == null ? ItemStack.EMPTY : create(def.item(), count);
+        return def == null ? ItemStack.EMPTY : create(def, count);
+    }
+
+    /**
+     * A fresh stack of this item. A SkyBlock item is its base item with its SkyBlock id in custom data (and a uuid
+     * if it doesn't stack, like Hypixel's), plus its head skin or leather colour.
+     */
+    public static ItemStack create(ItemDefinition def, int count) {
+        if (!def.skyblock()) {
+            return create(def.item(), count);
+        }
+        ItemStack stack = new ItemStack(def.item(), count);
+        CompoundTag tag = new CompoundTag();
+        tag.putString(SKYBLOCK_ID, def.skyblockId());
+        if (unstackable(def)) {
+            tag.putString("uuid", UUID.randomUUID().toString());
+        }
+        stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
+        JsonObject json = def.json();
+        if (json.has("skin")) {
+            JsonObject skin = json.getAsJsonObject("skin");
+            Property textures = new Property("textures", skin.get("value").getAsString(),
+                    skin.has("signature") ? skin.get("signature").getAsString() : null);
+            // A stable profile per item, so heads of the same item stack.
+            UUID uuid = UUID.nameUUIDFromBytes(("skyrpg_skyblock:" + def.skyblockId()).getBytes(StandardCharsets.UTF_8));
+            stack.set(DataComponents.PROFILE, ResolvableProfile.createResolved(
+                    new GameProfile(uuid, "", new PropertyMap(ImmutableMultimap.of("textures", textures)))));
+        }
+        if (json.has("color")) {
+            stack.set(DataComponents.DYED_COLOR, new DyedItemColor(Integer.parseInt(json.get("color").getAsString().replace("#", ""), 16)));
+        }
+        normalize(stack);
+        return stack;
+    }
+
+    /** Whether a SkyBlock item is one per slot: its base doesn't stack, or Hypixel marks it unstackable. */
+    public static boolean unstackable(ItemDefinition def) {
+        return def.item().getDefaultMaxStackSize() == 1 || (def.json().has("unstackable") && def.json().get("unstackable").getAsBoolean());
     }
 
     public static ItemStack create(Item item, int count) {
@@ -103,6 +173,10 @@ public final class SkyItems {
         ItemDefinition def = definition(stack);
         if (def == null) {
             return false;
+        }
+        if (def.skyblock()) {
+            normalizeSkyblock(stack, def);
+            return true;
         }
         // Stackable items (materials, seeds, meals) stay plain, so a fresh drop still stacks with what you carry;
         // their tooltip comes from the definition all the same.
@@ -122,6 +196,23 @@ public final class SkyItems {
     }
 
     /**
+     * A SkyBlock item, stackable or not, always carries its name (every stack of it comes from {@link #create}, so
+     * they still stack). Like on Hypixel nothing wears out.
+     */
+    private static void normalizeSkyblock(ItemStack stack, ItemDefinition def) {
+        apply(stack, DataComponents.ITEM_NAME, Component.literal(def.name()).withColor(def.rarity().color()));
+        if (def.item().components().has(DataComponents.MAX_DAMAGE)) {
+            apply(stack, DataComponents.UNBREAKABLE, Unit.INSTANCE);
+        }
+        if (def.item().getDefaultMaxStackSize() > 1 && unstackable(def)) {
+            apply(stack, DataComponents.MAX_STACK_SIZE, 1);
+        }
+        apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def));
+        apply(stack, DataComponents.TOOLTIP_DISPLAY, TOOLTIP);
+        apply(stack, DataComponents.ENCHANTMENT_GLINT_OVERRIDE, def.glint() ? Boolean.TRUE : null);
+    }
+
+    /**
      * Gathering tools (pickaxes, axes, hoes, scythes, shovels, fishing rods) wear down; weapons, armour, shields, bows, wands
      * and accessories stay unbreakable. See {@link com.skyrpg.core.items.ToolWear}.
      */
@@ -135,9 +226,13 @@ public final class SkyItems {
         return kind == ModItems.Kind.PICKAXE || kind == ModItems.Kind.AXE || kind == ModItems.Kind.HOE || kind == ModItems.Kind.ROD;
     }
 
-    /** Whether this stack is a SkyRPG gathering tool. */
+    /** Whether this stack is a SkyRPG gathering tool that wears down (SkyBlock tools don't). */
     public static boolean isTool(ItemStack stack) {
-        return !stack.isEmpty() && definition(stack) != null && isTool(stack.getItem());
+        if (stack.isEmpty()) {
+            return false;
+        }
+        ItemDefinition def = definition(stack);
+        return def != null && !def.skyblock() && isTool(stack.getItem());
     }
 
     /** A tool's maximum durability: its definition's {@code "durability"}, else what its item was registered with. */

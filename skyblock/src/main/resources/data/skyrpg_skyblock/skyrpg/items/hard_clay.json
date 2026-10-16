@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HARD_CLAY",
+ "base": "minecraft:terracotta",
+ "name": "Hardened Clay",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

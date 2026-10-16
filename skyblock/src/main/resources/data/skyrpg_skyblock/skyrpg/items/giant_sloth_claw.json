@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "GIANT_SLOTH_CLAW",
+ "base": "minecraft:paper",
+ "name": "Giant Sloth Claw",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

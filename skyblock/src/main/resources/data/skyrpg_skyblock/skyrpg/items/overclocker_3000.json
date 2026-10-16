@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "OVERCLOCKER_3000",
+ "base": "minecraft:paper",
+ "name": "Overclocker 3000",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 250000
+ }
+}

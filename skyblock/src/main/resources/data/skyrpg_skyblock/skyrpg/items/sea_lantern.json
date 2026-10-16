@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SEA_LANTERN",
+ "base": "minecraft:sea_lantern",
+ "name": "Sea Lantern",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 45
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PAINTING",
+ "base": "minecraft:painting",
+ "name": "Painting",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

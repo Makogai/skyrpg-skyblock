@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "PRICKLY_KISS",
+ "base": "minecraft:paper",
+ "name": "Prickly Kiss",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "item_specific": {
+   "permanent_health": 5,
+   "permanent_crops_farming_fortune": 12
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_HARDENED_SCALES_RARE",
+ "base": "minecraft:prismarine_crystals",
+ "name": "Hardened Scales",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

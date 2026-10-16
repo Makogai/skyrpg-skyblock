@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BONE_MEAL",
+ "base": "minecraft:bone_meal",
+ "name": "Bone Meal",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

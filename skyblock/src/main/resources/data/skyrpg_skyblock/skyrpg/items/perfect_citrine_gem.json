@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PERFECT_CITRINE_GEM",
+ "base": "minecraft:paper",
+ "name": "Perfect Citrine Gemstone",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

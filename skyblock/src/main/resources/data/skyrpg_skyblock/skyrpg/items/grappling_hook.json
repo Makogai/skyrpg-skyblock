@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GRAPPLING_HOOK",
+ "base": "minecraft:fishing_rod",
+ "name": "Grappling Hook",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1200,
+  "double_tap_to_drop": true
+ }
+}

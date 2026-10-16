@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STORAGE_MINECART",
+ "base": "minecraft:chest_minecart",
+ "name": "Minecart with Chest",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

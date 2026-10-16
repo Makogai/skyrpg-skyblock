@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_IRON",
+ "base": "minecraft:iron_ingot",
+ "name": "Enchanted Iron Ingot",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

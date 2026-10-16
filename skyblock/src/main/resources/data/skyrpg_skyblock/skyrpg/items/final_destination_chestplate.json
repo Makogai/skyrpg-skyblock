@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "FINAL_DESTINATION_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Final Destination Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 200,
+  "defense": 100,
+  "intelligence": 100
+ },
+ "color": "#0A0011",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FINAL_DESTINATION": 8
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

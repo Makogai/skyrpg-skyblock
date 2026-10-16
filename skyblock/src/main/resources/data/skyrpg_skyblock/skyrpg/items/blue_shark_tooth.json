@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "BLUE_SHARK_TOOTH",
+ "base": "minecraft:ghast_tear",
+ "name": "Blue Shark Tooth",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Dropped by a Shark during Fishing Festival.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

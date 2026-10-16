@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GOLDEN_PLATE",
+ "base": "minecraft:paper",
+ "name": "Golden Plate",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3068
+ }
+}

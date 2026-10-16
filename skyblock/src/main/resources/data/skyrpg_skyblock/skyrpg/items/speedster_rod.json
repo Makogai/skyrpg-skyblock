@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "SPEEDSTER_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Speedster Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 30,
+  "strength": 15,
+  "fishing_speed": 45
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 6
+   }
+  ]
+ }
+}

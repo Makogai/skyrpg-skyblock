@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "TANK_MINER_LEGGINGS",
+ "base": "minecraft:diamond_leggings",
+ "name": "Miner Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 15,
+  "mining_speed": 10
+ },
+ "color": "#7A7964",
+ "hypixel": {
+  "npc_sell_price": 3000,
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "TANK_MINER": "HEAT"
+   },
+   "armor_set_donation_xp": {
+    "TANK_MINER": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

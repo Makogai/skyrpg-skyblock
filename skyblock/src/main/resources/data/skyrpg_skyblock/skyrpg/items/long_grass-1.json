@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LONG_GRASS:1",
+ "base": "minecraft:short_grass",
+ "name": "Long Grass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

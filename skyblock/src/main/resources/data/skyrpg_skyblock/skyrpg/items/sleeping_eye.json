@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SLEEPING_EYE",
+ "base": "minecraft:paper",
+ "name": "Sleeping Eye",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "can_auction": false
+ }
+}

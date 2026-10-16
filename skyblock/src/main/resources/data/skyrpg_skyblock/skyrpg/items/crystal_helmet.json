@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CRYSTAL_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Crystal Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 20,
+  "intelligence": 65
+ },
+ "color": "#FCF3FF",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "CRYSTAL": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

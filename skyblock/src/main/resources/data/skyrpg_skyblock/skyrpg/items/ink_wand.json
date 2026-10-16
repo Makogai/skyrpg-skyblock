@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "INK_WAND",
+ "base": "minecraft:stick",
+ "name": "Ink Wand",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 130,
+  "strength": 90,
+  "weapon_ability_damage": 10000
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NOPE_THE_FISH",
+ "base": "minecraft:salmon",
+ "name": "Nope the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

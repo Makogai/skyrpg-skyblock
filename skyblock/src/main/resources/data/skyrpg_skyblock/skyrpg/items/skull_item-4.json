@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKULL_ITEM:4",
+ "base": "minecraft:creeper_head",
+ "name": "Creeper Skull",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "soulbound": "COOP"
+ }
+}

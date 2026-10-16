@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SHINING_COIN",
+ "base": "minecraft:paper",
+ "name": "Shining Coin",
+ "rarity": "special",
+ "type": "",
+ "description": "§8§oThrowing coins into fountains and other bodies of water is said to bring good luck in some cultures.",
+ "hypixel": {
+  "safari_only": true
+ }
+}

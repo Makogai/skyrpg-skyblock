@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "LOTUS_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Lotus Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Smells of rust and Lotus... what an interesting mix.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

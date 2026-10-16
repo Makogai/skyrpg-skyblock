@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MINION_EXPANDER",
+ "base": "minecraft:command_block",
+ "name": "Minion Expander",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 4000
+ }
+}

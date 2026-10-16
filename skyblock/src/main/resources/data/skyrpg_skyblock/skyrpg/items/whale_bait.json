@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WHALE_BAIT",
+ "base": "minecraft:paper",
+ "name": "Whale Bait",
+ "rarity": "rare",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 44
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SELF_RECURSIVE_PICKAXE",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Self-Recursive Pickaxe",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 5
+ },
+ "hypixel": {
+  "motes_sell_price": 25,
+  "origin": "RIFT",
+  "item_specific": {
+   "mana_refund": 4
+  }
+ }
+}

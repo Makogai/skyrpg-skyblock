@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "DEIFIC_SPADE",
+ "base": "minecraft:golden_shovel",
+ "name": "Deific Spade",
+ "rarity": "legendary",
+ "category": "SPADE",
+ "type": "Spade",
+ "glint": true,
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

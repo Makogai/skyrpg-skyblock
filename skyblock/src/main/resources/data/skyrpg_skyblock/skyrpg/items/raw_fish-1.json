@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RAW_FISH:1",
+ "base": "minecraft:salmon",
+ "name": "Raw Salmon",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 20.0
+   },
+   "fishing": {
+    "MINION_STORAGE": 0.7,
+    "FISH_ITEM": 35.0
+   }
+  }
+ }
+}

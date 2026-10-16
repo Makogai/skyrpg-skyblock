@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MYCELIUM_DUST",
+ "base": "minecraft:pink_dye",
+ "name": "Mycelium Dust",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 15
+ }
+}

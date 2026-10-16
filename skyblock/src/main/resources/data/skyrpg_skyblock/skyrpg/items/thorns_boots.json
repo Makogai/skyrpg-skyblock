@@ -1,0 +1,74 @@
+{
+ "skyblock_id": "THORNS_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Spirit Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 25,
+  "health": 150,
+  "defense": 50,
+  "speed": 25,
+  "intelligence": 50
+ },
+ "color": "#BFBFBF",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 30,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 4
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_THORNS_BOOTS"
+   ],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

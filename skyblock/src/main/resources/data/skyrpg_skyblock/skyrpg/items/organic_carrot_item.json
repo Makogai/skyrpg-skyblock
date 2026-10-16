@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_CARROT_ITEM",
+ "base": "minecraft:carrot",
+ "name": "Organic Carrot",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

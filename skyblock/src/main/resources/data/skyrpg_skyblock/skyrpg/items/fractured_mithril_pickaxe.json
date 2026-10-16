@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "FRACTURED_MITHRIL_PICKAXE",
+ "base": "minecraft:stone_pickaxe",
+ "name": "Fractured Mithril Pickaxe",
+ "rarity": "uncommon",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 30,
+  "mining_speed": 225,
+  "mining_fortune": 2,
+  "breaking_power": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "MINING",
+   "parent": {
+    "FRACTURED_MITHRIL_PICKAXE": "BANDAGED_MITHRIL_PICKAXE"
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "BEJEWELED_HANDLE",
+ "base": "minecraft:paper",
+ "name": "Bejeweled Handle",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100,
+  "can_place": false,
+  "can_recombobulate": false,
+  "force_wipe_recomb": true
+ }
+}

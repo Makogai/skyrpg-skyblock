@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "SQUIRE_HELMET",
+ "base": "minecraft:chainmail_helmet",
+ "name": "Squire Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 5,
+  "health": 25,
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "SQUIRE": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

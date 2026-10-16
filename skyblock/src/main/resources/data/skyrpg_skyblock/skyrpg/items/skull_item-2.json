@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKULL_ITEM:2",
+ "base": "minecraft:zombie_head",
+ "name": "Zombie Skull",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "soulbound": "COOP"
+ }
+}

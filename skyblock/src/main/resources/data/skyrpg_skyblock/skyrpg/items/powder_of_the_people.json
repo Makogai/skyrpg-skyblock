@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "POWDER_OF_THE_PEOPLE",
+ "base": "minecraft:paper",
+ "name": "Powder of the People",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "item_specific": {
+   "powders": [
+    "MITHRIL",
+    "GEMSTONE",
+    "GLACITE"
+   ],
+   "bonus": 10
+  }
+ }
+}

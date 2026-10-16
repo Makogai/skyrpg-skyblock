@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "END_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Ender Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 15,
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 12
+   }
+  ],
+  "soulbound": "COOP",
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "END": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

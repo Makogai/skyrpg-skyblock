@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ACACIA_FENCE_GATE",
+ "base": "minecraft:acacia_fence_gate",
+ "name": "Acacia Fence Gate",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET:3",
+ "base": "minecraft:light_blue_carpet",
+ "name": "Light Blue Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

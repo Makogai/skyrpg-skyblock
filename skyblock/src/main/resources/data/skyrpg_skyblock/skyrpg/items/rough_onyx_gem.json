@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_ONYX_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Onyx Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

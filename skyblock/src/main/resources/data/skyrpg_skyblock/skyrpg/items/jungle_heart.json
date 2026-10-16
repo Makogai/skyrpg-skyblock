@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "JUNGLE_HEART",
+ "base": "minecraft:paper",
+ "name": "Jungle Heart",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Found in the deepest layers of the Jungle Temple.",
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 100000
+ }
+}

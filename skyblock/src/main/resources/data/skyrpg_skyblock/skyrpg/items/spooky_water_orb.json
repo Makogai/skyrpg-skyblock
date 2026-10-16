@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SPOOKY_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Spooky Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A terrifying sphere of extreme spookiness.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

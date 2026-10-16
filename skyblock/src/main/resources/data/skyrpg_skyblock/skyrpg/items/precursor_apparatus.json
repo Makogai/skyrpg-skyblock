@@ -1,0 +1,36 @@
+{
+ "skyblock_id": "PRECURSOR_APPARATUS",
+ "base": "minecraft:paper",
+ "name": "Precursor Apparatus",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "recipes": [
+   {
+    "output": {
+     "item_id": "PRECURSOR_APPARATUS"
+    },
+    "ingredient_symbols": {
+     "A": "CONTROL_SWITCH",
+     "B": "ELECTRON_TRANSMITTER",
+     "C": "FTX_3070",
+     "D": "ROBOTRON_REFLECTOR",
+     "E": "SUPERLITE_MOTOR",
+     "F": "SYNTHETIC_HEART"
+    },
+    "matrix": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     " ",
+     " ",
+     " "
+    ],
+    "allow_quick_crafting": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DIAMOND_ATOM",
+ "base": "minecraft:paper",
+ "name": "Diamond Atom",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

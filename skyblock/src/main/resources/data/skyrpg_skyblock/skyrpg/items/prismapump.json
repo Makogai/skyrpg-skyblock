@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PRISMAPUMP",
+ "base": "minecraft:paper",
+ "name": "Prismapump",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_auction": false,
+  "can_place": false
+ }
+}

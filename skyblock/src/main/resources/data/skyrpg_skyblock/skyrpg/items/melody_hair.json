@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "MELODY_HAIR",
+ "base": "minecraft:string",
+ "name": "Melody's Hair",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "intelligence": 6
+ },
+ "glint": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "requirements": [
+   {
+    "type": "MELODY_HAIR"
+   }
+  ],
+  "can_auction": false
+ }
+}

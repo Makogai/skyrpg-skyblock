@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "REFINED_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Refined Diamond",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Looking at it for too long may cause eye trauma.",
+ "hypixel": {
+  "npc_sell_price": 4096
+ }
+}

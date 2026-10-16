@@ -1,0 +1,67 @@
+{
+ "skyblock_id": "ARMOR_OF_YOG_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Yog Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 50,
+  "defense": 15,
+  "mining_speed": 25,
+  "mining_fortune": 20,
+  "heat_resistance": 10
+ },
+ "color": "#C83200",
+ "hypixel": {
+  "npc_sell_price": 38000,
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "HARD_STONE",
+    "tier": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "UNIVERSAL"
+   },
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 5000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMBER_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 20000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 4
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARMOR_OF_YOG": 3
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

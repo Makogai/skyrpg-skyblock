@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "MITHRIL_DRILL_2",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Mithril Drill SX-R326",
+ "rarity": "rare",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 65,
+  "mining_speed": 600,
+  "mining_fortune": 20,
+  "breaking_power": 6
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 29000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

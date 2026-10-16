@@ -1,0 +1,40 @@
+{
+ "skyblock_id": "PERFECT_CHISEL",
+ "base": "minecraft:armor_stand",
+ "name": "Perfect Chisel",
+ "rarity": "legendary",
+ "category": "CHISEL",
+ "type": "Chisel",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "item_specific": {
+   "chisel_charges": 22
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "CHISEL"
+   },
+   {
+    "slot_type": "CHISEL"
+   },
+   {
+    "slot_type": "CHISEL"
+   }
+  ],
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 10
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 15,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

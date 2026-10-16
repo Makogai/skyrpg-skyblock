@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_WHEAT",
+ "base": "minecraft:wheat",
+ "name": "Enchanted Wheat",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 960,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

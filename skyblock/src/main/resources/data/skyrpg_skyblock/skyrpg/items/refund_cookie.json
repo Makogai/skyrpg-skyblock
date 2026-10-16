@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "REFUND_COOKIE",
+ "base": "minecraft:cookie",
+ "name": "Booster Cookie (Untradable)",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "has_uuid": true,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

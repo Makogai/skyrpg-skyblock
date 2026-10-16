@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "VINE",
+ "base": "minecraft:vine",
+ "name": "Vines",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

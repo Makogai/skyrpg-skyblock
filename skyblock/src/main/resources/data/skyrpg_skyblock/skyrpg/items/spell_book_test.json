@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SPELL_BOOK_TEST",
+ "base": "minecraft:enchanted_book",
+ "name": "Spellbook",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "REVERSE_REFORGE_STONE_CORE",
+ "base": "minecraft:clay_ball",
+ "name": "eroC enotS egrofeR",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7⸮morf emoc ti did erehw dna ,gniht siht si htrae no tahW",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "can_recombobulate": false
+ }
+}

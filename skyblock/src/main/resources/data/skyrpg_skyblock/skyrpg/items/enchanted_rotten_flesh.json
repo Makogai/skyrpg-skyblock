@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_ROTTEN_FLESH",
+ "base": "minecraft:rotten_flesh",
+ "name": "Enchanted Rotten Flesh",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

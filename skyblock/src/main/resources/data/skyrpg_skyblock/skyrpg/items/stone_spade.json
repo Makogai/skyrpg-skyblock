@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "STONE_SPADE",
+ "base": "minecraft:stone_shovel",
+ "name": "Stone Shovel",
+ "rarity": "common",
+ "category": "SPADE",
+ "type": "Spade",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

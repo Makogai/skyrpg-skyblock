@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "LEECH_SWORD",
+ "base": "minecraft:wooden_sword",
+ "name": "Leech Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 3
+ },
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "mana_refund": 3
+  }
+ }
+}

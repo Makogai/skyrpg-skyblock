@@ -1,0 +1,112 @@
+{
+ "skyblock_id": "PRIMORDIAL_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Primordial Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "crit_damage": 10,
+  "health": 75,
+  "defense": 90,
+  "speed": 15,
+  "intelligence": 75
+ },
+ "color": "#0E1736",
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 50
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 125
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 5
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 7
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 16
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "PRIMORDIAL": 10
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

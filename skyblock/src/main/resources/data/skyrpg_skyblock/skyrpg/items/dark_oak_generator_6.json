@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DARK_OAK_GENERATOR_6",
+ "base": "minecraft:player_head",
+ "name": "Dark Oak Minion VI",
+ "rarity": "rare",
+ "type": "",
+ "skin": {
+  "value": "eyJ0aW1lc3RhbXAiOjE1NTc5MzUyNjI1NDIsInByb2ZpbGVJZCI6ImNiZGViZGRjODNhNTQ0OWFiZDFiOThhNzBjY2E0ZDhlIiwicHJvZmlsZU5hbWUiOiJDaGVja2lkb2lzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yOTliMmQ4YzYyYjE3MTA4MDIzYzU3ZTJiYzQwODczNDQ2ZTFiOTZmMTE2NzRhMmJiMmEyN2Y5MTVjZjlkNTE5In19fQ==",
+  "signature": "vN3eMLtKwYy3wqeeiEomnM/BVjzuHXHYNw0EM6/wdk5azPSDu+LgZPkQDadeaRkszoSI4SwJMIf7s1aak/1lKQ3n5AyTRUTbl9w6KSsXTC0/HsnnfSsRD5n0ZglsMEVrN+BtCqQSZVF8cwafmpnSGmU0mi9Z/Dcf/ktuT+X+3ClcgDIUBGIZius1hau4x7CXO9rmimB0e/29CsjfLLUgVWbjI21SHHKONqgLot2w6ZIbciubxHAgXJI0N4nSFTfIOnBJL67JUMnc9rXDOSDX3rFKLZk+4EnbXEevTNGHHsvFN0ssic/9v7jyBX60EroO6bq+Cm13vWJggeCg+SL3HH6whXqZ7l94yUsYrJOmtbL8jd55IOw3H6Hs5gasymIX1P4OATGW6YBakdETMjyP3zbUbHbO/BPqTbfqbKV/d2CJGkrDmgVvTt6KLst6pa94ajJ+1VdNj/42huG+35VPnYboHLn/jEomrY3YZf/eAZZyHz490FpStfKx2qnXfYv+MreC+htv79jgpMTOt9Xl/2GNNu4eenGyJnyQCqZOycHbCYBF4dpoussPfZgUkxTLPWY+riOthcnIotuS2bxPdGnGN0Dxso31O9HcTOU0QC7g5z0g2Fc0PQ2Se+2RelRAcS9729oZujsduNF3NaYJ8AS3V+alWz8Md4hPP9hB50U="
+ },
+ "hypixel": {
+  "generator": "DARK_OAK",
+  "generator_tier": 6
+ }
+}

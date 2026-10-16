@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "ENCHANTED_LUSH_BERBERIS",
+ "base": "minecraft:large_fern",
+ "name": "Enchanted Lush Berberis",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A wonderful enchanted plant!",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 1600.0
+   }
+  }
+ }
+}

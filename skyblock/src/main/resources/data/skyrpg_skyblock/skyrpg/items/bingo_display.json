@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "BINGO_DISPLAY",
+ "base": "minecraft:coal_block",
+ "name": "Bingo Display",
+ "rarity": "common",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Show off your total §6Bingo Points§7!",
+ "unstackable": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false
+ }
+}

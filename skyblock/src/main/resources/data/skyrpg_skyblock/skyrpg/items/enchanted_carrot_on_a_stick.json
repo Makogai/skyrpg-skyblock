@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_CARROT_ON_A_STICK",
+ "base": "minecraft:carrot_on_a_stick",
+ "name": "Enchanted Carrot on a Stick",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 10300
+ }
+}

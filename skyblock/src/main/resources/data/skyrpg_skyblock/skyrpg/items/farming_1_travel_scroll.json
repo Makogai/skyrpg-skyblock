@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "FARMING_1_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to The Barn",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

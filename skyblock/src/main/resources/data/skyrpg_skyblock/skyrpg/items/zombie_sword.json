@@ -1,0 +1,79 @@
+{
+ "skyblock_id": "ZOMBIE_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Zombie Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 100,
+  "strength": 50,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "npc_sell_price": 300000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 90
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "ZOMBIE_SWORD": "ORNATE_ZOMBIE_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

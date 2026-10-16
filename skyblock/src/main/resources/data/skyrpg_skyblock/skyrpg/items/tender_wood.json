@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TENDER_WOOD",
+ "base": "minecraft:paper",
+ "name": "Tender Wood",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Ideal for fine woodworking, this fig-derived wood is fully impervious, and can even be used to craft see-through items.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

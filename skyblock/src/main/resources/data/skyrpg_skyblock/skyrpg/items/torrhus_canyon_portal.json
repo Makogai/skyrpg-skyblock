@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "TORRHUS_CANYON_PORTAL",
+ "base": "minecraft:player_head",
+ "name": "Portal to the Torrhus Canyon",
+ "rarity": "common",
+ "category": "PORTAL",
+ "type": "Portal",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc4NTI3ODgzODYxNywKICAicHJvZmlsZUlkIiA6ICJiYTllNWY4YTc0Yzg0MzQ5YjY3ZTg2MzBlMDRmMTI2ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJhbW9ndXNwYWRvdyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xYzNiZTBjNmE1YTZmY2E3N2I0NTA0YzJjZjkzNTlkYTgzNTE2Y2Y1ODA4NjQyZjQ0MDdiYTEyZmU5NDA3NDY0IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "oEZMmqR1wp0/ySqrv1wFEGc9HxxoG0NSFsj+x0cJTdELNHMHzPGrIEwyBrqH/JBh1G08WjjY9PTSHyBVFXgNh1uJvLJOq+ktK5wTu8LkppFLs6Q6V0c/5TqytKn6cIHc72fQk/LazTOko7re/VGp+nAueyzesZE+A4ApU9X7hOjXPA4e9AY0y8im+JEZsBKAf4Kqnnhrv+stx7vxglQtdez1thtJqGJH4DDv/m39UDhd7Ao9vUFtzYalV508HhOeJjrWvWmeYgXvDo1zYrDJKNH7QsEjZhNYC5UUmsCI5yJeyZ7lnOui+m1r2HWIaT863ezNEIfecqMiH0pDxChHzoRM1YiGZ3TcfqHwo0F/LO4gH1caAfm21OKMNa9gxH/05S4PrM4zT/OhneBpv8t9pTOYHMakpYWWEF3SDv1qii20RA5pJ7/0bRNAY1SBYwVRjML62MsbWQX0UPSH/dJ1kOGU3e2eXUY40rmqJqrhL7ogmXq/5HA2tggGrjcXVSt97DydQ56PeanwKyOxgg4dbrTfO2nyTptVT9uR15dHxIE24WyU+NzEQLE9Wu1kULXWCJ5kKtWj43j1dMkGCMCRBBF/VHHA//9qQM01DwXbal+0CKZEx7IooOr6M5+38A1JJrd89MYvOhK5Q2AWkAvQyxG+GnLwbvOrAbfZB5RnAb0="
+ },
+ "hypixel": {
+  "item_specific": {
+   "portal": {
+    "holo_name": "Torrhus Canyon",
+    "description_name": "%%gold%%Torrhus Canyon",
+    "destination_mode": "foraging_3",
+    "schematic_file": "sb_portal_loch",
+    "offset": "NEW",
+    "requirements": [
+     {
+      "type": "HEART_OF_THE_FOREST",
+      "tier": 4
+     }
+    ]
+   }
+  }
+ }
+}

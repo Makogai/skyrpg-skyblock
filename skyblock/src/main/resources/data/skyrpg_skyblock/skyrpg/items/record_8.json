@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_8",
+ "base": "minecraft:music_disc_stal",
+ "name": "Music Disc - Stal",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

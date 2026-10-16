@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HOTSPOT_ARTIFACT",
+ "base": "minecraft:paper",
+ "name": "Hotspot Artifact",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

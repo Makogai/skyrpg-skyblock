@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HONEYCOMB_ARTIFACT",
+ "base": "minecraft:paper",
+ "name": "Honeycomb Artifact",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

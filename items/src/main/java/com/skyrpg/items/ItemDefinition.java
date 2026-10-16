@@ -31,10 +31,19 @@ import net.minecraft.world.item.Item;
  * }
  * </pre>
  * Stats are keyed by {@link StatType} id. "damage" is weapon damage and sets the item's attack damage.
+ * <p>
+ * A SkyBlock item isn't a registered item: it's a vanilla {@code "base"} item carrying its SkyBlock id in
+ * {@code custom_data} ({@code {id: "ASPECT_OF_THE_END"}}), like on Hypixel, which is also what texture packs
+ * such as FurfSky key their looks on. Its file is {@code data/skyrpg_skyblock/skyrpg/items/aspect_of_the_end.json}:
+ * <pre>
+ * {"skyblock_id": "ASPECT_OF_THE_END", "base": "minecraft:diamond_sword", "name": "Aspect of the End", ...}
+ * </pre>
+ * Heads add {@code "skin": {"value": ..., "signature": ...}}, leather {@code "color": "#RRGGBB"}.
  *
+ * @param skyblockId the SkyBlock id (null for a registered SkyRPG item); {@code item} is then its base item
  * @param json the definition as loaded, so it can be sent to clients unchanged
  */
-public record ItemDefinition(Identifier id, Item item, String name, Rarity rarity, Map<StatType, Double> stats,
+public record ItemDefinition(Identifier id, String skyblockId, Item item, String name, Rarity rarity, Map<StatType, Double> stats,
                              Identifier set, String description, boolean glint, Ability ability, Map<Identifier, Double> effects,
                              List<String> perks, JsonObject json) {
 
@@ -49,9 +58,20 @@ public record ItemDefinition(Identifier id, Item item, String name, Rarity rarit
         return stats.getOrDefault(stat, 0.0);
     }
 
+    /** Whether this is a SkyBlock item (a vanilla base item with a SkyBlock id) rather than a registered one. */
+    public boolean skyblock() {
+        return skyblockId != null;
+    }
+
     public static ItemDefinition parse(Identifier id, JsonObject json) {
-        if (!BuiltInRegistries.ITEM.containsKey(id)) {
-            throw new IllegalArgumentException("no registered item " + id);
+        Identifier itemId = id;
+        String skyblockId = null;
+        if (json.has("base")) {
+            itemId = Identifier.parse(json.get("base").getAsString());
+            skyblockId = json.has("skyblock_id") ? json.get("skyblock_id").getAsString() : id.getPath().toUpperCase(java.util.Locale.ROOT);
+        }
+        if (!BuiltInRegistries.ITEM.containsKey(itemId)) {
+            throw new IllegalArgumentException("no registered item " + itemId);
         }
         Map<StatType, Double> stats = new LinkedHashMap<>();
         if (json.has("stats")) {
@@ -76,7 +96,7 @@ public record ItemDefinition(Identifier id, Item item, String name, Rarity rarit
         if (json.has("perks")) {
             json.getAsJsonArray("perks").forEach(line -> perks.add(line.getAsString()));
         }
-        return new ItemDefinition(id, BuiltInRegistries.ITEM.getValue(id), json.get("name").getAsString(),
+        return new ItemDefinition(id, skyblockId, BuiltInRegistries.ITEM.getValue(itemId), json.get("name").getAsString(),
                 json.has("rarity") ? Rarity.parse(json.get("rarity").getAsString()) : Rarity.COMMON,
                 stats,
                 json.has("set") ? Identifier.parse(json.get("set").getAsString()) : null,

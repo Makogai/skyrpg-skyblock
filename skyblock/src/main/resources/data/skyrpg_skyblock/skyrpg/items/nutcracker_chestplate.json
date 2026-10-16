@@ -1,0 +1,72 @@
+{
+ "skyblock_id": "NUTCRACKER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Nutcracker Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 115,
+  "defense": 45,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#FC2F3C",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 28
+   }
+  ],
+  "npc_sell_price": 1000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 15
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 4
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   },
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "NUTCRACKER": 10
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

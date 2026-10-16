@@ -1,0 +1,105 @@
+{
+ "skyblock_id": "NECROMANCER_LORD_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Necromancer Lord Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 200,
+  "defense": 160,
+  "intelligence": 15
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0NDAxNDg2MiwKICAicHJvZmlsZUlkIiA6ICJlY2Q0ZTI4NjdkMmE0MTE2OTljYzlkMjMzYmM1YmEyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJSYXRlZEtub3QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RhZGU4YmFlNTY3YTA2NzBmYmViMDI1ZTYzNTA2YTA2ZTQwMTBlZjY2NDRmZjdiNTU2YmRmOTNkMjYwODk1NCIKICAgIH0KICB9Cn0=",
+  "signature": "I7ljzbsX3QKgGaiSQC1vqxUbao5Mi2qnRuBDCoxnFmhmRSlObiACe6sph3GuVHIJTLRF5ElKgbzsSSuFinlP4g5MU+EN8a+oMgTFeARpjI/o7TVFPe0rkhDoRSH6PaPY/oqOyf+lGlKjmigbuD9gyF6amGZHPJwbagm+g9lsGsx0us8xbiTwIp8WmdQc7RYQhHKLcgeG0lQrjukpwKFG6fsmWDNgwso60xe7Y7Dy0prdlDDGbmkLftQvBuJ39NJZtQ7UpRryTT6qgxOugUha2qOw4SGsAe5084stkPb+zVv/wPB7f+Se9inJtoGF20/joidbBS+c6JKAvsSEQ8TQPONFY5Eb0Z9h690obyVgvf1JLmUX3vybMD0IT6yAuoYtAiQpEsaDzh8LbfoUH9bdL00gt2WfjXozBlUMJ/pib6MdscGeGQlOAHCkby33KEXP0gbDPEasi4+fEK+54QXr+gcGWcYvq7E8Do7frGLayx1l8jFGe09jGmeaaY62iVHvvYzgxfCj1BkeeRWxiivVQ0WiV6Lmy5NqY/YaReB0NLtN/5VhSzlOZP+ySwh3wBhgnaSITYJavghqAUYHzbMgrlTgR+AW7rkN8kTIgP3gB1Fm9Nx1W53ga0oTCN+WMpRHUEZ27YPPCoZcZhCb9nR2XFL/hZu8fT9ytdmDU9ApZ5Y="
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 6
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 5
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "NECROMANCER_LORD": 12
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

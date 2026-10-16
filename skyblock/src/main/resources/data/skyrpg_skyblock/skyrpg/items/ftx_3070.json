@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FTX_3070",
+ "base": "minecraft:paper",
+ "name": "FTX 3070",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

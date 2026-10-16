@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GOLD_NUGGET",
+ "base": "minecraft:gold_nugget",
+ "name": "Gold Nugget",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.3
+ }
+}

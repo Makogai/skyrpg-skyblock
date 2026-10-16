@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SPIKED_BAIT",
+ "base": "minecraft:paper",
+ "name": "Spiked Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

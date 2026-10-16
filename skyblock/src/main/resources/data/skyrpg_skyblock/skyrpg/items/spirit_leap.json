@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SPIRIT_LEAP",
+ "base": "minecraft:ender_pearl",
+ "name": "Spirit Leap",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100,
+  "dungeon_item": true
+ }
+}

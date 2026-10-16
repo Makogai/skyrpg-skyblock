@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FUMING_POTATO_BOOK",
+ "base": "minecraft:book",
+ "name": "Fuming Potato Book",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "dungeon_item": true,
+  "has_uuid": true
+ }
+}

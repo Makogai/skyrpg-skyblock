@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ELEANOR_TROUSERS",
+ "base": "minecraft:leather_leggings",
+ "name": "Eleanor's Trousers",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 75,
+  "rift_time": 20
+ },
+ "description": "§8§oThese trousers boast exquisite fabric, offering both comfort and a polished look.",
+ "color": "#FFD700",
+ "hypixel": {
+  "rift_transferrable": true,
+  "soulbound": "SOLO",
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ELEANOR": 5
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

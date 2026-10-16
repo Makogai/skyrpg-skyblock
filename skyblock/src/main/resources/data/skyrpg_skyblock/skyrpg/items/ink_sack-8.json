@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:8",
+ "base": "minecraft:gray_dye",
+ "name": "Gray Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

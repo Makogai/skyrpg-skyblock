@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BOWL",
+ "base": "minecraft:bowl",
+ "name": "Bowl",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

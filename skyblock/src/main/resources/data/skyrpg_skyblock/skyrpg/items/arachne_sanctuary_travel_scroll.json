@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "ARACHNE_SANCTUARY_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Arachne's Sanctuary",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

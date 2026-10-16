@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKULL_ITEM:1",
+ "base": "minecraft:wither_skeleton_skull",
+ "name": "Wither Skeleton Skull",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "soulbound": "COOP"
+ }
+}

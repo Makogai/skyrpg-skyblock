@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_GLISTERING_MELON",
+ "base": "minecraft:glistering_melon_slice",
+ "name": "Enchanted Glistering Melon Slice",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 500.0
+   }
+  }
+ }
+}

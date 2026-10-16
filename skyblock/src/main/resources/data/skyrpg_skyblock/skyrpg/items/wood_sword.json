@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WOOD_SWORD",
+ "base": "minecraft:wooden_sword",
+ "name": "Wooden Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "skyblock_id": "ZOMBIE_SOLDIER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Zombie Soldier Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 43,
+  "defense": 81
+ },
+ "color": "#D07F00",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 9
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_SOLDIER": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    81,
+    89,
+    98,
+    108,
+    119,
+    130,
+    143,
+    157,
+    173,
+    190
+   ],
+   "HEALTH": [
+    43,
+    47,
+    52,
+    57,
+    62,
+    69,
+    75,
+    83,
+    91,
+    100
+   ]
+  }
+ }
+}

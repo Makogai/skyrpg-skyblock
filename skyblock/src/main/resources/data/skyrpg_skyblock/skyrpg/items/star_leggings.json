@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "STAR_LEGGINGS",
+ "base": "minecraft:golden_leggings",
+ "name": "Leggings of the Stars",
+ "rarity": "unobtainable",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 15000,
+  "defense": 4000,
+  "intelligence": 1500
+ }
+}

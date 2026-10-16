@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "EXPLOSIVE_SHOT_ABILITY",
+ "base": "minecraft:bedrock",
+ "name": "Explosive Shot",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

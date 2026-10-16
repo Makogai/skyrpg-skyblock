@@ -1,0 +1,40 @@
+{
+ "skyblock_id": "JUNGLE_AXE",
+ "base": "minecraft:wooden_axe",
+ "name": "Spruce Axe",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "sweep": 4
+ },
+ "hypixel": {
+  "npc_sell_price": 480,
+  "can_have_booster": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FORAGING",
+   "parent": {
+    "JUNGLE_AXE": "TREECAPITATOR_AXE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

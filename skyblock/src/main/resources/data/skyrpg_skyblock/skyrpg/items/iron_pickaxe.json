@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "IRON_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Iron Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 25,
+  "mining_speed": 160,
+  "breaking_power": 3
+ },
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

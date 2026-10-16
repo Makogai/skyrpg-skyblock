@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "MANTICORE_CLAW",
+ "base": "minecraft:paper",
+ "name": "Manticore Claw",
+ "rarity": "legendary",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "strength": 20,
+  "crit_damage": 10,
+  "attack_speed": 2.5,
+  "ferocity": 4
+ },
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "MASTER"
+  }
+ }
+}

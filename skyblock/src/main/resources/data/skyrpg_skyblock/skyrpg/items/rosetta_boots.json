@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "ROSETTA_BOOTS",
+ "base": "minecraft:diamond_boots",
+ "name": "Rosetta's Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 480,
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ROSETTA": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "skyblock_id": "HOLY_DRAGON_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Holy Dragon Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 180,
+  "defense": 160,
+  "mending": 10
+ },
+ "color": "#47D147",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 70
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 70
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 110
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 190
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 230
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 16
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 10
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "RUBY",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "HOLY_DRAGON": 10
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

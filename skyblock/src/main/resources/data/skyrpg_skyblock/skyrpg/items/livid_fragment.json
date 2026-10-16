@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "LIVID_FRAGMENT",
+ "base": "minecraft:nether_brick",
+ "name": "Livid Fragment",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

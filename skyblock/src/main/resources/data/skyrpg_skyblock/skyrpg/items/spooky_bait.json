@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SPOOKY_BAIT",
+ "base": "minecraft:paper",
+ "name": "Spooky Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

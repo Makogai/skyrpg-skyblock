@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_PORK",
+ "base": "minecraft:porkchop",
+ "name": "Enchanted Raw Porkchop",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

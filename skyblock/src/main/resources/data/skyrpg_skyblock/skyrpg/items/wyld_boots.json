@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "WYLD_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Wyld Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "rift_time": 15
+ },
+ "color": "#154918",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

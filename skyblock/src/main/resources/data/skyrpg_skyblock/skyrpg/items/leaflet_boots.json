@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "LEAFLET_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Leaflet Sandals",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 25,
+  "foraging_fortune": 3
+ },
+ "color": "#4DCC4D",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LEAFLET": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

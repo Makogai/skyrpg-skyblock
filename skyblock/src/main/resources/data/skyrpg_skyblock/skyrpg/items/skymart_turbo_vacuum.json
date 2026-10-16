@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "SKYMART_TURBO_VACUUM",
+ "base": "minecraft:paper",
+ "name": "SkyMart Turbo Vacuum",
+ "rarity": "uncommon",
+ "category": "VACUUM",
+ "type": "Vacuum",
+ "stats": {
+  "damage": 150,
+  "farming_fortune": 10
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "SKYMART_TURBO_VACUUM": "SKYMART_HYPER_VACUUM"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

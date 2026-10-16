@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "THEORETICAL_HOE",
+ "base": "minecraft:iron_hoe",
+ "name": "Mathematical Hoe Blueprint",
+ "rarity": "common",
+ "type": "",
+ "description": "§7An ancient blueprint."
+}

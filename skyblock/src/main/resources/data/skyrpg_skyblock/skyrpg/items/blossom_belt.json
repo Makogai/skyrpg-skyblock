@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "BLOSSOM_BELT",
+ "base": "minecraft:paper",
+ "name": "Blossom Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 15,
+  "farming_fortune": 7
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "double_tap_to_drop": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 7
+   },
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BLOSSOM": 8
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

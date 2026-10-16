@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WOOD_AXE",
+ "base": "minecraft:wooden_axe",
+ "name": "Wooden Axe",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

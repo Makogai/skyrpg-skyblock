@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SALMON_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Salmon Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 100,
+  "defense": 30,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#C13C0F",
+ "hypixel": {
+  "npc_sell_price": 125,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "museum": true
+ }
+}

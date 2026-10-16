@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "STONE_PICKAXE",
+ "base": "minecraft:stone_pickaxe",
+ "name": "Stone Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 20,
+  "mining_speed": 110,
+  "breaking_power": 2
+ },
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

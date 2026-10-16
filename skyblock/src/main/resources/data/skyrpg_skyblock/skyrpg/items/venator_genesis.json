@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "VENATOR_GENESIS",
+ "base": "minecraft:golden_axe",
+ "name": "Worn Huntaxe - Genesis",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 5
+ },
+ "description": "§8§oEx tenebris, primus venator surgit.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 1,
+   "parent": {
+    "VENATOR_GENESIS": "SILVA_DOMINUS"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "RABBIT_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Rabbit Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 15,
+  "speed": 5
+ },
+ "color": "#CBD2DB",
+ "hypixel": {
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "RABBIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

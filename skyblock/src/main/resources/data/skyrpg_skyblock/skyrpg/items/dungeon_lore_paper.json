@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DUNGEON_LORE_PAPER",
+ "base": "minecraft:book",
+ "name": "Journal",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

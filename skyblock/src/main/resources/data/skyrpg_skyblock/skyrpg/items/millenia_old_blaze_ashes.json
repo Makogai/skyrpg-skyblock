@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MILLENIA_OLD_BLAZE_ASHES",
+ "base": "minecraft:paper",
+ "name": "Millennia-Old Blaze Ashes",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Despite being ephemeral creatures, blaze ashes are eternal.",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

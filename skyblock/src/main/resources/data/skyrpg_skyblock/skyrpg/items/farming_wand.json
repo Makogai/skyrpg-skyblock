@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FARMING_WAND",
+ "base": "minecraft:golden_hoe",
+ "name": "Wand of Farming",
+ "rarity": "rare",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

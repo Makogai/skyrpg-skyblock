@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "HOLY_ICE",
+ "base": "minecraft:diamond",
+ "name": "Holy Ice",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "motes_sell_price": 5,
+  "origin": "RIFT",
+  "item_specific": {
+   "duration_ticks": 30,
+   "damage_multiplier": 0.2
+  },
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 1
+   }
+  ]
+ }
+}

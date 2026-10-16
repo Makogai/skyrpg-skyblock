@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "ETERNAL_HOOF",
+ "base": "minecraft:golden_horse_armor",
+ "name": "Eternal Hoof",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

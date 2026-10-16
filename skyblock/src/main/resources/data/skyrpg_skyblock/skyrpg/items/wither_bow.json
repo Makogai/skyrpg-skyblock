@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "WITHER_BOW",
+ "base": "minecraft:bow",
+ "name": "Wither Bow",
+ "rarity": "uncommon",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

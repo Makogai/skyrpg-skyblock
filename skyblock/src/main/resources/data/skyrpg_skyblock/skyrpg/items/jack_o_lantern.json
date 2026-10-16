@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JACK_O_LANTERN",
+ "base": "minecraft:jack_o_lantern",
+ "name": "Jack o' Lantern",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

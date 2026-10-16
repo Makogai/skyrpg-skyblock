@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "WITHER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Wither Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 250,
+  "defense": 220,
+  "intelligence": 10
+ },
+ "color": "#000000",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 700
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {
+    "WITHER": "TANK_WITHER"
+   },
+   "armor_set_donation_xp": {
+    "WITHER": 10
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

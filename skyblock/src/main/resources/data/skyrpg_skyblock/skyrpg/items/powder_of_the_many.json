@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "POWDER_OF_THE_MANY",
+ "base": "minecraft:paper",
+ "name": "Powder of the Many",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "item_specific": {
+   "powders": [
+    "MITHRIL",
+    "GEMSTONE",
+    "GLACITE"
+   ],
+   "bonus": 7.5
+  }
+ }
+}

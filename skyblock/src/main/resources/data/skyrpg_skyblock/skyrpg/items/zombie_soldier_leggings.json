@@ -1,0 +1,97 @@
+{
+ "skyblock_id": "ZOMBIE_SOLDIER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Zombie Soldier Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 34,
+  "defense": 71
+ },
+ "color": "#D07F00",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 5,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 9
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ZOMBIE_SOLDIER": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    71,
+    78,
+    85,
+    94,
+    103,
+    113,
+    124,
+    137,
+    150,
+    165
+   ],
+   "HEALTH": [
+    34,
+    38,
+    41,
+    45,
+    50,
+    55,
+    60,
+    66,
+    73,
+    80
+   ]
+  }
+ }
+}

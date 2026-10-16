@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ENCHANTED_BOOK_BUNDLE_TRANSYLVANIAN",
+ "base": "minecraft:player_head",
+ "name": "Enchanted Book Bundle",
+ "rarity": "legendary",
+ "type": "",
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYyNzM2MDU0MDg0OCwKICAicHJvZmlsZUlkIiA6ICIwYWFjMWRlZjUwZmI0N2RjODNmOGU2Njk3MTg1ODRkZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ0aGVhcGlpc2JhZCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xOWM3NjkwODMxNjNlOWFlYmQ4ZWQ1ZDY2YmViY2I5ZGYyMWNhYmFlNjNiYWFhYTBkM2FiZTE0MjBhNGFiNThmIgogICAgfQogIH0KfQ==",
+  "signature": "C8mn/x/AAXZo6lbXGepQLVotBPOz0PHfPMK+ofGJzRRdEhbsSkVXWpjos2KB2pXfRNVxwXELqleSYnF287TqdwOgLoD6av9tfeLMZ4h9wyQDXrNVt4/HdoTi4uAqEPE2GgD+UD/ls4VNXHf/6iftFRdhyH/96iMJjaEa5A9BJ7Xv5wNmWkdHiljCf6+y65ebOtpXtaYKdp+1FiDfDCsJ6EX10yEEt9J4/EniB+1+GrbmRyR/PoKQRr2NZEaTDkY1CgJdOTTb7Sia2jASmSRb6X1VElsesKjgjEc17sDS3rJUf5vaAXoJWqlDylmTkAuRlvqoVx2llqiJ+bgC/nqsKwRK2Lgt6hDvjRSIO3UvmijHPD9mjEAOntv+2TCkokOJRdhEKJ6Z7TlpUpNoNhTspvZnFjx52JOUL/+vbxnjMDfsp9p095vg6eVoiI/ANCtVgpay5yAWlqPr+mLdxIL3+SQEt4yaO7NgsDLLDK64Lt0XfMIu5JHChvvv4qCovcGgXmr4S2puvZvsg2x23R25Kr2D2E7JFE4SSBjoTuAfwx+w1QO7/AXXvuqXA4cx87v2jkkAJ3E8TAs+COsJZWzea52Jzo/cpDUq4cIbClqSUaMpyqprQI5Ea/7HuBeUeQYk63gJr856UrIcK1lwSle3UQqJb8khqXHaDWre2g86pOY="
+ },
+ "hypixel": {
+  "soulbound": "SOLO",
+  "npc_sell_price": 1000,
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

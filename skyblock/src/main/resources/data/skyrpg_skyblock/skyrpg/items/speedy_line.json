@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SPEEDY_LINE",
+ "base": "minecraft:paper",
+ "name": "Speedy Line",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

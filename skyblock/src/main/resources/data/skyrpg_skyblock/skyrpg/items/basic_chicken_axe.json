@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "BASIC_CHICKEN_AXE",
+ "base": "minecraft:wooden_axe",
+ "name": "Basic Chicken Axe",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 10
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "FARMING",
+   "donation_xp": 1,
+   "parent": {
+    "BASIC_CHICKEN_AXE": "CHICKEN_AXE"
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "skyblock_id": "STARRED_DAEDALUS_AXE",
+ "base": "minecraft:golden_sword",
+ "name": "Daedalus Blade",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "hypixel": {
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 40
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 40
+     }
+    ]
+   }
+  ]
+ }
+}

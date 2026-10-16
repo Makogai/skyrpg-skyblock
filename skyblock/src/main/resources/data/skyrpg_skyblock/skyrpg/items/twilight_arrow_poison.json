@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TWILIGHT_ARROW_POISON",
+ "base": "minecraft:purple_dye",
+ "name": "Twilight Arrow Poison",
+ "rarity": "uncommon",
+ "category": "ARROW_POISON",
+ "type": "Arrow Poison",
+ "hypixel": {
+  "npc_sell_price": 650
+ }
+}

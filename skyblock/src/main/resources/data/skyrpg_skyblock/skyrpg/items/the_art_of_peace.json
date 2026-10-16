@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "THE_ART_OF_PEACE",
+ "base": "minecraft:book",
+ "name": "The Art of Peace",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "museum": true
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BRONZE_SHIP_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Bronze Ship Engine",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_recombobulate": false
+ }
+}

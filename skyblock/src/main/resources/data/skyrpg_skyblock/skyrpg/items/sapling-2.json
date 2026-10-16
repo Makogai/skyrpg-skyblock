@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAPLING:2",
+ "base": "minecraft:birch_sapling",
+ "name": "Birch Sapling",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP:7",
+ "base": "minecraft:quartz_slab",
+ "name": "Quartz Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

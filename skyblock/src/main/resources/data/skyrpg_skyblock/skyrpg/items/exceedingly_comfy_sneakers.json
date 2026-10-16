@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "EXCEEDINGLY_COMFY_SNEAKERS",
+ "base": "minecraft:leather_boots",
+ "name": "Exceedingly Comfy Sneakers",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "rift_time": 45,
+  "rift_walk_speed": 5
+ },
+ "description": "§7Stay classy.",
+ "color": "#380024",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "skyblock_id": "SUPER_UNDEAD_BOW",
+ "base": "minecraft:bow",
+ "name": "Super Undead Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 220
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 3
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "DUNGEONEERING",
+   "game_stage": "INTERMEDIATE",
+   "parent": {
+    "SUPER_UNDEAD_BOW": "DEATH_BOW"
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WORM_MEMBRANE",
+ "base": "minecraft:rotten_flesh",
+ "name": "Worm Membrane",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 15000
+ }
+}

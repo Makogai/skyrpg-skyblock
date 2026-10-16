@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "DIAMOND_THE_FISH",
+ "base": "minecraft:cooked_salmon",
+ "name": "Diamond the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "soulbound": "SOLO",
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "reward": "DIAMOND"
+   }
+  ]
+ }
+}

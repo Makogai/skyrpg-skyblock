@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STONE_HOE",
+ "base": "minecraft:stone_hoe",
+ "name": "Stone Hoe",
+ "rarity": "common",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

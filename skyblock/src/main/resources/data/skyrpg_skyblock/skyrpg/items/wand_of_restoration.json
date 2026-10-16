@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "WAND_OF_RESTORATION",
+ "base": "minecraft:stick",
+ "name": "Wand of Restoration",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "WAND_OF_RESTORATION": "WAND_OF_ATONEMENT"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

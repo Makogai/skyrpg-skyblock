@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "JUICY_SPRAYONATOR",
+ "base": "minecraft:paper",
+ "name": "Juicy Sprayonator",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FARMING",
+   "parent": {
+    "JUICY_SPRAYONATOR": "SALTY_SPRAYONATOR"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

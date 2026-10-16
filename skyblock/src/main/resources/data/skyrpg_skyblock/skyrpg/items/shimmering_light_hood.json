@@ -1,0 +1,334 @@
+{
+ "skyblock_id": "SHIMMERING_LIGHT_HOOD",
+ "base": "minecraft:player_head",
+ "name": "Shimmering Light Hood",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 80,
+  "defense": 70,
+  "speed": 10,
+  "intelligence": 70
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0MzYwODI4OTQ4NiwKICAicHJvZmlsZUlkIiA6ICIxNmFkYTc5YjFjMDk0MjllOWEyOGQ5MjgwZDNjNjE5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMYXp1bGl0ZV9adG9uZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83NjRiMzUyZjg3ZTdiNTIyOTEwNzljMTIwNjEwMTBmM2Y1M2NmMTViZmI5Y2UwMmY2NDdiZGY4NDZhNWFmYjRjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "jQk/M4mKYhQt46ox3CnF0ZgH8PgiX/O9IpcINYbT1wkB/MJixY/hACSL7CQmKy2Uo6icooZZdYsHrgmu9nilGJNQxz6/XuLuZcKuduOZAk/SHzUg46qepr5AwG8gZSxSnv8di7wl/sx7Hd5NwC1rdDDMpt/24tX5DlohLE4a3dPhSCoVkvAYcgj3qNCz2KMGhC0Zj6ax5i7wuvHdDjRz95bn38Wx+SEKPOO1aW0lHhYREXlkqL8j6UN6i856pn2XTOgrpzH7vCn+Pc/gBlFOAk/99E3QfaTItiYIv4zNfttd7KRUl4NFTGG0KDr/+PS6fpbuMs4Q9umYkOQ3JMhWWVozq6mdXUSkxDOpVKu976pBtR0klOVaqZ2SDo8i1Ynbjb6Z3MSg1dNShrl268MFNzUcRH67a7OuknAt3pWnjSrCQxa3kcBenZpvumVv6wuYPgpGwte3tkUomeihRcBCrTuk/mcD/BN+lYgjPODuZj5qkiJmLwjg8mbliLPZrh1pLiMBgYkbOGvQGsaosHRjMxCrwVhW+w4mRSXNhHpffq7vSpOwoq31TmTPbAa2jTf+sFebzel5e5xcn7BKMTUH7UhWTsT1X1IDlCQ4+08YD6vwjDYSV/GTgLA8fRDNNm1pPpBgxo6ZLQNLJWy2yYBzpS6hR/opDseUpi4ZJYom1Kc="
+ },
+ "hypixel": {
+  "npc_sell_price": 129500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 5
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 16
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SHIMMERING_LIGHT": 16
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

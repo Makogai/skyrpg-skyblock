@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JELLY",
+ "base": "minecraft:paper",
+ "name": "Jelly",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

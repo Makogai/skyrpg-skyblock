@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVES:2",
+ "base": "minecraft:birch_leaves",
+ "name": "Birch Leaves",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

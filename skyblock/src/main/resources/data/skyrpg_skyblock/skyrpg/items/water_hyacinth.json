@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WATER_HYACINTH",
+ "base": "minecraft:paper",
+ "name": "Water Hyacinth",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§8§oThe Torrid is born when a water hyacinth blooms for the first time.",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 1000000
+ }
+}

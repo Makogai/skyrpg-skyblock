@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "SYNTHESIZER_V2",
+ "base": "minecraft:paper",
+ "name": "Synthesizer v2",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 9280,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {
+    "SYNTHESIZER_V2": "SYNTHESIZER_V3"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

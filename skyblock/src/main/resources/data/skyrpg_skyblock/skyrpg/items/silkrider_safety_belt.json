@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SILKRIDER_SAFETY_BELT",
+ "base": "minecraft:paper",
+ "name": "Silkrider Safety Belt",
+ "rarity": "uncommon",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "rift_time": 60,
+  "rift_walk_speed": 2
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

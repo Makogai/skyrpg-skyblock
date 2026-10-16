@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SALMON_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Salmon Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 85,
+  "defense": 20,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#C13C0F",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "museum": true
+ }
+}

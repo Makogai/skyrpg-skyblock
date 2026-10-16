@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "CACTUS_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Cactus Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 5,
+  "defense": 10
+ },
+ "color": "#00FF00",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "CACTUS": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

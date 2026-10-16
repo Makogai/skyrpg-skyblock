@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "YOUNG_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Young Dragon Fragment",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "AGARIMOO_TONGUE",
+ "base": "minecraft:mutton",
+ "name": "Agarimoo Tongue",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Agarimoos have five stomachs and 3 tongues. For this specific Agarimoo, past tense is more accurate.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "sort_by_accessory_tier": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_QUARTZ",
+ "base": "minecraft:quartz",
+ "name": "Enchanted Nether Quartz",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

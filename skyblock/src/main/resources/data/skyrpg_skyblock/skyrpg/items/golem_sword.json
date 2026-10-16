@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "GOLEM_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Golem Sword",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 80,
+  "strength": 125,
+  "weapon_ability_damage": 250,
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 77000,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

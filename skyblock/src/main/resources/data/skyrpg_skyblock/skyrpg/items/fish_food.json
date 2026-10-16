@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FISH_FOOD",
+ "base": "minecraft:cod",
+ "name": "Fish Food",
+ "rarity": "common",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BIRCH_FENCE",
+ "base": "minecraft:birch_fence",
+ "name": "Birch Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

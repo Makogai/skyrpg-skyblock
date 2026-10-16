@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MANGCORE",
+ "base": "minecraft:paper",
+ "name": "Mangcore",
+ "rarity": "rare",
+ "type": "",
+ "description": "§oMangroves' finest gift, a shard echoing with tales of brine and bristle.",
+ "hypixel": {
+  "npc_sell_price": 358400
+ }
+}

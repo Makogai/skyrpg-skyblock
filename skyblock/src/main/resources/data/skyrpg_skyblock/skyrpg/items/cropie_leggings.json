@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "CROPIE_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Cropie Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 165,
+  "defense": 30,
+  "speed": 4,
+  "farming_fortune": 25,
+  "bonus_pest_chance": 12.5
+ },
+ "color": "#94451F",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 30
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "CROPIE": "SQUASH"
+   },
+   "armor_set_donation_xp": {
+    "CROPIE": 6
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

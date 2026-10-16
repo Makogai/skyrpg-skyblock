@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD:4",
+ "base": "minecraft:acacia_planks",
+ "name": "Acacia Planks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

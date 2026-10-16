@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CREEPER_HAT",
+ "base": "minecraft:creeper_head",
+ "name": "Creeper Hat",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 5,
+  "crit_chance": 5,
+  "crit_damage": 5,
+  "health": 5,
+  "defense": 5,
+  "intelligence": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 16,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "game_stage": "STARTER"
+  }
+ }
+}

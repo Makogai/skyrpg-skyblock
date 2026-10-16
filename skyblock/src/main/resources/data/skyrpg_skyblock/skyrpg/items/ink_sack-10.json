@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:10",
+ "base": "minecraft:lime_dye",
+ "name": "Lime Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ANCIENT_ELEVATOR",
+ "base": "minecraft:quartz_stairs",
+ "name": "Ancient Elevator",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true,
+  "can_auction": false,
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

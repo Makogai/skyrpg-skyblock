@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DIAMOND",
+ "base": "minecraft:diamond",
+ "name": "Diamond",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

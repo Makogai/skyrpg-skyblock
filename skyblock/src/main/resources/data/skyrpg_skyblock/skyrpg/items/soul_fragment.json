@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SOUL_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Soul Fragment",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Dropped by Grim Reaper sea creatures during the Spooky Festival.",
+ "hypixel": {
+  "npc_sell_price": 200000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

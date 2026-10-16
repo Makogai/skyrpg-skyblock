@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "HONEYCOMB_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Honeycomb Necklace",
+ "rarity": "epic",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "foraging_fortune": 25,
+  "sweep": 5
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 30
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "armor_set_donation_xp": {
+    "HONEYCOMB": 8
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

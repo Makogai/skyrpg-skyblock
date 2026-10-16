@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_RED_SAND_CUBE",
+ "base": "minecraft:paper",
+ "name": "Enchanted Red Sand Cube",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128000,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DAY_SAVER",
+ "base": "minecraft:daylight_detector",
+ "name": "Day Saver",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 35
+ }
+}

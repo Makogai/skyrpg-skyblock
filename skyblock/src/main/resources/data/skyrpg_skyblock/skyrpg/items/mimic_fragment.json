@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MIMIC_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Mimic Fragment",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "dungeon_item": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

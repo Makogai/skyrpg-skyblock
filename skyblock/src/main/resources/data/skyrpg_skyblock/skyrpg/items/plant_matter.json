@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "PLANT_MATTER",
+ "base": "minecraft:paper",
+ "name": "Plant Matter",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 150,
+    "render_lore": false
+   }
+  ]
+ }
+}

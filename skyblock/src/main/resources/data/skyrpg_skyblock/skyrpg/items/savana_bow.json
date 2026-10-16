@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "SAVANA_BOW",
+ "base": "minecraft:bow",
+ "name": "Savanna Bow",
+ "rarity": "uncommon",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 500,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

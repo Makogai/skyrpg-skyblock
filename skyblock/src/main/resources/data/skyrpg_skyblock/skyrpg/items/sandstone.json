@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SANDSTONE",
+ "base": "minecraft:sandstone",
+ "name": "Sandstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

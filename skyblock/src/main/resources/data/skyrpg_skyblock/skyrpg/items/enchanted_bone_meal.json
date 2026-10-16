@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_BONE_MEAL",
+ "base": "minecraft:bone_meal",
+ "name": "Enchanted Bone Meal",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

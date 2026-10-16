@@ -1,0 +1,63 @@
+{
+ "skyblock_id": "HELIANTHUS_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Helianthus Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 205,
+  "defense": 50,
+  "speed": 7,
+  "farming_fortune": 40,
+  "bonus_pest_chance": 20
+ },
+ "color": "#FFE501",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 50
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "HELIANTHUS": 15
+   },
+   "game_stage": "MASTER"
+  }
+ }
+}

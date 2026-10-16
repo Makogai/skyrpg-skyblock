@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "REFINED_TITANIUM",
+ "base": "minecraft:paper",
+ "name": "Refined Titanium",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 51200
+ }
+}

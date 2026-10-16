@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "PET_ITEM_TIER_BOOST_DROP",
+ "base": "minecraft:red_dye",
+ "name": "Tier Boost Core",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Used to craft the Tier Boost pet item.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

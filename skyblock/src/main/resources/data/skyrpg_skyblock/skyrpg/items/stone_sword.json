@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "STONE_SWORD",
+ "base": "minecraft:stone_sword",
+ "name": "Stone Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

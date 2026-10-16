@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "PARTY_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Party Cloak",
+ "rarity": "uncommon",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "PARTY": 4
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

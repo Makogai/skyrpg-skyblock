@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "SPEEDSTER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Speedster Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 35,
+  "speed": 15
+ },
+ "color": "#E0FCF7",
+ "hypixel": {
+  "npc_sell_price": 2560,
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "SPEEDSTER": "THERMODYNAMIC"
+   },
+   "armor_set_donation_xp": {
+    "SPEEDSTER": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

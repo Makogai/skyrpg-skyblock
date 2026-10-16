@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_BEETLE",
+ "base": "minecraft:music_disc_mellohi",
+ "name": "Not Just a Pest Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

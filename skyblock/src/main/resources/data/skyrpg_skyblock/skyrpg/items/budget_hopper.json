@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BUDGET_HOPPER",
+ "base": "minecraft:hopper",
+ "name": "Budget Hopper",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1200
+ }
+}

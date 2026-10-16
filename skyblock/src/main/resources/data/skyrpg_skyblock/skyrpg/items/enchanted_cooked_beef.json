@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_COOKED_BEEF",
+ "base": "minecraft:cooked_beef",
+ "name": "Enchanted Beef",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 102400
+ }
+}

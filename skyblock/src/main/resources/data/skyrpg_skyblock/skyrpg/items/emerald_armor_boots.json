@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "EMERALD_ARMOR_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Emerald Armor Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 45
+ },
+ "color": "#00FF00",
+ "hypixel": {
+  "npc_sell_price": 310000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "EMERALD_ARMOR": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

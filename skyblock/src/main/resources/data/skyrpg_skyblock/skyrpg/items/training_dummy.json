@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TRAINING_DUMMY",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Training Dummy",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

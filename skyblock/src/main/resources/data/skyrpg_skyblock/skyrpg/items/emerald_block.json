@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "EMERALD_BLOCK",
+ "base": "minecraft:emerald_block",
+ "name": "Block of Emerald",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 36,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 14.0,
+    "MINION_STORAGE": 3.6
+   }
+  }
+ }
+}

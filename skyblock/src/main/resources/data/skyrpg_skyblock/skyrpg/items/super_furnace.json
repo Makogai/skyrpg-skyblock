@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "SUPER_FURNACE",
+ "base": "minecraft:furnace",
+ "name": "Super Furnace",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true
+}

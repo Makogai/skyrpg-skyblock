@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DETECTOR_RAIL",
+ "base": "minecraft:detector_rail",
+ "name": "Detector Rail",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

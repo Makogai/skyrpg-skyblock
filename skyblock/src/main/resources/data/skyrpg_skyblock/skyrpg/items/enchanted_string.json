@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_STRING",
+ "base": "minecraft:string",
+ "name": "Enchanted String",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 576,
+  "can_place": false,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 38.0
+   }
+  }
+ }
+}

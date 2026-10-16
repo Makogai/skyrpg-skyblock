@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_PACKED_ICE",
+ "base": "minecraft:packed_ice",
+ "name": "Enchanted Packed Ice",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 12800,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 12800.0
+   }
+  }
+ }
+}

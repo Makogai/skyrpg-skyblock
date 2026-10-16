@@ -1,0 +1,92 @@
+{
+ "skyblock_id": "ORNATE_ZOMBIE_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Ornate Zombie Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 110,
+  "strength": 60,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "actionbar_resource": "VITALITY",
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 90
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   },
+   {
+    "slot_type": "RUBY",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 20000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 10
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "ORNATE_ZOMBIE_SWORD": "FLORID_ZOMBIE_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

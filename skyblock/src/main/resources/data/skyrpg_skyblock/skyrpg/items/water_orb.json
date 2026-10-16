@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Water Orb",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7A perfectly smooth, highly condensed orb of pure fish matter.\n\nUsed as a core ingredient in high level fishing crafts.\n\n§8Smells like fish...",
+ "hypixel": {
+  "npc_sell_price": 3000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

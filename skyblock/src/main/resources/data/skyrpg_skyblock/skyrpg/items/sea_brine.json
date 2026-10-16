@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SEA_BRINE",
+ "base": "minecraft:paper",
+ "name": "Sea Brine",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Dropped by the §aBrineling §7in §6Torrhus Canyon§7.\n\n§8§oHighly concentrated saltwater, between three to eight times saltier than seawater.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BRICK",
+ "base": "minecraft:bricks",
+ "name": "Bricks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

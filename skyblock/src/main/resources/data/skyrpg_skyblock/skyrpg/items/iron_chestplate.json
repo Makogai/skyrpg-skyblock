@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "IRON_CHESTPLATE",
+ "base": "minecraft:iron_chestplate",
+ "name": "Iron Chestplate",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

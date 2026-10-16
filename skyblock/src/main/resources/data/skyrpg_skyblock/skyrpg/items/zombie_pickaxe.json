@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ZOMBIE_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Zombie Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "mining_speed": 190,
+  "breaking_power": 3
+ },
+ "hypixel": {
+  "npc_sell_price": 3,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "MINING",
+   "game_stage": "STARTER"
+  }
+ }
+}

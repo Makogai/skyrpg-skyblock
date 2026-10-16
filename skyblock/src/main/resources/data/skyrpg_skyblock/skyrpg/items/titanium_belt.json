@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "TITANIUM_BELT",
+ "base": "minecraft:paper",
+ "name": "Titanium Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "mining_speed": 30,
+  "mining_fortune": 10
+ },
+ "hypixel": {
+  "MINING_FORTUNE": 150,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 3
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "armor_set_donation_xp": {
+    "TITANIUM": 4
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

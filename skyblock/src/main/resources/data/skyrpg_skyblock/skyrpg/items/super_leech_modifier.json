@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SUPER_LEECH_MODIFIER",
+ "base": "minecraft:slime_block",
+ "name": "Super Leech Modifier",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Can be combined with an §9Aspect of the Leech §7in a Crafting Table to increase its range from §a4 blocks §7to §a5 blocks §7and decrease its §bMana Cost §7from §b60 §7to §b50§7.",
+ "hypixel": {
+  "origin": "RIFT",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

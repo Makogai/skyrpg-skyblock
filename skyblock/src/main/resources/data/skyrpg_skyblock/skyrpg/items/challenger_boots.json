@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "CHALLENGER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Challenger's Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 5,
+  "health": 40,
+  "defense": 30
+ },
+ "color": "#2A5B48",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CHALLENGER": "MYTHOS"
+   },
+   "armor_set_donation_xp": {
+    "CHALLENGER": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

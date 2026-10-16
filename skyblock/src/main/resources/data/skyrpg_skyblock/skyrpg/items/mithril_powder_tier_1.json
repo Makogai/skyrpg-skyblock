@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MITHRIL_POWDER_TIER_1",
+ "base": "minecraft:lime_dye",
+ "name": "X Mithril Powder",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "can_auction": false,
+  "can_trade": false
+ }
+}

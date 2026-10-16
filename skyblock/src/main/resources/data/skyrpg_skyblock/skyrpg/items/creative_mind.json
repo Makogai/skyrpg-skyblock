@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "CREATIVE_MIND",
+ "base": "minecraft:paper",
+ "name": "Creative Mind",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

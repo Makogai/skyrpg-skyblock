@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "QUARTZ_ORE",
+ "base": "minecraft:nether_quartz_ore",
+ "name": "Nether Quartz Ore",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 5.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

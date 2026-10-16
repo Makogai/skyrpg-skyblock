@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "ZOMBIE_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Zombie Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 200,
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 250000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 200
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 16
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "ZOMBIE": "REVENANT"
+   },
+   "armor_set_donation_xp": {
+    "ZOMBIE": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

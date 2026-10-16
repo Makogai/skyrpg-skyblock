@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RIFTWART_ROOTS",
+ "base": "minecraft:nether_wart",
+ "name": "Riftwart Roots",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Do not eat.",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

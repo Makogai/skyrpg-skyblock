@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SWORD_OF_THE_MULTIVERSE",
+ "base": "minecraft:iron_sword",
+ "name": "Sword of the Multiverse",
+ "rarity": "unobtainable",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "swing_range": 15,
+  "rift_damage": 99999999
+ },
+ "description": "§7┻━┻§f︵ §c\\(°□°)/ §f︵§7┻━┻",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ENCHANTED_DANDELION",
+ "base": "minecraft:dandelion",
+ "name": "Enchanted Dandelion",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160,
+  "can_place": false,
+  "experience": {
+   "foraging": {
+    "MINION_STORAGE": 16.0
+   }
+  },
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 360
+   }
+  ]
+ }
+}

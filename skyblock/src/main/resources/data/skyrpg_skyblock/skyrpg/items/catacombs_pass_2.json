@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "CATACOMBS_PASS_2",
+ "base": "minecraft:player_head",
+ "name": "Catacombs Pass II",
+ "rarity": "uncommon",
+ "category": "DUNGEON_PASS",
+ "type": "Dungeon Pass",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0Mjc1MTQ5NSwKICAicHJvZmlsZUlkIiA6ICJmNTBjOGRkN2FiN2Y0ZmUyYWI4ZGI1M2NjYzRiYWQxMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJtYWNoYWRvVF9UIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ViYWYyYWU3NDU1M2E2NDU4Nzg0MGQ2ZTcwZmIyN2QyYzBhZTJmOGJkZmFjYmU1NjY1NGM4ZGI0MDAxY2RjOTgiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "WFWoQtXVxkbHwUHMo8WD2COc59tQChdpwpYEc3kfLns0dhfYUwiYMF+Y2RqoBbpsbP2Fu4eskdjASiNtnYjptY4EBb93aFncU3eNHwmgrvnfQtuCq8xcfxKnai80tEsemURziH2OXA4ewMQTkHJSYgek896XryNhZhhIclu1edUCvhrYAO9vUPmCvfsA5LWgYkCJPiUv2WEacC+7CVqXj0E+PY7ouPohWLWVFXo7gv/3uwfrlokAiwd2sI9lJcb8Kk014BX4DfpHwOl2+RDXF9W09/207Vpy7sEH2ytdtONNREdF5hkIl5KncpwsnpcQu8WCkATg5NM6bMGMC5tLtQCelZjzkrJm/9U7JMjrX3xVSQTbBA/wg/FolZZdx5U+n36c4ftkrn7vvkqZDcfv45osf8/qOIKZSSsP90fH5KADWuSnpETV3Ox/PfSjYJgz9qCFk+WCSBOBmkReB5ewOFWAacmaswGLCbOvnbAyXKtC2FKA+WmAplhukGE1XnXr6xSPmnoL4cdf1SXb/WjTh+gcOsvzF7PMvVoUIOJYzKjozXJEmtN08ZJY73qZY1zIq+iN5FCp8HOfjJesHnbB82iC1kokeFDcVeLO5KXgmgHH9MAg273Rmysa/AmHthnthFWsH9vBvODoucwQH5yKjOI6mp4quSC9hs/gJBVJpHc="
+ },
+ "hypixel": {
+  "dungeon_item": true
+ }
+}

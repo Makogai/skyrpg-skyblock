@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CAKE",
+ "base": "minecraft:cake",
+ "name": "Cake",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

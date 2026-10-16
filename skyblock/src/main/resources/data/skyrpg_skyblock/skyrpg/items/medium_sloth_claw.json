@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MEDIUM_SLOTH_CLAW",
+ "base": "minecraft:paper",
+ "name": "Medium Sloth Claw",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

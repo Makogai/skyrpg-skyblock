@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "SPIRIT_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Spirit Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 210,
+  "strength": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 4
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "SPIRIT_SWORD": "BONE_REAVER"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

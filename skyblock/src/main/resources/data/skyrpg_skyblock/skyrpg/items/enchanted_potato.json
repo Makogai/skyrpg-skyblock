@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_POTATO",
+ "base": "minecraft:potato",
+ "name": "Enchanted Potato",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "can_place": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

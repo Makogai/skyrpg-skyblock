@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "CURSUS_FERAE",
+ "base": "minecraft:golden_axe",
+ "name": "Reinforced Huntaxe - Cursus",
+ "rarity": "rare",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 15
+ },
+ "description": "§8§oFera fugit, cursus sequitur.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 4,
+   "parent": {
+    "CURSUS_FERAE": "APEX_PRAEDATOR"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

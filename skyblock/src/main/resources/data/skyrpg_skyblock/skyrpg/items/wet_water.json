@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WET_WATER",
+ "base": "minecraft:paper",
+ "name": "Wet Water",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§oThe wettest kind of water you'll ever find.",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

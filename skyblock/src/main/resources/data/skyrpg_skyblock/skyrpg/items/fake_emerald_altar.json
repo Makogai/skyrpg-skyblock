@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FAKE_EMERALD_ALTAR",
+ "base": "minecraft:emerald_block",
+ "name": "Fake Emerald Altar",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§8§oCan't bring the girl to the altar? Bring the altar to the girl!",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BRONZE_BOWL",
+ "base": "minecraft:paper",
+ "name": "Bronze Bowl",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A broken old bowl. Maybe you can use it to upgrade your §6Ship§7?",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

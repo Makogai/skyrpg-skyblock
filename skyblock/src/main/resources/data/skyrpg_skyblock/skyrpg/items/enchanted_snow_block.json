@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SNOW_BLOCK",
+ "base": "minecraft:snow_block",
+ "name": "Enchanted Snow Block",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 600,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 64.0
+   }
+  }
+ }
+}

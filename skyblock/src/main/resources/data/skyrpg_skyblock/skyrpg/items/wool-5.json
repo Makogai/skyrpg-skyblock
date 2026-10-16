@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:5",
+ "base": "minecraft:lime_wool",
+ "name": "Lime Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

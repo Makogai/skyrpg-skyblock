@@ -1,0 +1,89 @@
+{
+ "skyblock_id": "DIVAN_DRILL",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Divan's Drill",
+ "rarity": "mythic",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 1800,
+  "mining_fortune": 150,
+  "breaking_power": 10
+ },
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 7
+   }
+  ],
+  "museum": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 20
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 40
+     }
+    ]
+   },
+   {
+    "slot_type": "MINING",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JADE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMBER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_TOPAZ_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 25,
+   "category": "MINING",
+   "game_stage": "MASTER"
+  }
+ }
+}

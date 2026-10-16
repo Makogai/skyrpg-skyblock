@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GREAT_SPOOK_GLOVES",
+ "base": "minecraft:paper",
+ "name": "Great Spook Gloves",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "fear": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

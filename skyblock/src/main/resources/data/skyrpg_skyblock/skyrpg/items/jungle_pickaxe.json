@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "JUNGLE_PICKAXE",
+ "base": "minecraft:wooden_pickaxe",
+ "name": "Jungle Pickaxe",
+ "rarity": "uncommon",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 50,
+  "mining_speed": 330,
+  "breaking_power": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 4
+   }
+  ],
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "MINING",
+   "game_stage": "SKILLED"
+  }
+ }
+}

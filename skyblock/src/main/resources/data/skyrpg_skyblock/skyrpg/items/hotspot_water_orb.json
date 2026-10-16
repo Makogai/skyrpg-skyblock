@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "HOTSPOT_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Hotspot Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Radiating some weird energy.\n\n§8Probably safe to hold?",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

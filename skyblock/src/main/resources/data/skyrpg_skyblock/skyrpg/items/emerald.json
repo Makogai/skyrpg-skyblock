@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "EMERALD",
+ "base": "minecraft:emerald",
+ "name": "Emerald",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.4
+   }
+  }
+ }
+}

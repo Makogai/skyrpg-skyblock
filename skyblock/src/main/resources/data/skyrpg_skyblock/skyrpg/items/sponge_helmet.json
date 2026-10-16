@@ -1,0 +1,48 @@
+{
+ "skyblock_id": "SPONGE_HELMET",
+ "base": "minecraft:sponge",
+ "name": "Sponge Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 100,
+  "sea_creature_chance": 2
+ },
+ "hypixel": {
+  "npc_sell_price": 40000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 17
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "SPONGE": "SHARK_SCALE"
+   },
+   "armor_set_donation_xp": {
+    "SPONGE": 6
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

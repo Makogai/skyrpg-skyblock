@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MAGICAL_LAVA_BUCKET",
+ "base": "minecraft:lava_bucket",
+ "name": "Magical Lava Bucket",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 30,
+  "can_burn_in_furnace": true
+ }
+}

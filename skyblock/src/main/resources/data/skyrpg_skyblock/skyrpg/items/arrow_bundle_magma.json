@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARROW_BUNDLE_MAGMA",
+ "base": "minecraft:paper",
+ "name": "Bundle of Magma Arrows",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 25
+   }
+  ]
+ }
+}

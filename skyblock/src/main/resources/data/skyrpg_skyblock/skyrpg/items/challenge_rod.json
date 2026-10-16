@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "CHALLENGE_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Challenging Rod",
+ "rarity": "uncommon",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 75,
+  "strength": 75,
+  "sea_creature_chance": 2,
+  "fishing_speed": 35,
+  "treasure_chance": 0.5
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "parent": {
+    "CHALLENGE_ROD": "CHAMP_ROD"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

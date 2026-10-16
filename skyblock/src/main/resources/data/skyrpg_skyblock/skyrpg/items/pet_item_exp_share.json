@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_EXP_SHARE",
+ "base": "minecraft:dandelion",
+ "name": "Exp Share",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

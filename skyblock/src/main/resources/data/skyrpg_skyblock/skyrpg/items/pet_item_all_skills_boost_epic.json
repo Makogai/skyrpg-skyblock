@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_ALL_SKILLS_BOOST_EPIC",
+ "base": "minecraft:diamond",
+ "name": "All Skills Exp Boost",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

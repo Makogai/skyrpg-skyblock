@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "REFINED_AMBER",
+ "base": "minecraft:paper",
+ "name": "Andesite Whetstone",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

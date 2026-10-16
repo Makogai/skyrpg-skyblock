@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "BRAIDED_GRIFFIN_FEATHER",
+ "base": "minecraft:string",
+ "name": "Braided Griffin Feather",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The exquisite feather of a mythical creature. Its woven strands shimmer with an inimitable grace and majesty.",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 1000000
+ }
+}

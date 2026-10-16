@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "HELIX_LOG",
+ "base": "minecraft:paper",
+ "name": "Helix Log",
+ "rarity": "common",
+ "type": "",
+ "description": "§7A particularly resilient type of log that, should they not know the secret to cutting it, will outlast most foragers.",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 25.0
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CORRUPTED_BAIT",
+ "base": "minecraft:paper",
+ "name": "Corrupted Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

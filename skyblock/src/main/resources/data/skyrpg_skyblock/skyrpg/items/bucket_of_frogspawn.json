@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BUCKET_OF_FROGSPAWN",
+ "base": "minecraft:paper",
+ "name": "Frogspawn Bucket",
+ "rarity": "mythic",
+ "type": "",
+ "description": "§8§oWho cares about massive frogs when you can have lots of tiny ones?",
+ "hypixel": {
+  "can_recombobulate": false
+ }
+}

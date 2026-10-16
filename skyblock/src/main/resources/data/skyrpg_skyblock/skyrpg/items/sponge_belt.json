@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "SPONGE_BELT",
+ "base": "minecraft:paper",
+ "name": "Sponge Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "fishing_speed": 2,
+  "trophy_fish_chance": 1
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FISHERMAN": 3,
+    "SPONGE": 5
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "PICKONIMBUS",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Pickonimbus 2000",
+ "rarity": "epic",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 30,
+  "mining_speed": 750,
+  "breaking_power": 8
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 12,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "DIAMOND",
+    "amount": 5
+   }
+  ],
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 4
+   }
+  ]
+ }
+}

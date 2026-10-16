@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "UMBER",
+ "base": "minecraft:paper",
+ "name": "Umber",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Hardy enough to flourish even in the harshest of conditions.",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BOOKSHELF",
+ "base": "minecraft:bookshelf",
+ "name": "Bookshelf",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

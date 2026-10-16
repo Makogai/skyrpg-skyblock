@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ELLES_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Elle's Pickaxe",
+ "rarity": "special",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 10,
+  "mining_speed": 250,
+  "breaking_power": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 0,
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

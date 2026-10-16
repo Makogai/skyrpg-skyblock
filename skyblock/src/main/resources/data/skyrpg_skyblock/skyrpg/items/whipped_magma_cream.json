@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "WHIPPED_MAGMA_CREAM",
+ "base": "minecraft:paper",
+ "name": "Whipped Magma Cream",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 204800,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 5120.0
+   },
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

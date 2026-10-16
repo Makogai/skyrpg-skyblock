@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OCEANDY",
+ "base": "minecraft:paper",
+ "name": "Oceandy",
+ "rarity": "rare",
+ "category": "SALT",
+ "type": "Salt",
+ "hypixel": {
+  "npc_sell_price": 200
+ }
+}

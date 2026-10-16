@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "SKELETON_SOLDIER_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Skeleton Soldier Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "crit_chance": 2,
+  "crit_damage": 16,
+  "health": 16,
+  "defense": 26
+ },
+ "color": "#FFBC0B",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 120
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 240
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 9
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_SOLDIER": 3
+   },
+   "game_stage": "AMATEUR"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    26,
+    28,
+    30,
+    33,
+    36,
+    39,
+    42,
+    45,
+    50,
+    54
+   ],
+   "HEALTH": [
+    16,
+    17,
+    19,
+    21,
+    22,
+    24,
+    26,
+    29,
+    31,
+    34
+   ],
+   "CRITICAL_DAMAGE": [
+    16,
+    17,
+    19,
+    20,
+    22,
+    24,
+    26,
+    28,
+    31,
+    34
+   ],
+   "CRITICAL_CHANCE": [
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4
+   ]
+  }
+ }
+}

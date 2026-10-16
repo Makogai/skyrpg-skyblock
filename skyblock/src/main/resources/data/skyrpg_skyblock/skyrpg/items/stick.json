@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STICK",
+ "base": "minecraft:stick",
+ "name": "Stick",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25,
+  "motes_sell_price": 15
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "PARTY_GLOVES",
+ "base": "minecraft:paper",
+ "name": "Party Gloves",
+ "rarity": "uncommon",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "PARTY": 4
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

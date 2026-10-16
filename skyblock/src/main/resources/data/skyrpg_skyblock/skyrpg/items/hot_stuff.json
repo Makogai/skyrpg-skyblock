@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HOT_STUFF",
+ "base": "minecraft:paper",
+ "name": "Scorched Topaz",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

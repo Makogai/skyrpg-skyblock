@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ZOOM_PICKAXE",
+ "base": "minecraft:wooden_pickaxe",
+ "name": "Zoom",
+ "rarity": "unobtainable",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 99999999,
+  "swing_range": 15,
+  "mining_speed": 99999999,
+  "breaking_power": 10
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000
+ }
+}

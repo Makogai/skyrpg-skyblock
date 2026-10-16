@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "POTATO_ITEM",
+ "base": "minecraft:potato",
+ "name": "Potato",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 4.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

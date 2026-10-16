@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "WYLD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Wyld Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "rift_time": 15
+ },
+ "color": "#35B73B",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

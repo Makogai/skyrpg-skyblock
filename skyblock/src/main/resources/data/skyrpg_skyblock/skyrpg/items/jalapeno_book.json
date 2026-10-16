@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "JALAPENO_BOOK",
+ "base": "minecraft:book",
+ "name": "Jalapeno Book",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 56000
+ }
+}

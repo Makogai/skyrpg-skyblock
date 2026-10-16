@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SHREDDED_LINE",
+ "base": "minecraft:paper",
+ "name": "Shredded Line",
+ "rarity": "rare",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 250000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 7,
+   "category": "FISHING",
+   "game_stage": "SKILLED"
+  }
+ }
+}

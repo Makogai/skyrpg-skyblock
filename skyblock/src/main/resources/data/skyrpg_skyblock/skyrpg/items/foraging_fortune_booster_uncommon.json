@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FORAGING_FORTUNE_BOOSTER_UNCOMMON",
+ "base": "minecraft:paper",
+ "name": "Uncommon Foraging Fortune Booster Upgrade",
+ "rarity": "uncommon",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

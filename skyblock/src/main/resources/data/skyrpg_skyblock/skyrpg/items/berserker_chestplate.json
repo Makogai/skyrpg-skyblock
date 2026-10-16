@@ -1,0 +1,224 @@
+{
+ "skyblock_id": "BERSERKER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Berserker Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 60,
+  "crit_damage": 60
+ },
+ "color": "#FFA33B",
+ "hypixel": {
+  "npc_sell_price": 322250,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 50
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BERSERKER": 14
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

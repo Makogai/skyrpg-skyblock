@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TOTEM_OF_CORRUPTION",
+ "base": "minecraft:white_banner",
+ "name": "Totem of Corruption",
+ "rarity": "uncommon",
+ "category": "DEPLOYABLE",
+ "type": "Deployable",
+ "hypixel": {
+  "npc_sell_price": 96000,
+  "museum_data": {
+   "category": "FISHING",
+   "donation_xp": 3,
+   "game_stage": "SKILLED"
+  }
+ }
+}

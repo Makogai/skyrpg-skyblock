@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ETERNAL_CRYSTAL",
+ "base": "minecraft:nether_star",
+ "name": "Eternal Crystal",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 105000
+ }
+}

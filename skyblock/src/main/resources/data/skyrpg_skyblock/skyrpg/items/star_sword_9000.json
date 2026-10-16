@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "STAR_SWORD_9000",
+ "base": "minecraft:golden_sword",
+ "name": "Sword of the Stars 9000",
+ "rarity": "unobtainable",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 99999999,
+  "swing_range": 99999999
+ },
+ "hypixel": {
+  "enchantments": {
+   "sharpness": 50
+  }
+ }
+}

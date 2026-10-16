@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GREAT_SPOOK_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Great Spook Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "fear": 5
+ },
+ "color": "#993399",
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

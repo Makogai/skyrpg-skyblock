@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "METAPHORIC_EGG",
+ "base": "minecraft:egg",
+ "name": "Metaphoric Egg",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A ticking time bomb to new life. Acquired using Berberis Blowgun.",
+ "hypixel": {
+  "origin": "RIFT",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

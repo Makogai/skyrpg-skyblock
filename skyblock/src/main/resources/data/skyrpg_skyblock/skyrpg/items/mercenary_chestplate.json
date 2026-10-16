@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "MERCENARY_CHESTPLATE",
+ "base": "minecraft:iron_chestplate",
+ "name": "Mercenary Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 10,
+  "health": 70,
+  "defense": 70
+ },
+ "hypixel": {
+  "npc_sell_price": 20000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MERCENARY": 1
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

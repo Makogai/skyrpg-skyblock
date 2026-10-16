@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMOOTH_STAIRS",
+ "base": "minecraft:stone_brick_stairs",
+ "name": "Stone Brick Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

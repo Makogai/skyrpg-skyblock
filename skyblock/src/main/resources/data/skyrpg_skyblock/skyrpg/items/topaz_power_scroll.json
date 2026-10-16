@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "TOPAZ_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Topaz Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WINTER_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Winter Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A collection of frozen substances, potentially including ice cream.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

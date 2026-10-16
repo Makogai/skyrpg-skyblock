@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "VOODOO_DOLL_WILTED",
+ "base": "minecraft:pufferfish",
+ "name": "Jinxed Voodoo Doll",
+ "rarity": "epic",
+ "type": "",
+ "stats": {
+  "weapon_ability_damage": 2222
+ },
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 5
+   }
+  ],
+  "item_specific": {
+   "slow_duration_seconds": 12,
+   "mana_cost": 180,
+   "cooldown_seconds": 3
+  },
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

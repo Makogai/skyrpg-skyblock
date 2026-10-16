@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "SERIOUSLY_DAMAGED_AXE",
+ "base": "minecraft:wooden_axe",
+ "name": "Seriously Damaged Axe",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 10,
+  "foraging_fortune": 5,
+  "sweep": 10
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "donation_xp": 1,
+   "parent": {
+    "SERIOUSLY_DAMAGED_AXE": "DECENT_AXE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

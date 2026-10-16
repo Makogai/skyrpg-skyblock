@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "BROKEN_RADAR",
+ "base": "minecraft:paper",
+ "name": "Broken Radar",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Snapping Turtles will bite into just about anything, radars included. Maybe you can fix it?",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

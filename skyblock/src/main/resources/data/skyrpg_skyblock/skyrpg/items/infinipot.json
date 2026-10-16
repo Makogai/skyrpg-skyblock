@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "INFINIPOT",
+ "base": "minecraft:paper",
+ "name": "InfiniPot™",
+ "rarity": "rare",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "unstackable": true,
+ "hypixel": {
+  "dungeon_item": true
+ }
+}

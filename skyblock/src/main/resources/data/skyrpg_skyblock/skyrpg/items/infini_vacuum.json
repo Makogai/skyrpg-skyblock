@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "INFINI_VACUUM",
+ "base": "minecraft:paper",
+ "name": "InfiniVacuum™",
+ "rarity": "epic",
+ "category": "VACUUM",
+ "type": "Vacuum",
+ "stats": {
+  "damage": 300,
+  "farming_fortune": 20
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "FARMING",
+   "parent": {
+    "INFINI_VACUUM": "INFINI_VACUUM_HOOVERIUS"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

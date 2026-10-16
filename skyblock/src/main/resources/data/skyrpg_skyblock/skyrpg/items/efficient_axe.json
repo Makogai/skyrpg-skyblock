@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "EFFICIENT_AXE",
+ "base": "minecraft:iron_axe",
+ "name": "Efficient Axe",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 25,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "FORAGING",
+   "game_stage": "STARTER"
+  }
+ }
+}

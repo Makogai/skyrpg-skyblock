@@ -1,0 +1,54 @@
+{
+ "skyblock_id": "SQUASH_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Squash Helmet",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 120,
+  "defense": 35,
+  "speed": 4,
+  "farming_fortune": 25,
+  "bonus_pest_chance": 15
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY2Mzc1Mzg1NTk5NiwKICAicHJvZmlsZUlkIiA6ICJiNjQ3MDE3MmZiM2Q0NDU5YTIzOGFkMzZiZTgxOTc3YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUWXRyYWNrMjMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUxMDg3YzBjNTE5YTlhMWRjZWU0MzI1NDEwYjE5YTFiZTQ4NTVlYWM1YTY2MmFlMWI1MjMzMjlmOTBmYWVjZCIKICAgIH0KICB9Cn0=",
+  "signature": "SonRlBSRWK8TW2oYDtZkyC/OnauMXoumYJNGC9QM3KjEDCJ0TAa+8r3jMknxXv14mwvA7SYxm+UNsHM7K9cBmayj/sa59eufJByFT4ehBKPiSWClXYtRNQbsThvffabZdCpw/rZpujrtTkH6/HF/pMd3di4QkiwqGtNebOp9dvY/N1i5/JWLS6XB+dm8oyE3Zcn+jy02tqK49reWrU60unhVQfT/UcmGXnalEcCN5k0J5OUDUy+ZgWdmpXOeQ/Rs172DehcIjko32OM9pKAMWMaJ8FCRijchBtLoVZWP8bqdEEkAn2b/C6fr8hOK5FhHNdysmzGbueuFT1J1Aqj+P501JKBl0nTcSTFxNzNZ/IuQdDVZKT9gEB0RYqW+bA9aH+s9wkZQfMWwLbYObkOFfVfwdILVCUfvHVVjcIeO7m1Zg+yaIXZfHL0IdzkhRkKfLfJ4GfaonvQYY/yRgamnBOoMqGCSai8mPfssiRGHDXttCKNAQTZ+NrHlkJVNVAv4ftCtGrI8C3QAJMi/KPsS5GHBO1BhnpKVa/pW+XmEZ7xmUQYS2ZmnYCD9bv+KthdAm0jBR8NULZe2bSbOoPsh+lAY6OXWnJlZGy7t8r8G6pOmBYjSwHLN9SQFdoire4dyB5lunfdD9PTlVCqqLpRWIVPBJ0z7kWPRHehuI4VZk20="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 35
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "SQUASH": "FERMENTO"
+   },
+   "armor_set_donation_xp": {
+    "SQUASH": 9
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PUMPKIN_SEEDS",
+ "base": "minecraft:pumpkin_seeds",
+ "name": "Pumpkin Seeds",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

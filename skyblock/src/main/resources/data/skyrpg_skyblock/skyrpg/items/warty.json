@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WARTY",
+ "base": "minecraft:paper",
+ "name": "Warty",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "item_specific": {
+   "permanent_health": 5,
+   "permanent_crops_farming_fortune": 12
+  }
+ }
+}

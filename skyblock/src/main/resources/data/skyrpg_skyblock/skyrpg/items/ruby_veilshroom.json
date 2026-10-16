@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RUBY_VEILSHROOM",
+ "base": "minecraft:paper",
+ "name": "Ruby Veilshroom",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Having absorbed the heat of the sun to gain its blazing red coloring, it now exudes a unique warmth.",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

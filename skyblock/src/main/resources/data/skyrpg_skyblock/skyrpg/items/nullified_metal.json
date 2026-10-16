@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "NULLIFIED_METAL",
+ "base": "minecraft:blue_carpet",
+ "name": "Nullified Metal",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 100,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "excluded_items": [
+     "FROZEN_WATER_PUNGI"
+    ],
+    "allow_duplicates": true
+   }
+  ]
+ }
+}

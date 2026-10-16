@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GOLD_HOE",
+ "base": "minecraft:golden_hoe",
+ "name": "Golden Hoe",
+ "rarity": "common",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

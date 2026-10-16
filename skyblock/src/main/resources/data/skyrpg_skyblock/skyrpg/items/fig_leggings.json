@@ -1,0 +1,52 @@
+{
+ "skyblock_id": "FIG_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Fig Trousers",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 140,
+  "defense": 35,
+  "foraging_fortune": 30,
+  "sweep": 10
+ },
+ "color": "#1C9759",
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 15
+   }
+  ],
+  "npc_sell_price": 7840,
+  "gemstone_slots": [
+   {
+    "slot_type": "CITRINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_CITRINE_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {
+    "FIG": "HELIX_ARMOR"
+   },
+   "armor_set_donation_xp": {
+    "FIG": 7
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

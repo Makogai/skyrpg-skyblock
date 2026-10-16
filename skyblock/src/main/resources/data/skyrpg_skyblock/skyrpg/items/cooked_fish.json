@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKED_FISH",
+ "base": "minecraft:cooked_cod",
+ "name": "Cooked Fish",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

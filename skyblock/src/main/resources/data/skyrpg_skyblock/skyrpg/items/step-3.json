@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP:3",
+ "base": "minecraft:cobblestone_slab",
+ "name": "Cobblestone Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "HUNTING_WISDOM_BOOSTER_COMMON",
+ "base": "minecraft:paper",
+ "name": "Common Hunting Wisdom Booster",
+ "rarity": "common",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

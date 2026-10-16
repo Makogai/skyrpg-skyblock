@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "EXPLOSIVE_BOW",
+ "base": "minecraft:bow",
+ "name": "Explosive Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 100,
+  "strength": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 62000,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

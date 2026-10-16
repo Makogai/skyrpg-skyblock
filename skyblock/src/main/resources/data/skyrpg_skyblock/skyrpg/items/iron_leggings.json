@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "IRON_LEGGINGS",
+ "base": "minecraft:iron_leggings",
+ "name": "Iron Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

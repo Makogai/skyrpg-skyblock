@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PROMISING_HOE",
+ "base": "minecraft:iron_hoe",
+ "name": "Promising Hoe",
+ "rarity": "uncommon",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "museum": true
+ }
+}

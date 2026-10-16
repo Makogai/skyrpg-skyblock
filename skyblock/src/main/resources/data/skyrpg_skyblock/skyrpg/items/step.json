@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP",
+ "base": "minecraft:smooth_stone_slab",
+ "name": "Stone Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

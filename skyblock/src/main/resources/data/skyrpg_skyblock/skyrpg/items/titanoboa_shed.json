@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "TITANOBOA_SHED",
+ "base": "minecraft:paper",
+ "name": "Titanoboa Shed",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A massive set of discarded snake skin. There's so much of it that it's hard to lift.",
+ "hypixel": {
+  "npc_sell_price": 500000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

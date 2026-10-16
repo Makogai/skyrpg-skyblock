@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "HEMOVIBE",
+ "base": "minecraft:redstone_ore",
+ "name": "Hemovibe",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Dropped by vampires from the multiverse coven.",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "rift_transferrable": true,
+  "origin": "RIFT",
+  "can_place": false,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 5.0
+   }
+  }
+ }
+}

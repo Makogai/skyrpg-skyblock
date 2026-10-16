@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "PYROCLASTIC_SCALE",
+ "base": "minecraft:prismarine_shard",
+ "name": "Pyroclastic Scale",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Makes pretty \"drip\" necklaces, according to the local youth.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "can_place": false
+ }
+}

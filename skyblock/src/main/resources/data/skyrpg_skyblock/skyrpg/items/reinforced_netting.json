@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "REINFORCED_NETTING",
+ "base": "minecraft:paper",
+ "name": "Reinforced Netting",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Dropped by the §dGiant Isopod §7in §6Torrhus Canyon§7.\n\n§8§oA massive, sturdy piece of netting that would be more than strong enough to catch most critters when used as a net. Unfortunately, for whoever owned it, the Giant Isopod is a bit larger than your average critter.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

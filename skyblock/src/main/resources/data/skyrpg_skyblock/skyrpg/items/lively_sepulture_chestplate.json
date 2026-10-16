@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "LIVELY_SEPULTURE_CHESTPLATE",
+ "base": "minecraft:chainmail_chestplate",
+ "name": "Lively Sepulture Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_time": 65,
+  "rift_health": 1,
+  "rift_intelligence": 30,
+  "rift_mana_regen": 25
+ },
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 5
+   }
+  ]
+ }
+}

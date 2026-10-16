@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PRIME_LUSHLILAC_BONBON",
+ "base": "minecraft:paper",
+ "name": "Prime Lushlilac Bonbon",
+ "rarity": "uncommon",
+ "category": "SALT",
+ "type": "Salt",
+ "hypixel": {
+  "npc_sell_price": 156
+ }
+}

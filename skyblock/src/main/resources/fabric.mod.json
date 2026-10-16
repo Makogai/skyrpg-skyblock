@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "skyrpg_skyblock",
+  "version": "${version}",
+  "name": "SkyRPG SkyBlock",
+  "description": "Hypixel SkyBlock rebuilt as a mod: every SkyBlock item with its real id, name, rarity and stats (so SkyBlock texture packs like FurfSky Reborn dress them), and the systems around them.",
+  "authors": [
+    "SkyRPG"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skyrpg_skyblock/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.skyrpg.skyblock.SkyRpgSkyblock"
+    ],
+    "client": [
+      "com.skyrpg.skyblock.client.SkyRpgSkyblockClient"
+    ]
+  },
+  "mixins": [
+    "skyrpg_skyblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*",
+    "skyrpg_core": "*",
+    "skyrpg_items": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "skyrpg_core"
+    }
+  }
+}

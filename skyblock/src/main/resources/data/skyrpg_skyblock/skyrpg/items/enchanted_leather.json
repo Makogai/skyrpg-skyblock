@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_LEATHER",
+ "base": "minecraft:leather",
+ "name": "Enchanted Leather",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 115.0
+   }
+  }
+ }
+}

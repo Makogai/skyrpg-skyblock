@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "NECRON_BLADE",
+ "base": "minecraft:iron_sword",
+ "name": "Necron's Blade (Unrefined)",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 260,
+  "strength": 110,
+  "intelligence": 50,
+  "ferocity": 30
+ },
+ "hypixel": {
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 900
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 1500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 20,
+   "category": "DUNGEONEERING",
+   "parent": {
+    "NECRON_BLADE": "ASTRAEA"
+   },
+   "game_stage": "MASTER"
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "skyblock_id": "ZOMBIE_HAT",
+ "base": "minecraft:zombie_head",
+ "name": "Zombie Hat",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 8,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 40
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ]
+  ],
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "EXTREME_BINGO_CARD",
+ "base": "minecraft:paper",
+ "name": "Extreme Bingo Card",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

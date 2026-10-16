@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "AGARICUS_SOUP",
+ "base": "minecraft:rabbit_stew",
+ "name": "Agaricus Soup",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "speed_duration_seconds": 60,
+   "cooldown_seconds": 60
+  }
+ }
+}

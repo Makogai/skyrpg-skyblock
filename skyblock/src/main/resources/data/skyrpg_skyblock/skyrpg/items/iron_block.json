@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "IRON_BLOCK",
+ "base": "minecraft:iron_block",
+ "name": "Block of Iron",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 18,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 2.7
+   }
+  }
+ }
+}

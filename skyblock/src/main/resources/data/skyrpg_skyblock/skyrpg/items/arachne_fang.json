@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ARACHNE_FANG",
+ "base": "minecraft:paper",
+ "name": "Arachne's Fang",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Straight from the spider's mouth.",
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

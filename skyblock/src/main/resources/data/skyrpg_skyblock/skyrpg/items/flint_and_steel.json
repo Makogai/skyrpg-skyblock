@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FLINT_AND_STEEL",
+ "base": "minecraft:flint_and_steel",
+ "name": "Flint and Steel",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 7
+ }
+}

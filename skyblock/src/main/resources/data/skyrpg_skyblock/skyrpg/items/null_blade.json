@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "NULL_BLADE",
+ "base": "minecraft:paper",
+ "name": "Null Blade",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "BOSS_SPIRIT_BOW",
+ "base": "minecraft:bow",
+ "name": "Spirit Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 1
+ },
+ "hypixel": {
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

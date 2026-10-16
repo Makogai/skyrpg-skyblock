@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET",
+ "base": "minecraft:white_carpet",
+ "name": "Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1.5
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GOLEM_POPPY",
+ "base": "minecraft:paper",
+ "name": "Ancient Rose",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oAn ancient plant imbued with the unyielding power of truth.",
+ "hypixel": {
+  "dungeon_item": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

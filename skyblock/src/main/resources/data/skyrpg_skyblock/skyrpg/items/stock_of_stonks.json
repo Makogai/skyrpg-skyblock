@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STOCK_OF_STONKS",
+ "base": "minecraft:paper",
+ "name": "Stock of Stonks",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "museum": true
+ }
+}

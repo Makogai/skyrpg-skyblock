@@ -1,0 +1,37 @@
+{
+ "skyblock_id": "STINGER_BOW",
+ "base": "minecraft:bow",
+ "name": "Stinger Bow",
+ "rarity": "rare",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 47
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 12
+   }
+  ],
+  "dungeon_item": true,
+  "tiered_stats": {
+   "DAMAGE": [
+    47,
+    51,
+    56,
+    61,
+    66,
+    72,
+    78,
+    85,
+    92,
+    100
+   ]
+  }
+ }
+}

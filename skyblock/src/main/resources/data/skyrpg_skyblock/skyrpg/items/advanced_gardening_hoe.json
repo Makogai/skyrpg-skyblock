@@ -1,0 +1,38 @@
+{
+ "skyblock_id": "ADVANCED_GARDENING_HOE",
+ "base": "minecraft:iron_hoe",
+ "name": "Advanced Gardening Hoe",
+ "rarity": "rare",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "stats": {
+  "farming_fortune": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "enchantments": {
+   "replenish": 1
+  },
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 3
+   },
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 7
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FARMING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

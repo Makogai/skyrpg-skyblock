@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ARMOR_OF_THE_RESISTANCE_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Leggings of the Rising Sun",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 12,
+  "defense": 12
+ },
+ "color": "#DEBC15",
+ "hypixel": {
+  "npc_sell_price": 14,
+  "museum": true
+ }
+}

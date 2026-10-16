@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "TRIBAL_SPEAR",
+ "base": "minecraft:stick",
+ "name": "Tribal Spear",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "strength": 100
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "skyblock_id": "ROGUE_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Rogue Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "soulbound": "COOP",
+  "npc_sell_price": 3,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "GOLD",
+   "amount": 5
+  },
+  "item_specific": {
+   "speed_boost": 100,
+   "effect_duration_seconds": 30,
+   "cooldown_seconds": 5,
+   "mana_cost": 50
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "GOLD",
+     "amount": 5
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

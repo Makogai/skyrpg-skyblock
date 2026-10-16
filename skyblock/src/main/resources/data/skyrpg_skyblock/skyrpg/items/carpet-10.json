@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET:10",
+ "base": "minecraft:purple_carpet",
+ "name": "Purple Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

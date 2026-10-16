@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CAKE_SOUL",
+ "base": "minecraft:pink_dye",
+ "name": "Cake Soul",
+ "rarity": "mythic",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "has_uuid": true
+ }
+}

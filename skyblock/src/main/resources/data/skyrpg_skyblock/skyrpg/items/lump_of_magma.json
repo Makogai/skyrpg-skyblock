@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "LUMP_OF_MAGMA",
+ "base": "minecraft:paper",
+ "name": "Lump of Magma",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Self explanatory.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "can_place": false,
+  "can_interact": false,
+  "can_interact_right_click": false
+ }
+}

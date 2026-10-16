@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "ENCHANTED_GRIFFIN_FEATHER",
+ "base": "minecraft:feather",
+ "name": "Enchanted Griffin Feather",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7The exquisite feather of a mythical creature. Its woven strands shimmer with an inimitable grace and majesty.",
+ "glint": true
+}

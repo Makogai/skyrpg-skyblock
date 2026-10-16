@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "ANCIENT_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Ancient Cloak",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "health": 15,
+  "mining_fortune": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 93750,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

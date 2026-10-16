@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CLUBBED_FOSSIL",
+ "base": "minecraft:paper",
+ "name": "Clubbed Fossil",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A tail ending in a thick club that was used to fend off predators.",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 50
+   }
+  ],
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 50000,
+    "render_lore": false
+   }
+  ]
+ }
+}

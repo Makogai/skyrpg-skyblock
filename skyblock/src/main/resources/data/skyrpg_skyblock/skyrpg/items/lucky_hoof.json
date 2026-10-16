@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LUCKY_HOOF",
+ "base": "minecraft:iron_horse_armor",
+ "name": "Lucky Hoof",
+ "rarity": "uncommon",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

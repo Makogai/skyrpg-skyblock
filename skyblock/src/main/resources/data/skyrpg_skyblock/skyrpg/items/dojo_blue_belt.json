@@ -1,0 +1,167 @@
+{
+ "skyblock_id": "DOJO_BLUE_BELT",
+ "base": "minecraft:paper",
+ "name": "Blue Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 25,
+  "defense": 15
+ },
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 120
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 150
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 180
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 300
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 350
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 4000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 400
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 500
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 6000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 600
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 700
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 8000
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "DOJO_BLUE_BELT": "DOJO_BROWN_BELT"
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

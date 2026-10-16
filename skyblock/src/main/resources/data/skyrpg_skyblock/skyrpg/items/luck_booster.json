@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "LUCK_BOOSTER",
+ "base": "minecraft:paper",
+ "name": "Common Luck Booster",
+ "rarity": "common",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

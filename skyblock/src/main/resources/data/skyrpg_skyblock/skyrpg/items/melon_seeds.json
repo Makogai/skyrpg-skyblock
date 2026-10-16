@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MELON_SEEDS",
+ "base": "minecraft:melon_seeds",
+ "name": "Melon Seeds",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

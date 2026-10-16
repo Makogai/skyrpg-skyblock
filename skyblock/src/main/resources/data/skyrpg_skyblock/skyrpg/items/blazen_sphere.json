@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BLAZEN_SPHERE",
+ "base": "minecraft:paper",
+ "name": "Blazen Sphere",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

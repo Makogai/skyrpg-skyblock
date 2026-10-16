@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ARCHER_ULTIMATE_ABILITY",
+ "base": "minecraft:bedrock",
+ "name": "Machine Gun Bow",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

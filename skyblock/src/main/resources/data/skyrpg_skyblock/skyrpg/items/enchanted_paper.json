@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_PAPER",
+ "base": "minecraft:paper",
+ "name": "Enchanted Paper",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 384
+ }
+}

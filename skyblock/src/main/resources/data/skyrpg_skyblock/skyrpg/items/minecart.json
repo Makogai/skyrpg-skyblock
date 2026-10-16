@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MINECART",
+ "base": "minecraft:minecart",
+ "name": "Minecart",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

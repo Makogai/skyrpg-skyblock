@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DIVAN_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Divan Fragment",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7One of the greatest alloys naturally found in the Crystal Hollows, named after the first Dwarf to find them.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 200000
+ }
+}

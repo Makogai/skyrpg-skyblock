@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DUNGEON_DISC_5",
+ "base": "minecraft:music_disc_13",
+ "name": "Necron Disc",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ITEM_FRAME",
+ "base": "minecraft:item_frame",
+ "name": "Item Frame",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

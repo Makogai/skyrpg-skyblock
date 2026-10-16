@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NOTHING_IN_A_BOTTLE",
+ "base": "minecraft:paper",
+ "name": "Nothing-in-a-Bottle",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,201 @@
+{
+ "skyblock_id": "FERVOR_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Fervor Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 180,
+  "defense": 100,
+  "intelligence": 15,
+  "true_defense": 5
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0NTUwNDMxOTYxMiwKICAicHJvZmlsZUlkIiA6ICIwNDNkZWIzOGIyNjE0MTg1YTIzYzU4ZmI2YTc5ZWZkYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJWaXRhbFNpZ256MiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYzZlMTM3ZTJhNmE1MDFkZmM4NTRjYTkwMGI1YjY4MTIyN2RlYTRkNWE5NjE2ODQ5YTNhNjhmMDljNmRjMzI3IgogICAgfQogIH0KfQ==",
+  "signature": "xgOV3vwikeqVv3jRgfUfH88mVqMBevSvQ5wtf5eFsHVCMq4iMEx8WM+0ZQGtVzB7Bd0DTr05qJDik8/K4B+77B0UT+pR7MDY6iEHwk5Js/hV2nMZc6TYBg8CYLDUcqt2cFX/25ERZzqDIhL5lqzBzZ891k7ixOlYcJWjESpQQ2IdeZiLfCniOIBDVDuZYWkmqvQ+FcdLee9mp7FeY5nS1pZ7vIaobrCOXvHcMQ4rsuyW832KZcuYl11QKpFnLVx6IaDIxsac57zUFb7ZfgQKBvm8+X21dGQtF4W6WLoOw0V5Y3s3jG5CBT8QgZ4h+Osx5cAlpyiGB6bS1sQw7q0MErO7HB2mZ8OtW7Qn2LJlr6RZIiaoZ/BiL2Ld93qgZHS46QlAG1wlTqSBBT6ryynt0CBZt0U3PnfkZS0VBhB/M4i+erC+/KIKd8EzCk4p9Ny7M1TS+5tKwvg763aKgf9ZRxnyfOSIzaf5UPjcKQxF5wt7Vg8J5ijtLlF6UTplb9wgEjFTSVJaP9fNFVqCRFbWFyWWXytMjrITzn+r7SEK24DOS6tsaQa2dnhXZIWi3veFRIqpsCXWYqXSetsv9rCnoFKiohGE2PYPYCqELMUdYYAn8FgCTmou/psROEcKE8etmQRbkmuQ+Z2dpmPLQRRQtKylrUDKVaJ1dle7xfVWLcE="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   },
+   {
+    "type": "KUUDRA_COMPLETION",
+    "kuudra_tier": "NONE"
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 55
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 70
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 90
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ]
+  ],
+  "prestige": {
+   "item_id": "HOT_FERVOR_HELMET",
+   "costs": [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 150
+    },
+    {
+     "type": "ITEM",
+     "item_id": "KUUDRA_TEETH",
+     "amount": 10
+    }
+   ]
+  },
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FERVOR": 10
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

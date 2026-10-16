@@ -1,0 +1,330 @@
+{
+ "skyblock_id": "SHIMMERING_LIGHT_TUNIC",
+ "base": "minecraft:leather_chestplate",
+ "name": "Shimmering Light Tunic",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 130,
+  "defense": 120,
+  "intelligence": 120
+ },
+ "color": "#07031B",
+ "hypixel": {
+  "npc_sell_price": 321050,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 5
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 15
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LEATHER_CLOTH",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "X",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Y",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "Z",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_MYCELIUM_CUBE",
+     "amount": 16
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SHIMMERING_LIGHT": 16
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

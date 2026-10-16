@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CANDYCOMB",
+ "base": "minecraft:paper",
+ "name": "Candycomb",
+ "rarity": "rare",
+ "category": "SALT",
+ "type": "Salt",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "SPOOKY_PIE",
+ "base": "minecraft:pumpkin_pie",
+ "name": "Spooky Pie",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

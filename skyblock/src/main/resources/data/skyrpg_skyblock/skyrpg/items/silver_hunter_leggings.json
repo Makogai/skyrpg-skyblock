@@ -1,0 +1,134 @@
+{
+ "skyblock_id": "SILVER_HUNTER_LEGGINGS",
+ "base": "minecraft:iron_leggings",
+ "name": "Silver Hunter Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 100
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "trophy_type": "LAVA",
+    "reward": "SILVER"
+   }
+  ],
+  "soulbound": "SOLO",
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 1
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 2
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_DIAMOND",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "SILVER_HUNTER": "GOLD_HUNTER"
+   },
+   "armor_set_donation_xp": {
+    "SILVER_HUNTER": 12
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

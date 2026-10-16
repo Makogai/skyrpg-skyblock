@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LUSH_LILY_PAD",
+ "base": "minecraft:lily_pad",
+ "name": "Lush Lily Pad",
+ "rarity": "special",
+ "type": "",
+ "description": "§7Looks scrumptious. Perhaps a certain §7 would like it?",
+ "hypixel": {
+  "safari_only": true
+ }
+}

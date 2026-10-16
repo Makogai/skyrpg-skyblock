@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "BIOHAZARD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Biohazard Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 20,
+  "defense": 15,
+  "bonus_pest_chance": 16.5
+ },
+ "color": "#FFAC00",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "game_stage": "AMATEUR",
+   "armor_set_donation_xp": {
+    "BIOHAZARD": 4
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "EMBER_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Ember Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 60,
+  "defense": 55,
+  "intelligence": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum": true
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_NETHER_STALK",
+ "base": "minecraft:nether_wart",
+ "name": "Organic Nether Wart",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

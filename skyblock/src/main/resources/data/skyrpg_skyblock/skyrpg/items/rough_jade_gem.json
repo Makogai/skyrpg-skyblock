@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_JADE_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Jade Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "MUSHROOM_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Mushroom Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 20
+ },
+ "color": "#FF0000",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 7
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "MUSHROOM": "BIOHAZARD"
+   },
+   "armor_set_donation_xp": {
+    "MUSHROOM": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

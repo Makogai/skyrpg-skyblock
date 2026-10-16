@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SALTY_NOZZLE",
+ "base": "minecraft:paper",
+ "name": "Salty Nozzle",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

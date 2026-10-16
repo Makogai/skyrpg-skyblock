@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SAULS_RECOMMENDATION",
+ "base": "minecraft:paper",
+ "name": "Saul's Recommendation",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

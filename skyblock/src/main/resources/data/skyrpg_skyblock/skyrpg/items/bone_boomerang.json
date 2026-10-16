@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "BONE_BOOMERANG",
+ "base": "minecraft:bone",
+ "name": "Bonemerang",
+ "rarity": "legendary",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 270,
+  "strength": 130
+ },
+ "glint": true,
+ "hypixel": {
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 4
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_BONE_BOOMERANG"
+   ],
+   "game_stage": "SKILLED"
+  }
+ }
+}

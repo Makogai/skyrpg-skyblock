@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "COMPOST",
+ "base": "minecraft:paper",
+ "name": "Compost",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

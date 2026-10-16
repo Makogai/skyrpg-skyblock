@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "SUPER_EGG",
+ "base": "minecraft:paper",
+ "name": "Super Enchanted Egg",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Used to craft more advanced pets.",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 16560.0
+   }
+  }
+ }
+}

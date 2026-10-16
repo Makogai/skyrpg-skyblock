@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RUSTY_SHIP_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Rusty Ship Engine",
+ "rarity": "special",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

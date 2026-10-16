@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PERFECT_ONYX_GEM",
+ "base": "minecraft:paper",
+ "name": "Perfect Onyx Gemstone",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

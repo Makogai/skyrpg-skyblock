@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_ENDER_PEARL",
+ "base": "minecraft:ender_pearl",
+ "name": "Enchanted Ender Pearl",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 140,
+  "can_interact": false,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 9.0
+   }
+  }
+ }
+}

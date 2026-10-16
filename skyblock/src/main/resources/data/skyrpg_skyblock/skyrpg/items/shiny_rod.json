@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SHINY_ROD",
+ "base": "minecraft:carrot_on_a_stick",
+ "name": "Shiny Rod",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "museum": true
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SHARK_FIN",
+ "base": "minecraft:prismarine_shard",
+ "name": "Shark Fin",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Dropped by a Shark during Fishing Festival.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

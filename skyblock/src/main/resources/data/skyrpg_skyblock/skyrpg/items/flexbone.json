@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FLEXBONE",
+ "base": "minecraft:bone",
+ "name": "Flexbone",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Caught as a §6Treasure §7catch in the §cTomb Floodway §7on the §2Moonglade Marsh§7.\n\n§8§oThese softened bones have absorbed moss over time, offering a flexible material.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

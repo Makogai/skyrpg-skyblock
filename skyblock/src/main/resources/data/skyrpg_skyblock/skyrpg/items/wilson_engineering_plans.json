@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WILSON_ENGINEERING_PLANS",
+ "base": "minecraft:paper",
+ "name": "Wilson's Engineering Plans",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7Drops very rarely from the Inferno Demonlord.",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FARMING_FOR_DUMMIES",
+ "base": "minecraft:book",
+ "name": "Farming for Dummies",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "museum": true
+ }
+}

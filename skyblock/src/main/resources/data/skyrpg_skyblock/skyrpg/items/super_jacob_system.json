@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SUPER_JACOB_SYSTEM",
+ "base": "minecraft:paper",
+ "name": "Super Jacob Entertainment System",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "can_auction": true
+ }
+}

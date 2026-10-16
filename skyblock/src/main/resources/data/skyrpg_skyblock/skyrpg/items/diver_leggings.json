@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "DIVER_LEGGINGS",
+ "base": "minecraft:golden_leggings",
+ "name": "Diver's Trunks",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 175,
+  "defense": 80,
+  "sea_creature_chance": 2,
+  "pressure_resistance": 15,
+  "respiration": 3
+ },
+ "hypixel": {
+  "npc_sell_price": 15000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 20
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {
+    "DIVER": "ABYSSAL"
+   },
+   "armor_set_donation_xp": {
+    "DIVER": 10
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

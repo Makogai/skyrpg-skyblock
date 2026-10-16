@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DIRT:2",
+ "base": "minecraft:podzol",
+ "name": "Podzol",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

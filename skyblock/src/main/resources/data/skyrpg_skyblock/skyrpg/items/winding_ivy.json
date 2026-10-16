@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WINDING_IVY",
+ "base": "minecraft:paper",
+ "name": "Winding Ivy",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

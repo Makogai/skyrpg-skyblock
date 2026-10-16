@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MECHAMIND_GARDEN_CHIP",
+ "base": "minecraft:paper",
+ "name": "Mechamind Chip",
+ "rarity": "rare",
+ "category": "GARDEN_CHIP",
+ "type": "Garden Chip",
+ "hypixel": {
+  "can_auction": false,
+  "npc_sell_price": 100000
+ }
+}

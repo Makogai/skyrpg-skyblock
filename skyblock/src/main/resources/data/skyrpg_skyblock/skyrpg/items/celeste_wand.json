@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "CELESTE_WAND",
+ "base": "minecraft:stick",
+ "name": "Celeste Wand",
+ "rarity": "uncommon",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "weapon_ability_damage": 250
+ },
+ "hypixel": {
+  "ability_damage_scaling": 0.3,
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

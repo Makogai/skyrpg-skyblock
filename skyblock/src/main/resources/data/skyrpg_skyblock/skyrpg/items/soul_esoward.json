@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SOUL_ESOWARD",
+ "base": "minecraft:birch_sapling",
+ "name": "Soul Esoward",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "game_stage": "SKILLED"
+  }
+ }
+}

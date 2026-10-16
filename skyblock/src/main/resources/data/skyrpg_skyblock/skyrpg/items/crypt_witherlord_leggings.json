@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CRYPT_WITHERLORD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Crypt Witherlord Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 95,
+  "speed": 5
+ },
+ "color": "#450101",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true
+ }
+}

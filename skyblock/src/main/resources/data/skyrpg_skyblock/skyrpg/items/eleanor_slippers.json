@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ELEANOR_SLIPPERS",
+ "base": "minecraft:leather_boots",
+ "name": "Eleanor's Slippers",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 40,
+  "rift_time": 20
+ },
+ "description": "§8§oMade from the softest materials, these slippers are as stylish as they are serene.",
+ "color": "#FFD700",
+ "hypixel": {
+  "rift_transferrable": true,
+  "soulbound": "SOLO",
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ELEANOR": 5
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

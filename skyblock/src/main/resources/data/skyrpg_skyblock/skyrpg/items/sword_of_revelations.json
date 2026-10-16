@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "SWORD_OF_REVELATIONS",
+ "base": "minecraft:wooden_sword",
+ "name": "Sword of Revelations",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 180,
+  "strength": 50
+ },
+ "hypixel": {
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {
+    "SWORD_OF_REVELATIONS": "DAEDALUS_AXE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

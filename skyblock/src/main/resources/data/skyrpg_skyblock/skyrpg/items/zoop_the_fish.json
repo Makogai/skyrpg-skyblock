@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "ZOOP_THE_FISH",
+ "base": "minecraft:salmon",
+ "name": "Zoop the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "museum": true,
+  "rift_transferrable": true
+ }
+}

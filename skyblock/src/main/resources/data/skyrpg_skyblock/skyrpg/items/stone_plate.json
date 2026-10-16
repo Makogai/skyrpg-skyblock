@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE_PLATE",
+ "base": "minecraft:stone_pressure_plate",
+ "name": "Stone Pressure Plate",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

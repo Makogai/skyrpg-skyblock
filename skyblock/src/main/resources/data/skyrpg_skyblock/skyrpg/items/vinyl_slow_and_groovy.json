@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_SLOW_AND_GROOVY",
+ "base": "minecraft:music_disc_far",
+ "name": "Slow and Groovy Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

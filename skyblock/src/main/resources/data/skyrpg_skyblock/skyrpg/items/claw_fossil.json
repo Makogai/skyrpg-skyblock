@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CLAW_FOSSIL",
+ "base": "minecraft:paper",
+ "name": "Claw Fossil",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A small but sharp claw once used for digging tunnels.",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOSSIL",
+    "amount": 25
+   }
+  ],
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 50000,
+    "render_lore": false
+   }
+  ]
+ }
+}

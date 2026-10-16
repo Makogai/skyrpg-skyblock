@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "SERRATED_CLAWS",
+ "base": "minecraft:prismarine_shard",
+ "name": "Serrated Claws",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

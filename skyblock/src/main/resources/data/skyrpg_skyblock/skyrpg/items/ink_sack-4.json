@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "INK_SACK:4",
+ "base": "minecraft:lapis_lazuli",
+ "name": "Lapis Lazuli",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "mining": {
+    "BREAK_BLOCK": 7.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

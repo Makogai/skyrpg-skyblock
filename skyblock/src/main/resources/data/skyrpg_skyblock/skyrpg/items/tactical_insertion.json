@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "TACTICAL_INSERTION",
+ "base": "minecraft:blaze_rod",
+ "name": "Tactical Insertion",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 14,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OLD_LEATHER_BOOT",
+ "base": "minecraft:paper",
+ "name": "Old Leather Boot",
+ "rarity": "epic",
+ "type": "",
+ "description": "§8§oWell-worn and waterlogged.",
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

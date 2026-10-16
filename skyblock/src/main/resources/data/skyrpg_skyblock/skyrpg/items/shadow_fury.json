@@ -1,0 +1,88 @@
+{
+ "skyblock_id": "SHADOW_FURY",
+ "base": "minecraft:diamond_sword",
+ "name": "Shadow Fury",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 300,
+  "strength": 130,
+  "crit_damage": 30,
+  "speed": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 500000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 800
+    }
+   ]
+  ],
+  "gear_score": 100,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 5
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "JASPER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 100000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 40
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_SHADOW_FURY"
+   ],
+   "game_stage": "SKILLED"
+  }
+ }
+}

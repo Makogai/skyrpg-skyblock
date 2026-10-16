@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ZOMBIE_TALISMAN",
+ "base": "minecraft:zombie_head",
+ "name": "Zombie Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

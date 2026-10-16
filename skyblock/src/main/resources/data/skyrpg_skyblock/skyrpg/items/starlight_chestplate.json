@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "STARLIGHT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Starlight Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 40,
+  "defense": 40,
+  "intelligence": 90
+ },
+ "color": "#D400FF",
+ "hypixel": {
+  "npc_sell_price": 35000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "STARLIGHT": 2
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "RED_SAND_GENERATOR_8",
+ "base": "minecraft:player_head",
+ "name": "Red Sand Minion VIII",
+ "rarity": "rare",
+ "type": "",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYzODk2MzMzODA5NCwKICAicHJvZmlsZUlkIiA6ICJhOGJhMGY1YTFmNjQ0MTgzODZkZGI3OWExZmY5ZWRlYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJDcmVlcGVyOTA3NSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81NTM3ODAxYzEyMDcyMDYyNTc0NjYwOGUyZmNlYWYwNGFmMTZhZWFkMzQyOTZmN2M5Zjc5MGM1Njg3MmFiYmRhIgogICAgfQogIH0KfQ==",
+  "signature": "oZZA5eEJFsG2KKjQjIN1qC1XzRqd635PF+pEk9vRlnWPgl3z2GS7y+wuMa9dpzAwVxEpA3cL5hF3FiAJ4pEp0JcFdTam6Bfzi2AwOKqpR0u5LgnFEwZqUjSyWcpL4Swjocbpc5fnHEMegzGM7nE653tPXnEStjIDPZxDY1sRZPZFD0Ri2dULueqhJU712jKIo0ozJqMc23CyCBvVSPSNFGcyzt6NfJNalHreZWWgkVH/jYEBinYIb3YjxQTvbFSRaVjh+ucBnswLL41zFL9FMwfVp1J7/4gDYM0gvU9Fj1cR1XDFodtgr98DlZWg/V6NtaFO1U9nlkxlY5xs/F/GvDK3kG6P65DAPXbjozi5WV2fvpis16XGJmb3shkyFKhrxOY03w65EYriGHJ7HbvgGlopcgLmo6TKTGuwVkZ3zMDbGAAyCLRl9DdbXWqKEoIFEft4nRGjIchEBJ1f5qY8dUDRTOMdmVTeh7oArAYMi+oBwjv9leBwZ4drdIrw1xcBFQ/W3tuRPyxpyKO4tYlgu3zYoGwATBEJCEPSdqXoKTxDTtmdeDiBRlvK/uGpLu+od5l/ar6iM1iNijPOyc4XiCUnbea485OrzOszsrchcRfWPlN/0jWGkbIRQWz7zbJml7h5UN8a3WQ/+zWnIatAwE4Wk9CW3QGLPV2Iu8JaZHE="
+ },
+ "hypixel": {
+  "generator": "RED_SAND",
+  "generator_tier": 8,
+  "requirements": [
+   {
+    "type": "CRIMSON_ISLE_REPUTATION",
+    "faction": "BARBARIANS",
+    "reputation": 6500
+   }
+  ]
+ }
+}

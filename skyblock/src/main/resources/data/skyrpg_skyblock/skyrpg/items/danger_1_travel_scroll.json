@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "DANGER_1_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Spider's Den",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

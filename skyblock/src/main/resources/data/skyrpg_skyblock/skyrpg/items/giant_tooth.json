@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "GIANT_TOOTH",
+ "base": "minecraft:paper",
+ "name": "Giant Tooth",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

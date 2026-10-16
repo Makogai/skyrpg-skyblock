@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "WITHER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Wither Boots",
+ "rarity": "legendary",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 180,
+  "defense": 150,
+  "intelligence": 10
+ },
+ "color": "#000000",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 350
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 500
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {
+    "WITHER": "TANK_WITHER"
+   },
+   "armor_set_donation_xp": {
+    "WITHER": 10
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

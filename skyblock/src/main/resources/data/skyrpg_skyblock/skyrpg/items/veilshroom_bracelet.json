@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "VEILSHROOM_BRACELET",
+ "base": "minecraft:paper",
+ "name": "Veilshroom Bracelet",
+ "rarity": "epic",
+ "category": "BRACELET",
+ "type": "Bracelet",
+ "stats": {
+  "foraging_fortune": 25,
+  "sweep": 5
+ },
+ "hypixel": {
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 30
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "donation_xp": 8,
+   "parent": {},
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CHAINMAIL_HELMET",
+ "base": "minecraft:chainmail_helmet",
+ "name": "Chainmail Helmet",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 12
+ },
+ "hypixel": {
+  "npc_sell_price": 7
+ }
+}

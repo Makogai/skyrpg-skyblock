@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "RABBIT_HAT",
+ "base": "minecraft:player_head",
+ "name": "Rabbit Hat",
+ "rarity": "uncommon",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "speed": 5,
+  "intelligence": 5
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY4NzAwMzQ0NTU4MiwKICAicHJvZmlsZUlkIiA6ICJlZTg4M2RmMjM0ZWI0YWM1YTFlNDEwODhhYzZkZWIxNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUdW5lc0Jsb2NrIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I1MDQ1OWJjYjA4ZGI1Y2U5M2UwMjEwNzljMWNmYzAzOGM5ZWJlN2FkOWExNDk1MTZlZmU0ZDVlZThhZmI1OWYiCiAgICB9CiAgfQp9",
+  "signature": "VSgfaGpCntg6cKQ5BeMCGeCYwyq8UZwQSjktWkejpsFK+NNfCJsxR23IUMISa0jEkBGKnRSyBSdX4M4SarN8Omg50n9LEuhoF51il+D6JflnspdwUOtWc0f6gFbXLVx004UjgC5sxU1qMiLuBFHZB/eRKgNbHfrrI196eV49lCjcLdnzP40glCNd2bj81B6g1NLAAcSToIPAQIaHutBfT5xvP3qYhvFZOsTEuUL1rnBj004iU22Lbh/0f/nzgbcgMwCmfczsN+VYiIZeLqzh7ykxZpU1U5XMWxkJHdiiFOg9CyWaEXIG2kuEHm4BEJZUy1snc9+Hg2p33oMd0ia0hLtpeHaGrSlcv4DhbqlG/GB3aRCdZ+W+v1otZey5LAM6IyvEh6D6/5JNRJxlooBnFo3hQ0kIDxbTEReENPa02saLwtKx5aNRCWhMQ0Na7ZLfu7ymhYThvv5lWnRcI8IW7xLlajR1wrXArcPZ0hGm1pJis5ZTakokFpOa8IMoF0ha+3SOhoMVX//wsLxh8Rm3ypjOvesfXqRrRJNIdqPRSEi4PFyIqWlfnr19hWZSdCOu5FdfGh9PBr6Wn/oZH8dgMRQ8zDpX+NByPQHgN3+oD0rV1oNw/+wjsKxekf6Tblc1ac+VCWb0h9s6Ntt3Od5FKV7Y4wbIGgfk72GAcNmdtgY="
+ },
+ "hypixel": {
+  "npc_sell_price": 10,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "COMBAT",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

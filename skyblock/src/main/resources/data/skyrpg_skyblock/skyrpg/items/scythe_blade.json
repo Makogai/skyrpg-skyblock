@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SCYTHE_BLADE",
+ "base": "minecraft:diamond",
+ "name": "Scythe Blade",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

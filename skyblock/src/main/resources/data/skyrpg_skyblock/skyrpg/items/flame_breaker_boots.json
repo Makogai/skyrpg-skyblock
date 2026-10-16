@@ -1,0 +1,67 @@
+{
+ "skyblock_id": "FLAME_BREAKER_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Flamebreaker Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 35,
+  "defense": 35,
+  "mining_speed": 25,
+  "mining_fortune": 15,
+  "heat_resistance": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "HARD_STONE",
+    "tier": 5
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "RUBY"
+   },
+   {
+    "slot_type": "AMBER",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 5000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMBER_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 20000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 4
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "FLAME_BREAKER": "ARMOR_OF_YOG"
+   },
+   "armor_set_donation_xp": {
+    "FLAME_BREAKER": 3
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

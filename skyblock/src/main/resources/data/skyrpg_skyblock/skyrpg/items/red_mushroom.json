@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RED_MUSHROOM",
+ "base": "minecraft:red_mushroom",
+ "name": "Red Mushroom",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "farming": {
+    "BREAK_BLOCK": 6.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

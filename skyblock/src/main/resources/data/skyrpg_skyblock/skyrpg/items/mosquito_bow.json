@@ -1,0 +1,78 @@
+{
+ "skyblock_id": "MOSQUITO_BOW",
+ "base": "minecraft:bow",
+ "name": "Mosquito Shortbow",
+ "rarity": "legendary",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 319,
+  "strength": 151,
+  "crit_damage": 39,
+  "vitality": 20
+ },
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 30
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 65
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 7
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 13
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

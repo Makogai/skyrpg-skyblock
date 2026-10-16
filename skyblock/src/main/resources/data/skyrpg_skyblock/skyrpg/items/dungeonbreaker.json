@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "DUNGEONBREAKER",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Dungeonbreaker",
+ "rarity": "special",
+ "type": "",
+ "stats": {
+  "speed": 20
+ },
+ "glint": true,
+ "hypixel": {
+  "has_uuid": true,
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

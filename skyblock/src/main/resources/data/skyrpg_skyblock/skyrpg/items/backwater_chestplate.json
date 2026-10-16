@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "BACKWATER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Backwater Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 50,
+  "defense": 25,
+  "sea_creature_chance": 2,
+  "treasure_chance": 0.1
+ },
+ "color": "#017D31",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "BACKWATER": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

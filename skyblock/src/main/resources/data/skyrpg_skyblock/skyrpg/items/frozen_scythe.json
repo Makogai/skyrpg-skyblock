@@ -1,0 +1,74 @@
+{
+ "skyblock_id": "FROZEN_SCYTHE",
+ "base": "minecraft:iron_hoe",
+ "name": "Frozen Scythe",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 80,
+  "weapon_ability_damage": 1000
+ },
+ "hypixel": {
+  "sword_type": "SCYTHE",
+  "ability_damage_scaling": 0.3,
+  "npc_sell_price": 100,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "ICE",
+   "amount": 50
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "ICE",
+     "amount": 30
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 10
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {
+    "FROZEN_SCYTHE": "GLACIAL_SCYTHE"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

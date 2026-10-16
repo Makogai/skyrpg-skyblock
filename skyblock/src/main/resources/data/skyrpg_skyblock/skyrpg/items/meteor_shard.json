@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "METEOR_SHARD",
+ "base": "minecraft:paper",
+ "name": "Meteor Chunk",
+ "rarity": "rare",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 41150
+ }
+}

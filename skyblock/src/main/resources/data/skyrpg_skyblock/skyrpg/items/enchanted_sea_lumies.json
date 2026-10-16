@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ENCHANTED_SEA_LUMIES",
+ "base": "minecraft:paper",
+ "name": "Enchanted Sea Lumies",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Luminous wonders from the ocean's depths, lighting up the watery abyss.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480
+ }
+}

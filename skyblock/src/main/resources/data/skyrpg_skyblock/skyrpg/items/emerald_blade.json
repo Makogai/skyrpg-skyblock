@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "EMERALD_BLADE",
+ "base": "minecraft:emerald",
+ "name": "Emerald Blade",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 130
+ },
+ "hypixel": {
+  "npc_sell_price": 153000,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

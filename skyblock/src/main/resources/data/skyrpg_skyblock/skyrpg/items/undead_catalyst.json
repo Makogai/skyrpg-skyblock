@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "UNDEAD_CATALYST",
+ "base": "minecraft:paper",
+ "name": "Undead Catalyst",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Drops rarely from Revenant Horror when you are at least Zombie Slayer LVL 3.",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

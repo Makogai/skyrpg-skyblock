@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "GYROKINETIC_WAND",
+ "base": "minecraft:blaze_rod",
+ "name": "Gyrokinetic Wand",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 6
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_HELMET",
+ "base": "minecraft:golden_helmet",
+ "name": "Golden Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

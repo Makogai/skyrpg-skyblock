@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FALLEN_STAR_TRACKER",
+ "base": "minecraft:diamond",
+ "name": "Fallen Star Lozenge",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 2,
+   "game_stage": "AMATEUR"
+  }
+ }
+}

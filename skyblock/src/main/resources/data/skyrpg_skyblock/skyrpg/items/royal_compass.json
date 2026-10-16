@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ROYAL_COMPASS",
+ "base": "minecraft:paper",
+ "name": "Royal Compass",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "CARNIVAL_DART_TUBE",
+ "base": "minecraft:stick",
+ "name": "Carnival Dart Tube",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "has_uuid": true,
+  "serializable": false
+ }
+}

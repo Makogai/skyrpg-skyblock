@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ARMOR_STAND",
+ "base": "minecraft:armor_stand",
+ "name": "Armor Stand",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

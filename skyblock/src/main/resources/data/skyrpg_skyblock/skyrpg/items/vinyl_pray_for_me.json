@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VINYL_PRAY_FOR_ME",
+ "base": "minecraft:music_disc_mellohi",
+ "name": "Pray For Me Vinyl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "has_uuid": true
+ }
+}

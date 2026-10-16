@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GENERALS_ARMOR_OF_THE_RESISTANCE_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Chestplate of the Rising Sun",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 15,
+  "defense": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 16,
+  "museum": true
+ }
+}

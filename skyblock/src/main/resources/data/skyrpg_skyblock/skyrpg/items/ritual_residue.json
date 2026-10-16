@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RITUAL_RESIDUE",
+ "base": "minecraft:paper",
+ "name": "Ritual Residue",
+ "rarity": "epic",
+ "type": "",
+ "description": "§8§oIt's all that's left from a draconic sacrifice.",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

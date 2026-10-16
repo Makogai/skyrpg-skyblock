@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "LEAFLET_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Leaflet Pants",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 20,
+  "foraging_fortune": 3
+ },
+ "color": "#4DCC4D",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "LEAFLET": 2
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

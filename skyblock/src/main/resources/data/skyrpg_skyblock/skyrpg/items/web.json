@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WEB",
+ "base": "minecraft:cobweb",
+ "name": "Web",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

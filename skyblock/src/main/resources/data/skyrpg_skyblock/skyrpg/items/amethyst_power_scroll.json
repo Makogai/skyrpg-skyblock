@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "AMETHYST_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Amethyst Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

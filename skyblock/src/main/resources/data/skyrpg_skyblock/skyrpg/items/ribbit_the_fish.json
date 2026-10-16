@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RIBBIT_THE_FISH",
+ "base": "minecraft:cooked_cod",
+ "name": "Ribbit the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "SOLO",
+  "requirements": [
+   {
+    "type": "TROPHY_FISHING",
+    "trophy_type": "FROG",
+    "reward": "DIAMOND"
+   }
+  ]
+ }
+}

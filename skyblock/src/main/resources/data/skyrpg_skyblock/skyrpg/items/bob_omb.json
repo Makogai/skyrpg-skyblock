@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BOB_OMB",
+ "base": "minecraft:paper",
+ "name": "Bob-omb",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

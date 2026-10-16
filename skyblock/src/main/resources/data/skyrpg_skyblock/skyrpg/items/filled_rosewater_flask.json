@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FILLED_ROSEWATER_FLASK",
+ "base": "minecraft:paper",
+ "name": "Filled Rosewater Flask",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 400000
+ }
+}

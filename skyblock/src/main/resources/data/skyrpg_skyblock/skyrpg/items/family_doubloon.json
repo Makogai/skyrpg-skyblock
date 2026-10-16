@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FAMILY_DOUBLOON",
+ "base": "minecraft:gold_nugget",
+ "name": "Doubloon of the Family",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "rift_transferrable": true,
+  "origin": "RIFT",
+  "museum": true
+ }
+}

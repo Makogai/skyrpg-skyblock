@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVE_CHALLENGE_BUTTON",
+ "base": "minecraft:red_terracotta",
+ "name": "Leave Challenge",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "serializable": false
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "AUTO_SMELTER",
+ "base": "minecraft:furnace",
+ "name": "Auto Smelter",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

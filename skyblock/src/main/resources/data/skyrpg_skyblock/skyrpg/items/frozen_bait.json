@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FROZEN_BAIT",
+ "base": "minecraft:paper",
+ "name": "Frozen Bait",
+ "rarity": "rare",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 10
+ }
+}

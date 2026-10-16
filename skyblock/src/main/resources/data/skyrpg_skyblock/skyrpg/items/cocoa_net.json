@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "COCOA_NET",
+ "base": "minecraft:wooden_axe",
+ "name": "Cocoa Net",
+ "rarity": "common",
+ "type": "",
+ "description": "§7A tool only large enough to be used by a minion. Its scent is known to attract Pests.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

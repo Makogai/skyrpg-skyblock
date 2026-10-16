@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "TACTICIAN_MURDER_WEAPON",
+ "base": "minecraft:stone_sword",
+ "name": "Tactician's Murder Weapon",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 4
+ },
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "mana_refund": 4
+  }
+ }
+}

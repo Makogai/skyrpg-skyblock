@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_REDSTONE_LAMP",
+ "base": "minecraft:redstone_lamp",
+ "name": "Enchanted Redstone Lamp",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 30720,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 15000.0
+   }
+  }
+ }
+}

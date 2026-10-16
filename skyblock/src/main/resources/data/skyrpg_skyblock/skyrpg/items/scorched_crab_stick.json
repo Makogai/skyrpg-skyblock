@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SCORCHED_CRAB_STICK",
+ "base": "minecraft:paper",
+ "name": "Scorched Crab Stick",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Sometimes, well-done just isn't enough.",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

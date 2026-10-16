@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "MUSIC_PANTS",
+ "base": "minecraft:leather_leggings",
+ "name": "Stereo Pants",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 35,
+  "treasure_chance": 1
+ },
+ "color": "#04CFD3",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

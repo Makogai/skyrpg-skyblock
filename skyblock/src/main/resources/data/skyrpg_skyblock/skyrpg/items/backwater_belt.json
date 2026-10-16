@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "BACKWATER_BELT",
+ "base": "minecraft:paper",
+ "name": "Backwater Belt",
+ "rarity": "uncommon",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "sea_creature_chance": 1,
+  "fishing_speed": 2,
+  "treasure_chance": 0.1
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "BACKWATER": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

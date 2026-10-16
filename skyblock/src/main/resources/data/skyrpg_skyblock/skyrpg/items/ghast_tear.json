@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GHAST_TEAR",
+ "base": "minecraft:ghast_tear",
+ "name": "Ghast Tear",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 16,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 30.0
+   },
+   "combat": {
+    "MINION_STORAGE": 0.5
+   }
+  }
+ }
+}

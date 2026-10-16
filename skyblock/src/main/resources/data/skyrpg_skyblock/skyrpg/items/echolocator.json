@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ECHOLOCATOR",
+ "base": "minecraft:compass",
+ "name": "Echolocator",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "has_uuid": true
+ }
+}

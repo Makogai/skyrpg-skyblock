@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "COAL_ORE",
+ "base": "minecraft:coal_ore",
+ "name": "Coal Ore",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 5.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

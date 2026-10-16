@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ELEANOR_CAP",
+ "base": "minecraft:leather_helmet",
+ "name": "Eleanor's Cap",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 50,
+  "rift_time": 20
+ },
+ "description": "§8§oDelicately crafted from the finest enchanted silk, this cap combines elegance with subtlety.",
+ "color": "#FFD700",
+ "hypixel": {
+  "rift_transferrable": true,
+  "soulbound": "SOLO",
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ELEANOR": 5
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

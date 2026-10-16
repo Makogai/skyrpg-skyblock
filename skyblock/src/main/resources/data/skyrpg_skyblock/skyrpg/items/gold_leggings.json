@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_LEGGINGS",
+ "base": "minecraft:golden_leggings",
+ "name": "Golden Leggings",
+ "rarity": "common",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 14
+ }
+}

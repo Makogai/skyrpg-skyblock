@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "BUILDERS_WAND",
+ "base": "minecraft:blaze_rod",
+ "name": "Builder's Wand",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

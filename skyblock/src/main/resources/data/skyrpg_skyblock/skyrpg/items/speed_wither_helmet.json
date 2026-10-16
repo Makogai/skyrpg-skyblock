@@ -1,0 +1,138 @@
+{
+ "skyblock_id": "SPEED_WITHER_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Maxor's Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "crit_damage": 45,
+  "health": 180,
+  "defense": 80,
+  "speed": 30,
+  "intelligence": 15
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYwNTYyMzMwNDc1OCwKICAicHJvZmlsZUlkIiA6ICI0ZDcwNDg2ZjUwOTI0ZDMzODZiYmZjOWMxMmJhYjRhZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzaXJGYWJpb3pzY2hlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RiZmIwZWQ1OTU5MTkwZDQxNWU3MjZhMTVmMjk4NDAwN2E2N2E1ZmQ0ZWE1NjcxZDBkNjc2ZjlmNjQxYjViYWMiCiAgICB9CiAgfQp9",
+  "signature": "FkLIjR6JJhdujEe6LXSu02e/+6x6jzwmrTvcDT02GTebEHSJBKFdEiIaaMEW5YgQwZeOWk5HVwSBJSlciZbmS/Q13pCVl7qgIM1KgZnbwvEoQcNm68Ljgr1B3kWN4RbvWxk171eN5uG40KjnXNAMY1Vu54vbDr4fkrj9QuKBfi0Jr1+Ik53oL9Xtm84Bpe69Sb0J+/AuCthXMNNTc0Gu24fExtJ6Haf7XGQwOrdQCHxCUq72pdAmyUIxX4dEFmjuEbr9Jutu1Sye3K2IB+NLs0H8jcrs6So/GLoxcORHZnF0tYCxyiubScaLk4RC2P04qc4A09KkqATeS07p/GPJtTLi3/0FjP55tIDisW6xvDVuagGoGuhOwX+xN7haZxMe6ojn3G/ENMR70jGg8SgjU2BidyNtNHAB++LfgHV/fuIERgc6Opq1q3PvgKDk5/SOhs1IUtHIhYqLKCe1TU8QkkQwbjPrth/BNU/aozaTP3NZWHNIJrkYkE4far+rXSmn4I90JprSy+SAClyidxFrrjZ/PQkFhyOuq82op7od7JpUJ+gfvI3zKZlwihM8LTLB+cpOS8JEy6FAJNRuUyT12O9ImxGZA3rw331Pd10xaWhh91nxmm49uFVCpXHC6zuVeaC0gUjsnj9qN7Qryx8gaAO21fIWc/usnn1xNXmoTz0="
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 350
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 500
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 7
+   }
+  ],
+  "dungeon_item": true,
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   },
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_SAPPHIRE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_RUBY_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMETHYST_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {
+    "SPEED_WITHER": "POWER_WITHER"
+   },
+   "armor_set_donation_xp": {
+    "SPEED_WITHER": 6
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

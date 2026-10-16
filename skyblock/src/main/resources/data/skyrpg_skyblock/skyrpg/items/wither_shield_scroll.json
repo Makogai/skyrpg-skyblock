@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WITHER_SHIELD_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Wither Shield",
+ "rarity": "epic",
+ "category": "ABILITY_SCROLL",
+ "type": "Ability Scroll",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

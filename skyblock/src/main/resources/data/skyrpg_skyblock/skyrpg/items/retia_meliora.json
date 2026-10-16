@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "RETIA_MELIORA",
+ "base": "minecraft:paper",
+ "name": "Medium Huntrap",
+ "rarity": "uncommon",
+ "category": "TRAP",
+ "type": "Trap",
+ "description": "§8§oUbi ars naturam superat.",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "HUNTING",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 2,
+   "game_stage": "AMATEUR",
+   "parent": {
+    "RETIA_MELIORA": "RETIA_ROBUSTA"
+   }
+  }
+ }
+}

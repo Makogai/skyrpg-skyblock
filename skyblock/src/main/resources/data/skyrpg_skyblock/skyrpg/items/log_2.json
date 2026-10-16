@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LOG_2",
+ "base": "minecraft:acacia_log",
+ "name": "Acacia Log",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 6.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

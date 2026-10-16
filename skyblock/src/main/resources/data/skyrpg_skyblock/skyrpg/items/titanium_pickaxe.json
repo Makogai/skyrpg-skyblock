@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "TITANIUM_PICKAXE",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Titanium Pickaxe",
+ "rarity": "rare",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 60,
+  "mining_speed": 140,
+  "breaking_power": 6
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "MINING",
+   "parent": {
+    "TITANIUM_PICKAXE": "REFINED_TITANIUM_PICKAXE"
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

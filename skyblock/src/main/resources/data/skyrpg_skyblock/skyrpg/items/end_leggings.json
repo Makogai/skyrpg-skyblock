@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "END_LEGGINGS",
+ "base": "minecraft:chainmail_leggings",
+ "name": "Ender Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 25,
+  "defense": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 12
+   }
+  ],
+  "soulbound": "COOP",
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "END": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

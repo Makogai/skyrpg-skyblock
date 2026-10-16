@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SCOTTS_CONTACT_BAKED_IN_BREAD",
+ "base": "minecraft:name_tag",
+ "name": "Scott's Contact Baked In Bread",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "HEALING_TISSUE",
+ "base": "minecraft:rotten_flesh",
+ "name": "Healing Tissue",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

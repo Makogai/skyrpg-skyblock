@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GIFT_COMPASS",
+ "base": "minecraft:compass",
+ "name": "Gift Compass",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "npc_sell_price": 1
+ }
+}

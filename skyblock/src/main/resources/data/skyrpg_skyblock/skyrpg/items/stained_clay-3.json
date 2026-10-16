@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_CLAY:3",
+ "base": "minecraft:light_blue_terracotta",
+ "name": "Light Blue Hardened Clay",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

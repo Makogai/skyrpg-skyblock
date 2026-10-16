@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MINOS_HUNTER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Minos Hunter Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "color": "#304B4E",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

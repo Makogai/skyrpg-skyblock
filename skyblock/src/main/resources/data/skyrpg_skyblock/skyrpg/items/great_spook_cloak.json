@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GREAT_SPOOK_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Great Spook Cloak",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "fear": 5
+ },
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 0
+ }
+}

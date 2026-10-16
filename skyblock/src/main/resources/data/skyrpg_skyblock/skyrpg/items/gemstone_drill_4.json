@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "GEMSTONE_DRILL_4",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Jasper Drill X",
+ "rarity": "epic",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 600,
+  "pristine": 2,
+  "gemstone_fortune": 120,
+  "breaking_power": 9
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 253000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

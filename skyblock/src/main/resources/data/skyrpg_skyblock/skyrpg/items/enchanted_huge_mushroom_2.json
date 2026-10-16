@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_HUGE_MUSHROOM_2",
+ "base": "minecraft:red_mushroom_block",
+ "name": "Enchanted Red Mushroom Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 256000,
+  "can_place": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 1536.0
+   }
+  }
+ }
+}

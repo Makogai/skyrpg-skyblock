@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP:5",
+ "base": "minecraft:stone_brick_slab",
+ "name": "Stone Brick Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

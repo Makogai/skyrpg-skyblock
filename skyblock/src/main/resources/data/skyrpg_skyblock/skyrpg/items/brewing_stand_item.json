@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BREWING_STAND_ITEM",
+ "base": "minecraft:brewing_stand",
+ "name": "Brewing Stand",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

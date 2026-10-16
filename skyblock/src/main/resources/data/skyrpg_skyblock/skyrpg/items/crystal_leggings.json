@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "CRYSTAL_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Crystal Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "defense": 30,
+  "intelligence": 100
+ },
+ "color": "#FCF3FF",
+ "hypixel": {
+  "npc_sell_price": 3500,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "CRYSTAL": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

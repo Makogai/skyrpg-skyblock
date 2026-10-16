@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JUKEBOX",
+ "base": "minecraft:jukebox",
+ "name": "Jukebox",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

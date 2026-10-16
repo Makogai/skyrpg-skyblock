@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_SLIME_BALL",
+ "base": "minecraft:slime_ball",
+ "name": "Enchanted Slimeball",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

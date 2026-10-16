@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "MELON_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Tater Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 150,
+  "defense": 25,
+  "speed": 3,
+  "farming_fortune": 20,
+  "bonus_pest_chance": 10
+ },
+ "color": "#F8D086",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 20
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "MELON": "CROPIE"
+   },
+   "armor_set_donation_xp": {
+    "MELON": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

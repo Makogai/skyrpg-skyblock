@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "BEZOS",
+ "base": "minecraft:paper",
+ "name": "Bezos",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7The surface is strangely cool and smooth. Often used as a ball in many sports due to its bouncy nature.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

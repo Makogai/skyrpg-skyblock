@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GHAST_CHESTPLATE",
+ "base": "minecraft:chainmail_chestplate",
+ "name": "Ghast Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 200
+ },
+ "hypixel": {
+  "npc_sell_price": 3200
+ }
+}

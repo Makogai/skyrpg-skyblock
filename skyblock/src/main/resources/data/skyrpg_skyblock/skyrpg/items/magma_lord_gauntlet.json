@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "MAGMA_LORD_GAUNTLET",
+ "base": "minecraft:paper",
+ "name": "Magma Lord Necklace",
+ "rarity": "legendary",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "strength": 10,
+  "health": 45,
+  "sea_creature_chance": 2.5,
+  "ferocity": 2
+ },
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 93750,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 45
+   }
+  ],
+  "can_have_attributes": true,
+  "salvageable_from_recipe": true,
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MAGMA_LORD": 20
+   },
+   "game_stage": "MASTER"
+  }
+ }
+}

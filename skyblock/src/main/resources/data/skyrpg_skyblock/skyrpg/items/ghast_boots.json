@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GHAST_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Ghast Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 100
+ }
+}

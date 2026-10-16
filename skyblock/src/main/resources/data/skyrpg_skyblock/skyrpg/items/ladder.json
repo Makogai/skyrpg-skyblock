@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LADDER",
+ "base": "minecraft:ladder",
+ "name": "Ladder",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

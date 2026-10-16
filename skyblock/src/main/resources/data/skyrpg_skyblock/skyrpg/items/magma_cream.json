@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "MAGMA_CREAM",
+ "base": "minecraft:magma_cream",
+ "name": "Magma Cream",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   },
+   "combat": {
+    "MINION_STORAGE": 0.2
+   },
+   "fishing": {
+    "FISH_ITEM": 35.0
+   }
+  }
+ }
+}

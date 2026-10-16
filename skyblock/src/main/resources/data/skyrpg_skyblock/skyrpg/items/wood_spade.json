@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WOOD_SPADE",
+ "base": "minecraft:wooden_shovel",
+ "name": "Wooden Shovel",
+ "rarity": "common",
+ "category": "SPADE",
+ "type": "Spade",
+ "stats": {
+  "damage": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

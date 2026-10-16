@@ -1,0 +1,169 @@
+{
+ "skyblock_id": "GHAST_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Ghast Cloak",
+ "rarity": "rare",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "stats": {
+  "health": 7,
+  "defense": 7
+ },
+ "hypixel": {
+  "npc_sell_price": 8680,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 90
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 130
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 70
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 180
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 240
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 90
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 310
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ITEM",
+     "item_id": "TENTACLE_MEAT",
+     "amount": 390
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CRIMSON_HUNTER": "VANQUISHED"
+   },
+   "armor_set_donation_xp": {
+    "CRIMSON_HUNTER": 5
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

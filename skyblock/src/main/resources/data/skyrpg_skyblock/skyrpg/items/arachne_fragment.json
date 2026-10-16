@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ARACHNE_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Arachne Fragment",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

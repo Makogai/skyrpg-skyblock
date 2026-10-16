@@ -1,0 +1,32 @@
+{
+ "skyblock_id": "PUMPKIN_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Sprout Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 20,
+  "farming_fortune": 15
+ },
+ "color": "#AC3900",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "PUMPKIN": "MELON"
+   },
+   "armor_set_donation_xp": {
+    "PUMPKIN": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

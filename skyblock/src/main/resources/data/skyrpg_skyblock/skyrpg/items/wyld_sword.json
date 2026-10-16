@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WYLD_SWORD",
+ "base": "minecraft:wooden_sword",
+ "name": "Wyld Sword",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 2
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

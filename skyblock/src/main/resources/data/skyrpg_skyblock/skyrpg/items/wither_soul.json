@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "WITHER_SOUL",
+ "base": "minecraft:paper",
+ "name": "Wither Soul",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7You can still hear their cries from the other side.",
+ "hypixel": {
+  "npc_sell_price": 50,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ICE",
+ "base": "minecraft:ice",
+ "name": "Ice",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 0.5,
+    "MINION_STORAGE": 0.5
+   }
+  }
+ }
+}

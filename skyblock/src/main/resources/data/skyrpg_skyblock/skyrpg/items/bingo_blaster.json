@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "BINGO_BLASTER",
+ "base": "minecraft:paper",
+ "name": "Bingo Blaster",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "ability_damage": 20,
+  "weapon_ability_damage": 625,
+  "intelligence": 300
+ },
+ "hypixel": {
+  "origin": "BINGO",
+  "soulbound": "SOLO"
+ }
+}

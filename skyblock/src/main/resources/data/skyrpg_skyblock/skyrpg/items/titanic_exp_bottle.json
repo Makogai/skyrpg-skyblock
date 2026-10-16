@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TITANIC_EXP_BOTTLE",
+ "base": "minecraft:experience_bottle",
+ "name": "Titanic Experience Bottle",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000
+ }
+}

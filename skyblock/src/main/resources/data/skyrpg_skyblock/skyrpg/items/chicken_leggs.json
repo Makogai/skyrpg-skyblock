@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "CHICKEN_LEGGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Chicken Leggs",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "rift_time": 35
+ },
+ "description": "§8Sometimes you pretend to be a dolphin, sometimes a chicken. Cluck cluck!",
+ "color": "#FFF200",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

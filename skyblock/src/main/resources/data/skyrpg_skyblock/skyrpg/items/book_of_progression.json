@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BOOK_OF_PROGRESSION",
+ "base": "minecraft:book",
+ "name": "Book of Progression",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "can_recombobulate": false
+ }
+}

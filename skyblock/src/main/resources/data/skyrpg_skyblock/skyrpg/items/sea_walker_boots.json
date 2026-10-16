@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SEA_WALKER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Sea Walker Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "color": "#10616E",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

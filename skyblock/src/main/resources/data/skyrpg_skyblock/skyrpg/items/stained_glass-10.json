@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS:10",
+ "base": "minecraft:purple_stained_glass",
+ "name": "Purple Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

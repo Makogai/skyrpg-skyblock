@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "POTTED_CACTUS",
+ "base": "minecraft:paper",
+ "name": "Potted Cactus",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "permanent_health": 5,
+   "permanent_cactus_fortune": 12
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "HYDRO_CAN_TURBO_2000",
+ "base": "minecraft:carrot_on_a_stick",
+ "name": "HydroCan™ Turbo 2000",
+ "rarity": "uncommon",
+ "category": "WATERING_CAN",
+ "type": "Watering Can",
+ "hypixel": {
+  "has_uuid": true,
+  "can_recombobulate": false,
+  "can_place": false,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "HYDRO_CAN_TURBO_2000": "HYDRO_CAN_ULTRA_3000"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BRONZE_SHIP_HELM",
+ "base": "minecraft:paper",
+ "name": "Bronze Ship Helm",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_recombobulate": false
+ }
+}

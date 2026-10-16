@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "WATCHER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Watcher Chestplate",
+ "rarity": "common",
+ "type": "",
+ "color": "#000000"
+}

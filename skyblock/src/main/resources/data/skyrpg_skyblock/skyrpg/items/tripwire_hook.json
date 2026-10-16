@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TRIPWIRE_HOOK",
+ "base": "minecraft:tripwire_hook",
+ "name": "Tripwire Hook",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

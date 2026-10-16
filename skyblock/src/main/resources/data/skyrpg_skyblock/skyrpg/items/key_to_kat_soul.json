@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "KEY_TO_KAT_SOUL",
+ "base": "minecraft:gold_nugget",
+ "name": "Key to Infested House Soul",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Hold this item in your inventory to use the soul in the infested house.",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "motes_sell_price": 5,
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "VOLTA",
+ "base": "minecraft:paper",
+ "name": "Volta",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oBzzzt",
+ "hypixel": {
+  "npc_sell_price": 1111,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 10000
+   }
+  ]
+ }
+}

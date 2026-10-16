@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD:2",
+ "base": "minecraft:birch_planks",
+ "name": "Birch Planks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

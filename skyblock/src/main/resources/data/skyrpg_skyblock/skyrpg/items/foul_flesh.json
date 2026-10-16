@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FOUL_FLESH",
+ "base": "minecraft:charcoal",
+ "name": "Foul Flesh",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 400.0
+   }
+  }
+ }
+}

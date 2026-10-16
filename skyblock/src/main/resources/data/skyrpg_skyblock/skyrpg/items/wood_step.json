@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP",
+ "base": "minecraft:oak_slab",
+ "name": "Oak Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "VINESAP",
+ "base": "minecraft:paper",
+ "name": "Vinesap",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§oA fusion of vine resilience and sap vitality.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

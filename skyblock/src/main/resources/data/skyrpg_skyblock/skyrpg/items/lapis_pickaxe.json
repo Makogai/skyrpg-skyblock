@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "LAPIS_PICKAXE",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Lapis Pickaxe",
+ "rarity": "uncommon",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 20,
+  "mining_speed": 200,
+  "breaking_power": 4
+ },
+ "hypixel": {
+  "npc_sell_price": 256,
+  "item_specific": {
+   "bonus_experience_chance": 25
+  },
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "MINING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

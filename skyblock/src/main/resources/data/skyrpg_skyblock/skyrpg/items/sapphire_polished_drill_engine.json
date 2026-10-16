@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SAPPHIRE_POLISHED_DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Sapphire-Polished Drill Engine",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 103000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 6
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 10,
+   "game_stage": "PROFESSIONAL",
+   "parent": {
+    "SAPPHIRE_POLISHED_DRILL_ENGINE": "AMBER_POLISHED_DRILL_ENGINE"
+   }
+  }
+ }
+}

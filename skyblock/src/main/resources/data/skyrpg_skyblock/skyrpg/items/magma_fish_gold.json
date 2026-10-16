@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "MAGMA_FISH_GOLD",
+ "base": "minecraft:paper",
+ "name": "Gold Magmafish",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 128000
+ }
+}

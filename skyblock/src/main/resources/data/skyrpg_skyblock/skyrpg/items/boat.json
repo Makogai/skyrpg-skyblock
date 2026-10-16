@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BOAT",
+ "base": "minecraft:oak_boat",
+ "name": "Boat",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

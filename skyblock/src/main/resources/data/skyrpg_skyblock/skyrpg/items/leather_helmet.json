@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "LEATHER_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Leather Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 7
+ }
+}

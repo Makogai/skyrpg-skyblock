@@ -1,0 +1,81 @@
+{
+ "skyblock_id": "PERFECT_HELMET_13",
+ "base": "minecraft:diamond_helmet",
+ "name": "Perfect Helmet - Tier XIII",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 350
+ },
+ "hypixel": {
+  "npc_sell_price": 5017600,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 40
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 150
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 21
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "PERFECT_TIER_13": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

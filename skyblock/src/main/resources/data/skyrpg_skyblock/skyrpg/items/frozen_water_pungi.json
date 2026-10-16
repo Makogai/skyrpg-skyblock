@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FROZEN_WATER_PUNGI",
+ "base": "minecraft:spider_eye",
+ "name": "Frozen Water Pungi",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 10
+ }
+}

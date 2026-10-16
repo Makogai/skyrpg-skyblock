@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MUSHROOM_SPORE",
+ "base": "minecraft:brown_mushroom",
+ "name": "Mushroom Spore",
+ "rarity": "common",
+ "type": "",
+ "description": "§7The life cycle of a mushroom starts with the spore, which germs and becomes Mycelium, which develops fruit bodies into a mature mushroom, and that mushroom will release spores.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

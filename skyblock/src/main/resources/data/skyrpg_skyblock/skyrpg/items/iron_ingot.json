@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "IRON_INGOT",
+ "base": "minecraft:iron_ingot",
+ "name": "Iron Ingot",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

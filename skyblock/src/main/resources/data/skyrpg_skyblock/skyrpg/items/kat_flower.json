@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "KAT_FLOWER",
+ "base": "minecraft:red_tulip",
+ "name": "Kat Flower",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

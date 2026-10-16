@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "MANGROVE_GRIPPERS",
+ "base": "minecraft:paper",
+ "name": "Mangrove Grippers",
+ "rarity": "rare",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "foraging_fortune": 5,
+  "sweep": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 614840,
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "armor_set_donation_xp": {
+    "MANGROVE": 8
+   },
+   "parent": {
+    "MANGROVE_GRIPPERS": "VEILSHROOM_BRACELET"
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FORESTS_FAVOR",
+ "base": "minecraft:paper",
+ "name": "Forest's Favor",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§8§oThe will of the forest materializes into this item, which it has bestowed upon you. May fortune smile upon thee, and may thy axe be ever-sharp.",
+ "hypixel": {
+  "has_uuid": true,
+  "npc_sell_price": 1000000
+ }
+}

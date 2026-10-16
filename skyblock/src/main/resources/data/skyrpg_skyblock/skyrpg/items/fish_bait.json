@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FISH_BAIT",
+ "base": "minecraft:paper",
+ "name": "Fish Bait",
+ "rarity": "common",
+ "category": "BAIT",
+ "type": "Bait",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "QUALITY_MAP",
+ "base": "minecraft:paper",
+ "name": "Quality Map",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "has_uuid": true
+ }
+}

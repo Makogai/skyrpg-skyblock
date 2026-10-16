@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "CARNIVAL_SHOVEL",
+ "base": "minecraft:iron_shovel",
+ "name": "Carnival Shovel",
+ "rarity": "uncommon",
+ "category": "SPADE",
+ "type": "Spade",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "has_uuid": true,
+  "serializable": false
+ }
+}

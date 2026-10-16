@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:3",
+ "base": "minecraft:light_blue_wool",
+ "name": "Light Blue Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

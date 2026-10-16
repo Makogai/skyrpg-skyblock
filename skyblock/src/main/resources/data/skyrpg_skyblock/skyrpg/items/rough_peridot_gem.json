@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_PERIDOT_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Peridot Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

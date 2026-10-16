@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKELETON_TALISMAN",
+ "base": "minecraft:skeleton_skull",
+ "name": "Skeleton Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

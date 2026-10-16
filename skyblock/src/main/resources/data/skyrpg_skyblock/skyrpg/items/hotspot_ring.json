@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HOTSPOT_RING",
+ "base": "minecraft:paper",
+ "name": "Hotspot Ring",
+ "rarity": "uncommon",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

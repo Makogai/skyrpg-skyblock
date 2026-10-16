@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_MOONFLOWER",
+ "base": "minecraft:blue_orchid",
+ "name": "Enchanted Moonflower",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 640,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

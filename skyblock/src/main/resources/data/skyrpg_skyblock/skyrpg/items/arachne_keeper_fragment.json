@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ARACHNE_KEEPER_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Arachne's Calling",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 400
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_COOKIE",
+ "base": "minecraft:cookie",
+ "name": "Enchanted Cookie",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 76800,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 12000.0
+   },
+   "farming": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

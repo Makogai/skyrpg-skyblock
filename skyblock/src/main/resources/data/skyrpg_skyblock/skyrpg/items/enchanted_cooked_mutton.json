@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_COOKED_MUTTON",
+ "base": "minecraft:cooked_mutton",
+ "name": "Enchanted Cooked Mutton",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128000,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 15000.0
+   },
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

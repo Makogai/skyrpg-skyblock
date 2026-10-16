@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "COBBLESTONE_GENERATOR_9",
+ "base": "minecraft:player_head",
+ "name": "Cobblestone Minion IX",
+ "rarity": "rare",
+ "type": "",
+ "skin": {
+  "value": "eyJ0aW1lc3RhbXAiOjE1NTc5MzQ1OTY5NTEsInByb2ZpbGVJZCI6ImNiZGViZGRjODNhNTQ0OWFiZDFiOThhNzBjY2E0ZDhlIiwicHJvZmlsZU5hbWUiOiJDaGVja2lkb2lzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jY2Y1NDY1ODQ0MjhiNTM4NWJjMGMxYTAwMzFhYTg3ZTk4ZTg1ODc1ZTRkNjEwNGUxYmUwNmNlZjhiZDc0ZmU0In19fQ==",
+  "signature": "Wcx0rxLnh08YFGbpDtzqekD7pHGKWawaZNFv7wSinU958uFymqHUpbj01a0UljcX7Or/dxpcuF3kSCmCgF12IczVz5dl4LO6u314ZxeKQZM99cjjcSs29xmES08EZaAqVf3i7JtC1NTywbBD/055R273UsQZgqDLJSNBSorESpBR1MAXNmfo9CNB4A6p7H39nAZ4hmp9TGnBG7RqBKOw2uKKs/DgvvMMlQ82t/xh1UnHzlFhqt94+OcYL0CMk/qTUqyU11M+av8H2Lbsm6WKvPuIw9Ta5mSdhyMoWJUL+iL0wCR/00sn73WvlGPTUzaEZdJ0kDB67HTlZYX5uMMsRr48OKzhjR8Si4FsjnjqKDCxDTmv6Jdc6j5l5BoHsYWVM3LYNpeIRRP7MVv9udJS5Q683Hi3xjvKB7toAV2qlGmbd+iFaKM61V4Si1mMDz2PADkuITB/ZlbwVOjJC+lBadVor+iieG43ahJUqcw8EsYfwa+zGlr3Z691b248Rv9ICbXWY0+S6EpWPKDSmFH31MUoxA1pp9sh7/h+gmvAdGXFkbsQLZav56+pyAC/Igt4eZgBqdQSnnRfaACxcrVXb5MNu0DqC+gN4XbLhtSpcr9Q+y1U6B03uB+DWNaDcxptJcjEh9S4V6NLdLUJMu5EIFTkf+MGcs0fngxtVJlUrj4="
+ },
+ "hypixel": {
+  "generator": "COBBLESTONE",
+  "generator_tier": 9
+ }
+}

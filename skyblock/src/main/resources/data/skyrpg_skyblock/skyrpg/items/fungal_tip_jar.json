@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FUNGAL_TIP_JAR",
+ "base": "minecraft:flower_pot",
+ "name": "Fungal Tip Jar",
+ "rarity": "rare",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "can_place": false,
+  "has_uuid": true
+ }
+}

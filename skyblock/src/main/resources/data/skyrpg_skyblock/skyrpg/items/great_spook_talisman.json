@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "GREAT_SPOOK_TALISMAN",
+ "base": "minecraft:player_head",
+ "name": "Great Spook Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "stats": {
+  "fear": 2
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY2Mzk1OTYwNDI2MywKICAicHJvZmlsZUlkIiA6ICIyNDIyZWM1ZWFiZDM0MDQ5YmYzNjBlOTFiMTFhMmFmZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJsYXJnZWJyZWFzdHMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjgzYWRmNjQ4ZDRlOTdkZTNiOTI4YTRlODJkMTE2OWMxOTc4ZDcxZTE4NzU3Y2JhZWUzNjYyN2I5YjBkM2YyZSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9",
+  "signature": "iMfBNm8a1b9idT3B2F/65mDVhW0e13wm8BLCO7qLqPE0Qh5v5yzJInFHlRZK4Z7AhjZfeqCAqkgBMBUHCgySRvb8sRxeV4UEbjxIBBCKkKVR0UfzjfEUGVVC9Lqa0O1YzLNPyPsrn9OhdIBx1LVifyPzpt39WJAooNd0pxYVhbLGx6pbWLxgTZvy6jEtQWu10OO/U1DRW/Zfq4FekjhQkDVlKt2TWdC7bW2YUAYTSyUVhjvTcS0OPyf/MOqwtYlwsYDfUgvW9pFAQUD7Zra3Tu82aXqYECVHw0OFR6RVKbM0W0aemL0WIQawdiuiH4eGLpfixjLW+nkp3h24SKxNXCXqxacd/OoVZ5A3rTFMNgogPZgqSBBSx7rQIN7cbhSpaOegWv+kRyOOvEyYkoFdl+3xOebTb+QxU2vfLlTQorpPkmgA+S+AVTroVpHCtGlEsiiPeC8BgOEjLiX5KmDgF8xH/PJjNCk9J954zFodpV9eK4LcX+vI5hQ9aVPM56DOCh3JUeuUtbWAmdSYE+qYENa0uLMSjcG5UMhh9gQ/pamgMYwN5klKy30+yAs8RvXsISWlYkZgKzW/8jYjoU97SlhU8HHWK/Rvqlkun5N88WWqEigXqlvYWJr8QblAKqtpd6Bpr2TkSj3+Kdq11in8NSOUbuuRoporCAGiDoDNp7E="
+ },
+ "hypixel": {
+  "npc_sell_price": 0,
+  "museum": true
+ }
+}

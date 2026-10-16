@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "DWARVEN_HANDWARMERS",
+ "base": "minecraft:paper",
+ "name": "Dwarven Handwarmers",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "mining_speed": 45,
+  "mining_fortune": 30,
+  "cold_resistance": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 8
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "MINING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

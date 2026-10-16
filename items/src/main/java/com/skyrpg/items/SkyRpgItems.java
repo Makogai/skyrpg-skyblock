@@ -111,7 +111,7 @@ public class SkyRpgItems implements ModInitializer {
 
     private static void sendDefinitions(ServerPlayer player) {
         if (ServerPlayNetworking.canSend(player, ItemDefinitionsPayload.TYPE)) {
-            ServerPlayNetworking.send(player, ItemDefinitionsPayload.current());
+            ItemDefinitionsPayload.current().forEach(part -> ServerPlayNetworking.send(player, part));
         }
     }
 

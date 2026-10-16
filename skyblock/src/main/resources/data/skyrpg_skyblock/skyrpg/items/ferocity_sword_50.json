@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FEROCITY_SWORD_50",
+ "base": "minecraft:golden_sword",
+ "name": "Ferocity Sword 50",
+ "rarity": "unobtainable",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 10,
+  "ferocity": 50
+ }
+}

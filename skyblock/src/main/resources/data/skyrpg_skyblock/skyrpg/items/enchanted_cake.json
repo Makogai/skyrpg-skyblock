@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_CAKE",
+ "base": "minecraft:cake",
+ "name": "Enchanted Cake",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2700,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 400.0
+   }
+  }
+ }
+}

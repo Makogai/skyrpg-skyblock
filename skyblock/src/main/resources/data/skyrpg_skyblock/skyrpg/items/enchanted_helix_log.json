@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_HELIX_LOG",
+ "base": "minecraft:paper",
+ "name": "Enchanted Helix Log",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A hardened mass of helix logs all wrapped around each other in a spiral.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

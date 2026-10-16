@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "MOODY_GRAPPLESHOT",
+ "base": "minecraft:tripwire_hook",
+ "name": "Moody Grappleshot",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false,
+  "can_interact": false,
+  "can_interact_right_click": false,
+  "museum_data": {
+   "category": "COMBAT",
+   "donation_xp": 8,
+   "game_stage": "EXPERT"
+  }
+ }
+}

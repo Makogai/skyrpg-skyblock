@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SLIME_BLOCK",
+ "base": "minecraft:slime_block",
+ "name": "Enchanted Slime Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128000,
+  "can_place": false,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 5120.0
+   }
+  }
+ }
+}

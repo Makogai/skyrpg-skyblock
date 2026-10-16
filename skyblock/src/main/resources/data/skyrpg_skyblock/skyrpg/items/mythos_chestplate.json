@@ -1,0 +1,39 @@
+{
+ "skyblock_id": "MYTHOS_CHESTPLATE",
+ "base": "minecraft:golden_chestplate",
+ "name": "Mythos Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 50,
+  "health": 160,
+  "defense": 80
+ },
+ "hypixel": {
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JASPER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 250000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MYTHOS": 12
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

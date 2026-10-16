@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "OXFORD_SHOES",
+ "base": "minecraft:leather_boots",
+ "name": "Oxford Shoes",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 25,
+  "defense": 10
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SEYMOUR": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

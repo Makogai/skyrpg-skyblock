@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BUZZYBEES_FANTABULOUS_DISCO_DESTINATION",
+ "base": "minecraft:spawner",
+ "name": "Buzzybee's Fantabulous Disco Destination",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

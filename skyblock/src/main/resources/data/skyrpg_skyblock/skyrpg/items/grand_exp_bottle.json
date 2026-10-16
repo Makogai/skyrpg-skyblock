@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GRAND_EXP_BOTTLE",
+ "base": "minecraft:experience_bottle",
+ "name": "Grand Experience Bottle",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

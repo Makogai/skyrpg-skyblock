@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "INFLATABLE_JERRY",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Inflatable Jerry",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 500
+ }
+}

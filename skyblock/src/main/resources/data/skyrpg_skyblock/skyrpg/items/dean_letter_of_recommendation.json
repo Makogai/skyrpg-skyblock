@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DEAN_LETTER_OF_RECOMMENDATION",
+ "base": "minecraft:paper",
+ "name": "Letter of Recommendation",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0,
+  "soulbound": "SOLO",
+  "has_uuid": true
+ }
+}

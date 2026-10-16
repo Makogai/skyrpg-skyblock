@@ -1,0 +1,147 @@
+{
+ "skyblock_id": "FINWAVE_BELT",
+ "base": "minecraft:paper",
+ "name": "Finwave Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 18,
+  "health_regen": 1,
+  "fishing_speed": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 9000,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "LUMP_OF_MAGMA",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "MOOGMA_PELT",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "PYROCLASTIC_SCALE",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 40
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "CUP_OF_BLOOD",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_SILVER",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 80
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "FLAMING_HEART",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "ORB_OF_ENERGY",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 8
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HORN_OF_TAURUS",
+     "amount": 30
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMA_FISH_GOLD",
+     "amount": 16
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ]
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "armor_set_donation_xp": {
+    "FINWAVE": 10
+   },
+   "parent": {
+    "FINWAVE": "GILLSPLASH"
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

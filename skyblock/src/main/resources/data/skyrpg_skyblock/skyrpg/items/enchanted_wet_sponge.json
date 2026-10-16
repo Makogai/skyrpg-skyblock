@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_WET_SPONGE",
+ "base": "minecraft:wet_sponge",
+ "name": "Enchanted Wet Sponge",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 80000,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 800.0
+   }
+  }
+ }
+}

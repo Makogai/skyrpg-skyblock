@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FRAMED_VOLCANIC_STONEFISH",
+ "base": "minecraft:item_frame",
+ "name": "Framed Volcanic Stonefish",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0,
+  "soulbound": "SOLO"
+ }
+}

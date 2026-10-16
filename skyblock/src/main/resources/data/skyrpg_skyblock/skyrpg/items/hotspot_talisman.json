@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "HOTSPOT_TALISMAN",
+ "base": "minecraft:paper",
+ "name": "Hotspot Talisman",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory"
+}

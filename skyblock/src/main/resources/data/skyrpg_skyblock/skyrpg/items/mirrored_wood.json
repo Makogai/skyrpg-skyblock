@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_WOOD",
+ "base": "minecraft:oak_planks",
+ "name": "knalP dooW kaO",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 30
+ }
+}

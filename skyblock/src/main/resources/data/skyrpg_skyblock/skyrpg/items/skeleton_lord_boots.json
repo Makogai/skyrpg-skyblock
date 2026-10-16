@@ -1,0 +1,123 @@
+{
+ "skyblock_id": "SKELETON_LORD_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Skeleton Lord Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "crit_chance": 1,
+  "crit_damage": 19,
+  "health": 14,
+  "defense": 28
+ },
+ "color": "#268105",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 25
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SKELETON_LORD": 10
+   },
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    28,
+    31,
+    33,
+    36,
+    40,
+    43,
+    47,
+    51,
+    55,
+    60
+   ],
+   "HEALTH": [
+    14,
+    15,
+    16,
+    18,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29
+   ],
+   "CRITICAL_DAMAGE": [
+    19,
+    22,
+    24,
+    27,
+    30,
+    33,
+    36,
+    41,
+    45,
+    50
+   ],
+   "CRITICAL_CHANCE": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  }
+ }
+}

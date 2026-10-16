@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "TOOL_EXP_CAPSULE",
+ "base": "minecraft:paper",
+ "name": "Tool Exp Capsule",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:7",
+ "base": "minecraft:light_gray_dye",
+ "name": "Light Gray Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

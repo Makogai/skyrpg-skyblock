@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_TOPAZ_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Topaz Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

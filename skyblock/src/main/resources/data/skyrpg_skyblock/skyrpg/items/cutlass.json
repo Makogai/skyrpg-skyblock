@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "CUTLASS",
+ "base": "minecraft:iron_sword",
+ "name": "Cutlass",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 1,
+  "attack_speed": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GIANT_FISHING_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Giant Fishing Rod",
+ "rarity": "legendary",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "double_hook_chance": 10
+ },
+ "hypixel": {
+  "museum": true
+ }
+}

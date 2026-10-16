@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_GLASS:6",
+ "base": "minecraft:pink_stained_glass",
+ "name": "Pink Stained Glass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

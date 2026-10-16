@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENIGMA_CLOAK",
+ "base": "minecraft:paper",
+ "name": "Enigma Cloak",
+ "rarity": "epic",
+ "category": "CLOAK",
+ "type": "Cloak",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

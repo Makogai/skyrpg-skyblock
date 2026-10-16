@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "MITHRIL_DRILL_ENGINE",
+ "base": "minecraft:paper",
+ "name": "Mithril-Plated Drill Engine",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 45500,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 4,
+   "game_stage": "INTERMEDIATE",
+   "parent": {
+    "MITHRIL_DRILL_ENGINE": "TITANIUM_DRILL_ENGINE"
+   }
+  }
+ }
+}

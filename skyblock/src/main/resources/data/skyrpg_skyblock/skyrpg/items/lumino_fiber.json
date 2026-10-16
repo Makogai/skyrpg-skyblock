@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "LUMINO_FIBER",
+ "base": "minecraft:paper",
+ "name": "Lumino Fiber",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Changes color based on the angle you look at it.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

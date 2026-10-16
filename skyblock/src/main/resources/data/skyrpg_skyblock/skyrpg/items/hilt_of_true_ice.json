@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "HILT_OF_TRUE_ICE",
+ "base": "minecraft:paper",
+ "name": "True Ice",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "ICE",
+    "amount": 50
+   }
+  ],
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

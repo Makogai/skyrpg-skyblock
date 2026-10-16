@@ -1,0 +1,218 @@
+{
+ "skyblock_id": "SCOVILLE_BELT",
+ "base": "minecraft:paper",
+ "name": "Scoville Belt",
+ "rarity": "rare",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "strength": 15,
+  "defense": 30
+ },
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "npc_sell_price": 55000,
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 2
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 40
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 60
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 6
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 80
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 8
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 120
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 150
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 12
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 180
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 14
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 220
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 16
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 300
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 18
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 400
+    },
+    {
+     "type": "ITEM",
+     "item_id": "REKINDLED_EMBER_FRAGMENT",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "VAMPIRIC_MELON",
+ "base": "minecraft:melon",
+ "name": "Vampiric Melon",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Perfect ingredient for a healing melon.",
+ "hypixel": {
+  "motes_sell_price": 120,
+  "origin": "RIFT",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "HEALING_MELON"
+    ]
+   }
+  ]
+ }
+}

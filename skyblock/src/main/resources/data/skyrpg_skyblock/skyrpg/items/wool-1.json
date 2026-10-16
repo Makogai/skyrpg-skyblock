@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:1",
+ "base": "minecraft:orange_wool",
+ "name": "Orange Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

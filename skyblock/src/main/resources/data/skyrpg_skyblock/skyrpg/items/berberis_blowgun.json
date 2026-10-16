@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BERBERIS_BLOWGUN",
+ "base": "minecraft:stick",
+ "name": "Berberis Blowgun",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

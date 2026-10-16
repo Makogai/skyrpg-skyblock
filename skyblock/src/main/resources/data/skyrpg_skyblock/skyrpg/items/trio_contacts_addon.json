@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "TRIO_CONTACTS_ADDON",
+ "base": "minecraft:comparator",
+ "name": "Abiphone Contacts Trio",
+ "rarity": "special",
+ "type": "",
+ "glint": true
+}

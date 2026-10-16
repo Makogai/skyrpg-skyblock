@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ABIPHONE_BASIC",
+ "base": "minecraft:paper",
+ "name": "Abiphone Basic",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 6,
+   "has_contact_directory": true
+  },
+  "double_tap_to_drop": true
+ }
+}

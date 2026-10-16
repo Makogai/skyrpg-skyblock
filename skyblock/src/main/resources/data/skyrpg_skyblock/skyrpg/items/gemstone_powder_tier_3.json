@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GEMSTONE_POWDER_TIER_3",
+ "base": "minecraft:orange_dye",
+ "name": "X Gemstone Powder",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "can_auction": false,
+  "can_trade": false
+ }
+}

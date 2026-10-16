@@ -1,0 +1,68 @@
+{
+ "skyblock_id": "FERMENTO_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Fermento Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 130,
+  "defense": 40,
+  "speed": 5,
+  "farming_fortune": 30,
+  "bonus_pest_chance": 17.5
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY2Mzc1Mzg3MDIxMiwKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81MDg2ZGRiZTk2MGYzMzQ4MGNhMjI5ZGE3NDAyMzkxYWI0MTdkMzJlYmIyMTc3MDQzMGVhNjEwZGU1ODAxZmUzIgogICAgfQogIH0KfQ==",
+  "signature": "jrpxXS8iuIfiFhRgDiUtSslUnLRPunJAfaA93161mt/VAbLqhAGQORAkbUqGldeGDcST1ImhxvZPZU4ddAijktvUOLZTOWx2YPHZJ0Ohd5yp9QJs46B6epv3Dd7BODxCjej6G1GhqFr++jUNFj2GRS9eGwgDiJxpOmsZIQ4BbHh0kflanUO65bT2829I/dk2Syb81Uz88rkBjuwOp1lU/JqiEV1WIxwWagVIfHXMC0bGA3gjcPpgm9QoW7CYLLk//G8lrO3Ph0QYwkN8Pao5ee4p3jxQBFoEjrxweTqEQpggHEXwqdiUNoifn0KV6wZORQvz3SooWRRvThZ+JkuzXz9b1+BU0ow8iddBqZXideBgPNphIXVT+Rhz1whhRWfyIAITriiK/ctqsoah2ERV5tYERbCDjYraymiqQgcl6kVGp2uyQW6N5ggw6qHX4VF2uXTTYhycf4W+t6LQNga+/Kqwy+yRbdRYmclBQxaLVJxpgMjJfdH1ykejQ60KL9LHkPymD+X3YjEty2t0v+DQjJHfYpLcONtLgtlgfYFh4KR0SiuC4Lgnykcdvzkwrcx/ixXB0sAhsfR9CY8f4CSGWOmIt0hPfxU4myiIpiPl64W+gcj+C2JU/xYjcygSD0evnjIUv8Q2jhC0YeBP83UM4eKoyaMLQ8U9LU4R7Aac4AI="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 40
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   },
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 40
+     },
+     {
+      "type": "COINS",
+      "coins": 100000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "FERMENTO": "HELIANTHUS"
+   },
+   "armor_set_donation_xp": {
+    "FERMENTO": 12
+   },
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SAPPHIRE_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Saphhire Crystal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "can_auction": false,
+  "can_trade": false
+ }
+}

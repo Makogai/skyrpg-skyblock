@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "THORNLEAF_SCYTHE",
+ "base": "minecraft:iron_hoe",
+ "name": "Thornleaf Scythe",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "museum_data": {
+   "category": "FARMING",
+   "donation_xp": 3,
+   "game_stage": "SKILLED"
+  }
+ }
+}

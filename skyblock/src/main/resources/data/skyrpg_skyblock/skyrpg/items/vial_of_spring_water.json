@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "VIAL_OF_SPRING_WATER",
+ "base": "minecraft:paper",
+ "name": "Vial of Spring Water",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A vial of particularly clear water, gathered from Torrhus Spring by Miria herself. It exudes a faint warmth when pressed against your chest, reminding you of fond memories of days gone by.",
+ "hypixel": {
+  "npc_sell_price": 150000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "SLIME_BOW",
+ "base": "minecraft:bow",
+ "name": "Slime Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 100,
+  "crit_damage": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 960000,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

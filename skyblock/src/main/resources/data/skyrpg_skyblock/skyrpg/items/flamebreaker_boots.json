@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "FLAMEBREAKER_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Ember Ash Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "mining_speed": 15,
+  "mining_fortune": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "COLLECTION",
+    "collection": "HARD_STONE",
+    "tier": 5
+   }
+  ],
+  "museum": true,
+  "soulbound": "COOP"
+ }
+}

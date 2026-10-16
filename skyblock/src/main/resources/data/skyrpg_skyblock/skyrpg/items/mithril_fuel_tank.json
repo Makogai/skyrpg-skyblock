@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "MITHRIL_FUEL_TANK",
+ "base": "minecraft:paper",
+ "name": "Mithril-Infused Fuel Tank",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 35300,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 5,
+   "game_stage": "SKILLED",
+   "parent": {
+    "MITHRIL_FUEL_TANK": "TITANIUM_FUEL_TANK"
+   }
+  }
+ }
+}

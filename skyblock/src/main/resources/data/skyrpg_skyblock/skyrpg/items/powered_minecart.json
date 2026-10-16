@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "POWERED_MINECART",
+ "base": "minecraft:furnace_minecart",
+ "name": "Minecart with Furnace",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

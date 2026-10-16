@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "GIGANTIC_FISHING_NET",
+ "base": "minecraft:paper",
+ "name": "Gigantic Fishing Net",
+ "rarity": "legendary",
+ "category": "FISHING_NET",
+ "type": "Fishing Net",
+ "stats": {
+  "pull": 100
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 10,
+   "parent": {},
+   "game_stage": "EXPERT"
+  }
+ }
+}

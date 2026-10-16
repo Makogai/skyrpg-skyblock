@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "IRON_ORE",
+ "base": "minecraft:iron_ore",
+ "name": "Iron Ore",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 5.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

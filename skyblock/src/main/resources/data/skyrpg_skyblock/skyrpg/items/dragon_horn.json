@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DRAGON_HORN",
+ "base": "minecraft:paper",
+ "name": "Dragon Horn",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SAVING_GRACE",
+ "base": "minecraft:nether_star",
+ "name": "Saving Grace",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 20000
+ }
+}

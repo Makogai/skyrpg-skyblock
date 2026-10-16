@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "POCKET_ESPRESSO_MACHINE",
+ "base": "minecraft:player_head",
+ "name": "Pocket Espresso Machine",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY5Mzc3MTY1NDc2MCwKICAicHJvZmlsZUlkIiA6ICJkN2Y4OTAyMWMxNmQ0ZjFhODg3ODQyNDQyZjc3NGI0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQYW5kYXRvSG9wZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82NjYwNzBjZTAzYTU0NWVlNGQyNjNiY2YyN2YzNjMzOGQyNDlkN2NiN2EyMzc2ZjkyYzE2NzNhZTEzNGUwNGI2IgogICAgfQogIH0KfQ==",
+  "signature": "XwTGdjQjOsPVc0yWAlcEn09W7fGjIC5mx5gWWAC2UxEJKQz1AWizPDX9zULj/OzFBY3XABqpKTEHFwXIWLAZUAL6Qvj7NWZr4wgK47aqvpfztMy7cp4B1yY6QbrdRIG4wrmVeGcFI+srvJ/aiORFK1k0cH6o0c9EB/3SG4+TlqN4kJwo74wB4Nk97TWo9QMF2uWqSZTjoAorHAZmNXGStp8SnYL36j8ulvIHLJ/6FcXU/tRhtFHwAph+gSwwz1aRjd8XjZ0DEULsyhSWXbmkY8mhRS0b9+sLWwhJaOAYbx/TtZVol5rNDl+6oCGWB9BMiGuo7U1W2mW2LFWqD9Fs71MpiHi2D5vTIvIXNwB9jAC+y8vinToaqlLxRnUlMeqFtnf7Avs7Mr9SO3+FXQ+exSj9SbhYkY65oV/PHig1ytvVUyk9MuLR2eS0N+qEwki9uN80jMqH2X9Gj0QhrdOGZaRAUxDu6LilaiK/Z2O5o5Hpe4e87XgSd6k9ecGFRUeEbblccY8umEZ9ImPQSB12O+SuBPa5IIPqaH3mXiKzdmRHW46B2jjabAAvY0YKEcQahzVqGO+5pg4hW8c5Q52I371KyfaQOyve7vWV5zZ7QgLZXfdVrFb6hSQyuPyRxppyBreDz0SczJ5WFe3rEndfSU+quEITsPrDNeV7r1lBXKc="
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "enderman",
+    "level": 4
+   }
+  ],
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "DRAGON",
+    "amount": 15
+   }
+  ]
+ }
+}

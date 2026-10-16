@@ -1,0 +1,104 @@
+{
+ "skyblock_id": "CRYPT_WITHERLORD_SWORD",
+ "base": "minecraft:diamond_sword",
+ "name": "Crypt Witherlord Sword",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 62,
+  "strength": 50,
+  "weapon_ability_damage": 300,
+  "intelligence": 113
+ },
+ "hypixel": {
+  "npc_sell_price": 500,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 60
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 18
+   }
+  ],
+  "dungeon_item": true,
+  "tiered_stats": {
+   "DAMAGE": [
+    62,
+    67,
+    72,
+    78,
+    83,
+    90,
+    97,
+    104,
+    112,
+    120
+   ],
+   "STRENGTH": [
+    50,
+    34,
+    36,
+    39,
+    42,
+    45,
+    48,
+    52,
+    56,
+    60
+   ],
+   "WEAPON_ABILITY_DAMAGE": [
+    300
+   ],
+   "INTELLIGENCE": [
+    113,
+    123,
+    134,
+    146,
+    158,
+    172,
+    187,
+    203,
+    221,
+    240
+   ]
+  }
+ }
+}

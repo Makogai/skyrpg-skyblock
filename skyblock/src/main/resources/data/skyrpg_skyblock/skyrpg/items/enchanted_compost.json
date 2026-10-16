@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_COMPOST",
+ "base": "minecraft:paper",
+ "name": "Compost Bundle",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "has_uuid": true
+ }
+}

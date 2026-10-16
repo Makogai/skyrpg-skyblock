@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "REFRACTIVE_PAINT_PALETTE",
+ "base": "minecraft:paper",
+ "name": "Refractive Paint Palette",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

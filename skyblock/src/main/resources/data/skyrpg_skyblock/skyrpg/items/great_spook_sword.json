@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GREAT_SPOOK_SWORD",
+ "base": "minecraft:wooden_sword",
+ "name": "Great Spook Sword",
+ "rarity": "legendary",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 0
+ },
+ "hypixel": {
+  "museum": true
+ }
+}

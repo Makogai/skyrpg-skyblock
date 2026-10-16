@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "JADE_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Jade Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

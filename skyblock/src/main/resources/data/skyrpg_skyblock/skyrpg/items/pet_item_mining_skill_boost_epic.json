@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_MINING_SKILL_BOOST_EPIC",
+ "base": "minecraft:iron_pickaxe",
+ "name": "Mining Exp Boost",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

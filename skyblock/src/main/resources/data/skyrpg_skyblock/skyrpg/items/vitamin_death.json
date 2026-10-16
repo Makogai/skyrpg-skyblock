@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "VITAMIN_DEATH",
+ "base": "minecraft:paper",
+ "name": "Vitamin Death",
+ "rarity": "legendary",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

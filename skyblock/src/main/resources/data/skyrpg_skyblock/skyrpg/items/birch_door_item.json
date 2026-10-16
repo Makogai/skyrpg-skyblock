@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BIRCH_DOOR_ITEM",
+ "base": "minecraft:birch_door",
+ "name": "Birch Door",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "skyblock_id": "SALMON_CHESTPLATE_NEW",
+ "base": "minecraft:leather_chestplate",
+ "name": "Salmon Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 130,
+  "defense": 55,
+  "sea_creature_chance": 1.5
+ },
+ "color": "#A82B76",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 13
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AQUAMARINE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "SALMON_NEW": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

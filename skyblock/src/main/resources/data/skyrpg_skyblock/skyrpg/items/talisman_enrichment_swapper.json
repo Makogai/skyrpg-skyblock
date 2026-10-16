@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "TALISMAN_ENRICHMENT_SWAPPER",
+ "base": "minecraft:comparator",
+ "name": "Accessory Enrichment Swapper",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_place": false,
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "MAXOR_ENERGY_CRYSTAL",
+ "base": "minecraft:nether_star",
+ "name": "Energy Crystal",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "has_uuid": true,
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

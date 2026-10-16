@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CAN_OF_WORMS",
+ "base": "minecraft:paper",
+ "name": "Can of Worms",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 500
+ }
+}

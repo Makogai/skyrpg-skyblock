@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DIVAN_ALLOY",
+ "base": "minecraft:paper",
+ "name": "Divan's Alloy",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7The legendary Divan explored where no other man has set foot, and came back with this incredibly rare alloy.",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

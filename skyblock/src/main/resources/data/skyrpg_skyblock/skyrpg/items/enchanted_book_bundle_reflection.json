@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_BOOK_BUNDLE_REFLECTION",
+ "base": "minecraft:player_head",
+ "name": "Enchanted Book Bundle",
+ "rarity": "uncommon",
+ "type": "",
+ "unstackable": true,
+ "skin": {
+  "value": "eyJ0aW1lc3RhbXAiOjE1MTgyODYwODY3MjUsInByb2ZpbGVJZCI6IjQzYTgzNzNkNjQyOTQ1MTBhOWFhYjMwZjViM2NlYmIzIiwicHJvZmlsZU5hbWUiOiJTa3VsbENsaWVudFNraW42Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84MmFlMTkxMDcwODZkZDMxNGRhZjMxZDg2NjE4ZTUxOTQ4YTZlM2UyMGQ5NmRjYTE3ZDIxYjI1ZDQyZDJiMjQifX19",
+  "signature": "xm9ZxDygfuHPw7o09sr5M+3WFB9RziNZkE6urjCANjnAsJtKuPScmLFXZobJSquOk0wNnmae8kLTNJ4JtYDeJtg1kE9uI36FXis0F3mZRvfz1DFA95lggIYwVxPW1cQtqg4/+4Ip+nrMrZ7HjJG6tKt0tFwLeX4J87FLc3SG7HIZSWhQ9cSdQwZ6nHS2i4b9MGTKKsowzQkLujrDSVWiIsTxnrViKTAp1NJ9x9nD61zYaoB0J4QTIL7gt4mQVdevChzVFg9V+4BfahD6joJ1cZIbKWZpbP5z0SThoCOoL7c0YRb65QJpBMAm0/+rDG9ZSGyaBFN15MS2mODpzIqEQeP5YDCM1bEvGypG/X0HQFtj623WhkudGyV+5MAWldTkl2ZCCotfumMVQuoePbMjKNqjPb2d+YBwQN3aB2de3COuhOZy7Y/tMNqAEOMDODXxJFuJQcE2uwv2nrrfTZbKVGQh5Tqi9Vk6A/EXsmB0ygxSncFB19xezpxSTKm279+rP0vOjRFuAtmCkwIKFKtKjJFeni1XiJIwPaaxAr4Rd930/e5NaOSadr4oHdkInQISgJStrs3FcG94UKJlngzZtoC146sl3cDA3XiG0R+TUC0xJnXq123Yl0nw0VSNvkXtDhHRLUlxrd4/8tzevL63Q5pi6VRXup1XlZymvlMcd+Y="
+ },
+ "hypixel": {
+  "soulbound": "SOLO",
+  "origin": "RIFT",
+  "rift_transferrable": true
+ }
+}

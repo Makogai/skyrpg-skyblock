@@ -1,0 +1,227 @@
+{
+ "skyblock_id": "BERSERKER_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Berserker Helmet",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 35,
+  "crit_damage": 35
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0NzQ1NDY5ODgwOCwKICAicHJvZmlsZUlkIiA6ICI1YjY2YzNkZWZhYTI0NWMzYTcwNjM3OTA3NTQ0Yjg3MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWFuX1JhaWNvMDgxNiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mZWFkM2I1MTA3N2VkYTNkZWE2Zjc2ZjE4YjdlZjA4OWUyODllODdjMDAyYTZjOGY5MmU2YTM0MGY5YWU4NGE0IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "jUb0DiARQKQau0GbrX1ZS/VYwn7leYkeynWigQMO0jaTaEWYyv2jKo41mhNKIWptdWERfbighjtadVR3dmWMXwbleIJth5+gUkacjDJ0VCQrGn32QX0Aef1e3lxp5PUXw+BHOYdjLHQzbfMs6PAeCYyfHJ9eNGk2YMBVeiIfjC15Z+ckcejE3ZGGuxl873K+h5yytvXOqzhNmK8OUz0rRPC93iejCgN7qHIj6ZVDAhcg2OFL35SmFcCMBrFfs5MRFHcQntzlArKzQH4iWx2EL2lcZL22xW6fMn96qRj7ngVbF9er4j5uwVkDHGzyBplvHjLDAz9aIkrpk99qOjOPF1bHvr0fuDheoDUqn8rrrkkIMos4rWmLjkLel8V72RHyKlJQDDgkUa77/h1SkIxBRCcH8uqwdCn8IyqapPFZ6ZYnB0OL/dYB+mFBeQisSAiOGZxc37G5Ij6Xsz7swjeLrVBKoc2M6qXhjFQ3r3UiSnn6MLL7C/Ne0A7JvCgm2OCqKCBj9r7EWtn0UTaKZHSZCQlaAmtqfLw7EFol1ykmDVWSGG/dS6OwuT1YuInHVUecOoTBBucL5CpG2I4l6RMU4S4OEghr5cBl303pUjkYUIbWzfbJRiVwQ1G7lN+1xee9kOhkgggc/JEUtj6BNI3m75BDW/BNM2xTS6/vkiq7Wdo="
+ },
+ "hypixel": {
+  "npc_sell_price": 130250,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 22
+   }
+  ],
+  "salvageable_from_recipe": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 10
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 1
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 50
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 750
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND",
+     "amount": 80
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 1
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 2
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 3
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 3
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 4
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "HALLOWED_SKULL",
+     "amount": 4
+    },
+    {
+     "type": "ITEM",
+     "item_id": "ENCHANTED_RED_SAND_CUBE",
+     "amount": 8
+    },
+    {
+     "type": "ITEM",
+     "item_id": "HEAVY_PEARL",
+     "amount": 5
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 3000
+    }
+   ]
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT"
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "BERSERKER": 14
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

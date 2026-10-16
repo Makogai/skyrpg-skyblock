@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SHIMMERING_WOOL",
+ "base": "minecraft:yellow_wool",
+ "name": "Shimmering Wool",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A splendid wool found nowhere else; it caresses your fingers and exudes a unique warmth the likes of which you have never experienced before, and likely never will again.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 5000000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

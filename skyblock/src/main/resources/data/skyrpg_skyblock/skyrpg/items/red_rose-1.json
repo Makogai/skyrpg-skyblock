@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RED_ROSE:1",
+ "base": "minecraft:blue_orchid",
+ "name": "Blue Orchid",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "foraging": {
+    "BREAK_BLOCK": 1.0,
+    "MINION_STORAGE": 0.1
+   }
+  }
+ }
+}

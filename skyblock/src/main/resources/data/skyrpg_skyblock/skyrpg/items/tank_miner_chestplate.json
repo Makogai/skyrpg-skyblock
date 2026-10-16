@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "TANK_MINER_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Miner Chestplate",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 15,
+  "mining_speed": 10
+ },
+ "hypixel": {
+  "npc_sell_price": 4000,
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "TANK_MINER": "HEAT"
+   },
+   "armor_set_donation_xp": {
+    "TANK_MINER": 3
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

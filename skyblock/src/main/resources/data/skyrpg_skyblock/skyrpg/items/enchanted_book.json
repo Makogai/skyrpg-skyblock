@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_BOOK",
+ "base": "minecraft:enchanted_book",
+ "name": "Enchanted Book",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "can_auction": false
+ }
+}

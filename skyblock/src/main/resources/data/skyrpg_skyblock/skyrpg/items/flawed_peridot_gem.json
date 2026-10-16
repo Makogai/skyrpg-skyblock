@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FLAWED_PERIDOT_GEM",
+ "base": "minecraft:paper",
+ "name": "Flawed Peridot Gemstone",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 320
+ }
+}

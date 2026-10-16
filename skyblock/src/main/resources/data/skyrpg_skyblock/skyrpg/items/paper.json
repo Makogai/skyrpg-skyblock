@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PAPER",
+ "base": "minecraft:paper",
+ "name": "Paper",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

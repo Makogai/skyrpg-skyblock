@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_TOPAZ_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Topaz Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 19200
+ }
+}

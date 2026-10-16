@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "ETALPTSEHC_NORI",
+ "base": "minecraft:iron_chestplate",
+ "name": "etalptsehC norI",
+ "rarity": "rare",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_time": 30
+ },
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

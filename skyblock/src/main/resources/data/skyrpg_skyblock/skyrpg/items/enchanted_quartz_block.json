@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_QUARTZ_BLOCK",
+ "base": "minecraft:quartz_block",
+ "name": "Enchanted Quartz Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 102400,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 7680.0
+   }
+  }
+ }
+}

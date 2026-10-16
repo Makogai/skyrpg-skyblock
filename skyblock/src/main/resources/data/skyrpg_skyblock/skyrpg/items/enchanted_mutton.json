@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_MUTTON",
+ "base": "minecraft:mutton",
+ "name": "Enchanted Raw Mutton",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   },
+   "farming": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

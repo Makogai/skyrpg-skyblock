@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FIGHTING_BOOSTER_UNCOMMON",
+ "base": "minecraft:paper",
+ "name": "Uncommon Fighting Booster Upgrade",
+ "rarity": "uncommon",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

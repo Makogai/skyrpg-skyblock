@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FLAWED_JADE_GEM",
+ "base": "minecraft:paper",
+ "name": "Flawed Jade Gemstone",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 240
+ }
+}

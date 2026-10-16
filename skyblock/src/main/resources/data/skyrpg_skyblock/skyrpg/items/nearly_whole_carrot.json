@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NEARLY_WHOLE_CARROT",
+ "base": "minecraft:carrot",
+ "name": "Nearly-Whole Carrot",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7The whole is better than the sum of its parts...",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SAND",
+ "base": "minecraft:sand",
+ "name": "Sand",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 3.0,
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

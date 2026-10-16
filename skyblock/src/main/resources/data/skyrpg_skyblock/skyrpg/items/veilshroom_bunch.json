@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "VEILSHROOM_BUNCH",
+ "base": "minecraft:paper",
+ "name": "Veilshroom Bunch",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A bouquet of ruby veilshrooms. The heat emanating from them can be felt even through the wrapping - best to handle with care.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 128000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "ACCRETION_ARTIFACT"
+    ]
+   }
+  ]
+ }
+}

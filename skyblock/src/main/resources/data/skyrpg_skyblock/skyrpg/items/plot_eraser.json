@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PLOT_ERASER",
+ "base": "minecraft:paper",
+ "name": "Plot Eraser",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Right-click while on a plot to §ainstantly clean §7it, saving you the trouble of doing it yourself! However, the §9Plot Eraser §7gets comsumed in the process.",
+ "hypixel": {
+  "npc_sell_price": 10240
+ }
+}

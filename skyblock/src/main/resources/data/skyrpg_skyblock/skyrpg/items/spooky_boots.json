@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SPOOKY_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Spooky Boots",
+ "rarity": "epic",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 25
+ },
+ "color": "#606060",
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "SPOOKY": "BAT_PERSON"
+   },
+   "armor_set_donation_xp": {
+    "SPOOKY": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

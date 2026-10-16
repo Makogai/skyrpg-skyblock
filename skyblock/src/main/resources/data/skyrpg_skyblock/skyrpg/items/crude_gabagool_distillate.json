@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "CRUDE_GABAGOOL_DISTILLATE",
+ "base": "minecraft:paper",
+ "name": "Gabagool Distillate",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

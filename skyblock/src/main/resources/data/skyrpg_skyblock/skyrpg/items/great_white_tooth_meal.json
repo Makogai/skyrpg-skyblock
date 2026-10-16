@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "GREAT_WHITE_TOOTH_MEAL",
+ "base": "minecraft:bone_meal",
+ "name": "Great White Tooth Meal",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7It smells like blood and fear.",
+ "hypixel": {
+  "npc_sell_price": 12000,
+  "can_interact": false,
+  "can_interact_right_click": false
+ }
+}

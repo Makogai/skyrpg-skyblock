@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "AUGER_ROD",
+ "base": "minecraft:fishing_rod",
+ "name": "Auger Rod",
+ "rarity": "legendary",
+ "category": "FISHING_ROD",
+ "type": "Fishing Rod",
+ "stats": {
+  "damage": 135,
+  "strength": 90,
+  "fishing_speed": 110
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 25
+   }
+  ]
+ }
+}

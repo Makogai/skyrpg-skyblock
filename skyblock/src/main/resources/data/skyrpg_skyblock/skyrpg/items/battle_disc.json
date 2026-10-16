@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BATTLE_DISC",
+ "base": "minecraft:music_disc_13",
+ "name": "Battle Disc",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true
+ }
+}

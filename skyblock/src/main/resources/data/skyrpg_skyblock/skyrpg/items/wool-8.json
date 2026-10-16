@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOL:8",
+ "base": "minecraft:light_gray_wool",
+ "name": "Light Gray Wool",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

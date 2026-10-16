@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "POTATO_CROWN",
+ "base": "minecraft:golden_helmet",
+ "name": "Potato Crown",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "speed": 1
+ },
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

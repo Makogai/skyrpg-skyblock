@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SHARK_WATER_ORB",
+ "base": "minecraft:paper",
+ "name": "Shark Water Orb",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§7A disgusting ball of mushed shark matter.\n\n§8Are those teeth sticking out?",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

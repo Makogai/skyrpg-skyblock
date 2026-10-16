@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "GOLD_CLAWS",
+ "base": "minecraft:gold_ingot",
+ "name": "Gold Claws",
+ "rarity": "uncommon",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

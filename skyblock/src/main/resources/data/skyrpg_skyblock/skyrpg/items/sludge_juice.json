@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SLUDGE_JUICE",
+ "base": "minecraft:paper",
+ "name": "Sludge Juice",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7A green viscous substance highly valued by the Kalhuiki Tribe for its stickiness.",
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

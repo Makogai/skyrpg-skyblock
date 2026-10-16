@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_CACTUS_GREEN",
+ "base": "minecraft:green_dye",
+ "name": "Enchanted Cactus Green",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 250.0
+   },
+   "farming": {
+    "MINION_STORAGE": 80.0
+   }
+  }
+ }
+}

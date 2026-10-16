@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "WARNING_FLARE",
+ "base": "minecraft:firework_rocket",
+ "name": "Warning Flare",
+ "rarity": "uncommon",
+ "category": "DEPLOYABLE",
+ "type": "Deployable",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "blaze",
+    "level": 3
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "WARNING_FLARE": "ALERT_FLARE"
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

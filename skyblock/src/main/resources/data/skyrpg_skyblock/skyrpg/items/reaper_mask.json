@@ -1,0 +1,102 @@
+{
+ "skyblock_id": "REAPER_MASK",
+ "base": "minecraft:player_head",
+ "name": "Reaper Mask",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 150,
+  "defense": 100,
+  "intelligence": 100,
+  "vitality": 60,
+  "mending": 60
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYxNDc0MTY0MTc3NiwKICAicHJvZmlsZUlkIiA6ICIzOTg5OGFiODFmMjU0NmQxOGIyY2ExMTE1MDRkZGU1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNeVV1aWRJcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xZmMwMTg0NDczZmU4ODJkMjg5NWNlN2NiYzgxOTdiZDQwZmY3MGJmMTBkMzc0NWRlOTdiNmMyYTljNWZjNzhmIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "iAhcGWvoQGy1jzvSgBsR8+MqXPlHvIkAMUYzWL4ZO6ABs/744vOhuzpsaNiGHL5lty0Bt7bQ0A2eCIY+T3oMnYxZ56WI29PSWMgKA02h+cOLGoLdtZmjB/ITJLYwe/4Sm8Nnhm2ujcjeYO+Ket/fIMmtimKfPOsfwfkq+vkaUnAzwl+moZX+TSMmOVEqfy7DxOVBqKXUOg9W/0byJzTdmSc9U9Qj5vq8v5S/EZRlRkno+5jNcZjsY3zVxiHcjqoD10CDhP3qSZaFFrG6ofJl3QI2VD9CBTw60bRuN8Rddu3yCymKIQKx90NDQzca2tIIENfHbpWxqvOZZxSR8p9Bsz9PcywQe3PprazEJjcsiWpH6+a7vUs9YdziNEMWLQtHukKBYvNdPCJBYq8qt6xQ+owpVLvhpFFLQ25r0QHwcG5IBiSfJy2wcmcuUAyeHloAQWd934/NcluS+bDeHxjDR4niZReOMOfId5ES/Kc7jKnUBo21g36EkfRhMdJhg+y2BWMqCyxMvdZVf3sx+TU3OCVCzfI0JmG0TC1cBkXT3xLUBzQF/c7G14Cn+1aaNdjECqMfIhn11k0Ch/4JUoh0mBKFTdAH/GV7taIrhIDIKopNcfEM8+klijG19kGdptcOYffDb5QB9r2U5yGV1oRqiUgtV/jiUKZFZk4PBqtOUDM="
+ },
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "UNDEAD",
+   "amount": 500
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 800
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 1000
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 7
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 24
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "RUBY"
+   },
+   {
+    "slot_type": "SAPPHIRE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

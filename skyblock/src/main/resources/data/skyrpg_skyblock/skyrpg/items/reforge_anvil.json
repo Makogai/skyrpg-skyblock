@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "REFORGE_ANVIL",
+ "base": "minecraft:anvil",
+ "name": "Reforge Anvil",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false,
+  "npc_sell_price": 2000000
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "FALLEN_STAR_LEGGINGS",
+ "base": "minecraft:leather_chestplate",
+ "name": "Fallen Star Leggings",
+ "rarity": "common",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "color": "#586158",
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMOOTH_BRICK",
+ "base": "minecraft:stone_bricks",
+ "name": "Stone Bricks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

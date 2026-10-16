@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PETRIFIED_STARFALL",
+ "base": "minecraft:paper",
+ "name": "Petrified Starfall",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 48000
+ }
+}

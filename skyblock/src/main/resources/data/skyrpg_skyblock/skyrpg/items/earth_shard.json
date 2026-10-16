@@ -1,0 +1,95 @@
+{
+ "skyblock_id": "EARTH_SHARD",
+ "base": "minecraft:stone_sword",
+ "name": "Earthen Blade",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 105,
+  "defense": 73
+ },
+ "hypixel": {
+  "npc_sell_price": 123,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 400
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 600
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 19
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  },
+  "tiered_stats": {
+   "DEFENSE": [
+    73,
+    75,
+    78,
+    80,
+    82,
+    85,
+    87,
+    90,
+    93,
+    96
+   ],
+   "DAMAGE": [
+    105,
+    108,
+    112,
+    115,
+    118,
+    122,
+    126,
+    129,
+    133,
+    137
+   ]
+  }
+ }
+}

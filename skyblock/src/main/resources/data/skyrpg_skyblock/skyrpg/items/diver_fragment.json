@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DIVER_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Emperor's Skull",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

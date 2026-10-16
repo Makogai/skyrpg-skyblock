@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVES:1",
+ "base": "minecraft:spruce_leaves",
+ "name": "Spruce Leaves",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

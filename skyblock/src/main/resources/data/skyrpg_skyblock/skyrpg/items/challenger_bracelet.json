@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CHALLENGER_BRACELET",
+ "base": "minecraft:paper",
+ "name": "Challenger's Bracelet",
+ "rarity": "epic",
+ "category": "BRACELET",
+ "type": "Bracelet",
+ "stats": {
+  "strength": 5,
+  "health": 20,
+  "defense": 10
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "CHALLENGER": "MYTHOS"
+   },
+   "armor_set_donation_xp": {
+    "CHALLENGER": 6
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

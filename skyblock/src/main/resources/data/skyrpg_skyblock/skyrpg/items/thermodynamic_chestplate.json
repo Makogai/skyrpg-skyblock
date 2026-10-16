@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "THERMODYNAMIC_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Thermodynamic Chestplate",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "attack_speed": 5,
+  "defense": 240,
+  "speed": 25
+ },
+ "color": "#FF700A",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 30
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "THERMODYNAMIC": 10
+   },
+   "game_stage": "EXPERT"
+  }
+ }
+}

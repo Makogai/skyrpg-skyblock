@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "MELODY_SHOES",
+ "base": "minecraft:leather_boots",
+ "name": "Melody's Shoes",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 90,
+  "defense": 20,
+  "foraging_fortune": 6
+ },
+ "color": "#8D3592",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "can_recombobulate": false,
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "PARK": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

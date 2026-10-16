@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_BIRCH_LOG",
+ "base": "minecraft:birch_log",
+ "name": "Enchanted Birch Log",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 320,
+  "can_place": false,
+  "experience": {
+   "foraging": {
+    "MINION_STORAGE": 16.0
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_COAL_BLOCK",
+ "base": "minecraft:coal_block",
+ "name": "Enchanted Coal Block",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 25600,
+  "can_place": false,
+  "experience": {
+   "mining": {
+    "MINION_STORAGE": 7680.0
+   }
+  }
+ }
+}

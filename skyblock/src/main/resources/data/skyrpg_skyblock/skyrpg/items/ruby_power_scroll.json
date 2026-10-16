@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "RUBY_POWER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Ruby Power Scroll",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

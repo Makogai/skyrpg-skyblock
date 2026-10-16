@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "SLICE_OF_STRAWBERRY_SHORTCAKE",
+ "base": "minecraft:player_head",
+ "name": "Slice of Strawberry Shortcake",
+ "rarity": "special",
+ "type": "",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc4MDkxNDc3OTMwOSwKICAicHJvZmlsZUlkIiA6ICIzYzBkZWU0NzE5MDM0OTc5OWE1ZmJlYTE2NTgwZmRmMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJEZXF1YXJpIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q2NWIwMGZmMDM1Y2Q5MGMzMzg1ODhkYjViZTM4ZjU3ZmYyMjVkYzNhYzMxMzMyNTFkMzE5YzJjNmJlZmM1ODYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
+  "signature": "CUUGgnbGCSwnsgbzs9dR3uUPrlzjv4LKYsqaa6PpQTBW4KE6y1LOAceTdC9sr+9NnFKfHn+OpA+9t14ND23aeQLCUZxzBp87UOJ851KxZLaMFyk3t9q1JnkvVNy9F5heV2pAHGJNiaZ5UGQcUdRKUtiYgxrLY6aLFyVlGYFturzEwkpnBWCY2Y1vcgya8kd9ExhQwEcZfhglN4wl8Z0Jbc5zgkI3qFJVvtuIF1xEZ/k+jTfyajhpU/tqR2vzBdM0qJlvwAtRtP7neJMR6vna9j0ThHARF8ZyVd5qpMqBimWVOiUbHqVfhaXDRX9eAhbvBuUfi/NvjYdu4/NtnAIWV7BtnMyzWTcMkaI8FZ7ZDI4mWMkYFoOxuXilQG6BXNzgbF9UiA4j01LlHxFa7fwHUjjel5UON+56i14DuIIbza5zc70S6Sp6vMxMkKLFlyLngMmkt95tAmY3DKR373E7mNuKdT6kHNVVmafeX1blSMCAEo3M96FHRCg5qs6pG2pnsL7ejiXY0EPzFAIyjpM3TVPJqUuQzPyOiySmmAAVXEuzxhgPUSHAKHlQ4I9w/82DIusubywoFcpPMn+edLkFOdGD86CjF1nmcIhsoxQuuMOi5E8sXZY3v2xbFA+FvBRlOQTQ5uFNq3F3egpAZbXaKlUs5MJOlpHyZQXq0aep/xc="
+ },
+ "hypixel": {
+  "can_recombobulate": false,
+  "soulbound": "SOLO",
+  "rift_transferrable": true,
+  "origin": "RIFT",
+  "item_specific": {
+   "particle_color": {
+    "red": 222,
+    "green": 40,
+    "blue": 141
+   }
+  }
+ }
+}

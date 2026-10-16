@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "COAL",
+ "base": "minecraft:coal",
+ "name": "Coal",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 5.0
+   },
+   "fishing": {
+    "FISH_ITEM": 120.0
+   },
+   "mining": {
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

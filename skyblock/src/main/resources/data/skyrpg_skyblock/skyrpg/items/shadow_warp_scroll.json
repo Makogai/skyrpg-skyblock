@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SHADOW_WARP_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Shadow Warp",
+ "rarity": "epic",
+ "category": "ABILITY_SCROLL",
+ "type": "Ability Scroll",
+ "stats": {
+  "weapon_ability_damage": 10000
+ },
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "ability_damage_scaling": 0.3,
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

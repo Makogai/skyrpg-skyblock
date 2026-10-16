@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "PERFECTLY_CUT_FUEL_TANK",
+ "base": "minecraft:paper",
+ "name": "Perfectly-Cut Fuel Tank",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 7
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 15,
+   "game_stage": "MASTER"
+  }
+ }
+}

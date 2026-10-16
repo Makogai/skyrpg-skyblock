@@ -1,0 +1,81 @@
+{
+ "skyblock_id": "TARANTULA_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Tarantula Leggings",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 105,
+  "defense": 90,
+  "intelligence": 80
+ },
+ "color": "#000000",
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 50
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 125
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "spider",
+    "level": 4
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 16
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "TARANTULA": "PRIMORDIAL"
+   },
+   "armor_set_donation_xp": {
+    "TARANTULA": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

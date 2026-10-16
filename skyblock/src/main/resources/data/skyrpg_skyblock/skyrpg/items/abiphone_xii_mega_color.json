@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ABIPHONE_XII_MEGA_COLOR",
+ "base": "minecraft:paper",
+ "name": "Abiphone XII Amethyst",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 9,
+   "max_musicdiscs": 10,
+   "model": "abiphone_xii"
+  }
+ }
+}

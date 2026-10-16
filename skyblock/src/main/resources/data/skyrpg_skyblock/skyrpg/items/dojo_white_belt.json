@@ -1,0 +1,60 @@
+{
+ "skyblock_id": "DOJO_WHITE_BELT",
+ "base": "minecraft:paper",
+ "name": "White Belt",
+ "rarity": "common",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 10,
+  "defense": 5
+ },
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {
+    "DOJO_WHITE_BELT": "DOJO_YELLOW_BELT"
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

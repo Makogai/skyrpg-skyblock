@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROUGH_AQUAMARINE_GEM",
+ "base": "minecraft:paper",
+ "name": "Rough Aquamarine Gemstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

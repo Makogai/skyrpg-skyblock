@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "EXPERIENCE_ARTIFACT",
+ "base": "minecraft:enchanted_book",
+ "name": "Experience Artifact",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 115000
+ }
+}

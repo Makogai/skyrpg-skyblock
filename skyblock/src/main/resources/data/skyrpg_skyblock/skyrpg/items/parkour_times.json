@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "PARKOUR_TIMES",
+ "base": "minecraft:iron_block",
+ "name": "Parkour Times",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Places a hologram displaying the top parkour times of players on your island. Click to select which parkour is displayed.",
+ "hypixel": {
+  "can_place": false,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 1
+   }
+  ]
+ }
+}

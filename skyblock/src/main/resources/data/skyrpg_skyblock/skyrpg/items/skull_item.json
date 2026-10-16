@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKULL_ITEM",
+ "base": "minecraft:skeleton_skull",
+ "name": "Skeleton Skull",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "soulbound": "COOP"
+ }
+}

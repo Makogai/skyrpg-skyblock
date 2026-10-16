@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TIME_GUN",
+ "base": "minecraft:diamond_horse_armor",
+ "name": "Time Gun",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "motes_sell_price": 25,
+  "origin": "RIFT"
+ }
+}

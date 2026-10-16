@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "BEE_SALIVA",
+ "base": "minecraft:paper",
+ "name": "Bee Saliva",
+ "rarity": "epic",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

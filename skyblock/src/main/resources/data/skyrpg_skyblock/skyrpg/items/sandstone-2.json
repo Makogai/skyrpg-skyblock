@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SANDSTONE:2",
+ "base": "minecraft:cut_sandstone",
+ "name": "Smooth Sandstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

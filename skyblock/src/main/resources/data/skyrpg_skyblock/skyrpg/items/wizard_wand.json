@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WIZARD_WAND",
+ "base": "minecraft:blaze_rod",
+ "name": "Wizard Wand",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "can_recombobulate": false
+ }
+}

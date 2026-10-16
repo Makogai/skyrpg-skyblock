@@ -1,0 +1,108 @@
+{
+ "skyblock_id": "CONJURING_SWORD",
+ "base": "minecraft:stone_sword",
+ "name": "Conjuring",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 68,
+  "strength": 36,
+  "intelligence": 85
+ },
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "rarity_salvageable": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 5
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 10
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ]
+  ],
+  "gear_score": 25,
+  "requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 13
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  },
+  "tiered_stats": {
+   "DAMAGE": [
+    68,
+    73,
+    78,
+    84,
+    90,
+    97,
+    105,
+    112,
+    121,
+    130
+   ],
+   "STRENGTH": [
+    36,
+    39,
+    42,
+    45,
+    49,
+    52,
+    56,
+    61,
+    65,
+    70
+   ],
+   "INTELLIGENCE": [
+    85,
+    92,
+    100,
+    109,
+    119,
+    129,
+    140,
+    152,
+    166,
+    180
+   ]
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WITHER_BLOOD",
+ "base": "minecraft:paper",
+ "name": "Wither Blood",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

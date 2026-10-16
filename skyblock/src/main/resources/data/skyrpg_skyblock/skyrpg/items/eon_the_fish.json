@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "EON_THE_FISH",
+ "base": "minecraft:cod",
+ "name": "Eon the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "WILTED_BERBERIS_BUNCH",
+ "base": "minecraft:dead_bush",
+ "name": "Wilted Berberis Bunch",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7The plant equivalent of... ALIEN revenant viscera?",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "rift_transferrable": true,
+  "can_place": false
+ }
+}

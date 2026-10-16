@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FEL_ROSE",
+ "base": "minecraft:blue_orchid",
+ "name": "Fel Rose",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "REDSTONE_COMPARATOR",
+ "base": "minecraft:comparator",
+ "name": "Comparator",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5
+ }
+}

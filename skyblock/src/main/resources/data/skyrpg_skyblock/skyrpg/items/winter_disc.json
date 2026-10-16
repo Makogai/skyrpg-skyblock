@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WINTER_DISC",
+ "base": "minecraft:music_disc_strad",
+ "name": "Winter Disc",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true
+ }
+}

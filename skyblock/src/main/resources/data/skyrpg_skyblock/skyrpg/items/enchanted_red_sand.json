@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_RED_SAND",
+ "base": "minecraft:red_sand",
+ "name": "Enchanted Red Sand",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 800,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   },
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

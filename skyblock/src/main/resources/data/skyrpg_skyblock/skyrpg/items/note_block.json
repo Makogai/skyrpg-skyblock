@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "NOTE_BLOCK",
+ "base": "minecraft:note_block",
+ "name": "Noteblock",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

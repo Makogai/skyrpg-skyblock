@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_EGG",
+ "base": "minecraft:egg",
+ "name": "Organic Egg",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

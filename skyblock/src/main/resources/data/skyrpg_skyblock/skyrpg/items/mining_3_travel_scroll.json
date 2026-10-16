@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MINING_3_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Dwarven Mines",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

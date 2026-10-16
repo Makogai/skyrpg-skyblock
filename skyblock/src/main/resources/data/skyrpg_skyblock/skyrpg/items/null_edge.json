@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "NULL_EDGE",
+ "base": "minecraft:stick",
+ "name": "Null Edge",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

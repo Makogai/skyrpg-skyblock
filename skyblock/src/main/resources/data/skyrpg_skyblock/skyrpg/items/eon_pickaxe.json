@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "EON_PICKAXE",
+ "base": "minecraft:golden_pickaxe",
+ "name": "Eon Pickaxe",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "rift_damage": 5
+ },
+ "hypixel": {
+  "motes_sell_price": 25,
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "CRYSTAL_FRAGMENT",
+ "base": "minecraft:quartz",
+ "name": "Crystal Fragment",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

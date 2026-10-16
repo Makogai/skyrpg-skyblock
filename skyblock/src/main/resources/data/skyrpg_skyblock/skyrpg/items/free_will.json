@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "FREE_WILL",
+ "base": "minecraft:blaze_powder",
+ "name": "Free Will",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "rift_transferrable": true,
+  "npc_sell_price": 10000
+ }
+}

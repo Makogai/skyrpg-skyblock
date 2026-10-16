@@ -1,0 +1,74 @@
+{
+ "skyblock_id": "ARACHNE_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Arachne's Leggings",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 75,
+  "defense": 50
+ },
+ "color": "#8B0000",
+ "hypixel": {
+  "npc_sell_price": 2000,
+  "rarity_salvageable": true,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "SPIDER",
+    "amount": 5
+   }
+  ],
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 30
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 15
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 25
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 35
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 45
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 65
+    }
+   ]
+  ],
+  "soulbound": "COOP",
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARACHNE": 4
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

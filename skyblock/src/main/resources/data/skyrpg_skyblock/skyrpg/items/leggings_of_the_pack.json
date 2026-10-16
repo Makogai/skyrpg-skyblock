@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "LEGGINGS_OF_THE_PACK",
+ "base": "minecraft:iron_leggings",
+ "name": "Leggings of the Pack",
+ "rarity": "epic",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 80,
+  "defense": 75
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "wolf",
+    "level": 6
+   }
+  ],
+  "rift_transferrable": true,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "ARMOR_OF_THE_PACK": 7
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

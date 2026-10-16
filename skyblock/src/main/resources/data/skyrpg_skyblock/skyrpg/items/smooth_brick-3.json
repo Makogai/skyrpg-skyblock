@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SMOOTH_BRICK:3",
+ "base": "minecraft:chiseled_stone_bricks",
+ "name": "Chiseled Stone Bricks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

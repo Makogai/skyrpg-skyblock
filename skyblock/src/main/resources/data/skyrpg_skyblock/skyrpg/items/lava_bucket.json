@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LAVA_BUCKET",
+ "base": "minecraft:lava_bucket",
+ "name": "Lava Bucket",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 8
+ }
+}

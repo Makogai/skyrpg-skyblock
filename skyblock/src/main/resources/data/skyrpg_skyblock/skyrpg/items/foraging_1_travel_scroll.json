@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FORAGING_1_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to The Park",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

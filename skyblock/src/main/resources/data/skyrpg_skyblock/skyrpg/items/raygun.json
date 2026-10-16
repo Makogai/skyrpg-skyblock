@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RAYGUN",
+ "base": "minecraft:bow",
+ "name": "Raygun",
+ "rarity": "unobtainable",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 99999999
+ },
+ "hypixel": {
+  "enchantments": {
+   "power": 50
+  }
+ }
+}

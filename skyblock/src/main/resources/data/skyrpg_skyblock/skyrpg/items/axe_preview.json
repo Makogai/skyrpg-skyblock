@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "AXE_PREVIEW",
+ "base": "minecraft:diamond_axe",
+ "name": "%%green%%Axe Preview %%gray%%(Right-Click)",
+ "rarity": "special",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "sweep": 5
+ },
+ "description": "§7Use to preview the current axe rune!",
+ "hypixel": {
+  "soulbound": "SOLO",
+  "serializable": false
+ }
+}

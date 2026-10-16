@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RED_SANDSTONE_STAIRS",
+ "base": "minecraft:red_sandstone_stairs",
+ "name": "Red Sandstone Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

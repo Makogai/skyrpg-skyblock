@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "REMOTE_TIME_CHAMBER_REMOTE",
+ "base": "minecraft:painting",
+ "name": "Remote Time Chamber Remote",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

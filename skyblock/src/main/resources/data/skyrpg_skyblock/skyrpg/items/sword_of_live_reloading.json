@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SWORD_OF_LIVE_RELOADING",
+ "base": "minecraft:diamond_sword",
+ "name": "Sword of Live Reloading",
+ "rarity": "common",
+ "type": "",
+ "stats": {
+  "damage": 69,
+  "ferocity": 600
+ }
+}

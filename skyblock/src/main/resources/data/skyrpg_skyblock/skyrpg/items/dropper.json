@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DROPPER",
+ "base": "minecraft:dropper",
+ "name": "Dropper",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

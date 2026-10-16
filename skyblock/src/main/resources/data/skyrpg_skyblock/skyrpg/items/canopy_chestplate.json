@@ -1,0 +1,35 @@
+{
+ "skyblock_id": "CANOPY_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Canopy Shirt",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 120,
+  "defense": 40,
+  "sweep": 6
+ },
+ "color": "#006633",
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "can_have_booster": true,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FORAGING",
+    "level": 12
+   }
+  ],
+  "museum_data": {
+   "category": "FORAGING",
+   "parent": {
+    "CANOPY": "FIG"
+   },
+   "armor_set_donation_xp": {
+    "CANOPY": 3
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "ROOKIE_AXE",
+ "base": "minecraft:stone_axe",
+ "name": "Rookie Foraging Axe",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "enchantments": {
+   "efficiency": 1
+  },
+  "npc_sell_price": 6,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "FORAGING",
+   "game_stage": "STARTER"
+  }
+ }
+}

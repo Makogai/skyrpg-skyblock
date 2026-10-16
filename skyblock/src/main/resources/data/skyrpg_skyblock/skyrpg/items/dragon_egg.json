@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DRAGON_EGG",
+ "base": "minecraft:paper",
+ "name": "Dragon Egg",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "can_place": false
+ }
+}

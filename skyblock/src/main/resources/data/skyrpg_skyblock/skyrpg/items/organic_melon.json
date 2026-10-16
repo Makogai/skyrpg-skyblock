@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ORGANIC_MELON",
+ "base": "minecraft:melon_slice",
+ "name": "Organic Melon",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

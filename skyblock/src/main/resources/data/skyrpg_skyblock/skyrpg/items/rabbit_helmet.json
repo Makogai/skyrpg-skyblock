@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "RABBIT_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Rabbit Helmet",
+ "rarity": "common",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 15,
+  "speed": 5
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc4MDM1MjcxOTUzNCwKICAicHJvZmlsZUlkIiA6ICJiMGQ0YjI4YmMxZDc0ODg5YWYwZTg2NjFjZWU5NmFhYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaW5lU2tpbl9vcmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEwY2EyYjkwZDgzMWYxN2Y3YzhiNzcxZmIzOTczY2NhMmQ3NmE0NTZiYjdiNDdiODBkNjg3MmIwNWIyNTFmNSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9",
+  "signature": "KjzhHeGbPJVK/cwCrySP8+275jUrN3wcLxuNaDC1FWxdbsQq3cVdateP+NYfed55JWSw92vvGGDxd44kyQFGwzboFmPNxM9V2ETjF/+AM5t2OWe7dq8DdBRvmEgO6yYF7f7T6yvxn8tSOFYZDDFEeoQOzJNBgocNoF43PisJOLuqiPvGVgKZPDxnjM2TC+gNKTWRwypDyba9dcmHvzGHep6Jm3GnJ5b70Tf+bnYwbYZbrvZt7/rLz63QCqRrewxnsoffZ0ntiZI5d3f0y6V01oHf0Tc9xBfOlivtfOnMD79ARSEXsifVwtYO1gzGAwLCKkQuZSHk0U9SeUqwAhsr5+SAb0y9qGyBX9nAdeXNt9v17CqnzBQ7ThJAYOVrNLeR8T1HnYVWKckHGD+sW4vVrYYNUb7MhyhiuX0acg84BFDMRn54shrpCpoo7QKKpo6bzNXb3Ca7v3M4BS6ENp5YqLMlVufeDTLVRlv8ETgafsQowCP0bJX6EpKjBHSM6oXQcletqxPbxMw4Trf0Ur0BXjd4HxsIaRlhER7uZFi64XO3e28HUi/qgGqT9Kp8PQof4YnTgACsy1CVAtPnswGeyS/e6jHc5meqdlkcWOrvHUlaqUtm1J7D9jviCkr0o1YoHN4toQUFQsnOj8i17DJ3pYvgokavUTBsRxj2l27F+rI="
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "RABBIT": 1
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

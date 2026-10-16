@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DANGER_3_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to the End",
+ "rarity": "rare",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

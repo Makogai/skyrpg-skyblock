@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MYSTERIOUS_CROP",
+ "base": "minecraft:dead_bush",
+ "name": "Mysterious Crop",
+ "rarity": "common",
+ "type": "",
+ "description": "§7Back to the roots... but which ones?",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "GIANTS_EYE_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Giant's Eye Sword",
+ "rarity": "legendary",
+ "category": "LONGSWORD",
+ "type": "Longsword",
+ "stats": {
+  "damage": 500,
+  "weapon_ability_damage": 100000,
+  "swing_range": 1
+ },
+ "hypixel": {
+  "dungeon_item": true,
+  "ability_damage_scaling": 0.05,
+  "npc_sell_price": 1000,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "MASTER_CATACOMBS",
+    "tier": 6
+   }
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "STAFF_OF_THE_RISING_MOON",
+ "base": "minecraft:allium",
+ "name": "Staff of the Rising Moon",
+ "rarity": "epic",
+ "category": "WAND",
+ "type": "Wand",
+ "stats": {
+  "weapon_ability_damage": 1
+ },
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "item_specific": {
+   "ray_texture": {
+    "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZiYTVkYmVlMmE3MzJkMDUzNjE4YTM5OThmOTg2YzhmNTZkYjQwZmUzMTRhMGNlMDI4NTAxZjVlNTRiNzNkMyJ9fX0=",
+    "signature": "rUpcEDp4TCPHE6BLfQwaAYk0HMlEMAd/VH8QHSN2aqo6HE9L6oEL3r8zgVaDGlkdcrL6Pcnk/5IS2gAe9Nm4hc+x98l0Zb2uQ9xvxkHV+5YDajfWUiMYsvNUrqch5/ZVZEN93JYzIbOw/HBHwbTu1g3ML06OAvy5vfUTPDVfxNJZg3WKBewjZYhGyLzd3LWLeeMrcPTxEQ97A3iSyxEfa4OJQ7jpWid6WpWAOi+t+iOFLc0Uq4dVsbdY28w3JsPn5tPPmRt5lwf4Sv7d9x6glxq+5vnarselxx4swUtjbMZpyBEL9fN192WVXCKnRwmcBP6UA/3O37r/iRjnoMQchj6bY+v8EpD/uOg/hD/UcebLe2/8jrxrWe0GL00zNsclaj41EAVWlnfwKFsKbEJcN81A3EElcpNjNEW+tOF4Azla8D0MvFCd2L9S0ck3dfMm/ofC2cfQD3K4b5MYsr+kRV7PMajGusxGCAJ6Kf94A9GC53WuWJDWjNIIF+ZsbnXtjwrtuKZOd7BYBXX/oKgETBNTHdHWpTK5HLgqXb1+h5LqSbFJx7u1ta0djKY5mg+FJl2b3ciGiVnmwfB/Y1OYay/MZXmWKJ5ckaImfVgEtpa4gvhSmWJE+GiE5erBinFhcV1JUeLmnQ2CwvTljPeF5ykSsVwgDbQmiwxPizQgEvA="
+   }
+  }
+ }
+}

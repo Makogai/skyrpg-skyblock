@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ALLIGATOR_SKIN",
+ "base": "minecraft:green_dye",
+ "name": "Alligator Skin",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Harsh, jagged skin that is rough to the touch.",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

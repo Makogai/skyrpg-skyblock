@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "CHISEL",
+ "base": "minecraft:armor_stand",
+ "name": "Chisel",
+ "rarity": "common",
+ "category": "CHISEL",
+ "type": "Chisel",
+ "unstackable": true,
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "item_specific": {
+   "chisel_charges": 16
+  }
+ }
+}

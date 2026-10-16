@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_NETHER_STALK",
+ "base": "minecraft:nether_wart",
+ "name": "Enchanted Nether Wart",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 640,
+  "can_place": false,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 100.0
+   },
+   "farming": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

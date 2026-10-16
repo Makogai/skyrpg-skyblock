@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "POWDER_OF_THE_FEW",
+ "base": "minecraft:paper",
+ "name": "Powder of the Few",
+ "rarity": "uncommon",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "item_specific": {
+   "powders": [
+    "MITHRIL",
+    "GEMSTONE"
+   ],
+   "bonus": 5
+  },
+  "components": [
+   {
+    "type": "FORGE_RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

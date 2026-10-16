@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "CANCEL_RACE_ITEM",
+ "base": "minecraft:red_terracotta",
+ "name": "Cancel Race",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_place": false,
+  "can_auction": false,
+  "can_trade": false,
+  "serializable": false
+ }
+}

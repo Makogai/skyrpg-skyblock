@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MAGICAL_WATER_BUCKET",
+ "base": "minecraft:water_bucket",
+ "name": "Magical Water Bucket",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 40
+ }
+}

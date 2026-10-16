@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FENCE",
+ "base": "minecraft:oak_fence",
+ "name": "Oak Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

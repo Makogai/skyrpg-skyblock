@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_SPADE",
+ "base": "minecraft:diamond_shovel",
+ "name": "Diamond Shovel",
+ "rarity": "uncommon",
+ "category": "SPADE",
+ "type": "Spade",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

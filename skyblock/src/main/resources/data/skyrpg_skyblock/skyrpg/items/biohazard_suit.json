@@ -1,0 +1,29 @@
+{
+ "skyblock_id": "BIOHAZARD_SUIT",
+ "base": "minecraft:leather_chestplate",
+ "name": "Biohazard Suit",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 20,
+  "defense": 20,
+  "bonus_pest_chance": 16.5
+ },
+ "color": "#FFAC00",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "game_stage": "AMATEUR",
+   "armor_set_donation_xp": {
+    "BIOHAZARD": 4
+   }
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GUNTHER_SNEAKERS",
+ "base": "minecraft:leather_boots",
+ "name": "Gunther's Sneakers",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "rift_time": 30,
+  "rift_walk_speed": 4
+ },
+ "color": "#4F2886",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

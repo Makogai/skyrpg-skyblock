@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ABIPHONE_XIV_ENORMOUS",
+ "base": "minecraft:paper",
+ "name": "Abiphone XIV Orange",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 11,
+   "max_musicdiscs": 25,
+   "model": "abiphone_xiv"
+  }
+ }
+}

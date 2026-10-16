@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SUNSHINE_CRYSTAL",
+ "base": "minecraft:paper",
+ "name": "Sunshine Crystal",
+ "rarity": "epic",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "hypixel": {
+  "npc_sell_price": 1500000
+ }
+}

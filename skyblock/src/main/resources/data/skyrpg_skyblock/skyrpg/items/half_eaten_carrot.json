@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HALF_EATEN_CARROT",
+ "base": "minecraft:carrot",
+ "name": "Half-Eaten Carrot",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

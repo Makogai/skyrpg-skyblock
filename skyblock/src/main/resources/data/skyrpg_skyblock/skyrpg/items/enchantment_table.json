@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ENCHANTMENT_TABLE",
+ "base": "minecraft:enchanting_table",
+ "name": "Enchantment Table",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 40
+ }
+}

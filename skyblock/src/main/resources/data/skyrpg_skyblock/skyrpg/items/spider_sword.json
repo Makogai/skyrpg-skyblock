@@ -1,0 +1,64 @@
+{
+ "skyblock_id": "SPIDER_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Spider Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "dungeon_item_conversion_cost": {
+   "essence_type": "SPIDER",
+   "amount": 100
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 150
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "SPIDER",
+     "amount": 250
+    }
+   ]
+  ],
+  "npc_sell_price": 5,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {
+    "SPIDER_SWORD": "RECLUSE_FANG"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

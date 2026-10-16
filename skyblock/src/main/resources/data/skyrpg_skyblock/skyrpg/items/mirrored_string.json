@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MIRRORED_STRING",
+ "base": "minecraft:string",
+ "name": "gnirtS",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 30
+ }
+}

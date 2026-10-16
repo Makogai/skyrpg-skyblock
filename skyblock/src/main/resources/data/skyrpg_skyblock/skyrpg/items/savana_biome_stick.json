@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SAVANA_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Savanna Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RAW_FISH",
+ "base": "minecraft:cod",
+ "name": "Raw Cod",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 0.5,
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

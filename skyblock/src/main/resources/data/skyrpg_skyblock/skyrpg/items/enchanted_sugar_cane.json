@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_SUGAR_CANE",
+ "base": "minecraft:sugar_cane",
+ "name": "Enchanted Sugar Cane",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 102400,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 15000.0
+   },
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

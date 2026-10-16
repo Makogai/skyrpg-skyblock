@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "BOUNCY_ARROW",
+ "base": "minecraft:arrow",
+ "name": "Bouncy Arrow",
+ "rarity": "rare",
+ "category": "ARROW",
+ "type": "Arrow",
+ "stats": {
+  "damage": 5
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 20
+   },
+   {
+    "type": "COLLECTION",
+    "collection": "SLIME_BALL",
+    "tier": 7
+   },
+   {
+    "type": "TARGET_PRACTICE",
+    "mode": "II"
+   }
+  ]
+ }
+}

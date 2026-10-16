@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "TITAN_BOOTS",
+ "base": "minecraft:diamond_boots",
+ "name": "Titan's Boots",
+ "rarity": "unobtainable",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "strength": 10,
+  "health": 100,
+  "defense": 100,
+  "intelligence": 50
+ },
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

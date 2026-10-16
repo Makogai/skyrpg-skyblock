@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DEEP_OCEAN_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Deep Ocean Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 150
+ }
+}

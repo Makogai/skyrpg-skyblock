@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GOLDEN_BELT",
+ "base": "minecraft:paper",
+ "name": "Golden Belt",
+ "rarity": "legendary",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "rift_time": 100,
+  "rift_walk_speed": 4,
+  "rift_intelligence": 10
+ },
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

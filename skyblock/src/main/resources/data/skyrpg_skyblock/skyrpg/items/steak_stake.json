@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "STEAK_STAKE",
+ "base": "minecraft:cooked_mutton",
+ "name": "Steak Stake",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 15,
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 2
+   }
+  ]
+ }
+}

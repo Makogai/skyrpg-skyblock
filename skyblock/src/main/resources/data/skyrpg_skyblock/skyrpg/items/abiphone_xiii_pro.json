@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "ABIPHONE_XIII_PRO",
+ "base": "minecraft:paper",
+ "name": "Abiphone XIII Jade",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "item_specific": {
+   "max_contacts": 10,
+   "max_musicdiscs": 15,
+   "model": "abiphone_xiii"
+  }
+ }
+}

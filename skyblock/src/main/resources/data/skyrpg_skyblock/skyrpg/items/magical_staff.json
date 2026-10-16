@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MAGICAL_STAFF",
+ "base": "minecraft:blaze_rod",
+ "name": "Magical Staff",
+ "rarity": "uncommon",
+ "type": "",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 27
+ }
+}

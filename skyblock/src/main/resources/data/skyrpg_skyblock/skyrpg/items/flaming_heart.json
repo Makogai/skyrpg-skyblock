@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FLAMING_HEART",
+ "base": "minecraft:paper",
+ "name": "Flaming Heart",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Burning passion.",
+ "hypixel": {
+  "npc_sell_price": 200
+ }
+}

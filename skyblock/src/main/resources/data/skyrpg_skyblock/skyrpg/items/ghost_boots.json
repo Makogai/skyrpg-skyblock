@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GHOST_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Ghostly Boots",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "color": "#808080",
+ "hypixel": {
+  "npc_sell_price": 77777,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "game_stage": "SKILLED"
+  }
+ }
+}

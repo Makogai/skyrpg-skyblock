@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SCARE_FRAGMENT",
+ "base": "minecraft:black_stained_glass",
+ "name": "Scare Fragment",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Imbued with the pure essence of terror, this shard pulsates with an unsettling energy.",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

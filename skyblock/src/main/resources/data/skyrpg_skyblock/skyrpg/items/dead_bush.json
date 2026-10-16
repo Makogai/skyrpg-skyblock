@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DEAD_BUSH",
+ "base": "minecraft:dead_bush",
+ "name": "Dead Bush",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

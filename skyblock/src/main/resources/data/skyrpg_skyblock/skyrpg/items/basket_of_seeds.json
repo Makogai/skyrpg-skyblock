@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BASKET_OF_SEEDS",
+ "base": "minecraft:paper",
+ "name": "Basket of Seeds",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "can_auction": false
+ }
+}

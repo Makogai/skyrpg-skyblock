@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "REVENANT_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Revenant Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 180,
+  "defense": 70
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 4
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "REVENANT": "REAPER"
+   },
+   "armor_set_donation_xp": {
+    "REVENANT": 5
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

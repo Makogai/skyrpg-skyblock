@@ -1,0 +1,53 @@
+{
+ "skyblock_id": "GEMSTONE_DRILL_1",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Ruby Drill TX-15",
+ "rarity": "rare",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 150,
+  "pristine": 0.5,
+  "gemstone_fortune": 60,
+  "breaking_power": 7
+ },
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 253000,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 4
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 20
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "MINING",
+   "parent": {
+    "GEMSTONE_DRILL_1": "GEMSTONE_DRILL_2"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

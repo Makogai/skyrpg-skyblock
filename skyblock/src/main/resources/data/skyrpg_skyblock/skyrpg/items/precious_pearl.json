@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PRECIOUS_PEARL",
+ "base": "minecraft:paper",
+ "name": "Precious Pearl",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 500000
+ }
+}

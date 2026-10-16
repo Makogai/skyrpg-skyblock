@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "REFINED_MINERAL",
+ "base": "minecraft:light_blue_dye",
+ "name": "Refined Mineral",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Drops rarely from §6Ores§7 and §2Dwarven Metals§7 while §bMayor Cole's §6Mining Fiesta §7is active.\n\n§8§oA material so pure it comes pre-refined from its place of origin.",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

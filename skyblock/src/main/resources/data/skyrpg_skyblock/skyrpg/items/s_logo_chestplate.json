@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "S_LOGO_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "W Logo",
+ "rarity": "mythic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_time": 85,
+  "rift_intelligence": 32,
+  "rift_health": 1,
+  "rift_mana_regen": 30
+ },
+ "color": "#FFD700",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

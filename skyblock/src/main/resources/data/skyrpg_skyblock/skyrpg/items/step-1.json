@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STEP:1",
+ "base": "minecraft:sandstone_slab",
+ "name": "Sandstone Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

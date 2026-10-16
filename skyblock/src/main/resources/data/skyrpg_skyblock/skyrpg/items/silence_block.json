@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SILENCE_BLOCK",
+ "base": "minecraft:note_block",
+ "name": "Silence Block",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160
+ }
+}

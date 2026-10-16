@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIGESTED_MOSQUITO",
+ "base": "minecraft:rotten_flesh",
+ "name": "Digested Mosquito",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

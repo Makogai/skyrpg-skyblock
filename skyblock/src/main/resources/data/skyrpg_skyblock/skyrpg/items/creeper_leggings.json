@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "CREEPER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Creeper Pants",
+ "rarity": "rare",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "health": 200,
+  "defense": 65
+ },
+ "color": "#7AE82C",
+ "hypixel": {
+  "npc_sell_price": 71000,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {
+    "MONSTER_HUNTER": "MONSTER_RAIDER"
+   },
+   "armor_set_donation_xp": {
+    "MONSTER_HUNTER": 4,
+    "MONSTER_RAIDER": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

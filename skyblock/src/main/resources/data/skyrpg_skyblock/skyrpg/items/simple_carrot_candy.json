@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SIMPLE_CARROT_CANDY",
+ "base": "minecraft:carrot",
+ "name": "Simple Carrot Candy",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

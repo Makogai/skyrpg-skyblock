@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "FAIRY_HELMET",
+ "base": "minecraft:leather_helmet",
+ "name": "Fairy's Fedora",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 1,
+  "defense": 1,
+  "speed": 10,
+  "intelligence": -1
+ },
+ "color": "#FF3399",
+ "hypixel": {
+  "npc_sell_price": 420,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FAIRY": 2
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

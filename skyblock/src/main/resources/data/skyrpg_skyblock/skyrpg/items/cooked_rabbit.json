@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COOKED_RABBIT",
+ "base": "minecraft:cooked_rabbit",
+ "name": "Cooked Rabbit",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

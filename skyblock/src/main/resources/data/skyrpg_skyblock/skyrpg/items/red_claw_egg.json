@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "RED_CLAW_EGG",
+ "base": "minecraft:paper",
+ "name": "Red Claw Egg",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7Drops very rarely from Sven Packmaster. No one knows what's in the egg.",
+ "unstackable": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

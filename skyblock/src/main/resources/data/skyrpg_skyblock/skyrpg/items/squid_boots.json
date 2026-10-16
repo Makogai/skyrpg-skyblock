@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "SQUID_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Squid Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 100,
+  "sea_creature_chance": 1
+ },
+ "color": "#000000",
+ "hypixel": {
+  "npc_sell_price": 15,
+  "gemstone_slots": [
+   {
+    "slot_type": "AQUAMARINE"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FISHING",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "PLASTIC_SHOVEL",
+ "base": "minecraft:iron_shovel",
+ "name": "Plastic Shovel",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "COOP",
+  "has_uuid": true
+ }
+}

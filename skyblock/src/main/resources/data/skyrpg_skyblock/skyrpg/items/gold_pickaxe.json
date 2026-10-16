@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GOLD_PICKAXE",
+ "base": "minecraft:golden_pickaxe",
+ "name": "Golden Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 15,
+  "mining_speed": 250,
+  "breaking_power": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

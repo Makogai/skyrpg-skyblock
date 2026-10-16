@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_FISHING_SKILL_BOOST_EPIC",
+ "base": "minecraft:cod",
+ "name": "Fishing Exp Boost",
+ "rarity": "epic",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

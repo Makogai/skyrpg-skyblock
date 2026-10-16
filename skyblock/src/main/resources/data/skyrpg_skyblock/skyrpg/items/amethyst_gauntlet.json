@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "AMETHYST_GAUNTLET",
+ "base": "minecraft:paper",
+ "name": "Amethyst Gauntlet",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "mining_speed": 30,
+  "mining_fortune": 10
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "armor_set_donation_xp": {
+    "GEMSTONE": 5
+   },
+   "parent": {},
+   "game_stage": "SKILLED"
+  }
+ }
+}

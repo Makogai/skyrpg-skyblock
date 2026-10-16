@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "MERCENARY_HELMET",
+ "base": "minecraft:iron_helmet",
+ "name": "Mercenary Helmet",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 10,
+  "health": 40,
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MERCENARY": 1
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

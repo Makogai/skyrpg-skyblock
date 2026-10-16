@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PERFECT_OPAL_GEM",
+ "base": "minecraft:paper",
+ "name": "Perfect Opal Gemstone",
+ "rarity": "legendary",
+ "type": "",
+ "glint": true,
+ "unstackable": true
+}

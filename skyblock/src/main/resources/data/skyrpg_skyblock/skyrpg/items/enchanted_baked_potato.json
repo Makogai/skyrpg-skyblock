@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_BAKED_POTATO",
+ "base": "minecraft:baked_potato",
+ "name": "Enchanted Baked Potato",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 76800,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 2560.0
+   }
+  }
+ }
+}

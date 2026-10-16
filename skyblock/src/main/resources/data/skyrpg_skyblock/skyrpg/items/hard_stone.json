@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HARD_STONE",
+ "base": "minecraft:stone",
+ "name": "Hard Stone",
+ "rarity": "common",
+ "type": "",
+ "description": "§7A condensed form of rock only found at extreme depths.",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

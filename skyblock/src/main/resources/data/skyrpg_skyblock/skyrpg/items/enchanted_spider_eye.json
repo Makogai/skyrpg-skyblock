@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_SPIDER_EYE",
+ "base": "minecraft:spider_eye",
+ "name": "Enchanted Spider Eye",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 480,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 500.0
+   },
+   "combat": {
+    "MINION_STORAGE": 48.0
+   }
+  }
+ }
+}

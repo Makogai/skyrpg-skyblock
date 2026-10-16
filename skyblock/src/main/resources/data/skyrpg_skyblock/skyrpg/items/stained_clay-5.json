@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_CLAY:5",
+ "base": "minecraft:lime_terracotta",
+ "name": "Lime Hardened Clay",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

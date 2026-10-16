@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "DRACONIC_BLADE",
+ "base": "minecraft:blaze_rod",
+ "name": "Draconic Blade",
+ "rarity": "legendary",
+ "type": "",
+ "description": "§8§oAn extremely sharp blade formed by dragon nuclei.",
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

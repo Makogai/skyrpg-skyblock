@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SYPHONER",
+ "base": "minecraft:golden_shovel",
+ "name": "Syphoner",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

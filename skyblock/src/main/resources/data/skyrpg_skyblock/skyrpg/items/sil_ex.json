@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SIL_EX",
+ "base": "minecraft:flint",
+ "name": "Silex",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "has_uuid": true
+ }
+}

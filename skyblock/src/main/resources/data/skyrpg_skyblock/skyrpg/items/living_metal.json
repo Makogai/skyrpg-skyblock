@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "LIVING_METAL",
+ "base": "minecraft:blue_stained_glass",
+ "name": "Living Metal",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7It snakes around your blocky hand as you hold it.",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 5,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_last": [
+     "LIVING_METAL_ANVIL"
+    ],
+    "excluded_items": [
+     "RIFT_TROPHY_LAZY_LIVING"
+    ]
+   }
+  ]
+ }
+}

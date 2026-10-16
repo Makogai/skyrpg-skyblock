@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "X",
+ "base": "minecraft:paper",
+ "name": "X",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7One Dimensional",
+ "hypixel": {
+  "npc_sell_price": 20,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

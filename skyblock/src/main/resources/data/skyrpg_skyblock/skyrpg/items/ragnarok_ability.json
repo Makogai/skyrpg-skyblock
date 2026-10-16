@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "RAGNAROK_ABILITY",
+ "base": "minecraft:bedrock",
+ "name": "Ragnarok",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true,
+  "serializable": false
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ULTIMATE_WITHER_SCROLL",
+ "base": "minecraft:paper",
+ "name": "Ultimate Wither Scroll",
+ "rarity": "epic",
+ "category": "ABILITY_SCROLL",
+ "type": "Ability Scroll",
+ "stats": {
+  "weapon_ability_damage": 10000
+ },
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "ability_damage_scaling": 0.3,
+  "dungeon_item": true
+ }
+}

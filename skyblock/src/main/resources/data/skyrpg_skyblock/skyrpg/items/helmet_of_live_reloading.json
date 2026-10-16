@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HELMET_OF_LIVE_RELOADING",
+ "base": "minecraft:diamond_helmet",
+ "name": "Helmet of Live Reloading",
+ "rarity": "common",
+ "type": "",
+ "stats": {
+  "health": 2000
+ }
+}

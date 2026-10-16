@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LAUNCH_PAD",
+ "base": "minecraft:slime_block",
+ "name": "Launch Pad",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3200
+ }
+}

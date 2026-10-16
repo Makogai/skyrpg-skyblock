@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "EYE_OF_ENDER",
+ "base": "minecraft:ender_eye",
+ "name": "Eye of Ender",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 15
+ }
+}

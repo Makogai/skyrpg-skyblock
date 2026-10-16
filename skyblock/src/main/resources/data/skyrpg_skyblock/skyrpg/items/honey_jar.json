@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "HONEY_JAR",
+ "base": "minecraft:paper",
+ "name": "Honey Jar",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

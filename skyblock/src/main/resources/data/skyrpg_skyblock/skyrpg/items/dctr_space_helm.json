@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "DCTR_SPACE_HELM",
+ "base": "minecraft:red_stained_glass",
+ "name": "Space Helmet",
+ "rarity": "special",
+ "category": "HELMET",
+ "type": "Helmet",
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

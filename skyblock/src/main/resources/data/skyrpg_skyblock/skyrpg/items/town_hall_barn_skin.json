@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "TOWN_HALL_BARN_SKIN",
+ "base": "minecraft:gold_block",
+ "name": "Town Hall Barn Skin",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic"
+}

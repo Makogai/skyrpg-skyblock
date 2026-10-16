@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "WHOLESALE_WHEAT",
+ "base": "minecraft:wheat",
+ "name": "Wholesale Wheat",
+ "rarity": "special",
+ "type": "",
+ "description": "§7Looks delicious. Perhaps a certain §7 would like it?",
+ "hypixel": {
+  "safari_only": true
+ }
+}

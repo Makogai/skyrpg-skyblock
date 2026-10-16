@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SPIRIT_BONE",
+ "base": "minecraft:paper",
+ "name": "Spirit Bone",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7A Wolf Spirit is attached to this bone. Wolf Spirits always come back to their masters.",
+ "hypixel": {
+  "dungeon_item": true,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

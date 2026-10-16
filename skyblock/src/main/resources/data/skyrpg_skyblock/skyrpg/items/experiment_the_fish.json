@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "EXPERIMENT_THE_FISH",
+ "base": "minecraft:pufferfish",
+ "name": "Experiment the Fish",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true
+ }
+}

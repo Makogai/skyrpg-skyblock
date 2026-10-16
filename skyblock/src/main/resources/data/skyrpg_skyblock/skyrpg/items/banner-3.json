@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BANNER:3",
+ "base": "minecraft:paper",
+ "name": "Brown Banner",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PET_SKIN_SHEEP_PURPLE",
+ "base": "minecraft:player_head",
+ "name": "PurpleSheep",
+ "rarity": "uncommon",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY4NjYzNDAxNjQwNSwKICAicHJvZmlsZUlkIiA6ICI4YTg3NGJhNmFiZDM0ZTc5OTljOWM1ODMwYWYyY2NmNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJFeGVjdXRvcnMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTlhODhjZjdkZDMzMDYzNTg3YzZiNTQwZTYxMzBhYmM1ZDA3ZjFhNjVjNDc1NzNhYjNjMWFkM2NjZWM4ODU3ZiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9",
+  "signature": "Ojc7MRGIO9nMSEM7INMPS8vtoNbcdW83V7f3UnqL6+ZjRzKIw8unfePdYhtWFkjvUKTLODSWJceuPP/SwQPee9aKaLm6XmaV/j5Q9a5kTwCJDqiPJRzoVo9fbNBEp6QuLDDeo2mCcrG0KEnC89mhCAIccnmfsWcTlFUpRHeNOYPFyNtu7ZXD6HH0aOoxsPfoPL1vozY/ZYBp/RK3bWqm6B2QQSUnGL3XgCjmHhkMyA2Pni8fvcrUVhaZEEvPa6Zkyp1RxuBJgaKxK8ZRmTCcoRJ2mmMPPonWRoz641LyGYRIe+G7BCW4vUG6zP5RNr3iz/t3ZdhVcDF1CoK3IcAMTyXQXbLziqhTvJv/77Q0gc22BGqrES5Hf6Q5Eg97/QUGs5YioixljdbYM2Q5F1TtQPvztldUWqgKDHH8DFNkEgR2IsqfuQKVkNdIN4ZqVfEhUL4Hvwe0tIkM+s8VCYbfPW0/JZVWZLHwYmrm43X9o6X7y3E3CaEtYvANB0hshh8e+u5cP9S+vKhZiJj0phsWmdHy4zf6Fl18yy/d2N5m0YXyd6Zi8Mu8Bo0ah6g3gGN3fW4sNufptHPl/C+88Slmsj7MJGQaar1wKe/uKoZodgk9aYOtjWpopDWzlybesoSEqrdt4pBCgFPUuzLlG50/MVyt7oo1ATG5C4g4e/Zl5Qk="
+ },
+ "hypixel": {
+  "museum": true
+ }
+}

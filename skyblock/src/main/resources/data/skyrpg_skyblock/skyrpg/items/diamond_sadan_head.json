@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "DIAMOND_SADAN_HEAD",
+ "base": "minecraft:player_head",
+ "name": "Diamond Sadan Head",
+ "rarity": "special",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "strength": 35,
+  "health": 190,
+  "defense": 70
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTY1NjI2NzY4MTEwNywKICAicHJvZmlsZUlkIiA6ICJkYmQ4MDQ2M2EwMzY0Y2FjYjI3OGNhODBhMDBkZGIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4bG9nMjEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2M2M2M0ZjdmOGY1YjhjNWZlMWJhYzlhNzA4ZTVhNjJjY2QwNDk3MDA3MmFhYjVlMzIzYjFiN2Q0MDA0ZjRhMiIKICAgIH0KICB9Cn0=",
+  "signature": "P5tUimh+PPEMuTzPOkkPp8D8mzB4c8nkUoUv9IAzyUoCOZP389GoijCzPKGmJEtRWG4nqjDtRtMjgN/PLKqSKa58mZmNlmt4f/yzI3gLMM5IWDmJDaoOQQZvj9nIyTzr5+rTQAf4Tc+K71rY+G7tO0GRxixkiEHk2epBDCr4ZUMCPMy7AlBtifKo4gJXHpDeDHtetxFw8/WJykb62gVj9pveJGYdyPULY5/YVTvdbgGS10HKx5Y8R4ZURA9rTxLR5QcTy+uFGop3mCKXuZpJxI850+VFatOFNdmctAmB50Kte9SF74s2s0//XctdCy1Dh/H386+RRk/crIKuWFrwqCMvqzTJKUS8KvfX9M9AUFE4wK0piisOjSC+d9jai831TbOdQa51sjcUKtvo36WSNE6QdWRc5zY/p7l97nTcOVgoKdN8Imra1TIj1w92AFMbKJeoKC5GHzUOU5Nos0zh+AG83YfITRTdgX9uK/iQFH76C9o/uM5b19SxYAue85gey5Vkel4fqesMYlWlAVJsWb0Hs6aipL82AvxITpLLcJw9Chnb4RhUlDec4k5mpZPsUzvQyLMkHzBhntHw+CqK/oAXABvtbpUQg49vnfcQEjP+4zTod61/3/GPnVo2OK/euxS0zWKDtgERCREAPo11vaMIEIxFs10Or/xx2pZW4nA="
+ },
+ "hypixel": {
+  "soulbound": "COOP",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 75
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 125
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 250
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 500
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_BOSS_COLLECTION",
+    "dungeon_type": "CATACOMBS",
+    "tier": 6,
+    "amount": 1000
+   }
+  ],
+  "rarity_salvageable": false,
+  "dungeon_item": true,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 10,
+   "category": "DUNGEONEERING",
+   "game_stage": "MASTER"
+  }
+ }
+}

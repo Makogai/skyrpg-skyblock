@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STONE_BUTTON",
+ "base": "minecraft:stone_button",
+ "name": "Stone Button",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

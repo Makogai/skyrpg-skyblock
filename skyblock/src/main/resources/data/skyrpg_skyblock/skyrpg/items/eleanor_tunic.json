@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "ELEANOR_TUNIC",
+ "base": "minecraft:leather_chestplate",
+ "name": "Eleanor's Tunic",
+ "rarity": "legendary",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "health": 100,
+  "rift_time": 20
+ },
+ "description": "§8§oA beautifully tailored tunic, featuring intricate stitching and a soft, radiant finish.",
+ "color": "#FFD700",
+ "hypixel": {
+  "rift_transferrable": true,
+  "soulbound": "SOLO",
+  "museum_data": {
+   "category": "COMBAT",
+   "armor_set_donation_xp": {
+    "ELEANOR": 5
+   },
+   "parent": {},
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

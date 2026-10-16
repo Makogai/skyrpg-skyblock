@@ -1,0 +1,114 @@
+{
+ "skyblock_id": "YOUNG_DRAGON_HELMET",
+ "base": "minecraft:player_head",
+ "name": "Young Dragon Helmet",
+ "rarity": "legendary",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 70,
+  "defense": 110,
+  "speed": 20
+ },
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA1MDI3MjQwNiwKICAicHJvZmlsZUlkIiA6ICJlMjc5NjliODYyNWY0NDg1YjkyNmM5NTBhMDljMWMwMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJLRVZJTktFTE9LRSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hMGU4MWVkMDdkZmIwMjQ0ZDU2ZjRkNWYyYjM3NTUzZWMwMjZmYjQ3OTZmMGZiMGM1N2E4ZWIyNjQ5ODNlMWUwIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "BlfNJz+bqzNBo859lH64fi3eEYbWWS7r0eWAXsCHtJfAvMVypgX7ZZOkU79bdsD2dos74kyNHnV7kG7vXbeaYMwGToL+fKQgzeRs4VbNWzvWeiCyvKWgLyJ1E5+Zmqk3Tr91k2jMneQCgkGF62TuI9yeEGVUd2bkgxU8vHac8Tlv9XRAfqV5OVUVGPH/2FnoYsudCAejC4IUDGw0+lTNuhQmqPOhuxFYEQ7Ii18Z4FsBKvfm6pM7LZvIGGr2+MbO/Q/HOXJDBem6Mq7nb7/UUmcM+GKqWHwx+fU7y0OdrQZogvmXr0yL/T6nHSZP+vf/aOoMoK7VQc9395SopbrlwgPUXErQ+N48Nce4iDB+nJ0r0LokTM1zevr3/u8zOJgVED+C6bWIFbC3d9x5dEoKlf5wEOOIv/WAEKU/tC67QoreG3QIWO5+vmmPBxQjtWfmkRxIqUrUyKxnx7eMb+wGcxV1Vz0VyDc3u96R9+N87tCuLwAG+m5CcOyTqSqHhR6iqGuQQ8BEVt3VZrWJ6eGmCqYCv1joSu8BOnAViOXOFTLRdScrxcMEWtl/CZuN4yb1VM11VkVeC4/3rjV4/N27hDY21IjdIZMqdkZT8YzEZaYsBW1W10uRTGjyR8UOfLc6kv6gYmNGm71de//8KgHpcY96lm/dLhoO3Dgn7eFy3IA="
+ },
+ "hypixel": {
+  "npc_sell_price": 100000,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DRAGON",
+   "amount": 40
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DRAGON",
+     "amount": 150
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 16
+   }
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 10
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "COMBAT",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JASPER_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_SAPPHIRE_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_RUBY_GEM",
+      "amount": 5
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_AMETHYST_GEM",
+      "amount": 5
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "YOUNG_DRAGON": 10
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

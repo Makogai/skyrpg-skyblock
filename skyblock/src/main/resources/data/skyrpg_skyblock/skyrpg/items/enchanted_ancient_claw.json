@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_ANCIENT_CLAW",
+ "base": "minecraft:flint",
+ "name": "Enchanted Ancient Claw",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The refined claw of an ancient beast, enchanted with bygone magic and honed through countless wars.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 32000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "ANCESTRAL_SPADE"
+    ]
+   }
+  ]
+ }
+}

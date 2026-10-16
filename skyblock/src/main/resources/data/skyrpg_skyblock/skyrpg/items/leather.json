@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "LEATHER",
+ "base": "minecraft:leather",
+ "name": "Leather",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 0.2,
+    "COLLECT_ITEM": 1.0
+   }
+  }
+ }
+}

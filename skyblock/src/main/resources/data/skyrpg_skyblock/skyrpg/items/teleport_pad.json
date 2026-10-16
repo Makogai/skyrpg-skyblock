@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TELEPORT_PAD",
+ "base": "minecraft:end_portal_frame",
+ "name": "Teleport Pad",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1000
+ }
+}

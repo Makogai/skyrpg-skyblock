@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAPLING:5",
+ "base": "minecraft:dark_oak_sapling",
+ "name": "Dark Oak Sapling",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.25
+ }
+}

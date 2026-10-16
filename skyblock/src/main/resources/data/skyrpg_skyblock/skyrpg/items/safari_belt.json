@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "SAFARI_BELT",
+ "base": "minecraft:paper",
+ "name": "Safari Belt",
+ "rarity": "common",
+ "category": "BELT",
+ "type": "Belt",
+ "hypixel": {
+  "can_recombobulate": false,
+  "can_have_booster": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "HUNTING",
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  },
+  "soulbound": "SOLO"
+ }
+}

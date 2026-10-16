@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD:1",
+ "base": "minecraft:spruce_planks",
+ "name": "Spruce Planks",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

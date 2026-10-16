@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "TUNGSTEN_KEYCHAIN",
+ "base": "minecraft:paper",
+ "name": "Tungsten Regulator",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 8
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 10,
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

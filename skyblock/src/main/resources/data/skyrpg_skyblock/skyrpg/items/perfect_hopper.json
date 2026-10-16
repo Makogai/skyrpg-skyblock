@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "PERFECT_HOPPER",
+ "base": "minecraft:hopper",
+ "name": "Perfect Hopper",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500000
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SWEEP_BOOSTER_UNCOMMON",
+ "base": "minecraft:paper",
+ "name": "Uncommon Sweep Booster Upgrade",
+ "rarity": "uncommon",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

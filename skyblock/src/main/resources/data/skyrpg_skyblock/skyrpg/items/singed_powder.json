@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SINGED_POWDER",
+ "base": "minecraft:paper",
+ "name": "Singed Powder",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Before she mastered this ingredient, the §5Fireproof Witch §7was but a mere witch.",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RECORD_4",
+ "base": "minecraft:music_disc_chirp",
+ "name": "Music Disc - Chirp",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 20
+ }
+}

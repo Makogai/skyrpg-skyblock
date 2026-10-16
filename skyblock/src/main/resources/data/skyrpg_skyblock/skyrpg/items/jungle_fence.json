@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "JUNGLE_FENCE",
+ "base": "minecraft:jungle_fence",
+ "name": "Jungle Fence",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

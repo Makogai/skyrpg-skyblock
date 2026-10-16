@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:14",
+ "base": "minecraft:orange_dye",
+ "name": "Orange Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

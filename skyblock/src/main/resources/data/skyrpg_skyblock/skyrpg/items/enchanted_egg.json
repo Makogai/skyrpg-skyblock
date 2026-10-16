@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_EGG",
+ "base": "minecraft:egg",
+ "name": "Enchanted Egg",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 432,
+  "can_interact": false,
+  "experience": {
+   "farming": {
+    "MINION_STORAGE": 115.0
+   }
+  }
+ }
+}

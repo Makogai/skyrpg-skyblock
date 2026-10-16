@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "BUCKET",
+ "base": "minecraft:bucket",
+ "name": "Bucket",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

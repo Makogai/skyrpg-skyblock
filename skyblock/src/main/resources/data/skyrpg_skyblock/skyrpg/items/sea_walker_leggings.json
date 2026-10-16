@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SEA_WALKER_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Sea Walker Leggings",
+ "rarity": "uncommon",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "color": "#10616E",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

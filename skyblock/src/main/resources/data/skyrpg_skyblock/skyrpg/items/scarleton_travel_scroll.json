@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "SCARLETON_TRAVEL_SCROLL",
+ "base": "minecraft:map",
+ "name": "Travel Scroll to Scarleton",
+ "rarity": "epic",
+ "category": "TRAVEL_SCROLL",
+ "type": "Travel Scroll"
+}

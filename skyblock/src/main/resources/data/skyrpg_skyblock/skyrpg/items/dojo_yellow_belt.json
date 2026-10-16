@@ -1,0 +1,94 @@
+{
+ "skyblock_id": "DOJO_YELLOW_BELT",
+ "base": "minecraft:paper",
+ "name": "Yellow Belt",
+ "rarity": "uncommon",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "health": 15,
+  "defense": 5
+ },
+ "unstackable": true,
+ "hypixel": {
+  "soulbound": "SOLO",
+  "upgrade_costs": [
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 10
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 20
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 20
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 30
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 500
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 50
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 70
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 1000
+    }
+   ],
+   [
+    {
+     "type": "ITEM",
+     "item_id": "KADA_LEAD",
+     "amount": 100
+    },
+    {
+     "type": "ITEM",
+     "item_id": "MAGMAG",
+     "amount": 120
+    },
+    {
+     "type": "ESSENCE",
+     "essence_type": "CRIMSON",
+     "amount": 2000
+    }
+   ]
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "COMBAT",
+   "parent": {
+    "DOJO_YELLOW_BELT": "DOJO_GREEN_BELT"
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

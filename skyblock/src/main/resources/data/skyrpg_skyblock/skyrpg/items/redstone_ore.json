@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "REDSTONE_ORE",
+ "base": "minecraft:redstone_ore",
+ "name": "Redstone Ore",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 6,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 7.0,
+    "MINION_STORAGE": 0.3
+   }
+  }
+ }
+}

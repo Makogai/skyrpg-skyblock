@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FLAVOR_PACKED_FISH",
+ "base": "minecraft:cod",
+ "name": "Flavor-packed Fish",
+ "rarity": "special",
+ "type": "",
+ "description": "§7Looks flavorsome. Perhaps a certain §7 would like it?",
+ "hypixel": {
+  "safari_only": true
+ }
+}

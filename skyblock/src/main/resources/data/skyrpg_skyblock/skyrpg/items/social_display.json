@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "SOCIAL_DISPLAY",
+ "base": "minecraft:gold_block",
+ "name": "Social Display",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Places a hologram displaying the top players on your island by points.",
+ "hypixel": {
+  "can_place": false,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 2
+   }
+  ]
+ }
+}

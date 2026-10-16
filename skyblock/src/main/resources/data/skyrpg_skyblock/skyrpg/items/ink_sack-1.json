@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:1",
+ "base": "minecraft:red_dye",
+ "name": "Rose Red",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

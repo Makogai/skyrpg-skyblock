@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SILENT_PEARL",
+ "base": "minecraft:ender_pearl",
+ "name": "Silent Pearl",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100
+ }
+}

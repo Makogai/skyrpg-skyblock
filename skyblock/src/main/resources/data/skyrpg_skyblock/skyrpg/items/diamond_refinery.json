@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DIAMOND_REFINERY",
+ "base": "minecraft:diamond_ore",
+ "name": "Diamond Refinery",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1300
+ }
+}

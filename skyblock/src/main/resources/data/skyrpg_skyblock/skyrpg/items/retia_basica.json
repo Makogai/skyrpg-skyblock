@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "RETIA_BASICA",
+ "base": "minecraft:paper",
+ "name": "Small Huntrap",
+ "rarity": "common",
+ "category": "TRAP",
+ "type": "Trap",
+ "description": "§8§oFundamentum artis venandi.",
+ "hypixel": {
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 1,
+   "game_stage": "STARTER",
+   "parent": {
+    "RETIA_BASICA": "RETIA_MELIORA"
+   }
+  }
+ }
+}

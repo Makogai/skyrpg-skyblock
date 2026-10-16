@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "HUNTING_WISDOM_BOOSTER_UNCOMMON",
+ "base": "minecraft:paper",
+ "name": "Uncommon Hunting Wisdom Booster Upgrade",
+ "rarity": "uncommon",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_JERRY_SIGNATURE",
+ "base": "minecraft:wooden_sword",
+ "name": "Aspect of the Jerry, Signature Edition",
+ "rarity": "uncommon",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 2
+ },
+ "glint": true,
+ "hypixel": {
+  "enchantments": {
+   "sharpness": 10
+  },
+  "museum": true
+ }
+}

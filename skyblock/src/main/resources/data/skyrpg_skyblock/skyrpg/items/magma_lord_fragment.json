@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "MAGMA_LORD_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Magma Lord Fragment",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 200000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "show_items_first": [
+     "MAGMA_LORD_GAUNTLET"
+    ]
+   }
+  ]
+ }
+}

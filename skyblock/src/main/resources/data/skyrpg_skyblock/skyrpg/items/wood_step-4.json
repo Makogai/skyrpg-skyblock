@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WOOD_STEP:4",
+ "base": "minecraft:acacia_slab",
+ "name": "Acacia Slab",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

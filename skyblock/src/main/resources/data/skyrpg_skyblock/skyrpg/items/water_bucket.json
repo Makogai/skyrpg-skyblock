@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "WATER_BUCKET",
+ "base": "minecraft:water_bucket",
+ "name": "Water Bucket",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

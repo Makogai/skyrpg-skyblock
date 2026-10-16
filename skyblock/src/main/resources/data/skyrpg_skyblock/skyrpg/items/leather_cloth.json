@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "LEATHER_CLOTH",
+ "base": "minecraft:leather",
+ "name": "Leather Cloth",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The origin of that leather is a well kept secret.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ],
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 25.0
+   }
+  }
+ }
+}

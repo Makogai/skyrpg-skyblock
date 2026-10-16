@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SPECKLED_MELON",
+ "base": "minecraft:glistering_melon_slice",
+ "name": "Glistering Melon Slice",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3.5,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 10.0
+   }
+  }
+ }
+}

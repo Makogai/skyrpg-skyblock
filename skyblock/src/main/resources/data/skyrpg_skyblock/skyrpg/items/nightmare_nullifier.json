@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "NIGHTMARE_NULLIFIER",
+ "base": "minecraft:clay_ball",
+ "name": "Nightmare Nullifier",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Why have nightmares when you can drink coffee instead?",
+ "hypixel": {
+  "soulbound": "COOP",
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "STAINED_CLAY:6",
+ "base": "minecraft:pink_terracotta",
+ "name": "Pink Hardened Clay",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

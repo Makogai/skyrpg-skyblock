@@ -1,0 +1,73 @@
+{
+ "skyblock_id": "PERFECT_HELMET_7",
+ "base": "minecraft:diamond_helmet",
+ "name": "Perfect Helmet - Tier VII",
+ "rarity": "epic",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "defense": 230
+ },
+ "hypixel": {
+  "npc_sell_price": 2969600,
+  "dungeon_item_conversion_cost": {
+   "essence_type": "DIAMOND",
+   "amount": 40
+  },
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "DIAMOND",
+     "amount": 150
+    }
+   ]
+  ],
+  "catacombs_requirements": [
+   {
+    "type": "DUNGEON_SKILL",
+    "dungeon_type": "CATACOMBS",
+    "level": 14
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   },
+   {
+    "slot_type": "AMETHYST"
+   }
+  ]
+ }
+}

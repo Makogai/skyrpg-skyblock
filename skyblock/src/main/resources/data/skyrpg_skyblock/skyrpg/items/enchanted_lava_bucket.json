@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_LAVA_BUCKET",
+ "base": "minecraft:lava_bucket",
+ "name": "Enchanted Lava Bucket",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

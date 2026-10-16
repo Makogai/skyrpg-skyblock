@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "SHARP_STEAK_STAKE",
+ "base": "minecraft:cooked_mutton",
+ "name": "Super Sharp 'n Stabby Steak Stake",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT",
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "vampire",
+    "level": 3
+   }
+  ]
+ }
+}

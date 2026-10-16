@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "BOOK_OF_STATS",
+ "base": "minecraft:book",
+ "name": "Book of Stats",
+ "rarity": "epic",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "unstackable": true,
+ "hypixel": {
+  "museum": true
+ }
+}

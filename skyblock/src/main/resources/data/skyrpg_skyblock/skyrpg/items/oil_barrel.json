@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "OIL_BARREL",
+ "base": "minecraft:paper",
+ "name": "Oil Barrel",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§8§o100% unrenewable energy!",
+ "hypixel": {
+  "npc_sell_price": 1000,
+  "components": [
+   {
+    "type": "MACHINE_FUEL",
+    "fuel_per_item": 10000
+   }
+  ]
+ }
+}

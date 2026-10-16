@@ -1,0 +1,22 @@
+{
+ "skyblock_id": "GOBLIN_OMELETTE_SUNNY_SIDE",
+ "base": "minecraft:paper",
+ "name": "Sunny Side Goblin Omelette",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7§oMay cause inflammation",
+ "hypixel": {
+  "npc_sell_price": 20840,
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 6,
+   "game_stage": "SKILLED"
+  }
+ }
+}

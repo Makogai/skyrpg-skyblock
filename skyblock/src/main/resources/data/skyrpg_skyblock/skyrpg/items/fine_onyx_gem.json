@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FINE_ONYX_GEM",
+ "base": "minecraft:paper",
+ "name": "Fine Onyx Gemstone",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 25600
+ }
+}

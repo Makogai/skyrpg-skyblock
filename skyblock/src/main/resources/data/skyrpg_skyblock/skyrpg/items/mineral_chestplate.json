@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "MINERAL_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Mineral Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 125,
+  "speed": 15,
+  "block_fortune": 25
+ },
+ "color": "#CCE5FF",
+ "hypixel": {
+  "museum_data": {
+   "category": "MINING",
+   "parent": {
+    "MINERAL": "GLOSSY_MINERAL"
+   },
+   "armor_set_donation_xp": {
+    "MINERAL": 4
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

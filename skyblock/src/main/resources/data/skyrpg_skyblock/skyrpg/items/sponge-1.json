@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SPONGE:1",
+ "base": "minecraft:wet_sponge",
+ "name": "Wet Sponge",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

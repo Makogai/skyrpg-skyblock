@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "FAIRY_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Fairy's Galoshes",
+ "rarity": "rare",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 1,
+  "defense": 1,
+  "speed": 10,
+  "intelligence": -1
+ },
+ "color": "#FFCCE5",
+ "hypixel": {
+  "npc_sell_price": 420,
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FAIRY": 2
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

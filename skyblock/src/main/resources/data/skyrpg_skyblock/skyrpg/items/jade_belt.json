@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "JADE_BELT",
+ "base": "minecraft:paper",
+ "name": "Jade Belt",
+ "rarity": "epic",
+ "category": "BELT",
+ "type": "Belt",
+ "stats": {
+  "mining_speed": 30,
+  "mining_fortune": 10
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "armor_set_donation_xp": {
+    "GEMSTONE": 5
+   },
+   "parent": {},
+   "game_stage": "SKILLED"
+  }
+ }
+}

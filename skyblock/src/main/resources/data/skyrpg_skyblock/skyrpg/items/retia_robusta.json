@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "RETIA_ROBUSTA",
+ "base": "minecraft:paper",
+ "name": "Large Huntrap",
+ "rarity": "rare",
+ "category": "TRAP",
+ "type": "Trap",
+ "description": "§7§oIn robore, fiducia.",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "HUNTING",
+    "level": 10
+   }
+  ],
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 3,
+   "game_stage": "INTERMEDIATE",
+   "parent": {
+    "RETIA_ROBUSTA": "RETIA_FORTA"
+   }
+  }
+ }
+}

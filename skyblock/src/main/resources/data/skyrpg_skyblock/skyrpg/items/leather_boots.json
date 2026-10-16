@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "LEATHER_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Leather Boots",
+ "rarity": "common",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

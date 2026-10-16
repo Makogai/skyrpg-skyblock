@@ -1,0 +1,75 @@
+{
+ "skyblock_id": "TITANIUM_DRILL_4",
+ "base": "minecraft:diamond_pickaxe",
+ "name": "Titanium Drill DR-X655",
+ "rarity": "legendary",
+ "category": "DRILL",
+ "type": "Drill",
+ "stats": {
+  "damage": 75,
+  "mining_speed": 1600,
+  "mining_fortune": 120,
+  "breaking_power": 9
+ },
+ "glint": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "AMBER"
+   },
+   {
+    "slot_type": "JADE",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 50000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FINE_JADE_GEM",
+      "amount": 20
+     }
+    ]
+   },
+   {
+    "slot_type": "MINING",
+    "costs": [
+     {
+      "type": "COINS",
+      "coins": 250000
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_JADE_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_AMBER_GEM",
+      "amount": 1
+     },
+     {
+      "type": "ITEM",
+      "item_id": "FLAWLESS_TOPAZ_GEM",
+      "amount": 1
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 20,
+   "category": "MINING",
+   "parent": {
+    "TITANIUM_DRILL_4": "DIVAN_DRILL"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

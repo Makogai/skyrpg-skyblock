@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "COMPASS",
+ "base": "minecraft:compass",
+ "name": "Compass",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 12
+ }
+}

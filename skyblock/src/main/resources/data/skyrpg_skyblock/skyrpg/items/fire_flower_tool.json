@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FIRE_FLOWER_TOOL",
+ "base": "minecraft:wooden_hoe",
+ "name": "Fire Flower Tool",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "skyblock_id": "UNDEAD_SWORD",
+ "base": "minecraft:iron_sword",
+ "name": "Undead Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 30
+ },
+ "hypixel": {
+  "is_upgradeable_without_soulbinding": true,
+  "npc_sell_price": 5,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 30
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 40
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "UNDEAD",
+     "amount": 60
+    }
+   ]
+  ],
+  "gear_score": 10,
+  "museum_data": {
+   "donation_xp": 1,
+   "category": "COMBAT",
+   "parent": {
+    "UNDEAD_SWORD": "REVENANT_SWORD"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FAKE_HEALTH_POT",
+ "base": "minecraft:potion",
+ "name": "Red Cross Potion",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "dungeon_item": true
+ }
+}

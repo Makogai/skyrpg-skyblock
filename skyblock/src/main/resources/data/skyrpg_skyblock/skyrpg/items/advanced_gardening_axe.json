@@ -1,0 +1,33 @@
+{
+ "skyblock_id": "ADVANCED_GARDENING_AXE",
+ "base": "minecraft:golden_axe",
+ "name": "Advanced Gardening Axe",
+ "rarity": "rare",
+ "category": "FARMING_TOOL",
+ "type": "Farming Tool",
+ "stats": {
+  "farming_fortune": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "enchantments": {
+   "replenish": 1
+  },
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 6
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT"
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 3,
+   "category": "FARMING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

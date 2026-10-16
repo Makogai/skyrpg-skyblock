@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "ENCHANTED_VAMPIRIC_MELON",
+ "base": "minecraft:melon",
+ "name": "Enchanted Vampiric Melon",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Worth more §dMotes §7than the sum of its parts, because it's glowing!",
+ "glint": true,
+ "hypixel": {
+  "motes_sell_price": 21000,
+  "origin": "RIFT"
+ }
+}

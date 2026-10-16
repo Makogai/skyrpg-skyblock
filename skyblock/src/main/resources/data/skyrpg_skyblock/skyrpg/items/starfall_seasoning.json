@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "STARFALL_SEASONING",
+ "base": "minecraft:paper",
+ "name": "Starfall Seasoning",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 2
+   }
+  ],
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 3,
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

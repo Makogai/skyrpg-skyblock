@@ -1,0 +1,24 @@
+{
+ "skyblock_id": "MINER_OUTFIT_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Prospecting Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 40,
+  "mining_speed": 15
+ },
+ "color": "#7A7964",
+ "hypixel": {
+  "npc_sell_price": 640,
+  "museum_data": {
+   "category": "MINING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "MINER_OUTFIT": 3
+   },
+   "game_stage": "STARTER"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "GRANDMAS_KNITTING_NEEDLE",
+ "base": "minecraft:stick",
+ "name": "Grandma's Knitting Needle",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "hypixel": {
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

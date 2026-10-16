@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET:13",
+ "base": "minecraft:green_carpet",
+ "name": "Green Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

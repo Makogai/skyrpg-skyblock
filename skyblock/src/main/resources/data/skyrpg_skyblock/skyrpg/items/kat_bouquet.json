@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "KAT_BOUQUET",
+ "base": "minecraft:rose_bush",
+ "name": "Kat Bouquet",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

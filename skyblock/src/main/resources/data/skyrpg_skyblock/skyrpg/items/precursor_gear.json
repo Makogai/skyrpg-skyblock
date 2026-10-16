@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PRECURSOR_GEAR",
+ "base": "minecraft:paper",
+ "name": "Precursor Gear",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

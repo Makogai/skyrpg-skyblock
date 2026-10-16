@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "JUNGLE_BIOME_STICK",
+ "base": "minecraft:stick",
+ "name": "Jungle Biome Stick",
+ "rarity": "common",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

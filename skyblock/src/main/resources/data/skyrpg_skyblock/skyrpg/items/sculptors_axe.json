@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "SCULPTORS_AXE",
+ "base": "minecraft:stone_axe",
+ "name": "Sculptor's Axe",
+ "rarity": "common",
+ "category": "AXE",
+ "type": "Axe",
+ "hypixel": {
+  "npc_sell_price": 64,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FORAGING",
+   "game_stage": "STARTER"
+  }
+ }
+}

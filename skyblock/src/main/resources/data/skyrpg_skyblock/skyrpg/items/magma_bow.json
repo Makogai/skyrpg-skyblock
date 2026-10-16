@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "MAGMA_BOW",
+ "base": "minecraft:bow",
+ "name": "Magma Bow",
+ "rarity": "epic",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 100,
+  "strength": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 61000,
+  "museum": true
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SILKY_LICHEN",
+ "base": "minecraft:green_dye",
+ "name": "Silky Lichen",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "soulbound": "COOP",
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

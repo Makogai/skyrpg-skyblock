@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SPORE_HARVESTER",
+ "base": "minecraft:iron_axe",
+ "name": "Spore Harvester",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "museum_data": {
+   "category": "FARMING",
+   "donation_xp": 3,
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SAM_ASSISTANT",
+ "base": "minecraft:pig_spawn_egg",
+ "name": "Move Sam",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_auction": false
+ }
+}

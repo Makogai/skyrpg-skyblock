@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "LEAVES_2",
+ "base": "minecraft:acacia_leaves",
+ "name": "Acacia Leaves",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2
+ }
+}

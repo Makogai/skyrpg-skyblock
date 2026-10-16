@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "GIFTBAG_OF_THE_CENTURY",
+ "base": "minecraft:player_head",
+ "name": "Gift Bag of the Century",
+ "rarity": "epic",
+ "type": "",
+ "unstackable": true,
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTczNjE4Mzc1NzQ1NSwKICAicHJvZmlsZUlkIiA6ICJiODU0NWMxMDlhZjE0ZGRjYmY4ZjhmZjg4ZTU2NzI4OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJQdGFrb3B5c2tDWiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kMWMzZTg3ZjMwMjkwMDQ1ZDAxOTUwNmM4MDU4MzRiYTk3MWY1YWVlYzBkN2QwNTA1MjYxZjMxNGE1NDY1NjM4IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+  "signature": "AzS5DtAoK7hQfC9DV04Hn11K2jib5hcc7aOVVae8OqjmAbuC5nr/3Gp37fqurmxOX+itabm2Ky94CdlMNJKatm5vvOURNkEisZ8AkrIZDAbdMzUNHK35f7CKUSiE5cpYSe9aDL1cbuVYsddd58TREsL+OSNDCbafupSDdICS8fAOpBCsRrGuAG5mNOBgV3zCE1pmTz10C4Nzzyla91EzhKrAcewTAcaYemQwK8rIg3G2daSkmSQ+oya4sxdJo6UwwJlarsF0WGYCLXnjP53rn0GvSDn6gJVDxs7TwWoy6sdscrOrqdHoZedE9wtA31/j2aO4CWgiefPa1avfPLxE/BUALuv2UllJNhqRwXNtmAM5OxnrEofb1O6efKMqvEUEChd3HPGiOqf0q/M11Y8gwUsjGjg4xhLNag8I4ZA8YIbCVZnNC0sUuYgWdynjIuMpQ8LPdq916ygefEGN3zHhvJB6HC2e57WfR9bJf6Rzj2zrnd5XgPcMu5BOLTbkbwJkPHMmbagDTW266eOYdhJ1JLKTb2KegPQEC3DFVq2xjIAVFS+EnyyvW5X77NRtWJjg4mtekBe7R6f8MRp790cCAIYDg25IcPNVHtA+uLlwISdooUoHDFV7o+4lEHFIqJS4gHgBT1qwvv7wESCLxUAaYwmDDpEVdR3yhR1MTNmZ6Tw="
+ },
+ "hypixel": {
+  "can_recombobulate": false,
+  "soulbound": "SOLO"
+ }
+}

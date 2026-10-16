@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LARVA_SILK",
+ "base": "minecraft:string",
+ "name": "Larva Silk",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

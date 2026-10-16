@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "SILVER_FANG",
+ "base": "minecraft:ghast_tear",
+ "name": "Silver Fang",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "rift_transferrable": true,
+  "npc_sell_price": 2000
+ }
+}

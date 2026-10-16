@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "REDSTONE_BLOCK",
+ "base": "minecraft:redstone_block",
+ "name": "Block of Redstone",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 9,
+  "experience": {
+   "mining": {
+    "BREAK_BLOCK": 14.0,
+    "MINION_STORAGE": 1.8
+   }
+  }
+ }
+}

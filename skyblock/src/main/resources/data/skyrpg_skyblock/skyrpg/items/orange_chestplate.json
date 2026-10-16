@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ORANGE_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Orange Chestplate",
+ "rarity": "epic",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "rift_time": 45,
+  "rift_intelligence": 5,
+  "rift_mana_regen": 10
+ },
+ "glint": true,
+ "color": "#FF4600",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GOLDEN_POWDER",
+ "base": "minecraft:glowstone_dust",
+ "name": "Golden Powder",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

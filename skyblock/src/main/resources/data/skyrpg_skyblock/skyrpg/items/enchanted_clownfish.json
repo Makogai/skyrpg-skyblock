@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ENCHANTED_CLOWNFISH",
+ "base": "minecraft:tropical_fish",
+ "name": "Enchanted Tropical Fish",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3200,
+  "experience": {
+   "fishing": {
+    "MINION_STORAGE": 320.0
+   }
+  }
+ }
+}

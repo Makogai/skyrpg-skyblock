@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_SPADE",
+ "base": "minecraft:golden_shovel",
+ "name": "Golden Shovel",
+ "rarity": "common",
+ "category": "SPADE",
+ "type": "Spade",
+ "stats": {
+  "damage": 15
+ },
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

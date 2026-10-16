@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "LOTUS_SINKER",
+ "base": "minecraft:paper",
+ "name": "Lotus Sinker",
+ "rarity": "rare",
+ "category": "FISHING_ROD_PART",
+ "type": "Fishing Rod Part",
+ "unstackable": true,
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 10000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FISHING",
+    "level": 15
+   },
+   {
+    "type": "COLLECTION",
+    "collection": "LOTUS",
+    "tier": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "FISHING",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "SUPERIOR_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Superior Dragon Fragment",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

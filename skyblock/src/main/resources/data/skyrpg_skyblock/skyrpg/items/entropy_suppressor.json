@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENTROPY_SUPPRESSOR",
+ "base": "minecraft:paper",
+ "name": "Entropy Suppressor",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true
+ }
+}

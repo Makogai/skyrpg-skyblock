@@ -1,0 +1,51 @@
+{
+ "skyblock_id": "CROPIE_BOOTS",
+ "base": "minecraft:leather_boots",
+ "name": "Cropie Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "health": 110,
+  "defense": 30,
+  "speed": 4,
+  "farming_fortune": 20,
+  "bonus_pest_chance": 12.5
+ },
+ "color": "#BB6535",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "FARMING",
+    "level": 30
+   }
+  ],
+  "gemstone_slots": [
+   {
+    "slot_type": "PERIDOT",
+    "costs": [
+     {
+      "type": "ITEM",
+      "item_id": "FINE_PERIDOT_GEM",
+      "amount": 20
+     },
+     {
+      "type": "COINS",
+      "coins": 50000
+     }
+    ]
+   }
+  ],
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "CROPIE": "SQUASH"
+   },
+   "armor_set_donation_xp": {
+    "CROPIE": 6
+   },
+   "game_stage": "SKILLED"
+  }
+ }
+}

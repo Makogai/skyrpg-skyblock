@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "RAILS",
+ "base": "minecraft:rail",
+ "name": "Rail",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

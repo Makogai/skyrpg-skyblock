@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MUSHROOM_COLLECTION",
+ "base": "minecraft:red_mushroom",
+ "name": "Mushroom",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 5,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

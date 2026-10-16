@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "POWERED_RAIL",
+ "base": "minecraft:powered_rail",
+ "name": "Powered Rail",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3
+ }
+}

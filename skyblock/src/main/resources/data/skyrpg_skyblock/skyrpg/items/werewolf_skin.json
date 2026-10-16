@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "WEREWOLF_SKIN",
+ "base": "minecraft:paper",
+ "name": "Werewolf Skin",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Dropped by Werewolf sea creatures during the Spooky Festival.",
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

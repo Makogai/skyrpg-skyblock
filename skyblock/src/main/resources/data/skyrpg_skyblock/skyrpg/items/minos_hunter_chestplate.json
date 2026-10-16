@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "MINOS_HUNTER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Minos Hunter Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "color": "#FF0A0A",
+ "hypixel": {
+  "npc_sell_price": 50
+ }
+}

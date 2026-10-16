@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "CARPET:8",
+ "base": "minecraft:light_gray_carpet",
+ "name": "Light Gray Carpet",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

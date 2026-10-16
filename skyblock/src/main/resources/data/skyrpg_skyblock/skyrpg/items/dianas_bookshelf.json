@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "DIANAS_BOOKSHELF",
+ "base": "minecraft:bookshelf",
+ "name": "Diana's Bookshelf",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "can_place": false
+ }
+}

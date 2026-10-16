@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "GEMSTONE_FUEL_TANK",
+ "base": "minecraft:paper",
+ "name": "Gemstone Fuel Tank",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 103000,
+  "museum_data": {
+   "category": "MINING",
+   "donation_xp": 10,
+   "game_stage": "PROFESSIONAL",
+   "parent": {
+    "GEMSTONE_FUEL_TANK": "PERFECTLY_CUT_FUEL_TANK"
+   }
+  }
+ }
+}

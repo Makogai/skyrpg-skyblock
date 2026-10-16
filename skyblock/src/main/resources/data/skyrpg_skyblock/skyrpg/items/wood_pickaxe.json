@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "WOOD_PICKAXE",
+ "base": "minecraft:wooden_pickaxe",
+ "name": "Wooden Pickaxe",
+ "rarity": "common",
+ "category": "PICKAXE",
+ "type": "Pickaxe",
+ "stats": {
+  "damage": 15,
+  "mining_speed": 70,
+  "breaking_power": 1
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

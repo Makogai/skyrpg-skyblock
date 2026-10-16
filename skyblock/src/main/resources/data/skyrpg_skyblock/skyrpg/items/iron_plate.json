@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "IRON_PLATE",
+ "base": "minecraft:heavy_weighted_pressure_plate",
+ "name": "Heavy Weighted Pressure Plate",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

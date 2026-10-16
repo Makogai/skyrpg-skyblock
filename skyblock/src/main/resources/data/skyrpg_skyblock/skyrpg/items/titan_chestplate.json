@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "TITAN_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Titan's Chestplate",
+ "rarity": "unobtainable",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "strength": 20,
+  "health": 300,
+  "defense": 200,
+  "intelligence": 75
+ },
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

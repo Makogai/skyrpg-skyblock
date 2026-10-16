@@ -1,0 +1,27 @@
+{
+ "skyblock_id": "PESTHUNTERS_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Pesthunter's Necklace",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "bonus_pest_chance": 5
+ },
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "npc_sell_price": 5000,
+  "museum_data": {
+   "armor_set_donation_xp": {
+    "PESTHUNTER": 4
+   },
+   "category": "FARMING",
+   "game_stage": "AMATEUR"
+  }
+ }
+}

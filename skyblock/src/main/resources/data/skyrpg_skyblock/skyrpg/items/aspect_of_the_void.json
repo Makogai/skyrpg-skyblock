@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_VOID",
+ "base": "minecraft:diamond_shovel",
+ "name": "Aspect of the Void",
+ "rarity": "epic",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 120,
+  "strength": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 56000,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   }
+  ],
+  "can_have_power_scroll": true,
+  "museum_data": {
+   "donation_xp": 6,
+   "category": "COMBAT",
+   "parent": {},
+   "mapped_item_ids": [],
+   "game_stage": "EXPERT"
+  }
+ }
+}

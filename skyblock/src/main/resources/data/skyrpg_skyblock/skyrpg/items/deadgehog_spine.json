@@ -1,0 +1,21 @@
+{
+ "skyblock_id": "DEADGEHOG_SPINE",
+ "base": "minecraft:arrow",
+ "name": "Deadgehog Spine",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Contrary to popular belief, Deadgehogs aren't rodents.\n\nThey are in fact mangled wraith remnants of warriors who couldn't find true love.",
+ "hypixel": {
+  "origin": "RIFT",
+  "motes_sell_price": 111,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "excluded_items": [
+     "LEECH_SWORD",
+     "RIFT_TROPHY_WYLDLY_SUPREME"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "ISOPOD_HUSK",
+ "base": "minecraft:paper",
+ "name": "Isopod Husk",
+ "rarity": "epic",
+ "category": "CONSUMABLE",
+ "type": "Consumable",
+ "hypixel": {
+  "npc_sell_price": 250000,
+  "has_uuid": true
+ }
+}

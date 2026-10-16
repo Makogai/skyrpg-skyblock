@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "GOLDEN_APPLE:1",
+ "base": "minecraft:enchanted_golden_apple",
+ "name": "Enchanted Golden Apple",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 125
+ }
+}

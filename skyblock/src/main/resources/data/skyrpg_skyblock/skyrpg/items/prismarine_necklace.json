@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "PRISMARINE_NECKLACE",
+ "base": "minecraft:paper",
+ "name": "Prismarine Necklace",
+ "rarity": "rare",
+ "category": "NECKLACE",
+ "type": "Necklace",
+ "stats": {
+  "fishing_speed": 2,
+  "trophy_fish_chance": 1
+ },
+ "hypixel": {
+  "museum_data": {
+   "category": "FISHING",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "FISHERMAN": 3,
+    "SPONGE": 5
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

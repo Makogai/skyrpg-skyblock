@@ -1,0 +1,23 @@
+{
+ "skyblock_id": "MEDIUM_FISHING_NET",
+ "base": "minecraft:paper",
+ "name": "Medium Fishing Net",
+ "rarity": "rare",
+ "category": "FISHING_NET",
+ "type": "Fishing Net",
+ "stats": {
+  "pull": 25
+ },
+ "hypixel": {
+  "has_uuid": true,
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 2,
+   "parent": {
+    "MEDIUM_FISHING_NET": "TURBO_FISHING_NET"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}

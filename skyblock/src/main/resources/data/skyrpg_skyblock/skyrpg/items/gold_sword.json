@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "GOLD_SWORD",
+ "base": "minecraft:golden_sword",
+ "name": "Golden Sword",
+ "rarity": "common",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 20
+ },
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

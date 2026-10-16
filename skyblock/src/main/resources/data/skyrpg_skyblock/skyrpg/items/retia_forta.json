@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "RETIA_FORTA",
+ "base": "minecraft:paper",
+ "name": "Greater Huntrap",
+ "rarity": "epic",
+ "category": "TRAP",
+ "type": "Trap",
+ "description": "§7§oSagacitas et fortitudo coniuncta.",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "HUNTING",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "category": "HUNTING",
+   "donation_xp": 4,
+   "game_stage": "SKILLED",
+   "parent": {
+    "RETIA_FORTA": "RETIA_SUPREMA"
+   }
+  }
+ }
+}

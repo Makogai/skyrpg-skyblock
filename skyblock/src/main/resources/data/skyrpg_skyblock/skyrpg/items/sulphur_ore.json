@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "SULPHUR_ORE",
+ "base": "minecraft:glowstone_dust",
+ "name": "Sulphur",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7§o\"Give me some Sulphur and I'll make a wand. Give me all the Sulphur and I'll conquer the world.\" - Unnamed Mage.",
+ "hypixel": {
+  "npc_sell_price": 10,
+  "experience": {
+   "fishing": {
+    "FISH_ITEM": 50.0
+   }
+  }
+ }
+}

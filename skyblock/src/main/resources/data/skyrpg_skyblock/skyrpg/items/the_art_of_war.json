@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "THE_ART_OF_WAR",
+ "base": "minecraft:book",
+ "name": "The Art of War",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "museum": true
+ }
+}

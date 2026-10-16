@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "OVERGROWN_GRASS",
+ "base": "minecraft:paper",
+ "name": "Overgrown Grass",
+ "rarity": "epic",
+ "category": "REFORGE_STONE",
+ "type": "Reforge Stone",
+ "hypixel": {
+  "force_wipe_recomb": true,
+  "npc_sell_price": 1
+ }
+}

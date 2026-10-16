@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FIRE_IN_A_BOTTLE",
+ "base": "minecraft:paper",
+ "name": "Fire in a Bottle",
+ "rarity": "legendary",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 100000
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "ENCHANTED_SHARK_FIN",
+ "base": "minecraft:prismarine_shard",
+ "name": "Enchanted Shark Fin",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7A razor-sharp shark fin designed to craft powerful items.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 32000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

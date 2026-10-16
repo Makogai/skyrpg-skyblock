@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SPOOKY_DISC",
+ "base": "minecraft:music_disc_cat",
+ "name": "Spooky Disc",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "museum": true
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "ENCHANTED_REDSTONE",
+ "base": "minecraft:redstone",
+ "name": "Enchanted Redstone Dust",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160,
+  "can_place": false,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 300.0
+   },
+   "mining": {
+    "MINION_STORAGE": 32.0
+   }
+  }
+ }
+}

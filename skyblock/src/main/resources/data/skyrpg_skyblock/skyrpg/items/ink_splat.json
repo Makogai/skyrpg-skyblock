@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "INK_SPLAT",
+ "base": "minecraft:paper",
+ "name": "Ink Splat",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7Avoid getting in eyes. It’ll hurt!",
+ "hypixel": {
+  "npc_sell_price": 25000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

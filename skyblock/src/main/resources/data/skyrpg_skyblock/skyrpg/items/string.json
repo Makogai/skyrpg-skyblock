@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "STRING",
+ "base": "minecraft:string",
+ "name": "String",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 3,
+  "motes_sell_price": 30,
+  "experience": {
+   "combat": {
+    "MINION_STORAGE": 0.2
+   }
+  }
+ }
+}

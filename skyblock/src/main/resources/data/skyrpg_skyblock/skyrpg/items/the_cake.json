@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "THE_CAKE",
+ "base": "minecraft:cake",
+ "name": "The Cake",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "soulbound": "SOLO",
+  "can_place": false
+ }
+}

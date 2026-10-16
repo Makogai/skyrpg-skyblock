@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "TREE_THE_FISH",
+ "base": "minecraft:paper",
+ "name": "Tree the Fish",
+ "rarity": "special",
+ "type": "",
+ "hypixel": {
+  "museum": true,
+  "npc_sell_price": 50000
+ }
+}

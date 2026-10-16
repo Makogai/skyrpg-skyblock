@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_PUFFERFISH",
+ "base": "minecraft:pufferfish",
+ "name": "Enchanted Pufferfish",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 2400,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 600.0
+   },
+   "fishing": {
+    "MINION_STORAGE": 160.0
+   }
+  }
+ }
+}

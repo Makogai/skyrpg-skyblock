@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "DWARVEN_GOLD_HAMMER",
+ "base": "minecraft:golden_axe",
+ "name": "Scavenged Golden Hammer",
+ "rarity": "special",
+ "type": "",
+ "glint": true
+}

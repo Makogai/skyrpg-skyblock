@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "DARK_OAK_STAIRS",
+ "base": "minecraft:dark_oak_stairs",
+ "name": "Dark Oak Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

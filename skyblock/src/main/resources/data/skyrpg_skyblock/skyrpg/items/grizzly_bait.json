@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "GRIZZLY_BAIT",
+ "base": "minecraft:salmon",
+ "name": "Grizzly Salmon",
+ "rarity": "rare",
+ "type": "",
+ "unstackable": true,
+ "hypixel": {
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

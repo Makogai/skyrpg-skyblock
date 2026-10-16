@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MOON_CHUNK",
+ "base": "minecraft:end_stone",
+ "name": "Chunk of the Moon",
+ "rarity": "rare",
+ "type": "",
+ "description": "§8§oWhere love is rife, the preconceived laws of physics mean nothing.",
+ "hypixel": {
+  "soulbound": "COOP"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MAGIC_FOR_PETS",
+ "base": "minecraft:paper",
+ "name": "Magic For Pets In A Hurry",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "can_recombobulate": false,
+  "force_wipe_recomb": true,
+  "npc_sell_price": 2700
+ }
+}

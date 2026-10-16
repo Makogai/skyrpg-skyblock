@@ -1,0 +1,20 @@
+{
+ "skyblock_id": "SWEET_AXE",
+ "base": "minecraft:iron_axe",
+ "name": "Sweet Axe",
+ "rarity": "uncommon",
+ "category": "AXE",
+ "type": "Axe",
+ "stats": {
+  "damage": 25
+ },
+ "hypixel": {
+  "npc_sell_price": 25,
+  "museum": true,
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FORAGING",
+   "game_stage": "STARTER"
+  }
+ }
+}

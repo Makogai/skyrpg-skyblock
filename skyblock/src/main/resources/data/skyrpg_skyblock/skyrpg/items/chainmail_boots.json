@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "CHAINMAIL_BOOTS",
+ "base": "minecraft:chainmail_boots",
+ "name": "Chainmail Boots",
+ "rarity": "uncommon",
+ "category": "BOOTS",
+ "type": "Boots",
+ "stats": {
+  "defense": 7
+ },
+ "hypixel": {
+  "npc_sell_price": 6
+ }
+}

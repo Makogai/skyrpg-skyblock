@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "FILET_O_FORTUNE",
+ "base": "minecraft:cooked_cod",
+ "name": "Filet O' Fortune",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "HEART_OF_THE_MOUNTAIN",
+    "tier": 4
+   }
+  ]
+ }
+}

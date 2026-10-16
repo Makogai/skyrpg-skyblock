@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "ORB_OF_ENERGY",
+ "base": "minecraft:paper",
+ "name": "Orb of Energy",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7According to Professor Selta they are 9V batteries and can supply about 50mA of current. Professor Selta is currently in a mental asylum.",
+ "hypixel": {
+  "npc_sell_price": 200,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

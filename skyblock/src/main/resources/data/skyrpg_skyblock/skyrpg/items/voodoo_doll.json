@@ -1,0 +1,36 @@
+{
+ "skyblock_id": "VOODOO_DOLL",
+ "base": "minecraft:pufferfish",
+ "name": "Voodoo Doll",
+ "rarity": "rare",
+ "type": "",
+ "stats": {
+  "weapon_ability_damage": 1500
+ },
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "double_tap_to_drop": true,
+  "requirements": [
+   {
+    "type": "SLAYER",
+    "slayer_boss_type": "zombie",
+    "level": 5
+   }
+  ],
+  "item_specific": {
+   "slow_duration_seconds": 10,
+   "mana_cost": 200,
+   "cooldown_seconds": 5
+  },
+  "museum_data": {
+   "donation_xp": 5,
+   "category": "COMBAT",
+   "parent": {
+    "VOODOO_DOLL": "VOODOO_DOLL_WILTED"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "SKILLED"
+  }
+ }
+}

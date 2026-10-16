@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "HAMSTER_WHEEL",
+ "base": "minecraft:oak_trapdoor",
+ "name": "Hamster Wheel",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 20000
+ }
+}

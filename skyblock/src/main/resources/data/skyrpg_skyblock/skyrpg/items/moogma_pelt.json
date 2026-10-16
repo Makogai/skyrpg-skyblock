@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "MOOGMA_PELT",
+ "base": "minecraft:leather",
+ "name": "Moogma Pelt",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7The bottom of the volcano is filled with it, Moogmas keep on moulting. It's a problem.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 50,
+  "can_place": false
+ }
+}

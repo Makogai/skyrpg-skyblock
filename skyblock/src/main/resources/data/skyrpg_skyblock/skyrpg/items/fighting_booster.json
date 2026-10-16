@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "FIGHTING_BOOSTER",
+ "base": "minecraft:paper",
+ "name": "Common Fighting Booster",
+ "rarity": "common",
+ "category": "BOOSTER",
+ "type": "Booster",
+ "hypixel": {
+  "salvages": [
+   {
+    "type": "ESSENCE",
+    "essence_type": "FOREST",
+    "amount": 5
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "PARKOUR_CONTROLLER",
+ "base": "minecraft:light_weighted_pressure_plate",
+ "name": "Parkour Start/End",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "SOCIAL",
+    "level": 1
+   }
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "skyblock_id": "SPEEDSTER_CHESTPLATE",
+ "base": "minecraft:leather_chestplate",
+ "name": "Speedster Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 70,
+  "speed": 15
+ },
+ "color": "#E0FCF7",
+ "hypixel": {
+  "npc_sell_price": 5120,
+  "museum_data": {
+   "category": "FARMING",
+   "parent": {
+    "SPEEDSTER": "THERMODYNAMIC"
+   },
+   "armor_set_donation_xp": {
+    "SPEEDSTER": 5
+   },
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

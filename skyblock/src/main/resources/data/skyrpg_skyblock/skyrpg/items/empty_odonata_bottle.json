@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "EMPTY_ODONATA_BOTTLE",
+ "base": "minecraft:glass_bottle",
+ "name": "Empty Odonata Bottle",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "origin": "RIFT",
+  "can_interact": false
+ }
+}

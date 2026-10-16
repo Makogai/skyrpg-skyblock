@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "DRAGONFUSE_GLOVE",
+ "base": "minecraft:paper",
+ "name": "Dragonfuse Glove",
+ "rarity": "epic",
+ "category": "GLOVES",
+ "type": "Gloves",
+ "stats": {
+  "crit_damage": 5,
+  "health": 30,
+  "defense": 5
+ },
+ "hypixel": {
+  "npc_sell_price": 5000,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 15
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

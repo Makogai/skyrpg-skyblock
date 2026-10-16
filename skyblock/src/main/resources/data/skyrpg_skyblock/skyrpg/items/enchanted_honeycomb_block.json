@@ -1,0 +1,18 @@
+{
+ "skyblock_id": "ENCHANTED_HONEYCOMB_BLOCK",
+ "base": "minecraft:paper",
+ "name": "Enchanted Honeycomb Block",
+ "rarity": "rare",
+ "type": "",
+ "description": "§7A solid chunk of sweet-smelling honey. Its smell attracts all sorts of critters.",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 512000,
+  "can_place": false,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

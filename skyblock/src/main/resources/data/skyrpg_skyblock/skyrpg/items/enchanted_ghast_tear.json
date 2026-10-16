@@ -1,0 +1,19 @@
+{
+ "skyblock_id": "ENCHANTED_GHAST_TEAR",
+ "base": "minecraft:ghast_tear",
+ "name": "Enchanted Ghast Tear",
+ "rarity": "uncommon",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 80,
+  "experience": {
+   "alchemy": {
+    "INGREDIENT_BREW": 100.0
+   },
+   "combat": {
+    "MINION_STORAGE": 7.5
+   }
+  }
+ }
+}

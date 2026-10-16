@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "DUNGEON_TRAP",
+ "base": "minecraft:heavy_weighted_pressure_plate",
+ "name": "Trap",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 500
+ }
+}

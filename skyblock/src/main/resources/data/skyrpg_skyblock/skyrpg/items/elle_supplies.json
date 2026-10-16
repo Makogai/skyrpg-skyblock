@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "ELLE_SUPPLIES",
+ "base": "minecraft:chest",
+ "name": "%%green%%Elle's Supplies",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "can_place": false,
+  "serializable": false,
+  "can_auction": false,
+  "can_trade": false
+ }
+}

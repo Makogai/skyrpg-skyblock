@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "WEATHER_STICK",
+ "base": "minecraft:stick",
+ "name": "Weather Wand",
+ "rarity": "uncommon",
+ "category": "WAND",
+ "type": "Wand",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 160
+ }
+}

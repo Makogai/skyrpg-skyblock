@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "GIANT_FRAGMENT_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Diamante's Handle",
+ "rarity": "epic",
+ "type": "",
+ "description": "§7The hilt of the largest sword known to humankind.",
+ "hypixel": {
+  "dungeon_item": true,
+  "npc_sell_price": 50000,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

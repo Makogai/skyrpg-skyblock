@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "STRONG_FRAGMENT",
+ "base": "minecraft:paper",
+ "name": "Strong Dragon Fragment",
+ "rarity": "epic",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 2500,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "IRON_FENCE",
+ "base": "minecraft:iron_bars",
+ "name": "Iron Bars",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

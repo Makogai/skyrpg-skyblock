@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "BEASTSLAYERS_CODEX",
+ "base": "minecraft:paper",
+ "name": "Beastslayer's Codex",
+ "rarity": "common",
+ "category": "ACCESSORY",
+ "type": "Accessory",
+ "description": "§8§o“Within these pages lie the memories of every creature you've conquered... and those still waiting to meet you.”",
+ "hypixel": {
+  "can_recombobulate": false,
+  "soulbound": "SOLO"
+ }
+}

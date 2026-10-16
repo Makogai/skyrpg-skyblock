@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "INK_SACK:9",
+ "base": "minecraft:pink_dye",
+ "name": "Pink Dye",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "skyblock_id": "ASPECT_OF_THE_END",
+ "base": "minecraft:diamond_sword",
+ "name": "Aspect of the End",
+ "rarity": "rare",
+ "category": "SWORD",
+ "type": "Sword",
+ "stats": {
+  "damage": 100,
+  "strength": 100
+ },
+ "hypixel": {
+  "npc_sell_price": 56000,
+  "gemstone_slots": [
+   {
+    "slot_type": "SAPPHIRE"
+   }
+  ],
+  "can_have_power_scroll": true,
+  "museum_data": {
+   "donation_xp": 4,
+   "category": "COMBAT",
+   "parent": {
+    "ASPECT_OF_THE_END": "ASPECT_OF_THE_VOID"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "INTERMEDIATE"
+  }
+ }
+}

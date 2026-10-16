@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FERTILIZER",
+ "base": "minecraft:fern",
+ "name": "Fertilizer",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 4
+ }
+}

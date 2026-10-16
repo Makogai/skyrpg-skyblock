@@ -1,0 +1,70 @@
+{
+ "skyblock_id": "LAST_BREATH",
+ "base": "minecraft:bow",
+ "name": "Last Breath",
+ "rarity": "legendary",
+ "category": "BOW",
+ "type": "Bow",
+ "stats": {
+  "damage": 200,
+  "strength": 180,
+  "crit_damage": 50
+ },
+ "hypixel": {
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "gear_score": 40,
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 5
+   }
+  ],
+  "dungeon_item": true,
+  "museum_data": {
+   "donation_xp": 8,
+   "category": "DUNGEONEERING",
+   "parent": {},
+   "mapped_item_ids": [
+    "STARRED_LAST_BREATH"
+   ],
+   "game_stage": "SKILLED"
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "AGATHA_COUPON",
+ "base": "minecraft:name_tag",
+ "name": "Agatha's Coupon",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Can be spent in §bAgatha's Shop§7!",
+ "hypixel": {
+  "npc_sell_price": 10000
+ }
+}

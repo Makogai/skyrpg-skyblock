@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "ROBOTRON_REFLECTOR",
+ "base": "minecraft:paper",
+ "name": "Robotron Reflector",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 50000
+ }
+}

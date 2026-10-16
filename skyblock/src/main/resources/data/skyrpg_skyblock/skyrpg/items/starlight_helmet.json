@@ -1,0 +1,31 @@
+{
+ "skyblock_id": "STARLIGHT_HELMET",
+ "base": "minecraft:golden_helmet",
+ "name": "Starlight Helmet",
+ "rarity": "rare",
+ "category": "HELMET",
+ "type": "Helmet",
+ "stats": {
+  "health": 25,
+  "defense": 25,
+  "intelligence": 45
+ },
+ "hypixel": {
+  "npc_sell_price": 17500,
+  "requirements": [
+   {
+    "type": "SKILL",
+    "skill": "COMBAT",
+    "level": 8
+   }
+  ],
+  "museum_data": {
+   "category": "COMBAT",
+   "parent": {},
+   "armor_set_donation_xp": {
+    "STARLIGHT": 2
+   },
+   "game_stage": "AMATEUR"
+  }
+ }
+}

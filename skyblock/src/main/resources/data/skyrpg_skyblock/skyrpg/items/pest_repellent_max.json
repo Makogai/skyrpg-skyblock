@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "PEST_REPELLENT_MAX",
+ "base": "minecraft:paper",
+ "name": "Pest Repellent MAX",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CHARCOAL",
+ "base": "minecraft:charcoal",
+ "name": "Charcoal",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 1,
+  "can_burn_in_furnace": true
+ }
+}

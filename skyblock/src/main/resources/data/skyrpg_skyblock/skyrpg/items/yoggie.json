@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "YOGGIE",
+ "base": "minecraft:paper",
+ "name": "Yoggie",
+ "rarity": "uncommon",
+ "type": "",
+ "description": "§7Harvested from the core of Yogs. Used to upgrade Magma equipment.",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT",
+    "sort_by_category": true
+   }
+  ]
+ }
+}

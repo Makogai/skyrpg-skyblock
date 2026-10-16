@@ -1,0 +1,13 @@
+{
+ "skyblock_id": "GAME_BREAKER",
+ "base": "minecraft:paper",
+ "name": "Game Breaker",
+ "rarity": "special",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "museum": true,
+  "can_place": false,
+  "has_uuid": true
+ }
+}

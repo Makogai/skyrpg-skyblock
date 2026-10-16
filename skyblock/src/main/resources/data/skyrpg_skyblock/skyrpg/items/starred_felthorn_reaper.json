@@ -1,0 +1,62 @@
+{
+ "skyblock_id": "STARRED_FELTHORN_REAPER",
+ "base": "minecraft:iron_sword",
+ "name": "Felthorn Reaper",
+ "rarity": "legendary",
+ "category": "LONGSWORD",
+ "type": "Longsword",
+ "stats": {
+  "damage": 285,
+  "strength": 10,
+  "crit_damage": 125,
+  "swing_range": 1.5
+ },
+ "hypixel": {
+  "npc_sell_price": 0,
+  "dungeon_item": true,
+  "upgrade_costs": [
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 20
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 50
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 100
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 200
+    }
+   ],
+   [
+    {
+     "type": "ESSENCE",
+     "essence_type": "WITHER",
+     "amount": 300
+    }
+   ]
+  ],
+  "requirements": [
+   {
+    "type": "DUNGEON_TIER",
+    "dungeon_type": "CATACOMBS",
+    "tier": 6
+   }
+  ]
+ }
+}

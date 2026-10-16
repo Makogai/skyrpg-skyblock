@@ -1,0 +1,28 @@
+{
+ "skyblock_id": "DANGER_3_PORTAL",
+ "base": "minecraft:player_head",
+ "name": "Portal to The End",
+ "rarity": "uncommon",
+ "category": "PORTAL",
+ "type": "Portal",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTYwOTM0OTgxNjE4OSwKICAicHJvZmlsZUlkIiA6ICJjZGM5MzQ0NDAzODM0ZDdkYmRmOWUyMmVjZmM5MzBiZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJSYXdMb2JzdGVycyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84MjIxNWNkN2JhNDBlNzAwOWM1MWZkMWFiZjIxZDlkODgxMjZkZDc4MjdiZDdjNGVjMjk5NTJlYzdiZDVlZmM3IgogICAgfQogIH0KfQ==",
+  "signature": "TupDtxu2UKH74k7FJrjajMovQJzHZhyqPrDTe1PKMaDvtYPhK8ofcj+zrzAAKXh8GGdXYXzI/CePhdlTwFzomdx1bEeRFbzCZGNbLGZJGK+D7rE+sEALgSP8HK3DaUL8m08yeTbuFvqwBZD0Ao6Jmr8lFkiaXS2z/ZAx5CJNqgaVFE1LFWybXAeMVgvPqr63NuXMKio6FnRdIWrDlQ6KCim/LBCtEL+X8f+2d6DXZzkFXUT+ivUmsy3bVbdxrbQdrjFOeWnB+rtDLaLqPBuFxnc7Y5HAFQxNZIU/MSPDLCrI252/r4LMQwLB3mh25e9SwwZA73MRe+B/9ejJ7wf9aeSL82R0YeLiUpm5/fTy+/McOFtmjHmLkaLstvB9XZzyllpyYufBr4IabWA5EJSaS8FMGLG/Jw5ADoN633G+nAqIkHUcz1/CqD8qfY7E0xi6EGHvy/wCKSSGk4KNrZf/cD173/QYyu28RoYjWSCXYXYCNxSMa67KnMHouj8wlPfsYsjVZR4PrJt0Nw5QFgb9DyNP9PcIy1zEyGkeqNdWKeQnL+4WjbXL2VrcS567BQyW7Ukqqp2QgiZL0sOVz6l4xvHngYgHKgHOhRmbGY7dyG30kPhj9XYEEz1nm1w6M8BG3lHAg36hDKuXUGBqWKC8ZWjcKuo9PVmxQvWw73YbRUw="
+ },
+ "hypixel": {
+  "npc_sell_price": 100,
+  "item_specific": {
+   "portal": {
+    "holo_name": "The End",
+    "description_name": "%%light_purple%%The End",
+    "destination_mode": "combat_3",
+    "schematic_file": "sb_portal_danger3",
+    "offset": "MINE",
+    "skill_requirement": {
+     "skill": "COMBAT",
+     "level": 12
+    }
+   }
+  }
+ }
+}

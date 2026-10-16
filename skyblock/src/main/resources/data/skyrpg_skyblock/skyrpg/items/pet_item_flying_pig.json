@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "PET_ITEM_FLYING_PIG",
+ "base": "minecraft:feather",
+ "name": "Flying Pig",
+ "rarity": "rare",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 500000
+ }
+}

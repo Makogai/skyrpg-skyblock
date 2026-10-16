@@ -1,0 +1,14 @@
+{
+ "skyblock_id": "DIAMOND_CHESTPLATE",
+ "base": "minecraft:diamond_chestplate",
+ "name": "Diamond Chestplate",
+ "rarity": "uncommon",
+ "category": "CHESTPLATE",
+ "type": "Chestplate",
+ "stats": {
+  "defense": 40
+ },
+ "hypixel": {
+  "npc_sell_price": 32
+ }
+}

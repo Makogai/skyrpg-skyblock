@@ -1,0 +1,16 @@
+{
+ "skyblock_id": "HONEYCOMB",
+ "base": "minecraft:paper",
+ "name": "Honeycomb",
+ "rarity": "common",
+ "type": "",
+ "description": "§7The famed, sweet-smelling produce of Torrhus Canyon.",
+ "hypixel": {
+  "npc_sell_price": 100,
+  "components": [
+   {
+    "type": "RECIPE_INGREDIENT"
+   }
+  ]
+ }
+}

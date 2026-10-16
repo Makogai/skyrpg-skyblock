@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "CADUCOUS_STEM",
+ "base": "minecraft:rose_bush",
+ "name": "Caducous Stem",
+ "rarity": "common",
+ "type": "",
+ "description": "§7The color and shape of flowers are a precise record of what bees find attractive.",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

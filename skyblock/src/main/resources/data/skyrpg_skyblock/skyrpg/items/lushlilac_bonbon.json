@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LUSHLILAC_BONBON",
+ "base": "minecraft:paper",
+ "name": "Lushlilac Bonbon",
+ "rarity": "uncommon",
+ "category": "SALT",
+ "type": "Salt",
+ "hypixel": {
+  "npc_sell_price": 26
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "skyblock_id": "VANGUARD_LEGGINGS",
+ "base": "minecraft:leather_leggings",
+ "name": "Vanguard Leggings",
+ "rarity": "legendary",
+ "category": "LEGGINGS",
+ "type": "Leggings",
+ "stats": {
+  "cold_resistance": 1
+ },
+ "color": "#3588FF"
+}

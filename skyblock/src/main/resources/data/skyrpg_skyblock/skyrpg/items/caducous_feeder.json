@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "CADUCOUS_FEEDER",
+ "base": "minecraft:bowl",
+ "name": "Caducous Feeder",
+ "rarity": "rare",
+ "type": "",
+ "glint": true,
+ "unstackable": true,
+ "hypixel": {
+  "item_specific": {
+   "experience_gained": 1650000,
+   "charges": 2,
+   "consumed_item": "ULTIMATE_CARROT_CANDY"
+  },
+  "requirements": [
+   {
+    "type": "PROFILE_AGE",
+    "minimum_age_unit": "DAYS",
+    "minimum_age": 7
+   }
+  ],
+  "rift_transferrable": true,
+  "origin": "RIFT"
+ }
+}

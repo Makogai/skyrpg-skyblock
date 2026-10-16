@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "ENCHANTED_TITANIUM",
+ "base": "minecraft:paper",
+ "name": "Enchanted Titanium",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 3200
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "SPRUCE_WOOD_STAIRS",
+ "base": "minecraft:spruce_stairs",
+ "name": "Spruce Stairs",
+ "rarity": "common",
+ "type": "",
+ "hypixel": {
+  "npc_sell_price": 0.5
+ }
+}

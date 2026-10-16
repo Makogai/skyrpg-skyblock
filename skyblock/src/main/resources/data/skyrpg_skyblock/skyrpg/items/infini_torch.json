@@ -1,0 +1,8 @@
+{
+ "skyblock_id": "INFINI_TORCH",
+ "base": "minecraft:torch",
+ "name": "InfiniTorch™",
+ "rarity": "epic",
+ "type": "",
+ "glint": true
+}

@@ -1,0 +1,9 @@
+{
+ "skyblock_id": "PET_ITEM_BIG_TEETH_LEGENDARY",
+ "base": "minecraft:ghast_tear",
+ "name": "Big Teeth",
+ "rarity": "legendary",
+ "category": "PET_ITEM",
+ "type": "Pet Item",
+ "glint": true
+}

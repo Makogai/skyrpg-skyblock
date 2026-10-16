@@ -1,0 +1,17 @@
+{
+ "skyblock_id": "INFINITE_SUPERBOOM_TNT",
+ "base": "minecraft:paper",
+ "name": "InfiniBoom™ TNT",
+ "rarity": "epic",
+ "type": "",
+ "glint": true,
+ "hypixel": {
+  "npc_sell_price": 0,
+  "has_uuid": true,
+  "museum_data": {
+   "category": "DUNGEONEERING",
+   "donation_xp": 10,
+   "game_stage": "PROFESSIONAL"
+  }
+ }
+}

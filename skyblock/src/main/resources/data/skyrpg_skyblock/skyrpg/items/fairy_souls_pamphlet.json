@@ -1,0 +1,10 @@
+{
+ "skyblock_id": "FAIRY_SOULS_PAMPHLET",
+ "base": "minecraft:paper",
+ "name": "Fairy Souls Pamphlet",
+ "rarity": "rare",
+ "type": "",
+ "hypixel": {
+  "can_auction": false
+ }
+}

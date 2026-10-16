@@ -1,0 +1,25 @@
+{
+ "skyblock_id": "SPRAYONATOR",
+ "base": "minecraft:paper",
+ "name": "Sprayonator",
+ "rarity": "uncommon",
+ "type": "",
+ "hypixel": {
+  "has_uuid": true,
+  "requirements": [
+   {
+    "type": "GARDEN_LEVEL",
+    "level": 5
+   }
+  ],
+  "museum_data": {
+   "donation_xp": 2,
+   "category": "FARMING",
+   "parent": {
+    "SPRAYONATOR": "JUICY_SPRAYONATOR"
+   },
+   "mapped_item_ids": [],
+   "game_stage": "AMATEUR"
+  }
+ }
+}
