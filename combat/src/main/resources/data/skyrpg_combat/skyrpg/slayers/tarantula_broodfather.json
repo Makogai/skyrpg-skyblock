@@ -1,0 +1,447 @@
+{
+ "order": 2,
+ "name": "Tarantula Broodfather",
+ "key": "spider",
+ "color": "#AA0000",
+ "icon": "minecraft:string",
+ "boss": "skyrpg_combat:broodmother",
+ "kind": "broodmother",
+ "counts": {
+  "minecraft:spider": 5,
+  "minecraft:cave_spider": 5
+ },
+ "counts_text": "spiders",
+ "levels": [
+  5,
+  15,
+  200,
+  1000,
+  5000,
+  20000,
+  100000,
+  400000,
+  1000000
+ ],
+ "level_rewards": [
+  {
+   "stats": {
+    "crit_damage": 1.0
+   },
+   "sbxp": 15,
+   "unlocks": [
+    "Spider Ring"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 1.0
+   },
+   "sbxp": 25,
+   "unlocks": [
+    "Recluse Fang",
+    "Tarantula Silk",
+    "Spider Catalyst"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 1.0
+   },
+   "sbxp": 35,
+   "unlocks": [
+    "Medium Slayer Sack"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 1.0
+   },
+   "sbxp": 50,
+   "unlocks": [
+    "Tarantula Helmet",
+    "Tarantula Chestplate",
+    "Tarantula Leggings",
+    "Tarantula Boots",
+    "Tarantula Fang",
+    "Enchanted Book (Bane of Arthropods VI)"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 2.0
+   },
+   "sbxp": 75,
+   "unlocks": [
+    "Tarantula Minion",
+    "Spider Shortbow",
+    "Fly Swatter"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 2.0
+   },
+   "sbxp": 100,
+   "unlocks": [
+    "Scorpion Foil",
+    "Spider Artifact",
+    "Flycatcher",
+    "Tarantula Talisman",
+    "Vial of Venom"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 2.0
+   },
+   "sbxp": 125,
+   "unlocks": [
+    "Survivor Cube",
+    "Mosquito Shortbow",
+    "Mosquito Pet",
+    "Tarantula Ring",
+    "Primordial Helmet",
+    "Primordial Chestplate"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 3.0
+   },
+   "sbxp": 150,
+   "unlocks": [
+    "Sting",
+    "The Primordial",
+    "Shriveled Cornea",
+    "Primordial Eye"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 3.0
+   },
+   "sbxp": 150,
+   "unlocks": [
+    "Tarantula Minion XII Upgrade Stone"
+   ]
+  }
+ ],
+ "drops": [
+  {
+   "item": "TARANTULA_WEB",
+   "level": 1,
+   "odds": "Guaranteed",
+   "tiers": {
+    "1": [
+     2,
+     4,
+     1.0
+    ],
+    "2": [
+     4,
+     8,
+     1.0
+    ],
+    "3": [
+     16,
+     32,
+     1.0
+    ],
+    "4": [
+     32,
+     48,
+     1.0
+    ],
+    "5": [
+     64,
+     64,
+     1.0
+    ]
+   }
+  },
+  {
+   "item": "TOXIC_ARROW_POISON",
+   "level": 1,
+   "odds": "Occasional",
+   "tiers": {
+    "2": [
+     6,
+     8,
+     0.1525
+    ],
+    "3": [
+     16,
+     32,
+     0.1481
+    ],
+    "4": [
+     32,
+     48,
+     0.1497
+    ],
+    "5": [
+     64,
+     64,
+     0.18
+    ]
+   }
+  },
+  {
+   "item": "SPIDER_CATALYST",
+   "level": 2,
+   "odds": "Extraordinary",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0206
+    ],
+    "4": [
+     1,
+     1,
+     0.0062
+    ],
+    "5": [
+     1,
+     1,
+     0.0206
+    ]
+   }
+  },
+  {
+   "item": "TARANTULA_SILK",
+   "level": 2,
+   "odds": "Occasional",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.2
+    ]
+   }
+  },
+  {
+   "item": "TARANTULA_CATALYST",
+   "level": 4,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0025
+    ],
+    "4": [
+     1,
+     1,
+     0.0038
+    ],
+    "5": [
+     1,
+     1,
+     0.0043
+    ]
+   }
+  },
+  {
+   "item": "FLY_SWATTER",
+   "level": 5,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0008
+    ],
+    "4": [
+     1,
+     1,
+     0.0017
+    ],
+    "5": [
+     1,
+     1,
+     0.0008
+    ]
+   }
+  },
+  {
+   "item": "VIAL_OF_VENOM",
+   "level": 6,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0008
+    ],
+    "5": [
+     1,
+     1,
+     0.0014
+    ]
+   }
+  },
+  {
+   "item": "TARANTULA_TALISMAN",
+   "level": 6,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0008
+    ],
+    "4": [
+     1,
+     1,
+     0.0017
+    ],
+    "5": [
+     1,
+     1,
+     0.0008
+    ]
+   }
+  },
+  {
+   "item": "DIGESTED_MOSQUITO",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0006
+    ],
+    "5": [
+     1,
+     1,
+     0.0006
+    ]
+   }
+  },
+  {
+   "item": "SHRIVELED_WASP",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.001
+    ]
+   }
+  },
+  {
+   "item": "ENSNARED_SNAIL",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.0006
+    ]
+   }
+  },
+  {
+   "item": "PRIMORDIAL_EYE",
+   "level": 7,
+   "odds": "",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.0002
+    ]
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "fee": 2000,
+   "xp": 250,
+   "health": 750.0,
+   "damage": 2.33,
+   "dps": 35.0,
+   "level": 10,
+   "minutes": 3,
+   "slayer_xp": 5,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 50.0,
+   "requires_boss": {
+    "line": "revenant_horror",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 7500,
+   "xp": 650,
+   "health": 30000.0,
+   "damage": 3.67,
+   "dps": 55.0,
+   "level": 90,
+   "minutes": 3,
+   "slayer_xp": 25,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 100.0,
+   "requires_boss": {
+    "line": "tarantula_broodfather",
+    "tier": 1
+   }
+  },
+  {
+   "fee": 20000,
+   "xp": 1500,
+   "health": 900000.0,
+   "damage": 17.33,
+   "dps": 260.0,
+   "level": 470,
+   "minutes": 4,
+   "slayer_xp": 100,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 200.0,
+   "requires_boss": {
+    "line": "tarantula_broodfather",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 50000,
+   "xp": 3000,
+   "health": 2400000.0,
+   "damage": 35.33,
+   "dps": 530.0,
+   "level": 770,
+   "minutes": 4,
+   "slayer_xp": 500,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 500.0,
+   "requires_boss": {
+    "line": "tarantula_broodfather",
+    "tier": 3
+   }
+  },
+  {
+   "fee": 100000,
+   "xp": 6000,
+   "health": 10000000.0,
+   "damage": 233.33,
+   "dps": 3500.0,
+   "level": 2012,
+   "minutes": 4,
+   "slayer_xp": 1500,
+   "requires": 0,
+   "combat_level": 25,
+   "combat_xp": 2000,
+   "requires_boss": {
+    "line": "tarantula_broodfather",
+    "tier": 4
+   }
+  }
+ ]
+}

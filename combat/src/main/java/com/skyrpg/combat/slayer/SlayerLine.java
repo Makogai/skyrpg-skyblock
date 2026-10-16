@@ -30,15 +30,70 @@ import net.minecraft.world.item.Items;
  * </pre>
  * {@code kind} picks the boss's tricks (see {@link SlayerBosses}); {@code counts} are the mobs whose kills fill the quest
  * bar ({@code #} marks a tag).
+ *
+ * <p>Hypixel's slayers ({@code tools/skyblock/import_slayers.py}) write {@code counts} as each mob's Combat XP, the bar
+ * filling with the Combat XP of what you kill ({@code {"minecraft:zombie": 6}}); list {@code drops} (SkyBlock items, the
+ * amount and chance per tier, the slayer level each needs) and {@code level_rewards} (each slayer level's stats, SkyBlock
+ * XP and unlocks); and give tiers a Combat level and an earlier boss to beat first ({@code combat_level},
+ * {@code requires_boss}) and the boss's own Combat XP ({@code combat_xp}).
  */
 public record SlayerLine(String id, String name, int color, Item icon, Identifier boss, String kind, List<Identifier> countTypes,
                          List<TagKey<EntityType<?>>> countTags, String countsText, Item token, Item rare, Map<String, Double> levelStat,
-                         List<Integer> levels, List<Tier> tiers) {
+                         List<Integer> levels, List<Tier> tiers, Map<Identifier, Double> countXp, List<Drop> drops, List<LevelReward> levelRewards,
+                         String key) {
     public static final List<Integer> DEFAULT_LEVELS = List.of(5, 15, 50, 120, 300, 700, 1500, 3000, 6000);
 
     /** One tier of the line's quest. */
     public record Tier(long fee, int xp, double health, double damage, int level, int minutes, int slayerXp, int requires,
-                       int tokensMin, int tokensMax, double rareChance, double eggChance) {
+                       int tokensMin, int tokensMax, double rareChance, double eggChance, int combatLevel, double combatXp,
+                       String requiresLine, int requiresTier) {
+    }
+
+    /**
+     * A boss drop: a SkyBlock item, the slayer level it needs, Hypixel's odds label ("Guaranteed" to "RNGesus
+     * Incarnate", or empty), and for each tier {min, max, chance}.
+     */
+    public record Drop(String item, int level, String odds, Map<Integer, double[]> tiers) {
+        /** The odds label, from the data or else guessed from the chance. */
+        public String oddsAt(double chance) {
+            if (!odds.isEmpty()) {
+                return odds;
+            }
+            return chance >= 1 ? "Guaranteed" : chance >= 0.1 ? "Occasional" : chance >= 0.02 ? "Rare" : chance >= 0.003 ? "Extraordinary"
+                    : chance > 0.0003 ? "Pray RNGesus" : "RNGesus Incarnate";
+        }
+    }
+
+    /** What reaching a slayer level gives. */
+    public record LevelReward(Map<String, Double> stats, int sbxp, List<String> unlocks) {
+    }
+
+    /** Hypixel's slayers: drops and level rewards come from the data rather than a token and a rare. */
+    public boolean hypixel() {
+        return !drops.isEmpty() || !levelRewards.isEmpty();
+    }
+
+    /** What a kill adds to the quest bar: the mob's Combat XP for Hypixel's slayers, or -1 to use the kill count. */
+    public double questXp(Entity entity) {
+        Double xp = countXp.get(BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()));
+        return xp == null ? -1 : xp;
+    }
+
+    /** Every stat the levels up to {@code level} give together. */
+    public Map<String, Double> statsAt(int level) {
+        Map<String, Double> out = new LinkedHashMap<>();
+        if (levelRewards.isEmpty()) {
+            levelStat.forEach((stat, per) -> out.put(stat, per * level));
+            return out;
+        }
+        for (int i = 0; i < Math.min(level, levelRewards.size()); i++) {
+            levelRewards.get(i).stats().forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        }
+        return out;
+    }
+
+    public LevelReward levelReward(int level) {
+        return level >= 1 && level <= levelRewards.size() ? levelRewards.get(level - 1) : null;
     }
 
     /** Whether killing this entity fills this line's quest bar. */
@@ -82,12 +137,46 @@ public record SlayerLine(String id, String name, int color, Item icon, Identifie
     static SlayerLine parse(Identifier id, JsonObject json) {
         List<Identifier> types = new ArrayList<>();
         List<TagKey<EntityType<?>>> tags = new ArrayList<>();
-        for (JsonElement element : json.getAsJsonArray("counts")) {
-            String entry = element.getAsString();
-            if (entry.startsWith("#")) {
-                tags.add(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse(entry.substring(1))));
-            } else {
-                types.add(Identifier.parse(entry));
+        Map<Identifier, Double> countXp = new LinkedHashMap<>();
+        if (json.get("counts").isJsonObject()) {
+            json.getAsJsonObject("counts").entrySet().forEach(e -> {
+                types.add(Identifier.parse(e.getKey()));
+                countXp.put(Identifier.parse(e.getKey()), e.getValue().getAsDouble());
+            });
+        } else {
+            for (JsonElement element : json.getAsJsonArray("counts")) {
+                String entry = element.getAsString();
+                if (entry.startsWith("#")) {
+                    tags.add(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse(entry.substring(1))));
+                } else {
+                    types.add(Identifier.parse(entry));
+                }
+            }
+        }
+        List<Drop> drops = new ArrayList<>();
+        if (json.has("drops")) {
+            for (JsonElement element : json.getAsJsonArray("drops")) {
+                JsonObject d = element.getAsJsonObject();
+                Map<Integer, double[]> perTier = new LinkedHashMap<>();
+                d.getAsJsonObject("tiers").entrySet().forEach(e -> {
+                    JsonArray a = e.getValue().getAsJsonArray();
+                    perTier.put(Integer.parseInt(e.getKey()), new double[] {a.get(0).getAsDouble(), a.get(1).getAsDouble(), a.get(2).getAsDouble()});
+                });
+                drops.add(new Drop(d.get("item").getAsString(), d.has("level") ? d.get("level").getAsInt() : 0,
+                        d.has("odds") ? d.get("odds").getAsString() : "", Map.copyOf(perTier)));
+            }
+        }
+        List<LevelReward> levelRewards = new ArrayList<>();
+        if (json.has("level_rewards")) {
+            for (JsonElement element : json.getAsJsonArray("level_rewards")) {
+                JsonObject r = element.getAsJsonObject();
+                Map<String, Double> stats = new LinkedHashMap<>();
+                r.getAsJsonObject("stats").entrySet().forEach(e -> stats.put(e.getKey(), e.getValue().getAsDouble()));
+                List<String> unlocks = new ArrayList<>();
+                if (r.has("unlocks")) {
+                    r.getAsJsonArray("unlocks").forEach(u -> unlocks.add(u.getAsString()));
+                }
+                levelRewards.add(new LevelReward(Map.copyOf(stats), r.has("sbxp") ? r.get("sbxp").getAsInt() : 0, List.copyOf(unlocks)));
             }
         }
         Map<String, Double> levelStat = new LinkedHashMap<>();
@@ -107,7 +196,10 @@ public record SlayerLine(String id, String name, int color, Item icon, Identifie
                     t.has("minutes") ? t.get("minutes").getAsInt() : 3, t.get("slayer_xp").getAsInt(),
                     t.has("requires") ? t.get("requires").getAsInt() : 0,
                     tokens == null ? 0 : tokens.get(0).getAsInt(), tokens == null ? 0 : tokens.get(tokens.size() - 1).getAsInt(),
-                    t.has("rare_chance") ? t.get("rare_chance").getAsDouble() : 0, t.has("egg_chance") ? t.get("egg_chance").getAsDouble() : 0));
+                    t.has("rare_chance") ? t.get("rare_chance").getAsDouble() : 0, t.has("egg_chance") ? t.get("egg_chance").getAsDouble() : 0,
+                    t.has("combat_level") ? t.get("combat_level").getAsInt() : 0, t.has("combat_xp") ? t.get("combat_xp").getAsDouble() : 0,
+                    t.has("requires_boss") ? t.getAsJsonObject("requires_boss").get("line").getAsString() : "",
+                    t.has("requires_boss") ? t.getAsJsonObject("requires_boss").get("tier").getAsInt() : 0));
         }
         return new SlayerLine(id.getPath(), json.get("name").getAsString(),
                 json.has("color") ? TextColor.parseColor(json.get("color").getAsString()).getOrThrow().getValue() | 0xFF000000 : 0xFFE5534B,
@@ -115,7 +207,8 @@ public record SlayerLine(String id, String name, int color, Item icon, Identifie
                 json.has("kind") ? json.get("kind").getAsString() : id.getPath(), List.copyOf(types), List.copyOf(tags),
                 json.has("counts_text") ? json.get("counts_text").getAsString() : "its kind of mob",
                 item(json, "token", Items.AIR), item(json, "rare", Items.AIR), Map.copyOf(levelStat),
-                levels.isEmpty() ? DEFAULT_LEVELS : List.copyOf(levels), List.copyOf(tiers));
+                levels.isEmpty() ? DEFAULT_LEVELS : List.copyOf(levels), List.copyOf(tiers), Map.copyOf(countXp), List.copyOf(drops),
+                List.copyOf(levelRewards), json.has("key") ? json.get("key").getAsString() : id.getPath());
     }
 
     private static Item item(JsonObject json, String key, Item fallback) {

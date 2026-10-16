@@ -15,6 +15,8 @@ public final class Features {
     public static final String ARTISAN_BENCH = "skyrpg_items:artisan_bench";
     /** Survival's SkyBlock Level rules: XP for every skill level and coins every 10th level (SkyBlock pays its own). */
     public static final String SURVIVAL_LEVEL = "skyrpg_progress:survival_level";
+    /** The survival Slayer Master's spawner shop (Hypixel's Maddox sells none). */
+    public static final String SLAYER_SPAWNERS = "skyrpg_combat:slayer_spawners";
 
     private static final Set<String> OFF = ConcurrentHashMap.newKeySet();
 

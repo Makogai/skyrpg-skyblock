@@ -10,12 +10,16 @@ import com.skyrpg.combat.SkyRpgCombat;
 import com.skyrpg.core.action.Actions;
 import com.skyrpg.core.data.JsonDataLoader;
 import com.skyrpg.core.economy.Wallet;
+import com.skyrpg.core.progress.SkyBlockXp;
 import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.core.stats.StatType;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.stats.Stats;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.core.text.Notice;
+import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemRegistry;
+import com.skyrpg.items.SkyItems;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
@@ -93,6 +97,16 @@ public final class Slayers {
         SlayerPage.init();
         SlayerEntities.init();
         JsonDataLoader.register(SkyRpgCombat.id("slayers"), DIRECTORY, Slayers::load);
+        com.skyrpg.core.progress.SlayerLevels.install((player, key) -> {
+            for (SlayerLine line : lines.values()) {
+                if (line.key().equals(key)) {
+                    return level(player, line.id());
+                }
+            }
+            return 0;
+        });
+        // The client works out slayer levels (for SkyBlock recipe locks) from the page data, so it comes on join too.
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> SlayerPage.send(handler.player));
         SkillLevels.installExtra(SkyRpgCombat.MOD_ID, (player, skill) ->
                 skill.getPath().startsWith("slayer/") ? level(player, skill.getPath().substring("slayer/".length())) : 0);
         Stats.registerSource(new Stats.Source() {
@@ -106,10 +120,10 @@ public final class Slayers {
                 for (SlayerLine line : lines.values()) {
                     int level = level(player, line.id());
                     if (level > 0) {
-                        line.levelStat().forEach((stat, per) -> {
+                        line.statsAt(level).forEach((stat, value) -> {
                             StatType type = StatTypes.get(stat);
                             if (type != null) {
-                                out.add(type, per * level);
+                                out.add(type, value);
                             }
                         });
                     }
@@ -122,6 +136,9 @@ public final class Slayers {
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Start.TYPE, (payload, context) -> start(context.player(), payload.line(), payload.tier()));
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Cancel.TYPE, (payload, context) -> cancel(context.player()));
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Buy.TYPE, (payload, context) -> {
+            if (!com.skyrpg.core.Features.on(com.skyrpg.core.Features.SLAYER_SPAWNERS)) {
+                return;
+            }
             Spawners.Result result = Spawners.buy(context.player(), payload.index(), payload.count());
             reply(context.player(), result.message(), result.ok());
         });
@@ -262,8 +279,9 @@ public final class Slayers {
             reply(player, Component.literal("You're already on a quest. Finish or cancel it first."), false);
             return;
         }
-        if (level(player, lineId) < tier.requires()) {
-            reply(player, Component.literal("Needs " + line.name() + " Slayer " + tier.requires() + "."), false);
+        String missing = missing(player, line, tier);
+        if (missing != null) {
+            reply(player, Component.literal("Needs " + missing + "."), false);
             return;
         }
         if (!Wallet.take(player, tier.fee())) {
@@ -273,11 +291,34 @@ public final class Slayers {
         setQuest(player, new SlayerState.Quest(lineId, tierNumber, 0, false));
         com.skyrpg.core.event.ProgressEvents.SLAYER_QUEST.invoker().onSlayer(player, lineId, tierNumber, false);
         Notice.of(Notice.Kind.SLAYER).tag("QUEST STARTED").send(player, Component.literal(line.name() + " " + Msg.roman(tierNumber)).withColor(line.color() & 0xFFFFFF)
-                .append(Msg.text(": slay " + Msg.number(tier.xp()) + " worth of " + countsText(line)
-                + " to summon it (tougher ones count more).", ChatFormatting.GRAY)));
+                .append(Msg.text(line.hypixel() ? ": earn " + Msg.number(tier.xp()) + " Combat XP from " + countsText(line) + " to summon it."
+                        : ": slay " + Msg.number(tier.xp()) + " worth of " + countsText(line) + " to summon it (tougher ones count more).",
+                        ChatFormatting.GRAY)));
         Msg.playSound(player, SoundEvents.WITHER_SPAWN, 0.4f, 1.6f);
         reply(player, Component.literal("Quest started: " + line.name() + " " + Msg.roman(tierNumber)), true);
         sendStatus(player);
+    }
+
+    /** What the player still needs for this tier ("Combat 5", "Revenant Horror II slain"), or null. */
+    static String missing(ServerPlayer player, SlayerLine line, SlayerLine.Tier tier) {
+        if (level(player, line.id()) < tier.requires()) {
+            return line.name() + " Slayer " + tier.requires();
+        }
+        if (SkillLevels.level(player, SkillLevels.COMBAT) < tier.combatLevel()) {
+            return "Combat " + tier.combatLevel();
+        }
+        if (!tier.requiresLine().isEmpty()) {
+            SlayerState state = state(player);
+            boolean beaten = false;
+            for (int t = tier.requiresTier(); t <= 5; t++) {
+                beaten |= state.kills(tier.requiresLine(), t) > 0;
+            }
+            if (!beaten) {
+                SlayerLine other = lines.get(tier.requiresLine());
+                return (other == null ? tier.requiresLine() : other.name()) + " " + Msg.roman(tier.requiresTier()) + " slain";
+            }
+        }
+        return null;
     }
 
     private static void cancel(ServerPlayer player) {
@@ -302,7 +343,8 @@ public final class Slayers {
         if (tier == null || !line.counts(mob)) {
             return;
         }
-        double progress = quest.progress() + 1 + MobLevels.level(mob) / 5;
+        double xp = line.questXp(mob);
+        double progress = quest.progress() + (xp >= 0 ? xp : 1 + MobLevels.level(mob) / 5);
         if (progress >= tier.xp()) {
             setQuest(player, new SlayerState.Quest(quest.line(), quest.tier(), tier.xp(), true));
             SlayerBosses.summon(player, line, quest.tier(), tier);
@@ -331,9 +373,13 @@ public final class Slayers {
         com.skyrpg.core.event.ProgressEvents.SLAYER_QUEST.invoker().onSlayer(player, line.id(), tierNumber, true);
         RandomSource random = player.getRandom();
         double find = 1 + Math.max(0, Stats.get(player, StatTypes.MAGIC_FIND)) / 100;
+        double combatXp = tier.combatXp() > 0 ? tier.combatXp() : tier.health() / 20;
+        if (line.hypixel()) {
+            hypixelDrops(player, line, tierNumber, tier, ticks, find, combatXp);
+            return;
+        }
         Notice.of(Notice.Kind.SLAYER).icon(Notice.TROPHY).tag("QUEST COMPLETE").color(0xFFAA00).send(player, Msg.text(line.name() + " " + Msg.roman(tierNumber) + " slain!", ChatFormatting.GOLD));
         Msg.playSound(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 0.8f, 1.0f);
-        double combatXp = tier.health() / 20;
         SkillLevels.giveXp(player, SkillLevels.COMBAT, combatXp);
 
         MutableComponent drops = Msg.text("Rewards: ", ChatFormatting.GRAY);
@@ -356,6 +402,90 @@ public final class Slayers {
             rareDrop(player, egg, ChatFormatting.GOLD, true);
         }
         sendStatus(player);
+    }
+
+    /**
+     * Hypixel's boss drops: every drop this tier has, and your slayer level allows, rolls its chance (Magic Find raises
+     * the rare ones'), all listed in one panel; the rarest are announced. The level counts this kill's slayer XP, as on
+     * Hypixel: a first Tier I kill reaches level 1, which Revenant Flesh needs.
+     */
+    private static void hypixelDrops(ServerPlayer player, SlayerLine line, int tierNumber, SlayerLine.Tier tier, int ticks, double find,
+                                     double combatXp) {
+        RandomSource random = player.getRandom();
+        double gained = tier.slayerXp() * (1 + SlayerGear.xpBonus(player, line.id()));
+        double xpAfter = state(player).xp(line.id()) + gained;
+        int level = line.level(xpAfter);
+        Notice.Panel panel = Notice.of(Notice.Kind.SLAYER).icon(Notice.TROPHY).tag("SLAYER QUEST COMPLETE").color(0xFFAA00).panel();
+        int tokens = 0;
+        for (SlayerLine.Drop drop : line.drops()) {
+            double[] at = drop.tiers().get(tierNumber);
+            ItemDefinition def = ItemRegistry.skyblock(drop.item());
+            if (at == null || def == null || level < drop.level()) {
+                continue;
+            }
+            double chance = at[2] >= 1 ? 1 : at[2] < 0.05 ? at[2] * find : at[2];
+            if (random.nextDouble() >= chance) {
+                continue;
+            }
+            int amount = (int) at[0] + (at[1] > at[0] ? random.nextInt((int) (at[1] - at[0]) + 1) : 0);
+            if (at[2] >= 1) {
+                tokens += amount;
+            }
+            int left = amount;
+            while (left > 0) {
+                ItemStack stack = SkyItems.create(def, 1);
+                int n = SkyItems.unstackable(def) ? 1 : Math.min(left, stack.getMaxStackSize());
+                stack.setCount(n);
+                left -= n;
+                give(player, stack);
+            }
+            MutableComponent name = Component.literal(def.name()).withColor(def.rarity().color());
+            String odds = drop.oddsAt(at[2]);
+            String banner = switch (odds) {
+                case "Rare" -> "RARE DROP! ";
+                case "Extraordinary" -> "VERY RARE DROP! ";
+                case "Pray RNGesus", "RNGesus Incarnate" -> "CRAZY RARE DROP! ";
+                default -> "";
+            };
+            if (!banner.isEmpty()) {
+                MutableComponent rare = Notice.rareDrop(Component.literal(banner).withColor(oddsColor(odds)).withStyle(ChatFormatting.BOLD)
+                        .append(name.copy()).append(Msg.text(" (" + Math.round(Math.max(1, find * 100 - 100)) + "% Magic Find)", ChatFormatting.AQUA)),
+                        def.rarity().color());
+                if (odds.equals("RNGesus Incarnate")) {
+                    MutableComponent all = Notice.rareDrop("RNGESUS!", player.getName().copy().withStyle(ChatFormatting.YELLOW)
+                            .append(Msg.text(" found ", ChatFormatting.GOLD)).append(name.copy())
+                            .append(Msg.text(" from a " + line.name() + "!", ChatFormatting.GOLD)), def.rarity().color());
+                    player.level().getServer().getPlayerList().getPlayers().forEach(p -> p.sendSystemMessage(all));
+                } else {
+                    player.sendSystemMessage(rare);
+                }
+                Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.7f, 1.3f);
+            }
+            panel.line(Msg.text(amount > 1 ? amount + "x " : "", ChatFormatting.WHITE).append(name));
+        }
+        panel.line(Msg.text("+" + Msg.number(Math.round(combatXp)) + " Combat XP", ChatFormatting.DARK_AQUA));
+        int next = line.nextLevelXp(xpAfter);
+        panel.line(Msg.text("+" + Msg.number(Math.round(gained)) + " " + line.name() + " Slayer XP", ChatFormatting.LIGHT_PURPLE)
+                .append(Msg.text(next < 0 ? "  (max level)" : "  (" + Msg.number(Math.round(xpAfter)) + " / " + Msg.number(next) + " to level " + (level + 1) + ")",
+                        ChatFormatting.DARK_GRAY)));
+        player.setAttached(STATE, state(player).withKill(line.id(), tierNumber, ticks, tokens));
+        panel.send(player, Msg.text(line.name() + " " + Msg.roman(tierNumber) + " slain!", ChatFormatting.GOLD));
+        Msg.playSound(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 0.8f, 1.0f);
+        addXp(player, line, gained, true);
+        SkillLevels.giveXp(player, SkillLevels.COMBAT, combatXp);
+        sendStatus(player);
+    }
+
+    /** Hypixel's colour for an odds label. */
+    public static int oddsColor(String odds) {
+        return switch (odds) {
+            case "Guaranteed" -> 0xFF55FF55;
+            case "Occasional" -> 0xFF5555FF;
+            case "Rare" -> 0xFFAA00AA;
+            case "Extraordinary" -> 0xFFFFAA00;
+            case "Pray RNGesus" -> 0xFFFF55FF;
+            default -> 0xFFFF5555;
+        };
     }
 
     private static void rareDrop(ServerPlayer player, Item item, ChatFormatting color, boolean announce) {
@@ -381,16 +511,44 @@ public final class Slayers {
     }
 
     private static void addXp(ServerPlayer player, SlayerLine line, double amount) {
+        addXp(player, line, amount, false);
+    }
+
+    /** Adds slayer XP; {@code quiet} leaves out the progress line (the quest panel shows it), never the level-up panels. */
+    private static void addXp(ServerPlayer player, SlayerLine line, double amount, boolean quiet) {
         int before = line.level(state(player).xp(line.id()));
         player.setAttached(STATE, state(player).addXp(line.id(), amount));
         double xp = state(player).xp(line.id());
         int after = line.level(xp);
         int next = line.nextLevelXp(xp);
-        Notice.send(player, Notice.Kind.SLAYER, Msg.text(line.name() + " Slayer: ", ChatFormatting.GRAY)
+        if (!quiet) Notice.send(player, Notice.Kind.SLAYER, Msg.text(line.name() + " Slayer: ", ChatFormatting.GRAY)
                 .append(Msg.text("+" + Msg.number(Math.round(amount)) + " XP", ChatFormatting.LIGHT_PURPLE))
                 .append(Msg.text(next < 0 ? "  (max level)" : "  (" + Msg.number(Math.round(xp)) + " / " + Msg.number(next) + " to level " + (after + 1) + ")",
                         ChatFormatting.DARK_GRAY)));
-        for (int level = before + 1; level <= after; level++) {
+        for (int level = before + 1; level <= after && line.hypixel(); level++) {
+            SlayerLine.LevelReward reward = line.levelReward(level);
+            Notice.Panel panel = Notice.of(Notice.Kind.SLAYER).tag("SLAYER LEVEL UP").color(0xB06AE8).panel();
+            if (reward != null) {
+                panel.heading("Rewards", 0x55FF55);
+                reward.stats().forEach((stat, value) -> {
+                    StatType type = StatTypes.get(stat);
+                    if (type != null) {
+                        panel.line(Component.literal("  " + type.formatBonus(value) + " " + type.symbol() + " " + type.name()).withColor(type.color()));
+                    }
+                });
+                if (reward.sbxp() > 0) {
+                    panel.line(Msg.text("  +" + reward.sbxp() + " SkyBlock XP", ChatFormatting.AQUA));
+                    SkyBlockXp.give(player, reward.sbxp(), line.name() + " slayer level");
+                }
+                for (String unlock : reward.unlocks()) {
+                    panel.line(Msg.text("  Unlocked: " + unlock, ChatFormatting.GRAY));
+                }
+            }
+            panel.send(player, Component.literal(line.name() + " Slayer " + Msg.roman(level)).withColor(line.color() & 0xFFFFFF));
+            Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.8f, 0.8f);
+            SkillLevels.LEVEL_UP.invoker().onLevelUp(player, skill(line.id()), level - 1, level);
+        }
+        for (int level = before + 1; level <= after && !line.hypixel(); level++) {
             Notice.of(Notice.Kind.SLAYER).tag("LEVEL UP").color(0xB06AE8).send(player, Component.literal(line.name() + " Slayer " + level).withColor(line.color() & 0xFFFFFF)
                     .append(Msg.text("  ", ChatFormatting.GRAY))
                     .append(Msg.text("  " + perLevelText(line), ChatFormatting.GREEN)));
@@ -429,8 +587,12 @@ public final class Slayers {
                 if (lore != null) {
                     lore.adds().forEach(a -> abilities.add((a.attack() ? "A|" : "D|") + a.name() + "|" + a.description()));
                 }
+                String missing = missing(player, line, tier);
+                if (missing != null) {
+                    abilities.addFirst("D|Locked|Needs " + missing);
+                }
                 tiers.add(new SlayerPayloads.TierView(tier.fee(), tier.xp(), (int) Math.round(tier.health()), tier.level(), tier.minutes(),
-                        tier.slayerXp(), tier.requires(), level >= tier.requires(), lore == null ? "" : lore.title(), abilities));
+                        tier.slayerXp(), tier.requires(), missing == null, lore == null ? "" : lore.title(), abilities));
             }
             views.add(new SlayerPayloads.LineView(line.id(), line.name(), line.color(), new ItemStack(line.icon()), level, (int) Math.floor(xp),
                     line.nextLevelXp(xp), countsText(line), perLevelText(line), tiers));
@@ -448,6 +610,16 @@ public final class Slayers {
     /** What each level gives: "+3 Health". */
     private static String perLevelText(SlayerLine line) {
         List<String> parts = new ArrayList<>();
+        if (line.hypixel()) {
+            Map<String, Double> all = line.statsAt(line.levelRewards().size());
+            all.forEach((stat, total) -> {
+                StatType type = StatTypes.get(stat);
+                if (type != null) {
+                    parts.add("up to +" + Msg.number(total) + (type.percent() ? "% " : " ") + type.name());
+                }
+            });
+            return String.join(", ", parts);
+        }
         line.levelStat().forEach((stat, per) -> {
             StatType type = StatTypes.get(stat);
             if (type != null) {

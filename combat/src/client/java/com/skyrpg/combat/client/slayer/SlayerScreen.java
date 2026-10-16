@@ -24,15 +24,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 /**
- * Morwen Ashgrave, the Slayer Master. Two tabs:
- * <ul>
- *   <li>Slayer Quests: the lines down the left (your level and XP in each), the chosen line's tiers on the right as
- *   cards (fee, boss, kills needed, time, slayer XP; locked ones say the level they need). Click a tier to start it.
- *   A banner shows the quest you're on, with a cancel button (click twice).</li>
- *   <li>Spawners: the ladder as cards in order, each with its price, or the kills that unlock it and how far along you
- *   are. Click buys one, shift-click five.</li>
- * </ul>
- * The server checks everything again and sends a fresh view after every action.
+ * The Slayer Master (Maddox in SkyBlock). Slayer Quests: the bosses down the left (your level and XP in each), the
+ * chosen boss's tiers on the right as a table (cost, Combat XP to summon, boss health and level, slayer XP; a locked
+ * tier says what it still needs). Click a tier to start it. A banner shows the quest you're on, with a cancel button
+ * (click twice). Where the spawner shop is on (survival), a second tab lists the ladder as cards in order, each with its
+ * price, or the kills that unlock it; click buys one, shift-click five. The server checks everything again and sends a
+ * fresh view after every action.
  */
 public final class SlayerScreen extends Screen {
     private static final int MAX_WIDTH = 460;
@@ -44,6 +41,9 @@ public final class SlayerScreen extends Screen {
     private static final int GAP = 6;
     private static final int LIST_WIDTH = 132;
     private static final int LINE_ROW = 38;
+    /** Boss rows shrink to this so every boss fits a short window. */
+    private static final int MIN_LINE_ROW = 26;
+    private static final int TIER_ROW = 17;
     private static final int BANNER = 26;
     private static final int TIER_HEIGHT = 96;
     private static final int SPAWNER_MIN_WIDTH = 96;
@@ -69,7 +69,7 @@ public final class SlayerScreen extends Screen {
     private SlayerScreen(SlayerPayloads.View view) {
         super(Component.literal("Slayer Master"));
         this.view = view;
-        this.tab = Math.max(0, Math.min(TAB_NAMES.length - 1, view.tab()));
+        this.tab = shop() ? Math.max(0, Math.min(TAB_NAMES.length - 1, view.tab())) : 0;
         pickSelected();
     }
 
@@ -142,15 +142,16 @@ public final class SlayerScreen extends Screen {
 
         Draw.rounded(g, left + PAD, top + 8, 24, 24, Theme.CARD);
         Draw.item(g, new ItemStack(Items.WITHER_SKELETON_SKULL), left + PAD + 4, top + 12, 1f);
-        Draw.text(g, font, Component.literal("Morwen Ashgrave").withColor(Theme.TEXT)
+        Draw.text(g, font, Component.literal(shop() ? "Morwen Ashgrave" : "Maddox the Slayer").withColor(Theme.TEXT)
                 .append(Component.literal("  ·  Slayer Master").withColor(Theme.PURPLE)), left + PAD + 32, top + 10, Theme.TEXT);
-        Draw.fitText(g, font, tab == 0 ? "Pay her fee, slay their kind, then beat the boss that rises for you"
+        Draw.fitText(g, font, tab == 0 ? (shop() ? "Pay her fee, slay their kind, then beat the boss that rises for you"
+                        : "Pay for a quest, earn Combat XP from the boss's kind, then beat the boss that rises")
                 : "Each spawner unlocks once you've slain enough of the mob before it", left + PAD + 32, top + 21,
                 windowWidth - PAD * 2 - 32, Theme.MUTED);
 
         int tx = left + PAD;
         int ty = top + HEADER;
-        for (int i = 0; i < TAB_NAMES.length; i++) {
+        for (int i = 0; i < (shop() ? TAB_NAMES.length : 0); i++) {
             int w = font.width(TAB_NAMES[i]) + 12;
             boolean chosen = i == tab;
             boolean hovered = inside(mouseX, mouseY, tx, ty, w, TABS - 4);
@@ -172,18 +173,45 @@ public final class SlayerScreen extends Screen {
         if (Util.getMillis() - noticeAt < NOTICE_MILLIS && !notice.getString().isEmpty()) {
             Draw.fitText(g, font, notice, left + PAD, fy, windowWidth - PAD * 2, noticeGood ? Theme.GREEN : Theme.RED);
         } else {
-            Draw.fitText(g, font, tab == 0 ? "Click a tier to start it  ·  Mobs from spawners don't count  ·  Esc to close"
+            Draw.fitText(g, font, tab == 0 ? (shop() ? "Click a tier to start it  ·  Mobs from spawners don't count  ·  Esc to close"
+                            : "Click a tier to start it  ·  Esc to close")
                     : "Click to buy one  ·  Shift-click to buy " + BULK + "  ·  Esc to close", left + PAD, fy, windowWidth - PAD * 2, Theme.DIM);
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
 
+    /** The survival spawner shop is on: the screen has its tab. */
+    private boolean shop() {
+        return !view.spawners().isEmpty();
+    }
+
     private int contentTop() {
-        return top + HEADER + TABS;
+        return top + HEADER + (shop() ? TABS : 0);
     }
 
     private int contentHeight() {
-        return windowHeight - HEADER - TABS - FOOTER - 4;
+        return windowHeight - HEADER - (shop() ? TABS : 0) - FOOTER - 4;
+    }
+
+    /** Boss rows get shorter (down to {@link #MIN_LINE_ROW}) so every boss fits. */
+    private int lineRow() {
+        int count = Math.max(1, view.lines().size());
+        return Mth.clamp((contentHeight() - 4 * (count - 1)) / count, MIN_LINE_ROW, LINE_ROW);
+    }
+
+    /** Where the tier table's first row is, below the boss's name and lines (and the quest banner). */
+    private int tierTop() {
+        return contentTop() + (onQuest() ? BANNER + 6 : 0) + 15 + 11 + (onQuest() ? 0 : 11) + 4 + 11;
+    }
+
+    /** What a locked tier still needs ("Combat 5", "Revenant Horror I slain"), from the view, or "". */
+    private static String needs(SlayerPayloads.TierView tier) {
+        for (String ability : tier.abilities()) {
+            if (ability.startsWith("D|Locked|Needs ")) {
+                return ability.substring("D|Locked|Needs ".length());
+            }
+        }
+        return tier.requires() > 0 ? "Slayer " + tier.requires() : "";
     }
 
     // ---------------------------------------------------------------- quests tab
@@ -194,24 +222,25 @@ public final class SlayerScreen extends Screen {
             Draw.text(g, font, "No slayer quests yet.", left + PAD, y0 + 8, Theme.MUTED);
             return;
         }
+        int rowH = lineRow();
         for (int i = 0; i < view.lines().size(); i++) {
             SlayerPayloads.LineView line = view.lines().get(i);
             int x = left + PAD;
-            int y = y0 + i * (LINE_ROW + 4);
+            int y = y0 + i * (rowH + 4);
             boolean chosen = line.id().equals(selected);
-            boolean hovered = inside(mouseX, mouseY, x, y, LIST_WIDTH, LINE_ROW);
+            boolean hovered = inside(mouseX, mouseY, x, y, LIST_WIDTH, rowH);
             int color = 0xFF000000 | line.color();
-            Draw.panel(g, x, y, LIST_WIDTH, LINE_ROW, chosen ? Draw.mix(Theme.CARD, color, 0.16f) : hovered ? Theme.CARD_HOVER : Theme.CARD,
+            Draw.panel(g, x, y, LIST_WIDTH, rowH, chosen ? Draw.mix(Theme.CARD, color, 0.16f) : hovered ? Theme.CARD_HOVER : Theme.CARD,
                     chosen ? Draw.mix(Theme.CARD_BORDER, color, 0.7f) : Theme.CARD_BORDER);
-            Draw.item(g, line.icon(), x + 5, y + 5, 1f);
-            Draw.fitText(g, font, line.name(), x + 25, y + 5, LIST_WIDTH - 30, color);
-            Draw.text(g, font, "Level " + line.level(), x + 25, y + 16, Theme.MUTED);
+            Draw.item(g, line.icon(), x + 5, y + (rowH - 16) / 2, 1f);
+            Draw.fitText(g, font, line.name(), x + 25, y + 4, LIST_WIDTH - 30, color);
+            Draw.text(g, font, "Level " + line.level(), x + 25, y + 14, Theme.MUTED);
             if (line.id().equals(view.activeLine())) {
                 boolean pulse = (Util.getMillis() / 500) % 2 == 0;
                 Draw.rightText(g, font, "●", x + LIST_WIDTH - 5, y + 16, pulse ? color : Theme.DIM);
             }
             float progress = line.nextXp() < 0 ? 1f : line.xp() / (float) Math.max(1, line.nextXp());
-            Draw.bar(g, x + 5, y + LINE_ROW - 9, LIST_WIDTH - 10, 5, progress, Theme.PURPLE);
+            Draw.bar(g, x + 25, y + rowH - 7, LIST_WIDTH - 30, 3, progress, color);
             if (hovered) {
                 g.requestCursor(CursorTypes.POINTING_HAND);
                 Draw.queueTooltip(List.of(Component.literal(line.name() + " Slayer " + line.level()).withColor(color),
@@ -240,22 +269,38 @@ public final class SlayerScreen extends Screen {
         Draw.fitText(g, font, Component.literal("Slay: ").withColor(Theme.MUTED).append(Component.literal(line.counts()).withColor(Theme.TEXT)),
                 x, y, w, Theme.TEXT);
         y += 11;
-        Draw.fitText(g, font, Component.literal("Each level: ").withColor(Theme.MUTED).append(Component.literal(line.perLevel()).withColor(Theme.GREEN)),
-                x, y, w, Theme.TEXT);
-        y += 15;
+        if (!onQuest()) {
+            Draw.fitText(g, font, Component.literal("Each level: ").withColor(Theme.MUTED).append(Component.literal(line.perLevel()).withColor(Theme.GREEN)),
+                    x, y, w, Theme.TEXT);
+            y += 11;
+        }
+        y += 4;
 
         int count = line.tiers().size();
         if (count == 0) {
             return;
         }
-        int columns = Math.min(count, 4);
-        int cardWidth = (w - GAP * (columns - 1)) / columns;
-        for (int i = 0; i < count; i++) {
-            int cx = x + (i % columns) * (cardWidth + GAP);
-            int cy = y + (i / columns) * (TIER_HEIGHT + GAP);
-            boolean hovered = inside(mouseX, mouseY, cx, cy, cardWidth, TIER_HEIGHT);
-            drawTier(g, line, i, cx, cy, cardWidth, hovered);
+        // The table's column heads, then a row per tier.
+        int[] cols = columns(x, w);
+        String[] heads = {"Tier", "Cost", "Summon", "Boss", "Level", "XP"};
+        for (int c = 0; c < heads.length; c++) {
+            if (c == 0) {
+                Draw.text(g, font, heads[c], cols[c], y, Theme.DIM);
+            } else {
+                Draw.fitRight(g, font, heads[c], cols[c], y, cols[c] - cols[c - 1] - 4, Theme.DIM);
+            }
         }
+        y += 11;
+        for (int i = 0; i < count; i++) {
+            int ry = y + i * (TIER_ROW + 2);
+            boolean hovered = inside(mouseX, mouseY, x, ry, w, TIER_ROW);
+            drawTier(g, line, i, x, ry, w, hovered);
+        }
+    }
+
+    /** The table's column edges: the tier's left edge, then each other column's right edge. */
+    private static int[] columns(int x, int w) {
+        return new int[] {x + 6, x + w * 37 / 100, x + w * 59 / 100, x + w * 76 / 100, x + w * 87 / 100, x + w - 6};
     }
 
     private void drawBanner(GuiGraphicsExtractor g, int mouseX, int mouseY, int x, int y, int w) {
@@ -290,31 +335,29 @@ public final class SlayerScreen extends Screen {
         return new int[] {x + w - bw - 5, contentTop() + 6, bw, 14};
     }
 
+    /** One tier's row: its numbers, or what it still needs when it's locked. */
     private void drawTier(GuiGraphicsExtractor g, SlayerPayloads.LineView line, int index, int x, int y, int w, boolean hovered) {
         SlayerPayloads.TierView tier = line.tiers().get(index);
         int color = 0xFF000000 | line.color();
         int number = index + 1;
         boolean active = line.id().equals(view.activeLine()) && view.activeTier() == number;
-        boolean usable = tier.unlocked() && !onQuest();
-        Draw.panel(g, x, y, w, TIER_HEIGHT, hovered && usable ? Theme.CARD_HOVER : Theme.CARD,
+        boolean open = tier.unlocked();
+        boolean usable = open && !onQuest();
+        Draw.panel(g, x, y, w, TIER_ROW, hovered && usable ? Theme.CARD_HOVER : open ? Theme.CARD : Draw.mix(Theme.CARD, Theme.TRACK, 0.5f),
                 active ? color : hovered && usable ? Draw.mix(Theme.CARD_BORDER, color, 0.8f) : Theme.CARD_BORDER);
-        Draw.rounded(g, x + 4, y + 4, w - 8, 16, Draw.withAlpha(color, tier.unlocked() ? 0.16f : 0.06f));
-        Draw.fit(g, font, Component.literal("Tier " + Msg.roman(number)), x + w / 2, y + 8, w - 12, Draw.Align.CENTER,
-                tier.unlocked() ? color : Theme.DIM);
-        int ry = y + 25;
-        row(g, x, ry, w, "Fee", StatTypes.COIN_ICON + " " + Draw.compactNumbers(Msg.number(tier.fee())), Theme.ACCENT, tier.unlocked());
-        row(g, x, ry + 11, w, "Kills", Msg.number(tier.xp()), Theme.TEXT, tier.unlocked());
-        row(g, x, ry + 22, w, "Boss", "♥ " + Draw.compactNumbers(Msg.number(tier.bossHealth())), Theme.RED, tier.unlocked());
-        row(g, x, ry + 33, w, "Level", String.valueOf(tier.bossLevel()), Theme.TEXT, tier.unlocked());
-        row(g, x, ry + 44, w, "Time", tier.minutes() + " min", Theme.TEXT, tier.unlocked());
-        row(g, x, ry + 55, w, "XP", "+" + Msg.number(tier.slayerXp()), Theme.PURPLE, tier.unlocked());
-        if (!tier.unlocked()) {
-            Draw.rounded(g, x + 1, y + 1, w - 2, TIER_HEIGHT - 2, Draw.withAlpha(0xFF05070B, 0.45f));
-            Draw.rounded(g, x + 4, y + TIER_HEIGHT / 2 - 7, w - 8, 14, Draw.withAlpha(0xFF05070B, 0.85f));
-            Draw.fit(g, font, Component.literal("Needs Lv " + tier.requires()), x + w / 2, y + TIER_HEIGHT / 2 - 4, w - 12, Draw.Align.CENTER,
-                    Theme.RED);
-        } else if (active) {
-            Draw.fit(g, font, Component.literal("● Active"), x + w - 4, y + TIER_HEIGHT - 11, w - 8, Draw.Align.RIGHT, color);
+        g.fill(x + 1, y + 3, x + 3, y + TIER_ROW - 3, Draw.withAlpha(color, open ? 0.9f : 0.25f));
+        int[] cols = columns(x, w);
+        int ty = y + (TIER_ROW - 8) / 2;
+        Draw.text(g, font, (active ? "● " : "") + "Tier " + Msg.roman(number), cols[0], ty, open ? color : Theme.DIM);
+        if (open) {
+            cell(g, StatTypes.COIN_ICON + " " + Draw.compactNumbers(Msg.number(tier.fee())), cols, 1, ty, Theme.ACCENT);
+            cell(g, Msg.number(tier.xp()), cols, 2, ty, Theme.TEXT);
+            cell(g, "♥ " + Draw.compactNumbers(Msg.number(tier.bossHealth())), cols, 3, ty, Theme.RED);
+            cell(g, String.valueOf(tier.bossLevel()), cols, 4, ty, Theme.TEXT);
+            cell(g, "+" + Msg.number(tier.slayerXp()), cols, 5, ty, Theme.PURPLE);
+        } else {
+            String needs = needs(tier);
+            Draw.fitRight(g, font, "🔒 Needs " + needs, cols[5], ty, cols[5] - cols[0] - font.width("Tier " + Msg.roman(number)) - 10, Theme.RED);
         }
         if (hovered) {
             if (usable) {
@@ -324,9 +367,8 @@ public final class SlayerScreen extends Screen {
         }
     }
 
-    private void row(GuiGraphicsExtractor g, int x, int y, int w, String label, String value, int color, boolean unlocked) {
-        Draw.text(g, font, label, x + 6, y, unlocked ? Theme.MUTED : Theme.DIM);
-        Draw.fitRight(g, font, value, x + w - 6, y, w - 12 - font.width(label) - 4, unlocked ? color : Theme.DIM);
+    private void cell(GuiGraphicsExtractor g, String value, int[] cols, int column, int y, int color) {
+        Draw.fitRight(g, font, value, cols[column], y, cols[column] - cols[column - 1] - 4, color);
     }
 
     private List<Component> tierTooltip(SlayerPayloads.LineView line, SlayerPayloads.TierView tier, int number) {
@@ -334,18 +376,19 @@ public final class SlayerScreen extends Screen {
         List<Component> lines = new ArrayList<>();
         lines.add(Component.literal(line.name() + " " + Msg.roman(number)).withColor(color)
                 .append(tier.title().isEmpty() ? Component.empty() : Component.literal(" · " + tier.title()).withColor(Theme.MUTED)));
-        lines.add(Component.literal("Slay " + Msg.number(tier.xp()) + " worth of " + line.counts() + ",").withColor(Theme.MUTED));
+        lines.add(Component.literal(shop() ? "Slay " + Msg.number(tier.xp()) + " worth of " + line.counts() + ","
+                : "Earn " + Msg.number(tier.xp()) + " Combat XP from " + line.counts() + ",").withColor(Theme.MUTED));
         lines.add(Component.literal("then beat it within " + tier.minutes() + " minutes.").withColor(Theme.MUTED));
         lines.add(Component.empty());
         lines.add(Component.literal("Boss: Level " + tier.bossLevel() + ", " + Msg.number(tier.bossHealth()) + " health").withColor(Theme.RED));
-        lines.add(Component.literal("Reward: +" + Msg.number(tier.slayerXp()) + " slayer XP, tokens" + (number >= 3 ? ", a rare drop chance" : ""))
-                .withColor(Theme.PURPLE));
+        lines.add(Component.literal("Reward: +" + Msg.number(tier.slayerXp()) + " slayer XP" + (shop() ? ", tokens" + (number >= 3 ? ", a rare drop chance" : "")
+                : " and its drops (see the Slayers page)")).withColor(Theme.PURPLE));
         if (!tier.abilities().isEmpty()) {
             lines.add(Component.empty());
             lines.add(Component.literal(number > 1 ? "New this tier (plus everything before):" : "Abilities:").withColor(Theme.TEXT));
             for (String ability : tier.abilities()) {
                 String[] parts = ability.split("\\|", 3);
-                if (parts.length < 3) {
+                if (parts.length < 3 || parts[1].equals("Locked")) {
                     continue;
                 }
                 boolean attack = parts[0].equals("A");
@@ -357,7 +400,7 @@ public final class SlayerScreen extends Screen {
         lines.add(Component.literal("Dying or running out of time fails it.").withColor(Theme.DIM));
         lines.add(Component.empty());
         if (!tier.unlocked()) {
-            lines.add(Component.literal("Needs " + line.name() + " Slayer " + tier.requires()).withColor(Theme.RED));
+            lines.add(Component.literal("Needs " + needs(tier)).withColor(Theme.RED));
         } else if (onQuest()) {
             lines.add(Component.literal("Finish or cancel your quest first").withColor(Theme.RED));
         } else {
@@ -469,7 +512,7 @@ public final class SlayerScreen extends Screen {
         double mx = event.x();
         double my = event.y();
         int tx = left + PAD;
-        for (int i = 0; i < TAB_NAMES.length; i++) {
+        for (int i = 0; i < (shop() ? TAB_NAMES.length : 0); i++) {
             int w = font.width(TAB_NAMES[i]) + 12;
             if (inside(mx, my, tx, top + HEADER, w, TABS - 4)) {
                 tab = i;
@@ -487,8 +530,9 @@ public final class SlayerScreen extends Screen {
 
     private boolean clickQuests(double mx, double my) {
         int y0 = contentTop();
+        int rowH = lineRow();
         for (int i = 0; i < view.lines().size(); i++) {
-            if (inside(mx, my, left + PAD, y0 + i * (LINE_ROW + 4), LIST_WIDTH, LINE_ROW)) {
+            if (inside(mx, my, left + PAD, y0 + i * (rowH + 4), LIST_WIDTH, rowH)) {
                 selected = view.lines().get(i).id();
                 click(1.1f);
                 return true;
@@ -513,13 +557,9 @@ public final class SlayerScreen extends Screen {
         }
         int x = left + PAD + LIST_WIDTH + GAP + 4;
         int w = left + windowWidth - PAD - x;
-        int y = y0 + (onQuest() ? BANNER + 6 : 0) + 41;
-        int columns = Math.min(line.tiers().size(), 4);
-        int cardWidth = (w - GAP * (columns - 1)) / columns;
+        int y = tierTop();
         for (int i = 0; i < line.tiers().size(); i++) {
-            int cx = x + (i % columns) * (cardWidth + GAP);
-            int cy = y + (i / columns) * (TIER_HEIGHT + GAP);
-            if (inside(mx, my, cx, cy, cardWidth, TIER_HEIGHT)) {
+            if (inside(mx, my, x, y + i * (TIER_ROW + 2), w, TIER_ROW)) {
                 if (line.tiers().get(i).unlocked() && !onQuest()) {
                     ClientPlayNetworking.send(new SlayerPayloads.Start(line.id(), i + 1));
                     click(1.0f);

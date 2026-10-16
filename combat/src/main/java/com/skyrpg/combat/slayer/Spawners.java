@@ -123,6 +123,10 @@ public final class Spawners {
 
     static List<SlayerPayloads.SpawnerView> views(ServerPlayer player) {
         List<SlayerPayloads.SpawnerView> views = new ArrayList<>();
+        if (!com.skyrpg.core.Features.on(com.skyrpg.core.Features.SLAYER_SPAWNERS)) {
+            // No shop: the Slayer Master's screen then has no Spawners tab.
+            return views;
+        }
         for (int i = 0; i < steps.size(); i++) {
             Step step = steps.get(i);
             Step before = i == 0 ? null : steps.get(i - 1);

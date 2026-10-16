@@ -1,0 +1,394 @@
+{
+ "order": 4,
+ "name": "Voidgloom Seraph",
+ "key": "enderman",
+ "color": "#AA00AA",
+ "icon": "minecraft:ender_pearl",
+ "boss": "skyrpg_combat:void_stalker",
+ "kind": "void_stalker",
+ "counts": {
+  "minecraft:enderman": 12,
+  "minecraft:endermite": 4
+ },
+ "counts_text": "endermen",
+ "levels": [
+  10,
+  30,
+  250,
+  1500,
+  5000,
+  20000,
+  100000,
+  400000,
+  1000000
+ ],
+ "level_rewards": [
+  {
+   "stats": {
+    "health": 1.0
+   },
+   "sbxp": 15,
+   "unlocks": [
+    "Voidwalker Katana"
+   ]
+  },
+  {
+   "stats": {
+    "intelligence": 2.0
+   },
+   "sbxp": 25,
+   "unlocks": [
+    "Null Ovoid",
+    "Soulflow Pile",
+    "Lesser Soulflow Engine",
+    "Soulflow",
+    "Enchanted Book (Mana Steal I)"
+   ]
+  },
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 35,
+   "unlocks": [
+    "Soul Esoward",
+    "Voidedge Katana",
+    "Final Destination Helmet",
+    "Final Destination Chestplate",
+    "Final Destination Leggings",
+    "Final Destination Boots"
+   ]
+  },
+  {
+   "stats": {
+    "intelligence": 2.0
+   },
+   "sbxp": 50,
+   "unlocks": [
+    "Voidling Minion I",
+    "Travel Scroll to the Void Sepulture",
+    "Null Atom"
+   ]
+  },
+  {
+   "stats": {
+    "health": 3.0
+   },
+   "sbxp": 75,
+   "unlocks": [
+    "Soulflow Battery",
+    "Soulflow Engine",
+    "Vorpal Katana",
+    "Gloomlock Grimoire",
+    "Juju Shortbow",
+    "Enchanted Book (Smarty Pants I)"
+   ]
+  },
+  {
+   "stats": {
+    "intelligence": 5.0
+   },
+   "sbxp": 100,
+   "unlocks": [
+    "Gyrokinetic Wand",
+    "Aspect of the Void",
+    "Atomsplit Katana",
+    "Sinseeker Scythe",
+    "Sinful Dice"
+   ]
+  },
+  {
+   "stats": {
+    "health": 4.0
+   },
+   "sbxp": 125,
+   "unlocks": [
+    "Soulflow Supercell",
+    "Etherwarp Conduit",
+    "Ender Relic",
+    "Terminator",
+    "Void Conqueror Enderman Skin"
+   ]
+  },
+  {
+   "stats": {
+    "intelligence": 4.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  },
+  {
+   "stats": {
+    "health": 5.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  }
+ ],
+ "drops": [
+  {
+   "item": "NULL_SPHERE",
+   "level": 0,
+   "odds": "Guaranteed",
+   "tiers": {
+    "1": [
+     2,
+     3,
+     1.0
+    ],
+    "2": [
+     14,
+     24,
+     1.0
+    ],
+    "3": [
+     60,
+     80,
+     1.0
+    ],
+    "4": [
+     105,
+     155,
+     1.0
+    ]
+   }
+  },
+  {
+   "item": "TWILIGHT_ARROW_POISON",
+   "level": 0,
+   "odds": "Occasional",
+   "tiers": {
+    "2": [
+     16,
+     16,
+     0.1515
+    ],
+    "3": [
+     24,
+     32,
+     0.1341
+    ],
+    "4": [
+     60,
+     64,
+     0.127
+    ]
+   }
+  },
+  {
+   "item": "SUMMONING_EYE",
+   "level": 1,
+   "odds": "Extraordinary",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0067
+    ],
+    "3": [
+     1,
+     1,
+     0.006
+    ],
+    "4": [
+     1,
+     1,
+     0.0056
+    ]
+   }
+  },
+  {
+   "item": "TRANSMISSION_TUNER",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0223
+    ],
+    "4": [
+     1,
+     1,
+     0.0211
+    ]
+   }
+  },
+  {
+   "item": "NULL_ATOM",
+   "level": 4,
+   "odds": "Rare",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0373
+    ],
+    "4": [
+     1,
+     1,
+     0.0594
+    ]
+   }
+  },
+  {
+   "item": "HAZMAT_ENDERMAN",
+   "level": 4,
+   "odds": "",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0104
+    ],
+    "4": [
+     1,
+     1,
+     0.0155
+    ]
+   }
+  },
+  {
+   "item": "POCKET_ESPRESSO_MACHINE",
+   "level": 4,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0039
+    ]
+   }
+  },
+  {
+   "item": "HANDY_BLOOD_CHALICE",
+   "level": 5,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0018
+    ]
+   }
+  },
+  {
+   "item": "SINFUL_DICE",
+   "level": 6,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0046
+    ]
+   }
+  },
+  {
+   "item": "EXCEEDINGLY_RARE_ENDER_ARTIFACT_UPGRADER",
+   "level": 6,
+   "odds": "RNGesus Incarnate",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0003
+    ]
+   }
+  },
+  {
+   "item": "ETHERWARP_MERGER",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0042
+    ]
+   }
+  },
+  {
+   "item": "JUDGEMENT_CORE",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0006
+    ]
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "fee": 2000,
+   "xp": 2750,
+   "health": 300000.0,
+   "damage": 80.0,
+   "dps": 1200.0,
+   "level": 270,
+   "minutes": 3,
+   "slayer_xp": 5,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 50.0,
+   "requires_boss": {
+    "line": "sven_packmaster",
+    "tier": 4
+   }
+  },
+  {
+   "fee": 7500,
+   "xp": 6600,
+   "health": 12000000.0,
+   "damage": 333.33,
+   "dps": 5000.0,
+   "level": 1936,
+   "minutes": 3,
+   "slayer_xp": 25,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 100.0,
+   "requires_boss": {
+    "line": "voidgloom_seraph",
+    "tier": 1
+   }
+  },
+  {
+   "fee": 20000,
+   "xp": 11000,
+   "health": 50000000.0,
+   "damage": 800.0,
+   "dps": 12000.0,
+   "level": 4080,
+   "minutes": 4,
+   "slayer_xp": 100,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 200.0,
+   "requires_boss": {
+    "line": "voidgloom_seraph",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 50000,
+   "xp": 22000,
+   "health": 210000000.0,
+   "damage": 1400.0,
+   "dps": 21000.0,
+   "level": 8660,
+   "minutes": 4,
+   "slayer_xp": 500,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 500.0,
+   "requires_boss": {
+    "line": "voidgloom_seraph",
+    "tier": 3
+   }
+  }
+ ]
+}

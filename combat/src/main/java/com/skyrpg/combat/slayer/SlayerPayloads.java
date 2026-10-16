@@ -155,22 +155,55 @@ public final class SlayerPayloads {
                 ByteBufCodecs.VAR_INT, Unlock::level, ItemStack.STREAM_CODEC, Unlock::item, Unlock::new);
     }
 
-    /** One tier on the page: the Slayer Master's view of it plus the rewards. */
-    public record PageTier(TierView tier, int tokensMin, int tokensMax, double rareChance, double eggChance) {
-        static final StreamCodec<ByteBuf, PageTier> CODEC = StreamCodec.composite(
-                TierView.CODEC, PageTier::tier, ByteBufCodecs.VAR_INT, PageTier::tokensMin, ByteBufCodecs.VAR_INT, PageTier::tokensMax,
-                ByteBufCodecs.DOUBLE, PageTier::rareChance, ByteBufCodecs.DOUBLE, PageTier::eggChance, PageTier::new);
+    /** A boss drop on the page: the item, how many, the chance, Hypixel's odds label and the slayer level it needs. */
+    public record DropView(ItemStack item, int min, int max, double chance, String odds, int level) {
+        static final StreamCodec<RegistryFriendlyByteBuf, DropView> CODEC = StreamCodec.composite(
+                ItemStack.STREAM_CODEC, DropView::item, ByteBufCodecs.VAR_INT, DropView::min, ByteBufCodecs.VAR_INT, DropView::max,
+                ByteBufCodecs.DOUBLE, DropView::chance, ByteBufCodecs.STRING_UTF8, DropView::odds, ByteBufCodecs.VAR_INT, DropView::level,
+                DropView::new);
     }
 
-    /** One line on the page: static facts (the thresholds, level stats, unlocks, tiers). Your XP and kills come from the synced state. */
+    /** One tier on the page: the Slayer Master's view of it, the rewards and drops, and what's still missing to start it. */
+    public record PageTier(TierView tier, int tokensMin, int tokensMax, double rareChance, double eggChance, List<DropView> drops,
+                           int combatXp, String needs) {
+        static final StreamCodec<RegistryFriendlyByteBuf, PageTier> CODEC = StreamCodec.composite(
+                TierView.CODEC, PageTier::tier, ByteBufCodecs.VAR_INT, PageTier::tokensMin, ByteBufCodecs.VAR_INT, PageTier::tokensMax,
+                ByteBufCodecs.DOUBLE, PageTier::rareChance, ByteBufCodecs.DOUBLE, PageTier::eggChance,
+                DropView.CODEC.apply(ByteBufCodecs.list()), PageTier::drops, ByteBufCodecs.VAR_INT, PageTier::combatXp,
+                ByteBufCodecs.STRING_UTF8, PageTier::needs, PageTier::new);
+    }
+
+    /** A stat a slayer level gives: the stat's id and the amount. */
+    public record LevelStat(String stat, double value) {
+        static final StreamCodec<ByteBuf, LevelStat> CODEC = StreamCodec.composite(
+                ByteBufCodecs.STRING_UTF8, LevelStat::stat, ByteBufCodecs.DOUBLE, LevelStat::value, LevelStat::new);
+    }
+
+    /** What one of Hypixel's slayer levels gives: stats, SkyBlock XP, the items it unlocks (names when we have no such item). */
+    public record LevelView(List<LevelStat> stats, int sbxp, List<ItemStack> items, List<String> names) {
+        static final StreamCodec<RegistryFriendlyByteBuf, LevelView> CODEC = StreamCodec.composite(
+                LevelStat.CODEC.apply(ByteBufCodecs.list()), LevelView::stats, ByteBufCodecs.VAR_INT, LevelView::sbxp,
+                ItemStack.STREAM_CODEC.apply(ByteBufCodecs.list()), LevelView::items, ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()),
+                LevelView::names, LevelView::new);
+    }
+
+    /**
+     * One line on the page: static facts (the thresholds, level stats, unlocks, tiers). Your XP and kills come from the
+     * synced state. Hypixel's lines have a {@code key} ("zombie") and {@code levelViews}, one per level.
+     */
     public record PageLine(String id, String name, int color, ItemStack icon, String counts, List<Integer> levels, List<StatPer> perLevel,
-                           List<Unlock> unlocks, ItemStack token, ItemStack rare, List<PageTier> tiers) {
+                           List<Unlock> unlocks, ItemStack token, ItemStack rare, List<PageTier> tiers, String key, List<LevelView> levelViews) {
         static final StreamCodec<RegistryFriendlyByteBuf, PageLine> CODEC = StreamCodec.composite(
                 ByteBufCodecs.STRING_UTF8, PageLine::id, ByteBufCodecs.STRING_UTF8, PageLine::name, ByteBufCodecs.INT, PageLine::color,
                 ItemStack.OPTIONAL_STREAM_CODEC, PageLine::icon, ByteBufCodecs.STRING_UTF8, PageLine::counts,
                 ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list()), PageLine::levels, StatPer.CODEC.apply(ByteBufCodecs.list()), PageLine::perLevel,
                 Unlock.CODEC.apply(ByteBufCodecs.list()), PageLine::unlocks, ItemStack.OPTIONAL_STREAM_CODEC, PageLine::token,
-                ItemStack.OPTIONAL_STREAM_CODEC, PageLine::rare, PageTier.CODEC.apply(ByteBufCodecs.list()), PageLine::tiers, PageLine::new);
+                ItemStack.OPTIONAL_STREAM_CODEC, PageLine::rare, PageTier.CODEC.apply(ByteBufCodecs.list()), PageLine::tiers,
+                ByteBufCodecs.STRING_UTF8, PageLine::key, LevelView.CODEC.apply(ByteBufCodecs.list()), PageLine::levelViews, PageLine::new);
+
+        public boolean hypixel() {
+            return !levelViews.isEmpty();
+        }
     }
 
     public record PageData(List<PageLine> lines) implements CustomPacketPayload {

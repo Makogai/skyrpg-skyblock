@@ -10,6 +10,8 @@ import com.skyrpg.core.client.menu.MenuPage;
 import com.skyrpg.core.client.menu.PageContext;
 import com.skyrpg.core.client.ui.Draw;
 import com.skyrpg.core.client.ui.Theme;
+import com.skyrpg.core.stats.StatType;
+import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.text.Msg;
 import java.util.ArrayList;
 import java.util.List;
@@ -77,10 +79,14 @@ public final class SlayersPage implements MenuPage {
 
         double update(int max) {
             long now = Util.getMillis();
-            double dt = Math.min(0.1, (now - last) / 1000.0);
+            double dt = Mth.clamp((now - last) / 1000.0, 0, 0.1);
             last = now;
-            target = Mth.clamp(target, 0, Math.max(0, max));
+            target = Double.isFinite(target) ? Mth.clamp(target, 0, Math.max(0, max)) : 0;
             pos += (target - pos) * (1 - Math.exp(-dt * 16));
+            // A bad frame (a NaN once left the page stuck at the top) snaps to where the wheel sent it.
+            if (!Double.isFinite(pos)) {
+                pos = target;
+            }
             if (Math.abs(target - pos) < 0.3) {
                 pos = target;
             }
@@ -219,8 +225,12 @@ public final class SlayersPage implements MenuPage {
             }
             totalTokens += state.tokens(line.id());
         }
-        Draw.text(g, font, "Slay the bosses that rise from each kind of mob", x + 2, cy + 1, Theme.MUTED);
-        Draw.rightText(g, font, Msg.number(totalKills) + " bosses slain  |  " + Msg.number(totalTokens) + " tokens", x + w - 2, cy + 1, Theme.DIM);
+        boolean tokens = data.stream().anyMatch(line -> !line.token().isEmpty());
+        boolean hypixel = data.stream().anyMatch(SlayerPayloads.PageLine::hypixel);
+        String count = Msg.number(totalKills) + (totalKills == 1 ? " boss slain" : " bosses slain") + (tokens ? "  |  " + Msg.number(totalTokens) + " tokens" : "");
+        Draw.rightText(g, font, count, x + w - 2, cy + 1, Theme.DIM);
+        Draw.fitText(g, font, hypixel ? "Slay bosses to level up and unlock their gear" : "Slay the bosses that rise from each kind of mob",
+                x + 2, cy + 1, w - font.width(count) - 14, Theme.MUTED);
         cy += 14;
 
         int cols = w >= 330 ? 2 : 1;
@@ -265,12 +275,8 @@ public final class SlayersPage implements MenuPage {
 
         int tx = x + box + 13;
         int room = w - (tx - x) - 6;
-        Draw.fitText(g, font, line.name(), tx, y + 7, room - 40, color);
-        String levelText = level >= max ? "MAX" : "Lv " + level;
-        int pillW = font.width(levelText) + 8;
-        Draw.rounded(g, x + w - 6 - pillW, y + 6, pillW, 11, Draw.withAlpha(color, 0.25f));
-        Draw.text(g, font, levelText, x + w - 6 - pillW + 4, y + 8, level >= max ? Theme.ACCENT : Theme.TEXT);
-        Draw.text(g, font, "Slayer level " + level + " / " + max, tx, y + 19, Theme.MUTED);
+        Draw.fitText(g, font, line.name(), tx, y + 7, room, color);
+        Draw.text(g, font, "Slayer level " + level + " / " + max + (level >= max ? "  (max)" : ""), tx, y + 19, level >= max ? Theme.ACCENT : Theme.MUTED);
         // XP bar
         int next = nextThreshold(line, xp);
         int prev = level == 0 ? 0 : line.levels().get(level - 1);
@@ -414,6 +420,9 @@ public final class SlayersPage implements MenuPage {
 
     /** The level rows. Returns the y after the last one. */
     private int drawTrack(PageContext ctx, SlayerPayloads.PageLine line, int level, double xp, int y) {
+        if (line.hypixel()) {
+            return drawHypixelTrack(ctx, line, level, y);
+        }
         GuiGraphicsExtractor g = ctx.graphics();
         Font font = ctx.font();
         int color = line.color();
@@ -475,6 +484,82 @@ public final class SlayersPage implements MenuPage {
         return y;
     }
 
+    /** Hypixel's levels: each one's stats, SkyBlock XP and the gear it lets you craft. */
+    private int drawHypixelTrack(PageContext ctx, SlayerPayloads.PageLine line, int level, int y) {
+        GuiGraphicsExtractor g = ctx.graphics();
+        Font font = ctx.font();
+        int color = line.color();
+        int max = line.levels().size();
+        int perRow = Math.max(1, (trackW - 26) / 18);
+        boolean areaHover = ctx.hovered(trackX, trackY, trackW, trackH);
+        for (int lv = 1; lv <= max; lv++) {
+            SlayerPayloads.LevelView view = lv <= line.levelViews().size() ? line.levelViews().get(lv - 1) : null;
+            List<Component> texts = new ArrayList<>();
+            List<ItemStack> items = view == null ? List.of() : view.items();
+            if (view != null) {
+                for (SlayerPayloads.LevelStat s : view.stats()) {
+                    StatType type = StatTypes.get(s.stat());
+                    if (type != null) {
+                        texts.add(Component.literal(type.formatBonus(s.value()) + " " + type.symbol() + " " + type.name()).withColor(type.color()));
+                    }
+                }
+                if (view.sbxp() > 0) {
+                    texts.add(Component.literal("+" + view.sbxp() + " SkyBlock XP").withColor(0xFF55FFFF));
+                }
+                for (String name : view.names()) {
+                    texts.add(Component.literal("Unlocks " + name).withColor(Theme.MUTED));
+                }
+            }
+            boolean unlocked = level >= lv;
+            int itemRows = (items.size() + perRow - 1) / perRow;
+            int rowH = 12 + texts.size() * 10 + (items.isEmpty() ? 0 : itemRows * 18 + 2) + 4;
+            int nodeX = trackX + 3;
+            if (lv < max) {
+                g.fill(nodeX + 4, y + 11, nodeX + 5, y + rowH + 2, level > lv ? color : Theme.BORDER);
+            }
+            Draw.rounded(g, nodeX, y + 1, 9, 9, unlocked ? color : Theme.TRACK);
+            if (unlocked) {
+                drawCheck(g, nodeX + 1, y + 2);
+            } else {
+                Draw.outline(g, nodeX, y + 1, 9, 9, Theme.BORDER);
+            }
+            int tx = trackX + 17;
+            int room = trackW - 17 - 4;
+            Draw.text(g, font, "Level " + lv, tx, y + 1, unlocked ? Theme.TEXT : Theme.DIM);
+            String right = unlocked ? "Unlocked" : Msg.number(line.levels().get(lv - 1)) + " XP";
+            if (room > font.width("Level " + lv) + font.width(right) + 6) {
+                Draw.rightText(g, font, right, tx + room, y + 1, unlocked ? Theme.GREEN : Theme.DIM);
+            }
+            int ry = y + 12;
+            for (Component text : texts) {
+                Draw.fitText(g, font, text.getString(), tx, ry, room,
+                        unlocked ? text.getStyle().getColor() == null ? Theme.TEXT : text.getStyle().getColor().getValue() | 0xFF000000 : Theme.DIM);
+                ry += 10;
+            }
+            for (int i = 0; i < items.size(); i++) {
+                int ix = tx + (i % perRow) * 18;
+                int iy = ry + 1 + (i / perRow) * 18;
+                ItemStack stack = items.get(i);
+                Draw.rounded(g, ix - 1, iy - 1, 18, 18, unlocked ? Draw.withAlpha(color, 0.2f) : Theme.TRACK);
+                g.item(stack, ix, iy);
+                if (!unlocked) {
+                    g.nextStratum();
+                    g.fill(ix - 1, iy - 1, ix + 17, iy + 17, 0xA0121620);
+                }
+                if (areaHover && ctx.hovered(ix, iy, 16, 16)) {
+                    g.requestCursor(CursorTypes.POINTING_HAND);
+                    List<Component> tip = new ArrayList<>(itemTooltip(ctx, stack));
+                    tip.add(Component.empty());
+                    tip.add(unlocked ? Component.literal("Unlocked: craft it from the Recipe Book").withColor(Theme.GREEN)
+                            : Component.literal("Reach " + line.name() + " Slayer " + lv + " to craft it").withColor(Theme.RED));
+                    ctx.tooltip(tip, color);
+                }
+            }
+            y += rowH;
+        }
+        return y;
+    }
+
     private static void drawCheck(GuiGraphicsExtractor g, int x, int y) {
         int white = 0xFF101418;
         g.fill(x + 1, y + 3, x + 2, y + 4, white);
@@ -491,7 +576,8 @@ public final class SlayersPage implements MenuPage {
         Font font = ctx.font();
         int color = line.color();
         int tiers = line.tiers().size();
-        int rows = 1 + tiers + 3;
+        boolean tokens = !line.token().isEmpty();
+        int rows = 1 + tiers + (tokens ? 3 : 2);
         int h = 8 + 12 + rows * 11 + 4;
         Draw.panel(g, infoX, y, infoW, h, Theme.CARD, Draw.mix(Theme.CARD_BORDER, color, 0.3f));
         Draw.text(g, font, "Your stats", infoX + 6, y + 5, color);
@@ -513,8 +599,10 @@ public final class SlayersPage implements MenuPage {
         }
         statRow(g, font, "Total slayer XP", Msg.number(Math.floor(xp)), left, right, ry, Theme.TEXT);
         ry += 11;
-        statRow(g, font, "Boss tokens earned", Msg.number(state.tokens(line.id())), left, right, ry, Theme.TEXT);
-        ry += 11;
+        if (tokens) {
+            statRow(g, font, "Boss tokens earned", Msg.number(state.tokens(line.id())), left, right, ry, Theme.TEXT);
+            ry += 11;
+        }
         String bonus = bonusText(line, level);
         statRow(g, font, "Level bonus", bonus.isEmpty() ? "none yet" : bonus, left, right, ry, bonus.isEmpty() ? Theme.DIM : Theme.GREEN);
         return y + h;
@@ -532,14 +620,17 @@ public final class SlayersPage implements MenuPage {
         int color = line.color();
         SlayerPayloads.PageTier pt = line.tiers().get(tierNo - 1);
         SlayerPayloads.TierView tier = pt.tier();
-        boolean open = level >= tier.requires();
+        boolean open = line.hypixel() ? tier.unlocked() : level >= tier.requires();
         int inner = infoW - 12;
         List<Row> rows = tierRows(ctx, line, pt, tierNo, level, inner);
         int rowsH = 0;
         for (Row row : rows) {
             rowsH += row.height();
         }
-        int h = 6 + 16 + 3 + rowsH + 5;
+        int perRow = Math.max(1, (inner + 2) / 20);
+        int dropRows = (pt.drops().size() + perRow - 1) / perRow;
+        int dropsH = pt.drops().isEmpty() ? 0 : 4 + 11 + dropRows * 20;
+        int h = 6 + 16 + 3 + rowsH + dropsH + 5;
         boolean areaHover = ctx.hovered(infoX, infoY, infoW, infoH);
         Draw.panel(g, infoX, y, infoW, h, open ? Theme.CARD : Draw.mix(Theme.CARD, Theme.TRACK, 0.4f),
                 Draw.mix(Theme.CARD_BORDER, color, open ? 0.35f : 0.12f));
@@ -566,7 +657,51 @@ public final class SlayersPage implements MenuPage {
             }
             ry += row.height();
         }
+        if (!pt.drops().isEmpty()) {
+            drawDrops(ctx, line, pt, level, infoX + 6, ry + 4, perRow, areaHover);
+        }
         return y + h;
+    }
+
+    /** A tier's drops as item slots: the most it can drop on the slot, the chance and level needed in the tooltip. */
+    private void drawDrops(PageContext ctx, SlayerPayloads.PageLine line, SlayerPayloads.PageTier pt, int level, int x, int y, int perRow,
+                           boolean areaHover) {
+        GuiGraphicsExtractor g = ctx.graphics();
+        Font font = ctx.font();
+        Draw.text(g, font, "Drops", x, y, Theme.MUTED);
+        int top = y + 11;
+        List<SlayerPayloads.DropView> drops = pt.drops();
+        for (int i = 0; i < drops.size(); i++) {
+            SlayerPayloads.DropView drop = drops.get(i);
+            int sx = x + (i % perRow) * 20;
+            int sy = top + (i / perRow) * 20;
+            boolean allowed = level >= drop.level();
+            int odds = Slayers.oddsColor(drop.odds());
+            Draw.rounded(g, sx, sy, 18, 18, Draw.mix(Theme.TRACK, odds, allowed ? 0.28f : 0.08f));
+            g.fill(sx + 1, sy + 17, sx + 17, sy + 18, Draw.withAlpha(odds, allowed ? 0.9f : 0.3f));
+            g.item(drop.item(), sx + 1, sy + 1);
+            g.itemDecorations(font, drop.item(), sx + 1, sy + 1, drop.max() > 1 ? String.valueOf(drop.max()) : null);
+            if (!allowed) {
+                g.nextStratum();
+                g.fill(sx, sy, sx + 18, sy + 18, 0xA0121620);
+            }
+            if (areaHover && ctx.hovered(sx, sy, 18, 18)) {
+                g.requestCursor(CursorTypes.POINTING_HAND);
+                List<Component> tip = new ArrayList<>(itemTooltip(ctx, drop.item()));
+                tip.add(Component.empty());
+                tip.add(Component.literal("Amount: ").withColor(Theme.MUTED)
+                        .append(Component.literal(drop.min() == drop.max() ? String.valueOf(drop.min()) : drop.min() + "-" + drop.max()).withColor(Theme.TEXT)));
+                tip.add(Component.literal("Odds: ").withColor(Theme.MUTED).append(Component.literal(drop.odds()).withColor(odds))
+                        .append(Component.literal(" (" + chance(drop.chance()) + ")").withColor(Theme.DIM)));
+                if (drop.level() > 0) {
+                    tip.add(Component.literal("Needs " + line.name() + " Slayer " + drop.level()).withColor(allowed ? Theme.GREEN : Theme.RED));
+                }
+                if (drop.chance() < 0.05) {
+                    tip.add(Component.literal("Magic Find raises the chance").withColor(Theme.DIM));
+                }
+                ctx.tooltip(tip, odds);
+            }
+        }
     }
 
     private void iconWithTip(PageContext ctx, ItemStack stack, int x, int y, boolean areaHover, int color, String extra) {
@@ -587,11 +722,19 @@ public final class SlayersPage implements MenuPage {
         wrap(font, rows, Component.literal("Boss: " + Msg.number(tier.bossHealth()) + " HP, level " + tier.bossLevel() + ", " + tier.minutes() + " min to kill it"),
                 width, 0, Theme.TEXT);
         boolean ok = level >= tier.requires();
-        Component cost = Component.literal("Cost: " + Msg.number(tier.fee()) + " coins").withColor(Theme.ACCENT)
-                .append(Component.literal(tier.requires() <= 0 ? "" : "   Needs Slayer " + tier.requires()).withColor(ok ? Theme.GREEN : Theme.RED));
+        Component cost = Component.literal("Cost: " + Msg.number(tier.fee()) + " coins").withColor(Theme.ACCENT);
+        if (line.hypixel()) {
+            cost = cost.copy().append(Component.literal(pt.needs().isEmpty() ? "" : "   Needs " + pt.needs()).withColor(Theme.RED));
+        } else {
+            cost = cost.copy().append(Component.literal(tier.requires() <= 0 ? "" : "   Needs Slayer " + tier.requires()).withColor(ok ? Theme.GREEN : Theme.RED));
+        }
         wrap(font, rows, cost, width, 0, Theme.TEXT);
-        wrap(font, rows, Component.literal("Summoned after " + Msg.number(tier.xp()) + " kill points of " + line.counts()), width, 0, Theme.MUTED);
+        wrap(font, rows, Component.literal(line.hypixel() ? "Summoned after " + Msg.number(tier.xp()) + " Combat XP from " + line.counts()
+                : "Summoned after " + Msg.number(tier.xp()) + " kill points of " + line.counts()), width, 0, Theme.MUTED);
         StringBuilder rewards = new StringBuilder("Rewards: " + Msg.number(tier.slayerXp()) + " Slayer XP");
+        if (line.hypixel()) {
+            rewards.append(", ").append(Msg.number(pt.combatXp())).append(" Combat XP");
+        }
         if (pt.tokensMax() > 0 && !line.token().isEmpty()) {
             rewards.append(", ").append(pt.tokensMin() == pt.tokensMax() ? String.valueOf(pt.tokensMin()) : pt.tokensMin() + "-" + pt.tokensMax())
                     .append("x ").append(line.token().getHoverName().getString());
@@ -671,7 +814,7 @@ public final class SlayersPage implements MenuPage {
         }
     }
 
-    private static int level(SlayerPayloads.PageLine line, double xp) {
+    static int level(SlayerPayloads.PageLine line, double xp) {
         int level = 0;
         for (int threshold : line.levels()) {
             if (xp >= threshold) {
@@ -707,6 +850,20 @@ public final class SlayersPage implements MenuPage {
     private static String bonusText(SlayerPayloads.PageLine line, int level) {
         if (level <= 0) {
             return "";
+        }
+        if (line.hypixel()) {
+            java.util.Map<String, Double> total = new java.util.LinkedHashMap<>();
+            for (int i = 0; i < Math.min(level, line.levelViews().size()); i++) {
+                line.levelViews().get(i).stats().forEach(s -> total.merge(s.stat(), s.value(), Double::sum));
+            }
+            List<String> parts = new ArrayList<>();
+            total.forEach((stat, value) -> {
+                StatType type = StatTypes.get(stat);
+                if (type != null) {
+                    parts.add(type.formatBonus(value) + " " + type.name());
+                }
+            });
+            return String.join(", ", parts);
         }
         List<String> parts = new ArrayList<>();
         for (SlayerPayloads.StatPer s : line.perLevel()) {

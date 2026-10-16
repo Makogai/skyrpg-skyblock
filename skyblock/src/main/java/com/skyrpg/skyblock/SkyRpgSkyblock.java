@@ -44,6 +44,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         Features.off(Features.QUESTS);
         Features.off(Features.ARTISAN_BENCH);
         Features.off(Features.SURVIVAL_LEVEL);
+        Features.off(Features.SLAYER_SPAWNERS);
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();

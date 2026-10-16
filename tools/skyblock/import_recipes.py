@@ -72,6 +72,12 @@ def requirement(text, by_collection):
     return {"text": text.strip()}
 
 
+def slayer_requirement(req):
+    """NEU's "ZOMBIE_3": Zombie Slayer 3, for recipes whose crafttext doesn't say it."""
+    m = re.match(r"([A-Z]+)_(\d+)$", req or "")
+    return {"slayer": m.group(1).lower(), "level": int(m.group(2))} if m else None
+
+
 def hypixel_id(neu_id, known):
     """NEU writes damage-value items with a '-' ("INK_SACK-4"), Hypixel with a ':' ("INK_SACK:4")."""
     colon = neu_id.replace("-", ":")
@@ -119,7 +125,8 @@ def main():
         for recipe in item.get("recipes", []):
             if recipe.get("type") == "crafting":
                 grids.append((recipe, recipe.get("count", 1)))
-        req = requirement(item.get("crafttext", ""), by_collection) or unlocked_by.get(output)
+        req = requirement(item.get("crafttext", ""), by_collection) or slayer_requirement(item.get("slayer_req", "")) \
+            or unlocked_by.get(output)
         for index, (grid, count) in enumerate(grids):
             cells = [cell_of(grid.get(cell, "") or "", known) for cell in CELLS]
             if any(cell is None for cell in cells):

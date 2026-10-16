@@ -3,8 +3,8 @@ package com.skyrpg.combat.slayer;
 import com.skyrpg.combat.MobLevels;
 import com.skyrpg.combat.SkyRpgCombat;
 import com.skyrpg.combat.slayer.boss.BoneMarshalEntity;
-import com.skyrpg.combat.slayer.boss.TieredBoss;
 import com.skyrpg.combat.slayer.boss.GraveTyrantEntity;
+import com.skyrpg.combat.slayer.boss.TieredBoss;
 import com.skyrpg.core.stats.IncomingDamage;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.text.Msg;
@@ -230,7 +230,7 @@ public final class SlayerBosses {
     }
 
     private static boolean canFight(ServerPlayer owner) {
-        return owner.isAlive() && !owner.isSpectator() && !owner.level().dimension().identifier().getNamespace().equals("skyrpg_hub");
+        return owner.isAlive() && !owner.isSpectator() && com.skyrpg.core.combat.FightAreas.allowed(owner);
     }
 
     // ---------------------------------------------------------------- spawning
@@ -249,7 +249,8 @@ public final class SlayerBosses {
         set(boss, Attributes.MAX_HEALTH, Math.min(1024, health));
         multiply(boss, Attributes.ATTACK_DAMAGE, tier.damage());
         // Each tier is visibly bigger than the last.
-        set(boss, Attributes.SCALE, scale(line.kind()) * (0.88 + 0.12 * tierNumber));
+        // Hypixel's bosses are their mob's size; the survival ones grow tier by tier.
+        set(boss, Attributes.SCALE, line.hypixel() ? 1.0 : scale(line.kind()) * (0.88 + 0.12 * tierNumber));
         multiply(boss, Attributes.MOVEMENT_SPEED, 1.1);
         // Bone Plating: the Bone Marshal can't be knocked back at all.
         set(boss, Attributes.KNOCKBACK_RESISTANCE, line.kind().equals("bone_marshal") ? 1 : Math.min(1, 0.5 + 0.12 * tierNumber));
@@ -264,6 +265,17 @@ public final class SlayerBosses {
         boss.setPersistenceRequired();
         if (boss instanceof TieredBoss tiered) {
             tiered.setTier(tierNumber);
+        }
+        if (boss instanceof GraveTyrantEntity revenant) {
+            // The Revenant Horror's look: a zombie in diamond armour.
+            for (EquipmentSlot slot : new EquipmentSlot[] {EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}) {
+                revenant.setItemSlot(slot, new ItemStack(switch (slot) {
+                    case CHEST -> Items.DIAMOND_CHESTPLATE;
+                    case LEGS -> Items.DIAMOND_LEGGINGS;
+                    default -> Items.DIAMOND_BOOTS;
+                }));
+                revenant.setDropChance(slot, 0);
+            }
         }
         if (boss instanceof BoneMarshalEntity marshal) {
             marshal.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));
@@ -329,6 +341,7 @@ public final class SlayerBosses {
             case "grave_tyrant" -> BossEvent.BossBarColor.GREEN;
             case "broodmother" -> BossEvent.BossBarColor.RED;
             case "bone_marshal" -> BossEvent.BossBarColor.WHITE;
+            case "sven" -> BossEvent.BossBarColor.WHITE;
             case "void_stalker" -> BossEvent.BossBarColor.PURPLE;
             default -> BossEvent.BossBarColor.RED;
         };

@@ -1,0 +1,439 @@
+{
+ "order": 1,
+ "name": "Revenant Horror",
+ "key": "zombie",
+ "color": "#55FF55",
+ "icon": "minecraft:rotten_flesh",
+ "boss": "skyrpg_combat:grave_tyrant",
+ "kind": "grave_tyrant",
+ "counts": {
+  "minecraft:zombie": 6,
+  "minecraft:husk": 6,
+  "minecraft:drowned": 6,
+  "minecraft:zombie_villager": 6,
+  "minecraft:zombified_piglin": 8
+ },
+ "counts_text": "zombies",
+ "levels": [
+  5,
+  15,
+  200,
+  1000,
+  5000,
+  20000,
+  100000,
+  400000,
+  1000000
+ ],
+ "level_rewards": [
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 15,
+   "unlocks": [
+    "Wand of Healing"
+   ]
+  },
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 25,
+   "unlocks": [
+    "Zombie Ring",
+    "Revenant Viscera",
+    "Pestilence Rune I"
+   ]
+  },
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 35,
+   "unlocks": [
+    "Revenant Falchion",
+    "Wand of Mending",
+    "Crystallized Heart",
+    "Undead Catalyst"
+   ]
+  },
+  {
+   "stats": {
+    "health": 3.0
+   },
+   "sbxp": 50,
+   "unlocks": [
+    "Revenant Leggings",
+    "Revenant Boots",
+    "Travel Scroll to Hub Crypts",
+    "Enchanted Book (Smite VI)"
+   ]
+  },
+  {
+   "stats": {
+    "health": 3.0
+   },
+   "sbxp": 75,
+   "unlocks": [
+    "Revenant Minion",
+    "Devour Ring",
+    "Revenant Chestplate",
+    "Voodoo Doll",
+    "Small Slayer Sack",
+    "Beheaded Horror"
+   ]
+  },
+  {
+   "stats": {
+    "health": 4.0
+   },
+   "sbxp": 100,
+   "unlocks": [
+    "Wand of Restoration",
+    "Revived Heart",
+    "Reaper Falchion",
+    "Revenant Catalyst"
+   ]
+  },
+  {
+   "stats": {
+    "health": 4.0
+   },
+   "sbxp": 125,
+   "unlocks": [
+    "Zombie Artifact",
+    "Reaper Mask",
+    "Reaper Scythe",
+    "Wand of Atonement",
+    "Reaper Chestplate",
+    "Reaper Leggings"
+   ]
+  },
+  {
+   "stats": {
+    "health": 5.0
+   },
+   "sbxp": 150,
+   "unlocks": [
+    "Reaper Orb",
+    "Axe of the Shredded",
+    "Warden Helmet"
+   ]
+  },
+  {
+   "stats": {
+    "health": 6.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  }
+ ],
+ "drops": [
+  {
+   "item": "REVENANT_FLESH",
+   "level": 1,
+   "odds": "Guaranteed",
+   "tiers": {
+    "1": [
+     1,
+     3,
+     1.0
+    ],
+    "2": [
+     9,
+     18,
+     1.0
+    ],
+    "3": [
+     30,
+     50,
+     1.0
+    ],
+    "4": [
+     50,
+     64,
+     1.0
+    ],
+    "5": [
+     63,
+     64,
+     1.0
+    ]
+   }
+  },
+  {
+   "item": "FOUL_FLESH",
+   "level": 1,
+   "odds": "Occasional",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.1616
+    ],
+    "3": [
+     1,
+     2,
+     0.1608
+    ],
+    "4": [
+     2,
+     3,
+     0.1622
+    ],
+    "5": [
+     3,
+     4,
+     0.1377
+    ]
+   }
+  },
+  {
+   "item": "UNDEAD_CATALYST",
+   "level": 3,
+   "odds": "Extraordinary",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0202
+    ],
+    "3": [
+     1,
+     1,
+     0.0201
+    ],
+    "4": [
+     1,
+     1,
+     0.006
+    ],
+    "5": [
+     1,
+     1,
+     0.0169
+    ]
+   }
+  },
+  {
+   "item": "SEVERED_HAND",
+   "level": 4,
+   "odds": "Extraordinary",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.004
+    ],
+    "4": [
+     1,
+     1,
+     0.0081
+    ],
+    "5": [
+     1,
+     1,
+     0.0069
+    ]
+   }
+  },
+  {
+   "item": "BEHEADED_HORROR",
+   "level": 5,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0008
+    ],
+    "4": [
+     1,
+     1,
+     0.0016
+    ],
+    "5": [
+     1,
+     1,
+     0.0014
+    ]
+   }
+  },
+  {
+   "item": "REVENANT_CATALYST",
+   "level": 6,
+   "odds": "Extraordinary",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0101
+    ],
+    "3": [
+     1,
+     1,
+     0.0101
+    ],
+    "4": [
+     1,
+     1,
+     0.0101
+    ],
+    "5": [
+     1,
+     1,
+     0.0086
+    ]
+   }
+  },
+  {
+   "item": "SCYTHE_BLADE",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0006
+    ],
+    "5": [
+     1,
+     1,
+     0.001
+    ]
+   }
+  },
+  {
+   "item": "REVENANT_VISCERA",
+   "level": 7,
+   "odds": "Occasional",
+   "tiers": {
+    "5": [
+     1,
+     2,
+     0.1377
+    ]
+   }
+  },
+  {
+   "item": "SEVERED_HAND",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.0005
+    ]
+   }
+  },
+  {
+   "item": "SHARD_OF_THE_SHREDDED",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.0006
+    ]
+   }
+  },
+  {
+   "item": "WARDEN_HEART",
+   "level": 7,
+   "odds": "RNGesus Incarnate",
+   "tiers": {
+    "5": [
+     1,
+     1,
+     0.0001
+    ]
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "fee": 2000,
+   "xp": 150,
+   "health": 500.0,
+   "damage": 1.0,
+   "dps": 15.0,
+   "level": 10,
+   "minutes": 3,
+   "slayer_xp": 5,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 50.0
+  },
+  {
+   "fee": 7500,
+   "xp": 1440,
+   "health": 20000.0,
+   "damage": 1.67,
+   "dps": 25.0,
+   "level": 70,
+   "minutes": 3,
+   "slayer_xp": 25,
+   "requires": 0,
+   "combat_level": 5,
+   "combat_xp": 100.0,
+   "requires_boss": {
+    "line": "revenant_horror",
+    "tier": 1
+   }
+  },
+  {
+   "fee": 20000,
+   "xp": 2400,
+   "health": 400000.0,
+   "damage": 8.0,
+   "dps": 120.0,
+   "level": 310,
+   "minutes": 4,
+   "slayer_xp": 100,
+   "requires": 0,
+   "combat_level": 10,
+   "combat_xp": 200.0,
+   "requires_boss": {
+    "line": "revenant_horror",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 50000,
+   "xp": 4800,
+   "health": 1500000.0,
+   "damage": 26.67,
+   "dps": 400.0,
+   "level": 610,
+   "minutes": 4,
+   "slayer_xp": 500,
+   "requires": 0,
+   "combat_level": 15,
+   "combat_xp": 500.0,
+   "requires_boss": {
+    "line": "revenant_horror",
+    "tier": 3
+   }
+  },
+  {
+   "fee": 100000,
+   "xp": 6000,
+   "health": 10000000.0,
+   "damage": 160.0,
+   "dps": 2400.0,
+   "level": 1580,
+   "minutes": 4,
+   "slayer_xp": 1500,
+   "requires": 0,
+   "combat_level": 25,
+   "combat_xp": 2000.0,
+   "requires_boss": {
+    "line": "revenant_horror",
+    "tier": 4
+   }
+  }
+ ]
+}

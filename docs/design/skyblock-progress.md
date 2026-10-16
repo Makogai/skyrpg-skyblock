@@ -112,7 +112,22 @@ phase so the next session can pick up where this one stopped.
       auctions, 6 categories by item type, search / sort / BIN filter / pages, outbid refunds (straight back or to
       collect), Manage with collect and Collect all, sold / won / expired messages. `/ah` and a SkyBlock Menu tile
       until there's an Auction Master NPC. Not yet: pets and their own category, "Bids" history.
-- [ ] Slayers: Revenant, Tarantula, Sven.
+- [x] **Slayers 1:1** (`tools/skyblock/import_slayers.py`, from the fandom wiki's boss and slayer pages plus NEU's
+      slayer XP): Revenant Horror (5 tiers), Tarantula Broodfather (5), Sven Packmaster (4), Voidgloom Seraph (4) replace
+      the survival lines. Hypixel's costs, health, damage, levels, Combat XP to summon (the bar fills with each kill's
+      Combat XP), requirements (Combat level, the previous tier or the previous boss slain), drops with amounts, chances,
+      odds labels and the slayer level each needs, and the 9 levels' stats, SkyBlock XP and unlocks. Maddox the Slayer in
+      the Hub (the survival Slayer Master's spot). One SLAYER QUEST COMPLETE panel per kill; drop rolls count this kill's
+      slayer XP (a first T1 kill reaches level 1, which Revenant Flesh needs); Magic Find raises drops under 5%; RARE /
+      VERY RARE / CRAZY RARE DROP banners by odds, RNGesus Incarnate announced to everyone. Bosses only rise in a zone
+      with mobs or out in the world (core `FightAreas`, installed by `Zones`), never on islands. Sven is a new wolf
+      boss (`SvenEntity`). Slayer-locked recipes (140, from NEU's `crafttext` and `slayer_req`) check the level through
+      core `SlayerLevels` (server: loaded lines; client: the page data, sent on join too). Slayers page: Hypixel's
+      level track (each level's stats, SkyBlock XP, unlocked items), tier cards with Beginner..Excruciating titles, what
+      a locked tier needs, and the drop table as item slots (odds colour, amount, chance, level in the tooltip).
+      Not yet: Hypixel's boss abilities (the bosses still use SkyRPG's tricks: Grave Slam, Web Shot, Void Bolt and Null
+      Shield; Sven has none), T5 Revenant / Tarantula abilities, runes, enchanted books and dyes in the drops (not in
+      our item set), Maddox's Batphone, the Slayer RNG meter, Aatrox's slayer perks, Inferno Demonlord and Riftstalker.
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
       every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the
       level-up panel; the Wardrobe opens at level 5. SkyBlock Leveling page (`SkyBlockLevelingPage`, `/sblevel` through

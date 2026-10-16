@@ -1,1 +1,1 @@
-{"output": "SOULFLOW", "count": 1, "grid": ["", "RAW_SOULFLOW:32", "", "RAW_SOULFLOW:32", "RAW_SOULFLOW:32", "RAW_SOULFLOW:32", "", "RAW_SOULFLOW:32", ""]}
+{"output": "SOULFLOW", "count": 1, "grid": ["", "RAW_SOULFLOW:32", "", "RAW_SOULFLOW:32", "RAW_SOULFLOW:32", "RAW_SOULFLOW:32", "", "RAW_SOULFLOW:32", ""], "requires": {"slayer": "eman", "level": 2}}

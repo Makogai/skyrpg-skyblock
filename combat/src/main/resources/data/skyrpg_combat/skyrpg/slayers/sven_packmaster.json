@@ -1,0 +1,305 @@
+{
+ "order": 3,
+ "name": "Sven Packmaster",
+ "key": "wolf",
+ "color": "#FFFFFF",
+ "icon": "minecraft:mutton",
+ "boss": "skyrpg_combat:sven_packmaster",
+ "kind": "sven",
+ "counts": {
+  "minecraft:wolf": 10
+ },
+ "counts_text": "wolves",
+ "levels": [
+  10,
+  30,
+  250,
+  1500,
+  5000,
+  20000,
+  100000,
+  400000,
+  1000000
+ ],
+ "level_rewards": [
+  {
+   "stats": {
+    "speed": 1.0
+   },
+   "sbxp": 15,
+   "unlocks": [
+    "Red Claw Talisman"
+   ]
+  },
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 25,
+   "unlocks": [
+    "Radiant Power Orb",
+    "Golden Tooth",
+    "Spirit Rune I"
+   ]
+  },
+  {
+   "stats": {
+    "speed": 1.0
+   },
+   "sbxp": 35,
+   "unlocks": [
+    "Maddox Batphone",
+    "Shaman Sword"
+   ]
+  },
+  {
+   "stats": {
+    "health": 2.0
+   },
+   "sbxp": 50,
+   "unlocks": [
+    "Mastiff Crown",
+    "Mastiff Chestplate",
+    "Mastiff Leggings",
+    "Mastiff Boots",
+    "Enchanted Book (Critical VI)"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 1.0
+   },
+   "sbxp": 75,
+   "unlocks": [
+    "Red Claw Ring",
+    "Edible Mace",
+    "Weird Tuba",
+    "Red Claw Artifact",
+    "Weirder Tuba",
+    "Red Claw Egg"
+   ]
+  },
+  {
+   "stats": {
+    "health": 3.0
+   },
+   "sbxp": 100,
+   "unlocks": [
+    "Mana Flux Power Orb",
+    "Pooch Sword",
+    "Helmet of the Pack",
+    "Chestplate of the Pack",
+    "Leggings of the Pack",
+    "Boots of the Pack"
+   ]
+  },
+  {
+   "stats": {
+    "crit_damage": 2.0
+   },
+   "sbxp": 125,
+   "unlocks": [
+    "Hunter Talisman",
+    "Overflux Power Orb",
+    "Large Slayer Sack",
+    "Overflux Capacitor"
+   ]
+  },
+  {
+   "stats": {
+    "speed": 1.0
+   },
+   "sbxp": 150,
+   "unlocks": [
+    "Hunter Ring",
+    "Plasmaflux Power Orb"
+   ]
+  },
+  {
+   "stats": {
+    "health": 5.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  }
+ ],
+ "drops": [
+  {
+   "item": "WOLF_TOOTH",
+   "level": 1,
+   "odds": "Guaranteed",
+   "tiers": {
+    "1": [
+     1,
+     3,
+     1.0
+    ],
+    "2": [
+     9,
+     18,
+     1.0
+    ],
+    "3": [
+     30,
+     50,
+     1.0
+    ],
+    "4": [
+     50,
+     64,
+     1.0
+    ]
+   }
+  },
+  {
+   "item": "HAMSTER_WHEEL",
+   "level": 1,
+   "odds": "Occasional",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.1667
+    ],
+    "3": [
+     2,
+     4,
+     0.1645
+    ],
+    "4": [
+     4,
+     5,
+     0.1635
+    ]
+   }
+  },
+  {
+   "item": "FURBALL",
+   "level": 4,
+   "odds": "Extraordinary",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0082
+    ],
+    "4": [
+     1,
+     1,
+     0.0162
+    ]
+   }
+  },
+  {
+   "item": "RED_CLAW_EGG",
+   "level": 5,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0004
+    ],
+    "4": [
+     1,
+     1,
+     0.0012
+    ]
+   }
+  },
+  {
+   "item": "GRIZZLY_BAIT",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0006
+    ]
+   }
+  },
+  {
+   "item": "OVERFLUX_CAPACITOR",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0004
+    ]
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "fee": 2000,
+   "xp": 250,
+   "health": 2000.0,
+   "damage": 4.0,
+   "dps": 60.0,
+   "level": 20,
+   "minutes": 3,
+   "slayer_xp": 5,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 50.0,
+   "requires_boss": {
+    "line": "tarantula_broodfather",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 7500,
+   "xp": 650,
+   "health": 40000.0,
+   "damage": 5.33,
+   "dps": 80.0,
+   "level": 100,
+   "minutes": 3,
+   "slayer_xp": 25,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 100.0,
+   "requires_boss": {
+    "line": "sven_packmaster",
+    "tier": 1
+   }
+  },
+  {
+   "fee": 20000,
+   "xp": 1500,
+   "health": 750000.0,
+   "damage": 12.0,
+   "dps": 180.0,
+   "level": 430,
+   "minutes": 4,
+   "slayer_xp": 100,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 200.0,
+   "requires_boss": {
+    "line": "sven_packmaster",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 50000,
+   "xp": 3000,
+   "health": 2000000.0,
+   "damage": 29.33,
+   "dps": 440.0,
+   "level": 700,
+   "minutes": 4,
+   "slayer_xp": 500,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 500.0,
+   "requires_boss": {
+    "line": "sven_packmaster",
+    "tier": 3
+   }
+  }
+ ]
+}

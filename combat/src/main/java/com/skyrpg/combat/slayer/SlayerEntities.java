@@ -4,6 +4,7 @@ import com.skyrpg.combat.SkyRpgCombat;
 import com.skyrpg.combat.slayer.boss.BoneMarshalEntity;
 import com.skyrpg.combat.slayer.boss.BroodmotherEntity;
 import com.skyrpg.combat.slayer.boss.GraveTyrantEntity;
+import com.skyrpg.combat.slayer.boss.SvenEntity;
 import com.skyrpg.combat.slayer.boss.VoidStalkerEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.Registry;
@@ -13,6 +14,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.animal.wolf.Wolf;
 import net.minecraft.world.entity.monster.Enderman;
 import net.minecraft.world.entity.monster.skeleton.AbstractSkeleton;
 import net.minecraft.world.entity.monster.spider.Spider;
@@ -26,6 +28,8 @@ public final class SlayerEntities {
             EntityType.Builder.of(BroodmotherEntity::new, MobCategory.MONSTER).sized(1.4f, 0.9f).eyeHeight(0.65f).clientTrackingRange(10));
     public static final EntityType<BoneMarshalEntity> BONE_MARSHAL = register("bone_marshal",
             EntityType.Builder.of(BoneMarshalEntity::new, MobCategory.MONSTER).sized(0.6f, 1.99f).eyeHeight(1.74f).clientTrackingRange(10));
+    public static final EntityType<SvenEntity> SVEN = register("sven_packmaster",
+            EntityType.Builder.of(SvenEntity::new, MobCategory.MONSTER).sized(0.6f, 0.85f).eyeHeight(0.68f).clientTrackingRange(10));
     public static final EntityType<VoidStalkerEntity> VOID_STALKER = register("void_stalker",
             EntityType.Builder.of(VoidStalkerEntity::new, MobCategory.MONSTER).sized(0.6f, 2.9f).eyeHeight(2.55f).clientTrackingRange(10));
 
@@ -37,6 +41,7 @@ public final class SlayerEntities {
         FabricDefaultAttributeRegistry.register(BROODMOTHER, Spider.createAttributes());
         FabricDefaultAttributeRegistry.register(BONE_MARSHAL, AbstractSkeleton.createAttributes());
         FabricDefaultAttributeRegistry.register(VOID_STALKER, Enderman.createAttributes());
+        FabricDefaultAttributeRegistry.register(SVEN, Wolf.createAttributes());
     }
 
     private static <T extends Entity> EntityType<T> register(String name, EntityType.Builder<T> builder) {

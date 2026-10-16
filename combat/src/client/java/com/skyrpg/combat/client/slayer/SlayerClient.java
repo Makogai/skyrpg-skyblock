@@ -1,6 +1,7 @@
 package com.skyrpg.combat.client.slayer;
 
 import com.skyrpg.combat.slayer.SlayerPayloads;
+import com.skyrpg.combat.slayer.Slayers;
 import com.skyrpg.core.client.hud.HudManager;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -17,6 +18,15 @@ public final class SlayerClient {
         ClientPlayNetworking.registerGlobalReceiver(SlayerPayloads.PageData.TYPE, (payload, context) -> {
             SlayersPage.data = payload.lines();
             SlayersPage.received = true;
+        });
+        // SkyBlock recipes locked behind a slayer level ask here on the client: your synced XP against the page data's thresholds.
+        com.skyrpg.core.progress.SlayerLevels.installClient((player, key) -> {
+            for (SlayerPayloads.PageLine line : SlayersPage.data) {
+                if (line.key().equals(key)) {
+                    return SlayersPage.level(line, Slayers.state(player).xp(line.id()));
+                }
+            }
+            return 0;
         });
         com.skyrpg.core.client.menu.SkyRpgMenu.registerPage(new SlayersPage());
         HudManager.register(new SlayerWidget());

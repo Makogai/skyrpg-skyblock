@@ -7,6 +7,7 @@ import com.google.gson.JsonParser;
 import com.skyrpg.core.data.JsonDataLoader;
 import com.skyrpg.hub.Hub;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
+import com.skyrpg.skyblock.island.Islands;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -109,6 +110,14 @@ public final class Zones {
         Hub.setBreakRule((level, pos, state, player) -> rule(level, pos, state) != null);
         Hub.setCombatRule(entity -> {
             Zone zone = at(entity.level(), entity.blockPosition());
+            return zone != null && !zone.mobs().isEmpty();
+        });
+        // Slayer bosses rise where you fight: outside the Hub, or in one of its combat zones (Hypixel's Graveyard).
+        com.skyrpg.core.combat.FightAreas.install(player -> {
+            if (!player.level().dimension().identifier().getNamespace().equals("skyrpg_hub")) {
+                return !Islands.isIslands(player.level());
+            }
+            Zone zone = at(player.level(), player.blockPosition());
             return zone != null && !zone.mobs().isEmpty();
         });
         PlayerBlockBreakEvents.AFTER.register((level, player, pos, state, blockEntity) -> {

@@ -4,6 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.skyrpg.core.data.JsonDataLoader;
 import com.skyrpg.core.progress.CollectionLevels;
+import com.skyrpg.core.progress.SlayerLevels;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyStacks;
@@ -265,8 +266,8 @@ public final class Recipes {
     }
 
     /**
-     * Whether the player has unlocked the recipe: no requirement, or the collection tier reached. Slayer and other
-     * requirements stay locked until those systems exist. Creative players have every recipe.
+     * Whether the player has unlocked the recipe: no requirement, the collection tier or the slayer level reached.
+     * Other requirements stay locked until those systems exist. Creative players have every recipe.
      */
     public static boolean unlocked(Player player, Recipe recipe) {
         Requirement requires = recipe.requires();
@@ -275,6 +276,9 @@ public final class Recipes {
         }
         if (!requires.collection().isEmpty()) {
             return CollectionLevels.tier(player, collectionId(requires.collection())) >= requires.tier();
+        }
+        if (!requires.slayer().isEmpty()) {
+            return SlayerLevels.level(player, requires.slayer()) >= requires.level();
         }
         return false;
     }

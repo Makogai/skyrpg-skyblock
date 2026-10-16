@@ -19,12 +19,12 @@ CATEGORY_IDS = [c[0] for c in CATEGORIES]
 
 PAGE_LIST = {
     "getting-started": ["welcome", "skyrpg-mods", "first-launch", "first-steps", "controls-and-keys", "mods-and-shaders", "progression-guide"],
-    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house"],
+    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "slayers"],
     "skyhaven": ["skyhaven", "npcs", "quests-and-journal", "events"],
     "economy": ["coins-and-bank", "selling-and-shops", "contracts"],
     "skills": ["skills-overview", "mining", "farming", "foraging", "fishing", "enchanting", "crafting", "delving"],
     "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks", "shields", "bows", "wands"],
-    "combat": ["stats", "combat-basics", "spells", "mobs", "slayers", "world-bosses"],
+    "combat": ["stats", "combat-basics", "spells", "mobs", "world-bosses"],
     "dungeons": ["dungeons-overview", "forgotten-crypt", "spider-hollow", "drowned-temple", "dwarven-halls",
                  "infernal-citadel", "ruined-citadel", "catacombs", "astral-observatory"],
     "world": ["survival-world", "waystones-and-travel", "builder-station", "brainrots", "crates", "danger-regions", "region-hearts", "blood-moon", "the-deep",
