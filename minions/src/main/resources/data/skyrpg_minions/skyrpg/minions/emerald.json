@@ -1,0 +1,123 @@
+{
+ "type": "EMERALD",
+ "name": "Emerald Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:emerald_ore",
+ "drops": [
+  {
+   "item": "EMERALD",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "EMERALD_GENERATOR_1",
+   "action": 28.0,
+   "storage": 64,
+   "cost": {
+    "EMERALD": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "EMERALD_GENERATOR_2",
+   "action": 28.0,
+   "storage": 192,
+   "cost": {
+    "EMERALD": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "EMERALD_GENERATOR_3",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "EMERALD": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "EMERALD_GENERATOR_4",
+   "action": 26.0,
+   "storage": 384,
+   "cost": {
+    "EMERALD": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "EMERALD_GENERATOR_5",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_EMERALD": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "EMERALD_GENERATOR_6",
+   "action": 24.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_EMERALD": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "EMERALD_GENERATOR_7",
+   "action": 21.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_EMERALD": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "EMERALD_GENERATOR_8",
+   "action": 21.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_EMERALD": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "EMERALD_GENERATOR_9",
+   "action": 18.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_EMERALD": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "EMERALD_GENERATOR_10",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_EMERALD": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "EMERALD_GENERATOR_11",
+   "action": 14.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_EMERALD_BLOCK": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "EMERALD_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

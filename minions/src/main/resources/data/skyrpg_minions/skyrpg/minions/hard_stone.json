@@ -1,0 +1,123 @@
+{
+ "type": "HARD_STONE",
+ "name": "Hard Stone Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:stone",
+ "drops": [
+  {
+   "item": "HARD_STONE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "HARD_STONE_GENERATOR_1",
+   "action": 14.0,
+   "storage": 64,
+   "cost": {
+    "HARD_STONE": 256
+   }
+  },
+  {
+   "tier": 2,
+   "item": "HARD_STONE_GENERATOR_2",
+   "action": 14.0,
+   "storage": 192,
+   "cost": {
+    "HARD_STONE": 512
+   }
+  },
+  {
+   "tier": 3,
+   "item": "HARD_STONE_GENERATOR_3",
+   "action": 12.0,
+   "storage": 192,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 8
+   }
+  },
+  {
+   "tier": 4,
+   "item": "HARD_STONE_GENERATOR_4",
+   "action": 12.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 16
+   }
+  },
+  {
+   "tier": 5,
+   "item": "HARD_STONE_GENERATOR_5",
+   "action": 10.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 32
+   }
+  },
+  {
+   "tier": 6,
+   "item": "HARD_STONE_GENERATOR_6",
+   "action": 10.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "HARD_STONE_GENERATOR_7",
+   "action": 9.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "HARD_STONE_GENERATOR_8",
+   "action": 9.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "HARD_STONE_GENERATOR_9",
+   "action": 8.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_HARD_STONE": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "HARD_STONE_GENERATOR_10",
+   "action": 8.0,
+   "storage": 960,
+   "cost": {
+    "CONCENTRATED_STONE": 4
+   }
+  },
+  {
+   "tier": 11,
+   "item": "HARD_STONE_GENERATOR_11",
+   "action": 7.0,
+   "storage": 960,
+   "cost": {
+    "CONCENTRATED_STONE": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "HARD_STONE_GENERATOR_12",
+   "action": 6.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

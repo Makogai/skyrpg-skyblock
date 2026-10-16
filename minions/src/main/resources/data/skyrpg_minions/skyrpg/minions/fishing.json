@@ -1,0 +1,160 @@
+{
+ "type": "FISHING",
+ "name": "Fishing Minion",
+ "category": "fishing",
+ "kind": "fishing",
+ "drops": [
+  {
+   "item": "RAW_FISH",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.5
+  },
+  {
+   "item": "RAW_FISH:1",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.25
+  },
+  {
+   "item": "RAW_FISH:3",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.12
+  },
+  {
+   "item": "RAW_FISH:2",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.04
+  },
+  {
+   "item": "PRISMARINE_CRYSTALS",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.03
+  },
+  {
+   "item": "PRISMARINE_SHARD",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.03
+  },
+  {
+   "item": "SPONGE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.03
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "FISHING_GENERATOR_1",
+   "action": 75.0,
+   "storage": 640,
+   "cost": {
+    "RAW_FISH": 64
+   }
+  },
+  {
+   "tier": 2,
+   "item": "FISHING_GENERATOR_2",
+   "action": 75.0,
+   "storage": 640,
+   "cost": {
+    "RAW_FISH": 128
+   }
+  },
+  {
+   "tier": 3,
+   "item": "FISHING_GENERATOR_3",
+   "action": 67.0,
+   "storage": 640,
+   "cost": {
+    "RAW_FISH": 256
+   }
+  },
+  {
+   "tier": 4,
+   "item": "FISHING_GENERATOR_4",
+   "action": 67.0,
+   "storage": 704,
+   "cost": {
+    "RAW_FISH": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "FISHING_GENERATOR_5",
+   "action": 59.0,
+   "storage": 704,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "FISHING_GENERATOR_6",
+   "action": 59.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "FISHING_GENERATOR_7",
+   "action": 51.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "FISHING_GENERATOR_8",
+   "action": 51.0,
+   "storage": 832,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "FISHING_GENERATOR_9",
+   "action": 43.0,
+   "storage": 832,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "FISHING_GENERATOR_10",
+   "action": 53.0,
+   "storage": 896,
+   "cost": {
+    "ENCHANTED_RAW_FISH": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "FISHING_GENERATOR_11",
+   "action": 35.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_COOKED_FISH": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "FISHING_GENERATOR_12",
+   "action": 30.0,
+   "storage": 960,
+   "cost": {
+    "GENERATOR_UPGRADE_STONE_FISHING_12": 1
+   }
+  }
+ ]
+}

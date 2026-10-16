@@ -1,0 +1,135 @@
+{
+ "type": "CHICKEN",
+ "name": "Chicken Minion",
+ "category": "farming",
+ "kind": "mob",
+ "mob": "minecraft:chicken",
+ "drops": [
+  {
+   "item": "RAW_CHICKEN",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "FEATHER",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "EGG",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "CHICKEN_GENERATOR_1",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "RAW_CHICKEN": 64
+   }
+  },
+  {
+   "tier": 2,
+   "item": "CHICKEN_GENERATOR_2",
+   "action": 26.0,
+   "storage": 320,
+   "cost": {
+    "RAW_CHICKEN": 128
+   }
+  },
+  {
+   "tier": 3,
+   "item": "CHICKEN_GENERATOR_3",
+   "action": 24.0,
+   "storage": 320,
+   "cost": {
+    "RAW_CHICKEN": 256
+   }
+  },
+  {
+   "tier": 4,
+   "item": "CHICKEN_GENERATOR_4",
+   "action": 24.0,
+   "storage": 448,
+   "cost": {
+    "RAW_CHICKEN": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "CHICKEN_GENERATOR_5",
+   "action": 22.0,
+   "storage": 448,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "CHICKEN_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "CHICKEN_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "CHICKEN_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "CHICKEN_GENERATOR_9",
+   "action": 18.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "CHICKEN_GENERATOR_10",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "CHICKEN_GENERATOR_11",
+   "action": 15.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_RAW_CHICKEN": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "CHICKEN_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

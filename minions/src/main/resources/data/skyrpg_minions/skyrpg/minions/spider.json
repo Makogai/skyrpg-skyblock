@@ -1,0 +1,122 @@
+{
+ "type": "SPIDER",
+ "name": "Spider Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:spider",
+ "drops": [
+  {
+   "item": "STRING",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "SPIDER_EYE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.5
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "SPIDER_GENERATOR_1",
+   "action": 26.0,
+   "storage": 128,
+   "cost": {
+    "STRING": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "SPIDER_GENERATOR_2",
+   "action": 26.0,
+   "storage": 256,
+   "cost": {
+    "STRING": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "SPIDER_GENERATOR_3",
+   "action": 24.0,
+   "storage": 256,
+   "cost": {
+    "STRING": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "SPIDER_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "STRING": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "SPIDER_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_STRING": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "SPIDER_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_STRING": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "SPIDER_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_STRING": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "SPIDER_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_STRING": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "SPIDER_GENERATOR_9",
+   "action": 17.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_STRING": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "SPIDER_GENERATOR_10",
+   "action": 17.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_STRING": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "SPIDER_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_STRING": 512
+   }
+  }
+ ]
+}

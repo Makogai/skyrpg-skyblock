@@ -1,0 +1,13 @@
+evaluationDependsOn(':core')
+evaluationDependsOn(':skyblock')
+def coreClient = project(':core').sourceSets.client.output
+def skyblockClient = project(':skyblock').sourceSets.client.output
+
+dependencies {
+    implementation project(':core')
+    implementation project(':items')
+    implementation project(':skyblock')
+    // Client code builds on core's client UI (theme, drawing). Compile-only: at runtime it comes from core's jar.
+    clientCompileOnly coreClient
+    clientCompileOnly skyblockClient
+}

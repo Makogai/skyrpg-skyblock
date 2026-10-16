@@ -47,6 +47,7 @@ include 'builder'
 include 'brainrots'
 include 'crates'
 include 'skyblock'
+include 'minions'
 
 // Not a mod: loads all of the above together for runClient/runServer.
 include 'dev'

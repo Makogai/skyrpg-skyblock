@@ -1,0 +1,147 @@
+{
+ "type": "TARANTULA",
+ "name": "Tarantula Minion",
+ "category": "slayer",
+ "kind": "mob",
+ "mob": "minecraft:spider",
+ "drops": [
+  {
+   "item": "STRING",
+   "min": 3.16,
+   "max": 3.16,
+   "chance": 1.0
+  },
+  {
+   "item": "SPIDER_EYE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "IRON_INGOT",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.2
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "TARANTULA_GENERATOR_1",
+   "action": 29.0,
+   "storage": 64,
+   "cost": {
+    "TARANTULA_WEB": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "TARANTULA_GENERATOR_2",
+   "action": 29.0,
+   "storage": 192,
+   "cost": {
+    "TARANTULA_WEB": 140,
+    "SPIDER_GENERATOR_1": 1
+   }
+  },
+  {
+   "tier": 3,
+   "item": "TARANTULA_GENERATOR_3",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "TARANTULA_WEB": 280,
+    "SPIDER_GENERATOR_2": 1
+   }
+  },
+  {
+   "tier": 4,
+   "item": "TARANTULA_GENERATOR_4",
+   "action": 26.0,
+   "storage": 384,
+   "cost": {
+    "TARANTULA_WEB": 448,
+    "SPIDER_GENERATOR_3": 1
+   }
+  },
+  {
+   "tier": 5,
+   "item": "TARANTULA_GENERATOR_5",
+   "action": 23.0,
+   "storage": 384,
+   "cost": {
+    "TARANTULA_SILK": 7,
+    "SPIDER_GENERATOR_4": 1
+   }
+  },
+  {
+   "tier": 6,
+   "item": "TARANTULA_GENERATOR_6",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {
+    "TARANTULA_SILK": 14,
+    "SPIDER_GENERATOR_5": 1
+   }
+  },
+  {
+   "tier": 7,
+   "item": "TARANTULA_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "TARANTULA_SILK": 28,
+    "SPIDER_GENERATOR_6": 1
+   }
+  },
+  {
+   "tier": 8,
+   "item": "TARANTULA_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "TARANTULA_SILK": 56,
+    "SPIDER_GENERATOR_7": 1
+   }
+  },
+  {
+   "tier": 9,
+   "item": "TARANTULA_GENERATOR_9",
+   "action": 14.5,
+   "storage": 768,
+   "cost": {
+    "TARANTULA_SILK": 112,
+    "SPIDER_GENERATOR_8": 1
+   }
+  },
+  {
+   "tier": 10,
+   "item": "TARANTULA_GENERATOR_10",
+   "action": 14.5,
+   "storage": 960,
+   "cost": {
+    "TARANTULA_SILK": 224,
+    "SPIDER_GENERATOR_9": 1
+   }
+  },
+  {
+   "tier": 11,
+   "item": "TARANTULA_GENERATOR_11",
+   "action": 10.0,
+   "storage": 960,
+   "cost": {
+    "TARANTULA_SILK": 448,
+    "SPIDER_GENERATOR_10": 1
+   }
+  },
+  {
+   "tier": 12,
+   "item": "TARANTULA_GENERATOR_12",
+   "action": 8.0,
+   "storage": 960,
+   "cost": {
+    "TARANTULA_GENERATOR_11": 1
+   }
+  }
+ ]
+}

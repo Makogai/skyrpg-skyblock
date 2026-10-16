@@ -1,0 +1,129 @@
+{
+ "type": "COW",
+ "name": "Cow Minion",
+ "category": "farming",
+ "kind": "mob",
+ "mob": "minecraft:cow",
+ "drops": [
+  {
+   "item": "RAW_BEEF",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "LEATHER",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "COW_GENERATOR_1",
+   "action": 26.0,
+   "storage": 128,
+   "cost": {
+    "RAW_BEEF": 64
+   }
+  },
+  {
+   "tier": 2,
+   "item": "COW_GENERATOR_2",
+   "action": 26.0,
+   "storage": 256,
+   "cost": {
+    "RAW_BEEF": 128
+   }
+  },
+  {
+   "tier": 3,
+   "item": "COW_GENERATOR_3",
+   "action": 24.0,
+   "storage": 256,
+   "cost": {
+    "RAW_BEEF": 256
+   }
+  },
+  {
+   "tier": 4,
+   "item": "COW_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "RAW_BEEF": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "COW_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "COW_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "COW_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "COW_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "COW_GENERATOR_9",
+   "action": 17.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "COW_GENERATOR_10",
+   "action": 17.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_RAW_BEEF": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "COW_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_LEATHER": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "COW_GENERATOR_12",
+   "action": 10.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

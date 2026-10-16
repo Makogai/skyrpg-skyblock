@@ -1,0 +1,123 @@
+{
+ "type": "FLOWER",
+ "name": "Flower Minion",
+ "category": "other",
+ "kind": "crop",
+ "block": "minecraft:poppy",
+ "drops": [
+  {
+   "item": "RED_ROSE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "FLOWER_GENERATOR_1",
+   "action": 30.0,
+   "storage": 960,
+   "cost": {}
+  },
+  {
+   "tier": 2,
+   "item": "FLOWER_GENERATOR_2",
+   "action": 29.0,
+   "storage": 960,
+   "cost": {
+    "YELLOW_FLOWER": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "FLOWER_GENERATOR_3",
+   "action": 28.0,
+   "storage": 960,
+   "cost": {
+    "YELLOW_FLOWER": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "FLOWER_GENERATOR_4",
+   "action": 27.0,
+   "storage": 960,
+   "cost": {
+    "YELLOW_FLOWER": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "FLOWER_GENERATOR_5",
+   "action": 26.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "FLOWER_GENERATOR_6",
+   "action": 25.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "FLOWER_GENERATOR_7",
+   "action": 24.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "FLOWER_GENERATOR_8",
+   "action": 23.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "FLOWER_GENERATOR_9",
+   "action": 22.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "FLOWER_GENERATOR_10",
+   "action": 20.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DANDELION": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "FLOWER_GENERATOR_11",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_POPPY": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "FLOWER_GENERATOR_12",
+   "action": 15.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_POPPY": 16
+   }
+  }
+ ]
+}

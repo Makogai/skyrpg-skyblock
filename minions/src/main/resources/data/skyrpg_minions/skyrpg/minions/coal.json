@@ -1,0 +1,123 @@
+{
+ "type": "COAL",
+ "name": "Coal Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:coal_ore",
+ "drops": [
+  {
+   "item": "COAL",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "COAL_GENERATOR_1",
+   "action": 15.0,
+   "storage": 64,
+   "cost": {
+    "COAL": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "COAL_GENERATOR_2",
+   "action": 15.0,
+   "storage": 192,
+   "cost": {
+    "COAL": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "COAL_GENERATOR_3",
+   "action": 13.0,
+   "storage": 192,
+   "cost": {
+    "COAL": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "COAL_GENERATOR_4",
+   "action": 13.0,
+   "storage": 384,
+   "cost": {
+    "COAL": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "COAL_GENERATOR_5",
+   "action": 12.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_COAL": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "COAL_GENERATOR_6",
+   "action": 12.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_COAL": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "COAL_GENERATOR_7",
+   "action": 10.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_COAL": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "COAL_GENERATOR_8",
+   "action": 10.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_COAL": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "COAL_GENERATOR_9",
+   "action": 9.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_COAL": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "COAL_GENERATOR_10",
+   "action": 9.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_COAL": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "COAL_GENERATOR_11",
+   "action": 7.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_COAL_BLOCK": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "COAL_GENERATOR_12",
+   "action": 6.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

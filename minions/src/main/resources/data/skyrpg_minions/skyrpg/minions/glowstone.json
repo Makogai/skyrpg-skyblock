@@ -1,0 +1,123 @@
+{
+ "type": "GLOWSTONE",
+ "name": "Glowstone Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:glowstone",
+ "drops": [
+  {
+   "item": "GLOWSTONE_DUST",
+   "min": 2.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "GLOWSTONE_GENERATOR_1",
+   "action": 25.0,
+   "storage": 64,
+   "cost": {
+    "GLOWSTONE_DUST": 128
+   }
+  },
+  {
+   "tier": 2,
+   "item": "GLOWSTONE_GENERATOR_2",
+   "action": 25.0,
+   "storage": 192,
+   "cost": {
+    "GLOWSTONE_DUST": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "GLOWSTONE_GENERATOR_3",
+   "action": 23.0,
+   "storage": 192,
+   "cost": {
+    "GLOWSTONE_DUST": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "GLOWSTONE_GENERATOR_4",
+   "action": 23.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 8
+   }
+  },
+  {
+   "tier": 5,
+   "item": "GLOWSTONE_GENERATOR_5",
+   "action": 21.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 24
+   }
+  },
+  {
+   "tier": 6,
+   "item": "GLOWSTONE_GENERATOR_6",
+   "action": 21.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "GLOWSTONE_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "GLOWSTONE_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "GLOWSTONE_GENERATOR_9",
+   "action": 16.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_GLOWSTONE_DUST": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "GLOWSTONE_GENERATOR_10",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_GLOWSTONE": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "GLOWSTONE_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_GLOWSTONE": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "GLOWSTONE_GENERATOR_12",
+   "action": 11.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

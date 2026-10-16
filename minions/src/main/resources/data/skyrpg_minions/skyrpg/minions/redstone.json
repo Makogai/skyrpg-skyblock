@@ -1,0 +1,123 @@
+{
+ "type": "REDSTONE",
+ "name": "Redstone Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:redstone_ore",
+ "drops": [
+  {
+   "item": "REDSTONE",
+   "min": 3.0,
+   "max": 6.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "REDSTONE_GENERATOR_1",
+   "action": 29.0,
+   "storage": 64,
+   "cost": {
+    "REDSTONE": 128
+   }
+  },
+  {
+   "tier": 2,
+   "item": "REDSTONE_GENERATOR_2",
+   "action": 29.0,
+   "storage": 192,
+   "cost": {
+    "REDSTONE": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "REDSTONE_GENERATOR_3",
+   "action": 27.0,
+   "storage": 192,
+   "cost": {
+    "REDSTONE": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "REDSTONE_GENERATOR_4",
+   "action": 27.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_REDSTONE": 8
+   }
+  },
+  {
+   "tier": 5,
+   "item": "REDSTONE_GENERATOR_5",
+   "action": 25.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_REDSTONE": 24
+   }
+  },
+  {
+   "tier": 6,
+   "item": "REDSTONE_GENERATOR_6",
+   "action": 25.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_REDSTONE": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "REDSTONE_GENERATOR_7",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_REDSTONE": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "REDSTONE_GENERATOR_8",
+   "action": 23.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_REDSTONE": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "REDSTONE_GENERATOR_9",
+   "action": 21.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_REDSTONE": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "REDSTONE_GENERATOR_10",
+   "action": 21.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_REDSTONE_BLOCK": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "REDSTONE_GENERATOR_11",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_REDSTONE_BLOCK": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "REDSTONE_GENERATOR_12",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

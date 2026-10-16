@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "skyrpg_minions",
+  "version": "${version}",
+  "name": "SkyRPG Minions",
+  "description": "Hypixel SkyBlock's minions: place them on your island and they gather for you, even while you're offline.",
+  "authors": [
+    "SkyRPG"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skyrpg_minions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.skyrpg.minions.SkyRpgMinions"
+    ],
+    "client": [
+      "com.skyrpg.minions.client.SkyRpgMinionsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*",
+    "skyrpg_core": "*",
+    "skyrpg_items": "*",
+    "skyrpg_skyblock": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "skyrpg_core"
+    }
+  }
+}

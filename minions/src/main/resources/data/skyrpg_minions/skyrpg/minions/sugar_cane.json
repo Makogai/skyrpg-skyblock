@@ -1,0 +1,123 @@
+{
+ "type": "SUGAR_CANE",
+ "name": "Sugar Cane Minion",
+ "category": "farming",
+ "kind": "crop",
+ "block": "minecraft:sugar_cane",
+ "drops": [
+  {
+   "item": "SUGAR_CANE",
+   "min": 3.0,
+   "max": 3.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "SUGAR_CANE_GENERATOR_1",
+   "action": 22.0,
+   "storage": 64,
+   "cost": {
+    "SUGAR_CANE": 128
+   }
+  },
+  {
+   "tier": 2,
+   "item": "SUGAR_CANE_GENERATOR_2",
+   "action": 22.0,
+   "storage": 192,
+   "cost": {
+    "SUGAR_CANE": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "SUGAR_CANE_GENERATOR_3",
+   "action": 20.0,
+   "storage": 192,
+   "cost": {
+    "SUGAR_CANE": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "SUGAR_CANE_GENERATOR_4",
+   "action": 20.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_SUGAR": 8
+   }
+  },
+  {
+   "tier": 5,
+   "item": "SUGAR_CANE_GENERATOR_5",
+   "action": 18.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_SUGAR": 24
+   }
+  },
+  {
+   "tier": 6,
+   "item": "SUGAR_CANE_GENERATOR_6",
+   "action": 18.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SUGAR": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "SUGAR_CANE_GENERATOR_7",
+   "action": 16.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SUGAR": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "SUGAR_CANE_GENERATOR_8",
+   "action": 16.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SUGAR": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "SUGAR_CANE_GENERATOR_9",
+   "action": 14.5,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SUGAR": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "SUGAR_CANE_GENERATOR_10",
+   "action": 14.5,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SUGAR_CANE": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "SUGAR_CANE_GENERATOR_11",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SUGAR_CANE": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "SUGAR_CANE_GENERATOR_12",
+   "action": 9.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

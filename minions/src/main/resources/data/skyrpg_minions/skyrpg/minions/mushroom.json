@@ -1,0 +1,107 @@
+{
+ "type": "MUSHROOM",
+ "name": "Mushroom Minion",
+ "category": "farming",
+ "kind": "crop",
+ "block": "minecraft:red_mushroom",
+ "drops": [
+  {
+   "item": "RED_MUSHROOM",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.5
+  },
+  {
+   "item": "BROWN_MUSHROOM",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.5
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "MUSHROOM_GENERATOR_1",
+   "action": 30.0,
+   "storage": 128,
+   "cost": {}
+  },
+  {
+   "tier": 2,
+   "item": "MUSHROOM_GENERATOR_2",
+   "action": 30.0,
+   "storage": 256,
+   "cost": {}
+  },
+  {
+   "tier": 3,
+   "item": "MUSHROOM_GENERATOR_3",
+   "action": 28.0,
+   "storage": 256,
+   "cost": {}
+  },
+  {
+   "tier": 4,
+   "item": "MUSHROOM_GENERATOR_4",
+   "action": 28.0,
+   "storage": 384,
+   "cost": {}
+  },
+  {
+   "tier": 5,
+   "item": "MUSHROOM_GENERATOR_5",
+   "action": 26.0,
+   "storage": 384,
+   "cost": {}
+  },
+  {
+   "tier": 6,
+   "item": "MUSHROOM_GENERATOR_6",
+   "action": 26.0,
+   "storage": 576,
+   "cost": {}
+  },
+  {
+   "tier": 7,
+   "item": "MUSHROOM_GENERATOR_7",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {}
+  },
+  {
+   "tier": 8,
+   "item": "MUSHROOM_GENERATOR_8",
+   "action": 23.0,
+   "storage": 768,
+   "cost": {}
+  },
+  {
+   "tier": 9,
+   "item": "MUSHROOM_GENERATOR_9",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {}
+  },
+  {
+   "tier": 10,
+   "item": "MUSHROOM_GENERATOR_10",
+   "action": 20.0,
+   "storage": 960,
+   "cost": {}
+  },
+  {
+   "tier": 11,
+   "item": "MUSHROOM_GENERATOR_11",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {}
+  },
+  {
+   "tier": 12,
+   "item": "MUSHROOM_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

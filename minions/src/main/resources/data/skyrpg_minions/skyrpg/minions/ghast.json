@@ -1,0 +1,123 @@
+{
+ "type": "GHAST",
+ "name": "Ghast Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:ghast",
+ "drops": [
+  {
+   "item": "GHAST_TEAR",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "GHAST_GENERATOR_1",
+   "action": 50.0,
+   "storage": 64,
+   "cost": {
+    "GHAST_TEAR": 64
+   }
+  },
+  {
+   "tier": 2,
+   "item": "GHAST_GENERATOR_2",
+   "action": 50.0,
+   "storage": 192,
+   "cost": {
+    "GHAST_TEAR": 128
+   }
+  },
+  {
+   "tier": 3,
+   "item": "GHAST_GENERATOR_3",
+   "action": 47.0,
+   "storage": 192,
+   "cost": {
+    "GHAST_TEAR": 256
+   }
+  },
+  {
+   "tier": 4,
+   "item": "GHAST_GENERATOR_4",
+   "action": 47.0,
+   "storage": 384,
+   "cost": {
+    "GHAST_TEAR": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "GHAST_GENERATOR_5",
+   "action": 44.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_GHAST_TEAR": 256
+   }
+  },
+  {
+   "tier": 6,
+   "item": "GHAST_GENERATOR_6",
+   "action": 44.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_GHAST_TEAR": 512
+   }
+  },
+  {
+   "tier": 7,
+   "item": "GHAST_GENERATOR_7",
+   "action": 41.0,
+   "storage": 576,
+   "cost": {
+    "SILVER_FANG": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "GHAST_GENERATOR_8",
+   "action": 41.0,
+   "storage": 768,
+   "cost": {
+    "SILVER_FANG": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "GHAST_GENERATOR_9",
+   "action": 38.0,
+   "storage": 768,
+   "cost": {
+    "SILVER_FANG": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "GHAST_GENERATOR_10",
+   "action": 38.0,
+   "storage": 960,
+   "cost": {
+    "SILVER_FANG": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "GHAST_GENERATOR_11",
+   "action": 32.0,
+   "storage": 960,
+   "cost": {
+    "SILVER_FANG": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "GHAST_GENERATOR_12",
+   "action": 30.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

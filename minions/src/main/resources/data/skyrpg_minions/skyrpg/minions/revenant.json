@@ -1,0 +1,141 @@
+{
+ "type": "REVENANT",
+ "name": "Revenant Minion",
+ "category": "slayer",
+ "kind": "mob",
+ "mob": "minecraft:zombie",
+ "drops": [
+  {
+   "item": "ROTTEN_FLESH",
+   "min": 1.0,
+   "max": 5.0,
+   "chance": 1.0
+  },
+  {
+   "item": "DIAMOND",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.2
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "REVENANT_GENERATOR_1",
+   "action": 29.0,
+   "storage": 64,
+   "cost": {
+    "REVENANT_FLESH": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "REVENANT_GENERATOR_2",
+   "action": 29.0,
+   "storage": 192,
+   "cost": {
+    "REVENANT_FLESH": 140,
+    "ZOMBIE_GENERATOR_1": 1
+   }
+  },
+  {
+   "tier": 3,
+   "item": "REVENANT_GENERATOR_3",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "REVENANT_FLESH": 280,
+    "ZOMBIE_GENERATOR_2": 1
+   }
+  },
+  {
+   "tier": 4,
+   "item": "REVENANT_GENERATOR_4",
+   "action": 26.0,
+   "storage": 384,
+   "cost": {
+    "REVENANT_FLESH": 448,
+    "ZOMBIE_GENERATOR_3": 1
+   }
+  },
+  {
+   "tier": 5,
+   "item": "REVENANT_GENERATOR_5",
+   "action": 23.0,
+   "storage": 384,
+   "cost": {
+    "REVENANT_VISCERA": 7,
+    "ZOMBIE_GENERATOR_4": 1
+   }
+  },
+  {
+   "tier": 6,
+   "item": "REVENANT_GENERATOR_6",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {
+    "REVENANT_VISCERA": 14,
+    "ZOMBIE_GENERATOR_5": 1
+   }
+  },
+  {
+   "tier": 7,
+   "item": "REVENANT_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "REVENANT_VISCERA": 28,
+    "ZOMBIE_GENERATOR_6": 1
+   }
+  },
+  {
+   "tier": 8,
+   "item": "REVENANT_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "REVENANT_VISCERA": 56,
+    "ZOMBIE_GENERATOR_7": 1
+   }
+  },
+  {
+   "tier": 9,
+   "item": "REVENANT_GENERATOR_9",
+   "action": 14.5,
+   "storage": 768,
+   "cost": {
+    "REVENANT_VISCERA": 112,
+    "ZOMBIE_GENERATOR_8": 1
+   }
+  },
+  {
+   "tier": 10,
+   "item": "REVENANT_GENERATOR_10",
+   "action": 14.5,
+   "storage": 960,
+   "cost": {
+    "REVENANT_VISCERA": 224,
+    "ZOMBIE_GENERATOR_9": 1
+   }
+  },
+  {
+   "tier": 11,
+   "item": "REVENANT_GENERATOR_11",
+   "action": 10.0,
+   "storage": 960,
+   "cost": {
+    "REVENANT_VISCERA": 448,
+    "ZOMBIE_GENERATOR_10": 1
+   }
+  },
+  {
+   "tier": 12,
+   "item": "REVENANT_GENERATOR_12",
+   "action": 8.0,
+   "storage": 960,
+   "cost": {
+    "REVENANT_GENERATOR_11": 1
+   }
+  }
+ ]
+}

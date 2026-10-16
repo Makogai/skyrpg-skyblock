@@ -1,0 +1,123 @@
+{
+ "type": "DIAMOND",
+ "name": "Diamond Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:diamond_ore",
+ "drops": [
+  {
+   "item": "DIAMOND",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "DIAMOND_GENERATOR_1",
+   "action": 29.0,
+   "storage": 64,
+   "cost": {
+    "DIAMOND": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "DIAMOND_GENERATOR_2",
+   "action": 29.0,
+   "storage": 192,
+   "cost": {
+    "DIAMOND": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "DIAMOND_GENERATOR_3",
+   "action": 27.0,
+   "storage": 192,
+   "cost": {
+    "DIAMOND": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "DIAMOND_GENERATOR_4",
+   "action": 27.0,
+   "storage": 384,
+   "cost": {
+    "DIAMOND": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "DIAMOND_GENERATOR_5",
+   "action": 25.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_DIAMOND": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "DIAMOND_GENERATOR_6",
+   "action": 25.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_DIAMOND": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "DIAMOND_GENERATOR_7",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_DIAMOND": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "DIAMOND_GENERATOR_8",
+   "action": 22.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_DIAMOND": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "DIAMOND_GENERATOR_9",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_DIAMOND": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "DIAMOND_GENERATOR_10",
+   "action": 19.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DIAMOND": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "DIAMOND_GENERATOR_11",
+   "action": 15.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_DIAMOND_BLOCK": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "DIAMOND_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

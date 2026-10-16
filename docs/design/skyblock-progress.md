@@ -43,6 +43,23 @@ phase so the next session can pick up where this one stopped.
       (Interface, "FurfSky Reborn item looks", on) keeps it enabled. Not published yet.
 - [ ] **Owners:** ask the FurfSky Reborn team (their Discord) that listing it in our pack is fine, before publishing.
 
+## Phase 1: Day One
+
+- [x] **Minions** (`minions` module): all 61 types from `tools/skyblock/import_minions.py` (NEU repo: tier speeds,
+      storage, upgrade recipes; fandom wiki: what each collects). Minion entity (small armour stand: tier head, tool),
+      5 by 5 work area (block / crop / tree / mob / fishing), real-time offline catch-up, storage grid with "storage
+      full" status, our own minion screen (3D minion, action timer, storage, Collect All, Upgrade with recipe costs,
+      Pick Up), place on your own island only, 5 per profile. Known: the leather outfit doesn't render on the minion
+      entity (vanilla armour stands show it; only the head slot renders) - cosmetic, look into later.
+- [ ] Minions: fuel and upgrade slots (coal, lava buckets, compactors, auto smelter, hoppers...), minion slots from
+      unique crafts, crafting minions (with the Recipe Book).
+- [ ] Collections 1:1 with the Recipe Book and enchanted materials.
+- [ ] Skills on Hypixel's XP tables and level rewards (NEU constants/leveling.json).
+- [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
+- [ ] Bazaar and Auction House.
+- [ ] Slayers: Revenant, Tarantula, Sven.
+- [ ] Fairy Souls and SkyBlock XP.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

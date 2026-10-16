@@ -1,0 +1,116 @@
+{
+ "type": "SLIME",
+ "name": "Slime Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:slime",
+ "drops": [
+  {
+   "item": "SLIME_BALL",
+   "min": 1.8,
+   "max": 1.8,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "SLIME_GENERATOR_1",
+   "action": 26.0,
+   "storage": 64,
+   "cost": {
+    "SLIME_BALL": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "SLIME_GENERATOR_2",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "SLIME_BALL": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "SLIME_GENERATOR_3",
+   "action": 24.0,
+   "storage": 192,
+   "cost": {
+    "SLIME_BALL": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "SLIME_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "SLIME_BALL": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "SLIME_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "SLIME_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "SLIME_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "SLIME_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "SLIME_GENERATOR_9",
+   "action": 16.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "SLIME_GENERATOR_10",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SLIME_BALL": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "SLIME_GENERATOR_11",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SLIME_BLOCK": 8
+   }
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "type": "CREEPER",
+ "name": "Creeper Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:creeper",
+ "drops": [
+  {
+   "item": "SULPHUR",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "CREEPER_GENERATOR_1",
+   "action": 27.0,
+   "storage": 64,
+   "cost": {
+    "SULPHUR": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "CREEPER_GENERATOR_2",
+   "action": 27.0,
+   "storage": 192,
+   "cost": {
+    "SULPHUR": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "CREEPER_GENERATOR_3",
+   "action": 25.0,
+   "storage": 192,
+   "cost": {
+    "SULPHUR": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "CREEPER_GENERATOR_4",
+   "action": 25.0,
+   "storage": 384,
+   "cost": {
+    "SULPHUR": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "CREEPER_GENERATOR_5",
+   "action": 23.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "CREEPER_GENERATOR_6",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "CREEPER_GENERATOR_7",
+   "action": 21.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "CREEPER_GENERATOR_8",
+   "action": 21.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "CREEPER_GENERATOR_9",
+   "action": 18.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "CREEPER_GENERATOR_10",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_GUNPOWDER": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "CREEPER_GENERATOR_11",
+   "action": 14.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_FIREWORK_ROCKET": 16
+   }
+  }
+ ]
+}

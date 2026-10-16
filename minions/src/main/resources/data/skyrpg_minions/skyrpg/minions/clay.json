@@ -1,0 +1,125 @@
+{
+ "type": "CLAY",
+ "name": "Clay Minion",
+ "category": "fishing",
+ "kind": "block",
+ "block": "minecraft:clay",
+ "drops": [
+  {
+   "item": "CLAY_BALL",
+   "min": 4.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "CLAY_GENERATOR_1",
+   "action": 32.0,
+   "storage": 64,
+   "cost": {
+    "CLAY_BALL": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "CLAY_GENERATOR_2",
+   "action": 32.0,
+   "storage": 192,
+   "cost": {
+    "CLAY_BALL": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "CLAY_GENERATOR_3",
+   "action": 30.0,
+   "storage": 192,
+   "cost": {
+    "CLAY_BALL": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "CLAY_GENERATOR_4",
+   "action": 30.0,
+   "storage": 384,
+   "cost": {
+    "CLAY_BALL": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "CLAY_GENERATOR_5",
+   "action": 27.5,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "CLAY_GENERATOR_6",
+   "action": 27.5,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "CLAY_GENERATOR_7",
+   "action": 24.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "CLAY_GENERATOR_8",
+   "action": 24.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "CLAY_GENERATOR_9",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "CLAY_GENERATOR_10",
+   "action": 20.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "CLAY_GENERATOR_11",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_CLAY_BALL": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "CLAY_GENERATOR_12",
+   "action": 14.0,
+   "storage": 960,
+   "cost": {
+    "GENERATOR_UPGRADE_STONE_CLAY_12": 1
+   }
+  }
+ ]
+}

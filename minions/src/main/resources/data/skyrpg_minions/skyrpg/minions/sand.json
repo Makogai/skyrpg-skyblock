@@ -1,0 +1,116 @@
+{
+ "type": "SAND",
+ "name": "Sand Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:sand",
+ "drops": [
+  {
+   "item": "SAND",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "SAND_GENERATOR_1",
+   "action": 26.0,
+   "storage": 64,
+   "cost": {
+    "SAND": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "SAND_GENERATOR_2",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "SAND": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "SAND_GENERATOR_3",
+   "action": 24.0,
+   "storage": 192,
+   "cost": {
+    "SAND": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "SAND_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "SAND": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "SAND_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_SAND": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "SAND_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SAND": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "SAND_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SAND": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "SAND_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SAND": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "SAND_GENERATOR_9",
+   "action": 16.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SAND": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "SAND_GENERATOR_10",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SAND": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "SAND_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SAND": 512
+   }
+  }
+ ]
+}

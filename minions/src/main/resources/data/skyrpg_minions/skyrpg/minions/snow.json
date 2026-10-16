@@ -1,0 +1,121 @@
+{
+ "type": "SNOW",
+ "name": "Snow Minion",
+ "category": "other",
+ "kind": "block",
+ "block": "minecraft:snow_block",
+ "drops": [
+  {
+   "item": "SNOW_BALL",
+   "min": 4.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "SNOW_GENERATOR_1",
+   "action": 13.0,
+   "storage": 64,
+   "cost": {}
+  },
+  {
+   "tier": 2,
+   "item": "SNOW_GENERATOR_2",
+   "action": 13.0,
+   "storage": 192,
+   "cost": {
+    "SNOW_BLOCK": 32
+   }
+  },
+  {
+   "tier": 3,
+   "item": "SNOW_GENERATOR_3",
+   "action": 12.0,
+   "storage": 192,
+   "cost": {
+    "SNOW_BLOCK": 64
+   }
+  },
+  {
+   "tier": 4,
+   "item": "SNOW_GENERATOR_4",
+   "action": 12.0,
+   "storage": 384,
+   "cost": {
+    "SNOW_BLOCK": 128
+   }
+  },
+  {
+   "tier": 5,
+   "item": "SNOW_GENERATOR_5",
+   "action": 11.0,
+   "storage": 384,
+   "cost": {
+    "SNOW_BLOCK": 256
+   }
+  },
+  {
+   "tier": 6,
+   "item": "SNOW_GENERATOR_6",
+   "action": 11.0,
+   "storage": 576,
+   "cost": {
+    "SNOW_BLOCK": 512
+   }
+  },
+  {
+   "tier": 7,
+   "item": "SNOW_GENERATOR_7",
+   "action": 9.5,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SNOW_BLOCK": 8
+   }
+  },
+  {
+   "tier": 8,
+   "item": "SNOW_GENERATOR_8",
+   "action": 9.5,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SNOW_BLOCK": 16
+   }
+  },
+  {
+   "tier": 9,
+   "item": "SNOW_GENERATOR_9",
+   "action": 8.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SNOW_BLOCK": 32
+   }
+  },
+  {
+   "tier": 10,
+   "item": "SNOW_GENERATOR_10",
+   "action": 8.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SNOW_BLOCK": 64
+   }
+  },
+  {
+   "tier": 11,
+   "item": "SNOW_GENERATOR_11",
+   "action": 6.5,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SNOW_BLOCK": 128
+   }
+  },
+  {
+   "tier": 12,
+   "item": "SNOW_GENERATOR_12",
+   "action": 5.8,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

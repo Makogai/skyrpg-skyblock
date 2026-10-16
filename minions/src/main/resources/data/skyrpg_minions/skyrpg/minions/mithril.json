@@ -1,0 +1,123 @@
+{
+ "type": "MITHRIL",
+ "name": "Mithril Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:light_blue_wool",
+ "drops": [
+  {
+   "item": "MITHRIL_ORE",
+   "min": 2.0,
+   "max": 2.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "MITHRIL_GENERATOR_1",
+   "action": 80.0,
+   "storage": 64,
+   "cost": {
+    "MITHRIL_ORE": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "MITHRIL_GENERATOR_2",
+   "action": 80.0,
+   "storage": 192,
+   "cost": {
+    "MITHRIL_ORE": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "MITHRIL_GENERATOR_3",
+   "action": 75.0,
+   "storage": 192,
+   "cost": {
+    "MITHRIL_ORE": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "MITHRIL_GENERATOR_4",
+   "action": 75.0,
+   "storage": 384,
+   "cost": {
+    "MITHRIL_ORE": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "MITHRIL_GENERATOR_5",
+   "action": 70.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_MITHRIL": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "MITHRIL_GENERATOR_6",
+   "action": 70.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_MITHRIL": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "MITHRIL_GENERATOR_7",
+   "action": 65.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_MITHRIL": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "MITHRIL_GENERATOR_8",
+   "action": 65.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_MITHRIL": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "MITHRIL_GENERATOR_9",
+   "action": 60.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_MITHRIL": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "MITHRIL_GENERATOR_10",
+   "action": 60.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_MITHRIL": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "MITHRIL_GENERATOR_11",
+   "action": 55.0,
+   "storage": 960,
+   "cost": {
+    "REFINED_MITHRIL": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "MITHRIL_GENERATOR_12",
+   "action": 50.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

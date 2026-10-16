@@ -1,0 +1,123 @@
+{
+ "type": "MAGMA_CUBE",
+ "name": "Magma Cube Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:magma_cube",
+ "drops": [
+  {
+   "item": "MAGMA_CREAM",
+   "min": 1.8,
+   "max": 1.8,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "MAGMA_CUBE_GENERATOR_1",
+   "action": 32.0,
+   "storage": 64,
+   "cost": {
+    "MAGMA_CREAM": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "MAGMA_CUBE_GENERATOR_2",
+   "action": 32.0,
+   "storage": 192,
+   "cost": {
+    "MAGMA_CREAM": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "MAGMA_CUBE_GENERATOR_3",
+   "action": 30.0,
+   "storage": 192,
+   "cost": {
+    "MAGMA_CREAM": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "MAGMA_CUBE_GENERATOR_4",
+   "action": 30.0,
+   "storage": 384,
+   "cost": {
+    "MAGMA_CREAM": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "MAGMA_CUBE_GENERATOR_5",
+   "action": 28.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "MAGMA_CUBE_GENERATOR_6",
+   "action": 28.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "MAGMA_CUBE_GENERATOR_7",
+   "action": 25.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "MAGMA_CUBE_GENERATOR_8",
+   "action": 25.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "MAGMA_CUBE_GENERATOR_9",
+   "action": 22.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "MAGMA_CUBE_GENERATOR_10",
+   "action": 22.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "MAGMA_CUBE_GENERATOR_11",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "MAGMA_CUBE_GENERATOR_12",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

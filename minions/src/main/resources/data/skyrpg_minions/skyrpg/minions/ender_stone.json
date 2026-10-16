@@ -1,0 +1,116 @@
+{
+ "type": "ENDER_STONE",
+ "name": "End Stone Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:end_stone",
+ "drops": [
+  {
+   "item": "ENDER_STONE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "ENDER_STONE_GENERATOR_1",
+   "action": 26.0,
+   "storage": 64,
+   "cost": {
+    "ENDER_STONE": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "ENDER_STONE_GENERATOR_2",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "ENDER_STONE": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "ENDER_STONE_GENERATOR_3",
+   "action": 24.0,
+   "storage": 192,
+   "cost": {
+    "ENDER_STONE": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "ENDER_STONE_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "ENDER_STONE": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "ENDER_STONE_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "ENDER_STONE_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "ENDER_STONE_GENERATOR_7",
+   "action": 19.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "ENDER_STONE_GENERATOR_8",
+   "action": 19.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "ENDER_STONE_GENERATOR_9",
+   "action": 16.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "ENDER_STONE_GENERATOR_10",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "ENDER_STONE_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_ENDSTONE": 512
+   }
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "type": "CAVESPIDER",
+ "name": "Cave Spider Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:cave_spider",
+ "drops": [
+  {
+   "item": "SPIDER_EYE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "STRING",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.5
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "CAVESPIDER_GENERATOR_1",
+   "action": 26.0,
+   "storage": 128,
+   "cost": {
+    "SPIDER_EYE": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "CAVESPIDER_GENERATOR_2",
+   "action": 26.0,
+   "storage": 256,
+   "cost": {
+    "SPIDER_EYE": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "CAVESPIDER_GENERATOR_3",
+   "action": 24.0,
+   "storage": 256,
+   "cost": {
+    "SPIDER_EYE": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "CAVESPIDER_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "SPIDER_EYE": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "CAVESPIDER_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "CAVESPIDER_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "CAVESPIDER_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "CAVESPIDER_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "CAVESPIDER_GENERATOR_9",
+   "action": 17.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "CAVESPIDER_GENERATOR_10",
+   "action": 17.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_SPIDER_EYE": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "CAVESPIDER_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_FERMENTED_SPIDER_EYE": 16
+   }
+  }
+ ]
+}

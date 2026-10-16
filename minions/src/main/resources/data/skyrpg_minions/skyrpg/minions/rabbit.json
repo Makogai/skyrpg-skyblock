@@ -1,0 +1,135 @@
+{
+ "type": "RABBIT",
+ "name": "Rabbit Minion",
+ "category": "farming",
+ "kind": "mob",
+ "mob": "minecraft:rabbit",
+ "drops": [
+  {
+   "item": "RABBIT",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "RABBIT_FOOT",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.35
+  },
+  {
+   "item": "RABBIT_HIDE",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.35
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "RABBIT_GENERATOR_1",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "RABBIT": 64
+   }
+  },
+  {
+   "tier": 2,
+   "item": "RABBIT_GENERATOR_2",
+   "action": 26.0,
+   "storage": 320,
+   "cost": {
+    "RABBIT": 128
+   }
+  },
+  {
+   "tier": 3,
+   "item": "RABBIT_GENERATOR_3",
+   "action": 24.0,
+   "storage": 320,
+   "cost": {
+    "RABBIT": 256
+   }
+  },
+  {
+   "tier": 4,
+   "item": "RABBIT_GENERATOR_4",
+   "action": 24.0,
+   "storage": 448,
+   "cost": {
+    "RABBIT": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "RABBIT_GENERATOR_5",
+   "action": 22.0,
+   "storage": 448,
+   "cost": {
+    "ENCHANTED_RABBIT": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "RABBIT_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RABBIT": 24
+   }
+  },
+  {
+   "tier": 7,
+   "item": "RABBIT_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_RABBIT": 64
+   }
+  },
+  {
+   "tier": 8,
+   "item": "RABBIT_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RABBIT": 128
+   }
+  },
+  {
+   "tier": 9,
+   "item": "RABBIT_GENERATOR_9",
+   "action": 17.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_RABBIT": 256
+   }
+  },
+  {
+   "tier": 10,
+   "item": "RABBIT_GENERATOR_10",
+   "action": 17.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_RABBIT": 512
+   }
+  },
+  {
+   "tier": 11,
+   "item": "RABBIT_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_COOKED_RABBIT": 8
+   }
+  },
+  {
+   "tier": 12,
+   "item": "RABBIT_GENERATOR_12",
+   "action": 10.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

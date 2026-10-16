@@ -1,0 +1,123 @@
+{
+ "type": "POTATO",
+ "name": "Potato Minion",
+ "category": "farming",
+ "kind": "crop",
+ "block": "minecraft:potatoes",
+ "drops": [
+  {
+   "item": "POTATO_ITEM",
+   "min": 2.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "POTATO_GENERATOR_1",
+   "action": 20.0,
+   "storage": 64,
+   "cost": {
+    "POTATO_ITEM": 128
+   }
+  },
+  {
+   "tier": 2,
+   "item": "POTATO_GENERATOR_2",
+   "action": 20.0,
+   "storage": 192,
+   "cost": {
+    "POTATO_ITEM": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "POTATO_GENERATOR_3",
+   "action": 18.0,
+   "storage": 192,
+   "cost": {
+    "POTATO_ITEM": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "POTATO_GENERATOR_4",
+   "action": 18.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_POTATO": 8
+   }
+  },
+  {
+   "tier": 5,
+   "item": "POTATO_GENERATOR_5",
+   "action": 16.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_POTATO": 24
+   }
+  },
+  {
+   "tier": 6,
+   "item": "POTATO_GENERATOR_6",
+   "action": 16.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_POTATO": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "POTATO_GENERATOR_7",
+   "action": 14.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_POTATO": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "POTATO_GENERATOR_8",
+   "action": 14.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_POTATO": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "POTATO_GENERATOR_9",
+   "action": 12.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_POTATO": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "POTATO_GENERATOR_10",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_BAKED_POTATO": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "POTATO_GENERATOR_11",
+   "action": 10.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_BAKED_POTATO": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "POTATO_GENERATOR_12",
+   "action": 8.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

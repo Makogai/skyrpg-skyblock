@@ -1,0 +1,123 @@
+{
+ "type": "PUMPKIN",
+ "name": "Pumpkin Minion",
+ "category": "farming",
+ "kind": "crop",
+ "block": "minecraft:pumpkin",
+ "drops": [
+  {
+   "item": "PUMPKIN",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "PUMPKIN_GENERATOR_1",
+   "action": 32.0,
+   "storage": 64,
+   "cost": {
+    "PUMPKIN": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "PUMPKIN_GENERATOR_2",
+   "action": 32.0,
+   "storage": 192,
+   "cost": {
+    "PUMPKIN": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "PUMPKIN_GENERATOR_3",
+   "action": 30.0,
+   "storage": 192,
+   "cost": {
+    "PUMPKIN": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "PUMPKIN_GENERATOR_4",
+   "action": 30.0,
+   "storage": 384,
+   "cost": {
+    "PUMPKIN": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "PUMPKIN_GENERATOR_5",
+   "action": 27.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "PUMPKIN_GENERATOR_6",
+   "action": 27.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "PUMPKIN_GENERATOR_7",
+   "action": 24.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "PUMPKIN_GENERATOR_8",
+   "action": 24.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "PUMPKIN_GENERATOR_9",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "PUMPKIN_GENERATOR_10",
+   "action": 20.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "PUMPKIN_GENERATOR_11",
+   "action": 16.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_PUMPKIN": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "PUMPKIN_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

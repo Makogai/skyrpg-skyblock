@@ -1,0 +1,123 @@
+{
+ "type": "BIRCH",
+ "name": "Birch Minion",
+ "category": "foraging",
+ "kind": "tree",
+ "wood": "birch",
+ "drops": [
+  {
+   "item": "LOG:2",
+   "min": 4.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "BIRCH_GENERATOR_1",
+   "action": 48.0,
+   "storage": 64,
+   "cost": {
+    "LOG-2": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "BIRCH_GENERATOR_2",
+   "action": 48.0,
+   "storage": 192,
+   "cost": {
+    "LOG-2": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "BIRCH_GENERATOR_3",
+   "action": 45.0,
+   "storage": 192,
+   "cost": {
+    "LOG-2": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "BIRCH_GENERATOR_4",
+   "action": 45.0,
+   "storage": 384,
+   "cost": {
+    "LOG-2": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "BIRCH_GENERATOR_5",
+   "action": 42.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "BIRCH_GENERATOR_6",
+   "action": 42.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "BIRCH_GENERATOR_7",
+   "action": 38.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "BIRCH_GENERATOR_8",
+   "action": 38.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "BIRCH_GENERATOR_9",
+   "action": 33.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "BIRCH_GENERATOR_10",
+   "action": 33.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "BIRCH_GENERATOR_11",
+   "action": 27.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_BIRCH_LOG": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "BIRCH_GENERATOR_12",
+   "action": 23.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

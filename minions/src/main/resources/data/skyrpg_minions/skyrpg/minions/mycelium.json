@@ -1,0 +1,123 @@
+{
+ "type": "MYCELIUM",
+ "name": "Mycelium Minion",
+ "category": "mining",
+ "kind": "block",
+ "block": "minecraft:mycelium",
+ "drops": [
+  {
+   "item": "MYCEL",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "MYCELIUM_GENERATOR_1",
+   "action": 26.0,
+   "storage": 64,
+   "cost": {
+    "MYCEL": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "MYCELIUM_GENERATOR_2",
+   "action": 25.0,
+   "storage": 128,
+   "cost": {
+    "MYCEL": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "MYCELIUM_GENERATOR_3",
+   "action": 24.0,
+   "storage": 192,
+   "cost": {
+    "MYCEL": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "MYCELIUM_GENERATOR_4",
+   "action": 23.0,
+   "storage": 320,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 16
+   }
+  },
+  {
+   "tier": 5,
+   "item": "MYCELIUM_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 32
+   }
+  },
+  {
+   "tier": 6,
+   "item": "MYCELIUM_GENERATOR_6",
+   "action": 21.0,
+   "storage": 512,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "MYCELIUM_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "MYCELIUM_GENERATOR_8",
+   "action": 19.0,
+   "storage": 704,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "MYCELIUM_GENERATOR_9",
+   "action": 18.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_MYCELIUM": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "MYCELIUM_GENERATOR_10",
+   "action": 16.0,
+   "storage": 896,
+   "cost": {
+    "ENCHANTED_MYCELIUM_CUBE": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "MYCELIUM_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_MYCELIUM_CUBE": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "MYCELIUM_GENERATOR_12",
+   "action": 11.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

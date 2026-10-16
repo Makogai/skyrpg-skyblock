@@ -1,0 +1,123 @@
+{
+ "type": "OAK",
+ "name": "Oak Minion",
+ "category": "foraging",
+ "kind": "tree",
+ "wood": "oak",
+ "drops": [
+  {
+   "item": "LOG",
+   "min": 4.0,
+   "max": 4.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "OAK_GENERATOR_1",
+   "action": 48.0,
+   "storage": 64,
+   "cost": {
+    "LOG": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "OAK_GENERATOR_2",
+   "action": 48.0,
+   "storage": 192,
+   "cost": {
+    "LOG": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "OAK_GENERATOR_3",
+   "action": 45.0,
+   "storage": 192,
+   "cost": {
+    "LOG": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "OAK_GENERATOR_4",
+   "action": 45.0,
+   "storage": 384,
+   "cost": {
+    "LOG": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "OAK_GENERATOR_5",
+   "action": 42.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "OAK_GENERATOR_6",
+   "action": 42.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "OAK_GENERATOR_7",
+   "action": 38.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "OAK_GENERATOR_8",
+   "action": 38.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "OAK_GENERATOR_9",
+   "action": 33.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "OAK_GENERATOR_10",
+   "action": 33.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "OAK_GENERATOR_11",
+   "action": 27.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_OAK_LOG": 512
+   }
+  },
+  {
+   "tier": 12,
+   "item": "OAK_GENERATOR_12",
+   "action": 23.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

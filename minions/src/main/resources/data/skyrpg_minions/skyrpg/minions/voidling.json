@@ -1,0 +1,138 @@
+{
+ "type": "VOIDLING",
+ "name": "Voidling Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:enderman",
+ "drops": [
+  {
+   "item": "QUARTZ",
+   "min": 0.4,
+   "max": 0.4,
+   "chance": 1.0
+  },
+  {
+   "item": "OBSIDIAN",
+   "min": 2.42,
+   "max": 2.42,
+   "chance": 1.0
+  },
+  {
+   "item": "ENCHANTED_ENDER_PEARL",
+   "min": 0.000625,
+   "max": 0.000625,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "VOIDLING_GENERATOR_1",
+   "action": 45.0,
+   "storage": 64,
+   "cost": {
+    "NULL_SPHERE": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "VOIDLING_GENERATOR_2",
+   "action": 45.0,
+   "storage": 192,
+   "cost": {
+    "NULL_SPHERE": 140,
+    "OBSIDIAN_GENERATOR_1": 1
+   }
+  },
+  {
+   "tier": 3,
+   "item": "VOIDLING_GENERATOR_3",
+   "action": 42.0,
+   "storage": 192,
+   "cost": {
+    "NULL_SPHERE": 280,
+    "ENDERMAN_GENERATOR_2": 1
+   }
+  },
+  {
+   "tier": 4,
+   "item": "VOIDLING_GENERATOR_4",
+   "action": 42.0,
+   "storage": 384,
+   "cost": {
+    "NULL_SPHERE": 448,
+    "OBSIDIAN_GENERATOR_3": 1
+   }
+  },
+  {
+   "tier": 5,
+   "item": "VOIDLING_GENERATOR_5",
+   "action": 39.0,
+   "storage": 384,
+   "cost": {
+    "NULL_OVOID": 7,
+    "ENDERMAN_GENERATOR_4": 1
+   }
+  },
+  {
+   "tier": 6,
+   "item": "VOIDLING_GENERATOR_6",
+   "action": 39.0,
+   "storage": 576,
+   "cost": {
+    "NULL_OVOID": 14,
+    "OBSIDIAN_GENERATOR_5": 1
+   }
+  },
+  {
+   "tier": 7,
+   "item": "VOIDLING_GENERATOR_7",
+   "action": 35.0,
+   "storage": 576,
+   "cost": {
+    "NULL_OVOID": 28,
+    "ENDERMAN_GENERATOR_6": 1
+   }
+  },
+  {
+   "tier": 8,
+   "item": "VOIDLING_GENERATOR_8",
+   "action": 35.0,
+   "storage": 768,
+   "cost": {
+    "NULL_OVOID": 56,
+    "OBSIDIAN_GENERATOR_7": 1
+   }
+  },
+  {
+   "tier": 9,
+   "item": "VOIDLING_GENERATOR_9",
+   "action": 30.0,
+   "storage": 768,
+   "cost": {
+    "NULL_OVOID": 112,
+    "ENDERMAN_GENERATOR_8": 1
+   }
+  },
+  {
+   "tier": 10,
+   "item": "VOIDLING_GENERATOR_10",
+   "action": 30.0,
+   "storage": 960,
+   "cost": {
+    "NULL_OVOID": 224,
+    "OBSIDIAN_GENERATOR_9": 1
+   }
+  },
+  {
+   "tier": 11,
+   "item": "VOIDLING_GENERATOR_11",
+   "action": 24.0,
+   "storage": 960,
+   "cost": {
+    "NULL_OVOID": 448,
+    "ENDERMAN_GENERATOR_10": 1
+   }
+  }
+ ]
+}

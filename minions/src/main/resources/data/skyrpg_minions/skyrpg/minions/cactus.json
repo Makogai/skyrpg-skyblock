@@ -1,0 +1,123 @@
+{
+ "type": "CACTUS",
+ "name": "Cactus Minion",
+ "category": "farming",
+ "kind": "crop",
+ "block": "minecraft:cactus",
+ "drops": [
+  {
+   "item": "BUILDER_CACTUS",
+   "min": 3.0,
+   "max": 3.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "CACTUS_GENERATOR_1",
+   "action": 27.0,
+   "storage": 64,
+   "cost": {
+    "CACTUS": 128
+   }
+  },
+  {
+   "tier": 2,
+   "item": "CACTUS_GENERATOR_2",
+   "action": 27.0,
+   "storage": 192,
+   "cost": {
+    "CACTUS": 256
+   }
+  },
+  {
+   "tier": 3,
+   "item": "CACTUS_GENERATOR_3",
+   "action": 25.0,
+   "storage": 192,
+   "cost": {
+    "CACTUS": 512
+   }
+  },
+  {
+   "tier": 4,
+   "item": "CACTUS_GENERATOR_4",
+   "action": 25.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 8
+   }
+  },
+  {
+   "tier": 5,
+   "item": "CACTUS_GENERATOR_5",
+   "action": 23.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 24
+   }
+  },
+  {
+   "tier": 6,
+   "item": "CACTUS_GENERATOR_6",
+   "action": 23.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 64
+   }
+  },
+  {
+   "tier": 7,
+   "item": "CACTUS_GENERATOR_7",
+   "action": 21.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 128
+   }
+  },
+  {
+   "tier": 8,
+   "item": "CACTUS_GENERATOR_8",
+   "action": 21.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 256
+   }
+  },
+  {
+   "tier": 9,
+   "item": "CACTUS_GENERATOR_9",
+   "action": 18.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_CACTUS_GREEN": 512
+   }
+  },
+  {
+   "tier": 10,
+   "item": "CACTUS_GENERATOR_10",
+   "action": 18.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_CACTUS": 8
+   }
+  },
+  {
+   "tier": 11,
+   "item": "CACTUS_GENERATOR_11",
+   "action": 15.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_CACTUS": 16
+   }
+  },
+  {
+   "tier": 12,
+   "item": "CACTUS_GENERATOR_12",
+   "action": 12.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}

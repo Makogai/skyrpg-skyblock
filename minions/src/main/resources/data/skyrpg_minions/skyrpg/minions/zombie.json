@@ -1,0 +1,122 @@
+{
+ "type": "ZOMBIE",
+ "name": "Zombie Minion",
+ "category": "combat",
+ "kind": "mob",
+ "mob": "minecraft:zombie",
+ "drops": [
+  {
+   "item": "ROTTEN_FLESH",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  },
+  {
+   "item": "POISONOUS_POTATO",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 0.025
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "ZOMBIE_GENERATOR_1",
+   "action": 26.0,
+   "storage": 64,
+   "cost": {
+    "ROTTEN_FLESH": 80
+   }
+  },
+  {
+   "tier": 2,
+   "item": "ZOMBIE_GENERATOR_2",
+   "action": 26.0,
+   "storage": 192,
+   "cost": {
+    "ROTTEN_FLESH": 160
+   }
+  },
+  {
+   "tier": 3,
+   "item": "ZOMBIE_GENERATOR_3",
+   "action": 24.0,
+   "storage": 192,
+   "cost": {
+    "ROTTEN_FLESH": 320
+   }
+  },
+  {
+   "tier": 4,
+   "item": "ZOMBIE_GENERATOR_4",
+   "action": 24.0,
+   "storage": 384,
+   "cost": {
+    "ROTTEN_FLESH": 512
+   }
+  },
+  {
+   "tier": 5,
+   "item": "ZOMBIE_GENERATOR_5",
+   "action": 22.0,
+   "storage": 384,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 8
+   }
+  },
+  {
+   "tier": 6,
+   "item": "ZOMBIE_GENERATOR_6",
+   "action": 22.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 16
+   }
+  },
+  {
+   "tier": 7,
+   "item": "ZOMBIE_GENERATOR_7",
+   "action": 20.0,
+   "storage": 576,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 32
+   }
+  },
+  {
+   "tier": 8,
+   "item": "ZOMBIE_GENERATOR_8",
+   "action": 20.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 64
+   }
+  },
+  {
+   "tier": 9,
+   "item": "ZOMBIE_GENERATOR_9",
+   "action": 17.0,
+   "storage": 768,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 128
+   }
+  },
+  {
+   "tier": 10,
+   "item": "ZOMBIE_GENERATOR_10",
+   "action": 17.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 256
+   }
+  },
+  {
+   "tier": 11,
+   "item": "ZOMBIE_GENERATOR_11",
+   "action": 13.0,
+   "storage": 960,
+   "cost": {
+    "ENCHANTED_ROTTEN_FLESH": 512
+   }
+  }
+ ]
+}

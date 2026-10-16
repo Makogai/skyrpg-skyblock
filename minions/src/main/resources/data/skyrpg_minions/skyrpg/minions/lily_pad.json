@@ -1,0 +1,100 @@
+{
+ "type": "LILY_PAD",
+ "name": "Lily Pad Minion",
+ "category": "other",
+ "kind": "fishing",
+ "drops": [
+  {
+   "item": "WATER_LILY",
+   "min": 1.0,
+   "max": 1.0,
+   "chance": 1.0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": 1,
+   "item": "LILY_PAD_GENERATOR_1",
+   "action": 37.5,
+   "storage": 64,
+   "cost": {}
+  },
+  {
+   "tier": 2,
+   "item": "LILY_PAD_GENERATOR_2",
+   "action": 37.5,
+   "storage": 192,
+   "cost": {}
+  },
+  {
+   "tier": 3,
+   "item": "LILY_PAD_GENERATOR_3",
+   "action": 33.5,
+   "storage": 192,
+   "cost": {}
+  },
+  {
+   "tier": 4,
+   "item": "LILY_PAD_GENERATOR_4",
+   "action": 33.5,
+   "storage": 384,
+   "cost": {}
+  },
+  {
+   "tier": 5,
+   "item": "LILY_PAD_GENERATOR_5",
+   "action": 29.5,
+   "storage": 384,
+   "cost": {}
+  },
+  {
+   "tier": 6,
+   "item": "LILY_PAD_GENERATOR_6",
+   "action": 29.5,
+   "storage": 576,
+   "cost": {}
+  },
+  {
+   "tier": 7,
+   "item": "LILY_PAD_GENERATOR_7",
+   "action": 25.5,
+   "storage": 576,
+   "cost": {}
+  },
+  {
+   "tier": 8,
+   "item": "LILY_PAD_GENERATOR_8",
+   "action": 25.5,
+   "storage": 768,
+   "cost": {}
+  },
+  {
+   "tier": 9,
+   "item": "LILY_PAD_GENERATOR_9",
+   "action": 21.5,
+   "storage": 768,
+   "cost": {}
+  },
+  {
+   "tier": 10,
+   "item": "LILY_PAD_GENERATOR_10",
+   "action": 21.5,
+   "storage": 960,
+   "cost": {}
+  },
+  {
+   "tier": 11,
+   "item": "LILY_PAD_GENERATOR_11",
+   "action": 17.5,
+   "storage": 960,
+   "cost": {}
+  },
+  {
+   "tier": 12,
+   "item": "LILY_PAD_GENERATOR_12",
+   "action": 15.0,
+   "storage": 960,
+   "cost": {}
+  }
+ ]
+}
