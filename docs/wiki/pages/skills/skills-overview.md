@@ -48,6 +48,7 @@ Every level of every skill gives:
 
 A level up shows a notice and the list of rewards in chat:
 
+> [!NOTE]
 > **LEVEL UP** Mining ➜ IV
 > **Rewards**
 > Spelunker IV +16 Mining Fortune
