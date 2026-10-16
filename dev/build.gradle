@@ -17,6 +17,9 @@ def staging = project.hasProperty('staging')
 def camSize = (project.findProperty('camSize') ?: '1280x720').toString().split('x')
 def camOptionsFrom = rootProject.file('run/client/options.txt')
 def camOptionsTo = rootProject.file('run/client-cam/options.txt')
+// FurfSky Reborn's local copy (never committed) and where the camera client keeps resource packs.
+def furfDir = rootProject.file('furf')
+def camPacks = rootProject.file('run/client-cam/resourcepacks')
 
 repositories {
     maven {
@@ -41,6 +44,13 @@ dependencies {
     runtimeOnly "maven.modrinth:carpet:${carpet_version}"
     // BlueMap renders the world as a 3D web map (http://localhost:8110) so builds can be checked in a browser.
     runtimeOnly "maven.modrinth:bluemap:${bluemap_version}"
+    // Catharsis (MIT) draws SkyBlock items from Catharsis texture packs: FurfSky Reborn gives every item its look
+    // (docs/design/skyblock.md). Client runs only: the SkyBlock API it bundles crashes a dedicated server. Needs
+    // Fabric Language Kotlin.
+    if (gradle.startParameter.taskNames.any { it.contains('runClient') }) {
+        runtimeOnly "maven.modrinth:catharsis:NiyG56Rb"
+        runtimeOnly "maven.modrinth:fabric-language-kotlin:SKW1BTL3"
+    }
 
     // ./gradlew :dev:runClient -Pextras runs the client with the performance/quality-of-life mods the player pack
     // ships (tools/pack/modrinth.json), to check SkyRPG still works next to them. Off by default, so the live
@@ -79,6 +89,13 @@ if (cam) {
             def lines = camOptionsFrom.exists() ? camOptionsFrom.readLines('UTF-8') : []
             def overrides = ['pauseOnLostFocus': 'false', 'soundCategory_master': '0.0', 'fullscreen': 'false',
                              'onboardAccessibility': 'false', 'skipMultiplayerWarning': 'true', 'tutorialStep': 'none']
+            // FurfSky Reborn (the local copy in furf/, never committed) goes into the camera's resource packs, switched on.
+            def furf = furfDir.listFiles()?.find { it.name.endsWith('.zip') }
+            if (furf != null) {
+                camPacks.mkdirs()
+                java.nio.file.Files.copy(furf.toPath(), new File(camPacks, furf.name).toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                overrides['resourcePacks'] = '["vanilla","fabric","file/' + furf.name + '"]'
+            }
             def out = lines.findAll { line -> !overrides.containsKey(line.split(':', 2)[0]) }
             overrides.each { key, value -> out << "${key}:${value}".toString() }
             camOptionsTo.write(out.join('\n') + '\n', 'UTF-8')

@@ -59,10 +59,15 @@ public final class NetherRealm {
         Registry.register(BuiltInRegistries.FEATURE_TYPE, SkyRpgWorld.id("bone_fossil"), BoneFossilFeature.CODEC);
         Registry.register(BuiltInRegistries.FEATURE_TYPE, SkyRpgWorld.id("obsidian_spire"), ObsidianSpireFeature.CODEC);
 
-        // temperature, humidity, continentalness, erosion, depth, weirdness, offset
-        NetherBiomes.addNetherBiome(EMBER_FOREST, Climate.parameters(0.3f, -0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
-        NetherBiomes.addNetherBiome(BONE_SEA, Climate.parameters(-0.3f, -0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
-        NetherBiomes.addNetherBiome(OBSIDIAN_SPIRES, Climate.parameters(0.45f, 0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
+        // SkyBlock has no survival Nether (the Crimson Isle is its own island), so the reworked Nether's biomes are not
+        // added to the Nether's biome list. Adding them also broke vanilla's own registry setup for client mods that
+        // build it (Catharsis's SkyBlock API: "No value registered for key skyrpg_world:obsidian_spires").
+        if (Boolean.getBoolean("skyrpg.survivalNether")) {
+            // temperature, humidity, continentalness, erosion, depth, weirdness, offset
+            NetherBiomes.addNetherBiome(EMBER_FOREST, Climate.parameters(0.3f, -0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
+            NetherBiomes.addNetherBiome(BONE_SEA, Climate.parameters(-0.3f, -0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
+            NetherBiomes.addNetherBiome(OBSIDIAN_SPIRES, Climate.parameters(0.45f, 0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f));
+        }
 
         BiomeModifications.create(SkyRpgWorld.id("nether_monsters")).add(ModificationPhase.ADDITIONS,
                 BiomeSelectors.includeByKey(EMBER_FOREST, BONE_SEA, OBSIDIAN_SPIRES), (selection, context) -> {
