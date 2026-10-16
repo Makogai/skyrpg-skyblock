@@ -1,0 +1,1 @@
+{"output": "POTATO_GENERATOR_1", "count": 1, "grid": ["POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16", "WOOD_HOE:1", "POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16"], "requires": {"collection": "POTATO_ITEM", "tier": 1}}

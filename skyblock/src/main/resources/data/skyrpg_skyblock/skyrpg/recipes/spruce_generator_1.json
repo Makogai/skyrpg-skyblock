@@ -1,0 +1,1 @@
+{"output": "SPRUCE_GENERATOR_1", "count": 1, "grid": ["LOG:1:10", "LOG:1:10", "LOG:1:10", "LOG:1:10", "WOOD_AXE:1", "LOG:1:10", "LOG:1:10", "LOG:1:10", "LOG:1:10"], "requires": {"collection": "LOG:1", "tier": 1}}

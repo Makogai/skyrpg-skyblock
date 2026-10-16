@@ -51,8 +51,18 @@ phase so the next session can pick up where this one stopped.
       full" status, our own minion screen (3D minion, action timer, storage, Collect All, Upgrade with recipe costs,
       Pick Up), place on your own island only, 5 per profile. Known: the leather outfit doesn't render on the minion
       entity (vanilla armour stands show it; only the head slot renders) - cosmetic, look into later.
-- [ ] Minions: fuel and upgrade slots (coal, lava buckets, compactors, auto smelter, hoppers...), minion slots from
-      unique crafts, crafting minions (with the Recipe Book).
+- [x] Minions: fuel, shipping and two upgrade slots. 17 fuels (`skyrpg/minion_fuels`, from NEU lore: speed, real-time
+      duration, Catalyst output multipliers), burning item by item in real time, offline too (catch-up runs in stretches
+      between fuel items); only fuel that lasts forever comes back out. Upgrades in `MinionUpgrade`: Auto Smelter,
+      Compactor / Super Compactor 3000 / Dwarven (rules from the imported recipes, see `Recipes.block/enchanted`),
+      Diamond (1 per 10 items) / Potato (1 per 20, our estimate) spreading, Krampus Helmet (0.0045% per item), Minion
+      Expander (+1 reach, +5%), Flycatcher (+20%), Berberis Fuel Injector (+15%, farming), Solar Panel (+25% by SkyBlock
+      day), Enchanted Egg, Flint Shovel, Enchanted Shears, Soulflow Engines (half output, Raw Soulflow every 3m / 90s).
+      Budget / Enchanted Hopper sell overflow at 50% / 70% of `npc_sell_price`, coins held until Collect All.
+      Not yet: Corrupt Soil, Sleepy Hollow, the "only ONE per profile" limits, slayer requirements on upgrades.
+- [x] Recipes: `tools/skyblock/import_recipes.py`, 2,468 crafting grids from NEU with what unlocks each (collection
+      tier, slayer level), loaded by `skyblock` `Recipes`.
+- [ ] Minion slots from unique crafts, crafting minions (with the Recipe Book).
 - [ ] Collections 1:1 with the Recipe Book and enchanted materials.
 - [ ] Skills on Hypixel's XP tables and level rewards (NEU constants/leveling.json).
 - [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.

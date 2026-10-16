@@ -1,0 +1,1 @@
+{"output": "DIAMOND_GENERATOR_2", "count": 1, "grid": ["DIAMOND:20", "DIAMOND:20", "DIAMOND:20", "DIAMOND:20", "DIAMOND_GENERATOR_1:1", "DIAMOND:20", "DIAMOND:20", "DIAMOND:20", "DIAMOND:20"], "requires": {"collection": "DIAMOND", "tier": 1}}

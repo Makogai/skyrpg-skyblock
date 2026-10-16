@@ -1,0 +1,1 @@
+{"output": "WHEAT_GENERATOR_2", "count": 1, "grid": ["WHEAT:20", "WHEAT:20", "WHEAT:20", "WHEAT:20", "WHEAT_GENERATOR_1:1", "WHEAT:20", "WHEAT:20", "WHEAT:20", "WHEAT:20"], "requires": {"collection": "WHEAT", "tier": 1}}

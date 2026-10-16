@@ -1,0 +1,1 @@
+{"output": "ALERT_FLARE", "count": 1, "grid": ["", "ENCHANTED_SULPHUR:32", "INFERNO_VERTEX:8", "", "MOLTEN_POWDER:64", "", "INFERNO_VERTEX:8", "WARNING_FLARE:1", ""], "requires": {"slayer": "blaze", "level": 6}}

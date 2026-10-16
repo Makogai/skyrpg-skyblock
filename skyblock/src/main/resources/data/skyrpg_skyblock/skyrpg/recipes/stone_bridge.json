@@ -1,0 +1,1 @@
+{"output": "STONE_BRIDGE", "count": 1, "grid": ["SMOOTH_BRICK:8", "SMOOTH_BRICK:8", "SMOOTH_BRICK:8", "SMOOTH_BRICK:8", "EGG:1", "SMOOTH_BRICK:8", "SMOOTH_BRICK:8", "SMOOTH_BRICK:8", "SMOOTH_BRICK:8"], "requires": {"collection": "COBBLESTONE", "tier": 2}}

@@ -1,0 +1,1 @@
+{"output": "GOLD_GENERATOR_4", "count": 1, "grid": ["GOLD_INGOT:64", "GOLD_INGOT:64", "GOLD_INGOT:64", "GOLD_INGOT:64", "GOLD_GENERATOR_3:1", "GOLD_INGOT:64", "GOLD_INGOT:64", "GOLD_INGOT:64", "GOLD_INGOT:64"], "requires": {"collection": "GOLD_INGOT", "tier": 1}}

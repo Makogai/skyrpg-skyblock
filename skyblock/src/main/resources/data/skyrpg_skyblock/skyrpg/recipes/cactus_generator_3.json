@@ -1,0 +1,1 @@
+{"output": "CACTUS_GENERATOR_3", "count": 1, "grid": ["CACTUS:64", "CACTUS:64", "CACTUS:64", "CACTUS:64", "CACTUS_GENERATOR_2:1", "CACTUS:64", "CACTUS:64", "CACTUS:64", "CACTUS:64"], "requires": {"collection": "CACTUS", "tier": 1}}

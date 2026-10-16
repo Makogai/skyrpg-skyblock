@@ -1,0 +1,1 @@
+{"output": "LILY_PAD_GENERATOR_2", "count": 1, "grid": ["WATER_LILY:16", "WATER_LILY:16", "WATER_LILY:16", "WATER_LILY:16", "LILY_PAD_GENERATOR_1:1", "WATER_LILY:16", "WATER_LILY:16", "WATER_LILY:16", "WATER_LILY:16"], "requires": {"collection": "WATER_LILY", "tier": 1}}

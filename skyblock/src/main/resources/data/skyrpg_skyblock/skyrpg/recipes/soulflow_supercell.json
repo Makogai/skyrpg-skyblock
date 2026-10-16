@@ -1,0 +1,1 @@
+{"output": "SOULFLOW_SUPERCELL", "count": 1, "grid": ["NULL_OVOID:32", "NULL_OVOID:32", "NULL_OVOID:32", "NULL_ATOM:1", "SOULFLOW_BATTERY:1", "NULL_ATOM:1", "NULL_OVOID:32", "NULL_OVOID:32", "NULL_OVOID:32"], "requires": {"slayer": "enderman", "level": 7}}

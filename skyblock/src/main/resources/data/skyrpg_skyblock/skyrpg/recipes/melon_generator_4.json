@@ -1,0 +1,1 @@
+{"output": "MELON_GENERATOR_4", "count": 1, "grid": ["MELON_BLOCK:32", "MELON_BLOCK:32", "MELON_BLOCK:32", "MELON_BLOCK:32", "MELON_GENERATOR_3:1", "MELON_BLOCK:32", "MELON_BLOCK:32", "MELON_BLOCK:32", "MELON_BLOCK:32"], "requires": {"collection": "MELON", "tier": 1}}

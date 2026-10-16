@@ -1,0 +1,1 @@
+{"output": "WHALE_BAIT", "count": 1, "grid": ["", "", "", "FISH_BAIT:1", "LIGHT_BAIT:1", "DARK_BAIT:1", "", "", ""], "requires": {"collection": "WATER_LILY", "tier": 6}}

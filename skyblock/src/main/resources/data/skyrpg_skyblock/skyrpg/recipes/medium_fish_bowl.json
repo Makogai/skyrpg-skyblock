@@ -1,0 +1,1 @@
+{"output": "MEDIUM_FISH_BOWL", "count": 1, "grid": ["FIGSTONE:1", "TENDER_WOOD:32", "FIGSTONE:1", "TENDER_WOOD:32", "SMALL_FISH_BOWL:1", "TENDER_WOOD:32", "FIGSTONE:1", "TENDER_WOOD:32", "FIGSTONE:1"], "requires": {"collection": "TENDER_WOOD", "tier": 4}}

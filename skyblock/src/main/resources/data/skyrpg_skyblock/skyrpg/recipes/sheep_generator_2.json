@@ -1,0 +1,1 @@
+{"output": "SHEEP_GENERATOR_2", "count": 1, "grid": ["MUTTON:16", "MUTTON:16", "MUTTON:16", "MUTTON:16", "SHEEP_GENERATOR_1:1", "MUTTON:16", "MUTTON:16", "MUTTON:16", "MUTTON:16"], "requires": {"collection": "MUTTON", "tier": 1}}

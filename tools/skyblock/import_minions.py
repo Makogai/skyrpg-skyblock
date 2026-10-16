@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / "tools/skyblock/cache"
 ITEMS = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items"
 OUT = ROOT / "minions/src/main/resources/data/skyrpg_minions/skyrpg/minions"
+FUELS = ROOT / "minions/src/main/resources/data/skyrpg_minions/skyrpg/minion_fuels"
 NEU = "NotEnoughUpdates-REPO-master/"
 ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
@@ -121,6 +122,37 @@ def kind_of(minion):
     return {"kind": "block", "block": "minecraft:stone"}
 
 
+def fuels(neu, known):
+    """Every minion fuel with a plain effect: +speed% for a time (or for good), or a resource multiplier.
+    Fuels with special effects (Inferno fuels, Dayswitch...) only get their speed for now."""
+    if FUELS.exists():
+        shutil.rmtree(FUELS)
+    FUELS.mkdir(parents=True)
+    written = 0
+    for name in neu.namelist():
+        if not name.startswith(NEU + "items/") or not name.endswith(".json"):
+            continue
+        item = json.loads(neu.read(name))
+        lore = " ".join(re.sub("§.", "", line) for line in item.get("lore", []))
+        if "Minion Fuel" not in lore or item["internalname"] not in known or item["internalname"].startswith("INFERNO_"):
+            continue
+        speed = re.search(r"speed of your minion by (\d+)%", lore)
+        multiplier = re.search(r"resources created by (\d+)x for (\d+) hours", lore)
+        duration = re.search(r"for (\d+) (minutes|hours|days)", lore)
+        minutes = 0
+        if duration:
+            minutes = int(duration.group(1)) * {"minutes": 1, "hours": 60, "days": 1440}[duration.group(2)]
+        if multiplier:
+            minutes = int(multiplier.group(2)) * 60
+        if not speed and not multiplier:
+            continue
+        out = {"item": item["internalname"], "speed": int(speed.group(1)) if speed else 0,
+               "multiplier": int(multiplier.group(1)) if multiplier else 1, "minutes": minutes}
+        (FUELS / (item["internalname"].lower() + ".json")).write_text(json.dumps(out) + "\n", encoding="utf-8")
+        written += 1
+    print(f"Wrote {written} minion fuels")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--fetch", action="store_true", help="download wiki pages that aren't cached yet")
@@ -182,6 +214,7 @@ def main():
         (OUT / (minion.lower() + ".json")).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
         written += 1
     print(f"Wrote {written} minions to {OUT.relative_to(ROOT)}")
+    fuels(neu, {json.loads(f.read_text(encoding="utf-8"))["skyblock_id"] for f in ITEMS.glob("*.json")})
 
 
 if __name__ == "__main__":

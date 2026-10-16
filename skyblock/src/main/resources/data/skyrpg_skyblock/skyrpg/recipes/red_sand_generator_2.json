@@ -1,0 +1,1 @@
+{"output": "RED_SAND_GENERATOR_2", "count": 1, "grid": ["SAND:1:32", "SAND:1:32", "SAND:1:32", "SAND:1:32", "RED_SAND_GENERATOR_1:1", "SAND:1:32", "SAND:1:32", "SAND:1:32", "SAND:1:32"], "requires": {"collection": "SAND:1", "tier": 1}}

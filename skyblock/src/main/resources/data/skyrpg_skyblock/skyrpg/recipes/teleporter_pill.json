@@ -1,0 +1,1 @@
+{"output": "TELEPORTER_PILL", "count": 1, "grid": ["MOLTEN_POWDER:1", "ENCHANTED_SUGAR:64", "MOLTEN_POWDER:1", "INFERNO_VERTEX:1", "TELEPORT_PAD:64", "INFERNO_VERTEX:1", "MOLTEN_POWDER:1", "ENCHANTED_SUGAR:64", "MOLTEN_POWDER:1"], "requires": {"slayer": "blaze", "level": 4}}

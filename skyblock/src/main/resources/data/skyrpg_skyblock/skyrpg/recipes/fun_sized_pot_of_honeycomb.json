@@ -1,0 +1,1 @@
+{"output": "FUN_SIZED_POT_OF_HONEYCOMB", "count": 1, "grid": ["", "", "", "", "HONEYCOMB:64", "", "", "HELIX_LOG:64", ""], "requires": {"collection": "HONEYCOMB", "tier": 1}}

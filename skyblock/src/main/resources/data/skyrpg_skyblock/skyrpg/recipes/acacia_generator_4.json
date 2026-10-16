@@ -1,0 +1,1 @@
+{"output": "ACACIA_GENERATOR_4", "count": 1, "grid": ["LOG_2:64", "LOG_2:64", "LOG_2:64", "LOG_2:64", "ACACIA_GENERATOR_3:1", "LOG_2:64", "LOG_2:64", "LOG_2:64", "LOG_2:64"], "requires": {"collection": "LOG_2", "tier": 1}}

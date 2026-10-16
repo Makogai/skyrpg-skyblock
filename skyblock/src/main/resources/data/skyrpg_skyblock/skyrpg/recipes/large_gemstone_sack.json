@@ -1,0 +1,1 @@
+{"output": "LARGE_GEMSTONE_SACK", "count": 1, "grid": ["FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1", "MEDIUM_GEMSTONE_SACK:1", "FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1", "FINE_RUBY_GEM:1"], "requires": {"collection": "GEMSTONE_COLLECTION", "tier": 6}}

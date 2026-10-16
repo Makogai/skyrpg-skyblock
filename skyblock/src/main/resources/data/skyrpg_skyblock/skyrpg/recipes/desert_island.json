@@ -1,0 +1,1 @@
+{"output": "DESERT_ISLAND", "count": 1, "grid": ["CACTUS:5", "SUGAR_CANE:5", "CACTUS:5", "SAND:5", "SAND:5", "SAND:5", "SAND:5", "SAND:5", "SAND:5"], "requires": {"collection": "CACTUS", "tier": 5}}

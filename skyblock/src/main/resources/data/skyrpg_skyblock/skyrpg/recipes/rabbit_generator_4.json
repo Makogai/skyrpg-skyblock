@@ -1,0 +1,1 @@
+{"output": "RABBIT_GENERATOR_4", "count": 1, "grid": ["RABBIT:64", "RABBIT:64", "RABBIT:64", "RABBIT:64", "RABBIT_GENERATOR_3:1", "RABBIT:64", "RABBIT:64", "RABBIT:64", "RABBIT:64"], "requires": {"collection": "RABBIT", "tier": 1}}

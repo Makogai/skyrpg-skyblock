@@ -1,0 +1,1 @@
+{"output": "NEARLY_WHOLE_CARROT", "count": 1, "grid": ["", "HALF_EATEN_CARROT:16", "", "HALF_EATEN_CARROT:16", "HALF_EATEN_CARROT:16", "HALF_EATEN_CARROT:16", "", "HALF_EATEN_CARROT:16", ""], "requires": {"collection": "HALF_EATEN_CARROT", "tier": 1}}

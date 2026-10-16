@@ -1,0 +1,1 @@
+{"output": "CACTUS_GENERATOR_2", "count": 1, "grid": ["CACTUS:32", "CACTUS:32", "CACTUS:32", "CACTUS:32", "CACTUS_GENERATOR_1:1", "CACTUS:32", "CACTUS:32", "CACTUS:32", "CACTUS:32"], "requires": {"collection": "CACTUS", "tier": 1}}

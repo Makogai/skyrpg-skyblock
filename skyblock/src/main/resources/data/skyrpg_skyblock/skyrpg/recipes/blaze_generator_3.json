@@ -1,0 +1,1 @@
+{"output": "BLAZE_GENERATOR_3", "count": 1, "grid": ["BLAZE_ROD:40", "BLAZE_ROD:40", "BLAZE_ROD:40", "BLAZE_ROD:40", "BLAZE_GENERATOR_2:1", "BLAZE_ROD:40", "BLAZE_ROD:40", "BLAZE_ROD:40", "BLAZE_ROD:40"], "requires": {"collection": "BLAZE_ROD", "tier": 1}}

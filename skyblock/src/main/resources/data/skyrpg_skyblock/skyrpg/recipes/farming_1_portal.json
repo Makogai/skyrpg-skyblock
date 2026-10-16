@@ -1,0 +1,1 @@
+{"output": "FARMING_1_PORTAL", "count": 1, "grid": ["CARROT_ITEM:16", "CARROT_ITEM:16", "CARROT_ITEM:16", "POTATO_ITEM:16", "ENDER_PEARL:16", "POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16", "POTATO_ITEM:16"], "requires": {"collection": "POTATO_ITEM", "tier": 2}}

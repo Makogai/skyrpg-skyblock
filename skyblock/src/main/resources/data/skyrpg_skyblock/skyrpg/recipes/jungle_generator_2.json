@@ -1,0 +1,1 @@
+{"output": "JUNGLE_GENERATOR_2", "count": 1, "grid": ["LOG:3:20", "LOG:3:20", "LOG:3:20", "LOG:3:20", "JUNGLE_GENERATOR_1:1", "LOG:3:20", "LOG:3:20", "LOG:3:20", "LOG:3:20"], "requires": {"collection": "LOG:3", "tier": 1}}

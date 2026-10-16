@@ -1,0 +1,1 @@
+{"output": "COAL_GENERATOR_4", "count": 1, "grid": ["COAL:64", "COAL:64", "COAL:64", "COAL:64", "COAL_GENERATOR_3:1", "COAL:64", "COAL:64", "COAL:64", "COAL:64"], "requires": {"collection": "COAL", "tier": 1}}

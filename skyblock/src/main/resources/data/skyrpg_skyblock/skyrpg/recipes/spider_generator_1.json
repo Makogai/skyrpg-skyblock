@@ -1,0 +1,1 @@
+{"output": "SPIDER_GENERATOR_1", "count": 1, "grid": ["STRING:10", "STRING:10", "STRING:10", "STRING:10", "WOOD_SWORD:1", "STRING:10", "STRING:10", "STRING:10", "STRING:10"], "requires": {"collection": "STRING", "tier": 1}}

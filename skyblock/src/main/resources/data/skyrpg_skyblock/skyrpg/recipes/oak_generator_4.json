@@ -1,0 +1,1 @@
+{"output": "OAK_GENERATOR_4", "count": 1, "grid": ["LOG:64", "LOG:64", "LOG:64", "LOG:64", "OAK_GENERATOR_3:1", "LOG:64", "LOG:64", "LOG:64", "LOG:64"], "requires": {"collection": "LOG", "tier": 1}}

@@ -8,6 +8,7 @@ import com.skyrpg.skyblock.island.Islands;
 import com.skyrpg.skyblock.profile.ProfileCommands;
 import com.skyrpg.skyblock.profile.ProfileListPayload;
 import com.skyrpg.skyblock.profile.Profiles;
+import com.skyrpg.skyblock.recipe.Recipes;
 import com.skyrpg.skyblock.storage.StoragePayloads;
 import com.skyrpg.skyblock.time.SkyBlockClock;
 import com.skyrpg.skyblock.travel.FastTravel;
@@ -43,6 +44,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         StoragePayloads.init();
         FastTravel.init();
         Zones.init();
+        Recipes.init();
         // The hub's portal leads to your island, not the survival world.
         Hub.setGate("Warping you to your island...", Islands::sendHome);
         // Profiles take over player data once the server is up (the overworld holds the profile list).

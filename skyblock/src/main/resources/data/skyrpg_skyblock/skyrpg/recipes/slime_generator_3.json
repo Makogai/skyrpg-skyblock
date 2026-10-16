@@ -1,0 +1,1 @@
+{"output": "SLIME_GENERATOR_3", "count": 1, "grid": ["SLIME_BALL:40", "SLIME_BALL:40", "SLIME_BALL:40", "SLIME_BALL:40", "SLIME_GENERATOR_2:1", "SLIME_BALL:40", "SLIME_BALL:40", "SLIME_BALL:40", "SLIME_BALL:40"], "requires": {"collection": "SLIME_BALL", "tier": 1}}

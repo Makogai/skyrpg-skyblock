@@ -1,0 +1,1 @@
+{"output": "MUTANT_NETHER_STALK", "count": 1, "grid": ["", "ENCHANTED_NETHER_STALK:32", "", "ENCHANTED_NETHER_STALK:32", "ENCHANTED_NETHER_STALK:32", "ENCHANTED_NETHER_STALK:32", "", "ENCHANTED_NETHER_STALK:32", ""], "requires": {"collection": "NETHER_STALK", "tier": 11}}

@@ -1,0 +1,1 @@
+{"output": "CARROT_GENERATOR_1", "count": 1, "grid": ["CARROT_ITEM:16", "CARROT_ITEM:16", "CARROT_ITEM:16", "CARROT_ITEM:16", "WOOD_HOE:1", "CARROT_ITEM:16", "CARROT_ITEM:16", "CARROT_ITEM:16", "CARROT_ITEM:16"], "requires": {"collection": "CARROT_ITEM", "tier": 1}}

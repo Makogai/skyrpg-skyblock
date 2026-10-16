@@ -3,6 +3,8 @@ package com.skyrpg.skyblock;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
+import java.util.Locale;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 
@@ -26,6 +28,23 @@ public final class SkyStacks {
         }
         ItemDefinition def = ItemRegistry.skyblock(skyblockId);
         return def != null && plain(def) && stack.is(def.item()) && SkyItems.definition(stack) == null;
+    }
+
+    /**
+     * The SkyBlock id of a stack: its own, or for a plain vanilla stack the SkyBlock item it's the material of (coal
+     * mined from an ore is "COAL"). Null when it's neither.
+     */
+    public static String id(ItemStack stack) {
+        if (stack.isEmpty()) {
+            return null;
+        }
+        String id = SkyItems.skyblockId(stack);
+        if (id != null || SkyItems.definition(stack) != null) {
+            return id;
+        }
+        String guess = BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath().toUpperCase(Locale.ROOT);
+        ItemDefinition def = ItemRegistry.skyblock(guess);
+        return def != null && plain(def) && stack.is(def.item()) ? guess : null;
     }
 
     /** A SkyBlock item that is nothing but its material (no skin, colour or stats), like Cobblestone or Wheat. */

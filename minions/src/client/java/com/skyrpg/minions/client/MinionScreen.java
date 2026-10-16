@@ -20,11 +20,16 @@ import net.minecraft.util.Util;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import com.skyrpg.minions.MinionUpgrade;
+import com.skyrpg.items.SkyItems;
 
 /**
- * A minion, SkyRPG style: the minion itself turning on a glowing stand with a ring that fills up to its next action,
- * its storage (locked slots dark until a higher tier), and three buttons: collect everything, upgrade to the next
- * tier (with what it takes, ticked off when you have it), and pick it up.
+ * A minion, SkyRPG style: the minion itself turning on a glowing stand with a bar that fills up to its next action,
+ * its storage (locked slots dark until a higher tier), its fuel, shipping and upgrade slots (ghost icons until filled,
+ * with what each does), and three buttons: collect everything, upgrade to the next tier (with what it takes, ticked
+ * off when you have it), and pick it up.
  */
 public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
     private static final int BUTTON_H = 16;
@@ -70,13 +75,22 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
         int barX = px + 8;
         int barW = MinionMenu.LEFT_W - 16;
         Draw.bar(g, barX, py + 70, barW, 4, menu.full() ? 1f : progress, menu.full() ? Theme.RED : accent);
-        String timer = menu.full() ? "Storage full!" : "Next action in " + String.format("%.1f", Math.max(0, view.actionSeconds() * (1 - progress))) + "s";
+        float seconds = menu.actionSeconds();
+        String timer = menu.full() ? "Storage full!" : "Next action in " + String.format("%.1f", Math.max(0, seconds * (1 - progress))) + "s";
         Draw.fit(g, font, Component.literal(timer), px + MinionMenu.LEFT_W / 2, py + 77, barW, 1f, 0.7f, Draw.Align.CENTER,
                 menu.full() ? Theme.RED : Theme.MUTED, false);
-        Draw.fit(g, font, Component.literal("⏱ " + trim(view.actionSeconds()) + "s per action").withColor(Theme.TEXT),
-                px + MinionMenu.LEFT_W / 2, py + 87, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
+        Component speed = Component.literal("⏱ " + trim(seconds) + "s per action").withColor(Theme.TEXT);
+        if (menu.speedPercent() > 0) {
+            speed = speed.copy().append(Component.literal(" +" + menu.speedPercent() + "%").withColor(Theme.GREEN));
+        }
+        Draw.fit(g, font, speed, px + MinionMenu.LEFT_W / 2, py + 87, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
         Draw.fit(g, font, Component.literal("Generated ").withColor(Theme.DIM).append(Component.literal(Msg.number(menu.generated())).withColor(accent)),
                 px + MinionMenu.LEFT_W / 2, py + 96, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
+        Draw.fit(g, font, fuelLine(), px + MinionMenu.LEFT_W / 2, py + 105, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.TEXT, false);
+        if (menu.heldCoins() > 0) {
+            Draw.fit(g, font, Component.literal("⛃ " + Msg.number(menu.heldCoins()) + " coins held").withColor(Theme.ACCENT),
+                    px + MinionMenu.LEFT_W / 2, py + 113, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.ACCENT, false);
+        }
 
         // Storage.
         int gx = x + MinionMenu.GRID_X;
@@ -120,19 +134,93 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
         }
         button(g, font, bx, y + MinionMenu.TOP + MinionMenu.LEFT_H - BUTTON_H, "Pick Up", Theme.RED, true, mouseX, mouseY);
 
-        // Fuel and upgrades: Hypixel's three slots, not working yet.
-        int ux = x + MinionMenu.GRID_X;
-        int uy = y + MinionMenu.GRID_Y + 3 * 18 + 22;
-        Draw.text(g, font, "Fuel", ux, uy - 10, Theme.DIM);
-        Draw.text(g, font, "Upgrades", ux + 30, uy - 10, Theme.DIM);
-        for (int i = 0; i < 3; i++) {
-            int sx = ux + (i == 0 ? 0 : 30 + (i - 1) * 20);
-            g.fill(sx, uy, sx + 18, uy + 18, 0xFF0E1118);
-            g.fill(sx + 1, uy + 1, sx + 17, uy + 17, 0xFF11151D);
+        // Fuel, shipping and upgrades: wells with a ghost of what goes in, and a glow on the ones at work.
+        int uy = y + MinionMenu.PARTS_Y;
+        Draw.fit(g, font, Component.literal("Fuel · Ship"), x + MinionMenu.partX(0), uy - 9, 38, 1f, 0.6f, Draw.Align.LEFT, Theme.DIM, false);
+        Draw.fit(g, font, Component.literal("Upgrades"), x + MinionMenu.partX(2), uy - 9, 38, 1f, 0.6f, Draw.Align.LEFT, Theme.DIM, false);
+        for (int part = 0; part < 4; part++) {
+            int sx = x + MinionMenu.partX(part);
+            ItemStack in = menu.getSlot(MinionMenu.FUEL + part).getItem();
+            int glow = part == 0 ? Theme.ACCENT : part == 1 ? Theme.GREEN : accent;
+            if (!in.isEmpty()) {
+                g.fillGradient(sx - 1, uy - 1, sx + 19, uy + 19, Draw.withAlpha(glow, 0.55f), Draw.withAlpha(glow, 0.15f));
+            }
+            SkyScreens.well(g, sx, uy);
+            if (in.isEmpty()) {
+                ItemStack ghost = new ItemStack(part == 0 ? Items.COAL : part == 1 ? Items.HOPPER : Items.REDSTONE);
+                Draw.item(g, ghost, sx + 1, uy + 1, 1f);
+                g.fill(sx + 1, uy + 1, sx + 17, uy + 17, 0xB011151D);
+            }
         }
 
         SkyScreens.label(g, font, "Inventory", x + MinionMenu.INV_X, y + MinionMenu.INV_Y - 11);
         SkyScreens.inventoryWells(g, menu, MinionEntity.MAX_SLOTS, x, y);
+    }
+
+    private Component fuelLine() {
+        ItemStack fuel = menu.getSlot(MinionMenu.FUEL).getItem();
+        if (fuel.isEmpty()) {
+            return Component.literal("No fuel").withColor(Theme.DIM);
+        }
+        long seconds = menu.fuelSeconds();
+        Component left = Component.literal(seconds < 0 ? "forever" : duration(seconds) + " left").withColor(Theme.ACCENT);
+        return Component.literal("🔥 ").withColor(Theme.ACCENT).append(fuel.getHoverName().copy().withColor(Theme.TEXT))
+                .append(Component.literal(" · ").withColor(Theme.DIM)).append(left);
+    }
+
+    /** "2h 15m", "4m 30s", "12s". */
+    static String duration(long seconds) {
+        if (seconds >= 86_400) {
+            return seconds / 86_400 + "d " + seconds % 86_400 / 3600 + "h";
+        }
+        if (seconds >= 3600) {
+            return seconds / 3600 + "h " + seconds % 3600 / 60 + "m";
+        }
+        if (seconds >= 60) {
+            return seconds / 60 + "m " + seconds % 60 + "s";
+        }
+        return seconds + "s";
+    }
+
+    /** What an empty or filled part slot says when you hover it. */
+    private List<Component> partTooltip(int part) {
+        ItemStack in = menu.getSlot(MinionMenu.FUEL + part).getItem();
+        List<Component> lines = new ArrayList<>();
+        switch (part) {
+            case 0 -> {
+                lines.add(Component.literal("Fuel").withColor(Theme.ACCENT));
+                lines.add(Component.literal("Makes your minion work faster while it burns.").withColor(Theme.MUTED));
+                lines.add(Component.literal("Coal, Enchanted Lava Buckets, Catalysts...").withColor(Theme.DIM));
+                lines.add(Component.literal("Burning fuel can't be taken back out,").withColor(Theme.DIM));
+                lines.add(Component.literal("except fuel that lasts forever.").withColor(Theme.DIM));
+            }
+            case 1 -> {
+                lines.add(Component.literal("Automated Shipping").withColor(Theme.GREEN));
+                lines.add(Component.literal("A hopper here sells what doesn't fit").withColor(Theme.MUTED));
+                lines.add(Component.literal("into storage, for a share of its NPC price.").withColor(Theme.MUTED));
+                lines.add(Component.literal("Budget Hopper 50%, Enchanted Hopper 70%").withColor(Theme.DIM));
+                if (menu.heldCoins() > 0) {
+                    lines.add(Component.literal("Held: " + Msg.number(menu.heldCoins()) + " coins (Collect All)").withColor(Theme.ACCENT));
+                }
+            }
+            default -> {
+                MinionUpgrade upgrade = MinionUpgrade.of(SkyItems.skyblockId(in));
+                lines.add(Component.literal("Upgrade slot").withColor(accent()));
+                if (upgrade != null) {
+                    lines.add(Component.literal(upgrade.effect()).withColor(Theme.TEXT));
+                    if (upgrade.speed() > 0) {
+                        lines.add(Component.literal("+" + upgrade.speed() + "% speed").withColor(Theme.GREEN));
+                    }
+                } else {
+                    lines.add(Component.literal("Compactors, Auto Smelters, Diamond Spreading,").withColor(Theme.MUTED));
+                    lines.add(Component.literal("Minion Expanders, Flycatchers...").withColor(Theme.MUTED));
+                }
+            }
+        }
+        if (part == 0 && menu.outputMultiplier() > 1) {
+            lines.add(Component.literal("x" + trim(menu.outputMultiplier()) + " output").withColor(Theme.GREEN));
+        }
+        return lines;
     }
 
     private static String trim(float seconds) {
@@ -179,14 +267,14 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
     @Override
     public void extractRenderState(GuiGraphicsExtractor g, int mouseX, int mouseY, float partialTick) {
         super.extractRenderState(g, mouseX, mouseY, partialTick);
+        if (hoveredSlot != null && hoveredSlot.index >= MinionMenu.FUEL && hoveredSlot.index < MinionMenu.PARTS_END && !hoveredSlot.hasItem()
+                && menu.getCarried().isEmpty()) {
+            int part = hoveredSlot.index - MinionMenu.FUEL;
+            Draw.queueTooltip(partTooltip(part), part == 0 ? Theme.ACCENT : part == 1 ? Theme.GREEN : accent());
+        }
         if (hoveredSlot == null && menu.getCarried().isEmpty()) {
             int bx = leftPos + MinionMenu.BUTTONS_X;
             int cy = topPos + MinionMenu.TOP + 2 * (BUTTON_H + 4);
-            int uy = topPos + MinionMenu.GRID_Y + 3 * 18 + 22;
-            if (SkyScreens.inside(mouseX, mouseY, leftPos + MinionMenu.GRID_X, uy, 70, 18)) {
-                Draw.queueTooltip(List.of(Component.literal("Fuel and upgrades").withColor(Theme.ACCENT),
-                        Component.literal("Coal, Enchanted Lava Buckets, Compactors, Auto Smelters... coming soon").withColor(Theme.MUTED)), Theme.ACCENT);
-            }
             for (MinionMenu.Cost cost : menu.view().upgrade()) {
                 if (SkyScreens.inside(mouseX, mouseY, bx, cy, MinionMenu.BUTTON_W, 12)) {
                     List<Component> lines = new ArrayList<>();

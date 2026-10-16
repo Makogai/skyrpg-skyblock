@@ -1,0 +1,1 @@
+{"output": "CLAY_GENERATOR_4", "count": 1, "grid": ["CLAY_BALL:64", "CLAY_BALL:64", "CLAY_BALL:64", "CLAY_BALL:64", "CLAY_GENERATOR_3:1", "CLAY_BALL:64", "CLAY_BALL:64", "CLAY_BALL:64", "CLAY_BALL:64"], "requires": {"collection": "CLAY_BALL", "tier": 1}}

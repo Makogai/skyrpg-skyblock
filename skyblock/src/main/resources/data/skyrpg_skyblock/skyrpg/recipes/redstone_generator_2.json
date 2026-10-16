@@ -1,0 +1,1 @@
+{"output": "REDSTONE_GENERATOR_2", "count": 1, "grid": ["REDSTONE:32", "REDSTONE:32", "REDSTONE:32", "REDSTONE:32", "REDSTONE_GENERATOR_1:1", "REDSTONE:32", "REDSTONE:32", "REDSTONE:32", "REDSTONE:32"], "requires": {"collection": "REDSTONE", "tier": 1}}

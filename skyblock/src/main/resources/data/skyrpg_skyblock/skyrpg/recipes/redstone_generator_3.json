@@ -1,0 +1,1 @@
+{"output": "REDSTONE_GENERATOR_3", "count": 1, "grid": ["REDSTONE:64", "REDSTONE:64", "REDSTONE:64", "REDSTONE:64", "REDSTONE_GENERATOR_2:1", "REDSTONE:64", "REDSTONE:64", "REDSTONE:64", "REDSTONE:64"], "requires": {"collection": "REDSTONE", "tier": 1}}

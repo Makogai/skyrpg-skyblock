@@ -1,0 +1,1 @@
+{"output": "SPIDER_GENERATOR_3", "count": 1, "grid": ["STRING:40", "STRING:40", "STRING:40", "STRING:40", "SPIDER_GENERATOR_2:1", "STRING:40", "STRING:40", "STRING:40", "STRING:40"], "requires": {"collection": "STRING", "tier": 1}}

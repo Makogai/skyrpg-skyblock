@@ -1,0 +1,1 @@
+{"output": "ICE_GENERATOR_6", "count": 1, "grid": ["PACKED_ICE:32", "PACKED_ICE:32", "PACKED_ICE:32", "PACKED_ICE:32", "ICE_GENERATOR_5:1", "PACKED_ICE:32", "PACKED_ICE:32", "PACKED_ICE:32", "PACKED_ICE:32"], "requires": {"collection": "ICE", "tier": 1}}

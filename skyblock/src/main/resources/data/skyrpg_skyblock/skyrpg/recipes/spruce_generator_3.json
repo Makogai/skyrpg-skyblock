@@ -1,0 +1,1 @@
+{"output": "SPRUCE_GENERATOR_3", "count": 1, "grid": ["LOG:1:40", "LOG:1:40", "LOG:1:40", "LOG:1:40", "SPRUCE_GENERATOR_2:1", "LOG:1:40", "LOG:1:40", "LOG:1:40", "LOG:1:40"], "requires": {"collection": "LOG:1", "tier": 1}}

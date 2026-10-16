@@ -1,0 +1,1 @@
+{"output": "SIMPLE_CARROT_CANDY", "count": 1, "grid": ["CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64", "CARROT_ITEM:64"], "requires": {"collection": "CARROT_ITEM", "tier": 2}}

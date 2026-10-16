@@ -1,0 +1,1 @@
+{"output": "BIRCH_GENERATOR_4", "count": 1, "grid": ["LOG:2:64", "LOG:2:64", "LOG:2:64", "LOG:2:64", "BIRCH_GENERATOR_3:1", "LOG:2:64", "LOG:2:64", "LOG:2:64", "LOG:2:64"], "requires": {"collection": "LOG:2", "tier": 1}}

@@ -51,6 +51,7 @@ public final class SkyRpgMinions implements ModInitializer {
     public void onInitialize() {
         FabricDefaultAttributeRegistry.register(MINION, ArmorStand.createAttributes());
         JsonDataLoader.register(id("minions"), Minions.DIRECTORY, Minions::load);
+        JsonDataLoader.register(id("minion_fuels"), MinionFuels.DIRECTORY, MinionFuels::load);
         UseBlockCallback.EVENT.register((player, level, hand, hit) -> {
             ItemStack held = player.getItemInHand(hand);
             Minions.Placed placed = Minions.fromItem(SkyItems.skyblockId(held));

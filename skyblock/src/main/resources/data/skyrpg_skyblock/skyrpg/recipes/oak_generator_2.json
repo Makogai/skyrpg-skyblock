@@ -1,0 +1,1 @@
+{"output": "OAK_GENERATOR_2", "count": 1, "grid": ["LOG:20", "LOG:20", "LOG:20", "LOG:20", "OAK_GENERATOR_1:1", "LOG:20", "LOG:20", "LOG:20", "LOG:20"], "requires": {"collection": "LOG", "tier": 1}}

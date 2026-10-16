@@ -1,0 +1,1 @@
+{"output": "POTATO_GENERATOR_3", "count": 1, "grid": ["POTATO_ITEM:64", "POTATO_ITEM:64", "POTATO_ITEM:64", "POTATO_ITEM:64", "POTATO_GENERATOR_2:1", "POTATO_ITEM:64", "POTATO_ITEM:64", "POTATO_ITEM:64", "POTATO_ITEM:64"], "requires": {"collection": "POTATO_ITEM", "tier": 1}}

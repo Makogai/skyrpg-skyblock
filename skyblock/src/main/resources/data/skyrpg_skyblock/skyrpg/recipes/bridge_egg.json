@@ -1,0 +1,1 @@
+{"output": "BRIDGE_EGG", "count": 1, "grid": ["STONE:1", "STONE:1", "STONE:1", "STONE:1", "EGG:5", "STONE:1", "STONE:1", "STONE:1", "STONE:1"], "requires": {"collection": "RAW_CHICKEN", "tier": 2}}

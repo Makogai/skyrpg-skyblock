@@ -1,0 +1,1 @@
+{"output": "GRAVEL_GENERATOR_2", "count": 1, "grid": ["GRAVEL:20", "GRAVEL:20", "GRAVEL:20", "GRAVEL:20", "GRAVEL_GENERATOR_1:1", "GRAVEL:20", "GRAVEL:20", "GRAVEL:20", "GRAVEL:20"], "requires": {"collection": "GRAVEL", "tier": 1}}

@@ -1,0 +1,1 @@
+{"output": "FISHING_GENERATOR_3", "count": 1, "grid": ["RAW_FISH:32", "RAW_FISH:32", "RAW_FISH:32", "RAW_FISH:32", "FISHING_GENERATOR_2:1", "RAW_FISH:32", "RAW_FISH:32", "RAW_FISH:32", "RAW_FISH:32"], "requires": {"collection": "RAW_FISH", "tier": 2}}

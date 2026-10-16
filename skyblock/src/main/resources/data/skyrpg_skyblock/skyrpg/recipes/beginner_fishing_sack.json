@@ -1,0 +1,1 @@
+{"output": "BEGINNER_FISHING_SACK", "count": 1, "grid": ["RAW_FISH:3:1", "RAW_FISH:3:1", "RAW_FISH:3:1", "RAW_FISH:3:1", "LEATHER:1", "RAW_FISH:3:1", "RAW_FISH:3:1", "RAW_FISH:3:1", "RAW_FISH:3:1"], "requires": {"collection": "RAW_FISH:3", "tier": 2}}

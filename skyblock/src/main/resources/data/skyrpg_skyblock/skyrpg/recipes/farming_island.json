@@ -1,0 +1,1 @@
+{"output": "FARMING_ISLAND", "count": 1, "grid": ["WHEAT:32", "WHEAT:32", "WHEAT:32", "DIRT:5", "DIRT:5", "DIRT:5", "DIRT:5", "DIRT:5", "DIRT:5"], "requires": {"collection": "WHEAT", "tier": 6}}
