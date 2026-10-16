@@ -1,0 +1,5720 @@
+{
+ "snapshot": 1792175302830,
+ "categories": [
+  {
+   "name": "Farming",
+   "groups": [
+    {
+     "name": "Cactus",
+     "icon": "CACTUS",
+     "products": [
+      {
+       "id": "CACTUS",
+       "buy": 8.5,
+       "sell": 1.5
+      },
+      {
+       "id": "ENCHANTED_CACTUS_GREEN",
+       "buy": 699.0,
+       "sell": 618.1
+      },
+      {
+       "id": "ENCHANTED_CACTUS",
+       "buy": 103270.2,
+       "sell": 100001.1
+      },
+      {
+       "id": "THORNY_VINES",
+       "buy": 1972501.2,
+       "sell": 146128.4
+      }
+     ]
+    },
+    {
+     "name": "Carrot",
+     "icon": "CARROT_ITEM",
+     "products": [
+      {
+       "id": "CARROT_ITEM",
+       "buy": 5.0,
+       "sell": 0.4
+      },
+      {
+       "id": "ENCHANTED_CARROT",
+       "buy": 543.8,
+       "sell": 465.6
+      },
+      {
+       "id": "CARROT_BAIT",
+       "buy": 1485.9,
+       "sell": 239.2
+      },
+      {
+       "id": "SIMPLE_CARROT_CANDY",
+       "buy": 15999.2,
+       "sell": 2001.1
+      },
+      {
+       "id": "ENCHANTED_CARROT_STICK",
+       "buy": 20000.0,
+       "sell": 1000.2
+      },
+      {
+       "id": "ENCHANTED_GOLDEN_CARROT",
+       "buy": 78137.4,
+       "sell": 75005.6
+      },
+      {
+       "id": "GREAT_CARROT_CANDY",
+       "buy": 199990.3,
+       "sell": 154428.8
+      },
+      {
+       "id": "SUPERB_CARROT_CANDY",
+       "buy": 2129999.4,
+       "sell": 1900002.5
+      },
+      {
+       "id": "ULTIMATE_CARROT_CANDY",
+       "buy": 2599999.8,
+       "sell": 2220004.8
+      }
+     ]
+    },
+    {
+     "name": "Cocoa Beans",
+     "icon": "INK_SACK:3",
+     "products": [
+      {
+       "id": "INK_SACK:3",
+       "buy": 10.7,
+       "sell": 0.6
+      },
+      {
+       "id": "ENCHANTED_COCOA",
+       "buy": 527.8,
+       "sell": 465.1
+      },
+      {
+       "id": "ENCHANTED_COOKIE",
+       "buy": 79134.1,
+       "sell": 75784.1
+      }
+     ]
+    },
+    {
+     "name": "Feather",
+     "icon": "FEATHER",
+     "products": [
+      {
+       "id": "FEATHER",
+       "buy": 21.9,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTED_FEATHER",
+       "buy": 515.0,
+       "sell": 305.8
+      }
+     ]
+    },
+    {
+     "name": "Leather",
+     "icon": "LEATHER",
+     "products": [
+      {
+       "id": "LEATHER",
+       "buy": 199.5,
+       "sell": 128.0
+      },
+      {
+       "id": "ENCHANTED_LEATHER",
+       "buy": 826.7,
+       "sell": 684.2
+      }
+     ]
+    },
+    {
+     "name": "Melon Slice",
+     "icon": "MELON",
+     "products": [
+      {
+       "id": "MELON",
+       "buy": 4.9,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTED_MELON",
+       "buy": 329.9,
+       "sell": 304.0
+      },
+      {
+       "id": "MELON_BLOCK",
+       "buy": 402.7,
+       "sell": 24.6
+      },
+      {
+       "id": "ENCHANTED_MELON_BLOCK",
+       "buy": 51341.3,
+       "sell": 50326.4
+      }
+     ]
+    },
+    {
+     "name": "Moonflower",
+     "icon": "MOONFLOWER",
+     "products": [
+      {
+       "id": "MOONFLOWER",
+       "buy": 4.6,
+       "sell": 0.6
+      },
+      {
+       "id": "ENCHANTED_MOONFLOWER",
+       "buy": 718.0,
+       "sell": 637.5
+      },
+      {
+       "id": "COMPACTED_MOONFLOWER",
+       "buy": 105117.7,
+       "sell": 102854.2
+      },
+      {
+       "id": "NIGHTSWITCH",
+       "buy": 189999.9,
+       "sell": 20000.8
+      },
+      {
+       "id": "MOONSTONE",
+       "buy": 1957519.5,
+       "sell": 1054393.4
+      }
+     ]
+    },
+    {
+     "name": "Mushroom",
+     "icon": "RED_MUSHROOM",
+     "products": [
+      {
+       "id": "RED_MUSHROOM",
+       "buy": 10.2,
+       "sell": 6.1
+      },
+      {
+       "id": "BROWN_MUSHROOM",
+       "buy": 10.4,
+       "sell": 2.8
+      },
+      {
+       "id": "HUGE_MUSHROOM_2",
+       "buy": 0.0,
+       "sell": 16.6
+      },
+      {
+       "id": "HUGE_MUSHROOM_1",
+       "buy": 542.0,
+       "sell": 22.0
+      },
+      {
+       "id": "ENCHANTED_RED_MUSHROOM",
+       "buy": 1630.0,
+       "sell": 1565.4
+      },
+      {
+       "id": "ENCHANTED_BROWN_MUSHROOM",
+       "buy": 1691.8,
+       "sell": 1565.7
+      },
+      {
+       "id": "ENCHANTED_FERMENTED_SPIDER_EYE",
+       "buy": 86004.2,
+       "sell": 73538.9
+      },
+      {
+       "id": "ENCHANTED_HUGE_MUSHROOM_2",
+       "buy": 255572.2,
+       "sell": 251914.4
+      },
+      {
+       "id": "ENCHANTED_HUGE_MUSHROOM_1",
+       "buy": 255998.8,
+       "sell": 251379.8
+      }
+     ]
+    },
+    {
+     "name": "Nether Wart",
+     "icon": "NETHER_STALK",
+     "products": [
+      {
+       "id": "NETHER_STALK",
+       "buy": 4.0,
+       "sell": 0.7
+      },
+      {
+       "id": "ENCHANTED_NETHER_STALK",
+       "buy": 654.9,
+       "sell": 623.4
+      },
+      {
+       "id": "MUTANT_NETHER_STALK",
+       "buy": 102999.6,
+       "sell": 100900.4
+      }
+     ]
+    },
+    {
+     "name": "Potato",
+     "icon": "POTATO_ITEM",
+     "products": [
+      {
+       "id": "POTATO_ITEM",
+       "buy": 18.9,
+       "sell": 0.7
+      },
+      {
+       "id": "ENCHANTED_POTATO",
+       "buy": 489.8,
+       "sell": 462.3
+      },
+      {
+       "id": "ENCHANTED_BAKED_POTATO",
+       "buy": 77297.2,
+       "sell": 75275.5
+      },
+      {
+       "id": "HASHBROWN",
+       "buy": 2826498.5,
+       "sell": 500000.6
+      }
+     ]
+    },
+    {
+     "name": "Pumpkin",
+     "icon": "PUMPKIN",
+     "products": [
+      {
+       "id": "PUMPKIN",
+       "buy": 12.8,
+       "sell": 6.7
+      },
+      {
+       "id": "SPOOKY_BAIT",
+       "buy": 696.1,
+       "sell": 200.4
+      },
+      {
+       "id": "ENCHANTED_PUMPKIN",
+       "buy": 1647.9,
+       "sell": 1581.9
+      },
+      {
+       "id": "POLISHED_PUMPKIN",
+       "buy": 255999.9,
+       "sell": 252727.3
+      }
+     ]
+    },
+    {
+     "name": "Raw Chicken",
+     "icon": "RAW_CHICKEN",
+     "products": [
+      {
+       "id": "RAW_CHICKEN",
+       "buy": 29.5,
+       "sell": 2.7
+      },
+      {
+       "id": "ENCHANTED_RAW_CHICKEN",
+       "buy": 688.8,
+       "sell": 537.0
+      }
+     ]
+    },
+    {
+     "name": "Raw Mutton",
+     "icon": "MUTTON",
+     "products": [
+      {
+       "id": "MUTTON",
+       "buy": 159.8,
+       "sell": 25.9
+      },
+      {
+       "id": "ENCHANTED_MUTTON",
+       "buy": 1503.3,
+       "sell": 1189.0
+      },
+      {
+       "id": "ENCHANTED_COOKED_MUTTON",
+       "buy": 127017.8,
+       "sell": 124681.6
+      },
+      {
+       "id": "HORNS_OF_TORMENT",
+       "buy": 571947.7,
+       "sell": 406281.4
+      }
+     ]
+    },
+    {
+     "name": "Raw Porkchop",
+     "icon": "PORK",
+     "products": [
+      {
+       "id": "PORK",
+       "buy": 55.0,
+       "sell": 11.1
+      },
+      {
+       "id": "ENCHANTED_PORK",
+       "buy": 2421.2,
+       "sell": 1820.9
+      },
+      {
+       "id": "ENCHANTED_GRILLED_PORK",
+       "buy": 129988.7,
+       "sell": 120884.8
+      }
+     ]
+    },
+    {
+     "name": "Raw Rabbit",
+     "icon": "RABBIT",
+     "products": [
+      {
+       "id": "RABBIT",
+       "buy": 115.0,
+       "sell": 25.2
+      },
+      {
+       "id": "ENCHANTED_RABBIT",
+       "buy": 1583.4,
+       "sell": 1179.2
+      },
+      {
+       "id": "ENCHANTED_COOKED_RABBIT",
+       "buy": 107994.8,
+       "sell": 99956.8
+      }
+     ]
+    },
+    {
+     "name": "Seeds",
+     "icon": "SEEDS",
+     "products": [
+      {
+       "id": "SEEDS",
+       "buy": 2.9,
+       "sell": 0.9
+      },
+      {
+       "id": "ENCHANTED_SEEDS",
+       "buy": 491.3,
+       "sell": 461.9
+      },
+      {
+       "id": "BOX_OF_SEEDS",
+       "buy": 76700.4,
+       "sell": 75032.6
+      }
+     ]
+    },
+    {
+     "name": "Sugar Cane",
+     "icon": "SUGAR_CANE",
+     "products": [
+      {
+       "id": "SUGAR_CANE",
+       "buy": 7.5,
+       "sell": 0.8
+      },
+      {
+       "id": "ENCHANTED_SUGAR",
+       "buy": 694.4,
+       "sell": 620.4
+      },
+      {
+       "id": "ENCHANTED_PAPER",
+       "buy": 4992.3,
+       "sell": 1300.5
+      },
+      {
+       "id": "HOT_POTATO_BOOK",
+       "buy": 82236.5,
+       "sell": 78600.3
+      },
+      {
+       "id": "ENCHANTED_SUGAR_CANE",
+       "buy": 104375.7,
+       "sell": 100620.6
+      },
+      {
+       "id": "UNALLOYED_SPEED",
+       "buy": 4399999.4,
+       "sell": 935001.7
+      },
+      {
+       "id": "DAEDALUS_NOTES",
+       "buy": 11644996.4,
+       "sell": 6200000.2
+      },
+      {
+       "id": "JALAPENO_BOOK",
+       "buy": 30799979.0,
+       "sell": 23000000.0
+      }
+     ]
+    },
+    {
+     "name": "Sunflower",
+     "icon": "DOUBLE_PLANT",
+     "products": [
+      {
+       "id": "DOUBLE_PLANT",
+       "buy": 9.0,
+       "sell": 0.4
+      },
+      {
+       "id": "ENCHANTED_SUNFLOWER",
+       "buy": 678.8,
+       "sell": 618.5
+      },
+      {
+       "id": "SUNFLOWER_OIL",
+       "buy": 6523.3,
+       "sell": 3177.8
+      },
+      {
+       "id": "COMPACTED_SUNFLOWER",
+       "buy": 102142.3,
+       "sell": 100641.9
+      },
+      {
+       "id": "SUNSTONE",
+       "buy": 1876495.0,
+       "sell": 920002.2
+      }
+     ]
+    },
+    {
+     "name": "Wheat",
+     "icon": "WHEAT",
+     "products": [
+      {
+       "id": "WHEAT",
+       "buy": 12.4,
+       "sell": 2.0
+      },
+      {
+       "id": "ENCHANTED_BREAD",
+       "buy": 699.2,
+       "sell": 280.6
+      },
+      {
+       "id": "ENCHANTED_WHEAT",
+       "buy": 949.0,
+       "sell": 926.4
+      },
+      {
+       "id": "ENCHANTED_HAY_BALE",
+       "buy": 152833.6,
+       "sell": 150665.6
+      },
+      {
+       "id": "FEAST_BURGER",
+       "buy": 0.0,
+       "sell": 5000000.0
+      }
+     ]
+    },
+    {
+     "name": "Wild Rose",
+     "icon": "WILD_ROSE",
+     "products": [
+      {
+       "id": "WILD_ROSE",
+       "buy": 11.4,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTED_WILD_ROSE",
+       "buy": 657.2,
+       "sell": 614.0
+      },
+      {
+       "id": "PRICKLY_KISS",
+       "buy": 9361.4,
+       "sell": 3332.7
+      },
+      {
+       "id": "PLOT_ERASER",
+       "buy": 39998.8,
+       "sell": 12901.9
+      },
+      {
+       "id": "COMPACTED_WILD_ROSE",
+       "buy": 105471.7,
+       "sell": 100915.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Mining",
+   "groups": [
+    {
+     "name": "Coal",
+     "icon": "COAL",
+     "products": [
+      {
+       "id": "COAL",
+       "buy": 8.8,
+       "sell": 5.2
+      },
+      {
+       "id": "ENCHANTED_COAL",
+       "buy": 1297.0,
+       "sell": 1288.5
+      },
+      {
+       "id": "ENCHANTED_CHARCOAL",
+       "buy": 2545.2,
+       "sell": 1802.2
+      },
+      {
+       "id": "SULPHURIC_COAL",
+       "buy": 6992.5,
+       "sell": 5627.5
+      },
+      {
+       "id": "ENCHANTED_COAL_BLOCK",
+       "buy": 26489.9,
+       "sell": 24855.4
+      }
+     ]
+    },
+    {
+     "name": "Cobblestone",
+     "icon": "COBBLESTONE",
+     "products": [
+      {
+       "id": "COBBLESTONE",
+       "buy": 3.2,
+       "sell": 0.3
+      },
+      {
+       "id": "ENCHANTED_COBBLESTONE",
+       "buy": 498.8,
+       "sell": 400.4
+      },
+      {
+       "id": "COMPACTOR",
+       "buy": 18894.4,
+       "sell": 2275.4
+      },
+      {
+       "id": "AUTO_SMELTER",
+       "buy": 23726.7,
+       "sell": 400.9
+      },
+      {
+       "id": "SUPER_COMPACTOR_3000",
+       "buy": 193658.9,
+       "sell": 143749.4
+      }
+     ]
+    },
+    {
+     "name": "Diamond",
+     "icon": "DIAMOND",
+     "products": [
+      {
+       "id": "DIAMOND",
+       "buy": 22.8,
+       "sell": 6.6
+      },
+      {
+       "id": "ENCHANTED_DIAMOND",
+       "buy": 1345.8,
+       "sell": 1245.1
+      },
+      {
+       "id": "ENCHANTED_DIAMOND_BLOCK",
+       "buy": 204500.5,
+       "sell": 203079.9
+      }
+     ]
+    },
+    {
+     "name": "Emerald",
+     "icon": "EMERALD",
+     "products": [
+      {
+       "id": "EMERALD",
+       "buy": 5.9,
+       "sell": 1.0
+      },
+      {
+       "id": "ENCHANTED_EMERALD",
+       "buy": 998.0,
+       "sell": 731.0
+      },
+      {
+       "id": "ENCHANTED_EMERALD_BLOCK",
+       "buy": 103272.1,
+       "sell": 101000.6
+      }
+     ]
+    },
+    {
+     "name": "End Stone",
+     "icon": "ENDER_STONE",
+     "products": [
+      {
+       "id": "ENDER_STONE",
+       "buy": 3.9,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTED_ENDSTONE",
+       "buy": 454.6,
+       "sell": 248.6
+      },
+      {
+       "id": "HYPER_CATALYST",
+       "buy": 253799.4,
+       "sell": 240003.7
+      },
+      {
+       "id": "CATALYST",
+       "buy": 254486.7,
+       "sell": 190002.9
+      },
+      {
+       "id": "MOONDEW",
+       "buy": 799979.6,
+       "sell": 680238.0
+      }
+     ]
+    },
+    {
+     "name": "Gemstone",
+     "icon": "ROUGH_RUBY_GEM",
+     "products": [
+      {
+       "id": "ROUGH_AMETHYST_GEM",
+       "buy": 2.0,
+       "sell": 1.0
+      },
+      {
+       "id": "ROUGH_SAPPHIRE_GEM",
+       "buy": 4.1,
+       "sell": 0.7
+      },
+      {
+       "id": "ROUGH_AMBER_GEM",
+       "buy": 4.5,
+       "sell": 3.0
+      },
+      {
+       "id": "ROUGH_AQUAMARINE_GEM",
+       "buy": 6.2,
+       "sell": 0.5
+      },
+      {
+       "id": "ROUGH_RUBY_GEM",
+       "buy": 6.8,
+       "sell": 5.0
+      },
+      {
+       "id": "ROUGH_ONYX_GEM",
+       "buy": 7.6,
+       "sell": 0.8
+      },
+      {
+       "id": "ROUGH_CITRINE_GEM",
+       "buy": 9.8,
+       "sell": 0.6
+      },
+      {
+       "id": "ROUGH_OPAL_GEM",
+       "buy": 13.0,
+       "sell": 2.0
+      },
+      {
+       "id": "ROUGH_JADE_GEM",
+       "buy": 13.3,
+       "sell": 4.0
+      },
+      {
+       "id": "ROUGH_PERIDOT_GEM",
+       "buy": 19.7,
+       "sell": 1.4
+      },
+      {
+       "id": "ROUGH_JASPER_GEM",
+       "buy": 21.7,
+       "sell": 4.6
+      },
+      {
+       "id": "ROUGH_TOPAZ_GEM",
+       "buy": 26.2,
+       "sell": 1.9
+      },
+      {
+       "id": "FLAWED_CITRINE_GEM",
+       "buy": 315.5,
+       "sell": 282.7
+      },
+      {
+       "id": "FLAWED_JADE_GEM",
+       "buy": 329.6,
+       "sell": 281.5
+      },
+      {
+       "id": "FLAWED_PERIDOT_GEM",
+       "buy": 379.6,
+       "sell": 335.4
+      },
+      {
+       "id": "FLAWED_ONYX_GEM",
+       "buy": 385.9,
+       "sell": 288.2
+      },
+      {
+       "id": "FLAWED_AMBER_GEM",
+       "buy": 388.1,
+       "sell": 289.7
+      },
+      {
+       "id": "FLAWED_SAPPHIRE_GEM",
+       "buy": 449.0,
+       "sell": 306.0
+      },
+      {
+       "id": "FLAWED_AMETHYST_GEM",
+       "buy": 471.3,
+       "sell": 304.5
+      },
+      {
+       "id": "FLAWED_RUBY_GEM",
+       "buy": 590.0,
+       "sell": 260.7
+      },
+      {
+       "id": "FLAWED_AQUAMARINE_GEM",
+       "buy": 595.4,
+       "sell": 283.2
+      },
+      {
+       "id": "FLAWED_TOPAZ_GEM",
+       "buy": 598.1,
+       "sell": 280.6
+      },
+      {
+       "id": "FLAWED_JASPER_GEM",
+       "buy": 749.2,
+       "sell": 693.3
+      },
+      {
+       "id": "FLAWED_OPAL_GEM",
+       "buy": 998.1,
+       "sell": 217.4
+      },
+      {
+       "id": "FINE_JADE_GEM",
+       "buy": 25251.5,
+       "sell": 24024.0
+      },
+      {
+       "id": "FINE_RUBY_GEM",
+       "buy": 25477.4,
+       "sell": 19735.5
+      },
+      {
+       "id": "FINE_AQUAMARINE_GEM",
+       "buy": 25795.4,
+       "sell": 24185.9
+      },
+      {
+       "id": "FINE_CITRINE_GEM",
+       "buy": 26704.9,
+       "sell": 24580.7
+      },
+      {
+       "id": "FINE_AMBER_GEM",
+       "buy": 27548.0,
+       "sell": 26319.8
+      },
+      {
+       "id": "FINE_AMETHYST_GEM",
+       "buy": 28210.2,
+       "sell": 25929.4
+      },
+      {
+       "id": "FINE_SAPPHIRE_GEM",
+       "buy": 28999.4,
+       "sell": 26619.1
+      },
+      {
+       "id": "FINE_PERIDOT_GEM",
+       "buy": 29167.3,
+       "sell": 27485.0
+      },
+      {
+       "id": "FINE_TOPAZ_GEM",
+       "buy": 29563.2,
+       "sell": 25096.9
+      },
+      {
+       "id": "FINE_OPAL_GEM",
+       "buy": 29997.9,
+       "sell": 23165.8
+      },
+      {
+       "id": "FINE_ONYX_GEM",
+       "buy": 31996.8,
+       "sell": 24474.5
+      },
+      {
+       "id": "FINE_JASPER_GEM",
+       "buy": 55494.4,
+       "sell": 54033.7
+      },
+      {
+       "id": "FLAWLESS_CITRINE_GEM",
+       "buy": 1215347.8,
+       "sell": 1085580.4
+      },
+      {
+       "id": "FLAWLESS_ONYX_GEM",
+       "buy": 1699995.3,
+       "sell": 1469413.1
+      },
+      {
+       "id": "FLAWLESS_AQUAMARINE_GEM",
+       "buy": 1713650.2,
+       "sell": 1476486.2
+      },
+      {
+       "id": "FLAWLESS_RUBY_GEM",
+       "buy": 1729999.0,
+       "sell": 1464010.2
+      },
+      {
+       "id": "FLAWLESS_JADE_GEM",
+       "buy": 2106872.3,
+       "sell": 1954362.9
+      },
+      {
+       "id": "FLAWLESS_TOPAZ_GEM",
+       "buy": 2174178.6,
+       "sell": 2115935.5
+      },
+      {
+       "id": "FLAWLESS_SAPPHIRE_GEM",
+       "buy": 2283321.7,
+       "sell": 2137783.5
+      },
+      {
+       "id": "FLAWLESS_AMBER_GEM",
+       "buy": 2302118.1,
+       "sell": 2050876.4
+      },
+      {
+       "id": "FLAWLESS_OPAL_GEM",
+       "buy": 2321986.2,
+       "sell": 1959198.7
+      },
+      {
+       "id": "FLAWLESS_PERIDOT_GEM",
+       "buy": 2396189.1,
+       "sell": 2185029.5
+      },
+      {
+       "id": "FLAWLESS_AMETHYST_GEM",
+       "buy": 2400858.5,
+       "sell": 2050000.5
+      },
+      {
+       "id": "FLAWLESS_JASPER_GEM",
+       "buy": 4724082.7,
+       "sell": 4338914.7
+      }
+     ]
+    },
+    {
+     "name": "Glacite",
+     "icon": "GLACITE",
+     "products": [
+      {
+       "id": "GLACITE",
+       "buy": 9.7,
+       "sell": 6.5
+      },
+      {
+       "id": "ENCHANTED_GLACITE",
+       "buy": 1960.0,
+       "sell": 1765.3
+      }
+     ]
+    },
+    {
+     "name": "Glowstone Dust",
+     "icon": "GLOWSTONE_DUST",
+     "products": [
+      {
+       "id": "GLOWSTONE_DUST",
+       "buy": 38.9,
+       "sell": 1.2
+      },
+      {
+       "id": "ENCHANTED_GLOWSTONE_DUST",
+       "buy": 1574.7,
+       "sell": 1096.1
+      },
+      {
+       "id": "SUPER_MAGIC_MUSHROOM_SOUP",
+       "buy": 9191.0,
+       "sell": 3035.5
+      },
+      {
+       "id": "MAGIC_MUSHROOM_SOUP",
+       "buy": 10997.4,
+       "sell": 501.9
+      },
+      {
+       "id": "ENCHANTED_GLOWSTONE",
+       "buy": 69499.8,
+       "sell": 63506.3
+      },
+      {
+       "id": "AMALGAMATED_CRIMSONITE_NEW",
+       "buy": 101484.0,
+       "sell": 62076.2
+      },
+      {
+       "id": "SHINY_PRISM",
+       "buy": 245972.8,
+       "sell": 26558.0
+      }
+     ]
+    },
+    {
+     "name": "Gold Ingot",
+     "icon": "GOLD_INGOT",
+     "products": [
+      {
+       "id": "GOLD_INGOT",
+       "buy": 6.9,
+       "sell": 1.0
+      },
+      {
+       "id": "ENCHANTED_GOLD",
+       "buy": 513.3,
+       "sell": 461.2
+      },
+      {
+       "id": "BLESSED_BAIT",
+       "buy": 2696.1,
+       "sell": 1784.8
+      },
+      {
+       "id": "ENCHANTED_GLISTERING_MELON",
+       "buy": 24999.8,
+       "sell": 1101.3
+      },
+      {
+       "id": "ENCHANTED_GOLD_BLOCK",
+       "buy": 78806.0,
+       "sell": 76144.8
+      },
+      {
+       "id": "GRIFFIN_UPGRADE_STONE_UNCOMMON",
+       "buy": 3900000.0,
+       "sell": 1752693.3
+      },
+      {
+       "id": "GRIFFIN_UPGRADE_STONE_LEGENDARY",
+       "buy": 42000000.0,
+       "sell": 29000000.9
+      },
+      {
+       "id": "GRIFFIN_UPGRADE_STONE_MYTHIC",
+       "buy": 83124362.1,
+       "sell": 57243657.6
+      }
+     ]
+    },
+    {
+     "name": "Gravel",
+     "icon": "GRAVEL",
+     "products": [
+      {
+       "id": "GRAVEL",
+       "buy": 2.7,
+       "sell": 0.1
+      }
+     ]
+    },
+    {
+     "name": "Hard Stone",
+     "icon": "HARD_STONE",
+     "products": [
+      {
+       "id": "HARD_STONE",
+       "buy": 0.7,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTED_HARD_STONE",
+       "buy": 540.0,
+       "sell": 509.9
+      },
+      {
+       "id": "CONCENTRATED_STONE",
+       "buy": 309055.7,
+       "sell": 274807.6
+      },
+      {
+       "id": "SIL_EX",
+       "buy": 2962272.0,
+       "sell": 2600000.5
+      }
+     ]
+    },
+    {
+     "name": "Ice",
+     "icon": "ICE",
+     "products": [
+      {
+       "id": "ICE_BAIT",
+       "buy": 0.9,
+       "sell": 0.1
+      },
+      {
+       "id": "ICE",
+       "buy": 2.5,
+       "sell": 0.0
+      },
+      {
+       "id": "PACKED_ICE",
+       "buy": 38.1,
+       "sell": 3.2
+      },
+      {
+       "id": "ENCHANTED_ICE",
+       "buy": 149.9,
+       "sell": 75.2
+      },
+      {
+       "id": "ENCHANTED_PACKED_ICE",
+       "buy": 14498.9,
+       "sell": 12607.1
+      },
+      {
+       "id": "POCKET_SIZED_IGLOO",
+       "buy": 34999996.5,
+       "sell": 29250000.1
+      }
+     ]
+    },
+    {
+     "name": "Iron Ingot",
+     "icon": "IRON_INGOT",
+     "products": [
+      {
+       "id": "IRON_INGOT",
+       "buy": 2.7,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTED_IRON",
+       "buy": 582.7,
+       "sell": 468.6
+      },
+      {
+       "id": "BUDGET_HOPPER",
+       "buy": 17500.0,
+       "sell": 1161.3
+      },
+      {
+       "id": "ENCHANTED_IRON_BLOCK",
+       "buy": 52157.2,
+       "sell": 50727.4
+      },
+      {
+       "id": "ENCHANTED_LAVA_BUCKET",
+       "buy": 71994.5,
+       "sell": 59422.1
+      },
+      {
+       "id": "ENCHANTED_HOPPER",
+       "buy": 344995.7,
+       "sell": 238509.4
+      },
+      {
+       "id": "MAGMA_BUCKET",
+       "buy": 3853910.1,
+       "sell": 3668122.9
+      },
+      {
+       "id": "PLASMA_BUCKET",
+       "buy": 10999989.9,
+       "sell": 10099952.6
+      }
+     ]
+    },
+    {
+     "name": "Lapis Lazuli",
+     "icon": "INK_SACK:4",
+     "products": [
+      {
+       "id": "INK_SACK:4",
+       "buy": 6.0,
+       "sell": 1.4
+      },
+      {
+       "id": "EXP_BOTTLE",
+       "buy": 40.0,
+       "sell": 5.4
+      },
+      {
+       "id": "ENCHANTED_LAPIS_LAZULI",
+       "buy": 785.6,
+       "sell": 692.1
+      },
+      {
+       "id": "GRAND_EXP_BOTTLE",
+       "buy": 5062.4,
+       "sell": 4900.1
+      },
+      {
+       "id": "ENCHANTED_LAPIS_LAZULI_BLOCK",
+       "buy": 97576.8,
+       "sell": 96395.1
+      },
+      {
+       "id": "TITANIC_EXP_BOTTLE",
+       "buy": 594759.3,
+       "sell": 576692.5
+      }
+     ]
+    },
+    {
+     "name": "Mithril",
+     "icon": "MITHRIL_ORE",
+     "products": [
+      {
+       "id": "MITHRIL_ORE",
+       "buy": 8.9,
+       "sell": 6.1
+      },
+      {
+       "id": "ENCHANTED_MITHRIL",
+       "buy": 1402.1,
+       "sell": 1303.0
+      },
+      {
+       "id": "DWARVEN_COMPACTOR",
+       "buy": 397674.3,
+       "sell": 227001.0
+      },
+      {
+       "id": "NULL_EDGE",
+       "buy": 487994.3,
+       "sell": 339654.7
+      },
+      {
+       "id": "MITHRIL_INFUSION",
+       "buy": 4714999.8,
+       "sell": 4647464.1
+      }
+     ]
+    },
+    {
+     "name": "Mycelium",
+     "icon": "MYCEL",
+     "products": [
+      {
+       "id": "MYCEL",
+       "buy": 18.1,
+       "sell": 2.8
+      },
+      {
+       "id": "ENCHANTED_MYCELIUM",
+       "buy": 1596.3,
+       "sell": 1420.6
+      },
+      {
+       "id": "ENCHANTED_MYCELIUM_CUBE",
+       "buy": 154999.8,
+       "sell": 127895.8
+      },
+      {
+       "id": "CORRUPT_SOIL",
+       "buy": 279096.3,
+       "sell": 133003.3
+      }
+     ]
+    },
+    {
+     "name": "Nether Quartz",
+     "icon": "QUARTZ",
+     "products": [
+      {
+       "id": "QUARTZ",
+       "buy": 15.4,
+       "sell": 3.1
+      },
+      {
+       "id": "ENCHANTED_QUARTZ",
+       "buy": 1124.4,
+       "sell": 868.8
+      },
+      {
+       "id": "MINION_EXPANDER",
+       "buy": 62174.1,
+       "sell": 25001.4
+      },
+      {
+       "id": "SOLAR_PANEL",
+       "buy": 90000.0,
+       "sell": 78151.6
+      },
+      {
+       "id": "ENCHANTED_QUARTZ_BLOCK",
+       "buy": 158953.2,
+       "sell": 149938.9
+      }
+     ]
+    },
+    {
+     "name": "Netherrack",
+     "icon": "NETHERRACK",
+     "products": [
+      {
+       "id": "NETHERRACK",
+       "buy": 0.5,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTED_NETHERRACK",
+       "buy": 925.6,
+       "sell": 160.8
+      }
+     ]
+    },
+    {
+     "name": "Obsidian",
+     "icon": "OBSIDIAN",
+     "products": [
+      {
+       "id": "OBSIDIAN",
+       "buy": 33.0,
+       "sell": 14.9
+      },
+      {
+       "id": "ENCHANTED_OBSIDIAN",
+       "buy": 3219.8,
+       "sell": 3111.5
+      },
+      {
+       "id": "OBSIDIAN_TABLET",
+       "buy": 2618313.1,
+       "sell": 1779583.6
+      }
+     ]
+    },
+    {
+     "name": "Red Sand",
+     "icon": "SAND:1",
+     "products": [
+      {
+       "id": "SAND:1",
+       "buy": 9.0,
+       "sell": 0.8
+      },
+      {
+       "id": "ENCHANTED_RED_SAND",
+       "buy": 1388.9,
+       "sell": 1231.7
+      },
+      {
+       "id": "ENCHANTED_RED_SAND_CUBE",
+       "buy": 224915.0,
+       "sell": 135001.7
+      }
+     ]
+    },
+    {
+     "name": "Redstone Dust",
+     "icon": "REDSTONE",
+     "products": [
+      {
+       "id": "REDSTONE",
+       "buy": 5.6,
+       "sell": 0.5
+      },
+      {
+       "id": "ENCHANTED_REDSTONE",
+       "buy": 726.8,
+       "sell": 630.2
+      },
+      {
+       "id": "ENCHANTED_REDSTONE_BLOCK",
+       "buy": 25428.9,
+       "sell": 24935.4
+      },
+      {
+       "id": "ENCHANTED_REDSTONE_LAMP",
+       "buy": 197194.8,
+       "sell": 100000.0
+      }
+     ]
+    },
+    {
+     "name": "Sand",
+     "icon": "SAND",
+     "products": [
+      {
+       "id": "SAND",
+       "buy": 23.5,
+       "sell": 3.3
+      },
+      {
+       "id": "ENCHANTED_SAND",
+       "buy": 549.0,
+       "sell": 500.0
+      }
+     ]
+    },
+    {
+     "name": "Sulphur",
+     "icon": "SULPHUR_ORE",
+     "products": [
+      {
+       "id": "SULPHUR_ORE",
+       "buy": 13.0,
+       "sell": 5.2
+      },
+      {
+       "id": "MATCH_STICKS",
+       "buy": 999.0,
+       "sell": 77.2
+      },
+      {
+       "id": "ENCHANTED_SULPHUR",
+       "buy": 2082.5,
+       "sell": 1971.1
+      },
+      {
+       "id": "ENCHANTED_SULPHUR_CUBE",
+       "buy": 254375.9,
+       "sell": 251476.8
+      }
+     ]
+    },
+    {
+     "name": "Tungsten",
+     "icon": "TUNGSTEN",
+     "products": [
+      {
+       "id": "TUNGSTEN",
+       "buy": 73.5,
+       "sell": 55.1
+      },
+      {
+       "id": "ENCHANTED_TUNGSTEN",
+       "buy": 12698.0,
+       "sell": 11980.1
+      }
+     ]
+    },
+    {
+     "name": "Umber",
+     "icon": "UMBER",
+     "products": [
+      {
+       "id": "UMBER",
+       "buy": 81.2,
+       "sell": 57.5
+      },
+      {
+       "id": "ENCHANTED_UMBER",
+       "buy": 12575.3,
+       "sell": 11861.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Combat",
+   "groups": [
+    {
+     "name": "Blaze Rod",
+     "icon": "BLAZE_ROD",
+     "products": [
+      {
+       "id": "BLAZE_ROD",
+       "buy": 12.5,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTED_BLAZE_POWDER",
+       "buy": 2620.4,
+       "sell": 2299.8
+      },
+      {
+       "id": "ENCHANTED_EYE_OF_ENDER",
+       "buy": 8758.6,
+       "sell": 7900.0
+      },
+      {
+       "id": "ENCHANTED_BLAZE_ROD",
+       "buy": 295999.7,
+       "sell": 278556.7
+      },
+      {
+       "id": "BLAZE_WAX",
+       "buy": 349991.5,
+       "sell": 170812.0
+      },
+      {
+       "id": "LESSER_SOULFLOW_ENGINE",
+       "buy": 1809901.6,
+       "sell": 952588.7
+      },
+      {
+       "id": "SUNFLOWER_BUTTER",
+       "buy": 2859999.7,
+       "sell": 1592400.7
+      },
+      {
+       "id": "SHRIVELED_CORNEA",
+       "buy": 74999995.2,
+       "sell": 19837006.5
+      }
+     ]
+    },
+    {
+     "name": "Bone",
+     "icon": "BONE",
+     "products": [
+      {
+       "id": "BONE",
+       "buy": 12.8,
+       "sell": 0.9
+      },
+      {
+       "id": "ENCHANTED_BONE",
+       "buy": 1189.6,
+       "sell": 875.8
+      },
+      {
+       "id": "ENCHANTED_BONE_BLOCK",
+       "buy": 52551.6,
+       "sell": 308.4
+      },
+      {
+       "id": "DISPLACED_LEECH",
+       "buy": 299491.3,
+       "sell": 106281.5
+      }
+     ]
+    },
+    {
+     "name": "Chili Pepper",
+     "icon": "CHILI_PEPPER",
+     "products": [
+      {
+       "id": "CHILI_PEPPER",
+       "buy": 147418.9,
+       "sell": 145704.0
+      },
+      {
+       "id": "REHEATED_GUMMY_POLAR_BEAR",
+       "buy": 626443.5,
+       "sell": 600000.0
+      },
+      {
+       "id": "ENTROPY_SUPPRESSOR",
+       "buy": 18981564.9,
+       "sell": 11207279.6
+      },
+      {
+       "id": "STUFFED_CHILI_PEPPER",
+       "buy": 24634990.9,
+       "sell": 16000001.9
+      }
+     ]
+    },
+    {
+     "name": "Ender Pearl",
+     "icon": "ENDER_PEARL",
+     "products": [
+      {
+       "id": "ENDER_PEARL",
+       "buy": 7.7,
+       "sell": 1.6
+      },
+      {
+       "id": "ENCHANTED_ENDER_PEARL",
+       "buy": 289.9,
+       "sell": 273.6
+      },
+      {
+       "id": "ABSOLUTE_ENDER_PEARL",
+       "buy": 17899.7,
+       "sell": 14232.2
+      },
+      {
+       "id": "TESSELLATED_ENDER_PEARL",
+       "buy": 4916994.7,
+       "sell": 3949489.6
+      }
+     ]
+    },
+    {
+     "name": "Ghast Tear",
+     "icon": "GHAST_TEAR",
+     "products": [
+      {
+       "id": "ENCHANTED_GHAST_TEAR",
+       "buy": 321.7,
+       "sell": 212.7
+      },
+      {
+       "id": "GHAST_TEAR",
+       "buy": 567.5,
+       "sell": 68.4
+      },
+      {
+       "id": "SILVER_FANG",
+       "buy": 9797.9,
+       "sell": 8100.1
+      },
+      {
+       "id": "METEOR_SHARD",
+       "buy": 1099996.4,
+       "sell": 460308.3
+      }
+     ]
+    },
+    {
+     "name": "Gunpowder",
+     "icon": "SULPHUR",
+     "products": [
+      {
+       "id": "SULPHUR",
+       "buy": 599.7,
+       "sell": 47.1
+      },
+      {
+       "id": "ENCHANTED_GUNPOWDER",
+       "buy": 8921.9,
+       "sell": 6047.8
+      },
+      {
+       "id": "ENCHANTED_FIREWORK_ROCKET",
+       "buy": 301630.2,
+       "sell": 193127.8
+      },
+      {
+       "id": "PRICKLY_CREEPER",
+       "buy": 6299997.0,
+       "sell": 3271517.3
+      }
+     ]
+    },
+    {
+     "name": "Magma Cream",
+     "icon": "MAGMA_CREAM",
+     "products": [
+      {
+       "id": "MAGMA_CREAM",
+       "buy": 9.2,
+       "sell": 2.4
+      },
+      {
+       "id": "ENCHANTED_MAGMA_CREAM",
+       "buy": 1718.0,
+       "sell": 1401.2
+      },
+      {
+       "id": "WHIPPED_MAGMA_CREAM",
+       "buy": 203360.7,
+       "sell": 196005.1
+      },
+      {
+       "id": "SEARING_STONE",
+       "buy": 299995.0,
+       "sell": 155002.7
+      }
+     ]
+    },
+    {
+     "name": "Rotten Flesh",
+     "icon": "ROTTEN_FLESH",
+     "products": [
+      {
+       "id": "ROTTEN_FLESH",
+       "buy": 14.9,
+       "sell": 0.7
+      },
+      {
+       "id": "ENCHANTED_ROTTEN_FLESH",
+       "buy": 645.9,
+       "sell": 567.1
+      }
+     ]
+    },
+    {
+     "name": "Slimeball",
+     "icon": "SLIME_BALL",
+     "products": [
+      {
+       "id": "SLIME_BALL",
+       "buy": 8.0,
+       "sell": 5.1
+      },
+      {
+       "id": "ENCHANTED_SLIME_BALL",
+       "buy": 1401.9,
+       "sell": 1264.3
+      },
+      {
+       "id": "ENCHANTED_SLIME_BLOCK",
+       "buy": 126415.9,
+       "sell": 124292.6
+      }
+     ]
+    },
+    {
+     "name": "Spider Eye",
+     "icon": "SPIDER_EYE",
+     "products": [
+      {
+       "id": "SPIDER_EYE",
+       "buy": 14.0,
+       "sell": 0.8
+      },
+      {
+       "id": "ENCHANTED_SPIDER_EYE",
+       "buy": 1034.4,
+       "sell": 860.5
+      }
+     ]
+    },
+    {
+     "name": "String",
+     "icon": "STRING",
+     "products": [
+      {
+       "id": "STRING",
+       "buy": 6.2,
+       "sell": 1.3
+      },
+      {
+       "id": "ENCHANTED_STRING",
+       "buy": 724.6,
+       "sell": 700.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Woods & Fishes",
+   "groups": [
+    {
+     "name": "Acacia Log",
+     "icon": "LOG_2",
+     "products": [
+      {
+       "id": "LOG_2",
+       "buy": 69.6,
+       "sell": 1.8
+      },
+      {
+       "id": "ENCHANTED_ACACIA_LOG",
+       "buy": 1873.3,
+       "sell": 1591.0
+      },
+      {
+       "id": "ACACIA_BIRDHOUSE",
+       "buy": 774998.5,
+       "sell": 550000.3
+      }
+     ]
+    },
+    {
+     "name": "Birch Log",
+     "icon": "LOG:2",
+     "products": [
+      {
+       "id": "LOG:2",
+       "buy": 0.5,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTED_BIRCH_LOG",
+       "buy": 999.7,
+       "sell": 450.3
+      }
+     ]
+    },
+    {
+     "name": "Clay Ball",
+     "icon": "CLAY_BALL",
+     "products": [
+      {
+       "id": "CLAY_BALL",
+       "buy": 13.7,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTED_CLAY_BALL",
+       "buy": 795.0,
+       "sell": 437.9
+      },
+      {
+       "id": "ENCHANTED_CLAY_BLOCK",
+       "buy": 76308.9,
+       "sell": 75319.2
+      }
+     ]
+    },
+    {
+     "name": "Dark Oak Log",
+     "icon": "LOG_2:1",
+     "products": [
+      {
+       "id": "LOG_2:1",
+       "buy": 44.6,
+       "sell": 1.5
+      },
+      {
+       "id": "ENCHANTED_DARK_OAK_LOG",
+       "buy": 2264.9,
+       "sell": 1678.6
+      },
+      {
+       "id": "PRESUMED_GALLON_OF_RED_PAINT",
+       "buy": 2016377.5,
+       "sell": 1050820.7
+      }
+     ]
+    },
+    {
+     "name": "Fig Log",
+     "icon": "FIG_LOG",
+     "products": [
+      {
+       "id": "FIG_LOG",
+       "buy": 9.0,
+       "sell": 6.7
+      },
+      {
+       "id": "ENCHANTED_FIG_LOG",
+       "buy": 2021.7,
+       "sell": 1898.9
+      },
+      {
+       "id": "FIGSTONE",
+       "buy": 330098.6,
+       "sell": 295469.2
+      }
+     ]
+    },
+    {
+     "name": "Helix Log",
+     "icon": "HELIX_LOG",
+     "products": [
+      {
+       "id": "HELIX_LOG",
+       "buy": 23.5,
+       "sell": 13.3
+      },
+      {
+       "id": "ENCHANTED_HELIX_LOG",
+       "buy": 3415.5,
+       "sell": 3220.3
+      },
+      {
+       "id": "FAMILY_SIZED_POT_OF_HONEYCOMB",
+       "buy": 19870.4,
+       "sell": 11243.6
+      },
+      {
+       "id": "HELIXIS",
+       "buy": 524999.7,
+       "sell": 514447.1
+      },
+      {
+       "id": "BEE_SALIVA",
+       "buy": 3979997.2,
+       "sell": 2600749.0
+      }
+     ]
+    },
+    {
+     "name": "Honeycomb",
+     "icon": "HONEYCOMB",
+     "products": [
+      {
+       "id": "HONEYCOMB",
+       "buy": 99.4,
+       "sell": 90.6
+      },
+      {
+       "id": "ENCHANTED_HONEYCOMB",
+       "buy": 25997.7,
+       "sell": 16292.2
+      },
+      {
+       "id": "FUN_SIZED_POT_OF_HONEYCOMB",
+       "buy": 28678.4,
+       "sell": 4505.9
+      },
+      {
+       "id": "JUMBO_POT_OF_HONEYCOMB",
+       "buy": 104994.1,
+       "sell": 87098.9
+      },
+      {
+       "id": "ENCHANTED_HONEYCOMB_BLOCK",
+       "buy": 2610296.7,
+       "sell": 2100013.1
+      }
+     ]
+    },
+    {
+     "name": "Ink Sac",
+     "icon": "INK_SACK",
+     "products": [
+      {
+       "id": "INK_SACK",
+       "buy": 3073.3,
+       "sell": 2673.7
+      },
+      {
+       "id": "DARK_BAIT",
+       "buy": 6661.9,
+       "sell": 2221.6
+      },
+      {
+       "id": "ENCHANTED_INK_SACK",
+       "buy": 140085.0,
+       "sell": 105000.0
+      }
+     ]
+    },
+    {
+     "name": "Jungle Log",
+     "icon": "LOG:3",
+     "products": [
+      {
+       "id": "LOG:3",
+       "buy": 49.2,
+       "sell": 1.0
+      },
+      {
+       "id": "ENCHANTED_JUNGLE_LOG",
+       "buy": 998.8,
+       "sell": 118.8
+      }
+     ]
+    },
+    {
+     "name": "Lily Pad",
+     "icon": "WATER_LILY",
+     "products": [
+      {
+       "id": "WATER_LILY",
+       "buy": 15.0,
+       "sell": 6.0
+      },
+      {
+       "id": "ENCHANTED_WATER_LILY",
+       "buy": 2797.7,
+       "sell": 2282.1
+      },
+      {
+       "id": "CONDENSED_WATER_LILY",
+       "buy": 305381.0,
+       "sell": 250003.1
+      },
+      {
+       "id": "BUCKET_OF_FROGSPAWN",
+       "buy": 34999991.6,
+       "sell": 22852407.5
+      }
+     ]
+    },
+    {
+     "name": "Lotus",
+     "icon": "LOTUS",
+     "products": [
+      {
+       "id": "LOTUS",
+       "buy": 149.1,
+       "sell": 100.5
+      },
+      {
+       "id": "LOTUS_SILVER",
+       "buy": 12173.4,
+       "sell": 9676.6
+      },
+      {
+       "id": "LOTUS_GOLD",
+       "buy": 1033985.9,
+       "sell": 871659.4
+      },
+      {
+       "id": "LOTUS_DIAMOND",
+       "buy": 21873763.7,
+       "sell": 16858337.2
+      }
+     ]
+    },
+    {
+     "name": "Lushlilac",
+     "icon": "LUSHLILAC",
+     "products": [
+      {
+       "id": "LUSHLILAC",
+       "buy": 1.7,
+       "sell": 0.3
+      },
+      {
+       "id": "LUSHLILAC_BONBON",
+       "buy": 22799.1,
+       "sell": 4.2
+      },
+      {
+       "id": "OCEANDY",
+       "buy": 41000.0,
+       "sell": 10025.4
+      },
+      {
+       "id": "BRINE_TONIC",
+       "buy": 219300.8,
+       "sell": 42000.9
+      },
+      {
+       "id": "EXALTED_LUSHLILAC_BONBON",
+       "buy": 2899999.7,
+       "sell": 170075.3
+      }
+     ]
+    },
+    {
+     "name": "Magmafish",
+     "icon": "MAGMA_FISH",
+     "products": [
+      {
+       "id": "MAGMA_FISH",
+       "buy": 110.9,
+       "sell": 21.8
+      },
+      {
+       "id": "MAGMA_FISH_SILVER",
+       "buy": 5960.0,
+       "sell": 5641.8
+      },
+      {
+       "id": "MAGMA_FISH_GOLD",
+       "buy": 502999.9,
+       "sell": 450002.0
+      },
+      {
+       "id": "MAGMA_FISH_DIAMOND",
+       "buy": 9957995.2,
+       "sell": 8500001.1
+      }
+     ]
+    },
+    {
+     "name": "Mangrove Log",
+     "icon": "MANGROVE_LOG",
+     "products": [
+      {
+       "id": "MANGROVE_LOG",
+       "buy": 19.8,
+       "sell": 8.5
+      },
+      {
+       "id": "ENCHANTED_MANGROVE_LOG",
+       "buy": 2412.8,
+       "sell": 2171.9
+      },
+      {
+       "id": "MANGCORE",
+       "buy": 373301.3,
+       "sell": 358001.3
+      },
+      {
+       "id": "MANGROVE_GEM",
+       "buy": 504175.1,
+       "sell": 250000.7
+      }
+     ]
+    },
+    {
+     "name": "Oak Log",
+     "icon": "LOG",
+     "products": [
+      {
+       "id": "LOG",
+       "buy": 31.5,
+       "sell": 3.7
+      },
+      {
+       "id": "ENCHANTED_OAK_LOG",
+       "buy": 1706.8,
+       "sell": 1364.5
+      },
+      {
+       "id": "SMALL_ENCHANTED_CHEST",
+       "buy": 2745.4,
+       "sell": 260.1
+      },
+      {
+       "id": "MEDIUM_ENCHANTED_CHEST",
+       "buy": 22994.7,
+       "sell": 16147.2
+      },
+      {
+       "id": "LARGE_ENCHANTED_CHEST",
+       "buy": 531564.5,
+       "sell": 400001.0
+      }
+     ]
+    },
+    {
+     "name": "Prismarine Crystals",
+     "icon": "PRISMARINE_CRYSTALS",
+     "products": [
+      {
+       "id": "ENCHANTED_PRISMARINE_CRYSTALS",
+       "buy": 420.2,
+       "sell": 400.3
+      },
+      {
+       "id": "PRISMARINE_CRYSTALS",
+       "buy": 1339.9,
+       "sell": 1004.8
+      },
+      {
+       "id": "LIGHT_BAIT",
+       "buy": 3799.7,
+       "sell": 2355.7
+      }
+     ]
+    },
+    {
+     "name": "Prismarine Shard",
+     "icon": "PRISMARINE_SHARD",
+     "products": [
+      {
+       "id": "PRISMARINE_SHARD",
+       "buy": 2.8,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTED_PRISMARINE_SHARD",
+       "buy": 405.8,
+       "sell": 400.1
+      }
+     ]
+    },
+    {
+     "name": "Pufferfish",
+     "icon": "RAW_FISH:3",
+     "products": [
+      {
+       "id": "RAW_FISH:3",
+       "buy": 78.5,
+       "sell": 7.2
+      },
+      {
+       "id": "ENCHANTED_PUFFERFISH",
+       "buy": 2339.5,
+       "sell": 2233.6
+      },
+      {
+       "id": "HOTSPOT_BAIT",
+       "buy": 14852.9,
+       "sell": 11246.8
+      }
+     ]
+    },
+    {
+     "name": "Raw Cod",
+     "icon": "RAW_FISH",
+     "products": [
+      {
+       "id": "MINNOW_BAIT",
+       "buy": 134.1,
+       "sell": 1.0
+      },
+      {
+       "id": "RAW_FISH",
+       "buy": 201.5,
+       "sell": 145.0
+      },
+      {
+       "id": "SPIKED_BAIT",
+       "buy": 622.8,
+       "sell": 106.1
+      },
+      {
+       "id": "FISH_BAIT",
+       "buy": 646.4,
+       "sell": 460.0
+      },
+      {
+       "id": "ENCHANTED_RAW_FISH",
+       "buy": 1038.2,
+       "sell": 920.5
+      },
+      {
+       "id": "WHALE_BAIT",
+       "buy": 7714.4,
+       "sell": 6976.3
+      },
+      {
+       "id": "ENCHANTED_COOKED_FISH",
+       "buy": 149325.5,
+       "sell": 149000.1
+      },
+      {
+       "id": "WATER_ORB",
+       "buy": 254643.0,
+       "sell": 233816.4
+      }
+     ]
+    },
+    {
+     "name": "Raw Salmon",
+     "icon": "RAW_FISH:1",
+     "products": [
+      {
+       "id": "RAW_FISH:1",
+       "buy": 8.6,
+       "sell": 4.0
+      },
+      {
+       "id": "ENCHANTED_RAW_SALMON",
+       "buy": 1941.8,
+       "sell": 1560.2
+      },
+      {
+       "id": "ENCHANTED_COOKED_SALMON",
+       "buy": 254835.8,
+       "sell": 251831.3
+      }
+     ]
+    },
+    {
+     "name": "Ruby Veilshroom",
+     "icon": "RUBY_VEILSHROOM",
+     "products": [
+      {
+       "id": "RUBY_VEILSHROOM",
+       "buy": 60.0,
+       "sell": 38.2
+      },
+      {
+       "id": "ENCHANTED_RUBY_VEILSHROOM",
+       "buy": 11758.2,
+       "sell": 8238.5
+      },
+      {
+       "id": "VEILSHROOM_BUNCH",
+       "buy": 1924411.8,
+       "sell": 1500008.8
+      }
+     ]
+    },
+    {
+     "name": "Sea Lumies",
+     "icon": "SEA_LUMIES",
+     "products": [
+      {
+       "id": "SEA_LUMIES",
+       "buy": 679.6,
+       "sell": 386.4
+      },
+      {
+       "id": "PRIME_LUSHLILAC_BONBON",
+       "buy": 37714.9,
+       "sell": 10001.4
+      },
+      {
+       "id": "ENCHANTED_SEA_LUMIES",
+       "buy": 71840.5,
+       "sell": 64896.0
+      }
+     ]
+    },
+    {
+     "name": "Sponge",
+     "icon": "SPONGE",
+     "products": [
+      {
+       "id": "SPONGE",
+       "buy": 211.1,
+       "sell": 26.9
+      },
+      {
+       "id": "ENCHANTED_SPONGE",
+       "buy": 2117.3,
+       "sell": 2000.4
+      },
+      {
+       "id": "ENCHANTED_WET_SPONGE",
+       "buy": 81094.4,
+       "sell": 77347.5
+      }
+     ]
+    },
+    {
+     "name": "Spruce Log",
+     "icon": "LOG:1",
+     "products": [
+      {
+       "id": "LOG:1",
+       "buy": 26.9,
+       "sell": 0.5
+      },
+      {
+       "id": "ENCHANTED_SPRUCE_LOG",
+       "buy": 730.0,
+       "sell": 500.0
+      }
+     ]
+    },
+    {
+     "name": "Tender Wood",
+     "icon": "TENDER_WOOD",
+     "products": [
+      {
+       "id": "TENDER_WOOD",
+       "buy": 229.9,
+       "sell": 162.3
+      },
+      {
+       "id": "ENCHANTED_TENDER_WOOD",
+       "buy": 34106.9,
+       "sell": 31889.7
+      }
+     ]
+    },
+    {
+     "name": "Tropical Fish",
+     "icon": "RAW_FISH:2",
+     "products": [
+      {
+       "id": "RAW_FISH:2",
+       "buy": 18.8,
+       "sell": 8.4
+      },
+      {
+       "id": "ENCHANTED_CLOWNFISH",
+       "buy": 3192.8,
+       "sell": 3035.9
+      }
+     ]
+    },
+    {
+     "name": "Vinesap",
+     "icon": "VINESAP",
+     "products": [
+      {
+       "id": "VINESAP",
+       "buy": 2879.2,
+       "sell": 2340.4
+      },
+      {
+       "id": "ENCHANTED_VINESAP",
+       "buy": 341797.2,
+       "sell": 285171.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Oddities",
+   "groups": [
+    {
+     "name": "Ability Scrolls",
+     "icon": "FROGS_SPIRIT_SCROLL",
+     "products": [
+      {
+       "id": "FROGS_SPIRIT_SCROLL",
+       "buy": 2699987.8,
+       "sell": 1234567.2
+      },
+      {
+       "id": "SHADOW_WARP_SCROLL",
+       "buy": 159686939.9,
+       "sell": 153000002.9
+      },
+      {
+       "id": "WITHER_SHIELD_SCROLL",
+       "buy": 159999997.9,
+       "sell": 152828135.0
+      },
+      {
+       "id": "IMPLOSION_SCROLL",
+       "buy": 161466810.8,
+       "sell": 153423344.3
+      }
+     ]
+    },
+    {
+     "name": "Arrow Poisons",
+     "icon": "TWILIGHT_ARROW_POISON",
+     "products": [
+      {
+       "id": "TWILIGHT_ARROW_POISON",
+       "buy": 948.4,
+       "sell": 573.1
+      },
+      {
+       "id": "TOXIC_ARROW_POISON",
+       "buy": 2356.6,
+       "sell": 1911.3
+      }
+     ]
+    },
+    {
+     "name": "Baits",
+     "icon": "SHARK_BAIT",
+     "products": [
+      {
+       "id": "SHARK_BAIT",
+       "buy": 33.9,
+       "sell": 1.6
+      },
+      {
+       "id": "HOT_BAIT",
+       "buy": 182.2,
+       "sell": 41.5
+      },
+      {
+       "id": "CORRUPTED_BAIT",
+       "buy": 249.8,
+       "sell": 6.7
+      },
+      {
+       "id": "GLOWY_CHUM_BAIT",
+       "buy": 1498.8,
+       "sell": 419.4
+      },
+      {
+       "id": "TREASURE_BAIT",
+       "buy": 3466.4,
+       "sell": 1301.9
+      },
+      {
+       "id": "WORM_BAIT",
+       "buy": 3489.9,
+       "sell": 932.2
+      },
+      {
+       "id": "FROZEN_BAIT",
+       "buy": 9416.4,
+       "sell": 1422.7
+      },
+      {
+       "id": "GOLDEN_BAIT",
+       "buy": 20598.6,
+       "sell": 9239.2
+      },
+      {
+       "id": "WOODEN_BAIT",
+       "buy": 49996.8,
+       "sell": 33030.3
+      }
+     ]
+    },
+    {
+     "name": "Boosters",
+     "icon": "SWEEP_BOOSTER",
+     "products": [
+      {
+       "id": "SWEEP_BOOSTER",
+       "buy": 24712.6,
+       "sell": 23507.0
+      },
+      {
+       "id": "FORAGING_WISDOM_BOOSTER",
+       "buy": 24817.8,
+       "sell": 23500.3
+      },
+      {
+       "id": "FORAGING_FORTUNE_BOOSTER",
+       "buy": 54999.1,
+       "sell": 29855.0
+      },
+      {
+       "id": "HUNTING_WISDOM_BOOSTER_COMMON",
+       "buy": 334751.7,
+       "sell": 71594.2
+      },
+      {
+       "id": "FORAGING_FORTUNE_BOOSTER_UNCOMMON",
+       "buy": 1519977.3,
+       "sell": 1050703.2
+      },
+      {
+       "id": "SWEEP_BOOSTER_UNCOMMON",
+       "buy": 1524011.4,
+       "sell": 1241284.4
+      },
+      {
+       "id": "HUNTING_WISDOM_BOOSTER_UNCOMMON",
+       "buy": 1530972.0,
+       "sell": 970035.8
+      },
+      {
+       "id": "FORAGING_WISDOM_BOOSTER_UNCOMMON",
+       "buy": 1569503.9,
+       "sell": 10.0
+      },
+      {
+       "id": "FIGHTING_BOOSTER_UNCOMMON",
+       "buy": 1599984.1,
+       "sell": 843642.1
+      },
+      {
+       "id": "FIGHTING_BOOSTER",
+       "buy": 1721648.7,
+       "sell": 535021.4
+      }
+     ]
+    },
+    {
+     "name": "Consumables",
+     "icon": "DWARVEN_OS_ORE_OATS",
+     "products": [
+      {
+       "id": "DWARVEN_OS_ORE_OATS",
+       "buy": 2699.6,
+       "sell": 0.0
+      },
+      {
+       "id": "DWARVEN_OS_GEMSTONE_GRAHAMS",
+       "buy": 93977.5,
+       "sell": 35000.5
+      },
+      {
+       "id": "DWARVEN_OS_BLOCK_BRAN",
+       "buy": 97996.5,
+       "sell": 26.4
+      },
+      {
+       "id": "DWARVEN_OS_METALLIC_MINIS",
+       "buy": 379066.1,
+       "sell": 137286.7
+      },
+      {
+       "id": "BEHEMOTH_POT_OF_HONEYCOMB",
+       "buy": 916350.2,
+       "sell": 149815.2
+      },
+      {
+       "id": "BRAIN_FOOD",
+       "buy": 1392810.2,
+       "sell": 1184998.2
+      },
+      {
+       "id": "ISOPOD_HUSK",
+       "buy": 5899998.0,
+       "sell": 5111500.5
+      }
+     ]
+    },
+    {
+     "name": "Cosmetics",
+     "icon": "BOOK_OF_STATS",
+     "products": [
+      {
+       "id": "BOOK_OF_STATS",
+       "buy": 7768330.5,
+       "sell": 5980840.8
+      }
+     ]
+    },
+    {
+     "name": "Garden Chips",
+     "icon": "QUICKDRAW_GARDEN_CHIP",
+     "products": [
+      {
+       "id": "QUICKDRAW_GARDEN_CHIP",
+       "buy": 32299.9,
+       "sell": 25772.3
+      },
+      {
+       "id": "HYPERCHARGE_GARDEN_CHIP",
+       "buy": 41982.2,
+       "sell": 27002.1
+      },
+      {
+       "id": "SYNTHESIS_GARDEN_CHIP",
+       "buy": 165208.8,
+       "sell": 146000.9
+      },
+      {
+       "id": "EVERGREEN_GARDEN_CHIP",
+       "buy": 174897.5,
+       "sell": 158954.3
+      },
+      {
+       "id": "VERMIN_VAPORIZER_GARDEN_CHIP",
+       "buy": 198136.4,
+       "sell": 142008.1
+      },
+      {
+       "id": "SOWLEDGE_GARDEN_CHIP",
+       "buy": 244862.3,
+       "sell": 211187.9
+      },
+      {
+       "id": "CROPSHOT_GARDEN_CHIP",
+       "buy": 644801.2,
+       "sell": 560000.0
+      },
+      {
+       "id": "RAREFINDER_GARDEN_CHIP",
+       "buy": 1010900.2,
+       "sell": 974011.0
+      },
+      {
+       "id": "MECHAMIND_GARDEN_CHIP",
+       "buy": 1204833.6,
+       "sell": 955267.2
+      },
+      {
+       "id": "OVERDRIVE_GARDEN_CHIP",
+       "buy": 2438812.7,
+       "sell": 1888130.8
+      }
+     ]
+    },
+    {
+     "name": "Misc A-C",
+     "icon": "CORRUPTED_FRAGMENT",
+     "products": [
+      {
+       "id": "CORRUPTED_FRAGMENT",
+       "buy": 0.2,
+       "sell": 0.1
+      },
+      {
+       "id": "CHUM",
+       "buy": 3.8,
+       "sell": 0.4
+      },
+      {
+       "id": "BLAZE_ASHES",
+       "buy": 49.9,
+       "sell": 30.1
+      },
+      {
+       "id": "ANCIENT_CLAW",
+       "buy": 202.9,
+       "sell": 161.9
+      },
+      {
+       "id": "ASCENSION_ROPE",
+       "buy": 256.8,
+       "sell": 16.6
+      },
+      {
+       "id": "CRUDE_GABAGOOL",
+       "buy": 560.5,
+       "sell": 301.7
+      },
+      {
+       "id": "CUP_OF_BLOOD",
+       "buy": 578.5,
+       "sell": 138.6
+      },
+      {
+       "id": "CHEESE_FUEL",
+       "buy": 758.0,
+       "sell": 429.9
+      },
+      {
+       "id": "BURNING_EYE",
+       "buy": 1168.3,
+       "sell": 891.7
+      },
+      {
+       "id": "BOB_OMB",
+       "buy": 1337.4,
+       "sell": 845.0
+      },
+      {
+       "id": "BEZOS",
+       "buy": 3807.5,
+       "sell": 906.4
+      },
+      {
+       "id": "ARACHNE_KEEPER_FRAGMENT",
+       "buy": 4499.6,
+       "sell": 230.5
+      },
+      {
+       "id": "BRONZE_BOWL",
+       "buy": 6858.3,
+       "sell": 4021.2
+      },
+      {
+       "id": "AGARIMOO_TONGUE",
+       "buy": 7720.4,
+       "sell": 5341.5
+      },
+      {
+       "id": "AGATHA_COUPON",
+       "buy": 10353.5,
+       "sell": 9739.1
+      },
+      {
+       "id": "CORRUPTED_NETHER_STAR",
+       "buy": 11999.7,
+       "sell": 10001.6
+      },
+      {
+       "id": "CRUDE_GABAGOOL_DISTILLATE",
+       "buy": 12041.6,
+       "sell": 12000.2
+      },
+      {
+       "id": "COMPOST",
+       "buy": 12883.0,
+       "sell": 12862.0
+      },
+      {
+       "id": "CAN_OF_WORMS",
+       "buy": 14988.7,
+       "sell": 9622.5
+      },
+      {
+       "id": "BLUE_SHARK_TOOTH",
+       "buy": 16499.1,
+       "sell": 7500.8
+      },
+      {
+       "id": "CROPIE",
+       "buy": 24951.3,
+       "sell": 24214.8
+      },
+      {
+       "id": "BONZO_FRAGMENT",
+       "buy": 29246.4,
+       "sell": 8754.1
+      },
+      {
+       "id": "BLAZE_ROD_DISTILLATE",
+       "buy": 33317.5,
+       "sell": 5000.3
+      },
+      {
+       "id": "ARACHNE_FRAGMENT",
+       "buy": 34752.1,
+       "sell": 31076.2
+      },
+      {
+       "id": "BOOKWORM_BOOK",
+       "buy": 41843.9,
+       "sell": 7237.1
+      },
+      {
+       "id": "BUSTED_BELT_BUCKLE",
+       "buy": 43996.4,
+       "sell": 35000.3
+      },
+      {
+       "id": "ARROW_BUNDLE_MAGMA",
+       "buy": 76768.3,
+       "sell": 50390.6
+      },
+      {
+       "id": "COMPACT_OOZE",
+       "buy": 79551.4,
+       "sell": 35009.9
+      },
+      {
+       "id": "CORNUCOPIA",
+       "buy": 84997.6,
+       "sell": 55918.2
+      },
+      {
+       "id": "BOUNCY_BEACH_BALL",
+       "buy": 87999.7,
+       "sell": 53900.1
+      },
+      {
+       "id": "ARCHITECT_FIRST_DRAFT",
+       "buy": 90795.4,
+       "sell": 59642.5
+      },
+      {
+       "id": "CANE_KNOT",
+       "buy": 98929.4,
+       "sell": 81172.7
+      },
+      {
+       "id": "AGGOURDIAN",
+       "buy": 118936.6,
+       "sell": 84099.3
+      },
+      {
+       "id": "BOTROOT",
+       "buy": 137159.3,
+       "sell": 80000.0
+      },
+      {
+       "id": "CLUBBED_FOSSIL",
+       "buy": 142742.0,
+       "sell": 56001.3
+      },
+      {
+       "id": "CONTROL_SWITCH",
+       "buy": 166856.4,
+       "sell": 131359.3
+      },
+      {
+       "id": "BLUE_RING",
+       "buy": 172623.8,
+       "sell": 162500.2
+      },
+      {
+       "id": "BAT_FIREWORK",
+       "buy": 189997.7,
+       "sell": 105001.7
+      },
+      {
+       "id": "BEJEWELED_HANDLE",
+       "buy": 194989.0,
+       "sell": 178673.7
+      },
+      {
+       "id": "CACTUS_FLOWER",
+       "buy": 219999.1,
+       "sell": 151111.3
+      },
+      {
+       "id": "CRYSTAL_FRAGMENT",
+       "buy": 289172.6,
+       "sell": 191766.0
+      },
+      {
+       "id": "CARROT_ZEST",
+       "buy": 293757.5,
+       "sell": 251563.3
+      },
+      {
+       "id": "BLUE_ICE_HUNK",
+       "buy": 331118.6,
+       "sell": 320000.0
+      },
+      {
+       "id": "ALLIGATOR_SKIN",
+       "buy": 348466.5,
+       "sell": 325001.0
+      },
+      {
+       "id": "BOBBIN_SCRIPTURES",
+       "buy": 353643.5,
+       "sell": 225000.5
+      },
+      {
+       "id": "CRYSTALIZED_MOONLIGHT",
+       "buy": 360578.3,
+       "sell": 331547.5
+      },
+      {
+       "id": "CELESTIAL_MASON_JAR",
+       "buy": 374999.8,
+       "sell": 206255.7
+      },
+      {
+       "id": "CLAW_FOSSIL",
+       "buy": 473605.3,
+       "sell": 156796.0
+      },
+      {
+       "id": "BROKEN_RADAR",
+       "buy": 695384.6,
+       "sell": 625000.6
+      },
+      {
+       "id": "CHYME",
+       "buy": 760457.3,
+       "sell": 50000.5
+      },
+      {
+       "id": "ARACHNE_FANG",
+       "buy": 799898.1,
+       "sell": 663667.5
+      },
+      {
+       "id": "CORLEONITE",
+       "buy": 841531.0,
+       "sell": 746504.0
+      },
+      {
+       "id": "BACHELOR_ROSE",
+       "buy": 1174301.2,
+       "sell": 913717.8
+      },
+      {
+       "id": "BERBERIS_FUEL_INJECTOR",
+       "buy": 1373069.1,
+       "sell": 1150002.7
+      },
+      {
+       "id": "CAPSAICIN_EYEDROPS_NO_CHARGES",
+       "buy": 1979995.2,
+       "sell": 1800004.6
+      },
+      {
+       "id": "CHAIN_END_TIMES",
+       "buy": 2145555.9,
+       "sell": 1400004.3
+      },
+      {
+       "id": "BOTTLED_MISCHIEF",
+       "buy": 2156011.5,
+       "sell": 1800001.0
+      },
+      {
+       "id": "CONDENSED_FERMENTO",
+       "buy": 2318658.5,
+       "sell": 1000000.8
+      },
+      {
+       "id": "COLOSSAL_EXP_BOTTLE",
+       "buy": 2384115.3,
+       "sell": 2043307.6
+      },
+      {
+       "id": "CONDENSED_HELIANTHUS",
+       "buy": 4249990.9,
+       "sell": 3702006.1
+      },
+      {
+       "id": "BLACK_WOOLEN_YARN",
+       "buy": 5999999.6,
+       "sell": 4770464.2
+      },
+      {
+       "id": "BLOOD_STAINED_COINS",
+       "buy": 6999997.9,
+       "sell": 4833493.6
+      },
+      {
+       "id": "BLIZZARD_BOTTLE",
+       "buy": 7499999.1,
+       "sell": 2000000.0
+      },
+      {
+       "id": "BLOOD_SOAKED_COINS",
+       "buy": 8066998.6,
+       "sell": 1000500.0
+      },
+      {
+       "id": "BAYOU_WATER_ORB",
+       "buy": 9073119.7,
+       "sell": 6000001.9
+      },
+      {
+       "id": "BRIMSTONE_HANDLE",
+       "buy": 10733845.6,
+       "sell": 8079316.6
+      },
+      {
+       "id": "BOOSTER_COOKIE",
+       "buy": 13299999.9,
+       "sell": 13020972.0
+      },
+      {
+       "id": "BRAIDED_GRIFFIN_FEATHER",
+       "buy": 20999999.4,
+       "sell": 17466405.3
+      },
+      {
+       "id": "AVARICIOUS_CHALICE",
+       "buy": 289999999.5,
+       "sell": 271950001.9
+      }
+     ]
+    },
+    {
+     "name": "Misc D-G",
+     "icon": "ENCHANTED_BONE_MEAL",
+     "products": [
+      {
+       "id": "ENCHANTED_BONE_MEAL",
+       "buy": 8.0,
+       "sell": 4.0
+      },
+      {
+       "id": "FLINT",
+       "buy": 17.0,
+       "sell": 9.4
+      },
+      {
+       "id": "EGG",
+       "buy": 17.4,
+       "sell": 2.3
+      },
+      {
+       "id": "DUNG",
+       "buy": 299.3,
+       "sell": 67.0
+      },
+      {
+       "id": "ENCHANTED_WOOL",
+       "buy": 307.1,
+       "sell": 258.8
+      },
+      {
+       "id": "DUNGEON_TRAP",
+       "buy": 528.8,
+       "sell": 356.6
+      },
+      {
+       "id": "ENCHANTED_SNOW_BLOCK",
+       "buy": 572.4,
+       "sell": 568.0
+      },
+      {
+       "id": "GILL_MEMBRANE",
+       "buy": 624.0,
+       "sell": 50.4
+      },
+      {
+       "id": "ENCHANTED_RAW_BEEF",
+       "buy": 742.7,
+       "sell": 551.1
+      },
+      {
+       "id": "FLAMING_HEART",
+       "buy": 747.8,
+       "sell": 122.0
+      },
+      {
+       "id": "ENCHANTED_RABBIT_FOOT",
+       "buy": 775.0,
+       "sell": 720.6
+      },
+      {
+       "id": "ENCHANTED_RABBIT_HIDE",
+       "buy": 775.9,
+       "sell": 750.0
+      },
+      {
+       "id": "ENCHANTED_LUSH_BERBERIS",
+       "buy": 988.3,
+       "sell": 559.1
+      },
+      {
+       "id": "DUNGEON_DECOY",
+       "buy": 1244.0,
+       "sell": 337.3
+      },
+      {
+       "id": "GREEN_CANDY",
+       "buy": 1411.8,
+       "sell": 1327.0
+      },
+      {
+       "id": "ENCHANTED_EGG",
+       "buy": 1451.8,
+       "sell": 1038.3
+      },
+      {
+       "id": "GLOWING_MUSHROOM",
+       "buy": 1697.2,
+       "sell": 1074.5
+      },
+      {
+       "id": "GAZING_PEARL",
+       "buy": 1949.3,
+       "sell": 664.4
+      },
+      {
+       "id": "DERELICT_ASHE",
+       "buy": 1982.5,
+       "sell": 1814.1
+      },
+      {
+       "id": "EXPIRED_PUMPKIN",
+       "buy": 2396.6,
+       "sell": 2012.3
+      },
+      {
+       "id": "GOBLIN_EGG_GREEN",
+       "buy": 2482.2,
+       "sell": 2000.3
+      },
+      {
+       "id": "DEEP_ROOT",
+       "buy": 2497.5,
+       "sell": 906.6
+      },
+      {
+       "id": "GOBLIN_EGG",
+       "buy": 2525.8,
+       "sell": 1914.0
+      },
+      {
+       "id": "ENCHANTED_FLINT",
+       "buy": 2600.0,
+       "sell": 2487.2
+      },
+      {
+       "id": "DEAD_PLANT",
+       "buy": 2825.8,
+       "sell": 1137.4
+      },
+      {
+       "id": "ENCHANTED_POPPY",
+       "buy": 3705.3,
+       "sell": 3050.3
+      },
+      {
+       "id": "DIGESTED_MUSHROOMS",
+       "buy": 3750.3,
+       "sell": 1613.4
+      },
+      {
+       "id": "DARK_QUEENS_SOUL_DROP",
+       "buy": 6166.2,
+       "sell": 4700.7
+      },
+      {
+       "id": "GREEN_GIFT",
+       "buy": 6262.4,
+       "sell": 3500.8
+      },
+      {
+       "id": "ENCHANTED_POISONOUS_POTATO",
+       "buy": 6997.9,
+       "sell": 822.0
+      },
+      {
+       "id": "FINE_FLOUR",
+       "buy": 8689.7,
+       "sell": 7390.3
+      },
+      {
+       "id": "EXPORTABLE_CARROTS",
+       "buy": 9698.2,
+       "sell": 5762.0
+      },
+      {
+       "id": "GOBLIN_EGG_YELLOW",
+       "buy": 9988.0,
+       "sell": 9206.5
+      },
+      {
+       "id": "FEL_PEARL",
+       "buy": 10217.9,
+       "sell": 9346.7
+      },
+      {
+       "id": "FROGCOIN",
+       "buy": 15500.0,
+       "sell": 8209.2
+      },
+      {
+       "id": "ENCHANTED_DANDELION",
+       "buy": 15947.1,
+       "sell": 7914.8
+      },
+      {
+       "id": "EMPTY_CHUM_BUCKET",
+       "buy": 16800.2,
+       "sell": 11504.4
+      },
+      {
+       "id": "FULL_CHUM_BUCKET",
+       "buy": 19466.6,
+       "sell": 14653.3
+      },
+      {
+       "id": "ENCHANTED_TITANIUM",
+       "buy": 20644.5,
+       "sell": 19239.7
+      },
+      {
+       "id": "FUEL_GABAGOOL",
+       "buy": 23077.0,
+       "sell": 13641.4
+      },
+      {
+       "id": "ETHEREAL_VINE",
+       "buy": 24545.2,
+       "sell": 19191.6
+      },
+      {
+       "id": "DIAMOND_SPREADING",
+       "buy": 25473.1,
+       "sell": 3002.4
+      },
+      {
+       "id": "FOUL_FLESH",
+       "buy": 26136.7,
+       "sell": 24102.0
+      },
+      {
+       "id": "GOBLIN_EGG_RED",
+       "buy": 29835.8,
+       "sell": 23119.3
+      },
+      {
+       "id": "ENCHANTED_ANCIENT_CLAW",
+       "buy": 33009.9,
+       "sell": 30350.1
+      },
+      {
+       "id": "FLAMES",
+       "buy": 49132.0,
+       "sell": 30010.2
+      },
+      {
+       "id": "FAKE_SHURIKEN",
+       "buy": 51215.6,
+       "sell": 48317.9
+      },
+      {
+       "id": "GLACITE_JEWEL",
+       "buy": 53743.2,
+       "sell": 51137.5
+      },
+      {
+       "id": "GLOWSTONE_DUST_DISTILLATE",
+       "buy": 56330.3,
+       "sell": 25000.0
+      },
+      {
+       "id": "GIANT_FRAGMENT_BOULDER",
+       "buy": 56767.7,
+       "sell": 48210.0
+      },
+      {
+       "id": "FEASTFUNGUS",
+       "buy": 57630.4,
+       "sell": 48142.6
+      },
+      {
+       "id": "GIANT_FRAGMENT_BIGFOOT",
+       "buy": 59243.9,
+       "sell": 47503.8
+      },
+      {
+       "id": "DARK_CANDY",
+       "buy": 60988.4,
+       "sell": 59126.6
+      },
+      {
+       "id": "GOLDEN_POWDER",
+       "buy": 79875.6,
+       "sell": 25527.2
+      },
+      {
+       "id": "FEAST_FLASK",
+       "buy": 84661.5,
+       "sell": 69236.3
+      },
+      {
+       "id": "GLACIAL_FRAGMENT",
+       "buy": 87607.1,
+       "sell": 72467.1
+      },
+      {
+       "id": "FRIED_FEATHER",
+       "buy": 94748.2,
+       "sell": 87500.0
+      },
+      {
+       "id": "ENCHANTED_SHARK_FIN",
+       "buy": 97499.9,
+       "sell": 48575.3
+      },
+      {
+       "id": "GIANT_BOUNCY_BEACH_BALL",
+       "buy": 99997.6,
+       "sell": 38130.9
+      },
+      {
+       "id": "GOLDEN_TOOTH",
+       "buy": 103206.3,
+       "sell": 88323.5
+      },
+      {
+       "id": "ELECTRON_TRANSMITTER",
+       "buy": 105963.2,
+       "sell": 96695.3
+      },
+      {
+       "id": "FIRE_IN_A_BOTTLE",
+       "buy": 110996.8,
+       "sell": 87042.2
+      },
+      {
+       "id": "FLEXBONE",
+       "buy": 112090.9,
+       "sell": 94728.2
+      },
+      {
+       "id": "DEEPFRIES",
+       "buy": 113965.0,
+       "sell": 55808.2
+      },
+      {
+       "id": "GRIFFIN_FEATHER",
+       "buy": 114146.8,
+       "sell": 110515.8
+      },
+      {
+       "id": "ENCHANTED_CAKE",
+       "buy": 134698.7,
+       "sell": 37924.5
+      },
+      {
+       "id": "FTX_3070",
+       "buy": 180913.8,
+       "sell": 168644.6
+      },
+      {
+       "id": "FLORAL_GELATIN",
+       "buy": 189998.5,
+       "sell": 161495.2
+      },
+      {
+       "id": "FARMING_FOR_DUMMIES",
+       "buy": 190899.8,
+       "sell": 136131.1
+      },
+      {
+       "id": "GOLEM_POPPY",
+       "buy": 229116.2,
+       "sell": 200351.7
+      },
+      {
+       "id": "ECTOPLASM",
+       "buy": 254754.6,
+       "sell": 209952.6
+      },
+      {
+       "id": "FERMENTO",
+       "buy": 263551.6,
+       "sell": 249402.5
+      },
+      {
+       "id": "DAYSWITCH",
+       "buy": 273528.9,
+       "sell": 20001.8
+      },
+      {
+       "id": "DUNGEON_CHEST_KEY",
+       "buy": 278272.8,
+       "sell": 239934.7
+      },
+      {
+       "id": "DESIGNER_COFFEE_BEANS",
+       "buy": 292579.7,
+       "sell": 261809.7
+      },
+      {
+       "id": "ENDERMAN_CORTEX_REWRITER",
+       "buy": 299991.8,
+       "sell": 67435.9
+      },
+      {
+       "id": "FUEL_TANK",
+       "buy": 305590.5,
+       "sell": 262876.7
+      },
+      {
+       "id": "GIANT_HONEY_DIPPER",
+       "buy": 404746.0,
+       "sell": 28000.1
+      },
+      {
+       "id": "GIANT_FRAGMENT_DIAMOND",
+       "buy": 489033.6,
+       "sell": 448448.0
+      },
+      {
+       "id": "FOOTPRINT_FOSSIL",
+       "buy": 499998.8,
+       "sell": 148060.0
+      },
+      {
+       "id": "FLY_SWATTER",
+       "buy": 501762.6,
+       "sell": 472654.5
+      },
+      {
+       "id": "FRAGRANCED_BROWN_MUSHROOM_PASTE",
+       "buy": 513134.1,
+       "sell": 30000.1
+      },
+      {
+       "id": "DAEDALUS_STICK",
+       "buy": 618647.6,
+       "sell": 490017.5
+      },
+      {
+       "id": "FESTERING_MAGGOT",
+       "buy": 855668.8,
+       "sell": 500001.8
+      },
+      {
+       "id": "DIVAN_FRAGMENT",
+       "buy": 894997.5,
+       "sell": 850000.3
+      },
+      {
+       "id": "FORESTS_FAVOR",
+       "buy": 999999.8,
+       "sell": 910692.7
+      },
+      {
+       "id": "GOBLIN_EGG_BLUE",
+       "buy": 1037468.9,
+       "sell": 710000.1
+      },
+      {
+       "id": "GIANT_FROG_TREAT",
+       "buy": 1128690.2,
+       "sell": 567249.5
+      },
+      {
+       "id": "FUMING_POTATO_BOOK",
+       "buy": 1310996.3,
+       "sell": 1228056.7
+      },
+      {
+       "id": "GIANT_FRAGMENT_LASER",
+       "buy": 1386401.8,
+       "sell": 1279198.7
+      },
+      {
+       "id": "GLACITE_AMALGAMATION",
+       "buy": 1489530.7,
+       "sell": 1416694.6
+      },
+      {
+       "id": "GEMSTONE_MIXTURE",
+       "buy": 1597112.4,
+       "sell": 1531561.1
+      },
+      {
+       "id": "GOLDEN_PLATE",
+       "buy": 1655794.6,
+       "sell": 1605926.3
+      },
+      {
+       "id": "GLOSSY_GEMSTONE",
+       "buy": 1939350.2,
+       "sell": 1679425.9
+      },
+      {
+       "id": "ENCHANTED_COMPOST",
+       "buy": 2107930.6,
+       "sell": 2019534.1
+      },
+      {
+       "id": "DISTANT_ECHO",
+       "buy": 2167604.7,
+       "sell": 976069.9
+      },
+      {
+       "id": "ENSNARED_SNAIL",
+       "buy": 2623729.1,
+       "sell": 1556187.3
+      },
+      {
+       "id": "DIVER_FRAGMENT",
+       "buy": 2931210.6,
+       "sell": 2800002.8
+      },
+      {
+       "id": "FREE_WILL",
+       "buy": 3468532.2,
+       "sell": 3050000.6
+      },
+      {
+       "id": "DRILL_ENGINE",
+       "buy": 3724714.5,
+       "sell": 3521308.2
+      },
+      {
+       "id": "FATEFUL_STINGER",
+       "buy": 3774835.9,
+       "sell": 2079464.8
+      },
+      {
+       "id": "GUARDIAN_LUCKY_BLOCK",
+       "buy": 3971616.2,
+       "sell": 3075685.5
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_BIRCH_12",
+       "buy": 4164360.2,
+       "sell": 1647614.6
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_DARK_OAK_12",
+       "buy": 5085669.2,
+       "sell": 2000001.9
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_SPRUCE_12",
+       "buy": 5480776.4,
+       "sell": 2589916.3
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_JUNGLE_12",
+       "buy": 5489995.8,
+       "sell": 2100000.0
+      },
+      {
+       "id": "GRIFFIN_UPGRADE_STONE_RARE",
+       "buy": 5500000.0,
+       "sell": 3229034.5
+      },
+      {
+       "id": "FROZEN_SCUTE",
+       "buy": 5538512.5,
+       "sell": 4594385.7
+      },
+      {
+       "id": "FRESHLY_MINTED_COINS",
+       "buy": 5699997.0,
+       "sell": 5000007.8
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_ACACIA_12",
+       "buy": 6286217.3,
+       "sell": 2052569.4
+      },
+      {
+       "id": "ENCHANTED_TURBO_GOURD",
+       "buy": 6451628.2,
+       "sell": 4000001.1
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_OAK_12",
+       "buy": 7105114.9,
+       "sell": 3395430.4
+      },
+      {
+       "id": "GREAT_WHITE_SHARK_TOOTH",
+       "buy": 7469762.4,
+       "sell": 6500000.3
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_REVENANT_12",
+       "buy": 7499997.7,
+       "sell": 1100000.0
+      },
+      {
+       "id": "FILLED_ROSEWATER_FLASK",
+       "buy": 9999999.2,
+       "sell": 8185117.7
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_CLAY_12",
+       "buy": 10591183.5,
+       "sell": 5754561.3
+      },
+      {
+       "id": "GRIFFIN_UPGRADE_STONE_EPIC",
+       "buy": 11989999.6,
+       "sell": 9040631.1
+      },
+      {
+       "id": "GOLD_BOTTLE_CAP",
+       "buy": 13716887.3,
+       "sell": 10378382.4
+      },
+      {
+       "id": "FIRST_MASTER_STAR",
+       "buy": 13799996.8,
+       "sell": 13296027.4
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_FISHING_12",
+       "buy": 14619989.8,
+       "sell": 11200001.1
+      },
+      {
+       "id": "GOLDEN_FRAGMENT",
+       "buy": 17450000.0,
+       "sell": 16500005.1
+      },
+      {
+       "id": "GIANT_SEAL_PLUSHIE",
+       "buy": 18289290.1,
+       "sell": 10000000.5
+      },
+      {
+       "id": "FLYCATCHER_UPGRADE",
+       "buy": 24841504.0,
+       "sell": 23862843.8
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_TARANTULA_12",
+       "buy": 25379993.9,
+       "sell": 12689997.0
+      },
+      {
+       "id": "GENERATOR_UPGRADE_STONE_LILY_PAD_12",
+       "buy": 27143842.3,
+       "sell": 16000000.8
+      },
+      {
+       "id": "GREAT_WHITE_TOOTH_MEAL",
+       "buy": 28999998.2,
+       "sell": 16780013.8
+      },
+      {
+       "id": "GOLDEN_BOUNTY",
+       "buy": 37739999.6,
+       "sell": 31816194.1
+      },
+      {
+       "id": "GIANT_PIG_EAR",
+       "buy": 38071896.6,
+       "sell": 1913095.6
+      },
+      {
+       "id": "FOURTH_MASTER_STAR",
+       "buy": 64448434.1,
+       "sell": 61944247.6
+      },
+      {
+       "id": "ENDSTONE_IDOL",
+       "buy": 65999996.3,
+       "sell": 46639791.9
+      },
+      {
+       "id": "DIVAN_POWDER_COATING",
+       "buy": 76899340.5,
+       "sell": 70094891.9
+      },
+      {
+       "id": "FIFTH_MASTER_STAR",
+       "buy": 92601143.1,
+       "sell": 88915333.4
+      },
+      {
+       "id": "GIANT_WITCH_CAULDRON",
+       "buy": 124999999.5,
+       "sell": 100000.0
+      }
+     ]
+    },
+    {
+     "name": "Misc H-L",
+     "icon": "LUMP_OF_MAGMA",
+     "products": [
+      {
+       "id": "LUMP_OF_MAGMA",
+       "buy": 44.8,
+       "sell": 6.9
+      },
+      {
+       "id": "LUSH_BERBERIS",
+       "buy": 95.2,
+       "sell": 53.1
+      },
+      {
+       "id": "HONEY_JAR",
+       "buy": 167.9,
+       "sell": 55.7
+      },
+      {
+       "id": "INFLATABLE_JERRY",
+       "buy": 1386.1,
+       "sell": 396.7
+      },
+      {
+       "id": "HALF_EATEN_MUSHROOM",
+       "buy": 1624.3,
+       "sell": 599.3
+      },
+      {
+       "id": "HEMOVIBE",
+       "buy": 1999.7,
+       "sell": 105.8
+      },
+      {
+       "id": "HORN_OF_TAURUS",
+       "buy": 2073.1,
+       "sell": 368.1
+      },
+      {
+       "id": "ICE_HUNK",
+       "buy": 3559.9,
+       "sell": 1521.0
+      },
+      {
+       "id": "JELLY",
+       "buy": 3782.7,
+       "sell": 1421.8
+      },
+      {
+       "id": "KUUDRA_TEETH",
+       "buy": 7251.0,
+       "sell": 6002.8
+      },
+      {
+       "id": "HYPERGOLIC_IONIZED_CERAMICS",
+       "buy": 9999.6,
+       "sell": 2000.0
+      },
+      {
+       "id": "HOLY_FRAGMENT",
+       "buy": 12752.2,
+       "sell": 7227.3
+      },
+      {
+       "id": "HALLOWED_SKULL",
+       "buy": 14394.1,
+       "sell": 9015.3
+      },
+      {
+       "id": "KADA_LEAD",
+       "buy": 18026.0,
+       "sell": 17004.0
+      },
+      {
+       "id": "HEALING_TISSUE",
+       "buy": 19401.3,
+       "sell": 15000.4
+      },
+      {
+       "id": "HAMSTER_WHEEL",
+       "buy": 20997.7,
+       "sell": 19062.7
+      },
+      {
+       "id": "IRIDIUM",
+       "buy": 26021.4,
+       "sell": 3704.8
+      },
+      {
+       "id": "LEATHER_CLOTH",
+       "buy": 27743.3,
+       "sell": 20101.1
+      },
+      {
+       "id": "HEMOGLASS",
+       "buy": 30475.6,
+       "sell": 27481.6
+      },
+      {
+       "id": "LOCUST_LARVA",
+       "buy": 33818.2,
+       "sell": 21300.9
+      },
+      {
+       "id": "JACOBS_TICKET",
+       "buy": 38705.7,
+       "sell": 36440.6
+      },
+      {
+       "id": "LARGE_HONEY_DIPPER",
+       "buy": 39854.4,
+       "sell": 0.0
+      },
+      {
+       "id": "HELIX",
+       "buy": 51189.0,
+       "sell": 22004.3
+      },
+      {
+       "id": "INK_SPLAT",
+       "buy": 60824.4,
+       "sell": 45000.5
+      },
+      {
+       "id": "INFERNO_FUEL_BLOCK",
+       "buy": 64124.7,
+       "sell": 59327.1
+      },
+      {
+       "id": "JUNGLE_HEART",
+       "buy": 99077.2,
+       "sell": 92000.6
+      },
+      {
+       "id": "LIVID_FRAGMENT",
+       "buy": 105243.7,
+       "sell": 86144.0
+      },
+      {
+       "id": "JERRY_BOX_GREEN",
+       "buy": 157992.9,
+       "sell": 126516.9
+      },
+      {
+       "id": "JERRY_BOX_BLUE",
+       "buy": 188877.9,
+       "sell": 147200.5
+      },
+      {
+       "id": "KELVIN_INVERTER",
+       "buy": 192108.4,
+       "sell": 90216.3
+      },
+      {
+       "id": "INFERNO_VERTEX",
+       "buy": 229482.9,
+       "sell": 192610.6
+      },
+      {
+       "id": "JUNGLE_KEY",
+       "buy": 230716.3,
+       "sell": 214000.3
+      },
+      {
+       "id": "LAVA_SHELL",
+       "buy": 249998.8,
+       "sell": 202507.8
+      },
+      {
+       "id": "JERRY_BOX_PURPLE",
+       "buy": 293303.3,
+       "sell": 231125.5
+      },
+      {
+       "id": "LUMINO_FIBER",
+       "buy": 381779.0,
+       "sell": 245904.6
+      },
+      {
+       "id": "HEAVY_PEARL",
+       "buy": 382135.6,
+       "sell": 279200.0
+      },
+      {
+       "id": "HEAVY_GABAGOOL",
+       "buy": 407999.1,
+       "sell": 300001.0
+      },
+      {
+       "id": "HELIANTHUS",
+       "buy": 444709.1,
+       "sell": 413799.1
+      },
+      {
+       "id": "HEMOBOMB",
+       "buy": 532749.7,
+       "sell": 400000.3
+      },
+      {
+       "id": "HORSEMAN_CANDLE",
+       "buy": 727793.3,
+       "sell": 435395.4
+      },
+      {
+       "id": "JERRY_BOX_GOLDEN",
+       "buy": 995992.6,
+       "sell": 748852.7
+      },
+      {
+       "id": "LARGE_PIG_EAR",
+       "buy": 1078846.2,
+       "sell": 20000.1
+      },
+      {
+       "id": "LARGE_FROG_TREAT",
+       "buy": 1117953.9,
+       "sell": 530899.0
+      },
+      {
+       "id": "LAVA_WATER_ORB",
+       "buy": 1359983.6,
+       "sell": 763106.6
+      },
+      {
+       "id": "KISMET_FEATHER",
+       "buy": 1557186.8,
+       "sell": 1498234.8
+      },
+      {
+       "id": "KUUDRA_TENTACLE",
+       "buy": 2793712.2,
+       "sell": 2500003.9
+      },
+      {
+       "id": "HIGHLITE",
+       "buy": 2909999.8,
+       "sell": 1353352.8
+      },
+      {
+       "id": "HYPERGOLIC_GABAGOOL",
+       "buy": 4370979.6,
+       "sell": 4065960.7
+      },
+      {
+       "id": "INFERNO_APEX",
+       "buy": 5705141.7,
+       "sell": 4286465.5
+      },
+      {
+       "id": "LARGE_SEAL_PLUSHIE",
+       "buy": 13599997.3,
+       "sell": 1000003.0
+      },
+      {
+       "id": "LOTUS_WATER_ORB",
+       "buy": 27578092.9,
+       "sell": 15500000.2
+      },
+      {
+       "id": "HOTSPOT_WATER_ORB",
+       "buy": 33133518.2,
+       "sell": 30156676.5
+      },
+      {
+       "id": "LARGE_WITCH_CAULDRON",
+       "buy": 102499991.0,
+       "sell": 34000000.3
+      }
+     ]
+    },
+    {
+     "name": "Misc M-P",
+     "icon": "MOOGMA_PELT",
+     "products": [
+      {
+       "id": "MOOGMA_PELT",
+       "buy": 56.7,
+       "sell": 5.0
+      },
+      {
+       "id": "NULL_SPHERE",
+       "buy": 146.8,
+       "sell": 119.8
+      },
+      {
+       "id": "PYROCLASTIC_SCALE",
+       "buy": 215.4,
+       "sell": 20.2
+      },
+      {
+       "id": "POISONOUS_POTATO",
+       "buy": 294.7,
+       "sell": 55.3
+      },
+      {
+       "id": "MAGMAG",
+       "buy": 999.9,
+       "sell": 105.0
+      },
+      {
+       "id": "MIMIC_FRAGMENT",
+       "buy": 0.0,
+       "sell": 1000.1
+      },
+      {
+       "id": "MITE_GEL",
+       "buy": 2126.5,
+       "sell": 1901.6
+      },
+      {
+       "id": "OIL_BARREL",
+       "buy": 2750.3,
+       "sell": 2128.1
+      },
+      {
+       "id": "MUTATED_BLAZE_ASHES",
+       "buy": 2799.7,
+       "sell": 107.4
+      },
+      {
+       "id": "MEDIUM_HONEY_DIPPER",
+       "buy": 3999.9,
+       "sell": 0.0
+      },
+      {
+       "id": "MAGMA_CHUNK",
+       "buy": 4571.6,
+       "sell": 396.5
+      },
+      {
+       "id": "MILLENIA_OLD_BLAZE_ASHES",
+       "buy": 5889.2,
+       "sell": 1245.7
+      },
+      {
+       "id": "NURSE_SHARK_TOOTH",
+       "buy": 5899.2,
+       "sell": 135.8
+      },
+      {
+       "id": "ORB_OF_ENERGY",
+       "buy": 6845.4,
+       "sell": 4618.0
+      },
+      {
+       "id": "PUMPKIN_BOMB",
+       "buy": 9849.2,
+       "sell": 5000.5
+      },
+      {
+       "id": "OMEGA_EGG",
+       "buy": 11964.2,
+       "sell": 1002.1
+      },
+      {
+       "id": "OLD_FRAGMENT",
+       "buy": 14082.8,
+       "sell": 10250.1
+      },
+      {
+       "id": "PROTECTOR_FRAGMENT",
+       "buy": 14298.3,
+       "sell": 10000.1
+      },
+      {
+       "id": "MIRIA_COUPON",
+       "buy": 15773.1,
+       "sell": 15052.5
+      },
+      {
+       "id": "PURPLE_CANDY",
+       "buy": 17332.9,
+       "sell": 17007.3
+      },
+      {
+       "id": "POTTED_CACTUS",
+       "buy": 20947.6,
+       "sell": 9623.6
+      },
+      {
+       "id": "MANA_DISINTEGRATOR",
+       "buy": 24986.0,
+       "sell": 19.3
+      },
+      {
+       "id": "MYTHOS_FRAGMENT",
+       "buy": 26998.4,
+       "sell": 22642.2
+      },
+      {
+       "id": "PET_CAKE",
+       "buy": 27497.9,
+       "sell": 1942.9
+      },
+      {
+       "id": "NETHER_STALK_DISTILLATE",
+       "buy": 27689.2,
+       "sell": 5524.2
+      },
+      {
+       "id": "PLANT_MATTER",
+       "buy": 30620.2,
+       "sell": 27842.2
+      },
+      {
+       "id": "NULL_ATOM",
+       "buy": 38799.0,
+       "sell": 31403.0
+      },
+      {
+       "id": "MAGMA_CREAM_DISTILLATE",
+       "buy": 84997.3,
+       "sell": 10108.4
+      },
+      {
+       "id": "PARTY_GIFT",
+       "buy": 98497.4,
+       "sell": 56298.2
+      },
+      {
+       "id": "PET_ITEM_CHOCOLATE_SYRINGE",
+       "buy": 99997.2,
+       "sell": 10000.8
+      },
+      {
+       "id": "NULL_OVOID",
+       "buy": 123961.6,
+       "sell": 112011.2
+      },
+      {
+       "id": "METAPHYSICAL_SERUM",
+       "buy": 153630.8,
+       "sell": 33561.7
+      },
+      {
+       "id": "OLD_LEATHER_BOOT",
+       "buy": 184810.0,
+       "sell": 132185.2
+      },
+      {
+       "id": "MELON_JUICE",
+       "buy": 228502.3,
+       "sell": 187548.6
+      },
+      {
+       "id": "PLASMA",
+       "buy": 233543.5,
+       "sell": 187226.3
+      },
+      {
+       "id": "POTATO_SPREADING",
+       "buy": 245609.1,
+       "sell": 225354.5
+      },
+      {
+       "id": "OVERCLOCKER_3000",
+       "buy": 247376.5,
+       "sell": 240330.2
+      },
+      {
+       "id": "MAGMA_CORE",
+       "buy": 273063.5,
+       "sell": 222001.2
+      },
+      {
+       "id": "MOLTEN_POWDER",
+       "buy": 348319.6,
+       "sell": 313002.1
+      },
+      {
+       "id": "PET_ITEM_TOY_JERRY",
+       "buy": 378031.9,
+       "sell": 2500.1
+      },
+      {
+       "id": "MIXED_MITE_GEL",
+       "buy": 422389.3,
+       "sell": 106395.0
+      },
+      {
+       "id": "MEDIUM_PIG_EAR",
+       "buy": 425322.4,
+       "sell": 1.0
+      },
+      {
+       "id": "MEDIUM_FROG_TREAT",
+       "buy": 559345.9,
+       "sell": 195452.2
+      },
+      {
+       "id": "PET_ITEM_VAMPIRE_FANG",
+       "buy": 599523.8,
+       "sell": 400000.3
+      },
+      {
+       "id": "POISON_SAMPLE",
+       "buy": 664375.8,
+       "sell": 512521.3
+      },
+      {
+       "id": "POWER_CRYSTAL",
+       "buy": 793036.3,
+       "sell": 600000.8
+      },
+      {
+       "id": "PUMPKIN_GUTS",
+       "buy": 973624.9,
+       "sell": 700004.5
+      },
+      {
+       "id": "MIRIA_PRIZE",
+       "buy": 1003154.7,
+       "sell": 877642.3
+      },
+      {
+       "id": "PRECURSOR_APPARATUS",
+       "buy": 1020946.1,
+       "sell": 918024.0
+      },
+      {
+       "id": "PET_ITEM_PURE_MITHRIL_GEM",
+       "buy": 1200000.0,
+       "sell": 803707.4
+      },
+      {
+       "id": "PET_ITEM_LUCKY_CLOVER_DROP",
+       "buy": 1538959.5,
+       "sell": 1284634.0
+      },
+      {
+       "id": "PET_ITEM_EXP_SHARE_DROP",
+       "buy": 1999998.0,
+       "sell": 1111756.4
+      },
+      {
+       "id": "MOUND_OF_SEAGRASS",
+       "buy": 2138345.1,
+       "sell": 1383480.5
+      },
+      {
+       "id": "POLARVOID_BOOK",
+       "buy": 2775300.2,
+       "sell": 2484765.3
+      },
+      {
+       "id": "PESTHUNTING_GUIDE",
+       "buy": 2947833.0,
+       "sell": 2378544.6
+      },
+      {
+       "id": "OCTOPUS_TENDRIL",
+       "buy": 3812341.5,
+       "sell": 2159763.9
+      },
+      {
+       "id": "MAGMA_LORD_FRAGMENT",
+       "buy": 3990391.4,
+       "sell": 3829452.2
+      },
+      {
+       "id": "MITHRIL_PLATE",
+       "buy": 5756113.1,
+       "sell": 5042563.2
+      },
+      {
+       "id": "MAGIC_TOP_HAT",
+       "buy": 6575987.9,
+       "sell": 2550002.5
+      },
+      {
+       "id": "MEDIUM_SEAL_PLUSHIE",
+       "buy": 8102848.8,
+       "sell": 15003.8
+      },
+      {
+       "id": "MOBY_DUCK_COLLECTOR_EDITION",
+       "buy": 8189802.2,
+       "sell": 5401258.2
+      },
+      {
+       "id": "PERFECT_CITRINE_GEM",
+       "buy": 9348969.5,
+       "sell": 8151888.8
+      },
+      {
+       "id": "PERFECT_RUBY_GEM",
+       "buy": 10827240.4,
+       "sell": 10347781.3
+      },
+      {
+       "id": "PERFECT_AQUAMARINE_GEM",
+       "buy": 11914981.1,
+       "sell": 9533425.5
+      },
+      {
+       "id": "PERFECT_OPAL_GEM",
+       "buy": 11964773.8,
+       "sell": 10747941.0
+      },
+      {
+       "id": "PERFECT_TOPAZ_GEM",
+       "buy": 12457996.6,
+       "sell": 11072910.3
+      },
+      {
+       "id": "PERFECT_JADE_GEM",
+       "buy": 12529405.2,
+       "sell": 12026481.0
+      },
+      {
+       "id": "PERFECT_AMBER_GEM",
+       "buy": 13997311.8,
+       "sell": 13235157.3
+      },
+      {
+       "id": "PERFECT_SAPPHIRE_GEM",
+       "buy": 14335455.1,
+       "sell": 13731780.6
+      },
+      {
+       "id": "PERFECT_ONYX_GEM",
+       "buy": 14660711.3,
+       "sell": 13407221.4
+      },
+      {
+       "id": "PERFECT_AMETHYST_GEM",
+       "buy": 15008353.7,
+       "sell": 14500025.3
+      },
+      {
+       "id": "NULL_BLADE",
+       "buy": 20999998.7,
+       "sell": 20000000.1
+      },
+      {
+       "id": "PERFECT_PERIDOT_GEM",
+       "buy": 21885893.7,
+       "sell": 21063081.4
+      },
+      {
+       "id": "PERFECT_JASPER_GEM",
+       "buy": 27834019.2,
+       "sell": 26792277.7
+      },
+      {
+       "id": "MEDIUM_WITCH_CAULDRON",
+       "buy": 28014498.0,
+       "sell": 9192273.6
+      },
+      {
+       "id": "PERFECT_PLATE",
+       "buy": 29999995.0,
+       "sell": 29000000.0
+      },
+      {
+       "id": "PET_ITEM_TIER_BOOST_DROP",
+       "buy": 124999999.0,
+       "sell": 115000000.6
+      }
+     ]
+    },
+    {
+     "name": "Misc Q-S",
+     "icon": "SNOW_BALL",
+     "products": [
+      {
+       "id": "SNOW_BALL",
+       "buy": 3.2,
+       "sell": 0.1
+      },
+      {
+       "id": "RABBIT_HIDE",
+       "buy": 5.4,
+       "sell": 0.5
+      },
+      {
+       "id": "SNOW_BLOCK",
+       "buy": 7.1,
+       "sell": 1.0
+      },
+      {
+       "id": "RABBIT_FOOT",
+       "buy": 14.2,
+       "sell": 0.9
+      },
+      {
+       "id": "RAW_BEEF",
+       "buy": 24.8,
+       "sell": 1.2
+      },
+      {
+       "id": "REVENANT_FLESH",
+       "buy": 119.9,
+       "sell": 105.6
+      },
+      {
+       "id": "SUPERBOOM_TNT",
+       "buy": 325.5,
+       "sell": 44.0
+      },
+      {
+       "id": "SPECTRE_DUST",
+       "buy": 338.6,
+       "sell": 22.0
+      },
+      {
+       "id": "STRETCHING_STICKS",
+       "buy": 349.9,
+       "sell": 150.7
+      },
+      {
+       "id": "SHARK_FIN",
+       "buy": 394.8,
+       "sell": 250.6
+      },
+      {
+       "id": "RAW_SOULFLOW",
+       "buy": 451.1,
+       "sell": 154.5
+      },
+      {
+       "id": "SPIRIT_LEAP",
+       "buy": 501.4,
+       "sell": 128.7
+      },
+      {
+       "id": "RED_ROSE",
+       "buy": 848.8,
+       "sell": 331.6
+      },
+      {
+       "id": "STURDY_BONE",
+       "buy": 1632.5,
+       "sell": 156.6
+      },
+      {
+       "id": "SUPREME_CHOCOLATE_BAR",
+       "buy": 1792.3,
+       "sell": 313.4
+      },
+      {
+       "id": "STARFALL",
+       "buy": 2092.1,
+       "sell": 2066.0
+      },
+      {
+       "id": "SLUDGE_JUICE",
+       "buy": 2100.0,
+       "sell": 2029.7
+      },
+      {
+       "id": "SEA_BRINE",
+       "buy": 2588.3,
+       "sell": 94.3
+      },
+      {
+       "id": "SOUL_STRING",
+       "buy": 5304.5,
+       "sell": 4925.4
+      },
+      {
+       "id": "SMALL_HONEY_DIPPER",
+       "buy": 5999.8,
+       "sell": 0.0
+      },
+      {
+       "id": "REVENANT_CATALYST",
+       "buy": 8282.3,
+       "sell": 5104.4
+      },
+      {
+       "id": "SPELL_POWDER",
+       "buy": 9887.4,
+       "sell": 5001.9
+      },
+      {
+       "id": "SCARF_FRAGMENT",
+       "buy": 11006.9,
+       "sell": 8665.7
+      },
+      {
+       "id": "SIGNAL_ENHANCER",
+       "buy": 17999.8,
+       "sell": 5000.0
+      },
+      {
+       "id": "SPOOKY_SHARD",
+       "buy": 20812.0,
+       "sell": 10739.3
+      },
+      {
+       "id": "RED_GIFT",
+       "buy": 20920.7,
+       "sell": 18999.9
+      },
+      {
+       "id": "STARLYN_PRIZE",
+       "buy": 21308.7,
+       "sell": 15091.3
+      },
+      {
+       "id": "SOULFLOW",
+       "buy": 23987.2,
+       "sell": 21957.1
+      },
+      {
+       "id": "RUSTY_COIN",
+       "buy": 26894.9,
+       "sell": 24037.6
+      },
+      {
+       "id": "SUPER_EGG",
+       "buy": 29998.4,
+       "sell": 10008.7
+      },
+      {
+       "id": "STRONG_FRAGMENT",
+       "buy": 30142.4,
+       "sell": 26892.1
+      },
+      {
+       "id": "REVENANT_VISCERA",
+       "buy": 45456.5,
+       "sell": 41198.6
+      },
+      {
+       "id": "SQUASH",
+       "buy": 75682.8,
+       "sell": 74001.4
+      },
+      {
+       "id": "REKINDLED_EMBER_FRAGMENT",
+       "buy": 75880.9,
+       "sell": 50009.3
+      },
+      {
+       "id": "SUPERIOR_FRAGMENT",
+       "buy": 82382.2,
+       "sell": 59204.7
+      },
+      {
+       "id": "SUPERLITE_MOTOR",
+       "buy": 85070.2,
+       "sell": 76743.9
+      },
+      {
+       "id": "SUSPICIOUS_SCRAP",
+       "buy": 131587.3,
+       "sell": 124980.6
+      },
+      {
+       "id": "REFINED_MINERAL",
+       "buy": 132391.7,
+       "sell": 122306.6
+      },
+      {
+       "id": "REVERSE_REFORGE_STONE_CORE",
+       "buy": 172748.5,
+       "sell": 150000.0
+      },
+      {
+       "id": "SPIDER_CATALYST",
+       "buy": 177647.7,
+       "sell": 50006.9
+      },
+      {
+       "id": "SALTED_SUNFLOWER_SEEDS",
+       "buy": 178991.7,
+       "sell": 142579.8
+      },
+      {
+       "id": "ROBOTRON_REFLECTOR",
+       "buy": 185593.7,
+       "sell": 181068.5
+      },
+      {
+       "id": "SORROW",
+       "buy": 216672.0,
+       "sell": 201958.8
+      },
+      {
+       "id": "SYNTHETIC_HEART",
+       "buy": 237590.0,
+       "sell": 229406.9
+      },
+      {
+       "id": "SCORCHED_CRAB_STICK",
+       "buy": 364761.2,
+       "sell": 340000.0
+      },
+      {
+       "id": "SEARED_ESCARGOT",
+       "buy": 374617.9,
+       "sell": 350000.0
+      },
+      {
+       "id": "SPINE_FOSSIL",
+       "buy": 429998.9,
+       "sell": 80000.9
+      },
+      {
+       "id": "REFINED_MITHRIL",
+       "buy": 515757.2,
+       "sell": 495709.1
+      },
+      {
+       "id": "SUBLIME_SILK",
+       "buy": 583275.7,
+       "sell": 462099.5
+      },
+      {
+       "id": "REFINED_TITANIUM",
+       "buy": 631850.4,
+       "sell": 618348.7
+      },
+      {
+       "id": "REFINED_DIAMOND",
+       "buy": 698362.1,
+       "sell": 683641.4
+      },
+      {
+       "id": "SMALL_SEAL_PLUSHIE",
+       "buy": 699994.6,
+       "sell": 300000.0
+      },
+      {
+       "id": "SCORCHED_POWER_CRYSTAL",
+       "buy": 734715.6,
+       "sell": 586576.2
+      },
+      {
+       "id": "SMALL_PIG_EAR",
+       "buy": 811896.3,
+       "sell": 10.4
+      },
+      {
+       "id": "REFINED_BOTTLE_OF_JYRRE",
+       "buy": 825832.9,
+       "sell": 439659.9
+      },
+      {
+       "id": "SINGED_POWDER",
+       "buy": 845944.0,
+       "sell": 755000.1
+      },
+      {
+       "id": "SMALL_FROG_TREAT",
+       "buy": 899998.7,
+       "sell": 30000.4
+      },
+      {
+       "id": "REFINED_DARK_CACAO_TRUFFLE",
+       "buy": 1013438.2,
+       "sell": 85177.3
+      },
+      {
+       "id": "SUMMONING_EYE",
+       "buy": 1433917.1,
+       "sell": 1382079.4
+      },
+      {
+       "id": "SEVERED_PINCER",
+       "buy": 1674999.1,
+       "sell": 1000005.8
+      },
+      {
+       "id": "SUBZERO_INVERTER",
+       "buy": 1763709.9,
+       "sell": 1423026.7
+      },
+      {
+       "id": "RITUAL_RESIDUE",
+       "buy": 1857965.2,
+       "sell": 1293324.3
+      },
+      {
+       "id": "SPIRIT_BONE",
+       "buy": 1979376.8,
+       "sell": 1705964.6
+      },
+      {
+       "id": "REFINED_TUNGSTEN",
+       "buy": 2233591.3,
+       "sell": 2189890.3
+      },
+      {
+       "id": "REFINED_UMBER",
+       "buy": 2259999.1,
+       "sell": 2120689.6
+      },
+      {
+       "id": "SPIRIT_WING",
+       "buy": 2302147.6,
+       "sell": 1786780.0
+      },
+      {
+       "id": "SOUL_FRAGMENT",
+       "buy": 2307424.7,
+       "sell": 2011111.1
+      },
+      {
+       "id": "REINFORCED_NETTING",
+       "buy": 3882293.1,
+       "sell": 2912937.5
+      },
+      {
+       "id": "RAINBOW_FEATHER",
+       "buy": 3941011.1,
+       "sell": 3400101.4
+      },
+      {
+       "id": "SPOOKY_WATER_ORB",
+       "buy": 4701098.5,
+       "sell": 1210000.3
+      },
+      {
+       "id": "STOCK_OF_STONKS",
+       "buy": 5734966.7,
+       "sell": 5542582.9
+      },
+      {
+       "id": "RECOMBOBULATOR_3000",
+       "buy": 9210999.6,
+       "sell": 9009008.1
+      },
+      {
+       "id": "SMALL_WITCH_CAULDRON",
+       "buy": 9999999.5,
+       "sell": 2865631.7
+      },
+      {
+       "id": "REAPER_PEPPER",
+       "buy": 11999989.6,
+       "sell": 10204392.8
+      },
+      {
+       "id": "SHARK_WATER_ORB",
+       "buy": 12258692.2,
+       "sell": 4616667.1
+      },
+      {
+       "id": "SEVERED_HAND",
+       "buy": 13664836.5,
+       "sell": 10648387.4
+      },
+      {
+       "id": "ROYAL_JELLY",
+       "buy": 14999999.3,
+       "sell": 3300001.2
+      },
+      {
+       "id": "SECOND_MASTER_STAR",
+       "buy": 15334198.2,
+       "sell": 14888188.5
+      },
+      {
+       "id": "SCUTTLER_SHELL",
+       "buy": 17651703.8,
+       "sell": 14000002.2
+      },
+      {
+       "id": "RADIOACTIVE_VIAL",
+       "buy": 28099988.9,
+       "sell": 21000000.2
+      },
+      {
+       "id": "SOULFLOW_ENGINE",
+       "buy": 29237682.3,
+       "sell": 19014289.4
+      },
+      {
+       "id": "SKELETON_KEY",
+       "buy": 30654847.0,
+       "sell": 29799879.0
+      },
+      {
+       "id": "SPOTLITE",
+       "buy": 31736497.7,
+       "sell": 26350002.1
+      }
+     ]
+    },
+    {
+     "name": "Misc T-Z",
+     "icon": "WOOL",
+     "products": [
+      {
+       "id": "WOOL",
+       "buy": 8.7,
+       "sell": 4.4
+      },
+      {
+       "id": "WISHING_COMPASS",
+       "buy": 9.0,
+       "sell": 0.2
+      },
+      {
+       "id": "TITANIUM_ORE",
+       "buy": 130.0,
+       "sell": 112.7
+      },
+      {
+       "id": "YELLOW_FLOWER",
+       "buy": 193.4,
+       "sell": 3.0
+      },
+      {
+       "id": "YOGGIE",
+       "buy": 432.7,
+       "sell": 175.5
+      },
+      {
+       "id": "WOLF_TOOTH",
+       "buy": 607.2,
+       "sell": 603.1
+      },
+      {
+       "id": "TARANTULA_WEB",
+       "buy": 1156.1,
+       "sell": 1062.9
+      },
+      {
+       "id": "WITHER_SOUL",
+       "buy": 1864.7,
+       "sell": 239.5
+      },
+      {
+       "id": "UNDEAD_CATALYST",
+       "buy": 2396.4,
+       "sell": 1002.2
+      },
+      {
+       "id": "WHITE_GIFT",
+       "buy": 2569.3,
+       "sell": 1797.7
+      },
+      {
+       "id": "VOLTA",
+       "buy": 2825.9,
+       "sell": 1854.3
+      },
+      {
+       "id": "WET_WATER",
+       "buy": 4116.0,
+       "sell": 1290.3
+      },
+      {
+       "id": "TORN_CLOTH",
+       "buy": 7407.9,
+       "sell": 4532.4
+      },
+      {
+       "id": "TENTACLE_MEAT",
+       "buy": 10166.5,
+       "sell": 2015.9
+      },
+      {
+       "id": "WARTY",
+       "buy": 10453.6,
+       "sell": 5404.0
+      },
+      {
+       "id": "WEREWOLF_SKIN",
+       "buy": 10722.9,
+       "sell": 6667.2
+      },
+      {
+       "id": "YOUNG_FRAGMENT",
+       "buy": 11111.7,
+       "sell": 10000.2
+      },
+      {
+       "id": "UNSTABLE_FRAGMENT",
+       "buy": 11333.2,
+       "sell": 7692.2
+      },
+      {
+       "id": "THORN_FRAGMENT",
+       "buy": 11543.2,
+       "sell": 9125.4
+      },
+      {
+       "id": "WISE_FRAGMENT",
+       "buy": 33519.2,
+       "sell": 28756.2
+      },
+      {
+       "id": "WORM_MEMBRANE",
+       "buy": 36178.2,
+       "sell": 34282.2
+      },
+      {
+       "id": "X",
+       "buy": 40073.6,
+       "sell": 19076.5
+      },
+      {
+       "id": "THUNDER_SHARDS",
+       "buy": 54322.4,
+       "sell": 49000.3
+      },
+      {
+       "id": "TIGER_SHARK_TOOTH",
+       "buy": 56998.4,
+       "sell": 46091.4
+      },
+      {
+       "id": "VERY_CRUDE_GABAGOOL",
+       "buy": 59946.3,
+       "sell": 59093.9
+      },
+      {
+       "id": "TREASURITE",
+       "buy": 81174.8,
+       "sell": 69912.7
+      },
+      {
+       "id": "TARANTULA_CATALYST",
+       "buy": 83582.4,
+       "sell": 42010.0
+      },
+      {
+       "id": "WINTER_FRAGMENT",
+       "buy": 90000.0,
+       "sell": 72784.0
+      },
+      {
+       "id": "WALNUT",
+       "buy": 95292.5,
+       "sell": 10500.4
+      },
+      {
+       "id": "WET_BOOK",
+       "buy": 95485.7,
+       "sell": 32000.0
+      },
+      {
+       "id": "WEAK_WOLF_CATALYST",
+       "buy": 99617.7,
+       "sell": 50000.3
+      },
+      {
+       "id": "TOOL_EXP_CAPSULE",
+       "buy": 101277.4,
+       "sell": 100000.0
+      },
+      {
+       "id": "TRANSMISSION_TUNER",
+       "buy": 102572.8,
+       "sell": 41371.5
+      },
+      {
+       "id": "Y",
+       "buy": 130558.4,
+       "sell": 87039.3
+      },
+      {
+       "id": "TUSK_FOSSIL",
+       "buy": 136500.1,
+       "sell": 60002.6
+      },
+      {
+       "id": "UGLY_FOSSIL",
+       "buy": 179848.1,
+       "sell": 69000.6
+      },
+      {
+       "id": "TARANTULA_SILK",
+       "buy": 230512.5,
+       "sell": 226223.7
+      },
+      {
+       "id": "Z",
+       "buy": 232242.1,
+       "sell": 165284.6
+      },
+      {
+       "id": "UNLUCKY_DOUBLOON",
+       "buy": 264155.7,
+       "sell": 150001.9
+      },
+      {
+       "id": "WRIGGLING_LARVA",
+       "buy": 344273.3,
+       "sell": 244831.3
+      },
+      {
+       "id": "VOLCANIC_ROCK",
+       "buy": 344995.9,
+       "sell": 160000.5
+      },
+      {
+       "id": "WEBBED_FOSSIL",
+       "buy": 415591.0,
+       "sell": 50001.1
+      },
+      {
+       "id": "VIAL_OF_VENOM",
+       "buy": 616802.1,
+       "sell": 400000.5
+      },
+      {
+       "id": "WITHER_CATALYST",
+       "buy": 1046967.1,
+       "sell": 1005264.8
+      },
+      {
+       "id": "WATER_HYACINTH",
+       "buy": 1137663.3,
+       "sell": 970000.0
+      },
+      {
+       "id": "TURBO_GOURD",
+       "buy": 1218986.5,
+       "sell": 903621.5
+      },
+      {
+       "id": "TUNGSTEN_KEY",
+       "buy": 2628373.6,
+       "sell": 2422281.2
+      },
+      {
+       "id": "UMBER_KEY",
+       "buy": 2701446.9,
+       "sell": 2589380.0
+      },
+      {
+       "id": "XLARGE_ENCHANTED_CHEST",
+       "buy": 3101879.5,
+       "sell": 2218821.1
+      },
+      {
+       "id": "VISITORS_GRATITUDE",
+       "buy": 3979998.4,
+       "sell": 3850000.0
+      },
+      {
+       "id": "VIBRANT_CORAL",
+       "buy": 4510839.9,
+       "sell": 3260794.0
+      },
+      {
+       "id": "XXLARGE_ENCHANTED_CHEST",
+       "buy": 4907908.4,
+       "sell": 4159985.4
+      },
+      {
+       "id": "WOOD_SINGULARITY",
+       "buy": 5099799.4,
+       "sell": 3786054.9
+      },
+      {
+       "id": "TROUBLED_BUBBLE",
+       "buy": 7257307.9,
+       "sell": 12.0
+      },
+      {
+       "id": "VERY_MOLDY_BREAD",
+       "buy": 7272433.3,
+       "sell": 5867038.3
+      },
+      {
+       "id": "TUNGSTEN_PLATE",
+       "buy": 10881264.5,
+       "sell": 10182011.5
+      },
+      {
+       "id": "UMBER_PLATE",
+       "buy": 10931947.8,
+       "sell": 10029034.2
+      },
+      {
+       "id": "WINTER_WATER_ORB",
+       "buy": 13799999.4,
+       "sell": 8344252.0
+      },
+      {
+       "id": "THE_ART_OF_WAR",
+       "buy": 15999992.2,
+       "sell": 12936843.2
+      },
+      {
+       "id": "THIRD_MASTER_STAR",
+       "buy": 29199989.7,
+       "sell": 27036032.8
+      },
+      {
+       "id": "TRUNK_POLISH",
+       "buy": 50834763.2,
+       "sell": 30000000.9
+      },
+      {
+       "id": "THE_ART_OF_PEACE",
+       "buy": 51499984.3,
+       "sell": 46000002.2
+      },
+      {
+       "id": "TITANOBOA_SHED",
+       "buy": 61592695.5,
+       "sell": 52205759.7
+      }
+     ]
+    },
+    {
+     "name": "Mutations",
+     "icon": "LONELILY",
+     "products": [
+      {
+       "id": "LONELILY",
+       "buy": 832.9,
+       "sell": 51.0
+      },
+      {
+       "id": "ALL_IN_ALOE",
+       "buy": 903.6,
+       "sell": 500.3
+      },
+      {
+       "id": "WITHERBLOOM",
+       "buy": 1106.9,
+       "sell": 295.6
+      },
+      {
+       "id": "CHOCONUT",
+       "buy": 1806.7,
+       "sell": 106.2
+      },
+      {
+       "id": "ASHWREATH",
+       "buy": 2062.8,
+       "sell": 15.3
+      },
+      {
+       "id": "VEILSHROOM",
+       "buy": 2250.9,
+       "sell": 7.5
+      },
+      {
+       "id": "SCOURROOT",
+       "buy": 2296.0,
+       "sell": 20.6
+      },
+      {
+       "id": "DUSTGRAIN",
+       "buy": 2316.7,
+       "sell": 125.9
+      },
+      {
+       "id": "SHADEVINE",
+       "buy": 2371.7,
+       "sell": 543.6
+      },
+      {
+       "id": "GLOOMGOURD",
+       "buy": 3466.7,
+       "sell": 1202.0
+      },
+      {
+       "id": "PHANTOMLEAF",
+       "buy": 7421.5,
+       "sell": 501.0
+      },
+      {
+       "id": "ZOMBUD",
+       "buy": 20157.5,
+       "sell": 3598.0
+      },
+      {
+       "id": "CINDERSHADE",
+       "buy": 29609.6,
+       "sell": 10000.5
+      },
+      {
+       "id": "CREAMBLOOM",
+       "buy": 32607.7,
+       "sell": 11131.3
+      },
+      {
+       "id": "TIMESTALK",
+       "buy": 36789.8,
+       "sell": 2004.8
+      },
+      {
+       "id": "DEVOURER",
+       "buy": 39951.7,
+       "sell": 20789.1
+      },
+      {
+       "id": "SHELLFRUIT",
+       "buy": 47996.0,
+       "sell": 31757.1
+      },
+      {
+       "id": "THUNDERLING",
+       "buy": 49997.9,
+       "sell": 1102.7
+      },
+      {
+       "id": "MAGIC_JELLYBEAN",
+       "buy": 52749.9,
+       "sell": 32782.7
+      },
+      {
+       "id": "FLESHTRAP",
+       "buy": 58917.9,
+       "sell": 16004.3
+      },
+      {
+       "id": "SOGGYBUD",
+       "buy": 65356.6,
+       "sell": 40423.4
+      },
+      {
+       "id": "GLASSCORN",
+       "buy": 74247.6,
+       "sell": 5010.8
+      },
+      {
+       "id": "THORNSHADE",
+       "buy": 84920.0,
+       "sell": 60000.5
+      },
+      {
+       "id": "DO_NOT_EAT_SHROOM",
+       "buy": 100825.6,
+       "sell": 25942.1
+      },
+      {
+       "id": "COALROOT",
+       "buy": 119996.0,
+       "sell": 48000.7
+      },
+      {
+       "id": "CHLORONITE",
+       "buy": 124807.6,
+       "sell": 111111.5
+      },
+      {
+       "id": "TURTLELLINI",
+       "buy": 128597.9,
+       "sell": 116000.2
+      },
+      {
+       "id": "CHORUS_FRUIT",
+       "buy": 131818.0,
+       "sell": 102522.2
+      },
+      {
+       "id": "CHOCOBERRY",
+       "buy": 138064.7,
+       "sell": 117124.2
+      },
+      {
+       "id": "DUSKBLOOM",
+       "buy": 155960.8,
+       "sell": 97236.3
+      },
+      {
+       "id": "GODSEED",
+       "buy": 261402.5,
+       "sell": 120003.0
+      },
+      {
+       "id": "CHEESEBITE",
+       "buy": 379998.7,
+       "sell": 300000.2
+      },
+      {
+       "id": "NOCTILUME",
+       "buy": 595446.7,
+       "sell": 490292.3
+      },
+      {
+       "id": "BLASTBERRY",
+       "buy": 761999.6,
+       "sell": 420004.0
+      },
+      {
+       "id": "PUFFERCLOUD",
+       "buy": 940357.6,
+       "sell": 850001.1
+      },
+      {
+       "id": "PLANTBOY_ADVANCE",
+       "buy": 953920.2,
+       "sell": 767338.9
+      },
+      {
+       "id": "STARTLEVINE",
+       "buy": 999997.5,
+       "sell": 499999.0
+      },
+      {
+       "id": "STOPLIGHT_PETAL",
+       "buy": 1188884.0,
+       "sell": 903278.6
+      },
+      {
+       "id": "SNOOZLING",
+       "buy": 1952487.0,
+       "sell": 1700000.1
+      }
+     ]
+    },
+    {
+     "name": "Pet Items",
+     "icon": "SMALL_SLOTH_CLAW",
+     "products": [
+      {
+       "id": "SMALL_SLOTH_CLAW",
+       "buy": 700000.0,
+       "sell": 204.2
+      },
+      {
+       "id": "MEDIUM_SLOTH_CLAW",
+       "buy": 993832.8,
+       "sell": 91669.3
+      },
+      {
+       "id": "LARGE_SLOTH_CLAW",
+       "buy": 1459291.7,
+       "sell": 503282.3
+      },
+      {
+       "id": "GIANT_SLOTH_CLAW",
+       "buy": 1813578.8,
+       "sell": 1000000.7
+      }
+     ]
+    },
+    {
+     "name": "Reforge Stones",
+     "icon": "PREMIUM_FLESH",
+     "products": [
+      {
+       "id": "PREMIUM_FLESH",
+       "buy": 0.4,
+       "sell": 0.0
+      },
+      {
+       "id": "RED_NOSE",
+       "buy": 1.0,
+       "sell": 0.0
+      },
+      {
+       "id": "BLAZEN_SPHERE",
+       "buy": 129.0,
+       "sell": 0.1
+      },
+      {
+       "id": "ENDSTONE_GEODE",
+       "buy": 160.9,
+       "sell": 0.0
+      },
+      {
+       "id": "LAPIS_CRYSTAL",
+       "buy": 332.1,
+       "sell": 0.0
+      },
+      {
+       "id": "RARE_DIAMOND",
+       "buy": 599.9,
+       "sell": 0.1
+      },
+      {
+       "id": "DWARVEN_TREASURE",
+       "buy": 1343.9,
+       "sell": 0.1
+      },
+      {
+       "id": "SALMON_OPAL",
+       "buy": 1799.7,
+       "sell": 106.8
+      },
+      {
+       "id": "HAZMAT_ENDERMAN",
+       "buy": 1999.5,
+       "sell": 1.1
+      },
+      {
+       "id": "CANDY_CORN",
+       "buy": 2396.9,
+       "sell": 0.3
+      },
+      {
+       "id": "FURBALL",
+       "buy": 4737.9,
+       "sell": 1.2
+      },
+      {
+       "id": "LUXURIOUS_SPOOL",
+       "buy": 7565.3,
+       "sell": 323.9
+      },
+      {
+       "id": "JERRY_STONE",
+       "buy": 8994.3,
+       "sell": 2.5
+      },
+      {
+       "id": "NECROMANCER_BROOCH",
+       "buy": 9797.6,
+       "sell": 1.1
+      },
+      {
+       "id": "ONYX",
+       "buy": 10000.0,
+       "sell": 0.9
+      },
+      {
+       "id": "MOLTEN_CUBE",
+       "buy": 10032.9,
+       "sell": 0.2
+      },
+      {
+       "id": "OVERFLOWING_TRASH_CAN",
+       "buy": 10946.8,
+       "sell": 6187.2
+      },
+      {
+       "id": "END_STONE_SHULKER",
+       "buy": 11897.6,
+       "sell": 100.0
+      },
+      {
+       "id": "BEATING_HEART",
+       "buy": 13421.0,
+       "sell": 0.5
+      },
+      {
+       "id": "FLOWERING_BOUQUET",
+       "buy": 18063.8,
+       "sell": 14001.8
+      },
+      {
+       "id": "VITAMIN_DEATH",
+       "buy": 22437.0,
+       "sell": 2000.4
+      },
+      {
+       "id": "SCORCHED_BOOKS",
+       "buy": 29690.9,
+       "sell": 777.1
+      },
+      {
+       "id": "MIDAS_JEWEL",
+       "buy": 31599.9,
+       "sell": 1008.2
+      },
+      {
+       "id": "BEADY_EYES",
+       "buy": 33377.4,
+       "sell": 20688.9
+      },
+      {
+       "id": "ENDER_MONOCLE",
+       "buy": 36440.0,
+       "sell": 10790.1
+      },
+      {
+       "id": "DRAGON_SCALE",
+       "buy": 54600.7,
+       "sell": 1500.5
+      },
+      {
+       "id": "SADAN_BROOCH",
+       "buy": 57508.9,
+       "sell": 1.5
+      },
+      {
+       "id": "GLACITE_SHARD",
+       "buy": 59999.4,
+       "sell": 12296.7
+      },
+      {
+       "id": "PITCHIN_KOI",
+       "buy": 61047.6,
+       "sell": 15702.4
+      },
+      {
+       "id": "CLIPPED_WINGS",
+       "buy": 68502.6,
+       "sell": 19501.6
+      },
+      {
+       "id": "DIAMOND_ATOM",
+       "buy": 92206.4,
+       "sell": 7000.0
+      },
+      {
+       "id": "DARK_ORB",
+       "buy": 102190.7,
+       "sell": 50008.4
+      },
+      {
+       "id": "SQUEAKY_TOY",
+       "buy": 104033.5,
+       "sell": 57418.5
+      },
+      {
+       "id": "MANTID_CLAW",
+       "buy": 113241.7,
+       "sell": 65970.3
+      },
+      {
+       "id": "GIANT_TOOTH",
+       "buy": 124590.5,
+       "sell": 1001.4
+      },
+      {
+       "id": "ROCK_CANDY",
+       "buy": 139989.7,
+       "sell": 71584.7
+      },
+      {
+       "id": "OPTICAL_LENS",
+       "buy": 179421.8,
+       "sell": 5594.8
+      },
+      {
+       "id": "SALT_CUBE",
+       "buy": 199999.4,
+       "sell": 0.1
+      },
+      {
+       "id": "SKYMART_BROCHURE",
+       "buy": 221996.3,
+       "sell": 80307.9
+      },
+      {
+       "id": "SUSPICIOUS_VIAL",
+       "buy": 249984.6,
+       "sell": 25001.6
+      },
+      {
+       "id": "LARGE_WALNUT",
+       "buy": 282414.8,
+       "sell": 120001.2
+      },
+      {
+       "id": "PRECURSOR_GEAR",
+       "buy": 319054.2,
+       "sell": 231310.1
+      },
+      {
+       "id": "POCKET_ICEBERG",
+       "buy": 398913.0,
+       "sell": 261495.9
+      },
+      {
+       "id": "MOONGLADE_JEWEL",
+       "buy": 499999.1,
+       "sell": 97551.1
+      },
+      {
+       "id": "KUUDRA_MANDIBLE",
+       "buy": 552460.7,
+       "sell": 350018.8
+      },
+      {
+       "id": "HARDENED_WOOD",
+       "buy": 647997.8,
+       "sell": 6.8
+      },
+      {
+       "id": "BUBBA_BLISTER",
+       "buy": 649998.8,
+       "sell": 367794.3
+      },
+      {
+       "id": "CHOCOLATE_CHIP",
+       "buy": 659994.5,
+       "sell": 334508.9
+      },
+      {
+       "id": "PRECIOUS_PEARL",
+       "buy": 680906.6,
+       "sell": 462762.0
+      },
+      {
+       "id": "RED_SCARF",
+       "buy": 740260.7,
+       "sell": 300001.7
+      },
+      {
+       "id": "REFINED_AMBER",
+       "buy": 1098998.2,
+       "sell": 64450.6
+      },
+      {
+       "id": "CALCIFIED_HEART",
+       "buy": 1139996.4,
+       "sell": 697796.4
+      },
+      {
+       "id": "GOLDEN_BALL",
+       "buy": 1149999.8,
+       "sell": 931254.6
+      },
+      {
+       "id": "BLESSED_FRUIT",
+       "buy": 1197950.4,
+       "sell": 981398.9
+      },
+      {
+       "id": "TITANIUM_TESSERACT",
+       "buy": 1230682.8,
+       "sell": 925734.6
+      },
+      {
+       "id": "LUCKY_DICE",
+       "buy": 1351099.4,
+       "sell": 11003.0
+      },
+      {
+       "id": "GEOMETRIC_ODDITY",
+       "buy": 1469178.8,
+       "sell": 715143.7
+      },
+      {
+       "id": "SPIRIT_DECOY",
+       "buy": 1499994.4,
+       "sell": 212920.1
+      },
+      {
+       "id": "WITHER_BLOOD",
+       "buy": 1499996.5,
+       "sell": 1129092.6
+      },
+      {
+       "id": "FULL_JAW_FANGING_KIT",
+       "buy": 1857201.0,
+       "sell": 767705.4
+      },
+      {
+       "id": "PETRIFIED_STARFALL",
+       "buy": 1965206.6,
+       "sell": 1000000.2
+      },
+      {
+       "id": "DRAGON_CLAW",
+       "buy": 1997794.7,
+       "sell": 1209547.9
+      },
+      {
+       "id": "MANDRAA",
+       "buy": 2134581.3,
+       "sell": 1429454.7
+      },
+      {
+       "id": "MARSHROOM",
+       "buy": 2269361.3,
+       "sell": 1533694.4
+      },
+      {
+       "id": "AMBER_MATERIAL",
+       "buy": 2499999.3,
+       "sell": 125002.5
+      },
+      {
+       "id": "EXTREMELY_MILD_ADHESIVE",
+       "buy": 2689730.2,
+       "sell": 433730.1
+      },
+      {
+       "id": "DIAMONITE",
+       "buy": 2849365.7,
+       "sell": 2229223.1
+      },
+      {
+       "id": "JADERALD",
+       "buy": 3387795.5,
+       "sell": 3037811.9
+      },
+      {
+       "id": "TERRY_SNOWGLOBE",
+       "buy": 3399993.7,
+       "sell": 2897462.1
+      },
+      {
+       "id": "OVERPRICED_DRINK",
+       "buy": 3499999.4,
+       "sell": 2626100.0
+      },
+      {
+       "id": "HOT_STUFF",
+       "buy": 3573383.1,
+       "sell": 633901.7
+      },
+      {
+       "id": "PURE_MITHRIL",
+       "buy": 4499994.6,
+       "sell": 1300000.0
+      },
+      {
+       "id": "MORNING_DEW",
+       "buy": 5480798.3,
+       "sell": 3606632.1
+      },
+      {
+       "id": "BURROWING_SPORES",
+       "buy": 5801711.5,
+       "sell": 5327860.4
+      },
+      {
+       "id": "ROCK_GEMSTONE",
+       "buy": 6449997.3,
+       "sell": 3489434.4
+      },
+      {
+       "id": "AOTE_STONE",
+       "buy": 6999996.2,
+       "sell": 4590376.0
+      },
+      {
+       "id": "DRAGON_HORN",
+       "buy": 8099991.9,
+       "sell": 6000006.0
+      },
+      {
+       "id": "BULKY_STONE",
+       "buy": 8232326.0,
+       "sell": 2799561.4
+      },
+      {
+       "id": "BLOOMING_THORNS",
+       "buy": 8349272.6,
+       "sell": 5500001.9
+      },
+      {
+       "id": "OVERGROWN_GRASS",
+       "buy": 8990447.8,
+       "sell": 7756670.2
+      },
+      {
+       "id": "FRIGID_HUSK",
+       "buy": 9999998.2,
+       "sell": 1248009.0
+      },
+      {
+       "id": "FROZEN_BAUBLE",
+       "buy": 12186995.7,
+       "sell": 5000001.0
+      },
+      {
+       "id": "MAGMA_URCHIN",
+       "buy": 13576376.1,
+       "sell": 11555105.4
+      },
+      {
+       "id": "DEEP_SEA_ORB",
+       "buy": 16702351.7,
+       "sell": 14023529.1
+      },
+      {
+       "id": "ECCENTRIC_PAINTING",
+       "buy": 17863803.8,
+       "sell": 13087703.4
+      },
+      {
+       "id": "RUSTY_ANCHOR",
+       "buy": 27669134.8,
+       "sell": 6691352.3
+      },
+      {
+       "id": "GLEAMING_CRYSTAL",
+       "buy": 70999999.9,
+       "sell": 40000020.7
+      }
+     ]
+    },
+    {
+     "name": "Salts",
+     "icon": "CANDYCOMB",
+     "products": [
+      {
+       "id": "CANDYCOMB",
+       "buy": 1676.9,
+       "sell": 130.2
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

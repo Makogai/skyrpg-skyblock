@@ -100,7 +100,14 @@ phase so the next session can pick up where this one stopped.
       (design call, same spots and skins): Farm, Lumber, Fishing and Mine Merchant, Weaponsmith, Combat Merchant
       (provisioner), Wool Weaver (builder), Bartender, Alchemist (florist), Librarian (curio dealer), Rosetta
       (blacksmith), and the Banker. The survival economy shops (`skyrpg/shops`) are no longer used by the Hub.
-- [ ] Bazaar and Auction House.
+- [x] **Bazaar**: `tools/skyblock/import_bazaar.py` (Hypixel's public Bazaar API snapshot) writes 1,018 products in
+      Hypixel's 5 tabs, grouped by the collection they come from through the recipes (Oddities by item kind / letters).
+      `Bazaar` (instant buy/sell, buy orders, sell offers, cancel, claim; 1.25% tax; 71,680 max; prices in tenths),
+      `BazaarOrders` (saved with the world, per profile), `BazaarPage` (tabs, groups, search, product view with order
+      book, Manage Orders). Design call: a market maker quotes every product at the snapshot's prices so a small server
+      always trades (orders never match each other, as on Hypixel). Opens at SkyBlock Level 7; `/bz` and a SkyBlock Menu
+      tile until there's a Bazaar NPC. Refresh prices with `import_bazaar.py --fetch`.
+- [ ] Auction House.
 - [ ] Slayers: Revenant, Tarantula, Sven.
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
       every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the
