@@ -32,6 +32,10 @@ public final class FastTravelPage implements MenuPage {
         warps = List.copyOf(payload.warps());
     }
 
+    static List<FastTravel.Entry> warps() {
+        return warps;
+    }
+
     @Override
     public Identifier id() {
         return SkyRpgSkyblock.id("fast_travel");

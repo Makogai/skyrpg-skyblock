@@ -26,6 +26,7 @@ import net.minecraft.server.packs.repository.PackRepository;
  */
 public final class ToggledPacks {
     private static final Map<String, Setting> PACKS = new LinkedHashMap<>();
+    private static final List<String> ALWAYS_ON = new ArrayList<>();
 
     private ToggledPacks() {
     }
@@ -44,19 +45,20 @@ public final class ToggledPacks {
 
     /**
      * A pack that isn't built in but arrives as a file in the resourcepacks folder ({@code "file/<name>"}, like a
-     * Modrinth pack the modpack downloads), kept on or off by a Settings toggle the same way. If the file isn't
-     * there, the toggle does nothing.
+     * Modrinth pack the modpack downloads) and is always on: it's put back in the list at every startup. Nothing
+     * happens if the file isn't there.
      */
-    public static Setting registerFile(String packId, String settingId, String category, String label,
-                                       String description, boolean defaultValue) {
-        Setting setting = SkyRpgSettings.toggle(settingId, category, label,
-                description, defaultValue, enabled -> apply(packId, enabled));
-        PACKS.put(packId, setting);
-        return setting;
+    public static void alwaysOn(String packId) {
+        ALWAYS_ON.add(packId);
     }
 
-    /** Runs just before options.txt's pack list is applied at startup: adds each pack whose setting is on, removes the rest. */
+    /** Runs just before options.txt's pack list is applied at startup: adds the always-on packs and each pack whose setting is on, removes the rest. */
     public static void beforePacksLoaded(List<String> selected, PackRepository repository) {
+        for (String packId : ALWAYS_ON) {
+            if (repository.isAvailable(packId)) {
+                insert(selected, packId);
+            }
+        }
         PACKS.forEach((packId, setting) -> {
             if (setting.get()) {
                 if (repository.isAvailable(packId)) {

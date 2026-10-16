@@ -181,7 +181,7 @@ public final class Mounts {
         }
         lines.add(Component.empty());
         lines.add(plain("Right-click: add it to your stable and call it.", ChatFormatting.YELLOW));
-        lines.add(plain("Call, put away or trade it in the K menu, Mounts.", ChatFormatting.DARK_GRAY));
+        lines.add(plain("Call, put away or trade it in the ", ChatFormatting.DARK_GRAY).append(Msg.menuKey()).append(" menu, Mounts."));
         stack.set(DataComponents.LORE, new ItemLore(lines));
     }
 
@@ -256,7 +256,8 @@ public final class Mounts {
             return false;
         }
         if (storageFull(player)) {
-            say(player, "Your stable is full (" + maxStorage() + "). Take a mount out in the K menu first; ".concat(name(mount)) + " stays with you.");
+            player.sendSystemMessage(body("Your stable is full (" + maxStorage() + "). Take a mount out in the ").append(Msg.menuKey())
+                    .append(" menu first; " + name(mount) + " stays with you."));
             return false;
         }
         List<ItemStack> list = storage(player);
@@ -266,7 +267,7 @@ public final class Mounts {
         if (active(player).isEmpty()) {
             return summon(player, list.size() - 1);
         }
-        Notice.of(Notice.Kind.PET).tag("STABLE").send(player, coloredName(mount).append(body(" went into your stable. Call it in the K menu, Mounts.")));
+        Notice.of(Notice.Kind.PET).tag("STABLE").send(player, coloredName(mount).append(body(" went into your stable. Call it in the ").append(Msg.menuKey()).append(" menu, Mounts.")));
         return true;
     }
 

@@ -1,16 +1,21 @@
 package com.skyrpg.skyblock.client;
 
 import com.skyrpg.core.client.hud.HudManager;
-import com.skyrpg.core.client.config.SkyRpgSettings;
 import com.skyrpg.core.client.menu.SkyRpgMenu;
 import com.skyrpg.core.client.theme.ToggledPacks;
 import com.skyrpg.skyblock.area.Areas;
+import com.skyrpg.skyblock.client.screen.EnderPageScreen;
+import com.skyrpg.skyblock.client.screen.WardrobeScreen;
+import com.skyrpg.skyblock.storage.SkyMenus;
 import com.skyrpg.skyblock.storage.StoragePayloads;
 import com.skyrpg.skyblock.travel.FastTravel;
 import com.skyrpg.skyblock.zone.Zones;
 import com.skyrpg.skyblock.profile.ProfileListPayload;
+import java.util.List;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.resources.Identifier;
 
 /** Client side of SkyRPG SkyBlock: the SkyBlock pages of the K menu. */
 public final class SkyRpgSkyblockClient implements ClientModInitializer {
@@ -19,10 +24,11 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        // Every SkyBlock item looks as on Hypixel with FurfSky Reborn (read by Catharsis), on unless switched off.
-        ToggledPacks.registerFile(FURFSKY, "interface.furfsky", SkyRpgSettings.INTERFACE, "FurfSky Reborn item looks",
-                "SkyBlock items and armour look the way FurfSky Reborn draws them, as on Hypixel. Without it you see the plain item underneath",
-                true).section("SkyBlock").keywords("texture", "resource pack", "furf", "catharsis");
+        // FurfSky Reborn is how SkyBlock items look (read by Catharsis): always on, and only its item looks load (FurfSkyFilter).
+        ToggledPacks.alwaysOn(FURFSKY);
+        retireSurvival();
+        MenuScreens.register(SkyMenus.WARDROBE, WardrobeScreen::new);
+        MenuScreens.register(SkyMenus.ENDER_PAGE, EnderPageScreen::new);
         SkyRpgMenu.registerPage(new SkyBlockMenuPage());
         SkyRpgMenu.registerPage(new ProfilesPage());
         SkyRpgMenu.registerPage(new FastTravelPage());
@@ -37,5 +43,21 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         ClientPlayNetworking.registerGlobalReceiver(Zones.ZoneList.TYPE, (payload, context) -> Zones.replace(payload.zones()));
         ClientPlayNetworking.registerGlobalReceiver(Areas.AreaPayload.TYPE, (payload, context) -> SidebarWidget.setArea(payload.area()));
         ClientPlayNetworking.registerGlobalReceiver(ProfileListPayload.TYPE, (payload, context) -> ProfilesPage.set(payload));
+    }
+
+    /**
+     * The survival pack's pages and HUD boxes that SkyBlock has no use for (for now): the Journal and its quest
+     * tracker, Contracts, griffin mounts, the spell wheel, talents, titles, /pay and the Blood Moon. Their mods stay
+     * loaded; they just don't show.
+     */
+    private static void retireSurvival() {
+        for (String page : List.of("skyrpg_progress:journal", "skyrpg_events:contracts", "skyrpg_mounts:mounts",
+                "skyrpg_skills:talents", "skyrpg_progress:titles", "skyrpg_economy:pay")) {
+            SkyRpgMenu.retirePage(Identifier.parse(page));
+        }
+        for (String widget : List.of("skyrpg_progress:quest_tracker", "skyrpg_events:contracts_hud", "skyrpg_mounts:stamina",
+                "skyrpg_magic:spell", "skyrpg_world:blood_moon")) {
+            HudManager.retire(Identifier.parse(widget));
+        }
     }
 }

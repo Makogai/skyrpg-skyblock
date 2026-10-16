@@ -37,6 +37,10 @@ public final class SidebarWidget implements HudWidget {
         area = name;
     }
 
+    static String area() {
+        return area;
+    }
+
     @Override
     public Identifier id() {
         return SkyRpgSkyblock.id("sidebar");

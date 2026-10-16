@@ -43,6 +43,20 @@ phase so the next session can pick up where this one stopped.
       (Interface, "FurfSky Reborn item looks", on) keeps it enabled. Not published yet.
 - [ ] **Owners:** ask the FurfSky Reborn team (their Discord) that listing it in our pack is fine, before publishing.
 
+### Owner directions (2026-10-16)
+
+- **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,
+  helmet and equipment folders, held-item models and the hotbar selection border. Its GUI/theme/hotbar/block/font parts
+  never load. Later the owners want to work on the weapon textures themselves (after the systems are done).
+- **Every screen is our own.** No chest GUIs and no vanilla textures, also for item screens (Wardrobe, Storage, and
+  whatever comes: Bazaar, Auction House, minions, crafting...). Custom MenuTypes + our screens (see SkyMenus,
+  WardrobeScreen, EnderPageScreen, SkyScreens); make them look great, not "Minecraft because there's no choice".
+- **Clean SkyBlock**: no Journal or Contracts (for now), retired with the other survival-only pages and HUD boxes
+  (mounts, spells, talents, titles, /pay, blood moon) in SkyRpgSkyblockClient.retireSurvival; Contracts and Quests
+  switched off server-side (core `Features`).
+- **Key names, never "K"**: in-game text names the player's bound key (`Msg.menuKey()`, a keybind component).
+- The K menu is fine as it is (configurable), the SkyBlock Menu grid was liked: keep making it more our own.
+
 ### Notes
 
 - Hypixel API resources (public, no key): `https://api.hypixel.net/v2/resources/skyblock/{items,collections,skills}`.

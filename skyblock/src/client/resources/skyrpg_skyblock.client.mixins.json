@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.skyrpg.skyblock.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CatsPackResourcesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

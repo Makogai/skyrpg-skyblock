@@ -1,5 +1,6 @@
 package com.skyrpg.events.contract;
 
+import com.skyrpg.core.Features;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -163,6 +164,9 @@ public final class Contracts {
 
     /** On a new day (or with no contracts yet), picks new ones. */
     private static void refreshDay() {
+        if (!Features.on(Features.CONTRACTS)) {
+            return;
+        }
         if (server == null || templates.isEmpty()) {
             return;
         }
@@ -183,7 +187,7 @@ public final class Contracts {
             changed = true;
             if (!server.getPlayerList().getPlayers().isEmpty()) {
                 server.getPlayerList().broadcastSystemMessage(Msg.text("📋 New contracts on the board! ", ChatFormatting.GOLD)
-                        .append(Msg.text("(K -> Contracts)", ChatFormatting.GRAY)), false);
+                        .append(Msg.text("(", ChatFormatting.GRAY).append(Msg.menuKey()).append(" -> Contracts)")), false);
             }
         }
     }
@@ -303,6 +307,9 @@ public final class Contracts {
     // ---------------------------------------------------------------- board actions
 
     private static void handIn(ServerPlayer player, int index) {
+        if (!Features.on(Features.CONTRACTS)) {
+            return;
+        }
         if (index < 0 || index >= TODAY.size()) {
             return;
         }
@@ -332,6 +339,9 @@ public final class Contracts {
     }
 
     private static void reroll(ServerPlayer player, int index) {
+        if (!Features.on(Features.CONTRACTS)) {
+            return;
+        }
         if (index < 0 || index >= TODAY.size()) {
             return;
         }
@@ -362,6 +372,9 @@ public final class Contracts {
     // ---------------------------------------------------------------- sync and saving
 
     private static void send(ServerPlayer player, Component notice, boolean good) {
+        if (!Features.on(Features.CONTRACTS)) {
+            return;
+        }
         List<ContractPayloads.Entry> entries = new ArrayList<>();
         for (Active active : TODAY) {
             ContractTemplate template = template(active);

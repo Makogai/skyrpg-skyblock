@@ -130,7 +130,7 @@ public final class PlayerSkills {
         }
         int points = newLevel - oldLevel;
         player.sendSystemMessage(Msg.text("    +" + points + " " + skill.name() + " Talent Point" + (points == 1 ? "" : "s"), ChatFormatting.LIGHT_PURPLE)
-                .append(Msg.text("  (K -> Talents)", ChatFormatting.DARK_GRAY)));
+                .append(Msg.text("  (", ChatFormatting.DARK_GRAY).append(Msg.menuKey()).append(" -> Talents)")));
         // Every 5th level pays coins: level x 100.
         long coins = 0;
         for (int level = oldLevel + 1; level <= newLevel; level++) {

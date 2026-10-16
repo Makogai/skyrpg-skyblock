@@ -37,6 +37,10 @@ public final class StoragePage implements MenuPage {
         summary = payload;
     }
 
+    static StoragePayloads.Summary summary() {
+        return summary;
+    }
+
     @Override
     public Identifier id() {
         return SkyRpgSkyblock.id("storage");

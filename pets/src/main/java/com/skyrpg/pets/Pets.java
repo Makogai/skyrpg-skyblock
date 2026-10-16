@@ -167,7 +167,7 @@ public final class Pets {
             double need = xpFor(level + 1) - xpFor(level);
             lines.add(plain("Next level: " + Msg.number(Math.floor(into)) + " / " + Msg.number(need) + " XP", ChatFormatting.DARK_AQUA));
         }
-        lines.add(plain("Right-click to add it to your pet storage (K menu, Pets).", ChatFormatting.DARK_GRAY));
+        lines.add(plain("Right-click to add it to your pet storage (", ChatFormatting.DARK_GRAY).append(Msg.menuKey()).append(" menu, Pets)."));
         stack.set(DataComponents.LORE, new ItemLore(lines));
     }
 
@@ -271,7 +271,7 @@ public final class Pets {
             return false;
         }
         if (storageFull(player)) {
-            notice(rarity(pet)).tag("STORAGE FULL").send(player, grey("Your pet storage is full (" + maxStorage() + "). Take a pet out in the K menu first; ")
+            notice(rarity(pet)).tag("STORAGE FULL").send(player, grey("Your pet storage is full (" + maxStorage() + "). Take a pet out in the ").append(Msg.menuKey()).append(" menu first; ")
                     .append(coloredName(pet).withStyle(style -> style.withBold(false))).append(grey(" stays with you.")));
             return false;
         }

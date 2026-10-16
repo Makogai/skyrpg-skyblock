@@ -7,24 +7,20 @@ summary: The SkyBlock Menu opens everything from one board, as on Hypixel. Fast 
 ---
 ## The SkyBlock Menu
 
-Press **K** and the menu opens on the **SkyBlock Menu**, a board of everything you can open. The tiles follow Hypixel's order:
+Press the menu key (**K** unless you changed it in Controls) and the menu opens on the **SkyBlock Menu**.
 
-| Tile | Opens |
+On the left is **you**: your character (it looks at your mouse), your name, the profile you're playing, where you are, the SkyBlock date and time, and your purse.
+
+On the right is everything you can open, in four colour-coded groups. Each tile shows something live about it:
+
+| Group | Tiles |
 | --- | --- |
-| Your SkyBlock Profile | Your stats, level and purse |
-| Skills | Your skills and their levels |
-| Collections | Everything you've gathered, and what it unlocks |
-| Quest Log | Your quests |
-| Calendar and Events | The [SkyBlock calendar](calendar-and-events) |
-| Storage | Your [Ender Chest pages](storage-and-wardrobe) |
-| Pets | Your pets |
-| Wardrobe | Your saved [armour sets](storage-and-wardrobe#wardrobe) |
-| Fast Travel | Warps (below) |
-| Profile Management | Your [profiles](profiles-and-islands) |
-| Settings | HUD, sounds, keys and more |
-| SkyBlock Items | [Every item](skyblock-items#browsing-every-item) |
+| You (gold) | Your Profile, Skills, Collections, SkyBlock Leveling |
+| Gear (purple) | [Storage](storage-and-wardrobe) (how many items in how many pages), [Wardrobe](storage-and-wardrobe#wardrobe) (the set you wear), Pets (your pet out), [SkyBlock Items](skyblock-items#browsing-every-item) |
+| World (aqua) | Fast Travel (warps unlocked), [Calendar](calendar-and-events) (today's date), Recipe Book |
+| Account (green) | [Profiles](profiles-and-islands) (how many of 5), Personal Bank, Settings |
 
-Tiles in grey (Recipe Book, SkyBlock Leveling, Personal Bank) are still being built. Every page is also in the menu's sidebar on the left.
+Grey tiles (SkyBlock Leveling, Recipe Book, Personal Bank) are still being built. Every page is also in the menu's sidebar on the left.
 
 ## Fast Travel
 

@@ -10,10 +10,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.SimpleMenuProvider;
-import net.minecraft.world.inventory.ChestMenu;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemContainerContents;
 
@@ -39,6 +36,7 @@ public final class Storage {
     }
 
     static void init() {
+        SkyMenus.init();
         // Touch the attachment types so they register at start-up.
         PAGES.identifier();
         UNLOCKED.identifier();
@@ -83,8 +81,8 @@ public final class Storage {
                     .withStyle(ChatFormatting.RED));
             return;
         }
-        player.openMenu(new SimpleMenuProvider((id, inventory, p) -> new ChestMenu(MenuType.GENERIC_9x5, id, inventory, new Page(player, page), 5),
-                Component.literal("Ender Chest (" + (page + 1) + "/" + unlocked(player) + ")")));
+        player.openMenu(new SimpleMenuProvider((id, inventory, p) -> EnderPageMenu.server(id, inventory, player, page),
+                Component.literal("Ender Chest")));
     }
 
     /** The first time: what was in the vanilla ender chest goes into page 1 (as far as it fits; the rest stays). */
@@ -118,38 +116,5 @@ public final class Storage {
             ender.setItem(i, ItemStack.EMPTY);
         }
         save(player, 0, items);
-    }
-
-    /** One page, written back to the player's data after every change. */
-    private static final class Page extends SimpleContainer {
-        private final ServerPlayer owner;
-        private final int page;
-        private boolean loading;
-
-        Page(ServerPlayer owner, int page) {
-            super(PAGE_SIZE);
-            this.owner = owner;
-            this.page = page;
-            loading = true;
-            NonNullList<ItemStack> items = Storage.page(owner, page);
-            for (int i = 0; i < PAGE_SIZE; i++) {
-                setItem(i, items.get(i));
-            }
-            loading = false;
-        }
-
-        @Override
-        public void setChanged() {
-            super.setChanged();
-            if (!loading) {
-                save(owner, page, getItems());
-            }
-        }
-
-        @Override
-        public void stopOpen(net.minecraft.world.entity.ContainerUser user) {
-            super.stopOpen(user);
-            StoragePayloads.sendSummary(owner);
-        }
     }
 }

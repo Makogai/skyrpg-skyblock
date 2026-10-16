@@ -70,6 +70,14 @@ public final class Msg {
         return out.toString();
     }
 
+    /**
+     * The key that opens the SkyRPG menu, as the player has it bound ("K" unless they changed it): a keybind component,
+     * so each client shows its own key. Write "the " + menuKey() + " menu" rather than "the K menu".
+     */
+    public static MutableComponent menuKey() {
+        return Component.keybind("key.skyrpg_core.menu");
+    }
+
     public static MutableComponent text(String text, ChatFormatting... style) {
         return Component.literal(text).withStyle(style);
     }

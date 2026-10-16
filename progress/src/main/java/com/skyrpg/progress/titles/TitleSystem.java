@@ -317,7 +317,7 @@ public final class TitleSystem {
         int have = (int) TitleData.all().keySet().stream().filter(id -> state.unlocked().contains(id.toString())).count();
         Notice.of(Notice.Kind.SUCCESS).icon(Notice.TROPHY).tag("TITLES").color(0xF2B33D).send(player,
                 Msg.text(have + " of " + total + " earned. ", ChatFormatting.GRAY)
-                        .append(Msg.text("Open the K menu, Titles page, or use /title set <id>.", ChatFormatting.DARK_GRAY)));
+                        .append(Msg.text("Open the ", ChatFormatting.DARK_GRAY).append(Msg.menuKey()).append(" menu, Titles page, or use /title set <id>.")));
         for (TitleData.Def def : TitleData.all().values()) {
             String id = def.id().toString();
             boolean owned = state.unlocked().contains(id);

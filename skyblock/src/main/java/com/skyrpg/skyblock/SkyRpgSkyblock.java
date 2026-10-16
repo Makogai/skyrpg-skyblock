@@ -1,5 +1,6 @@
 package com.skyrpg.skyblock;
 
+import com.skyrpg.core.Features;
 import com.skyrpg.hub.Hub;
 import com.skyrpg.skyblock.area.Areas;
 import com.skyrpg.skyblock.island.IslandRules;
@@ -31,6 +32,9 @@ public final class SkyRpgSkyblock implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // The survival Contracts and Journal quests have no place in SkyBlock (for now).
+        Features.off(Features.CONTRACTS);
+        Features.off(Features.QUESTS);
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();

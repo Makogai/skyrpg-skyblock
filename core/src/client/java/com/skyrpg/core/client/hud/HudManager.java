@@ -71,6 +71,7 @@ public final class HudManager {
     }
 
     private static final List<HudWidget> WIDGETS = new ArrayList<>();
+    private static final Set<Identifier> RETIRED = new HashSet<>();
     /**
      * Widgets that draw themselves in their own HUD slot; HudManager only lays them out (see
      * {@link #drawsItself}). Made on first use, since a field added by hot-swapping skips its initializer.
@@ -85,9 +86,12 @@ public final class HudManager {
     }
 
     public static void register(HudWidget widget) {
+        if (RETIRED.contains(widget.id())) {
+            return;
+        }
         WIDGETS.add(widget);
         // A "Widgets" toggle in the HUD settings, sharing the editor's shown flag (and saved the way it saves).
-        SkyRpgSettings.toggle("hud.widget." + widget.id().toString().replace(':', '.'), SkyRpgSettings.HUD,
+        SkyRpgSettings.toggle(settingId(widget.id()), SkyRpgSettings.HUD,
                         widget.name().getString(), "Show or hide this info box (also in the HUD editor)", widget.enabledByDefault(),
                         () -> layout(widget).enabled, value -> {
                             layout(widget).enabled = value;
@@ -100,6 +104,17 @@ public final class HudManager {
      * Marks a registered widget as drawing itself in its own HUD slot (the sidebar draws in vanilla's
      * scoreboard slot) at {@link #placedBox}: it is laid out with the others but not drawn by them.
      */
+    private static String settingId(Identifier widgetId) {
+        return "hud.widget." + widgetId.toString().replace(':', '.');
+    }
+
+    /** Takes a widget off the HUD for good (registered already or not yet), for a game mode that has no use for it. */
+    public static void retire(Identifier widgetId) {
+        RETIRED.add(widgetId);
+        WIDGETS.removeIf(widget -> widget.id().equals(widgetId));
+        SkyRpgSettings.remove(settingId(widgetId));
+    }
+
     public static void drawsItself(HudWidget widget) {
         if (selfDrawn == null) {
             selfDrawn = new HashSet<>();

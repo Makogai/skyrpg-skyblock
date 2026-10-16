@@ -93,6 +93,11 @@ public final class SkyRpgSettings {
         return SETTINGS.get(id);
     }
 
+    /** Takes a setting out of the Settings page (for something a game mode retired). Its saved value is kept. */
+    public static void remove(String id) {
+        SETTINGS.remove(id);
+    }
+
     /** A choice's current option by id, or null if there's no such choice setting. */
     public static String choiceValue(String id) {
         Setting setting = SETTINGS.get(id);

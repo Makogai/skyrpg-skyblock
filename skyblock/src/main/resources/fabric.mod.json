@@ -19,7 +19,11 @@
     ]
   },
   "mixins": [
-    "skyrpg_skyblock.mixins.json"
+    "skyrpg_skyblock.mixins.json",
+    {
+      "config": "skyrpg_skyblock.client.mixins.json",
+      "environment": "client"
+    }
   ],
   "depends": {
     "fabricloader": ">=0.19.5",
@@ -29,7 +33,8 @@
     "skyrpg_core": "*",
     "skyrpg_items": "*",
     "skyrpg_hub": "*",
-    "skyrpg_economy": "*"
+    "skyrpg_economy": "*",
+    "skyrpg_pets": "*"
   },
   "custom": {
     "modmenu": {

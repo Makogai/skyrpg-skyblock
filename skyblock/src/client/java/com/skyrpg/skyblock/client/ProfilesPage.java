@@ -44,6 +44,10 @@ public final class ProfilesPage implements MenuPage {
         profiles = List.copyOf(payload.profiles());
     }
 
+    static List<ProfileListPayload.Entry> profiles() {
+        return profiles;
+    }
+
     @Override
     public Identifier id() {
         return SkyRpgSkyblock.id("profiles");

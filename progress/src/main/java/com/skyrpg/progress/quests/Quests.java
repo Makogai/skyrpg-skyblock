@@ -1,5 +1,6 @@
 package com.skyrpg.progress.quests;
 
+import com.skyrpg.core.Features;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
@@ -125,6 +126,9 @@ public final class Quests {
     // ---------------------------------------------------------------- state helpers
 
     static void sendDefs(ServerPlayer player) {
+        if (!Features.on(Features.QUESTS)) {
+            return;
+        }
         ServerPlayNetworking.send(player, new QuestPayloads.Defs(QuestData.rawJson()));
     }
 
@@ -198,6 +202,9 @@ public final class Quests {
     }
 
     private static void killed(ServerPlayer player, LivingEntity entity) {
+        if (!Features.on(Features.QUESTS)) {
+            return;
+        }
         killed(player, o -> Objectives.killMatches(entity, o));
     }
 
@@ -230,6 +237,9 @@ public final class Quests {
     }
 
     private static void action(ServerPlayer player, QuestPayloads.Action action) {
+        if (!Features.on(Features.QUESTS)) {
+            return;
+        }
         switch (action.kind()) {
             case "opened" -> bump(player, "journal", 1, false);
             case "track" -> {
@@ -259,6 +269,9 @@ public final class Quests {
 
     /** Rechecks every open quest for the player, announces new ones and completes the finished ones. */
     public static void refresh(ServerPlayer player) {
+        if (!Features.on(Features.QUESTS)) {
+            return;
+        }
         if (QuestData.quests().isEmpty()) {
             return;
         }

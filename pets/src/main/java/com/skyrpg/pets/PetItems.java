@@ -102,7 +102,7 @@ public final class PetItems {
             }
             if (Pets.storageFull(serverPlayer)) {
                 Notice.send(serverPlayer, Notice.Kind.PET, Pets.grey("Your pet storage is full (" + Pets.maxStorage()
-                        + "). Take a pet out in the K menu before hatching this egg."));
+                        + "). Take a pet out in the ").append(Msg.menuKey()).append(" menu before hatching this egg."));
                 return InteractionResult.SUCCESS;
             }
             RandomSource random = serverPlayer.getRandom();

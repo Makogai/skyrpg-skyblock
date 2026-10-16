@@ -1,5 +1,6 @@
 package com.skyrpg.pets;
 
+import com.skyrpg.core.text.Msg;
 import com.skyrpg.core.text.Notice;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -28,7 +29,7 @@ public class SkyRpgPets implements ModInitializer {
                     ServerPlayer player = ctx.getSource().getPlayerOrException();
                     ItemStack pet = Pets.active(player);
                     if (pet.isEmpty()) {
-                        Notice.send(player, Notice.Kind.PET, Pets.grey("You have no pet out. Right-click a pet, or open the Pets page in the K menu."));
+                        Notice.send(player, Notice.Kind.PET, Pets.grey("You have no pet out. Right-click a pet, or open the Pets page in the ").append(Msg.menuKey()).append(" menu."));
                     } else {
                         Pets.refreshLook(pet);
                         Pets.notice(Pets.rarity(pet)).tag("YOUR PET").send(player, Pets.nameAndLevel(pet));

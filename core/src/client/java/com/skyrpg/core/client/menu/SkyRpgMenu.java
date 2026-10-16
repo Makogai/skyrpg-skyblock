@@ -5,14 +5,17 @@ import com.skyrpg.core.client.config.Setting;
 import com.skyrpg.core.client.config.SkyRpgSettings;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 
 /** The central SkyRPG menu: where mods register pages and profile stats, and how it's opened. */
 public final class SkyRpgMenu {
     private static final List<MenuPage> PAGES = new ArrayList<>();
+    private static final Set<Identifier> RETIRED = new HashSet<>();
     private static final List<ProfileStat> PROFILE_STATS = new ArrayList<>();
     private static Identifier lastPage;
 
@@ -27,8 +30,20 @@ public final class SkyRpgMenu {
     }
 
     public static void registerPage(MenuPage page) {
+        if (RETIRED.contains(page.id())) {
+            return;
+        }
         PAGES.add(page);
         PAGES.sort(Comparator.comparingInt(MenuPage::order));
+    }
+
+    /**
+     * Takes a page out of the menu for good (whether it registered already or registers later), for a game mode
+     * that has no use for it, like SkyBlock retiring the survival Journal.
+     */
+    public static void retirePage(Identifier pageId) {
+        RETIRED.add(pageId);
+        PAGES.removeIf(page -> page.id().equals(pageId));
     }
 
     public static void registerProfileStat(ProfileStat stat) {
