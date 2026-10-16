@@ -7,7 +7,6 @@ import com.skyrpg.skyblock.SkyStacks;
 import com.skyrpg.skyblock.recipe.Recipes;
 import com.skyrpg.skyblock.time.SkyBlockTime;
 import com.skyrpg.skyblock.island.IslandRules;
-import com.google.gson.JsonObject;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.LinkedHashSet;
@@ -631,18 +630,8 @@ public class MinionEntity extends ArmorStand {
         if (percent == 0) {
             return 0;
         }
-        heldCoins += count * npcPrice(item) * percent / 100.0;
+        heldCoins += count * SkyStacks.npcPrice(item) * percent / 100.0;
         return count;
-    }
-
-    /** What an NPC pays for one of this item, from Hypixel's data. */
-    static double npcPrice(String skyblockId) {
-        ItemDefinition def = ItemRegistry.skyblock(skyblockId);
-        if (def == null || !def.json().has("hypixel")) {
-            return 0;
-        }
-        JsonObject hypixel = def.json().getAsJsonObject("hypixel");
-        return hypixel.has("npc_sell_price") ? hypixel.get("npc_sell_price").getAsDouble() : 0;
     }
 
     /**

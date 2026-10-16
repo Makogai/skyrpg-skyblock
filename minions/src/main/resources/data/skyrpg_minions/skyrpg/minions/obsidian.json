@@ -19,7 +19,8 @@
    "action": 45.0,
    "storage": 64,
    "cost": {
-    "OBSIDIAN": 80
+    "OBSIDIAN": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "OBSIDIAN_GENERATOR_12",
    "action": 21.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_OBSIDIAN": 1024
+   }
   }
  ]
 }

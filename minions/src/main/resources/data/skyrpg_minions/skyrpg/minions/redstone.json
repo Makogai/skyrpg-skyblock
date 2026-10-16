@@ -19,7 +19,8 @@
    "action": 29.0,
    "storage": 64,
    "cost": {
-    "REDSTONE": 128
+    "REDSTONE": 128,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "REDSTONE_GENERATOR_12",
    "action": 16.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_REDSTONE_BLOCK": 32
+   }
   }
  ]
 }

@@ -19,7 +19,8 @@
    "action": 27.0,
    "storage": 64,
    "cost": {
-    "INK_SACK-3": 80
+    "INK_SACK:3": 80,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -28,7 +29,7 @@
    "action": 27.0,
    "storage": 192,
    "cost": {
-    "INK_SACK-3": 160
+    "INK_SACK:3": 160
    }
   },
   {
@@ -37,7 +38,7 @@
    "action": 25.0,
    "storage": 192,
    "cost": {
-    "INK_SACK-3": 320
+    "INK_SACK:3": 320
    }
   },
   {
@@ -46,7 +47,7 @@
    "action": 25.0,
    "storage": 384,
    "cost": {
-    "INK_SACK-3": 512
+    "INK_SACK:3": 512
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "COCOA_GENERATOR_12",
    "action": 12.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_COOKIE": 16
+   }
   }
  ]
 }

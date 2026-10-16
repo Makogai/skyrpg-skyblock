@@ -19,7 +19,8 @@
    "action": 22.5,
    "storage": 64,
    "cost": {
-    "QUARTZ": 80
+    "QUARTZ": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "QUARTZ_GENERATOR_12",
    "action": 10.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_QUARTZ_BLOCK": 16,
+    "COINS": 2000000
+   }
   }
  ]
 }

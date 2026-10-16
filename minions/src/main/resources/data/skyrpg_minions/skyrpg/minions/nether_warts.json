@@ -19,7 +19,8 @@
    "action": 50.0,
    "storage": 64,
    "cost": {
-    "NETHER_STALK": 80
+    "NETHER_STALK": 80,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "NETHER_WARTS_GENERATOR_12",
    "action": 27.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_NETHER_STALK": 1024
+   }
   }
  ]
 }

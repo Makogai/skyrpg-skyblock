@@ -115,7 +115,11 @@
    "item": "SNOW_GENERATOR_12",
    "action": 5.8,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_NORTH_STAR": 500,
+    "COINS": 2000000,
+    "ENCHANTED_SNOW_BLOCK": 1024
+   }
   }
  ]
 }

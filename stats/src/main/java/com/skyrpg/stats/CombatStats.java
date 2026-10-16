@@ -1,5 +1,6 @@
 package com.skyrpg.stats;
 
+import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.core.stats.Crits;
 import com.skyrpg.core.stats.IncomingDamage;
 import com.skyrpg.core.stats.SkyArrows;
@@ -21,6 +22,11 @@ import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
  */
 public final class CombatStats {
     private CombatStats() {
+    }
+
+    /** Warrior's bonus in percent at this Combat level. */
+    static int warrior(int combatLevel) {
+        return 4 * Math.min(50, combatLevel) + Math.max(0, combatLevel - 50);
     }
 
     public static float modifyDamage(LivingEntity target, ServerLevel level, DamageSource source, float amount) {
@@ -55,6 +61,11 @@ public final class CombatStats {
                 level.playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.PLAYER_ATTACK_CRIT,
                         shooter.getSoundSource(), 1.0f, 1.0f);
             }
+        }
+
+        // The Combat skill's Warrior perk: +4% damage to mobs a level up to 50, +1% a level after (Hypixel).
+        if (source.getEntity() instanceof ServerPlayer hitter && !(target instanceof net.minecraft.world.entity.player.Player)) {
+            damage *= 1 + warrior(SkillLevels.level(hitter, SkillLevels.COMBAT)) / 100.0;
         }
 
         // Other mods' multipliers (slayer bosses tougher than vanilla's health cap, slayer weapons).

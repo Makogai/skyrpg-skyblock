@@ -25,7 +25,8 @@
    "action": 15.0,
    "storage": 128,
    "cost": {
-    "WHEAT": 80
+    "WHEAT": 80,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -123,7 +124,10 @@
    "item": "WHEAT_GENERATOR_12",
    "action": 7.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_WHEAT": 1024
+   }
   }
  ]
 }

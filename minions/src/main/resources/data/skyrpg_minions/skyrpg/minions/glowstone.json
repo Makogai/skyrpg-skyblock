@@ -19,7 +19,8 @@
    "action": 25.0,
    "storage": 64,
    "cost": {
-    "GLOWSTONE_DUST": 128
+    "GLOWSTONE_DUST": 128,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "GLOWSTONE_GENERATOR_12",
    "action": 11.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_GLOWSTONE": 32,
+    "COINS": 2000000
+   }
   }
  ]
 }

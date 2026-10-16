@@ -271,9 +271,7 @@ public final class MinionMenu extends AbstractContainerMenu {
         List<Cost> upgrade = new ArrayList<>();
         if (minion.tier() < type.maxTier()) {
             for (Map.Entry<String, Integer> cost : type.tier(minion.tier() + 1).cost().entrySet()) {
-                ItemDefinition def = ItemRegistry.skyblock(cost.getKey());
-                ItemStack icon = def == null ? ItemStack.EMPTY : SkyItems.create(def, 1);
-                upgrade.add(new Cost(icon, cost.getValue(), SkyStacks.count(player.getInventory(), cost.getKey())));
+                upgrade.add(new Cost(icon(cost.getKey()), cost.getValue(), have(player, cost.getKey())));
             }
         }
         List<String> fuels = new ArrayList<>();
@@ -286,6 +284,30 @@ public final class MinionMenu extends AbstractContainerMenu {
         }
         return new View(minion.getId(), type.id(), type.name(), type.category(), minion.tier(), type.maxTier(), (float) tier.actionSeconds(),
                 tier.storage(), Math.min(MinionEntity.MAX_SLOTS, tier.slots()), upgrade, fuels, forever);
+    }
+
+    /** The coins an upgrade cost takes (tier XII's, which on Hypixel an NPC sells). */
+    static final String COINS = "COINS";
+
+    /** What a cost shows: the item, coins as a gold nugget, or a barrier named after something not in the game yet. */
+    private static ItemStack icon(String id) {
+        if (COINS.equals(id)) {
+            ItemStack coins = new ItemStack(net.minecraft.world.item.Items.GOLD_NUGGET);
+            coins.set(net.minecraft.core.component.DataComponents.ITEM_NAME, Component.literal("Coins").withStyle(ChatFormatting.GOLD));
+            return coins;
+        }
+        ItemDefinition def = ItemRegistry.skyblock(id);
+        if (def != null) {
+            return SkyItems.create(def, 1);
+        }
+        ItemStack missing = new ItemStack(net.minecraft.world.item.Items.BARRIER);
+        missing.set(net.minecraft.core.component.DataComponents.ITEM_NAME, Component.literal(id.replace('_', ' ') + " (not in the game yet)")
+                .withStyle(ChatFormatting.RED));
+        return missing;
+    }
+
+    private static int have(ServerPlayer player, String id) {
+        return COINS.equals(id) ? (int) Math.min(Integer.MAX_VALUE, Wallet.balance(player)) : SkyStacks.count(player.getInventory(), id);
     }
 
     private static MinionMenu server(int id, Inventory inventory, ServerPlayer owner, MinionEntity minion, View view) {
@@ -485,12 +507,18 @@ public final class MinionMenu extends AbstractContainerMenu {
         }
         Map<String, Integer> cost = type.tier(minion.tier() + 1).cost();
         for (Map.Entry<String, Integer> entry : cost.entrySet()) {
-            if (SkyStacks.count(owner.getInventory(), entry.getKey()) < entry.getValue()) {
-                owner.sendSystemMessage(Component.literal("You don't have what the upgrade takes yet.").withStyle(ChatFormatting.RED));
+            if (have(owner, entry.getKey()) < entry.getValue()) {
+                owner.sendOverlayMessage(Component.literal("You don't have what the upgrade takes yet.").withStyle(ChatFormatting.RED));
                 return;
             }
         }
-        cost.forEach((item, count) -> SkyStacks.take(owner.getInventory(), item, count));
+        cost.forEach((item, count) -> {
+            if (COINS.equals(item)) {
+                Wallet.take(owner, count);
+            } else {
+                SkyStacks.take(owner.getInventory(), item, count);
+            }
+        });
         minion.setTier(minion.tier() + 1);
         // Upgrading counts as crafting that tier, as on Hypixel.
         MinionSlots.record(owner, type.tier(minion.tier()).item());

@@ -78,7 +78,13 @@ phase so the next session can pick up where this one stopped.
       Recipes are sent to clients (`RecipesPayload`, gzipped JSON). Vanilla recipe / advancement / tutorial toasts
       are hidden (`ToastManagerMixin`).
 - [ ] Wiki: survival pages are still there (dungeons, Delving, gear, the K-menu talk); rewrite or retire them.
-- [ ] Minion tier XII costs: NEU has no recipe for the XII tiers (the upgrade button shows no cost). Find them.
+- [x] Minion tier XII costs: Hypixel sells them (Bulvar, Tony, Einary...): `import_minions.py` reads NEU's npc_shop
+      trades (and upgrade stones' trades) into the XII cost, coins as "COINS"; the minion screen does the trade until the
+      NPCs exist (design call). Snow/Ice XII want North Stars, farming XII Pelts: not items yet. Also fixed: NEU's
+      "INK_SACK-4" ids in costs (Lapis upgrades never matched) and costs from NEU's `recipes` lists (Mushroom, Lily Pad).
+- [x] Warrior (+4% mob damage a Combat level, +1% after 50) in `CombatStats`. Carpentry XP from crafting (3% of the
+      ingredients' NPC price, Hypixel) and Taming XP = the active pet's XP (our reading), both without their own
+      action-bar line (`SkillLevels.giveXpQuietly`). Alchemy waits for brewing.
 - [x] **Skills 1:1**: `tools/skyblock/import_skills.py` writes Farming, Mining, Combat, Foraging, Fishing, Enchanting,
       Alchemy, Taming, Carpentry with NEU's XP table and caps (Farming 60 as with Anita's bonus), Hypixel's coins per
       level (wiki Mining table, same for every skill), SkyBlock XP (5/10/20/30) and each skill's stat brackets + perk.

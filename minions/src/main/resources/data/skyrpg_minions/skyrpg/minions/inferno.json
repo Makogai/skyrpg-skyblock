@@ -19,7 +19,8 @@
    "action": 1013.0,
    "storage": 64,
    "cost": {
-    "DERELICT_ASHE": 80
+    "DERELICT_ASHE": 80,
+    "BLAZE_GENERATOR_1": 1
    }
   },
   {

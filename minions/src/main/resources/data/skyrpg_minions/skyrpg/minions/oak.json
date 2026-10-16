@@ -19,7 +19,8 @@
    "action": 48.0,
    "storage": 64,
    "cost": {
-    "LOG": 80
+    "LOG": 80,
+    "WOOD_AXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "OAK_GENERATOR_12",
    "action": 23.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_OAK_LOG": 1024
+   }
   }
  ]
 }

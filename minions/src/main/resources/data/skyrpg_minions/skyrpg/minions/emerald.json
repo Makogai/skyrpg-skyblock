@@ -19,7 +19,8 @@
    "action": 28.0,
    "storage": 64,
    "cost": {
-    "EMERALD": 80
+    "EMERALD": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "EMERALD_GENERATOR_12",
    "action": 12.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_EMERALD_BLOCK": 16
+   }
   }
  ]
 }

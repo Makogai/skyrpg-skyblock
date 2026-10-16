@@ -25,7 +25,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "ROTTEN_FLESH": 80
+    "ROTTEN_FLESH": 80,
+    "WOOD_SWORD": 1
    }
   },
   {

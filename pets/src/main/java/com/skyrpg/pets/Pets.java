@@ -384,12 +384,15 @@ public final class Pets {
     private static void xpEarned(ServerPlayer player, net.minecraft.resources.Identifier skill, double xp) {
         ItemStack pet = active(player);
         PetType type = type(pet);
-        if (type == null || xp <= 0) {
-            return;
+        if (type == null || xp <= 0 || skill.equals(com.skyrpg.core.skills.SkillLevels.TAMING)) {
+            return; // Taming XP itself feeds no pet (it comes from the pet)
         }
         int before = level(pet);
         ItemStack updated = pet.copy();
-        setXp(updated, xp(updated) + xp * (skill.equals(type.skill()) ? OWN_SKILL_SHARE : OTHER_SKILL_SHARE));
+        double petXp = xp * (skill.equals(type.skill()) ? OWN_SKILL_SHARE : OTHER_SKILL_SHARE);
+        setXp(updated, xp(updated) + petXp);
+        // Taming levels with what your pet earns.
+        com.skyrpg.core.skills.SkillLevels.giveXpQuietly(player, com.skyrpg.core.skills.SkillLevels.TAMING, petXp);
         int after = level(updated);
         if (after > before) {
             refreshLook(updated);

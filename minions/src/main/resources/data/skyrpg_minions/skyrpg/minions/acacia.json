@@ -19,7 +19,8 @@
    "action": 48.0,
    "storage": 64,
    "cost": {
-    "LOG_2": 80
+    "LOG_2": 80,
+    "WOOD_AXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "ACACIA_GENERATOR_12",
    "action": 23.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_ACACIA_LOG": 1024
+   }
   }
  ]
 }

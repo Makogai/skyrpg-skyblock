@@ -19,7 +19,8 @@
    "action": 29.0,
    "storage": 64,
    "cost": {
-    "INK_SACK-4": 256
+    "INK_SACK:4": 256,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -28,7 +29,7 @@
    "action": 29.0,
    "storage": 192,
    "cost": {
-    "INK_SACK-4": 512
+    "INK_SACK:4": 512
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "LAPIS_GENERATOR_12",
    "action": 16.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_LAPIS_LAZULI_BLOCK": 64
+   }
   }
  ]
 }

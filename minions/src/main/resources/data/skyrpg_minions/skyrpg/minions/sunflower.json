@@ -25,7 +25,8 @@
    "action": 24.0,
    "storage": 128,
    "cost": {
-    "DOUBLE_PLANT": 128
+    "DOUBLE_PLANT": 128,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -123,7 +124,9 @@
    "item": "SUNFLOWER_GENERATOR_12",
    "action": 13.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COMPACTED_SUNFLOWER": 32
+   }
   }
  ]
 }

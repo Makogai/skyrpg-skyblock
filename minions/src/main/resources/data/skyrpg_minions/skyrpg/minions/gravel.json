@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 128,
    "cost": {
-    "GRAVEL": 80
+    "GRAVEL": 80,
+    "WOOD_SPADE": 1
    }
   },
   {

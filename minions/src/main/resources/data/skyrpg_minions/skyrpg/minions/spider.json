@@ -25,7 +25,8 @@
    "action": 26.0,
    "storage": 128,
    "cost": {
-    "STRING": 80
+    "STRING": 80,
+    "WOOD_SWORD": 1
    }
   },
   {

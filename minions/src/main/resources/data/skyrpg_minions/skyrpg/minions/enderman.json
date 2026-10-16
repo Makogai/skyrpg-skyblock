@@ -19,7 +19,8 @@
    "action": 32.0,
    "storage": 64,
    "cost": {
-    "ENDER_PEARL": 64
+    "ENDER_PEARL": 64,
+    "WOOD_SWORD": 1
    }
   },
   {

@@ -19,7 +19,8 @@
    "action": 48.0,
    "storage": 64,
    "cost": {
-    "LOG_2-1": 80
+    "LOG_2:1": 80,
+    "WOOD_AXE": 1
    }
   },
   {
@@ -28,7 +29,7 @@
    "action": 48.0,
    "storage": 192,
    "cost": {
-    "LOG_2-1": 160
+    "LOG_2:1": 160
    }
   },
   {
@@ -37,7 +38,7 @@
    "action": 45.0,
    "storage": 192,
    "cost": {
-    "LOG_2-1": 320
+    "LOG_2:1": 320
    }
   },
   {
@@ -46,7 +47,7 @@
    "action": 45.0,
    "storage": 384,
    "cost": {
-    "LOG_2-1": 512
+    "LOG_2:1": 512
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "DARK_OAK_GENERATOR_12",
    "action": 23.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_DARK_OAK_LOG": 1024
+   }
   }
  ]
 }

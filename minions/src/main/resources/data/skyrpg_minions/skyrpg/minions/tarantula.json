@@ -31,7 +31,8 @@
    "action": 29.0,
    "storage": 64,
    "cost": {
-    "TARANTULA_WEB": 80
+    "TARANTULA_WEB": 80,
+    "ENCHANTED_FERMENTED_SPIDER_EYE": 1
    }
   },
   {
@@ -140,7 +141,8 @@
    "action": 8.0,
    "storage": 960,
    "cost": {
-    "TARANTULA_GENERATOR_11": 1
+    "COINS": 2000000,
+    "TARANTULA_SILK": 64
    }
   }
  ]

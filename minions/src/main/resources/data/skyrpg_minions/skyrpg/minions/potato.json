@@ -19,7 +19,8 @@
    "action": 20.0,
    "storage": 64,
    "cost": {
-    "POTATO_ITEM": 128
+    "POTATO_ITEM": 128,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "POTATO_GENERATOR_12",
    "action": 8.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_BAKED_POTATO": 32
+   }
   }
  ]
 }

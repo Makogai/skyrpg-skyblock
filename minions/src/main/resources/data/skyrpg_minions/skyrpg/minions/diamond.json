@@ -19,7 +19,8 @@
    "action": 29.0,
    "storage": 64,
    "cost": {
-    "DIAMOND": 80
+    "DIAMOND": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "DIAMOND_GENERATOR_12",
    "action": 12.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_DIAMOND_BLOCK": 16
+   }
   }
  ]
 }

@@ -19,7 +19,8 @@
    "action": 190.0,
    "storage": 64,
    "cost": {
-    "HEMOVIBE": 80
+    "HEMOVIBE": 80,
+    "BAT_PERSON_HELMET": 1
    }
   },
   {

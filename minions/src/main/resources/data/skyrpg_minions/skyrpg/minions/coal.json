@@ -19,7 +19,8 @@
    "action": 15.0,
    "storage": 64,
    "cost": {
-    "COAL": 80
+    "COAL": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "COAL_GENERATOR_12",
    "action": 6.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_COAL_BLOCK": 16
+   }
   }
  ]
 }

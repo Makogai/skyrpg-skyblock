@@ -19,7 +19,8 @@
    "action": 27.0,
    "storage": 64,
    "cost": {
-    "SULPHUR": 80
+    "SULPHUR": 80,
+    "WOOD_SWORD": 1
    }
   },
   {

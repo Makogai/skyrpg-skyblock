@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "PORK": 64
+    "PORK": 64,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "PIG_GENERATOR_12",
    "action": 10.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_GRILLED_PORK": 16
+   }
   }
  ]
 }

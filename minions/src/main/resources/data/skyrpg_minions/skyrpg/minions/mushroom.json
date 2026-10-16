@@ -24,84 +24,111 @@
    "item": "MUSHROOM_GENERATOR_1",
    "action": 30.0,
    "storage": 128,
-   "cost": {}
+   "cost": {
+    "RED_MUSHROOM": 80,
+    "WOOD_HOE": 1
+   }
   },
   {
    "tier": 2,
    "item": "MUSHROOM_GENERATOR_2",
    "action": 30.0,
    "storage": 256,
-   "cost": {}
+   "cost": {
+    "RED_MUSHROOM": 160
+   }
   },
   {
    "tier": 3,
    "item": "MUSHROOM_GENERATOR_3",
    "action": 28.0,
    "storage": 256,
-   "cost": {}
+   "cost": {
+    "RED_MUSHROOM": 320
+   }
   },
   {
    "tier": 4,
    "item": "MUSHROOM_GENERATOR_4",
    "action": 28.0,
    "storage": 384,
-   "cost": {}
+   "cost": {
+    "RED_MUSHROOM": 512
+   }
   },
   {
    "tier": 5,
    "item": "MUSHROOM_GENERATOR_5",
    "action": 26.0,
    "storage": 384,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 8
+   }
   },
   {
    "tier": 6,
    "item": "MUSHROOM_GENERATOR_6",
    "action": 26.0,
    "storage": 576,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 16
+   }
   },
   {
    "tier": 7,
    "item": "MUSHROOM_GENERATOR_7",
    "action": 23.0,
    "storage": 576,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 32
+   }
   },
   {
    "tier": 8,
    "item": "MUSHROOM_GENERATOR_8",
    "action": 23.0,
    "storage": 768,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 64
+   }
   },
   {
    "tier": 9,
    "item": "MUSHROOM_GENERATOR_9",
    "action": 20.0,
    "storage": 768,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 128
+   }
   },
   {
    "tier": 10,
    "item": "MUSHROOM_GENERATOR_10",
    "action": 20.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 256
+   }
   },
   {
    "tier": 11,
    "item": "MUSHROOM_GENERATOR_11",
    "action": 16.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_MUSHROOM": 512
+   }
   },
   {
    "tier": 12,
    "item": "MUSHROOM_GENERATOR_12",
    "action": 12.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_BROWN_MUSHROOM": 512,
+    "ENCHANTED_RED_MUSHROOM": 512
+   }
   }
  ]
 }

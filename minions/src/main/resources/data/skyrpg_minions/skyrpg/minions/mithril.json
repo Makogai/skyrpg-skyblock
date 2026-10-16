@@ -19,7 +19,8 @@
    "action": 80.0,
    "storage": 64,
    "cost": {
-    "MITHRIL_ORE": 80
+    "MITHRIL_ORE": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "MITHRIL_GENERATOR_12",
    "action": 50.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "REFINED_MITHRIL": 16
+   }
   }
  ]
 }

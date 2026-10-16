@@ -31,7 +31,8 @@
    "action": 45.0,
    "storage": 64,
    "cost": {
-    "NULL_SPHERE": 80
+    "NULL_SPHERE": 80,
+    "ENDERMAN_GENERATOR_1": 1
    }
   },
   {

@@ -19,7 +19,8 @@
    "action": 48.0,
    "storage": 64,
    "cost": {
-    "LOG-3": 80
+    "LOG:3": 80,
+    "WOOD_AXE": 1
    }
   },
   {
@@ -28,7 +29,7 @@
    "action": 48.0,
    "storage": 192,
    "cost": {
-    "LOG-3": 160
+    "LOG:3": 160
    }
   },
   {
@@ -37,7 +38,7 @@
    "action": 45.0,
    "storage": 192,
    "cost": {
-    "LOG-3": 320
+    "LOG:3": 320
    }
   },
   {
@@ -46,7 +47,7 @@
    "action": 45.0,
    "storage": 384,
    "cost": {
-    "LOG-3": 512
+    "LOG:3": 512
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "JUNGLE_GENERATOR_12",
    "action": 23.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_JUNGLE_LOG": 1024
+   }
   }
  ]
 }

@@ -19,7 +19,8 @@
    "action": 17.0,
    "storage": 64,
    "cost": {
-    "IRON_INGOT": 80
+    "IRON_INGOT": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "IRON_GENERATOR_12",
    "action": 7.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_IRON_BLOCK": 16
+   }
   }
  ]
 }

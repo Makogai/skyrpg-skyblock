@@ -31,7 +31,8 @@
    "action": 26.0,
    "storage": 192,
    "cost": {
-    "RABBIT": 64
+    "RABBIT": 64,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -129,7 +130,10 @@
    "item": "RABBIT_GENERATOR_12",
    "action": 10.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_COOKED_RABBIT": 16
+   }
   }
  ]
 }

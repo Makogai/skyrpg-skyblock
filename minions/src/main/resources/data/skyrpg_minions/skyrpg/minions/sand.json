@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "SAND": 80
+    "SAND": 80,
+    "WOOD_SPADE": 1
    }
   },
   {

@@ -19,7 +19,8 @@
    "action": 32.0,
    "storage": 64,
    "cost": {
-    "CLAY_BALL": 80
+    "CLAY_BALL": 80,
+    "WOOD_SPADE": 1
    }
   },
   {
@@ -118,7 +119,9 @@
    "action": 14.0,
    "storage": 960,
    "cost": {
-    "GENERATOR_UPGRADE_STONE_CLAY_12": 1
+    "ENCHANTED_CLAY_BLOCK": 8,
+    "COINS": 2000000,
+    "FISHY_TREAT": 256
    }
   }
  ]

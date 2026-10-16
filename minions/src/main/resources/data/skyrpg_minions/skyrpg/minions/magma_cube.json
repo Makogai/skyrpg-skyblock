@@ -19,7 +19,8 @@
    "action": 32.0,
    "storage": 64,
    "cost": {
-    "MAGMA_CREAM": 80
+    "MAGMA_CREAM": 80,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "MAGMA_CUBE_GENERATOR_12",
    "action": 16.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_MAGMA_CREAM": 1024,
+    "COINS": 2000000
+   }
   }
  ]
 }

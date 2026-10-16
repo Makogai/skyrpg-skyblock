@@ -25,7 +25,8 @@
    "action": 26.0,
    "storage": 128,
    "cost": {
-    "SPIDER_EYE": 80
+    "SPIDER_EYE": 80,
+    "WOOD_SWORD": 1
    }
   },
   {

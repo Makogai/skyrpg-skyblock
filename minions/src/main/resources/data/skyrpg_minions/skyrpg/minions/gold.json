@@ -19,7 +19,8 @@
    "action": 22.0,
    "storage": 64,
    "cost": {
-    "GOLD_INGOT": 80
+    "GOLD_INGOT": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "GOLD_GENERATOR_12",
    "action": 9.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_GOLD_BLOCK": 16
+   }
   }
  ]
 }

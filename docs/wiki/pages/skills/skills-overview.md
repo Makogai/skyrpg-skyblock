@@ -13,7 +13,7 @@ Skills are how your character grows. You gain XP in a skill by doing what it is 
 | --- | --- | --- | --- |
 | Farming | 60 | Farmhand: +4 Farming Fortune | Health: +2 (levels 1 to 14), +3 (15 to 19), +4 (20 to 25), +5 (26 on) |
 | Mining | 60 | Spelunker: +4 Mining Fortune | Defense: +1 (1 to 14), +2 (15 on) |
-| Combat | 60 | Warrior: +4% damage to mobs (not working yet) | +0.5 Crit Chance |
+| Combat | 60 | Warrior: +4% damage to mobs (+1% a level after 50) | +0.5 Crit Chance |
 | Foraging | 50 | Logger: +4 Foraging Fortune | Strength: +1 (1 to 14), +2 (15 on) |
 | Fishing | 50 | Treasure Hunter: +0.1 Treasure Chance | Health: +2 (1 to 14), +3 (15 to 19), +4 (20 to 25), +5 (26 on) |
 | Enchanting | 60 | Conjurer: +4% experience orbs | Intelligence: +1 (1 to 14), +2 (15 on); +0.5 Ability Damage |
@@ -21,7 +21,12 @@ Skills are how your character grows. You gain XP in a skill by doing what it is 
 | Taming | 60 | Zoologist: +1% pet XP | +1 Pet Luck |
 | Carpentry | 50 | | +1 Health |
 
-Farming, Mining, Combat, Foraging, Fishing and Enchanting earn XP today. Alchemy, Taming and Carpentry are there with their rewards, and earn XP once brewing, pet levelling and crafting XP come.
+Farming, Mining, Combat, Foraging, Fishing and Enchanting earn XP by doing them. Two more earn XP alongside:
+
+- **Carpentry**: crafting (the [Recipe Book](recipe-book) or a crafting table) gives 3% of what the ingredients sell for to an NPC, as on Hypixel. 160 Cobblestone into an Enchanted Cobblestone is 4.8 Carpentry XP.
+- **Taming**: whatever XP your active pet earns, you earn in Taming too.
+
+Alchemy earns XP once brewing comes.
 
 ## How XP and levels work
 

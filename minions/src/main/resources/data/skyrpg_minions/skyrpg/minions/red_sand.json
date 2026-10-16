@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "SAND-1": 80
+    "SAND:1": 80,
+    "WOOD_SPADE": 1
    }
   },
   {
@@ -28,7 +29,7 @@
    "action": 25.0,
    "storage": 128,
    "cost": {
-    "SAND-1": 256
+    "SAND:1": 256
    }
   },
   {
@@ -37,7 +38,7 @@
    "action": 24.0,
    "storage": 192,
    "cost": {
-    "SAND-1": 512
+    "SAND:1": 512
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "RED_SAND_GENERATOR_12",
    "action": 11.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_RED_SAND_CUBE": 32,
+    "COINS": 2000000
+   }
   }
  ]
 }

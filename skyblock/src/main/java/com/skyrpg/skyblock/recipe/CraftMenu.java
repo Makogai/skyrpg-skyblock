@@ -96,7 +96,7 @@ public final class CraftMenu extends AbstractContainerMenu {
             }
         }
         grid.setChanged();
-        Crafting.give(server, output, recipe.count() * times);
+        Crafting.give(server, output, recipe, times);
         server.level().playSound(null, server.blockPosition(), SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.PLAYERS, 0.6f, 1.2f);
         broadcastChanges();
         return true;

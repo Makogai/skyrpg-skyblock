@@ -25,7 +25,8 @@
    "action": 24.0,
    "storage": 128,
    "cost": {
-    "MUTTON": 64
+    "MUTTON": 64,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -123,7 +124,10 @@
    "item": "SHEEP_GENERATOR_12",
    "action": 9.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_COOKED_MUTTON": 16
+   }
   }
  ]
 }

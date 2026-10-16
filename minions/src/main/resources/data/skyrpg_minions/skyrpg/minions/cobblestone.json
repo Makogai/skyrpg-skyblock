@@ -19,7 +19,8 @@
    "action": 14.0,
    "storage": 64,
    "cost": {
-    "COBBLESTONE": 80
+    "COBBLESTONE": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "COBBLESTONE_GENERATOR_12",
    "action": 6.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "ENCHANTED_COBBLESTONE": 1024
+   }
   }
  ]
 }

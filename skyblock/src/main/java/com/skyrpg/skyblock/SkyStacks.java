@@ -72,6 +72,16 @@ public final class SkyStacks {
         return plainIds;
     }
 
+    /** What an NPC pays for one of this item, from Hypixel's data (0 if it can't be sold). */
+    public static double npcPrice(String skyblockId) {
+        ItemDefinition def = ItemRegistry.skyblock(skyblockId);
+        if (def == null || !def.json().has("hypixel")) {
+            return 0;
+        }
+        var hypixel = def.json().getAsJsonObject("hypixel");
+        return hypixel.has("npc_sell_price") ? hypixel.get("npc_sell_price").getAsDouble() : 0;
+    }
+
     /** A SkyBlock item that is nothing but its material (no skin, colour or stats), like Cobblestone or Wheat. */
     public static boolean plain(ItemDefinition def) {
         return !def.json().has("skin") && !def.json().has("color") && def.stats().isEmpty() && def.ability() == null && !def.glint();

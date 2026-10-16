@@ -20,6 +20,8 @@ public final class SkillLevels {
     public static final Identifier COMBAT = Identifier.fromNamespaceAndPath("skyrpg_skills", "combat");
     public static final Identifier FORAGING = Identifier.fromNamespaceAndPath("skyrpg_skills", "foraging");
     public static final Identifier FISHING = Identifier.fromNamespaceAndPath("skyrpg_skills", "fishing");
+    public static final Identifier TAMING = Identifier.fromNamespaceAndPath("skyrpg_skills", "taming");
+    public static final Identifier CARPENTRY = Identifier.fromNamespaceAndPath("skyrpg_skills", "carpentry");
 
     /**
      * A player levelled up, while the skills mod's level-up message is being shown: listeners can add their own
@@ -88,6 +90,26 @@ public final class SkillLevels {
     /** Gives XP in a skill, as if earned there (level-ups and all). For XP that isn't from breaking a block. */
     public static void giveXp(ServerPlayer player, Identifier skill, double xp) {
         xpGiver.give(player, skill, xp);
+    }
+
+    private static boolean quiet;
+
+    /**
+     * Gives XP that comes along with something else (Taming XP from your pet's share of Mining XP), without its own
+     * "+12 Taming" line over the hotbar, which would push the one the player is watching away. Level-ups still show.
+     */
+    public static void giveXpQuietly(ServerPlayer player, Identifier skill, double xp) {
+        quiet = true;
+        try {
+            xpGiver.give(player, skill, xp);
+        } finally {
+            quiet = false;
+        }
+    }
+
+    /** True while {@link #giveXpQuietly} is giving XP. */
+    public static boolean quiet() {
+        return quiet;
     }
 
     /** The player's level in that skill (0 if the skill is unknown). Works on both sides once skills are synced. */

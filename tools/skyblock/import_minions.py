@@ -25,6 +25,7 @@ ITEMS = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items"
 OUT = ROOT / "minions/src/main/resources/data/skyrpg_minions/skyrpg/minions"
 FUELS = ROOT / "minions/src/main/resources/data/skyrpg_minions/skyrpg/minion_fuels"
 NEU = "NotEnoughUpdates-REPO-master/"
+CELLS = {"A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"}
 ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
 # How each minion works. "block": places that block in its area and mines it. "crop": plants on soil and harvests.
@@ -153,6 +154,25 @@ def fuels(neu, known):
     print(f"Wrote {written} minion fuels")
 
 
+def hypixel_id(neu_id, known):
+    """NEU writes damage-value items with a '-' ("INK_SACK-4"), Hypixel with a ':' ("INK_SACK:4")."""
+    colon = neu_id.replace("-", ":")
+    return colon if colon in known else neu_id
+
+
+def npc_trades(neu):
+    """What NPCs sell, by what they sell: "COBBLESTONE_GENERATOR_12" -> ["SKYBLOCK_COIN:2000000", ...]."""
+    out = {}
+    for name in neu.namelist():
+        if not name.startswith(NEU + "items/") or not name.endswith(".json"):
+            continue
+        data = json.loads(neu.read(name))
+        for recipe in data.get("recipes", []):
+            if recipe.get("type") == "npc_shop" and recipe.get("result"):
+                out.setdefault(recipe["result"].split(":")[0], recipe.get("cost", []))
+    return out
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--fetch", action="store_true", help="download wiki pages that aren't cached yet")
@@ -160,6 +180,8 @@ def main():
     neu = zipfile.ZipFile(CACHE / "neu-repo.zip")
     misc = json.loads(neu.read(NEU + "constants/misc.json"))
     by_name = item_names()
+    known = {json.loads(f.read_text(encoding="utf-8"))["skyblock_id"] for f in ITEMS.glob("*.json")}
+    trades = npc_trades(neu)
     names = {}
     for gen in misc["minions"]:
         f = ITEMS / (gen.lower() + "_1.json")
@@ -197,11 +219,30 @@ def main():
             action = next((float(re.findall(r"\d[\d,]*(?:\.\d+)?", l)[0].replace(",", "")) for l in lore if "Time Between Actions" in l), None)
             storage = next((int(re.findall(r"\d[\d,]*", l)[0].replace(",", "")) for l in lore if "Max Storage" in l), None)
             cost = {}
-            for slot, value in (item.get("recipe") or {}).items():
-                if not value or slot == "B2":
+            grid = item.get("recipe") or next((r for r in item.get("recipes", []) if r.get("type") == "crafting"), None) or {}
+            for slot, value in grid.items():
+                if slot not in CELLS or not value:
                     continue
                 part, count = value.split(":") if ":" in value else (value, "1")
-                cost[part] = cost.get(part, 0) + int(count)
+                if part == f"{gen}_{tier - 1}":
+                    continue  # the minion being upgraded
+                if "UPGRADE_STONE" in part and part in trades:
+                    # an upgrade stone an NPC sells: what the stone costs
+                    for entry in trades[part]:
+                        stone_part, _, stone_count = entry.rpartition(":") if ":" in entry else (entry, "", "1")
+                        stone_part = "COINS" if stone_part == "SKYBLOCK_COIN" else hypixel_id(stone_part, known)
+                        cost[stone_part] = cost.get(stone_part, 0) + int(float(stone_count)) * int(count)
+                    continue
+                part = hypixel_id(part, known)
+                cost[part] = cost.get(part, 0) + int(float(count))
+            if not cost and name in trades:
+                # Tier XII comes from an NPC (Bulvar, Tony...): coins, materials and the tier XI minion.
+                for entry in trades[name]:
+                    part, _, count = entry.rpartition(":") if ":" in entry else (entry, "", "1")
+                    if part == f"{gen}_{tier - 1}":
+                        continue
+                    part = "COINS" if part == "SKYBLOCK_COIN" else hypixel_id(part, known)
+                    cost[part] = cost.get(part, 0) + int(float(count))
             tiers.append({"tier": tier, "item": name, "action": action, "storage": storage, "cost": cost})
         if not drops:
             # No wiki page (newer minions): it collects the item it's named after.
@@ -214,7 +255,7 @@ def main():
         (OUT / (minion.lower() + ".json")).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
         written += 1
     print(f"Wrote {written} minions to {OUT.relative_to(ROOT)}")
-    fuels(neu, {json.loads(f.read_text(encoding="utf-8"))["skyblock_id"] for f in ITEMS.glob("*.json")})
+    fuels(neu, known)
 
 
 if __name__ == "__main__":

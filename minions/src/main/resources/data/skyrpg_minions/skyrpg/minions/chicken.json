@@ -31,7 +31,8 @@
    "action": 26.0,
    "storage": 192,
    "cost": {
-    "RAW_CHICKEN": 64
+    "RAW_CHICKEN": 64,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -129,7 +130,10 @@
    "item": "CHICKEN_GENERATOR_12",
    "action": 12.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_RAW_CHICKEN": 1024
+   }
   }
  ]
 }

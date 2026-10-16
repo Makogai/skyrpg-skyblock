@@ -19,7 +19,8 @@
    "action": 14.0,
    "storage": 64,
    "cost": {
-    "HARD_STONE": 256
+    "HARD_STONE": 256,
+    "WOOD_PICKAXE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "HARD_STONE_GENERATOR_12",
    "action": 6.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "COINS": 2000000,
+    "CONCENTRATED_STONE": 16
+   }
   }
  ]
 }

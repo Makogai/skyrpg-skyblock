@@ -19,7 +19,8 @@
    "action": 33.0,
    "storage": 64,
    "cost": {
-    "BLAZE_ROD": 80
+    "BLAZE_ROD": 80,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "BLAZE_GENERATOR_12",
    "action": 15.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_BLAZE_ROD": 16,
+    "COINS": 2000000
+   }
   }
  ]
 }

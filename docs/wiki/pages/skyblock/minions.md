@@ -34,7 +34,7 @@ Right-click your minion to open it:
 - **The minion** turning on its stand, with a bar that fills up to its next action and a countdown.
 - Its **speed** (time between actions) and how much it has **generated** in total.
 - Its **storage**. Higher tiers hold more, and the locked slots show how much room the next tiers add. Click an item to take it, or use **Collect All**.
-- **Upgrade**: what the next tier costs (the items from its Hypixel recipe), in green when you have enough. A higher tier works faster and holds more.
+- **Upgrade**: what the next tier costs (the items from its Hypixel recipe), in green when you have enough. A higher tier works faster and holds more. Tier XII is a trade on Hypixel (Bulvar in the Dwarven Mines for mining minions, Tony for farming ones...): coins and materials, for example 2,000,000 coins and 1,024 Enchanted Cobblestone. Until those NPCs are in, the Upgrade button does the trade. Snow and Ice XII need North Stars and farming XII need Pelts, which aren't in the game yet.
 - **Pick Up**: puts the minion back in your inventory, with everything it had collected.
 - **Fuel, shipping and upgrades**: four slots under the storage, explained below. Shift-click an item from your inventory and it goes into the slot it belongs in.
 

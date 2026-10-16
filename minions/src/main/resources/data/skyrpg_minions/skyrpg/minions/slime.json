@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "SLIME_BALL": 80
+    "SLIME_BALL": 80,
+    "WOOD_SWORD": 1
    }
   },
   {

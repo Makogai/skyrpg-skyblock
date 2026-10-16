@@ -19,7 +19,8 @@
    "action": 24.0,
    "storage": 64,
    "cost": {
-    "MELON": 256
+    "MELON": 256,
+    "WOOD_HOE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "MELON_GENERATOR_12",
    "action": 10.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SKYBLOCK_PELT": 75,
+    "ENCHANTED_MELON_BLOCK": 32
+   }
   }
  ]
 }

@@ -1,5 +1,6 @@
 package com.skyrpg.skyblock.recipe;
 
+import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
@@ -91,8 +92,22 @@ public final class Crafting {
         });
     }
 
-    /** Gives what a craft made (unique items one by one, the rest in stacks) and tells {@link #CRAFTED}. */
-    static void give(ServerPlayer player, ItemDefinition output, int made) {
+    /** Carpentry XP for a craft: 3% of what its ingredients sell for to an NPC, as on Hypixel. */
+    public static final double CARPENTRY_SHARE = 0.03;
+
+    /**
+     * Gives what {@code times} crafts of the recipe made (unique items one by one, the rest in stacks), the Carpentry XP
+     * they earn, and tells {@link #CRAFTED}.
+     */
+    static void give(ServerPlayer player, ItemDefinition output, Recipes.Recipe recipe, int times) {
+        int made = recipe.count() * times;
+        double worth = 0;
+        for (Map.Entry<String, Integer> need : recipe.ingredients().entrySet()) {
+            worth += SkyStacks.npcPrice(need.getKey()) * need.getValue();
+        }
+        if (worth > 0) {
+            SkillLevels.giveXpQuietly(player, SkillLevels.CARPENTRY, worth * times * CARPENTRY_SHARE);
+        }
         CRAFTED.invoker().onCrafted(player, output.skyblockId(), made);
         boolean unique = SkyItems.unstackable(output);
         int left = made;
@@ -136,7 +151,7 @@ public final class Crafting {
         for (Map.Entry<String, Integer> need : recipe.ingredients().entrySet()) {
             SkyStacks.take(inventory, need.getKey(), need.getValue() * times);
         }
-        give(player, output, recipe.count() * times);
+        give(player, output, recipe, times);
         player.containerMenu.broadcastChanges();
         player.level().playSound(null, player.blockPosition(), SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.PLAYERS, 0.6f, 1.2f);
         player.sendOverlayMessage(Component.literal("Crafted " + recipe.count() * times + "x ").withStyle(ChatFormatting.GREEN)

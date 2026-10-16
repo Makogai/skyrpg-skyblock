@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "ENDER_STONE": 80
+    "ENDER_STONE": 80,
+    "WOOD_PICKAXE": 1
    }
   },
   {

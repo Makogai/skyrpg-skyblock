@@ -25,7 +25,8 @@
    "action": 29.0,
    "storage": 64,
    "cost": {
-    "REVENANT_FLESH": 80
+    "REVENANT_FLESH": 80,
+    "CRYSTALLIZED_HEART": 1
    }
   },
   {
@@ -134,7 +135,8 @@
    "action": 8.0,
    "storage": 960,
    "cost": {
-    "REVENANT_GENERATOR_11": 1
+    "COINS": 2000000,
+    "REVENANT_VISCERA": 64
    }
   }
  ]

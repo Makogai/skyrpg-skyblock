@@ -19,7 +19,8 @@
    "action": 50.0,
    "storage": 64,
    "cost": {
-    "GHAST_TEAR": 64
+    "GHAST_TEAR": 64,
+    "WOOD_SWORD": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "GHAST_GENERATOR_12",
    "action": 30.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "SILVER_FANG": 1024,
+    "COINS": 2000000
+   }
   }
  ]
 }

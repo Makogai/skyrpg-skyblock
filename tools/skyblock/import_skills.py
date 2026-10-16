@@ -39,7 +39,7 @@ SKILLS = {
     "mining": ("Mining", "aqua", "minecraft:stone_pickaxe", 60, "Spelunker", {"mining_fortune": 4}, "",
                {"defense": brackets((1, 14, 1), (15, 60, 2))},
                "Mine stone and ores. Rarer ores give more XP."),
-    "combat": ("Combat", "red", "minecraft:stone_sword", 60, "Warrior", {}, "+4% damage to mobs",
+    "combat": ("Combat", "red", "minecraft:stone_sword", 60, "Warrior", {}, "+4% damage to mobs a level (+1% after 50)",
                {"crit_chance": brackets((1, 60, 0.5))},
                "Kill mobs."),
     "foraging": ("Foraging", "dark_green", "minecraft:jungle_sapling", 50, "Logger", {"foraging_fortune": 4}, "",

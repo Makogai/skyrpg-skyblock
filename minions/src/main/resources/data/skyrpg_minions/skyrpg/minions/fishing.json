@@ -54,7 +54,8 @@
    "action": 75.0,
    "storage": 640,
    "cost": {
-    "RAW_FISH": 64
+    "RAW_FISH": 64,
+    "FISHING_ROD": 1
    }
   },
   {
@@ -153,7 +154,9 @@
    "action": 30.0,
    "storage": 960,
    "cost": {
-    "GENERATOR_UPGRADE_STONE_FISHING_12": 1
+    "ENCHANTED_COOKED_FISH": 16,
+    "COINS": 2000000,
+    "FISHY_TREAT": 256
    }
   }
  ]

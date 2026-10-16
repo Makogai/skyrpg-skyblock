@@ -19,7 +19,8 @@
    "action": 26.0,
    "storage": 64,
    "cost": {
-    "MYCEL": 80
+    "MYCEL": 80,
+    "WOOD_SPADE": 1
    }
   },
   {
@@ -117,7 +118,10 @@
    "item": "MYCELIUM_GENERATOR_12",
    "action": 11.0,
    "storage": 960,
-   "cost": {}
+   "cost": {
+    "ENCHANTED_MYCELIUM_CUBE": 32,
+    "COINS": 2000000
+   }
   }
  ]
 }

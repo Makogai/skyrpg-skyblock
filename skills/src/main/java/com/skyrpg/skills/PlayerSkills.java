@@ -96,7 +96,9 @@ public final class PlayerSkills {
         String progress = newLevel >= skill.maxLevel()
                 ? "MAX"
                 : Msg.number(skill.xpIntoLevel(after)) + "/" + Msg.number(skill.xpForNextLevel(newLevel));
-        player.sendOverlayMessage(Msg.text("+" + Msg.number(amount) + " " + skill.name() + " (" + progress + ")", ChatFormatting.DARK_AQUA));
+        if (!SkillLevels.quiet()) {
+            player.sendOverlayMessage(Msg.text("+" + Msg.number(amount) + " " + skill.name() + " (" + progress + ")", ChatFormatting.DARK_AQUA));
+        }
 
         SkillEvents.XP_GAINED.invoker().onXpGained(player, skill, amount, after);
         if (newLevel > oldLevel) {
