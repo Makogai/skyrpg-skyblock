@@ -1,0 +1,11 @@
+{
+ "name": "Sawyer",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "FORAGING_FORTUNE_BOOSTER",
+   "count": 1,
+   "coins": 50000
+  }
+ ]
+}

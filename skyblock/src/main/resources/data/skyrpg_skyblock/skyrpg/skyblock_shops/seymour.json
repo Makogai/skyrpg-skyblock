@@ -1,0 +1,51 @@
+{
+ "name": "Seymour",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "CHEAP_TUXEDO_CHESTPLATE",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "CHEAP_TUXEDO_LEGGINGS",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "CHEAP_TUXEDO_BOOTS",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "FANCY_TUXEDO_CHESTPLATE",
+   "count": 1,
+   "coins": 6666666
+  },
+  {
+   "item": "FANCY_TUXEDO_LEGGINGS",
+   "count": 1,
+   "coins": 6666666
+  },
+  {
+   "item": "FANCY_TUXEDO_BOOTS",
+   "count": 1,
+   "coins": 6666666
+  },
+  {
+   "item": "ELEGANT_TUXEDO_CHESTPLATE",
+   "count": 1,
+   "coins": 24999999
+  },
+  {
+   "item": "ELEGANT_TUXEDO_LEGGINGS",
+   "count": 1,
+   "coins": 24999999
+  },
+  {
+   "item": "ELEGANT_TUXEDO_BOOTS",
+   "count": 1,
+   "coins": 24999999
+  }
+ ]
+}

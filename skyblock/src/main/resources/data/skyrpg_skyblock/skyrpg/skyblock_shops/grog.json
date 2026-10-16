@@ -1,0 +1,29 @@
+{
+ "name": "Grog",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "HOT_CHOCOLATE",
+   "count": 1,
+   "coins": 70000
+  },
+  {
+   "item": "BLACK_COFFEE",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "RED_THORNLEAF_TEA",
+   "count": 1,
+   "coins": 20000,
+   "costs": {
+    "RED_THORNLEAF": 50
+   }
+  },
+  {
+   "item": "SCORNCLAW_BREW",
+   "count": 1,
+   "coins": 2000
+  }
+ ]
+}

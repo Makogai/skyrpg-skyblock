@@ -1,6 +1,6 @@
 {
-  "name": "Kestrel Vane",
-  "role": "Combat Master",
+  "name": "Weaponsmith",
+  "role": "Merchant",
   "color": "#FF5C5C",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/weaponsmith",
@@ -14,16 +14,13 @@
   "yaw": 0.0,
   "sound": "minecraft:entity.villager.work_weaponsmith",
   "greetings": [
-    "The further you roam from spawn, the tougher they get. Bring me their Valor Marks.",
-    "A Dread Fang? Now that's worth something. Level ten and up, they say.",
-    "Want to see what you hit for? Try one of my Training Dummies.",
-    "Elites glitter. Run, or bring friends. Or both.",
-    "Steel's only half of it. The other half is knowing when to back off."
+    "You'll want a proper weapon out there.",
+    "Swords and bows, sharp and ready."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:weaponsmith"
+      "shop": "weaponsmith"
     }
   }
 }

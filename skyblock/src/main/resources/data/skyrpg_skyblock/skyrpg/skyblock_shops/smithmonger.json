@@ -1,0 +1,31 @@
+{
+ "name": "Smithmonger",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "MOIL_LOG",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "DIRT_BOTTLE",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "TOIL_LOG",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "REFINED_AMBER",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "BLESSED_FRUIT",
+   "count": 1,
+   "coins": 1000000
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "name": "Moby",
+ "island": "farming_1",
+ "offers": [
+  {
+   "item": "EMPTY_CHUM_BUCKET",
+   "count": 1,
+   "coins": 2000,
+   "costs": {
+    "GLOWING_MUSHROOM": 8
+   }
+  },
+  {
+   "item": "GLOWY_CHUM_BAIT",
+   "count": 16,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 1,
+    "GLOWING_MUSHROOM": 4
+   }
+  },
+  {
+   "item": "LUMINOUS_BRACELET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 2,
+    "GLOWING_MUSHROOM": 10
+   }
+  },
+  {
+   "item": "CHUM_SINKER",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 4,
+    "GLOWING_MUSHROOM": 15
+   }
+  },
+  {
+   "item": "MOBYS_SHEARS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 5,
+    "GLOWING_MUSHROOM": 15
+   }
+  },
+  {
+   "item": "MUSHED_MUSHROOM_MIXIN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 64,
+    "GLOWING_MUSHROOM": 80
+   }
+  },
+  {
+   "item": "CHUMMING_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 32
+   }
+  },
+  {
+   "item": "GLOWING_MUSHROOM_CAVE_TRAVEL_SCROLL",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FULL_CHUM_BUCKET": 64,
+    "GLOWING_MUSHROOM": 32
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "name": "The Lotus Eater",
+ "island": "lotus_atoll",
+ "offers": [
+  {
+   "item": "GENERATOR_UPGRADE_STONE_LILY_PAD_12",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "LOTUS_DIAMOND": 1
+   }
+  }
+ ]
+}

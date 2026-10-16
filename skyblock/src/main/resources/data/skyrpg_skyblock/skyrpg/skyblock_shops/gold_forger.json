@@ -1,0 +1,51 @@
+{
+ "name": "Gold Forger",
+ "island": "mining_1",
+ "offers": [
+  {
+   "item": "GOLD_INGOT",
+   "count": 20,
+   "coins": 110
+  },
+  {
+   "item": "GOLD_HELMET",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "GOLD_CHESTPLATE",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "GOLD_LEGGINGS",
+   "count": 1,
+   "coins": 14
+  },
+  {
+   "item": "GOLD_BOOTS",
+   "count": 1,
+   "coins": 9
+  },
+  {
+   "item": "FANCY_SWORD",
+   "count": 1,
+   "coins": 80
+  },
+  {
+   "item": "GOLD_SPADE",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "GOLD_PICKAXE",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "GOLD_AXE",
+   "count": 1,
+   "coins": 10
+  }
+ ]
+}

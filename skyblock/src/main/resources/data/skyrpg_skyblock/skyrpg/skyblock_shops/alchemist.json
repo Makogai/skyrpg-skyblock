@@ -1,0 +1,66 @@
+{
+ "name": "Alchemist",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "NETHER_STALK",
+   "count": 1,
+   "coins": 30
+  },
+  {
+   "item": "BREWING_STAND_ITEM",
+   "count": 1,
+   "coins": 30
+  },
+  {
+   "item": "GLASS_BOTTLE",
+   "count": 8,
+   "coins": 50
+  },
+  {
+   "item": "POTION",
+   "count": 1,
+   "coins": 6
+  },
+  {
+   "item": "SUGAR",
+   "count": 1,
+   "coins": 4
+  },
+  {
+   "item": "RABBIT_FOOT",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "SPECKLED_MELON",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "SPIDER_EYE",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "BLAZE_POWDER",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "GHAST_TEAR",
+   "count": 1,
+   "coins": 200
+  },
+  {
+   "item": "MAGMA_CREAM",
+   "count": 1,
+   "coins": 20
+  },
+  {
+   "item": "GOLDEN_CARROT",
+   "count": 1,
+   "coins": 30
+  }
+ ]
+}

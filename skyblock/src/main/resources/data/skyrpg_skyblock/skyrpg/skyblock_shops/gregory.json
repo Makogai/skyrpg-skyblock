@@ -1,0 +1,16 @@
+{
+ "name": "Gregory",
+ "island": "combat_3",
+ "offers": [
+  {
+   "item": "ARROW",
+   "count": 20,
+   "coins": 240
+  },
+  {
+   "item": "DECENT_BOW",
+   "count": 1,
+   "coins": 500
+  }
+ ]
+}

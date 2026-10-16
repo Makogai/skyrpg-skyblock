@@ -1,0 +1,40 @@
+{
+ "name": "Terry",
+ "island": "winter",
+ "offers": [
+  {
+   "item": "SALT_CUBE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ICE_HUNK": 64
+   }
+  },
+  {
+   "item": "RUSTY_ANCHOR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BLUE_ICE_HUNK": 64
+   }
+  },
+  {
+   "item": "TERRY_SNOWGLOBE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ICE_HUNK": 32,
+    "BLUE_ICE_HUNK": 8
+   }
+  },
+  {
+   "item": "FROZEN_BAUBLE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ICE_HUNK": 64,
+    "BLUE_ICE_HUNK": 32
+   }
+  }
+ ]
+}

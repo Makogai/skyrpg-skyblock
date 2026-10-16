@@ -1,0 +1,56 @@
+{
+ "name": "Maxim",
+ "island": "foraging_3",
+ "offers": [
+  {
+   "item": "SWEEP_BOOSTER_UNCOMMON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FIGSTONE": 1,
+    "MANGCORE": 1,
+    "HELIXIS": 1
+   }
+  },
+  {
+   "item": "FIGHTING_BOOSTER_UNCOMMON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FIGSTONE": 1,
+    "MANGCORE": 1,
+    "HELIXIS": 1
+   }
+  },
+  {
+   "item": "FORAGING_FORTUNE_BOOSTER_UNCOMMON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FIGSTONE": 1,
+    "MANGCORE": 1,
+    "HELIXIS": 1
+   }
+  },
+  {
+   "item": "FORAGING_WISDOM_BOOSTER_UNCOMMON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FIGSTONE": 1,
+    "MANGCORE": 1,
+    "HELIXIS": 1
+   }
+  },
+  {
+   "item": "HUNTING_WISDOM_BOOSTER_UNCOMMON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FIGSTONE": 1,
+    "MANGCORE": 1,
+    "HELIXIS": 1
+   }
+  }
+ ]
+}

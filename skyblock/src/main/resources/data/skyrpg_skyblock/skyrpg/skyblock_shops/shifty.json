@@ -1,0 +1,21 @@
+{
+ "name": "Shifty",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "TUTTI_FRUTTI_POISON",
+   "count": 1,
+   "coins": 850
+  },
+  {
+   "item": "DR_PAPER",
+   "count": 1,
+   "coins": 3400
+  },
+  {
+   "item": "SLAYER_ENERGY_DRINK",
+   "count": 1,
+   "coins": 8500
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "name": "Researcher Ribery",
+ "island": "lotus_atoll",
+ "offers": [
+  {
+   "item": "FISHING_ROD",
+   "count": 1,
+   "coins": 20
+  },
+  {
+   "item": "BRONZE_TROPHY_FROG_SACK",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "APPLICANT_STATEMENT",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "STUDENT_STUDIES",
+   "count": 1,
+   "coins": 250000
+  },
+  {
+   "item": "MASTER_THESIS",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "PHD_GRIMOIRE",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "LOTUS_ATOLL_TRAVEL_SCROLL",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "SILVER_TROPHY_FROG_SACK",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "RIBBIT_THE_FISH",
+   "count": 1,
+   "coins": 1000000
+  }
+ ]
+}

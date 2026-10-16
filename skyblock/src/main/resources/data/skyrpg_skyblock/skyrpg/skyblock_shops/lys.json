@@ -1,0 +1,96 @@
+{
+ "name": "Lys",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "LAMP_BLACK",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_GRAY",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_LIGHT_GRAY",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_WHITE",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_BROWN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_ORANGE",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_RED",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_YELLOW",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_PURPLE",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_MAGENTA",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_LILAC",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_PINK",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_GREEN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_LIME",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_BLUE",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_CYAN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_LIGHT_BLUE",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "LAMP_RAINBOW",
+   "count": 1,
+   "coins": 250000
+  }
+ ]
+}

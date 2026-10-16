@@ -1,0 +1,97 @@
+{
+ "name": "Lukas the Aquarist",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "FROZEN_AMULET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 256
+   }
+  },
+  {
+   "item": "SEAL_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 128
+   }
+  },
+  {
+   "item": "SEAL_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SEAL_TALISMAN": 1,
+    "FISHY_TREAT": 256
+   }
+  },
+  {
+   "item": "SEAL_TREAT_BAG",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 16
+   }
+  },
+  {
+   "item": "GENERATOR_UPGRADE_STONE_FISHING_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_COOKED_FISH": 16,
+    "FISHY_TREAT": 256
+   }
+  },
+  {
+   "item": "GENERATOR_UPGRADE_STONE_CLAY_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_CLAY_BLOCK": 8,
+    "FISHY_TREAT": 256
+   }
+  },
+  {
+   "item": "SEAL_PERSONALITY",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 128
+   }
+  },
+  {
+   "item": "SMALL_SEAL_PLUSHIE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 64
+   }
+  },
+  {
+   "item": "MEDIUM_SEAL_PLUSHIE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 128
+   }
+  },
+  {
+   "item": "LARGE_SEAL_PLUSHIE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 256
+   }
+  },
+  {
+   "item": "GIANT_SEAL_PLUSHIE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHY_TREAT": 512
+   }
+  }
+ ]
+}

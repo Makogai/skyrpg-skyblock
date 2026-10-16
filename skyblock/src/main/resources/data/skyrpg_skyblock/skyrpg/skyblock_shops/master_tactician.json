@@ -1,0 +1,24 @@
+{
+ "name": "Master Tactician",
+ "island": "foraging_1",
+ "offers": [
+  {
+   "item": "TACTICIAN_SWORD",
+   "count": 1,
+   "coins": 35000
+  },
+  {
+   "item": "WOOD_SINGULARITY",
+   "count": 1,
+   "coins": 1464000,
+   "costs": {
+    "ENCHANTED_OAK_LOG": 320,
+    "ENCHANTED_SPRUCE_LOG": 320,
+    "ENCHANTED_BIRCH_LOG": 320,
+    "ENCHANTED_DARK_OAK_LOG": 320,
+    "ENCHANTED_ACACIA_LOG": 320,
+    "ENCHANTED_JUNGLE_LOG": 320
+   }
+  }
+ ]
+}

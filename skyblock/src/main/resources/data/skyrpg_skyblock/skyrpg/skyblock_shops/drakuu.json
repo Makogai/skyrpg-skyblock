@@ -1,0 +1,16 @@
+{
+ "name": "Drakuu",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "KUUDRA_FOLLOWER_ARTIFACT",
+   "count": 1,
+   "coins": 100000000,
+   "costs": {
+    "ENCHANTED_MYCELIUM": 1024,
+    "ENCHANTED_RED_SAND": 1024,
+    "KUUDRA_TEETH": 64
+   }
+  }
+ ]
+}

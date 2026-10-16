@@ -1,0 +1,61 @@
+{
+ "name": "Udel",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "ABIPHONE_X_PLUS",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "ABIPHONE_X_PLUS_SPECIAL_EDITION",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "ABIPHONE_XI_ULTRA",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "ABIPHONE_XI_ULTRA_STYLE",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "ABIPHONE_XII_MEGA",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "ABIPHONE_XII_MEGA_COLOR",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "ABIPHONE_XIII_PRO",
+   "count": 1,
+   "coins": 5000000
+  },
+  {
+   "item": "ABIPHONE_XIII_PRO_GIGA",
+   "count": 1,
+   "coins": 5000000
+  },
+  {
+   "item": "ABIPHONE_XIV_ENORMOUS_BLACK",
+   "count": 1,
+   "coins": 25000000
+  },
+  {
+   "item": "ABIPHONE_XIV_ENORMOUS",
+   "count": 1,
+   "coins": 25000000
+  },
+  {
+   "item": "ABIPHONE_XIV_ENORMOUS_PURPLE",
+   "count": 1,
+   "coins": 25000000
+  }
+ ]
+}

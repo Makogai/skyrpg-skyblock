@@ -1,0 +1,71 @@
+{
+ "name": "Mad Redstone Engineer",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "REDSTONE_TORCH_ON",
+   "count": 1,
+   "coins": 2
+  },
+  {
+   "item": "REDSTONE",
+   "count": 1,
+   "coins": 4
+  },
+  {
+   "item": "DAYLIGHT_DETECTOR",
+   "count": 1,
+   "coins": 18
+  },
+  {
+   "item": "WOOD_PLATE",
+   "count": 1,
+   "coins": 2
+  },
+  {
+   "item": "STONE_PLATE",
+   "count": 1,
+   "coins": 4
+  },
+  {
+   "item": "IRON_PLATE",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "GOLD_PLATE",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "LEVER",
+   "count": 1,
+   "coins": 2
+  },
+  {
+   "item": "REDSTONE_COMPARATOR",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "DIODE",
+   "count": 1,
+   "coins": 6
+  },
+  {
+   "item": "TRIPWIRE_HOOK",
+   "count": 1,
+   "coins": 4
+  },
+  {
+   "item": "TNT",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "HOPPER",
+   "count": 1,
+   "coins": 50
+  }
+ ]
+}

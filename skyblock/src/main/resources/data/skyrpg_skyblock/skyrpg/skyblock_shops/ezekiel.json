@@ -1,0 +1,32 @@
+{
+ "name": "Ezekiel",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "HOT_CHOCOLATE",
+   "count": 1,
+   "coins": 70000
+  },
+  {
+   "item": "BLACK_COFFEE",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "MARSH_SPORE_SOUP",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "MUSHROOM_SPORE": 5
+   }
+  },
+  {
+   "item": "SCARLETON_PREMIUM",
+   "count": 1,
+   "coins": 20000,
+   "costs": {
+    "MUSHROOM_SPORE": 50
+   }
+  }
+ ]
+}

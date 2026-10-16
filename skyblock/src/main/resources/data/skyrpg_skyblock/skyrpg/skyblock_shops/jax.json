@@ -1,0 +1,96 @@
+{
+ "name": "Jax",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "ARROW_SWAPPER",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "ARROW",
+   "count": 64,
+   "coins": 320
+  },
+  {
+   "item": "REINFORCED_IRON_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_IRON": 1
+   }
+  },
+  {
+   "item": "GOLD_TIPPED_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_GOLD": 1
+   }
+  },
+  {
+   "item": "REDSTONE_TIPPED_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_REDSTONE": 1
+   }
+  },
+  {
+   "item": "EMERALD_TIPPED_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_EMERALD": 1
+   }
+  },
+  {
+   "item": "BOUNCY_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_SLIME_BALL": 2
+   }
+  },
+  {
+   "item": "ICY_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_ICE": 2
+   }
+  },
+  {
+   "item": "ARMORSHRED_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_SAND": 2
+   }
+  },
+  {
+   "item": "EXPLOSIVE_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_GUNPOWDER": 2
+   }
+  },
+  {
+   "item": "GLUE_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_STRING": 2
+   }
+  },
+  {
+   "item": "NANSORB_ARROW",
+   "count": 64,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_CACTUS_GREEN": 7
+   }
+  }
+ ]
+}

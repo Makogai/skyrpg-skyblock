@@ -1,0 +1,61 @@
+{
+ "name": "Fishing Merchant",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "FISHING_ROD",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "DIAMOND_SWORD",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "MINNOW_BAIT",
+   "count": 1,
+   "coins": 15
+  },
+  {
+   "item": "ANGLER_HELMET",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_CHESTPLATE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_LEGGINGS",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_BOOTS",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_NECKLACE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_CLOAK",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_BRACELET",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ANGLER_BELT",
+   "count": 1,
+   "coins": 100
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "name": "Miria",
+ "island": "foraging_3",
+ "offers": [
+  {
+   "item": "SMALL_SLOTH_CLAW",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 30
+   }
+  },
+  {
+   "item": "MEDIUM_SLOTH_CLAW",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 40
+   }
+  },
+  {
+   "item": "LARGE_SLOTH_CLAW",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 50
+   }
+  },
+  {
+   "item": "GIANT_SLOTH_CLAW",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 60
+   }
+  },
+  {
+   "item": "TORRHUS_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 30
+   }
+  },
+  {
+   "item": "TORRHUS_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 30,
+    "TORRHUS_TALISMAN": 1
+   }
+  },
+  {
+   "item": "TORRHUS_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 30,
+    "TORRHUS_RING": 1
+   }
+  },
+  {
+   "item": "EXTREMELY_MILD_ADHESIVE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 100
+   }
+  },
+  {
+   "item": "RUBBER_SNORKEL",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 125
+   }
+  },
+  {
+   "item": "WINDING_IVY",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_COUPON": 250
+   }
+  },
+  {
+   "item": "VIAL_OF_SPRING_WATER",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MIRIA_PRIZE": 10
+   }
+  }
+ ]
+}

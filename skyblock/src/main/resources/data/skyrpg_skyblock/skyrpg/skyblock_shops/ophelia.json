@@ -1,0 +1,137 @@
+{
+ "name": "Ophelia",
+ "island": "dungeon_hub",
+ "offers": [
+  {
+   "item": "SUPER_CLEAVER",
+   "count": 1,
+   "coins": 80000,
+   "costs": {
+    "CLEAVER": 1
+   }
+  },
+  {
+   "item": "HYPER_CLEAVER",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "SUPER_CLEAVER": 1
+   }
+  },
+  {
+   "item": "GIANT_CLEAVER",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "HYPER_CLEAVER": 1
+   }
+  },
+  {
+   "item": "UNDEAD_BOW",
+   "count": 1,
+   "coins": 80000
+  },
+  {
+   "item": "SUPER_UNDEAD_BOW",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "UNDEAD_BOW": 1
+   }
+  },
+  {
+   "item": "DEATH_BOW",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "SUPER_UNDEAD_BOW": 1
+   }
+  },
+  {
+   "item": "ARROW",
+   "count": 20,
+   "coins": 200
+  },
+  {
+   "item": "DARK_GOGGLES",
+   "count": 1,
+   "coins": 80000
+  },
+  {
+   "item": "SHADOW_GOGGLES",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "DARK_GOGGLES": 1
+   }
+  },
+  {
+   "item": "WITHER_GOGGLES",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "SHADOW_GOGGLES": 1
+   }
+  },
+  {
+   "item": "MENDER_HELMET",
+   "count": 1,
+   "coins": 80000
+  },
+  {
+   "item": "MENDER_FEDORA",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "MENDER_HELMET": 1
+   }
+  },
+  {
+   "item": "MENDER_CROWN",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "MENDER_FEDORA": 1
+   }
+  },
+  {
+   "item": "SUPERBOOM_TNT",
+   "count": 1,
+   "coins": 3000
+  },
+  {
+   "item": "STONE_CHESTPLATE",
+   "count": 1,
+   "coins": 80000
+  },
+  {
+   "item": "METAL_CHESTPLATE",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "STONE_CHESTPLATE": 1
+   }
+  },
+  {
+   "item": "STEEL_CHESTPLATE",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "METAL_CHESTPLATE": 1
+   }
+  },
+  {
+   "item": "STONE_CHESTPLATE",
+   "count": 1,
+   "coins": 80000
+  },
+  {
+   "item": "METAL_CHESTPLATE",
+   "count": 1,
+   "coins": 800000,
+   "costs": {
+    "STONE_CHESTPLATE": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "Albert",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "SMALL_POCKET_BLACK_HOLE",
+   "count": 1,
+   "coins": 100000,
+   "costs": {
+    "FIG_LOG": 64
+   }
+  },
+  {
+   "item": "MEDIUM_POCKET_BLACK_HOLE",
+   "count": 1,
+   "coins": 1000000,
+   "costs": {
+    "ENCHANTED_MANGROVE_LOG": 64,
+    "ENCHANTED_OBSIDIAN": 64,
+    "SMALL_POCKET_BLACK_HOLE": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "name": "David Hunterborough",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "HUNTING_TOOLKIT",
+   "count": 1,
+   "coins": 1000000
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "name": "Grumblefoot",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "HUB_WIZARD_TOWER_TRAVEL_SCROLL",
+   "count": 1,
+   "coins": 11111
+  }
+ ]
+}

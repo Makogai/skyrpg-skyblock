@@ -1,0 +1,121 @@
+{
+ "name": "Odger",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "ODGERS_BRONZE_TOOTH",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "BRONZE_HUNTER_HELMET",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "BRONZE_HUNTER_CHESTPLATE",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "BRONZE_HUNTER_LEGGINGS",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "BRONZE_HUNTER_BOOTS",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "STARTER_LAVA_ROD",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "ODGERS_SILVER_TOOTH",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "SILVER_HUNTER_HELMET",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "SILVER_HUNTER_CHESTPLATE",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "SILVER_HUNTER_LEGGINGS",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "SILVER_HUNTER_BOOTS",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "BRONZE_TROPHY_FISHING_SACK",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "ODGERS_GOLD_TOOTH",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "GOLD_HUNTER_HELMET",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "GOLD_HUNTER_CHESTPLATE",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "GOLD_HUNTER_LEGGINGS",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "GOLD_HUNTER_BOOTS",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "SILVER_TROPHY_FISHING_SACK",
+   "count": 1,
+   "coins": 5000000
+  },
+  {
+   "item": "ODGERS_DIAMOND_TOOTH",
+   "count": 1,
+   "coins": 2500000
+  },
+  {
+   "item": "DIAMOND_HUNTER_HELMET",
+   "count": 1,
+   "coins": 2500000
+  },
+  {
+   "item": "DIAMOND_HUNTER_CHESTPLATE",
+   "count": 1,
+   "coins": 2500000
+  },
+  {
+   "item": "DIAMOND_HUNTER_LEGGINGS",
+   "count": 1,
+   "coins": 2500000
+  },
+  {
+   "item": "DIAMOND_HUNTER_BOOTS",
+   "count": 1,
+   "coins": 2500000
+  }
+ ]
+}

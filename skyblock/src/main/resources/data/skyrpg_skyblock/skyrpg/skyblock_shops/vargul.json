@@ -1,0 +1,30 @@
+{
+ "name": "Vargul",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SCARE_FRAGMENT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "DARK_CANDY": 10
+   }
+  },
+  {
+   "item": "EXPIRED_PUMPKIN",
+   "count": 30,
+   "coins": 0,
+   "costs": {
+    "DARK_CANDY": 1
+   }
+  },
+  {
+   "item": "BLACK_WOOLEN_YARN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "DARK_CANDY": 100
+   }
+  }
+ ]
+}

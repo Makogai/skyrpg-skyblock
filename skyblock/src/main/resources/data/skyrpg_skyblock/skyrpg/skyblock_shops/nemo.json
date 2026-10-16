@@ -1,0 +1,26 @@
+{
+ "name": "Nemo",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "SNORKELING_HELMET",
+   "count": 1,
+   "coins": 48500
+  },
+  {
+   "item": "SNORKELING_CHESTPLATE",
+   "count": 1,
+   "coins": 77600
+  },
+  {
+   "item": "SNORKELING_LEGGINGS",
+   "count": 1,
+   "coins": 67900
+  },
+  {
+   "item": "SNORKELING_BOOTS",
+   "count": 1,
+   "coins": 38800
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "name": "Librarian",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "EXP_BOTTLE",
+   "count": 1,
+   "coins": 30
+  },
+  {
+   "item": "BOOK",
+   "count": 1,
+   "coins": 20
+  }
+ ]
+}

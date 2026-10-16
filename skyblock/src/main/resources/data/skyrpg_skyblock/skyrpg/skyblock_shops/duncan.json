@@ -1,0 +1,11 @@
+{
+ "name": "Duncan",
+ "island": "",
+ "offers": [
+  {
+   "item": "PET_ITEM_FARMING_SKILL_BOOST_EPIC",
+   "count": 1,
+   "coins": 1500000
+  }
+ ]
+}

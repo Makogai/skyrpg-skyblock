@@ -1,0 +1,26 @@
+{
+ "name": "Brynmor",
+ "island": "mining_3",
+ "offers": [
+  {
+   "item": "MINING_PUMPKIN",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "FILET_O_FORTUNE",
+   "count": 1,
+   "coins": 100000
+  },
+  {
+   "item": "CHILLED_PRISTINE_POTATO",
+   "count": 1,
+   "coins": 250000
+  },
+  {
+   "item": "FIESTA_FLASK",
+   "count": 1,
+   "coins": 2500000
+  }
+ ]
+}

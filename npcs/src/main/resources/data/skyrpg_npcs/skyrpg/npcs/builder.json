@@ -1,6 +1,6 @@
 {
-  "name": "Petra Quarrystone",
-  "role": "Builder",
+  "name": "Wool Weaver",
+  "role": "Merchant",
   "color": "#A7B4C2",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/builder",
@@ -14,15 +14,13 @@
   "yaw": 330.0,
   "sound": "minecraft:entity.villager.work_mason",
   "greetings": [
-    "Measure twice, place once. Need blocks?",
-    "Every great hall started as one honest brick.",
-    "Stone, wood, glass. Name it and I'll have it stacked.",
-    "Careful where you dig. That's load-bearing dirt."
+    "Wool, glass and clay in every colour.",
+    "Building something? Pick your colours."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:builder"
+      "shop": "wool_weaver"
     }
   }
 }

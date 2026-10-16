@@ -93,6 +93,13 @@ phase so the next session can pick up where this one stopped.
       minions use it too). Survival Delving and the enchants mod's own Enchanting definition are gone. Not yet:
       Warrior's +4% damage (no such stat), XP sources for Alchemy / Taming / Carpentry, Runecrafting and Social.
 - [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
+- [x] **NPC shops**: `tools/skyblock/import_shops.py` writes NEU's 88 shops (684 offers; offers with enchanted books,
+      Bits, Gems, North Stars... left out) to `skyrpg/skyblock_shops`; `SkyShops` + `ShopMenu` + `ShopScreen`: buy
+      (shift = a stack), sell any stack with an NPC price by clicking it, buyback of the last 9 sales (until logout).
+      NPC action `skyblock_shop`; `/sbshop [id]` for admins. The Hub's survival NPCs became Hypixel's merchants
+      (design call, same spots and skins): Farm, Lumber, Fishing and Mine Merchant, Weaponsmith, Combat Merchant
+      (provisioner), Wool Weaver (builder), Bartender, Alchemist (florist), Librarian (curio dealer), Rosetta
+      (blacksmith), and the Banker. The survival economy shops (`skyrpg/shops`) are no longer used by the Hub.
 - [ ] Bazaar and Auction House.
 - [ ] Slayers: Revenant, Tarantula, Sven.
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength

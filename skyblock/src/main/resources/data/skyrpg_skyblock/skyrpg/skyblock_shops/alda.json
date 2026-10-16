@@ -1,0 +1,11 @@
+{
+ "name": "Alda",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "ABIPHONE_BASIC",
+   "count": 1,
+   "coins": 5000
+  }
+ ]
+}

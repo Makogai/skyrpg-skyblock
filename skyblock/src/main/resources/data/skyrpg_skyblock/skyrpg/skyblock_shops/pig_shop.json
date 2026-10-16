@@ -1,0 +1,72 @@
+{
+ "name": "Pig Shop",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SHINY_ORB",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "SHINY_ROD",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHINY_SHARD": 128
+   }
+  },
+  {
+   "item": "SMALL_PIG_EAR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHINY_SHARD": 32,
+    "ENCHANTED_PORK": 16
+   }
+  },
+  {
+   "item": "MEDIUM_PIG_EAR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHINY_SHARD": 64,
+    "ENCHANTED_PORK": 32
+   }
+  },
+  {
+   "item": "LARGE_PIG_EAR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHINY_SHARD": 128,
+    "ENCHANTED_PORK": 64
+   }
+  },
+  {
+   "item": "GIANT_PIG_EAR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHINY_SHARD": 256,
+    "ENCHANTED_GRILLED_PORK": 1
+   }
+  },
+  {
+   "item": "DANTE_RING",
+   "count": 1,
+   "coins": 1000000,
+   "costs": {
+    "SHINY_SHARD": 128
+   }
+  },
+  {
+   "item": "THE_ART_OF_WAR",
+   "count": 1,
+   "coins": 5000000,
+   "costs": {
+    "SHINY_SHARD": 256,
+    "ENCHANTED_GRILLED_PORK": 1
+   }
+  }
+ ]
+}

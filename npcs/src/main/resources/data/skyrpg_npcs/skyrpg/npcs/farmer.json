@@ -1,6 +1,6 @@
 {
-  "name": "Mabel Thornfield",
-  "role": "Farmer",
+  "name": "Farm Merchant",
+  "role": "Merchant",
   "color": "#9BE05A",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/farmer",
@@ -14,15 +14,13 @@
   "yaw": 285.0,
   "sound": "minecraft:entity.villager.work_farmer",
   "greetings": [
-    "Fresh from the field! Got crops? I pay fair.",
-    "Mind the mud, dear. The wheat's come in golden this year.",
-    "A good hoe and a patient heart. That's all farming is.",
-    "Carrots, potatoes, melons... bring 'em all, I'm not fussy."
+    "Crops, seeds and farming tools: buy or sell them here.",
+    "Got a harvest to sell? I'll take it."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:farmer"
+      "shop": "farm_merchant"
     }
   }
 }

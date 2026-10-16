@@ -1,0 +1,21 @@
+{
+ "name": "Lumina",
+ "island": "mining_3",
+ "offers": [
+  {
+   "item": "TORCH",
+   "count": 64,
+   "coins": 32
+  },
+  {
+   "item": "LANTERN",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "INFINI_TORCH",
+   "count": 1,
+   "coins": 100000
+  }
+ ]
+}

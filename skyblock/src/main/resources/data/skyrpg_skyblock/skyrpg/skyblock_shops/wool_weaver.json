@@ -1,0 +1,406 @@
+{
+ "name": "Wool Weaver",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "STAINED_CLAY",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:1",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:2",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:3",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:4",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:5",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:6",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:7",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:8",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:9",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:10",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:11",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:12",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:13",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:14",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_CLAY:15",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STAINED_GLASS_PANE",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:1",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:2",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:3",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:4",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:5",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:6",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:7",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:8",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:9",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:10",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:11",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:12",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:13",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:14",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS_PANE:15",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:1",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:2",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:3",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:4",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:5",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:6",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:7",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:8",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:9",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:10",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:11",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:12",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:13",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:14",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "STAINED_GLASS:15",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "CARPET",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:1",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:2",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:3",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:4",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:5",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:6",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:7",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:8",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:9",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:10",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:11",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:12",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:13",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:14",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "CARPET:15",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:1",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:2",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:3",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:4",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:5",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:6",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:7",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:8",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:9",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:10",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:11",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:12",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:13",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:14",
+   "count": 1,
+   "coins": 32
+  },
+  {
+   "item": "WOOL:15",
+   "count": 1,
+   "coins": 32
+  }
+ ]
+}

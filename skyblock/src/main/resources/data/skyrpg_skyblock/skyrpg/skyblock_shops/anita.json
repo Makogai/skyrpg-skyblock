@@ -1,0 +1,14 @@
+{
+ "name": "Anita",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "INFINIDIRT_WAND",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "JACOBS_TICKET": 1
+   }
+  }
+ ]
+}

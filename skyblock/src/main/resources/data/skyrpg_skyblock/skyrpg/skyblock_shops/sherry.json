@@ -1,0 +1,41 @@
+{
+ "name": "Sherry",
+ "island": "winter",
+ "offers": [
+  {
+   "item": "FESTIVE_SINKER",
+   "count": 1,
+   "coins": 40000
+  },
+  {
+   "item": "ICE_BAIT",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "BOTTLE_OF_JYRRE",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "FROSTY_SNOW_BALL",
+   "count": 1,
+   "coins": 75000
+  },
+  {
+   "item": "ICE",
+   "count": 1,
+   "coins": 1
+  },
+  {
+   "item": "PACKED_ICE",
+   "count": 1,
+   "coins": 9
+  },
+  {
+   "item": "LARGE_WINTER_SACK",
+   "count": 1,
+   "coins": 250000
+  }
+ ]
+}

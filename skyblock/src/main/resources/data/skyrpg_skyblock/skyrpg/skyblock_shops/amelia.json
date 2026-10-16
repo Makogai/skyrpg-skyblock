@@ -1,0 +1,56 @@
+{
+ "name": "Amelia",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "PARKOUR_CONTROLLER",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "PARKOUR_POINT",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "PARKOUR_TIMES",
+   "count": 1,
+   "coins": 2000
+  },
+  {
+   "item": "SOCIAL_DISPLAY",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "EGG_HUNT",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "ISLAND_NPC",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "TIC_TAC_TOE",
+   "count": 1,
+   "coins": 2500
+  },
+  {
+   "item": "CONNECT_FOUR",
+   "count": 1,
+   "coins": 2500
+  },
+  {
+   "item": "ROCK_PAPER_SHEARS",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "SHOWCASE_BLOCK",
+   "count": 1,
+   "coins": 50000
+  }
+ ]
+}

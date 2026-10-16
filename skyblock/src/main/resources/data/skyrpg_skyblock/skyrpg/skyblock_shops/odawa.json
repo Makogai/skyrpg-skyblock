@@ -1,0 +1,49 @@
+{
+ "name": "Odawa",
+ "island": "",
+ "offers": [
+  {
+   "item": "KALHUIKI_MASK",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SLUDGE_JUICE": 20,
+    "WOOD": 20
+   }
+  },
+  {
+   "item": "JUNGLE_AMULET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SLUDGE_JUICE": 500,
+    "JUNGLE_HEART": 4
+   }
+  },
+  {
+   "item": "TRIBAL_SPEAR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SLUDGE_JUICE": 100,
+    "JUNGLE_HEART": 1
+   }
+  },
+  {
+   "item": "JUNGLE_KEY",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SLUDGE_JUICE": 100
+   }
+  },
+  {
+   "item": "JUNGLE_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SLUDGE_JUICE": 200
+   }
+  }
+ ]
+}

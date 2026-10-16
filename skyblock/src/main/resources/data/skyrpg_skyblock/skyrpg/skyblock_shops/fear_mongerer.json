@@ -1,0 +1,141 @@
+{
+ "name": "Fear Mongerer",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "TRICK_OR_TREAT_BAG",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "GREEN_CANDY": 1
+   }
+  },
+  {
+   "item": "CANDY_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "GREEN_CANDY": 16
+   }
+  },
+  {
+   "item": "BAT_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BAT_TALISMAN": 1,
+    "GREEN_CANDY": 64
+   }
+  },
+  {
+   "item": "CANDY_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "CANDY_TALISMAN": 1,
+    "GREEN_CANDY": 64
+   }
+  },
+  {
+   "item": "BAT_FIREWORK",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "GREEN_CANDY": 100
+   }
+  },
+  {
+   "item": "INTIMIDATION_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "INTIMIDATION_TALISMAN": 1,
+    "GREEN_CANDY": 100
+   }
+  },
+  {
+   "item": "HORSEMAN_CANDLE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "PURPLE_CANDY": 32
+   }
+  },
+  {
+   "item": "CANDY_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "CANDY_RING": 1,
+    "PURPLE_CANDY": 32
+   }
+  },
+  {
+   "item": "SPOOKY_HELMET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "PURPLE_CANDY": 64
+   }
+  },
+  {
+   "item": "SPOOKY_CHESTPLATE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "PURPLE_CANDY": 64
+   }
+  },
+  {
+   "item": "SPOOKY_LEGGINGS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "PURPLE_CANDY": 64
+   }
+  },
+  {
+   "item": "SPOOKY_BOOTS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "PURPLE_CANDY": 64
+   }
+  },
+  {
+   "item": "BAT_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BAT_RING": 1,
+    "PURPLE_CANDY": 64
+   }
+  },
+  {
+   "item": "INTIMIDATION_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "INTIMIDATION_RING": 1,
+    "PURPLE_CANDY": 100
+   }
+  },
+  {
+   "item": "CANDY_RELIC",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "CANDY_ARTIFACT": 1,
+    "PURPLE_CANDY": 1024
+   }
+  },
+  {
+   "item": "ECHOLOCATOR",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "GREEN_CANDY": 32
+   }
+  }
+ ]
+}

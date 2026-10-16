@@ -1,0 +1,86 @@
+{
+ "name": "Lumber Merchant",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "LOG",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "LOG:2",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "LOG:1",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "LOG_2:1",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "LOG_2",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "LOG:3",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "ROOKIE_AXE",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "PROMISING_AXE",
+   "count": 1,
+   "coins": 35
+  },
+  {
+   "item": "DIRT:2",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "SWEET_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "EFFICIENT_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "WOOD_SWORD",
+   "count": 1,
+   "coins": 5
+  },
+  {
+   "item": "WOOD_PICKAXE",
+   "count": 1,
+   "coins": 5
+  },
+  {
+   "item": "WOOD_SPADE",
+   "count": 1,
+   "coins": 5
+  },
+  {
+   "item": "WOOD_HOE",
+   "count": 1,
+   "coins": 5
+  },
+  {
+   "item": "WOOD_AXE",
+   "count": 1,
+   "coins": 5
+  }
+ ]
+}

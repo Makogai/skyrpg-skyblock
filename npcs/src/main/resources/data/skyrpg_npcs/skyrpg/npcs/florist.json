@@ -1,6 +1,6 @@
 {
-  "name": "Pip Bramblewick",
-  "role": "Florist",
+  "name": "Alchemist",
+  "role": "Merchant",
   "color": "#FF8AD8",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/florist",
@@ -14,15 +14,13 @@
   "yaw": 0.0,
   "sound": "minecraft:item.bone_meal.use",
   "greetings": [
-    "Flowers! Flowers for everyone! Well. For coins.",
-    "Did you know tulips gossip? Terrible, the things they say.",
-    "A garden is a promise you make to next spring.",
-    "Ooh, you look like a cornflower kind of person."
+    "Ingredients for brewing, all in one place.",
+    "Every potion starts with the right ingredient."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:florist"
+      "shop": "alchemist"
     }
   }
 }

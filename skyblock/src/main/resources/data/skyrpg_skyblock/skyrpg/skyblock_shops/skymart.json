@@ -1,0 +1,45 @@
+{
+ "name": "SkyMart",
+ "island": "garden",
+ "offers": [
+  {
+   "item": "BIOFUEL",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "SAM_SCYTHE",
+   "count": 1,
+   "coins": 2000
+  },
+  {
+   "item": "SUNFLOWER_GENERATOR_12",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SUNFLOWER_GENERATOR_11": 1,
+    "COMPACTED_SUNFLOWER": 32
+   }
+  },
+  {
+   "item": "HYDRO_CAN_1000",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "PORTABLE_WASHER",
+   "count": 1,
+   "coins": 20000
+  },
+  {
+   "item": "SKYMART_VACUUM",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "PORTABLE_WASHER",
+   "count": 1,
+   "coins": 20000
+  }
+ ]
+}

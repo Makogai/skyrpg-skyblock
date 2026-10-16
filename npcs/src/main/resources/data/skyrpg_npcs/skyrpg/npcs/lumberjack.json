@@ -1,6 +1,6 @@
 {
-  "name": "Oswin Fernhollow",
-  "role": "Foraging Master",
+  "name": "Lumber Merchant",
+  "role": "Merchant",
   "color": "#C98A4B",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/lumberjack",
@@ -14,16 +14,13 @@
   "yaw": 225.0,
   "sound": "minecraft:item.axe.strip",
   "greetings": [
-    "Ho there! Smell that? Fresh-cut spruce. Best smell there is.",
-    "Found a Heartwood Splinter? Bring me a few and we'll talk stumps.",
-    "Ironbark won't budge for a stone axe. You'll want iron, at least.",
-    "Duskwillow only grows by water, and only at night. Shy trees, those.",
-    "Plant two for every one you fell, and the woods will love you back."
+    "Wood and axes, bought and sold.",
+    "Bring me logs and I'll pay you for them."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:lumberjack"
+      "shop": "lumber_merchant"
     }
   }
 }

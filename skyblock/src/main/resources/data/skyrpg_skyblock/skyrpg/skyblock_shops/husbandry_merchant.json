@@ -1,0 +1,96 @@
+{
+ "name": "Husbandry Merchant",
+ "island": "",
+ "offers": [
+  {
+   "item": "RAW_BEEF",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "LEATHER",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "PORK",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "RAW_CHICKEN",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "FEATHER",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "EGG",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "MUTTON",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "WOOL",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "RABBIT",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "RABBIT_HIDE",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "RABBIT_FOOT",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "BASIC_CHICKEN_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BASIC_COW_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BASIC_MUSHROOM_COW_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BASIC_PIG_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BASIC_SHEEP_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BASIC_RABBIT_AXE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BEGINNER_HUSBANDRY_SACK",
+   "count": 1,
+   "coins": 250
+  }
+ ]
+}

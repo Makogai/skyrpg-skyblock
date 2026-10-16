@@ -1,0 +1,60 @@
+{
+ "name": "Marthos",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "GHAST_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "GHAST_GENERATOR_11": 1,
+    "SILVER_FANG": 1024
+   }
+  },
+  {
+   "item": "QUARTZ_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "QUARTZ_GENERATOR_11": 1,
+    "ENCHANTED_QUARTZ_BLOCK": 16
+   }
+  },
+  {
+   "item": "GLOWSTONE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "GLOWSTONE_GENERATOR_11": 1,
+    "ENCHANTED_GLOWSTONE": 32
+   }
+  },
+  {
+   "item": "BLAZE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "BLAZE_GENERATOR_11": 1,
+    "ENCHANTED_BLAZE_ROD": 16
+   }
+  },
+  {
+   "item": "MAGMA_CUBE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "MAGMA_CUBE_GENERATOR_11": 1,
+    "ENCHANTED_MAGMA_CREAM": 1024
+   }
+  },
+  {
+   "item": "RED_SAND_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "RED_SAND_GENERATOR_11": 1,
+    "ENCHANTED_RED_SAND_CUBE": 32
+   }
+  }
+ ]
+}

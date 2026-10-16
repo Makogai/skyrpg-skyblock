@@ -1,5 +1,5 @@
 {
-  "name": "Cassius Vellum",
+  "name": "Banker",
   "role": "Banker",
   "color": "#F2B33D",
   "hint": "Bank",
@@ -22,7 +22,7 @@
   "action": {
     "type": "open_bank",
     "params": {
-      "keeper": "Cassius Vellum"
+      "keeper": "Banker"
     }
   }
 }

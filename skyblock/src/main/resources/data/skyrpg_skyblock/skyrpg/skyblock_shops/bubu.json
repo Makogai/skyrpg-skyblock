@@ -1,0 +1,69 @@
+{
+ "name": "Bubu",
+ "island": "mining_3",
+ "offers": [
+  {
+   "item": "FRACTURED_MITHRIL_PICKAXE",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "BANDAGED_MITHRIL_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ENCHANTED_MITHRIL": 2,
+    "FRACTURED_MITHRIL_PICKAXE": 1
+   }
+  },
+  {
+   "item": "TITANIUM_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "RUSTY_TITANIUM_PICKAXE": 1,
+    "ENCHANTED_TITANIUM": 4,
+    "BEJEWELED_HANDLE": 1
+   }
+  },
+  {
+   "item": "REFINED_TITANIUM_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "TITANIUM_PICKAXE": 1,
+    "REFINED_TITANIUM": 1
+   }
+  },
+  {
+   "item": "BIOFUEL",
+   "count": 1,
+   "coins": 20000
+  },
+  {
+   "item": "RUSTY_TITANIUM_PICKAXE",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "REFINED_MITHRIL_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "MITHRIL_PICKAXE": 1,
+    "REFINED_MITHRIL": 2
+   }
+  },
+  {
+   "item": "MITHRIL_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BANDAGED_MITHRIL_PICKAXE": 1,
+    "ENCHANTED_MITHRIL": 64,
+    "BEJEWELED_HANDLE": 1,
+    "ENCHANTED_GOLD": 32
+   }
+  }
+ ]
+}

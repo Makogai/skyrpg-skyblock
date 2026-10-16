@@ -1,0 +1,146 @@
+{
+ "name": "Rosetta",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "IRON_HELMET",
+   "count": 1,
+   "coins": 15
+  },
+  {
+   "item": "IRON_CHESTPLATE",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "IRON_LEGGINGS",
+   "count": 1,
+   "coins": 30
+  },
+  {
+   "item": "IRON_BOOTS",
+   "count": 1,
+   "coins": 20
+  },
+  {
+   "item": "ROSETTA_HELMET",
+   "count": 1,
+   "coins": 1050
+  },
+  {
+   "item": "ROSETTA_CHESTPLATE",
+   "count": 1,
+   "coins": 1320
+  },
+  {
+   "item": "ROSETTA_LEGGINGS",
+   "count": 1,
+   "coins": 1200
+  },
+  {
+   "item": "ROSETTA_BOOTS",
+   "count": 1,
+   "coins": 960
+  },
+  {
+   "item": "SQUIRE_HELMET",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "SQUIRE_CHESTPLATE",
+   "count": 1,
+   "coins": 8000
+  },
+  {
+   "item": "SQUIRE_LEGGINGS",
+   "count": 1,
+   "coins": 7000
+  },
+  {
+   "item": "SQUIRE_BOOTS",
+   "count": 1,
+   "coins": 4000
+  },
+  {
+   "item": "SQUIRE_SWORD",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "MERCENARY_HELMET",
+   "count": 1,
+   "coins": 35000
+  },
+  {
+   "item": "MERCENARY_CHESTPLATE",
+   "count": 1,
+   "coins": 70000
+  },
+  {
+   "item": "MERCENARY_LEGGINGS",
+   "count": 1,
+   "coins": 45000
+  },
+  {
+   "item": "MERCENARY_BOOTS",
+   "count": 1,
+   "coins": 30000
+  },
+  {
+   "item": "MERCENARY_AXE",
+   "count": 1,
+   "coins": 30000
+  },
+  {
+   "item": "CELESTE_HELMET",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "CELESTE_CHESTPLATE",
+   "count": 1,
+   "coins": 8000
+  },
+  {
+   "item": "CELESTE_LEGGINGS",
+   "count": 1,
+   "coins": 7000
+  },
+  {
+   "item": "CELESTE_BOOTS",
+   "count": 1,
+   "coins": 4000
+  },
+  {
+   "item": "CELESTE_WAND",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "STARLIGHT_HELMET",
+   "count": 1,
+   "coins": 35000
+  },
+  {
+   "item": "STARLIGHT_CHESTPLATE",
+   "count": 1,
+   "coins": 70000
+  },
+  {
+   "item": "STARLIGHT_LEGGINGS",
+   "count": 1,
+   "coins": 45000
+  },
+  {
+   "item": "STARLIGHT_BOOTS",
+   "count": 1,
+   "coins": 30000
+  },
+  {
+   "item": "STARLIGHT_WAND",
+   "count": 1,
+   "coins": 30000
+  }
+ ]
+}

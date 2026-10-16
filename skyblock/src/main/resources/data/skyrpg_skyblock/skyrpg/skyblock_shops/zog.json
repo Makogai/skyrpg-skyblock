@@ -1,0 +1,71 @@
+{
+ "name": "Zog",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "PET_ITEM_ALL_SKILLS_BOOST_COMMON",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "PET_ITEM_FARMING_SKILL_BOOST_COMMON",
+   "count": 1,
+   "coins": 60000
+  },
+  {
+   "item": "PET_ITEM_FISHING_SKILL_BOOST_COMMON",
+   "count": 1,
+   "coins": 60000
+  },
+  {
+   "item": "PET_ITEM_FORAGING_SKILL_BOOST_COMMON",
+   "count": 1,
+   "coins": 60000
+  },
+  {
+   "item": "PET_ITEM_MINING_SKILL_BOOST_COMMON",
+   "count": 1,
+   "coins": 60000
+  },
+  {
+   "item": "PET_ITEM_COMBAT_SKILL_BOOST_COMMON",
+   "count": 1,
+   "coins": 60000
+  },
+  {
+   "item": "PET_ITEM_MINING_SKILL_BOOST_UNCOMMON",
+   "count": 1,
+   "coins": 250000
+  },
+  {
+   "item": "PET_ITEM_FARMING_SKILL_BOOST_RARE",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "PET_ITEM_BIG_TEETH_COMMON",
+   "count": 1,
+   "coins": 750000
+  },
+  {
+   "item": "PET_ITEM_IRON_CLAWS_COMMON",
+   "count": 1,
+   "coins": 750000
+  },
+  {
+   "item": "PET_ITEM_HARDENED_SCALES_UNCOMMON",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "PET_ITEM_SHARPENED_CLAWS_UNCOMMON",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "PET_ITEM_BUBBLEGUM",
+   "count": 1,
+   "coins": 5000000
+  }
+ ]
+}

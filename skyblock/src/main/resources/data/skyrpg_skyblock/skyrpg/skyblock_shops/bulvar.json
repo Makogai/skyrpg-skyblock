@@ -1,0 +1,105 @@
+{
+ "name": "Bulvar",
+ "island": "mining_3",
+ "offers": [
+  {
+   "item": "COBBLESTONE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_COBBLESTONE": 1024,
+    "COBBLESTONE_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "OBSIDIAN_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_OBSIDIAN": 1024,
+    "OBSIDIAN_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "COAL_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_COAL_BLOCK": 16,
+    "COAL_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "IRON_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_IRON_BLOCK": 16,
+    "IRON_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "GOLD_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_GOLD_BLOCK": 16,
+    "GOLD_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "DIAMOND_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_DIAMOND_BLOCK": 16,
+    "DIAMOND_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "LAPIS_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_LAPIS_LAZULI_BLOCK": 64,
+    "LAPIS_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "EMERALD_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_EMERALD_BLOCK": 16,
+    "EMERALD_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "REDSTONE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "ENCHANTED_REDSTONE_BLOCK": 32,
+    "REDSTONE_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "MITHRIL_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "REFINED_MITHRIL": 16,
+    "MITHRIL_GENERATOR_11": 1
+   }
+  },
+  {
+   "item": "HARD_STONE_GENERATOR_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "CONCENTRATED_STONE": 16,
+    "HARD_STONE_GENERATOR_11": 1
+   }
+  }
+ ]
+}

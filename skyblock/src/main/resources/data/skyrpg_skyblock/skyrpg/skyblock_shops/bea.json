@@ -1,0 +1,26 @@
+{
+ "name": "Bea",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SMALL_HONEY_DIPPER",
+   "count": 1,
+   "coins": 500
+  },
+  {
+   "item": "MEDIUM_HONEY_DIPPER",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "LARGE_HONEY_DIPPER",
+   "count": 1,
+   "coins": 50000
+  },
+  {
+   "item": "GIANT_HONEY_DIPPER",
+   "count": 1,
+   "coins": 500000
+  }
+ ]
+}

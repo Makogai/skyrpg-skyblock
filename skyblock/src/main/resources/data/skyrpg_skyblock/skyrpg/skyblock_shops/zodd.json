@@ -1,0 +1,11 @@
+{
+ "name": "Zodd",
+ "island": "",
+ "offers": [
+  {
+   "item": "GENERAL_MEDALLION",
+   "count": 1,
+   "coins": 1000000
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "name": "Agnes",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "WITCH_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FESTERING_FLY": 32
+   }
+  },
+  {
+   "item": "WITCH_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "WITCH_TALISMAN": 1,
+    "VOID_OOZE": 64,
+    "FROG_LEGS": 64
+   }
+  },
+  {
+   "item": "WITCH_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "WITCH_RING": 1,
+    "SMOLDERING_EMBERS": 64,
+    "SPELL_SOOT": 64,
+    "GELATINOUS_GLOOP": 64
+   }
+  },
+  {
+   "item": "SMALL_WITCH_CAULDRON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SPIDER_EGG": 64,
+    "FUNNY_BONE": 64
+   }
+  },
+  {
+   "item": "MEDIUM_WITCH_CAULDRON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "WATERBORNE_LICE": 64,
+    "CONSOLE_PANEL": 64,
+    "JAWBREAKER": 64
+   }
+  },
+  {
+   "item": "LARGE_WITCH_CAULDRON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SMOLDERING_EMBERS": 64,
+    "WARMED_FLAKES": 64,
+    "NEVER_MELT_ICE": 64,
+    "GLACIATED_BRAINS": 64
+   }
+  },
+  {
+   "item": "GIANT_WITCH_CAULDRON",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SHIELD_DUST": 64,
+    "PIXIE_DUST": 64,
+    "RUFFLED_FEATHER": 64,
+    "BRITTLE_POWDER": 64,
+    "DIRTY_FINGERNAILS": 64
+   }
+  },
+  {
+   "item": "WITCH_SACK",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FESTERING_FLY": 16,
+    "SPIDER_EGG": 16
+   }
+  },
+  {
+   "item": "PIG_BRAIN_MIXIN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FROG_LEGS": 128
+   }
+  },
+  {
+   "item": "BLENDED_FISH_MIXIN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "WATERBORNE_LICE": 128
+   }
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "name": "Lonely Philosopher",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "HUB_CASTLE_TRAVEL_SCROLL",
+   "count": 1,
+   "coins": 150000
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "name": "Agatha",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "SMALL_FROG_TREAT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 30
+   }
+  },
+  {
+   "item": "MEDIUM_FROG_TREAT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 40
+   }
+  },
+  {
+   "item": "LARGE_FROG_TREAT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 50
+   }
+  },
+  {
+   "item": "GIANT_FROG_TREAT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 60
+   }
+  },
+  {
+   "item": "MOONGLADE_JEWEL",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 50
+   }
+  },
+  {
+   "item": "FIGHTING_BOOSTER",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 100
+   }
+  },
+  {
+   "item": "MOONGLADE_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 30
+   }
+  },
+  {
+   "item": "MOONGLADE_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 30,
+    "MOONGLADE_TALISMAN": 1
+   }
+  },
+  {
+   "item": "MOONGLADE_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "AGATHA_COUPON": 30,
+    "MOONGLADE_RING": 1
+   }
+  },
+  {
+   "item": "SHINIEST",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "STARLYN_PRIZE": 20
+   }
+  }
+ ]
+}

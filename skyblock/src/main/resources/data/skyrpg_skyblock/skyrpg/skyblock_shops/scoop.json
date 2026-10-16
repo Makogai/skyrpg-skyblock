@@ -1,0 +1,11 @@
+{
+ "name": "Scoop",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SNOW_SHOVEL",
+   "count": 1,
+   "coins": 2500
+  }
+ ]
+}

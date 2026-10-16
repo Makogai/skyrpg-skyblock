@@ -1,0 +1,51 @@
+{
+ "name": "Weaponsmith",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "UNDEAD_SWORD",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "END_SWORD",
+   "count": 1,
+   "coins": 150
+  },
+  {
+   "item": "SPIDER_SWORD",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "DIAMOND_SWORD",
+   "count": 1,
+   "coins": 60
+  },
+  {
+   "item": "ROGUE_SWORD",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BOW",
+   "count": 1,
+   "coins": 25
+  },
+  {
+   "item": "ARROW",
+   "count": 1,
+   "coins": 40
+  },
+  {
+   "item": "WITHER_BOW",
+   "count": 1,
+   "coins": 250
+  },
+  {
+   "item": "ARTISANAL_SHORTBOW",
+   "count": 1,
+   "coins": 600
+  }
+ ]
+}

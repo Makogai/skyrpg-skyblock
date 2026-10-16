@@ -1,0 +1,64 @@
+{
+ "name": "Jake",
+ "island": "farming_1",
+ "offers": [
+  {
+   "item": "SHEEP_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_SHEEP_AXE": 1
+   }
+  },
+  {
+   "item": "MUSHROOM_COW_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_MUSHROOM_COW_AXE": 1
+   }
+  },
+  {
+   "item": "COW_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_COW_AXE": 1
+   }
+  },
+  {
+   "item": "PIG_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_PIG_AXE": 1
+   }
+  },
+  {
+   "item": "RABBIT_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_RABBIT_AXE": 1
+   }
+  },
+  {
+   "item": "CHICKEN_AXE",
+   "count": 1,
+   "coins": 1000,
+   "costs": {
+    "BASIC_CHICKEN_AXE": 1
+   }
+  },
+  {
+   "item": "HARDENED_WOOD",
+   "count": 1,
+   "coins": 15000
+  },
+  {
+   "item": "LUCKY_DICE",
+   "count": 1,
+   "coins": 1000000
+  }
+ ]
+}

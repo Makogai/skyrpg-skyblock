@@ -1,0 +1,16 @@
+{
+ "name": "Shaggy",
+ "island": "combat_1",
+ "offers": [
+  {
+   "item": "ARACHNE_CRYSTAL",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ARACHNE_FRAGMENT": 2,
+    "ENCHANTED_SPIDER_EYE": 16,
+    "ENCHANTED_STRING": 16
+   }
+  }
+ ]
+}

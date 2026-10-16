@@ -1,0 +1,172 @@
+{
+ "name": "Junker Joel",
+ "island": "fishing_1",
+ "offers": [
+  {
+   "item": "JUNK_SINKER",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "TREASURE_BAIT",
+   "count": 16,
+   "coins": 0,
+   "costs": {
+    "RUSTY_COIN": 1
+   }
+  },
+  {
+   "item": "CHALLENGE_ROD",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "FISHING_ROD": 1,
+    "RUSTY_COIN": 8
+   }
+  },
+  {
+   "item": "BACKWATER_HELMET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_HELMET": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_CHESTPLATE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_CHESTPLATE": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_LEGGINGS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_LEGGINGS": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_BOOTS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_BOOTS": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "JUNK_TALISMAN",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "RUSTY_COIN": 32
+   }
+  },
+  {
+   "item": "JUNK_RING",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "JUNK_TALISMAN": 1,
+    "BUSTED_BELT_BUCKLE": 4
+   }
+  },
+  {
+   "item": "JUNK_ARTIFACT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "JUNK_RING": 1,
+    "OLD_LEATHER_BOOT": 1
+   }
+  },
+  {
+   "item": "BACKWATER_NECKLACE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_NECKLACE": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_CLOAK",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_CLOAK": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_BELT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_BELT": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "BACKWATER_GLOVES",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "ANGLER_BRACELET": 1,
+    "RUSTY_COIN": 4
+   }
+  },
+  {
+   "item": "STINGY_SINKER",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "RUSTY_COIN": 64
+   }
+  },
+  {
+   "item": "SPEEDY_LINE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BUSTED_BELT_BUCKLE": 8
+   }
+  },
+  {
+   "item": "BRONZE_SHIP_ENGINE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "RUSTY_COIN": 64,
+    "BUSTED_BELT_BUCKLE": 8
+   }
+  },
+  {
+   "item": "GOLD_BOTTLE_CAP",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "RUSTY_COIN": 512,
+    "BUSTED_BELT_BUCKLE": 64,
+    "OLD_LEATHER_BOOT": 8
+   }
+  },
+  {
+   "item": "TREASURE_HOOK",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "BAYOU_WATER_ORB": 1,
+    "OLD_LEATHER_BOOT": 4,
+    "BUSTED_BELT_BUCKLE": 32,
+    "RUSTY_COIN": 256
+   }
+  }
+ ]
+}

@@ -6,6 +6,7 @@ import com.skyrpg.core.client.theme.ToggledPacks;
 import com.skyrpg.skyblock.area.Areas;
 import com.skyrpg.skyblock.client.screen.CraftScreen;
 import com.skyrpg.skyblock.client.screen.EnderPageScreen;
+import com.skyrpg.skyblock.client.screen.ShopScreen;
 import com.skyrpg.skyblock.client.screen.WardrobeScreen;
 import com.skyrpg.skyblock.storage.SkyMenus;
 import com.skyrpg.skyblock.storage.StoragePayloads;
@@ -32,6 +33,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.WARDROBE, WardrobeScreen::new);
         MenuScreens.register(SkyMenus.ENDER_PAGE, EnderPageScreen::new);
         MenuScreens.register(SkyMenus.CRAFT, CraftScreen::new);
+        MenuScreens.register(SkyMenus.SHOP, ShopScreen::new);
         SkyRpgMenu.registerPage(new SkyBlockMenuPage());
         SkyRpgMenu.registerPage(new ProfilesPage());
         SkyRpgMenu.registerPage(new FastTravelPage());

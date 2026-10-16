@@ -1,0 +1,38 @@
+{
+ "name": "Tyashoi Alchemist",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "GREAT_SPOOK_HELMET",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "WET_PUMPKIN": 1
+   }
+  },
+  {
+   "item": "GREAT_SPOOK_CHESTPLATE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "DECAYED_BAT": 5
+   }
+  },
+  {
+   "item": "GREAT_SPOOK_LEGGINGS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "POISONED_CANDY": 5
+   }
+  },
+  {
+   "item": "GREAT_SPOOK_BOOTS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "SWEET_FLESH": 12
+   }
+  }
+ ]
+}

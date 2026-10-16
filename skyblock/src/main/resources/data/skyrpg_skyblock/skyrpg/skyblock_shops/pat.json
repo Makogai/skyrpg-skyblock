@@ -1,0 +1,16 @@
+{
+ "name": "Pat",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "GRAVEL",
+   "count": 15,
+   "coins": 65
+  },
+  {
+   "item": "FLINT",
+   "count": 10,
+   "coins": 60
+  }
+ ]
+}

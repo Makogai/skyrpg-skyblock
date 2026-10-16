@@ -11,6 +11,7 @@ import com.skyrpg.skyblock.profile.ProfileListPayload;
 import com.skyrpg.skyblock.profile.Profiles;
 import com.skyrpg.skyblock.recipe.Crafting;
 import com.skyrpg.skyblock.recipe.Recipes;
+import com.skyrpg.skyblock.shop.SkyShops;
 import com.skyrpg.skyblock.storage.StoragePayloads;
 import com.skyrpg.skyblock.time.SkyBlockClock;
 import com.skyrpg.skyblock.travel.FastTravel;
@@ -51,6 +52,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         Zones.init();
         Recipes.init();
         Crafting.init();
+        SkyShops.init();
         // The hub's portal leads to your island, not the survival world.
         Hub.setGate("Warping you to your island...", Islands::sendHome);
         // Profiles take over player data once the server is up (the overworld holds the profile list).
@@ -63,6 +65,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
             ProfileCommands.register(dispatcher);
             StoragePayloads.register(dispatcher);
             FastTravel.register(dispatcher);
+            SkyShops.register(dispatcher);
             dispatcher.register(Commands.literal("sblevel").executes(ctx -> {
                 OpenPage.send(ctx.getSource().getPlayerOrException(), id("leveling"));
                 return 1;

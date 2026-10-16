@@ -1,0 +1,11 @@
+{
+ "name": "Winona",
+ "island": "",
+ "offers": [
+  {
+   "item": "REVIVE_STONE",
+   "count": 1,
+   "coins": 100000
+  }
+ ]
+}

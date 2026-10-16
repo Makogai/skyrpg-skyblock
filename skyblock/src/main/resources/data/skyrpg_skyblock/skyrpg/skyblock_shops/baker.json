@@ -1,0 +1,11 @@
+{
+ "name": "Baker",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "NEW_YEAR_CAKE_BAG",
+   "count": 1,
+   "coins": 250000
+  }
+ ]
+}

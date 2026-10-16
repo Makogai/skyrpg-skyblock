@@ -1,0 +1,27 @@
+{
+ "name": "Lucius",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SHADY_RING",
+   "count": 1,
+   "coins": 500000
+  },
+  {
+   "item": "CROOKED_ARTIFACT",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "SHADY_RING": 1
+   }
+  },
+  {
+   "item": "SEAL_OF_THE_FAMILY",
+   "count": 1,
+   "coins": 10000000,
+   "costs": {
+    "CROOKED_ARTIFACT": 1
+   }
+  }
+ ]
+}

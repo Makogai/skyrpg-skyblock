@@ -1,0 +1,11 @@
+{
+ "name": "Walter",
+ "island": "mining_2",
+ "offers": [
+  {
+   "item": "SUPERBOOM_TNT",
+   "count": 1,
+   "coins": 2500
+  }
+ ]
+}

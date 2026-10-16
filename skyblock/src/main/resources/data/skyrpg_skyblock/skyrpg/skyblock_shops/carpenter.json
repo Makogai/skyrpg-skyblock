@@ -1,0 +1,56 @@
+{
+ "name": "Carpenter",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "SCARECROW",
+   "count": 1,
+   "coins": 120
+  },
+  {
+   "item": "WEAPON_RACK",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "ARMOR_SHOWCASE",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "FANCY_FLOWER_POT",
+   "count": 1,
+   "coins": 150
+  },
+  {
+   "item": "ENCHANTING_PLUS",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "CRAFTING_PLUS",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "FURNACE_PLUS",
+   "count": 1,
+   "coins": 15000
+  },
+  {
+   "item": "WOOD_CHEST",
+   "count": 1,
+   "coins": 15000
+  },
+  {
+   "item": "FIREPLACE",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "CHEST_SHELVES",
+   "count": 1,
+   "coins": 15000
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "name": "Desperate Engineer",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "MOODY_GRAPPLESHOT",
+   "count": 1,
+   "coins": 3700000
+  }
+ ]
+}

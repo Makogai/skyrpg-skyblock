@@ -1,0 +1,77 @@
+{
+ "name": "Bartender",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "CHEAP_COFFEE",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "TEPID_GREEN_TEA",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "PULPOUS_ORANGE_JUICE",
+   "count": 1,
+   "coins": 1000
+  },
+  {
+   "item": "BITTER_ICE_TEA",
+   "count": 1,
+   "coins": 1200
+  },
+  {
+   "item": "KNOCKOFF_COLA",
+   "count": 1,
+   "coins": 1500
+  },
+  {
+   "item": "DECENT_COFFEE",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "GENERATOR_UPGRADE_STONE_REVENANT_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "REVENANT_VISCERA": 64
+   }
+  },
+  {
+   "item": "GENERATOR_UPGRADE_STONE_TARANTULA_12",
+   "count": 1,
+   "coins": 2000000,
+   "costs": {
+    "TARANTULA_SILK": 64
+   }
+  },
+  {
+   "item": "WOLF_FUR_MIXIN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "SPIDER_EGG_MIXIN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "ZOMBIE_BRAIN_MIXIN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "END_PORTAL_FUMES_MIXIN",
+   "count": 1,
+   "coins": 150000
+  },
+  {
+   "item": "GABAGOEY_MIXIN",
+   "count": 1,
+   "coins": 150000
+  }
+ ]
+}

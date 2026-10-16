@@ -1,6 +1,6 @@
 {
-  "name": "Brannoc Ashforge",
-  "role": "Blacksmith",
+  "name": "Rosetta",
+  "role": "Merchant",
   "color": "#FF8A3D",
   "hint": "Shop",
   "skin": "skyrpg_npcs:entity/npc/blacksmith",
@@ -14,15 +14,13 @@
   "yaw": 45.0,
   "sound": "minecraft:entity.villager.work_toolsmith",
   "greetings": [
-    "Hm. You want steel, or you want to talk? I do steel.",
-    "Ore in, coin out. Simple.",
-    "That pickaxe of yours has seen better days. So have I.",
-    "Mind the forge. It bites."
+    "You look like you could use some armour.",
+    "Armour for every adventurer, take your pick."
   ],
   "action": {
-    "type": "open_shop",
+    "type": "skyblock_shop",
     "params": {
-      "shop": "skyrpg_economy:blacksmith"
+      "shop": "rosetta"
     }
   }
 }

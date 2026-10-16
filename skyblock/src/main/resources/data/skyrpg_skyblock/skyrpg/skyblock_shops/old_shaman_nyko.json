@@ -1,0 +1,11 @@
+{
+ "name": "Old Shaman Nyko",
+ "island": "foraging_1",
+ "offers": [
+  {
+   "item": "TRUE_ESSENCE",
+   "count": 1,
+   "coins": 25000
+  }
+ ]
+}

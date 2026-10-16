@@ -1,0 +1,37 @@
+{
+ "name": "Mage Emissary",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "SPORE_HARVESTER",
+   "count": 1,
+   "coins": 95000
+  },
+  {
+   "item": "GRAND_EXP_BOTTLE",
+   "count": 1,
+   "coins": 4750
+  },
+  {
+   "item": "TITANIC_EXP_BOTTLE",
+   "count": 1,
+   "coins": 712500
+  },
+  {
+   "item": "ATOMINIZER",
+   "count": 1,
+   "coins": 95000,
+   "costs": {
+    "ENCHANTED_MYCELIUM": 500
+   }
+  },
+  {
+   "item": "CHARMINIZER",
+   "count": 1,
+   "coins": 95000,
+   "costs": {
+    "MUSHROOM_SPORE": 1000
+   }
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "name": "Amaury",
+ "island": "foraging_2",
+ "offers": [
+  {
+   "item": "SERIOUSLY_DAMAGED_AXE",
+   "count": 1,
+   "coins": 5000
+  },
+  {
+   "item": "DECENT_AXE",
+   "count": 1,
+   "coins": 1000000
+  },
+  {
+   "item": "CANOPY_HELMET",
+   "count": 1,
+   "coins": 116400
+  },
+  {
+   "item": "CANOPY_CHESTPLATE",
+   "count": 1,
+   "coins": 135800
+  },
+  {
+   "item": "CANOPY_LEGGINGS",
+   "count": 1,
+   "coins": 126100
+  },
+  {
+   "item": "CANOPY_BOOTS",
+   "count": 1,
+   "coins": 106700
+  }
+ ]
+}

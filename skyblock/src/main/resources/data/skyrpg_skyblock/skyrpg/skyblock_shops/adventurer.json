@@ -1,0 +1,66 @@
+{
+ "name": "Combat Merchant",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "ROTTEN_FLESH",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "BONE",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "STRING",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "SLIME_BALL",
+   "count": 1,
+   "coins": 14
+  },
+  {
+   "item": "SULPHUR",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "ZOMBIE_TALISMAN",
+   "count": 1,
+   "coins": 500
+  },
+  {
+   "item": "SKELETON_TALISMAN",
+   "count": 1,
+   "coins": 500
+  },
+  {
+   "item": "VILLAGE_TALISMAN",
+   "count": 1,
+   "coins": 2500
+  },
+  {
+   "item": "MINE_TALISMAN",
+   "count": 1,
+   "coins": 2500
+  },
+  {
+   "item": "INTIMIDATION_TALISMAN",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "SCAVENGER_TALISMAN",
+   "count": 1,
+   "coins": 10000
+  },
+  {
+   "item": "BEGINNER_COMBAT_SACK",
+   "count": 1,
+   "coins": 250
+  }
+ ]
+}

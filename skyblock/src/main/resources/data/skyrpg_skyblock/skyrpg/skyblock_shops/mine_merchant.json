@@ -1,0 +1,69 @@
+{
+ "name": "Mine Merchant",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "COAL",
+   "count": 2,
+   "coins": 8
+  },
+  {
+   "item": "IRON_INGOT",
+   "count": 4,
+   "coins": 22
+  },
+  {
+   "item": "GOLD_INGOT",
+   "count": 2,
+   "coins": 12
+  },
+  {
+   "item": "ROOKIE_PICKAXE",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "PROMISING_PICKAXE",
+   "count": 1,
+   "coins": 35
+  },
+  {
+   "item": "GOLD_PICKAXE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "GOLD_INGOT": 3
+   }
+  },
+  {
+   "item": "TORCH",
+   "count": 32,
+   "coins": 16
+  },
+  {
+   "item": "GRAVEL",
+   "count": 2,
+   "coins": 12
+  },
+  {
+   "item": "COBBLESTONE",
+   "count": 1,
+   "coins": 3
+  },
+  {
+   "item": "STONE",
+   "count": 2,
+   "coins": 4
+  },
+  {
+   "item": "ONYX",
+   "count": 1,
+   "coins": 100
+  },
+  {
+   "item": "BEGINNER_MINING_SACK",
+   "count": 1,
+   "coins": 250
+  }
+ ]
+}

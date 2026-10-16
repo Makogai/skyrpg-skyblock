@@ -1,8 +1,5 @@
-package com.skyrpg.skyblock;
+package com.skyrpg.items;
 
-import com.skyrpg.items.ItemDefinition;
-import com.skyrpg.items.ItemRegistry;
-import com.skyrpg.items.SkyItems;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Locale;

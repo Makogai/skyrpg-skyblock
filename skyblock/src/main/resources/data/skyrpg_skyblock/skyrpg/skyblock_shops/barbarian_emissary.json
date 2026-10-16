@@ -1,0 +1,11 @@
+{
+ "name": "Barbarian Emissary",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "THORNLEAF_SCYTHE",
+   "count": 1,
+   "coins": 100000
+  }
+ ]
+}

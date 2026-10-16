@@ -6,7 +6,7 @@ import com.skyrpg.core.text.Msg;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
-import com.skyrpg.skyblock.SkyStacks;
+import com.skyrpg.items.SkyStacks;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

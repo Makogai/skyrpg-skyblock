@@ -1,0 +1,31 @@
+{
+ "name": "Pearl Dealer",
+ "island": "combat_3",
+ "offers": [
+  {
+   "item": "ENDER_STONE",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "OBSIDIAN",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "SILENT_PEARL",
+   "count": 8,
+   "coins": 10000
+  },
+  {
+   "item": "REMNANT_OF_THE_EYE",
+   "count": 1,
+   "coins": 200000
+  },
+  {
+   "item": "STONK_PICKAXE",
+   "count": 1,
+   "coins": 499999
+  }
+ ]
+}

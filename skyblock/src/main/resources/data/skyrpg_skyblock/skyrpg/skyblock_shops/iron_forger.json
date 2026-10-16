@@ -1,0 +1,36 @@
+{
+ "name": "Iron Forger",
+ "island": "mining_1",
+ "offers": [
+  {
+   "item": "IRON_INGOT",
+   "count": 20,
+   "coins": 110
+  },
+  {
+   "item": "CHAINMAIL_HELMET",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "CHAINMAIL_CHESTPLATE",
+   "count": 1,
+   "coins": 16
+  },
+  {
+   "item": "CHAINMAIL_LEGGINGS",
+   "count": 1,
+   "coins": 14
+  },
+  {
+   "item": "CHAINMAIL_BOOTS",
+   "count": 1,
+   "coins": 9
+  },
+  {
+   "item": "IRON_PICKAXE",
+   "count": 1,
+   "coins": 60
+  }
+ ]
+}

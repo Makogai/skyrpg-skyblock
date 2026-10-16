@@ -1,0 +1,36 @@
+{
+ "name": "Ulyn",
+ "island": "crimson_isle",
+ "offers": [
+  {
+   "item": "MYCEL",
+   "count": 1,
+   "coins": 20
+  },
+  {
+   "item": "BLAZE_ROD",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "MAGMA_CREAM",
+   "count": 1,
+   "coins": 20
+  },
+  {
+   "item": "QUARTZ",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "NETHER_STALK",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "GHAST_TEAR",
+   "count": 1,
+   "coins": 200
+  }
+ ]
+}

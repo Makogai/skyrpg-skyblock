@@ -1,0 +1,21 @@
+{
+ "name": "Joyful Viking",
+ "island": "foraging_1",
+ "offers": [
+  {
+   "item": "VIKING_TEAR",
+   "count": 1,
+   "coins": 15000
+  },
+  {
+   "item": "PARK_JUNGLE_TRAVEL_SCROLL",
+   "count": 1,
+   "coins": 70000
+  },
+  {
+   "item": "RAIDER_AXE",
+   "count": 1,
+   "coins": 130000
+  }
+ ]
+}

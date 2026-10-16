@@ -1,0 +1,71 @@
+{
+ "name": "Windmill Operator",
+ "island": "farming_1",
+ "offers": [
+  {
+   "item": "WHEAT",
+   "count": 3,
+   "coins": 7
+  },
+  {
+   "item": "CARROT_ITEM",
+   "count": 3,
+   "coins": 7
+  },
+  {
+   "item": "POTATO_ITEM",
+   "count": 3,
+   "coins": 7
+  },
+  {
+   "item": "MELON",
+   "count": 10,
+   "coins": 20
+  },
+  {
+   "item": "SUGAR_CANE",
+   "count": 3,
+   "coins": 15
+  },
+  {
+   "item": "PUMPKIN",
+   "count": 1,
+   "coins": 8
+  },
+  {
+   "item": "INK_SACK:3",
+   "count": 1,
+   "coins": 7
+  },
+  {
+   "item": "RED_MUSHROOM",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "BROWN_MUSHROOM",
+   "count": 1,
+   "coins": 12
+  },
+  {
+   "item": "SAND",
+   "count": 2,
+   "coins": 8
+  },
+  {
+   "item": "CACTUS",
+   "count": 1,
+   "coins": 10
+  },
+  {
+   "item": "ENCHANTED_BONE_MEAL",
+   "count": 1,
+   "coins": 6
+  },
+  {
+   "item": "ROOKIE_HOE",
+   "count": 1,
+   "coins": 10
+  }
+ ]
+}

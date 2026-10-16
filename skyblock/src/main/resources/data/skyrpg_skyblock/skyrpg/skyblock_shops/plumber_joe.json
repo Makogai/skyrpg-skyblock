@@ -1,0 +1,16 @@
+{
+ "name": "Plumber Joe",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "PLUMBER_SPONGE",
+   "count": 1,
+   "coins": 50
+  },
+  {
+   "item": "SUPER_SCRUBBER",
+   "count": 1,
+   "coins": 25000
+  }
+ ]
+}

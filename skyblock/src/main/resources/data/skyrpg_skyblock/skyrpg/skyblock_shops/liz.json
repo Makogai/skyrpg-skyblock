@@ -1,0 +1,38 @@
+{
+ "name": "Liz",
+ "island": "hub",
+ "offers": [
+  {
+   "item": "GOLDEN_BOUNTY",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "STOCK_OF_STONKS": 20
+   }
+  },
+  {
+   "item": "AVARICIOUS_CHALICE",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "STOCK_OF_STONKS": 50
+   }
+  },
+  {
+   "item": "GOLDEN_FRAGMENT",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "STOCK_OF_STONKS": 3
+   }
+  },
+  {
+   "item": "FRESHLY_MINTED_COINS",
+   "count": 1,
+   "coins": 0,
+   "costs": {
+    "STOCK_OF_STONKS": 1
+   }
+  }
+ ]
+}
