@@ -1,5 +1,5 @@
 {
-  "_comment": "Modrinth projects shipped with the pack, resolved by tools/publish_pack.py. A slug is the part after modrinth.com/mod/. Per entry: side (client/server/both; default comes from the Modrinth project, shader and resource packs are always client), version (exact version_number; default is the newest for the Minecraft version, and for fabric-api the one in gradle.properties) and filename (a stable file name; used for shader packs so iris.properties keeps pointing at them). Required dependencies of mods are added automatically (except skip_dependencies). The 'why' fields are notes only.",
+  "_comment": "Modrinth projects shipped with the pack, resolved by tools/publish_pack.py. A slug is the part after modrinth.com/mod/. Per entry: side (client/server/both; default comes from the Modrinth project, shader and resource packs are always client), version (exact version_number; default is the newest for the Minecraft version, and for fabric-api the one in gradle.properties) game_versions (Minecraft versions to accept instead of ours, for packs that work on ours but aren't tagged for it) and filename (a stable file name; used for shader packs so iris.properties keeps pointing at them). Required dependencies of mods are added automatically (except skip_dependencies). The 'why' fields are notes only.",
   "skip_dependencies": ["kotlin-lang-forge"],
   "mods": [
     { "slug": "fabric-api" },
@@ -22,7 +22,8 @@
     { "slug": "shulkerboxtooltip", "why": "shulker box contents in the tooltip" },
     { "slug": "lambdynamiclights", "why": "held torches and lava light up their surroundings" },
     { "slug": "3dskinlayers", "why": "3D hats and jacket layers on skins" },
-    { "slug": "continuity", "why": "connected glass and other connected textures" }
+    { "slug": "continuity", "why": "connected glass and other connected textures" },
+    { "slug": "catharsis", "side": "client", "why": "reads SkyBlock item data (the SkyBlock id) so FurfSky Reborn can dress SkyBlock items; needs Fabric Language Kotlin (added automatically)" }
   ],
   "shaderpacks": [
     { "slug": "complementary-reimagined", "filename": "ComplementaryReimagined.zip", "why": "pretty, vanilla-friendly, medium cost; the recommended pack" },
@@ -31,6 +32,7 @@
   ],
   "resourcepacks": [
     { "slug": "low-on-fire", "filename": "LowOnFire.zip", "why": "the on-fire overlay no longer fills the screen" },
-    { "slug": "fast-better-grass", "filename": "FastBetterGrass.zip", "why": "grass blocks show their top texture on the sides" }
+    { "slug": "fast-better-grass", "filename": "FastBetterGrass.zip", "why": "grass blocks show their top texture on the sides" },
+    { "slug": "furfsky-reborn", "game_versions": ["26.2"], "filename": "FurfSkyReborn.cats.zip", "why": "every SkyBlock item and armour piece looks as on Hypixel (read by Catharsis). Downloaded from Modrinth by each launcher, never hosted by us (its licence forbids redistribution); tagged for 26.2, verified on 26.3" }
   ]
 }

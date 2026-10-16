@@ -42,6 +42,19 @@ public final class ToggledPacks {
         return setting;
     }
 
+    /**
+     * A pack that isn't built in but arrives as a file in the resourcepacks folder ({@code "file/<name>"}, like a
+     * Modrinth pack the modpack downloads), kept on or off by a Settings toggle the same way. If the file isn't
+     * there, the toggle does nothing.
+     */
+    public static Setting registerFile(String packId, String settingId, String category, String label,
+                                       String description, boolean defaultValue) {
+        Setting setting = SkyRpgSettings.toggle(settingId, category, label,
+                description, defaultValue, enabled -> apply(packId, enabled));
+        PACKS.put(packId, setting);
+        return setting;
+    }
+
     /** Runs just before options.txt's pack list is applied at startup: adds each pack whose setting is on, removes the rest. */
     public static void beforePacksLoaded(List<String> selected, PackRepository repository) {
         PACKS.forEach((packId, setting) -> {

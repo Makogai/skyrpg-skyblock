@@ -38,7 +38,10 @@ phase so the next session can pick up where this one stopped.
       `/storage unlock` for admins), the Storage page in the K menu (previews), `/storage`, `/ec [page]`; ender chests
       open it; the old 27-slot ender chest moves into page 1. Wardrobe: 9 sets, Hypixel's layout and rules, `/wardrobe`.
       Backpacks in Storage come later (our backpacks still live in the inventory's backpack slot).
-- [ ] Pack: Catharsis + FurfSky as Modrinth entries (fetched by each launcher); ask the FurfSky team.
+- [x] Pack: Catharsis (client mod) and FurfSky Reborn (resource pack, `game_versions: ["26.2"]`, saved as
+      `FurfSkyReborn.cats.zip`) in tools/pack/modrinth.json, downloaded from Modrinth by each launcher; a Settings toggle
+      (Interface, "FurfSky Reborn item looks", on) keeps it enabled. Not published yet.
+- [ ] **Owners:** ask the FurfSky Reborn team (their Discord) that listing it in our pack is fine, before publishing.
 
 ### Notes
 

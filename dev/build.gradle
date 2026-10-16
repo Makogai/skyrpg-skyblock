@@ -89,12 +89,13 @@ if (cam) {
             def lines = camOptionsFrom.exists() ? camOptionsFrom.readLines('UTF-8') : []
             def overrides = ['pauseOnLostFocus': 'false', 'soundCategory_master': '0.0', 'fullscreen': 'false',
                              'onboardAccessibility': 'false', 'skipMultiplayerWarning': 'true', 'tutorialStep': 'none']
-            // FurfSky Reborn (the local copy in furf/, never committed) goes into the camera's resource packs, switched on.
+            // FurfSky Reborn (the local copy in furf/, never committed) goes into the camera's resource packs, switched on,
+            // under the name the modpack gives it (tools/pack/modrinth.json), so the SkyBlock setting that keeps it on finds it.
             def furf = furfDir.listFiles()?.find { it.name.endsWith('.zip') }
             if (furf != null) {
                 camPacks.mkdirs()
-                java.nio.file.Files.copy(furf.toPath(), new File(camPacks, furf.name).toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
-                overrides['resourcePacks'] = '["vanilla","fabric","file/' + furf.name + '"]'
+                java.nio.file.Files.copy(furf.toPath(), new File(camPacks, 'FurfSkyReborn.cats.zip').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                overrides['resourcePacks'] = '["vanilla","fabric","file/FurfSkyReborn.cats.zip"]'
             }
             def out = lines.findAll { line -> !overrides.containsKey(line.split(':', 2)[0]) }
             overrides.each { key, value -> out << "${key}:${value}".toString() }

@@ -74,9 +74,11 @@ def download_cached(file):
     return data
 
 
-def modrinth_versions(slug, props, loader):
-    mc = props["minecraft_version"]
-    query = urllib.parse.urlencode({"game_versions": json.dumps([mc]), "loaders": json.dumps([loader])})
+def modrinth_versions(slug, props, loader, game_versions=None):
+    """Versions for our Minecraft version, or for {@code game_versions} when an entry names them (a resource pack that
+    works on 26.3 but is only tagged for older versions)."""
+    wanted = game_versions or [props["minecraft_version"]]
+    query = urllib.parse.urlencode({"game_versions": json.dumps(wanted), "loaders": json.dumps([loader])})
     return http_json(f"https://api.modrinth.com/v2/project/{slug}/version?{query}")
 
 
@@ -97,7 +99,7 @@ def resolve_modrinth(entry, props, kind="mods"):
     slug = entry["slug"]
     folder, loader = KINDS[kind]
     project = http_json(f"https://api.modrinth.com/v2/project/{slug}")
-    versions = modrinth_versions(slug, props, loader)
+    versions = modrinth_versions(slug, props, loader, entry.get("game_versions"))
     if not versions:
         sys.exit(f"{slug}: no {loader} build for Minecraft {props['minecraft_version']} on Modrinth.")
     wanted = entry.get("version") or (props["fabric_api_version"] if slug == "fabric-api" else None)

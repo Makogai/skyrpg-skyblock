@@ -15,7 +15,7 @@ A SkyBlock item is a normal Minecraft item underneath, like on Hypixel: the {{it
 
 The pack uses the **FurfSky Reborn** texture pack, through the **Catharsis** mod. Both read that ID and give each item its proper look: the Hyperion, Terminator and Necron's armour look like they do on Hypixel. Without the pack you see the base item instead, so a Hyperion is an iron sword. Heads always show their own skin, and leather armour keeps its colour.
 
-FurfSky Reborn belongs to its own team. We never host it; your launcher downloads it from Modrinth.
+FurfSky Reborn belongs to its own team. We never host it; your launcher downloads it from Modrinth along with the pack. It's on by default; switch it off or on again in **K, Settings, Interface, FurfSky Reborn item looks**.
 
 ## Tooltips
 
