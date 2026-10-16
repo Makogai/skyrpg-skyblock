@@ -26,14 +26,15 @@ PROPERTIES = SERVER_DIR / "server.properties"
 # Applied by `setup`. Anything not listed keeps Minecraft's default.
 DEV_PROPERTIES = {
     "enable-rcon": "true",
-    "rcon.port": "25575",
+    "server-port": "25570",  # the SkyBlock project; survival keeps 25565 so both can run
+    "rcon.port": "25580",
     "server-ip": "127.0.0.1",  # dev only: nothing (RCON included) is reachable from other machines
     "online-mode": "false",  # the dev client logs in without a Microsoft account
     "spawn-protection": "0",
     "enable-command-block": "true",
     "allow-flight": "true",
     "difficulty": "normal",
-    "motd": "SkyRPG dev server",
+    "motd": "SkyRPG SkyBlock dev server",
 }
 
 LOGIN, COMMAND = 3, 2
@@ -115,7 +116,7 @@ def connect(timeout=10.0):
     if not props.get("rcon.password"):
         raise RuntimeError("No RCON password yet. Run: python tools/mc.py setup")
     host = props.get("server-ip") or "127.0.0.1"
-    return Rcon(host, int(props.get("rcon.port", "25575")), props["rcon.password"], timeout)
+    return Rcon(host, int(props.get("rcon.port", "25580")), props["rcon.password"], timeout)
 
 
 # Replies that mean a command did not do what it was told.

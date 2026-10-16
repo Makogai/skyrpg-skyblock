@@ -1,6 +1,20 @@
-# SkyRPG
+# SkyRPG SkyBlock
 
-A Hypixel SkyBlock-style RPG modpack for Minecraft **26.3 (Fabric)**. All gameplay is our own mods; existing mods are only used for utilities (JEI, maps, performance).
+A **1:1 Hypixel SkyBlock clone** for Minecraft **26.3 (Fabric)**, built as our own mods: the same game loop, systems and
+numbers, our own menus, and item looks from FurfSky Reborn (through Catharsis). The plan is `docs/design/skyblock.md`.
+
+This repo started as a copy of SkyRPG (the survival-world pack, `github.com/Makogai/minecraft-skyrpg`, remote
+`survival`), whose mods it reuses. Its dev setup uses its own ports so both projects can run side by side:
+
+| | Server | RCON | Staging | BlueMap | Debug (client / server / SkyCam / staging) |
+| --- | --- | --- | --- | --- | --- |
+| SkyBlock (this repo) | 25570 | 25580 | 25571 | 8110 | 5015 / 5016 / 5017 / 5018 |
+| Survival (minecraft-skyrpg) | 25565 | 25575 | 25566 | 8100 | 5005 / 5006 / 5007 / 5008 |
+
+`furf/` holds a local copy of FurfSky Reborn for development only: it's gitignored and must never be committed or
+hosted (its terms forbid redistribution). Players get it from Modrinth through the pack.
+
+All gameplay is our own mods; existing mods are only used for utilities (JEI, maps, performance).
 
 ## Layout
 

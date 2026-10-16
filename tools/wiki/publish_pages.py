@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publishes the wiki website to GitHub Pages (https://makogai.github.io/minecraft-skyrpg/).
+"""Publishes the wiki website to GitHub Pages (https://makogai.github.io/skyrpg-skyblock/).
 
     python tools/wiki/publish_pages.py               # build the wiki, then push it to the gh-pages branch
     python tools/wiki/publish_pages.py --skip-build  # push what's already in dist/wiki
@@ -93,7 +93,7 @@ def main():
     result = git("push", "origin", BRANCH, cwd=WORKTREE, check=False)
     if result.returncode != 0:
         sys.exit(f"Push failed:\n{result.stderr.strip()}")
-    print(f"Pushed {BRANCH}. Live in a minute at https://makogai.github.io/minecraft-skyrpg/")
+    print(f"Pushed {BRANCH}. Live in a minute at https://makogai.github.io/skyrpg-skyblock/")
 
 
 if __name__ == "__main__":

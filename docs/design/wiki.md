@@ -5,7 +5,7 @@ one script, so they always say the same thing. Decided 2026-10-14 (design calls 
 
 **Rule:** every change or addition to the game also updates the wiki, in the same piece of work: edit or add the page in
 `docs/wiki/pages/`, run `python tools/wiki/build.py`, check the output, and republish the website with
-`python tools/wiki/publish_pages.py` (GitHub Pages: https://makogai.github.io/minecraft-skyrpg/). Reference pages (items,
+`python tools/wiki/publish_pages.py` (GitHub Pages: https://makogai.github.io/skyrpg-skyblock/). Reference pages (items,
 enchants, mobs, pets...) and the page of every item are generated from the game's data, so they update when the data
 changes, but they still need a rebuild.
 
@@ -142,8 +142,8 @@ Spans: `{"x": "text"}` plus any of `"b": true` (bold), `"i": true` (italic), `"c
 ## The website
 
 A small multi-file static site, built into `dist/wiki/` and hosted on **GitHub Pages** at
-https://makogai.github.io/minecraft-skyrpg/ (repo `Makogai/minecraft-skyrpg`, public, `gh-pages` branch). It lives under
-`/minecraft-skyrpg/`, so every URL in it is relative.
+https://makogai.github.io/skyrpg-skyblock/ (repo `Makogai/skyrpg-skyblock`, public, `gh-pages` branch). It lives under
+`/skyrpg-skyblock/`, so every URL in it is relative.
 
 | File | What |
 | --- | --- |

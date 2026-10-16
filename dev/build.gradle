@@ -8,11 +8,11 @@ modProjects.each { evaluationDependsOn(it) }
 def coreClient = project(':core').sourceSets.client.output
 
 // ./gradlew :dev:runClient -Pcam -Pjoin=localhost starts a second, camera client instead: player "SkyCam" in
-// run/client-cam, debug port 5007, a fixed window (-PcamSize=1280x720), and Drogashh's options except that it
+// run/client-cam, debug port 5017, a fixed window (-PcamSize=1280x720), and Drogashh's options except that it
 // keeps rendering in the background and is muted. Claude screenshots UI with it while the user plays.
 def cam = project.hasProperty('cam')
 // ./gradlew :dev:runServer -Pstaging runs a second server from run/server-staging (a copy of the dev world, see
-// tools/staging.py) on debug port 5008, to test builds that need new jars without kicking the players.
+// tools/staging.py) on debug port 5018, to test builds that need new jars without kicking the players.
 def staging = project.hasProperty('staging')
 def camSize = (project.findProperty('camSize') ?: '1280x720').toString().split('x')
 def camOptionsFrom = rootProject.file('run/client/options.txt')
@@ -39,7 +39,7 @@ dependencies {
 
     // Carpet gives us /player fake players, so gameplay can be tested over RCON without a client.
     runtimeOnly "maven.modrinth:carpet:${carpet_version}"
-    // BlueMap renders the world as a 3D web map (http://localhost:8100) so builds can be checked in a browser.
+    // BlueMap renders the world as a 3D web map (http://localhost:8110) so builds can be checked in a browser.
     runtimeOnly "maven.modrinth:bluemap:${bluemap_version}"
 
     // ./gradlew :dev:runClient -Pextras runs the client with the performance/quality-of-life mods the player pack
@@ -108,16 +108,18 @@ loom {
             }
             // ./gradlew :dev:runClient -Pjoin=localhost joins that server straight from launch.
             if (project.hasProperty('join')) {
-                programArgs '--quickPlayMultiplayer', project.property('join').toString()
+                // The SkyBlock dev server listens on 25570 (25565 is the survival project's), so a bare host gets it.
+                def join = project.property('join').toString()
+                programArgs '--quickPlayMultiplayer', join.contains(':') ? join : join + ':25570'
             }
             // Debug port for hot-swapping code into the running game (tools/hotswap.py).
-            vmArg "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:${cam ? 5007 : 5005}"
+            vmArg "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:${cam ? 5017 : 5015}"
             ideConfigGenerated = !cam
         }
         server {
             server()
             runDir = staging ? '../run/server-staging' : '../run/server'
-            vmArg "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:${staging ? 5008 : 5006}"
+            vmArg "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:${staging ? 5018 : 5016}"
             ideConfigGenerated = !staging
         }
     }

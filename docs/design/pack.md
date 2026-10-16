@@ -9,7 +9,7 @@ packwiz-installer, which syncs the mods with the pack published on GitHub Pages.
    `dist/pack/` and builds `dist/SkyRPG-Prism-Instance.zip`.
 2. It copies `dist/pack/` to `pack/` in the `.gh-pages` worktree and commits "Pack <version>" there (`--no-commit` to skip,
    `--no-build` to reuse built jars, `--no-instance` to skip the zip). It never pushes.
-3. The owner pushes: `git push origin main gh-pages`. GitHub Pages serves https://makogai.github.io/minecraft-skyrpg/pack/pack.toml.
+3. The owner pushes: `git push origin main gh-pages`. GitHub Pages serves https://makogai.github.io/skyrpg-skyblock/pack/pack.toml.
 4. On launch the instance's pre-launch command downloads the new index, fetches every file whose hash changed and deletes
    files that left the pack (packwiz-installer keeps its own list in `packwiz.json`). Offline, the launch continues with what
    is installed.

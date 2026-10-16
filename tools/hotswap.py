@@ -6,7 +6,7 @@
     python tools/hotswap.py brainrots --to staging,cam   # only these games (client, server, cam, staging)
 
 Compiles all mods, finds the class files whose contents changed, and redefines them in every running
-dev game (client debug port 5005, server 5006, camera client 5007, see dev/build.gradle) in one step
+dev game (client debug port 5015, server 5016, camera client 5017, staging 5018, see dev/build.gradle) in one step
 through JDI (tools/AtomicRedefine.java), falling back to the JDK's jdb to name classes that can't be swapped.
 
 The dev runs use the JetBrains Runtime with enhanced redefinition, so changed method bodies and added
@@ -26,7 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MODULES = ["core", "economy", "skills", "hub", "stats", "items", "npcs", "events", "mining", "farming", "foraging", "fishing", "pets", "combat", "enchants", "world", "utils", "vfx", "chat", "progress", "mounts", "party", "magic", "helper", "wiki", "welcome", "builder", "brainrots", "crates", "dev"]
-PORTS = {"client": 5005, "server": 5006, "cam": 5007, "staging": 5008}
+PORTS = {"client": 5015, "server": 5016, "cam": 5017, "staging": 5018}
 
 
 def class_files(modules):

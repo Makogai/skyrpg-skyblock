@@ -3,11 +3,11 @@
 kicking the players off the live dev server.
 
     python tools/staging.py prepare        # copy run/server -> run/server-staging (world saved first)
-    ./gradlew :dev:runServer -Pstaging     # start it (port 25566, RCON 25576, debug 5008)
+    ./gradlew :dev:runServer -Pstaging     # start it (port 25571, RCON 25581, debug 5018)
     python tools/staging.py cmd "list" "give SkyCam ..."
-    ./gradlew :dev:runClient -Pcam -Pjoin=localhost:25566   # the camera client joins it
+    ./gradlew :dev:runClient -Pcam -Pjoin=localhost:25571   # the camera client joins it
 
-The copy listens on 127.0.0.1 only, has BlueMap's web server off (the live one owns port 8100) and gets a fresh
+The copy listens on 127.0.0.1 only, has BlueMap's web server off (the dev server's is on port 8110) and gets a fresh
 RCON password. Nothing done there touches the live world.
 """
 import secrets
@@ -22,7 +22,7 @@ LIVE = mc.SERVER_DIR
 STAGING = LIVE.parent / "server-staging"
 SKIP = {"logs", "crash-reports", "session.lock"}
 SKIP_TOP = {"bluemap"}  # BlueMap's render data (its config folder is kept)
-OVERRIDES = {"server-port": "25566", "rcon.port": "25576", "server-ip": "127.0.0.1", "motd": "SkyRPG staging (test copy)"}
+OVERRIDES = {"server-port": "25571", "rcon.port": "25581", "server-ip": "127.0.0.1", "motd": "SkyRPG SkyBlock staging (test copy)"}
 
 
 def use_staging():
@@ -50,7 +50,7 @@ def prepare():
     if webserver.exists():
         text = webserver.read_text(encoding="utf-8")
         webserver.write_text(text.replace("enabled: true", "enabled: false"), encoding="utf-8")
-    print(f"Staging copy ready in {STAGING} (port 25566, RCON 25576). Start it with ./gradlew :dev:runServer -Pstaging")
+    print(f"Staging copy ready in {STAGING} (port 25571, RCON 25581). Start it with ./gradlew :dev:runServer -Pstaging")
 
 
 def main():

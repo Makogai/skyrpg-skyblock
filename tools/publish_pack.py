@@ -6,7 +6,7 @@
 1. builds the mod jars (shared logic with package_friend.py) unless --no-build,
 2. writes dist/pack/: pack.toml, index.toml, mods/*.jar (ours) and mods/<slug>.pw.toml (Modrinth mods from
    tools/pack/modrinth.json, Fabric API first),
-3. builds dist/SkyRPG-Prism-Instance.zip (import once in Prism Launcher; it runs packwiz-installer on every launch),
+3. builds dist/SkyRPG-SkyBlock-Prism-Instance.zip (import once in Prism Launcher; it runs packwiz-installer on every launch),
 4. copies dist/pack/ to pack/ in the .gh-pages worktree and commits there ("Pack <version>") unless --no-commit.
 Never pushes: `git push origin main gh-pages` is the owner's job. The wiki files on gh-pages are not touched.
 A player's Prism instance fetches PACK_URL on each launch, so a push is all it takes to update everybody.
@@ -33,15 +33,15 @@ import publish_pages as pages    # noqa: E402
 ROOT = pf.ROOT
 DIST = ROOT / "dist"
 PACK_DIR = DIST / "pack"
-PACK_URL = "https://makogai.github.io/minecraft-skyrpg/pack/pack.toml"
+PACK_URL = "https://makogai.github.io/skyrpg-skyblock/pack/pack.toml"
 CONFIG = ROOT / "tools" / "pack" / "modrinth.json"
 DEFAULTS = ROOT / "tools" / "pack" / "defaults"
 PRESERVED_DIRS = {"config", "options.txt", "servers.dat"}    # default files a player may change
 BOOTSTRAP_URL = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
 BOOTSTRAP_CACHE = DIST / "cache" / "packwiz-installer-bootstrap.jar"
-INSTANCE_ZIP = DIST / "SkyRPG-Prism-Instance.zip"
-INSTANCE_URL = "https://makogai.github.io/minecraft-skyrpg/download/SkyRPG-Prism-Instance.zip"
-UA = {"User-Agent": "Makogai/minecraft-skyrpg publish_pack (github.com/Makogai/minecraft-skyrpg)"}
+INSTANCE_ZIP = DIST / "SkyRPG-SkyBlock-Prism-Instance.zip"
+INSTANCE_URL = "https://makogai.github.io/skyrpg-skyblock/download/SkyRPG-SkyBlock-Prism-Instance.zip"
+UA = {"User-Agent": "Makogai/skyrpg-skyblock publish_pack (github.com/Makogai/skyrpg-skyblock)"}
 
 
 def http_json(url):
@@ -234,7 +234,7 @@ def write_pack(props, version):
     index = "\n".join(lines).encode("utf-8")
     (PACK_DIR / "index.toml").write_bytes(index)
     (PACK_DIR / "pack.toml").write_text(
-        'name = "SkyRPG"\n'
+        'name = "SkyRPG SkyBlock"\n'
         f'version = "{version}"\n'
         'pack-format = "packwiz:1.1.0"\n\n'
         "[index]\n"
@@ -254,7 +254,7 @@ def write_pack(props, version):
 
 
 def build_instance(props):
-    """dist/SkyRPG-Prism-Instance.zip: a Prism instance whose pre-launch command runs packwiz-installer."""
+    """dist/SkyRPG-SkyBlock-Prism-Instance.zip: a Prism instance whose pre-launch command runs packwiz-installer."""
     if not BOOTSTRAP_CACHE.exists():
         BOOTSTRAP_CACHE.parent.mkdir(parents=True, exist_ok=True)
         with urllib.request.urlopen(urllib.request.Request(BOOTSTRAP_URL, headers=UA), timeout=120) as r:
@@ -266,7 +266,7 @@ def build_instance(props):
         "InstanceType=OneSix\n"
         # Prism imports "<iconKey>.png" from the instance folder as the instance's icon.
         "iconKey=skyrpg\n"
-        "name=SkyRPG\n"
+        "name=SkyRPG SkyBlock\n"
         "notes=Updates itself from GitHub every time you launch (packwiz).\n"
         "OverrideMemory=true\n"
         "MinMemAlloc=1024\n"
@@ -321,7 +321,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-build", action="store_true", help="use the jars already built")
     parser.add_argument("--no-commit", action="store_true", help="don't commit to the gh-pages worktree")
-    parser.add_argument("--no-instance", action="store_true", help="skip dist/SkyRPG-Prism-Instance.zip")
+    parser.add_argument("--no-instance", action="store_true", help="skip dist/SkyRPG-SkyBlock-Prism-Instance.zip")
     args = parser.parse_args()
     props = pf.properties()
     version = f"{date.today():%Y.%m.%d}-{git_short()}"

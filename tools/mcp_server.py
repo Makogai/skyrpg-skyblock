@@ -37,7 +37,7 @@ INSTRUCTIONS = f"""Tools for the SkyRPG dev Minecraft server (Fabric 26.3) runni
 - Pass `dimension` instead of writing "execute in ..." yourself. Building in chunks no player is near needs
   `load_area` [x1, z1, x2, z2], or fill/setblock fail with "That position is not loaded".
 - To "see": scan_area for blocks as text, get_player for where someone is standing and looking,
-  refresh_map then the browser at http://127.0.0.1:8100 for a 3D view, and client_screenshot to see a
+  refresh_map then the browser at http://127.0.0.1:8110 for a 3D view, and client_screenshot to see a
   player's game window (e.g. menus you built), which you then open with the Read tool. A screenshot with a
   page opens that menu on their screen, so ask first if they're playing.
 - Players may be online. Never stop the server while they are without asking them first.
@@ -319,7 +319,7 @@ def refresh_map(args):
     finally:
         conn.close()
     return (f"{reply.strip()}\nRendering takes ~30-60s. Then open "
-            f"http://127.0.0.1:8100/#{map_id}:0:64:0:120:0.5:1.0:0:0:perspective "
+            f"http://127.0.0.1:8110/#{map_id}:0:64:0:120:0.5:1.0:0:0:perspective "
             "(hash is map:x:y:z:distance:rotation:angle:0:0:perspective, or ...:0:0:0:1:flat for top-down).")
 
 

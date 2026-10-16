@@ -15,7 +15,7 @@ import net.fabricmc.loader.api.FabricLoader;
  */
 public final class WelcomeConfig {
     public static final String DEFAULT_ADDRESS = "26.194.174.124";
-    public static final String DEFAULT_SITE = "https://makogai.github.io/minecraft-skyrpg/";
+    public static final String DEFAULT_SITE = "https://makogai.github.io/skyrpg-skyblock/";
     public static final String DEFAULT_NEWS = DEFAULT_SITE + "pack/news.json";
     /** Bump to show the wizard again to everyone after a big change to it. */
     public static final int SETUP_VERSION = 1;
