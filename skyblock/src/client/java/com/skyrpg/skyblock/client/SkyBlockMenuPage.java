@@ -85,6 +85,7 @@ public final class SkyBlockMenuPage implements MenuPage {
             new Tile(Group.WORLD, "Calendar", Items.CLOCK, SkyRpgSkyblock.id("calendar"), null, () -> SkyBlockTime.now().dayText()),
             new Tile(Group.WORLD, "Recipe Book", Items.BOOK, SkyRpgSkyblock.id("recipe_book"), null, RecipeBookPage::summary),
             new Tile(Group.WORLD, "Bazaar", Items.GOLD_INGOT, SkyRpgSkyblock.id("bazaar"), null, BazaarPage::summary),
+            new Tile(Group.WORLD, "Auction House", Items.GOLDEN_HORSE_ARMOR, SkyRpgSkyblock.id("auction_house"), null, AuctionHousePage::summary),
             new Tile(Group.ACCOUNT, "Profiles", Items.NAME_TAG, SkyRpgSkyblock.id("profiles"), null, SkyBlockMenuPage::profileLine),
             new Tile(Group.ACCOUNT, "Personal Bank", Items.GOLD_BLOCK, null, null, () -> ""),
             new Tile(Group.ACCOUNT, "Settings", Items.REDSTONE_TORCH, Identifier.parse("skyrpg_core:settings"), null,

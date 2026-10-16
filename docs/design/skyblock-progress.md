@@ -107,7 +107,11 @@ phase so the next session can pick up where this one stopped.
       book, Manage Orders). Design call: a market maker quotes every product at the snapshot's prices so a small server
       always trades (orders never match each other, as on Hypixel). Opens at SkyBlock Level 7; `/bz` and a SkyBlock Menu
       tile until there's a Bazaar NPC. Refresh prices with `import_bazaar.py --fetch`.
-- [ ] Auction House.
+- [x] **Auction House** (`AuctionHouse`, `AuctionData` saved with the world, `AuctionHousePage`): BIN and bidding
+      (+15% per bid), Hypixel's fees (1% / 2% / 2.5% listing, 20-1,200 duration fee, 1% collect tax over 1M), 14
+      auctions, 6 categories by item type, search / sort / BIN filter / pages, outbid refunds (straight back or to
+      collect), Manage with collect and Collect all, sold / won / expired messages. `/ah` and a SkyBlock Menu tile
+      until there's an Auction Master NPC. Not yet: pets and their own category, "Bids" history.
 - [ ] Slayers: Revenant, Tarantula, Sven.
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
       every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the

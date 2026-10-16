@@ -4,6 +4,7 @@ import com.skyrpg.core.client.hud.HudManager;
 import com.skyrpg.core.client.menu.SkyRpgMenu;
 import com.skyrpg.core.client.theme.ToggledPacks;
 import com.skyrpg.skyblock.area.Areas;
+import com.skyrpg.skyblock.auction.AuctionHouse;
 import com.skyrpg.skyblock.bazaar.Bazaar;
 import com.skyrpg.skyblock.bazaar.BazaarCatalog;
 import com.skyrpg.skyblock.client.screen.CraftScreen;
@@ -45,6 +46,9 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         SkyRpgMenu.registerPage(new RecipeBookPage());
         SkyRpgMenu.registerPage(new SkyBlockLevelingPage());
         SkyRpgMenu.registerPage(new BazaarPage());
+        SkyRpgMenu.registerPage(new AuctionHousePage());
+        ClientPlayNetworking.registerGlobalReceiver(AuctionHouse.Listing.TYPE, (payload, context) -> AuctionHousePage.setListing(payload));
+        ClientPlayNetworking.registerGlobalReceiver(AuctionHouse.Mine.TYPE, (payload, context) -> AuctionHousePage.setMine(payload));
         ClientPlayNetworking.registerGlobalReceiver(Bazaar.Catalog.TYPE, (payload, context) -> BazaarCatalog.replace(payload.categories()));
         ClientPlayNetworking.registerGlobalReceiver(Bazaar.Book.TYPE, (payload, context) -> BazaarPage.setBook(payload));
         ClientPlayNetworking.registerGlobalReceiver(Bazaar.Orders.TYPE, (payload, context) -> BazaarPage.setOrders(payload));
