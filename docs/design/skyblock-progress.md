@@ -18,7 +18,7 @@ phase so the next session can pick up where this one stopped.
       gemstone slots, stars, museum, minion generator...) kept under `"hypixel"`. All 327 legacy materials mapped.
 - [x] `/sbitem <id>|give|search`; Hypixel-style tooltips (stat order, lore codes, bold rarity line); SkyBlock items
       don't place, hatch or get eaten as their base. Verified with FurfSky in SkyCam (2026-10-16).
-- [ ] Item browser screen to see them all (a creative-style grid with search).
+- [x] Item browser: the SkyBlock Items page in the K menu (grid, search, tooltips; admins click to get one).
 - [x] Profiles and co-ops: up to 5 fruit-named profiles; player data saved/loaded per profile
       (`<world>/skyrpg_profiles/<profile>/<player>.dat`, PlayerDataStorageMixin); switching reconnects through the
       transfer packet (`accepts-transfers=true`). `/profiles`, Profile Management page (K menu), `/coopadd`,
@@ -27,7 +27,8 @@ phase so the next session can pick up where this one stopped.
       area ±80 for members only, guests can't touch, `/is` `/island` `/warp home`, `/visit` (online players), hub gate
       leads home, dying on an island respawns you there. Hypixel deaths: keepInventory, half the purse lost.
 - [ ] SkyBlock Menu (the K menu reorganised).
-- [ ] SkyBlock time and calendar.
+- [x] SkyBlock time and calendar on Hypixel's epoch (the date matches Hypixel's), the sky synced to it,
+      Calendar and Events page, the SkyBlock sidebar HUD (date, time, ⏣ area, purse), area names from the server.
 - [ ] Public-island framework: block regrowth zones, mob spawn zones, Fast Travel and `/warp`.
 - [ ] Storage (ender chest pages, backpacks) and Wardrobe.
 - [ ] Pack: Catharsis + FurfSky as Modrinth entries (fetched by each launcher); ask the FurfSky team.

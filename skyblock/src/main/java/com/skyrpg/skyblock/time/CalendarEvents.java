@@ -1,0 +1,81 @@
+package com.skyrpg.skyblock.time;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * Hypixel's SkyBlock events by date: the yearly festivals, and the ones that come round every few days. This is the
+ * schedule only; each event's gameplay arrives with its system (the Spooky Festival with its mobs, and so on).
+ */
+public final class CalendarEvents {
+    /**
+     * An event on the calendar.
+     *
+     * @param month 0-11 and {@code day} 1-31 where it starts; {@code days} how many SkyBlock days it lasts
+     * @param everyDays for repeating events, how often (in SkyBlock days, counted from the year's first day); 0 = yearly
+     */
+    public record Event(String name, String description, int color, int month, int day, int days, int everyDays) {
+        public long length() {
+            return days * SkyBlockTime.DAY;
+        }
+    }
+
+    /** One time an event happens: real milliseconds it starts and ends. */
+    public record Occurrence(Event event, long start, long end) {
+        public boolean active(long now) {
+            return now >= start && now < end;
+        }
+    }
+
+    public static final List<Event> EVENTS = List.of(
+            new Event("Hoppity's Hunt", "Chocolate eggs to find all over the islands, all spring long.", 0xFFFF88CC, 0, 1, 93, 0),
+            new Event("Traveling Zoo", "Oringo visits the Hub with pets to sell.", 0xFF55FF55, 3, 1, 3, 0),
+            new Event("Election Booth Opens", "Vote for the next mayor in the Hub.", 0xFFFFAA00, 5, 27, 1, 0),
+            new Event("Spooky Festival", "Spooky mobs, candy and Fear Mongerer's shop.", 0xFFFF8800, 7, 29, 3, 0),
+            new Event("Traveling Zoo", "Oringo visits the Hub with pets to sell.", 0xFF55FF55, 9, 1, 3, 0),
+            new Event("Jerry's Workshop", "The winter island is open for the season.", 0xFF55FFFF, 11, 1, 31, 0),
+            new Event("Season of Jerry", "Defend Jerry's Workshop from Magma Boss's raid.", 0xFF5555FF, 11, 24, 3, 0),
+            new Event("New Year Celebration", "Cake for everyone at the end of the year.", 0xFFFF55FF, 11, 29, 3, 0),
+            new Event("Mayor Elected", "The election closes and the new mayor takes office.", 0xFFFFAA00, 2, 27, 1, 0),
+            // Every third day from the 2nd: on the real clock, each hour at :15, as on Hypixel.
+            new Event("Jacob's Farming Contest", "Farm one of three crops for 20 minutes; the best win medals.", 0xFFFFFF55, 0, 2, 1, 3));
+
+    private CalendarEvents() {
+    }
+
+    /** Every occurrence that is running or starts within {@code withinMillis} of {@code now}, soonest first. */
+    public static List<Occurrence> upcoming(long now, long withinMillis) {
+        List<Occurrence> out = new ArrayList<>();
+        SkyBlockTime.Date today = SkyBlockTime.at(now);
+        long yearStart = SkyBlockTime.start(today.year(), 0, 1);
+        for (Event event : EVENTS) {
+            if (event.everyDays() > 0) {
+                long period = event.everyDays() * SkyBlockTime.DAY;
+                long first = yearStart + (event.month() * SkyBlockTime.DAYS_PER_MONTH + event.day() - 1) * SkyBlockTime.DAY;
+                long n = Math.floorDiv(now - first, period);
+                for (long start = first + n * period; start < now + withinMillis; start += period) {
+                    if (start + event.length() > now) {
+                        out.add(new Occurrence(event, start, start + event.length()));
+                    }
+                }
+                continue;
+            }
+            for (int year = today.year() - 1; year <= today.year() + 1; year++) {
+                long start = SkyBlockTime.start(year, event.month(), event.day());
+                long end = start + event.length();
+                if (end > now && start < now + withinMillis) {
+                    out.add(new Occurrence(event, start, end));
+                }
+            }
+        }
+        out.sort(Comparator.comparingLong(Occurrence::start));
+        return out;
+    }
+
+    /** The yearly events in a month (0-11), for the calendar grid. */
+    public static List<Event> inMonth(int month) {
+        return EVENTS.stream().filter(e -> e.everyDays() == 0 && (e.month() == month
+                || month > e.month() && (month - e.month()) * SkyBlockTime.DAYS_PER_MONTH < e.day() - 1 + e.days())).toList();
+    }
+}

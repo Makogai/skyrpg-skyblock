@@ -28,7 +28,8 @@
     "fabric-api": "*",
     "skyrpg_core": "*",
     "skyrpg_items": "*",
-    "skyrpg_hub": "*"
+    "skyrpg_hub": "*",
+    "skyrpg_economy": "*"
   },
   "custom": {
     "modmenu": {

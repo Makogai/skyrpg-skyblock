@@ -1,11 +1,13 @@
 package com.skyrpg.skyblock;
 
 import com.skyrpg.hub.Hub;
+import com.skyrpg.skyblock.area.Areas;
 import com.skyrpg.skyblock.island.IslandRules;
 import com.skyrpg.skyblock.island.Islands;
 import com.skyrpg.skyblock.profile.ProfileCommands;
 import com.skyrpg.skyblock.profile.ProfileListPayload;
 import com.skyrpg.skyblock.profile.Profiles;
+import com.skyrpg.skyblock.time.SkyBlockClock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -29,6 +31,8 @@ public final class SkyRpgSkyblock implements ModInitializer {
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();
+        Areas.init();
+        SkyBlockClock.init();
         // The hub's portal leads to your island, not the survival world.
         Hub.setGate("Warping you to your island...", Islands::sendHome);
         // Profiles take over player data once the server is up (the overworld holds the profile list).

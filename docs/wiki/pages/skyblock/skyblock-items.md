@@ -54,6 +54,10 @@ A SkyBlock item doesn't act like the vanilla item it's made from:
 
 Bows, crossbows, fishing rods, ender pearls and wearable items work as normal. Nothing wears out.
 
+## Browsing every item
+
+The **SkyBlock Items** page in the K menu has every SkyBlock item in a grid, sorted by rarity. Type to search by name or SkyBlock ID, and hover an item to see its full tooltip. Admins can click an item to get one.
+
 ## Commands (admins)
 
 | Command | What it does |
