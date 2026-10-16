@@ -116,7 +116,7 @@ public final class TitleSystem {
         player.setAttached(TitleState.STATE, state.withCounter(key, state.counter(key) + amount));
     }
 
-    /** Bosses the SkyRPG Level already counted a first kill for (before titles existed) count as one kill each. */
+    /** Bosses the SkyBlock Level already counted a first kill for (before titles existed) count as one kill each. */
     private static void seedBossKills(ServerPlayer player) {
         TitleState state = TitleState.of(player);
         TitleState next = state;

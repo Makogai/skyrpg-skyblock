@@ -62,7 +62,7 @@ public final class SkyRpgTab {
     }
 
     /**
-     * Something drawn just before a player's name (the chat mod puts the SkyRPG Level badge there). {@code prefix} gets the
+     * Something drawn just before a player's name (the chat mod puts the SkyBlock Level badge there). {@code prefix} gets the
      * player's UUID and returns a component, or null; the first one that answers is shown.
      */
     public static void registerNamePrefix(java.util.function.Function<java.util.UUID, Component> prefix) {

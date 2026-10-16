@@ -67,6 +67,16 @@ public final class ChatHelperLook {
         }
     }
 
+    /** The background box ({x0, y0, x1, y1}) of the line whose text vanilla draws at {@code textY}, or null. */
+    static int[] boxAt(int textY) {
+        for (int i = boxes - 1; i >= 0; i--) {
+            if (textY >= BOXES[i * 4 + 1] && textY < BOXES[i * 4 + 3]) {
+                return new int[] {BOXES[i * 4], BOXES[i * 4 + 1], BOXES[i * 4 + 2], BOXES[i * 4 + 3]};
+            }
+        }
+        return null;
+    }
+
     /** Paints the glow of one line; {@code textY} is where vanilla draws its text. */
     public static void draw(GuiGraphicsExtractor g, HelperLine line, int textY, float opacity) {
         int box = -1;

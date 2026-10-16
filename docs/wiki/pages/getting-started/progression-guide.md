@@ -38,15 +38,15 @@ Each level above 1 adds 8% health and 5% damage. Elites are three levels higher,
 | Stage | Chapter | The chapter's last checks | Where |
 | --- | --- | --- | --- |
 | 1. Skyhaven | Welcome to Skyhaven | Step through the Wildgate | The hub |
-| 2. First steps | First Steps | SkyRPG Level 2, Combat 5, Mining 8 | Near the Wildgate |
-| 3. Into the dark | Into the Dark | Combat 12, SkyRPG Level 5 | Forgotten Crypt, first slayers |
-| 4. The red lands | The Red Lands | Combat 18, Mining 14, SkyRPG Level 9 | Danger regions, Spider Hollow, Drowned Temple |
+| 2. First steps | First Steps | SkyBlock Level 2, Combat 5, Mining 8 | Near the Wildgate |
+| 3. Into the dark | Into the Dark | Combat 12, SkyBlock Level 5 | Forgotten Crypt, first slayers |
+| 4. The red lands | The Red Lands | Combat 18, Mining 14, SkyBlock Level 9 | Danger regions, Spider Hollow, Drowned Temple |
 | 5. The Deep | The Deep | Delving 5, Mining 18 | Underground layers, Dwarven Halls |
-| 6. Fire below | Fire Below | Combat 28, SkyRPG Level 20 | The Nether, Infernal Citadel |
+| 6. Fire below | Fire Below | Combat 28, SkyBlock Level 20 | The Nether, Infernal Citadel |
 | 7. Ancient ruins | Ancient Ruins | Tier IV slayer, 64 Ender Pearls | Ruined Citadel, Catacombs |
-| 8. The void | The Void | The Ender Wyrm, SkyRPG Level 35 | The End, Astral Observatory |
+| 8. The void | The Void | The Ender Wyrm, SkyBlock Level 35 | The End, Astral Observatory |
 
-The checks are the levels the Chronicle's quests ask for. You earn SkyRPG Level from quests, collection tiers, skill levels, slayer levels and first boss kills. See [Collections](collections).
+The checks are the levels the Chronicle's quests ask for. You earn SkyBlock Level from quests, collection tiers, skill levels, slayer levels and first boss kills. See [Collections](collections).
 
 ## Stage 1: Skyhaven
 
@@ -75,7 +75,7 @@ Do chapter 1 of the Chronicle. You finish with stone tools, a compass and 32 tor
 
 **Goal:** clear your first dungeon, start slaying, enchant something.
 
-- Reach about Combat 10 to 12 and SkyRPG Level 5.
+- Reach about Combat 10 to 12 and SkyBlock Level 5.
 - Find the **Forgotten Crypt** (forests and plains, mob levels 12 to 19). Its champion is the Bone Knight and its boss is the Crypt Warden.
 - Talk to Morwen Ashgrave and start a tier I slayer quest. Tier I costs 1,000 coins and needs slayer level 0. See [Slayers](slayers).
 - Talk to Seraphine Vael and enchant a piece of gear. See [Enchanting](enchanting).
@@ -93,7 +93,7 @@ Do chapter 1 of the Chronicle. You finish with stone tools, a compass and 32 tor
 
 **Goal:** leave the safe ground and take something from a danger region.
 
-- Aim for Combat 18, Mining 14 and SkyRPG Level 9 (the chapter's last quest asks for them).
+- Aim for Combat 18, Mining 14 and SkyBlock Level 9 (the chapter's last quest asks for them).
 - **Danger regions** are the red zones on your map: the Blightlands, the Ashen Wastes, Frostgrave, the Mire, the Haunted Moors and the Shattered Highlands. Monsters there are 12 to 20 levels higher and drop region essences for region gear. `/region` tells you what is nearby.
 - Clear **Spider Hollow** (under dark forests and pale gardens, levels 19 to 26) or the **Drowned Temple** (oceans, levels 26 to 33).
 - Slayer tier II: 5,000 coins and slayer level 2.
@@ -127,7 +127,7 @@ The caves get stranger with depth, in four layers: the **Glimmer Caverns** (y 0 
 
 **Goal:** enter the Nether, find Hellforged ore and burn down the Infernal Citadel.
 
-- Combat 28 and SkyRPG Level 20 are the chapter's final check.
+- Combat 28 and SkyBlock Level 20 are the chapter's final check.
 - Nether mobs start at level 20. Make a portal and find the Ember Forest, the Bone Sea and the Obsidian Spires.
 - Mine Hellforged ore with a Tier V pickaxe. Blast it into Hellforged Ingots and craft Hellforged armour (Delving 30) and the Hellforged Pickaxe (Mining 40).
 - Fish for Magma Fish in lava (Fishing 20 for the quest, the Magmaline Rod at Fishing 40).
@@ -169,11 +169,11 @@ The caves get stranger with depth, in four layers: the **Glimmer Caverns** (y 0 
 | Fishing 40 | Magmaline Rod and the Leviathan set |
 | Combat 50 | {{item:skyrpg_items:voidreaver}} (Void Rend) and the Wyrmscale set (dodge and life steal), from the Ender Wyrm's drops |
 
-The chapter, and the Chronicle for now, ends when you reach SkyRPG Level 35 and tell Hollis.
+The chapter, and the Chronicle for now, ends when you reach SkyBlock Level 35 and tell Hollis.
 
 ## Tips for the whole climb
 
-- Keep **every** skill moving. Skill levels give stats, and each level adds 5 SkyRPG XP.
+- Keep **every** skill moving. Skill levels give stats, and each level adds 5 SkyBlock XP.
 - Enchant everything you can. See [Enchanting](enchanting).
 - Wear an accessory in each of the four slots. See [Accessories](accessories).
 - Get a pet for the skill you are levelling. See [Pets](pets).

@@ -996,7 +996,7 @@ public class EnderWyrmEntity extends Monster {
             Notice.of(Notice.Kind.COMBAT).tag("ENDER WYRM").send(player, Msg.text("+" + scales + " Wyrm Scales, +" + hearts + " Void Heart" + (hearts > 1 ? "s" : "")
                     + ", +" + Msg.number(COIN_REWARD) + " coins", ChatFormatting.LIGHT_PURPLE));
             Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.8f, 0.7f);
-            // first kill of the Wyrm for this player: SkyRPG XP (progress mod), and the Ender Wyrm quest
+            // first kill of the Wyrm for this player: SkyBlock XP (progress mod), and the Ender Wyrm quest
             com.skyrpg.core.event.BossKills.KILLED.invoker().onKilled(player, EnderWyrms.BOSS_ID, 100, com.skyrpg.core.event.BossKills.Kind.WORLD_BOSS);
         }
         firstKill(level, ranking);

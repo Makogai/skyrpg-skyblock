@@ -1,6 +1,7 @@
 package com.skyrpg.chat.client.mixin;
 
 import com.skyrpg.chat.client.ChatHelperLook;
+import com.skyrpg.chat.client.ChatPanelLook;
 import com.skyrpg.chat.client.ChatImageRender;
 import com.skyrpg.chat.client.ChatSpacing;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -45,6 +46,8 @@ public abstract class ChatImageGraphicsMixin {
             cir.setReturnValue(false);
         } else if (line instanceof ChatHelperLook.HelperLine helper) {
             ChatHelperLook.draw(graphics, helper, y, opacity);   // the glow first; vanilla draws the text over it
+        } else if (line instanceof ChatPanelLook.PanelLine panel) {
+            ChatPanelLook.draw(graphics, panel, y, opacity);
         }
     }
 }

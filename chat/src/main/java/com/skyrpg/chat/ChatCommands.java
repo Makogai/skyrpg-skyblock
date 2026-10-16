@@ -22,7 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 /**
  * {@code /r} and {@code /reply} answer your last whisper; {@code /emotes} lists the emotes (click one to put it in
- * the chat box); {@code /chat level [player]} explains a SkyRPG Level; admins give chat titles with
+ * the chat box); {@code /chat level [player]} explains a SkyBlock Level; admins give chat titles with
  * {@code /chat title <player> <colour> <text>} (a colour name like {@code gold}, or hex like {@code F2B33D}) and take
  * them away with {@code /chat title <player> clear}.
  */
@@ -104,7 +104,7 @@ final class ChatCommands {
         context.getSource().sendSystemMessage(Component.empty()
                 .append(Profiles.badge(level)).append(Component.literal(" "))
                 .append(Profiles.name(player, level))
-                .append(Component.literal(": SkyRPG Level " + level + " = " + skills + " skill levels + " + slayers + " slayer levels × "
+                .append(Component.literal(": SkyBlock Level " + level + " = " + skills + " skill levels + " + slayers + " slayer levels × "
                         + Profiles.SLAYER_WEIGHT).withColor(ChatColors.MUTED)));
         return level;
     }

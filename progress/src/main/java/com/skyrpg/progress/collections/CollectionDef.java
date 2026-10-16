@@ -37,7 +37,7 @@ public record CollectionDef(Identifier id, String category, String name, Identif
 
     /** What reaching one tier gives. */
     public record Tier(long coins, int xp, Map<String, Double> stats, List<String> recipes, String message, List<String> unlocks) {
-        /** "+250 coins, +4 SkyRPG XP, +1 Mining Fortune, unlocks Skyiron Pickaxe"; a SkyBlock tier lists its unlocks. */
+        /** "+250 coins, +4 SkyBlock XP, +1 Mining Fortune, unlocks Skyiron Pickaxe"; a SkyBlock tier lists its unlocks. */
         public String describe() {
             List<String> parts = new ArrayList<>();
             if (!unlocks.isEmpty()) {
@@ -51,7 +51,7 @@ public record CollectionDef(Identifier id, String category, String name, Identif
                 parts.add("+" + Msg.number(coins) + " coins");
             }
             if (xp > 0) {
-                parts.add("+" + xp + " SkyRPG XP");
+                parts.add("+" + xp + " SkyBlock XP");
             }
             stats.forEach((id, value) -> {
                 StatType type = StatTypes.get(id);

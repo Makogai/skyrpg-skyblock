@@ -46,6 +46,7 @@ public enum ChatKind {
             case ChatLines.ADVANCEMENT -> ADVANCEMENT;
             case ChatLines.PARTY -> PARTY;
             case ChatLines.HELPER -> HELPER;
+            case ChatLines.PANEL -> SKYRPG;
             default -> null;
         };
     }

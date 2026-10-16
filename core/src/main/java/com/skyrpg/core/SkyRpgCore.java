@@ -19,6 +19,7 @@ public class SkyRpgCore implements ModInitializer {
         PlacedBlocks.init();
         com.skyrpg.core.combat.CombatTag.init();
         com.skyrpg.core.net.WaypointTarget.register();
+        com.skyrpg.core.net.OpenPage.register();
     }
 
     public static Identifier id(String path) {

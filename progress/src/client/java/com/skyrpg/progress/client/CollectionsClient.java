@@ -10,7 +10,7 @@ import com.skyrpg.progress.collections.CollectionPayloads;
 import com.skyrpg.progress.collections.SkyRpgLevel;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 
-/** Collections page, SkyRPG Level on the Profile page, and the synced collection data on the client. */
+/** Collections page, SkyBlock Level on the Profile page, and the synced collection data on the client. */
 public final class CollectionsClient {
     private CollectionsClient() {
     }
@@ -22,7 +22,7 @@ public final class CollectionsClient {
                 (payload, context) -> context.client().execute(() -> ClientCollections.setCounts(payload.counts())));
         SkyRpgMenu.registerPage(new CollectionsPage());
         ProfilePage.setHeader(new LevelHeader());
-        SkyRpgMenu.registerProfileStat(new ProfileStat("SkyRPG Level", StatTypes.LEVEL_ICON, Theme.AQUA, -1,
+        SkyRpgMenu.registerProfileStat(new ProfileStat("SkyBlock Level", StatTypes.LEVEL_ICON, Theme.AQUA, -1,
                 player -> String.valueOf(SkyRpgLevel.level(player))));
     }
 }

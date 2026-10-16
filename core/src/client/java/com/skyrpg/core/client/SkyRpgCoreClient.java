@@ -25,6 +25,8 @@ public class SkyRpgCoreClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ClientConfig.load();
+        net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.core.net.OpenPage.TYPE,
+                (payload, context) -> com.skyrpg.core.client.menu.SkyRpgMenu.open(net.minecraft.resources.Identifier.parse(payload.page())));
         KeyConflicts.init();
         // Settings appear grouped in this order: Interface (theme, symbols, tab list), then HUD.
         ThemePack.register();

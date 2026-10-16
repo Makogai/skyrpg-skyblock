@@ -4,9 +4,14 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
 import com.skyrpg.core.client.ui.Theme;
 import com.skyrpg.core.text.Msg;
+import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemRegistry;
+import com.skyrpg.items.SkyItems;
 import com.skyrpg.minions.MinionEntity;
 import com.skyrpg.minions.MinionMenu;
 import com.skyrpg.minions.MinionType;
+import com.skyrpg.minions.MinionUpgrade;
+import com.skyrpg.skyblock.SkyStacks;
 import com.skyrpg.skyblock.client.screen.SkyScreens;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,11 +27,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import com.skyrpg.minions.MinionUpgrade;
-import com.skyrpg.items.ItemDefinition;
-import com.skyrpg.items.ItemRegistry;
-import com.skyrpg.items.SkyItems;
-import com.skyrpg.skyblock.SkyStacks;
 
 /**
  * A minion, SkyRPG style: the minion itself turning on a glowing stand with a bar that fills up to its next action,

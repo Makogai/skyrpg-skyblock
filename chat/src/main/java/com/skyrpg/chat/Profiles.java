@@ -25,10 +25,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 
 /**
- * What chat knows about a player: their SkyRPG Level, their name as chat shows it, and the profile card that pops up
+ * What chat knows about a player: their SkyBlock Level, their name as chat shows it, and the profile card that pops up
  * when you hover over it.
  *
- * <p><b>SkyRPG Level</b> = one per skill level (every loaded skill) + four per slayer level. With seven skills at 50
+ * <p><b>SkyBlock Level</b> = one per skill level (every loaded skill) + four per slayer level. With seven skills at 50
  * and four slayers at 9 that tops out at 494, so the colour steps (every 40, like Hypixel SkyBlock's) reach dark red
  * only at the very end.
  *
@@ -110,7 +110,7 @@ public final class Profiles {
         return total;
     }
 
-    /** The progress mod's SkyRPG Level (its synced XP attachment, by id), or -1 if that mod isn't there. */
+    /** The progress mod's SkyBlock Level (its synced XP attachment, by id), or -1 if that mod isn't there. */
     private static int progressLevel(ServerPlayer player) {
         try {
             if (levelAttachment == null) {
@@ -170,7 +170,7 @@ public final class Profiles {
 
     private static Component levelHover(int level) {
         int index = ChatColors.tierIndex(level);
-        MutableComponent hover = Component.literal("SkyRPG Level " + level).withStyle(ChatColors.tier(level), ChatFormatting.BOLD)
+        MutableComponent hover = Component.literal("SkyBlock Level " + level).withStyle(ChatColors.tier(level), ChatFormatting.BOLD)
                 .append(Component.literal(levelAttachment != null ? "\nEarned from quests, skills, collections and bosses."
                         : "\nOne per skill level, " + SLAYER_WEIGHT + " per slayer level.").withStyle(style -> style
                         .withBold(false).withColor(ChatColors.MUTED)));
@@ -227,7 +227,7 @@ public final class Profiles {
         }
         card.append(Component.literal(name).withStyle(style -> style.withColor(nameColor(player, level)).withBold(true)));
 
-        card.append(newLine()).append(label(StatTypes.LEVEL_ICON + " SkyRPG Level ")).append(Component.literal(String.valueOf(level))
+        card.append(newLine()).append(label(StatTypes.LEVEL_ICON + " SkyBlock Level ")).append(Component.literal(String.valueOf(level))
                 .withStyle(ChatColors.tier(level)));
         card.append(newLine()).append(label("Skill Average ")).append(Component.literal(String.format(Locale.ROOT, "%.1f", skillAverage(player)))
                 .withColor(ChatColors.AQUA));

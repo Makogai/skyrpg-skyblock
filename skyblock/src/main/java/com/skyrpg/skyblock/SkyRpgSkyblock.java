@@ -1,6 +1,7 @@
 package com.skyrpg.skyblock;
 
 import com.skyrpg.core.Features;
+import com.skyrpg.core.net.OpenPage;
 import com.skyrpg.hub.Hub;
 import com.skyrpg.skyblock.area.Areas;
 import com.skyrpg.skyblock.island.IslandRules;
@@ -19,6 +20,7 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
+import net.minecraft.commands.Commands;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +39,8 @@ public final class SkyRpgSkyblock implements ModInitializer {
         // The survival Contracts and Journal quests have no place in SkyBlock (for now).
         Features.off(Features.CONTRACTS);
         Features.off(Features.QUESTS);
+        Features.off(Features.ARTISAN_BENCH);
+        Features.off(Features.SURVIVAL_LEVEL);
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();
@@ -59,6 +63,10 @@ public final class SkyRpgSkyblock implements ModInitializer {
             ProfileCommands.register(dispatcher);
             StoragePayloads.register(dispatcher);
             FastTravel.register(dispatcher);
+            dispatcher.register(Commands.literal("sblevel").executes(ctx -> {
+                OpenPage.send(ctx.getSource().getPlayerOrException(), id("leveling"));
+                return 1;
+            }));
         });
     }
 

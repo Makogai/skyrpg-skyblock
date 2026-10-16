@@ -25,7 +25,7 @@ Right-click the NPC to talk. Click a choice, press Space to skip the typing, or 
 
 ### Chapter 1: Welcome to Skyhaven
 
-Chapter 1 has 11 quests and pays 600 coins and 165 SkyRPG XP in total. It is a tour of the town in this order.
+Chapter 1 has 11 quests and pays 600 coins and 165 SkyBlock XP in total. It is a tour of the town in this order.
 
 | Quest | From, then to | What you do | Reward |
 | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ Where each NPC stands is on [NPCs](npcs). The Master quests hand you a tool each
 
 ### Chapter 2: First Steps
 
-Chapter 2 starts outside, in the survival world. It has 12 quests and pays 2,290 coins and 365 SkyRPG XP. It asks you to:
+Chapter 2 starts outside, in the survival world. It has 12 quests and pays 2,290 coins and 365 SkyBlock XP. It asks you to:
 
 - Attune a waystone (right-click a standing stone, for example by a village bell).
 - Gather 64 Stone and 24 Coal for Tamsin, 32 Oak for Oswin, and 16 Carrots for Mabel.

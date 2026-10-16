@@ -13,13 +13,15 @@ A player's message looks like this:
 
 `[badge] Name: message`
 
-- **The level badge** is a star and a number in brackets, such as `(* 42)`. The number is the sender's **SkyRPG Level** (see [Collections](collections)). The colour changes every 40 levels: grey, white, yellow, green, dark green, aqua, dark aqua, blue, pink, purple, gold, red, and dark red from level 480. Hover a badge to see what the next colour is.
+- **The level badge** is a star and a number in brackets, such as `(* 42)`. The number is the sender's **SkyBlock Level** (see [SkyBlock Leveling](skyblock-leveling)). The colour changes every 40 levels: grey, white, yellow, green, dark green, aqua, dark aqua, blue, pink, purple, gold, red, and dark red from level 480. Hover a badge to see what the next colour is.
 - **Titles.** A title is a small pill before the name: an icon and a few letters in a colour. You earn titles in the game and pick one in the K menu (see [Titles](titles)). An administrator can also give a player a staff title, which replaces the earned one.
 - **The name** has a hover card with the player's level, skills, purse, slayers, pet and held item. **Click a name** to start a `/msg` to them.
 - **A stripe** beside each message shows its kind: player chat, whispers, joins, deaths, SkyRPG notices and more. Hover a stripe for the time.
 - Joins, leaves, deaths and advancements have their own themed lines, with icons. A new player gets a welcome that tells them to press K.
 
 Game messages about coins, skills, events and bank have an icon, a short bold tag in an accent colour, then the text, for example `SKILL`, `COINS` and `EVENT`.
+
+Messages with more to say come as one **panel** instead of a pile of lines: a level up and its rewards, a collection tier and what it unlocks, a SkyBlock level up, a new unique minion, your pet's details. The panel has a band in its colour behind the first line, a light body behind the rest, an edge on top and at the bottom, and a thin rail down its side, so it reads as one card.
 
 ## Showing off gear
 

@@ -318,7 +318,7 @@ public final class JournalPage implements MenuPage {
             y += 12;
         }
         if (r.xp() > 0) {
-            Draw.text(g, font, "+" + r.xp() + " SkyRPG XP", x + 13, y, Theme.AQUA);
+            Draw.text(g, font, "+" + r.xp() + " SkyBlock XP", x + 13, y, Theme.AQUA);
             g.fill(x + 3, y + 2, x + 8, y + 7, Theme.AQUA);
             y += 12;
         }

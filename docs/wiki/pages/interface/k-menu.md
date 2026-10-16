@@ -36,7 +36,7 @@ The window fits itself to your screen. **Settings, Interface, Menu size** lets y
 | Pets | 8 | Your pet and your pet storage |
 | Mounts | 9 | Your griffins and your stable |
 | Party | 10 | Your party: members, health, where they are, invites |
-| Collections | 11 | Gathered items, tiers and the SkyRPG Level |
+| Collections | 11 | Gathered items, tiers and the SkyBlock Level |
 | Titles | 12 | Earn titles and wear one before your name |
 | Brainrots | 13 | Your brainrot album (also on **J**) |
 | Pay | 14 | Send coins to another player |
@@ -49,7 +49,7 @@ The order shown is the order in the sidebar. Slayers and Contracts sit very clos
 The first page. Your character is on the left. On the right is a tile for each thing the mods register:
 
 - **Purse** and **Bank**, the coins you carry and the coins you keep at the bank.
-- **SkyRPG Level**, shown in aqua, which is also the badge in chat.
+- **SkyBlock Level**, shown in aqua, which is also the badge in chat.
 - **Skill Average**.
 - One tile for every stat: Health, Defense, Strength, Crit Chance and so on.
 

@@ -32,12 +32,13 @@ public class SkyRpgPets implements ModInitializer {
                         Notice.send(player, Notice.Kind.PET, Pets.grey("You have no pet out. Right-click a pet, or open the Pets page in the ").append(Msg.menuKey()).append(" menu."));
                     } else {
                         Pets.refreshLook(pet);
-                        Pets.notice(Pets.rarity(pet)).tag("YOUR PET").send(player, Pets.nameAndLevel(pet));
+                        Notice.Panel panel = Pets.notice(Pets.rarity(pet)).tag("YOUR PET").panel();
                         var lore = pet.get(DataComponents.LORE);
                         if (lore != null && lore.lines().size() > 2) {
                             // the lore without its first line (the skill) and last line (the right-click hint)
-                            lore.lines().subList(1, lore.lines().size() - 1).forEach(line -> player.sendSystemMessage(Component.literal("    ").append(line)));
+                            lore.lines().subList(1, lore.lines().size() - 1).forEach(panel::line);
                         }
+                        panel.send(player, Pets.nameAndLevel(pet));
                     }
                     return 1;
                 })
@@ -48,12 +49,13 @@ public class SkyRpgPets implements ModInitializer {
                 .then(Commands.literal("storage").executes(ctx -> {
                     ServerPlayer player = ctx.getSource().getPlayerOrException();
                     java.util.List<ItemStack> stored = Pets.storage(player);
-                    Notice.send(player, Notice.Kind.PET, Pets.grey("Pet storage " + stored.size() + " / " + Pets.maxStorage()
-                            + (stored.isEmpty() ? ". Right-click a pet item to store it." : ":")));
+                    Notice.Panel panel = Notice.of(Notice.Kind.PET).panel();
                     for (int i = 0; i < stored.size(); i++) {
-                        player.sendSystemMessage(Component.literal("  " + (i + 1) + ". ").withStyle(net.minecraft.ChatFormatting.DARK_GRAY)
+                        panel.line(Component.literal((i + 1) + ". ").withStyle(net.minecraft.ChatFormatting.DARK_GRAY)
                                 .append(Pets.nameAndLevel(stored.get(i))));
                     }
+                    panel.send(player, Pets.grey("Pet storage " + stored.size() + " / " + Pets.maxStorage()
+                            + (stored.isEmpty() ? ". Right-click a pet item to store it." : ":")));
                     return stored.size();
                 }))
                 .then(Commands.literal("give").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))

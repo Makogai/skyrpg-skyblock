@@ -1,6 +1,8 @@
 package com.skyrpg.skyblock.storage;
 
 import com.mojang.serialization.Codec;
+import com.skyrpg.core.progress.SkyBlockLevels;
+import com.skyrpg.core.progress.SkyBlockXp;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,6 +78,12 @@ public final class Wardrobe {
     }
 
     public static void open(ServerPlayer player) {
+        // As on Hypixel, the Wardrobe opens at SkyBlock Level 5.
+        if (SkyBlockXp.level(player) < SkyBlockLevels.WARDROBE && !player.isCreative()) {
+            player.sendOverlayMessage(Component.literal("You need SkyBlock Level " + SkyBlockLevels.WARDROBE + " to use the Wardrobe!")
+                    .withStyle(net.minecraft.ChatFormatting.RED));
+            return;
+        }
         player.openMenu(new SimpleMenuProvider((id, inventory, p) -> WardrobeMenu.server(id, inventory, player), Component.literal("Wardrobe")));
     }
 

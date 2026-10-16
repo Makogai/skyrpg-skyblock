@@ -39,6 +39,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         SkyRpgMenu.registerPage(new CalendarPage());
         SkyRpgMenu.registerPage(new ItemBrowserPage());
         SkyRpgMenu.registerPage(new RecipeBookPage());
+        SkyRpgMenu.registerPage(new SkyBlockLevelingPage());
         ClientPlayNetworking.registerGlobalReceiver(RecipesPayload.TYPE, (payload, context) -> payload.apply());
         StoragePage storage = new StoragePage();
         SkyRpgMenu.registerPage(storage);

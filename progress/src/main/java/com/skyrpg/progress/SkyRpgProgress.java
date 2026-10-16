@@ -5,7 +5,7 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** The Journal: collections and the SkyRPG Level ({@code collections} package), and the questline ({@code quests}). See docs/design/journal.md. */
+/** The Journal: collections and the SkyBlock Level ({@code collections} package), and the questline ({@code quests}). See docs/design/journal.md. */
 public class SkyRpgProgress implements ModInitializer {
     public static final String MOD_ID = "skyrpg_progress";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);

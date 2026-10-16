@@ -12,7 +12,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 /**
  * Optional chat titles ("[Founder]"), set by admins with {@code /chat title}. A player with a title shows it before
- * their name, and their name takes its colour instead of their SkyRPG Level colour. Saved with the player.
+ * their name, and their name takes its colour instead of their SkyBlock Level colour. Saved with the player.
  */
 public final class Titles {
     /** {@code icon} is empty for a plain staff title; earned titles (progress mod) carry one. */

@@ -73,7 +73,7 @@ Every system below is its own small mod with its own icon: see [The SkyRPG Mods]
 | Economy | Purse, bank, shops, selling, paying players | [Coins and the bank](coins-and-bank) |
 | Gear | Weapons, armour sets, tools, accessories, backpacks | [Weapons](weapons), [Armour sets](armour-sets) |
 | Artisan Bench | Crafting for all SkyRPG gear, gated by skill and collection levels | [Crafting](crafting) |
-| Collections | Gather items to climb tiers and earn the SkyRPG Level | [Collections](collections) |
+| Collections | Gather items to climb tiers and earn the SkyBlock Level | [Collections](collections) |
 | Contracts and events | Daily shared contracts and timed competitions | [Contracts](contracts), [Events](events) |
 | Combat | Mob levels, Elites, world bosses, slayers | [Combat basics](combat-basics), [Slayers](slayers) |
 | Dungeons | Eight dungeons that generate from the world seed | [Dungeons](dungeons-overview) |

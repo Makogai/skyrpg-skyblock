@@ -2,6 +2,7 @@ package com.skyrpg.minions;
 
 import com.mojang.serialization.Codec;
 import com.skyrpg.core.progress.SkyBlockXp;
+import com.skyrpg.core.text.Notice;
 import com.skyrpg.skyblock.recipe.Crafting;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +61,10 @@ public final class MinionSlots {
 
     /** Unique minions still to craft for the next slot, or 0 at the most there is. */
     public static int toNext(ServerPlayer player) {
-        int unique = unique(player);
+        return toNextFor(unique(player));
+    }
+
+    static int toNextFor(int unique) {
         for (int needed : NEEDED) {
             if (needed > unique) {
                 return needed - unique;
@@ -82,15 +86,22 @@ public final class MinionSlots {
         Minions.Placed placed = Minions.fromItem(minionItem);
         String name = placed == null ? minionItem : placed.type().title(placed.tier());
         int xp = placed == null ? 0 : TIER_XP[Math.min(TIER_XP.length - 1, placed.tier())];
-        player.sendSystemMessage(Component.literal("NEW UNIQUE MINION! ").withStyle(ChatFormatting.AQUA, ChatFormatting.BOLD)
-                .append(Component.literal(name).withStyle(ChatFormatting.WHITE))
-                .append(Component.literal(" (" + updated.size() + " crafted)").withStyle(ChatFormatting.DARK_GRAY))
-                .append(Component.literal(xp > 0 ? "  +" + xp + " SkyBlock XP" : "").withStyle(ChatFormatting.AQUA)));
-        SkyBlockXp.give(player, xp, "unique minion");
+        Notice.Panel panel = Notice.of(Notice.Kind.SKILL).icon(Notice.SPARKLE).tag("NEW UNIQUE MINION").color(0x55FFFF).panel();
+        panel.line(Component.literal(updated.size() + " unique minions crafted").withStyle(ChatFormatting.GRAY));
+        if (xp > 0) {
+            panel.line(Component.literal("+" + xp + " SkyBlock XP").withStyle(ChatFormatting.AQUA));
+        }
         int after = slotsFor(updated.size());
         if (after > before) {
-            player.sendSystemMessage(Component.literal("You can now place " + after + " minions on your island!").withStyle(ChatFormatting.GREEN));
+            panel.line(Component.literal("You can now place " + after + " minions on your island!").withStyle(ChatFormatting.GREEN));
             player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.7f, 1.2f);
+        } else {
+            int toNext = toNextFor(updated.size());
+            if (toNext > 0) {
+                panel.line(Component.literal(toNext + " more for another minion slot").withStyle(ChatFormatting.DARK_GRAY));
+            }
         }
+        panel.send(player, Component.literal(name).withStyle(ChatFormatting.WHITE));
+        SkyBlockXp.give(player, xp, "unique minion");
     }
 }

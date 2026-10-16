@@ -142,7 +142,7 @@ Everyone who fought the boss shares in the coins and Combat XP.
 
 Loot from every boss: one trophy, **14 to 24** of the region's essence, **3 to 6** {{item:skyrpg_world:blood_shard}} and a **50%** chance of a {{item:skyrpg_world:dread_crystal}}. Trophies sell for 14,000 to 30,000 coins.
 
-Kills count as region boss kills for the Journal and your SkyRPG Level.
+Kills count as region boss kills for the Journal and your SkyBlock Level.
 
 ## Staying alive
 

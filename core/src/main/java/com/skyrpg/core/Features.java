@@ -11,6 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class Features {
     public static final String CONTRACTS = "skyrpg_events:contracts";
     public static final String QUESTS = "skyrpg_progress:quests";
+    /** The survival Artisan Bench's recipe unlock lines on skill level ups. */
+    public static final String ARTISAN_BENCH = "skyrpg_items:artisan_bench";
+    /** Survival's SkyBlock Level rules: XP for every skill level and coins every 10th level (SkyBlock pays its own). */
+    public static final String SURVIVAL_LEVEL = "skyrpg_progress:survival_level";
 
     private static final Set<String> OFF = ConcurrentHashMap.newKeySet();
 

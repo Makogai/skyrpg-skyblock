@@ -491,7 +491,7 @@ public final class Quests {
         }
         if (r.xp() > 0) {
             Adapters.addXp(player, r.xp(), quest.title());
-            parts.add(Component.literal("+" + r.xp() + " SkyRPG XP").withStyle(ChatFormatting.AQUA));
+            parts.add(Component.literal("+" + r.xp() + " SkyBlock XP").withStyle(ChatFormatting.AQUA));
         }
         for (QuestData.RewardItem reward : r.items()) {
             Item item = BuiltInRegistries.ITEM.getOptional(reward.item()).orElse(null);

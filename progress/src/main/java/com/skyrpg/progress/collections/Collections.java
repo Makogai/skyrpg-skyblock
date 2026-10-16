@@ -1,9 +1,5 @@
 package com.skyrpg.progress.collections;
 
-import com.skyrpg.core.progress.SkyBlockXp;
-import com.skyrpg.core.skills.SkillLevels;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.item.component.CustomData;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.mojang.brigadier.arguments.LongArgumentType;
@@ -12,6 +8,8 @@ import com.skyrpg.core.data.JsonDataLoader;
 import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.event.ItemGains;
 import com.skyrpg.core.progress.CollectionLevels;
+import com.skyrpg.core.progress.SkyBlockXp;
+import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.core.stats.StatType;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.stats.Stats;
@@ -39,6 +37,7 @@ import net.minecraft.commands.Commands;
 import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.arguments.IdentifierArgument;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -47,9 +46,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 
 /**
- * Collections (see docs/design/journal.md): gather items from the world, climb tiers I to IX, earn coins, SkyRPG XP,
+ * Collections (see docs/design/journal.md): gather items from the world, climb tiers I to IX, earn coins, SkyBlock XP,
  * permanent stats and Artisan Bench recipes. Counts are saved per player (an attachment) and synced to that player.
  *
  * <p>Public API for other mods in the progress module: {@link #count}, {@link #tier}, {@link #add}.
@@ -154,7 +154,7 @@ public final class Collections {
                             .then(Commands.argument("xp", com.mojang.brigadier.arguments.IntegerArgumentType.integer(1)).executes(ctx -> {
                                 ServerPlayer target = EntityArgument.getPlayer(ctx, "player");
                                 SkyRpgLevel.addXp(target, com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "xp"), "command");
-                                ctx.getSource().sendSuccess(() -> Component.literal(target.getName().getString() + " is SkyRPG Level "
+                                ctx.getSource().sendSuccess(() -> Component.literal(target.getName().getString() + " is SkyBlock Level "
                                         + SkyRpgLevel.level(target) + " (" + SkyRpgLevel.xp(target) + " XP)"), false);
                                 return 1;
                             }))))
@@ -162,7 +162,7 @@ public final class Collections {
                             .then(Commands.argument("xp", com.mojang.brigadier.arguments.IntegerArgumentType.integer(0)).executes(ctx -> {
                                 ServerPlayer target = EntityArgument.getPlayer(ctx, "player");
                                 SkyRpgLevel.setXp(target, com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "xp"));
-                                ctx.getSource().sendSuccess(() -> Component.literal(target.getName().getString() + " is SkyRPG Level "
+                                ctx.getSource().sendSuccess(() -> Component.literal(target.getName().getString() + " is SkyBlock Level "
                                         + SkyRpgLevel.level(target)), false);
                                 return 1;
                             })))));
@@ -249,13 +249,14 @@ public final class Collections {
         SkyBlockXp.give(player, reward.xp(), "collection tier");
         Component body = Msg.text(def.name() + " Collection ", ChatFormatting.GRAY)
                 .append(Msg.text(CollectionLevels.roman(tier), ChatFormatting.AQUA, ChatFormatting.BOLD));
-        Notice.of(Notice.Kind.COLLECTION).tag("TIER UP").hover(Component.literal(def.name() + ": " + Msg.number(def.thresholds()[tier - 1]) + " gathered"))
-                .send(player, body);
+        Notice notice = Notice.of(Notice.Kind.COLLECTION).tag("TIER UP")
+                .hover(Component.literal(def.name() + ": " + Msg.number(def.thresholds()[tier - 1]) + " gathered"));
+        Notice.Panel panel = notice.panel();
         if (!reward.unlocks().isEmpty()) {
             // Hypixel's reward list: what the tier unlocks, one per line.
-            player.sendSystemMessage(Component.literal("   Rewards").withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
+            panel.heading("Rewards", 0x55FF55);
             for (String unlock : reward.unlocks()) {
-                player.sendSystemMessage(Component.literal("     " + unlock).withStyle(ChatFormatting.GRAY));
+                panel.line(Component.literal("  " + unlock).withStyle(ChatFormatting.GRAY));
                 java.util.regex.Matcher skillXp = SKILL_XP.matcher(unlock);
                 if (skillXp.matches()) {
                     SkillLevels.giveXp(player, Identifier.fromNamespaceAndPath("skyrpg_skills", skillXp.group(2).toLowerCase(java.util.Locale.ROOT)),
@@ -263,17 +264,18 @@ public final class Collections {
                 }
             }
             if (reward.xp() > 0) {
-                player.sendSystemMessage(Component.literal("     +" + reward.xp() + " SkyBlock XP").withStyle(ChatFormatting.AQUA));
+                panel.line(Component.literal("  +" + reward.xp() + " SkyBlock XP").withStyle(ChatFormatting.AQUA));
             }
         } else {
             String line = reward.describe();
             if (!line.isEmpty()) {
-                player.sendSystemMessage(Component.literal("   " + line).withStyle(ChatFormatting.DARK_GRAY));
+                panel.line(Component.literal(line).withStyle(ChatFormatting.DARK_GRAY));
             }
         }
         if (!reward.message().isEmpty()) {
-            player.sendSystemMessage(Component.literal("   " + reward.message()).withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+            panel.line(Component.literal(reward.message()).withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
         }
+        panel.send(player, body);
         Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.5f, 1.0f + tier * 0.06f);
     }
 

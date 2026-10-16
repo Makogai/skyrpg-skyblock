@@ -42,14 +42,14 @@ An administrator can also give a player a **staff title** with `/chat title` (se
 | **Jack of All** | star | Epic | Get all five skills to level 25. | `jack_of_all` |
 | **Grandmaster** | crown | Mythic | Get all five skills to level 50. | `grandmaster` |
 
-### SkyRPG Level
+### SkyBlock Level
 
 | Title | Icon | Rarity | How to earn it | Id |
 | --- | --- | --- | --- | --- |
-| **Adventurer** | ✦ | Uncommon | Reach SkyRPG Level 10. | `adventurer` |
-| **Hero** | shield | Rare | Reach SkyRPG Level 50. | `hero` |
-| **Legend** | ♛ | Epic | Reach SkyRPG Level 100. | `legend` |
-| **Ascendant** | mythic gem | Legendary | Reach SkyRPG Level 200. | `ascendant` |
+| **Adventurer** | ✦ | Uncommon | Reach SkyBlock Level 10. | `adventurer` |
+| **Hero** | shield | Rare | Reach SkyBlock Level 50. | `hero` |
+| **Legend** | ♛ | Epic | Reach SkyBlock Level 100. | `legend` |
+| **Ascendant** | mythic gem | Legendary | Reach SkyBlock Level 200. | `ascendant` |
 
 ### Dungeons
 

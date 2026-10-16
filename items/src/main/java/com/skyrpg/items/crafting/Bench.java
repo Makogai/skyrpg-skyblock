@@ -211,6 +211,9 @@ public final class Bench {
 
     /** Inside the level-up message: the recipes this level just unlocked. */
     private static void announceUnlocks(ServerPlayer player, Identifier skill, int oldLevel, int newLevel) {
+        if (!com.skyrpg.core.Features.on(com.skyrpg.core.Features.ARTISAN_BENCH)) {
+            return;
+        }
         List<Component> names = new ArrayList<>();
         for (BenchRecipe recipe : BenchRecipes.all().values()) {
             if (skill.equals(recipe.skill()) && recipe.level() > oldLevel && recipe.level() <= newLevel) {

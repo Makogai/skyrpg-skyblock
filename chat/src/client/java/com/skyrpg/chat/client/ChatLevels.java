@@ -9,7 +9,7 @@ import java.util.UUID;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 
-/** Every online player's SkyRPG Level as the server sends it (see LevelSync): the badge before each name in the tab list. */
+/** Every online player's SkyBlock Level as the server sends it (see LevelSync): the badge before each name in the tab list. */
 final class ChatLevels {
     private static final Map<UUID, Integer> LEVELS = new HashMap<>();
 

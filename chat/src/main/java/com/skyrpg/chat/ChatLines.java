@@ -20,6 +20,7 @@ import net.minecraft.network.chat.MutableComponent;
  * skyrpg_chat.advancement  "%1$s"      line, player name
  * skyrpg_chat.party        "%1$s%2$s"  header (tag and name), body, sender name (empty for announcements); sent by the party mod
  * skyrpg_chat.helper       "%1$s"      a SkyHelper answer, the player who asked; sent by the helper mod
+ * skyrpg_chat.panel        "%1$s"      a notice and the lines under it, its colour ("#F2B33D"), ""; sent by core's Notice.Panel
  * </pre>
  * The client turns {@code player} into {@code mention} when the line mentions you.
  */
@@ -35,6 +36,7 @@ public final class ChatLines {
     public static final String ADVANCEMENT = "advancement";
     public static final String PARTY = "party";
     public static final String HELPER = "helper";
+    public static final String PANEL = "panel";
 
     public static final String TWO_PARTS = "%1$s%2$s";
     public static final String ONE_PART = "%1$s";

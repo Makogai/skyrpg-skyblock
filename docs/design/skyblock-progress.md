@@ -89,7 +89,16 @@ phase so the next session can pick up where this one stopped.
 - [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
 - [ ] Bazaar and Auction House.
 - [ ] Slayers: Revenant, Tarantula, Sven.
-- [ ] Fairy Souls and SkyBlock XP.
+- [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
+      every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the
+      level-up panel; the Wardrobe opens at level 5. SkyBlock Leveling page (`SkyBlockLevelingPage`, `/sblevel` through
+      the new core `OpenPage` payload). Survival rules (XP per skill level, coins every 10th level) are off
+      (`Features.SURVIVAL_LEVEL`), as are the Artisan Bench unlock lines (`Features.ARTISAN_BENCH`).
+- [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
+      marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
+      SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
+      message from now on.
+- [ ] Fairy Souls (need our own hub's souls; NEU's coordinates are Hypixel's map).
 
 ### Owner directions (2026-10-16)
 

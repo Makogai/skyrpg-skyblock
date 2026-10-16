@@ -72,7 +72,7 @@ public final class ProfilePage implements MenuPage {
         return Mth.clamp(byHeight, CHARACTER_MIN, Math.max(CHARACTER_MIN, Math.min(CHARACTER_MAX, ctx.width() * 2 / 5)));
     }
 
-    /** A strip across the top of the page that a mod can add (the progress mod shows the SkyRPG Level and its XP bar). */
+    /** A strip across the top of the page that a mod can add (the progress mod shows the SkyBlock Level and its XP bar). */
     public interface Header {
         int height();
 

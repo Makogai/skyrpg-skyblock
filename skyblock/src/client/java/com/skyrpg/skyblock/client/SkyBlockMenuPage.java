@@ -69,7 +69,12 @@ public final class SkyBlockMenuPage implements MenuPage {
                     () -> "Level up as you play"),
             new Tile(Group.YOU, "Collections", Items.PAINTING, Identifier.parse("skyrpg_progress:collections"), null,
                     () -> "Gather to unlock recipes"),
-            new Tile(Group.YOU, "SkyBlock Leveling", Items.EXPERIENCE_BOTTLE, null, null, () -> ""),
+            new Tile(Group.YOU, "SkyBlock Leveling", Items.EXPERIENCE_BOTTLE, SkyRpgSkyblock.id("leveling"), null,
+                    () -> {
+                        var player = net.minecraft.client.Minecraft.getInstance().player;
+                        return player == null ? "" : "Level " + com.skyrpg.core.progress.SkyBlockXp.level(player) + " · "
+                                + com.skyrpg.core.progress.SkyBlockXp.xp(player) % 100 + "/100";
+                    }),
             new Tile(Group.GEAR, "Storage", Items.ENDER_CHEST, SkyRpgSkyblock.id("storage"), null, SkyBlockMenuPage::storageLine),
             new Tile(Group.GEAR, "Wardrobe", Items.LEATHER_CHESTPLATE, null,
                     () -> ClientPlayNetworking.send(new StoragePayloads.Open(-1)), SkyBlockMenuPage::wardrobeLine),

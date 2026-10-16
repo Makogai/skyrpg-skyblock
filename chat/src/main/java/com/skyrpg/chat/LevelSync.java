@@ -16,7 +16,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 
 /**
- * Every online player's SkyRPG Level for every client, so the tab list can show it next to each name (a client only
+ * Every online player's SkyBlock Level for every client, so the tab list can show it next to each name (a client only
  * knows the synced level of players it can see). A joining player gets the whole list; afterwards only changes go out,
  * checked every two seconds. A level of -1 means the player left.
  */

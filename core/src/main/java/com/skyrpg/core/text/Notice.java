@@ -1,5 +1,7 @@
 package com.skyrpg.core.text;
 
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.FontDescription;
@@ -188,6 +190,59 @@ public final class Notice {
 
     public void send(ServerPlayer player, Component body) {
         player.sendSystemMessage(build(body));
+    }
+
+    /** This notice as the header of a {@link Panel}: lines go under it and it all arrives as one chat message. */
+    public Panel panel() {
+        return new Panel(this);
+    }
+
+    /**
+     * A notice with lines under it ("LEVEL UP Mining IV", then its rewards), sent as ONE chat message instead of a line
+     * per message. The chat mod draws it as a card in the notice's colour: its marker is {@code skyrpg_chat.panel}, with
+     * the text, the colour ("#F2B33D") and an empty name as arguments (see the chat mod's ChatLines). Without the chat
+     * mod it reads as the same lines.
+     */
+    public static final class Panel {
+        public static final String MARKER = "skyrpg_chat.panel";
+        private final Notice header;
+        private final List<Component> lines = new ArrayList<>();
+
+        private Panel(Notice header) {
+            this.header = header;
+        }
+
+        /** A line under the header. */
+        public Panel line(Component line) {
+            lines.add(line);
+            return this;
+        }
+
+        /** A plain line in one colour. */
+        public Panel line(String text, int rgb) {
+            return line(Component.literal(text).withColor(rgb));
+        }
+
+        /** A section title inside the panel ("Rewards"). */
+        public Panel heading(String text, int rgb) {
+            return line(Component.literal(text).withStyle(Style.EMPTY.withColor(TextColor.fromRgb(rgb)).withBold(true)));
+        }
+
+        public boolean hasLines() {
+            return !lines.isEmpty();
+        }
+
+        public MutableComponent build(Component body) {
+            MutableComponent content = Component.empty().append(header.build(body));
+            for (Component line : lines) {
+                content.append(Component.literal("\n  ")).append(line);
+            }
+            return Component.translatableWithFallback(MARKER, "%1$s", content, String.format("#%06X", header.color), "");
+        }
+
+        public void send(ServerPlayer player, Component body) {
+            player.sendSystemMessage(build(body));
+        }
     }
 
     // ---- shortcuts -------------------------------------------------------------------------------------------

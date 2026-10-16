@@ -19,7 +19,7 @@ SkyRPG is not one big mod but **29 small ones** that work together, each adding 
 | **Items** | SkyRPG weapons, armour, tools, accessories and backpacks, with rarities and abilities; the Artisan Bench | [Weapons](weapons), [Crafting](crafting) |
 | **Economy** | Coins, the purse, the bank, selling, shops and paying players | [Coins and the bank](coins-and-bank) |
 | **NPCs** | The people of Skyhaven: shopkeepers, the banker, quest givers | [NPCs](npcs) |
-| **Journal** | The Skyhaven Chronicle questline, collections and the SkyRPG Level | [Quests and the Journal](quests-and-journal) |
+| **Journal** | The Skyhaven Chronicle questline, collections and the SkyBlock Level | [Quests and the Journal](quests-and-journal) |
 | **Mining** | Glimmer Shards, ores, ore nodes that regrow, and drops straight into your inventory | [Mining](mining) |
 | **Farming** | Special crops, planters, sprinklers, Dew, Rich Compost and meals | [Farming](farming) |
 | **Foraging** | Five new trees, regrowing stumps, Heartwood and Treefeller axes | [Foraging](foraging) |

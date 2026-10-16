@@ -22,7 +22,7 @@ public final class ChatColors {
     public static final int WHISPER = 0xF08CE8;
 
     /**
-     * SkyRPG Level colours, one per 40 levels, the same steps Hypixel SkyBlock uses: grey, white, yellow, green,
+     * SkyBlock Level colours, one per 40 levels, the same steps Hypixel SkyBlock uses: grey, white, yellow, green,
      * dark green, aqua, dark aqua, blue, pink, purple, gold, red and (480+) dark red.
      */
     private static final ChatFormatting[] LEVEL_TIERS = {

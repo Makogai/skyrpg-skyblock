@@ -43,7 +43,7 @@ Quests that have no giver start by themselves. A "journal entry" pops up on scre
 | Visit | Find a place, such as a dungeon entrance, a danger region, a layer, a dimension, or a waystone |
 | Collection | Gather an amount of an item after accepting the quest, or reach a collection tier. See [Collections](collections) |
 | Skill level | Reach a skill level |
-| Reach level | Reach a SkyRPG Level |
+| Reach level | Reach a SkyBlock Level |
 | Kill | Defeat a number of a kind of mob |
 | Dungeon clear | Clear a dungeon |
 | Slayer tier | Start or finish a slayer quest of a tier |
@@ -53,7 +53,7 @@ Quests that have no giver start by themselves. A "journal entry" pops up on scre
 
 ### Rewards
 
-Every quest pays coins and **SkyRPG XP**, and many add items. SkyRPG XP counts towards your SkyRPG Level, 100 XP a level. Quest rewards are a large share of it. See [Collections](collections).
+Every quest pays coins and **SkyBlock XP**, and many add items. SkyBlock XP counts towards your SkyBlock Level, 100 XP a level. Quest rewards are a large share of it. See [Collections](collections).
 
 ## The Journal
 
@@ -77,7 +77,7 @@ A **Quest Tracker** box on the HUD shows the quest you track. It sits on the mid
 
 ## The chapters
 
-| # | Chapter | Quests | Coins | SkyRPG XP | What it teaches |
+| # | Chapter | Quests | Coins | SkyBlock XP | What it teaches |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Welcome to Skyhaven | 11 | 600 | 165 | The K menu, the map, coins and the bank, each Master, the Artisan Bench, the Wildgate |
 | 2 | First Steps | 12 | 2,290 | 365 | Waystones, gathering, collections, the Bench, your first pet |
@@ -88,7 +88,7 @@ A **Quest Tracker** box on the HUD shows the quest you track. It sits on the mid
 | 7 | Ancient Ruins | 5 | 46,000 | 3,800 | The Ruined Citadel, the Catacombs, slayer tier IV |
 | 8 | The Void | 5 | 101,000 | 7,800 | The End, the Astral Observatory, the Ender Wyrm |
 
-How much SkyRPG XP all the quests pay is on [SkyRPG Level: the maximum](skyrpg-level-max).
+How much SkyBlock XP all the quests pay is on [SkyBlock Level: the maximum](skyrpg-level-max).
 
 ### Chapter 1: Welcome to Skyhaven
 
@@ -100,11 +100,11 @@ Outside, in the survival world. You attune a waystone and do honest gathering wo
 
 ### Chapter 3: Into the Dark
 
-Find and clear the Forgotten Crypt for Kestrel and craft the Cryptbreaker for Brannoc. Get an enchanted item for Seraphine. Morwen asks you to start and finish a tier I slayer quest. The last quest wants Combat 12 and SkyRPG Level 5.
+Find and clear the Forgotten Crypt for Kestrel and craft the Cryptbreaker for Brannoc. Get an enchanted item for Seraphine. Morwen asks you to start and finish a tier I slayer quest. The last quest wants Combat 12 and SkyBlock Level 5.
 
 ### Chapter 4: The Red Lands
 
-Enter a danger region, carry 10 region essences for Odessa, craft a piece of region gear, finish a tier II slayer quest, and clear Spider Hollow or the Drowned Temple. It ends with Combat 18, Mining 14 and SkyRPG Level 9.
+Enter a danger region, carry 10 region essences for Odessa, craft a piece of region gear, finish a tier II slayer quest, and clear Spider Hollow or the Drowned Temple. It ends with Combat 18, Mining 14 and SkyBlock Level 9.
 
 ### Chapter 5: The Deep
 
@@ -112,7 +112,7 @@ Descend into the Glimmer Caverns, the Fungal Depths, the Dwarven Halls and the M
 
 ### Chapter 6: Fire Below
 
-Enter the Nether and find the Ember Forest. Gather 64 Hellforged Scrap, fish 8 Magma Fish (Fishing 20), clear the Infernal Citadel and craft Hellforged armour. It ends with Combat 28 and SkyRPG Level 20.
+Enter the Nether and find the Ember Forest. Gather 64 Hellforged Scrap, fish 8 Magma Fish (Fishing 20), clear the Infernal Citadel and craft Hellforged armour. It ends with Combat 28 and SkyBlock Level 20.
 
 ### Chapter 7: Ancient Ruins
 
@@ -120,7 +120,7 @@ Find the Ruined Citadel and clear it, clear the Catacombs, gather 64 Ender Pearl
 
 ### Chapter 8: The Void
 
-Enter the End, reach the Shattered Isles, clear the Astral Observatory and defeat the Ender Wyrm. The last quest, "The Chronicle, So Far", asks for SkyRPG Level 35 and pays 30,000 coins and 2,500 XP. More chapters will follow.
+Enter the End, reach the Shattered Isles, clear the Astral Observatory and defeat the Ender Wyrm. The last quest, "The Chronicle, So Far", asks for SkyBlock Level 35 and pays 30,000 coins and 2,500 XP. More chapters will follow.
 
 > [!TIP]
 > Gathering, crafting and kill objectives only count what you do **after you accept the quest**. Stone you mined yesterday does not count towards "Gather 64 Stone"; start mining once the quest is yours. A quest an NPC gives (a gold "Speak to ... to begin" box in the Journal) has not started until you talk to them, and tracking it points at that NPC.

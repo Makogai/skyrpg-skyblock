@@ -107,7 +107,7 @@ Void Echoes are named, purple endermen:
 | A 5% chance of a Thunderclap scroll and a 2% chance of a Meteor scroll | Rolled separately for every participant |
 | 30,000 Combat XP | The player who dealt the most damage |
 | 20,000 Combat XP | Every other participant |
-| A boss kill for your journal, SkyRPG XP (15 the first time) and the Ender Wyrm quest | Every participant |
+| A boss kill for your journal, SkyBlock XP (15 the first time) and the Ender Wyrm quest | Every participant |
 | A server-wide announcement | The first time the Wyrm is slain on this server, and a smaller one for each kill |
 
 When it dies, each participant gets a ranking ("#1 ... damage to the Ender Wyrm") with their damage.

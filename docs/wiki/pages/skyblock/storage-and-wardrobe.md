@@ -21,7 +21,7 @@ The Ender Chest screen has a tab for every page down its left side. Click one to
 
 ## Wardrobe
 
-The Wardrobe saves up to **9 armour sets** and lets you swap between them in one click. Open it from the Storage page, the tab in the Ender Chest screen, or type **`/wardrobe`**.
+The Wardrobe saves up to **9 armour sets** and lets you swap between them in one click. Open it from the Storage page, the tab in the Ender Chest screen, or type **`/wardrobe`**. As on Hypixel, it opens at **SkyBlock Level 5** (see [SkyBlock Leveling](skyblock-leveling)).
 
 Each set is a card with a **model of you wearing it**. The model turns slowly, and towards your mouse when you point at it. Point at a model to see everything that set gives you, added up.
 
