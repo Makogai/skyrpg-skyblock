@@ -125,9 +125,18 @@ phase so the next session can pick up where this one stopped.
       core `SlayerLevels` (server: loaded lines; client: the page data, sent on join too). Slayers page: Hypixel's
       level track (each level's stats, SkyBlock XP, unlocked items), tier cards with Beginner..Excruciating titles, what
       a locked tier needs, and the drop table as item slots (odds colour, amount, chance, level in the tooltip).
-      Not yet: Hypixel's boss abilities (the bosses still use SkyRPG's tricks: Grave Slam, Web Shot, Void Bolt and Null
-      Shield; Sven has none), T5 Revenant / Tarantula abilities, runes, enchanted books and dyes in the drops (not in
-      our item set), Maddox's Batphone, the Slayer RNG meter, Aatrox's slayer perks, Inferno Demonlord and Riftstalker.
+      **Boss abilities 1:1** (`HypixelBosses`, kinds revenant/tarantula/sven/voidgloom so the survival tricks stay out):
+      DPS as ~1 hit a second, regeneration after 5 s without hurting anyone, the slam-dunk for standing still; Revenant
+      (arrows heal it, Life Drain, Pestilence with a 25% Defense shred, Enrage's mad/enraged cycle, the Atoned Horror's
+      Redemption, TNT circles and Thermonuclear); Tarantula (a cave spider rider, Backstab, Noxious Paralysis' Vitality
+      and Speed debuffs, Web of Lies' webs and egg sacs, Bat Barrage, the Conjoined Brood); Sven (Agile, True Damage,
+      Call the pups! with Protected); Voidgloom (Malevolent Hitshield with its DPS bonus, Dissonance, Yang Glyphs thrown
+      from its hands, Nukekubi heads broken by looking, Broken Heart Radiation's beams). Numbers Hypixel doesn't publish
+      are our calls (Life Drain 1.5x DPS, Pestilence 0.25x, Enrage x3, slam-dunk 2x DPS true, TNT 15-60% of health).
+      Core gained `TrueDamage` (True Defense cuts it; ability hits skip invulnerability frames) and Vitality now scales
+      all healing (stats mixin); `SlayerCurses` is the debuff stat source.
+      Not yet: runes, enchanted books and dyes in the drops (not in our item set), Maddox's Batphone, the Slayer RNG
+      meter, slayer minibosses (Revenant Sycophant etc.), Aatrox's slayer perks, Inferno Demonlord and Riftstalker.
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
       every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the
       level-up panel; the Wardrobe opens at level 5. SkyBlock Leveling page (`SkyBlockLevelingPage`, `/sblevel` through

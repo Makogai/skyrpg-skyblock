@@ -637,7 +637,7 @@ public final class Slayers {
             ServerPlayNetworking.send(player, SlayerPayloads.Status.NONE);
             return;
         }
-        ServerPlayNetworking.send(player, new SlayerPayloads.Status(line.name(), line.color(), quest.tier(), (int) Math.floor(quest.progress()),
+        ServerPlayNetworking.send(player, new SlayerPayloads.Status(HypixelBosses.bossName(line, quest.tier()), line.color(), quest.tier(), (int) Math.floor(quest.progress()),
                 tier.xp(), quest.bossUp(), SlayerBosses.secondsLeft(player)));
     }
 

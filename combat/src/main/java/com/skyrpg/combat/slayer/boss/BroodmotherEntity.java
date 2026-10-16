@@ -91,6 +91,22 @@ public class BroodmotherEntity extends Spider implements TieredBoss {
         return Mth.lerp(partialTick, shieldAnimO, shieldAnim);
     }
 
+    /**
+     * A spider with a rider leaves the attacking to the rider (spider jockeys), so the Tarantula Broodfather, which wears
+     * a cave spider, gets a plain melee attack that doesn't care.
+     */
+    @Override
+    protected void registerGoals() {
+        super.registerGoals();
+        goalSelector.addGoal(4, new net.minecraft.world.entity.ai.goal.MeleeAttackGoal(this, 1.0, true));
+    }
+
+    /** The cave spider riding the Tarantula Broodfather is for show: it never steers (a riding mob would, like a jockey). */
+    @Override
+    public net.minecraft.world.entity.LivingEntity getControllingPassenger() {
+        return null;
+    }
+
     @Override
     public void tick() {
         super.tick();

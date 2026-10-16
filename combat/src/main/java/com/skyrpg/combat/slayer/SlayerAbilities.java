@@ -111,6 +111,9 @@ public final class SlayerAbilities {
 
     /** The lore of tier {@code tier} (1-4) of a line kind, or null. */
     public static TierLore lore(String kind, int tier) {
+        if (HypixelBosses.isHypixelKind(kind)) {
+            return HypixelBosses.lore(kind, tier);
+        }
         List<TierLore> tiers = LORE.get(kind);
         return tiers == null || tier < 1 || tier > tiers.size() ? null : tiers.get(tier - 1);
     }
@@ -315,7 +318,7 @@ public final class SlayerAbilities {
         TEMP_BLOCKS.clear();
     }
 
-    private static void tempBlock(ServerLevel level, BlockPos pos, Block block, long until) {
+    static void tempBlock(ServerLevel level, BlockPos pos, Block block, long until) {
         BlockState here = level.getBlockState(pos);
         if (here.isAir() || here.canBeReplaced() && here.getFluidState().isEmpty()) {
             level.setBlock(pos, block.defaultBlockState(), Block.UPDATE_ALL);

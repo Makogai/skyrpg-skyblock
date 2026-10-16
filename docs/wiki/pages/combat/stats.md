@@ -25,6 +25,8 @@ Stats are the numbers that make your character stronger. Gear, skill levels, pet
 | Crit Damage | 50% | The extra damage a critical hit does. |
 | Speed | 100 | How fast you walk. 100 is normal. |
 | Intelligence | 0 | Each point adds 1 to your maximum mana and 1% to your spell damage. Abilities and spells cost mana. |
+| True Defense | 0 | Cuts True Damage the way Defense cuts the rest. |
+| Vitality | 100 | How much healing you get. 100 is normal; 50 heals half as much. |
 | Damage | none | Only weapons have it. It is the weapon's base damage. |
 
 ### Damage and crits
@@ -62,6 +64,14 @@ Every time something hurts you, the damage is multiplied by `100 / (100 + Defens
 | 300 | 25% | 4 x your Health |
 
 So "effective health" is `Health x (1 + Defense / 100)`. Defense applies to mobs, bosses, traps, fire and falling. It does not apply to damage that ignores invulnerability, such as the void. Armour pieces give Defense directly (they have no vanilla armour points). Slayer armour wards and similar reductions apply before Defense.
+
+### True Damage and True Defense
+
+Some boss attacks deal **True Damage**, which Defense does nothing against: Sven Packmaster's bites, the slam-dunk every slayer boss does to a player who stands still, the Atoned Horror's TNT and blast, and the Voidgloom Seraph's glyphs and beams. Only **True Defense** cuts it, by the same `100 / (100 + True Defense)`. See [Slayers](slayers).
+
+### Vitality
+
+Every bit of healing you get is multiplied by `Vitality / 100`. It starts at 100. The Tarantula Broodfather's Noxious Paralysis and the Voidgloom Seraph's beams lower it during the fight.
 
 ### Speed
 

@@ -5,7 +5,7 @@
  "color": "#AA0000",
  "icon": "minecraft:string",
  "boss": "skyrpg_combat:broodmother",
- "kind": "broodmother",
+ "kind": "tarantula",
  "counts": {
   "minecraft:spider": 5,
   "minecraft:cave_spider": 5

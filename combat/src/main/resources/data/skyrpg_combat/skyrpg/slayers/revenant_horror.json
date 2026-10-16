@@ -5,7 +5,7 @@
  "color": "#55FF55",
  "icon": "minecraft:rotten_flesh",
  "boss": "skyrpg_combat:grave_tyrant",
- "kind": "grave_tyrant",
+ "kind": "revenant",
  "counts": {
   "minecraft:zombie": 6,
   "minecraft:husk": 6,

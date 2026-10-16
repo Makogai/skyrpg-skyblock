@@ -166,7 +166,7 @@ final class BossMoves {
     }
 
     /** Spawns an item display and a hitbox over it, tagged so a restart's sweep can clean them up. */
-    private static Totem totem(SlayerBosses.Run run, String kind, Vec3 at, String item, float scale, float width, float height, int ticks, int hits) {
+    static Totem totem(SlayerBosses.Run run, String kind, Vec3 at, String item, float scale, float width, float height, int ticks, int hits) {
         ServerLevel level = run.level;
         String tag = TOTEM_TAG + "_" + UUID.randomUUID().toString().substring(0, 8);
         String pos = String.format(java.util.Locale.ROOT, "%.2f %.2f %.2f", at.x, at.y, at.z);
@@ -213,6 +213,22 @@ final class BossMoves {
             default -> "broke it!";
         };
         SlayerBosses.tell(totem.run, Component.literal(player.getName().getString() + " " + what).withStyle(ChatFormatting.GREEN));
+        SlayerBosses.updateBar(totem.run);
+    }
+
+    /** Something broken another way than by hitting it (a glyph stood on, a head stared down); {@code what} may be null. */
+    static void breakTotem(Totem totem, ServerPlayer player, String what) {
+        if (!TOTEMS.remove(totem)) {
+            return;
+        }
+        remove(totem);
+        Vec3 at = totem.hitbox == null ? totem.run.boss.position() : totem.hitbox.position().add(0, 0.6, 0);
+        ServerLevel level = totem.run.level;
+        level.playSound(null, at.x, at.y, at.z, SoundEvents.GLASS_BREAK, SoundSource.HOSTILE, 1.0f, 0.8f);
+        level.sendParticles(ParticleTypes.POOF, at.x, at.y, at.z, 20, 0.4, 0.4, 0.4, 0.05);
+        if (what != null) {
+            SlayerBosses.tell(totem.run, Component.literal(player.getName().getString() + " " + what).withStyle(ChatFormatting.GREEN));
+        }
         SlayerBosses.updateBar(totem.run);
     }
 
@@ -275,8 +291,7 @@ final class BossMoves {
                 }
                 SlayerBosses.tell(run, Msg.text("A Void Beacon detonates!", ChatFormatting.DARK_PURPLE, ChatFormatting.BOLD));
             }
-            default -> {
-            }
+            default -> HypixelBosses.goOff(totem);
         }
     }
 
@@ -285,14 +300,14 @@ final class BossMoves {
                 p -> !p.isSpectator() && !p.isCreative() && p.position().distanceTo(at) <= range);
     }
 
-    private static void warn(SlayerBosses.Run run, String text, ChatFormatting color) {
+    static void warn(SlayerBosses.Run run, String text, ChatFormatting color) {
         for (ServerPlayer player : SlayerBosses.players(run, 30)) {
             player.sendOverlayMessage(Msg.text("⚠ " + text, color, ChatFormatting.BOLD));
         }
     }
 
     /** A ring on the ground, shown several times so it reads as a warning. */
-    private static void markCircle(SlayerBosses.Run run, Vec3 at, double radius, int ticks, net.minecraft.core.particles.ParticleOptions particle) {
+    static void markCircle(SlayerBosses.Run run, Vec3 at, double radius, int ticks, net.minecraft.core.particles.ParticleOptions particle) {
         for (int i = 0; i <= ticks; i += 5) {
             later(run, i, () -> SlayerBosses.ring(run.level, particle, at.add(0, 0.15, 0), radius, (int) (radius * 10)));
         }

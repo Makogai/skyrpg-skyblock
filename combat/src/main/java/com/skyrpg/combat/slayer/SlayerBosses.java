@@ -102,6 +102,8 @@ public final class SlayerBosses {
         boolean cocoonUsed;
         long retreatReadyAt;
         boolean collapseUsed;
+        /** Hypixel's bosses' own state (HypixelBosses). */
+        final HypixelBosses.State hx = new HypixelBosses.State();
 
         Run(UUID owner, SlayerLine line, int tierNumber, SlayerLine.Tier tier) {
             this.owner = owner;
@@ -128,6 +130,8 @@ public final class SlayerBosses {
     static void init() {
         BossMoves.init();
         SlayerAbilities.init();
+        HypixelBosses.init();
+        SlayerCurses.init();
         ServerTickEvents.END_SERVER_TICK.register(SlayerBosses::tick);
         ServerLifecycleEvents.SERVER_STOPPED.register(server -> {
             RUNS.clear();
@@ -277,6 +281,9 @@ public final class SlayerBosses {
                 revenant.setDropChance(slot, 0);
             }
         }
+        if (line.hypixel()) {
+            HypixelBosses.setUp(boss, line, tierNumber, tier);
+        }
         if (boss instanceof BoneMarshalEntity marshal) {
             marshal.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));
             marshal.setDropChance(EquipmentSlot.MAINHAND, 0);
@@ -300,6 +307,9 @@ public final class SlayerBosses {
         run.started = now;
         run.lastHit = now;
         RUNS.put(owner.getUUID(), run);
+        if (line.hypixel()) {
+            HypixelBosses.started(run, owner);
+        }
         updateBar(run);
     }
 
@@ -342,13 +352,16 @@ public final class SlayerBosses {
             case "broodmother" -> BossEvent.BossBarColor.RED;
             case "bone_marshal" -> BossEvent.BossBarColor.WHITE;
             case "sven" -> BossEvent.BossBarColor.WHITE;
+            case "revenant" -> BossEvent.BossBarColor.GREEN;
+            case "tarantula" -> BossEvent.BossBarColor.RED;
+            case "voidgloom" -> BossEvent.BossBarColor.PURPLE;
             case "void_stalker" -> BossEvent.BossBarColor.PURPLE;
             default -> BossEvent.BossBarColor.RED;
         };
     }
 
     private static MutableComponent title(SlayerLine line, int tierNumber) {
-        return Component.literal(line.name() + " " + Msg.roman(tierNumber)).withColor(line.color() & 0xFFFFFF).withStyle(ChatFormatting.BOLD);
+        return Component.literal(HypixelBosses.bossName(line, tierNumber) + " " + Msg.roman(tierNumber)).withColor(line.color() & 0xFFFFFF).withStyle(ChatFormatting.BOLD);
     }
 
     private static void set(Mob mob, Holder<Attribute> attribute, double value) {
@@ -368,6 +381,9 @@ public final class SlayerBosses {
     /** The boss leaves (and its minions with it); its quest and timer stay. */
     private static void takeDown(Run run) {
         BossMoves.clear(run);
+        if (run.line.hypixel()) {
+            HypixelBosses.takeDown(run);
+        }
         run.bar.removeAllPlayers();
         if (run.boss != null && run.boss.isAlive()) {
             run.boss.discard();
@@ -461,6 +477,10 @@ public final class SlayerBosses {
         boolean newPhase = phase > run.phase;
         run.phase = Math.max(run.phase, phase);
         if (t <= 0) {
+            return;
+        }
+        if (run.line.hypixel()) {
+            HypixelBosses.tick(run, owner, t, health);
             return;
         }
         switch (run.line.kind()) {
@@ -561,6 +581,10 @@ public final class SlayerBosses {
     /** A hit on a player: life drain, venom or blindness. */
     private static void bossHit(Run run, ServerPlayer player, boolean melee) {
         run.lastHit = now;
+        if (run.line.hypixel()) {
+            HypixelBosses.bossHit(run, player, melee);
+            return;
+        }
         int tier = run.tierNumber;
         switch (run.line.kind()) {
             case "grave_tyrant" -> {
@@ -590,7 +614,8 @@ public final class SlayerBosses {
             return 1;
         }
         Run run = byBoss(entity);
-        if (run == null) {
+        if (run == null || run.line.hypixel()) {
+            // Hypixel's bosses: HypixelBosses' own multiplier.
             return 1;
         }
         if (run.nullHits > 0) {
@@ -731,6 +756,9 @@ public final class SlayerBosses {
             name.append(Msg.text(" · " + tierTitle, ChatFormatting.GRAY));
         }
         SlayerAbilities.barExtras(run, name, now);
+        if (run.line.hypixel()) {
+            HypixelBosses.barExtras(run, name, now);
+        }
         if (run.nullHits > 0) {
             name.append(Msg.text("  ⬡ Null Shield: " + run.nullHits, ChatFormatting.LIGHT_PURPLE));
         }
@@ -776,7 +804,7 @@ public final class SlayerBosses {
 
     private static boolean inRun(Mob mob) {
         for (Run run : RUNS.values()) {
-            if (run.boss == mob || run.minions.contains(mob)) {
+            if (run.boss == mob || run.minions.contains(mob) || run.hx.rider == mob) {
                 return true;
             }
         }

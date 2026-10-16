@@ -6,6 +6,7 @@ import com.skyrpg.core.stats.IncomingDamage;
 import com.skyrpg.core.stats.SkyArrows;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.stats.Stats;
+import com.skyrpg.core.stats.TrueDamage;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -71,6 +72,11 @@ public final class CombatStats {
         // Other mods' multipliers (slayer bosses tougher than vanilla's health cap, slayer weapons).
         damage *= IncomingDamage.multiplier(target, source);
 
+        // True Damage (boss abilities): True Defense reduces it the way Defense reduces the rest; Defense does nothing.
+        if (target instanceof ServerPlayer defender && TrueDamage.active()) {
+            double trueDefense = Math.max(0, Stats.get(defender, StatTypes.TRUE_DEFENSE));
+            return (float) (damage * 100 / (100 + trueDefense));
+        }
         // Defense: 100 defense halves damage, 300 quarters it, and so on.
         if (target instanceof ServerPlayer defender && !source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
             double defense = Math.max(0, Stats.get(defender, StatTypes.DEFENSE));

@@ -21,14 +21,14 @@ OUT = ROOT / "combat/src/main/resources/data/skyrpg_combat/skyrpg/slayers"
 
 # line id, boss page, slayer page, NEU key, boss entity, look, colour, icon, the mobs that count (and their Combat XP).
 LINES = [
-    ("revenant_horror", "Revenant_Horror", "Zombie_Slayer", "zombie", "skyrpg_combat:grave_tyrant", "grave_tyrant", "#55FF55",
+    ("revenant_horror", "Revenant_Horror", "Zombie_Slayer", "zombie", "skyrpg_combat:grave_tyrant", "revenant", "#55FF55",
      "minecraft:rotten_flesh", {"minecraft:zombie": 6, "minecraft:husk": 6, "minecraft:drowned": 6, "minecraft:zombie_villager": 6,
                                "minecraft:zombified_piglin": 8}, "zombies"),
-    ("tarantula_broodfather", "Tarantula_Broodfather", "Spider_Slayer", "spider", "skyrpg_combat:broodmother", "broodmother", "#AA0000",
+    ("tarantula_broodfather", "Tarantula_Broodfather", "Spider_Slayer", "spider", "skyrpg_combat:broodmother", "tarantula", "#AA0000",
      "minecraft:string", {"minecraft:spider": 5, "minecraft:cave_spider": 5}, "spiders"),
     ("sven_packmaster", "Sven_Packmaster", "Wolf_Slayer", "wolf", "skyrpg_combat:sven_packmaster", "sven", "#FFFFFF",
      "minecraft:mutton", {"minecraft:wolf": 10}, "wolves"),
-    ("voidgloom_seraph", "Voidgloom_Seraph", "Enderman_Slayer", "enderman", "skyrpg_combat:void_stalker", "void_stalker", "#AA00AA",
+    ("voidgloom_seraph", "Voidgloom_Seraph", "Enderman_Slayer", "enderman", "skyrpg_combat:void_stalker", "voidgloom", "#AA00AA",
      "minecraft:ender_pearl", {"minecraft:enderman": 12, "minecraft:endermite": 4}, "endermen"),
 ]
 STATS = {"hp": "health", "health": "health", "cd": "crit_damage", "cc": "crit_chance", "spd": "speed", "speed": "speed", "str": "strength",

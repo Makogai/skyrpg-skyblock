@@ -5,7 +5,7 @@
  "color": "#AA00AA",
  "icon": "minecraft:ender_pearl",
  "boss": "skyrpg_combat:void_stalker",
- "kind": "void_stalker",
+ "kind": "voidgloom",
  "counts": {
   "minecraft:enderman": 12,
   "minecraft:endermite": 4

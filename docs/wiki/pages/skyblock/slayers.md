@@ -168,8 +168,49 @@ Sven's levels alternate **Speed** (+1 at levels 1, 3 and 8), **Health** (+2 at 2
 
 Voidgloom's levels alternate **Health** (+1, +2, +3, +4, +5 at levels 1, 3, 5, 7 and 9) and **Intelligence** (+2 at 2 and 4, +5 at 6, +4 at 8). The recipes include the Voidwalker Katana (1), Null Ovoid and the Soulflow items (2), the Voidedge Katana and Final Destination armour (3), the Vorpal Katana and Juju Shortbow (5), the Aspect of the Void, Atomsplit Katana and Sinseeker Scythe (6), and the Terminator (7).
 
+## How the bosses fight
+
+Each boss hits for its tier's damage per second, about once a second, and every tier keeps the abilities of the tiers below. The Slayers page and Maddox's screen list each tier's abilities.
+
+All of them:
+
+- **Regeneration:** a boss that hasn't hurt anyone for 5 seconds heals 2% of its health a second, until it hits someone again.
+- **Slam-dunk:** stand in one block for 6 seconds without the boss reaching you, and the Revenant, Tarantula or Sven pulls you in for True Damage (twice its damage per second). Keep moving.
+
+### Revenant Horror
+
+- **Undead:** arrows heal it instead of hurting it. It gets a burst of speed when it hits you.
+- **Life Drain** (I): every 5 seconds, within 12 blocks, it drains one and a half times its damage per second from you and heals 1%.
+- **Pestilence** (II): everyone within 5 blocks takes a quarter of its damage per second every second, and loses 25% of their Defense for 3 seconds.
+- **Enrage** (III): after 40 seconds it gets **MAD**, and 5 seconds later **ENRAGED** for 12: 30% faster and three times as hard-hitting. Then it starts over.
+- **The Atoned Horror** (V): a different boss in netherite. **Redemption:** it heals a thousandth of its health a second, and 5% whenever its TNT hits you. **Explosive Assault:** every second a circle marks the ground under you, and a moment later TNT lands there, taking 15% to 60% of your health as True Damage (more near the middle); twice as often below a third of its health. **Thermonuclear:** every 30 seconds it stops for 5 ("Boom!") while a bedrock ring grows around it, then blasts everything within 7 blocks dead.
+
+### Tarantula Broodfather
+
+A cave spider rides it. Hits on the rider go to the Broodfather.
+
+- **Backstab** (I): every 7 seconds it leaps behind you. Its hits from behind deal +50% damage (+75%, +100%, +125%, +150% at II to V).
+- **Noxious Paralysis** (II): while it lives, everyone fighting it heals 25% less (50%, 75%, 99% at III to V), and every fifth hit lowers your Speed a little more (0.5% of the 400 cap a stack, 1% at III and IV, 2% at V).
+- **Web of Lies** (III): at 66% and 33% health it leaps away, webs the ground around it and lays egg sacs above itself: 2 sacs of 3 hits at III, 3 of 6 at IV, 4 of 9 at V. Smash them within 12 seconds or each hatches two cave spiders.
+- **Bat Barrage** (IV): from 66% health, magic can't hurt it and it releases 5 bats every 20 seconds. Each bat alive takes 1% of your health a second as True Damage (2% at V).
+- **Till Death Do Us Part** (V): the Primordial Broodfather doesn't stay dead. It fuses into the **Conjoined Brood**, at full health with twice the toughness and twice the damage, keeping only Backstab and Noxious Paralysis. Kill that to finish the quest.
+
+### Sven Packmaster
+
+- **Agile** (I): a small, fast wolf.
+- **True Damage** (II): its bites also deal 10 True Damage (50 at III, 200 at IV).
+- **Call the pups!** (III): at half health it slows to a crawl and calls a pup every second for 5 seconds. Each pup has a tenth of its health and a quarter of its damage. While any pup lives it is **Protected** and takes no damage, and it doesn't regenerate.
+
+### Voidgloom Seraph
+
+- **Malevolent Hitshield** (I): when it spawns, and at two thirds and a third of its health, it raises a shield of 15 hits (30 at II, 60 at III, 100 at IV). Every hit takes one off, whatever it deals; until it breaks, nothing gets through. From II the shield also makes it hit 3,000 harder every 3 seconds it stays up.
+- **Dissonance** (I): it teleports behind or beside you every 8 seconds, every 4 if you stand still. From II it also deals half its damage per second to everyone within 6.5 blocks, every second.
+- **Yang Glyphs** (II): from half its health (two thirds at III and IV), and never while its shield is up, it holds a beacon for 2 seconds and throws it nearby. Stand on or right next to it within 5 seconds to break it, or it kills everyone fighting (a thousand times their health as True Damage).
+- **Nukekubi Fixations** (III): from a third of its health, a floating head appears near you every 6 seconds (up to 5). Look straight at one for half a second to destroy it. Together they deal `heads x 800 x 2^(heads - 1)` damage a second (2,000 a head at IV), and if that outdoes the boss's own damage, the boss itself stops hitting.
+- **Broken Heart Radiation** (IV): at 5/6, 1/2 and 1/6 of its health it sits still for 8 seconds, can't be hurt, and sweeps four beams around it. A beam takes 25% of your health as True Damage and cuts your healing by 12% for 90 seconds.
+
 > [!NOTE]
-> Not here yet: the runes, enchanted books and dyes these bosses drop (they arrive with enchanting), and Hypixel's own boss abilities. The bosses fight with SkyRPG's tricks for now (the Revenant's Grave Slam, the Tarantula's Web Shot, the Voidgloom's Void Bolt and Null Shield; Sven is a fast wolf). The Slayers page lists each tier's moves.
+> Not here yet: the runes, enchanted books and dyes these bosses drop (they arrive with enchanting).
 
 ## See also
 
