@@ -1,0 +1,99 @@
+{
+ "category": "farming",
+ "name": "Nether Wart",
+ "icon": "minecraft:nether_wart",
+ "skyblock": [
+  "NETHER_STALK"
+ ],
+ "items": [
+  "minecraft:nether_wart"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  75000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nether Wart Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Potion Bag"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Potion Affinity Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Nether Wart Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+9 Potion Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1,500 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Potion Affinity Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+9 Potion Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Potion Affinity Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+9 Potion Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mutant Nether Wart Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+9 Potion Bag Slots"
+   ]
+  }
+ ]
+}

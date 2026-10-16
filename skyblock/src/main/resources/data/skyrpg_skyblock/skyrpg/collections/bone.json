@@ -1,0 +1,86 @@
+{
+ "category": "combat",
+ "name": "Bone",
+ "icon": "minecraft:bone",
+ "skyblock": [
+  "BONE"
+ ],
+ "items": [
+  "minecraft:bone"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  5000,
+  10000,
+  25000,
+  50000,
+  150000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Skeleton Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Bone Meal Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Skeleton Recipe",
+    "Power Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Skeleton Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Bone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1,000 Combat Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hurricane Bow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Skeleton's Helmet Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Runaan's Bow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Bone Block Recipe"
+   ]
+  }
+ ]
+}

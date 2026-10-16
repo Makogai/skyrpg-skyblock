@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-kuudra_shop_item","title":"Open Shop","category":"reference","icon":"skyrpg_skyblock:kuudra_shop_item","summary":"Special material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:kuudra_shop_item","icon":"skyrpg_skyblock:kuudra_shop_item","name":"Open Shop","color":"#FF5555","rarity":"special","kind":"Material"}]}

@@ -1,0 +1,87 @@
+{
+ "category": "fishing",
+ "name": "Pufferfish",
+ "icon": "minecraft:pufferfish",
+ "skyblock": [
+  "RAW_FISH:3"
+ ],
+ "items": [
+  "minecraft:pufferfish"
+ ],
+ "thresholds": [
+  20,
+  50,
+  100,
+  150,
+  400,
+  800,
+  2400,
+  4800,
+  9000,
+  18000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spiked Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pufferfish Hat Recipe",
+    "Spiked Hook Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Pufferfish Recipe",
+    "Cleave Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Depth Strider Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hotspot Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Enchanted Fishing Sack Recipe"
+   ]
+  }
+ ]
+}

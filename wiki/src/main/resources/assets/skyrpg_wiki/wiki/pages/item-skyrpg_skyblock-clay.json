@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-clay","title":"Clay","category":"reference","icon":"skyrpg_skyblock:clay","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:clay","icon":"skyrpg_skyblock:clay","name":"Clay","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

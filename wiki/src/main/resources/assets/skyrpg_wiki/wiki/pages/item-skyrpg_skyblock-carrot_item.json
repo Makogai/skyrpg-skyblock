@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-carrot_item","title":"Carrot","category":"reference","icon":"skyrpg_skyblock:carrot_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:carrot_item","icon":"skyrpg_skyblock:carrot_item","name":"Carrot","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

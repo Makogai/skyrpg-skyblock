@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-training_dummy","title":"Training Dummy","category":"reference","icon":"skyrpg_skyblock:training_dummy","summary":"Uncommon material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:training_dummy","icon":"skyrpg_skyblock:training_dummy","name":"Training Dummy","color":"#55FF55","rarity":"uncommon","kind":"Material"}]}

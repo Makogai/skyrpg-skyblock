@@ -1,0 +1,66 @@
+{
+ "category": "mining",
+ "name": "Glowstone Dust",
+ "icon": "minecraft:glowstone_dust",
+ "skyblock": [
+  "GLOWSTONE_DUST"
+ ],
+ "items": [
+  "minecraft:glowstone_dust"
+ ],
+ "thresholds": [
+  50,
+  100,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Glowstone Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to the Crimson Isle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Glowstone Dust Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to the Crimson Isle Recipe",
+    "Glowstone Gauntlet Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Glowstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Redstone Lamp Recipe",
+    "Shiny Prism Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vanquished Glowstone Gauntlet Recipe"
+   ]
+  }
+ ]
+}

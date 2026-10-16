@@ -1,0 +1,81 @@
+{
+ "category": "farming",
+ "name": "Cactus",
+ "icon": "minecraft:cactus",
+ "skyblock": [
+  "CACTUS"
+ ],
+ "items": [
+  "minecraft:cactus"
+ ],
+ "thresholds": [
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cactus Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cactus Helmet Recipe",
+    "Cactus Chestplate Recipe",
+    "Cactus Leggings Recipe",
+    "Cactus Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Resistance Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cactus Green Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Desert Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Piercing Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Thorns Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cactus Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience"
+   ]
+  }
+ ]
+}

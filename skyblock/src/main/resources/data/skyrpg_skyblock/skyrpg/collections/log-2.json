@@ -1,0 +1,80 @@
+{
+ "category": "foraging",
+ "name": "Birch Log",
+ "icon": "minecraft:birch_log",
+ "skyblock": [
+  "LOG:2"
+ ],
+ "items": [
+  "minecraft:birch_log"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Birch Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Foraging Sack Recipe",
+    "Birch Leaves Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to Birch Park Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sculptor's Axe Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Foraging Sack Recipe",
+    "Enchanted Birch Log Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Birch Forest Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Foraging Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Foraging Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Enchanted Foraging Sack Recipe"
+   ]
+  }
+ ]
+}

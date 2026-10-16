@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-pet_item_flying_pig","title":"Flying Pig","category":"reference","icon":"skyrpg_skyblock:pet_item_flying_pig","summary":"Rare pet item.","blocks":[{"t":"hero","id":"skyrpg_skyblock:pet_item_flying_pig","icon":"skyrpg_skyblock:pet_item_flying_pig","name":"Flying Pig","color":"#5555FF","rarity":"rare","kind":"Pet Item"}]}

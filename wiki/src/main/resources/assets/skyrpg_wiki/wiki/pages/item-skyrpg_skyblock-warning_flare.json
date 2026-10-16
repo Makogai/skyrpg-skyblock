@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-warning_flare","title":"Warning Flare","category":"reference","icon":"skyrpg_skyblock:warning_flare","summary":"Uncommon deployable.","blocks":[{"t":"hero","id":"skyrpg_skyblock:warning_flare","icon":"skyrpg_skyblock:warning_flare","name":"Warning Flare","color":"#55FF55","rarity":"uncommon","kind":"Deployable"}]}

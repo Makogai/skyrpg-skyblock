@@ -3,9 +3,13 @@ package com.skyrpg.skyblock;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 /**
@@ -26,8 +30,7 @@ public final class SkyStacks {
         if (id != null) {
             return id.equals(skyblockId);
         }
-        ItemDefinition def = ItemRegistry.skyblock(skyblockId);
-        return def != null && plain(def) && stack.is(def.item()) && SkyItems.definition(stack) == null;
+        return skyblockId.equals(id(stack));
     }
 
     /**
@@ -42,14 +45,36 @@ public final class SkyStacks {
         if (id != null || SkyItems.definition(stack) != null) {
             return id;
         }
-        String guess = BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath().toUpperCase(Locale.ROOT);
-        ItemDefinition def = ItemRegistry.skyblock(guess);
-        return def != null && plain(def) && stack.is(def.item()) ? guess : null;
+        return plainIds().get(stack.getItem());
+    }
+
+    private static Collection<ItemDefinition> plainFrom;
+    private static Map<Item, String> plainIds = Map.of();
+
+    /**
+     * Which SkyBlock item each vanilla item is when it's just the material: oak planks are "WOOD", cobblestone is
+     * "COBBLESTONE". With several on one base, the one named like the vanilla item wins, then the shortest id.
+     */
+    private static synchronized Map<Item, String> plainIds() {
+        Collection<ItemDefinition> all = ItemRegistry.items();
+        if (all != plainFrom) {
+            Map<Item, String> ids = new HashMap<>();
+            for (ItemDefinition def : all) {
+                if (!def.skyblock() || !plain(def)) {
+                    continue;
+                }
+                String guess = BuiltInRegistries.ITEM.getKey(def.item()).getPath().toUpperCase(Locale.ROOT);
+                ids.merge(def.item(), def.skyblockId(), (a, b) -> a.equals(guess) ? a : b.equals(guess) ? b : a.length() <= b.length() ? a : b);
+            }
+            plainIds = ids;
+            plainFrom = all;
+        }
+        return plainIds;
     }
 
     /** A SkyBlock item that is nothing but its material (no skin, colour or stats), like Cobblestone or Wheat. */
     public static boolean plain(ItemDefinition def) {
-        return !def.json().has("skin") && !def.json().has("color") && def.stats().isEmpty() && def.ability() == null;
+        return !def.json().has("skin") && !def.json().has("color") && def.stats().isEmpty() && def.ability() == null && !def.glint();
     }
 
     public static int count(Inventory inventory, String skyblockId) {

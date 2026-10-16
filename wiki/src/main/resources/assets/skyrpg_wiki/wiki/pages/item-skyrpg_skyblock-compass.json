@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-compass","title":"Compass","category":"reference","icon":"skyrpg_skyblock:compass","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:compass","icon":"skyrpg_skyblock:compass","name":"Compass","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

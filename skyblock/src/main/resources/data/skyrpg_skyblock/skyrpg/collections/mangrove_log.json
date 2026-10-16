@@ -1,0 +1,77 @@
+{
+ "category": "foraging",
+ "name": "Mangrove Log",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "MANGROVE_LOG"
+ ],
+ "items": [],
+ "thresholds": [
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Murkwater Loch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Mangrove Log Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mangrove Locket Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Moonglade Belt Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mangrove Gem Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mangcore Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Seagull Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mangrove Grippers Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+110,000 Foraging Experience",
+    "+1 Foraging Level Cap"
+   ]
+  }
+ ]
+}

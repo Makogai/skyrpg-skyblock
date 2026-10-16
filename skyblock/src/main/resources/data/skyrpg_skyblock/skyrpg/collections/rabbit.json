@@ -1,0 +1,84 @@
+{
+ "category": "farming",
+ "name": "Raw Rabbit",
+ "icon": "minecraft:rabbit",
+ "skyblock": [
+  "RABBIT"
+ ],
+ "items": [
+  "minecraft:rabbit"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rabbit Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rabbit Helmet Recipe",
+    "Rabbit Chestplate Recipe",
+    "Rabbit Leggings Recipe",
+    "Rabbit Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rabbit Potion Recipe",
+    "[Lvl 1] Rabbit Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Rabbit Foot Recipe",
+    "Enchanted Raw Rabbit Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Luck Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Rabbit Hide Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Luck of the Sea Exp Discount (-25%)",
+    "Enchanted Cooked Rabbit Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pet Luck Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience"
+   ]
+  }
+ ]
+}

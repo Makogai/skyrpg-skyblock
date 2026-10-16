@@ -1,0 +1,71 @@
+{
+ "category": "farming",
+ "name": "Wild Rose",
+ "icon": "minecraft:rose_bush",
+ "skyblock": [
+  "WILD_ROSE"
+ ],
+ "items": [
+  "minecraft:rose_bush"
+ ],
+ "thresholds": [
+  1000,
+  5000,
+  10000,
+  25000,
+  100000,
+  250000,
+  500000,
+  1000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Wild Rose Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Thorny Vines Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Plot Eraser Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Compacted Wild Rose Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rosewater Flask Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bachelor's Rose Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Prickly Kiss Recipe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-hub_castle_portal","title":"Portal to the Hub Castle","category":"reference","icon":"skyrpg_skyblock:hub_castle_portal","summary":"Common portal.","blocks":[{"t":"hero","id":"skyrpg_skyblock:hub_castle_portal","icon":"skyrpg_skyblock:hub_castle_portal","name":"Portal to the Hub Castle","color":"#FFFFFF","rarity":"common","kind":"Portal"}]}

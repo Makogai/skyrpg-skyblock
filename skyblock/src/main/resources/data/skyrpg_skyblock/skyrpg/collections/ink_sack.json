@@ -1,0 +1,78 @@
+{
+ "category": "fishing",
+ "name": "Ink Sac",
+ "icon": "minecraft:ink_sac",
+ "skyblock": [
+  "INK_SACK"
+ ],
+ "items": [
+  "minecraft:ink_sac"
+ ],
+ "thresholds": [
+  20,
+  40,
+  100,
+  200,
+  400,
+  800,
+  1500,
+  2500,
+  4000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Squid Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dark Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Ink Sac Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Deep Ocean Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Caster Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blindness Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Angler Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bait Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ink Wand Recipe"
+   ]
+  }
+ ]
+}

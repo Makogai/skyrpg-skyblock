@@ -1,0 +1,107 @@
+{
+ "category": "mining",
+ "name": "Iron Ingot",
+ "icon": "minecraft:iron_ingot",
+ "skyblock": [
+  "IRON_INGOT"
+ ],
+ "items": [
+  "minecraft:iron_ingot"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000,
+  400000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Iron Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Golem Hat Recipe",
+    "Prospecting Helmet Recipe",
+    "Prospecting Chestplate Recipe",
+    "Prospecting Leggings Recipe",
+    "Prospecting Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Protection Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Iron Ingot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Budget Hopper Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Golem Armor Helmet Recipe",
+    "Golem Armor Chestplate Recipe",
+    "Golem Armor Leggings Recipe",
+    "Golem Armor Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Iron Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Golem Sword Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Hopper Recipe",
+    "Personal Deletor 4000 Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Deletor 5000 Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Deletor 6000 Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Deletor 7000 Recipe"
+   ]
+  }
+ ]
+}

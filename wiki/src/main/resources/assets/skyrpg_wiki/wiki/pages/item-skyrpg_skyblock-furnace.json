@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-furnace","title":"Furnace","category":"reference","icon":"skyrpg_skyblock:furnace","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:furnace","icon":"skyrpg_skyblock:furnace","name":"Furnace","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

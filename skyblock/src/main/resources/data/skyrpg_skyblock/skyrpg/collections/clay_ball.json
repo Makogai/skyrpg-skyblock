@@ -1,0 +1,78 @@
+{
+ "category": "fishing",
+ "name": "Clay Ball",
+ "icon": "minecraft:clay_ball",
+ "skyblock": [
+  "CLAY_BALL"
+ ],
+ "items": [
+  "minecraft:clay_ball"
+ ],
+ "thresholds": [
+  25,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Clay Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Frail Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Clay Ball Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Clay Bracelet Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hotspot Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Respiration Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hotspot Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Clay Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hotspot Artifact Recipe"
+   ]
+  }
+ ]
+}

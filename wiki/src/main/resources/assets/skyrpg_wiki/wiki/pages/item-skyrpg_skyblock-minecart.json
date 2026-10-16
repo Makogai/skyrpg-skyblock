@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-minecart","title":"Minecart","category":"reference","icon":"skyrpg_skyblock:minecart","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:minecart","icon":"skyrpg_skyblock:minecart","name":"Minecart","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

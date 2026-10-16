@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-miniature_nuke","title":"Miniature Nuke","category":"reference","icon":"skyrpg_skyblock:miniature_nuke","summary":"Special deployable.","blocks":[{"t":"hero","id":"skyrpg_skyblock:miniature_nuke","icon":"skyrpg_skyblock:miniature_nuke","name":"Miniature Nuke","color":"#FF5555","rarity":"special","kind":"Deployable"}]}

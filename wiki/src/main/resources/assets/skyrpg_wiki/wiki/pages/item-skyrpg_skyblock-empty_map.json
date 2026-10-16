@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-empty_map","title":"Empty Map","category":"reference","icon":"skyrpg_skyblock:empty_map","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:empty_map","icon":"skyrpg_skyblock:empty_map","name":"Empty Map","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

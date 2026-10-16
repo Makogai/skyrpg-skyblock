@@ -5,7 +5,7 @@
 Source: the NotEnoughUpdates repo (MIT, cached as tools/skyblock/cache/neu-repo.zip): every item's crafting grid and
 its "Requires: Iron Ingot IV" line, which names the collection tier (or slayer level) that unlocks it. Collection names
 are matched to their ids with the Hypixel collections API (cached as tools/skyblock/cache/collections.json).
-Writes skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/recipes/<output>.json (generated: wiped each run):
+Writes skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/skyblock_recipes/<output>.json (generated: wiped each run):
 
     {"output": "ENCHANTED_COBBLESTONE", "count": 1,
      "grid": ["", "COBBLESTONE:32", "", "COBBLESTONE:32", ...],      # 9 cells, rows top to bottom
@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / "tools/skyblock/cache"
 ITEMS = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items"
-OUT = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/recipes"
+OUT = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/skyblock_recipes"
 NEU = "NotEnoughUpdates-REPO-master/items/"
 CELLS = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"]
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10, "XI": 11, "XII": 12,

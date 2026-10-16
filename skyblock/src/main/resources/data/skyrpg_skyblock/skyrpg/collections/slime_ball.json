@@ -1,0 +1,78 @@
+{
+ "category": "combat",
+ "name": "Slimeball",
+ "icon": "minecraft:slime_ball",
+ "skyblock": [
+  "SLIME_BALL"
+ ],
+ "items": [
+  "minecraft:slime_ball"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Slime Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Slime Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Knockback Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Knockback Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Slimeball Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Punch Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Launch Pad Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Slime Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Slime Bow Recipe"
+   ]
+  }
+ ]
+}

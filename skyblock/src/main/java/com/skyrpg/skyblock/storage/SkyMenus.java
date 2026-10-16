@@ -1,6 +1,7 @@
 package com.skyrpg.skyblock.storage;
 
 import com.skyrpg.skyblock.SkyRpgSkyblock;
+import com.skyrpg.skyblock.recipe.CraftMenu;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.flag.FeatureFlags;
@@ -12,6 +13,8 @@ public final class SkyMenus {
             new MenuType<>(WardrobeMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<EnderPageMenu> ENDER_PAGE = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("ender_page"),
             new MenuType<>(EnderPageMenu::new, FeatureFlags.VANILLA_SET));
+    public static final MenuType<CraftMenu> CRAFT = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("craft"),
+            new MenuType<>(CraftMenu::new, FeatureFlags.VANILLA_SET));
 
     private SkyMenus() {
     }

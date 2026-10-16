@@ -1,0 +1,64 @@
+{
+ "category": "mining",
+ "name": "Sand",
+ "icon": "minecraft:sand",
+ "skyblock": [
+  "SAND"
+ ],
+ "items": [
+  "minecraft:sand"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sand Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+250 Mining Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Soul Sand Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Desert Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sand Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Burning Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hard Glass Recipe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "category": "foraging",
+ "name": "Honeycomb",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "HONEYCOMB"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  50,
+  200,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  20000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Honeycomb Talisman Recipe",
+    "Fun-Sized Pot of Honeycomb Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Honeycomb Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Honeycomb Ring Recipe",
+    "Family-Sized Pot of Honeycomb Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Honey Badger Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Honeycomb Artifact Recipe",
+    "Jumbo Pot of Honeycomb Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Honeycomb Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Queen Bee Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bee Saliva Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Honeycomb Necklace Recipe"
+   ]
+  }
+ ]
+}

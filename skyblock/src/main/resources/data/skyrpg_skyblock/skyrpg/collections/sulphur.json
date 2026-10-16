@@ -1,0 +1,78 @@
+{
+ "category": "combat",
+ "name": "Gunpowder",
+ "icon": "minecraft:gunpowder",
+ "skyblock": [
+  "SULPHUR"
+ ],
+ "items": [
+  "minecraft:gunpowder"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Creeper Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Creeper Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blast Protection Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Gunpowder Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Thunderlord Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Firework Rocket Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Combat Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Creeper Pants Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Explosive Bow Recipe"
+   ]
+  }
+ ]
+}

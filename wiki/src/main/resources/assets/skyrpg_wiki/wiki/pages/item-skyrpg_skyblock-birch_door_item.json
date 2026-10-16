@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-birch_door_item","title":"Birch Door","category":"reference","icon":"skyrpg_skyblock:birch_door_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:birch_door_item","icon":"skyrpg_skyblock:birch_door_item","name":"Birch Door","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

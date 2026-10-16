@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-gold_ingot","title":"Gold Ingot","category":"reference","icon":"skyrpg_skyblock:gold_ingot","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:gold_ingot","icon":"skyrpg_skyblock:gold_ingot","name":"Gold Ingot","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

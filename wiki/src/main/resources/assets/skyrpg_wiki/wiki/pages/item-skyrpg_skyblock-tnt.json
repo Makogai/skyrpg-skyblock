@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-tnt","title":"TNT","category":"reference","icon":"skyrpg_skyblock:tnt","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:tnt","icon":"skyrpg_skyblock:tnt","name":"TNT","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

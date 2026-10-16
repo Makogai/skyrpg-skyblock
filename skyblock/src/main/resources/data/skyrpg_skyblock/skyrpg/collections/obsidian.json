@@ -1,0 +1,86 @@
+{
+ "category": "mining",
+ "name": "Obsidian",
+ "icon": "minecraft:obsidian",
+ "skyblock": [
+  "OBSIDIAN"
+ ],
+ "items": [
+  "minecraft:obsidian"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Obsidian Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lethality Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gravity Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Obsidian Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Stun Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Obsidian Tablet Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune",
+    "+50,000 Mining Experience"
+   ]
+  }
+ ]
+}

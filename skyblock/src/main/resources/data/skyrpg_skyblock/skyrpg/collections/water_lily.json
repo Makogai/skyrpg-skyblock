@@ -1,0 +1,92 @@
+{
+ "category": "fishing",
+ "name": "Lily Pad",
+ "icon": "minecraft:lily_pad",
+ "skyblock": [
+  "WATER_LILY"
+ ],
+ "items": [
+  "minecraft:lily_pad"
+ ],
+ "thresholds": [
+  10,
+  50,
+  100,
+  200,
+  500,
+  1500,
+  3000,
+  6000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lily Pad Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blobfish Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Healing Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Lily Pad Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Common Hook Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Whale Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rod of Champions Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Healing Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rod of Legends Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Condensed Lily Pad Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Frogspawn Bucket Recipe"
+   ]
+  }
+ ]
+}

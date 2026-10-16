@@ -1,0 +1,75 @@
+{
+ "category": "mining",
+ "name": "Red Sand",
+ "icon": "minecraft:red_sand",
+ "skyblock": [
+  "SAND:1"
+ ],
+ "items": [
+  "minecraft:red_sand"
+ ],
+ "thresholds": [
+  50,
+  500,
+  2500,
+  10000,
+  15000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Red Sand Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Red Sand Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Snail Recipe",
+    "Mesa Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Red Sand Cube Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ancient Cloak Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Mining Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Berserker Helmet Recipe",
+    "Berserker Chestplate Recipe",
+    "Berserker Leggings Recipe",
+    "Berserker Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Everburning Flame Recipe"
+   ]
+  }
+ ]
+}

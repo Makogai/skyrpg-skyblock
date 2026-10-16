@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-copper","title":"Copper","category":"reference","icon":"skyrpg_skyblock:copper","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:copper","icon":"skyrpg_skyblock:copper","name":"Copper","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

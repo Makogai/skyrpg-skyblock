@@ -25,16 +25,28 @@ import net.minecraft.world.item.ItemStack;
  *  "tiers": [{"coins": 100, "xp": 4, "stats": {"mining_fortune": 1}, "recipes": ["Skyiron Pickaxe"], "message": "..."}, ...]}
  * </pre>
  * {@code xp} defaults to 4 per tier. {@code tiers} may be shorter than {@code thresholds}.
+ *
+ * <p>SkyBlock collections ({@code tools/skyblock/import_collections.py}) name the SkyBlock items they count
+ * ({@code "skyblock": ["COBBLESTONE"]}): a stack counts when it is one of them, or when it's a plain vanilla stack of
+ * one of {@code items} (cobblestone mined from the ground), never an Enchanted Cobblestone that happens to be made of
+ * cobblestone. Their tiers list Hypixel's {@code "unlocks"} lines ("Enchanted Cobblestone Recipe").
  */
 public record CollectionDef(Identifier id, String category, String name, Identifier icon, List<Identifier> items, TagKey<Item> tag,
-                            long[] thresholds, List<Tier> tiers) {
+                            List<String> skyblock, long[] thresholds, List<Tier> tiers) {
     public static final int XP_PER_TIER = 4;
 
     /** What reaching one tier gives. */
-    public record Tier(long coins, int xp, Map<String, Double> stats, List<String> recipes, String message) {
-        /** "+250 coins, +4 SkyRPG XP, +1 Mining Fortune, unlocks Skyiron Pickaxe". */
+    public record Tier(long coins, int xp, Map<String, Double> stats, List<String> recipes, String message, List<String> unlocks) {
+        /** "+250 coins, +4 SkyRPG XP, +1 Mining Fortune, unlocks Skyiron Pickaxe"; a SkyBlock tier lists its unlocks. */
         public String describe() {
             List<String> parts = new ArrayList<>();
+            if (!unlocks.isEmpty()) {
+                parts.addAll(unlocks);
+                if (xp > 0) {
+                    parts.add("+" + xp + " SkyBlock XP");
+                }
+                return String.join(", ", parts);
+            }
             if (coins > 0) {
                 parts.add("+" + Msg.number(coins) + " coins");
             }
@@ -68,12 +80,16 @@ public record CollectionDef(Identifier id, String category, String name, Identif
     }
 
     public Tier tier(int tier) {
-        return tier >= 1 && tier <= tiers.size() ? tiers.get(tier - 1) : new Tier(0, XP_PER_TIER, Map.of(), List.of(), "");
+        return tier >= 1 && tier <= tiers.size() ? tiers.get(tier - 1) : new Tier(0, XP_PER_TIER, Map.of(), List.of(), "", List.of());
     }
 
-    public boolean matches(ItemStack stack) {
+    /** Whether the stack counts; {@code skyblockId} is the SkyBlock id in its custom data, or null. */
+    public boolean matches(ItemStack stack, String skyblockId) {
         if (stack.isEmpty()) {
             return false;
+        }
+        if (!skyblock.isEmpty()) {
+            return skyblockId != null ? skyblock.contains(skyblockId) : items.contains(BuiltInRegistries.ITEM.getKey(stack.getItem()));
         }
         if (tag != null && stack.is(tag)) {
             return true;
@@ -89,7 +105,11 @@ public record CollectionDef(Identifier id, String category, String name, Identif
             }
         }
         TagKey<Item> tag = json.has("tag") ? TagKey.create(Registries.ITEM, Identifier.parse(json.get("tag").getAsString())) : null;
-        if (items.isEmpty() && tag == null) {
+        List<String> skyblock = new ArrayList<>();
+        if (json.has("skyblock")) {
+            json.getAsJsonArray("skyblock").forEach(element -> skyblock.add(element.getAsString()));
+        }
+        if (items.isEmpty() && tag == null && skyblock.isEmpty()) {
             throw new IllegalArgumentException("no items or tag");
         }
         JsonArray thresholdArray = json.getAsJsonArray("thresholds");
@@ -109,13 +129,17 @@ public record CollectionDef(Identifier id, String category, String name, Identif
                 if (tier.has("recipes")) {
                     tier.getAsJsonArray("recipes").forEach(recipe -> recipes.add(recipe.getAsString()));
                 }
+                List<String> unlocks = new ArrayList<>();
+                if (tier.has("unlocks")) {
+                    tier.getAsJsonArray("unlocks").forEach(unlock -> unlocks.add(unlock.getAsString()));
+                }
                 tiers.add(new Tier(tier.has("coins") ? tier.get("coins").getAsLong() : 0, tier.has("xp") ? tier.get("xp").getAsInt() : XP_PER_TIER,
-                        Map.copyOf(stats), List.copyOf(recipes), tier.has("message") ? tier.get("message").getAsString() : ""));
+                        Map.copyOf(stats), List.copyOf(recipes), tier.has("message") ? tier.get("message").getAsString() : "", List.copyOf(unlocks)));
             }
         }
         String name = json.has("name") ? json.get("name").getAsString() : id.getPath();
         Identifier icon = json.has("icon") ? Identifier.parse(json.get("icon").getAsString()) : items.isEmpty() ? null : items.get(0);
         String category = json.has("category") ? json.get("category").getAsString() : "other";
-        return new CollectionDef(id, category, name, icon, List.copyOf(items), tag, thresholds, List.copyOf(tiers));
+        return new CollectionDef(id, category, name, icon, List.copyOf(items), tag, List.copyOf(skyblock), thresholds, List.copyOf(tiers));
     }
 }

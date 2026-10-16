@@ -1,0 +1,81 @@
+{
+ "category": "farming",
+ "name": "Potato",
+ "icon": "minecraft:potato",
+ "skyblock": [
+  "POTATO_ITEM"
+ ],
+ "items": [
+  "minecraft:potato"
+ ],
+ "thresholds": [
+  100,
+  200,
+  500,
+  1750,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Potato Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to The Barn Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vaccine Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Potato Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Venomous Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to The Barn Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Baked Potato Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hot Potato Book Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Tater Helmet Recipe",
+    "Tater Chestplate Recipe",
+    "Tater Leggings Recipe",
+    "Tater Boots Recipe"
+   ]
+  }
+ ]
+}

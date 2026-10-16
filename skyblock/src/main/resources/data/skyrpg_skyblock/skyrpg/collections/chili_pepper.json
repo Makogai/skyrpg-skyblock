@@ -1,0 +1,76 @@
+{
+ "category": "combat",
+ "name": "Chili Pepper",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "CHILI_PEPPER"
+ ],
+ "items": [],
+ "thresholds": [
+  10,
+  25,
+  75,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Re-heated Gummy Polar Bear Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sulphuric Coal Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Capsaicin Eyedrops Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Entropy Suppressor Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Cayenne IV) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Stuffed Chili Pepper Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Jalapeno Book Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Habanero Tactics IV) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Tabasco II) Recipe"
+   ]
+  }
+ ]
+}

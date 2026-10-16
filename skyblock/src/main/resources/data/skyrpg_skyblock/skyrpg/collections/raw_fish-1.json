@@ -1,0 +1,81 @@
+{
+ "category": "fishing",
+ "name": "Raw Salmon",
+ "icon": "minecraft:salmon",
+ "skyblock": [
+  "RAW_FISH:1"
+ ],
+ "items": [
+  "minecraft:salmon"
+ ],
+ "thresholds": [
+  20,
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Salmon Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dodge Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lure Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Raw Salmon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fish Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Salmon Helmet Recipe",
+    "Salmon Chestplate Recipe",
+    "Salmon Leggings Recipe",
+    "Salmon Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Fishing Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cooked Salmon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Fishing Experience"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "category": "combat",
+ "name": "Blaze Rod",
+ "icon": "minecraft:blaze_rod",
+ "skyblock": [
+  "BLAZE_ROD"
+ ],
+ "items": [
+  "minecraft:blaze_rod"
+ ],
+ "thresholds": [
+  50,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blaze Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fire Aspect Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Blaze Powder Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fire Talisman Recipe",
+    "Blaze Belt Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Flame Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Blaze Rod Recipe",
+    "Blaze Wax Recipe",
+    "[Lvl 1] Blaze Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blaze Helmet Recipe",
+    "Blaze Chestplate Recipe",
+    "Blaze Leggings Recipe",
+    "Blaze Boots Recipe",
+    "Vanquished Blaze Belt Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Combat Experience"
+   ]
+  }
+ ]
+}

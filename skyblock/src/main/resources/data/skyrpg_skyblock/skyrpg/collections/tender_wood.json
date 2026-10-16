@@ -1,0 +1,80 @@
+{
+ "category": "foraging",
+ "name": "Tender Wood",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "TENDER_WOOD"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  10,
+  25,
+  50,
+  100,
+  200,
+  400,
+  600,
+  800,
+  1000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Huntrap Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Fish Bowl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Huntrap Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Tender Wood Recipe",
+    "Medium Fish Bowl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Huntrap Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Fish Bowl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Greater Huntrap Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Hunting Experience",
+    "+50,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Astral Huntrap Recipe"
+   ]
+  }
+ ]
+}

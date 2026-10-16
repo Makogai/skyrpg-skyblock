@@ -1,0 +1,85 @@
+{
+ "category": "mining",
+ "name": "Gold Ingot",
+ "icon": "minecraft:gold_ingot",
+ "skyblock": [
+  "GOLD_INGOT"
+ ],
+ "items": [
+  "minecraft:gold_ingot"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  500000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gold Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cleaver Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Looting Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to the Gold Mine Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Gold Ingot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Absorption Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Scavenger Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Gold Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fortune Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Clock Recipe"
+   ]
+  }
+ ]
+}

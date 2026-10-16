@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-weather_node","title":"Weather Node","category":"reference","icon":"skyrpg_skyblock:weather_node","summary":"Uncommon material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:weather_node","icon":"skyrpg_skyblock:weather_node","name":"Weather Node","color":"#55FF55","rarity":"uncommon","kind":"Material"}]}

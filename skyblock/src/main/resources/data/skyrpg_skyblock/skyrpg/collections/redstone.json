@@ -1,0 +1,87 @@
+{
+ "category": "mining",
+ "name": "Redstone Dust",
+ "icon": "minecraft:redstone",
+ "skyblock": [
+  "REDSTONE"
+ ],
+ "items": [
+  "minecraft:redstone"
+ ],
+ "thresholds": [
+  100,
+  250,
+  750,
+  1500,
+  2500,
+  5000,
+  25000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Redstone Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Redstone Dust Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Efficiency Exp Discount (-25%)",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Weather Wand Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Deep Caverns Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Compactor 4000 Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Redstone Block Recipe",
+    "Personal Compactor 5000 Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Compactor 6000 Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Personal Compactor 7000 Recipe",
+    "+6 Accessory Bag Slots"
+   ]
+  }
+ ]
+}

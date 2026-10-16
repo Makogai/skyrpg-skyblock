@@ -1,0 +1,82 @@
+{
+ "category": "combat",
+ "name": "Ender Pearl",
+ "icon": "minecraft:ender_pearl",
+ "skyblock": [
+  "ENDER_PEARL"
+ ],
+ "items": [
+  "minecraft:ender_pearl"
+ ],
+ "thresholds": [
+  50,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  15000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enderman Minion Recipes",
+    "Silent Pearl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Ender Pearl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ender Slayer Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Dragon Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ender Bow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Dragon Sack Recipe",
+    "Enchanted Eye of Ender Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Teleport Pad Trade",
+    "Absolute Ender Pearl Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Aspect of the End Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Dragon Sack Recipe",
+    "Saving Grace Recipe"
+   ]
+  }
+ ]
+}

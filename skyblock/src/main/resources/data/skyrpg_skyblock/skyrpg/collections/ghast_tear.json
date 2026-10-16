@@ -1,0 +1,65 @@
+{
+ "category": "combat",
+ "name": "Ghast Tear",
+ "icon": "minecraft:ghast_tear",
+ "skyblock": [
+  "GHAST_TEAR"
+ ],
+ "items": [
+  "minecraft:ghast_tear"
+ ],
+ "thresholds": [
+  20,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ghast Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Giant Killer Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Ghast Tear Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vampirism Exp Discount (-25%)",
+    "Ghast Cloak Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silver Fang Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Meteor Chunk Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vanquished Ghast Cloak Recipe"
+   ]
+  }
+ ]
+}

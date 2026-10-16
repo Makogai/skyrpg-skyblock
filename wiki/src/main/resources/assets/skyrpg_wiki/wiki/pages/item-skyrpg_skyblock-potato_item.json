@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-potato_item","title":"Potato","category":"reference","icon":"skyrpg_skyblock:potato_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:potato_item","icon":"skyrpg_skyblock:potato_item","name":"Potato","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

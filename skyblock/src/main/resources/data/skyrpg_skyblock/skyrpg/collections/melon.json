@@ -1,0 +1,79 @@
+{
+ "category": "farming",
+ "name": "Melon Slice",
+ "icon": "minecraft:melon_slice",
+ "skyblock": [
+  "MELON"
+ ],
+ "items": [
+  "minecraft:melon_slice"
+ ],
+ "thresholds": [
+  250,
+  500,
+  1250,
+  5000,
+  15000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Melon Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+100 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+250 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Melon Slice Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Glistering Melon Slice Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Melon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+20,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience",
+    "Juicy Nozzle Recipe"
+   ]
+  }
+ ]
+}

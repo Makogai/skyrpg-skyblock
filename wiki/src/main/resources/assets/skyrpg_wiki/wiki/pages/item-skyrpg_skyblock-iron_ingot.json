@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-iron_ingot","title":"Iron Ingot","category":"reference","icon":"skyrpg_skyblock:iron_ingot","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:iron_ingot","icon":"skyrpg_skyblock:iron_ingot","name":"Iron Ingot","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

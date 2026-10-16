@@ -1,0 +1,102 @@
+{
+ "category": "farming",
+ "name": "Wheat",
+ "icon": "minecraft:wheat",
+ "skyblock": [
+  "WHEAT"
+ ],
+ "items": [
+  "minecraft:wheat"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  10000,
+  15000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Wheat Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Agronomy Sack Recipe",
+    "Farmhand Helmet Recipe",
+    "Farmhand Chestplate Recipe",
+    "Farmhand Leggings Recipe",
+    "Farmhand Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Harvesting Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Wheat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Agronomy Sack Recipe",
+    "Enchanted Bread Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Haymaker Helmet Recipe",
+    "Haymaker Chestplate Recipe",
+    "Haymaker Leggings Recipe",
+    "Haymaker Boots Recipe",
+    "Farming Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Farming Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Agronomy Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+25,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Agronomy Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Hay Bale Recipe",
+    "Large Enchanted Agronomy Sack Recipe"
+   ]
+  }
+ ]
+}

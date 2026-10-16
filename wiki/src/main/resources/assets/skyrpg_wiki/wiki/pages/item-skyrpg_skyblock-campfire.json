@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-campfire","title":"Fire Pit","category":"reference","icon":"skyrpg_skyblock:campfire","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:campfire","icon":"skyrpg_skyblock:campfire","name":"Fire Pit","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-chest","title":"Chest","category":"reference","icon":"skyrpg_skyblock:chest","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:chest","icon":"skyrpg_skyblock:chest","name":"Chest","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

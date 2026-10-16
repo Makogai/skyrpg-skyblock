@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-lapis_ore","title":"Lapis Lazuli Ore","category":"reference","icon":"skyrpg_skyblock:lapis_ore","summary":"Uncommon material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:lapis_ore","icon":"skyrpg_skyblock:lapis_ore","name":"Lapis Lazuli Ore","color":"#55FF55","rarity":"uncommon","kind":"Material"}]}

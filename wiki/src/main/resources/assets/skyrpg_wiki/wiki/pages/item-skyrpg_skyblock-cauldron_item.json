@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-cauldron_item","title":"Cauldron","category":"reference","icon":"skyrpg_skyblock:cauldron_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:cauldron_item","icon":"skyrpg_skyblock:cauldron_item","name":"Cauldron","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

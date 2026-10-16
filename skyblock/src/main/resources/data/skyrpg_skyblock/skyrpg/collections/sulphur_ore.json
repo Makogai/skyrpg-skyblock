@@ -1,0 +1,78 @@
+{
+ "category": "mining",
+ "name": "Sulphur",
+ "icon": "minecraft:glowstone_dust",
+ "skyblock": [
+  "SULPHUR_ORE"
+ ],
+ "items": [
+  "minecraft:glowstone_dust"
+ ],
+ "thresholds": [
+  200,
+  1000,
+  2500,
+  5000,
+  10000,
+  15000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Match-Sticks Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sulphur Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Nether Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Totem of Corruption Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Nether Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sulphur Cube Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sulphur Bow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Nether Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Implosion Belt Recipe"
+   ]
+  }
+ ]
+}

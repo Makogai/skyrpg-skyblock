@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-parkour_point","title":"Parkour Checkpoint","category":"reference","icon":"skyrpg_skyblock:parkour_point","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:parkour_point","icon":"skyrpg_skyblock:parkour_point","name":"Parkour Checkpoint","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

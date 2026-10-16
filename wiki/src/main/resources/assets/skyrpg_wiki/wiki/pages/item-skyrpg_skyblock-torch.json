@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-torch","title":"Torch","category":"reference","icon":"skyrpg_skyblock:torch","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:torch","icon":"skyrpg_skyblock:torch","name":"Torch","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

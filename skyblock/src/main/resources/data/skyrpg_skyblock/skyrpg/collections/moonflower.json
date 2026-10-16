@@ -1,0 +1,71 @@
+{
+ "category": "farming",
+ "name": "Moonflower",
+ "icon": "minecraft:blue_orchid",
+ "skyblock": [
+  "MOONFLOWER"
+ ],
+ "items": [
+  "minecraft:blue_orchid"
+ ],
+ "thresholds": [
+  1000,
+  5000,
+  10000,
+  25000,
+  100000,
+  250000,
+  500000,
+  1000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Moonflower Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nightswitch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Crow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Compacted Moonflower Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Moonstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Crop Fever I) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Moonlight Crystal Recipe"
+   ]
+  }
+ ]
+}

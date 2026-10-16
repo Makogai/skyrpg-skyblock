@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-redstone","title":"Redstone Dust","category":"reference","icon":"skyrpg_skyblock:redstone","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:redstone","icon":"skyrpg_skyblock:redstone","name":"Redstone Dust","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

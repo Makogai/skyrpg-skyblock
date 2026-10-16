@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-auto_smelter","title":"Auto Smelter","category":"reference","icon":"skyrpg_skyblock:auto_smelter","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:auto_smelter","icon":"skyrpg_skyblock:auto_smelter","name":"Auto Smelter","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

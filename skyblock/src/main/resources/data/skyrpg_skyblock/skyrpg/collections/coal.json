@@ -1,0 +1,89 @@
+{
+ "category": "mining",
+ "name": "Coal",
+ "icon": "minecraft:coal",
+ "skyblock": [
+  "COAL"
+ ],
+ "items": [
+  "minecraft:coal"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Coal Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Mining Sack Recipe",
+    "Smelting Touch Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Coal Recipe",
+    "Haste Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Wither Skeleton Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Charcoal Recipe",
+    "Small Mining Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to the Gold Mine Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Coal Block Recipe",
+    "Medium Mining Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Lava Bucket Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Mining Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Enchanted Mining Sack Recipe"
+   ]
+  }
+ ]
+}

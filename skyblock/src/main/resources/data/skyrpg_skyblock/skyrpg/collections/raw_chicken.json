@@ -1,0 +1,86 @@
+{
+ "category": "farming",
+ "name": "Raw Chicken",
+ "icon": "minecraft:chicken",
+ "skyblock": [
+  "RAW_CHICKEN"
+ ],
+ "items": [
+  "minecraft:chicken"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Chicken Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bridge Egg Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Chicken Recipe",
+    "Chicken Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Raw Chicken Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Egg Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cake Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Agility Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Super Enchanted Egg Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Omega Enchanted Egg Recipe"
+   ]
+  }
+ ]
+}

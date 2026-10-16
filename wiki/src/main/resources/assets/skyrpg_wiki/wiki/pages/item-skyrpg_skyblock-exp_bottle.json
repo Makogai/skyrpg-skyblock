@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-exp_bottle","title":"Experience Bottle","category":"reference","icon":"skyrpg_skyblock:exp_bottle","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:exp_bottle","icon":"skyrpg_skyblock:exp_bottle","name":"Experience Bottle","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

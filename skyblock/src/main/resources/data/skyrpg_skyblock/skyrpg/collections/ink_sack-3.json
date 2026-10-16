@@ -1,0 +1,78 @@
+{
+ "category": "farming",
+ "name": "Cocoa Beans",
+ "icon": "minecraft:cocoa_beans",
+ "skyblock": [
+  "INK_SACK:3"
+ ],
+ "items": [
+  "minecraft:cocoa_beans"
+ ],
+ "thresholds": [
+  75,
+  200,
+  500,
+  2000,
+  5000,
+  10000,
+  20000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cocoa Beans Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to Mushroom Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cocoa Beans Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Mushroom Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cookie Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Adrenaline Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Replenish I) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+30,000 Farming Experience"
+   ]
+  }
+ ]
+}

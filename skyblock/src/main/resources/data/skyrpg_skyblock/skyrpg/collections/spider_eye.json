@@ -1,0 +1,78 @@
+{
+ "category": "combat",
+ "name": "Spider Eye",
+ "icon": "minecraft:spider_eye",
+ "skyblock": [
+  "SPIDER_EYE"
+ ],
+ "items": [
+  "minecraft:spider_eye"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cave Spider Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spider Sword Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spider Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Spider Eye Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bane of Arthropods Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Venomous Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Fermented Spider Eye Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+25,000 Combat Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Leaping Sword Recipe"
+   ]
+  }
+ ]
+}

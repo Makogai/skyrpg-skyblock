@@ -1,0 +1,86 @@
+{
+ "category": "mining",
+ "name": "Cobblestone",
+ "icon": "minecraft:cobblestone",
+ "skyblock": [
+  "COBBLESTONE"
+ ],
+ "items": [
+  "minecraft:cobblestone"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  40000,
+  70000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Cobblestone Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Stone Platform Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Silverfish Recipe",
+    "Auto Smelter Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cobblestone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Compactor Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1,000 Mining Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Haste Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hyper Furnace Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Haste Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Super Compactor 3000 Recipe"
+   ]
+  }
+ ]
+}

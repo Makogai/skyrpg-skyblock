@@ -1,0 +1,79 @@
+{
+ "category": "mining",
+ "name": "Glacite",
+ "icon": "minecraft:packed_ice",
+ "skyblock": [
+  "GLACITE"
+ ],
+ "items": [
+  "minecraft:packed_ice"
+ ],
+ "thresholds": [
+  100,
+  1000,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  250000,
+  500000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Glacite Recipe",
+    "Cold Resistance Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Glacite Amalgamation Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Glacite Golem Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Frigid Husk Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Mining Experience"
+   ]
+  }
+ ]
+}

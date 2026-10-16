@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-lava_bucket","title":"Lava Bucket","category":"reference","icon":"skyrpg_skyblock:lava_bucket","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:lava_bucket","icon":"skyrpg_skyblock:lava_bucket","name":"Lava Bucket","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

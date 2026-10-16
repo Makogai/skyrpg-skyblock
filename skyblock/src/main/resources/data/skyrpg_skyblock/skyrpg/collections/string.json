@@ -1,0 +1,81 @@
+{
+ "category": "combat",
+ "name": "String",
+ "icon": "minecraft:string",
+ "skyblock": [
+  "STRING"
+ ],
+ "items": [
+  "minecraft:string"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spider Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Web Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Spider Recipe",
+    "Quiver"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted String Recipe",
+    "Grappling Hook Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silk Touch Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Infinite Quiver Exp Discount (-25%)",
+    "+9 Quiver Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+20,000 Combat Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spider's Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+9 Quiver Slots"
+   ]
+  }
+ ]
+}

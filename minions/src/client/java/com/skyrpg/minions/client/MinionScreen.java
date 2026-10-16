@@ -23,7 +23,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import com.skyrpg.minions.MinionUpgrade;
+import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
+import com.skyrpg.skyblock.SkyStacks;
 
 /**
  * A minion, SkyRPG style: the minion itself turning on a glowing stand with a bar that fills up to its next action,
@@ -64,32 +67,32 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
         int px = x + MinionMenu.PAD;
         int py = y + MinionMenu.TOP;
         Draw.panel(g, px, py, MinionMenu.LEFT_W, MinionMenu.LEFT_H, Theme.CARD, Theme.CARD_BORDER);
-        g.fillGradient(px + 1, py + 1, px + MinionMenu.LEFT_W - 1, py + 66, Draw.withAlpha(accent, 0.22f), 0x00000000);
-        g.fill(px + MinionMenu.LEFT_W / 2 - 16, py + 62, px + MinionMenu.LEFT_W / 2 + 16, py + 64, Draw.withAlpha(accent, 0.5f));
+        g.fillGradient(px + 1, py + 1, px + MinionMenu.LEFT_W - 1, py + 58, Draw.withAlpha(accent, 0.22f), 0x00000000);
+        g.fill(px + MinionMenu.LEFT_W / 2 - 16, py + 54, px + MinionMenu.LEFT_W / 2 + 16, py + 56, Draw.withAlpha(accent, 0.5f));
         Entity entity = minecraft.level.getEntity(view.entityId());
         float time = Util.getMillis() / 1000f;
         if (entity instanceof LivingEntity living) {
-            Draw.entityTurning(g, px + 10, py + 4, px + MinionMenu.LEFT_W - 10, py + 64, 46, time * 30f % 360f, time * 20f, living);
+            Draw.entityTurning(g, px + 10, py + 3, px + MinionMenu.LEFT_W - 10, py + 56, 40, time * 30f % 360f, time * 20f, living);
         }
         float progress = menu.progress();
         int barX = px + 8;
         int barW = MinionMenu.LEFT_W - 16;
-        Draw.bar(g, barX, py + 70, barW, 4, menu.full() ? 1f : progress, menu.full() ? Theme.RED : accent);
+        Draw.bar(g, barX, py + 60, barW, 4, menu.full() ? 1f : progress, menu.full() ? Theme.RED : accent);
         float seconds = menu.actionSeconds();
         String timer = menu.full() ? "Storage full!" : "Next action in " + String.format("%.1f", Math.max(0, seconds * (1 - progress))) + "s";
-        Draw.fit(g, font, Component.literal(timer), px + MinionMenu.LEFT_W / 2, py + 77, barW, 1f, 0.7f, Draw.Align.CENTER,
+        Draw.fit(g, font, Component.literal(timer), px + MinionMenu.LEFT_W / 2, py + 67, barW, 1f, 0.7f, Draw.Align.CENTER,
                 menu.full() ? Theme.RED : Theme.MUTED, false);
         Component speed = Component.literal("⏱ " + trim(seconds) + "s per action").withColor(Theme.TEXT);
         if (menu.speedPercent() > 0) {
             speed = speed.copy().append(Component.literal(" +" + menu.speedPercent() + "%").withColor(Theme.GREEN));
         }
-        Draw.fit(g, font, speed, px + MinionMenu.LEFT_W / 2, py + 87, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
+        Draw.fit(g, font, speed, px + MinionMenu.LEFT_W / 2, py + 76, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
         Draw.fit(g, font, Component.literal("Generated ").withColor(Theme.DIM).append(Component.literal(Msg.number(menu.generated())).withColor(accent)),
-                px + MinionMenu.LEFT_W / 2, py + 96, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
-        Draw.fit(g, font, fuelLine(), px + MinionMenu.LEFT_W / 2, py + 105, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.TEXT, false);
+                px + MinionMenu.LEFT_W / 2, py + 85, barW, 1f, 0.7f, Draw.Align.CENTER, Theme.TEXT, false);
+        Draw.fit(g, font, fuelLine(), px + MinionMenu.LEFT_W / 2, py + 94, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.TEXT, false);
         if (menu.heldCoins() > 0) {
             Draw.fit(g, font, Component.literal("⛃ " + Msg.number(menu.heldCoins()) + " coins held").withColor(Theme.ACCENT),
-                    px + MinionMenu.LEFT_W / 2, py + 113, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.ACCENT, false);
+                    px + MinionMenu.LEFT_W / 2, py + 102, barW, 1f, 0.6f, Draw.Align.CENTER, Theme.ACCENT, false);
         }
 
         // Storage.
@@ -136,6 +139,7 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
 
         // Fuel, shipping and upgrades: wells with a ghost of what goes in, and a glow on the ones at work.
         int uy = y + MinionMenu.PARTS_Y;
+        List<Integer> ghosts = new ArrayList<>();
         Draw.fit(g, font, Component.literal("Fuel · Ship"), x + MinionMenu.partX(0), uy - 9, 38, 1f, 0.6f, Draw.Align.LEFT, Theme.DIM, false);
         Draw.fit(g, font, Component.literal("Upgrades"), x + MinionMenu.partX(2), uy - 9, 38, 1f, 0.6f, Draw.Align.LEFT, Theme.DIM, false);
         for (int part = 0; part < 4; part++) {
@@ -147,14 +151,24 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
             }
             SkyScreens.well(g, sx, uy);
             if (in.isEmpty()) {
-                ItemStack ghost = new ItemStack(part == 0 ? Items.COAL : part == 1 ? Items.HOPPER : Items.REDSTONE);
-                Draw.item(g, ghost, sx + 1, uy + 1, 1f);
-                g.fill(sx + 1, uy + 1, sx + 17, uy + 17, 0xB011151D);
+                ghosts.add(part);
             }
         }
 
+        // A ghost of what goes in each empty part slot, dimmed (items draw above fills, hence the strata).
+        g.nextStratum();
+        for (int part : ghosts) {
+            ItemStack ghost = new ItemStack(part == 0 ? Items.COAL : part == 1 ? Items.HOPPER : Items.REDSTONE);
+            g.fakeItem(ghost, x + MinionMenu.partX(part) + 1, uy + 1);
+        }
+        g.nextStratum();
+        for (int part : ghosts) {
+            int sx = x + MinionMenu.partX(part);
+            g.fill(sx + 1, uy + 1, sx + 17, uy + 17, 0x7011151D);
+        }
+
         SkyScreens.label(g, font, "Inventory", x + MinionMenu.INV_X, y + MinionMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, MinionEntity.MAX_SLOTS, x, y);
+        SkyScreens.inventoryWells(g, menu, MinionMenu.PARTS_END, x, y);
     }
 
     private Component fuelLine() {
@@ -164,7 +178,9 @@ public final class MinionScreen extends AbstractContainerScreen<MinionMenu> {
         }
         long seconds = menu.fuelSeconds();
         Component left = Component.literal(seconds < 0 ? "forever" : duration(seconds) + " left").withColor(Theme.ACCENT);
-        return Component.literal("🔥 ").withColor(Theme.ACCENT).append(fuel.getHoverName().copy().withColor(Theme.TEXT))
+        ItemDefinition def = ItemRegistry.skyblock(SkyStacks.id(fuel));
+        Component name = def == null ? fuel.getHoverName() : Component.literal(def.name());
+        return Component.literal("🔥 ").withColor(Theme.ACCENT).append(name.copy().withColor(Theme.TEXT))
                 .append(Component.literal(" · ").withColor(Theme.DIM)).append(left);
     }
 

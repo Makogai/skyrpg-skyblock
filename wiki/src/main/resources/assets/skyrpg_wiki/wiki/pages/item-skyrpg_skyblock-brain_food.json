@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-brain_food","title":"Brain Food","category":"reference","icon":"skyrpg_skyblock:brain_food","summary":"Epic consumable.","blocks":[{"t":"hero","id":"skyrpg_skyblock:brain_food","icon":"skyrpg_skyblock:brain_food","name":"Brain Food","color":"#AA00AA","rarity":"epic","kind":"Consumable"}]}

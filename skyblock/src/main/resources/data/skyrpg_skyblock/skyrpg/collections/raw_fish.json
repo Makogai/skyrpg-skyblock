@@ -1,0 +1,87 @@
+{
+ "category": "fishing",
+ "name": "Raw Cod",
+ "icon": "minecraft:cod",
+ "skyblock": [
+  "RAW_FISH"
+ ],
+ "items": [
+  "minecraft:cod"
+ ],
+ "thresholds": [
+  20,
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  15000,
+  30000,
+  45000,
+  60000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fish Hat Recipe",
+    "Minnow Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fishing Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Bait Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pond Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Bait Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Raw Cod Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Bait Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cooked Cod Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": []
+  },
+  {
+   "xp": 4,
+   "unlocks": []
+  },
+  {
+   "xp": 4,
+   "unlocks": []
+  }
+ ]
+}

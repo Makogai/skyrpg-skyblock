@@ -1,0 +1,79 @@
+{
+ "category": "foraging",
+ "name": "Acacia Log",
+ "icon": "minecraft:acacia_log",
+ "skyblock": [
+  "LOG_2"
+ ],
+ "items": [
+  "minecraft:acacia_log"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Acacia Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Acacia Leaves Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Acacia Log Recipe",
+    "Portal to Savanna Woodland Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Savanna Bow Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Savanna Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+2,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Repelling Candle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Acacia Birdhouse Recipe"
+   ]
+  }
+ ]
+}

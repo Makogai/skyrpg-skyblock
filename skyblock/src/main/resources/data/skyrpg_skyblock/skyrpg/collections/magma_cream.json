@@ -1,0 +1,73 @@
+{
+ "category": "combat",
+ "name": "Magma Cream",
+ "icon": "minecraft:magma_cream",
+ "skyblock": [
+  "MAGMA_CREAM"
+ ],
+ "items": [
+  "minecraft:magma_cream"
+ ],
+ "thresholds": [
+  50,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magma Cube Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fire Protection Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nether Biome Stick Recipe",
+    "Enchanted Magma Cream Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magma Necklace Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lava Bucket Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lava Talisman Recipe",
+    "Searing Stone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vanquished Magma Necklace Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Whipped Magma Cream Recipe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "category": "farming",
+ "name": "Pumpkin",
+ "icon": "minecraft:pumpkin",
+ "skyblock": [
+  "PUMPKIN"
+ ],
+ "items": [
+  "minecraft:pumpkin"
+ ],
+ "thresholds": [
+  40,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pumpkin Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Farmer Orb Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Pumpkin Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Spooky Bait Recipe",
+    "Cubism Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Training Dummy Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lantern Helmet Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Farm Crystal Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Farmer Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Polished Pumpkin Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rancher's Boots Recipe"
+   ]
+  }
+ ]
+}

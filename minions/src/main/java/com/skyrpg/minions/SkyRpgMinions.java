@@ -35,14 +35,12 @@ import org.slf4j.LoggerFactory;
 
 /**
  * SkyRPG Minions: Hypixel's minions. Right-click a minion item on the top of a block on your island to place it; it
- * works the 5 by 5 around it, even while you're offline. A profile can have {@link #BASE_SLOTS} placed to start with.
+ * works the 5 by 5 around it, even while you're offline. A profile can place 5 to start with, more as it crafts unique
+ * minions ({@link MinionSlots}).
  */
 public final class SkyRpgMinions implements ModInitializer {
     public static final String MOD_ID = "skyrpg_minions";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    /** Minions a profile can place before crafting unique minions unlocks more (Hypixel: 5, up to 26). */
-    public static final int BASE_SLOTS = 5;
-
     public static final EntityType<MinionEntity> MINION = registerEntity();
     public static final MenuType<MinionMenu> MENU = Registry.register(BuiltInRegistries.MENU, id("minion"),
             new ExtendedMenuType<>(MinionMenu::new, MinionMenu.View.CODEC));
@@ -52,6 +50,7 @@ public final class SkyRpgMinions implements ModInitializer {
         FabricDefaultAttributeRegistry.register(MINION, ArmorStand.createAttributes());
         JsonDataLoader.register(id("minions"), Minions.DIRECTORY, Minions::load);
         JsonDataLoader.register(id("minion_fuels"), MinionFuels.DIRECTORY, MinionFuels::load);
+        MinionSlots.init();
         UseBlockCallback.EVENT.register((player, level, hand, hit) -> {
             ItemStack held = player.getItemInHand(hand);
             Minions.Placed placed = Minions.fromItem(SkyItems.skyblockId(held));
@@ -77,8 +76,11 @@ public final class SkyRpgMinions implements ModInitializer {
         Profile profile = Profiles.current(player);
         int placedHere = level.getEntities(MINION, new AABB(Islands.center(profile.island())).inflate(Islands.BUILD_RADIUS + 8, 400, Islands.BUILD_RADIUS + 8),
                 minion -> true).size();
-        if (placedHere >= BASE_SLOTS) {
-            player.sendOverlayMessage(Component.literal("You can't place more than " + BASE_SLOTS + " minions yet.").withStyle(ChatFormatting.RED));
+        int slots = MinionSlots.slots(player);
+        if (placedHere >= slots) {
+            int toNext = MinionSlots.toNext(player);
+            player.sendOverlayMessage(Component.literal("You can place " + slots + " minions"
+                    + (toNext > 0 ? ": craft " + toNext + " more unique minions for another" : "") + ".").withStyle(ChatFormatting.RED));
             return;
         }
         MinionEntity minion = MINION.create(level, net.minecraft.world.entity.EntitySpawnReason.SPAWN_ITEM_USE);
@@ -93,7 +95,7 @@ public final class SkyRpgMinions implements ModInitializer {
             held.shrink(1);
         }
         level.playSound(null, at, SoundEvents.ARMOR_STAND_PLACE, SoundSource.BLOCKS, 1f, 1.2f);
-        player.sendOverlayMessage(Component.literal("You placed a " + placed.type().title(placed.tier()) + "! (" + (placedHere + 1) + "/" + BASE_SLOTS + ")")
+        player.sendOverlayMessage(Component.literal("You placed a " + placed.type().title(placed.tier()) + "! (" + (placedHere + 1) + "/" + slots + ")")
                 .withStyle(ChatFormatting.GREEN));
     }
 

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-bridge_egg","title":"Bridge Egg","category":"reference","icon":"skyrpg_skyblock:bridge_egg","summary":"Common item.","blocks":[{"t":"hero","id":"skyrpg_skyblock:bridge_egg","icon":"skyrpg_skyblock:bridge_egg","name":"Bridge Egg","color":"#FFFFFF","rarity":"common","kind":"Item"}]}

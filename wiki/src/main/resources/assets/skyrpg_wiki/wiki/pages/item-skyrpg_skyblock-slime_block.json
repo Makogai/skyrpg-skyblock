@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-slime_block","title":"Slime Block","category":"reference","icon":"skyrpg_skyblock:slime_block","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:slime_block","icon":"skyrpg_skyblock:slime_block","name":"Slime Block","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

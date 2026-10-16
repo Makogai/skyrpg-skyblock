@@ -1,0 +1,86 @@
+{
+ "category": "mining",
+ "name": "Lapis Lazuli",
+ "icon": "minecraft:lapis_lazuli",
+ "skyblock": [
+  "INK_SACK:4"
+ ],
+ "items": [
+  "minecraft:lapis_lazuli"
+ ],
+ "thresholds": [
+  250,
+  500,
+  1000,
+  2000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lapis Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Experience Bottle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lapis Pickaxe Recipe",
+    "Experience Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Lapis Lazuli Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Grand Experience Bottle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Experience Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Lapis Lazuli Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Titanic Experience Bottle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Experience Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Textbook Recipe"
+   ]
+  }
+ ]
+}

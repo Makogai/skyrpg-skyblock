@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-wheat","title":"Wheat","category":"reference","icon":"skyrpg_skyblock:wheat","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:wheat","icon":"skyrpg_skyblock:wheat","name":"Wheat","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

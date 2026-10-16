@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-gold_ore","title":"Gold Ore","category":"reference","icon":"skyrpg_skyblock:gold_ore","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:gold_ore","icon":"skyrpg_skyblock:gold_ore","name":"Gold Ore","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

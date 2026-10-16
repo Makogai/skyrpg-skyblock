@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-workbench","title":"Crafting Table","category":"reference","icon":"skyrpg_skyblock:workbench","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:workbench","icon":"skyrpg_skyblock:workbench","name":"Crafting Table","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

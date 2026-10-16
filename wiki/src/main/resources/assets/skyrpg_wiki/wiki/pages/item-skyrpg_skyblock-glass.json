@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-glass","title":"Glass","category":"reference","icon":"skyrpg_skyblock:glass","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:glass","icon":"skyrpg_skyblock:glass","name":"Glass","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,78 @@
+{
+ "category": "farming",
+ "name": "Feather",
+ "icon": "minecraft:feather",
+ "skyblock": [
+  "FEATHER"
+ ],
+ "items": [
+  "minecraft:feather"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Projectile Protection Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Feather Falling Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Archery Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Feather Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Feather Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dragon Tracer Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Feather Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Snipe Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Feather Artifact Recipe"
+   ]
+  }
+ ]
+}

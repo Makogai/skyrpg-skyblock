@@ -1,0 +1,81 @@
+{
+ "category": "farming",
+ "name": "Carrot",
+ "icon": "minecraft:carrot",
+ "skyblock": [
+  "CARROT_ITEM"
+ ],
+ "items": [
+  "minecraft:carrot"
+ ],
+ "thresholds": [
+  100,
+  250,
+  500,
+  1750,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Carrot Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Simple Carrot Candy Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Carrot Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Carrot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Carrot on a Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Great Carrot Candy Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Golden Carrot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sprout Helmet Recipe",
+    "Sprout Chestplate Recipe",
+    "Sprout Leggings Recipe",
+    "Sprout Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Superb Carrot Candy Recipe"
+   ]
+  }
+ ]
+}

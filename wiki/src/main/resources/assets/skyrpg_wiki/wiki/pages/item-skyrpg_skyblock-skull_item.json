@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-skull_item","title":"Skeleton Skull","category":"reference","icon":"skyrpg_skyblock:skull_item","summary":"Rare material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:skull_item","icon":"skyrpg_skyblock:skull_item","name":"Skeleton Skull","color":"#5555FF","rarity":"rare","kind":"Material"}]}

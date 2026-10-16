@@ -1,0 +1,81 @@
+{
+ "category": "farming",
+ "name": "Sugar Cane",
+ "icon": "minecraft:sugar_cane",
+ "skyblock": [
+  "SUGAR_CANE"
+ ],
+ "items": [
+  "minecraft:sugar_cane"
+ ],
+ "thresholds": [
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  20000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sugar Cane Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Speed Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sugar Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Speedster Helmet Recipe",
+    "Speedster Chestplate Recipe",
+    "Speedster Leggings Recipe",
+    "Speedster Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Speed Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Paper Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magic For Pets In A Hurry Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sugar Cane Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Speed Artifact Recipe"
+   ]
+  }
+ ]
+}

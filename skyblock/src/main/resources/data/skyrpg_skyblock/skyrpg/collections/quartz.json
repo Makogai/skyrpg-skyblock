@@ -1,0 +1,78 @@
+{
+ "category": "mining",
+ "name": "Nether Quartz",
+ "icon": "minecraft:quartz",
+ "skyblock": [
+  "QUARTZ"
+ ],
+ "items": [
+  "minecraft:quartz"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Quartz Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Night Saver Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Day Saver Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Nether Quartz Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Minion Expander Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Quartz Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Night Crystal Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Day Crystal Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Solar Panel Recipe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-potion","title":"Water Bottle","category":"reference","icon":"skyrpg_skyblock:potion","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:potion","icon":"skyrpg_skyblock:potion","name":"Water Bottle","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

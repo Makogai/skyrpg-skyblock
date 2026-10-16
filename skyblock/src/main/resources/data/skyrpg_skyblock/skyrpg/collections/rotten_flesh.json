@@ -1,0 +1,91 @@
+{
+ "category": "combat",
+ "name": "Rotten Flesh",
+ "icon": "minecraft:rotten_flesh",
+ "skyblock": [
+  "ROTTEN_FLESH"
+ ],
+ "items": [
+  "minecraft:rotten_flesh"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Zombie Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Combat Sack Recipe",
+    "Zombie Pickaxe Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Zombie Recipe",
+    "Smite Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Rotten Flesh Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Zombie Hat Recipe",
+    "Small Combat Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Zombie's Heart Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Zombie Sword Recipe",
+    "Medium Combat Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Zombie Chestplate Recipe",
+    "Zombie Leggings Recipe",
+    "Zombie Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Combat Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Enchanted Combat Sack Recipe"
+   ]
+  }
+ ]
+}

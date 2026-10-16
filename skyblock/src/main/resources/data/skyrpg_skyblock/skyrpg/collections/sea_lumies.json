@@ -1,0 +1,93 @@
+{
+ "category": "foraging",
+ "name": "Sea Lumies",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "SEA_LUMIES"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  25,
+  50,
+  100,
+  250,
+  500,
+  750,
+  1000,
+  2500,
+  5000,
+  10000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Basic Fishing Net Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sea Lumies Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bubbles of Air Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Scuba I) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Fishing Net Recipe",
+    "Pressure Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diver's Mask Recipe",
+    "Diver's Shirt Recipe",
+    "Diver's Trunks Recipe",
+    "Diver's Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pressure Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Abyssal Helmet Recipe",
+    "Abyssal Chestplate Recipe",
+    "Abyssal Leggings Recipe",
+    "Abyssal Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Turbo Fishing Net Recipe",
+    "Pressure Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gigantic Fishing Net Recipe"
+   ]
+  }
+ ]
+}

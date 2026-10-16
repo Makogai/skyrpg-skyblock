@@ -1,0 +1,78 @@
+{
+ "category": "foraging",
+ "name": "Ruby Veilshroom",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "RUBY_VEILSHROOM"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  25,
+  100,
+  250,
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Torrhus Springs Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Ruby Veilshroom Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Accretion Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "June Bug Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Accretion Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Veilshroom Bunch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Accretion Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Pocket Black Hole Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Veilshroom Bracelet Recipe"
+   ]
+  }
+ ]
+}

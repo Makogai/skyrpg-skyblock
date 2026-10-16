@@ -1,0 +1,65 @@
+{
+ "category": "farming",
+ "name": "Seeds",
+ "icon": "minecraft:wheat_seeds",
+ "skyblock": [
+  "SEEDS"
+ ],
+ "items": [
+  "minecraft:wheat_seeds"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dirt Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Clay Ball Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Long Grass Trade",
+    "Enchanted Seeds Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fern Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dead Bush Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Double Tallgrass Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Box of Seeds Recipe"
+   ]
+  }
+ ]
+}

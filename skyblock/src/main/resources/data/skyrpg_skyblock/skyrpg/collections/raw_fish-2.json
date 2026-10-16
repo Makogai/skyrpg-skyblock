@@ -1,0 +1,80 @@
+{
+ "category": "fishing",
+ "name": "Tropical Fish",
+ "icon": "minecraft:tropical_fish",
+ "skyblock": [
+  "RAW_FISH:2"
+ ],
+ "items": [
+  "minecraft:tropical_fish"
+ ],
+ "thresholds": [
+  10,
+  25,
+  50,
+  100,
+  200,
+  400,
+  800,
+  1600,
+  4000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Tropical Fish Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Water Bucket Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magnet Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Sack of Sacks",
+    "Enchanted Tropical Fish Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+4 Small Sack of Sacks Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+4 Small Sack of Sacks Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Tropical Cloak Recipe",
+    "+4 Small Sack of Sacks Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+4 Small Sack of Sacks Slots"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5 Small Sack of Sacks Slots"
+   ]
+  }
+ ]
+}

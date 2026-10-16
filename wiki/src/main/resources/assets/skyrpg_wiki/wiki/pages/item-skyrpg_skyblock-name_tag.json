@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-name_tag","title":"Name Tag","category":"reference","icon":"skyrpg_skyblock:name_tag","summary":"Uncommon material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:name_tag","icon":"skyrpg_skyblock:name_tag","name":"Name Tag","color":"#55FF55","rarity":"uncommon","kind":"Material"}]}

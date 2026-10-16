@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-nether_brick_item","title":"Nether Brick","category":"reference","icon":"skyrpg_skyblock:nether_brick_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:nether_brick_item","icon":"skyrpg_skyblock:nether_brick_item","name":"Nether Brick","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

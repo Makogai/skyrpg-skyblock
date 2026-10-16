@@ -1,0 +1,96 @@
+{
+ "category": "mining",
+ "name": "Ice",
+ "icon": "minecraft:ice",
+ "skyblock": [
+  "ICE"
+ ],
+ "items": [
+  "minecraft:ice"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  5000,
+  10000,
+  50000,
+  100000,
+  250000,
+  500000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ice Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ice Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Packed Ice Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Ice Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magical Water Bucket Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Glacial Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Packed Ice Recipe",
+    "Ice Cube Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Glacial Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Frozen Blaze Helmet Recipe",
+    "Frozen Blaze Chestplate Recipe",
+    "Frozen Blaze Leggings Recipe",
+    "Frozen Blaze Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Frozen Scythe Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Glacial Scythe Recipe"
+   ]
+  }
+ ]
+}

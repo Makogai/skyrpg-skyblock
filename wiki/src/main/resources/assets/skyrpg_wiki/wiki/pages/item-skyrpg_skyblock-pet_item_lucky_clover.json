@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-pet_item_lucky_clover","title":"Lucky Clover","category":"reference","icon":"skyrpg_skyblock:pet_item_lucky_clover","summary":"Epic pet item.","blocks":[{"t":"hero","id":"skyrpg_skyblock:pet_item_lucky_clover","icon":"skyrpg_skyblock:pet_item_lucky_clover","name":"Lucky Clover","color":"#AA00AA","rarity":"epic","kind":"Pet Item"}]}

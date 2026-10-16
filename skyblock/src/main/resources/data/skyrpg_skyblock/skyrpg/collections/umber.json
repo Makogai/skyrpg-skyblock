@@ -1,0 +1,78 @@
+{
+ "category": "mining",
+ "name": "Umber",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "UMBER"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  100,
+  1000,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  250000,
+  500000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Umber Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Refined Umber Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Umber Key Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Umber Plate Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1 Mining Fortune"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Umberella Recipe"
+   ]
+  }
+ ]
+}

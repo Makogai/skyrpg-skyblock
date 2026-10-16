@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-coal","title":"Coal","category":"reference","icon":"skyrpg_skyblock:coal","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:coal","icon":"skyrpg_skyblock:coal","name":"Coal","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,84 @@
+{
+ "category": "foraging",
+ "name": "Helix Log",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "HELIX_LOG"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Torrhus Canyon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Helix Log Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lumberjack Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to the Torrhus Canyon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lumberjack Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Helixis Recipe",
+    "Helix Chopper Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hawk Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lumberjack Artifact Recipe",
+    "Helix Helmet Recipe",
+    "Helix Chestplate Recipe",
+    "Helix Leggings Recipe",
+    "Helix Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+150,000 Foraging Experience",
+    "+1 Foraging Level Cap"
+   ]
+  }
+ ]
+}

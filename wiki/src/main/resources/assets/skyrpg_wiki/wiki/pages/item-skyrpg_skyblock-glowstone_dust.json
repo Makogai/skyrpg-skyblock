@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-glowstone_dust","title":"Glowstone Dust","category":"reference","icon":"skyrpg_skyblock:glowstone_dust","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:glowstone_dust","icon":"skyrpg_skyblock:glowstone_dust","name":"Glowstone Dust","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

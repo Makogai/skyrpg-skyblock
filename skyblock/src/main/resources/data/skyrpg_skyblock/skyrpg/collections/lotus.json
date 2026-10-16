@@ -1,0 +1,92 @@
+{
+ "category": "fishing",
+ "name": "Lotus",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "LOTUS"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  25,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Froggles Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Red Sweater Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silver Lotus Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silver Froggles Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lotus Sinker Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gold Lotus Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Golden Froggles Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Puddle Jumper Hook Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Trophy Line Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diamond Lotus Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diamond Froggles Recipe"
+   ]
+  }
+ ]
+}

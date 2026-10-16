@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-stone_bridge","title":"Stone Platform","category":"reference","icon":"skyrpg_skyblock:stone_bridge","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:stone_bridge","icon":"skyrpg_skyblock:stone_bridge","name":"Stone Platform","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,50 @@
+{
+ "category": "mining",
+ "name": "Netherrack",
+ "icon": "minecraft:netherrack",
+ "skyblock": [
+  "NETHERRACK"
+ ],
+ "items": [
+  "minecraft:netherrack"
+ ],
+ "thresholds": [
+  50,
+  250,
+  500,
+  1000,
+  5000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nether Wart Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Wounded Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nether Brick Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Netherrack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magical Lava Bucket Recipe"
+   ]
+  }
+ ]
+}

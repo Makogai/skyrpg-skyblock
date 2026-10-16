@@ -1,0 +1,78 @@
+{
+ "category": "mining",
+ "name": "Gravel",
+ "icon": "minecraft:gravel",
+ "skyblock": [
+  "GRAVEL"
+ ],
+ "items": [
+  "minecraft:gravel"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  15000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gravel Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Flint Shovel Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to the Spider's Den Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sharpness Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Flint Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "First Strike Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Critical Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Travel Scroll to Spider's Den Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Mining Experience"
+   ]
+  }
+ ]
+}

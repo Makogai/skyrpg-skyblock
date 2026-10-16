@@ -1,0 +1,87 @@
+{
+ "category": "farming",
+ "name": "Mushroom",
+ "icon": "minecraft:red_mushroom",
+ "skyblock": [
+  "RED_MUSHROOM",
+  "BROWN_MUSHROOM"
+ ],
+ "items": [
+  "minecraft:red_mushroom",
+  "minecraft:brown_mushroom"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mushroom Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mushroom Helmet Recipe",
+    "Mushroom Chestplate Recipe",
+    "Mushroom Leggings Recipe",
+    "Mushroom Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Bat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magical Mushroom Soup Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Brown Mushroom Block Recipe",
+    "Red Mushroom Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Red Mushroom Recipe",
+    "Enchanted Brown Mushroom Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Night Vision Charm Recipe",
+    "Mystical Mushroom Soup Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Brown Mushroom Block Recipe",
+    "Enchanted Red Mushroom Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+50,000 Farming Experience"
+   ]
+  }
+ ]
+}

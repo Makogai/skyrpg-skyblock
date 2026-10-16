@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-iron_ore","title":"Iron Ore","category":"reference","icon":"skyrpg_skyblock:iron_ore","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:iron_ore","icon":"skyrpg_skyblock:iron_ore","name":"Iron Ore","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

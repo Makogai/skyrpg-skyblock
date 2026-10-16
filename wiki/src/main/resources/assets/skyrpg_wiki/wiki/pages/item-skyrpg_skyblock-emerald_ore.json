@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-emerald_ore","title":"Emerald Ore","category":"reference","icon":"skyrpg_skyblock:emerald_ore","summary":"Uncommon material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:emerald_ore","icon":"skyrpg_skyblock:emerald_ore","name":"Emerald Ore","color":"#55FF55","rarity":"uncommon","kind":"Material"}]}

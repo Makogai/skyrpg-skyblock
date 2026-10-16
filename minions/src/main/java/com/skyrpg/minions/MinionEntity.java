@@ -30,6 +30,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntitySpawnReason;
@@ -51,6 +52,7 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
 
 /**
  * A placed minion: a small armour stand in its tier's head, working a 5 by 5 area around it. Every action it either
@@ -307,6 +309,9 @@ public class MinionEntity extends ArmorStand {
         // Up to now in stretches: the speed changes when a fuel item runs out (the next one starts, or none is left).
         while (true) {
             MinionFuels.Fuel burning = burning();
+            if (burning != null && !burning.forever() && fuelEnds == 0) {
+                fuelEnds = lastAction + burning.millis(); // fuel put in some other way (a command): it starts now
+            }
             long end = burning != null && !burning.forever() && fuelEnds > 0 ? Math.min(now, fuelEnds) : now;
             long actionMs = actionMillis(type);
             long due = (end - lastAction) / actionMs;
@@ -394,7 +399,10 @@ public class MinionEntity extends ArmorStand {
         for (BlockPos pos : area(layer)) {
             BlockState state = level.getBlockState(pos);
             if (state.isAir()) {
-                empty.add(pos);
+                // Never into someone standing there (it pushed a player off the island once).
+                if (level.isUnobstructed(type.block().defaultBlockState(), pos, CollisionContext.empty())) {
+                    empty.add(pos);
+                }
             } else if (state.is(type.block())) {
                 ready.add(pos);
             }
@@ -458,7 +466,9 @@ public class MinionEntity extends ArmorStand {
             BlockState state = level.getBlockState(pos);
             if (state.is(log)) {
                 ready.add(pos);
-            } else if (state.isAir() && level.getBlockState(pos.above()).isAir() && !level.getBlockState(pos.below()).isAir()) {
+            } else if (state.isAir() && level.getBlockState(pos.above()).isAir() && !level.getBlockState(pos.below()).isAir()
+                    && level.isUnobstructed(log.defaultBlockState(), pos, CollisionContext.empty())
+                    && level.isUnobstructed(log.defaultBlockState(), pos.above(), CollisionContext.empty())) {
                 empty.add(pos);
             }
         }
@@ -822,6 +832,11 @@ public class MinionEntity extends ArmorStand {
 
     @Override
     public boolean hurtServer(ServerLevel level, DamageSource source, float amount) {
+        // Nothing hurts a minion, but /kill (which gets through invulnerability) still removes it.
+        if (source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+            discard();
+            return true;
+        }
         return false;
     }
 

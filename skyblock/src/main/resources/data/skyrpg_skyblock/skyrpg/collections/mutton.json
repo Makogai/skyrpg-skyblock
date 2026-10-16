@@ -1,0 +1,87 @@
+{
+ "category": "farming",
+ "name": "Raw Mutton",
+ "icon": "minecraft:mutton",
+ "skyblock": [
+  "MUTTON"
+ ],
+ "items": [
+  "minecraft:mutton"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sheep Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beginner Husbandry Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Sheep Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mana Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Raw Mutton Recipe",
+    "Small Husbandry Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Rainbow Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Husbandry Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cooked Mutton Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Horns of Torment Recipe",
+    "Large Husbandry Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Enchanted Husbandry Sack Recipe"
+   ]
+  }
+ ]
+}

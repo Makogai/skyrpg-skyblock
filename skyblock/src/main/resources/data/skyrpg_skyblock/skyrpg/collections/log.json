@@ -1,0 +1,82 @@
+{
+ "category": "foraging",
+ "name": "Oak Log",
+ "icon": "minecraft:oak_log",
+ "skyblock": [
+  "LOG"
+ ],
+ "items": [
+  "minecraft:oak_log"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Oak Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Leaflet Hat Recipe",
+    "Leaflet Tunic Recipe",
+    "Leaflet Pants Recipe",
+    "Leaflet Sandals Recipe",
+    "Oak Leaves Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Oak Log Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Storage Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Forest Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Storage Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Wood Affinity Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Storage Recipe"
+   ]
+  }
+ ]
+}

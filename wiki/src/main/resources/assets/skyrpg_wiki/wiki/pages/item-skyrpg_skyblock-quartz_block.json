@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-quartz_block","title":"Block of Quartz","category":"reference","icon":"skyrpg_skyblock:quartz_block","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:quartz_block","icon":"skyrpg_skyblock:quartz_block","name":"Block of Quartz","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

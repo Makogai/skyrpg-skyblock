@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-anvil","title":"Anvil","category":"reference","icon":"skyrpg_skyblock:anvil","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:anvil","icon":"skyrpg_skyblock:anvil","name":"Anvil","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

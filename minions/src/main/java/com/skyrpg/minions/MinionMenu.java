@@ -1,6 +1,7 @@
 package com.skyrpg.minions;
 
 import com.skyrpg.core.economy.Wallet;
+import com.skyrpg.core.event.ItemGains;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
@@ -44,7 +45,7 @@ public final class MinionMenu extends AbstractContainerMenu {
     public static final int PAD = 8;
     public static final int TOP = 26;
     public static final int LEFT_W = 104;
-    public static final int LEFT_H = 122;
+    public static final int LEFT_H = 108;
     public static final int GRID_X = PAD + LEFT_W + 8;
     public static final int GRID_Y = TOP + 12;
     public static final int GRID_COLUMNS = 5;
@@ -136,6 +137,14 @@ public final class MinionMenu extends AbstractContainerMenu {
                 @Override
                 public boolean mayPlace(ItemStack stack) {
                     return false;
+                }
+
+                @Override
+                public void onTake(Player player, ItemStack stack) {
+                    super.onTake(player, stack);
+                    if (player instanceof ServerPlayer serverPlayer) {
+                        ItemGains.GAINED.invoker().onGained(serverPlayer, stack.copy(), ItemGains.Source.OTHER);
+                    }
                 }
 
                 @Override
@@ -447,7 +456,8 @@ public final class MinionMenu extends AbstractContainerMenu {
         for (int i = 0; i < MinionEntity.MAX_SLOTS; i++) {
             ItemStack stack = minion.storage().get(i);
             if (!stack.isEmpty()) {
-                owner.getInventory().add(stack);
+                // Like on Hypixel, what you collect from a minion counts for your collections.
+                ItemGains.give(owner, stack, ItemGains.Source.OTHER);
                 if (stack.isEmpty()) {
                     minion.storage().set(i, ItemStack.EMPTY);
                 }
@@ -482,6 +492,8 @@ public final class MinionMenu extends AbstractContainerMenu {
         }
         cost.forEach((item, count) -> SkyStacks.take(owner.getInventory(), item, count));
         minion.setTier(minion.tier() + 1);
+        // Upgrading counts as crafting that tier, as on Hypixel.
+        MinionSlots.record(owner, type.tier(minion.tier()).item());
         owner.level().playSound(null, minion.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.7f, 1.4f);
         owner.sendSystemMessage(Component.literal("Upgraded to " + type.title(minion.tier()) + "!").withStyle(ChatFormatting.GREEN));
         // Reopen so the screen shows the new tier.
@@ -491,9 +503,13 @@ public final class MinionMenu extends AbstractContainerMenu {
     private void pickUp() {
         MinionType type = minion.type();
         giveCoins();
-        List<ItemStack> back = new ArrayList<>(minion.takeAll());
-        back.addAll(minion.takeParts());
-        for (ItemStack stack : back) {
+        for (ItemStack stack : minion.takeAll()) {
+            ItemGains.give(owner, stack, ItemGains.Source.OTHER);
+            if (!stack.isEmpty()) {
+                owner.drop(stack, false, Prediction.SERVER_ONLY);
+            }
+        }
+        for (ItemStack stack : minion.takeParts()) {
             if (!owner.getInventory().add(stack)) {
                 owner.drop(stack, false, Prediction.SERVER_ONLY);
             }

@@ -1,0 +1,82 @@
+{
+ "category": "mining",
+ "name": "Emerald",
+ "icon": "minecraft:emerald",
+ "skyblock": [
+  "EMERALD"
+ ],
+ "items": [
+  "minecraft:emerald"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  5000,
+  15000,
+  30000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Emerald Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Talisman of Coins Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magnetic Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Emerald Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Emerald Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Access to /bank (Requires Cookie Buff)",
+    "Personal Bank Item Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Emerald Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Emerald Blade Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Emerald Armor Helmet Recipe",
+    "Emerald Armor Chestplate Recipe",
+    "Emerald Armor Leggings Recipe",
+    "Emerald Armor Boots Recipe"
+   ]
+  }
+ ]
+}

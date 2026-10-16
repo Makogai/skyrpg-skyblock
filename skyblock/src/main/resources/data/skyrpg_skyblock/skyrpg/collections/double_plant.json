@@ -1,0 +1,72 @@
+{
+ "category": "farming",
+ "name": "Sunflower",
+ "icon": "minecraft:sunflower",
+ "skyblock": [
+  "DOUBLE_PLANT"
+ ],
+ "items": [
+  "minecraft:sunflower"
+ ],
+ "thresholds": [
+  1000,
+  5000,
+  10000,
+  25000,
+  100000,
+  250000,
+  500000,
+  1000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sunflower Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sunflower Head Recipe",
+    "Sunflower Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dayswitch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Compacted Sunflower Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sunflower Oil Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sunstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sundial Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sunshine Crystal Recipe"
+   ]
+  }
+ ]
+}

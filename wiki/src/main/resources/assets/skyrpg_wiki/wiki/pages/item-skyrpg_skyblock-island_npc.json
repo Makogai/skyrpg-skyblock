@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-island_npc","title":"Island NPC","category":"reference","icon":"skyrpg_skyblock:island_npc","summary":"Rare material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:island_npc","icon":"skyrpg_skyblock:island_npc","name":"Island NPC","color":"#5555FF","rarity":"rare","kind":"Material"}]}

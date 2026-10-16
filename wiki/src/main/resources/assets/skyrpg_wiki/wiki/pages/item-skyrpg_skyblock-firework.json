@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-firework","title":"Firework Rocket","category":"reference","icon":"skyrpg_skyblock:firework","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:firework","icon":"skyrpg_skyblock:firework","name":"Firework Rocket","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

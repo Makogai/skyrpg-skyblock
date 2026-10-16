@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-storage_minecart","title":"Minecart with Chest","category":"reference","icon":"skyrpg_skyblock:storage_minecart","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:storage_minecart","icon":"skyrpg_skyblock:storage_minecart","name":"Minecart with Chest","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

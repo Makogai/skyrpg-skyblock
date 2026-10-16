@@ -1,0 +1,84 @@
+{
+ "category": "mining",
+ "name": "Diamond",
+ "icon": "minecraft:diamond",
+ "skyblock": [
+  "DIAMOND"
+ ],
+ "items": [
+  "minecraft:diamond"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diamond Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Execute Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Portal to the Deep Caverns Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Diamond Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Critical Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diamond Spreading Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hardened Diamond Helmet Recipe",
+    "Hardened Diamond Chestplate Recipe",
+    "Hardened Diamond Leggings Recipe",
+    "Hardened Diamond Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Diamond Block Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Perfect Helmet - Tier I Recipe",
+    "Perfect Chestplate - Tier I Recipe",
+    "Perfect Leggings - Tier I Recipe",
+    "Perfect Boots - Tier I Recipe"
+   ]
+  }
+ ]
+}

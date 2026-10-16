@@ -3,7 +3,8 @@
   "package": "com.skyrpg.skyblock.client.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "CatsPackResourcesMixin"
+    "CatsPackResourcesMixin",
+    "ToastManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 0

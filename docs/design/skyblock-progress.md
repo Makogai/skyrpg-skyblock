@@ -62,8 +62,22 @@ phase so the next session can pick up where this one stopped.
       Not yet: Corrupt Soil, Sleepy Hollow, the "only ONE per profile" limits, slayer requirements on upgrades.
 - [x] Recipes: `tools/skyblock/import_recipes.py`, 2,468 crafting grids from NEU with what unlocks each (collection
       tier, slayer level), loaded by `skyblock` `Recipes`.
-- [ ] Minion slots from unique crafts, crafting minions (with the Recipe Book).
-- [ ] Collections 1:1 with the Recipe Book and enchanted materials.
+- [x] Minion slots from unique crafts (`MinionSlots`, Hypixel's table 5 to 26; crafting and upgrading count, per
+      profile via player data). Crafting minions through the Recipe Book / crafting table.
+- [x] **Collections 1:1**: `tools/skyblock/import_collections.py` writes Hypixel's 83 collections (Rift left out) in
+      the progress mod's format plus `"skyblock"` ids (Mushroom counts red + brown; Gemstone the rough gems) and
+      Hypixel's `"unlocks"` lines; matched by SkyBlock id so an Enchanted Cobblestone isn't 160 Cobblestone. The 63
+      survival collections are gone. Minion collecting counts (Collect All, taking items, Pick Up). Tier rewards: the
+      unlock list in chat + 4 SkyBlock XP (into SkyRpgLevel for now). Not yet: the "+N Skill Experience" unlock lines
+      grant nothing, co-op shared collections, the page's icons for skinned items (player heads).
+- [x] **Recipe Book** (SkyBlock Menu tile, `RecipeBookPage`): every output, search, All / Unlocked / Craftable,
+      locked dimmed, recipe grid with have/need, requirement + your tier, Supercraft (shift = up to 64). Design call:
+      locked recipes still show their ingredients (Hypixel hides them) because it's more useful to plan.
+- [x] **Crafting table** (`CraftMenu` + `CraftScreen`): crafting tables and `/craft` open our 3 by 3 screen; shaped
+      matching that can shift and mirror (`Recipes.match`), result card, Craft / Craft all, Recipe Book link.
+      Recipes are sent to clients (`RecipesPayload`, gzipped JSON). Vanilla recipe / advancement / tutorial toasts
+      are hidden (`ToastManagerMixin`).
+- [ ] Minion tier XII costs: NEU has no recipe for the XII tiers (the upgrade button shows no cost). Find them.
 - [ ] Skills on Hypixel's XP tables and level rewards (NEU constants/leveling.json).
 - [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
 - [ ] Bazaar and Auction House.

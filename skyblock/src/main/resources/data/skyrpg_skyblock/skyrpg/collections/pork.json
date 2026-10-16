@@ -1,0 +1,79 @@
+{
+ "category": "farming",
+ "name": "Raw Porkchop",
+ "icon": "minecraft:porkchop",
+ "skyblock": [
+  "PORK"
+ ],
+ "items": [
+  "minecraft:porkchop"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pig Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+100 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Pigman Recipe",
+    "Enchanted Raw Porkchop Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Piggy Bank Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Cooked Porkchop Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+25,000 Farming Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Pigman Sword Recipe"
+   ]
+  }
+ ]
+}

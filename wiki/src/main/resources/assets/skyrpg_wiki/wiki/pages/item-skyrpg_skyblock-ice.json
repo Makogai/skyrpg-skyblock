@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-ice","title":"Ice","category":"reference","icon":"skyrpg_skyblock:ice","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:ice","icon":"skyrpg_skyblock:ice","name":"Ice","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-powered_minecart","title":"Minecart with Furnace","category":"reference","icon":"skyrpg_skyblock:powered_minecart","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:powered_minecart","icon":"skyrpg_skyblock:powered_minecart","name":"Minecart with Furnace","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

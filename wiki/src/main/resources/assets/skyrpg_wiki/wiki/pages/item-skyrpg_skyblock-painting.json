@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-painting","title":"Painting","category":"reference","icon":"skyrpg_skyblock:painting","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:painting","icon":"skyrpg_skyblock:painting","name":"Painting","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

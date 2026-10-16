@@ -1,0 +1,80 @@
+{
+ "category": "foraging",
+ "name": "Jungle Log",
+ "icon": "minecraft:jungle_log",
+ "skyblock": [
+  "LOG:3"
+ ],
+ "items": [
+  "minecraft:jungle_log"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Jungle Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Jungle Leaves Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Ocelot Recipe",
+    "Enchanted Jungle Log Recipe",
+    "Portal to Jungle Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vines Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Jungle Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+2,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Treecapitator Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Foraging Experience"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "category": "fishing",
+ "name": "Sponge",
+ "icon": "minecraft:sponge",
+ "skyblock": [
+  "SPONGE"
+ ],
+ "items": [
+  "minecraft:sponge"
+ ],
+ "thresholds": [
+  20,
+  50,
+  100,
+  250,
+  500,
+  1000,
+  1500,
+  2000,
+  4000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sponge Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sponge Sinker Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sea Creature Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Sponge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sponge Belt Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sea Creature Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Wet Sponge Recipe",
+    "Stereo Pants Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sea Creature Artifact Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sponge Helmet Recipe",
+    "Sponge Chestplate Recipe",
+    "Sponge Leggings Recipe",
+    "Sponge Boots Recipe"
+   ]
+  }
+ ]
+}

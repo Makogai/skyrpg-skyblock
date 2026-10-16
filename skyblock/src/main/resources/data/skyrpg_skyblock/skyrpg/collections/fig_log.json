@@ -1,0 +1,81 @@
+{
+ "category": "foraging",
+ "name": "Fig Log",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "FIG_LOG"
+ ],
+ "items": [],
+ "thresholds": [
+  500,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Tiny Scaffolding Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Fig Log Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Scaffolding Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fig Hew Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Scaffolding Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Figstone Recipe",
+    "Figstone Splitter Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Sparrow Shard Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Fig Cap Recipe",
+    "Figmail Recipe",
+    "Fig Trousers Recipe",
+    "Fig Striders Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+100,000 Foraging Experience",
+    "+1 Foraging Level Cap"
+   ]
+  }
+ ]
+}

@@ -9,7 +9,7 @@ A **minion** is a little helper you place on your island. It works the ground ar
 
 ## Placing a minion
 
-Hold a minion and right-click the **top of a block on your own island**. It stands on that block and works the **5 by 5** around it. You can place **5 minions** per profile to start with; on Hypixel, crafting more unique minions unlocks more places, up to 26, and that's coming here too.
+Hold a minion and right-click the **top of a block on your own island**. It stands on that block and works the **5 by 5** around it. A minion never puts a block where someone is standing.
 
 Each minion works in its own way:
 
@@ -89,4 +89,21 @@ Two of the same upgrade only count twice for the speed ones (Minion Expander, Fl
 
 ## Getting minions
 
-For now admins hand them out: `/sbitem cobblestone_generator_1` gives a Cobblestone Minion I (`<type>_generator_<tier>`). Crafting minions from their collections comes with the Recipe Book.
+Minions are crafted. Each one unlocks at tier I of its collection (the Cobblestone Minion at Cobblestone I), and its recipe is in the [Recipe Book](recipe-book): a Cobblestone Minion I is 80 Cobblestone around a Wooden Pickaxe. Higher tiers come from the minion's **Upgrade** button. Admins can hand them out with `/sbitem cobblestone_generator_1` (`<type>_generator_<tier>`).
+
+## How many you can place
+
+You can place **5 minions** to start with. Every **unique minion** you make (each type and tier counts once, crafted or upgraded) brings you closer to another place, as on Hypixel:
+
+| Unique minions | Minions you can place |
+| --- | --- |
+| 0 | 5 |
+| 5 | 6 |
+| 15 | 7 |
+| 30 | 8 |
+| 50 | 9 |
+| 75 | 10 |
+| 100, 125, 150... 300 | one more every 25 (19 at 300) |
+| 350, 400... 650 | one more every 50 (26 at 650) |
+
+A new one is announced in chat (**NEW UNIQUE MINION!**). Unique minions are kept per profile. When you can't place another, the message says how many more unique minions you need.

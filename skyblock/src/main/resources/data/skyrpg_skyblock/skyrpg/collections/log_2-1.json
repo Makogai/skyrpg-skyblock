@@ -1,0 +1,82 @@
+{
+ "category": "foraging",
+ "name": "Dark Oak Log",
+ "icon": "minecraft:dark_oak_log",
+ "skyblock": [
+  "LOG_2:1"
+ ],
+ "items": [
+  "minecraft:dark_oak_log"
+ ],
+ "thresholds": [
+  50,
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000,
+  10000,
+  25000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dark Oak Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dark Oak Leaves Trade"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Dark Oak Log Recipe",
+    "Portal to Dark Thicket Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Roofed Forest Island Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Roofed Forest Biome Stick Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+2,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Growth Exp Discount (-25%)"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+10,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Helmet of Growth Recipe",
+    "Chestplate of Growth Recipe",
+    "Leggings of Growth Recipe",
+    "Boots of Growth Recipe"
+   ]
+  }
+ ]
+}

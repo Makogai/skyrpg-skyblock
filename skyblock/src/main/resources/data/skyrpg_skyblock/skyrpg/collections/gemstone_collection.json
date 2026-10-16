@@ -1,0 +1,165 @@
+{
+ "category": "mining",
+ "name": "Gemstone",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "ROUGH_RUBY_GEM",
+  "ROUGH_AMBER_GEM",
+  "ROUGH_TOPAZ_GEM",
+  "ROUGH_JADE_GEM",
+  "ROUGH_SAPPHIRE_GEM",
+  "ROUGH_AMETHYST_GEM",
+  "ROUGH_JASPER_GEM",
+  "ROUGH_OPAL_GEM",
+  "ROUGH_AQUAMARINE_GEM",
+  "ROUGH_CITRINE_GEM",
+  "ROUGH_ONYX_GEM",
+  "ROUGH_PERIDOT_GEM"
+ ],
+ "items": [
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper",
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  100,
+  250,
+  1000,
+  2500,
+  5000,
+  25000,
+  100000,
+  250000,
+  500000,
+  1000000,
+  2000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Gemstone Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    " Flawed Ruby Gemstone Recipe",
+    " Flawed Jade Gemstone Recipe",
+    " Flawed Sapphire Gemstone Recipe",
+    " Flawed Amethyst Gemstone Recipe",
+    " Flawed Amber Gemstone Recipe",
+    " Flawed Topaz Gemstone Recipe",
+    " Flawed Jasper Gemstone Recipe",
+    " Flawed Opal Gemstone Recipe",
+    " Flawed Onyx Gemstone Recipe",
+    " Flawed Citrine Gemstone Recipe",
+    " Flawed Aquamarine Gemstone Recipe",
+    " Flawed Peridot Gemstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Gemstone Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Talisman of Power Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    " Fine Ruby Gemstone Recipe",
+    " Fine Jade Gemstone Recipe",
+    " Fine Sapphire Gemstone Recipe",
+    " Fine Amethyst Gemstone Recipe",
+    " Fine Amber Gemstone Recipe",
+    " Fine Topaz Gemstone Recipe",
+    " Fine Jasper Gemstone Recipe",
+    " Fine Opal Gemstone Recipe",
+    " Fine Onyx Gemstone Recipe",
+    " Fine Citrine Gemstone Recipe",
+    " Fine Aquamarine Gemstone Recipe",
+    " Fine Peridot Gemstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ring of Power Recipe",
+    "Large Gemstone Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Ruby Power Scroll Recipe",
+    "Sapphire Power Scroll Recipe",
+    "Jasper Power Scroll Recipe",
+    "Amethyst Power Scroll Recipe",
+    "Amber Power Scroll Recipe",
+    "Opal Power Scroll Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Prismatic I) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    " Flawless Ruby Gemstone Recipe",
+    " Flawless Jade Gemstone Recipe",
+    " Flawless Sapphire Gemstone Recipe",
+    " Flawless Amethyst Gemstone Recipe",
+    " Flawless Amber Gemstone Recipe",
+    " Flawless Topaz Gemstone Recipe",
+    " Flawless Jasper Gemstone Recipe",
+    " Flawless Opal Gemstone Recipe",
+    " Flawless Onyx Gemstone Recipe",
+    " Flawless Citrine Gemstone Recipe",
+    " Flawless Aquamarine Gemstone Recipe",
+    " Flawless Peridot Gemstone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Artifact of Power Recipe",
+    " Perfect Ruby Gemstone Dwarven Forge Recipe",
+    " Perfect Jade Gemstone Dwarven Forge Recipe",
+    " Perfect Sapphire Gemstone Dwarven Forge Recipe",
+    " Perfect Amethyst Gemstone Dwarven Forge Recipe",
+    " Perfect Amber Gemstone Dwarven Forge Recipe",
+    " Perfect Topaz Gemstone Dwarven Forge Recipe",
+    " Perfect Jasper Gemstone Dwarven Forge Recipe",
+    " Perfect Opal Gemstone Dwarven Forge Recipe",
+    " Perfect Onyx Gemstone Dwarven Forge Recipe",
+    " Perfect Citrine Gemstone Dwarven Forge Recipe",
+    " Perfect Aquamarine Gemstone Dwarven Forge Recipe",
+    " Perfect Peridot Gemstone Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gemstone Gauntlet Recipe"
+   ]
+  }
+ ]
+}

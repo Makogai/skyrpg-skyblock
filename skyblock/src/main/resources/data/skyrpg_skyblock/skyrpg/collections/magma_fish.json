@@ -1,0 +1,99 @@
+{
+ "category": "fishing",
+ "name": "Magmafish",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "MAGMA_FISH"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  20,
+  100,
+  500,
+  1000,
+  5000,
+  15000,
+  30000,
+  50000,
+  75000,
+  100000,
+  250000,
+  500000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magmafish Hat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hot Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silver Magmafish Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Magma Rod Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Corrupted Bait Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Small Lava Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Gold Magmafish Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Inferno Rod Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Medium Lava Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Diamond Magmafish Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Large Lava Fishing Sack Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hellfire Rod Recipe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-book","title":"Book","category":"reference","icon":"skyrpg_skyblock:book","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:book","icon":"skyrpg_skyblock:book","name":"Book","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

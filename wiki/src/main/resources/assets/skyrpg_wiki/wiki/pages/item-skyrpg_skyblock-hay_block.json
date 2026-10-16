@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-hay_block","title":"Hay Bale","category":"reference","icon":"skyrpg_skyblock:hay_block","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:hay_block","icon":"skyrpg_skyblock:hay_block","name":"Hay Bale","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

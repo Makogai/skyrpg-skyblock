@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-egg","title":"Egg","category":"reference","icon":"skyrpg_skyblock:egg","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:egg","icon":"skyrpg_skyblock:egg","name":"Egg","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

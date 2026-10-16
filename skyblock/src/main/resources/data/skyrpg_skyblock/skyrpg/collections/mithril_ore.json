@@ -1,0 +1,79 @@
+{
+ "category": "mining",
+ "name": "Mithril",
+ "icon": "minecraft:prismarine_crystals",
+ "skyblock": [
+  "MITHRIL_ORE"
+ ],
+ "items": [
+  "minecraft:prismarine_crystals"
+ ],
+ "thresholds": [
+  50,
+  250,
+  2500,
+  10000,
+  50000,
+  100000,
+  250000,
+  500000,
+  1000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mithril Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Mithril Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "[Lvl 1] Mithril Golem Recipe",
+    "Spelunker Potion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mithril Crystal Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+5,000 Mining Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Dwarven Super Compactor Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mithril Coat Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Mithril Infusion Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Beacon I Recipe"
+   ]
+  }
+ ]
+}

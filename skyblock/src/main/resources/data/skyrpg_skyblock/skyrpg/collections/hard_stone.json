@@ -1,0 +1,70 @@
+{
+ "category": "mining",
+ "name": "Hard Stone",
+ "icon": "minecraft:stone",
+ "skyblock": [
+  "HARD_STONE"
+ ],
+ "items": [
+  "minecraft:stone"
+ ],
+ "thresholds": [
+  50,
+  1000,
+  5000,
+  50000,
+  150000,
+  300000,
+  1000000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hard Stone Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Heat Helmet Recipe",
+    "Heat Chestplate Recipe",
+    "Heat Leggings Recipe",
+    "Heat Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Hard Stone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Scorched Topaz Dwarven Forge Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Flamebreaker Helmet Recipe",
+    "Flamebreaker Chestplate Recipe",
+    "Flamebreaker Leggings Recipe",
+    "Flamebreaker Boots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Concentrated Stone Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Silex Recipe"
+   ]
+  }
+ ]
+}

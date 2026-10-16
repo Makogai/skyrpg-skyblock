@@ -1,0 +1,51 @@
+{
+ "category": "foraging",
+ "name": "Lushlilac",
+ "icon": "minecraft:paper",
+ "skyblock": [
+  "LUSHLILAC"
+ ],
+ "items": [
+  "minecraft:paper"
+ ],
+ "thresholds": [
+  25,
+  50,
+  100,
+  250,
+  500
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Lushlilac Bonbon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Oceandy Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Prime Lushlilac Bonbon Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "+1,000 Hunting Experience",
+    "+1,000 Foraging Experience"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Exalted Lushlilac Bonbon Recipe"
+   ]
+  }
+ ]
+}

@@ -1,5 +1,7 @@
 package com.skyrpg.progress.collections;
 
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.component.CustomData;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.mojang.brigadier.arguments.LongArgumentType;
@@ -201,11 +203,21 @@ public final class Collections {
         if (stack.isEmpty()) {
             return;
         }
+        String skyblockId = skyblockId(stack);
         for (CollectionDef def : defs.values()) {
-            if (def.matches(stack)) {
+            if (def.matches(stack, skyblockId)) {
                 addTo(player, def, stack.getCount());
             }
         }
+    }
+
+    /** The SkyBlock id in a stack's custom data ("COBBLESTONE"), or null for a plain stack. */
+    private static String skyblockId(ItemStack stack) {
+        CustomData data = stack.get(DataComponents.CUSTOM_DATA);
+        if (data == null || data.isEmpty()) {
+            return null;
+        }
+        return data.copyTag().getString("id").orElse(null);
     }
 
     private static void addTo(ServerPlayer player, CollectionDef def, long amount) {
@@ -226,15 +238,28 @@ public final class Collections {
 
     private static void tierReached(ServerPlayer player, CollectionDef def, int tier) {
         CollectionDef.Tier reward = def.tier(tier);
-        Wallet.give(player, reward.coins());
+        if (reward.coins() > 0) {
+            Wallet.give(player, reward.coins());
+        }
         SkyRpgLevel.addXp(player, reward.xp(), "collection tier");
         Component body = Msg.text(def.name() + " Collection ", ChatFormatting.GRAY)
                 .append(Msg.text(CollectionLevels.roman(tier), ChatFormatting.AQUA, ChatFormatting.BOLD));
         Notice.of(Notice.Kind.COLLECTION).tag("TIER UP").hover(Component.literal(def.name() + ": " + Msg.number(def.thresholds()[tier - 1]) + " gathered"))
                 .send(player, body);
-        String line = reward.describe();
-        if (!line.isEmpty()) {
-            player.sendSystemMessage(Component.literal("   " + line).withStyle(ChatFormatting.DARK_GRAY));
+        if (!reward.unlocks().isEmpty()) {
+            // Hypixel's reward list: what the tier unlocks, one per line.
+            player.sendSystemMessage(Component.literal("   Rewards").withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
+            for (String unlock : reward.unlocks()) {
+                player.sendSystemMessage(Component.literal("     " + unlock).withStyle(ChatFormatting.GRAY));
+            }
+            if (reward.xp() > 0) {
+                player.sendSystemMessage(Component.literal("     +" + reward.xp() + " SkyBlock XP").withStyle(ChatFormatting.AQUA));
+            }
+        } else {
+            String line = reward.describe();
+            if (!line.isEmpty()) {
+                player.sendSystemMessage(Component.literal("   " + line).withStyle(ChatFormatting.DARK_GRAY));
+            }
         }
         if (!reward.message().isEmpty()) {
             player.sendSystemMessage(Component.literal("   " + reward.message()).withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));

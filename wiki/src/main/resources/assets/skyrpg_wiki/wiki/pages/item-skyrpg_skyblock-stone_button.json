@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-stone_button","title":"Stone Button","category":"reference","icon":"skyrpg_skyblock:stone_button","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:stone_button","icon":"skyrpg_skyblock:stone_button","name":"Stone Button","color":"#FFFFFF","rarity":"common","kind":"Material"}]}
