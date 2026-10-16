@@ -1,0 +1,26 @@
+{
+  "name": "Pat",
+  "role": "Gravedigger",
+  "color": "#AAAAAA",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -150.5,
+    65.0,
+    -54.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.shovel.flatten",
+  "greetings": [
+    "Flint and gravel, fresh from the graves.",
+    "Mind the zombies. They don't mind you."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "pat"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Farmer",
+  "role": "Farm",
+  "color": "#F2C14E",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    134.5,
+    65.0,
+    -163.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:item.hoe.till",
+  "greetings": [
+    "Wheat grows back fast here. Harvest all you like.",
+    "Every field is yours to work."
+  ]
+}

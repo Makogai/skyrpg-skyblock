@@ -1,0 +1,59 @@
+{
+  "name": "Graveyard",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -233,
+    33,
+    -93
+  ],
+  "to": [
+    -122,
+    105,
+    22
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Graveyard Zombie",
+      "level": 1,
+      "health": 100,
+      "damage": 20,
+      "xp": 6,
+      "coins": 1,
+      "max": 14,
+      "every": 2.5,
+      "from": [
+        -199,
+        62,
+        -61
+      ],
+      "to": [
+        -143,
+        74,
+        -13
+      ]
+    },
+    {
+      "type": "minecraft:zombie_villager",
+      "name": "Zombie Villager",
+      "level": 1,
+      "health": 120,
+      "damage": 24,
+      "xp": 7,
+      "coins": 1,
+      "max": 6,
+      "every": 5,
+      "time": "night",
+      "from": [
+        -199,
+        62,
+        -61
+      ],
+      "to": [
+        -143,
+        74,
+        -13
+      ]
+    }
+  ]
+}

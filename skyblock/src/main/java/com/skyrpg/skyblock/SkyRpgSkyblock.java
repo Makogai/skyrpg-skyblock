@@ -45,6 +45,9 @@ public final class SkyRpgSkyblock implements ModInitializer {
         Features.off(Features.ARTISAN_BENCH);
         Features.off(Features.SURVIVAL_LEVEL);
         Features.off(Features.SLAYER_SPAWNERS);
+        // SkyBlock has no vanilla advancements to announce.
+        net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents.SERVER_STARTED.register(server ->
+                server.getGameRules().set(net.minecraft.world.level.gamerules.GameRules.SHOW_ADVANCEMENT_MESSAGES, false, server));
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();
@@ -53,6 +56,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         StoragePayloads.init();
         FastTravel.init();
         Zones.init();
+        com.skyrpg.skyblock.fairy.FairySouls.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

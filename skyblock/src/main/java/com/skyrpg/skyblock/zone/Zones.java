@@ -56,6 +56,15 @@ import net.minecraft.world.phys.AABB;
  * </pre>
  * {@code regrow} and {@code every} are seconds. A zone with mobs is a fighting zone: in the protected Hub, things
  * there can be hit and hurt (never by another player). A zone's name is also the area name the sidebar shows inside it.
+ *
+ * <p>A mob can be one of Hypixel's, with its own name, level, health, damage (SkyBlock units), Combat XP and coins, at
+ * a time of day, in a part of the zone, and never burning in daylight:
+ * <pre>
+ * {"type": "minecraft:zombie", "name": "Crypt Ghoul", "level": 30, "health": 2000, "damage": 350, "xp": 36, "coins": 13,
+ *  "time": "night", "from": [..], "to": [..], "max": 6, "every": 4, "indoors": true}
+ * </pre>
+ * Mobs stand on the ground of their box under the open sky (with {@code indoors}, on cave and crypt floors instead).
+ * Night mobs leave at sunrise, day mobs at dusk.
  */
 public final class Zones {
     public static final String DIRECTORY = "skyrpg/zones";
@@ -65,7 +74,20 @@ public final class Zones {
     public record Rule(BlockState becomes, int regrowTicks) {
     }
 
-    public record MobSpawn(EntityType<?> type, int max, int everyTicks) {
+    /**
+     * One kind of mob a zone keeps up: its own stats when {@code name} is set (health and damage in SkyBlock units,
+     * {@code xp} its Combat XP), when ({@code time}: any, day or night) and where ({@code box}, or the zone's).
+     */
+    public record MobSpawn(EntityType<?> type, int max, int everyTicks, String name, int level, double health, double damage, double xp,
+                           long coins, String time, AABB box, double speed, boolean indoors) {
+        boolean now(ServerLevel level) {
+            boolean day = level.isBrightOutside();
+            return switch (time) {
+                case "day" -> day;
+                case "night" -> !day;
+                default -> true;
+            };
+        }
     }
 
     public record Zone(String id, String name, ResourceKey<Level> dimension, AABB box, Map<Block, Rule> blocks, List<MobSpawn> mobs, String json) {
@@ -129,6 +151,16 @@ public final class Zones {
             }
         });
         ServerTickEvents.END_SERVER_TICK.register(Zones::tick);
+        // Hypixel's mobs drop coins straight into the killer's purse.
+        net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
+            if (!(source.getEntity() instanceof ServerPlayer killer) || killer.isCreative()) {
+                return;
+            }
+            MobSpawn spec = specOf(entity);
+            if (spec != null && spec.coins() > 0) {
+                com.skyrpg.core.economy.Wallet.give(killer, spec.coins());
+            }
+        });
         // Nothing stays mined over a restart: put every block back on the way down.
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
             REGROWING.forEach(r -> regrow(server, r));
@@ -207,27 +239,129 @@ public final class Zones {
                 continue;
             }
             List<Entity> alive = level.getEntities((Entity) null, zone.box().inflate(16), e -> e.isAlive() && e.entityTags().contains(tag));
+            // The Ruins' wolves are hostile: they go for whoever comes near.
+            for (Entity entity : alive) {
+                if (entity instanceof net.minecraft.world.entity.animal.wolf.Wolf wolf && !spawn.name().isEmpty() && wolf.getTarget() == null) {
+                    ServerPlayer near = (ServerPlayer) level.getNearestPlayer(wolf, 12);
+                    if (near != null && !near.isCreative() && !near.isSpectator()) {
+                        wolf.setPersistentAngerTarget(net.minecraft.world.entity.EntityReference.of(near));
+                        wolf.startPersistentAngerTimer();
+                        wolf.setTarget(near);
+                    }
+                }
+            }
+            if (!spawn.now(level)) {
+                // Night mobs leave at sunrise (and day mobs at dusk), a few at a time.
+                alive.stream().limit(2).forEach(Entity::discard);
+                continue;
+            }
             if (alive.size() >= spawn.max()) {
                 continue;
             }
+            AABB box = spawn.box() != null ? spawn.box() : zone.box();
             for (int attempt = 0; attempt < 8; attempt++) {
-                int x = (int) Math.floor(zone.box().minX + random.nextDouble() * zone.box().getXsize());
-                int z = (int) Math.floor(zone.box().minZ + random.nextDouble() * zone.box().getZsize());
-                BlockPos top = level.getHeightmapPos(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, new BlockPos(x, 0, z));
-                if (top.getY() < zone.box().minY || top.getY() > zone.box().maxY || !level.getBlockState(top).isAir()) {
+                BlockPos spot = standingSpot(level, box, random, spawn.indoors());
+                if (spot == null) {
                     continue;
                 }
-                Entity mob = spawn.type().spawn(level, top, EntitySpawnReason.SPAWNER);
+                // Not a spawner: these are the island's own mobs (full rewards, they count for slayer quests).
+                Entity mob = spawn.type().spawn(level, spot, EntitySpawnReason.NATURAL);
                 if (mob != null) {
                     mob.addTag(tag);
                     if (mob instanceof Mob m) {
                         m.setPersistenceRequired();
+                        dress(m, spawn);
                     }
                     LAST_SPAWN.put(tag, now);
                     break;
                 }
             }
         }
+    }
+
+    /**
+     * A random column's lowest spot in the box a mob can stand on: solid below, two blocks of room. Lowest, so mobs stand
+     * on the ground or a cave floor, not in tree tops; under the open sky unless they're {@code indoors} (crypt) mobs,
+     * so none turn up inside houses.
+     */
+    private static BlockPos standingSpot(ServerLevel level, AABB box, RandomSource random, boolean indoors) {
+        int x = (int) Math.floor(box.minX + random.nextDouble() * box.getXsize());
+        int z = (int) Math.floor(box.minZ + random.nextDouble() * box.getZsize());
+        for (int y = (int) box.minY + 1; y < (int) box.maxY; y++) {
+            BlockPos feet = new BlockPos(x, y, z);
+            BlockPos below = feet.below();
+            if (level.getBlockState(feet).isAir() && level.getBlockState(feet.above()).isAir()
+                    && level.getBlockState(below).isFaceSturdy(level, below, net.minecraft.core.Direction.UP)) {
+                return indoors || level.canSeeSky(feet) ? feet : null;
+            }
+        }
+        return null;
+    }
+
+    /** A named zone mob: Hypixel's name, level, health and damage, its Combat XP, and no burning in daylight. */
+    private static void dress(Mob mob, MobSpawn spawn) {
+        mob.addTag(com.skyrpg.core.world.MobTags.NO_SUNBURN);
+        if (spawn.name().isEmpty()) {
+            return;
+        }
+        double health = spawn.health() / com.skyrpg.core.stats.StatTypes.HEALTH_SCALE;
+        setBase(mob, net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH, Math.min(1024, health));
+        if (spawn.damage() > 0) {
+            setBase(mob, net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, spawn.damage() / com.skyrpg.core.stats.StatTypes.HEALTH_SCALE);
+        }
+        if (spawn.speed() != 1) {
+            net.minecraft.world.entity.ai.attributes.AttributeInstance speed = mob.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED);
+            if (speed != null) {
+                speed.setBaseValue(speed.getBaseValue() * spawn.speed());
+            }
+        }
+        mob.setHealth(mob.getMaxHealth());
+        // The level is shown, not applied: health and damage are Hypixel's (MobLevels.set would raise them per level).
+        mob.setAttached(com.skyrpg.combat.MobLevels.INFO, new com.skyrpg.combat.MobLevels.MobInfo(Math.max(1, spawn.level()), false,
+                (float) Math.max(1, health / 1024)));
+        mob.setCustomName(net.minecraft.network.chat.Component.literal(spawn.name()));
+        if (spawn.xp() >= 0) {
+            com.skyrpg.core.world.MobTags.setCombatXp(mob, spawn.xp());
+        }
+        if (mob instanceof net.minecraft.world.entity.monster.zombie.Zombie zombie) {
+            // Hypixel's zombies are grown-ups.
+            zombie.setBaby(false);
+        }
+        // No random armour or weapons, and nothing picked up: they look like Hypixel's.
+        for (net.minecraft.world.entity.EquipmentSlot slot : net.minecraft.world.entity.EquipmentSlot.values()) {
+            if (slot.getType() != net.minecraft.world.entity.EquipmentSlot.Type.ANIMAL_ARMOR && slot != net.minecraft.world.entity.EquipmentSlot.SADDLE) {
+                mob.setItemSlot(slot, net.minecraft.world.item.ItemStack.EMPTY);
+            }
+        }
+        mob.setCanPickUpLoot(false);
+    }
+
+    private static void setBase(Mob mob, net.minecraft.core.Holder<net.minecraft.world.entity.ai.attributes.Attribute> attribute, double value) {
+        net.minecraft.world.entity.ai.attributes.AttributeInstance instance = mob.getAttribute(attribute);
+        if (instance != null) {
+            instance.setBaseValue(value);
+        }
+    }
+
+    /** The zone mob spec a mob was spawned from (by its tag), or null. */
+    private static MobSpawn specOf(Entity entity) {
+        for (String tag : entity.entityTags()) {
+            if (!tag.startsWith(TAG + ".")) {
+                continue;
+            }
+            for (Zone zone : zones) {
+                String prefix = TAG + "." + zone.id().replace(':', '.') + ".";
+                if (tag.startsWith(prefix)) {
+                    try {
+                        int index = Integer.parseInt(tag.substring(prefix.length()));
+                        return index < zone.mobs().size() ? zone.mobs().get(index) : null;
+                    } catch (NumberFormatException e) {
+                        return null;
+                    }
+                }
+            }
+        }
+        return null;
     }
 
     private static List<Zone> parseAll(Map<String, String> raw) {
@@ -263,8 +397,21 @@ public final class Zones {
             for (JsonElement element : json.getAsJsonArray("mobs")) {
                 JsonObject mob = element.getAsJsonObject();
                 EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.parse(mob.get("type").getAsString()));
+                AABB mobBox = null;
+                if (mob.has("from") && mob.has("to")) {
+                    JsonArray a = mob.getAsJsonArray("from");
+                    JsonArray b = mob.getAsJsonArray("to");
+                    mobBox = new AABB(Math.min(a.get(0).getAsInt(), b.get(0).getAsInt()), Math.min(a.get(1).getAsInt(), b.get(1).getAsInt()),
+                            Math.min(a.get(2).getAsInt(), b.get(2).getAsInt()), Math.max(a.get(0).getAsInt(), b.get(0).getAsInt()) + 1,
+                            Math.max(a.get(1).getAsInt(), b.get(1).getAsInt()) + 1, Math.max(a.get(2).getAsInt(), b.get(2).getAsInt()) + 1);
+                }
                 mobs.add(new MobSpawn(type, mob.has("max") ? mob.get("max").getAsInt() : 4,
-                        (int) Math.round((mob.has("every") ? mob.get("every").getAsDouble() : 10) * 20)));
+                        (int) Math.round((mob.has("every") ? mob.get("every").getAsDouble() : 10) * 20),
+                        mob.has("name") ? mob.get("name").getAsString() : "", mob.has("level") ? mob.get("level").getAsInt() : 1,
+                        mob.has("health") ? mob.get("health").getAsDouble() : 0, mob.has("damage") ? mob.get("damage").getAsDouble() : 0,
+                        mob.has("xp") ? mob.get("xp").getAsDouble() : -1, mob.has("coins") ? mob.get("coins").getAsLong() : 0,
+                        mob.has("time") ? mob.get("time").getAsString() : "any", mobBox, mob.has("speed") ? mob.get("speed").getAsDouble() : 1,
+                        mob.has("indoors") && mob.get("indoors").getAsBoolean()));
             }
         }
         return new Zone(id, json.get("name").getAsString(),

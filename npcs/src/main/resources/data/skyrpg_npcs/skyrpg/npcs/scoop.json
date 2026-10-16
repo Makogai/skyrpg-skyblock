@@ -1,0 +1,26 @@
+{
+  "name": "Scoop",
+  "role": "Merchant",
+  "color": "#FFFFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -1.5,
+    161.0,
+    186.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.snow.break",
+  "greetings": [
+    "Snow up here all year round.",
+    "A good shovel makes short work of it."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "scoop"
+    }
+  }
+}

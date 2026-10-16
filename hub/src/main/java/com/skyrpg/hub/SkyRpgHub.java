@@ -19,7 +19,10 @@ public class SkyRpgHub implements ModInitializer {
         HubBuild.init();
         JsonDataLoader.register(id("hub"), HubConfig.DIRECTORY, HubConfig::load);
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> HubCommands.register(dispatcher));
+        JsonDataLoader.register(id("hub_areas"), HubAreas.DIRECTORY, HubAreas::load);
         ServerLifecycleEvents.SERVER_STARTED.register(HubBuild::onServerStarted);
+        // After the village: the Graveyard, Coal Mine, Farm... (HubAreas).
+        ServerLifecycleEvents.SERVER_STARTED.register(HubAreas::onServerStarted);
         HubProtection.register();
         HubDecor.register();
         Podiums.register();

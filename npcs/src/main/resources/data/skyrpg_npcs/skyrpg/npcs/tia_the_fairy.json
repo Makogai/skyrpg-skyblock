@@ -1,0 +1,24 @@
+{
+  "name": "Tia the Fairy",
+  "role": "Fairy Souls",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    150.5,
+    65.0,
+    38.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Fairy Souls are hidden all over the Hub.",
+    "Bring me the souls you find."
+  ],
+  "action": {
+    "type": "fairy_exchange",
+    "params": {}
+  }
+}

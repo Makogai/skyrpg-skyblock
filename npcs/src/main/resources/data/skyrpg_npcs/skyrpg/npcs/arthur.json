@@ -1,0 +1,20 @@
+{
+  "name": "Arthur",
+  "role": "Minions",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    126.5,
+    65.0,
+    -155.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.note_block.chime",
+  "greetings": [
+    "That's a Wheat Minion. It works while you're away.",
+    "Give a minion a Compactor and it packs its own items."
+  ]
+}

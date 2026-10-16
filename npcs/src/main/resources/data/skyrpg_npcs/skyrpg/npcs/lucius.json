@@ -1,0 +1,26 @@
+{
+  "name": "Lucius",
+  "role": "Merchant",
+  "color": "#AAAAAA",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/efe",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    153.5,
+    65.0,
+    -15.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.chain.place",
+  "greetings": [
+    "A ring for the shady ones.",
+    "Every deal has a price."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "lucius"
+    }
+  }
+}

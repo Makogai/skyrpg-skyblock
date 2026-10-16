@@ -76,7 +76,12 @@ public record SlayerLine(String id, String name, int color, Item icon, Identifie
     /** What a kill adds to the quest bar: the mob's Combat XP for Hypixel's slayers, or -1 to use the kill count. */
     public double questXp(Entity entity) {
         Double xp = countXp.get(BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()));
-        return xp == null ? -1 : xp;
+        if (xp == null) {
+            return -1;
+        }
+        // A named mob's own Combat XP (a Crypt Ghoul gives 36, not a zombie's 6).
+        double own = com.skyrpg.core.world.MobTags.combatXp(entity);
+        return own >= 0 ? own : xp;
     }
 
     /** Every stat the levels up to {@code level} give together. */

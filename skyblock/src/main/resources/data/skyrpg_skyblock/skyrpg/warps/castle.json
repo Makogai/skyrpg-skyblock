@@ -1,0 +1,14 @@
+{
+  "name": "Castle",
+  "description": "The Hub's ancient ruins and their wolves",
+  "icon": "minecraft:mossy_stone_bricks",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -262.5,
+    65.0,
+    39.5
+  ],
+  "yaw": 90.0,
+  "area": "Ruins",
+  "order": 40
+}

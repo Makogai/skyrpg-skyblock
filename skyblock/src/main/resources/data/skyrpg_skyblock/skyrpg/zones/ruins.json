@@ -1,0 +1,58 @@
+{
+  "name": "Ruins",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -376,
+    33,
+    -39
+  ],
+  "to": [
+    -244,
+    105,
+    91
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:wolf",
+      "name": "Wolf",
+      "level": 15,
+      "health": 250,
+      "damage": 90,
+      "xp": 15,
+      "coins": 1,
+      "max": 12,
+      "every": 3,
+      "from": [
+        -308,
+        62,
+        4
+      ],
+      "to": [
+        -279,
+        72,
+        47
+      ]
+    },
+    {
+      "type": "minecraft:wolf",
+      "name": "Old Wolf",
+      "level": 50,
+      "health": 15000,
+      "damage": 720,
+      "xp": 40,
+      "coins": 40,
+      "max": 2,
+      "every": 30,
+      "from": [
+        -308,
+        62,
+        4
+      ],
+      "to": [
+        -279,
+        72,
+        47
+      ]
+    }
+  ]
+}

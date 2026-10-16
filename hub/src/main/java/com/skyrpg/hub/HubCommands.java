@@ -1,6 +1,7 @@
 package com.skyrpg.hub;
 
 import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.skyrpg.core.combat.Warmups;
 import java.nio.file.Path;
@@ -8,6 +9,7 @@ import java.util.Locale;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -57,7 +59,33 @@ final class HubCommands {
                     ctx.getSource().sendSuccess(() -> Component.literal("Rebuilt the hub"), true);
                     return 1;
                 }))
-                .then(Commands.literal("setspawn").executes(ctx -> setSpawn(ctx.getSource()))));
+                .then(Commands.literal("setspawn").executes(ctx -> setSpawn(ctx.getSource())))
+                // /hubadmin area <id> place|save: the Hub's other areas (HubAreas).
+                .then(Commands.literal("area").then(Commands.argument("id", StringArgumentType.word())
+                        .suggests((ctx, builder) -> SharedSuggestionProvider.suggest(HubAreas.all().keySet(), builder))
+                        .then(Commands.literal("place").executes(ctx -> {
+                            HubAreas.Area area = area(ctx.getSource(), StringArgumentType.getString(ctx, "id"));
+                            if (area == null || !HubAreas.replace(ctx.getSource().getServer(), hubLevel(ctx.getSource()), area)) {
+                                ctx.getSource().sendFailure(Component.literal("No such area, or no build for it yet."));
+                                return 0;
+                            }
+                            ctx.getSource().sendSuccess(() -> Component.literal("Placed hub area " + area.id()), true);
+                            return 1;
+                        }))
+                        .then(Commands.literal("save").executes(ctx -> {
+                            HubAreas.Area area = area(ctx.getSource(), StringArgumentType.getString(ctx, "id"));
+                            if (area == null) {
+                                ctx.getSource().sendFailure(Component.literal("No such area."));
+                                return 0;
+                            }
+                            Path file = HubAreas.save(ctx.getSource().getServer(), hubLevel(ctx.getSource()), area);
+                            ctx.getSource().sendSuccess(() -> Component.literal("Saved hub area " + area.id() + " to " + file.toAbsolutePath()), true);
+                            return 1;
+                        })))));
+    }
+
+    private static HubAreas.Area area(CommandSourceStack source, String id) {
+        return HubAreas.all().get(id);
     }
 
     private static ServerLevel hubLevel(CommandSourceStack source) throws CommandSyntaxException {

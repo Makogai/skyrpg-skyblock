@@ -1,0 +1,70 @@
+{
+  "name": "Coal Mine",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -50,
+    28,
+    -232
+  ],
+  "to": [
+    62,
+    112,
+    -100
+  ],
+  "blocks": {
+    "minecraft:coal_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    },
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Crypt Ghoul",
+      "indoors": true,
+      "level": 30,
+      "health": 2000,
+      "damage": 350,
+      "xp": 36,
+      "coins": 13,
+      "max": 8,
+      "every": 4,
+      "from": [
+        -15,
+        44,
+        -184
+      ],
+      "to": [
+        9,
+        50,
+        -149
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Golden Ghoul",
+      "indoors": true,
+      "level": 50,
+      "health": 45000,
+      "damage": 800,
+      "xp": 50,
+      "coins": 100,
+      "max": 1,
+      "every": 60,
+      "from": [
+        -15,
+        44,
+        -184
+      ],
+      "to": [
+        9,
+        50,
+        -149
+      ]
+    }
+  ]
+}

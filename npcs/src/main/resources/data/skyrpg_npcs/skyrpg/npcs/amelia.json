@@ -1,0 +1,20 @@
+{
+  "name": "Amelia",
+  "role": "Balloonist",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -26.5,
+    117.0,
+    177.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.wool.place",
+  "greetings": [
+    "The view from the balloon is worth the climb.",
+    "Christopher keeps the burner going."
+  ]
+}

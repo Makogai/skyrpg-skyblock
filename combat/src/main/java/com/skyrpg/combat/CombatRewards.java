@@ -44,6 +44,10 @@ public final class CombatRewards {
             if (!(entity instanceof Mob mob) || !(mob.level() instanceof ServerLevel level)) {
                 return;
             }
+            // Hypixel's mobs (with their own Combat XP) bring their own rewards: no Valor Marks, fangs or level XP.
+            if (com.skyrpg.core.world.MobTags.combatXp(mob) >= 0) {
+                return;
+            }
             MobLevels.MobInfo info = MobLevels.info(mob);
             ServerPlayer player = source.getEntity() instanceof ServerPlayer direct ? direct
                     : source.getDirectEntity() instanceof Projectile projectile && projectile.getOwner() instanceof ServerPlayer owner ? owner : null;

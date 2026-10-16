@@ -1,0 +1,26 @@
+{
+  "name": "Shifty",
+  "role": "Brews",
+  "color": "#AA00AA",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/kai",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    156.5,
+    65.0,
+    -7.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.witch.drink",
+  "greetings": [
+    "Brews for the brave. Don't ask what's in them.",
+    "Psst. Over here."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "shifty"
+    }
+  }
+}

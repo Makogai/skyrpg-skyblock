@@ -1,0 +1,14 @@
+{
+  "name": "Dark Auction",
+  "description": "Sirius's Dark Auction, in the Wilderness",
+  "icon": "minecraft:wither_skeleton_skull",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    178.5,
+    65.0,
+    1.5
+  ],
+  "yaw": 180.0,
+  "area": "Wilderness",
+  "order": 42
+}

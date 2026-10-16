@@ -1,0 +1,20 @@
+{
+  "name": "Lumber Jack",
+  "role": "Forest",
+  "color": "#C98A4B",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -140.5,
+    65.0,
+    95.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.axe.strip",
+  "greetings": [
+    "Chop away. The trees grow back.",
+    "Oak's the best wood for a beginner."
+  ]
+}

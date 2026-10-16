@@ -1,0 +1,26 @@
+{
+  "name": "Lonely Philosopher",
+  "role": "Merchant",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -337.5,
+    74.0,
+    2.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "The wolves never ask what any of it means.",
+    "A scroll home, for when the walk gets long."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "lonely_philosopher"
+    }
+  }
+}

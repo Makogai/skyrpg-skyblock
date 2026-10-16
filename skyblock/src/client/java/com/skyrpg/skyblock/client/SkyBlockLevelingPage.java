@@ -34,7 +34,9 @@ public final class SkyBlockLevelingPage implements MenuPage {
             new String[] {"Skill levels", "5 to 30 each"},
             new String[] {"Collection tiers", "4 each"},
             new String[] {"Unique minions", "1 to 24 each"},
-            new String[] {"Fairy Souls, slayers, bestiary...", "coming"});
+            new String[] {"Slayer levels", "15 to 150 each"},
+            new String[] {"Fairy Soul exchanges", "10 each"},
+            new String[] {"Bestiary, Museum...", "coming"});
 
     @Override
     public Identifier id() {

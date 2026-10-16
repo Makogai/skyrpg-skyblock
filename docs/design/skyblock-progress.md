@@ -92,7 +92,20 @@ phase so the next session can pick up where this one stopped.
       level. SkyBlock XP goes through the new core hook `SkyBlockXp` (progress installs it; collections and unique
       minions use it too). Survival Delving and the enchants mod's own Enchanting definition are gone. Not yet:
       Warrior's +4% damage (no such stat), XP sources for Alchemy / Taming / Carpentry, Runecrafting and Social.
-- [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
+- [x] **The Hub's areas** (design call: floating islands around Skyhaven, joined by sky bridges, in Hypixel's directions):
+      Graveyard (W), Coal Mine with the Hub Crypts (N), Farm (NE), Forest (SW), Ruins (far W), Mountain with High Level
+      (S), Wilderness with the Fairy Pond, Tavern and Dark Auction house (E). Built by `tools/builds/hub_areas/` (a kit on
+      the dungeon kit's structure writer; graveyard.py by hand, the rest by helpers from BRIEF.md) as their own
+      structures, placed by hub `HubAreas` (`skyrpg/hub_areas/<id>.json`: structure, origin, version; `/hubadmin area
+      <id> place|save`; clearing never touches the village's box, where `village_bridges` keeps the bridge ends). Zones:
+      mineable Coal Ore/Stone, Wheat, Oak logs/leaves, Carrots (regrowing); Hypixel's mobs with their stats, Combat XP
+      and coins (zone mob specs: name, level, health, damage, xp, coins, time, sub-box, indoors; NATURAL spawns, so they
+      count for slayers; never burn; the Ruins' wolves are hostile). NPCs (`npcs.py`, vanilla default skins until owners
+      paint theirs): Pat, Farmer, Arthur, Lumber Jack, Lonely Philosopher, Scoop, Amelia, Christopher, Tia, Fisherman
+      Gerald, Shifty, Lucius, Sirius; shops for Pat, Scoop, Shifty, Lucius, the Lonely Philosopher. Warps crypt, castle,
+      da. Not yet: Shania (a cow NPC), the Hub Crypts' link to the Graveyard, the Colosseum, the Wizard Tower, the Hub's
+      other Hypixel spots (Museum, Fashion Shop...).
+- [ ] Islands: Farming Islands (the Barn, Mushroom Desert), The Park, Gold Mine, Deep Caverns, Spider's Den.
 - [x] **NPC shops**: `tools/skyblock/import_shops.py` writes NEU's 88 shops (684 offers; offers with enchanted books,
       Bits, Gems, North Stars... left out) to `skyrpg/skyblock_shops`; `SkyShops` + `ShopMenu` + `ShopScreen`: buy
       (shift = a stack), sell any stack with an NPC price by clicking it, buyback of the last 9 sales (until logout).
@@ -146,7 +159,11 @@ phase so the next session can pick up where this one stopped.
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
       message from now on.
-- [ ] Fairy Souls (need our own hub's souls; NEU's coordinates are Hypixel's map).
+- [x] **Fairy Souls** (`FairySouls`, `skyrpg/fairy_souls/<island>.json`): 24 on the Hub's islands (3-4 each, from the
+      area scripts' spots), a turning pink crystal with a click box, spawned while a player is near, sparkling for who
+      hasn't found it; "SOUL! You found a Fairy Soul!" panel with island and total counts; per profile. Tia the Fairy
+      (`fairy_exchange` action) trades every 5 for 10 SkyBlock XP (Hypixel's backpack slots wait for backpacks; the
+      exchange count is kept). `/fairysouls give|reset` for admins.
 
 ### Owner directions (2026-10-16)
 

@@ -1,0 +1,20 @@
+{
+  "name": "Sirius",
+  "role": "Dark Auction",
+  "color": "#5555FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    178.5,
+    65.0,
+    -1.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.beacon.ambient",
+  "greetings": [
+    "The Dark Auction opens every few days.",
+    "Bring coins. Lots of them."
+  ]
+}

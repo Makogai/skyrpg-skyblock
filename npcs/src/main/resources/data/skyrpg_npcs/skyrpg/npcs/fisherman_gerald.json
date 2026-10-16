@@ -1,0 +1,20 @@
+{
+  "name": "Fisherman Gerald",
+  "role": "Fishing",
+  "color": "#55AAFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/steve",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    216.5,
+    65.0,
+    39.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.fishing_bobber.splash",
+  "greetings": [
+    "Something big lives in this lake.",
+    "Cast near the dock. They bite more there."
+  ]
+}

@@ -34,7 +34,8 @@
     "skyrpg_items": "*",
     "skyrpg_hub": "*",
     "skyrpg_economy": "*",
-    "skyrpg_pets": "*"
+    "skyrpg_pets": "*",
+    "skyrpg_combat": "*"
   },
   "custom": {
     "modmenu": {

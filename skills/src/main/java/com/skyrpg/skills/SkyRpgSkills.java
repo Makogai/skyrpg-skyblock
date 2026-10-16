@@ -87,8 +87,16 @@ public class SkyRpgSkills implements ModInitializer {
             if (damageSource.getEntity() instanceof ServerPlayer killer && !(entity instanceof Player) && !killer.isCreative()) {
                 // Mobs from spawners give a quarter of the XP (no AFK spawner levelling).
                 double share = entity.entityTags().contains(MobTags.FARMED) ? FARMED_XP_SHARE : 1;
-                SkillXpSources.forEntity(entity.getType()).forEach(grant ->
-                        grant(killer, new SkillXpSources.Grant(grant.skill(), grant.xp() * share, grant.matureOnly())));
+                // A mob with its own Combat XP (Hypixel's named mobs) gives that instead of its kind's.
+                double own = MobTags.combatXp(entity);
+                if (own >= 0) {
+                    grant(killer, new SkillXpSources.Grant(SkillLevels.COMBAT, own * share, false));
+                }
+                SkillXpSources.forEntity(entity.getType()).forEach(grant -> {
+                    if (own < 0 || !grant.skill().equals(SkillLevels.COMBAT)) {
+                        grant(killer, new SkillXpSources.Grant(grant.skill(), grant.xp() * share, grant.matureOnly()));
+                    }
+                });
             }
         });
     }
