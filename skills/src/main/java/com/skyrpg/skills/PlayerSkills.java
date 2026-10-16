@@ -1,5 +1,7 @@
 package com.skyrpg.skills;
 
+import com.skyrpg.core.progress.SkyBlockXp;
+import java.util.LinkedHashMap;
 import com.mojang.serialization.Codec;
 import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.skills.SkillLevels;
@@ -104,12 +106,66 @@ public final class PlayerSkills {
         }
     }
 
+    /**
+     * Hypixel's level-up rewards, listed and paid: the perk at its new tier ("Spelunker IV: +16 Mining Fortune"), the
+     * levels' stats, coins and SkyBlock XP.
+     */
+    private static void hypixelRewards(ServerPlayer player, Skill skill, int oldLevel, int newLevel) {
+        player.sendSystemMessage(Msg.text("   Rewards", ChatFormatting.GREEN, ChatFormatting.BOLD));
+        if (!skill.perk().isEmpty()) {
+            MutableComponent perk = Msg.text("     " + skill.perk() + " " + Msg.roman(newLevel), ChatFormatting.YELLOW);
+            MutableComponent grants = Msg.text("  ", ChatFormatting.GRAY);
+            boolean any = false;
+            for (Map.Entry<String, Double> entry : skill.rewardsPerLevel().entrySet()) {
+                StatType stat = StatTypes.get(entry.getKey());
+                if (stat != null) {
+                    grants.append(Component.literal(stat.formatBonus(entry.getValue() * newLevel) + " " + stat.symbol() + " " + stat.name() + " ")
+                            .withColor(stat.color()));
+                    any = true;
+                }
+            }
+            if (!any && !skill.perkText().isEmpty()) {
+                grants.append(Msg.text(skill.perkText(), ChatFormatting.GRAY));
+            }
+            player.sendSystemMessage(perk.append(grants));
+        }
+        Map<String, Double> stats = new LinkedHashMap<>();
+        long coins = 0;
+        int sbxp = 0;
+        for (int level = oldLevel + 1; level <= newLevel; level++) {
+            Skill.LevelReward reward = skill.levelReward(level);
+            reward.stats().forEach((stat, value) -> stats.merge(stat, value, Double::sum));
+            coins += reward.coins();
+            sbxp += reward.sbxp();
+        }
+        stats.forEach((statId, value) -> {
+            StatType stat = StatTypes.get(statId);
+            if (stat != null) {
+                player.sendSystemMessage(Component.literal("     " + stat.formatBonus(value) + " " + stat.symbol() + " " + stat.name()).withColor(stat.color()));
+            }
+        });
+        if (coins > 0) {
+            Wallet.give(player, coins);
+            player.sendSystemMessage(Msg.text("     +" + Msg.number(coins) + " Coins", ChatFormatting.GOLD));
+        }
+        if (sbxp > 0) {
+            SkyBlockXp.give(player, sbxp, skill.name() + " level");
+            player.sendSystemMessage(Msg.text("     +" + sbxp + " SkyBlock XP", ChatFormatting.AQUA));
+        }
+    }
+
     private static void announceLevelUp(ServerPlayer player, Skill skill, int oldLevel, int newLevel) {
         Notice.of(Notice.Kind.SKILL).icon(Notice.skillIcon(skill.id().getPath())).tag("LEVEL UP")
                 .hover(Component.literal("Open your skills")).click("/skills")
                 .send(player, skill.displayName()
                         .append(Msg.text(" " + (oldLevel == 0 ? "" : Msg.roman(oldLevel)) + " ➜ ", ChatFormatting.DARK_GRAY))
                         .append(Component.literal(Msg.roman(newLevel)).withColor(skill.color())));
+        if (!skill.levelRewards().isEmpty()) {
+            hypixelRewards(player, skill, oldLevel, newLevel);
+            SkillLevels.LEVEL_UP.invoker().onLevelUp(player, skill.id(), oldLevel, newLevel);
+            Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 1.0f, 1.0f);
+            return;
+        }
         if (!skill.rewardsPerLevel().isEmpty()) {
             int levels = newLevel - oldLevel;
             MutableComponent rewards = Msg.text("    Rewards ", ChatFormatting.DARK_GRAY);

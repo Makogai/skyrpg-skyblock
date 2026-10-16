@@ -19,7 +19,14 @@ public record SkillDefinitionsPayload(List<Entry> skills) implements CustomPacke
     public static final Type<SkillDefinitionsPayload> TYPE = new Type<>(SkyRpgSkills.id("definitions"));
 
     public record Entry(Identifier id, String name, int color, Identifier icon, String description, int order, List<Long> levels,
-                        Map<String, Double> rewards) {
+                        Map<String, Double> rewards, String perk, String perkText, List<Skill.LevelReward> levelRewards) {
+        static final StreamCodec<ByteBuf, Skill.LevelReward> REWARD = StreamCodec.composite(
+                ByteBufCodecs.<ByteBuf, String, Double, Map<String, Double>>map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.DOUBLE),
+                Skill.LevelReward::stats,
+                ByteBufCodecs.VAR_LONG, Skill.LevelReward::coins,
+                ByteBufCodecs.VAR_INT, Skill.LevelReward::sbxp,
+                Skill.LevelReward::new);
+
         static final StreamCodec<ByteBuf, Entry> CODEC = StreamCodec.composite(
                 Identifier.STREAM_CODEC, Entry::id,
                 ByteBufCodecs.STRING_UTF8, Entry::name,
@@ -29,10 +36,13 @@ public record SkillDefinitionsPayload(List<Entry> skills) implements CustomPacke
                 ByteBufCodecs.VAR_INT, Entry::order,
                 ByteBufCodecs.VAR_LONG.apply(ByteBufCodecs.list()), Entry::levels,
                 ByteBufCodecs.<ByteBuf, String, Double, Map<String, Double>>map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.DOUBLE), Entry::rewards,
+                ByteBufCodecs.STRING_UTF8, Entry::perk,
+                ByteBufCodecs.STRING_UTF8, Entry::perkText,
+                REWARD.apply(ByteBufCodecs.list()), Entry::levelRewards,
                 Entry::new);
 
         public Skill toSkill() {
-            return new Skill(id, name, TextColor.fromRgb(color), order, levels, icon, description, rewards);
+            return new Skill(id, name, TextColor.fromRgb(color), order, levels, icon, description, rewards, perk, perkText, levelRewards);
         }
     }
 
@@ -44,7 +54,7 @@ public record SkillDefinitionsPayload(List<Entry> skills) implements CustomPacke
         List<Entry> entries = new ArrayList<>();
         for (Skill skill : Skills.all()) {
             entries.add(new Entry(skill.id(), skill.name(), skill.color().getValue(), skill.icon(), skill.description(), skill.order(),
-                    skill.levels(), skill.rewardsPerLevel()));
+                    skill.levels(), skill.rewardsPerLevel(), skill.perk(), skill.perkText(), skill.levelRewards()));
         }
         return new SkillDefinitionsPayload(entries);
     }

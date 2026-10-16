@@ -1,5 +1,6 @@
 package com.skyrpg.skills;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.network.chat.Component;
@@ -13,6 +14,10 @@ import net.minecraft.resources.Identifier;
  * Optional {@code "levels"}: XP needed for each level in turn; defaults to {@link #DEFAULT_LEVELS}.
  * The number of entries is the max level. Optional {@code "rewards"}: stats gained per level, e.g.
  * {@code {"farming_fortune": 4, "health": 2}}.
+ *
+ * <p>Hypixel's skills ({@code tools/skyblock/import_skills.py}) also name their perk ({@code "perk": "Spelunker"},
+ * which is what {@code "rewards"} gives per level; {@code "perk_text"} when it isn't a stat, like Warrior's damage)
+ * and list every level's own rewards in {@code "level_rewards"}: stats, coins and SkyBlock XP.
  */
 public final class Skill {
     /** Hypixel SkyBlock's skill curve: XP needed for level 1, 2, ... 50. */
@@ -31,11 +36,27 @@ public final class Skill {
     private final Identifier icon;
     private final String description;
     private final Map<String, Double> rewardsPerLevel;
+    private final String perk;
+    private final String perkText;
+    private final List<LevelReward> levelRewards;
+
+    /** What reaching one level gives, besides the perk. */
+    public record LevelReward(Map<String, Double> stats, long coins, int sbxp) {
+        public static final LevelReward NONE = new LevelReward(Map.of(), 0, 0);
+    }
     /** cumulative[n] = total XP needed to reach level n. */
     private final double[] cumulative;
 
     public Skill(Identifier id, String name, TextColor color, int order, List<Long> levels, Identifier icon, String description,
                  Map<String, Double> rewardsPerLevel) {
+        this(id, name, color, order, levels, icon, description, rewardsPerLevel, "", "", List.of());
+    }
+
+    public Skill(Identifier id, String name, TextColor color, int order, List<Long> levels, Identifier icon, String description,
+                 Map<String, Double> rewardsPerLevel, String perk, String perkText, List<LevelReward> levelRewards) {
+        this.perk = perk;
+        this.perkText = perkText;
+        this.levelRewards = List.copyOf(levelRewards);
         this.id = id;
         this.name = name;
         this.color = color;
@@ -84,6 +105,35 @@ public final class Skill {
     /** Stats gained for every level, by stat id. */
     public Map<String, Double> rewardsPerLevel() {
         return rewardsPerLevel;
+    }
+
+    /** The perk's name ("Spelunker"), or empty. */
+    public String perk() {
+        return perk;
+    }
+
+    /** What the perk does when it isn't a stat ("+4% damage to mobs"), or empty. */
+    public String perkText() {
+        return perkText;
+    }
+
+    public List<LevelReward> levelRewards() {
+        return levelRewards;
+    }
+
+    /** What reaching this level (1 to max) gives besides the perk. */
+    public LevelReward levelReward(int level) {
+        return level >= 1 && level <= levelRewards.size() ? levelRewards.get(level - 1) : LevelReward.NONE;
+    }
+
+    /** Every stat this skill gives at this level: the perk times the level, plus each level's own stats. */
+    public Map<String, Double> statsAt(int level) {
+        Map<String, Double> out = new LinkedHashMap<>();
+        rewardsPerLevel.forEach((stat, perLevel) -> out.put(stat, perLevel * level));
+        for (int i = 1; i <= Math.min(level, levelRewards.size()); i++) {
+            levelRewards.get(i - 1).stats().forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        }
+        return out;
     }
 
     public int maxLevel() {

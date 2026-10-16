@@ -1,5 +1,7 @@
 package com.skyrpg.progress.collections;
 
+import com.skyrpg.core.progress.SkyBlockXp;
+import com.skyrpg.core.skills.SkillLevels;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.component.CustomData;
 import com.google.gson.JsonElement;
@@ -236,12 +238,15 @@ public final class Collections {
         }
     }
 
+    /** A collection reward like "+1,000 Mining Experience". */
+    private static final java.util.regex.Pattern SKILL_XP = java.util.regex.Pattern.compile("\\+([\\d,]+) (\\w+) Experience");
+
     private static void tierReached(ServerPlayer player, CollectionDef def, int tier) {
         CollectionDef.Tier reward = def.tier(tier);
         if (reward.coins() > 0) {
             Wallet.give(player, reward.coins());
         }
-        SkyRpgLevel.addXp(player, reward.xp(), "collection tier");
+        SkyBlockXp.give(player, reward.xp(), "collection tier");
         Component body = Msg.text(def.name() + " Collection ", ChatFormatting.GRAY)
                 .append(Msg.text(CollectionLevels.roman(tier), ChatFormatting.AQUA, ChatFormatting.BOLD));
         Notice.of(Notice.Kind.COLLECTION).tag("TIER UP").hover(Component.literal(def.name() + ": " + Msg.number(def.thresholds()[tier - 1]) + " gathered"))
@@ -251,6 +256,11 @@ public final class Collections {
             player.sendSystemMessage(Component.literal("   Rewards").withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
             for (String unlock : reward.unlocks()) {
                 player.sendSystemMessage(Component.literal("     " + unlock).withStyle(ChatFormatting.GRAY));
+                java.util.regex.Matcher skillXp = SKILL_XP.matcher(unlock);
+                if (skillXp.matches()) {
+                    SkillLevels.giveXp(player, Identifier.fromNamespaceAndPath("skyrpg_skills", skillXp.group(2).toLowerCase(java.util.Locale.ROOT)),
+                            Double.parseDouble(skillXp.group(1).replace(",", "")));
+                }
             }
             if (reward.xp() > 0) {
                 player.sendSystemMessage(Component.literal("     +" + reward.xp() + " SkyBlock XP").withStyle(ChatFormatting.AQUA));

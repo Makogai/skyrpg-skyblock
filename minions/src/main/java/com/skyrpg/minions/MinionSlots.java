@@ -1,6 +1,7 @@
 package com.skyrpg.minions;
 
 import com.mojang.serialization.Codec;
+import com.skyrpg.core.progress.SkyBlockXp;
 import com.skyrpg.skyblock.recipe.Crafting;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,8 @@ public final class MinionSlots {
     /** Unique minions needed for each placeable count from 5 up: 0 for 5, 5 for 6, 15 for 7... 650 for 26. */
     private static final int[] NEEDED = {0, 5, 15, 30, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 350, 400, 450, 500, 550, 600, 650};
     public static final int BASE = 5;
+    /** SkyBlock XP for a new unique minion, by tier (Hypixel: 1 up to tier VI, then 2, 3, 4, 6, 12, 24). */
+    private static final int[] TIER_XP = {0, 1, 1, 1, 1, 1, 1, 2, 3, 4, 6, 12, 24};
 
     /** The minion items ("COBBLESTONE_GENERATOR_3") this player has made. */
     static final AttachmentType<List<String>> CRAFTED = AttachmentRegistry.create(SkyRpgMinions.id("unique_minions"),
@@ -78,9 +81,12 @@ public final class MinionSlots {
         player.setAttached(CRAFTED, List.copyOf(updated));
         Minions.Placed placed = Minions.fromItem(minionItem);
         String name = placed == null ? minionItem : placed.type().title(placed.tier());
+        int xp = placed == null ? 0 : TIER_XP[Math.min(TIER_XP.length - 1, placed.tier())];
         player.sendSystemMessage(Component.literal("NEW UNIQUE MINION! ").withStyle(ChatFormatting.AQUA, ChatFormatting.BOLD)
                 .append(Component.literal(name).withStyle(ChatFormatting.WHITE))
-                .append(Component.literal(" (" + updated.size() + " crafted)").withStyle(ChatFormatting.DARK_GRAY)));
+                .append(Component.literal(" (" + updated.size() + " crafted)").withStyle(ChatFormatting.DARK_GRAY))
+                .append(Component.literal(xp > 0 ? "  +" + xp + " SkyBlock XP" : "").withStyle(ChatFormatting.AQUA)));
+        SkyBlockXp.give(player, xp, "unique minion");
         int after = slotsFor(updated.size());
         if (after > before) {
             player.sendSystemMessage(Component.literal("You can now place " + after + " minions on your island!").withStyle(ChatFormatting.GREEN));

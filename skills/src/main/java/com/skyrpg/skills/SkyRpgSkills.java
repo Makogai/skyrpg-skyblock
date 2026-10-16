@@ -65,10 +65,10 @@ public class SkyRpgSkills implements ModInitializer {
                 for (Skill skill : Skills.all()) {
                     int level = PlayerSkills.getLevel(player, skill);
                     if (level > 0) {
-                        skill.rewardsPerLevel().forEach((statId, perLevel) -> {
+                        skill.statsAt(level).forEach((statId, value) -> {
                             StatType stat = StatTypes.get(statId);
                             if (stat != null) {
-                                out.add(stat, perLevel * level);
+                                out.add(stat, value);
                             }
                         });
                     }

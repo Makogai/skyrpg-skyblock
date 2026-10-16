@@ -169,7 +169,45 @@ public final class SkillsPage implements MenuPage {
         if (!skill.description().isEmpty()) {
             lines.add(Component.literal(skill.description()).withColor(Theme.MUTED));
         }
-        if (!skill.rewardsPerLevel().isEmpty()) {
+        if (!skill.levelRewards().isEmpty()) {
+            // Hypixel's skills: the perk, what the skill gives so far, and what the next level adds.
+            lines.add(Component.empty());
+            if (!skill.perk().isEmpty()) {
+                lines.add(Component.literal(skill.perk() + " " + (level == 0 ? "0" : Msg.roman(level))).withColor(Theme.ACCENT)
+                        .append(Component.literal(skill.perkText().isEmpty() ? "" : "  " + skill.perkText()).withColor(Theme.MUTED)));
+            }
+            if (level > 0) {
+                lines.add(Component.literal("You have").withColor(Theme.DIM));
+                skill.statsAt(level).forEach((statId, value) -> {
+                    StatType stat = StatTypes.get(statId);
+                    if (stat != null) {
+                        lines.add(Component.literal("  " + stat.formatBonus(value) + " " + stat.symbol() + " " + stat.name()).withColor(stat.color()));
+                    }
+                });
+            }
+            if (level < skill.maxLevel()) {
+                Skill.LevelReward next = skill.levelReward(level + 1);
+                lines.add(Component.literal("Level " + Msg.roman(level + 1) + " gives").withColor(Theme.DIM));
+                skill.rewardsPerLevel().forEach((statId, perLevel) -> {
+                    StatType stat = StatTypes.get(statId);
+                    if (stat != null) {
+                        lines.add(Component.literal("  " + stat.formatBonus(perLevel) + " " + stat.symbol() + " " + stat.name()).withColor(stat.color()));
+                    }
+                });
+                next.stats().forEach((statId, value) -> {
+                    StatType stat = StatTypes.get(statId);
+                    if (stat != null) {
+                        lines.add(Component.literal("  " + stat.formatBonus(value) + " " + stat.symbol() + " " + stat.name()).withColor(stat.color()));
+                    }
+                });
+                if (next.coins() > 0) {
+                    lines.add(Component.literal("  +" + Msg.number(next.coins()) + " Coins").withColor(Theme.ACCENT));
+                }
+                if (next.sbxp() > 0) {
+                    lines.add(Component.literal("  +" + next.sbxp() + " SkyBlock XP").withColor(Theme.AQUA));
+                }
+            }
+        } else if (!skill.rewardsPerLevel().isEmpty()) {
             lines.add(Component.empty());
             lines.add(Component.literal("Every level").withColor(Theme.DIM));
             skill.rewardsPerLevel().forEach((statId, perLevel) -> {

@@ -1,5 +1,6 @@
 package com.skyrpg.progress.collections;
 
+import com.skyrpg.core.progress.SkyBlockXp;
 import com.mojang.serialization.Codec;
 import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.event.BossKills;
@@ -55,6 +56,7 @@ public final class SkyRpgLevel {
     }
 
     static void init() {
+        SkyBlockXp.install(SkyRpgLevel::addXp);
         SkillLevels.LEVEL_UP.register((player, skill, oldLevel, newLevel) -> {
             int gained = newLevel - oldLevel;
             if (gained <= 0) {

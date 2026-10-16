@@ -77,8 +77,15 @@ phase so the next session can pick up where this one stopped.
       matching that can shift and mirror (`Recipes.match`), result card, Craft / Craft all, Recipe Book link.
       Recipes are sent to clients (`RecipesPayload`, gzipped JSON). Vanilla recipe / advancement / tutorial toasts
       are hidden (`ToastManagerMixin`).
+- [ ] Wiki: survival pages are still there (dungeons, Delving, gear, the K-menu talk); rewrite or retire them.
 - [ ] Minion tier XII costs: NEU has no recipe for the XII tiers (the upgrade button shows no cost). Find them.
-- [ ] Skills on Hypixel's XP tables and level rewards (NEU constants/leveling.json).
+- [x] **Skills 1:1**: `tools/skyblock/import_skills.py` writes Farming, Mining, Combat, Foraging, Fishing, Enchanting,
+      Alchemy, Taming, Carpentry with NEU's XP table and caps (Farming 60 as with Anita's bonus), Hypixel's coins per
+      level (wiki Mining table, same for every skill), SkyBlock XP (5/10/20/30) and each skill's stat brackets + perk.
+      Level-ups list and pay them (`PlayerSkills.hypixelRewards`); the tooltip shows the perk, totals and the next
+      level. SkyBlock XP goes through the new core hook `SkyBlockXp` (progress installs it; collections and unique
+      minions use it too). Survival Delving and the enchants mod's own Enchanting definition are gone. Not yet:
+      Warrior's +4% damage (no such stat), XP sources for Alchemy / Taming / Carpentry, Runecrafting and Social.
 - [ ] Islands: the Hub, Farming Islands, The Park, Gold Mine, Deep Caverns, Spider's Den.
 - [ ] Bazaar and Auction House.
 - [ ] Slayers: Revenant, Tarantula, Sven.

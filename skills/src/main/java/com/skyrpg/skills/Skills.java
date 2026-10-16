@@ -59,7 +59,21 @@ public final class Skills {
                 if (object.has("rewards")) {
                     object.getAsJsonObject("rewards").entrySet().forEach(entry -> rewards.put(entry.getKey(), entry.getValue().getAsDouble()));
                 }
-                loaded.add(new Skill(id, name, color, order, levels, icon, description, rewards));
+                List<Skill.LevelReward> levelRewards = new ArrayList<>();
+                if (object.has("level_rewards")) {
+                    for (JsonElement element : object.getAsJsonArray("level_rewards")) {
+                        JsonObject reward = element.getAsJsonObject();
+                        Map<String, Double> stats = new LinkedHashMap<>();
+                        if (reward.has("stats")) {
+                            reward.getAsJsonObject("stats").entrySet().forEach(entry -> stats.put(entry.getKey(), entry.getValue().getAsDouble()));
+                        }
+                        levelRewards.add(new Skill.LevelReward(Map.copyOf(stats), reward.has("coins") ? reward.get("coins").getAsLong() : 0,
+                                reward.has("sbxp") ? reward.get("sbxp").getAsInt() : 0));
+                    }
+                }
+                loaded.add(new Skill(id, name, color, order, levels, icon, description, rewards,
+                        object.has("perk") ? object.get("perk").getAsString() : "",
+                        object.has("perk_text") ? object.get("perk_text").getAsString() : "", levelRewards));
             } catch (RuntimeException e) {
                 SkyRpgSkills.LOGGER.error("Skipping invalid skill {}: {}", id, e.getMessage());
             }
