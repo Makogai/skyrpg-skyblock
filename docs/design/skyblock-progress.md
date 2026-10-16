@@ -30,7 +30,10 @@ phase so the next session can pick up where this one stopped.
 - [x] SkyBlock time and calendar on Hypixel's epoch (the date matches Hypixel's), the sky synced to it,
       Calendar and Events page, the SkyBlock sidebar HUD (date, time, ⏣ area, purse), area names from the server.
 - [ ] Public-island framework: block regrowth zones, mob spawn zones, Fast Travel and `/warp`.
-- [ ] Storage (ender chest pages, backpacks) and Wardrobe.
+- [x] Storage: Ender Chest pages (45 slots, 2 of 9 unlocked at the start; more with SkyBlock Leveling later,
+      `/storage unlock` for admins), the Storage page in the K menu (previews), `/storage`, `/ec [page]`; ender chests
+      open it; the old 27-slot ender chest moves into page 1. Wardrobe: 9 sets, Hypixel's layout and rules, `/wardrobe`.
+      Backpacks in Storage come later (our backpacks still live in the inventory's backpack slot).
 - [ ] Pack: Catharsis + FurfSky as Modrinth entries (fetched by each launcher); ask the FurfSky team.
 
 ### Notes

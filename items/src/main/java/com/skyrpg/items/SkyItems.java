@@ -45,7 +45,7 @@ public final class SkyItems {
     public static final EquipmentSlot[] ARMOR_SLOTS = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
 
     /**
-     * Hides the vanilla tooltip lines our own tooltip replaces (attributes, unbreakable). Every SkyRPG
+     * Hides the vanilla tooltip lines our own tooltip replaces (attributes, unbreakable, dye). Every SkyRPG
      * item has it by default (see {@link ModItems}).
      */
     static final TooltipDisplay TOOLTIP = new TooltipDisplay(false, hidden());
@@ -83,6 +83,8 @@ public final class SkyItems {
         SequencedSet<DataComponentType<?>> hidden = new LinkedHashSet<>();
         hidden.add(DataComponents.ATTRIBUTE_MODIFIERS);
         hidden.add(DataComponents.UNBREAKABLE);
+        // Leather SkyBlock armour is dyed; Hypixel doesn't say so.
+        hidden.add(DataComponents.DYED_COLOR);
         return hidden;
     }
 
