@@ -128,6 +128,21 @@ final class DevHooks {
     }
 
     /**
+     * "scroll:X:Y:N": the mouse wheel at GUI coordinates, through Minecraft's own mouse handler (so the screen sees the
+     * cursor where the wheel turned, as for a real mouse).
+     */
+    static void scroll(Minecraft minecraft, double x, double y, double notches) {
+        mouse(x, y);
+        try {
+            java.lang.reflect.Method onScroll = net.minecraft.client.MouseHandler.class.getDeclaredMethod("onScroll", long.class, double.class, double.class);
+            onScroll.setAccessible(true);
+            onScroll.invoke(minecraft.mouseHandler, minecraft.getWindow().handle(), 0.0, notches);
+        } catch (ReflectiveOperationException e) {
+            throw new IllegalStateException("MouseHandler.onScroll", e);
+        }
+    }
+
+    /**
      * A click the way GLFW delivers one: the handler's cursor position is set (window pixels) and onButton runs for the
      * press and the release, so other mods' mouse mixins and Fabric's screen events are all in the path.
      */

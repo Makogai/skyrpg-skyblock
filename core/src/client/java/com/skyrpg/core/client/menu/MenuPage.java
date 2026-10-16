@@ -36,6 +36,16 @@ public interface MenuPage {
     /** Draws the page inside {@link PageContext}'s content area. */
     void render(PageContext ctx);
 
+    /**
+     * How tall the page needs to be (menu units) for {@code width}, if it doesn't scroll by itself. When the window's
+     * content area is shorter, the menu gives the page this much room and scrolls it with the mouse wheel (and a
+     * scrollbar), so nothing ends up out of reach on a small screen. 0 (the default) means the page fits any height
+     * or scrolls its own content.
+     */
+    default int scrollHeight(int width) {
+        return 0;
+    }
+
     /** Called each time the page is shown: when the menu opens on it, or it's picked in the sidebar. */
     default void opened() {
     }

@@ -16,11 +16,17 @@ Press **K** and one window opens with everything the pack adds: your character, 
 | Up and Down arrows | Previous or next page |
 | **1** to **9** | Jump to one of the first nine pages |
 | Click a page in the sidebar | Go there |
-| Scroll wheel | Scroll the page |
+| Scroll wheel over the page | Scroll the page |
+| Scroll wheel over the sidebar | Scroll the list of pages, when they don't all fit |
 
 A page with a text field, such as Pay, Party or Settings, takes digits and letters first.
 
 The window fits itself to your screen. **Settings, Interface, Menu size** lets you pick Auto, Compact or Large. See [Settings](settings).
+
+On a small screen nothing is out of reach:
+
+- When the pages don't all fit down the sidebar, the list scrolls. A thin scrollbar and a fade show where it is cut off, and picking a page with the keys scrolls it into view.
+- A page taller than the window scrolls inside it, with a scrollbar on the right. Tiles and cards keep a readable size instead of being squashed.
 
 ## The pages
 

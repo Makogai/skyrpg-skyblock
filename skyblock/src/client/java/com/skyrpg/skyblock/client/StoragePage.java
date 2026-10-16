@@ -66,6 +66,13 @@ public final class StoragePage implements MenuPage {
         return 32;
     }
 
+    /** Ender Chest cards at least 40 tall: the name, a row of items and the slot count. */
+    @Override
+    public int scrollHeight(int width) {
+        int rows = (Storage.MAX_PAGES + COLUMNS - 1) / COLUMNS;
+        return WARDROBE_H + GAP + rows * (40 + GAP) - GAP;
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();

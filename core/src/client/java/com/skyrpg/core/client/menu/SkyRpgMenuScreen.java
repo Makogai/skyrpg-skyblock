@@ -33,7 +33,9 @@ import net.minecraft.util.Util;
  *
  * <p>Opens with a short slide-in; 1-9 or the arrow keys switch pages; the menu key closes it; Esc steps back
  * inside the page if it can, else closes (keys go to the page first, so one with a text field can take them). On
- * narrow windows the sidebar folds down to icons (hover one for its name) to leave the page room.
+ * narrow windows the sidebar folds down to icons (hover one for its name) to leave the page room. When the pages
+ * don't fit down the sidebar, the list scrolls (wheel over it, a thin scrollbar, fades at the cut edges), and a page
+ * taller than the window ({@link MenuPage#scrollHeight}) scrolls inside the content area.
  */
 public class SkyRpgMenuScreen extends Screen {
     private static final int SIDEBAR_MIN = 108;
@@ -58,6 +60,8 @@ public class SkyRpgMenuScreen extends Screen {
     private static final int CONTENT_GAP = 7;
     /** The player row at the bottom of the sidebar: its top is this far above the window's bottom. */
     private static final int PLAYER_ROW = 31;
+    /** How far one notch of the mouse wheel moves a scrolled list. */
+    private static final int WHEEL_STEP = 28;
 
     private final long openedAt = Util.getMillis();
     private final Map<Identifier, Float> navHover = new HashMap<>();
@@ -67,6 +71,30 @@ public class SkyRpgMenuScreen extends Screen {
     private MenuLayout layout;
     /** A press on the page started a drag the page asked for, so moves and the release go to it. */
     private boolean pageDrag;
+    private final Scroll navScroll = new Scroll();
+    private final Scroll pageScroll = new Scroll();
+    /** The page's {@link MenuPage#scrollHeight} this frame, when it's taller than the content area (else 0). */
+    private int pageNeed;
+
+    /** A scroll position that eases towards where the wheel sent it. */
+    private static final class Scroll {
+        double target;
+        double pos;
+
+        double update(int max, float frameSeconds) {
+            target = Mth.clamp(target, 0, Math.max(0, max));
+            pos += (target - pos) * (1 - Math.exp(-frameSeconds * 16));
+            if (Math.abs(target - pos) < 0.3 || !Double.isFinite(pos)) {
+                pos = target;
+            }
+            return pos;
+        }
+
+        void reset() {
+            target = 0;
+            pos = 0;
+        }
+    }
 
     public SkyRpgMenuScreen(MenuPage page) {
         super(Component.literal("SkyRPG"));
@@ -78,6 +106,9 @@ public class SkyRpgMenuScreen extends Screen {
     @Override
     protected void init() {
         relayout();
+        // Opening on a page far down a scrolling list shows it.
+        revealActive();
+        navScroll.pos = navScroll.target;
     }
 
     private void relayout() {
@@ -127,8 +158,8 @@ public class SkyRpgMenuScreen extends Screen {
 
     /**
      * Nav rows shrink a little if there are many pages, so they never run into the player row. When even the smallest
-     * rows don't fit above it, the player row goes and the rows may shrink to the icon's height, so every page stays inside
-     * the window.
+     * rows don't fit above it, the player row goes and the rows may shrink to the icon's height. When even those don't
+     * fit, the rows stay at a comfortable height and the list scrolls ({@link #navOverflows}).
      */
     private int navHeight() {
         int pages = Math.max(1, SkyRpgMenu.pages().size());
@@ -137,13 +168,59 @@ public class SkyRpgMenuScreen extends Screen {
             return Math.min(withPlayerRow, NAV_HEIGHT);
         }
         int withoutPlayerRow = (layout.bottom() - 6 - navTop()) / pages - NAV_GAP;
-        return Mth.clamp(withoutPlayerRow, TIGHT_NAV_HEIGHT, NAV_HEIGHT);
+        if (withoutPlayerRow >= TIGHT_NAV_HEIGHT) {
+            return Math.min(withoutPlayerRow, NAV_HEIGHT);
+        }
+        return MIN_NAV_HEIGHT;
     }
 
     /** The player row is dropped when the pages need its space. */
     private boolean showPlayerRow() {
         int pages = SkyRpgMenu.pages().size();
         return navTop() + pages * (navHeight() + NAV_GAP) <= layout.bottom() - PLAYER_ROW - 8;
+    }
+
+    /** Where the page list ends: above the player row, or near the window's bottom without it. */
+    private int navBottom() {
+        return showPlayerRow() ? layout.bottom() - PLAYER_ROW - 8 : layout.bottom() - 4;
+    }
+
+    /** The whole list's height, rows and gaps. */
+    private int navContentHeight() {
+        return SkyRpgMenu.pages().size() * (navHeight() + NAV_GAP) - NAV_GAP;
+    }
+
+    /** More pages than fit down the sidebar: the list scrolls. */
+    private boolean navOverflows() {
+        return navTop() + navContentHeight() > navBottom();
+    }
+
+    private int navMaxScroll() {
+        return Math.max(0, navContentHeight() - (navBottom() - navTop()));
+    }
+
+    /** The y of page {@code index}'s row, with the list's scroll. */
+    private int navRowY(int index) {
+        return navTop() + index * (navHeight() + NAV_GAP) - (int) Math.round(navScroll.pos);
+    }
+
+    private boolean overSidebar(double mouseX, double mouseY) {
+        return mouseX >= layout.left() && mouseX < layout.left() + sidebar() && mouseY >= navTop() && mouseY < navBottom();
+    }
+
+    /** Scrolls the page list so the open page's row is in view (after picking one with a key). */
+    private void revealActive() {
+        if (!navOverflows()) {
+            return;
+        }
+        int index = SkyRpgMenu.pages().indexOf(page);
+        int rowTop = index * (navHeight() + NAV_GAP);
+        int area = navBottom() - navTop();
+        if (rowTop < navScroll.target) {
+            navScroll.target = rowTop;
+        } else if (rowTop + navHeight() > navScroll.target + area) {
+            navScroll.target = rowTop + navHeight() - area;
+        }
     }
 
     private int contentX() {
@@ -201,7 +278,7 @@ public class SkyRpgMenuScreen extends Screen {
         drawWindow(g);
         drawSidebar(g, mx, my, frameSeconds);
         drawFooter(g);
-        drawPage(g, mx, my);
+        drawPage(g, mx, my, frameSeconds);
         g.pose().popMatrix();
 
         super.extractRenderState(g, mouseX, mouseY, partialTick);
@@ -244,15 +321,26 @@ public class SkyRpgMenuScreen extends Screen {
             }
         }
 
-        int y = navTop();
         int navHeight = navHeight();
+        boolean overflow = navOverflows();
+        navScroll.update(overflow ? navMaxScroll() : 0, frameSeconds);
+        int navTop = navTop();
+        int navBottom = navBottom();
+        if (overflow) {
+            g.enableScissor(left + 1, navTop, left + sidebar, navBottom);
+        }
+        boolean mouseInList = !overflow || (mouseY >= navTop && mouseY < navBottom);
         List<MenuPage> pages = SkyRpgMenu.pages();
         for (int i = 0; i < pages.size(); i++) {
             MenuPage candidate = pages.get(i);
+            int y = navRowY(i);
+            if (y + navHeight < navTop || y > navBottom) {
+                continue;
+            }
             int x = left + 6;
             int w = sidebar - 12;
             boolean active = candidate == page;
-            boolean hovered = mouseX >= x && mouseX < x + w && mouseY >= y && mouseY < y + navHeight;
+            boolean hovered = mouseInList && mouseX >= x && mouseX < x + w && mouseY >= y && mouseY < y + navHeight;
             float hover = navHover.getOrDefault(candidate.id(), 0f);
             hover = Mth.lerp(Math.min(1, frameSeconds * 14), hover, hovered ? 1 : 0);
             navHover.put(candidate.id(), hover);
@@ -284,7 +372,19 @@ public class SkyRpgMenuScreen extends Screen {
                             Draw.withAlpha(Theme.DIM, active ? 0.9f : 0.35f + 0.55f * hover));
                 }
             }
-            y += navHeight + NAV_GAP;
+        }
+        if (overflow) {
+            g.disableScissor();
+            // Fades where rows are cut off, and a thin scrollbar along the sidebar's edge.
+            g.nextStratum();
+            double max = navMaxScroll();
+            if (navScroll.pos > 0.5) {
+                g.fillGradient(left + 1, navTop, left + sidebar, navTop + 10, Theme.SIDEBAR, Draw.withAlpha(Theme.SIDEBAR, 0f));
+            }
+            if (navScroll.pos < max - 0.5) {
+                g.fillGradient(left + 1, navBottom - 10, left + sidebar, navBottom, Draw.withAlpha(Theme.SIDEBAR, 0f), Theme.SIDEBAR);
+            }
+            Draw.scrollbar(g, left + sidebar - 3, navTop, navBottom - navTop, navContentHeight(), navScroll.pos, Theme.DIM);
         }
 
         if (minecraft.player != null && showPlayerRow()) {
@@ -314,7 +414,7 @@ public class SkyRpgMenuScreen extends Screen {
         }
     }
 
-    private void drawPage(GuiGraphicsExtractor g, int mouseX, int mouseY) {
+    private void drawPage(GuiGraphicsExtractor g, int mouseX, int mouseY, float frameSeconds) {
         float appear = Draw.easeOut((Util.getMillis() - pageOpenedAt) / 180f);
         int shift = Math.round((1 - appear) * 6);
         int x = contentX();
@@ -334,15 +434,42 @@ public class SkyRpgMenuScreen extends Screen {
         int underline = Math.min(room, Math.round(Draw.fittedWidth(font, page.title(), room, 1.5f, 1f) * appear));
         g.fill(x, lineY, x + underline, lineY + 1, Theme.ACCENT);
 
+        // A page taller than the content area gets its full height, scrolled and cut to the area.
+        int need = page.scrollHeight(room);
+        pageNeed = need > contentHeight() ? need : 0;
+        double offset = pageScroll.update(pageNeed > 0 ? pageNeed - contentHeight() : 0, frameSeconds);
+        if (pageNeed > 0) {
+            g.enableScissor(x - PAD + 2, contentY(), x + room + PAD - 2, contentY() + contentHeight());
+        }
         g.pose().pushMatrix();
-        g.pose().translate(shift, 0);
+        g.pose().translate(shift, -(float) Math.round(offset));
         page.render(context(g, mouseX - shift, mouseY));
         g.pose().popMatrix();
+        if (pageNeed > 0) {
+            g.disableScissor();
+            g.nextStratum();
+            Draw.scrollbar(g, x + room + 5, contentY(), contentHeight(), pageNeed, offset, Theme.DIM);
+        }
     }
 
+    /**
+     * The page's context for this mouse position (menu units). While the page scrolls, it's the page's full height
+     * and the mouse is moved by the scroll; a mouse outside the visible area hovers nothing on the page.
+     */
     private PageContext context(GuiGraphicsExtractor g, int mouseX, int mouseY) {
-        return new PageContext(g, font, minecraft.player, contentX(), contentY(), contentWidth(), contentHeight(),
-                mouseX, mouseY, pageOpenedAt);
+        if (pageNeed <= 0) {
+            return new PageContext(g, font, minecraft.player, contentX(), contentY(), contentWidth(), contentHeight(),
+                    mouseX, mouseY, pageOpenedAt);
+        }
+        int offset = (int) Math.round(pageScroll.pos);
+        boolean inside = mouseY >= contentY() && mouseY < contentY() + contentHeight();
+        return new PageContext(g, font, minecraft.player, contentX(), contentY(), contentWidth(), pageNeed,
+                mouseX, inside ? mouseY + offset : Integer.MIN_VALUE / 2, pageOpenedAt);
+    }
+
+    /** The mouse's y as the page sees it, for input handlers that take it separately from the context. */
+    private double pageY(double mouseY) {
+        return pageNeed > 0 ? mouseY + Math.round(pageScroll.pos) : mouseY;
     }
 
     // ------------------------------------------------------------------ input
@@ -354,6 +481,8 @@ public class SkyRpgMenuScreen extends Screen {
         page = target;
         pageOpenedAt = Util.getMillis();
         pageDrag = false;
+        pageScroll.reset();
+        pageNeed = 0;
         SkyRpgMenu.remember(target);
         target.opened();
         minecraft.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK.value(), 1.4f, 0.4f));
@@ -372,16 +501,22 @@ public class SkyRpgMenuScreen extends Screen {
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         double mouseX = unitX(event.x());
         double mouseY = unitY(event.y());
-        int y = navTop();
         int navHeight = navHeight();
-        for (MenuPage candidate : SkyRpgMenu.pages()) {
+        List<MenuPage> pages = SkyRpgMenu.pages();
+        boolean inList = !navOverflows() || (mouseY >= navTop() && mouseY < navBottom());
+        for (int i = 0; inList && i < pages.size(); i++) {
+            int y = navRowY(i);
             if (mouseX >= layout.left() + 6 && mouseX < layout.left() + sidebar() - 6 && mouseY >= y && mouseY < y + navHeight) {
-                select(candidate);
+                select(pages.get(i));
                 return true;
             }
-            y += navHeight + NAV_GAP;
         }
-        if (page.mouseClicked(context(null, (int) Math.floor(mouseX), (int) Math.floor(mouseY)), mouseX, mouseY, event.button())) {
+        PageContext ctx = context(null, (int) Math.floor(mouseX), (int) Math.floor(mouseY));
+        if (pageNeed > 0 && ctx.mouseY() == Integer.MIN_VALUE / 2) {
+            // A click above or below the scrolled page's visible part isn't on the page.
+            return super.mouseClicked(event, doubleClick);
+        }
+        if (page.mouseClicked(ctx, mouseX, pageY(mouseY), event.button())) {
             pageDrag = true;
             return true;
         }
@@ -393,7 +528,7 @@ public class SkyRpgMenuScreen extends Screen {
         if (pageDrag) {
             double mouseX = unitX(event.x());
             double mouseY = unitY(event.y());
-            if (page.mouseDragged(context(null, (int) Math.floor(mouseX), (int) Math.floor(mouseY)), mouseX, mouseY, event.button())) {
+            if (page.mouseDragged(dragContext(mouseX, mouseY), mouseX, pageY(mouseY), event.button())) {
                 return true;
             }
         }
@@ -406,7 +541,7 @@ public class SkyRpgMenuScreen extends Screen {
             pageDrag = false;
             double mouseX = unitX(event.x());
             double mouseY = unitY(event.y());
-            if (page.mouseReleased(context(null, (int) Math.floor(mouseX), (int) Math.floor(mouseY)), mouseX, mouseY, event.button())) {
+            if (page.mouseReleased(dragContext(mouseX, mouseY), mouseX, pageY(mouseY), event.button())) {
                 return true;
             }
         }
@@ -417,8 +552,25 @@ public class SkyRpgMenuScreen extends Screen {
     public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
         double x = unitX(mouseX);
         double y = unitY(mouseY);
-        return page.mouseScrolled(context(null, (int) Math.floor(x), (int) Math.floor(y)), x, y, scrollY)
-                || super.mouseScrolled(mouseX, mouseY, scrollX, scrollY);
+        if (navOverflows() && overSidebar(x, y)) {
+            navScroll.target -= scrollY * WHEEL_STEP;
+            return true;
+        }
+        if (page.mouseScrolled(context(null, (int) Math.floor(x), (int) Math.floor(y)), x, pageY(y), scrollY)) {
+            return true;
+        }
+        if (pageNeed > 0) {
+            pageScroll.target -= scrollY * WHEEL_STEP;
+            return true;
+        }
+        return super.mouseScrolled(mouseX, mouseY, scrollX, scrollY);
+    }
+
+    /** A drag keeps going outside the visible part (a slider pulled past the edge), so the mouse is only shifted. */
+    private PageContext dragContext(double mouseX, double mouseY) {
+        PageContext ctx = context(null, (int) Math.floor(mouseX), (int) Math.floor(mouseY));
+        return pageNeed > 0 ? new PageContext(null, font, minecraft.player, ctx.x(), ctx.y(), ctx.width(), ctx.height(),
+                (int) Math.floor(mouseX), (int) Math.floor(pageY(mouseY)), pageOpenedAt) : ctx;
     }
 
     @Override
@@ -444,11 +596,13 @@ public class SkyRpgMenuScreen extends Screen {
         int digit = event.key() - InputConstants.KEY_1;
         if (digit >= 0 && digit < Math.min(9, pages.size())) {
             select(pages.get(digit));
+            revealActive();
             return true;
         }
         if (event.key() == InputConstants.KEY_DOWN || event.key() == InputConstants.KEY_UP) {
             int step = event.key() == InputConstants.KEY_DOWN ? 1 : -1;
             select(pages.get(Math.floorMod(index + step, pages.size())));
+            revealActive();
             return true;
         }
         return super.keyPressed(event);

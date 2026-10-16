@@ -119,6 +119,13 @@ public final class SkyBlockMenuPage implements MenuPage {
         return -100;
     }
 
+    /** Tiles at least 22 tall (two lines of text), the hero at least the model and five lines. */
+    @Override
+    public int scrollHeight(int width) {
+        int rows = (TILES.size() + COLUMNS - 1) / COLUMNS;
+        return Math.max(122, rows * (22 + 3) - 3);
+    }
+
     @Override
     public void render(PageContext ctx) {
         hits.clear();

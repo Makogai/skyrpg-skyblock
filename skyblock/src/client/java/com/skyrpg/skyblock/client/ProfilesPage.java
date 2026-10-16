@@ -78,6 +78,13 @@ public final class ProfilesPage implements MenuPage {
         armed = Integer.MIN_VALUE;
     }
 
+    /** Every profile's row, the New profile row and the line under them. */
+    @Override
+    public int scrollHeight(int width) {
+        int rows = profiles.size() + (profiles.size() < Profiles.MAX ? 1 : 0);
+        return rows * (ROW_H + GAP) + 14;
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();

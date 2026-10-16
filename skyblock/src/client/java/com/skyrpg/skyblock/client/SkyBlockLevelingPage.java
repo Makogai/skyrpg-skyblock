@@ -65,6 +65,14 @@ public final class SkyBlockLevelingPage implements MenuPage {
         return 0xFF000000 | Notice.rgb(format);
     }
 
+    /** The hero's lines, or the right column with every SkyBlock XP source. */
+    @Override
+    public int scrollHeight(int width) {
+        int features = 13 + SkyBlockLevels.UNLOCKS.size() * 8 + 2;
+        int sources = 13 + (SOURCES.size() + 1) / 2 * 9 + 4;
+        return Math.max(170, features + 4 + 26 + 4 + sources);
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();

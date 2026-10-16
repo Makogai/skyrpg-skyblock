@@ -53,6 +53,14 @@ public final class CalendarPage implements MenuPage {
         return 30;
     }
 
+    /** Month cells at least 28 tall, and room for six events under "Coming up". */
+    @Override
+    public int scrollHeight(int width) {
+        int months = (SkyBlockTime.MONTHS.size() + COLUMNS - 1) / COLUMNS * (28 + GAP) - GAP;
+        int upcoming = 20 + 6 * 23;
+        return HEADER_H + GAP + (width >= 280 ? Math.max(months, upcoming) : months + GAP + upcoming);
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();

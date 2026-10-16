@@ -75,6 +75,13 @@ final class AlbumPage implements MenuPage {
         return minecraft.player == null ? Album.EMPTY : minecraft.player.getAttachedOrElse(Album.ATTACHMENT, Album.EMPTY);
     }
 
+    /** Cards at least 46 tall, so a caught brainrot's model and name both show. */
+    @Override
+    public int scrollHeight(int width) {
+        int rows = (BrainrotKind.values().length + COLUMNS - 1) / COLUMNS;
+        return 24 + rows * (46 + GAP) - GAP;
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();

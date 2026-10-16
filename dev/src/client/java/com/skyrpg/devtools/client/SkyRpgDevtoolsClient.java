@@ -185,6 +185,13 @@ public class SkyRpgDevtoolsClient implements ClientModInitializer {
                     DevHooks.bank(action[0].equals("deposit"), Long.parseLong(action[1]));
                 }
                 case "picker" -> DevHooks.picker(minecraft, Integer.parseInt(parts[1]));
+                // "scroll:X:Y:N": the mouse wheel over GUI coordinates, N notches (negative scrolls down; "set-scroll-X-Y--N"
+                // arrives as "X:Y::N").
+                case "scroll" -> {
+                    String[] xyn = parts[1].split(":");
+                    double notches = xyn.length > 3 ? -Double.parseDouble(xyn[3]) : Double.parseDouble(xyn[2]);
+                    DevHooks.scroll(minecraft, Double.parseDouble(xyn[0]), Double.parseDouble(xyn[1]), notches);
+                }
                 case "mouse" -> {
                     String[] xy = parts[1].split(":");
                     DevHooks.mouse(Double.parseDouble(xy[0]), Double.parseDouble(xy[1]));
@@ -253,7 +260,8 @@ public class SkyRpgDevtoolsClient implements ClientModInitializer {
                 default -> { }
             }
         } catch (RuntimeException e) {
-            // A typo in a dev command shouldn't take the client down.
+            // A typo in a dev command shouldn't take the client down, but say what went wrong.
+            org.slf4j.LoggerFactory.getLogger("skyrpg_devtools").warn("devtools set {} failed: {}", setting, e.toString());
         }
     }
 }

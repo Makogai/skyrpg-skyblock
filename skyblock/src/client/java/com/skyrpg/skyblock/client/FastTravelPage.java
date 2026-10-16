@@ -61,6 +61,12 @@ public final class FastTravelPage implements MenuPage {
         return 34;
     }
 
+    /** Every warp's card and the line under them. */
+    @Override
+    public int scrollHeight(int width) {
+        return (warps.size() + COLUMNS - 1) / COLUMNS * (CARD_H + GAP) + 14;
+    }
+
     @Override
     public void render(PageContext ctx) {
         GuiGraphicsExtractor g = ctx.graphics();
