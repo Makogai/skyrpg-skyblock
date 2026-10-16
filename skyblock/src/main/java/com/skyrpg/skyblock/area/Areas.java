@@ -5,6 +5,7 @@ import com.skyrpg.skyblock.SkyRpgSkyblock;
 import com.skyrpg.skyblock.island.Islands;
 import com.skyrpg.skyblock.profile.Profile;
 import com.skyrpg.skyblock.profile.Profiles;
+import com.skyrpg.skyblock.zone.Zones;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -68,6 +69,10 @@ public final class Areas {
             MinecraftServer server = level.getServer();
             String name = server.services().nameToIdCache().get(owner.owner()).map(NameAndId::name).orElse("Someone");
             return name + "'s Island";
+        }
+        Zones.Zone zone = Zones.at(level, player.blockPosition());
+        if (zone != null) {
+            return zone.name();
         }
         if (Hub.isHub(level)) {
             return "Hub";

@@ -49,9 +49,11 @@ final class HubProtection {
     }
 
     static void register() {
-        PlayerBlockBreakEvents.BEFORE.register((level, player, pos, state, blockEntity) -> !isProtected(player));
+        PlayerBlockBreakEvents.BEFORE.register((level, player, pos, state, blockEntity) ->
+                !isProtected(player) || Hub.breakRule().mayBreak(level, pos, state, player));
         AttackBlockCallback.EVENT.register((player, level, hand, pos, direction) ->
-                isProtected(player) ? InteractionResult.FAIL : InteractionResult.PASS);
+                isProtected(player) && !Hub.breakRule().mayBreak(level, pos, level.getBlockState(pos), player)
+                        ? InteractionResult.FAIL : InteractionResult.PASS);
         UseBlockCallback.EVENT.register((player, level, hand, hit) ->
                 isProtected(player) && !level.getBlockState(hit.getBlockPos()).is(USABLE) ? InteractionResult.FAIL : InteractionResult.PASS);
         UseItemCallback.EVENT.register((player, level, hand) -> {
@@ -62,9 +64,11 @@ final class HubProtection {
         UseEntityCallback.EVENT.register((player, level, hand, entity, hit) ->
                 isProtected(player) && (entity instanceof HangingEntity || entity instanceof ArmorStand) ? InteractionResult.FAIL : InteractionResult.PASS);
         AttackEntityCallback.EVENT.register((player, level, hand, entity, hit) ->
-                isProtected(player) ? InteractionResult.FAIL : InteractionResult.PASS);
+                isProtected(player) && (entity instanceof Player || !Hub.combatRule().allowsCombat(entity)) ? InteractionResult.FAIL : InteractionResult.PASS);
+        // Nothing gets hurt in the hub, except in its fighting zones (and never by another player).
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) ->
-                !Hub.isHub(entity.level()) || source.is(DamageTypeTags.BYPASSES_INVULNERABILITY));
+                !Hub.isHub(entity.level()) || source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)
+                        || Hub.combatRule().allowsCombat(entity) && !(entity instanceof Player && source.getEntity() instanceof Player));
         ServerTickEvents.END_SERVER_TICK.register(HubProtection::tick);
     }
 

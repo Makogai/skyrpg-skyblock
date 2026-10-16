@@ -26,7 +26,7 @@ import net.minecraft.server.level.ServerPlayer;
 /**
  * <ul>
  *   <li>{@code /profiles}: your profiles, with Switch buttons; {@code /profiles switch <name>}, {@code /profiles create}</li>
- *   <li>{@code /is} (also {@code /island}, {@code /warp home}): to your island</li>
+ *   <li>{@code /is} (also {@code /island}; {@code /warp home} is in FastTravel): to your island</li>
  *   <li>{@code /visit <player>}: to the island of the profile they're playing</li>
  *   <li>{@code /coopadd <player>} invites someone into your profile; they {@code /coop accept <you>} within 5 minutes</li>
  * </ul>
@@ -52,7 +52,6 @@ public final class ProfileCommands {
                         .executes(ProfileCommands::switchTo))));
         dispatcher.register(Commands.literal("is").executes(ctx -> home(ctx.getSource().getPlayerOrException())));
         dispatcher.register(Commands.literal("island").executes(ctx -> home(ctx.getSource().getPlayerOrException())));
-        dispatcher.register(Commands.literal("warp").then(Commands.literal("home").executes(ctx -> home(ctx.getSource().getPlayerOrException()))));
         dispatcher.register(Commands.literal("visit").then(Commands.argument("player", EntityArgument.player()).executes(ProfileCommands::visit)));
         dispatcher.register(Commands.literal("coopadd").then(Commands.argument("player", EntityArgument.player()).executes(ProfileCommands::invite)));
         dispatcher.register(Commands.literal("coop").then(Commands.literal("accept")

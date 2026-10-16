@@ -12,7 +12,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.portal.TeleportTransition;
 import net.minecraft.world.phys.Vec3;
@@ -51,6 +54,38 @@ public final class Hub {
 
     public static ServerLevel level(MinecraftServer server) {
         return server.getLevel(LEVEL);
+    }
+
+    /** Blocks players may break in the protected hub anyway (SkyBlock's zones: the Farm, the Forest, the Coal Mine). */
+    public interface BreakRule {
+        boolean mayBreak(Level level, BlockPos pos, BlockState state, Player player);
+    }
+
+    private static BreakRule breakRule = (level, pos, state, player) -> false;
+
+    public static BreakRule breakRule() {
+        return breakRule;
+    }
+
+    /** Sets which hub blocks may be broken; called on both sides, so the client doesn't refuse what the server allows. */
+    public static void setBreakRule(BreakRule rule) {
+        breakRule = rule;
+    }
+
+    /** Where in the hub fighting is on (SkyBlock's mob zones, like the Graveyard): entities there can be hit and hurt. */
+    public interface CombatRule {
+        boolean allowsCombat(Entity entity);
+    }
+
+    private static CombatRule combatRule = entity -> false;
+
+    public static CombatRule combatRule() {
+        return combatRule;
+    }
+
+    /** Sets where fighting is allowed; called on both sides. Players still can't hurt each other. */
+    public static void setCombatRule(CombatRule rule) {
+        combatRule = rule;
     }
 
     /** Where the hub's portal leads, and what it says on the way. SkyBlock points it at your island. */
