@@ -89,8 +89,8 @@ final class HubProtection {
             if (player.getY() < config.voidY()) {
                 Hub.teleport(player, hub, config.spawn(), config.spawnYaw(), config.spawnPitch());
             } else if (config.survivalPortals().stream().anyMatch(portal -> portal.intersects(player.getBoundingBox()))) {
-                Notice.send(player, Notice.Kind.INFO, Component.literal("Sending you to the survival world...").withStyle(ChatFormatting.GRAY));
-                Hub.sendToSurvival(player);
+                Notice.send(player, Notice.Kind.INFO, Component.literal(Hub.gate().message()).withStyle(ChatFormatting.GRAY));
+                Hub.gate().destination().accept(player);
             }
         }
     }

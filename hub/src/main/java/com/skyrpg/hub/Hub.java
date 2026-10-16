@@ -3,6 +3,7 @@ package com.skyrpg.hub;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import java.util.Set;
+import java.util.function.Consumer;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
 import net.minecraft.core.BlockPos;
@@ -50,6 +51,20 @@ public final class Hub {
 
     public static ServerLevel level(MinecraftServer server) {
         return server.getLevel(LEVEL);
+    }
+
+    /** Where the hub's portal leads, and what it says on the way. SkyBlock points it at your island. */
+    public record Gate(String message, Consumer<ServerPlayer> destination) {
+    }
+
+    private static Gate gate = new Gate("Sending you to the survival world...", Hub::sendToSurvival);
+
+    public static Gate gate() {
+        return gate;
+    }
+
+    public static void setGate(String message, Consumer<ServerPlayer> destination) {
+        gate = new Gate(message, destination);
     }
 
     public static void sendToHub(ServerPlayer player) {

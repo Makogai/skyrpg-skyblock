@@ -1,0 +1,13 @@
+{
+  "type": "skyrpg_skyblock:islands",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "skyrpg_skyblock:island",
+      "features": false,
+      "lakes": false,
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

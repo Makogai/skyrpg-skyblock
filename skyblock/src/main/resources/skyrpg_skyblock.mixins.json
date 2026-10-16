@@ -4,6 +4,10 @@
   "compatibilityLevel": "JAVA_25",
   "mixins": [
     "BlockItemMixin",
+    "CommonListenerAccess",
+    "ConnectionMixin",
+    "HandshakeMixin",
+    "PlayerDataStorageMixin",
     "SpawnEggItemMixin"
   ],
   "injectors": {

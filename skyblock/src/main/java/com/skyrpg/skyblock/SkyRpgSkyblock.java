@@ -1,7 +1,16 @@
 package com.skyrpg.skyblock;
 
+import com.skyrpg.hub.Hub;
+import com.skyrpg.skyblock.island.IslandRules;
+import com.skyrpg.skyblock.island.Islands;
+import com.skyrpg.skyblock.profile.ProfileCommands;
+import com.skyrpg.skyblock.profile.ProfileListPayload;
+import com.skyrpg.skyblock.profile.Profiles;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +27,19 @@ public final class SkyRpgSkyblock implements ModInitializer {
     @Override
     public void onInitialize() {
         SkyblockItemUse.init();
-        CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> SbItemCommand.register(dispatcher));
+        IslandRules.init();
+        Deaths.init();
+        // The hub's portal leads to your island, not the survival world.
+        Hub.setGate("Warping you to your island...", Islands::sendHome);
+        // Profiles take over player data once the server is up (the overworld holds the profile list).
+        ServerLifecycleEvents.SERVER_STARTED.register(Profiles::start);
+        ServerLifecycleEvents.SERVER_STOPPED.register(server -> Profiles.stop());
+        PayloadTypeRegistry.clientboundPlay().register(ProfileListPayload.TYPE, ProfileListPayload.CODEC);
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> ProfileListPayload.send(handler.player));
+        CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> {
+            SbItemCommand.register(dispatcher);
+            ProfileCommands.register(dispatcher);
+        });
     }
 
     public static Identifier id(String path) {

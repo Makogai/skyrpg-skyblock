@@ -35,6 +35,7 @@ DEV_PROPERTIES = {
     "allow-flight": "true",
     "difficulty": "normal",
     "motd": "SkyRPG SkyBlock dev server",
+    "accepts-transfers": "true",  # switching SkyBlock profiles reconnects the player through a transfer
 }
 
 LOGIN, COMMAND = 3, 2

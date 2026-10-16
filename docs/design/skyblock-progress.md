@@ -19,8 +19,13 @@ phase so the next session can pick up where this one stopped.
 - [x] `/sbitem <id>|give|search`; Hypixel-style tooltips (stat order, lore codes, bold rarity line); SkyBlock items
       don't place, hatch or get eaten as their base. Verified with FurfSky in SkyCam (2026-10-16).
 - [ ] Item browser screen to see them all (a creative-style grid with search).
-- [ ] Profiles and co-ops (switch = save player data, transfer packet, load the other profile's data).
-- [ ] Islands dimension, starter island, permissions, `/visit`, spawn on your island.
+- [x] Profiles and co-ops: up to 5 fruit-named profiles; player data saved/loaded per profile
+      (`<world>/skyrpg_profiles/<profile>/<player>.dat`, PlayerDataStorageMixin); switching reconnects through the
+      transfer packet (`accepts-transfers=true`). `/profiles`, Profile Management page (K menu), `/coopadd`,
+      `/coop accept`. Existing player data becomes the first profile.
+- [x] Islands dimension `skyrpg_skyblock:islands` (void, no spawns), starter island (grass, tree, Hub portal), build
+      area ±80 for members only, guests can't touch, `/is` `/island` `/warp home`, `/visit` (online players), hub gate
+      leads home, dying on an island respawns you there. Hypixel deaths: keepInventory, half the purse lost.
 - [ ] SkyBlock Menu (the K menu reorganised).
 - [ ] SkyBlock time and calendar.
 - [ ] Public-island framework: block regrowth zones, mob spawn zones, Fast Travel and `/warp`.
@@ -39,4 +44,8 @@ phase so the next session can pick up where this one stopped.
 - Items: re-run `python tools/skyblock/import_items.py` (or `--cached`) to refresh from the API; the output folder is
   generated and wiped each run, so hand edits belong in a later overrides file, not there. Descriptions come with
   `%%colour%%` placeholders (converted to `§` codes). SkyBlock items never wear out (always unbreakable).
+- Profiles: almost everything about a player is in their data (attachments), so a profile is just that file. Data
+  kept in SavedData by player uuid (parties, the brainrot board) stays account-wide. Bank sharing for co-ops comes
+  with the Bank. Later: `/visit` offline players, profile deletion, island upgrades (bigger build area), Jerry.
+- Islands: a ServerTick loop that can warp players must iterate a copy of `level.players()` (crashed once).
 - The wiki generates a page per SkyBlock item (6,142 generated pages; `build.py --check` takes about a minute).
