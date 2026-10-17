@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SULPHUR_SKITTER_BRONZE",
+ "base": "minecraft:paper",
+ "name": "Sulphur Skitter BRONZE",
+ "rarity": "common",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught near Sulphur blocks. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

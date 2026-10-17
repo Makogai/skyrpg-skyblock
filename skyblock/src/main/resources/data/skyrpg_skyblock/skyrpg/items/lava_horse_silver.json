@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "LAVA_HORSE_SILVER",
+ "base": "minecraft:paper",
+ "name": "Lavahorse SILVER",
+ "rarity": "rare",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught everywhere. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

@@ -31,6 +31,7 @@ PETS = DATA / "skyblock_pets"
 NEU = "NotEnoughUpdates-REPO-master/"
 HOLLOWS = "skyrpg_skyblock:crystal_hollows"
 MINES = "skyrpg_skyblock:dwarven_mines"
+CRIMSON = "skyrpg_skyblock:crimson_isle"
 
 # id: (name, fluid, fishing level, weight, fishing xp, damage, where, condition, message)
 # Weights are Hypixel's basic water pool (1200 Squid ... 18 Water Hydra); regional creatures add to it where they live.
@@ -69,7 +70,29 @@ CREATURES = {
                    "A Lava Blaze has surfaced from the depths!"),
     "LAVA_PIGMAN": ("Lava Pigman", "lava", 22, 200, 2100, 750, {"dimension": HOLLOWS, "zones": ["Magma Fields"]}, None,
                     "A Lava Pigman arose from the depths!"),
+    # The Crimson Isle's lava (docs/design/research/crimson-isle.md). decision: the wiki pages with their weights, damage
+    # and Fishing XP weren't fetched; Fishing levels are Hypixel's as remembered (XXVII Magma Slug to XLV Lord Jawbus),
+    # weights fall as they get rarer, Fishing XP and damage grow with health.
+    "FRIED_CHICKEN": ("Fried Chicken", "lava", 10, 350, 300, 400, {"dimension": CRIMSON}, None, "Smells of burning. But Chicken."),
+    "MAGMA_SLUG": ("Magma Slug", "lava", 27, 450, 730, 1200, {"dimension": CRIMSON}, None, "From beneath the lava appears a Magma Slug."),
+    "MOOGMA": ("Moogma", "lava", 28, 400, 950, 1500, {"dimension": CRIMSON}, None, "You hear a faint Moo from the lava... A Moogma appears."),
+    "LAVA_LEECH": ("Lava Leech", "lava", 30, 300, 1400, 2000, {"dimension": CRIMSON}, None, "A small but fearsome Lava Leech emerges."),
+    "PYROCLASTIC_WORM": ("Pyroclastic Worm", "lava", 31, 300, 1650, 2200, {"dimension": CRIMSON}, None,
+                         "You feel the heat radiating as a Pyroclastic Worm surfaces."),
+    "LAVA_FLAME": ("Lava Flame", "lava", 33, 250, 1800, 2500, {"dimension": CRIMSON}, None, "A Lava Flame flies out from beneath the surface."),
+    "FIRE_EEL": ("Fire Eel", "lava", 34, 200, 2200, 3000, {"dimension": CRIMSON}, None, "A Fire Eel slithers out from the depths."),
+    "TAURUS": ("Taurus", "lava", 35, 150, 2700, 3500, {"dimension": CRIMSON}, None, "Taurus and his steed emerge."),
+    "THUNDER": ("Thunder", "lava", 36, 18, 8000, 8000, {"dimension": CRIMSON}, None, "You hear a massive rumble as Thunder emerges."),
+    "FIERY_SCUTTLER": ("Fiery Scuttler", "lava", 43, 12, 10000, 10000, {"dimension": CRIMSON}, None,
+                       "A Fiery Scuttler inconspicuously waddles up to you, friends in tow."),
+    "LORD_JAWBUS": ("Lord Jawbus", "lava", 45, 8, 40000, 15000, {"dimension": CRIMSON}, None,
+                    "You have angered a legendary creature... Lord Jawbus has arrived."),
+    "RAGNAROK": ("Ragnarok", "lava", 46, 5, 50000, 20000, {"dimension": CRIMSON}, None, "The sky darkens and the air thickens. Ragnarok has arrived."),
 }
+# What NEU's render can't show as a mob (an invisible armour stand wearing the creature): decision.
+LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER": {"entity": "minecraft:spider"}}
+# NEU's lore has "1.200,000" for the Pyroclastic Worm.
+HEALTH_OVERRIDE = {"PYROCLASTIC_WORM": 1_200_000}
 
 # NEU has no recipe for the plain Squid: its drops from the wiki.
 SQUID = {"level": 1, "coins": 1, "xp": 3, "drops": [
@@ -80,7 +103,8 @@ ENTITIES = {"Zombie": "minecraft:zombie", "Skeleton": "minecraft:skeleton", "Wit
             "Guardian": "minecraft:guardian", "Silverfish": "minecraft:silverfish", "Eisengolem": "minecraft:iron_golem",
             "Ocelot": "minecraft:ocelot", "Chicken": "minecraft:chicken", "Rabbit": "minecraft:rabbit", "Sheep": "minecraft:sheep",
             "Endermite": "minecraft:endermite", "Blaze": "minecraft:blaze", "Pigman": "minecraft:zombified_piglin",
-            "Player": "minecraft:zombie"}
+            "Player": "minecraft:zombie", "MagmaCube": "minecraft:magma_cube", "Mooshroom": "minecraft:mooshroom",
+            "Pig": "minecraft:pig", "Horse": "minecraft:horse"}
 
 NORMAL = {
     "water": [{"item": "RAW_FISH", "weight": 220}, {"item": "RAW_FISH:1", "weight": 150},
@@ -212,7 +236,7 @@ def main():
     for ident, (name, fluid, fl, weight, fxp, damage, where, condition, message) in CREATURES.items():
         data = json.loads(neu.read(NEU + "items/" + ident + "_SC.json"))
         lore = [strip(line) for line in data.get("lore", [])]
-        health = next((number(line.split(":")[-1].strip()) for line in lore if "Health" in line), 100)
+        health = HEALTH_OVERRIDE.get(ident) or next((number(line.split(":")[-1].strip()) for line in lore if "Health" in line), 100)
         rarity = next((line.strip() for line in lore if line.strip() in ("COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC")),
                       "COMMON")
         recipe = (data.get("recipes") or [{}])[0]
@@ -224,7 +248,7 @@ def main():
         creature = {"id": ident, "name": name, "rarity": rarity, "fluid": fluid, "fishing_level": fl, "weight": weight,
                     "level": recipe.get("level", 1), "health": health, "damage": damage, "fishing_xp": fxp,
                     "combat_xp": recipe.get("xp") or 0, "coins": recipe.get("coins") or 0, "message": message,
-                    "look": look(neu, recipe.get("render", "Zombie"), name), "drops": drops}
+                    "look": LOOK_OVERRIDE.get(ident) or look(neu, recipe.get("render", "Zombie"), name), "drops": drops}
         if where:
             creature["where"] = where
         if condition:

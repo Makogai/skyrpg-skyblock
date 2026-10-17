@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "FLYFISH_SILVER",
+ "base": "minecraft:paper",
+ "name": "Flyfish SILVER",
+ "rarity": "uncommon",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught from 8 blocks above. Found in the Blazing Volcano. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

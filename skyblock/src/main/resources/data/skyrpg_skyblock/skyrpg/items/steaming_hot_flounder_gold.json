@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "STEAMING_HOT_FLOUNDER_GOLD",
+ "base": "minecraft:paper",
+ "name": "Steaming-Hot Flounder GOLD",
+ "rarity": "common",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in Volcano Geysers. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

@@ -42,7 +42,7 @@ public final class CrimsonIsle {
     /** The lava sea's top. */
     static final int LAVA = 59;
     /** Spots the build recorded, by name ("Bladesoul", "geyser 1"): position and yaw. */
-    record Spot(Vec3 pos, float yaw) {
+    public record Spot(Vec3 pos, float yaw) {
     }
 
     private static Map<String, Spot> spots = Map.of();
@@ -128,7 +128,7 @@ public final class CrimsonIsle {
         return spots.get(name);
     }
 
-    static Map<String, Spot> spots() {
+    public static Map<String, Spot> spots() {
         return spots;
     }
 
@@ -149,6 +149,21 @@ public final class CrimsonIsle {
     private static void command(ServerPlayer player, String command) {
         MinecraftServer server = player.level().getServer();
         server.getCommands().performPrefixedCommand(player.createCommandSourceStack(), command);
+    }
+
+    /** The Blazing Volcano erupts: fire and smoke from the crater and every geyser. */
+    public static void erupt(ServerLevel level) {
+        Vec3 crater = new Vec3(0.5, 146, -164.5);
+        level.sendParticles(net.minecraft.core.particles.ParticleTypes.LAVA, crater.x, crater.y, crater.z, 120, 8, 4, 8, 0);
+        level.sendParticles(net.minecraft.core.particles.ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, crater.x, crater.y + 4, crater.z, 80, 6, 6, 6, 0.05);
+        level.playSound(null, net.minecraft.core.BlockPos.containing(crater), SoundEvents.GENERIC_EXPLODE.value(),
+                net.minecraft.sounds.SoundSource.AMBIENT, 8f, 0.4f);
+        spots.forEach((name, spot) -> {
+            if (name.startsWith("geyser")) {
+                level.sendParticles(net.minecraft.core.particles.ParticleTypes.FLAME, spot.pos().x, spot.pos().y + 1, spot.pos().z, 60, 0.4, 3, 0.4, 0.08);
+                level.sendParticles(net.minecraft.core.particles.ParticleTypes.CLOUD, spot.pos().x, spot.pos().y + 3, spot.pos().z, 30, 0.6, 2, 0.6, 0.02);
+            }
+        });
     }
 
     // ---------------------------------------------------------------- Elle and the factions' people

@@ -55,6 +55,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.DUNGEON, com.skyrpg.skyblock.client.screen.DungeonScreen::new);
         MenuScreens.register(SkyMenus.MALIK, com.skyrpg.skyblock.client.screen.MalikScreen::new);
         MenuScreens.register(SkyMenus.FACTION, com.skyrpg.skyblock.client.screen.FactionScreen::new);
+        MenuScreens.register(SkyMenus.ODGER, com.skyrpg.skyblock.client.screen.OdgerScreen::new);
         MenuScreens.register(SkyMenus.PARTY_FINDER, com.skyrpg.skyblock.client.screen.PartyFinderScreen::new);
         MenuScreens.register(SkyMenus.BREW, com.skyrpg.skyblock.client.screen.BrewScreen::new);
         MenuScreens.register(SkyMenus.QUIVER, com.skyrpg.skyblock.client.screen.QuiverScreen::new);

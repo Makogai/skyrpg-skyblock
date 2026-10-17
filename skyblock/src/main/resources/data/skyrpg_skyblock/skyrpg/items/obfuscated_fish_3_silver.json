@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OBFUSCATED_FISH_3_SILVER",
+ "base": "minecraft:paper",
+ "name": "Obfuscated-3 SILVER",
+ "rarity": "rare",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught with Obfuscated 2 Bait. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

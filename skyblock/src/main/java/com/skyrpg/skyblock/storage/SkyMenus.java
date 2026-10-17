@@ -59,6 +59,9 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.dungeon.PartyFinder> PARTY_FINDER = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("party_finder"), new ExtendedMenuType<>(com.skyrpg.skyblock.dungeon.PartyFinder::new,
                     com.skyrpg.skyblock.dungeon.PartyFinder.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.fishing.OdgerMenu> ODGER = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("odger"), new ExtendedMenuType<>(com.skyrpg.skyblock.fishing.OdgerMenu::new,
+                    com.skyrpg.skyblock.fishing.OdgerMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.crimson.FactionMenu> FACTION = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("faction"), new ExtendedMenuType<>(com.skyrpg.skyblock.crimson.FactionMenu::new,
                     com.skyrpg.skyblock.crimson.FactionMenu.View.CODEC));

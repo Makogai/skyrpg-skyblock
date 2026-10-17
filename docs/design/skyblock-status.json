@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "The Crimson Isle: factions, daily quests, minibosses and the Inferno Demonlord",
+  "latest": "Trophy Fishing with Odger, and the Crimson Isle's lava sea creatures",
   "phase": {
     "name": "Phase 4: Late game",
-    "done": 15
+    "done": 20
   },
   "categories": [
     {
@@ -225,7 +225,7 @@
           "name": "Crimson Isle",
           "icon": "item/blaze_rod",
           "weight": 6,
-          "done": 40
+          "done": 52
         },
         {
           "name": "The Garden",
@@ -255,7 +255,7 @@
           "name": "Fishing",
           "icon": "item/fishing_rod",
           "weight": 5,
-          "done": 55
+          "done": 65
         },
         {
           "name": "Events",
@@ -282,6 +282,10 @@
     {
       "date": "2026-10-17",
       "overall": 57.2
+    },
+    {
+      "date": "2026-10-18",
+      "overall": 62.1
     }
   ]
 }

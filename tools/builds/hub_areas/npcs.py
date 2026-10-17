@@ -365,8 +365,9 @@ PEOPLE = {
                           "minecraft:entity.elder_guardian.ambient", ["Kuudra sleeps. For now.", "Only faction members may pass."], None),
     "Master Tao": ("master_tao", "Master Tao", "The Dojo", "#FFFF55", "Talk", skin("ari"), False, "minecraft:block.bamboo.place",
                    ["Discipline. Patience. Then strength.", "The Dojo's tests open soon."], None),
-    "Odger": ("odger", "Odger", "Trophy Fishing", "#55FFFF", "Talk", skin("steve"), False, "minecraft:entity.fishing_bobber.splash",
-              ["Fish the lava for Trophy Fish.", "Bring them to me when you've caught a few."], None),
+    "Odger": ("odger", "Odger", "Trophy Fishing", "#55FFFF", "Trophy Fish", skin("steve"), False, "minecraft:entity.fishing_bobber.splash",
+              ["Fish the lava with a lava rod for Trophy Fish.", "Bring them to me: I'll fillet them for Magmafish."],
+              {"type": "odger"}),
 }
 for _town in ("Dragontail", "Scarleton"):
     _id = _town.lower()

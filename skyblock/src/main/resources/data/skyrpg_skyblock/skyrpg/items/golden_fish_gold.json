@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GOLDEN_FISH_GOLD",
+ "base": "minecraft:paper",
+ "name": "Golden Fish GOLD",
+ "rarity": "legendary",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found swimming around in the lava. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

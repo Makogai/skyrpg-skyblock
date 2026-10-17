@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "OBFUSCATED_FISH_1_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Obfuscated-1 DIAMOND",
+ "rarity": "common",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught with Corrupted Bait. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

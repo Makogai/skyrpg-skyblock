@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "GUSHER_GOLD",
+ "base": "minecraft:paper",
+ "name": "Gusher GOLD",
+ "rarity": "common",
+ "type": "Trophy Fish",
+ "description": "\u00a77Caught after a volcano eruption. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

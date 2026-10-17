@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SLUGFISH_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Slugfish DIAMOND",
+ "rarity": "uncommon",
+ "type": "Trophy Fish",
+ "description": "\u00a77Bobber must be active for 20s. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

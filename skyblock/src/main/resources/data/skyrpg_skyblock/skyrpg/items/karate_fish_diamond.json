@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "KARATE_FISH_DIAMOND",
+ "base": "minecraft:paper",
+ "name": "Karate Fish DIAMOND",
+ "rarity": "epic",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in the Dojo. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

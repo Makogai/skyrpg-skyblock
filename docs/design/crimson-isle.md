@@ -56,10 +56,17 @@ dealt at least 0.5% of its health gets the Crimson Essence, Combat XP, coins and
 sweep (Bladesoul, the Duke), a fire burst (the Outlaw, Ashfang), a slam (the Magma Boss). Hypixel's Damage Soaked meter on
 the Magma Boss is left out for now.
 
+## Trophy Fishing (`fishing/TrophyFishing.java`)
+
+Lava rods only on the Isle. 18 fish, four tiers, Hypixel's conditions and odds; the volcano erupts every 20 minutes
+(decided: Gushers bite for 10 minutes after); the Golden Fish needs 8 minutes of fishing without a 2-minute break, then
+5% a catch (decided; Hypixel's "varies"); Steaming-Hot Flounders bite within 3 blocks of a geyser pool. Odger fillets
+into Magmafish and gives the ranks' armour, teeth and sacks. Decided: the lava sea creatures' Fishing levels, weights,
+Fishing XP and damage (the wiki pages weren't fetched).
+
 ## Still to build
 
 - Inferno Demonlord (Blaze Slayer): a slayer line with Immolate, Demonsplit, Hellion Shield attunements, fire pillars.
-- Trophy fishing and Odger (lava fishing, 18 trophy fish, tiers, filleting, ranks).
 - Kuudra: the instance, five tiers, keys from the Emissaries (reputation-gated), the free and paid chests, Crimson armour.
 - The Dojo's seven tests and belts (Master Tao).
 - Vulcan's Crimson Essence shop and Crimson essence stars on Kuudra armour; attributes.

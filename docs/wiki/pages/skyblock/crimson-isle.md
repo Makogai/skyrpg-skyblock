@@ -3,7 +3,7 @@ title: Crimson Isle
 category: skyblock
 order: 5
 icon: minecraft:magma_cream
-summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs and the Inferno Demonlord.
+summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs, Trophy Fishing with Odger and the Inferno Demonlord.
 ---
 The **Crimson Isle** is a nether island floating in a sea of lava, Hypixel SkyBlock's late-game combat island. Two factions split it: the **Mages** of **Scarleton** in the east and the **Barbarians** of **Dragontail** in the west, with the **Stronghold**, the **Crimson Fields** and the **Blazing Volcano** between them.
 
@@ -42,7 +42,7 @@ Lava rivers run between the island's three parts; four nether-brick bridges cros
 | Cathedral and Courtyard | the Mage Outlaw |
 | Mystic Marsh | Mushroom Bulls; Mycelium |
 | Dojo | Master Tao |
-| Odger's Hut | Odger, by a pier over the lava |
+| Odger's Hut | Odger and Trophy Fishing, by a pier over the lava |
 
 ### Mobs
 
@@ -66,7 +66,41 @@ They have Hypixel's levels and health, pay Combat XP and coins on the kill, and 
 | Wither Skeleton | 70 | 300,000 | 3,000 | 60 | Coal, Bones |
 | Wither Spectre | 70 | 300,000 | 3,500 | 70 | Coal, Spectre Dust (25%) |
 
-Any fishing rod fishes in the lava here (Trophy Fishing is still to come).
+## Trophy Fishing
+
+Fish the Isle's lava with a **lava rod** (Starter Lava Rod and up, Fishing X). A bite that isn't a sea creature can be a **Trophy Fish**: every fish whose conditions you meet gets a try, rarest first, at its chance (more with **Trophy Fish Chance**, from Odger's teeth and lava rods). Each comes in four tiers: **Bronze** 73.353%, **Silver** 24.451%, **Gold** 1.996%, **Diamond** 0.2% (the **Charm** enchantment raises the better ones). Hypixel's pity: catch the same fish 100 times without a Gold and the next is Gold; 600 without a Diamond and the next is Diamond.
+
+| Fish | Rarity | Chance | Where or how |
+| --- | --- | --- | --- |
+| Blobfish | Common | 25% | anywhere |
+| Gusher | Common | 20% | the Blazing Volcano, for 10 minutes after it erupts (every 20 minutes) |
+| Obfuscated-1 | Common | 25% | with Corrupted Bait |
+| Steaming-Hot Flounder | Common | 20% | the Blazing Volcano's geysers (the small lava pools on its slopes) |
+| Sulphur Skitter | Common | 30% | within 4 blocks of Sulphur |
+| Flyfish | Uncommon | 8% | the Blazing Volcano, with your bobber 8 blocks below you |
+| Obfuscated-2 | Uncommon | 20% | carrying an Obfuscated-1 (it's used up) |
+| Slugfish | Uncommon | 15% | your bobber out for 20 seconds |
+| Lavahorse | Rare | 4% | anywhere |
+| Mana Ray | Rare | 5% | with 1,200 Mana or more |
+| Obfuscated-3 | Rare | 10% | carrying an Obfuscated-2 (it's used up) |
+| Vanille | Rare | 8% | a Starter Lava Rod with no enchantments |
+| Volcanic Stonefish | Rare | 4% | the Blazing Volcano |
+| Karate Fish | Epic | 2% | the Dojo |
+| Moldfin | Epic | 2% | the Mystic Marsh or Scarleton |
+| Skeleton Fish | Epic | 2% | the Burning Desert or Dragontail |
+| Soul Fish | Epic | 2% | the Stronghold |
+| Golden Fish | Legendary | 5% | after 8 minutes of fishing without a 2-minute break |
+
+**Odger**, at his hut by the lava on the south coast, shows every fish you've caught in each tier, **fillets** the trophy fish you carry into **Magmafish** (4 to 1,300 each, by fish and tier), and ranks you:
+
+| Rank | Needs | Rewards |
+| --- | --- | --- |
+| Novice | Bronze or better of 15 fish | Bronze Hunter armour, Odger's Bronze Tooth, the Bronze Trophy Fishing Sack |
+| Adept | Silver or better of all 18 | the Silver set, tooth and sack |
+| Expert | Gold or better of all 18 | the Gold set, tooth and sack |
+| Master | Diamond of all 18 | the Diamond set, tooth and sack, and Diamond the Fish |
+
+The Isle's lava sea creatures (Fishing level): Fried Chicken (10), Magma Slug (27), Moogma (28), Lava Leech (30), Pyroclastic Worm (31), Lava Flame (33), Fire Eel (34), Taurus (35), Thunder (36), Fiery Scuttler (43), Lord Jawbus (45) and Ragnarok (46). See [Fishing](fishing).
 
 ## Elle and the factions
 
@@ -126,4 +160,4 @@ They also give Combat XP (2,500 to 3,922) and count for your faction quests. The
 The Blaze Slayer: its quest fills from the Isle's blazes and magma cubes. See [Slayers](slayers#inferno-demonlord).
 
 > [!NOTE]
-> Still to come here: Kuudra, Trophy Fishing with Odger, the Dojo's tests with Master Tao, Vulcan's Crimson Essence shop, and the Emissaries' Kuudra Keys.
+> Still to come here: Kuudra, the Dojo's tests with Master Tao, Vulcan's Crimson Essence shop, the Emissaries' Kuudra Keys, and the Plhlegblast.

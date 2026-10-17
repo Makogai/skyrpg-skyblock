@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SKELETON_FISH_SILVER",
+ "base": "minecraft:paper",
+ "name": "Skeleton Fish SILVER",
+ "rarity": "epic",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in the Burning Desert. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "MOLDFIN_SILVER",
+ "base": "minecraft:paper",
+ "name": "Moldfin SILVER",
+ "rarity": "epic",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in the Mystic Marsh. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

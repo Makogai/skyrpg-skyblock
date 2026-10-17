@@ -2,7 +2,7 @@
   "name": "Odger",
   "role": "Trophy Fishing",
   "color": "#55FFFF",
-  "hint": "Talk",
+  "hint": "Trophy Fish",
   "skin": "minecraft:entity/player/wide/steve",
   "model": "wide",
   "dimension": "skyrpg_skyblock:crimson_isle",
@@ -14,7 +14,10 @@
   "yaw": 0.0,
   "sound": "minecraft:entity.fishing_bobber.splash",
   "greetings": [
-    "Fish the lava for Trophy Fish.",
-    "Bring them to me when you've caught a few."
-  ]
+    "Fish the lava with a lava rod for Trophy Fish.",
+    "Bring them to me: I'll fillet them for Magmafish."
+  ],
+  "action": {
+    "type": "odger"
+  }
 }

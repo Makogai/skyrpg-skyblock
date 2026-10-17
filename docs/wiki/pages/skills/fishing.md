@@ -3,7 +3,7 @@ title: Fishing
 category: skills
 order: 5
 icon: minecraft:fishing_rod
-summary: Hypixel's fishing - sea creatures, Good to Outstanding treasure, baits, lava fishing in the Crystal Hollows, and Fishing XP from catches and kills.
+summary: Hypixel's fishing - sea creatures, Good to Outstanding treasure, baits, lava fishing in the Crystal Hollows and on the Crimson Isle, Trophy Fish, and Fishing XP from catches and kills.
 ---
 Fishing levels by catching things with a rod and killing the sea creatures that come up. The Fishing skill is Hypixel SkyBlock's: 50 levels, the **Treasure Hunter** perk (+0.1 Treasure Chance a level) and bonus Health every level. See [Skills overview](skills-overview) for the XP curve and what each level pays.
 
@@ -11,15 +11,16 @@ Fishing levels by catching things with a rod and killing the sea creatures that 
 
 Any water you can reach works: the Hub's **Wilderness** has a lake with Fisherman Gerald's hut and dock, and **Birch Park** in [The Park](the-islands#the-park) has one too. Cast, wait for the bobber to dip, and reel in.
 
-**Lava:** in the [Crystal Hollows](crystal-hollows), any rod's bobber floats on the Magma Fields' lava sea, for the Hollows' lava sea creatures and lava catches.
+**Lava:** in the [Crystal Hollows](crystal-hollows), any rod's bobber floats on the Magma Fields' lava sea, for the Hollows' lava sea creatures and lava catches. On the [Crimson Isle](crimson-isle) you need a **lava rod** (Starter Lava Rod, Polished Topaz Rod, Magma Rod, Inferno Rod, Hellfire Rod, Elle's Lava Rod), and its lava brings up **Trophy Fish** too.
 
 ## What a bite brings up
 
 Each time you reel in a bite, in this order:
 
 1. **A sea creature**, at your **Sea Creature Chance** (20% to start; rods, armour and baits add to it). On your private island it's a quarter of that.
-2. Otherwise **treasure**, at your **Treasure Chance** (your Fishing level gives it). Treasure is a **Good Catch** (89%), a **Great Catch** (10%) or an **Outstanding Catch** (1%), each with its own message.
-3. Otherwise **a fish**: Raw Cod, Raw Salmon, Tropical Fish or Pufferfish (in lava: Netherrack, Magma Cream, Blaze Powder, Glowstone Dust, Quartz or Nether Wart).
+2. On the Crimson Isle's lava, otherwise maybe **a Trophy Fish** (see [Crimson Isle](crimson-isle#trophy-fishing)).
+3. Otherwise **treasure** (in water), at your **Treasure Chance** (your Fishing level gives it). Treasure is a **Good Catch** (89%), a **Great Catch** (10%) or an **Outstanding Catch** (1%), each with its own message.
+4. Otherwise **a fish**: Raw Cod, Raw Salmon, Tropical Fish or Pufferfish (in lava: Netherrack, Magma Cream, Blaze Powder, Glowstone Dust, Quartz or Nether Wart).
 
 Everything goes straight into your inventory.
 
@@ -58,6 +59,7 @@ Some live in one place, on top of the ones above:
 | Dwarven Mines water | Mithril Grubber (Fishing 6) |
 | Crystal Hollows water | Water Worm and Poisoned Water Worm in the Goblin Holdout (Fishing 15 and 17), Abyssal Miner (Fishing 24) |
 | Crystal Hollows lava | Flaming Worm (Fishing 19), Lava Blaze (Fishing 20) and Lava Pigman (Fishing 22) in the Magma Fields |
+| Crimson Isle lava | Fried Chicken (10), Magma Slug (27), Moogma (28), Lava Leech (30), Pyroclastic Worm (31), Lava Flame (33), Fire Eel (34), Taurus (35), Thunder (36), Fiery Scuttler (43), Lord Jawbus (45), Ragnarok (46) |
 
 **Double Hook Chance** can bring up two at once ("DOUBLE HOOK!"). You can have up to 20 out; sea creatures leave if you go far away or log off, and after six minutes.
 
@@ -107,4 +109,4 @@ The **Fishing Minion** fishes for you on your island. See [Minions](minions).
 A reforge and Potato Books make a rod better: see [Reforging](reforging).
 
 > [!NOTE]
-> Not built yet: trophy fish, fishing hotspots, the event sea creatures (Spooky Festival, Fishing Festival sharks, Jerry's Workshop), the Crimson Isle, Backwater Bayou and Galatea fishing, the Agarimoo (Chumcap Bucket), Fishing Fortune, rod parts, and the Fishing Bag and bait sacks.
+> Not built yet: fishing hotspots, the event sea creatures (Spooky Festival, Fishing Festival sharks, Jerry's Workshop), Plhlegblast, Backwater Bayou and Galatea fishing, the Agarimoo (Chumcap Bucket), Fishing Fortune, rod parts, and the Fishing Bag and bait sacks.

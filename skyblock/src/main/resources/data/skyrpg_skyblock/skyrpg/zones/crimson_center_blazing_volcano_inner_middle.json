@@ -1,0 +1,14 @@
+{
+  "name": "Blazing Volcano",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -26,
+    40,
+    -143
+  ],
+  "to": [
+    26,
+    86,
+    -138
+  ]
+}

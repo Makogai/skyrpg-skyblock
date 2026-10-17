@@ -87,10 +87,12 @@ public final class SkyFishing {
                 return SkyFishing.reel(hook, player);
             }
         });
-        // Any rod's bobber floats on the Crystal Hollows' and the Crimson Isle's lava (on both sides: the client moves the bobber too).
-        LavaFishing.allowElsewhere((player, level) -> (level.dimension().equals(SkyMining.CRYSTAL_HOLLOWS)
-                || level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL))
-                && (player.getMainHandItem().getItem() instanceof FishingRodItem || player.getOffhandItem().getItem() instanceof FishingRodItem));
+        // Any rod's bobber floats on the Crystal Hollows' lava; the Crimson Isle's takes a lava rod (on both sides: the client
+        // moves the bobber too; the client's check reads the rod's SkyBlock id the same way).
+        LavaFishing.allowElsewhere((player, level) -> level.dimension().equals(SkyMining.CRYSTAL_HOLLOWS)
+                && (player.getMainHandItem().getItem() instanceof FishingRodItem || player.getOffhandItem().getItem() instanceof FishingRodItem)
+                || level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL) && lavaRod(player));
+        TrophyFishing.init();
         SkySeaCreatures.init();
         // Testing: reel in the line a player has out as if a fish bit, or bring up a given sea creature at it.
         net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> dispatcher.register(
@@ -209,7 +211,18 @@ public final class SkyFishing {
         return (int) Math.round(base * Math.max(0, 1 - speed / SPEED_CAP));
     }
 
-    /** Reeling in a bite: a sea creature, treasure or a catch, the bait used up. */
+    /** A lava rod (Starter Lava Rod, Magma Rod...) in either hand, by its SkyBlock id. */
+    private static boolean lavaRod(net.minecraft.world.entity.player.Player player) {
+        for (ItemStack stack : new ItemStack[] {player.getMainHandItem(), player.getOffhandItem()}) {
+            ItemDefinition def = com.skyrpg.items.SkyItems.definition(stack);
+            if (def != null && def.skyblockId() != null && TrophyFishing.LAVA_RODS.contains(def.skyblockId())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /** Reeling in a bite: a sea creature, a trophy fish (the Crimson Isle's lava), treasure or a catch, the bait used up. */
     static boolean reel(FishingHook hook, ServerPlayer player) {
         ServerLevel level = player.level();
         boolean lava = LavaFishing.inLava(hook);
@@ -240,7 +253,10 @@ public final class SkyFishing {
             }
         }
         ItemStack caught = ItemStack.EMPTY;
-        if (!creature) {
+        if (!creature && lava && level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL)) {
+            caught = TrophyFishing.tryCatch(player, hook, baitCounts ? bait : null, zoneName);
+        }
+        if (!creature && caught.isEmpty()) {
             double treasureChance = Stats.get(player, StatTypes.TREASURE_CHANCE) + (baitCounts ? bait.treasureChance() : 0);
             caught = !lava && random.nextDouble() * 100 < treasureChance ? treasure(player, baitCounts ? bait : null)
                     : fish(player, lava ? "lava" : "water");

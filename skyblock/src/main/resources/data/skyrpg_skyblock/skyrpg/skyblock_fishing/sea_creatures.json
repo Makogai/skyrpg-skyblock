@@ -1164,6 +1164,552 @@
      "Magma Fields"
     ]
    }
+  },
+  {
+   "id": "FRIED_CHICKEN",
+   "name": "Fried Chicken",
+   "rarity": "COMMON",
+   "fluid": "lava",
+   "fishing_level": 10,
+   "weight": 350,
+   "level": 30,
+   "health": 65000.0,
+   "damage": 400,
+   "fishing_xp": 300,
+   "combat_xp": 50,
+   "coins": 50,
+   "message": "Smells of burning. But Chicken.",
+   "look": {
+    "entity": "minecraft:chicken"
+   },
+   "drops": [
+    {
+     "item": "RAW_CHICKEN",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FRIED_FEATHER",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_RAW_CHICKEN",
+     "chance": 0.04,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "MAGMA_SLUG",
+   "name": "Magma Slug",
+   "rarity": "UNCOMMON",
+   "fluid": "lava",
+   "fishing_level": 27,
+   "weight": 450,
+   "level": 200,
+   "health": 500000.0,
+   "damage": 1200,
+   "fishing_xp": 730,
+   "combat_xp": 100,
+   "coins": 20,
+   "message": "From beneath the lava appears a Magma Slug.",
+   "look": {
+    "entity": "minecraft:magma_cube"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 5,
+     "max": 5
+    },
+    {
+     "item": "LUMP_OF_MAGMA",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "SLUG_BOOTS",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "MOOGMA",
+   "name": "Moogma",
+   "rarity": "UNCOMMON",
+   "fluid": "lava",
+   "fishing_level": 28,
+   "weight": 400,
+   "level": 1,
+   "health": 750000.0,
+   "damage": 1500,
+   "fishing_xp": 950,
+   "combat_xp": 0,
+   "coins": 5,
+   "message": "You hear a faint Moo from the lava... A Moogma appears.",
+   "look": {
+    "entity": "minecraft:mooshroom"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 8,
+     "max": 8
+    },
+    {
+     "item": "MOOGMA_LEGGINGS",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "MOOGMA_PELT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "LAVA_LEECH",
+   "name": "Lava Leech",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 30,
+   "weight": 300,
+   "level": 220,
+   "health": 1000000.0,
+   "damage": 2000,
+   "fishing_xp": 1400,
+   "combat_xp": 1000,
+   "coins": 500,
+   "message": "A small but fearsome Lava Leech emerges.",
+   "look": {
+    "entity": "minecraft:endermite"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "CUP_OF_BLOOD",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BLADE_OF_THE_VOLCANO",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PITCHIN_KOI",
+     "chance": 0.004,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "PYROCLASTIC_WORM",
+   "name": "Pyroclastic Worm",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 31,
+   "weight": 300,
+   "level": 240,
+   "health": 1200000,
+   "damage": 2200,
+   "fishing_xp": 1650,
+   "combat_xp": 400,
+   "coins": 200,
+   "message": "You feel the heat radiating as a Pyroclastic Worm surfaces.",
+   "look": {
+    "mount": "minecraft:magma_cube",
+    "entity": "minecraft:magma_cube"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 10,
+     "max": 10
+    },
+    {
+     "item": "PYROCLASTIC_SCALE",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:charm:1",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "LAVA_FLAME",
+   "name": "Lava Flame",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 33,
+   "weight": 250,
+   "level": 230,
+   "health": 1500000.0,
+   "damage": 2500,
+   "fishing_xp": 1800,
+   "combat_xp": 2000,
+   "coins": 1000,
+   "message": "A Lava Flame flies out from beneath the surface.",
+   "look": {
+    "entity": "minecraft:blaze"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 40,
+     "max": 40
+    },
+    {
+     "item": "FLAMING_HEART",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FLAMING_CHESTPLATE",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "FIRE_EEL",
+   "name": "Fire Eel",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 34,
+   "weight": 200,
+   "level": 240,
+   "health": 2000000.0,
+   "damage": 3000,
+   "fishing_xp": 2200,
+   "combat_xp": 2000,
+   "coins": 1200,
+   "message": "A Fire Eel slithers out from the depths.",
+   "look": {
+    "entity": "minecraft:silverfish"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 50,
+     "max": 50
+    },
+    {
+     "item": "ORB_OF_ENERGY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "STAFF_OF_THE_VOLCANO",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "TAURUS",
+   "name": "Taurus",
+   "rarity": "EPIC",
+   "fluid": "lava",
+   "fishing_level": 35,
+   "weight": 150,
+   "level": 250,
+   "health": 3000000.0,
+   "damage": 3500,
+   "fishing_xp": 2700,
+   "combat_xp": 4000,
+   "coins": 2000,
+   "message": "Taurus and his steed emerge.",
+   "look": {
+    "mount": "minecraft:pig",
+    "hand": {
+     "item": "minecraft:golden_sword"
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "HORN_OF_TAURUS",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "TAURUS_HELMET",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "THUNDER",
+   "name": "Thunder",
+   "rarity": "LEGENDARY",
+   "fluid": "lava",
+   "fishing_level": 36,
+   "weight": 18,
+   "level": 400,
+   "health": 35000000.0,
+   "damage": 8000,
+   "fishing_xp": 8000,
+   "combat_xp": 10000,
+   "coins": 5000,
+   "message": "You hear a massive rumble as Thunder emerges.",
+   "look": {
+    "entity": "minecraft:guardian"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "THUNDER_SHARDS",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:ultimate_flash:1",
+     "chance": 0.015,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "FIERY_SCUTTLER",
+   "name": "Fiery Scuttler",
+   "rarity": "LEGENDARY",
+   "fluid": "lava",
+   "fishing_level": 43,
+   "weight": 12,
+   "level": 475,
+   "health": 10000000.0,
+   "damage": 10000,
+   "fishing_xp": 10000,
+   "combat_xp": 12500,
+   "coins": 7500,
+   "message": "A Fiery Scuttler inconspicuously waddles up to you, friends in tow.",
+   "look": {
+    "entity": "minecraft:spider"
+   },
+   "drops": [
+    {
+     "item": "SCORCHED_CRAB_STICK",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "ENCHANTED_BLAZE_ROD",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "SEVERED_PINCER",
+     "chance": 0.002,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "SCUTTLER_SHELL",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "LORD_JAWBUS",
+   "name": "Lord Jawbus",
+   "rarity": "MYTHIC",
+   "fluid": "lava",
+   "fishing_level": 45,
+   "weight": 8,
+   "level": 600,
+   "health": 100000000.0,
+   "damage": 15000,
+   "fishing_xp": 40000,
+   "combat_xp": 10000,
+   "coins": 10000,
+   "message": "You have angered a legendary creature... Lord Jawbus has arrived.",
+   "look": {
+    "entity": "minecraft:iron_golem"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "MAGMA_LORD_FRAGMENT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RADIOACTIVE_VIAL",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BOBBIN_SCRIPTURES",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
+  },
+  {
+   "id": "RAGNAROK",
+   "name": "Ragnarok",
+   "rarity": "MYTHIC",
+   "fluid": "lava",
+   "fishing_level": 46,
+   "weight": 5,
+   "level": 666,
+   "health": 125000000.0,
+   "damage": 20000,
+   "fishing_xp": 50000,
+   "combat_xp": 7500,
+   "coins": 7500,
+   "message": "The sky darkens and the air thickens. Ragnarok has arrived.",
+   "look": {
+    "mount": "minecraft:horse",
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "ENCHANTED_COAL",
+     "chance": 1.0,
+     "min": 32,
+     "max": 32
+    },
+    {
+     "item": "BOBBIN_SCRIPTURES",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CHAIN_END_TIMES",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BRIMSTONE_HANDLE",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BURNT_TEXTS",
+     "chance": 0.0025,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   }
   }
  ]
 }

@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "VOLCANIC_STONEFISH_BRONZE",
+ "base": "minecraft:paper",
+ "name": "Volcanic Stonefish BRONZE",
+ "rarity": "rare",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in the Blazing Volcano. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}

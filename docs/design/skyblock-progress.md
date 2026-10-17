@@ -605,7 +605,15 @@ phase so the next session can pick up where this one stopped.
       with NEU's health and DPS), the Hellion Shield (dagger attunement, `ItemMods.attunement`, right-click swaps,
       tooltip line), Fire Pillars, Apocalypse fire pits.
 - [ ] Kuudra (five tiers, keys from the Emissaries, chests, Crimson armour and its essence stars, attributes).
-- [ ] Trophy fishing and Odger; lava rods and lava sea creatures for the Isle.
+- [x] **Trophy Fishing** (`fishing/TrophyFishing`, `OdgerMenu` + `OdgerScreen`; `tools/skyblock/trophy_fish.py` writes the
+      72 items from NEU and the fish table): lava rods only on the Isle; each eligible fish rolls rarest first at its
+      chance x (1 + Trophy Fish Chance); conditions (zones, eruption window, geyser pools, sulphur nearby, bobber below,
+      20 s bobber, 1,200 mana, plain Starter Lava Rod, carried Obfuscated bait, 8-minute streak); tier odds with Charm;
+      pity at 100/600. The volcano erupts every 20 min (Gusher). Odger: counts, fillet to Magmafish, the four ranks and
+      their armour, teeth, sacks and Diamond the Fish. 12 Crimson lava sea creatures in `import_sea_creatures.py`
+      (NEU health/drops; Fishing levels, weights and XP decided). The geysers are small lava pools now; the Magma
+      Chamber zone is only the cave.
+      Not yet: Plhlegblast and its pool, Golden Fish visuals, trophy SkyBlock XP.
 - [ ] The Dojo (Master Tao's seven tests, belts); Vulcan's essence shop; Rollim's and Kaus's duels; geysers; the
       Vanquisher; a faction line in the sidebar.
 - [ ] The Garden, Galatea and Hunting, Backwater Bayou, The Rift.

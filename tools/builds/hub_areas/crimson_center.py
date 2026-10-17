@@ -11,7 +11,7 @@ import re
 from kit import ZONES
 from crimson_lib import (new_area, land, bridge_half, sign, mob, hash01, noise, BRIDGE, ARRIVAL, SPIDERS_DEN_BACK)
 
-area = new_area("center")
+area = new_area("center", version=2)
 S, F = area.set, area.fill
 
 SG = 64                              # the Stronghold's / ruins' ground (surface block y)
@@ -490,14 +490,15 @@ for i, (gx, gz) in enumerate(GEYSERS, 1):
         for dz in range(-4, 5):
             d = math.hypot(dx, dz)
             if (gx + dx, gz + dz) in H:
-                if d <= 1.5 and (dx or dz):
-                    S(gx + dx, y0, gz + dz, "magma_block")
+                if d <= 1.5:
+                    # A small lava pool over a magma floor, walled by the basalt ring (Steaming-Hot Flounder bite here).
+                    S(gx + dx, y0, gz + dz, "lava")
+                    S(gx + dx, y0 - 1, gz + dz, "magma_block")
                 elif 1.5 < d <= 3.2:
                     S(gx + dx, y0, gz + dz, "basalt" if (dx + dz) % 2 else "polished_basalt")
-    S(gx, y0, gz, "air")
     S(gx, y0 - 1, gz, "shroomlight")
     S(gx, y0 + 1, gz, "air")
-    area.npc("spawn:geyser %d" % i, gx, y0, gz, 0.0, "a vent: ring of magma around a hole; the mod adds the eruption")
+    area.npc("spawn:geyser %d" % i, gx, y0, gz, 0.0, "a vent: a lava pool in a basalt ring; the mod adds the eruption")
     geyser_spots.append((gx, y0, gz))
 
 # ---------------------------------------------------------------- the Stronghold
@@ -1115,15 +1116,26 @@ area.zone("Blazing Volcano (east)", box=((43, GROUND, -250), (99, TOPY, -100)), 
     mob("Smoldering Blaze", 3, 8, (46, 63, -230), (90, 110, -110)),
     mob("Flare", 3, 15, (46, 64, -200), (90, 120, -110)),
 ])
-area.zone("Blazing Volcano (top)", box=((-42, 93, -232), (42, TOPY, -100)), mobs=[
+# The Magma Chamber's zone is just the cave (its dome, the north cave and the two side caves, below y 87); the rest of
+# the volcano, inside and out, is the Blazing Volcano.
+area.zone("Blazing Volcano (top)", box=((-42, 87, -232), (42, TOPY, -100)), mobs=[
     mob("Millennia-Aged Blaze", 2, 30, (-30, 128, -200), (30, 165, -140)),
 ])
 area.zone("Blazing Volcano (north)", box=((-42, GROUND, -250), (42, TOPY, -233)))
 area.zone("Blazing Volcano (south)", box=((-100, GROUND, -99), (99, TOPY, -60)))
-area.zone("Magma Chamber", box=((-42, GROUND, -232), (42, 92, -100)), mobs=[
+area.zone("Blazing Volcano (inner north)", box=((-42, GROUND, -232), (42, 86, -223)))
+area.zone("Blazing Volcano (inner west)", box=((-42, GROUND, -222), (-27, 86, -163)))
+area.zone("Blazing Volcano (inner east)", box=((27, GROUND, -222), (42, 86, -163)))
+area.zone("Blazing Volcano (inner south)", box=((-42, GROUND, -137), (42, 86, -100)))
+area.zone("Blazing Volcano (inner middle)", box=((-26, GROUND, -143), (26, 86, -138)))
+area.zone("Magma Chamber", box=((-26, GROUND, -222), (26, 86, -144)), mobs=[
     mob("Kada Knight", 2, 15, (-9, CF + 1, -221), (9, CF + 8, -203)),
-    mob("Kada Knight", 1, 15, (-38, CF + 1, -158), (-24, CF + 8, -142)),
-    mob("Kada Knight", 1, 15, (24, CF + 1, -158), (38, CF + 8, -142)),
+])
+area.zone("Magma Chamber (caves west)", box=((-42, GROUND, -162), (-27, 86, -138)), mobs=[
+    mob("Kada Knight", 1, 15, (-38, CF + 1, -158), (-27, CF + 8, -142)),
+])
+area.zone("Magma Chamber (caves east)", box=((27, GROUND, -162), (42, 86, -138)), mobs=[
+    mob("Kada Knight", 1, 15, (27, CF + 1, -158), (38, CF + 8, -142)),
 ])
 area.save()
 

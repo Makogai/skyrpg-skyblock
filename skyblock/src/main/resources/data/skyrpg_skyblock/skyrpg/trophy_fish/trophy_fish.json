@@ -1,0 +1,333 @@
+{
+ "tiers": {
+  "bronze": 73.353,
+  "silver": 24.451,
+  "gold": 1.996,
+  "diamond": 0.2
+ },
+ "fish": [
+  {
+   "id": "BLOBFISH",
+   "name": "Blobfish",
+   "rarity": "common",
+   "chance": 25,
+   "condition": "anywhere",
+   "params": {},
+   "how": "Caught everywhere.",
+   "fillet": [
+    4,
+    8,
+    12,
+    16
+   ]
+  },
+  {
+   "id": "GUSHER",
+   "name": "Gusher",
+   "rarity": "common",
+   "chance": 20,
+   "condition": "eruption",
+   "params": {
+    "zones": [
+     "Blazing Volcano"
+    ]
+   },
+   "how": "Caught after a volcano eruption.",
+   "fillet": [
+    32,
+    48,
+    64,
+    96
+   ]
+  },
+  {
+   "id": "OBFUSCATED_FISH_1",
+   "name": "Obfuscated-1",
+   "rarity": "common",
+   "chance": 25,
+   "condition": "bait",
+   "params": {
+    "bait": "CORRUPTED_BAIT"
+   },
+   "how": "Caught with Corrupted Bait.",
+   "fillet": [
+    16,
+    24,
+    32,
+    48
+   ]
+  },
+  {
+   "id": "STEAMING_HOT_FLOUNDER",
+   "name": "Steaming-Hot Flounder",
+   "rarity": "common",
+   "chance": 20,
+   "condition": "geyser",
+   "params": {
+    "zones": [
+     "Blazing Volcano"
+    ],
+    "radius": 3
+   },
+   "how": "Found in Volcano Geysers.",
+   "fillet": [
+    20,
+    28,
+    40,
+    60
+   ]
+  },
+  {
+   "id": "SULPHUR_SKITTER",
+   "name": "Sulphur Skitter",
+   "rarity": "common",
+   "chance": 30,
+   "condition": "near_block",
+   "params": {
+    "block": "minecraft:sponge",
+    "radius": 4
+   },
+   "how": "Caught near Sulphur blocks.",
+   "fillet": [
+    40,
+    60,
+    80,
+    120
+   ]
+  },
+  {
+   "id": "FLYFISH",
+   "name": "Flyfish",
+   "rarity": "uncommon",
+   "chance": 8,
+   "condition": "below",
+   "params": {
+    "zones": [
+     "Blazing Volcano"
+    ],
+    "blocks": 8
+   },
+   "how": "Caught from 8 blocks above. Found in the Blazing Volcano.",
+   "fillet": [
+    32,
+    48,
+    64,
+    96
+   ]
+  },
+  {
+   "id": "OBFUSCATED_FISH_2",
+   "name": "Obfuscated-2",
+   "rarity": "uncommon",
+   "chance": 20,
+   "condition": "carried",
+   "params": {
+    "item": "OBFUSCATED_FISH_1"
+   },
+   "how": "Caught with Obfuscated 1 Bait.",
+   "fillet": [
+    40,
+    60,
+    80,
+    120
+   ]
+  },
+  {
+   "id": "SLUGFISH",
+   "name": "Slugfish",
+   "rarity": "uncommon",
+   "chance": 15,
+   "condition": "slow",
+   "params": {
+    "seconds": 20
+   },
+   "how": "Bobber must be active for 20s.",
+   "fillet": [
+    40,
+    60,
+    80,
+    120
+   ]
+  },
+  {
+   "id": "LAVA_HORSE",
+   "name": "Lavahorse",
+   "rarity": "rare",
+   "chance": 4,
+   "condition": "anywhere",
+   "params": {},
+   "how": "Caught everywhere.",
+   "fillet": [
+    12,
+    16,
+    20,
+    40
+   ]
+  },
+  {
+   "id": "MANA_RAY",
+   "name": "Mana Ray",
+   "rarity": "rare",
+   "chance": 5,
+   "condition": "mana",
+   "params": {
+    "mana": 1200
+   },
+   "how": "Lured by having a high amount of mana.",
+   "fillet": [
+    40,
+    60,
+    80,
+    120
+   ]
+  },
+  {
+   "id": "OBFUSCATED_FISH_3",
+   "name": "Obfuscated-3",
+   "rarity": "rare",
+   "chance": 10,
+   "condition": "carried",
+   "params": {
+    "item": "OBFUSCATED_FISH_2"
+   },
+   "how": "Caught with Obfuscated 2 Bait.",
+   "fillet": [
+    400,
+    700,
+    1000,
+    1300
+   ]
+  },
+  {
+   "id": "VANILLE",
+   "name": "Vanille",
+   "rarity": "rare",
+   "chance": 8,
+   "condition": "plain_rod",
+   "params": {
+    "rod": "STARTER_LAVA_ROD"
+   },
+   "how": "Only caught with Starter Lava Rod with no enchantments.",
+   "fillet": [
+    80,
+    120,
+    160,
+    240
+   ]
+  },
+  {
+   "id": "VOLCANIC_STONEFISH",
+   "name": "Volcanic Stonefish",
+   "rarity": "rare",
+   "chance": 4,
+   "condition": "zone",
+   "params": {
+    "zones": [
+     "Blazing Volcano"
+    ]
+   },
+   "how": "Found in the Blazing Volcano.",
+   "fillet": [
+    20,
+    28,
+    40,
+    60
+   ]
+  },
+  {
+   "id": "KARATE_FISH",
+   "name": "Karate Fish",
+   "rarity": "epic",
+   "chance": 2,
+   "condition": "zone",
+   "params": {
+    "zones": [
+     "Dojo"
+    ]
+   },
+   "how": "Found in the Dojo.",
+   "fillet": [
+    40,
+    60,
+    80,
+    120
+   ]
+  },
+  {
+   "id": "MOLDFIN",
+   "name": "Moldfin",
+   "rarity": "epic",
+   "chance": 2,
+   "condition": "zone",
+   "params": {
+    "zones": [
+     "Mystic Marsh",
+     "Scarleton"
+    ]
+   },
+   "how": "Found in the Mystic Marsh.",
+   "fillet": [
+    32,
+    48,
+    64,
+    96
+   ]
+  },
+  {
+   "id": "SKELETON_FISH",
+   "name": "Skeleton Fish",
+   "rarity": "epic",
+   "chance": 2,
+   "condition": "zone",
+   "params": {
+    "zones": [
+     "Burning Desert",
+     "Dragontail"
+    ]
+   },
+   "how": "Found in the Burning Desert.",
+   "fillet": [
+    32,
+    48,
+    64,
+    96
+   ]
+  },
+  {
+   "id": "SOUL_FISH",
+   "name": "Soul Fish",
+   "rarity": "epic",
+   "chance": 2,
+   "condition": "zone",
+   "params": {
+    "zones": [
+     "Stronghold"
+    ]
+   },
+   "how": "Found in the Stronghold.",
+   "fillet": [
+    32,
+    48,
+    64,
+    96
+   ]
+  },
+  {
+   "id": "GOLDEN_FISH",
+   "name": "Golden Fish",
+   "rarity": "legendary",
+   "chance": 5,
+   "condition": "streak",
+   "params": {
+    "minutes": 8
+   },
+   "how": "Found swimming around in the lava.",
+   "fillet": [
+    400,
+    700,
+    1000,
+    1300
+   ]
+  }
+ ]
+}

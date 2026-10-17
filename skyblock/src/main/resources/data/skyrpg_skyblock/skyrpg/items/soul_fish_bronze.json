@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "SOUL_FISH_BRONZE",
+ "base": "minecraft:paper",
+ "name": "Soul Fish BRONZE",
+ "rarity": "epic",
+ "type": "Trophy Fish",
+ "description": "\u00a77Found in the Stronghold. Bring it to Odger at his hut by the lava.",
+ "hypixel": {
+  "soulbound": "SOLO"
+ }
+}
