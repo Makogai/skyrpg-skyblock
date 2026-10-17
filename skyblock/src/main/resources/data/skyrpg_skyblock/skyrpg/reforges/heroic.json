@@ -1,0 +1,56 @@
+{
+ "name": "Heroic",
+ "modifier": "heroic",
+ "types": [
+  "SWORD",
+  "LONGSWORD",
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 15.0,
+   "attack_speed": 1.0,
+   "intelligence": 40.0
+  },
+  "UNCOMMON": {
+   "strength": 20.0,
+   "attack_speed": 2.0,
+   "intelligence": 50.0
+  },
+  "RARE": {
+   "strength": 25.0,
+   "attack_speed": 2.0,
+   "intelligence": 65.0
+  },
+  "EPIC": {
+   "strength": 32.0,
+   "attack_speed": 3.0,
+   "intelligence": 80.0
+  },
+  "LEGENDARY": {
+   "strength": 40.0,
+   "attack_speed": 5.0,
+   "intelligence": 100.0
+  },
+  "MYTHIC": {
+   "strength": 50.0,
+   "attack_speed": 7.0,
+   "intelligence": 125.0
+  },
+  "DIVINE": {
+   "strength": 60.0,
+   "attack_speed": 9.0,
+   "intelligence": 150.0
+  }
+ }
+}

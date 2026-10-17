@@ -2,6 +2,8 @@ package com.skyrpg.skyblock.storage;
 
 import com.skyrpg.skyblock.SkyRpgSkyblock;
 import com.skyrpg.skyblock.recipe.CraftMenu;
+import com.skyrpg.skyblock.reforge.ItemWork;
+import com.skyrpg.skyblock.reforge.ItemWorkMenu;
 import com.skyrpg.skyblock.shop.ShopMenu;
 import net.fabricmc.fabric.api.menu.v1.ExtendedMenuType;
 import net.minecraft.core.Registry;
@@ -19,6 +21,10 @@ public final class SkyMenus {
             new ExtendedMenuType<>(ShopMenu::new, ShopMenu.View.CODEC));
     public static final MenuType<CraftMenu> CRAFT = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("craft"),
             new MenuType<>(CraftMenu::new, FeatureFlags.VANILLA_SET));
+    public static final MenuType<ItemWorkMenu> REFORGE = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("reforge"),
+            new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.REFORGE, id, inventory, ItemWork.Mode.REFORGE), FeatureFlags.VANILLA_SET));
+    public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),
+            new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.ANVIL, id, inventory, ItemWork.Mode.ANVIL), FeatureFlags.VANILLA_SET));
 
     private SkyMenus() {
     }

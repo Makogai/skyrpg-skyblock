@@ -1,0 +1,56 @@
+{
+ "name": "Moonglade",
+ "modifier": "moonglade",
+ "types": [
+  "AXE"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "foraging_fortune": 4,
+   "foraging_wisdom": 1
+  },
+  "UNCOMMON": {
+   "foraging_fortune": 6,
+   "foraging_wisdom": 2
+  },
+  "RARE": {
+   "foraging_fortune": 8,
+   "foraging_wisdom": 3
+  },
+  "EPIC": {
+   "foraging_fortune": 10,
+   "foraging_wisdom": 4
+  },
+  "LEGENDARY": {
+   "foraging_fortune": 12,
+   "foraging_wisdom": 5
+  },
+  "MYTHIC": {
+   "foraging_fortune": 15,
+   "foraging_wisdom": 6
+  },
+  "DIVINE": {
+   "foraging_fortune": 18,
+   "foraging_wisdom": 7
+  }
+ },
+ "stone": "MOONGLADE_JEWEL",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

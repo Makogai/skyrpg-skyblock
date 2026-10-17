@@ -1,0 +1,39 @@
+{
+ "name": "Zooming",
+ "modifier": "zooming",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "speed": 5.0
+  },
+  "UNCOMMON": {
+   "speed": 8.0
+  },
+  "RARE": {
+   "speed": 12.0
+  },
+  "EPIC": {
+   "speed": 16.0
+  },
+  "LEGENDARY": {
+   "speed": 20.0
+  },
+  "MYTHIC": {
+   "speed": 25.0
+  },
+  "DIVINE": {
+   "speed": 30.0
+  }
+ }
+}

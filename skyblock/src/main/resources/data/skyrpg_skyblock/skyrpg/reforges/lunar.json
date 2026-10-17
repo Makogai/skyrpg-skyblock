@@ -1,0 +1,60 @@
+{
+ "name": "Lunar",
+ "modifier": "lunar",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "speed": 1,
+   "farming_wisdom": 1
+  },
+  "UNCOMMON": {
+   "speed": 1,
+   "farming_wisdom": 1
+  },
+  "RARE": {
+   "speed": 2,
+   "farming_wisdom": 2
+  },
+  "EPIC": {
+   "speed": 2,
+   "farming_wisdom": 2
+  },
+  "LEGENDARY": {
+   "speed": 3,
+   "farming_wisdom": 3
+  },
+  "MYTHIC": {
+   "speed": 4,
+   "farming_wisdom": 4
+  },
+  "DIVINE": {
+   "speed": 5,
+   "farming_wisdom": 5
+  }
+ },
+ "stone": "MOONSTONE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

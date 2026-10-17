@@ -1,0 +1,70 @@
+{
+ "name": "Coldfused",
+ "modifier": "coldfusion",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 15,
+   "crit_damage": 20,
+   "magic_find": 2
+  },
+  "UNCOMMON": {
+   "strength": 20,
+   "crit_damage": 30,
+   "magic_find": 2
+  },
+  "RARE": {
+   "strength": 25,
+   "crit_damage": 40,
+   "magic_find": 2
+  },
+  "EPIC": {
+   "strength": 35,
+   "crit_damage": 50,
+   "magic_find": 2
+  },
+  "LEGENDARY": {
+   "strength": 45,
+   "crit_damage": 60,
+   "magic_find": 2
+  },
+  "MYTHIC": {
+   "strength": 55,
+   "crit_damage": 70,
+   "magic_find": 2
+  },
+  "DIVINE": {
+   "strength": 65,
+   "crit_damage": 90,
+   "magic_find": 2
+  }
+ },
+ "stone": "ENTROPY_SUPPRESSOR",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "items": [
+  "BURSTFIRE_DAGGER",
+  "BURSTMAW_DAGGER",
+  "FIREDUST_DAGGER",
+  "HEARTFIRE_DAGGER",
+  "HEARTMAW_DAGGER",
+  "MAWDUST_DAGGER"
+ ],
+ "ability": "§8While a Wisp Pet is active: §c+75 Strength §9+55 Crit Damage  §7Deal §c+1 Damage §7to Fire Pillars. Breaking one §7grants §f+30 True Defense §7and §c+15%  §cDamage §7for §a60s§7."
+}

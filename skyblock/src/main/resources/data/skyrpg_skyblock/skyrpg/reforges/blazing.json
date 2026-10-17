@@ -1,0 +1,61 @@
+{
+ "name": "Blazing",
+ "modifier": "blazing",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_fortune": 3,
+   "heat_resistance": 1
+  },
+  "UNCOMMON": {
+   "mining_fortune": 4,
+   "heat_resistance": 1
+  },
+  "RARE": {
+   "mining_fortune": 5,
+   "heat_resistance": 2
+  },
+  "EPIC": {
+   "mining_fortune": 6,
+   "heat_resistance": 2
+  },
+  "LEGENDARY": {
+   "mining_fortune": 7,
+   "heat_resistance": 3
+  },
+  "MYTHIC": {
+   "mining_fortune": 8,
+   "heat_resistance": 3
+  },
+  "DIVINE": {
+   "mining_fortune": 9,
+   "heat_resistance": 4
+  }
+ },
+ "stone": "BLAZEN_SPHERE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7For every §c1♨ Heat§7, you are §a0.05% §7more likely to find §6Worms§7."
+}

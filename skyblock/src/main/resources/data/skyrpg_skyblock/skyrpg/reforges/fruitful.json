@@ -1,0 +1,59 @@
+{
+ "name": "Fruitful",
+ "modifier": "fruitful",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 5,
+   "mining_fortune": 2
+  },
+  "UNCOMMON": {
+   "mining_speed": 10,
+   "mining_fortune": 4
+  },
+  "RARE": {
+   "mining_speed": 15,
+   "mining_fortune": 6
+  },
+  "EPIC": {
+   "mining_speed": 25,
+   "mining_fortune": 8
+  },
+  "LEGENDARY": {
+   "mining_speed": 40,
+   "mining_fortune": 10
+  },
+  "MYTHIC": {
+   "mining_speed": 55,
+   "mining_fortune": 12
+  },
+  "DIVINE": {
+   "mining_speed": 70,
+   "mining_fortune": 15
+  }
+ },
+ "stone": "ONYX",
+ "costs": {
+  "COMMON": 5000,
+  "UNCOMMON": 5000,
+  "RARE": 5000,
+  "EPIC": 5000,
+  "LEGENDARY": 5000,
+  "MYTHIC": 5000,
+  "DIVINE": 5000
+ },
+ "ability": "§7Grants §a+75 Defense §7while on  §6Mining Islands§7."
+}

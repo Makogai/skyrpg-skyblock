@@ -81,6 +81,10 @@ public final class Chopping {
     }
 
     private static void splinters(ServerPlayer player, boolean stump) {
+        // Heartwood is a survival currency: no drops in SkyBlock.
+        if (com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
+            return;
+        }
         RandomSource random = player.getRandom();
         if (random.nextDouble() >= (stump ? STUMP_SPLINTER_CHANCE : LOG_SPLINTER_CHANCE)) {
             return;

@@ -1,0 +1,49 @@
+{
+ "name": "Moil",
+ "modifier": "moil",
+ "types": [
+  "AXE"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "foraging_fortune": 1
+  },
+  "UNCOMMON": {
+   "foraging_fortune": 2
+  },
+  "RARE": {
+   "foraging_fortune": 3
+  },
+  "EPIC": {
+   "foraging_fortune": 4
+  },
+  "LEGENDARY": {
+   "foraging_fortune": 6
+  },
+  "MYTHIC": {
+   "foraging_fortune": 8
+  },
+  "DIVINE": {
+   "foraging_fortune": 10
+  }
+ },
+ "stone": "MOIL_LOG",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ }
+}

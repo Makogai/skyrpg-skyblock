@@ -1,0 +1,77 @@
+{
+ "name": "Honored",
+ "modifier": "honored",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 1.0,
+   "defense": 1.0,
+   "crit_chance": 1.0,
+   "intelligence": 3.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "health": 1.0,
+   "defense": 2.0,
+   "strength": 1.0,
+   "crit_chance": 1.0,
+   "intelligence": 3.0,
+   "speed": 1.0
+  },
+  "RARE": {
+   "health": 2.0,
+   "defense": 2.0,
+   "strength": 2.0,
+   "crit_chance": 1.0,
+   "intelligence": 4.0,
+   "speed": 1.0
+  },
+  "EPIC": {
+   "health": 2.0,
+   "defense": 3.0,
+   "strength": 2.0,
+   "crit_chance": 2.0,
+   "intelligence": 5.0,
+   "speed": 1.0
+  },
+  "LEGENDARY": {
+   "health": 3.0,
+   "defense": 3.0,
+   "strength": 3.0,
+   "crit_chance": 2.0,
+   "intelligence": 6.0,
+   "speed": 1.0
+  },
+  "MYTHIC": {
+   "health": 4.0,
+   "defense": 4.0,
+   "strength": 3.0,
+   "crit_chance": 2.0,
+   "intelligence": 7.0,
+   "speed": 1.0
+  },
+  "DIVINE": {
+   "health": 4.0,
+   "defense": 4.0,
+   "strength": 3.0,
+   "crit_chance": 2.0,
+   "intelligence": 8.0,
+   "speed": 1.0
+  }
+ }
+}

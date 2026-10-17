@@ -129,7 +129,7 @@ public final class MobLevels {
     /** From the spawn hook: give a freshly spawned hostile mob its level. */
     public static void assign(Mob mob, EntitySpawnReason reason) {
         if (!(mob instanceof Enemy) || !(mob.level() instanceof ServerLevel level) || info(mob) != null || !levelled(reason)
-                || level.dimension().identifier().getNamespace().equals("skyrpg_hub")) {
+                || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(level)) {
             return;
         }
         set(mob, new MobInfo(levelAt(level, mob.blockPosition()), false));

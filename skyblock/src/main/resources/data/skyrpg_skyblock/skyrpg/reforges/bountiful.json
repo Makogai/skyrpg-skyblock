@@ -1,0 +1,57 @@
+{
+ "name": "Bountiful",
+ "modifier": "bountiful",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 1,
+   "speed": 1
+  },
+  "UNCOMMON": {
+   "farming_fortune": 2,
+   "speed": 2
+  },
+  "RARE": {
+   "farming_fortune": 3,
+   "speed": 3
+  },
+  "EPIC": {
+   "farming_fortune": 5,
+   "speed": 5
+  },
+  "LEGENDARY": {
+   "farming_fortune": 7,
+   "speed": 8
+  },
+  "MYTHIC": {
+   "farming_fortune": 10,
+   "speed": 13
+  },
+  "DIVINE": {
+   "farming_fortune": 13,
+   "speed": 20
+  }
+ },
+ "stone": "GOLDEN_BALL",
+ "costs": {
+  "COMMON": 500000,
+  "UNCOMMON": 500000,
+  "RARE": 500000,
+  "EPIC": 500000,
+  "LEGENDARY": 500000,
+  "MYTHIC": 500000,
+  "DIVINE": 500000
+ },
+ "ability": "§7Earn §6+0.2 Coins §7every time you §7harvest a §aCrop§7."
+}

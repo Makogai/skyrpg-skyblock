@@ -1,0 +1,64 @@
+{
+ "name": "Loving",
+ "modifier": "loving",
+ "types": [
+  "CHESTPLATE"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 4,
+   "defense": 4,
+   "intelligence": 20
+  },
+  "UNCOMMON": {
+   "health": 5,
+   "defense": 5,
+   "intelligence": 40
+  },
+  "RARE": {
+   "health": 6,
+   "defense": 6,
+   "intelligence": 60
+  },
+  "EPIC": {
+   "health": 8,
+   "defense": 7,
+   "intelligence": 80
+  },
+  "LEGENDARY": {
+   "health": 10,
+   "defense": 10,
+   "intelligence": 100
+  },
+  "MYTHIC": {
+   "health": 14,
+   "defense": 14,
+   "intelligence": 120
+  },
+  "DIVINE": {
+   "health": 20,
+   "defense": 20,
+   "intelligence": 140
+  }
+ },
+ "stone": "RED_SCARF",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §c+5%  Ability Damage§7."
+}

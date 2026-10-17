@@ -1,0 +1,60 @@
+{
+ "name": "Rooted",
+ "modifier": "rooted",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 2,
+   "farming_fortune": 6
+  },
+  "UNCOMMON": {
+   "health": 5,
+   "farming_fortune": 9
+  },
+  "RARE": {
+   "health": 8,
+   "farming_fortune": 12
+  },
+  "EPIC": {
+   "health": 11,
+   "farming_fortune": 15
+  },
+  "LEGENDARY": {
+   "health": 14,
+   "farming_fortune": 18
+  },
+  "MYTHIC": {
+   "health": 17,
+   "farming_fortune": 21
+  },
+  "DIVINE": {
+   "health": 20,
+   "farming_fortune": 25
+  }
+ },
+ "stone": "BURROWING_SPORES",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

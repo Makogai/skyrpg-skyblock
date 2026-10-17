@@ -1,0 +1,74 @@
+{
+ "name": "Undead",
+ "modifier": "undead",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 6,
+   "defense": 6,
+   "strength": 1,
+   "attack_speed": 1
+  },
+  "UNCOMMON": {
+   "health": 8,
+   "defense": 8,
+   "strength": 2,
+   "attack_speed": 2
+  },
+  "RARE": {
+   "health": 12,
+   "defense": 12,
+   "strength": 2,
+   "attack_speed": 3
+  },
+  "EPIC": {
+   "health": 18,
+   "defense": 18,
+   "strength": 3,
+   "attack_speed": 4
+  },
+  "LEGENDARY": {
+   "health": 25,
+   "defense": 25,
+   "strength": 5,
+   "attack_speed": 5
+  },
+  "MYTHIC": {
+   "health": 33,
+   "defense": 33,
+   "strength": 7,
+   "attack_speed": 6
+  },
+  "DIVINE": {
+   "health": 45,
+   "defense": 45,
+   "strength": 10,
+   "attack_speed": 7
+  }
+ },
+ "stone": "PREMIUM_FLESH",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Take §c-2%  Damage §7from §2 Undead §7mobs."
+}

@@ -1,0 +1,72 @@
+{
+ "name": "Fanged",
+ "modifier": "fanged",
+ "types": [
+  "SWORD",
+  "LONGSWORD"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 30,
+   "crit_chance": 3,
+   "attack_speed": 2,
+   "vitality": 1
+  },
+  "UNCOMMON": {
+   "strength": 35,
+   "crit_chance": 4,
+   "attack_speed": 3,
+   "vitality": 1
+  },
+  "RARE": {
+   "strength": 40,
+   "crit_chance": 5,
+   "attack_speed": 4,
+   "vitality": 2
+  },
+  "EPIC": {
+   "strength": 50,
+   "crit_chance": 7,
+   "attack_speed": 6,
+   "vitality": 3
+  },
+  "LEGENDARY": {
+   "strength": 60,
+   "crit_chance": 8,
+   "attack_speed": 9,
+   "vitality": 4
+  },
+  "MYTHIC": {
+   "strength": 65,
+   "crit_chance": 10,
+   "attack_speed": 10,
+   "vitality": 5
+  },
+  "DIVINE": {
+   "strength": 75,
+   "crit_chance": 12,
+   "attack_speed": 12,
+   "vitality": 12
+  }
+ },
+ "stone": "FULL_JAW_FANGING_KIT",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Every §c7th §7melee hit on a mob deals §c+100%  Damage§7."
+}

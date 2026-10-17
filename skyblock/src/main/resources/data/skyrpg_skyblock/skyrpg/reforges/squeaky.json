@@ -1,0 +1,61 @@
+{
+ "name": "Squeaky",
+ "modifier": "squeaky",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "bonus_pest_chance": 0.5,
+   "farming_fortune": 2
+  },
+  "UNCOMMON": {
+   "bonus_pest_chance": 0.5,
+   "farming_fortune": 4
+  },
+  "RARE": {
+   "bonus_pest_chance": 1,
+   "farming_fortune": 6
+  },
+  "EPIC": {
+   "bonus_pest_chance": 1.5,
+   "farming_fortune": 8
+  },
+  "LEGENDARY": {
+   "bonus_pest_chance": 2,
+   "farming_fortune": 10
+  },
+  "MYTHIC": {
+   "bonus_pest_chance": 2.5,
+   "farming_fortune": 12
+  },
+  "DIVINE": {
+   "bonus_pest_chance": 3,
+   "farming_fortune": 15
+  }
+ },
+ "stone": "SQUEAKY_TOY",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§2 Pests §7spawn §a2.5% §7faster."
+}

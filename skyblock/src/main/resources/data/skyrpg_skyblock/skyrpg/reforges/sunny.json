@@ -1,0 +1,59 @@
+{
+ "name": "Sunny",
+ "modifier": "sunny",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "speed": 2,
+   "farming_wisdom": 1
+  },
+  "UNCOMMON": {
+   "speed": 3,
+   "farming_wisdom": 2
+  },
+  "RARE": {
+   "speed": 4,
+   "farming_wisdom": 3
+  },
+  "EPIC": {
+   "speed": 6,
+   "farming_wisdom": 4
+  },
+  "LEGENDARY": {
+   "speed": 8,
+   "farming_wisdom": 5
+  },
+  "MYTHIC": {
+   "speed": 10,
+   "farming_wisdom": 6
+  },
+  "DIVINE": {
+   "speed": 12,
+   "farming_wisdom": 7
+  }
+ },
+ "stone": "SUNSTONE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

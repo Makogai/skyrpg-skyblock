@@ -1,0 +1,46 @@
+{
+ "name": "Green Thumb",
+ "modifier": "green_thumb",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 1.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "farming_fortune": 2.0,
+   "speed": 2.0
+  },
+  "RARE": {
+   "farming_fortune": 3.0,
+   "speed": 3.0
+  },
+  "EPIC": {
+   "farming_fortune": 4.0,
+   "speed": 5.0
+  },
+  "LEGENDARY": {
+   "farming_fortune": 5.0,
+   "speed": 7.0
+  },
+  "MYTHIC": {
+   "farming_fortune": 6.0,
+   "speed": 9.0
+  },
+  "DIVINE": {
+   "farming_fortune": 7.0,
+   "speed": 11.0
+  }
+ }
+}

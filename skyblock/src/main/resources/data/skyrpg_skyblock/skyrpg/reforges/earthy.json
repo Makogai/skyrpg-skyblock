@@ -1,0 +1,50 @@
+{
+ "name": "Earthy",
+ "modifier": "earthy",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 5
+  },
+  "UNCOMMON": {
+   "farming_fortune": 10
+  },
+  "RARE": {
+   "farming_fortune": 15
+  },
+  "EPIC": {
+   "farming_fortune": 20
+  },
+  "LEGENDARY": {
+   "farming_fortune": 25
+  },
+  "MYTHIC": {
+   "farming_fortune": 30
+  },
+  "DIVINE": {
+   "farming_fortune": 35
+  }
+ },
+ "stone": "LARGE_WALNUT",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Earn §2+5% Sowdust §7from farming."
+}

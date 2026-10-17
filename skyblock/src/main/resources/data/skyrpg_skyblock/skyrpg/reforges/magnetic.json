@@ -1,0 +1,52 @@
+{
+ "name": "Magnetic",
+ "modifier": "magnetic",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 10
+  },
+  "UNCOMMON": {
+   "mining_speed": 20
+  },
+  "RARE": {
+   "mining_speed": 30
+  },
+  "EPIC": {
+   "mining_speed": 40
+  },
+  "LEGENDARY": {
+   "mining_speed": 50
+  },
+  "MYTHIC": {
+   "mining_speed": 75
+  },
+  "DIVINE": {
+   "mining_speed": 100
+  }
+ },
+ "stone": "LAPIS_CRYSTAL",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Earn §a+100% §7more Exp when mining."
+}

@@ -6,10 +6,13 @@ import com.skyrpg.core.stats.StatType;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemMods;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.ItemSet;
+import com.skyrpg.items.Rarity;
 import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.backpack.Backpacks;
+import com.skyrpg.items.reforge.Reforges;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -51,22 +54,37 @@ final class ItemTooltips {
             return;
         }
         List<Component> out = new ArrayList<>();
-        out.add(stack.has(DataComponents.CUSTOM_NAME) ? lines.getFirst() : Component.literal(def.name()).withColor(def.rarity().color()));
+        Rarity rarity = ItemMods.rarity(stack, def);
+        out.add(stack.has(DataComponents.CUSTOM_NAME) ? lines.getFirst() : Component.literal(ItemMods.name(stack, def)).withColor(rarity.color()));
         wrapWidth = Mth.clamp(Minecraft.getInstance().font.width(out.getFirst()), MIN_WRAP, MAX_WRAP);
 
-        // Weapon damage first, then the rest in the usual stat order; SkyBlock items in Hypixel's order, as listed.
+        // Weapon damage first, then the rest in the usual stat order; SkyBlock items in Hypixel's order, as listed, then
+        // whatever only their reforge or potato books add.
         List<StatType> order = new ArrayList<>(StatTypes.all());
         order.remove(StatTypes.DAMAGE);
         order.addFirst(StatTypes.DAMAGE);
+        Map<StatType, Double> total = ItemMods.stats(stack, def);
         if (def.skyblock()) {
-            order = List.copyOf(def.stats().keySet());
+            List<StatType> listed = new ArrayList<>(def.stats().keySet());
+            order.stream().filter(stat -> total.containsKey(stat) && !listed.contains(stat)).forEach(listed::add);
+            order = listed;
         }
+        Map<StatType, Double> potato = ItemMods.potatoStats(stack, def);
+        Map<StatType, Double> reforged = ItemMods.reforgeStats(stack, def);
         for (StatType stat : order) {
-            double value = def.stat(stat);
+            double value = total.getOrDefault(stat, 0.0);
             if (value != 0) {
-                out.add(Component.literal(stat.symbol() + " ").withColor(stat.color())
+                MutableComponent line = Component.literal(stat.symbol() + " ").withColor(stat.color())
                         .append(Component.literal(stat.name() + " ").withStyle(ChatFormatting.GRAY))
-                        .append(Component.literal(stat.formatBonus(value)).withColor(stat.color())));
+                        .append(Component.literal(stat.formatBonus(value)).withColor(stat.color()));
+                // Hypixel's markers: (+N) in yellow for potato books, in blue for the reforge.
+                if (potato.containsKey(stat)) {
+                    line.append(Component.literal(" (" + stat.formatBonus(potato.get(stat)) + ")").withStyle(ChatFormatting.YELLOW));
+                }
+                if (reforged.containsKey(stat)) {
+                    line.append(Component.literal(" (" + stat.formatBonus(reforged.get(stat)) + ")").withStyle(ChatFormatting.BLUE));
+                }
+                out.add(line);
             }
         }
 
@@ -150,11 +168,28 @@ final class ItemTooltips {
             }
         }
 
+        Reforges.Reforge reforge = ItemMods.reforge(stack);
+        if (reforge != null && !reforge.ability().isEmpty()) {
+            out.add(Component.empty());
+            out.add(Component.literal(reforge.name() + " Bonus").withStyle(ChatFormatting.BLUE));
+            wrapFormatted(reforge.ability()).forEach(line -> out.add(Component.literal(line)));
+        }
+
         out.add(Component.empty());
         if (def.skyblock()) {
-            // Hypixel's rarity line: "LEGENDARY HELMET", bold.
-            out.add(Component.literal((def.rarity().label() + " " + SkyItems.typeLabel(def)).trim().toUpperCase(java.util.Locale.ROOT))
-                    .withStyle(style -> style.withColor(def.rarity().color()).withBold(true)));
+            if (reforge == null && !Reforges.blacksmith(def, rarity).isEmpty()) {
+                out.add(Component.literal("This item can be reforged!").withStyle(ChatFormatting.DARK_GRAY));
+            }
+            // Hypixel's rarity line: "LEGENDARY HELMET", bold; a Recombobulator 3000 wraps it in flickering marks.
+            MutableComponent rarityLine = Component.literal((rarity.label() + " " + SkyItems.typeLabel(def)).trim().toUpperCase(java.util.Locale.ROOT))
+                    .withStyle(style -> style.withColor(rarity.color()).withBold(true));
+            if (ItemMods.recombobulated(stack)) {
+                // Siblings inherit their parent's style, so the marks and the line sit side by side under a plain parent.
+                MutableComponent mark = Component.literal("a").withStyle(style -> style.withColor(rarity.color()).withBold(true).withObfuscated(true));
+                rarityLine = Component.empty().append(mark.copy()).append(Component.literal(" ")).append(rarityLine)
+                        .append(Component.literal(" ")).append(mark);
+            }
+            out.add(rarityLine);
         } else {
             out.add(Component.literal("\u25C6 " + def.rarity().label() + " " + SkyItems.typeLabel(def)).withColor(def.rarity().color()));
         }

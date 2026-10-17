@@ -1,0 +1,46 @@
+{
+ "name": "Deadly",
+ "modifier": "deadly",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "crit_chance": 10.0,
+   "crit_damage": 5.0
+  },
+  "UNCOMMON": {
+   "crit_chance": 13.0,
+   "crit_damage": 10.0
+  },
+  "RARE": {
+   "crit_chance": 16.0,
+   "crit_damage": 18.0
+  },
+  "EPIC": {
+   "crit_chance": 19.0,
+   "crit_damage": 32.0
+  },
+  "LEGENDARY": {
+   "crit_chance": 22.0,
+   "crit_damage": 50.0
+  },
+  "MYTHIC": {
+   "crit_chance": 25.0,
+   "crit_damage": 70.0
+  },
+  "DIVINE": {
+   "crit_chance": 28.0,
+   "crit_damage": 90.0
+  }
+ }
+}

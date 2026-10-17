@@ -1,0 +1,59 @@
+{
+ "name": "Lustrous",
+ "modifier": "lustrous",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 10,
+   "mining_fortune": 10
+  },
+  "UNCOMMON": {
+   "mining_speed": 20,
+   "mining_fortune": 20
+  },
+  "RARE": {
+   "mining_speed": 30,
+   "mining_fortune": 30
+  },
+  "EPIC": {
+   "mining_speed": 40,
+   "mining_fortune": 40
+  },
+  "LEGENDARY": {
+   "mining_speed": 50,
+   "mining_fortune": 50
+  },
+  "MYTHIC": {
+   "mining_speed": 60,
+   "mining_fortune": 60
+  },
+  "DIVINE": {
+   "mining_speed": 75,
+   "mining_fortune": 75
+  }
+ },
+ "stone": "GLEAMING_CRYSTAL",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §e+25 Mining Spread §7while §bMayor Cole's §6Mining Fiesta §7perk is §7active."
+}

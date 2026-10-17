@@ -67,7 +67,7 @@ public final class Elites {
         if (!(mob instanceof Enemy) || !(mob.level() instanceof ServerLevel level)
                 || reason != EntitySpawnReason.NATURAL && reason != EntitySpawnReason.CHUNK_GENERATION
                         && !(reason == EntitySpawnReason.EVENT && BloodMoon.active())
-                || level.dimension().identifier().getNamespace().equals("skyrpg_hub")) {
+                || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(level)) {
             return;
         }
         BlockPos pos = mob.blockPosition();

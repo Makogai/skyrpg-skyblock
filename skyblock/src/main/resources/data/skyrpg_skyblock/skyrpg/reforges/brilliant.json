@@ -1,0 +1,57 @@
+{
+ "name": "Brilliant",
+ "modifier": "brilliant",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 1.0,
+   "intelligence": 5.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "health": 1.0,
+   "intelligence": 6.0,
+   "speed": 1.0
+  },
+  "RARE": {
+   "health": 2.0,
+   "intelligence": 7.0,
+   "speed": 2.0
+  },
+  "EPIC": {
+   "health": 3.0,
+   "intelligence": 9.0,
+   "speed": 2.0
+  },
+  "LEGENDARY": {
+   "health": 4.0,
+   "intelligence": 12.0,
+   "speed": 2.0
+  },
+  "MYTHIC": {
+   "health": 5.0,
+   "intelligence": 15.0,
+   "speed": 2.0
+  },
+  "DIVINE": {
+   "health": 6.0,
+   "intelligence": 18.0,
+   "speed": 2.0
+  }
+ }
+}

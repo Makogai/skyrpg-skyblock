@@ -1,0 +1,57 @@
+{
+ "name": "Beady",
+ "modifier": "beady",
+ "types": [
+  "VACUUM"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "damage": 5,
+   "intelligence": 10
+  },
+  "UNCOMMON": {
+   "damage": 10,
+   "intelligence": 20
+  },
+  "RARE": {
+   "damage": 15,
+   "intelligence": 30
+  },
+  "EPIC": {
+   "damage": 20,
+   "intelligence": 40
+  },
+  "LEGENDARY": {
+   "damage": 25,
+   "intelligence": 50
+  },
+  "MYTHIC": {
+   "damage": 30,
+   "intelligence": 60
+  },
+  "DIVINE": {
+   "damage": 35,
+   "intelligence": 70
+  }
+ },
+ "stone": "BEADY_EYES",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §6+100 Farming Fortune §7towards §2 Pests§7."
+}

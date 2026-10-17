@@ -1,0 +1,59 @@
+{
+ "name": "Auspicious",
+ "modifier": "auspicious",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 10,
+   "mining_fortune": 3
+  },
+  "UNCOMMON": {
+   "mining_speed": 20,
+   "mining_fortune": 6
+  },
+  "RARE": {
+   "mining_speed": 30,
+   "mining_fortune": 9
+  },
+  "EPIC": {
+   "mining_speed": 40,
+   "mining_fortune": 13
+  },
+  "LEGENDARY": {
+   "mining_speed": 50,
+   "mining_fortune": 16
+  },
+  "MYTHIC": {
+   "mining_speed": 75,
+   "mining_fortune": 20
+  },
+  "DIVINE": {
+   "mining_speed": 100,
+   "mining_fortune": 25
+  }
+ },
+ "stone": "ROCK_GEMSTONE",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §6+1%  Mining Fortune§7."
+}

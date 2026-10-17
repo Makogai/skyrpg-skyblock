@@ -1,0 +1,56 @@
+{
+ "name": "Clean",
+ "modifier": "clean",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 5.0,
+   "defense": 5.0,
+   "crit_chance": 2.0
+  },
+  "UNCOMMON": {
+   "health": 7.0,
+   "defense": 7.0,
+   "crit_chance": 4.0
+  },
+  "RARE": {
+   "health": 10.0,
+   "defense": 10.0,
+   "crit_chance": 6.0
+  },
+  "EPIC": {
+   "health": 15.0,
+   "defense": 15.0,
+   "crit_chance": 8.0
+  },
+  "LEGENDARY": {
+   "health": 20.0,
+   "defense": 20.0,
+   "crit_chance": 10.0
+  },
+  "MYTHIC": {
+   "health": 25.0,
+   "defense": 25.0,
+   "crit_chance": 12.0
+  },
+  "DIVINE": {
+   "health": 30.0,
+   "defense": 30.0,
+   "crit_chance": 14.0
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "name": "Deep Fried",
+ "modifier": "deep_fried",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 3
+  },
+  "UNCOMMON": {
+   "farming_fortune": 6
+  },
+  "RARE": {
+   "farming_fortune": 10
+  },
+  "EPIC": {
+   "farming_fortune": 15
+  },
+  "LEGENDARY": {
+   "farming_fortune": 20
+  },
+  "MYTHIC": {
+   "farming_fortune": 25
+  },
+  "DIVINE": {
+   "farming_fortune": 30
+  }
+ },
+ "stone": "HASHBROWN",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Find Seasonings §a25% §7more often §7during the §eFeast§7."
+}

@@ -1,0 +1,59 @@
+{
+ "name": "Scraped",
+ "modifier": "scraped",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "breaking_power": 1,
+   "mining_wisdom": 1
+  },
+  "UNCOMMON": {
+   "breaking_power": 1,
+   "mining_wisdom": 1
+  },
+  "RARE": {
+   "breaking_power": 1,
+   "mining_wisdom": 1
+  },
+  "EPIC": {
+   "breaking_power": 1,
+   "mining_wisdom": 2
+  },
+  "LEGENDARY": {
+   "breaking_power": 1,
+   "mining_wisdom": 2
+  },
+  "MYTHIC": {
+   "breaking_power": 1,
+   "mining_wisdom": 2
+  },
+  "DIVINE": {
+   "breaking_power": 1,
+   "mining_wisdom": 3
+  }
+ },
+ "stone": "POCKET_ICEBERG",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7If the block you are mining has the §7same §2 Breaking Power §7as this item, §6+25 Mining Fortune§7."
+}

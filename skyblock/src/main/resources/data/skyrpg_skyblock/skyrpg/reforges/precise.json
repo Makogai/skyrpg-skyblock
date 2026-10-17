@@ -1,0 +1,64 @@
+{
+ "name": "Precise",
+ "modifier": "precise",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 3,
+   "crit_chance": 8,
+   "crit_damage": 5
+  },
+  "UNCOMMON": {
+   "strength": 7,
+   "crit_chance": 9,
+   "crit_damage": 10
+  },
+  "RARE": {
+   "strength": 12,
+   "crit_chance": 10,
+   "crit_damage": 18
+  },
+  "EPIC": {
+   "strength": 18,
+   "crit_chance": 11,
+   "crit_damage": 32
+  },
+  "LEGENDARY": {
+   "strength": 25,
+   "crit_chance": 13,
+   "crit_damage": 50
+  },
+  "MYTHIC": {
+   "strength": 34,
+   "crit_chance": 15,
+   "crit_damage": 70
+  },
+  "DIVINE": {
+   "strength": 45,
+   "crit_chance": 18,
+   "crit_damage": 90
+  }
+ },
+ "stone": "OPTICAL_LENS",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Deal §c+10%  Damage §7when hitting a §7mob's head."
+}

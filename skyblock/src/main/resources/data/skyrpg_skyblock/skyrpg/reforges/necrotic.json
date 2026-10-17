@@ -1,0 +1,52 @@
+{
+ "name": "Necrotic",
+ "modifier": "necrotic",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "intelligence": 30
+  },
+  "UNCOMMON": {
+   "intelligence": 60
+  },
+  "RARE": {
+   "intelligence": 90
+  },
+  "EPIC": {
+   "intelligence": 120
+  },
+  "LEGENDARY": {
+   "intelligence": 150
+  },
+  "MYTHIC": {
+   "intelligence": 200
+  },
+  "DIVINE": {
+   "intelligence": 250
+  }
+ },
+ "stone": "NECROMANCER_BROOCH",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

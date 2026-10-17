@@ -1,0 +1,52 @@
+{
+ "name": "Glacial",
+ "modifier": "glacial",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_fortune": 3
+  },
+  "UNCOMMON": {
+   "mining_fortune": 6
+  },
+  "RARE": {
+   "mining_fortune": 9
+  },
+  "EPIC": {
+   "mining_fortune": 13
+  },
+  "LEGENDARY": {
+   "mining_fortune": 16
+  },
+  "MYTHIC": {
+   "mining_fortune": 20
+  },
+  "DIVINE": {
+   "mining_fortune": 25
+  }
+ },
+ "stone": "FRIGID_HUSK",
+ "costs": {
+  "COMMON": 500000,
+  "UNCOMMON": 500000,
+  "RARE": 500000,
+  "EPIC": 500000,
+  "LEGENDARY": 500000,
+  "MYTHIC": 500000,
+  "DIVINE": 500000
+ },
+ "ability": "§7Grants §6+2 Mining Fortune §7for §7every §b1❄ Cold §7you have."
+}

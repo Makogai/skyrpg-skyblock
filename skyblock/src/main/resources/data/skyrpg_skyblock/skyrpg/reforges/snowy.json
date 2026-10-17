@@ -1,0 +1,60 @@
+{
+ "name": "Snowy",
+ "modifier": "snowy",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fishing_speed": 0.5,
+   "sea_creature_chance": 0.2
+  },
+  "UNCOMMON": {
+   "fishing_speed": 1,
+   "sea_creature_chance": 0.2
+  },
+  "RARE": {
+   "fishing_speed": 1.5,
+   "sea_creature_chance": 0.4
+  },
+  "EPIC": {
+   "fishing_speed": 2,
+   "sea_creature_chance": 0.6
+  },
+  "LEGENDARY": {
+   "fishing_speed": 2.5,
+   "sea_creature_chance": 0.8
+  },
+  "MYTHIC": {
+   "fishing_speed": 3,
+   "sea_creature_chance": 1
+  },
+  "DIVINE": {
+   "fishing_speed": 3.5,
+   "sea_creature_chance": 1.2
+  }
+ },
+ "stone": "TERRY_SNOWGLOBE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

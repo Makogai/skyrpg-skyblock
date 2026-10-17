@@ -171,6 +171,16 @@ phase so the next session can pick up where this one stopped.
       level-up panel; the Wardrobe opens at level 5. SkyBlock Leveling page (`SkyBlockLevelingPage`, `/sblevel` through
       the new core `OpenPage` payload). Survival rules (XP per skill level, coins every 10th level) are off
       (`Features.SURVIVAL_LEVEL`), as are the Artisan Bench unlock lines (`Features.ARTISAN_BENCH`).
+- [x] **Reforging** (Phase 2 start): `tools/skyblock/import_reforges.py` writes NEU's 50 Blacksmith reforges and 86
+      reforge-stone reforges (stats by rarity, item categories or items, stone costs, ability text) to
+      `skyrpg/reforges`; items `Reforges` (loaded on the server, sent with the item definitions) and `ItemMods`: an item's
+      `modifier`, `rarity_upgrades` and `hot_potato_count` in its custom data (Hypixel's keys) feed its stats
+      (`ItemStatSource`), name, rarity colour, attack damage and tooltip (yellow potato and blue reforge "(+N)", the
+      Recombobulator's flickering rarity marks, "This item can be reforged!"). The Blacksmith (Hub, by Rosetta; action
+      `reforge`) opens Reforge Item (`ItemWorkMenu` + `ItemWorkScreen`): a random reforge of his for coins by rarity, or a
+      stone's reforge for its price; any anvil opens Combine Items: Recombobulator 3000, Hot Potato Book (10), Fuming
+      Potato Book (15). `/sbitemmod` for admins. Not yet: reforge abilities (shown, no effect), stars, gemstones,
+      enchanted books on the anvil.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

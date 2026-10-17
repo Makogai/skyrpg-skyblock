@@ -1,0 +1,101 @@
+{
+ "name": "Spiked",
+ "modifier": "spiked",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 2,
+   "defense": 2,
+   "strength": 3,
+   "crit_chance": 2,
+   "crit_damage": 3,
+   "attack_speed": 1,
+   "intelligence": 3,
+   "speed": 1
+  },
+  "UNCOMMON": {
+   "health": 3,
+   "defense": 3,
+   "strength": 4,
+   "crit_chance": 4,
+   "crit_damage": 4,
+   "attack_speed": 1,
+   "intelligence": 4,
+   "speed": 1
+  },
+  "RARE": {
+   "health": 4,
+   "defense": 4,
+   "strength": 6,
+   "crit_chance": 6,
+   "crit_damage": 6,
+   "attack_speed": 2,
+   "intelligence": 6,
+   "speed": 1
+  },
+  "EPIC": {
+   "health": 6,
+   "defense": 6,
+   "strength": 8,
+   "crit_chance": 8,
+   "crit_damage": 8,
+   "attack_speed": 3,
+   "intelligence": 8,
+   "speed": 1
+  },
+  "LEGENDARY": {
+   "health": 8,
+   "defense": 8,
+   "strength": 10,
+   "crit_chance": 10,
+   "crit_damage": 10,
+   "attack_speed": 4,
+   "intelligence": 10,
+   "speed": 1
+  },
+  "MYTHIC": {
+   "health": 10,
+   "defense": 10,
+   "strength": 12,
+   "crit_chance": 12,
+   "crit_damage": 12,
+   "attack_speed": 5,
+   "intelligence": 12,
+   "speed": 1
+  },
+  "DIVINE": {
+   "health": 12,
+   "defense": 12,
+   "strength": 15,
+   "crit_chance": 15,
+   "crit_damage": 15,
+   "attack_speed": 6,
+   "intelligence": 15,
+   "speed": 1
+  }
+ },
+ "stone": "DRAGON_SCALE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

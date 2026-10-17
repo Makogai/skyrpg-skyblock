@@ -1,0 +1,56 @@
+{
+ "name": "Wise",
+ "modifier": "wise",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 6.0,
+   "intelligence": 25.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "health": 8.0,
+   "intelligence": 50.0,
+   "speed": 1.0
+  },
+  "RARE": {
+   "health": 10.0,
+   "intelligence": 75.0,
+   "speed": 1.0
+  },
+  "EPIC": {
+   "health": 12.0,
+   "intelligence": 100.0,
+   "speed": 2.0
+  },
+  "LEGENDARY": {
+   "health": 15.0,
+   "intelligence": 125.0,
+   "speed": 2.0
+  },
+  "MYTHIC": {
+   "health": 20.0,
+   "intelligence": 150.0,
+   "speed": 3.0
+  },
+  "DIVINE": {
+   "health": 25.0,
+   "intelligence": 175.0,
+   "speed": 3.0
+  }
+ }
+}

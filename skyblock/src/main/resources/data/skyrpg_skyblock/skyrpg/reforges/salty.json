@@ -1,0 +1,51 @@
+{
+ "name": "Salty",
+ "modifier": "salty",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "sea_creature_chance": 0.5
+  },
+  "UNCOMMON": {
+   "sea_creature_chance": 1
+  },
+  "RARE": {
+   "sea_creature_chance": 1.5
+  },
+  "EPIC": {
+   "sea_creature_chance": 2
+  },
+  "LEGENDARY": {
+   "sea_creature_chance": 3
+  },
+  "MYTHIC": {
+   "sea_creature_chance": 4
+  },
+  "DIVINE": {
+   "sea_creature_chance": 5
+  }
+ },
+ "stone": "SALT_CUBE",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7This gives §a2x stats §7while on  §cJerry's Workshop§7."
+}

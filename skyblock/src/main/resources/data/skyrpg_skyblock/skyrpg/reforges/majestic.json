@@ -1,0 +1,58 @@
+{
+ "name": "Majestic",
+ "modifier": "majestic",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "sweep": 0.5,
+   "foraging_fortune": 2
+  },
+  "UNCOMMON": {
+   "sweep": 1,
+   "foraging_fortune": 4
+  },
+  "RARE": {
+   "sweep": 1.5,
+   "foraging_fortune": 6
+  },
+  "EPIC": {
+   "sweep": 2,
+   "foraging_fortune": 8
+  },
+  "LEGENDARY": {
+   "sweep": 3,
+   "foraging_fortune": 12
+  },
+  "MYTHIC": {
+   "sweep": 4,
+   "foraging_fortune": 16
+  },
+  "DIVINE": {
+   "sweep": 5,
+   "foraging_fortune": 20
+  }
+ },
+ "stone": "MORNING_DEW",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "items": [
+  "SAFARI_BELT"
+ ],
+ "ability": "§7Grants §f+50 Speed §7while in the  §2Critter Safari§7."
+}

@@ -1,0 +1,39 @@
+{
+ "name": "Robust",
+ "modifier": "robust",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 2.0
+  },
+  "UNCOMMON": {
+   "farming_fortune": 3.0
+  },
+  "RARE": {
+   "farming_fortune": 4.0
+  },
+  "EPIC": {
+   "farming_fortune": 6.0
+  },
+  "LEGENDARY": {
+   "farming_fortune": 8.0
+  },
+  "MYTHIC": {
+   "farming_fortune": 10.0
+  },
+  "DIVINE": {
+   "farming_fortune": 12.0
+  }
+ }
+}

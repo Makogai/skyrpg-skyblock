@@ -1,0 +1,91 @@
+{
+ "name": "Blended",
+ "modifier": "blended",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 1.0,
+   "defense": 1.0,
+   "crit_chance": 1.0,
+   "crit_damage": 1.0,
+   "attack_speed": 1.0,
+   "intelligence": 1.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "health": 1.0,
+   "defense": 1.0,
+   "strength": 1.0,
+   "crit_chance": 1.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 1.0,
+   "speed": 1.0
+  },
+  "RARE": {
+   "health": 2.0,
+   "defense": 1.0,
+   "strength": 1.0,
+   "crit_chance": 2.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 1.0,
+   "speed": 1.0
+  },
+  "EPIC": {
+   "health": 2.0,
+   "defense": 2.0,
+   "strength": 1.0,
+   "crit_chance": 2.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 2.0,
+   "speed": 1.0
+  },
+  "LEGENDARY": {
+   "health": 2.0,
+   "defense": 3.0,
+   "strength": 2.0,
+   "crit_chance": 3.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 2.0,
+   "speed": 1.0
+  },
+  "MYTHIC": {
+   "health": 3.0,
+   "defense": 3.0,
+   "strength": 2.0,
+   "crit_chance": 3.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 3.0,
+   "speed": 1.0
+  },
+  "DIVINE": {
+   "health": 3.0,
+   "defense": 3.0,
+   "strength": 2.0,
+   "crit_chance": 3.0,
+   "crit_damage": 3.0,
+   "attack_speed": 1.0,
+   "intelligence": 3.0,
+   "speed": 1.0
+  }
+ }
+}

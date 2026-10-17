@@ -1,0 +1,57 @@
+{
+ "name": "Hefty",
+ "modifier": "hefty",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 7.0,
+   "crit_damage": -2.0,
+   "speed": -1.0
+  },
+  "UNCOMMON": {
+   "defense": 9.0,
+   "crit_damage": -2.0,
+   "speed": -1.0
+  },
+  "RARE": {
+   "defense": 12.0,
+   "crit_damage": -3.0,
+   "speed": -1.0
+  },
+  "EPIC": {
+   "defense": 15.0,
+   "crit_damage": -3.0,
+   "speed": -1.0
+  },
+  "LEGENDARY": {
+   "defense": 20.0,
+   "crit_damage": -4.0,
+   "speed": -1.0
+  },
+  "MYTHIC": {
+   "defense": 25.0,
+   "crit_damage": -5.0,
+   "speed": -1.0
+  },
+  "DIVINE": {
+   "defense": 30.0,
+   "crit_damage": -6.0,
+   "speed": -1.0
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "name": "Gentle",
+ "modifier": "gentle",
+ "types": [
+  "SWORD",
+  "LONGSWORD",
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 3.0,
+   "attack_speed": 8.0
+  },
+  "UNCOMMON": {
+   "strength": 5.0,
+   "attack_speed": 10.0
+  },
+  "RARE": {
+   "strength": 7.0,
+   "attack_speed": 15.0
+  },
+  "EPIC": {
+   "strength": 10.0,
+   "attack_speed": 20.0
+  },
+  "LEGENDARY": {
+   "strength": 15.0,
+   "attack_speed": 25.0
+  },
+  "MYTHIC": {
+   "strength": 20.0,
+   "attack_speed": 30.0
+  },
+  "DIVINE": {
+   "strength": 25.0,
+   "attack_speed": 35.0
+  }
+ }
+}

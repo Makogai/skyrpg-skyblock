@@ -1,0 +1,58 @@
+{
+ "name": "Trashy",
+ "modifier": "trashy",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fishing_speed": 1,
+   "sea_creature_chance": 0.5
+  },
+  "UNCOMMON": {
+   "fishing_speed": 2,
+   "sea_creature_chance": 1
+  },
+  "RARE": {
+   "fishing_speed": 3,
+   "sea_creature_chance": 1.5
+  },
+  "EPIC": {
+   "fishing_speed": 4,
+   "sea_creature_chance": 2
+  },
+  "LEGENDARY": {
+   "fishing_speed": 6,
+   "sea_creature_chance": 3
+  },
+  "MYTHIC": {
+   "fishing_speed": 8,
+   "sea_creature_chance": 4
+  },
+  "DIVINE": {
+   "fishing_speed": 10,
+   "sea_creature_chance": 5
+  }
+ },
+ "stone": "OVERFLOWING_TRASH_CAN",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Grants §6+1 Treasure Chance §7while §7in the  §2Backwater Bayou§7."
+}

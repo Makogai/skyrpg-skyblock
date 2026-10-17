@@ -1,0 +1,59 @@
+{
+ "name": "Mossy",
+ "modifier": "mossy",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 5,
+   "speed": 3
+  },
+  "UNCOMMON": {
+   "farming_fortune": 10,
+   "speed": 3
+  },
+  "RARE": {
+   "farming_fortune": 15,
+   "speed": 5
+  },
+  "EPIC": {
+   "farming_fortune": 20,
+   "speed": 5
+  },
+  "LEGENDARY": {
+   "farming_fortune": 25,
+   "speed": 7
+  },
+  "MYTHIC": {
+   "farming_fortune": 30,
+   "speed": 7
+  },
+  "DIVINE": {
+   "farming_fortune": 35,
+   "speed": 10
+  }
+ },
+ "stone": "OVERGROWN_GRASS",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

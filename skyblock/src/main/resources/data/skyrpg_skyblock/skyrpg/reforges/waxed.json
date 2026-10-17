@@ -1,0 +1,60 @@
+{
+ "name": "Waxed",
+ "modifier": "waxed",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 5,
+   "crit_chance": 2
+  },
+  "UNCOMMON": {
+   "health": 6,
+   "crit_chance": 3
+  },
+  "RARE": {
+   "health": 8,
+   "crit_chance": 4
+  },
+  "EPIC": {
+   "health": 10,
+   "crit_chance": 5
+  },
+  "LEGENDARY": {
+   "health": 12,
+   "crit_chance": 6
+  },
+  "MYTHIC": {
+   "health": 15,
+   "crit_chance": 7
+  },
+  "DIVINE": {
+   "health": 20,
+   "crit_chance": 8
+  }
+ },
+ "stone": "BLAZE_WAX",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

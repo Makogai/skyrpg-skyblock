@@ -1,0 +1,52 @@
+{
+ "name": "Bustling",
+ "modifier": "bustling",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 1
+  },
+  "UNCOMMON": {
+   "farming_fortune": 2
+  },
+  "RARE": {
+   "farming_fortune": 4
+  },
+  "EPIC": {
+   "farming_fortune": 6
+  },
+  "LEGENDARY": {
+   "farming_fortune": 8
+  },
+  "MYTHIC": {
+   "farming_fortune": 10
+  },
+  "DIVINE": {
+   "farming_fortune": 12
+  }
+ },
+ "stone": "SKYMART_BROCHURE",
+ "costs": {
+  "COMMON": 5000,
+  "UNCOMMON": 5000,
+  "RARE": 5000,
+  "EPIC": 5000,
+  "LEGENDARY": 5000,
+  "MYTHIC": 5000,
+  "DIVINE": 5000
+ }
+}

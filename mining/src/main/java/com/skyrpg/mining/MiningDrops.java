@@ -119,7 +119,8 @@ public final class MiningDrops {
         } else {
             return;
         }
-        if (shards > 0) {
+        // Glimmer is a survival currency: none in SkyBlock.
+        if (shards > 0 && !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
             double fortune = Stats.get(player, StatTypes.MINING_FORTUNE);
             double total = shards * (1 + fortune / 100) * (1 + MiningEffects.value(player, MiningEffects.SHARD_BONUS));
             int count = (int) total + (random.nextDouble() < total % 1 ? 1 : 0);

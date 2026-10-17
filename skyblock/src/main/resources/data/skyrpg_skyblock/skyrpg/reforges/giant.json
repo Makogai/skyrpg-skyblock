@@ -1,0 +1,52 @@
+{
+ "name": "Giant",
+ "modifier": "giant",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 50
+  },
+  "UNCOMMON": {
+   "health": 60
+  },
+  "RARE": {
+   "health": 80
+  },
+  "EPIC": {
+   "health": 120
+  },
+  "LEGENDARY": {
+   "health": 180
+  },
+  "MYTHIC": {
+   "health": 240
+  },
+  "DIVINE": {
+   "health": 300
+  }
+ },
+ "stone": "GIANT_TOOTH",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

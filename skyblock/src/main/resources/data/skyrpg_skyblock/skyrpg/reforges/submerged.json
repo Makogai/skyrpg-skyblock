@@ -1,0 +1,66 @@
+{
+ "name": "Submerged",
+ "modifier": "submerged",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "crit_chance": 2,
+   "fishing_speed": 1,
+   "sea_creature_chance": 0.5
+  },
+  "UNCOMMON": {
+   "crit_chance": 4,
+   "fishing_speed": 1,
+   "sea_creature_chance": 0.6
+  },
+  "RARE": {
+   "crit_chance": 6,
+   "fishing_speed": 2,
+   "sea_creature_chance": 0.7
+  },
+  "EPIC": {
+   "crit_chance": 8,
+   "fishing_speed": 3,
+   "sea_creature_chance": 0.8
+  },
+  "LEGENDARY": {
+   "crit_chance": 10,
+   "fishing_speed": 4,
+   "sea_creature_chance": 0.9
+  },
+  "MYTHIC": {
+   "crit_chance": 12,
+   "fishing_speed": 5,
+   "sea_creature_chance": 1
+  },
+  "DIVINE": {
+   "crit_chance": 14,
+   "fishing_speed": 6,
+   "sea_creature_chance": 1.1
+  }
+ },
+ "stone": "DEEP_SEA_ORB",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

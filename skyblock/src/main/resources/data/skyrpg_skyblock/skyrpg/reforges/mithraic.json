@@ -1,0 +1,52 @@
+{
+ "name": "Mithraic",
+ "modifier": "mithraic",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_fortune": 3
+  },
+  "UNCOMMON": {
+   "mining_fortune": 6
+  },
+  "RARE": {
+   "mining_fortune": 9
+  },
+  "EPIC": {
+   "mining_fortune": 13
+  },
+  "LEGENDARY": {
+   "mining_fortune": 16
+  },
+  "MYTHIC": {
+   "mining_fortune": 20
+  },
+  "DIVINE": {
+   "mining_fortune": 25
+  }
+ },
+ "stone": "PURE_MITHRIL",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §6+50 Mining Fortune §7towards §aMithril §7and §aTitanium§7."
+}

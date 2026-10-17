@@ -1,0 +1,49 @@
+{
+ "name": "Overpriced",
+ "modifier": "overpriced",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 5
+  },
+  "UNCOMMON": {
+   "farming_fortune": 10
+  },
+  "RARE": {
+   "farming_fortune": 15
+  },
+  "EPIC": {
+   "farming_fortune": 20
+  },
+  "LEGENDARY": {
+   "farming_fortune": 25
+  },
+  "MYTHIC": {
+   "farming_fortune": 30
+  },
+  "DIVINE": {
+   "farming_fortune": 35
+  }
+ },
+ "stone": "OVERPRICED_DRINK",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

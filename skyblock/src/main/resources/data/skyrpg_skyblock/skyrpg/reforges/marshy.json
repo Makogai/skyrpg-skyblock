@@ -1,0 +1,68 @@
+{
+ "name": "Marshy",
+ "modifier": "marshy",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fishing_speed": 0.2,
+   "sea_creature_chance": 0.1,
+   "foraging_fortune": 0.5
+  },
+  "UNCOMMON": {
+   "fishing_speed": 0.4,
+   "sea_creature_chance": 0.2,
+   "foraging_fortune": 1
+  },
+  "RARE": {
+   "fishing_speed": 0.6,
+   "sea_creature_chance": 0.3,
+   "foraging_fortune": 1.5
+  },
+  "EPIC": {
+   "fishing_speed": 1,
+   "sea_creature_chance": 0.5,
+   "foraging_fortune": 2.5
+  },
+  "LEGENDARY": {
+   "fishing_speed": 1.4,
+   "sea_creature_chance": 0.7,
+   "foraging_fortune": 3.5
+  },
+  "MYTHIC": {
+   "fishing_speed": 1.8,
+   "sea_creature_chance": 0.9,
+   "foraging_fortune": 4.5
+  },
+  "DIVINE": {
+   "fishing_speed": 2.2,
+   "sea_creature_chance": 1.1,
+   "foraging_fortune": 5.5
+  }
+ },
+ "stone": "MARSHROOM",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Earn §3+1% Forest Whispers §7from §7foraging."
+}

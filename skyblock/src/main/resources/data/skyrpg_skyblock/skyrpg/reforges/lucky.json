@@ -1,0 +1,57 @@
+{
+ "name": "Lucky",
+ "modifier": "lucky",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "sea_creature_chance": 1,
+   "magic_find": 1
+  },
+  "UNCOMMON": {
+   "sea_creature_chance": 2,
+   "magic_find": 2
+  },
+  "RARE": {
+   "sea_creature_chance": 2,
+   "magic_find": 3
+  },
+  "EPIC": {
+   "sea_creature_chance": 3,
+   "magic_find": 4
+  },
+  "LEGENDARY": {
+   "sea_creature_chance": 5,
+   "magic_find": 5
+  },
+  "MYTHIC": {
+   "sea_creature_chance": 7,
+   "magic_find": 6
+  },
+  "DIVINE": {
+   "sea_creature_chance": 8,
+   "magic_find": 7
+  }
+ },
+ "stone": "LUCKY_DICE",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

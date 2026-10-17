@@ -1,0 +1,56 @@
+{
+ "name": "Fierce",
+ "modifier": "fierce",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2.0,
+   "crit_chance": 2.0,
+   "crit_damage": 4.0
+  },
+  "UNCOMMON": {
+   "strength": 4.0,
+   "crit_chance": 3.0,
+   "crit_damage": 7.0
+  },
+  "RARE": {
+   "strength": 6.0,
+   "crit_chance": 4.0,
+   "crit_damage": 10.0
+  },
+  "EPIC": {
+   "strength": 8.0,
+   "crit_chance": 5.0,
+   "crit_damage": 14.0
+  },
+  "LEGENDARY": {
+   "strength": 10.0,
+   "crit_chance": 6.0,
+   "crit_damage": 18.0
+  },
+  "MYTHIC": {
+   "strength": 12.0,
+   "crit_chance": 8.0,
+   "crit_damage": 24.0
+  },
+  "DIVINE": {
+   "strength": 14.0,
+   "crit_chance": 10.0,
+   "crit_damage": 30.0
+  }
+ }
+}

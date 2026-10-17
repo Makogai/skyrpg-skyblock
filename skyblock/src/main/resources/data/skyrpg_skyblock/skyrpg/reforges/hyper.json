@@ -1,0 +1,67 @@
+{
+ "name": "Hyper",
+ "modifier": "warped",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2,
+   "attack_speed": 2,
+   "speed": 1
+  },
+  "UNCOMMON": {
+   "strength": 4,
+   "attack_speed": 3,
+   "speed": 1
+  },
+  "RARE": {
+   "strength": 6,
+   "attack_speed": 4,
+   "speed": 2
+  },
+  "EPIC": {
+   "strength": 7,
+   "attack_speed": 5,
+   "speed": 2
+  },
+  "LEGENDARY": {
+   "strength": 10,
+   "attack_speed": 6,
+   "speed": 3
+  },
+  "MYTHIC": {
+   "strength": 12,
+   "attack_speed": 7,
+   "speed": 3
+  },
+  "DIVINE": {
+   "strength": 14,
+   "attack_speed": 8,
+   "speed": 4
+  }
+ },
+ "stone": "ENDSTONE_GEODE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §f+5 Speed §7for §a5s §7after §7using a §6Transmission §7ability."
+}

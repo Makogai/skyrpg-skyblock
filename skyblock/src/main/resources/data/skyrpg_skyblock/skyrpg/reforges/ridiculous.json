@@ -1,0 +1,64 @@
+{
+ "name": "Ridiculous",
+ "modifier": "ridiculous",
+ "types": [
+  "HELMET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 10,
+   "defense": 10,
+   "crit_chance": 1
+  },
+  "UNCOMMON": {
+   "health": 15,
+   "defense": 15,
+   "crit_chance": 2
+  },
+  "RARE": {
+   "health": 20,
+   "defense": 20,
+   "crit_chance": 3
+  },
+  "EPIC": {
+   "health": 25,
+   "defense": 25,
+   "crit_chance": 4
+  },
+  "LEGENDARY": {
+   "health": 35,
+   "defense": 35,
+   "crit_chance": 5
+  },
+  "MYTHIC": {
+   "health": 50,
+   "defense": 50,
+   "crit_chance": 6
+  },
+  "DIVINE": {
+   "health": 70,
+   "defense": 70,
+   "crit_chance": 7
+  }
+ },
+ "stone": "RED_NOSE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Fart, granting §a+30 Defense §7and §b+50 Mana §7for §a5s§7, but inflicts §9-20% §9 Crit Chance §7for §a20s§7."
+}

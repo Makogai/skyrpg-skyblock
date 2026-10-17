@@ -1,0 +1,57 @@
+{
+ "name": "Greater Spook",
+ "modifier": "greater_spook",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fear": 1
+  },
+  "UNCOMMON": {
+   "fear": 2
+  },
+  "RARE": {
+   "fear": 3
+  },
+  "EPIC": {
+   "fear": 4
+  },
+  "LEGENDARY": {
+   "fear": 5
+  },
+  "MYTHIC": {
+   "fear": 6
+  },
+  "DIVINE": {
+   "fear": 7
+  }
+ },
+ "stone": "BOO_STONE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "items": [
+  "GREAT_SPOOK_HELMET",
+  "GREAT_SPOOK_CHESTPLATE",
+  "GREAT_SPOOK_LEGGINGS",
+  "GREAT_SPOOK_BOOTS",
+  "GREAT_SPOOK_BELT",
+  "GREAT_SPOOK_CLOAK",
+  "GREAT_SPOOK_NECKLACE",
+  "GREAT_SPOOK_GLOVES"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "name": "Fortunate",
+ "modifier": "fortunate",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 1.0,
+   "mining_fortune": 1.0
+  },
+  "UNCOMMON": {
+   "mining_speed": 2.0,
+   "mining_fortune": 1.0
+  },
+  "RARE": {
+   "mining_speed": 3.0,
+   "mining_fortune": 1.0
+  },
+  "EPIC": {
+   "mining_speed": 4.0,
+   "mining_fortune": 2.0
+  },
+  "LEGENDARY": {
+   "mining_speed": 6.0,
+   "mining_fortune": 2.0
+  },
+  "MYTHIC": {
+   "mining_speed": 8.0,
+   "mining_fortune": 3.0
+  },
+  "DIVINE": {
+   "mining_speed": 10.0,
+   "mining_fortune": 4.0
+  }
+ }
+}

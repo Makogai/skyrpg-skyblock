@@ -1,0 +1,45 @@
+{
+ "name": "Erudite",
+ "modifier": "erudite",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "RARE": {
+   "speed": 8
+  },
+  "EPIC": {
+   "speed": 11
+  },
+  "LEGENDARY": {
+   "speed": 15
+  },
+  "MYTHIC": {
+   "speed": 20
+  },
+  "DIVINE": {
+   "speed": 25
+  }
+ },
+ "stone": "DAEDALUS_NOTES",
+ "costs": {
+  "RARE": 500000,
+  "EPIC": 500000,
+  "LEGENDARY": 500000,
+  "MYTHIC": 500000,
+  "DIVINE": 500000
+ },
+ "items": [
+  "DEIFIC_SPADE",
+  "ARCHAIC_SPADE",
+  "ANCESTRAL_SPADE"
+ ],
+ "ability": "§eGriffin Burrow §7chains always consist §7of §a2 §7additional burrows."
+}

@@ -1,0 +1,57 @@
+{
+ "name": "Stained",
+ "modifier": "stained",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 2.0,
+   "defense": 2.0,
+   "crit_chance": 1.0
+  },
+  "UNCOMMON": {
+   "health": 3.0,
+   "defense": 3.0,
+   "crit_chance": 1.0
+  },
+  "RARE": {
+   "health": 4.0,
+   "defense": 4.0,
+   "crit_chance": 2.0
+  },
+  "EPIC": {
+   "health": 5.0,
+   "defense": 5.0,
+   "crit_chance": 2.0
+  },
+  "LEGENDARY": {
+   "health": 5.0,
+   "defense": 6.0,
+   "crit_chance": 3.0
+  },
+  "MYTHIC": {
+   "health": 7.0,
+   "defense": 7.0,
+   "crit_chance": 4.0
+  },
+  "DIVINE": {
+   "health": 9.0,
+   "defense": 9.0,
+   "crit_chance": 5.0
+  }
+ }
+}

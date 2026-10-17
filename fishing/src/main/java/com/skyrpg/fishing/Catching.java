@@ -69,9 +69,9 @@ public final class Catching {
         CastBonus bonus = CastBonus.of(hook);
         double chance = Math.max(0, Stats.get(player, StatTypes.SEA_CREATURE_CHANCE) + bonus.seaCreature()) / 100;
         boolean lava = LavaFishing.inLava(hook);
-        // Never in the hub: it's a safe place.
+        // Never in SkyBlock (the hub is safe, islands have their own sea creatures).
         if (player.getRandom().nextDouble() >= chance || !(hook.isInWater() || lava)
-                || player.level().dimension().identifier().getNamespace().equals("skyrpg_hub")) {
+                || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
             return false;
         }
         boolean spawned = SeaCreatures.surface(hook, player, lava);
@@ -117,7 +117,8 @@ public final class Catching {
         double total = base * (1 + Math.max(0, Stats.get(player, StatTypes.FISHING_FORTUNE) + bonusFortune) / 100)
                 * (1 + FishingEffects.value(player, FishingEffects.SCALE_BONUS));
         int count = (int) total + (player.getRandom().nextDouble() < total % 1 ? 1 : 0);
-        if (count > 0) {
+        // Tidescales are a survival currency: none in SkyBlock.
+        if (count > 0 && !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
             give(player, new ItemStack(FishingItems.TIDESCALE, count));
         }
     }

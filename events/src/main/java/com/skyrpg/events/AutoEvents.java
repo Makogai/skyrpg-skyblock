@@ -15,7 +15,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.storage.LevelResource;
 
 /**
- * Events that start on their own: while at least {@link #MIN_PLAYERS} players are online and nothing is running, a random
+ * Events that start on their own: while at least {@link #MIN_PLAYERS} players are in the survival world (not SkyBlock) and nothing is running, a random
  * event from {@link #ROTATION} starts every 60 to 90 minutes. On by default; {@code /event auto on|off|now}. The switch is
  * saved in the world folder ({@code skyrpg/auto_events.json}).
  */
@@ -46,7 +46,7 @@ public final class AutoEvents {
             if (nextTick < 0) {
                 schedule(now);
             }
-            if (now >= nextTick && ticking.getPlayerList().getPlayerCount() >= MIN_PLAYERS && EventManager.running().isEmpty()) {
+            if (now >= nextTick && EventManager.survivalPlayers().size() >= MIN_PLAYERS && EventManager.running().isEmpty()) {
                 startRandom();
                 schedule(now);
             }

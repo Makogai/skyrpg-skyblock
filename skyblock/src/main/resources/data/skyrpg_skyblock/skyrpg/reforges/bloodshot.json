@@ -1,0 +1,64 @@
+{
+ "name": "Bloodshot",
+ "modifier": "blood_shot",
+ "types": [
+  "BELT"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 1,
+   "crit_chance": 1,
+   "crit_damage": 1
+  },
+  "UNCOMMON": {
+   "strength": 2,
+   "crit_chance": 2,
+   "crit_damage": 2
+  },
+  "RARE": {
+   "strength": 3,
+   "crit_chance": 3,
+   "crit_damage": 3
+  },
+  "EPIC": {
+   "strength": 4,
+   "crit_chance": 4,
+   "crit_damage": 4
+  },
+  "LEGENDARY": {
+   "strength": 5,
+   "crit_chance": 5,
+   "crit_damage": 5
+  },
+  "MYTHIC": {
+   "strength": 6,
+   "crit_chance": 6,
+   "crit_damage": 6
+  },
+  "DIVINE": {
+   "strength": 7,
+   "crit_chance": 7,
+   "crit_damage": 7
+  }
+ },
+ "stone": "SHRIVELED_CORNEA",
+ "costs": {
+  "COMMON": 500000,
+  "UNCOMMON": 500000,
+  "RARE": 500000,
+  "EPIC": 500000,
+  "LEGENDARY": 500000,
+  "MYTHIC": 500000,
+  "DIVINE": 500000
+ },
+ "ability": "§7When killing an enemy, you have a §a2.5% §7chance to cocoon them! §7Cocooned enemies will quickly hatch, §7and can be killed again. §8(Cannot trigger in Dungeons, Kuudra, §8or on Bosses)."
+}

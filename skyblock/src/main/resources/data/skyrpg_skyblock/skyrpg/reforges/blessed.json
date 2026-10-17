@@ -1,0 +1,64 @@
+{
+ "name": "Blessed",
+ "modifier": "blessed",
+ "types": [
+  "FARMING_TOOL"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 5,
+   "speed": 5,
+   "farming_wisdom": 1
+  },
+  "UNCOMMON": {
+   "farming_fortune": 7,
+   "speed": 7,
+   "farming_wisdom": 2
+  },
+  "RARE": {
+   "farming_fortune": 10,
+   "speed": 9,
+   "farming_wisdom": 3
+  },
+  "EPIC": {
+   "farming_fortune": 13,
+   "speed": 13,
+   "farming_wisdom": 4
+  },
+  "LEGENDARY": {
+   "farming_fortune": 16,
+   "speed": 16,
+   "farming_wisdom": 5
+  },
+  "MYTHIC": {
+   "farming_fortune": 20,
+   "speed": 20,
+   "farming_wisdom": 6
+  },
+  "DIVINE": {
+   "farming_fortune": 25,
+   "speed": 25,
+   "farming_wisdom": 7
+  }
+ },
+ "stone": "BLESSED_FRUIT",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7You have a §a0.25% §7chance to find §7enchanted forms of items when §7harvesting §aCrops§7."
+}

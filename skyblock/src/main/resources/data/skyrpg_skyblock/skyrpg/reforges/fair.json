@@ -1,0 +1,70 @@
+{
+ "name": "Fair",
+ "modifier": "fair",
+ "types": [
+  "SWORD",
+  "LONGSWORD",
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2.0,
+   "crit_chance": 2.0,
+   "crit_damage": 2.0,
+   "attack_speed": 2.0,
+   "intelligence": 2.0
+  },
+  "UNCOMMON": {
+   "strength": 3.0,
+   "crit_chance": 3.0,
+   "crit_damage": 3.0,
+   "attack_speed": 3.0,
+   "intelligence": 3.0
+  },
+  "RARE": {
+   "strength": 4.0,
+   "crit_chance": 4.0,
+   "crit_damage": 4.0,
+   "attack_speed": 4.0,
+   "intelligence": 4.0
+  },
+  "EPIC": {
+   "strength": 7.0,
+   "crit_chance": 7.0,
+   "crit_damage": 7.0,
+   "attack_speed": 7.0,
+   "intelligence": 7.0
+  },
+  "LEGENDARY": {
+   "strength": 10.0,
+   "crit_chance": 10.0,
+   "crit_damage": 10.0,
+   "attack_speed": 10.0,
+   "intelligence": 10.0
+  },
+  "MYTHIC": {
+   "strength": 12.0,
+   "crit_chance": 12.0,
+   "crit_damage": 12.0,
+   "attack_speed": 12.0,
+   "intelligence": 12.0
+  },
+  "DIVINE": {
+   "strength": 14.0,
+   "crit_chance": 14.0,
+   "crit_damage": 14.0,
+   "attack_speed": 14.0,
+   "intelligence": 14.0
+  }
+ }
+}

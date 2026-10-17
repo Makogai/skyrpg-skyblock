@@ -1,0 +1,91 @@
+{
+ "name": "Pure",
+ "modifier": "pure",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 2.0,
+   "defense": 2.0,
+   "strength": 2.0,
+   "crit_chance": 2.0,
+   "crit_damage": 2.0,
+   "attack_speed": 1.0,
+   "intelligence": 2.0,
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "health": 3.0,
+   "defense": 3.0,
+   "strength": 3.0,
+   "crit_chance": 4.0,
+   "crit_damage": 3.0,
+   "attack_speed": 1.0,
+   "intelligence": 3.0,
+   "speed": 1.0
+  },
+  "RARE": {
+   "health": 4.0,
+   "defense": 4.0,
+   "strength": 4.0,
+   "crit_chance": 6.0,
+   "crit_damage": 4.0,
+   "attack_speed": 2.0,
+   "intelligence": 4.0,
+   "speed": 1.0
+  },
+  "EPIC": {
+   "health": 6.0,
+   "defense": 6.0,
+   "strength": 6.0,
+   "crit_chance": 8.0,
+   "crit_damage": 6.0,
+   "attack_speed": 3.0,
+   "intelligence": 6.0,
+   "speed": 1.0
+  },
+  "LEGENDARY": {
+   "health": 8.0,
+   "defense": 8.0,
+   "strength": 8.0,
+   "crit_chance": 10.0,
+   "crit_damage": 8.0,
+   "attack_speed": 4.0,
+   "intelligence": 8.0,
+   "speed": 1.0
+  },
+  "MYTHIC": {
+   "health": 10.0,
+   "defense": 10.0,
+   "strength": 10.0,
+   "crit_chance": 12.0,
+   "crit_damage": 10.0,
+   "attack_speed": 5.0,
+   "intelligence": 10.0,
+   "speed": 1.0
+  },
+  "DIVINE": {
+   "health": 12.0,
+   "defense": 12.0,
+   "strength": 12.0,
+   "crit_chance": 14.0,
+   "crit_damage": 12.0,
+   "attack_speed": 6.0,
+   "intelligence": 12.0,
+   "speed": 1.0
+  }
+ }
+}

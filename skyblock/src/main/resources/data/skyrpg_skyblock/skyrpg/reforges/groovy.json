@@ -1,0 +1,52 @@
+{
+ "name": "Groovy",
+ "modifier": "groovy",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "foraging_fortune": 2
+  },
+  "UNCOMMON": {
+   "foraging_fortune": 3
+  },
+  "RARE": {
+   "foraging_fortune": 4
+  },
+  "EPIC": {
+   "foraging_fortune": 5
+  },
+  "LEGENDARY": {
+   "foraging_fortune": 6
+  },
+  "MYTHIC": {
+   "foraging_fortune": 7
+  },
+  "DIVINE": {
+   "foraging_fortune": 8
+  }
+ },
+ "stone": "MANGROVE_GEM",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

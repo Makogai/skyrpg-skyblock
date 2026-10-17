@@ -1,0 +1,57 @@
+{
+ "name": "Pitchin'",
+ "modifier": "pitchin",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fishing_speed": 1,
+   "sea_creature_chance": 1
+  },
+  "UNCOMMON": {
+   "fishing_speed": 2,
+   "sea_creature_chance": 1
+  },
+  "RARE": {
+   "fishing_speed": 4,
+   "sea_creature_chance": 2
+  },
+  "EPIC": {
+   "fishing_speed": 6,
+   "sea_creature_chance": 3
+  },
+  "LEGENDARY": {
+   "fishing_speed": 8,
+   "sea_creature_chance": 4
+  },
+  "MYTHIC": {
+   "fishing_speed": 10,
+   "sea_creature_chance": 5
+  },
+  "DIVINE": {
+   "fishing_speed": 12,
+   "sea_creature_chance": 6
+  }
+ },
+ "stone": "PITCHIN_KOI",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

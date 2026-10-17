@@ -1,0 +1,60 @@
+{
+ "name": "Cubic",
+ "modifier": "cubic",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 5,
+   "strength": 3
+  },
+  "UNCOMMON": {
+   "health": 7,
+   "strength": 5
+  },
+  "RARE": {
+   "health": 10,
+   "strength": 7
+  },
+  "EPIC": {
+   "health": 15,
+   "strength": 10
+  },
+  "LEGENDARY": {
+   "health": 20,
+   "strength": 12
+  },
+  "MYTHIC": {
+   "health": 25,
+   "strength": 15
+  },
+  "DIVINE": {
+   "health": 30,
+   "strength": 18
+  }
+ },
+ "stone": "MOLTEN_CUBE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Take §c-2%  Damage §7from §4 Infernal §7mobs."
+}

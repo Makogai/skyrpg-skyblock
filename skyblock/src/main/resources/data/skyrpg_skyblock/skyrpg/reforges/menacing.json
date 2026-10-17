@@ -1,0 +1,50 @@
+{
+ "name": "Menacing",
+ "modifier": "menacing",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "crit_chance": 1.0,
+   "crit_damage": 2.0
+  },
+  "UNCOMMON": {
+   "crit_chance": 1.0,
+   "crit_damage": 3.0
+  },
+  "RARE": {
+   "crit_chance": 1.0,
+   "crit_damage": 3.0
+  },
+  "EPIC": {
+   "crit_chance": 1.0,
+   "crit_damage": 4.0
+  },
+  "LEGENDARY": {
+   "crit_chance": 2.0,
+   "crit_damage": 4.0
+  },
+  "MYTHIC": {
+   "crit_chance": 2.0,
+   "crit_damage": 5.0
+  },
+  "DIVINE": {
+   "crit_chance": 2.0,
+   "crit_damage": 6.0
+  }
+ }
+}

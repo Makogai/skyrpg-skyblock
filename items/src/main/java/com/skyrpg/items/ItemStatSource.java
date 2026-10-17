@@ -26,7 +26,7 @@ final class ItemStatSource implements Stats.Source {
             ItemDefinition def = SkyItems.definition(player.getItemBySlot(slot));
             // Armour only counts in its own slot (a helmet held in the hand gives nothing).
             if (def != null && SkyItems.armorSlot(def.item()) == slot) {
-                add(def.stats(), out);
+                add(ItemMods.stats(player.getItemBySlot(slot), def), out);
             }
         }
         // Same for accessories: a pendant only counts in its accessory slot.
@@ -34,7 +34,7 @@ final class ItemStatSource implements Stats.Source {
         // A broken tool gives nothing until it is repaired.
         if (held != null && SkyItems.armorSlot(held.item()) == null && AccessorySlot.of(player.getMainHandItem()) == null
                 && !ToolWear.isBroken(player.getMainHandItem())) {
-            add(held.stats(), out);
+            add(ItemMods.stats(player.getMainHandItem(), held), out);
         }
         ItemDefinition shield = SkyItems.offhandShield(player);
         if (shield != null) {

@@ -164,6 +164,10 @@ public final class Harvest {
     }
 
     private static void dew(ServerPlayer player, BlockPos pos, double chance, ServerLevel level) {
+        // Dew is a survival currency: no drops in SkyBlock.
+        if (com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(level)) {
+            return;
+        }
         double bonus = FarmingEffects.value(player, FarmingEffects.DEW_BONUS);
         if (level.isBrightOutside()) {
             bonus += FarmingEffects.value(player, FarmingEffects.SUNLIT);

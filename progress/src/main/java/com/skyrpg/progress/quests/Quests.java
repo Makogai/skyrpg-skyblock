@@ -611,7 +611,7 @@ public final class Quests {
     // ---------------------------------------------------------------- commands
 
     private static LiteralArgumentBuilder<CommandSourceStack> command() {
-        LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("quest").executes(ctx -> list(ctx.getSource().getPlayerOrException()));
+        LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("quest").requires(source -> !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(source.getLevel())).executes(ctx -> list(ctx.getSource().getPlayerOrException()));
         root.then(Commands.literal("list").executes(ctx -> list(ctx.getSource().getPlayerOrException())));
         root.then(Commands.literal("track").executes(ctx -> {
             ServerPlayer player = ctx.getSource().getPlayerOrException();

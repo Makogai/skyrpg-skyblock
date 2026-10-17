@@ -1,0 +1,57 @@
+{
+ "name": "Bulky",
+ "modifier": "bulky",
+ "types": [
+  "SWORD",
+  "LONGSWORD"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 4,
+   "defense": 2
+  },
+  "UNCOMMON": {
+   "health": 6,
+   "defense": 3
+  },
+  "RARE": {
+   "health": 9,
+   "defense": 5
+  },
+  "EPIC": {
+   "health": 12,
+   "defense": 8
+  },
+  "LEGENDARY": {
+   "health": 15,
+   "defense": 13
+  },
+  "MYTHIC": {
+   "health": 20,
+   "defense": 21
+  },
+  "DIVINE": {
+   "health": 25,
+   "defense": 30
+  }
+ },
+ "stone": "BULKY_STONE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

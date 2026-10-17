@@ -1,0 +1,59 @@
+{
+ "name": "Fleet",
+ "modifier": "fleet",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 10,
+   "block_fortune": 25
+  },
+  "UNCOMMON": {
+   "mining_speed": 20,
+   "block_fortune": 30
+  },
+  "RARE": {
+   "mining_speed": 30,
+   "block_fortune": 35
+  },
+  "EPIC": {
+   "mining_speed": 40,
+   "block_fortune": 45
+  },
+  "LEGENDARY": {
+   "mining_speed": 50,
+   "block_fortune": 55
+  },
+  "MYTHIC": {
+   "mining_speed": 75,
+   "block_fortune": 65
+  },
+  "DIVINE": {
+   "mining_speed": 100,
+   "block_fortune": 75
+  }
+ },
+ "stone": "DIAMONITE",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §e+50 Mining Spread §7towards §9Blocks§7."
+}

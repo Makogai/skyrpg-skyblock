@@ -1,0 +1,64 @@
+{
+ "name": "Headstrong",
+ "modifier": "headstrong",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2,
+   "crit_chance": 10,
+   "crit_damage": 4
+  },
+  "UNCOMMON": {
+   "strength": 5,
+   "crit_chance": 11,
+   "crit_damage": 8
+  },
+  "RARE": {
+   "strength": 10,
+   "crit_chance": 12,
+   "crit_damage": 16
+  },
+  "EPIC": {
+   "strength": 16,
+   "crit_chance": 13,
+   "crit_damage": 28
+  },
+  "LEGENDARY": {
+   "strength": 23,
+   "crit_chance": 15,
+   "crit_damage": 42
+  },
+  "MYTHIC": {
+   "strength": 33,
+   "crit_chance": 17,
+   "crit_damage": 60
+  },
+  "DIVINE": {
+   "strength": 45,
+   "crit_chance": 20,
+   "crit_damage": 80
+  }
+ },
+ "stone": "SALMON_OPAL",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Deal §c+8%  Damage §7when hitting a §7mob's head."
+}

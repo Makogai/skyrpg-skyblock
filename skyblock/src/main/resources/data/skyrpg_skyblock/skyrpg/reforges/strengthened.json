@@ -1,0 +1,60 @@
+{
+ "name": "Strengthened",
+ "modifier": "strengthened",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 3,
+   "strength": 2
+  },
+  "UNCOMMON": {
+   "defense": 4,
+   "strength": 3
+  },
+  "RARE": {
+   "defense": 5,
+   "strength": 4
+  },
+  "EPIC": {
+   "defense": 6,
+   "strength": 5
+  },
+  "LEGENDARY": {
+   "defense": 8,
+   "strength": 6
+  },
+  "MYTHIC": {
+   "defense": 10,
+   "strength": 7
+  },
+  "DIVINE": {
+   "defense": 12,
+   "strength": 8
+  }
+ },
+ "stone": "SEARING_STONE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

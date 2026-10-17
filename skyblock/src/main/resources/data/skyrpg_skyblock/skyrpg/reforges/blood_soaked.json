@@ -1,0 +1,64 @@
+{
+ "name": "Blood-Soaked",
+ "modifier": "blood_soaked",
+ "types": [
+  "CLOAK"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 6,
+   "defense": 1,
+   "vitality": 1
+  },
+  "UNCOMMON": {
+   "health": 8,
+   "defense": 2,
+   "vitality": 1
+  },
+  "RARE": {
+   "health": 8,
+   "defense": 3,
+   "vitality": 2
+  },
+  "EPIC": {
+   "health": 9,
+   "defense": 4,
+   "vitality": 2
+  },
+  "LEGENDARY": {
+   "health": 10,
+   "defense": 5,
+   "vitality": 3
+  },
+  "MYTHIC": {
+   "health": 12,
+   "defense": 6,
+   "vitality": 3
+  },
+  "DIVINE": {
+   "health": 14,
+   "defense": 7,
+   "vitality": 4
+  }
+ },
+ "stone": "PRESUMED_GALLON_OF_RED_PAINT",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Adds §d+1 Level §7to your §9Life Steal§7, §9Drain§7, and §9Vampirism §7enchantments."
+}

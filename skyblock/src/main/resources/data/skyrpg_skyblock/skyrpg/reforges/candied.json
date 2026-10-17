@@ -1,0 +1,60 @@
+{
+ "name": "Candied",
+ "modifier": "candied",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 1,
+   "defense": 1
+  },
+  "UNCOMMON": {
+   "health": 2,
+   "defense": 1
+  },
+  "RARE": {
+   "health": 4,
+   "defense": 2
+  },
+  "EPIC": {
+   "health": 6,
+   "defense": 3
+  },
+  "LEGENDARY": {
+   "health": 8,
+   "defense": 4
+  },
+  "MYTHIC": {
+   "health": 10,
+   "defense": 5
+  },
+  "DIVINE": {
+   "health": 12,
+   "defense": 6
+  }
+ },
+ "stone": "CANDY_CORN",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§7Mobs are §a1% §7more likely to drop §7candy during the §6Spooky Festival§7."
+}

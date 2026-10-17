@@ -180,7 +180,8 @@ public final class TitleSystem {
     }
 
     private static void announce(ServerPlayer player, Set<String> earned, boolean firstEquipped) {
-        if (earned.isEmpty()) {
+        // The Titles page is retired in SkyBlock: unlock quietly there.
+        if (earned.isEmpty() || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
             return;
         }
         List<TitleData.Def> list = earned.stream().map(TitleData::get).filter(java.util.Objects::nonNull).toList();
@@ -246,7 +247,7 @@ public final class TitleSystem {
     // ------------------------------------------------------------------ commands
 
     private static com.mojang.brigadier.builder.LiteralArgumentBuilder<CommandSourceStack> command() {
-        var root = Commands.literal("title").executes(ctx -> list(ctx.getSource().getPlayerOrException(), false));
+        var root = Commands.literal("title").requires(source -> !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(source.getLevel())).executes(ctx -> list(ctx.getSource().getPlayerOrException(), false));
         root.then(Commands.literal("list").executes(ctx -> list(ctx.getSource().getPlayerOrException(), false)));
         root.then(Commands.literal("locked").executes(ctx -> list(ctx.getSource().getPlayerOrException(), true)));
         root.then(Commands.literal("clear").executes(ctx -> {

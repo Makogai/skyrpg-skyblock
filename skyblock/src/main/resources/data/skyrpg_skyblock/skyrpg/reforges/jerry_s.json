@@ -1,0 +1,65 @@
+{
+ "name": "Jerry's",
+ "modifier": "jerry_stone",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "UNCOMMON": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "RARE": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "EPIC": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "LEGENDARY": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "MYTHIC": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  },
+  "DIVINE": {
+   "strength": 25,
+   "crit_chance": 10,
+   "crit_damage": 50
+  }
+ },
+ "stone": "JERRY_STONE",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "items": [
+  "ASPECT_OF_THE_JERRY",
+  "ASPECT_OF_THE_JERRY_SIGNATURE"
+ ]
+}

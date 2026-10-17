@@ -1,0 +1,41 @@
+{
+ "name": "Prospector's",
+ "modifier": "prospector",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "speed": 1.0
+  },
+  "UNCOMMON": {
+   "speed": 2.0
+  },
+  "RARE": {
+   "speed": 3.0
+  },
+  "EPIC": {
+   "speed": 5.0
+  },
+  "LEGENDARY": {
+   "speed": 7.0
+  },
+  "MYTHIC": {
+   "speed": 9.0
+  },
+  "DIVINE": {
+   "speed": 11.0
+  }
+ }
+}

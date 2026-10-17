@@ -241,7 +241,7 @@ final class EventManager {
             announce(audience(event), go);
             Component line = Notice.of(Notice.Kind.EVENT).tag("STARTED").color(rgb(spec.color())).build(Component.literal(spec.name()).withColor(rgb(spec.color()))
                     .append(Msg.text(" has started! " + Json.clock(spec.durationSeconds()) + " on the clock.", ChatFormatting.GRAY)));
-            server.getPlayerList().getPlayers().forEach(player -> player.sendSystemMessage(line));
+            survivalPlayers().forEach(player -> player.sendSystemMessage(line));
         }
     }
 
@@ -371,7 +371,7 @@ final class EventManager {
                 if (event.spec().participation() == EventSpec.Participation.OPT_IN) {
                     line.append(joinButton(event));
                 }
-                server.getPlayerList().getPlayers().forEach(player -> player.sendSystemMessage(line));
+                survivalPlayers().forEach(player -> player.sendSystemMessage(line));
             }
         }
         if (seconds <= 5 && seconds < event.lastCountdown) {
@@ -467,12 +467,18 @@ final class EventManager {
 
     // ---------------------------------------------------------------- what players see and hear
 
-    /** Who hears about an event while it runs: everyone, or only those who joined. */
+    /** Players outside SkyBlock: event banners and chat are for them only (SkyBlock has its own calendar). */
+    static List<ServerPlayer> survivalPlayers() {
+        return server == null ? List.of() : server.getPlayerList().getPlayers().stream()
+                .filter(player -> !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())).toList();
+    }
+
+    /** Who hears about an event while it runs: everyone outside SkyBlock, or only those who joined. */
     private static List<ServerPlayer> audience(ActiveEvent event) {
         if (server == null) {
             return List.of();
         }
-        return server.getPlayerList().getPlayers().stream().filter(event::participates).toList();
+        return survivalPlayers().stream().filter(event::participates).toList();
     }
 
     private static Component joinButton(ActiveEvent event) {
@@ -517,7 +523,7 @@ final class EventManager {
         }
         chat.add(Component.empty());
 
-        List<ServerPlayer> players = server.getPlayerList().getPlayers();
+        List<ServerPlayer> players = survivalPlayers();
         announce(players, banner);
         players.forEach(player -> chat.forEach(player::sendSystemMessage));
     }

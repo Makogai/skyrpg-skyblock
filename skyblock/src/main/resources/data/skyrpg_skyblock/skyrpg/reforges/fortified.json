@@ -1,0 +1,53 @@
+{
+ "name": "Fortified",
+ "modifier": "fortified",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 12
+  },
+  "UNCOMMON": {
+   "defense": 14
+  },
+  "RARE": {
+   "defense": 17
+  },
+  "EPIC": {
+   "defense": 20
+  },
+  "LEGENDARY": {
+   "defense": 25
+  },
+  "MYTHIC": {
+   "defense": 30
+  },
+  "DIVINE": {
+   "defense": 35
+  }
+ },
+ "stone": "METEOR_SHARD",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

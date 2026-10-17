@@ -1,0 +1,53 @@
+{
+ "name": "Unreal",
+ "modifier": "unreal",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 3.0,
+   "crit_chance": 8.0,
+   "crit_damage": 5.0
+  },
+  "UNCOMMON": {
+   "strength": 7.0,
+   "crit_chance": 9.0,
+   "crit_damage": 10.0
+  },
+  "RARE": {
+   "strength": 12.0,
+   "crit_chance": 10.0,
+   "crit_damage": 18.0
+  },
+  "EPIC": {
+   "strength": 18.0,
+   "crit_chance": 11.0,
+   "crit_damage": 32.0
+  },
+  "LEGENDARY": {
+   "strength": 25.0,
+   "crit_chance": 13.0,
+   "crit_damage": 50.0
+  },
+  "MYTHIC": {
+   "strength": 34.0,
+   "crit_chance": 15.0,
+   "crit_damage": 70.0
+  },
+  "DIVINE": {
+   "strength": 43.0,
+   "crit_chance": 17.0,
+   "crit_damage": 90.0
+  }
+ }
+}

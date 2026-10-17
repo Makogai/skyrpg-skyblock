@@ -1,0 +1,52 @@
+{
+ "name": "Ambered",
+ "modifier": "ambered",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 25
+  },
+  "UNCOMMON": {
+   "mining_speed": 35
+  },
+  "RARE": {
+   "mining_speed": 50
+  },
+  "EPIC": {
+   "mining_speed": 75
+  },
+  "LEGENDARY": {
+   "mining_speed": 100
+  },
+  "MYTHIC": {
+   "mining_speed": 150
+  },
+  "DIVINE": {
+   "mining_speed": 200
+  }
+ },
+ "stone": "AMBER_MATERIAL",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Find §6Goblins §7from mining §a40% §7more §7often."
+}

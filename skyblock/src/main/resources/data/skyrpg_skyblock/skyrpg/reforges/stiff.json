@@ -1,0 +1,58 @@
+{
+ "name": "Stiff",
+ "modifier": "stiff",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2,
+   "sea_creature_chance": 1
+  },
+  "UNCOMMON": {
+   "strength": 4,
+   "sea_creature_chance": 2
+  },
+  "RARE": {
+   "strength": 6,
+   "sea_creature_chance": 2
+  },
+  "EPIC": {
+   "strength": 8,
+   "sea_creature_chance": 3
+  },
+  "LEGENDARY": {
+   "strength": 10,
+   "sea_creature_chance": 5
+  },
+  "MYTHIC": {
+   "strength": 12,
+   "sea_creature_chance": 7
+  },
+  "DIVINE": {
+   "strength": 14,
+   "sea_creature_chance": 9
+  }
+ },
+ "stone": "HARDENED_WOOD",
+ "costs": {
+  "COMMON": 25000,
+  "UNCOMMON": 25000,
+  "RARE": 25000,
+  "EPIC": 25000,
+  "LEGENDARY": 25000,
+  "MYTHIC": 25000,
+  "DIVINE": 25000
+ },
+ "ability": "§3Sea Creatures §7killed with this §bFishing §bRod §7drop §a+1 Chum§7."
+}

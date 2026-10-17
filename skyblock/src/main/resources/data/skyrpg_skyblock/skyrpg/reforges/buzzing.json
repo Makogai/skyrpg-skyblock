@@ -1,0 +1,50 @@
+{
+ "name": "Buzzing",
+ "modifier": "buzzing",
+ "types": [
+  "VACUUM"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 2
+  },
+  "UNCOMMON": {
+   "farming_fortune": 3
+  },
+  "RARE": {
+   "farming_fortune": 5
+  },
+  "EPIC": {
+   "farming_fortune": 7
+  },
+  "LEGENDARY": {
+   "farming_fortune": 9
+  },
+  "MYTHIC": {
+   "farming_fortune": 11
+  },
+  "DIVINE": {
+   "farming_fortune": 13
+  }
+ },
+ "stone": "CLIPPED_WINGS",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7This item deals §cx2 Damage §7towards §2 Pests§7."
+}

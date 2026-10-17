@@ -1,0 +1,128 @@
+package com.skyrpg.skyblock.reforge;
+
+import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemMods;
+import com.skyrpg.items.Rarity;
+import com.skyrpg.items.SkyItems;
+import com.skyrpg.items.reforge.Reforges;
+import java.util.List;
+import java.util.Set;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.ItemStack;
+
+/**
+ * What the Blacksmith and the anvil do to an item, worked out the same way on both sides (the screen previews it, the
+ * server does it):
+ * <ul>
+ *   <li>Reforge (the Blacksmith): a random reforge of his for coins by rarity, never the one it has; or the reforge of a
+ *       reforge stone in the second slot, for that stone's price.</li>
+ *   <li>Anvil: a Recombobulator 3000 (one rarity up, once), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to
+ *       15 in all) on the item in the first slot.</li>
+ * </ul>
+ */
+public final class ItemWork {
+    public enum Mode { REFORGE, ANVIL }
+
+    public static final String RECOMBOBULATOR = "RECOMBOBULATOR_3000";
+    public static final String HOT_POTATO_BOOK = "HOT_POTATO_BOOK";
+    public static final String FUMING_POTATO_BOOK = "FUMING_POTATO_BOOK";
+
+    /** Hypixel's Blacksmith prices for a random reforge, by rarity. */
+    private static final long[] REFORGE_COST = {250, 500, 1_000, 2_500, 5_000, 10_000, 15_000, 25_000, 50_000, 50_000, 50_000};
+    /** What a Recombobulator 3000 can go on. */
+    private static final Set<String> RECOMBOBULATES = Set.of("SWORD", "LONGSWORD", "BOW", "FISHING_WEAPON", "FISHING_ROD", "HELMET",
+            "CHESTPLATE", "LEGGINGS", "BOOTS", "NECKLACE", "CLOAK", "BELT", "GLOVES", "BRACELET", "ACCESSORY", "PICKAXE", "DRILL",
+            "GAUNTLET", "AXE", "FARMING_TOOL", "WAND", "SPADE", "SHEARS", "VACUUM", "DEPLOYABLE");
+
+    /**
+     * What pressing the button would do. {@code result} is the item afterwards (null for a random reforge, which isn't
+     * known yet, or when it can't be done); {@code problem} says why not ("" when it can).
+     */
+    public record Preview(ItemStack result, long coins, String action, String problem) {
+        public boolean ok() {
+            return problem.isEmpty();
+        }
+    }
+
+    private ItemWork() {
+    }
+
+    public static Preview preview(Mode mode, ItemStack item, ItemStack extra) {
+        if (item.isEmpty()) {
+            return new Preview(null, 0, "", mode == Mode.REFORGE ? "Place an item to reforge" : "Place an item to upgrade");
+        }
+        ItemDefinition def = SkyItems.definition(item);
+        if (def == null || !def.skyblock()) {
+            return new Preview(null, 0, "", "That isn't a SkyBlock item");
+        }
+        Rarity rarity = ItemMods.rarity(item, def);
+        return mode == Mode.REFORGE ? reforge(item, def, rarity, extra) : anvil(item, def, extra);
+    }
+
+    private static Preview reforge(ItemStack item, ItemDefinition def, Rarity rarity, ItemStack stone) {
+        if (!stone.isEmpty()) {
+            Reforges.Reforge reforge = Reforges.byStone(SkyItems.skyblockId(stone));
+            if (reforge == null) {
+                return new Preview(null, 0, "", "That isn't a reforge stone");
+            }
+            if (!reforge.fits(def, rarity)) {
+                return new Preview(null, 0, reforge.name(), "The " + reforge.name() + " reforge doesn't fit this item");
+            }
+            ItemStack result = item.copy();
+            ItemMods.setReforge(result, reforge);
+            return new Preview(result, reforge.costAt(rarity), reforge.name(), "");
+        }
+        List<Reforges.Reforge> options = Reforges.blacksmith(def, rarity);
+        if (options.isEmpty()) {
+            return new Preview(null, 0, "", "This item can't be reforged");
+        }
+        return new Preview(null, REFORGE_COST[Math.min(rarity.ordinal(), REFORGE_COST.length - 1)], "Random reforge", "");
+    }
+
+    private static Preview anvil(ItemStack item, ItemDefinition def, ItemStack extra) {
+        if (extra.isEmpty()) {
+            return new Preview(null, 0, "", "Add a Recombobulator 3000 or a Potato Book");
+        }
+        String id = SkyItems.skyblockId(extra);
+        String category = Reforges.category(def);
+        ItemStack result = item.copy();
+        if (RECOMBOBULATOR.equals(id)) {
+            if (ItemMods.recombobulated(item)) {
+                return new Preview(null, 0, "Recombobulate", "This item is already recombobulated");
+            }
+            if (category == null || !RECOMBOBULATES.contains(category) || ItemMods.upgraded(def.rarity()) == def.rarity()) {
+                return new Preview(null, 0, "Recombobulate", "This item can't be recombobulated");
+            }
+            ItemMods.recombobulate(result);
+            return new Preview(result, 0, "Recombobulate", "");
+        }
+        boolean fuming = FUMING_POTATO_BOOK.equals(id);
+        if (HOT_POTATO_BOOK.equals(id) || fuming) {
+            String action = fuming ? "Fuming Potato Book" : "Hot Potato Book";
+            if (!ItemMods.takesPotatoBooks(def)) {
+                return new Preview(null, 0, action, "Potato Books only go on weapons, rods and armour");
+            }
+            int books = ItemMods.hotPotatoBooks(item);
+            if (books >= (fuming ? ItemMods.FUMING_MAX : ItemMods.HOT_POTATO_MAX)) {
+                return new Preview(null, 0, action, fuming ? "This item has all 15 Potato Books" : "This item has 10 Hot Potato Books: use Fuming ones now");
+            }
+            ItemMods.addPotatoBook(result);
+            return new Preview(result, 0, action, "");
+        }
+        return new Preview(null, 0, "", "That can't be combined with this item");
+    }
+
+    /** A random Blacksmith reforge for this item, never the one it already has (unless it's the only one). */
+    public static Reforges.Reforge roll(ItemStack item, RandomSource random) {
+        ItemDefinition def = SkyItems.definition(item);
+        if (def == null) {
+            return null;
+        }
+        List<Reforges.Reforge> options = new java.util.ArrayList<>(Reforges.blacksmith(def, ItemMods.rarity(item, def)));
+        Reforges.Reforge current = ItemMods.reforge(item);
+        if (options.size() > 1) {
+            options.remove(current);
+        }
+        return options.isEmpty() ? null : options.get(random.nextInt(options.size()));
+    }
+}

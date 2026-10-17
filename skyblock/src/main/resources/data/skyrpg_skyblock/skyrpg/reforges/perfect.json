@@ -1,0 +1,53 @@
+{
+ "name": "Perfect",
+ "modifier": "perfect",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 25
+  },
+  "UNCOMMON": {
+   "defense": 35
+  },
+  "RARE": {
+   "defense": 50
+  },
+  "EPIC": {
+   "defense": 65
+  },
+  "LEGENDARY": {
+   "defense": 80
+  },
+  "MYTHIC": {
+   "defense": 110
+  },
+  "DIVINE": {
+   "defense": 140
+  }
+ },
+ "stone": "DIAMOND_ATOM",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §a+2%  Defense§7."
+}

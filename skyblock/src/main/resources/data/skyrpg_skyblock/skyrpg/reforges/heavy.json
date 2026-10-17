@@ -1,0 +1,56 @@
+{
+ "name": "Heavy",
+ "modifier": "heavy",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 25.0,
+   "crit_damage": -1.0,
+   "speed": -1.0
+  },
+  "UNCOMMON": {
+   "defense": 35.0,
+   "crit_damage": -2.0,
+   "speed": -1.0
+  },
+  "RARE": {
+   "defense": 50.0,
+   "crit_damage": -2.0,
+   "speed": -1.0
+  },
+  "EPIC": {
+   "defense": 65.0,
+   "crit_damage": -3.0,
+   "speed": -1.0
+  },
+  "LEGENDARY": {
+   "defense": 80.0,
+   "crit_damage": -5.0,
+   "speed": -1.0
+  },
+  "MYTHIC": {
+   "defense": 110.0,
+   "crit_damage": -7.0,
+   "speed": -1.0
+  },
+  "DIVINE": {
+   "defense": 140.0,
+   "crit_damage": -9.0,
+   "speed": -1.0
+  }
+ }
+}

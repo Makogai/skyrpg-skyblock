@@ -191,7 +191,7 @@ public final class SkyItems {
         } else {
             apply(stack, DataComponents.UNBREAKABLE, Unit.INSTANCE);
         }
-        apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def));
+        apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def, def.stat(StatTypes.DAMAGE)));
         apply(stack, DataComponents.TOOLTIP_DISPLAY, TOOLTIP);
         apply(stack, DataComponents.ENCHANTMENT_GLINT_OVERRIDE, def.glint() ? Boolean.TRUE : null);
         return true;
@@ -202,14 +202,14 @@ public final class SkyItems {
      * they still stack). Like on Hypixel nothing wears out.
      */
     private static void normalizeSkyblock(ItemStack stack, ItemDefinition def) {
-        apply(stack, DataComponents.ITEM_NAME, Component.literal(def.name()).withColor(def.rarity().color()));
+        apply(stack, DataComponents.ITEM_NAME, Component.literal(ItemMods.name(stack, def)).withColor(ItemMods.rarity(stack, def).color()));
         if (def.item().components().has(DataComponents.MAX_DAMAGE)) {
             apply(stack, DataComponents.UNBREAKABLE, Unit.INSTANCE);
         }
         if (def.item().getDefaultMaxStackSize() > 1 && unstackable(def)) {
             apply(stack, DataComponents.MAX_STACK_SIZE, 1);
         }
-        apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def));
+        apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def, ItemMods.stats(stack, def).getOrDefault(StatTypes.DAMAGE, 0.0)));
         apply(stack, DataComponents.TOOLTIP_DISPLAY, TOOLTIP);
         apply(stack, DataComponents.ENCHANTMENT_GLINT_OVERRIDE, def.glint() ? Boolean.TRUE : null);
     }
@@ -300,12 +300,11 @@ public final class SkyItems {
      * "damage" stat get it as attack damage (5 damage = 1 vanilla point, like health) and keep their
      * item's attack speed. Anything else keeps its item's own attributes.
      */
-    private static ItemAttributeModifiers attributes(ItemDefinition def) {
+    private static ItemAttributeModifiers attributes(ItemDefinition def, double damage) {
         if (armorSlot(def.item()) != null) {
             return ItemAttributeModifiers.EMPTY;
         }
         ItemAttributeModifiers base = def.item().components().getOrDefault(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.EMPTY);
-        double damage = def.stat(StatTypes.DAMAGE);
         // A bow's damage is for its arrows; hitting with the bow itself stays a poke.
         if (damage <= 0 || ModItems.kind(def.item()) == ModItems.Kind.BOW) {
             return base;

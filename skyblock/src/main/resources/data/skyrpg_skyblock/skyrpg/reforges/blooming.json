@@ -1,0 +1,60 @@
+{
+ "name": "Blooming",
+ "modifier": "blooming",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "farming_fortune": 1,
+   "speed": 4
+  },
+  "UNCOMMON": {
+   "farming_fortune": 2,
+   "speed": 4
+  },
+  "RARE": {
+   "farming_fortune": 3,
+   "speed": 5
+  },
+  "EPIC": {
+   "farming_fortune": 4,
+   "speed": 5
+  },
+  "LEGENDARY": {
+   "farming_fortune": 5,
+   "speed": 6
+  },
+  "MYTHIC": {
+   "farming_fortune": 6,
+   "speed": 6
+  },
+  "DIVINE": {
+   "farming_fortune": 7,
+   "speed": 7
+  }
+ },
+ "stone": "FLOWERING_BOUQUET",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "name": "Mantid",
+ "modifier": "mantid",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "bonus_pest_chance": 0.5,
+   "farming_fortune": 2
+  },
+  "UNCOMMON": {
+   "bonus_pest_chance": 0.5,
+   "farming_fortune": 4
+  },
+  "RARE": {
+   "bonus_pest_chance": 1,
+   "farming_fortune": 6
+  },
+  "EPIC": {
+   "bonus_pest_chance": 1.5,
+   "farming_fortune": 8
+  },
+  "LEGENDARY": {
+   "bonus_pest_chance": 2,
+   "farming_fortune": 10
+  },
+  "MYTHIC": {
+   "bonus_pest_chance": 2.5,
+   "farming_fortune": 12
+  },
+  "DIVINE": {
+   "bonus_pest_chance": 3,
+   "farming_fortune": 14
+  }
+ },
+ "stone": "MANTID_CLAW",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §2+0.25 Bonus Pest Chance §7per §2 Pest §7killed for §a10 minutes§7. §7Caps at §25 Bonus Pest Chance§7."
+}

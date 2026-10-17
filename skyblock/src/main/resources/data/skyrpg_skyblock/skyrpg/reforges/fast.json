@@ -1,0 +1,42 @@
+{
+ "name": "Fast",
+ "modifier": "fast",
+ "types": [
+  "SWORD",
+  "LONGSWORD",
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "attack_speed": 10.0
+  },
+  "UNCOMMON": {
+   "attack_speed": 20.0
+  },
+  "RARE": {
+   "attack_speed": 30.0
+  },
+  "EPIC": {
+   "attack_speed": 40.0
+  },
+  "LEGENDARY": {
+   "attack_speed": 50.0
+  },
+  "MYTHIC": {
+   "attack_speed": 60.0
+  },
+  "DIVINE": {
+   "attack_speed": 70.0
+  }
+ }
+}

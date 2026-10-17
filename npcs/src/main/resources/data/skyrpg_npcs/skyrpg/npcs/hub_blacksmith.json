@@ -1,0 +1,24 @@
+{
+  "name": "Blacksmith",
+  "role": "Reforging",
+  "color": "#FF8A3D",
+  "hint": "Reforge",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    24.5,
+    69.0,
+    -32.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "A reforge changes an item's bonus stats. Let me have a look.",
+    "Bring me a reforge stone and I'll work it into your gear."
+  ],
+  "action": {
+    "type": "reforge",
+    "params": {}
+  }
+}

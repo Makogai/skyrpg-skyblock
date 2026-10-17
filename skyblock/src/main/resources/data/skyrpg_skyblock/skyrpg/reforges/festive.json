@@ -1,0 +1,66 @@
+{
+ "name": "Festive",
+ "modifier": "festive",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "intelligence": 5,
+   "fishing_speed": 2,
+   "sea_creature_chance": 0.05
+  },
+  "UNCOMMON": {
+   "intelligence": 10,
+   "fishing_speed": 3,
+   "sea_creature_chance": 0.05
+  },
+  "RARE": {
+   "intelligence": 15,
+   "fishing_speed": 4,
+   "sea_creature_chance": 0.1
+  },
+  "EPIC": {
+   "intelligence": 20,
+   "fishing_speed": 6,
+   "sea_creature_chance": 0.15
+  },
+  "LEGENDARY": {
+   "intelligence": 25,
+   "fishing_speed": 8,
+   "sea_creature_chance": 0.2
+  },
+  "MYTHIC": {
+   "intelligence": 30,
+   "fishing_speed": 10,
+   "sea_creature_chance": 0.25
+  },
+  "DIVINE": {
+   "intelligence": 35,
+   "fishing_speed": 12,
+   "sea_creature_chance": 0.3
+  }
+ },
+ "stone": "FROZEN_BAUBLE",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

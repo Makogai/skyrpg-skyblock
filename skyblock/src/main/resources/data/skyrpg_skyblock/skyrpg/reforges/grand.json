@@ -1,0 +1,39 @@
+{
+ "name": "Grand",
+ "modifier": "grand",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 25.0
+  },
+  "UNCOMMON": {
+   "strength": 32.0
+  },
+  "RARE": {
+   "strength": 40.0
+  },
+  "EPIC": {
+   "strength": 50.0
+  },
+  "LEGENDARY": {
+   "strength": 60.0
+  },
+  "MYTHIC": {
+   "strength": 70.0
+  },
+  "DIVINE": {
+   "strength": 80.0
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "name": "Jaded",
+ "modifier": "jaded",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_speed": 5,
+   "mining_fortune": 5
+  },
+  "UNCOMMON": {
+   "mining_speed": 12,
+   "mining_fortune": 10
+  },
+  "RARE": {
+   "mining_speed": 20,
+   "mining_fortune": 15
+  },
+  "EPIC": {
+   "mining_speed": 30,
+   "mining_fortune": 20
+  },
+  "LEGENDARY": {
+   "mining_speed": 45,
+   "mining_fortune": 25
+  },
+  "MYTHIC": {
+   "mining_speed": 60,
+   "mining_fortune": 30
+  },
+  "DIVINE": {
+   "mining_speed": 75,
+   "mining_fortune": 35
+  }
+ },
+ "stone": "JADERALD",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "name": "Titanic",
+ "modifier": "titanic",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 10.0,
+   "defense": 10.0
+  },
+  "UNCOMMON": {
+   "health": 15.0,
+   "defense": 15.0
+  },
+  "RARE": {
+   "health": 20.0,
+   "defense": 20.0
+  },
+  "EPIC": {
+   "health": 25.0,
+   "defense": 25.0
+  },
+  "LEGENDARY": {
+   "health": 35.0,
+   "defense": 35.0
+  },
+  "MYTHIC": {
+   "health": 50.0,
+   "defense": 50.0
+  },
+  "DIVINE": {
+   "health": 65.0,
+   "defense": 65.0
+  }
+ }
+}

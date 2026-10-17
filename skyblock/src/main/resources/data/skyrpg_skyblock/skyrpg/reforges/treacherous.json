@@ -1,0 +1,65 @@
+{
+ "name": "Treacherous",
+ "modifier": "treacherous",
+ "types": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 5,
+   "sea_creature_chance": 0.5,
+   "treasure_chance": 0.1
+  },
+  "UNCOMMON": {
+   "strength": 10,
+   "sea_creature_chance": 1,
+   "treasure_chance": 0.2
+  },
+  "RARE": {
+   "strength": 15,
+   "sea_creature_chance": 1.5,
+   "treasure_chance": 0.3
+  },
+  "EPIC": {
+   "strength": 20,
+   "sea_creature_chance": 2,
+   "treasure_chance": 0.4
+  },
+  "LEGENDARY": {
+   "strength": 25,
+   "sea_creature_chance": 2.5,
+   "treasure_chance": 0.6
+  },
+  "MYTHIC": {
+   "strength": 30,
+   "sea_creature_chance": 3.5,
+   "treasure_chance": 0.8
+  },
+  "DIVINE": {
+   "strength": 35,
+   "sea_creature_chance": 5.5,
+   "treasure_chance": 1
+  }
+ },
+ "stone": "RUSTY_ANCHOR",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Earn §b+20% Ice Essence §7from §6§lTREASURE §7catches."
+}

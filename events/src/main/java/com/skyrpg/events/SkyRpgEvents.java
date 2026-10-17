@@ -66,6 +66,7 @@ public class SkyRpgEvents implements ModInitializer {
             EventCommands.register(dispatcher);
             // /contracts: today's board; /contracts new: a fresh set now (admin).
             dispatcher.register(Commands.literal("contracts")
+                    .requires(source -> !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(source.getLevel()))
                     .executes(ctx -> {
                         ctx.getSource().sendSuccess(() -> Component.literal("Today's contracts: " + String.join(", ", Contracts.names())), false);
                         return 1;

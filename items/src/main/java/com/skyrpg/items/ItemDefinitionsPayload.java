@@ -22,7 +22,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.Identifier;
 
 /**
- * Sends the server's item and set definitions to a client, as the original JSON, so tooltips can be built
+ * Sends the server's item and set definitions (and reforges) to a client, as the original JSON, so tooltips can be built
  * from them by the same parsing code. Sent on join and after every /reload.
  * <p>
  * With every SkyBlock item that's megabytes of JSON, so it goes gzipped and split into parts under the 1 MB
@@ -50,6 +50,7 @@ public record ItemDefinitionsPayload(int part, int parts, byte[] data) implement
         JsonObject all = new JsonObject();
         all.add("items", items);
         all.add("sets", sets);
+        all.add("reforges", com.skyrpg.items.reforge.Reforges.toJson());
         byte[] zipped = gzip(all.toString().getBytes(StandardCharsets.UTF_8));
         int parts = Math.max(1, (zipped.length + PART_SIZE - 1) / PART_SIZE);
         List<ItemDefinitionsPayload> out = new ArrayList<>(parts);
@@ -79,6 +80,9 @@ public record ItemDefinitionsPayload(int part, int parts, byte[] data) implement
         received.clear();
         JsonObject all = JsonParser.parseString(new String(gunzip(joined.toByteArray()), StandardCharsets.UTF_8)).getAsJsonObject();
         ItemRegistry.replace(parse(all.getAsJsonObject("items")), parse(all.getAsJsonObject("sets")));
+        if (all.has("reforges")) {
+            com.skyrpg.items.reforge.Reforges.load(parse(all.getAsJsonObject("reforges")));
+        }
     }
 
     private static Map<Identifier, JsonElement> parse(JsonObject files) {

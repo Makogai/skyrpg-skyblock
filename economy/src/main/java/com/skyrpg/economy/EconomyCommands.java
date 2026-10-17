@@ -42,6 +42,7 @@ final class EconomyCommands {
                 .then(adminCommand("set", Purse::set)));
 
         dispatcher.register(Commands.literal("pay")
+                .requires(source -> !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(source.getLevel()))
                 .then(Commands.argument("player", EntityArgument.player())
                         .then(Commands.argument("amount", LongArgumentType.longArg(1))
                                 .executes(EconomyCommands::pay))));

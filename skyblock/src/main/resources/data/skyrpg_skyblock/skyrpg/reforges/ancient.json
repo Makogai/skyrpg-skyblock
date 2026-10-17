@@ -1,0 +1,81 @@
+{
+ "name": "Ancient",
+ "modifier": "ancient",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 7,
+   "defense": 7,
+   "strength": 4,
+   "crit_chance": 3,
+   "intelligence": 6
+  },
+  "UNCOMMON": {
+   "health": 7,
+   "defense": 7,
+   "strength": 8,
+   "crit_chance": 5,
+   "intelligence": 9
+  },
+  "RARE": {
+   "health": 7,
+   "defense": 7,
+   "strength": 12,
+   "crit_chance": 7,
+   "intelligence": 12
+  },
+  "EPIC": {
+   "health": 7,
+   "defense": 7,
+   "strength": 18,
+   "crit_chance": 9,
+   "intelligence": 16
+  },
+  "LEGENDARY": {
+   "health": 7,
+   "defense": 7,
+   "strength": 25,
+   "crit_chance": 12,
+   "intelligence": 20
+  },
+  "MYTHIC": {
+   "health": 7,
+   "defense": 7,
+   "strength": 35,
+   "crit_chance": 15,
+   "intelligence": 25
+  },
+  "DIVINE": {
+   "health": 7,
+   "defense": 7,
+   "strength": 50,
+   "crit_chance": 20,
+   "intelligence": 30
+  }
+ },
+ "stone": "PRECURSOR_GEAR",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §9+1 Crit Damage §7per §cCatacombs §7skill level you have."
+}

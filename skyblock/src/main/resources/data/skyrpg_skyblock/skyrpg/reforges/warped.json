@@ -1,0 +1,57 @@
+{
+ "name": "Warped",
+ "modifier": "aote_stone",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "damage": 165,
+   "strength": 165
+  },
+  "UNCOMMON": {
+   "damage": 165,
+   "strength": 165
+  },
+  "RARE": {
+   "damage": 165,
+   "strength": 165,
+   "intelligence": 65
+  },
+  "EPIC": {
+   "damage": 165,
+   "strength": 165,
+   "intelligence": 100
+  },
+  "LEGENDARY": {
+   "damage": 165,
+   "strength": 165,
+   "intelligence": 150
+  },
+  "MYTHIC": {
+   "damage": 165,
+   "strength": 165,
+   "intelligence": 150
+  }
+ },
+ "stone": "AOTE_STONE",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000
+ },
+ "items": [
+  "ASPECT_OF_THE_END",
+  "ASPECT_OF_THE_VOID"
+ ]
+}

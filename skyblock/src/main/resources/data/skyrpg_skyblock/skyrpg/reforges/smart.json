@@ -1,0 +1,56 @@
+{
+ "name": "Smart",
+ "modifier": "smart",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 4.0,
+   "defense": 4.0,
+   "intelligence": 20.0
+  },
+  "UNCOMMON": {
+   "health": 6.0,
+   "defense": 6.0,
+   "intelligence": 40.0
+  },
+  "RARE": {
+   "health": 9.0,
+   "defense": 9.0,
+   "intelligence": 60.0
+  },
+  "EPIC": {
+   "health": 12.0,
+   "defense": 12.0,
+   "intelligence": 80.0
+  },
+  "LEGENDARY": {
+   "health": 15.0,
+   "defense": 15.0,
+   "intelligence": 100.0
+  },
+  "MYTHIC": {
+   "health": 20.0,
+   "defense": 20.0,
+   "intelligence": 120.0
+  },
+  "DIVINE": {
+   "health": 25.0,
+   "defense": 25.0,
+   "intelligence": 140.0
+  }
+ }
+}

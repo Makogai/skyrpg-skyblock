@@ -1,0 +1,60 @@
+{
+ "name": "Empowered",
+ "modifier": "empowered",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 10,
+   "defense": 10
+  },
+  "UNCOMMON": {
+   "health": 15,
+   "defense": 15
+  },
+  "RARE": {
+   "health": 20,
+   "defense": 20
+  },
+  "EPIC": {
+   "health": 25,
+   "defense": 25
+  },
+  "LEGENDARY": {
+   "health": 35,
+   "defense": 35
+  },
+  "MYTHIC": {
+   "health": 50,
+   "defense": 50
+  },
+  "DIVINE": {
+   "health": 70,
+   "defense": 70
+  }
+ },
+ "stone": "SADAN_BROOCH",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §a+10 Mending §7while in  §cDungeons§7."
+}

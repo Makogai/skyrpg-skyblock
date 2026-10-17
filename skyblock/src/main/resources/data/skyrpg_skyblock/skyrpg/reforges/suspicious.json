@@ -1,0 +1,64 @@
+{
+ "name": "Suspicious",
+ "modifier": "suspicious",
+ "types": [
+  "SWORD",
+  "LONGSWORD"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "damage": 5,
+   "crit_chance": 1,
+   "crit_damage": 30
+  },
+  "UNCOMMON": {
+   "damage": 7,
+   "crit_chance": 2,
+   "crit_damage": 40
+  },
+  "RARE": {
+   "damage": 9,
+   "crit_chance": 3,
+   "crit_damage": 50
+  },
+  "EPIC": {
+   "damage": 11,
+   "crit_chance": 5,
+   "crit_damage": 65
+  },
+  "LEGENDARY": {
+   "damage": 13,
+   "crit_chance": 7,
+   "crit_damage": 85
+  },
+  "MYTHIC": {
+   "damage": 15,
+   "crit_chance": 10,
+   "crit_damage": 110
+  },
+  "DIVINE": {
+   "damage": 17,
+   "crit_chance": 13,
+   "crit_damage": 140
+  }
+ },
+ "stone": "SUSPICIOUS_VIAL",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

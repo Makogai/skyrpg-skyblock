@@ -63,6 +63,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.fairy.FairySouls.init();
         com.skyrpg.skyblock.travel.LaunchPads.init();
         com.skyrpg.skyblock.travel.Lifts.init();
+        com.skyrpg.skyblock.reforge.Reforging.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

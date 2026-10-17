@@ -1,0 +1,46 @@
+{
+ "name": "Lush",
+ "modifier": "lush",
+ "types": [
+  "AXE"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "foraging_fortune": 1.0,
+   "speed": 3.0
+  },
+  "UNCOMMON": {
+   "foraging_fortune": 1.0,
+   "speed": 4.0
+  },
+  "RARE": {
+   "foraging_fortune": 2.0,
+   "speed": 5.0
+  },
+  "EPIC": {
+   "foraging_fortune": 2.0,
+   "speed": 7.0
+  },
+  "LEGENDARY": {
+   "foraging_fortune": 3.0,
+   "speed": 10.0
+  },
+  "MYTHIC": {
+   "foraging_fortune": 5.0,
+   "speed": 15.0
+  },
+  "DIVINE": {
+   "foraging_fortune": 7.0,
+   "speed": 20.0
+  }
+ }
+}

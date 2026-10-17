@@ -1,0 +1,61 @@
+{
+ "name": "Geometric",
+ "modifier": "geometric",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "fishing_speed": 0.5,
+   "trophy_fish_chance": 0.5
+  },
+  "UNCOMMON": {
+   "fishing_speed": 1,
+   "trophy_fish_chance": 1
+  },
+  "RARE": {
+   "fishing_speed": 1.5,
+   "trophy_fish_chance": 1.5
+  },
+  "EPIC": {
+   "fishing_speed": 2,
+   "trophy_fish_chance": 2
+  },
+  "LEGENDARY": {
+   "fishing_speed": 3,
+   "trophy_fish_chance": 3
+  },
+  "MYTHIC": {
+   "fishing_speed": 4,
+   "trophy_fish_chance": 4
+  },
+  "DIVINE": {
+   "fishing_speed": 5,
+   "trophy_fish_chance": 5
+  }
+ },
+ "stone": "GEOMETRIC_ODDITY",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "items": [
+  "FROGGLES",
+  "SILVER_FROGGLES",
+  "GOLDEN_FROGGLES",
+  "DIAMOND_FROGGLES"
+ ],
+ "ability": "§7Gain a §a+5% §7chance to catch a bonus §6Trophy §7while fishing in a §dWormhole§f."
+}

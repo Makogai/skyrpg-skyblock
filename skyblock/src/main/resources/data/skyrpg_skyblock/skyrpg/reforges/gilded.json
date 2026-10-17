@@ -1,0 +1,38 @@
+{
+ "name": "Gilded",
+ "modifier": "gilded",
+ "types": [],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "LEGENDARY": {
+   "damage": 75,
+   "strength": 75,
+   "ability_damage": 8
+  },
+  "MYTHIC": {
+   "damage": 90,
+   "strength": 90,
+   "ability_damage": 10
+  }
+ },
+ "stone": "MIDAS_JEWEL",
+ "costs": {
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000
+ },
+ "items": [
+  "MIDAS_SWORD",
+  "MIDAS_STAFF",
+  "STARRED_MIDAS_STAFF",
+  "STARRED_MIDAS_SWORD"
+ ],
+ "ability": "§7Killing a mob has a rare chance to §7grant §6Coins §7to a nearby player."
+}

@@ -62,7 +62,9 @@ public final class MagicInput {
 
     /** Whether a wand is in hand and nothing else (a screen) has the mouse. */
     public static boolean active(Minecraft minecraft) {
-        return minecraft.player != null && minecraft.gui.screen() == null && !minecraft.player.isSpectator() && ClientMagic.holdingWand();
+        // The wand and spell wheel are retired in SkyBlock.
+        return minecraft.player != null && minecraft.level != null && !com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(minecraft.level)
+                && minecraft.gui.screen() == null && !minecraft.player.isSpectator() && ClientMagic.holdingWand();
     }
 
     /**

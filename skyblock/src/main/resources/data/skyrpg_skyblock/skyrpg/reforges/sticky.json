@@ -1,0 +1,50 @@
+{
+ "name": "Sticky",
+ "modifier": "sticky",
+ "types": [
+  "FISHING_NET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "pull": 2.5
+  },
+  "UNCOMMON": {
+   "pull": 5
+  },
+  "RARE": {
+   "pull": 7.5
+  },
+  "EPIC": {
+   "pull": 10
+  },
+  "LEGENDARY": {
+   "pull": 15
+  },
+  "MYTHIC": {
+   "pull": 20
+  },
+  "DIVINE": {
+   "pull": 25
+  }
+ },
+ "stone": "EXTREMELY_MILD_ADHESIVE",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §d+2.5 Hunting Fortune §7towards §9Water Shards§7."
+}

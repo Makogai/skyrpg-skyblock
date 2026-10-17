@@ -36,6 +36,7 @@ public class SkyRpgItems implements ModInitializer {
         ModItems.init();
         JsonDataLoader.register(id("items"), ItemRegistry.ITEMS_DIRECTORY, ItemRegistry::loadItems);
         JsonDataLoader.register(id("item_sets"), ItemRegistry.SETS_DIRECTORY, ItemRegistry::loadSets);
+        JsonDataLoader.register(id("reforges"), com.skyrpg.items.reforge.Reforges.DIRECTORY, com.skyrpg.items.reforge.Reforges::load);
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> ItemCommands.register(dispatcher));
         Stats.registerSource(new ItemStatSource());
         Stats.registerSource(new HallowedNightSource());

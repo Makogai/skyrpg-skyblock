@@ -1,0 +1,52 @@
+{
+ "name": "Refined",
+ "modifier": "refined",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "mining_wisdom": 1
+  },
+  "UNCOMMON": {
+   "mining_wisdom": 2
+  },
+  "RARE": {
+   "mining_wisdom": 3
+  },
+  "EPIC": {
+   "mining_wisdom": 4
+  },
+  "LEGENDARY": {
+   "mining_wisdom": 6
+  },
+  "MYTHIC": {
+   "mining_wisdom": 8
+  },
+  "DIVINE": {
+   "mining_wisdom": 10
+  }
+ },
+ "stone": "REFINED_AMBER",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7You have a §a0.25% §7chance to find §7enchanted forms of items when mining §6Ores§7."
+}

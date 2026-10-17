@@ -1,0 +1,46 @@
+{
+ "name": "Rapid",
+ "modifier": "rapid",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 2.0,
+   "crit_damage": 35.0
+  },
+  "UNCOMMON": {
+   "strength": 3.0,
+   "crit_damage": 45.0
+  },
+  "RARE": {
+   "strength": 4.0,
+   "crit_damage": 55.0
+  },
+  "EPIC": {
+   "strength": 7.0,
+   "crit_damage": 65.0
+  },
+  "LEGENDARY": {
+   "strength": 10.0,
+   "crit_damage": 75.0
+  },
+  "MYTHIC": {
+   "strength": 12.0,
+   "crit_damage": 90.0
+  },
+  "DIVINE": {
+   "strength": 14.0,
+   "crit_damage": 105.0
+  }
+ }
+}

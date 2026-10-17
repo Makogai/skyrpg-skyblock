@@ -1,0 +1,53 @@
+{
+ "name": "Neat",
+ "modifier": "neat",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "crit_chance": 10.0,
+   "crit_damage": 4.0,
+   "intelligence": 3.0
+  },
+  "UNCOMMON": {
+   "crit_chance": 12.0,
+   "crit_damage": 8.0,
+   "intelligence": 6.0
+  },
+  "RARE": {
+   "crit_chance": 14.0,
+   "crit_damage": 14.0,
+   "intelligence": 10.0
+  },
+  "EPIC": {
+   "crit_chance": 17.0,
+   "crit_damage": 20.0,
+   "intelligence": 15.0
+  },
+  "LEGENDARY": {
+   "crit_chance": 20.0,
+   "crit_damage": 30.0,
+   "intelligence": 20.0
+  },
+  "MYTHIC": {
+   "crit_chance": 25.0,
+   "crit_damage": 40.0,
+   "intelligence": 30.0
+  },
+  "DIVINE": {
+   "crit_chance": 30.0,
+   "crit_damage": 50.0,
+   "intelligence": 40.0
+  }
+ }
+}

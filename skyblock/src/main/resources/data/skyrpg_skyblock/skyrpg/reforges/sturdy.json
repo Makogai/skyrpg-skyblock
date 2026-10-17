@@ -1,0 +1,48 @@
+{
+ "name": "Sturdy",
+ "modifier": "sturdy",
+ "types": [
+  "PICKAXE",
+  "DRILL",
+  "GAUNTLET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 3.0,
+   "mining_speed": 3.0
+  },
+  "UNCOMMON": {
+   "defense": 6.0,
+   "mining_speed": 6.0
+  },
+  "RARE": {
+   "defense": 9.0,
+   "mining_speed": 9.0
+  },
+  "EPIC": {
+   "defense": 12.0,
+   "mining_speed": 12.0
+  },
+  "LEGENDARY": {
+   "defense": 15.0,
+   "mining_speed": 15.0
+  },
+  "MYTHIC": {
+   "defense": 20.0,
+   "mining_speed": 20.0
+  },
+  "DIVINE": {
+   "defense": 25.0,
+   "mining_speed": 25.0
+  }
+ }
+}

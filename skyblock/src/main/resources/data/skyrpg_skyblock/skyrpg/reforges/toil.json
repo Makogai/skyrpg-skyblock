@@ -1,0 +1,49 @@
+{
+ "name": "Toil",
+ "modifier": "toil",
+ "types": [
+  "AXE"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "foraging_wisdom": 1
+  },
+  "UNCOMMON": {
+   "foraging_wisdom": 2
+  },
+  "RARE": {
+   "foraging_wisdom": 3
+  },
+  "EPIC": {
+   "foraging_wisdom": 4
+  },
+  "LEGENDARY": {
+   "foraging_wisdom": 6
+  },
+  "MYTHIC": {
+   "foraging_wisdom": 8
+  },
+  "DIVINE": {
+   "foraging_wisdom": 10
+  }
+ },
+ "stone": "TOIL_LOG",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

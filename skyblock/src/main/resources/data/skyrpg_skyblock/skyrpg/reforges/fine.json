@@ -1,0 +1,53 @@
+{
+ "name": "Fine",
+ "modifier": "fine",
+ "types": [
+  "BOW"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 3.0,
+   "crit_chance": 5.0,
+   "crit_damage": 2.0
+  },
+  "UNCOMMON": {
+   "strength": 7.0,
+   "crit_chance": 7.0,
+   "crit_damage": 4.0
+  },
+  "RARE": {
+   "strength": 12.0,
+   "crit_chance": 9.0,
+   "crit_damage": 7.0
+  },
+  "EPIC": {
+   "strength": 18.0,
+   "crit_chance": 12.0,
+   "crit_damage": 10.0
+  },
+  "LEGENDARY": {
+   "strength": 25.0,
+   "crit_chance": 15.0,
+   "crit_damage": 15.0
+  },
+  "MYTHIC": {
+   "strength": 40.0,
+   "crit_chance": 20.0,
+   "crit_damage": 20.0
+  },
+  "DIVINE": {
+   "strength": 55.0,
+   "crit_chance": 25.0,
+   "crit_damage": 25.0
+  }
+ }
+}

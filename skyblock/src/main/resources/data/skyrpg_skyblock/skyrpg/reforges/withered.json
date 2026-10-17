@@ -1,0 +1,51 @@
+{
+ "name": "Withered",
+ "modifier": "withered",
+ "types": [
+  "SWORD",
+  "LONGSWORD"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "strength": 60
+  },
+  "UNCOMMON": {
+   "strength": 75
+  },
+  "RARE": {
+   "strength": 90
+  },
+  "EPIC": {
+   "strength": 110
+  },
+  "LEGENDARY": {
+   "strength": 135
+  },
+  "MYTHIC": {
+   "strength": 170
+  },
+  "DIVINE": {
+   "strength": 220
+  }
+ },
+ "stone": "WITHER_BLOOD",
+ "costs": {
+  "COMMON": 250000,
+  "UNCOMMON": 250000,
+  "RARE": 250000,
+  "EPIC": 250000,
+  "LEGENDARY": 250000,
+  "MYTHIC": 250000,
+  "DIVINE": 250000
+ },
+ "ability": "§7Grants §c+1 Strength §7per §cCatacombs §7skill level you have."
+}

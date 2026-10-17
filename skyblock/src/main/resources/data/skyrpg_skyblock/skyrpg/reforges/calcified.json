@@ -1,0 +1,60 @@
+{
+ "name": "Calcified",
+ "modifier": "calcified",
+ "types": [
+  "HELMET",
+  "CHESTPLATE",
+  "LEGGINGS",
+  "BOOTS"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "defense": 2,
+   "fishing_speed": 0.5
+  },
+  "UNCOMMON": {
+   "defense": 4,
+   "fishing_speed": 1
+  },
+  "RARE": {
+   "defense": 6,
+   "fishing_speed": 1.5
+  },
+  "EPIC": {
+   "defense": 10,
+   "fishing_speed": 2.5
+  },
+  "LEGENDARY": {
+   "defense": 14,
+   "fishing_speed": 3.5
+  },
+  "MYTHIC": {
+   "defense": 18,
+   "fishing_speed": 4.5
+  },
+  "DIVINE": {
+   "defense": 22,
+   "fishing_speed": 5.5
+  }
+ },
+ "stone": "CALCIFIED_HEART",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ },
+ "ability": "§7Grants §a+25 Defense §7towards §3Sea §3Creatures§7."
+}

@@ -1,0 +1,60 @@
+{
+ "name": "Glistening",
+ "modifier": "glistening",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "true_defense": 2,
+   "intelligence": 5
+  },
+  "UNCOMMON": {
+   "true_defense": 2.5,
+   "intelligence": 6
+  },
+  "RARE": {
+   "true_defense": 3,
+   "intelligence": 8
+  },
+  "EPIC": {
+   "true_defense": 3.5,
+   "intelligence": 10
+  },
+  "LEGENDARY": {
+   "true_defense": 4,
+   "intelligence": 12
+  },
+  "MYTHIC": {
+   "true_defense": 4.5,
+   "intelligence": 15
+  },
+  "DIVINE": {
+   "true_defense": 5,
+   "intelligence": 18
+  }
+ },
+ "stone": "SHINY_PRISM",
+ "costs": {
+  "COMMON": 100000,
+  "UNCOMMON": 100000,
+  "RARE": 100000,
+  "EPIC": 100000,
+  "LEGENDARY": 100000,
+  "MYTHIC": 100000,
+  "DIVINE": 100000
+ }
+}

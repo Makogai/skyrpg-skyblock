@@ -1,0 +1,50 @@
+{
+ "name": "Colossal",
+ "modifier": "colossal",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 3.0,
+   "defense": 3.0
+  },
+  "UNCOMMON": {
+   "health": 4.0,
+   "defense": 4.0
+  },
+  "RARE": {
+   "health": 6.0,
+   "defense": 6.0
+  },
+  "EPIC": {
+   "health": 8.0,
+   "defense": 8.0
+  },
+  "LEGENDARY": {
+   "health": 10.0,
+   "defense": 10.0
+  },
+  "MYTHIC": {
+   "health": 12.0,
+   "defense": 12.0
+  },
+  "DIVINE": {
+   "health": 14.0,
+   "defense": 14.0
+  }
+ }
+}

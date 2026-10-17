@@ -1,0 +1,57 @@
+{
+ "name": "Astute",
+ "modifier": "astute",
+ "types": [
+  "NECKLACE",
+  "CLOAK",
+  "BELT",
+  "GLOVES",
+  "BRACELET"
+ ],
+ "rarities": [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "DIVINE"
+ ],
+ "stats": {
+  "COMMON": {
+   "health": 1.0,
+   "defense": 1.0,
+   "intelligence": 3.0
+  },
+  "UNCOMMON": {
+   "health": 1.0,
+   "defense": 2.0,
+   "intelligence": 4.0
+  },
+  "RARE": {
+   "health": 2.0,
+   "defense": 2.0,
+   "intelligence": 5.0
+  },
+  "EPIC": {
+   "health": 3.0,
+   "defense": 3.0,
+   "intelligence": 6.0
+  },
+  "LEGENDARY": {
+   "health": 4.0,
+   "defense": 4.0,
+   "intelligence": 8.0
+  },
+  "MYTHIC": {
+   "health": 5.0,
+   "defense": 5.0,
+   "intelligence": 10.0
+  },
+  "DIVINE": {
+   "health": 6.0,
+   "defense": 6.0,
+   "intelligence": 12.0
+  }
+ }
+}
