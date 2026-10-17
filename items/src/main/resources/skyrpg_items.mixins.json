@@ -6,6 +6,7 @@
     "AbstractArrowAccess",
     "CustomDataAccess",
     "InventoryMenuMixin",
+    "PlayerHeadNameMixin",
     "ServerGamePacketListenerImplMixin"
   ],
   "injectors": {

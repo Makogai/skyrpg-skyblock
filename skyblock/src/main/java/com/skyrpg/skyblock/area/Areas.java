@@ -74,6 +74,9 @@ public final class Areas {
         if (zone != null) {
             return zone.name();
         }
+        if (level.dimension().equals(com.skyrpg.skyblock.dungeon.Catacombs.LEVEL)) {
+            return com.skyrpg.skyblock.dungeon.Catacombs.areaName(player);
+        }
         if (Hub.isHub(level)) {
             return "Hub";
         }

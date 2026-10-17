@@ -56,6 +56,12 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.experiment.ExperimentMenu> EXPERIMENT = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("experiment"), new ExtendedMenuType<>(com.skyrpg.skyblock.experiment.ExperimentMenu::new,
                     com.skyrpg.skyblock.experiment.ExperimentMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.dungeon.DungeonMenu> DUNGEON = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("dungeon"), new ExtendedMenuType<>(com.skyrpg.skyblock.dungeon.DungeonMenu::new,
+                    com.skyrpg.skyblock.dungeon.DungeonMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.dungeon.RewardsMenu> DUNGEON_REWARDS = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("dungeon_rewards"), new ExtendedMenuType<>(com.skyrpg.skyblock.dungeon.RewardsMenu::new,
+                    com.skyrpg.skyblock.dungeon.RewardsMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.glacite.ExcavatorMenu> EXCAVATOR = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("excavator"), new ExtendedMenuType<>(com.skyrpg.skyblock.glacite.ExcavatorMenu::new,
                     com.skyrpg.skyblock.glacite.ExcavatorMenu.View.CODEC));

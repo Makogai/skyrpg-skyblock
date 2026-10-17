@@ -1,0 +1,20 @@
+{
+  "name": "Malik",
+  "role": "Essence",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "pos": [
+    29.5,
+    65.0,
+    14.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.brewing_stand.brew",
+  "greetings": [
+    "Essence is the dungeon's true currency.",
+    "Bring me Wither and Undead Essence; my shop opens soon."
+  ]
+}

@@ -15,7 +15,8 @@ abstract class NoVanillaLootMixin {
     @Inject(method = "dropAllDeathLoot", at = @At("HEAD"), cancellable = true)
     private void skyrpg$noVanillaLoot(ServerLevel level, DamageSource source, CallbackInfo ci) {
         java.util.Set<String> tags = ((LivingEntity) (Object) this).entityTags();
-        if (tags.contains(SkySeaCreatures.TAG) || tags.contains(com.skyrpg.skyblock.glacite.Mineshafts.MANIAC)) {
+        if (tags.contains(SkySeaCreatures.TAG) || tags.contains(com.skyrpg.skyblock.glacite.Mineshafts.MANIAC)
+                || tags.contains(com.skyrpg.skyblock.dungeon.DungeonMobs.TAG)) {
             ci.cancel();
         }
     }

@@ -1,0 +1,23 @@
+{
+  "name": "Mort",
+  "role": "The Catacombs",
+  "color": "#FFFF55",
+  "hint": "Catacombs",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "pos": [
+    0.5,
+    69.0,
+    -44.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.wither_skeleton.ambient",
+  "greetings": [
+    "Ready to go down into the Catacombs?",
+    "Pick your class, then your floor. Bring your party."
+  ],
+  "action": {
+    "type": "dungeon_mort"
+  }
+}

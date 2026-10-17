@@ -1,0 +1,26 @@
+{
+  "name": "Ophelia",
+  "role": "Dungeon gear",
+  "color": "#55FFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "pos": [
+    -31.5,
+    65.0,
+    14.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Everything you need to survive down there.",
+    "Spirit Leaps, Wither Goggles... take a look."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "ophelia"
+    }
+  }
+}

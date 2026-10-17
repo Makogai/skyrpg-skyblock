@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/dungeon_hub",
+  "origin": [
+    -90,
+    10,
+    -90
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "island": "Dungeon Hub",
+  "arrival": {
+    "pos": [
+      0.5,
+      65.0,
+      54.5
+    ],
+    "yaw": 180.0
+  }
+}

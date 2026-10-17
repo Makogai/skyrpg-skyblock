@@ -8,6 +8,7 @@
     "BrewingStandAccess",
     "BrewingStandTickMixin",
     "CommonListenerAccess",
+    "EntityDataAccess",
     "ConnectionMixin",
     "HandshakeMixin",
     "InteractionAccess",

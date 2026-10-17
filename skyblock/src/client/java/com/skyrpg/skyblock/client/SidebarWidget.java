@@ -68,6 +68,19 @@ public final class SidebarWidget implements HudWidget {
 
     private static List<Component> lines(boolean editing) {
         List<Component> lines = new ArrayList<>();
+        var self = Minecraft.getInstance().player;
+        // In a dungeon, Hypixel's dungeon scoreboard: the date, where, then the run (time, cleared, secrets, keys, the team).
+        java.util.List<String> dungeon = self == null ? null : self.getAttached(com.skyrpg.skyblock.dungeon.Catacombs.HUD);
+        if (dungeon != null && !dungeon.isEmpty()) {
+            lines.add(Component.literal(LocalDate.now().format(REAL_DATE)).withStyle(ChatFormatting.GRAY));
+            lines.add(Component.empty());
+            lines.add(Component.literal("⏣ ").withStyle(ChatFormatting.GRAY).append(Component.literal(area).withStyle(ChatFormatting.RED)));
+            lines.add(Component.empty());
+            for (String line : dungeon) {
+                lines.add(Component.literal(line));
+            }
+            return lines;
+        }
         SkyBlockTime.Date date = SkyBlockTime.now();
         lines.add(Component.literal(LocalDate.now().format(REAL_DATE)).withStyle(ChatFormatting.GRAY));
         lines.add(Component.empty());

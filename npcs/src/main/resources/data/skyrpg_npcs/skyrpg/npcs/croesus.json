@@ -1,0 +1,20 @@
+{
+  "name": "Croesus",
+  "role": "Dungeon chests",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "pos": [
+    28.5,
+    65.0,
+    -8.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.experience_orb.pickup",
+  "greetings": [
+    "Chests you leave behind come to me.",
+    "I keep them safe... for a while."
+  ]
+}

@@ -469,6 +469,40 @@ phase so the next session can pick up where this one stopped.
       (`fairy_exchange` action) trades every 5 for 10 SkyBlock XP (Hypixel's backpack slots wait for backpacks; the
       exchange count is kept). `/fairysouls give|reset` for admins.
 
+## Phase 3: Dungeons
+
+- [x] **The Catacombs, part 1: Floor I end to end** (design `docs/design/catacombs.md`, research
+      `docs/design/research/dungeons.md`). `dungeon/`: `Layout` (Hypixel's grid of 32-block cells: Entrance on an edge,
+      Blood room farthest, Fairy and later puzzle/trap rooms as dead ends, normal rooms in 1x1..1x4, 2x2 and L shapes, a
+      random spanning tree of doors plus loops, Wither doors on the way to Blood with keys in rooms before them, the Blood
+      door), `RoomLibrary` (templates from `structure/catacombs/rooms/<category>/`), `Run` (a slot of the new
+      `skyrpg_skyblock:catacombs` world, x = slot x 2048; built a room a tick with rotation, markers read and removed;
+      gap walls; doors cut, Wither = coal, Blood = red terracotta; mobs, secret items and bats spawn on first entry;
+      star mobs clear rooms; keys drop on clear and are picked up by walking in; locked doors opened by right-click
+      with the key; the Watcher and 6 + 2 x floor blood mobs in waves, then a portal on his dais; ghosts; score and
+      the end), `DungeonMobs` (roles zombie/skeleton/crypt/spider/elite -> Hypixel names, health and damage
+      geometric between NEU's F1 and F7 numbers; ✯ star mobs; no vanilla loot), `BossFight` (Bonzo: 250,000, balloons,
+      minions, gets back up once; other floors use it with their Hypixel health; a plain arena until boss templates),
+      `Score` (Skill, Explore with the floor's secret share, Speed by the floor's allowance, ranks), `Rewards` +
+      `RewardsMenu` + `DungeonRewardsScreen` (Wood/Gold/Diamond/Emerald/Obsidian/Bedrock by rank and floor price, F1
+      loot table with rank luck, one chest a run), `DungeonXp` (Catacombs + 5 class levels on NEU's table, 20/40 SkyBlock
+      XP a Catacombs level; classes 25% when not played), `DungeonMenu` + `DungeonScreen` (Mort: class and floor),
+      `Catacombs` (start with the party up to 5 and level checks, ticks, clicks, ghosts, leaving on world change,
+      cleanup, the synced sidebar HUD, `/sbdungeon leave|class|start|menu|debug|xp`), `Secrets` (essence or dungeon
+      consumables). `essence/Essence` is the currency for it. Rooms: `tools/builds/catacombs/room_kit.py` (the rules
+      and checks) with 18 rooms by helpers (`rooms_core.py`: Entrance, Blood, Fairy, five 1x1; `rooms_multi.py`: three
+      1x2, two 1x3, one 1x4, two 2x2, two L). The Dungeon Hub (`tools/builds/hub_areas/dungeon_hub.py`, its own world,
+      `/warp dungeon_hub`) with Mort, Ophelia (her shop), Malik, Croesus, Adventurer Saul. Fixed on the way: SkyBlock
+      heads were named "'s Head" in chat (`PlayerHeadNameMixin`); an attachment type must be registered before a
+      player's data loads (DungeonXp's wasn't, so its data was dropped).
+      Decided: mobs spawn when a room is first entered (cheap); rooms overwrite the slot (no clearing); stale run
+      entities are removed when they load; ghosts are flying, invisible, invulnerable players (no gamemode change); a
+      full-party death fails the run (a quarter of the XP, no chests, back to the Dungeon Hub); keys are picked up by
+      walking into them; F1 mob numbers from NEU's lowest values; F1 chest odds ours.
+      Not yet: puzzles, traps, minibosses, crypts, the Mimic, blessings, the Fairy's revive, class abilities and
+      passives, the dungeon map item, boss arenas and F2-F7 bosses, Master Mode, dungeon item stats, stars, essence
+      shops (Malik), Croesus, Saul's Recommendation, Party Finder.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "The Fossil Excavator, the Glacite Powder perks and mineshaft commissions",
+  "latest": "The Catacombs: Floor I end to end, the Dungeon Hub and Mort",
   "phase": {
-    "name": "Phase 2: Mid game",
-    "done": 80
+    "name": "Phase 3: Dungeons",
+    "done": 20
   },
   "categories": [
     {
@@ -141,7 +141,7 @@
           "name": "Dungeons",
           "icon": "item/bone",
           "weight": 12,
-          "done": 0
+          "done": 20
         },
         {
           "name": "Kuudra",

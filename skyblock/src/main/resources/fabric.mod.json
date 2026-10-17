@@ -37,7 +37,8 @@
     "skyrpg_pets": "*",
     "skyrpg_combat": "*",
     "skyrpg_fishing": "*",
-    "skyrpg_progress": "*"
+    "skyrpg_progress": "*",
+    "skyrpg_party": "*"
   },
   "custom": {
     "modmenu": {

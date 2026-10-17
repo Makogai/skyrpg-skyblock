@@ -82,6 +82,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.alchemy.SkyBrewing.init();
         com.skyrpg.skyblock.quiver.Quiver.init();
         com.skyrpg.skyblock.essence.Essence.init();
+        com.skyrpg.skyblock.dungeon.Catacombs.init();
         com.skyrpg.skyblock.glacite.GlaciteTunnels.init();
         Recipes.init();
         Crafting.init();

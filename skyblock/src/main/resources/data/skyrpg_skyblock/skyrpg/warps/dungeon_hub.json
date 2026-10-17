@@ -1,0 +1,14 @@
+{
+  "name": "Dungeon Hub",
+  "description": "Mort and the Catacombs",
+  "icon": "minecraft:wither_skeleton_skull",
+  "dimension": "skyrpg_skyblock:dungeon_hub",
+  "pos": [
+    0.5,
+    65.0,
+    54.5
+  ],
+  "yaw": 180.0,
+  "area": "Dungeon Hub",
+  "order": 30
+}
