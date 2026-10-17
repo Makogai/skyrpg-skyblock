@@ -36,7 +36,7 @@ public final class ItemMods {
     private ItemMods() {
     }
 
-    private static CompoundTag tag(ItemStack stack) {
+    public static CompoundTag tag(ItemStack stack) {
         CustomData data = stack.get(DataComponents.CUSTOM_DATA);
         return data == null || data.isEmpty() ? null : ((CustomDataAccess) (Object) data).skyrpg$tag();
     }
@@ -99,17 +99,24 @@ public final class ItemMods {
         return reforge == null ? Map.of() : reforge.statsAt(rarity(stack, def));
     }
 
-    /** All of this item's stats: its own, plus its reforge's and its potato books'. */
+    /** All of this item's stats: its own, plus its reforge's, its potato books' and its gemstones'. */
     public static Map<StatType, Double> stats(ItemStack stack, ItemDefinition def) {
         Map<StatType, Double> reforge = reforgeStats(stack, def);
         Map<StatType, Double> potato = potatoStats(stack, def);
-        if (reforge.isEmpty() && potato.isEmpty()) {
+        Map<StatType, Double> gems = gemStats(stack, def);
+        if (reforge.isEmpty() && potato.isEmpty() && gems.isEmpty()) {
             return def.stats();
         }
         Map<StatType, Double> out = new LinkedHashMap<>(def.stats());
         reforge.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         potato.forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        gems.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         return out;
+    }
+
+    /** What its gemstones add, at the item's (upgraded) rarity. */
+    public static Map<StatType, Double> gemStats(ItemStack stack, ItemDefinition def) {
+        return com.skyrpg.items.gem.Gemstones.stats(stack, rarity(stack, def));
     }
 
     /** Changes the item's custom data (a copy: components are immutable). */

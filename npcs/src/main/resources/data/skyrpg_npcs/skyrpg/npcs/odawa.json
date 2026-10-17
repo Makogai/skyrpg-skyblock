@@ -1,0 +1,20 @@
+{
+  "name": "Odawa",
+  "role": "Jungle",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    -131.5,
+    97.0,
+    -118.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.parrot.ambient",
+  "greetings": [
+    "Don't hurt the younglings.",
+    "The Sludges grow big down here."
+  ]
+}

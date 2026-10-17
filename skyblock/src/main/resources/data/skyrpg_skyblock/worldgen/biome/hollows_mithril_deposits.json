@@ -1,0 +1,58 @@
+{
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 6000,
+        "replace_current_music": true,
+        "sound": "minecraft:music.overworld.dripstone_caves"
+      }
+    },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {},
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [],
+          "misc": [],
+          "monster": [],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    }
+  },
+  "carvers": [],
+  "downfall": 0.4,
+  "effects": {
+    "water_color": "#3f76e4",
+    "foliage_color": "#2f9e3a",
+    "grass_color": "#4fbf3a"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "skyrpg_skyblock:hollows/ruby",
+      "skyrpg_skyblock:hollows/jade",
+      "skyrpg_skyblock:hollows/jasper",
+      "skyrpg_skyblock:hollows/mithril_gray",
+      "skyrpg_skyblock:hollows/mithril_prismarine",
+      "skyrpg_skyblock:hollows/mithril_blue",
+      "skyrpg_skyblock:hollows/titanium"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "temperature": 0.8
+}

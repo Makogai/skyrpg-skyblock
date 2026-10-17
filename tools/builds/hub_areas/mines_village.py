@@ -18,7 +18,7 @@ import dungeon_kit
 OX, OY, OZ = -60, 100, -175
 NX, NY, NZ = 190, 135, 100
 F = 200                                    # the village's floor block; players stand at 201
-area = Area("mines_village", (OX, OY, OZ), (NX, NY, NZ), version=1, shell=2,
+area = Area("mines_village", (OX, OY, OZ), (NX, NY, NZ), version=2, shell=2,
             dimension="skyrpg_skyblock:dwarven_mines", island="Dwarven Mines")
 
 
@@ -707,6 +707,7 @@ for (x, z) in ((94, -108), (108, -108), (94, -94), (108, -94), (101, -113), (101
     S(x, F + 5, z, "minecraft:lantern[hanging=false]")
     S(x, F + 1, z, "minecraft:chiseled_stone_bricks")
 npc("Emissary Braum", 104, -104, 90, "Emissary: commissions")
+npc("Gwendolyn", 104, -108, 90, "sells the Crystal Hollows Pass")
 S(105, F + 1, -104, "minecraft:lectern[facing=west]")
 sign(104, F + 1, -103, 0, "Emissary Braum", "", "dark_oak") if False else None
 area.arrival(100, F + 1, -100, yaw=90.0)

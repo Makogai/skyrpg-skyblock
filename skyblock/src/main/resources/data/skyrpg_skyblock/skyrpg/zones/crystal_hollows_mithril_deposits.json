@@ -1,0 +1,120 @@
+{
+  "name": "Mithril Deposits",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    0,
+    64,
+    -250
+  ],
+  "to": [
+    250,
+    186,
+    -40
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:vindicator",
+      "name": "Grunt",
+      "level": 54,
+      "health": 15000,
+      "damage": 300,
+      "xp": 80,
+      "coins": 18,
+      "max": 10,
+      "every": 4,
+      "indoors": true,
+      "drops": [
+        {
+          "item": "ROUGH_JADE_GEM",
+          "chance": 1,
+          "min": 8,
+          "max": 15
+        },
+        {
+          "item": "TREASURITE",
+          "chance": 0.3,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

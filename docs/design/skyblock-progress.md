@@ -263,6 +263,32 @@ phase so the next session can pick up where this one stopped.
       fill the inventory, insert inventory; `/gfs <item> <amount>`. Pets got the same UseBlock early phase (adding a pet
       while looking at a block was refused by the Hub).
       Not yet: Sack of Sacks, Pocket Sack-in-a-Sack, Trophy Fish and Rune sacks, crafting straight from sacks.
+- [x] **Crystal Hollows** (Hypixel's): research `docs/design/research/crystal-hollows.md`. A **generated** world
+      (`tools/skyblock/gen_hollows.py` writes the dimension, noise settings, material rule, 6 biomes, gem/metal vein features
+      and the zones): 512 x 512 around 0, 0, y 0-192, vanilla's nether cave noise, walls from x/z gradients, lava sea at
+      y 24, bedrock floor and roof; `HollowsBiomes` (a BiomeSource: Jungle NW, Mithril Deposits NE, Goblin Holdout SW,
+      Precursor Remnants SE, Magma Fields under y 64, Nucleus in the middle) with Amethyst/Jade/Amber/Sapphire/Topaz veins,
+      Ruby everywhere, rare Jasper, Mithril and Titanium in the Deposits, lush/basalt decoration. Mined blocks turn to air
+      for good (zone `regrow` -1); `HollowsReset` makes the world anew a week after it was generated (or after
+      `/hollowsreset`), before the worlds load, and `HubAreas.replaceAll` re-places its structures. Six structures by
+      helpers (`hollows_*.py`, `hollows_lib.py`; `docs/design/crystal-hollows-build.md`): the Nucleus (arrival, 5 crystal
+      pedestals, pad back), Jungle Temple, Khazad-dûm, Mines of Divan, Goblin Queen's Den, Lost Precursor City; the kit
+      now saves unset cells as air in generated worlds (`FILL_AIR`). Mining (`SkyMining` Hollows tables): Hard Stone
+      50/BP4, gems 2,300-4,800/BP6-9 giving Rough gems (Gemstone Fortune) and 2 Gemstone Powder; Mithril/Titanium with
+      Dwarven Metal Fortune. `TreasureChests`: 1/500 Hard Stone (+Great Explorer), owner-only chest for a minute, 3-6 rolls
+      (powder, the zone's Rough/Flawed gems, Treasurite, rares, Pickonimbus 1/200). Zone mobs (Sludge, Thyst, Grunt,
+      Goblins, Automaton, Yog). `HollowsAccess`: Gwendolyn (The Lift) sells a 10,000-coin 6-hour pass (Mining XII, HotM
+      IV), sends you to the Nucleus, takes you out when it runs out. Commissions got a second board for the Hollows
+      (Emissary Sisko): Hard Stone, each gem, chests and mob slayers; 400 HotM XP, 1,500 Gemstone Powder, 10,000 Mining XP.
+      Not yet: crystals and Nucleus loot, the structures' quests and bosses (Bal, Corleone, Goblin Queen, Professor
+      Robot, Jungle Temple key), worms/Scatha, lockpicks, Fairy Grottos, the Glacite Tunnels.
+- [x] **Gemstones on items**: `tools/skyblock/import_gemstones.py` (NEU gemstones.json + gemstonecosts.json: 12 gems'
+      stats by tier and rarity, 499 items' slots and unlock costs, removal costs) to `skyrpg/gemstones`; items
+      `Gemstones` (loaded on the server, sent with the item definitions): Hypixel's `gems` custom data, stats in
+      `ItemMods.stats` (pink "(+N)" in tooltips), a slot row ` [⸕] [☘] [✦]` (tier-coloured brackets, dark when locked).
+      `GemGrinderMenu` + `GemGrinderScreen` (Gemma in the Nucleus, `gemstone_grinder` action, `/gemstones` for admins):
+      unlock a slot (coins and gems), set your best fitting gem, right-click to take it out for Hypixel's price.
+      Not yet: Gemstone Chambers, chisel slots, the Divine column, Perfect gems' crystals.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

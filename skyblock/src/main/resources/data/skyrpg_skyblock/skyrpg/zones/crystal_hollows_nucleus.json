@@ -1,0 +1,14 @@
+{
+  "name": "Crystal Nucleus",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    -39,
+    64,
+    -39
+  ],
+  "to": [
+    38,
+    186,
+    38
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/hollows_khazad_dum",
+  "origin": [
+    -40,
+    20,
+    120
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "island": "Crystal Hollows"
+}

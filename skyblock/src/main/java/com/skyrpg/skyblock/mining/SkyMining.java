@@ -46,18 +46,26 @@ import net.minecraft.world.level.block.state.BlockState;
 public final class SkyMining {
     public static final ResourceKey<Level> DWARVEN_MINES = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
             SkyRpgSkyblock.id("dwarven_mines"));
+    public static final ResourceKey<Level> CRYSTAL_HOLLOWS = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
+            SkyRpgSkyblock.id("crystal_hollows"));
     private static final Identifier PRIVATE_ISLANDS = SkyRpgSkyblock.id("islands");
 
     /** A mining block: strength, Breaking Power, whether it's an ore (instamined only at 60 × strength). */
     public record Info(int strength, int power, boolean ore) {
     }
 
-    /** What a Dwarven metal gives: the item and how many, Mithril Powder, Mining XP. */
-    public record Metal(String name, String item, int count, int powder, double xp) {
+    /** What a block mined here by hand gives: the item and how many, powder (of which kind), Mining XP. */
+    public record Metal(String name, String item, int count, int powder, double xp, String powderType) {
+        Metal(String name, String item, int count, int powder, double xp) {
+            this(name, item, count, powder, xp, Hotm.MITHRIL);
+        }
     }
 
     private static final Map<Block, Info> BLOCKS = new HashMap<>();
     private static final Map<Block, Metal> METALS = new HashMap<>();
+    /** The Crystal Hollows' own numbers (Hard Stone is stone there; gemstones). */
+    private static final Map<Block, Info> HOLLOWS_BLOCKS = new HashMap<>();
+    private static final Map<Block, Metal> HOLLOWS_METALS = new HashMap<>();
 
     static {
         put(15, 0, false, Blocks.STONE);
@@ -80,6 +88,24 @@ public final class SkyMining {
         metal(new Metal("Mithril", "MITHRIL_ORE", 2, 2, 45), Blocks.PRISMARINE, Blocks.PRISMARINE_BRICKS, Blocks.DARK_PRISMARINE);
         metal(new Metal("Mithril", "MITHRIL_ORE", 5, 5, 45), Blocks.WOOL.pick(DyeColor.LIGHT_BLUE));
         metal(new Metal("Titanium", "TITANIUM_ORE", 2, 0, 100), Blocks.POLISHED_DIORITE);
+        HOLLOWS_BLOCKS.put(Blocks.STONE, new Info(50, 4, false));
+        HOLLOWS_METALS.put(Blocks.STONE, new Metal("Hard Stone", "HARD_STONE", 1, 0, 1));
+        gem(DyeColor.RED, "Ruby", 2300, 6);
+        gem(DyeColor.PURPLE, "Amethyst", 3000, 7);
+        gem(DyeColor.LIME, "Jade", 3000, 7);
+        gem(DyeColor.ORANGE, "Amber", 3000, 7);
+        gem(DyeColor.LIGHT_BLUE, "Sapphire", 3000, 7);
+        gem(DyeColor.YELLOW, "Topaz", 3800, 8);
+        gem(DyeColor.MAGENTA, "Jasper", 4800, 9);
+    }
+
+    /** A gemstone: its stained glass and pane, Hypixel's strength and Breaking Power, a Rough gem and 2 Gemstone Powder. */
+    private static void gem(DyeColor color, String name, int strength, int power) {
+        Metal metal = new Metal(name, "ROUGH_" + name.toUpperCase(java.util.Locale.ROOT) + "_GEM", 1, 2, 20, Hotm.GEMSTONE);
+        for (Block block : new Block[] {Blocks.STAINED_GLASS.pick(color), Blocks.STAINED_GLASS_PANE.pick(color)}) {
+            HOLLOWS_BLOCKS.put(block, new Info(strength, power, true));
+            HOLLOWS_METALS.put(block, metal);
+        }
     }
 
     private static void put(int strength, int power, boolean ore, Block... blocks) {
@@ -124,7 +150,7 @@ public final class SkyMining {
             if (!(level instanceof ServerLevel server) || !(player instanceof ServerPlayer miner) || !miningIsland(level.dimension())) {
                 return true;
             }
-            Metal metal = METALS.get(state.getBlock());
+            Metal metal = metal(level, state);
             Zones.Rule rule = Zones.rule(level, pos, state);
             if (metal == null || rule == null) {
                 return true;
@@ -163,7 +189,17 @@ public final class SkyMining {
 
     /** A block's mining numbers here, or null when vanilla rules apply. */
     public static Info info(Level level, BlockState state) {
-        return miningIsland(level.dimension()) ? BLOCKS.get(state.getBlock()) : null;
+        if (!miningIsland(level.dimension())) {
+            return null;
+        }
+        Info hollows = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_BLOCKS.get(state.getBlock()) : null;
+        return hollows != null ? hollows : BLOCKS.get(state.getBlock());
+    }
+
+    /** What mining a block by hand gives here (Mithril, Titanium, Hard Stone, gemstones), or null for normal drops. */
+    static Metal metal(Level level, BlockState state) {
+        Metal hollows = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock()) : null;
+        return hollows != null ? hollows : METALS.get(state.getBlock());
     }
 
     private static float progress(Player player, net.minecraft.world.level.BlockGetter getter, BlockPos pos, BlockState state, float vanilla) {
@@ -208,7 +244,10 @@ public final class SkyMining {
             Zones.deplete(level, pos, original, rule.becomes(), rule.regrowTicks());
         }
         // Drops, with Mining Fortune (100 = one more each), straight into the inventory.
-        double fortune = Math.max(0, Stats.get(player, StatTypes.MINING_FORTUNE));
+        // Gemstones use Gemstone Fortune; Mithril and Titanium Mining Fortune plus Dwarven Metal Fortune (Hypixel's).
+        boolean gem = metal.powderType().equals(Hotm.GEMSTONE);
+        double fortune = Math.max(0, gem ? Stats.get(player, StatTypes.GEMSTONE_FORTUNE)
+                : Stats.get(player, StatTypes.MINING_FORTUNE) + (metal.item().equals("HARD_STONE") ? 0 : Stats.get(player, StatTypes.DWARVEN_METAL_FORTUNE)));
         double amount = metal.count() * (1 + fortune / 100);
         int count = (int) amount + (level.getRandom().nextDouble() < amount - (int) amount ? 1 : 0);
         ItemDefinition def = ItemRegistry.skyblock(metal.item());
@@ -216,15 +255,22 @@ public final class SkyMining {
             ItemGains.give(player, SkyItems.create(def, count), ItemGains.Source.MINING);
         }
         SkillLevels.giveXp(player, SkillLevels.MINING, metal.xp());
-        if (metal.powder() > 0 && level.dimension().equals(DWARVEN_MINES)) {
+        boolean powderHere = level.dimension().equals(DWARVEN_MINES) || level.dimension().equals(CRYSTAL_HOLLOWS);
+        if (metal.powder() > 0 && powderHere) {
             Hotm.State hotm = Hotm.state(player);
-            int powder = metal.powder() + (hotm.perk("core_of_the_mountain") >= 4 ? 1 : 0);
+            boolean gemstone = metal.powderType().equals(Hotm.GEMSTONE);
+            int core = hotm.perk("core_of_the_mountain");
+            int powder = metal.powder() + (gemstone ? (core >= 6 ? 2 : 0) : (core >= 4 ? 1 : 0));
             HotmTree.Perk buff = HotmTree.get("powder_buff");
             if (buff != null && hotm.active("powder_buff") > 0) {
                 powder = (int) Math.round(powder * (1 + buff.number("stat", hotm.active("powder_buff"), false) / 100));
             }
-            Hotm.givePowder(player, Hotm.MITHRIL, powder);
-            player.sendOverlayMessage(Component.literal("+" + powder + " Mithril Powder").withStyle(ChatFormatting.DARK_GREEN));
+            Hotm.givePowder(player, metal.powderType(), powder);
+            player.sendOverlayMessage(Component.literal("+" + powder + " " + Hotm.powderName(metal.powderType()))
+                    .withColor(Hotm.powderColor(metal.powderType())));
+        }
+        if (metal.item().equals("HARD_STONE")) {
+            com.skyrpg.skyblock.hollows.TreasureChests.dug(level, player, pos);
         }
         MINED.invoker().onMined(player, state, zoneName(level, pos));
     }

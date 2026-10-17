@@ -1,0 +1,23 @@
+{
+  "name": "Gwendolyn",
+  "role": "Crystal Hollows",
+  "color": "#FF55FF",
+  "hint": "Travel",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    104.5,
+    201.0,
+    -107.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.minecart.riding",
+  "greetings": [
+    "The Crystal Hollows lie below. A pass lasts six hours.",
+    "Mining XII and HotM IV, then I'll take you down."
+  ],
+  "action": {
+    "type": "hollows_pass"
+  }
+}

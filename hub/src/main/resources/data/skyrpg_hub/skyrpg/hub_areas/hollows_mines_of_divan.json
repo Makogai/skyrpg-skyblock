@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/hollows_mines_of_divan",
+  "origin": [
+    110,
+    90,
+    -180
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "island": "Crystal Hollows",
+  "arrival": {
+    "pos": [
+      145.5,
+      101.0,
+      -134.5
+    ],
+    "yaw": 0.0
+  }
+}

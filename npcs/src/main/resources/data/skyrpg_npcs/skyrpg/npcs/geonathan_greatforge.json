@@ -1,0 +1,20 @@
+{
+  "name": "Geonathan Greatforge",
+  "role": "Crystal Nucleus",
+  "color": "#FF8A2A",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    7.5,
+    111.0,
+    11.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "My cousin forges in the Mines. I forge here.",
+    "Gemstones need the right setting."
+  ]
+}

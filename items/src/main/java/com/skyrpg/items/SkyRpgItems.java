@@ -37,6 +37,7 @@ public class SkyRpgItems implements ModInitializer {
         JsonDataLoader.register(id("items"), ItemRegistry.ITEMS_DIRECTORY, ItemRegistry::loadItems);
         JsonDataLoader.register(id("item_sets"), ItemRegistry.SETS_DIRECTORY, ItemRegistry::loadSets);
         JsonDataLoader.register(id("reforges"), com.skyrpg.items.reforge.Reforges.DIRECTORY, com.skyrpg.items.reforge.Reforges::load);
+        JsonDataLoader.register(id("gemstones"), com.skyrpg.items.gem.Gemstones.DIRECTORY, com.skyrpg.items.gem.Gemstones::load);
         JsonDataLoader.register(id("enchants"), com.skyrpg.items.enchant.Enchants.DIRECTORY, com.skyrpg.items.enchant.Enchants::load);
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> ItemCommands.register(dispatcher));
         Stats.registerSource(new ItemStatSource());

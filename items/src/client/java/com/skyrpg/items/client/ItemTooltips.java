@@ -73,6 +73,7 @@ final class ItemTooltips {
         }
         Map<StatType, Double> potato = ItemMods.potatoStats(stack, def);
         Map<StatType, Double> reforged = ItemMods.reforgeStats(stack, def);
+        Map<StatType, Double> gemmed = ItemMods.gemStats(stack, def);
         for (StatType stat : order) {
             double value = total.getOrDefault(stat, 0.0);
             if (value != 0) {
@@ -86,8 +87,16 @@ final class ItemTooltips {
                 if (reforged.containsKey(stat)) {
                     line.append(Component.literal(" (" + stat.formatBonus(reforged.get(stat)) + ")").withStyle(ChatFormatting.BLUE));
                 }
+                // ...and in pink for its gemstones.
+                if (gemmed.containsKey(stat)) {
+                    line.append(Component.literal(" (" + stat.formatBonus(gemmed.get(stat)) + ")").withStyle(ChatFormatting.LIGHT_PURPLE));
+                }
                 out.add(line);
             }
+        }
+        Component slots = gemSlotsLine(stack, def);
+        if (slots != null) {
+            out.add(slots);
         }
 
         enchantLines(stack, out);
@@ -300,6 +309,69 @@ final class ItemTooltips {
             }
         }
         return lines;
+    }
+
+    /** Hypixel's gem slot row: " [❤] [⸕] [✦]", each slot in its gem's colour, bracketed by the gem's tier; locked ones dark. */
+    private static Component gemSlotsLine(ItemStack stack, ItemDefinition def) {
+        List<com.skyrpg.items.gem.Gemstones.Slot> slots = com.skyrpg.items.gem.Gemstones.slots(def);
+        if (slots.isEmpty()) {
+            return null;
+        }
+        Map<String, com.skyrpg.items.gem.Gemstones.Gem> gems = new java.util.HashMap<>();
+        com.skyrpg.items.gem.Gemstones.gems(stack).forEach(gem -> gems.put(gem.slot(), gem));
+        MutableComponent line = Component.empty();
+        for (com.skyrpg.items.gem.Gemstones.Slot slot : slots) {
+            com.skyrpg.items.gem.Gemstones.Gem gem = gems.get(slot.id());
+            boolean open = com.skyrpg.items.gem.Gemstones.unlocked(stack, slot);
+            String type = gem != null ? gem.type() : slot.type();
+            ChatFormatting bracket = !open ? ChatFormatting.DARK_GRAY : gem == null ? ChatFormatting.GRAY : switch (gem.tier()) {
+                case "FLAWED" -> ChatFormatting.GREEN;
+                case "FINE" -> ChatFormatting.BLUE;
+                case "FLAWLESS" -> ChatFormatting.DARK_PURPLE;
+                case "PERFECT" -> ChatFormatting.GOLD;
+                default -> ChatFormatting.WHITE;
+            };
+            line.append(Component.literal(" [").withStyle(bracket))
+                    .append(Component.literal(gemSymbol(type)).withStyle(open ? gemColor(type) : ChatFormatting.DARK_GRAY))
+                    .append(Component.literal("]").withStyle(bracket));
+        }
+        return line;
+    }
+
+    private static String gemSymbol(String type) {
+        return switch (type) {
+            case "RUBY" -> "❤";
+            case "AMBER" -> "⸕";
+            case "TOPAZ" -> "✧";
+            case "JADE", "CITRINE", "PERIDOT" -> "☘";
+            case "SAPPHIRE" -> "✎";
+            case "AMETHYST" -> "❈";
+            case "JASPER" -> "❁";
+            case "OPAL", "UNIVERSAL" -> "❂";
+            case "ONYX" -> "☠";
+            case "AQUAMARINE" -> "α";
+            case "COMBAT", "OFFENSIVE" -> "⚔";
+            case "DEFENSIVE" -> "☤";
+            case "MINING" -> "✦";
+            default -> "◆";
+        };
+    }
+
+    private static ChatFormatting gemColor(String type) {
+        return switch (type) {
+            case "RUBY" -> ChatFormatting.RED;
+            case "AMBER" -> ChatFormatting.GOLD;
+            case "TOPAZ" -> ChatFormatting.YELLOW;
+            case "JADE", "PERIDOT" -> ChatFormatting.GREEN;
+            case "SAPPHIRE", "AQUAMARINE" -> ChatFormatting.AQUA;
+            case "AMETHYST", "JASPER" -> ChatFormatting.LIGHT_PURPLE;
+            case "ONYX" -> ChatFormatting.DARK_GRAY;
+            case "CITRINE" -> ChatFormatting.DARK_RED;
+            case "COMBAT", "OFFENSIVE" -> ChatFormatting.DARK_RED;
+            case "DEFENSIVE" -> ChatFormatting.GREEN;
+            case "MINING" -> ChatFormatting.DARK_PURPLE;
+            default -> ChatFormatting.WHITE;
+        };
     }
 
     /** The colour and style codes in effect at the end of this text ("\u00a77\u00a7o"). */

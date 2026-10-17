@@ -83,6 +83,10 @@ def hash01(x, y, z, seed=0):
     return ((h ^ (h >> 15)) & 0xFFFF) / 0xFFFF
 
 
+# Generated worlds: unset cells in an area's box would keep the generated terrain, so they're saved as air.
+FILL_AIR = {"skyrpg_skyblock:crystal_hollows"}
+
+
 class Area:
     def __init__(self, area_id, origin, size, version=1, shell=1, dimension=DIM, island=""):
         self.id = area_id
@@ -390,6 +394,23 @@ class Area:
         self.zones.append(zone)
         return zone
 
+    def fill_unset_with_air(self):
+        """In a generated world (the Crystal Hollows) a cell this build never set would keep the generated rock: every
+        unset cell in the box becomes air, so carved rooms are empty. (Hidden rock that hollow() drops afterwards is left
+        to the generator, which is fine: nobody sees it.)"""
+        nx, ny, nz = self.size
+        cells = self.piece.cells
+        air = None
+        for x in range(nx):
+            for y in range(ny):
+                for z in range(nz):
+                    if (x, y, z) not in cells:
+                        if air is None:
+                            self.piece.set(x, y, z, mc("minecraft:air"))
+                            air = cells[(x, y, z)]
+                        else:
+                            cells[(x, y, z)] = air
+
     def hollow(self):
         """Drops blocks nobody can see: full blocks more than `shell` blocks from air or anything see-through. Blocks the
         zone lets players break, and blocks with data, are always kept (so mining never opens onto a hidden hole). The
@@ -457,6 +478,8 @@ class Area:
             unknown = sorted({entry["id"] for entry, _ in self.piece.cells.values()} - known - {"minecraft:air"})
             if unknown:
                 raise SystemExit(f"{self.id}: unknown block ids (they would place nothing): {', '.join(unknown)}")
+        if self.dimension in FILL_AIR:
+            self.fill_unset_with_air()
         dropped = self.hollow()
         propped = self.prop_up()
         STRUCTURES.mkdir(parents=True, exist_ok=True)

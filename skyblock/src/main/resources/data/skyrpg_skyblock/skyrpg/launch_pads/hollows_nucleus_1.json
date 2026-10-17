@@ -1,0 +1,23 @@
+{
+  "name": "the Dwarven Mines",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    -1,
+    111,
+    -13
+  ],
+  "to": [
+    1,
+    112,
+    -11
+  ],
+  "destination": {
+    "dimension": "skyrpg_skyblock:dwarven_mines",
+    "pos": [
+      100.5,
+      201.0,
+      -99.5
+    ],
+    "yaw": 90.0
+  }
+}

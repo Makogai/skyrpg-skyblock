@@ -104,6 +104,20 @@ public final class HubAreas {
         return areas;
     }
 
+    /**
+     * A dimension was made anew (the Crystal Hollows' reset): forget its areas were ever placed, and place them again.
+     */
+    public static void replaceAll(MinecraftServer server, net.minecraft.resources.ResourceKey<net.minecraft.world.level.Level> dimension) {
+        ServerLevel hub = Hub.level(server);
+        if (hub == null) {
+            return;
+        }
+        Map<String, Integer> placed = new HashMap<>(hub.getAttachedOrElse(PLACED, Map.of()));
+        areas.values().stream().filter(area -> area.dimension().equals(dimension)).forEach(area -> placed.remove(area.id()));
+        hub.setAttached(PLACED, Map.copyOf(placed));
+        onServerStarted(server);
+    }
+
     /** On start: place every area this world doesn't have yet, or has an older version of. */
     static void onServerStarted(MinecraftServer server) {
         ServerLevel hub = Hub.level(server);

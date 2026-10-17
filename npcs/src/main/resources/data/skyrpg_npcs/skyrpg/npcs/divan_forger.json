@@ -1,0 +1,20 @@
+{
+  "name": "Mines of Divan Forger",
+  "role": "Mines of Divan",
+  "color": "#FF8A2A",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    161.5,
+    101.0,
+    -125.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Divan's drill was a marvel.",
+    "Find the parts and I'll show you."
+  ]
+}

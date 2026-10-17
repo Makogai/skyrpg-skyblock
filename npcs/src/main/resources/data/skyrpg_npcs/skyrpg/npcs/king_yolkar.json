@@ -1,0 +1,20 @@
+{
+  "name": "King Yolkar",
+  "role": "Goblin Holdout",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    -144.5,
+    120.0,
+    153.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.zombie.ambient",
+  "greetings": [
+    "Bring me a Goblin Egg and I'll give you my scent.",
+    "The Queen guards the Amber Crystal."
+  ]
+}

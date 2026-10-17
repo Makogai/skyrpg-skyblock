@@ -54,7 +54,7 @@ import net.minecraft.world.phys.AABB;
  *             "minecraft:stone": {"becomes": "minecraft:bedrock", "regrow": 3}},
  *  "mobs": [{"type": "minecraft:zombie", "max": 4, "every": 8}]}
  * </pre>
- * {@code regrow} and {@code every} are seconds. A zone with mobs is a fighting zone: in the protected Hub, things
+ * {@code regrow} and {@code every} are seconds (a negative {@code regrow}: never grows back). A zone with mobs is a fighting zone: in the protected Hub, things
  * there can be hit and hurt (never by another player). A zone's name is also the area name the sidebar shows inside it.
  *
  * <p>A mob can be one of Hypixel's, with its own name, level, health, damage (SkyBlock units), Combat XP and coins, at
@@ -154,8 +154,11 @@ public final class Zones {
             Rule rule = rule(level, pos, state);
             if (rule != null && level instanceof ServerLevel serverLevel) {
                 serverLevel.setBlock(pos, rule.becomes(), Block.UPDATE_ALL);
-                REGROWING.add(new Regrowth(level.dimension(), pos.immutable(), state, rule.becomes(),
-                        serverLevel.getServer().getTickCount() + rule.regrowTicks()));
+                // A negative regrow time never grows back (the Crystal Hollows, like Hypixel's).
+                if (rule.regrowTicks() >= 0) {
+                    REGROWING.add(new Regrowth(level.dimension(), pos.immutable(), state, rule.becomes(),
+                            serverLevel.getServer().getTickCount() + rule.regrowTicks()));
+                }
             }
         });
         ServerTickEvents.END_SERVER_TICK.register(Zones::tick);
@@ -206,7 +209,9 @@ public final class Zones {
      */
     public static void deplete(ServerLevel level, BlockPos pos, BlockState original, BlockState standIn, int ticks) {
         level.setBlock(pos, standIn, Block.UPDATE_ALL);
-        REGROWING.add(new Regrowth(level.dimension(), pos.immutable(), original, standIn, level.getServer().getTickCount() + ticks));
+        if (ticks >= 0) {
+            REGROWING.add(new Regrowth(level.dimension(), pos.immutable(), original, standIn, level.getServer().getTickCount() + ticks));
+        }
     }
 
     private static void send(ServerPlayer player) {

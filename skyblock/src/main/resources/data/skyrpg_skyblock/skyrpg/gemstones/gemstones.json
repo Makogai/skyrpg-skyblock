@@ -1,0 +1,7883 @@
+{
+ "types": {
+  "RUBY": {
+   "stat": "health",
+   "values": {
+    "ROUGH": {
+     "COMMON": 1,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 5,
+     "MYTHIC": 7
+    },
+    "FLAWED": {
+     "COMMON": 3,
+     "UNCOMMON": 4,
+     "RARE": 5,
+     "EPIC": 6,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    },
+    "FINE": {
+     "COMMON": 4,
+     "UNCOMMON": 5,
+     "RARE": 6,
+     "EPIC": 8,
+     "LEGENDARY": 10,
+     "MYTHIC": 14
+    },
+    "FLAWLESS": {
+     "COMMON": 5,
+     "UNCOMMON": 7,
+     "RARE": 10,
+     "EPIC": 14,
+     "LEGENDARY": 18,
+     "MYTHIC": 22
+    },
+    "PERFECT": {
+     "COMMON": 6,
+     "UNCOMMON": 9,
+     "RARE": 13,
+     "EPIC": 18,
+     "LEGENDARY": 24,
+     "MYTHIC": 30
+    }
+   }
+  },
+  "AMBER": {
+   "stat": "mining_speed",
+   "values": {
+    "ROUGH": {
+     "COMMON": 4,
+     "UNCOMMON": 8,
+     "RARE": 12,
+     "EPIC": 16,
+     "LEGENDARY": 20,
+     "MYTHIC": 24,
+     "DIVINE": 28
+    },
+    "FLAWED": {
+     "COMMON": 6,
+     "UNCOMMON": 10,
+     "RARE": 14,
+     "EPIC": 18,
+     "LEGENDARY": 24,
+     "MYTHIC": 30,
+     "DIVINE": 36
+    },
+    "FINE": {
+     "COMMON": 10,
+     "UNCOMMON": 14,
+     "RARE": 20,
+     "EPIC": 28,
+     "LEGENDARY": 36,
+     "MYTHIC": 45,
+     "DIVINE": 54
+    },
+    "FLAWLESS": {
+     "COMMON": 14,
+     "UNCOMMON": 20,
+     "RARE": 30,
+     "EPIC": 44,
+     "LEGENDARY": 58,
+     "MYTHIC": 75,
+     "DIVINE": 92
+    },
+    "PERFECT": {
+     "COMMON": 20,
+     "UNCOMMON": 28,
+     "RARE": 40,
+     "EPIC": 60,
+     "LEGENDARY": 80,
+     "MYTHIC": 100,
+     "DIVINE": 120
+    }
+   }
+  },
+  "TOPAZ": {
+   "stat": "pristine",
+   "values": {
+    "ROUGH": {
+     "COMMON": 0.4,
+     "UNCOMMON": 0.4,
+     "RARE": 0.4,
+     "EPIC": 0.4,
+     "LEGENDARY": 0.4,
+     "MYTHIC": 0.4,
+     "DIVINE": 0.5
+    },
+    "FLAWED": {
+     "COMMON": 0.8,
+     "UNCOMMON": 0.8,
+     "RARE": 0.8,
+     "EPIC": 0.8,
+     "LEGENDARY": 0.8,
+     "MYTHIC": 0.8,
+     "DIVINE": 0.9
+    },
+    "FINE": {
+     "COMMON": 1.2,
+     "UNCOMMON": 1.2,
+     "RARE": 1.2,
+     "EPIC": 1.2,
+     "LEGENDARY": 1.2,
+     "MYTHIC": 1.2,
+     "DIVINE": 1.3
+    },
+    "FLAWLESS": {
+     "COMMON": 1.6,
+     "UNCOMMON": 1.6,
+     "RARE": 1.6,
+     "EPIC": 1.6,
+     "LEGENDARY": 1.6,
+     "MYTHIC": 1.6,
+     "DIVINE": 1.8
+    },
+    "PERFECT": {
+     "COMMON": 2,
+     "UNCOMMON": 2,
+     "RARE": 2,
+     "EPIC": 2,
+     "LEGENDARY": 2,
+     "MYTHIC": 2,
+     "DIVINE": 2.2
+    }
+   }
+  },
+  "JADE": {
+   "stat": "mining_fortune",
+   "values": {
+    "ROUGH": {
+     "COMMON": 2,
+     "UNCOMMON": 4,
+     "RARE": 6,
+     "EPIC": 8,
+     "LEGENDARY": 10,
+     "MYTHIC": 12,
+     "DIVINE": 14
+    },
+    "FLAWED": {
+     "COMMON": 3,
+     "UNCOMMON": 5,
+     "RARE": 7,
+     "EPIC": 10,
+     "LEGENDARY": 14,
+     "MYTHIC": 18,
+     "DIVINE": 22
+    },
+    "FINE": {
+     "COMMON": 5,
+     "UNCOMMON": 7,
+     "RARE": 10,
+     "EPIC": 15,
+     "LEGENDARY": 20,
+     "MYTHIC": 25,
+     "DIVINE": 30
+    },
+    "FLAWLESS": {
+     "COMMON": 7,
+     "UNCOMMON": 10,
+     "RARE": 15,
+     "EPIC": 20,
+     "LEGENDARY": 27,
+     "MYTHIC": 35,
+     "DIVINE": 44
+    },
+    "PERFECT": {
+     "COMMON": 10,
+     "UNCOMMON": 14,
+     "RARE": 20,
+     "EPIC": 30,
+     "LEGENDARY": 40,
+     "MYTHIC": 50,
+     "DIVINE": 60
+    }
+   }
+  },
+  "SAPPHIRE": {
+   "stat": "intelligence",
+   "values": {
+    "ROUGH": {
+     "COMMON": 2,
+     "UNCOMMON": 3,
+     "RARE": 4,
+     "EPIC": 5,
+     "LEGENDARY": 6,
+     "MYTHIC": 7
+    },
+    "FLAWED": {
+     "COMMON": 5,
+     "UNCOMMON": 5,
+     "RARE": 6,
+     "EPIC": 7,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    },
+    "FINE": {
+     "COMMON": 7,
+     "UNCOMMON": 8,
+     "RARE": 9,
+     "EPIC": 10,
+     "LEGENDARY": 11,
+     "MYTHIC": 12
+    },
+    "FLAWLESS": {
+     "COMMON": 10,
+     "UNCOMMON": 11,
+     "RARE": 12,
+     "EPIC": 14,
+     "LEGENDARY": 17,
+     "MYTHIC": 20
+    },
+    "PERFECT": {
+     "COMMON": 12,
+     "UNCOMMON": 14,
+     "RARE": 17,
+     "EPIC": 20,
+     "LEGENDARY": 24,
+     "MYTHIC": 30
+    }
+   }
+  },
+  "AMETHYST": {
+   "stat": "defense",
+   "values": {
+    "ROUGH": {
+     "COMMON": 1,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 5,
+     "MYTHIC": 7
+    },
+    "FLAWED": {
+     "COMMON": 3,
+     "UNCOMMON": 4,
+     "RARE": 5,
+     "EPIC": 6,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    },
+    "FINE": {
+     "COMMON": 4,
+     "UNCOMMON": 5,
+     "RARE": 6,
+     "EPIC": 8,
+     "LEGENDARY": 10,
+     "MYTHIC": 14
+    },
+    "FLAWLESS": {
+     "COMMON": 5,
+     "UNCOMMON": 7,
+     "RARE": 10,
+     "EPIC": 14,
+     "LEGENDARY": 18,
+     "MYTHIC": 22
+    },
+    "PERFECT": {
+     "COMMON": 6,
+     "UNCOMMON": 9,
+     "RARE": 13,
+     "EPIC": 18,
+     "LEGENDARY": 24,
+     "MYTHIC": 30
+    }
+   }
+  },
+  "JASPER": {
+   "stat": "strength",
+   "values": {
+    "ROUGH": {
+     "COMMON": 1,
+     "UNCOMMON": 1,
+     "RARE": 1,
+     "EPIC": 2,
+     "LEGENDARY": 3,
+     "MYTHIC": 4
+    },
+    "FLAWED": {
+     "COMMON": 2,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 4,
+     "MYTHIC": 5
+    },
+    "FINE": {
+     "COMMON": 3,
+     "UNCOMMON": 3,
+     "RARE": 4,
+     "EPIC": 5,
+     "LEGENDARY": 6,
+     "MYTHIC": 7
+    },
+    "FLAWLESS": {
+     "COMMON": 5,
+     "UNCOMMON": 6,
+     "RARE": 7,
+     "EPIC": 8,
+     "LEGENDARY": 10,
+     "MYTHIC": 12
+    },
+    "PERFECT": {
+     "COMMON": 6,
+     "UNCOMMON": 7,
+     "RARE": 9,
+     "EPIC": 11,
+     "LEGENDARY": 13,
+     "MYTHIC": 16
+    }
+   }
+  },
+  "OPAL": {
+   "stat": "true_defense",
+   "values": {
+    "ROUGH": {
+     "COMMON": 1,
+     "UNCOMMON": 1,
+     "RARE": 1,
+     "EPIC": 2,
+     "LEGENDARY": 2,
+     "MYTHIC": 3
+    },
+    "FLAWED": {
+     "COMMON": 2,
+     "UNCOMMON": 2,
+     "RARE": 2,
+     "EPIC": 3,
+     "LEGENDARY": 3,
+     "MYTHIC": 4
+    },
+    "FINE": {
+     "COMMON": 3,
+     "UNCOMMON": 3,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 4,
+     "MYTHIC": 5
+    },
+    "FLAWLESS": {
+     "COMMON": 4,
+     "UNCOMMON": 4,
+     "RARE": 5,
+     "EPIC": 6,
+     "LEGENDARY": 8,
+     "MYTHIC": 9
+    },
+    "PERFECT": {
+     "COMMON": 5,
+     "UNCOMMON": 6,
+     "RARE": 7,
+     "EPIC": 9,
+     "LEGENDARY": 11,
+     "MYTHIC": 13
+    }
+   }
+  },
+  "AQUAMARINE": {
+   "stat": "fishing_speed",
+   "values": {
+    "ROUGH": {
+     "COMMON": 0.5,
+     "UNCOMMON": 0.5,
+     "RARE": 1,
+     "EPIC": 1,
+     "LEGENDARY": 1.5,
+     "MYTHIC": 2
+    },
+    "FLAWED": {
+     "COMMON": 1,
+     "UNCOMMON": 1,
+     "RARE": 1.5,
+     "EPIC": 1.5,
+     "LEGENDARY": 2,
+     "MYTHIC": 2.5
+    },
+    "FINE": {
+     "COMMON": 1.5,
+     "UNCOMMON": 1.5,
+     "RARE": 2,
+     "EPIC": 2,
+     "LEGENDARY": 2.5,
+     "MYTHIC": 3
+    },
+    "FLAWLESS": {
+     "COMMON": 2,
+     "UNCOMMON": 2,
+     "RARE": 2.5,
+     "EPIC": 3,
+     "LEGENDARY": 3.5,
+     "MYTHIC": 4
+    },
+    "PERFECT": {
+     "COMMON": 2.5,
+     "UNCOMMON": 2.5,
+     "RARE": 3.5,
+     "EPIC": 4,
+     "LEGENDARY": 4.5,
+     "MYTHIC": 5
+    }
+   }
+  },
+  "CITRINE": {
+   "stat": "foraging_fortune",
+   "values": {
+    "ROUGH": {
+     "COMMON": 0.5,
+     "UNCOMMON": 1,
+     "RARE": 1.5,
+     "EPIC": 2,
+     "LEGENDARY": 2.5,
+     "MYTHIC": 3
+    },
+    "FLAWED": {
+     "COMMON": 1,
+     "UNCOMMON": 1.5,
+     "RARE": 2,
+     "EPIC": 2.5,
+     "LEGENDARY": 3,
+     "MYTHIC": 4
+    },
+    "FINE": {
+     "COMMON": 1.5,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 5,
+     "MYTHIC": 6
+    },
+    "FLAWLESS": {
+     "COMMON": 2,
+     "UNCOMMON": 3,
+     "RARE": 4,
+     "EPIC": 5,
+     "LEGENDARY": 6,
+     "MYTHIC": 8
+    },
+    "PERFECT": {
+     "COMMON": 3,
+     "UNCOMMON": 4,
+     "RARE": 5,
+     "EPIC": 6,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    }
+   }
+  },
+  "ONYX": {
+   "stat": "crit_damage",
+   "values": {
+    "ROUGH": {
+     "COMMON": 1,
+     "UNCOMMON": 1,
+     "RARE": 2,
+     "EPIC": 2,
+     "LEGENDARY": 3,
+     "MYTHIC": 4
+    },
+    "FLAWED": {
+     "COMMON": 2,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 3,
+     "LEGENDARY": 4,
+     "MYTHIC": 6
+    },
+    "FINE": {
+     "COMMON": 3,
+     "UNCOMMON": 3,
+     "RARE": 4,
+     "EPIC": 5,
+     "LEGENDARY": 6,
+     "MYTHIC": 8
+    },
+    "FLAWLESS": {
+     "COMMON": 4,
+     "UNCOMMON": 5,
+     "RARE": 6,
+     "EPIC": 7,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    },
+    "PERFECT": {
+     "COMMON": 5,
+     "UNCOMMON": 6,
+     "RARE": 7,
+     "EPIC": 8,
+     "LEGENDARY": 10,
+     "MYTHIC": 12
+    }
+   }
+  },
+  "PERIDOT": {
+   "stat": "farming_fortune",
+   "values": {
+    "ROUGH": {
+     "COMMON": 0.5,
+     "UNCOMMON": 1,
+     "RARE": 1.5,
+     "EPIC": 2,
+     "LEGENDARY": 2.5,
+     "MYTHIC": 3
+    },
+    "FLAWED": {
+     "COMMON": 1,
+     "UNCOMMON": 1.5,
+     "RARE": 2,
+     "EPIC": 2.5,
+     "LEGENDARY": 3,
+     "MYTHIC": 4
+    },
+    "FINE": {
+     "COMMON": 1.5,
+     "UNCOMMON": 2,
+     "RARE": 3,
+     "EPIC": 4,
+     "LEGENDARY": 5,
+     "MYTHIC": 6
+    },
+    "FLAWLESS": {
+     "COMMON": 2,
+     "UNCOMMON": 3,
+     "RARE": 4,
+     "EPIC": 5,
+     "LEGENDARY": 6,
+     "MYTHIC": 8
+    },
+    "PERFECT": {
+     "COMMON": 3,
+     "UNCOMMON": 4,
+     "RARE": 5,
+     "EPIC": 6,
+     "LEGENDARY": 8,
+     "MYTHIC": 10
+    }
+   }
+  }
+ },
+ "categories": {
+  "COMBAT": [
+   "RUBY",
+   "AMETHYST",
+   "SAPPHIRE",
+   "JASPER",
+   "ONYX"
+  ],
+  "OFFENSIVE": [
+   "SAPPHIRE",
+   "JASPER"
+  ],
+  "DEFENSIVE": [
+   "RUBY",
+   "AMETHYST",
+   "OPAL"
+  ],
+  "MINING": [
+   "JADE",
+   "AMBER",
+   "TOPAZ"
+  ],
+  "CHISEL": [
+   "CITRINE",
+   "AQUAMARINE",
+   "PERIDOT",
+   "ONYX"
+  ],
+  "UNIVERSAL": [
+   "RUBY",
+   "AMETHYST",
+   "SAPPHIRE",
+   "JASPER",
+   "OPAL",
+   "JADE",
+   "AMBER",
+   "TOPAZ",
+   "CITRINE",
+   "AQUAMARINE",
+   "PERIDOT",
+   "ONYX"
+  ]
+ },
+ "removal": {
+  "ROUGH": 1,
+  "FLAWED": 100,
+  "FINE": 10000,
+  "FLAWLESS": 100000,
+  "PERFECT": 500000
+ },
+ "slots": {
+  "ABYSSAL_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:40"
+    ]
+   },
+   "CITRINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "ABYSSAL_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:40"
+    ]
+   },
+   "CITRINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "ABYSSAL_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:40"
+    ]
+   },
+   "CITRINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "ABYSSAL_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:40"
+    ]
+   },
+   "CITRINE_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "ADAPTIVE_BOOTS": {
+   "DEFENSIVE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ADAPTIVE_CHESTPLATE": {
+   "DEFENSIVE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ADAPTIVE_HELMET": {
+   "DEFENSIVE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ADAPTIVE_LEGGINGS": {
+   "DEFENSIVE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ADVANCED_GARDENING_AXE": {
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ADVANCED_GARDENING_HOE": {
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ARMOR_OF_YOG_BOOTS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ARMOR_OF_YOG_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ARMOR_OF_YOG_HELMET": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ARMOR_OF_YOG_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ASPECT_OF_THE_DRAGON": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "ASPECT_OF_THE_END": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ASPECT_OF_THE_VOID": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ASTRAEA": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "DEFENSIVE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_AMETHYST_GEM:2",
+     "FLAWLESS_RUBY_GEM:2"
+    ]
+   }
+  },
+  "ATOMSPLIT_KATANA": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:40"
+    ]
+   },
+   "SAPPHIRE_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:2"
+    ]
+   }
+  },
+  "AURORA_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "AURORA_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "AURORA_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "AURORA_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "AXE_OF_THE_SHREDDED": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BAT_WAND": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "BERSERKER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BERSERKER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BERSERKER_HELMET": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BERSERKER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BLAZE_BOOTS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BLAZE_CHESTPLATE": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BLAZE_HELMET": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BLAZE_LEGGINGS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BONZO_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BOUQUET_OF_LIES": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "BRONZE_HUNTER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BRONZE_HUNTER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BRONZE_HUNTER_HELMET": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BRONZE_HUNTER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "BURNING_AURORA_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_AURORA_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_AURORA_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_AURORA_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_CRIMSON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_CRIMSON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_CRIMSON_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_CRIMSON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_FERVOR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_FERVOR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_FERVOR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_FERVOR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_HOLLOW_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_HOLLOW_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_HOLLOW_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_HOLLOW_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_TERROR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_TERROR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_TERROR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURNING_TERROR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "BURSTFIRE_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   },
+   "OPAL_0": {
+    "coins": 500000,
+    "items": []
+   }
+  },
+  "BURSTMAW_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   },
+   "OPAL_0": {
+    "coins": 500000,
+    "items": []
+   }
+  },
+  "CACTUS_KNIFE": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "CACTUS_KNIFE_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "CACTUS_KNIFE_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "CHAMP_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "COCO_CHOPPER": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "COCO_CHOPPER_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "COCO_CHOPPER_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "CRIMSON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "CRIMSON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "CRIMSON_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "CRIMSON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "CROPIE_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "CROPIE_CHESTPLATE": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "CROPIE_HELMET": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "CROPIE_LEGGINGS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "DAEDALUS_AXE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   }
+  },
+  "DARK_CLAYMORE": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   }
+  },
+  "DIAMOND_HUNTER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "DIAMOND_HUNTER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "DIAMOND_HUNTER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "DIAMOND_HUNTER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "DIVAN_BOOTS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "AMBER_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   }
+  },
+  "DIVAN_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "AMBER_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   }
+  },
+  "DIVAN_DRILL": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMBER_1": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "JADE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JADE_GEM:40"
+    ]
+   },
+   "MINING_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JADE_GEM:1",
+     "FLAWLESS_AMBER_GEM:1",
+     "FLAWLESS_TOPAZ_GEM:1"
+    ]
+   }
+  },
+  "DIVAN_HELMET": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "AMBER_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   }
+  },
+  "DIVAN_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "AMBER_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_1": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   }
+  },
+  "DIVAN_PENDANT": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": [
+     "GEMSTONE_CHAMBER:1"
+    ]
+   }
+  },
+  "DIVER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "DIVER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "DIVER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "DIVER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "ENCHANTED_JACK_O_LANTERN": {
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "PERIDOT_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "ENRAGER": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FARMER_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "FERMENTO_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "FERMENTO_CHESTPLATE": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "FERMENTO_HELMET": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "FERMENTO_LEGGINGS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "FERVOR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FERVOR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FERVOR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FERVOR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_AURORA_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_AURORA_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_AURORA_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_AURORA_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_CRIMSON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_CRIMSON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_CRIMSON_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_CRIMSON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_FERVOR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_FERVOR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_FERVOR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_FERVOR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_HOLLOW_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_HOLLOW_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_HOLLOW_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_HOLLOW_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_TERROR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_TERROR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_TERROR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIERY_TERROR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "FIGSTONE_AXE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "FIG_AXE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "FIG_BOOTS": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "FIG_CHESTPLATE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "FIG_HELMET": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "FIG_LEGGINGS": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "FIREDUST_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   }
+  },
+  "FIRE_FREEZE_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FIRE_FURY_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLAME_BREAKER_BOOTS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLAME_BREAKER_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLAME_BREAKER_HELMET": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLAME_BREAKER_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_AMBER_GEM:1"
+    ]
+   },
+   "JADE_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_JADE_GEM:4"
+    ]
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLAMING_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   }
+  },
+  "FLAMING_FLAY": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1"
+    ]
+   }
+  },
+  "FLORID_ZOMBIE_SWORD": {
+   "RUBY_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:10"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "FLOWER_OF_TRUTH": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "FROZEN_BLAZE_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "FROZEN_BLAZE_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "FROZEN_BLAZE_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "FROZEN_BLAZE_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "FUNGI_CUTTER": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "FUNGI_CUTTER_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "FUNGI_CUTTER_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "GEMSTONE_DRILL_1": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   }
+  },
+  "GEMSTONE_DRILL_2": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   }
+  },
+  "GEMSTONE_DRILL_3": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   }
+  },
+  "GEMSTONE_DRILL_4": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   }
+  },
+  "GEMSTONE_GAUNTLET": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GIANTS_SWORD": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "JASPER_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40"
+    ]
+   }
+  },
+  "GLACIAL_SCYTHE": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GLACITE_BOOTS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_JADE_GEM:1"
+    ]
+   }
+  },
+  "GLACITE_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_JADE_GEM:1"
+    ]
+   }
+  },
+  "GLACITE_CHISEL": {
+   "CHISEL_0": {
+    "coins": 0,
+    "items": []
+   },
+   "CHISEL_1": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GLACITE_HELMET": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_JADE_GEM:1"
+    ]
+   }
+  },
+  "GLACITE_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 5000,
+    "items": [
+     "FINE_JADE_GEM:1"
+    ]
+   }
+  },
+  "GOBLIN_BOOTS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GOBLIN_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GOBLIN_HELMET": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GOBLIN_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 5000,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "GOLD_HUNTER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "GOLD_HUNTER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "GOLD_HUNTER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "GOLD_HUNTER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "HEARTFIRE_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   },
+   "OPAL_0": {
+    "coins": 500000,
+    "items": []
+   }
+  },
+  "HEARTMAW_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   },
+   "OPAL_0": {
+    "coins": 500000,
+    "items": []
+   }
+  },
+  "HEAT_BOOTS": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "HEAT_CHESTPLATE": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "HEAT_HELMET": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "HEAT_LEGGINGS": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "HELIANTHUS_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "HELIANTHUS_CHESTPLATE": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "HELIANTHUS_HELMET": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "HELIANTHUS_LEGGINGS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "HELIX_ARMOR_BOOTS": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "HELIX_ARMOR_CHESTPLATE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "HELIX_ARMOR_HELMET": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "HELIX_ARMOR_LEGGINGS": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "HELIX_CHOPPER": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "HELLFIRE_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "HELLSTORM_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "HOLLOW_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOLLOW_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOLLOW_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOLLOW_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOLY_DRAGON_BOOTS": {
+   "RUBY_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:20"
+    ]
+   }
+  },
+  "HOLY_DRAGON_CHESTPLATE": {
+   "RUBY_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:20"
+    ]
+   }
+  },
+  "HOLY_DRAGON_HELMET": {
+   "RUBY_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:20"
+    ]
+   }
+  },
+  "HOLY_DRAGON_LEGGINGS": {
+   "RUBY_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:20"
+    ]
+   }
+  },
+  "HOT_AURORA_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_AURORA_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_AURORA_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_AURORA_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_CRIMSON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_CRIMSON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_CRIMSON_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_CRIMSON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_FERVOR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_FERVOR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_FERVOR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_FERVOR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_HOLLOW_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_HOLLOW_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_HOLLOW_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_HOLLOW_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_TERROR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_TERROR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_TERROR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HOT_TERROR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "HYPERION": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:4"
+    ]
+   }
+  },
+  "ICE_SPRAY_WAND": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "INFERNAL_AURORA_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_AURORA_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_AURORA_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_AURORA_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_CRIMSON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_CRIMSON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_CRIMSON_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_CRIMSON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_FERVOR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_FERVOR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_FERVOR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_FERVOR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_HOLLOW_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_HOLLOW_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_HOLLOW_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_HOLLOW_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_TERROR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_TERROR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_TERROR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNAL_TERROR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "INFERNO_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "INFINI_VACUUM": {
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "INFINI_VACUUM_HOOVERIUS": {
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "PERIDOT_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "JUNGLE_AXE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   }
+  },
+  "LEGEND_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "LIVID_DAGGER": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "MAGMA_LORD_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "MAGMA_LORD_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "MAGMA_LORD_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "MAGMA_LORD_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "MAGMA_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "MASTIFF_BOOTS": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_1": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_2": {
+    "coins": 5000,
+    "items": [
+     "FINE_RUBY_GEM:1"
+    ]
+   },
+   "RUBY_3": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:4"
+    ]
+   },
+   "RUBY_4": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:16"
+    ]
+   }
+  },
+  "MASTIFF_CHESTPLATE": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_1": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_2": {
+    "coins": 5000,
+    "items": [
+     "FINE_RUBY_GEM:1"
+    ]
+   },
+   "RUBY_3": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:4"
+    ]
+   },
+   "RUBY_4": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:16"
+    ]
+   }
+  },
+  "MASTIFF_HELMET": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_1": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_2": {
+    "coins": 5000,
+    "items": [
+     "FINE_RUBY_GEM:1"
+    ]
+   },
+   "RUBY_3": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:4"
+    ]
+   },
+   "RUBY_4": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:16"
+    ]
+   }
+  },
+  "MASTIFF_LEGGINGS": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_1": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_2": {
+    "coins": 5000,
+    "items": [
+     "FINE_RUBY_GEM:1"
+    ]
+   },
+   "RUBY_3": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:4"
+    ]
+   },
+   "RUBY_4": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:16"
+    ]
+   }
+  },
+  "MAWDUST_DAGGER": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": []
+   }
+  },
+  "MELON_DICER": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "MELON_DICER_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "MELON_DICER_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "MIDAS_SWORD": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "MOOGMA_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   }
+  },
+  "MYTHOS_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1"
+    ]
+   }
+  },
+  "MYTHOS_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1"
+    ]
+   }
+  },
+  "MYTHOS_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1"
+    ]
+   }
+  },
+  "MYTHOS_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1"
+    ]
+   }
+  },
+  "NECROMANCER_LORD_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "NECROMANCER_LORD_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "NECROMANCER_LORD_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "NECROMANCER_LORD_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "NOVA_SWORD": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_2": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_3": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_4": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_5": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_6": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "NUTCRACKER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "NUTCRACKER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "NUTCRACKER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "NUTCRACKER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "OLD_DRAGON_BOOTS": {
+   "DEFENSIVE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:10",
+     "FINE_AMETHYST_GEM:10"
+    ]
+   }
+  },
+  "OLD_DRAGON_CHESTPLATE": {
+   "DEFENSIVE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:10",
+     "FINE_AMETHYST_GEM:10"
+    ]
+   }
+  },
+  "OLD_DRAGON_HELMET": {
+   "DEFENSIVE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:10",
+     "FINE_AMETHYST_GEM:10"
+    ]
+   }
+  },
+  "OLD_DRAGON_LEGGINGS": {
+   "DEFENSIVE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:10",
+     "FINE_AMETHYST_GEM:10"
+    ]
+   }
+  },
+  "ORNATE_ZOMBIE_SWORD": {
+   "RUBY_0": {
+    "coins": 20000,
+    "items": [
+     "FINE_RUBY_GEM:10"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_1": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_10": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_11": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_12": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_13": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_2": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_3": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_4": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_5": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_6": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_7": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_8": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_BOOTS_9": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_1": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_10": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_11": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_12": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_13": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_2": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_3": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_4": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_5": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_6": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_7": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_8": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHESTPLATE_9": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_CHISEL": {
+   "CHISEL_0": {
+    "coins": 0,
+    "items": []
+   },
+   "CHISEL_1": {
+    "coins": 0,
+    "items": []
+   },
+   "CHISEL_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_1": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_10": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_11": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_12": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_13": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_2": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_3": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_4": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_5": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_6": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_7": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_8": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_HELMET_9": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_1": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_10": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_11": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_12": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_13": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_2": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_3": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_4": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_5": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_6": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_7": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_8": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "PERFECT_LEGGINGS_9": {
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_1": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_2": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "POLISHED_TOPAZ_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "POOCH_SWORD": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "POWER_ARTIFACT": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JASPER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "POWER_RELIC": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AQUAMARINE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "CITRINE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JASPER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "ONYX_0": {
+    "coins": 0,
+    "items": []
+   },
+   "OPAL_0": {
+    "coins": 0,
+    "items": []
+   },
+   "PERIDOT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "TOPAZ_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "POWER_RING": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "AMETHYST_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "POWER_TALISMAN": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "POWER_WITHER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:2"
+    ]
+   }
+  },
+  "POWER_WITHER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:2"
+    ]
+   }
+  },
+  "POWER_WITHER_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:2"
+    ]
+   }
+  },
+  "POWER_WITHER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:2"
+    ]
+   }
+  },
+  "PRECURSOR_EYE": {
+   "AMETHYST_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "RUBY_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:20"
+    ]
+   }
+  },
+  "PRIMORDIAL_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:5",
+     "FINE_JASPER_GEM:5",
+     "FINE_AMETHYST_GEM:5",
+     "FINE_SAPPHIRE_GEM:5"
+    ]
+   }
+  },
+  "PRIMORDIAL_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:5",
+     "FINE_JASPER_GEM:5",
+     "FINE_AMETHYST_GEM:5",
+     "FINE_SAPPHIRE_GEM:5"
+    ]
+   }
+  },
+  "PRIMORDIAL_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:5",
+     "FINE_JASPER_GEM:5",
+     "FINE_AMETHYST_GEM:5",
+     "FINE_SAPPHIRE_GEM:5"
+    ]
+   }
+  },
+  "PRIMORDIAL_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_RUBY_GEM:5",
+     "FINE_JASPER_GEM:5",
+     "FINE_AMETHYST_GEM:5",
+     "FINE_SAPPHIRE_GEM:5"
+    ]
+   }
+  },
+  "PROTECTOR_DRAGON_BOOTS": {
+   "AMETHYST_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AMETHYST_GEM:20"
+    ]
+   }
+  },
+  "PROTECTOR_DRAGON_CHESTPLATE": {
+   "AMETHYST_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AMETHYST_GEM:20"
+    ]
+   }
+  },
+  "PROTECTOR_DRAGON_HELMET": {
+   "AMETHYST_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AMETHYST_GEM:20"
+    ]
+   }
+  },
+  "PROTECTOR_DRAGON_LEGGINGS": {
+   "AMETHYST_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AMETHYST_GEM:20"
+    ]
+   }
+  },
+  "PUMPKIN_DICER": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "PUMPKIN_DICER_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "PUMPKIN_DICER_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "RAGNAROCK_AXE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "RANCHERS_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "REAPER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "REAPER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "REAPER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "REAPER_MASK": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   },
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "REAPER_SWORD": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "REINFORCED_CHISEL": {
+   "CHISEL_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "REKINDLED_EMBER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "REKINDLED_EMBER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "REKINDLED_EMBER_HELMET": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "REKINDLED_EMBER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "REVIVED_HEART": {
+   "RUBY_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "ROD_OF_THE_SEA": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "AQUAMARINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:4"
+    ]
+   }
+  },
+  "RUNIC_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": []
+   },
+   "SAPPHIRE_1": {
+    "coins": 250000,
+    "items": []
+   }
+  },
+  "SALMON_BOOTS_NEW": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SALMON_CHESTPLATE_NEW": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SALMON_HELMET_NEW": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SALMON_LEGGINGS_NEW": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SCORPION_FOIL": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SCYLLA": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "SHADOW_ASSASSIN_BOOTS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SHADOW_ASSASSIN_CHESTPLATE": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SHADOW_ASSASSIN_HELMET": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SHADOW_ASSASSIN_LEGGINGS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SHADOW_FURY": {
+   "JASPER_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40"
+    ]
+   }
+  },
+  "SHARK_SCALE_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "SHARK_SCALE_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "SHARK_SCALE_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "SHARK_SCALE_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "SHIMMERING_LIGHT_HOOD": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SHIMMERING_LIGHT_SLIPPERS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SHIMMERING_LIGHT_TROUSERS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SHIMMERING_LIGHT_TUNIC": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SILVER_HUNTER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SILVER_HUNTER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SILVER_HUNTER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SILVER_HUNTER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SLUG_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   }
+  },
+  "SORROW_BOOTS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_JADE_GEM:20",
+     "FINE_AMBER_GEM:20",
+     "FINE_TOPAZ_GEM:20",
+     "FINE_RUBY_GEM:20",
+     "FINE_AMETHYST_GEM:20",
+     "FINE_SAPPHIRE_GEM:20",
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SORROW_CHESTPLATE": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_JADE_GEM:20",
+     "FINE_AMBER_GEM:20",
+     "FINE_TOPAZ_GEM:20",
+     "FINE_RUBY_GEM:20",
+     "FINE_AMETHYST_GEM:20",
+     "FINE_SAPPHIRE_GEM:20",
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SORROW_HELMET": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_JADE_GEM:20",
+     "FINE_AMBER_GEM:20",
+     "FINE_TOPAZ_GEM:20",
+     "FINE_RUBY_GEM:20",
+     "FINE_AMETHYST_GEM:20",
+     "FINE_SAPPHIRE_GEM:20",
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SORROW_LEGGINGS": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "UNIVERSAL_0": {
+    "coins": 250000,
+    "items": [
+     "FINE_JADE_GEM:20",
+     "FINE_AMBER_GEM:20",
+     "FINE_TOPAZ_GEM:20",
+     "FINE_RUBY_GEM:20",
+     "FINE_AMETHYST_GEM:20",
+     "FINE_SAPPHIRE_GEM:20",
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SOUL_WHIP": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "SPEED_WITHER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "SPEED_WITHER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "SPEED_WITHER_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "SPEED_WITHER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "SPONGE_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SPONGE_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SPONGE_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SPONGE_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   }
+  },
+  "SQUASH_BOOTS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "SQUASH_CHESTPLATE": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "SQUASH_HELMET": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "SQUASH_LEGGINGS": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   }
+  },
+  "SQUID_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_ADAPTIVE_BOOTS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_ADAPTIVE_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_ADAPTIVE_HELMET": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_ADAPTIVE_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_BAT_WAND": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "STARRED_BONZO_STAFF": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   },
+   "SAPPHIRE_1": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "STARRED_DAEDALUS_AXE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   }
+  },
+  "STARRED_GLACIAL_SCYTHE": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_ICE_SPRAY_WAND": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "STARRED_MIDAS_SWORD": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STARRED_SHADOW_ASSASSIN_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STARRED_SHADOW_ASSASSIN_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STARRED_SHADOW_ASSASSIN_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STARRED_SHADOW_ASSASSIN_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STARRED_SHADOW_FURY": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40"
+    ]
+   }
+  },
+  "STARRED_STONE_BLADE": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STARRED_YETI_SWORD": {
+   "JASPER_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "STARTER_LAVA_ROD": {
+   "AQUAMARINE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STING": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40",
+     "FINE_RUBY_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_AMETHYST_GEM:40"
+    ]
+   }
+  },
+  "STONE_BLADE": {
+   "DEFENSIVE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "STRANDED_TREECAPITATOR": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "STRONG_DRAGON_BOOTS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STRONG_DRAGON_CHESTPLATE": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STRONG_DRAGON_HELMET": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "STRONG_DRAGON_LEGGINGS": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   }
+  },
+  "SULPHUR_BOW": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "SUPERIOR_DRAGON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "SUPERIOR_DRAGON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "SUPERIOR_DRAGON_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "SUPERIOR_DRAGON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "SWORD_OF_REVELATIONS": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "TANK_WITHER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "DEFENSIVE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_RUBY_GEM:2",
+     "FLAWLESS_AMETHYST_GEM:2"
+    ]
+   }
+  },
+  "TANK_WITHER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "DEFENSIVE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_RUBY_GEM:2",
+     "FLAWLESS_AMETHYST_GEM:2"
+    ]
+   }
+  },
+  "TANK_WITHER_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "DEFENSIVE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_RUBY_GEM:2",
+     "FLAWLESS_AMETHYST_GEM:2"
+    ]
+   }
+  },
+  "TANK_WITHER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "DEFENSIVE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_RUBY_GEM:2",
+     "FLAWLESS_AMETHYST_GEM:2"
+    ]
+   }
+  },
+  "TARANTULA_FANG": {
+   "COMBAT_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "TAURUS_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   }
+  },
+  "TERROR_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "TERROR_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "TERROR_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "TERROR_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CANE_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CANE_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CANE_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CARROT_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CARROT_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_CARROT_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_POTATO_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_POTATO_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_POTATO_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_SUNFLOWER_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_SUNFLOWER_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_SUNFLOWER_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WARTS_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WARTS_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WARTS_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WHEAT_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WHEAT_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WHEAT_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WILD_ROSE_1": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WILD_ROSE_2": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   }
+  },
+  "THEORETICAL_HOE_WILD_ROSE_3": {
+   "PERIDOT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_PERIDOT_GEM:20"
+    ]
+   },
+   "PERIDOT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_PERIDOT_GEM:40"
+    ]
+   },
+   "PERIDOT_2": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:1"
+    ]
+   },
+   "PERIDOT_3": {
+    "coins": 1000000,
+    "items": [
+     "FLAWLESS_PERIDOT_GEM:2"
+    ]
+   }
+  },
+  "THUNDER_BOOTS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "THUNDER_CHESTPLATE": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "THUNDER_HELMET": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "THUNDER_LEGGINGS": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "TIKI_MASK": {
+   "AQUAMARINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_AQUAMARINE_GEM:1"
+    ]
+   },
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:1"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:4"
+    ]
+   }
+  },
+  "TITANIUM_DRILL_2": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "TITANIUM_DRILL_3": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   }
+  },
+  "TITANIUM_DRILL_4": {
+   "AMBER_0": {
+    "coins": 0,
+    "items": []
+   },
+   "JADE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JADE_GEM:20"
+    ]
+   },
+   "MINING_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JADE_GEM:1",
+     "FLAWLESS_AMBER_GEM:1",
+     "FLAWLESS_TOPAZ_GEM:1"
+    ]
+   }
+  },
+  "TORMENTOR": {
+   "COMBAT_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_JASPER_GEM:40"
+    ]
+   },
+   "COMBAT_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_RUBY_GEM:40",
+     "FINE_AMETHYST_GEM:40",
+     "FINE_SAPPHIRE_GEM:40",
+     "FINE_JASPER_GEM:40"
+    ]
+   }
+  },
+  "TREECAPITATOR_AXE": {
+   "CITRINE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_CITRINE_GEM:20"
+    ]
+   },
+   "CITRINE_1": {
+    "coins": 100000,
+    "items": [
+     "FINE_CITRINE_GEM:40"
+    ]
+   }
+  },
+  "UNSTABLE_DRAGON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:10",
+     "FINE_SAPPHIRE_GEM:10"
+    ]
+   }
+  },
+  "UNSTABLE_DRAGON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:10",
+     "FINE_SAPPHIRE_GEM:10"
+    ]
+   }
+  },
+  "UNSTABLE_DRAGON_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:10",
+     "FINE_SAPPHIRE_GEM:10"
+    ]
+   }
+  },
+  "UNSTABLE_DRAGON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:10",
+     "FINE_SAPPHIRE_GEM:10"
+    ]
+   }
+  },
+  "VALKYRIE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "JASPER_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:2"
+    ]
+   }
+  },
+  "VOIDEDGE_KATANA": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:40"
+    ]
+   }
+  },
+  "VORPAL_KATANA": {
+   "JASPER_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:20"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:40"
+    ]
+   }
+  },
+  "WATER_HYDRA_HEAD": {
+   "AQUAMARINE_0": {
+    "coins": 0,
+    "items": []
+   }
+  },
+  "WISE_DRAGON_BOOTS": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "WISE_DRAGON_CHESTPLATE": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "WISE_DRAGON_HELMET": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "WISE_DRAGON_LEGGINGS": {
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "WISE_WITHER_BOOTS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:4"
+    ]
+   }
+  },
+  "WISE_WITHER_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:4"
+    ]
+   }
+  },
+  "WISE_WITHER_HELMET": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:4"
+    ]
+   }
+  },
+  "WISE_WITHER_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_JASPER_GEM:1",
+     "FLAWLESS_SAPPHIRE_GEM:1",
+     "FLAWLESS_RUBY_GEM:1",
+     "FLAWLESS_AMETHYST_GEM:1"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 250000,
+    "items": [
+     "FLAWLESS_SAPPHIRE_GEM:4"
+    ]
+   }
+  },
+  "YETI_SWORD": {
+   "JASPER_0": {
+    "coins": 100000,
+    "items": [
+     "FINE_JASPER_GEM:40"
+    ]
+   },
+   "SAPPHIRE_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_SAPPHIRE_GEM:20"
+    ]
+   }
+  },
+  "YOUNG_DRAGON_BOOTS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "YOUNG_DRAGON_CHESTPLATE": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "YOUNG_DRAGON_HELMET": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "YOUNG_DRAGON_LEGGINGS": {
+   "COMBAT_0": {
+    "coins": 50000,
+    "items": [
+     "FINE_JASPER_GEM:5",
+     "FINE_SAPPHIRE_GEM:5",
+     "FINE_RUBY_GEM:5",
+     "FINE_AMETHYST_GEM:5"
+    ]
+   }
+  },
+  "ZOMBIE_SWORD": {
+   "SAPPHIRE_0": {
+    "coins": 0,
+    "items": []
+   }
+  }
+ }
+}

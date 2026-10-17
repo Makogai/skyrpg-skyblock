@@ -39,6 +39,8 @@ public final class SkyMenus {
                     com.skyrpg.skyblock.mining.CommissionsMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.sack.SacksMenu> SACKS = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("sacks"), new ExtendedMenuType<>(com.skyrpg.skyblock.sack.SacksMenu::new, com.skyrpg.skyblock.sack.SacksMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.gem.GemGrinderMenu> GEM_GRINDER = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("gem_grinder"), new MenuType<>(com.skyrpg.skyblock.gem.GemGrinderMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<com.skyrpg.skyblock.pet.PetsMenu> PETS = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("pets"), new ExtendedMenuType<>(com.skyrpg.skyblock.pet.PetsMenu::new, com.skyrpg.skyblock.pet.PetsMenu.View.CODEC));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),

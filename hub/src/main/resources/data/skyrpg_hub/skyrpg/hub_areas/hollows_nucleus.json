@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/hollows_nucleus",
+  "origin": [
+    -40,
+    64,
+    -40
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "island": "Crystal Hollows",
+  "arrival": {
+    "pos": [
+      0.5,
+      111.0,
+      -6.5
+    ],
+    "yaw": 0.0
+  }
+}

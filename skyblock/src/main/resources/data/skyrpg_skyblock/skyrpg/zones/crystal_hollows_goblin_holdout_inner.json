@@ -1,0 +1,76 @@
+{
+  "name": "Goblin Holdout",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    -250,
+    64,
+    0
+  ],
+  "to": [
+    -40,
+    186,
+    38
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    }
+  }
+}

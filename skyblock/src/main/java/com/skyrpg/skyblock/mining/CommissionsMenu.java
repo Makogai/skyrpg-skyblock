@@ -43,15 +43,18 @@ public final class CommissionsMenu extends AbstractContainerMenu {
 
     private final View view;
     private final ServerPlayer owner;
+    /** Which board this is: the Crystal Hollows' (opened there) or the Dwarven Mines'. */
+    private final boolean hollows;
 
     public CommissionsMenu(int id, Inventory inventory, View view) {
-        this(id, view, null);
+        this(id, view, null, false);
     }
 
-    private CommissionsMenu(int id, View view, ServerPlayer owner) {
+    private CommissionsMenu(int id, View view, ServerPlayer owner, boolean hollows) {
         super(SkyMenus.COMMISSIONS, id);
         this.view = view;
         this.owner = owner;
+        this.hollows = hollows;
     }
 
     public View view() {
@@ -59,7 +62,8 @@ public final class CommissionsMenu extends AbstractContainerMenu {
     }
 
     public static void open(ServerPlayer player) {
-        View view = view(player);
+        boolean hollows = Commissions.inHollows(player);
+        View view = view(player, hollows);
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {
@@ -73,13 +77,14 @@ public final class CommissionsMenu extends AbstractContainerMenu {
 
             @Override
             public AbstractContainerMenu createMenu(int id, Inventory inventory, Player p) {
-                return new CommissionsMenu(id, view, player);
+                return new CommissionsMenu(id, view, player, hollows);
             }
         });
     }
 
-    private static View view(ServerPlayer player) {
-        Commissions.Board board = Commissions.board(player);
+    private static View view(ServerPlayer player, boolean hollows) {
+        Commissions.Board board = Commissions.board(player, hollows);
+        Commissions.Board daily = player.getAttachedOrElse(Commissions.BOARD, Commissions.Board.EMPTY);
         List<SlotView> slots = new ArrayList<>();
         for (Commissions.Slot slot : board.slots()) {
             Commissions.Task task = Commissions.task(slot.task());
@@ -88,7 +93,7 @@ public final class CommissionsMenu extends AbstractContainerMenu {
             }
         }
         String day = LocalDate.now(ZoneOffset.UTC).toString();
-        int today = day.equals(board.day()) ? board.today() : 0;
+        int today = day.equals(daily.day()) ? daily.today() : 0;
         return new View(slots, board.completed(), Math.max(0, 4 - today), Hotm.level(player));
     }
 
@@ -97,7 +102,7 @@ public final class CommissionsMenu extends AbstractContainerMenu {
         if (owner == null || clicker != owner) {
             return false;
         }
-        String problem = Commissions.claim(owner, id);
+        String problem = Commissions.claim(owner, hollows, id);
         if (!problem.isEmpty()) {
             owner.sendOverlayMessage(Component.literal(problem).withStyle(ChatFormatting.RED));
         }

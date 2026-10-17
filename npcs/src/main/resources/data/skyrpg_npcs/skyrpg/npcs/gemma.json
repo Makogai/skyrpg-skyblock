@@ -1,0 +1,23 @@
+{
+  "name": "Gemma",
+  "role": "Gemstone Grinder",
+  "color": "#FF55FF",
+  "hint": "Gemstones",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    12.5,
+    111.0,
+    -3.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Ruby, Amethyst, Jade, Amber, Sapphire, Topaz. Collect them all!",
+    "Bring me gear and gemstones, I'll set them."
+  ],
+  "action": {
+    "type": "gemstone_grinder"
+  }
+}

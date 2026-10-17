@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Sisko",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    -11.5,
+    111.0,
+    -3.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The Nucleus hums. Bring me the crystals.",
+    "I have work for you down here too."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

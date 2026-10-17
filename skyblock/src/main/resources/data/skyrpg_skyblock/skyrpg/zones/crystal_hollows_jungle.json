@@ -1,0 +1,118 @@
+{
+  "name": "Jungle",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    -250,
+    64,
+    -250
+  ],
+  "to": [
+    -1,
+    186,
+    -40
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:slime",
+      "name": "Sludge",
+      "level": 47,
+      "health": 5000,
+      "damage": 500,
+      "xp": 70,
+      "coins": 15,
+      "max": 10,
+      "every": 4,
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SLUDGE_JUICE",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    },
+    {
+      "type": "minecraft:endermite",
+      "name": "Thyst",
+      "level": 39,
+      "health": 5000,
+      "damage": 250,
+      "xp": 58,
+      "coins": 13,
+      "max": 5,
+      "every": 6,
+      "indoors": true,
+      "drops": [
+        {
+          "item": "ROUGH_AMETHYST_GEM",
+          "chance": 1,
+          "min": 4,
+          "max": 7
+        }
+      ]
+    }
+  ]
+}

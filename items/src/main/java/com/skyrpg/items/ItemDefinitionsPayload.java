@@ -52,6 +52,7 @@ public record ItemDefinitionsPayload(int part, int parts, byte[] data) implement
         all.add("sets", sets);
         all.add("reforges", com.skyrpg.items.reforge.Reforges.toJson());
         all.add("enchants", com.skyrpg.items.enchant.Enchants.toJson());
+        all.add("gemstones", com.skyrpg.items.gem.Gemstones.toJson());
         byte[] zipped = gzip(all.toString().getBytes(StandardCharsets.UTF_8));
         int parts = Math.max(1, (zipped.length + PART_SIZE - 1) / PART_SIZE);
         List<ItemDefinitionsPayload> out = new ArrayList<>(parts);
@@ -86,6 +87,9 @@ public record ItemDefinitionsPayload(int part, int parts, byte[] data) implement
         }
         if (all.has("enchants")) {
             com.skyrpg.items.enchant.Enchants.load(parse(all.getAsJsonObject("enchants")));
+        }
+        if (all.has("gemstones")) {
+            com.skyrpg.items.gem.Gemstones.load(parse(all.getAsJsonObject("gemstones")));
         }
     }
 

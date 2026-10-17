@@ -1,0 +1,124 @@
+{
+  "name": "Goblin Holdout",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "from": [
+    -250,
+    64,
+    39
+  ],
+  "to": [
+    -1,
+    186,
+    250
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Goblin",
+      "level": 23,
+      "health": 800,
+      "damage": 300,
+      "xp": 34,
+      "coins": 7,
+      "max": 10,
+      "every": 3,
+      "indoors": true,
+      "drops": [
+        {
+          "item": "GOBLIN_EGG",
+          "chance": 0.01,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Knifethrower",
+      "level": 23,
+      "health": 800,
+      "damage": 300,
+      "xp": 34,
+      "coins": 7,
+      "max": 4,
+      "every": 6,
+      "indoors": true,
+      "drops": []
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Weakling",
+      "level": 3,
+      "health": 200,
+      "damage": 20,
+      "xp": 5,
+      "coins": 1,
+      "max": 4,
+      "every": 6,
+      "indoors": true,
+      "drops": []
+    }
+  ]
+}

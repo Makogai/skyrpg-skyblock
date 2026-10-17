@@ -1,0 +1,20 @@
+{
+  "name": "Kalhuiki Door Guardian",
+  "role": "Jungle Temple",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    -136.5,
+    97.0,
+    -122.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.wood.hit",
+  "greetings": [
+    "Only those with a Jungle Key may pass.",
+    "The temple keeps its treasure well."
+  ]
+}

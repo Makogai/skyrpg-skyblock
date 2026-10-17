@@ -1,0 +1,20 @@
+{
+  "name": "Keeper of Emerald",
+  "role": "Mines of Divan",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    145.5,
+    102.0,
+    -120.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.stone.place",
+  "greetings": [
+    "I guard Divan's emerald part.",
+    "Bring what was lost."
+  ]
+}

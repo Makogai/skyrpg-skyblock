@@ -57,7 +57,7 @@ public final class CommissionsScreen extends AbstractContainerScreen<Commissions
             String label = slot.done() ? "Click to claim!" : slot.progress() + "/" + slot.amount();
             Draw.fit(g, font, Component.literal(label), x + w - 6, y + 25, 70, 0.7f, 0.45f, Draw.Align.RIGHT, slot.done() ? Theme.GREEN : Theme.TEXT, false);
         }
-        Draw.fit(g, font, Component.literal("Rewards: HotM XP, 500 Mithril Powder, Mining XP"), leftPos + imageWidth / 2, topPos + imageHeight - 14,
+        Draw.fit(g, font, Component.literal("Rewards: HotM XP, powder and Mining XP"), leftPos + imageWidth / 2, topPos + imageHeight - 14,
                 imageWidth - 20, 0.65f, 0.45f, Draw.Align.CENTER, Theme.DIM, false);
     }
 

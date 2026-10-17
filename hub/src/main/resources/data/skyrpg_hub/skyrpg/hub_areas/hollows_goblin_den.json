@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/hollows_goblin_den",
+  "origin": [
+    -180,
+    90,
+    110
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "island": "Crystal Hollows",
+  "arrival": {
+    "pos": [
+      -144.5,
+      96.0,
+      168.5
+    ],
+    "yaw": 0.0
+  }
+}

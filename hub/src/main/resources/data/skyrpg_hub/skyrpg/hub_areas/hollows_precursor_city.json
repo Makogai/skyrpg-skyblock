@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/hollows_precursor_city",
+  "origin": [
+    100,
+    80,
+    100
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "island": "Crystal Hollows",
+  "arrival": {
+    "pos": [
+      145.5,
+      91.0,
+      163.5
+    ],
+    "yaw": 0.0
+  }
+}

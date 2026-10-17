@@ -1,0 +1,20 @@
+{
+  "name": "Keeper of Gold",
+  "role": "Mines of Divan",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crystal_hollows",
+  "pos": [
+    169.5,
+    102.0,
+    -144.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.stone.place",
+  "greetings": [
+    "I guard Divan's gold part.",
+    "Bring what was lost."
+  ]
+}

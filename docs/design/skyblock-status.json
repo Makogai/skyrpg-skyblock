@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "Sacks: Hypixel's 28 kinds, gathered items go straight in, /sacks and /gfs",
+  "latest": "Crystal Hollows: a generated gemstone world with treasure chests and its structures; gemstones on 499 items",
   "phase": {
     "name": "Phase 2: Mid game",
-    "done": 44
+    "done": 52
   },
   "categories": [
     {
@@ -165,7 +165,7 @@
           "name": "Reforges, stars & gems",
           "icon": "item/prismarine_crystals",
           "weight": 5,
-          "done": 35
+          "done": 55
         },
         {
           "name": "Accessories",
@@ -213,7 +213,7 @@
           "name": "Dwarven Mines & Hollows",
           "icon": "item/iron_pickaxe",
           "weight": 10,
-          "done": 40
+          "done": 65
         },
         {
           "name": "The End",

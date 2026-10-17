@@ -1,0 +1,16 @@
+{
+  "type": "skyrpg_hub:public_mines",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "skyrpg_skyblock:crystal_hollows",
+    "biome_source": {
+      "type": "skyrpg_skyblock:hollows",
+      "jungle": "skyrpg_skyblock:hollows_jungle",
+      "mithril_deposits": "skyrpg_skyblock:hollows_mithril_deposits",
+      "goblin_holdout": "skyrpg_skyblock:hollows_goblin_holdout",
+      "precursor_remnants": "skyrpg_skyblock:hollows_precursor_remnants",
+      "magma_fields": "skyrpg_skyblock:hollows_magma_fields",
+      "nucleus": "skyrpg_skyblock:hollows_nucleus"
+    }
+  }
+}
