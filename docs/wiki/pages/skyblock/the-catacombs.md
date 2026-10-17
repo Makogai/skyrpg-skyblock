@@ -40,6 +40,10 @@ Every run is a new map: a grid of rooms (some long, square or L-shaped) joined b
 - **Keys and doors**: some doors are black **Wither doors**. Clearing the right room drops a **Wither Key**; walk into it, then right-click the door. The **Blood room**'s red door needs the **Blood Key** the same way.
 - **Secrets**: hidden chests, items lying on ledges, and bats. Each holds essence or a dungeon item (Spirit Leaps, Healing Tissue, traps...). They count toward your score.
 - **The Fairy room** (pink) is a quiet room; it counts as cleared when you walk in.
+- **Puzzles** (purple rooms; Floor I has one, later floors more). Solve one and its room is cleared; get it wrong (or leave it) and it costs 14 Skill score:
+  - **Three Weirdos**: three people before three chests. Talk to each; exactly one of them tells the truth. Open the chest with the reward.
+  - **Higher Or Lower**: ten blazes float with their health over their heads. Kill them in the order the sign says (lowest to highest, or highest to lowest).
+  - **Tic Tac Toe**: right-click a white tile on the floor to play. The AI never loses, so a draw is the way to solve it; if it wins, you fail.
 - **The Blood room**: opening it wakes **the Watcher**, who sends his undead in waves. Kill them all and he opens the way to the **boss**.
 - **Dying** makes you a **ghost**: you float, unseen, and can't fight or open anything, until the boss room (everyone comes back for the boss). If the whole party is dead, the run fails.
 
@@ -53,7 +57,7 @@ The sidebar shows the run: time, rooms cleared, secrets found, your keys, and yo
 
 | Part | Out of | How |
 | --- | --- | --- |
-| Skill | 100 | 20 + 80 for the share of rooms cleared, -2 for each death |
+| Skill | 100 | 20 + 80 for the share of rooms cleared, -2 for each death, -14 for each puzzle failed or left |
 | Explore | 100 | 60 for the share of rooms cleared, 40 for secrets (Floor I counts 30% of them as all of them, Floor VII 100%) |
 | Speed | 100 | full within the floor's time (10 minutes on Floor I), then a little less every few seconds |
 | Bonus | - | crypts and the Mimic (later) |
@@ -80,4 +84,4 @@ Floor I's chests hold Undead Essence and Bonzo Fragments, sometimes a Hot Potato
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: puzzles, traps, minibosses, crypts and the Mimic, blessings, class abilities, the dungeon map, Floors II-VII's own bosses, Master Mode, dungeon item stats, stars and essence shops.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, class abilities, the dungeon map, Floors II-VII's own bosses, Master Mode, dungeon item stats, stars and essence shops.

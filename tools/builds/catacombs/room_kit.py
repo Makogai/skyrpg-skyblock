@@ -46,8 +46,10 @@ TAG = "skyrpg_catacombs"
 SHAPES = {
     "one": [(0, 0)], "two": [(0, 0), (1, 0)], "three": [(0, 0), (1, 0), (2, 0)], "four": [(0, 0), (1, 0), (2, 0), (3, 0)],
     "square": [(0, 0), (1, 0), (0, 1), (1, 1)], "l": [(0, 0), (1, 0), (0, 1)],
-    "entrance": [(0, 0)], "blood": [(0, 0)], "fairy": [(0, 0)],
+    "entrance": [(0, 0)], "blood": [(0, 0)], "fairy": [(0, 0)], "puzzle": [(0, 0)],
 }
+# The puzzles the mod knows, and the clear space each needs around its puzzle() marker (x/z radius, height above it).
+PUZZLES = {"weirdos": (5, 4), "blaze": (7, 12), "tictactoe": (3, 4)}
 # What a mob marker's role becomes depends on the floor (the mod picks the mob): zombie (melee undead), skeleton
 # (archer), crypt (crypt undead, melee), spider, elite (a stronger one, at most one a room).
 ROLES = ("zombie", "skeleton", "crypt", "spider", "elite")
@@ -62,7 +64,7 @@ class Room(Piece):
         w = max(c[0] for c in self.cells_of) + 1
         d = max(c[1] for c in self.cells_of) + 1
         super().__init__(path, w * CELL - 1, HEIGHT, d * CELL - 1)
-        self.special = shape in ("entrance", "blood", "fairy")
+        self.special = shape in ("entrance", "blood", "fairy", "puzzle")
         self.markers = []
 
     # -- where things are -------------------------------------------------------------------------------------------
@@ -177,6 +179,14 @@ class Room(Piece):
         """Fairy room only: where the fairy is."""
         self._marker(x, y, z, "fairy")
 
+    def puzzle(self, x, y, z, kind):
+        """Puzzle room only: the middle of the puzzle, on the floor (y = floor + 1). The mod builds the puzzle around it, in
+        the clear space PUZZLES[kind] gives (weirdos: three NPCs and chests in a row along x, facing +z (south);
+        blaze: blazes floating around it; tictactoe: a 3 x 3 board of floor tiles)."""
+        if kind not in PUZZLES:
+            raise ValueError(f"unknown puzzle {kind}")
+        self._marker(x, y, z, "puzzle", puzzle=kind)
+
     # -- checking and saving ----------------------------------------------------------------------------------------
     def check(self):
         problems = []
@@ -207,6 +217,20 @@ class Room(Piece):
             problems.append("the blood room needs a watcher()")
         if self.shape == "fairy" and "fairy" not in kinds:
             problems.append("the fairy room needs a fairy()")
+        if self.shape == "puzzle":
+            puzzles = [m for m in self.markers if m[0] == "puzzle"]
+            if len(puzzles) != 1:
+                problems.append("a puzzle room needs exactly one puzzle()")
+            else:
+                _, px, py, pz, data = puzzles[0]
+                radius, height = PUZZLES[data["puzzle"]]
+                for x in range(px - radius, px + radius + 1):
+                    for z in range(pz - radius, pz + radius + 1):
+                        if self.get(x, py - 1, z) in (None, "minecraft:air"):
+                            problems.append(f"no floor under the puzzle at ({x}, {py - 1}, {z})")
+                        for y in range(py, py + height):
+                            if self.get(x, y, z) not in (None, "minecraft:air"):
+                                problems.append(f"({x}, {y}, {z}) is in the puzzle's space")
         if not self.special and not any(m[0] == "mob" and m[4].get("star") for m in self.markers):
             problems.append("a normal room needs at least one star mob")
         if sum(1 for m in self.markers if m[0] == "mob" and m[4].get("role") == "elite") > 1:

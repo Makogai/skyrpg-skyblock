@@ -180,7 +180,9 @@ public final class Layout {
             for (Shape shape : shapes) {
                 for (int turns : shuffled(random, 0, 1, 2, 3)) {
                     List<int[]> cells = cellsOf(shape, turns, cell[0], cell[1]);
-                    if (cells != null && cells.stream().allMatch(c -> free(c[0], c[1]))) {
+                    // The shape must cover the cell being filled (a turned L can miss its own corner).
+                    boolean covers = cells.stream().anyMatch(c -> c[0] == cell[0] && c[1] == cell[1]);
+                    if (covers && cells.stream().allMatch(c -> free(c[0], c[1]))) {
                         add(Type.NORMAL, shape, turns, cells);
                         placed = true;
                         break;

@@ -499,9 +499,20 @@ phase so the next session can pick up where this one stopped.
       entities are removed when they load; ghosts are flying, invisible, invulnerable players (no gamemode change); a
       full-party death fails the run (a quarter of the XP, no chests, back to the Dungeon Hub); keys are picked up by
       walking into them; F1 mob numbers from NEU's lowest values; F1 chest odds ours.
-      Not yet: puzzles, traps, minibosses, crypts, the Mimic, blessings, the Fairy's revive, class abilities and
+      Not yet: more puzzles, traps, minibosses, crypts, the Mimic, blessings, the Fairy's revive, class abilities and
       passives, the dungeon map item, boss arenas and F2-F7 bosses, Master Mode, dungeon item stats, stars, essence
       shops (Malik), Croesus, Saul's Recommendation, Party Finder.
+
+- [x] **Puzzles, first three** (`dungeon/Puzzles`; rooms `tools/builds/catacombs/rooms_puzzles.py`, a `puzzle(kind)` marker and
+      its clear space checked by the kit). Built when someone walks in. Three Weirdos: villagers with NoAI before three
+      chests; statements generated (my chest / not my chest / X's chest / not X's chest) until exactly one is true for
+      the answer and no other chest fits; the right chest solves it, a wrong one fails it. Higher Or Lower: ten NoAI
+      blazes with SkyBlock health over their heads, ascending or descending (the sign); out of order fails it and the
+      rest vanish. Tic Tac Toe: a 3 x 3 board of concrete floor tiles, the AI opens and plays minimax; a draw or win
+      solves it, a loss fails it. Solving clears the room and gives a secret's reward; failed or unsolved puzzles cost
+      14 Skill each. Also fixed: an L turned 180° didn't cover its own anchor cell, so a map cell could be left empty
+      (crashed the build).
+      Decided: Hypixel's Weirdos lines are fixed riddles; ours are generated with the same "one tells the truth" rule.
 
 ### Owner directions (2026-10-16)
 

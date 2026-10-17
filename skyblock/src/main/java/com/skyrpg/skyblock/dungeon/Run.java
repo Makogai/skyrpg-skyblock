@@ -82,6 +82,7 @@ final class Run {
         int secrets;
         int secretsFound;
         final Set<BlockPos> secretChests = new HashSet<>();
+        Puzzles.Puzzle puzzle;
 
         RoomState(Layout.Room room) {
             this.room = room;
@@ -236,6 +237,9 @@ final class Run {
             if (kind.equals("secret_chest")) {
                 state.secretChests.add(marker.blockPosition());
             }
+            if (kind.equals("puzzle")) {
+                state.puzzle = Puzzles.create(data.getStringOr("puzzle", ""), this, state, marker.position());
+            }
             if (kind.startsWith("secret_")) {
                 state.secrets++;
             }
@@ -375,6 +379,10 @@ final class Run {
             return;
         }
         state.entered = true;
+        if (state.puzzle != null && !state.puzzle.built) {
+            state.puzzle.built = true;
+            state.puzzle.build();
+        }
         switch (state.room.type()) {
             case ENTRANCE, FAIRY -> state.cleared = true;
             default -> {
@@ -432,6 +440,11 @@ final class Run {
         if (secretBats.remove(id)) {
             secretFound(secretRoom.remove(id), killer);
             return;
+        }
+        for (RoomState state : rooms) {
+            if (state.puzzle != null) {
+                state.puzzle.died(entity, killer);
+            }
         }
         for (RoomState state : rooms) {
             if (state.stars.remove(id) && state.stars.isEmpty() && !state.cleared) {
@@ -750,6 +763,17 @@ final class Run {
             }
         }
         return rooms.length == 0 ? 0 : (double) done / rooms.length;
+    }
+
+    /** Puzzles not solved (failed, or never done): each costs Skill score. */
+    int failedPuzzles() {
+        int failed = 0;
+        for (RoomState state : rooms) {
+            if (state.puzzle != null && !state.puzzle.solved) {
+                failed++;
+            }
+        }
+        return failed;
     }
 
     int secretsFound() {

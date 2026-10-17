@@ -1,8 +1,8 @@
 package com.skyrpg.skyblock.dungeon;
 
 /**
- * Hypixel's dungeon score: Skill + Explore + Speed + Bonus. Skill: 20 + 80 x rooms cleared, -2 a death, -14 a failed
- * puzzle. Explore: 60 x rooms cleared + 40 x secrets found against the floor's share of them. Speed: 100 within the
+ * Hypixel's dungeon score: Skill + Explore + Speed + Bonus. Skill: 20 + 80 x rooms cleared, -2 a death, -14 a puzzle
+ * failed or left unsolved. Explore: 60 x rooms cleared + 40 x secrets found against the floor's share of them. Speed: 100 within the
  * floor's time allowance, then -1 every 12 s down to 90, every 24 s to 80, every 30 s to 70, every 36 s after.
  * Bonus: crypts (up to 5) and the Mimic (2), when those come. Rank: S+ 300, S 270, A 230, B 160, C 100, else D.
  */
@@ -16,7 +16,7 @@ final class Score {
 
     static Result compute(Run run) {
         double cleared = run.clearedShare();
-        int skill = clamp((int) Math.floor(20 + 80 * cleared) - 2 * run.deaths, 0, 100);
+        int skill = clamp((int) Math.floor(20 + 80 * cleared) - 2 * run.deaths - 14 * run.failedPuzzles(), 0, 100);
         int total = run.secretsTotal();
         int needed = (int) Math.ceil(total * run.floor.secretShare());
         int found = run.secretsFound();

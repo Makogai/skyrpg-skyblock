@@ -92,6 +92,11 @@ public final class Catacombs {
                 return InteractionResult.PASS;
             }
             BlockPos pos = hit.getBlockPos();
+            for (Run.RoomState state : run.rooms) {
+                if (state.puzzle != null && state.puzzle.built && state.puzzle.useBlock(server, pos)) {
+                    return InteractionResult.SUCCESS;
+                }
+            }
             if (run.useDoor(server, pos)) {
                 return InteractionResult.SUCCESS;
             }
@@ -115,6 +120,11 @@ public final class Catacombs {
             Run run = BY_PLAYER.get(player.getUUID());
             if (run == null || !entity.entityTags().contains(run.tag)) {
                 return InteractionResult.PASS;
+            }
+            for (Run.RoomState state : run.rooms) {
+                if (state.puzzle != null && state.puzzle.useEntity(server, entity)) {
+                    return InteractionResult.SUCCESS;
+                }
             }
             if (entity.entityTags().contains(BOSS_PORTAL)) {
                 run.enterBoss();
