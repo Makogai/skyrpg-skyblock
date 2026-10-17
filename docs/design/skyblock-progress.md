@@ -620,8 +620,10 @@ phase so the next session can pick up where this one stopped.
       (NEU health/drops; Fishing levels, weights and XP decided). The geysers are small lava pools now; the Magma
       Chamber zone is only the cave.
       Not yet: Plhlegblast and its pool, Golden Fish visuals, trophy SkyBlock XP.
-- [ ] The Dojo (Master Tao's seven tests, belts); Vulcan's essence shop; Rollim's and Kaus's duels; geysers; the
-      Vanquisher; a faction line in the sidebar.
+- [x] **The Dojo** (`crimson/Dojo`, on `KuudraMenu`'s list screen): Master Tao's seven tests adapted to the walled arena,
+      grades, belts with Combat XP. **Vulcan**: Crimson stars on Kuudra armour and belts (`DungeonItems.crimson`, Malik's
+      screen as "Vulcan"), +2% stats a star.
+- [ ] Vulcan's essence perks; Rollim's and Kaus's duels; the Vanquisher; a faction line in the sidebar; Kuudra perks.
 - [ ] The Garden, Galatea and Hunting, Backwater Bayou, The Rift.
 
 ### Owner directions (2026-10-16)

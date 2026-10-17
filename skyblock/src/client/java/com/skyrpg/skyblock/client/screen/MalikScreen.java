@@ -59,12 +59,15 @@ public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
     public void extractBackground(GuiGraphicsExtractor g, int mouseX, int mouseY, float partialTick) {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         MalikMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Malik"),
-                Component.literal(view.shop() ? "Essence shop" : "Dungeon item stars").withColor(PINK));
-        boolean tabOver = SkyScreens.inside(mouseX, mouseY, tabX(), topPos + 24, 100, 12);
-        Draw.panel(g, tabX(), topPos + 24, 100, 12, tabOver ? Theme.CARD_HOVER : Theme.CARD, PINK);
-        Draw.fit(g, font, Component.literal(view.shop() ? "\u2190 Item stars" : "Essence shop \u2192"), tabX() + 50, topPos + 27, 94, 0.7f, 0.45f,
-                Draw.Align.CENTER, PINK, false);
+        boolean vulcan = view.who().equals("Vulcan");
+        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal(view.who()),
+                Component.literal(vulcan ? "Kuudra armour stars" : view.shop() ? "Essence shop" : "Dungeon item stars").withColor(vulcan ? 0xFFFF5555 : PINK));
+        if (!vulcan) {
+            boolean tabOver = SkyScreens.inside(mouseX, mouseY, tabX(), topPos + 24, 100, 12);
+            Draw.panel(g, tabX(), topPos + 24, 100, 12, tabOver ? Theme.CARD_HOVER : Theme.CARD, PINK);
+            Draw.fit(g, font, Component.literal(view.shop() ? "\u2190 Item stars" : "Essence shop \u2192"), tabX() + 50, topPos + 27, 94, 0.7f, 0.45f,
+                    Draw.Align.CENTER, PINK, false);
+        }
         if (view.shop()) {
             shop(g, mouseX, mouseY);
             Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
@@ -76,7 +79,8 @@ public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
         List<Component> tooltip = null;
         Draw.panel(g, x, y, w, 44, Theme.CARD, view.item().isEmpty() ? Theme.CARD_BORDER : GOLD);
         if (view.item().isEmpty()) {
-            Draw.fit(g, font, Component.literal("Hold a dungeon item, then talk to me."), x + w / 2, y + 17, w - 10, 0.8f, 0.5f, Draw.Align.CENTER,
+            Draw.fit(g, font, Component.literal(vulcan ? "Hold a piece of Kuudra armour, then talk to me." : "Hold a dungeon item, then talk to me."),
+                    x + w / 2, y + 17, w - 10, 0.8f, 0.5f, Draw.Align.CENTER,
                     Theme.MUTED, false);
         } else {
             Draw.item(g, view.item(), x + 8, y + 10, 1.5f);
@@ -120,7 +124,7 @@ public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         if (event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
-            if (SkyScreens.inside(event.x(), event.y(), tabX(), topPos + 24, 100, 12)) {
+            if (!menu.view().who().equals("Vulcan") && SkyScreens.inside(event.x(), event.y(), tabX(), topPos + 24, 100, 12)) {
                 return press(MalikMenu.TAB);
             }
             if (menu.view().shop()) {

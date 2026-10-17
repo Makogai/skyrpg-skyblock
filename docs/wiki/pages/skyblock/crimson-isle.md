@@ -3,7 +3,7 @@ title: Crimson Isle
 category: skyblock
 order: 5
 icon: minecraft:magma_cream
-summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs, Trophy Fishing with Odger, Kuudra and the Inferno Demonlord.
+summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs, Trophy Fishing with Odger, Kuudra, the Dojo, Vulcan's Crimson stars and the Inferno Demonlord.
 ---
 The **Crimson Isle** is a nether island floating in a sea of lava, Hypixel SkyBlock's late-game combat island. Two factions split it: the **Mages** of **Scarleton** in the east and the **Barbarians** of **Dragontail** in the west, with the **Stronghold**, the **Crimson Fields** and the **Blazing Volcano** between them.
 
@@ -36,12 +36,12 @@ Lava rivers run between the island's three parts; four nether-brick bridges cros
 | Smoldering Tomb | Wither Spectres and Wither Skeletons in a crypt |
 | The Wasteland | Kada Knights; Sulphur |
 | Burning Desert | Flaming Spiders; Red Sand and Sulphur |
-| Forgotten Skull | Vulcan and the Kuudra Gatekeeper ([Kuudra](#kuudra)) |
+| Forgotten Skull | [Vulcan](#vulcan) and the Kuudra Gatekeeper ([Kuudra](#kuudra)) |
 | Scarleton | the Mage town: Queen Nyx, Alwin, the Mage Emissary, a Banker, Auction House and Bazaar |
 | Mage Outpost | a camp at the north-east bridge |
 | Cathedral and Courtyard | the Mage Outlaw |
 | Mystic Marsh | Mushroom Bulls; Mycelium |
-| Dojo | Master Tao |
+| Dojo | Master Tao and his [tests](#the-dojo) |
 | Odger's Hut | Odger and Trophy Fishing, by a pier over the lava |
 
 ### Mobs
@@ -194,9 +194,40 @@ The **Emissary** in your faction's town sells them:
 | Fiery Kuudra Key | 1,500,000 | 60 | 2 | 7,000 |
 | Infernal Kuudra Key | 3,000,000 | 120 | 2 | 12,000 |
 
+## The Dojo
+
+**Master Tao** at the Dojo (south-east, past the Mystic Marsh) tests you in his walled arena, one player at a time. Each test scores points and grades them: **S** (1,000+), **A** (800), **B** (600), **C** (400), **D** (200) or **F**. Tests last a minute (Mastery two). Leaving the arena ends a test early.
+
+| Test | What to do | Points |
+| --- | --- | --- |
+| Force | knock the helmeted zombies into the walls | iron 10, gold 20, diamond 30; leather zombies -15 |
+| Stamina | walls of fire sweep across: stand in their gap | 17 a second; -50 when one catches you |
+| Mastery | shoot the targets on the walls before they go dark (you get a bow) | green 8, yellow 16, red 32 |
+| Discipline | hit each zombie with the sword matching its helmet (you get four swords) | +25 right, -10 wrong |
+| Swiftness | stand on the green tiles, never the red | +10 or -10 every half second |
+| Control | keep your eyes on the circling skeleton | 1 every tick you look within 10 degrees |
+| Tenacity | fire rains on marked rings, faster and faster | 17 a second; -100 a hit |
+
+Your best score in each test adds up to your **belt**, which Master Tao gives you with its Combat XP:
+
+| Belt | Total | Combat XP |
+| --- | --- | --- |
+| White | take any test | |
+| Yellow | 1,000 | 80,000 |
+| Green | 2,000 | 100,000 |
+| Blue | 4,000 | 120,000 |
+| Brown | 6,000 | 140,000 |
+| Black | 7,000 | 160,000 |
+
+Your first S in each test also gives 5 SkyBlock XP. Belts are worn as equipment and take Crimson stars at Vulcan.
+
+## Vulcan
+
+**Vulcan**, at the Forgotten Skull, adds **Crimson stars** to Kuudra armour (and the Dojo belts) for Crimson Essence: hold the piece and talk to him. Ten stars on Basic to Fiery pieces, fifteen on Infernal ones, at Hypixel's costs (30 to 90 essence a star on Basic armour, up to 265,000 on Infernal; coins, Heavy Pearls and Kuudra Teeth from the fourth star). Each star adds 2% of the piece's stats. Stars past five show as a circled number after the name.
+
 ## The Inferno Demonlord
 
 The Blaze Slayer: its quest fills from the Isle's blazes and magma cubes. See [Slayers](slayers#inferno-demonlord).
 
 > [!NOTE]
-> Still to come here: the Dojo's tests with Master Tao, Vulcan's Crimson Essence shop, Crimson essence stars and attributes on Kuudra armour, and the Plhlegblast.
+> Still to come here: Vulcan's Crimson Essence perks, attributes on Kuudra armour, Rollim's and Kaus's duels, the Vanquisher and the Plhlegblast.

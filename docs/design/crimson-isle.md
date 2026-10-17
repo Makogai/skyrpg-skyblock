@@ -82,10 +82,21 @@ is placed once per slot. Decided, since the wiki's Kuudra pages gave no numbers 
 - Keys at the Emissaries: Hypixel's coins, materials and reputation; 2 Corrupted Nether Stars each.
 - Not yet: Kuudra's class perks and tokens, the Kuudra pet drop, attribute shards, Croesus buying back chests.
 
+## The Dojo (`crimson/Dojo.java`) and Vulcan
+
+- Master Tao's seven tests in the 31x31 arena (spawn:Dojo), one player at a time, 60 s each (Mastery 120). Hypixel's
+  platform is over lava; ours is walled, so decided: Force knocks zombies into the wall ring, Stamina's moving walls are
+  sweeping fire lines with a gap, Tenacity's ghast fireballs are marked fire rings. Points: Force 10/20/30, -15 leather;
+  Stamina 17/s, -50 hit; Mastery 8/16/32; Discipline +25/-10; Swiftness +-10 per half second; Control 1 a tick within
+  10 degrees; Tenacity 17/s, -100 hit. Grades S 1000, A 800, B 600, C 400, D 200 (decided). Belts by the total of bests:
+  White (any test), Yellow 1000 ... Black 7000 with Hypixel's Combat XP. First S per test: 5 SkyBlock XP (decided).
+  The bow, arrow and swords are tagged and taken back when the test ends.
+- Vulcan adds Crimson stars (the items' own Crimson `upgrade_costs`: 10, 15 on Infernal pieces; belts too) on Malik's
+  screen; +2% of the piece's stats a star (decided). Not yet: his Crimson Essence perk shop.
+
 ## Still to build
 
 - Inferno Demonlord (Blaze Slayer): a slayer line with Immolate, Demonsplit, Hellion Shield attunements, fire pillars.
 - Crimson armour's essence stars and attributes; Kuudra's perks, tokens and the pet.
-- The Dojo's seven tests and belts (Master Tao).
-- Vulcan's Crimson Essence shop and Crimson essence stars on Kuudra armour; attributes.
+- Vulcan's Crimson Essence perks; attributes.
 - Rollim's and Kaus's daily duels, geysers on the Blazing Volcano, the Vanquisher.

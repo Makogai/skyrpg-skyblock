@@ -79,10 +79,28 @@ public final class DungeonItems {
 
     static final String[] MASTER_STARS = {"FIRST_MASTER_STAR", "SECOND_MASTER_STAR", "THIRD_MASTER_STAR", "FOURTH_MASTER_STAR", "FIFTH_MASTER_STAR"};
 
-    /** Stars an item can take: its Hypixel stars (up to 5), then five Master Stars once it has all five. */
+    /** Stars an item can take: its Hypixel stars (up to 5), then five Master Stars once it has all five; Kuudra armour: all its Crimson stars (10, 15 Infernal). */
     static int maxStars(ItemDefinition def) {
+        if (crimson(def)) {
+            return costs(def).size();
+        }
         int stars = Math.min(5, costs(def).size());
         return stars == 5 ? 10 : stars;
+    }
+
+    /** Kuudra armour: its stars cost Crimson Essence (Vulcan upgrades it, no Master Stars). */
+    public static boolean crimson(ItemDefinition def) {
+        JsonArray costs = costs(def);
+        if (costs.isEmpty()) {
+            return false;
+        }
+        for (JsonElement cost : costs.get(0).getAsJsonArray()) {
+            JsonObject c = cost.getAsJsonObject();
+            if (c.has("essence_type") && c.get("essence_type").getAsString().equals("CRIMSON")) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** One cost as text: "100 Wither Essence", "25,000 Coins", "Item x2". */
@@ -106,7 +124,7 @@ public final class DungeonItems {
         JsonArray costs = costs(def);
         int stars = ItemMods.stars(stack);
         List<String> out = new ArrayList<>();
-        if (stars >= 5 && stars < 10 && maxStars(def) == 10) {
+        if (stars >= 5 && stars < 10 && maxStars(def) == 10 && !crimson(def)) {
             ItemDefinition star = ItemRegistry.skyblock(MASTER_STARS[stars - 5]);
             out.add(star == null ? MASTER_STARS[stars - 5] : star.name());
             return out;
@@ -141,16 +159,21 @@ public final class DungeonItems {
 
     /** Adds a star to the held item: "" when done, else why not. */
     static String upgrade(ServerPlayer player) {
+        return upgrade(player, false);
+    }
+
+    /** Adds a star to the held item ({@code crimson}: Vulcan, Kuudra armour only; else Malik, everything but it). */
+    public static String upgrade(ServerPlayer player, boolean crimsonOnly) {
         ItemStack stack = player.getMainHandItem();
         ItemDefinition def = SkyItems.definition(stack);
-        if (def == null || maxStars(def) == 0) {
-            return "Hold a dungeon item that takes stars.";
+        if (def == null || maxStars(def) == 0 || crimson(def) != crimsonOnly) {
+            return crimsonOnly ? "Hold a piece of Kuudra armour." : "Hold a dungeon item that takes stars.";
         }
         int stars = ItemMods.stars(stack);
         if (stars >= maxStars(def)) {
             return "This item already has every star.";
         }
-        if (stars >= 5) {
+        if (stars >= 5 && !crimson(def)) {
             String star = MASTER_STARS[stars - 5];
             if (SkyStacks.count(player.getInventory(), star) < 1) {
                 ItemDefinition item = ItemRegistry.skyblock(star);

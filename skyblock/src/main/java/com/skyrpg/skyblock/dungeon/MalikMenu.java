@@ -26,13 +26,13 @@ public final class MalikMenu extends AbstractContainerMenu {
     private static final java.util.Set<java.util.UUID> SHOP = new java.util.HashSet<>();
 
     /** The held item, its stars and maximum, the next star's costs, and your essence. */
-    public record View(ItemStack item, int stars, int max, List<String> cost, String essence, boolean shop, List<String> perks) {
+    public record View(ItemStack item, int stars, int max, List<String> cost, String essence, boolean shop, List<String> perks, String who) {
         public static final StreamCodec<RegistryFriendlyByteBuf, View> CODEC = new StreamCodec<>() {
             @Override
             public View decode(RegistryFriendlyByteBuf buf) {
                 return new View(ItemStack.OPTIONAL_STREAM_CODEC.decode(buf), buf.readVarInt(), buf.readVarInt(),
                         ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf), buf.readUtf(), buf.readBoolean(),
-                        ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf));
+                        ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf), buf.readUtf());
             }
 
             @Override
@@ -44,6 +44,7 @@ public final class MalikMenu extends AbstractContainerMenu {
                 buf.writeUtf(view.essence());
                 buf.writeBoolean(view.shop());
                 ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).encode(buf, view.perks());
+                buf.writeUtf(view.who());
             }
         };
     }
@@ -66,12 +67,18 @@ public final class MalikMenu extends AbstractContainerMenu {
     }
 
     static void open(ServerPlayer player) {
+        open(player, "Malik");
+    }
+
+    /** Malik's screen, or Vulcan's (the Crimson Isle's: Kuudra armour's Crimson stars, no essence shop). */
+    public static void open(ServerPlayer player, String who) {
+        boolean vulcan = who.equals("Vulcan");
         ItemStack held = player.getMainHandItem();
         ItemDefinition def = SkyItems.definition(held);
-        int max = DungeonItems.maxStars(def);
+        int max = DungeonItems.crimson(def) == vulcan ? DungeonItems.maxStars(def) : 0;
         View view = new View(max > 0 ? held.copy() : ItemStack.EMPTY, ItemMods.stars(held), max, max > 0 ? DungeonItems.nextCost(held) : List.of(),
-                DungeonItems.essenceLine(player), SHOP.contains(player.getUUID()),
-                EssencePerks.PERKS.stream().map(p -> EssencePerks.describe(player, p)).toList());
+                DungeonItems.essenceLine(player), !vulcan && SHOP.contains(player.getUUID()),
+                vulcan ? List.of() : EssencePerks.PERKS.stream().map(p -> EssencePerks.describe(player, p)).toList(), who);
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {
@@ -80,7 +87,7 @@ public final class MalikMenu extends AbstractContainerMenu {
 
             @Override
             public Component getDisplayName() {
-                return Component.literal("Malik");
+                return Component.literal(who);
             }
 
             @Override
@@ -99,15 +106,16 @@ public final class MalikMenu extends AbstractContainerMenu {
             if (!SHOP.remove(owner.getUUID())) {
                 SHOP.add(owner.getUUID());
             }
-            owner.level().getServer().execute(() -> open(owner));
+            owner.level().getServer().execute(() -> open(owner, view.who()));
             return true;
         }
-        String problem = id >= PERK ? EssencePerks.buy(owner, EssencePerks.PERKS.get(Math.min(id - PERK, EssencePerks.PERKS.size() - 1)).id())
-                : id == UPGRADE ? DungeonItems.upgrade(owner) : "";
+        boolean vulcan = view.who().equals("Vulcan");
+        String problem = id >= PERK && !vulcan ? EssencePerks.buy(owner, EssencePerks.PERKS.get(Math.min(id - PERK, EssencePerks.PERKS.size() - 1)).id())
+                : id == UPGRADE ? DungeonItems.upgrade(owner, vulcan) : "";
         if (!problem.isEmpty()) {
             owner.sendSystemMessage(Component.literal(problem).withStyle(ChatFormatting.RED));
         }
-        owner.level().getServer().execute(() -> open(owner));
+        owner.level().getServer().execute(() -> open(owner, view.who()));
         return true;
     }
 

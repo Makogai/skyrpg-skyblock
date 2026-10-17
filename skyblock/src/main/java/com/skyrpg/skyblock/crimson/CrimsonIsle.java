@@ -56,12 +56,36 @@ public final class CrimsonIsle {
         FactionQuests.init();
         Minibosses.init();
         Kuudra.init();
+        Dojo.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("crimson_spots"), "skyrpg/spawn_spots", CrimsonIsle::load);
         Actions.register("crimson_elle", (player, params) -> elle(player));
         Actions.register("crimson_leader", (player, params) -> leader(player, params.get("faction").getAsString()));
         Actions.register("crimson_npc", (player, params) -> person(player, params.get("name").getAsString()));
         Actions.register("open_auction", (player, params) -> command(player, "ah"));
         Actions.register("open_bazaar", (player, params) -> command(player, "bazaar"));
+        // Vulcan adds Crimson stars to Kuudra armour; each star is +2% of the piece's stats (decided: Hypixel's figure wasn't found).
+        Actions.register("vulcan", (player, params) -> com.skyrpg.skyblock.dungeon.MalikMenu.open(player, "Vulcan"));
+        com.skyrpg.core.stats.Stats.registerSource(new com.skyrpg.core.stats.Stats.Source() {
+            @Override
+            public String name() {
+                return "Crimson Stars";
+            }
+
+            @Override
+            public void contribute(ServerPlayer player, com.skyrpg.core.stats.Stats.Contributor out) {
+                for (net.minecraft.world.entity.EquipmentSlot slot : new net.minecraft.world.entity.EquipmentSlot[] {
+                        net.minecraft.world.entity.EquipmentSlot.HEAD, net.minecraft.world.entity.EquipmentSlot.CHEST,
+                        net.minecraft.world.entity.EquipmentSlot.LEGS, net.minecraft.world.entity.EquipmentSlot.FEET}) {
+                    net.minecraft.world.item.ItemStack stack = player.getItemBySlot(slot);
+                    ItemDefinition def = com.skyrpg.items.SkyItems.definition(stack);
+                    int stars = com.skyrpg.items.ItemMods.stars(stack);
+                    if (stars <= 0 || !com.skyrpg.skyblock.dungeon.DungeonItems.crimson(def)) {
+                        continue;
+                    }
+                    com.skyrpg.items.ItemMods.stats(stack, def).forEach((stat, value) -> out.add(stat, value * 0.02 * stars));
+                }
+            }
+        });
         ServerTickEvents.END_SERVER_TICK.register(CrimsonIsle::tick);
         // The volcano's magma blocks are scenery: they don't burn your feet.
         net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) ->

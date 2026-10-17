@@ -127,8 +127,8 @@ public final class ItemMods {
         Reforges.Reforge reforge = reforge(stack);
         String name = reforge == null ? def.name() : reforge.name() + " " + def.name();
         int stars = stars(stack);
-        // Master Stars (6-10) show as a circled number after the five stars.
-        String master = stars > 5 ? String.valueOf("\u278A\u278B\u278C\u278D\u278E".charAt(Math.min(5, stars - 5) - 1)) : "";
+        // Master Stars (6-10), and Kuudra armour's Crimson stars past five (up to 15), show as a circled number after the five stars.
+        String master = stars > 5 ? String.valueOf((char) (0x278A + Math.min(10, stars - 5) - 1)) : "";
         return stars > 0 ? name + " " + STAR.repeat(Math.min(5, stars)) + master : name;
     }
 

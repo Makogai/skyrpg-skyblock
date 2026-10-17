@@ -1,8 +1,8 @@
 {
   "name": "Vulcan",
-  "role": "Crimson Essence",
+  "role": "Crimson Stars",
   "color": "#FF5555",
-  "hint": "Talk",
+  "hint": "Upgrade",
   "skin": "minecraft:entity/player/wide/efe",
   "model": "wide",
   "dimension": "skyrpg_skyblock:crimson_isle",
@@ -14,7 +14,10 @@
   "yaw": 180.0,
   "sound": "minecraft:block.fire.ambient",
   "greetings": [
-    "Crimson Essence, from the minibosses and Kuudra.",
-    "My shop opens when Kuudra wakes."
-  ]
+    "Crimson Essence makes Kuudra's armour stronger.",
+    "Hold a piece and I'll add a star."
+  ],
+  "action": {
+    "type": "vulcan"
+  }
 }

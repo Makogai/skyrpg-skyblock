@@ -2,7 +2,7 @@
   "name": "Master Tao",
   "role": "The Dojo",
   "color": "#FFFF55",
-  "hint": "Talk",
+  "hint": "Dojo",
   "skin": "minecraft:entity/player/wide/ari",
   "model": "wide",
   "dimension": "skyrpg_skyblock:crimson_isle",
@@ -15,6 +15,9 @@
   "sound": "minecraft:block.bamboo.place",
   "greetings": [
     "Discipline. Patience. Then strength.",
-    "The Dojo's tests open soon."
-  ]
+    "Seven tests. Master them all for the Black Belt."
+  ],
+  "action": {
+    "type": "dojo"
+  }
 }

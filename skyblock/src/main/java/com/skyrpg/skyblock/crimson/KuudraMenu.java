@@ -16,13 +16,14 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
 
 /**
- * Kuudra's screens, as rows with a button each ({@link #ROW} + row): the Gatekeeper's tiers (start one), an Emissary's
- * keys (buy one) and the two reward chests after a win (open one).
+ * The Crimson Isle's list screens, as rows with a button each ({@link #ROW} + row): the Kuudra Gatekeeper's tiers (start
+ * one), an Emissary's keys (buy one), the two reward chests after a Kuudra win (open one), and Master Tao's Dojo tests
+ * (take one).
  */
 public final class KuudraMenu extends AbstractContainerMenu {
     public static final int ROW = 100;
 
-    public enum Mode { TIERS, KEYS, REWARDS }
+    public enum Mode { TIERS, KEYS, REWARDS, DOJO }
 
     /** A row: its title, the line under it, its colour, whether its button works, and the button's label. */
     public record Row(String title, String detail, int color, boolean enabled, String button) {
@@ -113,6 +114,26 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 }
                 footer = faction.isEmpty() ? "Join a faction to buy keys." : "Keys open the paid chest of their tier.";
             }
+            case DOJO -> {
+                title = "Master Tao";
+                int belt = Dojo.belt(player);
+                subtitle = Dojo.beltName(belt);
+                for (String test : Dojo.TESTS) {
+                    int best = Dojo.best(player, test);
+                    rows.add(new Row(test, best > 0 ? "Best " + Msg.number(best) + " (" + Dojo.grade(best) + ")" : "Not taken yet",
+                            best >= 1_000 ? 0xFFAA00 : 0xFFFF55, !Dojo.busy(), "Test"));
+                }
+                int total = Dojo.total(player);
+                int next = -1;
+                for (int i = 1; i < Dojo.BELT_POINTS.length; i++) {
+                    if (total < Dojo.BELT_POINTS[i]) {
+                        next = i;
+                        break;
+                    }
+                }
+                footer = "Your best scores add up to " + Msg.number(total) + (next > 0 ? ": the " + Dojo.beltName(next + 1) + " at "
+                        + Msg.number(Dojo.BELT_POINTS[next]) : ": every belt") + ". Empty hands help.";
+            }
             default -> {
                 Kuudra.Chests chests = Kuudra.CHESTS.get(player.getUUID());
                 title = "Kuudra's Chests";
@@ -166,6 +187,10 @@ public final class KuudraMenu extends AbstractContainerMenu {
             case KEYS -> {
                 Kuudra.buyKey(owner, Kuudra.TIERS.get(row));
                 owner.level().getServer().execute(() -> open(owner, Mode.KEYS));
+            }
+            case DOJO -> {
+                owner.closeContainer();
+                Dojo.start(owner, Dojo.TESTS.get(row));
             }
             default -> {
                 Kuudra.open(owner, row == 1);
