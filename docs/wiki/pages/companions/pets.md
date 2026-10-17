@@ -53,9 +53,25 @@ Your summoned pet gets a share of all the skill XP you gain:
 
 A few (Flying Pig, Quick Claw, Exp Share...) show their text but don't work yet.
 
+## Abilities
+
+A pet's abilities work while it's out, with their numbers at its level and rarity (a Tier Boost counts). About a quarter of Hypixel's pet abilities work so far, on 48 of the 87 pets:
+
+| Kind | Examples |
+| --- | --- |
+| Stats | Black Cat's Magic Find and Pet Luck, Dolphin's Sea Creature Chance, Squid's Fishing Wisdom, Lion's Damage, Monkey's Foraging Fortune |
+| Stats in a place or at a time | Chicken's Farming Fortune on public islands, Mithril Golem's Magic Find and combat stats on the mining islands, Monkey's Speed and Sweep in The Park, Bal's Pristine in the Magma Fields, Bat's Intelligence and Speed at night |
+| Stats that grow | per player near you (Bee's Hive, Dolphin's Pod Tactics), per skill level (Rose Dragon, Ammonite), per digit of your Gold collection (Golden Dragon) |
+| A share of your stats | Blue Whale's Max Health, Turtle's Defense, Tiger's Ferocity, Ender Dragon's combat stats and Magic Find, Griffin's Strength above 85% Health |
+| Stats from other stats | Elephant's Defense per 100 Speed and Health per 10 Defense, Blue Whale's Defense per 20 Health, Ankylosaurus' Defense as Strength, Golden Dragon's Strength per 5 Magic Find |
+| More damage | Ender Dragon to Ender mobs, Zombie to Undead, Wither Skeleton to Wither mobs, Magma Cube to slimes, T-Rex up close, Giraffe from afar, Megalodon to hurt enemies, Tiger to lone enemies, Pigman to Level 50+ and 100+ mobs, Skeleton's arrows, Golden Dragon per million coins in the bank |
+| Less damage taken | Enderman from Ender mobs, Zombie from zombies, Wolf from wolves, Wither Skeleton from skeletons, Snowman from everything, Turtle under 40% Health |
+
+Abilities for places that aren't in the game yet (the Crimson Isle, the Garden, Jerry's Workshop, the Glacite Tunnels, dungeons) and ones with their own mechanics (Golem's Last Stand, Guardian's Laserbeam, Horse's Stampede, Combat Wisdom towards a mob...) show their text but don't work yet.
+
 ## Kat
 
 **Kat**, the pet sitter at a stall in the Hub's market, takes a pet **up one rarity**. Her menu lists your pets with what their next rarity costs: coins, sometimes items (Honey Dippers for a Bee, Summoning Eyes for an Ender Dragon), and a wait (from a minute to weeks, in real time, even while you're offline). Click a pet to give it to her; she looks after **one pet at a time**. When it's ready you get a message; open her menu and click it to take it back at its new rarity (it keeps its XP; its level follows the new rarity's table). All 216 of Hypixel's upgrades are there.
 
 > [!NOTE]
-> Not yet: pet abilities (they show with their numbers but don't work yet), Kat Flowers and Bouquets (to skip the wait), and the pets that come from drops, shops and events rather than recipes.
+> Not yet: the abilities above that don't work yet, Kat Flowers and Bouquets (to skip the wait), and the pets that come from drops, shops and events rather than recipes.

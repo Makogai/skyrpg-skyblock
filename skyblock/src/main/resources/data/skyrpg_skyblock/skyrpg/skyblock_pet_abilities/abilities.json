@@ -1,0 +1,1938 @@
+{
+ "pets": {
+  "AMMONITE": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "sea_creature_chance",
+     "num": 0,
+     "per_level": [
+      "hotm"
+     ],
+     "ability": "Heart of the Sea"
+    },
+    {
+     "kind": "stat",
+     "stat": "double_hook_chance",
+     "num": 1,
+     "per_level": [
+      "hotm"
+     ],
+     "where": "crystal_hollows",
+     "ability": "Expert Cave Fisher"
+    },
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 2,
+     "per_level": [
+      "mining",
+      "fishing"
+     ],
+     "ability": "Gift of the Ammonite"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 3,
+     "per_level": [
+      "mining",
+      "fishing"
+     ],
+     "ability": "Gift of the Ammonite"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 4,
+     "per_level": [
+      "mining",
+      "fishing"
+     ],
+     "ability": "Gift of the Ammonite"
+    }
+   ]
+  },
+  "ANKYLOSAURUS": {
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "strength",
+     "num": 0,
+     "pct": true,
+     "of": "defense",
+     "cap": 500,
+     "ability": "Armored Tank"
+    }
+   ]
+  },
+  "BAL": {
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "pristine",
+     "num": 0,
+     "where": "magma_fields",
+     "ability": "Furnace"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "pristine",
+     "num": 0,
+     "where": "magma_fields",
+     "ability": "Furnace"
+    }
+   ]
+  },
+  "BAT": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 1,
+     "when": "night",
+     "ability": "Nightmare"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 2,
+     "when": "night",
+     "ability": "Nightmare"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 1,
+     "when": "night",
+     "ability": "Nightmare"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 2,
+     "when": "night",
+     "ability": "Nightmare"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 1,
+     "when": "night",
+     "ability": "Nightmare"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 2,
+     "when": "night",
+     "ability": "Nightmare"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 1,
+     "when": "night",
+     "ability": "Nightmare"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 2,
+     "when": "night",
+     "ability": "Nightmare"
+    }
+   ]
+  },
+  "BEE": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "intelligence",
+     "num": 0,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 2,
+     "per_player": 25,
+     "max_players": 15,
+     "ability": "Hive"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 3,
+     "ability": "Busy Buzz Buzz"
+    }
+   ]
+  },
+  "BLACK_CAT": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 0,
+     "ability": "Hunter"
+    },
+    {
+     "kind": "stat",
+     "stat": "pet_luck",
+     "num": 1,
+     "ability": "Omen"
+    },
+    {
+     "kind": "stat",
+     "stat": "magic_find",
+     "num": 2,
+     "ability": "Supernatural"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 0,
+     "ability": "Hunter"
+    },
+    {
+     "kind": "stat",
+     "stat": "pet_luck",
+     "num": 1,
+     "ability": "Omen"
+    },
+    {
+     "kind": "stat",
+     "stat": "magic_find",
+     "num": 2,
+     "ability": "Supernatural"
+    }
+   ]
+  },
+  "BLUE_WHALE": {
+   "RARE": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 1,
+     "per": 30,
+     "of": "health",
+     "ability": "Bulk"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 1,
+     "per": 25,
+     "of": "health",
+     "ability": "Bulk"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 1,
+     "per": 20,
+     "of": "health",
+     "ability": "Bulk"
+    },
+    {
+     "kind": "stat_pct",
+     "stat": "health",
+     "num": 2,
+     "ability": "Archimedes"
+    }
+   ]
+  },
+  "CHICKEN": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "where": "public",
+     "ability": "Free Range"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "where": "public",
+     "ability": "Free Range"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "where": "public",
+     "ability": "Free Range"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "where": "public",
+     "ability": "Free Range"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "where": "public",
+     "ability": "Free Range"
+    }
+   ]
+  },
+  "DOLPHIN": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "per_player": 30,
+     "max_players": 5,
+     "ability": "Pod Tactics"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "per_player": 30,
+     "max_players": 5,
+     "ability": "Pod Tactics"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "per_player": 30,
+     "max_players": 5,
+     "ability": "Pod Tactics"
+    },
+    {
+     "kind": "stat",
+     "stat": "sea_creature_chance",
+     "num": 1,
+     "ability": "Echolocation"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "per_player": 30,
+     "max_players": 5,
+     "ability": "Pod Tactics"
+    },
+    {
+     "kind": "stat",
+     "stat": "sea_creature_chance",
+     "num": 1,
+     "ability": "Echolocation"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "per_player": 30,
+     "max_players": 5,
+     "ability": "Pod Tactics"
+    },
+    {
+     "kind": "stat",
+     "stat": "sea_creature_chance",
+     "num": 1,
+     "ability": "Echolocation"
+    }
+   ]
+  },
+  "ELEPHANT": {
+   "COMMON": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    },
+    {
+     "kind": "convert",
+     "stat": "health",
+     "num": 1,
+     "per": 10,
+     "of": "defense",
+     "ability": "Walking Fortress"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    },
+    {
+     "kind": "convert",
+     "stat": "health",
+     "num": 1,
+     "per": 10,
+     "of": "defense",
+     "ability": "Walking Fortress"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    },
+    {
+     "kind": "convert",
+     "stat": "health",
+     "num": 1,
+     "per": 10,
+     "of": "defense",
+     "ability": "Walking Fortress"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 2,
+     "ability": "Trunk Efficiency"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "convert",
+     "stat": "defense",
+     "num": 0,
+     "per": 100,
+     "of": "speed",
+     "ability": "Stomp"
+    },
+    {
+     "kind": "convert",
+     "stat": "health",
+     "num": 1,
+     "per": 10,
+     "of": "defense",
+     "ability": "Walking Fortress"
+    },
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 2,
+     "ability": "Trunk Efficiency"
+    }
+   ]
+  },
+  "ENDER_DRAGON": {
+   "EPIC": [
+    {
+     "kind": "damage_vs",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "End Strike"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "End Strike"
+    },
+    {
+     "kind": "stat_pct",
+     "stats": [
+      "health",
+      "defense",
+      "strength",
+      "intelligence",
+      "crit_chance",
+      "crit_damage",
+      "ferocity",
+      "bonus_attack_speed",
+      "true_defense",
+      "health_regen",
+      "vitality",
+      "mending",
+      "magic_find"
+     ],
+     "num": 3,
+     "ability": "Superior"
+    }
+   ]
+  },
+  "ENDERMAN": {
+   "COMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "ender",
+     "num": 0,
+     "ability": "Enderian"
+    }
+   ]
+  },
+  "FLYING_FISH": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "ability": "Quick Reel"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "ability": "Quick Reel"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "ability": "Quick Reel"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 0,
+     "ability": "Quick Reel"
+    }
+   ]
+  },
+  "GIRAFFE": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "health_regen",
+     "num": 0,
+     "ability": "Good Heart"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "health_regen",
+     "num": 0,
+     "ability": "Good Heart"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "health_regen",
+     "num": 0,
+     "ability": "Good Heart"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "health_regen",
+     "num": 0,
+     "ability": "Good Heart"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "health_regen",
+     "num": 0,
+     "ability": "Good Heart"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "far",
+     "num": 2,
+     "ability": "Long Neck"
+    }
+   ]
+  },
+  "GLACITE_GOLEM": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 1,
+     "where": "glacite_mineshafts",
+     "ability": "Iceborn"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 1,
+     "where": "glacite_mineshafts",
+     "ability": "Iceborn"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 1,
+     "where": "glacite_mineshafts",
+     "ability": "Iceborn"
+    }
+   ]
+  },
+  "GOBLIN": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "mining_spread",
+     "num": 1,
+     "where": "mines_of_divan",
+     "ability": "Fetid Thief"
+    }
+   ]
+  },
+  "GOLDEN_DRAGON": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "amount": 11.1,
+     "per_digit": "gold_ingot",
+     "ability": "Shining Scales"
+    },
+    {
+     "kind": "stat",
+     "stat": "magic_find",
+     "amount": 2.2,
+     "per_digit": "gold_ingot",
+     "ability": "Shining Scales"
+    },
+    {
+     "kind": "stat_pct",
+     "stat": "strength",
+     "num": 1,
+     "per": 5,
+     "of": "magic_find",
+     "cap_num": 2,
+     "ability": "Dragon's Greed"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "bank",
+     "num": 3,
+     "cap_num": 4,
+     "ability": "Legendary Treasure"
+    }
+   ]
+  },
+  "GRIFFIN": {
+   "RARE": [
+    {
+     "kind": "stat_pct",
+     "stat": "strength",
+     "num": 0,
+     "when": "health_above_85",
+     "ability": "Sacred Strength"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat_pct",
+     "stat": "strength",
+     "num": 0,
+     "when": "health_above_85",
+     "ability": "Sacred Strength"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat_pct",
+     "stat": "strength",
+     "num": 0,
+     "when": "health_above_85",
+     "ability": "Sacred Strength"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat_pct",
+     "stat": "strength",
+     "num": 0,
+     "when": "health_above_85",
+     "ability": "Sacred Strength"
+    }
+   ]
+  },
+  "GUARDIAN": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "enchanting_wisdom",
+     "num": 1,
+     "ability": "Enchanting Wisdom Boost"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "enchanting_wisdom",
+     "num": 1,
+     "ability": "Enchanting Wisdom Boost"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "enchanting_wisdom",
+     "num": 1,
+     "ability": "Enchanting Wisdom Boost"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "enchanting_wisdom",
+     "num": 1,
+     "ability": "Enchanting Wisdom Boost"
+    }
+   ]
+  },
+  "HEDGEHOG": {
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "pests",
+     "num": 0,
+     "ability": "Spiky Quills"
+    }
+   ]
+  },
+  "JADE_DRAGON": {
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "foraging_fortune",
+     "amount": 1.0,
+     "per": 5,
+     "of": "sweep",
+     "ability": "Dragon's Pride"
+    }
+   ]
+  },
+  "KUUDRA": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 2,
+     "where": "crimson_isle",
+     "ability": "Kuudra Fortune"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 2,
+     "where": "crimson_isle",
+     "ability": "Kuudra Fortune"
+    },
+    {
+     "kind": "stat",
+     "stat": "trophy_fish_chance",
+     "num": 3,
+     "where": "crimson_isle",
+     "ability": "Trophy Bait"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "mining_fortune",
+     "num": 2,
+     "where": "crimson_isle",
+     "ability": "Kuudra Fortune"
+    },
+    {
+     "kind": "stat",
+     "stat": "trophy_fish_chance",
+     "num": 3,
+     "where": "crimson_isle",
+     "ability": "Trophy Bait"
+    }
+   ]
+  },
+  "LION": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Primal Force"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "ability": "Primal Force"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Primal Force"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "ability": "Primal Force"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Primal Force"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "ability": "Primal Force"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Primal Force"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "ability": "Primal Force"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Primal Force"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "ability": "Primal Force"
+    }
+   ]
+  },
+  "MAGMA_CUBE": {
+   "RARE": [
+    {
+     "kind": "damage_vs",
+     "mobs": "slimes",
+     "num": 1,
+     "ability": "Salt Blade"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_vs",
+     "mobs": "slimes",
+     "num": 1,
+     "ability": "Salt Blade"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "slimes",
+     "num": 1,
+     "ability": "Salt Blade"
+    }
+   ]
+  },
+  "MAMMOTH": {
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "magic_find",
+     "num": 1,
+     "per": 100,
+     "of": "mining_fortune",
+     "ability": "Tusk Luck"
+    }
+   ]
+  },
+  "MEGALODON": {
+   "EPIC": [
+    {
+     "kind": "damage_vs",
+     "mobs": "missing_health",
+     "num": 0,
+     "ability": "Blood Scent"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "missing_health",
+     "num": 0,
+     "ability": "Blood Scent"
+    }
+   ]
+  },
+  "MITHRIL_GOLEM": {
+   "RARE": [
+    {
+     "kind": "stat_pct",
+     "stats": [
+      "health",
+      "defense",
+      "strength",
+      "intelligence",
+      "crit_chance",
+      "crit_damage",
+      "ferocity",
+      "bonus_attack_speed",
+      "true_defense",
+      "health_regen",
+      "vitality",
+      "mending"
+     ],
+     "num": 1,
+     "where": "mining_islands",
+     "ability": "Subterranean Battler"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat_pct",
+     "stats": [
+      "health",
+      "defense",
+      "strength",
+      "intelligence",
+      "crit_chance",
+      "crit_damage",
+      "ferocity",
+      "bonus_attack_speed",
+      "true_defense",
+      "health_regen",
+      "vitality",
+      "mending"
+     ],
+     "num": 1,
+     "where": "mining_islands",
+     "ability": "Subterranean Battler"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat_pct",
+     "stats": [
+      "health",
+      "defense",
+      "strength",
+      "intelligence",
+      "crit_chance",
+      "crit_damage",
+      "ferocity",
+      "bonus_attack_speed",
+      "true_defense",
+      "health_regen",
+      "vitality",
+      "mending"
+     ],
+     "num": 1,
+     "where": "mining_islands",
+     "ability": "Subterranean Battler"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat_pct",
+     "stats": [
+      "health",
+      "defense",
+      "strength",
+      "intelligence",
+      "crit_chance",
+      "crit_damage",
+      "ferocity",
+      "bonus_attack_speed",
+      "true_defense",
+      "health_regen",
+      "vitality",
+      "mending"
+     ],
+     "num": 1,
+     "where": "mining_islands",
+     "ability": "Subterranean Battler"
+    },
+    {
+     "kind": "stat",
+     "stat": "magic_find",
+     "num": 3,
+     "where": "mining_islands",
+     "ability": "Refined Senses"
+    }
+   ]
+  },
+  "MONKEY": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 0,
+     "ability": "Treeborn"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 0,
+     "ability": "Treeborn"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 0,
+     "ability": "Treeborn"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 0,
+     "ability": "Treeborn"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "foraging_fortune",
+     "num": 0,
+     "ability": "Treeborn"
+    },
+    {
+     "kind": "stat",
+     "stat": "speed",
+     "num": 1,
+     "where": "the_park",
+     "ability": "Vine Swing"
+    },
+    {
+     "kind": "stat",
+     "stat": "sweep",
+     "num": 2,
+     "where": "the_park",
+     "ability": "Evolved Axes"
+    }
+   ]
+  },
+  "MOOSHROOM_COW": {
+   "RARE": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "amount": 0.7,
+     "per_num": 1,
+     "of": "strength",
+     "ability": "Farming Strength"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "amount": 0.7,
+     "per_num": 1,
+     "of": "strength",
+     "ability": "Farming Strength"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "amount": 0.7,
+     "per_num": 1,
+     "of": "strength",
+     "ability": "Farming Strength"
+    }
+   ]
+  },
+  "OCELOT": {
+   "COMMON": [
+    {
+     "kind": "stat",
+     "stat": "foraging_wisdom",
+     "num": 0,
+     "ability": "Foraging Wisdom Boost"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat",
+     "stat": "foraging_wisdom",
+     "num": 0,
+     "ability": "Foraging Wisdom Boost"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "foraging_wisdom",
+     "num": 0,
+     "ability": "Foraging Wisdom Boost"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "foraging_wisdom",
+     "num": 0,
+     "ability": "Foraging Wisdom Boost"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "foraging_wisdom",
+     "num": 0,
+     "ability": "Foraging Wisdom Boost"
+    }
+   ]
+  },
+  "ORCHID_MANTIS": {
+   "RARE": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "of": "speed",
+     "above": 100,
+     "per": 3,
+     "num": 1,
+     "ability": "Swift Sickles"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "of": "speed",
+     "above": 100,
+     "per": 3,
+     "num": 1,
+     "ability": "Swift Sickles"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "farming_fortune",
+     "of": "speed",
+     "above": 100,
+     "per": 3,
+     "num": 1,
+     "ability": "Swift Sickles"
+    }
+   ]
+  },
+  "OWL": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "taming_wisdom",
+     "num": 1,
+     "ability": "Fast Learner"
+    }
+   ]
+  },
+  "PENGUIN": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "cold_resistance",
+     "num": 1,
+     "per_player": 30,
+     "max_players": 10,
+     "ability": "Chilly Reception"
+    },
+    {
+     "kind": "stat",
+     "stat": "fishing_speed",
+     "num": 2,
+     "where": "glacite_tunnels",
+     "ability": "Subzero Hero"
+    }
+   ]
+  },
+  "PIGMAN": {
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "level_50",
+     "amount": 50,
+     "ability": "Giant Slayer"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "level_100",
+     "amount": 75,
+     "ability": "Giant Slayer"
+    }
+   ]
+  },
+  "RABBIT": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "farming_wisdom",
+     "num": 1,
+     "ability": "Farming Wisdom Boost"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "farming_wisdom",
+     "num": 1,
+     "ability": "Farming Wisdom Boost"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "farming_wisdom",
+     "num": 1,
+     "ability": "Farming Wisdom Boost"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "stat",
+     "stat": "farming_wisdom",
+     "num": 1,
+     "ability": "Farming Wisdom Boost"
+    }
+   ]
+  },
+  "ROSE_DRAGON": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "farming_fortune",
+     "num": 0,
+     "per_level": [
+      "farming"
+     ],
+     "ability": "Garden Power"
+    }
+   ]
+  },
+  "SILVERFISH": {
+   "RARE": [
+    {
+     "kind": "stat",
+     "stat": "mining_wisdom",
+     "num": 1,
+     "ability": "Experienced Burrower"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "mining_wisdom",
+     "num": 1,
+     "ability": "Experienced Burrower"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "mining_wisdom",
+     "num": 1,
+     "ability": "Experienced Burrower"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_speed",
+     "num": 2,
+     "ability": "Dexterity"
+    }
+   ]
+  },
+  "SKELETON": {
+   "COMMON": [
+    {
+     "kind": "damage_vs",
+     "mobs": "arrows",
+     "num": 0,
+     "ability": "Bone Arrows"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "damage_vs",
+     "mobs": "arrows",
+     "num": 0,
+     "ability": "Bone Arrows"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "damage_vs",
+     "mobs": "arrows",
+     "num": 0,
+     "ability": "Bone Arrows"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_vs",
+     "mobs": "arrows",
+     "num": 0,
+     "ability": "Bone Arrows"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "arrows",
+     "num": 0,
+     "ability": "Bone Arrows"
+    }
+   ]
+  },
+  "SLUG": {
+   "EPIC": [
+    {
+     "kind": "stat",
+     "stat": "bonus_pest_chance",
+     "num": 1,
+     "ability": "Pest Friends"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "bonus_pest_chance",
+     "num": 1,
+     "ability": "Pest Friends"
+    }
+   ]
+  },
+  "SNAIL": {
+   "RARE": [
+    {
+     "kind": "convert",
+     "stat": "block_fortune",
+     "of": "speed",
+     "above": 100,
+     "per_num": 1,
+     "amount": 1.0,
+     "ability": "Slow and Steady"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "convert",
+     "stat": "block_fortune",
+     "of": "speed",
+     "above": 100,
+     "per_num": 1,
+     "amount": 1.0,
+     "ability": "Slow and Steady"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "convert",
+     "stat": "block_fortune",
+     "of": "speed",
+     "above": 100,
+     "per_num": 1,
+     "amount": 1.0,
+     "ability": "Slow and Steady"
+    }
+   ]
+  },
+  "SNOWMAN": {
+   "LEGENDARY": [
+    {
+     "kind": "damage_from",
+     "mobs": "all",
+     "num": 2,
+     "ability": "Frostbite"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "all",
+     "num": 2,
+     "ability": "Frostbite"
+    }
+   ]
+  },
+  "SQUID": {
+   "LEGENDARY": [
+    {
+     "kind": "stat",
+     "stat": "fishing_wisdom",
+     "num": 3,
+     "ability": "Fishing Wisdom Boost"
+    }
+   ]
+  },
+  "TIGER": {
+   "COMMON": [
+    {
+     "kind": "stat_pct",
+     "stat": "ferocity",
+     "num": 0,
+     "ability": "Merciless Swipe"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "stat_pct",
+     "stat": "ferocity",
+     "num": 0,
+     "ability": "Merciless Swipe"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "stat_pct",
+     "stat": "ferocity",
+     "num": 0,
+     "ability": "Merciless Swipe"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "stat_pct",
+     "stat": "ferocity",
+     "num": 0,
+     "ability": "Merciless Swipe"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat_pct",
+     "stat": "ferocity",
+     "num": 0,
+     "ability": "Merciless Swipe"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "alone",
+     "num": 2,
+     "ability": "Apex Predator"
+    }
+   ]
+  },
+  "TURTLE": {
+   "EPIC": [
+    {
+     "kind": "stat_pct",
+     "stat": "defense",
+     "num": 0,
+     "ability": "Turtle Tactics"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "stat_pct",
+     "stat": "defense",
+     "num": 0,
+     "ability": "Turtle Tactics"
+    },
+    {
+     "kind": "damage_from",
+     "mobs": "all",
+     "num": 2,
+     "when": "low_health",
+     "ability": "Turtle Shell"
+    }
+   ]
+  },
+  "TYRANNOSAURUS": {
+   "LEGENDARY": [
+    {
+     "kind": "damage_vs",
+     "mobs": "close",
+     "num": 0,
+     "ability": "Close Combat"
+    }
+   ]
+  },
+  "WITHER_SKELETON": {
+   "COMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "skeletal",
+     "num": 0,
+     "ability": "Stronger Bones"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "damage_from",
+     "mobs": "skeletal",
+     "num": 0,
+     "ability": "Stronger Bones"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "wither",
+     "num": 1,
+     "ability": "Wither Blood"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "skeletal",
+     "num": 0,
+     "ability": "Stronger Bones"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "wither",
+     "num": 1,
+     "ability": "Wither Blood"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_from",
+     "mobs": "skeletal",
+     "num": 0,
+     "ability": "Stronger Bones"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "wither",
+     "num": 1,
+     "ability": "Wither Blood"
+    }
+   ]
+  },
+  "WOLF": {
+   "COMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "wolves",
+     "num": 0,
+     "ability": "Alpha Dog"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "wolves",
+     "num": 0,
+     "ability": "Alpha Dog"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "damage_from",
+     "mobs": "wolves",
+     "num": 0,
+     "ability": "Alpha Dog"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "wolves",
+     "num": 0,
+     "ability": "Alpha Dog"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_from",
+     "mobs": "wolves",
+     "num": 0,
+     "ability": "Alpha Dog"
+    },
+    {
+     "kind": "stat",
+     "stat": "combat_wisdom",
+     "num": 2,
+     "ability": "Combat Wisdom Boost"
+    }
+   ]
+  },
+  "ZOMBIE": {
+   "COMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "zombies",
+     "num": 0,
+     "ability": "Bite Shield"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "zombies",
+     "num": 0,
+     "ability": "Bite Shield"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "damage_from",
+     "mobs": "zombies",
+     "num": 0,
+     "ability": "Bite Shield"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "damage_from",
+     "mobs": "zombies",
+     "num": 0,
+     "ability": "Bite Shield"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "damage_from",
+     "mobs": "zombies",
+     "num": 0,
+     "ability": "Bite Shield"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "undead",
+     "num": 1,
+     "ability": "Rotten Blade"
+    }
+   ]
+  }
+ }
+}

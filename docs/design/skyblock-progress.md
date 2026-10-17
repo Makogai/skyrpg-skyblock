@@ -359,6 +359,16 @@ phase so the next session can pick up where this one stopped.
       at Metaphysical); 3 charges each back 24 h after use, add-ons need a charge but don't use one and cost their levels
       each play; charges bought back with levels only (no Bits yet); Ultrasequencer starts at 3 numbers shown 2 s + 0.25 s
       each. Not yet: Bits, RNG meter, dyes, Guardian/Enderman Slayer ultra-rare boosts, the serum's own SkyBlock XP.
+- [x] **Pet abilities**: `tools/skyblock/import_pet_abilities.py` reads each ability's text (per rarity, numbers as {n})
+      through pattern rules into effects, `skyrpg/skyblock_pet_abilities` (185 of 679 ability tiers on 48 pets): stats
+      (in a place / at night / per nearby player / per skill or HotM level / per digit of a collection), percents of your
+      own stats, stats from other stats, damage dealt to a mob kind or in a situation (close, far, missing health, alone,
+      attacked you, mob level, bank), damage taken from a mob kind. `PetAbilities` (skyblock): a stat source and an
+      `IncomingDamage` hit rule for the pet out, numbers at its level and stat rarity (`SkyBlockPets.number`); percents and
+      conversions read the last totals minus the abilities' own share (no feedback). The skyblock module now depends on
+      progress (collections). Decided: "per player within N blocks" counts you too; places we don't have yet never count.
+      Not yet: the ~220 abilities with their own mechanics (Last Stand, Laserbeam, Stampede, wisdom towards a mob,
+      minion speed, drop chances, dungeon/Crimson/Garden ones).
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

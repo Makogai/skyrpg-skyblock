@@ -56,7 +56,7 @@ import net.minecraft.world.item.component.ResolvableProfile;
  *       a quarter of the others', a twelfth of Alchemy's and Enchanting's; +1% a Taming level (Zoologist). What it gets
  *       is also your Taming XP.</li>
  * </ul>
- * Abilities show on the pet with their numbers but don't do anything yet.
+ * Abilities show on the pet with their numbers; {@link PetAbilities} makes the ones it knows work.
  */
 public final class SkyBlockPets {
     public static final String PET_ID = "PET";
@@ -134,6 +134,7 @@ public final class SkyBlockPets {
         PetsMenu.init();
         PetCatalog.init();
         PetItems.init();
+        PetAbilities.init();
         Kat.init();
     }
 
@@ -373,6 +374,16 @@ public final class SkyBlockPets {
     private static double along(double first, double last, int level) {
         double t = (Math.min(level, 100) - 1) / 99.0;
         return first + (last - first) * t;
+    }
+
+    /** The pet's ability number {@code index} ({@code {0}} in its lore) at its level and its stats' rarity, 0 if none. */
+    public static double number(ItemStack stack, int index) {
+        PetDef def = pets.get(type(stack));
+        Tier tier = def == null ? null : def.tiers().get(statTier(stack));
+        if (tier == null || index < 0 || index >= tier.numbersAt100().length) {
+            return 0;
+        }
+        return along(index < tier.numbersAt1().length ? tier.numbersAt1()[index] : 0, tier.numbersAt100()[index], level(stack));
     }
 
     /** The pet's stats at its level. */
