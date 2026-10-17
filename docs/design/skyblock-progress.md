@@ -344,6 +344,21 @@ phase so the next session can pick up where this one stopped.
       the Sea Guardian isn't in today's pool.
       Not yet: trophy fish, hotspots, event sea creatures (Spooky, sharks, Jerry), Crimson Isle/Bayou/Galatea fishing,
       Agarimoo, Fishing Fortune, rod parts, Fishing Bag and bait sacks.
+- [x] **Experimentation Table**: research `docs/design/research/experimentation-table.md` (the wiki mirror's raw pages sit
+      behind a bot check, so the Superpairs table came back scrambled). Hand-written `skyrpg/experiments/experiments.json`.
+      The table is Hypixel furniture: items with `hypixel.furniture` may be placed (`SkyblockItemUse`), the head keeps the
+      item's data, right-click opens it, breaking it on your island gives the item back. `Experiments` (charges, banked
+      bonus clicks, serum doses per profile; `/sbexperiments [peek|reset]` for admins) + `ExperimentMenu` (server-run
+      games synced through data slots each tick) + `ExperimentScreen`: Superpairs (pairs of prizes, Feather +3 clicks,
+      Diamond instant find, prizes and Enchanting XP at the end), Chronomatron (note chains, 3-10 colours), Ultrasequencer
+      (numbers from 3 up on 7x3 to 9x4); add-on XP per step and milestone bonus clicks as the wiki gives them; Metaphysical
+      Serum (3 doses, milestones one shorter each).
+      Decided: Superpairs clicks 10/12/12/14/16/12 (Metaphysical doubles add-on clicks), Grand needs Enchanting 25, start
+      costs 25/50/75/100/200/350 levels; 2 power-up tiles a board; prize weights per stake (XP pairs, bottles, table-max
+      books, ultra-rare books one level higher from Supreme, Guardian pet by stake, Serum from Grand, Experiment the Fish
+      at Metaphysical); 3 charges each back 24 h after use, add-ons need a charge but don't use one and cost their levels
+      each play; charges bought back with levels only (no Bits yet); Ultrasequencer starts at 3 numbers shown 2 s + 0.25 s
+      each. Not yet: Bits, RNG meter, dyes, Guardian/Enderman Slayer ultra-rare boosts, the serum's own SkyBlock XP.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

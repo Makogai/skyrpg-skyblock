@@ -49,6 +49,9 @@ public final class SkyMenus {
                     com.skyrpg.skyblock.museum.MuseumMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.pet.KatMenu> KAT = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("kat"), new ExtendedMenuType<>(com.skyrpg.skyblock.pet.KatMenu::new, com.skyrpg.skyblock.pet.KatMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.experiment.ExperimentMenu> EXPERIMENT = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("experiment"), new ExtendedMenuType<>(com.skyrpg.skyblock.experiment.ExperimentMenu::new,
+                    com.skyrpg.skyblock.experiment.ExperimentMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.pet.PetsMenu> PETS = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("pets"), new ExtendedMenuType<>(com.skyrpg.skyblock.pet.PetsMenu::new, com.skyrpg.skyblock.pet.PetsMenu.View.CODEC));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),

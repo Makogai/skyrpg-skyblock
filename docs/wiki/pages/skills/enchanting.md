@@ -44,7 +44,7 @@ Each enchantment's tooltip says what it does at its level. They work as on Hypix
 | Abilities | Ultimate Wise (less mana for the item's ability) |
 
 > [!NOTE]
-> The others show on the item but don't do anything yet: Looting, Luck, Experience, Venomous, Lethality, most fishing and farming upgrades (Lure, Caster, Replenish...) and most ultimate enchantments. Bookshelf Power and the Enchanting level some enchants need, and the Experimentation Table, are coming.
+> The others show on the item but don't do anything yet: Looting, Luck, Experience, Venomous, Lethality, most fishing and farming upgrades (Lure, Caster, Replenish...) and most ultimate enchantments. Bookshelf Power and the Enchanting level some enchants need are coming. For bonus Enchanting XP and high-level books, see the [Experimentation Table](experimentation-table).
 
 ## The Enchanting skill
 

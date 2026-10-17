@@ -1,7 +1,7 @@
 ---
 title: Crafting
 category: skills
-order: 7
+order: 8
 icon: minecraft:crafting_table
 summary: How crafting works in SkyBlock: the crafting table, the Recipe Book, what unlocks a recipe, and the Carpentry XP every craft pays.
 ---

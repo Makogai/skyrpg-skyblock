@@ -1,0 +1,70 @@
+{
+ "_about": "Hypixel's Experimentation Table (docs/design/research/experimentation-table.md). Hand-written: numbers the wiki mirror agreed on, and our decisions where it didn't (see skyblock-progress.md). xp = Enchanting XP; cost = vanilla XP levels; clicks = Superpairs base clicks.",
+ "charges": 3,
+ "recharge_hours": 24,
+ "extra_charge_levels": [50, 100, 200],
+ "superpairs": [
+  {"id": "beginner", "name": "Beginner", "enchanting": 10, "cost": 25, "width": 7, "height": 2, "clicks": 10, "addon_multiplier": 1,
+   "rewards": [
+    {"xp": [3500, 6000], "weight": 45},
+    {"item": "EXP_BOTTLE", "count": [10, 30], "weight": 30},
+    {"book": "table", "weight": 20},
+    {"pet": "GUARDIAN", "tier": "COMMON", "weight": 5}]},
+  {"id": "high", "name": "High", "enchanting": 20, "cost": 50, "width": 5, "height": 4, "clicks": 12, "addon_multiplier": 1,
+   "rewards": [
+    {"xp": [5000, 8000], "weight": 40},
+    {"item": "EXP_BOTTLE", "count": [10, 30], "weight": 15},
+    {"item": "GRAND_EXP_BOTTLE", "count": [5, 20], "weight": 15},
+    {"item": "TITANIC_EXP_BOTTLE", "count": [1, 1], "weight": 4},
+    {"book": "table", "weight": 22},
+    {"pet": "GUARDIAN", "tier": "UNCOMMON", "weight": 4}]},
+  {"id": "grand", "name": "Grand", "enchanting": 25, "cost": 75, "width": 5, "height": 4, "clicks": 12, "addon_multiplier": 1,
+   "rewards": [
+    {"xp": [5000, 10000], "weight": 40},
+    {"item": "GRAND_EXP_BOTTLE", "count": [5, 20], "weight": 25},
+    {"item": "TITANIC_EXP_BOTTLE", "count": [1, 1], "weight": 6},
+    {"book": "table", "weight": 22},
+    {"pet": "GUARDIAN", "tier": "RARE", "weight": 4},
+    {"item": "METAPHYSICAL_SERUM", "count": [1, 1], "weight": 1}]},
+  {"id": "supreme", "name": "Supreme", "enchanting": 30, "cost": 100, "width": 7, "height": 4, "clicks": 14, "addon_multiplier": 1,
+   "rewards": [
+    {"xp": [5000, 12000], "weight": 40},
+    {"item": "GRAND_EXP_BOTTLE", "count": [5, 20], "weight": 22},
+    {"item": "TITANIC_EXP_BOTTLE", "count": [1, 1], "weight": 8},
+    {"book": "table", "weight": 22},
+    {"book": "ultra", "weight": 0.5},
+    {"pet": "GUARDIAN", "tier": "EPIC", "weight": 4},
+    {"item": "METAPHYSICAL_SERUM", "count": [1, 1], "weight": 1}]},
+  {"id": "transcendent", "name": "Transcendent", "enchanting": 40, "cost": 200, "width": 7, "height": 4, "clicks": 16, "addon_multiplier": 1,
+   "rewards": [
+    {"xp": [8000, 15000], "weight": 40},
+    {"item": "GRAND_EXP_BOTTLE", "count": [5, 20], "weight": 20},
+    {"item": "TITANIC_EXP_BOTTLE", "count": [1, 2], "weight": 10},
+    {"book": "table", "weight": 22},
+    {"book": "ultra", "weight": 0.75},
+    {"pet": "GUARDIAN", "tier": "LEGENDARY", "weight": 3},
+    {"item": "METAPHYSICAL_SERUM", "count": [1, 1], "weight": 1}]},
+  {"id": "metaphysical", "name": "Metaphysical", "enchanting": 50, "cost": 350, "width": 7, "height": 4, "clicks": 12, "addon_multiplier": 2,
+   "rewards": [
+    {"xp": [10000, 18000], "weight": 40},
+    {"item": "GRAND_EXP_BOTTLE", "count": [5, 20], "weight": 18},
+    {"item": "TITANIC_EXP_BOTTLE", "count": [1, 2], "weight": 12},
+    {"book": "table", "weight": 22},
+    {"book": "ultra", "weight": 1},
+    {"pet": "GUARDIAN", "tier": "LEGENDARY", "weight": 3},
+    {"item": "METAPHYSICAL_SERUM", "count": [1, 1], "weight": 1.5},
+    {"item": "EXPERIMENT_THE_FISH", "count": [1, 1], "weight": 0.3}]}
+ ],
+ "chronomatron": [
+  {"id": "high", "name": "High", "enchanting": 20, "cost": 5, "colors": 3, "xp": 1500, "bonus": {"5": 1, "9": 2}},
+  {"id": "grand", "name": "Grand", "enchanting": 25, "cost": 10, "colors": 5, "xp": 2500, "bonus": {"5": 1, "9": 2}},
+  {"id": "supreme", "name": "Supreme", "enchanting": 30, "cost": 15, "colors": 7, "xp": 3500, "bonus": {"5": 1, "9": 2}},
+  {"id": "transcendent", "name": "Transcendent", "enchanting": 35, "cost": 20, "colors": 8, "xp": 4500, "bonus": {"5": 1, "9": 2}},
+  {"id": "metaphysical", "name": "Metaphysical", "enchanting": 40, "cost": 40, "colors": 10, "xp": 6000, "bonus": {"5": 1, "9": 2, "12": 3}}
+ ],
+ "ultrasequencer": [
+  {"id": "supreme", "name": "Supreme", "enchanting": 25, "cost": 15, "width": 7, "height": 3, "xp": 3500, "bonus": {"5": 1, "7": 2}},
+  {"id": "transcendent", "name": "Transcendent", "enchanting": 30, "cost": 20, "width": 7, "height": 4, "xp": 5000, "bonus": {"5": 1, "7": 2}},
+  {"id": "metaphysical", "name": "Metaphysical", "enchanting": 40, "cost": 40, "width": 9, "height": 4, "xp": 7000, "bonus": {"5": 1, "7": 2, "9": 3}}
+ ]
+}

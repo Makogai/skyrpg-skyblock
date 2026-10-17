@@ -40,13 +40,16 @@ public final class SkyblockItemUse {
                 || item instanceof EnderpearlItem || stack.has(DataComponents.EQUIPPABLE));
     }
 
-    /** Whether this stack is a SkyBlock item that mustn't be placed as a block (Hypixel's {@code can_place} ones may). */
+    /**
+     * Whether this stack is a SkyBlock item that mustn't be placed as a block (Hypixel's {@code can_place} ones may, and its
+     * furniture, like the Experimentation Table: placed as its head, it keeps the item's data and drops it back).
+     */
     public static boolean blocksPlacing(ItemStack stack) {
         ItemDefinition def = SkyItems.definition(stack);
         if (def == null || !def.skyblock()) {
             return false;
         }
         JsonObject hypixel = def.json().getAsJsonObject("hypixel");
-        return hypixel == null || !hypixel.has("can_place") || !hypixel.get("can_place").getAsBoolean();
+        return hypixel == null || !hypixel.has("furniture") && (!hypixel.has("can_place") || !hypixel.get("can_place").getAsBoolean());
     }
 }
