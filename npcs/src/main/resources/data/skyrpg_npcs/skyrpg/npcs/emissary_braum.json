@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Braum",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    104.5,
+    201.0,
+    -103.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "Welcome to the Mines! Mind the Goblins.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Royal Palace",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    60,
+    183,
+    73
+  ],
+  "to": [
+    219,
+    234,
+    174
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Carlton",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -66.5,
+    176.0,
+    -53.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "Rampart's Quarry never runs dry.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

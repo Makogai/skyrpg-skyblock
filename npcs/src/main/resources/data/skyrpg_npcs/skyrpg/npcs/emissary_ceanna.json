@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Ceanna",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    20.5,
+    176.0,
+    25.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The Veins go down further than you'd think.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

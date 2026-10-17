@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Lilith",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    99.5,
+    197.0,
+    -55.5
+  ],
+  "yaw": 90,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "Lava Springs. Warm, isn't it?",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

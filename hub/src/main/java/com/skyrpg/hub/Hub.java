@@ -58,13 +58,17 @@ public final class Hub {
     /** The same for an island in an End sky (Hypixel's The End): the vanilla End's look, without its dragon fight. */
     public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_END_TYPE =
             ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_end"));
+    /** The same underground (Hypixel's Dwarven Mines): a dark cave sky and cave music. */
+    public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_MINES_TYPE =
+            ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_mines"));
 
     /**
      * The Hub or another public island (Hypixel's Farming Islands, The Park, the Gold Mine...): protected like the Hub,
      * nobody hungry, the void sends you back. Known on both sides, from the dimension's type.
      */
     public static boolean isPublic(Level level) {
-        return level.dimension() == LEVEL || level.dimensionTypeRegistration().is(PUBLIC_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_END_TYPE);
+        return level.dimension() == LEVEL || level.dimensionTypeRegistration().is(PUBLIC_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_END_TYPE)
+                || level.dimensionTypeRegistration().is(PUBLIC_MINES_TYPE);
     }
 
     public static ServerLevel level(MinecraftServer server) {

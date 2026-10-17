@@ -1,0 +1,26 @@
+{
+  "name": "Brynmor",
+  "role": "Merchant",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    32.5,
+    201.0,
+    -153.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.generic.drink",
+  "greetings": [
+    "A Powder Pie for the road?",
+    "Best tavern under the mountain."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "brynmor"
+    }
+  }
+}

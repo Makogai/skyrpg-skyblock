@@ -1,15 +1,19 @@
 {
-  "name": "the Gold Mine",
+  "name": "the Dwarven Mines",
   "dimension": "skyrpg_skyblock:deep_caverns",
   "from": [
-    14,
-    186,
-    56
+    13,
+    19,
+    11
   ],
   "to": [
-    16,
-    187,
-    58
+    15,
+    20,
+    13
   ],
-  "warp": "gold"
+  "warp": "mines",
+  "requires": {
+    "skill": "skyrpg_skills:mining",
+    "level": 12
+  }
 }

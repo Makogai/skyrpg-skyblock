@@ -1,0 +1,14 @@
+{
+  "name": "Aristocrat Passage",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    60,
+    100,
+    110
+  ],
+  "to": [
+    219,
+    182,
+    174
+  ]
+}

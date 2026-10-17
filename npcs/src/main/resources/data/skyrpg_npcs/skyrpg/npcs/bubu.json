@@ -1,0 +1,26 @@
+{
+  "name": "Bubu",
+  "role": "Merchant",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -9.5,
+    201.0,
+    -142.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Pickaxes! Proper dwarven pickaxes!",
+    "Mithril needs Breaking Power. Get a better pick."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "bubu"
+    }
+  }
+}

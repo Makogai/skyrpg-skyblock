@@ -68,6 +68,8 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.accessory.AccessoryBag.init();
         com.skyrpg.skyblock.pet.SkyBlockPets.init();
         com.skyrpg.skyblock.end.EndFeatures.init();
+        com.skyrpg.skyblock.mining.Hotm.init();
+        com.skyrpg.skyblock.mining.SkyMining.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

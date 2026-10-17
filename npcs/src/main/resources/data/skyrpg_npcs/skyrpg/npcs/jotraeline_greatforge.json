@@ -1,0 +1,20 @@
+{
+  "name": "Jotraeline Greatforge",
+  "role": "The Forge",
+  "color": "#FF8A2A",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    10.5,
+    176.0,
+    -32.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "Drills are my speciality.",
+    "Bring me an engine and I'll make it sing."
+  ]
+}

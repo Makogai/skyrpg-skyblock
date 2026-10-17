@@ -1,0 +1,23 @@
+{
+  "name": "the Deep Caverns",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    105,
+    201,
+    -93
+  ],
+  "to": [
+    107,
+    202,
+    -91
+  ],
+  "destination": {
+    "dimension": "skyrpg_skyblock:deep_caverns",
+    "pos": [
+      14.5,
+      19,
+      17.5
+    ],
+    "yaw": 180.0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Gates to the Mines",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -60,
+    95,
+    -75
+  ],
+  "to": [
+    60,
+    235,
+    -50
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "The Lift",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    85,
+    100,
+    -175
+  ],
+  "to": [
+    130,
+    235,
+    -75
+  ]
+}

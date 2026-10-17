@@ -16,6 +16,7 @@ Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one fl
 | [Deep Caverns](#deep-caverns) | the lift shaft at the bottom of the Gold Mine | Mining V | `/warp deep` | Six layers of ores and their mobs |
 | [Spider's Den](#spider-s-den) | the Graveyard's launch pad | Combat I | `/warp spider` | Spiders, Gravel; the Spider Mound and Arachne's Sanctuary |
 | [The End](#the-end) | the Spider's Den's west launch pad | Combat XII | `/warp end` | Endermen, Zealots, End Stone, Obsidian; the Ender Dragon |
+| [Dwarven Mines](dwarven-mines) | the Obsidian Sanctuary's launch pad (Deep Caverns) | Mining XII | `/warp mines`, `/warp forge` | Mithril, Titanium, Commissions, the Forge; see its own page |
 
 **Launch pads** are 3x3 pads of slime blocks with a sign saying where they go. Step on one and you're thrown to the island, if you have the skill level it needs; if not, it pushes you back and says what you're missing. Every island has a pad back to where you came from in the Hub.
 
@@ -100,7 +101,7 @@ A mountain of rock with six caverns stacked inside it, each with its own ore and
 | Diamond Reserve | Diamond | Miner Zombies and Skeletons |
 | Obsidian Sanctuary | Diamond, Obsidian, Diamond Blocks | stronger Miner Zombies and Skeletons |
 
-**Walter** sells supplies at the entrance at the top. On every layer a **Lift Operator** stands in the lift cage in the middle: talk to one to ride the lift to any layer you've already walked into. The **Lapis Miner**, the **Redstone Miner** and **Rhys** (at the shrine in the Obsidian Sanctuary) live down here too. A launch pad at the top takes you back to the Gold Mine.
+**Walter** sells supplies at the entrance at the top. On every layer a **Lift Operator** stands in the lift cage in the middle: talk to one to ride the lift to any layer you've already walked into. The **Lapis Miner**, the **Redstone Miner** and **Rhys** (at the shrine in the Obsidian Sanctuary) live down here too. A launch pad at the top takes you back to the Gold Mine, and one on the Obsidian Sanctuary's floor goes down to the [Dwarven Mines](dwarven-mines) (Mining XII).
 
 ## Spider's Den
 

@@ -1,0 +1,23 @@
+{
+  "name": "Blacksmith",
+  "role": "Reforging",
+  "color": "#FFAA00",
+  "hint": "Reforge",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -6.5,
+    201.0,
+    -103.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Bring me your gear and some coins.",
+    "Dwarven steel takes a reforge well."
+  ],
+  "action": {
+    "type": "reforge"
+  }
+}

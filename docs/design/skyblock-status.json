@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "The End: Zealots, Summoning Eyes and the Ender Dragon fight with Hypixel's Dragon Weight loot",
+  "latest": "Dwarven Mines: Mithril, Titanium, Commissions, Heart of the Mountain and the Forge",
   "phase": {
     "name": "Phase 2: Mid game",
-    "done": 36
+    "done": 44
   },
   "categories": [
     {
@@ -201,7 +201,7 @@
           "name": "Gold Mine & Deep Caverns",
           "icon": "item/diamond",
           "weight": 3,
-          "done": 70
+          "done": 75
         },
         {
           "name": "Spider's Den",
@@ -213,7 +213,7 @@
           "name": "Dwarven Mines & Hollows",
           "icon": "item/iron_pickaxe",
           "weight": 10,
-          "done": 0
+          "done": 40
         },
         {
           "name": "The End",

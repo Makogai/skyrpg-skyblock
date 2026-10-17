@@ -1,0 +1,14 @@
+{
+  "name": "Dwarven Village",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -60,
+    100,
+    -175
+  ],
+  "to": [
+    85,
+    235,
+    -75
+  ]
+}

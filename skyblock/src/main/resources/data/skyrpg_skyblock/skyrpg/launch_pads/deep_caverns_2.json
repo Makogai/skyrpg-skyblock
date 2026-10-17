@@ -1,0 +1,15 @@
+{
+  "name": "the Gold Mine",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    14,
+    186,
+    56
+  ],
+  "to": [
+    16,
+    187,
+    58
+  ],
+  "warp": "gold"
+}

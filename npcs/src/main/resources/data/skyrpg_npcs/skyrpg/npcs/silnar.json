@@ -1,0 +1,20 @@
+{
+  "name": "Silnar",
+  "role": "Cult of the Fallen Star",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    55.5,
+    191.0,
+    66.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.amethyst_block.resonate",
+  "greetings": [
+    "Join us, miner.",
+    "The stars fall for those who wait."
+  ]
+}

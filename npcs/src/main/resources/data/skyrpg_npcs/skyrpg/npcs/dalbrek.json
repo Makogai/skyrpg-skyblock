@@ -1,0 +1,20 @@
+{
+  "name": "Dalbrek",
+  "role": "Grand Library",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    192.5,
+    187.0,
+    110.5
+  ],
+  "yaw": 90,
+  "sound": "minecraft:item.book.page_turn",
+  "greetings": [
+    "Every dwarf's story is in these books.",
+    "Quiet in the library, please."
+  ]
+}

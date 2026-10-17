@@ -1,0 +1,20 @@
+{
+  "name": "Tal Ker",
+  "role": "Grand Library",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    192.5,
+    187.0,
+    132.5
+  ],
+  "yaw": 90,
+  "sound": "minecraft:item.book.page_turn",
+  "greetings": [
+    "The Kings rotate. The books don't.",
+    "Looking for something?"
+  ]
+}

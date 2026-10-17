@@ -200,6 +200,15 @@ public final class Zones {
         return zone == null ? null : zone.blocks().get(state.getBlock());
     }
 
+    /**
+     * Breaks a zone block the way mining it does, for features that handle the break themselves (Mithril): it becomes
+     * {@code standIn} and turns back into {@code original} after {@code ticks}.
+     */
+    public static void deplete(ServerLevel level, BlockPos pos, BlockState original, BlockState standIn, int ticks) {
+        level.setBlock(pos, standIn, Block.UPDATE_ALL);
+        REGROWING.add(new Regrowth(level.dimension(), pos.immutable(), original, standIn, level.getServer().getTickCount() + ticks));
+    }
+
     private static void send(ServerPlayer player) {
         if (!ServerPlayNetworking.canSend(player, ZoneList.TYPE)) {
             return;

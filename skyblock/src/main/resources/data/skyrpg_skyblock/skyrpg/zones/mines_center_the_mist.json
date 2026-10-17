@@ -1,0 +1,38 @@
+{
+  "name": "The Mist",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -60,
+    95,
+    78
+  ],
+  "to": [
+    60,
+    126,
+    136
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:creeper",
+      "name": "Ghost",
+      "level": 157,
+      "health": 1000000,
+      "damage": 1000,
+      "xp": 100,
+      "coins": 52,
+      "max": 8,
+      "every": 6,
+      "from": [
+        -26,
+        100,
+        90
+      ],
+      "to": [
+        26,
+        112,
+        132
+      ],
+      "indoors": true
+    }
+  ]
+}

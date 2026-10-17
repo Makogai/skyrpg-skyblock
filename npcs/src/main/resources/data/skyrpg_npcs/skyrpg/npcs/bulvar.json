@@ -1,0 +1,26 @@
+{
+  "name": "Bulvar",
+  "role": "Merchant",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    8.5,
+    201.0,
+    -142.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Tier twelve minions. Nobody else sells them.",
+    "Upgrade your minions, upgrade your life."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "bulvar"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "King",
+  "role": "Royal Palace",
+  "color": "#FFAA00",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    150.5,
+    189.0,
+    155.5
+  ],
+  "yaw": 180,
+  "sound": "minecraft:block.bell.use",
+  "greetings": [
+    "Today the King is here, and he has work for you.",
+    "Serve the Mines well and they'll serve you."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

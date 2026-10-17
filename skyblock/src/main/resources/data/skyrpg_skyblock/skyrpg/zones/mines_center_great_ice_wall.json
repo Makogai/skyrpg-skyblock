@@ -1,0 +1,52 @@
+{
+  "name": "Great Ice Wall",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -60,
+    95,
+    136
+  ],
+  "to": [
+    60,
+    235,
+    175
+  ],
+  "blocks": {
+    "minecraft:emerald_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:stray",
+      "name": "Glacite Walker",
+      "level": 24,
+      "health": 888,
+      "damage": 300,
+      "xp": 36,
+      "coins": 8,
+      "max": 16,
+      "every": 11,
+      "from": [
+        -46,
+        127,
+        141
+      ],
+      "to": [
+        46,
+        138,
+        164
+      ],
+      "drops": [
+        {
+          "item": "GLACITE_JEWEL",
+          "chance": 0.005,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "indoors": true
+    }
+  ]
+}

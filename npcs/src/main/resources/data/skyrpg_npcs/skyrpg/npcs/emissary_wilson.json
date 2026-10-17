@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Wilson",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    170.5,
+    150.0,
+    52.5
+  ],
+  "yaw": 90,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The Royal Mines, finest ore in the kingdom.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

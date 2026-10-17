@@ -16,7 +16,7 @@ from kit import Area, hash01
 
 OX, OY, OZ = -110, 10, -110
 NX, NY, NZ = 220, 190, 220
-area = Area("deep_caverns", (OX, OY, OZ), (NX, NY, NZ), version=1, dimension="skyrpg_skyblock:deep_caverns",
+area = Area("deep_caverns", (OX, OY, OZ), (NX, NY, NZ), version=2, dimension="skyrpg_skyblock:deep_caverns",
             island="Deep Caverns", shell=3)
 
 TOP = 185                          # the plateau's surface; players stand at 186
@@ -637,6 +637,31 @@ for (x, z) in spots(5, 10, 62, 0.85, 7):
 for (x, z) in spots(5, 14, 63, 0.9, 5):
     area.set(x, F + 1, z, "minecraft:polished_blackstone_wall")
     area.set(x, F + 2, z, "minecraft:soul_lantern[hanging=false]")
+
+# the launch pad to the Dwarven Mines (Mining XII) on the Obsidian Sanctuary's floor; the pad back lands at DM_LAND
+DMX, DMZ = 14, 12
+DM_LAND = (DMX, F + 1, DMZ + 5, 180.0)
+for dx in range(-5, 6):
+    for dz in range(-3, 7):
+        assert free(5, DMX + dx, DMZ + dz, 0.8), (dx, dz)
+for dx in range(-4, 5):
+    for dz in range(-4, 7):
+        for y in range(F + 1, F + 5):
+            area.set(DMX + dx, y, DMZ + dz, "minecraft:air")
+for dx in range(-3, 4):
+    for dz in range(-3, 4):
+        area.set(DMX + dx, F, DMZ + dz, "minecraft:polished_blackstone_bricks" if max(abs(dx), abs(dz)) == 3 else "minecraft:polished_blackstone")
+for dx in range(-1, 2):
+    for dz in range(-1, 2):
+        area.set(DMX + dx, F, DMZ + dz, "minecraft:slime_block")
+area.set(DMX, F + 1, DMZ, "minecraft:heavy_weighted_pressure_plate")
+for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
+    area.set(DMX + dx, F + 1, DMZ + dz, "minecraft:polished_blackstone_wall")
+    area.set(DMX + dx, F + 2, DMZ + dz, "minecraft:soul_lantern[hanging=false]")
+sign(DMX, F + 1, DMZ - 3, 8, "Dwarven Mines", "Mining XII", "dark_oak")
+area.pad("the Dwarven Mines", DMX - 1, F + 1, DMZ - 1, DMX + 1, F + 2, DMZ + 1, warp="mines", skill="mining", level=12)
+area.spots["notes"].append(f"Dwarven Mines pad at ({DMX}, {F + 1}, {DMZ}) (box {DMX - 1}..{DMX + 1}, {DMZ - 1}..{DMZ + 1}); the pad back from "
+                           f"The Lift lands at ({DM_LAND[0]}, {DM_LAND[1]}, {DM_LAND[2]}) yaw {DM_LAND[3]:.0f}")
 
 # ---------------------------------------------------------------- the top: plaza, gate, Walter's stall, the pad
 ground = area.mix({"andesite": 5, "tuff": 4, "polished_andesite": 2, "cobbled_deepslate": 3})

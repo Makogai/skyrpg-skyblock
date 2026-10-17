@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Eliza",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    4.5,
+    201.0,
+    -120.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The King sends his regards. And his commissions.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}

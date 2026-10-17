@@ -1,0 +1,20 @@
+{
+  "name": "Fragilis",
+  "role": "Dwarven Mines",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    24.5,
+    201.0,
+    -103.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.amethyst_block.hit",
+  "greetings": [
+    "Every block has a strength. Every tool a Breaking Power.",
+    "Mithril needs 4, Titanium 5."
+  ]
+}

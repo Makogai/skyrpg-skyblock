@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/mines_east",
+  "origin": [
+    60,
+    100,
+    -75
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "island": "Dwarven Mines",
+  "arrival": {
+    "pos": [
+      96.5,
+      197.0,
+      -65.5
+    ],
+    "yaw": 0.0
+  }
+}

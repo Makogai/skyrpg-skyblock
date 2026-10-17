@@ -1,0 +1,20 @@
+{
+  "name": "Bylma",
+  "role": "Divan's Gateway",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -8.5,
+    136.0,
+    95.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.chain.step",
+  "greetings": [
+    "Divan's Gateway. Beyond it, the Ice Wall.",
+    "Don't go down into the Mist alone."
+  ]
+}

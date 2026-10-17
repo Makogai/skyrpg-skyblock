@@ -231,6 +231,30 @@ phase so the next session can pick up where this one stopped.
       `Zones.FIGHTABLE_TAG` lets a feature's own mobs be fought outside zones; `Zones.dressAs` gives them Hypixel stats.
       Not yet: the dragons' own attacks beyond lightning, plain Endermen's rare drops (Ender Armor, Ender Gem...),
       Voidgloom Seraph (slayer), the Endstone Protector, and the Ender Dragon pet's drop chance boosts.
+- [x] **Dwarven Mines / Mining 2** (Hypixel's): research in `docs/design/research/dwarven-mines.md` (the official wiki is
+      gone; a community mirror). The island: dimension `skyrpg_skyblock:dwarven_mines` (type `skyrpg_hub:public_mines`: no
+      sky light, cave sky and music; `Hub.isPublic`), four area scripts from `docs/design/dwarven-mines-build.md`
+      (`mines_village`, `mines_west`, `mines_center`, `mines_east`: 18 zones, 9 doorways between them, ~1.25M blocks), 11
+      Fairy Souls, 40 NPCs (`npcs.py`: Emissaries and the King open Commissions, the Forger the Forge, Bubu/Bulvar/
+      Brynmor shops, Banker Broadjaw, the Blacksmith), `/warp mines` and `/warp forge`, a Mining XII pad from the Obsidian
+      Sanctuary (deep_caverns v2). **Mining 2 rules** (`SkyMining`, core `BlockStrength` hook in the `getDestroyProgress`
+      mixin, both sides): on public islands but the Hub, Hypixel's block strength and Breaking Power (too little BP: no
+      break and a message), ticks = round(30 × strength / Mining Speed), 4-tick floor, instamine over 30× (60× for ores,
+      pure ores, obsidian, metals). Mithril (3 tiers) and Titanium handled in a late break phase: Hypixel's items with
+      Mining Fortune, Mining XP, Mithril Powder in the Mines, 0.5% Titanium spawns (Titanium Insanium), `Zones.deplete`.
+      **Heart of the Mountain** (`Hotm`, `HotmTree`, `HotmMenu` + `HotmScreen`, `/hotm`, `/sbhotm`): NEU's tree via
+      `tools/skyblock/import_hotm.py` (a small Lisp evaluator turns its cost/stat formulas into per-level tables),
+      tiers 1-10 by HotM XP, tokens 1/2/2/2/2/2/3/2/2/2 + Core of the Mountain's, unlock next to an owned perk, powder
+      upgrades (shift ×10), right-click disables, abilities selected; stats (Mining Speed, Mining Fortune), Mining Speed
+      Boost on right-click with a pickaxe (2 min cooldown). **Commissions** (`Commissions`, `CommissionsMenu` +
+      `CommissionsScreen`): 15 Dwarven Mines tasks (Mithril/Titanium anywhere or per area, Goblins, Glacite Walkers,
+      Treasure Hoarder hits), 2 slots (+1 at 100, +1 Core 3), claims at the King/Emissaries: HotM XP 100/200/400, 500
+      Mithril Powder, 5,000 Mining XP, +900 HotM XP for the first 4 a day. **The Forge** (`Forge`, `ForgeMenu` +
+      `ForgeScreen`): NEU's 123 forge recipes (`import_forge.py`), slots by HotM (2 at HotM 2 to 6 at 6, +1 Core 2),
+      real-time jobs, Quick Forge, ready notices, `/sbforge [finish]`. `MinesMobs`: Ghosts are charged invisible creepers
+      that never explode and hit on contact.
+      Not yet: the King's rotation, mining events, Golden/Diamond Goblins, Powder Ghasts, daily Puzzler/Fetchur, Ticket
+      Masters, most perks' effects, Pickobulus and other abilities, drills (fuel, parts), the Crystal Hollows and Glacite.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

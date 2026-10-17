@@ -1,0 +1,14 @@
+{
+  "name": "Dwarven Mines",
+  "description": "Mithril, Titanium, Commissions and the Heart of the Mountain",
+  "icon": "minecraft:iron_pickaxe",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    100.5,
+    201.0,
+    -99.5
+  ],
+  "yaw": 90.0,
+  "area": "The Lift",
+  "order": 27
+}

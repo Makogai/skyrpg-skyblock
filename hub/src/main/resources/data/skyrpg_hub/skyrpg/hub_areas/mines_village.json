@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/mines_village",
+  "origin": [
+    -60,
+    100,
+    -175
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "island": "Dwarven Mines",
+  "arrival": {
+    "pos": [
+      100.5,
+      201.0,
+      -99.5
+    ],
+    "yaw": 90.0
+  }
+}

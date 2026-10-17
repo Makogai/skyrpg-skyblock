@@ -1,0 +1,14 @@
+{
+  "name": "The Forge",
+  "description": "The Dwarven Mines' Forge",
+  "icon": "minecraft:anvil",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    0.5,
+    176.0,
+    -35.5
+  ],
+  "yaw": 0.0,
+  "area": "The Forge",
+  "order": 28
+}

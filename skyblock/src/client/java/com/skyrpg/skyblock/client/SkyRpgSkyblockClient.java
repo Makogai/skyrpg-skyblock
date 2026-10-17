@@ -41,6 +41,9 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.ENCHANT, com.skyrpg.skyblock.client.screen.EnchantScreen::new);
         MenuScreens.register(SkyMenus.ACCESSORY_BAG, com.skyrpg.skyblock.client.screen.AccessoryBagScreen::new);
         MenuScreens.register(SkyMenus.MAXWELL, com.skyrpg.skyblock.client.screen.MaxwellScreen::new);
+        MenuScreens.register(SkyMenus.HOTM, com.skyrpg.skyblock.client.screen.HotmScreen::new);
+        MenuScreens.register(SkyMenus.FORGE, com.skyrpg.skyblock.client.screen.ForgeScreen::new);
+        MenuScreens.register(SkyMenus.COMMISSIONS, com.skyrpg.skyblock.client.screen.CommissionsScreen::new);
         MenuScreens.register(SkyMenus.PETS, com.skyrpg.skyblock.client.screen.PetsScreen::new);
         MenuScreens.register(SkyMenus.SHOP, ShopScreen::new);
         SkyRpgMenu.registerPage(new SkyBlockMenuPage());

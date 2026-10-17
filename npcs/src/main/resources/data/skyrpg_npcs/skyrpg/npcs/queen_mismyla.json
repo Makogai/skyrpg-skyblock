@@ -1,0 +1,20 @@
+{
+  "name": "Queen Mismyla",
+  "role": "Royal Palace",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    146.5,
+    189.0,
+    155.5
+  ],
+  "yaw": 180,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "The King changes every twenty minutes. I don't.",
+    "Have you met every King yet?"
+  ]
+}

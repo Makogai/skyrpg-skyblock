@@ -1,0 +1,44 @@
+{
+  "name": "Rampart's Quarry",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -180,
+    100,
+    -88
+  ],
+  "to": [
+    -60,
+    235,
+    -12
+  ],
+  "blocks": {
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:cyan_terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine_bricks": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:dark_prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 12
+    }
+  }
+}

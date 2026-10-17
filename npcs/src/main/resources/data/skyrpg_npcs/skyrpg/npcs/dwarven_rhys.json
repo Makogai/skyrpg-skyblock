@@ -1,0 +1,20 @@
+{
+  "name": "Rhys",
+  "role": "Dwarven Mines",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    10.5,
+    201.0,
+    -103.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.stone.break",
+  "greetings": [
+    "There are dwarves! I told you!",
+    "The Heart of the Mountain grows with every commission."
+  ]
+}

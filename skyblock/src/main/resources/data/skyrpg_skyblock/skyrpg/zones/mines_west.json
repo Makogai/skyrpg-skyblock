@@ -1,0 +1,76 @@
+{
+  "name": "Upper Mines",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    -180,
+    100,
+    -175
+  ],
+  "to": [
+    -60,
+    235,
+    -88
+  ],
+  "blocks": {
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:cyan_terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine_bricks": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:dark_prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 12
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:husk",
+      "name": "Treasure Hoarder",
+      "level": 61,
+      "health": 15000,
+      "damage": 500,
+      "xp": 91,
+      "coins": 20,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -150,
+        177,
+        -140
+      ],
+      "to": [
+        -100,
+        181,
+        -110
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "STARFALL",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

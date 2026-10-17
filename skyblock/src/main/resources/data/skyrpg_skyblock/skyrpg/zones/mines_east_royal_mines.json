@@ -1,0 +1,100 @@
+{
+  "name": "Royal Mines",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    60,
+    100,
+    -8
+  ],
+  "to": [
+    219,
+    182,
+    109
+  ],
+  "blocks": {
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:cyan_terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:prismarine_bricks": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:dark_prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 12
+    },
+    "minecraft:coal_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:coal_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:iron_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:iron_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:gold_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:gold_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:lapis_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:lapis_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:redstone_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:redstone_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:emerald_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:emerald_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    },
+    "minecraft:diamond_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:diamond_block": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    }
+  }
+}

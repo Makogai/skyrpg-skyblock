@@ -1,0 +1,14 @@
+{
+  "name": "Palace Bridge",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "from": [
+    60,
+    183,
+    -8
+  ],
+  "to": [
+    219,
+    234,
+    72
+  ]
+}

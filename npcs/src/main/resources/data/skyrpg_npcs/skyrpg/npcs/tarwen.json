@@ -1,0 +1,20 @@
+{
+  "name": "Tarwen",
+  "role": "Dwarven Tavern",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    28.5,
+    201.0,
+    -144.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.generic.drink",
+  "greetings": [
+    "Mithril, mithril, mithril.",
+    "*hic*"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Fred",
+  "role": "The Forge",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -9.5,
+    176.0,
+    -32.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.furnace.fire_crackle",
+  "greetings": [
+    "The Forge never sleeps.",
+    "Give me a ring when you need something."
+  ]
+}

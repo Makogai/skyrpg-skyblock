@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Fraiser",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    -81.5,
+    177.0,
+    -102.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The Upper Mines are rich, if you watch for Hoarders.",
+    "Finished a commission? I'll see you're paid."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}
