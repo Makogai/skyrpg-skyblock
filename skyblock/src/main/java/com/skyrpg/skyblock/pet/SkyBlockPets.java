@@ -118,6 +118,19 @@ public final class SkyBlockPets {
             }
             return InteractionResult.SUCCESS;
         });
+        // Looking at a block when you right-click is a block use, which the Hub refuses: a pet is added then too.
+        net.fabricmc.fabric.api.event.player.UseBlockCallback.EVENT.addPhaseOrdering(early, net.fabricmc.fabric.api.event.Event.DEFAULT_PHASE);
+        net.fabricmc.fabric.api.event.player.UseBlockCallback.EVENT.register(early, (player, level, hand, hit) -> {
+            ItemStack held = player.getItemInHand(hand);
+            if (!isPet(held)) {
+                return InteractionResult.PASS;
+            }
+            if (player instanceof ServerPlayer server) {
+                add(server, held.copyWithCount(1));
+                held.shrink(1);
+            }
+            return InteractionResult.SUCCESS;
+        });
         PetsMenu.init();
         PetCatalog.init();
     }

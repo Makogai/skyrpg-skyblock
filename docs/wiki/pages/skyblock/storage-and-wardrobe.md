@@ -1,9 +1,9 @@
 ---
-title: Storage and Wardrobe
+title: Storage, Sacks and Wardrobe
 category: skyblock
 order: 4
 icon: minecraft:ender_chest
-summary: Ender Chest pages of 45 slots each and a Wardrobe for nine armour sets, both in the Storage page of the K menu.
+summary: Ender Chest pages of 45 slots each, a Wardrobe for nine armour sets, and Hypixel's Sacks that gathered materials go straight into.
 ---
 Open the K menu and choose **Storage**, or type `/storage`. Using an ender chest anywhere in the world opens it too. It has two parts: your **Wardrobe** and your **Ender Chest pages**. Each card shows a peek at what's inside, so you can see which page holds what. Click a card to open it.
 
@@ -35,6 +35,18 @@ Each set is a card with a **model of you wearing it**. The model turns slowly, a
 
 The set you're wearing stays on its card, so you can change a piece there and it changes on you too.
 
+## Sacks
+
+**Sacks** hold materials so they don't fill your inventory. There are Hypixel's 28 kinds: Mining, Combat, Foraging, Fishing, Agronomy, Husbandry, their Enchanted versions, Gemstone, Dwarven Mines, Crystal Hollows, Slayer, Nether, Dragon and more, each holding its own list of items (a Mining Sack holds Cobblestone, Coal, Iron, Gold, Mithril, Titanium...).
+
+- **Right-click a sack** to add it to your Sacks (it's used up). Whatever you're carrying that it holds goes in straight away.
+- After that, what you gather that a sack holds (mined, farmed, chopped, fished or picked up) goes **straight into it** instead of your inventory. Every few seconds chat says how much went in: "[Sacks] +128 items. (Last 5s.)"
+- A sack holds a fixed amount **of each item**: Beginner 640, Small 2,240, Medium 6,720, Large 20,160 (Gemstone Sacks 128,000 to 2,560,000). When it's full, the rest goes to your inventory. A bigger sack of the same kind replaces the smaller one's size.
+- `/sacks` shows every sack you have and what's in it. **Click** an item to take a stack out, **shift-click** to fill your inventory with it; **Insert inventory** puts everything the sacks hold away.
+- `/gfs <item> <amount>` takes items out without opening the menu (`/gfs coal 64`).
+
+Sacks belong to your profile. Gear never goes in a sack, only materials.
+
 ## Commands
 
 | Command | What it does |
@@ -42,4 +54,6 @@ The set you're wearing stays on its card, so you can change a piece there and it
 | `/storage` | Opens the Storage page. |
 | `/ec [page]` | Opens an Ender Chest page (page 1 if you leave the number out). |
 | `/wardrobe` | Opens the Wardrobe. |
+| `/sacks` | Opens your Sacks. |
+| `/gfs <item> <amount>` | Gets items from your Sacks. |
 | `/storage unlock <players> <pages>` | Admins: sets how many Ender Chest pages players have (1 to 9). |

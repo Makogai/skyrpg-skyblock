@@ -255,6 +255,14 @@ phase so the next session can pick up where this one stopped.
       that never explode and hit on contact.
       Not yet: the King's rotation, mining events, Golden/Diamond Goblins, Powder Ghasts, daily Puzzler/Fetchur, Ticket
       Masters, most perks' effects, Pickobulus and other abilities, drills (fuel, parts), the Crystal Hollows and Glacite.
+- [x] **Sacks** (Hypixel's): `tools/skyblock/import_sacks.py` writes NEU's 28 sack types (contents, every sack item's
+      size from its lore: Beginner 640, Small 2,240, Medium 6,720, Large 20,160, Gemstone 128k-2.56M) to `skyrpg/sacks`.
+      `Sacks` (skyblock): right-click a sack to add it (early UseItem and UseBlock phases), per-profile contents and owned
+      sacks; gathered items (`ItemGains` GAINED: pickups, mining, farming...) that a sack holds move into it up to its
+      size, "[Sacks] +N items. (Last 5s.)"; `SacksMenu` + `SacksScreen` (`/sacks`, a `sacks` action): take a stack or
+      fill the inventory, insert inventory; `/gfs <item> <amount>`. Pets got the same UseBlock early phase (adding a pet
+      while looking at a block was refused by the Hub).
+      Not yet: Sack of Sacks, Pocket Sack-in-a-Sack, Trophy Fish and Rune sacks, crafting straight from sacks.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
