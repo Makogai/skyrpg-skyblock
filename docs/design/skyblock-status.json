@@ -1,0 +1,287 @@
+{
+  "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
+  "updated": "2026-10-17",
+  "latest": "The Barn, Mushroom Desert, The Park, Gold Mine, Deep Caverns and the Spider's Den",
+  "phase": {
+    "name": "Phase 1: Day One",
+    "done": 92
+  },
+  "categories": [
+    {
+      "name": "Core",
+      "color": "#7AA2FF",
+      "systems": [
+        {
+          "name": "Items & stats",
+          "icon": "item/diamond_sword",
+          "weight": 10,
+          "done": 55
+        },
+        {
+          "name": "Profiles & co-ops",
+          "icon": "item/name_tag",
+          "weight": 3,
+          "done": 85
+        },
+        {
+          "name": "Private Island",
+          "icon": "block/oak_sapling",
+          "weight": 4,
+          "done": 60
+        },
+        {
+          "name": "SkyBlock Menu & HUD",
+          "icon": "item/map",
+          "weight": 4,
+          "done": 80
+        },
+        {
+          "name": "Storage & Wardrobe",
+          "icon": "item/bundle",
+          "weight": 3,
+          "done": 45
+        },
+        {
+          "name": "Calendar & time",
+          "icon": "item/clock_00",
+          "weight": 2,
+          "done": 70
+        }
+      ]
+    },
+    {
+      "name": "Progression",
+      "color": "#B98CFF",
+      "systems": [
+        {
+          "name": "Skills",
+          "icon": "item/experience_bottle",
+          "weight": 6,
+          "done": 85
+        },
+        {
+          "name": "Collections",
+          "icon": "item/book",
+          "weight": 5,
+          "done": 95
+        },
+        {
+          "name": "Recipes & crafting",
+          "icon": "item/knowledge_book",
+          "weight": 4,
+          "done": 90
+        },
+        {
+          "name": "Minions",
+          "icon": "item/armor_stand",
+          "weight": 6,
+          "done": 90
+        },
+        {
+          "name": "SkyBlock Level",
+          "icon": "item/nether_star",
+          "weight": 3,
+          "done": 60
+        },
+        {
+          "name": "Fairy Souls",
+          "icon": "item/amethyst_shard",
+          "weight": 2,
+          "done": 30
+        },
+        {
+          "name": "Museum, Bestiary & Sacks",
+          "icon": "item/item_frame",
+          "weight": 4,
+          "done": 0
+        }
+      ]
+    },
+    {
+      "name": "Economy",
+      "color": "#FFC857",
+      "systems": [
+        {
+          "name": "NPC shops",
+          "icon": "item/emerald",
+          "weight": 3,
+          "done": 90
+        },
+        {
+          "name": "Bazaar",
+          "icon": "item/gold_ingot",
+          "weight": 4,
+          "done": 85
+        },
+        {
+          "name": "Auction House",
+          "icon": "item/golden_horse_armor",
+          "weight": 4,
+          "done": 80
+        },
+        {
+          "name": "Bank & coins",
+          "icon": "item/gold_nugget",
+          "weight": 2,
+          "done": 85
+        }
+      ]
+    },
+    {
+      "name": "Combat & gear",
+      "color": "#FF6B6B",
+      "systems": [
+        {
+          "name": "Slayers",
+          "icon": "item/rotten_flesh",
+          "weight": 6,
+          "done": 60
+        },
+        {
+          "name": "Dungeons",
+          "icon": "item/bone",
+          "weight": 12,
+          "done": 0
+        },
+        {
+          "name": "Kuudra",
+          "icon": "item/magma_cream",
+          "weight": 4,
+          "done": 0
+        },
+        {
+          "name": "Pets",
+          "icon": "item/lead",
+          "weight": 6,
+          "done": 10
+        },
+        {
+          "name": "Enchanting",
+          "icon": "item/enchanted_book",
+          "weight": 5,
+          "done": 15
+        },
+        {
+          "name": "Reforges, stars & gems",
+          "icon": "item/prismarine_crystals",
+          "weight": 5,
+          "done": 0
+        },
+        {
+          "name": "Accessories",
+          "icon": "item/heart_of_the_sea",
+          "weight": 5,
+          "done": 10
+        }
+      ]
+    },
+    {
+      "name": "Islands",
+      "color": "#5CD68A",
+      "systems": [
+        {
+          "name": "The Hub",
+          "icon": "item/bell",
+          "weight": 5,
+          "done": 85
+        },
+        {
+          "name": "Farming Islands",
+          "icon": "item/wheat",
+          "weight": 2,
+          "done": 75
+        },
+        {
+          "name": "The Park",
+          "icon": "block/birch_sapling",
+          "weight": 2,
+          "done": 70
+        },
+        {
+          "name": "Gold Mine & Deep Caverns",
+          "icon": "item/diamond",
+          "weight": 3,
+          "done": 70
+        },
+        {
+          "name": "Spider's Den",
+          "icon": "item/spider_eye",
+          "weight": 2,
+          "done": 70
+        },
+        {
+          "name": "Dwarven Mines & Hollows",
+          "icon": "item/iron_pickaxe",
+          "weight": 10,
+          "done": 0
+        },
+        {
+          "name": "The End",
+          "icon": "item/ender_eye",
+          "weight": 4,
+          "done": 0
+        },
+        {
+          "name": "Crimson Isle",
+          "icon": "item/blaze_rod",
+          "weight": 6,
+          "done": 0
+        },
+        {
+          "name": "The Garden",
+          "icon": "item/carrot",
+          "weight": 6,
+          "done": 0
+        },
+        {
+          "name": "The Rift",
+          "icon": "item/chorus_fruit",
+          "weight": 4,
+          "done": 0
+        },
+        {
+          "name": "Galatea & Hunting",
+          "icon": "item/feather",
+          "weight": 4,
+          "done": 0
+        }
+      ]
+    },
+    {
+      "name": "Live & activities",
+      "color": "#4FD1E0",
+      "systems": [
+        {
+          "name": "Fishing",
+          "icon": "item/fishing_rod",
+          "weight": 5,
+          "done": 15
+        },
+        {
+          "name": "Events",
+          "icon": "item/cookie",
+          "weight": 4,
+          "done": 10
+        },
+        {
+          "name": "Mayors & elections",
+          "icon": "item/paper",
+          "weight": 3,
+          "done": 0
+        },
+        {
+          "name": "Parties, chat & guides",
+          "icon": "item/writable_book",
+          "weight": 2,
+          "done": 70
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-17",
+      "overall": 38.7
+    }
+  ]
+}
