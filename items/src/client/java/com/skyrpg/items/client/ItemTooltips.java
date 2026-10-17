@@ -51,8 +51,9 @@ final class ItemTooltips {
         if (def == null && !lines.isEmpty() && hasTier(stack)) {
             lines.add(1, tierLine(stack)); // vanilla pickaxes and axes say their tier too
         }
-        // Pets (Hypixel's PET item) carry their own name and lore, written for their type, rarity and level.
-        if (def == null || lines.isEmpty() || "PET".equals(def.skyblockId())) {
+        // Pets (Hypixel's PET item) and brewed potions carry their own name and lore, written for what they are.
+        if (def == null || lines.isEmpty() || "PET".equals(def.skyblockId())
+                || "POTION".equals(def.skyblockId()) && stack.has(DataComponents.LORE)) {
             return;
         }
         List<Component> out = new ArrayList<>();

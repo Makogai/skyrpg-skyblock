@@ -1,0 +1,2922 @@
+{
+ "potions": {
+  "speed": {
+   "name": "Speed",
+   "max": 8,
+   "color": "#7CAFC6",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5 Speed."
+     ],
+     "stats": {
+      "speed": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10 Speed."
+     ],
+     "stats": {
+      "speed": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +15 Speed."
+     ],
+     "stats": {
+      "speed": 15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20 Speed."
+     ],
+     "stats": {
+      "speed": 20.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +25 Speed."
+     ],
+     "stats": {
+      "speed": 25.0
+     },
+     "special": {}
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +30 Speed."
+     ],
+     "stats": {
+      "speed": 30.0
+     },
+     "special": {}
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +35 Speed."
+     ],
+     "stats": {
+      "speed": 35.0
+     },
+     "special": {}
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +40 Speed."
+     ],
+     "stats": {
+      "speed": 40.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "strength": {
+   "name": "Strength",
+   "max": 8,
+   "color": "#932423",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Strength by 5."
+     ],
+     "stats": {
+      "strength": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Strength by 12.5."
+     ],
+     "stats": {
+      "strength": 12.5
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Strength by 20."
+     ],
+     "stats": {
+      "strength": 20.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Strength by 30."
+     ],
+     "stats": {
+      "strength": 30.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Increases Strength by 40."
+     ],
+     "stats": {
+      "strength": 40.0
+     },
+     "special": {}
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Increases Strength by 50."
+     ],
+     "stats": {
+      "strength": 50.0
+     },
+     "special": {}
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Increases Strength by 60."
+     ],
+     "stats": {
+      "strength": 60.0
+     },
+     "special": {}
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Increases Strength by 75."
+     ],
+     "stats": {
+      "strength": 75.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "regeneration": {
+   "name": "Regeneration",
+   "max": 9,
+   "color": "#CD5CAB",
+   "levels": {
+    "1": {
+     "ticks": 900,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +2.5 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 2.5
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 900,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 5.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 900,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +7.5 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 7.5
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 900,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +10 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 10.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 900,
+     "rarity": "RARE",
+     "text": [
+      "Grants +12.5 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 12.5
+     },
+     "special": {}
+    },
+    "6": {
+     "ticks": 900,
+     "rarity": "RARE",
+     "text": [
+      "Grants +15 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 15.0
+     },
+     "special": {}
+    },
+    "7": {
+     "ticks": 900,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +20 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 20.0
+     },
+     "special": {}
+    },
+    "8": {
+     "ticks": 900,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +25 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 25.0
+     },
+     "special": {}
+    },
+    "9": {
+     "ticks": 3000,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +30 Health Regen."
+     ],
+     "stats": {
+      "health_regen": 30.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "healing": {
+   "name": "Healing",
+   "max": 8,
+   "color": "#F82423",
+   "levels": {
+    "1": {
+     "ticks": 100,
+     "rarity": "COMMON",
+     "text": [
+      "Heals for +5 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 5.0
+     }
+    },
+    "2": {
+     "ticks": 100,
+     "rarity": "COMMON",
+     "text": [
+      "Heals for +10 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 10.0
+     }
+    },
+    "3": {
+     "ticks": 100,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Heals for +15 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 15.0
+     }
+    },
+    "4": {
+     "ticks": 100,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Heals for +20 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 20.0
+     }
+    },
+    "5": {
+     "ticks": 100,
+     "rarity": "RARE",
+     "text": [
+      "Heals for +25 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 25.0
+     }
+    },
+    "6": {
+     "ticks": 100,
+     "rarity": "RARE",
+     "text": [
+      "Heals for +30 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 30.0
+     }
+    },
+    "7": {
+     "ticks": 100,
+     "rarity": "EPIC",
+     "text": [
+      "Heals for +35 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 35.0
+     }
+    },
+    "8": {
+     "ticks": 100,
+     "rarity": "EPIC",
+     "text": [
+      "Heals for +40 every second."
+     ],
+     "stats": {},
+     "special": {
+      "heal_per_second": 40.0
+     }
+    }
+   }
+  },
+  "resistance": {
+   "name": "Resistance",
+   "max": 8,
+   "color": "#99453A",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Defense by +5."
+     ],
+     "stats": {
+      "defense": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Defense by +10."
+     ],
+     "stats": {
+      "defense": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Defense by +15."
+     ],
+     "stats": {
+      "defense": 15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Defense by +20."
+     ],
+     "stats": {
+      "defense": 20.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Increases Defense by +30."
+     ],
+     "stats": {
+      "defense": 30.0
+     },
+     "special": {}
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Increases Defense by +40."
+     ],
+     "stats": {
+      "defense": 40.0
+     },
+     "special": {}
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Increases Defense by +50."
+     ],
+     "stats": {
+      "defense": 50.0
+     },
+     "special": {}
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Increases Defense by +60."
+     ],
+     "stats": {
+      "defense": 60.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "mana": {
+   "name": "Mana",
+   "max": 8,
+   "color": "#3F76E4",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +1 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 1.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +2 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 2.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +3 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 3.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +4 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 4.0
+     }
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +5 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 5.0
+     }
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +6 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 6.0
+     }
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +7 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 7.0
+     }
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +8 ✎ Mana per second."
+     ],
+     "stats": {},
+     "special": {
+      "mana_per_second": 8.0
+     }
+    }
+   }
+  },
+  "absorption": {
+   "name": "Absorption",
+   "max": 8,
+   "color": "#2552A5",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +20 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 20.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +40 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 40.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +60 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 60.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +80 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 80.0
+     }
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +100 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 100.0
+     }
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +150 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 150.0
+     }
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +200 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 200.0
+     }
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +300 of absorption."
+     ],
+     "stats": {},
+     "special": {
+      "absorption": 300.0
+     }
+    }
+   }
+  },
+  "adrenaline": {
+   "name": "Adrenaline",
+   "max": 8,
+   "color": "#E4C83F",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +20 of absorption and +5",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 5.0
+     },
+     "special": {
+      "absorption": 20.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +40 of absorption and +10",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 10.0
+     },
+     "special": {
+      "absorption": 40.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +60 of absorption and +15",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 15.0
+     },
+     "special": {
+      "absorption": 60.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +80 of absorption and +20",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 20.0
+     },
+     "special": {
+      "absorption": 80.0
+     }
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +100 of absorption and +25",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 25.0
+     },
+     "special": {
+      "absorption": 100.0
+     }
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants +150 of absorption and +30",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 30.0
+     },
+     "special": {
+      "absorption": 150.0
+     }
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +200 of absorption and +35",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 35.0
+     },
+     "special": {
+      "absorption": 200.0
+     }
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Grants +300 of absorption and +40",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 40.0
+     },
+     "special": {
+      "absorption": 300.0
+     }
+    }
+   }
+  },
+  "critical": {
+   "name": "Critical",
+   "max": 4,
+   "color": "#C93B3B",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Crit Chance by 10% and",
+      "Crit Damage by 10%."
+     ],
+     "stats": {
+      "crit_chance": 10.0,
+      "crit_damage": 10.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases Crit Chance by 15% and",
+      "Crit Damage by 20%."
+     ],
+     "stats": {
+      "crit_chance": 15.0,
+      "crit_damage": 20.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Crit Chance by 20% and",
+      "Crit Damage by 30%."
+     ],
+     "stats": {
+      "crit_chance": 20.0,
+      "crit_damage": 30.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases Crit Chance by 25% and",
+      "Crit Damage by 40%."
+     ],
+     "stats": {
+      "crit_chance": 25.0,
+      "crit_damage": 40.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "agility": {
+   "name": "Agility",
+   "max": 4,
+   "color": "#5A8F3A",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10 Speed and increases",
+      "the chance for mob attacks to miss",
+      "by 10%."
+     ],
+     "stats": {
+      "speed": 10.0
+     },
+     "special": {
+      "miss": 10.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +20 Speed and increases",
+      "the chance for mob attacks to miss",
+      "by 20%."
+     ],
+     "stats": {
+      "speed": 20.0
+     },
+     "special": {
+      "miss": 20.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +30 Speed and increases",
+      "the chance for mob attacks to miss",
+      "by 30%."
+     ],
+     "stats": {
+      "speed": 30.0
+     },
+     "special": {
+      "miss": 30.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +40 Speed and increases",
+      "the chance for mob attacks to miss",
+      "by 40%."
+     ],
+     "stats": {
+      "speed": 40.0
+     },
+     "special": {
+      "miss": 40.0
+     }
+    }
+   }
+  },
+  "archery": {
+   "name": "Archery",
+   "max": 4,
+   "color": "#8FD0FF",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases bow damage by 12.5%."
+     ],
+     "stats": {},
+     "special": {
+      "bow_damage": 12.5
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases bow damage by 25%."
+     ],
+     "stats": {},
+     "special": {
+      "bow_damage": 25.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases bow damage by 50%."
+     ],
+     "stats": {},
+     "special": {
+      "bow_damage": 50.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases bow damage by 75%."
+     ],
+     "stats": {},
+     "special": {
+      "bow_damage": 75.0
+     }
+    }
+   }
+  },
+  "burning": {
+   "name": "Burning",
+   "max": 4,
+   "color": "#E46F3F",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases the duration of fire",
+      "damage that you inflict on enemies by",
+      "5%."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases the duration of fire",
+      "damage that you inflict on enemies by",
+      "10%."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases the duration of fire",
+      "damage that you inflict on enemies by",
+      "15%."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases the duration of fire",
+      "damage that you inflict on enemies by",
+      "20%."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "dodge": {
+   "name": "Dodge",
+   "max": 4,
+   "color": "#9FE0B0",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Mob attacks have a 10% chance to",
+      "miss."
+     ],
+     "stats": {},
+     "special": {
+      "miss": 10.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Mob attacks have a 20% chance to",
+      "miss."
+     ],
+     "stats": {},
+     "special": {
+      "miss": 20.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Mob attacks have a 30% chance to",
+      "miss."
+     ],
+     "stats": {},
+     "special": {
+      "miss": 30.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Mob attacks have a 40% chance to",
+      "miss."
+     ],
+     "stats": {},
+     "special": {
+      "miss": 40.0
+     }
+    }
+   }
+  },
+  "experience": {
+   "name": "Experience",
+   "max": 4,
+   "color": "#7FFF5F",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain 5% more experience orbs."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain 10% more experience orbs."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain 15% more experience orbs."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain 20% more experience orbs."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "knockback": {
+   "name": "Knockback",
+   "max": 4,
+   "color": "#A0A0A0",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Damaging enemies deals 20% more",
+      "knockback."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Damaging enemies deals 40% more",
+      "knockback."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Damaging enemies deals 60% more",
+      "knockback."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Damaging enemies deals 80% more",
+      "knockback."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "stun": {
+   "name": "Stun",
+   "max": 4,
+   "color": "#3A3A3A",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "When applied to yourself, your hits",
+      "have a 10% chance to stun enemies",
+      "for 1s. When splashed, enemies are",
+      "stunned for 1s."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "When applied to yourself, your hits",
+      "have a 20% chance to stun enemies",
+      "for 1s. When splashed, enemies are",
+      "stunned for 1.25s."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "When applied to yourself, your hits",
+      "have a 30% chance to stun enemies",
+      "for 1s. When splashed, enemies are",
+      "stunned for 1.5s."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "When applied to yourself, your hits",
+      "have a 40% chance to stun enemies",
+      "for 1s. When splashed, enemies are",
+      "stunned for 1.75s."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "venomous": {
+   "name": "Venomous",
+   "max": 4,
+   "color": "#4E9331",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants -5 Speed and deals 5",
+      "damage per second."
+     ],
+     "stats": {
+      "speed": -5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants -10 Speed and deals 10",
+      "damage per second."
+     ],
+     "stats": {
+      "speed": -10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants -15 Speed and deals 15",
+      "damage per second."
+     ],
+     "stats": {
+      "speed": -15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants -20 Speed and deals 20",
+      "damage per second."
+     ],
+     "stats": {
+      "speed": -20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "weakness": {
+   "name": "Weakness",
+   "max": 8,
+   "color": "#484D48",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 5."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 10."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 15."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 20."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 25."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 30."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 40."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Reduces Damage when attacking",
+      "enemies by 50."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "poison": {
+   "name": "Poison",
+   "max": 4,
+   "color": "#4E9331",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Deals 10 damage per second."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Deals 20 damage per second."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Deals 40 damage per second."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Deals 60 damage per second."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "fire_resistance": {
+   "name": "Fire Resistance",
+   "max": 1,
+   "color": "#E49A3A",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Receive 10% reduced damage from",
+      "fire and lava."
+     ],
+     "stats": {},
+     "special": {
+      "fire_reduction": 10.0
+     }
+    }
+   }
+  },
+  "night_vision": {
+   "name": "Night Vision",
+   "max": 2,
+   "color": "#1F1FA1",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants greater visibility at night."
+     ],
+     "stats": {},
+     "special": {
+      "night_vision": 1
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants greater visibility at night."
+     ],
+     "stats": {},
+     "special": {
+      "night_vision": 1
+     }
+    }
+   }
+  },
+  "water_breathing": {
+   "name": "Water Breathing",
+   "max": 6,
+   "color": "#2E5299",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants a 15% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 15.0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants a 30% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 30.0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants a 45% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 45.0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants a 60% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 60.0
+     }
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants a 80% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 80.0
+     }
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants a 100% chance of not taking",
+      "drowning damage."
+     ],
+     "stats": {},
+     "special": {
+      "drown_chance": 100.0
+     }
+    }
+   }
+  },
+  "rabbit": {
+   "name": "Rabbit",
+   "max": 6,
+   "color": "#C9A97B",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants Jump Boost I and +10",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 10.0
+     },
+     "special": {
+      "jump": 1
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants Jump Boost I and +20",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 20.0
+     },
+     "special": {
+      "jump": 1
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants Jump Boost II and +30",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 30.0
+     },
+     "special": {
+      "jump": 2
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants Jump Boost II and +40",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 40.0
+     },
+     "special": {
+      "jump": 2
+     }
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants Jump Boost III and +50",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 50.0
+     },
+     "special": {
+      "jump": 3
+     }
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants Jump Boost III and +60",
+      "Speed."
+     ],
+     "stats": {
+      "speed": 60.0
+     },
+     "special": {
+      "jump": 3
+     }
+    }
+   }
+  },
+  "jump_boost": {
+   "name": "Jump Boost",
+   "max": 4,
+   "color": "#22FF4C",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases your jump height to 1.9",
+      "blocks."
+     ],
+     "stats": {},
+     "special": {
+      "jump": 0
+     }
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Increases your jump height to 2.5",
+      "blocks."
+     ],
+     "stats": {},
+     "special": {
+      "jump": 0
+     }
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases your jump height to 3.2",
+      "blocks."
+     ],
+     "stats": {},
+     "special": {
+      "jump": 0
+     }
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Increases your jump height to 4.1",
+      "blocks."
+     ],
+     "stats": {},
+     "special": {
+      "jump": 0
+     }
+    }
+   }
+  },
+  "pet_luck": {
+   "name": "Pet Luck",
+   "max": 4,
+   "color": "#FF7AD9",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +5% chance to find pets and",
+      "craft higher tier pets."
+     ],
+     "stats": {
+      "pet_luck": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +10% chance to find pets and",
+      "craft higher tier pets."
+     ],
+     "stats": {
+      "pet_luck": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +15% chance to find pets and",
+      "craft higher tier pets."
+     ],
+     "stats": {
+      "pet_luck": 15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +20% chance to find pets and",
+      "craft higher tier pets."
+     ],
+     "stats": {
+      "pet_luck": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "haste": {
+   "name": "Haste",
+   "max": 4,
+   "color": "#D9C043",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +50 Mining Speed."
+     ],
+     "stats": {
+      "mining_speed": 50.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +100 Mining Speed."
+     ],
+     "stats": {
+      "mining_speed": 100.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +150 Mining Speed."
+     ],
+     "stats": {
+      "mining_speed": 150.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +200 Mining Speed."
+     ],
+     "stats": {
+      "mining_speed": 200.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "spelunker": {
+   "name": "Spelunker",
+   "max": 5,
+   "color": "#5CE1E6",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants 5 Mining Fortune."
+     ],
+     "stats": {
+      "mining_fortune": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants 10 Mining Fortune."
+     ],
+     "stats": {
+      "mining_fortune": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants 15 Mining Fortune."
+     ],
+     "stats": {
+      "mining_fortune": 15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants 20 Mining Fortune."
+     ],
+     "stats": {
+      "mining_fortune": 20.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Grants 25 Mining Fortune."
+     ],
+     "stats": {
+      "mining_fortune": 25.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "cold_resistance": {
+   "name": "Cold Resistance",
+   "max": 4,
+   "color": "#BFE6FF",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +2.5 Cold Resistance."
+     ],
+     "stats": {
+      "cold_resistance": 2.5
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +5 Cold Resistance."
+     ],
+     "stats": {
+      "cold_resistance": 5.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +7.5 Cold Resistance."
+     ],
+     "stats": {
+      "cold_resistance": 7.5
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +10 Cold Resistance."
+     ],
+     "stats": {
+      "cold_resistance": 10.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "true_defense": {
+   "name": "True Resistance",
+   "max": 4,
+   "color": "#EDEDED",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +5 True Defense."
+     ],
+     "stats": {
+      "true_defense": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +10 True Defense."
+     ],
+     "stats": {
+      "true_defense": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +15 True Defense."
+     ],
+     "stats": {
+      "true_defense": 15.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +20 True Defense."
+     ],
+     "stats": {
+      "true_defense": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "blindness": {
+   "name": "Blindness",
+   "max": 3,
+   "color": "#1F1F23",
+   "levels": {
+    "1": {
+     "ticks": 60,
+     "rarity": "COMMON",
+     "text": [
+      "Grants blindness to the affected",
+      "player."
+     ],
+     "stats": {},
+     "special": {
+      "blindness": 1
+     }
+    },
+    "2": {
+     "ticks": 60,
+     "rarity": "COMMON",
+     "text": [
+      "Grants blindness to the affected",
+      "player."
+     ],
+     "stats": {},
+     "special": {
+      "blindness": 1
+     }
+    },
+    "3": {
+     "ticks": 60,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants blindness to the affected",
+      "player."
+     ],
+     "stats": {},
+     "special": {
+      "blindness": 1
+     }
+    }
+   }
+  },
+  "wounded": {
+   "name": "Wounded",
+   "max": 4,
+   "color": "#7A1F1F",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Reduces 25% of healing."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Reduces 50% of healing."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Reduces 75% of healing."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Reduces 100% of healing."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "slowness": {
+   "name": "Slowness",
+   "max": 8,
+   "color": "#5A6C81",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Removes 20 Speed."
+     ],
+     "stats": {
+      "speed": -20.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Removes 40 Speed."
+     ],
+     "stats": {
+      "speed": -40.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Removes 75 Speed."
+     ],
+     "stats": {
+      "speed": -75.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Removes 99 Speed."
+     ],
+     "stats": {
+      "speed": -99.0
+     },
+     "special": {}
+    },
+    "5": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Removes 150 Speed."
+     ],
+     "stats": {
+      "speed": -150.0
+     },
+     "special": {}
+    },
+    "6": {
+     "ticks": 3600,
+     "rarity": "RARE",
+     "text": [
+      "Removes 240 Speed."
+     ],
+     "stats": {
+      "speed": -240.0
+     },
+     "special": {}
+    },
+    "7": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Removes 380 Speed."
+     ],
+     "stats": {
+      "speed": -380.0
+     },
+     "special": {}
+    },
+    "8": {
+     "ticks": 3600,
+     "rarity": "EPIC",
+     "text": [
+      "Removes 500 Speed."
+     ],
+     "stats": {
+      "speed": -500.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "damage": {
+   "name": "Damage",
+   "max": 8,
+   "color": "#430A09",
+   "levels": {
+    "1": {
+     "ticks": 0,
+     "rarity": "COMMON",
+     "text": [
+      "Instantly deals 20 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "2": {
+     "ticks": 0,
+     "rarity": "COMMON",
+     "text": [
+      "Instantly deals 50 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "3": {
+     "ticks": 0,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Instantly deals 100 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "4": {
+     "ticks": 0,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Instantly deals 150 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "5": {
+     "ticks": 0,
+     "rarity": "RARE",
+     "text": [
+      "Instantly deals 200 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "6": {
+     "ticks": 0,
+     "rarity": "RARE",
+     "text": [
+      "Instantly deals 300 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "7": {
+     "ticks": 0,
+     "rarity": "EPIC",
+     "text": [
+      "Instantly deals 400 damage."
+     ],
+     "stats": {},
+     "special": {}
+    },
+    "8": {
+     "ticks": 0,
+     "rarity": "EPIC",
+     "text": [
+      "Instantly deals 500 damage."
+     ],
+     "stats": {},
+     "special": {}
+    }
+   }
+  },
+  "magic_find": {
+   "name": "Magic Find",
+   "max": 4,
+   "color": "#55FFFF",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +10% chance to find rare items",
+      "from monsters and bosses."
+     ],
+     "stats": {
+      "magic_find": 10.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Gain +25% chance to find rare items",
+      "from monsters and bosses."
+     ],
+     "stats": {
+      "magic_find": 25.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +50% chance to find rare items",
+      "from monsters and bosses."
+     ],
+     "stats": {
+      "magic_find": 50.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Gain +75% chance to find rare items",
+      "from monsters and bosses."
+     ],
+     "stats": {
+      "magic_find": 75.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "spirit": {
+   "name": "Spirit",
+   "max": 4,
+   "color": "#A0FFFF",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10 Speed and +10%",
+      "Crit Damage."
+     ],
+     "stats": {
+      "speed": 10.0,
+      "crit_damage": 10.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +20 Speed and +20%",
+      "Crit Damage."
+     ],
+     "stats": {
+      "speed": 20.0,
+      "crit_damage": 20.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +30 Speed and +30%",
+      "Crit Damage."
+     ],
+     "stats": {
+      "speed": 30.0,
+      "crit_damage": 30.0
+     },
+     "special": {}
+    },
+    "4": {
+     "ticks": 3600,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +40 Speed and +40%",
+      "Crit Damage."
+     ],
+     "stats": {
+      "speed": 40.0,
+      "crit_damage": 40.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "stamina": {
+   "name": "Stamina",
+   "max": 4,
+   "color": "#FFD27A",
+   "levels": {
+    "1": {
+     "ticks": 0,
+     "rarity": "COMMON",
+     "text": [
+      "Instantly heals for +150 and a",
+      "grants a 50 ✎ Mana boost."
+     ],
+     "stats": {},
+     "special": {
+      "instant_heal": 150.0
+     }
+    },
+    "2": {
+     "ticks": 0,
+     "rarity": "COMMON",
+     "text": [
+      "Instantly heals for +215 and a",
+      "grants a 100 ✎ Mana boost."
+     ],
+     "stats": {},
+     "special": {
+      "instant_heal": 215.0
+     }
+    },
+    "3": {
+     "ticks": 0,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Instantly heals for +315 and a",
+      "grants a 150 ✎ Mana boost."
+     ],
+     "stats": {},
+     "special": {
+      "instant_heal": 315.0
+     }
+    },
+    "4": {
+     "ticks": 0,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Instantly heals for +515 and a",
+      "grants a 200 ✎ Mana boost."
+     ],
+     "stats": {},
+     "special": {
+      "instant_heal": 515.0
+     }
+    }
+   }
+  },
+  "alchemy_xp_boost": {
+   "name": "Alchemy XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Alchemy Wisdom."
+     ],
+     "stats": {
+      "alchemy_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Alchemy Wisdom."
+     ],
+     "stats": {
+      "alchemy_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Alchemy Wisdom."
+     ],
+     "stats": {
+      "alchemy_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "combat_xp_boost": {
+   "name": "Combat XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Combat Wisdom."
+     ],
+     "stats": {
+      "combat_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Combat Wisdom."
+     ],
+     "stats": {
+      "combat_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Combat Wisdom."
+     ],
+     "stats": {
+      "combat_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "enchanting_xp_boost": {
+   "name": "Enchanting XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Enchanting Wisdom."
+     ],
+     "stats": {
+      "enchanting_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Enchanting Wisdom."
+     ],
+     "stats": {
+      "enchanting_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Enchanting Wisdom."
+     ],
+     "stats": {
+      "enchanting_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "farming_xp_boost": {
+   "name": "Farming XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Farming Wisdom."
+     ],
+     "stats": {
+      "farming_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Farming Wisdom."
+     ],
+     "stats": {
+      "farming_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Farming Wisdom."
+     ],
+     "stats": {
+      "farming_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "fishing_xp_boost": {
+   "name": "Fishing XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Fishing Wisdom."
+     ],
+     "stats": {
+      "fishing_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Fishing Wisdom."
+     ],
+     "stats": {
+      "fishing_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Fishing Wisdom."
+     ],
+     "stats": {
+      "fishing_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "foraging_xp_boost": {
+   "name": "Foraging XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Foraging Wisdom."
+     ],
+     "stats": {
+      "foraging_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Foraging Wisdom."
+     ],
+     "stats": {
+      "foraging_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Foraging Wisdom."
+     ],
+     "stats": {
+      "foraging_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "mining_xp_boost": {
+   "name": "Mining XP Boost",
+   "max": 3,
+   "color": "#B98CFF",
+   "levels": {
+    "1": {
+     "ticks": 14400,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +5☯ Mining Wisdom."
+     ],
+     "stats": {
+      "mining_wisdom": 5.0
+     },
+     "special": {}
+    },
+    "2": {
+     "ticks": 28800,
+     "rarity": "COMMON",
+     "text": [
+      "Grants +10☯ Mining Wisdom."
+     ],
+     "stats": {
+      "mining_wisdom": 10.0
+     },
+     "special": {}
+    },
+    "3": {
+     "ticks": 43200,
+     "rarity": "UNCOMMON",
+     "text": [
+      "Grants +20☯ Mining Wisdom."
+     ],
+     "stats": {
+      "mining_wisdom": 20.0
+     },
+     "special": {}
+    }
+   }
+  },
+  "invisibility": {
+   "name": "Invisibility",
+   "max": 1,
+   "color": "#7F8392",
+   "levels": {
+    "1": {
+     "ticks": 3600,
+     "rarity": "COMMON",
+     "text": [
+      "Grants invisibility from players and",
+      "mobs."
+     ],
+     "stats": {},
+     "special": {
+      "invisibility": 1
+     }
+    }
+   }
+  }
+ },
+ "ingredients": {
+  "SUGAR": {
+   "potion": "speed",
+   "level": 1
+  },
+  "ENCHANTED_SUGAR": {
+   "potion": "speed",
+   "level": 3
+  },
+  "ENCHANTED_SUGAR_CANE": {
+   "potion": "speed",
+   "level": 5
+  },
+  "BLAZE_POWDER": {
+   "potion": "strength",
+   "level": 1
+  },
+  "ENCHANTED_BLAZE_POWDER": {
+   "potion": "strength",
+   "level": 3
+  },
+  "ENCHANTED_BLAZE_ROD": {
+   "potion": "strength",
+   "level": 5
+  },
+  "GHAST_TEAR": {
+   "potion": "regeneration",
+   "level": 1
+  },
+  "ENCHANTED_GHAST_TEAR": {
+   "potion": "regeneration",
+   "level": 5
+  },
+  "SPECKLED_MELON": {
+   "potion": "healing",
+   "level": 1
+  },
+  "ENCHANTED_MELON": {
+   "potion": "healing",
+   "level": 3
+  },
+  "ENCHANTED_GLISTERING_MELON": {
+   "potion": "healing",
+   "level": 5
+  },
+  "CACTUS": {
+   "potion": "resistance",
+   "level": 1
+  },
+  "ENCHANTED_CACTUS_GREEN": {
+   "potion": "resistance",
+   "level": 3
+  },
+  "ENCHANTED_CACTUS": {
+   "potion": "resistance",
+   "level": 5
+  },
+  "MUTTON": {
+   "potion": "mana",
+   "level": 1
+  },
+  "ENCHANTED_MUTTON": {
+   "potion": "mana",
+   "level": 3
+  },
+  "ENCHANTED_COOKED_MUTTON": {
+   "potion": "mana",
+   "level": 5
+  },
+  "GOLD_INGOT": {
+   "potion": "absorption",
+   "level": 1
+  },
+  "ENCHANTED_GOLD": {
+   "potion": "absorption",
+   "level": 3
+  },
+  "ENCHANTED_GOLD_BLOCK": {
+   "potion": "absorption",
+   "level": 5
+  },
+  "INK_SACK:3": {
+   "potion": "adrenaline",
+   "level": 1
+  },
+  "ENCHANTED_COCOA": {
+   "potion": "adrenaline",
+   "level": 3
+  },
+  "ENCHANTED_COOKIE": {
+   "potion": "adrenaline",
+   "level": 5
+  },
+  "FLINT": {
+   "potion": "critical",
+   "level": 1
+  },
+  "ENCHANTED_CAKE": {
+   "potion": "agility",
+   "level": 1
+  },
+  "FEATHER": {
+   "potion": "archery",
+   "level": 1
+  },
+  "SAND:1": {
+   "potion": "burning",
+   "level": 1
+  },
+  "RAW_FISH:1": {
+   "potion": "dodge",
+   "level": 1
+  },
+  "INK_SACK:4": {
+   "potion": "experience",
+   "level": 1
+  },
+  "SLIME_BALL": {
+   "potion": "knockback",
+   "level": 1
+  },
+  "OBSIDIAN": {
+   "potion": "stun",
+   "level": 1
+  },
+  "POISONOUS_POTATO": {
+   "potion": "venomous",
+   "level": 1
+  },
+  "FERMENTED_SPIDER_EYE": {
+   "potion": "weakness",
+   "level": 1
+  },
+  "ENCHANTED_FERMENTED_SPIDER_EYE": {
+   "potion": "weakness",
+   "level": 5
+  },
+  "SPIDER_EYE": {
+   "potion": "poison",
+   "level": 1
+  },
+  "ENCHANTED_SPIDER_EYE": {
+   "potion": "poison",
+   "level": 3
+  },
+  "MAGMA_CREAM": {
+   "potion": "fire_resistance",
+   "level": 1
+  },
+  "GOLDEN_CARROT": {
+   "potion": "night_vision",
+   "level": 1
+  },
+  "RAW_FISH:3": {
+   "potion": "water_breathing",
+   "level": 1
+  },
+  "ENCHANTED_PUFFERFISH": {
+   "potion": "water_breathing",
+   "level": 3
+  },
+  "RABBIT_FOOT": {
+   "potion": "rabbit",
+   "level": 1
+  },
+  "ENCHANTED_RABBIT_FOOT": {
+   "potion": "rabbit",
+   "level": 3
+  },
+  "RABBIT": {
+   "potion": "jump_boost",
+   "level": 1
+  },
+  "ENCHANTED_RABBIT_HIDE": {
+   "potion": "pet_luck",
+   "level": 1
+  },
+  "COAL": {
+   "potion": "haste",
+   "level": 1
+  },
+  "MITHRIL_ORE": {
+   "potion": "spelunker",
+   "level": 1
+  },
+  "ENCHANTED_GLACITE": {
+   "potion": "cold_resistance",
+   "level": 1
+  },
+  "TRUE_ESSENCE": {
+   "potion": "true_defense",
+   "level": 1
+  },
+  "INK_SACK": {
+   "potion": "blindness",
+   "level": 1
+  },
+  "ENCHANTED_INK_SACK": {
+   "potion": "blindness",
+   "level": 3
+  },
+  "NETHERRACK": {
+   "potion": "wounded",
+   "level": 1
+  }
+ },
+ "modifiers": {
+  "GLOWSTONE_DUST": {
+   "levels": 1
+  },
+  "ENCHANTED_GLOWSTONE_DUST": {
+   "levels": 2
+  },
+  "ENCHANTED_GLOWSTONE": {
+   "levels": 3
+  },
+  "REDSTONE": {
+   "minutes": 8
+  },
+  "ENCHANTED_REDSTONE": {
+   "minutes": 16
+  },
+  "ENCHANTED_REDSTONE_BLOCK": {
+   "minutes": 40
+  },
+  "ENCHANTED_REDSTONE_LAMP": {
+   "levels": 3,
+   "minutes": 16
+  },
+  "SULPHUR": {
+   "splash": 0.5
+  },
+  "ENCHANTED_GUNPOWDER": {
+   "splash": 1.0
+  }
+ },
+ "awkward": [
+  "NETHER_STALK"
+ ]
+}

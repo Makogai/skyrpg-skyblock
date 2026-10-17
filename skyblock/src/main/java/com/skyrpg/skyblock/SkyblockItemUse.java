@@ -24,6 +24,9 @@ public final class SkyblockItemUse {
     private SkyblockItemUse() {
     }
 
+    /** Utility blocks Hypixel lets you place on your island although their data doesn't say so. */
+    private static final java.util.Set<String> PLACEABLE = java.util.Set.of("BREWING_STAND_ITEM");
+
     static void init() {
         UseItemCallback.EVENT.register((player, level, hand) ->
                 blocksVanillaUse(player.getItemInHand(hand)) ? InteractionResult.FAIL : InteractionResult.PASS);
@@ -47,6 +50,9 @@ public final class SkyblockItemUse {
     public static boolean blocksPlacing(ItemStack stack) {
         ItemDefinition def = SkyItems.definition(stack);
         if (def == null || !def.skyblock()) {
+            return false;
+        }
+        if (PLACEABLE.contains(def.skyblockId())) {
             return false;
         }
         JsonObject hypixel = def.json().getAsJsonObject("hypixel");

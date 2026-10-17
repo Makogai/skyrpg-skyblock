@@ -21,7 +21,7 @@ PAGE_LIST = {
     "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "dwarven-mines", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "reforging", "gemstones", "crystal-hollows", "museum", "slayers"],
     "skyhaven": ["skyhaven", "npcs"],
     "economy": ["coins-and-bank"],
-    "skills": ["skills-overview", "mining", "heart-of-the-mountain", "farming", "foraging", "fishing", "enchanting", "experimentation-table", "crafting"],
+    "skills": ["skills-overview", "mining", "heart-of-the-mountain", "farming", "foraging", "fishing", "enchanting", "experimentation-table", "crafting", "alchemy"],
     "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks"],
     "combat": ["stats", "combat-basics", "bestiary"],
     "world": ["builder-station", "brainrots", "crates"],

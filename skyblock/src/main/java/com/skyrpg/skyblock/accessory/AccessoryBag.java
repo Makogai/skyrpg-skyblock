@@ -133,6 +133,16 @@ public final class AccessoryBag {
         return out;
     }
 
+    /** Whether this accessory counts for the player (in the bag or the inventory, and not outdone by a higher one of its line). */
+    public static boolean has(ServerPlayer player, String skyblockId) {
+        for (ItemStack stack : counted(player, true)) {
+            if (skyblockId.equals(com.skyrpg.items.SkyItems.skyblockId(stack))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * The accessories that count: from the bag (and, for stats, the inventory too), each id once, and only the highest
      * of a line.

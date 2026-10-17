@@ -15,6 +15,8 @@ import net.minecraft.world.inventory.MenuType;
 public final class SkyMenus {
     public static final MenuType<WardrobeMenu> WARDROBE = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("wardrobe"),
             new MenuType<>(WardrobeMenu::new, FeatureFlags.VANILLA_SET));
+    public static final MenuType<com.skyrpg.skyblock.alchemy.BrewMenu> BREW = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("brew"), new MenuType<>(com.skyrpg.skyblock.alchemy.BrewMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<EnderPageMenu> ENDER_PAGE = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("ender_page"),
             new MenuType<>(EnderPageMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<ShopMenu> SHOP = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("shop"),

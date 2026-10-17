@@ -26,7 +26,7 @@ Farming, Mining, Combat, Foraging, Fishing and Enchanting earn XP by doing them.
 - **Carpentry**: crafting (the [Recipe Book](recipe-book) or a crafting table) gives 3% of what the ingredients sell for to an NPC, as on Hypixel. 160 Cobblestone into an Enchanted Cobblestone is 4.8 Carpentry XP.
 - **Taming**: whatever XP your active pet earns, you earn in Taming too.
 
-Alchemy earns XP once brewing comes.
+Alchemy earns XP from brewing potions (see [Alchemy](alchemy)).
 
 ## How XP and levels work
 

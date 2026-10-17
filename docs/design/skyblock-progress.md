@@ -369,6 +369,27 @@ phase so the next session can pick up where this one stopped.
       progress (collections). Decided: "per player within N blocks" counts you too; places we don't have yet never count.
       Not yet: the ~220 abilities with their own mechanics (Last Stand, Laserbeam, Stampede, wisdom towards a mob,
       minion speed, drop chances, dungeon/Crimson/Garden ones).
+- [x] **Alchemy (brewing)**: research `docs/design/research/alchemy.md`. `tools/skyblock/import_potions.py` writes
+      `skyrpg/skyblock_potions`: 44 brewable potions from NEU's POTION_<TYPE>;<LEVEL> items (each level's base time, rarity,
+      text, stats and special effects read from it), 51 ingredients, the modifiers. In SkyBlock worlds a brewing stand
+      runs `SkyBrewing` (mixin over `serverTick`; accessor for its timer): 20 s, no fuel, water + Nether Wart = Awkward,
+      ingredient = potion I/III/V, one level and one time modifier, Redstone Lamp both, Gunpowder splash (x0.5 time,
+      Enchanted Gunpowder x1); right-clicking opens `BrewMenu` + `BrewScreen` (the stand's own slots and timer). Hypixel's
+      POTION item with its data (`Potions`: name, text with time, colour, rarity, splash model). Alchemy XP per ingredient
+      (Hypixel's INGREDIENT_BREW) rides on the potion and is paid when it's taken out. `PotionEffects`: right-click to
+      drink (splash: every player within 8 blocks), time x (1 + Alchemy level % + Potion Affinity 10/25/50%), counts
+      down online, kept through death, a lower level doesn't replace a higher; stats source; absorption, healing and Mana
+      per second, vanilla Night Vision / Invisibility / Blindness / Jump Boost; miss chance, bow damage, fire and drowning
+      in `IncomingDamage`; `/effects`. Brewing stands can be placed on islands.
+      Decided: ingredients other than Speed/Strength/Regeneration/Healing's (the wiki gave only those) from Hypixel's
+      Brewing Ingredient items and their XP tier (Cactus=Resistance, Mutton=Mana, Gold=Absorption, Cocoa=Adrenaline,
+      Flint=Critical, Enchanted Cake=Agility, Feather=Archery, Salmon=Dodge, Rabbit's Foot=Rabbit, Raw Rabbit=Jump Boost,
+      Coal=Haste, Mithril=Spelunker, Enchanted Rabbit Hide=Pet Luck, True Essence=True Resistance, Enchanted Glacite=Cold
+      Resistance, Ink Sac=Blindness, Netherrack=Wounded, Red Sand=Burning, Lapis=Experience, Slimeball=Knockback,
+      Obsidian=Stun; Foul Flesh unused); Enchanted Redstone Block +40 min (the wiki disagreed with itself); drinking is
+      instant (no bottle back); glowstone modifiers give the XP Hypixel's item data lists.
+      Not yet: Witch pet speed, God/Dungeon potions, Mixins, Potion Bag, Stun/Knockback/Burning/Experience/Wounded/
+      damage effects.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
