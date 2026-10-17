@@ -23,7 +23,7 @@ PAGE_LIST = {
     "economy": ["coins-and-bank"],
     "skills": ["skills-overview", "mining", "heart-of-the-mountain", "farming", "foraging", "fishing", "enchanting", "crafting"],
     "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks"],
-    "combat": ["stats", "combat-basics"],
+    "combat": ["stats", "combat-basics", "bestiary"],
     "world": ["builder-station", "brainrots", "crates"],
     "companions": ["pets"],
     "interface": ["k-menu", "chat", "hud-and-minimap", "waypoints", "party", "skyhelper", "settings"],

@@ -297,6 +297,12 @@ phase so the next session can pick up where this one stopped.
       Boost, the wands' heals; ability damage × (1 + Intelligence/100) × (1 + Ability Damage %). Temporary speed is a
       stat source. Not yet: the other ~270 abilities, scroll abilities (Hyperion's Wither Impact), sneak/left-click
       triggers, set bonuses.
+- [x] **Bestiary**: `tools/skyblock/import_bestiary.py` (NEU bestiary.json: 255 families on 19 islands, heads, caps,
+      brackets) to `skyrpg/bestiary`. `Bestiary` (skyblock): kills by family (the mob's name, Hypixel's; aliases for Goblin
+      variants, Zealot Bruisers, the dragons; unnamed vanilla mobs by type), tiers from the bracket up to the cap. Decided
+      (Hypixel's current reward numbers weren't in the data): +1 SkyBlock XP per family tier, a Milestone every 10 tiers
+      for +2 Health (a stat source). `BestiaryMenu` + `BestiaryScreen` (`/bestiary`, `/be`, a `bestiary` action): islands,
+      families with heads, tiers and bars, ??? until found. Not yet: per-family bonuses, Magic Find.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

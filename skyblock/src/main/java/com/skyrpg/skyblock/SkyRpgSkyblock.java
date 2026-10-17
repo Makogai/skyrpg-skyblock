@@ -74,6 +74,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.hollows.CrystalHollows.init();
         com.skyrpg.skyblock.gem.GemGrinderMenu.init();
         com.skyrpg.skyblock.ability.HypixelAbilities.init();
+        com.skyrpg.skyblock.bestiary.Bestiary.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

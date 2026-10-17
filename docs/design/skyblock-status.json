@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "Item abilities: 289 items get Hypixel's ability; Instant Transmission, Dragon Rage and 15 more work",
+  "latest": "Bestiary: Hypixel's 255 families, kill tiers, SkyBlock XP and Milestone Health",
   "phase": {
     "name": "Phase 2: Mid game",
     "done": 52
@@ -93,7 +93,7 @@
           "name": "Museum, Bestiary & Sacks",
           "icon": "item/item_frame",
           "weight": 4,
-          "done": 30
+          "done": 55
         }
       ]
     },
