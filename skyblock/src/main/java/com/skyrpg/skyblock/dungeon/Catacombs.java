@@ -77,6 +77,7 @@ public final class Catacombs {
         DungeonXp.init();
         Classes.init();
         Rewards.init();
+        DungeonItems.init();
         ServerLifecycleEvents.SERVER_STARTED.register(RoomLibrary::load);
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, ok) -> RoomLibrary.load(server));
         ServerLifecycleEvents.SERVER_STOPPING.register(Catacombs::stopAll);

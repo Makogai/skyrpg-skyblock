@@ -1,8 +1,8 @@
 {
   "name": "Malik",
-  "role": "Essence",
+  "role": "Dungeon stars",
   "color": "#FF55FF",
-  "hint": "Talk",
+  "hint": "Upgrade",
   "skin": "minecraft:entity/player/wide/kai",
   "model": "wide",
   "dimension": "skyrpg_skyblock:dungeon_hub",
@@ -15,6 +15,9 @@
   "sound": "minecraft:block.brewing_stand.brew",
   "greetings": [
     "Essence is the dungeon's true currency.",
-    "Bring me Wither and Undead Essence; my shop opens soon."
-  ]
+    "Hold a dungeon item and I'll add a star to it."
+  ],
+  "action": {
+    "type": "dungeon_malik"
+  }
 }

@@ -53,6 +53,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.EXCAVATOR, com.skyrpg.skyblock.client.screen.ExcavatorScreen::new);
         MenuScreens.register(SkyMenus.DUNGEON_REWARDS, com.skyrpg.skyblock.client.screen.DungeonRewardsScreen::new);
         MenuScreens.register(SkyMenus.DUNGEON, com.skyrpg.skyblock.client.screen.DungeonScreen::new);
+        MenuScreens.register(SkyMenus.MALIK, com.skyrpg.skyblock.client.screen.MalikScreen::new);
         MenuScreens.register(SkyMenus.BREW, com.skyrpg.skyblock.client.screen.BrewScreen::new);
         MenuScreens.register(SkyMenus.QUIVER, com.skyrpg.skyblock.client.screen.QuiverScreen::new);
         MenuScreens.register(SkyMenus.PETS, com.skyrpg.skyblock.client.screen.PetsScreen::new);

@@ -26,6 +26,9 @@ public final class ItemMods {
     public static final String RARITY_UPGRADES = "rarity_upgrades";
     public static final String HOT_POTATO = "hot_potato_count";
     public static final String ENCHANTMENTS = "enchantments";
+    /** Dungeon stars (Hypixel's {@code upgrade_level}): 0 to 5, bought with essence. */
+    public static final String STARS = "upgrade_level";
+    private static final String STAR = "✪";
     /** Hot Potato Books stop at 10; Fuming Potato Books go on to 15. */
     public static final int HOT_POTATO_MAX = 10;
     public static final int FUMING_MAX = 15;
@@ -52,6 +55,22 @@ public final class ItemMods {
         return tag != null && tag.getIntOr(RARITY_UPGRADES, 0) > 0;
     }
 
+    public static int stars(ItemStack stack) {
+        CompoundTag tag = tag(stack);
+        return tag == null ? 0 : tag.getIntOr(STARS, 0);
+    }
+
+    public static void setStars(ItemStack stack, int stars) {
+        edit(stack, tag -> tag.putInt(STARS, stars));
+        SkyItems.normalize(stack);
+    }
+
+    /** A dungeon item (Hypixel's {@code dungeon_item}): its stats are boosted in the Catacombs. */
+    public static boolean dungeonItem(ItemDefinition def) {
+        return def != null && def.json().has("hypixel") && def.json().getAsJsonObject("hypixel").has("dungeon_item")
+                && def.json().getAsJsonObject("hypixel").get("dungeon_item").getAsBoolean();
+    }
+
     public static int hotPotatoBooks(ItemStack stack) {
         CompoundTag tag = tag(stack);
         return tag == null ? 0 : tag.getIntOr(HOT_POTATO, 0);
@@ -73,7 +92,9 @@ public final class ItemMods {
     /** "Fierce Aspect of the End": the name with its reforge in front. */
     public static String name(ItemStack stack, ItemDefinition def) {
         Reforges.Reforge reforge = reforge(stack);
-        return reforge == null ? def.name() : reforge.name() + " " + def.name();
+        String name = reforge == null ? def.name() : reforge.name() + " " + def.name();
+        int stars = stars(stack);
+        return stars > 0 ? name + " " + STAR.repeat(stars) : name;
     }
 
     /** Whether Hot Potato Books work on it: weapons and fishing rods (damage and strength) and armour (health, defense). */

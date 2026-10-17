@@ -15,7 +15,7 @@ summary: Hypixel's Dungeons - the Dungeon Hub and Mort, runs through a new map e
 | --- | --- |
 | Mort | Pick your class and a floor, and in you go |
 | Ophelia | Dungeon gear and supplies |
-| Malik | Essence (his shop comes later) |
+| Malik | Adds stars to dungeon items for essence |
 | Croesus | Keeps reward chests you left behind (later) |
 | Adventurer Saul | Tips |
 
@@ -101,9 +101,15 @@ At the end you get **Catacombs XP** and **class XP** (the class you played gets 
 
 Every chest holds Undead Essence (Wither Essence too from Floor III), and each floor has its own drops: Floor I Bonzo Fragments, the Red Nose, Balloon Snake, Bonzo's Mask and Staff; Floor II Scarf Fragments, Scarf's Studies and Thesis, the Adaptive Belt, Stone Blade and Red Scarf; Floor III the Adaptive armour, Suspicious Vial and Scarf's Grimoire; Floor IV Thorn Fragments, Spirit Wing, Bone and Decoy, the Spirit Bow and Sword, Thorn's Boots and Ultimate Rend; Floor V Livid Fragments, the Dark Orb, Shadow Assassin armour, Lethality VI, the Livid Dagger, AOTE Stone, Shadow Fury and Last Breath; Floor VI Giant Fragments, Sadan's Brooch, the Fel Skull, Soulweaver Gloves, Necromancer Sword and Lord Chestplate, Summoning Ring, Giant's Sword and Precursor Eye; Floor VII Wither armour, the Wither Cloak, Blood and Catalyst, Precursor Gear, Auto Recombobulator, Ultimate One For All, the three scrolls, Necron's Handle and the Lords' fish. Any floor can also give a Hot Potato or Fuming Potato Book, a Recombobulator 3000, a Kismet Feather or a Dungeon Chest Key. Better chests and a better rank make the rare ones likelier. Essence goes to `/essence`.
 
+## Dungeon items and stars
+
+**Dungeon items** (most gear from the Catacombs, and others marked as dungeon items) get stronger inside the Catacombs: **+1% stats for each Catacombs level**, and **+10% for each star**.
+
+**Stars** (✪, up to 5) are added by **Malik** in the Dungeon Hub: hold the item and talk to him. Each star costs essence (Wither Essence for most gear), as Hypixel's item says; some also cost coins or items. A starred item shows its stars after its name.
+
 ## The Catacombs level
 
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, boss arenas, Master Mode, dungeon item stats, stars and essence shops.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, boss arenas, Master Mode, Master Stars, essence shop perks.

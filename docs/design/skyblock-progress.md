@@ -538,6 +538,15 @@ phase so the next session can pick up where this one stopped.
       Decided: simplified mechanics (no terminals' mini-games, no pillars falling, no Livid's abilities, Giants move by
       stomping hops); all bosses fight in a plain arena until their templates exist.
 
+- [x] **Dungeon items, stars, Malik, boss arenas**. `ItemMods`: stars (`upgrade_level`, shown as ✪ after the name),
+      `dungeonItem` (Hypixel's `dungeon_item`). `dungeon/DungeonItems`: in the Catacombs a dungeon item's stats (held and
+      armour) go up 10% a star and 1% a Catacombs level (a stat source); star upgrades from the item's Hypixel
+      `upgrade_costs` (essence, coins, items). `MalikMenu` + `MalikScreen` (Malik, `dungeon_malik`): the held item, its
+      stars, the next star's cost, your essence, "Add a star". Boss arenas: `tools/builds/catacombs/arena_kit.py` (61 x 30
+      x 61, a fight area that stays open for the fights' fixed spots) with helpers' `arenas_a.py` (Bonzo, Scarf, The
+      Professor, Thorn) and `arenas_b.py` (Livid, Sadan, the Wither Lords).
+      Decided: +10% a star and +1% a Catacombs level (Hypixel's numbers weren't retrievable).
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,
