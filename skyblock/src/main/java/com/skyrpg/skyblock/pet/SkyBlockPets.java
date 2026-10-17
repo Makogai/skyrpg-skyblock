@@ -119,6 +119,7 @@ public final class SkyBlockPets {
             return InteractionResult.SUCCESS;
         });
         PetsMenu.init();
+        PetCatalog.init();
     }
 
     // ---------------------------------------------------------------- data
@@ -154,6 +155,10 @@ public final class SkyBlockPets {
             }
         });
         pets = loaded;
+        List<PetCatalog.Entry> catalog = new ArrayList<>();
+        loaded.values().forEach(def -> catalog.add(new PetCatalog.Entry(def.id(), def.name(), def.skin() == null ? "" : def.skin(),
+                List.copyOf(def.tiers().keySet()))));
+        PetCatalog.replace(catalog);
         SkyRpgSkyblock.LOGGER.info("Loaded {} SkyBlock pets", loaded.size());
     }
 

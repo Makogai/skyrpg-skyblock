@@ -11,6 +11,8 @@ summary: Hypixel's 87 pets - the Pets menu, levels 1 to 100, stats by rarity and
 
 A pet is an item: a head with the pet's face. **Right-click it** to add it to your pets; if you have none out, it's summoned straight away.
 
+**25 pets can be crafted** (Bat, Blaze, Chicken, Endermite, Horse, Ocelot, Pigman, Rabbit, Sheep, Silverfish, Skeleton, Spider, Wither Skeleton, Wolf, Zombie and more): find them in the [Recipe Book](recipe-book) by name. A crafted pet starts at level 1. Pets can also be traded on the [Auction House](auction-house).
+
 Open the **Pets** menu from the [SkyBlock Menu](skyblock-menu) or with `/pets`:
 
 - The pet you have out is on the card at the top. **Put away** sends it back.
@@ -39,4 +41,4 @@ Your summoned pet gets a share of all the skill XP you gain:
 **Taming:** whatever your pet gets is also your Taming XP, and every Taming level gives your pets 1% more XP (Zoologist). See [Skills](skills-overview).
 
 > [!NOTE]
-> Not yet: pet abilities (they show with their numbers but don't work yet), pet items, Kat's rarity upgrades, the pet recipes and the other ways to get pets. Pets are given out by admins for now (`/sbpet give`).
+> Not yet: pet abilities (they show with their numbers but don't work yet), pet items, Kat's rarity upgrades, and the pets that come from drops, shops and events rather than recipes.

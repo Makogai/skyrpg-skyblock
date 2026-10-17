@@ -136,6 +136,12 @@ public final class SkyItems {
         if (book != null) {
             return book;
         }
+        for (java.util.function.BiFunction<ItemDefinition, Integer, ItemStack> factory : FACTORIES) {
+            ItemStack made = factory.apply(def, count);
+            if (made != null) {
+                return made;
+            }
+        }
         ItemStack stack = new ItemStack(def.item(), count);
         CompoundTag tag = new CompoundTag();
         tag.putString(SKYBLOCK_ID, def.skyblockId());
@@ -158,6 +164,14 @@ public final class SkyItems {
         }
         normalize(stack);
         return stack;
+    }
+
+    private static final java.util.List<java.util.function.BiFunction<ItemDefinition, Integer, ItemStack>> FACTORIES =
+            new java.util.concurrent.CopyOnWriteArrayList<>();
+
+    /** Lets another mod make the stacks of its own definitions (null for ones that aren't its). */
+    public static void registerFactory(java.util.function.BiFunction<ItemDefinition, Integer, ItemStack> factory) {
+        FACTORIES.add(factory);
     }
 
     /** Whether a SkyBlock item is one per slot: its base doesn't stack, or Hypixel marks it unstackable. */

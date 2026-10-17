@@ -106,6 +106,12 @@ def main():
         m = re.match(r"(.+ Minion) [IVXL]+$", d["name"])
         if m:
             names_to_ids.setdefault(m.group(1).lower(), []).append(d["skyblock_id"])
+    # Pets are items too, by Hypixel's recipe ids ("BEE;4": a Legendary Bee), for the rarities our pet data has.
+    tiers = ["COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC"]
+    for f in (ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/skyblock_pets").glob("*.json"):
+        pet = json.loads(f.read_text(encoding="utf-8"))
+        for tier in pet["rarities"]:
+            known.add(f"{f.stem.upper()};{tiers.index(tier)}")
     by_collection = collections()
     unlocked_by = unlocks(by_collection.pop("_data"), names_to_ids)
     if OUT.exists():
@@ -135,7 +141,7 @@ def main():
             out = {"output": output, "count": int(count or 1), "grid": cells}
             if req:
                 out["requires"] = req
-            path = output.lower().replace(":", "-") + ("" if index == 0 else f"_{index + 1}")
+            path = output.lower().replace(":", "-").replace(";", "_pet_") + ("" if index == 0 else f"_{index + 1}")
             (OUT / (path + ".json")).write_text(json.dumps(out) + "\n", encoding="utf-8")
             written += 1
     print(f"Wrote {written} recipes ({skipped} skipped: an ingredient isn't a SkyBlock item) to {OUT.relative_to(ROOT)}")

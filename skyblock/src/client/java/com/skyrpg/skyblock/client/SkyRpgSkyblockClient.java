@@ -47,6 +47,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         SkyRpgMenu.registerPage(new ProfilesPage());
         SkyRpgMenu.registerPage(new FastTravelPage());
         ClientPlayNetworking.registerGlobalReceiver(FastTravel.WarpList.TYPE, (payload, context) -> FastTravelPage.set(payload));
+        ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.pet.PetCatalog.CatalogPayload.TYPE, (payload, context) -> payload.apply());
         ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.travel.Lifts.Menu.TYPE,
                 (payload, context) -> net.minecraft.client.Minecraft.getInstance().gui.setScreen(new LiftScreen(payload)));
         SkyRpgMenu.registerPage(new CalendarPage());

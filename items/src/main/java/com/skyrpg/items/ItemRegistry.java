@@ -38,9 +38,29 @@ public final class ItemRegistry {
     /** The SkyBlock item with this id ("ASPECT_OF_THE_END"), or null. */
     public static ItemDefinition skyblock(String skyblockId) {
         ItemDefinition def = skyblock.get(skyblockId);
+        if (def != null || skyblockId == null) {
+            return def;
+        }
         // Enchanted books by their Bazaar id ("ENCHANTMENT_SHARPNESS_6").
-        return def != null || skyblockId == null || !skyblockId.startsWith(com.skyrpg.items.enchant.Books.PRODUCT) ? def
-                : com.skyrpg.items.enchant.Books.definition(skyblockId);
+        if (skyblockId.startsWith(com.skyrpg.items.enchant.Books.PRODUCT)) {
+            return com.skyrpg.items.enchant.Books.definition(skyblockId);
+        }
+        // Other ids other mods answer for (pets by their recipe id, "BEE;4").
+        for (java.util.function.Function<String, ItemDefinition> resolver : VIRTUAL) {
+            ItemDefinition virtual = resolver.apply(skyblockId);
+            if (virtual != null) {
+                return virtual;
+            }
+        }
+        return null;
+    }
+
+    private static final java.util.List<java.util.function.Function<String, ItemDefinition>> VIRTUAL =
+            new java.util.concurrent.CopyOnWriteArrayList<>();
+
+    /** Lets another mod give a definition to SkyBlock ids that aren't items of their own (its stacks come from {@link SkyItems#registerFactory}). */
+    public static void registerVirtual(java.util.function.Function<String, ItemDefinition> resolver) {
+        VIRTUAL.add(resolver);
     }
 
     /** Whether any SkyBlock items are loaded (stacks then need their custom data checked). */

@@ -214,7 +214,9 @@ phase so the next session can pick up where this one stopped.
       by `PetLayer`); stats by level in a straight line; pet XP from skill XP (own skill 1×, Mining/Fishing pets 1.5×,
       Alchemy/Enchanting 1/12, others 1/4), Taming XP the same, Zoologist +1%/Taming level. `PetsMenu` + `PetsScreen`
       (`/pets`, the SkyBlock Menu tile): summon, put away, take out. The survival Pets page is retired in SkyBlock.
-      Not yet: abilities, pet items, Kat, pet recipes and drops (admins: `/sbpet give`).
+      Pets are SkyBlock ids too (`PetCatalog`: "BEE;4" resolves through the new item-registry resolvers and stack
+      factories, the client gets the pet list on join): 25 NEU pet recipes in the Recipe Book and crafting table.
+      Not yet: abilities, pet items, Kat, pet drops and shops (admins: `/sbpet give`).
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
