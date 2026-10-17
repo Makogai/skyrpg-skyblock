@@ -53,6 +53,12 @@ def main():
     args = parser.parse_args()
     data = snapshot(args.fetch)
     known = {json.loads(f.read_text(encoding="utf-8"))["skyblock_id"] for f in (DATA / "items").glob("*.json")}
+    # Enchanted books trade as ENCHANTMENT_<ENCHANT>_<LEVEL> (see items Books): every level our enchant data has.
+    books = {}
+    for f in (DATA / "skyblock_enchants").glob("*.json"):
+        e = json.loads(f.read_text(encoding="utf-8"))
+        for level in e["levels"]:
+            books[f"ENCHANTMENT_{f.stem.upper()}_{level}"] = e["name"]
 
     # Which collection each item is: the collection items themselves...
     collection_of = {}
@@ -84,7 +90,7 @@ def main():
     groups = {}
     for product_id, product in data["products"].items():
         item = product_id
-        if item not in known:
+        if item not in known and item not in books:
             continue
         sells = product.get("sell_summary") or []
         buys = product.get("buy_summary") or []
@@ -95,9 +101,10 @@ def main():
         sell = round(sells[0]["pricePerUnit"], 1) if sells else round(product["quick_status"]["sellPrice"], 1)
         if buy <= 0 and sell <= 0:
             continue
-        name = collection(item)
+        name = collection(item) if item not in books else None
         tab = TABS.get(collections[name]["category"], "Oddities") if name else "Oddities"
-        group = name or oddity_group(item)
+        # Books: one group per enchantment, as on Hypixel ("Sharpness" holds Sharpness VI and VII).
+        group = name or (books[item] if item in books else oddity_group(item))
         groups.setdefault((tab, group), []).append({"id": item, "buy": buy, "sell": sell})
 
     categories = []
@@ -108,6 +115,8 @@ def main():
                 continue
             products.sort(key=lambda p: (p["buy"] or p["sell"]))
             icon = collections[group]["skyblock"][0] if group in collections else products[0]["id"]
+            if icon.startswith("ENCHANTMENT_"):
+                icon = "ENCHANTED_BOOK"
             tab_groups.append({"name": group, "icon": icon, "products": products})
         categories.append({"name": tab, "groups": tab_groups})
     OUT.parent.mkdir(parents=True, exist_ok=True)

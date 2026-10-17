@@ -1,0 +1,26 @@
+{
+ "name": "Expertise",
+ "categories": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "max": 1,
+ "xp": [
+  25
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §3+0.6Sea Creature",
+    "§3Chance §7and §3+2☯ Fishing",
+    "§3Wisdom §7when killing Sea",
+    "§7Creatures."
+   ],
+   "rarity": "COMMON",
+   "value": 0.6
+  }
+ }
+}

@@ -7,7 +7,7 @@ summary: The extra mods the pack installs for speed and comfort, the zoom key, h
 ---
 Besides the SkyRPG mods, the pack installs a set of well-known Fabric mods. They make the game faster, add a few comfort features and let you use shader packs. All of them are client-side: they change how your own game looks and runs, nothing about the server. The pack keeps them up to date the same way it keeps SkyRPG up to date.
 
-SkyRPG was tested together with every mod on this page (chat, K menu, HUD and minimap, tab list, effects, 3D item models, the Ender Wyrm and the griffins, the wiki), also with a shader pack switched on.
+SkyRPG was tested together with every mod on this page (chat, the SkyBlock Menu, HUD and minimap, tab list, effects, 3D item models, the minions, the wiki), also with a shader pack switched on.
 
 ## Faster game
 
@@ -17,7 +17,7 @@ SkyRPG was tested together with every mod on this page (chat, K menu, HUD and mi
 | **Sodium Extra** and **Reese's Sodium Options** | More video settings (clouds, animations, fog, FPS counter) in one tidy screen. Find it under Options, Video Settings. |
 | **Lithium** | Faster game logic, which helps the built-in server and big crowds of mobs. |
 | **FerriteCore** | Uses less memory. |
-| **Entity Culling** and **More Culling** | Skip drawing mobs and blocks you cannot see. A big help in the busy hub. |
+| **Entity Culling** and **More Culling** | Skip drawing mobs and blocks you cannot see. A big help in the busy Hub. |
 | **ImmediatelyFast** | Faster drawing of the HUD, menus and text. |
 | **BadOptimizations** | Many small speedups. |
 | **Dynamic FPS** | Lowers the frame rate while the window is in the background, so the game stops heating your computer when you tab away. |
@@ -65,7 +65,7 @@ Notes:
 
 - On the first start the shader takes a few seconds to compile. The game can freeze for a moment.
 - The Shader Packs screen has **Shader Pack Settings** for each pack. Lowering the shadow distance and quality is the biggest saving.
-- Our effects (spell and boss particles, the screen flash and shake) still show with shaders on, and the HUD, the K menu and the minimap are not touched.
+- Our effects (mob and boss particles, the screen flash and shake) still show with shaders on, and the HUD, the menus and the minimap are not touched.
 - Shaders ask a lot of your graphics card. If the frame rate drops, choose MakeUp Ultra Fast or switch them off.
 - More shader packs: drop a `.zip` into the `shaderpacks` folder of your game folder (Prism: Folder, Shader Packs) and pick it in the list.
 
@@ -74,6 +74,19 @@ Notes:
 
 ## Resource packs
 
+### FurfSky Reborn and Catharsis (always on)
+
+SkyBlock items look like Hypixel's because of two extras the pack downloads from Modrinth:
+
+| Extra | What it does |
+| --- | --- |
+| **Catharsis** | A client mod that reads each item's SkyBlock id, so a resource pack can give every SkyBlock item its own look. |
+| **FurfSky Reborn** | The resource pack that gives SkyBlock's items, armour and held models their look. Only its item folders load: its menus, hotbar, blocks and fonts never do. |
+
+There is no setting for either: they are always on, and they are not in the resource pack list you can toggle. SkyRPG's own screens (the SkyBlock Menu, shops, the Bazaar) are not changed by them.
+
+### Optional packs
+
 Two small optional packs sit in your `resourcepacks` folder. They are **not** turned on until you choose them in Options, Resource Packs (or in the first-time setup):
 
 | Resource pack | What it does |
@@ -81,7 +94,7 @@ Two small optional packs sit in your `resourcepacks` folder. They are **not** tu
 | **Low On Fire** | The on-fire overlay sits low on the screen instead of covering it. |
 | **Fast Better Grass** | Grass blocks show their top texture on the sides, so grass looks fuller. |
 
-SkyRPG's own look (menus, icons, weapon art) comes from its mods and still works with these packs.
+SkyRPG's own look (menus and icons) comes from its mods and still works with these packs.
 
 ## Performance tips
 

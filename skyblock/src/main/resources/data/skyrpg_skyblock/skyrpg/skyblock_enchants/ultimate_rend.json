@@ -1,0 +1,96 @@
+{
+ "name": "Rend",
+ "categories": [
+  "BOW"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [
+  "ultimate_bank",
+  "ultimate_bobbin_time",
+  "ultimate_chimera",
+  "ultimate_combo",
+  "ultimate_fatal_tempo",
+  "ultimate_first_impression",
+  "ultimate_flash",
+  "ultimate_flowstate",
+  "ultimate_habanero_tactics",
+  "ultimate_inferno",
+  "ultimate_last_stand",
+  "ultimate_legion",
+  "ultimate_missile",
+  "ultimate_no_pain_no_gain",
+  "ultimate_one_for_all",
+  "ultimate_refrigerate",
+  "ultimate_reiterate",
+  "ultimate_soul_eater",
+  "ultimate_sunset",
+  "ultimate_swarm",
+  "ultimate_wisdom",
+  "ultimate_wise"
+ ],
+ "ultimate": true,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Use Left Click ability to rip",
+    "§7your arrows out of nearby",
+    "§7enemies. Each arrow deals §c5%",
+    "§7of your last critical shot on",
+    "§7the target, up to §c5 §7arrows.",
+    "§a2s §7Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 5.0
+  },
+  "2": {
+   "lore": [
+    "§7Use Left Click ability to rip",
+    "§7your arrows out of nearby",
+    "§7enemies. Each arrow deals §c10%",
+    "§7of your last critical shot on",
+    "§7the target, up to §c5 §7arrows.",
+    "§a2s §7Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "3": {
+   "lore": [
+    "§7Use Left Click ability to rip",
+    "§7your arrows out of nearby",
+    "§7enemies. Each arrow deals §c15%",
+    "§7of your last critical shot on",
+    "§7the target, up to §c5 §7arrows.",
+    "§a2s §7Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§7Use Left Click ability to rip",
+    "§7your arrows out of nearby",
+    "§7enemies. Each arrow deals §c20%",
+    "§7of your last critical shot on",
+    "§7the target, up to §c5 §7arrows.",
+    "§a2s §7Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§7Use Left Click ability to rip",
+    "§7your arrows out of nearby",
+    "§7enemies. Each arrow deals §c25%",
+    "§7of your last critical shot on",
+    "§7the target, up to §c5 §7arrows.",
+    "§a2s §7Cooldown."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  }
+ }
+}

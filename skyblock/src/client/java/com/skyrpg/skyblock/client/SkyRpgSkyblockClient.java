@@ -38,6 +38,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.CRAFT, CraftScreen::new);
         MenuScreens.register(SkyMenus.REFORGE, com.skyrpg.skyblock.client.screen.ItemWorkScreen::new);
         MenuScreens.register(SkyMenus.ANVIL, com.skyrpg.skyblock.client.screen.ItemWorkScreen::new);
+        MenuScreens.register(SkyMenus.ENCHANT, com.skyrpg.skyblock.client.screen.EnchantScreen::new);
         MenuScreens.register(SkyMenus.SHOP, ShopScreen::new);
         SkyRpgMenu.registerPage(new SkyBlockMenuPage());
         SkyRpgMenu.registerPage(new ProfilesPage());

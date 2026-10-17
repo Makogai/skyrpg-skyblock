@@ -1,0 +1,28 @@
+{
+ "name": "Smelting Touch",
+ "categories": [
+  "DRILL",
+  "GAUNTLET",
+  "PICKAXE"
+ ],
+ "max": 1,
+ "xp": [
+  5
+ ],
+ "conflicts": [
+  "fortune",
+  "silk_touch"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Automatically smelts broken",
+    "§7blocks into their smelted form."
+   ],
+   "rarity": "COMMON"
+  }
+ },
+ "table_max": 1
+}

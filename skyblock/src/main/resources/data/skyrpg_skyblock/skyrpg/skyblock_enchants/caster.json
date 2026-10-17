@@ -1,0 +1,70 @@
+{
+ "name": "Caster",
+ "categories": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "max": 6,
+ "xp": [
+  20,
+  25,
+  30,
+  40,
+  50,
+  75
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§a5%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "COMMON",
+   "value": 5.0
+  },
+  "2": {
+   "lore": [
+    "§a10%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "3": {
+   "lore": [
+    "§a15%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§a20%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§a25%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  },
+  "6": {
+   "lore": [
+    "§a30%§7 chance to not consume",
+    "§7bait."
+   ],
+   "rarity": "RARE",
+   "value": 30.0
+  }
+ },
+ "table_max": 5
+}

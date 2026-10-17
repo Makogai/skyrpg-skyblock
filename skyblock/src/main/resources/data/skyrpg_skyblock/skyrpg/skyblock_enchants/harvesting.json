@@ -1,0 +1,74 @@
+{
+ "name": "Harvesting",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 6,
+ "xp": [
+  5,
+  10,
+  15,
+  20,
+  25
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §a+12.5 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "COMMON",
+   "value": 12.5
+  },
+  "2": {
+   "lore": [
+    "§7Grants §a+25 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "COMMON",
+   "value": 25.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §a+50 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "COMMON",
+   "value": 50.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §a+37.5 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "COMMON",
+   "value": 37.5
+  },
+  "5": {
+   "lore": [
+    "§7Grants §a+62.5 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 62.5
+  },
+  "6": {
+   "lore": [
+    "§7Grants §a+75 §6☘ Farming",
+    "§6Fortune§7, which increases your",
+    "§7chance for multiple crops."
+   ],
+   "rarity": "RARE",
+   "value": 75.0
+  }
+ },
+ "table_max": 5
+}

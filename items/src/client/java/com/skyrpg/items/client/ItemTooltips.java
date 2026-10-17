@@ -12,6 +12,7 @@ import com.skyrpg.items.ItemSet;
 import com.skyrpg.items.Rarity;
 import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.backpack.Backpacks;
+import com.skyrpg.items.enchant.Enchants;
 import com.skyrpg.items.reforge.Reforges;
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +88,8 @@ final class ItemTooltips {
                 out.add(line);
             }
         }
+
+        enchantLines(stack, out);
 
         if (hasTier(stack)) {
             out.add(tierLine(stack));
@@ -198,6 +201,60 @@ final class ItemTooltips {
         }
         lines.clear();
         lines.addAll(out);
+    }
+
+    /**
+     * Hypixel's enchantment lines: ultimates first in bold pink, then the rest in blue; with five or fewer each comes
+     * with what it does, with more they're listed three to a line.
+     */
+    private static void enchantLines(ItemStack stack, List<Component> out) {
+        Map<String, Integer> enchants = ItemMods.enchantments(stack);
+        if (enchants.isEmpty()) {
+            return;
+        }
+        List<Map.Entry<String, Integer>> order = new ArrayList<>(enchants.entrySet());
+        order.sort((a, b) -> Boolean.compare(ultimate(b.getKey()), ultimate(a.getKey())));
+        out.add(Component.empty());
+        if (order.size() <= 5) {
+            for (Map.Entry<String, Integer> entry : order) {
+                Enchants.Enchant enchant = Enchants.get(entry.getKey());
+                out.add(enchantName(entry.getKey(), entry.getValue()));
+                Enchants.Level level = enchant == null ? null : enchant.level(Math.min(entry.getValue(), enchant.max()));
+                if (level != null) {
+                    level.lore().forEach(line -> out.add(Component.literal(line)));
+                }
+            }
+            return;
+        }
+        MutableComponent line = null;
+        int onLine = 0;
+        for (Map.Entry<String, Integer> entry : order) {
+            if (line == null || onLine == 3) {
+                if (line != null) {
+                    out.add(line);
+                }
+                line = Component.empty();
+                onLine = 0;
+            } else {
+                line.append(Component.literal(", ").withStyle(ChatFormatting.BLUE));
+            }
+            line.append(enchantName(entry.getKey(), entry.getValue()));
+            onLine++;
+        }
+        out.add(line);
+    }
+
+    private static boolean ultimate(String id) {
+        Enchants.Enchant enchant = Enchants.get(id);
+        return enchant != null && enchant.ultimate();
+    }
+
+    private static MutableComponent enchantName(String id, int level) {
+        Enchants.Enchant enchant = Enchants.get(id);
+        String label = enchant == null ? id + " " + Enchants.roman(level) : enchant.label(level);
+        return enchant != null && enchant.ultimate()
+                ? Component.literal(label).withStyle(ChatFormatting.LIGHT_PURPLE, ChatFormatting.BOLD)
+                : Component.literal(label).withStyle(ChatFormatting.BLUE);
     }
 
     private static boolean hasTier(ItemStack stack) {

@@ -1,0 +1,30 @@
+{
+ "name": "Silk Touch",
+ "categories": [
+  "AXE",
+  "DRILL",
+  "GAUNTLET",
+  "PICKAXE",
+  "SHOVEL"
+ ],
+ "max": 1,
+ "xp": [
+  10
+ ],
+ "conflicts": [
+  "fortune",
+  "smelting_touch"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Allows you to collect normally",
+    "§7unobtainable block drops."
+   ],
+   "rarity": "COMMON"
+  }
+ },
+ "table_max": 1
+}

@@ -9,9 +9,8 @@ CATEGORIES = [
     ("skills", "Skills", "minecraft:iron_pickaxe"),
     ("gear", "Gear", "minecraft:iron_chestplate"),
     ("combat", "Combat", "minecraft:iron_sword"),
-    ("dungeons", "Dungeons", "skyrpg_world:crypt_key"),
-    ("world", "The World", "minecraft:oak_sapling"),
-    ("companions", "Pets & Mounts", "minecraft:bone"),
+    ("world", "Extras", "minecraft:chest"),
+    ("companions", "Pets", "minecraft:bone"),
     ("interface", "Interface", "minecraft:writable_book"),
     ("reference", "Reference", "minecraft:book"),
 ]
@@ -19,21 +18,16 @@ CATEGORY_IDS = [c[0] for c in CATEGORIES]
 
 PAGE_LIST = {
     "getting-started": ["welcome", "skyrpg-mods", "first-launch", "first-steps", "controls-and-keys", "mods-and-shaders", "progression-guide"],
-    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "slayers"],
-    "skyhaven": ["skyhaven", "npcs", "quests-and-journal", "events"],
-    "economy": ["coins-and-bank", "selling-and-shops", "contracts"],
-    "skills": ["skills-overview", "mining", "farming", "foraging", "fishing", "enchanting", "crafting", "delving"],
-    "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks", "shields", "bows", "wands"],
-    "combat": ["stats", "combat-basics", "spells", "mobs", "world-bosses"],
-    "dungeons": ["dungeons-overview", "forgotten-crypt", "spider-hollow", "drowned-temple", "dwarven-halls",
-                 "infernal-citadel", "ruined-citadel", "catacombs", "astral-observatory"],
-    "world": ["survival-world", "waystones-and-travel", "builder-station", "brainrots", "crates", "danger-regions", "region-hearts", "blood-moon", "the-deep",
-              "the-nether", "the-end", "ender-wyrm"],
-    "companions": ["pets", "mounts"],
-    "interface": ["k-menu", "chat", "hud-and-minimap", "waypoints", "party", "skyhelper", "titles", "settings"],
-    "reference": ["items-weapons", "items-armour", "items-tools", "items-accessories", "items-materials",
-                  "items-consumables", "items-other", "enchant-list", "mob-list", "boss-list", "pet-list",
-                  "mount-list", "collection-list", "quest-list", "sell-prices", "region-list", "skyrpg-level-max"],
+    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "reforging", "slayers"],
+    "skyhaven": ["skyhaven", "npcs"],
+    "economy": ["coins-and-bank"],
+    "skills": ["skills-overview", "mining", "farming", "foraging", "fishing", "enchanting", "crafting"],
+    "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks"],
+    "combat": ["stats", "combat-basics"],
+    "world": ["builder-station", "brainrots", "crates"],
+    "companions": ["pets"],
+    "interface": ["k-menu", "chat", "hud-and-minimap", "waypoints", "party", "skyhelper", "settings"],
+    "reference": ["items-weapons", "items-armour", "items-tools", "items-accessories", "items-materials", "items-consumables", "items-other", "enchant-list", "boss-list", "collection-list", "sell-prices"],
 }
 LISTED_IDS = {pid: cat for cat, ids in PAGE_LIST.items() for pid in ids}
 GENERATED_IDS = set(PAGE_LIST["reference"])

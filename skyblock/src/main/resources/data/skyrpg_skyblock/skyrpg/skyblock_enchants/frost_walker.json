@@ -1,0 +1,37 @@
+{
+ "name": "Frost Walker",
+ "categories": [
+  "BOOTS"
+ ],
+ "max": 2,
+ "xp": [
+  10,
+  20
+ ],
+ "conflicts": [
+  "depth_strider"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Ice blocks will be created below",
+    "§7you when you walk above water in",
+    "§7a radius of §a1 §7blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "2": {
+   "lore": [
+    "§7Ice blocks will be created below",
+    "§7you when you walk above water in",
+    "§7a radius of §a2 §7blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  }
+ },
+ "table_max": 2
+}

@@ -1,0 +1,53 @@
+{
+ "name": "Karma",
+ "categories": [
+  "AXE"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants a §a1% §7chance for §2Tree Gifts",
+    "§7to contain double loot."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants a §a2% §7chance for §2Tree Gifts",
+    "§7to contain double loot."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants a §a3% §7chance for §2Tree Gifts",
+    "§7to contain double loot."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants a §a4% §7chance for §2Tree Gifts",
+    "§7to contain double loot."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants a §a5% §7chance for §2Tree Gifts",
+    "§7to contain double loot."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 5.0
+  }
+ }
+}

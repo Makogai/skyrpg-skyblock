@@ -1,0 +1,91 @@
+{
+ "name": "Titan Killer",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 7,
+ "xp": [
+  10,
+  20,
+  30,
+  40,
+  50,
+  100,
+  200
+ ],
+ "conflicts": [
+  "giant_killer",
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Increases damage dealt by §a2%",
+    "§7for every 100 defense your",
+    "§7target has up to §a6%§7."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "2": {
+   "lore": [
+    "§7Increases damage dealt by §a4%",
+    "§7for every 100 defense your",
+    "§7target has up to §a12%§7."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "3": {
+   "lore": [
+    "§7Increases damage dealt by §a6%",
+    "§7for every 100 defense your",
+    "§7target has up to §a18%§7."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  },
+  "4": {
+   "lore": [
+    "§7Increases damage dealt by §a8%",
+    "§7for every 100 defense your",
+    "§7target has up to §a24%§7."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "5": {
+   "lore": [
+    "§7Increases damage dealt by §a12%",
+    "§7for every 100 defense your",
+    "§7target has up to §a40%§7."
+   ],
+   "rarity": "COMMON",
+   "value": 12.0
+  },
+  "6": {
+   "lore": [
+    "§7Increases damage dealt by §a16%",
+    "§7for every 100 defense your",
+    "§7target has up to §a60%§7."
+   ],
+   "rarity": "RARE",
+   "value": 16.0
+  },
+  "7": {
+   "lore": [
+    "§7Increases damage dealt by §a20%",
+    "§7for every 100 defense your",
+    "§7target has up to §a80%§7."
+   ],
+   "rarity": "EPIC",
+   "value": 20.0
+  }
+ },
+ "table_max": 5
+}

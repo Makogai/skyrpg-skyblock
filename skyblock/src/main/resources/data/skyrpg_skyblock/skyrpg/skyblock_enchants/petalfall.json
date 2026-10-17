@@ -1,0 +1,48 @@
+{
+ "name": "Petalfall",
+ "categories": [
+  "AXE"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §4+0.2Timber§7."
+   ],
+   "rarity": "COMMON",
+   "value": 0.2
+  },
+  "2": {
+   "lore": [
+    "§7Grants §4+0.4Timber§7."
+   ],
+   "rarity": "COMMON",
+   "value": 0.4
+  },
+  "3": {
+   "lore": [
+    "§7Grants §4+0.6Timber§7."
+   ],
+   "rarity": "COMMON",
+   "value": 0.6
+  },
+  "4": {
+   "lore": [
+    "§7Grants §4+0.8Timber§7."
+   ],
+   "rarity": "COMMON",
+   "value": 0.8
+  },
+  "5": {
+   "lore": [
+    "§7Grants §4+1Timber§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 1.0
+  }
+ }
+}

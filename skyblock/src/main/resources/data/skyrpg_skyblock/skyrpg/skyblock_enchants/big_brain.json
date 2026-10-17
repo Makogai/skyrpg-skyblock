@@ -1,0 +1,42 @@
+{
+ "name": "Big Brain",
+ "categories": [
+  "HELMET"
+ ],
+ "max": 5,
+ "xp": [
+  0,
+  0,
+  60,
+  80,
+  100
+ ],
+ "conflicts": [
+  "small_brain"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "3": {
+   "lore": [
+    "§7Grants §b+15Intelligence§7."
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §b+20Intelligence§7."
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §b+25Intelligence§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  }
+ }
+}

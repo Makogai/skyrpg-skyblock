@@ -1,0 +1,24 @@
+{
+ "name": "Piercing",
+ "categories": [
+  "BOW"
+ ],
+ "max": 1,
+ "xp": [
+  30
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Arrows travel through enemies.",
+    "§7The extra targets hit take §a25%",
+    "§7of the damage."
+   ],
+   "rarity": "COMMON",
+   "value": 25.0
+  }
+ }
+}

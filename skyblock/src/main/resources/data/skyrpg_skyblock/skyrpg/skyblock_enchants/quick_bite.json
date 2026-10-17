@@ -1,0 +1,59 @@
+{
+ "name": "Quick Bite",
+ "categories": [
+  "FISHING_ROD"
+ ],
+ "max": 5,
+ "xp": [
+  18,
+  23,
+  27,
+  36,
+  45
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Makes fish swim §a5% §7faster towards",
+    "§7your bobber."
+   ],
+   "rarity": "COMMON",
+   "value": 5.0
+  },
+  "2": {
+   "lore": [
+    "§7Makes fish swim §a10% §7faster towards",
+    "§7your bobber."
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "3": {
+   "lore": [
+    "§7Makes fish swim §a15% §7faster towards",
+    "§7your bobber."
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§7Makes fish swim §a20% §7faster towards",
+    "§7your bobber."
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§7Makes fish swim §a25% §7faster towards",
+    "§7your bobber."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  }
+ }
+}

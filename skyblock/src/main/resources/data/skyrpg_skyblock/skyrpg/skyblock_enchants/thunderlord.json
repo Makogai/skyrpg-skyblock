@@ -1,0 +1,91 @@
+{
+ "name": "Thunderlord",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 7,
+ "xp": [
+  20,
+  25,
+  30,
+  40,
+  50,
+  200,
+  0
+ ],
+ "conflicts": [
+  "thunderbolt",
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a8% §7of the hit's damage."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "2": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a16% §7of the hit's damage."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "3": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a24% §7of the hit's damage."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "4": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a32% §7of the hit's damage."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "5": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a40% §7of the hit's damage."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 3.0
+  },
+  "6": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a50% §7of the hit's damage."
+   ],
+   "rarity": "RARE",
+   "value": 3.0
+  },
+  "7": {
+   "lore": [
+    "§7Every §c3 §7hits on a monster,",
+    "§7strike §elightning§7, dealing",
+    "§a60% §7of the hit's damage."
+   ],
+   "rarity": "EPIC",
+   "value": 3.0
+  }
+ },
+ "table_max": 5
+}

@@ -1,0 +1,112 @@
+{
+ "name": "Hardened Vitality",
+ "categories": [
+  "BOOTS",
+  "CARNIVAL_MASK",
+  "CHESTPLATE",
+  "HELMET",
+  "LEGGINGS"
+ ],
+ "max": 10,
+ "xp": [
+  30,
+  45,
+  60,
+  75,
+  90,
+  180,
+  240,
+  300,
+  360,
+  420
+ ],
+ "conflicts": [
+  "ferocious_mana",
+  "mana_vampire",
+  "strong_mana"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Convert §a4% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "2": {
+   "lore": [
+    "§7Convert §a8% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "3": {
+   "lore": [
+    "§7Convert §a12% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "COMMON",
+   "value": 12.0
+  },
+  "4": {
+   "lore": [
+    "§7Convert §a16% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "COMMON",
+   "value": 16.0
+  },
+  "5": {
+   "lore": [
+    "§7Convert §a20% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 20.0
+  },
+  "6": {
+   "lore": [
+    "§7Convert §a24% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "RARE",
+   "value": 24.0
+  },
+  "7": {
+   "lore": [
+    "§7Convert §a28% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "EPIC",
+   "value": 28.0
+  },
+  "8": {
+   "lore": [
+    "§7Convert §a32% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "LEGENDARY",
+   "value": 32.0
+  },
+  "9": {
+   "lore": [
+    "§7Convert §a36% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "MYTHIC",
+   "value": 36.0
+  },
+  "10": {
+   "lore": [
+    "§7Convert §a40% §7of §4Vitality §7used as §a",
+    "§aDefense §7for §a10s§7. §8(Max 25Defense)."
+   ],
+   "rarity": "MYTHIC",
+   "value": 40.0
+  }
+ }
+}

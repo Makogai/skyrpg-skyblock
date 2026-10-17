@@ -3,15 +3,20 @@ title: Brainrots
 category: world
 order: 4
 icon: minecraft:note_block
-summary: Fifteen Italian brainrot creatures wander the survival world. Catch them all for your album and hear each one say its name.
+summary: Fifteen Italian brainrot creatures to catch for your album. They only appear in the old survival world, so they cannot be found in SkyBlock today.
 ---
-**Brainrots** are fifteen silly creatures that turn up on the surface of the survival world: Tung Tung Tung Sahur with his bat, Tralalero Tralala in his sneakers, Bombardiro Crocodilo circling overhead, and twelve more. Walk up to one and it shouts its own name. **Right-click it to catch it**, and it goes into your **album**, where you can look at it and hear it again whenever you like.
+**Brainrots** are fifteen silly creatures: Tung Tung Tung Sahur with his bat, Tralalero Tralala in his sneakers, Bombardiro Crocodilo circling overhead, and twelve more. Walk up to one and it shouts its own name. **Right-click it to catch it**, and it goes into your **album**, where you can look at it and hear it again whenever you like.
+
+> [!NOTE]
+> Brainrots only spawn in the old survival world, which is now an archive. In the Hub and on the islands none appear, so there is no way to catch one in SkyBlock today. The album, the catch cards and the leaderboard podium still exist; where brainrots will turn up in SkyBlock is not decided yet.
 
 ![All fifteen brainrots together](brainrots-lineup.png)
 
 ## Finding them
 
-- They appear **on the surface of the survival world**, 20 to 44 blocks from you, never in Skyhaven, caves or other dimensions.
+This is how they behave in the survival world, where they still spawn:
+
+- They appear **on the surface**, 20 to 44 blocks from you, never in caves or other dimensions.
 - They're not common: about **one every five or six minutes** while you're out exploring, and only **one near you at a time**. They don't stay long either: after **6 minutes** (or once you go far away) a brainrot vanishes in a puff.
 - Some like certain places (see the table) and are much more common there: beach brainrots on beaches, desert ones in deserts. **Cappuccino Assassino** mostly comes out at night, and **La Vaca Saturno Saturnita** comes out **only at night**.
 - When one is within **10 blocks** it says its name, with music notes over its head, so listen out.
@@ -40,7 +45,7 @@ Move or resize the card in the [HUD editor](hud-and-minimap#the-hud-editor) ("Br
 
 ## The leaderboard
 
-The top three brainrot collectors stand on a podium in [Skyhaven](skyhaven), on the lawn just south-east of spawn (around 12, 25), facing the plaza:
+The top three brainrot collectors stand on a podium in [the Hub](the-hub), on the lawn just south-east of spawn (around 12, 25), facing the plaza. Nobody can catch brainrots at the moment, so the ranking does not change:
 
 - Statues of them with their skins, **1st** on the gold pedestal in the middle, **2nd** on silver to its left and **3rd** on copper to its right. They turn their heads to watch you walk past, and #1 sparkles.
 - A plate on each pedestal shows their name, how many of the fifteen they've found, how many catches they've made in all, and how many kinds of each rarity they have, coloured by rarity.
@@ -50,7 +55,7 @@ Players who caught brainrots before the leaderboard existed are added the next t
 
 ## The album
 
-Press **J** (or open the [K menu](k-menu) and pick **Brainrots**) to open your album.
+Press **J** (or open the [menu](k-menu) and pick **Brainrots**) to open your album.
 
 ![The brainrot album](brainrots-album.png)
 
@@ -84,7 +89,7 @@ A brainrot with a favourite place can still turn up elsewhere, just less often. 
 
 ## See also
 
-- [The survival world](survival-world)
+- [The Hub](the-hub)
 - [K menu](k-menu)
 - [Controls and keys](controls-and-keys)
 - [Coins and the bank](coins-and-bank)

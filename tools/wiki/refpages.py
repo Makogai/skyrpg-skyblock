@@ -1,4 +1,4 @@
-"""Generates the reference pages (items, enchants, mobs, bosses, pets, mounts, collections, quests, prices, regions)."""
+"""Generates the reference pages (items, enchants, slayer bosses, collections, prices)."""
 import glob
 import os
 import re
@@ -308,15 +308,9 @@ class Ref:
         self.build_item_pages()
         self.item_detail = itempages.build(self)   # item id -> its own page id
         self.build_enchants()
-        self.build_mobs()
         self.build_bosses()
-        self.build_pets()
-        self.build_mounts()
         self.build_collections()
-        self.build_quests()
         self.build_prices()
-        self.build_regions()
-        self.build_max_level()
         for p in self.pages.values():
             self.uniq_anchors(p["blocks"])
 
@@ -341,127 +335,82 @@ class Ref:
         dmg = it["stats"].get("damage", 0)
         return (ORDINAL.get(it["rarity"], 9), dmg, it["tier"] or 0, it["name"])
 
+    SB_GROUPS = {
+        "items-weapons": ("Weapons", "Swords, longswords, bows and wands, from SkyBlock's own item data.", "minecraft:iron_sword",
+                          {"SWORD": "Swords", "LONGSWORD": "Longswords", "BOW": "Bows", "WAND": "Wands"}),
+        "items-armour": ("Armour", "Every helmet, chestplate, pair of leggings and pair of boots.", "minecraft:iron_chestplate",
+                         {"HELMET": "Helmets", "CHESTPLATE": "Chestplates", "LEGGINGS": "Leggings", "BOOTS": "Boots"}),
+        "items-accessories": ("Accessories", "Accessories and the equipment slots: necklaces, cloaks, belts, gloves and bracelets.",
+                              "minecraft:amethyst_shard",
+                              {"ACCESSORY": "Accessories", "NECKLACE": "Necklaces", "CLOAK": "Cloaks", "BELT": "Belts",
+                               "GLOVES": "Gloves", "BRACELET": "Bracelets"}),
+        "items-tools": ("Tools", "Pickaxes, drills, axes, farming tools, fishing rods and the other tools.", "minecraft:iron_pickaxe",
+                        {"PICKAXE": "Pickaxes", "DRILL": "Drills", "AXE": "Axes", "FARMING_TOOL": "Farming tools",
+                         "FISHING_ROD": "Fishing rods", "SPADE": "Spades", "SHEARS": "Shears", "CHISEL": "Chisels",
+                         "WATERING_CAN": "Watering cans", "VACUUM": "Vacuums", "LASSO": "Lassos", "FISHING_NET": "Fishing nets",
+                         "GAUNTLET": "Gauntlets"}),
+        "items-consumables": ("Consumables", "Items that are used up: potions of every kind, bait, boosters, arrows and scrolls.",
+                              "minecraft:bread",
+                              {"CONSUMABLE": "Consumables", "BAIT": "Bait", "BOOSTER": "Boosters", "ARROW": "Arrows",
+                               "ARROW_POISON": "Arrow poisons", "ABILITY_SCROLL": "Ability scrolls", "CAPSULE": "Capsules"}),
+    }
+
     def build_item_pages(self):
         g = self.g
         by_page = {}
         for it in g.items.values():
-            by_page.setdefault(g.item_page(it), []).append(it)
-        for pid, items in by_page.items():
-            for it in items:
-                self.item_page[it["id"]] = pid
-        self.page_weapons(by_page.get("items-weapons", []))
-        self.page_armour(by_page.get("items-armour", []))
-        self.page_tools(by_page.get("items-tools", []))
-        self.page_accessories(by_page.get("items-accessories", []))
-        self.page_grouped("items-materials", "Materials", "Crafting materials, drops, ores, trophies and currencies.",
-                          "minecraft:iron_ingot", by_page.get("items-materials", []),
-                          "What you gather, mine, catch and take from mobs and bosses, and what you craft from it.")
-        self.page_grouped("items-consumables", "Consumables", "Meals, bait, tomes and other items you use up.",
-                          "minecraft:bread", by_page.get("items-consumables", []),
-                          "Items that are used up when you eat, apply or cast them.")
-        self.page_grouped("items-other", "Other items", "Keys, seeds, saplings, backpacks, spawners and the rest.",
-                          "minecraft:barrel", by_page.get("items-other", []),
-                          "Items that are not gear, materials or consumables.")
+            pid = g.item_page(it)
+            self.item_page[it["id"]] = pid   # every item keeps its own page (and its group)
+            if it.get("skyblock"):           # the survival items are no longer listed on the reference pages
+                by_page.setdefault(pid, []).append(it)
+        for pid, (title, summary, icon, groups) in self.SB_GROUPS.items():
+            self.page_listing(pid, title, summary, icon, by_page.get(pid, []), groups, True,
+                              "Sorted by rarity. Select an item for its own page.")
+        mats = by_page.get("items-materials", [])
+        self.page_listing("items-materials", "Materials", "Crafting materials, drops, ores and everything without a category.",
+                          "minecraft:iron_ingot", mats, None, False,
+                          "Everything you gather, mine, catch and take from mobs, and what you craft from it. Grouped by rarity.")
+        other = by_page.get("items-other", [])
+        names = {}
+        for it in other:
+            names[it["category"]] = humanize(it["category"]).replace("Pet Item", "Pet items") if it.get("category") else "Other"
+        self.page_listing("items-other", "Other items", "Reforge stones, pet items, sacks, cosmetics, portals, travel scrolls and the rest.",
+                          "minecraft:barrel", other, {k: v if v.endswith("s") else v + "s" for k, v in names.items()}, False,
+                          "Items that are not gear, materials or consumables, grouped by their SkyBlock category.")
 
-    def cards(self, items):
-        return [self.item_card(it) for it in items]
-
-    def page_weapons(self, items):
-        blocks = [self.p(span("Every weapon in the game, from the weakest to the strongest. Damage is the weapon's base damage "
-                              "before Strength and critical hits."))]
-        groups = {}
-        for it in items:
-            groups.setdefault(it["rarity"], []).append(it)
-        for r in RARITY_ORDER:
-            if r in groups:
-                blocks.append(self.h2("%s weapons" % r.capitalize()))
-                blocks.extend(self.cards(sorted(groups[r], key=self.sort_key)))
-        self.add_page("items-weapons", "Weapons", "Every sword and wand with its damage, stats and abilities.",
-                      "minecraft:iron_sword", blocks)
-
-    def page_armour(self, items):
+    def listing_table(self, items, stats):
         g = self.g
-        blocks = [self.p(span("Armour comes in sets of four pieces. Wearing all four gives the set bonus. "
-                              "Each set is listed with its bonus, then its pieces from helmet to boots."))]
-        sets, loose = {}, []
+        rows = []
+        for it in sorted(items, key=lambda i: (ORDINAL.get(i["rarity"], 9), i["name"].lower())):
+            row = [[self.ispan(it["id"])], [span(it["rarity"].replace("_", " ").capitalize(), color=g.rarity_color(it["rarity"]))]]
+            if stats:
+                sids = sorted(it["stats"].keys(), key=self.stat_rank)[:4]
+                row.append([span(", ".join(" ".join(plain(self.stat_line(sk, it["stats"][sk])).split()) for sk in sids))])
+            price = g.prices.get(it["id"])
+            row.append([span("{:,}".format(int(price)) if price is not None else "")])
+            rows.append(row)
+        head = ["Item", "Rarity"] + (["Key stats"] if stats else []) + ["Sells for (coins)"]
+        return self.table(head, rows, ["l"] * (len(head) - 1) + ["r"])
+
+    def page_listing(self, pid, title, summary, icon, items, groups, stats, intro):
+        """A compact list page: one table per group (by Hypixel category, or by rarity when groups is None)."""
+        blocks = [self.p(span("%s %s" % (intro, "%d items." % len(items))))]
+        buckets = {}
         for it in items:
-            if it["set"]:
-                sets.setdefault(it["set"], []).append(it)
+            if groups is None:
+                key = it["rarity"]
             else:
-                loose.append(it)
-        slot_order = {"HELMET": 0, "CHESTPLATE": 1, "LEGGINGS": 2, "BOOTS": 3}
-
-        def set_key(sid):
-            pcs = sets[sid]
-            return (max(ORDINAL.get(p["rarity"], 9) for p in pcs), sum(p["stats"].get("defense", 0) for p in pcs), sid)
-
-        for sid in sorted(sets, key=set_key):
-            sd = g.item_sets.get(sid, {})
-            blocks.append(self.h2(sd.get("name") or humanize(sid.split(":")[1])))
-            bonus = sd.get("bonus")
-            if bonus:
-                desc = bonus.get("description", "")
-                stats = []
-                for sk, sv in (bonus.get("stats") or {}).items():
-                    st = g.stats.get(sk, {"name": humanize(sk), "percent": False})
-                    if st["name"].lower() not in desc.lower():
-                        stats.append("+%s%s %s" % (fmt_num(sv), "%" if st["percent"] else "", st["name"]))
-                text = "Set bonus (%d pieces): %s. %s%s" % (sd.get("pieces", 4), bonus.get("name", ""), desc,
-                                                          (" " + ", ".join(stats) + ".") if stats else "")
-                blocks.append(self.p(span(text.replace("..", "."), i=True)))
-            blocks.extend(self.cards(sorted(sets[sid], key=lambda p: slot_order.get(p["kind"], 9))))
-        if loose:
-            blocks.append(self.h2("Other armour"))
-            blocks.extend(self.cards(sorted(loose, key=self.sort_key)))
-        self.add_page("items-armour", "Armour", "Every armour set with its pieces, stats and set bonus.",
-                      "minecraft:iron_chestplate", blocks)
-
-    def page_tools(self, items):
-        def group(it):
-            k, t = it.get("kind"), it.get("type") or ""
-            if k == "PICKAXE" or t == "Pickaxe":
-                return "Pickaxes"
-            if k == "AXE" or t == "Axe":
-                return "Axes"
-            if k == "HOE" or t in ("Scythe", "Sickle", "Hoe"):
-                return "Hoes, sickles and scythes"
-            if k == "ROD" or t == "Fishing Rod":
-                return "Fishing rods"
-            return "Other tools"
-        order = ["Pickaxes", "Axes", "Hoes, sickles and scythes", "Fishing rods", "Other tools"]
-        groups = {}
-        for it in items:
-            groups.setdefault(group(it), []).append(it)
-        blocks = [self.p(span("Mining pickaxes, felling axes, farming tools and fishing rods, from the first tier to the last."))]
-        for name in order:
-            if name in groups:
-                blocks.append(self.h2(name))
-                blocks.extend(self.cards(sorted(groups[name], key=self.sort_key)))
-        self.add_page("items-tools", "Tools", "Pickaxes, axes, scythes and fishing rods by tier.", "minecraft:iron_pickaxe", blocks)
-
-    def page_accessories(self, items):
-        order = ["AMULET", "CLOAK", "BELT", "BRACERS"]
-        names = {"AMULET": "Amulets", "CLOAK": "Cloaks", "BELT": "Belts", "BRACERS": "Bracers"}
-        blocks = [self.p(span("Accessories go in their own slots: one each of amulet, cloak, belt and bracers."))]
+                key = it.get("category") or "OTHER"
+            buckets.setdefault(key, []).append(it)
+        if groups is None:
+            order = [r for r in RARITY_ORDER if r in buckets] + sorted(k for k in buckets if k not in RARITY_ORDER)
+            label = lambda k: "%s materials" % k.replace("_", " ").capitalize()
+        else:
+            order = [k for k in groups if k in buckets] + sorted(k for k in buckets if k not in groups)
+            label = lambda k: groups.get(k, humanize(k))
         for k in order:
-            grp = [it for it in items if it.get("kind") == k]
-            if grp:
-                blocks.append(self.h2(names[k]))
-                blocks.extend(self.cards(sorted(grp, key=self.sort_key)))
-        self.add_page("items-accessories", "Accessories", "Amulets, cloaks, belts and bracers.", "minecraft:amethyst_shard", blocks)
-
-    def page_grouped(self, pid, title, summary, icon, items, intro):
-        blocks = [self.p(span(intro))]
-        groups = {}
-        for it in items:
-            label = self.g.type_label(it) if (it.get("type") or it.get("kind")) else "Materials"
-            if it.get("kind") == "BACKPACK":
-                label = "Backpacks"
-            groups.setdefault(label, []).append(it)
-        for label in sorted(groups, key=lambda s: (-len(groups[s]) < -3, s)):
-            pl = label if label.endswith("s") else label + "s"
-            blocks.append(self.h2(pl))
-            blocks.extend(self.cards(sorted(groups[label], key=lambda it: (ORDINAL.get(it["rarity"], 9), it["name"]))))
+            blocks.append(self.h2("%s (%d)" % (label(k), len(buckets[k]))))
+            blocks.append(self.listing_table(buckets[k], stats))
         self.add_page(pid, title, summary, icon, blocks)
 
     # ------------------------------------------------------------------ enchants
@@ -508,242 +457,24 @@ class Ref:
         self.add_page("enchant-list", "Enchantments", "Every enchantment, what it applies to and what it does at its top level.",
                       "minecraft:enchanted_book", blocks)
 
-    # ------------------------------------------------------------------ mobs
-    def java_mob_docs(self):
-        docs = {}
-        for f in glob.glob(os.path.join(self.g.repo, "combat/src/main/java/com/skyrpg/combat/mob/*Mobs.java")):
-            text = read_text(f)
-            head = text.split("public final class")[0]
-            for m in re.finditer(r"<li>(.*?)</li>", head, re.S):
-                raw = re.sub(r"\s*\n\s*\*\s*", " ", m.group(1))
-                raw = re.sub(r"\{@code ([^}]*)\}", r"\1", raw)
-                raw = re.sub(r"\([^()]*\)", "", raw)   # drop "(see Foo)" and id notes
-                raw = re.sub(r"\s+", " ", raw).strip()
-                name, _, rest = raw.partition(":")
-                sentences = re.split(r"(?<=\.)\s+", rest.strip())
-                keep = [s for s in sentences if not re.search(r"world module|spawn egg|creative|No spawn egg|Spawn egg", s, re.I)]
-                docs[name.replace("The ", "").strip().lower()] = " ".join(keep).strip()
-        return docs
-
-    def entity_health(self, key):
-        cls = "".join(w.capitalize() for w in key.split("_")) + "Entity.java"
-        for f in glob.glob(os.path.join(self.g.repo, "combat/src/main/java/com/skyrpg/combat/mob", cls)):
-            m = re.search(r"MAX_HEALTH,\s*(\d+)", read_text(f))
-            if m:
-                return int(m.group(1))
-        return None
-
-    def entity_drops(self, ns, key):
-        out = []
-        for iid, srcs in self.g.loot_sources.items():
-            if ("entities", ns, key) in srcs and self.g.known_item(iid):
-                out.append(iid)
-        return out
-
-    def build_mobs(self):
-        g = self.g
-        docs = self.java_mob_docs()
-        boss_keys = {"grave_tyrant", "broodmother", "bone_marshal", "void_stalker", "iron_thane", "magma_tyrant", "ender_wyrm"}
-        mobs = []
-        for k, v in g.lang.items():
-            if k.startswith("entity.skyrpg_combat."):
-                key = k.split(".", 2)[2]
-                if key not in boss_keys:
-                    mobs.append((key, v))
-        blocks = [self.p(span("Monsters that belong to SkyRPG, on top of the vanilla ones. Every mob has a level that depends on how far "
-                              "you are from spawn and how deep you are, and more levels mean more health and damage. "
-                              "Bosses are on the "), span("Bosses", link="boss-list"), span(" page."))]
-        for key, name in mobs:
-            blocks.append(self.h3(name))
-            desc = docs.get(name.lower(), "")
-            if desc:
-                blocks.append(self.p(span(desc)))
-            facts = []
-            hp = self.entity_health(key)
-            if hp:
-                facts.append([span("Base health: "), span("%d" % hp, color=None), span(" (vanilla points, before level scaling)")])
-            drops = self.entity_drops("skyrpg_combat", key)
-            if drops:
-                facts.append([span("Drops: ")] + self.item_list_spans([(d, 1) for d in drops]))
-            if facts:
-                blocks.append(self.ul(facts))
-        sea = g.read_dir("sea_creatures")
-        if sea:
-            blocks.append(self.h2("Sea creatures"))
-            blocks.append(self.p(span("Fishing sometimes pulls up a sea creature instead of a fish. Sea Creature Chance sets how often. "
-                                      "Each one drops Tidescales and gives Fishing XP when it is killed. Lava creatures bite in the Nether's lava, "
-                                      "with a Magmaline Rod."), span("")))
-            rows = []
-            for k, c in sorted(sea.items(), key=lambda kv: (kv[1].get("level", 0), kv[0])):
-                rows.append([[span(c.get("name", humanize(k.split(":")[1])), b=True)], [span(str(c.get("level", 0)))],
-                             [span("Lava" if c.get("fluid") == "lava" else "Water")], [span(g.entity_name(c.get("entity", "minecraft:zombie")))],
-                             [span("{:,}".format(c.get("xp", 0)))], [span(str(c.get("scales", 1)))]])
-            blocks.append(self.table(["Creature", "Level", "Fished from", "Looks like", "Fishing XP", "Tidescales"], rows,
-                                     ["l", "r", "l", "l", "r", "r"]))
-        self.add_page("mob-list", "Mobs", "Every SkyRPG monster, where it lives and what it drops.", "minecraft:bone", blocks)
-
-    # ------------------------------------------------------------------ bosses
-    def move_names(self, moves):
-        seen = []
-        for m in moves:
-            t = m.get("type")
-            if t and t not in seen:
-                seen.append(t)
-        return ", ".join(humanize(t) for t in seen)
-
-    def boss_loot(self, ns, key):
-        out = []
-        for iid, srcs in self.g.loot_sources.items():
-            if ("bosses", ns, key) in srcs or ("rewards", ns, key) in srcs:
-                if self.g.known_item(iid):
-                    out.append(iid)
-        return out
-
+    # ------------------------------------------------------------------ bosses (slayer bosses only)
     def build_bosses(self):
-        g = self.g
-        blocks = [self.p(span("Dungeon bosses, world bosses and slayer bosses. Health and damage here are the boss's own base values; "
-                              "more players in a dungeon make its health grow."))]
-        # dungeon bosses
-        dpage = {}
-        for k, d in self.dungeons.items():
-            dpage[k] = k.split(":", 1)[1].replace("_", "-")
-        by_dungeon = []
-        for k, b in sorted(self.dungeon_bosses.items(), key=lambda kv: (kv[1].get("level", 0), kv[0])):
-            by_dungeon.append((k, b))
-        blocks.append(self.h2("Dungeon bosses"))
-        for k, b in by_dungeon:
-            ns, key = k.split(":", 1)
-            blocks.append(self.h3(b.get("name", humanize(key))))
-            facts = []
-            dg = b.get("dungeon")
-            if dg and dg in self.dungeons:
-                dname = self.dungeons[dg].get("name", humanize(dg))
-                pid = dpage[dg]
-                facts.append([span("Dungeon: "), span(dname, link=pid if pid in LISTED_IDS else None)])
-            if b.get("level"):
-                facts.append([span("Level %s" % b["level"])])
-            if b.get("health"):
-                facts.append([span("Health: %s, damage: %s" % ("{:,}".format(b["health"]), fmt_num(b.get("damage", 0))))])
-            if b.get("coins"):
-                c = b["coins"]
-                facts.append([span("Coins: %s to %s" % ("{:,}".format(c[0]), "{:,}".format(c[-1])))])
-            if b.get("first_clear"):
-                fc = b["first_clear"]
-                facts.append([span("First clear: %s" % coins(fc.get("coins", 0)))])
-            if b.get("moves"):
-                facts.append([span("Moves: " + self.move_names(b["moves"]))])
-            drops = self.boss_loot(ns, key)
-            if drops:
-                facts.append([span("Loot: ")] + self.item_list_spans([(d, 1) for d in drops]))
-            blocks.append(self.ul(facts))
-        # world bosses
-        blocks.append(self.h2("World bosses"))
-        for key, b in sorted(self.world_bosses.items(), key=lambda kv: kv[1].get("level", 0)):
-            blocks.append(self.h3(b.get("name", humanize(key))))
-            facts = [[span("Level %s, health %s, damage %s" % (b.get("level", "?"), "{:,}".format(b.get("health", 0)),
-                                                              fmt_num(b.get("damage", 0))))]]
-            if b.get("coins"):
-                facts.append([span("Coins: %s to %s" % ("{:,}".format(b["coins"][0]), "{:,}".format(b["coins"][-1])))])
-            if b.get("combat_xp"):
-                facts.append([span("Combat XP: %s" % b["combat_xp"])])
-            if b.get("valor_seals"):
-                facts.append([span("Valor Seals: %d to %d" % (b["valor_seals"][0], b["valor_seals"][-1]))])
-            if b.get("rare"):
-                facts.append([span("Rare drop (%s%%): " % fmt_num(b.get("rare_chance", 0) * 100)), self.ispan(b["rare"])])
-            if b.get("bonus"):
-                facts.append([span("Bonus drop (%s%%): " % fmt_num(b.get("bonus_chance", 0) * 100)), self.ispan(b["bonus"])])
-            blocks.append(self.ul(facts))
-        # slayers
-        blocks.append(self.h2("Slayer bosses"))
-        blocks.append(self.p(span("Slayer quests are bought from the Slayer Master. Kill enough of the listed mobs, then fight the boss. "
-                                  "Higher tiers need a higher slayer level.")))
+        blocks = [self.p(span("The four slayer bosses. Slayer quests are bought from Maddox the Slayer in the Hub. Kill enough of the listed "
+                              "mobs, then fight the boss. Higher tiers need a higher slayer level or a lower tier cleared first. "
+                              "Full details are on the "), span("Slayers", link="slayers"), span(" page."))]
         for key, sl in sorted(self.slayers.items(), key=lambda kv: kv[1].get("order", 0)):
-            blocks.append(self.h3(sl.get("name", humanize(key))))
+            blocks.append(self.h2(sl.get("name", humanize(key))))
             if sl.get("counts_text"):
                 blocks.append(self.p(span("Counts kills of: " + sl["counts_text"] + ".")))
             rows = []
             for i, t in enumerate(sl.get("tiers", [])):
                 rows.append([[span(roman(i + 1))], [span("{:,}".format(t.get("fee", 0)))], [span("{:,}".format(t.get("xp", 0)))],
-                             [span("{:,}".format(t.get("health", 0)))], [span(str(t.get("level", "")))],
-                             [span(str(t.get("slayer_xp", "")))], [span(str(t.get("requires", 0)))]])
-            blocks.append(self.table(["Tier", "Fee (coins)", "Kills XP", "Boss health", "Level", "Slayer XP", "Needs slayer level"],
+                             [span("{:,}".format(int(t.get("health", 0))))], [span(fmt_num(t.get("damage", 0)))],
+                             [span(str(t.get("slayer_xp", "")))], [span(fmt_num(t.get("combat_xp", 0)))]])
+            blocks.append(self.table(["Tier", "Fee (coins)", "Kills needed (XP)", "Boss health", "Damage", "Slayer XP", "Combat XP"],
                                      rows, ["c", "r", "r", "r", "r", "r", "r"]))
-            facts = []
-            if sl.get("token"):
-                facts.append([span("Token: "), self.ispan(sl["token"])])
-            if sl.get("rare"):
-                facts.append([span("Rare drop: "), self.ispan(sl["rare"])])
-            if facts:
-                blocks.append(self.ul(facts))
-        # other
-        blocks.append(self.h2("Other bosses"))
-        blocks.append(self.ul([[span("Ender Wyrm: the final boss, a flying serpent in the End. Base health 1,024 (vanilla points). "
-                                     "See "), span("The Ender Wyrm", link="ender-wyrm"), span(".")]]))
-        self.add_page("boss-list", "Bosses", "Dungeon, world and slayer bosses with levels, health, moves and loot.",
+        self.add_page("boss-list", "Bosses", "The slayer bosses with their tiers, fees, health and rewards.",
                       "minecraft:netherite_sword", blocks)
-
-    # ------------------------------------------------------------------ pets
-    def build_pets(self):
-        g = self.g
-        src = read_text(os.path.join(g.repo, "pets/src/main/java/com/skyrpg/pets/PetType.java"))
-        # simpler, robust parse of the pet constants
-        entries = re.findall(r'(MOLE|BEE|OWL|PUP|OTTER|JACK)\("([^"]+)",\s*SkillLevels\.(\w+),\s*StatTypes\.(\w+),\s*([\d.]+),\s*StatTypes\.(\w+),\s*([\d.]+),', src)
-        texts = re.findall(r'\),\s*"([^"]+)",\s*\n\s*Map\.of\([^\n]*\),\s*"([^"]+)"', src)
-        rsrc = read_text(os.path.join(g.repo, "pets/src/main/java/com/skyrpg/pets/PetRarity.java"))
-        rar = re.findall(r"(COMMON|UNCOMMON|RARE|EPIC|LEGENDARY)\(([\d.]+),\s*ChatFormatting\.\w+,\s*(\d+)\)", rsrc)
-        blocks = [self.p(span("Each skill has one pet. A pet gains XP from its skill, and its stats grow with its level. "
-                              "Eggs hatch into a pet of random rarity, and a better rarity gives more stats per level. "
-                              "Pets unlock a perk at level 25 and a second at level 50. The Jack o'Lantern has no egg: "
-                              "it only comes from the Hallow's Crate, as an Epic or a Legendary."))]
-        blocks.append(self.h2("Pets"))
-        rows = []
-        for i, (cid, name, skill, s1, v1, s2, v2) in enumerate(entries):
-            sid1, sid2 = s1.lower(), s2.lower()
-            nm1 = g.stats.get(sid1, {}).get("name", humanize(sid1))
-            nm2 = g.stats.get(sid2, {}).get("name", humanize(sid2))
-            pet_item = "skyrpg_pets:%s_pet" % cid.lower()
-            p25, p50 = texts[i] if i < len(texts) else ("", "")
-            rows.append([[self.ispan(pet_item, name)], [span(skill.capitalize())],
-                         [span("%s +%s, %s +%s" % (nm1, v1.rstrip("0").rstrip(".") if "." in v1 else v1, nm2,
-                                                  v2.rstrip("0").rstrip(".") if "." in v2 else v2))],
-                         [span(p25)], [span(p50)]])
-        blocks.append(self.table(["Pet", "Skill", "Stats per level (Common)", "Level 25 perk", "Level 50 perk"], rows, ["l"] * 5))
-        blocks.append(self.h2("Rarities"))
-        total = sum(int(w) for _, _, w in rar) or 1
-        rrows = []
-        for name, mult, w in rar:
-            color = g.rarity_color(name.lower())
-            rrows.append([[span(name.capitalize(), color=color, b=True)], [span("x" + mult)], [span("%s%%" % fmt_num(int(w) * 100.0 / total))]])
-        blocks.append(self.table(["Rarity", "Stat multiplier", "Hatch chance"], rrows, ["l", "r", "r"]))
-        blocks.append(self.p(span("Golden Pet Eggs skip Common and Uncommon. Hatch chances are for ordinary eggs.", i=True)))
-        eggs = [i for i in g.items.values() if i["path"].endswith("_egg")]
-        if eggs:
-            blocks.append(self.h2("Eggs"))
-            blocks.append(self.p(*sum([[self.ispan(e["id"]), span("   ")] for e in sorted(eggs, key=lambda e: e["name"])], [])))
-        self.add_page("pet-list", "Pets", "Every pet, their stats per level, perks and rarities.", "skyrpg_pets:mole_pet", blocks)
-
-    # ------------------------------------------------------------------ mounts
-    def build_mounts(self):
-        g = self.g
-        src = read_text(os.path.join(g.repo, "mounts/src/main/java/com/skyrpg/mounts/GriffinColor.java"))
-        rsrc = read_text(os.path.join(g.repo, "mounts/src/main/java/com/skyrpg/mounts/GriffinRarity.java"))
-        weights = {m.group(1).lower(): float(m.group(2)) for m in re.finditer(r"(COMMON|UNCOMMON|RARE|LEGENDARY)\(ChatFormatting\.\w+,\s*([\d.]+)\)", rsrc)}
-        colors = re.findall(r'(\w+)\("(\w+)",\s*0x([0-9A-Fa-f]{6}),\s*GriffinRarity\.(\w+)\)', src)
-        total = sum(weights[c[3].lower()] for c in colors) or 1
-        blocks = [self.p(span("The only mount is the griffin. Wild griffins nest on the floating islands; tame one and it becomes a "
-                              "Griffin Whistle in your mount stable. A griffin runs on the ground and flies when you jump and keep "
-                              "moving. Each has a speed bonus and a flight stamina bonus."))]
-        blocks.append(self.h2("Griffin colours"))
-        rows = []
-        for cid, label, rgb, rar in colors:
-            r = rar.lower()
-            rows.append([[span(label, color=g.rarity_color(r) if r != "common" else "#" + rgb.upper(), b=True)],
-                         [span(r.capitalize(), color=g.rarity_color(r))],
-                         [span("%s%%" % fmt_num(weights[r] * 100.0 / total))]])
-        blocks.append(self.table(["Colour", "Rarity", "Chance for a wild griffin"], rows, ["l", "l", "r"]))
-        blocks.append(self.p(span("Speed bonus goes up to +15% and flight stamina bonus up to +25%.")))
-        blocks.append(self.p(self.ispan("skyrpg_mounts:griffin_whistle")))
-        self.add_page("mount-list", "Mounts", "Griffin colours, rarities and their wild spawn chances.", "skyrpg_mounts:griffin_whistle", blocks)
 
     # ------------------------------------------------------------------ collections
     def build_collections(self):
@@ -752,291 +483,50 @@ class Ref:
         cats = {}
         for k, c in cols.items():
             cats.setdefault(c.get("category", "other"), []).append((k, c))
-        blocks = [self.p(span("A collection counts everything of one kind you gather. Each tier gives coins and XP, and some give stats. "
-                              "Amounts are the totals needed for each tier."))]
+        blocks = [self.p(span("Hypixel SkyBlock's collections. A collection counts everything of one kind you gather. "
+                              "Each tier lists the amount needed and what it unlocks."))]
         for cat in sorted(cats):
             blocks.append(self.h2(humanize(cat)))
-            rows = []
             for k, c in sorted(cats[cat], key=lambda kv: kv[1].get("name", "")):
                 items = c.get("items", [])
                 icon = c.get("icon") or (items[0] if items else None)
                 name = c.get("name", humanize(k.split(":")[1]))
-                first = [self.ispan(icon, name)] if icon and g.known_item(icon) else [span(name)]
+                blocks.append(self.h3(name))
                 tiers = c.get("tiers", [])
-                total_coins = sum(t.get("coins", 0) for t in tiers)
-                stats = {}
-                for t in tiers:
+                th = c.get("thresholds", [])
+                rows = []
+                for i, amount in enumerate(th):
+                    t = tiers[i] if i < len(tiers) else {}
+                    parts = list(t.get("unlocks") or [])
+                    if t.get("coins"):
+                        parts.append(coins(t["coins"]))
                     for sk, sv in (t.get("stats") or {}).items():
-                        stats[sk] = stats.get(sk, 0) + sv
-                stat_txt = ", ".join("%s +%s" % (g.stats.get(sk, {}).get("name", humanize(sk)), fmt_num(sv)) for sk, sv in stats.items())
-                rewards = "%s" % coins(total_coins)
-                if stat_txt:
-                    rewards += "; " + stat_txt
-                rows.append([first, [span(", ".join("{:,}".format(x) for x in c.get("thresholds", [])))], [span(rewards)]])
-            blocks.append(self.table(["Collection", "Tier amounts", "Rewards for all tiers"], rows, ["l", "l", "l"]))
-        self.add_page("collection-list", "Collections", "Every collection with its tier amounts and rewards.",
+                        parts.append("%s +%s" % (g.stats.get(sk, {}).get("name", humanize(sk)), fmt_num(sv)))
+                    rows.append([[span(roman(i + 1))], [span("{:,}".format(amount))], [span("; ".join(parts))]])
+                has_unlocks = any(r[2][0]["x"] for r in rows)
+                if has_unlocks:
+                    blocks.append(self.table(["Tier", "Amount", "Unlocks"], rows, ["c", "r", "l"]))
+                else:
+                    blocks.append(self.table(["Tier", "Amount"], [r[:2] for r in rows], ["c", "r"]))
+        self.add_page("collection-list", "Collections", "Every collection with its tier amounts and what each tier unlocks.",
                       "minecraft:writable_book", blocks)
-
-    # ------------------------------------------------------------------ quests
-    def build_quests(self):
-        g = self.g
-        chapters = {}
-        quests = {}
-        for k, q in self.quests.items():
-            rel = k.split(":", 1)[1]
-            chap, _, name = rel.partition("/")
-            if name == "_chapter":
-                chapters[chap] = q
-            else:
-                quests.setdefault(chap, []).append((name, q))
-        blocks = [self.p(span("The story quests, in chapter order. Open the quest journal with "), span("J", c=True),
-                         span(" in game (or from the K menu) to follow them."))]
-        for chap in sorted(quests):
-            ch = chapters.get(chap, {})
-            blocks.append(self.h2(ch.get("title", humanize(chap.split("_", 1)[-1]))))
-            if ch.get("description"):
-                blocks.append(self.p(span(ch["description"])))
-            rows = []
-            for name, q in sorted(quests[chap], key=lambda nq: (nq[1].get("order", 0), nq[0])):
-                giver = (q.get("giver") or {}).get("name", "")
-                objs = "; ".join(o.get("label", o.get("type", "")) for o in q.get("objectives", []))
-                rw = q.get("rewards") or {}
-                parts = []
-                if rw.get("coins"):
-                    parts.append(coins(rw["coins"]))
-                if rw.get("xp"):
-                    parts.append("%s XP" % rw["xp"])
-                rcell = [span(", ".join(parts))]
-                its = []
-                for r in rw.get("items", []) or []:
-                    iid = r.get("item") if isinstance(r, dict) else r
-                    n = r.get("count", 1) if isinstance(r, dict) else 1
-                    if isinstance(iid, str) and g.known_item(iid):
-                        its.append((iid, n))
-                if its:
-                    rcell.append(span("; " if parts else ""))
-                    rcell.extend(self.item_list_spans(its))
-                rows.append([[span(q.get("title", name), b=True)], [span(giver)], [span(objs or q.get("description", ""))], rcell])
-            blocks.append(self.table(["Quest", "Given by", "What to do", "Rewards"], rows, ["l"] * 4))
-        self.add_page("quest-list", "Quests", "Every story quest by chapter, with objectives and rewards.", "minecraft:map", blocks)
 
     # ------------------------------------------------------------------ sell prices
     def build_prices(self):
         g = self.g
-        custom, vanilla = [], []
-        for iid, price in g.prices.items():
-            (vanilla if iid.startswith("minecraft:") else custom).append((iid, price))
-        blocks = [self.p(span("What the shops pay for each item. Prices are per item; selling a stack pays for every item in it. "
-                              "Some shopkeepers only buy certain goods, see "), span("Selling and shops", link="selling-and-shops"), span("."))]
-        for title, lst in (("SkyRPG items", custom), ("Vanilla items", vanilla)):
-            rows = []
-            for iid, price in sorted(lst, key=lambda x: ((g.name_of(x[0]) or x[0]).lower())):
-                if not g.known_item(iid):
-                    continue
-                rows.append([[self.ispan(iid)], [span("{:,}".format(price), color=None)]])
-            if rows:
-                blocks.append(self.h2(title))
-                blocks.append(self.table(["Item", "Sells for (coins)"], rows, ["l", "r"]))
-        self.add_page("sell-prices", "Sell prices", "What shops pay for every item, SkyRPG and vanilla.", "minecraft:gold_nugget", blocks)
-
-    # ------------------------------------------------------------------ the maximum SkyRPG Level
-    @staticmethod
-    def champion_xp(level):
-        """Mirrors SkyRpgLevel.dungeonClearXp."""
-        for limit, xp in ((25, 20), (40, 30), (52, 40), (62, 50)):
-            if level < limit:
-                return xp
-        return 60
-
-    def compute_max_xp(self):
-        """Adds up every SkyRPG XP source from the data files (mirrors SkyRpgLevel and its callers)."""
-        g = self.g
-        res = {}
-        # skills: every skill fires LEVEL_UP once per level, 5 XP each
-        skills = []
-        for k, d in sorted(g.skills.items(), key=lambda kv: (kv[1].get("order", 99), kv[0])):
-            skills.append((d.get("name", humanize(k.split(":")[1])), len(d.get("levels", []))))
-        res["skills"] = skills
-        # slayer lines: 10 XP per level; the level count is the length of the "levels" list
-        slayers = []
-        for k, d in sorted(self.slayers.items(), key=lambda kv: (kv[1].get("order", 99), kv[0])):
-            slayers.append((d.get("name", humanize(k)), len(d.get("levels", []))))
-        res["slayers"] = slayers
-        # collections: one grant per threshold; a tier's own "xp" overrides the default of 4
-        cols = g.read_dir("collections")
-        col_tiers = 0
-        col_xp = 0
-        for k, c in cols.items():
-            tiers = c.get("tiers", [])
-            for i in range(len(c.get("thresholds", []))):
-                col_tiers += 1
-                col_xp += tiers[i].get("xp", 4) if i < len(tiers) else 4
-        res["collections"] = (len(cols), col_tiers, col_xp)
-        # bosses: first kill of each boss id, once per id
-        bosses = []
-        for k, b in sorted(self.dungeon_bosses.items(), key=lambda kv: (kv[1].get("level", 0), kv[0])):
-            name = b.get("name", humanize(k.split(":")[1]))
-            tier = b.get("tier", "boss")
-            if tier == "champion":
-                bosses.append((name, "Dungeon champion", b.get("level", 0), self.champion_xp(b.get("level", 0)), b.get("dungeon")))
-            elif tier == "region":
-                bosses.append((name, "Region boss", b.get("level", 0), 15, None))
-            else:
-                bosses.append((name, "Dungeon boss", b.get("level", 0), 15, b.get("dungeon")))
-        for k, b in sorted(self.world_bosses.items(), key=lambda kv: kv[1].get("level", 0)):
-            bosses.append((b.get("name", humanize(k)), "World boss", b.get("level", 0), 15, None))
-        # the Ender Wyrm is defined in code, not data: EnderWyrmEntity reports every participant's kill as a level-100
-        # world boss (BossKills.Kind.WORLD_BOSS), so its first kill pays 15 like the others
-        bosses.append(("The Ender Wyrm", "World boss", 100, 15, None))
-        res["bosses"] = bosses
-        # quests
-        chapters, per_chapter = {}, {}
-        for k, q in self.quests.items():
-            chap, _, name = k.split(":", 1)[1].partition("/")
-            if name == "_chapter":
-                chapters[chap] = q
+        blocks = [self.p(span("What NPC shops pay for SkyBlock items, from Hypixel's data. Prices are per item; selling a stack pays for "
+                              "every item in it. Items without a price cannot be sold to an NPC."))]
+        groups = {}
+        for it in g.items.values():
+            price = g.prices.get(it["id"])
+            if it.get("skyblock") and price is not None:
+                groups.setdefault(self.item_page[it["id"]], []).append((it, price))
+        for pid in ("items-weapons", "items-armour", "items-accessories", "items-tools", "items-consumables", "items-materials", "items-other"):
+            lst = groups.get(pid)
+            if not lst:
                 continue
-            row = per_chapter.setdefault(chap, [0, 0])
-            row[0] += 1
-            row[1] += (q.get("rewards") or {}).get("xp", 0) or 0
-        qrows = []
-        for chap in sorted(per_chapter):
-            title = chapters.get(chap, {}).get("title", humanize(chap.split("_", 1)[-1]))
-            qrows.append((title, per_chapter[chap][0], per_chapter[chap][1]))
-        res["quests"] = qrows
-        res["quest_count"] = sum(r[1] for r in qrows)
-        res["quest_xp"] = sum(r[2] for r in qrows)
-        res["skill_xp"] = 5 * sum(n for _, n in skills)
-        res["slayer_xp"] = 10 * sum(n for _, n in slayers)
-        res["collection_xp"] = col_xp
-        res["boss_xp"] = sum(b[3] for b in bosses)
-        res["total"] = res["skill_xp"] + res["slayer_xp"] + col_xp + res["boss_xp"] + res["quest_xp"]
-        res["level"] = res["total"] // 100
-        res["left"] = res["total"] % 100
-        return res
-
-    def build_max_level(self):
-        r = self.max_xp = self.compute_max_xp()
-
-        def n(v):
-            return "{:,}".format(v)
-
-        total = r["total"] or 1
-
-        def pct(v):
-            return "%s%%" % fmt_num(round(v * 100.0 / total, 1))
-        blocks = [self.p(span("The highest SkyRPG Level a player can reach is "), span("level %s" % n(r["level"]), b=True),
-                         span(", with %s SkyRPG XP in all. " % n(r["total"])),
-                         span("This page is worked out from the game's data files each time the wiki is built, so it follows every change to quests, "
-                              "collections, skills, slayers and bosses."))]
-        blocks.append(self.p(span("The level has no cap in the game, but every source of XP is finite. "
-                                  "With all of it collected, %s XP is left over towards level %s. "
-                                  "More content later means a higher maximum." % (r["left"], n(r["level"] + 1)))))
-        ncol, ntier, colxp = r["collections"]
-        nsk = sum(x for _, x in r["skills"])
-        nsl = sum(x for _, x in r["slayers"])
-        boss_kinds = {}
-        for b in r["bosses"]:
-            boss_kinds.setdefault(b[1], []).append(b[3])
-        blocks.append(self.h2("By source"))
-        rows = []
-
-        def row(label, count, each, xp):
-            rows.append([[span(label)], [span(n(count))], [span(each)], [span(n(xp))], [span(pct(xp))]])
-        row("Quests", r["quest_count"], "varies", r["quest_xp"])
-        row("Collection tiers (%d collections)" % ncol, ntier, "4", colxp)
-        row("Skill levels (%d skills)" % len(r["skills"]), nsk, "5", r["skill_xp"])
-        row("Slayer levels (%d lines)" % len(r["slayers"]), nsl, "10", r["slayer_xp"])
-        for kind in ("Dungeon champion", "Dungeon boss", "Region boss", "World boss"):
-            xs = boss_kinds.get(kind)
-            if xs:
-                each = "%d" % xs[0] if len(set(xs)) == 1 else "%d to %d" % (min(xs), max(xs))
-                row("First kill: %s" % kind.lower(), len(xs), each, sum(xs))
-        rows.append([[span("Total", b=True)], [span("")], [span("")], [span(n(r["total"]), b=True)], [span("100%")]])
-        blocks.append(self.table(["Source", "How many", "XP each", "XP in all", "Share"], rows, ["l", "r", "r", "r", "r"]))
-        blocks.append(self.p(span("%s XP at 100 XP a level is level %s, with %s XP left over." % (n(r["total"]), n(r["level"]), r["left"]))))
-
-        blocks.append(self.h2("Skills"))
-        blocks.append(self.p(span("Each skill level gives 5 XP. Enchanting and Delving count like the others.")))
-        srows = [[[span(nm)], [span(str(lv))], [span(n(lv * 5))]] for nm, lv in r["skills"]]
-        srows.append([[span("All skills", b=True)], [span(str(nsk), b=True)], [span(n(r["skill_xp"]), b=True)]])
-        blocks.append(self.table(["Skill", "Max level", "XP"], srows, ["l", "r", "r"]))
-
-        blocks.append(self.h2("Slayers"))
-        blocks.append(self.p(span("Each slayer level gives 10 XP, twice a skill level.")))
-        lrows = [[[span(nm)], [span(str(lv))], [span(n(lv * 10))]] for nm, lv in r["slayers"]]
-        lrows.append([[span("All slayers", b=True)], [span(str(nsl), b=True)], [span(n(r["slayer_xp"]), b=True)]])
-        blocks.append(self.table(["Slayer", "Max level", "XP"], lrows, ["l", "r", "r"]))
-
-        blocks.append(self.h2("Collections"))
-        blocks.append(self.p(span("There are %d collections with %d tiers in all. A tier gives 4 XP unless its data says otherwise, "
-                                  "which makes %s XP. The tiers are listed on the " % (ncol, ntier, n(colxp))),
-                             span("Collections", link="collection-list"), span(" page.")))
-
-        blocks.append(self.h2("Bosses"))
-        blocks.append(self.p(span("The first kill of each boss pays XP once. A dungeon champion pays 20, 30, 40, 50 or 60 by its level "
-                                  "(below 25, 40, 52 and 62, then 62 and up). Every other boss pays 15. "
-                                  "A boss that exists as several mobs, like the Bone Warden, counts once. "
-                                  "Everyone who takes part in an Ender Wyrm fight gets its first kill. "
-                                  "Slayer bosses give no first-kill XP. See "),
-                             span("Bosses", link="boss-list"), span(".")))
-        brows = []
-        for nm, kind, lv, xp, dg in r["bosses"]:
-            where = ""
-            if dg and dg in self.dungeons:
-                where = self.dungeons[dg].get("name", humanize(dg.split(":")[1]))
-            brows.append([[span(nm)], [span(kind)], [span(str(lv))], [span(where)], [span(str(xp))]])
-        brows.append([[span("All bosses (%d)" % len(r["bosses"]), b=True)], [span("")], [span("")], [span("")],
-                      [span(n(r["boss_xp"]), b=True)]])
-        blocks.append(self.table(["Boss", "Kind", "Level", "Dungeon", "XP"], brows, ["l", "l", "r", "l", "r"]))
-
-        blocks.append(self.h2("Quests"))
-        blocks.append(self.p(span("The %d story quests pay %s SkyRPG XP in all, %s of the total. See "
-                                  % (r["quest_count"], n(r["quest_xp"]), pct(r["quest_xp"]))),
-                             span("Quests", link="quest-list"), span(".")))
-        qrows = [[[span(t)], [span(str(c))], [span(n(x))]] for t, c, x in r["quests"]]
-        qrows.append([[span("All quests", b=True)], [span(str(r["quest_count"]), b=True)], [span(n(r["quest_xp"]), b=True)]])
-        blocks.append(self.table(["Chapter", "Quests", "XP"], qrows, ["l", "r", "r"]))
-
-        blocks.append(self.h2("What is not counted"))
-        blocks.append(self.ul([
-            [span("Anything you can repeat gives no XP: killing a boss again, redoing a dungeon, or doing a quest a second time.")],
-            [span("Slayer boss kills give no first-kill XP. Slayer XP comes only from slayer levels.")],
-            [span("Contracts and events give no SkyRPG XP directly, and neither does the admin command /skyrpglevel.")],
-            [span("The coins paid at every 10th level are not XP.")],
-        ]))
-        self.add_page("skyrpg-level-max", "SkyRPG Level: the maximum",
-                      "The highest SkyRPG Level you can reach with everything in the game today: level %d (%s XP). "
-                      "The level has no hard cap, but every XP source is finite." % (r["level"], n(r["total"])),
-                      "minecraft:nether_star", blocks)
-
-    # ------------------------------------------------------------------ danger regions
-    def build_regions(self):
-        g = self.g
-        blocks = [self.p(span("Danger regions are patches of the survival world that spawn tougher mobs and drop special loot. "
-                              "Each has a boss and a sigil. Danger runs from 1 (mild) to 5."))]
-        for key, rg in sorted(self.regions.items(), key=lambda kv: (kv[1].get("danger", 0), kv[0])):
-            blocks.append(self.h2(rg.get("name", humanize(key))))
-            if rg.get("description"):
-                blocks.append(self.p(span(rg["description"])))
-            facts = [[span("Danger: %s, mob level bonus: +%s" % (rg.get("danger", "?"), rg.get("level_bonus", 0)))]]
-            mobs = []
-            for m in rg.get("mobs", []):
-                nm = m.get("name") or g.entity_name(m["type"])
-                if nm not in mobs:
-                    mobs.append(nm)
-            if mobs:
-                facts.append([span("Mobs: " + ", ".join(mobs))])
-            drops = rg.get("drops", [])
-            dl = []
-            for d in drops:
-                if g.known_item(d["item"]):
-                    dl.append((d["item"], 1))
-            if dl:
-                facts.append([span("Drops: ")] + self.item_list_spans(dl))
-            if rg.get("boss") in self.boss_names:
-                facts.append([span("Boss: %s" % self.boss_names[rg["boss"]])])
-            if rg.get("sigil") and g.known_item(rg["sigil"]):
-                facts.append([span("Sigil: "), self.ispan(rg["sigil"])])
-            blocks.append(self.ul(facts))
-        self.add_page("region-list", "Danger regions", "The six danger regions, their mobs, drops and bosses.", "minecraft:wither_rose", blocks)
+            blocks.append(self.h2(self.pages[pid]["title"]))
+            rows = [[[self.ispan(it["id"])], [span("{:,}".format(int(price)))]]
+                    for it, price in sorted(lst, key=lambda x: x[0]["name"].lower())]
+            blocks.append(self.table(["Item", "Sells for (coins)"], rows, ["l", "r"]))
+        self.add_page("sell-prices", "Sell prices", "What NPC shops pay for every SkyBlock item.", "minecraft:gold_nugget", blocks)

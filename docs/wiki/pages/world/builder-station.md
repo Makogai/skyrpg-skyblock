@@ -5,21 +5,14 @@ order: 3
 icon: skyrpg_builder:builder_station
 summary: Load a schematic or a village house, place its hologram, deliver the materials and watch it build itself from the ground up.
 ---
-The **Builder Station** turns a blueprint into a real build. Pick a blueprint (one of Minecraft's village houses, or your own schematic file), place its glowing hologram where you want it, deliver the materials it lists, press **Build**, and it rises from the ground up, layer by layer, in front of you.
+The **Builder Station** turns a blueprint into a real build. Pick a blueprint (one of Minecraft's village houses, or your own schematic file), place its glowing hologram where you want it on your island, deliver the materials it lists, press **Build**, and it rises from the ground up, layer by layer, in front of you.
 
 ## Getting one
 
-Craft a {{item:skyrpg_builder:builder_station}} at the [Artisan Bench](crafting) (General tab). It needs **Foraging 5**:
+> [!NOTE]
+> In SkyBlock a Builder Station can only be given by an admin (`/give @s skyrpg_builder:builder_station`). Its only recipe was an Artisan Bench recipe, and the Artisan Bench is switched off, so players cannot craft one and no shop sells it.
 
-| Ingredient | Amount |
-| --- | --- |
-| Crafting Table | 1 |
-| Paper | 8 |
-| Iron Ingot | 6 |
-| Redstone Dust | 8 |
-| Amethyst Shard | 4 |
-
-Place it anywhere in the survival world. Its crystal lens faces you, and new blueprints first appear **behind** it. Right-click it to open the builder menu. Stations don't work in Skyhaven.
+With a {{item:skyrpg_builder:builder_station}} in hand, place it on your **Private Island**, inside your build area. It does not work in the Hub, and the public islands are protected, so you cannot place one there. Its crystal lens faces you, and new blueprints first appear **behind** it. Right-click it to open the builder menu.
 
 ## Choosing a blueprint
 

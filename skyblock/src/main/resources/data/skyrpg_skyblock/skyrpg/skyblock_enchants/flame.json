@@ -1,0 +1,32 @@
+{
+ "name": "Flame",
+ "categories": [
+  "BOW"
+ ],
+ "max": 2,
+ "xp": [
+  25,
+  50
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Arrows ignite your enemies for",
+    "§a3s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "2": {
+   "lore": [
+    "§7Arrows ignite your enemies for",
+    "§a4s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  }
+ }
+}

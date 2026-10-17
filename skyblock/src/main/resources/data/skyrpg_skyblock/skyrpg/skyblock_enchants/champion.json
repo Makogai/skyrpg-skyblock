@@ -1,0 +1,27 @@
+{
+ "name": "Champion",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 1,
+ "xp": [
+  10
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Gain §a3% §7extra Combat XP. The",
+    "§72nd hit on a mob grants §6+1.4",
+    "§6coins §7& §3+7 §7exp orbs."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  }
+ }
+}

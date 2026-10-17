@@ -1,0 +1,86 @@
+{
+ "name": "Projectile Protection",
+ "categories": [
+  "BOOTS",
+  "CARNIVAL_MASK",
+  "CHESTPLATE",
+  "HELMET",
+  "LEGGINGS"
+ ],
+ "max": 7,
+ "xp": [
+  10,
+  15,
+  20,
+  25,
+  30,
+  100,
+  200
+ ],
+ "conflicts": [
+  "blast_protection",
+  "fire_protection",
+  "protection"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §a+7 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "COMMON",
+   "value": 7.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §a+14 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "COMMON",
+   "value": 14.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §a+21 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "COMMON",
+   "value": 21.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §a+28 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "COMMON",
+   "value": 28.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §a+35 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 35.0
+  },
+  "6": {
+   "lore": [
+    "§7Grants §a+42 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "RARE",
+   "value": 42.0
+  },
+  "7": {
+   "lore": [
+    "§7Grants §a+49 §aDefense §7against",
+    "§7projectiles."
+   ],
+   "rarity": "EPIC",
+   "value": 49.0
+  }
+ },
+ "table_max": 5
+}

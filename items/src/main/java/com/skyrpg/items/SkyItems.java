@@ -132,6 +132,10 @@ public final class SkyItems {
         if (!def.skyblock()) {
             return create(def.item(), count);
         }
+        ItemStack book = com.skyrpg.items.enchant.Books.create(def, count);
+        if (book != null) {
+            return book;
+        }
         ItemStack stack = new ItemStack(def.item(), count);
         CompoundTag tag = new CompoundTag();
         tag.putString(SKYBLOCK_ID, def.skyblockId());
@@ -211,7 +215,7 @@ public final class SkyItems {
         }
         apply(stack, DataComponents.ATTRIBUTE_MODIFIERS, attributes(def, ItemMods.stats(stack, def).getOrDefault(StatTypes.DAMAGE, 0.0)));
         apply(stack, DataComponents.TOOLTIP_DISPLAY, TOOLTIP);
-        apply(stack, DataComponents.ENCHANTMENT_GLINT_OVERRIDE, def.glint() ? Boolean.TRUE : null);
+        apply(stack, DataComponents.ENCHANTMENT_GLINT_OVERRIDE, def.glint() || !ItemMods.enchantments(stack).isEmpty() ? Boolean.TRUE : null);
     }
 
     /**

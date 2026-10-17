@@ -3,9 +3,9 @@ title: SkyHelper
 category: interface
 order: 6
 icon: minecraft:allay_spawn_egg
-summary: The in-game assistant: ask it anything about SkyRPG in chat, and it answers from the wiki in a few seconds.
+summary: The in-game assistant: ask it about SkyRPG SkyBlock in chat, and it answers from the wiki in a few seconds.
 ---
-SkyHelper is SkyRPG's assistant. Ask it a question in chat and it answers within a few seconds, using what this wiki says: where to sell something, how to craft an item, where a dungeon is, what a stat does, what to do next. It runs on the server's own computer as a small AI model, so it costs nothing and nothing you ask leaves the server.
+SkyHelper is SkyRPG's assistant. Ask it a question in chat and it answers within a few seconds, using what this wiki says: where to sell something, how to craft an item, where an island is, what a stat does, what to do next. It runs on the server's own computer as a small AI model, so it costs nothing and nothing you ask leaves the server.
 
 ## Asking a question
 
@@ -18,7 +18,7 @@ SkyHelper is SkyRPG's assistant. Ask it a question in chat and it answers within
 For example:
 
 - `@skyhelper where can I sell this?`
-- `@skyhelper how do I tame a griffin?`
+- `@skyhelper how do I reforge my sword?`
 - `/ask what should I do next?`
 - `@skyhelper kako da napravim piston?` (it answers in the language you ask in)
 
@@ -42,20 +42,20 @@ Clicking a button runs the command **as you, with your own permissions**, so a b
 
 ## What it knows about you
 
-SkyHelper sees what you are holding, what you carry and wear, where you are (the hub or survival world, the biome and any danger region), your health, mana, coins, skill levels, stats and the quest in your journal. So:
+SkyHelper sees what you are holding, what you carry and wear, where you are (the Hub, an island or the old survival world, and the biome), your health, mana, coins, skill levels and stats. So:
 
-- "this", "it" and "my item" mean the item in your hand. Hold a Dread Fang and ask `@skyhelper how much is this worth?`.
-- "What should I do next?" gets an answer for your levels, your gear and your quest.
+- "this", "it" and "my item" mean the item in your hand. Hold a {{item:skyrpg_skyblock:aspect_of_the_end}} and ask `@skyhelper how do I reforge this?`.
+- "What should I do next?" gets an answer for your levels and your gear.
 - It remembers your last three questions for 15 minutes, so you can follow up: "and where do I find that?"
 
 It cannot give items or coins, or change the game itself; at most it offers a command button (see below).
 
 ## What it is good at
 
-- Prices, who buys and sells what, and the `/sell` commands.
-- Recipes: SkyRPG gear at the Artisan Bench, and vanilla recipes (pistons, furnaces, anything) read from the game itself.
-- Where things are: dungeons, bosses, NPCs, regions, waystones.
-- How systems work: skills, stats, enchanting, pets, mounts, parties, wands and spells, Blood Moons.
+- Prices, NPC shops, the Bazaar and the Auction House.
+- Recipes: SkyBlock's crafting recipes, and vanilla recipes (pistons, furnaces, anything) read from the game itself.
+- Where things are: islands, areas, NPCs and warps.
+- How systems work: skills, stats, slayers, minions, collections, reforging, parties, profiles.
 - Plain Minecraft questions (redstone, brewing, mobs).
 
 It is a small model, so it can still get something wrong. If an answer looks odd, click **[Wiki]** and check the page. The wiki is always the final word.
@@ -76,4 +76,4 @@ SkyHelper is the `skyrpg_helper` mod plus a small service, `tools/skyhelper/help
 | `/skyhelper status` | Whether the service and Ollama are running (operators) |
 | `/skyhelper start` | Start the service if it is not running (operators) |
 
-Settings are in `config/skyrpg/helper.json`: `enabled`, `url`, `cooldownSeconds`, `timeoutSeconds`, `autostart`, `python` and `script`. Every question and answer is logged to `run/skyhelper/log.jsonl`, to find answers worth improving. `python tools/skyhelper/eval.py` asks 27 test questions and checks the answers.
+Settings are in `config/skyrpg/helper.json`: `enabled`, `url`, `cooldownSeconds`, `timeoutSeconds`, `autostart`, `python` and `script`. Every question and answer is logged to `run/skyhelper/log.jsonl`, to find answers worth improving. `python tools/skyhelper/eval.py` asks a set of test questions and checks the answers.

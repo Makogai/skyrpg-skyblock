@@ -3,27 +3,16 @@ title: Crates
 category: world
 order: 5
 icon: skyrpg_crates:hallows_crate
-summary: The Hallow's Crate drops from monsters until November 8. Open it with a key on a spinning reel for candy, coins, the Hallowed Harvest set, scythes and the Jack o'Lantern pet.
+summary: The Hallow's Crate opens on a spinning reel for candy, coins, the Hallowed Harvest set, scythes and the Jack o'Lantern pet. It only drops in the old survival world, so nobody can get one in SkyBlock today.
 ---
-**Crates** drop from monsters in the survival world. Open one with its key and a long reel of prizes spins past a gold marker, ticking as it goes, slows down and stops on what you win, from blue (common) up to the gold ★ prizes. The first crate is the **Hallow's Crate**, for Halloween: it only drops until **November 8**.
+**Crates** are opened with a key: a long reel of prizes spins past a gold marker, ticking as it goes, slows down and stops on what you win, from blue (common) up to the gold ★ prizes. The first crate is the **Hallow's Crate**, for Halloween, which was meant to run until **November 8**.
 
-## Getting crates
-
-A {{item:skyrpg_crates:hallows_crate}} can drop from any monster you kill in the survival world, the Nether or the End:
-
-| When | Chance per kill |
-| --- | --- |
-| By day | 0.25% |
-| At night, and always in the Nether and the End | 1% |
-| During a [Blood Moon](blood-moon) | 3% |
-| An elite | 10% |
-| A boss (dungeon, world or region) | 25% |
-
-Magic Find makes it more likely. Monsters from spawners never drop crates. A crate drop shows a **RARE DROP!** message.
+> [!NOTE]
+> Crates only dropped from monsters in the old survival world, which is now an archive, and the shop that sold keys is gone. In SkyBlock there is no way to get a {{item:skyrpg_crates:hallows_crate}} or a {{item:skyrpg_crates:hallows_key}}, so nothing in this page can be won today. An admin can still hand them out.
 
 ## Keys
 
-Each crate needs a {{item:skyrpg_crates:hallows_key}} to open. **Odessa Quill** sells them at Quill's Curiosities by the Grand Bazaar for **2,500 coins** each (see [Selling and shops](selling-and-shops#quill-s-curiosities)). Your **first crate comes with a free key**, so everyone gets to spin once.
+Each crate needs a Hallow's Key to open. Your first crate comes with a free key.
 
 ## Opening a crate
 
@@ -45,7 +34,7 @@ The rarer tiers get a bigger fanfare, and **Cursed** and better prizes are annou
 
 ## The Hallowed Harvest set
 
-A Legendary set for **Farming and Combat** at once, only from crates:
+A Legendary set for **Farming and Combat** at once, only from crates. These are the survival game's items, not Hypixel's, so their stats and bonuses follow the survival rules:
 
 | Piece | Stats |
 | --- | --- |
@@ -54,7 +43,7 @@ A Legendary set for **Farming and Combat** at once, only from crates:
 | {{item:skyrpg_items:hallowed_leggings\|Scarecrow Trousers}} | 90 Health, 75 Defense, 20 Strength, 45 Farming Fortune |
 | {{item:skyrpg_items:hallowed_boots\|Gravewalk Boots}} | 55 Health, 45 Defense, 14 Strength, 8 Speed, 30 Farming Fortune |
 
-**Witching Hour** (all four pieces): +40 Farming Fortune and +20 Strength, and rare crop finds are 50% more likely. **After dark in the overworld** it adds +60 Farming Fortune, +40 Strength and +30 Crit Damage more, and **twice that during a Blood Moon**.
+**Witching Hour** (all four pieces): +40 Farming Fortune and +20 Strength, and rare crop finds are 50% more likely. **After dark in the old survival world** it adds +60 Farming Fortune, +40 Strength and +30 Crit Damage more.
 
 ## The scythes
 
@@ -65,11 +54,10 @@ Both work as a weapon and as a scythe: they harvest an area of crops (replanting
 
 ## The Jack o'Lantern pet
 
-A floating, grinning pumpkin that levels with **Farming**: +1.4 Farming Fortune and +0.6 Strength per level (at Common; Epic and Legendary give more). At level 25 rare crop finds are 25% more likely; at level 50 it heals you 2% of the melee damage you deal. It has no egg: crates are the only way to get one. See [Pets](pets).
+A floating, grinning pumpkin that levels with **Farming**: +1.4 Farming Fortune and +0.6 Strength per level (at Common; Epic and Legendary give more). At level 25 rare crop finds are 25% more likely; at level 50 it heals you 2% of the melee damage you deal. It has no egg: crates are the only way to get one, which makes it unobtainable in SkyBlock for now. See [Pets](pets).
 
 ## See also
 
-- [Blood Moon](blood-moon)
 - [Pets](pets)
 - [Armour sets](armour-sets)
 - [Tools](tools)

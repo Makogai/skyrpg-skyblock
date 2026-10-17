@@ -1,0 +1,85 @@
+{
+ "name": "Luck of the Sea",
+ "categories": [
+  "FISHING_ROD",
+  "FISHING_WEAPON"
+ ],
+ "max": 7,
+ "xp": [
+  10,
+  15,
+  20,
+  25,
+  30,
+  50
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §6+0.5Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "COMMON",
+   "value": 0.5
+  },
+  "2": {
+   "lore": [
+    "§7Grants §6+1Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §6+1.5Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "COMMON",
+   "value": 1.5
+  },
+  "4": {
+   "lore": [
+    "§7Grants §6+2Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §6+2.5Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 2.5
+  },
+  "6": {
+   "lore": [
+    "§7Grants §6+3Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "RARE",
+   "value": 3.0
+  },
+  "7": {
+   "lore": [
+    "§7Grants §6+3.5Treasure Chance§7, which",
+    "§7increases the chance of fishing",
+    "§7treasure."
+   ],
+   "rarity": "EPIC",
+   "value": 3.5
+  }
+ },
+ "table_max": 5
+}

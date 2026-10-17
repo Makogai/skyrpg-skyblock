@@ -1,0 +1,85 @@
+{
+ "name": "Refrigerate",
+ "categories": [
+  "BOOTS",
+  "CARNIVAL_MASK",
+  "CHESTPLATE",
+  "HELMET",
+  "LEGGINGS"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [
+  "ultimate_bank",
+  "ultimate_bobbin_time",
+  "ultimate_chimera",
+  "ultimate_combo",
+  "ultimate_fatal_tempo",
+  "ultimate_first_impression",
+  "ultimate_flash",
+  "ultimate_flowstate",
+  "ultimate_habanero_tactics",
+  "ultimate_inferno",
+  "ultimate_last_stand",
+  "ultimate_legion",
+  "ultimate_missile",
+  "ultimate_no_pain_no_gain",
+  "ultimate_one_for_all",
+  "ultimate_reiterate",
+  "ultimate_rend",
+  "ultimate_soul_eater",
+  "ultimate_sunset",
+  "ultimate_swarm",
+  "ultimate_wisdom",
+  "ultimate_wise"
+ ],
+ "ultimate": true,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Convert §a3% §7of §bMana §7used as §a",
+    "§aDefense §7for §a10s§7.",
+    "§8(Max 150 Defense)"
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "2": {
+   "lore": [
+    "§7Convert §a3.75% §7of §bMana §7used as §a",
+    "§aDefense §7for §a10s§7.",
+    "§8(Max 150 Defense)"
+   ],
+   "rarity": "COMMON",
+   "value": 3.75
+  },
+  "3": {
+   "lore": [
+    "§7Convert §a4.5% §7of §bMana §7used as §a",
+    "§aDefense §7for §a10s§7.",
+    "§8(Max 150 Defense)"
+   ],
+   "rarity": "COMMON",
+   "value": 4.5
+  },
+  "4": {
+   "lore": [
+    "§7Convert §a5.25% §7of §bMana §7used as §a",
+    "§aDefense §7for §a10s§7.",
+    "§8(Max 150 Defense)"
+   ],
+   "rarity": "COMMON",
+   "value": 5.25
+  },
+  "5": {
+   "lore": [
+    "§7Convert §a6% §7of §bMana §7used as §a",
+    "§aDefense §7for §a10s§7.",
+    "§8(Max 150 Defense)"
+   ],
+   "rarity": "UNCOMMON",
+   "value": 6.0
+  }
+ }
+}

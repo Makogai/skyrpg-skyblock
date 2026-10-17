@@ -77,7 +77,12 @@ phase so the next session can pick up where this one stopped.
       matching that can shift and mirror (`Recipes.match`), result card, Craft / Craft all, Recipe Book link.
       Recipes are sent to clients (`RecipesPayload`, gzipped JSON). Vanilla recipe / advancement / tutorial toasts
       are hidden (`ToastManagerMixin`).
-- [ ] Wiki: survival pages are still there (dungeons, Delving, gear, the K-menu talk); rewrite or retire them.
+- [x] **Wiki cleanup** (2026-10-17, from `docs/design/wiki-audit.md`): 31 survival pages retired (dungeons, the
+      survival world's regions and bosses, mounts, spells, wands, shields, bows, Delving, quests, contracts, titles,
+      events); Getting Started, Skyhaven NPCs, the gathering skills, crafting, enchanting, gear, combat and pets
+      rewritten for SkyBlock; the interface pages updated; generated item lists sorted by Hypixel category (survival
+      items out), dropped the mount/quest/region/pet/mob lists, sell prices from Hypixel's NPC prices. Categories "Extras"
+      (Builder, brainrots, crates) and "Pets".
 - [x] Minion tier XII costs: Hypixel sells them (Bulvar, Tony, Einary...): `import_minions.py` reads NEU's npc_shop
       trades (and upgrade stones' trades) into the XII cost, coins as "COINS"; the minion screen does the trade until the
       NPCs exist (design call). Snow/Ice XII want North Stars, farming XII Pelts: not items yet. Also fixed: NEU's
@@ -181,6 +186,17 @@ phase so the next session can pick up where this one stopped.
       stone's reforge for its price; any anvil opens Combine Items: Recombobulator 3000, Hot Potato Book (10), Fuming
       Potato Book (15). `/sbitemmod` for admins. Not yet: reforge abilities (shown, no effect), stars, gemstones,
       enchanted books on the anvil.
+- [x] **Enchanting** (Hypixel's): `tools/skyblock/import_enchants.py` writes 145 enchantments (NEU: item categories,
+      conflict pools, XP costs, table caps; each level's book lore and its number) to `skyrpg/skyblock_enchants`; items
+      `Enchants` (synced with the item definitions), `ItemMods` keeps Hypixel's `enchantments` compound (conflicts and
+      one ultimate handled), tooltips list them Hypixel's way, enchanted items glint. Enchantment Table (`EnchantMenu` +
+      `EnchantScreen`; any enchanting table in SkyBlock, Seraphine's `skyblock_enchanting`): pick an enchant and level,
+      pay XP levels, same level again removes it; Enchanting XP 3.5 × levels^1.5. Books (`Books`: `ENCHANTED_BOOK` +
+      enchantments; Bazaar ids `ENCHANTMENT_<ID>_<N>` resolve to them, 414 book products in Oddities) on the anvil: book
+      on item for XP levels, equal books combine (to the table's cap). `EnchantEffects`: stat enchants, additive damage
+      (new core `DamageBonus`, summed with Warrior in `CombatStats`), on-hit and on-kill effects; Ultimate Wise in
+      `Abilities`. `/sbenchant` for admins. Not yet: Looting/Luck/Experience, most ultimates and fishing/farming extras,
+      Bookshelf Power and Enchanting-level requirements, the Experimentation Table, book rarity by level.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

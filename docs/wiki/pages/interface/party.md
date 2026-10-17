@@ -45,18 +45,18 @@ Run `/party chat` once and everything you type goes to the party until you run i
 
 ## The party overlay
 
-A small box on the left of the screen shows every other member, always:
+A small box on the left of the screen shows every other member:
 
 - Their **face**, taken from their skin, and their **name**. The leader has a **crown**.
 - A **health bar** with the numbers, in SkyRPG's units (the same as your own health bar). It is green, turns gold under half and **red and pulsing** under a quarter.
-- A small tag such as **Hub**, **Nether** or **The End** when they are in another dimension than you.
+- A small tag naming where they are when it is not where you are: **Hub**, **Islands** (the Private Islands), **Farming islands** (The Barn and the Mushroom Desert), **The park**, **Gold mine**, **Deep caverns** or **Spiders den**.
 - **Offline** members are greyed out, and their bar says Offline.
 
 It is a normal HUD box: move, resize or hide it in the HUD editor. See [HUD and minimap](hud-and-minimap). It only shows while you are in a party.
 
 ## The Party page
 
-Press **K** and open **Party**. Each member has a card with their face, crown, whether they are online, health, and where they are (dimension, coordinates and distance, or where they were last seen when offline).
+Open the menu and choose **Party**. Each member has a card with their face, crown, whether they are online, health, and where they are (place, coordinates and distance, or where they were last seen when offline).
 
 - **Click a member** to set a waypoint to them. See [Waypoints](waypoints).
 - The leader sees **Promote** and **Kick** on each member (Kick asks for a second click).
@@ -71,7 +71,7 @@ Hold **Tab**. Party members have a green mark beside their face, and a **Party**
 
 ## No hitting each other
 
-Party members cannot hurt each other. The hit is cancelled, with no damage and no knockback. It covers melee, arrows and other projectiles (the shooter counts, not the arrow), thrown potions that hurt, abilities and area attacks, enchant effects, and a tamed animal hitting for its owner. You can still hurt yourself.
+Party members cannot hurt each other. The hit is cancelled, with no damage and no knockback. It covers melee, arrows and other projectiles (the shooter counts, not the arrow), thrown potions that hurt, abilities and area attacks, and a tamed animal hitting for its owner. You can still hurt yourself.
 
 > [!NOTE]
 > A few things are not stopped: poison or wither that keeps ticking after a thrown potion, fire, and TNT.

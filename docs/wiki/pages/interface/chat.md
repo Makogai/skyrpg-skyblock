@@ -14,12 +14,12 @@ A player's message looks like this:
 `[badge] Name: message`
 
 - **The level badge** is a star and a number in brackets, such as `(* 42)`. The number is the sender's **SkyBlock Level** (see [SkyBlock Leveling](skyblock-leveling)). The colour changes every 40 levels: grey, white, yellow, green, dark green, aqua, dark aqua, blue, pink, purple, gold, red, and dark red from level 480. Hover a badge to see what the next colour is.
-- **Titles.** A title is a small pill before the name: an icon and a few letters in a colour. You earn titles in the game and pick one in the K menu (see [Titles](titles)). An administrator can also give a player a staff title, which replaces the earned one.
+- **Staff titles.** An administrator can give a player a title, shown as a small pill before the name: an icon and a few letters in a colour. Players cannot earn or pick titles in SkyBlock.
 - **The name** has a hover card with the player's level, skills, purse, slayers, pet and held item. **Click a name** to start a `/msg` to them.
 - **A stripe** beside each message shows its kind: player chat, whispers, joins, deaths, SkyRPG notices and more. Hover a stripe for the time.
-- Joins, leaves, deaths and advancements have their own themed lines, with icons. A new player gets a welcome that tells them to press K.
+- Joins, leaves, deaths and advancements have their own themed lines, with icons. A new player gets a welcome that tells them to press the menu key.
 
-Game messages about coins, skills, events and bank have an icon, a short bold tag in an accent colour, then the text, for example `SKILL`, `COINS` and `EVENT`.
+Game messages about coins, skills, slayers and events have an icon, a short bold tag in an accent colour, then the text, for example `SKILL`, `COINS` and `EVENT`.
 
 Messages with more to say come as one **panel** instead of a pile of lines: a level up and its rewards, a collection tier and what it unlocks, a SkyBlock level up, a new unique minion, your pet's details. The panel has a band in its colour behind the first line, a light body behind the rest, an edge on top and at the bottom, and a thin rail down its side, so it reads as one card.
 
@@ -65,7 +65,7 @@ Stickers are small pixel-art pictures. Type `[s:name]` (or `[sticker:name]`) and
 | `sleepy` | sleeping face |
 | `coins` | coins raining onto a pile |
 | `crit` | CRIT starburst |
-| `chest` | dungeon chest |
+| `chest` | treasure chest |
 | `owl` | pet owl |
 | `creeper` | creeper face |
 | `trophy` | gold trophy |
@@ -115,7 +115,7 @@ SkyHelper is the server's assistant. Start a chat line with `@skyhelper` (or `@h
 
 On the open chat window you get five tabs: **All**, **Chat**, **Whispers**, **Party** and **SkyRPG**. A tab is just a view of the same history. Closing the chat goes back to All. The **Party** tab holds only your party's chat and party notices, such as joins, leaves and invites. See [Party](party).
 
-All these options live in **K, Settings, Chat**. See [Settings](settings).
+All these options live in the menu under **Settings, Chat**. See [Settings](settings).
 
 | Setting | Default | What it does |
 | --- | --- | --- |

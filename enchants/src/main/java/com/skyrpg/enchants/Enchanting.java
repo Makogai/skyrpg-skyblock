@@ -72,7 +72,7 @@ public final class Enchanting {
         EnchantPayloads.register();
         Actions.register("open_enchanting", (player, params) -> open(player, null));
         UseBlockCallback.EVENT.register((player, level, hand, hit) -> {
-            if (player.isSpectator() || !level.getBlockState(hit.getBlockPos()).is(Blocks.ENCHANTING_TABLE)
+            if (player.isSpectator() || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(level) || !level.getBlockState(hit.getBlockPos()).is(Blocks.ENCHANTING_TABLE)
                     || (player.isSecondaryUseActive() && !player.getItemInHand(hand).isEmpty())) {
                 return InteractionResult.PASS;
             }

@@ -1,0 +1,24 @@
+{
+ "name": "Replenish",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 1,
+ "xp": [
+  50
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Upon breaking crops, nether wart,",
+    "§7cocoa, wild rose, or sunflower,",
+    "§7automatically replant from materials",
+    "§7in your inventory."
+   ],
+   "rarity": "RARE"
+  }
+ }
+}

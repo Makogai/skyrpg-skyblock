@@ -3,134 +3,67 @@ title: Combat basics
 category: combat
 order: 2
 icon: minecraft:iron_sword
-summary: Mob levels, nameplates, damage numbers, the combat tag, Elites, Valor Marks, Dread Fangs, Nightmare Cores, the Training Dummy and Combat XP.
+summary: Zone mobs with Hypixel levels and stats, what you see in a fight, how damage and defense work, the combat tag, and what a kill pays: Combat XP, coins and slayer progress.
 ---
-Every hostile mob in the survival world has a level. The higher the level, the more health it has, the harder it hits and the more it pays when it dies. This page explains how levels are set, what you see in a fight, and what a kill rewards you with. Kestrel Vane, the weaponsmith in Skyhaven, is the Combat Master and buys most of what drops.
+You fight in the **zones** of the Hub's areas and the public islands. Their mobs have Hypixel's names, levels, health and damage. A kill pays Combat XP and coins, and the right mobs fill a [slayer](slayers) quest. This page covers what you see in a fight and what a kill gives you. For the maths of a hit, see [Stats](stats).
 
-## Mob levels
+## Where the mobs are
 
-A hostile mob gets its level when it spawns. Mobs in the hub never get one.
+Mobs only spawn in a zone's fighting areas, up to a cap, and keep coming back. They do not burn in daylight, and neutral ones (the Ruins' wolves, the Deep Caverns' pigmen) attack anyone who comes near. Private Islands have no monsters.
 
-| Where | Level |
+| Zone | Mobs |
 | --- | --- |
-| Overworld surface | 1 at world spawn, +1 for every 120 blocks away, up to level 30 |
-| Overworld, below y 0 | +5 |
-| Overworld, below y -32 | +10 (instead of +5) |
-| The Nether | 20, +1 for every 180 blocks from the world spawn |
-| The End | 40, +1 for every 480 blocks from the world spawn |
+| Graveyard (Hub) | Graveyard Zombie (level 1), Zombie Villager (1) |
+| Coal Mine (Hub) | Crypt Ghoul (30), Golden Ghoul (50) |
+| Mountain (Hub) | Skeleton (6) |
+| Ruins (Hub) | Wolf (15), Old Wolf (50) |
+| Spider's Den | Splitter, Weaver, Dasher and Voracious Spiders (2 to 10), Gravel Skeleton (2); in the Spider Mound, level 42 spiders |
+| The Park, Howling Cave | Pack Spirit (30), Howling Spirit (35), Soul of the Alpha (55) |
+| Deep Caverns | Sneaky Creeper (3), Lapis Zombie (7), Redstone Pigman (10), Emerald Slime (15), Miner Zombies and Skeletons (15 and 20) |
 
-The result is capped at 50 first. Then extra levels are added on top, past the cap:
+Every mob with its health, damage, Combat XP and coins is listed on [The Hub](the-hub) and [The Islands](the-islands). The Barn's and the Mushroom Desert's cows, pigs, chickens, rabbits and sheep are farm animals, with a level but no attack and no reward.
 
-- **Danger regions:** +12 to +20 depending on the region. See [Danger regions](danger-regions).
-- **Deep layers:** +4 (Glimmer Caverns), +7 (Fungal Depths), +10 (Dwarven Halls layer) and +14 (Magma Rifts). See [The Deep](the-deep).
-- **Blood Moon:** +10 everywhere in the overworld. See [Blood Moon](blood-moon).
-- **Dungeons:** each dungeon sets its own levels. See [Dungeons overview](dungeons-overview).
+## What you see in a fight
 
-Each level above 1 adds **8% health** and **5% damage** (multiplied, not stacked on the Elite bonus).
+- **Nameplates.** A mob within 20 blocks shows `[Lv 30] Crypt Ghoul` with its health, on the same scale as your own. The level is green below 10, yellow below 20, gold below 30, red below 40 and dark red from 40. Switch them off in [Settings](settings) under HUD ("Mob nameplates").
+- **Damage numbers.** Each hit pops a number over the mob for under a second. Normal hits are grey, critical hits are bold gold between two sparkles.
+- **Boss bars** for slayer bosses, with their timer.
 
-| Level | Health | Damage |
-| --- | --- | --- |
-| 1 | x1.00 | x1.00 |
-| 10 | x1.72 | x1.45 |
-| 20 | x2.52 | x1.95 |
-| 30 | x3.32 | x2.45 |
-| 50 | x4.92 | x3.45 |
+The level on a zone mob is for show: its health and damage are Hypixel's own numbers, not scaled by level.
 
-> [!NOTE]
-> Mobs you spawn with a spawn egg or a command are levelled too, so test mobs behave like real ones.
+## Damage you deal
 
-### Nameplates
+A melee hit is the weapon's **Damage**, times `1 + Strength / 100`, times `1 + Crit Damage / 100` when it crits (Crit Chance is the chance), times the Combat skill's **Warrior** bonus against mobs (+4% a Combat level, +1% more a level after 50). Worked examples are on [Stats](stats#damage-and-crits). Bow damage and abilities are not built for Hypixel items yet; see [Weapons](weapons).
 
-When you can see a levelled mob and it is within 20 blocks, it shows a plate like `[Lv 12] Zombie 85/100`. The level is green below 10, yellow below 20, gold below 30, red below 40 and dark red from 40. The health is on the same scale as your own health bar (5 SkyRPG health is 1 vanilla point) and turns yellow below half and red below a quarter. Bosses stronger than vanilla health allows show their real health, not the capped number. You can switch plates off in Settings under HUD ("Mob nameplates").
+## Damage you take
 
-### Damage numbers
+A mob's damage is its Damage number, reduced by your Defense: the hit is multiplied by `100 / (100 + Defense)`, so 100 Defense halves it. Some slayer boss attacks are **true damage**, which only True Defense cuts. See [Stats](stats#defense). All healing you get is multiplied by your Vitality.
 
-Each hit you land pops a number up in front of the mob for under a second. Normal hits are grey. Critical hits are bold gold between two white sparkles. The number is the damage as the stats work it out: see [Stats](stats).
+If you die you keep your items, lose half your purse and respawn, as on Hypixel.
 
 ## Combat tag
 
-Fighting puts you **in combat** for **10 seconds**. While you are, a red **In combat** box with the seconds left shows at the top of the screen, and you cannot teleport away: `/hub`, `/survival` and waystone trips are refused with the time left. See [The Survival World](survival-world#warm-ups) and [Waystones and Travel](waystones-and-travel#warm-ups).
-
-You are tagged when you:
-
-- deal damage to a hostile mob or another player, or take damage from one
-- are hit by a projectile or ability, or hit with one yourself (an arrow counts for whoever fired it)
-
-Each new hit restarts the 10 seconds. These do **not** tag you: fall damage, fire, lava, drowning, starving, the void and other damage that has no attacker, or hitting a cow or other passive animal. Dying clears the tag. Creative and spectator players are never tagged.
-
-> [!NOTE]
-> The numbers (10 seconds of tag, 5 second warm-up, how far you may drift) are data in `data/skyrpg_core/skyrpg/combat/rules.json`.
-
-## Elites
-
-Some naturally spawned hostile mobs are **Elites**. They never appear in the hub.
-
-| Where | Chance |
-| --- | --- |
-| Surface, daytime | 3% |
-| Surface, dark | 6% |
-| Underground (below y 40 with no open sky) | 8% |
-
-A Blood Moon makes Elites three times as likely everywhere. An Elite is three levels higher than it would have been, has **4 times the health**, **+50% damage**, is 10% faster and 15% bigger, shows a gold `Elite` nameplate and glitters. Elites in dungeons are placed on purpose and also carry the dungeon's vault key: see [Dungeons overview](dungeons-overview).
-
-Killing an Elite pays:
-
-- 50 to 200 coins and 40 Combat XP
-- an {{item:skyrpg_combat:elite_trophy}} (Kestrel buys them for 250 coins)
-- 3 extra Valor Marks, on top of the normal level rewards
-- a 1 in 50 chance of a Lucky Clover or a Prism Fragment
-
-The **Elite Hunt** contract asks for 3 to 6 Elites and pays 1,200 coins, 800 Combat XP and 2 Elite Trophies. See [Contracts](contracts).
+Fighting puts you **in combat** for **10 seconds**. A red **In combat** box with the seconds left shows at the top of the screen, and you cannot teleport (Fast Travel, `/warp`, `/hub`, `/is`, `/visit`) while it lasts. You are tagged when you deal damage to or take damage from a hostile mob or another player (an arrow counts for whoever fired it). Each hit restarts the 10 seconds. Fall damage, fire, the void and hitting passive animals do not tag you, and dying clears it.
 
 ## What a kill pays
 
-Killing a levelled mob (with a melee hit, or an arrow you fired) gives:
+Killing a zone mob gives:
 
-- **Combat XP.** The base XP for that kind of mob (a zombie or skeleton is 6, an enderman 12, a wither skeleton 15) plus **1.5 per mob level**. Combat Insight raises it. See [Skills overview](skills-overview).
-- **Valor Marks.** A chance of `25% + 1% per level` (capped at 100%) to drop `1 + 1 per 15 levels` {{item:skyrpg_combat:valor_mark|Valor Marks}}.
-- **A Dread Fang or a Nightmare Core**, rarely (see below).
-- The mob's normal drops.
+- **Combat XP**: the mob's own number (a Graveyard Zombie 6, a Crypt Ghoul 36, a Golden Ghoul 50, a Spider Mound spider 36), raised by your Combat Wisdom. It levels the Combat skill, which gives Crit Chance, the Warrior perk, coins and SkyBlock XP. See [Skills overview](skills-overview).
+- **Coins** straight into your purse (a Graveyard Zombie 1, a Crypt Ghoul 13, a Golden Ghoul 100, a Soul of the Alpha 50).
+- The mob's normal drops. Hypixel's mob drop tables are not imported yet.
+- **Slayer progress.** Each kill adds its Combat XP to a running [slayer quest](slayers) when the mob is one the boss wants.
 
-| Mob level | Valor Mark chance | Marks dropped |
-| --- | --- | --- |
-| 1 | 26% | 1 |
-| 15 | 40% | 2 |
-| 30 | 55% | 3 |
-| 45 | 70% | 4 |
-| 60 | 85% | 5 |
+Mobs from a spawner give only a quarter of the Combat XP and do not count for slayers. The zones' own mobs are natural spawns, so they count in full.
 
-Nine Valor Marks craft into one {{item:skyrpg_combat:valor_seal|Valor Seal}} (a 3 by 3 grid), and a seal can be split back into nine. Kestrel takes marks as payment for the Fangguard armour and a Pup Egg. Seals go into slayer gear and swords. See [Weapons](weapons) and [Armour sets](armour-sets).
+## Slayers
 
-### Rare drops
-
-| Drop | Needs | Chance |
-| --- | --- | --- |
-| {{item:skyrpg_combat:dread_fang}} | level 10+ | 1 in 400 |
-| {{item:skyrpg_combat:nightmare_core}} | level 30+ | 1 in 4,000 |
-
-At most one of the two drops per kill, and a core is rolled first. **Magic Find** multiplies both chances by `1 + Magic Find / 100`. A message tells you when one drops. Kestrel buys fangs for 1,200 coins and cores for 15,000.
-
-### Farmed mobs
-
-Mobs from a spawner (including the spawners you buy from Morwen) and the helpers some mobs call in (Gravecaller zombies, Bog Hag slimes) are **farmed**. They drop their normal loot and give only a quarter of the level XP. They give no Valor Marks, no fangs or cores, never become Elites and do not count for slayer quests. See [Slayers](slayers).
-
-## The Training Dummy
-
-The {{item:skyrpg_combat:training_dummy}} is a mannequin you place to test your gear.
-
-- Kestrel Vane sells it for 500 coins. Place it by right-clicking a block.
-- Hit it and the action bar shows your **damage per second over the last 5 seconds** and your last hit.
-- It never dies, and only players can hurt it.
-- Each hit gives 0.5 Combat XP, up to 150 Combat XP per hour, so it cannot be left running.
-- Sneak and hit it with an empty hand to pick it up again.
-
-> [!TIP]
-> Swap a piece of gear, hit the dummy for ten seconds, and compare the DPS. It is the quickest way to find out whether a reforge or an enchant is worth it.
+Maddox the Slayer in the Hub sells boss quests: Revenant Horror, Tarantula Broodfather, Sven Packmaster and Voidgloom Seraph, in up to five tiers. Kill the right mobs to fill the bar, then the boss rises. Its drops roll with **Magic Find**, rare ones are announced, and slayer levels give stats and unlock recipes. See [Slayers](slayers).
 
 ## See also
 
-- [Stats](stats): how damage and defence are worked out.
-- [Mobs](mobs): every custom mob in the world.
-- [Slayers](slayers) and [World bosses](world-bosses)
-- [Weapons](weapons), [Armour sets](armour-sets), [Shields](shields), [Bows](bows)
+- [Stats](stats)
+- [Slayers](slayers)
+- [Weapons](weapons) and [Armour sets](armour-sets)
+- [The Hub](the-hub) and [The Islands](the-islands)
 - [Skills overview](skills-overview)

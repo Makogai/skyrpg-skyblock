@@ -1,0 +1,71 @@
+{
+ "name": "Experience",
+ "categories": [
+  "DRILL",
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "PICKAXE",
+  "SWORD"
+ ],
+ "max": 5,
+ "xp": [
+  15,
+  30,
+  45,
+  75
+ ],
+ "conflicts": [
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants a §a12.5% §7chance for mobs",
+    "§7and ores to drop double",
+    "§7experience."
+   ],
+   "rarity": "COMMON",
+   "value": 12.5
+  },
+  "2": {
+   "lore": [
+    "§7Grants a §a25% §7chance for mobs",
+    "§7and ores to drop double",
+    "§7experience."
+   ],
+   "rarity": "COMMON",
+   "value": 25.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants a §a37.5% §7chance for",
+    "§7mobs and ores to drop double",
+    "§7experience."
+   ],
+   "rarity": "COMMON",
+   "value": 37.5
+  },
+  "4": {
+   "lore": [
+    "§7Grants a §a50% §7chance for mobs",
+    "§7and ores to drop double",
+    "§7experience."
+   ],
+   "rarity": "COMMON",
+   "value": 50.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants a §a62.5% §7chance for",
+    "§7mobs and ores to drop double",
+    "§7experience."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 62.5
+  }
+ },
+ "table_max": 3
+}

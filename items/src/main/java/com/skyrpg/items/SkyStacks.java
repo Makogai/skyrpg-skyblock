@@ -25,7 +25,8 @@ public final class SkyStacks {
         }
         String id = SkyItems.skyblockId(stack);
         if (id != null) {
-            return id.equals(skyblockId);
+            // A book with one enchant is also its Bazaar product ("ENCHANTMENT_SHARPNESS_6").
+            return id.equals(skyblockId) || skyblockId.equals(com.skyrpg.items.enchant.Books.productId(stack));
         }
         return skyblockId.equals(id(stack));
     }

@@ -5,7 +5,7 @@ order: 7
 icon: minecraft:crafting_table
 summary: Every Hypixel SkyBlock recipe (2,468 of them), what unlocks each, crafting straight from your inventory, and the crafting table.
 ---
-SkyBlock has **2,468** crafting recipes, all from Hypixel SkyBlock, with the same grids and amounts: an Enchanted Cobblestone takes 160 Cobblestone, a Cobblestone Minion I takes 80 Cobblestone around a Wooden Pickaxe. Most recipes are unlocked by a [collection](collections) tier. Some need a slayer level, and a few have no requirement at all.
+SkyBlock has **2,468** crafting recipes, all from Hypixel SkyBlock, with the same grids and amounts: an Enchanted Cobblestone takes 160 Cobblestone, a Cobblestone Minion I takes 80 Cobblestone around a Wooden Pickaxe. Most recipes are unlocked by a [collection](collections) tier. Some need a slayer level, and 965 (tools, basic blocks and the like) have no requirement at all.
 
 ## The Recipe Book
 

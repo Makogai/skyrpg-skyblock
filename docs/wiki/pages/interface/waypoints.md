@@ -5,7 +5,7 @@ order: 4
 icon: minecraft:recovery_compass
 summary: Named, coloured points on your maps and in the world: how to make, track and share them.
 ---
-A waypoint is a named, coloured point that you save. It shows on your minimap and world map, and as a marker in the world, so you can find your way home, back to a dungeon or to a friend's base. You can **track** one to get a compass at the top of the screen that points the way. Waypoints are kept on your own computer, per server and per dimension.
+A waypoint is a named, coloured point that you save. It shows on your minimap and world map, and as a marker in the world, so you can find your way back to an island spot, a farm, a mine or a friend. You can **track** one to get a compass at the top of the screen that points the way. Waypoints are kept on your own computer, per server and per dimension. The Hub, the Private Islands and each public island are separate dimensions, so a waypoint only shows on the island where you made it.
 
 ## Making a waypoint
 
@@ -39,7 +39,7 @@ When you die, a red waypoint called **Last death** is added where it happened. T
 | `/wp untrack` | Stop tracking |
 | `/wp share <name>` | Post it in chat |
 
-On the world map, click an icon to open a popup with **Track**, **Share in chat** and, for your own waypoints, **Remove**. This works for dungeon and waystone icons too.
+On the world map, click an icon to open a popup with **Track**, **Share in chat** and, for your own waypoints, **Remove**.
 
 ## Seeing a waypoint
 
@@ -56,8 +56,6 @@ You can track **one** thing at a time. The tracked target:
 - Is cleared when you get within 3 blocks of it, with a message "You've arrived at...", or when you leave the server.
 - Only shows in its own dimension.
 
-The Journal's **Track** button uses the same system: it points your compass at the next place a quest needs you to go. See [Quests and the Journal](quests-and-journal).
-
 ## Sharing
 
 `/wp share <name>`, or **Share in chat** on the map, posts this in chat:
@@ -68,7 +66,7 @@ Players with the mod see clickable **Add** and **Track** buttons next to it. The
 
 ## Settings
 
-In **K, Settings, Map**, under Waypoints:
+In the menu under **Settings, Map**, in the Waypoints section:
 
 | Setting | Default | What it does |
 | --- | --- | --- |
@@ -80,11 +78,11 @@ In **K, Settings, Map**, under Waypoints:
 **NPCs and waypoints**, under the same category, turns the icons on both maps on or off. See [Settings](settings).
 
 > [!TIP]
-> Make a waypoint at your base, at dungeon entrances and at anything rare you find. `/wp list` then works as a quick way back: click **Track** and follow the compass.
+> Make a waypoint at your island's best spots, at the mine or farm you use most and at anything rare you find. `/wp list` then works as a quick way back: click **Track** and follow the compass.
 
 ## See also
 
 - [HUD and minimap](hud-and-minimap)
 - [Settings](settings)
-- [Waystones and travel](waystones-and-travel)
+- [SkyBlock Menu](skyblock-menu) (Fast Travel)
 - [Controls and keys](controls-and-keys)

@@ -1,0 +1,41 @@
+{
+ "name": "Cayenne",
+ "categories": [
+  "BELT",
+  "BRACELET",
+  "CLOAK",
+  "GLOVES",
+  "NECKLACE"
+ ],
+ "max": 5,
+ "xp": [
+  100,
+  100,
+  100,
+  100,
+  200
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "4": {
+   "lore": [
+    "§7Grants §c+0.8Health §7and §f+0.4True",
+    "§fDefense §7per digit in your §6Accessory",
+    "§6Power§7."
+   ],
+   "rarity": "COMMON",
+   "value": 0.8
+  },
+  "5": {
+   "lore": [
+    "§7Grants §c+1Health §7and §f+0.5True",
+    "§fDefense §7per digit in your §6Accessory",
+    "§6Power§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 1.0
+  }
+ }
+}

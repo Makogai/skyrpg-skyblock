@@ -37,10 +37,10 @@ If you prefer the plain Minecraft title screen, turn off **SkyRPG title screen**
 
 The setup has six steps. Use **Next** and **Back** to move between them. Every choice is applied straight away and saved. When you open it again later you can also close it with **Close** or **Esc** at any time.
 
-1. **Welcome.** What SkyRPG is, in two lines.
+1. **Welcome.** What SkyRPG is: a Hypixel SkyBlock clone, in two lines.
 2. **Performance.** Pick a preset. The one that suits your computer (from its memory, processor threads and graphics card) is named under the cards, and on the first start it is already applied, so you can just continue. Hover a card to see exactly what it sets.
-3. **Visuals.** Switch **shaders** on and choose a shader pack (needs the Iris mod and packs in the `shaderpacks` folder), and turn **resource packs** from the `resourcepacks` folder on or off. Scroll the lists with the mouse wheel. Resource packs reload once when you leave the step.
-4. **Controls.** The keys that matter: the SkyRPG keys (K menu, map, backpack, wiki lookup, spell wheel), zoom when Zoomify is installed, and movement. Click a key, then press the new one. **Esc** cancels and **Backspace** clears. A key shown in red is used by something else too. **Open all key bindings** opens Minecraft's full Controls screen.
+3. **Visuals.** Switch **shaders** on and choose a shader pack (needs the Iris mod and packs in the `shaderpacks` folder), and turn **resource packs** from the `resourcepacks` folder on or off. The FurfSky Reborn item looks are not in this list: they are always on. Scroll the lists with the mouse wheel. Resource packs reload once when you leave the step.
+4. **Controls.** The keys that matter: the SkyRPG keys (SkyBlock Menu, map, backpack, wiki lookup), zoom when Zoomify is installed, and movement. Click a key, then press the new one. **Esc** cancels and **Backspace** clears. A key shown in red is used by something else too. **Open all key bindings** opens Minecraft's full Controls screen.
 5. **Interface.** The settings that matter most: themed chat, message spacing, the HUD, the minimap, the tab list and the SkyRPG title screen. They are the same settings as K > Settings, so they stay in sync.
 6. **Done.** A summary of what you changed and a **Play SkyRPG** button.
 

@@ -1,0 +1,26 @@
+{
+ "name": "Compact",
+ "categories": [
+  "DRILL",
+  "GAUNTLET",
+  "PICKAXE"
+ ],
+ "max": 1,
+ "xp": [
+  25
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Gain §3+1☯ Mining Wisdom §7and a",
+    "§a0.25% §7chance to drop an",
+    "§7enchanted item."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  }
+ }
+}

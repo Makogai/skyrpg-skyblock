@@ -1,0 +1,83 @@
+{
+ "name": "Pesterminator",
+ "categories": [
+  "BOOTS",
+  "CARNIVAL_MASK",
+  "CHESTPLATE",
+  "HELMET",
+  "LEGGINGS"
+ ],
+ "max": 6,
+ "xp": [
+  5,
+  9,
+  13,
+  18,
+  23
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §6+2Farming Fortune §7and",
+    "§2+1Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §6+4Farming Fortune §7and",
+    "§2+2Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §6+6Farming Fortune §7and",
+    "§2+3Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §6+8Farming Fortune §7and",
+    "§2+4Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §6+10Farming Fortune §7and",
+    "§2+5Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 10.0
+  },
+  "6": {
+   "lore": [
+    "§7Grants §6+12Farming Fortune §7and",
+    "§2+6Bonus Pest Chance§7, which",
+    "§7increases your chance to spawn",
+    "§7bonus §2Pests §7on §aThe Garden§7."
+   ],
+   "rarity": "RARE",
+   "value": 12.0
+  }
+ }
+}

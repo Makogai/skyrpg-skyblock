@@ -1,0 +1,83 @@
+{
+ "name": "Turbo-Melon",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 7,
+ "xp": [
+  10,
+  20,
+  30,
+  40,
+  50
+ ],
+ "conflicts": [
+  "turbo_cactus",
+  "turbo_cane",
+  "turbo_carrot",
+  "turbo_coco",
+  "turbo_moonflower",
+  "turbo_mushrooms",
+  "turbo_potato",
+  "turbo_pumpkin",
+  "turbo_rose",
+  "turbo_sunflower",
+  "turbo_warts",
+  "turbo_wheat"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §6+5Melon Slice Fortune§7."
+   ],
+   "rarity": "COMMON",
+   "value": 5.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §6+10Melon Slice Fortune§7."
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §6+15Melon Slice Fortune§7."
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §6+20Melon Slice Fortune§7.",
+    "§7Requires §cBronze §7in a §aMelon Slice Contest§7!"
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §6+25Melon Slice Fortune§7.",
+    "§7Requires §fSilver §7in a §aMelon Slice Contest§7!"
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  },
+  "6": {
+   "lore": [
+    "§7Grants §6+30Melon Slice Fortune§7."
+   ],
+   "rarity": "RARE",
+   "value": 30.0
+  },
+  "7": {
+   "lore": [
+    "§7Grants §6+35Melon Slice Fortune§7."
+   ],
+   "rarity": "EPIC",
+   "value": 35.0
+  }
+ }
+}

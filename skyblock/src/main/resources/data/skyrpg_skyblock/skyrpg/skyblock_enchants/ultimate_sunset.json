@@ -1,0 +1,76 @@
+{
+ "name": "Sunset",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [
+  "ultimate_bank",
+  "ultimate_bobbin_time",
+  "ultimate_chimera",
+  "ultimate_combo",
+  "ultimate_fatal_tempo",
+  "ultimate_first_impression",
+  "ultimate_flash",
+  "ultimate_flowstate",
+  "ultimate_habanero_tactics",
+  "ultimate_inferno",
+  "ultimate_last_stand",
+  "ultimate_legion",
+  "ultimate_missile",
+  "ultimate_no_pain_no_gain",
+  "ultimate_one_for_all",
+  "ultimate_refrigerate",
+  "ultimate_reiterate",
+  "ultimate_rend",
+  "ultimate_soul_eater",
+  "ultimate_swarm",
+  "ultimate_wisdom",
+  "ultimate_wise"
+ ],
+ "ultimate": true,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7During the day, §e+1Overbloom§7.",
+    "§7During the night, §b-1% Visitor Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "2": {
+   "lore": [
+    "§7During the day, §e+2Overbloom§7.",
+    "§7During the night, §b-2% Visitor Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "3": {
+   "lore": [
+    "§7During the day, §e+3Overbloom§7.",
+    "§7During the night, §b-3% Visitor Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "4": {
+   "lore": [
+    "§7During the day, §e+4Overbloom§7.",
+    "§7During the night, §b-4% Visitor Cooldown."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "5": {
+   "lore": [
+    "§7During the day, §e+5Overbloom§7.",
+    "§7During the night, §b-5% Visitor Cooldown."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 5.0
+  }
+ }
+}

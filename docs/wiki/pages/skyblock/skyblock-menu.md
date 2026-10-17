@@ -20,7 +20,7 @@ On the right is everything you can open, in four colour-coded groups. Each tile 
 | World (aqua) | Fast Travel (warps unlocked), [Calendar](calendar-and-events) (today's date), Recipe Book |
 | Account (green) | [Profiles](profiles-and-islands) (how many of 5), Personal Bank, Settings |
 
-Grey tiles (SkyBlock Leveling, Recipe Book, Personal Bank) are still being built. Every page is also in the menu's sidebar on the left.
+The grey Personal Bank tile is still being built (the Banker in the Hub runs the bank for now). Every page is also in the menu's sidebar on the left.
 
 ## Fast Travel
 

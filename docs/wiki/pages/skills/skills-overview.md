@@ -63,4 +63,18 @@ A level up shows a notice and the list of rewards in chat:
 
 (Levelling several times at once adds up the rewards of every level in between.)
 
-Some [collection](collections) tiers also give skill XP ("+1,000 Mining Experience").
+Some [collection](collections) tiers list skill XP ("+1,000 Mining Experience"); those lines grant nothing yet.
+
+## Where each skill's XP comes from
+
+| Skill | Source | Page |
+| --- | --- | --- |
+| Farming | Fully grown crops on the Farm, the Barn and the Mushroom Desert | [Farming](farming) |
+| Mining | Stone and ore in the Coal Mine, Gold Mine and Deep Caverns | [Mining](mining) |
+| Foraging | Logs in the Forest and The Park | [Foraging](foraging) |
+| Fishing | Every catch, in any water | [Fishing](fishing) |
+| Combat | Killing the Hub's and the islands' mobs (their Combat XP) | [Slayers](slayers) for the bosses |
+| Enchanting | The stand-in enchanting screen (Hypixel enchanting is coming) | [Enchanting](enchanting) |
+| Carpentry | Crafting | [Crafting](crafting) |
+
+Minions give no skill XP, as on Hypixel. Runecrafting, Social and Hunting aren't built yet.

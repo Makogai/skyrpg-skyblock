@@ -103,18 +103,20 @@ public final class Abilities {
             refuse(serverPlayer, now, ability.name() + " is recharging: " + Msg.number(Math.ceil((readyAt - now) / 2.0) / 10.0) + "s");
             return InteractionResult.FAIL;
         }
-        if (ability.mana() > 0 && Stats.available() && Stats.mana(serverPlayer) < ability.mana()) {
+        // Ultimate Wise takes its percent off the mana cost.
+        double mana = ability.mana() * Math.max(0, 1 - ultimateWise(player.getItemInHand(hand)) / 100);
+        if (mana > 0 && Stats.available() && Stats.mana(serverPlayer) < mana) {
             refuse(serverPlayer, now, "Not enough mana for " + ability.name() + ": " + Msg.number(Math.floor(Stats.mana(serverPlayer)))
-                    + " / " + Msg.number(ability.mana()) + " " + StatTypes.MANA_ICON);
+                    + " / " + Msg.number(mana) + " " + StatTypes.MANA_ICON);
             return InteractionResult.FAIL;
         }
         if (!type.use(serverPlayer, ability)) {
             return InteractionResult.FAIL;
         }
         AbilityFx.cast(serverPlayer, ability);
-        if (ability.mana() > 0) {
-            Stats.spendMana(serverPlayer, ability.mana());
-            serverPlayer.sendOverlayMessage(Msg.text("✦ " + ability.name() + "  -" + Msg.number(ability.mana()) + " " + StatTypes.MANA_ICON + " Mana", ChatFormatting.AQUA));
+        if (mana > 0) {
+            Stats.spendMana(serverPlayer, mana);
+            serverPlayer.sendOverlayMessage(Msg.text("✦ " + ability.name() + "  -" + Msg.number(mana) + " " + StatTypes.MANA_ICON + " Mana", ChatFormatting.AQUA));
         } else {
             serverPlayer.sendOverlayMessage(Msg.text("✦ " + ability.name() + "!", ChatFormatting.GOLD));
         }
@@ -259,5 +261,12 @@ public final class Abilities {
         COOLDOWNS.remove(player);
         NOTICED.remove(player);
         READY.removeIf(ready -> ready.player().equals(player));
+    }
+
+    /** Ultimate Wise's percent off ability mana costs on this item (10% a level). */
+    private static double ultimateWise(net.minecraft.world.item.ItemStack stack) {
+        int level = com.skyrpg.items.ItemMods.enchantment(stack, "ultimate_wise");
+        com.skyrpg.items.enchant.Enchants.Enchant wise = com.skyrpg.items.enchant.Enchants.get("ultimate_wise");
+        return level <= 0 || wise == null ? 0 : wise.value(level);
     }
 }

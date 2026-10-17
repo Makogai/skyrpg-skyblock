@@ -153,6 +153,8 @@ class Game:
                 "rarity": d.get("rarity", "common"), "stats": d.get("stats", {}), "perks": d.get("perks", []),
                 "ability": d.get("ability"), "description": d.get("description", ""), "set": d.get("set"),
                 "type": d.get("type"), "kind": kind, "tier": d.get("tier"), "durability": d.get("durability"), "json": True,
+                "category": d.get("category"), "hypixel": d.get("hypixel") or {},
+                "skyblock": ns == "skyrpg_skyblock" and "skyblock_id" in d,
             }
         # items that only exist in code: names from lang files, rarity from the registering Java line
         java = {}
@@ -178,6 +180,7 @@ class Game:
             self.items[iid] = {
                 "id": iid, "ns": ns, "path": path, "name": v, "rarity": rarity, "stats": {}, "perks": [],
                 "ability": None, "description": "", "set": None, "type": None, "kind": None, "tier": None, "json": False,
+                "category": None, "hypixel": {}, "skyblock": False,
             }
         self.item_sets = {}
         for ns, rel, f in self.data_files("item_sets"):
@@ -197,6 +200,8 @@ class Game:
 
     def item_page(self, it):
         """Which reference page lists this item."""
+        if it.get("skyblock"):
+            return self.skyblock_page(it)
         kind, typ, path = it.get("kind"), (it.get("type") or ""), it["path"]
         if kind in ("SWORD", "WAND", "BOW"):
             return "items-weapons"
@@ -217,6 +222,25 @@ class Game:
             return "items-other"
         return "items-materials"
 
+    SB_PAGES = {
+        "items-weapons": ("SWORD", "LONGSWORD", "BOW", "WAND"),
+        "items-armour": ("HELMET", "CHESTPLATE", "LEGGINGS", "BOOTS"),
+        "items-accessories": ("ACCESSORY", "NECKLACE", "CLOAK", "BELT", "GLOVES", "BRACELET"),
+        "items-tools": ("PICKAXE", "DRILL", "AXE", "FARMING_TOOL", "FISHING_ROD", "SPADE", "SHEARS", "CHISEL", "WATERING_CAN",
+                        "VACUUM", "LASSO", "FISHING_NET", "GAUNTLET"),
+        "items-consumables": ("CONSUMABLE", "BAIT", "BOOSTER", "ARROW", "ARROW_POISON", "ABILITY_SCROLL", "CAPSULE"),
+    }
+
+    def skyblock_page(self, it):
+        """Reference page of a SkyBlock item, from its Hypixel category."""
+        cat = it.get("category")
+        if not cat:
+            return "items-materials"
+        for pid, cats in self.SB_PAGES.items():
+            if cat in cats:
+                return pid
+        return "items-other"
+
     # ----------------------------------------------------------------- sell prices, recipes, shops
     def load_prices(self):
         self.prices = {}
@@ -225,6 +249,10 @@ class Game:
             for k, v in d.items():
                 if isinstance(v, (int, float)) and ":" in k:
                     self.prices[k] = v
+        for iid, it in self.items.items():   # SkyBlock items sell at the NPC price from Hypixel's data
+            price = (it.get("hypixel") or {}).get("npc_sell_price")
+            if it.get("skyblock") and isinstance(price, (int, float)):
+                self.prices[iid] = price
 
     def load_recipes(self):
         self.recipes = {}   # result id -> list of recipe dicts

@@ -5,9 +5,9 @@ order: 5
 icon: minecraft:comparator
 summary: The Settings page: every category, every option and its default, and how to search and reset.
 ---
-The **Settings** page in the K menu holds every option the pack adds, in one place. Options are grouped into categories with a search box on top, and changes take effect straight away. Settings are saved on your own computer, in `config/skyrpg/client.json` in your game folder, so they belong to you, not the server.
+The **Settings** page in the menu holds every option the pack adds, in one place. Options are grouped into categories with a search box on top, and changes take effect straight away. Settings are saved on your own computer, in `config/skyrpg/client.json` in your game folder, so they belong to you, not the server.
 
-Open it with **K**, then **Settings**. It is the last page in the sidebar.
+Open the menu with **K** (or your own key), then **Settings**. It is the last page in the sidebar, and there is also a Settings tile in the SkyBlock Menu.
 
 ## Using the page
 
@@ -30,20 +30,20 @@ Open it with **K**, then **Settings**. It is the last page in the sidebar.
 
 ## Categories
 
-The page shows **Interface**, **HUD** and **Gameplay** first. The other categories follow: Chat, Map, Info, Effects, Builder and Brainrots.
+The page shows **Interface**, **HUD** and **Gameplay** first. The other categories follow: Chat, Map, Info, Effects, Builder and Brainrots. Builder and Brainrots belong to extras that cannot be reached in SkyBlock today, so they only matter if an admin gives you a Builder Station.
 
 ### Interface
 
 | Setting | Default | What it does |
 | --- | --- | --- |
-| Menu size | Auto | How big the K menu is. Auto fits it to your monitor. Compact and Large are the other choices |
+| Menu size | Auto | How big the menu is. Auto fits it to your monitor. Compact and Large are the other choices |
 | SkyRPG tab list | On | Players and your profile info when you hold Tab. Off brings back vanilla's list |
-| SkyRPG sidebar | On | Draws the scoreboard sidebar in the SkyRPG look |
+| SkyRPG sidebar | On | Draws the vanilla scoreboard sidebar (admin event boards) in the SkyRPG look. The SkyBlock sidebar is a HUD box, switched in the HUD category |
 | SkyRPG theme for all screens | On | Restyles Minecraft's own menus, buttons and inventories to match SkyRPG |
 | Classic stat symbols | Off | Shows stats with the original heart, star and similar symbols instead of SkyRPG's pixel icons |
 | SkyRPG title screen | On | The SkyRPG start screen with the Play button instead of Minecraft's. Takes effect the next time the title screen opens. See [First launch and setup](first-launch) |
 | Show the setup again | Button | Opens the first-time setup: performance preset, shaders, resource packs, keys and the main settings |
-| Detailed weapon art | On | Detailed, animated art for swords, pickaxes, spears, bows and shields, vanilla and SkyRPG. Off brings back the plain 16-pixel look |
+| Detailed weapon art | On | Detailed, animated art for swords, pickaxes, spears, bows and shields. Off brings back the plain 16-pixel look. SkyBlock items get their Hypixel look from FurfSky Reborn, which has no setting; see [SkyBlock items](skyblock-items#how-an-item-looks) |
 
 The theme, symbol and weapon art options swap resource packs, so the game reloads its resources when you change them. It does not restart.
 
@@ -54,11 +54,11 @@ The theme, symbol and weapon art options swap resource packs, so the game reload
 | SkyRPG HUD | On | Master switch for the info boxes |
 | Edit HUD layout | Button | Opens the HUD editor: drag, resize and hide every box |
 | One switch per box | On | Show or hide each box. The boxes are listed on [HUD and minimap](hud-and-minimap) |
-| Big moment banners | On | A banner when you level up a skill and at other milestones |
-| Mob nameplates | On | The level and health over hostile mobs near you |
+| Big moment banners | On | A banner when you level up a skill or your SkyBlock Level, and at other milestones |
+| Mob nameplates | On | The level and health over the mobs near you |
 | Hide skill XP text | On | The Skill progress box replaces the "+4 Farming" text above the hotbar |
 | Replace hearts with health bar | On | Hides vanilla's hearts and armour row. The health bar and the Defense box show them instead |
-| Event winner board | On | The podium with confetti when an event ends |
+| Event winner board | On | The podium with confetti when an admin event ends |
 
 ### Gameplay
 
@@ -68,7 +68,7 @@ The theme, symbol and weapon art options swap resource packs, so the game reload
 
 ### Chat
 
-Twelve options for the look of chat, mentions, tabs and pictures. They are explained on [Chat](chat).
+Thirteen options for the look of chat, mentions, tabs and pictures. They are explained on [Chat](chat).
 
 | Setting | Default |
 | --- | --- |
@@ -118,7 +118,7 @@ The last four are in a **Waypoints** section. See [Waypoints](waypoints).
 
 | Setting | Default | What it does |
 | --- | --- | --- |
-| Effects quality | High | Particle effects on gear, mobs, pets and abilities. Choose Off, Low or High. Off saves the most frames |
+| Effects quality | High | Particle effects on gear, mobs and pets. Choose Off, Low or High. Off saves the most frames |
 
 ### Builder
 
@@ -131,7 +131,7 @@ The last four are in a **Waypoints** section. See [Waypoints](waypoints).
 
 | Setting | Default | What it does |
 | --- | --- | --- |
-| Catch announcements | Card and voice | When anyone catches a brainrot: a card with them and the brainrot in 3D plus its voice, the card only, or nothing. See [Brainrots](brainrots#everyone-sees-your-catch) |
+| Catch announcements | Card and voice | When anyone catches a brainrot (nothing triggers it in SkyBlock today): a card with them and the brainrot in 3D plus its voice, the card only, or nothing. See [Brainrots](brainrots#everyone-sees-your-catch) |
 
 ## Settings worth changing
 
@@ -142,14 +142,14 @@ The last four are in a **Waypoints** section. See [Waypoints](waypoints).
 > If the chat feels busy, turn off **Message stripes** and **Show images**. To stop the game loading pictures from outside sites at all, set **Images from links** to Off.
 
 > [!TIP]
-> If your window is small, set **Menu size** to Compact. On a big monitor, Large gives the K menu more room.
+> If your window is small, set **Menu size** to Compact. On a big monitor, Large gives the menu more room.
 
 > [!NOTE]
 > Where a setting says "Known sites", those are imgur, Discord, Reddit, Tenor, Giphy and GitHub.
 
 ## See also
 
-- [K menu](k-menu)
+- [The menu](k-menu)
 - [HUD and minimap](hud-and-minimap)
 - [Chat](chat)
 - [Waypoints](waypoints)

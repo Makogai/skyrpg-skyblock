@@ -1,0 +1,72 @@
+{
+ "name": "Reflection",
+ "categories": [
+  "CARNIVAL_MASK",
+  "CHESTPLATE"
+ ],
+ "max": 5,
+ "xp": [
+  20,
+  40,
+  60,
+  80,
+  100
+ ],
+ "conflicts": [
+  "thorns"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §b+2Intelligence§7.",
+    "§7Grants §f+1True Defense§7.",
+    "§7When damaged by an arrow, deal §b2x §7your",
+    "§bIntelligence §7to its shooter."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §b+4Intelligence§7.",
+    "§7Grants §f+2True Defense§7.",
+    "§7When damaged by an arrow, deal §b5x §7your",
+    "§bIntelligence §7to its shooter."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §b+6Intelligence§7.",
+    "§7Grants §f+3True Defense§7.",
+    "§7When damaged by an arrow, deal §b10x §7your",
+    "§bIntelligence §7to its shooter."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §b+8Intelligence§7.",
+    "§7Grants §f+4True Defense§7.",
+    "§7When damaged by an arrow, deal §b20x §7your",
+    "§bIntelligence §7to its shooter."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §b+10Intelligence§7.",
+    "§7Grants §f+5True Defense§7.",
+    "§7When damaged by an arrow, deal §b30x §7your",
+    "§bIntelligence §7to its shooter."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 10.0
+  }
+ }
+}

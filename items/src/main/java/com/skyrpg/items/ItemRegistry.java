@@ -37,7 +37,10 @@ public final class ItemRegistry {
 
     /** The SkyBlock item with this id ("ASPECT_OF_THE_END"), or null. */
     public static ItemDefinition skyblock(String skyblockId) {
-        return skyblock.get(skyblockId);
+        ItemDefinition def = skyblock.get(skyblockId);
+        // Enchanted books by their Bazaar id ("ENCHANTMENT_SHARPNESS_6").
+        return def != null || skyblockId == null || !skyblockId.startsWith(com.skyrpg.items.enchant.Books.PRODUCT) ? def
+                : com.skyrpg.items.enchant.Books.definition(skyblockId);
     }
 
     /** Whether any SkyBlock items are loaded (stacks then need their custom data checked). */

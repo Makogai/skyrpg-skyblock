@@ -91,7 +91,7 @@ public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> 
         Draw.panel(g, rx, ry, rw, cardH(), Theme.CARD, preview.ok() ? Draw.mix(Theme.CARD_BORDER, accent, 0.6f) : Theme.CARD_BORDER);
         if (item.isEmpty() || def == null) {
             Draw.fit(g, font, Component.literal(preview.problem()), rx + rw / 2, ry + 14, rw - 10, 1f, 0.6f, Draw.Align.CENTER, Theme.DIM, false);
-            Draw.fit(g, font, Component.literal(reforge() ? "Reforges change an item's bonus stats" : "Recombobulators and Potato Books go here")
+            Draw.fit(g, font, Component.literal(reforge() ? "Reforges change an item's bonus stats" : "Books, Recombobulators and Potato Books go here")
                     .withColor(Theme.DIM), rx + rw / 2, ry + 26, rw - 10, 0.8f, 0.5f, Draw.Align.CENTER, Theme.DIM, false);
         } else {
             g.fillGradient(rx + 1, ry + 1, rx + rw - 1, ry + 24, Draw.withAlpha(accent, preview.ok() ? 0.28f : 0.12f), 0x00000000);
@@ -108,6 +108,11 @@ public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> 
                 status = Component.literal("✔ " + preview.action()).withColor(Theme.GREEN);
             }
             Draw.fit(g, font, status, rx + 27, ry + 16, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+            if (preview.levels() > 0) {
+                boolean afford = minecraft.player != null && (minecraft.player.isCreative() || minecraft.player.experienceLevel >= preview.levels());
+                Draw.fit(g, font, Component.literal("Cost: ").withColor(Theme.MUTED).append(Component.literal(preview.levels() + " XP levels")
+                        .withColor(afford ? 0xFF7EFC20 : Theme.RED)), rx + 27, ry + 26, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+            }
             if (preview.coins() > 0) {
                 Draw.fit(g, font, Component.literal("Cost: ").withColor(Theme.MUTED).append(Component.literal(Msg.number(preview.coins()) + " coins").withColor(COIN)),
                         rx + 27, ry + 26, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);

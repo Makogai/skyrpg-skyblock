@@ -1,0 +1,90 @@
+{
+ "name": "Luck",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 7,
+ "xp": [
+  10,
+  20,
+  30,
+  40,
+  50,
+  75,
+  200
+ ],
+ "conflicts": [
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a5%"
+   ],
+   "rarity": "COMMON",
+   "value": 5.0
+  },
+  "2": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a10%"
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "3": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a15%"
+   ],
+   "rarity": "COMMON",
+   "value": 15.0
+  },
+  "4": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a20%"
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "5": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a25%"
+   ],
+   "rarity": "UNCOMMON",
+   "value": 25.0
+  },
+  "6": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a30%"
+   ],
+   "rarity": "RARE",
+   "value": 30.0
+  },
+  "7": {
+   "lore": [
+    "§7Increases the chance for",
+    "§7Monsters to drop their armor by",
+    "§a35%"
+   ],
+   "rarity": "EPIC",
+   "value": 35.0
+  }
+ },
+ "table_max": 5
+}

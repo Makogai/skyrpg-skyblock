@@ -3,8 +3,10 @@ package com.skyrpg.items;
 import com.skyrpg.core.stats.StatType;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.items.mixin.CustomDataAccess;
+import com.skyrpg.items.enchant.Enchants;
 import com.skyrpg.items.reforge.Reforges;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -16,12 +18,14 @@ import net.minecraft.world.item.component.CustomData;
 /**
  * What's been done to one SkyBlock item, kept in its custom data under Hypixel's own keys: its reforge
  * ({@code modifier}), a Recombobulator 3000 ({@code rarity_upgrades}: one rarity up) and Hot Potato and Fuming Potato
- * Books ({@code hot_potato_count}, up to 10 + 5). Stats, name, rarity and tooltip all go through here.
+ * Books ({@code hot_potato_count}, up to 10 + 5) and its enchantments ({@code enchantments}: id to level). Stats, name,
+ * rarity and tooltip all go through here.
  */
 public final class ItemMods {
     public static final String MODIFIER = "modifier";
     public static final String RARITY_UPGRADES = "rarity_upgrades";
     public static final String HOT_POTATO = "hot_potato_count";
+    public static final String ENCHANTMENTS = "enchantments";
     /** Hot Potato Books stop at 10; Fuming Potato Books go on to 15. */
     public static final int HOT_POTATO_MAX = 10;
     public static final int FUMING_MAX = 15;
@@ -131,6 +135,55 @@ public final class ItemMods {
 
     public static void addPotatoBook(ItemStack stack) {
         edit(stack, tag -> tag.putInt(HOT_POTATO, tag.getIntOr(HOT_POTATO, 0) + 1));
+        SkyItems.normalize(stack);
+    }
+
+    /** Its enchantments, id to level, in the order they were put on (Hypixel's {@code enchantments} compound). */
+    public static Map<String, Integer> enchantments(ItemStack stack) {
+        CompoundTag tag = tag(stack);
+        if (tag == null || !(tag.get(ENCHANTMENTS) instanceof CompoundTag enchants) || enchants.isEmpty()) {
+            return Map.of();
+        }
+        Map<String, Integer> out = new LinkedHashMap<>();
+        for (String id : enchants.keySet()) {
+            int level = enchants.getIntOr(id, 0);
+            if (level > 0) {
+                out.put(id, level);
+            }
+        }
+        return out;
+    }
+
+    public static int enchantment(ItemStack stack, String id) {
+        return enchantments(stack).getOrDefault(id, 0);
+    }
+
+    /**
+     * Puts an enchantment on at that level (0 takes it off). Whatever conflicts with it comes off, and so does any other
+     * ultimate enchantment: an item has only one.
+     */
+    public static void setEnchantment(ItemStack stack, String id, int level) {
+        Enchants.Enchant enchant = Enchants.get(id);
+        edit(stack, tag -> {
+            CompoundTag enchants = tag.get(ENCHANTMENTS) instanceof CompoundTag existing ? existing : new CompoundTag();
+            if (enchant != null && level > 0) {
+                for (String other : List.copyOf(enchants.keySet())) {
+                    Enchants.Enchant on = Enchants.get(other);
+                    if (enchant.conflicts().contains(other) || on != null && on.conflicts().contains(id)
+                            || enchant.ultimate() && on != null && on.ultimate() && !other.equals(id)) {
+                        enchants.remove(other);
+                    }
+                }
+                enchants.putInt(id, level);
+            } else {
+                enchants.remove(id);
+            }
+            if (enchants.isEmpty()) {
+                tag.remove(ENCHANTMENTS);
+            } else {
+                tag.put(ENCHANTMENTS, enchants);
+            }
+        });
         SkyItems.normalize(stack);
     }
 }

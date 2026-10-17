@@ -89,6 +89,10 @@ public final class ItemWorkMenu extends AbstractContainerMenu {
             player.sendOverlayMessage(Component.literal(preview.problem()).withStyle(ChatFormatting.RED));
             return true;
         }
+        if (preview.levels() > 0 && !player.isCreative() && player.experienceLevel < preview.levels()) {
+            player.sendOverlayMessage(Component.literal("You need " + preview.levels() + " XP levels.").withStyle(ChatFormatting.RED));
+            return true;
+        }
         if (preview.coins() > 0 && !Purse.trySpend(player, preview.coins())) {
             player.sendOverlayMessage(Component.literal("You need ").withStyle(ChatFormatting.RED).append(Coins.text(preview.coins()))
                     .append(Component.literal(" coins in your purse.").withStyle(ChatFormatting.RED)));
@@ -104,6 +108,13 @@ public final class ItemWorkMenu extends AbstractContainerMenu {
             extra().shrink(1);
         }
         inputs.setChanged();
+        if (preview.levels() > 0) {
+            if (!player.isCreative()) {
+                player.giveExperienceLevels(-preview.levels());
+            }
+            com.skyrpg.core.skills.SkillLevels.giveXp(player, com.skyrpg.skyblock.enchant.EnchantMenu.ENCHANTING,
+                    com.skyrpg.skyblock.enchant.EnchantMenu.enchantingXp(preview.levels()));
+        }
         ItemStack after = item();
         int color = ItemMods.rarity(after, SkyItems.definition(after)).color();
         if (mode == ItemWork.Mode.REFORGE) {

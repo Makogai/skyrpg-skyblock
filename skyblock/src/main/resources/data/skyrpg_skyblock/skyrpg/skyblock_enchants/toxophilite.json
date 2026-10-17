@@ -1,0 +1,24 @@
+{
+ "name": "Toxophilite",
+ "categories": [
+  "BOW"
+ ],
+ "max": 1,
+ "xp": [
+  25
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Gain §a3% §7extra Combat XP. Grants",
+    "§9+3.7Crit Chance§7.",
+    "§850k Combat XP to tier up!"
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "name": "Lapidary",
+ "categories": [
+  "DRILL",
+  "GAUNTLET",
+  "PICKAXE"
+ ],
+ "max": 5,
+ "xp": [
+  25,
+  50,
+  100,
+  150,
+  200
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §6+10Gemstone Fortune §7and",
+    "§6+20Mining Speed §7while mining",
+    "§7Gemstones."
+   ],
+   "rarity": "COMMON",
+   "value": 10.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §6+20Gemstone Fortune §7and",
+    "§6+40Mining Speed §7while mining",
+    "§7Gemstones."
+   ],
+   "rarity": "COMMON",
+   "value": 20.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §6+30Gemstone Fortune §7and",
+    "§6+60Mining Speed §7while mining",
+    "§7Gemstones."
+   ],
+   "rarity": "COMMON",
+   "value": 30.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §6+40Gemstone Fortune §7and",
+    "§6+80Mining Speed §7while mining",
+    "§7Gemstones."
+   ],
+   "rarity": "COMMON",
+   "value": 40.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §6+50Gemstone Fortune §7and",
+    "§6+100Mining Speed §7while mining",
+    "§7Gemstones."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 50.0
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "name": "Lethality",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 6,
+ "xp": [
+  20,
+  25,
+  30,
+  40,
+  50,
+  200
+ ],
+ "conflicts": [
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a1.2% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "COMMON",
+   "value": 1.2
+  },
+  "2": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a2.4% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "COMMON",
+   "value": 2.4
+  },
+  "3": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a3.6% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "COMMON",
+   "value": 3.6
+  },
+  "4": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a4.8% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "COMMON",
+   "value": 4.8
+  },
+  "5": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a6% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 6.0
+  },
+  "6": {
+   "lore": [
+    "§7Reduces the §aDefense §7of your",
+    "§7target by §a9% §7for §64s §7each time you",
+    "§7hit them with melee. Stacks up to §a4",
+    "§7times."
+   ],
+   "rarity": "RARE",
+   "value": 9.0
+  }
+ },
+ "table_max": 5
+}

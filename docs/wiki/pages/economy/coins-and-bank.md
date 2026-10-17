@@ -3,24 +3,33 @@ title: Coins and the bank
 category: economy
 order: 1
 icon: minecraft:gold_ingot
-summary: Your purse and your bank: how coins are kept, the daily interest, and how to pay another player.
+summary: Your purse and your bank: where coins come from, what dying costs, and how the Banker's daily interest works.
 ---
-Coins are the currency of SkyRPG. You carry them in your **purse**, you can keep them in the **bank** at Skyhaven, and you can send them to other players. Everything that costs coins, from a pickaxe to an enchant to a slayer fee, comes out of your purse. This page explains how to move coins around, how the bank's daily interest works, and how to pay a friend.
+Coins are the currency of SkyRPG, as on Hypixel SkyBlock. You carry them in your **purse** and can keep them in the **bank** in Skyhaven. Everything that costs coins, from a pickaxe to a slayer quest to an Auction House bid, comes out of your purse. This page explains the purse, what happens to it when you die, and how the bank and its daily interest work.
 
 ## The purse
 
-Your purse is the coins you carry. It is saved with your character and **kept when you die**.
+Your purse is the coins you carry. It is saved with your [profile](profiles-and-islands), so each profile has its own.
 
-- A small pill in the top left of your screen shows the purse. You can move or hide it in the HUD editor. See [HUD and minimap](hud-and-minimap).
-- The Profile page in the K menu has two tiles, **Purse** and **Bank**.
+- The SkyBlock sidebar shows your purse. The SkyBlock Menu shows it too, next to your character.
 - `/coins` shows your purse and your bank in chat. `/coins <player>` shows someone else's.
 - Large numbers are shortened to fit, for example `1.23B`. Hover to see the full number.
 
-Coins come from quests, contracts, events, selling things, and monster loot. See [Selling and shops](selling-and-shops), [Contracts](contracts), [Events](events) and [Quests and the Journal](quests-and-journal).
+Coins come from:
+
+- **Selling** to NPC shops: every merchant buys anything that has an NPC price. See [NPC Shops](npc-shops).
+- **Trading**: the [Bazaar](bazaar) for materials and the [Auction House](auction-house) for gear.
+- **Monsters**: each kill in the Hub's areas and on the islands pays a few coins, and slayer bosses pay more. See [The Hub](the-hub) and [Slayers](slayers).
+- **Skill levels**, which pay coins as well as stats. See [Skills overview](skills-overview).
+- **Minions**, whose output you sell. See [Minions](minions).
+
+### Dying
+
+Like on Hypixel, you **keep your items** when you die, but you lose **half the coins in your purse**. Then you wake up on your Private Island. Coins in the bank are safe.
 
 ## The bank
 
-Cassius Vellum keeps the **Skyhaven Bank**, at the north end of the town. Right-click him to open the bank screen. You must be at the banker to use it, because the server checks that you are still talking to him.
+The **Banker** keeps the Skyhaven Bank, in the middle of the north side of the village. Right-click him to open the bank screen. You must be at the Banker to use it, because the server checks that you are still talking to him.
 
 ### Depositing and withdrawing
 
@@ -40,7 +49,7 @@ The screen also shows your last **ten** deposits and withdrawals with their time
 
 ### Why use the bank?
 
-Nothing takes coins from you when you die, so the bank is not a safe. Both the purse and the bank are kept. The reason to use the bank is the **interest**.
+Coins in the bank are not lost when you die, and they earn **interest**. Spend what you need, and put the rest in the bank before a risky fight.
 
 ### Interest
 
@@ -57,39 +66,11 @@ The 1% hits the cap at a balance of 500,000 coins. Keeping more than that earns 
 
 Interest is paid only when you log in, so missing a day costs you that day's interest. It does not stack up.
 
+> [!NOTE]
+> Hypixel pays 2% every 31 hours, with higher caps and upgrade accounts. That is not built yet: the bank here pays the simple daily rate above.
+
 > [!TIP]
-> Put coins you are saving for something expensive into the bank at the end of each session. A balance of 100,000 earns 1,000 a day.
-
-## Paying other players
-
-There are two ways to send coins to another player. Both do the same checks.
-
-### The Pay page
-
-Press **K** and open **Pay**.
-
-1. Pick someone from the list of online players. Narrow screens show the list first, then the payment panel with a back arrow.
-2. Type an amount, or tap a preset: **100**, **1k**, **10k**, **Half** or **All**. `2.5k` and `1m` work.
-3. Press **Enter**, or click Send.
-
-The page shows your purse counting down as the coins leave, and says "Sent N to Name" when it is done.
-
-### The command
-
-```
-/pay <player> <amount>
-```
-
-The player must be online.
-
-### Rules
-
-- You cannot pay yourself.
-- The minimum payment is 1 coin.
-- You need the coins in your **purse**. Bank coins must be withdrawn first.
-- **Big payments take a second click.** On the Pay page, a payment of 10,000 coins or more, or of half your purse or more, asks you to click again within 4 seconds to confirm. The page says how much of your purse it is.
-- The receiver gets a "paid you" message and a chime. Each of you hears a sound.
-- Payments are logged on the server.
+> A balance of 100,000 earns 1,000 a day. Put coins you are saving for something expensive into the bank at the end of each session.
 
 ## Useful numbers
 
@@ -97,13 +78,14 @@ The player must be online.
 | --- | --- |
 | Interest | 1% a day, up to 5,000 |
 | Bank history | Last 10 entries |
-| Big payment | 10,000 coins, or half your purse |
-| Contract reroll | 500 coins |
-| Talent reset | Free once a day, then 2,000 coins |
+| Lost on death | Half the purse |
+| Bazaar tax | 1.25% |
+| Auction House listing fee | 1%, 2% or 2.5% by price |
 
 ## See also
 
-- [Selling and shops](selling-and-shops)
-- [Contracts](contracts)
-- [K menu](k-menu)
+- [NPC Shops](npc-shops)
+- [Bazaar](bazaar)
+- [Auction House](auction-house)
+- [SkyBlock Menu](skyblock-menu)
 - [Controls and keys](controls-and-keys)

@@ -1,0 +1,44 @@
+{
+ "name": "Quantum",
+ "categories": [
+  "NECKLACE"
+ ],
+ "max": 5,
+ "xp": [
+  50,
+  50,
+  100
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "3": {
+   "lore": [
+    "§7Grants §4+1Vitality §7on weekdays and",
+    "§3+1.2☯ §7of a random §3Wisdom §7stat on",
+    "§7weekends."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §4+2Vitality §7on weekdays and",
+    "§3+1.6☯ §7of a random §3Wisdom §7stat on",
+    "§7weekends."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §4+3Vitality §7on weekdays and",
+    "§3+2☯ §7of a random §3Wisdom §7stat on",
+    "§7weekends."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 3.0
+  }
+ }
+}

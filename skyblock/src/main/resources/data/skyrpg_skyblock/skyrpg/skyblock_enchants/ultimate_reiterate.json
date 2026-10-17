@@ -1,0 +1,86 @@
+{
+ "name": "Duplex",
+ "categories": [
+  "BOW"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [
+  "ultimate_bank",
+  "ultimate_bobbin_time",
+  "ultimate_chimera",
+  "ultimate_combo",
+  "ultimate_fatal_tempo",
+  "ultimate_first_impression",
+  "ultimate_flash",
+  "ultimate_flowstate",
+  "ultimate_habanero_tactics",
+  "ultimate_inferno",
+  "ultimate_last_stand",
+  "ultimate_legion",
+  "ultimate_missile",
+  "ultimate_no_pain_no_gain",
+  "ultimate_one_for_all",
+  "ultimate_refrigerate",
+  "ultimate_rend",
+  "ultimate_soul_eater",
+  "ultimate_sunset",
+  "ultimate_swarm",
+  "ultimate_wisdom",
+  "ultimate_wise"
+ ],
+ "ultimate": true,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Shoot a second arrow dealing §c4% §7of",
+    "§7the first arrow's damage.",
+    "§7Targets hit take §c1.1x §7fire",
+    "§7damage for §a60s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "2": {
+   "lore": [
+    "§7Shoot a second arrow dealing §c8% §7of",
+    "§7the first arrow's damage.",
+    "§7Targets hit take §c1.2x §7fire",
+    "§7damage for §a60s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "3": {
+   "lore": [
+    "§7Shoot a second arrow dealing §c12%",
+    "§7of the first arrow's damage.",
+    "§7Targets hit take §c1.3x §7fire",
+    "§7damage for §a60s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 12.0
+  },
+  "4": {
+   "lore": [
+    "§7Shoot a second arrow dealing §c16%",
+    "§7of the first arrow's damage.",
+    "§7Targets hit take §c1.4x §7fire",
+    "§7damage for §a60s§7."
+   ],
+   "rarity": "COMMON",
+   "value": 16.0
+  },
+  "5": {
+   "lore": [
+    "§7Shoot a second arrow dealing §c20%",
+    "§7of the first arrow's damage.",
+    "§7Targets hit take §c1.5x §7fire",
+    "§7damage for §a60s§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 20.0
+  }
+ }
+}

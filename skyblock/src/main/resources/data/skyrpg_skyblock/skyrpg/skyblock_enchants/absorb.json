@@ -1,0 +1,22 @@
+{
+ "name": "Absorb",
+ "categories": [
+  "AXE"
+ ],
+ "max": 1,
+ "xp": [],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §3+1☯ Foraging Wisdom §7and",
+    "§6+2Foraging Fortune§7.",
+    "§81k logs to tier up!"
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  }
+ }
+}

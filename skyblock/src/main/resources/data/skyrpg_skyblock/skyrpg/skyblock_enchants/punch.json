@@ -1,0 +1,32 @@
+{
+ "name": "Punch",
+ "categories": [
+  "BOW"
+ ],
+ "max": 2,
+ "xp": [
+  15,
+  30
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Increases arrow knockback by",
+    "§a3§7 blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "2": {
+   "lore": [
+    "§7Increases arrow knockback by",
+    "§a6§7 blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  }
+ }
+}

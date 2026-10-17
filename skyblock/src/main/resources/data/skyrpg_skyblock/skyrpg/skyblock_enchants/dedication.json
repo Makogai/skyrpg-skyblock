@@ -1,0 +1,54 @@
+{
+ "name": "Dedication",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 4,
+ "xp": [
+  20,
+  25,
+  30,
+  100
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §60.5Farming Fortune §7for",
+    "§7crops, multiplied by your §aGarden",
+    "§7milestone for that crop."
+   ],
+   "rarity": "COMMON",
+   "value": 0.5
+  },
+  "2": {
+   "lore": [
+    "§7Grants §60.75Farming Fortune §7for",
+    "§7crops, multiplied by your §aGarden",
+    "§7milestone for that crop."
+   ],
+   "rarity": "COMMON",
+   "value": 0.75
+  },
+  "3": {
+   "lore": [
+    "§7Grants §61Farming Fortune §7for",
+    "§7crops, multiplied by your §aGarden",
+    "§7milestone for that crop."
+   ],
+   "rarity": "COMMON",
+   "value": 1.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §62Farming Fortune §7for",
+    "§7crops, multiplied by your §aGarden",
+    "§7milestone for that crop."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  }
+ }
+}

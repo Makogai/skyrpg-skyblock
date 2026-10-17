@@ -23,6 +23,8 @@ public final class SkyMenus {
             new MenuType<>(CraftMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<ItemWorkMenu> REFORGE = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("reforge"),
             new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.REFORGE, id, inventory, ItemWork.Mode.REFORGE), FeatureFlags.VANILLA_SET));
+    public static final MenuType<com.skyrpg.skyblock.enchant.EnchantMenu> ENCHANT = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("enchant"), new MenuType<>(com.skyrpg.skyblock.enchant.EnchantMenu::new, FeatureFlags.VANILLA_SET));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),
             new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.ANVIL, id, inventory, ItemWork.Mode.ANVIL), FeatureFlags.VANILLA_SET));
 

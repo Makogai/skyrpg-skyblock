@@ -1,0 +1,28 @@
+{
+ "name": "Counter-Strike",
+ "categories": [
+  "CARNIVAL_MASK",
+  "CHESTPLATE"
+ ],
+ "max": 5,
+ "xp": [
+  0,
+  0,
+  60,
+  80,
+  100
+ ],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "5": {
+   "lore": [
+    "§7Gain §a+10Defense §7for §a7s §7on the",
+    "§7first hit from an enemy."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 10.0
+  }
+ }
+}

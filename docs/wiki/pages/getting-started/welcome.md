@@ -5,18 +5,17 @@ order: 1
 icon: minecraft:amethyst_cluster
 summary: What SkyRPG is, how to install the pack and join the server, and what is inside it.
 ---
-SkyRPG is a Hypixel SkyBlock-style RPG for Minecraft Java Edition **26.3**, built on Fabric. You level skills, gather rare materials, craft better gear, fight bosses and clear dungeons, all the way up to the Ender Wyrm. Every gameplay system is our own mod. Other mods are only used for utilities.
+SkyRPG is a 1:1 clone of Hypixel SkyBlock for Minecraft Java Edition **26.3**, built on Fabric. You start on your own floating **Private Island**, level skills, collect resources, build minions, trade on the Bazaar and the Auction House, slay bosses and climb the SkyBlock Level, with Hypixel's items, numbers and look. Every gameplay system is our own mod. Other mods are only used for utilities.
 
 This page tells you what you need to play, how to install it and join, and what the pack adds. Read [First steps](first-steps) next.
 
-## The two worlds
+## Where you play
 
-You play in two places.
+- **Your Private Island** is yours alone: a small island with a tree, a portal to the Hub and room to build. Everyone starts here, and `/is` brings you back from anywhere. Place your minions here. See [Profiles and islands](profiles-and-islands).
+- **The Hub** is the village of **Skyhaven**, with the shops, the Bank, the Bazaar, the Auction House and Maddox the Slayer, and seven areas on islands around it: the Graveyard, Coal Mine, Farm, Forest, Ruins, Mountain and Wilderness. See [Skyhaven](skyhaven) and [The Hub](the-hub).
+- **The public islands** are shared, and you reach them by launch pads and `/warp`: the Farming Islands, the Park, the Gold Mine, the Deep Caverns and the Spider's Den. Each needs a skill level to enter. See [The Islands](the-islands).
 
-- **Skyhaven** is the hub: a floating village above the clouds. Everyone spawns here. It is safe: nobody can fight, take damage or go hungry, and blocks cannot be broken or placed. The shops, the bank, the Masters of each skill and the Wildgate are here. See [Skyhaven](skyhaven).
-- **The survival world** is where you really play. Forests, caves, villages, dungeons, danger regions, the Nether and the End. Walk through the Wildgate or type `/survival` to go there. `/hub` brings you home. You return to where you left off.
-
-If you die without a bed you wake up in Skyhaven. Your coins are kept on death.
+You play on a **profile**, and you can keep up to five, each with its own island, inventory, skills and coins. When you die you keep your items and lose half your purse, then wake up on your island. The old survival world is kept only as an archive: nothing in the pack sends you there.
 
 ## What you need
 
@@ -57,45 +56,40 @@ If you cannot use the instance, the host can give you `SkyRPG-<version>.zip`. Un
 
 The easy way is the **Play SkyRPG** button on the title screen, which joins for you. The server needs the group's **Radmin VPN**: connect to the VPN network first, or the game cannot reach it. See [First launch and setup](first-launch).
 
-When you first appear in Skyhaven you get a short welcome in chat. Press **K** to open the SkyRPG menu and talk to Hollis Barrowmead at the tavern to start the questline. [First steps](first-steps) walks you through it.
+You appear on your Private Island with a short welcome in chat. Press **K** to open the SkyBlock Menu. [First steps](first-steps) walks you through what to do.
 
 ## What is in the pack
 
-Every system below is its own small mod with its own icon: see [The SkyRPG Mods](skyrpg-mods) for all 27.
+Every system below is its own small mod with its own icon: see [The SkyRPG Mods](skyrpg-mods) for all 31.
 
 | System | What it does | Where to read more |
 | --- | --- | --- |
+| SkyBlock Menu | One board for your profile, skills, collections, storage, warps and more | [SkyBlock Menu](skyblock-menu) |
+| Profiles and islands | Up to five profiles, each with a Private Island; visits and co-ops | [Profiles and islands](profiles-and-islands) |
+| The Hub and the islands | Skyhaven, its seven areas and the public islands | [The Hub](the-hub), [The Islands](the-islands) |
+| Skills | Hypixel's nine skills, with levels, stats and coins as rewards | [Skills overview](skills-overview) |
+| Collections | 83 collections whose tiers unlock recipes and minions | [Collections](collections) |
+| Minions | 61 minion types that work your island while you are away | [Minions](minions) |
+| Recipe Book | Every recipe, with what unlocks it | [Recipe Book](recipe-book) |
+| Economy | Purse, Bank, NPC shops, Bazaar and Auction House | [Coins and the bank](coins-and-bank), [NPC Shops](npc-shops), [Bazaar](bazaar), [Auction House](auction-house) |
+| SkyBlock Level | XP from nearly everything you do, with unlocks along the way | [SkyBlock Leveling](skyblock-leveling) |
+| Slayers | Four slayer bosses, from the Revenant Horror to the Voidgloom Seraph | [Slayers](slayers) |
+| Storage | Ender Chest pages and the Wardrobe | [Storage and Wardrobe](storage-and-wardrobe) |
+| Items and reforging | Hypixel's items and their stats, reforges at the Blacksmith | [SkyBlock Items](skyblock-items), [Reforging](reforging) |
+| Gear and enchanting | Weapons, armour, accessories, enchants, backpacks | [Weapons](weapons), [Armour sets](armour-sets), [Enchanting](enchanting) |
+| Calendar | The SkyBlock date and its events | [Calendar and Events](calendar-and-events) |
 | Extra mods and shaders | Sodium, Iris shader support, Zoomify and other speed and comfort mods, installed for you | [Mods and shaders](mods-and-shaders) |
-| Skyhaven hub | The floating town, its shops and NPCs | [Skyhaven](skyhaven), [NPCs](npcs) |
-| Skyhaven Chronicle | The main questline: 8 chapters, 59 quests | [Quests and the Journal](quests-and-journal) |
-| Skills | Seven skills with levels, talents and stat rewards | [Skills overview](skills-overview) |
-| Stats | Health, Defense, Strength, Crit, Speed, Intelligence, fortunes, wisdom, Magic Find | [Stats](stats) |
-| Economy | Purse, bank, shops, selling, paying players | [Coins and the bank](coins-and-bank) |
-| Gear | Weapons, armour sets, tools, accessories, backpacks | [Weapons](weapons), [Armour sets](armour-sets) |
-| Artisan Bench | Crafting for all SkyRPG gear, gated by skill and collection levels | [Crafting](crafting) |
-| Collections | Gather items to climb tiers and earn the SkyBlock Level | [Collections](collections) |
-| Contracts and events | Daily shared contracts and timed competitions | [Contracts](contracts), [Events](events) |
-| Combat | Mob levels, Elites, world bosses, slayers | [Combat basics](combat-basics), [Slayers](slayers) |
-| Dungeons | Eight dungeons that generate from the world seed | [Dungeons](dungeons-overview) |
-| The World | Danger regions, waystones, the Deep, the Nether, the End | [The survival world](survival-world) |
-| Enchanting | 72 enchants, tomes and the Codex | [Enchanting](enchanting) |
-| Pets and mounts | A pet for each skill, and griffins you can ride | [Pets](pets), [Mounts](mounts) |
-| Builder Station | Load a village house or your own schematic, place its hologram, deliver the materials and it builds itself | [Builder Station](builder-station) |
-| Interface | The K menu, themed chat, HUD, minimap, world map | [K menu](k-menu), [Chat](chat) |
-
-## The seven skills
-
-Combat, Farming, Fishing, Foraging and Mining level from playing. Enchanting levels as you enchant, and Delving levels in dungeons. Every skill goes to level 50. Each level gives stats and a talent point. See [Skills overview](skills-overview).
+| Interface | The menu, themed chat, HUD, minimap, world map, SkyHelper | [K menu](k-menu), [Chat](chat), [SkyHelper](skyhelper) |
 
 ## Good to know before you start
 
 - Your settings and HUD layout are saved on your own computer, not on the server.
-- Your purse, bank, skills, pets, collections and quest progress are saved with your character on the server.
+- Your purse, Bank, skills, pets and collections are saved with your profile on the server.
+- Item looks come from the FurfSky Reborn resource pack, which the pack installs and keeps on. See [Mods and shaders](mods-and-shaders).
 - The server keeps a log of chat, so do not post anything private there.
-- The Nether and the End are the vanilla dimensions, with new biomes, dungeons and bosses added.
 
 > [!TIP]
-> Lost? Press **K** and open the **Journal**. It always points to your next quest, and the Track button puts a compass arrow on it.
+> Lost? Press **K** and open the **SkyBlock Menu**. Every page of the game is one click away from it, and [First steps](first-steps) lists what to do first.
 
 ## See also
 

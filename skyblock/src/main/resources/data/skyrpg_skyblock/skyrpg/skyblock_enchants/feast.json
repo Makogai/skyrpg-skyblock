@@ -1,0 +1,48 @@
+{
+ "name": "Feast",
+ "categories": [
+  "FARMING_TOOL"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §e+2Overbloom§7."
+   ],
+   "rarity": "COMMON",
+   "value": 2.0
+  },
+  "2": {
+   "lore": [
+    "§7Grants §e+4Overbloom§7."
+   ],
+   "rarity": "COMMON",
+   "value": 4.0
+  },
+  "3": {
+   "lore": [
+    "§7Grants §e+6Overbloom§7."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  },
+  "4": {
+   "lore": [
+    "§7Grants §e+8Overbloom§7."
+   ],
+   "rarity": "COMMON",
+   "value": 8.0
+  },
+  "5": {
+   "lore": [
+    "§7Grants §e+10Overbloom§7."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 10.0
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "name": "Green Thumb",
+ "categories": [
+  "BELT",
+  "BRACELET",
+  "CLOAK",
+  "NECKLACE"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Grants §60.05Farming Fortune",
+    "§7per unique visitor served."
+   ],
+   "rarity": "COMMON",
+   "value": 0.05
+  },
+  "2": {
+   "lore": [
+    "§7Grants §60.1Farming Fortune",
+    "§7per unique visitor served."
+   ],
+   "rarity": "COMMON",
+   "value": 0.1
+  },
+  "3": {
+   "lore": [
+    "§7Grants §60.15Farming Fortune",
+    "§7per unique visitor served."
+   ],
+   "rarity": "COMMON",
+   "value": 0.15
+  },
+  "4": {
+   "lore": [
+    "§7Grants §60.2Farming Fortune",
+    "§7per unique visitor served."
+   ],
+   "rarity": "COMMON",
+   "value": 0.2
+  },
+  "5": {
+   "lore": [
+    "§7Grants §60.25Farming Fortune",
+    "§7per unique visitor served."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 0.25
+  }
+ }
+}

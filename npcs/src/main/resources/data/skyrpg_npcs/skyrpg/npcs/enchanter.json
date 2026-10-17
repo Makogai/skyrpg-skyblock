@@ -14,15 +14,13 @@
   "yaw": 180.0,
   "sound": "minecraft:block.enchantment_table.use",
   "greetings": [
-    "The runes are awake. Bring me something worth binding.",
-    "Bookshelves listen. Fifteen of them, and a table will offer you anything I can.",
-    "Two tomes alike become one stronger. That is how the great enchants are made.",
-    "Ultimate magic is jealous. An item will hold only one.",
-    "Salvage what you can't use. Runic Dust feeds the strongest work.",
-    "Sneak and speak to me again if you want spell scrolls for a wand."
+    "Bring me a weapon, armour or a tool and some experience. I'll bind an enchantment to it.",
+    "Two equal books make a stronger one at the anvil, up to what my table can do.",
+    "Ultimate enchantments are jealous. An item holds only one.",
+    "The rarest books come from the Bazaar, not from my table."
   ],
   "action": {
-    "type": "open_enchanting",
+    "type": "skyblock_enchanting",
     "params": {}
   }
 }

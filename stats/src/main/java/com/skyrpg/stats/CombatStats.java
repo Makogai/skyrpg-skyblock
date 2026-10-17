@@ -2,6 +2,7 @@ package com.skyrpg.stats;
 
 import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.core.stats.Crits;
+import com.skyrpg.core.stats.DamageBonus;
 import com.skyrpg.core.stats.IncomingDamage;
 import com.skyrpg.core.stats.SkyArrows;
 import com.skyrpg.core.stats.StatTypes;
@@ -64,9 +65,10 @@ public final class CombatStats {
             }
         }
 
-        // The Combat skill's Warrior perk: +4% damage to mobs a level up to 50, +1% a level after (Hypixel).
+        // The Combat skill's Warrior perk (+4% damage to mobs a level up to 50, +1% a level after) and the other additive
+        // bonuses (enchantments), added up into one multiplier as on Hypixel.
         if (source.getEntity() instanceof ServerPlayer hitter && !(target instanceof net.minecraft.world.entity.player.Player)) {
-            damage *= 1 + warrior(SkillLevels.level(hitter, SkillLevels.COMBAT)) / 100.0;
+            damage *= 1 + (warrior(SkillLevels.level(hitter, SkillLevels.COMBAT)) + DamageBonus.percent(hitter, target, source)) / 100.0;
         }
 
         // Other mods' multipliers (slayer bosses tougher than vanilla's health cap, slayer weapons).

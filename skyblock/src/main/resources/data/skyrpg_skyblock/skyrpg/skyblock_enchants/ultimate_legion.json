@@ -1,0 +1,85 @@
+{
+ "name": "Legion",
+ "categories": [
+  "BOOTS",
+  "CARNIVAL_MASK",
+  "CHESTPLATE",
+  "HELMET",
+  "LEGGINGS"
+ ],
+ "max": 5,
+ "xp": [],
+ "conflicts": [
+  "ultimate_bank",
+  "ultimate_bobbin_time",
+  "ultimate_chimera",
+  "ultimate_combo",
+  "ultimate_fatal_tempo",
+  "ultimate_first_impression",
+  "ultimate_flash",
+  "ultimate_flowstate",
+  "ultimate_habanero_tactics",
+  "ultimate_inferno",
+  "ultimate_last_stand",
+  "ultimate_missile",
+  "ultimate_no_pain_no_gain",
+  "ultimate_one_for_all",
+  "ultimate_refrigerate",
+  "ultimate_reiterate",
+  "ultimate_rend",
+  "ultimate_soul_eater",
+  "ultimate_sunset",
+  "ultimate_swarm",
+  "ultimate_wisdom",
+  "ultimate_wise"
+ ],
+ "ultimate": true,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Increases all §cCombat §7stats and §b",
+    "§bMagic Find §7by §e0.07% §7per player within",
+    "§b30 §7blocks of you, up to §c20 §7players."
+   ],
+   "rarity": "COMMON",
+   "value": 0.07
+  },
+  "2": {
+   "lore": [
+    "§7Increases all §cCombat §7stats and §b",
+    "§bMagic Find §7by §e0.14% §7per player within",
+    "§b30 §7blocks of you, up to §c20 §7players."
+   ],
+   "rarity": "COMMON",
+   "value": 0.14
+  },
+  "3": {
+   "lore": [
+    "§7Increases all §cCombat §7stats and §b",
+    "§bMagic Find §7by §e0.21% §7per player within",
+    "§b30 §7blocks of you, up to §c20 §7players."
+   ],
+   "rarity": "COMMON",
+   "value": 0.21
+  },
+  "4": {
+   "lore": [
+    "§7Increases all §cCombat §7stats and §b",
+    "§bMagic Find §7by §e0.28% §7per player within",
+    "§b30 §7blocks of you, up to §c20 §7players."
+   ],
+   "rarity": "COMMON",
+   "value": 0.28
+  },
+  "5": {
+   "lore": [
+    "§7Increases all §cCombat §7stats and §b",
+    "§bMagic Find §7by §e0.35% §7per player within",
+    "§b30 §7blocks of you, up to §c20 §7players."
+   ],
+   "rarity": "UNCOMMON",
+   "value": 0.35
+  }
+ }
+}

@@ -2379,6 +2379,28 @@
      ]
     },
     {
+     "name": "Absorb",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ABSORB_1",
+       "buy": 4599607.0,
+       "sell": 4209080.6
+      }
+     ]
+    },
+    {
+     "name": "Angler",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ANGLER_6",
+       "buy": 153723.3,
+       "sell": 10.0
+      }
+     ]
+    },
+    {
      "name": "Arrow Poisons",
      "icon": "TWILIGHT_ARROW_POISON",
      "products": [
@@ -2446,6 +2468,117 @@
      ]
     },
     {
+     "name": "Bane of Arthropods",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_BANE_OF_ARTHROPODS_6",
+       "buy": 17096.3,
+       "sell": 0.0
+      }
+     ]
+    },
+    {
+     "name": "Bank",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BANK_1",
+       "buy": 0.1,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BANK_3",
+       "buy": 0.1,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BANK_2",
+       "buy": 0.2,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BANK_4",
+       "buy": 26570.7,
+       "sell": 0.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BANK_5",
+       "buy": 69998.9,
+       "sell": 5001.8
+      }
+     ]
+    },
+    {
+     "name": "Big Brain",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_BIG_BRAIN_3",
+       "buy": 25819885.8,
+       "sell": 20623734.5
+      },
+      {
+       "id": "ENCHANTMENT_BIG_BRAIN_4",
+       "buy": 58000000.0,
+       "sell": 1157630.4
+      },
+      {
+       "id": "ENCHANTMENT_BIG_BRAIN_5",
+       "buy": 144999999.7,
+       "sell": 80000000.0
+      }
+     ]
+    },
+    {
+     "name": "Blast Protection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_BLAST_PROTECTION_6",
+       "buy": 2011.8,
+       "sell": 2000.0
+      },
+      {
+       "id": "ENCHANTMENT_BLAST_PROTECTION_7",
+       "buy": 3999995.1,
+       "sell": 1200000.8
+      }
+     ]
+    },
+    {
+     "name": "Blessing",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_BLESSING_6",
+       "buy": 1799999.7,
+       "sell": 1059461.3
+      }
+     ]
+    },
+    {
+     "name": "Bobbin' Time",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BOBBIN_TIME_3",
+       "buy": 69998999.8,
+       "sell": 65937809.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BOBBIN_TIME_5",
+       "buy": 313997997.5,
+       "sell": 215199903.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_BOBBIN_TIME_4",
+       "buy": 500000000.0,
+       "sell": 110000000.2
+      }
+     ]
+    },
+    {
      "name": "Boosters",
      "icon": "SWEEP_BOOSTER",
      "products": [
@@ -2502,6 +2635,175 @@
      ]
     },
     {
+     "name": "Caster",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CASTER_6",
+       "buy": 51018.5,
+       "sell": 1.1
+      }
+     ]
+    },
+    {
+     "name": "Cayenne",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CAYENNE_4",
+       "buy": 15999996.9,
+       "sell": 2800002.8
+      },
+      {
+       "id": "ENCHANTMENT_CAYENNE_5",
+       "buy": 25999952.1,
+       "sell": 22000000.6
+      }
+     ]
+    },
+    {
+     "name": "Champion",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CHAMPION_1",
+       "buy": 4786153.6,
+       "sell": 4112934.7
+      }
+     ]
+    },
+    {
+     "name": "Chance",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CHANCE_4",
+       "buy": 232245.9,
+       "sell": 50001.2
+      },
+      {
+       "id": "ENCHANTMENT_CHANCE_5",
+       "buy": 67676766.1,
+       "sell": 55000000.2
+      }
+     ]
+    },
+    {
+     "name": "Charm",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CHARM_1",
+       "buy": 17564.8,
+       "sell": 5690.5
+      },
+      {
+       "id": "ENCHANTMENT_CHARM_2",
+       "buy": 76806.1,
+       "sell": 111.8
+      },
+      {
+       "id": "ENCHANTMENT_CHARM_3",
+       "buy": 439997.6,
+       "sell": 8012.4
+      },
+      {
+       "id": "ENCHANTMENT_CHARM_4",
+       "buy": 629081.6,
+       "sell": 101.2
+      },
+      {
+       "id": "ENCHANTMENT_CHARM_5",
+       "buy": 825836.2,
+       "sell": 476229.7
+      }
+     ]
+    },
+    {
+     "name": "Chimera",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_CHIMERA_1",
+       "buy": 22196052.8,
+       "sell": 20774876.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_CHIMERA_2",
+       "buy": 48999999.8,
+       "sell": 27000012.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_CHIMERA_3",
+       "buy": 108072773.2,
+       "sell": 50100010.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_CHIMERA_4",
+       "buy": 244999999.7,
+       "sell": 107250002.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_CHIMERA_5",
+       "buy": 415000000.0,
+       "sell": 290000000.0
+      }
+     ]
+    },
+    {
+     "name": "Cleave",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CLEAVE_6",
+       "buy": 22084802.3,
+       "sell": 19194085.5
+      }
+     ]
+    },
+    {
+     "name": "Combo",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_COMBO_1",
+       "buy": 0.7,
+       "sell": 0.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_COMBO_2",
+       "buy": 2.0,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_COMBO_3",
+       "buy": 0.0,
+       "sell": 100.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_COMBO_5",
+       "buy": 216781.6,
+       "sell": 1000.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_COMBO_4",
+       "buy": 299999.7,
+       "sell": 0.4
+      }
+     ]
+    },
+    {
+     "name": "Compact",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_COMPACT_1",
+       "buy": 5189993.6,
+       "sell": 4200003.5
+      }
+     ]
+    },
+    {
      "name": "Consumables",
      "icon": "DWARVEN_OS_ORE_OATS",
      "products": [
@@ -2543,6 +2845,37 @@
      ]
     },
     {
+     "name": "Corruption",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CORRUPTION_2",
+       "buy": 0.0,
+       "sell": 10.4
+      },
+      {
+       "id": "ENCHANTMENT_CORRUPTION_1",
+       "buy": 24597.2,
+       "sell": 1.4
+      },
+      {
+       "id": "ENCHANTMENT_CORRUPTION_4",
+       "buy": 399999.5,
+       "sell": 10003.1
+      },
+      {
+       "id": "ENCHANTMENT_CORRUPTION_3",
+       "buy": 450002.0,
+       "sell": 21.1
+      },
+      {
+       "id": "ENCHANTMENT_CORRUPTION_5",
+       "buy": 629998.6,
+       "sell": 142596.9
+      }
+     ]
+    },
+    {
      "name": "Cosmetics",
      "icon": "BOOK_OF_STATS",
      "products": [
@@ -2550,6 +2883,445 @@
        "id": "BOOK_OF_STATS",
        "buy": 7768330.5,
        "sell": 5980840.8
+      }
+     ]
+    },
+    {
+     "name": "Counter-Strike",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_COUNTER_STRIKE_5",
+       "buy": 49719259.8,
+       "sell": 41049327.9
+      }
+     ]
+    },
+    {
+     "name": "Critical",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CRITICAL_6",
+       "buy": 23496.7,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTMENT_CRITICAL_7",
+       "buy": 145432394.4,
+       "sell": 130000001.8
+      }
+     ]
+    },
+    {
+     "name": "Cubism",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CUBISM_6",
+       "buy": 52999997.2,
+       "sell": 48158465.8
+      }
+     ]
+    },
+    {
+     "name": "Cultivating",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_CULTIVATING_1",
+       "buy": 4743412.1,
+       "sell": 4234156.0
+      }
+     ]
+    },
+    {
+     "name": "Dedication",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_DEDICATION_1",
+       "buy": 409992.6,
+       "sell": 267730.2
+      },
+      {
+       "id": "ENCHANTMENT_DEDICATION_2",
+       "buy": 1222512.6,
+       "sell": 510136.8
+      },
+      {
+       "id": "ENCHANTMENT_DEDICATION_3",
+       "buy": 1899988.5,
+       "sell": 1500000.3
+      },
+      {
+       "id": "ENCHANTMENT_DEDICATION_4",
+       "buy": 34195275.7,
+       "sell": 34000000.0
+      }
+     ]
+    },
+    {
+     "name": "Delicate",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_DELICATE_5",
+       "buy": 2409997.0,
+       "sell": 1600004.2
+      }
+     ]
+    },
+    {
+     "name": "Divine Gift",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_DIVINE_GIFT_1",
+       "buy": 25999994.7,
+       "sell": 24500000.4
+      },
+      {
+       "id": "ENCHANTMENT_DIVINE_GIFT_2",
+       "buy": 74000000.0,
+       "sell": 49000000.0
+      },
+      {
+       "id": "ENCHANTMENT_DIVINE_GIFT_3",
+       "buy": 105499996.8,
+       "sell": 99000000.2
+      }
+     ]
+    },
+    {
+     "name": "Drain",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SYPHON_4",
+       "buy": 149997.4,
+       "sell": 11000.2
+      },
+      {
+       "id": "ENCHANTMENT_SYPHON_5",
+       "buy": 26999998.4,
+       "sell": 13000000.8
+      }
+     ]
+    },
+    {
+     "name": "Duplex",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REITERATE_1",
+       "buy": 789882.6,
+       "sell": 676010.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REITERATE_2",
+       "buy": 3394990.6,
+       "sell": 359754.9
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REITERATE_3",
+       "buy": 6899997.2,
+       "sell": 732506.6
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REITERATE_4",
+       "buy": 9999999.6,
+       "sell": 6030001.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REITERATE_5",
+       "buy": 15999997.2,
+       "sell": 10000000.3
+      }
+     ]
+    },
+    {
+     "name": "Ender Slayer",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ENDER_SLAYER_6",
+       "buy": 120786.3,
+       "sell": 6990.4
+      }
+     ]
+    },
+    {
+     "name": "Execute",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_EXECUTE_6",
+       "buy": 34999999.9,
+       "sell": 23000001.4
+      }
+     ]
+    },
+    {
+     "name": "Experience",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_EXPERIENCE_4",
+       "buy": 549286.8,
+       "sell": 147477.9
+      },
+      {
+       "id": "ENCHANTMENT_EXPERIENCE_5",
+       "buy": 16091843.5,
+       "sell": 13000000.1
+      }
+     ]
+    },
+    {
+     "name": "Expertise",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_EXPERTISE_1",
+       "buy": 4837035.1,
+       "sell": 4142302.0
+      }
+     ]
+    },
+    {
+     "name": "Fatal Tempo",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FATAL_TEMPO_1",
+       "buy": 66633949.6,
+       "sell": 60000003.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FATAL_TEMPO_2",
+       "buy": 179999999.9,
+       "sell": 82100001.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FATAL_TEMPO_4",
+       "buy": 0.0,
+       "sell": 240000000.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FATAL_TEMPO_5",
+       "buy": 0.0,
+       "sell": 363825001.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FATAL_TEMPO_3",
+       "buy": 444444444.0,
+       "sell": 80000000.0
+      }
+     ]
+    },
+    {
+     "name": "Feast",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FEAST_1",
+       "buy": 2709609.1,
+       "sell": 2600000.1
+      },
+      {
+       "id": "ENCHANTMENT_FEAST_2",
+       "buy": 8437847.3,
+       "sell": 4432691.0
+      },
+      {
+       "id": "ENCHANTMENT_FEAST_3",
+       "buy": 16999998.9,
+       "sell": 8505002.1
+      },
+      {
+       "id": "ENCHANTMENT_FEAST_4",
+       "buy": 38943841.9,
+       "sell": 18466742.3
+      },
+      {
+       "id": "ENCHANTMENT_FEAST_5",
+       "buy": 52998987.4,
+       "sell": 42188589.5
+      }
+     ]
+    },
+    {
+     "name": "Feather Falling",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FEATHER_FALLING_6",
+       "buy": 0.0,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTMENT_FEATHER_FALLING_7",
+       "buy": 9.9,
+       "sell": 1.0
+      },
+      {
+       "id": "ENCHANTMENT_FEATHER_FALLING_8",
+       "buy": 45958.5,
+       "sell": 6000.0
+      },
+      {
+       "id": "ENCHANTMENT_FEATHER_FALLING_10",
+       "buy": 89999.5,
+       "sell": 38000.0
+      },
+      {
+       "id": "ENCHANTMENT_FEATHER_FALLING_9",
+       "buy": 90394.1,
+       "sell": 4001.8
+      }
+     ]
+    },
+    {
+     "name": "Fire Aspect",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FIRE_ASPECT_3",
+       "buy": 19998.0,
+       "sell": 0.0
+      }
+     ]
+    },
+    {
+     "name": "Fire Protection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FIRE_PROTECTION_6",
+       "buy": 7633.5,
+       "sell": 500.0
+      },
+      {
+       "id": "ENCHANTMENT_FIRE_PROTECTION_7",
+       "buy": 13437647.6,
+       "sell": 1000001.3
+      }
+     ]
+    },
+    {
+     "name": "First Impression",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FIRST_IMPRESSION_1",
+       "buy": 13997.3,
+       "sell": 557.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FIRST_IMPRESSION_2",
+       "buy": 79998.8,
+       "sell": 500.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FIRST_IMPRESSION_3",
+       "buy": 105299.7,
+       "sell": 10.9
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FIRST_IMPRESSION_4",
+       "buy": 249999.3,
+       "sell": 1000.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FIRST_IMPRESSION_5",
+       "buy": 349999.1,
+       "sell": 250000.3
+      }
+     ]
+    },
+    {
+     "name": "First Strike",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FIRST_STRIKE_5",
+       "buy": 120934176.3,
+       "sell": 103600940.8
+      }
+     ]
+    },
+    {
+     "name": "Flash",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLASH_1",
+       "buy": 3224382.0,
+       "sell": 3010098.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLASH_2",
+       "buy": 14998999.5,
+       "sell": 4483168.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLASH_3",
+       "buy": 20800000.1,
+       "sell": 1000002.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLASH_4",
+       "buy": 48680563.8,
+       "sell": 1000001.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLASH_5",
+       "buy": 66999999.2,
+       "sell": 53000001.2
+      }
+     ]
+    },
+    {
+     "name": "Flowstate",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLOWSTATE_1",
+       "buy": 3398.4,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLOWSTATE_2",
+       "buy": 46299.5,
+       "sell": 0.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_FLOWSTATE_3",
+       "buy": 50601.7,
+       "sell": 0.0
+      }
+     ]
+    },
+    {
+     "name": "Fortune",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FORTUNE_4",
+       "buy": 108589.2,
+       "sell": 23917.2
+      }
+     ]
+    },
+    {
+     "name": "Frail",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FRAIL_6",
+       "buy": 29999.7,
+       "sell": 0.4
       }
      ]
     },
@@ -2606,6 +3378,504 @@
        "id": "OVERDRIVE_GARDEN_CHIP",
        "buy": 2438812.7,
        "sell": 1888130.8
+      }
+     ]
+    },
+    {
+     "name": "Giant Killer",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_GIANT_KILLER_6",
+       "buy": 408466.5,
+       "sell": 100000.3
+      },
+      {
+       "id": "ENCHANTMENT_GIANT_KILLER_7",
+       "buy": 174566993.2,
+       "sell": 133051662.9
+      }
+     ]
+    },
+    {
+     "name": "Gravity",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_DRAGON_HUNTER_6",
+       "buy": 5129899.8,
+       "sell": 2000001.8
+      }
+     ]
+    },
+    {
+     "name": "Green Thumb",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_GREEN_THUMB_1",
+       "buy": 2054107.3,
+       "sell": 1734537.0
+      },
+      {
+       "id": "ENCHANTMENT_GREEN_THUMB_2",
+       "buy": 4699991.4,
+       "sell": 2000005.7
+      },
+      {
+       "id": "ENCHANTMENT_GREEN_THUMB_3",
+       "buy": 9999999.3,
+       "sell": 4237504.5
+      },
+      {
+       "id": "ENCHANTMENT_GREEN_THUMB_4",
+       "buy": 20299993.7,
+       "sell": 10400000.0
+      },
+      {
+       "id": "ENCHANTMENT_GREEN_THUMB_5",
+       "buy": 30458460.5,
+       "sell": 26060171.2
+      }
+     ]
+    },
+    {
+     "name": "Growth",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_GROWTH_6",
+       "buy": 2649272.9,
+       "sell": 2445694.5
+      },
+      {
+       "id": "ENCHANTMENT_GROWTH_7",
+       "buy": 73999999.6,
+       "sell": 63532173.2
+      }
+     ]
+    },
+    {
+     "name": "Habanero Tactics",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_HABANERO_TACTICS_4",
+       "buy": 109762060.7,
+       "sell": 103462351.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_HABANERO_TACTICS_5",
+       "buy": 255182328.6,
+       "sell": 206891618.1
+      }
+     ]
+    },
+    {
+     "name": "Hardened Vitality",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_2",
+       "buy": 35958.7,
+       "sell": 5957.4
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_3",
+       "buy": 50686.1,
+       "sell": 12008.0
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_1",
+       "buy": 61864.0,
+       "sell": 8002.3
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_4",
+       "buy": 123947.4,
+       "sell": 30013.4
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_5",
+       "buy": 158573.8,
+       "sell": 54905.2
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_6",
+       "buy": 1267857.4,
+       "sell": 78582.4
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_7",
+       "buy": 1783059.8,
+       "sell": 10001.7
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_8",
+       "buy": 4000000.0,
+       "sell": 643176.6
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_9",
+       "buy": 6999988.6,
+       "sell": 100000.3
+      },
+      {
+       "id": "ENCHANTMENT_HARDENED_MANA_10",
+       "buy": 8257856.1,
+       "sell": 3262894.7
+      }
+     ]
+    },
+    {
+     "name": "Harvesting",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_HARVESTING_6",
+       "buy": 2243151.5,
+       "sell": 1757111.6
+      }
+     ]
+    },
+    {
+     "name": "Hecatomb",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_HECATOMB_1",
+       "buy": 8999997.1,
+       "sell": 6259204.6
+      }
+     ]
+    },
+    {
+     "name": "Ice Cold",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ICE_COLD_1",
+       "buy": 3223155.6,
+       "sell": 2865135.8
+      },
+      {
+       "id": "ENCHANTMENT_ICE_COLD_2",
+       "buy": 12267189.5,
+       "sell": 1000002.3
+      },
+      {
+       "id": "ENCHANTMENT_ICE_COLD_3",
+       "buy": 19099998.6,
+       "sell": 8264564.4
+      },
+      {
+       "id": "ENCHANTMENT_ICE_COLD_5",
+       "buy": 69168838.7,
+       "sell": 49169550.7
+      },
+      {
+       "id": "ENCHANTMENT_ICE_COLD_4",
+       "buy": 77777775.2,
+       "sell": 1200000.4
+      }
+     ]
+    },
+    {
+     "name": "Inferno",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_INFERNO_1",
+       "buy": 7622428.7,
+       "sell": 6012793.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_INFERNO_3",
+       "buy": 10000000.0,
+       "sell": 5000001.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_INFERNO_2",
+       "buy": 49999998.8,
+       "sell": 5950001.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_INFERNO_5",
+       "buy": 0.0,
+       "sell": 54000001.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_INFERNO_4",
+       "buy": 219999999.9,
+       "sell": 30000001.9
+      }
+     ]
+    },
+    {
+     "name": "Infinite Quiver",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_INFINITE_QUIVER_6",
+       "buy": 112.4,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_INFINITE_QUIVER_7",
+       "buy": 9999.9,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_INFINITE_QUIVER_8",
+       "buy": 54741.4,
+       "sell": 256.2
+      },
+      {
+       "id": "ENCHANTMENT_INFINITE_QUIVER_9",
+       "buy": 133560.7,
+       "sell": 1500.6
+      },
+      {
+       "id": "ENCHANTMENT_INFINITE_QUIVER_10",
+       "buy": 190451.7,
+       "sell": 90000.2
+      }
+     ]
+    },
+    {
+     "name": "Karma",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_KARMA_1",
+       "buy": 186876.2,
+       "sell": 105104.0
+      },
+      {
+       "id": "ENCHANTMENT_KARMA_2",
+       "buy": 749998.4,
+       "sell": 224956.7
+      },
+      {
+       "id": "ENCHANTMENT_KARMA_3",
+       "buy": 1843573.0,
+       "sell": 435752.0
+      },
+      {
+       "id": "ENCHANTMENT_KARMA_4",
+       "buy": 3649993.5,
+       "sell": 600002.2
+      },
+      {
+       "id": "ENCHANTMENT_KARMA_5",
+       "buy": 5912438.6,
+       "sell": 1478966.8
+      }
+     ]
+    },
+    {
+     "name": "Lapidary",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LAPIDARY_1",
+       "buy": 207018.5,
+       "sell": 53757.9
+      },
+      {
+       "id": "ENCHANTMENT_LAPIDARY_2",
+       "buy": 644566.5,
+       "sell": 111002.6
+      },
+      {
+       "id": "ENCHANTMENT_LAPIDARY_3",
+       "buy": 2391647.6,
+       "sell": 432687.8
+      },
+      {
+       "id": "ENCHANTMENT_LAPIDARY_4",
+       "buy": 3416379.2,
+       "sell": 995380.1
+      },
+      {
+       "id": "ENCHANTMENT_LAPIDARY_5",
+       "buy": 5737403.1,
+       "sell": 3000000.1
+      }
+     ]
+    },
+    {
+     "name": "Last Stand",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LAST_STAND_1",
+       "buy": 63999.8,
+       "sell": 33040.9
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LAST_STAND_3",
+       "buy": 0.0,
+       "sell": 72502.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LAST_STAND_2",
+       "buy": 104842.5,
+       "sell": 70866.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LAST_STAND_4",
+       "buy": 850000.0,
+       "sell": 137584.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LAST_STAND_5",
+       "buy": 1300472.7,
+       "sell": 893921.7
+      }
+     ]
+    },
+    {
+     "name": "Legion",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LEGION_1",
+       "buy": 2087900.8,
+       "sell": 1999684.6
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LEGION_2",
+       "buy": 4905027.9,
+       "sell": 2828247.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LEGION_3",
+       "buy": 9000000.0,
+       "sell": 5828878.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LEGION_4",
+       "buy": 20697444.0,
+       "sell": 15600000.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_LEGION_5",
+       "buy": 34428607.3,
+       "sell": 31992873.1
+      }
+     ]
+    },
+    {
+     "name": "Lethality",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LETHALITY_6",
+       "buy": 55889.3,
+       "sell": 11.1
+      }
+     ]
+    },
+    {
+     "name": "Life Steal",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LIFE_STEAL_4",
+       "buy": 229393.4,
+       "sell": 52001.2
+      },
+      {
+       "id": "ENCHANTMENT_LIFE_STEAL_5",
+       "buy": 25593256.1,
+       "sell": 19000001.1
+      }
+     ]
+    },
+    {
+     "name": "Looting",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LOOTING_4",
+       "buy": 199979.2,
+       "sell": 57501.5
+      },
+      {
+       "id": "ENCHANTMENT_LOOTING_5",
+       "buy": 111799999.1,
+       "sell": 90000000.8
+      }
+     ]
+    },
+    {
+     "name": "Luck",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LUCK_6",
+       "buy": 255995.4,
+       "sell": 140000.5
+      },
+      {
+       "id": "ENCHANTMENT_LUCK_7",
+       "buy": 65000000.0,
+       "sell": 60000004.3
+      }
+     ]
+    },
+    {
+     "name": "Luck of the Sea",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LUCK_OF_THE_SEA_6",
+       "buy": 547830.4,
+       "sell": 140000.5
+      }
+     ]
+    },
+    {
+     "name": "Lure",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_LURE_6",
+       "buy": 40493.3,
+       "sell": 0.1
+      }
+     ]
+    },
+    {
+     "name": "Magnet",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_MAGNET_6",
+       "buy": 0.0,
+       "sell": 500.0
+      }
+     ]
+    },
+    {
+     "name": "Mana Steal",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_MANA_STEAL_1",
+       "buy": 16999.8,
+       "sell": 1901.8
+      },
+      {
+       "id": "ENCHANTMENT_MANA_STEAL_2",
+       "buy": 86928.4,
+       "sell": 5.5
+      },
+      {
+       "id": "ENCHANTMENT_MANA_STEAL_3",
+       "buy": 101942.6,
+       "sell": 25000.5
       }
      ]
     },
@@ -5036,6 +6306,37 @@
      ]
     },
     {
+     "name": "Missile",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_MISSILE_2",
+       "buy": 0.0,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_MISSILE_4",
+       "buy": 0.0,
+       "sell": 0.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_MISSILE_1",
+       "buy": 6.6,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_MISSILE_3",
+       "buy": 32803.4,
+       "sell": 0.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_MISSILE_5",
+       "buy": 128000.0,
+       "sell": 500.4
+      }
+     ]
+    },
+    {
      "name": "Mutations",
      "icon": "LONELILY",
      "products": [
@@ -5237,6 +6538,126 @@
      ]
     },
     {
+     "name": "No Pain No Gain",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_NO_PAIN_NO_GAIN_1",
+       "buy": 688.9,
+       "sell": 687.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_NO_PAIN_NO_GAIN_5",
+       "buy": 110643.4,
+       "sell": 0.5
+      }
+     ]
+    },
+    {
+     "name": "One For All",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_ONE_FOR_ALL_1",
+       "buy": 1301330.2,
+       "sell": 935406.7
+      }
+     ]
+    },
+    {
+     "name": "Overload",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_OVERLOAD_1",
+       "buy": 654752.6,
+       "sell": 560928.5
+      },
+      {
+       "id": "ENCHANTMENT_OVERLOAD_2",
+       "buy": 1906627.1,
+       "sell": 900000.6
+      },
+      {
+       "id": "ENCHANTMENT_OVERLOAD_3",
+       "buy": 4939531.8,
+       "sell": 1245365.1
+      },
+      {
+       "id": "ENCHANTMENT_OVERLOAD_4",
+       "buy": 5999999.4,
+       "sell": 3222222.7
+      },
+      {
+       "id": "ENCHANTMENT_OVERLOAD_5",
+       "buy": 11612775.5,
+       "sell": 7900004.4
+      }
+     ]
+    },
+    {
+     "name": "Paleontologist",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PALEONTOLOGIST_1",
+       "buy": 12990.0,
+       "sell": 396.1
+      },
+      {
+       "id": "ENCHANTMENT_PALEONTOLOGIST_2",
+       "buy": 137266.3,
+       "sell": 10.4
+      },
+      {
+       "id": "ENCHANTMENT_PALEONTOLOGIST_3",
+       "buy": 529997.0,
+       "sell": 39.9
+      },
+      {
+       "id": "ENCHANTMENT_PALEONTOLOGIST_4",
+       "buy": 630003.7,
+       "sell": 43.1
+      },
+      {
+       "id": "ENCHANTMENT_PALEONTOLOGIST_5",
+       "buy": 649994.7,
+       "sell": 101506.5
+      }
+     ]
+    },
+    {
+     "name": "Pesterminator",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PESTERMINATOR_1",
+       "buy": 50509.3,
+       "sell": 25011.1
+      },
+      {
+       "id": "ENCHANTMENT_PESTERMINATOR_2",
+       "buy": 199999.9,
+       "sell": 63001.9
+      },
+      {
+       "id": "ENCHANTMENT_PESTERMINATOR_3",
+       "buy": 918922.8,
+       "sell": 139252.8
+      },
+      {
+       "id": "ENCHANTMENT_PESTERMINATOR_5",
+       "buy": 1299986.7,
+       "sell": 899564.7
+      },
+      {
+       "id": "ENCHANTMENT_PESTERMINATOR_4",
+       "buy": 2097603.7,
+       "sell": 402082.8
+      }
+     ]
+    },
+    {
      "name": "Pet Items",
      "icon": "SMALL_SLOTH_CLAW",
      "products": [
@@ -5259,6 +6680,263 @@
        "id": "GIANT_SLOTH_CLAW",
        "buy": 1813578.8,
        "sell": 1000000.7
+      }
+     ]
+    },
+    {
+     "name": "Petalfall",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PETALFALL_1",
+       "buy": 466311.0,
+       "sell": 345382.1
+      },
+      {
+       "id": "ENCHANTMENT_PETALFALL_2",
+       "buy": 1072308.7,
+       "sell": 325319.6
+      },
+      {
+       "id": "ENCHANTMENT_PETALFALL_3",
+       "buy": 2979996.9,
+       "sell": 790001.4
+      },
+      {
+       "id": "ENCHANTMENT_PETALFALL_4",
+       "buy": 6499999.6,
+       "sell": 2440566.9
+      },
+      {
+       "id": "ENCHANTMENT_PETALFALL_5",
+       "buy": 7679046.0,
+       "sell": 5265050.5
+      }
+     ]
+    },
+    {
+     "name": "Piscary",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PISCARY_6",
+       "buy": 1722346.1,
+       "sell": 1192658.1
+      }
+     ]
+    },
+    {
+     "name": "Power",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_POWER_6",
+       "buy": 31507.8,
+       "sell": 100.1
+      },
+      {
+       "id": "ENCHANTMENT_POWER_7",
+       "buy": 123218357.2,
+       "sell": 111351270.3
+      }
+     ]
+    },
+    {
+     "name": "Prismatic",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PRISTINE_1",
+       "buy": 1574833.4,
+       "sell": 1100002.2
+      },
+      {
+       "id": "ENCHANTMENT_PRISTINE_2",
+       "buy": 3999995.7,
+       "sell": 1789157.5
+      },
+      {
+       "id": "ENCHANTMENT_PRISTINE_3",
+       "buy": 8199996.0,
+       "sell": 4000000.0
+      },
+      {
+       "id": "ENCHANTMENT_PRISTINE_4",
+       "buy": 19999998.4,
+       "sell": 8049910.6
+      },
+      {
+       "id": "ENCHANTMENT_PRISTINE_5",
+       "buy": 21999999.6,
+       "sell": 14571711.6
+      }
+     ]
+    },
+    {
+     "name": "Projectile Protection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PROJECTILE_PROTECTION_6",
+       "buy": 0.0,
+       "sell": 500.0
+      },
+      {
+       "id": "ENCHANTMENT_PROJECTILE_PROTECTION_7",
+       "buy": 10726895.8,
+       "sell": 1700001.4
+      }
+     ]
+    },
+    {
+     "name": "Prosecute",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PROSECUTE_6",
+       "buy": 113760341.5,
+       "sell": 99978379.6
+      }
+     ]
+    },
+    {
+     "name": "Prosperity",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PROSPERITY_1",
+       "buy": 1438256.5,
+       "sell": 1207292.2
+      },
+      {
+       "id": "ENCHANTMENT_PROSPERITY_2",
+       "buy": 2699998.3,
+       "sell": 330761.8
+      },
+      {
+       "id": "ENCHANTMENT_PROSPERITY_3",
+       "buy": 8999999.9,
+       "sell": 1000003.7
+      },
+      {
+       "id": "ENCHANTMENT_PROSPERITY_4",
+       "buy": 16470113.5,
+       "sell": 2701140.1
+      },
+      {
+       "id": "ENCHANTMENT_PROSPERITY_5",
+       "buy": 24999982.2,
+       "sell": 10749999.5
+      }
+     ]
+    },
+    {
+     "name": "Protection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_PROTECTION_6",
+       "buy": 3078387.4,
+       "sell": 2105149.9
+      },
+      {
+       "id": "ENCHANTMENT_PROTECTION_7",
+       "buy": 62999996.1,
+       "sell": 50650002.7
+      }
+     ]
+    },
+    {
+     "name": "Pyroclasm",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_MAGMARIZER_6",
+       "buy": 26510047.0,
+       "sell": 22502037.6
+      }
+     ]
+    },
+    {
+     "name": "Quantum",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_QUANTUM_3",
+       "buy": 749999.6,
+       "sell": 389698.2
+      },
+      {
+       "id": "ENCHANTMENT_QUANTUM_4",
+       "buy": 2999999.6,
+       "sell": 161642.8
+      },
+      {
+       "id": "ENCHANTMENT_QUANTUM_5",
+       "buy": 4262989.2,
+       "sell": 1638149.8
+      }
+     ]
+    },
+    {
+     "name": "Quick Bite",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_QUICK_BITE_1",
+       "buy": 2906014.5,
+       "sell": 2500002.9
+      },
+      {
+       "id": "ENCHANTMENT_QUICK_BITE_2",
+       "buy": 8859996.5,
+       "sell": 3100000.2
+      },
+      {
+       "id": "ENCHANTMENT_QUICK_BITE_3",
+       "buy": 16095776.7,
+       "sell": 7777777.0
+      },
+      {
+       "id": "ENCHANTMENT_QUICK_BITE_4",
+       "buy": 34999997.9,
+       "sell": 19016084.4
+      },
+      {
+       "id": "ENCHANTMENT_QUICK_BITE_5",
+       "buy": 46999996.2,
+       "sell": 41000001.0
+      }
+     ]
+    },
+    {
+     "name": "Reflection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_REFLECTION_1",
+       "buy": 489998.8,
+       "sell": 240959.8
+      },
+      {
+       "id": "ENCHANTMENT_REFLECTION_2",
+       "buy": 998998.7,
+       "sell": 50004.5
+      },
+      {
+       "id": "ENCHANTMENT_REFLECTION_3",
+       "buy": 1998999.5,
+       "sell": 359001.1
+      },
+      {
+       "id": "ENCHANTMENT_REFLECTION_4",
+       "buy": 5800000.0,
+       "sell": 398260.3
+      },
+      {
+       "id": "ENCHANTMENT_REFLECTION_5",
+       "buy": 8194899.8,
+       "sell": 4175008.9
       }
      ]
     },
@@ -5704,6 +7382,152 @@
      ]
     },
     {
+     "name": "Refrigerate",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REFRIGERATE_1",
+       "buy": 489999.8,
+       "sell": 154000.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REFRIGERATE_2",
+       "buy": 1498999.6,
+       "sell": 182136.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REFRIGERATE_3",
+       "buy": 3999997.6,
+       "sell": 445205.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REFRIGERATE_5",
+       "buy": 8069993.9,
+       "sell": 6000010.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REFRIGERATE_4",
+       "buy": 10000000.0,
+       "sell": 2203255.3
+      }
+     ]
+    },
+    {
+     "name": "Rejuvenate",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_REJUVENATE_1",
+       "buy": 6040.4,
+       "sell": 3710.4
+      },
+      {
+       "id": "ENCHANTMENT_REJUVENATE_2",
+       "buy": 19238.7,
+       "sell": 3281.9
+      },
+      {
+       "id": "ENCHANTMENT_REJUVENATE_3",
+       "buy": 44441.2,
+       "sell": 16368.7
+      },
+      {
+       "id": "ENCHANTMENT_REJUVENATE_4",
+       "buy": 299997.0,
+       "sell": 67183.0
+      },
+      {
+       "id": "ENCHANTMENT_REJUVENATE_5",
+       "buy": 334480.0,
+       "sell": 217400.5
+      }
+     ]
+    },
+    {
+     "name": "Rend",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REND_2",
+       "buy": 471000.9,
+       "sell": 210021.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REND_1",
+       "buy": 498999.5,
+       "sell": 100003.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REND_3",
+       "buy": 3733599.8,
+       "sell": 40000.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REND_5",
+       "buy": 8499993.4,
+       "sell": 2710905.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_REND_4",
+       "buy": 13000000.0,
+       "sell": 80000.1
+      }
+     ]
+    },
+    {
+     "name": "Replenish",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_REPLENISH_1",
+       "buy": 1419560.6,
+       "sell": 1210981.4
+      }
+     ]
+    },
+    {
+     "name": "Respiration",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_RESPIRATION_4",
+       "buy": 4832504.0,
+       "sell": 3400544.5
+      }
+     ]
+    },
+    {
+     "name": "Respite",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_RESPITE_4",
+       "buy": 0.0,
+       "sell": 107.8
+      },
+      {
+       "id": "ENCHANTMENT_RESPITE_2",
+       "buy": 10000.0,
+       "sell": 10.0
+      },
+      {
+       "id": "ENCHANTMENT_RESPITE_1",
+       "buy": 79999.1,
+       "sell": 7854.4
+      },
+      {
+       "id": "ENCHANTMENT_RESPITE_3",
+       "buy": 85143.8,
+       "sell": 30004.8
+      },
+      {
+       "id": "ENCHANTMENT_RESPITE_5",
+       "buy": 949979.8,
+       "sell": 100001.7
+      }
+     ]
+    },
+    {
      "name": "Salts",
      "icon": "CANDYCOMB",
      "products": [
@@ -5711,6 +7535,1032 @@
        "id": "CANDYCOMB",
        "buy": 1676.9,
        "sell": 130.2
+      }
+     ]
+    },
+    {
+     "name": "Scavenger",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SCAVENGER_4",
+       "buy": 26998.4,
+       "sell": 0.6
+      },
+      {
+       "id": "ENCHANTMENT_SCAVENGER_5",
+       "buy": 177877.8,
+       "sell": 96345.7
+      }
+     ]
+    },
+    {
+     "name": "Sharpness",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SHARPNESS_6",
+       "buy": 768711.9,
+       "sell": 686482.4
+      },
+      {
+       "id": "ENCHANTMENT_SHARPNESS_7",
+       "buy": 160230427.4,
+       "sell": 151000000.6
+      }
+     ]
+    },
+    {
+     "name": "Small Brain",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SMALL_BRAIN_3",
+       "buy": 1384188.8,
+       "sell": 300001.3
+      },
+      {
+       "id": "ENCHANTMENT_SMALL_BRAIN_4",
+       "buy": 2999999.5,
+       "sell": 466044.9
+      },
+      {
+       "id": "ENCHANTMENT_SMALL_BRAIN_5",
+       "buy": 8161747.4,
+       "sell": 794001.2
+      }
+     ]
+    },
+    {
+     "name": "Smarty Pants",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SMARTY_PANTS_3",
+       "buy": 0.0,
+       "sell": 20003.4
+      },
+      {
+       "id": "ENCHANTMENT_SMARTY_PANTS_1",
+       "buy": 263933.0,
+       "sell": 12055.0
+      },
+      {
+       "id": "ENCHANTMENT_SMARTY_PANTS_2",
+       "buy": 1999999.7,
+       "sell": 20000.7
+      },
+      {
+       "id": "ENCHANTMENT_SMARTY_PANTS_5",
+       "buy": 4544111.4,
+       "sell": 500003.0
+      },
+      {
+       "id": "ENCHANTMENT_SMARTY_PANTS_4",
+       "buy": 99999999.8,
+       "sell": 102006.3
+      }
+     ]
+    },
+    {
+     "name": "Smite",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SMITE_6",
+       "buy": 117806.4,
+       "sell": 38140.4
+      }
+     ]
+    },
+    {
+     "name": "Smoldering",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SMOLDERING_1",
+       "buy": 2822834.3,
+       "sell": 2097541.5
+      },
+      {
+       "id": "ENCHANTMENT_SMOLDERING_2",
+       "buy": 19999997.6,
+       "sell": 4700004.9
+      },
+      {
+       "id": "ENCHANTMENT_SMOLDERING_3",
+       "buy": 32399997.7,
+       "sell": 1000000.0
+      },
+      {
+       "id": "ENCHANTMENT_SMOLDERING_5",
+       "buy": 59551462.4,
+       "sell": 15000000.0
+      },
+      {
+       "id": "ENCHANTMENT_SMOLDERING_4",
+       "buy": 68599984.7,
+       "sell": 20000018.9
+      }
+     ]
+    },
+    {
+     "name": "Snipe",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SNIPE_4",
+       "buy": 61824807.5,
+       "sell": 37476149.9
+      }
+     ]
+    },
+    {
+     "name": "Soul Eater",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SOUL_EATER_1",
+       "buy": 1198533.4,
+       "sell": 822640.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SOUL_EATER_2",
+       "buy": 3300000.0,
+       "sell": 1108980.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SOUL_EATER_3",
+       "buy": 5699997.4,
+       "sell": 2500000.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SOUL_EATER_4",
+       "buy": 11000000.0,
+       "sell": 3260103.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SOUL_EATER_5",
+       "buy": 15999998.7,
+       "sell": 12000001.7
+      }
+     ]
+    },
+    {
+     "name": "Spiked Hook",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SPIKED_HOOK_6",
+       "buy": 16927.1,
+       "sell": 0.1
+      }
+     ]
+    },
+    {
+     "name": "Strong Vitality",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_2",
+       "buy": 271768.6,
+       "sell": 195826.7
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_1",
+       "buy": 451542.0,
+       "sell": 331888.7
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_3",
+       "buy": 677063.3,
+       "sell": 381003.8
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_4",
+       "buy": 1487911.7,
+       "sell": 750000.4
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_5",
+       "buy": 2270381.5,
+       "sell": 1923053.9
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_6",
+       "buy": 5749999.5,
+       "sell": 500001.3
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_7",
+       "buy": 15112547.4,
+       "sell": 2655638.3
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_8",
+       "buy": 31999966.3,
+       "sell": 16000010.3
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_9",
+       "buy": 79999976.4,
+       "sell": 6000013.5
+      },
+      {
+       "id": "ENCHANTMENT_STRONG_MANA_10",
+       "buy": 119999999.7,
+       "sell": 17000020.6
+      }
+     ]
+    },
+    {
+     "name": "Sugar Rush",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_SUGAR_RUSH_1",
+       "buy": 799999.6,
+       "sell": 301253.3
+      },
+      {
+       "id": "ENCHANTMENT_SUGAR_RUSH_3",
+       "buy": 2499997.2,
+       "sell": 1550001.8
+      },
+      {
+       "id": "ENCHANTMENT_SUGAR_RUSH_2",
+       "buy": 2499998.3,
+       "sell": 315579.6
+      }
+     ]
+    },
+    {
+     "name": "Sunset",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SUNSET_1",
+       "buy": 718085.4,
+       "sell": 671446.6
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SUNSET_2",
+       "buy": 1999994.2,
+       "sell": 1032808.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SUNSET_3",
+       "buy": 3999999.9,
+       "sell": 1000002.5
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SUNSET_4",
+       "buy": 7759996.5,
+       "sell": 4250005.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SUNSET_5",
+       "buy": 13267659.4,
+       "sell": 12159834.0
+      }
+     ]
+    },
+    {
+     "name": "Swarm",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SWARM_1",
+       "buy": 678389.5,
+       "sell": 552649.9
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SWARM_2",
+       "buy": 1895708.3,
+       "sell": 957134.9
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SWARM_3",
+       "buy": 4542618.3,
+       "sell": 1057418.6
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SWARM_4",
+       "buy": 8618879.1,
+       "sell": 3000000.0
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_SWARM_5",
+       "buy": 14571877.0,
+       "sell": 8019051.2
+      }
+     ]
+    },
+    {
+     "name": "Tabasco",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TABASCO_2",
+       "buy": 6199999.6,
+       "sell": 100001.0
+      },
+      {
+       "id": "ENCHANTMENT_TABASCO_3",
+       "buy": 12499960.1,
+       "sell": 7000000.7
+      }
+     ]
+    },
+    {
+     "name": "The One",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_THE_ONE_4",
+       "buy": 69999999.5,
+       "sell": 58829903.8
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_THE_ONE_5",
+       "buy": 146000000.0,
+       "sell": 100000001.4
+      }
+     ]
+    },
+    {
+     "name": "Thunderbolt",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_THUNDERBOLT_6",
+       "buy": 727.9,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_THUNDERBOLT_7",
+       "buy": 1855192.9,
+       "sell": 1155002.5
+      }
+     ]
+    },
+    {
+     "name": "Thunderlord",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_THUNDERLORD_6",
+       "buy": 42496.0,
+       "sell": 1.7
+      },
+      {
+       "id": "ENCHANTMENT_THUNDERLORD_7",
+       "buy": 4038700.4,
+       "sell": 2142955.8
+      }
+     ]
+    },
+    {
+     "name": "Tidal",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TIDAL_1",
+       "buy": 2099999.7,
+       "sell": 500004.9
+      },
+      {
+       "id": "ENCHANTMENT_TIDAL_2",
+       "buy": 3999999.8,
+       "sell": 40011.4
+      },
+      {
+       "id": "ENCHANTMENT_TIDAL_3",
+       "buy": 8477034.4,
+       "sell": 1421172.9
+      }
+     ]
+    },
+    {
+     "name": "Titan Killer",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TITAN_KILLER_6",
+       "buy": 3238.5,
+       "sell": 0.0
+      },
+      {
+       "id": "ENCHANTMENT_TITAN_KILLER_7",
+       "buy": 10675348.1,
+       "sell": 9000000.0
+      }
+     ]
+    },
+    {
+     "name": "Toxophilite",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TOXOPHILITE_1",
+       "buy": 4999990.7,
+       "sell": 4073807.2
+      }
+     ]
+    },
+    {
+     "name": "Transylvanian",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TRANSYLVANIAN_4",
+       "buy": 475475.0,
+       "sell": 242384.1
+      },
+      {
+       "id": "ENCHANTMENT_TRANSYLVANIAN_5",
+       "buy": 949997.1,
+       "sell": 445867.1
+      }
+     ]
+    },
+    {
+     "name": "Triple-Strike",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TRIPLE_STRIKE_5",
+       "buy": 28075731.8,
+       "sell": 24203786.7
+      }
+     ]
+    },
+    {
+     "name": "True Protection",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TRUE_PROTECTION_1",
+       "buy": 963411.5,
+       "sell": 508273.4
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Cane",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_CANE_1",
+       "buy": 27657.8,
+       "sell": 6594.3
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CANE_2",
+       "buy": 90499.4,
+       "sell": 5000.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CANE_3",
+       "buy": 363945.4,
+       "sell": 26747.4
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CANE_4",
+       "buy": 810187.5,
+       "sell": 1005.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CANE_5",
+       "buy": 888206.9,
+       "sell": 332500.0
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Carrot",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_CARROT_4",
+       "buy": 0.0,
+       "sell": 20001.9
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CARROT_1",
+       "buy": 67323.6,
+       "sell": 5000.3
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CARROT_2",
+       "buy": 194997.9,
+       "sell": 1000.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CARROT_3",
+       "buy": 452496.9,
+       "sell": 80.4
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_CARROT_5",
+       "buy": 1397673.6,
+       "sell": 800000.0
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Melon",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_MELON_1",
+       "buy": 51878.6,
+       "sell": 25468.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MELON_2",
+       "buy": 199999.4,
+       "sell": 400.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MELON_3",
+       "buy": 541796.9,
+       "sell": 18000.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MELON_4",
+       "buy": 1621895.9,
+       "sell": 100000.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MELON_5",
+       "buy": 3098999.5,
+       "sell": 800000.2
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Moonflower",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_MOONFLOWER_1",
+       "buy": 448902.7,
+       "sell": 311468.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MOONFLOWER_3",
+       "buy": 5430811.7,
+       "sell": 308204.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MOONFLOWER_2",
+       "buy": 6359939.1,
+       "sell": 65109.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MOONFLOWER_5",
+       "buy": 9999984.7,
+       "sell": 5750000.6
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MOONFLOWER_4",
+       "buy": 11176211.3,
+       "sell": 2339774.0
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Mushrooms",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_MUSHROOMS_1",
+       "buy": 7247.4,
+       "sell": 501.8
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MUSHROOMS_2",
+       "buy": 62960.0,
+       "sell": 20.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MUSHROOMS_5",
+       "buy": 520624.5,
+       "sell": 259373.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MUSHROOMS_3",
+       "buy": 595569.1,
+       "sell": 3000.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_MUSHROOMS_4",
+       "buy": 715138.7,
+       "sell": 11.0
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Potato",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_POTATO_3",
+       "buy": 0.0,
+       "sell": 100.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_POTATO_2",
+       "buy": 0.0,
+       "sell": 400.4
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_POTATO_1",
+       "buy": 2771.2,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_POTATO_5",
+       "buy": 433398.1,
+       "sell": 777.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_POTATO_4",
+       "buy": 540026.1,
+       "sell": 300.7
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Pumpkin",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_PUMPKIN_3",
+       "buy": 0.0,
+       "sell": 26000.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_PUMPKIN_4",
+       "buy": 0.0,
+       "sell": 113163.6
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_PUMPKIN_1",
+       "buy": 133589.9,
+       "sell": 44616.8
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_PUMPKIN_2",
+       "buy": 287030.7,
+       "sell": 11891.3
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_PUMPKIN_5",
+       "buy": 9999984.4,
+       "sell": 1165000.0
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Rose",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_ROSE_1",
+       "buy": 99102.4,
+       "sell": 16003.5
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_ROSE_2",
+       "buy": 242999.9,
+       "sell": 0.6
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_ROSE_3",
+       "buy": 999999.0,
+       "sell": 11000.2
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_ROSE_5",
+       "buy": 2756692.5,
+       "sell": 200000.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_ROSE_4",
+       "buy": 7999999.9,
+       "sell": 1006.9
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Sunflower",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_SUNFLOWER_1",
+       "buy": 306826.7,
+       "sell": 202614.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_SUNFLOWER_2",
+       "buy": 749999.9,
+       "sell": 128000.9
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_SUNFLOWER_3",
+       "buy": 2754278.1,
+       "sell": 199000.4
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_SUNFLOWER_4",
+       "buy": 4543344.6,
+       "sell": 1000000.3
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_SUNFLOWER_5",
+       "buy": 5999919.5,
+       "sell": 4194995.8
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Warts",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_WARTS_1",
+       "buy": 4315.9,
+       "sell": 0.2
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WARTS_2",
+       "buy": 121498.3,
+       "sell": 1.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WARTS_3",
+       "buy": 269999.9,
+       "sell": 777.5
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WARTS_5",
+       "buy": 379997.8,
+       "sell": 35556.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WARTS_4",
+       "buy": 449999.8,
+       "sell": 5.7
+      }
+     ]
+    },
+    {
+     "name": "Turbo-Wheat",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_TURBO_WHEAT_2",
+       "buy": 0.0,
+       "sell": 23000.1
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WHEAT_1",
+       "buy": 99997.5,
+       "sell": 63606.7
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WHEAT_3",
+       "buy": 1399999.0,
+       "sell": 160000.0
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WHEAT_5",
+       "buy": 2399986.6,
+       "sell": 1311546.6
+      },
+      {
+       "id": "ENCHANTMENT_TURBO_WHEAT_4",
+       "buy": 3624671.5,
+       "sell": 410000.1
+      }
+     ]
+    },
+    {
+     "name": "Ultimate Wise",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISE_1",
+       "buy": 24391.9,
+       "sell": 15009.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISE_2",
+       "buy": 26770.0,
+       "sell": 8232.2
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISE_3",
+       "buy": 211019.2,
+       "sell": 13502.3
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISE_4",
+       "buy": 542407.8,
+       "sell": 100001.1
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISE_5",
+       "buy": 639990.8,
+       "sell": 412002.0
+      }
+     ]
+    },
+    {
+     "name": "Vampiric Vitality",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_2",
+       "buy": 129998.8,
+       "sell": 10008.1
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_1",
+       "buy": 175760.8,
+       "sell": 84004.4
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_3",
+       "buy": 183917.6,
+       "sell": 52274.4
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_4",
+       "buy": 367039.0,
+       "sell": 125001.3
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_5",
+       "buy": 674932.1,
+       "sell": 560740.1
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_9",
+       "buy": 0.0,
+       "sell": 1861996.8
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_6",
+       "buy": 2498999.6,
+       "sell": 100005.9
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_7",
+       "buy": 6568877.0,
+       "sell": 467783.7
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_8",
+       "buy": 13642581.2,
+       "sell": 1425822.4
+      },
+      {
+       "id": "ENCHANTMENT_MANA_VAMPIRE_10",
+       "buy": 27999992.1,
+       "sell": 11350004.4
+      }
+     ]
+    },
+    {
+     "name": "Vampirism",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_VAMPIRISM_6",
+       "buy": 1764504.8,
+       "sell": 995137.3
+      }
+     ]
+    },
+    {
+     "name": "Venomous",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_VENOMOUS_6",
+       "buy": 303407.6,
+       "sell": 95001.7
+      }
+     ]
+    },
+    {
+     "name": "Vicious",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_VICIOUS_4",
+       "buy": 0.0,
+       "sell": 17000000.7
+      },
+      {
+       "id": "ENCHANTMENT_VICIOUS_3",
+       "buy": 23099734.3,
+       "sell": 19602000.4
+      },
+      {
+       "id": "ENCHANTMENT_VICIOUS_5",
+       "buy": 74189989.6,
+       "sell": 65746956.1
+      }
+     ]
+    },
+    {
+     "name": "Vivacious Vitality",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_2",
+       "buy": 17711.0,
+       "sell": 10.0
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_3",
+       "buy": 19375.2,
+       "sell": 20.0
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_4",
+       "buy": 27002.2,
+       "sell": 30.5
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_5",
+       "buy": 37424.2,
+       "sell": 12024.2
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_1",
+       "buy": 64368.2,
+       "sell": 1503.0
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_6",
+       "buy": 1299998.1,
+       "sell": 1000.0
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_7",
+       "buy": 3199999.8,
+       "sell": 49999.9
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_8",
+       "buy": 4000000.0,
+       "sell": 1000.0
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_9",
+       "buy": 4588886.7,
+       "sell": 1389.9
+      },
+      {
+       "id": "ENCHANTMENT_FEROCIOUS_MANA_10",
+       "buy": 6999992.8,
+       "sell": 1500001.8
+      }
+     ]
+    },
+    {
+     "name": "Wisdom",
+     "icon": "ENCHANTED_BOOK",
+     "products": [
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISDOM_1",
+       "buy": 138111.0,
+       "sell": 106254.7
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISDOM_2",
+       "buy": 282858.3,
+       "sell": 197758.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISDOM_3",
+       "buy": 999664.5,
+       "sell": 350000.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISDOM_4",
+       "buy": 1459996.3,
+       "sell": 700000.4
+      },
+      {
+       "id": "ENCHANTMENT_ULTIMATE_WISDOM_5",
+       "buy": 2438871.2,
+       "sell": 2057351.9
       }
      ]
     }

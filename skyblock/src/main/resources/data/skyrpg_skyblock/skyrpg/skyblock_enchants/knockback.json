@@ -1,0 +1,37 @@
+{
+ "name": "Knockback",
+ "categories": [
+  "FISHING_WEAPON",
+  "GAUNTLET",
+  "LONGSWORD",
+  "SWORD"
+ ],
+ "max": 2,
+ "xp": [
+  15,
+  30
+ ],
+ "conflicts": [
+  "ultimate_one_for_all"
+ ],
+ "ultimate": false,
+ "combinable": true,
+ "levels": {
+  "1": {
+   "lore": [
+    "§7Increases knockback by §a3",
+    "§7blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 3.0
+  },
+  "2": {
+   "lore": [
+    "§7Increases knockback by §a6",
+    "§7blocks."
+   ],
+   "rarity": "COMMON",
+   "value": 6.0
+  }
+ }
+}
