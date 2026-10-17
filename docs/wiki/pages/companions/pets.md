@@ -53,5 +53,9 @@ Your summoned pet gets a share of all the skill XP you gain:
 
 A few (Flying Pig, Quick Claw, Exp Share...) show their text but don't work yet.
 
+## Kat
+
+**Kat**, the pet sitter at a stall in the Hub's market, takes a pet **up one rarity**. Her menu lists your pets with what their next rarity costs: coins, sometimes items (Honey Dippers for a Bee, Summoning Eyes for an Ender Dragon), and a wait (from a minute to weeks, in real time, even while you're offline). Click a pet to give it to her; she looks after **one pet at a time**. When it's ready you get a message; open her menu and click it to take it back at its new rarity (it keeps its XP; its level follows the new rarity's table). All 216 of Hypixel's upgrades are there.
+
 > [!NOTE]
-> Not yet: pet abilities (they show with their numbers but don't work yet), Kat's rarity upgrades, and the pets that come from drops, shops and events rather than recipes.
+> Not yet: pet abilities (they show with their numbers but don't work yet), Kat Flowers and Bouquets (to skip the wait), and the pets that come from drops, shops and events rather than recipes.

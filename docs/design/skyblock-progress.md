@@ -317,7 +317,11 @@ phase so the next session can pick up where this one stopped.
       `PetItems`: right-click one with a pet out (early UseItem/UseBlock phases) to set its petInfo `heldItem` (the old
       one comes back); `SkyBlockPets` applies it to stats (boosted tier, multipliers, flats), pet XP and the tooltip
       ("Held Item", and lore numbers from the effective stats). Not yet: Flying Pig, Quick Claw, Exp Share and the other
-      special ones, Kat.
+      special ones.
+- [x] **Kat**: `tools/skyblock/import_kat.py` (NEU's 216 "katgrade" recipes: pet, rarity from/to, coins, items, time) to
+      `skyrpg/kat`. `Kat` + `KatMenu` + `KatScreen` (the `kat` action; Kat's NPC at a Hub market stall, `/kat [finish]`
+      for admins): one pet at a time, taken from the menu or the one out, real-time wait, ready message, claim sets its
+      tier (XP kept). Not yet: Kat Flowers and Bouquets.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

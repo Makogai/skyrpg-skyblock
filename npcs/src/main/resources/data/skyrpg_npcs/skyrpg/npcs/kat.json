@@ -1,0 +1,24 @@
+{
+  "name": "Kat",
+  "role": "Pet Sitter",
+  "color": "#FF8AC8",
+  "hint": "Pets",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    74.5,
+    65.0,
+    19.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.cat.ambient",
+  "greetings": [
+    "Leave a pet with me and it'll come back a rarity higher.",
+    "Good things take time. Rare pets take longer."
+  ],
+  "action": {
+    "type": "kat",
+    "params": {}
+  }
+}

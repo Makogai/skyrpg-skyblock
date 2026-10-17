@@ -134,6 +134,7 @@ public final class SkyBlockPets {
         PetsMenu.init();
         PetCatalog.init();
         PetItems.init();
+        Kat.init();
     }
 
     // ---------------------------------------------------------------- data
@@ -246,6 +247,14 @@ public final class SkyBlockPets {
     public static String heldItem(ItemStack stack) {
         JsonObject info = info(stack);
         return info.has("heldItem") && !info.get("heldItem").isJsonNull() ? info.get("heldItem").getAsString() : null;
+    }
+
+    /** Changes the pet's rarity (Kat's upgrades); its XP stays, so its level follows the new rarity's table. */
+    static void setTier(ItemStack stack, String tier) {
+        JsonObject info = info(stack);
+        info.addProperty("tier", tier);
+        setInfo(stack, info);
+        refreshLook(stack);
     }
 
     static void setHeldItem(ItemStack stack, String item) {
