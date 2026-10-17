@@ -1,0 +1,13 @@
+{
+  "type": "skyrpg_hub:public_glacite",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "skyrpg_skyblock:glacite_tunnels",
+      "features": false,
+      "lakes": false,
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

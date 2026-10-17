@@ -416,8 +416,25 @@ phase so the next session can pick up where this one stopped.
       Walkers; 400/750 HotM XP, 1,500/3,000 Glacite Powder, 25,000 Mining XP). `/sbtunnels go|cold` for admins.
       Decided: our own map (Hypixel's layout isn't data we have); 20 s regrow; gems 4 Rough a block (Hypixel 3-5);
       powder per block numbers; freezing is a teleport, not a death; Cold Enjoyer & co. only talk.
-      Not yet (part 2): Glacite Mineshafts (corpses, keys, Maniacs, scrap), fossils and the Fossil Excavator, Glacite
-      Powder perks, the Great Glacite Lake, Grandpa Wolf, the Fossil Muncher.
+      Not yet: fossils and the Fossil Excavator, Glacite Powder perks, the Great Glacite Lake, Grandpa Wolf, the Fossil
+      Muncher.
+- [x] **Glacite Mineshafts** (Glacite Tunnels part 2): `glacite/Mineshafts.java`. Mining in the Tunnels counts down a
+      pity of 2,000 (Mithril 2, Glacite/Tungsten/Umber 4, gems and Titanium 8, Hard Stone 0) beside a 1 in 2,000 roll per
+      block; a find opens a portal (Interaction + nether-portal block display + label, particles) for 30 s. Each shaft
+      is built in its own 512-block slot of an empty world `skyrpg_skyblock:glacite_mineshafts` (32 slots): a 60-long
+      tunnel with three side rooms, rock with 32% of the shaft's ore, timber frames, lanterns, a bedrock shell and a
+      ladder exit. 16 kinds (Titanium, Tungsten, Umber, the 12 gemstones with Opal new, Fairy = every gem); the kind you
+      last mined comes up a third of the time. 1-3 Frozen Corpses (invisible armour stands in NEU's corpse armour;
+      `tools/skyblock/import_corpses.py` writes `skyrpg/glacite/corpses.json`, 160 loot entries): Lapis free, Umber and
+      Tungsten need their keys, a Fairy shaft's Vanguards a Skeleton Key; rolls are weighted picks, merged in one panel.
+      Three Glacite Maniacs (Mutt wolf, Bowman stray, Caver husk, Mage zombie; level 173-177, 750k-825k HP): only
+      mining tools hurt them, 8% of max health a hit; drops 50 Glacite Powder, Enchanted Glacite, Fine Tunnels gems 5%,
+      Glacite Jewel 4%, Glacite Shard 0.1%, their coins; no vanilla loot. Suspicious Scrap 1 in 200 per block mined,
+      halving per scrap found. Cold keeps building, +0.25 vulnerability per 150 s inside. The exit pays 1,000 Glacite
+      Powder +500 a scrap, +250 a corpse, +10 a point of Cold. An empty shaft is cleared after 60 s; the server stopping
+      sends everyone inside to the Base Camp and clears every shaft. `/sbmineshaft portal <player>` for admins.
+      Decided: our own shaft layout (Hypixel's rooms aren't data we have); no Littlefoot kind (no data for it); the
+      Glacite Mage is a zombie; corpses stand (frozen upright) rather than lie down.
 - [ ] **Runecrafting and Social** (decided 2026-10-17: deferred). Both are cosmetic on Hypixel (runes are particle
       effects; Social barely gives anything), so they wait until the gameplay systems are in. NEU has the 147 rune items
       (type, tier, slot, Runecrafting level, text) for when they come.

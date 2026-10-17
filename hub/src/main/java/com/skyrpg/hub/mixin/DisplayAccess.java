@@ -23,4 +23,7 @@ public interface DisplayAccess {
 
     @Invoker("setViewRange")
     void skyrpg$setViewRange(float range);
+
+    @Invoker("setBillboardConstraints")
+    void skyrpg$setBillboard(net.minecraft.world.entity.Display.BillboardConstraints billboard);
 }

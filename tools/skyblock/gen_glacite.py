@@ -11,6 +11,7 @@ Writes (generated: overwritten each run) under skyblock/src/main/resources/data/
     worldgen/biome/glacite_tunnels.json
     worldgen/feature/glacite/*.json + worldgen/placed_feature/glacite/*.json   Glacite, Tungsten, Umber, Mithril, gems
     skyrpg/zones/glacite_*.json                the Glacite Tunnels (mining) and the Dwarven Base Camp (safe)
+    dimension/glacite_mineshafts.json          an empty world for the Glacite Mineshafts (built by Mineshafts.java)
 
 The Tunnels are 256 x 256 around 0, 0, rock from y 96 to 176 with winding tunnels between y 104 and 170 (two crossed 3D
 noises: air where both are near zero) and a few caverns, snow on their floors. In the rock: Glacite (packed ice),
@@ -149,6 +150,7 @@ def biome():
 ZONE_DIR = DATA / "skyrpg/zones"
 EDGE = HALF - 6
 REGROW = 20
+SHAFT_SLOTS = 32
 
 
 def write_zones():
@@ -176,6 +178,15 @@ def write_zones():
     zone("tunnels_west", "Glacite Tunnels", (-EDGE, BOTTOM, -EDGE), (x1 - 1, TOP, z2), blocks)
     zone("tunnels_east", "Glacite Tunnels", (x2 + 1, BOTTOM, -EDGE), (EDGE, TOP, z2), blocks)
     zone("base_camp", "Dwarven Base Camp", (x1, y1, z1 if z1 > -EDGE else -EDGE), (x2, y2, z2), None)
+    # The Mineshafts (a 512-block slot each along x, at y 100): nothing grows back, every gemstone can be there.
+    gone = {"becomes": "minecraft:air", "regrow": -1}
+    shaft = {b: gone for b in mined}
+    for color in ("lime", "orange", "yellow", "light_blue", "purple", "magenta", "red", "white"):
+        shaft[f"minecraft:{color}_stained_glass"] = gone
+        shaft[f"minecraft:{color}_stained_glass_pane"] = gone
+    data = {"name": "Glacite Mineshafts", "dimension": f"{NS}:glacite_mineshafts", "from": [-256, 90, -64],
+            "to": [SHAFT_SLOTS * 512 - 256, 120, 64], "blocks": shaft}
+    write(ZONE_DIR / "glacite_mineshafts.json", data)
 
 
 def main():
@@ -210,6 +221,11 @@ def main():
         "type": "skyrpg_hub:public_glacite",
         "generator": {"type": "minecraft:noise", "settings": f"{NS}:glacite_tunnels",
                       "biome_source": {"type": "minecraft:fixed", "biome": f"{NS}:glacite_tunnels"}},
+    })
+    write(DATA / "dimension/glacite_mineshafts.json", {
+        "type": "skyrpg_hub:public_glacite",
+        "generator": {"type": "minecraft:flat", "settings": {"biome": f"{NS}:glacite_tunnels", "features": False, "lakes": False,
+                                                             "layers": [], "structure_overrides": []}},
     })
     print(f"Glacite Tunnels worldgen: {len(FEATURES)} vein placements")
 

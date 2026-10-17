@@ -1,0 +1,868 @@
+{
+ "corpses": {
+  "LAPIS": {
+   "name": "Lapis Corpse",
+   "key": "",
+   "rolls": [
+    3,
+    6
+   ],
+   "armor": [
+    "LAPIS_ARMOR_HELMET",
+    "LAPIS_ARMOR_CHESTPLATE",
+    "LAPIS_ARMOR_LEGGINGS",
+    "LAPIS_ARMOR_BOOTS"
+   ],
+   "loot": [
+    {
+     "item": "FLAWED_ONYX_GEM",
+     "count": 20,
+     "weight": 5.97
+    },
+    {
+     "item": "FLAWED_ONYX_GEM",
+     "count": 40,
+     "weight": 5.97
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 1,
+     "weight": 1.49
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 2,
+     "weight": 0.74
+    },
+    {
+     "item": "FLAWED_PERIDOT_GEM",
+     "count": 20,
+     "weight": 5.97
+    },
+    {
+     "item": "FLAWED_PERIDOT_GEM",
+     "count": 40,
+     "weight": 5.97
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 1,
+     "weight": 1.49
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 2,
+     "weight": 0.74
+    },
+    {
+     "item": "FLAWED_CITRINE_GEM",
+     "count": 20,
+     "weight": 5.97
+    },
+    {
+     "item": "FLAWED_CITRINE_GEM",
+     "count": 40,
+     "weight": 5.97
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 1,
+     "weight": 1.49
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 2,
+     "weight": 0.74
+    },
+    {
+     "item": "FLAWED_AQUAMARINE_GEM",
+     "count": 20,
+     "weight": 5.97
+    },
+    {
+     "item": "FLAWED_AQUAMARINE_GEM",
+     "count": 40,
+     "weight": 5.97
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 1,
+     "weight": 1.49
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 2,
+     "weight": 0.74
+    },
+    {
+     "item": "ENCHANTED_UMBER",
+     "count": 1,
+     "weight": 2.98
+    },
+    {
+     "item": "ENCHANTED_UMBER",
+     "count": 2,
+     "weight": 1.49
+    },
+    {
+     "item": "ENCHANTED_UMBER",
+     "count": 4,
+     "weight": 0.74
+    },
+    {
+     "item": "REFINED_UMBER",
+     "count": 1,
+     "weight": 0.14
+    },
+    {
+     "item": "ENCHANTED_TUNGSTEN",
+     "count": 1,
+     "weight": 2.98
+    },
+    {
+     "item": "ENCHANTED_TUNGSTEN",
+     "count": 2,
+     "weight": 1.49
+    },
+    {
+     "item": "ENCHANTED_TUNGSTEN",
+     "count": 4,
+     "weight": 0.74
+    },
+    {
+     "item": "REFINED_TUNGSTEN",
+     "count": 1,
+     "weight": 0.14
+    },
+    {
+     "item": "ENCHANTED_GLACITE",
+     "count": 1,
+     "weight": 2.98
+    },
+    {
+     "item": "ENCHANTED_GLACITE",
+     "count": 2,
+     "weight": 1.49
+    },
+    {
+     "item": "ENCHANTED_GLACITE",
+     "count": 4,
+     "weight": 0.74
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 1,
+     "weight": 0.14
+    },
+    {
+     "item": "GLACITE_JEWEL",
+     "count": 1,
+     "weight": 2.98
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 1,
+     "weight": 2.98
+    },
+    {
+     "item": "GOBLIN_EGG",
+     "count": 1,
+     "weight": 4.77
+    },
+    {
+     "item": "GOBLIN_EGG",
+     "count": 2,
+     "weight": 2.38
+    },
+    {
+     "item": "GOBLIN_EGG",
+     "count": 4,
+     "weight": 1.19
+    },
+    {
+     "item": "GOBLIN_EGG_GREEN",
+     "count": 1,
+     "weight": 4.17
+    },
+    {
+     "item": "GOBLIN_EGG_GREEN",
+     "count": 2,
+     "weight": 2.08
+    },
+    {
+     "item": "GOBLIN_EGG_GREEN",
+     "count": 1,
+     "weight": 1.04
+    },
+    {
+     "item": "GOBLIN_EGG_YELLOW",
+     "count": 1,
+     "weight": 4.17
+    },
+    {
+     "item": "GOBLIN_EGG_YELLOW",
+     "count": 2,
+     "weight": 2.08
+    },
+    {
+     "item": "GOBLIN_EGG_YELLOW",
+     "count": 4,
+     "weight": 1.04
+    },
+    {
+     "item": "GOBLIN_EGG_RED",
+     "count": 1,
+     "weight": 4.17
+    },
+    {
+     "item": "GOBLIN_EGG_RED",
+     "count": 2,
+     "weight": 2.08
+    },
+    {
+     "item": "GOBLIN_EGG_RED",
+     "count": 4,
+     "weight": 1.04
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 1,
+     "weight": 0.14
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 1,
+     "weight": 0.14
+    },
+    {
+     "item": "BEJEWELED_HANDLE",
+     "count": 1,
+     "weight": 0.59
+    },
+    {
+     "item": "BEJEWELED_HANDLE",
+     "count": 2,
+     "weight": 0.29
+    },
+    {
+     "item": "BEJEWELED_HANDLE",
+     "count": 4,
+     "weight": 0.14
+    }
+   ]
+  },
+  "UMBER": {
+   "name": "Umber Corpse",
+   "key": "UMBER_KEY",
+   "rolls": [
+    4,
+    7
+   ],
+   "armor": [
+    "ARMOR_OF_YOG_HELMET",
+    "ARMOR_OF_YOG_CHESTPLATE",
+    "ARMOR_OF_YOG_LEGGINGS",
+    "ARMOR_OF_YOG_BOOTS"
+   ],
+   "loot": [
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_ONYX_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_PERIDOT_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_CITRINE_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_AQUAMARINE_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 2,
+     "weight": 10.7
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 4,
+     "weight": 5.35
+    },
+    {
+     "item": "GOBLIN_EGG_BLUE",
+     "count": 1,
+     "weight": 1.22
+    },
+    {
+     "item": "REFINED_UMBER",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "UMBER_PLATE",
+     "count": 1,
+     "weight": 0.07
+    },
+    {
+     "item": "REFINED_TUNGSTEN",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "TUNGSTEN_PLATE",
+     "count": 1,
+     "weight": 0.07
+    },
+    {
+     "item": "MITHRIL_PLATE",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "OPAL_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "ONYX_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "PERIDOT_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "AQUAMARINE_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "CITRINE_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "SKELETON_KEY",
+     "count": 1,
+     "weight": 0.06
+    },
+    {
+     "item": "DWARVEN_OS_METALLIC_MINIS",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "book:ice_cold:1",
+     "count": 1,
+     "weight": 1.22
+    },
+    {
+     "item": "FROZEN_SCUTE",
+     "count": 1,
+     "weight": 0.06
+    },
+    {
+     "item": "CAGED_WISP",
+     "count": 1,
+     "weight": 0.03
+    }
+   ]
+  },
+  "TUNGSTEN": {
+   "name": "Tungsten Corpse",
+   "key": "TUNGSTEN_KEY",
+   "rolls": [
+    4,
+    7
+   ],
+   "armor": [
+    "MINERAL_HELMET",
+    "MINERAL_CHESTPLATE",
+    "MINERAL_LEGGINGS",
+    "MINERAL_BOOTS"
+   ],
+   "loot": [
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_ONYX_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_ONYX_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_PERIDOT_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_PERIDOT_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_CITRINE_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_CITRINE_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 4,
+     "weight": 10.7
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 8,
+     "weight": 5.35
+    },
+    {
+     "item": "FINE_AQUAMARINE_GEM",
+     "count": 16,
+     "weight": 2.67
+    },
+    {
+     "item": "FLAWLESS_AQUAMARINE_GEM",
+     "count": 1,
+     "weight": 0.38
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 2,
+     "weight": 10.7
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 4,
+     "weight": 5.35
+    },
+    {
+     "item": "GOBLIN_EGG_BLUE",
+     "count": 1,
+     "weight": 1.22
+    },
+    {
+     "item": "REFINED_UMBER",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "UMBER_PLATE",
+     "count": 1,
+     "weight": 0.07
+    },
+    {
+     "item": "REFINED_TUNGSTEN",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "TUNGSTEN_PLATE",
+     "count": 1,
+     "weight": 0.07
+    },
+    {
+     "item": "MITHRIL_PLATE",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "OPAL_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "ONYX_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "PERIDOT_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "AQUAMARINE_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "CITRINE_CRYSTAL",
+     "count": 1,
+     "weight": 0.61
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 1,
+     "weight": 0.15
+    },
+    {
+     "item": "SKELETON_KEY",
+     "count": 1,
+     "weight": 0.06
+    },
+    {
+     "item": "DWARVEN_OS_METALLIC_MINIS",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "book:ice_cold:1",
+     "count": 1,
+     "weight": 1.22
+    },
+    {
+     "item": "FROZEN_SCUTE",
+     "count": 1,
+     "weight": 0.06
+    },
+    {
+     "item": "CAGED_WISP",
+     "count": 1,
+     "weight": 0.03
+    }
+   ]
+  },
+  "VANGUARD": {
+   "name": "Vanguard Corpse",
+   "key": "SKELETON_KEY",
+   "rolls": [
+    5,
+    8
+   ],
+   "armor": [
+    "SKELETON_SKULL",
+    "LEATHER_CHESTPLATE#3588FF",
+    "LEATHER_LEGGINGS#3588FF",
+    "LEATHER_BOOTS#3588FF"
+   ],
+   "loot": [
+    {
+     "item": "FLAWLESS_ONYX_GEM",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "FLAWLESS_ONYX_GEM",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "FLAWLESS_CITRINE_GEM",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "FLAWLESS_CITRINE_GEM",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "FLAWLESS_PERIDOT_GEM",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "FLAWLESS_PERIDOT_GEM",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "FLAWLESS_AQUAMARINE_GEM",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "FLAWLESS_AQUAMARINE_GEM",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 8,
+     "weight": 4.88
+    },
+    {
+     "item": "SUSPICIOUS_SCRAP",
+     "count": 16,
+     "weight": 2.44
+    },
+    {
+     "item": "GOBLIN_EGG_BLUE",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "GOBLIN_EGG_BLUE",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "REFINED_UMBER",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "REFINED_UMBER",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "UMBER_PLATE",
+     "count": 1,
+     "weight": 0.91
+    },
+    {
+     "item": "REFINED_TUNGSTEN",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "REFINED_TUNGSTEN",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "TUNGSTEN_PLATE",
+     "count": 1,
+     "weight": 0.91
+    },
+    {
+     "item": "MITHRIL_PLATE",
+     "count": 1,
+     "weight": 1.83
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "GLACITE_AMALGAMATION",
+     "count": 4,
+     "weight": 1.22
+    },
+    {
+     "item": "OPAL_CRYSTAL",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "ONYX_CRYSTAL",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "PERIDOT_CRYSTAL",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "AQUAMARINE_CRYSTAL",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "CITRINE_CRYSTAL",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "UMBER_KEY",
+     "count": 4,
+     "weight": 1.22
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 2,
+     "weight": 2.44
+    },
+    {
+     "item": "TUNGSTEN_KEY",
+     "count": 4,
+     "weight": 1.22
+    },
+    {
+     "item": "SKELETON_KEY",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "DWARVEN_OS_METALLIC_MINIS",
+     "count": 1,
+     "weight": 3.66
+    },
+    {
+     "item": "book:ice_cold:1",
+     "count": 1,
+     "weight": 4.88
+    },
+    {
+     "item": "FROZEN_SCUTE",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "CAGED_WISP",
+     "count": 1,
+     "weight": 0.3
+    },
+    {
+     "item": "SHATTERED_PENDANT",
+     "count": 1,
+     "weight": 0.15
+    }
+   ]
+  }
+ }
+}

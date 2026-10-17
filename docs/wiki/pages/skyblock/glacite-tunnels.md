@@ -3,7 +3,7 @@ title: Glacite Tunnels
 category: skyblock
 order: 4
 icon: minecraft:packed_ice
-summary: Hypixel's Glacite Tunnels under the Dwarven Mines - the Dwarven Base Camp, the Cold, Glacite, Tungsten, Umber, four new gemstones and their commissions.
+summary: Hypixel's Glacite Tunnels under the Dwarven Mines - the Dwarven Base Camp, the Cold, Glacite, Tungsten, Umber, four new gemstones, their commissions and the Glacite Mineshafts.
 ---
 The **Glacite Tunnels** are a maze of icy tunnels below the [Dwarven Mines](dwarven-mines), for miners at the top of the [Heart of the Mountain](heart-of-the-mountain). At their north end is the **Dwarven Base Camp**, a warm outpost around a campfire.
 
@@ -52,5 +52,19 @@ Mining Fortune and Dwarven Metal Fortune give more Glacite, Tungsten and Umber; 
 
 Emissary Lissandra's board: collect 1,500 Glacite, Tungsten, Umber, Aquamarine, Citrine, Onyx or Peridot, or slay 50 Glacite Walkers (in the Dwarven Mines). Each pays **400 HotM XP (750 at HotM 10), 1,500 Glacite Powder (3,000 at HotM 10) and 25,000 Mining XP**.
 
+## Glacite Mineshafts
+
+Every block you mine in the Tunnels has a 1 in 2,000 chance to open a **Mineshaft portal** beside you. It can't take forever: each block also counts toward a sure one (2,000 points: Mithril 2, Glacite, Tungsten and Umber 4, gemstones and Titanium 8). The portal stays for **30 seconds**; right-click it to go in.
+
+A mineshaft is yours alone: a long tunnel with side rooms, its walls full of one kind of ore. There are 16 kinds: Titanium, Tungsten, Umber, each of the twelve gemstones (Opal only comes from here) and the Fairy mineshaft with every gemstone at once. The kind you mined last comes up more often. Ore you mine in a mineshaft doesn't grow back.
+
+| What's inside | |
+| --- | --- |
+| **Frozen Corpses** (1 to 3) | Right-click to loot: the Lapis Corpse is free, the Umber Corpse needs an Umber Key, the Tungsten Corpse a Tungsten Key, and the Fairy mineshaft's Vanguard Corpses a Skeleton Key. Each gives 3 to 8 picks from Hypixel's loot table (gems, Glacite and keys, enchanted books, Suspicious Scrap...). |
+| **Glacite Maniacs** (3) | The Glacite Mutt, Bowman, Caver and Mage, level 173 to 177. Only a mining tool hurts them: every hit takes 8% of their health. They drop 50 Glacite Powder, Enchanted Glacite, sometimes a Fine gemstone (5%), a Glacite Jewel (4%) or a Glacite Shard (0.1%). |
+| **Suspicious Scrap** | 1 in 200 for each block you mine, half as likely after each one you find. |
+
+The Cold keeps building in there, and faster the longer you stay (+0.25 vulnerability every 150 seconds). The **ladder** at the start takes you back to the Base Camp with a Glacite Powder bonus: **1,000, plus 500 for each Suspicious Scrap, 250 for each corpse you looted and 10 for each point of Cold**. Freezing takes you back too, without the bonus. A mineshaft nobody is in is gone after a minute.
+
 > [!NOTE]
-> Not yet: the Glacite Mineshafts (with Frozen Corpses, the Maniacs and Suspicious Scrap), fossils and the Fossil Excavator, the Great Glacite Lake, Grandpa Wolf and the Fossil Muncher, and the powder perks that need Glacite Powder.
+> Not yet: fossils and the Fossil Excavator, the Great Glacite Lake, Grandpa Wolf and the Fossil Muncher, and the powder perks that need Glacite Powder.

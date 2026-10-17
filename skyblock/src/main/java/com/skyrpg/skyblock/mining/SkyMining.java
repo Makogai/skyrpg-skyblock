@@ -50,6 +50,8 @@ public final class SkyMining {
             SkyRpgSkyblock.id("crystal_hollows"));
     public static final ResourceKey<Level> GLACITE_TUNNELS = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
             SkyRpgSkyblock.id("glacite_tunnels"));
+    public static final ResourceKey<Level> GLACITE_MINESHAFTS = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
+            SkyRpgSkyblock.id("glacite_mineshafts"));
     private static final Identifier PRIVATE_ISLANDS = SkyRpgSkyblock.id("islands");
 
     /** A mining block: strength, Breaking Power, whether it's an ore (instamined only at 60 × strength). */
@@ -115,6 +117,7 @@ public final class SkyMining {
         tunnelGem(DyeColor.BLACK, "Onyx");
         tunnelGem(DyeColor.BROWN, "Citrine");
         tunnelGem(DyeColor.GREEN, "Peridot");
+        tunnelGem(DyeColor.WHITE, "Opal");
     }
 
     private static void tunnel(int strength, Metal metal, Block... blocks) {
@@ -228,6 +231,10 @@ public final class SkyMining {
         }
         Info local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_BLOCKS.get(state.getBlock())
                 : level.dimension().equals(GLACITE_TUNNELS) ? TUNNELS_BLOCKS.get(state.getBlock()) : null;
+        if (level.dimension().equals(GLACITE_MINESHAFTS)) {
+            // A mineshaft can hold any gemstone: the Tunnels' table, then the Hollows'.
+            local = TUNNELS_BLOCKS.getOrDefault(state.getBlock(), HOLLOWS_BLOCKS.get(state.getBlock()));
+        }
         return local != null ? local : BLOCKS.get(state.getBlock());
     }
 
@@ -235,6 +242,9 @@ public final class SkyMining {
     static Metal metal(Level level, BlockState state) {
         Metal local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock())
                 : level.dimension().equals(GLACITE_TUNNELS) ? TUNNELS_METALS.get(state.getBlock()) : null;
+        if (level.dimension().equals(GLACITE_MINESHAFTS)) {
+            local = TUNNELS_METALS.getOrDefault(state.getBlock(), HOLLOWS_METALS.get(state.getBlock()));
+        }
         return local != null ? local : METALS.get(state.getBlock());
     }
 
@@ -289,13 +299,13 @@ public final class SkyMining {
         ItemDefinition def = ItemRegistry.skyblock(metal.item());
         if (def != null && count > 0) {
             ItemGains.give(player, SkyItems.create(def, count), ItemGains.Source.MINING);
-            if (level.dimension().equals(GLACITE_TUNNELS)) {
+            if (level.dimension().equals(GLACITE_TUNNELS) || level.dimension().equals(GLACITE_MINESHAFTS)) {
                 Commissions.tunnelsCollected(player, metal.item(), count);
             }
         }
         SkillLevels.giveXp(player, SkillLevels.MINING, metal.xp());
         boolean powderHere = level.dimension().equals(DWARVEN_MINES) || level.dimension().equals(CRYSTAL_HOLLOWS)
-                || level.dimension().equals(GLACITE_TUNNELS);
+                || level.dimension().equals(GLACITE_TUNNELS) || level.dimension().equals(GLACITE_MINESHAFTS);
         if (metal.powder() > 0 && powderHere) {
             Hotm.State hotm = Hotm.state(player);
             boolean gemstone = metal.powderType().equals(Hotm.GEMSTONE);

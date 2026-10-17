@@ -68,6 +68,7 @@ public final class GlaciteTunnels {
     public static void init() {
         Actions.register("base_camp", (player, params) -> travel(player));
         Actions.register("leave_base_camp", (player, params) -> leave(player));
+        Mineshafts.init();
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (server.getTickCount() % 20 == 0) {
                 server.getPlayerList().getPlayers().forEach(GlaciteTunnels::second);
@@ -173,10 +174,11 @@ public final class GlaciteTunnels {
         player.resetFallDistance();
     }
 
-    /** Every second: Cold builds in the Tunnels (not at the Base Camp), goes away elsewhere. */
+    /** Every second: Cold builds in the Tunnels (not at the Base Camp) and the Mineshafts, goes away elsewhere. */
     private static void second(ServerPlayer player) {
         ServerLevel level = player.level();
-        if (!level.dimension().equals(SkyMining.GLACITE_TUNNELS)) {
+        boolean shaft = level.dimension().equals(Mineshafts.LEVEL);
+        if (!level.dimension().equals(SkyMining.GLACITE_TUNNELS) && !shaft) {
             if (COLD_EXACT.remove(player.getUUID()) != null || cold(player) > 0) {
                 setCold(player, 0);
             }
@@ -189,7 +191,7 @@ public final class GlaciteTunnels {
             return;
         }
         double resistance = Math.max(0, Stats.get(player, StatTypes.COLD_RESISTANCE));
-        double vulnerability = player.isInWater() ? 3 : 0;
+        double vulnerability = (player.isInWater() ? 3 : 0) + (shaft ? Mineshafts.vulnerability(player) : 0);
         int before = (int) cold;
         cold = Math.min(100, cold + (1 + vulnerability) / (5 * (1 + resistance / 100)));
         int now = (int) cold;

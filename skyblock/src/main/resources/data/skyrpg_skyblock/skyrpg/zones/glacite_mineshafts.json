@@ -1,0 +1,168 @@
+{
+  "name": "Glacite Mineshafts",
+  "dimension": "skyrpg_skyblock:glacite_mineshafts",
+  "from": [
+    -256,
+    90,
+    -64
+  ],
+  "to": [
+    16128,
+    120,
+    64
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:packed_ice": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:cobblestone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:clay": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:terracotta": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:brown_terracotta": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_sandstone": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:cyan_terracotta": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:prismarine_bricks": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:dark_prismarine": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:black_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:black_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:brown_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:brown_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:green_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:green_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:lime_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:orange_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:yellow_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:light_blue_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:purple_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:magenta_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:red_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:white_stained_glass": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    },
+    "minecraft:white_stained_glass_pane": {
+      "becomes": "minecraft:air",
+      "regrow": -1
+    }
+  }
+}
