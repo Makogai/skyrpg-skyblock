@@ -55,6 +55,7 @@ public final class CrimsonIsle {
         Factions.init();
         FactionQuests.init();
         Minibosses.init();
+        Kuudra.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("crimson_spots"), "skyrpg/spawn_spots", CrimsonIsle::load);
         Actions.register("crimson_elle", (player, params) -> elle(player));
         Actions.register("crimson_leader", (player, params) -> leader(player, params.get("faction").getAsString()));

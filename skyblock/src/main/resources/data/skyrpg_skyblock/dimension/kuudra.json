@@ -1,0 +1,22 @@
+{
+  "type": "skyrpg_hub:public_crimson",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "skyrpg_skyblock:crimson_isle",
+      "features": false,
+      "lakes": false,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:lava",
+          "height": 59
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

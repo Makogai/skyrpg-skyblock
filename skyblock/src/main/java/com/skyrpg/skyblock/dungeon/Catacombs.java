@@ -554,7 +554,7 @@ public final class Catacombs {
         RUNS.remove(run.slot);
         BY_PLAYER.values().removeIf(r -> r == run);
         Rewards.CHESTS_BY_RUN.remove(run.id);
-        for (Entity entity : run.level.getAllEntities()) {
+        for (Entity entity : com.google.common.collect.Lists.newArrayList(run.level.getAllEntities())) {
             if (entity.entityTags().contains(run.tag)) {
                 entity.discard();
             }

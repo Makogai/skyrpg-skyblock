@@ -604,7 +604,13 @@ phase so the next session can pick up where this one stopped.
       blank); quest from blazes and magma cubes. Immolate (the wiki's per-phase shares), Demonsplit (Quazii, Typhoeus
       with NEU's health and DPS), the Hellion Shield (dagger attunement, `ItemMods.attunement`, right-click swaps,
       tooltip line), Fire Pillars, Apocalypse fire pits.
-- [ ] Kuudra (five tiers, keys from the Emissaries, chests, Crimson armour and its essence stars, attributes).
+- [x] **Kuudra** (`crimson/Kuudra`, `KuudraRun`, `KuudraMenu` + `KuudraScreen`; arena `tools/builds/kuudra/arena.py`
+      on `kuudra_kit.py`, helper-built): five tiers at the Kuudra Gatekeeper (faction + previous tier), up to 4 players,
+      supplies -> build -> fuel and ballista shots that stun Kuudra (the only damage window), waves, slams, tier extras
+      (tentacles, healing, enrage), 10-second downs, lava rescue; free and paid chests (`/kuudra chests`), keys at the
+      Emissaries (`neu_extra_items.py` adds the 5 key items). Numbers decided where Hypixel's weren't found
+      (docs/design/crimson-isle.md).
+      Not yet: class perks and tokens, the Kuudra pet, attributes, Crimson essence stars, Croesus.
 - [x] **Trophy Fishing** (`fishing/TrophyFishing`, `OdgerMenu` + `OdgerScreen`; `tools/skyblock/trophy_fish.py` writes the
       72 items from NEU and the fish table): lava rods only on the Isle; each eligible fish rolls rarest first at its
       chance x (1 + Trophy Fish Chance); conditions (zones, eruption window, geyser pools, sulphur nearby, bobber below,

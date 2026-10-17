@@ -3,7 +3,7 @@ title: Crimson Isle
 category: skyblock
 order: 5
 icon: minecraft:magma_cream
-summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs, Trophy Fishing with Odger and the Inferno Demonlord.
+summary: Hypixel's nether island over a lava sea - Elle, the Mage and Barbarian factions, reputation and daily faction quests, the five minibosses, its mobs, Trophy Fishing with Odger, Kuudra and the Inferno Demonlord.
 ---
 The **Crimson Isle** is a nether island floating in a sea of lava, Hypixel SkyBlock's late-game combat island. Two factions split it: the **Mages** of **Scarleton** in the east and the **Barbarians** of **Dragontail** in the west, with the **Stronghold**, the **Crimson Fields** and the **Blazing Volcano** between them.
 
@@ -36,7 +36,7 @@ Lava rivers run between the island's three parts; four nether-brick bridges cros
 | Smoldering Tomb | Wither Spectres and Wither Skeletons in a crypt |
 | The Wasteland | Kada Knights; Sulphur |
 | Burning Desert | Flaming Spiders; Red Sand and Sulphur |
-| Forgotten Skull | Vulcan and the Kuudra Gatekeeper |
+| Forgotten Skull | Vulcan and the Kuudra Gatekeeper ([Kuudra](#kuudra)) |
 | Scarleton | the Mage town: Queen Nyx, Alwin, the Mage Emissary, a Banker, Auction House and Bazaar |
 | Mage Outpost | a camp at the north-east bridge |
 | Cathedral and Courtyard | the Mage Outlaw |
@@ -155,9 +155,48 @@ They also give Combat XP (2,500 to 3,922) and count for your faction quests. The
 - The **Mage Outlaw** and **Ashfang** burst into flame, burning everyone within 7 blocks.
 - The **Magma Boss** leaps and slams down (9 blocks).
 
+## Kuudra
+
+**Kuudra**, a colossal magma cube, sleeps under the **Forgotten Skull**. Talk to the **Kuudra Gatekeeper** there to fight it with your party (up to 4). You must be in a faction, and each tier needs the one before it beaten.
+
+| Tier | Kuudra's health | Mob waves | Free chest | Reputation | First clear |
+| --- | --- | --- | --- | --- | --- |
+| Basic | 100,000 | every 35 s | 60 Crimson Essence | +10 | 20 SkyBlock XP |
+| Hot | 500,000 | every 30 s | 120 | +20 | 40 |
+| Burning | 3,000,000 | every 25 s | 250 | +30 | 60 |
+| Fiery | 15,000,000 | every 20 s | 500 | +40 | 80 |
+| Infernal | 240,000,000 | every 15 s | 1,000 | +50 | 100 |
+
+The fight is in **Kuudra's Hollow**, a crater of lava with a fortified platform and a ballista in the middle and six islets around it on bridges. Fall in the lava and it throws you back onto the platform.
+
+1. **Supplies.** Six supply crates sit on the islets. Right-click one to pick it up (you're slow while carrying it) and bring it to the ballista.
+2. **Build.** Stand by the ballista to build it: the more of you, the faster.
+3. **Kuudra.** Kuudra rises in the east. Fuel cells wash up on the islets two at a time; carry them to the ballista. Each one is a shot: right-click the ballista's back to fire. A shot takes a tenth of Kuudra's health and **stuns** it beside the platform for 10 seconds, and only then can you hurt it.
+
+All through, Kuudra's followers climb out of the lava in waves (Kuudra Followers, Knockers, Magma Followers, Wandering Blazes, and Berserkers from Hot up), and every few seconds Kuudra slams down where someone stands (a ring of fire warns first). From **Burning**, two tentacles grab the platform after each stun and the ballista won't fire until they're dead. From **Fiery**, Kuudra heals while it isn't stunned. In **Infernal**, below a quarter of its health, it slams twice as often. Going down isn't the end: you're back on the platform after 10 seconds, but if everyone is down at once, Kuudra wins.
+
+After the kill, two chests (`/kuudra chests` reopens them):
+
+- **Free chest:** Crimson Essence.
+- **Paid chest:** opened with that tier's **Kuudra Key**. Twice the essence (plus 2,000 in Infernal), a piece of Crimson, Aurora, Terror, Hollow or Fervor armour of the tier, Kuudra Teeth in Fiery and Infernal, sometimes a Kuudra Chunk or a Kuudra Core.
+
+You're sent back to the Forgotten Skull a minute later (`/kuudra leave` goes at once).
+
+### Kuudra Keys
+
+The **Emissary** in your faction's town sells them:
+
+| Key | Coins | Enchanted Red Sand (Barbarians) or Mycelium (Mages) | Corrupted Nether Stars | Reputation |
+| --- | --- | --- | --- | --- |
+| Kuudra Key (Basic) | 200,000 | 2 | 2 | |
+| Hot Kuudra Key | 400,000 | 6 | 2 | 1,000 |
+| Burning Kuudra Key | 750,000 | 20 | 2 | 3,000 |
+| Fiery Kuudra Key | 1,500,000 | 60 | 2 | 7,000 |
+| Infernal Kuudra Key | 3,000,000 | 120 | 2 | 12,000 |
+
 ## The Inferno Demonlord
 
 The Blaze Slayer: its quest fills from the Isle's blazes and magma cubes. See [Slayers](slayers#inferno-demonlord).
 
 > [!NOTE]
-> Still to come here: Kuudra, the Dojo's tests with Master Tao, Vulcan's Crimson Essence shop, the Emissaries' Kuudra Keys, and the Plhlegblast.
+> Still to come here: the Dojo's tests with Master Tao, Vulcan's Crimson Essence shop, Crimson essence stars and attributes on Kuudra armour, and the Plhlegblast.

@@ -689,7 +689,7 @@ public final class Mineshafts {
 
     private static void clear(ServerLevel level, Shaft shaft) {
         int x0 = shaft.origin.getX();
-        for (Entity entity : level.getAllEntities()) {
+        for (Entity entity : com.google.common.collect.Lists.newArrayList(level.getAllEntities())) {
             if (entity.entityTags().contains(TAG) && Math.abs(entity.getX() - x0 - LENGTH / 2.0) < SPACING / 2.0) {
                 entity.discard();
             }

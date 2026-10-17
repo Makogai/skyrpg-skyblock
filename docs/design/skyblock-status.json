@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "Trophy Fishing with Odger, and the Crimson Isle's lava sea creatures",
+  "latest": "Kuudra: five tiers, the ballista fight, keys and reward chests",
   "phase": {
     "name": "Phase 4: Late game",
-    "done": 20
+    "done": 30
   },
   "categories": [
     {
@@ -147,7 +147,7 @@
           "name": "Kuudra",
           "icon": "item/magma_cream",
           "weight": 4,
-          "done": 0
+          "done": 50
         },
         {
           "name": "Pets",
@@ -225,7 +225,7 @@
           "name": "Crimson Isle",
           "icon": "item/blaze_rod",
           "weight": 6,
-          "done": 52
+          "done": 60
         },
         {
           "name": "The Garden",

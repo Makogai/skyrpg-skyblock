@@ -64,10 +64,28 @@ Lava rods only on the Isle. 18 fish, four tiers, Hypixel's conditions and odds; 
 into Magmafish and gives the ranks' armour, teeth and sacks. Decided: the lava sea creatures' Fishing levels, weights,
 Fishing XP and damage (the wiki pages weren't fetched).
 
+## Kuudra (`crimson/Kuudra.java`, `KuudraRun.java`, `KuudraMenu.java`)
+
+Dimension `skyrpg_skyblock:kuudra` (lava up to y 59), 32 slots 1,024 apart; the arena `structure/kuudra/arena.nbt`
+(`tools/builds/kuudra/arena.py` on `kuudra_kit.py`: platform, ballista, six islets on bridges, crater; only solid blocks)
+is placed once per slot. Decided, since the wiki's Kuudra pages gave no numbers or rules for most of it:
+- Phases: supplies (six crates on the islets, carried slowly to the ballista), build (stand by it: 1.5 + 1 per builder %
+  a second), Kuudra (fuel cells two at a time; each is a ballista shot: 10% of its health and a 10-second stun beside
+  the platform, the only time it can be hurt). Hypixel's stomach and lair phases are folded into tier extras: tentacles
+  that block the ballista from Burning, healing from Fiery, an enrage below 25% in Infernal.
+- Kuudra's health 100k / 500k / 3M / 15M / 240M (the research's recollection); waves every 35 / 30 / 25 / 20 / 15 s of
+  Kuudra Followers, Knockers, Magma Followers, Wandering Blazes (and Berserkers from Hot); a slam every 8 s (4 enraged).
+- Down for 10 seconds, then back on the platform; everyone down at once loses. The lava throws you back too.
+- Rewards: reputation 10-50 and first-clear SkyBlock XP 20-100 (Hypixel's); free chest 60 / 120 / 250 / 500 / 1,000
+  Crimson Essence; paid chest (the tier's key): twice that (+2,000 in Infernal), one Crimson/Aurora/Terror/Hollow/
+  Fervor piece of the tier, Kuudra Teeth (Fiery 1-2, Infernal 3-4), a 25% chunk, a 2% core from Burning.
+- Keys at the Emissaries: Hypixel's coins, materials and reputation; 2 Corrupted Nether Stars each.
+- Not yet: Kuudra's class perks and tokens, the Kuudra pet drop, attribute shards, Croesus buying back chests.
+
 ## Still to build
 
 - Inferno Demonlord (Blaze Slayer): a slayer line with Immolate, Demonsplit, Hellion Shield attunements, fire pillars.
-- Kuudra: the instance, five tiers, keys from the Emissaries (reputation-gated), the free and paid chests, Crimson armour.
+- Crimson armour's essence stars and attributes; Kuudra's perks, tokens and the pet.
 - The Dojo's seven tests and belts (Master Tao).
 - Vulcan's Crimson Essence shop and Crimson essence stars on Kuudra armour; attributes.
 - Rollim's and Kaus's daily duels, geysers on the Blazing Volcano, the Vanquisher.
