@@ -115,6 +115,8 @@ final class HypixelBosses {
         final Map<UUID, Long> beamCooldown = new HashMap<>();
         long nextHead;
         final Map<BossMoves.Totem, Integer> looked = new HashMap<>();
+        // Inferno Demonlord
+        final Demonlord.Fight demon = new Demonlord.Fight();
     }
 
     private HypixelBosses() {
@@ -122,7 +124,7 @@ final class HypixelBosses {
 
     static boolean isHypixelKind(String kind) {
         return switch (kind) {
-            case "revenant", "tarantula", "sven", "voidgloom" -> true;
+            case "revenant", "tarantula", "sven", "voidgloom", "demonlord" -> true;
             default -> false;
         };
     }
@@ -131,6 +133,7 @@ final class HypixelBosses {
         // Arrows heal the Revenant; the Tarantula strikes harder from behind and, in Bat Barrage, shrugs off magic;
         // nothing hurts a boss that's protected (Sven's pups, the Voidgloom's radiation).
         IncomingDamage.registerHit(HypixelBosses::hitMultiplier);
+        Demonlord.init();
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
             // The cave spider riding the Tarantula never gets hurt (swings at it go to the Tarantula, below).
             if (entity.entityTags().contains(PART_TAG)) {
@@ -246,6 +249,7 @@ final class HypixelBosses {
                 state.nextDissonance = now + 160;
                 raiseShield(run);
             }
+            case "demonlord" -> Demonlord.started(run);
             default -> {
             }
         }
@@ -268,6 +272,7 @@ final class HypixelBosses {
             }
         });
         state.pups.clear();
+        Demonlord.takeDown(run);
         if (run.level != null) {
             for (ServerPlayer player : run.level.getServer().getPlayerList().getPlayers()) {
                 SlayerCurses.lift(player);
@@ -292,7 +297,7 @@ final class HypixelBosses {
 
         boolean busy = state.boomAt > now || state.radiationUntil > now || calling(state);
         // Regeneration: a boss that hasn't hurt anyone for 5 seconds heals fast.
-        if (now % 20 == 0 && now - run.lastHit > 100 && !busy && !(state.pupsCalled && !state.pups.isEmpty())) {
+        if (now % 20 == 0 && now - run.lastHit > 100 && !busy && !(state.pupsCalled && !state.pups.isEmpty()) && !state.demon.hiding()) {
             boss.heal(boss.getMaxHealth() * 0.02f);
             SlayerBosses.particles(run.level, ParticleTypes.HAPPY_VILLAGER, boss.position().add(0, 1.2, 0), 4, 0.4, 0);
         }
@@ -307,6 +312,7 @@ final class HypixelBosses {
             case "tarantula" -> tarantula(run, owner, health, now, tier);
             case "sven" -> sven(run, owner, health, now, tier);
             case "voidgloom" -> voidgloom(run, owner, health, now, tier);
+            case "demonlord" -> Demonlord.tick(run, owner, health, now, tier);
             default -> {
             }
         }
@@ -384,6 +390,9 @@ final class HypixelBosses {
             }
             if (run.line.kind().equals("tarantula") && state.bats && (source.is(DamageTypes.MAGIC) || source.is(DamageTypes.INDIRECT_MAGIC))) {
                 return 0;
+            }
+            if (run.line.kind().equals("demonlord")) {
+                return Demonlord.hitMultiplier(run, source);
             }
             return 1;
         }
@@ -1058,6 +1067,9 @@ final class HypixelBosses {
         if (state.radiationUntil > now) {
             name.append(Msg.text("  Broken Heart Radiation", ChatFormatting.LIGHT_PURPLE));
         }
+        if (run.line.kind().equals("demonlord")) {
+            Demonlord.barExtras(run, name);
+        }
     }
 
     // ---------------------------------------------------------------- the abilities, for the menus
@@ -1132,6 +1144,28 @@ final class HypixelBosses {
                             "From a third of its health, heads gather around you: look straight at one to break it; together they hurt more"));
                     case 4 -> adds.add(new SlayerAbilities.Ability(false, "Broken Heart Radiation",
                             "At 5/6, 1/2 and 1/6 health it can't be hurt for 8 seconds and sweeps beams (25% of your health, less healing)"));
+                    default -> {
+                    }
+                }
+            }
+            case "demonlord" -> {
+                switch (tier) {
+                    case 1 -> {
+                        adds.add(new SlayerAbilities.Ability(false, "Immolate",
+                                "Burns everyone within 8 blocks every second: 100 + 5% of their health (8% below 66%, 12% below 33%)"));
+                        adds.add(new SlayerAbilities.Ability(true, "Demonsplit",
+                                "At half health it hides and splits into Quazii and Typhoeus; it returns when both are slain"));
+                    }
+                    case 2 -> {
+                        adds.add(new SlayerAbilities.Ability(false, "Hellion Shield",
+                                "Attuned Ashen, Spirit, Auric or Crystal: only a dagger attuned the same way hurts it; 8 hits switch it"));
+                        adds.add(new SlayerAbilities.Ability(true, "Fire Pillars",
+                                "Below 66% health a pillar rises every 20 seconds: hit it 8 times in 7 seconds or it blows up"));
+                    }
+                    case 3 -> adds.add(new SlayerAbilities.Ability(true, "Apocalypse",
+                            "Splits at 66% and 33%; below 33% fire pits open around it, burning 950 a second"));
+                    case 4 -> adds.add(new SlayerAbilities.Ability(false, "Overwhelming Despair",
+                            "Immolate burns 15% of your health a second (25%, then 35%); the pits burn 2,865 a second"));
                     default -> {
                     }
                 }

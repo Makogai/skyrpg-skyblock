@@ -1,0 +1,20 @@
+{
+  "name": "Rollim",
+  "role": "Mage Duelist",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    199.5,
+    66.0,
+    -182.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:item.trident.throw",
+  "greetings": [
+    "A duel a day keeps the rust away.",
+    "Come back when you're stronger."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Barbarian Outpost",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -152,
+    40,
+    -97
+  ],
+  "to": [
+    -112,
+    189,
+    -63
+  ]
+}

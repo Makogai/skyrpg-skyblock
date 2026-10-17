@@ -1,0 +1,26 @@
+{
+  "name": "Pablo",
+  "role": "Mage",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    295.5,
+    66.0,
+    -183.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.grass.place",
+  "greetings": [
+    "My garden needs mushrooms.",
+    "Red ones, from the Mystic Marsh."
+  ],
+  "action": {
+    "type": "crimson_npc",
+    "params": {
+      "name": "Pablo"
+    }
+  }
+}

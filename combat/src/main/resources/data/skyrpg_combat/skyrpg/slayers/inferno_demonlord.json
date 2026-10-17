@@ -1,0 +1,533 @@
+{
+ "order": 5,
+ "name": "Inferno Demonlord",
+ "key": "blaze",
+ "color": "#FFAA00",
+ "icon": "minecraft:blaze_powder",
+ "boss": "minecraft:blaze",
+ "kind": "demonlord",
+ "counts": {
+  "minecraft:blaze": 60,
+  "minecraft:magma_cube": 50
+ },
+ "counts_text": "blazes and magma cubes",
+ "levels": [
+  10,
+  30,
+  250,
+  1500,
+  5000,
+  20000,
+  100000,
+  400000,
+  1000000
+ ],
+ "level_rewards": [
+  {
+   "stats": {
+    "health": 3.0
+   },
+   "sbxp": 15,
+   "unlocks": [
+    "Droplet Wisp Pet"
+   ]
+  },
+  {
+   "stats": {
+    "strength": 1.0
+   },
+   "sbxp": 25,
+   "unlocks": [
+    "Molten Powder",
+    "Firedust Dagger",
+    "Twilight Dagger",
+    "Mana Disintegrator"
+   ]
+  },
+  {
+   "stats": {
+    "health": 4.0
+   },
+   "sbxp": 35,
+   "unlocks": [
+    "Wisp Upgrade Stone (Rare)",
+    "Burststopper Talisman",
+    "Warning Flare",
+    "Inferno Minion I",
+    "Kelvin Inverter"
+   ]
+  },
+  {
+   "stats": {
+    "true_defense": 1.0
+   },
+   "sbxp": 50,
+   "unlocks": [
+    "Kindlebane Dagger",
+    "Mawdredge Dagger",
+    "Demonslayer Gauntlet",
+    "Teleporter Pill",
+    "Travel Scroll to the Smoldering Tomb",
+    "Scorched Power Crystal"
+   ]
+  },
+  {
+   "stats": {
+    "health": 5.0
+   },
+   "sbxp": 75,
+   "unlocks": [
+    "Wisp Upgrade Stone (Epic)",
+    "Destruction Cloak",
+    "Tactical Insertion",
+    "Enchanted Book (Fire Aspect III)"
+   ]
+  },
+  {
+   "stats": {
+    "strength": 2.0
+   },
+   "sbxp": 100,
+   "unlocks": [
+    "Pyrochaos Dagger",
+    "Deathripper Dagger",
+    "Blazetekk\u2122 Ham Radio",
+    "Alert Flare",
+    "Enchanted Book (Duplex I)"
+   ]
+  },
+  {
+   "stats": {
+    "health": 6.0
+   },
+   "sbxp": 125,
+   "unlocks": [
+    "Burststopper Artifact",
+    "Wisp Upgrade Stone (Legendary)",
+    "Annihilation Cloak",
+    "SOS Flare",
+    "High Class Archfiend Dice"
+   ]
+  },
+  {
+   "stats": {
+    "true_defense": 2.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  },
+  {
+   "stats": {
+    "health": 7.0
+   },
+   "sbxp": 150,
+   "unlocks": []
+  }
+ ],
+ "drops": [
+  {
+   "item": "DERELICT_ASHE",
+   "level": 0,
+   "odds": "Guaranteed",
+   "tiers": {
+    "1": [
+     6,
+     8,
+     1.0
+    ],
+    "2": [
+     12,
+     22,
+     1.0
+    ],
+    "3": [
+     60,
+     80,
+     1.0
+    ],
+    "4": [
+     110,
+     155,
+     1.0
+    ]
+   }
+  },
+  {
+   "item": "ENCHANTED_BLAZE_POWDER",
+   "level": 0,
+   "odds": "Occasional",
+   "tiers": {
+    "1": [
+     1,
+     1,
+     0.2126
+    ],
+    "2": [
+     2,
+     3,
+     0.13171
+    ],
+    "3": [
+     4,
+     8,
+     0.125581
+    ],
+    "4": [
+     16,
+     40,
+     0.117269
+    ]
+   }
+  },
+  {
+   "item": "ARROW_BUNDLE_MAGMA",
+   "level": 1,
+   "odds": "",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0847
+    ],
+    "3": [
+     1,
+     1,
+     0.0811
+    ],
+    "4": [
+     1,
+     1,
+     0.0762
+    ]
+   }
+  },
+  {
+   "item": "MANA_DISINTEGRATOR",
+   "level": 2,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0395
+    ],
+    "3": [
+     1,
+     1,
+     0.0378
+    ],
+    "4": [
+     1,
+     1,
+     0.0356
+    ]
+   }
+  },
+  {
+   "item": "SCORCHED_BOOKS",
+   "level": 2,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0226
+    ],
+    "3": [
+     1,
+     1,
+     0.0216
+    ],
+    "4": [
+     1,
+     1,
+     0.0203
+    ]
+   }
+  },
+  {
+   "item": "KELVIN_INVERTER",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     1,
+     1,
+     0.0282
+    ],
+    "3": [
+     1,
+     1,
+     0.027
+    ],
+    "4": [
+     1,
+     1,
+     0.0254
+    ]
+   }
+  },
+  {
+   "item": "BLAZE_ROD_DISTILLATE",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     2,
+     2,
+     0.0508
+    ],
+    "3": [
+     6,
+     10,
+     0.0486
+    ],
+    "4": [
+     16,
+     24,
+     0.0457
+    ]
+   }
+  },
+  {
+   "item": "GLOWSTONE_DUST_DISTILLATE",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     2,
+     2,
+     0.0508
+    ],
+    "3": [
+     6,
+     10,
+     0.0486
+    ],
+    "4": [
+     16,
+     24,
+     0.0457
+    ]
+   }
+  },
+  {
+   "item": "MAGMA_CREAM_DISTILLATE",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     2,
+     2,
+     0.0508
+    ],
+    "3": [
+     6,
+     10,
+     0.0486
+    ],
+    "4": [
+     16,
+     24,
+     0.0457
+    ]
+   }
+  },
+  {
+   "item": "NETHER_STALK_DISTILLATE",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     2,
+     2,
+     0.0508
+    ],
+    "3": [
+     6,
+     10,
+     0.0486
+    ],
+    "4": [
+     16,
+     24,
+     0.0457
+    ]
+   }
+  },
+  {
+   "item": "CRUDE_GABAGOOL_DISTILLATE",
+   "level": 3,
+   "odds": "Rare",
+   "tiers": {
+    "2": [
+     2,
+     2,
+     0.0282
+    ],
+    "3": [
+     6,
+     10,
+     0.027
+    ],
+    "4": [
+     16,
+     24,
+     0.0254
+    ]
+   }
+  },
+  {
+   "item": "SCORCHED_POWER_CRYSTAL",
+   "level": 4,
+   "odds": "",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0324
+    ],
+    "4": [
+     1,
+     1,
+     0.0305
+    ]
+   }
+  },
+  {
+   "item": "ARCHFIEND_DICE",
+   "level": 4,
+   "odds": "",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0108
+    ],
+    "4": [
+     1,
+     1,
+     0.0102
+    ]
+   }
+  },
+  {
+   "item": "FLAWED_OPAL_GEM",
+   "level": 5,
+   "odds": "",
+   "tiers": {
+    "4": [
+     240,
+     400,
+     0.0279
+    ]
+   }
+  },
+  {
+   "item": "HIGH_CLASS_ARCHFIEND_DICE",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0025
+    ]
+   }
+  },
+  {
+   "item": "WILSON_ENGINEERING_PLANS",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0009
+    ]
+   }
+  },
+  {
+   "item": "SUBZERO_INVERTER",
+   "level": 7,
+   "odds": "Pray RNGesus",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0009
+    ]
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "fee": 10000,
+   "xp": 6000,
+   "health": 2500000.0,
+   "damage": 80.0,
+   "dps": 1200,
+   "level": 436,
+   "minutes": 3,
+   "slayer_xp": 5,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 50,
+   "requires_boss": {
+    "line": "voidgloom_seraph",
+    "tier": 3
+   }
+  },
+  {
+   "fee": 25000,
+   "xp": 14400,
+   "health": 10000000.0,
+   "damage": 266.67,
+   "dps": 4000,
+   "level": 551,
+   "minutes": 3,
+   "slayer_xp": 25,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 100,
+   "requires_boss": {
+    "line": "inferno_demonlord",
+    "tier": 1
+   }
+  },
+  {
+   "fee": 60000,
+   "xp": 18000,
+   "health": 45000000.0,
+   "damage": 500.0,
+   "dps": 7500,
+   "level": 695,
+   "minutes": 4,
+   "slayer_xp": 100,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 200,
+   "requires_boss": {
+    "line": "inferno_demonlord",
+    "tier": 2
+   }
+  },
+  {
+   "fee": 150000,
+   "xp": 36000,
+   "health": 150000000.0,
+   "damage": 1000.0,
+   "dps": 15000,
+   "level": 825,
+   "minutes": 4,
+   "slayer_xp": 500,
+   "requires": 0,
+   "combat_level": 0,
+   "combat_xp": 500,
+   "requires_boss": {
+    "line": "inferno_demonlord",
+    "tier": 3
+   }
+  }
+ ]
+}

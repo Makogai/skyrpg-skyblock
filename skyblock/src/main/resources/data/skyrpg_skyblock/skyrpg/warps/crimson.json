@@ -1,0 +1,14 @@
+{
+  "name": "Crimson Isle",
+  "description": "The Stronghold, the Crimson Fields and the Blazing Volcano",
+  "icon": "minecraft:magma_cream",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    0.5,
+    67.0,
+    205.5
+  ],
+  "yaw": 180.0,
+  "area": "Crimson Fields",
+  "order": 31
+}

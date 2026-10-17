@@ -1,0 +1,14 @@
+{
+  "name": "Scarleton",
+  "description": "The Mages' town on the Crimson Isle",
+  "icon": "minecraft:amethyst_block",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    245.5,
+    66.0,
+    -156.5
+  ],
+  "yaw": 180.0,
+  "area": "Scarleton",
+  "order": 33
+}

@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
-  "updated": "2026-10-17",
-  "latest": "Dungeons: blessings, minibosses, crypts, the Mimic, Malik's shop",
+  "updated": "2026-10-18",
+  "latest": "The Crimson Isle: factions, daily quests, minibosses and the Inferno Demonlord",
   "phase": {
-    "name": "Phase 3: Dungeons",
-    "done": 65
+    "name": "Phase 4: Late game",
+    "done": 15
   },
   "categories": [
     {
@@ -135,7 +135,7 @@
           "name": "Slayers",
           "icon": "item/rotten_flesh",
           "weight": 6,
-          "done": 60
+          "done": 72
         },
         {
           "name": "Dungeons",
@@ -225,7 +225,7 @@
           "name": "Crimson Isle",
           "icon": "item/blaze_rod",
           "weight": 6,
-          "done": 0
+          "done": 40
         },
         {
           "name": "The Garden",

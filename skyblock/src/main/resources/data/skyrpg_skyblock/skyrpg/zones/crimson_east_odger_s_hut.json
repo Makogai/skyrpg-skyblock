@@ -1,0 +1,14 @@
+{
+  "name": "Odger's Hut",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    100,
+    40,
+    127
+  ],
+  "to": [
+    189,
+    189,
+    249
+  ]
+}

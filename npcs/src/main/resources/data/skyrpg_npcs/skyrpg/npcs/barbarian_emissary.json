@@ -1,0 +1,20 @@
+{
+  "name": "Barbarian Emissary",
+  "role": "Kuudra Keys",
+  "color": "#FF7733",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -230.5,
+    73.0,
+    -154.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Kuudra sleeps beneath the Forgotten Skull.",
+    "Keys open its chests."
+  ]
+}

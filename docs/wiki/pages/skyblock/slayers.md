@@ -3,7 +3,7 @@ title: Slayers
 category: skyblock
 order: 12
 icon: minecraft:rotten_flesh
-summary: Maddox's slayer quests, Hypixel's four bosses, their drops and odds, slayer levels and the gear they unlock.
+summary: Maddox's slayer quests, Hypixel's five bosses, their drops and odds, slayer levels and the gear they unlock.
 ---
 Slayers are SkyBlock's boss quests. **Maddox the Slayer** stands in the Hub. Pay him for a quest, earn Combat XP from the right mobs, and the boss rises next to you. Beat it for slayer XP, Combat XP and its drops. Slayer levels give stats and SkyBlock XP, and unlock the crafting recipes for slayer gear. Everything here (bosses, costs, health, drops, odds and levels) comes from Hypixel SkyBlock.
 
@@ -25,6 +25,7 @@ Bosses only rise where there are mobs to fight: in a Hub area with mobs, or out 
 | Tarantula Broodfather | spiders and cave spiders (5) |
 | Sven Packmaster | wolves (10) |
 | Voidgloom Seraph | endermen (12), endermites (4) |
+| Inferno Demonlord | blazes (60), magma cubes (50): the [Crimson Isle](crimson-isle)'s |
 
 ### Unlocking the bosses
 
@@ -33,6 +34,7 @@ Each tier needs the tier below it beaten, and some need a Combat level. The next
 - **Tarantula Broodfather** opens when you've slain a Revenant Horror II.
 - **Sven Packmaster** opens when you've slain a Tarantula Broodfather II.
 - **Voidgloom Seraph** opens when you've slain a Sven Packmaster IV.
+- **Inferno Demonlord** opens when you've slain a Voidgloom Seraph III.
 
 The Slayers page shows what a locked tier still needs.
 
@@ -52,7 +54,7 @@ Rare drops are announced with Hypixel's banners: **RARE DROP!**, **VERY RARE DRO
 
 Each boss has its own slayer level, 1 to 9. A level gives a stat for good and SkyBlock XP (see [SkyBlock Leveling](skyblock-leveling)), and unlocks recipes. A recipe that needs one shows **Requires Zombie Slayer 3** (Spider, Wolf or Enderman for the others) in the [Recipe Book](recipe-book). It crafts once you reach that level.
 
-| Level | Revenant and Tarantula XP | Sven and Voidgloom XP |
+| Level | Revenant and Tarantula XP | Sven, Voidgloom and Blaze XP |
 | --- | --- | --- |
 | 1 | 5 | 10 |
 | 2 | 15 | 30 |
@@ -168,6 +170,40 @@ Sven's levels alternate **Speed** (+1 at levels 1, 3 and 8), **Health** (+2 at 2
 
 Voidgloom's levels alternate **Health** (+1, +2, +3, +4, +5 at levels 1, 3, 5, 7 and 9) and **Intelligence** (+2 at 2 and 4, +5 at 6, +4 at 8). The recipes include the Voidwalker Katana (1), Null Ovoid and the Soulflow items (2), the Voidedge Katana and Final Destination armour (3), the Vorpal Katana and Juju Shortbow (5), the Aspect of the Void, Atomsplit Katana and Sinseeker Scythe (6), and the Terminator (7).
 
+## Inferno Demonlord
+
+The Blaze Slayer. Its quest fills from the [Crimson Isle](crimson-isle)'s blazes and magma cubes.
+
+| Tier | Cost | Combat XP to summon | Health | Damage per second | Level | Needs |
+| --- | --- | --- | --- | --- | --- | --- |
+| I | 10,000 | 6,000 | 2,500,000 | 1,200 | 436 | Voidgloom Seraph III slain |
+| II | 25,000 | 14,400 | 10,000,000 | 4,000 | 551 | Inferno Demonlord I slain |
+| III | 60,000 | 18,000 | 45,000,000 | 7,500 | 695 | Inferno Demonlord II slain |
+| IV | 150,000 | 36,000 | 150,000,000 | 15,000 | 825 | Inferno Demonlord III slain |
+
+| Drop | Slayer level | Odds | I | II | III | IV |
+| --- | --- | --- | --- | --- | --- | --- |
+| Derelict Ashe |  | Guaranteed | 6-8 | 12-22 | 60-80 | 110-155 |
+| Enchanted Blaze Powder |  | Occasional | 1 (21.26%) | 2-3 (13.17%) | 4-8 (12.56%) | 16-40 (11.73%) |
+| Bundle of Magma Arrows | 1 |  |  | 1 (8.47%) | 1 (8.11%) | 1 (7.62%) |
+| Mana Disintegrator | 2 | Rare |  | 1 (3.95%) | 1 (3.78%) | 1 (3.56%) |
+| Scorched Books | 2 | Rare |  | 1 (2.26%) | 1 (2.16%) | 1 (2.03%) |
+| Kelvin Inverter | 3 | Rare |  | 1 (2.82%) | 1 (2.7%) | 1 (2.54%) |
+| Blaze Rod, Glowstone, Magma Cream and Nether Wart Distillate (each) | 3 | Rare |  | 2 (5.08%) | 6-10 (4.86%) | 16-24 (4.57%) |
+| Gabagool Distillate | 3 | Rare |  | 2 (2.82%) | 6-10 (2.7%) | 16-24 (2.54%) |
+| Scorched Power Crystal | 4 |  |  |  | 1 (3.24%) | 1 (3.05%) |
+| Archfiend Dice | 4 |  |  |  | 1 (1.08%) | 1 (1.02%) |
+| Flawed Opal Gemstone | 5 |  |  |  |  | 240-400 (2.79%) |
+| High Class Archfiend Dice | 7 | Pray RNGesus |  |  |  | 1 (0.25%) |
+| Wilson's Engineering Plans | 7 | Pray RNGesus |  |  |  | 1 (0.09%) |
+| Subzero Inverter | 7 | Pray RNGesus |  |  |  | 1 (0.09%) |
+
+Blaze's levels alternate **Health** (+3, +4, +5, +6, +7 at levels 1, 3, 5, 7 and 9), **Strength** (+1 at 2, +2 at 6) and **True Defense** (+1 at 4, +2 at 8). The recipes include the Firedust and Twilight Daggers (2), the Burststopper Talisman and the Inferno Minion (3), the Kindlebane and Mawdredge Daggers and the Demonslayer Gauntlet (4), the Destruction Cloak (5), the Pyrochaos and Deathripper Daggers (6), and the Burststopper Artifact and Annihilation Cloak (7).
+
+### The daggers and the Hellion Shield
+
+From tier II the Demonlord wears a **Hellion Shield** attuned **Ashen**, **Spirit**, **Auric** or **Crystal** (the boss bar names it, and a ring of its colour circles the boss). Only a melee hit from a dagger attuned the same way does full damage; anything else does 1%. Right-click a dagger to swap its attunement (the tooltip shows it): the Firedust, Kindlebane and Pyrochaos Daggers swap between Ashen and Auric, the Twilight, Mawdredge and Deathripper Daggers between Spirit and Crystal. Carry one of each. Every 8 hits that get through, the shield picks a new attunement.
+
 ## How the bosses fight
 
 Each boss hits for its tier's damage per second, about once a second, and every tier keeps the abilities of the tiers below. The Slayers page and Maddox's screen list each tier's abilities.
@@ -208,6 +244,14 @@ A cave spider rides it. Hits on the rider go to the Broodfather.
 - **Yang Glyphs** (II): from half its health (two thirds at III and IV), and never while its shield is up, it holds a beacon for 2 seconds and throws it nearby. Stand on or right next to it within 5 seconds to break it, or it kills everyone fighting (a thousand times their health as True Damage).
 - **Nukekubi Fixations** (III): from a third of its health, a floating head appears near you every 6 seconds (up to 5). Look straight at one for half a second to destroy it. Together they deal `heads x 800 x 2^(heads - 1)` damage a second (2,000 a head at IV), and if that outdoes the boss's own damage, the boss itself stops hitting.
 - **Broken Heart Radiation** (IV): at 5/6, 1/2 and 1/6 of its health it sits still for 8 seconds, can't be hurt, and sweeps four beams around it. A beam takes 25% of your health as True Damage and cuts your healing by 12% for 90 seconds.
+
+### Inferno Demonlord
+
+- **Immolate** (I): every second, everyone within 8 blocks takes 100 + a share of their max health as True Damage: 5% (8% below 66% of its health, 12% below 33%) at I; 5% / 10% / 15% at II and III; 15% / 25% / 35% at IV.
+- **Demonsplit** (I): at half health (at 66% and 33% from III) it vanishes and two demons rise, **Quazii** and **Typhoeus** (500,000 health and 2,500 damage a second each at I; 1,750,000 / 8,000 at II; 5,000,000 / 15,000 at III; 10,000,000 / 30,000 at IV). Immolate burns from them meanwhile. When both are dead, the Demonlord comes back.
+- **Hellion Shield** (II): see the daggers above.
+- **Fire Pillars** (II): below 66% health a pillar rises next to you every 20 seconds. Hit it 8 times within 7 seconds, or it blows up for more than your whole health.
+- **Apocalypse** (III): below 33% health, fire pits open around it every 7 seconds (one under you): smoke first, then fire. Standing in one burns 950 True Damage a second (2,865 at IV).
 
 > [!NOTE]
 > Not here yet: the runes, enchanted books and dyes these bosses drop (they arrive with enchanting).

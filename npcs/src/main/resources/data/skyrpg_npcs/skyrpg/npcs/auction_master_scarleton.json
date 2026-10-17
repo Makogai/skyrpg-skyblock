@@ -1,0 +1,23 @@
+{
+  "name": "Auction Master",
+  "role": "Scarleton",
+  "color": "#FFFF55",
+  "hint": "Auctions",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    217.5,
+    66.0,
+    -166.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Buy it now, or bid for it.",
+    "Everything sells, eventually."
+  ],
+  "action": {
+    "type": "open_auction"
+  }
+}

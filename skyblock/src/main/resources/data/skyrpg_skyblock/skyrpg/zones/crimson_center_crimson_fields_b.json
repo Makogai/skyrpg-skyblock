@@ -1,0 +1,51 @@
+{
+  "name": "Crimson Fields",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    42,
+    40,
+    105
+  ],
+  "to": [
+    99,
+    189,
+    249
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:magma_cube",
+      "name": "Magma Cube Rider",
+      "level": 90,
+      "health": 1200000,
+      "damage": 4000,
+      "xp": 110,
+      "coins": 25,
+      "max": 3,
+      "every": 12,
+      "from": [
+        46,
+        63,
+        120
+      ],
+      "to": [
+        86,
+        78,
+        190
+      ],
+      "drops": [
+        {
+          "item": "MAGMA_CREAM",
+          "chance": 1.0,
+          "min": 2,
+          "max": 3
+        },
+        {
+          "item": "MAGMA_CHUNK",
+          "chance": 0.35,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

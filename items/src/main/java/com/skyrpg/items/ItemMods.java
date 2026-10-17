@@ -55,6 +55,39 @@ public final class ItemMods {
         return tag != null && tag.getIntOr(RARITY_UPGRADES, 0) > 0;
     }
 
+    /** Hypixel's Blaze Slayer daggers: the attunement they're in ("Ashen"), stored as {@code td_attune_mode}. */
+    public static final String ATTUNEMENT = "td_attune_mode";
+
+    /** The two attunements a dagger swaps between ("Ashen", "Auric"), from its ability ("Swap between Ashen and Auric mode"). */
+    public static String[] attunements(ItemDefinition def) {
+        if (def == null || def.ability() == null) {
+            return new String[0];
+        }
+        java.util.regex.Matcher m = java.util.regex.Pattern.compile("between (\\w+) and (\\w+) mode").matcher(def.ability().description());
+        return m.find() ? new String[] {m.group(1), m.group(2)} : new String[0];
+    }
+
+    /** The dagger's attunement now (its first one by default), or "" for anything else. */
+    public static String attunement(ItemStack stack, ItemDefinition def) {
+        String[] modes = attunements(def);
+        if (modes.length == 0) {
+            return "";
+        }
+        String mode = tag(stack).getStringOr(ATTUNEMENT, "");
+        return mode.equals(modes[1]) ? modes[1] : modes[0];
+    }
+
+    /** Swaps the dagger to its other attunement; returns the new one. */
+    public static String swapAttunement(ItemStack stack, ItemDefinition def) {
+        String[] modes = attunements(def);
+        if (modes.length == 0) {
+            return "";
+        }
+        String next = attunement(stack, def).equals(modes[0]) ? modes[1] : modes[0];
+        edit(stack, tag -> tag.putString(ATTUNEMENT, next));
+        return next;
+    }
+
     public static int stars(ItemStack stack) {
         CompoundTag tag = tag(stack);
         return tag == null ? 0 : tag.getIntOr(STARS, 0);

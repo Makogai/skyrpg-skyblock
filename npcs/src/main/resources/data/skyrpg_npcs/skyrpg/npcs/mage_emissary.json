@@ -1,0 +1,20 @@
+{
+  "name": "Mage Emissary",
+  "role": "Kuudra Keys",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    255.5,
+    66.0,
+    -174.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Kuudra sleeps beneath the Forgotten Skull.",
+    "Keys open its chests."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Banker",
+  "role": "Dragontail",
+  "color": "#FFAA00",
+  "hint": "Bank",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -278.5,
+    73.0,
+    -176.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:entity.experience_orb.pickup",
+  "greetings": [
+    "Your coins are safe here.",
+    "Deposit, withdraw, any time."
+  ],
+  "action": {
+    "type": "open_bank"
+  }
+}

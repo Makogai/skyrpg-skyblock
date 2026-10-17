@@ -1,0 +1,74 @@
+{
+  "name": "Blazing Volcano",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -100,
+    40,
+    -250
+  ],
+  "to": [
+    -43,
+    189,
+    -100
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:blaze",
+      "name": "Smoldering Blaze",
+      "level": 95,
+      "health": 2000000,
+      "damage": 5000,
+      "xp": 200,
+      "coins": 30,
+      "max": 3,
+      "every": 8,
+      "from": [
+        -90,
+        63,
+        -230
+      ],
+      "to": [
+        -46,
+        110,
+        -110
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 2,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "type": "minecraft:ghast",
+      "name": "Ghast",
+      "level": 85,
+      "health": 1000000,
+      "damage": 5000,
+      "xp": 120,
+      "coins": 25,
+      "max": 3,
+      "every": 20,
+      "from": [
+        -92,
+        115,
+        -240
+      ],
+      "to": [
+        -46,
+        150,
+        -110
+      ],
+      "drops": [
+        {
+          "item": "GHAST_TEAR",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Burning Desert",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -325,
+    40,
+    60
+  ],
+  "to": [
+    -108,
+    189,
+    160
+  ],
+  "blocks": {
+    "minecraft:red_sand": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    },
+    "minecraft:sponge": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 30
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:spider",
+      "name": "Flaming Spider",
+      "level": 80,
+      "health": 1200000,
+      "damage": 3500,
+      "xp": 80,
+      "coins": 20,
+      "max": 8,
+      "every": 6,
+      "from": [
+        -310,
+        62,
+        70
+      ],
+      "to": [
+        -120,
+        95,
+        155
+      ],
+      "drops": [
+        {
+          "item": "STRING",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "SPIDER_EYE",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

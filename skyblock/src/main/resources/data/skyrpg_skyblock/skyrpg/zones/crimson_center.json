@@ -1,0 +1,86 @@
+{
+  "name": "Crimson Fields",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -100,
+    40,
+    31
+  ],
+  "to": [
+    41,
+    189,
+    249
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:magma_cube",
+      "name": "Magma Cube",
+      "level": 75,
+      "health": 400000,
+      "damage": 2500,
+      "xp": 50,
+      "coins": 12,
+      "max": 8,
+      "every": 6,
+      "from": [
+        -85,
+        63,
+        40
+      ],
+      "to": [
+        -20,
+        78,
+        100
+      ],
+      "drops": [
+        {
+          "item": "MAGMA_CREAM",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "MAGMA_CHUNK",
+          "chance": 0.25,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:magma_cube",
+      "name": "Pack Magma Cube",
+      "level": 90,
+      "health": 1500000,
+      "damage": 4000,
+      "xp": 120,
+      "coins": 25,
+      "max": 4,
+      "every": 10,
+      "from": [
+        -85,
+        63,
+        118
+      ],
+      "to": [
+        -20,
+        78,
+        185
+      ],
+      "drops": [
+        {
+          "item": "MAGMA_CREAM",
+          "chance": 1.0,
+          "min": 2,
+          "max": 3
+        },
+        {
+          "item": "MAGMA_CHUNK",
+          "chance": 0.35,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

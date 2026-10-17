@@ -1,0 +1,14 @@
+{
+  "name": "Kuudra Passage",
+  "description": "The Forgotten Skull, Kuudra's lair",
+  "icon": "minecraft:bone_block",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -236.5,
+    68.0,
+    173.5
+  ],
+  "yaw": 0.0,
+  "area": "Forgotten Skull",
+  "order": 35
+}

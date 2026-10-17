@@ -153,6 +153,16 @@ final class ItemTooltips {
             out.add(Component.literal("Ability: " + ability.name() + " ").withStyle(ChatFormatting.GOLD)
                     .append(Component.literal(trigger).withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD)));
             wrap(ability.description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.GRAY)));
+            String attuned = com.skyrpg.items.ItemMods.attunement(stack, def);
+            if (!attuned.isEmpty()) {
+                int color = switch (attuned) {
+                    case "Ashen" -> 0x555555;
+                    case "Auric" -> 0xFFD24A;
+                    case "Crystal" -> 0x55FFFF;
+                    default -> 0xFFFFFF;
+                };
+                out.add(Component.literal("Attuned: ").withStyle(ChatFormatting.GRAY).append(Component.literal(attuned).withColor(color)));
+            }
             MutableComponent cost = Component.empty();
             if (ability.mana() > 0) {
                 cost.append(Component.literal(StatTypes.MANA_ICON + " " + Msg.number(ability.mana()) + " Mana").withStyle(ChatFormatting.AQUA));

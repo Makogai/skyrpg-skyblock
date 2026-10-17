@@ -1,0 +1,14 @@
+{
+  "name": "Smoldering Tomb",
+  "description": "The Crimson Isle's crypt of Wither Spectres",
+  "icon": "minecraft:wither_skeleton_skull",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -194.5,
+    71.0,
+    12.5
+  ],
+  "yaw": 180.0,
+  "area": "The Wasteland",
+  "order": 34
+}

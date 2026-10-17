@@ -575,6 +575,41 @@ phase so the next session can pick up where this one stopped.
       for E/F1-F7/M1-M7; others join (the party mod's invite + accept); listings expire after 30 min, when full, or when
       the leader goes offline.
 
+## Phase 4: Late game
+
+- [x] **The Crimson Isle** (`docs/design/crimson-isle.md`): dimension `skyrpg_skyblock:crimson_isle` (type
+      `skyrpg_hub:public_crimson`: red fog, no sky, crimson spores, nether music; a flat generator's lava sea up to y 59).
+      Three build scripts on `crimson_lib.py` (helpers): `crimson_west.py` (Dragontail, the Barbarian Outpost, the
+      Dukedom, the Smoldering Tomb, the Wasteland, the Burning Desert, the Forgotten Skull), `crimson_center.py` (the
+      arrival, the Crimson Fields, the Ruins of Ashfang, the Stronghold, the Blazing Volcano, the Magma Chamber),
+      `crimson_east.py` (Scarleton, the Mage Outpost, the Cathedral and Courtyard, the Mystic Marsh, the Dojo, Odger's
+      Hut); about 985k blocks; lava rivers and four bridges between them; 24 Fairy Souls. A launch pad on the Spider's
+      Den's east edge (Combat XXII); warps crimson, dragontail, scarleton, smoldering, kuudra. 15 mobs with NEU's health
+      and levels (damage/XP/coins decided), their drops (Blaze Ashes, Magma Chunks, Spectre Dust for Elle). Red sand,
+      Sulphur (sponge) and mycelium break and regrow. The lava sea throws you back to the nearest warp (`CrimsonIsle`);
+      magma blocks don't burn; any rod fishes the lava. `npcs.py` exports `spawn:` NPC spots and the island's warps to
+      `skyrpg/spawn_spots/<island>.json`.
+- [x] **Factions** (`crimson/Factions`, `FactionQuests`, `FactionMenu` + `FactionScreen`): Elle's questline (her
+      supplies, then meeting Queen Nyx and Chief Scorn), joining and switching at the leaders, reputation kept per
+      faction, Hypixel's ranks and their SkyBlock XP. Five daily quests (midnight UTC): two hunts, a miniboss, two
+      errands for the faction's people (Pablo, Avorius, Mollim / Pomtair, Sirih, Suus: talk to them with the items).
+      Banker, Auction Master and Bazaar NPCs in both towns (`open_auction`, `open_bazaar` actions); Alwin and Igor reforge.
+      Decided: Hypixel's longer faction questline (Batphone, the stolen research) is left out; the dailies carry it.
+- [x] **Minibosses** (`crimson/Minibosses`): Bladesoul, the Mage Outlaw, Barbarian Duke X, Ashfang, the Magma Boss at
+      their spots, back two minutes after dying (while someone alive is near and the chunk is loaded), boss bar within
+      48 blocks, a move every 5-8 s; 0.5% of its health in damage earns the Crimson Essence (25/50), Combat XP, coins,
+      +20 reputation and the quest. The Magma Boss's cream, ooze and ember fragment. Not yet: the Damage Soaked meter.
+- [x] **Inferno Demonlord** (`combat/slayer/Demonlord`, the fifth line in `import_slayers.py`): 4 tiers, Hypixel's costs,
+      health, quest XP, drops and 9 levels (wiki pages; levels and the boss's own DPS decided where the infobox is
+      blank); quest from blazes and magma cubes. Immolate (the wiki's per-phase shares), Demonsplit (Quazii, Typhoeus
+      with NEU's health and DPS), the Hellion Shield (dagger attunement, `ItemMods.attunement`, right-click swaps,
+      tooltip line), Fire Pillars, Apocalypse fire pits.
+- [ ] Kuudra (five tiers, keys from the Emissaries, chests, Crimson armour and its essence stars, attributes).
+- [ ] Trophy fishing and Odger; lava rods and lava sea creatures for the Isle.
+- [ ] The Dojo (Master Tao's seven tests, belts); Vulcan's essence shop; Rollim's and Kaus's duels; geysers; the
+      Vanquisher; a faction line in the sidebar.
+- [ ] The Garden, Galatea and Hunting, Backwater Bayou, The Rift.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

@@ -1,0 +1,26 @@
+{
+  "name": "Mollim",
+  "role": "Mage",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    194.5,
+    66.0,
+    -160.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.fungus.place",
+  "greetings": [
+    "Mycelium makes the best reagents.",
+    "The Marsh is full of it."
+  ],
+  "action": {
+    "type": "crimson_npc",
+    "params": {
+      "name": "Mollim"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/crimson_west",
+  "origin": [
+    -330,
+    40,
+    -250
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "island": "Crimson Isle"
+}

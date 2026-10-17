@@ -1,0 +1,23 @@
+{
+  "name": "Bazaar Agent",
+  "role": "Dragontail",
+  "color": "#FFAA00",
+  "hint": "Bazaar",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -213.5,
+    73.0,
+    -153.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Instant buys, instant sells.",
+    "Orders fill while you're away."
+  ],
+  "action": {
+    "type": "open_bazaar"
+  }
+}

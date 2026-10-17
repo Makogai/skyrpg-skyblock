@@ -64,6 +64,9 @@ public final class Hub {
     /** The Glacite Tunnels: like the mines, lit a cold blue. */
     public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_GLACITE_TYPE =
             ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_glacite"));
+    /** The Crimson Isle: a nether island over a lava sea, under a red fog. */
+    public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_CRIMSON_TYPE =
+            ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_crimson"));
     /** The Catacombs (Hypixel's Dungeons): dark, with deep-dark music. */
     public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_CATACOMBS_TYPE =
             ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_catacombs"));
@@ -75,7 +78,7 @@ public final class Hub {
     public static boolean isPublic(Level level) {
         return level.dimension() == LEVEL || level.dimensionTypeRegistration().is(PUBLIC_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_END_TYPE)
                 || level.dimensionTypeRegistration().is(PUBLIC_MINES_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_GLACITE_TYPE)
-                || level.dimensionTypeRegistration().is(PUBLIC_CATACOMBS_TYPE);
+                || level.dimensionTypeRegistration().is(PUBLIC_CATACOMBS_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_CRIMSON_TYPE);
     }
 
     public static ServerLevel level(MinecraftServer server) {

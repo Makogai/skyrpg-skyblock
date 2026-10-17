@@ -1,4 +1,5 @@
-"""Builds Hypixel SkyBlock's slayers: Revenant Horror, Tarantula Broodfather, Sven Packmaster and Voidgloom Seraph.
+"""Builds Hypixel SkyBlock's slayers: Revenant Horror, Tarantula Broodfather, Sven Packmaster, Voidgloom Seraph and
+Inferno Demonlord.
 
     python tools/skyblock/import_slayers.py
 
@@ -30,13 +31,19 @@ LINES = [
      "minecraft:mutton", {"minecraft:wolf": 10}, "wolves"),
     ("voidgloom_seraph", "Voidgloom_Seraph", "Enderman_Slayer", "enderman", "skyrpg_combat:void_stalker", "voidgloom", "#AA00AA",
      "minecraft:ender_pearl", {"minecraft:enderman": 12, "minecraft:endermite": 4}, "endermen"),
+    ("inferno_demonlord", "Inferno_Demonlord", "Blaze_Slayer", "blaze", "minecraft:blaze", "demonlord", "#FFAA00",
+     "minecraft:blaze_powder", {"minecraft:blaze": 60, "minecraft:magma_cube": 50}, "blazes and magma cubes"),
 ]
 STATS = {"hp": "health", "health": "health", "cd": "crit_damage", "cc": "crit_chance", "spd": "speed", "speed": "speed", "str": "strength",
          "strength": "strength", "int": "intelligence", "def": "defense", "defense": "defense", "td": "true_defense", "ferocity": "ferocity",
-         "fer": "ferocity", "mf": "magic_find", "as": "attack_speed", "cw": "combat_wisdom"}
+         "fer": "ferocity", "mf": "magic_find", "as": "attack_speed", "cw": "combat_wisdom", "true def": "true_defense",
+         "true defense": "true_defense"}
 ODDS = {"guaranteed": "Guaranteed", "occasional": "Occasional", "rare": "Rare", "extraordinary": "Extraordinary",
         "rngesus": "Pray RNGesus", "rng": "Pray RNGesus", "rng i": "RNGesus Incarnate", "rngesus incarnate": "RNGesus Incarnate"}
 COMBAT_XP = [50, 100, 200, 500, 2000]
+# What a boss page's infobox leaves out: the Inferno Demonlord's levels (Hypixel's wiki, Blaze Slayer research) and its
+# own hits per second (decided: its Immolate and its demons do the real damage).
+OVERRIDES = {"inferno_demonlord": {"level": [436, 551, 695, 825], "dps": [1200, 4000, 7500, 15000]}}
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9}
 
 
@@ -162,11 +169,11 @@ def main():
         # Slayer levels: stats and SkyBlock XP for each.
         slayer_text = wikitext(slayer_page)
         rewards = []
-        table = tables(slayer_text, "Rewards ==")
+        table = tables(slayer_text, "Rewards ==") or tables(slayer_text, "Rewards==")
         for row in table.split("{{Text anchor|")[1:]:
             stats = {}
             body = row.split("|-")[0] if "|-" in row else row
-            for abbr, value in re.findall(r"\{\{stat\|(\w+)\|\+?([\d.]+)%?\}\}", body, re.I):
+            for abbr, value in re.findall(r"\{\{stat\|([\w ]+)\|\+?([\d.]+)%?\}\}", body, re.I):
                 stat = STATS.get(abbr.lower())
                 if stat:
                     stats[stat] = stats.get(stat, 0) + float(value)
@@ -180,9 +187,12 @@ def main():
         for t in range(tiers):
             fee, quest_xp, combat_level, beaten = tier_rows[t] if t < len(tier_rows) else (0, 100, 0, None)
             dps = number(damage[t]) if t < len(damage) else 0
+            fix = OVERRIDES.get(line_id, {})
+            if not dps and "dps" in fix:
+                dps = fix["dps"][t]
             tier_json.append({
                 "fee": int(fee), "xp": quest_xp, "health": number(healths[t]), "damage": round(max(1.0, dps / 15), 2),
-                "dps": dps, "level": int(number(levels[t])) if t < len(levels) else 0, "minutes": 3 if t < 2 else 4,
+                "dps": dps, "level": int(number(levels[t])) if t < len(levels) and number(levels[t]) else fix.get("level", [0] * 5)[t], "minutes": 3 if t < 2 else 4,
                 "slayer_xp": boss_xp[t] if t < len(boss_xp) else boss_xp[-1], "requires": 0, "combat_level": combat_level,
                 # Every boss gives 50 / 100 / 200 / 500 / 2,000 Combat XP; a tier the infobox leaves out gets that.
                 "combat_xp": combat_xp[t] if t < len(combat_xp) and combat_xp[t] else COMBAT_XP[t],

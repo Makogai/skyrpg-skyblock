@@ -1,0 +1,26 @@
+{
+  "name": "Queen Nyx",
+  "role": "Mage Faction",
+  "color": "#AA55FF",
+  "hint": "Faction",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    245.5,
+    68.0,
+    -209.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Knowledge is the only real power.",
+    "The Barbarians understand nothing."
+  ],
+  "action": {
+    "type": "crimson_leader",
+    "params": {
+      "faction": "mage"
+    }
+  }
+}

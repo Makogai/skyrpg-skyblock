@@ -1,0 +1,86 @@
+{
+  "name": "Smoldering Tomb",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -230,
+    40,
+    -60
+  ],
+  "to": [
+    -160,
+    189,
+    10
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:wither_skeleton",
+      "name": "Wither Spectre",
+      "level": 70,
+      "health": 300000,
+      "damage": 3500,
+      "xp": 70,
+      "coins": 15,
+      "max": 6,
+      "every": 8,
+      "from": [
+        -212,
+        63,
+        -41
+      ],
+      "to": [
+        -178,
+        69,
+        -15
+      ],
+      "drops": [
+        {
+          "item": "COAL",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "SPECTRE_DUST",
+          "chance": 0.25,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:wither_skeleton",
+      "name": "Wither Skeleton",
+      "level": 70,
+      "health": 300000,
+      "damage": 3000,
+      "xp": 60,
+      "coins": 12,
+      "max": 6,
+      "every": 8,
+      "from": [
+        -228,
+        63,
+        -56
+      ],
+      "to": [
+        -162,
+        68,
+        -15
+      ],
+      "drops": [
+        {
+          "item": "COAL",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "BONE",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

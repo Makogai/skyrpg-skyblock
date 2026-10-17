@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/crimson_center",
+  "origin": [
+    -100,
+    40,
+    -250
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "island": "Crimson Isle",
+  "arrival": {
+    "pos": [
+      0.5,
+      67.0,
+      205.5
+    ],
+    "yaw": 180.0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Dojo",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    190,
+    40,
+    127
+  ],
+  "to": [
+    329,
+    189,
+    249
+  ]
+}

@@ -323,7 +323,62 @@ PEOPLE = {
                                                         "The Queen guards the Amber Crystal."], None),
     "Professor Robot": ("professor_robot", "Professor Robot", "Lost Precursor City", "#AAAAAA", "Talk", skin("steve"), False,
                         "minecraft:block.piston.extend", ["Beep. Six parts are missing.", "The Automatons carry them."], None),
+    # ---- the Crimson Isle
+    "Elle": ("elle", "Elle", "Crimson Isle", "#FFAA00", "Talk", skin("alex", True), True, "minecraft:entity.villager.ambient",
+             ["Welcome to the Crimson Isle!", "Two factions, one island. Choose well."], {"type": "crimson_elle"}),
+    "Queen Nyx": ("queen_nyx", "Queen Nyx", "Mage Faction", "#AA55FF", "Faction", skin("noor", True), True,
+                  "minecraft:block.amethyst_block.chime", ["Knowledge is the only real power.", "The Barbarians understand nothing."],
+                  {"type": "crimson_leader", "params": {"faction": "mage"}}),
+    "Chief Scorn": ("chief_scorn", "Chief Scorn", "Barbarian Faction", "#FF7733", "Faction", skin("efe"), False,
+                    "minecraft:entity.ravager.roar", ["Strength wins wars. Not spells.", "The Mages hide behind their books."],
+                    {"type": "crimson_leader", "params": {"faction": "barbarian"}}),
+    "Alwin": ("alwin", "Alwin", "Mage Blacksmith", "#AA55FF", "Reforge", skin("ari"), False, "minecraft:block.anvil.use",
+              ["Enchanted steel holds a reforge best.", "Bring me your gear and some coins."], {"type": "reforge"}),
+    "Igor": ("igor", "Igor", "Barbarian Blacksmith", "#FF7733", "Reforge", skin("steve"), False, "minecraft:block.anvil.use",
+             ["Hit it hard. Then hit it again.", "Bring me your gear and some coins."], {"type": "reforge"}),
+    "Mage Emissary": ("mage_emissary", "Mage Emissary", "Kuudra Keys", "#AA55FF", "Talk", skin("zuri", True), True,
+                      "minecraft:entity.villager.trade", ["Kuudra sleeps beneath the Forgotten Skull.", "Keys open its chests."], None),
+    "Barbarian Emissary": ("barbarian_emissary", "Barbarian Emissary", "Kuudra Keys", "#FF7733", "Talk", skin("kai"), False,
+                           "minecraft:entity.villager.trade", ["Kuudra sleeps beneath the Forgotten Skull.", "Keys open its chests."], None),
+    "Rollim": ("rollim", "Rollim", "Mage Duelist", "#AA55FF", "Talk", skin("sunny"), False, "minecraft:item.trident.throw",
+               ["A duel a day keeps the rust away.", "Come back when you're stronger."], None),
+    "Kaus": ("kaus", "Kaus", "Barbarian Fighter", "#FF7733", "Talk", skin("makena", True), True, "minecraft:entity.player.attack.strong",
+             ["Fight me! Tomorrow, maybe.", "The ring is always open."], None),
+    "Pablo": ("pablo", "Pablo", "Mage", "#AA55FF", "Talk", skin("kai"), False, "minecraft:block.grass.place",
+              ["My garden needs mushrooms.", "Red ones, from the Mystic Marsh."], {"type": "crimson_npc", "params": {"name": "Pablo"}}),
+    "Avorius": ("avorius", "Avorius", "Mage", "#AA55FF", "Talk", skin("noor"), False, "minecraft:item.bottle.fill",
+                ["A Cup of Blood. For research.", "Don't ask what kind."], {"type": "crimson_npc", "params": {"name": "Avorius"}}),
+    "Mollim": ("mollim", "Mollim", "Mage", "#AA55FF", "Talk", skin("ari"), False, "minecraft:block.fungus.place",
+               ["Mycelium makes the best reagents.", "The Marsh is full of it."], {"type": "crimson_npc", "params": {"name": "Mollim"}}),
+    "Pomtair": ("pomtair", "Pomtair", "Barbarian", "#FF7733", "Talk", skin("steve"), False, "minecraft:item.bone_meal.use",
+                ["Enchanted Bone Meal. My crops need it.", "Nothing grows in netherrack otherwise."],
+                {"type": "crimson_npc", "params": {"name": "Pomtair"}}),
+    "Sirih": ("sirih", "Sirih", "Barbarian", "#FF7733", "Talk", skin("zuri", True), True, "minecraft:block.sponge.place",
+              ["Sulphur, from the Wasteland and the desert.", "Barbarian powder needs plenty."],
+              {"type": "crimson_npc", "params": {"name": "Sirih"}}),
+    "Suus": ("suus", "Suus", "Barbarian", "#FF7733", "Talk", skin("sunny", True), True, "minecraft:entity.magma_cube.squish",
+             ["Magma Cream keeps the forges hot.", "The Crimson Fields are full of cubes."],
+             {"type": "crimson_npc", "params": {"name": "Suus"}}),
+    "Vulcan": ("vulcan", "Vulcan", "Crimson Essence", "#FF5555", "Talk", skin("efe"), False, "minecraft:block.fire.ambient",
+               ["Crimson Essence, from the minibosses and Kuudra.", "My shop opens when Kuudra wakes."], None),
+    "Kuudra Gatekeeper": ("kuudra_gatekeeper", "Kuudra Gatekeeper", "Kuudra's Hollow", "#FF5555", "Talk", skin("steve"), False,
+                          "minecraft:entity.elder_guardian.ambient", ["Kuudra sleeps. For now.", "Only faction members may pass."], None),
+    "Master Tao": ("master_tao", "Master Tao", "The Dojo", "#FFFF55", "Talk", skin("ari"), False, "minecraft:block.bamboo.place",
+                   ["Discipline. Patience. Then strength.", "The Dojo's tests open soon."], None),
+    "Odger": ("odger", "Odger", "Trophy Fishing", "#55FFFF", "Talk", skin("steve"), False, "minecraft:entity.fishing_bobber.splash",
+              ["Fish the lava for Trophy Fish.", "Bring them to me when you've caught a few."], None),
 }
+for _town in ("Dragontail", "Scarleton"):
+    _id = _town.lower()
+    PEOPLE[f"Banker ({_town})"] = (f"banker_{_id}", "Banker", _town, "#FFAA00", "Bank", skin("steve"), False,
+                                   "minecraft:entity.experience_orb.pickup", ["Your coins are safe here.", "Deposit, withdraw, any time."],
+                                   {"type": "open_bank"})
+    PEOPLE[f"Auction Master ({_town})"] = (f"auction_master_{_id}", "Auction Master", _town, "#FFFF55", "Auctions", skin("noor"), False,
+                                           "minecraft:entity.villager.trade", ["Buy it now, or bid for it.", "Everything sells, eventually."],
+                                           {"type": "open_auction"})
+    PEOPLE[f"Bazaar ({_town})"] = (f"bazaar_{_id}", "Bazaar Agent", _town, "#FFAA00", "Bazaar", skin("kai"), False,
+                                   "minecraft:entity.villager.trade", ["Instant buys, instant sells.", "Orders fill while you're away."],
+                                   {"type": "open_bazaar"})
 LIFT_OPERATOR = ("Lift Operator", "Deep Caverns", "#FFFF55", "Talk", skin("steve"), False, "minecraft:block.chain.step",
                  ["Going down? Hold on to the rail.", "The lift stops at every layer you've been to."],
                  {"type": "lift", "params": {"lift": "deep_caverns"}})
@@ -358,6 +413,13 @@ ISLAND_WARPS = {
     "forge": ("mines_center", "The Forge", "The Forge", "The Dwarven Mines' Forge", "minecraft:anvil", 28),
     "base": ("glacite_base_camp", "base_camp", "Dwarven Base Camp", "The Glacite Tunnels: Glacite, Tungsten, Umber and the Cold",
              "minecraft:packed_ice", 29),
+    "crimson": ("crimson_center", "Crimson Isle", "Crimson Isle", "The Stronghold, the Crimson Fields and the Blazing Volcano",
+                "minecraft:magma_cream", 31),
+    "dragontail": ("crimson_west", "Dragontail", "Dragontail", "The Barbarians' town on the Crimson Isle", "minecraft:red_nether_bricks", 32),
+    "scarleton": ("crimson_east", "Scarleton", "Scarleton", "The Mages' town on the Crimson Isle", "minecraft:amethyst_block", 33),
+    "smoldering": ("crimson_west", "Smoldering Tomb", "Smoldering Tomb", "The Crimson Isle's crypt of Wither Spectres",
+                   "minecraft:wither_skeleton_skull", 34),
+    "kuudra": ("crimson_west", "Kuudra Passage", "Kuudra Passage", "The Forgotten Skull, Kuudra's lair", "minecraft:bone_block", 35),
 }
 
 
@@ -396,6 +458,8 @@ def main():
     made = []
     for area_id, spots in all_spots.items():
         for name, spot in spots.get("npcs", {}).items():
+            if name.startswith("spawn:"):
+                continue
             who = person(name)
             if who is None:
                 print(f"  no NPC set up for {name} ({area_id})")
@@ -464,6 +528,27 @@ def main():
     if stops:
         stops.sort(key=lambda s: -s["pos"][1])
         write(LIFTS / "deep_caverns.json", {"name": "Deep Caverns Lift", "dimension": deep["dimension"], "stops": stops})
+
+    # Spots the mod spawns things at ("spawn:Bladesoul" NPC spots) and the island's warps, per island.
+    spawn_dir = DATA / "spawn_spots"
+    spawn_dir.mkdir(parents=True, exist_ok=True)
+    for old in spawn_dir.glob("*.json"):
+        old.unlink()
+    spawn_islands = {}
+    for spots in all_spots.values():
+        found = {name[len("spawn:"):]: {"pos": spot["pos"], "yaw": spot.get("yaw", 0.0)}
+                 for name, spot in spots.get("npcs", {}).items() if name.startswith("spawn:")}
+        if not found:
+            continue
+        entry = spawn_islands.setdefault(spots.get("island", "Hub"), {"dimension": spots.get("dimension", HUB), "spots": {}})
+        entry["spots"].update(found)
+    for spots in all_spots.values():
+        island = spots.get("island", "Hub")
+        if island in spawn_islands:
+            for name, warp in spots.get("warps", {}).items():
+                spawn_islands[island]["spots"]["warp:" + name] = {"pos": warp["pos"], "yaw": warp.get("yaw", 0.0)}
+    for island, entry in spawn_islands.items():
+        write(spawn_dir / f"{slug(island)}.json", entry)
 
     souls = ", ".join(f"{island} {len(e['souls'])}" for island, e in islands.items())
     print(f"{len(made)} NPCs; {warps} warps; {pads} launch pads; {len(stops)} lift stops; Fairy Souls: {souls}")

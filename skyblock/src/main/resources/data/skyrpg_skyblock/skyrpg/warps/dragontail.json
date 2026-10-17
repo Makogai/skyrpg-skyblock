@@ -1,0 +1,14 @@
+{
+  "name": "Dragontail",
+  "description": "The Barbarians' town on the Crimson Isle",
+  "icon": "minecraft:red_nether_bricks",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -234.5,
+    73.0,
+    -162.5
+  ],
+  "yaw": 90.0,
+  "area": "Dragontail",
+  "order": 32
+}

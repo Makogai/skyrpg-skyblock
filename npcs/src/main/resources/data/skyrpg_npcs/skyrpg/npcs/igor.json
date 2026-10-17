@@ -1,0 +1,23 @@
+{
+  "name": "Igor",
+  "role": "Barbarian Blacksmith",
+  "color": "#FF7733",
+  "hint": "Reforge",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -275.5,
+    73.0,
+    -140.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Hit it hard. Then hit it again.",
+    "Bring me your gear and some coins."
+  ],
+  "action": {
+    "type": "reforge"
+  }
+}

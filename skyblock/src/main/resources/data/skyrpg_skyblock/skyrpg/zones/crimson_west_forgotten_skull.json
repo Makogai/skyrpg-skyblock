@@ -1,0 +1,14 @@
+{
+  "name": "Forgotten Skull",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -300,
+    40,
+    161
+  ],
+  "to": [
+    -170,
+    189,
+    245
+  ]
+}

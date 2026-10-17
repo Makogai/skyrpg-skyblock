@@ -1,0 +1,23 @@
+{
+  "name": "Elle",
+  "role": "Crimson Isle",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    0.5,
+    65.0,
+    16.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "Welcome to the Crimson Isle!",
+    "Two factions, one island. Choose well."
+  ],
+  "action": {
+    "type": "crimson_elle"
+  }
+}

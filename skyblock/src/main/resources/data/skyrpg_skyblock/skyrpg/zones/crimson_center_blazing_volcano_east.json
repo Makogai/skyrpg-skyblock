@@ -1,0 +1,74 @@
+{
+  "name": "Blazing Volcano",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    43,
+    40,
+    -250
+  ],
+  "to": [
+    99,
+    189,
+    -100
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:blaze",
+      "name": "Smoldering Blaze",
+      "level": 95,
+      "health": 2000000,
+      "damage": 5000,
+      "xp": 200,
+      "coins": 30,
+      "max": 3,
+      "every": 8,
+      "from": [
+        46,
+        63,
+        -230
+      ],
+      "to": [
+        90,
+        110,
+        -110
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 2,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "type": "minecraft:blaze",
+      "name": "Flare",
+      "level": 90,
+      "health": 5000000,
+      "damage": 6000,
+      "xp": 400,
+      "coins": 50,
+      "max": 3,
+      "every": 15,
+      "from": [
+        46,
+        64,
+        -200
+      ],
+      "to": [
+        90,
+        120,
+        -110
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 3,
+          "max": 5
+        }
+      ]
+    }
+  ]
+}

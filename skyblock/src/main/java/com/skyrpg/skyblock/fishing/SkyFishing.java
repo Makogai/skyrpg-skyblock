@@ -87,8 +87,9 @@ public final class SkyFishing {
                 return SkyFishing.reel(hook, player);
             }
         });
-        // Any rod's bobber floats on the Crystal Hollows' lava (on both sides: the client moves the bobber too).
-        LavaFishing.allowElsewhere((player, level) -> level.dimension().equals(SkyMining.CRYSTAL_HOLLOWS)
+        // Any rod's bobber floats on the Crystal Hollows' and the Crimson Isle's lava (on both sides: the client moves the bobber too).
+        LavaFishing.allowElsewhere((player, level) -> (level.dimension().equals(SkyMining.CRYSTAL_HOLLOWS)
+                || level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL))
                 && (player.getMainHandItem().getItem() instanceof FishingRodItem || player.getOffhandItem().getItem() instanceof FishingRodItem));
         SkySeaCreatures.init();
         // Testing: reel in the line a player has out as if a fish bit, or bring up a given sea creature at it.

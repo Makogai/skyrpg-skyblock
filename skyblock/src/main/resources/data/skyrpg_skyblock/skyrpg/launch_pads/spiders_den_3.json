@@ -1,0 +1,19 @@
+{
+  "name": "the Crimson Isle",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    83,
+    65,
+    17
+  ],
+  "to": [
+    85,
+    66,
+    19
+  ],
+  "warp": "crimson",
+  "requires": {
+    "skill": "skyrpg_skills:combat",
+    "level": 22
+  }
+}

@@ -14,7 +14,7 @@ MX, MZ = 0, -10              # the mound's centre
 TOP = 135                    # the mound's plateau surface (players stand at 136)
 SX, SZ, SR = 0, 10, 22       # Arachne's Sanctuary: centre and radius of the round chamber
 SFLOOR = 30                  # its floor (players stand at 31)
-area = Area("spiders_den", (-130, 20, -130), (260, 130, 260), version=2,
+area = Area("spiders_den", (-130, 20, -130), (260, 130, 260), version=3,
             dimension="skyrpg_skyblock:spiders_den", island="Spider's Den")
 
 dark = area.mix({"coarse_dirt": 5, "podzol": 4, "moss_block": 2, "rooted_dirt": 1, "gravel": 1})
@@ -358,6 +358,21 @@ sign(EX + 4, G + 1, EZ - 2, 4, ["The End", "Combat XII"])
 area.spots["notes"].append(f"The End launch pad at ({EX}, {G + 1}, {EZ}), box x{EX - 1}..{EX + 1} y{G + 1}..{G + 2} z{EZ - 1}..{EZ + 1}; "
                            f"landing from The End at ({EX + 4}.5, {G + 1}, {EZ}.5)")
 
+# Launch pad to the Crimson Isle on the east edge (Combat XXII), mirroring The End's.
+CX, CZ = 84, 18
+area.flatten(CX - 4, CZ - 4, CX + 4, CZ + 4, G, "polished_blackstone_bricks")
+assert all((CX + dx, CZ + dz) in cols for dx in (-4, 4) for dz in (-4, 4)), "the Crimson Isle pad must be on the island"
+for dx in range(-2, 3):
+    for dz in range(-2, 3):
+        area.set(CX + dx, G, CZ + dz, "slime_block" if abs(dx) < 2 and abs(dz) < 2 else "nether_bricks")
+area.set(CX, G + 1, CZ, "heavy_weighted_pressure_plate")
+for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
+    area.set(CX + dx, G + 1, CZ + dz, "nether_brick_wall")
+    area.set(CX + dx, G + 2, CZ + dz, "lantern[hanging=false]")
+sign(CX - 4, G + 1, CZ + 2, 12, ["Crimson Isle", "Combat XXII"])
+area.spots["notes"].append(f"Crimson Isle launch pad at ({CX}, {G + 1}, {CZ}), box x{CX - 1}..{CX + 1} y{G + 1}..{G + 2} z{CZ - 1}..{CZ + 1}; "
+                           f"landing from the Crimson Isle at ({CX - 5}.5, {G + 1}, {CZ}.5)")
+
 # Grandma Wolf's cottage (west): spruce and cobblestone, a wolf-grey roof, a well-kept little garden of dead bushes.
 hut(-34, 70, -24, 79, "spruce_planks", "stripped_spruce_log[axis=y]", "stone_brick_stairs", "stone_brick_slab[type=bottom]", -29,
     floor="spruce_planks", gable="spruce_planks")
@@ -572,7 +587,7 @@ def free(x, z):
         return False
     if -62 <= x <= 62 and 50 <= z <= 112:
         return False
-    if math.hypot(x - PITX, z - PITZ) < 16 or math.hypot(x - EX, z - EZ) < 12:
+    if math.hypot(x - PITX, z - PITZ) < 16 or math.hypot(x - EX, z - EZ) < 12 or math.hypot(x - CX, z - CZ) < 12:
         return False
     return True
 
@@ -617,7 +632,7 @@ def ground_bits(x, z):
             "bone_block[axis=x]" if r < 0.74 else "brown_mushroom" if r < 0.86 else "red_mushroom" if r < 0.9 else None)
 
 
-area.scatter(cols, 0.16, ground_bits, seed=6, avoid=lambda x, z: (-62 <= x <= 62 and 52 <= z <= 112) or (x, z) in ramp or math.hypot(x - EX, z - EZ) < 7)
+area.scatter(cols, 0.16, ground_bits, seed=6, avoid=lambda x, z: (-62 <= x <= 62 and 52 <= z <= 112) or (x, z) in ramp or math.hypot(x - EX, z - EZ) < 7 or math.hypot(x - CX, z - CZ) < 8)
 
 # ---------------------------------------------------------------- Fairy Souls
 area.fairy_soul(MX, TOP + 1, MZ)                 # the nest on the mound's top
@@ -632,6 +647,7 @@ area.warp("Spider's Den", 0, G + 1, 100, yaw=180.0)
 area.arrival(0, G + 1, 100, 180.0)
 area.pad("the Hub", LX - 1, G + 1, LZ - 1, LX + 1, G + 2, LZ + 1, destination=("skyrpg_hub:hub", (-213.5, 65.0, -36.5), -90.0))
 area.pad("The End", EX - 1, G + 1, EZ - 1, EX + 1, G + 2, EZ + 1, warp="end", skill="combat", level=12)
+area.pad("the Crimson Isle", CX - 1, G + 1, CZ - 1, CX + 1, G + 2, CZ + 1, warp="crimson", skill="combat", level=22)
 
 # ---------------------------------------------------------------- zones (no overlap: split by height, the mound's top on its own)
 GRAVEL = {"minecraft:gravel": {"becomes": "minecraft:bedrock", "regrow": 6}}

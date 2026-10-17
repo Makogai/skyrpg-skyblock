@@ -1,0 +1,23 @@
+{
+  "name": "Bazaar Agent",
+  "role": "Scarleton",
+  "color": "#FFAA00",
+  "hint": "Bazaar",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    260.5,
+    66.0,
+    -138.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Instant buys, instant sells.",
+    "Orders fill while you're away."
+  ],
+  "action": {
+    "type": "open_bazaar"
+  }
+}

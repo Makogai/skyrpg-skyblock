@@ -1,0 +1,51 @@
+{
+  "name": "Blazing Volcano",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -42,
+    93,
+    -232
+  ],
+  "to": [
+    42,
+    189,
+    -100
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:blaze",
+      "name": "Millennia-Aged Blaze",
+      "level": 110,
+      "health": 12000000,
+      "damage": 10000,
+      "xp": 1000,
+      "coins": 100,
+      "max": 2,
+      "every": 30,
+      "from": [
+        -30,
+        128,
+        -200
+      ],
+      "to": [
+        30,
+        165,
+        -140
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 6,
+          "max": 10
+        },
+        {
+          "item": "ENCHANTED_BLAZE_POWDER",
+          "chance": 0.2,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

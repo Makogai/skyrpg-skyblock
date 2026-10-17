@@ -1,0 +1,14 @@
+{
+  "name": "Cathedral",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    225,
+    40,
+    -106
+  ],
+  "to": [
+    329,
+    189,
+    -33
+  ]
+}

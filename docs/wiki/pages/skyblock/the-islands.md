@@ -3,7 +3,7 @@ title: The Islands
 category: skyblock
 order: 4
 icon: minecraft:spider_eye
-summary: The public islands past the Hub: the Farming Islands, The Park, the Gold Mine, the Deep Caverns, the Spider's Den and The End. How to get there, what they need, their mobs, resources, NPCs, Fairy Souls and the Ender Dragon.
+summary: The public islands past the Hub: the Farming Islands, The Park, the Gold Mine, the Deep Caverns, the Spider's Den and The End (the Crimson Isle has its own page). How to get there, what they need, their mobs, resources, NPCs, Fairy Souls and the Ender Dragon.
 ---
 Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one floating in its own sky. Everyone shares them, like the Hub: you can break the resources they're for, and nothing else.
 
@@ -16,6 +16,7 @@ Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one fl
 | [Deep Caverns](#deep-caverns) | the lift shaft at the bottom of the Gold Mine | Mining V | `/warp deep` | Six layers of ores and their mobs |
 | [Spider's Den](#spider-s-den) | the Graveyard's launch pad | Combat I | `/warp spider` | Spiders, Gravel; the Spider Mound and Arachne's Sanctuary |
 | [The End](#the-end) | the Spider's Den's west launch pad | Combat XII | `/warp end` | Endermen, Zealots, End Stone, Obsidian; the Ender Dragon |
+| [Crimson Isle](crimson-isle) | the Spider's Den's east launch pad | Combat XXII | `/warp crimson` and four more | Blazes, Magma Cubes, the factions and their minibosses; see its own page |
 | [Dwarven Mines](dwarven-mines) | the Obsidian Sanctuary's launch pad (Deep Caverns) | Mining XII | `/warp mines`, `/warp forge` | Mithril, Titanium, Commissions, the Forge; see its own page |
 
 **Launch pads** are 3x3 pads of slime blocks with a sign saying where they go. Step on one and you're thrown to the island, if you have the skill level it needs; if not, it pushes you back and says what you're missing. Every island has a pad back to where you came from in the Hub.
@@ -105,7 +106,7 @@ A mountain of rock with six caverns stacked inside it, each with its own ore and
 
 ## Spider's Den
 
-Through the launch pad behind the Hub's Graveyard (Combat I). A dark island of cobwebs and dead trees around the **Spider Mound**, a huge hill that a path winds up. Spiders crawl everywhere; at the top of the mound they're level 42. **Gravel** can be dug on the slopes and in the gravel pit, where **Gravel Skeletons** lurk. Under the mound, a stair goes down to **Arachne's Sanctuary**, a webbed chamber with an altar (Arachne herself is coming).
+Through the launch pad behind the Hub's Graveyard (Combat I). A dark island of cobwebs and dead trees around the **Spider Mound**, a huge hill that a path winds up. Spiders crawl everywhere; at the top of the mound they're level 42. **Gravel** can be dug on the slopes and in the gravel pit, where **Gravel Skeletons** lurk. Under the mound, a stair goes down to **Arachne's Sanctuary**, a webbed chamber with an altar (Arachne herself is coming). A launch pad on its east edge goes to the [Crimson Isle](crimson-isle) (Combat XXII).
 
 The camp by the arrival has **Grandma Wolf**, **Haymitch**, **Rick**, **Shaggy** (a shop) and the **Archaeologist**.
 

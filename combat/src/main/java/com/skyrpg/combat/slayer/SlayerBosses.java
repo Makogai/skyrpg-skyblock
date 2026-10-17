@@ -356,6 +356,7 @@ public final class SlayerBosses {
             case "tarantula" -> BossEvent.BossBarColor.RED;
             case "voidgloom" -> BossEvent.BossBarColor.PURPLE;
             case "void_stalker" -> BossEvent.BossBarColor.PURPLE;
+            case "demonlord" -> BossEvent.BossBarColor.YELLOW;
             default -> BossEvent.BossBarColor.RED;
         };
     }
@@ -739,6 +740,11 @@ public final class SlayerBosses {
                 SlayerAbilities.siphon(owner, hit);
             }
         }
+    }
+
+    /** Every fight going on. */
+    static java.util.Collection<Run> runs() {
+        return RUNS.values();
     }
 
     static List<ServerPlayer> players(Run run, double range) {

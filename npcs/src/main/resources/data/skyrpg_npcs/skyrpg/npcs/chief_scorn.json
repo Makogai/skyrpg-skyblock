@@ -1,0 +1,26 @@
+{
+  "name": "Chief Scorn",
+  "role": "Barbarian Faction",
+  "color": "#FF7733",
+  "hint": "Faction",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -239.5,
+    73.0,
+    -198.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.ravager.roar",
+  "greetings": [
+    "Strength wins wars. Not spells.",
+    "The Mages hide behind their books."
+  ],
+  "action": {
+    "type": "crimson_leader",
+    "params": {
+      "faction": "barbarian"
+    }
+  }
+}

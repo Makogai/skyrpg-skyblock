@@ -1,0 +1,51 @@
+{
+  "name": "The Dukedom",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -325,
+    40,
+    -62
+  ],
+  "to": [
+    -259,
+    189,
+    22
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:piglin_brute",
+      "name": "Kada Knight",
+      "level": 90,
+      "health": 2000000,
+      "damage": 6000,
+      "xp": 150,
+      "coins": 30,
+      "max": 3,
+      "every": 15,
+      "from": [
+        -288,
+        77,
+        -30
+      ],
+      "to": [
+        -262,
+        86,
+        -6
+      ],
+      "drops": [
+        {
+          "item": "MAGMA_CREAM",
+          "chance": 1.0,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "item": "KADA_LEAD",
+          "chance": 0.02,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

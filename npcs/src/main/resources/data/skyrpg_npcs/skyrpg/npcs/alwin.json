@@ -1,0 +1,23 @@
+{
+  "name": "Alwin",
+  "role": "Mage Blacksmith",
+  "color": "#AA55FF",
+  "hint": "Reforge",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    225.5,
+    66.0,
+    -140.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Enchanted steel holds a reforge best.",
+    "Bring me your gear and some coins."
+  ],
+  "action": {
+    "type": "reforge"
+  }
+}

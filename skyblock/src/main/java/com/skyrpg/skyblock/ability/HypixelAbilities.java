@@ -73,6 +73,17 @@ public final class HypixelAbilities {
         });
         Abilities.register("fire_blast", (p, a) -> bolt(p, a, 25, 1.5, ParticleTypes.FLAME, SoundEvents.BLAZE_SHOOT, 0));
         Abilities.register("speed_boost", HypixelAbilities::speedBoost);
+        // The Blaze Slayer daggers: swap attunement (the Hellion Shield only lets the matching one through).
+        Abilities.register("attunement", (p, a) -> {
+            net.minecraft.world.item.ItemStack held = p.getMainHandItem();
+            String mode = com.skyrpg.items.ItemMods.swapAttunement(held, com.skyrpg.items.SkyItems.definition(held));
+            if (mode.isEmpty()) {
+                return false;
+            }
+            p.sendOverlayMessage(net.minecraft.network.chat.Component.literal("Attuned: " + mode).withStyle(net.minecraft.ChatFormatting.GOLD));
+            Msg.playSound(p, SoundEvents.AMETHYST_BLOCK_CHIME, 1.0f, mode.equals("Ashen") || mode.equals("Spirit") ? 0.8f : 1.3f);
+            return true;
+        });
         for (String heal : new String[] {"small_heal", "medium_heal", "big_heal", "huge_heal"}) {
             Abilities.register(heal, HypixelAbilities::heal);
         }

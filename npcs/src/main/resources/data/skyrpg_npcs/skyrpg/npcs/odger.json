@@ -1,0 +1,20 @@
+{
+  "name": "Odger",
+  "role": "Trophy Fishing",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    149.5,
+    65.0,
+    206.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.fishing_bobber.splash",
+  "greetings": [
+    "Fish the lava for Trophy Fish.",
+    "Bring them to me when you've caught a few."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Kuudra Gatekeeper",
+  "role": "Kuudra's Hollow",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -225.5,
+    68.0,
+    179.5
+  ],
+  "yaw": 200.0,
+  "sound": "minecraft:entity.elder_guardian.ambient",
+  "greetings": [
+    "Kuudra sleeps. For now.",
+    "Only faction members may pass."
+  ]
+}

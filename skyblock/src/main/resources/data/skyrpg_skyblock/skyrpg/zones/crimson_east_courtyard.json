@@ -1,0 +1,14 @@
+{
+  "name": "Courtyard",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    225,
+    40,
+    -32
+  ],
+  "to": [
+    329,
+    189,
+    5
+  ]
+}

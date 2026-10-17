@@ -1,0 +1,26 @@
+{
+  "name": "Sirih",
+  "role": "Barbarian",
+  "color": "#FF7733",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -229.5,
+    73.0,
+    -139.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.sponge.place",
+  "greetings": [
+    "Sulphur, from the Wasteland and the desert.",
+    "Barbarian powder needs plenty."
+  ],
+  "action": {
+    "type": "crimson_npc",
+    "params": {
+      "name": "Sirih"
+    }
+  }
+}

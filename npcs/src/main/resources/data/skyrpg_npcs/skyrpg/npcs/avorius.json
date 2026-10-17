@@ -1,0 +1,26 @@
+{
+  "name": "Avorius",
+  "role": "Mage",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    294.5,
+    66.0,
+    -115.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.bottle.fill",
+  "greetings": [
+    "A Cup of Blood. For research.",
+    "Don't ask what kind."
+  ],
+  "action": {
+    "type": "crimson_npc",
+    "params": {
+      "name": "Avorius"
+    }
+  }
+}

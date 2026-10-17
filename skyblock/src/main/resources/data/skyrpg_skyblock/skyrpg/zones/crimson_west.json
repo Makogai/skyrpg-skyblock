@@ -1,0 +1,14 @@
+{
+  "name": "Dragontail",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -310,
+    40,
+    -230
+  ],
+  "to": [
+    -175,
+    189,
+    -100
+  ]
+}

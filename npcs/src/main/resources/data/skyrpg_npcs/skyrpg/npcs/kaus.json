@@ -1,0 +1,20 @@
+{
+  "name": "Kaus",
+  "role": "Barbarian Fighter",
+  "color": "#FF7733",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -207.5,
+    73.0,
+    -133.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.player.attack.strong",
+  "greetings": [
+    "Fight me! Tomorrow, maybe.",
+    "The ring is always open."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Vulcan",
+  "role": "Crimson Essence",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -248.5,
+    68.0,
+    172.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.fire.ambient",
+  "greetings": [
+    "Crimson Essence, from the minibosses and Kuudra.",
+    "My shop opens when Kuudra wakes."
+  ]
+}

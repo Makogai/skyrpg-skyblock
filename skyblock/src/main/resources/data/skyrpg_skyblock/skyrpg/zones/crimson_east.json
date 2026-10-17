@@ -1,0 +1,14 @@
+{
+  "name": "Scarleton",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    160,
+    40,
+    -250
+  ],
+  "to": [
+    329,
+    189,
+    -107
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "name": "Stronghold",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    -100,
+    40,
+    -59
+  ],
+  "to": [
+    99,
+    189,
+    30
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:blaze",
+      "name": "Blaze",
+      "level": 70,
+      "health": 700000,
+      "damage": 3000,
+      "xp": 60,
+      "coins": 15,
+      "max": 8,
+      "every": 6,
+      "from": [
+        -38,
+        65,
+        -32
+      ],
+      "to": [
+        38,
+        90,
+        20
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "BLAZE_ASHES",
+          "chance": 0.25,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:blaze",
+      "name": "Mutated Blaze",
+      "level": 70,
+      "health": 1500000,
+      "damage": 4000,
+      "xp": 90,
+      "coins": 20,
+      "max": 4,
+      "every": 10,
+      "from": [
+        -88,
+        64,
+        -50
+      ],
+      "to": [
+        -50,
+        90,
+        24
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 2,
+          "max": 3
+        },
+        {
+          "item": "BLAZE_ASHES",
+          "chance": 0.35,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:blaze",
+      "name": "Bezal",
+      "level": 80,
+      "health": 1000000,
+      "damage": 3500,
+      "xp": 100,
+      "coins": 20,
+      "max": 3,
+      "every": 12,
+      "from": [
+        50,
+        64,
+        -50
+      ],
+      "to": [
+        88,
+        90,
+        24
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 2,
+          "max": 3
+        },
+        {
+          "item": "BLAZE_ASHES",
+          "chance": 0.35,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:wither_skeleton",
+      "name": "Wither Skeleton",
+      "level": 70,
+      "health": 300000,
+      "damage": 3000,
+      "xp": 60,
+      "coins": 12,
+      "max": 4,
+      "every": 10,
+      "from": [
+        -17,
+        65,
+        -51
+      ],
+      "to": [
+        17,
+        72,
+        -36
+      ],
+      "drops": [
+        {
+          "item": "COAL",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "BONE",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Pomtair",
+  "role": "Barbarian",
+  "color": "#FF7733",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "pos": [
+    -253.5,
+    73.0,
+    -139.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.bone_meal.use",
+  "greetings": [
+    "Enchanted Bone Meal. My crops need it.",
+    "Nothing grows in netherrack otherwise."
+  ],
+  "action": {
+    "type": "crimson_npc",
+    "params": {
+      "name": "Pomtair"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Ruins of Ashfang",
+  "dimension": "skyrpg_skyblock:crimson_isle",
+  "from": [
+    42,
+    40,
+    31
+  ],
+  "to": [
+    99,
+    189,
+    104
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:blaze",
+      "name": "Blaze",
+      "level": 70,
+      "health": 700000,
+      "damage": 3000,
+      "xp": 60,
+      "coins": 15,
+      "max": 4,
+      "every": 10,
+      "from": [
+        48,
+        66,
+        52
+      ],
+      "to": [
+        76,
+        90,
+        90
+      ],
+      "drops": [
+        {
+          "item": "BLAZE_ROD",
+          "chance": 1.0,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "item": "BLAZE_ASHES",
+          "chance": 0.25,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}
