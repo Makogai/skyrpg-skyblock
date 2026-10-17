@@ -40,5 +40,18 @@ Your summoned pet gets a share of all the skill XP you gain:
 
 **Taming:** whatever your pet gets is also your Taming XP, and every Taming level gives your pets 1% more XP (Zoologist). See [Skills](skills-overview).
 
+## Pet items
+
+**Right-click a pet item** while a pet is out to give it to that pet. A pet holds one item; the one it held before comes back to you. Its tooltip shows **Held Item** and what it does. Hypixel's pet items work the way their text says:
+
+| Kind | Examples |
+| --- | --- |
+| Stats | Big Teeth (+5 Crit Chance), Hardened Scales (+25 Defense), Sharpened Claws (+15 Crit Damage), Lucky Clover (+7 Magic Find), Saddle (+30 Speed), Spooky Cupcake (+30 Strength, +20 Speed) |
+| More of the pet's own stats | Textbook (+100% of its Intelligence), Iron Claws (+40% of its Crit Damage and Crit Chance) |
+| More pet XP | Skill Exp Boosts (+20% to +50% for one skill), All Skills Exp Boosts (+10% to +30% for all) |
+| Rarity | Tier Boost: the pet's stats count as one rarity higher |
+
+A few (Flying Pig, Quick Claw, Exp Share...) show their text but don't work yet.
+
 > [!NOTE]
-> Not yet: pet abilities (they show with their numbers but don't work yet), pet items, Kat's rarity upgrades, and the pets that come from drops, shops and events rather than recipes.
+> Not yet: pet abilities (they show with their numbers but don't work yet), Kat's rarity upgrades, and the pets that come from drops, shops and events rather than recipes.

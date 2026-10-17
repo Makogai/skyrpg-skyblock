@@ -1,0 +1,216 @@
+{
+ "PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
+  "text": "Gives +10% pet exp for all skills.",
+  "exp": {
+   "ALL": 10.0
+  }
+ },
+ "PET_ITEM_BIG_TEETH_COMMON": {
+  "text": "Grants +5 Crit Chance.",
+  "stats": {
+   "crit_chance": 5.0
+  }
+ },
+ "PET_ITEM_BINGO_BOOSTER": {
+  "text": "Doubles the efficiency of the Lucky Looting perk of your Bingo Pet. apply this skin!"
+ },
+ "PET_ITEM_BUBBLEGUM": {
+  "text": "Your pet fuses its power with placed Deployables to give them 2x duration."
+ },
+ "PET_ITEM_CHOCOLATE_SYRINGE": {
+  "text": "Use at Kat to upgrade Rabbit Pets to Mythic rarity."
+ },
+ "PET_ITEM_COMBAT_SKILL_BOOST_COMMON": {
+  "text": "Gives +20% pet exp for Combat.",
+  "exp": {
+   "COMBAT": 20.0
+  }
+ },
+ "PET_ITEM_COMBAT_SKILL_BOOST_EPIC": {
+  "text": "Gives +50% pet exp for Combat.",
+  "exp": {
+   "COMBAT": 50.0
+  }
+ },
+ "PET_ITEM_COMBAT_SKILL_BOOST_RARE": {
+  "text": "Gives +40% pet exp for Combat.",
+  "exp": {
+   "COMBAT": 40.0
+  }
+ },
+ "PET_ITEM_COMBAT_SKILL_BOOST_UNCOMMON": {
+  "text": "Gives +30% pet exp for Combat.",
+  "exp": {
+   "COMBAT": 30.0
+  }
+ },
+ "PET_ITEM_EXP_SHARE": {
+  "text": "While equipped in an Exp Share slot this pet gains +15% Exp Share rate."
+ },
+ "PET_ITEM_EXP_SHARE_DROP": {
+  "text": "Used to craft the Exp Share pet item."
+ },
+ "PET_ITEM_FARMING_SKILL_BOOST_COMMON": {
+  "text": "Gives +20% pet exp for Farming.",
+  "exp": {
+   "FARMING": 20.0
+  }
+ },
+ "PET_ITEM_FARMING_SKILL_BOOST_EPIC": {
+  "text": "Gives +50% pet exp for Farming.",
+  "exp": {
+   "FARMING": 50.0
+  }
+ },
+ "PET_ITEM_FARMING_SKILL_BOOST_RARE": {
+  "text": "Gives +40% pet exp for Farming.",
+  "exp": {
+   "FARMING": 40.0
+  }
+ },
+ "PET_ITEM_FARMING_SKILL_BOOST_UNCOMMON": {
+  "text": "Gives +30% pet exp for Farming.",
+  "exp": {
+   "FARMING": 30.0
+  }
+ },
+ "PET_ITEM_FISHING_SKILL_BOOST_COMMON": {
+  "text": "Gives +20% pet exp for Fishing.",
+  "exp": {
+   "FISHING": 20.0
+  }
+ },
+ "PET_ITEM_FISHING_SKILL_BOOST_EPIC": {
+  "text": "Gives +50% pet exp for Fishing.",
+  "exp": {
+   "FISHING": 50.0
+  }
+ },
+ "PET_ITEM_FISHING_SKILL_BOOST_RARE": {
+  "text": "Gives +40% pet exp for Fishing.",
+  "exp": {
+   "FISHING": 40.0
+  }
+ },
+ "PET_ITEM_FISHING_SKILL_BOOST_UNCOMMON": {
+  "text": "Gives +30% pet exp for Fishing.",
+  "exp": {
+   "FISHING": 30.0
+  }
+ },
+ "PET_ITEM_FLYING_PIG": {
+  "text": "This pet item may only be used on a Pig pet. Grants +40 Potato Fortune and +20 Speed."
+ },
+ "PET_ITEM_FORAGING_SKILL_BOOST_COMMON": {
+  "text": "Gives +20% pet exp for Foraging.",
+  "exp": {
+   "FORAGING": 20.0
+  }
+ },
+ "PET_ITEM_FORAGING_SKILL_BOOST_EPIC": {
+  "text": "Gives +50% pet exp for Foraging.",
+  "exp": {
+   "FORAGING": 50.0
+  }
+ },
+ "PET_ITEM_FORAGING_SKILL_BOOST_RARE": {
+  "text": "Gives +40% pet exp for Foraging.",
+  "exp": {
+   "FORAGING": 40.0
+  }
+ },
+ "PET_ITEM_FORAGING_SKILL_BOOST_UNCOMMON": {
+  "text": "Gives +30% pet exp for Foraging.",
+  "exp": {
+   "FORAGING": 30.0
+  }
+ },
+ "PET_ITEM_HARDENED_SCALES_UNCOMMON": {
+  "text": "Grants +25 Defense.",
+  "stats": {
+   "defense": 25.0
+  }
+ },
+ "PET_ITEM_IRON_CLAWS_COMMON": {
+  "text": "Increases the pet's Crit Damage by 40% and Crit Chance by 40%.",
+  "multiply": {
+   "crit_damage": 40.0,
+   "crit_chance": 40.0
+  }
+ },
+ "PET_ITEM_LUCKY_CLOVER": {
+  "text": "Grants +7 Magic Find and +7 Overbloom.",
+  "stats": {
+   "magic_find": 7.0,
+   "overbloom": 7.0
+  }
+ },
+ "PET_ITEM_LUCKY_CLOVER_DROP": {
+  "text": "Used to craft the Lucky Clover pet item."
+ },
+ "PET_ITEM_MINING_SKILL_BOOST_COMMON": {
+  "text": "Gives +20% pet exp for Mining.",
+  "exp": {
+   "MINING": 20.0
+  }
+ },
+ "PET_ITEM_MINING_SKILL_BOOST_RARE": {
+  "text": "Gives +40% pet exp for Mining.",
+  "exp": {
+   "MINING": 40.0
+  }
+ },
+ "PET_ITEM_MINING_SKILL_BOOST_UNCOMMON": {
+  "text": "Gives +30% pet exp for Mining.",
+  "exp": {
+   "MINING": 30.0
+  }
+ },
+ "PET_ITEM_PURE_MITHRIL_GEM": {
+  "text": "Use at Kat to upgrade Mithril Golem Pets to Mythic rarity."
+ },
+ "PET_ITEM_QUICK_CLAW": {
+  "text": "Every 2 pet levels, you gain +1 Mining Speed and +1 Mining Fortune."
+ },
+ "PET_ITEM_SADDLE": {
+  "text": "Grants +30 Speed.",
+  "stats": {
+   "speed": 30.0
+  }
+ },
+ "PET_ITEM_SHARPENED_CLAWS_UNCOMMON": {
+  "text": "Grants +15 Crit Damage.",
+  "stats": {
+   "crit_damage": 15.0
+  }
+ },
+ "PET_ITEM_SPOOKY_CUPCAKE": {
+  "text": "Grants +30 Strength and +20 Speed.",
+  "stats": {
+   "strength": 30.0,
+   "speed": 20.0
+  }
+ },
+ "PET_ITEM_TEXTBOOK": {
+  "text": "Increases the pet's Intelligence by 100%.",
+  "multiply": {
+   "intelligence": 100.0
+  }
+ },
+ "PET_ITEM_TIER_BOOST": {
+  "text": "Boosts the rarity of your pet by 1 tier!",
+  "tier_boost": true
+ },
+ "PET_ITEM_TIER_BOOST_DROP": {
+  "text": "Used to craft the Tier Boost pet item."
+ },
+ "PET_ITEM_TITANIUM_MINECART": {
+  "text": "Grants +33.3 Mining Fortune while mining Titanium Ore."
+ },
+ "PET_ITEM_TOY_JERRY": {
+  "text": "Use at Kat to upgrade Jerry Pets to Mythic rarity."
+ },
+ "PET_ITEM_VAMPIRE_FANG": {
+  "text": "Use at Kat to upgrade Bat Pets to Mythic rarity."
+ }
+}

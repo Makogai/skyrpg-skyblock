@@ -133,6 +133,7 @@ public final class SkyBlockPets {
         });
         PetsMenu.init();
         PetCatalog.init();
+        PetItems.init();
     }
 
     // ---------------------------------------------------------------- data
@@ -241,6 +242,32 @@ public final class SkyBlockPets {
         return info.has("exp") ? info.get("exp").getAsDouble() : 0;
     }
 
+    /** The pet item it holds (Hypixel's petInfo "heldItem"), or null. */
+    public static String heldItem(ItemStack stack) {
+        JsonObject info = info(stack);
+        return info.has("heldItem") && !info.get("heldItem").isJsonNull() ? info.get("heldItem").getAsString() : null;
+    }
+
+    static void setHeldItem(ItemStack stack, String item) {
+        JsonObject info = info(stack);
+        info.addProperty("heldItem", item);
+        setInfo(stack, info);
+    }
+
+    /** The rarity its stats count as: one higher with a Tier Boost (if the pet has that rarity). */
+    static String statTier(ItemStack stack) {
+        String tier = tier(stack);
+        PetItems.Effect held = PetItems.effect(heldItem(stack));
+        PetDef def = pets.get(type(stack));
+        if (held != null && held.tierBoost() && def != null) {
+            int next = tierIndex(tier) + 1;
+            if (next < TIERS.length && def.tiers().containsKey(TIERS[next])) {
+                return TIERS[next];
+            }
+        }
+        return tier;
+    }
+
     /** A new pet at level 1 of this tier (Hypixel's PET item: id and petInfo in its custom data, the pet's head). */
     public static ItemStack create(String type, String tier, double exp) {
         PetDef def = pets.get(type);
@@ -342,7 +369,7 @@ public final class SkyBlockPets {
     /** The pet's stats at its level. */
     public static Map<StatType, Double> stats(ItemStack stack) {
         PetDef def = pets.get(type(stack));
-        Tier tier = def == null ? null : def.tiers().get(tier(stack));
+        Tier tier = def == null ? null : def.tiers().get(statTier(stack));
         if (tier == null) {
             return Map.of();
         }
@@ -354,6 +381,12 @@ public final class SkyBlockPets {
                 out.put(stat, along(tier.statsAt1().getOrDefault(key, 0.0), last, level));
             }
         });
+        // Its pet item: a percent more of its own stats (Textbook), then flat stats (Big Teeth).
+        PetItems.Effect held = PetItems.effect(heldItem(stack));
+        if (held != null) {
+            held.multiply().forEach((stat, percent) -> out.computeIfPresent(stat, (k, v) -> v * (1 + percent / 100)));
+            held.stats().forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        }
         return out;
     }
 
@@ -363,7 +396,7 @@ public final class SkyBlockPets {
         if (def == null) {
             return;
         }
-        String tierName = tier(stack);
+        String tierName = statTier(stack);
         Tier tier = def.tiers().get(tierName);
         int level = level(stack);
         ChatFormatting color = color(tierName);
@@ -372,9 +405,21 @@ public final class SkyBlockPets {
         List<Component> lines = new ArrayList<>();
         lines.add(plain(capital(def.skill()) + " Pet", ChatFormatting.DARK_GRAY));
         lines.add(Component.empty());
+        Map<StatType, Double> shown = stats(stack);
         if (tier != null) {
             for (String line : tier.lore()) {
-                lines.add(Component.literal(fill(line, tier, level)).withStyle(s -> s.withItalic(false)));
+                lines.add(Component.literal(fill(line, tier, level, shown)).withStyle(s -> s.withItalic(false)));
+            }
+            lines.add(Component.empty());
+        }
+        String heldId = heldItem(stack);
+        if (heldId != null) {
+            com.skyrpg.items.ItemDefinition heldDef = com.skyrpg.items.ItemRegistry.skyblock(heldId);
+            PetItems.Effect held = PetItems.effect(heldId);
+            lines.add(plain("Held Item: ", ChatFormatting.GOLD).append(Component.literal(heldDef == null ? heldId : heldDef.name())
+                    .withStyle(s -> s.withItalic(false).withColor(heldDef == null ? 0xFFFFFF : heldDef.rarity().color()))));
+            if (held != null && !held.text().isEmpty()) {
+                lines.add(plain(held.text(), ChatFormatting.GRAY));
             }
             lines.add(Component.empty());
         }
@@ -394,7 +439,7 @@ public final class SkyBlockPets {
         stack.set(DataComponents.LORE, new ItemLore(lines));
     }
 
-    private static String fill(String line, Tier tier, int level) {
+    private static String fill(String line, Tier tier, int level, Map<StatType, Double> shown) {
         Matcher m = PLACEHOLDER.matcher(line);
         StringBuilder out = new StringBuilder();
         while (m.find()) {
@@ -408,7 +453,10 @@ public final class SkyBlockPets {
                         ? format(along(i < tier.numbersAt1().length ? tier.numbersAt1()[i] : 0, tier.numbersAt100()[i], level)) : "?";
             } else {
                 String stat = key.toLowerCase(Locale.ROOT);
-                value = tier.statsAt100().containsKey(stat) ? format(along(tier.statsAt1().getOrDefault(stat, 0.0), tier.statsAt100().get(stat), level)) : "?";
+                StatType type = StatTypes.get(stat);
+                // Its stats as they are, pet item included (a Textbook doubles the Intelligence shown).
+                value = type != null && shown != null && shown.containsKey(type) ? format(shown.get(type))
+                        : tier.statsAt100().containsKey(stat) ? format(along(tier.statsAt1().getOrDefault(stat, 0.0), tier.statsAt100().get(stat), level)) : "?";
             }
             m.appendReplacement(out, Matcher.quoteReplacement(value));
         }
@@ -485,6 +533,11 @@ public final class SkyBlockPets {
         }
         int before = level(pet);
         double petXp = xp * share(def.skill(), skill);
+        PetItems.Effect held = PetItems.effect(heldItem(pet));
+        if (held != null) {
+            double boost = held.exp().getOrDefault(skill.getPath().toUpperCase(Locale.ROOT), held.exp().getOrDefault("ALL", 0.0));
+            petXp *= 1 + boost / 100;
+        }
         double zoologist = 1 + SkillLevels.level(player, SkillLevels.TAMING) / 100.0;
         ItemStack updated = pet.copy();
         JsonObject info = info(updated);

@@ -312,6 +312,12 @@ phase so the next session can pick up where this one stopped.
       days of the Cookie Buff (stacking), per profile: +15 Magic Find and +5 Wisdom in every skill (a stat source), coins
       kept on death (`Deaths`); `/cookie`. Decided: no /ah or /bz gating (there are no Auction/Bazaar NPCs yet to fall back
       on). Not yet: Bits and the Community Shop.
+- [x] **Pet items**: `tools/skyblock/import_pet_items.py` reads NEU's 42 pet items' lore into effects (flat stats,
+      percent of the pet's own stats, pet XP boosts per skill or all, Tier Boost) to `skyrpg/skyblock_pet_items`.
+      `PetItems`: right-click one with a pet out (early UseItem/UseBlock phases) to set its petInfo `heldItem` (the old
+      one comes back); `SkyBlockPets` applies it to stats (boosted tier, multipliers, flats), pet XP and the tooltip
+      ("Held Item", and lore numbers from the effective stats). Not yet: Flying Pig, Quick Claw, Exp Share and the other
+      special ones, Kat.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
