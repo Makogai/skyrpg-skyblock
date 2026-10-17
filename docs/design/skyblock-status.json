@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "The Barn, Mushroom Desert, The Park, Gold Mine, Deep Caverns and the Spider's Den",
+  "latest": "Reforging and Hypixel enchanting, and the wiki rewritten for SkyBlock",
   "phase": {
-    "name": "Phase 1: Day One",
-    "done": 92
+    "name": "Phase 2: Mid game",
+    "done": 15
   },
   "categories": [
     {
@@ -15,7 +15,7 @@
           "name": "Items & stats",
           "icon": "item/diamond_sword",
           "weight": 10,
-          "done": 55
+          "done": 50
         },
         {
           "name": "Profiles & co-ops",
@@ -159,13 +159,13 @@
           "name": "Enchanting",
           "icon": "item/enchanted_book",
           "weight": 5,
-          "done": 15
+          "done": 65
         },
         {
           "name": "Reforges, stars & gems",
           "icon": "item/prismarine_crystals",
           "weight": 5,
-          "done": 0
+          "done": 35
         },
         {
           "name": "Accessories",
@@ -255,7 +255,7 @@
           "name": "Fishing",
           "icon": "item/fishing_rod",
           "weight": 5,
-          "done": 15
+          "done": 10
         },
         {
           "name": "Events",
@@ -281,7 +281,7 @@
   "history": [
     {
       "date": "2026-10-17",
-      "overall": 38.7
+      "overall": 40.7
     }
   ]
 }
