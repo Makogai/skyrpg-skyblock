@@ -1,0 +1,44 @@
+{
+ "name": "Hedgehog",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Spiky Quills",
+    "§7Deal §a{0}%§7 more damage to §2Pests§7.",
+    "",
+    "§6Fearsome Farmer",
+    "§7Grants §6+{1}Farming Fortune §7and",
+    "§e+{2}Overbloom §7on §2Pests§7.",
+    "",
+    "§6Hunter's Insight",
+    "§7Grants §6+0.7Farming Fortune§7 per",
+    "§7Pest Bestiary Tier."
+   ],
+   "stats": [
+    {
+     "speed": 0.15
+    },
+    {
+     "speed": 15
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     1,
+     0.35
+    ],
+    [
+     100,
+     100,
+     35
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcyNzM2MzkwNDM2MiwKICAicHJvZmlsZUlkIiA6ICJmODI3NGFhYWU5MzU0Zjk4YTBlNDZmMTgxZDU3Y2IxYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJDaG9ydXZhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVmNWU4MzVjMTE2ZThlMjAwZTJlMDZhYTU5M2NhYjhmMWE5ZjhjNDBlN2YwMDVhOWM3NmYxMmUyNGY0YzYzNzAiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

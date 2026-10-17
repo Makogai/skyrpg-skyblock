@@ -1,0 +1,189 @@
+{
+ "name": "Giraffe",
+ "type": "FORAGING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Good Heart",
+    "§7Grants §c+{0}Health Regen"
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.05,
+     "health": 1.0,
+     "swing_range": 0.01
+    },
+    {
+     "crit_chance": 5.0,
+     "health": 100.0,
+     "swing_range": 1.0
+    }
+   ],
+   "numbers": [
+    [
+     1.99
+    ],
+    [
+     100
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Good Heart",
+    "§7Grants §c+{0}Health Regen"
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.05,
+     "health": 1.0,
+     "swing_range": 0.01
+    },
+    {
+     "crit_chance": 5.0,
+     "health": 100.0,
+     "swing_range": 1.0
+    }
+   ],
+   "numbers": [
+    [
+     2.99
+    ],
+    [
+     150
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Good Heart",
+    "§7Grants §c+{0}Health Regen",
+    "",
+    "§6Higher Ground",
+    "§7Increases your §9Crit Damage §7and",
+    "§cStrength §7by §c{1}% §7for every",
+    "§e0.1Swing Range §7over §e3§7(up to",
+    "§e6§7)"
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.05,
+     "health": 1.0,
+     "swing_range": 0.01
+    },
+    {
+     "crit_chance": 5.0,
+     "health": 100.0,
+     "swing_range": 1.0
+    }
+   ],
+   "numbers": [
+    [
+     2.99,
+     0.0015
+    ],
+    [
+     150,
+     0.15
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Good Heart",
+    "§7Grants §c+{0}Health Regen",
+    "",
+    "§6Higher Ground",
+    "§7Increases your §9Crit Damage §7and",
+    "§cStrength §7by §c{1}% §7for every",
+    "§e0.1Swing Range §7over §e3§7(up to",
+    "§e6§7)"
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.05,
+     "health": 1.0,
+     "swing_range": 0.01
+    },
+    {
+     "crit_chance": 5.0,
+     "health": 100.0,
+     "swing_range": 1.0
+    }
+   ],
+   "numbers": [
+    [
+     3.98,
+     0.0015
+    ],
+    [
+     200,
+     0.15
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Good Heart",
+    "§7Grants §c+{0}Health Regen",
+    "",
+    "§6Higher Ground",
+    "§7Increases your §9Crit Damage §7and",
+    "§cStrength §7by §c{1}% §7for every",
+    "§e0.1Swing Range §7over §e3§7(up to",
+    "§e6§7)",
+    "",
+    "§6Long Neck",
+    "§7Increases your melee damage by",
+    "§c{2}% §7if you are more than 3 blocks",
+    "§7away from the target"
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.05,
+     "health": 1.0,
+     "swing_range": 0.01
+    },
+    {
+     "crit_chance": 5.0,
+     "health": 100.0,
+     "swing_range": 1.0
+    }
+   ],
+   "numbers": [
+    [
+     3.98,
+     0.0015,
+     50.5
+    ],
+    [
+     200,
+     0.15,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1ODgwNTQ4NjkzMDMsInByb2ZpbGVJZCI6ImE3N2Q2ZDZiYWM5YTQ3NjdhMWE3NTU2NjE5OWViZjkyIiwicHJvZmlsZU5hbWUiOiIwOEJFRDUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI1MjhjZTZhZDUxZmNiNmUyN2M4NTU2NmU3MGRhMzUxMDc1MTg1ZjE4NGQ5MTBmNDk5NmU0MzExZDRhMWJmYTUifX19"
+}

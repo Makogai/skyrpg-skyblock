@@ -1,0 +1,176 @@
+{
+ "name": "Mosquito",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Bonus Pest Chance: §2+{BONUS_PEST_CHANCE}%",
+    "",
+    "§6Smooth Jazz",
+    "§7Pest Vinyls are §a{0}% §7more effective."
+   ],
+   "stats": [
+    {
+     "bonus_pest_chance": 0.5,
+     "speed": 0.2
+    },
+    {
+     "bonus_pest_chance": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.25
+    ],
+    [
+     25
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Bonus Pest Chance: §2+{BONUS_PEST_CHANCE}%",
+    "",
+    "§6Smooth Jazz",
+    "§7Pest Vinyls are §a{0}% §7more effective."
+   ],
+   "stats": [
+    {
+     "bonus_pest_chance": 0.5,
+     "speed": 0.2
+    },
+    {
+     "bonus_pest_chance": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.25
+    ],
+    [
+     25
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Bonus Pest Chance: §2+{BONUS_PEST_CHANCE}%",
+    "",
+    "§6Smooth Jazz",
+    "§7Pest Vinyls are §a{0}% §7more effective.",
+    "",
+    "§6Buzzin' Barterer",
+    "§7Gain §6+{1}Sugar Cane Fortune§7 for",
+    "§7every unique visitor you've served",
+    "§7in §aThe Garden§7.",
+    "§8Your Bonus: 1.7 Sugar Cane Fortune",
+    "§8Capped at 175 Fortune"
+   ],
+   "stats": [
+    {
+     "bonus_pest_chance": 0.5,
+     "speed": 0.2
+    },
+    {
+     "bonus_pest_chance": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.35,
+     0.01
+    ],
+    [
+     35,
+     1
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Bonus Pest Chance: §2+{BONUS_PEST_CHANCE}%",
+    "",
+    "§6Smooth Jazz",
+    "§7Pest Vinyls are §a{0}% §7more effective.",
+    "",
+    "§6Buzzin' Barterer",
+    "§7Gain §6+{1}Sugar Cane Fortune§7 for",
+    "§7every unique visitor you've served",
+    "§7in §aThe Garden§7.",
+    "§8Your Bonus: 1.7 Sugar Cane Fortune",
+    "§8Capped at 175 Fortune"
+   ],
+   "stats": [
+    {
+     "bonus_pest_chance": 0.5,
+     "speed": 0.2
+    },
+    {
+     "bonus_pest_chance": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.02
+    ],
+    [
+     50,
+     2
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Bonus Pest Chance: §2+{BONUS_PEST_CHANCE}%",
+    "",
+    "§6Smooth Jazz",
+    "§7Pest Vinyls are §a{0}% §7more effective.",
+    "",
+    "§6Buzzin' Barterer",
+    "§7Gain §6+{1}Sugar Cane Fortune§7 for",
+    "§7every unique visitor you've served",
+    "§7in §aThe Garden§7.",
+    "§8Your Bonus: 1.7 Sugar Cane Fortune",
+    "§8Capped at 175 Fortune",
+    "",
+    "§6Bloodsucker's Betrayal",
+    "§7When collected, §2Pest Traps §7will catch",
+    "§7the next pest §a{2}% §7faster."
+   ],
+   "stats": [
+    {
+     "bonus_pest_chance": 0.5,
+     "speed": 0.2
+    },
+    {
+     "bonus_pest_chance": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.02,
+     0.2
+    ],
+    [
+     50,
+     2,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY5Njk0NTAyOTQ2MSwKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJhOWZlMDViYzY2M2VmY2QxMmU1NmEzY2NjNWVjMDM1YmY1NzdiNzg3MDg1NDhiNmY0ZmZjZjFkMzBlY2NmZSIKICAgIH0KICB9Cn0="
+}

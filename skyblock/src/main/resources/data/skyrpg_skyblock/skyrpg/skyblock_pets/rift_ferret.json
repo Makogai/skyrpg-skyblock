@@ -1,0 +1,31 @@
+{
+ "name": "Rift Ferret",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Orbs are Fun",
+    "§7Gain §a+10% §7experience from §bXP Orbs§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "intelligence": 0.02
+    },
+    {
+     "speed": 50,
+     "intelligence": 2
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY1MTYzOTI2MTI5NywKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iNmIxMTM5OTQ0ODI2MDE4NWRhMWQxN2U1NGM5ODQ1MTVmYWFiNmQ4NTg1ZjAwOTcyNDUxZWMyYjQzZDQ2Zjk0IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+}

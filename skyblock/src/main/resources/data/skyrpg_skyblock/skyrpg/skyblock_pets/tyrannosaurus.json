@@ -1,0 +1,51 @@
+{
+ "name": "T-Rex",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Close Combat",
+    "§7Deal §a{0}% §7more §cdamage §7to enemies",
+    "§7within 1.5 blocks.",
+    "",
+    "§6Ferocious Roar",
+    "§7Attacks have a §a{1}% §7chance to stun",
+    "§7the target §8(10s cooldown).",
+    "",
+    "§6Tyrant",
+    "§7Combat stats granted by pet items on",
+    "§7this pet are increased by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.75,
+     "crit_chance": 0.05,
+     "ferocity": 0.25
+    },
+    {
+     "strength": 75,
+     "crit_chance": 5,
+     "ferocity": 25
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.1,
+     1
+    ],
+    [
+     100,
+     10,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzg1NDIxODY0OCwKICAicHJvZmlsZUlkIiA6ICI2NGY0MGFiNzFmM2E0NGZiYjg0N2I5ZWFhOWZjNDRlNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJvZGF2aWRjZXNhciIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85M2YyOGVjOTZkZjU5YzY3ZTlkMmZjMmU3ZTNkMDU1ZmEzMTY0NmU0MTExYWRkOWZlMjZhNjkyODAxOTY0MTI2IgogICAgfQogIH0KfQ=="
+}

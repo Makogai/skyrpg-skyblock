@@ -1,0 +1,323 @@
+{
+ "name": "Bee",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "strength": 30.0
+    }
+   ],
+   "numbers": [
+    [
+     1.02,
+     1.02,
+     1.01
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "strength": 30.0
+    }
+   ],
+   "numbers": [
+    [
+     1.05,
+     1.04,
+     1.02
+    ],
+    [
+     6,
+     5,
+     3
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "§7Foraging Fortune: §6+{FORAGING_FORTUNE}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players",
+    "",
+    "§6Busy Buzz Buzz",
+    "§7Grants §a+{3} §7of each to your pet:",
+    "§6Farming Fortune",
+    "§6Foraging Fortune",
+    "§6Mining Fortune"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25,
+     "farming_fortune": 0.2,
+     "foraging_fortune": 0.2,
+     "mining_fortune": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "strength": 30.0,
+     "farming_fortune": 20,
+     "foraging_fortune": 20,
+     "mining_fortune": 20
+    }
+   ],
+   "numbers": [
+    [
+     1.05,
+     1.04,
+     1.02,
+     0.2
+    ],
+    [
+     6,
+     5,
+     3,
+     20
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "§7Foraging Fortune: §6+{FORAGING_FORTUNE}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players",
+    "",
+    "§6Busy Buzz Buzz",
+    "§7Grants §a+{3} §7of each to your pet:",
+    "§6Farming Fortune",
+    "§6Foraging Fortune",
+    "§6Mining Fortune"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25,
+     "farming_fortune": 0.3,
+     "foraging_fortune": 0.3,
+     "mining_fortune": 0.3
+    },
+    {
+     "strength": 30.0,
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "farming_fortune": 30,
+     "foraging_fortune": 30,
+     "mining_fortune": 30
+    }
+   ],
+   "numbers": [
+    [
+     1.09,
+     1.07,
+     1.04,
+     0.3
+    ],
+    [
+     10,
+     8,
+     5,
+     30
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "§7Foraging Fortune: §6+{FORAGING_FORTUNE}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players",
+    "",
+    "§6Busy Buzz Buzz",
+    "§7Grants §a+{3} §7of each to your pet:",
+    "§6Farming Fortune",
+    "§6Foraging Fortune",
+    "§6Mining Fortune",
+    "",
+    "§6Honey Harvester",
+    "§7You have a §a{4}% §7chance to find a",
+    "§aHoney Jar §7when farming crops."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25,
+     "farming_fortune": 0.3,
+     "foraging_fortune": 0.3,
+     "mining_fortune": 0.3
+    },
+    {
+     "strength": 30.0,
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "farming_fortune": 30,
+     "foraging_fortune": 30,
+     "mining_fortune": 30
+    }
+   ],
+   "numbers": [
+    [
+     1.09,
+     1.07,
+     1.04,
+     0.3,
+     0.0002
+    ],
+    [
+     10,
+     8,
+     5,
+     30,
+     0.02
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "§7Foraging Fortune: §6+{FORAGING_FORTUNE}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Hive",
+    "§7For each player within §a25 §7blocks:",
+    " §b+{0}Intelligence",
+    " §c+{1}Strength",
+    " §a+{2}Defense",
+    "§8Max 15 players",
+    "",
+    "§6Busy Buzz Buzz",
+    "§7Grants §a+{3} §7of each to your pet:",
+    "§6Farming Fortune",
+    "§6Foraging Fortune",
+    "§6Mining Fortune",
+    "",
+    "§6Honey Harvester",
+    "§7You have a §a{4}% §7chance to find a",
+    "§aHoney Jar §7when farming crops.",
+    "",
+    "§6Powered by Pollen",
+    "§7Grants §6+{5}Sunflower§7, §6Moonflower§7,",
+    "§7and §6Wild Rose Fortune §7while in §aThe",
+    "§aGarden§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.1,
+     "strength": 5.25,
+     "farming_fortune": 0.4,
+     "foraging_fortune": 0.4,
+     "mining_fortune": 0.4
+    },
+    {
+     "strength": 30.0,
+     "intelligence": 50.0,
+     "speed": 10.0,
+     "farming_fortune": 40,
+     "foraging_fortune": 40,
+     "mining_fortune": 40
+    }
+   ],
+   "numbers": [
+    [
+     1.09,
+     1.07,
+     1.04,
+     0.4,
+     0.0002,
+     1.6
+    ],
+    [
+     10,
+     8,
+     5,
+     40,
+     0.02,
+     160
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwMDU5Mjc3MDgzOCwKICAicHJvZmlsZUlkIiA6ICJiMTRiMjY2NzgxOTU0ZGM1OTUzYTRkYWQ5MjRiZGRjNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJHOWxfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzljNzJjMTMyMDczZWM1YTA1ODIxOGQ2ZmJmYjRhOTk3MDY1MmNlZDkyMTRkNTNmNGY2MTRiMzkwMmZkOTlhN2EiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

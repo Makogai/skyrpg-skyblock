@@ -1,0 +1,48 @@
+{
+ "name": "Goblin",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "§7Ore Fortune: §6+{ORE_FORTUNE}",
+    "",
+    "§6Grunt Work",
+    "§7Gain §6+{0}Mining Speed §7when mining",
+    "§6Ores§7.",
+    "",
+    "§6Fetid Thief",
+    "§7Gain §e+{1}Mining Spread §7while in the",
+    "§2Mines of Divan§7.",
+    "",
+    "§6Free-range Eggs",
+    "§7Increases the chance of finding",
+    "§7rare goblin eggs by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "ore_fortune": 1.0,
+     "magic_find": 0.07
+    },
+    {
+     "ore_fortune": 100,
+     "magic_find": 7
+    }
+   ],
+   "numbers": [
+    [
+     2.5,
+     1,
+     0.5
+    ],
+    [
+     250,
+     100,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzg1NDE1MTM1NSwKICAicHJvZmlsZUlkIiA6ICI2OGQyMTg3MDBlYmU0YTliYWU0OTcyNTg3ZDIzNzA4OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzbGVlcG5vdGZvcm1lIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzczMDlkOGRjMzVhNjM4YTA0YjkxNWEzYjE1YTE0NTJjZWVhZTBkN2VhNDJiY2RhZGIyMWIwMzA0Njk4NzUxNWMiCiAgICB9CiAgfQp9"
+}

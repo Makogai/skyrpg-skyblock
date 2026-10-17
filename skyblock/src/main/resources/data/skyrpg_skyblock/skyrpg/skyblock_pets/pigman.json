@@ -1,0 +1,192 @@
+{
+ "name": "Pigman",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Bacon Farmer",
+    "§7Pig minions work §a{0}% §7faster while on",
+    "§7your island"
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5,
+     "ferocity": 0.05
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0,
+     "ferocity": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Bacon Farmer",
+    "§7Pig minions work §a{0}% §7faster while on",
+    "§7your island"
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5,
+     "ferocity": 0.05
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0,
+     "ferocity": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Bacon Farmer",
+    "§7Pig minions work §a{0}% §7faster while on",
+    "§7your island",
+    "",
+    "§6Pork Master",
+    "§7Buffs the §6Pigman Sword §7by §a{1} §c",
+    "§cDamage §7and §a{2} §cStrength§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5,
+     "ferocity": 0.05
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0,
+     "ferocity": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3,
+     0.15
+    ],
+    [
+     20,
+     30,
+     15
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Bacon Farmer",
+    "§7Pig minions work §a{0}% §7faster while on",
+    "§7your island",
+    "",
+    "§6Pork Master",
+    "§7Buffs the §6Pigman Sword §7by §a{1} §c",
+    "§cDamage §7and §a{2} §cStrength§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.05,
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "ferocity": 5.0,
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.4,
+     0.2
+    ],
+    [
+     30,
+     40,
+     25
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Bacon Farmer",
+    "§7Pig minions work §a{0}% §7faster while on",
+    "§7your island",
+    "",
+    "§6Pork Master",
+    "§7Buffs the §6Pigman Sword §7by §a{1} §c",
+    "§cDamage §7and §a{2} §cStrength§7.",
+    "",
+    "§6Giant Slayer",
+    "§7Deal §c+50% §7damage to monsters Level",
+    "§a50+§7 and §c+75% §7damage to monsters",
+    "§7Level §a100+§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.05,
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "ferocity": 5.0,
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.4,
+     0.2
+    ],
+    [
+     30,
+     40,
+     25
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYxMTIyNjQyNTg4MCwKICAicHJvZmlsZUlkIiA6ICIzYTNmNzhkZmExZjQ0OTllYjE5NjlmYzlkOTEwZGYwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVyb2Ryb2dvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QxNWFmYWQ1M2QxNzI2ZmFlODZiM2ZiMTFiYTAxZTUxMTEyYjEwNTVlOGU1YWY4YjdkZjg2ZWY5NTZmMWQ0YTEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

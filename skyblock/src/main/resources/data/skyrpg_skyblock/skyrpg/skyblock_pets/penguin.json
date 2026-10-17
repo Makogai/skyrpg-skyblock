@@ -1,0 +1,49 @@
+{
+ "name": "Penguin",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}",
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "",
+    "§6Thick Blubber",
+    "§7Each time you catch a §3Sea Creature§7,",
+    "§7reduce your §b❄ Cold §7by §a{0}§7.",
+    "",
+    "§6Chilly Reception",
+    "§7Grants §b+{1}Cold Resistance §7for",
+    "§7each player within §a30 §7blocks, up to",
+    "§a10 §7players.",
+    "",
+    "§6Subzero Hero",
+    "§7Grants §b+{2}Fishing Speed §7while in",
+    "§7the §bGlacite Tunnels§7."
+   ],
+   "stats": [
+    {
+     "sea_creature_chance": 0.1,
+     "cold_resistance": 0.15
+    },
+    {
+     "sea_creature_chance": 10,
+     "cold_resistance": 15
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.01,
+     0.75
+    ],
+    [
+     5,
+     1,
+     75
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzg1NDIwMTk4MywKICAicHJvZmlsZUlkIiA6ICI1NzgzZWMxNDgxMDI0ZDJmOTk4N2JhNGZhNWNlMmFmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCbHVlUGhlbml4NDMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc1MzRlOTdmMzZlNWE4MzM1OTI4ZTE3MWVjOTk2MDhiZWU3ZmIxNmUyNjBhZmIzMDEwMjViM2IxN2VlZWZjNCIKICAgIH0KICB9Cn0="
+}

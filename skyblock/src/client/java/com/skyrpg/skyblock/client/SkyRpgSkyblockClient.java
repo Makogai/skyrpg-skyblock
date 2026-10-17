@@ -41,6 +41,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.ENCHANT, com.skyrpg.skyblock.client.screen.EnchantScreen::new);
         MenuScreens.register(SkyMenus.ACCESSORY_BAG, com.skyrpg.skyblock.client.screen.AccessoryBagScreen::new);
         MenuScreens.register(SkyMenus.MAXWELL, com.skyrpg.skyblock.client.screen.MaxwellScreen::new);
+        MenuScreens.register(SkyMenus.PETS, com.skyrpg.skyblock.client.screen.PetsScreen::new);
         MenuScreens.register(SkyMenus.SHOP, ShopScreen::new);
         SkyRpgMenu.registerPage(new SkyBlockMenuPage());
         SkyRpgMenu.registerPage(new ProfilesPage());
@@ -77,7 +78,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
      */
     private static void retireSurvival() {
         for (String page : List.of("skyrpg_progress:journal", "skyrpg_events:contracts", "skyrpg_mounts:mounts",
-                "skyrpg_skills:talents", "skyrpg_progress:titles", "skyrpg_economy:pay")) {
+                "skyrpg_skills:talents", "skyrpg_progress:titles", "skyrpg_economy:pay", "skyrpg_pets:pets")) {
             SkyRpgMenu.retirePage(Identifier.parse(page));
         }
         for (String widget : List.of("skyrpg_progress:quest_tracker", "skyrpg_events:contracts_hud", "skyrpg_mounts:stamina",

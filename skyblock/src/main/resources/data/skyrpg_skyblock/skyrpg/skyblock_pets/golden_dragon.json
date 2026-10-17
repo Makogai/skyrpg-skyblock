@@ -1,0 +1,68 @@
+{
+ "name": "Golden Dragon",
+ "type": "COMBAT",
+ "max_level": 200,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "",
+    "§6Gold's Power",
+    "§7Increase the potency of §6Midas'",
+    "§6Sword§7 and §6Midas Staff's §5Greed Ability",
+    "§7by §a{0}%§7.",
+    "",
+    "§6Shining Scales",
+    "§7Grants §c+11.1Strength §7and §b+2.2",
+    "§bMagic Find §7to your pet for each digit",
+    "§7in your §6Gold Collection§7.",
+    "§8(Max 100M collection)",
+    "",
+    "§6Dragon's Greed",
+    "§7Grants §c+{1}%Strength §7per §b5",
+    "§bMagic Find§7. §8(Max +{2}%)",
+    "",
+    "§6Legendary Treasure",
+    "§7Gain §c{3}% §7damage for every million",
+    "§7coins in your bank. §8(Max {4}%)",
+    "",
+    "§6Symbiosis",
+    "§7If you own a level §a200 Golden",
+    "§aDragon§7, gain §6+5 coins §7per monster",
+    "§7kill for every other unique maxed",
+    "§7Combat Pet that you own."
+   ],
+   "stats": [
+    {
+     "bonus_attack_speed": 25.0,
+     "strength": 25.0,
+     "magic_find": 5.0
+    },
+    {
+     "bonus_attack_speed": 50.0,
+     "strength": 50.0,
+     "magic_find": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     5.05,
+     0.25,
+     2.5,
+     0.125,
+     126.2
+    ],
+    [
+     10,
+     0.5,
+     5.0,
+     0.25,
+     250
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDM1MDA5ODgyNiwKICAicHJvZmlsZUlkIiA6ICJiNWRkZTVmODJlYjM0OTkzYmMwN2Q0MGFiNWY2ODYyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJsdXhlbWFuIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJlOWY5YjFmYzAxNDE2NmNiNDZhMDkzZTUzNDliMmJmNmVkZDIwMWI2ODBkNjJlNDhkYmYzYWY5YjA0NTkxMTYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

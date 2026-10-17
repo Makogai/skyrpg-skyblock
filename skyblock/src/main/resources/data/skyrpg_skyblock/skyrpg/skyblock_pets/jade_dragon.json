@@ -1,0 +1,64 @@
+{
+ "name": "Jade Dragon",
+ "type": "FORAGING",
+ "max_level": 200,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "§7Foraging Fortune: §6+{FORAGING_FORTUNE}",
+    "",
+    "§6Forest Power",
+    "§7Adds §c{0}Strength §7and §f{1}Speed",
+    "§7to all your Axes.",
+    "",
+    "§6Jade Scale",
+    "§7Grants §615Foraging Fortune §7and",
+    "§24Sweep §7for every digit in your",
+    "§aMangrove Collection§7.",
+    "§8(Max 10M collection)",
+    "",
+    "§6Dragon's Pride",
+    "§7Grants §61Foraging Fortune §7per §25",
+    "§2Sweep§7.",
+    "",
+    "§6Apex Predator",
+    "§7Increase your total §2Sweep §7by",
+    "§20.1% §7for every Maxed out Attribute",
+    "§7you unlocked.",
+    "",
+    "§6Symbiosis",
+    "§7If you own a level §a200 Jade Dragon§7,",
+    "§7grants §6+4Foraging Fortune §7for",
+    "§7every other unique maxed §aForaging",
+    "§aPet §7that you own.",
+    "",
+    "§6§lLEGENDARY PET"
+   ],
+   "stats": [
+    {
+     "foraging_fortune": 25.0,
+     "strength": 25.0,
+     "magic_find": 5.0
+    },
+    {
+     "foraging_fortune": 50.0,
+     "strength": 50.0,
+     "magic_find": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     75.25,
+     37.62
+    ],
+    [
+     100,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcxNjQzNzE2MjM3NiwKICAicHJvZmlsZUlkIiA6ICI0NmNhODkyZTY4ODA0YThmYjFkYzkwYjg0ZTY5ZjVmZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPbG8xNjA2IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQwOTk1ODk3OTZkZTE4NTc4N2FiOTJjMzA2NmQwZDBhZjgzMmZmYWQ3MTUzYTQyYmIyZTJkMjM1OThlN2VhNjAiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

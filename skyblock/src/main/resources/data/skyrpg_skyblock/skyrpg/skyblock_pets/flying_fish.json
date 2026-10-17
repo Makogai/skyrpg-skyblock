@@ -1,0 +1,159 @@
+{
+ "name": "Flying Fish",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "RARE": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Quick Reel",
+    "§7Grants §b+{0}Fishing Speed§7.",
+    "",
+    "§6Water Bender",
+    "§7Gives §a{1} §cStrength §7and §aDefense",
+    "§7when near water"
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.6,
+     0.8
+    ],
+    [
+     60,
+     80
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Quick Reel",
+    "§7Grants §b+{0}Fishing Speed§7.",
+    "",
+    "§6Water Bender",
+    "§7Gives §a{1} §cStrength §7and §aDefense",
+    "§7when near water"
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.7,
+     1.0
+    ],
+    [
+     75,
+     100
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Quick Reel",
+    "§7Grants §b+{0}Fishing Speed§7.",
+    "",
+    "§6Water Bender",
+    "§7Gives §a{1} §cStrength §7and §aDefense",
+    "§7when near water",
+    "",
+    "§6Deep Sea Diver",
+    "§7Increases the stats of §aDiver Armor",
+    "§7and §aAbyssal Armor §7by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.8,
+     1.0,
+     0.2
+    ],
+    [
+     80,
+     100,
+     20
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Quick Reel",
+    "§7Grants §b+{0}Fishing Speed§7.",
+    "",
+    "§6Lava Bender",
+    "§7Gives §a{1} §cStrength §7and §aDefense",
+    "§7when near water or lava",
+    "",
+    "§6Magmatic Diver",
+    "§7Increases the stats of §aDiver Armor§7,",
+    "§aMagma Lord Armor§7, and §aAbyssal",
+    "§aArmor §7by §a{2}%§7.",
+    "",
+    "§6Rapid Decay",
+    "§7Increases the chance to activate",
+    "§7the §d§lFlash Enchantment §7by §a{3}%§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "strength": 0.5
+    },
+    {
+     "defense": 50.0,
+     "strength": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.8,
+     1.0,
+     0.2,
+     0.5
+    ],
+    [
+     80,
+     100,
+     20,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwMDMyNTk3MTc1MywKICAicHJvZmlsZUlkIiA6ICJhNzFjNTQ5MmQwNTE0ZDg3OGFiOTEwZmRmZmRmYzgyZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJBcHBsZTU0NDciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhiMWJjNzAxMzZkNjIwYTgyMmQwOGRmYzJiMDRhYmU5MjdlMWM0MzJiMjU2MTM5NjI0YjAwYzdiZjRkM2MxZSIKICAgIH0KICB9Cn0="
+}

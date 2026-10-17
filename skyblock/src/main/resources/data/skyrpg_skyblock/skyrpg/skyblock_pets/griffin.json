@@ -1,0 +1,249 @@
+{
+ "name": "Griffin",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c2 §7types of §2Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c4 §7types of §2Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c6 §7types of §2✿ Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity.",
+    "",
+    "§6Sacred Strength",
+    "§7Gain §c+{0}% Strength §7when above",
+    "§c85% Health§7."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c8 §7types of §2✿ Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity.",
+    "",
+    "§6Sacred Strength",
+    "§7Gain §c+{0}% Strength §7when above",
+    "§c85% Health§7."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.15
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c10 §7types of §2Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity.",
+    "",
+    "§6Sacred Strength",
+    "§7Gain §c+{0}% Strength §7when above",
+    "§c85% Health§7.",
+    "",
+    "§6King of Kings",
+    "§7Grants §b+{1}Magic Find §7on §2",
+    "§2Mythological §7mobs."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.15,
+     0.2
+    ],
+    [
+     15,
+     20
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "",
+    "§6Odyssey",
+    "§c12 §7types of §2Mythological §7mobs can",
+    "§7spawn from §eGriffin Burrows§7. Their",
+    "§7stats scale with your Griffin’s",
+    "§7rarity.",
+    "",
+    "§6Sacred Strength",
+    "§7Gain §c+{0}% Strength §7when above",
+    "§c85% Health§7.",
+    "",
+    "§6King of Kings",
+    "§7Grants §b+{1}Magic Find §7on §2",
+    "§2Mythological §7mobs.",
+    "",
+    "§6Ancient Earth",
+    "§7Grants §d+1Tracking §7on §eGriffin",
+    "§eBurrows §7for each burrow excavated",
+    "§7in your current chain."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.5,
+     "strength": 0.5,
+     "bonus_attack_speed": 0.25
+    },
+    {
+     "crit_chance": 10,
+     "crit_damage": 50,
+     "strength": 50,
+     "bonus_attack_speed": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.15,
+     0.2
+    ],
+    [
+     15,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5OTgxMDM3NTkzMywKICAicHJvZmlsZUlkIiA6ICI5YzQ5YjU0YjFjZjU0NjZjYjRhNzA4M2JmZGQ4MDIxNSIsCiAgInByb2ZpbGVOYW1lIiA6ICI5U0kiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMyN2UzY2I1MmE2NDk2OGU2MGM4NjFlZjFhYjg0ZTBhMGNiNWYwN2JlMTAzYWM3OGRhNjc3NjE3MzFmMDBjOCIKICAgIH0KICB9Cn0="
+}

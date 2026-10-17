@@ -30,6 +30,8 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.accessory.MaxwellMenu> MAXWELL = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("maxwell"), new ExtendedMenuType<>(com.skyrpg.skyblock.accessory.MaxwellMenu::new,
                     com.skyrpg.skyblock.accessory.MaxwellMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.pet.PetsMenu> PETS = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("pets"), new ExtendedMenuType<>(com.skyrpg.skyblock.pet.PetsMenu::new, com.skyrpg.skyblock.pet.PetsMenu.View.CODEC));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),
             new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.ANVIL, id, inventory, ItemWork.Mode.ANVIL), FeatureFlags.VANILLA_SET));
 

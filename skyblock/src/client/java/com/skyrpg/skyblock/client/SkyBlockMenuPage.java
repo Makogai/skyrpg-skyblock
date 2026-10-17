@@ -84,7 +84,12 @@ public final class SkyBlockMenuPage implements MenuPage {
                     connection.sendCommand("accessories");
                 }
             }, () -> "Talismans, rings, Magical Power"),
-            new Tile(Group.GEAR, "Pets", Items.BONE, Identifier.parse("skyrpg_pets:pets"), null, SkyBlockMenuPage::petLine),
+            new Tile(Group.GEAR, "Pets", Items.BONE, null, () -> {
+                var connection = net.minecraft.client.Minecraft.getInstance().getConnection();
+                if (connection != null) {
+                    connection.sendCommand("pets");
+                }
+            }, SkyBlockMenuPage::petLine),
             new Tile(Group.GEAR, "SkyBlock Items", Items.CHEST, SkyRpgSkyblock.id("items"), null,
                     () -> Msg.number(ItemRegistry.items().stream().filter(def -> def.skyblock()).count()) + " items"),
             new Tile(Group.WORLD, "Fast Travel", Items.ENDER_EYE, SkyRpgSkyblock.id("fast_travel"), null, SkyBlockMenuPage::warpLine),

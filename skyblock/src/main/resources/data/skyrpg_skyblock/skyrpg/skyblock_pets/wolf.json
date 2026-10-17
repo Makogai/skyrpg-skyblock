@@ -1,0 +1,199 @@
+{
+ "name": "Wolf",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Alpha Dog",
+    "§7Take §a{0}% §7less damage from wolves"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.1,
+     "health": 0.5,
+     "speed": 0.2,
+     "true_defense": 0.1
+    },
+    {
+     "crit_damage": 10.0,
+     "health": 50.0,
+     "speed": 20.0,
+     "true_defense": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Alpha Dog",
+    "§7Take §a{0}% §7less damage from wolves"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.1,
+     "health": 0.5,
+     "speed": 0.2,
+     "true_defense": 0.1
+    },
+    {
+     "crit_damage": 10.0,
+     "health": 50.0,
+     "speed": 20.0,
+     "true_defense": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Alpha Dog",
+    "§7Take §a{0}% §7less damage from wolves",
+    "",
+    "§6Pack Leader",
+    "§7Gain §a{1} §9Crit Damage §7for every",
+    "§7nearby wolf monster",
+    "§8Max 10 wolves"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.1,
+     "health": 0.5,
+     "speed": 0.2,
+     "true_defense": 0.1
+    },
+    {
+     "crit_damage": 10.0,
+     "health": 50.0,
+     "speed": 20.0,
+     "true_defense": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.1
+    ],
+    [
+     20,
+     10
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Alpha Dog",
+    "§7Take §a{0}% §7less damage from wolves",
+    "",
+    "§6Pack Leader",
+    "§7Gain §a{1} §9Crit Damage §7for every",
+    "§7nearby wolf monster",
+    "§8Max 10 wolves"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.1,
+     "health": 0.5,
+     "speed": 0.2,
+     "true_defense": 0.1
+    },
+    {
+     "crit_damage": 10.0,
+     "health": 50.0,
+     "speed": 20.0,
+     "true_defense": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.1
+    ],
+    [
+     30,
+     15
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Alpha Dog",
+    "§7Take §a{0}% §7less damage from wolves",
+    "",
+    "§6Pack Leader",
+    "§7Gain §a{1} §9Crit Damage §7for every",
+    "§7nearby wolf monster",
+    "§8Max 10 wolves",
+    "",
+    "§6Combat Wisdom Boost",
+    "§7Grants §3+{2}☯ Combat Wisdom§7."
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.1,
+     "health": 0.5,
+     "speed": 0.2,
+     "true_defense": 0.1
+    },
+    {
+     "crit_damage": 10.0,
+     "health": 50.0,
+     "speed": 20.0,
+     "true_defense": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.1,
+     0.3
+    ],
+    [
+     30,
+     15,
+     30
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwMjQzMTcyNzMyOCwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgxNDgzMTA1YWI4YzMzZjA0Yzk3Yzc0OTNjOTg3MWM4YTUxY2M0OWRmNmQ5YjVlMjNiMjY2NTIwOTRiZjMwMzAiCiAgICB9CiAgfQp9"
+}

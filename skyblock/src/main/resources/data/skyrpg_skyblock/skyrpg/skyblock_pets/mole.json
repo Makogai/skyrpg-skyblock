@@ -1,0 +1,51 @@
+{
+ "name": "Mole",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Archaeologist",
+    "§cScavenged Items §7appear §a{0}% §7more",
+    "§7often while in the §2Mines of Divan§7.",
+    "",
+    "§6Magnetic Nose",
+    "§9Automatons §7drop their parts §a{1}%",
+    "§7more frequently.",
+    "",
+    "§6Nucleic Veins",
+    "§7The §5Crystal Nucleus §7has a §a{2}%",
+    "§7chance to drop an additional item."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.5,
+     "intelligence": 1,
+     "magic_find": 0.05
+    },
+    {
+     "mining_speed": 150,
+     "intelligence": 100,
+     "magic_find": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.5,
+     1
+    ],
+    [
+     25,
+     50,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzg1NDE4MzUyNiwKICAicHJvZmlsZUlkIiA6ICIxMTM1Njg1ZTk3ZGE0ZjYyYTliNDQ3MzA0NGFiZjQ0MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXJpb1dsZXMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI3YmFhYWZjMDk5NzhkNGJkYTczZTE2YWZkZGU4NWVjMTNiMGY5NWFkOTg5NTI0YzVmY2FhNzE3Y2YwNmI0YSIKICAgIH0KICB9Cn0="
+}

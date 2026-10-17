@@ -1,0 +1,174 @@
+{
+ "name": "Chicken",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Free Range",
+    "§7Grants §6+{0}Farming Fortune §7while",
+    "§7on §bPublic Islands§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "farming_fortune": 0.5
+    },
+    {
+     "speed": 50,
+     "farming_fortune": 50
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Free Range",
+    "§7Grants §6+{0}Farming Fortune §7while",
+    "§7on §bPublic Islands§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "farming_fortune": 0.5
+    },
+    {
+     "speed": 50,
+     "farming_fortune": 50
+    }
+   ],
+   "numbers": [
+    [
+     0.75
+    ],
+    [
+     75
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Free Range",
+    "§7Grants §6+{0}Farming Fortune §7while",
+    "§7on §bPublic Islands§7.",
+    "",
+    "§6Eggstra Loot",
+    "§7Chickens always drop an §fEgg §7when",
+    "§7killed. Grants a §a{1}% §7chance for",
+    "§7animals to drop an additional item."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "farming_fortune": 0.5
+    },
+    {
+     "speed": 50,
+     "farming_fortune": 50
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.5
+    ],
+    [
+     100,
+     50
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Free Range",
+    "§7Grants §6+{0}Farming Fortune §7while",
+    "§7on §bPublic Islands§7.",
+    "",
+    "§6Eggstra Loot",
+    "§7Chickens always drop an §fEgg §7when",
+    "§7killed. Grants a §a{1}% §7chance for",
+    "§7animals to drop an additional item."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "farming_fortune": 0.5
+    },
+    {
+     "speed": 50,
+     "farming_fortune": 50
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     1.0
+    ],
+    [
+     100,
+     100
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Free Range",
+    "§7Grants §6+{0}Farming Fortune §7while",
+    "§7on §bPublic Islands§7.",
+    "",
+    "§6Eggstra Loot",
+    "§7Chickens always drop an §fEgg §7when",
+    "§7killed. Grants a §a{1}% §7chance for",
+    "§7animals to drop an additional item.",
+    "",
+    "§6Light Feet",
+    "§7Reduces fall damage by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "farming_fortune": 0.5
+    },
+    {
+     "speed": 50,
+     "farming_fortune": 50
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     100,
+     100,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYxMDEyMjM5MzE0NCwKICAicHJvZmlsZUlkIiA6ICI5ZDEzZjcyMTcxM2E0N2U0OTAwZTMyZGVkNjBjNDY3MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUYWxvZGFvIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M2ZTU3MzI2MjI5N2RmMmJmYTgxNTYyNDk4YTIyYTkwNDc4ZTVjOTZlODBkMDU4ODVkODcwODRkZTI0ZDJiMTgiCiAgICB9CiAgfQp9"
+}

@@ -1,0 +1,93 @@
+{
+ "name": "Golem",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Last Stand",
+    "§7While at less than §a20% HP§7, reduce",
+    "§7incoming damage by §a20%§7. Additionally,",
+    "§7gain a temporary shield equal to §a40%",
+    "§7of your maximum health and deal §a40%",
+    "§7more damage.",
+    "§8(Lasts 12s, 60s cooldown)",
+    "",
+    "§6Ricochet",
+    "§7Your iron plating causes §a{0}% §7of",
+    "§7attacks to ricochet and hit the",
+    "§7attacker"
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "strength": 0.05,
+     "swing_range": 0.01
+    },
+    {
+     "health": 150.0,
+     "strength": 50.0,
+     "swing_range": 1
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     25
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Swing Range: §e+{SWING_RANGE}",
+    "",
+    "§6Last Stand",
+    "§7While at less than §a20% HP§7, reduce",
+    "§7incoming damage by §a20%§7. Additionally,",
+    "§7gain a temporary shield equal to §a40%",
+    "§7of your maximum health and deal §a40%",
+    "§7more damage.",
+    "§8(Lasts 12s, 60s cooldown)",
+    "",
+    "§6Ricochet",
+    "§7Your iron plating causes §a{0}% §7of",
+    "§7attacks to ricochet and hit the",
+    "§7attacker",
+    "",
+    "§6Toss",
+    "§7Every 5 hits, throw the enemy up into",
+    "§7the air and deal §a5x §7damage §8(5s",
+    "§8cooldown)"
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "strength": 0.05,
+     "swing_range": 0.01
+    },
+    {
+     "health": 150.0,
+     "strength": 50.0,
+     "swing_range": 1
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     25
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE0OTg2ODk3NjgzNTAsInByb2ZpbGVJZCI6Ijc1N2Y5MGIyMjM0NDRiOGQ4ZGFjODI0MjMyZTJjZWNlIiwicHJvZmlsZU5hbWUiOiJNSEZfR29sZW0iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg5MDkxZDc5ZWEwZjU5ZWY3ZWY5NGQ3YmJhNmU1ZjE3ZjJmN2Q0NTcyYzQ0ZjkwZjc2YzQ4MTlhNzE0In19fQ=="
+}

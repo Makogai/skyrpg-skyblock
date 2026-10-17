@@ -1,0 +1,81 @@
+{
+ "name": "Bal",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Heat Resistance: §c+{HEAT_RESISTANCE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Furnace",
+    "§7Grants §5+{0}Pristine §7while in the",
+    "§cMagma Fields§7.",
+    "",
+    "§6Dispersion",
+    "§7While in the §5Crystal Hollows§7, killing",
+    "§7mobs reduces your §cHeat §7by §c{1}§7."
+   ],
+   "stats": [
+    {
+     "mining_fortune": 1.0,
+     "heat_resistance": 1.5
+    },
+    {
+     "mining_fortune": 100,
+     "heat_resistance": 150
+    }
+   ],
+   "numbers": [
+    [
+     0.02,
+     0.02
+    ],
+    [
+     2,
+     2
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Heat Resistance: §c+{HEAT_RESISTANCE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Furnace",
+    "§7Grants §5+{0}Pristine §7while in the",
+    "§cMagma Fields§7.",
+    "",
+    "§6Dispersion",
+    "§7While in the §5Crystal Hollows§7, killing",
+    "§7mobs reduces your §cHeat §7by §c{1}§7.",
+    "",
+    "§6Cannibal",
+    "§7Increases damage dealt to §c§lBal §7by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "mining_fortune": 1.0,
+     "heat_resistance": 1.5
+    },
+    {
+     "mining_fortune": 100,
+     "heat_resistance": 150
+    }
+   ],
+   "numbers": [
+    [
+     0.03,
+     0.04,
+     1.0
+    ],
+    [
+     3,
+     4,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDM3NTcwNjg0MywKICAicHJvZmlsZUlkIiA6ICIwNWQ0NTNiZWE0N2Y0MThiOWI2ZDUzODg0MWQxMDY2MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJFY2hvcnJhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0NjliYTIwNDcxMjJlMGEyZGUzYzc0MzdhZDNkZDVkMzFmMWFjMmQyN2FiZGU5Zjg4NDFlMWQ5MmE4YzViNzUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

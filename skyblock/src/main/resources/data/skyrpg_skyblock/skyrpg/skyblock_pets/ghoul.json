@@ -1,0 +1,108 @@
+{
+ "name": "Ghoul",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Vitality: §4+{VITALITY}",
+    "§7Mending: §a+{MENDING}",
+    "",
+    "§6Undead Slayer",
+    "§7Gain §3+{0}☯ Combat Wisdom §7towards",
+    "§2Zombies§7.",
+    "",
+    "§6Army of the Dead",
+    "§7Increases the amount of souls you",
+    "§7can store by §a2 §7and the chance of",
+    "§7getting a mob's soul by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "ferocity": 0.05,
+     "intelligence": 0.75,
+     "vitality": 0.15,
+     "mending": 0.25
+    },
+    {
+     "health": 100.0,
+     "ferocity": 5.0,
+     "intelligence": 75.0,
+     "vitality": 15,
+     "mending": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.2
+    ],
+    [
+     50,
+     20
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Vitality: §4+{VITALITY}",
+    "§7Mending: §a+{MENDING}",
+    "",
+    "§6Undead Slayer",
+    "§7Gain §3+{0}☯ Combat Wisdom §7towards",
+    "§2Zombies§7.",
+    "",
+    "§6Army of the Dead",
+    "§7Increases the amount of souls you",
+    "§7can store by §a2 §7and the chance of",
+    "§7getting a mob's soul by §a{1}%§7.",
+    "",
+    "§6Reaper Soul",
+    "§7Reduces the summoning cost of mobs",
+    "§7by §a{2}% §7and increases their damage",
+    "§7output by §a{3}%§7. Increases the health",
+    "§7of all summoned mobs by §a{4}%§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "ferocity": 0.05,
+     "intelligence": 0.75,
+     "vitality": 0.15,
+     "mending": 0.25
+    },
+    {
+     "health": 100.0,
+     "ferocity": 5.0,
+     "intelligence": 75.0,
+     "vitality": 15,
+     "mending": 25
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.2,
+     0.3,
+     0.2,
+     1
+    ],
+    [
+     50,
+     20,
+     30,
+     20,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0NTk0NjQzMCwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFlMTEwOWJiZDFmODJjMTgyMzYzZWQ1M2I2MjRiNjg4OTI0NDQ3ZjlmNjhiOTI5Njc0YWQzN2YzY2VmNzYyYTgiCiAgICB9CiAgfQp9"
+}

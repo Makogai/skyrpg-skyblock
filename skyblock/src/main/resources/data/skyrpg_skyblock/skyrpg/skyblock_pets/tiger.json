@@ -1,0 +1,197 @@
+{
+ "name": "Tiger",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Merciless Swipe",
+    "§7Gain §c+{0}% Ferocity§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.25,
+     "crit_chance": 0.05,
+     "crit_damage": 0.5,
+     "strength": 5.1
+    },
+    {
+     "ferocity": 25.0,
+     "crit_chance": 5.0,
+     "crit_damage": 50.0,
+     "strength": 15.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Merciless Swipe",
+    "§7Gain §c+{0}% Ferocity§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.25,
+     "crit_chance": 0.05,
+     "crit_damage": 0.5,
+     "strength": 5.1
+    },
+    {
+     "ferocity": 25.0,
+     "crit_chance": 5.0,
+     "crit_damage": 50.0,
+     "strength": 15.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Merciless Swipe",
+    "§7Gain §c+{0}% Ferocity§7.",
+    "",
+    "§6Hemorrhage",
+    "§7Melee attacks reduce healing by §6{1}%",
+    "§7for §a10s§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.25,
+     "crit_chance": 0.05,
+     "crit_damage": 0.5,
+     "strength": 5.1
+    },
+    {
+     "ferocity": 25.0,
+     "crit_chance": 5.0,
+     "crit_damage": 50.0,
+     "strength": 15.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3
+    ],
+    [
+     20,
+     30
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Merciless Swipe",
+    "§7Gain §c+{0}% Ferocity§7.",
+    "",
+    "§6Hemorrhage",
+    "§7Melee attacks reduce healing by §6{1}%",
+    "§7for §a10s§7."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.25,
+     "crit_chance": 0.05,
+     "crit_damage": 0.5,
+     "strength": 5.1
+    },
+    {
+     "ferocity": 25.0,
+     "crit_chance": 5.0,
+     "crit_damage": 50.0,
+     "strength": 15.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.6
+    ],
+    [
+     30,
+     55
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "",
+    "§6Merciless Swipe",
+    "§7Gain §c+{0}% Ferocity§7.",
+    "",
+    "§6Hemorrhage",
+    "§7Melee attacks reduce healing by §6{1}%",
+    "§7for §a10s§7.",
+    "",
+    "§6Apex Predator",
+    "§7Deal §c+{2}% §7damage against targets with",
+    "§7no other mobs within §a15 §7blocks."
+   ],
+   "stats": [
+    {
+     "ferocity": 0.25,
+     "crit_chance": 0.05,
+     "crit_damage": 0.5,
+     "strength": 5.1
+    },
+    {
+     "ferocity": 25.0,
+     "crit_chance": 5.0,
+     "crit_damage": 50.0,
+     "strength": 15.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.6,
+     1.0
+    ],
+    [
+     30,
+     55,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1MDA5OTMyMzI3MjgsInByb2ZpbGVJZCI6IjNlMjZiMDk3MWFjZDRjNmQ5MzVjNmFkYjE1YjYyMDNhIiwicHJvZmlsZU5hbWUiOiJOYWhlbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZjNDI2Mzg3NDQ5MjJiNWZjZjYyY2Q5YmYyN2VlYWI5MWIyZTcyZDZjNzBlODZjYzVhYTM4ODM5OTNlOWQ4NCJ9fX0="
+}

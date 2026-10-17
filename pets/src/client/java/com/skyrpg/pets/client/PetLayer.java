@@ -25,8 +25,14 @@ public final class PetLayer extends RenderLayer<AvatarRenderState, PlayerModel> 
     /** What to draw for this player, or null for no pet. */
     public static final RenderStateDataKey<PetView> PET = RenderStateDataKey.create(() -> "skyrpg_pets:pet");
 
-    /** A player's pet on their render state. {@code preview}: a menu preview (no trailing). */
-    public record PetView(PetType type, PetRarity rarity, int owner, boolean preview) {
+    /**
+     * A player's pet on their render state. {@code preview}: a menu preview (no trailing). {@code head}: a SkyBlock pet
+     * (any pet item that isn't one of ours), drawn as its floating head, Hypixel style.
+     */
+    public record PetView(PetType type, PetRarity rarity, int owner, boolean preview, net.minecraft.client.renderer.item.ItemStackRenderState head) {
+        public PetView(PetType type, PetRarity rarity, int owner, boolean preview) {
+            this(type, rarity, owner, preview, null);
+        }
     }
 
     PetLayer(RenderLayerParent<AvatarRenderState, PlayerModel> renderer) {
@@ -44,8 +50,20 @@ public final class PetLayer extends RenderLayer<AvatarRenderState, PlayerModel> 
         track.update(state.x, state.y, state.z, state.bodyRot, state.ageScale > 0f ? state.ageScale : 1f, state.ageInTicks,
                 state.yRot, state.xRot, !view.preview());
 
-        PetModel model = PetModel.of(view.type());
         float seed = (view.owner() * 0.61803f) % 1f;
+        if (view.head() != null) {
+            // A SkyBlock pet: its head, bobbing beside the shoulder and turning with the player's look.
+            float headBob = Mth.sin(state.ageInTicks * 0.1f + seed * 6.28f) * 0.05f;
+            poseStack.pushPose();
+            poseStack.translate(track.px, track.py + headBob - 0.1f, track.pz);
+            poseStack.rotate(Axis.ZP.rotationDegrees(180));
+            poseStack.rotate(Axis.YP.rotation(-track.headYaw * Mth.DEG_TO_RAD * 0.5f));
+            poseStack.scale(0.6f, 0.6f, 0.6f);
+            view.head().submit(poseStack, collector, light, OverlayTexture.NO_OVERLAY, state.outlineColor);
+            poseStack.popPose();
+            return;
+        }
+        PetModel model = PetModel.of(view.type());
         float bob = Mth.sin(state.ageInTicks * 0.1f + seed * 6.28f) * 0.04f;
         float headYaw = Mth.clamp(track.headYaw * Mth.DEG_TO_RAD * 0.8f, -1.1f, 1.1f);
         float headPitch = Mth.clamp(track.headPitch * Mth.DEG_TO_RAD * 0.6f, -0.6f, 0.6f);

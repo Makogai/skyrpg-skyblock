@@ -1,0 +1,178 @@
+{
+ "name": "Crow",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}",
+    "",
+    "§6Quick Hands",
+    "§7Lowers the cooldown of your §cWeapon",
+    "§7abilities by §a{0}§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "ability_damage": 0.2
+    },
+    {
+     "intelligence": 150.0,
+     "ability_damage": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     3
+    ],
+    [
+     5
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}",
+    "",
+    "§6Quick Hands",
+    "§7Lowers the cooldown of your §cWeapon",
+    "§7abilities by §a{0}§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "ability_damage": 0.2
+    },
+    {
+     "intelligence": 150.0,
+     "ability_damage": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     3.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}",
+    "",
+    "§6Quick Hands",
+    "§7Lowers the cooldown of your §cWeapon",
+    "§7abilities by §a{0}§7.",
+    "",
+    "§6Camouflage",
+    "§7After casting an ability, increase",
+    "§7your §aDefense §7by §a+{1} §7for §b20",
+    "§bseconds§7.",
+    "§8Capped at 500 Defense"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "ability_damage": 0.2
+    },
+    {
+     "intelligence": 150.0,
+     "ability_damage": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     3.1,
+     5.1
+    ],
+    [
+     10,
+     15
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}",
+    "",
+    "§6Quick Hands",
+    "§7Lowers the cooldown of your §cWeapon",
+    "§7abilities by §a{0}§7.",
+    "",
+    "§6Camouflage",
+    "§7After casting an ability, increase",
+    "§7your §aDefense §7by §a+{1} §7for §b20",
+    "§bseconds§7.",
+    "§8Capped at 500 Defense"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "ability_damage": 0.2
+    },
+    {
+     "intelligence": 150.0,
+     "ability_damage": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     3.1,
+     5.2
+    ],
+    [
+     15,
+     20
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}",
+    "",
+    "§6Quick Hands",
+    "§7Lowers the cooldown of your §cWeapon",
+    "§7abilities by §a{0}§7.",
+    "",
+    "§6Camouflage",
+    "§7After casting an ability, increase",
+    "§7your §aDefense §7by §a+{1} §7for §b20",
+    "§bseconds§7.",
+    "§8Capped at 500 Defense",
+    "",
+    "§6Insightful",
+    "§7Gives a §a{2} §7chance to not consume",
+    "§7Mana when using an ability."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "ability_damage": 0.2
+    },
+    {
+     "intelligence": 150.0,
+     "ability_damage": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     3.1,
+     5.2,
+     3.1
+    ],
+    [
+     15,
+     20,
+     15
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc2MjgwMjExODUxMCwKICAicHJvZmlsZUlkIiA6ICJmODJmNTQ1MDIzZDA0MTFkYmVlYzU4YWI4Y2JlMTNjNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZXNwb25kZW50cyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jMzFlN2UxYzYxNDYzOWJiYzk1YTBkODFmZjdlNWY3ZjYwNmQ5YjMzMTE1Y2YyYmYyYTQwY2RjYmJiNTMxMzI0IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+}

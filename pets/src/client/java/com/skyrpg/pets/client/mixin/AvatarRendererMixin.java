@@ -24,12 +24,23 @@ abstract class AvatarRendererMixin {
     private void skyrpg$extractPet(Avatar entity, AvatarRenderState state, float partialTicks, CallbackInfo ci) {
         ItemStack pet = entity instanceof Player player ? player.getAttachedOrElse(Pets.ACTIVE, ItemStack.EMPTY) : ItemStack.EMPTY;
         PetType type = pet.isEmpty() ? null : Pets.type(pet);
-        if (type == null) {
+        if (pet.isEmpty()) {
             state.setData(PetLayer.PET, null);
             return;
         }
         boolean preview = PetPreview.active;
         Minecraft mc = Minecraft.getInstance();
+        if (type == null) {
+            // A SkyBlock pet item: drawn as its head.
+            if (!preview && entity == mc.getCameraEntity() && mc.options.getCameraType().isFirstPerson()) {
+                state.setData(PetLayer.PET, null);
+                return;
+            }
+            net.minecraft.client.renderer.item.ItemStackRenderState head = new net.minecraft.client.renderer.item.ItemStackRenderState();
+            mc.getItemModelResolver().updateForTopItem(head, pet, net.minecraft.world.item.ItemDisplayContext.FIXED, entity.level(), null, entity.getId());
+            state.setData(PetLayer.PET, new PetLayer.PetView(null, PetRarity.COMMON, entity.getId(), preview, head));
+            return;
+        }
         // never in first person (the player's own body isn't drawn there either)
         if (!preview && entity == mc.getCameraEntity() && mc.options.getCameraType().isFirstPerson()) {
             state.setData(PetLayer.PET, null);

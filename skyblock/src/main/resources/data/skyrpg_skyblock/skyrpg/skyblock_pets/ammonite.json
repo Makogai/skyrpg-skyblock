@@ -1,0 +1,52 @@
+{
+ "name": "Ammonite",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}",
+    "",
+    "§6Heart of the Sea",
+    "§7Grants §3+{0}Sea Creature Chance",
+    "§7to your pet for each §5Heart of the",
+    "§5Mountain §7level.",
+    "",
+    "§6Expert Cave Fisher",
+    "§7Grants §9+{1}Double Hook Chance",
+    "§7for each §5Heart of the Mountain §7level",
+    "§7while in the §5Crystal Hollows§7.",
+    "",
+    "§6Gift of the Ammonite",
+    "§7Each Mining and Fishing level grants",
+    "§b+{2}Fishing Speed§7, §f+{3}Speed",
+    "§7and §a+{4}Defense§7."
+   ],
+   "stats": [
+    {
+     "sea_creature_chance": 0.06
+    },
+    {
+     "sea_creature_chance": 6
+    }
+   ],
+   "numbers": [
+    [
+     0.01,
+     0.005,
+     0.01,
+     0.02,
+     0.02
+    ],
+    [
+     1.0,
+     0.5,
+     0.5,
+     2,
+     2
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDExNTI5NDE1NiwKICAicHJvZmlsZUlkIiA6ICI0NWY3YTJlNjE3ODE0YjJjODAwODM5MmRmN2IzNWY0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfSnVzdERvSXQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA3NGE3YmQ5NzZmZTZhYmExNjI0MTYxNzkzYmU1NDdkNTRjODM1Y2Y0MjIyNDNhODUxYmEwOWQxZTY1MDU1MyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

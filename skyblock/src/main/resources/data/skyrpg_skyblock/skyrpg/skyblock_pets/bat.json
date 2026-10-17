@@ -1,0 +1,230 @@
+{
+ "name": "Bat",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7.",
+    "",
+    "§6Nightmare",
+    "§7During night, gain §a{1} §bIntelligence§7,",
+    "§a{2} §fSpeed§7, and §aNight Vision§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.2,
+     0.4
+    ],
+    [
+     15,
+     20,
+     40
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7.",
+    "",
+    "§6Nightmare",
+    "§7During night, gain §a{1} §bIntelligence§7,",
+    "§a{2} §fSpeed§7, and §aNight Vision§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3,
+     0.5
+    ],
+    [
+     20,
+     30,
+     50
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7.",
+    "",
+    "§6Nightmare",
+    "§7During night, gain §a{1} §bIntelligence§7,",
+    "§a{2} §fSpeed§7, and §aNight Vision§7.",
+    "",
+    "§6Wings of Steel",
+    "§7Deals §a+{3}% §7damage to §6Spooky",
+    "§7enemies during the §6Spooky Festival§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3,
+     0.5,
+     0.5
+    ],
+    [
+     20,
+     30,
+     50,
+     50
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}",
+    "",
+    "§6Candy Lover",
+    "§7Increases drop chance of candies",
+    "§7from mobs by §a{0}%§7.",
+    "",
+    "§6Nightmare",
+    "§7During night, gain §a{1} §bIntelligence§7,",
+    "§a{2} §fSpeed§7, and §aNight Vision§7.",
+    "",
+    "§6Wings of Steel",
+    "§7Deals §a+{3}% §7damage to §6Spooky",
+    "§7enemies during the §6Spooky Festival§7.",
+    "",
+    "§6Sonar",
+    "§7Grants a §a+{4}% §7chance to catch",
+    "§6Spooky Sea Creatures §7during the",
+    "§6Spooky Festival§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "speed": 0.05,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "speed": 5.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3,
+     0.5,
+     0.5,
+     0.25
+    ],
+    [
+     20,
+     30,
+     50,
+     50,
+     25
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwMjAzOTYxNzA5MSwKICAicHJvZmlsZUlkIiA6ICJlZDUzZGQ4MTRmOWQ0YTNjYjRlYjY1MWRjYmE3N2U2NiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwMTAwMDExMDAxMDAwMDExIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM3N2FkZThhZmIyNTcwODZmYjE4NjFkYTQzYzhhZTQ2OGI4ZWIwNTc4ZmFkYTg0MzAzODU4NTE3YmExNzIxN2UiCiAgICB9CiAgfQp9"
+}

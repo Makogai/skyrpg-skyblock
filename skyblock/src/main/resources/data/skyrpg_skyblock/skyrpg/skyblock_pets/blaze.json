@@ -1,0 +1,174 @@
+{
+ "name": "Blaze",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Nether Embodiment",
+    "§7Increases §cCombat §7and §dMiscellaneous",
+    "§7stats by §a{0}% §7while on the §cCrimson",
+    "§cIsle§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.3,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 30.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.05
+    ],
+    [
+     5
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Nether Embodiment",
+    "§7Increases §cCombat §7and §dMiscellaneous",
+    "§7stats by §a{0}% §7while on the §cCrimson",
+    "§cIsle§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.3,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 30.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.07
+    ],
+    [
+     7
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Nether Embodiment",
+    "§7Increases §cCombat §7and §dMiscellaneous",
+    "§7stats by §a{0}% §7while on the §cCrimson",
+    "§cIsle§7.",
+    "",
+    "§6Bling Armor",
+    "§7Upgrades §cBlaze Armor §7stats and",
+    "§7ability by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.3,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 30.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.07,
+     0.4
+    ],
+    [
+     7,
+     40
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Nether Embodiment",
+    "§7Increases §cCombat §7and §dMiscellaneous",
+    "§7stats by §a{0}% §7while on the §cCrimson",
+    "§cIsle§7.",
+    "",
+    "§6Bling Armor",
+    "§7Upgrades §cBlaze Armor §7stats and",
+    "§7ability by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.3,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 30.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.4
+    ],
+    [
+     10,
+     40
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Nether Embodiment",
+    "§7Increases §cCombat §7and §dMiscellaneous",
+    "§7stats by §a{0}% §7while on the §cCrimson",
+    "§cIsle§7.",
+    "",
+    "§6Bling Armor",
+    "§7Upgrades §cBlaze Armor §7stats and",
+    "§7ability by §a{1}%§7.",
+    "",
+    "§6Fusion-Style Potato",
+    "§7Double effects of hot potato books"
+   ],
+   "stats": [
+    {
+     "defense": 0.3,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 30.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.4
+    ],
+    [
+     10,
+     40
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE0OTk3MTAzNjk1MTEsInByb2ZpbGVJZCI6IjRjMzhlZDExNTk2YTRmZDRhYjFkMjZmMzg2YzFjYmFjIiwicHJvZmlsZU5hbWUiOiJNSEZfQmxhemUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I3OGVmMmU0Y2YyYzQxYTJkMTRiZmRlOWNhZmYxMDIxOWY1YjFiZjViMzVhNDllYjUxYzY0Njc4ODJjYjVmMCJ9fX0="
+}

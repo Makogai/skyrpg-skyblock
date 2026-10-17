@@ -1,0 +1,70 @@
+{
+ "name": "Rat",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}",
+    "",
+    "§6Morph"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.25,
+     "health": 1.25,
+     "strength": 0.6
+    },
+    {
+     "crit_damage": 25.0,
+     "health": 125.0,
+     "strength": 60.0
+    }
+   ],
+   "numbers": [
+    [
+     2.05,
+     20
+    ],
+    [
+     7,
+     60
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}",
+    "",
+    "§6Morph"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.25,
+     "health": 1.25,
+     "strength": 0.6
+    },
+    {
+     "crit_damage": 25.0,
+     "health": 125,
+     "strength": 60.0
+    }
+   ],
+   "numbers": [
+    [
+     2.05,
+     20
+    ],
+    [
+     7,
+     60
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYxODQxOTcwMTc1MywKICAicHJvZmlsZUlkIiA6ICI3MzgyZGRmYmU0ODU0NTVjODI1ZjkwMGY4OGZkMzJmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCdUlJZXQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThhYmI0NzFkYjBhYjc4NzAzMDExOTc5ZGM4YjQwNzk4YTk0MWYzYTRkZWMzZWM2MWNiZWVjMmFmOGNmZmU4IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+}

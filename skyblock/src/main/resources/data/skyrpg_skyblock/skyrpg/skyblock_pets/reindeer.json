@@ -1,0 +1,55 @@
+{
+ "name": "Reindeer",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}",
+    "",
+    "§6Winter Sprint",
+    "§7Gain §ddouble §7pet §aEXP§7.",
+    "",
+    "§6Infused",
+    "§7Gives §b+{0}Fishing Speed §7and §6+5",
+    "§6Treasure Chance §7while on §cJerry's",
+    "§cWorkshop§7.",
+    "",
+    "§6Snow Power",
+    "§7Grants §a+{1}% §7bonus gift chance",
+    "§7during the §cGift Attack §7event.",
+    "",
+    "§6Icy Wind",
+    "§7Grants §a+{2}% §7chance of getting",
+    "§7double §bIce Essence§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "sea_creature_chance": 0.05,
+     "fishing_speed": 0.25
+    },
+    {
+     "health": 100.0,
+     "sea_creature_chance": 5.0,
+     "fishing_speed": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     0.75,
+     0.1,
+     0.2
+    ],
+    [
+     75,
+     10,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2OTM5MDAxMDk5MywKICAicHJvZmlsZUlkIiA6ICIzZmFhZDFiMWYxMzU0MDM2OGY3YjlmMThlM2Y5YzRiZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJKb3NlUGxheTE5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EyZGY2NWM2ZmQxOWE1OGJlZTM4MjUyMTkyYWM3Y2UyY2YxZGM4NjMyYzM1NDdhOTIyOGI2YjY5NzI0MGQwOTgiCiAgICB9CiAgfQp9"
+}

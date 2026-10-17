@@ -206,6 +206,15 @@ phase so the next session can pick up where this one stopped.
       survival accessory slots are Hypixel's Necklace, Cloak, Belt and Gloves slots (by item category), with reforges.
       Not yet: Tuning Points, enrichments, extra bag slots (Redstone Miner, Jacobus), Hegemony/Abicase specials,
       accessory abilities, SkyBlock XP from Magical Power.
+- [x] **Pets** (Hypixel's): `tools/skyblock/import_pets.py` writes 87 pets (NEU: each rarity's lore template and head
+      skin, stats and ability numbers at levels 1 and 100, the XP table, rarity offsets, the Golden Dragon's 200 levels)
+      to `skyrpg/skyblock_pets` + `skyblock_pet_levels`. `SkyBlockPets` (skyblock): Hypixel's PET item (custom data `id`
+      and `petInfo`), name "[Lvl N] Bee" and lore filled in at its level; right-click adds it (an early UseItem phase, so
+      the Hub's protection doesn't eat it); the active pet is the pets mod's synced `Pets.ACTIVE` (drawn as a floating head
+      by `PetLayer`); stats by level in a straight line; pet XP from skill XP (own skill 1×, Mining/Fishing pets 1.5×,
+      Alchemy/Enchanting 1/12, others 1/4), Taming XP the same, Zoologist +1%/Taming level. `PetsMenu` + `PetsScreen`
+      (`/pets`, the SkyBlock Menu tile): summon, put away, take out. The survival Pets page is retired in SkyBlock.
+      Not yet: abilities, pet items, Kat, pet recipes and drops (admins: `/sbpet give`).
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

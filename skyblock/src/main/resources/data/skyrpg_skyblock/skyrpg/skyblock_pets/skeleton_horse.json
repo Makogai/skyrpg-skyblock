@@ -1,0 +1,52 @@
+{
+ "name": "Skeleton Horse",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost IV§7.",
+    "",
+    "§6Stampede",
+    "§7Mob kills grant a stack of §e+{0} ",
+    "§eAttack Speed§7 and §c+{1} Strength§7 for",
+    "§a5s§7.",
+    "§8(Max 20 stacks)",
+    "",
+    "§6Trample",
+    "§7After falling §a20§7 or more blocks,",
+    "§7absorb your fall damage and deal",
+    "§a{2}%§7 of your weapon's §cDamage§7 for",
+    "§7every block fallen to mobs within §a3",
+    "§7blocks."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.75,
+     "speed": 1.5
+    },
+    {
+     "intelligence": 75,
+     "speed": 150
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     1,
+     0.8
+    ],
+    [
+     1,
+     10,
+     7
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3Nzg5MzM1ODgxMSwKICAicHJvZmlsZUlkIiA6ICIwNWU0OTczZTk5ZDk0NGY2YjczNjY3ZTEzMzdiY2IzOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaW5lX1NraW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJjNjNiYTI3MzU3ODk4Y2YyZTY0ZGE5NDgwMmM3NGVmYzE3ZmZkMjQwNjRiNTMyN2ZiYzU5Njk0YmM1ZTNkYyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

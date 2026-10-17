@@ -1,0 +1,52 @@
+{
+ "name": "Mammoth",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "",
+    "§6Wooly Coat",
+    "§7Gain a §a{0}% §7chance for mobs to not",
+    "§7inflict §b❄ Cold §7when damaging you in",
+    "§7the §bGlacite Mineshafts§7.",
+    "",
+    "§6Tusk Luck",
+    "§7Gain §b+{1}Magic Find §7for every",
+    "§7100 §6Mining Fortune§7, doubled in the",
+    "§bGlacite Tunnels §7and §bGlacite",
+    "§bMineshafts§7.",
+    "",
+    "§6Corpse Crusher",
+    "§7Gain §6+{2}Mining Fortune §7for each",
+    "§bFrozen Corpse §7looted in your",
+    "§7current §bGlacite Mineshaft§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "cold_resistance": 0.1
+    },
+    {
+     "defense": 50,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.01,
+     0.3
+    ],
+    [
+     100,
+     0.5,
+     30
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzg1NDE2NzQ4OCwKICAicHJvZmlsZUlkIiA6ICJkMDQ3ZGY3ZjMzMzk0MmM1OTA3ODY5ZjIwYmI0YzlkMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJleHBsaXloIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZiMTA3MTU3MzJjZDFmZDQ5ZmExYjYxODc5NDdjMzA3ZGQ0Njg3MTA1Y2YwMzM4NDA2MDdmOWQ2MjM0NzQzYWQiCiAgICB9CiAgfQp9"
+}

@@ -1,0 +1,172 @@
+{
+ "name": "Pig",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Potato Fortune: §6+{POTATO_FORTUNE}",
+    "",
+    "§6Hamfisted",
+    "§7Increases §6Coin§7 gain from §6Shiny Pigs",
+    "§7by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.15,
+     "potato_fortune": 0.2
+    },
+    {
+     "speed": 15.0,
+     "potato_fortune": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Potato Fortune: §6+{POTATO_FORTUNE}",
+    "",
+    "§6Hamfisted",
+    "§7Increases §6Coin§7 gain from §6Shiny Pigs",
+    "§7by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.15,
+     "potato_fortune": 0.2
+    },
+    {
+     "speed": 15.0,
+     "potato_fortune": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.4
+    ],
+    [
+     40
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Potato Fortune: §6+{POTATO_FORTUNE}",
+    "",
+    "§6Hamfisted",
+    "§7Increases §6Coin§7 gain from §6Shiny Pigs",
+    "§7by §a{0}%§7.",
+    "",
+    "§6Shining Stampede",
+    "§7Grants §6+{1}Potato Fortune§7 per",
+    "§6Shiny Pig§7 §3Bestiary§7 tier."
+   ],
+   "stats": [
+    {
+     "speed": 0.15,
+     "potato_fortune": 0.2
+    },
+    {
+     "speed": 15.0,
+     "potato_fortune": 20
+    }
+   ],
+   "numbers": [
+    [
+     0.4,
+     0.04
+    ],
+    [
+     40,
+     4
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Potato Fortune: §6+{POTATO_FORTUNE}",
+    "",
+    "§6Hamfisted",
+    "§7Increases §6Coin§7 gain from §6Shiny Pigs",
+    "§7by §a{0}%§7.",
+    "",
+    "§6Shining Stampede",
+    "§7Grants §6+{1}Potato Fortune§7 per",
+    "§6Shiny Pig§7 §3Bestiary§7 tier."
+   ],
+   "stats": [
+    {
+     "speed": 0.15,
+     "potato_fortune": 0.2
+    },
+    {
+     "speed": 15,
+     "potato_fortune": 20
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.05
+    ],
+    [
+     50,
+     5
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Potato Fortune: §6+{POTATO_FORTUNE}",
+    "",
+    "§6Hamfisted",
+    "§7Increases §6Coin§7 gain from §6Shiny Pigs",
+    "§7by §a{0}%§7.",
+    "",
+    "§6Shining Stampede",
+    "§7Grants §6+{1}Potato Fortune§7 per",
+    "§6Shiny Pig§7 §3Bestiary§7 tier.",
+    "",
+    "§6Pig Parade",
+    "§7Increases the base stats of this pet",
+    "§7by §a{2}%§7 during the §dYear of the Pig§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.15,
+     "potato_fortune": 0.2
+    },
+    {
+     "speed": 15.0,
+     "potato_fortune": 20
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.05,
+     1
+    ],
+    [
+     50,
+     5,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE0OTg2OTAzOTQxNTUsInByb2ZpbGVJZCI6IjhiNTcwNzhiZjFiZDQ1ZGY4M2M0ZDg4ZDE2NzY4ZmJlIiwicHJvZmlsZU5hbWUiOiJNSEZfUGlnIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82MjE2NjhlZjdjYjc5ZGQ5YzIyY2UzZDFmM2Y0Y2I2ZTI1NTk4OTNiNmRmNGE0Njk1MTRlNjY3YzE2YWE0In19fQ=="
+}

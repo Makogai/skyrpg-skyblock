@@ -1,0 +1,110 @@
+{
+ "name": "Scatha",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "RARE": {
+   "lore": [
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Burrowing",
+    "§7Grants a §a+{0}% §7chance to find",
+    "§eTreasure Chests §7while mining."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.0,
+     "mining_fortune": 1.25
+    },
+    {
+     "mining_speed": 100,
+     "mining_fortune": 125
+    }
+   ],
+   "numbers": [
+    [
+     0.3
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Burrowing",
+    "§7Grants a §a+{0}% §7chance to find",
+    "§eTreasure Chests §7while mining.",
+    "",
+    "§6Drill Infusion",
+    "§7Grants §6+{1}Gemstone Fortune §7to",
+    "§7Drills."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.0,
+     "mining_fortune": 1.25
+    },
+    {
+     "mining_speed": 100,
+     "mining_fortune": 125
+    }
+   ],
+   "numbers": [
+    [
+     0.4,
+     1
+    ],
+    [
+     40,
+     100
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Burrowing",
+    "§7Grants a §a+{0}% §7chance to find",
+    "§eTreasure Chests §7while mining.",
+    "",
+    "§6Drill Infusion",
+    "§7Grants §6+{1}Gemstone Fortune §7to",
+    "§7Drills.",
+    "",
+    "§6Bejeweled Eyes",
+    "§7Earn §a+{2}% §dGemstone Powder §7from all",
+    "§7sources."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.0,
+     "mining_fortune": 1.25
+    },
+    {
+     "mining_speed": 100,
+     "mining_fortune": 125
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     1.25,
+     0.2
+    ],
+    [
+     50,
+     125,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDQ0NTc2NDQ1MSwKICAicHJvZmlsZUlkIiA6ICJmNDY0NTcxNDNkMTU0ZmEwOTkxNjBlNGJmNzI3ZGNiOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWxhcGFnbzA1IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RmMDNhZDk2MDkyZjNmNzg5OTAyNDM2NzA5Y2RmNjlkZTZiNzI3YzEyMWIzYzJkYWVmOWZmYTFjY2FlZDE4NmMiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

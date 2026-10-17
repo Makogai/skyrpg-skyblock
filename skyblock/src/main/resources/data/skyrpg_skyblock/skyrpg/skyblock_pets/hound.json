@@ -1,0 +1,91 @@
+{
+ "name": "Hound",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Scavenger",
+    "§7Gain §a+{0} §7coins per monster kill",
+    "",
+    "§6Finder",
+    "§7Increases the chance for monsters",
+    "§7to drop their armor by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "bonus_attack_speed": 0.25,
+     "ferocity": 0.05,
+     "strength": 0.4,
+     "speed": 0.1
+    },
+    {
+     "bonus_attack_speed": 25.0,
+     "ferocity": 5.0,
+     "strength": 40.0,
+     "speed": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.3
+    ],
+    [
+     5,
+     30
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Attack Speed: §e+{BONUS_ATTACK_SPEED}%",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Scavenger",
+    "§7Gain §a+{0} §7coins per monster kill",
+    "",
+    "§6Finder",
+    "§7Increases the chance for monsters",
+    "§7to drop their armor by §a{1}%§7.",
+    "",
+    "§6Pack Slayer",
+    "§7Gain §b{2}x §7Combat XP against §aWolves§7."
+   ],
+   "stats": [
+    {
+     "bonus_attack_speed": 0.25,
+     "ferocity": 0.05,
+     "strength": 0.4,
+     "speed": 0.1
+    },
+    {
+     "bonus_attack_speed": 25.0,
+     "ferocity": 5.0,
+     "strength": 40.0,
+     "speed": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.3,
+     1.005
+    ],
+    [
+     5,
+     30,
+     1.5
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwODYxMjY2OTc0NSwKICAicHJvZmlsZUlkIiA6ICJmZmU5MzczY2YyMDM0OWFhYTJlN2NiYzJkZmY2M2I5MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWxvblR1bmExIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzEyOTBhZDU1MGMzNzZkMDEwOGI1YmUyMmRkNWE0MDgyYTg2MjFjZjlkNDBiMjgwNzE1NmNhMTk1MGQyNDYyMDciCiAgICB9CiAgfQp9"
+}

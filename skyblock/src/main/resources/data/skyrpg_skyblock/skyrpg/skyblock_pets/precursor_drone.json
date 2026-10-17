@@ -1,0 +1,32 @@
+{
+ "name": "Precursor Drone",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Creative Mind",
+    "§7This pet can have §bDrone Mods",
+    "§7applied to it, which allows you to",
+    "§7modify its §6Perks §7to your liking.",
+    "§8Precursor Drones may possess up",
+    "§8to 3 perks at a time, this one included."
+   ],
+   "stats": [
+    {
+     "speed": 0.05
+    },
+    {
+     "speed": 25
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc2NDY1OTI2MzU2NSwKICAicHJvZmlsZUlkIiA6ICI1MTAwZGZmZDI0NDI0M2I0OGQxMmVkZTVkMjgxMzk2ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJFbGVjdHJvbmljU2V4IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUxYWFlMjg4YWI5ZDUzNTRmZGE0ZTM5NWEzNjQyMWJkMjYxYTliNjIxM2RiYjc4NmQ3YWIzOTQ2NWU0NzljZTkiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

@@ -1,0 +1,172 @@
+{
+ "name": "Dolphin",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Pod Tactics",
+    "§7Grants §b+{0}Fishing Speed §7for",
+    "§7each player within §a30 §7blocks, up to §a5",
+    "§7players."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.06
+    ],
+    [
+     6
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Pod Tactics",
+    "§7Grants §b+{0}Fishing Speed §7for",
+    "§7each player within §a30 §7blocks, up to §a5",
+    "§7players."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.08
+    ],
+    [
+     8
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Pod Tactics",
+    "§7Grants §b+{0}Fishing Speed §7for",
+    "§7each player within §a30 §7blocks, up to §a5",
+    "§7players.",
+    "",
+    "§6Echolocation",
+    "§7Grants §3+{1}Sea Creature Chance§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.08,
+     0.07
+    ],
+    [
+     8,
+     7
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Pod Tactics",
+    "§7Grants §b+{0}Fishing Speed §7for",
+    "§7each player within §a30 §7blocks, up to §a5",
+    "§7players.",
+    "",
+    "§6Echolocation",
+    "§7Grants §3+{1}Sea Creature Chance§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.1
+    ],
+    [
+     10,
+     10
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Pod Tactics",
+    "§7Grants §b+{0}Fishing Speed §7for",
+    "§7each player within §a30 §7blocks, up to §a5",
+    "§7players.",
+    "",
+    "§6Echolocation",
+    "§7Grants §3+{1}Sea Creature Chance§7.",
+    "",
+    "§6Splash Surprise",
+    "§7Stun §3Sea Creatures §7for §a5s §7after",
+    "§7fishing them up."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "intelligence": 100.0,
+     "sea_creature_chance": 5.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.1
+    ],
+    [
+     10,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MTc5ODg1MDM4MCwKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xNDE1ZDJjNTQzZTM0YmI4OGVkZTk0ZDc5Yjk0Mjc2OTFmYzliZTcyZGFhZDg4MzFhOWVmMjk3MTgwNTQ2ZTE4IgogICAgfQogIH0KfQ=="
+}

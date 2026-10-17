@@ -1,0 +1,177 @@
+{
+ "name": "Squid",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6More Ink",
+    "§7Gain a §a{0}% §7chance to get double",
+    "§7drops from squids"
+   ],
+   "stats": [
+    {
+     "health": 0.5,
+     "intelligence": 0.5
+    },
+    {
+     "health": 50.0,
+     "intelligence": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6More Ink",
+    "§7Gain a §a{0}% §7chance to get double",
+    "§7drops from squids"
+   ],
+   "stats": [
+    {
+     "health": 0.5,
+     "intelligence": 0.5
+    },
+    {
+     "health": 50.0,
+     "intelligence": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.8
+    ],
+    [
+     75
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6More Ink",
+    "§7Gain a §a{0}% §7chance to get double",
+    "§7drops from squids",
+    "",
+    "§6Ink Specialty",
+    "§7Buffs the §5Ink Wand §7by §a{1} §cDamage",
+    "§7and §a{2} §cStrength§7."
+   ],
+   "stats": [
+    {
+     "health": 0.5,
+     "intelligence": 0.5
+    },
+    {
+     "health": 50.0,
+     "intelligence": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.8,
+     0.3,
+     0.1
+    ],
+    [
+     75,
+     30,
+     15
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6More Ink",
+    "§7Gain a §a{0}% §7chance to get double",
+    "§7drops from squids",
+    "",
+    "§6Ink Specialty",
+    "§7Buffs the §5Ink Wand §7by §a{1} §cDamage",
+    "§7and §a{2} §cStrength§7."
+   ],
+   "stats": [
+    {
+     "health": 0.5,
+     "intelligence": 0.5
+    },
+    {
+     "health": 50.0,
+     "intelligence": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.4,
+     0.2
+    ],
+    [
+     100,
+     40,
+     20
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6More Ink",
+    "§7Gain a §a{0}% §7chance to get double",
+    "§7drops from squids",
+    "",
+    "§6Ink Specialty",
+    "§7Buffs the §5Ink Wand §7by §a{1} §cDamage",
+    "§7and §a{2} §cStrength§7.",
+    "",
+    "§6Fishing Wisdom Boost",
+    "§7Grants §3+{3}☯ Fishing Wisdom§7."
+   ],
+   "stats": [
+    {
+     "health": 0.5,
+     "intelligence": 0.5
+    },
+    {
+     "health": 50.0,
+     "intelligence": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.4,
+     0.2,
+     0.3
+    ],
+    [
+     100,
+     40,
+     20,
+     30
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE0OTg2OTA0NzMwMjcsInByb2ZpbGVJZCI6IjcyZTY0NjgzZTMxMzRjMzZhNDA4YzY2YjY0ZTk0YWY1IiwicHJvZmlsZU5hbWUiOiJNSEZfU3F1aWQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzAxNDMzYmUyNDIzNjZhZjEyNmRhNDM0Yjg3MzVkZjFlYjViM2NiMmNlZGUzOTE0NTk3NGU5YzQ4MzYwN2JhYyJ9fX0="
+}

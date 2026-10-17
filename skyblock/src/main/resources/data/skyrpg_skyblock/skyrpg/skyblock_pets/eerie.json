@@ -1,0 +1,116 @@
+{
+ "name": "Eerie",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7§8Edition: #???",
+    "",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Fearnesy",
+    "§5Fear §7from §5Great Spook Armor §7in",
+    "§7your §bwardrobe §7applies to you, even",
+    "§7if you aren't wearing it."
+   ],
+   "stats": [
+    {
+     "speed": 0.1,
+     "intelligence": 0.5
+    },
+    {
+     "speed": 10,
+     "intelligence": 50
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7§8Edition: #???",
+    "",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Fearnesy",
+    "§7§7§5Fear §7from §5Great Spook",
+    "§5Armor §7in your §bwardrobe",
+    "§b§7applies to you, even if you",
+    "§7aren't wearing it.",
+    "",
+    "§6Fearama §8Edition #???",
+    "§7§7§7Increases §cdamage §7dealt",
+    "§7to Primal Fears and Spooky Mobs",
+    "§7by §a{0} §7for every §5Fear §7you",
+    "§7have."
+   ],
+   "stats": [
+    {
+     "speed": 0.1,
+     "intelligence": 0.5
+    },
+    {
+     "speed": 10,
+     "intelligence": 50
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     1
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§8Edition: #???",
+    "",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Fearnesy",
+    "§5Fear §7from §5Great Spook Armor §7in",
+    "§7your §bwardrobe §7applies to you, even",
+    "§7if you aren't wearing it.",
+    "",
+    "§6Fearama",
+    "§7Increases §cdamage §7dealt to Primal",
+    "§7Fears and Spooky Mobs by §a{0}% §7for",
+    "§7every §5Fear §7you have.",
+    "",
+    "§6Fearcreasing",
+    "§7Gives §a+{1} §5Fear §7for every §a10 §cPrimal",
+    "§cFears §7killed, up to §a150 §cPrimal Fears§7.",
+    "§cPrimal Fear Kills§7: (§a§k111§7/§a150§7)"
+   ],
+   "stats": [
+    {
+     "speed": 0.1,
+     "intelligence": 0.5
+    },
+    {
+     "speed": 10,
+     "intelligence": 50
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.1
+    ],
+    [
+     0.4,
+     1
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY5NTY2NTQ5MTMwMiwKICAicHJvZmlsZUlkIiA6ICJkYmQ4MDQ2M2EwMzY0Y2FjYjI3OGNhODBhMDBkZGIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4bG9nMjEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNhZjcwYzZmZjc2YmE0OGYyNGVlOGEyMDYzYTViNTBiYmZhYmY0MDlmNDc5NTI0OGEyOTJmODI4OWY0N2M5OCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

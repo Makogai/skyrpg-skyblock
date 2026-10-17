@@ -1,0 +1,62 @@
+{
+ "name": "Subzero Wisp",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Damage: §c+{DAMAGE}",
+    "§7Intelligence: §a+{INTELLIGENCE}",
+    "",
+    "§6Icehammer",
+    "§7Lets you break fire pillars §a2x",
+    "§7faster, healing you for §c50% §7of your",
+    "§7max §c❤ §7over §a3s§7.",
+    "",
+    "§6Bulwark",
+    "§7Kill Blazes to gain defense against",
+    "§7them and demons.",
+    "§7Bonus: §a+0§7& §f+0",
+    "§7Next Upgrade: §a+30§7& §f+3§8(§a0§7/§c100§8)",
+    "",
+    "§6Blaze Slayer",
+    "§7Gain §3+{0}☯ Combat Wisdom §7towards",
+    "§6Blazes§7.",
+    "",
+    "§6Extinguish",
+    "§7While in combat on the Crimson Isle,",
+    "§7spawn a pool every §a8s§7.",
+    "§7Bathing in it heals §c25%❤ §7now and",
+    "§c10%❤§7/s for §a8s§7.",
+    "",
+    "§6Ephemeral Stability",
+    "§7Regenerate mana §b40% §7faster"
+   ],
+   "stats": [
+    {
+     "health": 6.0,
+     "true_defense": 0.35,
+     "intelligence": 2.5,
+     "damage": 0.25
+    },
+    {
+     "health": 600.0,
+     "true_defense": 35,
+     "intelligence": 250,
+     "damage": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0NTkzMDI1OSwKICAicHJvZmlsZUlkIiA6ICIzYjBmNTM5MmRlNzM0YmZjYmJkOTMxYzMxYmFkODMxMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJjYXRhbmRCIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdhMGViMzdlNThjOTQyZWNhNGQzM2FiNDRlMjZlYjE5MTBjNzgzNzg4NTEwYjBhNTNiNmY0ZDE4ODgxZTIzN2UiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

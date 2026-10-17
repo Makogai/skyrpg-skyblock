@@ -1,0 +1,178 @@
+{
+ "name": "Jerry",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs",
+    "",
+    "§6Jerry",
+    "§7Actually adds §c{0} damage §7to the",
+    "§7Aspect of the Jerry"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.0
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Intelligence: §b-{INTELLIGENCE}",
+    "",
+    "§6Jerry",
+    "§7Gain §a50% §7chance to deal your",
+    "§7regular damage",
+    "",
+    "§6Jerry",
+    "§7Gain §a100% §7chance to receive a",
+    "§7normal amount of drops from mobs",
+    "",
+    "§6Jerry",
+    "§7Actually adds §c{0} damage §7to the",
+    "§7Aspect of the Jerry",
+    "",
+    "§6Jerry",
+    "§7Tiny chance to find Jerry Candies",
+    "§7when killing mobs"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0
+    },
+    {
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.0
+    ],
+    [
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1MTIyMTE4MjQ0MzAsInByb2ZpbGVJZCI6ImJkNDgyNzM5NzY3YzQ1ZGNhMWY4YzMzYzQwNTMwOTUyIiwicHJvZmlsZU5hbWUiOiJNSEZfVmlsbGFnZXIiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgyMmQ4ZTc1MWM4ZjJmZDRjODk0MmM0NGJkYjJmNWNhNGQ4YWU4ZTU3NWVkM2ViMzRjMThhODZlOTNiIn19fQ=="
+}

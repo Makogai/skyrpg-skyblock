@@ -1,0 +1,144 @@
+package com.skyrpg.skyblock.client.screen;
+
+import com.mojang.blaze3d.platform.InputConstants;
+import com.skyrpg.core.client.ui.Draw;
+import com.skyrpg.core.client.ui.Theme;
+import com.skyrpg.skyblock.pet.PetsMenu;
+import java.util.ArrayList;
+import java.util.List;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+
+/**
+ * Hypixel's Pets menu: the pet you have out on a card at the top (with Put away), every other pet in a grid below.
+ * Click a pet to summon it, right-click to take it out as an item; hovering shows its full tooltip.
+ */
+public final class PetsScreen extends AbstractContainerScreen<PetsMenu> {
+    private static final int WIDTH = 236;
+    private static final int HEIGHT = 200;
+    private static final int CARD_Y = 26;
+    private static final int CARD_H = 34;
+    private static final int GRID_Y = CARD_Y + CARD_H + 18;
+    private static final int CELL = 22;
+    private static final int COLUMNS = 9;
+
+    public PetsScreen(PetsMenu menu, Inventory inventory, Component title) {
+        super(menu, inventory, title, WIDTH, HEIGHT);
+    }
+
+    private int gridX() {
+        return leftPos + (imageWidth - COLUMNS * CELL) / 2;
+    }
+
+    private int buttonX() {
+        return leftPos + imageWidth - 8 - 62;
+    }
+
+    private int buttonY() {
+        return topPos + CARD_Y + 10;
+    }
+
+    @Override
+    public void extractBackground(GuiGraphicsExtractor g, int mouseX, int mouseY, float partialTick) {
+        super.extractBackground(g, mouseX, mouseY, partialTick);
+        Font font = this.font;
+        PetsMenu.View view = menu.view();
+        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Pets"),
+                Component.literal((view.stored().size() + (view.active().isEmpty() ? 0 : 1)) + " pets").withColor(Theme.MUTED));
+        int cx = leftPos + 8;
+        int cy = topPos + CARD_Y;
+        int cw = imageWidth - 16;
+        ItemStack active = view.active();
+        Draw.panel(g, cx, cy, cw, CARD_H, Theme.CARD, active.isEmpty() ? Theme.CARD_BORDER : Theme.GREEN);
+        if (active.isEmpty()) {
+            Draw.fit(g, font, Component.literal("No pet out. Click one below to summon it."), cx + cw / 2, cy + 13, cw - 10, 0.85f, 0.5f,
+                    Draw.Align.CENTER, Theme.DIM, false);
+        } else {
+            SkyScreens.well(g, cx + 6, cy + 8);
+            g.item(active, cx + 7, cy + 9);
+            Draw.fit(g, font, active.getHoverName(), cx + 28, cy + 7, cw - 110, 1f, 0.55f, Draw.Align.LEFT, Theme.TEXT, false);
+            Draw.fit(g, font, Component.literal("Summoned").withColor(Theme.GREEN), cx + 28, cy + 19, cw - 110, 0.75f, 0.45f, Draw.Align.LEFT,
+                    Theme.GREEN, false);
+            boolean over = SkyScreens.inside(mouseX, mouseY, buttonX(), buttonY(), 62, 14);
+            Draw.panel(g, buttonX(), buttonY(), 62, 14, over ? Draw.mix(Theme.TRACK, Theme.RED, 0.25f) : Theme.TRACK, over ? Theme.RED : Draw.mix(Theme.TRACK, Theme.RED, 0.5f));
+            Draw.fit(g, font, Component.literal("Put away"), buttonX() + 31, buttonY() + 3, 58, 0.85f, 0.5f, Draw.Align.CENTER, Theme.RED, false);
+        }
+
+        SkyScreens.label(g, font, "Your pets", leftPos + 8, topPos + GRID_Y - 11);
+        List<ItemStack> stored = view.stored();
+        int rows = Math.max(3, (stored.size() + COLUMNS - 1) / COLUMNS);
+        for (int i = 0; i < rows * COLUMNS; i++) {
+            int x = gridX() + (i % COLUMNS) * CELL;
+            int y = topPos + GRID_Y + (i / COLUMNS) * CELL;
+            if (y + CELL > topPos + imageHeight - 18) {
+                break;
+            }
+            boolean over = i < stored.size() && SkyScreens.inside(mouseX, mouseY, x, y, CELL - 2, CELL - 2);
+            Draw.panel(g, x, y, CELL - 2, CELL - 2, over ? Theme.CARD_HOVER : Theme.CARD, over ? Theme.ACCENT : Theme.CARD_BORDER);
+            if (i < stored.size()) {
+                g.item(stored.get(i), x + 2, y + 2);
+            }
+        }
+        Draw.fit(g, font, Component.literal("Click to summon · right-click to take out · right-click a pet item to add it"),
+                leftPos + imageWidth / 2, topPos + imageHeight - 13, imageWidth - 16, 0.7f, 0.45f, Draw.Align.CENTER, Theme.DIM, false);
+    }
+
+    private int storedAt(double mouseX, double mouseY) {
+        List<ItemStack> stored = menu.view().stored();
+        for (int i = 0; i < stored.size(); i++) {
+            int x = gridX() + (i % COLUMNS) * CELL;
+            int y = topPos + GRID_Y + (i / COLUMNS) * CELL;
+            if (SkyScreens.inside(mouseX, mouseY, x, y, CELL - 2, CELL - 2)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    protected void extractLabels(GuiGraphicsExtractor g, int mouseX, int mouseY) {
+        // The window draws its own title and labels.
+    }
+
+    @Override
+    public void extractRenderState(GuiGraphicsExtractor g, int mouseX, int mouseY, float partialTick) {
+        super.extractRenderState(g, mouseX, mouseY, partialTick);
+        ItemStack hovered = ItemStack.EMPTY;
+        int index = storedAt(mouseX, mouseY);
+        if (index >= 0) {
+            hovered = menu.view().stored().get(index);
+        } else if (!menu.view().active().isEmpty() && SkyScreens.inside(mouseX, mouseY, leftPos + 14, topPos + CARD_Y + 8, 18, 18)) {
+            hovered = menu.view().active();
+        }
+        if (!hovered.isEmpty()) {
+            List<Component> lines = new ArrayList<>(hovered.getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player, TooltipFlag.NORMAL));
+            Draw.queueTooltip(lines, Theme.ACCENT);
+        }
+        Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
+    }
+
+    @Override
+    public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
+        int index = storedAt(event.x(), event.y());
+        if (index >= 0) {
+            boolean right = event.button() == InputConstants.MOUSE_BUTTON_RIGHT;
+            minecraft.gameMode.handleInventoryButtonClick(menu.containerId, right ? PetsMenu.TAKE + index : index);
+            SkyScreens.click();
+            return true;
+        }
+        if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && !menu.view().active().isEmpty()
+                && SkyScreens.inside(event.x(), event.y(), buttonX(), buttonY(), 62, 14)) {
+            minecraft.gameMode.handleInventoryButtonClick(menu.containerId, PetsMenu.DESPAWN);
+            SkyScreens.click();
+            return true;
+        }
+        return super.mouseClicked(event, doubleClick);
+    }
+}

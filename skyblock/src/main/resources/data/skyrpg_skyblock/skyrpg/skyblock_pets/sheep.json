@@ -1,0 +1,172 @@
+{
+ "name": "Sheep",
+ "type": "ALCHEMY",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}%",
+    "",
+    "§6Mana Saver",
+    "§7Reduces the mana cost of abilities by",
+    "§a{0}%§7."
+   ],
+   "stats": [
+    {
+     "ability_damage": 0.2,
+     "intelligence": 1.0
+    },
+    {
+     "ability_damage": 20.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}%",
+    "",
+    "§6Mana Saver",
+    "§7Reduces the mana cost of abilities by",
+    "§a{0}%§7."
+   ],
+   "stats": [
+    {
+     "ability_damage": 0.2,
+     "intelligence": 1.0
+    },
+    {
+     "ability_damage": 20.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}%",
+    "",
+    "§6Mana Saver",
+    "§7Reduces the mana cost of abilities by",
+    "§a{0}%§7.",
+    "",
+    "§6Overheal",
+    "§7Gives a §a{1}% §7shield after not taking",
+    "§7damage for 10s"
+   ],
+   "stats": [
+    {
+     "ability_damage": 0.2,
+     "intelligence": 1.0
+    },
+    {
+     "ability_damage": 20.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.1
+    ],
+    [
+     15,
+     7.5
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}%",
+    "",
+    "§6Mana Saver",
+    "§7Reduces the mana cost of abilities by",
+    "§a{0}%§7.",
+    "",
+    "§6Overheal",
+    "§7Gives a §a{1}% §7shield after not taking",
+    "§7damage for 10s"
+   ],
+   "stats": [
+    {
+     "ability_damage": 0.2,
+     "intelligence": 1.0
+    },
+    {
+     "ability_damage": 20.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.1
+    ],
+    [
+     20,
+     10
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Ability Damage: §c+{ABILITY_DAMAGE}%",
+    "",
+    "§6Mana Saver",
+    "§7Reduces the mana cost of abilities by",
+    "§a{0}%§7.",
+    "",
+    "§6Overheal",
+    "§7Gives a §a{1}% §7shield after not taking",
+    "§7damage for 10s",
+    "",
+    "§6Dungeon Wizard",
+    "§7Increases your total mana by §a{2}%",
+    "§7while in dungeons"
+   ],
+   "stats": [
+    {
+     "ability_damage": 0.2,
+     "intelligence": 1.0
+    },
+    {
+     "ability_damage": 20.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.1,
+     0.2
+    ],
+    [
+     20,
+     10,
+     25
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1MDA2OTQ2NDUwMjcsInByb2ZpbGVJZCI6IjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwicHJvZmlsZU5hbWUiOiIyODA3Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82NGUyMmE0NjA0N2QyNzJlODlhMWNmYTEzZTk3MzRiN2UxMjgyN2UyMzVjMjAxMmMxYTk1OTYyODc0ZGEwIn19fQ=="
+}

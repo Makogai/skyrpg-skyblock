@@ -1,0 +1,259 @@
+{
+ "name": "Baby Yeti",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §c",
+    "§cDamage §7and §bIntelligence §7and",
+    "§7reduces its cooldown by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.5,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "strength": 50,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.2
+    ],
+    [
+     50,
+     20
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §c",
+    "§cDamage §7and §bIntelligence §7and",
+    "§7reduces its cooldown by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.5,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "strength": 50,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.75,
+     0.35
+    ],
+    [
+     75,
+     35
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §c",
+    "§cDamage §7and §bIntelligence §7and",
+    "§7reduces its cooldown by §a{1}%§7.",
+    "",
+    "§6Cold Breeze",
+    "§7Increases §cCombat Stats §7and §bFishing",
+    "§bStats §7by §a{2}% §7while on §cJerry's",
+    "§cWorkshop§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.5,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "strength": 50,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.75,
+     0.35,
+     0.1
+    ],
+    [
+     75,
+     35,
+     10
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §cDamage",
+    "§7and §bIntelligence §7and reduces its",
+    "§7cooldown by §a{1}%§7.",
+    "",
+    "§6Cold Breeze",
+    "§7Increases §cCombat Stats §7and §bFishing",
+    "§bStats §7by §a{2}% §7while on §cJerry's",
+    "§cWorkshop§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.75,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "strength": 75,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.5,
+     0.2
+    ],
+    [
+     100,
+     50,
+     20
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §cDamage",
+    "§7and §bIntelligence §7and reduces its",
+    "§7cooldown by §a{1}%§7.",
+    "",
+    "§6Cold Breeze",
+    "§7Increases §cCombat Stats §7and §bFishing",
+    "§bStats §7by §a{2}% §7while on §cJerry's",
+    "§cWorkshop§7.",
+    "",
+    "§6Frosty Familiarity",
+    "§7Grants §b+{3}Magic Find §7against",
+    "§fWinter Sea Creatures§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.75,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05
+    },
+    {
+     "strength": 75,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.5,
+     0.2,
+     0.1
+    ],
+    [
+     100,
+     50,
+     20,
+     10
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "",
+    "§6Yeti Fury",
+    "§7Buffs the §6Yeti Sword §7by §a{0} §c",
+    "§cDamage §7and §bIntelligence §7and",
+    "§7reduces its cooldown by §a{1}%§7.",
+    "",
+    "§6Cold Breeze",
+    "§7Increases §cCombat Stats §7and §bFishing",
+    "§bStats §7by §a{2}% §7while on §cJerry's",
+    "§cWorkshop§7.",
+    "",
+    "§6Frosty Familiarity",
+    "§7Grants §b+{3}Magic Find §7against",
+    "§fWinter Sea Creatures§7.",
+    "",
+    "§6Family Gathering",
+    "§7Grants §d10Tracking §7while on",
+    "§cJerry's Workshop§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.75,
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05,
+     "cold_resistance": 0
+    },
+    {
+     "strength": 75,
+     "fishing_speed": 50,
+     "sea_creature_chance": 5,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.5,
+     0.2,
+     0.1
+    ],
+    [
+     100,
+     50,
+     20,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5NTM1NjY0MjQwNSwKICAicHJvZmlsZUlkIiA6ICI3NTJkODM0NDViMDA0OTIwODMwYTE4MGVhNTVmMzNhMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMaWxZZXRpIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VmOWY2YTU3ZDhmNjg2ZmVkZDUxODVkMTc4NTUwOTEzZjQ4ZjkxYjU3YzkxNjJkNzBkMzY4YjFmZDlmZTJiNTIiCiAgICB9CiAgfQp9"
+}

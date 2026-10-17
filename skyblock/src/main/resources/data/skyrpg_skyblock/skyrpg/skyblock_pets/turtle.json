@@ -1,0 +1,96 @@
+{
+ "name": "Turtle",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "",
+    "§6Turtle Tactics",
+    "§7Gain §a+{0}% Defense §7and an",
+    "§7additional §a+10% Defense §7when",
+    "§7standing still.",
+    "",
+    "§6Genius Amniote",
+    "§7Grants §a+{1}% Defense §7to 4",
+    "§7players within 50 blocks of you."
+   ],
+   "stats": [
+    {
+     "defense": 100.5,
+     "health": 50.25,
+     "true_defense": 0.15
+    },
+    {
+     "defense": 150.0,
+     "health": 75.0,
+     "true_defense": 15
+    }
+   ],
+   "numbers": [
+    [
+     3.3,
+     1.01
+    ],
+    [
+     30,
+     2.5
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "",
+    "§6Turtle Tactics",
+    "§7Gain §a+{0}% Defense §7and an",
+    "§7additional §a+10% Defense §7when",
+    "§7standing still.",
+    "",
+    "§6Genius Amniote",
+    "§7Grants §a+{1}% Defense §7to 4",
+    "§7players within 50 blocks of you.",
+    "",
+    "§6Unflippable",
+    "§7Gain §aimmunity §7to knockback",
+    "",
+    "§6Turtle Shell",
+    "§7When under §c40% §7maximum HP, you take",
+    "§a{2}% §7less damage. Gain §4+{3}",
+    "§4Vitality §7after taking 10 hits."
+   ],
+   "stats": [
+    {
+     "defense": 100.5,
+     "health": 50.25,
+     "true_defense": 0.15
+    },
+    {
+     "defense": 150.0,
+     "health": 75.0,
+     "true_defense": 15
+    }
+   ],
+   "numbers": [
+    [
+     3.3,
+     1.01,
+     0.25,
+     10.1
+    ],
+    [
+     30,
+     2.5,
+     25,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MTg4NjU4MDc4NywKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQyZjg2YjUxYzg5OTJiMzc1OGU4NWZlMzViYjJhMjAzOTlhZDQ2ODUwOTU0NjZlN2ZlYjU0YzY5MDJmYWQ4ZSIKICAgIH0KICB9Cn0="
+}

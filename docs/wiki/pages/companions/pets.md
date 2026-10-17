@@ -3,49 +3,40 @@ title: Pets
 category: companions
 order: 1
 icon: minecraft:bone
-summary: Where pets stand today: the old pet engine and Pets page still work, but pets are only given out by admins. Hypixel's pets are coming.
+summary: Hypixel's 87 pets - the Pets menu, levels 1 to 100, stats by rarity and level, pet XP from your skills and the Taming skill.
 ---
-Hypixel SkyBlock's pets (the Taming skill's centre, with around 80 pets that level to 100) are **not built yet**. What exists today is the small pet system from the survival game, and in SkyBlock nobody can obtain a pet by playing.
+**Pets** float at your shoulder and give stats. Every one of Hypixel SkyBlock's **87 pets** is in the game (Bee, Ender Dragon, Rock, Golden Dragon...), at the rarities Hypixel has them in, with their stats and abilities. A pet levels from **1 to 100** (the Golden Dragon to 200) as you gain skill XP.
 
-## Can I get a pet?
+## Getting a pet out
 
-Not in normal play. The survival game's eggs came from shops, bosses and dungeons that are gone, and no SkyBlock source gives out a pet. **Admins** can give one with `/pet give <player> <type> <rarity>`.
+A pet is an item: a head with the pet's face. **Right-click it** to add it to your pets; if you have none out, it's summoned straight away.
 
-Hypixel's **pet items** (Big Teeth, Hardened Scales, the skill boost items and others) are in the game as items, and Zog and Duncan sell some of them. They do nothing yet, because there are no Hypixel pets to hold them. See [NPC shops](npc-shops).
+Open the **Pets** menu from the [SkyBlock Menu](skyblock-menu) or with `/pets`:
 
-## What the pet engine does
+- The pet you have out is on the card at the top. **Put away** sends it back.
+- Every other pet is in the grid below. **Click** one to summon it (the one out swaps places with it). **Right-click** one to take it back out as an item, to trade or sell.
+- Hover a pet for everything about it.
 
-If an admin gives you a pet, it works like this:
+The pet you have out floats beside your shoulder, for everyone to see.
 
-- There are six pet kinds: Mole (Mining), Bumblebee (Farming), Owl (Foraging), Wolf Pup (Combat), Otter (Fishing) and Jack o'Lantern (Farming).
-- A pet has a rarity from Common to Legendary, which multiplies its stats.
-- The pet that is **out** floats at your shoulder, gives you its stats while out, and earns XP as you earn XP in its skill. Pets level from 1 to 50 and unlock perks at levels 25 and 50.
-- Your pets live in **pet storage**, a saved list of 30. Right-click a pet item to put it into storage, and the first one goes out.
+## Levels and stats
 
-These pets do not match Hypixel's: different kinds, a level cap of 50 and their own stats and perks. They are a stand-in until Hypixel's pets arrive.
+A pet's name shows its level: **[Lvl 48] Bee**. Its stats and its abilities' numbers grow in a straight line from level 1 to level 100, and a rarer pet has more of them. Its tooltip shows them at its level, and the progress to the next level.
 
-## The Pets page
+A rarer pet needs more XP for each level: a Legendary pet starts further up Hypixel's pet XP table than a Common one.
 
-The **Pets** tile in the SkyBlock Menu (in the Gear group, showing the pet you have out) opens a page with a 3D preview of the selected pet, its stats and perks, and your pet storage with **Equip**, **Unequip** and **Take out** buttons. See [SkyBlock Menu](skyblock-menu).
+## Pet XP
 
-| Command | What it does |
+Your summoned pet gets a share of all the skill XP you gain:
+
+| XP you gain | What the pet gets |
 | --- | --- |
-| `/pet` | Shows your active pet |
-| `/pet away` | Puts it into storage |
-| `/pet storage` | Lists your stored pets |
-| `/pet give <player> <type> <rarity>` | Operators only: adds a pet to someone's storage |
+| Its own skill (a Farming pet and Farming XP) | all of it |
+| Its own skill, for a Mining or Fishing pet | one and a half times it |
+| Alchemy or Enchanting | a twelfth |
+| Any other skill | a quarter |
 
-## Taming and Pet Luck
+**Taming:** whatever your pet gets is also your Taming XP, and every Taming level gives your pets 1% more XP (Zoologist). See [Skills](skills-overview).
 
-The **Taming** skill earns the same XP your active pet earns, so without a pet it stays at level 0. Each Taming level gives +1 Pet Luck and +1% pet XP. The Pet Luck stat is on items but does nothing yet. See [Skills overview](skills-overview).
-
-## What is coming
-
-Hypixel's pets, pet items and Kat, the Auction House's pet category and the full Taming skill arrive in a later phase. This page will be rewritten when they do.
-
-## See also
-
-- [Skills overview](skills-overview)
-- [Stats](stats)
-- [SkyBlock Menu](skyblock-menu)
-- [Auction House](auction-house)
+> [!NOTE]
+> Not yet: pet abilities (they show with their numbers but don't work yet), pet items, Kat's rarity upgrades, the pet recipes and the other ways to get pets. Pets are given out by admins for now (`/sbpet give`).

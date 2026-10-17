@@ -1,0 +1,184 @@
+{
+ "name": "Magma Cube",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Slimy Minions",
+    "§7§7Slime and Magma Cube minions work",
+    "§7§a{0}% §7faster while on your island."
+   ],
+   "stats": [
+    {
+     "defense": 0.33,
+     "health": 0.5,
+     "strength": 0.2
+    },
+    {
+     "defense": 33.3,
+     "health": 50.0,
+     "strength": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20.0
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Slimy Minions",
+    "§7Slime and Magma Cube minions work",
+    "§a{0}% §7faster while on your island"
+   ],
+   "stats": [
+    {
+     "defense": 0.33,
+     "health": 0.5,
+     "strength": 0.2
+    },
+    {
+     "defense": 33.33,
+     "health": 50.0,
+     "strength": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     25.0
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Slimy Minions",
+    "§7Slime and Magma Cube minions work",
+    "§a{0}% §7faster while on your island",
+    "",
+    "§6Salt Blade",
+    "§7Deal §a{1}% §7more damage to slimes"
+   ],
+   "stats": [
+    {
+     "defense": 0.33,
+     "health": 0.5,
+     "strength": 0.2
+    },
+    {
+     "defense": 33.33,
+     "health": 50.0,
+     "strength": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.2
+    ],
+    [
+     25,
+     20
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Slimy Minions",
+    "§7Slime and Magma Cube minions work",
+    "§a{0}% §7faster while on your island",
+    "",
+    "§6Salt Blade",
+    "§7Deal §a{1}% §7more damage to slimes"
+   ],
+   "stats": [
+    {
+     "defense": 0.33,
+     "health": 0.5,
+     "strength": 0.2
+    },
+    {
+     "defense": 33.33,
+     "health": 50.0,
+     "strength": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.2
+    ],
+    [
+     30,
+     25
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Defense: §a+{DEFENSE}",
+    "§7Strength: §c+{STRENGTH}",
+    "",
+    "§6Slimy Minions",
+    "§7Slime and Magma Cube minions work",
+    "§a{0}% §7faster while on your island",
+    "",
+    "§6Salt Blade",
+    "§7Deal §a{1}% §7more damage to slimes",
+    "",
+    "§6Hot Ember",
+    "§7Buffs the stats of §5Rekindled Ember",
+    "§5Armor §7by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.33,
+     "health": 0.5,
+     "strength": 0.2
+    },
+    {
+     "defense": 33.33,
+     "health": 50.0,
+     "strength": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.2,
+     0.5
+    ],
+    [
+     30,
+     25,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0="
+}

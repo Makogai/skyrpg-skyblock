@@ -1,0 +1,222 @@
+{
+ "name": "Elephant",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100 §f",
+    "§fSpeed§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.15
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100",
+    "§fSpeed§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.15
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100",
+    "§fSpeed§7.",
+    "",
+    "§6Walking Fortress",
+    "§7Gain §c{1}Health §7for every 10 §a",
+    "§aDefense§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.15,
+     0.01
+    ],
+    [
+     15,
+     0.75
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100 §f",
+    "§fSpeed§7.",
+    "",
+    "§6Walking Fortress",
+    "§7Gain §c{1}Health §7for every 10 §a",
+    "§aDefense§7."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.01
+    ],
+    [
+     20,
+     1
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100 §f",
+    "§fSpeed§7.",
+    "",
+    "§6Walking Fortress",
+    "§7Gain §c{1}Health §7for every 10 §a",
+    "§aDefense§7.",
+    "",
+    "§6Trunk Efficiency",
+    "§7Grants §6+{2}Farming Fortune§7, which",
+    "§7increases your chance for multiple",
+    "§7drops."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.01,
+     1.5
+    ],
+    [
+     20,
+     1,
+     150
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Stomp",
+    "§7Gain §a{0}Defense §7for every 100 §f",
+    "§fSpeed§7.",
+    "",
+    "§6Walking Fortress",
+    "§7Gain §c{1}Health §7for every 10 §a",
+    "§aDefense§7.",
+    "",
+    "§6Trunk Efficiency",
+    "§7Grants §6+{2}Farming Fortune§7, which",
+    "§7increases your chance for multiple",
+    "§7drops.",
+    "",
+    "§6Abundant Harvest",
+    "§7Earn §2+{3}% Sowdust §7while farming."
+   ],
+   "stats": [
+    {
+     "health": 1.0,
+     "intelligence": 0.75,
+     "farming_fortune": 0.5
+    },
+    {
+     "health": 100.0,
+     "intelligence": 75.0,
+     "farming_fortune": 50.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.01,
+     1.5,
+     0.2
+    ],
+    [
+     20,
+     1,
+     150,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwMTkzMTMzMDk5MSwKICAicHJvZmlsZUlkIiA6ICJkOWQ2YTNjZDQ0ZWI0MjBlYWM2MTA2ZmQyMTNmZGRiYSIsCiAgInByb2ZpbGVOYW1lIiA6ICI5VDkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGVmOGVmZWE0NTA2MzJkMjc1M2EzOGEyM2E0ZjE1MDJhOGE2ODVmNmU5OWJmNjkyMDVlYzA0NDIwZmQ2NGY2IgogICAgfQogIH0KfQ=="
+}

@@ -1,0 +1,227 @@
+{
+ "name": "Endermite",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 100.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 150.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.8
+    ],
+    [
+     75
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped",
+    "",
+    "§6Daily Commuter",
+    "§9Transmission Abilities §7cost §a{1}% §7less",
+    "§7mana"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 150.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.8,
+     0.3
+    ],
+    [
+     75,
+     30
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped",
+    "",
+    "§6Daily Commuter",
+    "§9Transmission Abilities §7cost §a{1}% §7less",
+    "§7mana"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 150.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.4
+    ],
+    [
+     100,
+     40
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped",
+    "",
+    "§6Daily Commuter",
+    "§9Transmission Abilities §7cost §a{1}% §7less",
+    "§7mana",
+    "",
+    "§6Mite Bait",
+    "§7Gain a §a{2}% §7chance to dig up a bonus",
+    "§cNest Endermite §7per §d+1Pet Luck",
+    "§8(Stacks above 100%)"
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 150.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.4,
+     0
+    ],
+    [
+     100,
+     40,
+     3
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Pet Luck: §d+{PET_LUCK}",
+    "",
+    "§6More Stonks",
+    "§7Gain more exp orbs for breaking end",
+    "§7stone and gain a +§a{0}% §7chance to get",
+    "§7an extra block dropped",
+    "",
+    "§6Daily Commuter",
+    "§9Transmission Abilities §7cost §a{1}% §7less",
+    "§7mana",
+    "",
+    "§6Mite Bait",
+    "§7Gain a §a{2}% §7chance to dig up a bonus",
+    "§cNest Endermite §7per §d+1Pet Luck",
+    "§8(Stacks above 100%)",
+    "",
+    "§6Sacrificer",
+    "§7Increases the odds of rolling for",
+    "§7bonus items in the §cDraconic Altar §7by",
+    "§a{3}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.5,
+     "pet_luck": 0.1
+    },
+    {
+     "intelligence": 150.0,
+     "pet_luck": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.4,
+     0,
+     0.1
+    ],
+    [
+     100,
+     40,
+     3,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1ODQzODU5MzM1MTIsInByb2ZpbGVJZCI6IjRkNzA0ODZmNTA5MjRkMzM4NmJiZmM5YzEyYmFiNGFlIiwicHJvZmlsZU5hbWUiOiJzaXJGYWJpb3pzY2hlIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xOGFlNzA0NmRhOThkY2IzM2YzZWQ0MmYxZGM0MWQwOGFjOGRmYTVkYjNhMzg2MGRlNWIxYjVjMDU2ODA0MTg3In19fQ=="
+}

@@ -1,0 +1,175 @@
+{
+ "name": "Snail",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Red Sand Enjoyer",
+    "§9Red Sand Minions §7work §a{0}% §7faster",
+    "§7while on your §bPrivate Island§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "defense": 1.0
+    },
+    {
+     "intelligence": 100.0,
+     "defense": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Red Sand Enjoyer",
+    "§9Red Sand Minions §7work §a{0}% §7faster",
+    "§7while on your §bPrivate Island§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "defense": 1.0
+    },
+    {
+     "intelligence": 100.0,
+     "defense": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Red Sand Enjoyer",
+    "§9Red Sand Minions §7work §a{0}% §7faster",
+    "§7while on your §bPrivate Island§7.",
+    "",
+    "§6Slow and Steady",
+    "§7Convert every §f{1}Speed §7you",
+    "§7have above §f100 §7into §6+1Block",
+    "§6Fortune§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "defense": 1.0
+    },
+    {
+     "intelligence": 100.0,
+     "defense": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     5.97
+    ],
+    [
+     20,
+     3
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Red Sand Enjoyer",
+    "§9Red Sand Minions §7work §a{0}% §7faster",
+    "§7while on your §bPrivate Island§7.",
+    "",
+    "§6Slow and Steady",
+    "§7Convert every §f{1}Speed §7you",
+    "§7have above §f100 §7into §6+1Block",
+    "§6Fortune§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "defense": 1.0
+    },
+    {
+     "intelligence": 100.0,
+     "defense": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     5.97
+    ],
+    [
+     30,
+     3
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Red Sand Enjoyer",
+    "§9Red Sand Minions §7work §a{0}% §7faster",
+    "§7while on your §bPrivate Island§7.",
+    "",
+    "§6Slow and Steady",
+    "§7Convert every §f{1}Speed §7you",
+    "§7have above §f100 §7into §6+1Block",
+    "§6Fortune§7.",
+    "",
+    "§6Slimy Reach",
+    "§7Grants §e+{2}Mining Spread §7while",
+    "§7mining §9Blocks§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1.0,
+     "defense": 1.0
+    },
+    {
+     "intelligence": 100.0,
+     "defense": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     4.97,
+     4.0
+    ],
+    [
+     30,
+     2,
+     400
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY0NjQxMzY3ODczMiwKICAicHJvZmlsZUlkIiA6ICJjMTNkYzkxZjg1YjA0ZWM4OGU2NDk5YzdjZDc4Zjk3MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJjcnlwdGljX2Zyb2dfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUwYTk5MzNhM2IxMDQ4OWQzOGY2OTUwYzRlNjI4YmZjZjlmN2EyN2Y4ZDg0NjY2ZjA0ZjE0ZDUzNzQyNTI5NzIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

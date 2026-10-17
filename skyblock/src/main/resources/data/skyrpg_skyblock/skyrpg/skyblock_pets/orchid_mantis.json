@@ -1,0 +1,171 @@
+{
+ "name": "Orchid Mantis",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Overbloom: §e+{OVERBLOOM}",
+    "",
+    "§6Intelligent Specimen",
+    "§7Earn §a+{0}% §7more Farming Tool Exp."
+   ],
+   "stats": [
+    {
+     "speed": 0.3,
+     "overbloom": 0.15
+    },
+    {
+     "speed": 30,
+     "overbloom": 15
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Overbloom: §e+{OVERBLOOM}",
+    "",
+    "§6Intelligent Specimen",
+    "§7Earn §a+{0}% §7more Farming Tool Exp."
+   ],
+   "stats": [
+    {
+     "speed": 0.3,
+     "overbloom": 0.15
+    },
+    {
+     "speed": 30,
+     "overbloom": 15
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Overbloom: §e+{OVERBLOOM}",
+    "",
+    "§6Intelligent Specimen",
+    "§7Earn §a+{0}% §7more Farming Tool Exp.",
+    "",
+    "§6Swift Sickles",
+    "§7Convert every §f3 Speed §7you have",
+    "§7above §f100 §7into §6+{1}Farming",
+    "§6Fortune."
+   ],
+   "stats": [
+    {
+     "speed": 0.3,
+     "overbloom": 0.15
+    },
+    {
+     "speed": 30,
+     "overbloom": 15
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.005
+    ],
+    [
+     20,
+     0.5
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Overbloom: §e+{OVERBLOOM}",
+    "",
+    "§6Intelligent Specimen",
+    "§7Earn §a+{0}% §7more Farming Tool Exp.",
+    "",
+    "§6Swift Sickles",
+    "§7Convert every §f3 Speed §7you have",
+    "§7above §f100 §7into §6+{1}Farming",
+    "§6Fortune."
+   ],
+   "stats": [
+    {
+     "speed": 0.3,
+     "overbloom": 0.15
+    },
+    {
+     "speed": 30,
+     "overbloom": 15
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.01
+    ],
+    [
+     20,
+     1
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Overbloom: §e+{OVERBLOOM}",
+    "",
+    "§6Intelligent Specimen",
+    "§7Earn §a+{0}% §7more Farming Tool Exp.",
+    "",
+    "§6Swift Sickles",
+    "§7Convert every §f3 Speed §7you have",
+    "§7above §f100 §7into §6+{1}Farming",
+    "§6Fortune.",
+    "",
+    "§6Orchid Nectar",
+    "§7You have a §a{2}% §7chance to find",
+    "§aJelly §7or §aPlant Matter §7when farming",
+    "§7crops."
+   ],
+   "stats": [
+    {
+     "speed": 0.3,
+     "overbloom": 0.15
+    },
+    {
+     "speed": 30,
+     "overbloom": 15
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.01,
+     0.0002
+    ],
+    [
+     20,
+     1,
+     0.02
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc4MjE3MjQzMzMyOSwKICAicHJvZmlsZUlkIiA6ICJlOThhZTBlMTI5MDg0ZDA5OTk0MTg4N2Q2YTk0ZTI2NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTZXh5SGF1c2VNYXN0ZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY5MDNhOTUyMDU2NGMyMmJjNjZiMDVkMjE2MWIyM2U1NGZmOTYxMjg0ZTYzZTY4NDA2NWFlMDc4MWM5Y2Q5NyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

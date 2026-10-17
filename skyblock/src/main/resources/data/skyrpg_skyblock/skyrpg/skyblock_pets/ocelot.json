@@ -1,0 +1,167 @@
+{
+ "name": "Ocelot",
+ "type": "FORAGING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Foraging Wisdom Boost",
+    "§7Grants §3+{0}☯ Foraging Wisdom§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "ferocity": 0.1
+    },
+    {
+     "speed": 50.0,
+     "ferocity": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Foraging Wisdom Boost",
+    "§7Grants §3+{0}☯ Foraging Wisdom§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "ferocity": 0.1
+    },
+    {
+     "speed": 50.0,
+     "ferocity": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     25
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Foraging Wisdom Boost",
+    "§7Grants §3+{0}☯ Foraging Wisdom§7.",
+    "",
+    "§6Tree Hugger",
+    "§7Foraging minions work §a{1}% §7faster",
+    "§7while on your island"
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "ferocity": 0.1
+    },
+    {
+     "speed": 50.0,
+     "ferocity": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.2
+    ],
+    [
+     25,
+     25
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Foraging Wisdom Boost",
+    "§7Grants §3+{0}☯ Foraging Wisdom§7.",
+    "",
+    "§6Tree Hugger",
+    "§7Foraging minions work §a{1}% §7faster",
+    "§7while on your island"
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "ferocity": 0.1
+    },
+    {
+     "speed": 50.0,
+     "ferocity": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.3
+    ],
+    [
+     30,
+     30
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Foraging Wisdom Boost",
+    "§7Grants §3+{0}☯ Foraging Wisdom§7.",
+    "",
+    "§6Tree Hugger",
+    "§7Foraging minions work §a{1}% §7faster",
+    "§7while on your island",
+    "",
+    "§6Tree Essence",
+    "§7Gain a §a{2}% §7chance to get exp from",
+    "§7breaking a log"
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "ferocity": 0.1
+    },
+    {
+     "speed": 50.0,
+     "ferocity": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.3,
+     0.3
+    ],
+    [
+     30,
+     30,
+     30
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1MTU4NTg2MzE5OTQsInByb2ZpbGVJZCI6IjFiZWU5ZGY1NGY3MTQyYTJiZjUyZDk3OTcwZDNmZWEzIiwicHJvZmlsZU5hbWUiOiJNSEZfT2NlbG90Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81NjU3Y2Q1YzI5ODlmZjk3NTcwZmVjNGRkY2RjNjkyNmE2OGEzMzkzMjUwYzFiZTFmMGIxMTRhMWRiMSJ9fX0="
+}

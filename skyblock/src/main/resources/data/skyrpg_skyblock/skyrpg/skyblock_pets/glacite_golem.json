@@ -1,0 +1,173 @@
+{
+ "name": "Glacite Golem",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Powder-powered",
+    "§7Gain §a+{0}% §7more §bGlacite Powder §7from",
+    "§7most sources."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.25,
+     "cold_resistance": 0.1
+    },
+    {
+     "mining_speed": 125,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Powder-powered",
+    "§7Gain §a{0}% §7more §bGlacite Powder §7from",
+    "§7most sources."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.25,
+     "cold_resistance": 0.1
+    },
+    {
+     "mining_speed": 125,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.15
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Powder-powered",
+    "§7Gain §a{0}% §7more §bGlacite Powder §7from",
+    "§7most sources.",
+    "",
+    "§6Iceborn",
+    "§7Gain §a+{1} §6Mining Fortune §7while in",
+    "§7the §bGlacite Mineshafts§7."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.25,
+     "cold_resistance": 0.1
+    },
+    {
+     "mining_speed": 125,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.15,
+     0.75
+    ],
+    [
+     15,
+     75
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Powder-powered",
+    "§7Gain §a{0}% §7more §bGlacite Powder §7from",
+    "§7most sources.",
+    "",
+    "§6Iceborn",
+    "§7Gain §a+{1} §6Mining Fortune §7while in the",
+    "§bGlacite Mineshafts§7."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.25,
+     "cold_resistance": 0.1
+    },
+    {
+     "mining_speed": 125,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     1
+    ],
+    [
+     20,
+     100
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Cold Resistance: §b+{COLD_RESISTANCE}",
+    "§7Mining Speed: §6+{MINING_SPEED}",
+    "",
+    "§6Powder-powered",
+    "§7Gain §a{0}% §7more §bGlacite Powder §7from",
+    "§7most sources.",
+    "",
+    "§6Iceborn",
+    "§7Gain §a+{1} §6Mining Fortune §7while in the",
+    "§bGlacite Mineshafts§7.",
+    "",
+    "§6Frozen Perfection",
+    "§7Gain §a+{2} §5Pristine §7for every",
+    "§bFrozen Corpse §7you've looted in the",
+    "§7current §bGlacite Mineshaft§7."
+   ],
+   "stats": [
+    {
+     "mining_speed": 1.25,
+     "cold_resistance": 0.1
+    },
+    {
+     "mining_speed": 125,
+     "cold_resistance": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     1,
+     0.01
+    ],
+    [
+     20,
+     100,
+     1
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcxMjg5ODYzMjcxMSwKICAicHJvZmlsZUlkIiA6ICJmNmYxY2IxMmYzNDU0MDRlYjZlNjU2NGE2ZDlmMjU2NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJBdXJlbGl1c0dlbWluaSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hZjEzMmE2NTkzODc2ZDNjMzc3ZDUwM2ZkNjZlY2EzZmI5Mzg3NDMyNTFmN2IxNmE5ODcwYzYwYjczODhjOGEzIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+}

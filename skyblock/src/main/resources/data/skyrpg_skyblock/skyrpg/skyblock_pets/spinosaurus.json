@@ -1,0 +1,52 @@
+{
+ "name": "Spinosaurus",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}",
+    "§7Trophy Chance: §6+{TROPHY_CHANCE}",
+    "",
+    "§6Sharp Attitude",
+    "§3Sea Creatures §7spawn with §a{0}% §7of",
+    "§7their maximum health missing.",
+    "",
+    "§6Pursuit",
+    "§7Increases the chance of catching",
+    "§6§lGOLD §7and §b§lDIAMOND §7tier §6Trophy",
+    "§6Fish §7by §a{1}%§7.",
+    "",
+    "§6Adaptive Predator",
+    "§7Increases this pet's base stats by",
+    "§a{2}%§7 during any §bWeather§7."
+   ],
+   "stats": [
+    {
+     "fishing_speed": 0.5,
+     "sea_creature_chance": 0.05,
+     "trophy_chance": 0.05
+    },
+    {
+     "fishing_speed": 50,
+     "sea_creature_chance": 5,
+     "trophy_chance": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.1,
+     0.1,
+     0.5
+    ],
+    [
+     10,
+     10,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcwODYzMTQ0NTkwMywKICAicHJvZmlsZUlkIiA6ICJkNWQ5NzUxOTNjMTM0MzAyYTU5MjRmODQ0NWQ4YzAwNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJzYWludGVkbGl0dGxlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QzYzlkNDc5NDcxYTJmMTNmMjI1NDgzMTUxNTk1OTE3MjA5OTJlNzBjOTIwZmVmODNhOTAxYjcxODY3MjBlM2MiCiAgICB9CiAgfQp9"
+}

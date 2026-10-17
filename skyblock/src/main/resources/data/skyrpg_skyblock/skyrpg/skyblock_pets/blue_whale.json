@@ -1,0 +1,156 @@
+{
+ "name": "Blue Whale",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "",
+    "§6Ingest",
+    "§7If you have any absorption active,",
+    "§7gain §a+{0}% Damage Reduction§7."
+   ],
+   "stats": [
+    {
+     "health": 2.0
+    },
+    {
+     "health": 200.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "",
+    "§6Ingest",
+    "§7If you have any absorption active,",
+    "§7gain §a+{0}% Damage Reduction§7."
+   ],
+   "stats": [
+    {
+     "health": 2.0
+    },
+    {
+     "health": 200.0
+    }
+   ],
+   "numbers": [
+    [
+     1.0
+    ],
+    [
+     100
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "",
+    "§6Ingest",
+    "§7If you have any absorption active,",
+    "§7gain §a+{0}% Damage Reduction§7.",
+    "",
+    "§6Bulk",
+    "§7Gain §a{1}Defense §7per §c30 Max ",
+    "§cHealth§7."
+   ],
+   "stats": [
+    {
+     "health": 2.0
+    },
+    {
+     "health": 200.0
+    }
+   ],
+   "numbers": [
+    [
+     1.5,
+     0.01
+    ],
+    [
+     150,
+     1
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "",
+    "§6Ingest",
+    "§7If you have any absorption active,",
+    "§7gain §a+{0}% Damage Reduction§7.",
+    "",
+    "§6Bulk",
+    "§7Gain §a{1}Defense §7per §c25 Max ",
+    "§cHealth§7."
+   ],
+   "stats": [
+    {
+     "health": 2.0
+    },
+    {
+     "health": 200.0
+    }
+   ],
+   "numbers": [
+    [
+     2.0,
+     0.01
+    ],
+    [
+     200,
+     1
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Health: §c+{HEALTH}",
+    "",
+    "§6Ingest",
+    "§7If you have any absorption active,",
+    "§7gain §a+{0}% Damage Reduction§7.",
+    "",
+    "§6Bulk",
+    "§7Gain §a{1}Defense §7per §c20 Max ",
+    "§cHealth§7.",
+    "",
+    "§6Archimedes",
+    "§7Gain §c+{2}% Max Health§7."
+   ],
+   "stats": [
+    {
+     "health": 2.0
+    },
+    {
+     "health": 200.0
+    }
+   ],
+   "numbers": [
+    [
+     2.5,
+     0.01,
+     20.0
+    ],
+    [
+     250,
+     1,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTcyMDA0NTk2ODg5NywKICAicHJvZmlsZUlkIiA6ICIxZGI3ZjUxYWZmOWM0NTcyOGZmNmU5MjMxMmZhZGZkOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJsdXNtZW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVlNzJkMzQzNWMxODNkYmRkYTIyOTBjYzhmY2M5MDU0YjZlNGQ2ZThmNTMzOGRiNGY0YzFkOWEzMDg1NGI1ZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

@@ -1,0 +1,165 @@
+{
+ "name": "Horse",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost II§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 1
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost III§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 1.0
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 100.0
+    }
+   ],
+   "numbers": [
+    [],
+    []
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost IV§7.",
+    "",
+    "§6Stampede",
+    "§7Mob kills grant a stack of §f+{0} ",
+    "§fSpeed§7 and §c+{1} Strength§7 for §a5s§7.",
+    "§8(Max 20 stacks)"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 1.0
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     1.2,
+     1.05
+    ],
+    [
+     20,
+     5
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost IV§7.",
+    "",
+    "§6Stampede",
+    "§7Mob kills grant a stack of §f+{0} ",
+    "§fSpeed§7 and §c+{1} Strength§7 for §a5s§7.",
+    "§8(Max 20 stacks)"
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 1.0
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     1.2,
+     1.05
+    ],
+    [
+     20,
+     5
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6High Stride",
+    "§7Grants permanent §bJump Boost IV§7.",
+    "",
+    "§6Stampede",
+    "§7Mob kills grant a stack of §f+{0} ",
+    "§fSpeed§7 and §c+{1} Strength§7 for §a5s§7.",
+    "§8(Max 20 stacks)",
+    "",
+    "§6Trample",
+    "§7After falling §a20§7 or more blocks,",
+    "§7absorb your fall damage and deal",
+    "§a{2}%§7 of your weapon's §cDamage§7 for",
+    "§7every block fallen to mobs within §a3",
+    "§7blocks."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 1.0
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     1.2,
+     1.05,
+     0.5
+    ],
+    [
+     20,
+     5,
+     5
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE0ODk5NjQyNjA2NjAsInByb2ZpbGVJZCI6ImRhNzQ2NWVkMjljYjRkZTA5MzRkOTIwMTc0NDkxMzU1IiwicHJvZmlsZU5hbWUiOiJJc2F5bGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM2ZmNkM2VjM2JjODRiYWZiNDEyM2VhNDc5NDcxZjlkMmY0MmQ4ZmI5YzVmMTFjZjVmNGUwZDkzMjI2In19fQ=="
+}

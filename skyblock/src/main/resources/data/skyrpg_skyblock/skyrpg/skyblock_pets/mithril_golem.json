@@ -1,0 +1,218 @@
+{
+ "name": "Mithril Golem",
+ "type": "MINING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     1
+    ],
+    [
+     100
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     1.5
+    ],
+    [
+     150
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7.",
+    "",
+    "§6Subterranean Battler",
+    "§7Increases all §cCombat Stats §7by §a+{1}%",
+    "§7on §6Mining Islands§7."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     1.5,
+     0.1
+    ],
+    [
+     150,
+     10
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7.",
+    "",
+    "§6Subterranean Battler",
+    "§7Increases all §cCombat Stats §7by §a+{1}%",
+    "§7on §6Mining Islands§7."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     2,
+     0.2
+    ],
+    [
+     200,
+     20.0
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7.",
+    "",
+    "§6Subterranean Battler",
+    "§7Increases all §cCombat Stats §7by §a+{1}%",
+    "§7on §6Mining Islands§7.",
+    "",
+    "§6The Smell Of Powder",
+    "§7Grants §2+{2}% ᠅ Mithril Powder §7from",
+    "§7all sources."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     2,
+     0.2,
+     0.2
+    ],
+    [
+     200,
+     20.0,
+     20.0
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7True Defense: §f+{TRUE_DEFENSE}",
+    "§7Mining Fortune: §6+{MINING_FORTUNE}",
+    "",
+    "§6Mithril Affinity",
+    "§7Grants §6+{0}Mining Speed §7when mining",
+    "§2Mithril§7.",
+    "",
+    "§6Subterranean Battler",
+    "§7Increases all §cCombat Stats §7by §a+{1}%",
+    "§7on §6Mining Islands§7.",
+    "",
+    "§6The Smell Of Powder",
+    "§7Grants §2+{2}% ᠅ Mithril Powder §7from",
+    "§7all sources.",
+    "",
+    "§6Refined Senses",
+    "§7Grants §b+{3}% Magic Find §7while on",
+    "§6Mining Islands§7."
+   ],
+   "stats": [
+    {
+     "true_defense": 0.5,
+     "mining_fortune": 0.25
+    },
+    {
+     "true_defense": 50.0,
+     "mining_fortune": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     2,
+     0.2,
+     0.2,
+     0.1
+    ],
+    [
+     200,
+     20.0,
+     20.0,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYxMDY0OTEwODI4NCwKICAicHJvZmlsZUlkIiA6ICI2ZmU4OTUxZDVhY2M0NDc3OWI2ZmYxMmU3YzFlOTQ2MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJlcGhlbXJhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2MxYjJkZmU4ZWQ1ZGZmYzViMTY4N2JjMWMyNDljMzlkZTJkOGE2YzNkOTAzMDVjOTVmNmQxYTFhMzMwYTBiMSIKICAgIH0KICB9Cn0="
+}

@@ -1,0 +1,273 @@
+{
+ "name": "Frog",
+ "type": "FORAGING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     0.8
+    ],
+    [
+     40
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.19
+    ],
+    [
+     60
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7.",
+    "",
+    "§6Happy Tree Friends",
+    "§7Grants §6{1}Foraging Fortune §7for",
+    "§7every other §2Frog Pet §7on the island,",
+    "§7up to §b10 §7frogs."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.19,
+     0.15
+    ],
+    [
+     60,
+     5
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7.",
+    "",
+    "§6Happy Tree Friends",
+    "§7Grants §6{1}Foraging Fortune §7for",
+    "§7every other §2Frog Pet §7on the island,",
+    "§7up to §b10 §7frogs."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.59,
+     0.2
+    ],
+    [
+     80,
+     10
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7.",
+    "",
+    "§6Happy Tree Friends",
+    "§7Grants §6{1}Foraging Fortune §7for",
+    "§7every other §2Frog Pet §7on the island,",
+    "§7up to §b10 §7frogs.",
+    "",
+    "§6Hunting Enjoyer",
+    "§7Increases your chance of fishing up",
+    "§9Water Shards §7by §a{2}% §7while on",
+    "§2Foraging Islands§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.59,
+     0.2,
+     1
+    ],
+    [
+     80,
+     10,
+     50
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Trophy Chance: §6+{TROPHY_CHANCE}%",
+    "§7Respiration: §3+{RESPIRATION}",
+    "§7Sweep: §2+{SWEEP}",
+    "",
+    "§6Hop",
+    "§7Grants §6{0}Foraging Fortune §7for",
+    "§a20s §7every time you jump. Gain §bJump",
+    "§bBoost IV §7while on §2Foraging Islands§7.",
+    "",
+    "§6Happy Tree Friends",
+    "§7Grants §6{1}Foraging Fortune §7and",
+    "§b{2}Fishing Speed §7for every",
+    "§7other §2Frog Pet §7on the island, up to",
+    "§b10 §7frogs.",
+    "",
+    "§6Hunting Enjoyer",
+    "§7Increases your chance of fishing up",
+    "§9Water Shards §7by §a{3}% §7while on",
+    "§2Foraging Islands§7.",
+    "",
+    "§6Home Sweet Home",
+    "§7Increases your chance of catching",
+    "§6§lGOLD §7and §b§lDIAMOND §2Trophy Frogs",
+    "§7by §a{4}%§7."
+   ],
+   "stats": [
+    {
+     "speed": 0.5,
+     "fishing_speed": 0.4,
+     "trophy_chance": 0.05,
+     "respiration": 0.1,
+     "sweep": 0.1
+    },
+    {
+     "speed": 50,
+     "fishing_speed": 40,
+     "trophy_chance": 5,
+     "respiration": 10,
+     "sweep": 10
+    }
+   ],
+   "numbers": [
+    [
+     1.59,
+     0.2,
+     0.12,
+     1,
+     0.2
+    ],
+    [
+     80,
+     10,
+     2,
+     50,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY4ODY3NjM5Mjc1NCwKICAicHJvZmlsZUlkIiA6ICI3MzE4MWQxZDRjYWQ0ZmU0YTcxNWNjNmUxOGNjYzVkNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJaZmVybjRuZGl0b19SdyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80NTg1MmE5NTkyODg5Nzc0NjAxMjk4OGZiZDVkYmFhMWI3MGI3YTVmYjY1MTU3MDE2ZjRmZjNmMjQ1Mzc0YzA4IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+}

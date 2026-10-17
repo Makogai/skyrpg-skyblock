@@ -1,0 +1,200 @@
+{
+ "name": "Enderman",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5⊙ Ender",
+    "§7mobs"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.1
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5Ender",
+    "§7mobs"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5Ender",
+    "§7mobs",
+    "",
+    "§6Teleport Savvy",
+    "§7Buffs Transmission abilities, granting",
+    "§a{1} §7weapon damage for 5s on use"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.4
+    ],
+    [
+     20,
+     40
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5Ender",
+    "§7mobs",
+    "",
+    "§6Teleport Savvy",
+    "§7Buffs Transmission abilities, granting",
+    "§a{1} §7weapon damage for 5s on use"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5
+    ],
+    [
+     30,
+     50
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5Ender",
+    "§7mobs",
+    "",
+    "§6Teleport Savvy",
+    "§7Buffs Transmission abilities, granting",
+    "§a{1} §7weapon damage for 5s on use",
+    "",
+    "§6Zealot Madness",
+    "§7Increases your odds to find a",
+    "§7special Zealot by §a{2}%§7."
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5,
+     0.2
+    ],
+    [
+     30,
+     50,
+     25
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Enderian",
+    "§7Take §a{0}% §7less damage from §5Ender",
+    "§7mobs",
+    "",
+    "§6Teleport Savvy",
+    "§7Buffs Transmission abilities, granting",
+    "§a{1} §7weapon damage for 5s on use",
+    "",
+    "§6Zealot Madness",
+    "§7Increases your odds to find a",
+    "§7special Zealot by §a{2}%§7.",
+    "",
+    "§6Enderman Slayer",
+    "§7Gain §3+{3}☯ Combat Wisdom §7towards",
+    "§5Endermen§7."
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.75
+    },
+    {
+     "crit_damage": 75.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5,
+     0.2,
+     0.5
+    ],
+    [
+     30,
+     50,
+     25,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYxOTkwMjIzODIyNCwKICAicHJvZmlsZUlkIiA6ICJmMjU5MTFiOTZkZDU0MjJhYTcwNzNiOTBmOGI4MTUyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJmYXJsb3VjaDEwMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85ZjMxYzliNWEyYmZlNzQ0MzY0NWI0ZTdlOGVhNDA4YjA0ZDU1NGE5MjAwYjAwYWZkNTc0Y2U5MjRiNTU1ZWNiIgogICAgfQogIH0KfQ=="
+}

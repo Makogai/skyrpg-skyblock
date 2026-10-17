@@ -1,0 +1,214 @@
+{
+ "name": "Guardian",
+ "type": "ENCHANTING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     2
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2
+    ],
+    [
+     6
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7.",
+    "",
+    "§6Enchanting Wisdom Boost",
+    "§7Grants §3+{1}☯ Enchanting Wisdom§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.25
+    ],
+    [
+     10,
+     25
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7.",
+    "",
+    "§6Enchanting Wisdom Boost",
+    "§7Grants §3+{1}☯ Enchanting Wisdom§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3
+    ],
+    [
+     15,
+     30
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7.",
+    "",
+    "§6Enchanting Wisdom Boost",
+    "§7Grants §3+{1}☯ Enchanting Wisdom§7.",
+    "",
+    "§6Mana Pool",
+    "§7Regenerate §b{2}% §7extra mana, doubled",
+    "§7when near or in water"
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     0.2,
+     0.3,
+     0.3
+    ],
+    [
+     20,
+     30,
+     30
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Laserbeam",
+    "§7Zaps your enemies for §b{0}x §7your §b",
+    "§bIntelligence §7every §a3s§7.",
+    "",
+    "§6Enchanting Wisdom Boost",
+    "§7Grants §3+{1}☯ Enchanting Wisdom§7.",
+    "",
+    "§6Mana Pool",
+    "§7Regenerate §b{2}% §7extra mana, doubled",
+    "§7when near or in water",
+    "",
+    "§6Lucky Seven",
+    "§7Gain §b+{3}% §7chance to find §5ultra rare",
+    "§7books in §dSuperpairs§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.5,
+     "intelligence": 1.0
+    },
+    {
+     "defense": 50.0,
+     "intelligence": 100.0
+    }
+   ],
+   "numbers": [
+    [
+     1.2,
+     0.3,
+     0.3,
+     0.1
+    ],
+    [
+     120,
+     30,
+     30,
+     7.0
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDIzNzEyOTQxOCwKICAicHJvZmlsZUlkIiA6ICJmNGMyY2FkNzBhY2U0Y2U2ODY3ODY5ZDBiNjUzYTk4YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHdWFyZGlhbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMjEwMjU0MzQwNDViZGE3MDI1YjNlNTE0YjMxNmE0Yjc3MGM2ZmFhNGJhOWFkYjRiZTM4MDk1MjZkYjc3ZjlkIgogICAgfQogIH0KfQ=="
+}

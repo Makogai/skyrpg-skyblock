@@ -1,0 +1,96 @@
+{
+ "name": "Megalodon",
+ "type": "FISHING",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Blood Scent",
+    "§7Deal up to §c+{0}% Damage §7based on",
+    "§7the enemy's missing health",
+    "",
+    "§6Enhanced Scales",
+    "§7Doubles the pet's base stats during",
+    "§7the §bFishing Festival§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.5,
+     "magic_find": 0.1,
+     "ferocity": 5.05,
+     "sea_creature_chance": 5.05,
+     "fishing_speed": 10.3
+    },
+    {
+     "strength": 50.0,
+     "magic_find": 10.0,
+     "ferocity": 10,
+     "sea_creature_chance": 10,
+     "fishing_speed": 40
+    }
+   ],
+   "numbers": [
+    [
+     51
+    ],
+    [
+     150
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Ferocity: §c+{FEROCITY}",
+    "§7Magic Find: §b+{MAGIC_FIND}",
+    "§7Fishing Speed: §b+{FISHING_SPEED}",
+    "§7Sea Creature Chance: §3+{SEA_CREATURE_CHANCE}%",
+    "",
+    "§6Blood Scent",
+    "§7Deal up to §c+{0}% Damage §7based on",
+    "§7the enemy's missing health",
+    "",
+    "§6Enhanced Scales",
+    "§7Doubles the pet's base stats during",
+    "§7the §bFishing Festival§7.",
+    "",
+    "§6Feeding Frenzy",
+    "§7Grants a §a+{1}% §7chance to catch",
+    "§bSharks §7during the §bFishing Festival§7."
+   ],
+   "stats": [
+    {
+     "strength": 0.5,
+     "magic_find": 0.1,
+     "ferocity": 5.05,
+     "sea_creature_chance": 5.05,
+     "fishing_speed": 10.3
+    },
+    {
+     "strength": 50.0,
+     "magic_find": 10.0,
+     "ferocity": 10,
+     "sea_creature_chance": 10,
+     "fishing_speed": 40
+    }
+   ],
+   "numbers": [
+    [
+     51,
+     10.1
+    ],
+    [
+     150,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1MzQxMTI1MjMxNzgsInByb2ZpbGVJZCI6IjVjZjYyNWJhOGY4ZTQwNjliY2ZlYWY1ZmJiMzVhM2Y0IiwicHJvZmlsZU5hbWUiOiJMZWZ0U2hhcmsiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E5NGFlNDMzYjMwMWM3ZmI3YzY4Y2JhNjI1YjBiZDM2YjBiMTQxOTBmMjBlMzRhN2M4ZWUwZDlkZTA2ZDUzYjkifX19"
+}

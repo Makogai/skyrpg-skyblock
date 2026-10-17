@@ -1,0 +1,61 @@
+{
+ "name": "Rose Dragon",
+ "type": "FARMING",
+ "max_level": 200,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Speed: §f+{SPEED}",
+    "§7Farming Fortune: §6+{FARMING_FORTUNE}",
+    "",
+    "§6Garden Power",
+    "§7Grants §6+{0}Farming Fortune §7per",
+    "§aFarming §7level.",
+    "",
+    "§6Rosy Scales",
+    "§7Grants §6+{1}Farming Fortune §7and",
+    "§f+{2}Speed §7per Crop Milestone.",
+    "",
+    "§6Dragon's Gluttony",
+    "§7Grants §e+{3}Overbloom§7.",
+    "",
+    "§6Spiritual Perfection",
+    "§7Gain §a{4}% §7more §cCopper §7from §aGarden",
+    "§aVisitors §7and from analyzing §cMutations§7.",
+    "",
+    "§6Symbiosis",
+    "§7If you own a level §a200 Rose Dragon§7,",
+    "§7grants §6+3Farming Fortune §7for",
+    "§7every other unique maxed §aFarming",
+    "§aPet §7that you own."
+   ],
+   "stats": [
+    {
+     "farming_fortune": 20.4,
+     "speed": 51
+    },
+    {
+     "farming_fortune": 40,
+     "speed": 100
+    }
+   ],
+   "numbers": [
+    [
+     1.52,
+     0.0765,
+     0.051,
+     20.4,
+     10.2
+    ],
+    [
+     3,
+     0.15,
+     0.1,
+     40,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc2MTE3MzAyMjM0NywKICAicHJvZmlsZUlkIiA6ICJjOWI3OWY2OGEyZGY0YjA1ODUwOWRlMzg5YjM5ZDUyYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ3cmVlcGVyX2Jvb3AiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI3YzNkZTA3NWEyYmIyMzhlZjUxNDMxMjA2YjEwZDU4NmNiMmE1YjFjYzQxZmU4NTFjYzVmMGIwMmQzNTdjNyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

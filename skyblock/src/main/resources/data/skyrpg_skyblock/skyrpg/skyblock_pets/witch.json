@@ -1,0 +1,177 @@
+{
+ "name": "Witch",
+ "type": "ALCHEMY",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Alchemy Wisdom: §3+{ALCHEMY_WISDOM}",
+    "",
+    "§6Toil and Trouble",
+    "§7Increases your chance of dropping",
+    "§6Ingredients§7 during the §5Year of the",
+    "§5Witch§7 by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1,
+     "alchemy_wisdom": 0.05
+    },
+    {
+     "intelligence": 100,
+     "alchemy_wisdom": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Alchemy Wisdom: §3+{ALCHEMY_WISDOM}",
+    "",
+    "§6Toil and Trouble",
+    "§7Increases your chance of dropping",
+    "§6Ingredients§7 during the §5Year of the",
+    "§5Witch§7 by §a{0}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1,
+     "alchemy_wisdom": 0.05
+    },
+    {
+     "intelligence": 100,
+     "alchemy_wisdom": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.75
+    ],
+    [
+     75
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Alchemy Wisdom: §3+{ALCHEMY_WISDOM}",
+    "",
+    "§6Toil and Trouble",
+    "§7Increases your chance of dropping",
+    "§6Ingredients§7 during the §5Year of the",
+    "§5Witch§7 by §a{0}%§7.",
+    "",
+    "§6Alchemism",
+    "§7Reduces how long §5Potions§7 take to",
+    "§7brew by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1,
+     "alchemy_wisdom": 0.05
+    },
+    {
+     "intelligence": 100,
+     "alchemy_wisdom": 5
+    }
+   ],
+   "numbers": [
+    [
+     0.75,
+     0.4
+    ],
+    [
+     75,
+     40
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Alchemy Wisdom: §3+{ALCHEMY_WISDOM}",
+    "",
+    "§6Toil and Trouble",
+    "§7Increases your chance of dropping",
+    "§6Ingredients§7 during the §5Year of the",
+    "§5Witch§7 by §a{0}%§7.",
+    "",
+    "§6Alchemism",
+    "§7Reduces how long §5Potions§7 take to",
+    "§7brew by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1,
+     "alchemy_wisdom": 0.05
+    },
+    {
+     "intelligence": 100,
+     "alchemy_wisdom": 5
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.5
+    ],
+    [
+     100,
+     50
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Alchemy Wisdom: §3+{ALCHEMY_WISDOM}",
+    "",
+    "§6Toil and Trouble",
+    "§7Increases your chance of dropping",
+    "§6Ingredients§7 during the §5Year of the",
+    "§5Witch§7 by §a{0}%§7.",
+    "",
+    "§6Alchemism",
+    "§7Reduces how long §5Potions§7 take to",
+    "§7brew by §a{1}%§7.",
+    "",
+    "§6Witching Hour",
+    "§7Increases the base stats of this pet",
+    "§7by §a{2}%§7 during the §5Year of the Witch§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 1,
+     "alchemy_wisdom": 0.05
+    },
+    {
+     "intelligence": 100,
+     "alchemy_wisdom": 5
+    }
+   ],
+   "numbers": [
+    [
+     1.0,
+     0.5,
+     1.0
+    ],
+    [
+     100,
+     50,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc2NzgxNDI4Mjk0OCwKICAicHJvZmlsZUlkIiA6ICIyY2Y2MzExZjUyMTM0NTE2YTEyNTY3NWUwMzk3NmU2MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJmaWdodHN0b2NrIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JhZjgxOGIwNGQ2YWU5OGE2OWFkOGQ5NDYzZDhkMDM3OTkyMWQzZWI3OTIyMmUxYzYyNzJmNjUzNzJkODA3NzUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+}

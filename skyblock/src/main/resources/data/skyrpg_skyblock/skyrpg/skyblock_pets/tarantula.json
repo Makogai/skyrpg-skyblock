@@ -1,0 +1,144 @@
+{
+ "name": "Tarantula",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Webbed Cells",
+    "§cTarantula Broodfather's §4Vitality",
+    "§7reduction is §a{0}% §7less effective",
+    "§7against you.",
+    "",
+    "§6Eight Legs",
+    "§7Decreases the mana cost of Spider,",
+    "§7Tarantula, Primordial and Spirit Boots",
+    "§7by §a{1}%§7."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.3,
+     "strength": 0.1
+    },
+    {
+     "crit_chance": 10.0,
+     "crit_damage": 30.0,
+     "strength": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5
+    ],
+    [
+     30,
+     50
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Webbed Cells",
+    "§cTarantula Broodfather's §4Vitality",
+    "§7reduction is §a{0}% §7less effective",
+    "§7against you.",
+    "",
+    "§6Eight Legs",
+    "§7Decreases the mana cost of Spider,",
+    "§7Tarantula, Primordial and Spirit Boots",
+    "§7by §a{1}%§7.",
+    "",
+    "§6Arachnid Slayer",
+    "§7Gain §3+{2}☯ Combat Wisdom §7towards",
+    "§4Spiders§7."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.3,
+     "strength": 0.1
+    },
+    {
+     "crit_chance": 10.0,
+     "crit_damage": 30.0,
+     "strength": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5,
+     0.5
+    ],
+    [
+     30,
+     50,
+     50
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Chance: §9+{CRIT_CHANCE}%",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Webbed Cells",
+    "§cTarantula Broodfather's §4Vitality",
+    "§7reduction is §a{0}% §7less effective",
+    "§7against you.",
+    "",
+    "§6Eight Legs",
+    "§7Decreases the mana cost of Spider,",
+    "§7Tarantula, Primordial and Spirit Boots",
+    "§7by §a{1}%§7.",
+    "",
+    "§6Arachnid Slayer",
+    "§7Gain §3+{2}☯ Combat Wisdom §7towards",
+    "§4Spiders§7.",
+    "",
+    "§6Web Battlefield",
+    "§7Killing mobs grants §c+0.06Strength",
+    "§7and §b+0.01Magic Find §7for §a40s §7to all",
+    "§7players staying within §a20 §7blocks of",
+    "§7where they died. §8Stacks up to 10",
+    "§8times."
+   ],
+   "stats": [
+    {
+     "crit_chance": 0.1,
+     "crit_damage": 0.3,
+     "strength": 0.1
+    },
+    {
+     "crit_chance": 10.0,
+     "crit_damage": 30.0,
+     "strength": 10.0
+    }
+   ],
+   "numbers": [
+    [
+     0.3,
+     0.5,
+     0.5
+    ],
+    [
+     30,
+     50,
+     50
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTYwMjAzOTQxMzAwOSwKICAicHJvZmlsZUlkIiA6ICI3MzgyZGRmYmU0ODU0NTVjODI1ZjkwMGY4OGZkMzJmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4cWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjgxYjVjZjNhNjViZjljYWI0YmNhNTU3ODE3MjFhODZkNTY3ZDllMTA2NTUxNjQ3ZjM1YjcxNWVkZjAwYTEzZiIKICAgIH0KICB9Cn0="
+}

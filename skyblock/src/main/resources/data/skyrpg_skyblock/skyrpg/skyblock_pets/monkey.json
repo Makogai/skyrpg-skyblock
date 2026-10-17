@@ -1,0 +1,173 @@
+{
+ "name": "Monkey",
+ "type": "FORAGING",
+ "max_level": 100,
+ "rarities": {
+  "COMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Treeborn",
+    "§7Grants §a+{0} §6Foraging Fortune§7,",
+    "§7which increases your chance at",
+    "§7double logs."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.4
+    ],
+    [
+     40
+    ]
+   ]
+  },
+  "UNCOMMON": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Treeborn",
+    "§7Grants §a+{0} §6Foraging Fortune§7,",
+    "§7which increases your chance at",
+    "§7double logs."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5
+    ],
+    [
+     50
+    ]
+   ]
+  },
+  "RARE": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Treeborn",
+    "§7Grants §a+{0} §6Foraging Fortune§7,",
+    "§7which increases your chance at",
+    "§7double logs.",
+    "",
+    "§6Vine Swing",
+    "§7Grants §f{1}5Speed §7while in §aThe Park§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.5,
+     0.8
+    ],
+    [
+     50,
+     75
+    ]
+   ]
+  },
+  "EPIC": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Treeborn",
+    "§7Grants §a+{0} §6Foraging Fortune§7,",
+    "§7which increases your chance at",
+    "§7double logs.",
+    "",
+    "§6Vine Swing",
+    "§7Grants §f{1}5Speed §7while in §aThe Park§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.6,
+     1.0
+    ],
+    [
+     60,
+     100
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "§7Speed: §f+{SPEED}",
+    "",
+    "§6Treeborn",
+    "§7Grants §a+{0} §6Foraging Fortune§7,",
+    "§7which increases your chance at",
+    "§7double logs.",
+    "",
+    "§6Vine Swing",
+    "§7Grants §f{1}Speed §7while in §aThe Park§7.",
+    "",
+    "§6Evolved Axes",
+    "§7Grants §2+{2}Sweep §7while in §aThe Park§7."
+   ],
+   "stats": [
+    {
+     "intelligence": 0.5,
+     "speed": 0.2
+    },
+    {
+     "intelligence": 50.0,
+     "speed": 20.0
+    }
+   ],
+   "numbers": [
+    [
+     0.6,
+     1.0,
+     0.1
+    ],
+    [
+     60,
+     100,
+     10
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTU5MTcwMTAwNDM0NCwKICAicHJvZmlsZUlkIiA6ICIyM2YxYTU5ZjQ2OWI0M2RkYmRiNTM3YmZlYzEwNDcxZiIsCiAgInByb2ZpbGVOYW1lIiA6ICIyODA3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk2ZTE4MzZjNzNhZjQyY2YzYzI5OWZjYjU2ZDczNDJiZjMwNWY3MjBiZTNjOGNjZTJhMGZhZTE5OTc5NDIwN2EiCiAgICB9CiAgfQp9"
+}

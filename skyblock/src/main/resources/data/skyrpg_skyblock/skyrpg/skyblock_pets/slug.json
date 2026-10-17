@@ -1,0 +1,81 @@
+{
+ "name": "Slug",
+ "type": "FARMING",
+ "max_level": 100,
+ "rarities": {
+  "EPIC": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Slow and Steady",
+    "§7When fishing in the §cCrimson Isle§7,",
+    "§aSlugfish §7take §a{0}% §7less time to catch.",
+    "",
+    "§6Pest Friends",
+    "§7Grants §2+{1}Bonus Pest Chance§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.2,
+     "intelligence": 0.25
+    },
+    {
+     "defense": 20.0,
+     "intelligence": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.4
+    ],
+    [
+     50,
+     40
+    ]
+   ]
+  },
+  "LEGENDARY": {
+   "lore": [
+    "§7Defense: §a+{DEFENSE}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Slow and Steady",
+    "§7When fishing in the §cCrimson Isle§7,",
+    "§aSlugfish §7take §a{0}% §7less time to catch.",
+    "",
+    "§6Pest Friends",
+    "§7Grants §2+{1}Bonus Pest Chance§7.",
+    "",
+    "§6Repugnant Aroma",
+    "§7When farming in a plot affected by a",
+    "§aSprayonator§7, gain §6+{2}Farming",
+    "§6Fortune§7."
+   ],
+   "stats": [
+    {
+     "defense": 0.2,
+     "intelligence": 0.25
+    },
+    {
+     "defense": 20.0,
+     "intelligence": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     1,
+     0.4,
+     1
+    ],
+    [
+     50,
+     40,
+     100
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY5NzQ3MDQ0MzA4MiwKICAicHJvZmlsZUlkIiA6ICJkOGNkMTNjZGRmNGU0Y2IzODJmYWZiYWIwOGIyNzQ4OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJaYWNoeVphY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E3OWQwZmQ2NzdiNTQ1MzA5NjExMTdlZjg0YWRjMjA2ZTJjYzUwNDVjMTM0NGQ2MWQ3NzZiZjhhYzJmZTFiYSIKICAgIH0KICB9Cn0="
+}

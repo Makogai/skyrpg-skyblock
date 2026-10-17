@@ -1,0 +1,112 @@
+{
+ "name": "Snowman",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "LEGENDARY": {
+   "lore": [
+    "§7Fight alongside your pet Snowman!",
+    "",
+    "§7Damage: §c+{DAMAGE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Blizzard",
+    "§7Enemies within §a{0} §7blocks are slowed",
+    "§7by §a25% §7and deal §a{1}% §7less damage.",
+    "",
+    "§6Frostbite",
+    "§7Your freezing aura slows enemy",
+    "§7attacks causing you to take §a{2}%",
+    "§7reduced damage",
+    "",
+    "§6Snow Cannon",
+    "§7Shoots a snowball towards an enemy",
+    "§7when you attack dealing §a{3}% §7of",
+    "§7your last dealt melee damage,",
+    "§7capped at §f200,000§7. §8(1s cooldown)"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.25,
+     "damage": 0.25,
+     "strength": 0.25
+    },
+    {
+     "crit_damage": 25.0,
+     "damage": 25.0,
+     "strength": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     8.1,
+     0.1,
+     0.1,
+     10.1
+    ],
+    [
+     16,
+     10,
+     10,
+     20
+    ]
+   ]
+  },
+  "MYTHIC": {
+   "lore": [
+    "§7Fight alongside your pet Snowman!",
+    "",
+    "§7Damage: §c+{DAMAGE}",
+    "§7Strength: §c+{STRENGTH}",
+    "§7Crit Damage: §9+{CRIT_DAMAGE}%",
+    "",
+    "§6Blizzard",
+    "§7Enemies within §a{0} §7blocks are slowed",
+    "§7by §a25% §7and deal §a{1}% §7less damage.",
+    "",
+    "§6Frostbite",
+    "§7Your freezing aura slows enemy",
+    "§7attacks causing you to take §a{2}%",
+    "§7reduced damage",
+    "",
+    "§6Snow Cannon",
+    "§7Shoots a snowball towards an enemy",
+    "§7when you attack dealing §a{3}% §7of",
+    "§7your last dealt melee damage,",
+    "§7capped at §f200,000§7. §8(1s cooldown)",
+    "",
+    "§6Ouch!",
+    "§7Your snowballs have §a50% §7chance of",
+    "§7dealing §cdouble §7damage!"
+   ],
+   "stats": [
+    {
+     "crit_damage": 0.25,
+     "damage": 0.25,
+     "strength": 0.25
+    },
+    {
+     "crit_damage": 25.0,
+     "damage": 25.0,
+     "strength": 25.0
+    }
+   ],
+   "numbers": [
+    [
+     8.1,
+     0.1,
+     0.1,
+     10.1
+    ],
+    [
+     16,
+     10,
+     10,
+     20
+    ]
+   ]
+  }
+ },
+ "skin": "eyJ0aW1lc3RhbXAiOjE1NzcwMzk3ODA5OTAsInByb2ZpbGVJZCI6Ijc1MTQ0NDgxOTFlNjQ1NDY4Yzk3MzlhNmUzOTU3YmViIiwicHJvZmlsZU5hbWUiOiJUaGFua3NNb2phbmciLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYwOWUxNjFiZGMzMjVjNzE1NzJhNTQ4YTc5YmIxNTQ4MWM5MjRkNjNlNGZiODIxMzc5ZDVkZDZjODkyOWYzOWYifX19"
+}
