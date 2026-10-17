@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "Accessory Bag, Magical Power and Maxwell's powers; Hypixel's 87 pets",
+  "latest": "The End: Zealots, Summoning Eyes and the Ender Dragon fight with Hypixel's Dragon Weight loot",
   "phase": {
     "name": "Phase 2: Mid game",
-    "done": 28
+    "done": 36
   },
   "categories": [
     {
@@ -281,7 +281,7 @@
   "history": [
     {
       "date": "2026-10-17",
-      "overall": 43.5
+      "overall": 45.2
     }
   ]
 }
