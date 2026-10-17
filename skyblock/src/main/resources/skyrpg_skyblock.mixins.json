@@ -12,6 +12,8 @@
     "MobSunburnMixin",
     "NoVanillaLootMixin",
     "PlayerDataStorageMixin",
+    "PlayerQuiverMixin",
+    "QuiverAmmoMixin",
     "SpawnEggItemMixin"
   ],
   "injectors": {

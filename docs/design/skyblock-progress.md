@@ -390,6 +390,16 @@ phase so the next session can pick up where this one stopped.
       instant (no bottle back); glowstone modifiers give the XP Hypixel's item data lists.
       Not yet: Witch pet speed, God/Dungeon potions, Mixins, Potion Bag, Stun/Knockback/Burning/Experience/Wounded/
       damage effects.
+- [x] **Quiver**: `Quiver` (skyblock): per-profile 45-slot quiver (`/quiver`, `QuiverMenu` + `QuiverScreen`, saved on
+      every change); arrows in the inventory move in every second; `PlayerQuiverMixin` makes `getProjectile` return the
+      selected arrow type from the quiver when the inventory has none (on both sides: the arrow to shoot is a synced
+      attachment, so the client draws the bow); `QuiverAmmoMixin` takes one out per shot (`useAmmo`; Infinite Quiver
+      3%/level saves it). A SkyBlock bow's arrow (`ENTITY_LOAD`) is tagged with 5 + bow Damage + arrow Damage times the
+      draw (`SkyArrows`, then Strength and crits as melee): SkyBlock bows did vanilla arrow damage before. Icy Arrow
+      slows, Glue Arrow roots. Arrow Swapper cycles the type. `devtools useitem` added (it doesn't draw bows on the
+      camera yet; tested with a summoned arrow owned by the camera player).
+      Decided: 45 slots; selection only via the Arrow Swapper.
+      Not yet: arrow requirements, Bouncy/Armorshred/Explosive/Nansorb passives, arrow poisons, the hotbar quiver slot.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

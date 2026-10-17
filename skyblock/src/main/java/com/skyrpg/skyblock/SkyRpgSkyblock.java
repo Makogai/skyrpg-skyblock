@@ -80,6 +80,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.fishing.SkyFishing.init();
         com.skyrpg.skyblock.experiment.Experiments.init();
         com.skyrpg.skyblock.alchemy.SkyBrewing.init();
+        com.skyrpg.skyblock.quiver.Quiver.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

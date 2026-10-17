@@ -18,9 +18,25 @@ import net.minecraft.world.phys.Vec3;
 /**
  * What the camera client can't click, done as the player on the server:
  * {@code /devtools respawn <players>} (the death screen), {@code /devtools use <player> <pos>} (right-click the top of
- * a block with the held item) and {@code /devtools break <player> <pos>} (break a block, with all the break events).
+ * a block with the held item), {@code /devtools useitem <player> <ticks>} (use the held item, let go after that long: draw
+ * and shoot a bow) and {@code /devtools break <player> <pos>} (break a block, with all the break events).
  */
 final class RespawnCommand {
+    /** Players using an item from {@code useitem}, and the tick they let go. */
+    private static final java.util.Map<ServerPlayer, Integer> RELEASES = new java.util.HashMap<>();
+
+    static {
+        net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents.END_SERVER_TICK.register(server -> RELEASES.entrySet().removeIf(e -> {
+            if (server.getTickCount() < e.getValue()) {
+                return false;
+            }
+            if (e.getKey().isUsingItem()) {
+                e.getKey().releaseUsingItem();
+            }
+            return true;
+        }));
+    }
+
     private RespawnCommand() {
     }
 
@@ -49,6 +65,16 @@ final class RespawnCommand {
                             InteractionResult result = player.gameMode.useItemOn(player, player.level(), player.getMainHandItem(),
                                     InteractionHand.MAIN_HAND, hit);
                             ctx.getSource().sendSuccess(() -> Component.literal("Use: " + result), false);
+                            return 1;
+                        }))))
+                // "useitem": use the held item from the server (start drawing a bow, eating...) and let go after N ticks.
+                .then(Commands.literal("useitem").then(Commands.argument("player", EntityArgument.player())
+                        .then(Commands.argument("ticks", com.mojang.brigadier.arguments.IntegerArgumentType.integer(0, 200)).executes(ctx -> {
+                            ServerPlayer player = EntityArgument.getPlayer(ctx, "player");
+                            int ticks = com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "ticks");
+                            InteractionResult result = player.gameMode.useItem(player, player.level(), player.getMainHandItem(), InteractionHand.MAIN_HAND);
+                            RELEASES.put(player, ctx.getSource().getServer().getTickCount() + ticks);
+                            ctx.getSource().sendSuccess(() -> Component.literal("Use item: " + result), false);
                             return 1;
                         }))))
                 .then(Commands.literal("break").then(Commands.argument("player", EntityArgument.player())

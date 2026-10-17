@@ -22,7 +22,7 @@ PAGE_LIST = {
     "skyhaven": ["skyhaven", "npcs"],
     "economy": ["coins-and-bank"],
     "skills": ["skills-overview", "mining", "heart-of-the-mountain", "farming", "foraging", "fishing", "enchanting", "experimentation-table", "crafting", "alchemy"],
-    "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks"],
+    "gear": ["weapons", "armour-sets", "tools", "accessories", "backpacks", "quiver"],
     "combat": ["stats", "combat-basics", "bestiary"],
     "world": ["builder-station", "brainrots", "crates"],
     "companions": ["pets"],

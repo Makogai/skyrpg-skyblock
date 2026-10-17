@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "Alchemy: Hypixel's brewing and 44 potions",
+  "latest": "Quiver and SkyBlock bow damage",
   "phase": {
     "name": "Phase 2: Mid game",
-    "done": 66
+    "done": 70
   },
   "categories": [
     {
@@ -15,7 +15,7 @@
           "name": "Items & stats",
           "icon": "item/diamond_sword",
           "weight": 10,
-          "done": 60
+          "done": 64
         },
         {
           "name": "Profiles & co-ops",
