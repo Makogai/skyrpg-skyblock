@@ -56,6 +56,9 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.experiment.ExperimentMenu> EXPERIMENT = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("experiment"), new ExtendedMenuType<>(com.skyrpg.skyblock.experiment.ExperimentMenu::new,
                     com.skyrpg.skyblock.experiment.ExperimentMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.dungeon.PartyFinder> PARTY_FINDER = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("party_finder"), new ExtendedMenuType<>(com.skyrpg.skyblock.dungeon.PartyFinder::new,
+                    com.skyrpg.skyblock.dungeon.PartyFinder.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.dungeon.MalikMenu> MALIK = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("malik"), new ExtendedMenuType<>(com.skyrpg.skyblock.dungeon.MalikMenu::new,
                     com.skyrpg.skyblock.dungeon.MalikMenu.View.CODEC));

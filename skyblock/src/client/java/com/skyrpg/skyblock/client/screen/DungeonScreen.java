@@ -84,6 +84,9 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
         }
         Draw.fit(g, font, Component.literal(view.leader() ? "Pick a floor" : "Your party's leader picks the floor"), leftPos + 10, topPos + FLOOR_Y - 11, 200,
                 0.8f, 0.5f, Draw.Align.LEFT, Theme.MUTED, false);
+        boolean finderOver = SkyScreens.inside(mouseX, mouseY, finderX(), topPos + FLOOR_Y - 14, 80, 12);
+        Draw.panel(g, finderX(), topPos + FLOOR_Y - 14, 80, 12, finderOver ? Theme.CARD_HOVER : Theme.CARD, Theme.GREEN);
+        Draw.fit(g, font, Component.literal("Party Finder"), finderX() + 40, topPos + FLOOR_Y - 11, 76, 0.7f, 0.45f, Draw.Align.CENTER, Theme.GREEN, false);
         if (view.masterOpen()) {
             boolean over = SkyScreens.inside(mouseX, mouseY, modeX(), topPos + FLOOR_Y - 14, 90, 12);
             Draw.panel(g, modeX(), topPos + FLOOR_Y - 14, 90, 12, over ? Theme.CARD_HOVER : Theme.CARD, view.master() ? RED : Theme.CARD_BORDER);
@@ -118,6 +121,10 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
 
+    private int finderX() {
+        return leftPos + imageWidth - 186;
+    }
+
     private int modeX() {
         return leftPos + imageWidth - 100;
     }
@@ -134,6 +141,9 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
                 if (SkyScreens.inside(event.x(), event.y(), classX(i), topPos + CLASS_Y, classW(), 34)) {
                     return press(DungeonMenu.CLASS + i);
                 }
+            }
+            if (SkyScreens.inside(event.x(), event.y(), finderX(), topPos + FLOOR_Y - 14, 80, 12)) {
+                return press(DungeonMenu.FINDER);
             }
             if (menu.view().masterOpen() && SkyScreens.inside(event.x(), event.y(), modeX(), topPos + FLOOR_Y - 14, 90, 12)) {
                 return press(DungeonMenu.MODE);

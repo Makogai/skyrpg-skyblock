@@ -19,6 +19,8 @@ summary: Hypixel's Dungeons - the Dungeon Hub and Mort, runs through a new map e
 | Croesus | Keeps reward chests you left behind (later) |
 | Adventurer Saul | Tips |
 
+**Party Finder** (the button on Mort's screen): a party's leader lists the party for a floor (◀ ▶ to pick it); anyone not in a party can join a listing with room, and the leader is told their class. A listing goes after 30 minutes, when it's full, or when the leader leaves.
+
 Talk to Mort: click a **class** (Healer, Mage, Berserk, Archer, Tank), then a **floor**. Your party's leader picks the floor and takes everyone in. Each floor needs a **Catacombs level** (and a Combat level):
 
 | Floor | Boss | Catacombs | Combat | Map |
@@ -141,4 +143,4 @@ Undead perks cost 1,000 Undead Essence and up (to 50,000); Wither perks 100 With
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, Croesus, the Party Finder.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, Croesus.

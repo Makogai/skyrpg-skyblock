@@ -23,6 +23,7 @@ public final class DungeonMenu extends AbstractContainerMenu {
     public static final int CLASS = 100;
     public static final int FLOOR = 200;
     public static final int MODE = 300;
+    public static final int FINDER = 400;
     /** Who's looking at Master Mode on Mort's screen. */
     private static final java.util.Set<java.util.UUID> MASTER = new java.util.HashSet<>();
 
@@ -144,6 +145,10 @@ public final class DungeonMenu extends AbstractContainerMenu {
         if (id >= CLASS && id < CLASS + DungeonXp.CLASSES.size()) {
             DungeonXp.select(owner, DungeonXp.CLASSES.get(id - CLASS));
             owner.level().getServer().execute(() -> open(owner));
+            return true;
+        }
+        if (id == FINDER) {
+            owner.level().getServer().execute(() -> PartyFinder.open(owner));
             return true;
         }
         if (id == MODE) {

@@ -571,6 +571,10 @@ phase so the next session can pick up where this one stopped.
       Malik's screen). The Fairy room has an allay; when someone alive reaches it while others are ghosts, it revives
       them all, once a run.
 
+- [x] **Party Finder** (`dungeon/PartyFinder` + `PartyFinderScreen`, a button on Mort's screen): leaders list their party
+      for E/F1-F7/M1-M7; others join (the party mod's invite + accept); listings expire after 30 min, when full, or when
+      the leader goes offline.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,
