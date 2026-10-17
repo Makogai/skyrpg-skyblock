@@ -2,7 +2,7 @@
   "name": "Dr. Stone",
   "role": "Fossil Research Center",
   "color": "#FFAA00",
-  "hint": "Talk",
+  "hint": "Donate fossils",
   "skin": "minecraft:entity/player/wide/noor",
   "model": "wide",
   "dimension": "skyrpg_skyblock:glacite_tunnels",
@@ -15,6 +15,9 @@
   "sound": "minecraft:item.brush.brushing.generic",
   "greetings": [
     "Fossils! Bring me fossils.",
-    "The excavator isn't ready yet. Soon."
-  ]
+    "One of each kind, and I'll make it worth your while."
+  ],
+  "action": {
+    "type": "fossil_donate"
+  }
 }

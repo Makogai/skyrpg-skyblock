@@ -41,7 +41,7 @@ public final class Commissions {
     /** What a commission counts. */
     enum Goal {
         MITHRIL, TITANIUM, GOBLINS, GLACITE_WALKERS, HOARDER_HITS, HARD_STONE, GEMS, CHESTS, AUTOMATONS, SLUDGES, YOGS, THYSTS, TREASURITE,
-        GLACITE, TUNGSTEN, UMBER
+        GLACITE, TUNGSTEN, UMBER, MINESHAFTS, CORPSES, SCRAP, MANIACS
     }
 
     /** A commission: its name, what it wants and how many, and a zone ("" = anywhere) or, for gems, the gemstone. */
@@ -65,11 +65,20 @@ public final class Commissions {
                 case GLACITE -> "Collect " + amount + " Glacite";
                 case TUNGSTEN -> "Collect " + amount + " Tungsten";
                 case UMBER -> "Collect " + amount + " Umber";
+                case MINESHAFTS -> "Enter " + amount + (amount == 1 ? " Glacite Mineshaft" : " Glacite Mineshafts");
+                case CORPSES -> "Loot " + amount + " Frozen Corpses";
+                case SCRAP -> "Find " + amount + " Suspicious Scrap";
+                case MANIACS -> "Slay " + amount + " Glacite Maniacs in the Mineshafts";
             };
         }
     }
 
     private static final List<Task> TASKS = new ArrayList<>();
+    /** Daily Grind (a Glacite Powder perk): the day each island's first commission was claimed with it. */
+    private static final net.fabricmc.fabric.api.attachment.v1.AttachmentType<java.util.Map<String, String>> DAILY_GRIND =
+            net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry.create(com.skyrpg.skyblock.SkyRpgSkyblock.id("daily_grind"),
+                    builder -> builder.persistent(com.mojang.serialization.Codec.unboundedMap(com.mojang.serialization.Codec.STRING,
+                            com.mojang.serialization.Codec.STRING)).copyOnDeath());
     private static final List<Task> HOLLOWS_TASKS = new ArrayList<>();
     private static final List<Task> TUNNELS_TASKS = new ArrayList<>();
 
@@ -102,6 +111,10 @@ public final class Commissions {
             TUNNELS_TASKS.add(new Task(gem.toLowerCase(java.util.Locale.ROOT) + "_collector", gem + " Collector", Goal.GEMS, 1500, gem));
         }
         TUNNELS_TASKS.add(new Task("tunnels_glacite_walker_slayer", "Glacite Walker Slayer", Goal.GLACITE_WALKERS, 50, ""));
+        TUNNELS_TASKS.add(new Task("mineshaft_explorer", "Mineshaft Explorer", Goal.MINESHAFTS, 1, ""));
+        TUNNELS_TASKS.add(new Task("corpse_looter", "Corpse Looter", Goal.CORPSES, 2, ""));
+        TUNNELS_TASKS.add(new Task("scrap_collector", "Scrap Collector", Goal.SCRAP, 1, ""));
+        TUNNELS_TASKS.add(new Task("maniac_slayer", "Maniac Slayer", Goal.MANIACS, 10, ""));
     }
 
     /**
@@ -396,6 +409,28 @@ public final class Commissions {
         progress(player, Area.HOLLOWS, task -> task.goal() == Goal.CHESTS);
     }
 
+    /** Glacite Mineshafts, for the Tunnels board: a shaft entered. */
+    public static void mineshaftEntered(ServerPlayer player) {
+        progress(player, Area.TUNNELS, task -> task.goal() == Goal.MINESHAFTS);
+    }
+
+    /** A Frozen Corpse looted. */
+    public static void corpseLooted(ServerPlayer player) {
+        progress(player, Area.TUNNELS, task -> task.goal() == Goal.CORPSES);
+    }
+
+    /** Suspicious Scrap found (mined or looted). */
+    public static void scrapFound(ServerPlayer player, int count) {
+        for (int i = 0; i < count; i++) {
+            progress(player, Area.TUNNELS, task -> task.goal() == Goal.SCRAP);
+        }
+    }
+
+    /** A Glacite Maniac slain. */
+    public static void maniacSlain(ServerPlayer player) {
+        progress(player, Area.TUNNELS, task -> task.goal() == Goal.MANIACS);
+    }
+
     /** Items collected in the Glacite Tunnels, for the collectors (Glacite, Tungsten, Umber, gemstones by name). */
     public static void tunnelsCollected(ServerPlayer player, String item, int count) {
         Goal goal = switch (item) {
@@ -469,6 +504,15 @@ public final class Commissions {
         int miningXp = area.miningXp;
         Hotm.giveXp(player, xp + (bonus ? DAILY_XP : 0));
         Hotm.givePowder(player, powderType, powder);
+        // Daily Grind: the day's first commission on each island gives 500 powder for each HotM level.
+        java.util.Map<String, String> grind = new java.util.HashMap<>(player.getAttachedOrElse(DAILY_GRIND, java.util.Map.of()));
+        int grindPowder = 0;
+        if (Hotm.state(player).active("daily_grind") > 0 && !day.equals(grind.get(area.name()))) {
+            grindPowder = 500 * level;
+            grind.put(area.name(), day);
+            player.setAttached(DAILY_GRIND, java.util.Map.copyOf(grind));
+            Hotm.givePowder(player, powderType, grindPowder);
+        }
         SkillLevels.giveXp(player, SkillLevels.MINING, miningXp);
         List<Slot> slots = new ArrayList<>(board.slots());
         slots.set(index, new Slot(pick(slots, area.tasks(), player.getRandom()).id(), 0));
@@ -483,6 +527,10 @@ public final class Commissions {
                     .withStyle(ChatFormatting.DARK_PURPLE));
         }
         panel.line(Component.literal("+" + Msg.number(powder) + " " + Hotm.powderName(powderType)).withColor(Hotm.powderColor(powderType)));
+        if (grindPowder > 0) {
+            panel.line(Component.literal("+" + Msg.number(grindPowder) + " " + Hotm.powderName(powderType) + " (Daily Grind)")
+                    .withColor(Hotm.powderColor(powderType)));
+        }
         panel.line(Component.literal("+" + Msg.number(miningXp) + " Mining Experience").withStyle(ChatFormatting.DARK_AQUA));
         panel.send(player, Component.literal(task.name()).withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD));
         Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 1.0f, 1.2f);

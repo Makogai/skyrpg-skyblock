@@ -106,6 +106,11 @@ public final class Hotm {
     public static final AttachmentType<State> STATE = AttachmentRegistry.create(SkyRpgSkyblock.id("hotm"),
             builder -> builder.initializer(() -> State.EMPTY).persistent(State.CODEC).copyOnDeath());
 
+    /** Strong Arm's Mining Speed on Dwarven Metals (synced: the client works out breaking times too). */
+    public static final AttachmentType<Integer> STRONG_ARM = AttachmentRegistry.create(SkyRpgSkyblock.id("strong_arm"),
+            builder -> builder.syncWith(net.minecraft.network.codec.ByteBufCodecs.VAR_INT,
+                    net.fabricmc.fabric.api.attachment.v1.AttachmentSyncPredicate.targetOnly()));
+
     /** Running Mining Speed Boosts: the Mining Speed they add, until when. */
     private record Boost(double speed, long until) {
     }
@@ -135,17 +140,44 @@ public final class Hotm {
                 }
                 State state = state(player);
                 boolean peak = state.perk("core_of_the_mountain") >= 2;
+                boolean island = SkyMining.miningIsland(player.level().dimension());
+                boolean shaft = player.level().dimension().equals(SkyMining.GLACITE_MINESHAFTS);
+                int strongArm = 0;
                 for (HotmTree.Perk perk : HotmTree.all()) {
                     int level = state.active(perk.id());
                     if (level <= 0) {
                         continue;
                     }
+                    double value = perk.values().containsKey("stat") ? perk.number("stat", level, peak) : 0;
                     switch (perk.id()) {
-                        case "mining_speed" -> out.add(StatTypes.MINING_SPEED, perk.number("stat", level, peak));
-                        case "mining_fortune" -> out.add(StatTypes.MINING_FORTUNE, perk.number("stat", level, peak));
+                        case "mining_speed" -> out.add(StatTypes.MINING_SPEED, value);
+                        case "mining_fortune" -> out.add(StatTypes.MINING_FORTUNE, value);
+                        // The Glacite Powder perks (tiers 8 to 10).
+                        case "warm_heart" -> out.add(StatTypes.COLD_RESISTANCE, value);
+                        case "metal_head" -> out.add(StatTypes.DWARVEN_METAL_FORTUNE, value);
+                        case "mining_master" -> out.add(StatTypes.PRISTINE, value);
+                        case "miners_blessing" -> {
+                            if (island) {
+                                out.add(StatTypes.MAGIC_FIND, 30);
+                            }
+                        }
+                        case "rags_to_riches" -> {
+                            if (shaft) {
+                                out.add(StatTypes.MINING_FORTUNE, value);
+                            }
+                        }
+                        case "eager_adventurer" -> {
+                            if (shaft) {
+                                out.add(StatTypes.MINING_SPEED, value);
+                            }
+                        }
+                        case "strong_arm" -> strongArm = (int) value;
                         default -> {
                         }
                     }
+                }
+                if (player.getAttachedOrElse(STRONG_ARM, 0) != strongArm) {
+                    player.setAttached(STRONG_ARM, strongArm);
                 }
                 Boost boost = BOOSTS.get(player.getUUID());
                 if (boost != null) {
@@ -185,6 +217,32 @@ public final class Hotm {
                         target.setAttached(STATE, State.EMPTY);
                         Stats.refresh(target);
                         return 1;
+                    })))
+                    // A perk at a level, free (for testing): /sbhotm perk <player> <perk> <level>.
+                    .then(Commands.literal("perk").then(Commands.argument("player", EntityArgument.player())
+                            .then(Commands.argument("perk", StringArgumentType.word())
+                                    .suggests((ctx, builder) -> SharedSuggestionProvider.suggest(HotmTree.all().stream().map(HotmTree.Perk::id), builder))
+                                    .then(Commands.argument("level", IntegerArgumentType.integer(0)).executes(ctx -> {
+                                        ServerPlayer target = EntityArgument.getPlayer(ctx, "player");
+                                        HotmTree.Perk perk = HotmTree.get(StringArgumentType.getString(ctx, "perk"));
+                                        if (perk == null) {
+                                            return 0;
+                                        }
+                                        set(target, state(target).withPerk(perk.id(), Math.min(perk.max(), IntegerArgumentType.getInteger(ctx, "level"))));
+                                        Stats.refresh(target);
+                                        return 1;
+                                    })))))
+                    // A player's mining stats where they stand: /sbhotm stats <player>.
+                    .then(Commands.literal("stats").then(Commands.argument("player", EntityArgument.player()).executes(ctx -> {
+                        ServerPlayer target = EntityArgument.getPlayer(ctx, "player");
+                        StringBuilder out = new StringBuilder(target.getScoreboardName() + ":");
+                        for (com.skyrpg.core.stats.StatType stat : List.of(StatTypes.MINING_SPEED, StatTypes.MINING_FORTUNE, StatTypes.DWARVEN_METAL_FORTUNE,
+                                StatTypes.GEMSTONE_FORTUNE, StatTypes.PRISTINE, StatTypes.COLD_RESISTANCE, StatTypes.MAGIC_FIND)) {
+                            out.append(" ").append(stat.name()).append(" ").append(Msg.number(Stats.get(target, stat))).append(",");
+                        }
+                        out.append(" Strong Arm ").append(target.getAttachedOrElse(STRONG_ARM, 0));
+                        ctx.getSource().sendSuccess(() -> Component.literal(out.toString()), false);
+                        return 1;
                     }))));
         });
     }
@@ -193,6 +251,14 @@ public final class Hotm {
 
     public static State state(ServerPlayer player) {
         return player.getAttachedOrElse(STATE, State.EMPTY);
+    }
+
+    /** A perk's number at the level the player has it switched on at (0 when it's off or not bought). */
+    public static double perkNumber(ServerPlayer player, String id, String key) {
+        State state = state(player);
+        int level = state.active(id);
+        HotmTree.Perk perk = HotmTree.get(id);
+        return level <= 0 || perk == null ? 0 : perk.number(key, level, state.perk("core_of_the_mountain") >= 2);
     }
 
     private static void set(ServerPlayer player, State state) {
@@ -396,7 +462,8 @@ public final class Hotm {
         int seconds = (int) perk.number("duration", 1, peak);
         double base = Stats.get(player, StatTypes.MINING_SPEED);
         BOOSTS.put(player.getUUID(), new Boost(base * percent / 100, now + seconds * 20L));
-        COOLDOWNS.put(player.getUUID(), now + ABILITY_COOLDOWN);
+        // Mineshaft Mayhem can take a quarter off the cooldown.
+        COOLDOWNS.put(player.getUUID(), now + Math.round(ABILITY_COOLDOWN * com.skyrpg.skyblock.glacite.Mineshafts.cooldownFactor(player)));
         Stats.refresh(player);
         player.sendSystemMessage(Component.literal("You used your ").withStyle(ChatFormatting.GREEN)
                 .append(Component.literal(perk.name()).withStyle(ChatFormatting.GOLD))

@@ -34,9 +34,30 @@ The tree is Hypixel's: **46 perks** on a grid, tier 1 at the bottom, tier 10 at 
 - **Right-click** a perk to switch it off (it keeps its level) or back on.
 - Hover any perk for what it gives at its level and the next, and what the next level costs.
 
-Lower perks are paid with **Mithril Powder** (from the Dwarven Mines), higher ones with **Gemstone** and **Glacite Powder** (from the Crystal Hollows and Glacite Tunnels, which aren't here yet).
+Lower perks are paid with **Mithril Powder** (from the Dwarven Mines), higher ones with **Gemstone Powder** ([Crystal Hollows](crystal-hollows)) and the top three tiers with **Glacite Powder** ([Glacite Tunnels](glacite-tunnels)).
 
-What works now: **Mining Speed** (+20 Mining Speed a level), **Mining Fortune** (+2 a level), **Titanium Insanium** (a bigger Titanium chance), **Powder Buff** (more Mithril Powder), **Quick Forge** (shorter forging), **Core of the Mountain** (below) and the **Mining Speed Boost** ability. The other perks show what they do but don't do it yet.
+What works now: **Mining Speed** (+20 Mining Speed a level), **Mining Fortune** (+2 a level), **Titanium Insanium** (a bigger Titanium chance), **Powder Buff** (more powder), **Quick Forge** (shorter forging), **Great Explorer** (better treasure chests in the Hollows), **Core of the Mountain** (below) and the **Mining Speed Boost** ability, and the Glacite Powder perks below. The other perks show what they do but don't do it yet.
+
+### The Glacite Powder perks (tiers 8 to 10)
+
+| Perk | What it does |
+| --- | --- |
+| Warm Heart | Up to +20 Cold Resistance |
+| Metal Head | Up to +100 Dwarven Metal Fortune |
+| Mining Master | Up to +1 Pristine |
+| Miner's Blessing | +30 Magic Find on the mining islands |
+| Strong Arm | Up to +500 Mining Speed on Dwarven Metals (Mithril, Titanium, Glacite, Tungsten, Umber) |
+| Rags to Riches | Up to +200 Mining Fortune in the Glacite Mineshafts |
+| Eager Adventurer | Up to +400 Mining Speed in the Glacite Mineshafts |
+| Surveyor | Up to +15% chance to find a [Glacite Mineshaft](glacite-tunnels#glacite-mineshafts) |
+| No Stone Unturned | Up to +25% chance to find Suspicious Scrap in the mineshafts |
+| Gifts from the Departed | Up to a 20% chance at one more item from a Frozen Corpse |
+| Dead Man's Chest | Up to a 25% chance of one more Frozen Corpse when you enter a mineshaft |
+| Vanguard Seeker | Up to +50% chance that a mineshaft is the Fairy mineshaft (Vanguard Corpses) |
+| Mineshaft Mayhem | A random buff each time you enter a mineshaft: +5% scrap chance, +100 Mining Fortune, +200 Mining Speed, +10 Cold Resistance or -25% Pickaxe Ability cooldown |
+| Daily Grind | Your first commission each day on each mining island gives 500 powder for each HotM level |
+
+Not yet: Steady Hand (Gemstone Spread), Crystalline (crystals in mineshafts), and the Gemstone Infusion and Sheer Force abilities.
 
 ## Core of the Mountain
 
@@ -53,7 +74,7 @@ Unlocking a Pickaxe Ability perk selects it; click another unlocked one to switc
 | Powder | From |
 | --- | --- |
 | Mithril Powder | Mining Mithril in the Dwarven Mines (1, 2 or 5 a block), 500 per Commission |
-| Gemstone Powder | The Crystal Hollows (not here yet) |
-| Glacite Powder | The Glacite Tunnels (not here yet) |
+| Gemstone Powder | Gemstones in the [Crystal Hollows](crystal-hollows) and the Glacite Tunnels, treasure chests, Hollows Commissions |
+| Glacite Powder | Glacite, Tungsten and Umber in the [Glacite Tunnels](glacite-tunnels), Tunnels Commissions, the Glacite Mineshafts, the Fossil Excavator, Dr. Stone |
 
-Admins: `/sbhotm xp|powder|reset`.
+Admins: `/sbhotm xp|powder|reset`, `/sbhotm perk <player> <perk> <level>` (free, for testing) and `/sbhotm stats <player>` (mining stats).

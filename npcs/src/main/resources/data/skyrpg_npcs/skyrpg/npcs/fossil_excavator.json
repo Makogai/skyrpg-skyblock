@@ -1,0 +1,23 @@
+{
+  "name": "Fossil Excavator",
+  "role": "Fossil Research Center",
+  "color": "#FFAA00",
+  "hint": "Excavate",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    -11.5,
+    121.0,
+    -111.5
+  ],
+  "yaw": 288.4,
+  "sound": "minecraft:item.brush.brushing.gravel",
+  "greetings": [
+    "A chisel and a Suspicious Scrap. Let's see what's in there.",
+    "Careful now. Fossils crumble."
+  ],
+  "action": {
+    "type": "fossil_excavator"
+  }
+}

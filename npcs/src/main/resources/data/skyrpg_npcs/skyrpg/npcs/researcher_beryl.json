@@ -2,7 +2,7 @@
   "name": "Researcher Beryl",
   "role": "Fossil Research Center",
   "color": "#55FF55",
-  "hint": "Talk",
+  "hint": "Trade",
   "skin": "minecraft:entity/player/slim/zuri",
   "model": "slim",
   "dimension": "skyrpg_skyblock:glacite_tunnels",
@@ -15,6 +15,9 @@
   "sound": "minecraft:item.book.page_turn",
   "greetings": [
     "Suspicious Scrap turns up in the mineshafts.",
-    "We're still setting up."
-  ]
+    "Fossil Essence buys more scrap. I'll salvage what you don't need."
+  ],
+  "action": {
+    "type": "fossil_research"
+  }
 }

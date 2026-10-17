@@ -137,6 +137,7 @@ public final class Mineshafts {
         final Map<UUID, Integer> corpses = new HashMap<>();
         final Map<UUID, Long> entered = new HashMap<>();
         final List<Mob> maniacs = new ArrayList<>();
+        int corpsesPlaced;
 
         Shaft(int slot, Kind kind) {
             this.slot = slot;
@@ -185,6 +186,27 @@ public final class Mineshafts {
             return InteractionResult.PASS;
         });
         ServerTickEvents.END_SERVER_TICK.register(Mineshafts::tick);
+        com.skyrpg.core.stats.Stats.registerSource(new com.skyrpg.core.stats.Stats.Source() {
+            @Override
+            public String name() {
+                return "Mineshaft Mayhem";
+            }
+
+            @Override
+            public void contribute(ServerPlayer player, com.skyrpg.core.stats.Stats.Contributor out) {
+                Mayhem buff = MAYHEM.get(player.getUUID());
+                if (buff == null || !player.level().dimension().equals(LEVEL)) {
+                    return;
+                }
+                switch (buff) {
+                    case FORTUNE -> out.add(com.skyrpg.core.stats.StatTypes.MINING_FORTUNE, 100);
+                    case SPEED -> out.add(com.skyrpg.core.stats.StatTypes.MINING_SPEED, 200);
+                    case COLD -> out.add(com.skyrpg.core.stats.StatTypes.COLD_RESISTANCE, 10);
+                    default -> {
+                    }
+                }
+            }
+        });
         // Shafts don't outlast the server: everyone inside goes back to the Base Camp, and the shafts are cleared away.
         net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
             ServerLevel level = server.getLevel(LEVEL);
@@ -221,6 +243,7 @@ public final class Mineshafts {
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
             if (entity.entityTags().contains(MANIAC) && source.getEntity() instanceof ServerPlayer killer) {
                 maniacDrops(killer, entity);
+                com.skyrpg.skyblock.mining.Commissions.maniacSlain(killer);
             }
         });
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> dispatcher.register(Commands.literal("sbmineshaft")
@@ -277,7 +300,9 @@ public final class Mineshafts {
             return;
         }
         int left = player.getAttachedOrElse(PITY_LEFT, PITY) - points;
-        boolean found = left <= 0 || player.getRandom().nextInt(2000) == 0;
+        // Surveyor (a Glacite Powder perk) makes it likelier.
+        double chance = (1 + Hotm.perkNumber(player, "surveyor", "stat") / 100) / 2000;
+        boolean found = left <= 0 || player.getRandom().nextDouble() < chance;
         player.setAttached(PITY_LEFT, found ? PITY : left);
         if (found) {
             openPortal(player, pickKind(player));
@@ -310,6 +335,11 @@ public final class Mineshafts {
     private static Kind pickKind(ServerPlayer player) {
         Kind last = LAST_KIND.get(player.getUUID());
         RandomSource random = player.getRandom();
+        // Vanguard Seeker (a Glacite Powder perk): the Fairy mineshaft, with its Vanguard Corpses, comes up more.
+        double vanguard = Hotm.perkNumber(player, "vanguard_seeker", "stat") / 100;
+        if (random.nextDouble() < vanguard / Kind.values().length) {
+            return Kind.FAIRY;
+        }
         if (last != null && random.nextInt(3) == 0) {
             return last;
         }
@@ -404,14 +434,52 @@ public final class Mineshafts {
         if (level == null) {
             return;
         }
-        shaft.entered.putIfAbsent(player.getUUID(), level.getGameTime());
+        if (shaft.entered.putIfAbsent(player.getUUID(), level.getGameTime()) == null) {
+            com.skyrpg.skyblock.mining.Commissions.mineshaftEntered(player);
+            firstEntry(player, level, shaft);
+        }
         player.teleport(new net.minecraft.world.level.portal.TeleportTransition(level, Vec3.atBottomCenterOf(shaft.origin.offset(3, 0, 0)), Vec3.ZERO,
                 -90, 0, Set.of(), net.minecraft.world.level.portal.TeleportTransition.DO_NOTHING));
         player.resetFallDistance();
+        com.skyrpg.core.stats.Stats.refresh(player);
         Notice.of(Notice.Kind.MINING).tag("MINESHAFT").color(0xB98CFF).send(player, Component.literal("You entered a ")
                 .append(Component.literal(shaft.kind.title() + " Mineshaft").withStyle(ChatFormatting.AQUA))
                 .append(Component.literal(". Loot the corpses, mine the ore, mind the Cold!").withStyle(ChatFormatting.GRAY)));
         Msg.playSound(player, SoundEvents.PORTAL_TRAVEL, 0.3f, 1.6f);
+    }
+
+    /** Mineshaft Mayhem's buffs: one at random each time you enter. */
+    enum Mayhem {
+        SCRAP("+5% chance to find Suspicious Scrap"), FORTUNE("+100 Mining Fortune"), SPEED("+200 Mining Speed"),
+        COLD("+10 Cold Resistance"), COOLDOWN("-25% Pickaxe Ability cooldown");
+
+        final String text;
+
+        Mayhem(String text) {
+            this.text = text;
+        }
+    }
+
+    private static final Map<UUID, Mayhem> MAYHEM = new HashMap<>();
+
+    /** The Glacite Powder perks that act on entering: Dead Man's Chest (maybe one more corpse), Mineshaft Mayhem (a buff). */
+    private static void firstEntry(ServerPlayer player, ServerLevel level, Shaft shaft) {
+        if (player.getRandom().nextDouble() < Hotm.perkNumber(player, "dead_mans_chest", "stat") / 100) {
+            addCorpse(level, shaft, player.getRandom());
+            Notice.of(Notice.Kind.MINING).tag("DEAD MAN'S CHEST").color(0x55FFFF).send(player,
+                    Component.literal("An extra Frozen Corpse is in this mineshaft!").withStyle(ChatFormatting.AQUA));
+        }
+        if (Hotm.state(player).active("mineshaft_mayhem") > 0) {
+            Mayhem buff = Mayhem.values()[player.getRandom().nextInt(Mayhem.values().length)];
+            MAYHEM.put(player.getUUID(), buff);
+            Notice.of(Notice.Kind.MINING).tag("MINESHAFT MAYHEM").color(0xB98CFF).send(player,
+                    Component.literal("You got " + buff.text + " in this mineshaft!").withStyle(ChatFormatting.LIGHT_PURPLE));
+        }
+    }
+
+    /** What the pickaxe ability's cooldown is multiplied by (Mineshaft Mayhem's cooldown buff: 0.75). */
+    public static double cooldownFactor(ServerPlayer player) {
+        return MAYHEM.get(player.getUUID()) == Mayhem.COOLDOWN && player.level().dimension().equals(LEVEL) ? 0.75 : 1;
     }
 
     /** Extra Cold vulnerability in a shaft: +0.25 for every 150 seconds since you went in. */
@@ -467,6 +535,17 @@ public final class Mineshafts {
         if (level == null) {
             return;
         }
+        // Mayhem buffs end with the visit.
+        MAYHEM.keySet().removeIf(id -> {
+            ServerPlayer player = server.getPlayerList().getPlayer(id);
+            if (player != null && player.level().dimension().equals(LEVEL)) {
+                return false;
+            }
+            if (player != null) {
+                com.skyrpg.core.stats.Stats.refresh(player);
+            }
+            return true;
+        });
         // Someone in a shaft that isn't there any more (it was cleared, or the server restarted): back to the Base Camp.
         for (ServerPlayer player : List.copyOf(level.players())) {
             if (shaftOf(player) == null) {
@@ -569,14 +648,21 @@ public final class Mineshafts {
         // Corpses: one to three, in the rooms (a Fairy shaft's are Vanguards).
         int count = 1 + random.nextInt(3);
         for (int i = 0; i < count; i++) {
-            int[] room = rooms.get(i % rooms.size());
-            String kind = shaft.kind == Kind.FAIRY ? "VANGUARD" : random.nextInt(2) == 0 ? "LAPIS" : random.nextInt(2) == 0 ? "UMBER" : "TUNGSTEN";
-            corpse(level, new Vec3(room[0] + 0.5 + (i / rooms.size()) * 2, Y, (room[1] > 0 ? 10 : -10) + 0.5), kind);
+            addCorpse(level, shaft, random);
         }
         // Glacite Maniacs: three, at the far end and in the rooms.
         maniac(level, shaft, new Vec3(x0 + LENGTH - 3 + 0.5, Y, 0.5), random);
         maniac(level, shaft, new Vec3(rooms.get(0)[0] + 0.5, Y, 7.5), random);
         maniac(level, shaft, new Vec3(rooms.get(1)[0] + 0.5, Y, -7.5), random);
+    }
+
+    /** One more corpse, in the next free spot along the side rooms (Lapis half the time, else Umber or Tungsten). */
+    private static void addCorpse(ServerLevel level, Shaft shaft, RandomSource random) {
+        String kind = shaft.kind == Kind.FAIRY ? "VANGUARD" : random.nextInt(2) == 0 ? "LAPIS" : random.nextInt(2) == 0 ? "UMBER" : "TUNGSTEN";
+        int i = shaft.corpsesPlaced++;
+        int x = shaft.origin.getX() + 15 * (1 + i % 3);
+        int side = i % 3 == 1 ? -1 : 1;
+        corpse(level, new Vec3(x + 0.5 + (i / 3) * 2, Y, side * 10 + 0.5), kind);
     }
 
     private static BlockState rock(Shaft shaft, RandomSource random) {
@@ -688,6 +774,10 @@ public final class Mineshafts {
         }
         RandomSource random = player.getRandom();
         int rolls = corpse.min() + random.nextInt(corpse.max() - corpse.min() + 1);
+        // Gifts from the Departed (a Glacite Powder perk): a chance at one more.
+        if (random.nextDouble() < Hotm.perkNumber(player, "gifts_from_the_departed", "stat") / 100) {
+            rolls++;
+        }
         double total = corpse.loot().stream().mapToDouble(Loot::weight).sum();
         // Each roll is one pick from the whole table; the same item twice is one line.
         Map<String, Integer> won = new java.util.LinkedHashMap<>();
@@ -719,6 +809,10 @@ public final class Mineshafts {
         if (shaft != null) {
             shaft.corpses.merge(player.getUUID(), 1, Integer::sum);
         }
+        com.skyrpg.skyblock.mining.Commissions.corpseLooted(player);
+        if (won.containsKey("SUSPICIOUS_SCRAP")) {
+            com.skyrpg.skyblock.mining.Commissions.scrapFound(player, won.get("SUSPICIOUS_SCRAP"));
+        }
         // The body and its label go too.
         for (Entity near : player.level().getEntities(box, box.getBoundingBox().inflate(0.5, 3, 0.5))) {
             if ((near instanceof Display.TextDisplay || near instanceof ArmorStand) && near.entityTags().contains(TAG)) {
@@ -746,10 +840,13 @@ public final class Mineshafts {
             return;
         }
         int found = shaft.scraps.getOrDefault(player.getUUID(), 0);
-        if (player.getRandom().nextInt(200 << Math.min(found, 10)) != 0) {
+        // No Stone Unturned (a Glacite Powder perk) and Mineshaft Mayhem's scrap buff make it likelier.
+        double bonus = Hotm.perkNumber(player, "no_stone_unturned", "stat") + (MAYHEM.get(player.getUUID()) == Mayhem.SCRAP ? 5 : 0);
+        if (player.getRandom().nextDouble() >= (1 + bonus / 100) / (200 << Math.min(found, 10))) {
             return;
         }
         shaft.scraps.put(player.getUUID(), found + 1);
+        com.skyrpg.skyblock.mining.Commissions.scrapFound(player, 1);
         ItemStack scrap = stack("SUSPICIOUS_SCRAP", 1);
         if (!scrap.isEmpty()) {
             com.skyrpg.core.event.ItemGains.give(player, scrap, com.skyrpg.core.event.ItemGains.Source.MINING);

@@ -69,6 +69,7 @@ public final class GlaciteTunnels {
         Actions.register("base_camp", (player, params) -> travel(player));
         Actions.register("leave_base_camp", (player, params) -> leave(player));
         Mineshafts.init();
+        Fossils.init();
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (server.getTickCount() % 20 == 0) {
                 server.getPlayerList().getPlayers().forEach(GlaciteTunnels::second);

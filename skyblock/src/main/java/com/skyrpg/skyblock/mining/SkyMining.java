@@ -257,6 +257,11 @@ public final class SkyMining {
             return 0.0f;
         }
         double speed = Math.max(1, Stats.get(player, StatTypes.MINING_SPEED));
+        // Strong Arm (a Glacite Powder perk): more Mining Speed on Dwarven Metals (Mithril, Titanium, Glacite, Tungsten, Umber).
+        Metal metal = metal(player.level(), state);
+        if (metal != null && !metal.powderType().equals(Hotm.GEMSTONE) && !metal.item().equals("HARD_STONE")) {
+            speed += player.getAttachedOrElse(Hotm.STRONG_ARM, 0);
+        }
         if (speed > (info.ore() ? 60 : 30) * info.strength()) {
             return 1.0f;
         }

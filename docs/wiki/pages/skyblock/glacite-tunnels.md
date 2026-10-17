@@ -3,7 +3,7 @@ title: Glacite Tunnels
 category: skyblock
 order: 4
 icon: minecraft:packed_ice
-summary: Hypixel's Glacite Tunnels under the Dwarven Mines - the Dwarven Base Camp, the Cold, Glacite, Tungsten, Umber, four new gemstones, their commissions and the Glacite Mineshafts.
+summary: Hypixel's Glacite Tunnels under the Dwarven Mines - the Dwarven Base Camp, the Cold, Glacite, Tungsten, Umber, four new gemstones, their commissions, the Glacite Mineshafts and the Fossil Research Center.
 ---
 The **Glacite Tunnels** are a maze of icy tunnels below the [Dwarven Mines](dwarven-mines), for miners at the top of the [Heart of the Mountain](heart-of-the-mountain). At their north end is the **Dwarven Base Camp**, a warm outpost around a campfire.
 
@@ -18,7 +18,7 @@ At the Base Camp:
 | Emissary Lissandra | The Tunnels' [commissions](dwarven-mines#commissions) |
 | Ticket Master | Back to the Dwarven Mines |
 | Cold Enjoyer, Dulin, Scout Plinius | Tips about the Cold and the Tunnels |
-| Dr. Stone, Researcher Beryl | The Fossil Research Center (fossils come later) |
+| Dr. Stone, Researcher Beryl, Fossil Excavator | The [Fossil Research Center](#fossil-research-center) |
 
 ## The Cold
 
@@ -50,7 +50,7 @@ Mining Fortune and Dwarven Metal Fortune give more Glacite, Tungsten and Umber; 
 
 ## Commissions
 
-Emissary Lissandra's board: collect 1,500 Glacite, Tungsten, Umber, Aquamarine, Citrine, Onyx or Peridot, or slay 50 Glacite Walkers (in the Dwarven Mines). Each pays **400 HotM XP (750 at HotM 10), 1,500 Glacite Powder (3,000 at HotM 10) and 25,000 Mining XP**.
+Emissary Lissandra's board: collect 1,500 Glacite, Tungsten, Umber, Aquamarine, Citrine, Onyx or Peridot, slay 50 Glacite Walkers (in the Dwarven Mines), enter a Glacite Mineshaft, loot 2 Frozen Corpses, find a Suspicious Scrap, or slay 10 Glacite Maniacs. Each pays **400 HotM XP (750 at HotM 10), 1,500 Glacite Powder (3,000 at HotM 10) and 25,000 Mining XP**.
 
 ## Glacite Mineshafts
 
@@ -66,5 +66,26 @@ A mineshaft is yours alone: a long tunnel with side rooms, its walls full of one
 
 The Cold keeps building in there, and faster the longer you stay (+0.25 vulnerability every 150 seconds). The **ladder** at the start takes you back to the Base Camp with a Glacite Powder bonus: **1,000, plus 500 for each Suspicious Scrap, 250 for each corpse you looted and 10 for each point of Cold**. Freezing takes you back too, without the bonus. A mineshaft nobody is in is gone after a minute.
 
+The [Heart of the Mountain](heart-of-the-mountain)'s Glacite Powder perks help here: Surveyor, No Stone Unturned, Gifts from the Departed, Dead Man's Chest, Vanguard Seeker, Mineshaft Mayhem, Rags to Riches and Eager Adventurer.
+
+## Fossil Research Center
+
+The hut at the west of the Base Camp, with the **Fossil Excavator** by its door.
+
+**The Fossil Excavator** (HotM 7) digs for treasure and fossils. You need a **chisel** (kept) and a **Suspicious Scrap** (used up). The dig is a 9 x 6 bed of dirt: each click uses one of your chisel's charges and uncovers a tile.
+
+| Chisel | Charges | Highlight chance |
+| --- | --- | --- |
+| Chisel | 16 | 25% |
+| Reinforced Chisel | 18 | 60% |
+| Glacite-Plated Chisel | 20 | 60% |
+| Perfect Chisel | 22 | 60% |
+
+Uncovering plain dirt can **highlight** a tile (a gold star) with something under it: a treasure, or, once you've found a fossil, more of the fossil. 8 to 11 treasures are buried in each dig: Fossil Essence (10-40), Glacite Powder (1,000-10,000), Enchanted Glacite, Umber or Tungsten, Flawed or Fine Tunnels gemstones, Paleontologist books, and rarely Fossil the Fish. One dig in ten also hides a **fossil** (Clubbed, Footprint, Spine, Tusk, Ugly or Webbed): uncover all of it to get it; a part of it gives Fossil Essence (half a point for each percent). When the charges run out (or you press Finish) you get everything you uncovered.
+
+**Dr. Stone** takes one of each kind of fossil (the six above and the Claw Fossil): each gives 25,000 Mining XP, 25,000 Glacite Powder, 5,000 HotM XP and 10 SkyBlock XP, and all seven another 50,000 Glacite Powder and 10,000 HotM XP.
+
+**Researcher Beryl** sells Suspicious Scrap for 100 Fossil Essence, and salvages a scrap for 5 or a fossil Dr. Stone already has for 50 (the Claw 25). `/essence` shows your essence.
+
 > [!NOTE]
-> Not yet: fossils and the Fossil Excavator, the Great Glacite Lake, Grandpa Wolf and the Fossil Muncher, and the powder perks that need Glacite Powder.
+> Not yet: chisel gemstone slots, the Fossil Muncher, the Great Glacite Lake and Grandpa Wolf.

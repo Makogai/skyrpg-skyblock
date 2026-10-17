@@ -435,6 +435,27 @@ phase so the next session can pick up where this one stopped.
       sends everyone inside to the Base Camp and clears every shaft. `/sbmineshaft portal <player>` for admins.
       Decided: our own shaft layout (Hypixel's rooms aren't data we have); no Littlefoot kind (no data for it); the
       Glacite Mage is a zombie; corpses stand (frozen upright) rather than lie down.
+- [x] **Glacite part 3: perks, mineshaft commissions, the Fossil Research Center**. HotM stat source: Warm Heart (Cold
+      Resistance), Metal Head (Dwarven Metal Fortune), Mining Master (Pristine), Miner's Blessing (+30 Magic Find on
+      mining islands), Rags to Riches / Eager Adventurer (Fortune / Speed in mineshafts); Strong Arm through a synced
+      `Hotm.STRONG_ARM` value read by `SkyMining.progress` on both sides (Dwarven Metals only). `Mineshafts`: Surveyor,
+      No Stone Unturned, Gifts from the Departed (one more roll), Dead Man's Chest (one more corpse on first entry),
+      Vanguard Seeker (Fairy kind), Mineshaft Mayhem (one of five buffs per visit, a stat source; the cooldown buff
+      through `Mineshafts.cooldownFactor`). `Commissions`: Daily Grind (500 x HotM level powder for the day's first
+      commission per island, a `daily_grind` attachment); Tunnels tasks Mineshaft Explorer (1), Corpse Looter (2),
+      Scrap Collector (1), Maniac Slayer (10). `essence/Essence`: Hypixel's nine essences as a profile currency
+      (`/essence`, `/sbessence give`). `glacite/Fossils` + `ExcavatorMenu` + `ExcavatorScreen`: the Fossil Excavator NPC
+      (HotM 7) takes the best chisel (16/18/20/22 charges, highlight 25% / 60%) and a Suspicious Scrap; a 9 x 6 dig on
+      the server, 8-11 treasures (Fossil Essence, Glacite Powder, Enchanted Glacite/Umber/Tungsten, Flawed/Fine gems,
+      Paleontologist I, Fossil the Fish), a fossil one dig in ten (six shapes); uncovering dirt can highlight a treasure
+      (or more of a found fossil); a whole fossil is kept, a part pays Fossil Essence; the rest of a missed fossil shows
+      at the end. Dr. Stone takes each fossil once (25k Mining XP, 25k Glacite Powder, 5k HotM XP, 10 SkyBlock XP; all
+      seven +50k / +10k). Researcher Beryl (chat buttons, Base Camp only): scrap for 100 Fossil Essence, salvage one scrap
+      (5) or already-donated fossils (50, Claw 25). Admin: `/sbhotm perk|stats`.
+      Decided: highlight chances (Hypixel's aren't documented beyond Reinforced's +60%); fossil shapes are ours; treasure
+      weights are ours from the wiki's list; no Fossil Dust; chisel gem slots later.
+      Not yet: Steady Hand, Crystalline, Gemstone Infusion, Sheer Force (Pristine and Mining Spread have no effect yet),
+      the Fossil Muncher, the Great Glacite Lake, Grandpa Wolf.
 - [ ] **Runecrafting and Social** (decided 2026-10-17: deferred). Both are cosmetic on Hypixel (runes are particle
       effects; Social barely gives anything), so they wait until the gameplay systems are in. NEU has the 147 rune items
       (type, tier, slot, Runecrafting level, text) for when they come.
