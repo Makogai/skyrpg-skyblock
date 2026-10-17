@@ -102,6 +102,7 @@ final class Puzzles {
             if (by != null) {
                 Secrets.reward(by, run);
             }
+            Blessings.bless(run, by);
         }
 
         void fail(ServerPlayer by, String why) {

@@ -134,6 +134,16 @@ final class Run {
     BossFight boss;
     Score.Result result;
     boolean failed;
+    /** Blessings the party found, by kind (levels add up). */
+    final Map<String, Integer> blessings = new LinkedHashMap<>();
+    /** Crypt Undead alive, and how many were killed (bonus score, up to 5). */
+    final Set<UUID> cryptMobs = new HashSet<>();
+    int crypts;
+    final Set<UUID> minibosses = new HashSet<>();
+    /** Floor VI+: the secret chest that's a Mimic, and the Mimic once it's out. */
+    BlockPos mimicChest;
+    UUID mimic;
+    boolean mimicKilled;
 
     Run(long id, int slot, Floors.Floor floor, ServerLevel level, List<UUID> players, RandomSource random) {
         this.id = id;
@@ -172,6 +182,16 @@ final class Run {
         }
         if (buildStep == rooms.length + 1) {
             BossFight.buildArena(this);
+            // Floor VI and up: one secret chest is a Mimic.
+            if (floor.number() >= 6) {
+                List<BlockPos> chests = new ArrayList<>();
+                for (RoomState state : rooms) {
+                    chests.addAll(state.secretChests);
+                }
+                if (!chests.isEmpty()) {
+                    mimicChest = chests.get(random.nextInt(chests.size()));
+                }
+            }
             buildStep++;
             return false;
         }
@@ -388,11 +408,28 @@ final class Run {
             default -> {
             }
         }
+        // From Floor II a room's elite can be a miniboss; any normal room can hide a Crypt Undead (up to 8 a run).
+        boolean miniboss = state.room.type() == Layout.Type.NORMAL && floor.number() >= 2 && random.nextInt(5) < 2;
+        if (state.room.type() == Layout.Type.NORMAL && cryptMobs.size() + crypts < 8 && random.nextInt(10) < 3) {
+            List<Spot> mobSpots = state.spots.stream().filter(s -> s.kind().equals("mob")).toList();
+            if (!mobSpots.isEmpty()) {
+                Mob crypt = DungeonMobs.spawn(level, mobSpots.get(random.nextInt(mobSpots.size())).pos(), "crypt", false, floor, tag);
+                if (crypt != null) {
+                    crypt.setCustomName(Component.literal("Crypt Undead").withStyle(ChatFormatting.DARK_GREEN));
+                    cryptMobs.add(crypt.getUUID());
+                }
+            }
+        }
         for (Spot spot : state.spots) {
             switch (spot.kind()) {
                 case "mob" -> {
                     boolean star = spot.data().getBooleanOr("star", true);
-                    Mob mob = DungeonMobs.spawn(level, spot.pos(), spot.data().getStringOr("role", "zombie"), star, floor, tag);
+                    String role = spot.data().getStringOr("role", "zombie");
+                    Mob mob = miniboss && role.equals("elite") ? DungeonMobs.miniboss(level, spot.pos(), floor, tag)
+                            : DungeonMobs.spawn(level, spot.pos(), role, star, floor, tag);
+                    if (mob != null && miniboss && role.equals("elite")) {
+                        minibosses.add(mob.getUUID());
+                    }
                     if (mob != null && star) {
                         state.stars.add(mob.getUUID());
                         state.starCount++;
@@ -440,6 +477,20 @@ final class Run {
         if (secretBats.remove(id)) {
             secretFound(secretRoom.remove(id), killer);
             return;
+        }
+        if (cryptMobs.remove(id)) {
+            crypts++;
+            broadcast(Component.literal("Crypt Undead killed! (" + Math.min(5, crypts) + "/5 bonus)").withStyle(ChatFormatting.DARK_GREEN));
+            return;
+        }
+        if (id.equals(mimic)) {
+            mimicKilled = true;
+            broadcast(Component.literal("Mimic Killed!").withStyle(ChatFormatting.RED, ChatFormatting.BOLD));
+        }
+        if (minibosses.remove(id)) {
+            broadcast(Component.literal(entity.getName().getString().replace(DungeonMobs.STAR_GLYPH, "") + " has been defeated!")
+                    .withStyle(ChatFormatting.YELLOW));
+            Blessings.bless(this, killer);
         }
         for (RoomState state : rooms) {
             if (state.puzzle != null) {
@@ -565,6 +616,32 @@ final class Run {
             finder.sendOverlayMessage(Component.literal(state.secretsFound + "/" + state.secrets + " Secrets").withStyle(ChatFormatting.AQUA));
             Msg.playSound(finder, SoundEvents.EXPERIENCE_ORB_PICKUP, 1.0f, 1.4f);
         }
+    }
+
+    /** The Mimic: a secret chest that turns out to be alive. */
+    void releaseMimic(ServerPlayer opener, BlockPos pos) {
+        mimicChest = null;
+        level.removeBlock(pos, false);
+        Mob mimic = (Mob) net.minecraft.world.entity.EntityTypes.ZOMBIE.create(level, net.minecraft.world.entity.EntitySpawnReason.EVENT);
+        if (mimic == null) {
+            return;
+        }
+        mimic.snapTo(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, 0, 0);
+        double health = floor.master() ? 150_000_000 : 1_000_000 + 1_000_000 * Math.max(0, floor.number() - 6);
+        com.skyrpg.skyblock.zone.Zones.dressAs(mimic, "Mimic", 200 + (floor.master() ? 200 : 0), health, 2_000 * Math.pow(1.5, floor.number()), 100);
+        if (mimic instanceof net.minecraft.world.entity.monster.zombie.Zombie zombie) {
+            zombie.setBaby(true);
+        }
+        mimic.setItemSlot(net.minecraft.world.entity.EquipmentSlot.HEAD, new ItemStack(Items.CHEST));
+        mimic.setPersistenceRequired();
+        mimic.addTag(DungeonMobs.TAG);
+        mimic.addTag(tag);
+        mimic.addTag(com.skyrpg.skyblock.zone.Zones.FIGHTABLE_TAG);
+        level.addFreshEntity(mimic);
+        mimic.setTarget(opener);
+        this.mimic = mimic.getUUID();
+        broadcast(Component.literal("That chest was a Mimic!").withStyle(ChatFormatting.RED));
+        Msg.playSound(opener, SoundEvents.ZOMBIE_ATTACK_WOODEN_DOOR, 1.0f, 0.6f);
     }
 
     /** Opens a locked door if the party has its key: true when the click was on one. */

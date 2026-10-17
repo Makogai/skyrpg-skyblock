@@ -86,6 +86,67 @@ public final class DungeonMobs {
         return mob;
     }
 
+    /** The minibosses a floor can have: Lost Adventurer from Floor II, Angry Archaeologist from III, Shadow Assassin from V,
+     * Frozen Adventurer from VI, King Midas on VII. */
+    private static final String[][] MINIBOSSES = {{"Lost Adventurer", "minecraft:zombie", "2"}, {"Angry Archaeologist", "minecraft:zombie", "3"},
+            {"Shadow Assassin", "minecraft:skeleton", "5"}, {"Frozen Adventurer", "minecraft:stray", "6"}, {"King Midas", "minecraft:zombie", "7"}};
+
+    /** A miniboss for this floor (a star mob of its room): 60,000 health on Floor II up to 7,000,000 on VII. */
+    public static Mob miniboss(ServerLevel level, Vec3 at, Floors.Floor floor, String runTag) {
+        java.util.List<String[]> open = new java.util.ArrayList<>();
+        for (String[] m : MINIBOSSES) {
+            if (Integer.parseInt(m[2]) <= floor.number()) {
+                open.add(m);
+            }
+        }
+        if (open.isEmpty()) {
+            return null;
+        }
+        String[] picked = open.get(level.getRandom().nextInt(open.size()));
+        var type = BuiltInRegistries.ENTITY_TYPE.getValue(Identifier.parse(picked[1]));
+        if (!(type.create(level, EntitySpawnReason.EVENT) instanceof Mob mob)) {
+            return null;
+        }
+        double t = Math.max(0, floor.strength());
+        double health = 60_000 * Math.pow(7_000_000 / 60_000.0, t) * (picked[0].equals("Shadow Assassin") ? 2 : 1);
+        double damage = 500 * Math.pow(60, t);
+        if (floor.master()) {
+            health = 7_000_000 * Math.pow(1.5, floor.number()) * 10;
+            damage = 30_000 * Math.pow(1.5, floor.number());
+        }
+        mob.snapTo(at.x, at.y, at.z, level.getRandom().nextFloat() * 360, 0);
+        Zones.dressAs(mob, STAR_GLYPH + picked[0], 50 + floor.number() * 30 + (floor.master() ? 200 : 0), round(health), round(damage), 50 + 200 * t);
+        switch (picked[0]) {
+            case "King Midas" -> {
+                mob.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.GOLDEN_HELMET));
+                mob.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.GOLDEN_CHESTPLATE));
+                mob.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.GOLDEN_SWORD));
+            }
+            case "Shadow Assassin" -> {
+                mob.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.WITHER_SKELETON_SKULL));
+                mob.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.NETHERITE_SWORD));
+            }
+            case "Angry Archaeologist" -> {
+                mob.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.DIAMOND_HELMET));
+                mob.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.DIAMOND_SWORD));
+            }
+            default -> {
+                mob.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.DIAMOND_CHESTPLATE));
+                mob.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
+            }
+        }
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            mob.setDropChance(slot, 0);
+        }
+        mob.setPersistenceRequired();
+        mob.addTag(TAG);
+        mob.addTag(runTag);
+        mob.addTag(STAR);
+        mob.addTag(Zones.FIGHTABLE_TAG);
+        level.addFreshEntity(mob);
+        return mob;
+    }
+
     /** A Watcher's blood mob: Hypixel names them (Revoker, Psycho, Reaper...). Never a star; always counted by the Blood room. */
     public static Mob blood(ServerLevel level, Vec3 at, Floors.Floor floor, String runTag, String name) {
         Mob mob = spawn(level, at, level.getRandom().nextInt(3) == 0 ? "skeleton" : "zombie", false, floor, runTag);

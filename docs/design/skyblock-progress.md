@@ -556,6 +556,15 @@ phase so the next session can pick up where this one stopped.
       ➊-➎. `/sbdungeon master <floor> <player>` for admins.
       Decided: Master Mode mob scaling and boss damage are ours (no single Hypixel multiplier); no Withered Dragons.
 
+- [x] **Blessings, minibosses, crypts, the Mimic** (`dungeon/Blessings`: Life, Power, Stone, Wisdom, Time; a stat source
+      adding shares of your stats, one share per stat with last time's taken off so they don't compound; level 1 + floor/2,
+      +1 in Master Mode; from solved puzzles, minibosses and 1 in 5 secret chests). `DungeonMobs.miniboss`: Lost
+      Adventurer (F2+), Angry Archaeologist (F3+), Shadow Assassin (F5+, double health), Frozen Adventurer (F6+), King
+      Midas (F7); 60k to 7M health; 40% of rooms with an elite spot from Floor II. Crypt Undead: 30% of normal rooms, up
+      to 8 a run, +1 Bonus each (max 5). The Mimic (F6+): a random secret chest; opening it releases a baby zombie with a
+      chest head (1M+, 150M in Master Mode); +2 Bonus. Sidebar: Crypts and Mimic ✔.
+      Decided: crypts are mobs (Hypixel's are walls you blow up; our rooms have no crypt walls yet).
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

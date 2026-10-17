@@ -40,6 +40,10 @@ Every run is a new map: a grid of rooms (some long, square or L-shaped) joined b
 - **Keys and doors**: some doors are black **Wither doors**. Clearing the right room drops a **Wither Key**; walk into it, then right-click the door. The **Blood room**'s red door needs the **Blood Key** the same way.
 - **Secrets**: hidden chests, items lying on ledges, and bats. Each holds essence or a dungeon item (Spirit Leaps, Healing Tissue, traps...). They count toward your score.
 - **The Fairy room** (pink) is a quiet room; it counts as cleared when you walk in.
+- **Blessings**: solving a puzzle, beating a miniboss and one secret chest in five bless the whole party for the rest of the run. Their levels add up (I on Floor I, up to IV on Floor VII, one more in Master Mode). Per level: **Life** +3% Health, **Power** +2% Strength and Crit Damage, **Stone** +2% Defense, **Wisdom** +2% Intelligence and Speed, **Time** +2% Health, Defense, Strength and Intelligence.
+- **Minibosses** (from Floor II): a room's strongest mob is sometimes a miniboss: the Lost Adventurer, Angry Archaeologist (Floor III+), Shadow Assassin (V+), Frozen Adventurer (VI+) or King Midas (VII). Beating one blesses the party.
+- **Crypts**: some rooms hide a **Crypt Undead**. Each one killed is +1 Bonus score, up to 5. The sidebar counts them.
+- **The Mimic** (Floor VI and up): one secret chest is alive. Kill it for +2 Bonus score ("Mimic Killed!").
 - **Puzzles** (purple rooms; Floor I has one, later floors more). Solve one and its room is cleared; get it wrong (or leave it) and it costs 14 Skill score:
   - **Three Weirdos**: three people before three chests. Talk to each; exactly one of them tells the truth. Open the chest with the reward.
   - **Higher Or Lower**: ten blazes float with their health over their heads. Kill them in the order the sign says (lowest to highest, or highest to lowest).
@@ -92,7 +96,7 @@ Pick one at Mort before the run (hover a class there for what it does). In a run
 | Skill | 100 | 20 + 80 for the share of rooms cleared, -2 for each death, -14 for each puzzle failed or left |
 | Explore | 100 | 60 for the share of rooms cleared, 40 for secrets (Floor I counts 30% of them as all of them, Floor VII 100%) |
 | Speed | 100 | full within the floor's time (10 minutes on Floor I), then a little less every few seconds |
-| Bonus | - | crypts and the Mimic (later) |
+| Bonus | up to 7 | +1 for each Crypt Undead killed (up to 5), +2 for the Mimic |
 
 **S+** at 300, **S** 270, **A** 230, **B** 160, **C** 100, else **D**.
 
@@ -122,4 +126,4 @@ Every chest holds Undead Essence (Wither Essence too from Floor III), and each f
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, essence shop perks, Croesus, the Party Finder.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, essence shop perks, Croesus, the Party Finder.

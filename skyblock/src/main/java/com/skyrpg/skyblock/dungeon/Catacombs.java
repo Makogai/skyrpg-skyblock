@@ -77,6 +77,7 @@ public final class Catacombs {
         DungeonXp.init();
         Classes.init();
         Rewards.init();
+        Blessings.init();
         DungeonItems.init();
         ServerLifecycleEvents.SERVER_STARTED.register(RoomLibrary::load);
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, ok) -> RoomLibrary.load(server));
@@ -106,9 +107,17 @@ public final class Catacombs {
             if (level.getBlockState(pos).is(Blocks.CHEST)) {
                 for (Run.RoomState state : run.rooms) {
                     if (state.secretChests.remove(pos)) {
+                        run.secretFound(state, server);
+                        if (pos.equals(run.mimicChest)) {
+                            run.releaseMimic(server, pos);
+                            return InteractionResult.SUCCESS;
+                        }
                         level.blockEvent(pos, Blocks.CHEST, 1, 1);
                         Msg.playSound(server, SoundEvents.CHEST_OPEN, 0.8f, 1.0f);
-                        run.secretFound(state, server);
+                        // A fifth of secret chests hold a blessing.
+                        if (run.random.nextInt(5) == 0) {
+                            Blessings.bless(run, server);
+                        }
                         return InteractionResult.SUCCESS;
                     }
                 }
@@ -436,6 +445,7 @@ public final class Catacombs {
         lines.add("§7Time Elapsed: §a" + Rewards.time(run.seconds()));
         lines.add("§7Cleared: §c" + Math.round(run.clearedShare() * 100) + "%");
         lines.add("§7Secrets: §b" + run.secretsFound() + "§7/§b" + run.secretsTotal());
+        lines.add("§7Crypts: §a" + run.crypts + (run.mimicKilled ? "  §cMimic ✔" : ""));
         lines.add("§7Keys: §c■ " + (run.bloodKey ? "§a✔" : "§c✖") + " §8■ §fx" + run.witherKeys);
         lines.add("");
         for (UUID id : run.players) {

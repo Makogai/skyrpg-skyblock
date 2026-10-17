@@ -24,7 +24,7 @@ final class Score {
         int explore = clamp((int) Math.floor(60 * cleared) + (int) Math.floor(40 * secretShare), 0, 100);
         int seconds = run.seconds();
         int speed = speed(seconds - run.floor.seconds());
-        int bonus = 0;
+        int bonus = Math.min(5, run.crypts) + (run.mimicKilled ? 2 : 0);
         int sum = skill + explore + speed + bonus;
         return new Result(skill, explore, speed, bonus, sum, rank(sum), found, needed, cleared, run.deaths, seconds);
     }
