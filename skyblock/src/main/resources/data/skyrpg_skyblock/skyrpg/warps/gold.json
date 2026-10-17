@@ -1,0 +1,14 @@
+{
+  "name": "Gold Mine",
+  "description": "Gold, iron and coal in an open pit",
+  "icon": "minecraft:gold_ingot",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "pos": [
+    0.5,
+    65.0,
+    95.5
+  ],
+  "yaw": 180,
+  "area": "Gold Mine",
+  "order": 23
+}

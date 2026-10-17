@@ -1,0 +1,24 @@
+{
+  "name": "Spruce Woods",
+  "dimension": "skyrpg_skyblock:the_park",
+  "from": [
+    -255,
+    20,
+    -112
+  ],
+  "to": [
+    -136,
+    139,
+    30
+  ],
+  "blocks": {
+    "minecraft:spruce_log": {
+      "becomes": "minecraft:air",
+      "regrow": 20
+    },
+    "minecraft:spruce_leaves": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    }
+  }
+}

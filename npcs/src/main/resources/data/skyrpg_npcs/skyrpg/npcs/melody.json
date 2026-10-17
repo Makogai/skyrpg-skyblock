@@ -1,0 +1,20 @@
+{
+  "name": "Melody",
+  "role": "The Park",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    148.5,
+    65.0,
+    -30.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.note_block.harp",
+  "greetings": [
+    "Play me a song?",
+    "The savanna has the best acoustics."
+  ]
+}

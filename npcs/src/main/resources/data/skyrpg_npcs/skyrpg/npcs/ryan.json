@@ -1,0 +1,20 @@
+{
+  "name": "Ryan",
+  "role": "Campfire Cult",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/kai",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    68.5,
+    65.0,
+    53.5
+  ],
+  "yaw": -45.0,
+  "sound": "minecraft:block.campfire.crackle",
+  "greetings": [
+    "The fire never goes out here.",
+    "Bring wood. The fire is always hungry."
+  ]
+}

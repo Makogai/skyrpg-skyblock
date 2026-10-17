@@ -1,0 +1,26 @@
+{
+  "name": "Master Tactician Funk",
+  "role": "Merchant",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    156.5,
+    65.0,
+    -31.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:item.armor.equip_iron",
+  "greetings": [
+    "A good plan beats a big sword.",
+    "Study the field before you fight on it."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "master_tactician"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/spiders_den",
+  "origin": [
+    -130,
+    20,
+    -130
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "island": "Spider's Den",
+  "arrival": {
+    "pos": [
+      0.5,
+      65.0,
+      100.5
+    ],
+    "yaw": 180.0
+  }
+}

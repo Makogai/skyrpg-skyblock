@@ -1,0 +1,70 @@
+{
+  "name": "Diamond Reserve",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    -100,
+    35,
+    -100
+  ],
+  "to": [
+    100,
+    64,
+    100
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 5
+    },
+    "minecraft:diamond_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Miner Zombie",
+      "level": 15,
+      "health": 250,
+      "damage": 180,
+      "xp": 20,
+      "coins": 12,
+      "max": 6,
+      "every": 6,
+      "indoors": true,
+      "from": [
+        -30,
+        49,
+        -30
+      ],
+      "to": [
+        30,
+        53,
+        30
+      ]
+    },
+    {
+      "type": "minecraft:skeleton",
+      "name": "Miner Skeleton",
+      "level": 15,
+      "health": 250,
+      "damage": 150,
+      "xp": 20,
+      "coins": 12,
+      "max": 4,
+      "every": 8,
+      "indoors": true,
+      "from": [
+        -30,
+        49,
+        -30
+      ],
+      "to": [
+        30,
+        53,
+        30
+      ]
+    }
+  ]
+}

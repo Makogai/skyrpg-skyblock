@@ -1,0 +1,20 @@
+{
+  "name": "Farmer Jon",
+  "role": "Mushroom Desert",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    182.5,
+    65.0,
+    32.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.grass.place",
+  "greetings": [
+    "Cactus doesn't need much. Just room.",
+    "Mind the spines."
+  ]
+}

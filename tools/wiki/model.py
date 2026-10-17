@@ -19,7 +19,7 @@ CATEGORY_IDS = [c[0] for c in CATEGORIES]
 
 PAGE_LIST = {
     "getting-started": ["welcome", "skyrpg-mods", "first-launch", "first-steps", "controls-and-keys", "mods-and-shaders", "progression-guide"],
-    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "slayers"],
+    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "slayers"],
     "skyhaven": ["skyhaven", "npcs", "quests-and-journal", "events"],
     "economy": ["coins-and-bank", "selling-and-shops", "contracts"],
     "skills": ["skills-overview", "mining", "farming", "foraging", "fishing", "enchanting", "crafting", "delving"],

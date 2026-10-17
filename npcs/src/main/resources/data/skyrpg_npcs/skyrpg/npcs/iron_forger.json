@@ -1,0 +1,26 @@
+{
+  "name": "Iron Forger",
+  "role": "Merchant",
+  "color": "#FFFFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "pos": [
+    24.5,
+    65.0,
+    56.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Iron for those who earned it.",
+    "The forge is hot. Step back."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "iron_forger"
+    }
+  }
+}

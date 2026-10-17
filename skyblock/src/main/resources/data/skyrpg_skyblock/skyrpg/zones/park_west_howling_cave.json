@@ -1,0 +1,82 @@
+{
+  "name": "Howling Cave",
+  "dimension": "skyrpg_skyblock:the_park",
+  "from": [
+    -212,
+    20,
+    -150
+  ],
+  "to": [
+    -168,
+    139,
+    -113
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:wolf",
+      "name": "Pack Spirit",
+      "level": 30,
+      "health": 6000,
+      "damage": 300,
+      "xp": 22,
+      "coins": 11,
+      "max": 6,
+      "every": 6,
+      "indoors": true,
+      "from": [
+        -199,
+        65,
+        -143
+      ],
+      "to": [
+        -181,
+        70,
+        -126
+      ]
+    },
+    {
+      "type": "minecraft:wolf",
+      "name": "Howling Spirit",
+      "level": 35,
+      "health": 7000,
+      "damage": 450,
+      "xp": 22,
+      "coins": 11,
+      "max": 3,
+      "every": 10,
+      "indoors": true,
+      "from": [
+        -199,
+        65,
+        -143
+      ],
+      "to": [
+        -181,
+        70,
+        -126
+      ]
+    },
+    {
+      "type": "minecraft:wolf",
+      "name": "Soul of the Alpha",
+      "level": 55,
+      "health": 31150,
+      "damage": 1425,
+      "xp": 50,
+      "coins": 50,
+      "max": 1,
+      "every": 120,
+      "indoors": true,
+      "from": [
+        -196,
+        65,
+        -141
+      ],
+      "to": [
+        -184,
+        70,
+        -131
+      ]
+    }
+  ]
+}

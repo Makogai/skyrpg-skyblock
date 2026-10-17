@@ -1,0 +1,26 @@
+{
+ "island": "Spider's Den",
+ "dimension": "skyrpg_skyblock:spiders_den",
+ "souls": [
+  [
+   0,
+   136,
+   -10
+  ],
+  [
+   0,
+   31,
+   -11
+  ],
+  [
+   -29,
+   80,
+   -12
+  ],
+  [
+   -51,
+   65,
+   49
+  ]
+ ]
+}

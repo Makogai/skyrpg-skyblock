@@ -1,0 +1,20 @@
+{
+  "name": "Rick",
+  "role": "Spider's Den",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    33.5,
+    65.0,
+    64.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.gravel.break",
+  "greetings": [
+    "Gravel pit's all yours. Bring a shovel.",
+    "Flint's in there somewhere."
+  ]
+}

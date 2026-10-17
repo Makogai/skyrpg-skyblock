@@ -1,0 +1,26 @@
+{
+  "name": "Walter",
+  "role": "Merchant",
+  "color": "#55FFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    -13.5,
+    186.0,
+    57.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Going deeper? You'll want supplies.",
+    "Don't forget the way back up."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "walter"
+    }
+  }
+}

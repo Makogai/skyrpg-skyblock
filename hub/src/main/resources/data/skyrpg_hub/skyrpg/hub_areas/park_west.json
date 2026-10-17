@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/park_west",
+  "origin": [
+    -260,
+    20,
+    -150
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:the_park",
+  "island": "The Park",
+  "arrival": {
+    "pos": [
+      -21.5,
+      65.0,
+      0.5
+    ],
+    "yaw": 90.0
+  }
+}

@@ -7,7 +7,7 @@ village box are dropped. Its box is all village, so placing it never clears anyt
 """
 from kit import Area
 
-area = Area("village_bridges", (-96, 20, -96), (192, 100, 192), version=1)
+area = Area("village_bridges", (-96, 20, -96), (192, 100, 192), version=2)
 area.bridge((80, -27), (108, -124), y=64)        # the Farm, from the Bazaar islet's north end
 area.bridge((-50, 46), (-117, 84), y=64)         # the Forest, from the south-west edge
 area.bridge((38, -89), (22, -122), y=77)         # the Coal Mine, from the Starwatch islet

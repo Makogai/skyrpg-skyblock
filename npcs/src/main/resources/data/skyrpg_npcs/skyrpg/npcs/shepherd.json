@@ -1,0 +1,20 @@
+{
+  "name": "Shepherd",
+  "role": "Mushroom Desert",
+  "color": "#FFFFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    230.5,
+    65.0,
+    -21.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.sheep.ambient",
+  "greetings": [
+    "Count them with me. One, two... no, that one moved.",
+    "Wool grows back. Sheep don't mind."
+  ]
+}

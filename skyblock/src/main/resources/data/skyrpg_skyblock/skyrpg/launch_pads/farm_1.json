@@ -1,0 +1,19 @@
+{
+  "name": "The Barn",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    185,
+    65,
+    -199
+  ],
+  "to": [
+    187,
+    66,
+    -197
+  ],
+  "warp": "barn",
+  "requires": {
+    "skill": "skyrpg_skills:farming",
+    "level": 1
+  }
+}

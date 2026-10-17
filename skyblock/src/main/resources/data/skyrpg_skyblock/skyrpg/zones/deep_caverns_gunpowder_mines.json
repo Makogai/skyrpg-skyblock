@@ -1,0 +1,56 @@
+{
+  "name": "Gunpowder Mines",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    -100,
+    155,
+    -100
+  ],
+  "to": [
+    100,
+    184,
+    100
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 5
+    },
+    "minecraft:coal_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    },
+    "minecraft:iron_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 7
+    },
+    "minecraft:gold_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:creeper",
+      "name": "Sneaky Creeper",
+      "level": 3,
+      "health": 120,
+      "damage": 0,
+      "xp": 8,
+      "coins": 3,
+      "max": 6,
+      "every": 6,
+      "indoors": true,
+      "from": [
+        -30,
+        169,
+        -30
+      ],
+      "to": [
+        30,
+        173,
+        30
+      ]
+    }
+  ]
+}

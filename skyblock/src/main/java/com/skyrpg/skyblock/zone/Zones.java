@@ -239,14 +239,15 @@ public final class Zones {
                 continue;
             }
             List<Entity> alive = level.getEntities((Entity) null, zone.box().inflate(16), e -> e.isAlive() && e.entityTags().contains(tag));
-            // The Ruins' wolves are hostile: they go for whoever comes near.
+            // Neutral mobs here are hostile (the Ruins' wolves, the Deep Caverns' pigmen): they go for whoever comes near.
             for (Entity entity : alive) {
-                if (entity instanceof net.minecraft.world.entity.animal.wolf.Wolf wolf && !spawn.name().isEmpty() && wolf.getTarget() == null) {
-                    ServerPlayer near = (ServerPlayer) level.getNearestPlayer(wolf, 12);
+                if (entity instanceof net.minecraft.world.entity.NeutralMob neutral && entity instanceof Mob mob && !spawn.name().isEmpty()
+                        && mob.getTarget() == null) {
+                    ServerPlayer near = (ServerPlayer) level.getNearestPlayer(mob, 12);
                     if (near != null && !near.isCreative() && !near.isSpectator()) {
-                        wolf.setPersistentAngerTarget(net.minecraft.world.entity.EntityReference.of(near));
-                        wolf.startPersistentAngerTimer();
-                        wolf.setTarget(near);
+                        neutral.setPersistentAngerTarget(net.minecraft.world.entity.EntityReference.of(near));
+                        neutral.startPersistentAngerTimer();
+                        mob.setTarget(near);
                     }
                 }
             }

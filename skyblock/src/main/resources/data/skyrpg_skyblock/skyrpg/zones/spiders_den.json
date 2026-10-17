@@ -1,0 +1,127 @@
+{
+  "name": "Spider's Den",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    -130,
+    63,
+    -130
+  ],
+  "to": [
+    129,
+    99,
+    129
+  ],
+  "blocks": {
+    "minecraft:gravel": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:spider",
+      "name": "Splitter Spider",
+      "level": 2,
+      "health": 180,
+      "damage": 30,
+      "xp": 9,
+      "coins": 2,
+      "max": 6,
+      "every": 5,
+      "from": [
+        -70,
+        63,
+        -20
+      ],
+      "to": [
+        -48,
+        85,
+        30
+      ]
+    },
+    {
+      "type": "minecraft:spider",
+      "name": "Weaver Spider",
+      "level": 3,
+      "health": 160,
+      "damage": 35,
+      "xp": 9,
+      "coins": 2,
+      "max": 6,
+      "every": 5,
+      "from": [
+        48,
+        63,
+        -20
+      ],
+      "to": [
+        70,
+        85,
+        30
+      ]
+    },
+    {
+      "type": "minecraft:spider",
+      "name": "Dasher Spider",
+      "level": 4,
+      "health": 160,
+      "damage": 55,
+      "xp": 10,
+      "coins": 2,
+      "max": 4,
+      "every": 6,
+      "from": [
+        -25,
+        63,
+        -76
+      ],
+      "to": [
+        25,
+        90,
+        -60
+      ]
+    },
+    {
+      "type": "minecraft:cave_spider",
+      "name": "Voracious Spider",
+      "level": 10,
+      "health": 1000,
+      "damage": 100,
+      "xp": 10,
+      "coins": 2,
+      "max": 4,
+      "every": 8,
+      "from": [
+        25,
+        63,
+        -55
+      ],
+      "to": [
+        50,
+        95,
+        -35
+      ]
+    },
+    {
+      "type": "minecraft:skeleton",
+      "name": "Gravel Skeleton",
+      "level": 2,
+      "health": 100,
+      "damage": 35,
+      "xp": 6,
+      "coins": 1,
+      "max": 4,
+      "every": 8,
+      "from": [
+        36,
+        60,
+        54
+      ],
+      "to": [
+        56,
+        70,
+        74
+      ]
+    }
+  ]
+}

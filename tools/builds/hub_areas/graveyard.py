@@ -9,7 +9,7 @@ from kit import Area, hash01
 
 G = 64                      # surface; players stand at 65 (the village's level)
 CX, CZ = -172, -36          # island centre
-area = Area("graveyard", (-240, 20, -104), (184, 82, 140), version=1)
+area = Area("graveyard", (-240, 20, -104), (184, 82, 140), version=2)
 dark = area.mix({"podzol": 5, "coarse_dirt": 3, "grass_block": 2, "moss_block": 2, "rooted_dirt": 1})
 cols = area.island(CX, CZ, 52, top=G, seed=11, surface=dark, hills=1.6, depth=40,
                    stone=area.mix({"stone": 4, "andesite": 3, "tuff": 3, "cobbled_deepslate": 2, "cobblestone": 1}))
@@ -183,9 +183,10 @@ for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
     area.set(LX + dx, G + 1, LZ + dz, "polished_blackstone_wall")
     area.set(LX + dx, G + 2, LZ + dz, "soul_lantern[hanging=false]")
 area.set(LX + 4, G + 1, LZ - 2, "dark_oak_sign[rotation=4]",
-         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"Spider\'s Den"', '"(coming soon)"', '""'],
+         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"Spider\'s Den"', '"Combat I"', '""'],
                                                  "color": "white", "has_glowing_text": 1},
           "back_text": {"messages": ['""', '""', '""', '""'], "color": "black", "has_glowing_text": 0}, "is_waxed": 1})
+area.pad("the Spider's Den", LX - 1, G + 1, LZ - 1, LX + 1, G + 2, LZ + 1, warp="spider", skill="combat", level=1)
 area.spots["notes"].append(f"Spider's Den launch pad at ({LX}, {G + 1}, {LZ})")
 
 # ---------------------------------------------------------------- dead trees, bones, webs, pumpkins

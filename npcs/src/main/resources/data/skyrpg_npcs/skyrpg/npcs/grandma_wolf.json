@@ -1,0 +1,20 @@
+{
+  "name": "Grandma Wolf",
+  "role": "Spider's Den",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    -28.5,
+    65.0,
+    75.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.wolf.ambient_baby",
+  "greetings": [
+    "Come in, dear. Mind the webs.",
+    "The spiders leave me be."
+  ]
+}

@@ -10,7 +10,7 @@ from kit import Area, hash01, noise
 
 G = 77                      # surface; players stand at 78 (the Starwatch islet's level)
 ICX, ICZ = 5, -170          # island centre
-area = Area("coal_mine", (-55, 20, -235), (125, 125, 138), version=1, shell=3)
+area = Area("coal_mine", (-55, 20, -235), (125, 125, 138), version=2, shell=3)
 
 surface = area.mix({"grass_block": 5, "coarse_dirt": 2, "gravel": 2, "podzol": 1})
 rock = area.mix({"andesite": 5, "tuff": 3, "cobblestone": 2, "calcite": 1})
@@ -324,17 +324,19 @@ for z in (-185, -181):
     area.fill(GX, 72, z, GX, 75, z, "minecraft:stone_bricks")
     area.set(GX, 76, z, "minecraft:chiseled_stone_bricks")
 for z in (-184, -183, -182):
-    area.fill(GX, 72, z, GX, 74, z, "minecraft:iron_bars")
+    area.fill(GX, 72, z, GX, 74, z, "minecraft:air")
+    area.set(GX, 71, z, "minecraft:slime_block")
     area.set(GX, 75, z, "minecraft:gold_block")
     area.fill(GX - 1, 72, z, GX - 1, 74, z, "minecraft:raw_gold_block" if z == -183 else "minecraft:stone_bricks")
     area.fill(GX - 2, 71, z, GX - 2, 75, z, "minecraft:stone_bricks")
 area.set(GX + 1, 72, -185, "minecraft:soul_lantern[hanging=false]")
 area.set(GX + 1, 72, -181, "minecraft:soul_lantern[hanging=false]")
 area.set(GX + 2, 72, -183, "minecraft:dark_oak_sign[rotation=12]",
-         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"Gold Mine"', '"(coming soon)"', '""'],
+         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"Gold Mine"', '"Mining I"', '""'],
                                                  "color": "white", "has_glowing_text": 1},
           "back_text": {"messages": ['""', '""', '""', '""'], "color": "black", "has_glowing_text": 0}, "is_waxed": 1})
-area.spots["notes"].append(f"Gold Mine gate at ({GX}, 72, -183), sealed (Mining I, coming soon)")
+area.pad("the Gold Mine", GX, 72, -184, GX, 73, -182, warp="gold", skill="mining", level=1)
+area.spots["notes"].append(f"Gold Mine gate at ({GX}, 72, -183): walk in (Mining I)")
 
 # ---------------------------------------------------------------- crypt dressing
 cand = "minecraft:candle[candles=2,lit=false]"

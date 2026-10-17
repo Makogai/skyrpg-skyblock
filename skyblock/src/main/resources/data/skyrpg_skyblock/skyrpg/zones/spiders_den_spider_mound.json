@@ -1,0 +1,85 @@
+{
+  "name": "Spider Mound",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    -130,
+    100,
+    -130
+  ],
+  "to": [
+    129,
+    149,
+    129
+  ],
+  "blocks": {
+    "minecraft:gravel": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:spider",
+      "name": "Splitter Spider",
+      "level": 42,
+      "health": 9000,
+      "damage": 850,
+      "xp": 36,
+      "coins": 15,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -35,
+        100,
+        -50
+      ],
+      "to": [
+        35,
+        138,
+        25
+      ]
+    },
+    {
+      "type": "minecraft:spider",
+      "name": "Weaver Spider",
+      "level": 42,
+      "health": 9100,
+      "damage": 650,
+      "xp": 36,
+      "coins": 15,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -35,
+        100,
+        -50
+      ],
+      "to": [
+        35,
+        138,
+        25
+      ]
+    },
+    {
+      "type": "minecraft:cave_spider",
+      "name": "Voracious Spider",
+      "level": 42,
+      "health": 9000,
+      "damage": 700,
+      "xp": 36,
+      "coins": 15,
+      "max": 3,
+      "every": 10,
+      "from": [
+        -35,
+        100,
+        -50
+      ],
+      "to": [
+        35,
+        138,
+        25
+      ]
+    }
+  ]
+}

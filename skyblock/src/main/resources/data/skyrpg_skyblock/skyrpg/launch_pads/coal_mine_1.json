@@ -1,0 +1,19 @@
+{
+  "name": "the Gold Mine",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -27,
+    72,
+    -184
+  ],
+  "to": [
+    -27,
+    73,
+    -182
+  ],
+  "warp": "gold",
+  "requires": {
+    "skill": "skyrpg_skills:mining",
+    "level": 1
+  }
+}

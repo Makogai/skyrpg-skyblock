@@ -1,0 +1,26 @@
+{
+ "island": "Gold Mine",
+ "dimension": "skyrpg_skyblock:gold_mine",
+ "souls": [
+  [
+   -29,
+   81,
+   60
+  ],
+  [
+   8,
+   51,
+   -66
+  ],
+  [
+   -4,
+   45,
+   -5
+  ],
+  [
+   67,
+   45,
+   25
+  ]
+ ]
+}

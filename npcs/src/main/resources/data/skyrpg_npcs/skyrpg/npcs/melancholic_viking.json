@@ -1,0 +1,20 @@
+{
+  "name": "Melancholic Viking",
+  "role": "Viking",
+  "color": "#5555FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    -157.5,
+    65.0,
+    -36.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.note_block.didgeridoo",
+  "greetings": [
+    "Once I sailed the far seas. Now I sit.",
+    "Even vikings get tired."
+  ]
+}

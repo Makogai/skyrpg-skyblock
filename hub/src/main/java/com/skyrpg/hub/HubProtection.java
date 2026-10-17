@@ -45,7 +45,7 @@ final class HubProtection {
     }
 
     static boolean isProtected(Player player) {
-        return Hub.isHub(player.level()) && !player.isCreative();
+        return Hub.isPublic(player.level()) && !player.isCreative();
     }
 
     static void register() {
@@ -67,7 +67,7 @@ final class HubProtection {
                 isProtected(player) && (entity instanceof Player || !Hub.combatRule().allowsCombat(entity)) ? InteractionResult.FAIL : InteractionResult.PASS);
         // Nothing gets hurt in the hub, except in its fighting zones (and never by another player).
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) ->
-                !Hub.isHub(entity.level()) || source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)
+                !Hub.isPublic(entity.level()) || source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)
                         || Hub.combatRule().allowsCombat(entity) && !(entity instanceof Player && source.getEntity() instanceof Player));
         ServerTickEvents.END_SERVER_TICK.register(HubProtection::tick);
     }
@@ -86,6 +86,20 @@ final class HubProtection {
             Vec3 center = portal.getCenter();
             hub.sendParticles(ParticleTypes.PORTAL, center.x, center.y, center.z, 12,
                     portal.getXsize() / 3, portal.getYsize() / 3, portal.getZsize() / 3, 0.2);
+        }
+        // The other public islands: nobody hungry, and the void sends you back to where you arrived.
+        for (ServerLevel level : server.getAllLevels()) {
+            if (level == hub || !Hub.isPublic(level)) {
+                continue;
+            }
+            for (ServerPlayer player : List.copyOf(level.players())) {
+                keepFed(player);
+                if (player.getY() < config.voidY()) {
+                    HubAreas.Arrival arrival = HubAreas.arrival(level.dimension());
+                    Hub.teleport(player, level, arrival != null ? arrival.pos() : Vec3.atBottomCenterOf(level.getRespawnData().pos()),
+                            arrival != null ? arrival.yaw() : 0, 0);
+                }
+            }
         }
         // Copy: sending a player to the survival world removes them from hub.players() mid-loop.
         for (ServerPlayer player : List.copyOf(hub.players())) {

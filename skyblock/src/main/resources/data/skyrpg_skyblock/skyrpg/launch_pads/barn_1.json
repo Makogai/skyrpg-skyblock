@@ -1,0 +1,23 @@
+{
+  "name": "the Hub",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "from": [
+    -11,
+    65,
+    87
+  ],
+  "to": [
+    -9,
+    66,
+    89
+  ],
+  "destination": {
+    "dimension": "skyrpg_hub:hub",
+    "pos": [
+      182.5,
+      65.0,
+      -194.5
+    ],
+    "yaw": 60.0
+  }
+}

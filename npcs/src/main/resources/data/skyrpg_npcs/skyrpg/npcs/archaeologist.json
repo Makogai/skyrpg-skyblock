@@ -1,0 +1,20 @@
+{
+  "name": "Archaeologist",
+  "role": "Spider's Den",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    -37.5,
+    65.0,
+    60.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:item.brush.brushing.gravel",
+  "greetings": [
+    "Every layer of gravel tells a story.",
+    "Careful where you dig."
+  ]
+}

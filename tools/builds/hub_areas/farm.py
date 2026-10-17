@@ -11,7 +11,7 @@ from kit import Area, hash01
 
 G = 64
 CX, CZ = 140, -170
-area = Area("farm", (72, 20, -240), (138, 80, 143), version=1)
+area = Area("farm", (72, 20, -240), (138, 80, 143), version=2)
 
 
 def bump(x, z):   # stretch the island's south-west edge so it reaches past the bridge end
@@ -339,9 +339,10 @@ for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
     area.fill(LX + dx, G + 1, LZ + dz, LX + dx, G + 2, LZ + dz, "oak_fence")
     area.set(LX + dx, G + 3, LZ + dz, "lantern[hanging=false]")
 area.set(LX - 4, G + 1, LZ - 2, "oak_sign[rotation=4]",
-         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"The Barn"', '"(coming soon)"', '""'],
+         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"The Barn"', '"Farming I"', '""'],
                                                  "color": "white", "has_glowing_text": 1},
           "back_text": {"messages": ['""', '""', '""', '""'], "color": "black", "has_glowing_text": 0}, "is_waxed": 1})
+area.pad("The Barn", LX - 1, G + 1, LZ - 1, LX + 1, G + 2, LZ + 1, warp="barn", skill="farming", level=1)
 area.spots["notes"].append(f"The Barn launch pad at ({LX}, {G + 1}, {LZ})")
 
 # ---------------------------------------------------------------- Fairy Souls and the warp

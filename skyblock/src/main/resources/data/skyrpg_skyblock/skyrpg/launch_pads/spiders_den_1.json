@@ -1,0 +1,23 @@
+{
+  "name": "the Hub",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    -15,
+    65,
+    96
+  ],
+  "to": [
+    -13,
+    66,
+    98
+  ],
+  "destination": {
+    "dimension": "skyrpg_hub:hub",
+    "pos": [
+      -213.5,
+      65.0,
+      -36.5
+    ],
+    "yaw": -90.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Worker Xavier",
+  "role": "The Park",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    141.5,
+    65.0,
+    -28.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.wood.hit",
+  "greetings": [
+    "Acacia is tough wood. Good for building.",
+    "Back to work."
+  ]
+}

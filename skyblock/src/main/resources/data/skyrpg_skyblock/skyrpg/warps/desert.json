@@ -1,0 +1,14 @@
+{
+  "name": "Mushroom Desert",
+  "description": "Cactus, sugar cane, cocoa and mushrooms",
+  "icon": "minecraft:red_mushroom",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    150.5,
+    65.0,
+    0.5
+  ],
+  "yaw": -90.0,
+  "area": "Mushroom Desert",
+  "order": 21
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Haymitch",
+  "role": "Spider's Den",
+  "color": "#C98A4B",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    27.5,
+    65.0,
+    74.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.spider.ambient",
+  "greetings": [
+    "The mound gets meaner the higher you climb.",
+    "String, string everywhere."
+  ]
+}

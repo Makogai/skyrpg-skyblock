@@ -1,0 +1,26 @@
+{
+  "name": "Shaggy",
+  "role": "Merchant",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    9.5,
+    65.0,
+    85.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Like, totally spooky up here.",
+    "Got snacks? I got stuff."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "shaggy"
+    }
+  }
+}

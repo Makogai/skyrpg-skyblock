@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/mushroom_desert",
+  "origin": [
+    112,
+    20,
+    -125
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "island": "The Farming Islands",
+  "arrival": {
+    "pos": [
+      150.5,
+      65.0,
+      0.5
+    ],
+    "yaw": -90.0
+  }
+}

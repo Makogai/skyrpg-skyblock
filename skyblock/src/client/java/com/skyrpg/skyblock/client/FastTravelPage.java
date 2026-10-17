@@ -90,7 +90,7 @@ public final class FastTravelPage implements MenuPage {
         }
         int more = warps.size();
         int y = ctx.y() + (more + COLUMNS - 1) / COLUMNS * (CARD_H + GAP) + 4;
-        Draw.fitText(g, font, "More islands (the Barn, the Park, the Gold Mine and the rest) are on the way.", ctx.x(), y, ctx.width(), Theme.DIM);
+        Draw.fitText(g, font, "More islands (the Dwarven Mines, the End, the Crimson Isle and the rest) are on the way.", ctx.x(), y, ctx.width(), Theme.DIM);
     }
 
     @Override

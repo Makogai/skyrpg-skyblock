@@ -1,0 +1,19 @@
+{
+  "name": "the Spider's Den",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -219,
+    65,
+    -37
+  ],
+  "to": [
+    -217,
+    66,
+    -35
+  ],
+  "warp": "spider",
+  "requires": {
+    "skill": "skyrpg_skills:combat",
+    "level": 1
+  }
+}

@@ -11,7 +11,7 @@ from kit import Area, hash01
 
 G = 64                      # surface; players stand at 65 (the village's level)
 CX, CZ = 185, 15            # island centre
-area = Area("wilderness", (96, 20, -60), (175, 90, 160), version=1)
+area = Area("wilderness", (96, 20, -60), (175, 90, 160), version=2)
 meadow = area.mix({"grass_block": 12, "moss_block": 1, "rooted_dirt": 1, "coarse_dirt": 1})
 # A shape factor that pushes the west rim out so the island meets the bridge end at (124, 4).
 cols = area.island(CX, CZ, 62, top=G, seed=21, surface=meadow, hills=2.0, depth=44, wobble=0.12,

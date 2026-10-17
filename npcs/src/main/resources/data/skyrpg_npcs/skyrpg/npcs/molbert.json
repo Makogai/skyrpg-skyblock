@@ -1,0 +1,20 @@
+{
+  "name": "Molbert",
+  "role": "Jungle Island",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/efe",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    188.5,
+    65.0,
+    76.5
+  ],
+  "yaw": -135.0,
+  "sound": "minecraft:block.vine.place",
+  "greetings": [
+    "The jungle swallows everything eventually.",
+    "Mind the vines."
+  ]
+}

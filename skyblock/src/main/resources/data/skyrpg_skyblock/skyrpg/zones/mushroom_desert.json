@@ -1,0 +1,96 @@
+{
+  "name": "Mushroom Desert",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "from": [
+    134,
+    33,
+    -98
+  ],
+  "to": [
+    323,
+    107,
+    92
+  ],
+  "blocks": {
+    "minecraft:sand": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    },
+    "minecraft:cactus": {
+      "becomes": "minecraft:air",
+      "regrow": 10
+    },
+    "minecraft:sugar_cane": {
+      "becomes": "minecraft:air",
+      "regrow": 10
+    },
+    "minecraft:cocoa": {
+      "becomes": "minecraft:cocoa",
+      "regrow": 10
+    },
+    "minecraft:red_mushroom": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    },
+    "minecraft:brown_mushroom": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:rabbit",
+      "name": "Rabbit",
+      "level": 1,
+      "health": 50,
+      "max": 6,
+      "every": 10,
+      "from": [
+        166,
+        63,
+        -46
+      ],
+      "to": [
+        190,
+        74,
+        -28
+      ]
+    },
+    {
+      "type": "minecraft:sheep",
+      "name": "Sheep",
+      "level": 1,
+      "health": 100,
+      "max": 6,
+      "every": 10,
+      "from": [
+        221,
+        63,
+        -41
+      ],
+      "to": [
+        239,
+        70,
+        -25
+      ]
+    },
+    {
+      "type": "minecraft:mooshroom",
+      "name": "Mooshroom",
+      "level": 1,
+      "health": 100,
+      "max": 4,
+      "every": 12,
+      "from": [
+        256,
+        63,
+        -80
+      ],
+      "to": [
+        308,
+        78,
+        -28
+      ]
+    }
+  ]
+}

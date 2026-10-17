@@ -1,0 +1,26 @@
+{
+  "name": "Windmill Operator",
+  "role": "Merchant",
+  "color": "#FFFFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/ari",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    30.5,
+    65.0,
+    -33.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.wooden_door.open",
+  "greetings": [
+    "The sails never stop. Neither do the seeds.",
+    "Need something to plant?"
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "windmill_operator"
+    }
+  }
+}

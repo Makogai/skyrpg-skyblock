@@ -1,0 +1,19 @@
+{
+  "name": "the Deep Caverns",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "from": [
+    -1,
+    36,
+    -29
+  ],
+  "to": [
+    1,
+    37,
+    -27
+  ],
+  "warp": "deep",
+  "requires": {
+    "skill": "skyrpg_skills:mining",
+    "level": 5
+  }
+}

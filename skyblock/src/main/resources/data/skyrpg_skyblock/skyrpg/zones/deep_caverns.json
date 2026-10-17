@@ -1,0 +1,14 @@
+{
+  "name": "Deep Caverns",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    -100,
+    185,
+    -100
+  ],
+  "to": [
+    100,
+    199,
+    100
+  ]
+}

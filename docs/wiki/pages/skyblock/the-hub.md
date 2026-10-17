@@ -3,7 +3,7 @@ title: The Hub
 category: skyblock
 order: 3
 icon: minecraft:oak_sapling
-summary: Skyhaven and the islands around it: the Graveyard, Coal Mine, Farm, Forest, Ruins, Mountain and Wilderness, their mobs and resources, and the Fairy Souls hidden on them.
+summary: Skyhaven and the areas around it: the Graveyard, Coal Mine, Farm, Forest, Ruins, Mountain and Wilderness, their mobs and resources, and the Fairy Souls hidden on them.
 ---
 The **Hub** is where everyone meets: the village of **Skyhaven** in the middle, with the shops, the Bank, the Bazaar and the Auction House, and seven islands around it, joined to the village by sky bridges. Each island is one of Hypixel SkyBlock's Hub areas, with the same purpose, mobs and resources, built as a floating island. The sidebar shows the area you're in.
 
@@ -37,7 +37,7 @@ The Ruins' wolves attack anyone who comes near. Night mobs leave at sunrise.
 
 ## Graveyard
 
-West of the village, over the bridge from its west edge. A dark island of podzol and moss: rows of graves inside an iron fence, dead trees and cobwebs, and the chapel with the **Emerald Altar**. In the chapel's west aisle, barred stairs lead down towards the Hub Crypts. **Pat**, in his house by the gate, sells Flint and Gravel. At the back, a launch pad waits for the Spider's Den (coming soon).
+West of the village, over the bridge from its west edge. A dark island of podzol and moss: rows of graves inside an iron fence, dead trees and cobwebs, and the chapel with the **Emerald Altar**. In the chapel's west aisle, barred stairs lead down towards the Hub Crypts. **Pat**, in his house by the gate, sells Flint and Gravel. At the back, a launch pad takes you to the [Spider's Den](the-islands#spider-s-den) (needs Combat I).
 
 Revenant Horror quests are best done here: the zombies fill the bar and the boss can rise among the graves.
 
@@ -45,15 +45,15 @@ Revenant Horror quests are best done here: the zombies fill the bar and the boss
 
 North of the village, reached from the Starwatch islet. A rocky hill with a timber-framed mine entrance. Inside, tunnels and three caverns of **Stone** and **Coal Ore** (both become bedrock for a few seconds when mined), with rails, posts and lanterns. A trail climbs to the summit outside.
 
-Stairs from the first cavern lead down to the **Hub Crypts**: deepslate corridors and burial rooms where **Crypt Ghouls** roam, and a gilded room where a **Golden Ghoul** waits. `/warp crypt` takes you there once you've been to the Coal Mine. Deep in the mine, a sealed gate leads to the **Gold Mine** (coming soon).
+Stairs from the first cavern lead down to the **Hub Crypts**: deepslate corridors and burial rooms where **Crypt Ghouls** roam, and a gilded room where a **Golden Ghoul** waits. `/warp crypt` takes you there once you've been to the Coal Mine. Deep in the mine, a gold-trimmed gate opens onto the [Gold Mine](the-islands#gold-mine): walk in (needs Mining I).
 
 ## Farm
 
-North-east, over the bridge from the Bazaar islet's north end. Five fields of **Wheat** that grow back (floating crystals hang above them), scarecrows, a windmill, a well and the Farmer's shack. **Arthur** stands by a Wheat Minion on display and talks about minions. A launch pad waits for The Barn (coming soon).
+North-east, over the bridge from the Bazaar islet's north end. Five fields of **Wheat** that grow back (floating crystals hang above them), scarecrows, a windmill, a well and the Farmer's shack. **Arthur** stands by a Wheat Minion on display and talks about minions. A launch pad takes you to [The Barn](the-islands#the-barn) (needs Farming I).
 
 ## Forest
 
-South-west, over the bridge from the village's south-west edge. A thick **Oak** forest with big old oaks; logs and leaves grow back. The **Lumber Jack** lives in the log cabin near the path. A launch pad waits for The Park (coming soon), and a second bridge leads west to the Ruins.
+South-west, over the bridge from the village's south-west edge. A thick **Oak** forest with big old oaks; logs and leaves grow back. The **Lumber Jack** lives in the log cabin near the path. A launch pad takes you to [The Park](the-islands#the-park) (needs Foraging I), and a second bridge leads west to the Ruins.
 
 ## Ruins
 
@@ -76,7 +76,8 @@ East of the village, over the bridge from the Bazaar islet's east end. Meadows a
 Bring them to **Tia the Fairy** at the Fairy Pond. She exchanges them five at a time: each exchange gives **10 SkyBlock XP** (see [SkyBlock Leveling](skyblock-leveling)).
 
 > [!NOTE]
-> On Hypixel some exchanges also unlock Backpack slots; that comes with backpacks. Other islands will bring their own souls.
+> On Hypixel some exchanges also unlock Backpack slots; that comes with backpacks. The other islands have their own souls
+> (see [The Islands](the-islands#fairy-souls)); Tia takes them all.
 
 ## Warps
 

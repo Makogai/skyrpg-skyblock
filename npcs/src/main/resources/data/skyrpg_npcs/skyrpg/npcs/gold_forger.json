@@ -1,0 +1,26 @@
+{
+  "name": "Gold Forger",
+  "role": "Merchant",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "pos": [
+    -27.5,
+    65.0,
+    58.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.use",
+  "greetings": [
+    "Gold, polished and ready.",
+    "Shines brighter than iron, doesn't it?"
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "gold_forger"
+    }
+  }
+}

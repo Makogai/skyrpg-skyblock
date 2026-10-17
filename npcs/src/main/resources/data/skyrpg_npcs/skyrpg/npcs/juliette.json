@@ -1,0 +1,20 @@
+{
+  "name": "Juliette",
+  "role": "Jungle Island",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    192.5,
+    65.0,
+    76.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:block.cocoa.place",
+  "greetings": [
+    "The old temple has secrets.",
+    "Have you seen the view from the top?"
+  ]
+}

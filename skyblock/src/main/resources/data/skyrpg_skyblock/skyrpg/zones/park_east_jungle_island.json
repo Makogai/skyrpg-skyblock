@@ -1,0 +1,24 @@
+{
+  "name": "Jungle Island",
+  "dimension": "skyrpg_skyblock:the_park",
+  "from": [
+    140,
+    40,
+    20
+  ],
+  "to": [
+    259,
+    125,
+    140
+  ],
+  "blocks": {
+    "minecraft:jungle_log": {
+      "becomes": "minecraft:air",
+      "regrow": 20
+    },
+    "minecraft:jungle_leaves": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    }
+  }
+}

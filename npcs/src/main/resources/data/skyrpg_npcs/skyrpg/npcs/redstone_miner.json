@@ -1,0 +1,20 @@
+{
+  "name": "Redstone Miner",
+  "role": "Deep Caverns",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    -13.5,
+    109.0,
+    -11.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.stone.break",
+  "greetings": [
+    "The pigmen don't like visitors.",
+    "Redstone hums if you listen."
+  ]
+}

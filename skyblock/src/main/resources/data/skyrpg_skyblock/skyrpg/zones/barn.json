@@ -1,0 +1,92 @@
+{
+  "name": "The Barn",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "from": [
+    -86,
+    33,
+    -87
+  ],
+  "to": [
+    92,
+    105,
+    93
+  ],
+  "blocks": {
+    "minecraft:wheat": {
+      "becomes": "minecraft:wheat",
+      "regrow": 8
+    },
+    "minecraft:carrots": {
+      "becomes": "minecraft:carrots",
+      "regrow": 8
+    },
+    "minecraft:potatoes": {
+      "becomes": "minecraft:potatoes",
+      "regrow": 8
+    },
+    "minecraft:pumpkin": {
+      "becomes": "minecraft:air",
+      "regrow": 10
+    },
+    "minecraft:melon": {
+      "becomes": "minecraft:air",
+      "regrow": 10
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:cow",
+      "name": "Cow",
+      "level": 1,
+      "health": 100,
+      "max": 6,
+      "every": 8,
+      "from": [
+        15,
+        65,
+        9
+      ],
+      "to": [
+        47,
+        67,
+        29
+      ]
+    },
+    {
+      "type": "minecraft:pig",
+      "name": "Pig",
+      "level": 1,
+      "health": 100,
+      "max": 6,
+      "every": 8,
+      "from": [
+        23,
+        65,
+        39
+      ],
+      "to": [
+        35,
+        67,
+        51
+      ]
+    },
+    {
+      "type": "minecraft:chicken",
+      "name": "Chicken",
+      "level": 1,
+      "health": 80,
+      "max": 6,
+      "every": 8,
+      "from": [
+        45,
+        65,
+        46
+      ],
+      "to": [
+        57,
+        67,
+        51
+      ]
+    }
+  ]
+}

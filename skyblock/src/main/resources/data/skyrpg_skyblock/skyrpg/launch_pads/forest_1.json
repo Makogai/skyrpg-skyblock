@@ -1,0 +1,19 @@
+{
+  "name": "The Park",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -213,
+    65,
+    117
+  ],
+  "to": [
+    -211,
+    66,
+    119
+  ],
+  "warp": "park",
+  "requires": {
+    "skill": "skyrpg_skills:foraging",
+    "level": 1
+  }
+}

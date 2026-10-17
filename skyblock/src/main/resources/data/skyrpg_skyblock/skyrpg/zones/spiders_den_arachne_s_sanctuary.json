@@ -1,0 +1,14 @@
+{
+  "name": "Arachne's Sanctuary",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    -130,
+    20,
+    -130
+  ],
+  "to": [
+    129,
+    62,
+    129
+  ]
+}

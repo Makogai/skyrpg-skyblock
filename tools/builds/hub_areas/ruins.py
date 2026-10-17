@@ -10,7 +10,7 @@ from kit import Area, hash01, noise
 
 G = 64
 CX, CZ = -312, 25
-area = Area("ruins", (-385, 20, -45), (144, 100, 145), version=1)
+area = Area("ruins", (-385, 20, -45), (144, 100, 145), version=2)
 
 grass = area.mix({"grass_block": 7, "coarse_dirt": 2, "moss_block": 2, "gravel": 1, "rooted_dirt": 1})
 cols = area.island(CX, CZ, 58, top=G, seed=23, surface=grass, hills=1.5, depth=36, wobble=0.15,

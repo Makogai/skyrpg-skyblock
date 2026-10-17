@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/park_east",
+  "origin": [
+    0,
+    20,
+    -150
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:the_park",
+  "island": "The Park"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "the Hub",
+  "dimension": "skyrpg_skyblock:the_park",
+  "from": [
+    -29,
+    65,
+    9
+  ],
+  "to": [
+    -27,
+    66,
+    11
+  ],
+  "destination": {
+    "dimension": "skyrpg_hub:hub",
+    "pos": [
+      -208.5,
+      65.0,
+      116.5
+    ],
+    "yaw": -60.0
+  }
+}

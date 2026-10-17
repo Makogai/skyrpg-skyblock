@@ -52,6 +52,18 @@ public final class Hub {
         return level.dimension() == LEVEL;
     }
 
+    /** The Hub's dimension type: every public island (the Hub, the Barn, the Park...) is built in one of these. */
+    public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_TYPE =
+            ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("hub"));
+
+    /**
+     * The Hub or another public island (Hypixel's Farming Islands, The Park, the Gold Mine...): protected like the Hub,
+     * nobody hungry, the void sends you back. Known on both sides, from the dimension's type.
+     */
+    public static boolean isPublic(Level level) {
+        return level.dimension() == LEVEL || level.dimensionTypeRegistration().is(PUBLIC_TYPE);
+    }
+
     public static ServerLevel level(MinecraftServer server) {
         return server.getLevel(LEVEL);
     }

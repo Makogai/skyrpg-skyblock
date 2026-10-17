@@ -1,0 +1,66 @@
+{
+  "name": "Deep Caverns Lift",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "stops": [
+    {
+      "name": "Gunpowder Mines",
+      "area": "Gunpowder Mines",
+      "pos": [
+        0.5,
+        169.0,
+        4.5
+      ],
+      "yaw": 0.0
+    },
+    {
+      "name": "Lapis Quarry",
+      "area": "Lapis Quarry",
+      "pos": [
+        0.5,
+        139.0,
+        4.5
+      ],
+      "yaw": 0.0
+    },
+    {
+      "name": "Pigmen's Den",
+      "area": "Pigmen's Den",
+      "pos": [
+        0.5,
+        109.0,
+        4.5
+      ],
+      "yaw": 0.0
+    },
+    {
+      "name": "Slimehill",
+      "area": "Slimehill",
+      "pos": [
+        0.5,
+        79.0,
+        4.5
+      ],
+      "yaw": 0.0
+    },
+    {
+      "name": "Diamond Reserve",
+      "area": "Diamond Reserve",
+      "pos": [
+        0.5,
+        49.0,
+        4.5
+      ],
+      "yaw": 0.0
+    },
+    {
+      "name": "Obsidian Sanctuary",
+      "area": "Obsidian Sanctuary",
+      "pos": [
+        0.5,
+        19.0,
+        4.5
+      ],
+      "yaw": 0.0
+    }
+  ]
+}

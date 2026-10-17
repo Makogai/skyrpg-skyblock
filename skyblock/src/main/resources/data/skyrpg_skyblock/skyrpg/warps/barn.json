@@ -1,0 +1,14 @@
+{
+  "name": "The Barn",
+  "description": "Wheat, carrots, potatoes, pumpkins and melons",
+  "icon": "minecraft:wheat",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    0.5,
+    65.0,
+    92.5
+  ],
+  "yaw": 180,
+  "area": "The Barn",
+  "order": 20
+}

@@ -10,7 +10,7 @@ from kit import Area, hash01
 
 G = 64
 CX, CZ = -168, 110
-area = Area("forest", (-240, 20, 36), (144, 100, 150), version=1)
+area = Area("forest", (-240, 20, 36), (144, 100, 150), version=2)
 grass = area.mix({"grass_block": 9, "podzol": 2, "moss_block": 1})
 cols = area.island(CX, CZ, 58, top=G, seed=23, surface=grass, hills=2.0, depth=42, wobble=0.15,
                    stone=area.mix({"andesite": 5, "tuff": 3, "cobblestone": 2, "dripstone_block": 1}))
@@ -153,9 +153,10 @@ for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
     area.set(LX + dx, G + 1, LZ + dz, "oak_fence")
     area.set(LX + dx, G + 2, LZ + dz, "lantern[hanging=false]")
 area.set(LX + 4, G + 1, LZ - 2, "oak_sign[rotation=4]",
-         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"The Park"', '"(coming soon)"', '""'],
+         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"The Park"', '"Foraging I"', '""'],
                                                  "color": "white", "has_glowing_text": 1},
           "back_text": {"messages": ['""', '""', '""', '""'], "color": "black", "has_glowing_text": 0}, "is_waxed": 1})
+area.pad("The Park", LX - 1, G + 1, LZ - 1, LX + 1, G + 2, LZ + 1, warp="park", skill="foraging", level=1)
 area.spots["notes"].append(f"The Park launch pad at ({LX}, {G + 1}, {LZ})")
 
 
@@ -212,7 +213,7 @@ def big_oak(x, y, z, height, rx, ry, seed):
                 d = (dx * dx + dz * dz) / (rx * rx) + (dy * dy) / (ry * ry)
                 lump = 0.25 * (hash01(x + dx, y + dy, z + dz, seed + 3) - 0.5)
                 if d + lump <= 1 and hash01(x + dx, y + dy, z + dz, seed) > 0.08:
-                    px, py, pz = int(round(cx + dx)), cy + dy, int(round(cz + dz))
+                    px, py, pz = x + dx, cy + dy, z + dz     # (round() of .5 goes to even and skipped every other column)
                     if area.get(px, py, pz) in AIR:
                         area.set(px, py, pz, "minecraft:oak_leaves[persistent=true]")
     return cy + ry

@@ -22,6 +22,7 @@ is never overwritten except where a bridge starts on its edge (see HubAreas).
 """
 import json
 import math
+import re
 import random
 import sys
 from pathlib import Path
@@ -40,8 +41,31 @@ DIM = "skyrpg_hub:hub"
 VILLAGE = ((-96, -96), (95, 95))   # x/z of the village build; areas only add bridge ends inside it
 
 
+# Ids that changed name in 26.x: the old one would place nothing.
+RENAMED = {"minecraft:chain": "minecraft:iron_chain", "minecraft:grass": "minecraft:short_grass"}
+GAME_JAR = Path.home() / ".gradle/caches/fabric-loom/26.3/minecraft-merged.jar"
+
+
 def mc(block):
-    return block if ":" in block.split("[")[0] else "minecraft:" + block
+    block = block if ":" in block.split("[")[0] else "minecraft:" + block
+    name, bracket, rest = block.partition("[")
+    return RENAMED[name] + bracket + rest if name in RENAMED else block
+
+
+def known_blocks():
+    """Every block id the game has (from its blockstates), cached in out/blocks.txt; None if the jar isn't there."""
+    cache = OUT / "blocks.txt"
+    if cache.exists():
+        return set(cache.read_text(encoding="utf-8").split())
+    if not GAME_JAR.exists():
+        return None
+    import zipfile
+    with zipfile.ZipFile(GAME_JAR) as jar:
+        ids = sorted("minecraft:" + n[len("assets/minecraft/blockstates/"):-5] for n in jar.namelist()
+                     if n.startswith("assets/minecraft/blockstates/") and n.endswith(".json"))
+    OUT.mkdir(parents=True, exist_ok=True)
+    cache.write_text("\n".join(ids) + "\n", encoding="utf-8")
+    return set(ids)
 
 
 def noise(x, z, seed=0, scale=1.0):
@@ -60,16 +84,21 @@ def hash01(x, y, z, seed=0):
 
 
 class Area:
-    def __init__(self, area_id, origin, size, version=1, shell=1):
+    def __init__(self, area_id, origin, size, version=1, shell=1, dimension=DIM, island=""):
         self.id = area_id
+        self.dimension = dimension   # another public island: its own dimension (the Hub's type), e.g. skyrpg_skyblock:the_park
+        self.island_name = island    # its name outside the zones ("The Farming Islands")
+        self.arrival_spot = None
         self.shell = shell     # how deep under any surface blocks are kept (hollow); 0 keeps everything
         self.origin = origin
         self.size = size
         self.version = version
         self.piece = dungeon_kit.Piece("areas/" + area_id, *size)
         self.top = {}          # (x, z) -> surface y (the block players stand on top of)
-        self.spots = {"npcs": {}, "fairy_souls": [], "warps": {}, "notes": []}
+        self.spots = {"dimension": dimension, "island": island or "Hub", "npcs": {}, "fairy_souls": [], "warps": {}, "pads": [],
+                      "notes": []}
         self.zone_json = None
+        self.zones = []           # every zone this area defines (the first is zone_json)
 
     # ---------------------------------------------------------------- blocks (world coordinates)
     def inside(self, x, y, z):
@@ -317,7 +346,23 @@ class Area:
 
     # ---------------------------------------------------------------- outputs
     def npc(self, name, x, y, z, yaw=0.0, note=""):
-        self.spots["npcs"][name] = {"pos": [x + 0.5, float(y), z + 0.5], "yaw": yaw, "note": note}
+        self.spots["npcs"][name] = {"pos": [x + 0.5, float(y), z + 0.5], "yaw": yaw, "note": note, "dimension": self.dimension}
+
+    def arrival(self, x, y, z, yaw=0.0):
+        """Where players land on this island (warps, launch pads) and come back to from the void."""
+        self.arrival_spot = {"pos": [x + 0.5, float(y), z + 0.5], "yaw": yaw}
+
+    def pad(self, name, x1, y1, z1, x2, y2, z2, warp=None, skill=None, level=0, destination=None):
+        """A launch pad: standing in this box sends you to `warp` (a Fast Travel id), if you have `skill` at `level`; or to
+        `destination` = (dimension, (x, y, z), yaw), a spot (the pads back to the Hub)."""
+        entry = {"name": name, "dimension": self.dimension, "from": [x1, y1, z1], "to": [x2, y2, z2]}
+        if warp:
+            entry["warp"] = warp
+        if destination:
+            entry["destination"] = {"dimension": destination[0], "pos": list(destination[1]), "yaw": destination[2]}
+        if skill:
+            entry["requires"] = {"skill": skill if ":" in skill else "skyrpg_skills:" + skill, "level": level}
+        self.spots["pads"].append(entry)
 
     def fairy_soul(self, x, y, z):
         self.spots["fairy_souls"].append([x, y, z])
@@ -326,20 +371,23 @@ class Area:
         self.spots["warps"][name] = {"pos": [x + 0.5, float(y), z + 0.5], "yaw": yaw}
 
     def zone(self, name, box=None, blocks=None, mobs=None, extra=None):
-        """The zone for the whole area (or `box` = ((x1, y1, z1), (x2, y2, z2)))."""
+        """A zone: the whole area's (or `box` = ((x1, y1, z1), (x2, y2, z2))). Call it once per named part (the Park's
+        Birch Park, Spruce Woods...); zones must not overlap."""
         if box is None:
             xs = [x for x, _ in self.top] or [self.origin[0]]
             zs = [z for _, z in self.top] or [self.origin[2]]
             ys = list(self.top.values()) or [self.origin[1]]
             box = ((min(xs), min(ys) - 30, min(zs)), (max(xs), max(ys) + 40, max(zs)))
-        zone = {"name": name, "dimension": DIM, "from": list(box[0]), "to": list(box[1])}
+        zone = {"name": name, "dimension": self.dimension, "from": list(box[0]), "to": list(box[1])}
         if blocks:
             zone["blocks"] = blocks
         if mobs:
             zone["mobs"] = mobs
         if extra:
             zone.update(extra)
-        self.zone_json = zone
+        if self.zone_json is None:
+            self.zone_json = zone
+        self.zones.append(zone)
         return zone
 
     def hollow(self):
@@ -349,7 +397,9 @@ class Area:
         if self.shell <= 0:
             return 0
         cells = self.piece.cells
-        breakable = set((self.zone_json or {}).get("blocks", {}).keys())
+        breakable = set()
+        for zone in self.zones:
+            breakable |= set(zone.get("blocks", {}).keys())
         full = {pos for pos, (entry, data) in cells.items() if data is None and _full(entry["id"])}
         # Distance from the nearest non-full cell (air outside the build counts), up to the shell.
         frontier = {pos for pos in full if any((pos[0] + dx, pos[1] + dy, pos[2] + dz) not in full for dx, dy, dz in _SIDES)}
@@ -363,6 +413,15 @@ class Area:
                         nxt.add(n)
             keep |= nxt
             frontier = nxt
+        # Sand and gravel fall into a hidden hole the moment the area is placed: keep what's under them, down to the
+        # first block that doesn't fall.
+        for pos in [pos for pos in keep if _falls(cells[pos][0]["id"])]:
+            below = (pos[0], pos[1] - 1, pos[2])
+            while below in full and below not in keep:
+                keep.add(below)
+                if not _falls(cells[below][0]["id"]):
+                    break
+                below = (below[0], below[1] - 1, below[2])
         dropped = 0
         for pos in list(full):
             if pos not in keep and cells[pos][0]["id"] not in breakable:
@@ -370,22 +429,58 @@ class Area:
                 dropped += 1
         return dropped
 
+    def prop_up(self):
+        """Puts a block under every sand, gravel or concrete powder block that has air below it (it would fall)."""
+        cells = self.piece.cells
+        added = 0
+        for (x, y, z), (entry, _) in list(cells.items()):
+            if not _falls(entry["id"]):
+                continue
+            below = cells.get((x, y - 1, z))
+            if below is None or below[0]["id"] in ("minecraft:air", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:fern",
+                                                   "minecraft:dead_bush", "minecraft:water", "minecraft:cave_air"):
+                if self.piece.inside(x, y - 1, z):
+                    self.piece.set(x, y - 1, z, _support(entry["id"]))
+                    added += 1
+        return added
+
     def save(self):
+        for entry, data in self.piece.cells.values():
+            if entry["id"] in RENAMED:
+                entry["id"] = RENAMED[entry["id"]]
+            # Sign lines are text components in 26.x: '"Gold Mine"' would show its quotes, so plain strings go in bare.
+            for side in ("front_text", "back_text"):
+                if isinstance(data, dict) and isinstance(data.get(side), dict) and "messages" in data[side]:
+                    data[side]["messages"] = [_plain(m) for m in data[side]["messages"]]
+        known = known_blocks()
+        if known:
+            unknown = sorted({entry["id"] for entry, _ in self.piece.cells.values()} - known - {"minecraft:air"})
+            if unknown:
+                raise SystemExit(f"{self.id}: unknown block ids (they would place nothing): {', '.join(unknown)}")
         dropped = self.hollow()
+        propped = self.prop_up()
         STRUCTURES.mkdir(parents=True, exist_ok=True)
         AREAS.mkdir(parents=True, exist_ok=True)
         ZONES.mkdir(parents=True, exist_ok=True)
         OUT.mkdir(parents=True, exist_ok=True)
         nbt.write_file(STRUCTURES / f"{self.id}.nbt", self.piece.to_nbt())
-        (AREAS / f"{self.id}.json").write_text(json.dumps({
-            "structure": f"skyrpg_hub:areas/{self.id}", "origin": list(self.origin), "version": self.version}, indent=2) + "\n",
-            encoding="utf-8")
-        if self.zone_json:
-            (ZONES / f"{self.id}.json").write_text(json.dumps(self.zone_json, indent=2) + "\n", encoding="utf-8")
+        area_json = {"structure": f"skyrpg_hub:areas/{self.id}", "origin": list(self.origin), "version": self.version}
+        if self.dimension != DIM:
+            area_json["dimension"] = self.dimension
+        if self.island_name:
+            area_json["island"] = self.island_name
+        if self.arrival_spot:
+            area_json["arrival"] = self.arrival_spot
+            self.spots["arrival"] = self.arrival_spot
+        (AREAS / f"{self.id}.json").write_text(json.dumps(area_json, indent=2) + "\n", encoding="utf-8")
+        for i, zone in enumerate(self.zones):
+            name = self.id if i == 0 else self.id + "_" + re.sub(r"[^a-z0-9]+", "_", zone["name"].lower()).strip("_")
+            (ZONES / f"{name}.json").write_text(json.dumps(zone, indent=2) + "\n", encoding="utf-8")
         (OUT / f"{self.id}_spots.json").write_text(json.dumps(self.spots, indent=2) + "\n", encoding="utf-8")
         self.preview()
         print(f"{self.id}: {len(self.piece.cells)} blocks ({dropped} hidden ones left out), box {self.origin} + {self.size}, "
-              f"{len(self.spots['fairy_souls'])} fairy souls, {len(self.spots['npcs'])} NPC spots")
+              f"{len(self.spots['fairy_souls'])} fairy souls, {len(self.spots['npcs'])} NPC spots"
+              + (f", {propped} supports under sand/gravel" if propped else ""))
 
     def preview(self):
         """Top-down and side (from the south) PNGs, to check a build without the game."""
@@ -429,6 +524,31 @@ _NOT_FULL = ("air", "leaves", "glass", "pane", "slab", "stairs", "fence", "wall"
              "scaffolding", "anvil", "bell", "grindstone", "lectern", "composter", "cauldron", "hopper", "azalea", "moss_carpet",
              "snow", "pickle", "egg", "amethyst_cluster", "conduit", "banner", "frame", "honey", "slime", "ice", "shulker",
              "brewing", "enchanting", "table", "beacon", "spawner", "leaf", "hay", "light", "pumpkin", "melon", "grass")
+
+
+def _plain(line):
+    """A sign line as plain text: '"Gold Mine"' (the old JSON form) becomes 'Gold Mine'."""
+    if not (isinstance(line, str) and len(line) >= 2 and line[0] == line[-1] == '"'):
+        return line
+    try:
+        return json.loads(line)
+    except ValueError:
+        return line[1:-1].replace("\\'", "'")
+
+
+def _falls(block_id):
+    """Sand, gravel, concrete powder and anvils fall when there's nothing under them."""
+    name = block_id.split(":")[1].split("[")[0]
+    return name in ("sand", "red_sand", "gravel", "suspicious_sand", "suspicious_gravel", "dragon_egg") or \
+        name.endswith("concrete_powder") or name.endswith("anvil")
+
+
+def _support(block_id):
+    name = block_id.split(":")[1].split("[")[0]
+    if name.endswith("concrete_powder"):
+        return "minecraft:" + name[:-len("_powder")]
+    return {"sand": "minecraft:sandstone", "suspicious_sand": "minecraft:sandstone",
+            "red_sand": "minecraft:red_sandstone"}.get(name, "minecraft:tuff")
 
 
 def _full(block_id):

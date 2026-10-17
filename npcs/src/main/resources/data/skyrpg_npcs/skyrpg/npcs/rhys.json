@@ -1,0 +1,20 @@
+{
+  "name": "Rhys",
+  "role": "Deep Caverns",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    0.5,
+    19.0,
+    -15.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.beacon.ambient",
+  "greetings": [
+    "You made it all the way down.",
+    "The obsidian here is older than the islands."
+  ]
+}

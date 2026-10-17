@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/gold_mine",
+  "origin": [
+    -120,
+    10,
+    -120
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "island": "Gold Mine",
+  "arrival": {
+    "pos": [
+      0.5,
+      65.0,
+      95.5
+    ],
+    "yaw": 180
+  }
+}

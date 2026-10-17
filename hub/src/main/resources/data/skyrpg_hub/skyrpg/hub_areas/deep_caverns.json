@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/deep_caverns",
+  "origin": [
+    -110,
+    10,
+    -110
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "island": "Deep Caverns",
+  "arrival": {
+    "pos": [
+      0.5,
+      186.0,
+      62.5
+    ],
+    "yaw": 180.0
+  }
+}

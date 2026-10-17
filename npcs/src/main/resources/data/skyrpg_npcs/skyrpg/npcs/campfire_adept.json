@@ -1,0 +1,20 @@
+{
+  "name": "Campfire Adept",
+  "role": "Campfire Cult",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    72.5,
+    65.0,
+    57.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:block.fire.ambient",
+  "greetings": [
+    "We keep the flame. The flame keeps us.",
+    "Sit. Warm up."
+  ]
+}

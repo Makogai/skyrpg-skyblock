@@ -1,0 +1,32 @@
+{
+  "name": "Gold Mine",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "from": [
+    -118,
+    12,
+    -118
+  ],
+  "to": [
+    118,
+    100,
+    118
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 4
+    },
+    "minecraft:coal_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    },
+    "minecraft:iron_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 7
+    },
+    "minecraft:gold_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 8
+    }
+  }
+}

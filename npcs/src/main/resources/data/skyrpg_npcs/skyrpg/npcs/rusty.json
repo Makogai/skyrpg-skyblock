@@ -1,0 +1,20 @@
+{
+  "name": "Rusty",
+  "role": "Gold Mine",
+  "color": "#AA5500",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "pos": [
+    -8.5,
+    65.0,
+    74.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "I clean up after the miners. Somebody has to.",
+    "Find anything shiny down there?"
+  ]
+}

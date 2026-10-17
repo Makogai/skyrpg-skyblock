@@ -1,0 +1,26 @@
+{
+  "name": "Jake",
+  "role": "Merchant",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    175.5,
+    65.0,
+    -8.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Hot out there. Buy something cool.",
+    "Everything a desert farmer needs."
+  ],
+  "action": {
+    "type": "skyblock_shop",
+    "params": {
+      "shop": "jake"
+    }
+  }
+}

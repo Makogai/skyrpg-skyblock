@@ -1,0 +1,20 @@
+{
+  "name": "Lapis Miner",
+  "role": "Deep Caverns",
+  "color": "#5555FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    12.5,
+    139.0,
+    14.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.stone.break",
+  "greetings": [
+    "Blue as far as the eye can see.",
+    "The zombies down here glow blue."
+  ]
+}

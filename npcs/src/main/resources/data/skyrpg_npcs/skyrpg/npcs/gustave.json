@@ -1,0 +1,20 @@
+{
+  "name": "Gustave",
+  "role": "Viking",
+  "color": "#AA5500",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    -172.5,
+    65.0,
+    -37.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:item.axe.strip",
+  "greetings": [
+    "Raiders need good axes.",
+    "Sit by the fire, traveller."
+  ]
+}

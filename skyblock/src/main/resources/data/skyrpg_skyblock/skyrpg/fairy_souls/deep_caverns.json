@@ -1,0 +1,26 @@
+{
+ "island": "Deep Caverns",
+ "dimension": "skyrpg_skyblock:deep_caverns",
+ "souls": [
+  [
+   -21,
+   139,
+   29
+  ],
+  [
+   36,
+   109,
+   -24
+  ],
+  [
+   36,
+   49,
+   18
+  ],
+  [
+   -37,
+   19,
+   -14
+  ]
+ ]
+}

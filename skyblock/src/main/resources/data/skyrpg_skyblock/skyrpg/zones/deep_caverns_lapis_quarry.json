@@ -1,0 +1,48 @@
+{
+  "name": "Lapis Quarry",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    -100,
+    125,
+    -100
+  ],
+  "to": [
+    100,
+    154,
+    100
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 5
+    },
+    "minecraft:lapis_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 6
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Lapis Zombie",
+      "level": 7,
+      "health": 200,
+      "damage": 50,
+      "xp": 12,
+      "coins": 5,
+      "max": 8,
+      "every": 5,
+      "indoors": true,
+      "from": [
+        -30,
+        139,
+        -30
+      ],
+      "to": [
+        30,
+        143,
+        30
+      ]
+    }
+  ]
+}

@@ -47,7 +47,11 @@ public final class SkyRpgSkyblock implements ModInitializer {
         Features.off(Features.SLAYER_SPAWNERS);
         // SkyBlock has no vanilla advancements to announce.
         net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents.SERVER_STARTED.register(server ->
-                server.getGameRules().set(net.minecraft.world.level.gamerules.GameRules.SHOW_ADVANCEMENT_MESSAGES, false, server));
+                {
+                    server.getGameRules().set(net.minecraft.world.level.gamerules.GameRules.SHOW_ADVANCEMENT_MESSAGES, false, server);
+                    // Hypixel's mobs never break blocks (the Deep Caverns' Sneaky Creepers only hurt players).
+                    server.getGameRules().set(net.minecraft.world.level.gamerules.GameRules.MOB_GRIEFING, false, server);
+                });
         SkyblockItemUse.init();
         IslandRules.init();
         Deaths.init();
@@ -57,6 +61,8 @@ public final class SkyRpgSkyblock implements ModInitializer {
         FastTravel.init();
         Zones.init();
         com.skyrpg.skyblock.fairy.FairySouls.init();
+        com.skyrpg.skyblock.travel.LaunchPads.init();
+        com.skyrpg.skyblock.travel.Lifts.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

@@ -1,0 +1,23 @@
+{
+  "name": "the Hub",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "from": [
+    8,
+    65,
+    93
+  ],
+  "to": [
+    10,
+    66,
+    95
+  ],
+  "destination": {
+    "dimension": "skyrpg_hub:hub",
+    "pos": [
+      -21.5,
+      72.0,
+      -183.5
+    ],
+    "yaw": -90.0
+  }
+}

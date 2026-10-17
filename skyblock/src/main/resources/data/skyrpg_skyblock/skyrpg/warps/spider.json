@@ -1,0 +1,14 @@
+{
+  "name": "Spider's Den",
+  "description": "The Spider Mound and its spiders",
+  "icon": "minecraft:spider_eye",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "pos": [
+    0.5,
+    65.0,
+    100.5
+  ],
+  "yaw": 180.0,
+  "area": "Spider's Den",
+  "order": 25
+}

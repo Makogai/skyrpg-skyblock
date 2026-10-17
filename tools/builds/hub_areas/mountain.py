@@ -16,7 +16,7 @@ MX, MZ, MR = 0, 186, 48    # mountain centre / foot radius
 PEAK = 96                  # summit at G + PEAK = 160
 D0 = 0.21                  # flat summit disc radius (fraction of MR) ~10 blocks
 TOP = G + PEAK
-area = Area("mountain", (-90, 20, 86), (180, 170, 200), version=1)
+area = Area("mountain", (-90, 20, 86), (180, 170, 200), version=2)
 
 rock = area.mix({"andesite": 5, "tuff": 2, "granite": 2, "calcite": 1, "cobblestone": 1, "diorite": 1})
 grassy = area.mix({"grass_block": 12, "coarse_dirt": 1, "podzol": 1})

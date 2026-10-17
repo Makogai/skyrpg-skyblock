@@ -166,6 +166,16 @@ public final class FastTravel {
         return warp.area().isEmpty() || player.getAttachedOrElse(VISITED, List.of()).contains(warp.id());
     }
 
+    /** A launch pad sent you there: the warp opens as if you'd walked into its area. */
+    public static void unlockOnArrival(ServerPlayer player, Warp warp) {
+        if (!warp.area().isEmpty() && unlock(player, warp)) {
+            player.sendSystemMessage(Component.literal("Fast Travel unlocked: ").withStyle(ChatFormatting.GREEN)
+                    .append(Component.literal(warp.name()).withStyle(ChatFormatting.AQUA))
+                    .append(Component.literal(" (/warp " + warp.id() + ")").withStyle(ChatFormatting.DARK_GRAY)));
+            send(player);
+        }
+    }
+
     private static boolean unlock(ServerPlayer player, Warp warp) {
         List<String> visited = player.getAttachedOrElse(VISITED, List.of());
         if (visited.contains(warp.id())) {

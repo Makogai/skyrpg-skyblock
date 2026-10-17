@@ -1,0 +1,20 @@
+{
+  "name": "Lazy Miner",
+  "role": "Gold Mine",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:gold_mine",
+  "pos": [
+    30.5,
+    65.0,
+    40.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.player.burp",
+  "greetings": [
+    "Five more minutes.",
+    "The gold isn't going anywhere."
+  ]
+}

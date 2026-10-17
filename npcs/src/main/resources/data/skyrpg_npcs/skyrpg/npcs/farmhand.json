@@ -1,0 +1,20 @@
+{
+  "name": "Farmhand",
+  "role": "The Barn",
+  "color": "#F2C14E",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    -43.5,
+    65.0,
+    -7.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:item.crop.plant",
+  "greetings": [
+    "Pumpkins on one side, melons on the other. Don't mix them up.",
+    "The cows wander, but they never leave."
+  ]
+}

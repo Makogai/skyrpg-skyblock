@@ -1,0 +1,20 @@
+{
+  "name": "Charlie",
+  "role": "The Park",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    -47.5,
+    65.0,
+    -1.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.wood.place",
+  "greetings": [
+    "Birch is light and clean. Good wood.",
+    "Welcome to the Park. Mind the squirrels."
+  ]
+}

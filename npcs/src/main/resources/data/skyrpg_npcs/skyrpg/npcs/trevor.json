@@ -1,0 +1,20 @@
+{
+  "name": "Trevor",
+  "role": "Trapper",
+  "color": "#C98A4B",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "pos": [
+    200.5,
+    65.0,
+    -54.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.rabbit.ambient",
+  "greetings": [
+    "Tracks everywhere out here. Something's always running.",
+    "A good trapper waits. Then waits some more."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Deep Caverns",
+  "description": "Six layers down: lapis, redstone, emerald, diamond, obsidian",
+  "icon": "minecraft:diamond",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    0.5,
+    186.0,
+    62.5
+  ],
+  "yaw": 180.0,
+  "area": "Deep Caverns",
+  "order": 24
+}

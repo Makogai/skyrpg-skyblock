@@ -1,0 +1,48 @@
+{
+  "name": "Slimehill",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "from": [
+    -100,
+    65,
+    -100
+  ],
+  "to": [
+    100,
+    94,
+    100
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 5
+    },
+    "minecraft:emerald_ore": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 7
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:slime",
+      "name": "Emerald Slime",
+      "level": 15,
+      "health": 150,
+      "damage": 100,
+      "xp": 12,
+      "coins": 5,
+      "max": 6,
+      "every": 6,
+      "indoors": true,
+      "from": [
+        -30,
+        79,
+        -30
+      ],
+      "to": [
+        30,
+        83,
+        30
+      ]
+    }
+  ]
+}

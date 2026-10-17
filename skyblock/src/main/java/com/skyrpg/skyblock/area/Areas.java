@@ -77,6 +77,10 @@ public final class Areas {
         if (Hub.isHub(level)) {
             return "Hub";
         }
+        if (Hub.isPublic(level)) {
+            String island = com.skyrpg.hub.HubAreas.islandName(level.dimension());
+            return island != null ? island : "Hub";
+        }
         if (level.dimension() == Level.NETHER) {
             return "The Nether";
         }

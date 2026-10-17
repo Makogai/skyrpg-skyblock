@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/barn",
+  "origin": [
+    -120,
+    20,
+    -120
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "island": "The Farming Islands",
+  "arrival": {
+    "pos": [
+      0.5,
+      65.0,
+      92.5
+    ],
+    "yaw": 180
+  }
+}

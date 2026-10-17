@@ -1,0 +1,14 @@
+{
+  "name": "The Park",
+  "description": "The Foraging island: birch, spruce, dark oak, acacia and jungle",
+  "icon": "minecraft:birch_sapling",
+  "dimension": "skyrpg_skyblock:the_park",
+  "pos": [
+    -21.5,
+    65.0,
+    0.5
+  ],
+  "yaw": 90.0,
+  "area": "Birch Park",
+  "order": 22
+}

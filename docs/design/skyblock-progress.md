@@ -105,7 +105,23 @@ phase so the next session can pick up where this one stopped.
       Gerald, Shifty, Lucius, Sirius; shops for Pat, Scoop, Shifty, Lucius, the Lonely Philosopher. Warps crypt, castle,
       da. Not yet: Shania (a cow NPC), the Hub Crypts' link to the Graveyard, the Colosseum, the Wizard Tower, the Hub's
       other Hypixel spots (Museum, Fashion Shop...).
-- [ ] Islands: Farming Islands (the Barn, Mushroom Desert), The Park, Gold Mine, Deep Caverns, Spider's Den.
+- [x] **The public islands** (design call: each in its own void dimension of the Hub's type, `skyrpg_skyblock:
+      farming_islands|the_park|gold_mine|deep_caverns|spiders_den`; `Hub.isPublic` gives them the Hub's protection,
+      feeding and a void rescue to the island's arrival): The Barn + Mushroom Desert (one dimension, a bridge with a
+      Farming V gate pad), The Park (Birch Park, Spruce Woods, Howling Cave, Dark Thicket, Savanna Woodland, Jungle
+      Island), Gold Mine, Deep Caverns (six layers), Spider's Den (Spider Mound, Arachne's Sanctuary). Built by helpers
+      with the area kit (now with `dimension`, `island`, `arrival`, `pad`, several zones per area, and a check of every
+      block id against the game's list: `minecraft:chain` is `iron_chain` in 26.x and placed nothing in four Hub areas).
+      `LaunchPads` (`skyrpg/launch_pads/*.json`: box, warp or exact destination, skill requirement, push back with what's
+      missing): the Hub's Farm/Forest/Graveyard pads and the Coal Mine's gold gate (Farming/Foraging/Combat/Mining I),
+      pads back to the Hub, Barn to Desert (Farming V), Gold Mine to Deep Caverns (Mining V). Warps barn, desert, park,
+      gold, deep, spider (unlock on the first visit or a pad landing). Hypixel's mobs and stats per zone (Howling Cave
+      spirits, the six layers' mobs, the Den's spiders and the Mound's level 42s); neutral mobs in zones are hostile.
+      `npcs.py` makes 38 more NPCs (shops for the Windmill Operator, Jake, Old Shaman Nyko, Master Tactician Funk, the
+      Iron and Gold Forgers, Walter, Shaggy), per-island Fairy Souls (28 more, 52 in all) and the pads. Lift Operators
+      run Hypixel's lift (`Lifts`, `skyrpg/lifts/*.json`, `LiftScreen`): ride to any layer you've walked into. Not yet:
+      Arachne and her altar, Trevor's trapper quests, the Park's Rain/Melody's harp, Rhys's and the Lazy Miner's quests,
+      the Barn's Shania, the Dwarven Mines from the Deep Caverns, squid in Birch Park's lake.
 - [x] **NPC shops**: `tools/skyblock/import_shops.py` writes NEU's 88 shops (684 offers; offers with enchanted books,
       Bits, Gems, North Stars... left out) to `skyrpg/skyblock_shops`; `SkyShops` + `ShopMenu` + `ShopScreen`: buy
       (shift = a stack), sell any stack with an NPC price by clicking it, buyback of the last 9 sales (until logout).

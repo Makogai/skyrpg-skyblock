@@ -1,0 +1,19 @@
+{
+  "name": "the Mushroom Desert",
+  "dimension": "skyrpg_skyblock:farming_islands",
+  "from": [
+    80,
+    65,
+    -2
+  ],
+  "to": [
+    81,
+    66,
+    2
+  ],
+  "warp": "desert",
+  "requires": {
+    "skill": "skyrpg_skills:farming",
+    "level": 5
+  }
+}

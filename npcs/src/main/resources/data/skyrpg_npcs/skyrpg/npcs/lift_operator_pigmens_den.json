@@ -1,0 +1,26 @@
+{
+  "name": "Lift Operator (Pigmen's Den)",
+  "role": "Deep Caverns",
+  "color": "#FFFF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:deep_caverns",
+  "pos": [
+    0.5,
+    109.0,
+    0.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.chain.step",
+  "greetings": [
+    "Going down? Hold on to the rail.",
+    "The lift stops at every layer you've been to."
+  ],
+  "action": {
+    "type": "lift",
+    "params": {
+      "lift": "deep_caverns"
+    }
+  }
+}
