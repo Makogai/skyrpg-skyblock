@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:sequence",
+  "sequence": [
+    "minecraft:bedrock_roof",
+    "minecraft:bedrock_floor",
+    {
+      "type": "minecraft:condition",
+      "if_true": "minecraft:on_floor",
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:snow_block"
+      }
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": "minecraft:on_ceiling",
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:packed_ice"
+      }
+    }
+  ]
+}

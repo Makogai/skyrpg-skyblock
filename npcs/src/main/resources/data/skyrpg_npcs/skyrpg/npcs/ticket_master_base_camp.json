@@ -1,0 +1,23 @@
+{
+  "name": "Ticket Master",
+  "role": "Minecart Station",
+  "color": "#55FFFF",
+  "hint": "Travel",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    13.5,
+    122.0,
+    -113.5
+  ],
+  "yaw": 65.2,
+  "sound": "minecraft:entity.minecart.riding",
+  "greetings": [
+    "Back up to the Dwarven Mines?",
+    "Mind the Cold out there."
+  ],
+  "action": {
+    "type": "leave_base_camp"
+  }
+}

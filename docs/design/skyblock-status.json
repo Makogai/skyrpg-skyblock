@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-17",
-  "latest": "Quiver and SkyBlock bow damage",
+  "latest": "Glacite Tunnels: the Base Camp, Cold and Glacite",
   "phase": {
     "name": "Phase 2: Mid game",
-    "done": 70
+    "done": 76
   },
   "categories": [
     {
@@ -213,7 +213,7 @@
           "name": "Dwarven Mines & Hollows",
           "icon": "item/iron_pickaxe",
           "weight": 10,
-          "done": 65
+          "done": 72
         },
         {
           "name": "The End",

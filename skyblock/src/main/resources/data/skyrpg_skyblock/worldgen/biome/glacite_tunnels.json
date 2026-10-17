@@ -1,0 +1,69 @@
+{
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 6000,
+        "replace_current_music": true,
+        "sound": "minecraft:music.overworld.frozen_peaks"
+      }
+    },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {},
+        "spawns_by_category": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [],
+          "misc": [],
+          "monster": [],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "modifier": "overlay"
+    }
+  },
+  "carvers": [],
+  "downfall": 0.5,
+  "effects": {
+    "water_color": "#3d57d6",
+    "foliage_color": "#60a17b",
+    "grass_color": "#80b497"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "skyrpg_skyblock:glacite/glacite",
+      "skyrpg_skyblock:glacite/tungsten",
+      "skyrpg_skyblock:glacite/tungsten_clay",
+      "skyrpg_skyblock:glacite/umber",
+      "skyrpg_skyblock:glacite/umber_brown",
+      "skyrpg_skyblock:glacite/umber_red",
+      "skyrpg_skyblock:glacite/mithril_gray",
+      "skyrpg_skyblock:glacite/mithril_prismarine",
+      "skyrpg_skyblock:glacite/mithril_blue",
+      "skyrpg_skyblock:glacite/titanium",
+      "skyrpg_skyblock:glacite/aquamarine",
+      "skyrpg_skyblock:glacite/onyx",
+      "skyrpg_skyblock:glacite/citrine",
+      "skyrpg_skyblock:glacite/peridot",
+      "skyrpg_skyblock:glacite/ice",
+      "skyrpg_skyblock:glacite/blue_ice"
+    ],
+    [
+      "minecraft:glow_lichen"
+    ],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "temperature": -0.5
+}

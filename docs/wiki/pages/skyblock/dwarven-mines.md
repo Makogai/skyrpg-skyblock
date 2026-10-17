@@ -90,4 +90,4 @@ The **Forger** in the Forge (`/warp forge`) forges Hypixel's **123 Forge recipes
 Some recipes need a higher HotM tier, shown on the recipe.
 
 > [!NOTE]
-> Not yet: the King's rotation (one King for now), mining events (Goblin Raids, Fallen Stars, 2x Powder, Raffles), Golden and Diamond Goblins, Powder Ghasts, the Puzzler's and Fetchur's daily tasks, Ticket Masters' minecarts, the Royal Pigeon, the Crystal Hollows and the Glacite Tunnels.
+> Not yet: the King's rotation (one King for now), mining events (Goblin Raids, Fallen Stars, 2x Powder, Raffles), Golden and Diamond Goblins, Powder Ghasts, the Puzzler's and Fetchur's daily tasks, the Royal Pigeon. The Crystal Hollows and the [Glacite Tunnels](glacite-tunnels) have pages of their own.

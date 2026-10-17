@@ -1,0 +1,20 @@
+{
+  "name": "Cold Enjoyer",
+  "role": "Dwarven Base Camp",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    -2.5,
+    121.0,
+    -105.5
+  ],
+  "yaw": 236.3,
+  "sound": "minecraft:block.powder_snow.step",
+  "greetings": [
+    "The Cold builds the longer you're out there. Cold Resistance slows it.",
+    "At 100 Cold you freeze. Come back to the campfire to warm up."
+  ]
+}

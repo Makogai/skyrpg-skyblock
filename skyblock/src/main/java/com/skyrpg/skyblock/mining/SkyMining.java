@@ -48,6 +48,8 @@ public final class SkyMining {
             SkyRpgSkyblock.id("dwarven_mines"));
     public static final ResourceKey<Level> CRYSTAL_HOLLOWS = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
             SkyRpgSkyblock.id("crystal_hollows"));
+    public static final ResourceKey<Level> GLACITE_TUNNELS = ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION,
+            SkyRpgSkyblock.id("glacite_tunnels"));
     private static final Identifier PRIVATE_ISLANDS = SkyRpgSkyblock.id("islands");
 
     /** A mining block: strength, Breaking Power, whether it's an ore (instamined only at 60 × strength). */
@@ -66,6 +68,9 @@ public final class SkyMining {
     /** The Crystal Hollows' own numbers (Hard Stone is stone there; gemstones). */
     private static final Map<Block, Info> HOLLOWS_BLOCKS = new HashMap<>();
     private static final Map<Block, Metal> HOLLOWS_METALS = new HashMap<>();
+    /** The Glacite Tunnels' own (Glacite, Tungsten, Umber and their gemstones, all Breaking Power 9; Hard Stone). */
+    private static final Map<Block, Info> TUNNELS_BLOCKS = new HashMap<>();
+    private static final Map<Block, Metal> TUNNELS_METALS = new HashMap<>();
 
     static {
         put(15, 0, false, Blocks.STONE);
@@ -97,6 +102,35 @@ public final class SkyMining {
         gem(DyeColor.LIGHT_BLUE, "Sapphire", 3000, 7);
         gem(DyeColor.YELLOW, "Topaz", 3800, 8);
         gem(DyeColor.MAGENTA, "Jasper", 4800, 9);
+        TUNNELS_BLOCKS.put(Blocks.STONE, new Info(50, 4, false));
+        TUNNELS_METALS.put(Blocks.STONE, new Metal("Hard Stone", "HARD_STONE", 1, 0, 1));
+        tunnel(6000, new Metal("Glacite", "GLACITE", 1, 2, 120, Hotm.GLACITE), Blocks.PACKED_ICE);
+        tunnel(5600, new Metal("Tungsten", "TUNGSTEN", 1, 1, 100, Hotm.GLACITE), Blocks.COBBLESTONE, Blocks.COBBLESTONE_SLAB,
+                Blocks.COBBLESTONE_STAIRS);
+        tunnel(5600, new Metal("Tungsten", "TUNGSTEN", 3, 1, 100, Hotm.GLACITE), Blocks.CLAY);
+        tunnel(5600, new Metal("Umber", "UMBER", 1, 1, 100, Hotm.GLACITE), Blocks.TERRACOTTA);
+        tunnel(5600, new Metal("Umber", "UMBER", 2, 1, 100, Hotm.GLACITE), Blocks.DYED_TERRACOTTA.pick(DyeColor.BROWN));
+        tunnel(5600, new Metal("Umber", "UMBER", 3, 1, 100, Hotm.GLACITE), Blocks.RED_SANDSTONE);
+        tunnelGem(DyeColor.BLUE, "Aquamarine");
+        tunnelGem(DyeColor.BLACK, "Onyx");
+        tunnelGem(DyeColor.BROWN, "Citrine");
+        tunnelGem(DyeColor.GREEN, "Peridot");
+    }
+
+    private static void tunnel(int strength, Metal metal, Block... blocks) {
+        for (Block block : blocks) {
+            TUNNELS_BLOCKS.put(block, new Info(strength, 9, true));
+            TUNNELS_METALS.put(block, metal);
+        }
+    }
+
+    /** A Tunnels gemstone: Breaking Power 9, 4 Rough gems a block (Hypixel's 3 to 5) and 2 Gemstone Powder. */
+    private static void tunnelGem(DyeColor color, String name) {
+        Metal metal = new Metal(name, "ROUGH_" + name.toUpperCase(java.util.Locale.ROOT) + "_GEM", 4, 2, 20, Hotm.GEMSTONE);
+        for (Block block : new Block[] {Blocks.STAINED_GLASS.pick(color), Blocks.STAINED_GLASS_PANE.pick(color)}) {
+            TUNNELS_BLOCKS.put(block, new Info(5200, 9, true));
+            TUNNELS_METALS.put(block, metal);
+        }
     }
 
     /** A gemstone: its stained glass and pane, Hypixel's strength and Breaking Power, a Rough gem and 2 Gemstone Powder. */
@@ -192,14 +226,16 @@ public final class SkyMining {
         if (!miningIsland(level.dimension())) {
             return null;
         }
-        Info hollows = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_BLOCKS.get(state.getBlock()) : null;
-        return hollows != null ? hollows : BLOCKS.get(state.getBlock());
+        Info local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_BLOCKS.get(state.getBlock())
+                : level.dimension().equals(GLACITE_TUNNELS) ? TUNNELS_BLOCKS.get(state.getBlock()) : null;
+        return local != null ? local : BLOCKS.get(state.getBlock());
     }
 
     /** What mining a block by hand gives here (Mithril, Titanium, Hard Stone, gemstones), or null for normal drops. */
     static Metal metal(Level level, BlockState state) {
-        Metal hollows = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock()) : null;
-        return hollows != null ? hollows : METALS.get(state.getBlock());
+        Metal local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock())
+                : level.dimension().equals(GLACITE_TUNNELS) ? TUNNELS_METALS.get(state.getBlock()) : null;
+        return local != null ? local : METALS.get(state.getBlock());
     }
 
     private static float progress(Player player, net.minecraft.world.level.BlockGetter getter, BlockPos pos, BlockState state, float vanilla) {
@@ -253,9 +289,13 @@ public final class SkyMining {
         ItemDefinition def = ItemRegistry.skyblock(metal.item());
         if (def != null && count > 0) {
             ItemGains.give(player, SkyItems.create(def, count), ItemGains.Source.MINING);
+            if (level.dimension().equals(GLACITE_TUNNELS)) {
+                Commissions.tunnelsCollected(player, metal.item(), count);
+            }
         }
         SkillLevels.giveXp(player, SkillLevels.MINING, metal.xp());
-        boolean powderHere = level.dimension().equals(DWARVEN_MINES) || level.dimension().equals(CRYSTAL_HOLLOWS);
+        boolean powderHere = level.dimension().equals(DWARVEN_MINES) || level.dimension().equals(CRYSTAL_HOLLOWS)
+                || level.dimension().equals(GLACITE_TUNNELS);
         if (metal.powder() > 0 && powderHere) {
             Hotm.State hotm = Hotm.state(player);
             boolean gemstone = metal.powderType().equals(Hotm.GEMSTONE);

@@ -61,6 +61,9 @@ public final class Hub {
     /** The same underground (Hypixel's Dwarven Mines): a dark cave sky and cave music. */
     public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_MINES_TYPE =
             ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_mines"));
+    /** The Glacite Tunnels: like the mines, lit a cold blue. */
+    public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> PUBLIC_GLACITE_TYPE =
+            ResourceKey.create(net.minecraft.core.registries.Registries.DIMENSION_TYPE, SkyRpgHub.id("public_glacite"));
 
     /**
      * The Hub or another public island (Hypixel's Farming Islands, The Park, the Gold Mine...): protected like the Hub,
@@ -68,7 +71,7 @@ public final class Hub {
      */
     public static boolean isPublic(Level level) {
         return level.dimension() == LEVEL || level.dimensionTypeRegistration().is(PUBLIC_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_END_TYPE)
-                || level.dimensionTypeRegistration().is(PUBLIC_MINES_TYPE);
+                || level.dimensionTypeRegistration().is(PUBLIC_MINES_TYPE) || level.dimensionTypeRegistration().is(PUBLIC_GLACITE_TYPE);
     }
 
     public static ServerLevel level(MinecraftServer server) {

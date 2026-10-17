@@ -1,0 +1,14 @@
+{
+  "name": "Dwarven Base Camp",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "from": [
+    -24,
+    116,
+    -122
+  ],
+  "to": [
+    24,
+    150,
+    -88
+  ]
+}

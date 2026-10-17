@@ -79,8 +79,14 @@ public final class SidebarWidget implements HudWidget {
             lines.add(Component.literal("⏣ ").withStyle(ChatFormatting.GRAY)
                     .append(Component.literal(where).withStyle(where.equals("Your Island") ? ChatFormatting.GREEN : ChatFormatting.AQUA)));
         }
-        lines.add(Component.empty());
         var player = Minecraft.getInstance().player;
+        // Cold in the Glacite Tunnels, as Hypixel's scoreboard shows it.
+        Integer cold = player == null ? null : player.getAttached(com.skyrpg.skyblock.glacite.GlaciteTunnels.COLD);
+        if (cold != null && cold > 0) {
+            lines.add(Component.literal("Cold: ").withStyle(ChatFormatting.WHITE)
+                    .append(Component.literal("-" + cold + "❄").withStyle(ChatFormatting.AQUA)));
+        }
+        lines.add(Component.empty());
         long purse = player == null ? 0 : Purse.get(player);
         lines.add(Component.literal("Purse: ").withStyle(ChatFormatting.WHITE)
                 .append(Component.literal(Msg.number(purse)).withStyle(ChatFormatting.GOLD)));

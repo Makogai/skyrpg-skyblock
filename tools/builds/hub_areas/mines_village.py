@@ -708,6 +708,7 @@ for (x, z) in ((94, -108), (108, -108), (94, -94), (108, -94), (101, -113), (101
     S(x, F + 1, z, "minecraft:chiseled_stone_bricks")
 npc("Emissary Braum", 104, -104, 90, "Emissary: commissions")
 npc("Gwendolyn", 104, -108, 90, "sells the Crystal Hollows Pass")
+npc("Ticket Master", 107, -108, 90, "takes you to the Dwarven Base Camp")
 S(105, F + 1, -104, "minecraft:lectern[facing=west]")
 sign(104, F + 1, -103, 0, "Emissary Braum", "", "dark_oak") if False else None
 area.arrival(100, F + 1, -100, yaw=90.0)

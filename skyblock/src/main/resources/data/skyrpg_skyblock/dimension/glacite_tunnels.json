@@ -1,0 +1,11 @@
+{
+  "type": "skyrpg_hub:public_glacite",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "skyrpg_skyblock:glacite_tunnels",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "skyrpg_skyblock:glacite_tunnels"
+    }
+  }
+}

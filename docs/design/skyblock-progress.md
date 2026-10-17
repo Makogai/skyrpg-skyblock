@@ -400,6 +400,27 @@ phase so the next session can pick up where this one stopped.
       camera yet; tested with a summoned arrow owned by the camera player).
       Decided: 45 slots; selection only via the Arrow Swapper.
       Not yet: arrow requirements, Bouncy/Armorshred/Explosive/Nansorb passives, arrow poisons, the hotbar quiver slot.
+- [x] **Glacite Tunnels** (part 1): research `docs/design/research/glacite-tunnels.md`. `tools/skyblock/gen_glacite.py`
+      writes a generated world `skyrpg_skyblock:glacite_tunnels`: 256 x 256, rock y 96-176, winding tunnels (two crossed
+      3D noises) and some caverns between y 104 and 170, snow floors, packed-ice ceilings, veins of Glacite (packed ice),
+      Tungsten (cobblestone, clay), Umber (terracotta, brown terracotta, red sandstone), Mithril, Titanium and the four
+      Tunnels gemstones (blue/black/brown/green stained glass), ice; zones (blocks to bedrock, back after 20 s) split
+      around the Dwarven Base Camp (built by a helper, `tools/builds/hub_areas/glacite_base_camp.py`; NPCs in
+      `npcs.py`; `/warp base`). `SkyMining` Tunnels table: Glacite 6,000 / Tungsten and Umber 5,600 / gems 5,200, all
+      Breaking Power 9, Hard Stone 50/BP4; Glacite 2 and Tungsten/Umber 1 Glacite Powder, gems 4 Rough + 2 Gemstone Powder.
+      `GlaciteTunnels`: Ticket Master (Dwarven Mines, by Gwendolyn) needs HotM 7 and, once, a Secret Railroad Pass; the
+      Base Camp's Ticket Master goes back; Cold (synced attachment on the sidebar) builds 1 per 5 s x (1 + CR/100), x4
+      in water, -0.5% Mining Speed per point over Cold Resistance (a stat source), warnings at 25/50/75/90, slowness at 75
+      and 90, at 100 you freeze back to the Base Camp; the Base Camp and leaving reset it. Commissions refactored to an
+      `Area` (Mines, Hollows, Tunnels): Emissary Lissandra's board (collect 1,500 of each resource or gem, 50 Glacite
+      Walkers; 400/750 HotM XP, 1,500/3,000 Glacite Powder, 25,000 Mining XP). `/sbtunnels go|cold` for admins.
+      Decided: our own map (Hypixel's layout isn't data we have); 20 s regrow; gems 4 Rough a block (Hypixel 3-5);
+      powder per block numbers; freezing is a teleport, not a death; Cold Enjoyer & co. only talk.
+      Not yet (part 2): Glacite Mineshafts (corpses, keys, Maniacs, scrap), fossils and the Fossil Excavator, Glacite
+      Powder perks, the Great Glacite Lake, Grandpa Wolf, the Fossil Muncher.
+- [ ] **Runecrafting and Social** (decided 2026-10-17: deferred). Both are cosmetic on Hypixel (runes are particle
+      effects; Social barely gives anything), so they wait until the gameplay systems are in. NEU has the 147 rune items
+      (type, tier, slot, Runecrafting level, text) for when they come.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

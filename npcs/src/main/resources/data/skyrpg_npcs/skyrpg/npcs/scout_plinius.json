@@ -1,0 +1,20 @@
+{
+  "name": "Scout Plinius",
+  "role": "Glacite Tunnels",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    -6.5,
+    121.0,
+    -93.5
+  ],
+  "yaw": 206.6,
+  "sound": "minecraft:block.snow.step",
+  "greetings": [
+    "Aquamarine, Citrine, Onyx and Peridot grow out in the Tunnels.",
+    "Don't stay out too long. The Cold gets everyone."
+  ]
+}

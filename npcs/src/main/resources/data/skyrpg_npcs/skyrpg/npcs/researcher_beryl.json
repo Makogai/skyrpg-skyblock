@@ -1,0 +1,20 @@
+{
+  "name": "Researcher Beryl",
+  "role": "Fossil Research Center",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    -16.5,
+    121.0,
+    -108.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:item.book.page_turn",
+  "greetings": [
+    "Suspicious Scrap turns up in the mineshafts.",
+    "We're still setting up."
+  ]
+}

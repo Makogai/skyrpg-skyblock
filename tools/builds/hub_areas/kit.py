@@ -84,7 +84,7 @@ def hash01(x, y, z, seed=0):
 
 
 # Generated worlds: unset cells in an area's box would keep the generated terrain, so they're saved as air.
-FILL_AIR = {"skyrpg_skyblock:crystal_hollows"}
+FILL_AIR = {"skyrpg_skyblock:crystal_hollows", "skyrpg_skyblock:glacite_tunnels"}
 
 
 class Area:

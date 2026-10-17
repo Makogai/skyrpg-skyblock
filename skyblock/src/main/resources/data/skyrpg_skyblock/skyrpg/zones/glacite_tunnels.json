@@ -1,0 +1,104 @@
+{
+  "name": "Glacite Tunnels",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "from": [
+    -122,
+    96,
+    -87
+  ],
+  "to": [
+    122,
+    176,
+    122
+  ],
+  "blocks": {
+    "minecraft:stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:packed_ice": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:cobblestone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:clay": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:brown_terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:red_sandstone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:gray_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:cyan_terracotta": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:prismarine_bricks": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:dark_prismarine": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:light_blue_wool": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:polished_diorite": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:blue_stained_glass": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:blue_stained_glass_pane": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:black_stained_glass": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:black_stained_glass_pane": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:brown_stained_glass": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:brown_stained_glass_pane": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:green_stained_glass": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    },
+    "minecraft:green_stained_glass_pane": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 20
+    }
+  }
+}

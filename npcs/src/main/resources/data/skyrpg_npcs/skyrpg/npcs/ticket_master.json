@@ -1,0 +1,23 @@
+{
+  "name": "Ticket Master",
+  "role": "Minecart Station",
+  "color": "#55FFFF",
+  "hint": "Travel",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    107.5,
+    201.0,
+    -107.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.minecart.riding",
+  "greetings": [
+    "The railroad runs down to the Dwarven Base Camp.",
+    "Heart of the Mountain 7 and a Secret Railroad Pass, then all aboard."
+  ],
+  "action": {
+    "type": "base_camp"
+  }
+}

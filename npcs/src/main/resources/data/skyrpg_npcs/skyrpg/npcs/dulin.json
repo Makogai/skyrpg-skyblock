@@ -1,0 +1,20 @@
+{
+  "name": "Dulin",
+  "role": "Dwarven Base Camp",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    -8.5,
+    121.0,
+    -99.5
+  ],
+  "yaw": 228.4,
+  "sound": "minecraft:block.stone.break",
+  "greetings": [
+    "Glacite needs Breaking Power 9. So do Tungsten and Umber.",
+    "The deeper tunnels hide gemstones of their own."
+  ]
+}

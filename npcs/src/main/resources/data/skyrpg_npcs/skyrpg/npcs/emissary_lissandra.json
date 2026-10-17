@@ -1,0 +1,23 @@
+{
+  "name": "Emissary Lissandra",
+  "role": "Commissions",
+  "color": "#55FFFF",
+  "hint": "Commissions",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:glacite_tunnels",
+  "pos": [
+    2.5,
+    121.0,
+    -111.5
+  ],
+  "yaw": 26.6,
+  "sound": "minecraft:block.anvil.land",
+  "greetings": [
+    "The Tunnels have work for you.",
+    "Glacite, Tungsten, Umber. Bring them up."
+  ],
+  "action": {
+    "type": "commissions"
+  }
+}
