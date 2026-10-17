@@ -59,7 +59,8 @@ final class Blessings {
                         }
                     }
                 });
-                shares.forEach((stat, share) -> share(player, out, stat, share));
+                double boost = EssencePerks.blessingBoost(player);
+                shares.forEach((stat, share) -> share(player, out, stat, share * boost));
             }
         });
     }

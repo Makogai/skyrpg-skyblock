@@ -20,14 +20,19 @@ import net.minecraft.world.item.ItemStack;
 /** Malik's screen: the held dungeon item, its stars and the next star's cost; your essence. Button {@link #UPGRADE}. */
 public final class MalikMenu extends AbstractContainerMenu {
     public static final int UPGRADE = 1;
+    public static final int TAB = 2;
+    public static final int PERK = 100;
+    /** Who's on the essence shop tab. */
+    private static final java.util.Set<java.util.UUID> SHOP = new java.util.HashSet<>();
 
     /** The held item, its stars and maximum, the next star's costs, and your essence. */
-    public record View(ItemStack item, int stars, int max, List<String> cost, String essence) {
+    public record View(ItemStack item, int stars, int max, List<String> cost, String essence, boolean shop, List<String> perks) {
         public static final StreamCodec<RegistryFriendlyByteBuf, View> CODEC = new StreamCodec<>() {
             @Override
             public View decode(RegistryFriendlyByteBuf buf) {
                 return new View(ItemStack.OPTIONAL_STREAM_CODEC.decode(buf), buf.readVarInt(), buf.readVarInt(),
-                        ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf), buf.readUtf());
+                        ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf), buf.readUtf(), buf.readBoolean(),
+                        ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).decode(buf));
             }
 
             @Override
@@ -37,6 +42,8 @@ public final class MalikMenu extends AbstractContainerMenu {
                 buf.writeVarInt(view.max());
                 ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).encode(buf, view.cost());
                 buf.writeUtf(view.essence());
+                buf.writeBoolean(view.shop());
+                ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list()).encode(buf, view.perks());
             }
         };
     }
@@ -63,7 +70,8 @@ public final class MalikMenu extends AbstractContainerMenu {
         ItemDefinition def = SkyItems.definition(held);
         int max = DungeonItems.maxStars(def);
         View view = new View(max > 0 ? held.copy() : ItemStack.EMPTY, ItemMods.stars(held), max, max > 0 ? DungeonItems.nextCost(held) : List.of(),
-                DungeonItems.essenceLine(player));
+                DungeonItems.essenceLine(player), SHOP.contains(player.getUUID()),
+                EssencePerks.PERKS.stream().map(p -> EssencePerks.describe(player, p)).toList());
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {
@@ -84,10 +92,18 @@ public final class MalikMenu extends AbstractContainerMenu {
 
     @Override
     public boolean clickMenuButton(Player clicker, int id) {
-        if (owner == null || clicker != owner || id != UPGRADE) {
+        if (owner == null || clicker != owner) {
             return false;
         }
-        String problem = DungeonItems.upgrade(owner);
+        if (id == TAB) {
+            if (!SHOP.remove(owner.getUUID())) {
+                SHOP.add(owner.getUUID());
+            }
+            owner.level().getServer().execute(() -> open(owner));
+            return true;
+        }
+        String problem = id >= PERK ? EssencePerks.buy(owner, EssencePerks.PERKS.get(Math.min(id - PERK, EssencePerks.PERKS.size() - 1)).id())
+                : id == UPGRADE ? DungeonItems.upgrade(owner) : "";
         if (!problem.isEmpty()) {
             owner.sendSystemMessage(Component.literal(problem).withStyle(ChatFormatting.RED));
         }

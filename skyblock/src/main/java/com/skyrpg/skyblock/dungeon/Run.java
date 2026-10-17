@@ -144,6 +144,8 @@ final class Run {
     BlockPos mimicChest;
     UUID mimic;
     boolean mimicKilled;
+    /** The Fairy room's fairy has revived the dead (once a run). */
+    boolean fairyUsed;
 
     Run(long id, int slot, Floors.Floor floor, ServerLevel level, List<UUID> players, RandomSource random) {
         this.id = id;
@@ -408,6 +410,22 @@ final class Run {
             default -> {
             }
         }
+        if (state.room.type() == Layout.Type.FAIRY) {
+            Vec3 at = fairySpot(state);
+            net.minecraft.world.entity.animal.allay.Allay fairy = net.minecraft.world.entity.EntityTypes.ALLAY.create(level,
+                    net.minecraft.world.entity.EntitySpawnReason.EVENT);
+            if (fairy != null) {
+                fairy.snapTo(at.x, at.y + 1, at.z, 0, 0);
+                fairy.setNoAi(true);
+                fairy.setNoGravity(true);
+                fairy.setPermanentlyInvulnerable(true);
+                fairy.setPersistenceRequired();
+                fairy.setCustomName(Component.literal("Fairy").withStyle(ChatFormatting.LIGHT_PURPLE));
+                fairy.addTag(tag);
+                fairy.addTag(Catacombs.TAG);
+                level.addFreshEntity(fairy);
+            }
+        }
         // From Floor II a room's elite can be a miniboss; any normal room can hide a Crypt Undead (up to 8 a run).
         boolean miniboss = state.room.type() == Layout.Type.NORMAL && floor.number() >= 2 && random.nextInt(5) < 2;
         if (state.room.type() == Layout.Type.NORMAL && cryptMobs.size() + crypts < 8 && random.nextInt(10) < 3) {
@@ -555,8 +573,34 @@ final class Run {
         return display;
     }
 
+    private Vec3 fairySpot(RoomState state) {
+        for (Spot spot : state.spots) {
+            if (spot.kind().equals("fairy")) {
+                return spot.pos();
+            }
+        }
+        return state.middle();
+    }
+
     /** Every half second: rooms walked into, keys and secret items picked up, the Blood room's waves. */
     void tick(long now) {
+        // The fairy revives everyone who's dead when a living teammate reaches it (once a run).
+        RoomState fairyRoom = state(Layout.Type.FAIRY);
+        if (!fairyUsed && !ghosts.isEmpty() && fairyRoom != null && fairyRoom.entered) {
+            Vec3 at = fairySpot(fairyRoom);
+            ServerPlayer near = online().stream().filter(p -> !ghosts.contains(p.getUUID()) && p.position().distanceTo(at) < 5).findFirst().orElse(null);
+            if (near != null) {
+                fairyUsed = true;
+                for (ServerPlayer ghost : online()) {
+                    if (ghosts.contains(ghost.getUUID())) {
+                        Catacombs.revive(this, ghost);
+                        ghost.teleportTo(level, at.x, at.y, at.z, java.util.Set.of(), ghost.getYRot(), ghost.getXRot(), true);
+                    }
+                }
+                broadcast(Component.literal("The Fairy revived the fallen!").withStyle(ChatFormatting.LIGHT_PURPLE));
+                level.sendParticles(net.minecraft.core.particles.ParticleTypes.HEART, at.x, at.y + 1, at.z, 20, 1, 1, 1, 0);
+            }
+        }
         for (ServerPlayer player : online()) {
             if (ghosts.contains(player.getUUID())) {
                 continue;

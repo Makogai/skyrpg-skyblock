@@ -49,6 +49,7 @@ Every run is a new map: a grid of rooms (some long, square or L-shaped) joined b
   - **Higher Or Lower**: ten blazes float with their health over their heads. Kill them in the order the sign says (lowest to highest, or highest to lowest).
   - **Tic Tac Toe**: right-click a white tile on the floor to play. The AI never loses, so a draw is the way to solve it; if it wins, you fail.
 - **The Blood room**: opening it wakes **the Watcher**, who sends his undead in waves. Kill them all and he opens the way to the **boss**.
+- **The fairy** in the Fairy room revives everyone who's dead, once a run, when someone alive walks up to it.
 - **Dying** makes you a **ghost**: you float, unseen, and can't fight or open anything, until the boss room (everyone comes back for the boss). If the whole party is dead, the run fails.
 
 The sidebar shows the run: time, rooms cleared, secrets found, your keys, and your team with their class and health.
@@ -121,9 +122,23 @@ Every chest holds Undead Essence (Wither Essence too from Floor III), and each f
 
 **Stars** (✪, up to 5) are added by **Malik** in the Dungeon Hub: hold the item and talk to him. Each star costs essence (Wither Essence for most gear), as Hypixel's item says; some also cost coins or items. A starred item shows its stars after its name.
 
+### Malik's essence shop
+
+The other tab of Malik's screen spends essence on perks that work in the Catacombs (click one for its next level):
+
+| Perk | Essence | Levels | Each level |
+| --- | --- | --- | --- |
+| Health / Defense / Strength / Intelligence Essence | Undead | 5 | +2 Health / +1 Defense / +1 Strength / +2 Intelligence |
+| Critical Essence | Undead | 5 | +1 Crit Damage |
+| Forbidden Health / Defense / Strength / Intelligence | Wither | 5 | +1% of that stat |
+| Forbidden Speed | Wither | 2 | +1 Speed |
+| Forbidden Blessing | Wither | 10 | blessings 1% stronger |
+
+Undead perks cost 1,000 Undead Essence and up (to 50,000); Wither perks 100 Wither Essence and up.
+
 ## The Catacombs level
 
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, essence shop perks, Croesus, the Party Finder.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, Croesus, the Party Finder.

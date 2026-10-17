@@ -565,6 +565,12 @@ phase so the next session can pick up where this one stopped.
       chest head (1M+, 150M in Master Mode); +2 Bonus. Sidebar: Crypts and Mimic ✔.
       Decided: crypts are mobs (Hypixel's are walls you blow up; our rooms have no crypt walls yet).
 
+- [x] **Malik's essence shop, the fairy** (`dungeon/EssencePerks`: Undead Health/Defense/Strength/Intelligence/Critical
+      Essence and Wither Forbidden Health/Defense/Strength/Intelligence/Speed/Blessing, NEU's costs, our per-level numbers,
+      a stat source in the Catacombs; Forbidden Blessing boosts blessings; an `essence_perks` attachment; a second tab on
+      Malik's screen). The Fairy room has an allay; when someone alive reaches it while others are ghosts, it revives
+      them all, once a run.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

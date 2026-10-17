@@ -17,12 +17,34 @@ import net.minecraft.world.item.TooltipFlag;
 /** Malik: upgrade the held dungeon item with essence, one star at a time. */
 public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
     private static final int WIDTH = 260;
-    private static final int HEIGHT = 170;
+    private static final int HEIGHT = 214;
     private static final int PINK = 0xFFFF55FF;
     private static final int GOLD = 0xFFFFAA00;
 
     public MalikScreen(MalikMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, WIDTH, HEIGHT);
+    }
+
+    private int tabX() {
+        return leftPos + imageWidth - 112;
+    }
+
+    private int perkY(int i) {
+        return topPos + 42 + i * 14;
+    }
+
+    private void shop(GuiGraphicsExtractor g, int mouseX, int mouseY) {
+        MalikMenu.View view = menu.view();
+        for (int i = 0; i < view.perks().size(); i++) {
+            int y = perkY(i);
+            boolean over = SkyScreens.inside(mouseX, mouseY, leftPos + 10, y, imageWidth - 20, 12);
+            boolean wither = i >= 5;
+            Draw.panel(g, leftPos + 10, y, imageWidth - 20, 12, over ? Theme.CARD_HOVER : Theme.CARD, wither ? 0xFF555555 : 0xFFAA00AA);
+            Draw.fit(g, font, Component.literal(view.perks().get(i)), leftPos + 14, y + 3, imageWidth - 28, 0.62f, 0.4f, Draw.Align.LEFT,
+                    view.perks().get(i).endsWith("maxed") ? Theme.GREEN : Theme.TEXT, false);
+        }
+        Draw.fit(g, font, Component.literal(view.essence() + "   ·   click a perk to buy its next level, works in the Catacombs"),
+                leftPos + imageWidth / 2, topPos + imageHeight - 12, imageWidth - 16, 0.6f, 0.4f, Draw.Align.CENTER, Theme.DIM, false);
     }
 
     private int buttonX() {
@@ -38,9 +60,18 @@ public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         MalikMenu.View view = menu.view();
         SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Malik"),
-                Component.literal("Dungeon item stars").withColor(PINK));
+                Component.literal(view.shop() ? "Essence shop" : "Dungeon item stars").withColor(PINK));
+        boolean tabOver = SkyScreens.inside(mouseX, mouseY, tabX(), topPos + 24, 100, 12);
+        Draw.panel(g, tabX(), topPos + 24, 100, 12, tabOver ? Theme.CARD_HOVER : Theme.CARD, PINK);
+        Draw.fit(g, font, Component.literal(view.shop() ? "\u2190 Item stars" : "Essence shop \u2192"), tabX() + 50, topPos + 27, 94, 0.7f, 0.45f,
+                Draw.Align.CENTER, PINK, false);
+        if (view.shop()) {
+            shop(g, mouseX, mouseY);
+            Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
+            return;
+        }
         int x = leftPos + 14;
-        int y = topPos + 34;
+        int y = topPos + 42;
         int w = imageWidth - 28;
         List<Component> tooltip = null;
         Draw.panel(g, x, y, w, 44, Theme.CARD, view.item().isEmpty() ? Theme.CARD_BORDER : GOLD);
@@ -88,11 +119,26 @@ public final class MalikScreen extends AbstractContainerScreen<MalikMenu> {
 
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-        if (event.button() == InputConstants.MOUSE_BUTTON_LEFT && SkyScreens.inside(event.x(), event.y(), buttonX(), buttonY(), 120, 16)) {
-            minecraft.gameMode.handleInventoryButtonClick(menu.containerId, MalikMenu.UPGRADE);
-            SkyScreens.click();
-            return true;
+        if (event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
+            if (SkyScreens.inside(event.x(), event.y(), tabX(), topPos + 24, 100, 12)) {
+                return press(MalikMenu.TAB);
+            }
+            if (menu.view().shop()) {
+                for (int i = 0; i < menu.view().perks().size(); i++) {
+                    if (SkyScreens.inside(event.x(), event.y(), leftPos + 10, perkY(i), imageWidth - 20, 12)) {
+                        return press(MalikMenu.PERK + i);
+                    }
+                }
+            } else if (SkyScreens.inside(event.x(), event.y(), buttonX(), buttonY(), 120, 16)) {
+                return press(MalikMenu.UPGRADE);
+            }
         }
         return super.mouseClicked(event, doubleClick);
+    }
+
+    private boolean press(int button) {
+        minecraft.gameMode.handleInventoryButtonClick(menu.containerId, button);
+        SkyScreens.click();
+        return true;
     }
 }

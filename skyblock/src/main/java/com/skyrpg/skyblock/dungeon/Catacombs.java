@@ -78,6 +78,7 @@ public final class Catacombs {
         Classes.init();
         Rewards.init();
         Blessings.init();
+        EssencePerks.init();
         DungeonItems.init();
         ServerLifecycleEvents.SERVER_STARTED.register(RoomLibrary::load);
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, ok) -> RoomLibrary.load(server));
