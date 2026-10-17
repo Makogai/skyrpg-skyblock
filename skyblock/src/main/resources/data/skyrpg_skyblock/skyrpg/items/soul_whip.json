@@ -87,5 +87,11 @@
    },
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Flay",
+  "trigger": "RIGHT CLICK",
+  "description": "Flay your whip in an arc, dealing your melee damage to all enemies in its path.",
+  "type": "flay"
  }
 }

@@ -14,5 +14,13 @@
   "ability_damage_scaling": 0.3,
   "npc_sell_price": 1,
   "dungeon_item": true
+ },
+ "ability": {
+  "name": "Shadow Warp",
+  "trigger": "RIGHT CLICK",
+  "mana": 300.0,
+  "cooldown": 10.0,
+  "description": "Creates a spatial distortion 10 blocks ahead of you that sucks all enemies around it. Use this ability again within 5 seconds to detonate the warp and deal 35,375.8 damage to enemies near it.",
+  "type": "shadow_warp"
  }
 }

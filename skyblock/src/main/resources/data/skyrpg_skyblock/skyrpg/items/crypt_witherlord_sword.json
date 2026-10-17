@@ -100,5 +100,13 @@
     240
    ]
   }
+ },
+ "ability": {
+  "name": "Witherlord",
+  "trigger": "RIGHT CLICK",
+  "mana": 40.0,
+  "cooldown": 3.0,
+  "description": "Shoot 3 skulls each dealing 304.5 Damage.",
+  "type": "witherlord"
  }
 }

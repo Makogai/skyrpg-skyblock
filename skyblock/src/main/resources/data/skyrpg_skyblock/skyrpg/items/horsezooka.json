@@ -6,5 +6,12 @@
  "type": "",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Shoot",
+  "trigger": "RIGHT CLICK",
+  "mana": 1.0,
+  "description": "Launches a horse to clear out hay.",
+  "type": "shoot"
  }
 }

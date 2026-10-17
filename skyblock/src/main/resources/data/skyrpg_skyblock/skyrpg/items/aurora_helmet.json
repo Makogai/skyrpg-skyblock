@@ -197,5 +197,11 @@
    },
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Homing Missiles",
+  "trigger": "SNEAK",
+  "description": "At 10 stacks, sneak to reset your stacks and shoot 3 homing missiles dealing 5,000 Damage each.",
+  "type": "homing_missiles"
  }
 }

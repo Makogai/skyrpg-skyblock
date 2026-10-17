@@ -14,5 +14,11 @@
   "serializable": false,
   "can_auction": false,
   "can_trade": false
+ },
+ "ability": {
+  "name": "Detonate",
+  "trigger": "RIGHT CLICK",
+  "description": "Detonate the Nuke, dealing 80.0% max health true damage to all enemies in a 20 block radius.",
+  "type": "detonate"
  }
 }

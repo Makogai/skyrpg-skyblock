@@ -218,5 +218,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Ragnarock",
+  "trigger": "RIGHT CLICK",
+  "mana": 500.0,
+  "cooldown": 20.0,
+  "description": "Begin a channel. After not taking damage for 3s, gain 1.5x this weapon's Strength for 10s.",
+  "type": "ragnarock"
  }
 }

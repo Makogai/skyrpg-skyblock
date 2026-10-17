@@ -5,5 +5,11 @@
  "rarity": "legendary",
  "type": "",
  "glint": true,
- "unstackable": true
+ "unstackable": true,
+ "ability": {
+  "name": "Grand Architect",
+  "trigger": "RIGHT CLICK",
+  "description": "Right-Click the face of a block to extend all connected block faces.",
+  "type": "grand_architect"
+ }
 }

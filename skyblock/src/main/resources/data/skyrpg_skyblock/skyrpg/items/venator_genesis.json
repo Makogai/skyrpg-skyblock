@@ -19,5 +19,11 @@
    "mapped_item_ids": [],
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Absorptio",
+  "trigger": "RIGHT CLICK",
+  "description": "This weapon lets you absorb 5% of the basic combat stats of any weapon.",
+  "type": "absorptio"
  }
 }

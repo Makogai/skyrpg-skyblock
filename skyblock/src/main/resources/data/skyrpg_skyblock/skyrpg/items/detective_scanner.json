@@ -10,5 +10,13 @@
  },
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Detect!",
+  "trigger": "RIGHT CLICK",
+  "mana": 10.0,
+  "cooldown": 4.0,
+  "description": "Investigate a clue or abnormality.",
+  "type": "detect"
  }
 }

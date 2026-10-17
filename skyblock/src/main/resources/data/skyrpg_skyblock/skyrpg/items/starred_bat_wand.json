@@ -74,5 +74,12 @@
     ]
    }
   ]
+ },
+ "ability": {
+  "name": "Guided Bat",
+  "trigger": "RIGHT CLICK",
+  "mana": 200.0,
+  "description": "Shoots a guided spirit bat, following your aim and exploding for 2,250 damage.",
+  "type": "guided_bat"
  }
 }

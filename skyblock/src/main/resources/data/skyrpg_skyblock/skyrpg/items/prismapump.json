@@ -8,5 +8,11 @@
  "hypixel": {
   "can_auction": false,
   "can_place": false
+ },
+ "ability": {
+  "name": "Pipeline",
+  "trigger": "RIGHT CLICK",
+  "description": "When used, pumps water in the direction the player was facing.",
+  "type": "pipeline"
  }
 }

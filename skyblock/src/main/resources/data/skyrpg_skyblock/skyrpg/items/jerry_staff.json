@@ -56,5 +56,11 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Rapid-fire",
+  "trigger": "RIGHT CLICK",
+  "description": "Shoots a Jerry bullet, dealing 500 damage on impact and knocking you back.",
+  "type": "rapid_fire"
  }
 }

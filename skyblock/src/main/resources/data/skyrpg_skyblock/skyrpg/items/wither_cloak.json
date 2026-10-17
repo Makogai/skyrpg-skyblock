@@ -66,5 +66,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Creeper Veil",
+  "trigger": "RIGHT CLICK",
+  "description": "Spawns a layered veil that negates damage for 10s, as follows:",
+  "type": "creeper_veil"
  }
 }

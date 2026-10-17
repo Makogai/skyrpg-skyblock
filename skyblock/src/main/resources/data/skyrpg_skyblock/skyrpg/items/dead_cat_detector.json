@@ -7,5 +7,12 @@
  "glint": true,
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Meownar",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 9.0,
+  "description": "Ping the Rift for parts of Montezuma's soul.",
+  "type": "meownar"
  }
 }

@@ -7,5 +7,12 @@
  "hypixel": {
   "motes_sell_price": 25,
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Quantum Projection",
+  "trigger": "RIGHT CLICK",
+  "mana": 2.0,
+  "description": "Aim at Timite Ores to wackify their time.",
+  "type": "quantum_projection"
  }
 }

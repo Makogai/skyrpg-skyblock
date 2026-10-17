@@ -19,5 +19,12 @@
    "donation_xp": 3,
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Sparkle",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Spread happiness to someone one sparkle at a time.",
+  "type": "sparkle"
  }
 }

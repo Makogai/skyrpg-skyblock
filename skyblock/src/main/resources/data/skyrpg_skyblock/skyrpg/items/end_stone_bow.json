@@ -31,5 +31,11 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Extreme Focus",
+  "trigger": "LEFT CLICK",
+  "description": "Consumes all your mana, and your next hit will deal that much more damage!",
+  "type": "extreme_focus"
  }
 }

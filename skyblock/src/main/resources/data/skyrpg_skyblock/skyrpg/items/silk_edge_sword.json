@@ -68,5 +68,13 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Leap",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "cooldown": 1.0,
+  "description": "Leap into the air and deal 400 damage to nearby enemies upon landing on the ground. Damaged enemies will also be frozen for 1 second.",
+  "type": "leap"
  }
 }

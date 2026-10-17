@@ -18,5 +18,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Extreme Focus",
+  "trigger": "RIGHT CLICK",
+  "mana": 20.0,
+  "description": "While in the The End, consume all of your remaining Mana and gain the following buffs for every 100 Mana consumed: - Damage Reduction: 1% (Max 20%, last 5s) - Next Hit Damage: +25% (Max 500%)",
+  "type": "extreme_focus"
  }
 }

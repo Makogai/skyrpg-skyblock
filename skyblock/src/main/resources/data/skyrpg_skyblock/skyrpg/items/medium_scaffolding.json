@@ -19,5 +19,11 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Climb!",
+  "trigger": "RIGHT CLICK",
+  "description": "Each click allows you to climb 3 blocks, up to 9.",
+  "type": "climb"
  }
 }

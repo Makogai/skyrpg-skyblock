@@ -58,5 +58,11 @@
     "tier": 6
    }
   ]
+ },
+ "ability": {
+  "name": "Reaving Strike",
+  "trigger": "RIGHT CLICK",
+  "description": "Slash in a huge arc, dealing 135% melee damage to all enemies hit!",
+  "type": "reaving_strike"
  }
 }

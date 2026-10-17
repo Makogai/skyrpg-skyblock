@@ -18,5 +18,12 @@
    "respiration": 5
   },
   "npc_sell_price": 40
+ },
+ "ability": {
+  "name": "Water Burst",
+  "trigger": "SNEAK",
+  "mana": 20.0,
+  "description": "When wearing the full set, grants the wearer with the ability to burst forward when sneaking in water.",
+  "type": "water_burst"
  }
 }

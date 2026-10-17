@@ -70,5 +70,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Raise Souls",
+  "trigger": "RIGHT CLICK",
+  "description": "Monsters you kill using this item will drop their soul. You can click on their souls on the ground using this item to absorb them and then spawn them to fight by your side.",
+  "type": "raise_souls"
  }
 }

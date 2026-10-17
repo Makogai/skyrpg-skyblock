@@ -6,5 +6,12 @@
  "type": "",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Swhooomp",
+  "trigger": "RIGHT CLICK",
+  "mana": 5.0,
+  "description": "Shoot an arrow. Doesn't deal damage. Except to chickens and Puffs.",
+  "type": "swhooomp"
  }
 }

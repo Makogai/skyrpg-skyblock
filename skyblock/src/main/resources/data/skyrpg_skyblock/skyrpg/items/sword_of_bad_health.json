@@ -171,5 +171,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Bad Health",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Gain +5 Strength for every 5% of total HP you have for 5s. Capped at +100 Strength.",
+  "type": "bad_health"
  }
 }

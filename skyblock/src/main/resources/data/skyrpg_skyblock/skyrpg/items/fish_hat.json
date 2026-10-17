@@ -20,5 +20,13 @@
    "category": "FISHING",
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Splash",
+  "trigger": "SNEAK",
+  "mana": 10.0,
+  "cooldown": 1.0,
+  "description": "Crouch to splash some water around.",
+  "type": "splash"
  }
 }

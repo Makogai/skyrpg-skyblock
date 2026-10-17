@@ -74,5 +74,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Nasty Bite",
+  "trigger": "LEFT CLICK",
+  "description": "Shoot an enhanced shot, healing you for 189❤ Health on hit. Vitality Cost: 10",
+  "type": "nasty_bite"
  }
 }

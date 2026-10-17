@@ -99,5 +99,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Eye Beam",
+  "trigger": "SNEAK",
+  "description": "Fire a laser in front of you dealing 4000 damage and costing 40 mana. The damage increases by 100% every second for 5 seconds and the mana cost increases by 25% every second. You can sneak again to de-activate the laser.",
+  "type": "eye_beam"
  }
 }

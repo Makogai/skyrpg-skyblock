@@ -146,8 +146,11 @@ final class ItemTooltips {
         ItemDefinition.Ability ability = def.ability();
         if (ability != null) {
             out.add(Component.empty());
-            out.add(Component.literal("\u2726 " + ability.name()).withStyle(ChatFormatting.GOLD)
-                    .append(Component.literal(" \u00B7 Right-click").withStyle(ChatFormatting.DARK_GRAY)));
+            // Hypixel's trigger ("RIGHT CLICK", "SNEAK"...) as NEU's lore names it; our own abilities are right-clicks.
+            com.google.gson.JsonObject abilityJson = def.json() != null && def.json().has("ability") ? def.json().getAsJsonObject("ability") : null;
+            String trigger = abilityJson != null && abilityJson.has("trigger") ? abilityJson.get("trigger").getAsString() : "RIGHT CLICK";
+            out.add(Component.literal("Ability: " + ability.name() + " ").withStyle(ChatFormatting.GOLD)
+                    .append(Component.literal(trigger).withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD)));
             wrap(ability.description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.GRAY)));
             MutableComponent cost = Component.empty();
             if (ability.mana() > 0) {

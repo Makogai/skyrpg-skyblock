@@ -76,5 +76,12 @@
     ]
    }
   ]
+ },
+ "ability": {
+  "name": "Showtime",
+  "trigger": "RIGHT CLICK",
+  "mana": 90.0,
+  "description": "Shoots balloons that create a large explosion on impact, dealing up to 1,100 damage.",
+  "type": "showtime"
  }
 }

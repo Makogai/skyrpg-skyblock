@@ -12,5 +12,12 @@
    "donation_xp": 3,
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Deploy",
+  "trigger": "RIGHT CLICK",
+  "mana": 500.0,
+  "description": "Place a totem down for 5m, buffing only yourself within 30 blocks.",
+  "type": "deploy"
  }
 }

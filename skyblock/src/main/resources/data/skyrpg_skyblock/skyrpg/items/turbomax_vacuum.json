@@ -6,5 +6,11 @@
  "type": "",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Vacuum",
+  "trigger": "HOLD RIGHT CLICK",
+  "description": "Creates an air pressure differential to efficiently collect dust and vermin.",
+  "type": "vacuum"
  }
 }

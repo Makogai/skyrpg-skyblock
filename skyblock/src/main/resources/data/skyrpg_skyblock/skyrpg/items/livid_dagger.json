@@ -84,5 +84,13 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Throw",
+  "trigger": "RIGHT CLICK",
+  "mana": 150.0,
+  "cooldown": 5.0,
+  "description": "Throw your dagger at your enemies!",
+  "type": "throw"
  }
 }

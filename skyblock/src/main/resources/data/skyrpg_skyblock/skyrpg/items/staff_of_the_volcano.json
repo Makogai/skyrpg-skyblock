@@ -172,5 +172,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Explode",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "cooldown": 30.0,
+  "description": "Creates an explosion around you dealing 24,000 damage and setting all mobs on fire in a 4 block radius over 1s.",
+  "type": "explode"
  }
 }

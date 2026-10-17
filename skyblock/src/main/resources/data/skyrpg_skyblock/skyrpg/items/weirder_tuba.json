@@ -44,5 +44,13 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Howl",
+  "trigger": "RIGHT CLICK",
+  "mana": 150.0,
+  "cooldown": 20.0,
+  "description": "You and 4 nearby players gain: +40 Strength +5 Attack Speed +10 Crit Damage +30 Speed for 30 seconds. Effect doesn't stack.",
+  "type": "howl"
  }
 }

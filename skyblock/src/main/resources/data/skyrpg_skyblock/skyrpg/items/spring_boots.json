@@ -11,5 +11,11 @@
    "feather_falling": 20
   },
   "museum": true
+ },
+ "ability": {
+  "name": "To the Moon!",
+  "trigger": "SNEAK",
+  "description": "Charge your jump by sneaking. The longer you sneak, the higher you will jump!",
+  "type": "to_the_moon"
  }
 }

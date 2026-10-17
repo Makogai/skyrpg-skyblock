@@ -10,5 +10,11 @@
  },
  "hypixel": {
   "npc_sell_price": 0
+ },
+ "ability": {
+  "name": "Open Shop",
+  "trigger": "RIGHT CLICK",
+  "description": "Open the Perk Menu so you can make upgrades!",
+  "type": "open_shop"
  }
 }

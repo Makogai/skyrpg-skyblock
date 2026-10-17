@@ -7,5 +7,12 @@
  "type": "Wand",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Weird Transmission",
+  "trigger": "RIGHT CLICK",
+  "mana": 60.0,
+  "description": "Teleport 3 blocks ahead of you.",
+  "type": "weird_transmission"
  }
 }

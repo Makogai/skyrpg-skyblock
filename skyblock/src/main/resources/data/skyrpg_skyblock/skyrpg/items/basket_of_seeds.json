@@ -6,5 +6,11 @@
  "type": "",
  "hypixel": {
   "can_auction": false
+ },
+ "ability": {
+  "name": "Seed Storage",
+  "trigger": "LEFT CLICK",
+  "description": "Place seeds in the basket.",
+  "type": "seed_storage"
  }
 }

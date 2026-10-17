@@ -7,5 +7,11 @@
  "type": "Capsule",
  "hypixel": {
   "safari_only": true
+ },
+ "ability": {
+  "name": "Certain Capture",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw your Masterful Critter Capsule in the direction you're facing. If it hits a Critter, it will catch them.",
+  "type": "certain_capture"
  }
 }

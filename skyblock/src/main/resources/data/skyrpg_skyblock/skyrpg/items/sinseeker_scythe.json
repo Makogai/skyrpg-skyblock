@@ -72,5 +72,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Sinrecall Transmission",
+  "trigger": "RIGHT CLICK",
+  "description": "Zap a line 4 blocks forward.",
+  "type": "sinrecall_transmission"
  }
 }

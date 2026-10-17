@@ -75,5 +75,11 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Instant Heal",
+  "trigger": "RIGHT CLICK",
+  "description": "Heal for 320❤ and heal players within 7 blocks for 64❤. Vitality Cost: 25",
+  "type": "instant_heal"
  }
 }

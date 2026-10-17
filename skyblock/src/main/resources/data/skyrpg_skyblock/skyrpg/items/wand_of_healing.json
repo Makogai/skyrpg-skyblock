@@ -24,5 +24,12 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Small Heal",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Heal 60❤ per second for 5s. Wand heals don't stack. Vitality Cost: 25",
+  "type": "small_heal"
  }
 }

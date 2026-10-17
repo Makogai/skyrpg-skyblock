@@ -12,5 +12,12 @@
  },
  "hypixel": {
   "museum": true
+ },
+ "ability": {
+  "name": "Copycat",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 10.0,
+  "description": "Click on a player to copy their skin to a placeable NPC.",
+  "type": "copycat"
  }
 }

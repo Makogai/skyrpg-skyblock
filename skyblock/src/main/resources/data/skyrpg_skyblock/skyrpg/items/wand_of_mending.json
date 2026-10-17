@@ -24,5 +24,12 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Medium Heal",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Heal 80❤ per second for 5s. Wand heals don't stack. Vitality Cost: 25",
+  "type": "medium_heal"
  }
 }

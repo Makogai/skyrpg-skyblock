@@ -7,5 +7,12 @@
  "hypixel": {
   "npc_sell_price": 1000,
   "has_uuid": true
+ },
+ "ability": {
+  "name": "Inhale",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 30.0,
+  "description": "Refill your air bubbles when under water on Galatea! This item will be consumed on use.",
+  "type": "inhale"
  }
 }

@@ -12,5 +12,11 @@
    "parent": {},
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Analyze",
+  "trigger": "RIGHT CLICK",
+  "description": "View the detailed properties of a plant inside the Greenhouse.",
+  "type": "analyze"
  }
 }

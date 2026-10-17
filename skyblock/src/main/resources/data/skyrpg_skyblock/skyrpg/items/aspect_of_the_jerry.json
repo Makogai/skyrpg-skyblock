@@ -17,5 +17,12 @@
    "category": "COMBAT",
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Parley",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Channel your inner Jerry.",
+  "type": "parley"
  }
 }

@@ -83,5 +83,12 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Petal Barrage",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Fire a barrage of 3 roses that ricochets between enemies, hitting up to 5 foes. For every 10% of your health missing, your roses deal 2% more damage.",
+  "type": "petal_barrage"
  }
 }

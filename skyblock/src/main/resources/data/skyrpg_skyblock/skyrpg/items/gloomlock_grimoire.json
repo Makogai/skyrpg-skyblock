@@ -20,5 +20,12 @@
    "category": "COMBAT",
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Life Tap",
+  "trigger": "LEFT CLICK",
+  "cooldown": 1.0,
+  "description": "Convert 15⸎ Soulflow to gain up to 600 Overflow.",
+  "type": "life_tap"
  }
 }

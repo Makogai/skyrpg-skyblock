@@ -15,5 +15,11 @@
    "category": "COMBAT",
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Thwack",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw the spear like an arrow which will return to you.",
+  "type": "thwack"
  }
 }

@@ -25,5 +25,13 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Starfall",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "cooldown": 2.0,
+  "description": "Shower stars in a 3 blocks area for 5s, dealing 300 damage per second to mobs within.",
+  "type": "starfall"
  }
 }

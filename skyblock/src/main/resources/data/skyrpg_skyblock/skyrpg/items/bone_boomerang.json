@@ -66,5 +66,11 @@
    ],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Swing",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw the bone a short distance, dealing the damage an arrow would.",
+  "type": "swing"
  }
 }

@@ -114,5 +114,13 @@
     250
    ]
   }
+ },
+ "ability": {
+  "name": "Ice Spray",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "cooldown": 5.0,
+  "description": "Produces a cone of ice in front of the caster that deals 17,000 damage to mobs and freezes them in place for 5 seconds! Frozen mobs take 10% increased damage!",
+  "type": "ice_spray"
  }
 }

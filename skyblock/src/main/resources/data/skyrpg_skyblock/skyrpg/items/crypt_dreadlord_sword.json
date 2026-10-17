@@ -108,5 +108,12 @@
     180
    ]
   }
+ },
+ "ability": {
+  "name": "Dreadlord",
+  "trigger": "RIGHT CLICK",
+  "mana": 40.0,
+  "description": "Shoot a skull that deals 504 damage.",
+  "type": "dreadlord"
  }
 }

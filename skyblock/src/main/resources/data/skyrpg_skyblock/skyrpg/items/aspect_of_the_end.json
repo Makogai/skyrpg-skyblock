@@ -26,5 +26,12 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Instant Transmission",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Teleport 8 blocks ahead of you and gain +50 Speed for 3 seconds.",
+  "type": "instant_transmission"
  }
 }

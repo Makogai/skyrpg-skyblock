@@ -10,5 +10,13 @@
  "hypixel": {
   "npc_sell_price": 1,
   "dungeon_item": true
+ },
+ "ability": {
+  "name": "Wither Shield",
+  "trigger": "RIGHT CLICK",
+  "mana": 150.0,
+  "cooldown": 10.0,
+  "description": "Reduces damage taken by 10% for 5 seconds. Also grants an absorption shield that scales based on your Catacombs Level. Vitality Cost: 50",
+  "type": "wither_shield"
  }
 }

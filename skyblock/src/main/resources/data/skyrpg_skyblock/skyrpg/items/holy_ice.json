@@ -19,5 +19,13 @@
     "level": 1
    }
   ]
+ },
+ "ability": {
+  "name": "Splash Yo Face",
+  "trigger": "RIGHT CLICK",
+  "mana": 20.0,
+  "cooldown": 4.0,
+  "description": "For the next 1.5s, reduce ❤ damage taken by 80%.",
+  "type": "splash_yo_face"
  }
 }

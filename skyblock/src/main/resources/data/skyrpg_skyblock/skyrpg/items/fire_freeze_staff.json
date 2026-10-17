@@ -218,5 +218,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Fire Freeze",
+  "trigger": "RIGHT CLICK",
+  "mana": 500.0,
+  "cooldown": 10.0,
+  "description": "Creates a circle with a radius of 5 blocks. After 5s, all mobs inside are frozen for 10s.",
+  "type": "fire_freeze"
  }
 }

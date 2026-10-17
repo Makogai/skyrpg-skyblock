@@ -21,5 +21,11 @@
    "mapped_item_ids": [],
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Throw",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw the Lasso at Forest creatures and hold them still until they lose all their stamina.",
+  "type": "throw"
  }
 }

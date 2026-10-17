@@ -29,5 +29,11 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Acupuncture",
+  "trigger": "RIGHT CLICK",
+  "description": "Shoot arrows from every direction around the targeted monster.",
+  "type": "acupuncture"
  }
 }

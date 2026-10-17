@@ -6,5 +6,12 @@
  "type": "",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Lazer",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 2.0,
+  "description": "Point something.",
+  "type": "lazer"
  }
 }

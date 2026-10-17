@@ -220,5 +220,13 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Hellstorm",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "cooldown": 30.0,
+  "description": "Gain 5 Ability Damage, but take double damage for 30s.",
+  "type": "hellstorm"
  }
 }

@@ -22,5 +22,13 @@
    }
   ],
   "museum": true
+ },
+ "ability": {
+  "name": "Fire Blast",
+  "trigger": "RIGHT CLICK",
+  "mana": 150.0,
+  "cooldown": 30.0,
+  "description": "Shoot 3 Fireballs which deal 30 damage in rapid succession in front of you!",
+  "type": "fire_blast"
  }
 }

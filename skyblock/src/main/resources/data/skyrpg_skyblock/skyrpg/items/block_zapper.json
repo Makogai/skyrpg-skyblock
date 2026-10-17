@@ -5,5 +5,11 @@
  "rarity": "epic",
  "type": "",
  "glint": true,
- "unstackable": true
+ "unstackable": true,
+ "ability": {
+  "name": "Grand... Zapper?",
+  "trigger": "RIGHT CLICK",
+  "description": "Right-Click a block to zap all connected blocks of the same type.",
+  "type": "grand_zapper"
+ }
 }

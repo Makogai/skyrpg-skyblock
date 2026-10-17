@@ -10,5 +10,11 @@
  },
  "hypixel": {
   "has_uuid": true
+ },
+ "ability": {
+  "name": "Ancient Recall",
+  "trigger": "RIGHT CLICK",
+  "description": "When in the Crystal Hollows allows you to save and warp back to a saved location.",
+  "type": "ancient_recall"
  }
 }

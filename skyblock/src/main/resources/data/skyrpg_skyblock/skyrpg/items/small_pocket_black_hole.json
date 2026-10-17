@@ -79,5 +79,12 @@
    "mapped_item_ids": [],
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Black Hole",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 2.0,
+  "description": "Place the Black Hole for 180s, and it'll start pulling low HP monsters towards it.",
+  "type": "black_hole"
  }
 }

@@ -42,7 +42,30 @@ Everything Hypixel puts on items is a SkyRPG stat now, with Hypixel's symbol. On
 
 The skill XP stats are called **Wisdom** now, as on Hypixel: Farming Wisdom, Mining Wisdom, Foraging Wisdom, Combat Wisdom and Fishing Wisdom.
 
-Some of these stats only do something once their system lands (the Rift, the Garden, the Crystal Hollows).
+Some of these stats only do something once their system lands (the Rift, the Garden).
+
+## Abilities
+
+**289 items** carry Hypixel's ability, shown on the tooltip as **Ability: Instant Transmission RIGHT CLICK**, with its description, Mana Cost and Cooldown. Using one spends its mana (less with Ultimate Wise) and starts its cooldown (the item greys over while it recharges). Ability damage grows with **Intelligence** (+1% per point) and **Ability Damage**.
+
+These work now:
+
+| Ability | Items | What it does |
+| --- | --- | --- |
+| Instant Transmission | Aspect of the End, Aspect of the Void | Teleports you 8 blocks ahead (stopping before walls), +50 Speed for 3 seconds |
+| Dragon Rage | Aspect of the Dragons | 12,000 damage to every monster in front of you, with big knockback |
+| Ice Spray | Ice Spray Wand | 17,000 damage in a cone, freezing what it hits for 5 seconds |
+| Molten Wave | Midas Staff | 12,000 damage in a wave in front of you |
+| Giant's Slam | Giant's Sword | 100,000 damage to everything near you |
+| Showtime | Bonzo's Staff | A balloon that explodes where it lands for 1,000 damage |
+| Guided Bat | Spirit Sceptre | A bat that explodes for 2,000 damage |
+| Ice Bolt | Frozen Scythe | 1,000 damage and slowness for 5 seconds |
+| Rapid Fire | Jerry-chine Gun | A bullet for 500 damage that knocks you back |
+| Fire Blast | Ember Rod | Fireballs that burst for 30 damage |
+| Speed Boost | Rogue Sword | +100 Speed for 30 seconds |
+| Small / Medium / Big / Huge Heal | Wands of Healing, Mending, Restoration and Atonement | Heals you every second for a few seconds (wand heals don't stack) |
+
+Every other ability shows on its item but doesn't do anything yet.
 
 ## Items stay items
 

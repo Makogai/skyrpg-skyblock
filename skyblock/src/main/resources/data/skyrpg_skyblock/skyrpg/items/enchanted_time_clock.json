@@ -19,5 +19,12 @@
     "tier": 10
    }
   ]
+ },
+ "ability": {
+  "name": "Time Warp",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 48.0,
+  "description": "Advance Time by 1 hour!",
+  "type": "time_warp"
  }
 }

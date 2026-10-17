@@ -19,5 +19,12 @@
     "level": 2
    }
   ]
+ },
+ "ability": {
+  "name": "Succulence",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Take a bite and heal 9❤.",
+  "type": "succulence"
  }
 }

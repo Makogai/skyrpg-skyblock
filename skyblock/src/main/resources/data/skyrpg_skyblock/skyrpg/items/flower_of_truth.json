@@ -84,5 +84,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Heat-Seeking Rose",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Shoots a rose that ricochets between enemies, damaging up to 3 of your foes! Damage multiplies as more enemies are hit.",
+  "type": "heat_seeking_rose"
  }
 }

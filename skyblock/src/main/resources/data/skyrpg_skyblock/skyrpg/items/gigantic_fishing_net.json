@@ -16,5 +16,12 @@
    "parent": {},
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Yoink",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 0.5,
+  "description": "Throw your fishing net at swimming fish to catch them!",
+  "type": "yoink"
  }
 }

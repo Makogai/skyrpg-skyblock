@@ -24,5 +24,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "ME SMASH HEAD",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "description": "Your next attack deals double damage and weakens Animal mobs, making them deal -35% damage for 30 seconds. Debuff doesn't stack.",
+  "type": "me_smash_head"
  }
 }

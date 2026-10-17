@@ -22,5 +22,11 @@
     "RETIA_FORTA": "RETIA_SUPREMA"
    }
   }
+ },
+ "ability": {
+  "name": "Retentio",
+  "trigger": "RIGHT CLICK",
+  "description": "Hunting Traps can be placed near the spawn location of a Shard creature, with time it will eventually catch it.",
+  "type": "retentio"
  }
 }

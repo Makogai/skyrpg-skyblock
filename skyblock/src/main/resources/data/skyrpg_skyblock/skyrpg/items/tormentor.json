@@ -234,5 +234,13 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Chain of Agony",
+  "trigger": "RIGHT CLICK",
+  "mana": 200.0,
+  "cooldown": 0.5,
+  "description": "Toggles On/Off on use Melee hits arc with cursed energy, chaining to up to 5 nearby enemies.",
+  "type": "chain_of_agony"
  }
 }

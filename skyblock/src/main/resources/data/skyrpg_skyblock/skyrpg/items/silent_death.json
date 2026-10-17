@@ -117,5 +117,12 @@
     2
    ]
   }
+ },
+ "ability": {
+  "name": "Shadowstep",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 60.0,
+  "description": "Teleport behind the enemy you are looking at, gaining +25 Strength for 10 seconds. Max range of 20 blocks. Cooldown resets on kills.",
+  "type": "shadowstep"
  }
 }

@@ -220,5 +220,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Firestorm",
+  "trigger": "RIGHT CLICK",
+  "mana": 1000.0,
+  "cooldown": 20.0,
+  "description": "Shoots a projectile that on impact creates a firestorm, dealing up to 42,000 damage over 10 seconds to mobs in a 7 block radius.",
+  "type": "firestorm"
  }
 }

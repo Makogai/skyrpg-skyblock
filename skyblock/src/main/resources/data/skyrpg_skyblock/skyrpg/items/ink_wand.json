@@ -20,5 +20,13 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Ink Bomb",
+  "trigger": "RIGHT CLICK",
+  "mana": 60.0,
+  "cooldown": 30.0,
+  "description": "Shoot an ink bomb in front of you dealing 10,000 damage and giving blindness!",
+  "type": "ink_bomb"
  }
 }

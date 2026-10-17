@@ -166,5 +166,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Coin Conversion",
+  "trigger": "RIGHT CLICK",
+  "description": "Spend coins to cast a projectile which deals 10,000 damage on hit and knocks enemies back. Coin Cost: 100,000",
+  "type": "coin_conversion"
  }
 }

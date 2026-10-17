@@ -8,5 +8,11 @@
  "glint": true,
  "hypixel": {
   "can_recombobulate": false
+ },
+ "ability": {
+  "name": "Time Warp!",
+  "trigger": "RIGHT CLICK",
+  "description": "Teleport through time (a work in progress).",
+  "type": "time_warp"
  }
 }

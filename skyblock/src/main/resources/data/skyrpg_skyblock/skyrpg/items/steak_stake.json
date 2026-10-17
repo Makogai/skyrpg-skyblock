@@ -15,5 +15,11 @@
     "level": 2
    }
   ]
+ },
+ "ability": {
+  "name": "A bit of Impalement",
+  "trigger": "LEFT CLICK",
+  "description": "Stab a Vampire at 20%❤ to instantly vanquish it. (Does not actually hurt the vampire)",
+  "type": "a_bit_of_impalement"
  }
 }

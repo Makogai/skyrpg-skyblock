@@ -56,5 +56,13 @@
     "amount": 500
    }
   ]
+ },
+ "ability": {
+  "name": "Runic Zap",
+  "trigger": "RIGHT CLICK",
+  "mana": 10.0,
+  "cooldown": 1.0,
+  "description": "Fires a beam of energy, hitting the first enemy on its path for 10,000. Deals reduced damage past 10 blocks.",
+  "type": "runic_zap"
  }
 }

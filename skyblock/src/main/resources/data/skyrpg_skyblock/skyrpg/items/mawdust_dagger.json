@@ -39,5 +39,11 @@
    "mapped_item_ids": [],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Attunement",
+  "trigger": "RIGHT CLICK",
+  "description": "Swap between Spirit and Crystal mode in order to attack through Hellion Shields.",
+  "type": "attunement"
  }
 }

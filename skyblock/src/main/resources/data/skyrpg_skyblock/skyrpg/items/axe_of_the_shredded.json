@@ -115,5 +115,12 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Throw",
+  "trigger": "RIGHT CLICK",
+  "mana": 20.0,
+  "description": "Throw your Halberd, damaging all enemies in its path, dealing 10% melee damage. Consecutive throws cost 2x more mana and deal 2x more damage than the previous. (max 16x)",
+  "type": "throw"
  }
 }

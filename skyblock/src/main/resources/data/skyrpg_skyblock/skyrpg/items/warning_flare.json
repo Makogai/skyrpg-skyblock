@@ -23,5 +23,13 @@
    },
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Deploy",
+  "trigger": "RIGHT CLICK",
+  "mana": 300.0,
+  "cooldown": 20.0,
+  "description": "Shoot the flare up in the sky for 3m buffing up to 8 players within 40 blocks. Vitality Cost: 10",
+  "type": "deploy"
  }
 }

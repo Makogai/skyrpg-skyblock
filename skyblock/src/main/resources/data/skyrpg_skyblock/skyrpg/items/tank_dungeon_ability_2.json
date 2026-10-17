@@ -14,5 +14,12 @@
   "serializable": false,
   "can_auction": false,
   "can_trade": false
+ },
+ "ability": {
+  "name": "Absorption Potion",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 20.0,
+  "description": "Throw a potion which gives all teammates in a 10 block radius 200 HP worth of absorption for 3 seconds.",
+  "type": "absorption_potion"
  }
 }

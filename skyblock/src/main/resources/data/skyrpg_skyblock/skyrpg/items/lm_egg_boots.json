@@ -7,5 +7,11 @@
  "hypixel": {
   "origin": "RIFT",
   "motes_sell_price": 100
+ },
+ "ability": {
+  "name": "Spawn",
+  "trigger": "RIGHT CLICK",
+  "description": "Spawns a living metal autoarmor which can be assimilated into your own armor.",
+  "type": "spawn"
  }
 }

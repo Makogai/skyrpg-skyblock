@@ -204,5 +204,11 @@
    },
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Bouncy",
+  "trigger": "SNEAK",
+  "description": "When falling from a great height, you'll bounce straight up!",
+  "type": "bouncy"
  }
 }

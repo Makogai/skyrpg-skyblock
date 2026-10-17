@@ -56,5 +56,11 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Farmer's Speed",
+  "trigger": "LEFT CLICK",
+  "description": "Set a maximum amount of Speed.",
+  "type": "farmer_s_speed"
  }
 }

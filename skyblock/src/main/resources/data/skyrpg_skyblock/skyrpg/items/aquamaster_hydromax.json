@@ -15,5 +15,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Hydrate",
+  "trigger": "HOLD RIGHT CLICK",
+  "description": "Aim and hold in the direction of a plant to water it. Dispenses 350 water per second.",
+  "type": "hydrate"
  }
 }

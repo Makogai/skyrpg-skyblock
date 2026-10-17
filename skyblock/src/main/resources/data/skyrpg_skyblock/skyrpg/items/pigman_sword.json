@@ -73,5 +73,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Burning Souls",
+  "trigger": "RIGHT CLICK",
+  "mana": 400.0,
+  "cooldown": 5.0,
+  "description": "Gain +75 Defense for 5s and cast vortex of flames towards enemies, dealing up to 30,000 over 5 seconds.",
+  "type": "burning_souls"
  }
 }

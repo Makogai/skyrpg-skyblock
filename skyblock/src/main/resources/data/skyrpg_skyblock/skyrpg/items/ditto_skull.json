@@ -13,5 +13,12 @@
  "hypixel": {
   "museum": true,
   "can_place": true
+ },
+ "ability": {
+  "name": "Copycat",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 10.0,
+  "description": "Click on a player to copy their skin's skull to this item! Skin stays until changed again.",
+  "type": "copycat"
  }
 }

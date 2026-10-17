@@ -14,5 +14,12 @@
   "serializable": false,
   "can_auction": false,
   "can_trade": false
+ },
+ "ability": {
+  "name": "Stun Potion",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 20.0,
+  "description": "Throw a potion which temporarily stuns all monsters in a 10 block radius.",
+  "type": "stun_potion"
  }
 }

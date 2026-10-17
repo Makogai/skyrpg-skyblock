@@ -23,5 +23,12 @@
    "category": "COMBAT",
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Lightning Strike",
+  "trigger": "RIGHT CLICK",
+  "mana": 70.0,
+  "description": "Strikes lightning up to 10 blocks away, dealing 40 damage to the nearest monster.",
+  "type": "lightning_strike"
  }
 }

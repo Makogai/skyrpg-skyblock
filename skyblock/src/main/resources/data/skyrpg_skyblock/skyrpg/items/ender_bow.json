@@ -17,5 +17,13 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Ender Warp",
+  "trigger": "LEFT CLICK",
+  "mana": 50.0,
+  "cooldown": 5.0,
+  "description": "Shoots an Ender Pearl. Upon landing you deal damage to all Monsters in a 8 block radius for 10% of their Health. (Max 500 damage)",
+  "type": "ender_warp"
  }
 }

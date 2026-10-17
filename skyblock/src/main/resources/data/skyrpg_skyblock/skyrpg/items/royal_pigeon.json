@@ -16,5 +16,12 @@
    "donation_xp": 6,
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Seek the King",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Reach out to the King and open the Commissions menu.",
+  "type": "seek_the_king"
  }
 }

@@ -20,5 +20,11 @@
   ],
   "rift_transferrable": true,
   "museum": true
+ },
+ "ability": {
+  "name": "Whassup?",
+  "trigger": "RIGHT CLICK",
+  "description": "Lets you call Maddox, when he's not busy.",
+  "type": "whassup"
  }
 }

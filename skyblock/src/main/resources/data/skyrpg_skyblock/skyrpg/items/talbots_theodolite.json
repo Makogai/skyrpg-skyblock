@@ -13,5 +13,13 @@
    "donation_xp": 4,
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Track",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "cooldown": 10.0,
+  "description": "Indicates the approximate height difference and angle between you and your tracked mob.",
+  "type": "track"
  }
 }

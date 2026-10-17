@@ -20,5 +20,11 @@
    "mapped_item_ids": [],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Gorilla Tactics",
+  "trigger": "RIGHT CLICK",
+  "description": "Marks your location and teleport back there after 3s.",
+  "type": "gorilla_tactics"
  }
 }

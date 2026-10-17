@@ -7,6 +7,9 @@ Source: https://api.hypixel.net/v2/resources/skyblock/items (public, no key). Ea
 skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items/<id>.json: its vanilla "base" item (Hypixel still
 names 1.8 materials, mapped here), name, rarity, stats in our stat ids, head skin or leather colour, and every other
 Hypixel field kept under "hypixel" for the systems that use them later (gemstone slots, stars, museum, minions...).
+Items with an ability get it from their NEU lore (tools/skyblock/cache/neu-repo.zip, MIT): "ability": {"type":
+"instant_transmission", "name": "Instant Transmission", "trigger": "RIGHT CLICK", "mana": 50, "cooldown": 0,
+"description": "..."}, its type the ability's name in snake case (the game implements some of them).
 The output folder is generated: it's wiped and rewritten on every run.
 """
 import argparse
@@ -213,6 +216,53 @@ def convert(item, known_stats):
     return out
 
 
+NEU = ROOT / "tools/skyblock/cache/neu-repo.zip"
+NEU_ITEMS = "NotEnoughUpdates-REPO-master/items/"
+ICONS = re.compile("[\ue000-\uf8ff]")
+ABILITY = re.compile(r"^(?:Item )?Ability: (.+?)\s{1,2}(RIGHT CLICK|LEFT CLICK|SNEAK RIGHT CLICK|SNEAK LEFT CLICK|SNEAK|RIGHT CLICK x2|HOLD RIGHT CLICK)?\s*$")
+NUMBER = re.compile(r"([\d,.]+)")
+
+
+def neu_abilities():
+    """Item id -> its first ability from NEU's lore (name, trigger, description, mana cost, cooldown)."""
+    if not NEU.exists():
+        print("  no NEU repo cache: items get no abilities")
+        return {}
+    out = {}
+    with zipfile.ZipFile(NEU) as neu:
+        for name in neu.namelist():
+            if not (name.startswith(NEU_ITEMS) and name.endswith(".json")):
+                continue
+            try:
+                item = json.loads(neu.read(name))
+            except ValueError:
+                continue
+            lore = [ICONS.sub("", FORMATTING.sub("", line)).rstrip() for line in item.get("lore", [])]
+            for i, line in enumerate(lore):
+                match = ABILITY.match(line.strip())
+                if not match:
+                    continue
+                ability = {"name": match.group(1).strip(), "trigger": match.group(2) or "RIGHT CLICK"}
+                words = []
+                for rest in lore[i + 1:]:
+                    text = rest.strip()
+                    if not text or ABILITY.match(text):
+                        break
+                    if text.startswith("Mana Cost:"):
+                        ability["mana"] = float(NUMBER.search(text).group(1).replace(",", "")) if NUMBER.search(text) else 0
+                    elif text.startswith("Cooldown:"):
+                        ability["cooldown"] = float(NUMBER.search(text).group(1).replace(",", "")) if NUMBER.search(text) else 0
+                    elif text.startswith("Soulflow Cost:") or text.startswith("Health Cost:"):
+                        continue
+                    else:
+                        words.append(text)
+                ability["description"] = re.sub(r"\s+", " ", " ".join(words)).strip()
+                ability["type"] = re.sub(r"[^a-z0-9]+", "_", ability["name"].lower()).strip("_")
+                out[item.get("internalname", "")] = ability
+                break
+    return out
+
+
 def description(text):
     """Hypixel's description text with formatting codes; lore is gray unless it says otherwise."""
     text = re.sub(r"%%([a-z_]+)%%", lambda m: ("§" + CODES[m.group(1)]) if m.group(1) in CODES else "", text)
@@ -236,12 +286,15 @@ def main():
     data = fetch(args.cached)
     vanilla = vanilla_items()
     known_stats = our_stats()
+    abilities = neu_abilities()
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
     missing = set()
     for item in data["items"]:
         definition = convert(item, known_stats)
+        if item["id"] in abilities:
+            definition["ability"] = abilities[item["id"]]
         base = definition["base"].removeprefix("minecraft:")
         if base not in vanilla:
             missing.add((item["material"], item.get("durability"), base))
@@ -250,7 +303,7 @@ def main():
                                                            encoding="utf-8")
     for material, durability, base in sorted(missing, key=str):
         print("  no vanilla item", base, "for", material, durability)
-    print(f"Wrote {len(data['items'])} items to {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(data['items'])} items to {OUT.relative_to(ROOT)} ({sum(1 for i in data['items'] if i['id'] in abilities)} with abilities)")
 
 
 if __name__ == "__main__":

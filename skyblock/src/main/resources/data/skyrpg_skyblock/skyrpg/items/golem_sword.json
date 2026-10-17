@@ -20,5 +20,13 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Iron Punch",
+  "trigger": "RIGHT CLICK",
+  "mana": 70.0,
+  "cooldown": 3.0,
+  "description": "Punch the ground, damaging enemies in a hexagon around you for 250 base Magic Damage.",
+  "type": "iron_punch"
  }
 }

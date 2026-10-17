@@ -13,5 +13,13 @@
  "hypixel": {
   "origin": "BINGO",
   "soulbound": "SOLO"
+ },
+ "ability": {
+  "name": "Bingo Blast",
+  "trigger": "RIGHT CLICK",
+  "mana": 125.0,
+  "cooldown": 1.0,
+  "description": "Shoots out a piercing ray of water that travels up to 15 blocks. Deals 865.2 damage to the first enemy hit. Damage is halved for each subsequent enemy hit.",
+  "type": "bingo_blast"
  }
 }

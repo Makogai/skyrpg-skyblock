@@ -8,5 +8,11 @@
  "hypixel": {
   "origin": "RIFT",
   "motes_sell_price": 10
+ },
+ "ability": {
+  "name": "Snake Taming",
+  "trigger": "HOLD RIGHT CLICK",
+  "description": "Aim at a Living Metal Snake to deeply calm it, allowing another player to mine it.",
+  "type": "snake_taming"
  }
 }

@@ -10,5 +10,12 @@
  },
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Split or Steal",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 2.0,
+  "description": "Click a Player or NPC to challenge them to a game of Split or Steal.",
+  "type": "split_or_steal"
  }
 }

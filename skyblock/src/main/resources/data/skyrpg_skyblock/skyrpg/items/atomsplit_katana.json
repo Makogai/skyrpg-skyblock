@@ -72,5 +72,13 @@
    "mapped_item_ids": [],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Soulcry",
+  "trigger": "RIGHT CLICK",
+  "mana": 200.0,
+  "cooldown": 4.0,
+  "description": "Gain +400 Ferocity against Endermen for 4s",
+  "type": "soulcry"
  }
 }

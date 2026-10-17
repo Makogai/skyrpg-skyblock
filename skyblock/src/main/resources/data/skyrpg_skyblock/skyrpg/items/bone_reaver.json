@@ -66,5 +66,11 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Reaving Strike",
+  "trigger": "RIGHT CLICK",
+  "description": "Slash in a huge arc, dealing 125% melee damage to all enemies hit!",
+  "type": "reaving_strike"
  }
 }

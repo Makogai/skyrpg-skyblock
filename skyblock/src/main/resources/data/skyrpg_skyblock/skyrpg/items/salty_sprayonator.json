@@ -19,5 +19,11 @@
    "mapped_item_ids": [],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Configure",
+  "trigger": "LEFT CLICK",
+  "description": "Select a nozzle and material for spraying. Certain materials attract certain types of Pests.",
+  "type": "configure"
  }
 }

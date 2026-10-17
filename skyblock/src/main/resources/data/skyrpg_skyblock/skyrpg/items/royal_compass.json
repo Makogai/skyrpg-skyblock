@@ -7,5 +7,12 @@
  "hypixel": {
   "soulbound": "COOP",
   "has_uuid": true
+ },
+ "ability": {
+  "name": "True Dwarth",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 3.0,
+  "description": "Shows the way towards the nearest Emissary while in the Dwarven Mines.",
+  "type": "true_dwarth"
  }
 }

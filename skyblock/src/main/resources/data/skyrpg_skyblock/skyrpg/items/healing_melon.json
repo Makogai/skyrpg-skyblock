@@ -12,5 +12,12 @@
    "heal": 7,
    "mana_cost": 50
   }
+ },
+ "ability": {
+  "name": "Succulence",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Take a bite and heal 7❤.",
+  "type": "succulence"
  }
 }

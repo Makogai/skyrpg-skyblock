@@ -65,5 +65,13 @@
    "mapped_item_ids": [],
    "game_stage": "STARTER"
   }
+ },
+ "ability": {
+  "name": "Speed Boost",
+  "trigger": "RIGHT CLICK",
+  "mana": 41.0,
+  "cooldown": 5.0,
+  "description": "Grants +100 Speed for 30s.",
+  "type": "speed_boost"
  }
 }

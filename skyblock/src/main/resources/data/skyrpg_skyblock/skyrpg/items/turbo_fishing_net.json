@@ -19,5 +19,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Yoink",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 0.5,
+  "description": "Throw your fishing net at swimming fish to catch them!",
+  "type": "yoink"
  }
 }

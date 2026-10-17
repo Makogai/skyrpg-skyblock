@@ -22,5 +22,13 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Deploy",
+  "trigger": "RIGHT CLICK",
+  "mana": 250.0,
+  "cooldown": 10.0,
+  "description": "Shoot the flare up in the sky for 3m buffing up to 8 players within 40 blocks. Vitality Cost: 10",
+  "type": "deploy"
  }
 }

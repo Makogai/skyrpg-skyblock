@@ -25,5 +25,12 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Deploy",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Place an orb for 1m buffing up to 5 players within 20 blocks. Vitality Cost: 50",
+  "type": "deploy"
  }
 }

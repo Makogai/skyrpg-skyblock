@@ -11,5 +11,12 @@
    "donation_xp": 2,
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Rezonate",
+  "trigger": "RIGHT CLICK",
+  "mana": 18.0,
+  "description": "Leads you to the nearest Fallen Star while in the Dwarven Mines.",
+  "type": "rezonate"
  }
 }

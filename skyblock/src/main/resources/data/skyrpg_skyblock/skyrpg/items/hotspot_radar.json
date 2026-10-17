@@ -11,5 +11,12 @@
    "category": "FISHING",
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Hotspotter",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 2.0,
+  "description": "Points towards the nearest Fishing Hotspot.",
+  "type": "hotspotter"
  }
 }

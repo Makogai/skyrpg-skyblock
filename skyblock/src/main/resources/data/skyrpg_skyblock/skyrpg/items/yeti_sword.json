@@ -100,5 +100,13 @@
    ],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Terrain Toss",
+  "trigger": "RIGHT CLICK",
+  "mana": 250.0,
+  "cooldown": 1.0,
+  "description": "Throws a chunk of terrain in the direction you are facing! Deals up to 15,000 damage.",
+  "type": "terrain_toss"
  }
 }

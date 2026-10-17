@@ -13,5 +13,11 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Set",
+  "trigger": "RIGHT CLICK",
+  "description": "Set your yaw and pitch.",
+  "type": "set"
  }
 }

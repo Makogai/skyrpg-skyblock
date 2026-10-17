@@ -7,5 +7,12 @@
  "glint": true,
  "hypixel": {
   "npc_sell_price": 205000
+ },
+ "ability": {
+  "name": "Time Skip",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 50.0,
+  "description": "Advances the time of all minions on your island by 1 hour",
+  "type": "time_skip"
  }
 }

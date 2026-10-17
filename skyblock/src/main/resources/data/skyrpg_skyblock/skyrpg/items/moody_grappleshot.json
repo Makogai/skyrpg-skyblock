@@ -14,5 +14,11 @@
    "donation_xp": 8,
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Big Pull",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw a hook to grab and pull blazes and certain other Airborne mobs.",
+  "type": "big_pull"
  }
 }

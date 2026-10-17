@@ -11,5 +11,12 @@
  "hypixel": {
   "npc_sell_price": 16000,
   "dungeon_item": true
+ },
+ "ability": {
+  "name": "Aspiring Leap",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Allows you to teleport to co-op members on your private island or garden!",
+  "type": "aspiring_leap"
  }
 }

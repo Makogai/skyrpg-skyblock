@@ -18,5 +18,11 @@
     "signature": "Q2ds/MbywEz1LPjwsQL3T9YU4PVPzWEjLLKA6r8zRkif79xBct6jgD9Z2Dbsb9Rf2GyjCuAZu67MQrSqkMyxWPrJ+dK6o8RP1lkLzsICw0h2Z9GSkdHeiSNDivWtyaW/EXSaRqZREo1rYFooyyO1GoFvEXt5Wc4JxLTbrLWlaCPlSLGpLky8lau8VFBUqVXpnOCLfsUKYeCSKrl0XgV3kxBqNKsYatQ3w47vnpge2K9B8NFv70MvPRlz8TtauJ0fR3URRuUB6bJfrb/4kknbTkrIUY/94XOIBfvoOju5h0zYZWHvLGT/x0VMyO8yIwlj60xQm5mDmRr2TW10HIL6rPq0ISayDFgI4NUx1fsmRqmrJSINLXU1z8RW1vv2srCFrTqLfvEgVvWaPvhw2vNemxK49DX+LgMQFRZT0DTEmH7bFVj2vymrPhqDQNwjGMGmeXTk/wPQPjWhnrWKJeonVfaJmys8agcQC060OwKS8ZRufL822YxJFIxUnpLldsxgqi9YrekiRBTQPbHLiVib8ZnAzOytrkEfy039yq6/3+0Mtu8S60bFE5RjHqxACVPLfsx+njU20/oAtRjbNadnQcoNlBhYUp0F063tUEQiW1y7WPSYmNT1ycc+GmeDregy3yGCGPiSV5Z1mviYF6VJt/2Fa65SxzgA5tEb6kaI/0I="
    }
   }
+ },
+ "ability": {
+  "name": "Ray of Hope",
+  "trigger": "RIGHT CLICK",
+  "description": "Channels your energy towards the target location, exploding on impact for 2,519.3 damage. Costs 2% of your total mana to use. This is the only item that can deal damage to Dante.",
+  "type": "ray_of_hope"
  }
 }

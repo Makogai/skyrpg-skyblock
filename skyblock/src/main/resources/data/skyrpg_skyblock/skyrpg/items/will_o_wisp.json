@@ -22,5 +22,12 @@
     "tier": 10
    }
   ]
+ },
+ "ability": {
+  "name": "Deploy",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Place an orb for 5m buffing up to 10 players within 30 blocks. Affects all players inside a Glacite Mineshaft, regardless of distance.",
+  "type": "deploy"
  }
 }

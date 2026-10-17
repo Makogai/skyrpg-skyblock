@@ -14,5 +14,11 @@
   "serializable": false,
   "can_auction": false,
   "can_trade": false
+ },
+ "ability": {
+  "name": "Revive",
+  "trigger": "RIGHT CLICK",
+  "description": "Revive a player who has died in a dungeon. ONE TIME USE.",
+  "type": "revive"
  }
 }

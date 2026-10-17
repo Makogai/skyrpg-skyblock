@@ -214,5 +214,12 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Life Blood",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Use 10% of your max health to boost your nearby allies by +30 Strength for 10 seconds.",
+  "type": "life_blood"
  }
 }

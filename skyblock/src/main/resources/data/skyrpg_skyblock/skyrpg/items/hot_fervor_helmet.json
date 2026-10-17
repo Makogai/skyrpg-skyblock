@@ -189,5 +189,11 @@
     ]
    }
   ]
+ },
+ "ability": {
+  "name": "Ground Pound",
+  "trigger": "SNEAK",
+  "description": "At 10 stacks, sneak to reset your stacks and perform a Ground Pound dealing damage to mobs within 7 blocks. (Damage scales with your EHP).",
+  "type": "ground_pound"
  }
 }

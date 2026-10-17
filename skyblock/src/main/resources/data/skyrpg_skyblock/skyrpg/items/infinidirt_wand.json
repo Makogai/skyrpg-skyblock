@@ -9,5 +9,11 @@
  "hypixel": {
   "can_auction": false,
   "can_trade": false
+ },
+ "ability": {
+  "name": "Place Dirt",
+  "trigger": "RIGHT CLICK",
+  "description": "Place a dirt block. Costs 1 coin.",
+  "type": "place_dirt"
  }
 }

@@ -8,5 +8,12 @@
  "hypixel": {
   "npc_sell_price": 100,
   "dungeon_item": true
+ },
+ "ability": {
+  "name": "Spirit Leap",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Allows you to teleport to any teammate! Grants 1 second of immunity after teleporting, immunity is cancelled upon dealing damage.",
+  "type": "spirit_leap"
  }
 }

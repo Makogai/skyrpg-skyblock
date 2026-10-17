@@ -162,5 +162,13 @@
    }
   ],
   "museum": true
+ },
+ "ability": {
+  "name": "Enrage",
+  "trigger": "RIGHT CLICK",
+  "mana": 500.0,
+  "cooldown": 20.0,
+  "description": "Taunt enemies in a 10 block radius and reduce their damage against you by 10% for 10s.",
+  "type": "enrage"
  }
 }

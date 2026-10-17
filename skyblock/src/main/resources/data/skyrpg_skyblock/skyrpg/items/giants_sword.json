@@ -96,5 +96,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Giant's Slam",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "cooldown": 30.0,
+  "description": "Slam your sword into the ground dealing 100,000 damage to nearby enemies.",
+  "type": "giant_s_slam"
  }
 }

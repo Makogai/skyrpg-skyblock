@@ -70,5 +70,12 @@
    "mapped_item_ids": [],
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Ice Bolt",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Shoots 1 Ice Bolt that deals 1,000 damage and slows enemies hit for 5 seconds!",
+  "type": "ice_bolt"
  }
 }

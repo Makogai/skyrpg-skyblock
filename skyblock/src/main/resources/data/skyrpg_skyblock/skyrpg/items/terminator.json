@@ -75,5 +75,11 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Salvation",
+  "trigger": "LEFT CLICK",
+  "description": "Can be cast after landing 3 hits. Shoot a beam, penetrating up to 5 enemies. The beam always crits.",
+  "type": "salvation"
  }
 }

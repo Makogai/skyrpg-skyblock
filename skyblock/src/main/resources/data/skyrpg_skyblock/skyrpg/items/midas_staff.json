@@ -70,5 +70,13 @@
    ],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Molten Wave",
+  "trigger": "RIGHT CLICK",
+  "mana": 500.0,
+  "cooldown": 1.0,
+  "description": "Cast a wave of molten gold in the direction you are facing! Deals up to 12,000 damage.",
+  "type": "molten_wave"
  }
 }

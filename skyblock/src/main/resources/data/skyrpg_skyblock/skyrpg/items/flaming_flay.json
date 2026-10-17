@@ -99,5 +99,11 @@
    "category": "COMBAT",
    "game_stage": "MASTER"
   }
+ },
+ "ability": {
+  "name": "Flay",
+  "trigger": "RIGHT CLICK",
+  "description": "Flay your whip in an arc, dealing your melee damage to all enemies in its path. Heal 1% for each Sea Creature hit, up to 25 .",
+  "type": "flay"
  }
 }

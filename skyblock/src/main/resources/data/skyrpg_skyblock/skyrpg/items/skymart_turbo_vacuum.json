@@ -26,5 +26,11 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Vacuum",
+  "trigger": "HOLD RIGHT CLICK",
+  "description": "Deals 150 Damage per second to nearby Pests.",
+  "type": "vacuum"
  }
 }

@@ -12,5 +12,13 @@
    "category": "COMBAT",
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Soulward",
+  "trigger": "RIGHT CLICK",
+  "mana": 350.0,
+  "cooldown": 20.0,
+  "description": "Become invulnerable for 5s, but can't deal damage. Halves your damage for 2s afterwards.",
+  "type": "soulward"
  }
 }

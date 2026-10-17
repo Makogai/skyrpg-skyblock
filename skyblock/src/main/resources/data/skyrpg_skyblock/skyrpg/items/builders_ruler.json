@@ -5,5 +5,11 @@
  "rarity": "legendary",
  "type": "",
  "glint": true,
- "unstackable": true
+ "unstackable": true,
+ "ability": {
+  "name": "Area Planner",
+  "trigger": "RIGHT CLICK",
+  "description": "Right-Click the top of a block to place a line of blocks.",
+  "type": "area_planner"
+ }
 }

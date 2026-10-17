@@ -6,5 +6,11 @@
  "type": "",
  "hypixel": {
   "can_auction": false
+ },
+ "ability": {
+  "name": "Nether Wart Storage",
+  "trigger": "LEFT CLICK",
+  "description": "Place nether wart in the pouch.",
+  "type": "nether_wart_storage"
  }
 }

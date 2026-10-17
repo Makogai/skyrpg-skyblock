@@ -17,5 +17,11 @@
   "item_specific": {
    "regained_rift_time": 25
   }
+ },
+ "ability": {
+  "name": "Punch in!",
+  "trigger": "LEFT CLICK",
+  "description": "Punch another player while this is in your inventory to both regain +25ф Rift Time. Usable once per player per rift visit up to 20 players.",
+  "type": "punch_in"
  }
 }

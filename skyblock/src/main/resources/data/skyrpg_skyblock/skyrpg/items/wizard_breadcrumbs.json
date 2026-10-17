@@ -6,5 +6,11 @@
  "type": "",
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Future Footsteps",
+  "trigger": "RIGHT CLICK",
+  "description": "Use while looking at yellow particles in the world to mark a path to take in the Rift.",
+  "type": "future_footsteps"
  }
 }

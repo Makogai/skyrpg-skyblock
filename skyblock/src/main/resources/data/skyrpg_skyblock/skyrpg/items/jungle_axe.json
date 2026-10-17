@@ -36,5 +36,12 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Throwing Axe",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "While on Foraging Islands, throw your Axe at a tree! It will sweep 50% of the logs it normally would!",
+  "type": "throwing_axe"
  }
 }

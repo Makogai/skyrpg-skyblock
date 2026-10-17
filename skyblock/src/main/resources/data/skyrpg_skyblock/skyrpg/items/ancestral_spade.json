@@ -16,5 +16,12 @@
    "mapped_item_ids": [],
    "game_stage": "AMATEUR"
   }
+ },
+ "ability": {
+  "name": "Echo",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 3.0,
+  "description": "Show the way to the next or nearby Griffin burrow.",
+  "type": "echo"
  }
 }

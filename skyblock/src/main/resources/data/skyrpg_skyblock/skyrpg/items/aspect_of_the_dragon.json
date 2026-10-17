@@ -91,5 +91,12 @@
    "mapped_item_ids": [],
    "game_stage": "INTERMEDIATE"
   }
+ },
+ "ability": {
+  "name": "Dragon Rage",
+  "trigger": "RIGHT CLICK",
+  "mana": 100.0,
+  "description": "All Monsters in front of you take 12,000 damage. Hit monsters take large knockback.",
+  "type": "dragon_rage"
  }
 }

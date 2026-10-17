@@ -101,5 +101,12 @@
     26
    ]
   }
+ },
+ "ability": {
+  "name": "Rapid Fire",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 100.0,
+  "description": "Shoots 5 Arrows per second for 8 seconds! Arrows deal 70% of what they would normally deal.",
+  "type": "rapid_fire"
  }
 }

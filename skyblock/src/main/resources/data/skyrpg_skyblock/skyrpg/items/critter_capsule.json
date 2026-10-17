@@ -7,5 +7,11 @@
  "type": "Capsule",
  "hypixel": {
   "safari_only": true
+ },
+ "ability": {
+  "name": "Capture",
+  "trigger": "RIGHT CLICK",
+  "description": "Throw your Critter Capsule in the direction you're facing. If it hits a Critter, the capsule will attempt to catch them. Critters that drop a more valuable Shard are less likely to be caught.",
+  "type": "capture"
  }
 }

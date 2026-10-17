@@ -8,5 +8,12 @@
  "glint": true,
  "hypixel": {
   "npc_sell_price": 160
+ },
+ "ability": {
+  "name": "Weather",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 5.0,
+  "description": "Allows you to change the weather on your island.",
+  "type": "weather"
  }
 }

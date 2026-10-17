@@ -26,5 +26,11 @@
   ],
   "museum": true,
   "can_place": false
+ },
+ "ability": {
+  "name": "Wasssaaaaa?",
+  "trigger": "RIGHT CLICK",
+  "description": "Instantly calls Maddox!",
+  "type": "wasssaaaaa"
  }
 }

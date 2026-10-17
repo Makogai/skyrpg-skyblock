@@ -22,5 +22,12 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Huge Heal",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 1.0,
+  "description": "Heal 120❤ per second for 6s. Wand heals don't stack. Vitality Cost: 25",
+  "type": "huge_heal"
  }
 }

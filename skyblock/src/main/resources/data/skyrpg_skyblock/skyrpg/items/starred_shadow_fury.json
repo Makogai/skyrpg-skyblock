@@ -104,5 +104,12 @@
     ]
    }
   ]
+ },
+ "ability": {
+  "name": "Shadow Fury",
+  "trigger": "RIGHT CLICK",
+  "cooldown": 15.0,
+  "description": "Rapidly teleports you to up to 5 enemies within 12 blocks, rooting each of them and allowing you to hit them.",
+  "type": "shadow_fury"
  }
 }

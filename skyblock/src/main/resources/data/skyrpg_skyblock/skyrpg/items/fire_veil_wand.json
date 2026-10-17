@@ -215,5 +215,13 @@
    "mapped_item_ids": [],
    "game_stage": "EXPERT"
   }
+ },
+ "ability": {
+  "name": "Fire Veil",
+  "trigger": "RIGHT CLICK",
+  "mana": 300.0,
+  "cooldown": 1.0,
+  "description": "Creates a veil of fire around you for 5s, dealing 15,000 damage per second to mobs within.",
+  "type": "fire_veil"
  }
 }

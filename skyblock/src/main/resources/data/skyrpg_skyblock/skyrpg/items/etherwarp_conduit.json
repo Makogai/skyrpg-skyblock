@@ -17,5 +17,12 @@
     "level": 7
    }
   ]
+ },
+ "ability": {
+  "name": "Ether Transmission",
+  "trigger": "RIGHT CLICK",
+  "mana": 180.0,
+  "description": "Teleport to your targeted block up to 57 blocks away.",
+  "type": "ether_transmission"
  }
 }

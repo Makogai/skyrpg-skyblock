@@ -289,6 +289,14 @@ phase so the next session can pick up where this one stopped.
       `GemGrinderMenu` + `GemGrinderScreen` (Gemma in the Nucleus, `gemstone_grinder` action, `/gemstones` for admins):
       unlock a slot (coins and gems), set your best fitting gem, right-click to take it out for Hypixel's price.
       Not yet: Gemstone Chambers, chisel slots, the Divine column, Perfect gems' crystals.
+- [x] **Item abilities** (Hypixel's): `import_items.py` reads each item's first ability from NEU's lore (name, trigger,
+      description, Mana Cost, Cooldown; type = the name in snake case): 289 items. Tooltips show "Ability: <name>
+      <TRIGGER>". `HypixelAbilities` (skyblock) implements the common ones with numbers read from the description:
+      Instant Transmission (teleport N blocks, stop before walls, +Speed), Dragon Rage / Ice Spray / Molten Wave (cones),
+      Giant's Slam, Showtime / Guided Bat / Ice Bolt / Rapid Fire / Fire Blast (shots with blasts or slowness), Speed
+      Boost, the wands' heals; ability damage × (1 + Intelligence/100) × (1 + Ability Damage %). Temporary speed is a
+      stat source. Not yet: the other ~270 abilities, scroll abilities (Hyperion's Wither Impact), sneak/left-click
+      triggers, set bonuses.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

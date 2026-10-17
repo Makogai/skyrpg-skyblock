@@ -8,5 +8,12 @@
  "glint": true,
  "hypixel": {
   "origin": "RIFT"
+ },
+ "ability": {
+  "name": "Weird Transmission",
+  "trigger": "RIGHT CLICK",
+  "mana": 50.0,
+  "description": "Teleport 5 blocks ahead of you.",
+  "type": "weird_transmission"
  }
 }

@@ -20,5 +20,13 @@
    "category": "COMBAT",
    "game_stage": "SKILLED"
   }
+ },
+ "ability": {
+  "name": "Splash",
+  "trigger": "SNEAK",
+  "mana": 20.0,
+  "cooldown": 1.0,
+  "description": "Crouch to splash some magma around.",
+  "type": "splash"
  }
 }

@@ -14,5 +14,13 @@
   "ability_damage_scaling": 0.3,
   "npc_sell_price": 1,
   "dungeon_item": true
+ },
+ "ability": {
+  "name": "Implosion",
+  "trigger": "RIGHT CLICK",
+  "mana": 300.0,
+  "cooldown": 10.0,
+  "description": "Deals 35,375.8 damage to nearby enemies.",
+  "type": "implosion"
  }
 }

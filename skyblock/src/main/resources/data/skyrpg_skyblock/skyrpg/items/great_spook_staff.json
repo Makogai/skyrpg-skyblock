@@ -11,5 +11,12 @@
  "hypixel": {
   "museum": true,
   "npc_sell_price": 0
+ },
+ "ability": {
+  "name": "Spooker",
+  "trigger": "LEFT CLICK",
+  "cooldown": 1.0,
+  "description": "Will spook other players with a scary message when you punch them while wearing full Great Spook Armor.",
+  "type": "spooker"
  }
 }

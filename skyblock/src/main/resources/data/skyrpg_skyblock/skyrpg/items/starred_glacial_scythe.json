@@ -67,5 +67,12 @@
     "level": 10
    }
   ]
+ },
+ "ability": {
+  "name": "Ice Bolt",
+  "trigger": "RIGHT CLICK",
+  "mana": 75.0,
+  "description": "Shoots 1 Ice Bolt that deals 1,700 damage and slows enemies hit for 5 seconds! When hitting the ground, also creates an explosion of 3 blocks, dealing the same damage.",
+  "type": "ice_bolt"
  }
 }

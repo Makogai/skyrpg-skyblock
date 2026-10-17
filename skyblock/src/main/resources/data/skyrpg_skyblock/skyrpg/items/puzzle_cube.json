@@ -11,5 +11,11 @@
  },
  "hypixel": {
   "museum": true
+ },
+ "ability": {
+  "name": "Puzzle",
+  "trigger": "RIGHT CLICK",
+  "description": "Lets you solve a puzzle.",
+  "type": "puzzle"
  }
 }

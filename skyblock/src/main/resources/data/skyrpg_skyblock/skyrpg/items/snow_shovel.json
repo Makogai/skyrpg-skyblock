@@ -3,5 +3,11 @@
  "base": "minecraft:iron_shovel",
  "name": "Snow Shovel",
  "rarity": "rare",
- "type": ""
+ "type": "",
+ "ability": {
+  "name": "Snow Placer",
+  "trigger": "RIGHT CLICK",
+  "description": "Right-Click a block to place a 3x3 snow layer.",
+  "type": "snow_placer"
+ }
 }

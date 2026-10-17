@@ -8,5 +8,11 @@
   "soulbound": "SOLO",
   "has_uuid": true,
   "serializable": false
+ },
+ "ability": {
+  "name": "Phwomp",
+  "trigger": "RIGHT CLICK",
+  "description": "Shoots a dart. Can only damage Zombies from Zombie Shootout.",
+  "type": "phwomp"
  }
 }

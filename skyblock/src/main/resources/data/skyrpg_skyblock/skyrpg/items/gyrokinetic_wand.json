@@ -22,5 +22,13 @@
    "mapped_item_ids": [],
    "game_stage": "PROFESSIONAL"
   }
+ },
+ "ability": {
+  "name": "Gravity Storm",
+  "trigger": "LEFT CLICK",
+  "mana": 1200.0,
+  "cooldown": 30.0,
+  "description": "Create a large rift at the aimed location, pulling all mobs together. Regen mana 10x slower for 3s after cast.",
+  "type": "gravity_storm"
  }
 }
