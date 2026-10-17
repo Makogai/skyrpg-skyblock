@@ -1,0 +1,13 @@
+{
+ "name": "Sweet",
+ "stone": "ROCK_CANDY",
+ "combat": 15,
+ "stats": {
+  "health": 15.1,
+  "defense": 10.8,
+  "speed": 1.2
+ },
+ "unique": {
+  "speed": 5.0
+ }
+}

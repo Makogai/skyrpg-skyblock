@@ -1,0 +1,14 @@
+{
+ "name": "Adept",
+ "stone": "END_STONE_SHULKER",
+ "combat": 20,
+ "stats": {
+  "health": 16.8,
+  "defense": 9.6,
+  "intelligence": 3.6
+ },
+ "unique": {
+  "health": 100.0,
+  "defense": 50.0
+ }
+}

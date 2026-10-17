@@ -1,0 +1,13 @@
+{
+ "name": "Bizarre",
+ "stone": "ECCENTRIC_PAINTING",
+ "combat": 25,
+ "stats": {
+  "strength": -2.4,
+  "intelligence": 43.2,
+  "crit_damage": -2.4
+ },
+ "unique": {
+  "ability_damage": 5.0
+ }
+}

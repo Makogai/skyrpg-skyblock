@@ -78,6 +78,12 @@ public final class SkyBlockMenuPage implements MenuPage {
             new Tile(Group.GEAR, "Storage", Items.ENDER_CHEST, SkyRpgSkyblock.id("storage"), null, SkyBlockMenuPage::storageLine),
             new Tile(Group.GEAR, "Wardrobe", Items.LEATHER_CHESTPLATE, null,
                     () -> ClientPlayNetworking.send(new StoragePayloads.Open(-1)), SkyBlockMenuPage::wardrobeLine),
+            new Tile(Group.GEAR, "Accessory Bag", Items.GOLD_NUGGET, null, () -> {
+                var connection = net.minecraft.client.Minecraft.getInstance().getConnection();
+                if (connection != null) {
+                    connection.sendCommand("accessories");
+                }
+            }, () -> "Talismans, rings, Magical Power"),
             new Tile(Group.GEAR, "Pets", Items.BONE, Identifier.parse("skyrpg_pets:pets"), null, SkyBlockMenuPage::petLine),
             new Tile(Group.GEAR, "SkyBlock Items", Items.CHEST, SkyRpgSkyblock.id("items"), null,
                     () -> Msg.number(ItemRegistry.items().stream().filter(def -> def.skyblock()).count()) + " items"),

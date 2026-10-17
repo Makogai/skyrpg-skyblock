@@ -1,0 +1,14 @@
+{
+ "name": "Frozen",
+ "stone": "GLACITE_SHARD",
+ "combat": 20,
+ "stats": {
+  "defense": 13.2,
+  "true_defense": 1.8
+ },
+ "unique": {
+  "strength": 25.0,
+  "crit_damage": 25.0,
+  "true_defense": 10.0
+ }
+}

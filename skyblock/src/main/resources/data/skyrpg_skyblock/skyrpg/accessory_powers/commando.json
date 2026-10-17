@@ -1,0 +1,11 @@
+{
+ "name": "Commando",
+ "combat": 15,
+ "stats": {
+  "health": 5.02,
+  "defense": 2.4,
+  "strength": 8.4,
+  "crit_chance": 0.475,
+  "crit_damage": 8.4
+ }
+}

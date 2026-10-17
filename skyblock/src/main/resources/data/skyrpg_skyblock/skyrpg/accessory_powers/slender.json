@@ -1,0 +1,18 @@
+{
+ "name": "Slender",
+ "stone": "HAZMAT_ENDERMAN",
+ "combat": 30,
+ "stats": {
+  "health": 8.4,
+  "defense": 6.0,
+  "speed": 0.6,
+  "strength": 6.0,
+  "intelligence": 7.2,
+  "crit_damage": 6.0,
+  "attack_speed": 1.1
+ },
+ "unique": {
+  "defense": 100.0,
+  "strength": 50.0
+ }
+}

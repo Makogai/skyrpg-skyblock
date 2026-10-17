@@ -1,0 +1,11 @@
+{
+ "name": "Sighted",
+ "stone": "ENDER_MONOCLE",
+ "combat": 15,
+ "stats": {
+  "intelligence": 36.0
+ },
+ "unique": {
+  "ability_damage": 3.0
+ }
+}

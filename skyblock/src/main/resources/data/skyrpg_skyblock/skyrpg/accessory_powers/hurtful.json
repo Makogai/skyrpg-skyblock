@@ -1,0 +1,12 @@
+{
+ "name": "Hurtful",
+ "stone": "MAGMA_URCHIN",
+ "combat": 25,
+ "stats": {
+  "strength": 4.8,
+  "crit_damage": 19.2
+ },
+ "unique": {
+  "attack_speed": 15.0
+ }
+}

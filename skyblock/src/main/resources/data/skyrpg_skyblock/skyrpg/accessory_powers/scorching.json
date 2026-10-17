@@ -1,0 +1,13 @@
+{
+ "name": "Scorching",
+ "stone": "SCORCHED_BOOKS",
+ "combat": 35,
+ "stats": {
+  "strength": 8.4,
+  "crit_damage": 9.6,
+  "attack_speed": 1.8
+ },
+ "unique": {
+  "ferocity": 7.0
+ }
+}

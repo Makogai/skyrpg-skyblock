@@ -1,0 +1,15 @@
+{
+ "name": "Crumbly",
+ "stone": "CHOCOLATE_CHIP",
+ "combat": 20,
+ "stats": {
+  "health": 10.1,
+  "intelligence": 5.4,
+  "true_defense": 0.6,
+  "vitality": 2.4,
+  "mending": 1.8
+ },
+ "unique": {
+  "speed": 25.0
+ }
+}

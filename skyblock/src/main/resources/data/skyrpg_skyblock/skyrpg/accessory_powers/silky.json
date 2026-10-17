@@ -1,0 +1,12 @@
+{
+ "name": "Silky",
+ "stone": "LUXURIOUS_SPOOL",
+ "combat": 15,
+ "stats": {
+  "speed": 0.6,
+  "crit_damage": 22.8
+ },
+ "unique": {
+  "attack_speed": 5.0
+ }
+}

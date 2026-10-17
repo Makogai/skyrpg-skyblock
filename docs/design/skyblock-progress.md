@@ -197,6 +197,15 @@ phase so the next session can pick up where this one stopped.
       (new core `DamageBonus`, summed with Warrior in `CombatStats`), on-hit and on-kill effects; Ultimate Wise in
       `Abilities`. `/sbenchant` for admins. Not yet: Looting/Luck/Experience, most ultimates and fishing/farming extras,
       Bookshelf Power and Enchanting-level requirements, the Experimentation Table, book rarity by level.
+- [x] **Accessories** (Hypixel's): the Accessory Bag (`AccessoryBag`, `AccessoryBagMenu` + `AccessoryBagScreen`; pages of
+      45, Redstone collection II and +6 slots a tier; SkyBlock Menu tile and `/accessories`), accessory stats from the bag
+      and inventory (each id once, only the highest of a line: NEU's talisman_upgrades), Magical Power by rarity
+      (recombobulated counts), Maxwell (`MaxwellMenu` + `MaxwellScreen`, Hub, by Seraphine; action `maxwell`): 31
+      Accessory Powers from `tools/skyblock/import_powers.py` (the wiki's power and Power Stone lists: base stats ×
+      29.97 × ln(0.0019 × MP + 1)^1.2, unique bonuses, Combat requirements), learned with 9 Power Stones. Equipment: the
+      survival accessory slots are Hypixel's Necklace, Cloak, Belt and Gloves slots (by item category), with reforges.
+      Not yet: Tuning Points, enrichments, extra bag slots (Redstone Miner, Jacobus), Hegemony/Abicase specials,
+      accessory abilities, SkyBlock XP from Magical Power.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

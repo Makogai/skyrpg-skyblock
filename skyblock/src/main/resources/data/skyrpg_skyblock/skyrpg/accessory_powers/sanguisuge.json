@@ -1,0 +1,14 @@
+{
+ "name": "Sanguisuge",
+ "stone": "DISPLACED_LEECH",
+ "combat": 10,
+ "stats": {
+  "health": 5.1,
+  "strength": 12.0,
+  "crit_damage": 4.8,
+  "vitality": 1.2
+ },
+ "unique": {
+  "intelligence": 100.0
+ }
+}

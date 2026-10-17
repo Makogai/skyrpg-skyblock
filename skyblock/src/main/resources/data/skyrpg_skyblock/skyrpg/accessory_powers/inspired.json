@@ -1,0 +1,12 @@
+{
+ "name": "Inspired",
+ "combat": 15,
+ "stats": {
+  "health": 1.65,
+  "defense": 1.2,
+  "strength": 4.8,
+  "intelligence": 16.2,
+  "crit_chance": 0.95,
+  "crit_damage": 3.6
+ }
+}

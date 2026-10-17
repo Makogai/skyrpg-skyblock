@@ -16,9 +16,11 @@ final class AccessoryStatSource implements Stats.Source {
     @Override
     public void contribute(ServerPlayer player, Stats.Contributor out) {
         for (AccessorySlot slot : AccessorySlot.values()) {
-            ItemDefinition def = SkyItems.definition(Accessories.worn(player, slot));
+            net.minecraft.world.item.ItemStack worn = Accessories.worn(player, slot);
+            ItemDefinition def = SkyItems.definition(worn);
             if (def != null) {
-                def.stats().forEach((stat, value) -> {
+                // With its reforge (equipment reforges) and potato books.
+                com.skyrpg.items.ItemMods.stats(worn, def).forEach((stat, value) -> {
                     if (StatTypes.isPlayerStat(stat)) {
                         out.add(stat, value);
                     }

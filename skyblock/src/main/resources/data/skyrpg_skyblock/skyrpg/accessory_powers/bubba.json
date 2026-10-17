@@ -1,0 +1,17 @@
+{
+ "name": "Bubba",
+ "stone": "BUBBA_BLISTER",
+ "combat": 25,
+ "stats": {
+  "health": 5.1,
+  "defense": -9.6,
+  "strength": 6.0,
+  "crit_chance": 0.9,
+  "crit_damage": 10.8,
+  "attack_speed": 1.8,
+  "true_defense": 1.2
+ },
+ "unique": {
+  "combat_wisdom": 2.0
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "name": "Protected",
+ "starter": true,
+ "combat": 0,
+ "stats": {
+  "health": 11.75,
+  "defense": 10.8,
+  "strength": 2.4,
+  "crit_chance": 0.475,
+  "crit_damage": 1.2
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "name": "Shaded",
+ "stone": "DARK_ORB",
+ "combat": 20,
+ "stats": {
+  "speed": 0.6,
+  "strength": 4.8,
+  "crit_damage": 18.0
+ },
+ "unique": {
+  "attack_speed": 3.0,
+  "ferocity": 3.0
+ }
+}

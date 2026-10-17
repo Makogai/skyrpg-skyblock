@@ -16,7 +16,7 @@ On the right is everything you can open, in four colour-coded groups. Each tile 
 | Group | Tiles |
 | --- | --- |
 | You (gold) | Your Profile, Skills, Collections, SkyBlock Leveling |
-| Gear (purple) | [Storage](storage-and-wardrobe) (how many items in how many pages), [Wardrobe](storage-and-wardrobe#wardrobe) (the set you wear), Pets (your pet out), [SkyBlock Items](skyblock-items#browsing-every-item) |
+| Gear (purple) | [Storage](storage-and-wardrobe) (how many items in how many pages), [Wardrobe](storage-and-wardrobe#wardrobe) (the set you wear), [Accessory Bag](accessories) (your accessories, Magical Power), Pets (your pet out), [SkyBlock Items](skyblock-items#browsing-every-item) |
 | World (aqua) | Fast Travel (warps unlocked), [Calendar](calendar-and-events) (today's date), Recipe Book |
 | Account (green) | [Profiles](profiles-and-islands) (how many of 5), Personal Bank, Settings |
 

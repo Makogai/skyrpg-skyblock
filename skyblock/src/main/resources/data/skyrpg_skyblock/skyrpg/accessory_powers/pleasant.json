@@ -1,0 +1,9 @@
+{
+ "name": "Pleasant",
+ "stone": "PRECIOUS_PEARL",
+ "combat": 25,
+ "stats": {
+  "health": 13.45,
+  "defense": 14.4
+ }
+}

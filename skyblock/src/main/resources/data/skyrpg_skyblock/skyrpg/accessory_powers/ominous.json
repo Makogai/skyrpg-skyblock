@@ -1,0 +1,13 @@
+{
+ "name": "Ominous",
+ "combat": 15,
+ "stats": {
+  "health": 5.02,
+  "speed": 0.95,
+  "strength": 3.6,
+  "intelligence": 6.1,
+  "crit_chance": 1.45,
+  "crit_damage": 3.6,
+  "attack_speed": 0.9
+ }
+}

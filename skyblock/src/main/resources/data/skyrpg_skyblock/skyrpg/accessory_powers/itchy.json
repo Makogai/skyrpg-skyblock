@@ -1,0 +1,15 @@
+{
+ "name": "Itchy",
+ "stone": "FURBALL",
+ "combat": 20,
+ "stats": {
+  "speed": 0.6,
+  "strength": 7.2,
+  "crit_damage": 8.4,
+  "attack_speed": 2.15
+ },
+ "unique": {
+  "strength": 15.0,
+  "crit_damage": 15.0
+ }
+}

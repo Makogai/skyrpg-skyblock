@@ -1,0 +1,24 @@
+{
+  "name": "Maxwell",
+  "role": "Thaumaturgist",
+  "color": "#AA00AA",
+  "hint": "Powers",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    46.5,
+    72.0,
+    67.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Your accessories hold Magical Power. I can shape it into a power for you.",
+    "Bring me nine of a Power Stone and I'll teach you its power."
+  ],
+  "action": {
+    "type": "maxwell",
+    "params": {}
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "name": "Prepared",
+ "combat": 15,
+ "stats": {
+  "health": 12.4,
+  "defense": 11.3,
+  "strength": 1.95,
+  "crit_chance": 0.4,
+  "crit_damage": 0.95
+ }
+}

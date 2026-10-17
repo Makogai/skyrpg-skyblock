@@ -1,0 +1,11 @@
+{
+ "name": "Healthy",
+ "stone": "VITAMIN_DEATH",
+ "combat": 30,
+ "stats": {
+  "health": 33.6
+ },
+ "unique": {
+  "health": 200.0
+ }
+}

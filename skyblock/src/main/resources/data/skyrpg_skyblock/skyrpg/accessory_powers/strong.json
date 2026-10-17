@@ -1,0 +1,13 @@
+{
+ "name": "Strong",
+ "stone": "MANDRAA",
+ "combat": 30,
+ "stats": {
+  "strength": 12.0,
+  "crit_damage": 12.0
+ },
+ "unique": {
+  "strength": 25.0,
+  "crit_damage": 25.0
+ }
+}

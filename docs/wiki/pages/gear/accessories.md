@@ -3,44 +3,46 @@ title: Accessories
 category: gear
 order: 4
 icon: skyrpg_skyblock:speed_talisman
-summary: Hypixel's 579 accessories are in the game with their stats, but the Accessory Bag and Magical Power are not built yet, so none of them gives you anything today.
+summary: Talismans, rings, artifacts and relics in the Accessory Bag, Magical Power and Maxwell's Accessory Powers, and the four equipment slots.
 ---
-Accessories are the talismans, rings, artifacts, relics and equipment (necklaces, cloaks, belts, gloves and bracelets) that you carry for their stats. All of Hypixel SkyBlock's are in the game as items. What is missing is the place to put them: Hypixel keeps them in the **Accessory Bag**, and that is still to come.
+**Accessories** (talismans, rings, artifacts and relics) give their stats just by being yours. Keep them in the **Accessory Bag**, where they also give **Magical Power**, which powers up the **Accessory Power** you pick at **Maxwell**. **Equipment** (necklaces, cloaks, belts, gloves and bracelets) is worn in its own four slots.
 
-## What is in the game
+## The Accessory Bag
 
-| Kind | Items |
+Open it from the **Accessory Bag** tile in the [SkyBlock Menu](skyblock-menu), or with `/accessories`. It unlocks at **Redstone collection II** and grows by **6 slots** with every Redstone tier after that (see [Collections](collections)). Only accessories go in.
+
+Every accessory you have counts for its stats, in the bag or in your inventory, with two rules:
+
+- **Each accessory once:** two Speed Rings give one Speed Ring's stats.
+- **Only the highest of a line:** with a Speed Ring, the Speed Talisman stops counting; with a Speed Artifact, both do.
+
+## Magical Power
+
+Each accessory **in the bag** (once, and the highest of its line) gives Magical Power by its rarity. A [Recombobulator 3000](reforging) raises it.
+
+| Rarity | Magical Power |
 | --- | --- |
-| Accessory (talismans, rings, artifacts, relics) | 432 |
-| Necklace | 37 |
-| Cloak | 34 |
-| Belt | 41 |
-| Gloves | 24 |
-| Bracelet | 11 |
+| Common | 3 |
+| Uncommon | 5 |
+| Rare | 8 |
+| Epic | 12 |
+| Legendary | 16 |
+| Mythic | 22 |
+| Special | 3 |
+| Very Special | 5 |
 
-That is 579 accessories, each with Hypixel's name, rarity and stats, such as the {{item:skyrpg_skyblock:speed_talisman}}. They have their own pages, and [Items: accessories](items-accessories) lists them all.
+The bag's title shows your total.
 
-## What works today
+## Accessory Powers (Maxwell)
 
-- **You can get them.** 55 are sold by NPC shops, 243 have a crafting recipe in the [Recipe Book](recipe-book) (298 in all have one or the other), and players can trade them at the [Auction House](auction-house). Admins can give any with `/sbitem`. See [NPC shops](npc-shops).
-- **They show Hypixel's tooltip**: stats in Hypixel's order, lore, and the bold rarity line, such as **COMMON ACCESSORY**.
-- **They can be improved.** An anvil's Recombobulator 3000 raises any accessory one rarity, and the Blacksmith's equipment reforges fit necklaces, cloaks, belts, gloves and bracelets (not talismans, rings, artifacts or relics, as on Hypixel). See [Reforging](reforging).
-- **They never wear out.**
+**Maxwell** stands beside Seraphine in the Hub (the bag's crystal tab opens him too). He shows every power with what it gives you at your Magical Power. Click one to make it **your power**: its stats are multiplied by your Magical Power, 29.97 × ln(0.0019 × MP + 1)^1.2 (about ×0.44 at 16 Magical Power, ×9.6 at 250 and ×26 at 750).
 
-## What does not work yet
+- **Starter powers** (Fortuitous, Pretty, Protected, Simple, Warrior) are yours from the start; the others (Commando, Disciplined, Inspired, Ominous, Prepared) need Combat XV.
+- **Stone powers** (Bloody, Silky, Sweet, Shaded, Forceful, Adept, Bizarre and 14 more) are learned by giving Maxwell **9 of their Power Stone**. They also have a **unique bonus** that doesn't scale (Bloody: +10 Bonus Attack Speed). All of them are on the [Bazaar](bazaar).
+
+## Equipment
+
+Necklaces, cloaks, belts, gloves and bracelets go in the four equipment slots next to your armour in the inventory: **Necklace**, **Cloak**, **Belt** and **Gloves** (gloves or a bracelet). Their stats count while worn, with their reforge and Potato Books. Equipment takes the Blacksmith's equipment reforges (Astute, Blended, Brilliant...).
 
 > [!NOTE]
-> Nothing in your inventory counts as an accessory yet. Carrying one gives you no stats, and there is no Accessory Bag.
-
-- **The Accessory Bag.** On Hypixel it is a menu of slots that holds every accessory you own and adds their stats. It is not built, and neither is the SkyBlock Menu tile for it.
-- **Magical Power.** Each accessory you hold adds Magical Power by its rarity, and Power Stones turn that into extra stats. This arrives with the bag.
-- **Abilities and effects.** Hypixel's item data has stats but no ability text, so effects such as the Feather Talisman's fall protection are not in the game. A few have no stats at all and so do nothing.
-- **The four old accessory slots** (amulet, cloak, belt, bracers) next to the armour in the inventory come from the survival game and take only its own accessories. Hypixel's do not fit in them.
-
-## See also
-
-- [Armour sets](armour-sets)
-- [Weapons](weapons)
-- [Reforging](reforging)
-- [Stats](stats)
-- [SkyBlock items](skyblock-items)
+> Not yet: Tuning Points, enrichments, the Redstone Miner's and Jacobus's extra bag slots, and the special accessories (Hegemony Artifact, Abicases, dungeon double Magical Power). Accessory abilities from Hypixel's lore (the Zombie Talisman's damage cut and the like) show on the item but aren't built.

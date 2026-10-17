@@ -1,0 +1,11 @@
+{
+ "name": "Disciplined",
+ "combat": 15,
+ "stats": {
+  "health": 5.02,
+  "defense": 2.4,
+  "strength": 7.2,
+  "crit_chance": 1.45,
+  "crit_damage": 7.2
+ }
+}

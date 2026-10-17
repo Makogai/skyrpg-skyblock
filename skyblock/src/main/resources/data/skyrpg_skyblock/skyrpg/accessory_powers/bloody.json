@@ -1,0 +1,13 @@
+{
+ "name": "Bloody",
+ "stone": "BEATING_HEART",
+ "combat": 20,
+ "stats": {
+  "strength": 10.8,
+  "intelligence": 3.6,
+  "crit_damage": 10.8
+ },
+ "unique": {
+  "attack_speed": 10.0
+ }
+}

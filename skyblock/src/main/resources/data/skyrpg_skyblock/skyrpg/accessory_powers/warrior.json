@@ -1,0 +1,12 @@
+{
+ "name": "Warrior",
+ "starter": true,
+ "combat": 0,
+ "stats": {
+  "health": 3.35,
+  "defense": 1.2,
+  "strength": 8.4,
+  "crit_chance": 2.4,
+  "crit_damage": 6.0
+ }
+}

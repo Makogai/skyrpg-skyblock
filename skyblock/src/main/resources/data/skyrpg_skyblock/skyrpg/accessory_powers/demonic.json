@@ -1,0 +1,12 @@
+{
+ "name": "Demonic",
+ "stone": "HORNS_OF_TORMENT",
+ "combat": 25,
+ "stats": {
+  "strength": 5.5,
+  "intelligence": 27.725
+ },
+ "unique": {
+  "crit_damage": 50.0
+ }
+}

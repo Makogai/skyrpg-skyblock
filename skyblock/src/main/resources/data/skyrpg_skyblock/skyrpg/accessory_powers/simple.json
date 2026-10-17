@@ -1,0 +1,14 @@
+{
+ "name": "Simple",
+ "starter": true,
+ "combat": 0,
+ "stats": {
+  "health": 5.02,
+  "defense": 3.6,
+  "speed": 1.2,
+  "strength": 3.6,
+  "intelligence": 5.4,
+  "crit_chance": 1.45,
+  "crit_damage": 3.6
+ }
+}

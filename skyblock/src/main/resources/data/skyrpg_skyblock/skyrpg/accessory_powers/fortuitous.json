@@ -1,0 +1,12 @@
+{
+ "name": "Fortuitous",
+ "starter": true,
+ "combat": 0,
+ "stats": {
+  "health": 3.35,
+  "defense": 1.2,
+  "strength": 4.8,
+  "crit_chance": 4.35,
+  "crit_damage": 4.8
+ }
+}

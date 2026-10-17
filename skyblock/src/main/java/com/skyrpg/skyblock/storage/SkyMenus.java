@@ -25,6 +25,11 @@ public final class SkyMenus {
             new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.REFORGE, id, inventory, ItemWork.Mode.REFORGE), FeatureFlags.VANILLA_SET));
     public static final MenuType<com.skyrpg.skyblock.enchant.EnchantMenu> ENCHANT = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("enchant"), new MenuType<>(com.skyrpg.skyblock.enchant.EnchantMenu::new, FeatureFlags.VANILLA_SET));
+    public static final MenuType<com.skyrpg.skyblock.accessory.AccessoryBagMenu> ACCESSORY_BAG = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("accessory_bag"), new MenuType<>(com.skyrpg.skyblock.accessory.AccessoryBagMenu::new, FeatureFlags.VANILLA_SET));
+    public static final MenuType<com.skyrpg.skyblock.accessory.MaxwellMenu> MAXWELL = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("maxwell"), new ExtendedMenuType<>(com.skyrpg.skyblock.accessory.MaxwellMenu::new,
+                    com.skyrpg.skyblock.accessory.MaxwellMenu.View.CODEC));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),
             new MenuType<>((id, inventory) -> new ItemWorkMenu(SkyMenus.ANVIL, id, inventory, ItemWork.Mode.ANVIL), FeatureFlags.VANILLA_SET));
 

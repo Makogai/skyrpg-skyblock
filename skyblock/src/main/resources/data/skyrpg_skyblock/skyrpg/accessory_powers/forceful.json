@@ -1,0 +1,13 @@
+{
+ "name": "Forceful",
+ "stone": "ACACIA_BIRDHOUSE",
+ "combat": 20,
+ "stats": {
+  "health": 1.7,
+  "strength": 18.0,
+  "crit_damage": 4.8
+ },
+ "unique": {
+  "ferocity": 4.0
+ }
+}
