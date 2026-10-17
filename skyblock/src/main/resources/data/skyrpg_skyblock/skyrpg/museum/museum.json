@@ -1,0 +1,8488 @@
+{
+ "categories": [
+  {
+   "id": "combat",
+   "entries": [
+    {
+     "id": "ARTISANAL_SHORTBOW",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ARTISANAL_SHORTBOW"
+     ]
+    },
+    {
+     "id": "ASPECT_OF_THE_JERRY",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ASPECT_OF_THE_JERRY"
+     ]
+    },
+    {
+     "id": "BLOBFISH_HAT",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "BLOBFISH_HAT"
+     ]
+    },
+    {
+     "id": "CELESTE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CELESTE_BOOTS",
+      "CELESTE_CHESTPLATE",
+      "CELESTE_HELMET",
+      "CELESTE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "CELESTE_WAND",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "CELESTE_WAND"
+     ]
+    },
+    {
+     "id": "CLOWNFISH_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CLOWNFISH_HAT"
+     ]
+    },
+    {
+     "id": "COW_HEAD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "COW_HEAD"
+     ]
+    },
+    {
+     "id": "CREEPER_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CREEPER_HAT"
+     ]
+    },
+    {
+     "id": "DOJO_WHITE_BELT",
+     "xp": 1,
+     "stage": "SKILLED",
+     "items": [
+      "DOJO_WHITE_BELT"
+     ]
+    },
+    {
+     "id": "END_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "END_SWORD"
+     ]
+    },
+    {
+     "id": "FANCY_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "FANCY_SWORD"
+     ]
+    },
+    {
+     "id": "MAGMA_FISH_HAT",
+     "xp": 1,
+     "stage": "SKILLED",
+     "items": [
+      "MAGMA_FISH_HAT"
+     ]
+    },
+    {
+     "id": "MERCENARY",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "MERCENARY_BOOTS",
+      "MERCENARY_CHESTPLATE",
+      "MERCENARY_HELMET",
+      "MERCENARY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "PUFFERFISH_HAT",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "PUFFERFISH_HAT"
+     ]
+    },
+    {
+     "id": "ROGUE_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ROGUE_SWORD"
+     ]
+    },
+    {
+     "id": "ROSETTA",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ROSETTA_BOOTS",
+      "ROSETTA_CHESTPLATE",
+      "ROSETTA_HELMET",
+      "ROSETTA_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SKELETON_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SKELETON_HAT"
+     ]
+    },
+    {
+     "id": "SLIME_HAT",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "SLIME_HAT"
+     ]
+    },
+    {
+     "id": "SNOW_CANNON",
+     "xp": 1,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SNOW_CANNON"
+     ]
+    },
+    {
+     "id": "SPIDER_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SPIDER_HAT"
+     ]
+    },
+    {
+     "id": "SPIDER_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SPIDER_SWORD"
+     ]
+    },
+    {
+     "id": "SQUIRE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SQUIRE_BOOTS",
+      "SQUIRE_CHESTPLATE",
+      "SQUIRE_HELMET",
+      "SQUIRE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SQUIRE_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SQUIRE_SWORD"
+     ]
+    },
+    {
+     "id": "UNDEAD_SWORD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "UNDEAD_SWORD"
+     ]
+    },
+    {
+     "id": "ZOMBIE_HAT",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "ZOMBIE_HAT"
+     ]
+    },
+    {
+     "id": "ANCESTRAL_SPADE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "ANCESTRAL_SPADE"
+     ]
+    },
+    {
+     "id": "ARACK",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "ARACK"
+     ]
+    },
+    {
+     "id": "DOJO_BLUE_BELT",
+     "xp": 2,
+     "stage": "EXPERT",
+     "items": [
+      "DOJO_BLUE_BELT"
+     ],
+     "child": "DOJO_GREEN_BELT"
+    },
+    {
+     "id": "DOJO_GREEN_BELT",
+     "xp": 2,
+     "stage": "SKILLED",
+     "items": [
+      "DOJO_GREEN_BELT"
+     ],
+     "child": "DOJO_YELLOW_BELT"
+    },
+    {
+     "id": "DOJO_YELLOW_BELT",
+     "xp": 2,
+     "stage": "SKILLED",
+     "items": [
+      "DOJO_YELLOW_BELT"
+     ],
+     "child": "DOJO_WHITE_BELT"
+    },
+    {
+     "id": "ENDERMAN_MASK",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ENDERMAN_MASK"
+     ]
+    },
+    {
+     "id": "FAIRY",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FAIRY_BOOTS",
+      "FAIRY_CHESTPLATE",
+      "FAIRY_HELMET",
+      "FAIRY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "HUNTER_KNIFE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "HUNTER_KNIFE"
+     ]
+    },
+    {
+     "id": "PRISMARINE_BLADE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "PRISMARINE_BLADE"
+     ]
+    },
+    {
+     "id": "PRISMARINE_BOW",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "PRISMARINE_BOW"
+     ]
+    },
+    {
+     "id": "RADIANT_POWER_ORB",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "RADIANT_POWER_ORB"
+     ]
+    },
+    {
+     "id": "RECLUSE_FANG",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RECLUSE_FANG"
+     ],
+     "child": "SPIDER_SWORD"
+    },
+    {
+     "id": "SNOW_BLASTER",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SNOW_BLASTER"
+     ],
+     "child": "SNOW_CANNON"
+    },
+    {
+     "id": "STARLIGHT",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "STARLIGHT_BOOTS",
+      "STARLIGHT_CHESTPLATE",
+      "STARLIGHT_HELMET",
+      "STARLIGHT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "STARLIGHT_WAND",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "STARLIGHT_WAND"
+     ]
+    },
+    {
+     "id": "TRIBAL_SPEAR",
+     "xp": 2,
+     "stage": "SKILLED",
+     "items": [
+      "TRIBAL_SPEAR"
+     ]
+    },
+    {
+     "id": "WAND_OF_HEALING",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "WAND_OF_HEALING"
+     ]
+    },
+    {
+     "id": "WAND_OF_MENDING",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "WAND_OF_MENDING"
+     ],
+     "child": "WAND_OF_HEALING"
+    },
+    {
+     "id": "WITHER_BOW",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "WITHER_BOW"
+     ]
+    },
+    {
+     "id": "ZOMBIE_MASK",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_MASK"
+     ]
+    },
+    {
+     "id": "CHEAP_TUXEDO",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CHEAP_TUXEDO_BOOTS",
+      "CHEAP_TUXEDO_CHESTPLATE",
+      "CHEAP_TUXEDO_LEGGINGS"
+     ]
+    },
+    {
+     "id": "DECENT_BOW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "DECENT_BOW"
+     ]
+    },
+    {
+     "id": "DOJO_BROWN_BELT",
+     "xp": 3,
+     "stage": "EXPERT",
+     "items": [
+      "DOJO_BROWN_BELT"
+     ],
+     "child": "DOJO_BLUE_BELT"
+    },
+    {
+     "id": "END",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ENDER_BELT",
+      "ENDER_CLOAK",
+      "ENDER_GAUNTLET",
+      "ENDER_NECKLACE",
+      "END_BOOTS",
+      "END_CHESTPLATE",
+      "END_HELMET",
+      "END_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ENDER_BOW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ENDER_BOW"
+     ]
+    },
+    {
+     "id": "END_STONE_BOW",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "END_STONE_BOW"
+     ]
+    },
+    {
+     "id": "FLAMING_SWORD",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "FLAMING_SWORD"
+     ]
+    },
+    {
+     "id": "GOLEM_ARMOR",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GOLEM_ARMOR_BOOTS",
+      "GOLEM_ARMOR_CHESTPLATE",
+      "GOLEM_ARMOR_HELMET",
+      "GOLEM_ARMOR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GROWTH",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "GROWTH_BOOTS",
+      "GROWTH_CHESTPLATE",
+      "GROWTH_HELMET",
+      "GROWTH_LEGGINGS"
+     ]
+    },
+    {
+     "id": "HARDENED_DIAMOND",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "HARDENED_DIAMOND_BOOTS",
+      "HARDENED_DIAMOND_CHESTPLATE",
+      "HARDENED_DIAMOND_HELMET",
+      "HARDENED_DIAMOND_LEGGINGS"
+     ]
+    },
+    {
+     "id": "KALHUIKI_MASK",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "KALHUIKI_MASK"
+     ]
+    },
+    {
+     "id": "MERCENARY_AXE",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "MERCENARY_AXE"
+     ]
+    },
+    {
+     "id": "PARROT_MASK",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PARROT_MASK"
+     ]
+    },
+    {
+     "id": "RABBIT_HAT",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RABBIT_HAT"
+     ]
+    },
+    {
+     "id": "SAVANA_BOW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SAVANA_BOW"
+     ]
+    },
+    {
+     "id": "SHAMAN_SWORD",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SHAMAN_SWORD"
+     ]
+    },
+    {
+     "id": "SNOWMAN_MASK",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SNOWMAN_MASK"
+     ]
+    },
+    {
+     "id": "SNOW_HOWITZER",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "SNOW_HOWITZER"
+     ],
+     "child": "SNOW_BLASTER"
+    },
+    {
+     "id": "SPIDER_QUEENS_STINGER",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "SPIDER_QUEENS_STINGER"
+     ]
+    },
+    {
+     "id": "SYNTHESIZER_V1",
+     "xp": 3,
+     "stage": "EXPERT",
+     "items": [
+      "SYNTHESIZER_V1"
+     ]
+    },
+    {
+     "id": "TACTICIAN_SWORD",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "TACTICIAN_SWORD"
+     ]
+    },
+    {
+     "id": "VOIDWALKER_KATANA",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "VOIDWALKER_KATANA"
+     ]
+    },
+    {
+     "id": "ZOMBIE_HEART",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_HEART"
+     ]
+    },
+    {
+     "id": "ARACHNE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ARACHNE_BELT",
+      "ARACHNE_BOOTS",
+      "ARACHNE_CHESTPLATE",
+      "ARACHNE_CLOAK",
+      "ARACHNE_GLOVES",
+      "ARACHNE_HELMET",
+      "ARACHNE_LEGGINGS",
+      "ARACHNE_NECKLACE"
+     ]
+    },
+    {
+     "id": "ARCHAIC_SPADE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ARCHAIC_SPADE"
+     ],
+     "child": "ANCESTRAL_SPADE"
+    },
+    {
+     "id": "ASPECT_OF_THE_END",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ASPECT_OF_THE_END"
+     ]
+    },
+    {
+     "id": "ATOMINIZER",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "ATOMINIZER"
+     ]
+    },
+    {
+     "id": "BLADE_OF_THE_VOLCANO",
+     "xp": 4,
+     "stage": "EXPERT",
+     "items": [
+      "BLADE_OF_THE_VOLCANO"
+     ]
+    },
+    {
+     "id": "CHARMINIZER",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "CHARMINIZER"
+     ]
+    },
+    {
+     "id": "CRYSTALLIZED_HEART",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CRYSTALLIZED_HEART"
+     ],
+     "child": "ZOMBIE_HEART"
+    },
+    {
+     "id": "DRAGONFADE_CLOAK",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "DRAGONFADE_CLOAK"
+     ]
+    },
+    {
+     "id": "DRAGONFUSE_GLOVE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "DRAGONFUSE_GLOVE"
+     ]
+    },
+    {
+     "id": "DRAGON_SHORTBOW",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "DRAGON_SHORTBOW"
+     ]
+    },
+    {
+     "id": "EDIBLE_MACE",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "EDIBLE_MACE"
+     ]
+    },
+    {
+     "id": "EMERALD_BLADE",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "EMERALD_BLADE"
+     ]
+    },
+    {
+     "id": "END_STONE_SWORD",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "END_STONE_SWORD"
+     ]
+    },
+    {
+     "id": "EXPLOSIVE_BOW",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "EXPLOSIVE_BOW"
+     ]
+    },
+    {
+     "id": "FANCY_TUXEDO",
+     "xp": 4,
+     "stage": "EXPERT",
+     "items": [
+      "FANCY_TUXEDO_BOOTS",
+      "FANCY_TUXEDO_CHESTPLATE",
+      "FANCY_TUXEDO_LEGGINGS"
+     ],
+     "child": "CHEAP_TUXEDO"
+    },
+    {
+     "id": "GHOUL_BUSTER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GHOUL_BUSTER"
+     ]
+    },
+    {
+     "id": "GOLEM_SWORD",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GOLEM_SWORD"
+     ]
+    },
+    {
+     "id": "HURRICANE_BOW",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "HURRICANE_BOW"
+     ]
+    },
+    {
+     "id": "JINGLE_BELLS",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "JINGLE_BELLS"
+     ]
+    },
+    {
+     "id": "MANA_FLUX_POWER_ORB",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MANA_FLUX_POWER_ORB"
+     ],
+     "child": "RADIANT_POWER_ORB"
+    },
+    {
+     "id": "MITHRIL_COAT",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_COAT"
+     ]
+    },
+    {
+     "id": "MONSTER_HUNTER",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "CREEPER_LEGGINGS",
+      "GUARDIAN_CHESTPLATE",
+      "SKELETON_HELMET",
+      "SPIDER_BOOTS"
+     ]
+    },
+    {
+     "id": "MONSTER_RAIDER",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "CREEPER_LEGGINGS",
+      "GUARDIAN_CHESTPLATE",
+      "SKELETON_HELMET",
+      "TARANTULA_BOOTS"
+     ],
+     "child": "MONSTER_HUNTER"
+    },
+    {
+     "id": "OBSIDIAN_CHESTPLATE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "OBSIDIAN_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "ORNATE_ZOMBIE_SWORD",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "ORNATE_ZOMBIE_SWORD"
+     ],
+     "child": "ZOMBIE_SWORD"
+    },
+    {
+     "id": "PARTY",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PARTY_BELT",
+      "PARTY_CLOAK",
+      "PARTY_GLOVES",
+      "PARTY_HAT",
+      "PARTY_NECKLACE"
+     ]
+    },
+    {
+     "id": "RAIDER_AXE",
+     "xp": 4,
+     "stage": "AMATEUR",
+     "items": [
+      "RAIDER_AXE"
+     ]
+    },
+    {
+     "id": "REVENANT_SWORD",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "REVENANT_SWORD"
+     ],
+     "child": "UNDEAD_SWORD"
+    },
+    {
+     "id": "SOUL_ESOWARD",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "SOUL_ESOWARD"
+     ]
+    },
+    {
+     "id": "STAFF_OF_THE_VOLCANO",
+     "xp": 4,
+     "stage": "EXPERT",
+     "items": [
+      "STAFF_OF_THE_VOLCANO"
+     ]
+    },
+    {
+     "id": "VAMPIRE_MASK",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "VAMPIRE_MASK"
+     ]
+    },
+    {
+     "id": "VAMPIRE_WITCH_MASK",
+     "xp": 4,
+     "stage": "EXPERT",
+     "items": [
+      "VAMPIRE_WITCH_MASK"
+     ],
+     "child": "WITCH_MASK"
+    },
+    {
+     "id": "VENOMS_TOUCH",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "VENOMS_TOUCH"
+     ]
+    },
+    {
+     "id": "VOID_SWORD",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "VOID_SWORD"
+     ]
+    },
+    {
+     "id": "WAND_OF_RESTORATION",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "WAND_OF_RESTORATION"
+     ],
+     "child": "WAND_OF_MENDING"
+    },
+    {
+     "id": "WARNING_FLARE",
+     "xp": 4,
+     "stage": "EXPERT",
+     "items": [
+      "WARNING_FLARE"
+     ]
+    },
+    {
+     "id": "WEIRD_TUBA",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "WEIRD_TUBA"
+     ]
+    },
+    {
+     "id": "WITCH_MASK",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "WITCH_MASK"
+     ],
+     "child": "VAMPIRE_MASK"
+    },
+    {
+     "id": "ZOMBIE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_BOOTS",
+      "ZOMBIE_CHESTPLATE",
+      "ZOMBIE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ZOMBIE_SWORD",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_SWORD"
+     ]
+    },
+    {
+     "id": "ASPECT_OF_THE_DRAGON",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ASPECT_OF_THE_DRAGON"
+     ]
+    },
+    {
+     "id": "CRIMSON_HUNTER",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "BLAZE_BELT",
+      "GHAST_CLOAK",
+      "GLOWSTONE_GAUNTLET",
+      "MAGMA_NECKLACE"
+     ]
+    },
+    {
+     "id": "ELEANOR",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ELEANOR_CAP",
+      "ELEANOR_SLIPPERS",
+      "ELEANOR_TROUSERS",
+      "ELEANOR_TUNIC"
+     ]
+    },
+    {
+     "id": "EMERALD_ARMOR",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "EMERALD_ARMOR_BOOTS",
+      "EMERALD_ARMOR_CHESTPLATE",
+      "EMERALD_ARMOR_HELMET",
+      "EMERALD_ARMOR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "FIRE_FREEZE_STAFF",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "FIRE_FREEZE_STAFF"
+     ]
+    },
+    {
+     "id": "FIRE_FURY_STAFF",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "FIRE_FURY_STAFF"
+     ]
+    },
+    {
+     "id": "FLORID_ZOMBIE_SWORD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "FLORID_ZOMBIE_SWORD"
+     ],
+     "child": "ORNATE_ZOMBIE_SWORD"
+    },
+    {
+     "id": "FROZEN_SCYTHE",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "FROZEN_SCYTHE"
+     ]
+    },
+    {
+     "id": "GHOST_BOOTS",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GHOST_BOOTS"
+     ]
+    },
+    {
+     "id": "GLOOMLOCK_GRIMOIRE",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "GLOOMLOCK_GRIMOIRE"
+     ]
+    },
+    {
+     "id": "HOLLOW_WAND",
+     "xp": 5,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "HOLLOW_WAND"
+     ]
+    },
+    {
+     "id": "KRAMPUS_HELMET",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "KRAMPUS_HELMET"
+     ]
+    },
+    {
+     "id": "LEAPING_SWORD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "LEAPING_SWORD"
+     ]
+    },
+    {
+     "id": "POOCH_SWORD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "POOCH_SWORD"
+     ],
+     "child": "SHAMAN_SWORD"
+    },
+    {
+     "id": "REVENANT",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "REVENANT_BOOTS",
+      "REVENANT_CHESTPLATE",
+      "REVENANT_LEGGINGS"
+     ],
+     "child": "ZOMBIE"
+    },
+    {
+     "id": "RIFT_NECKLACE_OUTSIDE",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RIFT_NECKLACE_OUTSIDE"
+     ]
+    },
+    {
+     "id": "RUNIC_STAFF",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "RUNIC_STAFF"
+     ]
+    },
+    {
+     "id": "SCORPION_BOW",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "SCORPION_BOW"
+     ]
+    },
+    {
+     "id": "SILK_EDGE_SWORD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "SILK_EDGE_SWORD"
+     ],
+     "child": "LEAPING_SWORD"
+    },
+    {
+     "id": "SLIME_BOW",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "SLIME_BOW"
+     ]
+    },
+    {
+     "id": "SOULS_REBOUND",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "SOULS_REBOUND"
+     ]
+    },
+    {
+     "id": "SULPHUR_BOW",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "SULPHUR_BOW"
+     ]
+    },
+    {
+     "id": "SWORD_OF_BAD_HEALTH",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "SWORD_OF_BAD_HEALTH"
+     ]
+    },
+    {
+     "id": "SYNTHESIZER_V2",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "SYNTHESIZER_V2"
+     ],
+     "child": "SYNTHESIZER_V1"
+    },
+    {
+     "id": "TARANTULA_FANG",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "TARANTULA_FANG"
+     ],
+     "child": "RECLUSE_FANG"
+    },
+    {
+     "id": "VOIDEDGE_KATANA",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "VOIDEDGE_KATANA"
+     ],
+     "child": "VOIDWALKER_KATANA"
+    },
+    {
+     "id": "VOODOO_DOLL",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "VOODOO_DOLL"
+     ]
+    },
+    {
+     "id": "WEIRDER_TUBA",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "WEIRDER_TUBA"
+     ],
+     "child": "WEIRD_TUBA"
+    },
+    {
+     "id": "ASPECT_OF_THE_VOID",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "ASPECT_OF_THE_VOID"
+     ],
+     "child": "ASPECT_OF_THE_END"
+    },
+    {
+     "id": "CHALLENGER",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CHALLENGER_BELT",
+      "CHALLENGER_BOOTS",
+      "CHALLENGER_BRACELET",
+      "CHALLENGER_CHESTPLATE",
+      "CHALLENGER_CLOAK",
+      "CHALLENGER_HELMET",
+      "CHALLENGER_LEGGINGS",
+      "CHALLENGER_NECKLACE"
+     ]
+    },
+    {
+     "id": "CROWN_OF_GREED",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "CROWN_OF_GREED"
+     ]
+    },
+    {
+     "id": "CRYSTAL",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CRYSTAL_BOOTS",
+      "CRYSTAL_CHESTPLATE",
+      "CRYSTAL_HELMET",
+      "CRYSTAL_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ELEGANT_TUXEDO",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "ELEGANT_TUXEDO_BOOTS",
+      "ELEGANT_TUXEDO_CHESTPLATE",
+      "ELEGANT_TUXEDO_LEGGINGS"
+     ],
+     "child": "FANCY_TUXEDO"
+    },
+    {
+     "id": "FIREDUST_DAGGER",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "FIREDUST_DAGGER"
+     ]
+    },
+    {
+     "id": "INK_WAND",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "INK_WAND"
+     ]
+    },
+    {
+     "id": "JERRY_STAFF",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "JERRY_STAFF"
+     ]
+    },
+    {
+     "id": "MAWDUST_DAGGER",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "MAWDUST_DAGGER"
+     ]
+    },
+    {
+     "id": "MIDAS_SWORD",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "MIDAS_SWORD"
+     ]
+    },
+    {
+     "id": "PUMPKIN_LAUNCHER",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PUMPKIN_LAUNCHER"
+     ]
+    },
+    {
+     "id": "RAGNAROCK_AXE",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "RAGNAROCK_AXE"
+     ]
+    },
+    {
+     "id": "RAMPART",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "RAMPART_BOOTS",
+      "RAMPART_CHESTPLATE",
+      "RAMPART_HELMET",
+      "RAMPART_LEGGINGS"
+     ]
+    },
+    {
+     "id": "REVIVED_HEART",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "REVIVED_HEART"
+     ],
+     "child": "CRYSTALLIZED_HEART"
+    },
+    {
+     "id": "RUNAANS_BOW",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "RUNAANS_BOW"
+     ]
+    },
+    {
+     "id": "SHRIVELED_BRACELET",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "SHRIVELED_BRACELET"
+     ]
+    },
+    {
+     "id": "SNOW_SUIT",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SNOW_BELT",
+      "SNOW_CLOAK",
+      "SNOW_GLOVES",
+      "SNOW_NECKLACE",
+      "SNOW_SUIT_BOOTS",
+      "SNOW_SUIT_CHESTPLATE",
+      "SNOW_SUIT_HELMET",
+      "SNOW_SUIT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "VOODOO_DOLL_WILTED",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "VOODOO_DOLL_WILTED"
+     ],
+     "child": "VOODOO_DOLL"
+    },
+    {
+     "id": "WAND_OF_STRENGTH",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "WAND_OF_STRENGTH"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_THE_PACK",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "BOOTS_OF_THE_PACK",
+      "CHESTPLATE_OF_THE_PACK",
+      "HELMET_OF_THE_PACK",
+      "LEGGINGS_OF_THE_PACK"
+     ]
+    },
+    {
+     "id": "BAT_PERSON",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "BAT_PERSON_BOOTS",
+      "BAT_PERSON_CHESTPLATE",
+      "BAT_PERSON_HELMET",
+      "BAT_PERSON_LEGGINGS"
+     ],
+     "child": "SPOOKY"
+    },
+    {
+     "id": "BLAZE",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "BLAZE_BOOTS",
+      "BLAZE_CHESTPLATE",
+      "BLAZE_HELMET",
+      "BLAZE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "FIRE_VEIL_WAND",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "FIRE_VEIL_WAND"
+     ]
+    },
+    {
+     "id": "JUJU_SHORTBOW",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "JUJU_SHORTBOW"
+     ]
+    },
+    {
+     "id": "REAPER",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "REAPER_BOOTS",
+      "REAPER_CHESTPLATE",
+      "REAPER_LEGGINGS"
+     ],
+     "child": "REVENANT"
+    },
+    {
+     "id": "REAPER_SWORD",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "REAPER_SWORD"
+     ],
+     "child": "REVENANT_SWORD"
+    },
+    {
+     "id": "SCORPION_FOIL",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SCORPION_FOIL"
+     ],
+     "child": "TARANTULA_FANG"
+    },
+    {
+     "id": "SINSEEKER_SCYTHE",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "SINSEEKER_SCYTHE"
+     ]
+    },
+    {
+     "id": "SOUL_WHIP",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SOUL_WHIP"
+     ]
+    },
+    {
+     "id": "SPOOKY",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SPOOKY_BOOTS",
+      "SPOOKY_CHESTPLATE",
+      "SPOOKY_HELMET",
+      "SPOOKY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TARANTULA",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "TARANTULA_BOOTS",
+      "TARANTULA_CHESTPLATE",
+      "TARANTULA_HELMET",
+      "TARANTULA_LEGGINGS"
+     ]
+    },
+    {
+     "id": "VORPAL_KATANA",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "VORPAL_KATANA"
+     ],
+     "child": "VOIDEDGE_KATANA"
+    },
+    {
+     "id": "WEREWOLF",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "WEREWOLF_BOOTS",
+      "WEREWOLF_CHESTPLATE",
+      "WEREWOLF_HELMET",
+      "WEREWOLF_LEGGINGS"
+     ]
+    },
+    {
+     "id": "YETI_SWORD",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "YETI_SWORD"
+     ]
+    },
+    {
+     "id": "ALCHEMISTS_STAFF",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "ALCHEMISTS_STAFF"
+     ]
+    },
+    {
+     "id": "ANCIENT_CLOAK",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "ANCIENT_CLOAK"
+     ]
+    },
+    {
+     "id": "DEIFIC_SPADE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "DEIFIC_SPADE"
+     ],
+     "child": "ARCHAIC_SPADE"
+    },
+    {
+     "id": "DELIRIUM_NECKLACE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "DELIRIUM_NECKLACE"
+     ]
+    },
+    {
+     "id": "DESTRUCTION_CLOAK",
+     "xp": 8,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DESTRUCTION_CLOAK"
+     ]
+    },
+    {
+     "id": "FINAL_DESTINATION",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "FINAL_DESTINATION_BOOTS",
+      "FINAL_DESTINATION_CHESTPLATE",
+      "FINAL_DESTINATION_HELMET",
+      "FINAL_DESTINATION_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GYROKINETIC_WAND",
+     "xp": 8,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GYROKINETIC_WAND"
+     ]
+    },
+    {
+     "id": "MASTIFF",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "MASTIFF_BOOTS",
+      "MASTIFF_CHESTPLATE",
+      "MASTIFF_HELMET",
+      "MASTIFF_LEGGINGS"
+     ],
+     "child": "GROWTH"
+    },
+    {
+     "id": "MOODY_GRAPPLESHOT",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "MOODY_GRAPPLESHOT"
+     ]
+    },
+    {
+     "id": "MOSQUITO_BOW",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "MOSQUITO_BOW"
+     ],
+     "child": "SCORPION_BOW"
+    },
+    {
+     "id": "PERFECT_TIER_12",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "PERFECT_BOOTS_12",
+      "PERFECT_CHESTPLATE_12",
+      "PERFECT_HELMET_12",
+      "PERFECT_LEGGINGS_12"
+     ]
+    },
+    {
+     "id": "PIGMAN_SWORD",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "PIGMAN_SWORD"
+     ]
+    },
+    {
+     "id": "REAPER_MASK",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "REAPER_MASK"
+     ],
+     "child": "REVIVED_HEART"
+    },
+    {
+     "id": "REAPER_SCYTHE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "REAPER_SCYTHE"
+     ]
+    },
+    {
+     "id": "SUMMONING_RING",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "SUMMONING_RING"
+     ]
+    },
+    {
+     "id": "SWORD_OF_REVELATIONS",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "SWORD_OF_REVELATIONS"
+     ]
+    },
+    {
+     "id": "VANQUISHED",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "VANQUISHED_BLAZE_BELT",
+      "VANQUISHED_GHAST_CLOAK",
+      "VANQUISHED_GLOWSTONE_GAUNTLET",
+      "VANQUISHED_MAGMA_NECKLACE"
+     ],
+     "child": "CRIMSON_HUNTER"
+    },
+    {
+     "id": "WAND_OF_ATONEMENT",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "WAND_OF_ATONEMENT"
+     ],
+     "child": "WAND_OF_RESTORATION"
+    },
+    {
+     "id": "GLACIAL_SCYTHE",
+     "xp": 9,
+     "stage": "EXPERT",
+     "items": [
+      "GLACIAL_SCYTHE"
+     ],
+     "child": "FROZEN_SCYTHE"
+    },
+    {
+     "id": "ALERT_FLARE",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "ALERT_FLARE"
+     ],
+     "child": "WARNING_FLARE"
+    },
+    {
+     "id": "ATOMSPLIT_KATANA",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "ATOMSPLIT_KATANA"
+     ],
+     "child": "VORPAL_KATANA"
+    },
+    {
+     "id": "AURORA",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "AURORA_BOOTS",
+      "AURORA_CHESTPLATE",
+      "AURORA_HELMET",
+      "AURORA_LEGGINGS"
+     ]
+    },
+    {
+     "id": "AXE_OF_THE_SHREDDED",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "AXE_OF_THE_SHREDDED"
+     ],
+     "child": "REAPER_SWORD"
+    },
+    {
+     "id": "BURSTFIRE_DAGGER",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "BURSTFIRE_DAGGER"
+     ],
+     "child": "FIREDUST_DAGGER"
+    },
+    {
+     "id": "BURSTMAW_DAGGER",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "BURSTMAW_DAGGER"
+     ],
+     "child": "MAWDUST_DAGGER"
+    },
+    {
+     "id": "CRIMSON",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "CRIMSON_BOOTS",
+      "CRIMSON_CHESTPLATE",
+      "CRIMSON_HELMET",
+      "CRIMSON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "CROWN_OF_AVARICE",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "CROWN_OF_AVARICE"
+     ],
+     "child": "CROWN_OF_GREED"
+    },
+    {
+     "id": "DAEDALUS_AXE",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DAEDALUS_AXE"
+     ],
+     "child": "SWORD_OF_REVELATIONS"
+    },
+    {
+     "id": "FERVOR",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "FERVOR_BOOTS",
+      "FERVOR_CHESTPLATE",
+      "FERVOR_HELMET",
+      "FERVOR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "FROZEN_BLAZE",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "FROZEN_BLAZE_BOOTS",
+      "FROZEN_BLAZE_CHESTPLATE",
+      "FROZEN_BLAZE_HELMET",
+      "FROZEN_BLAZE_LEGGINGS"
+     ],
+     "child": "BLAZE"
+    },
+    {
+     "id": "GAUNTLET_OF_CONTAGION",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "GAUNTLET_OF_CONTAGION"
+     ]
+    },
+    {
+     "id": "GOLDEN_FLEECE",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "GOLDEN_FLEECE"
+     ]
+    },
+    {
+     "id": "HOLLOW",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "HOLLOW_BOOTS",
+      "HOLLOW_CHESTPLATE",
+      "HOLLOW_HELMET",
+      "HOLLOW_LEGGINGS"
+     ]
+    },
+    {
+     "id": "HOLY_DRAGON",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "HOLY_DRAGON_BOOTS",
+      "HOLY_DRAGON_CHESTPLATE",
+      "HOLY_DRAGON_HELMET",
+      "HOLY_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "IMPLOSION_BELT",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "IMPLOSION_BELT"
+     ]
+    },
+    {
+     "id": "LAVA_SHELL_NECKLACE",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "LAVA_SHELL_NECKLACE"
+     ]
+    },
+    {
+     "id": "MANTICORE_CLAW",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "MANTICORE_CLAW"
+     ]
+    },
+    {
+     "id": "MOLTEN",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "MOLTEN_BELT",
+      "MOLTEN_BRACELET",
+      "MOLTEN_CLOAK",
+      "MOLTEN_NECKLACE"
+     ]
+    },
+    {
+     "id": "OLD_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "OLD_DRAGON_BOOTS",
+      "OLD_DRAGON_CHESTPLATE",
+      "OLD_DRAGON_HELMET",
+      "OLD_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "OVERFLUX_POWER_ORB",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "OVERFLUX_POWER_ORB"
+     ],
+     "child": "MANA_FLUX_POWER_ORB"
+    },
+    {
+     "id": "PERFECT_TIER_13",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "PERFECT_BOOTS_13",
+      "PERFECT_CHESTPLATE_13",
+      "PERFECT_HELMET_13",
+      "PERFECT_LEGGINGS_13"
+     ],
+     "child": "PERFECT_TIER_12"
+    },
+    {
+     "id": "PRIMORDIAL",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "PRIMORDIAL_BOOTS",
+      "PRIMORDIAL_CHESTPLATE",
+      "PRIMORDIAL_HELMET",
+      "PRIMORDIAL_LEGGINGS"
+     ],
+     "child": "TARANTULA"
+    },
+    {
+     "id": "PROTECTOR_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PROTECTOR_DRAGON_BOOTS",
+      "PROTECTOR_DRAGON_CHESTPLATE",
+      "PROTECTOR_DRAGON_HELMET",
+      "PROTECTOR_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "REKINDLED_EMBER",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "REKINDLED_EMBER_BOOTS",
+      "REKINDLED_EMBER_CHESTPLATE",
+      "REKINDLED_EMBER_HELMET",
+      "REKINDLED_EMBER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SCOURGE_CLOAK",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "SCOURGE_CLOAK"
+     ]
+    },
+    {
+     "id": "SCOVILLE_BELT",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "SCOVILLE_BELT"
+     ]
+    },
+    {
+     "id": "STING",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "STING"
+     ],
+     "child": "SCORPION_FOIL"
+    },
+    {
+     "id": "STRONG_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STRONG_DRAGON_BOOTS",
+      "STRONG_DRAGON_CHESTPLATE",
+      "STRONG_DRAGON_HELMET",
+      "STRONG_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TERROR",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TERROR_BOOTS",
+      "TERROR_CHESTPLATE",
+      "TERROR_HELMET",
+      "TERROR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "THERMODYNAMIC",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "THERMODYNAMIC_BOOTS",
+      "THERMODYNAMIC_CHESTPLATE",
+      "THERMODYNAMIC_HELMET",
+      "THERMODYNAMIC_LEGGINGS"
+     ],
+     "child": "SPEEDSTER"
+    },
+    {
+     "id": "UNSTABLE_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "UNSTABLE_DRAGON_BOOTS",
+      "UNSTABLE_DRAGON_CHESTPLATE",
+      "UNSTABLE_DRAGON_HELMET",
+      "UNSTABLE_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "WISE_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "WISE_DRAGON_BOOTS",
+      "WISE_DRAGON_CHESTPLATE",
+      "WISE_DRAGON_HELMET",
+      "WISE_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "YOUNG_DRAGON",
+     "xp": 10,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "YOUNG_DRAGON_BOOTS",
+      "YOUNG_DRAGON_CHESTPLATE",
+      "YOUNG_DRAGON_HELMET",
+      "YOUNG_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "DEMONLORD_GAUNTLET",
+     "xp": 12,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DEMONLORD_GAUNTLET"
+     ]
+    },
+    {
+     "id": "DOJO_BLACK_BELT",
+     "xp": 12,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DOJO_BLACK_BELT"
+     ],
+     "child": "DOJO_BROWN_BELT"
+    },
+    {
+     "id": "FLAMING_FLAY",
+     "xp": 12,
+     "stage": "MASTER",
+     "items": [
+      "FLAMING_FLAY"
+     ],
+     "child": "SOUL_WHIP"
+    },
+    {
+     "id": "MIDAS_STAFF",
+     "xp": 12,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "MIDAS_STAFF"
+     ]
+    },
+    {
+     "id": "MYTHOS",
+     "xp": 12,
+     "stage": "SKILLED",
+     "items": [
+      "MYTHOS_BELT",
+      "MYTHOS_BOOTS",
+      "MYTHOS_BRACELET",
+      "MYTHOS_CHESTPLATE",
+      "MYTHOS_CLOAK",
+      "MYTHOS_HELMET",
+      "MYTHOS_LEGGINGS",
+      "MYTHOS_NECKLACE"
+     ],
+     "child": "CHALLENGER"
+    },
+    {
+     "id": "THE_PRIMORDIAL",
+     "xp": 12,
+     "stage": "EXPERT",
+     "items": [
+      "THE_PRIMORDIAL"
+     ]
+    },
+    {
+     "id": "WARDEN_HELMET",
+     "xp": 12,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "WARDEN_HELMET"
+     ]
+    },
+    {
+     "id": "BERSERKER",
+     "xp": 14,
+     "stage": "SKILLED",
+     "items": [
+      "BERSERKER_BOOTS",
+      "BERSERKER_CHESTPLATE",
+      "BERSERKER_HELMET",
+      "BERSERKER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TACTICAL_INSERTION",
+     "xp": 14,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TACTICAL_INSERTION"
+     ]
+    },
+    {
+     "id": "FLAMING_FIST",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "FLAMING_FIST"
+     ]
+    },
+    {
+     "id": "PLASMAFLUX_POWER_ORB",
+     "xp": 15,
+     "stage": "MASTER",
+     "items": [
+      "PLASMAFLUX_POWER_ORB"
+     ],
+     "child": "OVERFLUX_POWER_ORB"
+    },
+    {
+     "id": "SUPERIOR_DRAGON",
+     "xp": 15,
+     "stage": "SKILLED",
+     "items": [
+      "SUPERIOR_DRAGON_BOOTS",
+      "SUPERIOR_DRAGON_CHESTPLATE",
+      "SUPERIOR_DRAGON_HELMET",
+      "SUPERIOR_DRAGON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SYNTHESIZER_V3",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "SYNTHESIZER_V3"
+     ],
+     "child": "SYNTHESIZER_V2"
+    },
+    {
+     "id": "ANNIHILATION_CLOAK",
+     "xp": 16,
+     "stage": "MASTER",
+     "items": [
+      "ANNIHILATION_CLOAK"
+     ],
+     "child": "DESTRUCTION_CLOAK"
+    },
+    {
+     "id": "BLAZETEKK_HAM_RADIO",
+     "xp": 16,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "BLAZETEKK_HAM_RADIO"
+     ]
+    },
+    {
+     "id": "SHIMMERING_LIGHT",
+     "xp": 16,
+     "stage": "EXPERT",
+     "items": [
+      "SHIMMERING_LIGHT_HOOD",
+      "SHIMMERING_LIGHT_SLIPPERS",
+      "SHIMMERING_LIGHT_TROUSERS",
+      "SHIMMERING_LIGHT_TUNIC"
+     ]
+    },
+    {
+     "id": "TERMINATOR",
+     "xp": 18,
+     "stage": "MASTER",
+     "items": [
+      "TERMINATOR"
+     ]
+    },
+    {
+     "id": "HEARTFIRE_DAGGER",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "HEARTFIRE_DAGGER"
+     ],
+     "child": "BURSTFIRE_DAGGER"
+    },
+    {
+     "id": "HEARTMAW_DAGGER",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "HEARTMAW_DAGGER"
+     ],
+     "child": "BURSTMAW_DAGGER"
+    },
+    {
+     "id": "HELLSTORM_STAFF",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "HELLSTORM_STAFF"
+     ]
+    },
+    {
+     "id": "TORMENTOR",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "TORMENTOR"
+     ]
+    },
+    {
+     "id": "SOS_FLARE",
+     "xp": 25,
+     "stage": "MASTER",
+     "items": [
+      "SOS_FLARE"
+     ],
+     "child": "ALERT_FLARE"
+    }
+   ]
+  },
+  {
+   "id": "farming",
+   "entries": [
+    {
+     "id": "BASIC_CHICKEN_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_CHICKEN_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_COW_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_COW_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_MUSHROOM_COW_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_MUSHROOM_COW_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_PIG_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_PIG_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_RABBIT_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_RABBIT_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_SHEEP_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_SHEEP_AXE"
+     ]
+    },
+    {
+     "id": "CHICKEN_HEAD",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CHICKEN_HEAD"
+     ]
+    },
+    {
+     "id": "FARM_SUIT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "FARM_SUIT_BOOTS",
+      "FARM_SUIT_CHESTPLATE",
+      "FARM_SUIT_HELMET",
+      "FARM_SUIT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "RABBIT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "RABBIT_BOOTS",
+      "RABBIT_CHESTPLATE",
+      "RABBIT_HELMET",
+      "RABBIT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ROOKIE_FARMING_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ROOKIE_FARMING_AXE"
+     ]
+    },
+    {
+     "id": "ROOKIE_HOE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ROOKIE_HOE"
+     ]
+    },
+    {
+     "id": "BASIC_GARDENING_AXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "BASIC_GARDENING_AXE"
+     ]
+    },
+    {
+     "id": "BASIC_GARDENING_HOE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "BASIC_GARDENING_HOE"
+     ]
+    },
+    {
+     "id": "CACTUS",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "CACTUS_BOOTS",
+      "CACTUS_CHESTPLATE",
+      "CACTUS_HELMET",
+      "CACTUS_LEGGINGS"
+     ]
+    },
+    {
+     "id": "CHICKEN_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CHICKEN_AXE"
+     ],
+     "child": "BASIC_CHICKEN_AXE"
+    },
+    {
+     "id": "COW_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "COW_AXE"
+     ],
+     "child": "BASIC_COW_AXE"
+    },
+    {
+     "id": "FARM_ARMOR",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "FARM_ARMOR_BOOTS",
+      "FARM_ARMOR_CHESTPLATE",
+      "FARM_ARMOR_HELMET",
+      "FARM_ARMOR_LEGGINGS"
+     ],
+     "child": "FARM_SUIT"
+    },
+    {
+     "id": "GARDEN_SCYTHE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "GARDEN_SCYTHE"
+     ],
+     "child": "SAM_SCYTHE"
+    },
+    {
+     "id": "HOE_OF_GREAT_TILLING",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "HOE_OF_GREAT_TILLING"
+     ]
+    },
+    {
+     "id": "HYDRO_CAN_1000",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "HYDRO_CAN_1000"
+     ]
+    },
+    {
+     "id": "HYDRO_CAN_TURBO_2000",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "HYDRO_CAN_TURBO_2000"
+     ],
+     "child": "HYDRO_CAN_1000"
+    },
+    {
+     "id": "MUSHROOM",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "MUSHROOM_BOOTS",
+      "MUSHROOM_CHESTPLATE",
+      "MUSHROOM_HELMET",
+      "MUSHROOM_LEGGINGS"
+     ]
+    },
+    {
+     "id": "MUSHROOM_COW_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MUSHROOM_COW_AXE"
+     ],
+     "child": "BASIC_MUSHROOM_COW_AXE"
+    },
+    {
+     "id": "PIG_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PIG_AXE"
+     ],
+     "child": "BASIC_PIG_AXE"
+    },
+    {
+     "id": "PLANT_DIAGNOSTICS_TOOL",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "PLANT_DIAGNOSTICS_TOOL"
+     ]
+    },
+    {
+     "id": "RABBIT_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RABBIT_AXE"
+     ],
+     "child": "BASIC_RABBIT_AXE"
+    },
+    {
+     "id": "SAM_SCYTHE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SAM_SCYTHE"
+     ]
+    },
+    {
+     "id": "SHEEP_AXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SHEEP_AXE"
+     ],
+     "child": "BASIC_SHEEP_AXE"
+    },
+    {
+     "id": "SKYMART_TURBO_VACUUM",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SKYMART_TURBO_VACUUM"
+     ],
+     "child": "SKYMART_VACUUM"
+    },
+    {
+     "id": "SKYMART_VACUUM",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SKYMART_VACUUM"
+     ]
+    },
+    {
+     "id": "SPRAYONATOR",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SPRAYONATOR"
+     ]
+    },
+    {
+     "id": "ADVANCED_GARDENING_AXE",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "ADVANCED_GARDENING_AXE"
+     ],
+     "child": "BASIC_GARDENING_AXE"
+    },
+    {
+     "id": "ADVANCED_GARDENING_HOE",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "ADVANCED_GARDENING_HOE"
+     ],
+     "child": "BASIC_GARDENING_HOE"
+    },
+    {
+     "id": "ENCHANTED_JACK_O_LANTERN",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ENCHANTED_JACK_O_LANTERN"
+     ]
+    },
+    {
+     "id": "HOE_OF_GREATER_TILLING",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "HOE_OF_GREATER_TILLING"
+     ],
+     "child": "HOE_OF_GREAT_TILLING"
+    },
+    {
+     "id": "PUMPKIN",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "PUMPKIN_BOOTS",
+      "PUMPKIN_CHESTPLATE",
+      "PUMPKIN_HELMET",
+      "PUMPKIN_LEGGINGS"
+     ],
+     "child": "FARM_ARMOR"
+    },
+    {
+     "id": "SPORE_HARVESTER",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "SPORE_HARVESTER"
+     ]
+    },
+    {
+     "id": "SUNFLOWER_HEAD",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SUNFLOWER_HEAD"
+     ]
+    },
+    {
+     "id": "THORNLEAF_SCYTHE",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "THORNLEAF_SCYTHE"
+     ]
+    },
+    {
+     "id": "BIOHAZARD",
+     "xp": 4,
+     "stage": "AMATEUR",
+     "items": [
+      "BIOHAZARD_BOOTS",
+      "BIOHAZARD_HELMET",
+      "BIOHAZARD_LEGGINGS",
+      "BIOHAZARD_SUIT"
+     ],
+     "child": "MUSHROOM"
+    },
+    {
+     "id": "CACTUS_KNIFE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CACTUS_KNIFE"
+     ]
+    },
+    {
+     "id": "COCO_CHOPPER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "COCO_CHOPPER"
+     ]
+    },
+    {
+     "id": "FARMER_BOOTS",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FARMER_BOOTS"
+     ]
+    },
+    {
+     "id": "FUNGI_CUTTER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FUNGI_CUTTER"
+     ]
+    },
+    {
+     "id": "HOE_OF_GREATEST_TILLING",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "HOE_OF_GREATEST_TILLING"
+     ],
+     "child": "HOE_OF_GREATER_TILLING"
+    },
+    {
+     "id": "HYDRO_CAN_ULTRA_3000",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "HYDRO_CAN_ULTRA_3000"
+     ],
+     "child": "HYDRO_CAN_TURBO_2000"
+    },
+    {
+     "id": "JUICY_SPRAYONATOR",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "JUICY_SPRAYONATOR"
+     ],
+     "child": "SPRAYONATOR"
+    },
+    {
+     "id": "LOTUS",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "LOTUS_BELT",
+      "LOTUS_BRACELET",
+      "LOTUS_CLOAK",
+      "LOTUS_NECKLACE"
+     ]
+    },
+    {
+     "id": "MELON",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MELON_BOOTS",
+      "MELON_CHESTPLATE",
+      "MELON_HELMET",
+      "MELON_LEGGINGS"
+     ],
+     "child": "PUMPKIN"
+    },
+    {
+     "id": "MELON_DICER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MELON_DICER"
+     ]
+    },
+    {
+     "id": "MOBYS_SHEARS",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MOBYS_SHEARS"
+     ]
+    },
+    {
+     "id": "PESTHUNTER",
+     "xp": 4,
+     "stage": "AMATEUR",
+     "items": [
+      "PESTHUNTERS_BELT",
+      "PESTHUNTERS_CLOAK",
+      "PESTHUNTERS_GLOVES",
+      "PESTHUNTERS_NECKLACE"
+     ]
+    },
+    {
+     "id": "PEST_VEST",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PEST_VEST"
+     ]
+    },
+    {
+     "id": "PUMPKIN_DICER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PUMPKIN_DICER"
+     ]
+    },
+    {
+     "id": "RANCHERS_BOOTS",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "RANCHERS_BOOTS"
+     ],
+     "child": "FARMER_BOOTS"
+    },
+    {
+     "id": "SEYMOUR",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "CASHMERE_JACKET",
+      "OXFORD_SHOES",
+      "SATIN_TROUSERS",
+      "VELVET_TOP_HAT"
+     ]
+    },
+    {
+     "id": "SKYMART_HYPER_VACUUM",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SKYMART_HYPER_VACUUM"
+     ],
+     "child": "SKYMART_TURBO_VACUUM"
+    },
+    {
+     "id": "THEORETICAL_HOE_CANE_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_CANE_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_CARROT_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_CARROT_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_POTATO_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_POTATO_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_SUNFLOWER_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_SUNFLOWER_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_WARTS_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_WARTS_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_WHEAT_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_WHEAT_1"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_WILD_ROSE_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THEORETICAL_HOE_WILD_ROSE_1"
+     ]
+    },
+    {
+     "id": "CACTUS_KNIFE_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "CACTUS_KNIFE_2"
+     ],
+     "child": "CACTUS_KNIFE"
+    },
+    {
+     "id": "COCO_CHOPPER_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "COCO_CHOPPER_2"
+     ],
+     "child": "COCO_CHOPPER"
+    },
+    {
+     "id": "FUNGI_CUTTER_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "FUNGI_CUTTER_2"
+     ],
+     "child": "FUNGI_CUTTER"
+    },
+    {
+     "id": "MELON_DICER_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "MELON_DICER_2"
+     ],
+     "child": "MELON_DICER"
+    },
+    {
+     "id": "PUMPKIN_DICER_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "PUMPKIN_DICER_2"
+     ],
+     "child": "PUMPKIN_DICER"
+    },
+    {
+     "id": "SPEEDSTER",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SPEEDSTER_BOOTS",
+      "SPEEDSTER_CHESTPLATE",
+      "SPEEDSTER_HELMET",
+      "SPEEDSTER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "THEORETICAL_HOE_CANE_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_CANE_2"
+     ],
+     "child": "THEORETICAL_HOE_CANE_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_CARROT_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_CARROT_2"
+     ],
+     "child": "THEORETICAL_HOE_CARROT_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_POTATO_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_POTATO_2"
+     ],
+     "child": "THEORETICAL_HOE_POTATO_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_SUNFLOWER_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_SUNFLOWER_2"
+     ],
+     "child": "THEORETICAL_HOE_SUNFLOWER_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_WARTS_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_WARTS_2"
+     ],
+     "child": "THEORETICAL_HOE_WARTS_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_WHEAT_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_WHEAT_2"
+     ],
+     "child": "THEORETICAL_HOE_WHEAT_1"
+    },
+    {
+     "id": "THEORETICAL_HOE_WILD_ROSE_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "THEORETICAL_HOE_WILD_ROSE_2"
+     ],
+     "child": "THEORETICAL_HOE_WILD_ROSE_1"
+    },
+    {
+     "id": "AQUAMASTER_X",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "AQUAMASTER_X"
+     ],
+     "child": "HYDRO_CAN_ULTRA_3000"
+    },
+    {
+     "id": "CROPIE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "CROPIE_BOOTS",
+      "CROPIE_CHESTPLATE",
+      "CROPIE_HELMET",
+      "CROPIE_LEGGINGS"
+     ],
+     "child": "MELON"
+    },
+    {
+     "id": "INFINI_VACUUM",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "INFINI_VACUUM"
+     ],
+     "child": "SKYMART_HYPER_VACUUM"
+    },
+    {
+     "id": "SQUEAKY_MOUSEMAT",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "SQUEAKY_MOUSEMAT"
+     ]
+    },
+    {
+     "id": "AQUAMASTER_HYDROMAX",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "AQUAMASTER_HYDROMAX"
+     ],
+     "child": "AQUAMASTER_X"
+    },
+    {
+     "id": "BLOSSOM",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "BLOSSOM_BELT",
+      "BLOSSOM_BRACELET",
+      "BLOSSOM_CLOAK",
+      "BLOSSOM_NECKLACE"
+     ],
+     "child": "LOTUS"
+    },
+    {
+     "id": "CACTUS_KNIFE_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "CACTUS_KNIFE_3"
+     ],
+     "child": "CACTUS_KNIFE_2"
+    },
+    {
+     "id": "COCO_CHOPPER_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "COCO_CHOPPER_3"
+     ],
+     "child": "COCO_CHOPPER_2"
+    },
+    {
+     "id": "FUNGI_CUTTER_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "FUNGI_CUTTER_3"
+     ],
+     "child": "FUNGI_CUTTER_2"
+    },
+    {
+     "id": "INFINI_VACUUM_HOOVERIUS",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "INFINI_VACUUM_HOOVERIUS"
+     ],
+     "child": "INFINI_VACUUM"
+    },
+    {
+     "id": "MELON_DICER_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "MELON_DICER_3"
+     ],
+     "child": "MELON_DICER_2"
+    },
+    {
+     "id": "PUMPKIN_DICER_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "PUMPKIN_DICER_3"
+     ],
+     "child": "PUMPKIN_DICER_2"
+    },
+    {
+     "id": "SALTY_SPRAYONATOR",
+     "xp": 8,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "SALTY_SPRAYONATOR"
+     ],
+     "child": "JUICY_SPRAYONATOR"
+    },
+    {
+     "id": "THEORETICAL_HOE_CANE_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_CANE_3"
+     ],
+     "child": "THEORETICAL_HOE_CANE_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_CARROT_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_CARROT_3"
+     ],
+     "child": "THEORETICAL_HOE_CARROT_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_POTATO_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_POTATO_3"
+     ],
+     "child": "THEORETICAL_HOE_POTATO_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_SUNFLOWER_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_SUNFLOWER_3"
+     ],
+     "child": "THEORETICAL_HOE_SUNFLOWER_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_WARTS_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_WARTS_3"
+     ],
+     "child": "THEORETICAL_HOE_WARTS_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_WHEAT_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_WHEAT_3"
+     ],
+     "child": "THEORETICAL_HOE_WHEAT_2"
+    },
+    {
+     "id": "THEORETICAL_HOE_WILD_ROSE_3",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "THEORETICAL_HOE_WILD_ROSE_3"
+     ],
+     "child": "THEORETICAL_HOE_WILD_ROSE_2"
+    },
+    {
+     "id": "SQUASH",
+     "xp": 9,
+     "stage": "SKILLED",
+     "items": [
+      "SQUASH_BOOTS",
+      "SQUASH_CHESTPLATE",
+      "SQUASH_HELMET",
+      "SQUASH_LEGGINGS"
+     ],
+     "child": "CROPIE"
+    },
+    {
+     "id": "FERMENTO",
+     "xp": 12,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "FERMENTO_BOOTS",
+      "FERMENTO_CHESTPLATE",
+      "FERMENTO_HELMET",
+      "FERMENTO_LEGGINGS"
+     ],
+     "child": "SQUASH"
+    },
+    {
+     "id": "HELIANTHUS",
+     "xp": 15,
+     "stage": "MASTER",
+     "items": [
+      "HELIANTHUS_BOOTS",
+      "HELIANTHUS_CHESTPLATE",
+      "HELIANTHUS_HELMET",
+      "HELIANTHUS_LEGGINGS"
+     ],
+     "child": "FERMENTO"
+    },
+    {
+     "id": "ZORROS_CAPE",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "ZORROS_CAPE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mining",
+   "entries": [
+    {
+     "id": "FLINT_SHOVEL",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "FLINT_SHOVEL"
+     ]
+    },
+    {
+     "id": "GOLEM_HAT",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "GOLEM_HAT"
+     ]
+    },
+    {
+     "id": "LANTERN",
+     "xp": 1,
+     "stage": "AMATEUR",
+     "items": [
+      "LANTERN"
+     ]
+    },
+    {
+     "id": "PROMISING_SPADE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "PROMISING_SPADE"
+     ]
+    },
+    {
+     "id": "BANDAGED_MITHRIL_PICKAXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "BANDAGED_MITHRIL_PICKAXE"
+     ],
+     "child": "FRACTURED_MITHRIL_PICKAXE"
+    },
+    {
+     "id": "FALLEN_STAR_TRACKER",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "FALLEN_STAR_TRACKER"
+     ]
+    },
+    {
+     "id": "FRACTURED_MITHRIL_PICKAXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "FRACTURED_MITHRIL_PICKAXE"
+     ]
+    },
+    {
+     "id": "HEAT",
+     "xp": 2,
+     "stage": "SKILLED",
+     "items": [
+      "HEAT_BOOTS",
+      "HEAT_CHESTPLATE",
+      "HEAT_HELMET",
+      "HEAT_LEGGINGS"
+     ],
+     "child": "TANK_MINER"
+    },
+    {
+     "id": "LAPIS_PICKAXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "LAPIS_PICKAXE"
+     ]
+    },
+    {
+     "id": "MITHRIL_PICKAXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_PICKAXE"
+     ],
+     "child": "BANDAGED_MITHRIL_PICKAXE"
+    },
+    {
+     "id": "PROMISING_PICKAXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "PROMISING_PICKAXE"
+     ]
+    },
+    {
+     "id": "ROOKIE_PICKAXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "ROOKIE_PICKAXE"
+     ]
+    },
+    {
+     "id": "RUSTY_TITANIUM_PICKAXE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RUSTY_TITANIUM_PICKAXE"
+     ]
+    },
+    {
+     "id": "ZOMBIE_PICKAXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "ZOMBIE_PICKAXE"
+     ]
+    },
+    {
+     "id": "ARMADILLO_MASK",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ARMADILLO_MASK"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_YOG",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "ARMOR_OF_YOG_BOOTS",
+      "ARMOR_OF_YOG_CHESTPLATE",
+      "ARMOR_OF_YOG_HELMET",
+      "ARMOR_OF_YOG_LEGGINGS"
+     ],
+     "child": "FLAME_BREAKER"
+    },
+    {
+     "id": "FALLEN_STAR_HAT",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FALLEN_STAR_HAT"
+     ]
+    },
+    {
+     "id": "FLAME_BREAKER",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "FLAME_BREAKER_BOOTS",
+      "FLAME_BREAKER_CHESTPLATE",
+      "FLAME_BREAKER_HELMET",
+      "FLAME_BREAKER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "JUNGLE_PICKAXE",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "JUNGLE_PICKAXE"
+     ]
+    },
+    {
+     "id": "LAPIS_ARMOR",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "LAPIS_ARMOR_BOOTS",
+      "LAPIS_ARMOR_CHESTPLATE",
+      "LAPIS_ARMOR_HELMET",
+      "LAPIS_ARMOR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "MINER_OUTFIT",
+     "xp": 3,
+     "stage": "STARTER",
+     "items": [
+      "MINER_OUTFIT_BOOTS",
+      "MINER_OUTFIT_CHESTPLATE",
+      "MINER_OUTFIT_HELMET",
+      "MINER_OUTFIT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "MITHRIL",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_BELT",
+      "MITHRIL_CLOAK",
+      "MITHRIL_GAUNTLET",
+      "MITHRIL_NECKLACE"
+     ]
+    },
+    {
+     "id": "MITHRIL_LANTERN",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_LANTERN"
+     ],
+     "child": "LANTERN"
+    },
+    {
+     "id": "REFINED_MITHRIL_PICKAXE",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "REFINED_MITHRIL_PICKAXE"
+     ],
+     "child": "MITHRIL_PICKAXE"
+    },
+    {
+     "id": "STARFALL_SEASONING",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STARFALL_SEASONING"
+     ]
+    },
+    {
+     "id": "STONK_PICKAXE",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STONK_PICKAXE"
+     ]
+    },
+    {
+     "id": "TANK_MINER",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "TANK_MINER_BOOTS",
+      "TANK_MINER_CHESTPLATE",
+      "TANK_MINER_HELMET",
+      "TANK_MINER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TITANIUM_PICKAXE",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "TITANIUM_PICKAXE"
+     ],
+     "child": "RUSTY_TITANIUM_PICKAXE"
+    },
+    {
+     "id": "GEMSTONE_DRILL_1",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GEMSTONE_DRILL_1"
+     ]
+    },
+    {
+     "id": "GLACITE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GLACITE_BOOTS",
+      "GLACITE_CHESTPLATE",
+      "GLACITE_HELMET",
+      "GLACITE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GOBLIN",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GOBLIN_BOOTS",
+      "GOBLIN_CHESTPLATE",
+      "GOBLIN_HELMET",
+      "GOBLIN_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GOBLIN_OMELETTE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "GOBLIN_OMELETTE"
+     ]
+    },
+    {
+     "id": "MINERAL",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "MINERAL_BOOTS",
+      "MINERAL_CHESTPLATE",
+      "MINERAL_HELMET",
+      "MINERAL_LEGGINGS"
+     ],
+     "child": "HARDENED_DIAMOND"
+    },
+    {
+     "id": "MITHRIL_DRILL_ENGINE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_DRILL_ENGINE"
+     ]
+    },
+    {
+     "id": "REFINED_TITANIUM_PICKAXE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "REFINED_TITANIUM_PICKAXE"
+     ],
+     "child": "TITANIUM_PICKAXE"
+    },
+    {
+     "id": "TITANIUM",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "TITANIUM_BELT",
+      "TITANIUM_CLOAK",
+      "TITANIUM_GAUNTLET",
+      "TITANIUM_NECKLACE"
+     ],
+     "child": "MITHRIL"
+    },
+    {
+     "id": "GEMSTONE",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "AMBER_NECKLACE",
+      "AMETHYST_GAUNTLET",
+      "JADE_BELT",
+      "SAPPHIRE_CLOAK"
+     ]
+    },
+    {
+     "id": "GEMSTONE_DRILL_2",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GEMSTONE_DRILL_2"
+     ],
+     "child": "GEMSTONE_DRILL_1"
+    },
+    {
+     "id": "MITHRIL_FUEL_TANK",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "MITHRIL_FUEL_TANK"
+     ]
+    },
+    {
+     "id": "TITANIUM_LANTERN",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "TITANIUM_LANTERN"
+     ],
+     "child": "MITHRIL_LANTERN"
+    },
+    {
+     "id": "GOBLIN_OMELETTE_PESTO",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "GOBLIN_OMELETTE_PESTO"
+     ],
+     "child": "GOBLIN_OMELETTE"
+    },
+    {
+     "id": "GOBLIN_OMELETTE_SUNNY_SIDE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "GOBLIN_OMELETTE_SUNNY_SIDE"
+     ]
+    },
+    {
+     "id": "MITHRIL_DRILL_1",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MITHRIL_DRILL_1"
+     ]
+    },
+    {
+     "id": "ROYAL_PIGEON",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "ROYAL_PIGEON"
+     ]
+    },
+    {
+     "id": "TITANIUM_DRILL_ENGINE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "TITANIUM_DRILL_ENGINE"
+     ],
+     "child": "MITHRIL_DRILL_ENGINE"
+    },
+    {
+     "id": "ENCHANTED_TIME_CLOCK",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "ENCHANTED_TIME_CLOCK"
+     ]
+    },
+    {
+     "id": "GEMSTONE_DRILL_3",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "GEMSTONE_DRILL_3"
+     ],
+     "child": "GEMSTONE_DRILL_2"
+    },
+    {
+     "id": "GLOSSY_MINERAL",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "GLOSSY_MINERAL_BOOTS",
+      "GLOSSY_MINERAL_CHESTPLATE",
+      "GLOSSY_MINERAL_HELMET",
+      "GLOSSY_MINERAL_LEGGINGS"
+     ],
+     "child": "MINERAL"
+    },
+    {
+     "id": "TITANIUM_FUEL_TANK",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "TITANIUM_FUEL_TANK"
+     ],
+     "child": "MITHRIL_FUEL_TANK"
+    },
+    {
+     "id": "GEMSTONE_GAUNTLET",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "GEMSTONE_GAUNTLET"
+     ]
+    },
+    {
+     "id": "GLACITE_LANTERN",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "GLACITE_LANTERN"
+     ],
+     "child": "TITANIUM_LANTERN"
+    },
+    {
+     "id": "GOBLIN_OMELETTE_SPICY",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "GOBLIN_OMELETTE_SPICY"
+     ]
+    },
+    {
+     "id": "REINFORCED_CHISEL",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "REINFORCED_CHISEL"
+     ]
+    },
+    {
+     "id": "RUBY_POLISHED_DRILL_ENGINE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "RUBY_POLISHED_DRILL_ENGINE"
+     ],
+     "child": "TITANIUM_DRILL_ENGINE"
+    },
+    {
+     "id": "DWARVEN_HANDWARMERS",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DWARVEN_HANDWARMERS"
+     ]
+    },
+    {
+     "id": "GEMSTONE_DRILL_4",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "GEMSTONE_DRILL_4"
+     ],
+     "child": "GEMSTONE_DRILL_3"
+    },
+    {
+     "id": "GEMSTONE_FUEL_TANK",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GEMSTONE_FUEL_TANK"
+     ],
+     "child": "TITANIUM_FUEL_TANK"
+    },
+    {
+     "id": "GLACITE_CHISEL",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GLACITE_CHISEL"
+     ],
+     "child": "REINFORCED_CHISEL"
+    },
+    {
+     "id": "MITHRIL_DRILL_2",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "MITHRIL_DRILL_2"
+     ],
+     "child": "MITHRIL_DRILL_1"
+    },
+    {
+     "id": "SAPPHIRE_POLISHED_DRILL_ENGINE",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "SAPPHIRE_POLISHED_DRILL_ENGINE"
+     ],
+     "child": "RUBY_POLISHED_DRILL_ENGINE"
+    },
+    {
+     "id": "SORROW",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "SORROW_BOOTS",
+      "SORROW_CHESTPLATE",
+      "SORROW_HELMET",
+      "SORROW_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TITANIUM_DRILL_1",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "TITANIUM_DRILL_1"
+     ]
+    },
+    {
+     "id": "TUNGSTEN_KEYCHAIN",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TUNGSTEN_KEYCHAIN"
+     ]
+    },
+    {
+     "id": "AMBER_POLISHED_DRILL_ENGINE",
+     "xp": 15,
+     "stage": "MASTER",
+     "items": [
+      "AMBER_POLISHED_DRILL_ENGINE"
+     ],
+     "child": "SAPPHIRE_POLISHED_DRILL_ENGINE"
+    },
+    {
+     "id": "GOBLIN_OMELETTE_BLUE_CHEESE",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GOBLIN_OMELETTE_BLUE_CHEESE"
+     ]
+    },
+    {
+     "id": "PERFECTLY_CUT_FUEL_TANK",
+     "xp": 15,
+     "stage": "MASTER",
+     "items": [
+      "PERFECTLY_CUT_FUEL_TANK"
+     ],
+     "child": "GEMSTONE_FUEL_TANK"
+    },
+    {
+     "id": "PERFECT_CHISEL",
+     "xp": 15,
+     "stage": "MASTER",
+     "items": [
+      "PERFECT_CHISEL"
+     ],
+     "child": "GLACITE_CHISEL"
+    },
+    {
+     "id": "TITANIUM_DRILL_2",
+     "xp": 15,
+     "stage": "SKILLED",
+     "items": [
+      "TITANIUM_DRILL_2"
+     ],
+     "child": "TITANIUM_DRILL_1"
+    },
+    {
+     "id": "TITANIUM_DRILL_3",
+     "xp": 15,
+     "stage": "EXPERT",
+     "items": [
+      "TITANIUM_DRILL_3"
+     ],
+     "child": "TITANIUM_DRILL_2"
+    },
+    {
+     "id": "WILL_O_WISP",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "WILL_O_WISP"
+     ],
+     "child": "GLACITE_LANTERN"
+    },
+    {
+     "id": "DIVAN",
+     "xp": 20,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DIVAN_BOOTS",
+      "DIVAN_CHESTPLATE",
+      "DIVAN_HELMET",
+      "DIVAN_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TITANIUM_DRILL_4",
+     "xp": 20,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TITANIUM_DRILL_4"
+     ],
+     "child": "TITANIUM_DRILL_3"
+    },
+    {
+     "id": "DIVAN_DRILL",
+     "xp": 25,
+     "stage": "MASTER",
+     "items": [
+      "DIVAN_DRILL"
+     ],
+     "child": "TITANIUM_DRILL_4"
+    },
+    {
+     "id": "DIVAN_EQUIPMENT",
+     "xp": 25,
+     "stage": "MASTER",
+     "items": [
+      "DIVAN_PENDANT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fishing",
+   "entries": [
+    {
+     "id": "FISH_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "FISH_HAT"
+     ]
+    },
+    {
+     "id": "SALMON_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SALMON_HAT"
+     ]
+    },
+    {
+     "id": "SQUID_HAT",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SQUID_HAT"
+     ]
+    },
+    {
+     "id": "ANGLER",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "ANGLER_BELT",
+      "ANGLER_BOOTS",
+      "ANGLER_BRACELET",
+      "ANGLER_CHESTPLATE",
+      "ANGLER_CLOAK",
+      "ANGLER_HELMET",
+      "ANGLER_LEGGINGS",
+      "ANGLER_NECKLACE"
+     ]
+    },
+    {
+     "id": "CHALLENGE_ROD",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CHALLENGE_ROD"
+     ]
+    },
+    {
+     "id": "COMMON_HOOK",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "COMMON_HOOK"
+     ]
+    },
+    {
+     "id": "FESTIVE_SINKER",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "FESTIVE_SINKER"
+     ]
+    },
+    {
+     "id": "FROGGLES",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FROGGLES"
+     ]
+    },
+    {
+     "id": "HOTSPOT_RADAR",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "HOTSPOT_RADAR"
+     ]
+    },
+    {
+     "id": "JUNK_SINKER",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "JUNK_SINKER"
+     ]
+    },
+    {
+     "id": "MUSIC_PANTS",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MUSIC_PANTS"
+     ]
+    },
+    {
+     "id": "PRISMARINE_SINKER",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "PRISMARINE_SINKER"
+     ]
+    },
+    {
+     "id": "SALMON_MASK",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SALMON_MASK"
+     ]
+    },
+    {
+     "id": "SPONGE_SINKER",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "SPONGE_SINKER"
+     ]
+    },
+    {
+     "id": "SQUID_BOOTS",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "SQUID_BOOTS"
+     ]
+    },
+    {
+     "id": "CHAMP_ROD",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "CHAMP_ROD"
+     ],
+     "child": "CHALLENGE_ROD"
+    },
+    {
+     "id": "CHUM_SINKER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CHUM_SINKER"
+     ]
+    },
+    {
+     "id": "FISHERMAN",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "CLAY_BRACELET",
+      "CLOWNFISH_CLOAK",
+      "PRISMARINE_NECKLACE",
+      "SPONGE_BELT"
+     ]
+    },
+    {
+     "id": "ICY_SINKER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ICY_SINKER"
+     ]
+    },
+    {
+     "id": "LUMINOUS_BRACELET",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "LUMINOUS_BRACELET"
+     ]
+    },
+    {
+     "id": "RED_SWEATER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RED_SWEATER"
+     ]
+    },
+    {
+     "id": "SALMON_NEW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SALMON_BOOTS_NEW",
+      "SALMON_CHESTPLATE_NEW",
+      "SALMON_HELMET_NEW",
+      "SALMON_LEGGINGS_NEW"
+     ]
+    },
+    {
+     "id": "SNORKELING",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SNORKELING_BOOTS",
+      "SNORKELING_CHESTPLATE",
+      "SNORKELING_HELMET",
+      "SNORKELING_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SPEEDY_LINE",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SPEEDY_LINE"
+     ]
+    },
+    {
+     "id": "STINGY_SINKER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STINGY_SINKER"
+     ]
+    },
+    {
+     "id": "TOTEM_OF_CORRUPTION",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "TOTEM_OF_CORRUPTION"
+     ]
+    },
+    {
+     "id": "FROGGLES_SILVER",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "FROGGLES_SILVER"
+     ],
+     "child": "FROGGLES"
+    },
+    {
+     "id": "FROZEN",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FROZEN_AMULET"
+     ]
+    },
+    {
+     "id": "LOTUS_SINKER",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "LOTUS_SINKER"
+     ]
+    },
+    {
+     "id": "STARTER_LAVA_ROD",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "STARTER_LAVA_ROD"
+     ]
+    },
+    {
+     "id": "WATER_HYDRA_HEAD",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "WATER_HYDRA_HEAD"
+     ]
+    },
+    {
+     "id": "LEGEND_ROD",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "LEGEND_ROD"
+     ],
+     "child": "CHAMP_ROD"
+    },
+    {
+     "id": "PHANTOM_HOOK",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "PHANTOM_HOOK"
+     ]
+    },
+    {
+     "id": "BACKWATER",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "BACKWATER_BELT",
+      "BACKWATER_BOOTS",
+      "BACKWATER_CHESTPLATE",
+      "BACKWATER_CLOAK",
+      "BACKWATER_GLOVES",
+      "BACKWATER_HELMET",
+      "BACKWATER_LEGGINGS",
+      "BACKWATER_NECKLACE"
+     ],
+     "child": "ANGLER"
+    },
+    {
+     "id": "FROGGLES_GOLD",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "FROGGLES_GOLD"
+     ],
+     "child": "FROGGLES_SILVER"
+    },
+    {
+     "id": "HOTSPOT_HOOK",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "HOTSPOT_HOOK"
+     ]
+    },
+    {
+     "id": "HOTSPOT_SINKER",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "HOTSPOT_SINKER"
+     ]
+    },
+    {
+     "id": "ICHTHYIC",
+     "xp": 6,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ICHTHYIC_BELT",
+      "ICHTHYIC_CLOAK",
+      "ICHTHYIC_GLOVES"
+     ]
+    },
+    {
+     "id": "MAGMA_ROD",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "MAGMA_ROD"
+     ]
+    },
+    {
+     "id": "POLISHED_TOPAZ_ROD",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "POLISHED_TOPAZ_ROD"
+     ]
+    },
+    {
+     "id": "PUDDLE_JUMPER_HOOK",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "PUDDLE_JUMPER_HOOK"
+     ]
+    },
+    {
+     "id": "SPONGE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "SPONGE_BOOTS",
+      "SPONGE_CHESTPLATE",
+      "SPONGE_HELMET",
+      "SPONGE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "TREASURE_HOOK",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "TREASURE_HOOK"
+     ]
+    },
+    {
+     "id": "TROPHY_LINE",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "TROPHY_LINE"
+     ]
+    },
+    {
+     "id": "UMBERELLA",
+     "xp": 6,
+     "stage": "EXPERT",
+     "items": [
+      "UMBERELLA"
+     ]
+    },
+    {
+     "id": "SHARK_SCALE",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SHARK_SCALE_BOOTS",
+      "SHARK_SCALE_CHESTPLATE",
+      "SHARK_SCALE_HELMET",
+      "SHARK_SCALE_LEGGINGS"
+     ],
+     "child": "SPONGE"
+    },
+    {
+     "id": "SHREDDED_LINE",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SHREDDED_LINE"
+     ]
+    },
+    {
+     "id": "ROD_OF_THE_SEA",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "ROD_OF_THE_SEA"
+     ],
+     "child": "LEGEND_ROD"
+    },
+    {
+     "id": "TERA_SHELL_NECKLACE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "TERA_SHELL_NECKLACE"
+     ]
+    },
+    {
+     "id": "TITAN_LINE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "TITAN_LINE"
+     ]
+    },
+    {
+     "id": "ABYSSAL",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "ABYSSAL_BOOTS",
+      "ABYSSAL_CHESTPLATE",
+      "ABYSSAL_HELMET",
+      "ABYSSAL_LEGGINGS"
+     ],
+     "child": "DIVER"
+    },
+    {
+     "id": "BRONZE_HUNTER",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "BRONZE_HUNTER_BOOTS",
+      "BRONZE_HUNTER_CHESTPLATE",
+      "BRONZE_HUNTER_HELMET",
+      "BRONZE_HUNTER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "DIVER",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "DIVER_BOOTS",
+      "DIVER_CHESTPLATE",
+      "DIVER_HELMET",
+      "DIVER_LEGGINGS"
+     ],
+     "child": "SNORKELING"
+    },
+    {
+     "id": "FINWAVE",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "FINWAVE_BELT",
+      "FINWAVE_CLOAK",
+      "FINWAVE_GLOVES"
+     ],
+     "child": "ICHTHYIC"
+    },
+    {
+     "id": "FROGGLES_DIAMOND",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "FROGGLES_DIAMOND"
+     ],
+     "child": "FROGGLES_GOLD"
+    },
+    {
+     "id": "INFERNO_ROD",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "INFERNO_ROD"
+     ],
+     "child": "MAGMA_ROD"
+    },
+    {
+     "id": "LAVA_SEA_CREATURE",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "FLAMING_CHESTPLATE",
+      "MOOGMA_LEGGINGS",
+      "SLUG_BOOTS",
+      "TAURUS_HELMET"
+     ]
+    },
+    {
+     "id": "NUTCRACKER",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "NUTCRACKER_BOOTS",
+      "NUTCRACKER_CHESTPLATE",
+      "NUTCRACKER_HELMET",
+      "NUTCRACKER_LEGGINGS"
+     ],
+     "child": "SNOW_SUIT"
+    },
+    {
+     "id": "TIKI_MASK",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "TIKI_MASK"
+     ]
+    },
+    {
+     "id": "SILVER_HUNTER",
+     "xp": 12,
+     "stage": "EXPERT",
+     "items": [
+      "SILVER_HUNTER_BOOTS",
+      "SILVER_HUNTER_CHESTPLATE",
+      "SILVER_HUNTER_HELMET",
+      "SILVER_HUNTER_LEGGINGS"
+     ],
+     "child": "BRONZE_HUNTER"
+    },
+    {
+     "id": "GILLSPLASH",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GILLSPLASH_BELT",
+      "GILLSPLASH_CLOAK",
+      "GILLSPLASH_GLOVES"
+     ],
+     "child": "FINWAVE"
+    },
+    {
+     "id": "THUNDER",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "THUNDERBOLT_NECKLACE",
+      "THUNDER_BOOTS",
+      "THUNDER_CHESTPLATE",
+      "THUNDER_HELMET",
+      "THUNDER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GOLD_HUNTER",
+     "xp": 16,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "GOLD_HUNTER_BOOTS",
+      "GOLD_HUNTER_CHESTPLATE",
+      "GOLD_HUNTER_HELMET",
+      "GOLD_HUNTER_LEGGINGS"
+     ],
+     "child": "SILVER_HUNTER"
+    },
+    {
+     "id": "HELLFIRE_ROD",
+     "xp": 20,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "HELLFIRE_ROD"
+     ],
+     "child": "INFERNO_ROD"
+    },
+    {
+     "id": "MAGMA_LORD",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "MAGMA_LORD_BOOTS",
+      "MAGMA_LORD_CHESTPLATE",
+      "MAGMA_LORD_GAUNTLET",
+      "MAGMA_LORD_HELMET",
+      "MAGMA_LORD_LEGGINGS"
+     ]
+    },
+    {
+     "id": "DIAMOND_HUNTER",
+     "xp": 25,
+     "stage": "MASTER",
+     "items": [
+      "DIAMOND_HUNTER_BOOTS",
+      "DIAMOND_HUNTER_CHESTPLATE",
+      "DIAMOND_HUNTER_HELMET",
+      "DIAMOND_HUNTER_LEGGINGS"
+     ],
+     "child": "GOLD_HUNTER"
+    }
+   ]
+  },
+  {
+   "id": "foraging",
+   "entries": [
+    {
+     "id": "EFFICIENT_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "EFFICIENT_AXE"
+     ]
+    },
+    {
+     "id": "PARK",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CHARLIE_TROUSERS",
+      "KELLY_TSHIRT",
+      "MELODY_SHOES",
+      "MOLE_HAT"
+     ]
+    },
+    {
+     "id": "PROMISING_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "PROMISING_AXE"
+     ]
+    },
+    {
+     "id": "ROOKIE_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ROOKIE_AXE"
+     ]
+    },
+    {
+     "id": "SERIOUSLY_DAMAGED_AXE",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "SERIOUSLY_DAMAGED_AXE"
+     ]
+    },
+    {
+     "id": "TINY_SCAFFOLDING",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "TINY_SCAFFOLDING"
+     ]
+    },
+    {
+     "id": "DECENT_AXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "DECENT_AXE"
+     ],
+     "child": "SERIOUSLY_DAMAGED_AXE"
+    },
+    {
+     "id": "FIG_AXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "FIG_AXE"
+     ]
+    },
+    {
+     "id": "JUNGLE_AXE",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "JUNGLE_AXE"
+     ]
+    },
+    {
+     "id": "LEAFLET",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "LEAFLET_BOOTS",
+      "LEAFLET_CHESTPLATE",
+      "LEAFLET_HELMET",
+      "LEAFLET_LEGGINGS"
+     ]
+    },
+    {
+     "id": "MEDIUM_SCAFFOLDING",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "MEDIUM_SCAFFOLDING"
+     ],
+     "child": "TINY_SCAFFOLDING"
+    },
+    {
+     "id": "SCULPTORS_AXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "SCULPTORS_AXE"
+     ]
+    },
+    {
+     "id": "SWEET_AXE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "SWEET_AXE"
+     ]
+    },
+    {
+     "id": "CANOPY",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CANOPY_BOOTS",
+      "CANOPY_CHESTPLATE",
+      "CANOPY_HELMET",
+      "CANOPY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "BEE_MASK",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "BEE_MASK"
+     ]
+    },
+    {
+     "id": "FROG_MASK",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "FROG_MASK"
+     ]
+    },
+    {
+     "id": "LARGE_SCAFFOLDING",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "LARGE_SCAFFOLDING"
+     ],
+     "child": "MEDIUM_SCAFFOLDING"
+    },
+    {
+     "id": "TREECAPITATOR_AXE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "TREECAPITATOR_AXE"
+     ],
+     "child": "JUNGLE_AXE"
+    },
+    {
+     "id": "FIGSTONE_AXE",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "FIGSTONE_AXE"
+     ],
+     "child": "FIG_AXE"
+    },
+    {
+     "id": "MANGROVE_VINE",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "MANGROVE_VINE"
+     ]
+    },
+    {
+     "id": "FIG",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "FIG_BOOTS",
+      "FIG_CHESTPLATE",
+      "FIG_HELMET",
+      "FIG_LEGGINGS"
+     ],
+     "child": "CANOPY"
+    },
+    {
+     "id": "HELIX_CHOPPER",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "HELIX_CHOPPER"
+     ],
+     "child": "FIGSTONE_AXE"
+    },
+    {
+     "id": "HONEYCOMB",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "HONEYCOMB_NECKLACE"
+     ]
+    },
+    {
+     "id": "MANGROVE",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "MANGROVE_GRIPPERS",
+      "MANGROVE_LOCKET"
+     ]
+    },
+    {
+     "id": "TORRHUS_BELT",
+     "xp": 8,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TORRHUS_BELT"
+     ],
+     "child": "MANGROVE_VINE"
+    },
+    {
+     "id": "VEILSHROOM_BRACELET",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "VEILSHROOM_BRACELET"
+     ],
+     "child": "MANGROVE_GRIPPERS"
+    },
+    {
+     "id": "HELIX_ARMOR",
+     "xp": 9,
+     "stage": "EXPERT",
+     "items": [
+      "HELIX_ARMOR_BOOTS",
+      "HELIX_ARMOR_CHESTPLATE",
+      "HELIX_ARMOR_HELMET",
+      "HELIX_ARMOR_LEGGINGS"
+     ],
+     "child": "FIG"
+    }
+   ]
+  },
+  {
+   "id": "dungeoneering",
+   "entries": [
+    {
+     "id": "CLEAVER",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "CLEAVER"
+     ]
+    },
+    {
+     "id": "DUNGEON_STONE",
+     "xp": 1,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "DUNGEON_STONE"
+     ]
+    },
+    {
+     "id": "CRYPT_DREADLORD_SWORD",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CRYPT_DREADLORD_SWORD"
+     ]
+    },
+    {
+     "id": "DARK_GOGGLES",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "DARK_GOGGLES"
+     ]
+    },
+    {
+     "id": "HYPER_CLEAVER",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "HYPER_CLEAVER"
+     ],
+     "child": "SUPER_CLEAVER"
+    },
+    {
+     "id": "MENDER_FEDORA",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MENDER_FEDORA"
+     ],
+     "child": "MENDER_HELMET"
+    },
+    {
+     "id": "MENDER_HELMET",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "MENDER_HELMET"
+     ]
+    },
+    {
+     "id": "METAL_CHESTPLATE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "METAL_CHESTPLATE"
+     ],
+     "child": "STONE_CHESTPLATE"
+    },
+    {
+     "id": "ROTTEN",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "ROTTEN_BOOTS",
+      "ROTTEN_CHESTPLATE",
+      "ROTTEN_HELMET",
+      "ROTTEN_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SHADOW_GOGGLES",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SHADOW_GOGGLES"
+     ],
+     "child": "DARK_GOGGLES"
+    },
+    {
+     "id": "SNIPER_BOW",
+     "xp": 2,
+     "stage": "SKILLED",
+     "items": [
+      "SNIPER_BOW"
+     ]
+    },
+    {
+     "id": "STONE_CHESTPLATE",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STONE_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "SUPER_CLEAVER",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SUPER_CLEAVER"
+     ],
+     "child": "CLEAVER"
+    },
+    {
+     "id": "SUPER_UNDEAD_BOW",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SUPER_UNDEAD_BOW"
+     ],
+     "child": "UNDEAD_BOW"
+    },
+    {
+     "id": "UNDEAD_BOW",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "UNDEAD_BOW"
+     ]
+    },
+    {
+     "id": "CONJURING_SWORD",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CONJURING_SWORD"
+     ]
+    },
+    {
+     "id": "CRYPT_BOW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CRYPT_BOW"
+     ]
+    },
+    {
+     "id": "DEATH_BOW",
+     "xp": 3,
+     "stage": "EXPERT",
+     "items": [
+      "DEATH_BOW"
+     ],
+     "child": "SUPER_UNDEAD_BOW"
+    },
+    {
+     "id": "GIANT_CLEAVER",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "GIANT_CLEAVER"
+     ],
+     "child": "HYPER_CLEAVER"
+    },
+    {
+     "id": "HEAVY",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "HEAVY_BOOTS",
+      "HEAVY_CHESTPLATE",
+      "HEAVY_HELMET",
+      "HEAVY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "MACHINE_GUN_BOW",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MACHINE_GUN_BOW"
+     ]
+    },
+    {
+     "id": "SECRET_TRACKER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SECRET_TRACKER"
+     ]
+    },
+    {
+     "id": "SKELETON_GRUNT",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SKELETON_GRUNT_BOOTS",
+      "SKELETON_GRUNT_CHESTPLATE",
+      "SKELETON_GRUNT_HELMET",
+      "SKELETON_GRUNT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SKELETON_MASTER",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SKELETON_MASTER_BOOTS",
+      "SKELETON_MASTER_CHESTPLATE",
+      "SKELETON_MASTER_HELMET",
+      "SKELETON_MASTER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SKELETON_SOLDIER",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SKELETON_SOLDIER_BOOTS",
+      "SKELETON_SOLDIER_CHESTPLATE",
+      "SKELETON_SOLDIER_HELMET",
+      "SKELETON_SOLDIER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SNIPER_HELMET",
+     "xp": 3,
+     "stage": "AMATEUR",
+     "items": [
+      "SNIPER_HELMET"
+     ]
+    },
+    {
+     "id": "SUPER_HEAVY",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SUPER_HEAVY_BOOTS",
+      "SUPER_HEAVY_CHESTPLATE",
+      "SUPER_HEAVY_HELMET",
+      "SUPER_HEAVY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ZOMBIE_COMMANDER_WHIP",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "ZOMBIE_COMMANDER_WHIP"
+     ]
+    },
+    {
+     "id": "ZOMBIE_KNIGHT_SWORD",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "ZOMBIE_KNIGHT_SWORD"
+     ]
+    },
+    {
+     "id": "ZOMBIE_SOLDIER",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_SOLDIER_BOOTS",
+      "ZOMBIE_SOLDIER_CHESTPLATE",
+      "ZOMBIE_SOLDIER_HELMET",
+      "ZOMBIE_SOLDIER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ZOMBIE_SOLDIER_CUTLASS",
+     "xp": 3,
+     "stage": "SKILLED",
+     "items": [
+      "ZOMBIE_SOLDIER_CUTLASS"
+     ]
+    },
+    {
+     "id": "BALLOON_SNAKE",
+     "xp": 4,
+     "stage": "AMATEUR",
+     "items": [
+      "BALLOON_SNAKE"
+     ]
+    },
+    {
+     "id": "BONZO_MASK",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "BONZO_MASK"
+     ]
+    },
+    {
+     "id": "BOUNCY",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "BOUNCY_BOOTS",
+      "BOUNCY_CHESTPLATE",
+      "BOUNCY_HELMET",
+      "BOUNCY_LEGGINGS"
+     ]
+    },
+    {
+     "id": "EARTH_SHARD",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "EARTH_SHARD"
+     ]
+    },
+    {
+     "id": "SILENT_DEATH",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "SILENT_DEATH"
+     ]
+    },
+    {
+     "id": "ASTRAEA",
+     "xp": 5,
+     "stage": "MASTER",
+     "items": [
+      "ASTRAEA"
+     ],
+     "child": "NECRON_BLADE"
+    },
+    {
+     "id": "BONZO_STAFF",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "BONZO_STAFF"
+     ]
+    },
+    {
+     "id": "FEL_SWORD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "FEL_SWORD"
+     ]
+    },
+    {
+     "id": "GOLD_BONZO_HEAD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GOLD_BONZO_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_LIVID_HEAD",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "GOLD_LIVID_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_NECRON_HEAD",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "GOLD_NECRON_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_PROFESSOR_HEAD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GOLD_PROFESSOR_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_SADAN_HEAD",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "GOLD_SADAN_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_SCARF_HEAD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GOLD_SCARF_HEAD"
+     ]
+    },
+    {
+     "id": "GOLD_THORN_HEAD",
+     "xp": 5,
+     "stage": "SKILLED",
+     "items": [
+      "GOLD_THORN_HEAD"
+     ]
+    },
+    {
+     "id": "HYPERION",
+     "xp": 5,
+     "stage": "MASTER",
+     "items": [
+      "HYPERION"
+     ],
+     "child": "VALKYRIE"
+    },
+    {
+     "id": "SCYLLA",
+     "xp": 5,
+     "stage": "MASTER",
+     "items": [
+      "SCYLLA"
+     ],
+     "child": "ASTRAEA"
+    },
+    {
+     "id": "SKELETOR",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SKELETOR_BOOTS",
+      "SKELETOR_CHESTPLATE",
+      "SKELETOR_HELMET",
+      "SKELETOR_LEGGINGS"
+     ]
+    },
+    {
+     "id": "STONE_BLADE",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "STONE_BLADE"
+     ]
+    },
+    {
+     "id": "THORNS_BOOTS",
+     "xp": 5,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "THORNS_BOOTS"
+     ]
+    },
+    {
+     "id": "VALKYRIE",
+     "xp": 5,
+     "stage": "MASTER",
+     "items": [
+      "VALKYRIE"
+     ],
+     "child": "SCYLLA"
+    },
+    {
+     "id": "BONE_NECKLACE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "BONE_NECKLACE"
+     ]
+    },
+    {
+     "id": "FLOWER_OF_TRUTH",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "FLOWER_OF_TRUTH"
+     ]
+    },
+    {
+     "id": "LIVID_DAGGER",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "LIVID_DAGGER"
+     ]
+    },
+    {
+     "id": "MENDER_CROWN",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "MENDER_CROWN"
+     ],
+     "child": "MENDER_FEDORA"
+    },
+    {
+     "id": "POWER_WITHER",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "POWER_WITHER_BOOTS",
+      "POWER_WITHER_CHESTPLATE",
+      "POWER_WITHER_HELMET",
+      "POWER_WITHER_LEGGINGS"
+     ],
+     "child": "SPEED_WITHER"
+    },
+    {
+     "id": "SOULWEAVER_GLOVES",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "SOULWEAVER_GLOVES"
+     ]
+    },
+    {
+     "id": "SPEED_WITHER",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "SPEED_WITHER_BOOTS",
+      "SPEED_WITHER_CHESTPLATE",
+      "SPEED_WITHER_HELMET",
+      "SPEED_WITHER_LEGGINGS"
+     ],
+     "child": "WISE_WITHER"
+    },
+    {
+     "id": "STEEL_CHESTPLATE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "STEEL_CHESTPLATE"
+     ],
+     "child": "METAL_CHESTPLATE"
+    },
+    {
+     "id": "TANK_WITHER",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "TANK_WITHER_BOOTS",
+      "TANK_WITHER_CHESTPLATE",
+      "TANK_WITHER_HELMET",
+      "TANK_WITHER_LEGGINGS"
+     ],
+     "child": "WITHER"
+    },
+    {
+     "id": "WISE_WITHER",
+     "xp": 6,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "WISE_WITHER_BOOTS",
+      "WISE_WITHER_CHESTPLATE",
+      "WISE_WITHER_HELMET",
+      "WISE_WITHER_LEGGINGS"
+     ],
+     "child": "TANK_WITHER"
+    },
+    {
+     "id": "WITHER_GOGGLES",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "WITHER_GOGGLES"
+     ],
+     "child": "SHADOW_GOGGLES"
+    },
+    {
+     "id": "ADAPTIVE",
+     "xp": 7,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ADAPTIVE_BELT",
+      "ADAPTIVE_BOOTS",
+      "ADAPTIVE_CHESTPLATE",
+      "ADAPTIVE_HELMET",
+      "ADAPTIVE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "NECROMANCER_SWORD",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "NECROMANCER_SWORD"
+     ]
+    },
+    {
+     "id": "SPIRIT_SWORD",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "SPIRIT_SWORD"
+     ]
+    },
+    {
+     "id": "WITHER_CLOAK",
+     "xp": 7,
+     "stage": "EXPERT",
+     "items": [
+      "WITHER_CLOAK"
+     ]
+    },
+    {
+     "id": "ZOMBIE_KNIGHT",
+     "xp": 7,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ZOMBIE_KNIGHT_BOOTS",
+      "ZOMBIE_KNIGHT_CHESTPLATE",
+      "ZOMBIE_KNIGHT_HELMET",
+      "ZOMBIE_KNIGHT_LEGGINGS"
+     ]
+    },
+    {
+     "id": "BAT_WAND",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "BAT_WAND"
+     ]
+    },
+    {
+     "id": "BONE_BOOMERANG",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "BONE_BOOMERANG"
+     ]
+    },
+    {
+     "id": "BONE_REAVER",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "BONE_REAVER"
+     ],
+     "child": "SPIRIT_SWORD"
+    },
+    {
+     "id": "BOUQUET_OF_LIES",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "BOUQUET_OF_LIES"
+     ],
+     "child": "FLOWER_OF_TRUTH"
+    },
+    {
+     "id": "DUNGEONBREAKER",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "DUNGEONBREAKER"
+     ]
+    },
+    {
+     "id": "FELTHORN_REAPER",
+     "xp": 8,
+     "stage": "EXPERT",
+     "items": [
+      "FELTHORN_REAPER"
+     ],
+     "child": "BONE_REAVER"
+    },
+    {
+     "id": "ICE_SPRAY_WAND",
+     "xp": 8,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "ICE_SPRAY_WAND"
+     ]
+    },
+    {
+     "id": "ITEM_SPIRIT_BOW",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "ITEM_SPIRIT_BOW"
+     ]
+    },
+    {
+     "id": "LAST_BREATH",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "LAST_BREATH"
+     ]
+    },
+    {
+     "id": "SHADOW_FURY",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "SHADOW_FURY"
+     ]
+    },
+    {
+     "id": "ZOMBIE_COMMANDER",
+     "xp": 8,
+     "stage": "SKILLED",
+     "items": [
+      "ZOMBIE_COMMANDER_BOOTS",
+      "ZOMBIE_COMMANDER_CHESTPLATE",
+      "ZOMBIE_COMMANDER_HELMET",
+      "ZOMBIE_COMMANDER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "DIAMOND_BONZO_HEAD",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DIAMOND_BONZO_HEAD"
+     ],
+     "child": "GOLD_BONZO_HEAD"
+    },
+    {
+     "id": "DIAMOND_LIVID_HEAD",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "DIAMOND_LIVID_HEAD"
+     ],
+     "child": "GOLD_LIVID_HEAD"
+    },
+    {
+     "id": "DIAMOND_NECRON_HEAD",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "DIAMOND_NECRON_HEAD"
+     ],
+     "child": "GOLD_NECRON_HEAD"
+    },
+    {
+     "id": "DIAMOND_PROFESSOR_HEAD",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DIAMOND_PROFESSOR_HEAD"
+     ],
+     "child": "GOLD_PROFESSOR_HEAD"
+    },
+    {
+     "id": "DIAMOND_SADAN_HEAD",
+     "xp": 10,
+     "stage": "MASTER",
+     "items": [
+      "DIAMOND_SADAN_HEAD"
+     ],
+     "child": "GOLD_SADAN_HEAD"
+    },
+    {
+     "id": "DIAMOND_SCARF_HEAD",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DIAMOND_SCARF_HEAD"
+     ],
+     "child": "GOLD_SCARF_HEAD"
+    },
+    {
+     "id": "DIAMOND_THORN_HEAD",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "DIAMOND_THORN_HEAD"
+     ],
+     "child": "GOLD_THORN_HEAD"
+    },
+    {
+     "id": "GIANTS_SWORD",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "GIANTS_SWORD"
+     ]
+    },
+    {
+     "id": "INFINITE_SPIRIT_LEAP",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "INFINITE_SPIRIT_LEAP"
+     ]
+    },
+    {
+     "id": "INFINITE_SUPERBOOM_TNT",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "INFINITE_SUPERBOOM_TNT"
+     ]
+    },
+    {
+     "id": "SHADOW_ASSASSIN",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "SHADOW_ASSASSIN_BOOTS",
+      "SHADOW_ASSASSIN_CHESTPLATE",
+      "SHADOW_ASSASSIN_CLOAK",
+      "SHADOW_ASSASSIN_HELMET",
+      "SHADOW_ASSASSIN_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SKELETON_LORD",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "SKELETON_LORD_BOOTS",
+      "SKELETON_LORD_CHESTPLATE",
+      "SKELETON_LORD_HELMET",
+      "SKELETON_LORD_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SPIRIT_MASK",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "SPIRIT_MASK"
+     ]
+    },
+    {
+     "id": "WITHER",
+     "xp": 10,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "WITHER_BOOTS",
+      "WITHER_CHESTPLATE",
+      "WITHER_HELMET",
+      "WITHER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ZOMBIE_LORD",
+     "xp": 10,
+     "stage": "SKILLED",
+     "items": [
+      "ZOMBIE_LORD_BOOTS",
+      "ZOMBIE_LORD_CHESTPLATE",
+      "ZOMBIE_LORD_HELMET",
+      "ZOMBIE_LORD_LEGGINGS"
+     ]
+    },
+    {
+     "id": "NECROMANCER_LORD",
+     "xp": 12,
+     "stage": "SKILLED",
+     "items": [
+      "NECROMANCER_LORD_BOOTS",
+      "NECROMANCER_LORD_CHESTPLATE",
+      "NECROMANCER_LORD_HELMET",
+      "NECROMANCER_LORD_LEGGINGS"
+     ]
+    },
+    {
+     "id": "PRECURSOR_EYE",
+     "xp": 12,
+     "stage": "EXPERT",
+     "items": [
+      "PRECURSOR_EYE"
+     ]
+    },
+    {
+     "id": "NECRON_BLADE",
+     "xp": 20,
+     "stage": "MASTER",
+     "items": [
+      "NECRON_BLADE"
+     ]
+    },
+    {
+     "id": "DARK_CLAYMORE",
+     "xp": 30,
+     "stage": "MASTER",
+     "items": [
+      "DARK_CLAYMORE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hunting",
+   "entries": [
+    {
+     "id": "ABYSMAL_LASSO",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "ABYSMAL_LASSO"
+     ]
+    },
+    {
+     "id": "BASIC_FISHING_NET",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "BASIC_FISHING_NET"
+     ]
+    },
+    {
+     "id": "RETIA_BASICA",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "RETIA_BASICA"
+     ]
+    },
+    {
+     "id": "VENATOR_GENESIS",
+     "xp": 1,
+     "stage": "STARTER",
+     "items": [
+      "VENATOR_GENESIS"
+     ]
+    },
+    {
+     "id": "DAVIDS_CLOAK",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "DAVIDS_CLOAK"
+     ]
+    },
+    {
+     "id": "MEDIUM_FISHING_NET",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "MEDIUM_FISHING_NET"
+     ],
+     "child": "BASIC_FISHING_NET"
+    },
+    {
+     "id": "RETIA_MELIORA",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "RETIA_MELIORA"
+     ],
+     "child": "RETIA_BASICA"
+    },
+    {
+     "id": "SAFARI_BELT",
+     "xp": 2,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "SAFARI_BELT"
+     ]
+    },
+    {
+     "id": "SILVA_DOMINUS",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "SILVA_DOMINUS"
+     ],
+     "child": "VENATOR_GENESIS"
+    },
+    {
+     "id": "SMALL_POCKET_BLACK_HOLE",
+     "xp": 2,
+     "stage": "STARTER",
+     "items": [
+      "SMALL_POCKET_BLACK_HOLE"
+     ]
+    },
+    {
+     "id": "VINERIP_LASSO",
+     "xp": 2,
+     "stage": "AMATEUR",
+     "items": [
+      "VINERIP_LASSO"
+     ],
+     "child": "ABYSMAL_LASSO"
+    },
+    {
+     "id": "RETIA_ROBUSTA",
+     "xp": 3,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "RETIA_ROBUSTA"
+     ],
+     "child": "RETIA_MELIORA"
+    },
+    {
+     "id": "CURSUS_FERAE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "CURSUS_FERAE"
+     ],
+     "child": "SILVA_DOMINUS"
+    },
+    {
+     "id": "ENTANGLER_LASSO",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "ENTANGLER_LASSO"
+     ],
+     "child": "VINERIP_LASSO"
+    },
+    {
+     "id": "MEDIUM_POCKET_BLACK_HOLE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "MEDIUM_POCKET_BLACK_HOLE"
+     ],
+     "child": "SMALL_POCKET_BLACK_HOLE"
+    },
+    {
+     "id": "PELT_BELT",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "PELT_BELT"
+     ]
+    },
+    {
+     "id": "RETIA_FORTA",
+     "xp": 4,
+     "stage": "SKILLED",
+     "items": [
+      "RETIA_FORTA"
+     ],
+     "child": "RETIA_ROBUSTA"
+    },
+    {
+     "id": "TALBOTS_THEODOLITE",
+     "xp": 4,
+     "stage": "INTERMEDIATE",
+     "items": [
+      "TALBOTS_THEODOLITE"
+     ]
+    },
+    {
+     "id": "RETIA_SUPREMA",
+     "xp": 5,
+     "stage": "EXPERT",
+     "items": [
+      "RETIA_SUPREMA"
+     ],
+     "child": "RETIA_FORTA"
+    },
+    {
+     "id": "LARGE_POCKET_BLACK_HOLE",
+     "xp": 6,
+     "stage": "SKILLED",
+     "items": [
+      "LARGE_POCKET_BLACK_HOLE"
+     ],
+     "child": "MEDIUM_POCKET_BLACK_HOLE"
+    },
+    {
+     "id": "TURBO_FISHING_NET",
+     "xp": 7,
+     "stage": "SKILLED",
+     "items": [
+      "TURBO_FISHING_NET"
+     ],
+     "child": "MEDIUM_FISHING_NET"
+    },
+    {
+     "id": "APEX_PRAEDATOR",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "APEX_PRAEDATOR"
+     ],
+     "child": "CURSUS_FERAE"
+    },
+    {
+     "id": "EVERSTRETCH_LASSO",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "EVERSTRETCH_LASSO"
+     ],
+     "child": "ENTANGLER_LASSO"
+    },
+    {
+     "id": "GIGANTIC_FISHING_NET",
+     "xp": 10,
+     "stage": "EXPERT",
+     "items": [
+      "GIGANTIC_FISHING_NET"
+     ],
+     "child": "TURBO_FISHING_NET"
+    },
+    {
+     "id": "NEX_TITANUM",
+     "xp": 15,
+     "stage": "PROFESSIONAL",
+     "items": [
+      "NEX_TITANUM"
+     ],
+     "child": "APEX_PRAEDATOR"
+    }
+   ]
+  },
+  {
+   "id": "special",
+   "entries": [
+    {
+     "id": "AATROX_BADPHONE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "AATROX_BADPHONE"
+     ]
+    },
+    {
+     "id": "AATROX_BATPHONE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "AATROX_BATPHONE"
+     ]
+    },
+    {
+     "id": "ALPHA_PICK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ALPHA_PICK"
+     ]
+    },
+    {
+     "id": "ANCIENT_ELEVATOR",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ANCIENT_ELEVATOR"
+     ]
+    },
+    {
+     "id": "APOTHEJERRY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "APOTHEJERRY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "AQUAMARINE_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "AQUAMARINE_CRYSTAL"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_MAGMA_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_MAGMA_BOOTS"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_MAGMA_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_MAGMA_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_MAGMA_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_MAGMA_HELMET"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_MAGMA_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_MAGMA_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_THE_RESISTANCE_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_THE_RESISTANCE_BOOTS"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_THE_RESISTANCE_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_THE_RESISTANCE_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_THE_RESISTANCE_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_THE_RESISTANCE_HELMET"
+     ]
+    },
+    {
+     "id": "ARMOR_OF_THE_RESISTANCE_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ARMOR_OF_THE_RESISTANCE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "ASPECT_OF_THE_JERRY_SIGNATURE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ASPECT_OF_THE_JERRY_SIGNATURE"
+     ]
+    },
+    {
+     "id": "BAG_OF_CASH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BAG_OF_CASH"
+     ]
+    },
+    {
+     "id": "BANANA_MONKEY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BANANA_MONKEY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "BASKETBALL_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BASKETBALL_PERSONALITY"
+     ]
+    },
+    {
+     "id": "BATTLE_DISC",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BATTLE_DISC"
+     ]
+    },
+    {
+     "id": "BAT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BAT_THE_FISH"
+     ]
+    },
+    {
+     "id": "BEACH_BALL_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BEACH_BALL_PERSONALITY"
+     ]
+    },
+    {
+     "id": "BEDROCK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BEDROCK"
+     ]
+    },
+    {
+     "id": "BEE_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BEE_PERSONALITY"
+     ]
+    },
+    {
+     "id": "BERRY_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BERRY_THE_FISH"
+     ]
+    },
+    {
+     "id": "BINGO_ARTIFACT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_ARTIFACT"
+     ]
+    },
+    {
+     "id": "BINGO_CARD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_CARD"
+     ]
+    },
+    {
+     "id": "BINGO_DISPLAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_DISPLAY"
+     ]
+    },
+    {
+     "id": "BINGO_HEIRLOOM",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_HEIRLOOM"
+     ]
+    },
+    {
+     "id": "BINGO_RELIC",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_RELIC"
+     ]
+    },
+    {
+     "id": "BINGO_RING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_RING"
+     ]
+    },
+    {
+     "id": "BINGO_TALISMAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BINGO_TALISMAN"
+     ]
+    },
+    {
+     "id": "BLAZE_HAT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BLAZE_HAT"
+     ]
+    },
+    {
+     "id": "BONZO_STATUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BONZO_STATUE"
+     ]
+    },
+    {
+     "id": "BOOK_OF_STATS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BOOK_OF_STATS"
+     ]
+    },
+    {
+     "id": "BREAD_BOWL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BREAD_BOWL"
+     ]
+    },
+    {
+     "id": "BUNNY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "BUNNY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "CAKE_SOUL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CAKE_SOUL"
+     ]
+    },
+    {
+     "id": "CANDY_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CANDY_THE_FISH"
+     ]
+    },
+    {
+     "id": "CENTURY_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CENTURY_THE_FISH"
+     ]
+    },
+    {
+     "id": "CHILL_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CHILL_THE_FISH"
+     ]
+    },
+    {
+     "id": "CHILL_THE_FISH_2",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CHILL_THE_FISH_2"
+     ]
+    },
+    {
+     "id": "CHOCO_RABBIT_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CHOCO_RABBIT_PERSONALITY"
+     ]
+    },
+    {
+     "id": "CITRINE_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CITRINE_CRYSTAL"
+     ]
+    },
+    {
+     "id": "CLOWNFISH_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CLOWNFISH_PERSONALITY"
+     ]
+    },
+    {
+     "id": "CLOWN_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CLOWN_THE_FISH"
+     ]
+    },
+    {
+     "id": "CLUCK_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CLUCK_THE_FISH"
+     ]
+    },
+    {
+     "id": "COLLECTION_DISPLAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "COLLECTION_DISPLAY"
+     ]
+    },
+    {
+     "id": "CORRUPTED_NETHER_STAR",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CORRUPTED_NETHER_STAR"
+     ]
+    },
+    {
+     "id": "COTTON_CANDY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "COTTON_CANDY"
+     ]
+    },
+    {
+     "id": "CREATIVE_MIND",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CREATIVE_MIND"
+     ]
+    },
+    {
+     "id": "CYCLOPS_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "CYCLOPS_PERSONALITY"
+     ]
+    },
+    {
+     "id": "DANTE_RING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DANTE_RING"
+     ]
+    },
+    {
+     "id": "DANTE_TALISMAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DANTE_TALISMAN"
+     ]
+    },
+    {
+     "id": "DARK_PEBBLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DARK_PEBBLE"
+     ]
+    },
+    {
+     "id": "DCTR_SPACE_HELM",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DCTR_SPACE_HELM"
+     ]
+    },
+    {
+     "id": "DEAD_BUSH_OF_LOVE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DEAD_BUSH_OF_LOVE"
+     ]
+    },
+    {
+     "id": "DEFUSE_KIT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DEFUSE_KIT"
+     ]
+    },
+    {
+     "id": "DETECTIVE_WALLET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DETECTIVE_WALLET"
+     ]
+    },
+    {
+     "id": "DIAMOND_BARDING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DIAMOND_BARDING"
+     ]
+    },
+    {
+     "id": "DIAMOND_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DIAMOND_THE_FISH"
+     ]
+    },
+    {
+     "id": "DIRT_ROD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DIRT_ROD"
+     ]
+    },
+    {
+     "id": "DITTO_SKIN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DITTO_SKIN"
+     ]
+    },
+    {
+     "id": "DITTO_SKULL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DITTO_SKULL"
+     ]
+    },
+    {
+     "id": "DIVAN_ALLOY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DIVAN_ALLOY"
+     ]
+    },
+    {
+     "id": "DUECES_BUILDER_CLAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUECES_BUILDER_CLAY"
+     ]
+    },
+    {
+     "id": "DUNGEON_DISC_1",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUNGEON_DISC_1"
+     ]
+    },
+    {
+     "id": "DUNGEON_DISC_2",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUNGEON_DISC_2"
+     ]
+    },
+    {
+     "id": "DUNGEON_DISC_3",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUNGEON_DISC_3"
+     ]
+    },
+    {
+     "id": "DUNGEON_DISC_4",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUNGEON_DISC_4"
+     ]
+    },
+    {
+     "id": "DUNGEON_DISC_5",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUNGEON_DISC_5"
+     ]
+    },
+    {
+     "id": "DUST_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "DUST_THE_FISH"
+     ]
+    },
+    {
+     "id": "EASTER_EGG_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EASTER_EGG_PERSONALITY"
+     ]
+    },
+    {
+     "id": "EDITOR_PENCIL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EDITOR_PENCIL"
+     ]
+    },
+    {
+     "id": "EGG_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EGG_THE_FISH"
+     ]
+    },
+    {
+     "id": "EMBER_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EMBER_BOOTS"
+     ]
+    },
+    {
+     "id": "EMBER_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EMBER_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "EMBER_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EMBER_HELMET"
+     ]
+    },
+    {
+     "id": "EMBER_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EMBER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "EMBER_ROD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EMBER_ROD"
+     ]
+    },
+    {
+     "id": "ENDSTONE_ROSE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ENDSTONE_ROSE"
+     ]
+    },
+    {
+     "id": "END_STONE_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "END_STONE_PERSONALITY"
+     ]
+    },
+    {
+     "id": "ENRAGER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ENRAGER"
+     ]
+    },
+    {
+     "id": "EON_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EON_THE_FISH"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_AQUA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_AQUA"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_BLACK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_BLACK"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_BLUE"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_BROWN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_BROWN"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_CYAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_CYAN"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_DARK_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_DARK_GREEN"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_EXPIRED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_EXPIRED"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_GRAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_GRAY"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_GREEN"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_HEPHAESTUS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_HEPHAESTUS"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_MAGENTA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_MAGENTA"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_ORANGE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_ORANGE"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_PINK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_PINK"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_PURPLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_PURPLE"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_RED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_RED"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_SEVEN_SEAS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_SEVEN_SEAS"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_SILVER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_SILVER"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_STARBORN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_STARBORN"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_WHITE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_WHITE"
+     ]
+    },
+    {
+     "id": "EPOCH_CAKE_YELLOW",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EPOCH_CAKE_YELLOW"
+     ]
+    },
+    {
+     "id": "ETERNAL_FLAME_RING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ETERNAL_FLAME_RING"
+     ]
+    },
+    {
+     "id": "EXPERIMENT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EXPERIMENT_THE_FISH"
+     ]
+    },
+    {
+     "id": "EXTREME_BINGO_CARD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "EXTREME_BINGO_CARD"
+     ]
+    },
+    {
+     "id": "FAIRY_FLUTE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FAIRY_FLUTE"
+     ]
+    },
+    {
+     "id": "FAIRY_WINGS_CHARM",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FAIRY_WINGS_CHARM"
+     ]
+    },
+    {
+     "id": "FAMILY_DOUBLOON",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FAMILY_DOUBLOON"
+     ]
+    },
+    {
+     "id": "FARMING_FOR_DUMMIES",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FARMING_FOR_DUMMIES"
+     ]
+    },
+    {
+     "id": "FESTIVE_JERRY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FESTIVE_JERRY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "FESTIVE_SKELETON_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FESTIVE_SKELETON_PERSONALITY"
+     ]
+    },
+    {
+     "id": "FESTIVE_ZOMBIE_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FESTIVE_ZOMBIE_PERSONALITY"
+     ]
+    },
+    {
+     "id": "FISHY_PENGUIN_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FISHY_PENGUIN_PERSONALITY"
+     ]
+    },
+    {
+     "id": "FISH_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FISH_PERSONALITY"
+     ]
+    },
+    {
+     "id": "FISH_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FISH_THE_FISH"
+     ]
+    },
+    {
+     "id": "FLAMEBREAKER_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FLAMEBREAKER_BOOTS"
+     ]
+    },
+    {
+     "id": "FLAMEBREAKER_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FLAMEBREAKER_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "FLAMEBREAKER_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FLAMEBREAKER_HELMET"
+     ]
+    },
+    {
+     "id": "FLAMEBREAKER_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FLAMEBREAKER_LEGGINGS"
+     ]
+    },
+    {
+     "id": "FOSSIL_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FOSSIL_THE_FISH"
+     ]
+    },
+    {
+     "id": "FRENCH_BREAD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "FRENCH_BREAD"
+     ]
+    },
+    {
+     "id": "GABAGOOL_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GABAGOOL_THE_FISH"
+     ]
+    },
+    {
+     "id": "GAME_ANNIHILATOR",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GAME_ANNIHILATOR"
+     ]
+    },
+    {
+     "id": "GAME_BREAKER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GAME_BREAKER"
+     ]
+    },
+    {
+     "id": "GAME_FIXER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GAME_FIXER"
+     ]
+    },
+    {
+     "id": "GENERALS_ARMOR_OF_THE_RESISTANCE_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GENERALS_ARMOR_OF_THE_RESISTANCE_BOOTS"
+     ]
+    },
+    {
+     "id": "GENERALS_ARMOR_OF_THE_RESISTANCE_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GENERALS_ARMOR_OF_THE_RESISTANCE_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "GENERALS_ARMOR_OF_THE_RESISTANCE_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GENERALS_ARMOR_OF_THE_RESISTANCE_HELMET"
+     ]
+    },
+    {
+     "id": "GENERALS_ARMOR_OF_THE_RESISTANCE_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GENERALS_ARMOR_OF_THE_RESISTANCE_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GENERALS_HOPE_OF_THE_RESISTANCE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GENERALS_HOPE_OF_THE_RESISTANCE"
+     ]
+    },
+    {
+     "id": "GHAST_HEAD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GHAST_HEAD"
+     ]
+    },
+    {
+     "id": "GHOST_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GHOST_PERSONALITY"
+     ]
+    },
+    {
+     "id": "GIANT_FISHING_ROD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GIANT_FISHING_ROD"
+     ]
+    },
+    {
+     "id": "GIANT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GIANT_THE_FISH"
+     ]
+    },
+    {
+     "id": "GIFT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GIFT_THE_FISH"
+     ]
+    },
+    {
+     "id": "GINGERBREAD_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GINGERBREAD_PERSONALITY"
+     ]
+    },
+    {
+     "id": "GOD_POTION",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOD_POTION"
+     ]
+    },
+    {
+     "id": "GOD_POTION_2",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOD_POTION_2"
+     ]
+    },
+    {
+     "id": "GOLDEN_DANTE_STATUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOLDEN_DANTE_STATUE"
+     ]
+    },
+    {
+     "id": "GOLDOR_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOLDOR_THE_FISH"
+     ]
+    },
+    {
+     "id": "GOLD_BARDING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOLD_BARDING"
+     ]
+    },
+    {
+     "id": "GOLD_CANDY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOLD_CANDY"
+     ]
+    },
+    {
+     "id": "GOLD_GIFT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GOLD_GIFT"
+     ]
+    },
+    {
+     "id": "GORF_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GORF_THE_FISH"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_ARTIFACT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_ARTIFACT"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_BELT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_BELT"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_BOOTS"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_CLOAK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_CLOAK"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_GLOVES",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_GLOVES"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_HELMET"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_LEGGINGS"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_NECKLACE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_NECKLACE"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_RING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_RING"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_STAFF",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_STAFF"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_SWORD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_SWORD"
+     ]
+    },
+    {
+     "id": "GREAT_SPOOK_TALISMAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GREAT_SPOOK_TALISMAN"
+     ]
+    },
+    {
+     "id": "GRINCH_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "GRINCH_PERSONALITY"
+     ]
+    },
+    {
+     "id": "HAPPY_EMOJI_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HAPPY_EMOJI_PERSONALITY"
+     ]
+    },
+    {
+     "id": "HAPPY_MASK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HAPPY_MASK"
+     ]
+    },
+    {
+     "id": "HEADLESS_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HEADLESS_PERSONALITY"
+     ]
+    },
+    {
+     "id": "HELIX",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HELIX"
+     ]
+    },
+    {
+     "id": "HERMIT_CRAB_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HERMIT_CRAB_PERSONALITY"
+     ]
+    },
+    {
+     "id": "HOPE_OF_THE_RESISTANCE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "HOPE_OF_THE_RESISTANCE"
+     ]
+    },
+    {
+     "id": "ICE_CREAM_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ICE_CREAM_PERSONALITY"
+     ]
+    },
+    {
+     "id": "ICE_LOLLY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ICE_LOLLY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "IRON_BARDING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "IRON_BARDING"
+     ]
+    },
+    {
+     "id": "JASPER_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "JASPER_CRYSTAL"
+     ]
+    },
+    {
+     "id": "JUNGLE_HEART",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "JUNGLE_HEART"
+     ]
+    },
+    {
+     "id": "KILLER_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "KILLER_PERSONALITY"
+     ]
+    },
+    {
+     "id": "KLOONBOAT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "KLOONBOAT"
+     ]
+    },
+    {
+     "id": "LADY_BUG_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "LADY_BUG_PERSONALITY"
+     ]
+    },
+    {
+     "id": "LANTERN_OF_THE_DEAD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "LANTERN_OF_THE_DEAD"
+     ]
+    },
+    {
+     "id": "LOUDMOUTH_BASS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "LOUDMOUTH_BASS"
+     ]
+    },
+    {
+     "id": "MAGMA_BOW",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MAGMA_BOW"
+     ]
+    },
+    {
+     "id": "MAGMA_CUBE_HEAD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MAGMA_CUBE_HEAD"
+     ]
+    },
+    {
+     "id": "MAXOR_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MAXOR_THE_FISH"
+     ]
+    },
+    {
+     "id": "MELON_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MELON_PERSONALITY"
+     ]
+    },
+    {
+     "id": "MOB_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MOB_THE_FISH"
+     ]
+    },
+    {
+     "id": "MUMMY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MUMMY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "MYTH_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "MYTH_THE_FISH"
+     ]
+    },
+    {
+     "id": "NAME_TAG",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "NAME_TAG"
+     ]
+    },
+    {
+     "id": "NETHER_STAR",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "NETHER_STAR"
+     ]
+    },
+    {
+     "id": "NEW_YEAR_CAKE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "NEW_YEAR_CAKE"
+     ]
+    },
+    {
+     "id": "NOPE_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "NOPE_THE_FISH"
+     ]
+    },
+    {
+     "id": "ONYX_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ONYX_CRYSTAL"
+     ]
+    },
+    {
+     "id": "OOPS_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "OOPS_THE_FISH"
+     ]
+    },
+    {
+     "id": "OPAL_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "OPAL_CRYSTAL"
+     ]
+    },
+    {
+     "id": "PAINT_CARTRIDGE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PAINT_CARTRIDGE"
+     ]
+    },
+    {
+     "id": "PARTY_HAT_CRAB",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PARTY_HAT_CRAB"
+     ]
+    },
+    {
+     "id": "PARTY_HAT_CRAB_ANIMATED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PARTY_HAT_CRAB_ANIMATED"
+     ]
+    },
+    {
+     "id": "PARTY_HAT_SLOTH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PARTY_HAT_SLOTH"
+     ]
+    },
+    {
+     "id": "PARTY_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PARTY_THE_FISH"
+     ]
+    },
+    {
+     "id": "PENGUIN_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PENGUIN_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PERIDOT_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PERIDOT_CRYSTAL"
+     ]
+    },
+    {
+     "id": "PET_SKIN_BLACK_CAT_IVORY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_BLACK_CAT_IVORY"
+     ]
+    },
+    {
+     "id": "PET_SKIN_BLACK_CAT_ONYX",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_BLACK_CAT_ONYX"
+     ]
+    },
+    {
+     "id": "PET_SKIN_CHICKEN_BABY_CHICK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_CHICKEN_BABY_CHICK"
+     ]
+    },
+    {
+     "id": "PET_SKIN_DOLPHIN_SNUBNOSE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_DOLPHIN_SNUBNOSE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_DRAGON_NEON_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_DRAGON_NEON_BLUE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_DRAGON_NEON_PURPLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_DRAGON_NEON_PURPLE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_DRAGON_NEON_RED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_DRAGON_NEON_RED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_DRAGON_PASTEL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_DRAGON_PASTEL"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_BLUE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_GREEN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_MONOCHROME",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_MONOCHROME"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_ORANGE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_ORANGE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_PINK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_PINK"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_PURPLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_PURPLE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ELEPHANT_RED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ELEPHANT_RED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ENDERMAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ENDERMAN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ENDERMAN_SLAYER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ENDERMAN_SLAYER"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ENDERMITE_RADIANT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ENDERMITE_RADIANT"
+     ]
+    },
+    {
+     "id": "PET_SKIN_GUARDIAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_GUARDIAN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_HORSE_ZOMBIE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_HORSE_ZOMBIE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_JERRY_GREEN_ELF",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_JERRY_GREEN_ELF"
+     ]
+    },
+    {
+     "id": "PET_SKIN_JERRY_RED_ELF",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_JERRY_RED_ELF"
+     ]
+    },
+    {
+     "id": "PET_SKIN_MEGALODON_BABY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_MEGALODON_BABY"
+     ]
+    },
+    {
+     "id": "PET_SKIN_MEGALODON_BULLHEAD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_MEGALODON_BULLHEAD"
+     ]
+    },
+    {
+     "id": "PET_SKIN_MONKEY_GOLDEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_MONKEY_GOLDEN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_MONKEY_GORILLA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_MONKEY_GORILLA"
+     ]
+    },
+    {
+     "id": "PET_SKIN_MONKEY_SUNGLASSES",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_MONKEY_SUNGLASSES"
+     ]
+    },
+    {
+     "id": "PET_SKIN_RABBIT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_RABBIT"
+     ]
+    },
+    {
+     "id": "PET_SKIN_RABBIT_AQUAMARINE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_RABBIT_AQUAMARINE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_RABBIT_ROSE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_RABBIT_ROSE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_COOL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_COOL"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_DERP",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_DERP"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_EMBARRASSED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_EMBARRASSED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_LAUGH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_LAUGH"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_SMILE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_SMILE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_ROCK_THINKING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_ROCK_THINKING"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_AQUA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_AQUA"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_BLACK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_BLACK"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_BLUE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_BROWN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_BROWN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_GRAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_GRAY"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_GREEN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_LIGHT_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_LIGHT_BLUE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_LIGHT_GRAY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_LIGHT_GRAY"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_LIGHT_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_LIGHT_GREEN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_MAGENTA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_MAGENTA"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_NEON_BLUE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_NEON_BLUE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_NEON_GREEN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_NEON_GREEN"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_NEON_RED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_NEON_RED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_NEON_YELLOW",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_NEON_YELLOW"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_ORANGE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_ORANGE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_PINK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_PINK"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_PURPLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_PURPLE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_RED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_RED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_WHITE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_WHITE"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SHEEP_YELLOW",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SHEEP_YELLOW"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SILVERFISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SILVERFISH"
+     ]
+    },
+    {
+     "id": "PET_SKIN_SILVERFISH_FOSSILIZED",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_SILVERFISH_FOSSILIZED"
+     ]
+    },
+    {
+     "id": "PET_SKIN_TIGER_TWILIGHT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_TIGER_TWILIGHT"
+     ]
+    },
+    {
+     "id": "PET_SKIN_WHALE_ORCA",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_WHALE_ORCA"
+     ]
+    },
+    {
+     "id": "PET_SKIN_WITHER",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_WITHER"
+     ]
+    },
+    {
+     "id": "PET_SKIN_WOLF",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_WOLF"
+     ]
+    },
+    {
+     "id": "PET_SKIN_WOLF_HENZO_DOGGO",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_WOLF_HENZO_DOGGO"
+     ]
+    },
+    {
+     "id": "PET_SKIN_YETI_GROWN_UP",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PET_SKIN_YETI_GROWN_UP"
+     ]
+    },
+    {
+     "id": "PIG_MASK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PIG_MASK"
+     ]
+    },
+    {
+     "id": "PINK_BUNNY_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PINK_BUNNY_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PINK_DONUT_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PINK_DONUT_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PLASTIC_SHOVEL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PLASTIC_SHOVEL"
+     ]
+    },
+    {
+     "id": "POLAR_BEAR_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POLAR_BEAR_PERSONALITY"
+     ]
+    },
+    {
+     "id": "POLISHED_PEBBLE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POLISHED_PEBBLE"
+     ]
+    },
+    {
+     "id": "POTATO_BASKET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_BASKET"
+     ]
+    },
+    {
+     "id": "POTATO_CROWN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_CROWN"
+     ]
+    },
+    {
+     "id": "POTATO_RING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_RING"
+     ]
+    },
+    {
+     "id": "POTATO_SILVER_MEDAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_SILVER_MEDAL"
+     ]
+    },
+    {
+     "id": "POTATO_SPREADING",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_SPREADING"
+     ]
+    },
+    {
+     "id": "POTATO_TALISMAN",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "POTATO_TALISMAN"
+     ]
+    },
+    {
+     "id": "PRESENT_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PRESENT_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PRICELESS_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PRICELESS_THE_FISH"
+     ]
+    },
+    {
+     "id": "PROMISING_HOE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PROMISING_HOE"
+     ]
+    },
+    {
+     "id": "PUFFERFISH_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PUFFERFISH_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PUMPKIN_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PUMPKIN_PERSONALITY"
+     ]
+    },
+    {
+     "id": "PUZZLE_CUBE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "PUZZLE_CUBE"
+     ]
+    },
+    {
+     "id": "QUALITY_MAP",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "QUALITY_MAP"
+     ]
+    },
+    {
+     "id": "RABBIT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "RABBIT_THE_FISH"
+     ]
+    },
+    {
+     "id": "RECOMBOBULATOR_3000",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "RECOMBOBULATOR_3000"
+     ]
+    },
+    {
+     "id": "REINDEER_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "REINDEER_PERSONALITY"
+     ]
+    },
+    {
+     "id": "REVENGE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "REVENGE"
+     ]
+    },
+    {
+     "id": "RIBBIT_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "RIBBIT_THE_FISH"
+     ]
+    },
+    {
+     "id": "ROBOT_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ROBOT_PERSONALITY"
+     ]
+    },
+    {
+     "id": "ROCK_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ROCK_THE_FISH"
+     ]
+    },
+    {
+     "id": "RUBY_CRYSTAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "RUBY_CRYSTAL"
+     ]
+    },
+    {
+     "id": "SALMON_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SALMON_BOOTS"
+     ]
+    },
+    {
+     "id": "SALMON_CHESTPLATE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SALMON_CHESTPLATE"
+     ]
+    },
+    {
+     "id": "SALMON_HELMET",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SALMON_HELMET"
+     ]
+    },
+    {
+     "id": "SALMON_LEGGINGS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SALMON_LEGGINGS"
+     ]
+    },
+    {
+     "id": "SANDCASTLE_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SANDCASTLE_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SANTA_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SANTA_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SCARECROW_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SCARECROW_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SEAL_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SEAL_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SEA_LANTERN_HAT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SEA_LANTERN_HAT"
+     ]
+    },
+    {
+     "id": "SECRET_BINGO_CARD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SECRET_BINGO_CARD"
+     ]
+    },
+    {
+     "id": "SHARK_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SHARK_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SHINY_ORB",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SHINY_ORB"
+     ]
+    },
+    {
+     "id": "SHINY_RELIC",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SHINY_RELIC"
+     ]
+    },
+    {
+     "id": "SHINY_ROD",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SHINY_ROD"
+     ]
+    },
+    {
+     "id": "SHRIMP_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SHRIMP_THE_FISH"
+     ]
+    },
+    {
+     "id": "SINGING_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SINGING_FISH"
+     ]
+    },
+    {
+     "id": "SKELETON_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SKELETON_THE_FISH"
+     ]
+    },
+    {
+     "id": "SKULL_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SKULL_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SLOTH_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SLOTH_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SNOWFLAKE_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOWFLAKE_THE_FISH"
+     ]
+    },
+    {
+     "id": "SNOWMAN_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOWMAN_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SNOW_BELT",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOW_BELT"
+     ]
+    },
+    {
+     "id": "SNOW_CLOAK",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOW_CLOAK"
+     ]
+    },
+    {
+     "id": "SNOW_GLOVES",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOW_GLOVES"
+     ]
+    },
+    {
+     "id": "SNOW_NECKLACE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SNOW_NECKLACE"
+     ]
+    },
+    {
+     "id": "SPOOKY_DISC",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SPOOKY_DISC"
+     ]
+    },
+    {
+     "id": "SPOOKY_PIE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SPOOKY_PIE"
+     ]
+    },
+    {
+     "id": "SPOOK_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SPOOK_THE_FISH"
+     ]
+    },
+    {
+     "id": "SPRING_BOOTS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SPRING_BOOTS"
+     ]
+    },
+    {
+     "id": "STEW_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "STEW_THE_FISH"
+     ]
+    },
+    {
+     "id": "STOCK_OF_STONKS",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "STOCK_OF_STONKS"
+     ]
+    },
+    {
+     "id": "STORM_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "STORM_THE_FISH"
+     ]
+    },
+    {
+     "id": "SUMMONING_EYE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SUMMONING_EYE"
+     ]
+    },
+    {
+     "id": "SUN_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SUN_PERSONALITY"
+     ]
+    },
+    {
+     "id": "SUPER_COMPACTOR_3000",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SUPER_COMPACTOR_3000"
+     ]
+    },
+    {
+     "id": "SWAMP_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "SWAMP_THE_FISH"
+     ]
+    },
+    {
+     "id": "THE_ART_OF_PEACE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "THE_ART_OF_PEACE"
+     ]
+    },
+    {
+     "id": "THE_ART_OF_WAR",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "THE_ART_OF_WAR"
+     ]
+    },
+    {
+     "id": "THE_CAKE",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "THE_CAKE"
+     ]
+    },
+    {
+     "id": "TREE_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "TREE_THE_FISH"
+     ]
+    },
+    {
+     "id": "TROPICAL_BIRD_1_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "TROPICAL_BIRD_1_PERSONALITY"
+     ]
+    },
+    {
+     "id": "TROPICAL_BIRD_2_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "TROPICAL_BIRD_2_PERSONALITY"
+     ]
+    },
+    {
+     "id": "UNDEAD_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "UNDEAD_PERSONALITY"
+     ]
+    },
+    {
+     "id": "WAND_OF_RECALL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "WAND_OF_RECALL"
+     ]
+    },
+    {
+     "id": "WHITE_TIGER_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "WHITE_TIGER_PERSONALITY"
+     ]
+    },
+    {
+     "id": "WIKI_JOURNAL",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "WIKI_JOURNAL"
+     ]
+    },
+    {
+     "id": "WINTER_DISC",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "WINTER_DISC"
+     ]
+    },
+    {
+     "id": "WORM_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "WORM_THE_FISH"
+     ]
+    },
+    {
+     "id": "ZOMBIE_EYE_PERSONALITY",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ZOMBIE_EYE_PERSONALITY"
+     ]
+    },
+    {
+     "id": "ZOOP_THE_FISH",
+     "xp": 0,
+     "stage": "",
+     "items": [
+      "ZOOP_THE_FISH"
+     ]
+    }
+   ]
+  }
+ ]
+}

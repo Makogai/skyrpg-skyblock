@@ -44,6 +44,9 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.bestiary.BestiaryMenu> BESTIARY = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("bestiary"), new ExtendedMenuType<>(com.skyrpg.skyblock.bestiary.BestiaryMenu::new,
                     com.skyrpg.skyblock.bestiary.BestiaryMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.museum.MuseumMenu> MUSEUM = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("museum"), new ExtendedMenuType<>(com.skyrpg.skyblock.museum.MuseumMenu::new,
+                    com.skyrpg.skyblock.museum.MuseumMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.pet.PetsMenu> PETS = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("pets"), new ExtendedMenuType<>(com.skyrpg.skyblock.pet.PetsMenu::new, com.skyrpg.skyblock.pet.PetsMenu.View.CODEC));
     public static final MenuType<ItemWorkMenu> ANVIL = Registry.register(BuiltInRegistries.MENU, SkyRpgSkyblock.id("anvil"),

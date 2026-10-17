@@ -303,6 +303,11 @@ phase so the next session can pick up where this one stopped.
       (Hypixel's current reward numbers weren't in the data): +1 SkyBlock XP per family tier, a Milestone every 10 tiers
       for +2 Health (a stat source). `BestiaryMenu` + `BestiaryScreen` (`/bestiary`, `/be`, a `bestiary` action): islands,
       families with heads, tiers and bars, ??? until found. Not yet: per-family bonuses, Magic Find.
+- [x] **Museum**: `tools/skyblock/import_museum.py` (NEU museum.json: 973 donations in 8 categories, armor sets with their
+      pieces, SkyBlock XP, game stage, and the lower donation each higher one counts for) to `skyrpg/museum`. `Museum` +
+      `MuseumMenu` + `MuseumScreen` (`/museum`, a `museum` action): category tabs, ready-to-donate items first (gold),
+      donated (green), unknown (?); donating takes the item (or the whole set) for good, pays its SkyBlock XP and counts
+      its child chain. Not yet: borrowing back, milestones, the Curator and building.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
