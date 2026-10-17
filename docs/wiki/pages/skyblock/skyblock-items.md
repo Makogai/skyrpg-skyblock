@@ -67,6 +67,10 @@ These work now:
 
 Every other ability shows on its item but doesn't do anything yet.
 
+## The Booster Cookie
+
+Right-click a **Booster Cookie** to eat it: **4 days** of the **Cookie Buff**, counted in real time (each cookie adds 4 more days). While it lasts you get **+15 Magic Find** and **+5 Wisdom** in every skill, and you **keep your coins when you die** (normally a death costs half your purse). `/cookie` says how long it has left. The buff is per profile.
+
 ## Items stay items
 
 A SkyBlock item doesn't act like the vanilla item it's made from:

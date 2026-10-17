@@ -308,6 +308,10 @@ phase so the next session can pick up where this one stopped.
       `MuseumMenu` + `MuseumScreen` (`/museum`, a `museum` action): category tabs, ready-to-donate items first (gold),
       donated (green), unknown (?); donating takes the item (or the whole set) for good, pays its SkyBlock XP and counts
       its child chain. Not yet: borrowing back, milestones, the Curator and building.
+- [x] **Booster Cookie**: `BoosterCookie` (skyblock): eat one (right-click, early UseItem/UseBlock phases) for 4 real-time
+      days of the Cookie Buff (stacking), per profile: +15 Magic Find and +5 Wisdom in every skill (a stat source), coins
+      kept on death (`Deaths`); `/cookie`. Decided: no /ah or /bz gating (there are no Auction/Bazaar NPCs yet to fall back
+      on). Not yet: Bits and the Community Shop.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line
