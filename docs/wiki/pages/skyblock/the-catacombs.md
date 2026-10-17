@@ -51,7 +51,17 @@ The sidebar shows the run: time, rooms cleared, secrets found, your keys, and yo
 
 ### The bosses
 
-**Bonzo** (Floor I, 250,000 health) throws balloons that burst around you and calls his undead. When he falls he gets back up once ("Oh, I'm not done yet!") with all his health, faster. Beat him again to win. Floors II to VII have their real bosses' health but Bonzo's fight for now.
+Each floor ends with its boss (a health bar shows at the top):
+
+| Floor | Boss | Health | How the fight goes |
+| --- | --- | --- | --- |
+| I | Bonzo | 250,000 | Throws balloons that burst around you and calls undead. When he falls he gets back up once ("Oh, I'm not done yet!"), faster. |
+| II | Scarf | 1,000,000 | Shielded while his Undead Warrior, Archer, Priest and Mage live. Then he fights, blinking around, burning his target and calling archers. |
+| III | The Professor | 3,000,000 | Shielded behind four Guardians. At half health he calls two more and speeds up. |
+| IV | Thorn | 4 hits | A floating spirit only the **Spirit Bow** can hurt. Spirit Wolves and a **Spirit Bear** come; whoever kills the bear gets a Spirit Bow with one arrow. Four hits and he's done. |
+| V | Livid | 7,000,000 | Nine Livids in nine colours. The real one's colour is the wool block in the middle; hitting a fake hurts you. |
+| VI | Sadan | 40,000,000 | Survive his Terracotta army for a minute, then beat his four Giants (Diamond Giant, Bigfoot, L.A.S.R., Jolly Pink Giant, 25,000,000 each), then Sadan himself. Giants stomp the ground around them. |
+| VII | Maxor, Storm, Goldor, Necron | 100M, 400M, 750M, 1B | **Maxor** is shielded until both **Energy Crystals** are carried to their pads (walk into a crystal, right-click a pad). **Storm** only takes damage for 10 seconds after someone pulls down a **Pillar**. **Goldor** hurts everyone every few seconds until all four **Terminals** are done. **Necron** can always be hurt, and blasts everything around him at 80% and 5%. |
 
 ## Classes
 
@@ -89,11 +99,11 @@ At the end you get **Catacombs XP** and **class XP** (the class you played gets 
 | Obsidian | from 250,000 coins | rank S, Floor III+ |
 | Bedrock | 2,000,000 coins | rank S+, Floor V+ |
 
-Floor I's chests hold Undead Essence and Bonzo Fragments, sometimes a Hot Potato Book, Red Nose, Balloon Snake, Bonzo's Mask, Recombobulator 3000, Fuming Potato Book, Ultimate Bank I, Bonzo's Staff, Kismet Feather or Dungeon Chest Key. A better rank makes the good ones likelier. Essence goes to `/essence`.
+Every chest holds Undead Essence (Wither Essence too from Floor III), and each floor has its own drops: Floor I Bonzo Fragments, the Red Nose, Balloon Snake, Bonzo's Mask and Staff; Floor II Scarf Fragments, Scarf's Studies and Thesis, the Adaptive Belt, Stone Blade and Red Scarf; Floor III the Adaptive armour, Suspicious Vial and Scarf's Grimoire; Floor IV Thorn Fragments, Spirit Wing, Bone and Decoy, the Spirit Bow and Sword, Thorn's Boots and Ultimate Rend; Floor V Livid Fragments, the Dark Orb, Shadow Assassin armour, Lethality VI, the Livid Dagger, AOTE Stone, Shadow Fury and Last Breath; Floor VI Giant Fragments, Sadan's Brooch, the Fel Skull, Soulweaver Gloves, Necromancer Sword and Lord Chestplate, Summoning Ring, Giant's Sword and Precursor Eye; Floor VII Wither armour, the Wither Cloak, Blood and Catalyst, Precursor Gear, Auto Recombobulator, Ultimate One For All, the three scrolls, Necron's Handle and the Lords' fish. Any floor can also give a Hot Potato or Fuming Potato Book, a Recombobulator 3000, a Kismet Feather or a Dungeon Chest Key. Better chests and a better rank make the rare ones likelier. Essence goes to `/essence`.
 
 ## The Catacombs level
 
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, Floors II-VII's own bosses, Master Mode, dungeon item stats, stars and essence shops.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, boss arenas, Master Mode, dungeon item stats, stars and essence shops.

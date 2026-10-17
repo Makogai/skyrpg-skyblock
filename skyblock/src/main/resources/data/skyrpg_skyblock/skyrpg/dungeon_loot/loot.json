@@ -1,0 +1,1307 @@
+{
+ "floors": {
+  "0": [
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "1": [
+   {
+    "item": "BONZO_FRAGMENT",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "RED_NOSE",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "BALLOON_SNAKE",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "BONZO_MASK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book:ultimate_bank:1",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "BONZO_STAFF",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "2": [
+   {
+    "item": "SCARF_FRAGMENT",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "SCARF_STUDIES",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ADAPTIVE_BELT",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "STONE_BLADE",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RED_SCARF",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book:ultimate_bank:1",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SCARF_THESIS",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "3": [
+   {
+    "item": "ADAPTIVE_HELMET",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ADAPTIVE_BOOTS",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SUSPICIOUS_VIAL",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ADAPTIVE_CHESTPLATE",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ADAPTIVE_LEGGINGS",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SCARF_GRIMOIRE",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "4": [
+   {
+    "item": "THORN_FRAGMENT",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "SPIRIT_WING",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SPIRIT_BONE",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SPIRIT_DECOY",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ITEM_SPIRIT_BOW",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SPIRIT_SWORD",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "THORNS_BOOTS",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book:ultimate_rend:1",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "5": [
+   {
+    "item": "LIVID_FRAGMENT",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "DARK_ORB",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SHADOW_ASSASSIN_HELMET",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SHADOW_ASSASSIN_CHESTPLATE",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book:lethality:6",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "LIVID_DAGGER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "AOTE_STONE",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SHADOW_FURY",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "LAST_BREATH",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "6": [
+   {
+    "item": "GIANT_FRAGMENT_DIAMOND",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "GIANT_FRAGMENT_LASER",
+    "chances": [
+     0.3,
+     0.5,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SADAN_BROOCH",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FEL_SKULL",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SOULWEAVER_GLOVES",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "NECROMANCER_SWORD",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SUMMONING_RING",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "NECROMANCER_LORD_CHESTPLATE",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "GIANTS_SWORD",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "PRECURSOR_EYE",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "7": [
+   {
+    "item": "WITHER_BLOOD",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_CLOAK",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_CATALYST",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "PRECURSOR_GEAR",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_HELMET",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_BOOTS",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_LEGGINGS",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_CHESTPLATE",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "AUTO_RECOMBOBULATOR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book:ultimate_one_for_all:1",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "IMPLOSION_SCROLL",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SHADOW_WARP_SCROLL",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "WITHER_SHIELD_SCROLL",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "NECRON_HANDLE",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "STORM_THE_FISH",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "MAXOR_THE_FISH",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "GOLDOR_THE_FISH",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "HOT_POTATO_BOOK",
+    "chances": [
+     0.08,
+     0.15,
+     0.2,
+     0.25,
+     0.3,
+     0.35
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "RECOMBOBULATOR_3000",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FUMING_POTATO_BOOK",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "KISMET_FEATHER",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DUNGEON_CHEST_KEY",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ]
+ }
+}

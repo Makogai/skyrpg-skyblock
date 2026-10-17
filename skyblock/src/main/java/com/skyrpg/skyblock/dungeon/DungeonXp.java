@@ -76,13 +76,18 @@ public final class DungeonXp {
 
     /** Gives XP; a level-up is announced (the Catacombs' with its SkyBlock XP: 20 a level, 40 from level 40). */
     public static void give(ServerPlayer player, String key, double amount) {
+        give(player, key, amount, false);
+    }
+
+    /** Gives XP; {@code quiet}: no level-up message (the classes you didn't play get a quarter, silently). */
+    public static void give(ServerPlayer player, String key, double amount, boolean quiet) {
         Map<String, Double> all = new HashMap<>(player.getAttachedOrElse(XP, Map.of()));
         double before = all.getOrDefault(key, 0.0);
         all.put(key, before + amount);
         player.setAttached(XP, Map.copyOf(all));
         int from = levelFor(before);
         int to = levelFor(before + amount);
-        for (int level = from + 1; level <= to; level++) {
+        for (int level = from + 1; level <= to && !quiet; level++) {
             String name = key.equals(CATACOMBS) ? "The Catacombs" : title(key);
             Notice.Panel panel = Notice.of(Notice.Kind.DUNGEON).tag("LEVEL UP").panel();
             if (key.equals(CATACOMBS)) {

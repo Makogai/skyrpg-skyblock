@@ -76,7 +76,7 @@ final class Rewards {
             // XP after the score, so level-ups show under it.
             DungeonXp.give(player, DungeonXp.CATACOMBS, xp);
             for (String c : DungeonXp.CLASSES) {
-                DungeonXp.give(player, c, c.equals(picked) ? xp : xp * 0.25);
+                DungeonXp.give(player, c, c.equals(picked) ? xp : xp * 0.25, !c.equals(picked));
             }
             chests.put(player.getUUID(), roll(run, score.rank(), player.getRandom()));
         }
@@ -121,19 +121,33 @@ final class Rewards {
     private record Entry(String item, double[] chances, int min, int max) {
     }
 
-    /** Floor I's table (Bonzo); later floors use it until theirs come. */
-    private static final List<Entry> FLOOR_ONE = List.of(
-            new Entry("BONZO_FRAGMENT", new double[] {0.3, 0.5, 0.7, 0.8, 0.9, 1}, 1, 2),
-            new Entry("HOT_POTATO_BOOK", new double[] {0.08, 0.15, 0.2, 0.25, 0.3, 0.35}, 1, 1),
-            new Entry("RED_NOSE", new double[] {0, 0.05, 0.08, 0.1, 0.12, 0.15}, 1, 1),
-            new Entry("BALLOON_SNAKE", new double[] {0, 0.04, 0.06, 0.08, 0.1, 0.12}, 1, 1),
-            new Entry("BONZO_MASK", new double[] {0, 0.015, 0.03, 0.04, 0.05, 0.06}, 1, 1),
-            new Entry("RECOMBOBULATOR_3000", new double[] {0, 0.015, 0.03, 0.04, 0.05, 0.06}, 1, 1),
-            new Entry("FUMING_POTATO_BOOK", new double[] {0, 0.01, 0.02, 0.03, 0.04, 0.05}, 1, 1),
-            new Entry("book:ultimate_bank:1", new double[] {0, 0.01, 0.02, 0.03, 0.04, 0.05}, 1, 1),
-            new Entry("BONZO_STAFF", new double[] {0, 0.01, 0.02, 0.03, 0.04, 0.05}, 1, 1),
-            new Entry("KISMET_FEATHER", new double[] {0, 0.005, 0.01, 0.015, 0.02, 0.03}, 1, 1),
-            new Entry("DUNGEON_CHEST_KEY", new double[] {0, 0.005, 0.01, 0.015, 0.02, 0.03}, 1, 1));
+    /** Each floor's loot ({@code skyrpg/dungeon_loot/loot.json}, written by {@code tools/skyblock/dungeon_loot.py}). */
+    private static Map<Integer, List<Entry>> loot = Map.of();
+
+    static void init() {
+        com.skyrpg.core.data.JsonDataLoader.register(com.skyrpg.skyblock.SkyRpgSkyblock.id("dungeon_loot"), "skyrpg/dungeon_loot", files -> {
+            Map<Integer, List<Entry>> loaded = new HashMap<>();
+            for (com.google.gson.JsonElement file : files.values()) {
+                if (!file.getAsJsonObject().has("floors")) {
+                    continue;
+                }
+                file.getAsJsonObject().getAsJsonObject("floors").entrySet().forEach(e -> {
+                    List<Entry> entries = new ArrayList<>();
+                    for (com.google.gson.JsonElement el : e.getValue().getAsJsonArray()) {
+                        com.google.gson.JsonObject o = el.getAsJsonObject();
+                        var arr = o.getAsJsonArray("chances");
+                        double[] chances = new double[6];
+                        for (int i = 0; i < Math.min(6, arr.size()); i++) {
+                            chances[i] = arr.get(i).getAsDouble();
+                        }
+                        entries.add(new Entry(o.get("item").getAsString(), chances, o.get("min").getAsInt(), o.get("max").getAsInt()));
+                    }
+                    loaded.put(Integer.parseInt(e.getKey()), List.copyOf(entries));
+                });
+            }
+            loot = Map.copyOf(loaded);
+        });
+    }
 
     private static List<Chest> roll(Run run, String rank, RandomSource random) {
         double luck = switch (rank) {
@@ -162,7 +176,7 @@ final class Rewards {
             if (run.floor.number() >= 3 && tier >= 1) {
                 chest.essence.put("WITHER", base / 2 + random.nextInt(base / 2 + 1));
             }
-            for (Entry entry : FLOOR_ONE) {
+            for (Entry entry : loot.getOrDefault(run.floor.number(), loot.getOrDefault(1, List.of()))) {
                 double chance = entry.chances()[tier] * (tier == 0 ? 1 : luck);
                 if (random.nextDouble() < chance) {
                     ItemStack stack = stack(entry.item(), entry.min() + random.nextInt(entry.max() - entry.min() + 1));

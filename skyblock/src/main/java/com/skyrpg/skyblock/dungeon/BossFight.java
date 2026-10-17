@@ -3,30 +3,29 @@ package com.skyrpg.skyblock.dungeon;
 import com.skyrpg.core.stats.StatTypes;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.skyblock.zone.Zones;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.BossEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.EntityTypes;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.monster.zombie.Zombie;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,29 +34,45 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 import net.minecraft.world.phys.Vec3;
 
 /**
- * A floor's boss, in its arena beside the map ({@code structure/catacombs/boss/<boss>.nbt}, or a plain arena until one is
- * built). Floor I is Bonzo: 250,000 health, throws balloons at you and calls his undead; when he falls he gets back up
- * once ("Oh, I'm not done yet!") with his health back and faster. Floors without their own fight yet use the same one
- * with Hypixel's boss health for that floor.
+ * A floor's boss fight, in its arena beside the map ({@code structure/catacombs/boss/<boss>.nbt}, or a plain arena until
+ * one is built). Each floor's fight is in {@link Bosses}; this is what they share: the arena, spawning the boss and its
+ * minions with Hypixel's health, a boss bar, speaking, hurting players, and the win.
  */
-final class BossFight {
-    static final int ARENA = 41;
-    private static final double[] HEALTH = {0, 250_000, 1_000_000, 3_000_000, 4_000_000, 7_000_000, 40_000_000, 1_000_000_000};
-    private static final String[] NAMES = {"The Watcher", "Bonzo", "Scarf", "The Professor", "Thorn", "Livid", "Sadan", "Necron"};
+abstract class BossFight {
+    static final int ARENA = 61;
+    static final int HEIGHT = 30;
 
-    private final Run run;
-    private Mob boss;
-    private int phase = 1;
-    private long spawnAt;
-    private long nextBalloon;
-    private long nextMinions;
-    private final Set<UUID> minions = new HashSet<>();
+    final Run run;
+    /** The boss mob the bar follows (null between phases). */
+    Mob boss;
+    final Set<UUID> minions = new HashSet<>();
+    private ServerBossEvent bar;
+    private long beginAt;
+    private boolean begun;
+    boolean won;
 
-    private BossFight(Run run) {
+    BossFight(Run run) {
         this.run = run;
     }
 
-    /** The arena: its template if there is one, else a plain stone-brick hall. */
+    static BossFight start(Run run) {
+        BossFight fight = switch (run.floor.number()) {
+            case 2 -> new Bosses.Scarf(run);
+            case 3 -> new Bosses.Professor(run);
+            case 4 -> new Bosses.Thorn(run);
+            case 5 -> new Bosses.Livid(run);
+            case 6 -> new Bosses.Sadan(run);
+            case 7 -> new Bosses.Necron(run);
+            default -> new Bosses.Bonzo(run);
+        };
+        fight.beginAt = run.level.getGameTime() + 100;
+        fight.intro();
+        return fight;
+    }
+
+    // ---------------------------------------------------------------- the arena
+
+    /** The arena: its template if there is one, else a plain hall of blackstone. */
     static void buildArena(Run run) {
         BlockPos o = run.bossOrigin;
         for (int cx = o.getX() >> 4; cx <= (o.getX() + ARENA) >> 4; cx++) {
@@ -73,12 +88,12 @@ final class BossFight {
         }
         for (int x = 0; x < ARENA; x++) {
             for (int z = 0; z < ARENA; z++) {
-                for (int y = 0; y < 24; y++) {
+                for (int y = 0; y < HEIGHT; y++) {
                     boolean edge = x == 0 || z == 0 || x == ARENA - 1 || z == ARENA - 1;
                     BlockState state = y == 0 ? Blocks.BEDROCK.defaultBlockState()
                             : y <= Run.FLOOR ? ((x + z) % 2 == 0 ? Blocks.POLISHED_BLACKSTONE_BRICKS : Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS).defaultBlockState()
-                            : edge || y == 23 ? Blocks.STONE_BRICKS.defaultBlockState()
-                            : y == 22 && x % 6 == 3 && z % 6 == 3 ? Blocks.GLOWSTONE.defaultBlockState() : Blocks.AIR.defaultBlockState();
+                            : edge || y == HEIGHT - 1 ? Blocks.STONE_BRICKS.defaultBlockState()
+                            : y == HEIGHT - 2 && x % 6 == 3 && z % 6 == 3 ? Blocks.GLOWSTONE.defaultBlockState() : Blocks.AIR.defaultBlockState();
                     run.level.setBlock(o.offset(x, y, z), state, Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
                 }
             }
@@ -93,12 +108,9 @@ final class BossFight {
         return Vec3.atBottomCenterOf(run.bossOrigin.offset(ARENA / 2, Run.FLOOR + 1, ARENA / 2));
     }
 
-    static BossFight start(Run run) {
-        BossFight fight = new BossFight(run);
-        fight.spawnAt = run.level.getGameTime() + 100;
-        String name = NAMES[Math.min(run.floor.number(), NAMES.length - 1)];
-        fight.say(name, run.floor.number() == 1 ? "Gratz for making it this far, but I'm basically unbeatable." : "So you made it this far.");
-        return fight;
+    /** A spot in the arena: dx/dz blocks from the middle. */
+    Vec3 spot(double dx, double dz) {
+        return center().add(dx, 0, dz);
     }
 
     void teleportIn(ServerPlayer player) {
@@ -108,118 +120,191 @@ final class BossFight {
         player.resetFallDistance();
     }
 
-    private void say(String who, String text) {
-        run.broadcast(Component.literal("[BOSS] " + who).withStyle(ChatFormatting.RED).append(Component.literal(": " + text).withStyle(ChatFormatting.WHITE)));
+    // ---------------------------------------------------------------- the fight
+
+    abstract String name();
+
+    /** What the boss says when the party arrives. */
+    abstract void intro();
+
+    /** The fight starts (5 seconds after arriving). */
+    abstract void begin();
+
+    /** Every tick of the fight. */
+    abstract void fight(long now);
+
+    /** A mob of this run died (minions, phases). */
+    void died(LivingEntity entity) {
     }
 
-    private String name() {
-        return NAMES[Math.min(run.floor.number(), NAMES.length - 1)];
+    /** A right-click on one of the fight's parts (true when it was one). */
+    boolean useEntity(ServerPlayer player, Entity entity) {
+        return false;
+    }
+
+    /** Whether a hit on this entity counts (false: it's shielded). */
+    boolean allowDamage(LivingEntity entity, DamageSource source) {
+        return true;
+    }
+
+    /** Whether this entity may die (false keeps it alive, for a phase change). */
+    boolean allowDeath(LivingEntity entity) {
+        return true;
     }
 
     void tick(long now) {
-        if (boss == null) {
-            if (now >= spawnAt) {
-                spawnBoss();
-            }
+        if (won) {
             return;
         }
-        if (!boss.isAlive()) {
+        if (!begun) {
+            if (now >= beginAt) {
+                begun = true;
+                begin();
+            }
             return;
         }
         minions.removeIf(id -> {
             Entity e = run.level.getEntity(id);
             return e == null || !e.isAlive();
         });
-        List<ServerPlayer> targets = run.online().stream().filter(p -> !run.ghosts.contains(p.getUUID())).toList();
-        if (targets.isEmpty()) {
-            return;
-        }
-        if (boss.getTarget() == null || !boss.getTarget().isAlive()) {
-            boss.setTarget(targets.get(run.random.nextInt(targets.size())));
-        }
-        // Balloons: one at a random player, popping for a hit of the boss's damage nearby.
-        if (now >= nextBalloon) {
-            nextBalloon = now + (phase == 1 ? 120 : 70);
-            ServerPlayer target = targets.get(run.random.nextInt(targets.size()));
-            Vec3 at = target.position();
-            run.level.sendParticles(ParticleTypes.EXPLOSION, at.x, at.y + 1, at.z, 3, 0.8, 0.4, 0.8, 0);
-            for (ServerPlayer p : targets) {
-                if (p.distanceToSqr(at) < 9) {
-                    double damage = boss.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE) * 1.5;
-                    p.hurtServer(run.level, run.level.damageSources().mobAttack(boss), (float) damage);
-                }
-            }
-            Msg.playSound(target, SoundEvents.FIREWORK_ROCKET_BLAST, 1.0f, 1.2f);
-        }
-        if (now >= nextMinions && minions.size() < 4) {
-            nextMinions = now + 200;
-            for (int i = 0; i < 2; i++) {
-                Vec3 at = center().add(run.random.nextInt(11) - 5, 0, run.random.nextInt(11) - 5);
-                Mob minion = DungeonMobs.spawn(run.level, at, "zombie", false, run.floor, run.tag);
-                if (minion != null) {
-                    minions.add(minion.getUUID());
-                }
-            }
-        }
+        updateBar();
+        fight(now);
     }
 
-    private void spawnBoss() {
-        Zombie zombie = EntityTypes.ZOMBIE.create(run.level, EntitySpawnReason.EVENT);
-        if (zombie == null) {
-            return;
+    // ---------------------------------------------------------------- helpers
+
+    void say(String who, String text) {
+        run.broadcast(Component.literal("[BOSS] " + who).withStyle(ChatFormatting.RED).append(Component.literal(": " + text).withStyle(ChatFormatting.WHITE)));
+    }
+
+    List<ServerPlayer> targets() {
+        return run.online().stream().filter(p -> !run.ghosts.contains(p.getUUID())).toList();
+    }
+
+    ServerPlayer randomTarget() {
+        List<ServerPlayer> targets = targets();
+        return targets.isEmpty() ? null : targets.get(run.random.nextInt(targets.size()));
+    }
+
+    /** A boss or minion: the entity, Hypixel's name, health and damage, tagged for the run. */
+    <T extends Mob> T spawn(EntityType<T> type, Vec3 at, String name, double health, double damage, int level) {
+        T mob = type.create(run.level, EntitySpawnReason.EVENT);
+        if (mob == null) {
+            return null;
         }
-        Vec3 at = center().add(0, 0, -10);
-        zombie.snapTo(at.x, at.y, at.z, 0, 0);
-        double health = HEALTH[Math.min(run.floor.number(), HEALTH.length - 1)];
-        double damage = 400 * Math.pow(30, run.floor.strength());
-        Zones.dressAs(zombie, name(), 50 + run.floor.number() * 50, health, damage, 0);
-        zombie.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BLAZE_ROD));
-        ItemStack coat = new ItemStack(Items.LEATHER_CHESTPLATE);
-        coat.set(DataComponents.DYED_COLOR, new DyedItemColor(0xB02E26));
-        zombie.setItemSlot(EquipmentSlot.CHEST, coat);
-        zombie.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.CARVED_PUMPKIN));
+        mob.snapTo(at.x, at.y, at.z, run.random.nextFloat() * 360, 0);
+        Zones.dressAs(mob, name, level, health, damage, 0);
         for (EquipmentSlot slot : EquipmentSlot.values()) {
-            zombie.setDropChance(slot, 0);
+            mob.setDropChance(slot, 0);
         }
-        zombie.setPersistenceRequired();
-        zombie.addTag(DungeonMobs.TAG);
-        zombie.addTag(run.tag);
-        zombie.addTag(Catacombs.BOSS);
-        zombie.addTag(Zones.FIGHTABLE_TAG);
-        run.level.addFreshEntity(zombie);
-        boss = zombie;
-        nextBalloon = run.level.getGameTime() + 80;
-        nextMinions = run.level.getGameTime() + 60;
-        run.level.sendParticles(ParticleTypes.LARGE_SMOKE, at.x, at.y + 1, at.z, 40, 0.5, 1, 0.5, 0.05);
-        for (ServerPlayer p : run.online()) {
-            Msg.playSound(p, SoundEvents.WITHER_SPAWN, 0.6f, 1.4f);
+        mob.setPersistenceRequired();
+        mob.addTag(DungeonMobs.TAG);
+        mob.addTag(run.tag);
+        mob.addTag(Zones.FIGHTABLE_TAG);
+        run.level.addFreshEntity(mob);
+        run.level.sendParticles(ParticleTypes.LARGE_SMOKE, at.x, at.y + 1, at.z, 30, 0.5, 1, 0.5, 0.05);
+        return mob;
+    }
+
+    <T extends Mob> T spawnBoss(EntityType<T> type, Vec3 at, String name, double health, double damage) {
+        T mob = spawn(type, at, name, health, damage, 100 + run.floor.number() * 80);
+        if (mob != null) {
+            mob.addTag(Catacombs.BOSS);
+            boss = mob;
+            for (ServerPlayer p : run.online()) {
+                Msg.playSound(p, SoundEvents.WITHER_SPAWN, 0.5f, 1.4f);
+            }
+        }
+        return mob;
+    }
+
+    Mob minion(EntityType<? extends Mob> type, Vec3 at, String name, double health, double damage) {
+        Mob mob = spawn(type, at, name, health, damage, 50 + run.floor.number() * 40);
+        if (mob != null) {
+            minions.add(mob.getUUID());
+            if (randomTarget() instanceof ServerPlayer target) {
+                mob.setTarget(target);
+            }
+        }
+        return mob;
+    }
+
+    /** A hit of the boss's damage times {@code times} on every player within {@code radius} of a spot. */
+    void hitAround(Vec3 at, double radius, double times) {
+        if (boss == null) {
+            return;
+        }
+        double damage = boss.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE) * times;
+        for (ServerPlayer p : targets()) {
+            if (p.position().distanceTo(at) <= radius) {
+                p.hurtServer(run.level, run.level.damageSources().mobAttack(boss), (float) damage);
+            }
         }
     }
 
-    /** The boss would die: the first time (Floor I and the stand-ins) he gets back up. False keeps him alive. */
-    boolean allowDeath(LivingEntity entity) {
-        if (entity != boss) {
-            return true;
-        }
-        if (phase == 1) {
-            phase = 2;
-            entity.setHealth(entity.getMaxHealth());
-            entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 20 * 600, 1, false, false));
-            entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20 * 600, 0, false, false));
-            say(name(), run.floor.number() == 1 ? "Oh, I'm not done yet!" : "That was only the beginning.");
-            for (ServerPlayer p : run.online()) {
-                Msg.playSound(p, SoundEvents.ZOMBIE_VILLAGER_CURE, 0.8f, 1.2f);
+    /** The floor's boss damage (Hypixel's bosses hit about 400 on Floor I, many thousands by Floor VII). */
+    double bossDamage() {
+        return 400 * Math.pow(30, run.floor.strength());
+    }
+
+    void stack(Mob mob, EquipmentSlot slot, ItemStack stack) {
+        mob.setItemSlot(slot, stack);
+    }
+
+    private void updateBar() {
+        if (boss == null || !boss.isAlive() || boss instanceof WitherBoss) {
+            if (bar != null) {
+                bar.setVisible(false);
             }
-            return false;
+            return;
         }
-        say(name(), run.floor.number() == 1 ? "Alright, maybe I'm just weak after all.." : "Impossible...");
-        minions.forEach(id -> {
+        if (bar == null) {
+            bar = new ServerBossEvent(UUID.randomUUID(), boss.getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
+        }
+        bar.setVisible(true);
+        bar.setName(Component.literal(boss.getCustomName() == null ? name() : boss.getCustomName().getString()).withStyle(ChatFormatting.RED));
+        bar.setProgress(Math.max(0, Math.min(1, boss.getHealth() / boss.getMaxHealth())));
+        List<ServerPlayer> online = run.online();
+        for (ServerPlayer p : new ArrayList<>(bar.getPlayers())) {
+            if (!online.contains(p)) {
+                bar.removePlayer(p);
+            }
+        }
+        for (ServerPlayer p : online) {
+            if (!bar.getPlayers().contains(p)) {
+                bar.addPlayer(p);
+            }
+        }
+    }
+
+    /** The fight is won: the bar goes, the minions go, the run ends. */
+    void win(String line) {
+        if (won) {
+            return;
+        }
+        won = true;
+        if (line != null) {
+            say(name(), line);
+        }
+        if (bar != null) {
+            bar.removeAllPlayers();
+        }
+        for (UUID id : minions) {
             Entity e = run.level.getEntity(id);
             if (e != null) {
                 e.discard();
             }
-        });
+        }
         run.level.getServer().execute(run::finish);
-        return true;
+    }
+
+    void close() {
+        if (bar != null) {
+            bar.removeAllPlayers();
+        }
+    }
+
+    static double scale() {
+        return StatTypes.HEALTH_SCALE;
     }
 }

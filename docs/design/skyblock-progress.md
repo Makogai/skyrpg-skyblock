@@ -525,6 +525,19 @@ phase so the next session can pick up where this one stopped.
       Decided: our numbers and cooldowns (Hypixel's class pages 404'd); drop = ability, sneak + drop = ultimate.
       Not yet: ghost abilities, Hypixel's full passive lists (Renew, Orbies, Bloodlust, Doubleshoot...), class milestones.
 
+- [x] **Every floor's boss and loot** (`dungeon/BossFight` base: arena, spawning with Hypixel health, a boss bar, hits around
+      a spot, phases via allowDamage/allowDeath/died/useEntity hooks; `dungeon/Bosses`): Bonzo (balloons, undead, gets
+      back up), Scarf (shielded until his 4 undead die; blinks, burns, calls archers), The Professor (shielded behind 4
+      Guardians; at half health 2 more), Thorn (a NoAI ghast hurt only by a Spirit Bow arrow, given by killing a Spirit
+      Bear; 4 hits), Livid (9 coloured Livids, the real one's colour is the wool in the middle, hitting fakes hurts you),
+      Sadan (60 s of Terracottas, 4 Giants of 25M that stomp, then Sadan 40M), Floor VII (Maxor shielded until both
+      Energy Crystals reach their pads, Storm hurt for 10 s after a Pillar, Goldor's tick until 4 Terminals, Necron with
+      frenzies at 80% and 5%; NoAI withers, their own bars). Loot by floor: `tools/skyblock/dungeon_loot.py` writes
+      `skyrpg/dungeon_loot/loot.json` (Hypixel's drops from the RNG meter pools, our chances by rarity band and chest
+      tier). Classes you didn't play get their quarter XP quietly. `/sbdungeon boss <player>` jumps to the boss.
+      Decided: simplified mechanics (no terminals' mini-games, no pillars falling, no Livid's abilities, Giants move by
+      stomping hops); all bosses fight in a plain arena until their templates exist.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

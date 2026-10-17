@@ -446,6 +446,9 @@ final class Run {
                 state.puzzle.died(entity, killer);
             }
         }
+        if (boss != null && entity instanceof net.minecraft.world.entity.LivingEntity living) {
+            boss.died(living);
+        }
         for (RoomState state : rooms) {
             if (state.stars.remove(id) && state.stars.isEmpty() && !state.cleared) {
                 clear(state);

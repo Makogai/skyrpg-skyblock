@@ -76,6 +76,7 @@ public final class Catacombs {
     public static void init() {
         DungeonXp.init();
         Classes.init();
+        Rewards.init();
         ServerLifecycleEvents.SERVER_STARTED.register(RoomLibrary::load);
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, ok) -> RoomLibrary.load(server));
         ServerLifecycleEvents.SERVER_STOPPING.register(Catacombs::stopAll);
@@ -127,6 +128,9 @@ public final class Catacombs {
                     return InteractionResult.SUCCESS;
                 }
             }
+            if (run.boss != null && run.boss.useEntity(server, entity)) {
+                return InteractionResult.SUCCESS;
+            }
             if (entity.entityTags().contains(BOSS_PORTAL)) {
                 run.enterBoss();
                 return InteractionResult.SUCCESS;
@@ -147,6 +151,14 @@ public final class Catacombs {
             if (run != null) {
                 run.mobDied(entity, source.getEntity() instanceof ServerPlayer killer ? killer : null);
             }
+        });
+        // A boss's shields and phases.
+        ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
+            if (!entity.level().dimension().equals(LEVEL) || entity instanceof ServerPlayer) {
+                return true;
+            }
+            Run run = runOf(entity);
+            return run == null || run.boss == null || run.boss.allowDamage(entity, source);
         });
         ServerLivingEntityEvents.ALLOW_DEATH.register((entity, source, amount) -> {
             if (!entity.level().dimension().equals(LEVEL)) {
@@ -206,6 +218,15 @@ public final class Catacombs {
                 .then(Commands.literal("menu").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                         .then(Commands.argument("player", EntityArgument.player()).executes(ctx -> {
                             DungeonMenu.open(EntityArgument.getPlayer(ctx, "player"));
+                            return 1;
+                        })))
+                .then(Commands.literal("boss").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+                        .then(Commands.argument("player", EntityArgument.player()).executes(ctx -> {
+                            Run run = BY_PLAYER.get(EntityArgument.getPlayer(ctx, "player").getUUID());
+                            if (run == null || run.phase == Run.Phase.BUILDING) {
+                                return 0;
+                            }
+                            run.enterBoss();
                             return 1;
                         })))
                 .then(Commands.literal("debug").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
@@ -503,6 +524,9 @@ public final class Catacombs {
     }
 
     private static void close(Run run) {
+        if (run.boss != null) {
+            run.boss.close();
+        }
         RUNS.remove(run.slot);
         BY_PLAYER.values().removeIf(r -> r == run);
         Rewards.CHESTS_BY_RUN.remove(run.id);
