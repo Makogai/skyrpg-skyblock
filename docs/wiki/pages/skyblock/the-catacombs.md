@@ -63,6 +63,16 @@ Each floor ends with its boss (a health bar shows at the top):
 | VI | Sadan | 40,000,000 | Survive his Terracotta army for a minute, then beat his four Giants (Diamond Giant, Bigfoot, L.A.S.R., Jolly Pink Giant, 25,000,000 each), then Sadan himself. Giants stomp the ground around them. |
 | VII | Maxor, Storm, Goldor, Necron | 100M, 400M, 750M, 1B | **Maxor** is shielded until both **Energy Crystals** are carried to their pads (walk into a crystal, right-click a pad). **Storm** only takes damage for 10 seconds after someone pulls down a **Pillar**. **Goldor** hurts everyone every few seconds until all four **Terminals** are done. **Necron** can always be hurt, and blasts everything around him at 80% and 5%. |
 
+## Master Mode
+
+Beat **Floor VII** and Mort's screen gets a **Master Mode** switch: the same seven floors, much harder.
+
+- Each Master floor needs a higher Catacombs (and Combat) level: **24 for M1, then 2 more a floor, up to 36 for M7**.
+- Mobs are past Floor VII's, and stronger each floor. The bosses have Hypixel's Master Mode health: Bonzo 200,000,000, Scarf 375,000,000, The Professor 600,000,000, Thorn 6 Spirit Bow hits, Livid 600,000,000, Sadan 800,000,000 (his Giants 250,000,000), Maxor, Storm, Goldor and Necron 800,000,000 to 1,400,000,000. Their minions are much stronger too.
+- The Speed score allows **8 minutes**, and every secret counts toward the Explore score.
+- Chests cost twice as much and drop **Master Skulls**, the **Master Stars** (First on M3 ... Fifth on M7) and, on M7, the **Dark Claymore**. Runs give three times the Catacombs XP.
+- **Master Stars**: Malik puts them on an item that already has all five stars, in order (First to Fifth). Each adds **5% stats in Master Mode**. They show as ➊ to ➎ after the stars.
+
 ## Classes
 
 Pick one at Mort before the run (hover a class there for what it does). In a run, the **drop key** (Q) uses your class **ability** and **sneak + drop key** your **ultimate**; nothing is dropped. The class's bonuses grow with its level.
@@ -112,4 +122,4 @@ Every chest holds Undead Essence (Wither Essence too from Floor III), and each f
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, boss arenas, Master Mode, Master Stars, essence shop perks.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, essence shop perks, Croesus, the Party Finder.

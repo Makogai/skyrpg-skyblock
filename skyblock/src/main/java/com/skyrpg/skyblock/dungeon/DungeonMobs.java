@@ -61,7 +61,12 @@ public final class DungeonMobs {
         double t = Math.max(0, floor.strength());
         double health = kind.hp1() * Math.pow(kind.hp7() / kind.hp1(), t);
         double damage = kind.dmg1() * Math.pow(kind.dmg7() / kind.dmg1(), t);
-        int mobLevel = 10 + floor.number() * 25 + (role.equals("elite") ? 20 : 0);
+        if (floor.master()) {
+            // Master Mode: Floor VII's mobs, half again as strong for each floor.
+            health = kind.hp7() * Math.pow(1.5, floor.number());
+            damage = kind.dmg7() * Math.pow(1.5, floor.number());
+        }
+        int mobLevel = 10 + floor.number() * 25 + (role.equals("elite") ? 20 : 0) + (floor.master() ? 200 : 0);
         mob.snapTo(at.x, at.y, at.z, level.getRandom().nextFloat() * 360, 0);
         Zones.dressAs(mob, (star ? STAR_GLYPH : "") + kind.name(), mobLevel, round(health), round(damage), 10 + 40 * t);
         mob.setItemSlot(EquipmentSlot.MAINHAND, kind.hand().copy());

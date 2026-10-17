@@ -47,6 +47,18 @@ FLOORS = {
 }
 
 
+# Master Mode's extra drops (floors 101-107 in the file = M1-M7): Master Skulls, the Master Stars (M3-M7), the Dark Claymore.
+MASTER = {
+    1: [("MASTER_SKULL_TIER_1", "rare")],
+    2: [("MASTER_SKULL_TIER_1", "rare"), ("MASTER_SKULL_TIER_2", "epic")],
+    3: [("MASTER_SKULL_TIER_2", "rare"), ("FIRST_MASTER_STAR", "legendary")],
+    4: [("MASTER_SKULL_TIER_3", "rare"), ("SECOND_MASTER_STAR", "legendary")],
+    5: [("MASTER_SKULL_TIER_3", "rare"), ("MASTER_SKULL_TIER_4", "epic"), ("THIRD_MASTER_STAR", "legendary")],
+    6: [("MASTER_SKULL_TIER_4", "rare"), ("FOURTH_MASTER_STAR", "legendary")],
+    7: [("MASTER_SKULL_TIER_4", "rare"), ("MASTER_SKULL_TIER_5", "epic"), ("FIFTH_MASTER_STAR", "legendary"), ("DARK_CLAYMORE", "mythic")],
+}
+
+
 def entry(spec):
     item, band = spec[0], spec[1]
     lo, hi = (spec[2], spec[3]) if len(spec) > 2 else (1, 1)
@@ -57,6 +69,8 @@ def main():
     floors = {}
     for floor, specs in FLOORS.items():
         floors[str(floor)] = [entry(s) for s in specs] + ([entry(s) for s in EVERY] if floor > 0 else [entry(EVERY[0])])
+    for floor, specs in MASTER.items():
+        floors[str(100 + floor)] = [entry(s) for s in specs]
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"floors": floors}, indent=1) + "\n", encoding="utf-8")
     print(f"{sum(len(v) for v in floors.values())} entries -> {OUT.relative_to(ROOT)}")

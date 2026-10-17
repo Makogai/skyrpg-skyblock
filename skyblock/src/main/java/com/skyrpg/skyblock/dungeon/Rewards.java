@@ -73,6 +73,9 @@ final class Rewards {
             panel.line(Component.literal(" +" + Msg.number(xp) + " " + DungeonXp.title(picked) + " Experience").withStyle(ChatFormatting.GREEN));
             panel.send(player, Component.literal(run.floor.title() + (run.failed ? " failed!" : " complete!")).withStyle(ChatFormatting.RED, ChatFormatting.BOLD));
             Msg.playSound(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 0.8f, 1.0f);
+            if (!run.failed) {
+                DungeonXp.complete(player, run.floor.code());
+            }
             // XP after the score, so level-ups show under it.
             DungeonXp.give(player, DungeonXp.CATACOMBS, xp);
             for (String c : DungeonXp.CLASSES) {
@@ -176,7 +179,11 @@ final class Rewards {
             if (run.floor.number() >= 3 && tier >= 1) {
                 chest.essence.put("WITHER", base / 2 + random.nextInt(base / 2 + 1));
             }
-            for (Entry entry : loot.getOrDefault(run.floor.number(), loot.getOrDefault(1, List.of()))) {
+            List<Entry> table = new ArrayList<>(loot.getOrDefault(run.floor.number(), loot.getOrDefault(1, List.of())));
+            if (run.floor.master()) {
+                table.addAll(loot.getOrDefault(100 + run.floor.number(), List.of()));
+            }
+            for (Entry entry : table) {
                 double chance = entry.chances()[tier] * (tier == 0 ? 1 : luck);
                 if (random.nextDouble() < chance) {
                     ItemStack stack = stack(entry.item(), entry.min() + random.nextInt(entry.max() - entry.min() + 1));

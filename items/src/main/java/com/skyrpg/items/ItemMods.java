@@ -94,7 +94,9 @@ public final class ItemMods {
         Reforges.Reforge reforge = reforge(stack);
         String name = reforge == null ? def.name() : reforge.name() + " " + def.name();
         int stars = stars(stack);
-        return stars > 0 ? name + " " + STAR.repeat(stars) : name;
+        // Master Stars (6-10) show as a circled number after the five stars.
+        String master = stars > 5 ? String.valueOf("\u278A\u278B\u278C\u278D\u278E".charAt(Math.min(5, stars - 5) - 1)) : "";
+        return stars > 0 ? name + " " + STAR.repeat(Math.min(5, stars)) + master : name;
     }
 
     /** Whether Hot Potato Books work on it: weapons and fishing rods (damage and strength) and armour (health, defense). */

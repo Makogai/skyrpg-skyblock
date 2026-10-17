@@ -1302,6 +1302,228 @@
     "min": 1,
     "max": 1
    }
+  ],
+  "101": [
+   {
+    "item": "MASTER_SKULL_TIER_1",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "102": [
+   {
+    "item": "MASTER_SKULL_TIER_1",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "MASTER_SKULL_TIER_2",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "103": [
+   {
+    "item": "MASTER_SKULL_TIER_2",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FIRST_MASTER_STAR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "104": [
+   {
+    "item": "MASTER_SKULL_TIER_3",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "SECOND_MASTER_STAR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "105": [
+   {
+    "item": "MASTER_SKULL_TIER_3",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "MASTER_SKULL_TIER_4",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "THIRD_MASTER_STAR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "106": [
+   {
+    "item": "MASTER_SKULL_TIER_4",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FOURTH_MASTER_STAR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "107": [
+   {
+    "item": "MASTER_SKULL_TIER_4",
+    "chances": [
+     0,
+     0.05,
+     0.08,
+     0.1,
+     0.12,
+     0.15
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "MASTER_SKULL_TIER_5",
+    "chances": [
+     0,
+     0.015,
+     0.03,
+     0.04,
+     0.05,
+     0.06
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "FIFTH_MASTER_STAR",
+    "chances": [
+     0,
+     0.005,
+     0.01,
+     0.015,
+     0.02,
+     0.03
+    ],
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "DARK_CLAYMORE",
+    "chances": [
+     0,
+     0,
+     0.003,
+     0.006,
+     0.01,
+     0.015
+    ],
+    "min": 1,
+    "max": 1
+   }
   ]
  }
 }

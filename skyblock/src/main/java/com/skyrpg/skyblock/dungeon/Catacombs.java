@@ -211,6 +211,10 @@ public final class Catacombs {
                                     + " class.").withStyle(ChatFormatting.GREEN)));
                             return 1;
                         })))
+                .then(Commands.literal("master").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+                        .then(Commands.argument("floor", IntegerArgumentType.integer(1, 7))
+                                .then(Commands.argument("player", EntityArgument.player()).executes(ctx ->
+                                        start(EntityArgument.getPlayer(ctx, "player"), IntegerArgumentType.getInteger(ctx, "floor"), true, true)))))
                 .then(Commands.literal("start").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                         .then(Commands.argument("floor", IntegerArgumentType.integer(0, 7))
                                 .executes(ctx -> start(ctx.getSource().getPlayerOrException(), IntegerArgumentType.getInteger(ctx, "floor"), true))
@@ -274,7 +278,7 @@ public final class Catacombs {
     /** "The Catacombs (F1)", for the sidebar. */
     public static String areaName(ServerPlayer player) {
         Run run = BY_PLAYER.get(player.getUUID());
-        return run == null ? "The Catacombs" : "The Catacombs (" + (run.floor.number() == 0 ? "E" : "F" + run.floor.number()) + ")";
+        return run == null ? "The Catacombs" : "The Catacombs (" + run.floor.code() + ")";
     }
 
     public static boolean inRun(ServerPlayer player) {
@@ -286,7 +290,11 @@ public final class Catacombs {
      * requirements. Returns 1 when it started.
      */
     public static int start(ServerPlayer leader, int number, boolean admin) {
-        Floors.Floor floor = Floors.get(number);
+        return start(leader, number, false, admin);
+    }
+
+    public static int start(ServerPlayer leader, int number, boolean master, boolean admin) {
+        Floors.Floor floor = Floors.get(number, master);
         ServerLevel level = leader.level().getServer().getLevel(LEVEL);
         if (floor == null || level == null) {
             return 0;
@@ -305,6 +313,10 @@ public final class Catacombs {
         for (ServerPlayer player : party) {
             if (BY_PLAYER.containsKey(player.getUUID())) {
                 leader.sendSystemMessage(Component.literal(player.getScoreboardName() + " is already in a dungeon!").withStyle(ChatFormatting.RED));
+                return 0;
+            }
+            if (!admin && floor.master() && DungeonXp.completions(player, "f7") == 0) {
+                leader.sendSystemMessage(Component.literal(player.getScoreboardName() + " hasn't beaten Floor VII yet!").withStyle(ChatFormatting.RED));
                 return 0;
             }
             if (!admin && com.skyrpg.core.skills.SkillLevels.level(player, com.skyrpg.core.skills.SkillLevels.COMBAT) < floor.combat()) {

@@ -84,6 +84,12 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
         }
         Draw.fit(g, font, Component.literal(view.leader() ? "Pick a floor" : "Your party's leader picks the floor"), leftPos + 10, topPos + FLOOR_Y - 11, 200,
                 0.8f, 0.5f, Draw.Align.LEFT, Theme.MUTED, false);
+        if (view.masterOpen()) {
+            boolean over = SkyScreens.inside(mouseX, mouseY, modeX(), topPos + FLOOR_Y - 14, 90, 12);
+            Draw.panel(g, modeX(), topPos + FLOOR_Y - 14, 90, 12, over ? Theme.CARD_HOVER : Theme.CARD, view.master() ? RED : Theme.CARD_BORDER);
+            Draw.fit(g, font, Component.literal(view.master() ? "Master Mode" : "Normal floors"), modeX() + 45, topPos + FLOOR_Y - 11, 84, 0.7f,
+                    0.45f, Draw.Align.CENTER, view.master() ? RED : Theme.MUTED, false);
+        }
         List<DungeonMenu.FloorView> floors = view.floors();
         List<Component> tooltip = null;
         for (int i = 0; i < floors.size(); i++) {
@@ -112,6 +118,10 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
 
+    private int modeX() {
+        return leftPos + imageWidth - 100;
+    }
+
     @Override
     protected void extractLabels(GuiGraphicsExtractor g, int mouseX, int mouseY) {
         // The window draws its own title and labels.
@@ -124,6 +134,9 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
                 if (SkyScreens.inside(event.x(), event.y(), classX(i), topPos + CLASS_Y, classW(), 34)) {
                     return press(DungeonMenu.CLASS + i);
                 }
+            }
+            if (menu.view().masterOpen() && SkyScreens.inside(event.x(), event.y(), modeX(), topPos + FLOOR_Y - 14, 90, 12)) {
+                return press(DungeonMenu.MODE);
             }
             List<DungeonMenu.FloorView> floors = menu.view().floors();
             for (int i = 0; i < floors.size(); i++) {

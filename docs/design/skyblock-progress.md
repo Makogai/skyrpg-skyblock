@@ -547,6 +547,15 @@ phase so the next session can pick up where this one stopped.
       Professor, Thorn) and `arenas_b.py` (Livid, Sadan, the Wither Lords).
       Decided: +10% a star and +1% a Catacombs level (Hypixel's numbers weren't retrievable).
 
+- [x] **Master Mode** (`Floors.MASTER`: Floor records with `master`: Catacombs/Combat 22 + 2n, 480 s, all secrets, double
+      chest prices, 3x XP; codes F1/M1 on the sidebar and titles). Mobs: Floor VII numbers x 1.5^n; bosses: Hypixel's
+      Master Mode health (`BossFight.hp`), minions x40, Thorn 6 hits, boss damage 12,000 x 1.5^n. Completions per floor
+      in the XP store (`done_f7`...) gate Master Mode; Mort's screen has a Normal / Master switch once Floor VII is
+      done. Loot: floors 101-107 in `loot.json` (Master Skulls, the five Master Stars on M3-M7, the Dark Claymore on
+      M7). Master Stars 6-10 at Malik: the five items in order on a 5-star item, +5% stats each in Master Mode, shown as
+      ➊-➎. `/sbdungeon master <floor> <player>` for admins.
+      Decided: Master Mode mob scaling and boss damage are ours (no single Hypixel multiplier); no Withered Dragons.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

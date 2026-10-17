@@ -60,6 +60,17 @@ public final class DungeonXp {
         return level;
     }
 
+    /** How many times this floor ("f1", "m3") was beaten. */
+    public static int completions(ServerPlayer player, String code) {
+        return (int) xp(player, "done_" + code.toLowerCase(java.util.Locale.ROOT));
+    }
+
+    static void complete(ServerPlayer player, String code) {
+        Map<String, Double> all = new HashMap<>(player.getAttachedOrElse(XP, Map.of()));
+        all.merge("done_" + code.toLowerCase(java.util.Locale.ROOT), 1.0, Double::sum);
+        player.setAttached(XP, Map.copyOf(all));
+    }
+
     public static String selected(ServerPlayer player) {
         return player.getAttachedOrElse(SELECTED, "berserk");
     }

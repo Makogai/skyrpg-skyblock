@@ -55,7 +55,10 @@ public final class DungeonItems {
                     if (!ItemMods.dungeonItem(def)) {
                         continue;
                     }
-                    double bonus = 0.10 * ItemMods.stars(stack) + 0.01 * catacombs;
+                    int stars = ItemMods.stars(stack);
+                    Run run = Catacombs.runOf(player);
+                    boolean master = run != null && run.floor.master();
+                    double bonus = 0.10 * Math.min(5, stars) + (master ? 0.05 * Math.max(0, stars - 5) : 0) + 0.01 * catacombs;
                     for (Map.Entry<StatType, Double> stat : ItemMods.stats(stack, def).entrySet()) {
                         out.add(stat.getKey(), stat.getValue() * bonus);
                     }
@@ -74,8 +77,12 @@ public final class DungeonItems {
         return hypixel.has("upgrade_costs") ? hypixel.getAsJsonArray("upgrade_costs") : new JsonArray();
     }
 
+    static final String[] MASTER_STARS = {"FIRST_MASTER_STAR", "SECOND_MASTER_STAR", "THIRD_MASTER_STAR", "FOURTH_MASTER_STAR", "FIFTH_MASTER_STAR"};
+
+    /** Stars an item can take: its Hypixel stars (up to 5), then five Master Stars once it has all five. */
     static int maxStars(ItemDefinition def) {
-        return Math.min(5, costs(def).size());
+        int stars = Math.min(5, costs(def).size());
+        return stars == 5 ? 10 : stars;
     }
 
     /** One cost as text: "100 Wither Essence", "25,000 Coins", "Item x2". */
@@ -99,6 +106,11 @@ public final class DungeonItems {
         JsonArray costs = costs(def);
         int stars = ItemMods.stars(stack);
         List<String> out = new ArrayList<>();
+        if (stars >= 5 && stars < 10 && maxStars(def) == 10) {
+            ItemDefinition star = ItemRegistry.skyblock(MASTER_STARS[stars - 5]);
+            out.add(star == null ? MASTER_STARS[stars - 5] : star.name());
+            return out;
+        }
         if (stars < maxStars(def)) {
             for (JsonElement cost : costs.get(stars).getAsJsonArray()) {
                 out.add(costText(cost.getAsJsonObject()));
@@ -137,6 +149,19 @@ public final class DungeonItems {
         int stars = ItemMods.stars(stack);
         if (stars >= maxStars(def)) {
             return "This item already has every star.";
+        }
+        if (stars >= 5) {
+            String star = MASTER_STARS[stars - 5];
+            if (SkyStacks.count(player.getInventory(), star) < 1) {
+                ItemDefinition item = ItemRegistry.skyblock(star);
+                return "You need a " + (item == null ? star : item.name()) + "!";
+            }
+            SkyStacks.take(player.getInventory(), star, 1);
+            ItemMods.setStars(stack, stars + 1);
+            player.sendSystemMessage(Component.literal("You upgraded your ").withStyle(ChatFormatting.GREEN).append(stack.getHoverName())
+                    .append(Component.literal("!").withStyle(ChatFormatting.GREEN)));
+            Msg.playSound(player, SoundEvents.ANVIL_USE, 0.8f, 1.4f);
+            return "";
         }
         List<JsonObject> costs = new ArrayList<>();
         for (JsonElement cost : costs(def).get(stars).getAsJsonArray()) {

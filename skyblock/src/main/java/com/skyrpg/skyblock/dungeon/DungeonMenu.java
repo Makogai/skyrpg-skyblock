@@ -22,6 +22,9 @@ import net.minecraft.world.item.ItemStack;
 public final class DungeonMenu extends AbstractContainerMenu {
     public static final int CLASS = 100;
     public static final int FLOOR = 200;
+    public static final int MODE = 300;
+    /** Who's looking at Master Mode on Mort's screen. */
+    private static final java.util.Set<java.util.UUID> MASTER = new java.util.HashSet<>();
 
     /** A floor as shown: number, title, boss, Catacombs level needed, open to you. */
     public record FloorView(int number, String title, String boss, int requires, boolean open) {
@@ -44,12 +47,12 @@ public final class DungeonMenu extends AbstractContainerMenu {
 
     /** Catacombs level and XP into it; each class's level; the picked class; the floors; party size; leader or solo. */
     public record View(int catacombs, int classLevels0, int classLevels1, int classLevels2, int classLevels3, int classLevels4, String picked,
-                       List<FloorView> floors, int party, boolean leader) {
+                       List<FloorView> floors, int party, boolean leader, boolean masterOpen, boolean master) {
         public static final StreamCodec<RegistryFriendlyByteBuf, View> CODEC = new StreamCodec<>() {
             @Override
             public View decode(RegistryFriendlyByteBuf buf) {
                 return new View(buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readUtf(),
-                        FloorView.CODEC.apply(ByteBufCodecs.list()).decode(buf), buf.readVarInt(), buf.readBoolean());
+                        FloorView.CODEC.apply(ByteBufCodecs.list()).decode(buf), buf.readVarInt(), buf.readBoolean(), buf.readBoolean(), buf.readBoolean());
             }
 
             @Override
@@ -64,6 +67,8 @@ public final class DungeonMenu extends AbstractContainerMenu {
                 FloorView.CODEC.apply(ByteBufCodecs.list()).encode(buf, view.floors());
                 buf.writeVarInt(view.party());
                 buf.writeBoolean(view.leader());
+                buf.writeBoolean(view.masterOpen());
+                buf.writeBoolean(view.master());
             }
         };
 
@@ -99,10 +104,12 @@ public final class DungeonMenu extends AbstractContainerMenu {
 
     public static void open(ServerPlayer player) {
         int level = DungeonXp.level(player, DungeonXp.CATACOMBS);
+        boolean masterOpen = DungeonXp.completions(player, "f7") > 0;
+        boolean master = masterOpen && MASTER.contains(player.getUUID());
         List<FloorView> floors = new ArrayList<>();
-        for (Floors.Floor floor : Floors.ALL) {
-            floors.add(new FloorView(floor.number(), floor.number() == 0 ? "Entrance" : "Floor " + Floors.roman(floor.number()),
-                    BOSSES[floor.number()], floor.catacombs(), level >= floor.catacombs()));
+        for (Floors.Floor floor : master ? Floors.MASTER : Floors.ALL) {
+            String title = floor.number() == 0 ? "Entrance" : (master ? "Master " : "Floor ") + Floors.roman(floor.number());
+            floors.add(new FloorView(floor.number(), title, BOSSES[floor.number()], floor.catacombs(), level >= floor.catacombs()));
         }
         com.skyrpg.party.PartyData.Party party = com.skyrpg.party.Parties.partyOf(player.getUUID());
         int[] classes = new int[5];
@@ -110,7 +117,7 @@ public final class DungeonMenu extends AbstractContainerMenu {
             classes[i] = DungeonXp.level(player, DungeonXp.CLASSES.get(i));
         }
         View view = new View(level, classes[0], classes[1], classes[2], classes[3], classes[4], DungeonXp.selected(player), floors,
-                party == null ? 1 : Math.min(5, party.members.size()), party == null || player.getUUID().equals(party.leader));
+                party == null ? 1 : Math.min(5, party.members.size()), party == null || player.getUUID().equals(party.leader), masterOpen, master);
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {
@@ -139,6 +146,13 @@ public final class DungeonMenu extends AbstractContainerMenu {
             owner.level().getServer().execute(() -> open(owner));
             return true;
         }
+        if (id == MODE) {
+            if (!MASTER.remove(owner.getUUID()) && view.masterOpen()) {
+                MASTER.add(owner.getUUID());
+            }
+            owner.level().getServer().execute(() -> open(owner));
+            return true;
+        }
         if (id >= FLOOR && id < FLOOR + Floors.ALL.size()) {
             if (!view.leader()) {
                 owner.sendSystemMessage(Component.literal("Only your party's leader can start a dungeon!").withStyle(ChatFormatting.RED));
@@ -147,7 +161,7 @@ public final class DungeonMenu extends AbstractContainerMenu {
             int floor = id - FLOOR;
             owner.level().getServer().execute(() -> {
                 owner.closeContainer();
-                Catacombs.start(owner, floor, false);
+                Catacombs.start(owner, floor, view.master(), false);
             });
         }
         return true;

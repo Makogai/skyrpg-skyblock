@@ -75,7 +75,7 @@ final class Bosses {
 
         @Override
         void begin() {
-            Mob bonzo = spawnBoss(EntityTypes.ZOMBIE, spot(0, -10), "Bonzo", 250_000, bossDamage());
+            Mob bonzo = spawnBoss(EntityTypes.ZOMBIE, spot(0, -10), "Bonzo", hp(250_000, 200_000_000), bossDamage());
             if (bonzo != null) {
                 stack(bonzo, EquipmentSlot.MAINHAND, new ItemStack(Items.BLAZE_ROD));
                 stack(bonzo, EquipmentSlot.CHEST, dyed(Items.LEATHER_CHESTPLATE, 0xB02E26));
@@ -151,7 +151,7 @@ final class Bosses {
 
         @Override
         void begin() {
-            Mob scarf = spawnBoss(EntityTypes.ZOMBIE, spot(0, -12), "Scarf", 1_000_000, bossDamage());
+            Mob scarf = spawnBoss(EntityTypes.ZOMBIE, spot(0, -12), "Scarf", hp(1_000_000, 375_000_000), bossDamage());
             if (scarf != null) {
                 stack(scarf, EquipmentSlot.CHEST, dyed(Items.LEATHER_CHESTPLATE, 0x6A1B9A));
                 stack(scarf, EquipmentSlot.HEAD, dyed(Items.LEATHER_HELMET, 0xB02E26));
@@ -233,7 +233,7 @@ final class Bosses {
 
         @Override
         void begin() {
-            Mob professor = spawnBoss(EntityTypes.ZOMBIE_VILLAGER, spot(0, -14), "The Professor", 3_000_000, bossDamage());
+            Mob professor = spawnBoss(EntityTypes.ZOMBIE_VILLAGER, spot(0, -14), "The Professor", hp(3_000_000, 600_000_000), bossDamage());
             if (professor != null) {
                 professor.setNoAi(true);
                 professor.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20 * 600, 0, false, false));
@@ -305,7 +305,6 @@ final class Bosses {
      */
     static final class Thorn extends BossFight {
         static final String SPIRIT_BOW = "skyrpg_spirit_bow";
-        private static final int HITS = 4;
         private int hits;
         private long nextAnimals;
         private long nextThrow;
@@ -320,6 +319,11 @@ final class Bosses {
             return "Thorn";
         }
 
+        /** Spirit Bow hits to beat him: 4, or 6 in Master Mode. */
+        private int hits() {
+            return run.floor.master() ? 6 : 4;
+        }
+
         @Override
         void intro() {
             say(name(), "Welcome Adventurers! I am Thorn, the Spirit! And host of the Vegan Trials!");
@@ -327,7 +331,7 @@ final class Bosses {
 
         @Override
         void begin() {
-            Mob thorn = spawnBoss(EntityTypes.GHAST, center().add(0, 10, -8), "Thorn", HITS, bossDamage());
+            Mob thorn = spawnBoss(EntityTypes.GHAST, center().add(0, 10, -8), "Thorn", hits(), bossDamage());
             if (thorn != null) {
                 thorn.setNoAi(true);
                 thorn.setNoGravity(true);
@@ -381,8 +385,8 @@ final class Bosses {
                     && arrow.getWeaponItem().getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBooleanOr(SPIRIT_BOW, false)) {
                 arrow.discard();
                 hits++;
-                entity.setHealth(entity.getMaxHealth() * (HITS - hits) / HITS);
-                say(name(), hits < HITS ? "Ouch! That actually hurt!" : "This is it... I am defeated...");
+                entity.setHealth(entity.getMaxHealth() * (hits() - hits) / hits());
+                say(name(), hits < hits() ? "Ouch! That actually hurt!" : "This is it... I am defeated...");
                 if (source.getEntity() instanceof ServerPlayer shooter) {
                     for (int i = 0; i < shooter.getInventory().getContainerSize(); i++) {
                         ItemStack stack = shooter.getInventory().getItem(i);
@@ -391,7 +395,7 @@ final class Bosses {
                         }
                     }
                 }
-                if (hits >= HITS) {
+                if (hits >= hits()) {
                     entity.discard();
                     win(null);
                 }
@@ -430,8 +434,8 @@ final class Bosses {
             for (int i = 0; i < COLORS.length; i++) {
                 double a = Math.PI * 2 * i / COLORS.length;
                 Vec3 at = spot(Math.cos(a) * 10, Math.sin(a) * 10);
-                Mob livid = i == real ? spawnBoss(EntityTypes.ZOMBIE, at, "Livid", 7_000_000, bossDamage())
-                        : minion(EntityTypes.ZOMBIE, at, "Livid", 7_000_000, bossDamage() * 0.5);
+                Mob livid = i == real ? spawnBoss(EntityTypes.ZOMBIE, at, "Livid", hp(7_000_000, 600_000_000), bossDamage())
+                        : minion(EntityTypes.ZOMBIE, at, "Livid", hp(7_000_000, 600_000_000) / minionScale(), bossDamage() * 0.5);
                 if (livid == null) {
                     continue;
                 }
@@ -528,7 +532,7 @@ final class Bosses {
                     say(name(), "ENOUGH! My Giants will unify and crush you!");
                     for (int i = 0; i < GIANTS.length; i++) {
                         double a = Math.PI * 2 * i / GIANTS.length + Math.PI / 4;
-                        Mob giant = spawn(EntityTypes.GIANT, spot(Math.cos(a) * 16, Math.sin(a) * 16), GIANTS[i], 25_000_000, bossDamage() * 2, 500);
+                        Mob giant = spawn(EntityTypes.GIANT, spot(Math.cos(a) * 16, Math.sin(a) * 16), GIANTS[i], hp(25_000_000, 250_000_000), bossDamage() * 2, 500);
                         if (giant != null) {
                             giants.add(giant.getUUID());
                             boss = giant;
@@ -546,7 +550,7 @@ final class Bosses {
                 phase = 3;
                 say(name(), "You did it. I understand now, you have earned my respect.");
                 say(name(), "But I will not lose!");
-                spawnBoss(EntityTypes.GIANT, spot(0, -12), "Sadan", 40_000_000, bossDamage() * 2.5);
+                spawnBoss(EntityTypes.GIANT, spot(0, -12), "Sadan", hp(40_000_000, 800_000_000), bossDamage() * 2.5);
                 nextStomp = now + 100;
             }
             if (now >= nextStomp) {
@@ -587,6 +591,7 @@ final class Bosses {
     static final class Necron extends BossFight {
         private static final String[] LORDS = {"Maxor", "Storm", "Goldor", "Necron"};
         private static final double[] HEALTH = {100_000_000, 400_000_000, 750_000_000, 1_000_000_000};
+        private static final double[] MASTER_HEALTH = {800_000_000, 1_000_000_000, 1_200_000_000, 1_400_000_000};
         private int lord;
         private long vulnerableUntil;
         private long nextAttack;
@@ -618,7 +623,7 @@ final class Bosses {
 
         private void next() {
             clearParts();
-            Mob wither = spawnBoss(EntityTypes.WITHER, center().add(0, 4, -10), LORDS[lord], HEALTH[lord], bossDamage());
+            Mob wither = spawnBoss(EntityTypes.WITHER, center().add(0, 4, -10), LORDS[lord], hp(HEALTH[lord], MASTER_HEALTH[lord]), bossDamage());
             if (wither != null) {
                 wither.setNoAi(true);
                 wither.setNoGravity(true);

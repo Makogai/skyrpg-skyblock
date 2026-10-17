@@ -219,7 +219,7 @@ abstract class BossFight {
     }
 
     Mob minion(EntityType<? extends Mob> type, Vec3 at, String name, double health, double damage) {
-        Mob mob = spawn(type, at, name, health, damage, 50 + run.floor.number() * 40);
+        Mob mob = spawn(type, at, name, health * minionScale(), damage, 50 + run.floor.number() * 40);
         if (mob != null) {
             minions.add(mob.getUUID());
             if (randomTarget() instanceof ServerPlayer target) {
@@ -244,7 +244,17 @@ abstract class BossFight {
 
     /** The floor's boss damage (Hypixel's bosses hit about 400 on Floor I, many thousands by Floor VII). */
     double bossDamage() {
-        return 400 * Math.pow(30, run.floor.strength());
+        return run.floor.master() ? 12_000 * Math.pow(1.5, run.floor.number()) : 400 * Math.pow(30, run.floor.strength());
+    }
+
+    /** A boss's health: Hypixel's normal or Master Mode number. */
+    double hp(double normal, double master) {
+        return run.floor.master() ? master : normal;
+    }
+
+    /** Minions are this much stronger in Master Mode. */
+    double minionScale() {
+        return run.floor.master() ? 40 : 1;
     }
 
     void stack(Mob mob, EquipmentSlot slot, ItemStack stack) {
