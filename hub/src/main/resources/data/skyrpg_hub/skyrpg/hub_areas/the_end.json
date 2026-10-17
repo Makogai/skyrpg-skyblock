@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/the_end",
+  "origin": [
+    -150,
+    10,
+    -150
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:the_end",
+  "island": "The End",
+  "arrival": {
+    "pos": [
+      0.5,
+      67.0,
+      120.5
+    ],
+    "yaw": 180.0
+  }
+}

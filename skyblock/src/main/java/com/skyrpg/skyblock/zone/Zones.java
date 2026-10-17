@@ -79,7 +79,11 @@ public final class Zones {
      * {@code xp} its Combat XP), when ({@code time}: any, day or night) and where ({@code box}, or the zone's).
      */
     public record MobSpawn(EntityType<?> type, int max, int everyTicks, String name, int level, double health, double damage, double xp,
-                           long coins, String time, AABB box, double speed, boolean indoors) {
+                           long coins, String time, AABB box, double speed, boolean indoors, List<Drop> drops) {
+        /** {@code "drops": [{"item": "ENDER_PEARL", "chance": 1, "min": 2, "max": 4}]}: SkyBlock items, into the killer's inventory. */
+        public record Drop(String item, double chance, int min, int max) {
+        }
+
         boolean now(ServerLevel level) {
             boolean day = level.isBrightOutside();
             return switch (time) {
@@ -131,6 +135,10 @@ public final class Zones {
                 server.getPlayerList().getPlayers().forEach(Zones::send));
         Hub.setBreakRule((level, pos, state, player) -> rule(level, pos, state) != null);
         Hub.setCombatRule(entity -> {
+            // Bosses that roam past a zone's edges (The End's dragons) can be fought anywhere.
+            if (entity.entityTags().contains(FIGHTABLE_TAG)) {
+                return true;
+            }
             Zone zone = at(entity.level(), entity.blockPosition());
             return zone != null && !zone.mobs().isEmpty();
         });
@@ -159,6 +167,9 @@ public final class Zones {
             MobSpawn spec = specOf(entity);
             if (spec != null && spec.coins() > 0) {
                 com.skyrpg.core.economy.Wallet.give(killer, spec.coins());
+            }
+            if (spec != null && !spec.drops().isEmpty()) {
+                giveDrops(killer, spec, entity);
             }
         });
         // Nothing stays mined over a restart: put every block back on the way down.
@@ -300,6 +311,14 @@ public final class Zones {
     }
 
     /** A named zone mob: Hypixel's name, level, health and damage, its Combat XP, and no burning in daylight. */
+    /** A mob with this tag can be fought anywhere on a public island, in or out of a zone. */
+    public static final String FIGHTABLE_TAG = "skyrpg_fightable";
+
+    /** Gives a mob that a feature spawns itself (not a zone) Hypixel's look and stats, as zone mobs get them. */
+    public static void dressAs(Mob mob, String name, int level, double health, double damage, double xp) {
+        dress(mob, new MobSpawn(mob.getType(), 1, 0, name, level, health, damage, xp, 0, "any", null, 1, false, List.of()));
+    }
+
     private static void dress(Mob mob, MobSpawn spawn) {
         mob.addTag(com.skyrpg.core.world.MobTags.NO_SUNBURN);
         if (spawn.name().isEmpty()) {
@@ -412,11 +431,45 @@ public final class Zones {
                         mob.has("health") ? mob.get("health").getAsDouble() : 0, mob.has("damage") ? mob.get("damage").getAsDouble() : 0,
                         mob.has("xp") ? mob.get("xp").getAsDouble() : -1, mob.has("coins") ? mob.get("coins").getAsLong() : 0,
                         mob.has("time") ? mob.get("time").getAsString() : "any", mobBox, mob.has("speed") ? mob.get("speed").getAsDouble() : 1,
-                        mob.has("indoors") && mob.get("indoors").getAsBoolean()));
+                        mob.has("indoors") && mob.get("indoors").getAsBoolean(), drops(mob)));
             }
         }
         return new Zone(id, json.get("name").getAsString(),
                 ResourceKey.create(Registries.DIMENSION, Identifier.parse(json.get("dimension").getAsString())), box,
                 Map.copyOf(blocks), List.copyOf(mobs), text);
+    }
+
+    private static List<MobSpawn.Drop> drops(JsonObject mob) {
+        if (!mob.has("drops")) {
+            return List.of();
+        }
+        List<MobSpawn.Drop> out = new ArrayList<>();
+        for (var element : mob.getAsJsonArray("drops")) {
+            JsonObject drop = element.getAsJsonObject();
+            int min = drop.has("min") ? drop.get("min").getAsInt() : 1;
+            out.add(new MobSpawn.Drop(drop.get("item").getAsString(), drop.has("chance") ? drop.get("chance").getAsDouble() : 1,
+                    min, drop.has("max") ? drop.get("max").getAsInt() : min));
+        }
+        return List.copyOf(out);
+    }
+
+    /** A zone mob's drops for its killer, straight into their inventory (Hypixel's default Telekinesis); what doesn't fit drops. */
+    private static void giveDrops(ServerPlayer killer, MobSpawn spec, Entity entity) {
+        for (MobSpawn.Drop drop : spec.drops()) {
+            if (killer.getRandom().nextDouble() >= drop.chance()) {
+                continue;
+            }
+            com.skyrpg.items.ItemDefinition def = com.skyrpg.items.ItemRegistry.skyblock(drop.item());
+            if (def == null) {
+                continue;
+            }
+            int count = drop.min() + (drop.max() > drop.min() ? killer.getRandom().nextInt(drop.max() - drop.min() + 1) : 0);
+            for (int i = 0; i < count; i++) {
+                net.minecraft.world.item.ItemStack stack = com.skyrpg.items.SkyItems.create(def, 1);
+                if (!killer.getInventory().add(stack)) {
+                    killer.drop(stack, false, net.minecraft.util.Prediction.SERVER_ONLY);
+                }
+            }
+        }
     }
 }

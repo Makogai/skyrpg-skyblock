@@ -1,0 +1,20 @@
+{
+  "name": "Guber",
+  "role": "The End",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_end",
+  "pos": [
+    43.5,
+    67.0,
+    74.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.enderman.stare",
+  "greetings": [
+    "Don't look them in the eye. Trust me.",
+    "The Zealots carry something special now and then."
+  ]
+}

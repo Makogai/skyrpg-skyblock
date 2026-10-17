@@ -1,0 +1,80 @@
+{
+  "name": "Void Sepulture",
+  "dimension": "skyrpg_skyblock:the_end",
+  "from": [
+    -150,
+    12,
+    -150
+  ],
+  "to": [
+    -71,
+    159,
+    149
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:enderman",
+      "name": "Voidling Fanatic",
+      "level": 85,
+      "health": 1500000,
+      "damage": 3500,
+      "xp": 110,
+      "coins": 20,
+      "max": 6,
+      "every": 6,
+      "from": [
+        -124,
+        65,
+        -18
+      ],
+      "to": [
+        -100,
+        74,
+        -12
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 4,
+          "max": 5
+        },
+        {
+          "item": "ENCHANTED_ENDER_PEARL",
+          "chance": 0.01,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:enderman",
+      "name": "Voidling Extremist",
+      "level": 100,
+      "health": 8000000,
+      "damage": 13500,
+      "xp": 1000,
+      "coins": 100,
+      "max": 2,
+      "every": 20,
+      "from": [
+        -124,
+        65,
+        12
+      ],
+      "to": [
+        -100,
+        74,
+        18
+      ],
+      "drops": [
+        {
+          "item": "ENCHANTED_ENDER_PEARL",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

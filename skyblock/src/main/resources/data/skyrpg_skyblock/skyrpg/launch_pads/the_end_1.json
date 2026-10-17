@@ -1,0 +1,23 @@
+{
+  "name": "the Spider's Den",
+  "dimension": "skyrpg_skyblock:the_end",
+  "from": [
+    -1,
+    67,
+    130
+  ],
+  "to": [
+    1,
+    68,
+    132
+  ],
+  "destination": {
+    "dimension": "skyrpg_skyblock:spiders_den",
+    "pos": [
+      -79.5,
+      65.0,
+      0.5
+    ],
+    "yaw": 90.0
+  }
+}

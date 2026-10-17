@@ -1,0 +1,144 @@
+{
+  "name": "Dragon's Nest",
+  "dimension": "skyrpg_skyblock:the_end",
+  "from": [
+    -70,
+    12,
+    -150
+  ],
+  "to": [
+    70,
+    159,
+    70
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:enderman",
+      "name": "Zealot",
+      "level": 55,
+      "health": 13000,
+      "damage": 1250,
+      "xp": 40,
+      "coins": 15,
+      "max": 8,
+      "every": 3,
+      "from": [
+        -28,
+        58,
+        -18
+      ],
+      "to": [
+        -13,
+        64,
+        18
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 2,
+          "max": 4
+        },
+        {
+          "item": "ENCHANTED_ENDER_PEARL",
+          "chance": 0.02,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:enderman",
+      "name": "Zealot",
+      "level": 55,
+      "health": 13000,
+      "damage": 1250,
+      "xp": 40,
+      "coins": 15,
+      "max": 8,
+      "every": 3,
+      "from": [
+        13,
+        58,
+        -18
+      ],
+      "to": [
+        28,
+        64,
+        18
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 2,
+          "max": 4
+        },
+        {
+          "item": "ENCHANTED_ENDER_PEARL",
+          "chance": 0.02,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:wither_skeleton",
+      "name": "Obsidian Defender",
+      "level": 55,
+      "health": 10000,
+      "damage": 200,
+      "xp": 40,
+      "coins": 15,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -28,
+        58,
+        -24
+      ],
+      "to": [
+        -14,
+        64,
+        -19
+      ],
+      "drops": [
+        {
+          "item": "OBSIDIAN",
+          "chance": 1,
+          "min": 2,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "type": "minecraft:skeleton",
+      "name": "Watcher",
+      "level": 55,
+      "health": 9500,
+      "damage": 500,
+      "xp": 40,
+      "coins": 15,
+      "max": 4,
+      "every": 8,
+      "from": [
+        14,
+        58,
+        19
+      ],
+      "to": [
+        28,
+        64,
+        24
+      ],
+      "drops": [
+        {
+          "item": "ARROW",
+          "chance": 1,
+          "min": 2,
+          "max": 6
+        }
+      ]
+    }
+  ]
+}

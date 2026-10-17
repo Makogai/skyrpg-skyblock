@@ -162,6 +162,22 @@ PEOPLE = {
     "Archaeologist": ("archaeologist", "Archaeologist", "Spider's Den", "#FFAA00", "Talk", skin("alex", True), True,
                       "minecraft:item.brush.brushing.gravel",
                       ["Every layer of gravel tells a story.", "Careful where you dig."], None),
+    # ---- The End
+    "Pearl Dealer": ("pearl_dealer", "Pearl Dealer", "Merchant", "#55FF55", "Shop", skin("efe"), False,
+                     "minecraft:entity.enderman.ambient", ["End Stone, Obsidian, pearls. All fresh.",
+                                                           "A Remnant of the Eye keeps you safe out here."],
+                     shop("pearl_dealer")),
+    "Gregory": ("gregory", "Gregory", "Merchant", "#AA00AA", "Shop", skin("ari"), False, "minecraft:entity.villager.trade",
+                ["Pets go further out here, you know.", "Have a look, take your time."], shop("gregory")),
+    "Guber": ("guber", "Guber", "The End", "#AAAAAA", "Talk", skin("steve"), False, "minecraft:entity.enderman.stare",
+              ["Don't look them in the eye. Trust me.", "The Zealots carry something special now and then."], None),
+    "Lone Adventurer": ("lone_adventurer", "Lone Adventurer", "The End", "#FFAA00", "Talk", skin("kai"), False,
+                        "minecraft:block.campfire.crackle",
+                        ["Eight Summoning Eyes on the altar, and the dragon comes.",
+                         "The more eyes you place, the better your loot."], None),
+    "Tyzzo": ("tyzzo", "Tyzzo", "The End", "#55FFFF", "Talk", skin("makena"), False, "minecraft:block.end_portal_frame.fill",
+              ["The pillars hum at night. Well, it's always night here.", "Seen any Special Zealots? They carry a frame."],
+              None),
 }
 LIFT_OPERATOR = ("Lift Operator", "Deep Caverns", "#FFFF55", "Talk", skin("steve"), False, "minecraft:block.chain.step",
                  ["Going down? Hold on to the rail.", "The lift stops at every layer you've been to."],
@@ -190,6 +206,7 @@ ISLAND_WARPS = {
     "deep": ("deep_caverns", "Deep Caverns", "Deep Caverns", "Six layers down: lapis, redstone, emerald, diamond, obsidian",
              "minecraft:diamond", 24),
     "spider": ("spiders_den", "Spider's Den", "Spider's Den", "The Spider Mound and its spiders", "minecraft:spider_eye", 25),
+    "end": ("the_end", "The End", "The End", "Endermen, Zealots and the Dragon's Nest", "minecraft:ender_eye", 26),
 }
 
 

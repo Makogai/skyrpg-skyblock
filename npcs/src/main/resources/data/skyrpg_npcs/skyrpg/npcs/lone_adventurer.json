@@ -1,0 +1,20 @@
+{
+  "name": "Lone Adventurer",
+  "role": "The End",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:the_end",
+  "pos": [
+    55.5,
+    67.0,
+    134.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.campfire.crackle",
+  "greetings": [
+    "Eight Summoning Eyes on the altar, and the dragon comes.",
+    "The more eyes you place, the better your loot."
+  ]
+}

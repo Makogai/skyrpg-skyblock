@@ -217,6 +217,20 @@ phase so the next session can pick up where this one stopped.
       Pets are SkyBlock ids too (`PetCatalog`: "BEE;4" resolves through the new item-registry resolvers and stack
       factories, the client gets the pet list on join): 25 NEU pet recipes in the Recipe Book and crafting table.
       Not yet: abilities, pet items, Kat, pet drops and shops (admins: `/sbpet give`).
+- [x] **The End** (Hypixel's): its own dimension `skyrpg_skyblock:the_end` (type `skyrpg_hub:public_end`: End sky and
+      music, no vanilla dragon fight; `Hub.isPublic`), built by `tools/builds/hub_areas/the_end.py`: the arrival with the
+      Pearl Dealer and Gregory, the main island (Endermen 42/45/50, Endermites, Guber, Lone Adventurer, Tyzzo), the Zealot
+      Bruiser Hideout under it, the Dragon's Nest (Zealots, Obsidian Defenders, Watchers; altar of 8 frames at 0, 0) and
+      the Void Sepulture (Voidling Fanatics and Extremists); End Stone and Obsidian regrow; 4 Fairy Souls; `/warp end`;
+      reached by the Spider's Den's west pad (Combat XII). Zone mobs gained item `drops` (into the killer's inventory).
+      Package `skyblock.end`: `SpecialZealots` (1/420 per Zealot, 1/210 per Bruiser; its kill gives the Summoning Eye),
+      `DragonAltar` (place / take back eyes in the frames, an early UseBlock phase), `DragonFight` (the 8th eye: egg, then
+      one of 7 dragons by Hypixel's chances, vanilla's dragon with toughness for its 7.5-15M health, boss bar, its hits
+      scaled to Hypixel's damage, lightning for Wise/Unstable/Strong/Superior; on death Hypixel's Dragon Weight: eyes,
+      damage rank and share, one major drop in Hypixel's order and chances, the rest as fragments and pearls).
+      `Zones.FIGHTABLE_TAG` lets a feature's own mobs be fought outside zones; `Zones.dressAs` gives them Hypixel stats.
+      Not yet: the dragons' own attacks beyond lightning, plain Endermen's rare drops (Ender Armor, Ender Gem...),
+      Voidgloom Seraph (slayer), the Endstone Protector, and the Ender Dragon pet's drop chance boosts.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

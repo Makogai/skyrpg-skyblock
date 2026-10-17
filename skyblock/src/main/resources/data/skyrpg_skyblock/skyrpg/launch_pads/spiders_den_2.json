@@ -1,0 +1,19 @@
+{
+  "name": "The End",
+  "dimension": "skyrpg_skyblock:spiders_den",
+  "from": [
+    -85,
+    65,
+    -1
+  ],
+  "to": [
+    -83,
+    66,
+    1
+  ],
+  "warp": "end",
+  "requires": {
+    "skill": "skyrpg_skills:combat",
+    "level": 12
+  }
+}

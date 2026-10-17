@@ -1,0 +1,52 @@
+{
+  "name": "Zealot Bruiser Hideout",
+  "dimension": "skyrpg_skyblock:the_end",
+  "from": [
+    -69,
+    12,
+    71
+  ],
+  "to": [
+    149,
+    55,
+    149
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:enderman",
+      "name": "Zealot Bruiser",
+      "level": 100,
+      "health": 65000,
+      "damage": 2500,
+      "xp": 300,
+      "coins": 40,
+      "max": 8,
+      "every": 3,
+      "from": [
+        90,
+        39,
+        94
+      ],
+      "to": [
+        110,
+        47,
+        114
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 2,
+          "max": 4
+        },
+        {
+          "item": "ENCHANTED_ENDER_PEARL",
+          "chance": 0.04,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "indoors": true
+    }
+  ]
+}

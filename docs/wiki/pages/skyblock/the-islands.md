@@ -3,7 +3,7 @@ title: The Islands
 category: skyblock
 order: 4
 icon: minecraft:spider_eye
-summary: The public islands past the Hub: the Farming Islands, The Park, the Gold Mine, the Deep Caverns and the Spider's Den. How to get there, what they need, their mobs, resources, NPCs and Fairy Souls.
+summary: The public islands past the Hub: the Farming Islands, The Park, the Gold Mine, the Deep Caverns, the Spider's Den and The End. How to get there, what they need, their mobs, resources, NPCs, Fairy Souls and the Ender Dragon.
 ---
 Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one floating in its own sky. Everyone shares them, like the Hub: you can break the resources they're for, and nothing else.
 
@@ -15,6 +15,7 @@ Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one fl
 | [Gold Mine](#gold-mine) | the Coal Mine's gold gate | Mining I | `/warp gold` | Stone, Coal, Iron and Gold Ore |
 | [Deep Caverns](#deep-caverns) | the lift shaft at the bottom of the Gold Mine | Mining V | `/warp deep` | Six layers of ores and their mobs |
 | [Spider's Den](#spider-s-den) | the Graveyard's launch pad | Combat I | `/warp spider` | Spiders, Gravel; the Spider Mound and Arachne's Sanctuary |
+| [The End](#the-end) | the Spider's Den's west launch pad | Combat XII | `/warp end` | Endermen, Zealots, End Stone, Obsidian; the Ender Dragon |
 
 **Launch pads** are 3x3 pads of slime blocks with a sign saying where they go. Step on one and you're thrown to the island, if you have the skill level it needs; if not, it pushes you back and says what you're missing. Every island has a pad back to where you came from in the Hub.
 
@@ -44,6 +45,16 @@ They have Hypixel's names and stats, pay Combat XP and coins on the kill and cou
 | Splitter Spider | Spider Mound (the top) | 42 | 9,000 | 850 | 36 | 15 |
 | Weaver Spider | Spider Mound | 42 | 9,100 | 650 | 36 | 15 |
 | Voracious Spider | Spider Mound | 42 | 9,000 | 700 | 36 | 15 |
+| Enderman | The End | 42 / 45 / 50 | 4,500 / 6,000 / 9,000 | 500 / 600 / 700 | 28 / 34 / 40 | 10 |
+| Endermite | The End | 37 | 2,000 | 400 | 8 | 10 |
+| Zealot | The End, Dragon's Nest | 55 | 13,000 | 1,250 | 40 | 15 |
+| Obsidian Defender | The End, Dragon's Nest | 55 | 10,000 | 200 | 40 | 15 |
+| Watcher | The End, Dragon's Nest | 55 | 9,500 | 500 | 40 | 15 |
+| Zealot Bruiser | The End, Zealot Bruiser Hideout | 100 | 65,000 | 2,500 | 300 | 40 |
+| Voidling Fanatic | The End, Void Sepulture | 85 | 1,500,000 | 3,500 | 110 | 20 |
+| Voidling Extremist | The End, Void Sepulture | 100 | 8,000,000 | 13,500 | 1,000 | 100 |
+
+Some mobs also drop items straight into your inventory: Endermen and Zealots drop **Ender Pearls** (Zealots sometimes an **Enchanted Ender Pearl**), Obsidian Defenders drop **Obsidian** and Watchers drop **Arrows**.
 
 The farm animals (Cows, Pigs, Chickens, Rabbits, Sheep, Mooshrooms) wander their pens and fields.
 
@@ -97,6 +108,61 @@ Through the launch pad behind the Hub's Graveyard (Combat I). A dark island of c
 
 The camp by the arrival has **Grandma Wolf**, **Haymitch**, **Rick**, **Shaggy** (a shop) and the **Archaeologist**.
 
+## The End
+
+Through the launch pad on the Spider's Den's west edge (Combat XII). A cluster of End Stone islands floating in the dark:
+
+- **The arrival** (where `/warp end` puts you): the stalls of the **Pearl Dealer** (End Stone, Obsidian, Silent Pearls, the Remnant of the Eye) and **Gregory** (a shop), and a pad back to the Spider's Den.
+- **The main island**, to the south-east: Endermen roam it in three groups (level 42 near the arrival, 45 and 50 further out) with Endermites. **Guber**, the **Lone Adventurer** and **Tyzzo** live here. Under its east end a stair goes down to the **Zealot Bruiser Hideout**, a cavern of level 100 Zealot Bruisers.
+- **The Dragon's Nest**, north of the arrival: a huge bowl ringed by obsidian pillars, with **Zealots**, **Obsidian Defenders** and **Watchers** on its floor and the **altar** in the middle.
+- **The Void Sepulture**, over the bridge to the west: a dark island with Voidling Fanatics and Voidling Extremists, by far the toughest mobs here.
+
+**End Stone** and **Obsidian** can be mined anywhere on the main islands; they come back after a few seconds.
+
+### Special Zealots and Summoning Eyes
+
+Every Zealot you kill has a **1 in 420** chance (a Zealot Bruiser **1 in 210**) to leave a **Special Zealot** behind: an Enderman carrying an End Portal Frame. Kill it for a **Summoning Eye**.
+
+### The Ender Dragon
+
+The altar in the middle of the Dragon's Nest has **8 End Portal Frames**. Right-click a frame with a Summoning Eye to place it; right-click your own eye to take it back. When the eighth eye goes in, the Dragon Egg spawns, and 8 seconds later one of seven dragons rises:
+
+| Dragon | Chance | Health | Damage | Lightning |
+| --- | --- | --- | --- | --- |
+| Protector | 16% | 9,000,000 | 1,100 | |
+| Old | 16% | 15,000,000 | 1,100 | |
+| Wise | 16% | 9,000,000 | 2,200 | yes |
+| Unstable | 16% | 9,000,000 | 1,100 | yes |
+| Young | 16% | 7,500,000 | 1,100 | |
+| Strong | 16% | 9,000,000 | 1,100 | yes |
+| Superior | 4% | 12,000,000 | 1,650 | yes |
+
+Its health shows on a boss bar to everyone near the nest. If everyone leaves it alone for two minutes, it flies away (and the eyes are gone).
+
+**Loot.** When the dragon dies, everyone who hit it or placed an eye gets loot by their **Dragon Weight**:
+
+- **100** for every eye you placed;
+- a bonus for your damage rank: **300** for 1st, 250 for 2nd, 200 for 3rd, 125 for 4th, 110 for 5th, 100 for 6th to 8th, down to 70;
+- **100 ×** your damage compared with the top damager's.
+
+Your weight buys **one major drop at most**: the game goes down this list and gives you the first one you have the weight for that also passes its chance:
+
+| Drop | Weight | Chance |
+| --- | --- | --- |
+| Ender Dragon pet (Legendary) | 450 | 0.01% per eye you placed |
+| Ender Dragon pet (Epic) | 449 | 0.05% per eye |
+| Dragon Horn (Superior only) | 448 | 30% |
+| Aspect of the Dragons (not Superior) | 447 | 3% per eye |
+| Dragon Claw | 446 | 2% per eye |
+| The dragon's Chestplate | 410 | 30% |
+| The dragon's Leggings | 360 | 30% |
+| Dragon Scale (Young only) | 296 | 30% |
+| The dragon's Helmet | 295 | 30% |
+| The dragon's Boots | 290 | 30% |
+| Travel Scroll to the Dragon's Nest (Unstable only) | 250 | 35% |
+
+What's left of your weight turns into the dragon's **Fragments** (one per 22 weight, up to 32; the armour is crafted from them, 50 for a helmet), then **Enchanted Ender Pearls** and **Ender Pearls**.
+
 ## Fairy Souls
 
-Every island hides its own [Fairy Souls](the-hub#fairy-souls), four on each part: 8 on the Farming Islands, 8 in The Park, 4 in the Gold Mine, 4 in the Deep Caverns and 4 in the Spider's Den. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.
+Every island hides its own [Fairy Souls](the-hub#fairy-souls), four on each part: 8 on the Farming Islands, 8 in The Park, 4 in the Gold Mine, 4 in the Deep Caverns, 4 in the Spider's Den and 4 in The End. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.

@@ -1,0 +1,14 @@
+{
+  "name": "The End",
+  "description": "Endermen, Zealots and the Dragon's Nest",
+  "icon": "minecraft:ender_eye",
+  "dimension": "skyrpg_skyblock:the_end",
+  "pos": [
+    0.5,
+    67.0,
+    120.5
+  ],
+  "yaw": 180.0,
+  "area": "The End",
+  "order": 26
+}

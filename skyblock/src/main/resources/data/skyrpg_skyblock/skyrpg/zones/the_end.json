@@ -1,0 +1,134 @@
+{
+  "name": "The End",
+  "dimension": "skyrpg_skyblock:the_end",
+  "from": [
+    -69,
+    56,
+    71
+  ],
+  "to": [
+    149,
+    159,
+    149
+  ],
+  "blocks": {
+    "minecraft:end_stone": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 5
+    },
+    "minecraft:obsidian": {
+      "becomes": "minecraft:bedrock",
+      "regrow": 15
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:enderman",
+      "name": "Enderman",
+      "level": 42,
+      "health": 4500,
+      "damage": 500,
+      "xp": 28,
+      "coins": 10,
+      "max": 8,
+      "every": 4,
+      "from": [
+        25,
+        65,
+        90
+      ],
+      "to": [
+        45,
+        75,
+        118
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    },
+    {
+      "type": "minecraft:enderman",
+      "name": "Enderman",
+      "level": 45,
+      "health": 6000,
+      "damage": 600,
+      "xp": 34,
+      "coins": 10,
+      "max": 5,
+      "every": 6,
+      "from": [
+        60,
+        65,
+        72
+      ],
+      "to": [
+        85,
+        75,
+        88
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    },
+    {
+      "type": "minecraft:enderman",
+      "name": "Enderman",
+      "level": 50,
+      "health": 9000,
+      "damage": 700,
+      "xp": 40,
+      "coins": 10,
+      "max": 3,
+      "every": 8,
+      "from": [
+        84,
+        65,
+        124
+      ],
+      "to": [
+        112,
+        75,
+        136
+      ],
+      "drops": [
+        {
+          "item": "ENDER_PEARL",
+          "chance": 1,
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    {
+      "type": "minecraft:endermite",
+      "name": "Endermite",
+      "level": 37,
+      "health": 2000,
+      "damage": 400,
+      "xp": 8,
+      "coins": 10,
+      "max": 3,
+      "every": 10,
+      "from": [
+        84,
+        65,
+        70
+      ],
+      "to": [
+        104,
+        75,
+        82
+      ]
+    }
+  ]
+}
