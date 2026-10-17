@@ -255,7 +255,7 @@
           "name": "Fishing",
           "icon": "item/fishing_rod",
           "weight": 5,
-          "done": 10
+          "done": 55
         },
         {
           "name": "Events",

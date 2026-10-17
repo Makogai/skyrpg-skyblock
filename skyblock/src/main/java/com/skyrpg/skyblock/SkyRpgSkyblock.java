@@ -77,6 +77,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.bestiary.Bestiary.init();
         com.skyrpg.skyblock.museum.Museum.init();
         com.skyrpg.skyblock.cookie.BoosterCookie.init();
+        com.skyrpg.skyblock.fishing.SkyFishing.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();

@@ -322,6 +322,28 @@ phase so the next session can pick up where this one stopped.
       `skyrpg/kat`. `Kat` + `KatMenu` + `KatScreen` (the `kat` action; Kat's NPC at a Hub market stall, `/kat [finish]`
       for admins): one pet at a time, taken from the menu or the one out, real-time wait, ready message, claim sets its
       tier (XP kept). Not yet: Kat Flowers and Bouquets.
+- [x] **Fishing** (Hypixel's): research `docs/design/research/fishing.md`. `tools/skyblock/import_sea_creatures.py` writes
+      `skyrpg/skyblock_fishing`: 21 sea creatures (the hand table from the wiki mirror: pool, Fishing level, weight,
+      Fishing XP, damage, catch message; NEU's `*_SC` items: level, health, rarity, Combat XP, coins, drops with odds and
+      counts, books and pets, the look from its mobs render with head skins and dyed armour, Rider of the Deep's chicken),
+      the normal catches, Good/Great/Outstanding treasure (89/10/1) and 20 baits. The fishing mod got a SkyBlock hook
+      (`Catching.installSkyBlock`: the wait and the whole catch in SkyBlock worlds; `LavaFishing.allowElsewhere`).
+      `SkyFishing` (skyblock): Hypixel's wait (200-400 ticks × (1 - Fishing Speed / 300)), then a sea creature at Sea
+      Creature Chance (base now 20, a quarter on private islands; Double Hook), else treasure at Treasure Chance, else a
+      fish; items give Hypixel's own `FISH_ITEM` Fishing XP (from the items API); the first bait in the inventory counts
+      and one is used per catch. `SkySeaCreatures`: by Fishing level, fluid, island/zone and condition (Dark Bait at night,
+      Carrot Bait 5% Carrot King; Light/Dark/Whale Bait ×1.25 on the rare ones), surfaces at the bobber flung at you,
+      dressed (`Zones.dressAs`), targets you; the killer gets coins, drops (rare ones announced) and the Fishing XP (none
+      on private islands); rods hit them ×2; they leave after 6 minutes or when their fisher goes; max 20 each; no vanilla
+      loot (`NoVanillaLootMixin`). Any rod fishes the Crystal Hollows' lava (Flaming Worm, Lava Blaze, Lava Pigman).
+      `/sbfishing reel|creature` for admins. Survival enchant tomes no longer drop in SkyBlock.
+      Decided: no weight on the wiki for the Night Squid (600) or the Hollows lava creatures (300/200/200, XP from their
+      health); the Flaming Worm also in the Magma Fields (our Precursor Remnants has no lava); the Great and Outstanding
+      treasure lists came back short, so enchanted Pufferfish/Clownfish/Clay/Sponge/Ink/Prismarine fill them to 100;
+      treasure XP is the item's or 50/200/800 by tier; Hollows lava catches are lava items Hypixel gives Fishing XP for;
+      the Sea Guardian isn't in today's pool.
+      Not yet: trophy fish, hotspots, event sea creatures (Spooky, sharks, Jerry), Crimson Isle/Bayou/Galatea fishing,
+      Agarimoo, Fishing Fortune, rod parts, Fishing Bag and bait sacks.
 - [x] **Chat panels** (owner ask, 2026-10-16): a notice with lines under it goes out as ONE message (`Notice.Panel`,
       marker `skyrpg_chat.panel` with its colour); the chat mod paints it as a card (`ChatPanelLook`). Used by skill and
       SkyBlock level ups, collection tiers, unique minions, /pet and /pet storage. Use panels for every multi-line

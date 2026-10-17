@@ -95,7 +95,7 @@ public final class TomeDrops {
     }
 
     private static void onKill(ServerPlayer player, LivingEntity victim) {
-        if (victim.entityTags().contains(MobTags.FARMED)) {
+        if (victim.entityTags().contains(MobTags.FARMED) || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(victim.level())) {
             return;
         }
         RandomSource random = player.getRandom();
@@ -142,7 +142,8 @@ public final class TomeDrops {
 
     private static void onXp(ServerPlayer player, Identifier skill, double xp) {
         EnchantRules.SkillFind find = Enchants.rules().skillFinds().get(skill);
-        if (find == null || xp <= 0) {
+        // Tomes are survival's: SkyBlock has Hypixel's enchanted books instead.
+        if (find == null || xp <= 0 || com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(player.level())) {
             return;
         }
         RandomSource random = player.getRandom();

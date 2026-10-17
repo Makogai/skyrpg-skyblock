@@ -1,0 +1,1169 @@
+{
+ "creatures": [
+  {
+   "id": "SQUID",
+   "name": "Squid",
+   "rarity": "COMMON",
+   "fluid": "water",
+   "fishing_level": 1,
+   "weight": 1200,
+   "level": 1,
+   "health": 50.0,
+   "damage": 0,
+   "fishing_xp": 25,
+   "combat_xp": 3,
+   "coins": 1,
+   "message": "A Squid appeared.",
+   "look": {
+    "entity": "minecraft:squid"
+   },
+   "drops": [
+    {
+     "item": "INK_SACK",
+     "chance": 1,
+     "min": 2,
+     "max": 3
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "SQUID_BOOTS",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_INK_SACK",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "SEA_WALKER",
+   "name": "Sea Walker",
+   "rarity": "COMMON",
+   "fluid": "water",
+   "fishing_level": 1,
+   "weight": 800,
+   "level": 4,
+   "health": 100.0,
+   "damage": 10,
+   "fishing_xp": 25,
+   "combat_xp": 20,
+   "coins": 5,
+   "message": "You caught a Sea Walker.",
+   "look": {
+    "hand": {
+     "item": "minecraft:diamond_sword"
+    },
+    "head": {
+     "skin": "eyJ0aW1lc3RhbXAiOjE1MDc4MTY5NTgzMzQsInByb2ZpbGVJZCI6ImMxZWQ5N2Q0ZDE2NzQyYzI5OGI1ODFiZmRiODhhMjFmIiwicHJvZmlsZU5hbWUiOiJ5b2xvX21hdGlzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kODhiYThiYjUwYjc5ZTQ0MWU0N2I3ZTQ1Mjc2NGQ1ZmZmNjY5Mzc3OWQyZGFkZDlmN2Y1MmY5OGQ3ZWEwIn19fQ=="
+    },
+    "chest": {
+     "item": "minecraft:leather_chestplate"
+    },
+    "legs": {
+     "item": "minecraft:leather_leggings"
+    },
+    "feet": {
+     "item": "minecraft:leather_boots"
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "ROTTEN_FLESH",
+     "chance": 1.0,
+     "min": 5,
+     "max": 9
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "NIGHT_SQUID",
+   "name": "Night Squid",
+   "rarity": "COMMON",
+   "fluid": "water",
+   "fishing_level": 3,
+   "weight": 600,
+   "level": 6,
+   "health": 4000.0,
+   "damage": 0,
+   "fishing_xp": 270,
+   "combat_xp": 10,
+   "coins": 5,
+   "message": "Pitch darkness reveals a Night Squid.",
+   "look": {
+    "entity": "minecraft:squid"
+   },
+   "drops": [
+    {
+     "item": "INK_SACK",
+     "chance": 1.0,
+     "min": 6,
+     "max": 17
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_FISHING_SKILL_BOOST_UNCOMMON",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "SQUID_BOOTS",
+     "chance": 0.08,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_FISHING_SKILL_BOOST_RARE",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "dark_bait_night"
+  },
+  {
+   "id": "SEA_WITCH",
+   "name": "Sea Witch",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 7,
+   "weight": 700,
+   "level": 15,
+   "health": 6000.0,
+   "damage": 150,
+   "fishing_xp": 350,
+   "combat_xp": 30,
+   "coins": 10,
+   "message": "It looks like you've disrupted the Sea Witch's brewing session. Watch out, she's furious!",
+   "look": {
+    "entity": "minecraft:witch"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "RAW_FISH:1",
+     "chance": 1.0,
+     "min": 1,
+     "max": 3
+    },
+    {
+     "item": "RAW_FISH:2",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FAIRY_HELMET",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FAIRY_CHESTPLATE",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FAIRY_LEGGINGS",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FAIRY_BOOTS",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "SEA_ARCHER",
+   "name": "Sea Archer",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 9,
+   "weight": 550,
+   "level": 15,
+   "health": 7000.0,
+   "damage": 140,
+   "fishing_xp": 360,
+   "combat_xp": 20,
+   "coins": 10,
+   "message": "You reeled in a Sea Archer.",
+   "look": {
+    "hand": {
+     "item": "minecraft:bow"
+    },
+    "chest": {
+     "item": "minecraft:leather_chestplate",
+     "color": "0000FF"
+    },
+    "legs": {
+     "item": "minecraft:leather_leggings",
+     "color": "0000FF"
+    },
+    "feet": {
+     "item": "minecraft:leather_boots",
+     "color": "0000FF"
+    },
+    "entity": "minecraft:skeleton"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "BONE",
+     "chance": 1.0,
+     "min": 8,
+     "max": 13
+    },
+    {
+     "item": "ENCHANTED_BONE",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "RIDER_OF_THE_DEEP",
+   "name": "Rider of the Deep",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 11,
+   "weight": 400,
+   "level": 20,
+   "health": 20000.0,
+   "damage": 225,
+   "fishing_xp": 540,
+   "combat_xp": 15,
+   "coins": 10,
+   "message": "The Rider of the Deep has emerged.",
+   "look": {
+    "mount": "minecraft:chicken",
+    "hand": {
+     "item": "minecraft:diamond_sword"
+    },
+    "head": {
+     "item": "minecraft:chainmail_helmet"
+    },
+    "chest": {
+     "item": "minecraft:chainmail_chestplate"
+    },
+    "legs": {
+     "item": "minecraft:chainmail_leggings"
+    },
+    "feet": {
+     "item": "minecraft:chainmail_boots"
+    },
+    "baby": true,
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "DARK_BAIT",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "SPONGE",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:magnet:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_FEATHER",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_ROTTEN_FLESH",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "CATFISH",
+   "name": "Catfish",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 13,
+   "weight": 250,
+   "level": 23,
+   "health": 26000.0,
+   "damage": 250,
+   "fishing_xp": 737,
+   "combat_xp": 25,
+   "coins": 10,
+   "message": "Huh? A Catfish!",
+   "look": {
+    "entity": "minecraft:ocelot"
+   },
+   "drops": [
+    {
+     "item": "RAW_FISH:2",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 2,
+     "max": 3
+    },
+    {
+     "item": "RAW_FISH:3",
+     "chance": 1.0,
+     "min": 5,
+     "max": 5
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "RAW_FISH:1",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "SPONGE",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:frail:6",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "SEA_LEECH",
+   "name": "Sea Leech",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 16,
+   "weight": 160,
+   "level": 30,
+   "health": 60000.0,
+   "damage": 300,
+   "fishing_xp": 925,
+   "combat_xp": 35,
+   "coins": 50,
+   "message": "Gross! A Sea Leech!",
+   "look": {
+    "entity": "minecraft:silverfish"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 3,
+     "max": 4
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 10,
+     "max": 10
+    },
+    {
+     "item": "RAW_FISH:2",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "SPONGE",
+     "chance": 0.4,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:spiked_hook:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "GUARDIAN_DEFENDER",
+   "name": "Guardian Defender",
+   "rarity": "EPIC",
+   "fluid": "water",
+   "fishing_level": 17,
+   "weight": 130,
+   "level": 45,
+   "health": 70000.0,
+   "damage": 250,
+   "fishing_xp": 1125,
+   "combat_xp": 50,
+   "coins": 50,
+   "message": "You've discovered a Guardian Defender of the sea.",
+   "look": {
+    "entity": "minecraft:guardian"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 5,
+     "max": 7
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 15,
+     "max": 15
+    },
+    {
+     "item": "SPONGE",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:lure:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_PRISMARINE_CRYSTALS",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_PRISMARINE_SHARD",
+     "chance": 0.6,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "DEEP_SEA_PROTECTOR",
+   "name": "Deep Sea Protector",
+   "rarity": "EPIC",
+   "fluid": "water",
+   "fishing_level": 18,
+   "weight": 88,
+   "level": 60,
+   "health": 150000.0,
+   "damage": 300,
+   "fishing_xp": 1350,
+   "combat_xp": 75,
+   "coins": 100,
+   "message": "You have awoken the Deep Sea Protector, prepare for a battle!",
+   "look": {
+    "entity": "minecraft:iron_golem"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 12,
+     "max": 15
+    },
+    {
+     "item": "SPONGE",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RAW_FISH:2",
+     "chance": 1.0,
+     "min": 2,
+     "max": 3
+    },
+    {
+     "item": "ENCHANTED_IRON",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:angler:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "WATER_HYDRA",
+   "name": "Water Hydra",
+   "rarity": "LEGENDARY",
+   "fluid": "water",
+   "fishing_level": 19,
+   "weight": 18,
+   "level": 100,
+   "health": 500000.0,
+   "damage": 400,
+   "fishing_xp": 2380,
+   "combat_xp": 200,
+   "coins": 200,
+   "message": "The Water Hydra has come to test your strength.",
+   "look": {
+    "hand": {
+     "item": "minecraft:diamond_sword"
+    },
+    "head": {
+     "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY2MDk1ODgxMzQ0NywKICAicHJvZmlsZUlkIiA6ICJjOTgyNzhiY2Y0YzI0ZWM4ODQxMDE1MzRhNWIyN2Y3NSIsCiAgInByb2ZpbGVOYW1lIiA6ICJnYWlhX2xpbmsiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ2YmNkM2JlYTBkZmYxZjQ1ZDgwOGU3YTg1NTBmOTUxMDZhZjQxYjZkOGQxOGEwNzkzZTE5YzkyNTVhZTg0NSIKICAgIH0KICB9Cn0="
+    },
+    "chest": {
+     "item": "minecraft:leather_chestplate",
+     "color": "04007B"
+    },
+    "legs": {
+     "item": "minecraft:leather_leggings",
+     "color": "04007B"
+    },
+    "feet": {
+     "item": "minecraft:leather_boots",
+     "color": "04007B"
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "RAW_FISH:2",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "RAW_FISH:1",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "RAW_FISH:3",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "SPONGE",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 16,
+     "max": 18
+    },
+    {
+     "item": "FISH_AFFINITY_TALISMAN",
+     "chance": 0.3,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "WATER_HYDRA_HEAD",
+     "chance": 0.14,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_FISHING_SKILL_BOOST_EPIC",
+     "chance": 0.0004,
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "CARROT_KING",
+   "name": "Carrot King",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 15,
+   "weight": 0,
+   "level": 25,
+   "health": 32000.0,
+   "damage": 275,
+   "fishing_xp": 787,
+   "combat_xp": 30,
+   "coins": 30,
+   "message": "Is that even a fish? It's the Carrot King!",
+   "look": {
+    "entity": "minecraft:rabbit",
+    "variant": "evil"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 2,
+     "max": 3
+    },
+    {
+     "item": "SPONGE",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:caster:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_CARROT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RABBIT_HAT",
+     "chance": 0.25,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_RABBIT_FOOT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_LUCKY_CLOVER_DROP",
+     "chance": 0.0066,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "carrot_bait"
+  },
+  {
+   "id": "OASIS_SHEEP",
+   "name": "Oasis Sheep",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 10,
+   "weight": 700,
+   "level": 10,
+   "health": 10000.0,
+   "damage": 0,
+   "fishing_xp": 40,
+   "combat_xp": 10,
+   "coins": 5,
+   "message": "An Oasis Sheep appears from the water.",
+   "look": {
+    "entity": "minecraft:sheep"
+   },
+   "drops": [
+    {
+     "item": "MUTTON",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "WOOL",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_MUTTON",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_COOKED_MUTTON",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "zones": [
+     "Mushroom Desert"
+    ]
+   }
+  },
+  {
+   "id": "OASIS_RABBIT",
+   "name": "Oasis Rabbit",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 10,
+   "weight": 300,
+   "level": 10,
+   "health": 10000.0,
+   "damage": 0,
+   "fishing_xp": 40,
+   "combat_xp": 0,
+   "coins": 0,
+   "message": "An Oasis Rabbit appears from the water.",
+   "look": {
+    "entity": "minecraft:rabbit"
+   },
+   "drops": [
+    {
+     "item": "WATER_LILY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "RABBIT_FOOT",
+     "chance": 0.7,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RABBIT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "RABBIT_HIDE",
+     "chance": 0.7,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_RABBIT",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "zones": [
+     "Mushroom Desert"
+    ]
+   }
+  },
+  {
+   "id": "MITHRIL_GRUBBER",
+   "name": "Mithril Grubber",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 6,
+   "weight": 385,
+   "level": 15,
+   "health": 6000.0,
+   "damage": 150,
+   "fishing_xp": 290,
+   "combat_xp": 20,
+   "coins": 10,
+   "message": "A leech of the mines surfaces... you've caught a Mithril Grubber.",
+   "look": {
+    "entity": "minecraft:silverfish"
+   },
+   "drops": [
+    {
+     "item": "MITHRIL_ORE",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "RAW_FISH",
+     "chance": 1.0,
+     "min": 4,
+     "max": 8
+    },
+    {
+     "item": "ENCHANTED_MITHRIL",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:dwarven_mines"
+   }
+  },
+  {
+   "id": "WATER_WORM",
+   "name": "Water Worm",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 15,
+   "weight": 300,
+   "level": 20,
+   "health": 50000.0,
+   "damage": 300,
+   "fishing_xp": 887,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "A Water Worm surfaces!",
+   "look": {
+    "entity": "minecraft:silverfish"
+   },
+   "drops": [
+    {
+     "item": "ROUGH_AMBER_GEM",
+     "chance": 1.0,
+     "min": 10,
+     "max": 17
+    },
+    {
+     "item": "WORM_MEMBRANE",
+     "chance": 0.15,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows",
+    "zones": [
+     "Goblin Holdout"
+    ]
+   }
+  },
+  {
+   "id": "POISONED_WATER_WORM",
+   "name": "Poisoned Water Worm",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 17,
+   "weight": 300,
+   "level": 25,
+   "health": 75000.0,
+   "damage": 400,
+   "fishing_xp": 1037,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "A Poisoned Water Worm surfaces!",
+   "look": {
+    "entity": "minecraft:endermite"
+   },
+   "drops": [
+    {
+     "item": "ROUGH_AMBER_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 30
+    },
+    {
+     "item": "HARD_STONE",
+     "chance": 1.0,
+     "min": 10,
+     "max": 10
+    },
+    {
+     "item": "WORM_MEMBRANE",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows",
+    "zones": [
+     "Goblin Holdout"
+    ]
+   }
+  },
+  {
+   "id": "ZOMBIE_MINER",
+   "name": "Abyssal Miner",
+   "rarity": "LEGENDARY",
+   "fluid": "water",
+   "fishing_level": 24,
+   "weight": 90,
+   "level": 150,
+   "health": 2000000.0,
+   "damage": 1300,
+   "fishing_xp": 3640,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "An Abyssal Miner breaks out of the water!",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "FLAWED_AMETHYST_GEM",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FLAWED_JADE_GEM",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "FLAWED_SAPPHIRE_GEM",
+     "chance": 0.2,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ROUGH_AMETHYST_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "ROUGH_JADE_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "ROUGH_SAPPHIRE_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 20
+    },
+    {
+     "item": "QUARTZ",
+     "chance": 1.0,
+     "min": 10,
+     "max": 10
+    },
+    {
+     "item": "book:piscary:6",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows"
+   }
+  },
+  {
+   "id": "FLAMING_WORM",
+   "name": "Flaming Worm",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 19,
+   "weight": 300,
+   "level": 50,
+   "health": 100000.0,
+   "damage": 350,
+   "fishing_xp": 1100,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "A Flaming Worm surfaces from the depths!",
+   "look": {
+    "entity": "minecraft:silverfish"
+   },
+   "drops": [
+    {
+     "item": "ROUGH_SAPPHIRE_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 30
+    },
+    {
+     "item": "ETERNAL_FLAME_RING",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "WORM_MEMBRANE",
+     "chance": 0.25,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows",
+    "zones": [
+     "Precursor Remnants",
+     "Magma Fields"
+    ]
+   }
+  },
+  {
+   "id": "LAVA_BLAZE",
+   "name": "Lava Blaze",
+   "rarity": "EPIC",
+   "fluid": "lava",
+   "fishing_level": 20,
+   "weight": 200,
+   "level": 100,
+   "health": 400000.0,
+   "damage": 700,
+   "fishing_xp": 2000,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "A Lava Blaze has surfaced from the depths!",
+   "look": {
+    "entity": "minecraft:blaze"
+   },
+   "drops": [
+    {
+     "item": "ROUGH_TOPAZ_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 30
+    },
+    {
+     "item": "BLAZE_ROD",
+     "chance": 1.0,
+     "min": 5,
+     "max": 5
+    },
+    {
+     "item": "ETERNAL_FLAME_RING",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "MAGMA_CORE",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BLAZEN_SPHERE",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows",
+    "zones": [
+     "Magma Fields"
+    ]
+   }
+  },
+  {
+   "id": "LAVA_PIGMAN",
+   "name": "Lava Pigman",
+   "rarity": "EPIC",
+   "fluid": "lava",
+   "fishing_level": 22,
+   "weight": 200,
+   "level": 100,
+   "health": 450000.0,
+   "damage": 750,
+   "fishing_xp": 2100,
+   "combat_xp": 10,
+   "coins": 10,
+   "message": "A Lava Pigman arose from the depths!",
+   "look": {
+    "entity": "minecraft:zombified_piglin"
+   },
+   "drops": [
+    {
+     "item": "ROUGH_TOPAZ_GEM",
+     "chance": 1.0,
+     "min": 20,
+     "max": 30
+    },
+    {
+     "item": "ETERNAL_FLAME_RING",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "MAGMA_CORE",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crystal_hollows",
+    "zones": [
+     "Magma Fields"
+    ]
+   }
+  }
+ ]
+}

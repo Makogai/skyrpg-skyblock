@@ -46,8 +46,8 @@ public final class StatTypes {
     public static final StatType COMBAT_WISDOM = add("combat_wisdom", "Combat Wisdom", "\uE10F", 0xFF3FD0D4, 0, false,
             "Each point is 1% more Combat XP.");
     public static final StatType FISHING_SPEED = add("fishing_speed", "Fishing Speed", "\uE114", 0xFF55FFFF, 0, false,
-            "Fish bite sooner. Every 25 is one more level of Lure, up to four.");
-    public static final StatType SEA_CREATURE_CHANCE = add("sea_creature_chance", "Sea Creature Chance", "\uE115", 0xFF3FA9F5, 5, true,
+            "Fish bite sooner: the wait is cut by Fishing Speed / 300.");
+    public static final StatType SEA_CREATURE_CHANCE = add("sea_creature_chance", "Sea Creature Chance", "\uE115", 0xFF3FA9F5, 20, true,
             "The chance that your line pulls up a sea creature instead of a fish.");
     public static final StatType FISHING_FORTUNE = add("fishing_fortune", "Fishing Fortune", "\uE116", 0xFFFFAA00, 0, false,
             "More Tidescales from your catches. Every 100 is one more.");
@@ -102,7 +102,7 @@ public final class StatTypes {
     public static final StatType DOUBLE_HOOK_CHANCE = add("double_hook_chance", "Double Hook Chance", "\u2693", 0xFF5555FF, 0, true,
             "A chance to hook two sea creatures at once.");
     public static final StatType TREASURE_CHANCE = add("treasure_chance", "Treasure Chance", "\u26C3", 0xFFFFAA00, 0, true,
-            "Better odds of fishing up treasure.");
+            "The chance a bite that isn't a sea creature is treasure.");
     public static final StatType TROPHY_FISH_CHANCE = add("trophy_fish_chance", "Trophy Fish Chance", "\u2654", 0xFFFFAA00, 0, true,
             "Better odds of catching trophy fish.");
     public static final StatType BONUS_PEST_CHANCE = add("bonus_pest_chance", "Bonus Pest Chance", "\u0D60", 0xFF55FF55, 0, true,

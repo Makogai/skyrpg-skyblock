@@ -31,14 +31,21 @@ public final class LavaFishing {
     public static final TagKey<Item> LAVA_RODS = TagKey.create(Registries.ITEM, SkyRpgFishing.id("lava_rods"));
     public static final ResourceKey<LootTable> CATCHES = ResourceKey.create(Registries.LOOT_TABLE, SkyRpgFishing.id("gameplay/lava_fishing"));
 
+    /** Other places a player's bobber floats on lava (SkyBlock's Crystal Hollows): set on both sides, so they agree. */
+    private static java.util.function.BiPredicate<Player, Level> elsewhere = (player, level) -> false;
+
     private LavaFishing() {
     }
 
-    /** A hook that treats lava as water: its owner holds a lava rod, in the Nether. */
+    public static void allowElsewhere(java.util.function.BiPredicate<Player, Level> rule) {
+        elsewhere = rule;
+    }
+
+    /** A hook that treats lava as water: its owner holds a lava rod, in the Nether (or another place that allows it). */
     public static boolean isLavaHook(FishingHook hook) {
         Player owner = hook.getPlayerOwner();
-        return owner != null && hook.level().dimension() == Level.NETHER
-                && (owner.getMainHandItem().is(LAVA_RODS) || owner.getOffhandItem().is(LAVA_RODS));
+        return owner != null && (hook.level().dimension() == Level.NETHER
+                && (owner.getMainHandItem().is(LAVA_RODS) || owner.getOffhandItem().is(LAVA_RODS)) || elsewhere.test(owner, hook.level()));
     }
 
     /** A lava hook that is in lava right now: what it catches is lava fishing's. */

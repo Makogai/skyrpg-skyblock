@@ -1,0 +1,266 @@
+{
+ "normal": {
+  "water": [
+   {
+    "item": "RAW_FISH",
+    "weight": 220
+   },
+   {
+    "item": "RAW_FISH:1",
+    "weight": 150
+   },
+   {
+    "item": "RAW_FISH:2",
+    "weight": 100
+   },
+   {
+    "item": "RAW_FISH:3",
+    "weight": 80
+   }
+  ],
+  "lava": [
+   {
+    "item": "NETHERRACK",
+    "weight": 30
+   },
+   {
+    "item": "MAGMA_CREAM",
+    "weight": 20
+   },
+   {
+    "item": "BLAZE_POWDER",
+    "weight": 15
+   },
+   {
+    "item": "GLOWSTONE_DUST",
+    "weight": 15
+   },
+   {
+    "item": "QUARTZ",
+    "weight": 10
+   },
+   {
+    "item": "NETHER_STALK",
+    "weight": 10
+   }
+  ]
+ },
+ "treasure": {
+  "good": [
+   {
+    "item": "RAW_FISH",
+    "count": 16,
+    "weight": 22
+   },
+   {
+    "item": "RAW_FISH:1",
+    "count": 16,
+    "weight": 15
+   },
+   {
+    "item": "RAW_FISH:2",
+    "count": 12,
+    "weight": 10
+   },
+   {
+    "item": "CLAY_BALL",
+    "count": 32,
+    "weight": 10
+   },
+   {
+    "item": "SPONGE",
+    "count": 16,
+    "weight": 10
+   },
+   {
+    "item": "RAW_FISH:3",
+    "count": 12,
+    "weight": 8
+   },
+   {
+    "item": "PRISMARINE_SHARD",
+    "count": 8,
+    "weight": 5
+   },
+   {
+    "item": "PRISMARINE_CRYSTALS",
+    "count": 8,
+    "weight": 5
+   },
+   {
+    "item": "GRAND_EXP_BOTTLE",
+    "count": 4,
+    "weight": 5
+   },
+   {
+    "item": "coins:25000-50000",
+    "count": 1,
+    "weight": 10
+   }
+  ],
+  "great": [
+   {
+    "item": "ENCHANTED_RAW_FISH",
+    "count": 4,
+    "weight": 19.64
+   },
+   {
+    "item": "ENCHANTED_RAW_SALMON",
+    "count": 4,
+    "weight": 13.39
+   },
+   {
+    "item": "ENCHANTED_CLOWNFISH",
+    "count": 3,
+    "weight": 8.93
+   },
+   {
+    "item": "TITANIC_EXP_BOTTLE",
+    "count": 1,
+    "weight": 8.93
+   },
+   {
+    "item": "pet:SQUID:COMMON",
+    "count": 1,
+    "weight": 6.7
+   },
+   {
+    "item": "coins:100000-250000",
+    "count": 1,
+    "weight": 8.93
+   },
+   {
+    "item": "ENCHANTED_PUFFERFISH",
+    "count": 3,
+    "weight": 8.93
+   },
+   {
+    "item": "ENCHANTED_CLAY_BALL",
+    "count": 4,
+    "weight": 8.93
+   },
+   {
+    "item": "ENCHANTED_SPONGE",
+    "count": 1,
+    "weight": 8.93
+   },
+   {
+    "item": "ENCHANTED_INK_SACK",
+    "count": 2,
+    "weight": 6.7
+   }
+  ],
+  "outstanding": [
+   {
+    "item": "ENCHANTED_RAW_FISH",
+    "count": 32,
+    "weight": 17.39
+   },
+   {
+    "item": "pet:SQUID:EPIC",
+    "count": 1,
+    "weight": 15.81
+   },
+   {
+    "item": "ENCHANTED_RAW_SALMON",
+    "count": 32,
+    "weight": 11.86
+   },
+   {
+    "item": "pet:SQUID:LEGENDARY",
+    "count": 1,
+    "weight": 7.91
+   },
+   {
+    "item": "coins:500000-1000000",
+    "count": 1,
+    "weight": 7.91
+   },
+   {
+    "item": "ENCHANTED_PUFFERFISH",
+    "count": 32,
+    "weight": 11.86
+   },
+   {
+    "item": "ENCHANTED_CLOWNFISH",
+    "count": 24,
+    "weight": 11.86
+   },
+   {
+    "item": "ENCHANTED_SPONGE",
+    "count": 8,
+    "weight": 7.91
+   },
+   {
+    "item": "ENCHANTED_PRISMARINE_CRYSTALS",
+    "count": 8,
+    "weight": 7.49
+   }
+  ]
+ },
+ "tiers": {
+  "good": 89,
+  "great": 10,
+  "outstanding": 1
+ },
+ "baits": {
+  "MINNOW_BAIT": {
+   "speed": 25
+  },
+  "FISH_BAIT": {
+   "speed": 45
+  },
+  "LIGHT_BAIT": {
+   "rare": "day"
+  },
+  "DARK_BAIT": {
+   "rare": "night"
+  },
+  "SPIKED_BAIT": {
+   "sea_creature_chance": 6
+  },
+  "SPOOKY_BAIT": {
+   "speed": 25
+  },
+  "CARROT_BAIT": {
+   "carrot_king": 0.05
+  },
+  "BLESSED_BAIT": {
+   "blessed": 0.5
+  },
+  "ICE_BAIT": {
+   "speed": 25,
+   "sea_creature_chance": 4
+  },
+  "GLOWY_CHUM_BAIT": {
+   "speed": 25,
+   "sea_creature_chance": 3
+  },
+  "HOT_BAIT": {
+   "speed": 15
+  },
+  "WORM_BAIT": {
+   "speed": 60,
+   "hollows": true
+  },
+  "GOLDEN_BAIT": {
+   "treasure_chance": 4
+  },
+  "FROZEN_BAIT": {
+   "speed": 50,
+   "sea_creature_chance": 8
+  },
+  "WHALE_BAIT": {
+   "speed": 30,
+   "rare": "always"
+  },
+  "TREASURE_BAIT": {
+   "speed": 10,
+   "treasure_chance": 2
+  },
+  "SHARK_BAIT": {},
+  "HOTSPOT_BAIT": {},
+  "CORRUPTED_BAIT": {},
+  "WOODEN_BAIT": {}
+ }
+}

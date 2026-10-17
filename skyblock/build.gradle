@@ -8,6 +8,7 @@ dependencies {
     implementation project(':economy')
     implementation project(':pets')
     implementation project(':combat')
+    implementation project(':fishing')
     // Client code builds on core's client UI (theme, drawing). Compile-only: at runtime it comes from core's jar.
     clientCompileOnly coreClient
 }

@@ -47,7 +47,37 @@ public final class Catching {
     private static final int TICKS_PER_SPEED = 4;
     private static final int MAX_EXTRA_LURE = 400;
 
+    /** SkyBlock's own fishing, installed by the SkyBlock module: in SkyBlock worlds it decides the wait and the whole catch. */
+    public interface SkyBlockFishing {
+        /** Ticks before a fish comes to the bobber (at least 1). */
+        int waitTicks(FishingHook hook, ServerPlayer player);
+
+        /** Reeling in a bite: the sea creature, treasure or fish, and its Fishing XP. True when it handled the catch. */
+        boolean reel(FishingHook hook, ServerPlayer player, ItemStack rod);
+    }
+
+    private static SkyBlockFishing skyBlock;
+
     private Catching() {
+    }
+
+    public static void installSkyBlock(SkyBlockFishing fishing) {
+        skyBlock = fishing;
+    }
+
+    /** True where SkyBlock's fishing replaces this mod's (every SkyBlock world, once the SkyBlock module is in). */
+    public static boolean skyBlockFishing(net.minecraft.world.level.Level level) {
+        return skyBlock != null && com.skyrpg.core.world.SkyBlockWorlds.isSkyBlock(level);
+    }
+
+    /** Vanilla's wait before a fish comes ({@code vanilla} ticks), or SkyBlock's in a SkyBlock world. */
+    public static int waitTicks(FishingHook hook, ServerPlayer player, int vanilla) {
+        return skyBlockFishing(hook.level()) ? Math.max(1, skyBlock.waitTicks(hook, player)) : vanilla;
+    }
+
+    /** In a SkyBlock world, SkyBlock's fishing takes the bite (true: nothing else of vanilla's or ours happens). */
+    public static boolean reelSkyBlock(FishingHook hook, ServerPlayer player, ItemStack rod) {
+        return skyBlockFishing(hook.level()) && skyBlock.reel(hook, player, rod);
     }
 
     public static int extraLureTicks(ServerPlayer player) {

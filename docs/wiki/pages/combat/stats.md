@@ -94,7 +94,10 @@ You have `100 + Intelligence` maximum mana. Mana regenerates by **2% of your max
 | Mining Fortune | 0 | Extra drops from ores. |
 | Farming Fortune | 0 | Extra drops from crops. |
 | Foraging Fortune | 0 | Extra drops from logs. |
-| Fishing Speed | 0 | Fish bite sooner. Every 25 is one more level of Lure, up to four. |
+| Fishing Speed | 0 | Fish bite sooner: the wait is cut by Fishing Speed / 300, so 300 makes them bite straight away. |
+| Sea Creature Chance | 20% | The chance a bite is a sea creature. |
+| Treasure Chance | 0% | The chance a bite that isn't a sea creature is treasure. Every Fishing level adds 0.1%. |
+| Double Hook Chance | 0% | The chance a second sea creature comes up with the first. |
 
 ### Fortune
 
@@ -121,7 +124,7 @@ Hypixel's items list many more stats. They show on tooltips and add up in your t
 - **Combat:** Bonus Attack Speed, Ferocity, Ability Damage, Weapon Ability Damage, Swing Range, Sweep, Health Regen, Mending, Fear.
 - **Mining:** Breaking Power, Pristine, Mining Spread, and Ore, Block, Dwarven Metal and Gemstone Fortune.
 - **Farming and foraging:** the crop Fortunes (Wheat, Carrot, Potato, Pumpkin, Melon, Mushroom, Cactus, Sugar Cane, Nether Wart, Cocoa Beans) and Fig, Mangrove and Helix Fortune.
-- **Fishing:** Sea Creature Chance (starts at 5%, but sea creatures do not spawn in SkyBlock yet), Fishing Fortune (it only boosted the survival world's Tidescales), Double Hook Chance, Treasure Chance and Trophy Fish Chance.
+- **Fishing:** Fishing Fortune (it only boosted the survival world's Tidescales) and Trophy Fish Chance.
 - **Other:** Pet Luck, Bonus Pest Chance, Heat, Cold and Pressure Resistance, Respiration, Tracking, Pull, and the Rift stats.
 
 They start working as their systems land.

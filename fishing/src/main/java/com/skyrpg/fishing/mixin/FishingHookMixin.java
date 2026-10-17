@@ -9,6 +9,7 @@ import com.skyrpg.fishing.Catching;
 import com.skyrpg.fishing.FishingItems;
 import com.skyrpg.fishing.Hotspots;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -70,7 +71,10 @@ abstract class FishingHookMixin implements BaitHolder {
 
     @Inject(method = "<init>(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;II)V", at = @At("RETURN"))
     private void skyrpg$fishingSpeed(Player player, Level level, int luck, int lureSpeed, CallbackInfo ci) {
-        if (player instanceof ServerPlayer serverPlayer) {
+        if (player instanceof ServerPlayer serverPlayer && Catching.skyBlockFishing(level)) {
+            // SkyBlock's fishing works out its own wait (see skyrpg$wait).
+            this.lureSpeed = 0;
+        } else if (player instanceof ServerPlayer serverPlayer) {
             skyrpg$bait = Bait.pick(serverPlayer);
             this.lureSpeed = lureSpeed + Catching.extraLureTicks(serverPlayer, skyrpg$bait == null ? 0 : skyrpg$bait.fishingSpeed());
             skyrpg$baseLure = this.lureSpeed;
@@ -86,9 +90,20 @@ abstract class FishingHookMixin implements BaitHolder {
     /** A bobber inside a hotspot gets its Fishing Speed (the hotspot is where the bobber is, so this is re-checked every tick). */
     @Inject(method = "catchingFish", at = @At("HEAD"))
     private void skyrpg$hotspotSpeed(BlockPos pos, CallbackInfo ci) {
-        if (skyrpg$ready) {
+        if (skyrpg$ready && !Catching.skyBlockFishing(((FishingHook) (Object) this).level())) {
             lureSpeed = skyrpg$baseLure + Catching.speedTicks(Hotspots.speedAt((FishingHook) (Object) this));
         }
+    }
+
+    /** The wait before a fish comes (vanilla rolls 100 to 600 ticks): SkyBlock's own, in a SkyBlock world. */
+    @WrapOperation(method = "catchingFish", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/Mth;nextInt(Lnet/minecraft/util/RandomSource;II)I"))
+    private int skyrpg$wait(RandomSource random, int min, int max, Operation<Integer> original) {
+        int ticks = original.call(random, min, max);
+        FishingHook hook = (FishingHook) (Object) this;
+        if (min == 100 && max == 600 && hook.getPlayerOwner() instanceof ServerPlayer player) {
+            return Catching.waitTicks(hook, player, ticks);
+        }
+        return ticks;
     }
 
     /** Bite cues (the "!" and "!!!" over the bobber and the ding) and the bait's particles. */
@@ -118,6 +133,12 @@ abstract class FishingHookMixin implements BaitHolder {
     private void skyrpg$beforeRetrieve(ItemStack rod, CallbackInfoReturnable<Integer> cir) {
         FishingHook hook = (FishingHook) (Object) this;
         skyrpg$biting = !hook.level().isClientSide() && hookedIn == null && nibble > 0 && hook.getPlayerOwner() instanceof ServerPlayer;
+        if (skyrpg$biting && Catching.reelSkyBlock(hook, (ServerPlayer) hook.getPlayerOwner(), rod)) {
+            skyrpg$biting = false;
+            hook.discard();
+            cir.setReturnValue(1);
+            return;
+        }
         if (skyrpg$biting && Catching.trySeaCreature(hook, (ServerPlayer) hook.getPlayerOwner())) {
             hook.discard();
             cir.setReturnValue(1);
