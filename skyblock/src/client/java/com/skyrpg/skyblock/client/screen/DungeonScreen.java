@@ -23,6 +23,13 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
     private static final ItemStack[] FLOOR_ICONS = {new ItemStack(Items.SKELETON_SKULL), new ItemStack(Items.ZOMBIE_HEAD), new ItemStack(Items.REDSTONE),
             new ItemStack(Items.SPLASH_POTION), new ItemStack(Items.GHAST_TEAR), new ItemStack(Items.ENDER_PEARL), new ItemStack(Items.CLAY_BALL),
             new ItemStack(Items.WITHER_SKELETON_SKULL)};
+    /** Each class: its passive, its ability (drop key) and its ultimate (sneak + drop key). */
+    private static final String[][] CLASS_INFO = {
+            {"Heals allies within 8 blocks (1% health a second)", "Healing Circle: heal allies nearby 25% (10s)", "Wish: everyone to full health, +20% absorption (120s)"},
+            {"+100 Intelligence (+3 a level), -25% ability cooldowns", "Guided Sheep: a blast 10 blocks ahead (30s)", "Thunderstorm: lightning on mobs around you for 10s (100s)"},
+            {"+20 Strength (+1 a level)", "Throwing Axe: hits the first mob in 15 blocks (10s)", "Ragnarok: +100 Strength and Speed for 15s (60s)"},
+            {"+10 Crit Damage (+1 a level)", "Explosive Shot: three blasts where you aim (40s)", "Rapid Fire: five shots a second at your target for 4s (100s)"},
+            {"+100 Health, +50 Defense (more each level)", "Seismic Wave: mobs within 7 blocks, more with Defense (15s)", "Castle of Stone: take 70% less damage for 20s (150s)"}};
     private static final int RED = 0xFFE04848;
     private static final int CLASS_Y = 46;
     private static final int FLOOR_Y = 100;
@@ -68,6 +75,12 @@ public final class DungeonScreen extends AbstractContainerScreen<DungeonMenu> {
             Draw.fit(g, font, Component.literal(CLASSES[i]), x + 23, y + 7, classW() - 26, 0.75f, 0.45f, Draw.Align.LEFT,
                     picked ? Theme.GREEN : Theme.TEXT, false);
             Draw.fit(g, font, Component.literal("Level " + view.classLevel(i)), x + 23, y + 19, classW() - 26, 0.65f, 0.4f, Draw.Align.LEFT, Theme.MUTED, false);
+            if (hover) {
+                Draw.queueTooltip(List.of(Component.literal(CLASSES[i]).withColor(Theme.GREEN),
+                        Component.literal(CLASS_INFO[i][0]).withColor(Theme.MUTED), Component.empty(),
+                        Component.literal("Drop key: " + CLASS_INFO[i][1]).withColor(Theme.TEXT),
+                        Component.literal("Sneak + drop key: " + CLASS_INFO[i][2]).withColor(0xFFFFAA00)), Theme.GREEN);
+            }
         }
         Draw.fit(g, font, Component.literal(view.leader() ? "Pick a floor" : "Your party's leader picks the floor"), leftPos + 10, topPos + FLOOR_Y - 11, 200,
                 0.8f, 0.5f, Draw.Align.LEFT, Theme.MUTED, false);

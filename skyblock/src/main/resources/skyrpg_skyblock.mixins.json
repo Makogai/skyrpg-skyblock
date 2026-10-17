@@ -8,6 +8,7 @@
     "BrewingStandAccess",
     "BrewingStandTickMixin",
     "CommonListenerAccess",
+    "DungeonDropMixin",
     "EntityDataAccess",
     "ConnectionMixin",
     "HandshakeMixin",

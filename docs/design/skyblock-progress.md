@@ -514,6 +514,17 @@ phase so the next session can pick up where this one stopped.
       (crashed the build).
       Decided: Hypixel's Weirdos lines are fixed riddles; ours are generated with the same "one tells the truth" rule.
 
+- [x] **Dungeon classes** (`dungeon/Classes`, `mixin/DungeonDropMixin`): in a run the drop key is the class ability and
+      sneak + drop the ultimate (`ServerPlayer.drop` cancelled, the slot resynced); cooldowns; passives as a stat source
+      (Mage +100 Int +3/level and -25% cooldowns, Berserk +20 Str +1/level, Archer +10 Crit Damage +1/level, Tank +100
+      Health/+50 Defense + level; Healer's aura heals allies in 8 blocks 1%/s). Abilities: Healing Circle, Guided Sheep
+      (blast), Throwing Axe (first mob in line), Explosive Shot (three blasts), Seismic Wave (scales with Defense);
+      ultimates: Wish, Thunderstorm (visual lightning + damage), Ragnarok (+100 Str/Speed), Rapid Fire, Castle of Stone
+      (-70% via `IncomingDamage`). Damage is indirect magic scaled by Int or Str like item abilities. Mort's class cards
+      have a tooltip with all three.
+      Decided: our numbers and cooldowns (Hypixel's class pages 404'd); drop = ability, sneak + drop = ultimate.
+      Not yet: ghost abilities, Hypixel's full passive lists (Renew, Orbies, Bloodlust, Doubleshoot...), class milestones.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

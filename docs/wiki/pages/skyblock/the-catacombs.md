@@ -53,6 +53,18 @@ The sidebar shows the run: time, rooms cleared, secrets found, your keys, and yo
 
 **Bonzo** (Floor I, 250,000 health) throws balloons that burst around you and calls his undead. When he falls he gets back up once ("Oh, I'm not done yet!") with all his health, faster. Beat him again to win. Floors II to VII have their real bosses' health but Bonzo's fight for now.
 
+## Classes
+
+Pick one at Mort before the run (hover a class there for what it does). In a run, the **drop key** (Q) uses your class **ability** and **sneak + drop key** your **ultimate**; nothing is dropped. The class's bonuses grow with its level.
+
+| Class | Passive | Ability (drop key) | Ultimate (sneak + drop key) |
+| --- | --- | --- | --- |
+| Healer | Allies within 8 blocks heal 1% of their health a second | Healing Circle: allies nearby heal 25% (10 s) | Wish: everyone to full health, +20% absorption (120 s) |
+| Mage | +100 Intelligence (+3 a level), abilities 25% faster | Guided Sheep: a blast 10 blocks ahead (30 s) | Thunderstorm: lightning on mobs around you for 10 s (100 s) |
+| Berserk | +20 Strength (+1 a level) | Throwing Axe: hits the first mob in 15 blocks (10 s) | Ragnarok: +100 Strength and Speed for 15 s (60 s) |
+| Archer | +10 Crit Damage (+1 a level) | Explosive Shot: three blasts where you aim (40 s) | Rapid Fire: five shots a second at your target for 4 s (100 s) |
+| Tank | +100 Health and +50 Defense (more each level) | Seismic Wave: mobs within 7 blocks, more with Defense (15 s) | Castle of Stone: 70% less damage for 20 s (150 s) |
+
 ## Score
 
 | Part | Out of | How |
@@ -84,4 +96,4 @@ Floor I's chests hold Undead Essence and Bonzo Fragments, sometimes a Hot Potato
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, class abilities, the dungeon map, Floors II-VII's own bosses, Master Mode, dungeon item stats, stars and essence shops.
+> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, minibosses, crypts and the Mimic, blessings, ghost abilities, the dungeon map, Floors II-VII's own bosses, Master Mode, dungeon item stats, stars and essence shops.
