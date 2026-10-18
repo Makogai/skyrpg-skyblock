@@ -1,6 +1,6 @@
 {
  "skyblock_id": "RETIA_FORTA",
- "base": "minecraft:paper",
+ "base": "minecraft:mangrove_trapdoor",
  "name": "Greater Huntrap",
  "rarity": "epic",
  "category": "TRAP",

@@ -142,6 +142,15 @@ public final class Hunting {
         return null;
     }
 
+    /** The shard a named Galatea mob carries (its name, without level and health; Chillblades and Chillshots: Chill), or null. */
+    static Shard shardOf(net.minecraft.world.entity.LivingEntity mob) {
+        if (mob.getCustomName() == null) {
+            return null;
+        }
+        String name = mob.getCustomName().getString().replaceAll("^\\[.*?\\]\\s*", "").replaceAll("\\s*[\\d,./]+.*$", "").trim();
+        return byName(name.equals("Chillblade") || name.equals("Chillshot") ? "Chill" : name);
+    }
+
     static int rarity(Shard shard) {
         return Math.max(0, RARITIES.indexOf(shard.rarity()));
     }
@@ -157,6 +166,16 @@ public final class Hunting {
             box.remove(key);
         }
         player.setAttached(BOX, Map.copyOf(box));
+    }
+
+    /** Shards out of the box (fusion's inputs). */
+    static void take(ServerPlayer player, String key, long n) {
+        addBox(player, key, -n);
+    }
+
+    /** Shards into the box without the catch's XP and message (fusion's output). */
+    static void addShards(ServerPlayer player, String key, long n) {
+        addBox(player, key, n);
     }
 
     static int level(ServerPlayer player, String key) {
@@ -259,7 +278,7 @@ public final class Hunting {
     }
 
     /** A shard's icon by its alignment: forest shards amethyst, water ones prismarine, the rest echo shards. */
-    private static ItemStack icon(Shard shard) {
+    static ItemStack icon(Shard shard) {
         return new ItemStack(switch (shard.alignment()) {
             case "Forest" -> Items.AMETHYST_SHARD;
             case "Water" -> Items.PRISMARINE_SHARD;

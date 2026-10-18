@@ -13,9 +13,9 @@ main paths cross at x -60 and x 60. The outer edges (west, east, south) break of
 import math
 
 from kit import hash01, noise
-from galatea_lib import new_area, land, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
+from galatea_lib import new_area, land, lushlilacs, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("south", version=3)
+area = new_area("south", version=5)
 area.shell = 3
 S = area.set
 G = GROUND                      # surface block y (players walk at 69)
@@ -659,8 +659,8 @@ for dx in range(-3, 4):
     S(NX + dx, G + 4, zs - 6, "minecraft:spruce_slab[type=bottom]")
 for dx in (-2, 2):
     pile(NX + dx, zs - 7)
-S(NX, G + 1, zs - 7, "minecraft:dark_oak_fence")
-S(NX, G + 2, zs - 7, "minecraft:lantern[hanging=false]")
+# a lantern under the roof, not a post in front of Nemo (customers click him from the dock)
+S(NX, G + 3, zs - 7, "minecraft:lantern[hanging=true]")
 for dx in range(-3, 4):
     for dz in (-7, -5):
         pass
@@ -1511,6 +1511,8 @@ area.zone("Squid Cave", box=zbox(-118, 132, -76, 159), blocks={}, mobs=[lumi])
 area.zone("South Reaches", box=zbox(76, 0, 149, 99), blocks={}, mobs=[bogged_e, phan_e])
 area.zone("South Reaches", box=zbox(76, 100, 99, 159), blocks={}, mobs=[])
 area.zone("SwampCut Inc.", box=zbox(100, 100, 149, 159), blocks={}, mobs=[])
+# Lushlilac in the Wetlands and the Reaches
+print("lushlilacs", lushlilacs(area, T, 30, 7, lambda x, z: x < -75 or x > 75))
 area.save()
 
 print("mangroves", n_mangrove, "figs", n_fig, "pickles", n_pickles, "lily", lily, "reeds", reeds, "dripleaf", drip, "lamps", lamps)

@@ -1,6 +1,6 @@
 {
  "skyblock_id": "RETIA_ROBUSTA",
- "base": "minecraft:paper",
+ "base": "minecraft:dark_oak_trapdoor",
  "name": "Large Huntrap",
  "rarity": "rare",
  "category": "TRAP",

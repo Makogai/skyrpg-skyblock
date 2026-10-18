@@ -13,9 +13,9 @@ else uses jungle_log, and every fig's logs stay 2+ blocks from another tree's.
 import math
 
 from kit import hash01, noise
-from galatea_lib import new_area, land, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
+from galatea_lib import new_area, land, lushlilacs, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("north", version=2)
+area = new_area("north", version=4)
 area.shell = 1
 S = area.set
 G = GROUND
@@ -792,7 +792,7 @@ for (x, z) in ((31, -52), (30, -50), (39, -51), (40, -53)):                    #
 for (x, z) in ((31, -49), (39, -49)):
     S(x, G + 1, z, "minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]")
 S(41, G + 1, -52, "minecraft:cobweb")
-area.npc("Dax", 35, G + 1, -51, 180.0, "in his trap shed east of the Hunting Lodge")
+area.npc("Dax", 35, G + 1, -51, 0.0, "in his trap shed east of the Hunting Lodge, facing the door")
 # the lasso yard
 reserve("lasso_yard", 31, -47, 46, -39, m=0, tree_m=3, check=False)
 for x in range(31, 47):
@@ -1677,4 +1677,6 @@ bad_ids = sorted({e["id"] for (e, _) in cells.values() if "mangrove" in e["id"] 
 print("forbidden wood ids:", bad_ids)
 print("ordinary trees", ntree, "boulders", boulders, "lamps", lamps, "reeds", canes)
 print("ramp: start", ramp_h[0], "end", round(ramp_h[-1], 1), "plateau core", T[(-104, -106)])
+# Lushlilac in the woods (not in town, the temple or the lair)
+print("lushlilacs", lushlilacs(area, T, 40, 5, lambda x, z: not (-35 <= x <= 45 and -72 <= z <= -1) and not (62 <= x <= 112 and z <= -82)))
 area.save()

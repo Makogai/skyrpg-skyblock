@@ -50,15 +50,10 @@ public final class GalateaNpcs {
             Map.entry("Jaeger", List.of("Look at a fish, swing the net. Simple as that.",
                     "Some critters are too quick for a Basic net: Lumisquid, Salamanders, Bullfrogs. A Medium net or better will do.",
                     "The Loch and the Shallows are full of them. The Wetlands too, if you don't mind the mud.")),
-            Map.entry("Dax", List.of("Traps, friend. Set one, walk away, come back to a shard.",
-                    "Tender Wood from the fig trees makes the frames. I'll show you once you've got the knack of the lasso.")),
-            Map.entry("Kysha", List.of("Two shards go in, a new one comes out. That's fusion.",
-                    "The machine's warming up. Bring me a full Hunting Box and we'll see what it makes.")),
             Map.entry("Kiara", List.of("Fresh from the Reaches! Well, fresh-ish.", "Lushlilac grows by the water. Some say it charms the critters.")),
             Map.entry("Oden", List.of("The library keeps every shard's story. Three hundred and twenty-five, at last count.",
                     "Shards of one family fuse best. Read before you fuse.")),
-            Map.entry("Alan", List.of("They say a dragon lives up north. A jade one.", "I'd stay away from the Bogged after dark. Or any time.")),
-            Map.entry("Jade Dragon", List.of("Hmm. A visitor. Few climb this far.", "Come back when the Forest knows your name.")));
+            Map.entry("Alan", List.of("They say a dragon lives up north. A jade one.", "I'd stay away from the Bogged after dark. Or any time.")));
 
     /** Hina's guide: a title and a line each. */
     private static final List<String[]> HINA = List.of(
@@ -166,6 +161,18 @@ public final class GalateaNpcs {
             hina(player);
             return;
         }
+        if (name.equals("Kysha")) {
+            Fusion.open(player);
+            return;
+        }
+        if (name.equals("Dax")) {
+            Huntraps.dax(player);
+            return;
+        }
+        if (name.equals("Jade Dragon")) {
+            jadeDragon(player);
+            return;
+        }
         if (name.equals("Agatha")) {
             Starlyn.open(player);
             return;
@@ -207,6 +214,40 @@ public final class GalateaNpcs {
                 HotfMenu.open(p);
                 return null;
             }
+            return "";
+        });
+    }
+
+    /** The Jade Dragon sells its own kind: an egg that hatches at level 100 (decided: 25M coins, Heart of the Forest 3). */
+    private static void jadeDragon(ServerPlayer player) {
+        int npc = FactionMenu.npcNear(player, "Jade Dragon");
+        long price = 25_000_000;
+        CardMenu.open(player, p -> {
+            boolean tier = Hotf.tier(p) >= 3;
+            long coins = com.skyrpg.economy.Purse.get(p);
+            ItemStack egg = com.skyrpg.skyblock.pet.SkyBlockPets.create("JADE_DRAGON", "LEGENDARY", 0);
+            List<CardView.Card> cards = List.of(
+                    new CardView.Card("Jade Dragon", "A Foraging pet. It starts as an egg and hatches at level 100.", 0xFFAA00, tier && coins >= price,
+                            tier ? "Buy" : "Locked", egg, "", List.of(com.skyrpg.skyblock.ui.Chip.price("coins", price, coins)), -1, ""),
+                    new CardView.Card(tier ? "You may buy" : "Heart of the Forest 3", tier ? "The dragon deems you worthy." : "Come back when the Forest knows your name.",
+                            tier ? 0x55FF55 : 0xFF5555, false, "", new ItemStack(net.minecraft.world.item.Items.OAK_SAPLING), "", List.of(), -1, ""));
+            return new CardView("GALATEA", "Jade Dragon", "Dragon's Lair", npc, List.of(), cards, "Hmm. A visitor. Few climb this far.", 1, 40);
+        }, (p, card) -> {
+            if (card != 0) {
+                return "";
+            }
+            if (Hotf.tier(p) < 3) {
+                return "Reach Heart of the Forest 3 first.";
+            }
+            if (!com.skyrpg.economy.Purse.trySpend(p, price)) {
+                return "You need " + com.skyrpg.core.text.Msg.number(price) + " coins.";
+            }
+            ItemStack egg = com.skyrpg.skyblock.pet.SkyBlockPets.create("JADE_DRAGON", "LEGENDARY", 0);
+            if (!p.getInventory().add(egg)) {
+                p.drop(egg, false, net.minecraft.util.Prediction.SERVER_ONLY);
+            }
+            p.sendSystemMessage(Component.literal("You bought a Jade Dragon!").withStyle(ChatFormatting.GOLD));
+            Msg.playSound(p, SoundEvents.ENDER_DRAGON_GROWL, 0.5f, 1.4f);
             return "";
         });
     }

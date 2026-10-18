@@ -50,9 +50,9 @@ final class Critters {
     static final String TAG = "skyrpg_critter";
     private static final int PER_PLAYER = 7;
     private static final int[] WEIGHT = {60, 25, 10, 4, 1};
-    private static final Set<String> FOREST_ZONES = Set.of("Evergreen Plateau", "North Reaches", "West Reaches", "South Reaches", "South Wetlands",
+    static final Set<String> FOREST_ZONES = Set.of("Evergreen Plateau", "North Reaches", "West Reaches", "South Reaches", "South Wetlands",
             "Tangleburg", "Forest Temple");
-    private static final Set<String> WATER_ZONES = Set.of("Murkwater Loch", "Murkwater Shallows", "South Wetlands", "Squid Cave", "Murkwater Outpost");
+    static final Set<String> WATER_ZONES = Set.of("Murkwater Loch", "Murkwater Shallows", "South Wetlands", "Squid Cave", "Murkwater Outpost");
 
     private record Kind(String shard, EntityType<? extends Mob> type, boolean water, boolean shy) {
     }
@@ -118,12 +118,10 @@ final class Critters {
         });
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> !entity.entityTags().contains(TAG));
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
-            if (!(source.getEntity() instanceof ServerPlayer killer) || !Galatea.isGalatea(entity.level()) || entity instanceof Player
-                    || entity.getCustomName() == null) {
+            if (!(source.getEntity() instanceof ServerPlayer killer) || !Galatea.isGalatea(entity.level()) || entity instanceof Player) {
                 return;
             }
-            String name = entity.getCustomName().getString().replaceAll("^\\[.*?\\]\\s*", "").replaceAll("\\s*[\\d,./]+.*$", "").trim();
-            Hunting.Shard shard = Hunting.byName(name.equals("Chillblade") || name.equals("Chillshot") ? "Chill" : name);
+            Hunting.Shard shard = Hunting.shardOf(entity);
             double charm = Stats.get(killer, StatTypes.CHARM_CHANCE);
             if (shard != null && charm > 0 && killer.getRandom().nextDouble() * 100 < charm) {
                 Hunting.catchShard(killer, shard, 1, "charmed");
@@ -363,6 +361,23 @@ final class Critters {
         }
     }
 
+    /** A critter's shard of this kind (forest or water), by the rarity weights; null if none load. */
+    static Hunting.Shard roll(boolean water, net.minecraft.util.RandomSource random) {
+        List<Kind> pool = KINDS.stream().filter(k -> k.water() == water && Hunting.byName(k.shard()) != null).toList();
+        if (pool.isEmpty()) {
+            return null;
+        }
+        int total = pool.stream().mapToInt(k -> WEIGHT[Hunting.rarity(Hunting.byName(k.shard()))]).sum();
+        int roll = random.nextInt(total);
+        for (Kind k : pool) {
+            roll -= WEIGHT[Hunting.rarity(Hunting.byName(k.shard()))];
+            if (roll < 0) {
+                return Hunting.byName(k.shard());
+            }
+        }
+        return Hunting.byName(pool.getFirst().shard());
+    }
+
     private static void spawnNear(ServerLevel level, ServerPlayer player) {
         var random = level.getRandom();
         double a = random.nextDouble() * Math.PI * 2;
@@ -379,25 +394,15 @@ final class Critters {
         if (water ? !WATER_ZONES.contains(name) : !FOREST_ZONES.contains(name)) {
             return;
         }
-        List<Kind> pool = KINDS.stream().filter(k -> k.water() == water && Hunting.byName(k.shard()) != null).toList();
-        if (pool.isEmpty()) {
+        Hunting.Shard shard = roll(water, random);
+        Kind kind = shard == null ? null : KINDS.stream().filter(k -> k.shard().equals(shard.name())).findFirst().orElse(null);
+        if (kind == null) {
             return;
-        }
-        int total = pool.stream().mapToInt(k -> WEIGHT[Hunting.rarity(Hunting.byName(k.shard()))]).sum();
-        int roll = random.nextInt(total);
-        Kind kind = pool.get(0);
-        for (Kind k : pool) {
-            roll -= WEIGHT[Hunting.rarity(Hunting.byName(k.shard()))];
-            if (roll < 0) {
-                kind = k;
-                break;
-            }
         }
         Mob critter = kind.type().create(level, EntitySpawnReason.EVENT);
         if (critter == null) {
             return;
         }
-        Hunting.Shard shard = Hunting.byName(kind.shard());
         BlockPos at = water ? top.below(2) : top;
         critter.snapTo(at.getX() + 0.5, at.getY(), at.getZ() + 0.5, random.nextFloat() * 360, 0);
         critter.setCustomName(Component.literal(shard.name()).withColor(Hunting.RARITY_COLORS[Hunting.rarity(shard)]));

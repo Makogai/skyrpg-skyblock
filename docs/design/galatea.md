@@ -145,7 +145,32 @@ Brackets: Common 25, Uncommon 100, Rare 400, Epic 1,000, Legendary 2,500, Mythic
 Coupons 10 to 45, Forest Whispers, Forest Essence 10 to 80, Foraging XP, HotF XP; Epic and up a 10% chance of
 Agatha's Prize. Her prize shop (NEU's) takes the coupons.
 
-## Part 3 (next)
+## Part 3: fusion, Huntraps, the Black Hole, the island's resources, the Temple and the Jade Dragon
 
-Kysha's fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple's donations, the Jade Dragon, Lushlilac and
-Sea Lumies, then Torrhus.
+- **Fusion** (`Fusion`, Kysha): pick two kinds of shard from your Hunting Box, see the result, fuse. Hypixel's input
+  counts (5 of each; 2 of a Reptile, Amphibian or Elemental shard) and fusion XP (18.75 to 250 by the output's rarity).
+  Recipes decided (Hypixel's tables weren't found): an ID fusion gives the shard of the first input's alignment and the
+  higher rarity, picked by both IDs (never an input); two shards of one family make a family fusion instead, two
+  shards of that family a rarity up.
+- **Huntraps** (`Huntraps`, Dax): the five Retia traps. Right-click on Galatea to set one on the ground in the woods
+  (a spruce trapdoor) or on a lake (a lily pad), five each. It holds a critter shard of that place (rolled when set) and
+  catches it after Hypixel's real hours by rarity (8-12 to 16-24), shortened by the trap's tier (Hypixel's -10% to
+  -50%) and Rosemary's Trapped. Click a ready trap, or collect it from Dax; the trap comes back. Saved across restarts.
+  Dax also sells the Small Huntrap (25,000 coins, decided).
+- **Pocket Black Holes** (`BlackHole`): 180 s where you look; it pulls Galatea's monsters under half health and
+  captures one that reaches it under a tenth: its shard. Decided: Medium/Large reach 12/14 blocks, Large 5% for a
+  second shard.
+- **Lushlilac and Sea Lumies** (`Resources`): 70 lilacs in the woods and wetlands (`galatea_lib.lushlilacs`) and the
+  Shallows' sea pickles. Hit one to pick it (15 Foraging XP, Hypixel's; Lushlilac +9 contest points; Collector a chance
+  of double); it grows back a minute later. Lushlilac and its Bonbons give Charm Chance (Hypixel's 0.5 / 8h to 1 / 24h), eaten with a left-click at a block
+  (a left-click in the air never reaches the server; right-click puts it in a sack, as every sack item).
+- **The Forest Temple** (`Temple`): the altar takes five offerings of Enchanted Fig Logs and coins (decided 32 to 512
+  and 50k to 1M), each +5 Foraging Fortune for good.
+- **The Jade Dragon**: sells its pet (an egg that hatches at level 100) for 25,000,000 coins at Heart of the Forest 3
+  (decided).
+- Item looks: the Huntraps are trapdoors, the Bonbons berries.
+
+## Next
+
+Torrhus Canyon (Helix trees, Desert Whispers, Miria's contests, the Critter Safari), the Huntaxes' Absorptio, Lotus
+Atoll.

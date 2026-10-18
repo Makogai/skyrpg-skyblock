@@ -75,3 +75,25 @@ def land(area, x, z, top, surface, under, body):
             area.set(x, y, z, pick(under, y))
     for y in range(top - 4, LAND_BOTTOM - 1, -1):
         area.set(x, y, z, pick(body, y))
+
+
+def lushlilacs(area, top, count, seed, keep):
+    """Lushlilac, Galatea's flower resource (the mod's lilacs, picked and regrown): `count` of them on open grass, moss or
+    podzol where keep(x, z) says yes, scattered (a hash order)."""
+    from kit import hash01
+    placed = 0
+    for (x, z) in sorted(top, key=lambda p: hash01(p[0], 91, p[1], seed)):
+        if placed >= count:
+            break
+        if not keep(x, z):
+            continue
+        y = top[(x, z)]
+        if area.get(x, y, z) not in ("minecraft:grass_block", "minecraft:moss_block", "minecraft:podzol"):
+            continue
+        if area.get(x, y + 1, z) not in (None, "minecraft:short_grass", "minecraft:fern") or area.get(x, y + 2, z) is not None:
+            continue
+        area.set(x, y + 1, z, "minecraft:lilac[half=lower]")
+        area.set(x, y + 2, z, "minecraft:lilac[half=upper]")
+        placed += 1
+    return placed
+

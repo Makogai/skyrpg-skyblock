@@ -676,8 +676,11 @@ phase so the next session can pick up where this one stopped.
       Forest (NEU's 36 perks and tiers, Tokens of the Forest, Forest/Desert Whispers, axe abilities, thrown axes, the
       Timber stat), Rosemary's Forest Essence shop and perks, Agatha's Starlyn Contests with brackets, rewards and her
       coupon prize shop; Hina's Galatea menu.
-- [ ] Galatea, part 3: Kysha's fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple, the Jade Dragon,
-      Lushlilac and Sea Lumies; then Torrhus.
+- [x] **Galatea, part 3** (`Fusion`, `Huntraps`, `BlackHole`, `Resources`, `Temple`): Kysha's shard fusion, Dax's
+      Huntraps (real-time catches, saved), the Pocket Black Holes, Lushlilac and Sea Lumies (picked, regrown, Charm
+      Chance to eat), the Forest Temple's offerings, the Jade Dragon's pet sale.
+- [ ] Galatea, part 4: Torrhus Canyon (Helix trees, Desert Whispers, Miria's contests, the Critter Safari), the
+      Huntaxes' Absorptio, Lotus Atoll.
 - [ ] Backwater Bayou.
 
 ### Owner directions (2026-10-16)

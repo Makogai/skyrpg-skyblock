@@ -66,6 +66,59 @@ Galatea's mobs carry shards too. Kill a Bogged, a Chillblade, a Phanpyre or a Lu
 
 **Hunting Fortune** gives extra shards on every catch. Each 100 is one more shard for certain, and anything left over is a chance of one more.
 
+### Huntraps
+
+**Dax** at the Hunting Lodge sells the **Small Huntrap** (25,000 coins). Better traps are crafted with Tender Wood. Right-click with a trap on Galatea to set it on the ground in the woods or on the water of a lake. You can have five set at once.
+
+A trap catches the shard of a critter that lives there, but it takes real time: 8 to 12 hours for a Common shard, up to 16 to 24 hours for a Legendary one. Better traps are faster:
+
+| Trap | Faster by |
+| --- | --- |
+| Small Huntrap | 0% |
+| Medium Huntrap | 10% |
+| Large Huntrap | 20% |
+| Greater Huntrap | 35% |
+| Astral Huntrap | 50% |
+
+Rosemary's Trapped perk makes them faster still. When a trap has caught something, you get a message. Click the trap, or collect it from Dax. You keep the trap.
+
+### Pocket Black Holes
+
+Right-click with a **Pocket Black Hole** to set it where you're looking, for 180 seconds. It pulls in Galatea's monsters that are under half health, and any that reach it under a tenth of their health are captured: their shard goes into your Hunting Box.
+
+### Fusion
+
+**Kysha** in the Fusion House fuses shards. Pick two kinds of shard from your Hunting Box and she shows you what comes out before you fuse. A fusion uses five of each shard, or two of a Reptile, Amphibian or Elemental shard. Two shards of the same family make **two** shards of that family, one rarity higher. Fusing gives Hunting XP.
+
+## Lushlilac and Sea Lumies
+
+**Lushlilac** (lilacs in the woods and wetlands) and **Sea Lumies** (sea pickles in the Murkwater Shallows) can be picked: hit them. Each gives 15 Foraging XP, and they grow back after a minute. A Lushlilac scores 9 Starlyn Contest points.
+
+Eat a Lushlilac or a Lushlilac Bonbon (left-click at the ground or any block; right-click puts it in your sack) for Charm Chance:
+
+| Item | Charm Chance | Lasts |
+| --- | --- | --- |
+| Lushlilac | +0.5% | 8 hours |
+| Lushlilac Bonbon | +0.62% | 12 hours |
+| Prime Lushlilac Bonbon | +0.75% | 18 hours |
+| Exalted Lushlilac Bonbon | +1% | 24 hours |
+
+## The Forest Temple
+
+The altar in the Forest Temple takes five offerings, each worth **+5 Foraging Fortune** for good:
+
+| Offering | Enchanted Fig Logs | Coins |
+| --- | --- | --- |
+| I | 32 | 50,000 |
+| II | 64 | 100,000 |
+| III | 128 | 250,000 |
+| IV | 256 | 500,000 |
+| V | 512 | 1,000,000 |
+
+## The Jade Dragon
+
+The **Jade Dragon** in the Dragon's Lair sells its own kind as a pet: an egg that hatches at level 100. It costs 25,000,000 coins, and the dragon only deals with Heart of the Forest tier 3 and up.
+
 ## The Hunting Box and attributes
 
 Open the box with `/huntingbox`, with the barrel in the Hunting Lodge, or from **David Hunterborough**'s menu. Every shard has an **attribute**, for example Grove's *Nature Elemental* (+2 Health a level). **Syphon** shards into an attribute to level it up. Each level costs more shards, following Hypixel's levelling. Rarer shards need a higher Hunting level before you can syphon them: Uncommon needs Hunting 5, Rare 10, Epic 15 and Legendary 20.
@@ -152,8 +205,11 @@ When the day ends, go to Agatha on the Murkwater Loch pier to claim your rewards
 | Nemo | the Shallows' dock | snorkeling armour |
 | Agatha | the pavilion | Starlyn Contests and her coupon prize shop |
 | Rosemary | Murkwater Outpost | the Forest Essence shop and perks |
-| Kysha, Dax, Kiara, Oden, Alan, Jade Dragon | around the island | talk to them (their features are coming) |
+| Kysha | the Fusion House | shard fusion |
+| Dax | by the Hunting Lodge | Huntraps |
+| Jade Dragon | the Dragon's Lair | the Jade Dragon pet |
+| Kiara, Oden, Alan | around Tangleburg | talk to them |
 
 ## Coming next
 
-Kysha's shard fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple and the second island, Torrhus.
+The second island, Torrhus Canyon: Helix trees, Desert Whispers, Miria's contests and the Critter Safari.

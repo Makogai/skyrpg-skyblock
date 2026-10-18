@@ -553,7 +553,7 @@ _NOT_FULL = ("air", "leaves", "glass", "pane", "slab", "stairs", "fence", "wall"
              "rod", "cluster", "bud", "farmland", "path", "wheat", "carrots", "potatoes", "beetroots", "cactus", "cane", "bamboo",
              "scaffolding", "anvil", "bell", "grindstone", "lectern", "composter", "cauldron", "hopper", "azalea", "moss_carpet",
              "snow", "pickle", "egg", "amethyst_cluster", "conduit", "banner", "frame", "honey", "slime", "ice", "shulker",
-             "brewing", "enchanting", "table", "beacon", "spawner", "leaf", "hay", "light", "pumpkin", "melon", "grass")
+             "brewing", "enchanting", "table", "beacon", "spawner", "leaf", "hay", "light", "pumpkin", "melon", "grass", "grate")
 
 
 def _plain(line):

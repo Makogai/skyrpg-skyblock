@@ -523,7 +523,8 @@ final class GalateaTrees {
         }
     }
 
-    private static void give(ServerPlayer player, String id, int count, ItemGains.Source source) {
+    /** Items into the inventory (sacks first, as any gain), the rest dropped. */
+    static void give(ServerPlayer player, String id, int count, ItemGains.Source source) {
         ItemDefinition def = ItemRegistry.skyblock(id);
         if (def == null || count <= 0) {
             return;
