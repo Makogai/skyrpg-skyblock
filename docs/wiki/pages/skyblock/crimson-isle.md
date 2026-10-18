@@ -110,7 +110,7 @@ The Isle's lava sea creatures (Fishing level): Fried Chicken (10), Magma Slug (2
 2. Then meet both leaders: **Queen Nyx** in Scarleton and **Chief Scorn** in Dragontail.
 3. Talk to the one you choose and join.
 
-You can switch sides any time at the other leader. Your **reputation** is kept with each faction, so switching doesn't lose it.
+You can switch sides any time at the other leader. Your **reputation** is kept with each faction, so switching doesn't lose it. On the Isle, the sidebar shows your reputation with your faction.
 
 | Rank | Reputation | SkyBlock XP on reaching it |
 | --- | --- | --- |

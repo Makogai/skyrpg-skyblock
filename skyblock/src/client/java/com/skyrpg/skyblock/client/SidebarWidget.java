@@ -93,6 +93,11 @@ public final class SidebarWidget implements HudWidget {
                     .append(Component.literal(where).withStyle(where.equals("Your Island") ? ChatFormatting.GREEN : ChatFormatting.AQUA)));
         }
         var player = Minecraft.getInstance().player;
+        // Faction reputation on the Crimson Isle.
+        String rep = player == null ? null : player.getAttached(com.skyrpg.skyblock.crimson.Factions.SIDEBAR);
+        if (rep != null) {
+            lines.add(Component.literal(rep));
+        }
         // Cold in the Glacite Tunnels, as Hypixel's scoreboard shows it.
         Integer cold = player == null ? null : player.getAttached(com.skyrpg.skyblock.glacite.GlaciteTunnels.COLD);
         if (cold != null && cold > 0) {

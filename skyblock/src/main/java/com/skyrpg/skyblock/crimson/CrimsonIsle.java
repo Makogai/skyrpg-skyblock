@@ -87,6 +87,11 @@ public final class CrimsonIsle {
             }
         });
         ServerTickEvents.END_SERVER_TICK.register(CrimsonIsle::tick);
+        net.fabricmc.fabric.api.entity.event.v1.ServerEntityLevelChangeEvents.AFTER_PLAYER_CHANGE_LEVEL.register((player, from, to) -> {
+            if (!isCrimson(to)) {
+                player.removeAttached(Factions.SIDEBAR);
+            }
+        });
         // The volcano's magma blocks are scenery: they don't burn your feet.
         net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) ->
                 !(entity instanceof ServerPlayer && isCrimson(entity.level()) && source.is(net.minecraft.world.damagesource.DamageTypes.HOT_FLOOR)));
@@ -271,6 +276,12 @@ public final class CrimsonIsle {
             return;
         }
         for (ServerPlayer player : level.players()) {
+            if (server.getTickCount() % 20 == 0) {
+                String line = Factions.sidebar(player);
+                if (!line.equals(player.getAttached(Factions.SIDEBAR))) {
+                    player.setAttached(Factions.SIDEBAR, line);
+                }
+            }
             boolean sea = player.getY() < LAVA + 1.5 && player.isEyeInFluid(FluidTags.LAVA) || player.getY() < LAVA - 2;
             if (!sea || player.isCreative() || player.isSpectator()) {
                 IN_LAVA.remove(player.getUUID());

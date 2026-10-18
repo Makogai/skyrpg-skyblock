@@ -40,6 +40,11 @@ public final class Factions {
     static final AttachmentType<Map<String, Integer>> FLAGS = AttachmentRegistry.create(SkyRpgSkyblock.id("crimson_flags"),
             builder -> builder.persistent(Codec.unboundedMap(Codec.STRING, Codec.INT)).copyOnDeath());
 
+    /** The sidebar's reputation line on the Crimson Isle (synced to its player only; gone off the Isle). */
+    public static final AttachmentType<String> SIDEBAR = AttachmentRegistry.create(SkyRpgSkyblock.id("crimson_sidebar"),
+            builder -> builder.syncWith(net.minecraft.network.codec.ByteBufCodecs.STRING_UTF8,
+                    net.fabricmc.fabric.api.attachment.v1.AttachmentSyncPredicate.targetOnly()));
+
     /** Elle's steps. */
     static final int ELLE_NEW = 0;
     static final int ELLE_SUPPLIES = 1;
@@ -155,6 +160,15 @@ public final class Factions {
                     .send(player, Component.literal(title(faction) + " rank: " + RANKS.get(rank - 1) + " ➜ " + RANKS.get(rank)).withColor(color(faction)));
             Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 1.0f, 1.0f);
         }
+    }
+
+    /** The sidebar line: "Reputation: 1,234" in the faction's colour (Hypixel's scoreboard on the Isle). */
+    static String sidebar(ServerPlayer player) {
+        String faction = faction(player);
+        if (faction.isEmpty()) {
+            return "§7Faction: §fNone";
+        }
+        return "§fReputation: " + (faction.equals(MAGE) ? "§5" : "§6") + Msg.number(reputation(player, faction)) + " §7" + title(faction);
     }
 
     /** Admin: sets reputation with a faction. */
