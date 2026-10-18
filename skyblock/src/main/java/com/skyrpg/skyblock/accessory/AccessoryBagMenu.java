@@ -21,16 +21,16 @@ public final class AccessoryBagMenu extends AbstractContainerMenu {
     public static final int MAXWELL = 99;
     public static final int MAX_PAGES = 9;
     // Layout, shared with the screen.
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int TAB_W = 26;
-    public static final int TAB_H = 17;
+    public static final int TAB_H = 15;
     public static final int GRID_X = PAD + TAB_W + 8;
     public static final int GRID_Y = TOP;
     public static final int ROWS = AccessoryBag.PAGE_SIZE / 9;
     public static final int WIDTH = GRID_X + 9 * 18 + PAD;
     public static final int INV_X = GRID_X;
-    public static final int INV_Y = GRID_Y + ROWS * 18 + 18;
+    public static final int INV_Y = GRID_Y + ROWS * 18 + 16;
     public static final int HEIGHT = INV_Y + 3 * 18 + 4 + 18 + PAD;
 
     private final Container page;

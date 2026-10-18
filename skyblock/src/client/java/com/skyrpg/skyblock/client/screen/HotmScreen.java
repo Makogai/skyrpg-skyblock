@@ -17,17 +17,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 /**
- * The Heart of the Mountain tree, Hypixel's way up: tier 1 at the bottom, tier 10 at the top, each perk an icon on its
- * grid spot (coal: locked, emerald: unlocked, diamond: maxed; blocks for pickaxe abilities; redstone when switched off).
- * Hover a perk for what it does and costs; click to unlock or upgrade it (shift: ten levels), right-click to switch it
- * off or on. The header has your HotM tier and XP, the side your tokens and powder.
+ * The Heart of the Mountain tree, in the mining theme: tier 1 at the bottom, tier 10 at the top, each perk an icon card on
+ * its grid spot (coal: locked, emerald: unlocked, diamond: maxed; blocks for pickaxe abilities; redstone when switched
+ * off). Hover a perk for what it does and costs; click to unlock or upgrade it (shift: ten levels), right-click to switch
+ * it off or on. The side has your HotM tier and XP bar, and your tokens and powders as icon cards.
  */
 public final class HotmScreen extends AbstractContainerScreen<HotmMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.MINING;
     private static final int WIDTH = 300;
-    private static final int HEIGHT = 234;
+    private static final int HEIGHT = 236;
     private static final int CELL = 18;
     private static final int GRID_X = 30;
-    private static final int GRID_Y = 48;
+    private static final int GRID_Y = 38;
     private static final int PURPLE = 0xFFAA55FF;
 
     public HotmScreen(HotmMenu menu, Inventory inventory, Component title) {
@@ -56,47 +57,47 @@ public final class HotmScreen extends AbstractContainerScreen<HotmMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         Font font = this.font;
         HotmMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Heart of the Mountain"),
+        SkyScreens.window(g, font, THEME, leftPos, topPos, imageWidth, imageHeight, Component.literal("Heart of the Mountain"),
                 Component.literal("Tier " + view.level()).withColor(PURPLE));
-        // XP to the next tier.
-        int barX = leftPos + 10;
-        int barY = topPos + 26;
-        int barW = imageWidth - 20;
-        boolean maxed = view.xpNext() <= 0;
-        Draw.bar(g, barX, barY, barW, 5, maxed ? 1f : (float) view.xp() / view.xpNext(), PURPLE);
-        String xp = maxed ? "Max tier" : String.format(Locale.ROOT, "%,d / %,d HotM XP to Tier %d", view.xp(), view.xpNext(), view.level() + 1);
-        Draw.fit(g, font, Component.literal(xp), barX, barY + 8, barW, 0.7f, 0.5f, Draw.Align.LEFT, Theme.MUTED, false);
 
-        // Tier labels down the side, the open tiers bright.
+        // The tree sits on a card; tier labels down its side, the open tiers bright.
+        SkyScreens.card(g, THEME, leftPos + THEME.inset, topPos + GRID_Y - 3, GRID_X - THEME.inset + 7 * CELL + 3, 10 * CELL + 5, false, false);
         for (int row = 0; row < 10; row++) {
             int tier = 10 - row;
-            int color = tier <= view.level() ? PURPLE : Theme.DIM;
-            Draw.fit(g, font, Component.literal(String.valueOf(tier)), leftPos + 8, cellY(row) + 5, 18, 0.75f, 0.5f, Draw.Align.RIGHT, color, false);
+            int color = tier <= view.level() ? PURPLE : THEME.dim;
+            Draw.fit(g, font, Component.literal(String.valueOf(tier)), leftPos + GRID_X - 5, cellY(row) + 5, 16, 0.75f, 0.5f, Draw.Align.RIGHT, color, false);
         }
         HotmMenu.PerkView hovered = perkAt(mouseX, mouseY);
         for (HotmMenu.PerkView perk : view.perks()) {
             int x = cellX(perk.x());
             int y = cellY(perk.y());
-            int border = perk.selected() ? 0xFFFFAA00 : perk.state() == 3 ? 0xFF55FFFF : perk.state() == 2 ? Theme.GREEN
-                    : perk.state() == 1 ? 0xFFFFFF55 : Theme.CARD_BORDER;
-            Draw.panel(g, x, y, CELL - 1, CELL - 1, perk == hovered ? Theme.CARD_HOVER : Theme.CARD, border);
+            int border = perk.selected() ? 0xFFFFAA00 : perk.state() == 3 ? 0xFF55FFFF : perk.state() == 2 ? THEME.good
+                    : perk.state() == 1 ? 0xFFFFFF55 : 0;
+            SkyScreens.card(g, THEME, x, y, CELL - 1, CELL - 1, perk == hovered, perk.state() == 0);
+            if (border != 0) {
+                Draw.outline(g, x, y, CELL - 1, CELL - 1, border);
+            }
             Draw.item(g, icon(perk), x + 1, y + 1, 0.9f);
         }
 
-        // The side: tokens, powder, how to use it.
-        int sx = cellX(7) + 8;
-        int sw = leftPos + imageWidth - 8 - sx;
-        int sy = topPos + GRID_Y;
-        sy = stat(g, font, sx, sy, sw, "Tokens of the Mountain", String.valueOf(view.tokens()), PURPLE);
-        sy = stat(g, font, sx, sy, sw, "Mithril Powder", String.format(Locale.ROOT, "%,d", view.mithril()), 0xFF00AA00);
-        sy = stat(g, font, sx, sy, sw, "Gemstone Powder", String.format(Locale.ROOT, "%,d", view.gemstone()), 0xFFFF55FF);
-        sy = stat(g, font, sx, sy, sw, "Glacite Powder", String.format(Locale.ROOT, "%,d", view.glacite()), 0xFF55FFFF);
-        sy += 6;
-        for (String hint : List.of("Click: unlock or upgrade", "Shift-click: 10 levels", "Right-click: switch off/on",
-                "Click an ability to select it")) {
-            Draw.fit(g, font, Component.literal(hint), sx, sy, sw, 0.6f, 0.45f, Draw.Align.LEFT, Theme.DIM, false);
-            sy += 8;
-        }
+        // The side: the tier and its XP bar, then tokens and powders.
+        int sx = cellX(7) + 10;
+        int sw = leftPos + imageWidth - THEME.inset - sx;
+        int sy = topPos + GRID_Y - 3;
+        boolean maxed = view.xpNext() <= 0;
+        SkyScreens.card(g, THEME, sx, sy, sw, 40, false, false);
+        Draw.fit(g, font, Component.literal("HotM Tier " + view.level()), sx + 6, sy + 5, sw - 12, 0.9f, 0.5f, Draw.Align.LEFT, PURPLE, true);
+        SkyScreens.bar(g, THEME, sx + 6, sy + 17, sw - 12, 6, maxed ? 1f : (float) view.xp() / view.xpNext(), PURPLE);
+        String xp = maxed ? "Max tier" : String.format(Locale.ROOT, "%,d / %,d XP to Tier %d", view.xp(), view.xpNext(), view.level() + 1);
+        Draw.fit(g, font, Component.literal(xp), sx + 6, sy + 27, sw - 12, 0.65f, 0.45f, Draw.Align.LEFT, THEME.muted, false);
+        sy += 44;
+        sy = stat(g, font, sx, sy, sw, Items.NETHER_STAR, "Tokens of the Mountain", String.valueOf(view.tokens()), PURPLE);
+        sy = stat(g, font, sx, sy, sw, Items.EMERALD, "Mithril Powder", String.format(Locale.ROOT, "%,d", view.mithril()), 0xFF55FF55);
+        sy = stat(g, font, sx, sy, sw, Items.AMETHYST_SHARD, "Gemstone Powder", String.format(Locale.ROOT, "%,d", view.gemstone()), 0xFFFF55FF);
+        sy = stat(g, font, sx, sy, sw, Items.BLUE_ICE, "Glacite Powder", String.format(Locale.ROOT, "%,d", view.glacite()), 0xFF55FFFF);
+
+        Draw.fit(g, font, Component.literal("Click: unlock/upgrade  ·  Shift: 10 levels  ·  Right-click: switch off/on"), leftPos + imageWidth / 2,
+                topPos + imageHeight - 15, imageWidth - 2 * THEME.inset, 0.62f, 0.45f, Draw.Align.CENTER, THEME.dim, false);
 
         if (hovered != null) {
             Draw.queueTooltip(tooltip(hovered), border(hovered));
@@ -104,10 +105,14 @@ public final class HotmScreen extends AbstractContainerScreen<HotmMenu> {
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
 
-    private int stat(GuiGraphicsExtractor g, Font font, int x, int y, int w, String label, String value, int color) {
-        Draw.fit(g, font, Component.literal(label), x, y, w, 0.65f, 0.45f, Draw.Align.LEFT, Theme.MUTED, false);
-        Draw.fit(g, font, Component.literal(value), x, y + 8, w, 0.9f, 0.5f, Draw.Align.LEFT, color, false);
-        return y + 22;
+    /** A balance card: an icon, the label and the value in its colour. */
+    private int stat(GuiGraphicsExtractor g, Font font, int x, int y, int w, net.minecraft.world.item.Item icon, String label, String value, int color) {
+        SkyScreens.card(g, THEME, x, y, w, 25, false, false);
+        g.fill(x + 4, y + 4, x + 21, y + 21, 0x55000000);
+        Draw.item(g, new ItemStack(icon), x + 5, y + 5, 1f);
+        Draw.fit(g, font, Component.literal(label), x + 26, y + 5, w - 30, 0.65f, 0.45f, Draw.Align.LEFT, THEME.muted, false);
+        Draw.fit(g, font, Component.literal(value), x + 26, y + 13, w - 30, 0.95f, 0.5f, Draw.Align.LEFT, color, false);
+        return y + 28;
     }
 
     private static int border(HotmMenu.PerkView perk) {

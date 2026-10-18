@@ -21,11 +21,28 @@ bars; never plain text rows) and themed per area so each feels unique: its own f
 
 | Theme | Look | Used by |
 | --- | --- | --- |
-| FARMING | oak-plank frame with iron corner plates, dark soil, a straw-rope divider with wheat sprigs, grass-block buttons (cobblestone when disabled), wooden cards with a straw-gold hover edge | the Garden (Desk, SkyMart, Phillip, Jacob, Anita, visitors) |
+| FARMING | oak planks and iron corner plates, dark soil, a straw-rope divider with wheat sprigs, grass-block buttons | the Garden; shops on the farming islands |
+| SKYBLOCK | dark slate with gold trim and ruby corner ornaments, a gold divider | Sacks, Pets, Wardrobe, Quiver, Accessory Bag, Craft, Ender Chest, Museum, Bestiary, Kat; Hub shops |
+| MINING | stone bricks with ore flecks, gem corners, a minecart-rail divider with pickaxes, stone buttons | HotM, the Forge, Commissions, the Gemstone Grinder, the Fossil Excavator; mining shops |
+| CRIMSON | nether bricks with lava seams, gilded blackstone corners, a blaze-rod divider with flames, magma buttons | Faction leaders, Kuudra, the Emissaries, the Dojo, Vulcan; Crimson Isle shops |
+| DUNGEON | mossy stone bricks, skull corners, a chain divider with torches, stone-brick buttons | Mort's Catacombs screen, the reward chests, the Party Finder, Malik; Dungeon Hub shops |
+| MAGIC | indigo with gold filigree, a rune divider with crystals, lapis buttons | Enchanting, Experiments, Brewing, Reforge/Anvil, Maxwell |
+| FISHING | driftwood and rope, a wave divider with fish, prismarine buttons | Odger; fishing shops |
 
-Planned: MINING (HOTM, the Forge, commissions, the gemstone grinder), CRIMSON (factions, Kuudra, Malik, Odger, the
-Dojo), DUNGEON (the Catacombs screens, Maxwell), MAGIC (enchanting, experiments, brewing), FISHING, and the rest on a
-polished DEFAULT.
+The SkyBlock menu, Storage and the Artisan Bench are core screens with their own modern look (not on these themes).
+
+## Card menus for any NPC (`ui/CardMenu`, `CardView`, client `CardScreen`)
+
+`CardMenu.open(player, viewBuilder, clicker)`: the server builds a `CardView` (theme name, title, subtitle, the NPC's
+entity id, your balances, cards, footer, columns, card height); clicking card n calls the clicker ("" ok, a message in
+red, or null to close) and the view is rebuilt. `CardScreen` draws it like the Garden's NPC views: the NPC's live model
+and wallet on the left, item cards with real tooltips and price chips on the right. New NPC menus use this instead of a
+screen of their own.
+
+## Verifying
+
+`/devtools action <player> <type> [json]` runs any NPC action (opens its screen), for screenshots without walking to
+the NPC (the NPC portrait is empty then).
 
 ## The Garden screens (the first on it)
 

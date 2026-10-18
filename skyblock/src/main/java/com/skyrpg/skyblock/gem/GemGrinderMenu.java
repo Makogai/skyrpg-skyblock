@@ -36,9 +36,9 @@ public final class GemGrinderMenu extends AbstractContainerMenu {
     public static final int WIDTH = 236;
     public static final int PAD = 8;
     public static final int ITEM_X = 14;
-    public static final int ITEM_Y = 40;
+    public static final int ITEM_Y = 52;
     public static final int INV_X = (WIDTH - 162) / 2 + 1;
-    public static final int INV_Y = 108;
+    public static final int INV_Y = 114;
     public static final int HEIGHT = INV_Y + 3 * 18 + 4 + 18 + PAD;
 
     private final SimpleContainer input = new SimpleContainer(1);

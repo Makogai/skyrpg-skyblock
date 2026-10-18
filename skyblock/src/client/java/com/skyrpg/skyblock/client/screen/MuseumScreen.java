@@ -2,7 +2,6 @@ package com.skyrpg.skyblock.client.screen;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
-import com.skyrpg.core.client.ui.Theme;
 import com.skyrpg.skyblock.museum.MuseumMenu;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +12,8 @@ import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.TooltipFlag;
 
 /**
  * The Museum: category tabs with how many you've donated, then the category's donations as item cells: green when
@@ -21,12 +22,13 @@ import net.minecraft.world.entity.player.Inventory;
 public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
     private static final int WIDTH = 300;
     private static final int HEIGHT = 230;
-    private static final int TABS_Y = 24;
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
+    private static final int TABS_Y = SkyScreens.contentTop(THEME);
     private static final int TAB_H = 22;
-    private static final int GRID_Y = TABS_Y + 2 * TAB_H + 6;
+    private static final int GRID_Y = TABS_Y + 2 * TAB_H + 4;
     private static final int CELL = 22;
     private static final int COLUMNS = 12;
-    private static final int GOLD = 0xFFFFAA00;
+    private static final int GOLD = THEME.accent;
 
     private double scroll;
 
@@ -35,11 +37,15 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
     }
 
     private int tabX(int i) {
-        return leftPos + 8 + (i % 4) * ((imageWidth - 16) / 4);
+        return leftPos + THEME.inset + (i % 4) * ((imageWidth - 2 * THEME.inset) / 4);
     }
 
     private int tabY(int i) {
         return topPos + TABS_Y + (i / 4) * TAB_H;
+    }
+
+    private int tabW() {
+        return (imageWidth - 2 * THEME.inset) / 4 - 2;
     }
 
     private int gridX() {
@@ -47,7 +53,7 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
     }
 
     private int gridHeight() {
-        return imageHeight - GRID_Y - 6;
+        return imageHeight - GRID_Y - 10;
     }
 
     @Override
@@ -57,18 +63,18 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
         MuseumMenu.View view = menu.view();
         int done = view.done().stream().mapToInt(Integer::intValue).sum();
         int total = view.totals().stream().mapToInt(Integer::intValue).sum();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Museum"),
+        SkyScreens.window(g, font, THEME, leftPos, topPos, imageWidth, imageHeight, Component.literal("Museum"),
                 Component.literal(done + "/" + total + " donated").withColor(GOLD));
-        int tabW = (imageWidth - 16) / 4 - 2;
+        int tabW = tabW();
         for (int i = 0; i < view.totals().size() && i < MuseumMenu.NAMES.size(); i++) {
             boolean selected = i == view.selected();
             boolean over = SkyScreens.inside(mouseX, mouseY, tabX(i), tabY(i), tabW, TAB_H - 2);
-            Draw.panel(g, tabX(i), tabY(i), tabW, TAB_H - 2, selected ? Draw.mix(Theme.CARD, GOLD, 0.15f) : over ? Theme.CARD_HOVER : Theme.CARD,
-                    selected ? GOLD : Theme.CARD_BORDER);
-            Draw.fit(g, font, Component.literal(MuseumMenu.NAMES.get(i)), tabX(i) + tabW / 2, tabY(i) + 2, tabW - 4, 0.7f, 0.45f, Draw.Align.CENTER,
-                    selected ? GOLD : Theme.TEXT, false);
-            Draw.fit(g, font, Component.literal(view.done().get(i) + "/" + view.totals().get(i)), tabX(i) + tabW / 2, tabY(i) + 11, tabW - 4, 0.6f,
-                    0.4f, Draw.Align.CENTER, Theme.MUTED, false);
+            SkyScreens.tab(g, font, THEME, tabX(i), tabY(i), tabW, TAB_H - 2, "", selected, over);
+            Draw.fit(g, font, Component.literal(MuseumMenu.NAMES.get(i)), tabX(i) + tabW / 2, tabY(i) + 3, tabW - 6, 0.7f, 0.45f, Draw.Align.CENTER,
+                    selected ? GOLD : over ? THEME.text : THEME.muted, selected);
+            int have = view.done().get(i);
+            int of = Math.max(1, view.totals().get(i));
+            SkyScreens.bar(g, THEME, tabX(i) + 6, tabY(i) + 12, tabW - 12, 5, (float) have / of, have >= of ? GOLD : THEME.good);
         }
         List<MuseumMenu.EntryView> entries = view.entries();
         int top = topPos + GRID_Y;
@@ -76,7 +82,7 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
         int rows = (entries.size() + COLUMNS - 1) / COLUMNS;
         scroll = Mth.clamp(scroll, 0, Math.max(0, rows * CELL - height));
         List<Component> tooltip = null;
-        g.enableScissor(leftPos + 4, top, leftPos + imageWidth - 4, top + height);
+        g.enableScissor(leftPos + THEME.inset, top, leftPos + imageWidth - THEME.inset, top + height);
         for (int i = 0; i < entries.size(); i++) {
             MuseumMenu.EntryView entry = entries.get(i);
             int x = gridX() + (i % COLUMNS) * CELL;
@@ -85,17 +91,30 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
                 continue;
             }
             boolean over = SkyScreens.inside(mouseX, mouseY, x, y, CELL - 2, CELL - 2) && mouseY >= top && mouseY < top + height;
-            int border = entry.state() == 2 ? Theme.GREEN : entry.state() == 1 ? GOLD : Draw.mix(Theme.CARD, Theme.CARD_BORDER, 0.4f);
-            Draw.panel(g, x, y, CELL - 2, CELL - 2, over ? Theme.CARD_HOVER : entry.state() == 2 ? Draw.mix(Theme.CARD, Theme.GREEN, 0.12f) : Theme.CARD,
-                    border);
+            SkyScreens.card(g, THEME, x, y, CELL - 2, CELL - 2, over && entry.state() > 0, entry.state() == 0);
+            if (entry.state() == 2) {
+                Draw.outline(g, x, y, CELL - 2, CELL - 2, Draw.withAlpha(THEME.good, 0.8f));
+            } else if (entry.state() == 1) {
+                Draw.outline(g, x, y, CELL - 2, CELL - 2, GOLD);
+            }
             if (entry.state() > 0) {
                 Draw.item(g, entry.icon(), x + 2, y + 2, 1f);
             } else {
-                Draw.fit(g, font, Component.literal("?"), x + (CELL - 2) / 2, y + 6, CELL - 4, 1f, 0.6f, Draw.Align.CENTER, Theme.DIM, false);
+                Draw.fit(g, font, Component.literal("?"), x + (CELL - 2) / 2, y + 6, CELL - 4, 1f, 0.6f, Draw.Align.CENTER, THEME.dim, false);
+            }
+            if (entry.state() == 2) {
+                // A green tick in the corner of what you've donated.
+                g.fill(x + CELL - 9, y + CELL - 9, x + CELL - 3, y + CELL - 3, 0xFF0B0E14);
+                Draw.fit(g, font, Component.literal("✔"), x + CELL - 6, y + CELL - 9, 6, 0.55f, 0.4f, Draw.Align.CENTER, THEME.good, false);
             }
             if (over) {
                 tooltip = new ArrayList<>();
-                tooltip.add(entry.state() > 0 ? Component.literal(entry.name()).withColor(GOLD) : Component.literal("§8???"));
+                if (entry.state() > 0) {
+                    tooltip.addAll(entry.icon().getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player, TooltipFlag.NORMAL));
+                } else {
+                    tooltip.add(Component.literal("§8???"));
+                }
+                tooltip.add(Component.empty());
                 if (entry.pieces() > 1) {
                     tooltip.add(Component.literal("§7Armor set: " + entry.pieces() + " pieces"));
                 }
@@ -112,7 +131,7 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
         }
         g.disableScissor();
         if (rows * CELL > height) {
-            Draw.scrollbar(g, leftPos + imageWidth - 5, top, height, rows * CELL, scroll, GOLD);
+            Draw.scrollbar(g, leftPos + imageWidth - THEME.inset - 3, top, height, rows * CELL, scroll, GOLD);
         }
         if (tooltip != null) {
             Draw.queueTooltip(tooltip, GOLD);
@@ -128,7 +147,7 @@ public final class MuseumScreen extends AbstractContainerScreen<MuseumMenu> {
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         if (event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
-            int tabW = (imageWidth - 16) / 4 - 2;
+            int tabW = tabW();
             for (int i = 0; i < menu.view().totals().size(); i++) {
                 if (SkyScreens.inside(event.x(), event.y(), tabX(i), tabY(i), tabW, TAB_H - 2)) {
                     if (i != menu.view().selected()) {

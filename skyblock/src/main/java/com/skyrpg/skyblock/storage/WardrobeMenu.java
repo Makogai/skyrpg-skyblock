@@ -20,18 +20,18 @@ import net.minecraft.world.item.ItemStack;
  */
 public final class WardrobeMenu extends AbstractContainerMenu {
     // Layout, shared with the screen (pixels from the screen's top-left).
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int CARD_W = 40;
-    public static final int CARD_GAP = 3;
-    public static final int MODEL_H = 54;
+    public static final int CARD_GAP = 2;
+    public static final int MODEL_H = 42;
     public static final int SLOTS_Y = TOP + MODEL_H + 3;
     public static final int BUTTON_Y = SLOTS_Y + 38;
     public static final int BUTTON_H = 13;
     public static final int WIDTH = PAD * 2 + Wardrobe.SETS * CARD_W + (Wardrobe.SETS - 1) * CARD_GAP;
     public static final int INV_X = (WIDTH - 162) / 2 + 1;
-    public static final int INV_Y = BUTTON_Y + BUTTON_H + 18;
-    public static final int HEIGHT = INV_Y + 3 * 18 + 4 + 18 + PAD;
+    public static final int INV_Y = BUTTON_Y + BUTTON_H + 16;
+    public static final int HEIGHT = INV_Y + 3 * 18 + 4 + 18 + 10;
 
     private final Container wardrobe;
     private final ContainerData data;
@@ -43,7 +43,7 @@ public final class WardrobeMenu extends AbstractContainerMenu {
 
     /** Where piece {@code piece} of set {@code set} sits: a 2 by 2 grid under the set's model (helmet, chestplate / leggings, boots). */
     public static int slotX(int set, int piece) {
-        return cardX(set) + 3 + (piece % 2) * 18;
+        return cardX(set) + 2 + (piece % 2) * 18;
     }
 
     public static int slotY(int piece) {

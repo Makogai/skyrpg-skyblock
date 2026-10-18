@@ -10,10 +10,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 
-/** The Quiver: its arrows, the type your bows shoot, and the inventory. */
+/** The Quiver: its arrows, the type your bows shoot (on a card under them), how full it is, and the inventory. */
 public final class QuiverScreen extends AbstractContainerScreen<QuiverMenu> {
-    private static final int WIDTH = 176;
-    private static final int HEIGHT = 220;
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
+    private static final int WIDTH = 182;
+    private static final int HEIGHT = QuiverMenu.INV_Y + 3 * 18 + 4 + 18 + 10;
 
     public QuiverScreen(QuiverMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, WIDTH, HEIGHT);
@@ -24,17 +25,38 @@ public final class QuiverScreen extends AbstractContainerScreen<QuiverMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         int x = leftPos;
         int y = topPos;
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal("Quiver"), Component.literal("Arrows").withColor(Theme.AQUA));
-        ItemStack ammo = minecraft.player == null ? ItemStack.EMPTY : Quiver.ammo(minecraft.player);
-        Component shooting = ammo.isEmpty() ? Component.literal("No arrows: put some in to shoot your bows").withColor(Theme.DIM)
-                : Component.literal("Shooting: ").withColor(Theme.MUTED).append(ammo.getHoverName()).append(Component.literal("  (Arrow Swapper to change)")
-                        .withColor(Theme.DIM));
-        Draw.fit(g, font, shooting, x + 8, y + 20, imageWidth - 16, 0.65f, 0.45f, Draw.Align.LEFT, Theme.TEXT, false);
+        int used = 0;
+        int arrows = 0;
         for (int i = 0; i < Quiver.SIZE; i++) {
-            SkyScreens.well(g, x + QuiverMenu.GRID_X + (i % 9) * 18, y + QuiverMenu.GRID_Y + (i / 9) * 18);
+            ItemStack stack = menu.slots.get(i).getItem();
+            if (!stack.isEmpty()) {
+                used++;
+                arrows += stack.getCount();
+            }
         }
-        SkyScreens.label(g, font, "Inventory", x + QuiverMenu.INV_X, y + QuiverMenu.INV_Y - 10);
-        SkyScreens.inventoryWells(g, menu, Quiver.SIZE, x, y);
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Quiver"),
+                Component.literal(arrows + " arrow" + (arrows == 1 ? "" : "s")).withColor(Theme.AQUA));
+        for (int i = 0; i < Quiver.SIZE; i++) {
+            SkyScreens.well(g, THEME, x + QuiverMenu.GRID_X + (i % 9) * 18, y + QuiverMenu.GRID_Y + (i / 9) * 18);
+        }
+
+        // The card under the grid: the arrow your bows shoot, and how many slots are in use.
+        int cx = x + THEME.inset;
+        int cy = y + QuiverMenu.GRID_Y + 5 * 18 + 4;
+        int cw = imageWidth - THEME.inset * 2;
+        SkyScreens.card(g, THEME, cx, cy, cw, 16, false, false);
+        ItemStack ammo = minecraft.player == null ? ItemStack.EMPTY : Quiver.ammo(minecraft.player);
+        Component shooting;
+        if (ammo.isEmpty()) {
+            shooting = Component.literal("No arrows: put some in to shoot").withColor(THEME.dim);
+        } else {
+            Draw.item(g, ammo, cx + 3, cy, 1f);
+            shooting = Component.literal("Shooting ").withColor(THEME.muted).append(ammo.getHoverName());
+        }
+        Draw.fit(g, font, shooting, cx + (ammo.isEmpty() ? 6 : 22), cy + 4, cw - 92, 0.75f, 0.45f, Draw.Align.LEFT, THEME.text, false);
+        SkyScreens.bar(g, THEME, cx + cw - 62, cy + 5, 56, 5, used / (float) Quiver.SIZE, used >= Quiver.SIZE ? Theme.RED : Theme.AQUA);
+        Draw.fit(g, font, Component.literal(used + "/" + Quiver.SIZE), cx + cw - 65, cy + 4, 26, 0.65f, 0.4f, Draw.Align.RIGHT, THEME.muted, false);
+        SkyScreens.inventoryWells(g, THEME, menu, Quiver.SIZE, x, y);
     }
 
     @Override

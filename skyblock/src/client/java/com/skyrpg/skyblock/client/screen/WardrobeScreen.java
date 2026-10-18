@@ -33,7 +33,13 @@ import net.minecraft.world.item.ItemStack;
  * Hover a model to see what the whole set gives.
  */
 public final class WardrobeScreen extends AbstractContainerScreen<WardrobeMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final int GREEN_GLOW = 0x5534C759;
+    private static final net.minecraft.resources.Identifier[] GHOSTS = {
+            net.minecraft.resources.Identifier.withDefaultNamespace("container/slot/helmet"),
+            net.minecraft.resources.Identifier.withDefaultNamespace("container/slot/chestplate"),
+            net.minecraft.resources.Identifier.withDefaultNamespace("container/slot/leggings"),
+            net.minecraft.resources.Identifier.withDefaultNamespace("container/slot/boots")};
     private final Mannequin[] mannequins = new Mannequin[Wardrobe.SETS];
 
     public WardrobeScreen(WardrobeMenu menu, Inventory inventory, Component title) {
@@ -47,8 +53,8 @@ public final class WardrobeScreen extends AbstractContainerScreen<WardrobeMenu> 
         int worn = menu.equipped();
         int x = leftPos;
         int y = topPos;
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal("Wardrobe"),
-                Component.literal(worn >= 0 ? "Wearing set " + (worn + 1) : "Save up to " + Wardrobe.SETS + " armour sets"));
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Wardrobe"),
+                Component.literal(worn >= 0 ? "Wearing set " + (worn + 1) : "Save up to " + Wardrobe.SETS + " armour sets").withColor(worn >= 0 ? THEME.good : THEME.muted));
         float time = Util.getMillis() / 1000f;
         for (int set = 0; set < Wardrobe.SETS; set++) {
             int cx = x + WardrobeMenu.cardX(set);
@@ -57,27 +63,29 @@ public final class WardrobeScreen extends AbstractContainerScreen<WardrobeMenu> 
             boolean isWorn = set == worn;
             boolean empty = empty(set);
             boolean over = SkyScreens.inside(mouseX, mouseY, cx, cy, WardrobeMenu.CARD_W, ch);
-            int border = isWorn ? Theme.GREEN : over ? Theme.ACCENT : Theme.CARD_BORDER;
-            Draw.panel(g, cx, cy, WardrobeMenu.CARD_W, ch, over ? Theme.CARD_HOVER : Theme.CARD, border);
+            SkyScreens.card(g, THEME, cx, cy, WardrobeMenu.CARD_W, ch, over || isWorn, empty && !over);
             // A glow behind the model: green on the set you wear, faint on the rest.
             g.fillGradient(cx + 1, cy + 1, cx + WardrobeMenu.CARD_W - 1, cy + WardrobeMenu.MODEL_H,
-                    isWorn ? GREEN_GLOW : over ? 0x33F2B33D : 0x18FFFFFF, 0x00000000);
-            Draw.text(g, font, Integer.toString(set + 1), cx + 3, cy + 3, isWorn ? Theme.GREEN : Theme.DIM);
+                    isWorn ? GREEN_GLOW : over ? Draw.withAlpha(THEME.accent, 0.2f) : 0x18FFFFFF, 0x00000000);
+            Draw.text(g, font, Integer.toString(set + 1), cx + 4, cy + 4, isWorn ? THEME.good : THEME.dim);
             if (empty) {
                 String text = "Empty";
-                Draw.text(g, font, text, cx + (WardrobeMenu.CARD_W - font.width(text)) / 2, cy + WardrobeMenu.MODEL_H / 2 - 4, Theme.DIM);
+                Draw.text(g, font, text, cx + (WardrobeMenu.CARD_W - font.width(text)) / 2, cy + WardrobeMenu.MODEL_H / 2 - 4, THEME.dim);
             } else {
                 float yaw = over ? Mth.clamp((mouseX - (cx + WardrobeMenu.CARD_W / 2f)) * 4f, -70f, 70f) : 25f * Mth.sin(time * 0.6f + set);
-                Draw.entityTurning(g, cx + 2, cy + 4, cx + WardrobeMenu.CARD_W - 2, cy + WardrobeMenu.MODEL_H, 22, yaw, time * 20f, mannequin(set));
+                Draw.entityTurning(g, cx + 2, cy + 6, cx + WardrobeMenu.CARD_W - 2, cy + WardrobeMenu.MODEL_H, 19, yaw, time * 20f, mannequin(set));
             }
             for (int piece = 0; piece < 4; piece++) {
-                SkyScreens.armorWell(g, x + WardrobeMenu.slotX(set, piece), y + WardrobeMenu.slotY(piece) - 1, piece,
-                        menu.piece(set, piece).isEmpty());
+                SkyScreens.well(g, THEME, x + WardrobeMenu.slotX(set, piece), y + WardrobeMenu.slotY(piece) - 1);
+                if (menu.piece(set, piece).isEmpty()) {
+                    g.blitSprite(net.minecraft.client.renderer.RenderPipelines.GUI_TEXTURED, GHOSTS[piece], x + WardrobeMenu.slotX(set, piece) + 1,
+                            y + WardrobeMenu.slotY(piece), 16, 16, 0x55FFFFFF);
+                }
             }
             button(g, font, set, isWorn, empty, mouseX, mouseY);
         }
-        SkyScreens.label(g, font, "Inventory", x + WardrobeMenu.INV_X, y + WardrobeMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, Wardrobe.SETS * 4, x, y);
+        SkyScreens.label(g, font, THEME, "Inventory", x + WardrobeMenu.INV_X, y + WardrobeMenu.INV_Y - 11);
+        SkyScreens.inventoryWells(g, THEME, menu, Wardrobe.SETS * 4, x, y);
     }
 
     private void button(GuiGraphicsExtractor g, Font font, int set, boolean isWorn, boolean empty, int mouseX, int mouseY) {
@@ -85,11 +93,8 @@ public final class WardrobeScreen extends AbstractContainerScreen<WardrobeMenu> 
         int by = topPos + WardrobeMenu.BUTTON_Y;
         int bw = WardrobeMenu.CARD_W - 4;
         boolean over = !empty && SkyScreens.inside(mouseX, mouseY, bx, by, bw, WardrobeMenu.BUTTON_H);
-        int color = isWorn ? Theme.GREEN : empty ? Theme.DIM : Theme.ACCENT;
-        Draw.panel(g, bx, by, bw, WardrobeMenu.BUTTON_H, over ? Draw.mix(Theme.TRACK, color, 0.22f) : Theme.TRACK,
-                over ? color : Draw.mix(Theme.TRACK, color, 0.5f));
         String label = isWorn ? (over ? "Take off" : "Worn") : empty ? "Empty" : "Wear";
-        Draw.fit(g, font, Component.literal(label), bx + bw / 2, by + 3, bw - 4, 1f, 0.7f, Draw.Align.CENTER, color, false);
+        SkyScreens.button(g, font, THEME, bx, by, bw, WardrobeMenu.BUTTON_H, label, !empty, over);
     }
 
     @Override
@@ -106,7 +111,7 @@ public final class WardrobeScreen extends AbstractContainerScreen<WardrobeMenu> 
         for (int set = 0; set < Wardrobe.SETS; set++) {
             int cx = leftPos + WardrobeMenu.cardX(set);
             if (!empty(set) && SkyScreens.inside(mouseX, mouseY, cx, topPos + WardrobeMenu.TOP, WardrobeMenu.CARD_W, WardrobeMenu.MODEL_H)) {
-                Draw.queueTooltip(summary(set), set == menu.equipped() ? Theme.GREEN : Theme.ACCENT);
+                Draw.queueTooltip(summary(set), set == menu.equipped() ? THEME.good : THEME.accent);
             }
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);

@@ -28,10 +28,10 @@ public final class CraftMenu extends AbstractContainerMenu {
     public static final int CRAFT = 0;
     public static final int CRAFT_ALL = 1;
     // Layout, shared with the screen.
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int GRID_X = PAD + 10;
-    public static final int GRID_Y = TOP + 8;
+    public static final int GRID_Y = TOP + 6;
     public static final int RESULT_X = GRID_X + 3 * 18 + 26;
     public static final int WIDTH = 236;
     public static final int RESULT_W = WIDTH - PAD - RESULT_X;

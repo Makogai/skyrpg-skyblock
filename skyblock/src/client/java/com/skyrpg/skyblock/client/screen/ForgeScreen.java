@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
 import com.skyrpg.core.client.ui.Theme;
 import com.skyrpg.skyblock.mining.ForgeMenu;
+import com.skyrpg.skyblock.ui.Chip;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -14,21 +15,27 @@ import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 
 /**
- * The Forge: the slot row on top (forging with time left, ready to take, empty, or locked), then every recipe, its
- * materials with what you have (green when you have enough) and its time. Click a recipe to forge it in a free slot;
- * click a finished slot to take the item.
+ * The Forge, in the mining theme: the slot cards on top (forging with a progress bar and time left, ready to take, empty,
+ * or locked), then every recipe as a card with its output, materials (have/need chips, red when short), coins and time.
+ * Click a recipe to forge it in a free slot; click a finished slot to take the item. Hover for the item's real tooltip.
  */
 public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.MINING;
     private static final int WIDTH = 300;
-    private static final int HEIGHT = 230;
-    private static final int SLOT_W = 38;
-    private static final int SLOT_H = 34;
-    private static final int SLOTS_Y = 24;
-    private static final int LIST_Y = 72;
-    private static final int ROW_H = 24;
+    private static final int HEIGHT = 232;
+    private static final int SLOT_W = 36;
+    private static final int SLOT_GAP = 4;
+    private static final int SLOT_H = 38;
+    private static final int SLOTS_Y = SkyScreens.contentTop(THEME);
+    private static final int LIST_Y = SLOTS_Y + SLOT_H + 14;
+    private static final int ROW_H = 28;
+    private static final int GAP = 3;
     private static final int ORANGE = 0xFFFF8A2A;
 
     private double scroll;
@@ -38,7 +45,7 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
     }
 
     private int slotX(int i) {
-        return leftPos + (imageWidth - ForgeMenu.MAX_SLOTS * (SLOT_W + 2)) / 2 + i * (SLOT_W + 2);
+        return leftPos + (imageWidth - (ForgeMenu.MAX_SLOTS * SLOT_W + (ForgeMenu.MAX_SLOTS - 1) * SLOT_GAP)) / 2 + i * (SLOT_W + SLOT_GAP);
     }
 
     private int listTop() {
@@ -46,7 +53,15 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
     }
 
     private int listHeight() {
-        return imageHeight - LIST_Y - 6;
+        return imageHeight - LIST_Y - 16;
+    }
+
+    private int listX() {
+        return leftPos + THEME.inset;
+    }
+
+    private int listW() {
+        return imageWidth - 2 * THEME.inset;
     }
 
     @Override
@@ -54,77 +69,101 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         Font font = this.font;
         ForgeMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("The Forge"),
-                Component.literal("HotM " + view.hotm()).withColor(Theme.MUTED));
+        SkyScreens.window(g, font, THEME, leftPos, topPos, imageWidth, imageHeight, Component.literal("The Forge"),
+                Component.literal("HotM " + view.hotm()).withColor(THEME.muted));
         List<Component> tooltip = null;
         for (int i = 0; i < view.slots().size(); i++) {
             ForgeMenu.SlotView slot = view.slots().get(i);
             int x = slotX(i);
             int y = topPos + SLOTS_Y;
             boolean ready = !slot.output().isEmpty() && slot.left() <= 0;
+            boolean busy = !slot.output().isEmpty() && !ready;
             boolean over = SkyScreens.inside(mouseX, mouseY, x, y, SLOT_W, SLOT_H);
-            int border = !slot.open() ? Theme.CARD_BORDER : ready ? Theme.GREEN : !slot.output().isEmpty() ? ORANGE : Theme.CARD_BORDER;
-            Draw.panel(g, x, y, SLOT_W, SLOT_H, over && ready ? Theme.CARD_HOVER : Theme.CARD, border);
+            SkyScreens.card(g, THEME, x, y, SLOT_W, SLOT_H, over && ready, !slot.open());
+            if (ready) {
+                Draw.outline(g, x, y, SLOT_W, SLOT_H, THEME.good);
+            } else if (busy) {
+                Draw.outline(g, x, y, SLOT_W, SLOT_H, ORANGE);
+            }
             String label;
             int color;
             if (!slot.open()) {
+                Draw.item(g, new ItemStack(Items.IRON_BARS), x + (SLOT_W - 14) / 2, y + 6, 0.875f);
                 label = "Locked";
-                color = Theme.DIM;
+                color = THEME.dim;
             } else if (slot.output().isEmpty()) {
+                Draw.fit(g, font, Component.literal("+"), x + SLOT_W / 2, y + 8, SLOT_W, 1.6f, 1f, Draw.Align.CENTER, THEME.dim, false);
                 label = "Empty";
-                color = Theme.MUTED;
+                color = THEME.muted;
             } else {
-                Draw.item(g, slot.output(), x + (SLOT_W - 16) / 2, y + 3, 1f);
+                g.fill(x + (SLOT_W - 18) / 2, y + 3, x + (SLOT_W + 18) / 2, y + 21, 0x55000000);
+                Draw.item(g, slot.output(), x + (SLOT_W - 16) / 2, y + 4, 1f);
                 label = ready ? "Claim!" : time(slot.left() / 1000);
-                color = ready ? Theme.GREEN : ORANGE;
+                color = ready ? THEME.good : ORANGE;
                 if (over) {
-                    tooltip = new ArrayList<>();
-                    tooltip.add(slot.output().getHoverName());
+                    tooltip = new ArrayList<>(slot.output().getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player, TooltipFlag.NORMAL));
+                    tooltip.add(Component.empty());
                     tooltip.add(Component.literal(ready ? "§aReady! Click to take it." : "§7Done in §6" + time(slot.left() / 1000)));
                 }
             }
-            Draw.fit(g, font, Component.literal(label), x + SLOT_W / 2, y + SLOT_H - 10, SLOT_W - 4, 0.65f, 0.45f, Draw.Align.CENTER, color, false);
-            if (!slot.output().isEmpty() && !ready && slot.total() > 0) {
-                Draw.bar(g, x + 3, y + 21, SLOT_W - 6, 2, 1f - (float) slot.left() / slot.total(), ORANGE);
+            if (busy && slot.total() > 0) {
+                SkyScreens.bar(g, THEME, x + 4, y + 23, SLOT_W - 8, 4, 1f - (float) slot.left() / slot.total(), ORANGE);
             }
+            Draw.fit(g, font, Component.literal(label), x + SLOT_W / 2, y + SLOT_H - 9, SLOT_W - 4, 0.65f, 0.45f, Draw.Align.CENTER, color, false);
         }
-        Draw.fit(g, font, Component.literal("Recipes"), leftPos + 10, topPos + LIST_Y - 10, 100, 0.75f, 0.5f, Draw.Align.LEFT, Theme.MUTED, false);
+        Draw.fit(g, font, Component.literal("Recipes"), leftPos + THEME.inset + 2, topPos + LIST_Y - 10, 100, 0.75f, 0.5f, Draw.Align.LEFT,
+                THEME.accent, false);
+        Draw.fit(g, font, Component.literal("Click a recipe to forge it in a free slot"), leftPos + imageWidth - THEME.inset - 2, topPos + LIST_Y - 9,
+                imageWidth / 2, 0.62f, 0.45f, Draw.Align.RIGHT, THEME.dim, false);
 
         List<ForgeMenu.RecipeView> recipes = view.recipes();
         int top = listTop();
         int height = listHeight();
-        int content = recipes.size() * (ROW_H + 2);
+        int content = recipes.size() * (ROW_H + GAP);
         scroll = Mth.clamp(scroll, 0, Math.max(0, content - height));
-        g.enableScissor(leftPos + 4, top, leftPos + imageWidth - 4, top + height);
+        int x = listX();
+        int w = listW() - (content > height ? 6 : 0);
+        g.enableScissor(leftPos + 2, top, leftPos + imageWidth - 2, top + height);
         for (int i = 0; i < recipes.size(); i++) {
             ForgeMenu.RecipeView recipe = recipes.get(i);
-            int y = top + i * (ROW_H + 2) - (int) Math.round(scroll);
+            int y = top + i * (ROW_H + GAP) - (int) Math.round(scroll);
             if (y + ROW_H < top || y > top + height) {
                 continue;
             }
-            int x = leftPos + 8;
-            int w = imageWidth - 16;
             boolean locked = recipe.hotm() > view.hotm();
             boolean over = SkyScreens.inside(mouseX, mouseY, x, Math.max(y, top), w, ROW_H) && mouseY < top + height;
-            Draw.panel(g, x, y, w, ROW_H, over ? Theme.CARD_HOVER : Theme.CARD, recipe.ready() && !locked ? Theme.GREEN : Theme.CARD_BORDER);
-            Draw.item(g, recipe.output(), x + 3, y + 4, 1f);
-            Draw.fit(g, font, recipe.output().getHoverName(), x + 23, y + 3, w / 2, 0.8f, 0.5f, Draw.Align.LEFT, locked ? Theme.DIM : Theme.TEXT, false);
+            SkyScreens.card(g, THEME, x, y, w, ROW_H, over, locked);
+            if (recipe.ready() && !locked) {
+                Draw.outline(g, x, y, w, ROW_H, THEME.good);
+            }
+            g.fill(x + 4, y + 4, x + 24, y + ROW_H - 4, 0x55000000);
+            Draw.item(g, recipe.output(), x + 6, y + 6, 1f);
+            int tx = x + 30;
             String right = locked ? "HotM " + recipe.hotm() : time(recipe.seconds());
-            Draw.fit(g, font, Component.literal(right), x + w - 4, y + 3, 60, 0.7f, 0.45f, Draw.Align.RIGHT, locked ? Theme.RED : ORANGE, false);
-            // The materials, small, with have/need.
-            int mx = x + 23;
+            int rightW = Math.round(font.width(right) * 0.7f) + 14;
+            Draw.fit(g, font, recipe.output().getHoverName(), tx, y + 4, w - 30 - rightW - 8, 0.85f, 0.5f, Draw.Align.LEFT,
+                    locked ? THEME.dim : THEME.text, false);
+            if (locked) {
+                Draw.fit(g, font, Component.literal(right), x + w - 6, y + 5, rightW, 0.7f, 0.45f, Draw.Align.RIGHT, Theme.RED, false);
+            } else {
+                Chip clock = Chip.note(new ItemStack(Items.CLOCK), right, true);
+                SkyScreens.chip(g, font, THEME, x + w - 6 - SkyScreens.chipWidth(font, clock, 0.7f), y + 4, clock, 0.7f);
+            }
+            // The materials with have/need (red when short), then the coins.
+            List<Chip> chips = new ArrayList<>();
             for (int k = 0; k < recipe.inputs().size(); k++) {
                 ItemStack input = recipe.inputs().get(k);
                 int have = recipe.have().get(k);
-                Draw.item(g, input, mx, y + 12, 0.6f);
-                String count = compact(have) + "/" + compact(input.getCount());
-                Draw.fit(g, font, Component.literal(count), mx + 11, y + 14, 40, 0.55f, 0.4f, Draw.Align.LEFT,
-                        have >= input.getCount() ? Theme.GREEN : Theme.RED, false);
-                mx += 11 + Math.min(40, font.width(count) * 55 / 100) + 5;
+                chips.add(Chip.note(input, compact(have) + "/" + compact(input.getCount()), have >= input.getCount()));
             }
             if (recipe.coins() > 0) {
-                Draw.fit(g, font, Component.literal(String.format(Locale.ROOT, "%,d coins", recipe.coins())), x + w - 4, y + 14, 70, 0.55f, 0.4f,
-                        Draw.Align.RIGHT, 0xFFFFAA00, false);
+                chips.add(new Chip("coins", ItemStack.EMPTY, String.format(Locale.ROOT, "%,d", recipe.coins()), true));
+            }
+            SkyScreens.chips(g, font, THEME, tx, y + 16, chips, 0.7f, x + w - 6);
+            if (locked) {
+                // Dim the icon (items draw above fills in the same stratum).
+                g.nextStratum();
+                g.fill(x + 6, y + 6, x + 22, y + 22, 0x99140F0A);
             }
             if (over) {
                 tooltip = tooltip(recipe, locked);
@@ -132,7 +171,7 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
         }
         g.disableScissor();
         if (content > height) {
-            Draw.scrollbar(g, leftPos + imageWidth - 5, top, height, content, scroll, ORANGE);
+            Draw.scrollbar(g, listX() + listW() - 4, top, height, content, scroll, THEME.accent);
         }
         if (tooltip != null) {
             Draw.queueTooltip(tooltip, ORANGE);
@@ -140,9 +179,9 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
 
-    private static List<Component> tooltip(ForgeMenu.RecipeView recipe, boolean locked) {
-        List<Component> lines = new ArrayList<>();
-        lines.add(recipe.output().getHoverName());
+    private List<Component> tooltip(ForgeMenu.RecipeView recipe, boolean locked) {
+        List<Component> lines = new ArrayList<>(recipe.output().getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player,
+                TooltipFlag.NORMAL));
         lines.add(Component.empty());
         lines.add(Component.literal("§7Materials:"));
         for (int k = 0; k < recipe.inputs().size(); k++) {
@@ -204,10 +243,10 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
                 }
             }
             int top = listTop();
-            if (SkyScreens.inside(event.x(), event.y(), leftPos + 8, top, imageWidth - 16, listHeight())) {
+            if (SkyScreens.inside(event.x(), event.y(), listX(), top, listW(), listHeight())) {
                 double at = event.y() - top + scroll;
-                int index = (int) (at / (ROW_H + 2));
-                if (index >= 0 && index < view.recipes().size() && at % (ROW_H + 2) < ROW_H) {
+                int index = (int) (at / (ROW_H + GAP));
+                if (index >= 0 && index < view.recipes().size() && at % (ROW_H + GAP) < ROW_H) {
                     minecraft.gameMode.handleInventoryButtonClick(menu.containerId, index);
                     SkyScreens.click();
                     return true;
@@ -219,7 +258,7 @@ public final class ForgeScreen extends AbstractContainerScreen<ForgeMenu> {
 
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
-        scroll -= scrollY * 24;
+        scroll -= scrollY * (ROW_H + GAP);
         return true;
     }
 }

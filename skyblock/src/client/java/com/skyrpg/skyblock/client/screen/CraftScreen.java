@@ -31,6 +31,7 @@ import net.minecraft.world.item.TooltipFlag;
  * or all. The Recipe Book is a click away at the top.
  */
 public final class CraftScreen extends AbstractContainerScreen<CraftMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final int BUTTON_H = 14;
     private static final int PANEL_H = 3 * 18 + 2;
 
@@ -58,8 +59,8 @@ public final class CraftScreen extends AbstractContainerScreen<CraftMenu> {
         int x = leftPos;
         int y = topPos;
         boolean overBook = overBook(mouseX, mouseY);
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal("Craft Item"),
-                Component.literal("📖 Recipe Book ▸").withColor(overBook ? Theme.ACCENT : Theme.MUTED));
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Craft Item"),
+                Component.literal("📖 Recipe Book ▸").withColor(overBook ? THEME.accent : THEME.muted));
 
         Recipes.Match match = menu.match();
         ItemDefinition def = match == null ? null : ItemRegistry.skyblock(match.recipe().output());
@@ -69,11 +70,11 @@ public final class CraftScreen extends AbstractContainerScreen<CraftMenu> {
         // The grid, on its own card.
         int gx = x + CraftMenu.GRID_X;
         int gy = y + CraftMenu.GRID_Y;
-        Draw.panel(g, gx - 5, gy - 5, 3 * 18 + 10, 3 * 18 + 10, Theme.CARD, Theme.CARD_BORDER);
+        SkyScreens.card(g, THEME, gx - 5, gy - 5, 3 * 18 + 10, 3 * 18 + 10, false, false);
         for (int i = 0; i < CraftMenu.GRID_SIZE; i++) {
             int sx = gx + (i % 3) * 18;
             int sy = gy + (i / 3) * 18;
-            SkyScreens.well(g, sx, sy);
+            SkyScreens.well(g, THEME, sx, sy);
             if (match != null && match.need()[i] > 0) {
                 // Each used cell's need, ticked green when the stack covers it.
                 g.fill(sx + 1, sy + 16, sx + 17, sy + 17, Draw.withAlpha(open ? Theme.GREEN : Theme.RED, 0.8f));
@@ -84,21 +85,24 @@ public final class CraftScreen extends AbstractContainerScreen<CraftMenu> {
         int ax = gx + 3 * 18 + 8;
         int ay = gy + 3 * 18 / 2 - 4;
         float pulse = 0.65f + 0.35f * (float) Math.sin(Util.getMillis() / 220.0);
-        Draw.scaledText(g, font, Component.literal("➜"), ax, ay - 2, 1.5f, match == null ? Theme.DIM : Draw.withAlpha(open ? accent : Theme.RED, pulse));
+        Draw.scaledText(g, font, Component.literal("➜"), ax, ay - 2, 1.5f, match == null ? THEME.dim : Draw.withAlpha(open ? accent : Theme.RED, pulse));
 
         // The result card.
         int rx = x + CraftMenu.RESULT_X;
         int ry = gy - 1;
         int rw = CraftMenu.RESULT_W;
-        Draw.panel(g, rx, ry, rw, PANEL_H, Theme.CARD, match == null ? Theme.CARD_BORDER : Draw.mix(Theme.CARD_BORDER, accent, 0.6f));
+        SkyScreens.card(g, THEME, rx, ry, rw, PANEL_H, match != null && open, match == null);
+        if (match != null) {
+            g.fill(rx + 2, ry + 2, rx + 4, ry + PANEL_H - 2, Draw.withAlpha(accent, 0.9f));
+        }
         if (match == null) {
-            Draw.fit(g, font, Component.literal("Place a recipe in the grid"), rx + rw / 2, ry + 16, rw - 10, 1f, 0.6f, Draw.Align.CENTER, Theme.DIM, false);
-            Draw.fit(g, font, Component.literal("or find one in the Recipe Book").withColor(Theme.DIM), rx + rw / 2, ry + 27, rw - 10, 0.8f, 0.5f,
-                    Draw.Align.CENTER, Theme.DIM, false);
+            Draw.fit(g, font, Component.literal("Place a recipe in the grid"), rx + rw / 2, ry + 16, rw - 10, 1f, 0.6f, Draw.Align.CENTER, THEME.dim, false);
+            Draw.fit(g, font, Component.literal("or find one in the Recipe Book").withColor(THEME.dim), rx + rw / 2, ry + 27, rw - 10, 0.8f, 0.5f,
+                    Draw.Align.CENTER, THEME.dim, false);
         } else {
             g.fillGradient(rx + 1, ry + 1, rx + rw - 1, ry + 26, Draw.withAlpha(accent, 0.28f), 0x00000000);
             ItemStack out = output(match);
-            SkyScreens.well(g, rx + 5, ry + 5);
+            SkyScreens.well(g, THEME, rx + 5, ry + 5);
             g.item(out, rx + 6, ry + 6);
             g.itemDecorations(font, out, rx + 6, ry + 6, match.recipe().count() > 1 ? Integer.toString(match.recipe().count()) : null);
             Draw.fit(g, font, Component.literal(def == null ? match.recipe().output() : def.name()), rx + 27, ry + 6, rw - 32, 1f, 0.55f, Draw.Align.LEFT,
@@ -110,26 +114,23 @@ public final class CraftScreen extends AbstractContainerScreen<CraftMenu> {
                 int times = match.times(menu.gridStacks());
                 status = Component.literal("✔ Ready" + (times > 1 ? " · grid makes " + times : "")).withColor(Theme.GREEN);
             }
-            Draw.fit(g, font, status, rx + 27, ry + 16, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+            Draw.fit(g, font, status, rx + 27, ry + 16, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, THEME.text, false);
             int by = buttonsY();
             button(g, font, rx + 6, by, "Craft", open, mouseX, mouseY);
             button(g, font, rx + 10 + buttonW(), by, "Craft all", open && match.times(menu.gridStacks()) > 1, mouseX, mouseY);
         }
 
-        SkyScreens.label(g, font, "Inventory", x + CraftMenu.INV_X, y + CraftMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, CraftMenu.GRID_SIZE, x, y);
+        SkyScreens.label(g, font, THEME, "Inventory", x + CraftMenu.INV_X, y + CraftMenu.INV_Y - 11);
+        SkyScreens.inventoryWells(g, THEME, menu, CraftMenu.GRID_SIZE, x, y);
     }
 
     private void button(GuiGraphicsExtractor g, Font font, int bx, int by, String label, boolean enabled, int mouseX, int mouseY) {
         boolean over = enabled && SkyScreens.inside(mouseX, mouseY, bx, by, buttonW(), BUTTON_H);
-        int color = enabled ? Theme.GREEN : Theme.DIM;
-        Draw.panel(g, bx, by, buttonW(), BUTTON_H, over ? Draw.mix(Theme.TRACK, color, 0.25f) : Theme.TRACK,
-                over ? color : Draw.mix(Theme.TRACK, color, 0.55f));
-        Draw.fit(g, font, Component.literal(label), bx + buttonW() / 2, by + 3, buttonW() - 4, 1f, 0.6f, Draw.Align.CENTER, color, false);
+        SkyScreens.button(g, font, THEME, bx, by, buttonW(), BUTTON_H, label, enabled, over);
     }
 
     private boolean overBook(double mouseX, double mouseY) {
-        return SkyScreens.inside(mouseX, mouseY, leftPos + imageWidth - 90, topPos + 6, 84, 14);
+        return SkyScreens.inside(mouseX, mouseY, leftPos + imageWidth - 104, topPos + 10, 90, 14);
     }
 
     @Override

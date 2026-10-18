@@ -2,7 +2,6 @@ package com.skyrpg.skyblock.client.screen;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
-import com.skyrpg.core.client.ui.Theme;
 import com.skyrpg.skyblock.storage.EnderPageMenu;
 import com.skyrpg.skyblock.storage.Storage;
 import java.util.List;
@@ -20,6 +19,7 @@ import net.minecraft.world.item.Items;
  * a Wardrobe tab. Switching tabs swaps the page in place, without closing the screen.
  */
 public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final int TAB_STEP = EnderPageMenu.TAB_H + 2;
     private static final ItemStack WARDROBE_ICON = new ItemStack(Items.LEATHER_CHESTPLATE);
 
@@ -34,7 +34,7 @@ public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu
         int x = leftPos;
         int y = topPos;
         int page = menu.page();
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal("Ender Chest"),
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Ender Chest"),
                 Component.literal("Page " + (page + 1) + " of " + Math.max(1, menu.unlocked())));
         for (int i = 0; i < Storage.MAX_PAGES; i++) {
             int tx = x + EnderPageMenu.PAD;
@@ -42,29 +42,28 @@ public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu
             boolean locked = i >= menu.unlocked();
             boolean current = i == page;
             boolean over = !locked && SkyScreens.inside(mouseX, mouseY, tx, ty, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H);
-            Draw.panel(g, tx, ty, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H, locked ? Theme.TRACK : current || over ? Theme.CARD_HOVER : Theme.CARD,
-                    current ? Theme.PURPLE : over ? Draw.mix(Theme.CARD_BORDER, Theme.PURPLE, 0.6f) : locked ? Theme.CARD : Theme.CARD_BORDER);
-            if (current) {
-                g.fill(tx, ty + 2, tx + 2, ty + EnderPageMenu.TAB_H - 2, Theme.PURPLE);
+            SkyScreens.tab(g, font, THEME, tx, ty, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H, Integer.toString(i + 1), current, over);
+            if (locked) {
+                g.fill(tx + 1, ty + 1, tx + EnderPageMenu.TAB_W - 1, ty + EnderPageMenu.TAB_H - 1, 0xAA0A0D12);
             }
-            String number = Integer.toString(i + 1);
-            Draw.text(g, font, number, tx + (EnderPageMenu.TAB_W - font.width(number)) / 2, ty + 5,
-                    locked ? Theme.DIM : current ? Theme.PURPLE : Theme.MUTED);
         }
         int wy = wardrobeTabY();
         boolean overWardrobe = SkyScreens.inside(mouseX, mouseY, x + EnderPageMenu.PAD, wy, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H);
-        Draw.panel(g, x + EnderPageMenu.PAD, wy, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H, overWardrobe ? Theme.CARD_HOVER : Theme.CARD,
-                overWardrobe ? Theme.ACCENT : Theme.CARD_BORDER);
-        Draw.item(g, WARDROBE_ICON, x + EnderPageMenu.PAD + (EnderPageMenu.TAB_W - 16) / 2, wy, 1f);
+        SkyScreens.tab(g, font, THEME, x + EnderPageMenu.PAD, wy, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H, "", false, overWardrobe);
+        Draw.item(g, WARDROBE_ICON, x + EnderPageMenu.PAD + (EnderPageMenu.TAB_W - 12) / 2, wy + 2, 0.75f);
 
-        // The page: a sunken panel holding the wells.
-        Draw.panel(g, x + EnderPageMenu.GRID_X - 3, y + EnderPageMenu.GRID_Y - 3, 9 * 18 + 6, EnderPageMenu.ROWS * 18 + 6,
-                0xFF0E1119, Draw.withAlpha(Theme.PURPLE, 0.35f));
+        // The page: a well under every slot.
         for (int i = 0; i < Storage.PAGE_SIZE; i++) {
-            SkyScreens.well(g, x + EnderPageMenu.GRID_X + (i % 9) * 18, y + EnderPageMenu.GRID_Y + (i / 9) * 18);
+            SkyScreens.well(g, THEME, x + EnderPageMenu.GRID_X + (i % 9) * 18, y + EnderPageMenu.GRID_Y + (i / 9) * 18);
         }
-        SkyScreens.label(g, font, "Inventory", x + EnderPageMenu.INV_X, y + EnderPageMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, Storage.PAGE_SIZE, x, y);
+        int labelY = y + EnderPageMenu.INV_Y - 11;
+        SkyScreens.label(g, font, THEME, "Inventory", x + EnderPageMenu.INV_X, labelY);
+        // How many pages you've unlocked, as a small bar.
+        int unlocked = Math.max(1, menu.unlocked());
+        Draw.fit(g, font, Component.literal("Pages " + unlocked + "/" + Storage.MAX_PAGES), x + EnderPageMenu.INV_X + 162 - 62, labelY, 56, 0.7f,
+                0.5f, Draw.Align.RIGHT, THEME.muted, false);
+        SkyScreens.bar(g, THEME, x + EnderPageMenu.INV_X + 162 - 58, labelY + 1, 58, 6, (float) unlocked / Storage.MAX_PAGES, THEME.accent);
+        SkyScreens.inventoryWells(g, THEME, menu, Storage.PAGE_SIZE, x, y);
     }
 
     private int wardrobeTabY() {
@@ -86,14 +85,14 @@ public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu
         for (int i = 0; i < Storage.MAX_PAGES; i++) {
             if (SkyScreens.inside(mouseX, mouseY, tx, topPos + EnderPageMenu.TOP + i * TAB_STEP, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H)) {
                 boolean locked = i >= menu.unlocked();
-                Draw.queueTooltip(List.of(Component.literal("Ender Chest " + (i + 1)).withColor(Theme.PURPLE),
-                        Component.literal(locked ? "Unlocks with SkyBlock Leveling" : i == menu.page() ? "Open now" : "Click to open").withColor(Theme.MUTED)),
-                        Theme.PURPLE);
+                Draw.queueTooltip(List.of(Component.literal("Ender Chest " + (i + 1)).withColor(THEME.accent),
+                        Component.literal(locked ? "Unlocks with SkyBlock Leveling" : i == menu.page() ? "Open now" : "Click to open").withColor(THEME.muted)),
+                        THEME.accent);
             }
         }
         if (SkyScreens.inside(mouseX, mouseY, tx, wardrobeTabY(), EnderPageMenu.TAB_W, EnderPageMenu.TAB_H)) {
-            Draw.queueTooltip(List.of(Component.literal("Wardrobe").withColor(Theme.ACCENT),
-                    Component.literal("Your saved armour sets").withColor(Theme.MUTED)), Theme.ACCENT);
+            Draw.queueTooltip(List.of(Component.literal("Wardrobe").withColor(THEME.accent),
+                    Component.literal("Your saved armour sets").withColor(THEME.muted)), THEME.accent);
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }

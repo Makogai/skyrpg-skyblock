@@ -14,10 +14,10 @@ import net.minecraft.world.item.ItemStack;
 
 /** The quiver's 45 slots (arrows only), written back to the player's data after every change, and the inventory. */
 public final class QuiverMenu extends AbstractContainerMenu {
-    public static final int GRID_X = 8;
-    public static final int GRID_Y = 30;
-    public static final int INV_X = 8;
-    public static final int INV_Y = 136;
+    public static final int GRID_X = 10;
+    public static final int GRID_Y = 36;
+    public static final int INV_X = 11;
+    public static final int INV_Y = 148;
 
     private final ServerPlayer owner;
 

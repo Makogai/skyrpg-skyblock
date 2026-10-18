@@ -40,9 +40,31 @@ final class RespawnCommand {
     private RespawnCommand() {
     }
 
+    private static int action(com.mojang.brigadier.context.CommandContext<CommandSourceStack> ctx, String params)
+            throws com.mojang.brigadier.exceptions.CommandSyntaxException {
+        ServerPlayer player = EntityArgument.getPlayer(ctx, "player");
+        String type = com.mojang.brigadier.arguments.StringArgumentType.getString(ctx, "type");
+        boolean ran;
+        try {
+            // core's Actions, found at run time (devtools doesn't compile against the mods).
+            ran = (boolean) Class.forName("com.skyrpg.core.action.Actions").getMethod("run", String.class, ServerPlayer.class,
+                    com.google.gson.JsonObject.class).invoke(null, type, player, com.google.gson.JsonParser.parseString(params).getAsJsonObject());
+        } catch (ReflectiveOperationException e) {
+            ran = false;
+        }
+        Component result = Component.literal(ran ? "Ran " + type : "No action " + type);
+        ctx.getSource().sendSuccess(() -> result, false);
+        return ran ? 1 : 0;
+    }
+
     static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(Commands.literal("devtools")
                 .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+                // Runs an NPC action on a player (opens that NPC's screen), e.g. "devtools action SkyCam odger" or with JSON params.
+                .then(Commands.literal("action").then(Commands.argument("player", EntityArgument.player())
+                        .then(Commands.argument("type", com.mojang.brigadier.arguments.StringArgumentType.word()).executes(ctx -> action(ctx, "{}"))
+                                .then(Commands.argument("params", com.mojang.brigadier.arguments.StringArgumentType.greedyString())
+                                        .executes(ctx -> action(ctx, com.mojang.brigadier.arguments.StringArgumentType.getString(ctx, "params")))))))
                 .then(Commands.literal("respawn").then(Commands.argument("players", EntityArgument.players()).executes(ctx -> {
                     int count = 0;
                     for (ServerPlayer player : EntityArgument.getPlayers(ctx, "players")) {

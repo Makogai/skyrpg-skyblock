@@ -26,12 +26,12 @@ import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
  */
 public final class BrewMenu extends AbstractContainerMenu {
     public static final Identifier ALCHEMY = Identifier.fromNamespaceAndPath("skyrpg_skills", "alchemy");
-    public static final int[] BOTTLE_X = {56, 79, 102};
-    public static final int[] BOTTLE_Y = {64, 71, 64};
-    public static final int INGREDIENT_X = 79;
-    public static final int INGREDIENT_Y = 26;
-    public static final int INV_X = 8;
-    public static final int INV_Y = 112;
+    public static final int[] BOTTLE_X = {67, 90, 113};
+    public static final int[] BOTTLE_Y = {82, 89, 82};
+    public static final int INGREDIENT_X = 90;
+    public static final int INGREDIENT_Y = 42;
+    public static final int INV_X = 17;
+    public static final int INV_Y = 124;
     private static final int STAND_SLOTS = 4;
 
     private final Container stand;

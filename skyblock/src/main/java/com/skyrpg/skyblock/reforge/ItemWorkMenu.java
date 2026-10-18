@@ -31,8 +31,8 @@ public final class ItemWorkMenu extends AbstractContainerMenu {
     public static final int EXTRA = 1;
     // Layout, shared with the screen.
     public static final int WIDTH = 236;
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int ITEM_X = 30;
     public static final int EXTRA_X = 30;
     public static final int ITEM_Y = TOP + 10;

@@ -31,14 +31,14 @@ public final class ShopMenu extends AbstractContainerMenu {
     /** Button ids: the offer's index to buy one, plus this to buy a stack. */
     public static final int STACK = 10_000;
     // Layout, shared with the screen.
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int CELL = 20;
     public static final int COLUMNS = 9;
     public static final int ROWS = 3;
-    public static final int WIDTH = COLUMNS * CELL + 2 * PAD;
+    public static final int WIDTH = COLUMNS * CELL + 2 * PAD + 6;
     public static final int OFFERS_X = PAD;
-    public static final int OFFERS_Y = TOP + 2;
+    public static final int OFFERS_Y = TOP;
     public static final int INV_X = (WIDTH - 162) / 2 + 1;
     public static final int BUYBACK_Y = OFFERS_Y + ROWS * CELL + 16;
     public static final int INV_Y = BUYBACK_Y + 18 + 16;

@@ -227,7 +227,12 @@ public final class FactionQuests {
                 case MINIBOSS -> "Minibosses return every 2 minutes";
                 case FETCH -> "Talk to " + def.npc() + " in " + Factions.town(def.faction());
             };
-            rows.add(new FactionMenu.QuestRow(def.text(), where, quest.progress(), def.amount(), def.rep(), quest.done()));
+            rows.add(new FactionMenu.QuestRow(def.text(), where, quest.progress(), def.amount(), def.rep(), quest.done(),
+                    new net.minecraft.world.item.ItemStack(switch (def.type()) {
+                        case KILL -> net.minecraft.world.item.Items.IRON_SWORD;
+                        case MINIBOSS -> net.minecraft.world.item.Items.WITHER_SKELETON_SKULL;
+                        case FETCH -> net.minecraft.world.item.Items.PAPER;
+                    })));
         }
         return rows;
     }

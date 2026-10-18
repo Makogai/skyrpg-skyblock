@@ -1,7 +1,13 @@
 package com.skyrpg.skyblock.crimson;
 
+import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.text.Msg;
+import com.skyrpg.items.ItemDefinition;
+import com.skyrpg.items.ItemRegistry;
+import com.skyrpg.items.SkyItems;
+import com.skyrpg.items.SkyStacks;
 import com.skyrpg.skyblock.storage.SkyMenus;
+import com.skyrpg.skyblock.ui.Chip;
 import java.util.ArrayList;
 import java.util.List;
 import net.fabricmc.fabric.api.menu.v1.ExtendedMenuProvider;
@@ -14,6 +20,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 /**
  * The Crimson Isle's list screens, as rows with a button each ({@link #ROW} + row): the Kuudra Gatekeeper's tiers (start
@@ -25,12 +32,18 @@ public final class KuudraMenu extends AbstractContainerMenu {
 
     public enum Mode { TIERS, KEYS, REWARDS, DOJO }
 
-    /** A row: its title, the line under it, its colour, whether its button works, and the button's label. */
-    public record Row(String title, String detail, int color, boolean enabled, String button) {
+    /**
+     * A row: its title, the line under it, its colour, whether its button works, the button's label, its icon, its price or
+     * requirement chips, a progress bar (-1: none), a note on the right, and reward items shown as icons.
+     */
+    public record Row(String title, String detail, int color, boolean enabled, String button, ItemStack icon, List<Chip> chips, float progress,
+                      String note, List<ItemStack> items) {
         static final StreamCodec<RegistryFriendlyByteBuf, Row> CODEC = new StreamCodec<>() {
             @Override
             public Row decode(RegistryFriendlyByteBuf buf) {
-                return new Row(buf.readUtf(), buf.readUtf(), buf.readInt(), buf.readBoolean(), buf.readUtf());
+                return new Row(buf.readUtf(), buf.readUtf(), buf.readInt(), buf.readBoolean(), buf.readUtf(),
+                        ItemStack.OPTIONAL_STREAM_CODEC.decode(buf), Chip.CODEC.apply(ByteBufCodecs.list()).decode(buf), buf.readFloat(), buf.readUtf(),
+                        ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).decode(buf));
             }
 
             @Override
@@ -40,17 +53,22 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 buf.writeInt(row.color());
                 buf.writeBoolean(row.enabled());
                 buf.writeUtf(row.button());
+                ItemStack.OPTIONAL_STREAM_CODEC.encode(buf, row.icon());
+                Chip.CODEC.apply(ByteBufCodecs.list()).encode(buf, row.chips());
+                buf.writeFloat(row.progress());
+                buf.writeUtf(row.note());
+                ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).encode(buf, row.items());
             }
         };
     }
 
-    /** The mode, the title and subtitle, the rows and a line at the bottom. */
-    public record View(Mode mode, String title, String subtitle, List<Row> rows, String footer) {
+    /** The mode, the title and subtitle, the rows, a line at the bottom, the NPC's entity id (-1: none) and your balances. */
+    public record View(Mode mode, String title, String subtitle, List<Row> rows, String footer, int npc, List<Chip> wallet) {
         public static final StreamCodec<RegistryFriendlyByteBuf, View> CODEC = new StreamCodec<>() {
             @Override
             public View decode(RegistryFriendlyByteBuf buf) {
                 return new View(Mode.values()[buf.readVarInt()], buf.readUtf(), buf.readUtf(), Row.CODEC.apply(ByteBufCodecs.list()).decode(buf),
-                        buf.readUtf());
+                        buf.readUtf(), buf.readVarInt(), Chip.CODEC.apply(ByteBufCodecs.list()).decode(buf));
             }
 
             @Override
@@ -60,6 +78,8 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 buf.writeUtf(view.subtitle());
                 Row.CODEC.apply(ByteBufCodecs.list()).encode(buf, view.rows());
                 buf.writeUtf(view.footer());
+                buf.writeVarInt(view.npc());
+                Chip.CODEC.apply(ByteBufCodecs.list()).encode(buf, view.wallet());
             }
         };
     }
@@ -83,7 +103,24 @@ public final class KuudraMenu extends AbstractContainerMenu {
         return view;
     }
 
+    private static ItemStack icon(String id, net.minecraft.world.item.Item fallback) {
+        ItemDefinition def = ItemRegistry.skyblock(id);
+        return def == null ? new ItemStack(fallback) : SkyItems.create(def, 1);
+    }
+
+    private static final List<net.minecraft.world.item.Item> TEST_ICONS = List.of(Items.IRON_SWORD, Items.GOLDEN_APPLE, Items.DIAMOND_SWORD,
+            Items.BOOK, Items.SUGAR, Items.BOW, Items.SHIELD);
+
     static void open(ServerPlayer player, Mode mode) {
+        long coins = Wallet.balance(player);
+        List<Chip> wallet = new ArrayList<>(List.of(Chip.balance("coins", coins)));
+        String npcName = switch (mode) {
+            case TIERS -> "Gatekeeper";
+            case KEYS -> "Emissary";
+            case DOJO -> "Tao";
+            default -> null;
+        };
+        int npc = npcName == null ? -1 : FactionMenu.npcNear(player, npcName);
         List<Row> rows = new ArrayList<>();
         String title;
         String subtitle;
@@ -94,9 +131,11 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 subtitle = "Up to 4 players";
                 for (Kuudra.Tier tier : Kuudra.TIERS) {
                     String locked = Kuudra.locked(player, tier);
-                    rows.add(new Row(tier.title(), locked != null ? locked : "Kuudra " + Msg.number((long) tier.kuudraHealth()) + "❤  ·  cleared "
-                            + Kuudra.clears(player, tier.number()) + "x  ·  key: " + CrimsonIsle.itemName(tier.key()),
-                            TIER_COLORS[tier.number() - 1], locked == null, "Start"));
+                    ItemStack key = icon(tier.key(), Items.TRIPWIRE_HOOK);
+                    rows.add(new Row(tier.title(), locked != null ? locked : "Kuudra " + Msg.number((long) tier.kuudraHealth()) + "❤",
+                            TIER_COLORS[tier.number() - 1], locked == null, "Start", key,
+                            List.of(Chip.item(key, 1, SkyStacks.count(player.getInventory(), tier.key()))), -1,
+                            Kuudra.clears(player, tier.number()) + "x cleared", List.of()));
                 }
                 footer = "Your party's leader starts the fight for everyone.";
             }
@@ -105,12 +144,23 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 title = faction.isEmpty() ? "Emissary" : Factions.title(faction) + " Emissary";
                 subtitle = "Kuudra Keys";
                 int rep = faction.isEmpty() ? 0 : Factions.reputation(player, faction);
+                String material = faction.isEmpty() ? "ENCHANTED_RED_SAND" : Kuudra.material(faction);
+                ItemStack materialIcon = icon(material, Items.RED_SAND);
+                ItemStack star = icon("CORRUPTED_NETHER_STAR", Items.NETHER_STAR);
+                int materials = SkyStacks.count(player.getInventory(), material);
+                int stars = SkyStacks.count(player.getInventory(), "CORRUPTED_NETHER_STAR");
+                wallet.add(Chip.item(materialIcon, materials, materials));
+                wallet.add(Chip.item(star, stars, stars));
                 for (Kuudra.Tier tier : Kuudra.TIERS) {
                     boolean ok = !faction.isEmpty() && rep >= tier.keyRep();
-                    rows.add(new Row(CrimsonIsle.itemName(tier.key()), Msg.number(tier.keyCoins()) + " coins  ·  " + tier.keyMaterial() + " "
-                            + (faction.isEmpty() ? "Enchanted Red Sand / Mycelium" : CrimsonIsle.itemName(Kuudra.material(faction)))
-                            + "  ·  2 Corrupted Nether Stars" + (tier.keyRep() > 0 ? "  ·  " + Msg.number(tier.keyRep()) + " Rep" : ""),
-                            TIER_COLORS[tier.number() - 1], ok, "Buy"));
+                    List<Chip> chips = new ArrayList<>();
+                    chips.add(Chip.price("coins", tier.keyCoins(), coins));
+                    chips.add(Chip.item(materialIcon, tier.keyMaterial(), materials));
+                    chips.add(Chip.item(star, 2, stars));
+                    rows.add(new Row(CrimsonIsle.itemName(tier.key()), tier.keyRep() > 0 ? "Needs " + Msg.number(tier.keyRep()) + " "
+                            + (faction.isEmpty() ? "faction" : Factions.title(faction)) + " Reputation" : "No reputation needed",
+                            TIER_COLORS[tier.number() - 1], ok, "Buy", icon(tier.key(), Items.TRIPWIRE_HOOK), chips,
+                            tier.keyRep() > 0 ? Math.min(1f, (float) rep / tier.keyRep()) : -1, ok ? "" : "Locked", List.of()));
                 }
                 footer = faction.isEmpty() ? "Join a faction to buy keys." : "Keys open the paid chest of their tier.";
             }
@@ -120,8 +170,10 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 subtitle = Dojo.beltName(belt);
                 for (String test : Dojo.TESTS) {
                     int best = Dojo.best(player, test);
-                    rows.add(new Row(test, best > 0 ? "Best " + Msg.number(best) + " (" + Dojo.grade(best) + ")" : "Not taken yet",
-                            best >= 1_000 ? 0xFFAA00 : 0xFFFF55, !Dojo.busy(), "Test"));
+                    rows.add(new Row(test, best > 0 ? "Best " + Msg.number(best) : "Not taken yet",
+                            best >= 1_000 ? 0xFFAA00 : 0xFFFF55, !Dojo.busy(), "Test",
+                            new ItemStack(TEST_ICONS.get(Math.min(TEST_ICONS.size() - 1, Dojo.TESTS.indexOf(test)))), List.of(),
+                            Math.min(1f, best / 1_000f), best > 0 ? "Grade " + Dojo.grade(best) : "", List.of()));
                 }
                 int total = Dojo.total(player);
                 int next = -1;
@@ -139,19 +191,22 @@ public final class KuudraMenu extends AbstractContainerMenu {
                 title = "Kuudra's Chests";
                 subtitle = chests == null ? "" : chests.tier().title();
                 if (chests != null) {
-                    rows.add(new Row("Free Chest", Msg.number(chests.freeEssence()) + " Crimson Essence", 0xAAAAAA, !chests.opened()[0],
-                            chests.opened()[0] ? "Opened" : "Open"));
-                    StringBuilder paid = new StringBuilder(Msg.number(chests.paidEssence()) + " Crimson Essence");
-                    for (ItemStack stack : chests.paid()) {
-                        paid.append(", ").append(stack.getHoverName().getString()).append(stack.getCount() > 1 ? " x" + stack.getCount() : "");
-                    }
-                    rows.add(new Row("Paid Chest (" + CrimsonIsle.itemName(chests.tier().key()) + ")", paid.toString(), 0xFFAA00,
-                            !chests.opened()[1], chests.opened()[1] ? "Opened" : "Open"));
+                    ItemStack essence = new ItemStack(Items.CRIMSON_FUNGUS);
+                    rows.add(new Row("Free Chest", "Every run pays out its essence", 0xAAAAAA, !chests.opened()[0],
+                            chests.opened()[0] ? "Opened" : "Open", new ItemStack(Items.CHEST),
+                            List.of(Chip.note(essence, Msg.number(chests.freeEssence()) + " Crimson Essence", true)), -1,
+                            chests.opened()[0] ? "Opened" : "Free", chests.free()));
+                    ItemStack keyIcon = icon(chests.tier().key(), Items.TRIPWIRE_HOOK);
+                    rows.add(new Row("Paid Chest", "Opens with a " + CrimsonIsle.itemName(chests.tier().key()), 0xFFAA00,
+                            !chests.opened()[1], chests.opened()[1] ? "Opened" : "Open", new ItemStack(Items.ENDER_CHEST),
+                            List.of(Chip.note(essence, Msg.number(chests.paidEssence()) + " Crimson Essence", true),
+                                    Chip.item(keyIcon, 1, SkyStacks.count(player.getInventory(), chests.tier().key()))), -1,
+                            chests.opened()[1] ? "Opened" : "Paid", chests.paid()));
                 }
                 footer = "You're sent back to the Forgotten Skull in a minute (/kuudra leave to go now).";
             }
         }
-        View view = new View(mode, title, subtitle, rows, footer);
+        View view = new View(mode, title, subtitle, rows, footer, npc, wallet);
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {

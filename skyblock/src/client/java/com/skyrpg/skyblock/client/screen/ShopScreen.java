@@ -8,6 +8,7 @@ import com.skyrpg.economy.Purse;
 import com.skyrpg.items.SkyStacks;
 import com.skyrpg.skyblock.shop.ShopMenu;
 import com.skyrpg.skyblock.shop.SkyShops;
+import com.skyrpg.skyblock.ui.Chip;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -35,24 +36,25 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
         super(menu, inventory, title, ShopMenu.WIDTH, ShopMenu.HEIGHT);
     }
 
-    private int accent() {
+    /** The theme for the shop's island. */
+    private ScreenTheme theme() {
         String island = menu.view().island();
         if (island.startsWith("farming") || island.equals("garden")) {
-            return 0xFFE5C34A;
+            return ScreenTheme.FARMING;
         }
-        if (island.startsWith("mining") || island.equals("crystal_hollows")) {
-            return Theme.AQUA;
+        if (island.startsWith("mining") || island.startsWith("dwarven") || island.equals("crystal_hollows")) {
+            return ScreenTheme.MINING;
         }
-        if (island.startsWith("foraging")) {
-            return Theme.GREEN;
+        if (island.equals("crimson_isle")) {
+            return ScreenTheme.CRIMSON;
         }
-        if (island.startsWith("combat") || island.equals("crimson_isle")) {
-            return Theme.RED;
+        if (island.startsWith("fishing") || island.startsWith("backwater")) {
+            return ScreenTheme.FISHING;
         }
-        if (island.startsWith("fishing")) {
-            return Theme.BLUE;
+        if (island.startsWith("dungeon")) {
+            return ScreenTheme.DUNGEON;
         }
-        return Theme.ACCENT;
+        return ScreenTheme.SKYBLOCK;
     }
 
     private static String islandName(String island) {
@@ -91,9 +93,9 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
         Font font = this.font;
         int x = leftPos;
         int y = topPos;
-        int accent = accent();
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal(menu.view().name()),
-                Component.literal(islandName(menu.view().island())).withColor(Theme.MUTED));
+        ScreenTheme theme = theme();
+        SkyScreens.window(g, font, theme, x, y, imageWidth, imageHeight, Component.literal(menu.view().name()),
+                Component.literal(islandName(menu.view().island())));
 
         // The offers, a row of cards at a time.
         int gx = x + ShopMenu.OFFERS_X;
@@ -107,14 +109,16 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
             int cx = gx + slot % ShopMenu.COLUMNS * ShopMenu.CELL;
             int cy = gy + slot / ShopMenu.COLUMNS * ShopMenu.CELL;
             if (index >= offers.size()) {
-                g.fill(cx + 1, cy + 1, cx + ShopMenu.CELL - 1, cy + ShopMenu.CELL - 1, 0x40000000);
+                SkyScreens.well(g, theme, cx + 1, cy + 1);
                 continue;
             }
             ShopMenu.OfferView offer = offers.get(index);
             boolean over = SkyScreens.inside(mouseX, mouseY, cx + 1, cy + 1, ShopMenu.CELL - 2, ShopMenu.CELL - 2);
             boolean can = affordable(offer);
-            Draw.panel(g, cx + 1, cy + 1, ShopMenu.CELL - 2, ShopMenu.CELL - 2, over ? Theme.CARD_HOVER : Theme.CARD,
-                    over ? accent : can ? Draw.mix(Theme.CARD_BORDER, accent, 0.25f) : Theme.CARD_BORDER);
+            SkyScreens.card(g, theme, cx + 1, cy + 1, ShopMenu.CELL - 2, ShopMenu.CELL - 2, over, !can && !over);
+            if (over) {
+                Draw.outline(g, cx + 1, cy + 1, ShopMenu.CELL - 2, ShopMenu.CELL - 2, theme.accent);
+            }
             g.item(offer.item(), cx + 2, cy + 2);
             g.itemDecorations(font, offer.item(), cx + 2, cy + 2, offer.count() > 1 ? Integer.toString(offer.count()) : null);
             if (!can) {
@@ -130,21 +134,48 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
             g.fill(at[0], at[1], at[0] + 16, at[1] + 16, 0x90101319);
         }
         if (maxScroll() > 0) {
-            Draw.scrollbar(g, gx + ShopMenu.COLUMNS * ShopMenu.CELL + 1, gy + 1, ShopMenu.ROWS * ShopMenu.CELL - 2,
-                    rows() * ShopMenu.CELL, scroll * ShopMenu.CELL, accent);
+            Draw.scrollbar(g, gx + ShopMenu.COLUMNS * ShopMenu.CELL + 2, gy + 1, ShopMenu.ROWS * ShopMenu.CELL - 2,
+                    rows() * ShopMenu.CELL, scroll * ShopMenu.CELL, theme.accent);
         }
 
-        // Buyback and the inventory.
-        SkyScreens.label(g, font, "Buyback", x + ShopMenu.INV_X, y + ShopMenu.BUYBACK_Y - 10);
-        Draw.fit(g, font, Component.literal("Click an item below to sell it"), x + ShopMenu.INV_X + 162, y + ShopMenu.BUYBACK_Y - 10, 110,
-                0.75f, 0.5f, Draw.Align.RIGHT, Theme.DIM, false);
-        for (int i = 0; i < SkyShops.BUYBACK; i++) {
-            SkyScreens.well(g, x + ShopMenu.INV_X - 1 + i * 18, y + ShopMenu.BUYBACK_Y);
+        // Buyback (its right side shows the hovered offer's price, or how selling works) and the inventory with your purse.
+        int right = x + ShopMenu.INV_X + 162;
+        int buybackLabel = y + ShopMenu.BUYBACK_Y - 10;
+        SkyScreens.label(g, font, theme, "Buyback", x + ShopMenu.INV_X, buybackLabel);
+        if (hoveredOffer >= 0 && hoveredOffer < offers.size()) {
+            List<Chip> price = priceChips(offers.get(hoveredOffer));
+            int width = 0;
+            for (Chip chip : price) {
+                width += SkyScreens.chipWidth(font, chip, 0.75f) + 6;
+            }
+            SkyScreens.chips(g, font, theme, right - width + 6, buybackLabel - 1, price, 0.75f, right + 1);
+        } else {
+            Draw.fit(g, font, Component.literal("Click an item below to sell it"), right, buybackLabel, 110, 0.7f, 0.5f, Draw.Align.RIGHT,
+                    theme.dim, false);
         }
-        SkyScreens.label(g, font, "Inventory", x + ShopMenu.INV_X, y + ShopMenu.INV_Y - 11);
-        Draw.fit(g, font, Component.literal("Purse ").withColor(Theme.MUTED).append(Component.literal(Msg.number(Purse.get(minecraft.player)))
-                .withColor(Theme.ACCENT)), x + ShopMenu.INV_X + 162, y + ShopMenu.INV_Y - 11, 100, 0.85f, 0.5f, Draw.Align.RIGHT, Theme.ACCENT, false);
-        SkyScreens.inventoryWells(g, menu, ShopMenu.INVENTORY_START, x, y);
+        for (int i = 0; i < SkyShops.BUYBACK; i++) {
+            SkyScreens.well(g, theme, x + ShopMenu.INV_X - 1 + i * 18, y + ShopMenu.BUYBACK_Y);
+        }
+        int invLabel = y + ShopMenu.INV_Y - 11;
+        SkyScreens.label(g, font, theme, "Inventory", x + ShopMenu.INV_X, invLabel);
+        Chip purse = Chip.balance("coins", Purse.get(minecraft.player));
+        int purseW = SkyScreens.chipWidth(font, purse, 0.8f);
+        SkyScreens.chip(g, font, theme, right - purseW, invLabel - 1, purse, 0.8f);
+        Draw.fit(g, font, Component.literal("Purse"), right - purseW - 4, invLabel, 40, 0.7f, 0.5f, Draw.Align.RIGHT, theme.muted, false);
+        SkyScreens.inventoryWells(g, theme, menu, ShopMenu.INVENTORY_START, x, y);
+    }
+
+    /** An offer's price as chips: the coins, then each item cost against what you carry. */
+    private List<Chip> priceChips(ShopMenu.OfferView offer) {
+        List<Chip> chips = new ArrayList<>();
+        if (offer.coins() > 0) {
+            chips.add(Chip.price("coins", offer.coins(), Purse.get(minecraft.player)));
+        }
+        for (ShopMenu.Cost cost : offer.costs()) {
+            String id = SkyStacks.id(cost.icon());
+            chips.add(Chip.item(cost.icon(), cost.count(), id == null ? 0 : SkyStacks.count(minecraft.player.getInventory(), id)));
+        }
+        return chips;
     }
 
     @Override
@@ -162,13 +193,13 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
         long price = SkyShops.sellPrice(stack);
         lines.add(Component.empty());
         if (hoveredSlot.index < ShopMenu.INVENTORY_START) {
-            lines.add(Component.literal("Click to buy back for ").withColor(Theme.MUTED)
-                    .append(Component.literal(Msg.number(price) + " Coins").withColor(Theme.ACCENT)));
+            lines.add(Component.literal("Click to buy back for ").withColor(theme().muted)
+                    .append(Component.literal(Msg.number(price) + " Coins").withColor(theme().accent)));
         } else if (price > 0) {
-            lines.add(Component.literal("Click to sell for ").withColor(Theme.MUTED)
-                    .append(Component.literal(Msg.number(price) + " Coins").withColor(Theme.ACCENT)));
+            lines.add(Component.literal("Click to sell for ").withColor(theme().muted)
+                    .append(Component.literal(Msg.number(price) + " Coins").withColor(theme().accent)));
         } else {
-            lines.add(Component.literal("Can't be sold here").withColor(Theme.DIM));
+            lines.add(Component.literal("Can't be sold here").withColor(theme().dim));
         }
         return lines;
     }
@@ -215,24 +246,24 @@ public final class ShopScreen extends AbstractContainerScreen<ShopMenu> {
             List<Component> lines = new ArrayList<>(offer.item().getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player,
                     TooltipFlag.NORMAL));
             lines.add(Component.empty());
-            lines.add(Component.literal("Cost").withColor(Theme.MUTED));
+            lines.add(Component.literal("Cost").withColor(theme().muted));
             if (offer.coins() > 0) {
                 boolean enough = Purse.get(minecraft.player) >= offer.coins();
-                lines.add(Component.literal(Msg.number(offer.coins()) + " Coins").withColor(enough ? Theme.ACCENT : Theme.RED));
+                lines.add(Component.literal(Msg.number(offer.coins()) + " Coins").withColor(enough ? theme().accent : Theme.RED));
             }
             for (ShopMenu.Cost cost : offer.costs()) {
                 String id = SkyStacks.id(cost.icon());
                 int have = id == null ? 0 : SkyStacks.count(minecraft.player.getInventory(), id);
-                lines.add(cost.icon().getHoverName().copy().append(Component.literal(" x" + Msg.number(cost.count())).withColor(Theme.MUTED))
+                lines.add(cost.icon().getHoverName().copy().append(Component.literal(" x" + Msg.number(cost.count())).withColor(theme().muted))
                         .append(Component.literal("  (" + Msg.number(have) + ")").withColor(have >= cost.count() ? Theme.GREEN : Theme.RED)));
             }
             lines.add(Component.empty());
             int stackUnits = Math.max(1, offer.item().getMaxStackSize() / Math.max(1, offer.count()));
             lines.add(Component.literal(affordable(offer) ? "Click to buy" : "You can't afford this").withColor(affordable(offer) ? Theme.GREEN : Theme.RED));
             if (stackUnits > 1) {
-                lines.add(Component.literal("Shift-click to buy " + Msg.number((long) stackUnits * offer.count())).withColor(Theme.DIM));
+                lines.add(Component.literal("Shift-click to buy " + Msg.number((long) stackUnits * offer.count())).withColor(theme().dim));
             }
-            Draw.queueTooltip(lines, accent());
+            Draw.queueTooltip(lines, theme().accent);
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }

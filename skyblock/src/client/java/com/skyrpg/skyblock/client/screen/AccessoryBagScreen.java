@@ -21,7 +21,7 @@ import net.minecraft.world.item.Items;
  */
 public final class AccessoryBagScreen extends AbstractContainerScreen<AccessoryBagMenu> {
     private static final int TAB_STEP = AccessoryBagMenu.TAB_H + 2;
-    private static final int GOLD = 0xFFFFAA00;
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final ItemStack MAXWELL_ICON = new ItemStack(Items.AMETHYST_SHARD);
 
     public AccessoryBagScreen(AccessoryBagMenu menu, Inventory inventory, Component title) {
@@ -35,41 +35,46 @@ public final class AccessoryBagScreen extends AbstractContainerScreen<AccessoryB
         int x = leftPos;
         int y = topPos;
         int page = menu.page();
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal("Accessory Bag"),
-                Component.literal(menu.magicalPower() + " Magical Power").withColor(GOLD));
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Accessory Bag"),
+                Component.literal(menu.magicalPower() + " Magical Power").withColor(THEME.accent));
         for (int i = 0; i < menu.pages(); i++) {
             int tx = x + AccessoryBagMenu.PAD;
             int ty = y + AccessoryBagMenu.TOP + i * TAB_STEP;
-            boolean current = i == page;
             boolean over = SkyScreens.inside(mouseX, mouseY, tx, ty, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H);
-            Draw.panel(g, tx, ty, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H, current || over ? Theme.CARD_HOVER : Theme.CARD,
-                    current ? GOLD : over ? Draw.mix(Theme.CARD_BORDER, GOLD, 0.6f) : Theme.CARD_BORDER);
-            if (current) {
-                g.fill(tx, ty + 2, tx + 2, ty + AccessoryBagMenu.TAB_H - 2, GOLD);
-            }
-            String number = Integer.toString(i + 1);
-            Draw.text(g, font, number, tx + (AccessoryBagMenu.TAB_W - font.width(number)) / 2, ty + 5, current ? GOLD : Theme.MUTED);
+            SkyScreens.tab(g, font, THEME, tx, ty, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H, Integer.toString(i + 1), i == page, over);
         }
         int my = maxwellTabY();
         boolean overMaxwell = SkyScreens.inside(mouseX, mouseY, x + AccessoryBagMenu.PAD, my, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H);
-        Draw.panel(g, x + AccessoryBagMenu.PAD, my, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H, overMaxwell ? Theme.CARD_HOVER : Theme.CARD,
-                overMaxwell ? Theme.PURPLE : Theme.CARD_BORDER);
-        Draw.item(g, MAXWELL_ICON, x + AccessoryBagMenu.PAD + (AccessoryBagMenu.TAB_W - 16) / 2, my, 1f);
+        SkyScreens.tab(g, font, THEME, x + AccessoryBagMenu.PAD, my, AccessoryBagMenu.TAB_W, AccessoryBagMenu.TAB_H, "", overMaxwell, overMaxwell);
+        Draw.item(g, MAXWELL_ICON, x + AccessoryBagMenu.PAD + (AccessoryBagMenu.TAB_W - 12) / 2, my + 2, 0.75f);
 
-        Draw.panel(g, x + AccessoryBagMenu.GRID_X - 3, y + AccessoryBagMenu.GRID_Y - 3, 9 * 18 + 6, AccessoryBagMenu.ROWS * 18 + 6,
-                0xFF0E1119, Draw.withAlpha(GOLD, 0.35f));
+        int filled = 0;
+        int open = 0;
         for (int i = 0; i < AccessoryBag.PAGE_SIZE; i++) {
             int sx = x + AccessoryBagMenu.GRID_X + (i % 9) * 18;
             int sy = y + AccessoryBagMenu.GRID_Y + (i / 9) * 18;
-            SkyScreens.well(g, sx, sy);
+            SkyScreens.well(g, THEME, sx, sy);
             if (!menu.open(i)) {
                 // Locked: dimmed, with a small bar.
                 g.fill(sx + 1, sy + 1, sx + 17, sy + 17, 0xC00A0C12);
                 g.fill(sx + 6, sy + 8, sx + 12, sy + 10, 0xFF3A3F4E);
+            } else {
+                open++;
+                if (!menu.slots.get(i).getItem().isEmpty()) {
+                    filled++;
+                }
             }
         }
-        SkyScreens.label(g, font, "Inventory", x + AccessoryBagMenu.INV_X, y + AccessoryBagMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, AccessoryBag.PAGE_SIZE, x, y);
+        // How full this page is, on the row above the inventory.
+        int ly = y + AccessoryBagMenu.INV_Y - 10;
+        SkyScreens.label(g, font, THEME, "Inventory", x + AccessoryBagMenu.INV_X, ly);
+        int bw = 70;
+        int bx = x + imageWidth - THEME.inset - bw;
+        SkyScreens.bar(g, THEME, bx, ly + 1, bw, 5, open == 0 ? 0 : filled / (float) open, THEME.accent);
+        int labelEnd = x + AccessoryBagMenu.INV_X + font.width("Inventory") + 6;
+        Draw.fit(g, font, Component.literal("Page " + (page + 1) + ": " + filled + "/" + open), bx - 4, ly, Math.max(10, bx - 4 - labelEnd), 0.65f,
+                0.4f, Draw.Align.RIGHT, THEME.muted, false);
+        SkyScreens.inventoryWells(g, THEME, menu, AccessoryBag.PAGE_SIZE, x, y);
     }
 
     private int maxwellTabY() {

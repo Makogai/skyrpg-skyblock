@@ -57,6 +57,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         MenuScreens.register(SkyMenus.FACTION, com.skyrpg.skyblock.client.screen.FactionScreen::new);
         MenuScreens.register(SkyMenus.KUUDRA, com.skyrpg.skyblock.client.screen.KuudraScreen::new);
         MenuScreens.register(SkyMenus.GARDEN, com.skyrpg.skyblock.client.screen.GardenScreen::new);
+        MenuScreens.register(SkyMenus.CARDS, com.skyrpg.skyblock.client.screen.CardScreen::new);
         MenuScreens.register(SkyMenus.ODGER, com.skyrpg.skyblock.client.screen.OdgerScreen::new);
         MenuScreens.register(SkyMenus.PARTY_FINDER, com.skyrpg.skyblock.client.screen.PartyFinderScreen::new);
         MenuScreens.register(SkyMenus.BREW, com.skyrpg.skyblock.client.screen.BrewScreen::new);

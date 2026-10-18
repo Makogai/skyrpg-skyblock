@@ -3,7 +3,7 @@ package com.skyrpg.skyblock.client.screen;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
 import com.skyrpg.core.client.ui.Theme;
-import com.skyrpg.core.text.Msg;
+import com.skyrpg.skyblock.ui.Chip;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemMods;
 import com.skyrpg.items.SkyItems;
@@ -17,10 +17,11 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.network.chat.Component;
-import net.minecraft.util.Util;
+
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 
 /**
@@ -30,7 +31,7 @@ import net.minecraft.world.item.TooltipFlag;
 public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> {
     private static final int CARD_X = 60;
     private static final int BUTTON_H = 14;
-    private static final int COIN = 0xFFF2B33D;
+    private static final ScreenTheme THEME = ScreenTheme.MAGIC;
 
     public ItemWorkScreen(ItemWorkMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, ItemWorkMenu.WIDTH, ItemWorkMenu.HEIGHT);
@@ -53,15 +54,15 @@ public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> 
     }
 
     private int buttonX() {
-        return leftPos + CARD_X + 6;
+        return leftPos + CARD_X + 8;
     }
 
     private int buttonY() {
-        return cardY() + cardH() - BUTTON_H - 5;
+        return cardY() + cardH() - BUTTON_H - 6;
     }
 
     private int buttonW() {
-        return cardW() - 12;
+        return cardW() - 16;
     }
 
     @Override
@@ -70,65 +71,59 @@ public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> 
         Font font = this.font;
         int x = leftPos;
         int y = topPos;
-        SkyScreens.window(g, font, x, y, imageWidth, imageHeight, Component.literal(reforge() ? "Reforge Item" : "Combine Items"),
-                Component.literal(reforge() ? "Blacksmith" : "Anvil").withColor(Theme.MUTED));
+        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal(reforge() ? "Reforge Item" : "Combine Items"),
+                Component.literal(reforge() ? "Blacksmith" : "Anvil").withColor(THEME.muted));
 
         // The two slots, each with a small label.
-        SkyScreens.label(g, font, "Item", x + ItemWorkMenu.ITEM_X - 2, y + ItemWorkMenu.ITEM_Y - 10);
-        SkyScreens.well(g, x + ItemWorkMenu.ITEM_X, y + ItemWorkMenu.ITEM_Y);
-        SkyScreens.label(g, font, reforge() ? "Stone" : "Upgrade", x + ItemWorkMenu.EXTRA_X - 2, y + ItemWorkMenu.EXTRA_Y - 10);
-        SkyScreens.well(g, x + ItemWorkMenu.EXTRA_X, y + ItemWorkMenu.EXTRA_Y);
+        SkyScreens.label(g, font, THEME, "Item", x + ItemWorkMenu.ITEM_X, y + ItemWorkMenu.ITEM_Y - 9);
+        SkyScreens.well(g, THEME, x + ItemWorkMenu.ITEM_X, y + ItemWorkMenu.ITEM_Y);
+        SkyScreens.label(g, font, THEME, reforge() ? "Stone" : "Upgrade", x + ItemWorkMenu.EXTRA_X, y + ItemWorkMenu.EXTRA_Y - 9);
+        SkyScreens.well(g, THEME, x + ItemWorkMenu.EXTRA_X, y + ItemWorkMenu.EXTRA_Y);
 
         ItemWork.Preview preview = menu.preview();
         ItemStack item = menu.item();
         ItemDefinition def = SkyItems.definition(item);
         ItemStack shown = preview.result() != null ? preview.result() : item;
-        int accent = def == null ? Theme.ACCENT : ItemMods.rarity(shown, def).color();
+        int accent = def == null ? THEME.accent : ItemMods.rarity(shown, def).color();
 
         int rx = x + CARD_X;
         int ry = cardY();
         int rw = cardW();
-        Draw.panel(g, rx, ry, rw, cardH(), Theme.CARD, preview.ok() ? Draw.mix(Theme.CARD_BORDER, accent, 0.6f) : Theme.CARD_BORDER);
+        SkyScreens.card(g, THEME, rx, ry, rw, cardH(), false, item.isEmpty() || def == null);
         if (item.isEmpty() || def == null) {
-            Draw.fit(g, font, Component.literal(preview.problem()), rx + rw / 2, ry + 14, rw - 10, 1f, 0.6f, Draw.Align.CENTER, Theme.DIM, false);
-            Draw.fit(g, font, Component.literal(reforge() ? "Reforges change an item's bonus stats" : "Books, Recombobulators and Potato Books go here")
-                    .withColor(Theme.DIM), rx + rw / 2, ry + 26, rw - 10, 0.8f, 0.5f, Draw.Align.CENTER, Theme.DIM, false);
+            Draw.item(g, new ItemStack(reforge() ? Items.ANVIL : Items.ENCHANTED_BOOK), rx + rw / 2 - 8, ry + 8, 1f);
+            Draw.fit(g, font, Component.literal(preview.problem()), rx + rw / 2, ry + 30, rw - 10, 0.9f, 0.6f, Draw.Align.CENTER, THEME.muted, false);
+            Draw.fit(g, font, Component.literal(reforge() ? "Reforges change an item's bonus stats" : "Books, Recombobulators and Potato Books go here"),
+                    rx + rw / 2, ry + 42, rw - 10, 0.7f, 0.45f, Draw.Align.CENTER, THEME.dim, false);
         } else {
-            g.fillGradient(rx + 1, ry + 1, rx + rw - 1, ry + 24, Draw.withAlpha(accent, preview.ok() ? 0.28f : 0.12f), 0x00000000);
-            SkyScreens.well(g, rx + 5, ry + 5);
+            g.fillGradient(rx + 4, ry + 4, rx + rw - 4, ry + 26, Draw.withAlpha(accent, preview.ok() ? 0.28f : 0.12f), 0x00000000);
+            SkyScreens.well(g, THEME, rx + 5, ry + 5);
             g.item(shown, rx + 6, ry + 6);
-            Draw.fit(g, font, Component.literal(ItemMods.name(shown, def)), rx + 27, ry + 6, rw - 32, 1f, 0.55f, Draw.Align.LEFT, accent, false);
+            Draw.fit(g, font, Component.literal(ItemMods.name(shown, def)), rx + 27, ry + 7, rw - 32, 1f, 0.55f, Draw.Align.LEFT, accent, true);
             Component status;
             if (!preview.ok()) {
                 status = Component.literal(preview.problem()).withColor(Theme.RED);
             } else if (preview.result() == null) {
                 Reforges.Reforge current = ItemMods.reforge(item);
-                status = Component.literal("Random reforge" + (current == null ? "" : " · now " + current.name())).withColor(Theme.TEXT);
+                status = Component.literal("Random reforge" + (current == null ? "" : " · now " + current.name())).withColor(THEME.text);
             } else {
-                status = Component.literal("✔ " + preview.action()).withColor(Theme.GREEN);
+                status = Component.literal("✔ " + preview.action()).withColor(THEME.good);
             }
-            Draw.fit(g, font, status, rx + 27, ry + 16, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+            Draw.fit(g, font, status, rx + 27, ry + 17, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, THEME.text, false);
             if (preview.levels() > 0) {
                 boolean afford = minecraft.player != null && (minecraft.player.isCreative() || minecraft.player.experienceLevel >= preview.levels());
-                Draw.fit(g, font, Component.literal("Cost: ").withColor(Theme.MUTED).append(Component.literal(preview.levels() + " XP levels")
-                        .withColor(afford ? 0xFF7EFC20 : Theme.RED)), rx + 27, ry + 26, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+                SkyScreens.chip(g, font, THEME, rx + 8, ry + 29, Chip.note(new ItemStack(Items.EXPERIENCE_BOTTLE), preview.levels() + " XP levels", afford), 0.8f);
             }
             if (preview.coins() > 0) {
-                Draw.fit(g, font, Component.literal("Cost: ").withColor(Theme.MUTED).append(Component.literal(Msg.number(preview.coins()) + " coins").withColor(COIN)),
-                        rx + 27, ry + 26, rw - 32, 0.75f, 0.5f, Draw.Align.LEFT, Theme.TEXT, false);
+                SkyScreens.chip(g, font, THEME, rx + 8, ry + 29, Chip.balance("coins", preview.coins()), 0.8f);
             }
         }
         boolean enabled = preview.ok();
         boolean over = enabled && SkyScreens.inside(mouseX, mouseY, buttonX(), buttonY(), buttonW(), BUTTON_H);
-        int color = enabled ? Theme.GREEN : Theme.DIM;
-        float pulse = enabled ? 0.55f + 0.2f * (float) Math.sin(Util.getMillis() / 260.0) : 0.55f;
-        Draw.panel(g, buttonX(), buttonY(), buttonW(), BUTTON_H, over ? Draw.mix(Theme.TRACK, color, 0.25f) : Theme.TRACK,
-                over ? color : Draw.mix(Theme.TRACK, color, pulse));
-        Draw.fit(g, font, Component.literal(reforge() ? "Reforge" : "Combine"), buttonX() + buttonW() / 2, buttonY() + 3, buttonW() - 4, 1f, 0.6f,
-                Draw.Align.CENTER, color, false);
+        SkyScreens.button(g, font, THEME, buttonX(), buttonY(), buttonW(), BUTTON_H, reforge() ? "Reforge" : "Combine", enabled, over);
 
-        SkyScreens.label(g, font, "Inventory", x + ItemWorkMenu.INV_X, y + ItemWorkMenu.INV_Y - 11);
-        SkyScreens.inventoryWells(g, menu, 2, x, y);
+        SkyScreens.label(g, font, THEME, "Inventory", x + ItemWorkMenu.INV_X, y + ItemWorkMenu.INV_Y - 10);
+        SkyScreens.inventoryWells(g, THEME, menu, 2, x, y);
     }
 
     @Override
@@ -156,7 +151,7 @@ public final class ItemWorkScreen extends AbstractContainerScreen<ItemWorkMenu> 
                 && SkyScreens.inside(mouseX, mouseY, leftPos + CARD_X + 5, cardY() + 5, 18, 18)) {
             List<Component> lines = new ArrayList<>(shown.getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player, TooltipFlag.NORMAL));
             ItemDefinition def = SkyItems.definition(shown);
-            Draw.queueTooltip(lines, def == null ? Theme.ACCENT : ItemMods.rarity(shown, def).color());
+            Draw.queueTooltip(lines, def == null ? THEME.accent : ItemMods.rarity(shown, def).color());
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }

@@ -2,7 +2,6 @@ package com.skyrpg.skyblock.client.screen;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.skyrpg.core.client.ui.Draw;
-import com.skyrpg.core.client.ui.Theme;
 import com.skyrpg.skyblock.pet.PetsMenu;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +20,12 @@ import net.minecraft.world.item.TooltipFlag;
  * Click a pet to summon it, right-click to take it out as an item; hovering shows its full tooltip.
  */
 public final class PetsScreen extends AbstractContainerScreen<PetsMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final int WIDTH = 236;
-    private static final int HEIGHT = 200;
-    private static final int CARD_Y = 26;
-    private static final int CARD_H = 34;
-    private static final int GRID_Y = CARD_Y + CARD_H + 18;
+    private static final int HEIGHT = 224;
+    private static final int CARD_Y = 36;
+    private static final int CARD_H = 38;
+    private static final int GRID_Y = CARD_Y + CARD_H + 16;
     private static final int CELL = 22;
     private static final int COLUMNS = 9;
 
@@ -38,11 +38,11 @@ public final class PetsScreen extends AbstractContainerScreen<PetsMenu> {
     }
 
     private int buttonX() {
-        return leftPos + imageWidth - 8 - 62;
+        return leftPos + imageWidth - THEME.inset - 8 - 62;
     }
 
     private int buttonY() {
-        return topPos + CARD_Y + 10;
+        return topPos + CARD_Y + 12;
     }
 
     @Override
@@ -50,44 +50,51 @@ public final class PetsScreen extends AbstractContainerScreen<PetsMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         Font font = this.font;
         PetsMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Pets"),
-                Component.literal((view.stored().size() + (view.active().isEmpty() ? 0 : 1)) + " pets").withColor(Theme.MUTED));
-        int cx = leftPos + 8;
+        SkyScreens.window(g, font, THEME, leftPos, topPos, imageWidth, imageHeight, Component.literal("Pets"),
+                Component.literal((view.stored().size() + (view.active().isEmpty() ? 0 : 1)) + " pets").withColor(THEME.muted));
+        int cx = leftPos + THEME.inset;
         int cy = topPos + CARD_Y;
-        int cw = imageWidth - 16;
+        int cw = imageWidth - THEME.inset * 2;
         ItemStack active = view.active();
-        Draw.panel(g, cx, cy, cw, CARD_H, Theme.CARD, active.isEmpty() ? Theme.CARD_BORDER : Theme.GREEN);
+        SkyScreens.card(g, THEME, cx, cy, cw, CARD_H, !active.isEmpty(), active.isEmpty());
         if (active.isEmpty()) {
-            Draw.fit(g, font, Component.literal("No pet out. Click one below to summon it."), cx + cw / 2, cy + 13, cw - 10, 0.85f, 0.5f,
-                    Draw.Align.CENTER, Theme.DIM, false);
+            Draw.fit(g, font, Component.literal("No pet out. Click one below to summon it."), cx + cw / 2, cy + 15, cw - 10, 0.85f, 0.5f,
+                    Draw.Align.CENTER, THEME.dim, false);
         } else {
-            SkyScreens.well(g, cx + 6, cy + 8);
-            g.item(active, cx + 7, cy + 9);
-            Draw.fit(g, font, active.getHoverName(), cx + 28, cy + 7, cw - 110, 1f, 0.55f, Draw.Align.LEFT, Theme.TEXT, false);
-            Draw.fit(g, font, Component.literal("Summoned").withColor(Theme.GREEN), cx + 28, cy + 19, cw - 110, 0.75f, 0.45f, Draw.Align.LEFT,
-                    Theme.GREEN, false);
+            int rarity = rarityColor(active);
+            g.fill(cx + 3, cy + 3, cx + 5, cy + CARD_H - 3, Draw.withAlpha(rarity, 0.9f));
+            SkyScreens.well(g, THEME, cx + 9, cy + 10);
+            g.item(active, cx + 10, cy + 11);
+            Draw.fit(g, font, active.getHoverName(), cx + 32, cy + 9, cw - 114, 1f, 0.55f, Draw.Align.LEFT, THEME.text, false);
+            Draw.fit(g, font, Component.literal("Summoned").withColor(THEME.good), cx + 32, cy + 21, cw - 114, 0.75f, 0.45f, Draw.Align.LEFT,
+                    THEME.good, false);
             boolean over = SkyScreens.inside(mouseX, mouseY, buttonX(), buttonY(), 62, 14);
-            Draw.panel(g, buttonX(), buttonY(), 62, 14, over ? Draw.mix(Theme.TRACK, Theme.RED, 0.25f) : Theme.TRACK, over ? Theme.RED : Draw.mix(Theme.TRACK, Theme.RED, 0.5f));
-            Draw.fit(g, font, Component.literal("Put away"), buttonX() + 31, buttonY() + 3, 58, 0.85f, 0.5f, Draw.Align.CENTER, Theme.RED, false);
+            SkyScreens.button(g, font, THEME, buttonX(), buttonY(), 62, 14, "Put away", true, over);
         }
 
-        SkyScreens.label(g, font, "Your pets", leftPos + 8, topPos + GRID_Y - 11);
+        SkyScreens.label(g, font, THEME, "Your pets", leftPos + THEME.inset, topPos + GRID_Y - 11);
         List<ItemStack> stored = view.stored();
         int rows = Math.max(3, (stored.size() + COLUMNS - 1) / COLUMNS);
         for (int i = 0; i < rows * COLUMNS; i++) {
             int x = gridX() + (i % COLUMNS) * CELL;
             int y = topPos + GRID_Y + (i / COLUMNS) * CELL;
-            if (y + CELL > topPos + imageHeight - 18) {
+            if (y + CELL > topPos + imageHeight - 24) {
                 break;
             }
             boolean over = i < stored.size() && SkyScreens.inside(mouseX, mouseY, x, y, CELL - 2, CELL - 2);
-            Draw.panel(g, x, y, CELL - 2, CELL - 2, over ? Theme.CARD_HOVER : Theme.CARD, over ? Theme.ACCENT : Theme.CARD_BORDER);
+            SkyScreens.card(g, THEME, x, y, CELL - 2, CELL - 2, over, i >= stored.size());
             if (i < stored.size()) {
                 g.item(stored.get(i), x + 2, y + 2);
+                g.fill(x + 3, y + CELL - 5, x + CELL - 5, y + CELL - 4, Draw.withAlpha(rarityColor(stored.get(i)), 0.95f));
             }
         }
         Draw.fit(g, font, Component.literal("Click to summon · right-click to take out · right-click a pet item to add it"),
-                leftPos + imageWidth / 2, topPos + imageHeight - 13, imageWidth - 16, 0.7f, 0.45f, Draw.Align.CENTER, Theme.DIM, false);
+                leftPos + imageWidth / 2, topPos + imageHeight - 19, imageWidth - 24, 0.7f, 0.45f, Draw.Align.CENTER, THEME.dim, false);
+    }
+
+    private static int rarityColor(ItemStack pet) {
+        com.skyrpg.items.ItemDefinition def = com.skyrpg.items.SkyItems.definition(pet);
+        return def == null ? THEME.accent : def.rarity().color();
     }
 
     private int storedAt(double mouseX, double mouseY) {
@@ -114,12 +121,12 @@ public final class PetsScreen extends AbstractContainerScreen<PetsMenu> {
         int index = storedAt(mouseX, mouseY);
         if (index >= 0) {
             hovered = menu.view().stored().get(index);
-        } else if (!menu.view().active().isEmpty() && SkyScreens.inside(mouseX, mouseY, leftPos + 14, topPos + CARD_Y + 8, 18, 18)) {
+        } else if (!menu.view().active().isEmpty() && SkyScreens.inside(mouseX, mouseY, leftPos + THEME.inset + 9, topPos + CARD_Y + 10, 18, 18)) {
             hovered = menu.view().active();
         }
         if (!hovered.isEmpty()) {
             List<Component> lines = new ArrayList<>(hovered.getTooltipLines(Item.TooltipContext.of(minecraft.level), minecraft.player, TooltipFlag.NORMAL));
-            Draw.queueTooltip(lines, Theme.ACCENT);
+            Draw.queueTooltip(lines, rarityColor(hovered));
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }

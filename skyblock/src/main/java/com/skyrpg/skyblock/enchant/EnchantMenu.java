@@ -31,15 +31,15 @@ public final class EnchantMenu extends AbstractContainerMenu {
     public static final Identifier ENCHANTING = Identifier.fromNamespaceAndPath("skyrpg_skills", "enchanting");
     // Layout, shared with the screen.
     public static final int WIDTH = 320;
-    public static final int PAD = 8;
-    public static final int TOP = 26;
+    public static final int PAD = 10;
+    public static final int TOP = 36;
     public static final int ITEM_X = 16;
     public static final int ITEM_Y = TOP + 18;
     public static final int LIST_X = 44;
     public static final int LIST_W = 140;
     public static final int DETAIL_X = LIST_X + LIST_W + 6;
     public static final int LIST_Y = TOP + 4;
-    public static final int LIST_H = 96;
+    public static final int LIST_H = 90;
     public static final int INV_X = (WIDTH - 162) / 2 + 1;
     public static final int INV_Y = LIST_Y + LIST_H + 16;
     public static final int HEIGHT = INV_Y + 3 * 18 + 4 + 18 + PAD;

@@ -1,11 +1,15 @@
 package com.skyrpg.skyblock.fishing;
 
+import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.core.text.Notice;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
+import com.skyrpg.items.SkyStacks;
+import com.skyrpg.skyblock.crimson.FactionMenu;
 import com.skyrpg.skyblock.storage.SkyMenus;
+import com.skyrpg.skyblock.ui.Chip;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -36,12 +40,13 @@ public final class OdgerMenu extends AbstractContainerMenu {
     public static final List<String> RANKS = List.of("None", "Novice", "Adept", "Expert", "Master");
     private static final List<String> METALS = List.of("BRONZE", "SILVER", "GOLD", "DIAMOND");
 
-    /** One fish row: its name, colour, how it's caught, and the count of each tier. */
-    public record Row(String name, int color, String how, List<Integer> counts) {
+    /** One fish row: its name, colour, how it's caught, the count of each tier, and the item of each tier (for icons). */
+    public record Row(String name, int color, String how, List<Integer> counts, List<ItemStack> icons) {
         static final StreamCodec<RegistryFriendlyByteBuf, Row> CODEC = new StreamCodec<>() {
             @Override
             public Row decode(RegistryFriendlyByteBuf buf) {
-                return new Row(buf.readUtf(), buf.readInt(), buf.readUtf(), ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list()).decode(buf));
+                return new Row(buf.readUtf(), buf.readInt(), buf.readUtf(), ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list()).decode(buf),
+                        ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).decode(buf));
             }
 
             @Override
@@ -50,16 +55,21 @@ public final class OdgerMenu extends AbstractContainerMenu {
                 buf.writeInt(row.color());
                 buf.writeUtf(row.how());
                 ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list()).encode(buf, row.counts());
+                ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).encode(buf, row.icons());
             }
         };
     }
 
-    /** The rows, the rank claimed and earned, and how many Magmafish the carried trophy fish would fillet into. */
-    public record View(List<Row> rows, int claimed, int earned, int fillet) {
+    /**
+     * The rows, the rank claimed and earned, how many Magmafish the carried trophy fish would fillet into, Odger's entity id (-1:
+     * none), your balances, and the next rank's rewards (empty once Master is claimed).
+     */
+    public record View(List<Row> rows, int claimed, int earned, int fillet, int npc, List<Chip> wallet, List<ItemStack> rewards) {
         public static final StreamCodec<RegistryFriendlyByteBuf, View> CODEC = new StreamCodec<>() {
             @Override
             public View decode(RegistryFriendlyByteBuf buf) {
-                return new View(Row.CODEC.apply(ByteBufCodecs.list()).decode(buf), buf.readVarInt(), buf.readVarInt(), buf.readVarInt());
+                return new View(Row.CODEC.apply(ByteBufCodecs.list()).decode(buf), buf.readVarInt(), buf.readVarInt(), buf.readVarInt(), buf.readVarInt(),
+                        Chip.CODEC.apply(ByteBufCodecs.list()).decode(buf), ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).decode(buf));
             }
 
             @Override
@@ -68,6 +78,9 @@ public final class OdgerMenu extends AbstractContainerMenu {
                 buf.writeVarInt(view.claimed());
                 buf.writeVarInt(view.earned());
                 buf.writeVarInt(view.fillet());
+                buf.writeVarInt(view.npc());
+                Chip.CODEC.apply(ByteBufCodecs.list()).encode(buf, view.wallet());
+                ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()).encode(buf, view.rewards());
             }
         };
     }
@@ -94,12 +107,30 @@ public final class OdgerMenu extends AbstractContainerMenu {
         List<Row> rows = new ArrayList<>();
         for (TrophyFishing.Fish f : TrophyFishing.fish()) {
             List<Integer> tiers = new ArrayList<>();
+            List<ItemStack> icons = new ArrayList<>();
             for (String tier : TrophyFishing.TIERS) {
                 tiers.add(counts.getOrDefault(f.id() + "_" + tier, 0));
+                icons.add(icon(f.id() + "_" + tier));
             }
-            rows.add(new Row(f.name(), f.color(), f.how(), tiers));
+            rows.add(new Row(f.name(), f.color(), f.how(), tiers, icons));
         }
-        View view = new View(rows, counts.getOrDefault("rank", 0), TrophyFishing.earned(counts), fillet(player, false));
+        int claimed = counts.getOrDefault("rank", 0);
+        List<ItemStack> rewards = new ArrayList<>();
+        if (claimed < 4) {
+            String metal = METALS.get(claimed);
+            for (String piece : List.of("HELMET", "CHESTPLATE", "LEGGINGS", "BOOTS")) {
+                rewards.add(icon(metal + "_HUNTER_" + piece));
+            }
+            rewards.add(icon("ODGERS_" + metal + "_TOOTH"));
+            rewards.add(icon(metal + "_TROPHY_FISHING_SACK"));
+            if (claimed == 3) {
+                rewards.add(icon("DIAMOND_THE_FISH"));
+            }
+            rewards.removeIf(ItemStack::isEmpty);
+        }
+        List<Chip> wallet = List.of(Chip.balance("coins", Wallet.balance(player)),
+                Chip.item(icon("MAGMA_FISH"), SkyStacks.count(player.getInventory(), "MAGMA_FISH"), SkyStacks.count(player.getInventory(), "MAGMA_FISH")));
+        View view = new View(rows, claimed, TrophyFishing.earned(counts), fillet(player, false), FactionMenu.npcNear(player, "Odger"), wallet, rewards);
         player.openMenu(new ExtendedMenuProvider<View>() {
             @Override
             public View getScreenOpeningData(ServerPlayer p) {
@@ -182,6 +213,11 @@ public final class OdgerMenu extends AbstractContainerMenu {
         }
         owner.level().getServer().execute(() -> open(owner));
         return true;
+    }
+
+    private static ItemStack icon(String id) {
+        ItemDefinition def = ItemRegistry.skyblock(id);
+        return def == null ? ItemStack.EMPTY : SkyItems.create(def, 1);
     }
 
     private static void give(ServerPlayer player, String id, int count) {

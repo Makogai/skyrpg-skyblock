@@ -21,13 +21,14 @@ import net.minecraft.world.entity.player.Inventory;
  * your inventory that the sacks hold away.
  */
 public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
+    private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
     private static final int WIDTH = 300;
-    private static final int HEIGHT = 230;
-    private static final int TOP = 40;
+    private static final int HEIGHT = 232;
+    private static final int TOP = 56;
     private static final int CELL = 26;
+    private static final int CELL_H = 30;
     private static final int COLUMNS = 10;
     private static final int HEADER = 14;
-    private static final int GOLD = 0xFFFFAA00;
 
     private double scroll;
 
@@ -44,7 +45,7 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
     }
 
     private int listHeight() {
-        return imageHeight - TOP - 6;
+        return imageHeight - TOP - 10;
     }
 
     /** Where each section starts (content y, before scrolling). */
@@ -53,14 +54,14 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
         int y = 0;
         for (SacksMenu.TypeView type : menu.view().types()) {
             tops.add(y);
-            y += HEADER + (int) Math.ceil(type.items().size() / (double) COLUMNS) * CELL + 6;
+            y += HEADER + (int) Math.ceil(type.items().size() / (double) COLUMNS) * CELL_H + 8;
         }
         tops.add(y);
         return tops;
     }
 
     private boolean overInsert(double mx, double my) {
-        return SkyScreens.inside(mx, my, leftPos + imageWidth - 92, topPos + 22, 84, 13);
+        return SkyScreens.inside(mx, my, leftPos + imageWidth - THEME.inset - 90, topPos + 36, 90, 14);
     }
 
     @Override
@@ -68,16 +69,21 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         Font font = this.font;
         SacksMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal("Sacks"),
-                Component.literal(view.types().size() + " sack" + (view.types().size() == 1 ? "" : "s")).withColor(Theme.MUTED));
+        SkyScreens.window(g, font, THEME, leftPos, topPos, imageWidth, imageHeight, Component.literal("Sacks"),
+                Component.literal(view.types().size() + " sack" + (view.types().size() == 1 ? "" : "s")).withColor(THEME.muted));
         boolean overButton = overInsert(mouseX, mouseY);
-        Draw.panel(g, leftPos + imageWidth - 92, topPos + 22, 84, 13, overButton ? Theme.CARD_HOVER : Theme.CARD, overButton ? GOLD : Theme.CARD_BORDER);
-        Draw.fit(g, font, Component.literal("Insert inventory"), leftPos + imageWidth - 50, topPos + 25, 80, 0.7f, 0.5f, Draw.Align.CENTER, GOLD, false);
+        SkyScreens.button(g, font, THEME, leftPos + imageWidth - THEME.inset - 90, topPos + 36, 90, 14, "Insert inventory", true, overButton);
+        if (view.missing() > 0) {
+            Draw.fit(g, font, Component.literal(view.missing() + " more kinds of sack to find"), leftPos + THEME.inset + 2, topPos + 40, 150, 0.7f, 0.45f,
+                    Draw.Align.LEFT, THEME.dim, false);
+        }
         if (view.types().isEmpty()) {
-            Draw.fit(g, font, Component.literal("You have no sacks yet."), leftPos + imageWidth / 2, topPos + 80, imageWidth - 20, 1f, 0.6f,
-                    Draw.Align.CENTER, Theme.TEXT, false);
-            Draw.fit(g, font, Component.literal("Craft one (Small Mining Sack...) and right-click it to add it."), leftPos + imageWidth / 2, topPos + 96,
-                    imageWidth - 20, 0.75f, 0.5f, Draw.Align.CENTER, Theme.MUTED, false);
+            int cw = 220;
+            SkyScreens.card(g, THEME, leftPos + (imageWidth - cw) / 2, topPos + 80, cw, 50, false, false);
+            Draw.fit(g, font, Component.literal("You have no sacks yet."), leftPos + imageWidth / 2, topPos + 92, cw - 12, 1f, 0.6f,
+                    Draw.Align.CENTER, THEME.text, false);
+            Draw.fit(g, font, Component.literal("Craft one (Small Mining Sack...) and right-click it to add it."), leftPos + imageWidth / 2, topPos + 108,
+                    cw - 12, 0.75f, 0.45f, Draw.Align.CENTER, THEME.muted, false);
             return;
         }
         List<Integer> tops = sectionTops();
@@ -86,30 +92,40 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
         int content = tops.getLast();
         scroll = Mth.clamp(scroll, 0, Math.max(0, content - height));
         List<Component> tooltip = null;
-        g.enableScissor(leftPos + 4, top, leftPos + imageWidth - 4, top + height);
+        g.enableScissor(leftPos + 10, top, leftPos + imageWidth - 10, top + height);
         for (int t = 0; t < view.types().size(); t++) {
             SacksMenu.TypeView type = view.types().get(t);
             int y = top + tops.get(t) - (int) Math.round(scroll);
             if (y > top + height || y + tops.get(t + 1) - tops.get(t) < top) {
                 continue;
             }
-            Draw.item(g, type.icon(), gridX(), y - 2, 0.7f);
-            Draw.fit(g, font, Component.literal(type.name() + " Sack"), gridX() + 14, y + 1, 150, 0.8f, 0.5f, Draw.Align.LEFT, GOLD, false);
-            Draw.fit(g, font, Component.literal(String.format(Locale.ROOT, "%,d per item", type.size())), gridX() + COLUMNS * CELL, y + 1, 100,
-                    0.65f, 0.45f, Draw.Align.RIGHT, Theme.MUTED, false);
+            int rows = (int) Math.ceil(type.items().size() / (double) COLUMNS);
+            SkyScreens.card(g, THEME, gridX() - 5, y - 3, COLUMNS * CELL + 8, HEADER + rows * CELL_H + 6, false, false);
+            Draw.item(g, type.icon(), gridX(), y - 1, 0.7f);
+            Draw.fit(g, font, Component.literal(type.name() + " Sack"), gridX() + 14, y + 2, 150, 0.85f, 0.5f, Draw.Align.LEFT, THEME.accent, false);
+            long stored = 0;
+            for (SacksMenu.ItemView it : type.items()) {
+                stored += it.count();
+            }
+            Draw.fit(g, font, Component.literal(String.format(Locale.ROOT, "%,d per item", type.size())), gridX() + COLUMNS * CELL - 2, y + 2, 100,
+                    0.65f, 0.45f, Draw.Align.RIGHT, THEME.muted, false);
+            SkyScreens.bar(g, THEME, gridX() + COLUMNS * CELL - 2 - 100, y + 10, 100, 3,
+                    type.items().isEmpty() ? 0 : stored / (float) ((long) type.size() * type.items().size()), THEME.good);
             for (int i = 0; i < type.items().size(); i++) {
                 SacksMenu.ItemView item = type.items().get(i);
                 int cx = gridX() + i % COLUMNS * CELL;
-                int cy = y + HEADER + i / COLUMNS * CELL;
-                boolean over = SkyScreens.inside(mouseX, mouseY, cx, cy, CELL - 2, CELL - 2) && mouseY >= top && mouseY < top + height;
-                Draw.panel(g, cx, cy, CELL - 2, CELL - 2, over ? Theme.CARD_HOVER : Theme.CARD, item.count() > 0 ? Theme.CARD_BORDER : Draw.mix(Theme.CARD, Theme.CARD_BORDER, 0.4f));
+                int cy = y + HEADER + 2 + i / COLUMNS * CELL_H;
+                boolean over = SkyScreens.inside(mouseX, mouseY, cx, cy, CELL - 2, CELL_H - 2) && mouseY >= top && mouseY < top + height;
+                SkyScreens.card(g, THEME, cx, cy, CELL - 2, CELL_H - 2, over, item.count() <= 0);
                 Draw.item(g, item.item(), cx + 4, cy + 2, 0.9f);
-                String count = compact(item.count());
-                Draw.fit(g, font, Component.literal(count), cx + CELL - 4, cy + CELL - 9, CELL - 4, 0.55f, 0.4f, Draw.Align.RIGHT,
-                        item.count() > 0 ? Theme.TEXT : Theme.DIM, false);
+                Draw.fit(g, font, Component.literal(compact(item.count())), cx + CELL - 4, cy + 17, CELL - 4, 0.55f, 0.4f, Draw.Align.RIGHT,
+                        item.count() > 0 ? THEME.text : THEME.dim, false);
+                SkyScreens.bar(g, THEME, cx + 3, cy + CELL_H - 8, CELL - 8, 3, type.size() <= 0 ? 0 : item.count() / (float) type.size(),
+                        item.count() >= type.size() ? THEME.accent : THEME.good);
                 if (over) {
-                    tooltip = new ArrayList<>();
-                    tooltip.add(item.item().getHoverName());
+                    tooltip = new ArrayList<>(item.item().getTooltipLines(net.minecraft.world.item.Item.TooltipContext.of(minecraft.level), minecraft.player,
+                            net.minecraft.world.item.TooltipFlag.NORMAL));
+                    tooltip.add(Component.empty());
                     tooltip.add(Component.literal(String.format(Locale.ROOT, "§7Stored: §e%,d§7/%,d", item.count(), type.size())));
                     if (item.count() > 0) {
                         tooltip.add(Component.empty());
@@ -121,14 +137,10 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
         }
         g.disableScissor();
         if (content > height) {
-            Draw.scrollbar(g, leftPos + imageWidth - 5, top, height, content, scroll, GOLD);
-        }
-        if (view.missing() > 0) {
-            Draw.fit(g, font, Component.literal(view.missing() + " more kinds of sack to find"), leftPos + 10, topPos + 25, 150, 0.65f, 0.45f,
-                    Draw.Align.LEFT, Theme.DIM, false);
+            Draw.scrollbar(g, leftPos + imageWidth - 9, top, height, content, scroll, THEME.accent);
         }
         if (tooltip != null) {
-            Draw.queueTooltip(tooltip, GOLD);
+            Draw.queueTooltip(tooltip, THEME.accent);
         }
         Draw.drawQueuedTooltip(g, font, mouseX, mouseY);
     }
@@ -164,8 +176,8 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
                     int y = top + tops.get(t) - (int) Math.round(scroll);
                     for (int i = 0; i < type.items().size(); i++) {
                         int cx = gridX() + i % COLUMNS * CELL;
-                        int cy = y + HEADER + i / COLUMNS * CELL;
-                        if (SkyScreens.inside(event.x(), event.y(), cx, cy, CELL - 2, CELL - 2) && type.items().get(i).count() > 0) {
+                        int cy = y + HEADER + 2 + i / COLUMNS * CELL_H;
+                        if (SkyScreens.inside(event.x(), event.y(), cx, cy, CELL - 2, CELL_H - 2) && type.items().get(i).count() > 0) {
                             minecraft.gameMode.handleInventoryButtonClick(menu.containerId, (event.hasShiftDown() ? SacksMenu.ALL : 0) + t * 100 + i);
                             SkyScreens.click();
                             return true;
