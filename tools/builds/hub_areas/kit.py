@@ -421,7 +421,9 @@ class Area:
         breakable = set()
         for zone in self.zones:
             breakable |= set(zone.get("blocks", {}).keys())
-        full = {pos for pos, (entry, data) in cells.items() if data is None and _full(entry["id"])}
+        # Blocks the mod removes for a while (Galatea's choppable logs) count as see-through: what's behind them stays.
+        gone_ids = getattr(self, "gone_ids", set())
+        full = {pos for pos, (entry, data) in cells.items() if data is None and _full(entry["id"]) and entry["id"] not in gone_ids}
         # Distance from the nearest non-full cell (air outside the build counts), up to the shell.
         frontier = {pos for pos in full if any((pos[0] + dx, pos[1] + dy, pos[2] + dz) not in full for dx, dy, dz in _SIDES)}
         keep = set(frontier)

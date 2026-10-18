@@ -1,0 +1,59 @@
+{
+  "name": "South Reaches",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    76,
+    8,
+    0
+  ],
+  "to": [
+    149,
+    150,
+    99
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:bogged",
+      "name": "Bogged",
+      "level": 40,
+      "health": 10000,
+      "damage": 600,
+      "xp": 30,
+      "coins": 25,
+      "max": 8,
+      "every": 5,
+      "from": [
+        80,
+        65,
+        14
+      ],
+      "to": [
+        146,
+        80,
+        98
+      ]
+    },
+    {
+      "type": "minecraft:phantom",
+      "name": "Phanpyre",
+      "level": 30,
+      "health": 5000,
+      "damage": 400,
+      "xp": 20,
+      "coins": 15,
+      "max": 4,
+      "every": 8,
+      "from": [
+        80,
+        65,
+        14
+      ],
+      "to": [
+        146,
+        93,
+        98
+      ],
+      "time": "night"
+    }
+  ]
+}

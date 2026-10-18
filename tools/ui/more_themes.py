@@ -1,4 +1,4 @@
-"""The other themes' pixel art (mining, crimson, dungeon, magic, fishing), on themes.py's helpers."""
+"""The other themes' pixel art (mining, crimson, dungeon, magic, fishing, galatea), on themes.py's helpers."""
 import math
 import random
 
@@ -476,4 +476,56 @@ def rift(out):
             [rgb("2a2233"), rgb("241d2c"), rgb("30283a")], facets)
 
 
-THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing}
+# ---------------------------------------------------------------- galatea: mossy fig wood and vines, a moon over the marsh
+
+def galatea(out):
+    rng = random.Random(41)
+    vine = [rgb("6fbf4a"), rgb("4f9a35"), rgb("3a7a28")]
+
+    def band(along, across, horizontal):
+        # fig bark (pale grey-brown, vertical grain), moss creeping over the outer edge, a vine winding along the inside
+        if across == 1 and rng.random() < 0.55:
+            return [rgb("4f7a3a"), rgb("3f6a2e"), rgb("5c8a44")][along % 3]
+        if across in (5, 6) and (along // 3) % 4 == 0:
+            return vine[(along + across) % 3]
+        grain = (along + (across * 3 if horizontal else across)) % 5 == 0
+        if rng.random() < 0.12:
+            return rgb("54483c")
+        return rgb("7d6c5a") if grain else (rgb("968470") if across in (2, 3) else rgb("85745f"))
+
+    def leaf(img, cx, cy):
+        for y in range(1, 8):
+            for x in range(1, 8):
+                if abs(x - y) <= 2 and (x - 4) ** 2 + (y - 4) ** 2 <= 12:
+                    img.putpixel((cx + x, cy + y), [rgb("8fd65e"), rgb("6fbf4a"), rgb("4f9a35")][(x + y) % 3])
+        for i in range(2, 7):
+            img.putpixel((cx + i, cy + i), rgb("2f5e22"))
+    corner = plate_corner(rgb("3a3328"), rgb("5a4e3e"), rgb("231e17"), rgb("0b0f0a"), leaf)
+    save(framed(48, band, corner, rgb("0b0f0a"), rgb("14201a"), rgb("223828")), f"{out}/frame.png", nine(48, 48, 9))
+    bg = noise_tile(rng, [rgb("0d1610"), rgb("0f1912"), rgb("0b130d")], [70, 15, 15], [(rgb("1c3324"), 9), (rgb("b9f0d0"), 2)])
+    save(bg, f"{out}/background.png", tile(32, 32))
+
+    def vines(img):
+        stem, light = rgb("4f9a35"), rgb("8fd65e")
+        for x in range(8):
+            img.putpixel((x, 3 + (1 if x in (2, 3) else 0) - (1 if x in (6, 7) else 0)), stem)
+        img.putpixel((2, 1), light)
+        img.putpixel((3, 2), light)
+        img.putpixel((6, 5), light)
+        img.putpixel((7, 4), light)
+
+    def moon(img):
+        pixels(img, [(x, y, "e6f4ff") for x, y in ((3, 1), (4, 1), (5, 1), (2, 2), (3, 2), (2, 3), (2, 4), (2, 5), (3, 6), (4, 7), (5, 7),
+                                                      (3, 3), (3, 4), (3, 5), (4, 6), (6, 7))])
+        pixels(img, [(4, 2, "b9d6ea"), (4, 3, "b9d6ea"), (4, 4, "b9d6ea"), (4, 5, "b9d6ea"), (5, 6, "b9d6ea")])
+    divider(out, 8, 6, vines, moon)
+    cards_and_tabs(out, rgb("132019"), rgb("2c4a36"), rgb("7fe0b4"), rgb("1a2c21"), rgb("0c1510"),
+                   rgb("111c15"), rgb("26402f"), rgb("1b3324"), rgb("7fe0b4"))
+
+    def planks(x, y):
+        return rgb("5a4a38") if y == 7 or (x + (0 if y < 7 else 5)) % 10 == 0 else None
+    buttons(out, rng, [rgb("8a9a5b"), rgb("7a8a4e"), rgb("98a866")], rgb("0b1208"), rgb("c8f5a8"),
+            [rgb("343a2c"), rgb("2c3226"), rgb("3a4132")], planks)
+
+
+THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing, "galatea": galatea}

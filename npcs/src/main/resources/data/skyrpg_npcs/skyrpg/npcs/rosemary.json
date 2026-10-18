@@ -1,0 +1,26 @@
+{
+  "name": "Rosemary",
+  "role": "Forest Essence",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    26.5,
+    69.0,
+    111.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.flowering_azalea.place",
+  "greetings": [
+    "The trees give their essence to those who help them.",
+    "Keep it safe."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Rosemary"
+    }
+  }
+}

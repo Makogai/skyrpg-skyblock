@@ -1,0 +1,26 @@
+{
+  "name": "David Hunterborough",
+  "role": "Hunting Lodge",
+  "color": "#7FE0B4",
+  "hint": "Hunting",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    23.5,
+    69.0,
+    -47.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:item.lead.tied",
+  "greetings": [
+    "Every shard you catch lands in your Hunting Box.",
+    "The Lodge is always open."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "David Hunterborough"
+    }
+  }
+}

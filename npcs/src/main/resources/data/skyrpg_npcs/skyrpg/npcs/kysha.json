@@ -1,0 +1,26 @@
+{
+  "name": "Kysha",
+  "role": "Fusion House",
+  "color": "#AA55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    0.5,
+    69.0,
+    -60.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Two shards in, one new shard out.",
+    "The machine's warming up."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Kysha"
+    }
+  }
+}

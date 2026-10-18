@@ -1,0 +1,4242 @@
+{
+ "levelling": {
+  "COMMON": [
+   1,
+   3,
+   5,
+   6,
+   7,
+   8,
+   10,
+   14,
+   18,
+   24
+  ],
+  "UNCOMMON": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   12,
+   16
+  ],
+  "RARE": [
+   1,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   6,
+   8,
+   12
+  ],
+  "EPIC": [
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   5,
+   7
+  ],
+  "LEGENDARY": [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   3,
+   3,
+   4,
+   5
+  ]
+ },
+ "unconsumable": [
+  "SHARD_CHAMELEON"
+ ],
+ "shards": [
+  {
+   "id": "C1",
+   "key": "GROVE",
+   "name": "Grove",
+   "attribute": "Nature Elemental",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_NATURE_ELEMENTAL;1",
+   "effect": "Grants +2 Health.",
+   "stat": "health",
+   "per_level": 2.0
+  },
+  {
+   "id": "C2",
+   "key": "MIST",
+   "name": "Mist",
+   "attribute": "Fog Elemental",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOG_ELEMENTAL;1",
+   "effect": "Grants +1 Intelligence.",
+   "stat": "intelligence",
+   "per_level": 1.0
+  },
+  {
+   "id": "C3",
+   "key": "FLASH",
+   "name": "Flash",
+   "attribute": "Light Elemental",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_LIGHT_ELEMENTAL;1",
+   "effect": "Grants +1 Strength.",
+   "stat": "strength",
+   "per_level": 1.0
+  },
+  {
+   "id": "C4",
+   "key": "PHANPYRE",
+   "name": "Phanpyre",
+   "attribute": "Nocturnal Animal",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Phantom"
+   ],
+   "item": "ATTRIBUTE_SHARD_NOCTURNAL_ANIMAL;1",
+   "effect": "Grants +1 Sweep during the night."
+  },
+  {
+   "id": "C5",
+   "key": "COD",
+   "name": "Cod",
+   "attribute": "Cheapstake",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_CHEAPSTAKE;1",
+   "effect": "Gain +1% more Coins from fishing treasures."
+  },
+  {
+   "id": "C6",
+   "key": "HOWLING_SPIRIT",
+   "name": "Howling Spirit",
+   "attribute": "Animal Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_ANIMAL_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Animal mobs."
+  },
+  {
+   "id": "C7",
+   "key": "PHANFLARE",
+   "name": "Phanflare",
+   "attribute": "Moonglade Mastery",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Phantom"
+   ],
+   "item": "ATTRIBUTE_SHARD_MOONGLADE_MASTERY;1",
+   "effect": "Grants +10 Fig Fortune and +10 Mangrove Fortune."
+  },
+  {
+   "id": "C8",
+   "key": "DUMPSTER_DIVER",
+   "name": "Dumpster Diver",
+   "attribute": "Aquatic Resistance",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_AQUATIC_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Aquatic mobs."
+  },
+  {
+   "id": "C9",
+   "key": "LAPIS_ZOMBIE",
+   "name": "Lapis Zombie",
+   "attribute": "Experience",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Lapis"
+   ],
+   "item": "ATTRIBUTE_SHARD_EXPERIENCE;1",
+   "effect": "Grants +10% more experience orbs from killing mobs."
+  },
+  {
+   "id": "C10",
+   "key": "HIDEONLEAF",
+   "name": "Hideonleaf",
+   "attribute": "Mossy Box",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_MOSSY_BOX;1",
+   "effect": "Grants +5 Block Fortune."
+  },
+  {
+   "id": "C11",
+   "key": "VERDANT",
+   "name": "Verdant",
+   "attribute": "Forest Fishing",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_FISHING;1",
+   "effect": "Grants +3 Fishing Speed while on Foraging Islands."
+  },
+  {
+   "id": "C12",
+   "key": "CHILL",
+   "name": "Chill",
+   "attribute": "Skeletal Ruler",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SKELETAL_RULER;1",
+   "effect": "Increase damage to Skeletal mobs by +3%."
+  },
+  {
+   "id": "C13",
+   "key": "FLY",
+   "name": "Fly",
+   "attribute": "Fortunate Farmer",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_FORTUNATE_FARMER;1",
+   "effect": "Grants +2.5 Farming Fortune.",
+   "stat": "farming_fortune",
+   "per_level": 2.5
+  },
+  {
+   "id": "C14",
+   "key": "SEA_ARCHER",
+   "name": "Bogged",
+   "attribute": "Creature Fisher",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_HUNTER;1",
+   "effect": "Grants +0.5 Sea Creature Chance.",
+   "stat": "sea_creature_chance",
+   "per_level": 0.5
+  },
+  {
+   "id": "C15",
+   "key": "VORACIOUS_SPIDER",
+   "name": "Voracious Spider",
+   "attribute": "Arthropod Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Spider"
+   ],
+   "item": "ATTRIBUTE_SHARD_ARACHNO_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Arthropod mobs."
+  },
+  {
+   "id": "C16",
+   "key": "HIDEONGIFT",
+   "name": "Hideongift",
+   "attribute": "Happy Box",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_HAPPY_BOX;1",
+   "effect": "Grants a +2% chance to obtain an extra Winter Gift when finding one."
+  },
+  {
+   "id": "C17",
+   "key": "BIRRIES",
+   "name": "Birries",
+   "attribute": "Yummy",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_YUMMY;1",
+   "effect": "Grants a +10% chance to drop double Berries and Sea Lumies."
+  },
+  {
+   "id": "C18",
+   "key": "TANK_ZOMBIE",
+   "name": "Tank Zombie",
+   "attribute": "Undead Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_UNDEAD_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Undead mobs."
+  },
+  {
+   "id": "C19",
+   "key": "CROW",
+   "name": "Crow",
+   "attribute": "Fig Sharpening",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_FIG_SHARPENING;1",
+   "effect": "Grants +5 Sweep towards Fig Trees."
+  },
+  {
+   "id": "C20",
+   "key": "TADGANG",
+   "name": "Tadgang",
+   "attribute": "Unity is Strength",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_UNITY_IS_STRENGTH;1",
+   "effect": "Grants +0.02 Sweep for each unique Common Attribute you own."
+  },
+  {
+   "id": "C21",
+   "key": "ZEALOT",
+   "name": "Zealot",
+   "attribute": "Ender Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ENDER_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Ender mobs."
+  },
+  {
+   "id": "C22",
+   "key": "RABBIT_MAFIOSO",
+   "name": "Rabbit Mafioso",
+   "attribute": "Hitman Cooldown",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Crime"
+   ],
+   "item": "ATTRIBUTE_SHARD_HITMAN_COOLDOWN;1",
+   "effect": "The cooldown of the Rabbit Hitman is reduced by +2.5%."
+  },
+  {
+   "id": "C23",
+   "key": "CORALOT",
+   "name": "Coralot",
+   "attribute": "Bucket Lover",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Axolotl",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_BUCKET_LOVER;1",
+   "effect": "You have a +5% chance to gain extra Chums."
+  },
+  {
+   "id": "C24",
+   "key": "HARPY",
+   "name": "Harpy",
+   "attribute": "Tree Lurker",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_TREE_LURKER;1",
+   "effect": "Increases the odds of finding monsters from Tree Gifts by +5%."
+  },
+  {
+   "id": "C25",
+   "key": "MUDWORM",
+   "name": "Mudworm",
+   "attribute": "Visitor Speed",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_VISITOR_BAIT;1",
+   "effect": "Garden Visitors arrive +1% faster."
+  },
+  {
+   "id": "C26",
+   "key": "LOTUS_FISH",
+   "name": "Lotusfish",
+   "attribute": "Lotus Trophy",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_LOTUS_TROPHY;1",
+   "effect": "Grants +1 Trophy Chance while in the Lotus Atoll."
+  },
+  {
+   "id": "C27",
+   "key": "GOLDEN_GHOUL",
+   "name": "Golden Ghoul",
+   "attribute": "Midas Touch",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MIDAS_TOUCH;1",
+   "effect": "Grants +1 Coin per kill."
+  },
+  {
+   "id": "C28",
+   "key": "LOCUST",
+   "name": "Locust",
+   "attribute": "Crop Speed",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_CROP_SPEED;1",
+   "effect": "Grants +1 Crop Growth while in The Garden."
+  },
+  {
+   "id": "C29",
+   "key": "AZURE",
+   "name": "Azure",
+   "attribute": "Forest Strength",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_STRENGTH;1",
+   "effect": "Grants +5 Strength while on Foraging Islands."
+  },
+  {
+   "id": "C30",
+   "key": "BEZAL",
+   "name": "Bezal",
+   "attribute": "Blazing Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BLAZING_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Infernal mobs."
+  },
+  {
+   "id": "C31",
+   "key": "STAG_BEETLE",
+   "name": "Stag Beetle",
+   "attribute": "Woodland Resistance",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_WOODLAND_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Woodland mobs."
+  },
+  {
+   "id": "C32",
+   "key": "NIGHT_SQUID",
+   "name": "Inkling",
+   "attribute": "Fisherman",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Squid"
+   ],
+   "item": "ATTRIBUTE_SHARD_FISHERMAN;1",
+   "effect": "Has a +1% chance not to consume any bait."
+  },
+  {
+   "id": "C33",
+   "key": "YOG",
+   "name": "Yog",
+   "attribute": "Yog Membrane",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_YOG_MEMBRANE;1",
+   "effect": "Grants +1 Heat Resistance.",
+   "stat": "heat_resistance",
+   "per_level": 1.0
+  },
+  {
+   "id": "C34",
+   "key": "BOREAL_OWL",
+   "name": "Boreal Owl",
+   "attribute": "Owl Friend",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_OWL_FRIEND;1",
+   "effect": "Your pets gain +2% more Pet EXP from Fann."
+  },
+  {
+   "id": "C35",
+   "key": "NEWT",
+   "name": "Newt",
+   "attribute": "Decent Karma",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Lizard"
+   ],
+   "item": "ATTRIBUTE_SHARD_DECENT_KARMA;1",
+   "effect": "Grants +2 Hunting Fortune towards COMMON Attributes."
+  },
+  {
+   "id": "C36",
+   "key": "MINER_ZOMBIE",
+   "name": "Miner Zombie",
+   "attribute": "Rotten Pickaxe",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_ROTTEN_PICKAXE;1",
+   "effect": "Grants +3 Mining Speed.",
+   "stat": "mining_speed",
+   "per_level": 3.0
+  },
+  {
+   "id": "C37",
+   "key": "FLITTER",
+   "name": "Flitter",
+   "attribute": "Fortunate Miner",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_FORTUNATE_MINER;1",
+   "effect": "Grants +2.5 Mining Fortune.",
+   "stat": "mining_fortune",
+   "per_level": 2.5
+  },
+  {
+   "id": "C38",
+   "key": "TEPID",
+   "name": "Tepid",
+   "attribute": "Lake Fishing",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_LAKE_FISHING;1",
+   "effect": "Grants +3 Fishing Speed while on Fishing Islands."
+  },
+  {
+   "id": "C39",
+   "key": "CRETAN_BULL",
+   "name": "Cretan Bull",
+   "attribute": "Mythological Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MYTHOLOGICAL_RESISTANCE;1",
+   "effect": "Grants +4 Defense against ✿ Mythological mobs."
+  },
+  {
+   "id": "C40",
+   "key": "ANT",
+   "name": "Ant",
+   "attribute": "Queen Tracker",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_QUEEN_TRACKER;1",
+   "effect": "Grants +0.5 Tracking towards Queen Ants."
+  },
+  {
+   "id": "C41",
+   "key": "CAVERNFISH",
+   "name": "Cavernfish",
+   "attribute": "Cave Fishing",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish",
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_CAVE_FISHING;1",
+   "effect": "Grants +3 Fishing Speed while on Mining Islands."
+  },
+  {
+   "id": "C42",
+   "key": "STRONGARM",
+   "name": "Strongarm",
+   "attribute": "Frozen Resistance",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [
+    "Arctic"
+   ],
+   "item": "ATTRIBUTE_SHARD_FROZEN_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Frozen mobs."
+  },
+  {
+   "id": "C43",
+   "key": "HIDEONSUN",
+   "name": "Hideonsun",
+   "attribute": "Gold Box",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_GOLD_BOX;1",
+   "effect": "Grants +5 Ore Fortune."
+  },
+  {
+   "id": "C44",
+   "key": "HAGGARD",
+   "name": "Haggard",
+   "attribute": "Skeletal Resistance",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SKELETAL_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Skeletal mobs."
+  },
+  {
+   "id": "C45",
+   "key": "HONEYHOG",
+   "name": "Honeyhog",
+   "attribute": "Honey Speed",
+   "rarity": "COMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_HONEY_SPEED;1",
+   "effect": "Trees lathered with Honeycomb attract mobs +1% faster."
+  },
+  {
+   "id": "C46",
+   "key": "SHYWORM",
+   "name": "Shyworm",
+   "attribute": "Subterranean Resistance",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_SUBTERRANEAN_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Subterranean mobs."
+  },
+  {
+   "id": "C47",
+   "key": "BRINELING",
+   "name": "Brineling",
+   "attribute": "Arcane Resistance",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ARCANE_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Arcane mobs."
+  },
+  {
+   "id": "C48",
+   "key": "CHOCOBUN",
+   "name": "Chocobun",
+   "attribute": "Rabbit Youth",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_RABBIT_YOUTH;1",
+   "effect": "Rabbit Bro, Cousin, and Sis can have +1 extra levels."
+  },
+  {
+   "id": "C49",
+   "key": "FOXTROT",
+   "name": "Foxtrot",
+   "attribute": "Foraging Speed",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FORAGING_SPEED;1",
+   "effect": "Grants +3 Speed while on Foraging Islands."
+  },
+  {
+   "id": "C52",
+   "key": "FIREFOX",
+   "name": "Firefox",
+   "attribute": "Torrhus Mastery",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_TORRHUS_MASTERY;1",
+   "effect": "Grants +10 Helix Fortune."
+  },
+  {
+   "id": "C55",
+   "key": "GROUNDHOG",
+   "name": "Groundhog",
+   "attribute": "Diurnal Animal",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_DIURNAL_ANIMAL;1",
+   "effect": "Grants +1 Sweep during the day."
+  },
+  {
+   "id": "C56",
+   "key": "TIMIL",
+   "name": "Timil",
+   "attribute": "Torrhus Diver",
+   "rarity": "COMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_TORRHUS_DIVER;1",
+   "effect": "Grants +0.5 Pressure Resistance while on Torrhus Canyon."
+  },
+  {
+   "id": "C58",
+   "key": "BLUE_JAY",
+   "name": "Blue Jay",
+   "attribute": "Airborne Resistance",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_AIRBORNE_RESISTANCE;1",
+   "effect": "Grants +4 Defense against Airborne mobs."
+  },
+  {
+   "id": "C61",
+   "key": "BUNBUN",
+   "name": "Bunbun",
+   "attribute": "Chocolate Speed",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CHOCOLATE_SPEED;1",
+   "effect": "Increases your Chocolate Factory speed by +0.25%."
+  },
+  {
+   "id": "C64",
+   "key": "HONEYBUZZ",
+   "name": "Honeybuzz",
+   "attribute": "Honey Haul",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_HONEY_HAUL;1",
+   "effect": "Honeyhives have a +2.5% chance to contain double the Honeycomb."
+  },
+  {
+   "id": "C67",
+   "key": "POLLENDART",
+   "name": "Pollendart",
+   "attribute": "Honey Luck",
+   "rarity": "COMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_HONEY_LUCK;1",
+   "effect": "Trees lathered with Honeycomb have a +5% chance to attract a second mob."
+  },
+  {
+   "id": "U1",
+   "key": "BRAMBLE",
+   "name": "Bramble",
+   "attribute": "Wood Elemental",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_WOOD_ELEMENTAL;1",
+   "effect": "Grants +2 Health.",
+   "stat": "health",
+   "per_level": 2.0
+  },
+  {
+   "id": "U2",
+   "key": "TIDE",
+   "name": "Tide",
+   "attribute": "Water Elemental",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_WATER_ELEMENTAL;1",
+   "effect": "Grants +1 Intelligence.",
+   "stat": "intelligence",
+   "per_level": 1.0
+  },
+  {
+   "id": "U3",
+   "key": "QUAKE",
+   "name": "Quake",
+   "attribute": "Stone Elemental",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_STONE_ELEMENTAL;1",
+   "effect": "Grants +1 Strength.",
+   "stat": "strength",
+   "per_level": 1.0
+  },
+  {
+   "id": "U4",
+   "key": "SPARROW",
+   "name": "Sparrow",
+   "attribute": "Fig Collector",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_FIG_COLLECTOR;1",
+   "effect": "Grants +1 Fig Fortune for every digit in your Fig Log collection. (Max 10M collection)"
+  },
+  {
+   "id": "U5",
+   "key": "GOLDFIN",
+   "name": "Goldfin",
+   "attribute": "Gold Bait",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_GOLD_BAIT;1",
+   "effect": "The cooldown of Golden Fish is reduced by +30s."
+  },
+  {
+   "id": "U6",
+   "key": "TROGLOBYTE",
+   "name": "Troglobyte",
+   "attribute": "Mountain Climber",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_MOUNTAIN_CLIMBER;1",
+   "effect": "Commissions grant +1% more HOTM Exp."
+  },
+  {
+   "id": "U7",
+   "key": "HIDEONCAVE",
+   "name": "Hideoncave",
+   "attribute": "Bigger Box",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_BIGGER_BOX;1",
+   "effect": "Grants a +5% chance to find an extra item in Treasure Chests and the Crystal Nucleus."
+  },
+  {
+   "id": "U8",
+   "key": "SALAMANDER",
+   "name": "Salamander",
+   "attribute": "Good Karma",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Lizard"
+   ],
+   "item": "ATTRIBUTE_SHARD_GOOD_KARMA;1",
+   "effect": "Grants +2 Hunting Fortune towards UNCOMMON Attributes."
+  },
+  {
+   "id": "U9",
+   "key": "CUBOA",
+   "name": "Cuboa",
+   "attribute": "Echo of Boxes",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Serpent"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_BOXES;1",
+   "effect": "Your \"Box\" Attributes are +2% stronger."
+  },
+  {
+   "id": "U10",
+   "key": "PEST",
+   "name": "Field Mouse",
+   "attribute": "Pest Luck",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Trash Lover",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_PEST_LUCK;1",
+   "effect": "Grants +0.5 Overbloom on Pests."
+  },
+  {
+   "id": "U11",
+   "key": "MOSSYBIT",
+   "name": "Mossybit",
+   "attribute": "Forest Trap",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_TRAP;1",
+   "effect": "Forest Shards get caught by Traps +1% faster."
+  },
+  {
+   "id": "U12",
+   "key": "RAIN_SLIME",
+   "name": "Rain Slime",
+   "attribute": "Mana Steal",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MANA_STEAL;1",
+   "effect": "Regain +0.5 Mana every time you hit a monster. Cooldown: 0.5s"
+  },
+  {
+   "id": "U14",
+   "key": "WETWING",
+   "name": "Wetwing",
+   "attribute": "Humanoid Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Drowned"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUMANOID_RULER_NEW;1",
+   "effect": "Grants +3% more Damage against Humanoid mobs."
+  },
+  {
+   "id": "U15",
+   "key": "SEER",
+   "name": "Seer",
+   "attribute": "Dragon Shortbow Improvement",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_DRAGON_SHORTBOW_IMPROVEMENT;1",
+   "effect": "Your Dragon Shortbow gains +2% more Damage while in The End."
+  },
+  {
+   "id": "U16",
+   "key": "HERON",
+   "name": "Heron",
+   "attribute": "Mangrove Sharpening",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_MANGROVE_SHARPENING;1",
+   "effect": "Grants +10 Sweep towards Mangrove Trees."
+  },
+  {
+   "id": "U17",
+   "key": "SEA_WITCH",
+   "name": "Sea Witch",
+   "attribute": "Witch's Fortune",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_WITCHS_FORTUNE;1",
+   "effect": "Increases your chance of dropping Ingredients during the Year of the Witch by +1%."
+  },
+  {
+   "id": "U18",
+   "key": "OBSIDIAN_DEFENDER",
+   "name": "Obsidian Defender",
+   "attribute": "Speed",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SPEED;1",
+   "effect": "Grants +1 Speed.",
+   "stat": "speed",
+   "per_level": 1.0
+  },
+  {
+   "id": "U19",
+   "key": "CRICKET",
+   "name": "Cricket",
+   "attribute": "Pest Fortune",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_PEST_FORTUNE;1",
+   "effect": "Grants +5 Farming Fortune on Pests."
+  },
+  {
+   "id": "U20",
+   "key": "SALMON",
+   "name": "Salmon",
+   "attribute": "Lost and Found",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_LOST_AND_FOUND;1",
+   "effect": "Grants a +0.1% chance to find a Wet Book when fishing a Treasure."
+  },
+  {
+   "id": "U21",
+   "key": "VIPER",
+   "name": "Viper",
+   "attribute": "Hunter's Fang",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Serpent"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNTERS_FANGS;1",
+   "effect": "Your Hunting Axes gain +1% more stats from the weapon they hold."
+  },
+  {
+   "id": "U22",
+   "key": "PRAYING_MANTIS",
+   "name": "Praying Mantis",
+   "attribute": "Pest Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_INSECT_POWER;1",
+   "effect": "Grants +3% more Damage against Pest mobs."
+  },
+  {
+   "id": "U23",
+   "key": "LOTUM",
+   "name": "Lotum",
+   "attribute": "Lily Tracker",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_LILY_TRACKER;1",
+   "effect": "Grants +1 Tracking on Exploding Lily Pads."
+  },
+  {
+   "id": "U24",
+   "key": "ZOMBIE_SOLDIER",
+   "name": "Zombie Soldier",
+   "attribute": "Undead Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_UNDEAD;1",
+   "effect": "Grants +3% more Damage against Undead mobs."
+  },
+  {
+   "id": "U25",
+   "key": "BAMBULEAF",
+   "name": "Bambuleaf",
+   "attribute": "Strong Arms",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Panda"
+   ],
+   "item": "ATTRIBUTE_SHARD_STRONG_ARMS;1",
+   "effect": "Your Axe gains +3 Sweep on throws."
+  },
+  {
+   "id": "U26",
+   "key": "TREASURE_HOARDER",
+   "name": "Treasure Hoarder",
+   "attribute": "Dwarven Training",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_DWARVEN_TRAINING;1",
+   "effect": "Gain +1% more Heart of the Mountain Exp."
+  },
+  {
+   "id": "U27",
+   "key": "SYCOPHANT",
+   "name": "Sycophant",
+   "attribute": "Life Recovery",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_LIFE_RECOVERY;1",
+   "effect": "Heals for +0.1% of your max health each time you kill a mob. Cooldown: 0.5s"
+  },
+  {
+   "id": "U28",
+   "key": "SEAGULL",
+   "name": "Seagull",
+   "attribute": "Mangrove Collector",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_MANGROVE_COLLECTOR;1",
+   "effect": "Grants +1 Mangrove Fortune for every digit in your Mangrove Log collection. (Max 10M collection)"
+  },
+  {
+   "id": "U29",
+   "key": "ENT",
+   "name": "Ent",
+   "attribute": "Woodland Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SPIRIT_AXE;1",
+   "effect": "Grants +3% more Damage against Woodland mobs."
+  },
+  {
+   "id": "U30",
+   "key": "SOUL_OF_THE_ALPHA",
+   "name": "Soul of the Alpha",
+   "attribute": "Combo",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_COMBO;1",
+   "effect": "Deal +0.1% more Damage per Grandma Wolf pet combo. (Max 50 combo)"
+  },
+  {
+   "id": "U31",
+   "key": "MOCHIBEAR",
+   "name": "Mochibear",
+   "attribute": "Strong Legs",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Panda"
+   ],
+   "item": "ATTRIBUTE_SHARD_STRONG_LEGS;1",
+   "effect": "Your Axe gains +3 Sweep on melee."
+  },
+  {
+   "id": "U32",
+   "key": "MAGMA_SLUG",
+   "name": "Magma Slug",
+   "attribute": "Infection",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_INFECTION;1",
+   "effect": "Increases the chance of catching corrupted Sea Creatures by +0.2%."
+  },
+  {
+   "id": "U33",
+   "key": "FLAMING_SPIDER",
+   "name": "Flaming Spider",
+   "attribute": "Arthropod Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Spider"
+   ],
+   "item": "ATTRIBUTE_SHARD_ARACHNO;1",
+   "effect": "Grants +3% more Damage against Arthropod mobs."
+  },
+  {
+   "id": "U34",
+   "key": "KIWI",
+   "name": "Kiwi",
+   "attribute": "Kat's Favorite",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_KAT_FAVORITE;1",
+   "effect": "Kat takes +1% less time to upgrade a Pet."
+  },
+  {
+   "id": "U36",
+   "key": "BRUISER",
+   "name": "Zealot Bruiser",
+   "attribute": "Ender Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ENDER;1",
+   "effect": "Grants +3% more Damage against Ender mobs."
+  },
+  {
+   "id": "U38",
+   "key": "STRIDER_SURFER",
+   "name": "Stridersurfer",
+   "attribute": "Magmatic Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Drowned"
+   ],
+   "item": "ATTRIBUTE_SHARD_MAGMATIC_RULER;1",
+   "effect": "Grants +3% more Damage against Magmatic mobs."
+  },
+  {
+   "id": "U39",
+   "key": "RANA",
+   "name": "Rana",
+   "attribute": "Battle Frog",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_BATTLE_FROG;1",
+   "effect": "Your Frog Pet gains +3 Strength."
+  },
+  {
+   "id": "U40",
+   "key": "TERMITE",
+   "name": "Earthworm",
+   "attribute": "Infiltration",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_INFILTRATION;1",
+   "effect": "Grants +3 Farming Fortune if your Garden Plot currently has a Pest in it."
+  },
+  {
+   "id": "U41",
+   "key": "FLIP_FLOPPER",
+   "name": "Flipflopper",
+   "attribute": "Golden Frog",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_GOLDEN_FROG;1",
+   "effect": "Trophy Frogs are +0.5% more likely to be GOLD."
+  },
+  {
+   "id": "U42",
+   "key": "POLARIS",
+   "name": "Polaris",
+   "attribute": "Frozen Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Arctic"
+   ],
+   "item": "ATTRIBUTE_SHARD_FROZEN_RULER;1",
+   "effect": "Grants +3% more Damage against Frozen mobs."
+  },
+  {
+   "id": "U43",
+   "key": "TREEFROG",
+   "name": "Treefrog",
+   "attribute": "Foraging Frog",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_FORAGING_FROG;1",
+   "effect": "Your Frog Pet gains +1 Foraging Fortune."
+  },
+  {
+   "id": "U44",
+   "key": "BAYOU_SLUDGE",
+   "name": "Bayou Sludge",
+   "attribute": "Compost Speed",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_COMPOST_SPEED;1",
+   "effect": "Your Composter works +1% faster."
+  },
+  {
+   "id": "U45",
+   "key": "AREITA",
+   "name": "Areita",
+   "attribute": "Battle Arachnid",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Spider"
+   ],
+   "item": "ATTRIBUTE_SHARD_BATTLE_ARACHNID;1",
+   "effect": "Your Spider Pet and Tarantula Pet gain +2 Crit Damage."
+  },
+  {
+   "id": "U46",
+   "key": "BLUEBIRD",
+   "name": "Bluebird",
+   "attribute": "Airborne Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_AIRBORNE_RULER;1",
+   "effect": "Grants +3% more Damage against Airborne mobs."
+  },
+  {
+   "id": "U47",
+   "key": "OSEDAX",
+   "name": "Osedax",
+   "attribute": "Flexible Fisher",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_FLEXIBLE_FISHER;1",
+   "effect": "Increases your chance of catching Flexbones by +2.5% while in the Tomb Floodway."
+  },
+  {
+   "id": "U48",
+   "key": "DUPLICO",
+   "name": "Duplico",
+   "attribute": "Arcane Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_ARCANE_RULER;1",
+   "effect": "Grants +3% more Damage against Arcane mobs."
+  },
+  {
+   "id": "U49",
+   "key": "LITTERBUG",
+   "name": "Litterbug",
+   "attribute": "Buckle Fisher",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_BUCKLE_FISHER;1",
+   "effect": "Junk catches are +1% more likely to be GREAT."
+  },
+  {
+   "id": "U50",
+   "key": "WATER_SNAKE",
+   "name": "Water Snake",
+   "attribute": "Titanoboa Tracker",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_TITANOBOA_TRACKER;1",
+   "effect": "Grants +0.5 Tracking towards Titanoboa."
+  },
+  {
+   "id": "U51",
+   "key": "GAZER",
+   "name": "Gazer",
+   "attribute": "Zealot Tracker",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_ZEALOT_TRACKER;1",
+   "effect": "Grants +0.5 Tracking towards Special Zealots."
+  },
+  {
+   "id": "U52",
+   "key": "HONEYBUG",
+   "name": "Honeybug",
+   "attribute": "Visitor Honey",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_VISITOR_HONEY;1",
+   "effect": "Garden Visitors have a +0.25% chance to bring Honey Jar."
+  },
+  {
+   "id": "U53",
+   "key": "SHUDDERSQUID",
+   "name": "Shuddersquid",
+   "attribute": "Yeti Tracker",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Squid"
+   ],
+   "item": "ATTRIBUTE_SHARD_YETI_TRACKER;1",
+   "effect": "Grants +0.5 Tracking towards Yeti."
+  },
+  {
+   "id": "U55",
+   "key": "SOLSNATCHER",
+   "name": "Solsnatcher",
+   "attribute": "Soul Snatcher",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Phantom"
+   ],
+   "item": "ATTRIBUTE_SHARD_SOUL_SNATCHER;1",
+   "effect": "Mobs are +1% more likely to drop their soul when killed."
+  },
+  {
+   "id": "U56",
+   "key": "SEPIALOT",
+   "name": "Sepialot",
+   "attribute": "Bucket Greed",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Axolotl"
+   ],
+   "item": "ATTRIBUTE_SHARD_BUCKET_GREED;1",
+   "effect": "Your Chums give +10% extra Coins when deposited into any bucket."
+  },
+  {
+   "id": "U57",
+   "key": "HONEY_BADGER",
+   "name": "Honey Badger",
+   "attribute": "Honey Serendipity",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_HONEY_SERENDIPITY;1",
+   "effect": "Grants a +0.5% chance to instantly attract a mob when lathering a Tree with Honeycomb."
+  },
+  {
+   "id": "U58",
+   "key": "DRIFTLING",
+   "name": "Driftling",
+   "attribute": "Subterranean Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_SUBTERRANEAN_RULER;1",
+   "effect": "Grants +3% more Damage against Subterranean mobs."
+  },
+  {
+   "id": "U59",
+   "key": "TEWTIL",
+   "name": "Tewtil",
+   "attribute": "Lily Puncher",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Turtle"
+   ],
+   "item": "ATTRIBUTE_SHARD_LILY_PUNCHER;1",
+   "effect": "Punching Exploding Lily Pads applies +5% more force."
+  },
+  {
+   "id": "U60",
+   "key": "MINOS_HUNTER",
+   "name": "Minos Hunter",
+   "attribute": "Mythological Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MYTHOLOGICAL_RULER;1",
+   "effect": "Grants +3% more Damage against Mythological mobs."
+  },
+  {
+   "id": "U61",
+   "key": "WOODCHUCKER",
+   "name": "Woodchucker",
+   "attribute": "Builder Discount",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BUILDER_DISCOUNT;1",
+   "effect": "Reduces the cost of items in the Builder's Shop by +1%."
+  },
+  {
+   "id": "U62",
+   "key": "SOLAR",
+   "name": "Solar",
+   "attribute": "Starlyn Training",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_STARLYN_TRAINING;1",
+   "effect": "Gain +0.5% more points in Starlyn Contests."
+  },
+  {
+   "id": "U63",
+   "key": "PARCHED",
+   "name": "Parched",
+   "attribute": "Visitor Compost",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_VISITOR_COMPOST;1",
+   "effect": "Garden Visitors have a +0.25% chance to bring Compost."
+  },
+  {
+   "id": "U64",
+   "key": "BLOODBAT",
+   "name": "Bloodbat",
+   "attribute": "Bartender Discount",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BARTENDER_DISCOUNT;1",
+   "effect": "Reduces the cost of items in the Bartender's Shop by +1%."
+  },
+  {
+   "id": "U65",
+   "key": "DUSTYBIT",
+   "name": "Dustybit",
+   "attribute": "Combat Trap",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Frog"
+   ],
+   "item": "ATTRIBUTE_SHARD_COMBAT_TRAP;1",
+   "effect": "Combat Shards get caught by Traps +1% faster."
+  },
+  {
+   "id": "U67",
+   "key": "WOODLOUSE",
+   "name": "Woodlouse",
+   "attribute": "Visitor Cheese",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_VISITOR_CHEESE;1",
+   "effect": "Garden Visitors have a +0.25% chance to bring Tasty Cheese."
+  },
+  {
+   "id": "U68",
+   "key": "EMBER",
+   "name": "Ember",
+   "attribute": "Galatea Training",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [
+    "Tropical Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_GALATEA_TRAINING;1",
+   "effect": "Gain +1% more Heart of the Forest Exp."
+  },
+  {
+   "id": "U69",
+   "key": "CHEEKY_TIKI",
+   "name": "Cheeky Tiki",
+   "attribute": "Bayou Treasure",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Creation"
+   ],
+   "item": "ATTRIBUTE_SHARD_BAYOU_TREASURE;1",
+   "effect": "Grants +0.1 Treasure Chance while in the Backwater Bayou."
+  },
+  {
+   "id": "U70",
+   "key": "RED_PANDA",
+   "name": "Red Panda",
+   "attribute": "Visitor Plant",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Panda",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_VISITOR_PLANT;1",
+   "effect": "Garden Visitors have a +0.25% chance to bring Plant Matter."
+  },
+  {
+   "id": "U71",
+   "key": "SPRAWL",
+   "name": "Sprawl",
+   "attribute": "Animal Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ANIMAL_RULER;1",
+   "effect": "Grants +3% more Damage against Animal mobs."
+  },
+  {
+   "id": "U72",
+   "key": "SNEAKY_TIKI",
+   "name": "Sneaky Tiki",
+   "attribute": "Tiki Tracker",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Creation"
+   ],
+   "item": "ATTRIBUTE_SHARD_TIKI_TRACKER;1",
+   "effect": "Grants +0.5 Tracking towards Wiki Tiki."
+  },
+  {
+   "id": "U73",
+   "key": "PACKRAT_SKULL",
+   "name": "Packrat",
+   "attribute": "Fiesta Fortune",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FIESTA_FORTUNE;1",
+   "effect": "Grants +5 Gemstone Fortune while Mayor Cole's Mining Fiesta perk is active."
+  },
+  {
+   "id": "U75",
+   "key": "SHRIEKY_TIKI",
+   "name": "Shrieky Tiki",
+   "attribute": "Construct Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [
+    "Creation"
+   ],
+   "item": "ATTRIBUTE_SHARD_CONSTRUCT_RULER;1",
+   "effect": "Grants +3% more Damage against Construct mobs."
+  },
+  {
+   "id": "U76",
+   "key": "WOODPECKER",
+   "name": "Woodpecker",
+   "attribute": "Helix Timber",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_FELLING;1",
+   "effect": "Grants +0.1 Timber on Helix Trees."
+  },
+  {
+   "id": "U78",
+   "key": "HONEYMITE",
+   "name": "Honeymite",
+   "attribute": "Mite Spawner",
+   "rarity": "UNCOMMON",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MITE_SPAWNER;1",
+   "effect": "Grants a +2.5% chance to spawn an additional Nest Endermite when mining Ender Nodes."
+  },
+  {
+   "id": "U79",
+   "key": "QUEEN_ANT",
+   "name": "Queen Ant",
+   "attribute": "Elusive Ruler",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_ELUSIVE_RULER;1",
+   "effect": "Grants +3% more Damage against Elusive mobs."
+  },
+  {
+   "id": "U82",
+   "key": "HAWK",
+   "name": "Hawk",
+   "attribute": "Helix Collector",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_HELIX_COLLECTOR;1",
+   "effect": "Grants +1 Helix Fortune for every digit in your Helix Log collection. (Max 10M collection)"
+  },
+  {
+   "id": "U85",
+   "key": "JUNE_BUG",
+   "name": "June Bug",
+   "attribute": "Ticket Discount",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_TICKET_DISCOUNT;1",
+   "effect": "Upgrading Safari Tickets at the Safari Manager costs +1% less Forest Essence."
+  },
+  {
+   "id": "U88",
+   "key": "DUNG_BEETLE",
+   "name": "Dung Beetle",
+   "attribute": "Visitor Dung",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_VISITOR_DUNG;1",
+   "effect": "Garden Visitors have a +0.25% chance to bring Dung."
+  },
+  {
+   "id": "U91",
+   "key": "RAT",
+   "name": "Rat",
+   "attribute": "Sprayonator Serendipity",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_SPRAYONATOR_SERENDIPITY;1",
+   "effect": "Grants a +1% chance for Pests to drop an extra Sprayonator Material."
+  },
+  {
+   "id": "U94",
+   "key": "KEELED_SLUG",
+   "name": "Keeled Slug",
+   "attribute": "Bonus Pest Chance",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_BONUS_PEST_CHANCE;1",
+   "effect": "Grants +1 Bonus Pest Chance."
+  },
+  {
+   "id": "U97",
+   "key": "MITE",
+   "name": "Mite",
+   "attribute": "Filter Upgrade",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_FILTER_UPGRADE;1",
+   "effect": "Increases the effects of your Atmospheric Filter by +2%."
+  },
+  {
+   "id": "U100",
+   "key": "MOTH",
+   "name": "Moth",
+   "attribute": "Pest Cooldown",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_PEST_COOLDOWN;1",
+   "effect": "Reduces the spawn cooldown of Pests by 0.5s."
+  },
+  {
+   "id": "U103",
+   "key": "MOSQUITO",
+   "name": "Mosquito",
+   "attribute": "Enchanted Farmer",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_ENCHANTED_FARMER;1",
+   "effect": "Grants a +0.001% chance to find an Enchanted Crop while Farming."
+  },
+  {
+   "id": "U106",
+   "key": "RABBIT_CAT",
+   "name": "Rabbit Cat",
+   "attribute": "Legendary Rabbit Luck",
+   "rarity": "UNCOMMON",
+   "alignment": "Forest",
+   "family": [
+    "Crime"
+   ],
+   "item": "ATTRIBUTE_SHARD_LEGENDARY_RABBIT_LUCK;1",
+   "effect": "Increases your chance of finding LEGENDARY Rabbits during Hoppity's Hunt by +1%."
+  },
+  {
+   "id": "R1",
+   "key": "SYLVAN",
+   "name": "Sylvan",
+   "attribute": "Forest Elemental",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_ELEMENTAL;1",
+   "effect": "Grants +2 Health.",
+   "stat": "health",
+   "per_level": 2.0
+  },
+  {
+   "id": "R2",
+   "key": "CASCADE",
+   "name": "Cascade",
+   "attribute": "Torrent Elemental",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_TORRENT_ELEMENTAL;1",
+   "effect": "Grants +1 Intelligence.",
+   "stat": "intelligence",
+   "per_level": 1.0
+  },
+  {
+   "id": "R3",
+   "key": "BOLT",
+   "name": "Bolt",
+   "attribute": "Lightning Elemental",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_LIGHTNING_ELEMENTAL;1",
+   "effect": "Grants +1 Strength.",
+   "stat": "strength",
+   "per_level": 1.0
+  },
+  {
+   "id": "R4",
+   "key": "BAMBLOOM",
+   "name": "Bambloom",
+   "attribute": "Animal Expertise",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Panda"
+   ],
+   "item": "ATTRIBUTE_SHARD_ANIMAL_EXPERTISE;1",
+   "effect": "Grants +10 Foraging Fortune.",
+   "stat": "foraging_fortune",
+   "per_level": 10.0
+  },
+  {
+   "id": "R5",
+   "key": "TOAD",
+   "name": "Toad",
+   "attribute": "Frog Legs",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_FROG_LEGS;1",
+   "effect": "Frogs have a +10% chance to jump 1 less time."
+  },
+  {
+   "id": "R6",
+   "key": "GLACITE_WALKER",
+   "name": "Glacite Walker",
+   "attribute": "Essence of Ice",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ICE_ESSENCE;1",
+   "effect": "Gain +1% more Ice Essence."
+  },
+  {
+   "id": "R7",
+   "key": "BEACONMITE",
+   "name": "Beaconmite",
+   "attribute": "Beacon Zealot",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_BEACON_ZEALOT;1",
+   "effect": "The effects of Galatea's beacons are +10% stronger on you. Gain a +0.1% chance to find Signal Enhancers in Tree Gifts."
+  },
+  {
+   "id": "R8",
+   "key": "LIZARD_KING",
+   "name": "Lizard King",
+   "attribute": "Great Karma",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Lizard"
+   ],
+   "item": "ATTRIBUTE_SHARD_GREAT_KARMA;1",
+   "effect": "Grants +1 Hunting Fortune towards RARE Attributes."
+  },
+  {
+   "id": "R9",
+   "key": "PYTHON",
+   "name": "Python",
+   "attribute": "Hunter's Pressure",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Serpent"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNTERS_PRESSURE;1",
+   "effect": "Your Black Holes capture creatures +5% faster."
+  },
+  {
+   "id": "R10",
+   "key": "INVISIBUG",
+   "name": "Invisibug",
+   "attribute": "Fancy Visit",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_FANCY_VISIT;1",
+   "effect": "RARE and above Garden Visitors have a +1% higher chance to arrive."
+  },
+  {
+   "id": "R11",
+   "key": "PIRANHA",
+   "name": "Piranha",
+   "attribute": "Moonglade Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_MOONGLADE_SERENDIPITY;1",
+   "effect": "Increases the odds of finding rare items in Tree Gifts at Moonglade Marsh by +2%."
+  },
+  {
+   "id": "R13",
+   "key": "HIDEONGEON",
+   "name": "Hideongeon",
+   "attribute": "Catacombs Box",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_CATACOMB_BOX;1",
+   "effect": "Increases the quality of boss rewards in The Catacombs by +1."
+  },
+  {
+   "id": "R15",
+   "key": "LAPIS_SKELETON",
+   "name": "Lapis Skeleton",
+   "attribute": "Bone Font",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Lapis"
+   ],
+   "item": "ATTRIBUTE_SHARD_BONE_FONT;1",
+   "effect": "Grants a +2% extra chance of finding Level 6+ books or higher in Superpairs."
+  },
+  {
+   "id": "R16",
+   "key": "CROPEETLE",
+   "name": "Beetle",
+   "attribute": "Crop Bug",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_CROP_BUG;1",
+   "effect": "Grants +1 Overbloom which increases your chances of dropping RARE CROPS."
+  },
+  {
+   "id": "R18",
+   "key": "DROWNED",
+   "name": "Drowned",
+   "attribute": "Undead Fortune",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Drowned"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUMANOID_RULER;1",
+   "effect": "Grants +0.5 Magic Find against Undead mobs."
+  },
+  {
+   "id": "R19",
+   "key": "VULTURE",
+   "name": "Vulture",
+   "attribute": "Helix Sharpening",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_HELIX_SHARPENING;1",
+   "effect": "Grants +15 Sweep towards Helix Trees."
+  },
+  {
+   "id": "R21",
+   "key": "STAR_SENTRY",
+   "name": "Star Sentry",
+   "attribute": "Atomized Mithril",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ATOMIZED_MITHRIL;1",
+   "effect": "Gain +1% extra Mithril Powder."
+  },
+  {
+   "id": "R22",
+   "key": "HIDEONDRA",
+   "name": "Hideondra",
+   "attribute": "Kuudra's Box",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_KUUDRA_BOX;1",
+   "effect": "Gives +5% chance to have an extra Kuudra Teeth in the Paid Reward Chest."
+  },
+  {
+   "id": "R23",
+   "key": "ABYSSAL_LANTERN",
+   "name": "Abyssal Lanternfish",
+   "attribute": "Dwarven Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_DWARVEN_SERENDIPITY;1",
+   "effect": "Increases the chance to find Golden and Diamond Goblins by +10%."
+  },
+  {
+   "id": "R24",
+   "key": "ARACHNE",
+   "name": "Arachne",
+   "attribute": "Essence of Arthropods",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Spider"
+   ],
+   "item": "ATTRIBUTE_SHARD_SPIDER_ESSENCE;1",
+   "effect": "Gain +1% more Spider Essence."
+  },
+  {
+   "id": "R25",
+   "key": "BITBUG",
+   "name": "Bitbug",
+   "attribute": "Cookie Eater",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_COOKIE_EATER;1",
+   "effect": "5% of your Booster Cookie Bits are gained up front."
+  },
+  {
+   "id": "R26",
+   "key": "LAVA_LEECH",
+   "name": "Lava Leech",
+   "attribute": "Essence of Crimson",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CRIMSON_ESSENCE;1",
+   "effect": "Gain +1% more Crimson Essence."
+  },
+  {
+   "id": "R27",
+   "key": "REVENANT",
+   "name": "Revenant",
+   "attribute": "Essence of Unliving",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_UNDEAD_ESSENCE;1",
+   "effect": "Gain +1% more Undead Essence."
+  },
+  {
+   "id": "R28",
+   "key": "FOLF",
+   "name": "Folf",
+   "attribute": "Catacombs Cap",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CATACOMBS_CAP;1",
+   "effect": "Increases your Speed Cap by +5 while in The Catacombs."
+  },
+  {
+   "id": "R29",
+   "key": "SILENTDEPTH",
+   "name": "Silentdepth",
+   "attribute": "Crystal Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_CRYSTAL_SERENDIPITY;1",
+   "effect": "Treasure Chests you find in the Crystal Hollows have a +1% chance to double their loot."
+  },
+  {
+   "id": "R30",
+   "key": "SKELETOR",
+   "name": "Skeletor",
+   "attribute": "Deadeye",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_DEADEYE;1",
+   "effect": "Increases damage from ranged weapons by +2.5%."
+  },
+  {
+   "id": "R31",
+   "key": "THYST",
+   "name": "Thyst",
+   "attribute": "Atomized Crystals",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_ATOMIZED_CRYSTALS;1",
+   "effect": "Gain +1% extra Gemstone Powder."
+  },
+  {
+   "id": "R32",
+   "key": "SEA_SHINE",
+   "name": "Seashine",
+   "attribute": "Diamond Frog",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Squid"
+   ],
+   "item": "ATTRIBUTE_SHARD_DIAMOND_FROG;1",
+   "effect": "Trophy Frogs are +0.5% more likely to be DIAMOND."
+  },
+  {
+   "id": "R33",
+   "key": "QUARTZFANG",
+   "name": "Quartzfang",
+   "attribute": "Quartz Speed",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_QUARTZ_SPEED;1",
+   "effect": "Grants +10 Mining Speed while any Weather is active."
+  },
+  {
+   "id": "R34",
+   "key": "HIDEONRING",
+   "name": "Hideonring",
+   "attribute": "Accessory Size",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_ACCESSORY_SIZE;1",
+   "effect": "Grants +1 extra Accessory Bag slots."
+  },
+  {
+   "id": "R35",
+   "key": "SNOWFIN",
+   "name": "Snowfin",
+   "attribute": "Winter's Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_WINTER_SERENDIPITY;1",
+   "effect": "Increases the odds of finding rare items in Winter Gifts by +2%."
+  },
+  {
+   "id": "R36",
+   "key": "KADA_KNIGHT",
+   "name": "Kada Knight",
+   "attribute": "Lifeline",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_LIFELINE;1",
+   "effect": "When under 20% maximum HP, your Damage and Defense increase by +2.5%."
+  },
+  {
+   "id": "R37",
+   "key": "HUMMINGBIRD",
+   "name": "Hummingbird",
+   "attribute": "Chop",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_CHOP;1",
+   "effect": "Grants a +10% chance to Chop an extra log, on top of the ones you swept."
+  },
+  {
+   "id": "R38",
+   "key": "CARROT_KING",
+   "name": "Carrot King",
+   "attribute": "Rabbit Crew",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_RABBIT_CREW;1",
+   "effect": "Your Chocolate Factory gains +5 more Chocolate per second."
+  },
+  {
+   "id": "R39",
+   "key": "WITHER_SPECTER",
+   "name": "Wither Spectre",
+   "attribute": "Breeze",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BREEZE;1",
+   "effect": "When you haven't been damaged in the last 5s or more, your mana costs are decreased by +1%."
+  },
+  {
+   "id": "R40",
+   "key": "BADGER",
+   "name": "Badger",
+   "attribute": "Battle Tracker",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BATTLE_TRACKER;1",
+   "effect": "Grants +0.5 Tracking while on Combat Islands."
+  },
+  {
+   "id": "R42",
+   "key": "MATCHO",
+   "name": "Matcho",
+   "attribute": "Ignition",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_IGNITION;1",
+   "effect": "Increases the duration of fire damage that you inflict on enemies by +30%."
+  },
+  {
+   "id": "R43",
+   "key": "LADYBUG",
+   "name": "Ladybug",
+   "attribute": "Visitor Copper",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_PRETTY_CLOTHES;1",
+   "effect": "Gain +1% more Copper from Garden Visitors."
+  },
+  {
+   "id": "R44",
+   "key": "LUMISQUID",
+   "name": "Lumisquid",
+   "attribute": "Extreme Pressure",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Squid"
+   ],
+   "item": "ATTRIBUTE_SHARD_EXTREME_PRESSURE;1",
+   "effect": "Grants +1 Pressure Resistance.",
+   "stat": "pressure_resistance",
+   "per_level": 1.0
+  },
+  {
+   "id": "R45",
+   "key": "CROCODILE",
+   "name": "Crocodile",
+   "attribute": "Pure Reptile",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Croco"
+   ],
+   "item": "ATTRIBUTE_SHARD_PURE_REPTILE;1",
+   "effect": "Grants a +2% chance to double shards from a Reptile Fusion."
+  },
+  {
+   "id": "R46",
+   "key": "WILD_HOG",
+   "name": "Wild Hog",
+   "attribute": "Animal Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ANIMAL_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Animal mobs."
+  },
+  {
+   "id": "R47",
+   "key": "BULLFROG",
+   "name": "Bullfrog",
+   "attribute": "Berry Enjoyer",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_BERRY_ENJOYER;1",
+   "effect": "Berries have a +10% chance to grant you double points in Starlyn Contests."
+  },
+  {
+   "id": "R49",
+   "key": "DREADWING",
+   "name": "Dreadwing",
+   "attribute": "Essence of the Forest",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Phantom"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_ESSENCE;1",
+   "effect": "Gain +1% more Forest Essence."
+  },
+  {
+   "id": "R50",
+   "key": "JOYDIVE",
+   "name": "Joydive",
+   "attribute": "Deep Diving",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_DEEP_DIVING;1",
+   "effect": "Grants +1 Respiration.",
+   "stat": "respiration",
+   "per_level": 1.0
+  },
+  {
+   "id": "R51",
+   "key": "STALAGMIGHT",
+   "name": "Stalagmight",
+   "attribute": "Atomized Glacite",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_ATOMIZED_GLACITE;1",
+   "effect": "Gain +1% extra Glacite Powder."
+  },
+  {
+   "id": "R52",
+   "key": "FUNGLOOM",
+   "name": "Fungloom",
+   "attribute": "Fungy Luck",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_FUNGY_LUCK;1",
+   "effect": "Gain a +10% chance to gain an additional Chisel charge upon starting the Fossil Excavator."
+  },
+  {
+   "id": "R53",
+   "key": "EEL",
+   "name": "Eel",
+   "attribute": "Eelastic",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Eel",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_EELASTIC;1",
+   "effect": "Increase Pull by +1 when using your Fishing Nets."
+  },
+  {
+   "id": "R54",
+   "key": "KING_COBRA",
+   "name": "King Cobra",
+   "attribute": "Hunter's Grasp",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Serpent"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNTERS_GRASP;1",
+   "effect": "Your Black Holes gain +1% Hunting Fortune."
+  },
+  {
+   "id": "R55",
+   "key": "HEWVER",
+   "name": "Hewver",
+   "attribute": "Critter Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CRITTER_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Critter mobs."
+  },
+  {
+   "id": "R56",
+   "key": "LAVA_FLAME",
+   "name": "Lava Flame",
+   "attribute": "Blazing Fortune",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BLAZING_FORTUNE;1",
+   "effect": "Grants +1 Magic Find on Magmatic mobs."
+  },
+  {
+   "id": "R57",
+   "key": "DRACONIC",
+   "name": "Draconic",
+   "attribute": "Essence of Dragons",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_DRAGON_ESSENCE;1",
+   "effect": "Gain +1% more Dragon Essence."
+  },
+  {
+   "id": "R58",
+   "key": "FALCON",
+   "name": "Falcon",
+   "attribute": "Battle Experience",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_BATTLE_EXPERIENCE;1",
+   "effect": "Pets gain +1% more EXP from Combat."
+  },
+  {
+   "id": "R59",
+   "key": "INFERNO_KOI",
+   "name": "Inferno Koi",
+   "attribute": "Crimson Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_CRIMSON_SERENDIPITY;1",
+   "effect": "Increase the odds of finding a Vanquisher by +2%."
+  },
+  {
+   "id": "R60",
+   "key": "WITHER",
+   "name": "Wither",
+   "attribute": "Essence of Wither",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_WITHER_ESSENCE;1",
+   "effect": "Gain +1% more Wither Essence."
+  },
+  {
+   "id": "R61",
+   "key": "GECKO",
+   "name": "Gecko",
+   "attribute": "Echo of Sharpening",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Reptile",
+    "Scaled"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_SHARPENING;1",
+   "effect": "Your Sharpening Attributes are +2% stronger."
+  },
+  {
+   "id": "R62",
+   "key": "WIKI_TIKI",
+   "name": "Wiki Tiki",
+   "attribute": "Construct Fortune",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Creation",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_CONSTRUCT_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Construct mobs."
+  },
+  {
+   "id": "R63",
+   "key": "MINOTAUR",
+   "name": "Minotaur",
+   "attribute": "Mythological Fortune",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MYTHOLOGICAL_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Mythological mobs."
+  },
+  {
+   "id": "R64",
+   "key": "HIVETHIEF",
+   "name": "Hivethief",
+   "attribute": "Cubic Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CUBIC_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Cubic mobs."
+  },
+  {
+   "id": "R65",
+   "key": "MAGGOT",
+   "name": "Maggot",
+   "attribute": "Boot Fisher",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Bug",
+    "Trash Lover"
+   ],
+   "item": "ATTRIBUTE_SHARD_BOOT_FISHER;1",
+   "effect": "Junk catches are +1% more likely to be OUTSTANDING."
+  },
+  {
+   "id": "R66",
+   "key": "SNOOZLE",
+   "name": "Snoozle",
+   "attribute": "Sleepy Spread",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SLEEPY_SPREAD;1",
+   "effect": "Grants +1 Mining Spread."
+  },
+  {
+   "id": "R67",
+   "key": "PARAKEET",
+   "name": "Parakeet",
+   "attribute": "Flying Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_FLYING_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Airborne mobs."
+  },
+  {
+   "id": "R68",
+   "key": "THUNDER",
+   "name": "Thunder",
+   "attribute": "Thunder Speed",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_THUNDER_SPEED;1",
+   "effect": "Your Thunder, Storm, and Hurricane Bottles fill +1% faster."
+  },
+  {
+   "id": "R69",
+   "key": "ROCKMITE",
+   "name": "Rockmite",
+   "attribute": "Cavernous Tracker",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Bug",
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_CAVERNOUS_TRACKER;1",
+   "effect": "Grants +0.5 Tracking while on Mining Islands."
+  },
+  {
+   "id": "R70",
+   "key": "ANTEATER",
+   "name": "Anteater",
+   "attribute": "Floor Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FLOOR_FORTUNE;1",
+   "effect": "Grants a +0.1% chance to gain double loot from Floor Drops."
+  },
+  {
+   "id": "R72",
+   "key": "SCRAPPY",
+   "name": "Scrappy",
+   "attribute": "Scrap Chance",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_SCRAP_CHANCE;1",
+   "effect": "Increases your chance of finding a Suspicious Scrap while mining in the Glacite Mineshafts by +1%."
+  },
+  {
+   "id": "R73",
+   "key": "HIDEYHO",
+   "name": "Hideyho",
+   "attribute": "Elusive Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_ELUSIVE_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Elusive mobs."
+  },
+  {
+   "id": "R74",
+   "key": "MANTIS_SHRIMP",
+   "name": "Mantis Shrimp",
+   "attribute": "Great Treasure",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Crustacean"
+   ],
+   "item": "ATTRIBUTE_SHARD_GREAT_TREASURE;1",
+   "effect": "Treasure catches are +1% more likely to be GREAT."
+  },
+  {
+   "id": "R75",
+   "key": "CHUCKWALLA",
+   "name": "Chuckwalla",
+   "attribute": "Subterranean Fortune",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Lizard"
+   ],
+   "item": "ATTRIBUTE_SHARD_SUBTERRANEAN_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Subterranean mobs."
+  },
+  {
+   "id": "R76",
+   "key": "HIDEONFLOOR",
+   "name": "Hideonfloor",
+   "attribute": "Woodland Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_WOODLAND_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Woodland mobs."
+  },
+  {
+   "id": "R77",
+   "key": "GIMMIEGOLD",
+   "name": "Gimmiegold",
+   "attribute": "Greedy Goblin",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_GREEDY_GOBLIN;1",
+   "effect": "Your Goblin Pet gains +1 Ore Fortune."
+  },
+  {
+   "id": "R78",
+   "key": "BILLYGOAT",
+   "name": "Billygoat",
+   "attribute": "Frozen Fortune",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Arctic"
+   ],
+   "item": "ATTRIBUTE_SHARD_FROZEN_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Frozen mobs."
+  },
+  {
+   "id": "R79",
+   "key": "HIDEONWALL",
+   "name": "Hideonwall",
+   "attribute": "Arcane Fortune",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_ARCANE_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find on Arcane mobs."
+  },
+  {
+   "id": "R80",
+   "key": "NOZZLENOSE",
+   "name": "Nozzlenose",
+   "attribute": "Underwater Tracker",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_UNDERWATER_TRACKER;1",
+   "effect": "Grants +0.5 Tracking while on Fishing Islands."
+  },
+  {
+   "id": "R81",
+   "key": "STONEWORM",
+   "name": "Stoneworm",
+   "attribute": "Refined Luck",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_REFINED_LUCK;1",
+   "effect": "Increases your chance of finding Refined Minerals during Mining Fiestas by +1%. Effects are doubled if you have a Fiesta Flask active!"
+  },
+  {
+   "id": "R82",
+   "key": "FLUFFLING",
+   "name": "Fluffling",
+   "attribute": "Foraging Tracker",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Panda"
+   ],
+   "item": "ATTRIBUTE_SHARD_FORAGING_TRACKER;1",
+   "effect": "Grants +0.5 Tracking while on Foraging Islands."
+  },
+  {
+   "id": "R83",
+   "key": "STINGRAY",
+   "name": "Stingray",
+   "attribute": "Torrhus Serendipity",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Treasure Fish"
+   ],
+   "item": "ATTRIBUTE_SHARD_TORRHUS_SERENDIPITY;1",
+   "effect": "Increases the odds of finding rare items in Tree Gifts at Torrhus Canyon by +2%."
+  },
+  {
+   "id": "R84",
+   "key": "ZOMBUDDY",
+   "name": "Zombuddy",
+   "attribute": "Mutation Serendipity",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MUTATION_SERENDIPITY;1",
+   "effect": "Mutations have a +0.1% chance to instantly re-mutate at their first growth phase when harvested."
+  },
+  {
+   "id": "R85",
+   "key": "PUCK",
+   "name": "Puck",
+   "attribute": "Forest Serendipity",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_FOREST_SERENDIPITY;1",
+   "effect": "Grants a +0.1% chance for Tree Gifts to contain double loot."
+  },
+  {
+   "id": "R86",
+   "key": "TROODON",
+   "name": "Troodon",
+   "attribute": "Essence of Fossils",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Dinosaur"
+   ],
+   "item": "ATTRIBUTE_SHARD_ESSENCE_OF_FOSSILS;1",
+   "effect": "Gain +1% more Fossil Essence."
+  },
+  {
+   "id": "R87",
+   "key": "BLACK_WIDOW",
+   "name": "Black Widow",
+   "attribute": "Arthropod Fortune",
+   "rarity": "RARE",
+   "alignment": "Combat",
+   "family": [
+    "Spider",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_ARTHROPOD_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Arthropod mobs."
+  },
+  {
+   "id": "R88",
+   "key": "PANGOLIN",
+   "name": "Pangolin",
+   "attribute": "Atomized Whispers",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ATOMIZED_WHISPERS;1",
+   "effect": "Gain +1% extra Whispers."
+  },
+  {
+   "id": "R89",
+   "key": "GIANT_WATER_BUG",
+   "name": "Giant Water Bug",
+   "attribute": "Aquatic Fortune",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_AQUATIC_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find against Aquatic mobs."
+  },
+  {
+   "id": "R91",
+   "key": "MURKBAT",
+   "name": "Murkbat",
+   "attribute": "Rekindle",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_REKINDLE;1",
+   "effect": "Killing a Bat has a +10% chance to add 1 Bonus Score to your Dungeon Run. Limit of +1 Score per run"
+  },
+  {
+   "id": "R92",
+   "key": "GOLDOLOT",
+   "name": "Goldolot",
+   "attribute": "Echo of Buckets",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Axolotl"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_BUCKETS;1",
+   "effect": "Your \"Bucket\" Attributes are +2% stronger."
+  },
+  {
+   "id": "R94",
+   "key": "RABBIT_NEIGHBOR",
+   "name": "Rabbit Neighbor",
+   "attribute": "Mythic Rabbit Luck",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [
+    "Crime"
+   ],
+   "item": "ATTRIBUTE_SHARD_MYTHIC_RABBIT_LUCK;1",
+   "effect": "Increases your chance of finding MYTHIC Rabbits during Hoppity's Hunt by +1%."
+  },
+  {
+   "id": "R95",
+   "key": "TORRID",
+   "name": "Torrid",
+   "attribute": "First Sweep",
+   "rarity": "RARE",
+   "alignment": "Water",
+   "family": [
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_FIRST_SWEEP;1",
+   "effect": "Your first Sweep on each Tree is +1% more effective."
+  },
+  {
+   "id": "R97",
+   "key": "DRYBARK",
+   "name": "Drybark",
+   "attribute": "Axe Cooldown",
+   "rarity": "RARE",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_AXE_COOLDOWN;1",
+   "effect": "Reduces the cooldown of throwing your Axe by +1%."
+  },
+  {
+   "id": "E1",
+   "key": "TERRA",
+   "name": "Terra",
+   "attribute": "Earth Elemental",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_EARTH_ELEMENTAL;1",
+   "effect": "Grants +2 Health.",
+   "stat": "health",
+   "per_level": 2.0
+  },
+  {
+   "id": "E2",
+   "key": "CRYO",
+   "name": "Cryo",
+   "attribute": "Frost Elemental",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_FROST_ELEMENTAL;1",
+   "effect": "Grants +1 Intelligence.",
+   "stat": "intelligence",
+   "per_level": 1.0
+  },
+  {
+   "id": "E3",
+   "key": "AERO",
+   "name": "Aero",
+   "attribute": "Wind Elemental",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_WIND_ELEMENTAL;1",
+   "effect": "Grants +1 Strength.",
+   "stat": "strength",
+   "per_level": 1.0
+  },
+  {
+   "id": "E4",
+   "key": "PANDARAI",
+   "name": "Pandarai",
+   "attribute": "Foraging Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Panda"
+   ],
+   "item": "ATTRIBUTE_SHARD_FORAGING_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Foraging Wisdom."
+  },
+  {
+   "id": "E5",
+   "key": "LEVIATHAN",
+   "name": "Leviathan",
+   "attribute": "Excellent Karma",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Lizard"
+   ],
+   "item": "ATTRIBUTE_SHARD_EXCELLENT_KARMA;1",
+   "effect": "Grants +1 Hunting Fortune towards EPIC Attributes."
+  },
+  {
+   "id": "E6",
+   "key": "ALLIGATOR",
+   "name": "Alligator",
+   "attribute": "Echo of Resistance",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Croco"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_RESISTANCE;1",
+   "effect": "Your Resistance Attributes are +2% stronger."
+  },
+  {
+   "id": "E7",
+   "key": "FENLORD",
+   "name": "Fenlord",
+   "attribute": "Berry Mogul",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Frog",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_BERRY_MOGUL;1",
+   "effect": "Your Salts last +1% longer."
+  },
+  {
+   "id": "E8",
+   "key": "ABYSSAL_MINER",
+   "name": "Abyssal Miner",
+   "attribute": "Pickaxe Cooldown",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Cave Dweller",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_PICKAXE_COOLDOWN;1",
+   "effect": "Reduces the cooldown of your Pickaxe Ability by +1%."
+  },
+  {
+   "id": "E9",
+   "key": "BASILISK",
+   "name": "Basilisk",
+   "attribute": "Hunter's Suppress",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Serpent"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNTERS_SUPPRESS;1",
+   "effect": "Lassos deplete Stamina +2% faster."
+  },
+  {
+   "id": "E10",
+   "key": "IGUANA",
+   "name": "Iguana",
+   "attribute": "Echo of Atomized",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Reptile",
+    "Scaled"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_ATOMIZED;1",
+   "effect": "Your Atomized Attributes are +2% stronger."
+  },
+  {
+   "id": "E11",
+   "key": "MORAY_EEL",
+   "name": "Moray Eel",
+   "attribute": "Lucky Rod",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Eel",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_LUCKY_ROD;1",
+   "effect": "Fish Treasure Shards are +1% easier to find."
+  },
+  {
+   "id": "E12",
+   "key": "SPECIAL_ZEALOT",
+   "name": "Special Zealot",
+   "attribute": "Special Upgrades",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_SPECIAL_UPGRADES;1",
+   "effect": "Summoning Eyes you drop have a +0.5% chance to be recombobulated. Placing recombobulated Summoning Eyes increases your chance of spawning a Superior Dragon."
+  },
+  {
+   "id": "E13",
+   "key": "LUNAR_MOTH",
+   "name": "Lunar Moth",
+   "attribute": "Lunar Power",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_LUNAR_POWER;1",
+   "effect": "Grants +5 Farming Fortune during the night."
+  },
+  {
+   "id": "E14",
+   "key": "FIRE_EEL",
+   "name": "Fire Eel",
+   "attribute": "Trophy Hunter",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Eel",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_TROPHY_HUNTER;1",
+   "effect": "Grants +2 Trophy Chance."
+  },
+  {
+   "id": "E15",
+   "key": "BAL",
+   "name": "Bal",
+   "attribute": "Deep Technique",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_DEEP_TECHNIQUE;1",
+   "effect": "Each block you mine has a +1% chance to grant 1 extra Pristine for that block."
+  },
+  {
+   "id": "E16",
+   "key": "HIDEONSACK",
+   "name": "Hideonsack",
+   "attribute": "Sack Size",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_SACK_SIZE;1",
+   "effect": "Your sacks can hold +1% more items."
+  },
+  {
+   "id": "E17",
+   "key": "WATER_HYDRA",
+   "name": "Water Hydra",
+   "attribute": "Fishing Speed",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FISHING_SPEED;1",
+   "effect": "Grants +3 Fishing Speed.",
+   "stat": "fishing_speed",
+   "per_level": 3.0
+  },
+  {
+   "id": "E18",
+   "key": "FLARE",
+   "name": "Flare",
+   "attribute": "Infernal Ruler",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BLAZING;1",
+   "effect": "Grants +3% more Damage against Infernal mobs."
+  },
+  {
+   "id": "E19",
+   "key": "MURDERWING",
+   "name": "Murderwing",
+   "attribute": "Sky High",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Phantom"
+   ],
+   "item": "ATTRIBUTE_SHARD_SKY_HIGH;1",
+   "effect": "Increases the distance you can fall before taking fall damage by +0.5 blocks."
+  },
+  {
+   "id": "E20",
+   "key": "SEA_EMPEROR",
+   "name": "Loch Emperor",
+   "attribute": "Sea Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FISHING_EXPERIENCE;1",
+   "effect": "Grants +0.5 ☯ Fishing Wisdom."
+  },
+  {
+   "id": "E21",
+   "key": "PRINCE",
+   "name": "Prince",
+   "attribute": "Reborn",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_REBORN;1",
+   "effect": "Killing a Prince has a +10% chance to add 1 Bonus Score to your Dungeon Run. Limit of +1 Score per run"
+  },
+  {
+   "id": "E22",
+   "key": "KOMODO_DRAGON",
+   "name": "Komodo Dragon",
+   "attribute": "Echo of Essence",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Reptile",
+    "Scaled"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_ESSENCE;1",
+   "effect": "Your Essence Attributes are +2% stronger."
+  },
+  {
+   "id": "E23",
+   "key": "BLUE_CRAB",
+   "name": "Blue Crab",
+   "attribute": "Outstanding Fisher",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Crustacean"
+   ],
+   "item": "ATTRIBUTE_SHARD_OUTSTANDING_FISHER;1",
+   "effect": "Treasure catches are +1% more likely to be OUTSTANDING."
+  },
+  {
+   "id": "E24",
+   "key": "MIMIC",
+   "name": "Mimic",
+   "attribute": "Faker",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Elusive",
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_FAKER;1",
+   "effect": "Dungeon Blessings are +1% stronger on you."
+  },
+  {
+   "id": "E25",
+   "key": "WOLVERINE",
+   "name": "Wolverine",
+   "attribute": "Slayer Progress",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_SLAYER_PROGRESS;1",
+   "effect": "Slayer Quests start +1% complete."
+  },
+  {
+   "id": "E26",
+   "key": "SHELLWISE",
+   "name": "Shellwise",
+   "attribute": "Shell",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Turtle"
+   ],
+   "item": "ATTRIBUTE_SHARD_SHELL;1",
+   "effect": "Gain a +10% chance to negate knockback."
+  },
+  {
+   "id": "E27",
+   "key": "BARBARIAN_DUKE_X",
+   "name": "Barbarian Duke X",
+   "attribute": "Warrior",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_WARRIOR;1",
+   "effect": "Increases melee damage dealt by +2.5%."
+  },
+  {
+   "id": "E28",
+   "key": "TOUCAN",
+   "name": "Toucan",
+   "attribute": "Why Not More",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_WHY_NOT_MORE;1",
+   "effect": "Your pet's EXP Share grants +1% more EXP."
+  },
+  {
+   "id": "E30",
+   "key": "CAIMAN",
+   "name": "Caiman",
+   "attribute": "Echo of Ruler",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Croco"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_RULER;1",
+   "effect": "Your Ruler Attributes are +2% stronger."
+  },
+  {
+   "id": "E31",
+   "key": "FIREFLY",
+   "name": "Firefly",
+   "attribute": "Solar Power",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_SOLAR_POWER;1",
+   "effect": "Grants +5 Farming Fortune during the day."
+  },
+  {
+   "id": "E32",
+   "key": "SEA_SERPENT",
+   "name": "Sea Serpent",
+   "attribute": "Echo of Hunter",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_HUNTER;1",
+   "effect": "Your Hunter Attributes are +2% stronger."
+  },
+  {
+   "id": "E33",
+   "key": "GHOST",
+   "name": "Ghost",
+   "attribute": "Veil",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_VEIL;1",
+   "effect": "Grants +1 True Defense.",
+   "stat": "true_defense",
+   "per_level": 1.0
+  },
+  {
+   "id": "E34",
+   "key": "XYZ",
+   "name": "XYZ",
+   "attribute": "Mana Regeneration",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MANA_REGENERATION;1",
+   "effect": "Increases your Mana regeneration by +1%."
+  },
+  {
+   "id": "E35",
+   "key": "LEATHERBACK",
+   "name": "Leatherback",
+   "attribute": "Hunt Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Turtle"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNT_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Hunting Wisdom."
+  },
+  {
+   "id": "E36",
+   "key": "CAVERNSHADE",
+   "name": "Cavernshade",
+   "attribute": "Cavern Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_CAVERN_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Mining Wisdom."
+  },
+  {
+   "id": "E37",
+   "key": "DRAGONFLY",
+   "name": "Dragonfly",
+   "attribute": "Garden Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_GARDEN_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Farming Wisdom."
+  },
+  {
+   "id": "E39",
+   "key": "SPHINX",
+   "name": "Sphinx",
+   "attribute": "Mythological Tracker",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BIG_GAME_HUNTER;1",
+   "effect": "Grants +0.5 Tracking on Griffin Burrows."
+  },
+  {
+   "id": "E42",
+   "key": "KING_MINOS",
+   "name": "King Minos",
+   "attribute": "King of Greed",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_KING_OF_GREED;1",
+   "effect": "Increases Coin gain from Griffin Burrows by +2.5%."
+  },
+  {
+   "id": "E43",
+   "key": "DIVE_GHAST",
+   "name": "Dive Ghast",
+   "attribute": "Ghastly Distraction",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_GHASTLY_DISTRACTION;1",
+   "effect": "Pacifies enemies for +1s after mining Opal Gemstones in the Smoldering Tomb. Does not work on Slayer Bosses, Slayer Minibosses. Attacking an enemy ends effect early."
+  },
+  {
+   "id": "E44",
+   "key": "SILKBREEZE",
+   "name": "Silkbreeze",
+   "attribute": "Forager's Fortune",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FORAGERS_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find while on Foraging Islands."
+  },
+  {
+   "id": "E45",
+   "key": "GEMZIE",
+   "name": "Gemzie",
+   "attribute": "Devouring Spread",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_DEVOURING_SPREAD;1",
+   "effect": "Grants +0.25 Gemstone Spread."
+  },
+  {
+   "id": "E46",
+   "key": "RABBIT_GODMOTHER",
+   "name": "Rabbit Godmother",
+   "attribute": "Divine Rabbit Luck",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Crime"
+   ],
+   "item": "ATTRIBUTE_SHARD_DIVINE_RABBIT_LUCK;1",
+   "effect": "Increases your chance of finding DIVINE Rabbits during Hoppity's Hunt by +1%."
+  },
+  {
+   "id": "E47",
+   "key": "GIANT_ISOPOD",
+   "name": "Giant Isopod",
+   "attribute": "Fisher's Fortune",
+   "rarity": "EPIC",
+   "alignment": "Water",
+   "family": [
+    "Crustacean",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_FISHERS_FORTUNE;1",
+   "effect": "Grants +0.5 Magic Find while on Fishing Islands."
+  },
+  {
+   "id": "E48",
+   "key": "BURNINGSOUL",
+   "name": "Inferno Demonlord",
+   "attribute": "Attack Speed",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_ATTACK_SPEED;1",
+   "effect": "Grants +1 Attack Speed.",
+   "stat": "bonus_attack_speed",
+   "per_level": 1.0
+  },
+  {
+   "id": "E49",
+   "key": "QUEEN_BEE",
+   "name": "Queen Bee",
+   "attribute": "Honey Refill",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_HONEY_REFILL;1",
+   "effect": "Honeyhives have a +0.5% chance to refill instantly."
+  },
+  {
+   "id": "E51",
+   "key": "BONZO",
+   "name": "Bonzo",
+   "attribute": "Catacombs Explorer",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_CATACOMBS_EXPLORER;1",
+   "effect": "Grants +1% more Catacombs XP."
+  },
+  {
+   "id": "E52",
+   "key": "BEEHEEMOTH",
+   "name": "Beeheemoth",
+   "attribute": "Lathering Greed",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [
+    "Bug",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_LATHERING_GREED;1",
+   "effect": "Gain +10% more Honeycomb from hunting mobs spawned from Trees lathered with Honeycomb."
+  },
+  {
+   "id": "E54",
+   "key": "SCARF",
+   "name": "Scarf",
+   "attribute": "Catacombs Graduate",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_CATACOMBS_GRADUATE;1",
+   "effect": "Gain +2% more Dungeons class experience."
+  },
+  {
+   "id": "E57",
+   "key": "THORN",
+   "name": "Thorn",
+   "attribute": "Dominance",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_DOMINANCE;1",
+   "effect": "Gain +1.5% more Damage when at full health."
+  },
+  {
+   "id": "E58",
+   "key": "MOUNTAIN_GOAT",
+   "name": "Mountain Goat",
+   "attribute": "Social Wisdom",
+   "rarity": "EPIC",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SOCIAL_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Social Wisdom."
+  },
+  {
+   "id": "E60",
+   "key": "SCATHA",
+   "name": "Scatha",
+   "attribute": "Glossy Fortune",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_GLOSSY_FORTUNE;1",
+   "effect": "Increases your chance of finding Glossy Gemstones during Mining Fiestas by +1%. Effects are doubled if you have a Fiesta Flask active!"
+  },
+  {
+   "id": "E63",
+   "key": "NILBOG",
+   "name": "Nilbog",
+   "attribute": "Royal Riches",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Poltergeist",
+    "Cave Dweller"
+   ],
+   "item": "ATTRIBUTE_SHARD_ROYAL_RICHES;1",
+   "effect": "Grants +5 Mining Speed and +2.5 Ore Fortune while in the Mines of Divan."
+  },
+  {
+   "id": "E66",
+   "key": "LITTLEFOOT",
+   "name": "Littlefoot",
+   "attribute": "Freezing Spread",
+   "rarity": "EPIC",
+   "alignment": "Combat",
+   "family": [
+    "Arctic"
+   ],
+   "item": "ATTRIBUTE_SHARD_FREEZING_SPREAD;1",
+   "effect": "Grants +0.5 Gemstone Spread for every +29 Cold Resistance you have while in the Glacite Mineshafts."
+  },
+  {
+   "id": "L1",
+   "key": "TENEBRIS",
+   "name": "Tenebris",
+   "attribute": "Shadow Elemental",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_SHADOW_ELEMENTAL;1",
+   "effect": "Grants +2 Health.",
+   "stat": "health",
+   "per_level": 2.0
+  },
+  {
+   "id": "L2",
+   "key": "BLIZZARD",
+   "name": "Blizzard",
+   "attribute": "Snow Elemental",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_SNOW_ELEMENTAL;1",
+   "effect": "Grants +1 Intelligence.",
+   "stat": "intelligence",
+   "per_level": 1.0
+  },
+  {
+   "id": "L3",
+   "key": "TEMPEST",
+   "name": "Tempest",
+   "attribute": "Storm Elemental",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_STORM_ELEMENTAL;1",
+   "effect": "Grants +1 Strength.",
+   "stat": "strength",
+   "per_level": 1.0
+  },
+  {
+   "id": "L4",
+   "key": "CHAMELEON",
+   "name": "Chameleon",
+   "attribute": "Reptiloid",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Reptile"
+   ],
+   "item": "ATTRIBUTE_SHARD_REPTILOID;1",
+   "effect": "Fusing a Chameleon with a Shard grants the next 3 Shards from that Shard's ID line as a result."
+  },
+  {
+   "id": "L5",
+   "key": "NESSIE",
+   "name": "Nessie",
+   "attribute": "Loch Hook",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Reptile"
+   ],
+   "item": "ATTRIBUTE_SHARD_LOCH_HOOK;1",
+   "effect": "Grants +0.5 Double Hook Chance while on Foraging Islands."
+  },
+  {
+   "id": "L6",
+   "key": "TIAMAT",
+   "name": "Tiamat",
+   "attribute": "Echo of Echoes",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Reptile",
+    "Croco"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_ECHOES;1",
+   "effect": "Your \"Echo\" Attributes are +5% stronger."
+  },
+  {
+   "id": "L7",
+   "key": "WYVERN",
+   "name": "Wyvern",
+   "attribute": "Echo of Wisdom",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Reptile",
+    "Scaled"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_WISDOM;1",
+   "effect": "Your Wisdom Attributes are +2% stronger."
+  },
+  {
+   "id": "L8",
+   "key": "TORTOISE",
+   "name": "Tortoise",
+   "attribute": "Cloak Improvement",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Turtle"
+   ],
+   "item": "ATTRIBUTE_SHARD_CLOAK_IMPROVEMENT;1",
+   "effect": "Your David's Cloak gains +1 True Defense."
+  },
+  {
+   "id": "L9",
+   "key": "ENDSTONE_PROTECTOR",
+   "name": "End Stone Protector",
+   "attribute": "Unlimited Fortitude",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FORTITUDE;1",
+   "effect": "Your Defense is increased by +0.2%."
+  },
+  {
+   "id": "L10",
+   "key": "RABBIT_GODFATHER",
+   "name": "Rabbit Godfather",
+   "attribute": "Egg Finder",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Crime"
+   ],
+   "item": "ATTRIBUTE_SHARD_EGG_FINDER;1",
+   "effect": "Finds a Hitman Egg every 750s during Hoppity's Hunt."
+  },
+  {
+   "id": "L11",
+   "key": "NAGA",
+   "name": "Naga",
+   "attribute": "Charmed",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Eel",
+    "Amphibian"
+   ],
+   "item": "ATTRIBUTE_SHARD_CHARMED;1",
+   "effect": "Grants +0.05 ❣ Charm Chance."
+  },
+  {
+   "id": "L12",
+   "key": "LAPIS_CREEPER",
+   "name": "Lapis Creeper",
+   "attribute": "Book Wisdom",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Lapis"
+   ],
+   "item": "ATTRIBUTE_SHARD_BOOK_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Enchanting Wisdom."
+  },
+  {
+   "id": "L13",
+   "key": "WARTYBUG",
+   "name": "Wartybug",
+   "attribute": "Wart Eater",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_WART_EATER;1",
+   "effect": "Grants a +0.01% chance to obtain a Warty when breaking Nether Warts."
+  },
+  {
+   "id": "L14",
+   "key": "SPIKE",
+   "name": "Spike",
+   "attribute": "Payback",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_PAYBACK;1",
+   "effect": "When hit, your next hit deals +2% damage"
+  },
+  {
+   "id": "L15",
+   "key": "KRAKEN",
+   "name": "Kraken",
+   "attribute": "Vitality",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_MENDING;1",
+   "effect": "Grants +1 Vitality.",
+   "stat": "vitality",
+   "per_level": 1.0
+  },
+  {
+   "id": "L17",
+   "key": "TAURUS",
+   "name": "Taurus",
+   "attribute": "Unlimited Torment",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MAXIMAL_TORMENT;1",
+   "effect": "Your Intelligence is increased by +0.1%."
+  },
+  {
+   "id": "L18",
+   "key": "DAEMON",
+   "name": "Daemon",
+   "attribute": "Pity",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_PITY;1",
+   "effect": "Your RNG Meter fills +1% faster."
+  },
+  {
+   "id": "L20",
+   "key": "MOLTENFISH",
+   "name": "Moltenfish",
+   "attribute": "Star Bait",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_STAR_BAIT;1",
+   "effect": "Grants a +0.1% chance to fish a Shinyfish."
+  },
+  {
+   "id": "L21",
+   "key": "DOOMSPIRAL",
+   "name": "Doomspiral",
+   "attribute": "Echo of Tracking",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon",
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_TRACKING;1",
+   "effect": "Your \"Tracker\" Attributes are +2% stronger."
+  },
+  {
+   "id": "L22",
+   "key": "MACAW",
+   "name": "Macaw",
+   "attribute": "Splendor",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_SPLENDOR;1",
+   "effect": "Grants a +2.5% chance to get a bonus Rainbow Feather when hunting a SPARKLING Critter in the Critter Safari."
+  },
+  {
+   "id": "L23",
+   "key": "SHINYFISH",
+   "name": "Shinyfish",
+   "attribute": "Help From Above",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_LIFE_REGENERATION;1",
+   "effect": "Grants +1.25 Health Regen.",
+   "stat": "health_regen",
+   "per_level": 1.25
+  },
+  {
+   "id": "L24",
+   "key": "ANANKE",
+   "name": "Ananke",
+   "attribute": "Wings of Destiny",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon",
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_WINGS_OF_DESTINY;1",
+   "effect": "Increases the odds of finding Ananke Feathers by +2%."
+  },
+  {
+   "id": "L25",
+   "key": "HIDEONBOX",
+   "name": "Hideonbox",
+   "attribute": "Tuning Box",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Shulker"
+   ],
+   "item": "ATTRIBUTE_SHARD_TUNING_BOX;1",
+   "effect": "Grants +1 Tuning Points."
+  },
+  {
+   "id": "L26",
+   "key": "LORD_JAWBUS",
+   "name": "Lord Jawbus",
+   "attribute": "Crimson Hook",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Creation",
+    "Elusive"
+   ],
+   "item": "ATTRIBUTE_SHARD_DOUBLE_HOOK;1",
+   "effect": "Grants +0.5 Double Hook Chance while on Combat Islands."
+  },
+  {
+   "id": "L27",
+   "key": "HELLWISP",
+   "name": "Hellwisp",
+   "attribute": "Matriarch Cubs",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon"
+   ],
+   "item": "ATTRIBUTE_SHARD_MATRIARCH_CUBS;1",
+   "effect": "Grants a +2% chance to get a second Heavy Pearl."
+  },
+  {
+   "id": "L28",
+   "key": "CINDER_BAT",
+   "name": "Cinderbat",
+   "attribute": "Magic Find",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_MAGIC_FIND;1",
+   "effect": "Grants +0.5 Magic Find.",
+   "stat": "magic_find",
+   "per_level": 0.5
+  },
+  {
+   "id": "L29",
+   "key": "MEGALITH",
+   "name": "Megalith",
+   "attribute": "Hunter's Karma",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Reptile",
+    "Turtle"
+   ],
+   "item": "ATTRIBUTE_SHARD_HUNTER_KARMA;1",
+   "effect": "Grants +1 Hunting Fortune.",
+   "stat": "hunting_fortune",
+   "per_level": 1.0
+  },
+  {
+   "id": "L30",
+   "key": "POWER_DRAGON",
+   "name": "Power Dragon",
+   "attribute": "Elite",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_ELITE;1",
+   "effect": "Grants +3% more Damage against bosses and mini-bosses."
+  },
+  {
+   "id": "L31",
+   "key": "CONDOR",
+   "name": "Condor",
+   "attribute": "Pet Wisdom",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_PET_WISDOM;1",
+   "effect": "Grants +0.5 ☯ Taming Wisdom."
+  },
+  {
+   "id": "L32",
+   "key": "SUN_FISH",
+   "name": "Sun Fish",
+   "attribute": "Starborn",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_STARBORN;1",
+   "effect": "The effect of Starborn Temples is +1% stronger on you."
+  },
+  {
+   "id": "L33",
+   "key": "APEX_DRAGON",
+   "name": "Apex Dragon",
+   "attribute": "Veteran",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_VETERAN;1",
+   "effect": "Grants +1 ☯ Combat Wisdom."
+  },
+  {
+   "id": "L34",
+   "key": "DODO",
+   "name": "Dodo",
+   "attribute": "Tracking",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Bird"
+   ],
+   "item": "ATTRIBUTE_SHARD_RARE_BIRD;1",
+   "effect": "Grants +0.5 Tracking."
+  },
+  {
+   "id": "L35",
+   "key": "QUEEN_SNAKE",
+   "name": "Queen Snake",
+   "attribute": "Queenly Echo",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_QUEENLY_ECHO;1",
+   "effect": "Your \"Visitor\" Attributes are +5% stronger."
+  },
+  {
+   "id": "L36",
+   "key": "JORMUNG",
+   "name": "Jormung",
+   "attribute": "Unlimited Power",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon",
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_UNLIMITED_POWER;1",
+   "effect": "Your Strength is increased by +0.1%."
+  },
+  {
+   "id": "L38",
+   "key": "GHOST_CRAB",
+   "name": "Ghost Crab",
+   "attribute": "Treasure Fisher",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Crustacean"
+   ],
+   "item": "ATTRIBUTE_SHARD_TREASURE_FISHER;1",
+   "effect": "Grants +0.1 Treasure Chance."
+  },
+  {
+   "id": "L39",
+   "key": "ETHERDRAKE",
+   "name": "Etherdrake",
+   "attribute": "Unlimited Energy",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon",
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_UNLIMITED_ENERGY;1",
+   "effect": "Your Crit Damage is increased by +0.1%."
+  },
+  {
+   "id": "L40",
+   "key": "GRIZZLY_BEAR",
+   "name": "Grizzly Bear",
+   "attribute": "Tough Claws",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_TOUGH_CLAWS;1",
+   "effect": "Whenever you cut a Tree with an Axe, reduce its Toughness by +0.1."
+  },
+  {
+   "id": "L41",
+   "key": "GALAXY_FISH",
+   "name": "Galaxy Fish",
+   "attribute": "Ultimate DNA",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_ULTIMATE_DNA;1",
+   "effect": "Grants +1 Mining Fortune, Farming Fortune, and Foraging Fortune."
+  },
+  {
+   "id": "L42",
+   "key": "MOLTHORN",
+   "name": "Molthorn",
+   "attribute": "Almighty Echo",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Demon",
+    "Dragon"
+   ],
+   "item": "ATTRIBUTE_SHARD_ALMIGHTY;1",
+   "effect": "Your \"Unlimited\" Attributes are +5% stronger."
+  },
+  {
+   "id": "L44",
+   "key": "STARBORN",
+   "name": "Starborn",
+   "attribute": "Echo of Elemental",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [
+    "Elemental"
+   ],
+   "item": "ATTRIBUTE_SHARD_ECHO_OF_ELEMENTAL;1",
+   "effect": "Buffs all other shards in the Elemental Family by +2%."
+  },
+  {
+   "id": "L45",
+   "key": "PRIMORDIAL",
+   "name": "Primordial",
+   "attribute": "Cocoon Chance",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Spider"
+   ],
+   "item": "ATTRIBUTE_SHARD_COCOON_CHANCE;1",
+   "effect": "Increases the chance of The Primordial cocooning Slayer Bosses and Slayer Minibosses by +0.5%."
+  },
+  {
+   "id": "L46",
+   "key": "COCOALEECH",
+   "name": "Cocoaleech",
+   "attribute": "Groovy Radar",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_GROOVY_RADAR;1",
+   "effect": "Pests have a +2.5% chance to drop a second Vinyl."
+  },
+  {
+   "id": "L47",
+   "key": "TITANOBOA",
+   "name": "Titanoboa",
+   "attribute": "Bayou Hook",
+   "rarity": "LEGENDARY",
+   "alignment": "Water",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_BAYOU_BITER;1",
+   "effect": "Grants +0.5 Double Hook Chance while on Fishing Islands."
+  },
+  {
+   "id": "L49",
+   "key": "",
+   "name": "Rainbug",
+   "attribute": "Miracle Chance",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [
+    "Miracle",
+    "Bug"
+   ],
+   "item": "ATTRIBUTE_SHARD_MIRACLE_CHANCE;1",
+   "effect": "Increases your chance of finding Dyes by +0.1%."
+  },
+  {
+   "id": "L52",
+   "key": "FLORA",
+   "name": "Flora",
+   "attribute": "Unique Bonus",
+   "rarity": "LEGENDARY",
+   "alignment": "Forest",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_FLORA;1",
+   "effect": "Counts as +1 towards the Unique Crop Bonus in your Greenhouse."
+  },
+  {
+   "id": "L54",
+   "key": "PARAGON",
+   "name": "Paragon",
+   "attribute": "Slayer Discount",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [],
+   "item": "ATTRIBUTE_SHARD_SLAYER_DISCOUNT;1",
+   "effect": "Grants a +0.5% discount on starting Slayer Quests."
+  },
+  {
+   "id": "L57",
+   "key": "TIMESTALK_CLONE",
+   "name": "Timestalk Clone",
+   "attribute": "Greenhouse Speed",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Poltergeist"
+   ],
+   "item": "ATTRIBUTE_SHARD_GREENHOUSE_SPEED;1",
+   "effect": "Grants +0.1% Growth Speed in your Greenhouse."
+  },
+  {
+   "id": "L60",
+   "key": "WUMPA",
+   "name": "Wumpa",
+   "attribute": "Cold Resistance",
+   "rarity": "LEGENDARY",
+   "alignment": "Combat",
+   "family": [
+    "Arctic"
+   ],
+   "item": "ATTRIBUTE_SHARD_COLD_RESISTANCE;1",
+   "effect": "Grants +0.5 Cold Resistance.",
+   "stat": "cold_resistance",
+   "per_level": 0.5
+  }
+ ]
+}

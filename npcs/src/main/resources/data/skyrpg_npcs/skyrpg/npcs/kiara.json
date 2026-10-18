@@ -1,0 +1,26 @@
+{
+  "name": "Kiara",
+  "role": "Stall",
+  "color": "#FFFF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    10.5,
+    69.0,
+    -31.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Fresh from the Reaches!",
+    "Fresh-ish."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Kiara"
+    }
+  }
+}

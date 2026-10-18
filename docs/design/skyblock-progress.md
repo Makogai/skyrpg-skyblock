@@ -666,7 +666,15 @@ phase so the next session can pick up where this one stopped.
       the rabbit and carrots), the Rift Necklace's stats, Shen's Auctions.
 - [ ] The Rift, part 8: the Rift Gallery (done: `Gallery`, `rift_gallery.py`); still the Living Metal snakes, the
       Wizardman Trials, the Eleanors' outfit puzzles, Detective Amog, Kloon, Okron, Seraphine and the remaining souls.
-- [ ] Galatea and Hunting, Backwater Bayou.
+- [x] **Galatea, part 1** (`galatea/`, `galatea_north.py`, `galatea_south.py`, design in `galatea.md`): Moonglade
+      Marsh in its own dimension (Tangleburg, the Evergreen Plateau, the Reaches, the Forest Temple, the Dragon's Lair,
+      Murkwater Loch, Shallows and Outpost, the Wetlands, the Squid Cave, SwampCut Inc.), the Park's Foraging XII pad,
+      Fig and Mangrove trees (toughness, Sweep, cutting order, Tree Gifts by share, regrowth), the Hunting skill and its
+      stats (Hunting Fortune, Charm Chance, Hunting Wisdom), all 325 shards from NEU, the Hunting Box and attributes,
+      30 critters with the lasso and the fishing net, Charm Chance on mob kills, Galatea's NPCs and the Galatea theme.
+- [ ] Galatea, part 2: Rosemary's Forest Essence shop and perks, Agatha's Starlyn contests, the Heart of the Forest,
+      Kysha's fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple, the Jade Dragon; then Torrhus.
+- [ ] Backwater Bayou.
 
 ### Owner directions (2026-10-16)
 

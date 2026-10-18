@@ -1,0 +1,26 @@
+{
+  "name": "Oden",
+  "role": "Library",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    -22.5,
+    69.0,
+    -62.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.book.page_turn",
+  "greetings": [
+    "Every shard has a story.",
+    "Read before you fuse."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Oden"
+    }
+  }
+}

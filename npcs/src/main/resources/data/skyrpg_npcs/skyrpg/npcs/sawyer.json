@@ -1,0 +1,26 @@
+{
+  "name": "Sawyer",
+  "role": "Lumber yard",
+  "color": "#AA5500",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    -28.5,
+    69.0,
+    -19.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:item.axe.strip",
+  "greetings": [
+    "Fig, Mangrove, I cut it all.",
+    "Want to cut faster? I've got just the thing."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Sawyer"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Hina",
+  "role": "Tangleburg",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    -6.5,
+    69.0,
+    -39.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:block.azalea_leaves.place",
+  "greetings": [
+    "Welcome to Galatea!",
+    "Tangleburg is the only dry town for miles."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Hina"
+    }
+  }
+}

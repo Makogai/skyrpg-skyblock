@@ -26,7 +26,9 @@ public enum ScreenTheme {
     /** Enchanting, experiments, brewing, Maxwell: indigo with gold filigree, a rune divider, lapis buttons. */
     MAGIC("magic", 0xFFE8C35A, 0xFFEEE8FF, 0xFFA99CC9, 0xFF6B6088, 0xFFB98CFF, 0xFF0B0814, 10),
     /** Fishing: driftwood and rope, a wave divider, prismarine buttons. */
-    FISHING("fishing", 0xFF5CA8FF, 0xFFE4F1FA, 0xFF93AFC4, 0xFF56708A, 0xFF5CA8FF, 0xFF070D13, 10);
+    FISHING("fishing", 0xFF5CA8FF, 0xFFE4F1FA, 0xFF93AFC4, 0xFF56708A, 0xFF5CA8FF, 0xFF070D13, 10),
+    /** Galatea (foraging and hunting): mossy fig bark with vines, a moonlit vine divider, mossy plank buttons. */
+    GALATEA("galatea", 0xFF7FE0B4, 0xFFE6F2EA, 0xFF9DB5A6, 0xFF61786A, 0xFF9BE07A, 0xFF08100B, 10);
 
     private final String sprites;
     public final int accent;

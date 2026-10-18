@@ -28,6 +28,11 @@ public final class Msg {
         if (value == Math.rint(value) && Math.abs(value) < 1e15) {
             return number((long) value);
         }
+        if (Math.abs(value) < 1) {
+            // small fractions keep a second decimal: 0.04, not 0.0
+            String two = String.format(Locale.ROOT, "%.2f", value);
+            return two.endsWith("0") ? two.substring(0, two.length() - 1) : two;
+        }
         return String.format(Locale.ROOT, "%,.1f", value);
     }
 

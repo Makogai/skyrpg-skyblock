@@ -86,6 +86,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.crimson.CrimsonIsle.init();
         com.skyrpg.skyblock.garden.Garden.init();
         com.skyrpg.skyblock.rift.Rift.init();
+        com.skyrpg.skyblock.galatea.Galatea.init();
         com.skyrpg.skyblock.glacite.GlaciteTunnels.init();
         Recipes.init();
         Crafting.init();

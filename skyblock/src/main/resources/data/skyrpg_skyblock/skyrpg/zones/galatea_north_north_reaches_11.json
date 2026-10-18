@@ -1,0 +1,38 @@
+{
+  "name": "North Reaches",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    46,
+    0,
+    -72
+  ],
+  "to": [
+    149,
+    200,
+    -1
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:bogged",
+      "name": "Bogged",
+      "level": 40,
+      "health": 10000,
+      "damage": 600,
+      "xp": 30,
+      "coins": 25,
+      "max": 4,
+      "every": 8,
+      "from": [
+        84,
+        64,
+        -40
+      ],
+      "to": [
+        128,
+        86,
+        -6
+      ],
+      "indoors": true
+    }
+  ]
+}

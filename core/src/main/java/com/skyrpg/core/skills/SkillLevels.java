@@ -21,6 +21,7 @@ public final class SkillLevels {
     public static final Identifier FORAGING = Identifier.fromNamespaceAndPath("skyrpg_skills", "foraging");
     public static final Identifier FISHING = Identifier.fromNamespaceAndPath("skyrpg_skills", "fishing");
     public static final Identifier TAMING = Identifier.fromNamespaceAndPath("skyrpg_skills", "taming");
+    public static final Identifier HUNTING = Identifier.fromNamespaceAndPath("skyrpg_skills", "hunting");
     public static final Identifier CARPENTRY = Identifier.fromNamespaceAndPath("skyrpg_skills", "carpentry");
 
     /**

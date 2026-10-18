@@ -1,0 +1,26 @@
+{
+  "name": "Jaeger",
+  "role": "Fishing nets",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    22.5,
+    69.0,
+    -27.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.fishing_bobber.splash",
+  "greetings": [
+    "Look at a fish, swing the net.",
+    "The Loch is full of them."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Jaeger"
+    }
+  }
+}

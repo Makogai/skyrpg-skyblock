@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/galatea_south",
+  "origin": [
+    -150,
+    0,
+    0
+  ],
+  "version": 2,
+  "dimension": "skyrpg_skyblock:galatea",
+  "island": "Galatea"
+}

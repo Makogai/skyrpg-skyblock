@@ -1,0 +1,23 @@
+{
+  "name": "Banker Bonsai",
+  "role": "Tangleburg Bank",
+  "color": "#FFAA00",
+  "hint": "Bank",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    17.5,
+    69.0,
+    -63.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.experience_orb.pickup",
+  "greetings": [
+    "Your coins are safe here.",
+    "Even in a swamp."
+  ],
+  "action": {
+    "type": "open_bank"
+  }
+}

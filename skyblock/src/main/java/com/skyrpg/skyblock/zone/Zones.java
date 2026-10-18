@@ -291,7 +291,7 @@ public final class Zones {
             }
             AABB box = spawn.box() != null ? spawn.box() : zone.box();
             for (int attempt = 0; attempt < 8; attempt++) {
-                BlockPos spot = standingSpot(level, box, random, spawn.indoors());
+                BlockPos spot = swims(spawn.type()) ? waterSpot(level, box, random) : standingSpot(level, box, random, spawn.indoors());
                 if (spot == null) {
                     continue;
                 }
@@ -324,6 +324,25 @@ public final class Zones {
             if (level.getBlockState(feet).isAir() && level.getBlockState(feet.above()).isAir()
                     && level.getBlockState(below).isFaceSturdy(level, below, net.minecraft.core.Direction.UP)) {
                 return indoors || level.canSeeSky(feet) ? feet : null;
+            }
+        }
+        return null;
+    }
+
+    private static boolean swims(EntityType<?> type) {
+        var category = type.getCategory();
+        return category == net.minecraft.world.entity.MobCategory.WATER_CREATURE || category == net.minecraft.world.entity.MobCategory.UNDERGROUND_WATER_CREATURE
+                || category == net.minecraft.world.entity.MobCategory.WATER_AMBIENT || category == net.minecraft.world.entity.MobCategory.AXOLOTLS;
+    }
+
+    /** For a water mob (squids, fish): a random column's lowest spot with water above it, in a pool, a lake or a cave. */
+    private static BlockPos waterSpot(ServerLevel level, AABB box, RandomSource random) {
+        int x = (int) Math.floor(box.minX + random.nextDouble() * box.getXsize());
+        int z = (int) Math.floor(box.minZ + random.nextDouble() * box.getZsize());
+        for (int y = (int) box.minY + 1; y < (int) box.maxY; y++) {
+            BlockPos at = new BlockPos(x, y, z);
+            if (level.getFluidState(at).isSource() && level.getFluidState(at.above()).isSource()) {
+                return at;
             }
         }
         return null;

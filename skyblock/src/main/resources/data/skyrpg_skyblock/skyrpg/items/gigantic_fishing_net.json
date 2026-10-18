@@ -1,6 +1,6 @@
 {
  "skyblock_id": "GIGANTIC_FISHING_NET",
- "base": "minecraft:paper",
+ "base": "minecraft:cobweb",
  "name": "Gigantic Fishing Net",
  "rarity": "legendary",
  "category": "FISHING_NET",

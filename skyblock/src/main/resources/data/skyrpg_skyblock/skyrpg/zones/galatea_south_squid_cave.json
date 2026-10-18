@@ -1,0 +1,38 @@
+{
+  "name": "Squid Cave",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    -118,
+    8,
+    132
+  ],
+  "to": [
+    -76,
+    150,
+    159
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:glow_squid",
+      "name": "Lumisquid",
+      "level": 10,
+      "health": 500,
+      "damage": 0,
+      "xp": 5,
+      "coins": 5,
+      "max": 6,
+      "every": 6,
+      "from": [
+        -109,
+        57,
+        139
+      ],
+      "to": [
+        -85,
+        64,
+        149
+      ],
+      "indoors": true
+    }
+  ]
+}

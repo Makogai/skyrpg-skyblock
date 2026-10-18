@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/galatea_north",
+  "origin": [
+    -150,
+    0,
+    -160
+  ],
+  "version": 2,
+  "dimension": "skyrpg_skyblock:galatea",
+  "island": "Galatea",
+  "arrival": {
+    "pos": [
+      0.5,
+      69.0,
+      -39.5
+    ],
+    "yaw": 180.0
+  }
+}

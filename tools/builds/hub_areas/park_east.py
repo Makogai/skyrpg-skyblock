@@ -10,7 +10,7 @@ from kit import Area, hash01
 
 G = 64
 AIR = (None, "minecraft:air")
-area = Area("park_east", (0, 20, -150), (260, 120, 300), version=1, dimension="skyrpg_skyblock:the_park", island="The Park")
+area = Area("park_east", (0, 20, -150), (260, 120, 300), version=2, dimension="skyrpg_skyblock:the_park", island="The Park")
 
 # ---------------------------------------------------------------- the three islands
 TC, TR = (75, 45), 50       # Dark Thicket
@@ -299,6 +299,29 @@ area.set(jx - 3, G + 1, jz, "minecraft:jungle_stairs[facing=east,half=bottom]")
 area.set(jx + 3, G + 1, jz, "minecraft:jungle_stairs[facing=west,half=bottom]")
 area.npc("Molbert", jx - 2, G + 1, jz + 2, yaw=-135.0, note="by the jungle camp's fire")
 area.npc("Juliette", jx + 2, G + 1, jz + 2, yaw=135.0, note="across the fire from Molbert")
+
+# ---------------------------------------------------------------- the launch pad to Galatea (Foraging 12), east of the fire
+GX, GZ = jx + 8, jz
+NO_TREE.append((GX, GZ, 9))
+area.flatten(GX - 4, GZ - 5, GX + 4, GZ + 5, G, "minecraft:grass_block")
+for x in range(GX - 4, GX + 5):
+    for z in range(GZ - 5, GZ + 6):
+        for y in range(G + 1, G + 9):
+            area.set(x, y, z, "minecraft:air")
+for dx in range(-2, 3):
+    for dz in range(-2, 3):
+        area.set(GX + dx, G, GZ + dz, "minecraft:slime_block" if abs(dx) < 2 and abs(dz) < 2 else "minecraft:stripped_mangrove_log[axis=x]")
+area.set(GX, G + 1, GZ, "minecraft:heavy_weighted_pressure_plate")
+for dx, dz in ((-3, -3), (3, -3), (-3, 3), (3, 3)):
+    area.set(GX + dx, G + 1, GZ + dz, "minecraft:mangrove_fence")
+    area.set(GX + dx, G + 2, GZ + dz, "minecraft:lantern[hanging=false]")
+area.set(GX + 4, G + 1, GZ - 2, "minecraft:jungle_sign[rotation=4]",
+         {"id": "minecraft:sign", "front_text": {"messages": ['""', '"Galatea"', '"Foraging 12"', '""'],
+                                                 "color": "white", "has_glowing_text": 1},
+          "back_text": {"messages": ['""', '""', '""', '""'], "color": "black", "has_glowing_text": 0}, "is_waxed": 1})
+area.pad("Galatea", GX - 1, G + 1, GZ - 1, GX + 1, G + 2, GZ + 1, skill="foraging", level=12,
+         destination=("skyrpg_skyblock:galatea", (0.5, 69.0, -40.5), 180.0))
+area.spots["notes"].append(f"Galatea launch pad centre ({GX}, {G + 1}, {GZ}); arrivals from Galatea land at ({GX - 4}, {G + 1}, {GZ})")
 
 # ---------------------------------------------------------------- the ruined temple corner (Jungle)
 tx, tz = TEMPLE

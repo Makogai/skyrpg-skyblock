@@ -1,0 +1,26 @@
+{
+  "name": "Auryon",
+  "role": "Lasso training",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    36.5,
+    69.0,
+    -42.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:item.lead.tied",
+  "greetings": [
+    "Keep your eyes on the critter.",
+    "Reel when I say reel!"
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Auryon"
+    }
+  }
+}

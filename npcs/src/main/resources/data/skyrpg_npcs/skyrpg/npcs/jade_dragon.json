@@ -1,0 +1,26 @@
+{
+  "name": "Jade Dragon",
+  "role": "Dragon's Lair",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    95.5,
+    75.0,
+    -149.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.ender_dragon.growl",
+  "greetings": [
+    "Hmm. A visitor.",
+    "Few climb this far."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Jade Dragon"
+    }
+  }
+}

@@ -27,9 +27,9 @@ import net.minecraft.server.level.ServerPlayer;
 public final class Essence {
     public static final String FOSSIL = "FOSSIL";
     /** Every kind, in Hypixel's order, with its colour. */
-    public static final List<String> KINDS = List.of("WITHER", "UNDEAD", "DRAGON", "SPIDER", "GOLD", "DIAMOND", "ICE", "CRIMSON", FOSSIL, "SUN_GECKO");
-    private static final Map<String, Integer> COLORS = Map.of("WITHER", 0x555555, "UNDEAD", 0xAA00AA, "DRAGON", 0xFF55FF, "SPIDER", 0xAA0000,
-            "GOLD", 0xFFAA00, "DIAMOND", 0x55FFFF, "ICE", 0x55FFFF, "CRIMSON", 0xFF5555, FOSSIL, 0xFF55FF, "SUN_GECKO", 0xFFDD55);
+    public static final List<String> KINDS = List.of("WITHER", "UNDEAD", "DRAGON", "SPIDER", "GOLD", "DIAMOND", "ICE", "CRIMSON", FOSSIL, "SUN_GECKO", "FOREST");
+    private static final Map<String, Integer> COLORS = Map.ofEntries(Map.entry("WITHER", 0x555555), Map.entry("UNDEAD", 0xAA00AA), Map.entry("DRAGON", 0xFF55FF), Map.entry("SPIDER", 0xAA0000), Map.entry("GOLD", 0xFFAA00),
+            Map.entry("DIAMOND", 0x55FFFF), Map.entry("ICE", 0x55FFFF), Map.entry("CRIMSON", 0xFF5555), Map.entry(FOSSIL, 0xFF55FF), Map.entry("SUN_GECKO", 0xFFDD55), Map.entry("FOREST", 0x55AA55));
 
     /** How much of each essence the player has. */
     static final AttachmentType<Map<String, Long>> STORE = AttachmentRegistry.create(SkyRpgSkyblock.id("essence"),

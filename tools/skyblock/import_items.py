@@ -151,7 +151,14 @@ def vanilla_items():
         return {Path(n).stem for n in jar.namelist() if n.startswith("assets/minecraft/items/") and n.endswith(".json")}
 
 
+# Galatea's items are plain paper in Hypixel's data (their look comes from Hypixel's own models) and FurfSky has none:
+# a fitting vanilla item instead.
+LOOKS = {"ABYSMAL_LASSO": "lead", "VINERIP_LASSO": "lead", "ENTANGLER_LASSO": "lead", "EVERSTRETCH_LASSO": "lead", "BASIC_FISHING_NET": "cobweb", "MEDIUM_FISHING_NET": "cobweb", "TURBO_FISHING_NET": "cobweb", "GIGANTIC_FISHING_NET": "cobweb", "VINESAP": "slime_ball", "TENDER_WOOD": "stick", "HUNTING_TOOLKIT": "bundle", "LUSHLILAC": "lilac", "SEA_LUMIES": "sea_pickle", "STARLYN_PRIZE": "nether_star", "CRITTER_CAPSULE": "ender_eye", "MOONGLADE_JEWEL": "emerald", "MANGROVE_VINE": "vine"}
+
+
 def base_of(item):
+    if item["id"] in LOOKS:
+        return LOOKS[item["id"]]
     material, data = item["material"], item.get("durability", 0) or 0
     if material in BY_DATA:
         variants = BY_DATA[material]

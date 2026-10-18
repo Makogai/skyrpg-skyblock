@@ -1,0 +1,26 @@
+{
+  "name": "Agatha",
+  "role": "Starlyn contests",
+  "color": "#FF55FF",
+  "hint": "Prizes",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    0.5,
+    69.0,
+    80.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.frog.ambient",
+  "greetings": [
+    "Contests every few hours, right here on the pier!",
+    "Coupons for prizes."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Agatha"
+    }
+  }
+}

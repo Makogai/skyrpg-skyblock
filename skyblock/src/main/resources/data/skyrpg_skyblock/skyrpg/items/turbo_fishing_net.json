@@ -1,6 +1,6 @@
 {
  "skyblock_id": "TURBO_FISHING_NET",
- "base": "minecraft:paper",
+ "base": "minecraft:cobweb",
  "name": "Turbo Fishing Net",
  "rarity": "epic",
  "category": "FISHING_NET",

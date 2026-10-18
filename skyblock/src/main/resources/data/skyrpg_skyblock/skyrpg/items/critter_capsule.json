@@ -1,6 +1,6 @@
 {
  "skyblock_id": "CRITTER_CAPSULE",
- "base": "minecraft:paper",
+ "base": "minecraft:ender_eye",
  "name": "Critter Capsule",
  "rarity": "special",
  "category": "CAPSULE",

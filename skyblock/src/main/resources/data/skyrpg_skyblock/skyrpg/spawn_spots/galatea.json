@@ -1,0 +1,53 @@
+{
+  "dimension": "skyrpg_skyblock:galatea",
+  "spots": {
+    "fusion_machine": {
+      "pos": [
+        0.5,
+        69.0,
+        -64.5
+      ],
+      "yaw": 0.0
+    },
+    "hunting_box": {
+      "pos": [
+        22.5,
+        70.0,
+        -51.5
+      ],
+      "yaw": 0.0
+    },
+    "forest_temple": {
+      "pos": [
+        79.5,
+        69.0,
+        -102.5
+      ],
+      "yaw": 0.0
+    },
+    "contest": {
+      "pos": [
+        0.5,
+        69.0,
+        82.5
+      ],
+      "yaw": 0.0
+    },
+    "shallows": {
+      "pos": [
+        -43.5,
+        56.0,
+        103.5
+      ],
+      "yaw": 0.0
+    },
+    "warp:galatea": {
+      "pos": [
+        0.5,
+        69.0,
+        -39.5
+      ],
+      "yaw": 180.0
+    }
+  }
+}

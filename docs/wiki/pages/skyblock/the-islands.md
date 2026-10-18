@@ -81,7 +81,7 @@ The foraging island, through the launch pad in the Hub's Forest (Foraging I). A 
 - **The Howling Cave**, north of the Spruce Woods: a dark cavern where **Pack Spirits**, **Howling Spirits** and the **Soul of the Alpha** roam. **Old Shaman Nyko** keeps a fire at the entrance and sells his wares.
 - **Dark Thicket**, east over the bridge: dense dark oak, and the Campfire Cult's clearing with **Ryan** and the **Campfire Adept**.
 - **Savanna Woodland**: acacia trees and a camp with **Melody**, **Master Tactician Funk** (a shop) and **Worker Xavier**.
-- **Jungle Island**: towering jungle trees and an old temple, with **Molbert** and **Juliette**.
+- **Jungle Island**: towering jungle trees and an old temple, with **Molbert** and **Juliette**. East of their campfire, a launch pad goes to [Galatea](galatea) (Foraging XII).
 
 ## Gold Mine
 

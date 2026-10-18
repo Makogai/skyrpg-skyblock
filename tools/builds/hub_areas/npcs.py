@@ -545,6 +545,47 @@ for _town in ("Dragontail", "Scarleton"):
     PEOPLE[f"Bazaar ({_town})"] = (f"bazaar_{_id}", "Bazaar Agent", _town, "#FFAA00", "Bazaar", skin("kai"), False,
                                    "minecraft:entity.villager.trade", ["Instant buys, instant sells.", "Orders fill while you're away."],
                                    {"type": "open_bazaar"})
+
+def galatea(name, role, colour, hint, skin_id, slim, sound, greetings, action=None):
+    PEOPLE[name] = (re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_"), name, role, colour, hint, skin(skin_id, slim), slim, sound, greetings,
+                    action or {"type": "galatea_npc", "params": {"name": name}})
+
+
+# ---- Galatea (Moonglade Marsh): Tangleburg and the Loch
+galatea("Hina", "Tangleburg", "#55FF55", "Talk", "sunny", True, "minecraft:block.azalea_leaves.place",
+        ["Welcome to Galatea!", "Tangleburg is the only dry town for miles."])
+galatea("David Hunterborough", "Hunting Lodge", "#7FE0B4", "Hunting", "steve", False, "minecraft:item.lead.tied",
+        ["Every shard you catch lands in your Hunting Box.", "The Lodge is always open."])
+galatea("Kysha", "Fusion House", "#AA55FF", "Talk", "zuri", True, "minecraft:block.amethyst_block.chime",
+        ["Two shards in, one new shard out.", "The machine's warming up."])
+galatea("Auryon", "Lasso training", "#55FF55", "Talk", "kai", False, "minecraft:item.lead.tied",
+        ["Keep your eyes on the critter.", "Reel when I say reel!"])
+galatea("Jaeger", "Fishing nets", "#55FFFF", "Talk", "efe", False, "minecraft:entity.fishing_bobber.splash",
+        ["Look at a fish, swing the net.", "The Loch is full of them."])
+galatea("Dax", "Huntraps", "#AA5500", "Talk", "ari", False, "minecraft:block.wood.place",
+        ["Traps, friend.", "Tender Wood makes the frames."])
+galatea("Kiara", "Stall", "#FFFF55", "Talk", "makena", True, "minecraft:entity.villager.trade",
+        ["Fresh from the Reaches!", "Fresh-ish."])
+galatea("Sawyer", "Lumber yard", "#AA5500", "Shop", "steve", False, "minecraft:item.axe.strip",
+        ["Fig, Mangrove, I cut it all.", "Want to cut faster? I've got just the thing."])
+galatea("Oden", "Library", "#FFAA00", "Talk", "noor", False, "minecraft:item.book.page_turn",
+        ["Every shard has a story.", "Read before you fuse."])
+galatea("Alan", "Tangleburg", "#AAAAAA", "Talk", "kai", False, "minecraft:entity.villager.ambient",
+        ["They say a dragon lives up north.", "Mind the Bogged."])
+galatea("Jade Dragon", "Dragon's Lair", "#55FF55", "Talk", "zuri", False, "minecraft:entity.ender_dragon.growl",
+        ["Hmm. A visitor.", "Few climb this far."])
+galatea("Agatha", "Starlyn contests", "#FF55FF", "Prizes", "alex", True, "minecraft:entity.frog.ambient",
+        ["Contests every few hours, right here on the pier!", "Coupons for prizes."])
+galatea("Nemo", "Snorkeling gear", "#55FFFF", "Shop", "sunny", False, "minecraft:entity.player.splash",
+        ["The Shallows are deeper than they look.", "Snorkel up!"])
+galatea("Rosemary", "Forest Essence", "#55FF55", "Talk", "noor", True, "minecraft:block.flowering_azalea.place",
+        ["The trees give their essence to those who help them.", "Keep it safe."])
+galatea("Amaury", "Axes", "#AAAAAA", "Shop", "makena", False, "minecraft:item.axe.strip",
+        ["Axes and Canopy armour.", "SwampCut Inc. builds them to last."])
+PEOPLE["Banker Bonsai"] = ("banker_bonsai", "Banker Bonsai", "Tangleburg Bank", "#FFAA00", "Bank", skin("ari"), False,
+                           "minecraft:entity.experience_orb.pickup", ["Your coins are safe here.", "Even in a swamp."],
+                           {"type": "open_bank"})
+
 LIFT_OPERATOR = ("Lift Operator", "Deep Caverns", "#FFFF55", "Talk", skin("steve"), False, "minecraft:block.chain.step",
                  ["Going down? Hold on to the rail.", "The lift stops at every layer you've been to."],
                  {"type": "lift", "params": {"lift": "deep_caverns"}})
@@ -587,6 +628,8 @@ ISLAND_WARPS = {
     "smoldering": ("crimson_west", "Smoldering Tomb", "Smoldering Tomb", "The Crimson Isle's crypt of Wither Spectres",
                    "minecraft:wither_skeleton_skull", 34),
     "kuudra": ("crimson_west", "Kuudra Passage", "Kuudra Passage", "The Forgotten Skull, Kuudra's lair", "minecraft:bone_block", 35),
+    "galatea": ("galatea_north", "galatea", "Galatea", "Moonglade Marsh: fig and mangrove trees, critters and their shards",
+                "minecraft:mangrove_propagule", 36),
 }
 
 

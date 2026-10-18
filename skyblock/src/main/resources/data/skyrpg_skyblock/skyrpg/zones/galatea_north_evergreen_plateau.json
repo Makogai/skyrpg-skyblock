@@ -1,0 +1,82 @@
+{
+  "name": "Evergreen Plateau",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    -150,
+    0,
+    -160
+  ],
+  "to": [
+    -36,
+    200,
+    -70
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:stray",
+      "name": "Chillblade",
+      "level": 35,
+      "health": 8000,
+      "damage": 500,
+      "xp": 25,
+      "coins": 20,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -124,
+        106,
+        -130
+      ],
+      "to": [
+        -108,
+        116,
+        -114
+      ],
+      "indoors": true
+    },
+    {
+      "type": "minecraft:stray",
+      "name": "Chillblade",
+      "level": 35,
+      "health": 8000,
+      "damage": 500,
+      "xp": 25,
+      "coins": 20,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -130,
+        105,
+        -108
+      ],
+      "to": [
+        -114,
+        115,
+        -92
+      ],
+      "indoors": true
+    },
+    {
+      "type": "minecraft:stray",
+      "name": "Chillblade",
+      "level": 35,
+      "health": 8000,
+      "damage": 500,
+      "xp": 25,
+      "coins": 20,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -96,
+        105,
+        -108
+      ],
+      "to": [
+        -80,
+        115,
+        -92
+      ],
+      "indoors": true
+    }
+  ]
+}

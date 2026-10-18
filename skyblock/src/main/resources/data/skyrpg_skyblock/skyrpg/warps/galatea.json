@@ -1,0 +1,14 @@
+{
+  "name": "Galatea",
+  "description": "Moonglade Marsh: fig and mangrove trees, critters and their shards",
+  "icon": "minecraft:mangrove_propagule",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    0.5,
+    69.0,
+    -39.5
+  ],
+  "yaw": 180.0,
+  "area": "Tangleburg",
+  "order": 36
+}

@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
@@ -68,8 +69,13 @@ public final class Abilities {
     public static void init() {
         register("riftstep", Abilities::riftstep);
         register("mend", Abilities::mend);
-        UseItemCallback.EVENT.register((player, level, hand) -> tryUse(player, hand));
-        UseBlockCallback.EVENT.register((player, level, hand, hit) -> tryUse(player, hand));
+        // Early, before the islands' protection: it turns away block uses, and item uses of block-like items (heads,
+        // cobwebs), which would stop an ability item clicked at the ground nearby.
+        Identifier early = Identifier.fromNamespaceAndPath("skyrpg_items", "abilities");
+        UseItemCallback.EVENT.addPhaseOrdering(early, Event.DEFAULT_PHASE);
+        UseItemCallback.EVENT.register(early, (player, level, hand) -> tryUse(player, hand));
+        UseBlockCallback.EVENT.addPhaseOrdering(early, Event.DEFAULT_PHASE);
+        UseBlockCallback.EVENT.register(early, (player, level, hand, hit) -> tryUse(player, hand));
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (server.getTickCount() % 4 == 0 && !READY.isEmpty()) {
                 announceReady(server.getTickCount(), server);

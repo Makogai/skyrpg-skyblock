@@ -1,0 +1,26 @@
+{
+  "name": "Amaury",
+  "role": "Axes",
+  "color": "#AAAAAA",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    122.5,
+    69.0,
+    142.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:item.axe.strip",
+  "greetings": [
+    "Axes and Canopy armour.",
+    "SwampCut Inc. builds them to last."
+  ],
+  "action": {
+    "type": "galatea_npc",
+    "params": {
+      "name": "Amaury"
+    }
+  }
+}

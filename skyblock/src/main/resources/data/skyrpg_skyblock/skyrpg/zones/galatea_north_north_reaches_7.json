@@ -1,0 +1,14 @@
+{
+  "name": "North Reaches",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    -35,
+    0,
+    -125
+  ],
+  "to": [
+    149,
+    200,
+    -113
+  ]
+}

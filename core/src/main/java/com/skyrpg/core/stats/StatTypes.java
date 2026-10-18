@@ -111,6 +111,12 @@ public final class StatTypes {
             "Base damage of a weapon's ability.");
     public static final StatType ALCHEMY_WISDOM = add("alchemy_wisdom", "Alchemy Wisdom", "\u262F", 0xFF55FFFF, 0, false,
             "Each point is 1% more Alchemy XP.");
+    public static final StatType HUNTING_FORTUNE = add("hunting_fortune", "Hunting Fortune", "☘", 0xFFFF5555, 0, false,
+            "Hunting: more shards from each capture.");
+    public static final StatType CHARM_CHANCE = add("charm_chance", "Charm Chance", "❥", 0xFFFF55FF, 0, true,
+            "Hunting: the chance a kill captures its shard.");
+    public static final StatType HUNTING_WISDOM = add("hunting_wisdom", "Hunting Wisdom", "☯", 0xFF55FFFF, 0, false,
+            "Each point is 1% more Hunting XP.");
     public static final StatType TRACKING = add("tracking", "Tracking", "\u2316", 0xFF55FFFF, 0, false,
             "Hunting: how well you track critters.");
     public static final StatType PULL = add("pull", "Pull", "\u16F7", 0xFF55FFFF, 0, false,
