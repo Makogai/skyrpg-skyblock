@@ -261,7 +261,7 @@
           "name": "Events",
           "icon": "item/cookie",
           "weight": 4,
-          "done": 50
+          "done": 65
         },
         {
           "name": "Mayors & elections",
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-10-18",
-      "overall": 71.6
+      "overall": 74.6
     }
   ]
 }
