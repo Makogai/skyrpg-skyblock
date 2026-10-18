@@ -1,0 +1,26 @@
+{
+  "name": "Madame Eleanor Q. Goldsworth X",
+  "role": "Shen's Ringalia",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    40.5,
+    153.0,
+    33.5
+  ],
+  "yaw": 225.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "You must now seek my master, at the end of the road.",
+    "Shen marks those who prove themselves."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Madame Eleanor Q. Goldsworth X"
+    }
+  }
+}

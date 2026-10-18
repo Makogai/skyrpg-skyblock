@@ -692,7 +692,7 @@ final class Mirrorverse {
             }
             for (int n = 1; n <= ROOMS; n++) {
                 boolean reached = RiftFlags.has(p, "mv:room:" + n);
-                cards.add(new CardView.Card("Room " + n, reached ? HINTS.get(n - 1) : "Not reached yet", reached ? 0xFFFFFF : 0x777777,
+                cards.add(new CardView.Card("Room " + n, reached ? HINTS.get(n - 1) : "Not reached yet", reached ? 0xEEEEEE : 0x777777,
                         reached && n != room, reached ? "Travel" : "", new ItemStack(reached ? Items.ENDER_PEARL : Items.DYE.gray()), "", List.of(), -1, ""));
             }
             cards.add(new CardView.Card("Leave", "Back to West Village", 0xFF5555, true, "Leave", new ItemStack(Items.OAK_DOOR), "", List.of(), -1, ""));

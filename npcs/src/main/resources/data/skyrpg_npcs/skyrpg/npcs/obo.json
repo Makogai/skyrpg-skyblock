@@ -1,0 +1,26 @@
+{
+  "name": "Obo",
+  "role": "Citadel guard",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    29.5,
+    153.0,
+    34.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.no",
+  "greetings": [
+    "Where do you think you're going?",
+    "Only those marked by Shen may enter."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Obo"
+    }
+  }
+}

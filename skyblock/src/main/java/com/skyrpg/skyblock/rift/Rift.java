@@ -117,6 +117,9 @@ public final class Rift {
         VampireSlayer.init();
         Dreadfarm.init();
         Mirrorverse.init();
+        Reed.init();
+        Kat.init();
+        Mountaintop.init();
         WestVillage.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);

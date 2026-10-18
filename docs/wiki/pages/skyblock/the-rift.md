@@ -165,6 +165,34 @@ In **Stillgore Château**, monsters take **Hearts** (you have 10) instead of Rif
 
 Sad Jacquelle's cat Montezuma lost his soul in **nine pieces** all over the Rift: under a tree, on a rooftop, behind a cracked wall, under the snow... Right-click a piece to take it, then bring it to her. Every piece back gives **+15 Rift Time**; from six on, each also gives Mana Regen in the Rift.
 
+## Kat's Infested House
+
+**Kat** (West Village) lends you her **Turbomax Vacuum Cleaner**. Hold right-click at the flies, spiders and silverfish in her house to suck them up (the bag holds 8), then empty it into the **Vermin Bin** (the composter in the front room). What you've deposited unlocks her trades:
+
+| Trade | Deposited | Price |
+| --- | --- | --- |
+| Disinfestor Gloves (+30 Rift Time) | 4 flies, 4 spiders, 4 silverfish | 12 Shadow Crux |
+| Vermin Belt | 15 flies (and the gloves) | a Leech Belt |
+| Rift Ferret pet | 20 flies, 10 spiders, 20 silverfish | 12 Riftwart Roots, 3,000 Motes |
+| Key to the Infested House Soul | 40 silverfish | 500 Motes |
+| Fake Neuroscience Degree | 30 flies, 40 spiders, 60 silverfish | 10 Volt Crux, 10 Shadow Crux, 5,000 Motes |
+
+With the key, press the button by the iron door to reach the locked room and its Enigma Soul.
+
+## Reed's boat
+
+**Reed** in the Black Lagoon's hut needs five parts, in order. Each one is permanent Rift Time:
+
+| Part | Bring | Rift Time |
+| --- | --- | --- |
+| Powerful Glue | 16 Larva Silk | +20s |
+| Replacement Wood | 64 Wilted Berberis | +20s |
+| Tasty Provisions | 128 Half-Eaten Carrots | +30s |
+| Living Anchor | a Living Metal Anchor | +30s |
+| More Powerful Glue | 8 Bacte Fragments | +30s |
+
+Then he sells you the finished **Rift Boat** for 25,000 Motes.
+
 ## Earning the later Timecharms
 
 | Timecharm | How |
@@ -173,6 +201,31 @@ Sad Jacquelle's cat Montezuma lost his soul in **nine pieces** all over the Rift
 | Living | Mine the Living Cave's lapis with a **Self-Recursive Pickaxe** for **Living Metal** (twice as much in Living Stillness, and more the longer you keep mining). Craft it from 160 Living Metal and 20 Frosty Crux. |
 | Globulate | Beat **Bacte** in the Colosseum for **Bacte Fragments**; craft it from 8 of them and 20 Shy Crux. |
 | Vampiric | Craft it from Bloodbadges, which open at **Vampire Slayer 3**. |
+| Celestial | Buy **Shen's Ringalia**, get past Obo into the Cerebral Citadel and light Shen Citrinitas' sequence on the **Hive Mind** (below). |
+
+### Timite
+
+Youngite ore (light blue glass) grows round the Mountaintop's Continuum and on the Time-Torn Isles. Hold a **Time Gun** (a Berberis Blowgun and 32 Youngite) on an ore for 2 seconds and it ages into **Timite** (blue); age it again for **Obsolite** (purple). Aged ore turns back after 30 seconds.
+
+| Ore | Breaks with | Gives |
+| --- | --- | --- |
+| Youngite | Anti-Sentient Pickaxe (Chipper McPickaxe, 24,999 Motes), Eon or Chrono | 1 Youngite |
+| Timite | Eon Pickaxe (Timite I) or Chrono Pickaxe (Timite III) | 1 Timite and +2s Rift Time |
+| Obsolite | Chrono Pickaxe | 1 Obsolite |
+
+### Shen and the Celestial Timecharm
+
+**Madame Eleanor Q. Goldsworth X** (the summit) sells **Shen's Ringalia** for 25,000 Motes, 64 Puff Crux, 20 Youngite, 20 Timite, 20 Obsolite and the Disinfestor Gloves. **Obo** only lets its wearers into the **Cerebral Citadel**.
+
+Inside, **Shen's Hive Mind** fills the west wall: seven lamps over seven buttons. The oak button on the left picks the sequence (one per Shen), the one on the right resets it. Each button flips its own lamp and, in every sequence but the first, some others. Light all seven and that Shen will see you: **Shen Citrinitas** gives the **Celestial Timecharm**, **Shen Magnum Opus** the **Golden Belt** (+100 Rift Time, +10 Intelligence, +4 Speed).
+
+### Ubik's games
+
+**Ubik Von Neumann** (the Continuum) hides an Enigma Soul in each game:
+
+- **Ubik's Boxes:** pick one of three boxes; he opens an empty one. The prize is an IQ Point; switch, and explain why, for the soul.
+- **Ubik's Averages:** pick a number from 1 to 100 each SkyBlock year. The closest tenth to half the average of everyone's picks win Free Will and the soul.
+- **Tit for Tat:** 5 to 9 rounds of split or steal (both split: 3,000 Motes each; both steal: 1,000; a steal against a split: 5,000 for the stealer). Split first, then copy his last move every round, for **Ubik's Cube** and the soul.
 
 ### Bacte
 
@@ -193,4 +246,4 @@ Walk into the Colosseum's arena and Bacte, a giant slime with 1,000 health, ooze
 Kill the Château's vampires to fill the quest, then the Bloodfiend rises beside you. It drains your Hearts every second. From tier II it also slashes with **Twinclaws** (don't stand in front of it) and goes into **Mania** (it can't be hurt for 8 seconds). Below a fifth of its health only a **Steak Stake** (Maddox sells them) finishes it. Rewards are Coven Seals, rare drops (Bubba Blister, Guardian Lucky Block, McGrubber's Burger, Unfanged Vampire Part) and Motes. Slayer levels (20, 75, 240, 840 and 2,400 XP) give Rift Time and SkyBlock XP.
 
 > [!NOTE]
-> Not here yet: Shen's Celestial Timecharm, the Sun Gecko, Reed's boat, Shen's auctions and the other area quests.
+> Not here yet: the Sun Gecko, Cowboy Nick and the Half-Eaten Cave, the Living Metal snakes, the Wizardman Trials, the Rift Gallery, Shen's auctions and the other area quests.

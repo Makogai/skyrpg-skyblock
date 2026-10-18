@@ -45,7 +45,8 @@ final class RiftNpcs {
             "Shifted", List.of(new Sale("RIFT_SPEED_ELIXIR", 1, 10_000, "SHAME_CRUX", 5), new Sale("RIFT_JUMP_ELIXIR", 1, 5_000, "SHAME_CRUX", 5),
                     new Sale("RIFT_STRENGTH_ELIXIR", 1, 12_000, "SHAME_CRUX", 5)),
             "Kay", List.of(new Sale("LIL_PAD", 1, 10, null, 0), new Sale("LIL_PAD", 16, 160, null, 0)),
-            "Seymour", List.of(new Sale("EXCEEDINGLY_COMFY_SNEAKERS", 1, 49_999, "GUNTHER_SNEAKERS", 1)));
+            "Seymour", List.of(new Sale("EXCEEDINGLY_COMFY_SNEAKERS", 1, 49_999, "GUNTHER_SNEAKERS", 1)),
+            "Chipper McPickaxe", List.of(new Sale("ANTI_SENTIENT_PICKAXE", 1, 24_999, null, 0)));
 
     /** What the Motes Grubber pays for one of each Rift item (decided: Hypixel's table wasn't found). */
     private static final Map<String, Long> GRUBBER = Map.of("LARVA_SILK", 8L, "MUTED_BARK", 15L, "DEADGEHOG_SPINE", 20L, "LIL_PAD", 4L,
@@ -88,7 +89,7 @@ final class RiftNpcs {
             Map.entry("Finplex", List.of("Zoop the Fish. Ninety-nine thousand nine hundred ninety-nine Motes.", "Worth every Mote.")),
             Map.entry("Plumber Joe", List.of("Leaky pipes everywhere in this place.", "A Plumber's Bucket never runs dry.")),
             Map.entry("Rock", List.of("We rocks hear the Living Metal hum.", "The snakes carry hearts of metal. Stop one, mine its tail.")),
-            Map.entry("Chipper McPickaxe", List.of("Lapis here grows Living Metal, if you mine it right.", "The Anti-Sentient Pickaxe is coming soon.")),
+            Map.entry("Chipper McPickaxe", List.of("Lapis here grows Living Metal, if you mine it right.", "The Anti-Sentient Pickaxe breaks Youngite.")),
             Map.entry("Colosseum Guard", List.of("Bacte waits in the arena.", "Punch the Globowls into its tentacles.")),
             Map.entry("Photon Keeper", List.of("The light holds the path together.", "Don't look down.")),
             Map.entry("Maddox the Slayer", List.of("Vampires, friend. The Riftstalker Bloodfiend.", "I'll have contracts for you soon. Bring Motes.")),
@@ -267,6 +268,34 @@ final class RiftNpcs {
         }
         if (name.startsWith("Maddox the Slayer")) {
             VampireSlayer.maddox(player, npcNear(player, "Maddox"));
+            return;
+        }
+        if (name.equals("Obo")) {
+            Mountaintop.talkObo(player);
+            return;
+        }
+        if (name.equals("Old Timer")) {
+            Mountaintop.oldTimer(player);
+            return;
+        }
+        if (name.equals("Madame Eleanor Q. Goldsworth X")) {
+            Mountaintop.eleanor(player, npcNear(player, "Eleanor"));
+            return;
+        }
+        if (name.startsWith("Shen ")) {
+            Mountaintop.shen(player, name);
+            return;
+        }
+        if (name.startsWith("Kat")) {
+            Kat.open(player, npcNear(player, "Kat"));
+            return;
+        }
+        if (name.equals("Reed")) {
+            Reed.open(player, npcNear(player, "Reed"));
+            return;
+        }
+        if (name.equals("Ubik Von Neumann")) {
+            Ubik.open(player, npcNear(player, "Ubik"));
             return;
         }
         if (name.equals("Dr. Emmett")) {

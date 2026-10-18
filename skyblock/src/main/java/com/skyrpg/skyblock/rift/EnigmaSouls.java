@@ -44,7 +44,7 @@ import org.joml.Vector3f;
 final class EnigmaSouls {
     static final String TAG = "skyrpg_enigma_soul";
     /** Souls not placed in the world: given by NPCs. */
-    static final List<String> EXTRA = List.of("npc:Tel Kar", "npc:Roy", "npc:Cryptosis", "npc:Fairylosopher");
+    static final List<String> EXTRA = List.of("npc:Tel Kar", "npc:Roy", "npc:Cryptosis", "npc:Fairylosopher", Ubik.BOXES, Ubik.AVERAGES, Ubik.TATS);
     private static final double NEAR = 48;
 
     /** Souls found ("enigma:Two Plates", "npc:Roy"). */
@@ -105,6 +105,9 @@ final class EnigmaSouls {
     static String locked(ServerPlayer player, String key) {
         if (key.equals(WestVillage.HOT_DOG_SOUL) && !RiftFlags.has(player, "hotdog")) {
             return "Win Joey McPizza's hot dog contest for this soul (ask the Chef).";
+        }
+        if (key.equals("enigma:Infested House") && com.skyrpg.skyblock.sack.Sacks.countAnywhere(player, Kat.KEY) == 0) {
+            return "Hold Kat's Key to the Infested House Soul to take this soul.";
         }
         boolean shania = RiftFlags.has(player, "shania_harvest");
         if (key.equals(Dreadfarm.BUTTON_SOUL) && !(shania && RiftFlags.has(player, "buttons"))) {

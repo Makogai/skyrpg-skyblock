@@ -17,7 +17,7 @@ import math
 from kit import hash01, noise
 from rift_lib import new_area, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("mountaintop", version=1)
+area = new_area("mountaintop", version=2)
 area.shell = 6
 S = area.set
 G = GROUND                      # 68
@@ -1196,7 +1196,48 @@ for x in range(X0 + 3, X1 - 2):
             for dz in range(-3, 4):
                 OCC.add((x + dx, z + dz))
 
+# ---------------------------------------------------------------- part 6: Youngite ore, Shen's Hive Mind
+# Youngite ore (light blue glass panes; the mod's Time Gun ages it into Timite (blue) and Obsolite (purple), and it
+# grows back): clusters round the Continuum's outer ring and on the Time-Torn Isles.
+ORE = "minecraft:light_blue_stained_glass_pane"
+ores = 0
+for k in range(12):
+    a = k * 2 * math.pi / 12 + 0.15
+    for j in range(3):
+        x = int(round(CONT[0] + (7.3 + 0.9 * j) * math.cos(a + 0.12 * j)))
+        z = int(round(CONT[1] + (7.3 + 0.9 * j) * math.sin(a + 0.12 * j)))
+        if area.get(x, G, z) and not area.get(x, G + 1, z):
+            S(x, G + 1, z, ORE)
+            ores += 1
+            if j == 1:
+                S(x, G + 2, z, ORE)
+                ores += 1
+for k, (ix, iz, dy, ir) in enumerate(TT[:-1]):
+    iy = YB + dy
+    for j in range(4):
+        x, z = ix + [-2, 2, 1, -1][j] * (ir - 2), iz + [1, -1, 2, -2][j]
+        if area.get(x, iy, z) and not area.get(x, iy + 1, z):
+            S(x, iy + 1, z, ORE)
+            ores += 1
+print("youngite ores", ores)
+
+# Shen's Hive Mind on the Citadel's west wall: seven lamps above seven stone buttons, an oak button either side
+# (south: reset the sequence; north: the next sequence). The mod lights the lamps for each player.
+for k in range(7):
+    z = 21 + k
+    S(BX0, PY + 4, z, "minecraft:redstone_lamp[lit=false]")
+    S(BX0, PY + 2, z, "minecraft:quartz_bricks")
+    S(BX0 + 1, PY + 2, z, "minecraft:stone_button[face=wall,facing=east,powered=false]")
+for z, wood in ((29, "oak"), (19, "oak")):
+    S(BX0, PY + 2, z, "minecraft:quartz_bricks")
+    S(BX0 + 1, PY + 2, z, f"minecraft:{wood}_button[face=wall,facing=east,powered=false]")
+S(BX0, PY + 5, 24, "minecraft:chiseled_quartz_block")
+
 # ---------------------------------------------------------------- NPCs, souls, spawn spots (players stand at surface + 1)
+area.npc("Obo", 29, PY + 1, BZ1 + 3, 180.0, "guarding the Cerebral Citadel's doorway (shows him Shen's Ringalia)")
+area.npc("Madame Eleanor Q. Goldsworth X", 40, PY + 1, 33, 225.0, "on the summit plateau's south-east corner (Shen's Ringalia)")
+area.npc("spawn:hive_mind", BX0 + 2, PY + 1, 24, 90.0, "in front of Shen's Hive Mind (west wall of the Citadel)")
+area.npc("spawn:citadel_door", 29, PY + 1, BZ1 + 2, 0.0, "just outside the Citadel's doorway")
 area.npc("Ubik Von Neumann", 24, G + 1, -9, 90.0, "by the Continuum's floating shards")
 area.npc("Old Timer", 15, G + 1, -9, 270.0, "on the Continuum plaza (Timite and the time guns)")
 area.npc("Plate", 120, G + 1, 7, 0.0, "at the Trial Grounds' gate (Wizardman Trials)")

@@ -215,6 +215,10 @@ final class Pests {
 
     /** A vacuum's pull (about every 4 ticks while right-click is held): its damage a second to the pest in front of you. */
     private static boolean vacuum(ServerPlayer player) {
+        // The Rift's Turbomax Vacuum Cleaner catches Kat's vermin instead.
+        if (com.skyrpg.skyblock.rift.Rift.isRift(player.level())) {
+            return com.skyrpg.skyblock.rift.Kat.vacuum(player);
+        }
         if (!Garden.isGarden(player.level())) {
             player.sendOverlayMessage(Component.literal("Vacuums work on Garden pests.").withStyle(ChatFormatting.GRAY));
             return false;

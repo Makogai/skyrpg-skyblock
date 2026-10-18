@@ -18,7 +18,7 @@ import random
 from kit import hash01, noise
 from rift_lib import new_area, land, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("west_village", version=2)
+area = new_area("west_village", version=3)
 area.shell = 9
 S = area.set
 G = GROUND                      # surface block y (players walk at 69)
@@ -516,6 +516,8 @@ S(-107, 69, -60, "minecraft:red_bed[facing=west,part=head]")
 S(-106, 69, -60, "minecraft:red_bed[facing=west,part=foot]")
 S(-99, 69, -59, "minecraft:barrel[facing=up]")
 S(-99, 69, -60, "minecraft:barrel[facing=up]")
+S(-107, 69, -63, "minecraft:composter")         # Kat's Vermin Bin (the mod: empty the Turbomax Vacuum here)
+S(-107, 70, -63, "minecraft:air")
 S(-99, 69, -65, "minecraft:bookshelf")
 S(-99, 70, -65, "minecraft:bookshelf")
 S(-106, 69, -65, "minecraft:cauldron")
@@ -1107,6 +1109,10 @@ area.npc("spawn:mirrorverse_door", -124, 69, -111, 180.0, "in front of the ornat
 area.npc("spawn:montezuma_4", -63, 88, -82, 0.0, "roof of Okron's tower (x -62.5, z -81.5)")
 area.npc("enigma:Hot Dog Contest", -60, 69, -75, 0.0, "beside the Chef's stall")
 area.npc("enigma:Infested House", -105, 69, -60, 0.0, "in the locked back room of the Infested House")
+area.npc("spawn:vermin_bin", -107, 69, -63, 0.0, "Kat's Vermin Bin (a composter) in the Infested House's front room")
+area.npc("spawn:infested_house", -103, 69, -65, 0.0, "the middle of the Infested House's front room (vermin crawl x -107..-99, z -66..-63)")
+area.npc("spawn:kat_door", -103, 69, -63, 180.0, "in front of the locked iron door (its button is above)")
+area.npc("spawn:kat_room", -103, 69, -60, 0.0, "inside the locked back room")
 area.npc("enigma:Cake House 1", -98, 69, -83, 0.0, "behind the cake on the ground floor (north-east corner)")
 area.npc("enigma:Cake House 2", -99, 73, -82, 0.0, "on the upper catwalk of the Cake House (north-east corner)")
 area.npc("enigma:Dolphin Trainer", -62, 74, -117, 0.0, "the platform at the end of the pool parkour")

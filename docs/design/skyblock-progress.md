@@ -652,8 +652,11 @@ phase so the next session can pick up where this one stopped.
       Agaricus Cap, Caducous Stem, Wilted Berberis), Shania and the Proto-Chicken, the Berberis Blowgun and Not Chickens,
       the Rift collections, the eight-room Mirrorverse (Dr. Emmett, ttemme .rD, the mirrored Timecharm, its talismans), the
       Plaza's two-charm gate, Gunther's race, the hot dog contest, puzzle-locked Enigma Souls (balloons, buttons).
-- [ ] The Rift, part 6: Shen and the Celestial Timecharm, the Sun Gecko, Ubik's games, Reed's boat, Shen's auctions,
-      Cowboy Nick, Detective Amog and the other area quests, the Rift Gallery.
+- [x] **The Rift, part 6** (`Ubik`, `Reed`, `Kat`, `Mountaintop`): Ubik's three games, Reed's boat, Kat's Infested House
+      (the Turbomax Vacuum, the Vermin Bin, her trades and the soul key), Timite (Youngite ore, the Time Gun, the
+      Anti-Sentient/Eon/Chrono Pickaxes), Shen's Ringalia, Obo, Shen's Hive Mind (the Celestial Timecharm, the Golden Belt).
+- [ ] The Rift, part 7: the Sun Gecko, Cowboy Nick and the Half-Eaten Cave, the Living Metal snakes, the Wizardman
+      Trials, the Rift Gallery and Necklace, Shen's auctions, the Eleanors' outfit puzzles and the other area quests.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

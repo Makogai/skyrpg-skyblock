@@ -70,6 +70,13 @@ public final class CardMenu extends AbstractContainerMenu {
             return false;
         }
         String problem = this.clicker.click(owner, id);
+        if (owner.containerMenu != this) {
+            // the click opened another menu (a game, a sub-page): leave it be
+            if (problem != null && !problem.isEmpty()) {
+                owner.sendSystemMessage(Component.literal(problem).withStyle(ChatFormatting.RED));
+            }
+            return true;
+        }
         if (problem == null) {
             owner.closeContainer();
             return true;

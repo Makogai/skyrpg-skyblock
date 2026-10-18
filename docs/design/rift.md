@@ -148,8 +148,42 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
 - Fixed: the Rift's flags and secured Timecharms were dropped when a player logged in after a restart (their
   attachment types were made too late); `RiftFlags.init()` and `Timecharms.init()` now load them at startup.
 
+## Part 6 (`Ubik`, `Reed`, `Kat`, `Mountaintop`): the way to the Celestial Timecharm
+
+- **Ubik Von Neumann**'s three games, each an Enigma Soul (three NPC souls: Ubik's Boxes, Averages, Tit for Tat):
+  Boxes (Monty Hall: the right box is an IQ Point once; switching and answering "it increases my odds" the soul),
+  Averages (pick 1-100 each SkyBlock year, saved with the world in `ubik_averages`; the closest tenth to half the
+  average win Free Will and the soul, a pick of 4x the average two Free Wills, five losing years the soul anyway) and
+  Tit for Tat (5-9 rounds; both split 3,000 Motes each, both steal 1,000, a steal against a split 5,000; Ubik copies your
+  last move after a coin flip; split first and copy his last move every round for Ubik's Cube and the soul). Decided: one
+  Tit for Tat an hour (Hypixel's wait wasn't found).
+- **Reed's boat**: five parts in order (16 Larva Silk +20s, 64 Wilted Berberis +20s, 128 Half-Eaten Carrots +30s, the
+  Living Metal Anchor +30s, 8 Bacte Fragments +30s; permanent Rift Time), then the Rift Boat for 25,000 Motes. The
+  carrots (Cowboy Nick) and the anchor's Living Metal Hearts (the snakes) come later.
+- **Kat's Infested House**: Kat lends the Turbomax Vacuum Cleaner (its Vacuum, held right-click, now works in the Rift:
+  it pulls flies (bats), spiders and silverfish in and bags them, 8 at most); empty it into the Vermin Bin (a composter
+  in the front room). Deposits unlock Hypixel's trades: Disinfestor Gloves (4/4/4, 12 Shadow Crux), Vermin Belt (15
+  flies, a Leech Belt, gloves first), Rift Ferret (20/10/20, 12 Riftwart Roots + 3,000 Motes), the Key to the Infested
+  House Soul (40 silverfish, 500 Motes; it opens the locked back room and its soul) and the Fake Neuroscience Degree
+  (30/40/60, 10 Volt + 10 Shadow Crux + 5,000 Motes).
+- **Timite** on the Mountaintop: Youngite ore (light blue panes) round the Continuum and on the Time-Torn Isles. The
+  Time Gun (Blowgun + 32 Youngite) held on an ore for 2 s ages it to Timite (blue), then Obsolite (purple; "PARADOX!" on
+  a third go); aged ore turns back after 30 s. Youngite breaks with the Anti-Sentient Pickaxe (Chipper McPickaxe,
+  24,999 Motes), Timite with the Eon or Chrono (+2 Rift Time each), Obsolite with the Chrono. Decided: mined ore grows
+  back in 30 s (Hypixel's time wasn't found); the Old Timer explains.
+- **Shen's Ringalia** from Madame Eleanor Q. Goldsworth X (25,000 Motes, 64 Puff Crux, 20 each of Youngite, Timite and
+  Obsolite, the Disinfestor Gloves). Decided: her outfit puzzle (and the other Eleanors' quests outside the Rift) is
+  waived for now. **Obo** turns anyone without it away from the Cerebral Citadel.
+- **Shen's Hive Mind** (the Citadel's west wall): seven lamps, seven stone buttons, an oak button for the next sequence
+  and one to reset; each player's lamps light on their own screen. Five sequences, one per Shen, with Hypixel's
+  answers (every button; 2, 4, 6; 2, 5, 6, 7; 3, 4, 7; 3, 5, 6, 7). Decided: the wiring (which lamps a button flips),
+  chosen so each answer is the only one. Shen Citrinitas gives the **Celestial Timecharm**, Shen Magnum Opus the
+  **Golden Belt**.
+- Fixed: a card menu that opens another menu (a game, a sub-page) no longer closes it straight away.
+
 ## Still to build
 
-Reed's boat, the Larva Hook, the Rift Transfer, the other area quests (Cowboy Nick, Detective Amog, Kloon, Okron,
-Kat's Infested House), growing the Great Beanstalk (the stalk is built full-grown), Shen's Celestial Timecharm, Shen's
-auctions, the Sun Gecko, Ubik's games, the Wizardman Trials, the Rift Gallery itself.
+The Sun Gecko and its essence shop, Cowboy Nick (the Horsezooka, the Half-Eaten Cave, Half-Eaten Carrots), the
+Living Metal snakes (Living Metal Hearts), the Wizardman Trials, the Rift Gallery and the Rift Necklace's stats, Shen's
+auctions, the Eleanors' outfit puzzles, Detective Amog, Kloon, Okron, Seraphine, Riftwart Roots, the Larva Hook, the Rift
+Transfer, growing the Great Beanstalk (the stalk is built full-grown).

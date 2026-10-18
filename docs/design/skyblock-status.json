@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "The Rift, part 5: the Mirrorverse, the Dreadfarm's crops, Gunther's race and the hot dog contest",
+  "latest": "The Rift, part 6: Shen's Hive Mind and the Celestial Timecharm, Timite, Kat's Infested House, Ubik and Reed",
   "phase": {
     "name": "Phase 4: Late game",
-    "done": 61
+    "done": 62
   },
   "categories": [
     {
@@ -237,7 +237,7 @@
           "name": "The Rift",
           "icon": "item/chorus_fruit",
           "weight": 4,
-          "done": 85
+          "done": 91
         },
         {
           "name": "Galatea & Hunting",

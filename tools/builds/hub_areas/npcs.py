@@ -479,6 +479,10 @@ rift("Dr. Emmett (Mirrorverse)", "dr_emmett_mirrorverse", "The Mirrorverse", "#5
      "minecraft:block.portal.ambient", ["You made it through every mirror!", "My reflection runs the shop. Don't ask."])
 rift("ttemme .rD", "ttemme_rd", "pohS", "#55FFFF", "Shop", "kai", False, "minecraft:block.portal.ambient",
      ["!tnecsiro... ,olleH", ".sredro ni sesuoh srorrim ruoY"])
+rift("Obo", "obo", "Citadel guard", "#AAAAAA", "Talk", "efe", False, "minecraft:entity.villager.no",
+     ["Where do you think you're going?", "Only those marked by Shen may enter."])
+rift("Madame Eleanor Q. Goldsworth X", "eleanor_x", "Shen's Ringalia", "#FFAA00", "Shop", "makena", True,
+     "minecraft:entity.villager.trade", ["You must now seek my master, at the end of the road.", "Shen marks those who prove themselves."])
 rift("Motes Grubber (West Village)", "motes_grubber_west_village", "Eats Rift items", "#FF55FF", "Sell", "makena", True,
      "minecraft:entity.generic.eat", ["I eat Rift things and pay in Motes.", "Hungry, always hungry."])
 rift("The Intruder", "the_intruder", "Porhtal eye", "#AA00AA", "Eye", "noor", False, "minecraft:block.portal.ambient",
