@@ -1,0 +1,26 @@
+{
+  "name": "Gunther",
+  "role": "Rift Race",
+  "color": "#FFFF55",
+  "hint": "Race",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -44.5,
+    69.0,
+    -73.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.horse.gallop",
+  "greetings": [
+    "Fancy a race? Ten checkpoints round the village.",
+    "Under a minute and I'll have something for you."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Gunther"
+    }
+  }
+}

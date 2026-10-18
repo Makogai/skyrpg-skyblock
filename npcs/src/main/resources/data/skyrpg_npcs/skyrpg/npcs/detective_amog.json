@@ -1,0 +1,26 @@
+{
+  "name": "Detective Amog",
+  "role": "Detective",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -11.5,
+    69.0,
+    -57.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "There's been a murder. Or there will be. Or there was.",
+    "Time runs strangely around the Murder House."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Detective Amog"
+    }
+  }
+}

@@ -373,7 +373,7 @@ PEOPLE = {
               {"type": "odger"}),
 }
 def rift(name, file_id, role, colour, hint, skin_id, slim, sound, greetings, action=None):
-    PEOPLE[name] = (file_id, re.sub(r" \d+$", "", name), role, colour, hint, skin(skin_id, slim), slim, sound, greetings,
+    PEOPLE[name] = (file_id, re.sub(r" \(.*\)$| \d+$", "", name), role, colour, hint, skin(skin_id, slim), slim, sound, greetings,
                     action or {"type": "rift_npc", "params": {"name": name}})
 
 
@@ -417,6 +417,59 @@ rift("Dr. Phear", "dr_phear", "Leeches Lair", "#55FFFF", "Talk", "kai", False, "
      ["Done down here? I'll take you back up.", "Leeches everywhere. Horrible."])
 rift("Mushroom Guy", "mushroom_guy", "Mushrooms", "#FF5555", "Talk", "makena", False, "minecraft:block.fungus.place",
      ["The mushrooms grow when you come close.", "Solve their puzzle and something waits at the top."])
+rift("Elise", "elise", "Rift Gallery", "#FF55FF", "Timecharms", "alex", True, "minecraft:block.amethyst_block.chime",
+     ["Timecharms keep the Rift from tearing further.", "Bring me one and I'll secure it in the Gallery."])
+rift("Shania (Rift)", "shania_rift", "Dreadfarm", "#55FF55", "Talk", "sunny", True, "minecraft:entity.chicken.ambient",
+     ["The crops won't grow right here.", "If only someone had a pair of proper Chicken Leggs..."])
+rift("Sick Farmer", "sick_farmer", "Dreadfarm", "#AAAAAA", "Talk", "steve", False, "minecraft:entity.villager.hurt",
+     ["*cough* Don't eat the berries.", "The Volts came with the storm."])
+rift("The Baba Yaga", "the_baba_yaga", "Porhtal eye", "#AA00AA", "Eye", "zuri", True, "minecraft:entity.witch.ambient",
+     ["Hee hee hee.", "The eye sees the fields."])
+rift("Barry", "barry", "Barry Center", "#FFFF55", "Talk", "steve", False, "minecraft:entity.villager.no",
+     ["Please, everyone, calm down!", "My pen... has anyone seen my Montgray Pen?"])
+for _n in range(1, 8):
+    rift(f"Protester {_n}", f"protester_{_n}", "Protester", "#FF5555", "Talk", ["kai", "efe", "noor", "sunny", "ari", "zuri", "makena"][_n - 1],
+         _n % 2 == 0, "minecraft:entity.villager.no", ["Down with Barry!", "We want answers!"])
+rift("Cowboy Nick", "cowboy_nick", "Rabbits", "#FFAA00", "Talk", "steve", False, "minecraft:entity.rabbit.ambient",
+     ["Howdy, partner. My rabbits are hungry.", "Feed 'em carrots and I'll lend you my Horsezooka."])
+rift("Detective Amog", "detective_amog", "Detective", "#AAAAAA", "Talk", "kai", False, "minecraft:entity.villager.ambient",
+     ["There's been a murder. Or there will be. Or there was.", "Time runs strangely around the Murder House."])
+rift("Seymour", "seymour_rift", "Shoes", "#55FF55", "Shop", "efe", False, "minecraft:entity.villager.trade",
+     ["The comfiest sneakers in any dimension.", "Bring me Gunther's Sneakers and plenty of Motes."])
+rift("Seraphine", "seraphine_rift", "Detransfigured", "#AA00AA", "Talk", "alex", True, "minecraft:entity.allay.ambient_without_item",
+     ["I was... something else, once.", "An Anti-Morph Potion would set me right."])
+rift("Cryptosis", "cryptosis", "Enigma Soul", "#FF55FF", "Shop", "zuri", False, "minecraft:block.amethyst_block.resonate",
+     ["Souls, for the discerning collector.", "15,000 Motes and ten Scribe Crux."])
+rift("Damia", "damia", "Shen's Auctions", "#FFAA00", "Auctions", "makena", True, "minecraft:entity.villager.trade",
+     ["Shen's Auctions open once a SkyBlock year.", "Bids in Motes only."])
+rift("Taylor", "taylor_rift", "Tailor", "#55FFFF", "Talk", "sunny", True, "minecraft:entity.villager.ambient",
+     ["Hems, seams, rifts. I mend them all.", "Mind the needles."])
+rift("Lonely Avaeikx", "lonely_avaeikx", "Lonely Terrace", "#AAAAAA", "Talk", "noor", False, "minecraft:entity.villager.ambient",
+     ["Would you... sit with me a while?", "Nobody ever stays."])
+rift("The Bankster", "the_bankster", "Porhtal eye", "#FFAA00", "Eye", "steve", False, "minecraft:entity.experience_orb.pickup",
+     ["Interest compounds. So do eyes.", "The eye watches the vault."])
+rift("Gunther", "gunther", "Rift Race", "#FFFF55", "Race", "kai", False, "minecraft:entity.horse.gallop",
+     ["Fancy a race? Ten checkpoints round the village.", "Under a minute and I'll have something for you."])
+rift("Chef", "chef_rift", "Hot dogs", "#FFAA00", "Talk", "steve", False, "minecraft:entity.generic.eat",
+     ["Hot dogs! Fifty in a minute and you're a legend.", "Joey's got the buns."])
+rift("Joey McPizza", "joey_mcpizza", "Buns", "#FFAA00", "Talk", "efe", False, "minecraft:entity.generic.eat",
+     ["Buns, buns, buns.", "Chef says you look hungry."])
+rift("Unhinged Kloon", "unhinged_kloon", "Terminals", "#55FFFF", "Talk", "ari", False, "minecraft:block.note_block.bit",
+     ["The terminals! They're all the wrong colour!", "Rainbow. They should be rainbow."])
+rift("Kat (Rift)", "kat_rift", "Infested House", "#FF55FF", "Talk", "alex", True, "minecraft:entity.cat.ambient",
+     ["The vermin have taken over my house.", "Bring me Silverfish and I'll make you a key."])
+rift("Sorcerer Okron", "sorcerer_okron", "Glyphs", "#AA00AA", "Talk", "zuri", False, "minecraft:block.enchantment_table.use",
+     ["The glyphs ward the village. Mostly.", "Trace them right and the trinket is yours."])
+rift("Alchemist (Rift)", "alchemist_rift", "Potions", "#AA00AA", "Talk", "makena", True, "minecraft:block.brewing_stand.brew",
+     ["Potions brewed from things that shouldn't exist.", "Come back when I've got stock."])
+rift("Finplex", "finplex", "Zoop the Fish", "#55FFFF", "Talk", "noor", False, "minecraft:entity.fish.swim",
+     ["Zoop the Fish. Ninety-nine thousand nine hundred ninety-nine Motes.", "Worth every Mote."])
+rift("Plumber Joe", "plumber_joe", "Buckets", "#5555FF", "Talk", "steve", False, "minecraft:item.bucket.fill",
+     ["Leaky pipes everywhere in this place.", "A Plumber's Bucket never runs dry."])
+rift("Dr. Emmett", "dr_emmett", "The Mirrorverse", "#55FFFF", "Talk", "kai", False, "minecraft:block.portal.ambient",
+     ["The Mirrorverse lies through that door.", "Everything in there is backwards. Even me."])
+rift("Motes Grubber (West Village)", "motes_grubber_west_village", "Eats Rift items", "#FF55FF", "Sell", "makena", True,
+     "minecraft:entity.generic.eat", ["I eat Rift things and pay in Motes.", "Hungry, always hungry."])
 rift("The Gill-Man", "the_gill_man", "Porhtal eye", "#00AAAA", "Eye", "zuri", False, "minecraft:entity.guardian.ambient",
      ["Blub.", "The eye watches the lagoon."])
 

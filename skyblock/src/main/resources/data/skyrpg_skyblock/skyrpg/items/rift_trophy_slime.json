@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RIFT_TROPHY_SLIME",
+ "base": "minecraft:slime_block",
+ "name": "Globulate Timecharm",
+ "rarity": "special",
+ "type": "",
+ "description": "\u00a77Place this timecharm in the Rift Gallery to secure it forever!",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

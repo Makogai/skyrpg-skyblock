@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RIFT_TROPHY_MIRRORED",
+ "base": "minecraft:glass",
+ "name": "mrahcemiT esrevrorriM",
+ "rarity": "special",
+ "type": "",
+ "description": "\u00a77Place this timecharm in the Rift Gallery to secure it forever!",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -47,9 +47,29 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
   elixirs, Kay's Lil' Pads (10). Everyone else talks.
 - Screens: the RIFT theme (crying obsidian with glitches, a torn magenta seam, amethyst buttons) on the card menus.
 
+## Part 2 (`RiftWorld.java`, `LeechSupreme.java`, `Timecharms.java`)
+
+- **Gates** (Hypixel's, checked when you walk into a zone; you're put back where you stood): the Black Lagoon needs
+  4:00 of Rift Time left; West Village 3:00 and the Supreme Timecharm; the Dreadfarm the Supreme Timecharm; the Village
+  Plaza 8:00, Barrier Street 10:00 and Deja Vu Alley 5:00. Decided: the Plaza side waits on the Supreme Timecharm until
+  the Mirrorverse and Chicken N Egg charms exist (Hypixel needs those two).
+- **Timecharms**: the eight NEU trophies are items now (`neu_extra_items.py`), with NEU's recipes (the Supreme: 4 Bottled
+  Odonata, 32 Lil' Pads, 24 Deadgehog Spines, 4 Leech Supreme Fragments). **Elise** in the Rift's Wizard Tower secures
+  them: +100 SkyBlock XP each; the first gives the Rift Necklace.
+- **The Leech Supreme** in the Leeches Lair: 800 health, a boss bar, four phases (a fifth of its health each): Slime
+  Pound (a shockwave, 8 s), then Wicked Bombs (three marked circles, 10 s), the Leech Swarm and the Mortiferous Lazer
+  (sneak, 2 s a hit). Drops 8 Leech Supreme Fragments and 3,000 Motes to everyone who hit it; back 40 s later. Decided:
+  the attacks' timings and costs.
+- **Odonata**: dragonflies (bees) over the Pumpgrotto lake and Enigma's Crib pool. Hold an Empty Odonata Bottle (the
+  Bugshopper: 400 Motes + 2 Shy Crux) and look at one for 3 seconds to bottle it.
+- **Lil' Pads**: right-click water for a lily pad that lasts 10 seconds. **Slime launchers** in the Wyld Woods shoot you
+  up to their platforms.
+- New areas (helper-built): **West Village** (Shadows), the **Dreadfarm** (Volts, Not Chickens, the Great Beanstalk),
+  the **Village Plaza** with Barrier Street and Deja Vu Alley (Scribes). Cryptosis sells an Enigma Soul (15,000 Motes +
+  10 Scribe Crux), Seymour the Exceedingly Comfy Sneakers (49,999 Motes + Gunther's Sneakers).
+
 ## Still to build
 
-The Leech Supreme, Lil' Pads on the channels, Montezuma's soul pieces, Porhtal's eyes, Reed's boat, the Odonata and Larva
-Hook, the Rift Transfer, the slime launchers; then West Village, Dreadfarm, the Mirrorverse, Village Plaza, Barrier
-Street, the Living Cave, the Colosseum, the Mountaintop, Stillgore Chateau and the Vampire Slayer, Timecharms and the
-Rift Gallery.
+Montezuma's soul pieces, Porhtal's eyes, Reed's boat, the Larva Hook, the Rift Transfer, Gunther's race, the hot dog
+contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse, Shen's auctions, the Living
+Cave, the Colosseum, the Mountaintop, Stillgore Chateau and the Vampire Slayer, the Rift Gallery itself.

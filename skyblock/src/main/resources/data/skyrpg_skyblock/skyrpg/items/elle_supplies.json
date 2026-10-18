@@ -1,7 +1,7 @@
 {
  "skyblock_id": "ELLE_SUPPLIES",
  "base": "minecraft:chest",
- "name": "%%green%%Elle's Supplies",
+ "name": "Elle's Supplies",
  "rarity": "common",
  "type": "",
  "hypixel": {

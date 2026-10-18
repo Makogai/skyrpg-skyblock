@@ -1,0 +1,14 @@
+{
+  "name": "Village Plaza",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    20,
+    0,
+    -105
+  ],
+  "to": [
+    69,
+    200,
+    -101
+  ]
+}

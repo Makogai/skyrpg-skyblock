@@ -1,7 +1,7 @@
 {
  "skyblock_id": "SWAPPABLE_PREVIEW",
  "base": "minecraft:player_head",
- "name": "%%green%%Swappable Preview %%gray%%(Click)",
+ "name": "Swappable Preview (Click)",
  "rarity": "common",
  "type": "",
  "description": "§7Cycle between all the variations of the selected preview!",

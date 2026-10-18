@@ -1,7 +1,7 @@
 {
  "skyblock_id": "AXE_PREVIEW",
  "base": "minecraft:diamond_axe",
- "name": "%%green%%Axe Preview %%gray%%(Right-Click)",
+ "name": "Axe Preview (Right-Click)",
  "rarity": "special",
  "category": "AXE",
  "type": "Axe",

@@ -1035,6 +1035,9 @@ area.zone("Black Lagoon", box=((X0, 56, Z0), (X1, 130, Z1)), blocks={}, mobs=[
     mob("minecraft:silverfish", "Lagoon Leech", 2, 80, 3, 6, 40, 6, 6, (-155, 66, -10), (-95, 72, 22), LEECH),
     mob("minecraft:silverfish", "Lagoon Leech", 2, 80, 3, 6, 40, 4, 8, (-150, 66, 30), (-105, 72, 50), LEECH),
 ])
-area.zone("Leeches Lair", box=((-145, 20, 3), (-87, 55, 50)), blocks={}, mobs=[])
+# A few leeches in the lair (Hypixel's has them); mobs also make it a fighting zone, so the Leech Supreme can be hurt.
+area.zone("Leeches Lair", box=((-145, 20, 3), (-87, 55, 50)), blocks={}, mobs=[
+    mob("minecraft:silverfish", "Lagoon Leech", 2, 80, 3, 6, 40, 3, 10, (-134, 30, 13), (-105, 34, 42), LEECH),
+])
 area.save()
 print("boardwalk deck blocks", boards, "lamps", lamps, "mushrooms", len(mushrooms))

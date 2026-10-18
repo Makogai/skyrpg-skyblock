@@ -1,0 +1,26 @@
+{
+  "name": "Sick Farmer",
+  "role": "Dreadfarm",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -73.5,
+    69.0,
+    -155.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.villager.hurt",
+  "greetings": [
+    "*cough* Don't eat the berries.",
+    "The Volts came with the storm."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Sick Farmer"
+    }
+  }
+}

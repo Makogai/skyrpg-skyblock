@@ -1,0 +1,26 @@
+{
+  "name": "Taylor",
+  "role": "Tailor",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -5.5,
+    69.0,
+    -89.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "Hems, seams, rifts. I mend them all.",
+    "Mind the needles."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Taylor"
+    }
+  }
+}

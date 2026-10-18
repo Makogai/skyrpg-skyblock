@@ -92,6 +92,8 @@ public final class Rift {
         EnigmaSouls.init();
         Orbs.init();
         RiftNpcs.init();
+        RiftWorld.init();
+        LeechSupreme.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);
         // Your hits in the Rift deal your Rift Damage, whatever you hold.
@@ -373,6 +375,21 @@ public final class Rift {
                 sendHome(player, "The Rift collapsed. You were sent back to the Wizard Tower.");
                 continue;
             }
+            hud(player, visit);
+        }
+    }
+
+    /** Seconds of Rift Time left this visit (0 when not visiting). */
+    static double timeLeft(ServerPlayer player) {
+        Visit visit = VISITS.get(player.getUUID());
+        return visit == null ? 0 : visit.left;
+    }
+
+    /** Rift Time taken by a boss's attack (never below 1: the clock, not the attack, sends you home). */
+    static void takeTime(ServerPlayer player, double seconds) {
+        Visit visit = VISITS.get(player.getUUID());
+        if (visit != null && !player.isCreative()) {
+            visit.left = Math.max(1, visit.left - seconds);
             hud(player, visit);
         }
     }

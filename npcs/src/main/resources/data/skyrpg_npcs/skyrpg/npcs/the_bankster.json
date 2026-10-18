@@ -1,0 +1,26 @@
+{
+  "name": "The Bankster",
+  "role": "Porhtal eye",
+  "color": "#FFAA00",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    20.5,
+    69.0,
+    -63.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.experience_orb.pickup",
+  "greetings": [
+    "Interest compounds. So do eyes.",
+    "The eye watches the vault."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The Bankster"
+    }
+  }
+}

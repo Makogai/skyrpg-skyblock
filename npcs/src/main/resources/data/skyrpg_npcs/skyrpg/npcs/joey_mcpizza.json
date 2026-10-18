@@ -1,0 +1,26 @@
+{
+  "name": "Joey McPizza",
+  "role": "Buns",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -50.5,
+    69.0,
+    -74.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.generic.eat",
+  "greetings": [
+    "Buns, buns, buns.",
+    "Chef says you look hungry."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Joey McPizza"
+    }
+  }
+}

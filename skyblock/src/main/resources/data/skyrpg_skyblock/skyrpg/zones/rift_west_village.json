@@ -1,0 +1,106 @@
+{
+  "name": "West Village",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -140,
+    0,
+    -120
+  ],
+  "to": [
+    -31,
+    200,
+    -32
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Shadow",
+      "level": 3,
+      "health": 125,
+      "damage": 6,
+      "xp": 6,
+      "coins": 150,
+      "max": 4,
+      "every": 6,
+      "from": [
+        -135,
+        69,
+        -106
+      ],
+      "to": [
+        -113,
+        76,
+        -86
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SHADOW_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Shadow",
+      "level": 3,
+      "health": 125,
+      "damage": 6,
+      "xp": 6,
+      "coins": 150,
+      "max": 4,
+      "every": 6,
+      "from": [
+        -135,
+        69,
+        -84
+      ],
+      "to": [
+        -113,
+        76,
+        -64
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SHADOW_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Shadow",
+      "level": 3,
+      "health": 125,
+      "damage": 6,
+      "xp": 6,
+      "coins": 150,
+      "max": 3,
+      "every": 6,
+      "from": [
+        -135,
+        69,
+        -60
+      ],
+      "to": [
+        -113,
+        76,
+        -44
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SHADOW_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

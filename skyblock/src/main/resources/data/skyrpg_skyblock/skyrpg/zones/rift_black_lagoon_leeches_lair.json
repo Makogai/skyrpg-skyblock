@@ -10,5 +10,43 @@
     -87,
     55,
     50
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:silverfish",
+      "name": "Lagoon Leech",
+      "level": 2,
+      "health": 80,
+      "damage": 3,
+      "xp": 6,
+      "coins": 40,
+      "max": 3,
+      "every": 10,
+      "from": [
+        -134,
+        30,
+        13
+      ],
+      "to": [
+        -105,
+        34,
+        42
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        }
+      ]
+    }
   ]
 }

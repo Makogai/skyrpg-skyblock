@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/rift_dreadfarm",
+  "origin": [
+    -110,
+    0,
+    -210
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift",
+  "arrival": {
+    "pos": [
+      -69.5,
+      69.0,
+      -122.5
+    ],
+    "yaw": 0.0
+  }
+}

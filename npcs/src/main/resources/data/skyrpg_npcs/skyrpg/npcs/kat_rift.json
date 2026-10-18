@@ -1,0 +1,26 @@
+{
+  "name": "Kat",
+  "role": "Infested House",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -100.5,
+    69.0,
+    -63.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.cat.ambient",
+  "greetings": [
+    "The vermin have taken over my house.",
+    "Bring me Silverfish and I'll make you a key."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Kat (Rift)"
+    }
+  }
+}

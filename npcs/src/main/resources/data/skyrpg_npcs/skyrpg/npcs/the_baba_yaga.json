@@ -1,0 +1,26 @@
+{
+  "name": "The Baba Yaga",
+  "role": "Porhtal eye",
+  "color": "#AA00AA",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -97.5,
+    74.0,
+    -180.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.witch.ambient",
+  "greetings": [
+    "Hee hee hee.",
+    "The eye sees the fields."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The Baba Yaga"
+    }
+  }
+}

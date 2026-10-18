@@ -12,7 +12,7 @@ import math
 from kit import hash01, noise
 from rift_lib import new_area, GROUND, SEAM, CROSSINGS, ARRIVAL, LAND_BOTTOM
 
-area = new_area("wyld_woods", version=1)
+area = new_area("wyld_woods", version=2)
 S, F = area.set, area.fill
 X0, X1, Z0, Z1 = -160, -11, 60, 199
 RING = 88                    # the walkway level (deck block y; players walk at 89)
@@ -1278,6 +1278,23 @@ area.zone("Wizard Tower", box=((-57, 0, 97), (-33, 200, 123)))
 area.zone("Wyld Woods", box=((-57, 0, 60), (-11, 200, 96)))
 area.zone("Wyld Woods", box=((-57, 0, 124), (-11, 200, 199)))
 area.zone("Wyld Woods", box=((-32, 0, 97), (-11, 200, 123)))
+# Keep the launch tubes clear to the sky over their tops (canopies and lamps built later can cross them).
+for (tx, tz), tube_top in ((L1, 112), ((-39, 158), RING + 1), ((-62, 152), RING + 1)):
+    for y in range(T(tx, tz) + 2, tube_top + 4):
+        for dx in range(-1, 2):
+            for dz in range(-1, 2):
+                S(tx + dx, y, tz + dz, AIR)
+
+# Spots the mod uses: the slime launchers (pad and the landing at the top), the Odonata's ponds, Elise.
+area.npc("spawn:launch_1", -106, 69, 124, 0.0)
+area.npc("spawn:launch_1_top", -106, 113, 124, 0.0)
+area.npc("spawn:launch_2", -39, 69, 158, 0.0)
+area.npc("spawn:launch_2_top", -39, 89, 158, 0.0)
+area.npc("spawn:launch_3", -62, 69, 152, 0.0)
+area.npc("spawn:launch_3_top", -62, 89, 152, 0.0)
+area.npc("spawn:odonata_1", -102, 70, 168, 0.0)
+area.npc("spawn:odonata_2", -68, 70, 138, 0.0)
+area.npc("Elise", -50, 69, 114, 135.0, "the Rift Wizard Tower's ground floor (the Rift Gallery's manager)")
 area.save()
 print("trees", len(TREES), "posts", posts, "hanging roots", roots, "scatter", placed, "shards", shards,
       "house sides", HOUSE_SIDES, "launchers", LAUNCHERS)

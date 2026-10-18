@@ -1,0 +1,11 @@
+{
+ "skyblock_id": "RIFT_TROPHY_CHICKEN_N_EGG",
+ "base": "minecraft:soul_sand",
+ "name": "Chicken N Egg Timecharm",
+ "rarity": "special",
+ "type": "",
+ "description": "\u00a77Place this timecharm in the Rift Gallery to secure it forever!",
+ "hypixel": {
+  "origin": "RIFT"
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Lonely Avaeikx",
+  "role": "Lonely Terrace",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    20.5,
+    69.0,
+    -44.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "Would you... sit with me a while?",
+    "Nobody ever stays."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Lonely Avaeikx"
+    }
+  }
+}

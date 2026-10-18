@@ -1,0 +1,14 @@
+{
+  "name": "Barrier Street",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    20,
+    0,
+    -100
+  ],
+  "to": [
+    45,
+    200,
+    -80
+  ]
+}

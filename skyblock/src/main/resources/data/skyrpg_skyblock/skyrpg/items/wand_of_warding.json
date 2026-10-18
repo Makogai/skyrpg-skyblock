@@ -1,7 +1,7 @@
 {
  "skyblock_id": "WAND_OF_WARDING",
  "base": "minecraft:diamond",
- "name": "%%aqua%%Warding Diamathame",
+ "name": "Warding Diamathame",
  "rarity": "rare",
  "type": "",
  "glint": true,

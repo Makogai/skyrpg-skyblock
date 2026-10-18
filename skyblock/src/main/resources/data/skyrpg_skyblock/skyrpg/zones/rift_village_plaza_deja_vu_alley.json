@@ -1,0 +1,14 @@
+{
+  "name": "Deja Vu Alley",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    20,
+    0,
+    -120
+  ],
+  "to": [
+    62,
+    200,
+    -106
+  ]
+}

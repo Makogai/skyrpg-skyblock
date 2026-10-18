@@ -1,0 +1,26 @@
+{
+  "name": "Plumber Joe",
+  "role": "Buckets",
+  "color": "#5555FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -61.5,
+    69.0,
+    -44.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:item.bucket.fill",
+  "greetings": [
+    "Leaky pipes everywhere in this place.",
+    "A Plumber's Bucket never runs dry."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Plumber Joe"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Alchemist",
+  "role": "Potions",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -75.5,
+    69.0,
+    -56.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.brewing_stand.brew",
+  "greetings": [
+    "Potions brewed from things that shouldn't exist.",
+    "Come back when I've got stock."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Alchemist (Rift)"
+    }
+  }
+}

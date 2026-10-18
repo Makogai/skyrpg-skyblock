@@ -41,10 +41,11 @@ final class RiftNpcs {
             "Argofay Trafficker 3", List.of(new Sale("WYLD_HELMET", 1, 1_000, null, 0)),
             "Argofay Trafficker 4", List.of(new Sale("WYLD_CHESTPLATE", 1, 2_000, null, 0)),
             "Argofay Threebrothers", List.of(new Sale("WYLD_SWORD", 1, 333, "SHAME_CRUX", 3)),
-            "Argofay Bugshopper", List.of(new Sale("LARVA_HOOK", 1, 0, "SHAME_CRUX", 6)),
+            "Argofay Bugshopper", List.of(new Sale("LARVA_HOOK", 1, 0, "SHAME_CRUX", 6), new Sale("EMPTY_ODONATA_BOTTLE", 1, 400, "SHAME_CRUX", 2)),
             "Shifted", List.of(new Sale("RIFT_SPEED_ELIXIR", 1, 10_000, "SHAME_CRUX", 5), new Sale("RIFT_JUMP_ELIXIR", 1, 5_000, "SHAME_CRUX", 5),
                     new Sale("RIFT_STRENGTH_ELIXIR", 1, 12_000, "SHAME_CRUX", 5)),
-            "Kay", List.of(new Sale("LIL_PAD", 1, 10, null, 0), new Sale("LIL_PAD", 16, 160, null, 0)));
+            "Kay", List.of(new Sale("LIL_PAD", 1, 10, null, 0), new Sale("LIL_PAD", 16, 160, null, 0)),
+            "Seymour", List.of(new Sale("EXCEEDINGLY_COMFY_SNEAKERS", 1, 49_999, "GUNTHER_SNEAKERS", 1)));
 
     /** What the Motes Grubber pays for one of each Rift item (decided: Hypixel's table wasn't found). */
     private static final Map<String, Long> GRUBBER = Map.of("LARVA_SILK", 8L, "MUTED_BARK", 15L, "DEADGEHOG_SPINE", 20L, "LIL_PAD", 4L,
@@ -65,6 +66,28 @@ final class RiftNpcs {
             Map.entry("Dr. Phear", List.of("Leeches. Leeches everywhere.", "The way up is behind me when you've had enough.")),
             Map.entry("Mushroom Guy", List.of("The mushrooms grow when you come close. They like you.", "There's a soul in the grove, if you know where to look.")),
             Map.entry("The Gill-Man", List.of("Blub.", "Blub blub.")),
+            Map.entry("Shania", List.of("The crops won't grow right here. Nothing does.", "If only someone had a proper pair of Chicken Leggs...")),
+            Map.entry("Sick Farmer", List.of("*cough* Don't eat the berries.", "The Volts came with the storm and never left.")),
+            Map.entry("The Baba Yaga", List.of("Hee hee hee.", "The eye sees every field.")),
+            Map.entry("Barry", List.of("Please, everyone, calm down!", "My pen... has anyone seen my Montgray Pen? I can't sign anything without it.")),
+            Map.entry("Protester", List.of("Down with Barry!", "We want answers!", "What do we want? Answers! When do we want them? Yesterday!")),
+            Map.entry("Cowboy Nick", List.of("Howdy, partner. My rabbits are hungry.", "Feed 'em carrots and I'll lend you my Horsezooka.")),
+            Map.entry("Detective Amog", List.of("There's been a murder. Or there will be. Or there was.", "Time runs backwards around that house.")),
+            Map.entry("Seraphine", List.of("I was... something else, once.", "An Anti-Morph Potion would set me right.")),
+            Map.entry("Damia", List.of("Shen's Auctions open once a SkyBlock year.", "Bids in Motes only, dear.")),
+            Map.entry("Taylor", List.of("Hems, seams, rifts. I mend them all.", "Mind the needles.")),
+            Map.entry("Lonely Avaeikx", List.of("Would you... sit with me a while?", "Nobody ever stays.")),
+            Map.entry("The Bankster", List.of("Interest compounds. So do eyes.", "The eye watches the vault.")),
+            Map.entry("Gunther", List.of("Fancy a race? Ten checkpoints round the village.", "Under a minute and I'll have something for you.")),
+            Map.entry("Chef", List.of("Hot dogs! Fifty in a minute and you're a legend.", "Joey's got the buns.")),
+            Map.entry("Joey McPizza", List.of("Buns, buns, buns.", "Chef says you look hungry.")),
+            Map.entry("Unhinged Kloon", List.of("The terminals! They're all the wrong colour!", "Rainbow. They should be rainbow.")),
+            Map.entry("Kat", List.of("The vermin have taken over my house.", "Bring me Silverfish and I'll make you a key.")),
+            Map.entry("Sorcerer Okron", List.of("The glyphs ward the village. Mostly.", "Trace them right and the trinket is yours.")),
+            Map.entry("Alchemist", List.of("Potions brewed from things that shouldn't exist.", "Come back when I've got stock.")),
+            Map.entry("Finplex", List.of("Zoop the Fish. Ninety-nine thousand nine hundred ninety-nine Motes.", "Worth every Mote.")),
+            Map.entry("Plumber Joe", List.of("Leaky pipes everywhere in this place.", "A Plumber's Bucket never runs dry.")),
+            Map.entry("Dr. Emmett", List.of("The Mirrorverse lies through that door. Everything there is backwards.", "Bring the Supreme Timecharm's proof and step through.")),
             Map.entry("Roy", List.of("Found an Enigma Soul in the mud. Interested?")),
             Map.entry("Grumblefoot", List.of("Scrolls! Scrolls for the weary!")));
 
@@ -77,6 +100,11 @@ final class RiftNpcs {
     static void init() {
     }
 
+    /** An NPC's shown name: without a trailing number or "(Rift)". */
+    static String display(String name) {
+        return name.replaceAll(" \\(.*\\)$| \\d+$", "");
+    }
+
     static ItemStack icon(String id) {
         ItemDefinition def = ItemRegistry.skyblock(id);
         return def == null ? ItemStack.EMPTY : SkyItems.create(def, 1);
@@ -84,7 +112,7 @@ final class RiftNpcs {
 
     /** The nearest Mannequin named like the NPC (for its portrait), or -1. */
     private static int npcNear(ServerPlayer player, String name) {
-        String base = name.replaceAll(" \\d+$", "");
+        String base = display(name);
         Entity best = null;
         for (Entity entity : player.level().getEntities(player, player.getBoundingBox().inflate(8), e -> e instanceof Mannequin)) {
             if (entity.getCustomName() != null && entity.getCustomName().getString().contains(base)
@@ -199,22 +227,30 @@ final class RiftNpcs {
             com.skyrpg.core.action.Actions.run("skyblock_shop", player, params);
             return;
         }
-        if (name.equals("Motes Grubber")) {
+        if (name.equals("Elise")) {
+            Timecharms.elise(player, npcNear(player, "Elise"));
+            return;
+        }
+        if (name.startsWith("Motes Grubber")) {
             grubber(player);
             return;
         }
         if (name.equals("Roy")) {
-            roy(player);
+            soulSale(player, "Roy", "npc:Roy", 4_000, "DEADGEHOG_SPINE", 8, "Deadgehogs drop spines in the lagoon.");
+            return;
+        }
+        if (name.equals("Cryptosis")) {
+            soulSale(player, "Cryptosis", "npc:Cryptosis", 15_000, "SCRIBE_CRUX", 10, "Scribes drop their crux in the Plaza's alleys.");
             return;
         }
         if (SHOPS.containsKey(name)) {
             shop(player, name);
             return;
         }
-        List<String> lines = LINES.getOrDefault(name, List.of("..."));
+        List<String> lines = LINES.getOrDefault(display(name), List.of("..."));
         Map<String, Integer> heard = HEARD.computeIfAbsent(player.getUUID(), id -> new HashMap<>());
         int at = heard.getOrDefault(name, 0);
-        player.sendSystemMessage(Component.literal("[NPC] " + name.replaceAll(" \\d+$", "") + ": ").withStyle(ChatFormatting.YELLOW)
+        player.sendSystemMessage(Component.literal("[NPC] " + display(name) + ": ").withStyle(ChatFormatting.YELLOW)
                 .append(Component.literal(lines.get(at % lines.size())).withStyle(ChatFormatting.WHITE)));
         heard.put(name, at + 1);
         // Tel Kar's whole story is worth an Enigma Soul.
@@ -240,7 +276,7 @@ final class RiftNpcs {
                 ItemStack item = icon(sale.item());
                 cards.add(CardView.Card.offer(item.isEmpty() ? item : item.copyWithCount(sale.count()), price));
             }
-            return new CardView("RIFT", name.replaceAll(" \\d+$", ""), "Motes shop", npc, List.of(Chip.balance("motes", motes)), cards,
+            return new CardView("RIFT", display(name), "Motes shop", npc, List.of(Chip.balance("motes", motes)), cards,
                     "Motes come from Rift mobs, mote orbs and the Motes Grubber.", 1, 32);
         }, (p, card) -> {
             Sale sale = sales.get(card);
@@ -260,26 +296,26 @@ final class RiftNpcs {
         });
     }
 
-    /** Roy sells an Enigma Soul: 4,000 Motes and 8 Deadgehog Spines. */
-    private static void roy(ServerPlayer player) {
-        int npc = npcNear(player, "Roy");
+    /** An NPC who sells an Enigma Soul (Roy: 4,000 Motes + 8 Deadgehog Spines; Cryptosis: 15,000 + 10 Scribe Crux). */
+    private static void soulSale(ServerPlayer player, String name, String soul, long motesCost, String item, int count, String hint) {
+        int npc = npcNear(player, name);
         CardMenu.open(player, p -> {
             long motes = Motes.get(p);
-            boolean had = EnigmaSouls.has(p, "npc:Roy");
-            List<CardView.Card> cards = List.of(new CardView.Card("Roy's Enigma Soul", had ? "You already bought it." : "Found in the mud. Yours, for a price.",
+            boolean had = EnigmaSouls.has(p, soul);
+            List<CardView.Card> cards = List.of(new CardView.Card(name + "'s Enigma Soul", had ? "You already bought it." : "Yours, for a price.",
                     0xFF55FF, !had, had ? "Sold" : "Buy", new ItemStack(Items.AMETHYST_SHARD), "", had ? List.of()
-                    : List.of(Chip.price("motes", 4_000, motes), Chip.item(icon("DEADGEHOG_SPINE"), 8, Sacks.countAnywhere(p, "DEADGEHOG_SPINE"))), -1, ""));
-            return new CardView("RIFT", "Roy", "Enigma Soul", npc, List.of(Chip.balance("motes", motes)), cards, "Deadgehogs drop spines in the lagoon.", 1, 34);
+                    : List.of(Chip.price("motes", motesCost, motes), Chip.item(icon(item), count, Sacks.countAnywhere(p, item))), -1, ""));
+            return new CardView("RIFT", name, "Enigma Soul", npc, List.of(Chip.balance("motes", motes)), cards, hint, 1, 34);
         }, (p, card) -> {
-            if (EnigmaSouls.has(p, "npc:Roy")) {
+            if (EnigmaSouls.has(p, soul)) {
                 return "";
             }
-            if (Motes.get(p) < 4_000 || Sacks.countAnywhere(p, "DEADGEHOG_SPINE") < 8) {
-                return "You need 4,000 Motes and 8 Deadgehog Spines.";
+            if (Motes.get(p) < motesCost || Sacks.countAnywhere(p, item) < count) {
+                return "You need " + Msg.number(motesCost) + " Motes and " + count + " " + icon(item).getHoverName().getString() + ".";
             }
-            Motes.take(p, 4_000);
-            Sacks.takeAnywhere(p, "DEADGEHOG_SPINE", 8);
-            EnigmaSouls.find(p, "npc:Roy");
+            Motes.take(p, motesCost);
+            Sacks.takeAnywhere(p, item, count);
+            EnigmaSouls.find(p, soul);
             return "";
         });
     }

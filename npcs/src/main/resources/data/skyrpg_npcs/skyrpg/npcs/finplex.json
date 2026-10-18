@@ -1,0 +1,26 @@
+{
+  "name": "Finplex",
+  "role": "Zoop the Fish",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -61.5,
+    69.0,
+    -58.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.fish.swim",
+  "greetings": [
+    "Zoop the Fish. Ninety-nine thousand nine hundred ninety-nine Motes.",
+    "Worth every Mote."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Finplex"
+    }
+  }
+}

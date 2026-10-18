@@ -1,0 +1,26 @@
+{
+  "name": "Motes Grubber",
+  "role": "Eats Rift items",
+  "color": "#FF55FF",
+  "hint": "Sell",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -92.5,
+    70.5,
+    -72.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.generic.eat",
+  "greetings": [
+    "I eat Rift things and pay in Motes.",
+    "Hungry, always hungry."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Motes Grubber (West Village)"
+    }
+  }
+}

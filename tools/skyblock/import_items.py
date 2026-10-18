@@ -118,7 +118,7 @@ STATS = {
 # Fields that become top-level definition keys; everything else goes under "hypixel".
 TAKEN = {"id", "material", "durability", "name", "tier", "stats", "skin", "color", "glowing", "category",
          "category_display", "description", "unstackable", "item_model", "tiered_stats"}
-FORMATTING = re.compile("§.")
+FORMATTING = re.compile("§.|%%[a-z_]+%%")
 # Hypixel's %%colour%% placeholders in descriptions -> Minecraft formatting codes.
 CODES = {"black": "0", "dark_blue": "1", "dark_green": "2", "dark_aqua": "3", "dark_red": "4", "dark_purple": "5",
          "gold": "6", "gray": "7", "dark_gray": "8", "blue": "9", "green": "a", "aqua": "b", "red": "c",

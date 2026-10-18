@@ -1,0 +1,26 @@
+{
+  "name": "Chef",
+  "role": "Hot dogs",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -56.5,
+    69.0,
+    -74.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.generic.eat",
+  "greetings": [
+    "Hot dogs! Fifty in a minute and you're a legend.",
+    "Joey's got the buns."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Chef"
+    }
+  }
+}

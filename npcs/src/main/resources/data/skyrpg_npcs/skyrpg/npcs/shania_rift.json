@@ -1,0 +1,26 @@
+{
+  "name": "Shania",
+  "role": "Dreadfarm",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -55.5,
+    69.0,
+    -140.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.chicken.ambient",
+  "greetings": [
+    "The crops won't grow right here.",
+    "If only someone had a pair of proper Chicken Leggs..."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Shania (Rift)"
+    }
+  }
+}

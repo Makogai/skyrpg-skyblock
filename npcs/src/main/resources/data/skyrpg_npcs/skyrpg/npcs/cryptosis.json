@@ -1,0 +1,26 @@
+{
+  "name": "Cryptosis",
+  "role": "Enigma Soul",
+  "color": "#FF55FF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -13.5,
+    69.0,
+    -52.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.amethyst_block.resonate",
+  "greetings": [
+    "Souls, for the discerning collector.",
+    "15,000 Motes and ten Scribe Crux."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Cryptosis"
+    }
+  }
+}

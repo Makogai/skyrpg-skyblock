@@ -10,10 +10,10 @@ wiki puts them:
     wyld_woods      x -160..-11,  z   60..199   giant interconnected trees, treehouses, the Rift Wizard Tower (arrival)
     black_lagoon    x -200..-61,  z  -30..59    a swamp of channels, giant mushrooms, the Lagoon Hut, the Leeches Lair
     (later parts)
-    west_village    x -140..-31,  z -120..-31
-    village_plaza   x  -30..69,   z -120..-31   (Barrier Street on its east side)
+    west_village    x -140..-31,  z -120..-32   (north of the Black Lagoon, across a rope bridge)
+    village_plaza   x  -30..69,   z -120..-31   (Barrier Street on its east side, Deja Vu Alley's islets at its north)
     dreadfarm       x -110..-1,   z -210..-121
-    living_cave     x  -20..69,   z -240..-171  (Deja Vu Alley between it and the Plaza)
+    living_cave     x    0..69,   z -240..-171  (north of Deja Vu Alley; the Dreadfarm has x -110..-1)
     mountaintop     x  -10..89,   z  -30..59    the tall peak in the middle (to y 160)
     photon_pathway  x   90..169,  z  -40..19
     chateau         x  170..259,  z   20..159   Stillgore Chateau
@@ -50,11 +50,23 @@ Y0, Y1 = 0, 200
 BOXES = {
     "wyld_woods": ((-160, Y0, 60), (150, Y1 - Y0, 140)),
     "black_lagoon": ((-200, Y0, -30), (140, Y1 - Y0, 90)),
+    "west_village": ((-140, Y0, -120), (110, Y1 - Y0, 90)),
+    "village_plaza": ((-30, Y0, -120), (100, Y1 - Y0, 90)),
+    "dreadfarm": ((-110, Y0, -210), (110, Y1 - Y0, 90)),
 }
 
 # Where neighbouring areas meet: (boundary, the crossing path's centre). The Wyld Woods and the Black Lagoon share
 # z = 60 for x -160..-61; their path crosses at x -105 (Tel Kar stands near it, at about (-113, 69, 62)).
-CROSSINGS = {("wyld_woods", "black_lagoon"): ("z", 60, -105)}
+CROSSINGS = {
+    ("wyld_woods", "black_lagoon"): ("z", 60, -105),
+    # The Black Lagoon's north edge is a cliff over the void: West Village reaches it with a rope bridge at x -90.
+    ("black_lagoon", "west_village"): ("z", -31, -90),
+    ("west_village", "village_plaza"): ("x", -30, -70),
+    ("west_village", "dreadfarm"): ("z", -121, -70),
+    ("village_plaza", "dreadfarm"): ("z", -121, -15),
+}
+# Gates (the mod enforces them): West Village and Dreadfarm need the Supreme Timecharm; the Plaza needs the Mirrorverse
+# and Chicken N Egg Timecharms (part 3). Put a gate arch where each crossing enters a gated area (decoration only).
 
 # The arrival: inside the Rift Wizard Tower, where players appear from the Hub's portal.
 ARRIVAL = (-45.5, 69.0, 110.5)

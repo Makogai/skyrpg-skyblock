@@ -1,0 +1,26 @@
+{
+  "name": "Cowboy Nick",
+  "role": "Rabbits",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -19.5,
+    69.0,
+    -107.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.rabbit.ambient",
+  "greetings": [
+    "Howdy, partner. My rabbits are hungry.",
+    "Feed 'em carrots and I'll lend you my Horsezooka."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Cowboy Nick"
+    }
+  }
+}

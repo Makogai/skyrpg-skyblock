@@ -1,0 +1,26 @@
+{
+  "name": "Dr. Emmett",
+  "role": "The Mirrorverse",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -125.5,
+    69.0,
+    -108.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.portal.ambient",
+  "greetings": [
+    "The Mirrorverse lies through that door.",
+    "Everything in there is backwards. Even me."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Dr. Emmett"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
  "skyblock_id": "VOLCANIC_ROCK",
  "base": "minecraft:player_head",
- "name": "%%red%%Volcanic Rock",
+ "name": "Volcanic Rock",
  "rarity": "epic",
  "type": "",
  "skin": {

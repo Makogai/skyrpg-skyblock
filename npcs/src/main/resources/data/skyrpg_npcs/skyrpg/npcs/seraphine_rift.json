@@ -1,0 +1,26 @@
+{
+  "name": "Seraphine",
+  "role": "Detransfigured",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    17.5,
+    69.0,
+    -75.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.allay.ambient_without_item",
+  "greetings": [
+    "I was... something else, once.",
+    "An Anti-Morph Potion would set me right."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Seraphine"
+    }
+  }
+}

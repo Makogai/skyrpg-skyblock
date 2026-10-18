@@ -1,0 +1,26 @@
+{
+  "name": "Protester",
+  "role": "Protester",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -9.5,
+    69.0,
+    -58.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.no",
+  "greetings": [
+    "Down with Barry!",
+    "We want answers!"
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Protester 1"
+    }
+  }
+}

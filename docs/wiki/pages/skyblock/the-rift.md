@@ -3,7 +3,7 @@ title: The Rift
 category: skyblock
 order: 7
 icon: minecraft:chorus_fruit
-summary: Hypixel's Rift - a timed dimension behind the Wizard Tower's portal, with Rift Time, Motes, Enigma Souls, the Wyld Woods and the Black Lagoon.
+summary: Hypixel's Rift - a timed dimension behind the Wizard Tower's portal, with Rift Time, Motes, Enigma Souls, Timecharms, the Leech Supreme, the Wyld Woods, the Black Lagoon, West Village, the Dreadfarm and the Village Plaza.
 ---
 **The Rift** is a strange dimension you can only visit for a while. It opens at **SkyBlock Level 12**.
 
@@ -70,7 +70,40 @@ West of the woods is a swamp of channels, giant mushrooms and the **Lagoon Hut**
 | Deadgehog | 150 | 3 Deadgehog Spines (sometimes 4) |
 | Lagoon Leech | 40 | Lil' Pads |
 
-The **Leeches Lair** lies under the lagoon, reached by the tunnel past Dr. Edwin.
+The channels are rough: right-click the water with a **Lil' Pad** to put down a lily pad you can stand on for 10 seconds.
+
+### The Leech Supreme
+
+The **Leeches Lair** lies under the lagoon, reached by the tunnel past Dr. Edwin. Its boss, the **Leech Supreme**, has 800 health and four phases:
+
+- **Slime Pound:** a shockwave around it (-8 seconds; get off the ground).
+- **Wicked Bombs:** red circles that blow up after 2 seconds (-10 seconds).
+- **Leech Swarm:** small leeches.
+- **Mortiferous Lazer:** a beam; **sneak** to duck under it.
+
+It drops **8 Leech Supreme Fragments and 3,000 Motes** to everyone who fought it, and comes back 40 seconds later.
+
+## Timecharms
+
+**Timecharms** open the rest of the Rift. Craft them or earn them, then bring them to **Elise** in the Rift's Wizard Tower to secure them: +100 SkyBlock XP each, and your first earns the **Rift Necklace**.
+
+The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Deadgehog Spines and 4 Leech Supreme Fragments. To bottle an **Odonata** (the dragonflies over the woods' ponds), hold an Empty Odonata Bottle (the Bugshopper sells them) and look at one for 3 seconds.
+
+| Area | Needs |
+| --- | --- |
+| Black Lagoon | 4:00 Rift Time left |
+| West Village | the Supreme Timecharm, 3:00 left |
+| Dreadfarm | the Supreme Timecharm |
+| Village Plaza | the Supreme Timecharm, 8:00 left |
+| Barrier Street | the Supreme Timecharm, 10:00 left |
+
+## West Village, the Dreadfarm and the Village Plaza
+
+- **West Village:** north of the lagoon, across a rope bridge. Crooked houses, walkable rooftops, the Cake House, the Infested House and the Mirrorverse's door. **Shadows** drop 150 Motes and Shadow Crux.
+- **The Dreadfarm:** a wilted mirror of the Hub's farm, with the **Great Beanstalk** to climb. **Volts** drop 155 Motes and Volt Crux.
+- **The Village Plaza:** the town square, Barry and his protesters, Barrier Street and the floating islets of Deja Vu Alley. **Scribes** drop 100 Motes and Scribe Crux.
+  - Cryptosis sells an Enigma Soul for 15,000 Motes and 10 Scribe Crux.
+  - Seymour sells the Exceedingly Comfy Sneakers.
 
 > [!NOTE]
-> Not here yet: the Leech Supreme, Montezuma, Porhtal's eyes, Reed's boat, and the rest of the Rift (West Village, Dreadfarm, the Mirrorverse, Village Plaza, the Living Cave, the Colosseum, the Mountaintop, Stillgore Château and the Vampire Slayer).
+> Not here yet: Montezuma, Porhtal's eyes, Reed's boat, the area quests (Gunther's race, the hot dog contest...), the Mirrorverse, the Living Cave, the Colosseum, the Mountaintop, Stillgore Château and the Vampire Slayer.

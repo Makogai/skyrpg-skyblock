@@ -1,0 +1,26 @@
+{
+  "name": "Elise",
+  "role": "Rift Gallery",
+  "color": "#FF55FF",
+  "hint": "Timecharms",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -49.5,
+    69.0,
+    114.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "Timecharms keep the Rift from tearing further.",
+    "Bring me one and I'll secure it in the Gallery."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Elise"
+    }
+  }
+}

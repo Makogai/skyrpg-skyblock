@@ -1,7 +1,7 @@
 {
  "skyblock_id": "ELLE_FUEL_CELL",
  "base": "minecraft:player_head",
- "name": "%%green%%Ballista Fuel Cell",
+ "name": "Ballista Fuel Cell",
  "rarity": "common",
  "type": "",
  "skin": {

@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_west_village",
+  "origin": [
+    -140,
+    0,
+    -120
+  ],
+  "version": 2,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

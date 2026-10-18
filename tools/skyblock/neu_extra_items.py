@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """SkyBlock items Hypixel's items API leaves out but the game needs, from NEU's item files (tools/skyblock/cache/neu-repo.zip):
-the five Kuudra Keys.
+the five Kuudra Keys and the Rift's eight Timecharms (with their crafting recipes).
 
     python tools/skyblock/neu_extra_items.py
 
@@ -47,5 +47,31 @@ def main():
         print(ident, item["name"], item["rarity"], "skin" if value else "no skin")
 
 
+# The Rift's Timecharms: block-looking trophies (NEU's legacy item ids mapped to 26.x), recipes where NEU has them.
+TIMECHARMS = ["RIFT_TROPHY_WYLDLY_SUPREME", "RIFT_TROPHY_CHICKEN_N_EGG", "RIFT_TROPHY_MIRRORED", "RIFT_TROPHY_CITIZEN",
+              "RIFT_TROPHY_LAZY_LIVING", "RIFT_TROPHY_SLIME", "RIFT_TROPHY_VAMPIRIC", "RIFT_TROPHY_MOUNTAIN"]
+LEGACY = {"minecraft:leaves": "minecraft:oak_leaves", "minecraft:slime": "minecraft:slime_block"}
+RECIPES = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/skyblock_recipes"
+CELLS = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"]
+
+
+def timecharms():
+    neu = zipfile.ZipFile(CACHE / "neu-repo.zip")
+    for ident in TIMECHARMS:
+        data = json.loads(neu.read(NEU + ident + ".json"))
+        lore = [strip(line) for line in data["lore"]]
+        text = [line for line in lore if line and line.split()[0] not in RARITIES + ("SPECIAL",) and not line.startswith(("Rift-", "*"))][:3]
+        item = {"skyblock_id": ident, "base": LEGACY.get(data["itemid"], data["itemid"]), "name": strip(data["displayname"]),
+                "rarity": "special", "type": "", "description": "§7" + " ".join(text), "hypixel": {"origin": "RIFT"}}
+        (ITEMS / (ident.lower() + ".json")).write_text(json.dumps(item, indent=1) + "\n", encoding="utf-8")
+        recipe = data.get("recipe") or {}
+        if recipe:
+            grid = [recipe.get(cell, "") for cell in CELLS]
+            (RECIPES / (ident.lower() + ".json")).write_text(json.dumps({"output": ident, "count": 1, "grid": grid}) + "\n",
+                                                             encoding="utf-8")
+        print(ident, item["name"], item["base"], "recipe" if recipe else "no recipe")
+
+
 if __name__ == "__main__":
     main()
+    timecharms()

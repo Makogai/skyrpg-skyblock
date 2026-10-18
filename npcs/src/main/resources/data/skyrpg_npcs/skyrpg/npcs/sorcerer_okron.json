@@ -1,0 +1,26 @@
+{
+  "name": "Sorcerer Okron",
+  "role": "Glyphs",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -61.5,
+    69.0,
+    -80.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.enchantment_table.use",
+  "greetings": [
+    "The glyphs ward the village. Mostly.",
+    "Trace them right and the trinket is yours."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Sorcerer Okron"
+    }
+  }
+}

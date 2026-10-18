@@ -1,0 +1,26 @@
+{
+  "name": "Damia",
+  "role": "Shen's Auctions",
+  "color": "#FFAA00",
+  "hint": "Auctions",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    30.5,
+    69.0,
+    -94.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Shen's Auctions open once a SkyBlock year.",
+    "Bids in Motes only."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Damia"
+    }
+  }
+}
