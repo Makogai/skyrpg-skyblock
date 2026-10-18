@@ -238,6 +238,12 @@ public final class SkyMining {
         return local != null ? local : BLOCKS.get(state.getBlock());
     }
 
+    /** A Dwarven Metal or gemstone here (Mithril, Titanium, Glacite...), as opposed to stone. */
+    public static boolean isMetal(Level level, BlockState state) {
+        Metal metal = metal(level, state);
+        return metal != null && !metal.item().equals("HARD_STONE");
+    }
+
     /** What mining a block by hand gives here (Mithril, Titanium, Hard Stone, gemstones), or null for normal drops. */
     static Metal metal(Level level, BlockState state) {
         Metal local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock())

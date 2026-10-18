@@ -126,6 +126,11 @@ public final class Mayors {
         });
         Actions.register("election", (player, params) -> ElectionMenu.open(player));
         com.skyrpg.core.world.Mayor.install(Mayors::active);
+        com.skyrpg.skyblock.time.CalendarEvents.perks(Mayors::active);
+        MayorSync.init();
+        MiningFiesta.init();
+        FishingFestival.init();
+        Diana.init();
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> {
             dispatcher.register(Commands.literal("election").executes(ctx -> {
                 ElectionMenu.open(ctx.getSource().getPlayerOrException());

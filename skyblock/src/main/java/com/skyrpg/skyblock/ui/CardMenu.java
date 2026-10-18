@@ -88,6 +88,18 @@ public final class CardMenu extends AbstractContainerMenu {
         return true;
     }
 
+    /**
+     * A card menu has no inventory slots, so what a click put in or took from the inventory (a purchase, a gift) never
+     * reached the client while it was open: send the whole inventory again when it closes.
+     */
+    @Override
+    public void removed(Player player) {
+        super.removed(player);
+        if (player instanceof ServerPlayer server && owner != null) {
+            server.level().getServer().execute(() -> server.inventoryMenu.sendAllDataToRemote());
+        }
+    }
+
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         return ItemStack.EMPTY;

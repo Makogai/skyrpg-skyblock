@@ -691,7 +691,12 @@ phase so the next session can pick up where this one stopped.
       Late Summer to the 27th of Late Spring), 5 candidates rolled per year (specials every 8 years, Hypixel's years),
       votes at Clerk Seraphine or `/election`, Mayor and Minister, `/mayor`, the stat perks and the perks hooked into
       Slayers, the Forge, pets, minions, taxes, zone mobs, dungeons, pests and Shen's Auctions; Scorpius's Bribe.
-- [ ] Mayors part 2: the mayor events (Mythological Ritual, Fishing Festival, Mining Fiesta, Carnival) and the rest.
+- [x] **Mayors part 2** (`Diana`, `FishingFestival`, `MiningFiesta`, `MayorSync`): Diana's Mythological Ritual (burrow
+      chains, the Echo, Hypixel's treasure tables and twelve Mythological mobs by Griffin rarity, Diana's shop), Marina's
+      Fishing Festival (the four sharks), Cole's Mining Fiesta drops, the mayor events on the calendar, Benediction,
+      GOATed, Blooming Business; card menus now resend the inventory when they close (purchases showed late).
+- [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
+      Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 
 ### Owner directions (2026-10-16)
 

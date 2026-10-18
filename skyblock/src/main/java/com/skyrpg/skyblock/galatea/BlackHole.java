@@ -45,7 +45,8 @@ final class BlackHole {
     }
 
     private static boolean place(ServerPlayer player) {
-        int tier = TIERS.indexOf(SkyItems.skyblockId(player.getMainHandItem()));
+        String held = SkyItems.skyblockId(player.getMainHandItem());
+        int tier = held == null ? -1 : TIERS.indexOf(held);
         if (tier < 0) {
             return false;
         }

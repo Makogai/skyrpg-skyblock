@@ -243,7 +243,9 @@ final class Visitors {
     private static Offer roll(GardenData.State state, Random random) {
         int level = Garden.level(state);
         double roll = random.nextDouble() * 100;
-        int rarity = level >= 14 && roll < 2 ? 3 : roll < 10 ? 2 : roll < 40 ? 1 : 0;
+        // Finnegan's Blooming Business: rarer visitors 20% more likely
+        double rare = com.skyrpg.core.world.Mayor.active("blooming_business") ? 1.2 : 1;
+        int rarity = level >= 14 && roll < 2 * rare ? 3 : roll < 10 * rare ? 2 : roll < 40 * rare ? 1 : 0;
         String[] names = ROSTER[rarity];
         String name = names[random.nextInt(names.length)];
         int crops = Math.min(CROP_ORDER.length, Math.max(1, level));
@@ -283,7 +285,8 @@ final class Visitors {
         }
         offer.wants().forEach((id, n) -> com.skyrpg.skyblock.sack.Sacks.takeAnywhere(player, id, n));
         state.visitors.remove(index);
-        int copper = (int) Math.round(offer.copper() * (1 + GardenChips.value(player, "SYNTHESIS") / 100));
+        int copper = (int) Math.round(offer.copper() * (1 + GardenChips.value(player, "SYNTHESIS") / 100)
+                * (com.skyrpg.core.world.Mayor.active("blooming_business") ? 1.1 : 1));
         state.copper += copper;
         boolean first = !state.served.containsKey(offer.name());
         state.served.merge(offer.name(), 1, Integer::sum);

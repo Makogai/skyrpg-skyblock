@@ -66,6 +66,9 @@ public final class SkySeaCreatures {
     private static final int MAX_PER_PLAYER = 20;
     private static final long LIFETIME_TICKS = 6 * 60 * 20;
     private static final double LEASH = 64;
+    /** During the Fishing Festival: the share of water sea creatures that are sharks, and Shark Bait's extra (Hypixel's). */
+    private static final double SHARK_CHANCE = 0.15;
+    private static final double SHARK_BAIT = 0.20;
 
     public record Drop(String item, double chance, int min, int max) {
     }
@@ -153,6 +156,19 @@ public final class SkySeaCreatures {
                 }
             }
         }
+        // Marina's Fishing Festival: a share of the water's sea creatures are sharks (Shark Bait: more)
+        if (!lava && com.skyrpg.skyblock.time.CalendarEvents.running("fishing_festival", System.currentTimeMillis()) != null
+                && random.nextDouble() < SHARK_CHANCE + (bait != null && bait.id().equals("SHARK_BAIT") ? SHARK_BAIT : 0)) {
+            List<Creature> sharks = creatures.stream().filter(c -> c.condition().equals("fishing_festival") && fishing >= c.fishingLevel()).toList();
+            double sum = sharks.stream().mapToDouble(Creature::weight).sum();
+            double at = random.nextDouble() * sum;
+            for (Creature shark : sharks) {
+                at -= shark.weight();
+                if (at < 0) {
+                    return shark;
+                }
+            }
+        }
         boolean rareBoost = bait != null && (bait.rare().equals("always") || bait.rare().equals("day") && !night
                 || bait.rare().equals("night") && night);
         List<Creature> pool = new ArrayList<>();
@@ -165,7 +181,7 @@ public final class SkySeaCreatures {
             if (c.condition().equals("dark_bait_night") && !(night && bait != null && bait.id().equals("DARK_BAIT"))) {
                 continue;
             }
-            if (c.condition().equals("carrot_bait")) {
+            if (c.condition().equals("carrot_bait") || c.condition().equals("fishing_festival")) {
                 continue;
             }
             double weight = c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1);

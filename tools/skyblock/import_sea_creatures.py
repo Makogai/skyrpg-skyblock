@@ -88,9 +88,22 @@ CREATURES = {
     "LORD_JAWBUS": ("Lord Jawbus", "lava", 45, 8, 40000, 15000, {"dimension": CRIMSON}, None,
                     "You have angered a legendary creature... Lord Jawbus has arrived."),
     "RAGNAROK": ("Ragnarok", "lava", 46, 5, 50000, 20000, {"dimension": CRIMSON}, None, "The sky darkens and the air thickens. Ragnarok has arrived."),
+    # Marina's Fishing Festival: sharks replace 15% of the water's sea creatures (weights within the shark pool, Hypixel's).
+    "NURSE_SHARK": ("Nurse Shark", "water", 5, 2875, 220, 80, None, "fishing_festival",
+                    "A tiny fin emerges from the water, you've caught a Nurse Shark."),
+    "BLUE_SHARK": ("Blue Shark", "water", 10, 1500, 650, 150, None, "fishing_festival",
+                   "You spot a fin as blue as the water it came from, it's a Blue Shark."),
+    "TIGER_SHARK": ("Tiger Shark", "water", 18, 500, 1485, 300, None, "fishing_festival", "A striped beast bounds from the depths, the wild Tiger Shark!"),
+    "GREAT_WHITE_SHARK": ("Great White Shark", "water", 24, 100, 3200, 750, None, "fishing_festival",
+                          "Hide no longer, a Great White Shark has tracked your scent and thirsts for your blood!"),
 }
 # What NEU's render can't show as a mob (an invisible armour stand wearing the creature): decision.
-LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER": {"entity": "minecraft:spider"}}
+LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER": {"entity": "minecraft:spider"},
+                 # the sharks: NEU's render is an old zombie stand-in; decision: dolphins
+                 "NURSE_SHARK": {"entity": "minecraft:dolphin"}, "BLUE_SHARK": {"entity": "minecraft:dolphin"},
+                 "TIGER_SHARK": {"entity": "minecraft:dolphin"}, "GREAT_WHITE_SHARK": {"entity": "minecraft:dolphin"}}
+# Where NEU's sea creature data is out of date (the sharks: Hypixel's wiki, Oct 2026): level, Combat XP, coins.
+STATS_OVERRIDE = {"NURSE_SHARK": (22, 26, 22), "BLUE_SHARK": (52, 67, 65), "TIGER_SHARK": (99, 149, 148), "GREAT_WHITE_SHARK": (160, 401, 320)}
 # NEU's lore has "1.200,000" for the Pyroclastic Worm.
 HEALTH_OVERRIDE = {"PYROCLASTIC_WORM": 1_200_000}
 
@@ -249,6 +262,8 @@ def main():
                     "level": recipe.get("level", 1), "health": health, "damage": damage, "fishing_xp": fxp,
                     "combat_xp": recipe.get("xp") or 0, "coins": recipe.get("coins") or 0, "message": message,
                     "look": LOOK_OVERRIDE.get(ident) or look(neu, recipe.get("render", "Zombie"), name), "drops": drops}
+        if ident in STATS_OVERRIDE:
+            creature["level"], creature["combat_xp"], creature["coins"] = STATS_OVERRIDE[ident]
         if where:
             creature["where"] = where
         if condition:

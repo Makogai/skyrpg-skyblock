@@ -77,9 +77,9 @@ final class EssencePerks {
         return player.getAttachedOrElse(LEVELS, Map.of()).getOrDefault(id, 0);
     }
 
-    /** Blessings' strength from Forbidden Blessing: 1 + 1% a level. */
+    /** Blessings' strength from Forbidden Blessing (1 + 1% a level) and Paul's Benediction (+25%). */
     static double blessingBoost(ServerPlayer player) {
-        return 1 + level(player, "forbidden_blessing") / 100.0;
+        return 1 + level(player, "forbidden_blessing") / 100.0 + (com.skyrpg.core.world.Mayor.active("benediction") ? 0.25 : 0);
     }
 
     /** Buys the next level of a perk: "" when done, else why not. */

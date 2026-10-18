@@ -44,10 +44,38 @@ tax x4; listing fees aren't taxes), DOUBLE MOBS HP (zone monsters), Marauder (du
 Dungeon score), Pest Eradicator (a fifth off the wait between pests), Volume Trading (Shen's Auctions: twice the
 winners), Double Trouble (+0.1 Double Hook Chance per Sea Creature Chance), Scorpius's Bribe.
 
-## Not yet (part 2)
+## Part 2: the mayor events
 
-The events: Diana's Mythological Ritual (Griffin burrows, the Inquisitor), Marina's Fishing Festival (sharks), Cole's
-Mining Fiesta drops, Foxy's Carnival and Extra Event, Jerrypocalypse, Darker Auctions, Diaz's Stonks Auction and
-Shopping Spree, Finnegan's GOATed, Blooming Business and Grand Feast, Diana's Sharing is Caring, Paul's Benediction,
-Sweet Benevolence, A Time for Giving. Voting weight (Fame, Voter's Badge) and Hypixel's perk carry-over.
+- **Calendar**: the client now gets the perks in effect (`MayorSync`), so the calendar shows the Mayor's events:
+  the Fishing Festival (first 3 days of every month), the Mythological Ritual and the Mining Fiesta (all term).
+- **Marina's Fishing Festival** (`FishingFestival`, `SkySeaCreatures`): Hypixel's start and end messages; during it,
+  15% of water sea creatures are sharks (Shark Bait +20%), picked by Hypixel's weights from those your Fishing level
+  unlocks: Nurse (5, weight 2,875), Blue (10, 1,500), Tiger (18, 500), Great White (24, 100), with the wiki's levels,
+  health, damage, XP and coins and NEU's drops (fins, teeth, Megalodon pets, Carnival Tickets). Decided: sharks look
+  like dolphins.
+- **Cole's Mining Fiesta** (`MiningFiesta`): Refined Minerals from ores and Dwarven Metals and Glossy Gemstones from
+  gemstones, Hypixel's chance (the block's Breaking Power / 5000).
+- **Diana's Mythological Ritual** (`Diana`): Diana on the Hub plaza sells the Griffin (25,000 coins, during her ritual)
+  and the Ancestral Spade (5,000 coins and 32 Gold Ingots). Hold a spade in the Hub and three start burrows (green)
+  wait on the grass near you; left-click one to dig it, opening a chain of 4 / 6 / 8 burrows (Ancestral, Archaic,
+  Deific); the spade's Echo (right-click) draws a trail to the next. Every later burrow is 75% a mob (red) and 25%
+  treasure (gold): Hypixel's treasure tables per spade (Griffin Feathers, coins, Mythos Fragments, Braided Griffin
+  Feather, Myth the Fish), the Crown of Greed doubling coins; and Hypixel's twelve Mythological mobs, the pool growing
+  with the Griffin's rarity (Minos Hunter and Siamese Lynxes at Common to Manticore and King Minos at Mythic, elusive
+  ones x (1 + Tracking / 100)), each with the wiki's level, health, damage, coins and XP at every rarity, Ancient
+  Claws and Enchanted Gold, and its rare drop (Hilt of Revelations, Crochet Tiger Plushie, Washed-up Souvenir, Cretan
+  Urn, Antique Remedies, Dwarf Turtle Shelmet, Daedalus Stick, Minos Relic, Chimera I, Brain Food, Fateful Stinger,
+  Manti-core, Crown of Greed, Shimmering Wool) with Magic Find. A mob must be beaten for its burrow to count, and only a
+  Griffin of at least its rarity can hurt it. Decided: burrows come 15 to 50 blocks away; the trail is yellow under 25
+  blocks, red under 60, grey beyond; mob burrows need a Griffin out.
+- **More perks**: Benediction (blessings +25%), GOATed (contest brackets reach 10% further), Blooming Business (+10%
+  Copper, rarer visitors 20% more likely).
+- Fix found on the way: anything a card-menu click put in or took from your inventory (purchases) didn't show until
+  the inventory re-synced; card menus now resend the inventory when they close.
 
+## Not yet (part 3)
+
+The mobs' special attacks (Gaia Construct's stages, the Minotaur's bleed, the Champion's and Inquisitor's damage
+ramps, the Sphinx's quiz, King Minos's phases), Griffin Upgrade Stones at Kat, Foxy's Carnival and Extra Event,
+Jerrypocalypse, Darker Auctions, Diaz's Stonks Auction and Shopping Spree, Grand Feast, Sharing is Caring, Sweet
+Benevolence, A Time for Giving. Voting weight (Fame, Voter's Badge) and Hypixel's perk carry-over.

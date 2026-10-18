@@ -1,0 +1,23 @@
+{
+  "name": "Diana",
+  "role": "Mythological Ritual",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    7.5,
+    65.0,
+    -10.5
+  ],
+  "yaw": 45.0,
+  "sound": "minecraft:entity.parrot.ambient",
+  "greetings": [
+    "The Griffins are restless. Can you hear them?",
+    "Follow the Echo of your spade."
+  ],
+  "action": {
+    "type": "diana"
+  }
+}

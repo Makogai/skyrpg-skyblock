@@ -1710,6 +1710,174 @@
    "where": {
     "dimension": "skyrpg_skyblock:crimson_isle"
    }
+  },
+  {
+   "id": "NURSE_SHARK",
+   "name": "Nurse Shark",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 5,
+   "weight": 2875,
+   "level": 22,
+   "health": 2500.0,
+   "damage": 80,
+   "fishing_xp": 220,
+   "combat_xp": 26,
+   "coins": 22,
+   "message": "A tiny fin emerges from the water, you've caught a Nurse Shark.",
+   "look": {
+    "entity": "minecraft:dolphin"
+   },
+   "drops": [
+    {
+     "item": "SHARK_FIN",
+     "chance": 1.0,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "item": "NURSE_SHARK_TOOTH",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CARNIVAL_TICKET",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "fishing_festival"
+  },
+  {
+   "id": "BLUE_SHARK",
+   "name": "Blue Shark",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 10,
+   "weight": 1500,
+   "level": 52,
+   "health": 25000.0,
+   "damage": 150,
+   "fishing_xp": 650,
+   "combat_xp": 67,
+   "coins": 65,
+   "message": "You spot a fin as blue as the water it came from, it's a Blue Shark.",
+   "look": {
+    "entity": "minecraft:dolphin"
+   },
+   "drops": [
+    {
+     "item": "SHARK_FIN",
+     "chance": 1.0,
+     "min": 4,
+     "max": 4
+    },
+    {
+     "item": "BLUE_SHARK_TOOTH",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CARNIVAL_TICKET",
+     "chance": 0.0015,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "fishing_festival"
+  },
+  {
+   "id": "TIGER_SHARK",
+   "name": "Tiger Shark",
+   "rarity": "EPIC",
+   "fluid": "water",
+   "fishing_level": 18,
+   "weight": 500,
+   "level": 99,
+   "health": 250000.0,
+   "damage": 300,
+   "fishing_xp": 1485,
+   "combat_xp": 149,
+   "coins": 148,
+   "message": "A striped beast bounds from the depths, the wild Tiger Shark!",
+   "look": {
+    "entity": "minecraft:dolphin"
+   },
+   "drops": [
+    {
+     "item": "SHARK_FIN",
+     "chance": 1.0,
+     "min": 8,
+     "max": 8
+    },
+    {
+     "item": "TIGER_SHARK_TOOTH",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "pet:MEGALODON:EPIC",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CARNIVAL_TICKET",
+     "chance": 0.0025,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "fishing_festival"
+  },
+  {
+   "id": "GREAT_WHITE_SHARK",
+   "name": "Great White Shark",
+   "rarity": "LEGENDARY",
+   "fluid": "water",
+   "fishing_level": 24,
+   "weight": 100,
+   "level": 160,
+   "health": 1500000.0,
+   "damage": 750,
+   "fishing_xp": 3200,
+   "combat_xp": 401,
+   "coins": 320,
+   "message": "Hide no longer, a Great White Shark has tracked your scent and thirsts for your blood!",
+   "look": {
+    "entity": "minecraft:dolphin"
+   },
+   "drops": [
+    {
+     "item": "SHARK_FIN",
+     "chance": 1.0,
+     "min": 16,
+     "max": 16
+    },
+    {
+     "item": "GREAT_WHITE_SHARK_TOOTH",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "pet:MEGALODON:LEGENDARY",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CARNIVAL_TICKET",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "fishing_festival"
   }
  ]
 }

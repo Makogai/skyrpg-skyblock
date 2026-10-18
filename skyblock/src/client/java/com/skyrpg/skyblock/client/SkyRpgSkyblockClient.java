@@ -69,6 +69,11 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         SkyRpgMenu.registerPage(new ProfilesPage());
         SkyRpgMenu.registerPage(new FastTravelPage());
         ClientPlayNetworking.registerGlobalReceiver(FastTravel.WarpList.TYPE, (payload, context) -> FastTravelPage.set(payload));
+        // The Mayor's perks, for the calendar's mayor events.
+        ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.mayor.MayorSync.State.TYPE, (payload, context) -> {
+            java.util.Set<String> perks = java.util.Set.copyOf(payload.perks());
+            com.skyrpg.skyblock.time.CalendarEvents.perks(perks::contains);
+        });
         ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.pet.PetCatalog.CatalogPayload.TYPE, (payload, context) -> payload.apply());
         ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.travel.Lifts.Menu.TYPE,
                 (payload, context) -> net.minecraft.client.Minecraft.getInstance().gui.setScreen(new LiftScreen(payload)));

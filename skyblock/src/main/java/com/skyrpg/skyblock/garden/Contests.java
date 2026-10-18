@@ -187,7 +187,8 @@ public final class Contests {
                 UUID id = ranked.get(i).getKey();
                 int bracket = bracket(entry.getKey(), ranked.get(i).getValue());
                 if (ranked.size() >= 10) {
-                    double share = (i + 1) / (double) ranked.size();
+                    // Finnegan's GOATed: the brackets reach 10% further down the standings
+                    double share = (i + 1) / (double) ranked.size() / (com.skyrpg.core.world.Mayor.active("goated") ? 1.1 : 1);
                     int byStanding = 0;
                     for (int b = TOP.length - 1; b >= 1; b--) {
                         if (share <= TOP[b]) {
