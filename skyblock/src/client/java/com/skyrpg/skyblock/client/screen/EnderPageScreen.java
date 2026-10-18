@@ -16,7 +16,8 @@ import net.minecraft.world.item.Items;
 
 /**
  * An Ender Chest page, SkyRPG style: a tab per page down the left (the locked ones dimmed), the page's 45 slots, and
- * a Wardrobe tab. Switching tabs swaps the page in place, without closing the screen.
+ * a Wardrobe tab. Switching tabs swaps the page in place, without closing the screen. A backpack from Storage shows
+ * here too, with only its own slots.
  */
 public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu> {
     private static final ScreenTheme THEME = ScreenTheme.SKYBLOCK;
@@ -34,8 +35,13 @@ public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu
         int x = leftPos;
         int y = topPos;
         int page = menu.page();
-        SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Ender Chest"),
-                Component.literal("Page " + (page + 1) + " of " + Math.max(1, menu.unlocked())));
+        if (menu.backpack()) {
+            SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, title,
+                    Component.literal("Backpack slot " + (page - Storage.BACKPACK_PAGE + 1) + "  ·  " + menu.size() + " slots"));
+        } else {
+            SkyScreens.window(g, font, THEME, x, y, imageWidth, imageHeight, Component.literal("Ender Chest"),
+                    Component.literal("Page " + (page + 1) + " of " + Math.max(1, menu.unlocked())));
+        }
         for (int i = 0; i < Storage.MAX_PAGES; i++) {
             int tx = x + EnderPageMenu.PAD;
             int ty = y + EnderPageMenu.TOP + i * TAB_STEP;
@@ -52,8 +58,8 @@ public final class EnderPageScreen extends AbstractContainerScreen<EnderPageMenu
         SkyScreens.tab(g, font, THEME, x + EnderPageMenu.PAD, wy, EnderPageMenu.TAB_W, EnderPageMenu.TAB_H, "", false, overWardrobe);
         Draw.item(g, WARDROBE_ICON, x + EnderPageMenu.PAD + (EnderPageMenu.TAB_W - 12) / 2, wy + 2, 0.75f);
 
-        // The page: a well under every slot.
-        for (int i = 0; i < Storage.PAGE_SIZE; i++) {
+        // The page: a well under every slot (a backpack's own only).
+        for (int i = 0; i < menu.size(); i++) {
             SkyScreens.well(g, THEME, x + EnderPageMenu.GRID_X + (i % 9) * 18, y + EnderPageMenu.GRID_Y + (i / 9) * 18);
         }
         int labelY = y + EnderPageMenu.INV_Y - 11;

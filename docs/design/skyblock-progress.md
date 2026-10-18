@@ -37,7 +37,9 @@ phase so the next session can pick up where this one stopped.
 - [x] Storage: Ender Chest pages (45 slots, 2 of 9 unlocked at the start; more with SkyBlock Leveling later,
       `/storage unlock` for admins), the Storage page in the K menu (previews), `/storage`, `/ec [page]`; ender chests
       open it; the old 27-slot ender chest moves into page 1. Wardrobe: 9 sets, Hypixel's layout and rules, `/wardrobe`.
-      Backpacks in Storage come later (our backpacks still live in the inventory's backpack slot).
+      Backpacks in Storage (2026-10-18): Hypixel's 18 backpack slots; right-click a SkyBlock backpack (Small 9 to Jumbo
+      45, any colour) to store it, open it from the Storage page as a page of its own size, take it out once empty
+      (decided, so nothing nests). The old survival backpacks still have their inventory slots.
 - [x] Pack: Catharsis (client mod) and FurfSky Reborn (resource pack, `game_versions: ["26.2"]`, saved as
       `FurfSkyReborn.cats.zip`) in tools/pack/modrinth.json, downloaded from Modrinth by each launcher; a Settings toggle
       (Interface, "FurfSky Reborn item looks", on) keeps it enabled. Not published yet.

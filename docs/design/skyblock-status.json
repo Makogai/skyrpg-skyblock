@@ -39,7 +39,7 @@
           "name": "Storage & Wardrobe",
           "icon": "item/bundle",
           "weight": 3,
-          "done": 45
+          "done": 75
         },
         {
           "name": "Calendar & time",
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-10-18",
-      "overall": 69.2
+      "overall": 71.6
     }
   ]
 }

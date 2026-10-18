@@ -36,14 +36,26 @@ public final class StoragePayloads {
                 PagePreview::new);
     }
 
+    /** One backpack slot: the backpack (EMPTY when the slot is free), its size, how many slots are used, the first items. */
+    public record BackpackPreview(ItemStack backpack, int size, int used, List<ItemStack> items) {
+        static final StreamCodec<RegistryFriendlyByteBuf, BackpackPreview> CODEC = StreamCodec.composite(
+                ItemStack.OPTIONAL_STREAM_CODEC, BackpackPreview::backpack,
+                ByteBufCodecs.VAR_INT, BackpackPreview::size,
+                ByteBufCodecs.VAR_INT, BackpackPreview::used,
+                ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()), BackpackPreview::items,
+                BackpackPreview::new);
+    }
+
     /** Server to client: the player's storage, for the Storage page. */
-    public record Summary(int unlocked, List<PagePreview> pages, List<ItemStack> wardrobe, int equipped) implements CustomPacketPayload {
+    public record Summary(int unlocked, List<PagePreview> pages, List<ItemStack> wardrobe, int equipped, List<BackpackPreview> backpacks)
+            implements CustomPacketPayload {
         public static final Type<Summary> TYPE = new Type<>(SkyRpgSkyblock.id("storage_summary"));
         public static final StreamCodec<RegistryFriendlyByteBuf, Summary> CODEC = StreamCodec.composite(
                 ByteBufCodecs.VAR_INT, Summary::unlocked,
                 PagePreview.CODEC.apply(ByteBufCodecs.list()), Summary::pages,
                 ItemStack.OPTIONAL_STREAM_CODEC.apply(ByteBufCodecs.list()), Summary::wardrobe,
                 ByteBufCodecs.VAR_INT, Summary::equipped,
+                BackpackPreview.CODEC.apply(ByteBufCodecs.list()), Summary::backpacks,
                 Summary::new);
 
         @Override
@@ -63,7 +75,10 @@ public final class StoragePayloads {
         }
     }
 
-    /** Client to server: open Ender Chest page {@code page} (0-based), or the Wardrobe for -1. */
+    /**
+     * Client to server: open Ender Chest page {@code page} (0-based), the Wardrobe for -1, backpack slot {@code page - 100},
+     * or take the (empty) backpack out of slot {@code page - 200}.
+     */
     public record Open(int page) implements CustomPacketPayload {
         public static final Type<Open> TYPE = new Type<>(SkyRpgSkyblock.id("storage_open"));
         public static final StreamCodec<RegistryFriendlyByteBuf, Open> CODEC =
@@ -104,6 +119,8 @@ public final class StoragePayloads {
     static void open(ServerPlayer player, int page) {
         if (page < 0) {
             Wardrobe.open(player);
+        } else if (page >= 2 * Storage.BACKPACK_PAGE) {
+            Storage.takeOut(player, page - 2 * Storage.BACKPACK_PAGE);
         } else {
             Storage.open(player, page);
         }
@@ -129,7 +146,26 @@ public final class StoragePayloads {
             }
             pages.add(new PagePreview(used, preview));
         }
-        ServerPlayNetworking.send(player, new Summary(unlocked, pages, Wardrobe.heads(player), Wardrobe.equipped(player)));
+        List<BackpackPreview> backpacks = new ArrayList<>();
+        for (int slot = 0; slot < Storage.BACKPACK_SLOTS; slot++) {
+            ItemStack backpack = Storage.backpack(player, slot);
+            if (backpack.isEmpty()) {
+                backpacks.add(new BackpackPreview(ItemStack.EMPTY, 0, 0, List.of()));
+                continue;
+            }
+            List<ItemStack> preview = new ArrayList<>();
+            int used = 0;
+            for (ItemStack stack : Storage.backpackItems(player, slot)) {
+                if (!stack.isEmpty()) {
+                    used++;
+                    if (preview.size() < 4) {
+                        preview.add(stack.copy());
+                    }
+                }
+            }
+            backpacks.add(new BackpackPreview(backpack.copy(), Storage.capacity(backpack), used, preview));
+        }
+        ServerPlayNetworking.send(player, new Summary(unlocked, pages, Wardrobe.heads(player), Wardrobe.equipped(player), backpacks));
     }
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {

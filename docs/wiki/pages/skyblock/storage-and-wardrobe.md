@@ -19,6 +19,20 @@ The Ender Chest screen has a tab for every page down its left side. Click one to
 - Shift-click an ender chest to place things against it without opening Storage.
 - The first time you use Storage, whatever was in your old 27-slot ender chest moves into page 1.
 
+## Backpacks
+
+Storage has **18 backpack slots**. Right-click a backpack in your hand to put it in the first free slot, then open it from the Storage page like an Ender Chest page:
+
+| Backpack | Slots |
+| --- | --- |
+| Small Backpack | 9 |
+| Medium Backpack | 18 |
+| Large Backpack | 27 |
+| Greater Backpack | 36 |
+| Jumbo Backpack | 45 |
+
+Coloured backpacks work the same way. To take a backpack back out, empty it first, then right-click it on the Storage page.
+
 ## Wardrobe
 
 The Wardrobe saves up to **9 armour sets** and lets you swap between them in one click. Open it from the Storage page, the tab in the Ender Chest screen, or type **`/wardrobe`**. As on Hypixel, it opens at **SkyBlock Level 5** (see [SkyBlock Leveling](skyblock-leveling)).

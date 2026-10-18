@@ -38,7 +38,7 @@ public final class EnderPageMenu extends AbstractContainerMenu {
 
     /** The client's copy. */
     public EnderPageMenu(int id, Inventory inventory) {
-        this(id, inventory, new SimpleContainer(Storage.PAGE_SIZE), new SimpleContainerData(2), null);
+        this(id, inventory, new SimpleContainer(Storage.PAGE_SIZE), new SimpleContainerData(3), null);
     }
 
     static EnderPageMenu server(int id, Inventory inventory, ServerPlayer owner, int page) {
@@ -46,7 +46,7 @@ public final class EnderPageMenu extends AbstractContainerMenu {
         ContainerData data = new ContainerData() {
             @Override
             public int get(int index) {
-                return index == 0 ? container.page : Storage.unlocked(owner);
+                return index == 0 ? container.page : index == 1 ? Storage.unlocked(owner) : container.size();
             }
 
             @Override
@@ -55,7 +55,7 @@ public final class EnderPageMenu extends AbstractContainerMenu {
 
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
         };
         return new EnderPageMenu(id, inventory, container, data, owner);
@@ -67,7 +67,19 @@ public final class EnderPageMenu extends AbstractContainerMenu {
         this.data = data;
         this.owner = owner;
         for (int i = 0; i < Storage.PAGE_SIZE; i++) {
-            addSlot(new Slot(page, i, GRID_X + 1 + (i % 9) * 18, GRID_Y + 1 + (i / 9) * 18));
+            int index = i;
+            // a backpack smaller than a page: the slots past it are switched off
+            addSlot(new Slot(page, i, GRID_X + 1 + (i % 9) * 18, GRID_Y + 1 + (i / 9) * 18) {
+                @Override
+                public boolean isActive() {
+                    return index < size();
+                }
+
+                @Override
+                public boolean mayPlace(ItemStack stack) {
+                    return index < size() && Storage.capacity(stack) <= 0;
+                }
+            });
         }
         addStandardInventorySlots(inventory, INV_X + 1, INV_Y);
         addDataSlots(data);
@@ -80,6 +92,17 @@ public final class EnderPageMenu extends AbstractContainerMenu {
 
     public int unlocked() {
         return data.get(1);
+    }
+
+    /** How many of the 45 slots are in use: a page has all, a backpack its size. */
+    public int size() {
+        int size = data.get(2);
+        return size <= 0 ? Storage.PAGE_SIZE : size;
+    }
+
+    /** A backpack (not an Ender Chest page) is shown. */
+    public boolean backpack() {
+        return page() >= Storage.BACKPACK_PAGE;
     }
 
     @Override
@@ -108,7 +131,7 @@ public final class EnderPageMenu extends AbstractContainerMenu {
         ItemStack before = stack.copy();
         boolean moved = index < Storage.PAGE_SIZE
                 ? moveItemStackTo(stack, Storage.PAGE_SIZE, slots.size(), true)
-                : moveItemStackTo(stack, 0, Storage.PAGE_SIZE, false);
+                : Storage.capacity(stack) <= 0 && moveItemStackTo(stack, 0, size(), false);
         if (!moved) {
             return ItemStack.EMPTY;
         }
@@ -131,18 +154,27 @@ public final class EnderPageMenu extends AbstractContainerMenu {
         private int page;
         private boolean loading;
 
+        /** Slots in use: 45 for a page, the backpack's size for a backpack. */
+        private int size = Storage.PAGE_SIZE;
+
         Page(ServerPlayer owner, int page) {
             super(Storage.PAGE_SIZE);
             this.owner = owner;
             show(page);
         }
 
+        int size() {
+            return size;
+        }
+
         void show(int page) {
             this.page = page;
             loading = true;
-            NonNullList<ItemStack> items = Storage.page(owner, page);
+            boolean backpack = page >= Storage.BACKPACK_PAGE;
+            NonNullList<ItemStack> items = backpack ? Storage.backpackItems(owner, page - Storage.BACKPACK_PAGE) : Storage.page(owner, page);
+            size = backpack ? items.size() : Storage.PAGE_SIZE;
             for (int i = 0; i < Storage.PAGE_SIZE; i++) {
-                setItem(i, items.get(i));
+                setItem(i, i < items.size() ? items.get(i) : ItemStack.EMPTY);
             }
             loading = false;
         }
@@ -150,7 +182,12 @@ public final class EnderPageMenu extends AbstractContainerMenu {
         @Override
         public void setChanged() {
             super.setChanged();
-            if (!loading) {
+            if (loading) {
+                return;
+            }
+            if (page >= Storage.BACKPACK_PAGE) {
+                Storage.saveBackpack(owner, page - Storage.BACKPACK_PAGE, getItems().subList(0, size));
+            } else {
                 Storage.save(owner, page, getItems());
             }
         }

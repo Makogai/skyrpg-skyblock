@@ -20,15 +20,19 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 /**
- * Storage, as in Hypixel's SkyBlock Menu: the Wardrobe and the Ender Chest pages, each with a peek at what's inside.
- * Click one to open it. Ender chests in the world open this page too.
+ * Storage, as in Hypixel's SkyBlock Menu: the Wardrobe, the Ender Chest pages and the 18 backpack slots, each with a
+ * peek at what's inside. Click one to open it; right-click an empty backpack to take it out. Ender chests in the world
+ * open this page too.
  */
 public final class StoragePage implements MenuPage {
     private static final int WARDROBE_H = 40;
     private static final int GAP = 5;
     private static final int COLUMNS = 3;
 
-    private static StoragePayloads.Summary summary = new StoragePayloads.Summary(Storage.STARTING_PAGES, List.of(), List.of(), -1);
+    private static final int BACKPACK_COLUMNS = 6;
+    private static final int BACKPACK_H = 34;
+
+    private static StoragePayloads.Summary summary = new StoragePayloads.Summary(Storage.STARTING_PAGES, List.of(), List.of(), -1, List.of());
 
     /** Clickable cards this frame: x, y, w, h, page (-1 = wardrobe). */
     private final List<int[]> cards = new ArrayList<>();
@@ -53,7 +57,7 @@ public final class StoragePage implements MenuPage {
 
     @Override
     public Component subtitle() {
-        return Component.literal("Your Wardrobe and Ender Chest pages. Ender chests open this too");
+        return Component.literal("Your Wardrobe, Ender Chest pages and backpacks. Ender chests open this too");
     }
 
     @Override
@@ -70,7 +74,8 @@ public final class StoragePage implements MenuPage {
     @Override
     public int scrollHeight(int width) {
         int rows = (Storage.MAX_PAGES + COLUMNS - 1) / COLUMNS;
-        return WARDROBE_H + GAP + rows * (40 + GAP) - GAP;
+        int backpackRows = (Storage.BACKPACK_SLOTS + BACKPACK_COLUMNS - 1) / BACKPACK_COLUMNS;
+        return WARDROBE_H + GAP + rows * (52 + GAP) + 14 + backpackRows * (BACKPACK_H + GAP) - GAP;
     }
 
     @Override
@@ -100,7 +105,7 @@ public final class StoragePage implements MenuPage {
         int top = y + WARDROBE_H + GAP;
         int rows = (Storage.MAX_PAGES + COLUMNS - 1) / COLUMNS;
         int cellW = (ctx.width() - GAP * (COLUMNS - 1)) / COLUMNS;
-        int cellH = Math.min(52, (ctx.height() - WARDROBE_H - GAP - GAP * (rows - 1)) / rows);
+        int cellH = 40;
         for (int page = 0; page < Storage.MAX_PAGES; page++) {
             int x = ctx.x() + page % COLUMNS * (cellW + GAP);
             int cy = top + page / COLUMNS * (cellH + GAP);
@@ -135,15 +140,65 @@ public final class StoragePage implements MenuPage {
             }
             cards.add(new int[] {x, cy, cellW, cellH, page});
         }
+
+        // The backpack slots: the backpack, how full it is, a peek inside.
+        int by = top + rows * (cellH + GAP) + 2;
+        Draw.text(g, font, "Backpacks", ctx.x(), by, Theme.ACCENT);
+        by += 12;
+        int bw = (ctx.width() - GAP * (BACKPACK_COLUMNS - 1)) / BACKPACK_COLUMNS;
+        for (int slot = 0; slot < Storage.BACKPACK_SLOTS; slot++) {
+            int x = ctx.x() + slot % BACKPACK_COLUMNS * (bw + GAP);
+            int cy = by + slot / BACKPACK_COLUMNS * (BACKPACK_H + GAP);
+            StoragePayloads.BackpackPreview preview = slot < summary.backpacks().size() ? summary.backpacks().get(slot) : null;
+            boolean filled = preview != null && !preview.backpack().isEmpty();
+            boolean over = ctx.hovered(x, cy, bw, BACKPACK_H);
+            Draw.panel(g, x, cy, bw, BACKPACK_H, over && filled ? Theme.CARD_HOVER : Theme.CARD, over && filled ? Theme.ACCENT : Theme.CARD_BORDER);
+            if (!filled) {
+                Draw.fitText(g, font, "Slot " + (slot + 1), x + 5, cy + 5, bw - 10, Theme.DIM);
+                Draw.fitText(g, font, "Empty", x + 5, cy + 18, bw - 10, Theme.DIM);
+                if (over) {
+                    ctx.tooltip(List.of(Component.literal("Backpack slot " + (slot + 1)).withColor(Theme.ACCENT),
+                            Component.literal("Right-click a backpack in your hand to put it here").withColor(Theme.MUTED)), Theme.ACCENT);
+                }
+                continue;
+            }
+            Draw.item(g, preview.backpack(), x + 4, cy + 4, 1f);
+            Draw.fitText(g, font, preview.used() + "/" + preview.size(), x + 22, cy + 8, bw - 26, preview.used() >= preview.size() ? Theme.RED : Theme.MUTED);
+            int ix = x + 4;
+            for (ItemStack stack : preview.items()) {
+                if (ix + 10 > x + bw - 3) {
+                    break;
+                }
+                Draw.item(g, stack, ix, cy + 22, 0.62f);
+                ix += 11;
+            }
+            if (over) {
+                ctx.tooltip(List.of(preview.backpack().getHoverName().copy(),
+                        Component.literal(preview.used() + " of " + preview.size() + " slots used").withColor(Theme.MUTED),
+                        Component.literal("Click to open").withColor(Theme.GREEN),
+                        Component.literal(preview.used() == 0 ? "Right-click to take it out" : "Empty it to take it out").withColor(Theme.MUTED)),
+                        Theme.ACCENT);
+            }
+            cards.add(new int[] {x, cy, bw, BACKPACK_H, Storage.BACKPACK_PAGE + slot});
+        }
     }
 
     @Override
     public boolean mouseClicked(PageContext ctx, double x, double y, int button) {
-        if (button != InputConstants.MOUSE_BUTTON_LEFT) {
+        boolean right = button == InputConstants.MOUSE_BUTTON_RIGHT;
+        if (button != InputConstants.MOUSE_BUTTON_LEFT && !right) {
             return false;
         }
         for (int[] card : cards) {
             if (x >= card[0] && x < card[0] + card[2] && y >= card[1] && y < card[1] + card[3]) {
+                if (right) {
+                    // right-click a backpack: take it out (the server checks it's empty)
+                    if (card[4] >= Storage.BACKPACK_PAGE) {
+                        ClientPlayNetworking.send(new StoragePayloads.Open(card[4] + Storage.BACKPACK_PAGE));
+                        return true;
+                    }
+                    return false;
+                }
                 ClientPlayNetworking.send(new StoragePayloads.Open(card[4]));
                 return true;
             }
