@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_living_cave",
+  "origin": [
+    0,
+    0,
+    -240
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

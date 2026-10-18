@@ -1,0 +1,26 @@
+{
+  "name": "Oubliette Guard",
+  "role": "Guard",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    270.5,
+    46.0,
+    -160.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:item.armor.equip_chain",
+  "greetings": [
+    "No one leaves the Oubliette.",
+    "Unless they beat us."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Oubliette Guard"
+    }
+  }
+}

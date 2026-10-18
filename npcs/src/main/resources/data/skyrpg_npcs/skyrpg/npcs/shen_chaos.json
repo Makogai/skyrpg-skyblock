@@ -1,0 +1,26 @@
+{
+  "name": "Shen Chaos",
+  "role": "Cerebral Citadel",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    25.5,
+    153.0,
+    16.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.enchantment_table.use",
+  "greetings": [
+    "I am Shen. The richest man in the multiverse.",
+    "Puzzles first. Riches after."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Shen Chaos"
+    }
+  }
+}

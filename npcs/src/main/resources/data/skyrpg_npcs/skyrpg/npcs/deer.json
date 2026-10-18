@@ -1,0 +1,26 @@
+{
+  "name": "Deer",
+  "role": "Photon Pathway",
+  "color": "#FFFFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    194.5,
+    69.0,
+    -81.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.fox.ambient",
+  "greetings": [
+    "You made it across.",
+    "The Chateau's doors open for those who reach me."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Deer"
+    }
+  }
+}

@@ -99,7 +99,13 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
             int left = Integer.parseInt(parts[0]);
             int max = Math.max(1, Integer.parseInt(parts[1]));
             int color = left <= 60 ? 0xFFFF5555 : 0xFF55FF55;
-            return new com.skyrpg.core.client.hud.VitalOverride.Bar("ф " + left / 60 + ":" + String.format("%02d", left % 60), left / (float) max, color);
+            String text = "ф " + left / 60 + ":" + String.format("%02d", left % 60);
+            if (parts.length >= 4) {
+                // Stillgore Chateau: Hearts too.
+                double hearts = Double.parseDouble(parts[2]);
+                text += "   ❤ " + (hearts % 1 == 0 ? String.valueOf((int) hearts) : String.valueOf(hearts)) + "/" + (int) Double.parseDouble(parts[3]);
+            }
+            return new com.skyrpg.core.client.hud.VitalOverride.Bar(text, left / (float) max, color);
         };
         ClientPlayNetworking.registerGlobalReceiver(Zones.ZoneList.TYPE, (payload, context) -> Zones.replace(payload.zones()));
         ClientPlayNetworking.registerGlobalReceiver(Areas.AreaPayload.TYPE, (payload, context) -> SidebarWidget.setArea(payload.area()));

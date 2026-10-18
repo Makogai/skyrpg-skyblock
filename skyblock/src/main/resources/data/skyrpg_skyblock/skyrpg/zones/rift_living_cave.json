@@ -1,0 +1,82 @@
+{
+  "name": "Living Cave",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    0,
+    59,
+    -240
+  ],
+  "to": [
+    69,
+    140,
+    -121
+  ],
+  "blocks": {
+    "minecraft:lapis_ore": {
+      "becomes": "minecraft:tuff",
+      "regrow": 30
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Autonull",
+      "level": 5,
+      "health": 155,
+      "damage": 7,
+      "xp": 6,
+      "coins": 400,
+      "max": 5,
+      "every": 8,
+      "from": [
+        26,
+        62,
+        -220
+      ],
+      "to": [
+        44,
+        72,
+        -206
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "NULLIFIED_METAL",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Autonull",
+      "level": 5,
+      "health": 155,
+      "damage": 7,
+      "xp": 6,
+      "coins": 400,
+      "max": 4,
+      "every": 8,
+      "from": [
+        22,
+        62,
+        -190
+      ],
+      "to": [
+        48,
+        72,
+        -176
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "NULLIFIED_METAL",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

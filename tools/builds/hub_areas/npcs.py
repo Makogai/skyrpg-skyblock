@@ -372,6 +372,9 @@ PEOPLE = {
               ["Fish the lava with a lava rod for Trophy Fish.", "Bring them to me: I'll fillet them for Magmafish."],
               {"type": "odger"}),
 }
+PORHTAL_EYES = {"The Intruder", "The Gill-Man", "The Baba Yaga", "The Bankster", "Gooey", "The Prince", "The 7th Sin"}
+
+
 def rift(name, file_id, role, colour, hint, skin_id, slim, sound, greetings, action=None):
     PEOPLE[name] = (file_id, re.sub(r" \(.*\)$| \d+$", "", name), role, colour, hint, skin(skin_id, slim), slim, sound, greetings,
                     action or {"type": "rift_npc", "params": {"name": name}})
@@ -470,6 +473,49 @@ rift("Dr. Emmett", "dr_emmett", "The Mirrorverse", "#55FFFF", "Talk", "kai", Fal
      ["The Mirrorverse lies through that door.", "Everything in there is backwards. Even me."])
 rift("Motes Grubber (West Village)", "motes_grubber_west_village", "Eats Rift items", "#FF55FF", "Sell", "makena", True,
      "minecraft:entity.generic.eat", ["I eat Rift things and pay in Motes.", "Hungry, always hungry."])
+rift("The Intruder", "the_intruder", "Porhtal eye", "#AA00AA", "Eye", "noor", False, "minecraft:block.portal.ambient",
+     ["The eye watches the tower.", "..."])
+rift("Rock", "rock_rift", "Living Cave", "#AAAAAA", "Talk", "steve", False, "minecraft:block.stone.hit",
+     ["We rocks hear the Living Metal hum.", "The snakes carry hearts of metal. Stop one, mine its tail."])
+rift("Chipper McPickaxe", "chipper_mcpickaxe", "Pickaxes", "#55FFFF", "Talk", "kai", False, "minecraft:block.stone.break",
+     ["The Anti-Sentient Pickaxe: 24,999 Motes.", "Lapis here grows Living Metal, if you know how to mine it."])
+rift("Gooey", "gooey", "Porhtal eye", "#55FF55", "Eye", "sunny", True, "minecraft:entity.slime.squish",
+     ["Blorp.", "The eye watches the arena."])
+rift("Colosseum Guard", "colosseum_guard", "Colosseum", "#FFAA00", "Talk", "efe", False, "minecraft:item.armor.equip_iron",
+     ["Bacte waits in the arena.", "Punch the Globowls into its tentacles."])
+rift("Deer", "deer", "Photon Pathway", "#FFFFFF", "Talk", "alex", True, "minecraft:entity.fox.ambient",
+     ["You made it across.", "The Chateau's doors open for those who reach me."])
+rift("Photon Keeper", "photon_keeper", "Photon Pathway", "#FFFF55", "Talk", "zuri", False, "minecraft:block.beacon.ambient",
+     ["The light holds the path together.", "Don't look down."])
+rift("Maddox the Slayer (Rift)", "maddox_rift", "Vampire Slayer", "#FF5555", "Slayer", "steve", False, "minecraft:entity.wither.ambient",
+     ["Vampires, friend. The Riftstalker Bloodfiend.", "Bring Motes and a stake."])
+rift("Fairylosopher", "fairylosopher", "Enigma Soul", "#FF55FF", "Shop", "noor", False, "minecraft:block.amethyst_block.chime",
+     ["I sell a soul to those who climb my tower.", "10,000 Motes and 32 Splatter Crux."])
+rift("Motes Grubber (Chateau)", "motes_grubber_chateau", "Eats Rift items", "#FF55FF", "Sell", "makena", True, "minecraft:entity.generic.eat",
+     ["Vampire leftovers taste best.", "Hungry, always hungry."])
+rift("Julian", "julian", "Prisoner", "#AAAAAA", "Talk", "kai", False, "minecraft:entity.villager.hurt",
+     ["Get me out of here!", "The guards change shifts... beat them and run."])
+rift("The Prince", "the_prince", "Porhtal eye", "#AA0000", "Eye", "efe", False, "minecraft:entity.vex.ambient",
+     ["Kneel.", "The eye watches the Chateau."])
+rift("Oubliette Guard", "oubliette_guard_npc", "Guard", "#AAAAAA", "Talk", "steve", False, "minecraft:item.armor.equip_chain",
+     ["No one leaves the Oubliette.", "Unless they beat us."])
+rift("Ubik Von Neumann", "ubik", "Games", "#FFFF55", "Talk", "ari", False, "minecraft:block.note_block.chime",
+     ["Three games, three souls.", "Split or steal? Choose wisely."])
+rift("Old Timer", "old_timer", "Timite", "#AAAAAA", "Talk", "steve", False, "minecraft:block.bell.use",
+     ["Timite grows older or younger depending on how you look at it.", "Bring me the Time Gun and we'll talk."])
+rift("Plate", "plate", "Wizardman Trials", "#55FFFF", "Talk", "kai", False, "minecraft:entity.evoker.prepare_attack",
+     ["The Trials test speed, wit and might.", "The Bureau opens for those with the Celestial charm."])
+for _shen in ("Albedo", "Chaos", "Citrinitas", "Magnum Opus", "Rubedo"):
+    rift(f"Shen {_shen}", "shen_" + _shen.lower().replace(" ", "_"), "Cerebral Citadel", "#FFAA00", "Talk", "zuri", False,
+         "minecraft:block.enchantment_table.use", ["I am Shen. The richest man in the multiverse.", "Puzzles first. Riches after."])
+rift("Madame Eleanor Q. Goldsworth I", "madame_eleanor", "Rose's End", "#FF55FF", "Talk", "alex", True, "minecraft:block.amethyst_block.resonate",
+     ["Darling, the outside world needs your skills.", "Bring me proof of your talents."])
+rift("Oruo the Almighty", "oruo", "Time Chamber", "#AA00AA", "Talk", "zuri", False, "minecraft:entity.warden.heartbeat",
+     ["The Time Chamber drains twice as fast.", "The Sun Gecko waits inside."])
+rift("The 7th Sin", "the_7th_sin", "Porhtal eye", "#AA0000", "Eye", "noor", False, "minecraft:entity.vex.charge",
+     ["Greed. Pride. Time.", "The eye watches the summit."])
+rift("Detective Amog (Mountaintop)", "detective_amog_mountaintop", "Detective", "#AAAAAA", "Talk", "kai", False,
+     "minecraft:entity.villager.ambient", ["The case continues up here.", "Someone dropped a wallet. Or will."])
 rift("The Gill-Man", "the_gill_man", "Porhtal eye", "#00AAAA", "Eye", "zuri", False, "minecraft:entity.guardian.ambient",
      ["Blub.", "The eye watches the lagoon."])
 
@@ -645,6 +691,9 @@ def main():
     for spots in all_spots.values():
         found = {name[len("spawn:"):] if name.startswith("spawn:") else name: {"pos": spot["pos"], "yaw": spot.get("yaw", 0.0)}
                  for name, spot in spots.get("npcs", {}).items() if name.startswith("spawn:") or name.startswith("enigma:")}
+        # Porhtal's eyes are NPCs whose places the mod also needs (fast travel to them).
+        found.update({"eye:" + name: {"pos": spot["pos"], "yaw": spot.get("yaw", 0.0)}
+                      for name, spot in spots.get("npcs", {}).items() if name in PORHTAL_EYES})
         if not found:
             continue
         entry = spawn_islands.setdefault(spots.get("island", "Hub"), {"dimension": spots.get("dimension", HUB), "spots": {}})

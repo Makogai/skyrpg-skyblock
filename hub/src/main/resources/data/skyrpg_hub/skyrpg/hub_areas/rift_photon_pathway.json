@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_photon_pathway",
+  "origin": [
+    70,
+    0,
+    -120
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Madame Eleanor Q. Goldsworth I",
+  "role": "Rose's End",
+  "color": "#FF55FF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    6.5,
+    126.0,
+    23.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.amethyst_block.resonate",
+  "greetings": [
+    "Darling, the outside world needs your skills.",
+    "Bring me proof of your talents."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Madame Eleanor Q. Goldsworth I"
+    }
+  }
+}

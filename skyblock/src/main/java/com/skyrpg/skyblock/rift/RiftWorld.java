@@ -45,18 +45,33 @@ final class RiftWorld {
     private static final int GAZE_TICKS = 60;
     private static final int PAD_TICKS = 10 * 20;
 
-    /** An area's gate: Rift Time it needs left, and the Timecharm ("" for none). */
+    /** An area's gate: Rift Time it needs left, and the Timecharm ("" for none; "flag:x" for a story flag). */
     record Gate(int seconds, String charm) {
     }
 
     /** Hypixel's gates (the Plaza's Mirrorverse and Chicken N Egg charms are waited for with the Supreme, decided: those come later). */
-    static final Map<String, Gate> GATES = Map.of(
-            "Black Lagoon", new Gate(4 * 60, ""),
-            "West Village", new Gate(3 * 60, Timecharms.SUPREME),
-            "Dreadfarm", new Gate(0, Timecharms.SUPREME),
-            "Village Plaza", new Gate(8 * 60, Timecharms.SUPREME),
-            "Barrier Street", new Gate(10 * 60, Timecharms.SUPREME),
-            "Deja Vu Alley", new Gate(5 * 60, Timecharms.SUPREME));
+    static final Map<String, Gate> GATES = Map.ofEntries(
+            Map.entry("Black Lagoon", new Gate(4 * 60, "")),
+            Map.entry("West Village", new Gate(3 * 60, Timecharms.SUPREME)),
+            Map.entry("Dreadfarm", new Gate(0, Timecharms.SUPREME)),
+            Map.entry("Village Plaza", new Gate(8 * 60, Timecharms.SUPREME)),
+            Map.entry("Barrier Street", new Gate(10 * 60, "RIFT_TROPHY_SLIME")),
+            Map.entry("Deja Vu Alley", new Gate(5 * 60, Timecharms.SUPREME)),
+            Map.entry("Living Cave", new Gate(5 * 60, "RIFT_TROPHY_CITIZEN")),
+            Map.entry("Living Stillness", new Gate(5 * 60, "RIFT_TROPHY_CITIZEN")),
+            Map.entry("Colosseum", new Gate(15 * 60, "RIFT_TROPHY_LAZY_LIVING")),
+            Map.entry("Stillgore Chateau", new Gate(0, "flag:deer")),
+            Map.entry("The Mountaintop", new Gate(9 * 60, "RIFT_TROPHY_VAMPIRIC")),
+            Map.entry("Time Chamber", new Gate(9 * 60, "RIFT_TROPHY_VAMPIRIC")));
+
+    /** How fast Rift Time runs in a zone (Hypixel's: half in the Colosseum, double in the Time Chamber). */
+    static double drain(String zone) {
+        return switch (zone) {
+            case "Colosseum" -> 0.5;
+            case "Time Chamber" -> 2;
+            default -> 1;
+        };
+    }
 
     private record Pad(BlockPos pos, long until) {
     }
@@ -86,6 +101,22 @@ final class RiftWorld {
             }
             ItemStack held = player.getItemInHand(hand);
             ItemDefinition def = SkyItems.definition(held);
+            // Healing Melons heal Hearts in Stillgore Chateau (Hypixel's 7 / 9 / 12).
+            double melon = def == null ? 0 : switch (String.valueOf(def.skyblockId())) {
+                case "HEALING_MELON" -> 7;
+                case "JUICY_HEALING_MELON" -> 9;
+                case "LUSCIOUS_HEALING_MELON" -> 12;
+                default -> 0;
+            };
+            if (melon > 0) {
+                if (Rift.heal(server, melon)) {
+                    held.shrink(1);
+                    Msg.playSound(server, SoundEvents.GENERIC_EAT.value(), 1f, 1.2f);
+                    return InteractionResult.SUCCESS;
+                }
+                server.sendOverlayMessage(Component.literal("Healing Melons work in Stillgore Chateau.").withStyle(ChatFormatting.GRAY));
+                return InteractionResult.FAIL;
+            }
             if (def == null || !"LIL_PAD".equals(def.skyblockId())) {
                 return InteractionResult.PASS;
             }
@@ -246,7 +277,9 @@ final class RiftWorld {
         Gate gate = GATES.get(name);
         if (!name.equals(last) && gate != null && !player.isCreative()) {
             String problem = null;
-            if (!gate.charm().isEmpty() && !Timecharms.secured(player, gate.charm())) {
+            if (gate.charm().startsWith("flag:") && !RiftFlags.has(player, gate.charm().substring(5))) {
+                problem = name.equals("Stillgore Chateau") ? "Talk to Deer before you go into Stillgore Chateau." : "You can't go there yet.";
+            } else if (!gate.charm().isEmpty() && !gate.charm().startsWith("flag:") && !Timecharms.secured(player, gate.charm())) {
                 problem = name + " needs the " + Timecharms.name(gate.charm()) + " secured with Elise.";
             } else if (gate.seconds() > 0 && Rift.timeLeft(player) < gate.seconds()) {
                 problem = "You need at least " + Rift.clock(gate.seconds()) + " of Rift Time left to enter " + name + ".";

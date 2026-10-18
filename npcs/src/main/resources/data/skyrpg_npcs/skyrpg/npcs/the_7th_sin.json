@@ -1,0 +1,26 @@
+{
+  "name": "The 7th Sin",
+  "role": "Porhtal eye",
+  "color": "#AA0000",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    29.5,
+    162.0,
+    19.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.vex.charge",
+  "greetings": [
+    "Greed. Pride. Time.",
+    "The eye watches the summit."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The 7th Sin"
+    }
+  }
+}

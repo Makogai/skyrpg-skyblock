@@ -87,6 +87,23 @@ final class RiftNpcs {
             Map.entry("Alchemist", List.of("Potions brewed from things that shouldn't exist.", "Come back when I've got stock.")),
             Map.entry("Finplex", List.of("Zoop the Fish. Ninety-nine thousand nine hundred ninety-nine Motes.", "Worth every Mote.")),
             Map.entry("Plumber Joe", List.of("Leaky pipes everywhere in this place.", "A Plumber's Bucket never runs dry.")),
+            Map.entry("Rock", List.of("We rocks hear the Living Metal hum.", "The snakes carry hearts of metal. Stop one, mine its tail.")),
+            Map.entry("Chipper McPickaxe", List.of("Lapis here grows Living Metal, if you mine it right.", "The Anti-Sentient Pickaxe is coming soon.")),
+            Map.entry("Colosseum Guard", List.of("Bacte waits in the arena.", "Punch the Globowls into its tentacles.")),
+            Map.entry("Photon Keeper", List.of("The light holds the path together.", "Don't look down.")),
+            Map.entry("Maddox the Slayer", List.of("Vampires, friend. The Riftstalker Bloodfiend.", "I'll have contracts for you soon. Bring Motes.")),
+            Map.entry("Julian", List.of("Get me out of here!", "The way out is past the guards. Run!")),
+            Map.entry("Oubliette Guard", List.of("No one leaves the Oubliette.", "Unless they get past us.")),
+            Map.entry("Ubik Von Neumann", List.of("Three games, three souls.", "Split or steal? Choose wisely.")),
+            Map.entry("Old Timer", List.of("Timite grows older or younger depending on how you look at it.", "Come back with a Time Gun.")),
+            Map.entry("Plate", List.of("The Trials test speed, wit and might.", "The Bureau opens for those with the Celestial charm.")),
+            Map.entry("Shen Albedo", List.of("I am Shen. The richest man in the multiverse.", "Puzzles first. Riches after.")),
+            Map.entry("Shen Chaos", List.of("I am Shen, also. Chaos is a ladder.", "Puzzles first. Riches after.")),
+            Map.entry("Shen Citrinitas", List.of("I am Shen. I keep the Celestial Timecharm.", "Prove yourself and it's yours.")),
+            Map.entry("Shen Magnum Opus", List.of("I am Shen, the great work.", "The Golden Belt waits for the patient.")),
+            Map.entry("Shen Rubedo", List.of("I am Shen. Red is the colour of completion.", "Puzzles first. Riches after.")),
+            Map.entry("Madame Eleanor Q. Goldsworth I", List.of("Darling, the outside world needs your skills.", "Bring me proof of your talents.")),
+            Map.entry("Oruo the Almighty", List.of("The Time Chamber drains twice as fast.", "The Sun Gecko waits inside.")),
             Map.entry("Dr. Emmett", List.of("The Mirrorverse lies through that door. Everything there is backwards.", "Bring the Supreme Timecharm's proof and step through.")),
             Map.entry("Roy", List.of("Found an Enigma Soul in the mud. Interested?")),
             Map.entry("Grumblefoot", List.of("Scrolls! Scrolls for the weary!")));
@@ -227,6 +244,27 @@ final class RiftNpcs {
             com.skyrpg.core.action.Actions.run("skyblock_shop", player, params);
             return;
         }
+        if (Porhtal.EYES.contains(name)) {
+            player.sendSystemMessage(Component.literal("[NPC] " + name + ": ").withStyle(ChatFormatting.YELLOW)
+                    .append(Component.literal(RiftFlags.has(player, "eye:" + name) ? "..." : "The eye glares at you. Calm it: hit it until it settles.")
+                            .withStyle(ChatFormatting.WHITE)));
+            return;
+        }
+        if (name.equals("Porhtal")) {
+            Porhtal.open(player, npcNear(player, "Porhtal"));
+            return;
+        }
+        if (name.equals("Sad Jacquelle")) {
+            Montezuma.jacquelle(player, npcNear(player, "Sad Jacquelle"));
+            return;
+        }
+        if (name.equals("Deer")) {
+            boolean first = RiftFlags.set(player, "deer");
+            player.sendSystemMessage(Component.literal("[NPC] Deer: ").withStyle(ChatFormatting.YELLOW).append(Component.literal(first
+                    ? "You made it across. The Chateau's doors will open for you now. Mind the vampires."
+                    : "The Chateau is open to you. Mind the vampires.").withStyle(ChatFormatting.WHITE)));
+            return;
+        }
         if (name.equals("Elise")) {
             Timecharms.elise(player, npcNear(player, "Elise"));
             return;
@@ -237,6 +275,10 @@ final class RiftNpcs {
         }
         if (name.equals("Roy")) {
             soulSale(player, "Roy", "npc:Roy", 4_000, "DEADGEHOG_SPINE", 8, "Deadgehogs drop spines in the lagoon.");
+            return;
+        }
+        if (name.equals("Fairylosopher")) {
+            soulSale(player, "Fairylosopher", "npc:Fairylosopher", 10_000, "SPLATTER_CRUX", 32, "Splatters drop their crux around the Chateau.");
             return;
         }
         if (name.equals("Cryptosis")) {

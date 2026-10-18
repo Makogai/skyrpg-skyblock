@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_chateau",
+  "origin": [
+    200,
+    0,
+    -240
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

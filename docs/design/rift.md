@@ -68,8 +68,26 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
   the **Village Plaza** with Barrier Street and Deja Vu Alley (Scribes). Cryptosis sells an Enigma Soul (15,000 Motes +
   10 Scribe Crux), Seymour the Exceedingly Comfy Sneakers (49,999 Motes + Gunther's Sneakers).
 
+## Part 3 (`Porhtal.java`, `Montezuma.java`, `RiftFlags.java`; the areas helper-built)
+
+- Layout decided for reachability (every area meets another along an edge): the **Living Cave** north of the Plaza
+  (Deja Vu Alley's islets lead on), the **Colosseum** east of it, the **Photon Pathway** east of the Plaza, **Stillgore
+  Chateau** east of the Pathway, the **Mountaintop** south of the Plaza and the Pathway (around Hypixel's peak).
+- Gates (Hypixel's): the Living Cave 5:00 + SkyBlock Citizen Timecharm; the Colosseum 15:00 + Living Timecharm (Rift Time
+  runs at half speed inside); the Chateau: talk to Deer at the Pathway's end; the Mountaintop 9:00 + Vampiric Timecharm
+  (the Time Chamber drains double); Barrier Street 10:00 + Globulate Timecharm.
+- **Stillgore Chateau**: monsters hit **Hearts** (10 plus Rift Health), an eighth of their damage in half hearts
+  (decided); out of Hearts you're dragged to the **Oubliette**. Healing Melons heal 7 / 9 / 12 Hearts there.
+- **Porhtal's eyes**: The Intruder (the Rift Wizard Tower), The Gill-Man, The Baba Yaga, The Bankster, Gooey, The Prince,
+  The 7th Sin. Hit an eye for 300 Rift Damage to calm it: +10 to +70 Rift Time for good and a stop on Porhtal's fast
+  travel (5 seconds of Rift Time a trip).
+- **Montezuma**: nine soul pieces around the Rift; bring them to Sad Jacquelle. Decided until a Montezuma pet exists:
+  +15 Rift Time a piece, and from 6 pieces +2 Mana Regen a piece in the Rift.
+- Mobs: Autonull, Frozille (Living Cave), Autoboots (Colosseum), Thrall, Fledgling, Splatter (Chateau; Hemovibe and
+  Vampiric Melons), Puff (Mountaintop). The Fairylosopher sells an Enigma Soul (10,000 Motes + 32 Splatter Crux).
+
 ## Still to build
 
-Montezuma's soul pieces, Porhtal's eyes, Reed's boat, the Larva Hook, the Rift Transfer, Gunther's race, the hot dog
-contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse, Shen's auctions, the Living
-Cave, the Colosseum, the Mountaintop, Stillgore Chateau and the Vampire Slayer, the Rift Gallery itself.
+Reed's boat, the Larva Hook, the Rift Transfer, Gunther's race, the hot dog
+contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse, Shen's auctions; the ways to the
+later Timecharms (Barry's pen, Living Metal mining, Bacte, the Vampire Slayer, Shen); the Rift Gallery itself.

@@ -1,0 +1,26 @@
+{
+  "name": "Fairylosopher",
+  "role": "Enigma Soul",
+  "color": "#FF55FF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    239.5,
+    139.0,
+    -127.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "I sell a soul to those who climb my tower.",
+    "10,000 Motes and 32 Splatter Crux."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Fairylosopher"
+    }
+  }
+}

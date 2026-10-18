@@ -1,0 +1,26 @@
+{
+  "name": "Colosseum Guard",
+  "role": "Colosseum",
+  "color": "#FFAA00",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    130.5,
+    69.0,
+    -160.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:item.armor.equip_iron",
+  "greetings": [
+    "Bacte waits in the arena.",
+    "Punch the Globowls into its tentacles."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Colosseum Guard"
+    }
+  }
+}

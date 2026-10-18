@@ -78,6 +78,19 @@ public final class Rift {
         boolean infusionUsed;
         boolean warned;
         long lastHit;
+        /** Hearts in Stillgore Chateau (-1 until you first go in). */
+        double hearts = -1;
+        boolean inChateau;
+    }
+
+    /** Where monsters hit Hearts, not Rift Time (Hypixel's Stillgore Chateau). */
+    static boolean heartsZone(String zone) {
+        return zone.equals("Stillgore Chateau") || zone.equals("Oubliette");
+    }
+
+    /** Your most Hearts: 10 and your gear's. */
+    static double maxHearts(ServerPlayer player) {
+        return 10 + Stats.get(player, StatTypes.RIFT_HEALTH);
     }
 
     private static Map<String, Spot> spots = Map.of();
@@ -94,6 +107,8 @@ public final class Rift {
         RiftNpcs.init();
         RiftWorld.init();
         LeechSupreme.init();
+        Porhtal.init();
+        Montezuma.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);
         // Your hits in the Rift deal your Rift Damage, whatever you hold.
@@ -112,6 +127,24 @@ public final class Rift {
             long tick = player.level().getServer().getTickCount();
             // A hit takes half its damage in seconds, at most one hit every half second (cancelled hits leave no
             // invulnerability frames behind). Decided: Hypixel's per-mob figures weren't found.
+            Zones.Zone zone = Zones.at(player.level(), player.blockPosition());
+            if (visit != null && zone != null && heartsZone(zone.name()) && source.getEntity() != null && source.getEntity() != player
+                    && tick - visit.lastHit >= 10) {
+                // In the Chateau a hit takes Hearts: an eighth of its damage, in half hearts (decided).
+                visit.lastHit = tick;
+                if (visit.hearts < 0) {
+                    visit.hearts = maxHearts(player);
+                }
+                double lost = Math.max(0.5, Math.round(amount * StatTypes.HEALTH_SCALE / 8 * 2) / 2.0);
+                visit.hearts -= lost;
+                player.sendOverlayMessage(Component.literal("-" + (lost % 1 == 0 ? String.valueOf((int) lost) : String.valueOf(lost)) + " ❤")
+                        .withStyle(ChatFormatting.RED));
+                if (visit.hearts <= 0) {
+                    oubliette(player, visit);
+                }
+                hud(player, visit);
+                return false;
+            }
             if (visit != null && source.getEntity() != null && source.getEntity() != player && visit.left > 10 && tick - visit.lastHit >= 10) {
                 visit.lastHit = tick;
                 long seconds = Math.max(1, Math.round(amount * StatTypes.HEALTH_SCALE / 2));
@@ -355,6 +388,11 @@ public final class Rift {
             }
             Zones.Zone zone = Zones.at(rift, player.blockPosition());
             boolean tower = zone != null && zone.name().equals(TOWER);
+            boolean chateau = zone != null && heartsZone(zone.name());
+            if (chateau != visit.inChateau) {
+                visit.inChateau = chateau;
+                visit.hearts = maxHearts(player);
+            }
             if (!tower) {
                 if (!visit.infusionUsed) {
                     visit.infusionUsed = true;
@@ -362,7 +400,7 @@ public final class Rift {
                     player.sendSystemMessage(Component.literal("Your Dimensional Infusion fades: the Rift's clock is ticking.").withStyle(ChatFormatting.LIGHT_PURPLE));
                 }
                 if (!player.isCreative()) {
-                    visit.left -= 1;
+                    visit.left -= RiftWorld.drain(zone == null ? "" : zone.name());
                 }
             }
             if (visit.left <= 10 && !visit.warned) {
@@ -394,6 +432,29 @@ public final class Rift {
         }
     }
 
+    /** Out of Hearts in the Chateau: dragged off to the Oubliette, Hearts back. */
+    private static void oubliette(ServerPlayer player, Visit visit) {
+        visit.hearts = maxHearts(player);
+        Spot cell = spots.get("oubliette");
+        if (cell != null) {
+            player.teleportTo(cell.pos().x, cell.pos().y, cell.pos().z);
+        }
+        Notice.of(Notice.Kind.WARN).tag("THE OUBLIETTE").send(player, Component.literal("You ran out of Hearts and were dragged to the Oubliette!")
+                .withStyle(ChatFormatting.RED));
+        Msg.playSound(player, SoundEvents.IRON_DOOR_CLOSE, 1f, 0.6f);
+    }
+
+    /** Hearts healed (Healing Melons), in the Chateau. */
+    static boolean heal(ServerPlayer player, double hearts) {
+        Visit visit = VISITS.get(player.getUUID());
+        if (visit == null || !visit.inChateau) {
+            return false;
+        }
+        visit.hearts = Math.min(maxHearts(player), Math.max(0, visit.hearts) + hearts);
+        hud(player, visit);
+        return true;
+    }
+
     /** Rift Time gained (mote orbs, kills). */
     static void addTime(ServerPlayer player, double seconds) {
         Visit visit = VISITS.get(player.getUUID());
@@ -408,7 +469,8 @@ public final class Rift {
     }
 
     private static void hud(ServerPlayer player, Visit visit) {
-        String line = (int) Math.ceil(visit.left) + "/" + (int) Math.ceil(visit.max);
+        String line = (int) Math.ceil(visit.left) + "/" + (int) Math.ceil(visit.max)
+                + (visit.inChateau ? "/" + Math.max(0, visit.hearts) + "/" + maxHearts(player) : "");
         if (!line.equals(player.getAttached(HUD))) {
             player.setAttached(HUD, line);
         }

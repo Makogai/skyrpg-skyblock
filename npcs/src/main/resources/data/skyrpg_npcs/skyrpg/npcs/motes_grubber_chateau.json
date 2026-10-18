@@ -1,0 +1,26 @@
+{
+  "name": "Motes Grubber",
+  "role": "Eats Rift items",
+  "color": "#FF55FF",
+  "hint": "Sell",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    252.5,
+    79.0,
+    -97.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.generic.eat",
+  "greetings": [
+    "Vampire leftovers taste best.",
+    "Hungry, always hungry."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Motes Grubber (Chateau)"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Photon Pathway",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    70,
+    0,
+    -120
+  ],
+  "to": [
+    199,
+    200,
+    -31
+  ]
+}

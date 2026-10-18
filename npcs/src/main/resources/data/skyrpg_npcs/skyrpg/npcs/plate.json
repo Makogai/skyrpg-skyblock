@@ -1,0 +1,26 @@
+{
+  "name": "Plate",
+  "role": "Wizardman Trials",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    120.5,
+    69.0,
+    7.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.evoker.prepare_attack",
+  "greetings": [
+    "The Trials test speed, wit and might.",
+    "The Bureau opens for those with the Celestial charm."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Plate"
+    }
+  }
+}

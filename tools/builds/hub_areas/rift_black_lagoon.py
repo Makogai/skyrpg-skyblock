@@ -966,7 +966,8 @@ area.npc("spawn:leech_supreme", -120, 31, 28, 0.0, "the Leech Supreme's arena ce
 area.npc("spawn:leech_spot", -121, 32, 14, 0.0, "raised spot at the arena's north edge (negates two phases)")
 area.npc("spawn:montezuma_3", -140, 45, 15, 90.0, "behind the waterfall, west wall of the Leeches Lair")
 area.npc("spawn:lair_exit", -105, 31, 36, 0.0, "inside the lair by Dr. Phear")
-area.arrival(CROSS_X, 69, 56, 0.0)
+# The Rift has one arrival, the Wizard Tower (rift_wyld_woods.py).
+# area.arrival(CROSS_X, 69, 56, 0.0)
 
 # the spinning runes: a small circle on the islet
 rx, rz = RUNES

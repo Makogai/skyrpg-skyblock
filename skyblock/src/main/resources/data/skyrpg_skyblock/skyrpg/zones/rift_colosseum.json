@@ -1,0 +1,60 @@
+{
+  "name": "Colosseum",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    70,
+    56,
+    -240
+  ],
+  "to": [
+    199,
+    140,
+    -121
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Autoboots",
+      "level": 5,
+      "health": 150,
+      "damage": 6,
+      "xp": 6,
+      "coins": 500,
+      "max": 5,
+      "every": 8,
+      "from": [
+        98,
+        66,
+        -160
+      ],
+      "to": [
+        131,
+        80,
+        -124
+      ],
+      "indoors": true
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Autoboots",
+      "level": 5,
+      "health": 150,
+      "damage": 6,
+      "xp": 6,
+      "coins": 500,
+      "max": 5,
+      "every": 8,
+      "from": [
+        139,
+        66,
+        -160
+      ],
+      "to": [
+        173,
+        80,
+        -124
+      ],
+      "indoors": true
+    }
+  ]
+}

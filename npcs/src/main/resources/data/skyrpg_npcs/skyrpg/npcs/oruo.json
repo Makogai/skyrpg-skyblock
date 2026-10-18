@@ -1,0 +1,26 @@
+{
+  "name": "Oruo the Almighty",
+  "role": "Time Chamber",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    31.5,
+    117.0,
+    46.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.warden.heartbeat",
+  "greetings": [
+    "The Time Chamber drains twice as fast.",
+    "The Sun Gecko waits inside."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Oruo the Almighty"
+    }
+  }
+}

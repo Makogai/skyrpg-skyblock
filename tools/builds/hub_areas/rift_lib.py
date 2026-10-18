@@ -9,15 +9,15 @@ wiki puts them:
 
     wyld_woods      x -160..-11,  z   60..199   giant interconnected trees, treehouses, the Rift Wizard Tower (arrival)
     black_lagoon    x -200..-61,  z  -30..59    a swamp of channels, giant mushrooms, the Lagoon Hut, the Leeches Lair
-    (later parts)
-    west_village    x -140..-31,  z -120..-32   (north of the Black Lagoon, across a rope bridge)
+    west_village    x -140..-31,  z -120..-31   (north of the Black Lagoon, across a rope bridge)
     village_plaza   x  -30..69,   z -120..-31   (Barrier Street on its east side, Deja Vu Alley's islets at its north)
     dreadfarm       x -110..-1,   z -210..-121
-    living_cave     x    0..69,   z -240..-171  (north of Deja Vu Alley; the Dreadfarm has x -110..-1)
-    mountaintop     x  -10..89,   z  -30..59    the tall peak in the middle (to y 160)
-    photon_pathway  x   90..169,  z  -40..19
-    chateau         x  170..259,  z   20..159   Stillgore Chateau
-    colosseum       x   70..169,  z   60..159
+    (part 3: placed so every area meets another along an edge; only the Mountaintop keeps Hypixel's spot)
+    living_cave     x    0..69,   z -240..-121  north of the Plaza: Deja Vu Alley's islets lead on to it
+    colosseum       x   70..199,  z -240..-121  east of the Living Cave, north of the Photon Pathway
+    photon_pathway  x   70..199,  z -120..-31   east of the Plaza (its east side is a cliff: bridges cross)
+    chateau         x  200..299,  z -240..-31   Stillgore Chateau, east of the Pathway and the Colosseum
+    mountaintop     x  -10..199,  z  -30..59    the tall peak south of the Plaza and the Pathway (to y 170)
 
 Ground rules:
 - Ground level: the surface is at y 68 near the boundaries (players walk at y 69). Inside your box terrain may rise and
@@ -53,6 +53,11 @@ BOXES = {
     "west_village": ((-140, Y0, -120), (110, Y1 - Y0, 90)),
     "village_plaza": ((-30, Y0, -120), (100, Y1 - Y0, 90)),
     "dreadfarm": ((-110, Y0, -210), (110, Y1 - Y0, 90)),
+    "living_cave": ((0, Y0, -240), (70, Y1 - Y0, 120)),
+    "colosseum": ((70, Y0, -240), (130, Y1 - Y0, 120)),
+    "photon_pathway": ((70, Y0, -120), (130, Y1 - Y0, 90)),
+    "chateau": ((200, Y0, -240), (100, Y1 - Y0, 210)),
+    "mountaintop": ((-10, Y0, -30), (210, Y1 - Y0, 90)),
 }
 
 # Where neighbouring areas meet: (boundary, the crossing path's centre). The Wyld Woods and the Black Lagoon share
@@ -64,6 +69,15 @@ CROSSINGS = {
     ("west_village", "village_plaza"): ("x", -30, -70),
     ("west_village", "dreadfarm"): ("z", -121, -70),
     ("village_plaza", "dreadfarm"): ("z", -121, -15),
+    # Part 3. Where a neighbour's edge is a cliff, the new area builds a bridge from its side up to that cliff.
+    ("village_plaza", "living_cave"): ("z", -121, 40),        # Deja Vu Alley's last islet (61, -109) area -> north
+    ("living_cave", "colosseum"): ("x", 70, -180),
+    ("village_plaza", "photon_pathway"): ("x", 70, -60),      # the Plaza's east cliff
+    ("photon_pathway", "colosseum"): ("z", -121, 140),
+    ("photon_pathway", "chateau"): ("x", 200, -80),
+    ("colosseum", "chateau"): ("x", 200, -180),
+    ("village_plaza", "mountaintop"): ("z", -30, 20),         # the Plaza's south cliff
+    ("photon_pathway", "mountaintop"): ("z", -30, 130),
 }
 # Gates (the mod enforces them): West Village and Dreadfarm need the Supreme Timecharm; the Plaza needs the Mirrorverse
 # and Chicken N Egg Timecharms (part 3). Put a gate arch where each crossing enters a gated area (decoration only).

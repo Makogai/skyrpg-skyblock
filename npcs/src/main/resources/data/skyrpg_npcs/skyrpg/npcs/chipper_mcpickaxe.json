@@ -1,0 +1,26 @@
+{
+  "name": "Chipper McPickaxe",
+  "role": "Pickaxes",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    23.5,
+    63.0,
+    -193.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.stone.break",
+  "greetings": [
+    "The Anti-Sentient Pickaxe: 24,999 Motes.",
+    "Lapis here grows Living Metal, if you know how to mine it."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Chipper McPickaxe"
+    }
+  }
+}

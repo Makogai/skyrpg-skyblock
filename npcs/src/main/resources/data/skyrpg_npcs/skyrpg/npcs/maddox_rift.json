@@ -1,0 +1,26 @@
+{
+  "name": "Maddox the Slayer",
+  "role": "Vampire Slayer",
+  "color": "#FF5555",
+  "hint": "Slayer",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    260.5,
+    80.0,
+    -140.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.wither.ambient",
+  "greetings": [
+    "Vampires, friend. The Riftstalker Bloodfiend.",
+    "Bring Motes and a stake."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Maddox the Slayer (Rift)"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Time Chamber",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    18,
+    116,
+    20
+  ],
+  "to": [
+    40,
+    131,
+    42
+  ]
+}

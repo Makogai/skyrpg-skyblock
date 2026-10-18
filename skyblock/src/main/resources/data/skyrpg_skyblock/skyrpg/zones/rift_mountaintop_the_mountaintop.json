@@ -1,0 +1,14 @@
+{
+  "name": "The Mountaintop",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -10,
+    10,
+    -30
+  ],
+  "to": [
+    17,
+    200,
+    59
+  ]
+}

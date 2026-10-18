@@ -3,7 +3,7 @@ title: The Rift
 category: skyblock
 order: 7
 icon: minecraft:chorus_fruit
-summary: Hypixel's Rift - a timed dimension behind the Wizard Tower's portal, with Rift Time, Motes, Enigma Souls, Timecharms, the Leech Supreme, the Wyld Woods, the Black Lagoon, West Village, the Dreadfarm and the Village Plaza.
+summary: Hypixel's Rift - a timed dimension behind the Wizard Tower's portal, with Rift Time, Motes, Enigma Souls, Timecharms, the Leech Supreme, the Wyld Woods, the Black Lagoon, West Village, the Dreadfarm, the Village Plaza and beyond.
 ---
 **The Rift** is a strange dimension you can only visit for a while. It opens at **SkyBlock Level 12**.
 
@@ -105,5 +105,25 @@ The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Dead
   - Cryptosis sells an Enigma Soul for 15,000 Motes and 10 Scribe Crux.
   - Seymour sells the Exceedingly Comfy Sneakers.
 
+## Further in
+
+| Area | Where | Needs | Monsters |
+| --- | --- | --- | --- |
+| The Living Cave (and the frozen Living Stillness below) | north of the Plaza, past Deja Vu Alley's islets | the SkyBlock Citizen Timecharm, 5:00 left | Autonull, Frozille |
+| The Colosseum | east of the Living Cave | the Living Timecharm, 15:00 left; Rift Time runs at **half** speed inside | Autoboots |
+| The Photon Pathway | east of the Plaza, across a bridge of light | nothing | none |
+| Stillgore Château | east of the Pathway | talk to **Deer** at the Pathway's end | Thrall, Fledgling, Splatter |
+| The Mountaintop | south of the Plaza | the Vampiric Timecharm, 9:00 left; the Time Chamber runs **double** | Puffs |
+
+In **Stillgore Château**, monsters take **Hearts** (you have 10) instead of Rift Time. Run out and you're dragged to the **Oubliette**, the castle's prison. Vampires drop Vampiric Melons; **Healing Melons** heal 7 Hearts there (Juicy 9, Luscious 12). The Fairylosopher, atop his tower, sells an Enigma Soul.
+
+## Porhtal's eyes
+
+**Porhtal** (at the Broken Cage in the Wyld Woods) has seven eyes scattered across the Rift: The Intruder, The Gill-Man, The Baba Yaga, The Bankster, Gooey, The Prince and The 7th Sin. Hit an eye until you've dealt **300 Rift Damage** to calm it. Each calmed eye gives Rift Time for good (+10 for the first, up to +70 for the seventh) and becomes a stop on Porhtal's fast travel (5 seconds of Rift Time a trip).
+
+## Montezuma
+
+Sad Jacquelle's cat Montezuma lost his soul in **nine pieces** all over the Rift: under a tree, on a rooftop, behind a cracked wall, under the snow... Right-click a piece to take it, then bring it to her. Every piece back gives **+15 Rift Time**; from six on, each also gives Mana Regen in the Rift.
+
 > [!NOTE]
-> Not here yet: Montezuma, Porhtal's eyes, Reed's boat, the area quests (Gunther's race, the hot dog contest...), the Mirrorverse, the Living Cave, the Colosseum, the Mountaintop, Stillgore Château and the Vampire Slayer.
+> Not here yet: the Vampire Slayer, Bacte, Living Metal mining, Barry's quest and the other area quests (the ways to the later Timecharms), Reed's boat and the Mirrorverse.

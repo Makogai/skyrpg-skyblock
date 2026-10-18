@@ -1,0 +1,202 @@
+{
+  "name": "Stillgore Chateau",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    200,
+    59,
+    -240
+  ],
+  "to": [
+    299,
+    199,
+    -31
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Thrall",
+      "level": 6,
+      "health": 190,
+      "damage": 8,
+      "xp": 30,
+      "coins": 200,
+      "max": 6,
+      "every": 8,
+      "from": [
+        236,
+        79,
+        -110
+      ],
+      "to": [
+        278,
+        86,
+        -87
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "HEMOVIBE",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "VAMPIRIC_MELON",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Fledgling",
+      "level": 8,
+      "health": 210,
+      "damage": 9,
+      "xp": 20,
+      "coins": 250,
+      "max": 5,
+      "every": 10,
+      "from": [
+        236,
+        79,
+        -176
+      ],
+      "to": [
+        278,
+        86,
+        -147
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "HEMOVIBE",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "HEMOVIBE",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "VAMPIRIC_MELON",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Thrall",
+      "level": 6,
+      "health": 190,
+      "damage": 8,
+      "xp": 30,
+      "coins": 200,
+      "max": 4,
+      "every": 10,
+      "from": [
+        226,
+        79,
+        -196
+      ],
+      "to": [
+        290,
+        86,
+        -180
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "HEMOVIBE",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "VAMPIRIC_MELON",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Splatter",
+      "level": 6,
+      "health": 135,
+      "damage": 7,
+      "xp": 30,
+      "coins": 150,
+      "max": 5,
+      "every": 8,
+      "from": [
+        252,
+        79,
+        -142
+      ],
+      "to": [
+        268,
+        86,
+        -114
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SPLATTER_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "HEMOVIBE",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Splatter",
+      "level": 6,
+      "health": 135,
+      "damage": 7,
+      "xp": 30,
+      "coins": 150,
+      "max": 4,
+      "every": 10,
+      "from": [
+        252,
+        68,
+        -141
+      ],
+      "to": [
+        268,
+        75,
+        -115
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SPLATTER_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "item": "HEMOVIBE",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

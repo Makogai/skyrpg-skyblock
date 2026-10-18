@@ -1,0 +1,86 @@
+{
+  "name": "Living Stillness",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    2,
+    30,
+    -236
+  ],
+  "to": [
+    48,
+    58,
+    -182
+  ],
+  "blocks": {
+    "minecraft:lapis_ore": {
+      "becomes": "minecraft:tuff",
+      "regrow": 30
+    },
+    "minecraft:snow_block": {
+      "becomes": "minecraft:air",
+      "regrow": 60
+    }
+  },
+  "mobs": [
+    {
+      "type": "minecraft:stray",
+      "name": "Frozille",
+      "level": 5,
+      "health": 135,
+      "damage": 6,
+      "xp": 6,
+      "coins": 150,
+      "max": 4,
+      "every": 8,
+      "from": [
+        14,
+        43,
+        -224
+      ],
+      "to": [
+        28,
+        52,
+        -206
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "FROSTY_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:stray",
+      "name": "Frozille",
+      "level": 5,
+      "health": 135,
+      "damage": 6,
+      "xp": 6,
+      "coins": 150,
+      "max": 3,
+      "every": 10,
+      "from": [
+        36,
+        43,
+        -216
+      ],
+      "to": [
+        42,
+        52,
+        -200
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "FROSTY_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

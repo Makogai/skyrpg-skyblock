@@ -44,7 +44,7 @@ import org.joml.Vector3f;
 final class EnigmaSouls {
     static final String TAG = "skyrpg_enigma_soul";
     /** Souls not placed in the world: given by NPCs. */
-    static final List<String> EXTRA = List.of("npc:Tel Kar", "npc:Roy", "npc:Cryptosis");
+    static final List<String> EXTRA = List.of("npc:Tel Kar", "npc:Roy", "npc:Cryptosis", "npc:Fairylosopher");
     private static final double NEAR = 48;
 
     /** Souls found ("enigma:Two Plates", "npc:Roy"). */

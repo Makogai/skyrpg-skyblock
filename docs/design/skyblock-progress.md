@@ -641,8 +641,12 @@ phase so the next session can pick up where this one stopped.
       Timecharms as items with NEU's recipes, Elise securing them (+100 SkyBlock XP, the Rift Necklace), the Leech Supreme
       (four phases, a boss bar, fragments and Motes), Odonata bottling, Lil' Pads, the slime launchers; West Village, the
       Dreadfarm and the Village Plaza with Barrier Street and Deja Vu Alley (helper-built), Cryptosis's soul, Seymour.
-- [ ] The Rift, part 3: Montezuma, Porhtal, the area quests, the Mirrorverse, the Living Cave, the Colosseum, the
-      Mountaintop, Stillgore Chateau and the Vampire Slayer.
+- [x] **The Rift, part 3** (`Porhtal`, `Montezuma`, `RiftFlags`): the Living Cave and Living Stillness, the Colosseum,
+      the Photon Pathway, Stillgore Chateau with the Oubliette and the Mountaintop with the Time Chamber (helper-built,
+      laid out so each meets another); their gates and drain speeds; Hearts in the Chateau; Porhtal's seven eyes and fast
+      travel; Montezuma's nine pieces; 51 Enigma Souls in all.
+- [ ] The Rift, part 4: the Vampire Slayer, Bacte, Living Metal, Barry's pen and the other ways to the later Timecharms,
+      the Mirrorverse, the area quests.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

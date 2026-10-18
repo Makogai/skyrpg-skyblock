@@ -1,0 +1,26 @@
+{
+  "name": "Photon Keeper",
+  "role": "Photon Pathway",
+  "color": "#FFFF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    127.5,
+    69.0,
+    -52.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.beacon.ambient",
+  "greetings": [
+    "The light holds the path together.",
+    "Don't look down."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Photon Keeper"
+    }
+  }
+}

@@ -1023,7 +1023,8 @@ area.npc("enigma:Buttons", -77, gy(-77, BW_Z - 2) + 1, BW_Z - 2, 180.0, "behind 
 area.npc("enigma:Farm Balloons", SILO[0] + 2, SILOTOP + 1, SILO[1] - 2, 0.0, "on the deck at the top of the balloon silo")
 area.npc("enigma:Beanstalk", SOUL_TOP[0], SOUL_TOP[1], SOUL_TOP[2], 0.0, "on the leaf crown at the top of the Great Beanstalk")
 area.npc("spawn:montezuma_5", NX, 72, NZ, 0.0, "behind the cracked stone wall in the north-east ruin")
-area.arrival(CROSS_W, 69, -123, 0.0)
+# The Rift has one arrival, the Wizard Tower (rift_wyld_woods.py).
+# area.arrival(CROSS_W, 69, -123, 0.0)
 
 # ---------------------------------------------------------------- zones and mobs
 

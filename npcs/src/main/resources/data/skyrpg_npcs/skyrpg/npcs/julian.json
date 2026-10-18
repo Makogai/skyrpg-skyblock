@@ -1,0 +1,26 @@
+{
+  "name": "Julian",
+  "role": "Prisoner",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    264.5,
+    46.0,
+    -164.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.hurt",
+  "greetings": [
+    "Get me out of here!",
+    "The guards change shifts... beat them and run."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Julian"
+    }
+  }
+}

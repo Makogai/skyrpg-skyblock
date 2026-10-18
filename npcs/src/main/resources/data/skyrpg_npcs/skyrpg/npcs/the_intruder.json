@@ -1,0 +1,26 @@
+{
+  "name": "The Intruder",
+  "role": "Porhtal eye",
+  "color": "#AA00AA",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -49.5,
+    69.0,
+    106.5
+  ],
+  "yaw": 45.0,
+  "sound": "minecraft:block.portal.ambient",
+  "greetings": [
+    "The eye watches the tower.",
+    "..."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The Intruder"
+    }
+  }
+}

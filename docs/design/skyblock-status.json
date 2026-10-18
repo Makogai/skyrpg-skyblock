@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "The Rift, part 2: Timecharms, the Leech Supreme, West Village, the Dreadfarm and the Village Plaza",
+  "latest": "The Rift, part 3: the Living Cave, Colosseum, Photon Pathway, Stillgore Chateau and the Mountaintop",
   "phase": {
     "name": "Phase 4: Late game",
-    "done": 53
+    "done": 56
   },
   "categories": [
     {
@@ -237,7 +237,7 @@
           "name": "The Rift",
           "icon": "item/chorus_fruit",
           "weight": 4,
-          "done": 45
+          "done": 62
         },
         {
           "name": "Galatea & Hunting",
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-10-18",
-      "overall": 64.8
+      "overall": 68.1
     }
   ]
 }

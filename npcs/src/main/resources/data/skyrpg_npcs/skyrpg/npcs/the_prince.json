@@ -1,0 +1,26 @@
+{
+  "name": "The Prince",
+  "role": "Porhtal eye",
+  "color": "#AA0000",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    278.5,
+    80.0,
+    -132.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.vex.ambient",
+  "greetings": [
+    "Kneel.",
+    "The eye watches the Chateau."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The Prince"
+    }
+  }
+}

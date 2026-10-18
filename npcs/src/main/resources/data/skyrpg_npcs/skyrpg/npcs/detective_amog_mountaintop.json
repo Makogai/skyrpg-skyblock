@@ -1,0 +1,26 @@
+{
+  "name": "Detective Amog",
+  "role": "Detective",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    44.5,
+    114.0,
+    48.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "The case continues up here.",
+    "Someone dropped a wallet. Or will."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Detective Amog (Mountaintop)"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Rock",
+  "role": "Living Cave",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    47.5,
+    63.0,
+    -210.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.stone.hit",
+  "greetings": [
+    "We rocks hear the Living Metal hum.",
+    "The snakes carry hearts of metal. Stop one, mine its tail."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Rock"
+    }
+  }
+}

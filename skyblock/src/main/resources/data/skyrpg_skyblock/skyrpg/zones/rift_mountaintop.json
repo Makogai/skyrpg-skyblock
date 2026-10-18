@@ -1,0 +1,106 @@
+{
+  "name": "The Mountaintop",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    41,
+    10,
+    -30
+  ],
+  "to": [
+    199,
+    200,
+    59
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:slime",
+      "name": "Puff",
+      "level": 7,
+      "health": 100,
+      "damage": 5,
+      "xp": 6,
+      "coins": 50,
+      "max": 6,
+      "every": 8,
+      "from": [
+        64,
+        66,
+        4
+      ],
+      "to": [
+        100,
+        84,
+        40
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "PUFF_CRUX",
+          "chance": 0.1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:slime",
+      "name": "Puff",
+      "level": 7,
+      "health": 100,
+      "damage": 5,
+      "xp": 6,
+      "coins": 50,
+      "max": 6,
+      "every": 8,
+      "from": [
+        96,
+        66,
+        24
+      ],
+      "to": [
+        146,
+        84,
+        54
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "PUFF_CRUX",
+          "chance": 0.1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:slime",
+      "name": "Puff",
+      "level": 7,
+      "health": 100,
+      "damage": 5,
+      "xp": 6,
+      "coins": 50,
+      "max": 5,
+      "every": 8,
+      "from": [
+        100,
+        66,
+        -22
+      ],
+      "to": [
+        147,
+        80,
+        8
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "PUFF_CRUX",
+          "chance": 0.1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  ]
+}

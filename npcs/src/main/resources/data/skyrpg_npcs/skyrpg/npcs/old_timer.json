@@ -1,0 +1,26 @@
+{
+  "name": "Old Timer",
+  "role": "Timite",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    15.5,
+    69.0,
+    -8.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:block.bell.use",
+  "greetings": [
+    "Timite grows older or younger depending on how you look at it.",
+    "Bring me the Time Gun and we'll talk."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Old Timer"
+    }
+  }
+}

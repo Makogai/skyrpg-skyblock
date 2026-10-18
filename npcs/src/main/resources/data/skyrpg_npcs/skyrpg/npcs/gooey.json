@@ -1,0 +1,26 @@
+{
+  "name": "Gooey",
+  "role": "Porhtal eye",
+  "color": "#55FF55",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    187.5,
+    69.0,
+    -133.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.slime.squish",
+  "greetings": [
+    "Blorp.",
+    "The eye watches the arena."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Gooey"
+    }
+  }
+}

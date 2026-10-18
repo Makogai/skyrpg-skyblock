@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_mountaintop",
+  "origin": [
+    -10,
+    0,
+    -30
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Oubliette",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    238,
+    40,
+    -177
+  ],
+  "to": [
+    283,
+    58,
+    -145
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Oubliette Guard",
+      "level": 7,
+      "health": 200,
+      "damage": 8,
+      "xp": 6,
+      "coins": 0,
+      "max": 4,
+      "every": 10,
+      "from": [
+        248,
+        46,
+        -162
+      ],
+      "to": [
+        279,
+        52,
+        -160
+      ],
+      "indoors": true
+    }
+  ]
+}
