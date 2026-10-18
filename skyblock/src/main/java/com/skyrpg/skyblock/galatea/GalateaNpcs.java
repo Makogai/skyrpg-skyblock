@@ -36,19 +36,14 @@ import net.minecraft.world.phys.Vec3;
 
 /**
  * Galatea's people: Hina's welcome, Auryon (your first lasso) and Jaeger (your first fishing net), David Hunterborough
- * (the Hunting Box and the Hunting Toolkit), the shops (Amaury's axes and Canopy armour, Nemo's snorkeling gear,
- * Sawyer's booster, Agatha's coupon prizes) and everyone else's lines. The Hunting Box in the Lodge opens your box too.
+ * (the Hunting Box and the Hunting Toolkit), Rosemary (Forest Essence), Agatha (Starlyn Contests), the shops (Amaury's
+ * axes and Canopy armour, Nemo's snorkeling gear, Sawyer's booster) and everyone else's lines. The Hunting Box in the Lodge opens your box too.
  */
 public final class GalateaNpcs {
     static final AttachmentType<List<String>> FLAGS = AttachmentRegistry.create(SkyRpgSkyblock.id("galatea_flags"),
             builder -> builder.persistent(Codec.STRING.listOf()).copyOnDeath());
-    private static final Map<String, String> SHOPS = Map.of("Amaury", "amaury", "Nemo", "nemo", "Sawyer", "sawyer", "Agatha", "agatha");
+    private static final Map<String, String> SHOPS = Map.of("Amaury", "amaury", "Nemo", "nemo", "Sawyer", "sawyer");
     private static final Map<String, List<String>> LINES = Map.ofEntries(
-            Map.entry("Hina", List.of("Welcome to Galatea, and to Moonglade Marsh! Tangleburg is the only dry town for miles.",
-                    "Fig trees grow up on the Evergreen Plateau. Chop the trunk first, then the branches, or you'll lose half your Sweep.",
-                    "Mangroves stand in the Loch. Branches, then the trunk, then the roots: they're tough, bring your best axe.",
-                    "Chop alongside others and the tree leaves gifts for everyone who helped: Tender Wood, Vinesap, Forest Essence.",
-                    "The critters here carry shards. Auryon teaches the lasso, Jaeger the net. David keeps the Hunting Box.")),
             Map.entry("Auryon", List.of("Throw the lasso on a critter and keep your eyes on it. Look away and it slips free.",
                     "Watch its stamina drain. When I say REEL, right-click again. Not before!",
                     "Rarer critters have more stamina to wear down. Better lassos tire them faster: Vinesap makes better lassos.")),
@@ -63,9 +58,16 @@ public final class GalateaNpcs {
             Map.entry("Oden", List.of("The library keeps every shard's story. Three hundred and twenty-five, at last count.",
                     "Shards of one family fuse best. Read before you fuse.")),
             Map.entry("Alan", List.of("They say a dragon lives up north. A jade one.", "I'd stay away from the Bogged after dark. Or any time.")),
-            Map.entry("Jade Dragon", List.of("Hmm. A visitor. Few climb this far.", "Come back when the Forest knows your name.")),
-            Map.entry("Rosemary", List.of("Forest Essence: the trees give it to those who help them.",
-                    "Keep it safe. I'll have things worth spending it on soon.")));
+            Map.entry("Jade Dragon", List.of("Hmm. A visitor. Few climb this far.", "Come back when the Forest knows your name.")));
+
+    /** Hina's guide: a title and a line each. */
+    private static final List<String[]> HINA = List.of(
+            new String[] {"Fig trees", "On the Evergreen Plateau. Cut the trunk first, then the branches."},
+            new String[] {"Mangroves", "In the Loch. Branches, then the trunk, then the roots."},
+            new String[] {"Tree Gifts", "Cut a share of a tree for Essence, Whispers and more."},
+            new String[] {"Throw your axe", "Right-click with an axe to throw it at a tree."},
+            new String[] {"Hunting", "Auryon: lassos. Jaeger: nets. David: the Hunting Box."},
+            new String[] {"Starlyn Contests", "Agatha, on the Loch's pier, scores all of it daily."});
 
     private static final Map<UUID, Map<String, Integer>> HEARD = new HashMap<>();
     private static Vec3 huntingBox;
@@ -156,6 +158,18 @@ public final class GalateaNpcs {
             david(player);
             return;
         }
+        if (name.equals("Rosemary")) {
+            Rosemary.open(player);
+            return;
+        }
+        if (name.equals("Hina")) {
+            hina(player);
+            return;
+        }
+        if (name.equals("Agatha")) {
+            Starlyn.open(player);
+            return;
+        }
         if (name.equals("Auryon") && set(player, "lasso")) {
             say(player, name, "A new hunter! Take this lasso. Find a critter in the woods and throw it.");
             give(player, "ABYSMAL_LASSO");
@@ -171,6 +185,30 @@ public final class GalateaNpcs {
         int at = heard.getOrDefault(name, 0);
         say(player, name, lines.get(at % lines.size()));
         heard.put(name, at + 1);
+    }
+
+    /** Hina: the Heart of the Forest, and her guide to Galatea as cards. */
+    private static void hina(ServerPlayer player) {
+        int npc = FactionMenu.npcNear(player, "Hina");
+        CardMenu.open(player, p -> {
+            Hotf.State state = Hotf.state(p);
+            List<CardView.Card> cards = new ArrayList<>();
+            cards.add(new CardView.Card("Heart of the Forest", "Tier " + Hotf.tier(state.xp()) + "  ·  " + com.skyrpg.core.text.Msg.number(state.whispers(Hotf.FOREST))
+                    + " Forest Whispers. Perks for Sweep, Fortune and more.", 0x55FF55, true, "Open",
+                    new ItemStack(net.minecraft.world.item.Items.OAK_SAPLING), "", List.of(), -1, ""));
+            for (String[] tip : HINA) {
+                cards.add(new CardView.Card(tip[0], tip[1], 0x9BE07A, false, "", new ItemStack(net.minecraft.world.item.Items.AZALEA_LEAVES), "",
+                        List.of(), -1, ""));
+            }
+            return new CardView("GALATEA", "Hina", "Welcome to Galatea", npc, List.of(), cards,
+                    "Tree Gifts and Starlyn Contests raise your Heart of the Forest.", 1, 34);
+        }, (p, card) -> {
+            if (card == 0) {
+                HotfMenu.open(p);
+                return null;
+            }
+            return "";
+        });
     }
 
     /** David Hunterborough: your Hunting Box, your Hunting level and his Toolkit. */

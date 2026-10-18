@@ -74,7 +74,7 @@ public final class StatTypes {
     public static final StatType SWING_RANGE = add("swing_range", "Swing Range", "\u24C8", 0xFFFFFF55, 3, false,
             "How far your melee hits reach.");
     public static final StatType SWEEP = add("sweep", "Sweep", "\u222E", 0xFF55AA55, 0, false,
-            "Hits more of the mobs in front of you.");
+            "Foraging: more logs a chop takes; a tree's toughness resists it.");
     public static final StatType FEAR = add("fear", "Fear", "\u2620", 0xFFAA00AA, 0, false,
             "Used during the Great Spook.");
     public static final StatType BREAKING_POWER = add("breaking_power", "Breaking Power", "\u24C5", 0xFF00AA00, 0, false,
@@ -117,6 +117,8 @@ public final class StatTypes {
             "Hunting: the chance a kill captures its shard.");
     public static final StatType HUNTING_WISDOM = add("hunting_wisdom", "Hunting Wisdom", "☯", 0xFF55FFFF, 0, false,
             "Each point is 1% more Hunting XP.");
+    public static final StatType TIMBER = add("timber", "Timber", "⚒", 0xFF8B5A2B, 0, false,
+            "Foraging: each point is a 1% chance for a chop to take one more log.");
     public static final StatType TRACKING = add("tracking", "Tracking", "\u2316", 0xFF55FFFF, 0, false,
             "Hunting: how well you track critters.");
     public static final StatType PULL = add("pull", "Pull", "\u16F7", 0xFF55FFFF, 0, false,

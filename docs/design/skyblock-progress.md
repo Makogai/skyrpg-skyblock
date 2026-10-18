@@ -672,8 +672,12 @@ phase so the next session can pick up where this one stopped.
       Fig and Mangrove trees (toughness, Sweep, cutting order, Tree Gifts by share, regrowth), the Hunting skill and its
       stats (Hunting Fortune, Charm Chance, Hunting Wisdom), all 325 shards from NEU, the Hunting Box and attributes,
       30 critters with the lasso and the fishing net, Charm Chance on mob kills, Galatea's NPCs and the Galatea theme.
-- [ ] Galatea, part 2: Rosemary's Forest Essence shop and perks, Agatha's Starlyn contests, the Heart of the Forest,
-      Kysha's fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple, the Jade Dragon; then Torrhus.
+- [x] **Galatea, part 2** (`Hotf`, `HotfMenu`, `HotfScreen`, `Rosemary`, `Starlyn`, `import_hotf.py`): the Heart of the
+      Forest (NEU's 36 perks and tiers, Tokens of the Forest, Forest/Desert Whispers, axe abilities, thrown axes, the
+      Timber stat), Rosemary's Forest Essence shop and perks, Agatha's Starlyn Contests with brackets, rewards and her
+      coupon prize shop; Hina's Galatea menu.
+- [ ] Galatea, part 3: Kysha's fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple, the Jade Dragon,
+      Lushlilac and Sea Lumies; then Torrhus.
 - [ ] Backwater Bayou.
 
 ### Owner directions (2026-10-16)

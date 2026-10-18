@@ -2,14 +2,14 @@
   "name": "Rosemary",
   "role": "Forest Essence",
   "color": "#55FF55",
-  "hint": "Talk",
+  "hint": "Shop",
   "skin": "minecraft:entity/player/slim/noor",
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
     26.5,
     69.0,
-    111.5
+    112.5
   ],
   "yaw": 0.0,
   "sound": "minecraft:block.flowering_azalea.place",

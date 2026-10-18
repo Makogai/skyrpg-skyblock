@@ -29,6 +29,9 @@ public final class Galatea {
         Hunting.init();
         Critters.init();
         GalateaNpcs.init();
+        Hotf.init();
+        Rosemary.init();
+        Starlyn.init();
         ServerEntityLevelChangeEvents.AFTER_PLAYER_CHANGE_LEVEL.register((player, from, to) -> {
             if (!isGalatea(to) || player.isCreative() || SkillLevels.level(player, SkillLevels.FORAGING) >= FORAGING_NEEDED) {
                 return;

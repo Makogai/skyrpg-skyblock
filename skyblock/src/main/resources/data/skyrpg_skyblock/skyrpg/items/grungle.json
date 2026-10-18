@@ -1,6 +1,6 @@
 {
  "skyblock_id": "GRUNGLE",
- "base": "minecraft:paper",
+ "base": "minecraft:comparator",
  "name": "Drone Mod: Grungle",
  "rarity": "epic",
  "category": "PET_ITEM",

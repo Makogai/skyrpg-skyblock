@@ -15,7 +15,7 @@ import math
 from kit import hash01, noise
 from galatea_lib import new_area, land, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("south", version=2)
+area = new_area("south", version=3)
 area.shell = 3
 S = area.set
 G = GROUND                      # surface block y (players walk at 69)
@@ -686,8 +686,8 @@ for z in range(spine_z0, spine_z1 + 1):
 HA = (OA - 6, zsA - 10, OA + 6, zsA - 2)
 hut(*HA, door=(OA, HA[3]), wall="dark_oak_planks", roof=("spruce_stairs", "spruce_planks"))
 for x in range(OA - 4, OA + 5):
+    # a waist-high counter, so customers can reach Rosemary over it
     S(x, G + 1, HA[1] + 4, "minecraft:stripped_dark_oak_log[axis=x]")
-    S(x, G + 2, HA[1] + 4, "minecraft:spruce_slab[type=bottom]")
 S(OA - 5, G + 1, HA[1] + 1, "minecraft:barrel[facing=up]")
 S(OA + 5, G + 1, HA[1] + 1, "minecraft:barrel[facing=up]")
 S(OA - 5, G + 1, HA[1] + 2, "minecraft:barrel[facing=up]")
@@ -697,7 +697,7 @@ S(OA - 4, G + 1, HA[1] + 1, "minecraft:crafting_table")
 S(OA - 4, G + 2, HA[1] + 1, "minecraft:potted_fern")
 for dx in (-5, 5):
     S(OA + dx, G + 1, HA[3] - 1, "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true]" if False else "minecraft:composter")
-area.npc("Rosemary", OA, G + 1, HA[1] + 2, 0.0, "Forest Essence shop, in the trading post at the Outpost")
+area.npc("Rosemary", OA, G + 1, HA[1] + 3, 0.0, "Forest Essence shop, behind the trading post's counter")
 # a second hut (the fisher's) east of the spine and a bunk hut west
 HB = (OA + 10, zsA - 8, OA + 18, zsA - 2)
 hut(*HB, door=(HB[0], HB[3] - 2), wall="spruce_planks", roof=("dark_oak_stairs", "dark_oak_planks"))

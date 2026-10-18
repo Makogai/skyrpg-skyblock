@@ -1,6 +1,6 @@
 {
  "skyblock_id": "WOODEN_BAIT",
- "base": "minecraft:paper",
+ "base": "minecraft:oak_button",
  "name": "Wooden Bait",
  "rarity": "uncommon",
  "category": "BAIT",

@@ -1,6 +1,6 @@
 {
  "skyblock_id": "FIGHTING_BOOSTER",
- "base": "minecraft:paper",
+ "base": "minecraft:red_dye",
  "name": "Common Fighting Booster",
  "rarity": "common",
  "category": "BOOSTER",

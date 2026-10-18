@@ -170,6 +170,8 @@ public final class Hunting {
         addBox(player, shard.key(), count);
         int r = rarity(shard);
         SkillLevels.giveXp(player, SkillLevels.HUNTING, XP[r] * count);
+        Hotf.onCritter(player);
+        Starlyn.critter(player, r);
         player.sendSystemMessage(Component.literal("HUNT! ").withStyle(ChatFormatting.RED, ChatFormatting.BOLD)
                 .append(Component.literal("+" + count + " ").withStyle(ChatFormatting.WHITE))
                 .append(Component.literal(shard.name() + " Shard").withColor(RARITY_COLORS[r]))

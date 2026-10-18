@@ -36,6 +36,8 @@ public final class SkyMenus {
                     com.skyrpg.skyblock.accessory.MaxwellMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.mining.HotmMenu> HOTM = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("hotm"), new ExtendedMenuType<>(com.skyrpg.skyblock.mining.HotmMenu::new, com.skyrpg.skyblock.mining.HotmMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.galatea.HotfMenu> HOTF = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("hotf"), new ExtendedMenuType<>(com.skyrpg.skyblock.galatea.HotfMenu::new, com.skyrpg.skyblock.galatea.HotfMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.mining.ForgeMenu> FORGE = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("forge"), new ExtendedMenuType<>(com.skyrpg.skyblock.mining.ForgeMenu::new, com.skyrpg.skyblock.mining.ForgeMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.mining.CommissionsMenu> COMMISSIONS = Registry.register(BuiltInRegistries.MENU,

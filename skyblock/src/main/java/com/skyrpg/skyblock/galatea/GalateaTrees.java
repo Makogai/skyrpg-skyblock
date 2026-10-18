@@ -25,6 +25,8 @@ import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -44,6 +46,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
 
 /**
  * Galatea's trees (Hypixel's): Fig (toughness 10) and Mangrove (50). Chop a log with an axe and it goes with the logs
@@ -119,6 +122,8 @@ final class GalateaTrees {
     private static final Map<BlockPos, Tree> BY_BLOCK = new HashMap<>();
     private static final List<Tree> FELLED = new ArrayList<>();
     private static final Map<UUID, Long> LAST = new HashMap<>();
+    /** When each player last threw their axe (a second apart). */
+    private static final Map<UUID, Long> THROWN = new HashMap<>();
     private static final int REGROW_TICKS = 60 * 20;
     private static final int ABANDONED_TICKS = 120 * 20;
     /** Block changes without neighbour updates: vines, lanterns and leaves around a tree don't pop or decay. */
@@ -139,10 +144,20 @@ final class GalateaTrees {
                 return InteractionResult.SUCCESS;
             }
             if (player instanceof ServerPlayer server) {
-                chop(server, (ServerLevel) level, log);
+                chop(server, (ServerLevel) level, log, 1);
             }
             return InteractionResult.SUCCESS;
         });
+        // Right-click with an axe: throw it at a tree (sneaking: the Heart of the Forest's axe ability instead). Before the
+        // abilities, so an axe's own right-click ability doesn't fire on Galatea.
+        Identifier axe = SkyRpgSkyblock.id("galatea_axe");
+        Identifier abilities = Identifier.fromNamespaceAndPath("skyrpg_items", "abilities");
+        UseItemCallback.EVENT.addPhaseOrdering(axe, abilities);
+        UseItemCallback.EVENT.addPhaseOrdering(axe, Event.DEFAULT_PHASE);
+        UseItemCallback.EVENT.register(axe, (player, level, hand) -> rightClick(player, level, hand));
+        UseBlockCallback.EVENT.addPhaseOrdering(axe, abilities);
+        UseBlockCallback.EVENT.addPhaseOrdering(axe, Event.DEFAULT_PHASE);
+        UseBlockCallback.EVENT.register(axe, (player, level, hand, hit) -> rightClick(player, level, hand));
         ServerTickEvents.END_SERVER_TICK.register(GalateaTrees::tick);
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
             ServerLevel level = server.getLevel(Galatea.LEVEL);
@@ -263,15 +278,104 @@ final class GalateaTrees {
         return tree;
     }
 
-    private static void chop(ServerPlayer player, ServerLevel level, BlockPos pos) {
+    private static InteractionResult rightClick(net.minecraft.world.entity.player.Player player, net.minecraft.world.level.Level level,
+            net.minecraft.world.InteractionHand hand) {
+        if (hand != net.minecraft.world.InteractionHand.MAIN_HAND || !Galatea.isGalatea(level) || !isAxe(player.getItemInHand(hand))) {
+            return InteractionResult.PASS;
+        }
+        if (player instanceof ServerPlayer server) {
+            if (server.isShiftKeyDown()) {
+                Hotf.useAbility(server);
+            } else {
+                throwAxe(server, (ServerLevel) level);
+            }
+        }
+        return InteractionResult.SUCCESS;
+    }
+
+    /**
+     * A thrown axe: it flies through leaves and vines to the first Galatea log within 20 blocks and chops it with half
+     * the Sweep (Axe Toss: all of it). Homing Axe finds a log near where you aimed; Ricochet sometimes bounces on to
+     * another tree.
+     */
+    static void throwAxe(ServerPlayer player, ServerLevel level) {
+        long now = level.getServer().getTickCount();
+        // Rosemary's Axed: half the wait
+        if (now - THROWN.getOrDefault(player.getUUID(), -100L) < (Rosemary.level(player, "axed") > 0 ? 10 : 20)) {
+            return;
+        }
+        THROWN.put(player.getUUID(), now);
+        Vec3 eye = player.getEyePosition();
+        Vec3 look = player.getLookAngle();
+        BlockPos target = null;
+        Vec3 end = eye.add(look.scale(20));
+        for (double d = 0.5; d <= 20; d += 0.25) {
+            Vec3 at = eye.add(look.scale(d));
+            BlockPos pos = BlockPos.containing(at);
+            BlockState state = level.getBlockState(pos);
+            if (kindOf(state) != null) {
+                target = pos.immutable();
+                end = at;
+                break;
+            }
+            if (!state.isAir() && !leaves(state) && !hangs(state) && state.isSolidRender()) {
+                end = at;
+                break;
+            }
+        }
+        if (target == null && Hotf.has(player, "homing_axe")) {
+            double best = 0.95;
+            for (BlockPos pos : BlockPos.betweenClosed(BlockPos.containing(eye).offset(-20, -10, -20), BlockPos.containing(eye).offset(20, 10, 20))) {
+                Vec3 to = Vec3.atCenterOf(pos).subtract(eye);
+                if (to.length() > 20 || kindOf(level.getBlockState(pos)) == null) {
+                    continue;
+                }
+                double dot = look.dot(to.normalize());
+                if (dot > best) {
+                    best = dot;
+                    target = pos.immutable();
+                    end = Vec3.atCenterOf(pos);
+                }
+            }
+        }
+        // the axe's flight
+        Vec3 path = end.subtract(eye);
+        for (double d = 0; d < path.length(); d += 0.6) {
+            Vec3 at = eye.add(path.normalize().scale(d));
+            level.sendParticles(ParticleTypes.CRIT, at.x, at.y, at.z, 1, 0, 0, 0, 0);
+        }
+        level.playSound(null, player.blockPosition(), SoundEvents.TRIDENT_THROW.value(), net.minecraft.sounds.SoundSource.PLAYERS, 0.8f, 1.3f);
+        if (target == null) {
+            return;
+        }
+        LAST.remove(player.getUUID());
+        chop(player, level, target, Hotf.thrownSweep(player));
+        if (player.getRandom().nextDouble() * 100 < Hotf.number(player, "ricochet", "stat")) {
+            Tree first = BY_BLOCK.get(target);
+            for (BlockPos pos : BlockPos.betweenClosed(target.offset(-8, -4, -8), target.offset(8, 6, 8))) {
+                if (kindOf(level.getBlockState(pos)) != null && (first == null || BY_BLOCK.get(pos) != first) && pos.distSqr(target) > 9) {
+                    LAST.remove(player.getUUID());
+                    player.sendOverlayMessage(Component.literal("Ricochet!").withStyle(ChatFormatting.GOLD));
+                    chop(player, level, pos.immutable(), Hotf.thrownSweep(player));
+                    break;
+                }
+            }
+        }
+    }
+
+    /** An axe: a vanilla one or a SkyBlock item of the AXE category. */
+    static boolean isAxe(ItemStack tool) {
+        ItemDefinition def = SkyItems.definition(tool);
+        return tool.is(ItemTags.AXES) || def != null && "AXE".equals(def.json().has("category") ? def.json().get("category").getAsString() : "");
+    }
+
+    /** A chop at this log; {@code sweepFactor} is 0.5 for a thrown axe (1 with Axe Toss). */
+    static void chop(ServerPlayer player, ServerLevel level, BlockPos pos, double sweepFactor) {
         long now = level.getServer().getTickCount();
         if (now - LAST.getOrDefault(player.getUUID(), -10L) < 3) {
             return;
         }
-        ItemStack tool = player.getMainHandItem();
-        ItemDefinition def = SkyItems.definition(tool);
-        boolean axe = tool.is(ItemTags.AXES) || def != null && "AXE".equals(def.json().has("category") ? def.json().get("category").getAsString() : "");
-        if (!axe) {
+        if (!isAxe(player.getMainHandItem())) {
             player.sendOverlayMessage(Component.literal("You need an axe to chop Galatea's trees.").withStyle(ChatFormatting.RED));
             return;
         }
@@ -285,10 +389,17 @@ final class GalateaTrees {
         tree.touched = now;
         int stage = stage(kind, state);
         boolean outOfOrder = tree.left.stream().anyMatch(p -> stage(kind, level.getBlockState(p)) < stage);
-        double sweep = Stats.get(player, StatTypes.SWEEP) * (outOfOrder ? 0.5 : 1);
-        int count = 1 + kind.extra(sweep);
+        double sweep = Stats.get(player, StatTypes.SWEEP) * (outOfOrder ? 0.5 : 1) * sweepFactor;
+        // Timber: a chance for one more; Two for One: the whole stage at once
+        int count = 1 + kind.extra(sweep) + (player.getRandom().nextDouble() * 100 < Stats.get(player, StatTypes.TIMBER) ? 1 : 0);
+        boolean whole = Hotf.twoForOne(player);
+        if (whole) {
+            count = tree.left.size();
+            player.sendSystemMessage(Component.literal("TWO FOR ONE! ").withStyle(ChatFormatting.GREEN, ChatFormatting.BOLD)
+                    .append(Component.literal("Your chop felled the whole " + kind.name + " Tree!").withStyle(ChatFormatting.GREEN)));
+        }
         // this log, then the nearest of the same stage
-        List<BlockPos> take = new ArrayList<>(tree.left.stream().filter(p -> stage(kind, level.getBlockState(p)) == stage)
+        List<BlockPos> take = new ArrayList<>(tree.left.stream().filter(p -> whole || stage(kind, level.getBlockState(p)) == stage)
                 .sorted(Comparator.comparingDouble(p -> p.distSqr(pos))).limit(count).toList());
         if (!take.contains(pos)) {
             take.set(take.size() - 1, pos);
@@ -306,6 +417,8 @@ final class GalateaTrees {
         tree.cut.merge(player.getUUID(), take.size(), Integer::sum);
         give(player, kind.log, (int) Math.min(Integer.MAX_VALUE, logs), ItemGains.Source.FORAGING);
         SkillLevels.giveXp(player, SkillLevels.FORAGING, kind.xp * take.size());
+        Hotf.onLogs(player, kind, take.size());
+        Starlyn.logs(player, kind, logs);
         level.playSound(null, pos, SoundEvents.WOOD_BREAK, net.minecraft.sounds.SoundSource.BLOCKS, 1f, 0.8f);
         player.sendOverlayMessage(Component.literal(kind.name + " Tree  ").withStyle(ChatFormatting.GREEN)
                 .append(Component.literal(tree.left.size() + "/" + tree.total + " logs left").withStyle(ChatFormatting.GRAY))
@@ -330,14 +443,18 @@ final class GalateaTrees {
             if (player == null || share < 0.10) {
                 continue;
             }
-            double mult = share >= 0.33 ? 2 : share >= 0.20 ? 1.5 : 1;
-            int essence = (int) Math.round(tree.kind.essence * mult * size);
+            double mult = (share >= 0.33 ? 2 : share >= 0.20 ? 1.5 : 1) * Hotf.giftLuck(player);
+            int essence = Hotf.essence(player, (int) Math.round(tree.kind.essence * mult * size * Rosemary.tasty(player)));
             long xp = Math.round(tree.kind.giftXp * mult * size);
             Essence.give(player, "FOREST", essence);
             SkillLevels.giveXp(player, SkillLevels.FORAGING, xp);
+            long whispers = Hotf.onGift(player, tree.kind);
+            Starlyn.gift(player);
             var panel = Notice.of(Notice.Kind.SUCCESS).tag("TREE GIFT").panel()
                     .line(Component.literal(" +" + essence + " Forest Essence  ·  +" + Msg.number(xp) + " Foraging XP  ·  " + Math.round(share * 100) + "% cut")
-                            .withStyle(ChatFormatting.GRAY));
+                            .withStyle(ChatFormatting.GRAY))
+                    .line(Component.literal(" +" + Msg.number(whispers) + " Forest Whispers  ·  +"
+                            + (tree.kind == Kind.MANGROVE ? Hotf.MANGROVE_XP : Hotf.FIG_XP) + " Heart of the Forest XP").withStyle(ChatFormatting.DARK_AQUA));
             if (player.getRandom().nextBoolean()) {
                 give(player, tree.kind.giftItem, 1, ItemGains.Source.FORAGING);
                 ItemDefinition def = ItemRegistry.skyblock(tree.kind.giftItem);

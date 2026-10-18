@@ -552,7 +552,7 @@ def galatea(name, role, colour, hint, skin_id, slim, sound, greetings, action=No
 
 
 # ---- Galatea (Moonglade Marsh): Tangleburg and the Loch
-galatea("Hina", "Tangleburg", "#55FF55", "Talk", "sunny", True, "minecraft:block.azalea_leaves.place",
+galatea("Hina", "Heart of the Forest", "#55FF55", "Talk", "sunny", True, "minecraft:block.azalea_leaves.place",
         ["Welcome to Galatea!", "Tangleburg is the only dry town for miles."])
 galatea("David Hunterborough", "Hunting Lodge", "#7FE0B4", "Hunting", "steve", False, "minecraft:item.lead.tied",
         ["Every shard you catch lands in your Hunting Box.", "The Lodge is always open."])
@@ -574,11 +574,11 @@ galatea("Alan", "Tangleburg", "#AAAAAA", "Talk", "kai", False, "minecraft:entity
         ["They say a dragon lives up north.", "Mind the Bogged."])
 galatea("Jade Dragon", "Dragon's Lair", "#55FF55", "Talk", "zuri", False, "minecraft:entity.ender_dragon.growl",
         ["Hmm. A visitor.", "Few climb this far."])
-galatea("Agatha", "Starlyn contests", "#FF55FF", "Prizes", "alex", True, "minecraft:entity.frog.ambient",
+galatea("Agatha", "Starlyn Contests", "#FF55FF", "Contests", "alex", True, "minecraft:entity.frog.ambient",
         ["Contests every few hours, right here on the pier!", "Coupons for prizes."])
 galatea("Nemo", "Snorkeling gear", "#55FFFF", "Shop", "sunny", False, "minecraft:entity.player.splash",
         ["The Shallows are deeper than they look.", "Snorkel up!"])
-galatea("Rosemary", "Forest Essence", "#55FF55", "Talk", "noor", True, "minecraft:block.flowering_azalea.place",
+galatea("Rosemary", "Forest Essence", "#55FF55", "Shop", "noor", True, "minecraft:block.flowering_azalea.place",
         ["The trees give their essence to those who help them.", "Keep it safe."])
 galatea("Amaury", "Axes", "#AAAAAA", "Shop", "makena", False, "minecraft:item.axe.strip",
         ["Axes and Canopy armour.", "SwampCut Inc. builds them to last."])

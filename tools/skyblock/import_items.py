@@ -153,7 +153,7 @@ def vanilla_items():
 
 # Galatea's items are plain paper in Hypixel's data (their look comes from Hypixel's own models) and FurfSky has none:
 # a fitting vanilla item instead.
-LOOKS = {"ABYSMAL_LASSO": "lead", "VINERIP_LASSO": "lead", "ENTANGLER_LASSO": "lead", "EVERSTRETCH_LASSO": "lead", "BASIC_FISHING_NET": "cobweb", "MEDIUM_FISHING_NET": "cobweb", "TURBO_FISHING_NET": "cobweb", "GIGANTIC_FISHING_NET": "cobweb", "VINESAP": "slime_ball", "TENDER_WOOD": "stick", "HUNTING_TOOLKIT": "bundle", "LUSHLILAC": "lilac", "SEA_LUMIES": "sea_pickle", "STARLYN_PRIZE": "nether_star", "CRITTER_CAPSULE": "ender_eye", "MOONGLADE_JEWEL": "emerald", "MANGROVE_VINE": "vine"}
+LOOKS = {"ABYSMAL_LASSO": "lead", "VINERIP_LASSO": "lead", "ENTANGLER_LASSO": "lead", "EVERSTRETCH_LASSO": "lead", "BASIC_FISHING_NET": "cobweb", "MEDIUM_FISHING_NET": "cobweb", "TURBO_FISHING_NET": "cobweb", "GIGANTIC_FISHING_NET": "cobweb", "VINESAP": "slime_ball", "TENDER_WOOD": "stick", "HUNTING_TOOLKIT": "bundle", "LUSHLILAC": "lilac", "SEA_LUMIES": "sea_pickle", "STARLYN_PRIZE": "nether_star", "CRITTER_CAPSULE": "ender_eye", "MOONGLADE_JEWEL": "emerald", "MANGROVE_VINE": "vine", "FIGHTING_BOOSTER": "red_dye", "FORAGING_FORTUNE_BOOSTER": "lime_dye", "HUNTING_WISDOM_BOOSTER_COMMON": "light_blue_dye", "GRUNGLE": "comparator", "WOODEN_BAIT": "oak_button"}
 
 
 def base_of(item):

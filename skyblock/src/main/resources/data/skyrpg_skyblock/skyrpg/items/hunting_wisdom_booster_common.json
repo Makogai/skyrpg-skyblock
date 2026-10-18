@@ -1,6 +1,6 @@
 {
  "skyblock_id": "HUNTING_WISDOM_BOOSTER_COMMON",
- "base": "minecraft:paper",
+ "base": "minecraft:light_blue_dye",
  "name": "Common Hunting Wisdom Booster",
  "rarity": "common",
  "category": "BOOSTER",

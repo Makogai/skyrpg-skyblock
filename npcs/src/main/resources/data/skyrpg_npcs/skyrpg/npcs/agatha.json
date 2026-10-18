@@ -1,8 +1,8 @@
 {
   "name": "Agatha",
-  "role": "Starlyn contests",
+  "role": "Starlyn Contests",
   "color": "#FF55FF",
-  "hint": "Prizes",
+  "hint": "Contests",
   "skin": "minecraft:entity/player/slim/alex",
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",

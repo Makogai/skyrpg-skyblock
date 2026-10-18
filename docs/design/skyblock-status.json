@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "Galatea, part 1: Moonglade Marsh, Fig and Mangrove trees, the Hunting skill, critters, the lasso and the net, shards and attributes",
+  "latest": "Galatea, part 2: the Heart of the Forest, Rosemary's Forest Essence shop and Agatha's Starlyn Contests",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -243,7 +243,7 @@
           "name": "Galatea & Hunting",
           "icon": "item/feather",
           "weight": 4,
-          "done": 35
+          "done": 55
         }
       ]
     },

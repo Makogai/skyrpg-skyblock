@@ -1,6 +1,6 @@
 {
  "skyblock_id": "FORAGING_FORTUNE_BOOSTER",
- "base": "minecraft:paper",
+ "base": "minecraft:lime_dye",
  "name": "Common Foraging Fortune Booster",
  "rarity": "common",
  "category": "BOOSTER",

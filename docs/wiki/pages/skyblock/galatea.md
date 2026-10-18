@@ -76,11 +76,73 @@ Attributes that give a plain stat (Health, Strength, Speed, Fortune, Wisdom...) 
 
 Each Hunting level gives **+1 Hunting Fortune** and **+0.04% Charm Chance**.
 
+## The Heart of the Forest
+
+Galatea has its own perk tree, like the Heart of the Mountain. Open it with `/hotf` or from Hina in Tangleburg.
+
+- **Heart of the Forest XP** comes from Tree Gifts (10 for a Fig, 20 for a Mangrove) and from Starlyn Contests. It raises your tier, from 1 to 8. Each tier opens the next row of perks and gives **Tokens of the Forest**.
+- **A token unlocks a perk** next to one you already have.
+- **Perks level up with Forest Whispers.** Every Tree Gift gives 20 to 40, and contests give thousands. Some perks cost **Desert Whispers**, which come with Torrhus later.
+- **The perks** cover Sweep, Foraging Fortune, more Tree Gift loot, Hunting Fortune, combat stats on Galatea, daily bonuses, and more.
+- **Right-click a perk** to switch it off or on.
+
+**Axe abilities** unlock at tier 2. Pick one in the tree, then sneak and right-click with an axe on Galatea or in The Park to use it:
+
+| Ability | What it does | Lasts | Cooldown |
+| --- | --- | --- | --- |
+| Damage Boost | double damage to Galatea's creatures | 10 s | 210 s |
+| Axe Toss | thrown axes keep all their Sweep | 10 s | 120 s |
+| Maniac Slicer | uses all your mana: +1 Sweep per 100 mana | 20 s | 60 s |
+
+### Throwing your axe
+
+Right-click with any axe on Galatea to throw it. It flies through leaves and vines to the first log up to 20 blocks away and chops it, but with only half your Sweep. You can throw once a second.
+
+## Rosemary
+
+**Rosemary** at the Murkwater Outpost trades **Forest Essence**, which you get from Tree Gifts and contests. She sells:
+
+| Item | Forest Essence |
+| --- | --- |
+| Wooden Bait x16 | 100 |
+| Common Hunting Wisdom Booster | 250 |
+| Fig Hew | 1,500 |
+| Drone Mod: Grungle | 2,500 |
+| Frog's Spirit | 5,000 |
+| Figstone Splitter | 6,000 |
+| Helix Chopper | 25,000 |
+
+She also sells perks:
+
+| Perk | Levels | What it does |
+| --- | --- | --- |
+| Trapped | 5 | Huntraps catch 2% faster a level |
+| Axed | 1 | throw your axe twice as often |
+| Extreme Pressure | 10 | +2 Pressure Resistance a level |
+| Lumberjack | 10 | +5 Foraging Fortune a level on Galatea |
+| Tasty | 5 | Tree Gifts give 2% more Forest Essence a level |
+| Forest Training | 3 | +3 / +6 / +10 Foraging Wisdom on Galatea |
+
+## Starlyn Contests
+
+**Agatha** runs a Starlyn Contest every SkyBlock day (20 minutes), so there's always one on. Everything you do on the Moonglade Marsh scores points:
+
+| Action | Points |
+| --- | --- |
+| A Tree Gift | 10 |
+| 100 Fig Logs | 3 |
+| 100 Mangrove Logs | 6 |
+| A critter | 3 (Common) to 45 (Legendary) |
+
+Your points put you in a bracket: Common 25, Uncommon 100, Rare 400, Epic 1,000, Legendary 2,500, Mythic 5,000, Divine 8,000, Special 12,000.
+
+When the day ends, go to Agatha on the Murkwater Loch pier to claim your rewards: **Agatha's Coupons**, Forest Whispers, Forest Essence, Foraging XP and Heart of the Forest XP. Your first three contests each day give 1,200 extra HotF XP. Epic and higher brackets have a 10% chance of **Agatha's Prize**. Spend coupons in her prize shop.
+
 ## People
 
 | NPC | Where | What they do |
 | --- | --- | --- |
-| Hina | Tangleburg square | welcomes you; tips on trees and hunting |
+| Hina | Tangleburg square | the Heart of the Forest; tips on trees and hunting |
 | David Hunterborough | Hunting Lodge | your Hunting Box, your Hunting level, the Hunting Toolkit |
 | Auryon | by the Lodge | your first lasso; lasso tips |
 | Jaeger | the pond | your first fishing net; net tips |
@@ -88,9 +150,10 @@ Each Hunting level gives **+1 Hunting Fortune** and **+0.04% Charm Chance**.
 | Sawyer | lumber yard | the Foraging Fortune Booster |
 | Amaury | SwampCut Inc. | axes and Canopy armour |
 | Nemo | the Shallows' dock | snorkeling armour |
-| Agatha | the pavilion | prizes for Agatha Coupons |
-| Kysha, Dax, Kiara, Oden, Alan, Jade Dragon, Rosemary | around the island | talk to them (their features are coming) |
+| Agatha | the pavilion | Starlyn Contests and her coupon prize shop |
+| Rosemary | Murkwater Outpost | the Forest Essence shop and perks |
+| Kysha, Dax, Kiara, Oden, Alan, Jade Dragon | around the island | talk to them (their features are coming) |
 
 ## Coming next
 
-Rosemary's Forest Essence shop and perks, Agatha's Starlyn contests, the Heart of the Forest, Kysha's shard fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple and the second island, Torrhus.
+Kysha's shard fusion, Dax's Huntraps, the Pocket Black Hole, the Forest Temple and the second island, Torrhus.
