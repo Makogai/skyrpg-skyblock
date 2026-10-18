@@ -187,7 +187,9 @@ public final class Forge {
         }
         long now = System.currentTimeMillis();
         Map<String, Job> more = new java.util.HashMap<>(jobs);
-        more.put(String.valueOf(free), new Job(recipe.output(), recipe.count(), now, now + seconds(player, recipe) * 1000, false));
+        // Cole's Molten Forge: a quarter off
+        long millis = Math.round(seconds(player, recipe) * 1000 * (com.skyrpg.core.world.Mayor.active("molten_forge") ? 0.75 : 1));
+        more.put(String.valueOf(free), new Job(recipe.output(), recipe.count(), now, now + millis, false));
         player.setAttached(JOBS, Map.copyOf(more));
         Notice.of(Notice.Kind.MINING).tag("FORGE").send(player, Component.literal("Started forging ").withStyle(ChatFormatting.GRAY)
                 .append(name(recipe.output(), recipe.count())).append(Component.literal("!").withStyle(ChatFormatting.GRAY)));

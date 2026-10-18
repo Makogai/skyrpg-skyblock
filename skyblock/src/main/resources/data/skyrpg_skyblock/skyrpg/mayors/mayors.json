@@ -1,0 +1,55 @@
+{
+ "note": "Hypixel's mayors (api.hypixel.net/v2/resources/skyblock/election and the community wiki, 2026-10-18). Regular mayors run with 1 to 4 of their perks (one marked for the Minister); special ones with all of theirs, every 8 SkyBlock years (Jerry, Scorpius, Derpy in turn).",
+ "mayors": [
+  {"key": "slayer", "name": "Aatrox", "color": "#AA0000", "icon": "minecraft:iron_sword", "perks": [
+   {"id": "slashed_pricing", "name": "SLASHED Pricing", "description": "Starting Slayer quests is half price."},
+   {"id": "slayer_xp_buff", "name": "Slayer XP Buff", "description": "Earn 25% more Slayer XP."},
+   {"id": "pathfinder", "name": "Pathfinder", "description": "Gain rare drops 20% more often: +20 Magic Find."}]},
+  {"key": "mining", "name": "Cole", "color": "#FFAA00", "icon": "minecraft:diamond_pickaxe", "perks": [
+   {"id": "prospection", "name": "Prospection", "description": "Mining minions work 25% faster."},
+   {"id": "mining_xp_buff", "name": "Mining XP Buff", "description": "+60 Mining Wisdom on public islands."},
+   {"id": "mining_fiesta", "name": "Mining Fiesta", "description": "A Mining Fiesta: +25 Mining Wisdom and +25 Mining Fortune on public islands."},
+   {"id": "molten_forge", "name": "Molten Forge", "description": "Forging takes 25% less time."}]},
+  {"key": "pets", "name": "Diana", "color": "#55FF55", "icon": "minecraft:bone", "perks": [
+   {"id": "huntress_intuition", "name": "Huntress' Intuition", "description": "+10 Tracking."},
+   {"id": "mythological_ritual", "name": "Mythological Ritual", "description": "Diana's Griffin burrows open in the Hub."},
+   {"id": "pet_xp_buff", "name": "Pet XP Buff", "description": "Pets gain 35% more XP."},
+   {"id": "sharing_is_caring", "name": "Sharing is Caring", "description": "2 more EXP Share slots and 10% more shared XP."}]},
+  {"key": "economist", "name": "Diaz", "color": "#FFAA00", "icon": "minecraft:gold_ingot", "perks": [
+   {"id": "long_term_investment", "name": "Long Term Investment", "description": "The Minister returns at the next election with all their perks."},
+   {"id": "volume_trading", "name": "Volume Trading", "description": "Shen's Auctions sell twice as many of each item."},
+   {"id": "stock_exchange", "name": "Stock Exchange", "description": "The Stonks Auction for a Stock of Stonks."},
+   {"id": "shopping_spree", "name": "Shopping Spree", "description": "NPC daily buy limits are ten times higher."}]},
+  {"key": "farming", "name": "Finnegan", "color": "#55FF55", "icon": "minecraft:wheat", "perks": [
+   {"id": "pest_eradicator", "name": "Pest Eradicator", "description": "Pests come 20% more often (a fifth off the wait between them)."},
+   {"id": "goated", "name": "GOATed", "description": "Jacob's contest brackets hold 10% more players."},
+   {"id": "blooming_business", "name": "Blooming Business", "description": "Garden visitors give more Copper and rarer visitors come more often."},
+   {"id": "grand_feast", "name": "Grand Feast", "description": "The Harvest Feast lasts the whole year."}]},
+  {"key": "events", "name": "Foxy", "color": "#FF5555", "icon": "minecraft:cake", "perks": [
+   {"id": "sweet_benevolence", "name": "Sweet Benevolence", "description": "30% more Candy, Gifts and Chocolate during their events."},
+   {"id": "extra_event", "name": "Extra Event", "description": "One extra Spooky Festival, Mining Fiesta or Fishing Festival."},
+   {"id": "a_time_for_giving", "name": "A Time for Giving", "description": "Party Chests and Party Gifts during events."},
+   {"id": "chivalrous_carnival", "name": "Chivalrous Carnival", "description": "The Carnival stays in the Hub all year."}]},
+  {"key": "fishing", "name": "Marina", "color": "#55FFFF", "icon": "minecraft:fishing_rod", "perks": [
+   {"id": "fishing_xp_buff", "name": "Fishing XP Buff", "description": "+50 Fishing Wisdom on public islands."},
+   {"id": "luck_of_the_sea", "name": "Luck of the Sea 2.0", "description": "+15 Sea Creature Chance."},
+   {"id": "fishing_festival", "name": "Fishing Festival", "description": "A Fishing Festival the first 3 days of every month."},
+   {"id": "double_trouble", "name": "Double Trouble", "description": "+0.1 Double Hook Chance for every Sea Creature Chance."}]},
+  {"key": "dungeons", "name": "Paul", "color": "#FF5555", "icon": "minecraft:skeleton_skull", "perks": [
+   {"id": "marauder", "name": "Marauder", "description": "Dungeon reward chests are 20% cheaper."},
+   {"id": "ezpz", "name": "EZPZ", "description": "+10 bonus score in Dungeons."},
+   {"id": "benediction", "name": "Benediction", "description": "Blessings are 25% stronger."}]},
+  {"key": "jerry", "name": "Jerry", "color": "#55FF55", "icon": "minecraft:villager_spawn_egg", "special": true, "perks": [
+   {"id": "perkpocalypse", "name": "Perkpocalypse", "description": "Every 18 SkyBlock days, all of another mayor's perks: Aatrox, Cole, Diana, Finnegan, Marina, Paul."},
+   {"id": "statspocalypse", "name": "Statspocalypse", "description": "+10% of every combat stat."},
+   {"id": "jerrypocalypse", "name": "Jerrypocalypse", "description": "Hidden Jerries turn up while you work."}]},
+  {"key": "scorpius", "name": "Scorpius", "color": "#AA00AA", "icon": "minecraft:wither_skeleton_skull", "special": true, "perks": [
+   {"id": "bribe", "name": "Bribe", "description": "If Scorpius wins and you voted for him, claim a bribe of up to 1,000,000 coins."},
+   {"id": "darker_auctions", "name": "Darker Auctions", "description": "The Dark Auction has more rounds and special items."}]},
+  {"key": "derpy", "name": "Derpy", "color": "#FF55FF", "icon": "minecraft:pufferfish", "special": true, "perks": [
+   {"id": "quad_taxes", "name": "QUAD TAXES!!!", "description": "Auction House and Bazaar taxes are four times higher."},
+   {"id": "turbo_minions", "name": "TURBO MINIONS!!!", "description": "Minions make twice as much."},
+   {"id": "double_mobs_hp", "name": "DOUBLE MOBS HP!!!", "description": "Monsters have twice the health."},
+   {"id": "moar_skillz", "name": "MOAR SKILLZ!!!", "description": "50% more skill XP."}]}
+ ]
+}

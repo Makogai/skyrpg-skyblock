@@ -161,7 +161,8 @@ final class Pests {
         if (player.getRandom().nextDouble() >= chance || count(level, owner) >= 8) {
             return;
         }
-        COOLDOWN.put(owner.id(), now + COOLDOWN_MS);
+        // Finnegan's Pest Eradicator: a fifth off the wait between pests
+        COOLDOWN.put(owner.id(), now + Math.round(COOLDOWN_MS * (com.skyrpg.core.world.Mayor.active("pest_eradicator") ? 0.8 : 1)));
         spawn(level, owner, kind, pos);
         player.sendSystemMessage(Component.literal("A " + kind.name() + " has appeared in " + Garden.areaName(pos) + "!")
                 .withStyle(ChatFormatting.GOLD));

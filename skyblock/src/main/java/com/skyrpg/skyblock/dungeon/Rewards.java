@@ -173,6 +173,10 @@ final class Rewards {
             if (cost < 0) {
                 continue;
             }
+            // Paul's Marauder: 20% off
+            if (com.skyrpg.core.world.Mayor.active("marauder")) {
+                cost = Math.round(cost * 0.8);
+            }
             Chest chest = new Chest(tier, cost);
             int base = (1 + tier) * (2 + run.floor.number() * 3);
             chest.essence.put("UNDEAD", base + random.nextInt(base + 1));

@@ -46,6 +46,11 @@ import net.minecraft.world.item.ItemStack;
  */
 public final class Bazaar {
     public static final double TAX = 0.0125;
+
+    /** The sell tax: 1.25%, four times that under Derpy's QUAD TAXES!!!. */
+    public static double tax() {
+        return TAX * (com.skyrpg.core.world.Mayor.active("quad_taxes") ? 4 : 1);
+    }
     /** Hypixel's largest order. */
     public static final int MAX_AMOUNT = 71_680;
     public static final String PAGE = "bazaar";
@@ -387,7 +392,7 @@ public final class Bazaar {
             return;
         }
         SkyStacks.take(player.getInventory(), product, sold);
-        long coins = (long) Math.floor(earned * (1 - TAX));
+        long coins = (long) Math.floor(earned * (1 - tax()));
         Wallet.give(player, coins);
         player.sendOverlayMessage(Component.literal("[Bazaar] ").withStyle(ChatFormatting.GOLD)
                 .append(Component.literal("Sold " + Msg.number(sold) + "x ").withStyle(ChatFormatting.GREEN))
@@ -485,7 +490,7 @@ public final class Bazaar {
                 give(player, def, n);
                 items += n;
             } else {
-                long earned = (long) Math.floor(n * order.price() * (1 - TAX));
+                long earned = (long) Math.floor(n * order.price() * (1 - tax()));
                 Wallet.give(player, earned);
                 coins += earned;
             }

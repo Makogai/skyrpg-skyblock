@@ -389,7 +389,8 @@ public final class Pets {
         }
         int before = level(pet);
         ItemStack updated = pet.copy();
-        double petXp = xp * (skill.equals(type.skill()) ? OWN_SKILL_SHARE : OTHER_SKILL_SHARE);
+        // Diana's Pet XP Buff: +35%
+        double petXp = xp * (skill.equals(type.skill()) ? OWN_SKILL_SHARE : OTHER_SKILL_SHARE) * (com.skyrpg.core.world.Mayor.active("pet_xp_buff") ? 1.35 : 1);
         setXp(updated, xp(updated) + petXp);
         // Taming levels with what your pet earns.
         com.skyrpg.core.skills.SkillLevels.giveXpQuietly(player, com.skyrpg.core.skills.SkillLevels.TAMING, petXp);

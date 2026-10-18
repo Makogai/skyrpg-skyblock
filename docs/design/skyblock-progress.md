@@ -685,6 +685,14 @@ phase so the next session can pick up where this one stopped.
       Huntaxes' Absorptio, Lotus Atoll.
 - [ ] Backwater Bayou.
 
+### Phase 5: mayors and events
+
+- [x] **Mayors & Elections, part 1** (`mayor/`, design in `mayors.md`): Hypixel's calendar (elections from the 27th of
+      Late Summer to the 27th of Late Spring), 5 candidates rolled per year (specials every 8 years, Hypixel's years),
+      votes at Clerk Seraphine or `/election`, Mayor and Minister, `/mayor`, the stat perks and the perks hooked into
+      Slayers, the Forge, pets, minions, taxes, zone mobs, dungeons, pests and Shen's Auctions; Scorpius's Bribe.
+- [ ] Mayors part 2: the mayor events (Mythological Ritual, Fishing Festival, Mining Fiesta, Carnival) and the rest.
+
 ### Owner directions (2026-10-16)
 
 - **FurfSky Reborn = the item look, nothing else.** Always on (no setting); `FurfSkyFilter` keeps only its item, armour,

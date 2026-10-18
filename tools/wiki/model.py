@@ -18,7 +18,7 @@ CATEGORY_IDS = [c[0] for c in CATEGORIES]
 
 PAGE_LIST = {
     "getting-started": ["welcome", "skyrpg-mods", "first-launch", "first-steps", "controls-and-keys", "mods-and-shaders", "progression-guide"],
-    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "dwarven-mines", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "reforging", "gemstones", "crystal-hollows", "glacite-tunnels", "crimson-isle", "the-garden", "the-rift", "galatea", "the-catacombs", "museum", "slayers"],
+    "skyblock": ["skyblock-menu", "skyblock-items", "profiles-and-islands", "the-hub", "the-islands", "dwarven-mines", "calendar-and-events", "storage-and-wardrobe", "minions", "collections", "recipe-book", "skyblock-leveling", "npc-shops", "bazaar", "auction-house", "reforging", "gemstones", "crystal-hollows", "glacite-tunnels", "crimson-isle", "the-garden", "the-rift", "galatea", "mayors", "the-catacombs", "museum", "slayers"],
     "skyhaven": ["skyhaven", "npcs"],
     "economy": ["coins-and-bank"],
     "skills": ["skills-overview", "mining", "heart-of-the-mountain", "farming", "foraging", "fishing", "enchanting", "experimentation-table", "crafting", "alchemy"],

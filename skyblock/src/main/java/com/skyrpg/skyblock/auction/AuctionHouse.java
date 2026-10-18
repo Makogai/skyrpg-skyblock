@@ -192,9 +192,9 @@ public final class AuctionHouse {
         return (long) Math.ceil(price * rate) + DURATION_FEE[Math.clamp(durationIndex, 0, DURATION_FEE.length - 1)];
     }
 
-    /** The 1% taken from what you collect over 1M. */
+    /** The 1% taken from what you collect over 1M (4% under Derpy's QUAD TAXES!!!). */
     public static long tax(long coins) {
-        return coins > 1_000_000 ? (long) Math.floor(coins * 0.01) : 0;
+        return coins > 1_000_000 ? (long) Math.floor(coins * 0.01 * (com.skyrpg.core.world.Mayor.active("quad_taxes") ? 4 : 1)) : 0;
     }
 
     public static long nextBid(AuctionData.Auction auction) {

@@ -362,7 +362,9 @@ public final class Zones {
         if (spawn.name().isEmpty()) {
             return;
         }
-        double health = spawn.health() / com.skyrpg.core.stats.StatTypes.HEALTH_SCALE;
+        // Derpy's DOUBLE MOBS HP!!! (monsters only)
+        double health = spawn.health() / com.skyrpg.core.stats.StatTypes.HEALTH_SCALE
+                * (mob instanceof net.minecraft.world.entity.monster.Enemy && com.skyrpg.core.world.Mayor.active("double_mobs_hp") ? 2 : 1);
         setBase(mob, net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH, Math.min(1024, health));
         if (spawn.damage() > 0) {
             setBase(mob, net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, spawn.damage() / com.skyrpg.core.stats.StatTypes.HEALTH_SCALE);

@@ -1,0 +1,23 @@
+{
+  "name": "Clerk Seraphine",
+  "role": "Elections",
+  "color": "#FFAA00",
+  "hint": "Vote",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -6.5,
+    65.0,
+    -10.5
+  ],
+  "yaw": -45.0,
+  "sound": "minecraft:item.book.page_turn",
+  "greetings": [
+    "Every SkyBlock year, a new Mayor.",
+    "Your vote counts. You can change it until the election closes."
+  ],
+  "action": {
+    "type": "election"
+  }
+}

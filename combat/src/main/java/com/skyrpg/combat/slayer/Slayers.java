@@ -284,8 +284,10 @@ public final class Slayers {
             reply(player, Component.literal("Needs " + missing + "."), false);
             return;
         }
-        if (!Wallet.take(player, tier.fee())) {
-            reply(player, Component.literal("Not enough coins: it costs " + Msg.number(tier.fee()) + "."), false);
+        // Aatrox's SLASHED Pricing: half price
+        long fee = com.skyrpg.core.world.Mayor.active("slashed_pricing") ? tier.fee() / 2 : tier.fee();
+        if (!Wallet.take(player, fee)) {
+            reply(player, Component.literal("Not enough coins: it costs " + Msg.number(fee) + "."), false);
             return;
         }
         setQuest(player, new SlayerState.Quest(lineId, tierNumber, 0, false));
@@ -393,7 +395,8 @@ public final class Slayers {
         }
         drops.append(Msg.text((first ? "" : ", ") + "+" + Msg.number(Math.round(combatXp)) + " Combat XP", ChatFormatting.DARK_AQUA));
         Notice.send(player, Notice.Kind.SLAYER, drops);
-        addXp(player, line, tier.slayerXp() * (1 + SlayerGear.xpBonus(player, line.id())));
+        // Aatrox's Slayer XP Buff: +25%
+        addXp(player, line, tier.slayerXp() * (1 + SlayerGear.xpBonus(player, line.id())) * (com.skyrpg.core.world.Mayor.active("slayer_xp_buff") ? 1.25 : 1));
         if (line.rare() != Items.AIR && random.nextDouble() < tier.rareChance() * find) {
             rareDrop(player, line.rare(), ChatFormatting.LIGHT_PURPLE, false);
         }

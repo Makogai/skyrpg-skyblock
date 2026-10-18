@@ -217,6 +217,10 @@ public class MinionEntity extends ArmorStand {
         if (active.contains(MinionUpgrade.LESSER_SOULFLOW_ENGINE) || active.contains(MinionUpgrade.SOULFLOW_ENGINE)) {
             output *= 0.5;
         }
+        // Derpy's TURBO MINIONS!!!
+        if (com.skyrpg.core.world.Mayor.active("turbo_minions")) {
+            output *= 2;
+        }
         return output;
     }
 
@@ -253,7 +257,9 @@ public class MinionEntity extends ArmorStand {
     }
 
     private long actionMillis(MinionType type) {
-        return Math.max(1000L, Math.round(type.tier(tier).actionSeconds() * 1000 / (1 + speedPercent() / 100.0)));
+        // Cole's Prospection: mining minions 25% faster
+        double prospection = type.category().equals("mining") && com.skyrpg.core.world.Mayor.active("prospection") ? 25 : 0;
+        return Math.max(1000L, Math.round(type.tier(tier).actionSeconds() * 1000 / (1 + (speedPercent() + prospection) / 100.0)));
     }
 
     /** Its tier's head, leather in its category's colour, and the tool of its trade. */

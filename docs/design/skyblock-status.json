@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "Galatea, part 3: shard fusion, Huntraps, Pocket Black Holes, Lushlilac and Sea Lumies, the Forest Temple and the Jade Dragon",
+  "latest": "Mayors & Elections: Hypixel's calendar, candidates, votes, Mayor and Minister, perks across the game; backpacks in Storage",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -267,7 +267,7 @@
           "name": "Mayors & elections",
           "icon": "item/paper",
           "weight": 3,
-          "done": 0
+          "done": 50
         },
         {
           "name": "Parties, chat & guides",

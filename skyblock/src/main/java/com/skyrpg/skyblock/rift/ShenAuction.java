@@ -35,6 +35,12 @@ import net.minecraft.world.level.saveddata.SavedDataType;
  */
 final class ShenAuction {
     record Lot(String item, int winners) {
+        /** Diaz's Volume Trading: twice as many winners. */
+        @Override
+        public int winners() {
+            return com.skyrpg.core.world.Mayor.active("volume_trading") ? winners * 2 : winners;
+        }
+
     }
 
     static final List<Lot> LOTS = List.of(new Lot("DEAD_CAT_FOOD", 60), new Lot("FLEX_HELMET", 15), new Lot("PLACEABLE_FAIRY_SOUL_RIFT", 15),
