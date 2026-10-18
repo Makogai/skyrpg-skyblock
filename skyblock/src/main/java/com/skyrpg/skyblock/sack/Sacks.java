@@ -77,6 +77,9 @@ public final class Sacks {
         UseItemCallback.EVENT.register(early, (player, level, hand) -> {
             ItemStack held = player.getItemInHand(hand);
             String id = SkyItems.skyblockId(held);
+            if (id != null && level.isClientSide()) {
+                return looksLikeSack(held, id) ? InteractionResult.SUCCESS : InteractionResult.PASS;
+            }
             if (id == null || !bySack.containsKey(id)) {
                 return InteractionResult.PASS;
             }
@@ -90,6 +93,9 @@ public final class Sacks {
         UseBlockCallback.EVENT.register(early, (player, level, hand, hit) -> {
             ItemStack held = player.getItemInHand(hand);
             String id = SkyItems.skyblockId(held);
+            if (id != null && level.isClientSide()) {
+                return looksLikeSack(held, id) ? InteractionResult.SUCCESS : InteractionResult.PASS;
+            }
             if (id == null || !bySack.containsKey(id)) {
                 return InteractionResult.PASS;
             }
@@ -123,6 +129,16 @@ public final class Sacks {
                         return got;
                     }))));
         });
+    }
+
+    /**
+     * On the client, which has no sack data: whether this looks like a sack. It must answer SUCCESS for one so the click
+     * reaches the server; otherwise the Hub's protection refuses a head (a block item) on the client and nothing's sent.
+     */
+    private static boolean looksLikeSack(ItemStack held, String id) {
+        ItemDefinition def = SkyItems.definition(held);
+        return id.equals("TRICK_OR_TREAT_BAG") || def != null && def.json() != null && def.json().has("category")
+                && def.json().get("category").getAsString().equals("SACK");
     }
 
     private static void load(Map<Identifier, JsonElement> files) {

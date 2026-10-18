@@ -19,7 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
  *
  * <p>{@code /sbevent start|stop <event>} starts a calendar event now for its usual length, or ends one started that way
  * (admins, testing); {@code /sbspooky score <green> <purple>} sets your Candy Contest score and {@code /sbspooky chest}
- * puts a Trick or Treat Chest in front of you.
+ * puts a Trick or Treat Chest in front of you, {@code /sbspooky megabat} a Mega Bat near you.
  */
 public final class Festivals {
     /** The sidebar's festival lines (the Spooky Festival's timer and your candy), synced to its player. */
@@ -35,6 +35,8 @@ public final class Festivals {
         SIDEBAR.identifier();
         NewYear.init();
         SpookyFestival.init();
+        SpookyBats.init();
+        HeadlessHorseman.init();
         TravelingZoo.init();
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> {
             dispatcher.register(Commands.literal("spookyfestival").executes(ctx -> {
@@ -56,6 +58,13 @@ public final class Festivals {
                         return known ? 1 : 0;
                     }))));
             dispatcher.register(Commands.literal("sbspooky").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+                    .then(Commands.literal("megabat").executes(ctx -> {
+                        ServerPlayer player = ctx.getSource().getPlayerOrException();
+                        for (int i = 0; i < 10 && !SpookyBats.spawnMega(player.level(), player); i++) {
+                            // try another spot
+                        }
+                        return 1;
+                    }))
                     .then(Commands.literal("chest").executes(ctx -> {
                         ServerPlayer player = ctx.getSource().getPlayerOrException();
                         SpookyFestival.spawnChest(player, player.position().add(player.getLookAngle().multiply(2, 0, 2)));

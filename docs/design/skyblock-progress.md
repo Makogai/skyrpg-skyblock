@@ -700,8 +700,10 @@ phase so the next session can pick up where this one stopped.
       sidebar, the six Shielded Spooky mobs at night, Trick or Treat Chests, the Candy Contest brackets and the stamped
       Spooky Pie, the Fear Mongerer with a SPOOKY theme), the Traveling Zoo (Oringo's three pets, Hypixel's prices), the
       New Year Celebration (the Baker's yearly cake); the Trick or Treat Bag as a candy sack.
-- [ ] Events part 2: the Headless Horseman, the Bat Firework, Spooky fishing, Hoppity's Hunt, Jerry's Workshop and the
-      Season of Jerry.
+- [x] **Events part 2** (`SpookyBats`, `HeadlessHorseman`): the Bat Firework and its Bat Piñatas, Mega Bats and the
+      Echolocator, the Headless Horseman (Horseman's Candle, swarms, projectile immunity, damage ranking), Spooky
+      fishing (the five spooky sea creatures). Sacks can be added in the Hub again (the client refused head items).
+- [ ] Events part 3: Hoppity's Hunt and the Chocolate Factory, Jerry's Workshop and the Season of Jerry.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 

@@ -99,7 +99,7 @@ public final class SpookyFestival {
     static final String NAME = "Spooky Festival";
     /** Shielded mobs: every hit does 1 damage (2 with the Ghoul Buster). */
     public static final String SHIELDED = "skyrpg_shielded";
-    private static final String SPOOKY = "skyrpg_spooky";
+    static final String SPOOKY = "skyrpg_spooky";
     private static final String KIND = "skyrpg_spooky.";
     private static final String CHEST = "skyrpg_trick_or_treat";
     private static final String CHEST_OWNER = "skyrpg_tot_owner.";
@@ -120,7 +120,7 @@ public final class SpookyFestival {
             new Spooky("trick_or_treater", "Trick or Treater", EntityTypes.ZOMBIE, 92, 10, 30, 138, 1, 3, 0, 0xFF8C1A, 3.06));
 
     /** Where Spooky mobs come out at night: the Graveyard's lawns and the Wilderness. */
-    private static final List<AABB> AREAS = List.of(new AABB(-199, 62, -61, -142, 75, -12), new AABB(117, 29, -50, 250, 107, 83));
+    static final List<AABB> AREAS = List.of(new AABB(-199, 62, -61, -142, 75, -12), new AABB(117, 29, -50, 250, 107, 83));
 
     /** The Candy Contest's brackets: the score each needs, its coins and Carnival Tickets (the last is the festival's best). */
     static final String[] BRACKETS = {"Wood", "Stone", "Iron", "Gold", "Diamond", "Emerald", "Top"};
@@ -206,6 +206,12 @@ public final class SpookyFestival {
     private static final Map<UUID, Chest> CHESTS = new HashMap<>();
 
     private SpookyFestival() {
+    }
+
+    /** Night on the SkyBlock clock (7pm to 6am), whatever the weather does to the sky. */
+    static boolean night() {
+        int hour = SkyBlockTime.now().hour();
+        return hour >= 19 || hour < 6;
     }
 
     static boolean running() {
@@ -325,7 +331,7 @@ public final class SpookyFestival {
     }
 
     /** Candy from a mob: into the inventory (and on into the Spooky Sack or Trick or Treat Bag), and onto the score. */
-    private static void candy(ServerPlayer player, boolean purple, int count) {
+    static void candy(ServerPlayer player, boolean purple, int count) {
         give(player, purple ? "PURPLE_CANDY" : "GREEN_CANDY", count);
         Book book = Book.of(player.level().getServer());
         String key = player.getUUID().toString();
@@ -335,7 +341,7 @@ public final class SpookyFestival {
         Msg.playSound(player, SoundEvents.ITEM_PICKUP, 0.5f, purple ? 0.7f : 1.4f);
     }
 
-    private static Component give(ServerPlayer player, String id, int count) {
+    static Component give(ServerPlayer player, String id, int count) {
         ItemStack stack;
         if (id.startsWith("book:")) {
             String[] parts = id.split(":");
@@ -440,7 +446,7 @@ public final class SpookyFestival {
         if (hub == null) {
             return;
         }
-        boolean night = on && !hub.isBrightOutside();
+        boolean night = on && night();
         for (AABB box : AREAS) {
             List<Mob> alive = hub.getEntitiesOfClass(Mob.class, box.inflate(16), m -> m.isAlive() && m.entityTags().contains(SPOOKY)
                     && !m.entityTags().contains("skyrpg_trick"));

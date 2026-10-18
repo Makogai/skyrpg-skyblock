@@ -96,16 +96,30 @@ CREATURES = {
     "TIGER_SHARK": ("Tiger Shark", "water", 18, 500, 1485, 300, None, "fishing_festival", "A striped beast bounds from the depths, the wild Tiger Shark!"),
     "GREAT_WHITE_SHARK": ("Great White Shark", "water", 24, 100, 3200, 750, None, "fishing_festival",
                           "Hide no longer, a Great White Shark has tracked your scent and thirsts for your blood!"),
+    # The Spooky Festival (from an hour before to an hour after): 15% of the water's sea creatures are these instead
+    # (Spooky Bait +15%); weights within the spooky pool, Hypixel's (wiki, Oct 2026).
+    "SCARECROW": ("Scarecrow", "water", 9, 2875, 320, 150, None, "spooky_festival", "Phew! It's only a Scarecrow."),
+    "NIGHTMARE": ("Nightmare", "water", 14, 1500, 962, 600, None, "spooky_festival",
+                  "You hear trotting from beneath the waves, you caught a Nightmare."),
+    "WEREWOLF": ("Werewolf", "water", 17, 500, 1035, 250, None, "spooky_festival", "It must be a full moon, a Werewolf appears."),
+    "PHANTOM_FISHER": ("Phantom Fisher", "water", 21, 100, 3140, 1000, None, "spooky_festival",
+                       "The spirit of a long lost Phantom Fisher has come to haunt you."),
+    "GRIM_REAPER": ("Grim Reaper", "water", 26, 25, 7800, 2100, None, "spooky_festival", "This can't be! The manifestation of death himself!"),
 }
 # What NEU's render can't show as a mob (an invisible armour stand wearing the creature): decision.
 LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER": {"entity": "minecraft:spider"},
                  # the sharks: NEU's render is an old zombie stand-in; decision: dolphins
                  "NURSE_SHARK": {"entity": "minecraft:dolphin"}, "BLUE_SHARK": {"entity": "minecraft:dolphin"},
-                 "TIGER_SHARK": {"entity": "minecraft:dolphin"}, "GREAT_WHITE_SHARK": {"entity": "minecraft:dolphin"}}
+                 "TIGER_SHARK": {"entity": "minecraft:dolphin"}, "GREAT_WHITE_SHARK": {"entity": "minecraft:dolphin"},
+                 # NEU's render holds a "phantom_rod", which isn't an item
+                 "PHANTOM_FISHER": {"entity": "minecraft:zombie", "hand": {"item": "minecraft:fishing_rod"}}}
 # Where NEU's sea creature data is out of date (the sharks: Hypixel's wiki, Oct 2026): level, Combat XP, coins.
-STATS_OVERRIDE = {"NURSE_SHARK": (22, 26, 22), "BLUE_SHARK": (52, 67, 65), "TIGER_SHARK": (99, 149, 148), "GREAT_WHITE_SHARK": (160, 401, 320)}
+STATS_OVERRIDE = {"NURSE_SHARK": (22, 26, 22), "BLUE_SHARK": (52, 67, 65), "TIGER_SHARK": (99, 149, 148), "GREAT_WHITE_SHARK": (160, 401, 320),
+                  "SCARECROW": (32, 39, 32), "NIGHTMARE": (77, 100, 96), "WEREWOLF": (69, 103, 103), "PHANTOM_FISHER": (157, 393, 314),
+                  "GRIM_REAPER": (312, 1564, 1560)}
 # NEU's lore has "1.200,000" for the Pyroclastic Worm.
-HEALTH_OVERRIDE = {"PYROCLASTIC_WORM": 1_200_000}
+HEALTH_OVERRIDE = {"PYROCLASTIC_WORM": 1_200_000, "SCARECROW": 4_500, "NIGHTMARE": 35_000, "WEREWOLF": 50_000,
+                   "PHANTOM_FISHER": 1_000_000, "GRIM_REAPER": 3_000_000}
 
 # NEU has no recipe for the plain Squid: its drops from the wiki.
 SQUID = {"level": 1, "coins": 1, "xp": 3, "drops": [

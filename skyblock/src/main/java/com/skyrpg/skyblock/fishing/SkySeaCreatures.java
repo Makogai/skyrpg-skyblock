@@ -69,6 +69,9 @@ public final class SkySeaCreatures {
     /** During the Fishing Festival: the share of water sea creatures that are sharks, and Shark Bait's extra (Hypixel's). */
     private static final double SHARK_CHANCE = 0.15;
     private static final double SHARK_BAIT = 0.20;
+    /** The Spooky Festival: the share of water sea creatures that are spooky ones, and Spooky Bait's extra (Hypixel's). */
+    private static final double SPOOKY_CHANCE = 0.15;
+    private static final double SPOOKY_BAIT = 0.15;
 
     public record Drop(String item, double chance, int min, int max) {
     }
@@ -171,6 +174,19 @@ public final class SkySeaCreatures {
         }
         boolean rareBoost = bait != null && (bait.rare().equals("always") || bait.rare().equals("day") && !night
                 || bait.rare().equals("night") && night);
+        // The Spooky Festival (the hour before and after too): a share of the water's sea creatures are spooky ones.
+        if (!lava && com.skyrpg.skyblock.time.CalendarEvents.near(System.currentTimeMillis(), "Spooky Festival", 3_600_000L)
+                && random.nextDouble() < Math.min(0.75, SPOOKY_CHANCE + (bait != null && bait.id().equals("SPOOKY_BAIT") ? SPOOKY_BAIT : 0))) {
+            List<Creature> spooky = creatures.stream().filter(c -> c.condition().equals("spooky_festival") && fishing >= c.fishingLevel()).toList();
+            double sum = spooky.stream().mapToDouble(c -> c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1)).sum();
+            double at = random.nextDouble() * sum;
+            for (Creature c : spooky) {
+                at -= c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1);
+                if (at < 0) {
+                    return c;
+                }
+            }
+        }
         List<Creature> pool = new ArrayList<>();
         List<Double> weights = new ArrayList<>();
         double total = 0;
@@ -181,7 +197,7 @@ public final class SkySeaCreatures {
             if (c.condition().equals("dark_bait_night") && !(night && bait != null && bait.id().equals("DARK_BAIT"))) {
                 continue;
             }
-            if (c.condition().equals("carrot_bait") || c.condition().equals("fishing_festival")) {
+            if (c.condition().equals("carrot_bait") || c.condition().equals("fishing_festival") || c.condition().equals("spooky_festival")) {
                 continue;
             }
             double weight = c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1);

@@ -1878,6 +1878,270 @@
     }
    ],
    "condition": "fishing_festival"
+  },
+  {
+   "id": "SCARECROW",
+   "name": "Scarecrow",
+   "rarity": "COMMON",
+   "fluid": "water",
+   "fishing_level": 9,
+   "weight": 2875,
+   "level": 32,
+   "health": 4500,
+   "damage": 150,
+   "fishing_xp": 320,
+   "combat_xp": 39,
+   "coins": 32,
+   "message": "Phew! It's only a Scarecrow.",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "PUMPKIN",
+     "chance": 1.0,
+     "min": 4,
+     "max": 8
+    },
+    {
+     "item": "GREEN_CANDY",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "ENCHANTED_PUMPKIN",
+     "chance": 0.025,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PURPLE_CANDY",
+     "chance": 0.25,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "spooky_festival"
+  },
+  {
+   "id": "NIGHTMARE",
+   "name": "Nightmare",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 14,
+   "weight": 1500,
+   "level": 77,
+   "health": 35000,
+   "damage": 600,
+   "fishing_xp": 962,
+   "combat_xp": 100,
+   "coins": 96,
+   "message": "You hear trotting from beneath the waves, you caught a Nightmare.",
+   "look": {
+    "entity": "minecraft:horse"
+   },
+   "drops": [
+    {
+     "item": "GREEN_CANDY",
+     "chance": 1.0,
+     "min": 4,
+     "max": 8
+    },
+    {
+     "item": "PUMPKIN",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "PURPLE_CANDY",
+     "chance": 0.5,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_PUMPKIN",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "LUCKY_HOOF",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "spooky_festival"
+  },
+  {
+   "id": "WEREWOLF",
+   "name": "Werewolf",
+   "rarity": "EPIC",
+   "fluid": "water",
+   "fishing_level": 17,
+   "weight": 500,
+   "level": 69,
+   "health": 50000,
+   "damage": 250,
+   "fishing_xp": 1035,
+   "combat_xp": 103,
+   "coins": 103,
+   "message": "It must be a full moon, a Werewolf appears.",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "WEREWOLF_SKIN",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PUMPKIN",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "PURPLE_CANDY",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "ENCHANTED_PUMPKIN",
+     "chance": 0.15,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "DEEP_SEA_ORB",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "spooky_festival"
+  },
+  {
+   "id": "PHANTOM_FISHER",
+   "name": "Phantom Fisher",
+   "rarity": "LEGENDARY",
+   "fluid": "water",
+   "fishing_level": 21,
+   "weight": 100,
+   "level": 157,
+   "health": 1000000,
+   "damage": 1000,
+   "fishing_xp": 3140,
+   "combat_xp": 393,
+   "coins": 314,
+   "message": "The spirit of a long lost Phantom Fisher has come to haunt you.",
+   "look": {
+    "entity": "minecraft:zombie",
+    "hand": {
+     "item": "minecraft:fishing_rod"
+    }
+   },
+   "drops": [
+    {
+     "item": "PURPLE_CANDY",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "ENCHANTED_PUMPKIN",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    },
+    {
+     "item": "DEEP_SEA_ORB",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PHANTOM_HOOK",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "spooky_festival"
+  },
+  {
+   "id": "GRIM_REAPER",
+   "name": "Grim Reaper",
+   "rarity": "MYTHIC",
+   "fluid": "water",
+   "fishing_level": 26,
+   "weight": 25,
+   "level": 312,
+   "health": 3000000,
+   "damage": 2100,
+   "fishing_xp": 7800,
+   "combat_xp": 1564,
+   "coins": 1560,
+   "message": "This can't be! The manifestation of death himself!",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "PURPLE_CANDY",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "ENCHANTED_PUMPKIN",
+     "chance": 1.0,
+     "min": 4,
+     "max": 8
+    },
+    {
+     "item": "SOUL_FRAGMENT",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "SHREDDED_LINE",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "DEEP_SEA_ORB",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_VAMPIRE_FANG",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "POLISHED_PUMPKIN",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BOBBIN_SCRIPTURES",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "spooky_festival"
   }
  ]
 }

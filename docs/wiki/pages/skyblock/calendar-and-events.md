@@ -83,9 +83,18 @@ Autumn 29th to 31st (a real hour).
 
 Your **Spooky Pie** has the year, your place and your score on it.
 
+**Bats**:
+
+- The **Bat Firework** (100 Green Candy at the Fear Mongerer): hold it and hit the ground or a wall in the **Village** (or right-click). It shoots up and bursts into 8-12 **Bat Piñatas** that fly around the Hub for a minute dropping **Green Candy** on everyone near them (up to 25 each from one firework; this candy doesn't count for the Candy Score). You get 5-64 **Purple Candy** for launching it, and you need a Trick or Treat Bag or Spooky Sack. 30 seconds' cooldown.
+- **Mega Bats** turn up on any island during the festival: Shielded, 100 HP, and every hit knocks a candy out of them. The **Echolocator** (32 Green Candy) shows the way to the nearest one while you hold it.
+
+**The Headless Horseman**: light a **Horseman's Candle** (32 Purple Candy) at night in the Graveyard or the Wilderness and he rides out on his skeleton horse: 3,000,000 HP, 600 damage, and arrows don't hurt him (they pull you in and blind you). Every 15 seconds he calls a **Headless Zombie Swarm** (four baby zombies) or a **Bat Swarm** (bats throwing potions). Everyone who fights him gets candy, the summoner and the top damager a **Spooky Fragment**; the top three are named in chat. He rides off after 10 minutes.
+
+**Spooky fishing**: from an hour before to an hour after the festival, some of your water sea creatures are spooky ones: the Scarecrow, Nightmare, Werewolf, Phantom Fisher and Grim Reaper (see [Fishing](fishing)).
+
 **The Fear Mongerer** stands at the corner of the Hub plaza from an hour before the festival to an hour after it. He trades **candy** for spooky things: the Candy Talisman line, Bat and Intimidation accessories, the four pieces of **Spooky armour**, the Bat Firework, the Horseman's Candle, the Echolocator and the Trick or Treat Bag. Candy in your sacks counts.
 
-Not here yet: the Headless Horseman, the Bat Firework's piñatas, the Mega Bat and Spooky fishing.
+Not here yet: the Spooky Hook, and the Bat pet's and Doug's candy bonuses.
 
 ## The Traveling Zoo
 

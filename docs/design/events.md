@@ -58,8 +58,30 @@ Decided where Hypixel's don't carry over: the "Top 50 of all of SkyBlock" bracke
 with at least 5,000 (1M, Skeleton Horse, Witch Mask, Vampirism VI, Disc, Pie, 50 Tickets; no Golden Treat, which we
 don't have); chest candy doesn't count for the score; a Trick or Treat Chest waits a minute.
 
-Not yet: the Headless Horseman (Horseman's Candle), the Bat Firework and Bat Piñatas, the Mega Bat (Echolocator),
-Spooky fishing, the Bat pet's candy bonus, Doug's perks, Foxy's Party Chests and Extra Event, reward expiry.
+Part 2 (`SpookyBats`, `HeadlessHorseman`, `SkySeaCreatures`):
+
+- **Bat Firework**: hit the floor or a wall (or right-click) in the Village (the Hub within 90 blocks of the plaza);
+  needs a Trick or Treat Bag or Spooky Sack; 30s cooldown. 8-12 invulnerable Bat Piñatas burst out 14 blocks up and
+  roam a minute (decided), each dropping a Green Candy on a player within 12 blocks now and then, at most 25 a player a
+  firework, not scored. The launcher: 5/10/15/20/25/64 Purple Candy by weights 40/40/20/10/5/1.
+- **Mega Bat** (Lv65, 100 HP, Shielded, scale 3): during the festival, one an island at a time, near a random player
+  (decided: a 1-in-9 chance every 20s, so about every three minutes). Every hit drops a candy (10% Purple), scored;
+  21 coins and 97 Combat XP when it dies. The **Echolocator**, held: "Mega Bat ← 27m" on the action bar.
+- **Headless Horseman**: the Horseman's Candle at night in the Graveyard or Wilderness, one per summoner. A zombie in a
+  jack o'lantern and black leather on a saddled skeleton horse (the horse can't be hurt); Lv259, 3,000,000 HP, 600
+  damage, 1,942 Combat XP, 647 coins to the killer. Projectiles don't hurt him: they reel their shooter in and blind
+  them 3s. Every 15s in turn: Headless Zombie Swarm (4 baby zombies, 20,000 HP; decided Lv100, 300 damage) and Bat Swarm
+  (5 bats for 10s, each throwing a 10-damage potion at the nearest player every 1.5s). Loot to everyone who hit him:
+  0-2 Green and 0-2 Purple Candy; a Spooky Fragment to the summoner and the top damager, 50% to the second (decided:
+  Hypixel's pages disagree on the summoner's 4). Chat names the killer and the top three. Decided: he rides off after 10
+  minutes; no Wounded effect yet; the ground isn't turned to obsidian (the Hub build stays as it is).
+- **Spooky fishing**: from an hour before to an hour after the festival, 15% (+15% Spooky Bait, at most 75%) of water
+  sea creatures come from the spooky pool, by weight: Scarecrow 2,875, Nightmare 1,500, Werewolf 500, Phantom Fisher
+  100, Grim Reaper 25 (Light/Dark/Whale Bait: the last two 1.25x). Hypixel's levels, health, damage, XP, coins, drops
+  and catch messages (`import_sea_creatures.py`).
+
+Not yet: the Spooky Hook (rod parts), the Bat pet's candy bonus, Doug's perks, Foxy's Party Chests and Extra Event,
+natural Bat Piñatas on private islands, Runic Horsemen, reward expiry.
 
 ## The Traveling Zoo (Early Summer and Early Winter 1st to 3rd)
 

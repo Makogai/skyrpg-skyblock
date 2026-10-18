@@ -61,6 +61,16 @@ Some live in one place, on top of the ones above:
 | Crystal Hollows lava | Flaming Worm (Fishing 19), Lava Blaze (Fishing 20) and Lava Pigman (Fishing 22) in the Magma Fields |
 | Crimson Isle lava | Fried Chicken (10), Magma Slug (27), Moogma (28), Lava Leech (30), Pyroclastic Worm (31), Lava Flame (33), Fire Eel (34), Taurus (35), Thunder (36), Fiery Scuttler (43), Lord Jawbus (45), Ragnarok (46) |
 
+**Events:** during Marina's Fishing Festival 15% of water sea creatures are sharks (see [Mayors](mayors)). During the **Spooky Festival** (and the hour before and after it), 15% of water sea creatures are spooky ones instead (**Spooky Bait** adds 15%):
+
+| Spooky sea creature | Fishing level | Health | Drops (some) |
+| --- | --- | --- | --- |
+| Scarecrow | 9 | 4,500 | Green Candy, Pumpkins, Purple Candy (25%) |
+| Nightmare | 14 | 35,000 | Green Candy, Pumpkins, Purple Candy (50%), Lucky Hoof |
+| Werewolf | 17 | 50,000 | Werewolf Skin, Purple Candy, Pumpkins, Deep Sea Orb |
+| Phantom Fisher | 21 | 1,000,000 | Purple Candy, Enchanted Pumpkin, Phantom Hook, Deep Sea Orb |
+| Grim Reaper | 26 | 3,000,000 | Purple Candy, Enchanted Pumpkin, Soul Fragment, Vampire Fang, Polished Pumpkin |
+
 **Double Hook Chance** can bring up two at once ("DOUBLE HOOK!"). You can have up to 20 out; sea creatures leave if you go far away or log off, and after six minutes.
 
 ## Bait
@@ -109,4 +119,4 @@ The **Fishing Minion** fishes for you on your island. See [Minions](minions).
 A reforge and Potato Books make a rod better: see [Reforging](reforging).
 
 > [!NOTE]
-> Not built yet: fishing hotspots, the event sea creatures (Spooky Festival, Fishing Festival sharks, Jerry's Workshop), Plhlegblast, Backwater Bayou and Galatea fishing, the Agarimoo (Chumcap Bucket), Fishing Fortune, rod parts, and the Fishing Bag and bait sacks.
+> Not built yet: fishing hotspots, Jerry's Workshop's sea creatures, Plhlegblast, Backwater Bayou and Galatea fishing, the Agarimoo (Chumcap Bucket), Fishing Fortune, rod parts, and the Fishing Bag and bait sacks.
