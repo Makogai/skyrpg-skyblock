@@ -104,15 +104,15 @@ final class Visitors {
             }
             for (String tag : entity.entityTags()) {
                 if (tag.equals(TAG + ":skymart")) {
-                    GardenMenu.open(server, GardenMenu.Tab.SKYMART);
+                    GardenMenu.openFrom(server, GardenMenu.Tab.SKYMART, entity.getId());
                 } else if (tag.equals(TAG + ":phillip")) {
-                    GardenMenu.open(server, GardenMenu.Tab.PHILLIP);
+                    GardenMenu.openFrom(server, GardenMenu.Tab.PHILLIP, entity.getId());
                 } else if (tag.equals(TAG + ":jacob")) {
-                    GardenMenu.open(server, GardenMenu.Tab.JACOB);
+                    GardenMenu.openFrom(server, GardenMenu.Tab.JACOB, entity.getId());
                 } else if (tag.equals(TAG + ":anita")) {
-                    GardenMenu.open(server, GardenMenu.Tab.ANITA);
+                    GardenMenu.openFrom(server, GardenMenu.Tab.ANITA, entity.getId());
                 } else if (tag.startsWith(TAG + ":visitor:")) {
-                    GardenMenu.openVisitor(server, Integer.parseInt(tag.substring((TAG + ":visitor:").length())));
+                    GardenMenu.openVisitor(server, Integer.parseInt(tag.substring((TAG + ":visitor:").length())), entity.getId());
                 }
             }
             return InteractionResult.SUCCESS;
@@ -164,7 +164,7 @@ final class Visitors {
             Profile owner = Garden.ownerAt(player.blockPosition());
             if (owner != null) {
                 occupied.add(owner.id());
-                if (!LIVE.containsKey(owner.id())) {
+                if (!LIVE.containsKey(owner.id()) || LIVE.get(owner.id()).stream().anyMatch(Entity::isRemoved)) {
                     refresh(server, owner);
                 }
             }
@@ -195,14 +195,14 @@ final class Visitors {
         BlockPos c = Garden.center(profile);
         List<Mannequin> live = new ArrayList<>();
         LIVE.put(profile.id(), live);
-        live.add(mannequin(level, c.offset(-18, 1, -2), 90, "SkyMart", 0xFFAA00, "Copper shop", "noor", TAG + ":skymart"));
-        live.add(mannequin(level, c.offset(-14, 1, 10), 90, "Pesthunter Phillip", 0x55FF55, "Pests", "efe", TAG + ":phillip"));
-        live.add(mannequin(level, c.offset(-5, 1, 36), -90, "Jacob", 0xFFFF55, "Farming Contests", "kai", TAG + ":jacob"));
-        live.add(mannequin(level, c.offset(5, 1, 36), 90, "Anita", 0xFFFF55, "Contest shop", "alex", TAG + ":anita"));
+        spawn(level, live, mannequin(level, c.offset(-18, 1, -2), 90, "SkyMart", 0xFFAA00, "Copper shop", "noor", TAG + ":skymart"));
+        spawn(level, live, mannequin(level, c.offset(-14, 1, 10), 90, "Pesthunter Phillip", 0x55FF55, "Pests", "efe", TAG + ":phillip"));
+        spawn(level, live, mannequin(level, c.offset(-5, 1, 36), -90, "Jacob", 0xFFFF55, "Farming Contests", "kai", TAG + ":jacob"));
+        spawn(level, live, mannequin(level, c.offset(5, 1, 36), 90, "Anita", 0xFFFF55, "Contest shop", "alex", TAG + ":anita"));
         int[][] spots = {{-8, 18}, {-4, 20}, {0, 21}, {4, 20}, {8, 18}};
         for (int i = 0; i < state.visitors.size() && i < spots.length; i++) {
             Offer offer = Offer.decode(state.visitors.get(i));
-            live.add(mannequin(level, c.offset(spots[i][0], 1, spots[i][1]), 180, offer.name(), RARITY_COLORS[offer.rarity()],
+            spawn(level, live, mannequin(level, c.offset(spots[i][0], 1, spots[i][1]), 180, offer.name(), RARITY_COLORS[offer.rarity()],
                     RARITIES[offer.rarity()] + " visitor", offer.skin(), TAG + ":visitor:" + i));
         }
     }
@@ -228,8 +228,15 @@ final class Visitors {
         com.google.gson.JsonObject json = new com.google.gson.JsonObject();
         json.addProperty("texture", "minecraft:entity/player/wide/" + skin);
         ResolvableProfile.CODEC.parse(JsonOps.INSTANCE, json).result().ifPresent(p -> npc.setComponent(DataComponents.PROFILE, p));
-        level.addFreshEntity(npc);
         return npc;
+    }
+
+    /** Tracks the NPC, then adds it to the world (so the load check doesn't take it for a stale one). */
+    private static void spawn(ServerLevel level, List<Mannequin> live, Mannequin npc) {
+        if (npc != null) {
+            live.add(npc);
+            level.addFreshEntity(npc);
+        }
     }
 
     /** A new visitor for this Garden. */

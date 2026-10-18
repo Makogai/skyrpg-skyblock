@@ -147,6 +147,26 @@ public final class Garden {
         Stats.registerSource(new Stats.Source() {
             @Override
             public String name() {
+                return "Crop Upgrades";
+            }
+
+            @Override
+            public void contribute(ServerPlayer player, Stats.Contributor out) {
+                GardenData.State state = state(player);
+                if (state == null) {
+                    return;
+                }
+                for (Crop crop : CROPS) {
+                    int tier = state.upgrades.getOrDefault(crop.key(), 0);
+                    if (tier > 0) {
+                        out.add(fortuneStat(crop), 5.0 * tier);
+                    }
+                }
+            }
+        });
+        Stats.registerSource(new Stats.Source() {
+            @Override
+            public String name() {
                 return "Garden Plots";
             }
 
@@ -260,6 +280,55 @@ public final class Garden {
             level++;
         }
         return level;
+    }
+
+    /** How many crops milestone {@code level} -> {@code level + 1} takes. */
+    static long step(Crop crop, int level) {
+        return level < crop.curve().length ? crop.curve()[level] : crop.curve()[crop.curve().length - 1];
+    }
+
+    static Crop crop(String key) {
+        for (Crop crop : CROPS) {
+            if (crop.key().equals(key)) {
+                return crop;
+            }
+        }
+        return null;
+    }
+
+    /** The crop's own Fortune stat (Wheat Fortune ... Nether Wart Fortune). */
+    static com.skyrpg.core.stats.StatType fortuneStat(Crop crop) {
+        return StatTypes.get(switch (crop.key()) {
+            case "cocoa" -> "cocoa_beans_fortune";
+            case "nether_wart" -> "nether_stalk_fortune";
+            default -> crop.key() + "_fortune";
+        });
+    }
+
+    /** Crop upgrades' Copper per tier (NEU), +5 of the crop's Fortune and 1 SkyBlock XP each. */
+    static final int[] CROP_UPGRADE = {5, 10, 20, 50, 100, 500, 1000, 2000, 4000};
+
+    /** Buys the next crop upgrade for crop {@code index}: "" when done, else why not. */
+    static String upgradeCrop(ServerPlayer player, GardenData.State state, int index) {
+        if (index < 0 || index >= CROPS.size()) {
+            return "";
+        }
+        Crop crop = CROPS.get(index);
+        int tier = state.upgrades.getOrDefault(crop.key(), 0);
+        if (tier >= CROP_UPGRADE.length) {
+            return crop.name() + " is fully upgraded.";
+        }
+        if (state.copper < CROP_UPGRADE[tier]) {
+            return "You need " + Msg.number(CROP_UPGRADE[tier]) + " Copper.";
+        }
+        state.copper -= CROP_UPGRADE[tier];
+        state.upgrades.put(crop.key(), tier + 1);
+        SkyBlockXp.give(player, 1, crop.name() + " upgrade");
+        player.sendSystemMessage(Component.literal(crop.name() + " upgraded to tier " + (tier + 1) + ": +" + 5 * (tier + 1) + " "
+                + crop.name() + " Fortune.").withStyle(ChatFormatting.GREEN));
+        Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.6f, 1.4f);
+        Stats.refresh(player);
+        return "";
     }
 
     /** Crops harvested needed for the next milestone level from here (0 at the top). */
@@ -455,7 +524,7 @@ public final class Garden {
             return;
         }
         GardenData.State garden = state(level.getServer(), owner);
-        double fortune = Stats.get(player, StatTypes.FARMING_FORTUNE);
+        double fortune = Stats.get(player, StatTypes.FARMING_FORTUNE) + Stats.get(player, fortuneStat(crop));
         long count = Math.max(1, Math.round(crop.perBlock() * (1 + fortune / 100)));
         long before = garden.crops.getOrDefault(crop.key(), 0L);
         long after = before + count;

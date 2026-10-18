@@ -28,7 +28,7 @@ final class Composter {
     static final List<String> UPGRADE_NAMES = List.of("Composter Speed", "Multi Drop", "Fuel Cap", "Organic Matter Cap", "Cost Reduction");
     static final int[] COPPER = {100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000, 1200, 1400, 1600, 1800, 2000, 2250, 2500, 2750,
             3000, 3300, 3600, 4000};
-    private static final int[][] AMOUNTS = {
+    static final int[][] AMOUNTS = {
             {128, 2, 256, 4, 512, 8, 8, 16, 12, 32, 16, 40, 24, 48, 32, 64, 40, 96, 48, 128, 64, 192, 96, 256, 128},
             {1, 64, 2, 1, 4, 2, 8, 4, 16, 8, 32, 16, 48, 24, 64, 32, 80, 48, 112, 64, 144, 96, 176, 128, 224},
             {1, 4, 2, 8, 4, 16, 8, 32, 16, 40, 32, 48, 40, 64, 48, 96, 64, 128, 96, 192, 144, 288, 192, 384, 256},

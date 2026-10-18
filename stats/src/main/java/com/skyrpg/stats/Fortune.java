@@ -16,6 +16,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CocoaBlock;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.NetherWartBlock;
@@ -58,6 +59,10 @@ final class Fortune {
         }
 
         double fortune = Stats.get(serverPlayer, stat);
+        StatType crop = stat == StatTypes.FARMING_FORTUNE ? cropFortune(state.getBlock()) : null;
+        if (crop != null) {
+            fortune += Stats.get(serverPlayer, crop);
+        }
         if (fortune <= 0) {
             return;
         }
@@ -82,6 +87,33 @@ final class Fortune {
     }
 
     /** Crops, nether wart and cocoa only count when fully grown; melons, pumpkins, cane and cactus always do. */
+    /** A crop's own Fortune (Wheat Fortune ...) that adds to Farming Fortune on it, or null. */
+    private static StatType cropFortune(Block block) {
+        if (block == Blocks.WHEAT) {
+            return StatTypes.WHEAT_FORTUNE;
+        } else if (block == Blocks.CARROTS) {
+            return StatTypes.CARROT_FORTUNE;
+        } else if (block == Blocks.POTATOES) {
+            return StatTypes.POTATO_FORTUNE;
+        } else if (block == Blocks.PUMPKIN) {
+            return StatTypes.PUMPKIN_FORTUNE;
+        } else if (block == Blocks.MELON) {
+            return StatTypes.MELON_FORTUNE;
+        } else if (block == Blocks.SUGAR_CANE) {
+            return StatTypes.SUGAR_CANE_FORTUNE;
+        } else if (block == Blocks.CACTUS) {
+            return StatTypes.CACTUS_FORTUNE;
+        } else if (block == Blocks.COCOA) {
+            return StatTypes.COCOA_BEANS_FORTUNE;
+        } else if (block == Blocks.NETHER_WART) {
+            return StatTypes.NETHER_STALK_FORTUNE;
+        } else if (block == Blocks.RED_MUSHROOM || block == Blocks.BROWN_MUSHROOM || block == Blocks.RED_MUSHROOM_BLOCK
+                || block == Blocks.BROWN_MUSHROOM_BLOCK) {
+            return StatTypes.MUSHROOM_FORTUNE;
+        }
+        return null;
+    }
+
     private static boolean isGrown(BlockState state) {
         Block block = state.getBlock();
         if (block instanceof CropBlock crop) {

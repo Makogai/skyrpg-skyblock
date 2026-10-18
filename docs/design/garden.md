@@ -26,6 +26,13 @@ Hypixel's Garden (Phase 4). Research: `docs/design/research/garden.md`. What's b
   for them yet). A harvested crop counts Hypixel's base drop times (1 + Farming Fortune / 100). Decided: each milestone
   level gives 10 x level Garden XP and 1 SkyBlock XP (Hypixel's per-level rewards weren't found).
 
+## Crop upgrades and crop Fortune
+
+- NEU's `crop_upgrades`: 9 tiers (5 ... 4,000 Copper), +5 of the crop's own Fortune stat a tier, 1 SkyBlock XP each;
+  decided: no Garden-level gate (the wiki's gates came through garbled). They apply everywhere (a stat source).
+- Crop Fortune stats (`wheat_fortune` ... `nether_stalk_fortune`, also from the Turbo enchantments) now add to Farming
+  Fortune on that crop's blocks (`stats/Fortune.java`) and in milestone/contest counts.
+
 ## Visitors (`Visitors.java`)
 
 Decided where Hypixel's numbers weren't found: one every 15 minutes while someone in the profile is online, up to 5;
@@ -74,4 +81,4 @@ Visitors, SkyMart and Phillip are Mannequins kept while someone is in that Garde
 
 ## Still to build
 
-The Sprayonator and sprays, crop upgrades, Garden Chips, the Greenhouse, Barn skins, plot presets.
+The Sprayonator and sprays, Garden Chips, the Greenhouse, Barn skins, plot presets.

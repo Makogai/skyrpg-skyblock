@@ -35,6 +35,10 @@ Garden XP raises the Garden level, I to XV (Hypixel's table: 70 XP for level II 
 
 Harvesting the ten Garden crops on your plots counts toward their milestones: Wheat, Carrot, Potato, Pumpkin, Melon, Sugar Cane, Cactus, Cocoa Beans, Mushrooms and Nether Wart. Each broken crop counts as Hypixel's base drop (Carrots and Potatoes 3, Melons 5, Cocoa 3, Nether Wart 2.5, the rest 1) times your Farming Fortune. Milestones go up to level 46, on Hypixel's thresholds (Wheat 30 for the first level, Carrots 100, Melons 150...). Each milestone level gives **10 Garden XP times the level** and 1 SkyBlock XP. The Desk's Milestones tab shows them all.
 
+## Crop upgrades
+
+The Desk's **Crops** tab shows every crop's milestone bar and its **crop upgrade**: nine tiers for **5, 10, 20, 50, 100, 500, 1,000, 2,000 and 4,000 Copper**, each giving **+5 of that crop's Fortune** (Wheat Fortune, Carrot Fortune...) and 1 SkyBlock XP. Crop Fortune adds to your Farming Fortune whenever you break that crop, anywhere, not only in the Garden (so do the Turbo enchantments).
+
 ## Visitors
 
 A visitor arrives every **15 minutes** while you're online, up to five waiting in the yard by the Barn. Right-click one to see their offer: one or two of your Garden crops (raw, or enchanted for bigger orders), the more the higher your Garden level. Accept to hand them over for **Copper**, Garden XP and Farming XP; decline and they leave. Rarer visitors pay more:
@@ -110,4 +114,4 @@ Rewards wait for you at **Jacob**, south of the Barn: right-click him and **Clai
 Anita, next to Jacob, sells farming gear for Jacob's Tickets and medals (Hypixel's prices): the InfiniDirt Wand, Prismapumps, the Hoes of Great, Greater and Greatest Tilling, the Basket of Seeds and Nether Wart Basket, and Anita's Talisman, Ring and Artifact (each upgrade takes the one before it). She also changes medals down: **1 Gold for 2 Silver**, **1 Silver for 2 Bronze**.
 
 > [!NOTE]
-> Not here yet: crop upgrades, Garden Chips, the Greenhouse, Barn skins and plot presets.
+> Not here yet: Garden Chips, the Greenhouse, Barn skins and plot presets.
