@@ -19,5 +19,6 @@
   ],
   "action": {
     "type": "diana"
-  }
+  },
+  "when": "perk:mythological_ritual"
 }

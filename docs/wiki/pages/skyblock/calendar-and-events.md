@@ -28,6 +28,7 @@ The **SkyBlock sidebar** on the right of your screen shows, from the top:
 - the SkyBlock date ("Late Summer 12th");
 - the time, with ☀ by day or ☽ by night;
 - where you are (⏣ Your Island, ⏣ Hub, or someone else's island);
+- during the Spooky Festival, its time left and **Your Candy** (Green, Purple and your points);
 - your **purse**.
 
 Move it, resize it or hide it in the HUD editor ([K, Settings, HUD, Edit HUD layout](hud-and-minimap#the-hud-editor)).
@@ -54,4 +55,51 @@ Open the K menu and choose **Calendar and Events**. It shows:
 | New Year Celebration | Late Winter 29th to 31st |
 | Jacob's Farming Contest | Every third day, from the 2nd (on the real clock, every hour at :15) |
 
-The calendar already shows these events. Each one starts working in game when its system arrives (the Spooky Festival with its mobs and candy, Jacob's contests with the Garden, and so on).
+The Mayor adds their own events: Marina's Fishing Festival, Diana's Mythological Ritual and Cole's Mining Fiesta (see [Mayors](mayors)).
+
+Working in game now: the **Spooky Festival**, the **Traveling Zoo**, the **New Year Celebration** and **Jacob's Farming Contests** ([The Garden](the-garden)). Hoppity's Hunt and Jerry's Workshop come later.
+
+Event NPCs only turn up for their event, and the map only shows them then.
+
+## The Spooky Festival
+
+Autumn 29th to 31st (a real hour).
+
+- **Candy**: every mob you kill, anywhere, has a **10%** chance to drop **Green Candy**, and some of it is **Purple Candy** (more from higher-level mobs). The **Candy Talisman, Ring, Artifact and Relic** add 5, 10, 15 and 20%, each piece of **Spooky armour** 5%. Candy goes into your Spooky Sack or **Trick or Treat Bag** if you have one (right-click the bag to add it to your sacks).
+- **Spooky mobs** come out **at night** in the **Graveyard** and the **Wilderness**: the Crazy Witch, Wraith, Scary Jerry, Wither Gourd, Phantom Spirit and Trick or Treater. They're **Shielded**: every hit does exactly **1 damage**, whatever your weapon (the Ghoul Buster does 2), so it's how often you hit that counts. They drop candy (and Ectoplasm or Blast o' Lanterns).
+- **Trick or Treat Chests** sometimes appear where a mob dies (more often for Spooky mobs). Only you can open yours: click it within a minute. A **TREAT** gives you candy and spooky loot; a **TRICK** lets a Spooky mob out.
+- **Candy Score**: Green Candy from mobs is 1 point, Purple 5. The sidebar shows yours.
+- **The Candy Contest**: when the festival ends, everyone's ranked. Your bracket's rewards wait at the **Fear Mongerer** (or click **[Claim your rewards]** in chat, or type `/spookyfestival`):
+
+| Bracket | Candy Score | Rewards |
+| --- | --- | --- |
+| Wood | 100 | 25,000 coins, Spooky Pie, 5 Carnival Tickets |
+| Stone | 1,000 | 50,000 coins, Spooky Disc, Spooky Pie, 10 Carnival Tickets |
+| Iron | 1,500 | 100,000 coins, Vampirism VI, Spooky Disc, Spooky Pie, 15 Carnival Tickets |
+| Gold | 1,750 | 200,000 coins, Vampirism VI, Spooky Disc, Spooky Pie, 20 Carnival Tickets |
+| Diamond | 2,000 | 500,000 coins, Witch Mask, Vampirism VI, Spooky Disc, Spooky Pie, 25 Carnival Tickets |
+| Emerald | 5,000 | 1,000,000 coins, Skeleton Horse pet, Witch Mask, Vampirism VI, Spooky Disc, Spooky Pie, 35 Carnival Tickets |
+| Top | #1 of the festival, 5,000+ | as Emerald, with 50 Carnival Tickets |
+
+Your **Spooky Pie** has the year, your place and your score on it.
+
+**The Fear Mongerer** stands at the corner of the Hub plaza from an hour before the festival to an hour after it. He trades **candy** for spooky things: the Candy Talisman line, Bat and Intimidation accessories, the four pieces of **Spooky armour**, the Bat Firework, the Horseman's Candle, the Echolocator and the Trick or Treat Bag. Candy in your sacks counts.
+
+Not here yet: the Headless Horseman, the Bat Firework's piñatas, the Mega Bat and Spooky fishing.
+
+## The Traveling Zoo
+
+Early Summer 1st to 3rd and Early Winter 1st to 3rd (a real hour each). **Oringo** brings his zoo to the corner of the Hub plaza with **three exotic pets** to sell at level 1, out of the **Blue Whale, Lion, Tiger, Giraffe, Elephant** and **Monkey**. One of them is **Legendary** (a different pet each visit); the other two are Common to Epic. They cost coins and the animal's goods:
+
+| Pet | Common | Uncommon | Rare | Epic | Legendary |
+| --- | --- | --- | --- | --- | --- |
+| Blue Whale | 10k + 64 Raw Cod | 25k + 1 Ench. Raw Cod | 100k + 16 Ench. Raw Cod | 1M + 1 Ench. Cooked Cod | 10M + 8 Ench. Cooked Cod |
+| Lion | 10k + 64 Raw Beef | 25k + 2 Ench. Raw Beef | 100k + 32 Ench. Raw Beef | 1M + 256 Ench. Raw Beef | 15M + 1,024 Ench. Raw Beef |
+| Tiger | 10k + 128 Raw Chicken | 25k + 2 Ench. Raw Chicken | 100k + 32 Ench. Raw Chicken | 1M + 256 Ench. Raw Chicken | 15M + 1,024 Ench. Raw Chicken |
+| Giraffe | 10k + 64 Acacia Log | 25k + 1 Ench. Acacia Log | 100k + 16 Ench. Acacia Log | 1M + 128 Ench. Acacia Log | 10M + 512 Ench. Acacia Log |
+| Elephant | 10k + 64 Dark Oak Log | 25k + 1 Ench. Dark Oak Log | 100k + 16 Ench. Dark Oak Log | 1M + 128 Ench. Dark Oak Log | 15M + 512 Ench. Dark Oak Log |
+| Monkey | 10k + 64 Jungle Log | 25k + 1 Ench. Jungle Log | 100k + 16 Ench. Jungle Log | 1M + 128 Ench. Jungle Log | 18M + 512 Ench. Jungle Log |
+
+## The New Year Celebration
+
+Late Winter 29th to 31st (a real hour). The **Baker** on the Hub plaza gives everyone one free **New Year Cake (Year N)** each year, with the year on it, so collectors keep one from every year. He also sells the **New Year Cake Bag** (250,000 coins) to keep them in.

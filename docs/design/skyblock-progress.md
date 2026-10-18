@@ -695,6 +695,13 @@ phase so the next session can pick up where this one stopped.
       chains, the Echo, Hypixel's treasure tables and twelve Mythological mobs by Griffin rarity, Diana's shop), Marina's
       Fishing Festival (the four sharks), Cole's Mining Fiesta drops, the mayor events on the calendar, Benediction,
       GOATed, Blooming Business; card menus now resend the inventory when they close (purchases showed late).
+- [x] **Events part 1** (`festival/`, design in `events.md`): event NPCs with `when` (event, near, perk), off the map
+      when they're away; `/sbevent`; the Spooky Festival (candy on every kill with Hypixel's bonuses, Candy Score on the
+      sidebar, the six Shielded Spooky mobs at night, Trick or Treat Chests, the Candy Contest brackets and the stamped
+      Spooky Pie, the Fear Mongerer with a SPOOKY theme), the Traveling Zoo (Oringo's three pets, Hypixel's prices), the
+      New Year Celebration (the Baker's yearly cake); the Trick or Treat Bag as a candy sack.
+- [ ] Events part 2: the Headless Horseman, the Bat Firework, Spooky fishing, Hoppity's Hunt, Jerry's Workshop and the
+      Season of Jerry.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 

@@ -1,0 +1,24 @@
+{
+  "name": "Baker",
+  "role": "New Year Celebration",
+  "color": "#FF55FF",
+  "hint": "Cake",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    -6.5,
+    65.0,
+    8.5
+  ],
+  "yaw": -135.0,
+  "sound": "minecraft:block.cake.add_candle",
+  "greetings": [
+    "Happy New Year!",
+    "A cake for every year. Collect them all!"
+  ],
+  "action": {
+    "type": "baker"
+  },
+  "when": "event:New Year Celebration"
+}

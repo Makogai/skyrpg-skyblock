@@ -52,8 +52,9 @@ public record NpcMapPayload(List<Entry> npcs) implements CustomPacketPayload {
                 server.getPlayerList().getPlayers().forEach(NpcMapPayload::send));
     }
 
-    private static void send(ServerPlayer player) {
-        List<Entry> entries = Npcs.definitions().values().stream()
+    /** The map's NPCs for this player: every NPC that's out (event NPCs only while their event is on). */
+    static void send(ServerPlayer player) {
+        List<Entry> entries = Npcs.definitions().values().stream().filter(Npcs::out)
                 .map(def -> new Entry(def.id(), def.name(), def.role(), def.hint(), def.color(), def.skin(), def.dimension(),
                         def.pos().x, def.pos().y, def.pos().z))
                 .toList();

@@ -26,7 +26,7 @@ import net.minecraft.world.phys.Vec3;
  */
 public record NpcDefinition(Identifier id, String name, String role, int color, String hint, Identifier skin, String model,
                             Identifier dimension, Vec3 pos, float yaw, Identifier sound, List<String> greetings,
-                            String actionType, JsonObject actionParams) {
+                            String actionType, JsonObject actionParams, String when) {
 
     static NpcDefinition parse(Identifier id, JsonObject json) {
         JsonArray pos = json.getAsJsonArray("pos");
@@ -50,6 +50,7 @@ public record NpcDefinition(Identifier id, String name, String role, int color, 
                 Identifier.parse(json.has("sound") ? json.get("sound").getAsString() : "minecraft:entity.villager.ambient"),
                 List.copyOf(greetings),
                 action.has("type") ? action.get("type").getAsString() : "",
-                action.has("params") ? action.getAsJsonObject("params") : new JsonObject());
+                action.has("params") ? action.getAsJsonObject("params") : new JsonObject(),
+                json.has("when") ? json.get("when").getAsString() : "");
     }
 }

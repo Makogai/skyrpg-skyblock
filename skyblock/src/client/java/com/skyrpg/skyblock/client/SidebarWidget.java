@@ -100,6 +100,14 @@ public final class SidebarWidget implements HudWidget {
                 lines.add(Component.literal(line));
             }
         }
+        // The Spooky Festival's timer and your candy, while it runs.
+        String festival = player == null ? null : player.getAttached(com.skyrpg.skyblock.festival.Festivals.SIDEBAR);
+        if (festival != null) {
+            lines.add(Component.empty());
+            for (String line : festival.split("\n")) {
+                lines.add(Component.literal(line));
+            }
+        }
         // Faction reputation on the Crimson Isle.
         String rep = player == null ? null : player.getAttached(com.skyrpg.skyblock.crimson.Factions.SIDEBAR);
         if (rep != null) {

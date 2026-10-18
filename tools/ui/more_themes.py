@@ -1,4 +1,4 @@
-"""The other themes' pixel art (mining, crimson, dungeon, magic, fishing, galatea), on themes.py's helpers."""
+"""The other themes' pixel art (mining, crimson, dungeon, magic, fishing, galatea, spooky), on themes.py's helpers."""
 import math
 import random
 
@@ -528,4 +528,57 @@ def galatea(out):
             [rgb("343a2c"), rgb("2c3226"), rgb("3a4132")], planks)
 
 
-THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing, "galatea": galatea}
+# ---------------------------------------------------------------- spooky: dark oak and pumpkin glow, jack o'lanterns, a bat
+
+def spooky(out):
+    rng = random.Random(53)
+    glow = [rgb("ff8c1a"), rgb("e86f0c"), rgb("ffa64a")]
+
+    def band(along, across, horizontal):
+        # charred dark oak with an orange glow seeping along the inner edge, purple flecks of candy here and there
+        if across == 6 and (along // 2) % 3 != 2:
+            return glow[along % 3]
+        if across == 1:
+            return rgb("3a2a1e")
+        if rng.random() < 0.04:
+            return rgb("9a4cd8")
+        grain = (along + (across * 2 if horizontal else across)) % 6 == 0
+        return rgb("2a1d14") if grain else (rgb("3d2b1d") if across in (2, 3) else rgb("33241a"))
+
+    def lantern(img, cx, cy):
+        for y in range(2, 8):
+            for x in range(1, 8):
+                if (x - 4) ** 2 * 0.8 + (y - 5) ** 2 <= 9:
+                    img.putpixel((cx + x, cy + y), [rgb("ff8c1a"), rgb("e86f0c")][(x + y) % 2])
+        for x, y in ((3, 4), (5, 4), (3, 6), (4, 6), (5, 6)):
+            img.putpixel((cx + x, cy + y), rgb("ffe08a"))
+        img.putpixel((cx + 4, cy + 1), rgb("4f7a3a"))
+        img.putpixel((cx + 4, cy + 2), rgb("3f6a2e"))
+    corner = plate_corner(rgb("2a1d14"), rgb("4a3524"), rgb("160f0a"), rgb("0a0605"), lantern)
+    save(framed(48, band, corner, rgb("0a0605"), rgb("1a1009"), rgb("2e1d12")), f"{out}/frame.png", nine(48, 48, 9))
+    bg = noise_tile(rng, [rgb("120c0f"), rgb("140d12"), rgb("100a0d")], [70, 15, 15], [(rgb("2a1830"), 9), (rgb("ff8c1a"), 2)])
+    save(bg, f"{out}/background.png", tile(32, 32))
+
+    def candy_line(img):
+        for x in range(10):
+            colour = rgb("ff8c1a") if x % 4 < 2 else rgb("9a4cd8")
+            img.putpixel((x, 2), colour)
+            img.putpixel((x, 3), shade(colour, -0.25))
+            img.putpixel((x, 4), rgb("000000", 90))
+
+    def bat(img):
+        pixels(img, [(1, 2, "2a2030"), (2, 3, "2a2030"), (3, 3, "2a2030"), (4, 4, "2a2030"), (5, 4, "2a2030"), (6, 3, "2a2030"),
+                     (7, 3, "2a2030"), (8, 2, "2a2030"), (4, 3, "3a2c44"), (5, 3, "3a2c44"), (4, 5, "2a2030"), (5, 5, "2a2030"),
+                     (4, 4, "ff8c1a"), (5, 4, "ff8c1a")])
+    divider(out, 10, 7, candy_line, bat)
+    cards_and_tabs(out, rgb("1c1216"), rgb("3e2a20"), rgb("ff8c1a"), rgb("2a1c1a"), rgb("110a0c"),
+                   rgb("170f12"), rgb("36261d"), rgb("2c1d18"), rgb("ff8c1a"))
+
+    def ribs(x, y):
+        return rgb("b8560a") if x % 6 == 0 else None
+    buttons(out, rng, [rgb("e8780f"), rgb("d96c0b"), rgb("f08a24")], rgb("1a0d05"), rgb("ffd08a"),
+            [rgb("3a2e28"), rgb("332822"), rgb("40342c")], ribs)
+
+
+THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing, "galatea": galatea,
+          "spooky": spooky}

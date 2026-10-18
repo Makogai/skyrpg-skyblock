@@ -1,0 +1,24 @@
+{
+  "name": "Oringo",
+  "role": "Traveling Zoo",
+  "color": "#55FF55",
+  "hint": "Pets",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    7.5,
+    65.0,
+    8.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:entity.panda.ambient",
+  "greetings": [
+    "The Traveling Zoo has arrived!",
+    "Exotic pets from all over SkyBlock. Have a look!"
+  ],
+  "action": {
+    "type": "oringo"
+  },
+  "when": "event:Traveling Zoo"
+}

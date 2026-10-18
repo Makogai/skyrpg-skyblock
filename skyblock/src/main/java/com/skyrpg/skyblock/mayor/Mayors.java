@@ -127,6 +127,12 @@ public final class Mayors {
         Actions.register("election", (player, params) -> ElectionMenu.open(player));
         com.skyrpg.core.world.Mayor.install(Mayors::active);
         com.skyrpg.skyblock.time.CalendarEvents.perks(Mayors::active);
+        // NPCs and anything else that asks: "perk:<id>", "event:<calendar event>"
+        // "perk:x" a Mayor's perk, "event:Name" a calendar event running, "near:Name" running or within a real hour of it
+        // (the Fear Mongerer comes an hour early and stays an hour after).
+        com.skyrpg.core.world.Conditions.install(condition -> condition.startsWith("perk:") ? active(condition.substring(5))
+                : condition.startsWith("event:") ? com.skyrpg.skyblock.time.CalendarEvents.running(System.currentTimeMillis(), condition.substring(6))
+                : !condition.startsWith("near:") || com.skyrpg.skyblock.time.CalendarEvents.near(System.currentTimeMillis(), condition.substring(5), 3_600_000L));
         MayorSync.init();
         MiningFiesta.init();
         FishingFestival.init();

@@ -64,6 +64,11 @@ def main():
             continue
         out.append({"type": name, "icon": sack["item"] if sack["item"] in sizes else max(sizes, key=sizes.get), "items": items,
                     "sizes": dict(sorted(sizes.items(), key=lambda kv: kv[1]))})
+    # The Fear Mongerer's Trick or Treat Bag isn't a sack in NEU's list: on Hypixel it holds your candy, so here it's a
+    # candy-only sack (right-click it to add it, like the others).
+    if (ITEMS / "trick_or_treat_bag.json").exists():
+        out.append({"type": "Candy", "icon": "TRICK_OR_TREAT_BAG", "items": ["GREEN_CANDY", "PURPLE_CANDY"],
+                    "sizes": {"TRICK_OR_TREAT_BAG": 100000}})
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "sacks.json").write_text(json.dumps({"sacks": out}, indent=1) + "\n", encoding="utf-8")
     print(f"{len(out)} sack types, {sum(len(s['sizes']) for s in out)} sack items -> {OUT / 'sacks.json'}")

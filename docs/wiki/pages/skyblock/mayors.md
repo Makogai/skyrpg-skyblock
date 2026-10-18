@@ -36,7 +36,7 @@ Wisdom perks (Mining, Fishing) only count on public islands. Foxy's Carnival and
 
 ## Diana's Mythological Ritual
 
-While Diana is Mayor (or her perk is in effect), **Griffin burrows** appear on the Hub's grass. **Diana**, on the Hub plaza, sells the **Griffin** pet (25,000 coins) and the **Ancestral Spade** (5,000 coins and 32 Gold Ingots).
+While Diana is Mayor (or her perk is in effect), **Griffin burrows** appear on the Hub's grass. **Diana**, on the Hub plaza while her ritual is on (she isn't there otherwise), sells the **Griffin** pet (25,000 coins) and the **Ancestral Spade** (5,000 coins and 32 Gold Ingots).
 
 1. **Hold a spade in the Hub** and three **start burrows** (green sparks) appear on the grass near you.
 2. **Left-click a burrow** with the spade to dig it. That starts a **chain** of 4 burrows (the Archaic Spade makes it 6, the Deific Spade 8).

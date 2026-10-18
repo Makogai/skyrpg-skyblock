@@ -44,7 +44,7 @@ public final class Nameplates {
         double max = living.getMaxHealth() * StatTypes.HEALTH_SCALE * toughness;
         double part = max <= 0 ? 0 : health / max;
         ChatFormatting color = part > 0.5 ? ChatFormatting.GREEN : part > 0.25 ? ChatFormatting.YELLOW : ChatFormatting.RED;
-        return plate.append(Component.literal(" " + Math.round(Math.ceil(health))).withStyle(color))
+        return plate.append(Component.literal(" " + Math.round(Math.ceil(health - 0.001))).withStyle(color))
                 .append(Component.literal("/" + Math.round(max)).withStyle(ChatFormatting.GRAY))
                 .append(Component.literal("❤").withStyle(ChatFormatting.RED));
     }

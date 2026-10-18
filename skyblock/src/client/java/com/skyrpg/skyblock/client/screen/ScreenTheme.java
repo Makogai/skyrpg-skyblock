@@ -28,7 +28,9 @@ public enum ScreenTheme {
     /** Fishing: driftwood and rope, a wave divider, prismarine buttons. */
     FISHING("fishing", 0xFF5CA8FF, 0xFFE4F1FA, 0xFF93AFC4, 0xFF56708A, 0xFF5CA8FF, 0xFF070D13, 10),
     /** Galatea (foraging and hunting): mossy fig bark with vines, a moonlit vine divider, mossy plank buttons. */
-    GALATEA("galatea", 0xFF7FE0B4, 0xFFE6F2EA, 0xFF9DB5A6, 0xFF61786A, 0xFF9BE07A, 0xFF08100B, 10);
+    GALATEA("galatea", 0xFF7FE0B4, 0xFFE6F2EA, 0xFF9DB5A6, 0xFF61786A, 0xFF9BE07A, 0xFF08100B, 10),
+    /** The Spooky Festival: charred dark oak with a pumpkin glow, jack o'lantern corners, a candy-stripe divider, pumpkin buttons. */
+    SPOOKY("spooky", 0xFFFF8C1A, 0xFFF6EBDD, 0xFFB9A48F, 0xFF7A6652, 0xFFB46CFF, 0xFF0E0810, 10);
 
     private final String sprites;
     public final int accent;

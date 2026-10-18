@@ -1,0 +1,25 @@
+{
+  "name": "Fear Mongerer",
+  "role": "Spooky Festival",
+  "color": "#FF8C1A",
+  "hint": "Candy",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    7.5,
+    65.0,
+    8.5
+  ],
+  "yaw": 135.0,
+  "sound": "minecraft:entity.witch.ambient",
+  "greetings": [
+    "During the Spooky Festival, you can collect Candy by killing mobs.",
+    "I accept Candy in exchange for exclusively spooky items!",
+    "Each Spooky Festival, the top Candy-collecting players can earn even spookier rewards!"
+  ],
+  "action": {
+    "type": "fear_mongerer"
+  },
+  "when": "near:Spooky Festival"
+}

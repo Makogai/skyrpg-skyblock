@@ -233,7 +233,8 @@ public final class LookInfoWidget implements HudWidget {
             double now = living.getHealth() * scale;
             double max = Math.max(1, living.getMaxHealth() * scale);
             health = (float) Math.clamp(now / max, 0, 1);
-            healthText = Component.literal("❤ " + Msg.number(Math.ceil(now)) + "/" + Msg.number(Math.ceil(max)));
+            // (a hair under, so float health 2.4 x 5 shows 12, not 13)
+            healthText = Component.literal("❤ " + Msg.number(Math.ceil(now - 0.001)) + "/" + Msg.number(Math.ceil(max - 0.001)));
         }
         if (entity instanceof AbstractClientPlayer player) {
             PlayerInfo info = minecraft.getConnection() == null ? null : minecraft.getConnection().getPlayerInfo(player.getUUID());

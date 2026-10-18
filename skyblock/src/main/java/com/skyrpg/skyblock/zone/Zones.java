@@ -162,6 +162,13 @@ public final class Zones {
             }
         });
         ServerTickEvents.END_SERVER_TICK.register(Zones::tick);
+        // A zone mob coming back from disk (its chunk reloaded) goes: the zone fills itself up again, and kept ones piled
+        // up past the zone's max over restarts and chunk reloads (a fresh spawn has no zone tag yet when it loads).
+        net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents.ENTITY_LOAD.register((entity, level) -> {
+            if (entity instanceof Mob && entity.entityTags().stream().anyMatch(t -> t.startsWith(TAG + "."))) {
+                level.getServer().execute(entity::discard);
+            }
+        });
         // Hypixel's mobs drop coins straight into the killer's purse.
         net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
             if (!(source.getEntity() instanceof ServerPlayer killer) || killer.isCreative()) {
@@ -315,7 +322,7 @@ public final class Zones {
      * on the ground or a cave floor, not in tree tops; under the open sky unless they're {@code indoors} (crypt) mobs,
      * so none turn up inside houses.
      */
-    private static BlockPos standingSpot(ServerLevel level, AABB box, RandomSource random, boolean indoors) {
+    public static BlockPos standingSpot(ServerLevel level, AABB box, RandomSource random, boolean indoors) {
         int x = (int) Math.floor(box.minX + random.nextDouble() * box.getXsize());
         int z = (int) Math.floor(box.minZ + random.nextDouble() * box.getZsize());
         for (int y = (int) box.minY + 1; y < (int) box.maxY; y++) {

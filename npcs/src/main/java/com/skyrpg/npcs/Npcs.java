@@ -58,6 +58,12 @@ public final class Npcs {
     private static final Set<Identifier> PENDING = new HashSet<>();
     private static final Map<UUID, Long> LAST_CLICK = new HashMap<>();
     private static MinecraftServer server;
+    /** The event NPCs out at the last check: when that changes, everyone's map hears of it. */
+    private static Set<Identifier> lastOut = Set.of();
+    /** Whether an NPC with a "when" ("event:Spooky Festival", "perk:mythological_ritual") is out now (core's Conditions). */
+    static boolean out(NpcDefinition def) {
+        return com.skyrpg.core.world.Conditions.test(def.when());
+    }
 
     private Npcs() {
     }
@@ -120,7 +126,7 @@ public final class Npcs {
                 NpcDefinition def = definitions.get(id);
                 ServerLevel level = def == null ? null : current.getLevel(ResourceKey.create(Registries.DIMENSION, def.dimension()));
                 // Not loaded yet: the chunk-load hook adds it again when someone goes there.
-                if (level != null && level.isLoaded(BlockPos.containing(def.pos()))) {
+                if (level != null && level.isLoaded(BlockPos.containing(def.pos())) && out(def)) {
                     ensure(def, level);
                 }
             }
@@ -128,9 +134,25 @@ public final class Npcs {
         }
         // Every two seconds, bring back NPCs that were killed (/kill gets past invulnerability) where their chunk is loaded.
         if (current.getTickCount() % 40 == 0) {
+            Set<Identifier> nowOut = new HashSet<>();
+            for (NpcDefinition def : definitions.values()) {
+                if (!def.when().isEmpty() && out(def)) {
+                    nowOut.add(def.id());
+                }
+            }
+            if (!nowOut.equals(lastOut)) {
+                lastOut = Set.copyOf(nowOut);
+                current.getPlayerList().getPlayers().forEach(NpcMapPayload::send);
+            }
             for (NpcDefinition def : definitions.values()) {
                 Mannequin npc = LIVE.get(def.id());
-                if (npc == null || npc.isRemoved()) {
+                if (!out(def)) {
+                    // an event NPC whose event is over leaves
+                    if (npc != null) {
+                        npc.discard();
+                        LIVE.remove(def.id());
+                    }
+                } else if (npc == null || npc.isRemoved()) {
                     PENDING.add(def.id());
                 }
             }

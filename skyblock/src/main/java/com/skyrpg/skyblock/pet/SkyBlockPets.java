@@ -481,11 +481,14 @@ public final class SkyBlockPets {
             m.appendReplacement(out, Matcher.quoteReplacement(value));
         }
         m.appendTail(out);
-        return out.toString();
+        // NEU's lore lost Hypixel's stat symbols, leaving "+2Health Regen" and "0.1Swing Range": put the space back
+        // (never after a colour code's digit, "§7Crit").
+        return out.toString().replaceAll("(?<=\\d)(?<!§\\d)(?=[A-Z][a-z])", " ");
     }
 
     private static String format(double value) {
-        if (Math.abs(value - Math.round(value)) < 0.005) {
+        // a whole number shows as one, but a small fraction (0.0015% a level) isn't rounded away to 0
+        if (Math.abs(value - Math.round(value)) < 0.005 && (Math.abs(value) >= 1 || value == 0)) {
             return Long.toString(Math.round(value));
         }
         String text = String.format(Locale.ROOT, Math.abs(value) < 1 ? "%.3f" : "%.1f", value);

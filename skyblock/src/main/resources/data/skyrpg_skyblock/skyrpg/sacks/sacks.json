@@ -55,12 +55,47 @@
     "TREASURE_BAIT",
     "WHALE_BAIT",
     "WOODEN_BAIT",
-    "WORM_BAIT"
+    "WORM_BAIT",
+    "OBFUSCATED_FISH_1_BRONZE",
+    "OBFUSCATED_FISH_1_SILVER",
+    "OBFUSCATED_FISH_1_GOLD",
+    "OBFUSCATED_FISH_1_DIAMOND",
+    "OBFUSCATED_FISH_2_BRONZE",
+    "OBFUSCATED_FISH_2_SILVER",
+    "OBFUSCATED_FISH_2_GOLD",
+    "OBFUSCATED_FISH_2_DIAMOND"
    ],
    "sizes": {
     "SMALL_BAIT_SACK": 2240,
     "MEDIUM_BAIT_SACK": 6720,
     "LARGE_BAIT_SACK": 20160
+   }
+  },
+  {
+   "type": "Bronze Trophy Fishing",
+   "icon": "BRONZE_TROPHY_FISHING_SACK",
+   "items": [
+    "BLOBFISH_BRONZE",
+    "FLYFISH_BRONZE",
+    "GOLDEN_FISH_BRONZE",
+    "GUSHER_BRONZE",
+    "KARATE_FISH_BRONZE",
+    "LAVA_HORSE_BRONZE",
+    "MANA_RAY_BRONZE",
+    "MOLDFIN_BRONZE",
+    "SKELETON_FISH_BRONZE",
+    "SLUGFISH_BRONZE",
+    "SOUL_FISH_BRONZE",
+    "STEAMING_HOT_FLOUNDER_BRONZE",
+    "SULPHUR_SKITTER_BRONZE",
+    "VANILLE_BRONZE",
+    "VOLCANIC_STONEFISH_BRONZE",
+    "OBFUSCATED_FISH_1_BRONZE",
+    "OBFUSCATED_FISH_2_BRONZE",
+    "OBFUSCATED_FISH_3_BRONZE"
+   ],
+   "sizes": {
+    "BRONZE_TROPHY_FISHING_SACK": 512
    }
   },
   {
@@ -829,6 +864,33 @@
    }
   },
   {
+   "type": "Silver Trophy Fishing",
+   "icon": "SILVER_TROPHY_FISHING_SACK",
+   "items": [
+    "BLOBFISH_SILVER",
+    "FLYFISH_SILVER",
+    "GOLDEN_FISH_SILVER",
+    "GUSHER_SILVER",
+    "KARATE_FISH_SILVER",
+    "LAVA_HORSE_SILVER",
+    "MANA_RAY_SILVER",
+    "MOLDFIN_SILVER",
+    "SKELETON_FISH_SILVER",
+    "SLUGFISH_SILVER",
+    "SOUL_FISH_SILVER",
+    "STEAMING_HOT_FLOUNDER_SILVER",
+    "SULPHUR_SKITTER_SILVER",
+    "VANILLE_SILVER",
+    "VOLCANIC_STONEFISH_SILVER",
+    "OBFUSCATED_FISH_1_SILVER",
+    "OBFUSCATED_FISH_2_SILVER",
+    "OBFUSCATED_FISH_3_SILVER"
+   ],
+   "sizes": {
+    "SILVER_TROPHY_FISHING_SACK": 512
+   }
+  },
+  {
    "type": "Slayer",
    "icon": "LARGE_SLAYER_SACK",
    "items": [
@@ -936,6 +998,17 @@
    ],
    "sizes": {
     "WITCH_SACK": 20160
+   }
+  },
+  {
+   "type": "Candy",
+   "icon": "TRICK_OR_TREAT_BAG",
+   "items": [
+    "GREEN_CANDY",
+    "PURPLE_CANDY"
+   ],
+   "sizes": {
+    "TRICK_OR_TREAT_BAG": 100000
    }
   }
  ]

@@ -3,6 +3,8 @@ package com.skyrpg.skyblock.time;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
 
 /**
@@ -63,6 +65,41 @@ public final class CalendarEvents {
             new Event("Mythological Ritual", "Diana's Griffin burrows in the Hub, all year.", 0xFF55FF55, 2, 27, 372, 372, "mythological_ritual"),
             new Event("Mining Fiesta", "+25 Mining Wisdom and Fortune and rare drops. Cole's perk.", 0xFFFFAA00, 2, 27, 372, 372, "mining_fiesta"));
 
+    /** Events an admin started early ({@code /sbevent start}): name to when it started; each runs its usual length. */
+    private static final Map<String, Long> FORCED = new ConcurrentHashMap<>();
+
+    /** Starts an event now (true) or ends a forced one (false); false when no event has that name. */
+    public static boolean force(String name, boolean on, long now) {
+        if (EVENTS.stream().noneMatch(e -> e.name().equalsIgnoreCase(name))) {
+            return false;
+        }
+        String exact = EVENTS.stream().filter(e -> e.name().equalsIgnoreCase(name)).findFirst().orElseThrow().name();
+        Event event = EVENTS.stream().filter(e -> e.name().equals(exact)).findFirst().orElseThrow();
+        if (on) {
+            FORCED.put(exact, now);
+        } else if (FORCED.containsKey(exact)) {
+            // it ends now (and its NPCs stay their hour after, as at a normal end)
+            FORCED.put(exact, now - event.length());
+        }
+        return true;
+    }
+
+    /** Whether an event of this name runs now or within {@code millis} before it starts or after it ends (event NPCs). */
+    public static boolean near(long now, String name, long millis) {
+        return upcoming(now - millis, 2 * millis).stream()
+                .anyMatch(o -> o.event().name().equals(name) && o.start() - millis <= now && now < o.end() + millis);
+    }
+
+    /** The occurrence of this event running now, or null. */
+    public static Occurrence occurrence(long now, String name) {
+        return upcoming(now, 0).stream().filter(o -> o.event().name().equals(name) && o.active(now)).findFirst().orElse(null);
+    }
+
+    /** Whether an event of this name is running now ("Spooky Festival"). */
+    public static boolean running(long now, String name) {
+        return upcoming(now, 0).stream().anyMatch(o -> o.event().name().equals(name) && o.active(now));
+    }
+
     /** The event running now with this perk, or null (the Fishing Festival during its 3 days...). */
     public static Occurrence running(String perk, long now) {
         return upcoming(now, 0).stream().filter(o -> o.event().perk().equals(perk) && o.active(now)).findFirst().orElse(null);
@@ -99,6 +136,13 @@ public final class CalendarEvents {
                 }
             }
         }
+        FORCED.forEach((name, start) -> EVENTS.stream().filter(e -> e.name().equals(name)).findFirst().ifPresent(event -> {
+            if (start + event.length() > now && start < now + withinMillis) {
+                out.add(new Occurrence(event, start, start + event.length()));
+            } else if (start + event.length() + 3_600_000L <= now) {
+                FORCED.remove(name, start);
+            }
+        }));
         out.sort(Comparator.comparingLong(Occurrence::start));
         return out;
     }
