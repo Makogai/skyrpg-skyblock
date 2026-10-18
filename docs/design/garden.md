@@ -79,6 +79,31 @@ Visitors, SkyMart and Phillip are Mannequins kept while someone is in that Garde
 - Sidebar: time left, then the three crops, or your crop and "<Bracket> with <score>" (Hypixel's bracket colours).
 - Admin: `/sbgarden contest start|end|score <n>`, `/sbgarden pest`, `/sbgarden xp <n>`, `/sbgarden copper <n>`.
 
+## The Sprayonator (`Sprays.java`)
+
+- Garden Level 5. Right-click sprays the plot you stand on with the selected material (1 of it, 3 s apart); sneak +
+  right-click picks the material (decided: Hypixel's Configure is a left click, which the server can't hear in the air).
+  A spray lasts 30 minutes (Juicy Sprayonator 45): +25 Bonus Pest Chance (+50), 1.5x pest spawns (2x), and the
+  material's pests get +1,000 spawn weight against 100 each for the rest. In a sprayed plot any pest the Garden level
+  allows can come (elsewhere a pest still matches the crop, as before). Compost draws Earthworms and Mosquitoes, Plant
+  Matter Locusts and Slugs, Dung Beetles and Flies, Honey Jar Moths and Crickets, Tasty Cheese Rats and Mites; Jelly's
+  Praying Mantis, Dragonfly and Firefly aren't in the Garden yet. Pests drop one material 10% of the time (decided: any).
+  The Sprayonator costs 25 Copper at SkyMart. Sprays are kept in memory (a restart clears them).
+
+## Garden Chips (`GardenChips.java`)
+
+- Ten chips; right-click one to redeem it (sneak for the stack): the first unlocks it at Rare, 5 make it Epic, 21
+  Legendary. Each has 20 levels bought with Sowdust (Hypixel's costs: 100k for level 1 up to 2.65M for level 20, 25M
+  in all); rarity scales a level's worth (Hypixel's table). Sowdust: one per crop harvested in the Garden, two for Sugar
+  Cane and Cactus (decided). The `/chips` screen shows them all.
+- In the Garden: Cropshot (+3/4/5 Farming Fortune a level), Sowledge (+1/1.25/1.5 Farming Wisdom), Vermin Vaporizer
+  (+3/4/5 Bonus Pest Chance), Overdrive (+5/6/7 Farming Fortune during Jacob's Contests), Quickdraw (visitors come
+  1.5/2/2.5% sooner a level), Synthesis (+1/1.5/2% visitor Copper). Hypercharge, Mechamind, Evergreen and Rarefinder
+  are redeemable but wait for what they boost (Farming Fortune buffs, tool experience, the Greenhouse).
+- Where chips come from: SkyMart (Cropshot 500 Copper, Sowledge 200), Anita (Mechamind 1 Gold Medal, Overdrive 2),
+  visitors (Hypercharge and Quickdraw, 2% each an offer), pests (Vermin Vaporizer, 1%; decided, Hypixel's Dragonfly
+  isn't here), crops (Rarefinder, 0.0005%); Synthesis and Evergreen come with the Greenhouse.
+
 ## Still to build
 
-The Sprayonator and sprays, Garden Chips, the Greenhouse, Barn skins, plot presets.
+The Greenhouse (its crops, growth, water and the ~37 mutations: their layouts weren't found), Barn skins.

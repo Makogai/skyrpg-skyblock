@@ -147,13 +147,17 @@ final class Pests {
             return;
         }
         GardenData.State state = Garden.state(level.getServer(), owner);
-        Kind kind = KINDS.stream().filter(k -> k.crop().equals(crop.key())).findFirst().orElse(null);
+        int gardenLevel = Garden.level(state);
+        Sprays.Spray spray = Sprays.at(pos);
+        Kind kind = spray != null ? sprayed(spray, gardenLevel, player.getRandom()) : KINDS.stream().filter(k -> k.crop().equals(crop.key())).findFirst().orElse(null);
         long now = System.currentTimeMillis();
-        if (kind == null || Garden.level(state) < kind.level() || now < COOLDOWN.getOrDefault(owner.id(), 0L)) {
+        if (kind == null || gardenLevel < kind.level() || now < COOLDOWN.getOrDefault(owner.id(), 0L)) {
             return;
         }
         long[] repellent = REPELLENT.get(owner.id());
-        double chance = CHANCE * (1 + Stats.get(player, StatTypes.BONUS_PEST_CHANCE) / 100) / (repellent != null && now < repellent[0] ? repellent[1] : 1);
+        double bonus = Stats.get(player, StatTypes.BONUS_PEST_CHANCE) + (spray == null ? 0 : spray.juicy() ? 50 : 25);
+        double sprayed = spray == null ? 1 : spray.juicy() ? 2 : 1.5;
+        double chance = CHANCE * sprayed * (1 + bonus / 100) / (repellent != null && now < repellent[0] ? repellent[1] : 1);
         if (player.getRandom().nextDouble() >= chance || count(level, owner) >= 8) {
             return;
         }
@@ -162,6 +166,24 @@ final class Pests {
         player.sendSystemMessage(Component.literal("A " + kind.name() + " has appeared in " + Garden.areaName(pos) + "!")
                 .withStyle(ChatFormatting.GOLD));
         Msg.playSound(player, SoundEvents.SILVERFISH_AMBIENT, 1f, 0.8f);
+    }
+
+    /** In a sprayed plot any pest the Garden is ready for can come, its material's far likelier (+1,000 weight against 100). */
+    private static Kind sprayed(Sprays.Spray spray, int gardenLevel, net.minecraft.util.RandomSource random) {
+        Sprays.Material material = Sprays.MATERIALS.stream().filter(m -> m.item().equals(spray.material())).findFirst().orElse(null);
+        List<Kind> ready = KINDS.stream().filter(k -> gardenLevel >= k.level()).toList();
+        int total = 0;
+        for (Kind k : ready) {
+            total += material != null && material.pests().contains(k.name()) ? 1_100 : 100;
+        }
+        int roll = random.nextInt(Math.max(1, total));
+        for (Kind k : ready) {
+            roll -= material != null && material.pests().contains(k.name()) ? 1_100 : 100;
+            if (roll < 0) {
+                return k;
+            }
+        }
+        return ready.isEmpty() ? null : ready.get(0);
     }
 
     static Mob spawn(ServerLevel level, Profile owner, Kind kind, BlockPos near) {
@@ -274,6 +296,17 @@ final class Pests {
             if (!player.getInventory().add(stack)) {
                 player.drop(stack, false, net.minecraft.util.Prediction.SERVER_ONLY);
             }
+        }
+        // A spray material now and then (decided: 10%, any of them), and the rare Vermin Vaporizer Chip.
+        var random = player.getRandom();
+        if (random.nextDouble() < 0.10) {
+            Sprays.Material material = Sprays.MATERIALS.get(random.nextInt(Sprays.MATERIALS.size()));
+            GardenChips.give(player, material.item());
+            player.sendSystemMessage(Component.literal("The " + kind.name() + " dropped " + material.name() + "!").withStyle(ChatFormatting.GREEN));
+        }
+        if (random.nextDouble() < 0.01) {
+            GardenChips.give(player, "VERMIN_VAPORIZER_GARDEN_CHIP");
+            player.sendSystemMessage(Component.literal("RARE DROP! Vermin Vaporizer Chip").withStyle(ChatFormatting.LIGHT_PURPLE));
         }
         Profile owner = Garden.ownerAt(pest.blockPosition());
         if (owner != null) {

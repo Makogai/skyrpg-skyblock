@@ -146,7 +146,7 @@ final class Visitors {
             }
             if (now >= state.nextVisitor && state.visitors.size() < MAX) {
                 state.visitors.add(roll(state, new Random(now ^ profile.id().getMostSignificantBits())).encode());
-                state.nextVisitor = now + INTERVAL_MS;
+                state.nextVisitor = now + Math.round(INTERVAL_MS * (1 - GardenChips.value(player, "QUICKDRAW") / 100));
                 GardenData.get(server).setDirty();
                 Offer offer = Offer.decode(state.visitors.get(state.visitors.size() - 1));
                 player.sendSystemMessage(Component.literal(offer.name() + " has arrived on your Garden!")
@@ -283,14 +283,22 @@ final class Visitors {
         }
         offer.wants().forEach((id, n) -> com.skyrpg.skyblock.sack.Sacks.takeAnywhere(player, id, n));
         state.visitors.remove(index);
-        state.copper += offer.copper();
+        int copper = (int) Math.round(offer.copper() * (1 + GardenChips.value(player, "SYNTHESIS") / 100));
+        state.copper += copper;
         boolean first = !state.served.containsKey(offer.name());
         state.served.merge(offer.name(), 1, Integer::sum);
         SkillLevels.giveXp(player, SkillLevels.FARMING, offer.farmingXp());
         Notice.Panel panel = Notice.of(Notice.Kind.FARMING).tag("OFFER ACCEPTED").panel()
-                .line(Component.literal(" +" + offer.copper() + " Copper").withColor(0xE07B39))
+                .line(Component.literal(" +" + copper + " Copper").withColor(0xE07B39))
                 .line(Component.literal(" +" + Msg.number(offer.gardenXp()) + " Garden XP  ·  +" + Msg.number(offer.farmingXp()) + " Farming XP")
                         .withStyle(ChatFormatting.GRAY));
+        // Hypercharge and Quickdraw chips turn up with visitors (2% each).
+        for (String chip : List.of("HYPERCHARGE_GARDEN_CHIP", "QUICKDRAW_GARDEN_CHIP")) {
+            if (player.getRandom().nextDouble() < 0.02) {
+                GardenChips.give(player, chip);
+                panel.line(Component.literal(" RARE REWARD! " + name(chip)).withStyle(ChatFormatting.LIGHT_PURPLE));
+            }
+        }
         if (first) {
             SkyBlockXp.give(player, 1, "new Garden visitor");
             panel.line(Component.literal(" +1 SkyBlock XP (a new visitor)").withStyle(ChatFormatting.AQUA));

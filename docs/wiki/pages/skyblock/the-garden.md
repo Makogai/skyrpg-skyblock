@@ -83,6 +83,34 @@ Pests float over your plots, glowing, with **600 health**. Swords and bows don't
 
 Leave them be and they cost you: with **4 or more pests** alive in your Garden, your Farming Fortune there drops by 5%, then 15%, 30%, 50% and at worst 75% (every 100 Bonus Pest Chance lets you carry one more before that, though it also brings pests more often). **Pest Repellent** halves the chance of pests for an hour; **Pest Repellent MAX** quarters it.
 
+## The Sprayonator
+
+From Garden Level 5, the **Sprayonator** (SkyMart, 25 Copper) sprays the plot you're standing on: right-click to spray, sneak + right-click to pick the material. For 30 minutes the plot draws pests: +25 Bonus Pest Chance, half again as many pests, and the material's own pests far more often.
+
+| Material | Draws |
+| --- | --- |
+| Compost | Earthworm, Mosquito |
+| Plant Matter | Locust, Slug |
+| Dung | Beetle, Fly |
+| Honey Jar | Moth, Cricket |
+| Tasty Cheese | Rat, Mite |
+
+Pests sometimes drop the materials. The **Juicy Sprayonator** lasts 45 minutes and doubles the pests.
+
+## Garden Chips
+
+Ten **Garden Chips** make you better at the Garden. Right-click a chip to redeem it (sneak to redeem the stack): the first unlocks it, five make it Epic and 21 Legendary, and each rarity makes its levels worth more. Level chips up with **Sowdust**, which you earn harvesting Garden crops; open them with `/chips`.
+
+| Chip | Each level | From |
+| --- | --- | --- |
+| Cropshot | +3 Farming Fortune (Rare) | SkyMart, 500 Copper |
+| Sowledge | +1 Farming Wisdom | SkyMart, 200 Copper |
+| Vermin Vaporizer | +3 Bonus Pest Chance | pests |
+| Overdrive | +5 Farming Fortune in Jacob's Contests | Anita, 2 Gold Medals |
+| Quickdraw | visitors come 1.5% sooner | visitors |
+| Synthesis | +1% Copper | the Greenhouse |
+| Hypercharge, Mechamind, Evergreen, Rarefinder | (coming with what they boost) | visitors, Anita, the Greenhouse, crops |
+
 ## Pesthunter Phillip
 
 Phillip stands by his shed next to the Barn. Every pest you vacuum up is one to spend with him:

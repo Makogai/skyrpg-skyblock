@@ -288,7 +288,8 @@ public final class Contests {
             new Sale("HOE_OF_GREAT_TILLING", 1, 5, 1, 0, 0, ""), new Sale("HOE_OF_GREATER_TILLING", 1, 10, 0, 1, 0, ""),
             new Sale("HOE_OF_GREATEST_TILLING", 1, 20, 0, 2, 0, ""), new Sale("BASKET_OF_SEEDS", 1, 30, 0, 2, 0, ""),
             new Sale("NETHER_WART_POUCH", 1, 30, 0, 2, 0, ""), new Sale("ANITA_TALISMAN", 1, 32, 2, 0, 0, ""),
-            new Sale("ANITA_RING", 1, 64, 0, 2, 0, "ANITA_TALISMAN"), new Sale("ANITA_ARTIFACT", 1, 100, 0, 0, 2, "ANITA_RING"));
+            new Sale("ANITA_RING", 1, 64, 0, 2, 0, "ANITA_TALISMAN"), new Sale("ANITA_ARTIFACT", 1, 100, 0, 0, 2, "ANITA_RING"),
+            new Sale("MECHAMIND_GARDEN_CHIP", 1, 0, 0, 0, 1, ""), new Sale("OVERDRIVE_GARDEN_CHIP", 1, 0, 0, 0, 2, ""));
 
     static String price(Sale sale) {
         List<String> parts = new ArrayList<>();

@@ -632,7 +632,9 @@ phase so the next session can pick up where this one stopped.
       the Farming Fortune penalty, Pest Repellent, Pesthunter Phillip's shop; Jacob's Farming Contests on the calendar
       (Farming X, Hypixel's brackets plus score floors, tickets and medals claimed at Jacob, the sidebar), Anita's shop and
       medal trades.
-- [ ] The Garden, part 3: the Sprayonator, crop upgrades, chips, the Greenhouse.
+- [x] **The Garden, part 3** (`Sprays`, `GardenChips`): the Sprayonator (materials, plot sprays, weighted pests), the ten
+      Garden Chips (redeem, rarities, Sowdust levels, `/chips`; SkyMart, Anita, visitor and pest sources).
+- [ ] The Garden, part 4: the Greenhouse (crops, growth, water, mutations), Barn skins.
 - [x] **The Rift, part 1** (`rift/*`, `docs/design/rift.md`): the Hub's Wizard Tower and its portal, Dimensional
       Infusions, the Rift dimension, Rift Time on the health bar and sidebar, Rift Damage combat, Motes (mobs, orbs, the
       Motes Grubber), Enigma Souls and the Enigma Cloak, the Wyld Woods with the Rift Wizard Tower and the Black Lagoon

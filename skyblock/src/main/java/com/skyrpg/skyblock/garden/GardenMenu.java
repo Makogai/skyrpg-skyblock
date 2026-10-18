@@ -125,7 +125,8 @@ public final class GardenMenu extends AbstractContainerMenu {
             new Sale("COCO_CHOPPER", 250, false), new Sale("FUNGI_CUTTER", 250, false), new Sale("THEORETICAL_HOE_WARTS_1", 250, false),
             new Sale("FARMING_TOOLKIT", 500, false), new Sale("SKYMART_VACUUM", 5_000, true), new Sale("SKYMART_TURBO_VACUUM", 200, false),
             new Sale("SKYMART_HYPER_VACUUM", 500, false), new Sale("INFINI_VACUUM", 1_000, false), new Sale("SPRAYONATOR", 25, false),
-            new Sale("PEST_REPELLENT", 15, false), new Sale("PEST_REPELLENT_MAX", 25, false));
+            new Sale("PEST_REPELLENT", 15, false), new Sale("PEST_REPELLENT_MAX", 25, false), new Sale("CROPSHOT_GARDEN_CHIP", 500, false),
+            new Sale("SOWLEDGE_GARDEN_CHIP", 200, false));
 
     /** The Composter upgrades' icons, in {@link Composter#UPGRADES} order. */
     private static final List<Item> UPGRADE_ICONS = List.of(Items.CLOCK, Items.CHEST, Items.LAVA_BUCKET, Items.COMPOSTER, Items.GOLD_NUGGET);

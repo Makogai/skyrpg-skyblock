@@ -92,6 +92,8 @@ public final class Garden {
     }
 
     public static void init() {
+        GardenChips.init();
+        Sprays.init();
         GardenRules.init();
         GardenMenu.init();
         Composter.init();
@@ -542,6 +544,7 @@ public final class Garden {
         }
         Pests.harvested(level, player, pos, crop);
         Contests.harvested(player, crop, count);
+        GardenChips.harvested(player, crop, count);
     }
 
     /** Garden XP; level-ups are announced with their 10 SkyBlock XP. */

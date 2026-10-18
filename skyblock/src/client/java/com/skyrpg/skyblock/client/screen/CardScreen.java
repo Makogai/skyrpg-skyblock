@@ -157,8 +157,12 @@ public final class CardScreen extends AbstractContainerScreen<CardMenu> {
                 break;
             }
             int cw = SkyScreens.chip(g, font, theme, x + 8, wy, chip, 0.8f);
-            String name = chip.currency().isEmpty() ? chip.item().getHoverName().getString() : SkyScreens.currencyName(chip.currency());
-            Draw.fit(g, font, Component.literal(name), x + 12 + cw, wy + 2, PANEL - 18 - cw, 0.62f, 0.45f, Draw.Align.LEFT, theme.muted, false);
+            // a chip with neither currency nor item carries its own words ("12,000 Sowdust")
+            String name = chip.currency().isEmpty() ? chip.item().isEmpty() ? "" : chip.item().getHoverName().getString()
+                    : SkyScreens.currencyName(chip.currency());
+            if (!name.isEmpty()) {
+                Draw.fit(g, font, Component.literal(name), x + 12 + cw, wy + 2, PANEL - 18 - cw, 0.62f, 0.45f, Draw.Align.LEFT, theme.muted, false);
+            }
             wy += 12;
         }
     }
