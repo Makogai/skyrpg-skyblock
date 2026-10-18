@@ -16,6 +16,10 @@ final class RiftFlags {
     private RiftFlags() {
     }
 
+    /** Loads the class at startup: an attachment type made after a player's data is read drops their flags. */
+    static void init() {
+    }
+
     static boolean has(ServerPlayer player, String flag) {
         return player.getAttachedOrElse(FLAGS, List.of()).contains(flag);
     }

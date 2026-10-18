@@ -1,0 +1,56 @@
+{
+ "category": "rift",
+ "name": "Timite",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "TIMITE"
+ ],
+ "items": [],
+ "thresholds": [
+  25,
+  50,
+  100,
+  250,
+  500,
+  750
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Time Gun Recipe",
+    "Eon Pickaxe Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Time Pocket Bag"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Chrono Pickaxe Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Highlite Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Satelite Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Discrite Recipe"
+   ]
+  }
+ ]
+}

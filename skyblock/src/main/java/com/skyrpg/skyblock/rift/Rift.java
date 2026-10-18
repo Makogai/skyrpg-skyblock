@@ -3,6 +3,7 @@ package com.skyrpg.skyblock.rift;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
+import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.serialization.Codec;
 import com.skyrpg.core.action.Actions;
 import com.skyrpg.core.data.JsonDataLoader;
@@ -102,6 +103,8 @@ public final class Rift {
 
     public static void init() {
         Motes.init();
+        RiftFlags.init();
+        Timecharms.init();
         EnigmaSouls.init();
         Orbs.init();
         RiftNpcs.init();
@@ -112,6 +115,9 @@ public final class Rift {
         RiftQuests.init();
         Bacte.init();
         VampireSlayer.init();
+        Dreadfarm.init();
+        Mirrorverse.init();
+        WestVillage.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);
         // Your hits in the Rift deal your Rift Damage, whatever you hold.
@@ -197,7 +203,22 @@ public final class Rift {
                     ServerPlayer player = ctx.getSource().getPlayerOrException();
                     setInfusions(player, Math.min(MAX_INFUSIONS, infusions(player) + 1));
                     return 1;
-                }))));
+                }))
+                // testing: set a story flag ("shania_harvest", "mv:room:5"...) or secure a Timecharm without the journey
+                .then(Commands.literal("flag").then(Commands.argument("flag", StringArgumentType.greedyString()).executes(ctx -> {
+                    RiftFlags.set(ctx.getSource().getPlayerOrException(), StringArgumentType.getString(ctx, "flag"));
+                    return 1;
+                })))
+                .then(Commands.literal("secure").then(Commands.argument("charm", StringArgumentType.word()).executes(ctx -> {
+                    ServerPlayer player = ctx.getSource().getPlayerOrException();
+                    List<String> secured = new java.util.ArrayList<>(player.getAttachedOrElse(Timecharms.SECURED, List.of()));
+                    String charm = StringArgumentType.getString(ctx, "charm");
+                    if (!secured.contains(charm)) {
+                        secured.add(charm);
+                        player.setAttached(Timecharms.SECURED, List.copyOf(secured));
+                    }
+                    return 1;
+                })))));
     }
 
     private static void load(Map<Identifier, JsonElement> files) {

@@ -32,8 +32,8 @@ public final class CollectionsPage implements MenuPage {
     private static final int GAP = 6;
     private static final int ROW_H = 38;
     private static final Map<String, Integer> CATEGORY_COLORS = Map.of(
-            "mining", 0xFF8FB4D9, "farming", 0xFF7BD35A, "foraging", 0xFF3FB56B, "fishing", 0xFF4FB8F0, "combat", 0xFFFF5555);
-    private static final List<String> CATEGORY_ORDER = List.of("mining", "farming", "foraging", "fishing", "combat");
+            "mining", 0xFF8FB4D9, "farming", 0xFF7BD35A, "foraging", 0xFF3FB56B, "fishing", 0xFF4FB8F0, "combat", 0xFFFF5555, "rift", 0xFFC77DFF);
+    private static final List<String> CATEGORY_ORDER = List.of("mining", "farming", "foraging", "fishing", "combat", "rift");
 
     private String selected = "";
     private double scroll;

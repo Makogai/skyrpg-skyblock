@@ -1,0 +1,77 @@
+{
+ "category": "rift",
+ "name": "Hemovibe",
+ "icon": "minecraft:redstone_ore",
+ "skyblock": [
+  "HEMOVIBE"
+ ],
+ "items": [],
+ "thresholds": [
+  50,
+  250,
+  1000,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Vampire Minion Recipes"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blood Donor Talisman Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hemoglass Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Enchanted Book (Transylvanian IV) Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Displaced Leech Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Blood Donor Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Full-Jaw Fanging Kit Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Presumed Gallon of Red Paint Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Hemobomb Recipe",
+    "Blood Donor Artifact Recipe"
+   ]
+  }
+ ]
+}

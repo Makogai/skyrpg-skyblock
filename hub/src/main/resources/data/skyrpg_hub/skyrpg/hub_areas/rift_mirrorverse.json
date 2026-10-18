@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_mirrorverse",
+  "origin": [
+    -604,
+    90,
+    -130
+  ],
+  "version": 2,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

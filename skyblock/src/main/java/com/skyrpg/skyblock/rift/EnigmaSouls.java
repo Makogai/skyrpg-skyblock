@@ -67,7 +67,10 @@ final class EnigmaSouls {
                 return InteractionResult.PASS;
             }
             String key = BY_ENTITY.get(entity.getUUID());
-            if (key != null) {
+            String locked = key == null || has(server, key) ? null : locked(server, key);
+            if (locked != null) {
+                server.sendOverlayMessage(Component.literal(locked).withStyle(ChatFormatting.RED));
+            } else if (key != null) {
                 find(server, key);
             }
             return InteractionResult.SUCCESS;
@@ -96,6 +99,23 @@ final class EnigmaSouls {
                 }
             }
         });
+    }
+
+    /** Why a placed soul can't be taken yet (its puzzle isn't done), or null. */
+    static String locked(ServerPlayer player, String key) {
+        if (key.equals(WestVillage.HOT_DOG_SOUL) && !RiftFlags.has(player, "hotdog")) {
+            return "Win Joey McPizza's hot dog contest for this soul (ask the Chef).";
+        }
+        boolean shania = RiftFlags.has(player, "shania_harvest");
+        if (key.equals(Dreadfarm.BUTTON_SOUL) && !(shania && RiftFlags.has(player, "buttons"))) {
+            return shania ? "Press every button on the wall first." : "Bring Shania her harvest first, then press every button.";
+        }
+        if (Dreadfarm.BALLOON_SOULS.contains(key) && !RiftFlags.has(player, "balloons:" + key)) {
+            boolean needsShania = key.contains("Farm") || key.contains("Plaza");
+            return needsShania && !shania ? "Bring Shania her harvest first, then pop every balloon here with a Berberis Blowgun."
+                    : "Pop every balloon here with a Berberis Blowgun first.";
+        }
+        return null;
     }
 
     static List<String> placed() {

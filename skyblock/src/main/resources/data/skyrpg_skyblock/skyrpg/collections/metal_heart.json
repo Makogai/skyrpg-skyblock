@@ -1,0 +1,48 @@
+{
+ "category": "rift",
+ "name": "Living Metal Heart",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "METAL_HEART"
+ ],
+ "items": [],
+ "thresholds": [
+  1,
+  10,
+  25,
+  50,
+  100
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Snake-in-a-Boot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Living Metal Anchor Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nothing-in-a-Bottle Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Bluetooth Ring Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Polarvoid Book Recipe"
+   ]
+  }
+ ]
+}

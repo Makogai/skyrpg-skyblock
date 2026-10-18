@@ -1,0 +1,41 @@
+{
+ "category": "rift",
+ "name": "Wilted Berberis",
+ "icon": "minecraft:dead_bush",
+ "skyblock": [
+  "WILTED_BERBERIS"
+ ],
+ "items": [],
+ "thresholds": [
+  20,
+  60,
+  140,
+  400
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Wilted Berberis Bunch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Berberis Blowgun Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Jinxed Voodoo Doll Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Berberis Fuel Injector Recipe"
+   ]
+  }
+ ]
+}

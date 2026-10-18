@@ -1,0 +1,26 @@
+{
+  "name": "ttemme .rD",
+  "role": "pohS",
+  "color": "#55FFFF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -420.5,
+    101.0,
+    -115.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.portal.ambient",
+  "greetings": [
+    "!tnecsiro... ,olleH",
+    ".sredro ni sesuoh srorrim ruoY"
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "ttemme .rD"
+    }
+  }
+}

@@ -471,6 +471,14 @@ rift("Plumber Joe", "plumber_joe", "Buckets", "#5555FF", "Talk", "steve", False,
      ["Leaky pipes everywhere in this place.", "A Plumber's Bucket never runs dry."])
 rift("Dr. Emmett", "dr_emmett", "The Mirrorverse", "#55FFFF", "Talk", "kai", False, "minecraft:block.portal.ambient",
      ["The Mirrorverse lies through that door.", "Everything in there is backwards. Even me."])
+# the Mirrorverse (rift_mirrorverse.py): Dr. Emmett in every room (fast travel back to rooms you've reached), the finale
+for _n in range(1, 8):
+    rift(f"Dr. Emmett (Mirrorverse {_n})", f"dr_emmett_mirrorverse_{_n}", "The Mirrorverse", "#55FFFF", "Talk", "kai", False,
+         "minecraft:block.portal.ambient", ["Look in the mirror. It knows the way.", "I can take you back to any room you've seen."])
+rift("Dr. Emmett (Mirrorverse)", "dr_emmett_mirrorverse", "The Mirrorverse", "#55FFFF", "Talk", "kai", False,
+     "minecraft:block.portal.ambient", ["You made it through every mirror!", "My reflection runs the shop. Don't ask."])
+rift("ttemme .rD", "ttemme_rd", "pohS", "#55FFFF", "Shop", "kai", False, "minecraft:block.portal.ambient",
+     ["!tnecsiro... ,olleH", ".sredro ni sesuoh srorrim ruoY"])
 rift("Motes Grubber (West Village)", "motes_grubber_west_village", "Eats Rift items", "#FF55FF", "Sell", "makena", True,
      "minecraft:entity.generic.eat", ["I eat Rift things and pay in Motes.", "Hungry, always hungry."])
 rift("The Intruder", "the_intruder", "Porhtal eye", "#AA00AA", "Eye", "noor", False, "minecraft:block.portal.ambient",

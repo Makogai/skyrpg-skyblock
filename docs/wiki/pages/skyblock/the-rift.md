@@ -94,8 +94,9 @@ The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Dead
 | Black Lagoon | 4:00 Rift Time left |
 | West Village | the Supreme Timecharm, 3:00 left |
 | Dreadfarm | the Supreme Timecharm |
-| Village Plaza | the Supreme Timecharm, 8:00 left |
-| Barrier Street | the Supreme Timecharm, 10:00 left |
+| The Mirrorverse | the Supreme Timecharm, 3:00 left |
+| Village Plaza | the mrahcemiT esrevrorriM and the Chicken N Egg Timecharm, 8:00 left |
+| Barrier Street | the Globulate Timecharm, 10:00 left |
 
 ## West Village, the Dreadfarm and the Village Plaza
 
@@ -104,6 +105,45 @@ The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Dead
 - **The Village Plaza:** the town square, Barry and his protesters, Barrier Street and the floating islets of Deja Vu Alley. **Scribes** drop 100 Motes and Scribe Crux.
   - Cryptosis sells an Enigma Soul for 15,000 Motes and 10 Scribe Crux.
   - Seymour sells the Exceedingly Comfy Sneakers.
+
+### Gunther's race
+
+**Gunther** stands at the banner arch in West Village. Race through his ten glowing checkpoints and back to the start line: under a minute earns a **Dark Pebble**, under 35 seconds his **Gunthesizer Lichen**, which turns Wyld Boots (and 8 Shadow Crux) into **Gunther's Sneakers** (+30 Rift Time, +4 Speed).
+
+### The hot dog contest
+
+Ask the **Chef** to start it: for 60 seconds his stall flings hot dogs over the counter. Grab them and right-click **Joey McPizza** to hand them over. Fifty in the minute earns an **Enigma Soul**.
+
+### The Dreadfarm's crops
+
+**Shania** gives you a **Wand of Farming**. Hold it to farm:
+
+| Crop | How |
+| --- | --- |
+| Agaricus Cap | Look at a brown mushroom until it turns red, then click it. |
+| Caducous Stem | Click a rose bush's top, then its bottom. |
+| Wilted Berberis | Break the dead bushes that sparkle purple; the sparkle moves to another bush. |
+
+Twenty of a crop make a bunch. Bring Shania two bunches of each for a **Proto-Chicken**. Her task ends when you wear **Chicken Leggs**.
+
+The **Berberis Blowgun** (60 Wilted Berberis, Wilted Berberis II) shoots arrows that only hurt chickens and Puffs. Punch a **Not Chicken** into the air and shoot it while it floats down: it drops a **Metaphoric Egg** and 50 Motes. Eggs make Chicken Leggs (32) and the **Chicken N Egg Timecharm** (8, with the Proto-Chicken and a bunch of each crop). The Blowgun also pops the balloons and presses the buttons some Enigma Souls hide behind.
+
+### The Mirrorverse
+
+The door in West Village's courtyard leads into **Dr. Emmett's Mirrorverse**: eight rooms, each split by a glass mirror. Your side hides something; the reflection shows it. Rift Time stands still inside and nothing can hurt you.
+
+| Room | What to do |
+| --- | --- |
+| 1 | Flip your levers to match the mirror's. |
+| 2 | Your floor is blank; the mirror shows the lava and the iron path through it. A wrong step sends you back. |
+| 3 | The mobs are invisible on your side and visible in the mirror. Their drops (written backwards) craft the **remmaH yniT**, which opens the door. The crafting table is invisible too. |
+| 4 | Only the platforms in the mirror are safe; the others drop you into the lava. |
+| 5 | Click the mirror to step through it; walls and lava block one side or the other. A pocket on the mirror's side, past the last lava pit, hides the **Big Brain Talisman**. |
+| 6 | Dance: do what Dr. Emmett calls (Move, Sneak, Stand, Jump, Don't jump, Punch). Seven steps open the door; all twelve earn the **Tiny Dancer**. |
+| 7 | Climb an invisible staircase the mirror shows. Dr. Emmett lends you his **Emmett Pointer**, whose lazer marks the invisible steps. The levers at the bottom take you back to checkpoints; climbing without them earns the **Miniaturized Tubulator**. |
+| 8 | Dr. Emmett pays **60,000 Motes** once. His reflection, ttemme .rD, sells the **mrahcemiT esrevrorriM** (10,000 Motes and 10 Shadow Crux), which opens the Village Plaza with Chicken N Egg. |
+
+A Dr. Emmett in every room takes you back to any room you've reached.
 
 ## Further in
 
@@ -153,4 +193,4 @@ Walk into the Colosseum's arena and Bacte, a giant slime with 1,000 health, ooze
 Kill the Château's vampires to fill the quest, then the Bloodfiend rises beside you. It drains your Hearts every second. From tier II it also slashes with **Twinclaws** (don't stand in front of it) and goes into **Mania** (it can't be hurt for 8 seconds). Below a fifth of its health only a **Steak Stake** (Maddox sells them) finishes it. Rewards are Coven Seals, rare drops (Bubba Blister, Guardian Lucky Block, McGrubber's Burger, Unfanged Vampire Part) and Motes. Slayer levels (20, 75, 240, 840 and 2,400 XP) give Rift Time and SkyBlock XP.
 
 > [!NOTE]
-> Not here yet: the Mirrorverse and its Timecharm, the Dreadfarm's crops (Chicken N Egg), Shen's Celestial Timecharm, Reed's boat and the other area quests.
+> Not here yet: Shen's Celestial Timecharm, the Sun Gecko, Reed's boat, Shen's auctions and the other area quests.

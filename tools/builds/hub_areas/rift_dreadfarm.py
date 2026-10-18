@@ -1043,12 +1043,14 @@ def drop(item, chance, lo, hi):
 
 
 VOLT = [drop("VOLT_CRUX", 1, 1, 1)]
+EGG = [drop("METAPHORIC_EGG", 1, 1, 1)]
 area.zone("Dreadfarm", box=((X0, 56, Z0), (X1, 170, Z1 - 1)), blocks={}, mobs=[
     mob("minecraft:zombie", "Volt", 4, 160, 7, 6, 155, 4, 8, (-88, 67, -186), (-61, 76, -156), VOLT),
     mob("minecraft:zombie", "Volt", 4, 160, 7, 6, 155, 4, 8, (-52, 67, -182), (-28, 76, -158), VOLT),
     mob("minecraft:zombie", "Volt", 4, 160, 7, 6, 155, 3, 10, (-70, 67, -204), (-45, 76, -186), VOLT),
-    mob("minecraft:chicken", "Not Chicken", 1, 3, 0, 1, 0, 6, 6, (-104, 67, -134), (-92, 72, -123)),
-    mob("minecraft:chicken", "Not Chicken", 1, 3, 0, 1, 0, 6, 6, (-88, 67, -134), (-77, 72, -123)),
+    # Not Chickens (Hypixel's): punched into the air, shot down with the Berberis Blowgun (the mod) for an egg and 50 Motes.
+    mob("minecraft:chicken", "Not Chicken", 1, 3, 0, 1, 50, 6, 6, (-104, 67, -134), (-92, 72, -123), EGG),
+    mob("minecraft:chicken", "Not Chicken", 1, 3, 0, 1, 50, 6, 6, (-88, 67, -134), (-77, 72, -123), EGG),
 ])
 
 # fences connect to their neighbours (the structure is placed as plain posts otherwise)

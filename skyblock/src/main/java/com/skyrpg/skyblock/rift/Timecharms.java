@@ -45,6 +45,10 @@ final class Timecharms {
     private Timecharms() {
     }
 
+    /** Loads the class at startup: an attachment type made after a player's data is read drops what they secured. */
+    static void init() {
+    }
+
     static boolean secured(ServerPlayer player, String charm) {
         return player.getAttachedOrElse(SECURED, List.of()).contains(charm);
     }

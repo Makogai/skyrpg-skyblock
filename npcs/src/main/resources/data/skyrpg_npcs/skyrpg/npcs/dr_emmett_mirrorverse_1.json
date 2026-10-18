@@ -1,0 +1,26 @@
+{
+  "name": "Dr. Emmett",
+  "role": "The Mirrorverse",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -599.5,
+    101.0,
+    -126.5
+  ],
+  "yaw": -45.0,
+  "sound": "minecraft:block.portal.ambient",
+  "greetings": [
+    "Look in the mirror. It knows the way.",
+    "I can take you back to any room you've seen."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Dr. Emmett (Mirrorverse 1)"
+    }
+  }
+}

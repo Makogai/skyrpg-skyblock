@@ -1,0 +1,41 @@
+{
+ "category": "rift",
+ "name": "Half-Eaten Carrot",
+ "icon": "minecraft:carrot",
+ "skyblock": [
+  "HALF_EATEN_CARROT"
+ ],
+ "items": [],
+ "thresholds": [
+  50,
+  400,
+  1000,
+  3500
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nearly-Whole Carrot Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Orange Chestplate Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Exportable Carrots Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Nearly Coherent doR gnihsiF Recipe"
+   ]
+  }
+ ]
+}

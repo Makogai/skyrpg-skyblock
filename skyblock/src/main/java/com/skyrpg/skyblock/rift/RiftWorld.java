@@ -45,18 +45,21 @@ final class RiftWorld {
     private static final int GAZE_TICKS = 60;
     private static final int PAD_TICKS = 10 * 20;
 
-    /** An area's gate: Rift Time it needs left, and the Timecharm ("" for none; "flag:x" for a story flag). */
+    /** An area's gate: Rift Time it needs left, and the Timecharms ("" for none, "A+B" for both; "flag:x" for a story flag). */
     record Gate(int seconds, String charm) {
     }
 
-    /** Hypixel's gates (the Plaza's Mirrorverse and Chicken N Egg charms are waited for with the Supreme, decided: those come later). */
+    private static final String PLAZA = "RIFT_TROPHY_MIRRORED+RIFT_TROPHY_CHICKEN_N_EGG";
+
+    /** Hypixel's gates. */
     static final Map<String, Gate> GATES = Map.ofEntries(
             Map.entry("Black Lagoon", new Gate(4 * 60, "")),
             Map.entry("West Village", new Gate(3 * 60, Timecharms.SUPREME)),
             Map.entry("Dreadfarm", new Gate(0, Timecharms.SUPREME)),
-            Map.entry("Village Plaza", new Gate(8 * 60, Timecharms.SUPREME)),
+            Map.entry("Mirrorverse", new Gate(3 * 60, Timecharms.SUPREME)),
+            Map.entry("Village Plaza", new Gate(8 * 60, PLAZA)),
             Map.entry("Barrier Street", new Gate(10 * 60, "RIFT_TROPHY_SLIME")),
-            Map.entry("Deja Vu Alley", new Gate(5 * 60, Timecharms.SUPREME)),
+            Map.entry("Deja Vu Alley", new Gate(5 * 60, PLAZA)),
             Map.entry("Living Cave", new Gate(5 * 60, "RIFT_TROPHY_CITIZEN")),
             Map.entry("Living Stillness", new Gate(5 * 60, "RIFT_TROPHY_CITIZEN")),
             Map.entry("Colosseum", new Gate(15 * 60, "RIFT_TROPHY_LAZY_LIVING")),
@@ -64,9 +67,10 @@ final class RiftWorld {
             Map.entry("The Mountaintop", new Gate(9 * 60, "RIFT_TROPHY_VAMPIRIC")),
             Map.entry("Time Chamber", new Gate(9 * 60, "RIFT_TROPHY_VAMPIRIC")));
 
-    /** How fast Rift Time runs in a zone (Hypixel's: half in the Colosseum, double in the Time Chamber). */
+    /** How fast Rift Time runs in a zone (Hypixel's: half in the Colosseum, double in the Time Chamber, none in the Mirrorverse). */
     static double drain(String zone) {
         return switch (zone) {
+            case "Mirrorverse" -> 0;
             case "Colosseum" -> 0.5;
             case "Time Chamber" -> 2;
             default -> 1;
@@ -270,6 +274,19 @@ final class RiftWorld {
 
     // ---------------------------------------------------------------- gates
 
+    /** The first of a gate's Timecharms you haven't secured, or null. */
+    private static String missingCharm(ServerPlayer player, String charms) {
+        if (charms.isEmpty() || charms.startsWith("flag:")) {
+            return null;
+        }
+        for (String charm : charms.split("[+]")) {
+            if (!Timecharms.secured(player, charm)) {
+                return charm;
+            }
+        }
+        return null;
+    }
+
     private static void gates(ServerPlayer player, ServerLevel level) {
         Zones.Zone zone = Zones.at(level, player.blockPosition());
         String name = zone == null ? "" : zone.name();
@@ -279,8 +296,8 @@ final class RiftWorld {
             String problem = null;
             if (gate.charm().startsWith("flag:") && !RiftFlags.has(player, gate.charm().substring(5))) {
                 problem = name.equals("Stillgore Chateau") ? "Talk to Deer before you go into Stillgore Chateau." : "You can't go there yet.";
-            } else if (!gate.charm().isEmpty() && !gate.charm().startsWith("flag:") && !Timecharms.secured(player, gate.charm())) {
-                problem = name + " needs the " + Timecharms.name(gate.charm()) + " secured with Elise.";
+            } else if (missingCharm(player, gate.charm()) != null) {
+                problem = name + " needs the " + Timecharms.name(missingCharm(player, gate.charm())) + " secured with Elise.";
             } else if (gate.seconds() > 0 && Rift.timeLeft(player) < gate.seconds()) {
                 problem = "You need at least " + Rift.clock(gate.seconds()) + " of Rift Time left to enter " + name + ".";
             }

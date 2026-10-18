@@ -1,0 +1,14 @@
+{
+  "name": "Mirrorverse",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -604,
+    92,
+    -129
+  ],
+  "to": [
+    -411,
+    142,
+    -111
+  ]
+}

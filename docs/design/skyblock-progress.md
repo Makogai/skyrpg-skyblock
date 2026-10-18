@@ -648,8 +648,12 @@ phase so the next session can pick up where this one stopped.
 - [x] **The Rift, part 4** (`RiftQuests`, `Bacte`, `VampireSlayer`): Living Metal mining, Barry's protesters and pen
       (the Citizen Timecharm), Bacte in the Colosseum (fragments for the Globulate), the Vampire Slayer (tiers I-V, Maddox,
       Hearts, Mania, Twinclaws, the Steak Stake, levels and drops; Bloodbadges for the Vampiric).
-- [ ] The Rift, part 5: the Mirrorverse, the Dreadfarm's crops and Chicken N Egg, Shen and the Celestial charm, the area
-      quests, Reed's boat.
+- [x] **The Rift, part 5** (`Dreadfarm`, `Mirrorverse`, `WestVillage`): the Dreadfarm's crops (Wand of Farming,
+      Agaricus Cap, Caducous Stem, Wilted Berberis), Shania and the Proto-Chicken, the Berberis Blowgun and Not Chickens,
+      the Rift collections, the eight-room Mirrorverse (Dr. Emmett, ttemme .rD, the mirrored Timecharm, its talismans), the
+      Plaza's two-charm gate, Gunther's race, the hot dog contest, puzzle-locked Enigma Souls (balloons, buttons).
+- [ ] The Rift, part 6: Shen and the Celestial Timecharm, the Sun Gecko, Ubik's games, Reed's boat, Shen's auctions,
+      Cowboy Nick, Detective Amog and the other area quests, the Rift Gallery.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

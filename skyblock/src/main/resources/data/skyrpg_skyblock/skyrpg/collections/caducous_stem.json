@@ -1,0 +1,41 @@
+{
+ "category": "rift",
+ "name": "Caducous Stem",
+ "icon": "minecraft:rose_bush",
+ "skyblock": [
+  "CADUCOUS_STEM"
+ ],
+ "items": [],
+ "thresholds": [
+  20,
+  60,
+  150,
+  500
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Caducous Stem Bunch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Caducous Legume Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Caducous Extract Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Caducous Feeder Recipe"
+   ]
+  }
+ ]
+}

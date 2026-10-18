@@ -1,0 +1,41 @@
+{
+ "category": "rift",
+ "name": "Agaricus Cap",
+ "icon": "minecraft:player_head",
+ "skyblock": [
+  "AGARICUS_CAP"
+ ],
+ "items": [],
+ "thresholds": [
+  20,
+  60,
+  100,
+  200
+ ],
+ "tiers": [
+  {
+   "xp": 4,
+   "unlocks": [
+    "Agaricus Cap Bunch Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Agaricus Soup Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Agaricus Cap Cap Recipe"
+   ]
+  },
+  {
+   "xp": 4,
+   "unlocks": [
+    "Agaricus Chumcap Recipe"
+   ]
+  }
+ ]
+}

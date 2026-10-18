@@ -18,6 +18,7 @@ wiki puts them:
     photon_pathway  x   70..199,  z -120..-31   east of the Plaza (its east side is a cliff: bridges cross)
     chateau         x  200..299,  z -240..-31   Stillgore Chateau, east of the Pathway and the Colosseum
     mountaintop     x  -10..199,  z  -30..59    the tall peak south of the Plaza and the Pathway (to y 170)
+    mirrorverse     x -604..-410, z -130..-110  (part 5) Dr. Emmett's eight mirror rooms, a pocket in the void at y 100
 
 Ground rules:
 - Ground level: the surface is at y 68 near the boundaries (players walk at y 69). Inside your box terrain may rise and
@@ -58,6 +59,8 @@ BOXES = {
     "photon_pathway": ((70, Y0, -120), (130, Y1 - Y0, 90)),
     "chateau": ((200, Y0, -240), (100, Y1 - Y0, 210)),
     "mountaintop": ((-10, Y0, -30), (210, Y1 - Y0, 90)),
+    # part 5: Dr. Emmett's pocket, far west of everything (the mod teleports you in from West Village's courtyard)
+    "mirrorverse": ((-604, 90, -130), (195, 53, 21)),
 }
 
 # Where neighbouring areas meet: (boundary, the crossing path's centre). The Wyld Woods and the Black Lagoon share

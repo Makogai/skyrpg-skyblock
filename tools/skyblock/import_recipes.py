@@ -24,6 +24,8 @@ ITEMS = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items"
 OUT = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/skyblock_recipes"
 NEU = "NotEnoughUpdates-REPO-master/items/"
 CELLS = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"]
+# NEU's slips: an ingredient to swap in one item's recipe (output -> {wrong: right}).
+FIXES = {"MIRRORED_LEASH": {"SLIME_BALL": "MIRRORED_SLIME_BALL"}}
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10, "XI": 11, "XII": 12,
          "XIII": 13, "XIV": 14, "XV": 15, "XVI": 16, "XVII": 17, "XVIII": 18, "XIX": 19, "XX": 20}
 
@@ -135,6 +137,8 @@ def main():
             or unlocked_by.get(output)
         for index, (grid, count) in enumerate(grids):
             cells = [cell_of(grid.get(cell, "") or "", known) for cell in CELLS]
+            for wrong, right in FIXES.get(output, {}).items():
+                cells = [right + c[len(wrong):] if c and c.split(":")[0] == wrong else c for c in cells]
             if any(cell is None for cell in cells):
                 skipped += 1
                 continue

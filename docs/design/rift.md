@@ -107,8 +107,49 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
   SkyBlock XP), Hypixel's Coven Seals and rare drops, and Motes (decided: the fee plus a quarter). Its level unlocks the
   recipes that need it (the Bloodbadge at 3, for the Vampiric Timecharm) through `SlayerLevels.installKey("vampire")`.
 
+## Part 5 (`Dreadfarm.java`, `Mirrorverse.java`, `WestVillage.java`; `rift_mirrorverse.py`)
+
+- **The Dreadfarm's crops** (Hypixel's): Shania hands out the **Wand of Farming** (free) and, for 2 bunches each of
+  Caducous Stem, Wilted Berberis and Agaricus Cap (20 a bunch), a **Proto-Chicken** (reclaimable if lost); her task ends
+  when you wear Chicken Leggs. With the wand held: **Agaricus Cap** (look at a brown mushroom 3 s until it turns red,
+  then click it; it turns back after 30 s), **Caducous Stem** (click a rose bush's top, then its bottom within 5 s; the
+  bush rests 10 s for you), **Wilted Berberis** (8 of the farm's dead bushes sparkle purple; take one and the sparkle
+  moves to another nearby). Decided: 1 crop a harvest (Hypixel's yield wasn't published).
+- **The Berberis Blowgun**'s Swhooomp (5 mana) shoots an arrow that hurts only chickens and Puffs. A punched Not
+  Chicken flies up and floats down (Slow Falling); shot mid-air it dies for a **Metaphoric Egg** and 50 Motes. The
+  arrow also pops balloons (wool clusters near a balloon soul; popped on your screen only) and presses buttons.
+- **The Rift's collections** (Wilted Berberis, Caducous Stem, Agaricus Cap, Living Metal Heart, Hemovibe, Half-Eaten
+  Carrot, Timite) are imported now; they count only the SkyBlock items, and the Dreadfarm's harvests count. The Blowgun
+  recipe needs Wilted Berberis II, as on Hypixel. NEU's Mirrored Leash recipe asks for a plain Slime Ball; decided: the
+  Mirrored Slime Ball (`FIXES` in import_recipes.py), since nothing else can be had in the Rift.
+- **Enigma Souls behind puzzles**: the Hot Dog Contest's soul comes from winning it; Buttons needs Shania's harvest and
+  every button on the Dreadfarm's wall pressed; the four balloon souls need every balloon there popped (Farm and Plaza
+  also need Shania's harvest, Hypixel's "requires Harvest for Shania").
+- **The Mirrorverse** (Supreme Timecharm, 3:00 left; time stands still and nothing hurts inside): eight rooms in a
+  pocket far west of the Rift, each split by a glass mirror (your half north, the reflection south). Rooms: levers
+  (match the mirror's), the lava path (your floor is blank, the mirror shows the iron path; a wrong step sends you
+  back), crafting (baby zombies, cave spiders and slimes are invisible on your side and visible in the mirror; their
+  mirrored drops craft the remmaH yniT, which opens the door; the table is invisible on your side too), platforms (the
+  mirror shows only the safe ones; the others drop you into the lava and come back after 3 s), switching (click the
+  glass to step through it; walls and lava block one side; switching mid-jump over the last pit reaches the **Big
+  Brain Talisman**), the dance (12 calls of Move/Sneak/Stand/Jump/Don't jump/Punch, one every 2.8 s; 7 open the door,
+  12 earn the **Tiny Dancer**), the invisible climb (barriers on your side, planks in the mirror; three checkpoints with
+  levers at the bottom; the **Emmett Pointer**'s lazer marks the invisible steps; climbing without the levers earns the
+  **Miniaturized Tubulator**), and the finale: Dr. Emmett pays **60,000 Motes** once, and ttemme .rD sells the
+  **mrahcemiT esrevrorriM** (10,000 Motes + 10 Shadow Crux), etalptsehC norI (Wyld Chestplate + 12 Shadow Crux) and the
+  Reflection bundle (5,000 Motes + 16 Shadow Crux). Decided: the dance's exact calls and timing, the hard-mode lava
+  room (Test Bucket Please Ignore) is left out, and the reflection prices for the chestplate and bundle (Hypixel's weren't
+  found). A Dr. Emmett in every room fast-travels to rooms you've reached.
+- **The Plaza's gate** is Hypixel's now: the mrahcemiT esrevrorriM and the Chicken N Egg Timecharm (and 8:00 left).
+- **Gunther's race**: ten checkpoints round West Village and back to the start line; under a minute earns the Dark
+  Pebble, under 35 s the Gunthesizer Lichen (Gunther's Sneakers: Wyld Boots, the Lichen and 8 Shadow Crux).
+- **The hot dog contest** (the Chef): for 60 s the stall flings hot dogs over its counter (one every half second,
+  only for you); carry them to Joey McPizza; 50 earns the Enigma Soul.
+- Fixed: the Rift's flags and secured Timecharms were dropped when a player logged in after a restart (their
+  attachment types were made too late); `RiftFlags.init()` and `Timecharms.init()` now load them at startup.
+
 ## Still to build
 
-Reed's boat, the Larva Hook, the Rift Transfer, Gunther's race, the hot dog
-contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse (and its Timecharm) and the Dreadfarm's crops
-(Chicken N Egg), Shen's Celestial Timecharm, Shen's auctions, the Sun Gecko, the Rift Gallery itself.
+Reed's boat, the Larva Hook, the Rift Transfer, the other area quests (Cowboy Nick, Detective Amog, Kloon, Okron,
+Kat's Infested House), growing the Great Beanstalk (the stalk is built full-grown), Shen's Celestial Timecharm, Shen's
+auctions, the Sun Gecko, Ubik's games, the Wizardman Trials, the Rift Gallery itself.

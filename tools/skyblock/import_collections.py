@@ -11,7 +11,7 @@ the progress mod's collection format plus the SkyBlock items it counts:
      "thresholds": [50, 100, ...],
      "tiers": [{"xp": 4, "unlocks": ["Cobblestone Minion Recipes"]}, ...]}
 
-The Rift's collections are left out until the Rift exists.
+The Rift's collections count only their SkyBlock items (no plain vanilla stacks).
 """
 import json
 import re
@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / "tools/skyblock/cache"
 ITEMS = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/items"
 OUT = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/collections"
-SKIP = {"RIFT"}
+SKIP = set()
 # Collections that count more than one item.
 GROUPS = {
     "MUSHROOM_COLLECTION": ["RED_MUSHROOM", "BROWN_MUSHROOM"],
@@ -67,7 +67,7 @@ def main():
                 print("no item for", cid)
                 continue
             own = item(cid) or item(counted[0])
-            vanilla = [item(i)["base"] for i in counted if plain(item(i))]
+            vanilla = [] if category == "RIFT" else [item(i)["base"] for i in counted if plain(item(i))]
             tiers = []
             for tier in info["tiers"]:
                 xp = 0

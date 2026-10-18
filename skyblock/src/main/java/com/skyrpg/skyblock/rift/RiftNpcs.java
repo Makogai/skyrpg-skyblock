@@ -269,6 +269,38 @@ final class RiftNpcs {
             VampireSlayer.maddox(player, npcNear(player, "Maddox"));
             return;
         }
+        if (name.equals("Dr. Emmett")) {
+            Mirrorverse.emmettOutside(player, npcNear(player, "Dr. Emmett"));
+            return;
+        }
+        if (name.equals("Dr. Emmett (Mirrorverse)")) {
+            Mirrorverse.emmettFinale(player, npcNear(player, "Dr. Emmett"));
+            return;
+        }
+        if (name.startsWith("Dr. Emmett (Mirrorverse ")) {
+            Mirrorverse.emmettInside(player, Integer.parseInt(name.replaceAll("\\D", "")), npcNear(player, "Dr. Emmett"));
+            return;
+        }
+        if (name.equals("ttemme .rD")) {
+            Mirrorverse.ttemme(player, npcNear(player, "ttemme"));
+            return;
+        }
+        if (name.startsWith("Shania")) {
+            Dreadfarm.shania(player, npcNear(player, "Shania"));
+            return;
+        }
+        if (name.equals("Gunther")) {
+            WestVillage.gunther(player, npcNear(player, "Gunther"));
+            return;
+        }
+        if (name.equals("Chef") || name.equals("Chef (Rift)")) {
+            WestVillage.chef(player, npcNear(player, "Chef"));
+            return;
+        }
+        if (name.startsWith("Joey McPizza")) {
+            WestVillage.joey(player);
+            return;
+        }
         if (name.startsWith("Protester")) {
             RiftQuests.protester(player, name);
             return;
