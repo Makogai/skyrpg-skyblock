@@ -70,6 +70,28 @@ public final class SkyScreens {
         g.blitSprite(RenderPipelines.GUI_TEXTURED, theme.sprite("divider_right"), x + w - 11, y - 2, 11, 9);
     }
 
+    /** A slot well in the theme (its dark inset card); the item sits at (x + 1, y + 1). */
+    public static void well(GuiGraphicsExtractor g, ScreenTheme theme, int x, int y) {
+        if (!theme.sprited()) {
+            well(g, x, y);
+            return;
+        }
+        g.blitSprite(RenderPipelines.GUI_TEXTURED, theme.sprite("card_locked"), x, y, 18, 18);
+    }
+
+    /** Themed wells under every slot of a menu from {@code first} on. */
+    public static void inventoryWells(GuiGraphicsExtractor g, ScreenTheme theme, AbstractContainerMenu menu, int first, int left, int top) {
+        for (int i = first; i < menu.slots.size(); i++) {
+            Slot slot = menu.slots.get(i);
+            well(g, theme, left + slot.x - 1, top + slot.y - 1);
+        }
+    }
+
+    /** A small label in the theme's muted colour. */
+    public static void label(GuiGraphicsExtractor g, Font font, ScreenTheme theme, String text, int x, int y) {
+        Draw.text(g, font, text, x, y, theme.muted);
+    }
+
     /** A card: normal, hovered (the theme's highlight edge) or locked (darker). */
     public static void card(GuiGraphicsExtractor g, ScreenTheme theme, int x, int y, int w, int h, boolean hover, boolean locked) {
         if (!theme.sprited()) {

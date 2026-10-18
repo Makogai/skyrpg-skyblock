@@ -351,12 +351,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--preview", action="store_true")
     args = parser.parse_args()
-    for name, build in THEMES.items():
+    import more_themes
+    themes = dict(THEMES)
+    themes.update(more_themes.THEMES)
+    for name, build in themes.items():
         build(f"theme/{name}")
     currencies()
-    print("wrote", ", ".join(THEMES), "and currencies")
+    print("wrote", ", ".join(themes), "and currencies")
     if args.preview:
-        for name in THEMES:
+        for name in themes:
             preview(name)
 
 
