@@ -19,6 +19,7 @@ wiki puts them:
     chateau         x  200..299,  z -240..-31   Stillgore Chateau, east of the Pathway and the Colosseum
     mountaintop     x  -10..199,  z  -30..59    the tall peak south of the Plaza and the Pathway (to y 170)
     mirrorverse     x -604..-410, z -130..-110  (part 5) Dr. Emmett's eight mirror rooms, a pocket in the void at y 100
+    gallery         x -382..-351, z -128..-105  (part 8) the Rift Gallery, a pocket hall at y 100
 
 Ground rules:
 - Ground level: the surface is at y 68 near the boundaries (players walk at y 69). Inside your box terrain may rise and
@@ -61,6 +62,8 @@ BOXES = {
     "mountaintop": ((-10, Y0, -30), (210, Y1 - Y0, 90)),
     # part 5: Dr. Emmett's pocket, far west of everything (the mod teleports you in from West Village's courtyard)
     "mirrorverse": ((-604, 90, -130), (195, 53, 21)),
+    # part 8: the Rift Gallery, a pocket hall reached by the pad in the Rift Wizard Tower
+    "gallery": ((-382, 95, -128), (32, 17, 24)),
 }
 
 # Where neighbouring areas meet: (boundary, the crossing path's centre). The Wyld Woods and the Black Lagoon share

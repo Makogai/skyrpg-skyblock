@@ -350,7 +350,7 @@ final class RiftNpcs {
             RiftQuests.barry(player, npcNear(player, "Barry"));
             return;
         }
-        if (name.equals("Elise")) {
+        if (name.startsWith("Elise")) {
             Timecharms.elise(player, npcNear(player, "Elise"));
             return;
         }

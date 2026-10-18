@@ -479,6 +479,8 @@ rift("Dr. Emmett (Mirrorverse)", "dr_emmett_mirrorverse", "The Mirrorverse", "#5
      "minecraft:block.portal.ambient", ["You made it through every mirror!", "My reflection runs the shop. Don't ask."])
 rift("ttemme .rD", "ttemme_rd", "pohS", "#55FFFF", "Shop", "kai", False, "minecraft:block.portal.ambient",
      ["!tnecsiro... ,olleH", ".sredro ni sesuoh srorrim ruoY"])
+rift("Elise (Gallery)", "elise_gallery", "Rift Gallery", "#FF55FF", "Timecharms", "alex", True, "minecraft:block.amethyst_block.chime",
+     ["Welcome to the Rift Gallery.", "Every Timecharm you secure takes its place here."])
 rift("Obo", "obo", "Citadel guard", "#AAAAAA", "Talk", "efe", False, "minecraft:entity.villager.no",
      ["Where do you think you're going?", "Only those marked by Shen may enter."])
 rift("Madame Eleanor Q. Goldsworth X", "eleanor_x", "Shen's Ringalia", "#FFAA00", "Shop", "makena", True,

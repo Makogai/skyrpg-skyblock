@@ -1296,6 +1296,7 @@ area.npc("spawn:odonata_1", -102, 70, 168, 0.0)
 area.npc("spawn:odonata_2", -68, 70, 138, 0.0)
 area.npc("Elise", -50, 69, 114, 135.0, "the Rift Wizard Tower's ground floor (the Rift Gallery's manager)")
 area.npc("The Intruder", -50, 69, 106, 45.0, "a Porhtal eye on the Rift Wizard Tower's ground floor")
+area.npc("spawn:gallery_pad", -51, 69, 112, 0.0, "the Rift Gallery's teleport pad, by Elise (the mod draws it)")
 # Montezuma's second piece (Hypixel's is in the Rift Gallery, which isn't built): on the tower's balcony.
 area.npc("spawn:montezuma_2", -35, 89, 110, 0.0)
 area.save()

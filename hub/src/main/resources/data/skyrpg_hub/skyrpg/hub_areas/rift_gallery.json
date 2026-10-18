@@ -1,0 +1,11 @@
+{
+  "structure": "skyrpg_hub:areas/rift_gallery",
+  "origin": [
+    -382,
+    95,
+    -128
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift"
+}

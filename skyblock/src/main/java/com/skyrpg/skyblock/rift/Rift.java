@@ -122,6 +122,7 @@ public final class Rift {
         Mountaintop.init();
         SunGecko.init();
         CowboyNick.init();
+        Gallery.init();
         WestVillage.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);

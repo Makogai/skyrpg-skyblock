@@ -1,0 +1,14 @@
+{
+  "name": "Rift Gallery",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -380,
+    97,
+    -126
+  ],
+  "to": [
+    -352,
+    111,
+    -106
+  ]
+}

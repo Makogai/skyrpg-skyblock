@@ -658,8 +658,8 @@ phase so the next session can pick up where this one stopped.
 - [x] **The Rift, part 7** (`SunGecko`, `CowboyNick`, `ShenAuction`): the Sun Gecko (attacks, combo, seven modifiers,
       Sun Gecko Essence and Oruo's shop, the Blessing of Time), Cowboy Nick (the Horsezooka, the Half-Eaten Cave's hay,
       the rabbit and carrots), the Rift Necklace's stats, Shen's Auctions.
-- [ ] The Rift, part 8: the Living Metal snakes, the Wizardman Trials, the Rift Gallery, the Eleanors' outfit puzzles,
-      Detective Amog, Kloon, Okron, Seraphine and the remaining souls.
+- [ ] The Rift, part 8: the Rift Gallery (done: `Gallery`, `rift_gallery.py`); still the Living Metal snakes, the
+      Wizardman Trials, the Eleanors' outfit puzzles, Detective Amog, Kloon, Okron, Seraphine and the remaining souls.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

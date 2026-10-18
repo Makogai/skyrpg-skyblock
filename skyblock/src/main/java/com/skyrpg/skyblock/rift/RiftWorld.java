@@ -70,7 +70,7 @@ final class RiftWorld {
     /** How fast Rift Time runs in a zone (Hypixel's: half in the Colosseum, double in the Time Chamber, none in the Mirrorverse). */
     static double drain(String zone) {
         return switch (zone) {
-            case "Mirrorverse" -> 0;
+            case "Mirrorverse", "Rift Gallery" -> 0;
             case "Colosseum" -> 0.5;
             case "Time Chamber" -> 2;
             default -> 1;

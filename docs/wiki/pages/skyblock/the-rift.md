@@ -85,6 +85,8 @@ It drops **8 Leech Supreme Fragments and 3,000 Motes** to everyone who fought it
 
 ## Timecharms
 
+Once Elise has your Supreme Timecharm, the glowing pad beside her takes you to the **Rift Gallery**: eight glass cases, one per Timecharm, each showing the ones you've secured. Rift Time stands still there.
+
 **Timecharms** open the rest of the Rift. Craft them or earn them, then bring them to **Elise** in the Rift's Wizard Tower to secure them: +100 SkyBlock XP each, and your first earns the **Rift Necklace**. In the Rift its stats grow with every Timecharm you've secured: from +60 Rift Time with one to +380 Rift Time, +6 Speed, +10 Intelligence, +25 Mana Regen, +1 Rift Damage and +1 Heart with all eight.
 
 The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Deadgehog Spines and 4 Leech Supreme Fragments. To bottle an **Odonata** (the dragonflies over the woods' ponds), hold an Empty Odonata Bottle (the Bugshopper sells them) and look at one for 3 seconds.
@@ -269,4 +271,4 @@ Walk into the Colosseum's arena and Bacte, a giant slime with 1,000 health, ooze
 Kill the Château's vampires to fill the quest, then the Bloodfiend rises beside you. It drains your Hearts every second. From tier II it also slashes with **Twinclaws** (don't stand in front of it) and goes into **Mania** (it can't be hurt for 8 seconds). Below a fifth of its health only a **Steak Stake** (Maddox sells them) finishes it. Rewards are Coven Seals, rare drops (Bubba Blister, Guardian Lucky Block, McGrubber's Burger, Unfanged Vampire Part) and Motes. Slayer levels (20, 75, 240, 840 and 2,400 XP) give Rift Time and SkyBlock XP.
 
 > [!NOTE]
-> Not here yet: the Living Metal snakes, the Wizardman Trials, the Rift Gallery's rooms and the other area quests.
+> Not here yet: the Living Metal snakes, the Wizardman Trials and the other area quests.

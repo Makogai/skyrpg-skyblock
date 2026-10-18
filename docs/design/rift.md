@@ -209,8 +209,16 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
   to its top bidders (Hypixel's counts); bids are paid when placed; at the year's end the winners collect the lot and
   the rest their Motes from Damia. Decided: a 1,000 Mote opening bid, raises of 1,000 or 10,000.
 
+## Part 8 (`Gallery`; `rift_gallery.py`)
+
+- **The Rift Gallery**: a pocket hall (x -382..-351, z -128..-105, y 100) reached by a pad by Elise in the Rift Wizard
+  Tower once the Supreme Timecharm is secured (a pad at its east end takes you back). Eight pedestals with glass cases,
+  one per Timecharm under its sign; each case shows the charm's block (the item's base) for the charms *you* secured,
+  sent to your screen only. A second Elise there opens the same securing menu. Rift Time doesn't drain inside.
+  Decided: Elise and Montezuma's second piece stay in the Wizard Tower as well.
+
 ## Still to build
 
-The Living Metal snakes (Living Metal Hearts), the Wizardman Trials, the Rift Gallery's building, the Eleanors' outfit
+The Living Metal snakes (Living Metal Hearts), the Wizardman Trials, the Eleanors' outfit
 puzzles, Detective Amog, Kloon, Okron, Seraphine, Riftwart Roots, the Larva Hook, the Rift Transfer, growing the Great
 Beanstalk (the stalk is built full-grown).
