@@ -16,5 +16,11 @@
   "greetings": [
     "A duel a day keeps the rust away.",
     "Come back when you're stronger."
-  ]
+  ],
+  "action": {
+    "type": "crimson_duel",
+    "params": {
+      "who": "rollim"
+    }
+  }
 }

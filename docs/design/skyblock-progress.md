@@ -623,7 +623,11 @@ phase so the next session can pick up where this one stopped.
 - [x] **The Dojo** (`crimson/Dojo`, on `KuudraMenu`'s list screen): Master Tao's seven tests adapted to the walled arena,
       grades, belts with Combat XP. **Vulcan**: Crimson stars on Kuudra armour and belts (`DungeonItems.crimson`, Malik's
       screen as "Vulcan"), +2% stats a star.
-- [ ] Vulcan's essence perks; Rollim's and Kaus's duels; the Vanquisher; a faction line in the sidebar; Kuudra perks.
+- [x] **Crimson extras** (`Vanquisher`, `CrimsonPerks`, `Duels`): the Vanquisher (1 in 640 kills on the Isle, pity at
+      640/960/1,280, a 5M-health Wither, 3 Corrupted Nether Stars), Vulcan's Crimson Essence shop (Hypixel's eight perks
+      and costs; Crimson Training, the Fortunas, Wither Piper and the Kuudra perks wired to our Kuudra), Rollim's and
+      Kaus's seven daily duels (25 reputation a win, a Bag of Gold on day 7). The faction sidebar line was already there.
+- [ ] Kuudra's in-run token shop (Elle's 19 perks over four routes) with a fuller Kuudra fight.
 - [x] **The Garden, part 1** (`garden/*`, `docs/design/garden.md`): the per-profile Garden dimension and 5 x 5 plots,
       the Barn plot (helper-built template), plot unlocks with Compost/Bundles and their Fortune, Garden levels (NEU),
       crop milestones (NEU thresholds), visitors with offers and Copper, the Composter and its upgrades, SkyMart; the

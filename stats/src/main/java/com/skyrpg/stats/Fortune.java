@@ -63,6 +63,7 @@ final class Fortune {
         if (crop != null) {
             fortune += Stats.get(serverPlayer, crop);
         }
+        fortune += com.skyrpg.core.stats.FortuneBonus.of(serverPlayer, state);
         if (fortune <= 0) {
             return;
         }

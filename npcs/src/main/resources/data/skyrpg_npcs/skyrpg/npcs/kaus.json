@@ -16,5 +16,11 @@
   "greetings": [
     "Fight me! Tomorrow, maybe.",
     "The ring is always open."
-  ]
+  ],
+  "action": {
+    "type": "crimson_duel",
+    "params": {
+      "who": "kaus"
+    }
+  }
 }

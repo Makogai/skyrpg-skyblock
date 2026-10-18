@@ -231,3 +231,27 @@ The Blaze Slayer: its quest fills from the Isle's blazes and magma cubes. See [S
 
 > [!NOTE]
 > Still to come here: Vulcan's Crimson Essence perks, attributes on Kuudra armour, Rollim's and Kaus's duels, the Vanquisher and the Plhlegblast.
+
+## The Vanquisher
+
+Any kill on the Crimson Isle has a small chance (1 in 640, rising the longer you go without one) of calling up a **Vanquisher** beside you: a Wither with 5,000,000 health that hits for 3,000. Beat it for **3 Corrupted Nether Stars**. Vulcan's Wither Piper perk makes them likelier.
+
+## Vulcan's Crimson Essence perks
+
+**Vulcan** stars up your Kuudra gear and sells perks for Crimson Essence (Kuudra's chests and the Isle's minibosses drop it):
+
+| Perk | Levels | What it does |
+| --- | --- | --- |
+| Strongarm | 2 | Carry Kuudra's supplies faster |
+| Fresh Tools | 5 | Build Kuudra's ballista faster |
+| Headstart | 5 | Bonus tokens at the start of Kuudra (with its token shop) |
+| Kuudra Master | 1 | Each ballista shot hurts Kuudra a little more |
+| Fungus Fortuna | 10 | +2 Mining Fortune on Mycelium a level |
+| Harena Fortuna | 10 | +2 Mining Fortune on Red Sand a level |
+| Crimson Training | 3 | Combat Wisdom on the Crimson Isle |
+| Wither Piper | 5 | Vanquishers 2% likelier a level |
+
+## Rollim's and Kaus's duels
+
+**Rollim** (Scarleton) trains Mages and **Kaus** (Dragontail) Barbarians: one duel a day for seven days, each one tougher (50,000 health on day one, 25,000,000 on day seven). Each win is 25 reputation; the seventh, a **Bag of Gold**. Watch out: once in each duel they eat a golden apple.
+

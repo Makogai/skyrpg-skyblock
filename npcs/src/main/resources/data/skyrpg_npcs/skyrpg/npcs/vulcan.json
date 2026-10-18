@@ -1,8 +1,8 @@
 {
   "name": "Vulcan",
-  "role": "Crimson Stars",
+  "role": "Crimson Essence",
   "color": "#FF5555",
-  "hint": "Upgrade",
+  "hint": "Shop",
   "skin": "minecraft:entity/player/wide/efe",
   "model": "wide",
   "dimension": "skyrpg_skyblock:crimson_isle",

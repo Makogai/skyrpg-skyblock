@@ -77,6 +77,7 @@ final class KuudraRun {
     final String tag;
     final RandomSource random;
     Phase phase = Phase.SUPPLIES;
+    private int shots;
     long started;
     long ticks;
     /** Supply crates and fuel cells lying on islets: the click box -> its parts and islet. */
@@ -215,8 +216,11 @@ final class KuudraRun {
             }
             case BUILD -> {
                 if (now % 20 == 0) {
-                    long builders = alive().stream().filter(p -> p.position().distanceTo(at(CENTER)) <= 12).count();
-                    built = Math.min(100, built + (builders == 0 ? 0 : 1.5 + builders));
+                    List<ServerPlayer> near = alive().stream().filter(p -> p.position().distanceTo(at(CENTER)) <= 12).toList();
+                    long builders = near.size();
+                    // Vulcan's Fresh Tools: the best builder's level, +3% a level
+                    int tools = near.stream().mapToInt(p -> CrimsonPerks.level(p, "fresh_tools")).max().orElse(0);
+                    built = Math.min(100, built + (builders == 0 ? 0 : (1.5 + builders) * (1 + 0.03 * tools)));
                     level.sendParticles(ParticleTypes.WAX_ON, at(CENTER).x, at(CENTER).y + 2, at(CENTER).z, 10, 2, 1, 2, 0);
                     if (builders > 0) {
                         sound(alive(), SoundEvents.ANVIL_USE, 0.25f, 1.5f);
@@ -240,7 +244,11 @@ final class KuudraRun {
             if (kind == null) {
                 continue;
             }
-            player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 30, 1, false, false));
+            // Vulcan's Strongarm: lighter loads (Slowness II, I at level 1, none at 2)
+            int slow = 1 - CrimsonPerks.level(player, "strongarm");
+            if (slow >= 0) {
+                player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 30, slow, false, false));
+            }
             level.sendParticles(kind.equals("fuel") ? ParticleTypes.GLOW : ParticleTypes.WAX_OFF, player.getX(), player.getY() + 2.3, player.getZ(),
                     3, 0.2, 0.2, 0.2, 0);
             player.sendOverlayMessage(Component.literal(kind.equals("fuel") ? "Carrying a Fuel Cell: bring it to the ballista!"
@@ -375,7 +383,9 @@ final class KuudraRun {
         level.playSound(null, BlockPos.containing(from), SoundEvents.CROSSBOW_SHOOT, SoundSource.PLAYERS, 3f, 0.5f);
         level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, to.x, to.y, to.z, 1, 0, 0, 0, 0);
         // The shot: a tenth of its health, then 10 seconds stunned beside the platform.
-        float shot = kuudra.getMaxHealth() * 0.1f;
+        // Vulcan's Kuudra Master: +0.1% a shot fired this run, up to 10%
+        shots++;
+        float shot = kuudra.getMaxHealth() * 0.1f * (CrimsonPerks.level(player, "kuudra_master") > 0 ? 1 + Math.min(0.1f, 0.001f * shots) : 1);
         kuudra.setHealth(Math.max(1, kuudra.getHealth() - shot));
         Vec3 stun = at(KUUDRA_STUNNED);
         kuudra.teleportTo(stun.x, stun.y, stun.z);

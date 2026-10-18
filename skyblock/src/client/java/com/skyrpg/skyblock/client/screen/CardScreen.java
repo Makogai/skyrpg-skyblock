@@ -255,8 +255,9 @@ public final class CardScreen extends AbstractContainerScreen<CardMenu> {
                     lines.add(Component.literal("Cost").withColor(theme.muted));
                 }
                 for (Chip chip : card.chips()) {
-                    String what = chip.currency().isEmpty() ? chip.item().getHoverName().getString() : SkyScreens.currencyName(chip.currency());
-                    lines.add(Component.literal(chip.text() + " " + what).withColor(chip.enough() ? theme.text : 0xFFFF6464));
+                    String what = chip.currency().isEmpty() ? chip.item().isEmpty() ? "" : chip.item().getHoverName().getString()
+                            : SkyScreens.currencyName(chip.currency());
+                    lines.add(Component.literal(what.isEmpty() ? chip.text() : chip.text() + " " + what).withColor(chip.enough() ? theme.text : 0xFFFF6464));
                 }
             }
             if (card.enabled() && card.button().isEmpty()) {

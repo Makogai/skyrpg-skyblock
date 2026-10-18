@@ -57,6 +57,10 @@ public final class CrimsonIsle {
         Minibosses.init();
         Kuudra.init();
         Dojo.init();
+        Vanquisher.init();
+        CrimsonPerks.init();
+        Duels.init();
+        Actions.register("crimson_duel", (player, params) -> Duels.open(player, params.get("who").getAsString(), -1));
         JsonDataLoader.register(SkyRpgSkyblock.id("crimson_spots"), "skyrpg/spawn_spots", CrimsonIsle::load);
         Actions.register("crimson_elle", (player, params) -> elle(player));
         Actions.register("crimson_leader", (player, params) -> leader(player, params.get("faction").getAsString()));
@@ -64,7 +68,7 @@ public final class CrimsonIsle {
         Actions.register("open_auction", (player, params) -> command(player, "ah"));
         Actions.register("open_bazaar", (player, params) -> command(player, "bazaar"));
         // Vulcan adds Crimson stars to Kuudra armour; each star is +2% of the piece's stats (decided: Hypixel's figure wasn't found).
-        Actions.register("vulcan", (player, params) -> com.skyrpg.skyblock.dungeon.MalikMenu.open(player, "Vulcan"));
+        Actions.register("vulcan", (player, params) -> CrimsonPerks.vulcan(player));
         com.skyrpg.core.stats.Stats.registerSource(new com.skyrpg.core.stats.Stats.Source() {
             @Override
             public String name() {
