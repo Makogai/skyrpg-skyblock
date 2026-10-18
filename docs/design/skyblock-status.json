@@ -1,10 +1,10 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-18",
-  "latest": "The Dojo's seven tests and belts, and Vulcan's Crimson stars",
+  "latest": "The Garden: plots, Garden levels, crop milestones, visitors, the Composter and SkyMart",
   "phase": {
     "name": "Phase 4: Late game",
-    "done": 34
+    "done": 42
   },
   "categories": [
     {
@@ -231,7 +231,7 @@
           "name": "The Garden",
           "icon": "item/carrot",
           "weight": 6,
-          "done": 0
+          "done": 40
         },
         {
           "name": "The Rift",

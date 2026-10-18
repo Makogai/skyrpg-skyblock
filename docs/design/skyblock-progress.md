@@ -624,7 +624,12 @@ phase so the next session can pick up where this one stopped.
       grades, belts with Combat XP. **Vulcan**: Crimson stars on Kuudra armour and belts (`DungeonItems.crimson`, Malik's
       screen as "Vulcan"), +2% stats a star.
 - [ ] Vulcan's essence perks; Rollim's and Kaus's duels; the Vanquisher; a faction line in the sidebar; Kuudra perks.
-- [ ] The Garden, Galatea and Hunting, Backwater Bayou, The Rift.
+- [x] **The Garden, part 1** (`garden/*`, `docs/design/garden.md`): the per-profile Garden dimension and 5 x 5 plots,
+      the Barn plot (helper-built template), plot unlocks with Compost/Bundles and their Fortune, Garden levels (NEU),
+      crop milestones (NEU thresholds), visitors with offers and Copper, the Composter and its upgrades, SkyMart; the
+      Desk's tabbed screen (`GardenMenu` + `GardenScreen`); sidebar plot names; costs from sacks too.
+- [ ] The Garden, part 2: pests and vacuums, Jacob's Farming Contests and Anita, crop upgrades, chips, the Greenhouse.
+- [ ] Galatea and Hunting, Backwater Bayou, The Rift.
 
 ### Owner directions (2026-10-16)
 

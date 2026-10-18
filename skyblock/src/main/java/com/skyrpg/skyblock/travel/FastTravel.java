@@ -93,6 +93,8 @@ public final class FastTravel {
                 Islands::sendHome));
         BUILT_IN.put("hub", new Warp("hub", "Hub", "The village at the heart of SkyBlock", Identifier.parse("minecraft:bell"), 10, "",
                 Hub::sendToHub));
+        BUILT_IN.put("garden", new Warp("garden", "The Garden", "Your plots, crop milestones and visitors (SkyBlock Level 5)",
+                Identifier.parse("minecraft:wheat"), 11, "", com.skyrpg.skyblock.garden.Garden::send));
     }
 
     private FastTravel() {

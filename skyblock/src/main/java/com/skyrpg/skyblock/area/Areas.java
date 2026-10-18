@@ -74,6 +74,9 @@ public final class Areas {
         if (zone != null) {
             return zone.name();
         }
+        if (com.skyrpg.skyblock.garden.Garden.isGarden(level)) {
+            return com.skyrpg.skyblock.garden.Garden.areaName(player.blockPosition());
+        }
         if (level.dimension().equals(com.skyrpg.skyblock.crimson.Kuudra.LEVEL)) {
             return "Kuudra's Hollow";
         }

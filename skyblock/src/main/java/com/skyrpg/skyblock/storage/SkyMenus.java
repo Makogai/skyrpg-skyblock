@@ -62,6 +62,9 @@ public final class SkyMenus {
     public static final MenuType<com.skyrpg.skyblock.fishing.OdgerMenu> ODGER = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("odger"), new ExtendedMenuType<>(com.skyrpg.skyblock.fishing.OdgerMenu::new,
                     com.skyrpg.skyblock.fishing.OdgerMenu.View.CODEC));
+    public static final MenuType<com.skyrpg.skyblock.garden.GardenMenu> GARDEN = Registry.register(BuiltInRegistries.MENU,
+            SkyRpgSkyblock.id("garden"), new ExtendedMenuType<>(com.skyrpg.skyblock.garden.GardenMenu::new,
+                    com.skyrpg.skyblock.garden.GardenMenu.View.CODEC));
     public static final MenuType<com.skyrpg.skyblock.crimson.KuudraMenu> KUUDRA = Registry.register(BuiltInRegistries.MENU,
             SkyRpgSkyblock.id("kuudra"), new ExtendedMenuType<>(com.skyrpg.skyblock.crimson.KuudraMenu::new,
                     com.skyrpg.skyblock.crimson.KuudraMenu.View.CODEC));

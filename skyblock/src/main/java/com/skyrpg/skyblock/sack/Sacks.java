@@ -257,6 +257,34 @@ public final class Sacks {
         return given;
     }
 
+    /** How many of an item the player has in the inventory and the sacks together. */
+    public static long countAnywhere(ServerPlayer player, String id) {
+        return SkyStacks.count(player.getInventory(), id) + contents(player).getOrDefault(id, 0L);
+    }
+
+    /** Takes {@code amount} from the inventory first, then the sacks (NPC trades and costs take from both, as on Hypixel). */
+    public static boolean takeAnywhere(ServerPlayer player, String id, int amount) {
+        if (countAnywhere(player, id) < amount) {
+            return false;
+        }
+        int fromInventory = Math.min(amount, SkyStacks.count(player.getInventory(), id));
+        if (fromInventory > 0) {
+            SkyStacks.take(player.getInventory(), id, fromInventory);
+        }
+        int rest = amount - fromInventory;
+        if (rest > 0) {
+            Map<String, Long> now = new HashMap<>(contents(player));
+            long left = now.getOrDefault(id, 0L) - rest;
+            if (left <= 0) {
+                now.remove(id);
+            } else {
+                now.put(id, left);
+            }
+            player.setAttached(CONTENTS, Map.copyOf(now));
+        }
+        return true;
+    }
+
     /** Puts everything in the inventory that the sacks hold into them. */
     public static int insertInventory(ServerPlayer player) {
         int moved = 0;

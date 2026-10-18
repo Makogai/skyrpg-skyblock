@@ -13,6 +13,7 @@
     "ConnectionMixin",
     "HandshakeMixin",
     "InteractionAccess",
+    "MannequinRoleAccess",
     "MobSunburnMixin",
     "NoVanillaLootMixin",
     "PlayerDataStorageMixin",
