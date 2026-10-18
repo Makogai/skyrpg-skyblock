@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-base_camp_portal","title":"Portal to the Dwarven Base Camp","category":"reference","icon":"skyrpg_skyblock:base_camp_portal","summary":"Common portal.","blocks":[{"t":"hero","id":"skyrpg_skyblock:base_camp_portal","icon":"skyrpg_skyblock:base_camp_portal","name":"Portal to the Dwarven Base Camp","color":"#FFFFFF","rarity":"common","kind":"Portal"}]}

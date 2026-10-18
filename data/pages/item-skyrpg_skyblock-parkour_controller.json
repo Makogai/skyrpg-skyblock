@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-parkour_controller","title":"Parkour Start/End","category":"reference","icon":"skyrpg_skyblock:parkour_controller","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:parkour_controller","icon":"skyrpg_skyblock:parkour_controller","name":"Parkour Start/End","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

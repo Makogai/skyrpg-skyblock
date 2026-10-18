@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-revive_perk_item","title":"Revive Dead","category":"reference","icon":"skyrpg_skyblock:revive_perk_item","summary":"Special material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:revive_perk_item","icon":"skyrpg_skyblock:revive_perk_item","name":"Revive Dead","color":"#FF5555","rarity":"special","kind":"Material"}]}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-ice_cube","title":"Ice Cube","category":"reference","icon":"skyrpg_skyblock:ice_cube","summary":"Rare material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:ice_cube","icon":"skyrpg_skyblock:ice_cube","name":"Ice Cube","color":"#5555FF","rarity":"rare","kind":"Material"}]}

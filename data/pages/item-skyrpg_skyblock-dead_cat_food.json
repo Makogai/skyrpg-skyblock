@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-dead_cat_food","title":"Dead Cat Food","category":"reference","icon":"skyrpg_skyblock:dead_cat_food","summary":"Rare pet item.","blocks":[{"t":"hero","id":"skyrpg_skyblock:dead_cat_food","icon":"skyrpg_skyblock:dead_cat_food","name":"Dead Cat Food","color":"#5555FF","rarity":"rare","kind":"Pet Item"}]}

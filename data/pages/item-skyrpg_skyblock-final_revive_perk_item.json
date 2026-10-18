@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-final_revive_perk_item","title":"Revive Final Kill","category":"reference","icon":"skyrpg_skyblock:final_revive_perk_item","summary":"Special material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:final_revive_perk_item","icon":"skyrpg_skyblock:final_revive_perk_item","name":"Revive Final Kill","color":"#FF5555","rarity":"special","kind":"Material"}]}

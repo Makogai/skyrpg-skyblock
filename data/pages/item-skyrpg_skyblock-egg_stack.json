@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-egg_stack","title":"Egg Stack","category":"reference","icon":"skyrpg_skyblock:egg_stack","summary":"Rare material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:egg_stack","icon":"skyrpg_skyblock:egg_stack","name":"Egg Stack","color":"#5555FF","rarity":"rare","kind":"Material"}]}

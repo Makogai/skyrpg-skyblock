@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-editor_pencil","title":"Editor's Pencil","category":"reference","icon":"skyrpg_skyblock:editor_pencil","summary":"Special material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:editor_pencil","icon":"skyrpg_skyblock:editor_pencil","name":"Editor's Pencil","color":"#FF5555","rarity":"special","kind":"Material"}]}

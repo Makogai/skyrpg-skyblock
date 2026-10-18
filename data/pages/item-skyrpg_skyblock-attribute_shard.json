@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-attribute_shard","title":"Attribute Shard","category":"reference","icon":"skyrpg_skyblock:attribute_shard","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:attribute_shard","icon":"skyrpg_skyblock:attribute_shard","name":"Attribute Shard","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

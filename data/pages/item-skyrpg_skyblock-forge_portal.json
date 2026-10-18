@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-forge_portal","title":"Portal to The Forge","category":"reference","icon":"skyrpg_skyblock:forge_portal","summary":"Common portal.","blocks":[{"t":"hero","id":"skyrpg_skyblock:forge_portal","icon":"skyrpg_skyblock:forge_portal","name":"Portal to The Forge","color":"#FFFFFF","rarity":"common","kind":"Portal"}]}

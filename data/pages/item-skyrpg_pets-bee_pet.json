@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_pets-bee_pet","title":"Bumblebee","category":"reference","icon":"skyrpg_pets:bee_pet","summary":"Uncommon pet.","blocks":[{"t":"hero","id":"skyrpg_pets:bee_pet","icon":"skyrpg_pets:bee_pet","name":"Bumblebee","color":"#55FF55","rarity":"uncommon","kind":"Pet"}]}

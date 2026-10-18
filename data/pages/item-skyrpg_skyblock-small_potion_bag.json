@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-small_potion_bag","title":"Small Potion Bag","category":"reference","icon":"skyrpg_skyblock:small_potion_bag","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:small_potion_bag","icon":"skyrpg_skyblock:small_potion_bag","name":"Small Potion Bag","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

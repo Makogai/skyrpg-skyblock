@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-pet_item_exp_share","title":"Exp Share","category":"reference","icon":"skyrpg_skyblock:pet_item_exp_share","summary":"Epic pet item.","blocks":[{"t":"hero","id":"skyrpg_skyblock:pet_item_exp_share","icon":"skyrpg_skyblock:pet_item_exp_share","name":"Exp Share","color":"#AA00AA","rarity":"epic","kind":"Pet Item"}]}

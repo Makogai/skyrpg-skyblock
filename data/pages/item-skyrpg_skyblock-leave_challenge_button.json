@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-leave_challenge_button","title":"Leave Challenge","category":"reference","icon":"skyrpg_skyblock:leave_challenge_button","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:leave_challenge_button","icon":"skyrpg_skyblock:leave_challenge_button","name":"Leave Challenge","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-personal_bank_item","title":"Personal Bank Item","category":"reference","icon":"skyrpg_skyblock:personal_bank_item","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:personal_bank_item","icon":"skyrpg_skyblock:personal_bank_item","name":"Personal Bank Item","color":"#FFFFFF","rarity":"common","kind":"Material"}]}

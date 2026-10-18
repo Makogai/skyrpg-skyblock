@@ -1,0 +1,1 @@
+{"id":"item-skyrpg_skyblock-tiki_torch","title":"Tiki Torch","category":"reference","icon":"skyrpg_skyblock:tiki_torch","summary":"Common material.","blocks":[{"t":"hero","id":"skyrpg_skyblock:tiki_torch","icon":"skyrpg_skyblock:tiki_torch","name":"Tiki Torch","color":"#FFFFFF","rarity":"common","kind":"Material"}]}
