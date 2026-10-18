@@ -1,0 +1,18 @@
+{
+  "type": "skyrpg_hub:public_rift",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "skyrpg_skyblock:rift",
+      "features": false,
+      "lakes": false,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

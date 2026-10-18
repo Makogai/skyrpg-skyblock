@@ -1,0 +1,26 @@
+{
+  "name": "Shifted",
+  "role": "Elixirs",
+  "color": "#AA00AA",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/zuri",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -76.5,
+    69.0,
+    119.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.witch.ambient",
+  "greetings": [
+    "Elixirs! Speed, jump, strength!",
+    "Mind the step, the tavern leans."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Shifted"
+    }
+  }
+}

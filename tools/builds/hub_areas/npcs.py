@@ -372,6 +372,55 @@ PEOPLE = {
               ["Fish the lava with a lava rod for Trophy Fish.", "Bring them to me: I'll fillet them for Magmafish."],
               {"type": "odger"}),
 }
+def rift(name, file_id, role, colour, hint, skin_id, slim, sound, greetings, action=None):
+    PEOPLE[name] = (file_id, re.sub(r" \d+$", "", name), role, colour, hint, skin(skin_id, slim), slim, sound, greetings,
+                    action or {"type": "rift_npc", "params": {"name": name}})
+
+
+# ---- the Wizard Tower (Hub) and the Rift
+rift("Wizard", "wizard", "The Rift", "#AA55FF", "Rift", "zuri", False, "minecraft:block.amethyst_block.chime",
+     ["The Rift is open to those who are ready.", "A Dimensional Infusion lets you step through."], {"type": "rift_wizard"})
+rift("Grumblefoot", "grumblefoot", "Travel Scrolls", "#FFAA00", "Shop", "makena", False, "minecraft:entity.villager.trade",
+     ["Scrolls for the weary traveller.", "Why walk when you can read?"])
+rift("Enigma", "enigma", "Enigma Souls", "#FF55FF", "Souls", "noor", False, "minecraft:block.amethyst_block.resonate",
+     ["Souls are scattered all over the Rift.", "Wear my cloak; it grows with every soul you find."], {"type": "enigma"})
+for _n in range(1, 5):
+    rift(f"Argofay Trafficker {_n}", f"argofay_trafficker_{_n}", "Wyld armour", "#55FF55", "Shop", "kai", False,
+         "minecraft:entity.villager.trade", ["Wyld armour, freshly woven.", "Motes only, friend."])
+rift("Argofay Threebrothers", "argofay_threebrothers", "Wyld Sword", "#55FF55", "Shop", "efe", False, "minecraft:entity.villager.trade",
+     ["My brothers lost their swords in the trees.", "One sword for Motes and a few Shy Crux."])
+rift("Argofay Bughunter", "argofay_bughunter", "Odonata", "#55FF55", "Talk", "sunny", True, "minecraft:entity.bee.loop",
+     ["Have you seen the Odonata? Beautiful bugs.", "Bottle them for me and I'll reward you."])
+rift("Argofay Bugshopper", "argofay_bugshopper", "Bug gear", "#55FF55", "Shop", "ari", True, "minecraft:entity.villager.trade",
+     ["Larva Hooks and bottles for the bug-minded.", "Shy Crux is the currency of the woods."])
+rift("Sad Jacquelle", "sad_jacquelle", "Lost cat", "#AAAAAA", "Talk", "alex", True, "minecraft:entity.cat.ambient",
+     ["Have you seen my cat? His soul is all in pieces...", "Montezuma was such a good boy."])
+rift("Inverted Sirius", "inverted_sirius", "Rift Transfer", "#5555FF", "Transfer", "steve", False, "minecraft:block.chest.open",
+     ["!thgir tsuj si ti ,gnorw kool t'noD", "Rift-Transferable items pass through me."])
+rift("Shifted", "shifted", "Elixirs", "#AA00AA", "Shop", "zuri", True, "minecraft:entity.witch.ambient",
+     ["Elixirs! Speed, jump, strength!", "Mind the step, the tavern leans."])
+rift("Motes Grubber", "motes_grubber", "Eats Rift items", "#FF55FF", "Sell", "makena", True, "minecraft:entity.generic.eat",
+     ["I eat Rift things and pay in Motes.", "Hungry, always hungry."])
+rift("Porhtal", "porhtal", "Eyes", "#AA00AA", "Talk", "noor", True, "minecraft:block.portal.ambient",
+     ["Calm my seven eyes and I'll carry you across the Rift.", "Each eye sees a different place."])
+rift("Tel Kar", "tel_kar", "Wanderer", "#FFFF55", "Talk", "kai", False, "minecraft:entity.villager.ambient",
+     ["Time is short here. Listen closely.", "I've walked these woods longer than the trees."])
+rift("Kay", "kay", "Lil' Pads", "#55FFFF", "Shop", "sunny", True, "minecraft:entity.frog.ambient",
+     ["Lil' Pads! Ten Motes each!", "The channels are rough without one."])
+rift("Reed", "reed", "Boatbuilder", "#AA5500", "Talk", "steve", False, "minecraft:entity.boat.paddle_water",
+     ["My boat's in pieces all over the Rift.", "Bring me the parts and we'll sail."])
+rift("Roy", "roy", "Enigma Soul", "#FF55FF", "Shop", "efe", False, "minecraft:entity.villager.trade",
+     ["I found an Enigma Soul in the mud.", "4,000 Motes and some Deadgehog Spines, it's yours."])
+rift("Dr. Edwin", "dr_edwin", "Portals", "#55FFFF", "Talk", "ari", False, "minecraft:block.portal.trigger",
+     ["The Leech Supreme lurks below.", "I can open a way down, if you're brave."])
+rift("Dr. Phear", "dr_phear", "Leeches Lair", "#55FFFF", "Talk", "kai", False, "minecraft:block.portal.travel",
+     ["Done down here? I'll take you back up.", "Leeches everywhere. Horrible."])
+rift("Mushroom Guy", "mushroom_guy", "Mushrooms", "#FF5555", "Talk", "makena", False, "minecraft:block.fungus.place",
+     ["The mushrooms grow when you come close.", "Solve their puzzle and something waits at the top."])
+rift("The Gill-Man", "the_gill_man", "Porhtal eye", "#00AAAA", "Eye", "zuri", False, "minecraft:entity.guardian.ambient",
+     ["Blub.", "The eye watches the lagoon."])
+
+
 for _town in ("Dragontail", "Scarleton"):
     _id = _town.lower()
     PEOPLE[f"Banker ({_town})"] = (f"banker_{_id}", "Banker", _town, "#FFAA00", "Bank", skin("steve"), False,
@@ -392,6 +441,7 @@ HUB_WARPS = {
     "castle": ("ruins", "Ruins", "Castle", "The Hub's ancient ruins and their wolves", "minecraft:mossy_stone_bricks", 40),
     "crypt": ("coal_mine", None, "Crypt", "The Hub Crypts, under the Coal Mine", "minecraft:skeleton_skull", 41),
     "da": ("wilderness", None, "Dark Auction", "Sirius's Dark Auction, in the Wilderness", "minecraft:wither_skeleton_skull", 42),
+    "wizard": ("wizard_tower", "Wizard Tower", "Wizard Tower", "The Wizard's tower: the way into the Rift", "minecraft:amethyst_cluster", 43),
 }
 FIXED = {
     # Spots the area scripts don't record as warps.
@@ -462,7 +512,7 @@ def main():
     made = []
     for area_id, spots in all_spots.items():
         for name, spot in spots.get("npcs", {}).items():
-            if name.startswith("spawn:"):
+            if name.startswith("spawn:") or name.startswith("enigma:"):
                 continue
             who = person(name)
             if who is None:
@@ -540,8 +590,8 @@ def main():
         old.unlink()
     spawn_islands = {}
     for spots in all_spots.values():
-        found = {name[len("spawn:"):]: {"pos": spot["pos"], "yaw": spot.get("yaw", 0.0)}
-                 for name, spot in spots.get("npcs", {}).items() if name.startswith("spawn:")}
+        found = {name[len("spawn:"):] if name.startswith("spawn:") else name: {"pos": spot["pos"], "yaw": spot.get("yaw", 0.0)}
+                 for name, spot in spots.get("npcs", {}).items() if name.startswith("spawn:") or name.startswith("enigma:")}
         if not found:
             continue
         entry = spawn_islands.setdefault(spots.get("island", "Hub"), {"dimension": spots.get("dimension", HUB), "spots": {}})

@@ -1,0 +1,165 @@
+{
+  "dimension": "skyrpg_skyblock:rift",
+  "spots": {
+    "enigma:Mushroom Puzzle": {
+      "pos": [
+        -175.5,
+        69.0,
+        35.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Spinning Runes": {
+      "pos": [
+        -131.5,
+        69.0,
+        -15.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Lagoon Cave": {
+      "pos": [
+        -166.5,
+        75.0,
+        -3.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Dialogue": {
+      "pos": [
+        -111.5,
+        69.0,
+        31.5
+      ],
+      "yaw": 0.0
+    },
+    "leech_supreme": {
+      "pos": [
+        -119.5,
+        31.0,
+        28.5
+      ],
+      "yaw": 0.0
+    },
+    "leech_spot": {
+      "pos": [
+        -120.5,
+        32.0,
+        14.5
+      ],
+      "yaw": 0.0
+    },
+    "montezuma_3": {
+      "pos": [
+        -139.5,
+        45.0,
+        15.5
+      ],
+      "yaw": 90.0
+    },
+    "lair_exit": {
+      "pos": [
+        -104.5,
+        31.0,
+        36.5
+      ],
+      "yaw": 0.0
+    },
+    "exit_portal": {
+      "pos": [
+        -41.5,
+        69.0,
+        110.5
+      ],
+      "yaw": -90.0
+    },
+    "montezuma_1": {
+      "pos": [
+        -93.5,
+        69.0,
+        112.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Two Plates": {
+      "pos": [
+        -100.5,
+        69.0,
+        88.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Up in the Sky": {
+      "pos": [
+        -102.5,
+        113.0,
+        127.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Between Branches": {
+      "pos": [
+        -95.5,
+        89.0,
+        132.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Wither Cage": {
+      "pos": [
+        -141.5,
+        69.0,
+        147.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Tough Bark": {
+      "pos": [
+        -114.5,
+        69.0,
+        146.5
+      ],
+      "yaw": 180.0
+    },
+    "enigma:Woods Flower Pot": {
+      "pos": [
+        -129.5,
+        69.0,
+        77.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Fleespook": {
+      "pos": [
+        -137.5,
+        71.0,
+        80.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Pressurized": {
+      "pos": [
+        -118.5,
+        56.0,
+        176.5
+      ],
+      "yaw": 0.0
+    },
+    "enigma:Next to Enigma": {
+      "pos": [
+        -67.5,
+        69.0,
+        130.5
+      ],
+      "yaw": 0.0
+    },
+    "warp:rift": {
+      "pos": [
+        -45.5,
+        69.0,
+        110.5
+      ],
+      "yaw": -90.0
+    }
+  }
+}

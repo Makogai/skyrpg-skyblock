@@ -14,6 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
  */
 public final class IncomingDamage {
     private static final List<ToDoubleBiFunction<LivingEntity, DamageSource>> SOURCES = new CopyOnWriteArrayList<>();
+    private static final List<ToDoubleBiFunction<LivingEntity, DamageSource>> OVERRIDES = new CopyOnWriteArrayList<>();
 
     private IncomingDamage() {
     }
@@ -26,6 +27,25 @@ public final class IncomingDamage {
     /** A multiplier that also depends on the hit (who dealt it, how). */
     public static void registerHit(ToDoubleBiFunction<LivingEntity, DamageSource> source) {
         SOURCES.add(source);
+    }
+
+    /**
+     * A hit's damage set outright (vanilla health units), before Strength, crits and the rest: the Rift's hits deal your
+     * Rift Damage. Return NaN when it doesn't apply.
+     */
+    public static void registerOverride(ToDoubleBiFunction<LivingEntity, DamageSource> override) {
+        OVERRIDES.add(override);
+    }
+
+    /** The first override for this hit, or NaN. */
+    public static double override(LivingEntity target, DamageSource damage) {
+        for (ToDoubleBiFunction<LivingEntity, DamageSource> override : OVERRIDES) {
+            double value = override.applyAsDouble(target, damage);
+            if (!Double.isNaN(value)) {
+                return value;
+            }
+        }
+        return Double.NaN;
     }
 
     /** All multipliers for this hit, multiplied together (1 when none apply). */

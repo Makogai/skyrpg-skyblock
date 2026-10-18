@@ -1,0 +1,55 @@
+# The Rift
+
+Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built and what's decided.
+
+## Getting in and out (`rift/Rift.java`)
+
+- The Hub's **Wizard Tower** (`tools/builds/hub_areas/wizard_tower.py`, an island south of the Wilderness, `/warp wizard`):
+  7 floors, the Rift portal on the top floor next to the Wizard, Grumblefoot's scroll shop on the ground floor.
+- Walking into the portal: SkyBlock Level 12 and a **Dimensional Infusion** (one free every 4 hours, up to 3; or 32
+  Grand Experience Bottles at the Wizard). You arrive in the Rift's Wizard Tower. The infusion is used when you first
+  leave that tower, so a look inside is free (Hypixel's rule).
+- **Rift Time**: 8:00 plus your gear's Rift Time (Wyld armour, the Enigma Cloak...), shown on the health bar and the
+  sidebar. It runs down 1 a second everywhere but the tower. At 10 seconds: "THE RIFT IS COLLAPSING"; at 0 you're sent
+  to the Hub tower's door. The tower's exit portal leaves early. Falling into the void puts you back at the tower for 10
+  seconds. Logging out in the Rift: you wake at the Hub's tower.
+- Combat: nothing hurts you in the Rift. A monster's hit takes half its damage in seconds of Rift Time, at most one hit
+  every half second (decided: Hypixel's per-mob figures weren't found). Your hits deal your **Rift Damage** (20 plus your
+  gear's), whatever you hold (`IncomingDamage.registerOverride`).
+
+## Motes (`Motes.java`, `Orbs.java`)
+
+- A currency kept with you (Hypixel's), shown on the Rift's sidebar instead of the purse.
+- Mobs: a Rift zone mob's "coins" are Motes. Shy 100 + 1 Shy Crux; Larva 5 + 50% Larva Silk; Barking Wolf 40 + 1-2
+  Muted Bark; Deadgehog 150 + 3 Deadgehog Spine (+50% one more); Lagoon Leech 40 + two 50% rolls of 3 Lil' Pads
+  (Hypixel's where found; the Larva, Wolf and Leech Motes are ours).
+- Mote orbs: up to 3 pink orbs around you at a time, 6-16 blocks away, each lasting a minute: 25 Motes and 2 seconds.
+- The Motes Grubber eats Rift items: decided prices (Larva Silk 8, Muted Bark 15, Deadgehog Spine 20, Lil' Pad 4, Shy
+  Crux 25, Bottled Odonata 60, Leech Supreme Fragment 150).
+
+## Enigma Souls (`EnigmaSouls.java`)
+
+- The builds' `enigma:` spots (9 in the Wyld Woods, 4 in the Black Lagoon so far) plus NPC souls: Tel Kar's (hear his
+  whole story) and Roy's (4,000 Motes + 8 Deadgehog Spines). Violet souls; right-click to take one.
+- Enigma: the Enigma Cloak for 100 Motes; with it every soul is +20 Rift Time. Every 4 souls a cloak upgrade, +2 Speed
+  and +4% Mana Regen in the Rift, for 250 Motes times its number (decided).
+
+## Areas so far (`tools/builds/hub_areas/rift_*.py` on `rift_lib.py`)
+
+- The dimension `skyrpg_skyblock:rift` (void, violet sky, lavender grass; `skyrpg_hub:public_rift`). Hypixel's coordinates
+  are kept; `rift_lib.py` reserves a box for every area.
+- **Wyld Woods** with the **Rift Wizard Tower**: 13 giant trees with walkways and treehouses, the Broken Cage, Enigma's
+  Crib, the Pumpgrotto, the Shifted Tavern, The Bastion. Mobs: Shy, Larva, Barking Wolf.
+- **Black Lagoon**: channels and islets, giant mushrooms, the Lagoon Hut, the Lagoon Cave, the Leeches Lair under it.
+  Mobs: Deadgehog, Lagoon Leech.
+- Shops (`RiftNpcs.java`, Motes, NEU prices): the four Argofay Traffickers (Wyld Boots 50, Leggings 1,000, Helmet 1,000,
+  Chestplate 2,000), Threebrothers (Wyld Sword 333 + 3 Shy Crux), the Bugshopper (Larva Hook, 6 Shy Crux), Shifted's
+  elixirs, Kay's Lil' Pads (10). Everyone else talks.
+- Screens: the RIFT theme (crying obsidian with glitches, a torn magenta seam, amethyst buttons) on the card menus.
+
+## Still to build
+
+The Leech Supreme, Lil' Pads on the channels, Montezuma's soul pieces, Porhtal's eyes, Reed's boat, the Odonata and Larva
+Hook, the Rift Transfer, the slime launchers; then West Village, Dreadfarm, the Mirrorverse, Village Plaza, Barrier
+Street, the Living Cave, the Colosseum, the Mountaintop, Stillgore Chateau and the Vampire Slayer, Timecharms and the
+Rift Gallery.

@@ -1,0 +1,14 @@
+{
+  "name": "Wizard Tower",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    118,
+    24,
+    128
+  ],
+  "to": [
+    222,
+    200,
+    232
+  ]
+}

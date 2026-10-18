@@ -1,0 +1,26 @@
+{
+  "name": "Reed",
+  "role": "Boatbuilder",
+  "color": "#AA5500",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -120.5,
+    69.0,
+    26.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:entity.boat.paddle_water",
+  "greetings": [
+    "My boat's in pieces all over the Rift.",
+    "Bring me the parts and we'll sail."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Reed"
+    }
+  }
+}

@@ -169,7 +169,12 @@ public final class Zones {
             }
             MobSpawn spec = specOf(entity);
             if (spec != null && spec.coins() > 0) {
-                com.skyrpg.core.economy.Wallet.give(killer, spec.coins());
+                // In the Rift a mob's "coins" are Motes.
+                if (com.skyrpg.skyblock.rift.Rift.isRift(killer.level())) {
+                    com.skyrpg.skyblock.rift.Motes.give(killer, spec.coins());
+                } else {
+                    com.skyrpg.core.economy.Wallet.give(killer, spec.coins());
+                }
             }
             if (spec != null && !spec.drops().isEmpty()) {
                 giveDrops(killer, spec, entity);

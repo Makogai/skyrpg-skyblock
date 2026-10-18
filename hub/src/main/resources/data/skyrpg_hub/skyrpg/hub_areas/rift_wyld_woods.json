@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/rift_wyld_woods",
+  "origin": [
+    -160,
+    0,
+    60
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift",
+  "arrival": {
+    "pos": [
+      -45.5,
+      69.0,
+      110.5
+    ],
+    "yaw": -90.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Roy",
+  "role": "Enigma Soul",
+  "color": "#FF55FF",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -120.5,
+    69.0,
+    31.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "I found an Enigma Soul in the mud.",
+    "4,000 Motes and some Deadgehog Spines, it's yours."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Roy"
+    }
+  }
+}

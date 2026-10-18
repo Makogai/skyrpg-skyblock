@@ -1,0 +1,26 @@
+{
+  "name": "Argofay Trafficker",
+  "role": "Wyld armour",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -144.5,
+    89.0,
+    127.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Wyld armour, freshly woven.",
+    "Motes only, friend."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Argofay Trafficker 2"
+    }
+  }
+}

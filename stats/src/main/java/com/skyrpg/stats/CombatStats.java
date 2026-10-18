@@ -35,8 +35,12 @@ public final class CombatStats {
         if (amount <= 0) {
             return amount;
         }
-        double damage = amount;
         Crits.set(false);
+        double forced = IncomingDamage.override(target, source);
+        if (!Double.isNaN(forced)) {
+            return (float) forced;
+        }
+        double damage = amount;
 
         // A player's own melee hit: Strength, then a crit roll.
         if (source.getEntity() instanceof ServerPlayer attacker && source.getDirectEntity() == attacker

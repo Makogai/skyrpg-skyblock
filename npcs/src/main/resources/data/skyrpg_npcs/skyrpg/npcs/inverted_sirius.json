@@ -1,0 +1,26 @@
+{
+  "name": "Inverted Sirius",
+  "role": "Rift Transfer",
+  "color": "#5555FF",
+  "hint": "Transfer",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -135.5,
+    69.0,
+    107.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.chest.open",
+  "greetings": [
+    "!thgir tsuj si ti ,gnorw kool t'noD",
+    "Rift-Transferable items pass through me."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Inverted Sirius"
+    }
+  }
+}

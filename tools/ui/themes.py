@@ -298,6 +298,17 @@ def currencies():
             ticket.putpixel((x, y), c)
     save(ticket, "currency/tickets.png")
 
+    mote = Image.new("RGBA", (9, 9), (0, 0, 0, 0))
+    for y in range(9):
+        for x in range(9):
+            r = (x - 4) ** 2 + (y - 4) ** 2
+            if r <= 12:
+                mote.putpixel((x, y), rgb("ff5cf0") if r > 6 else rgb("ff8cf4") if r > 2 else rgb("ffe0fc"))
+    mote.putpixel((3, 3), rgb("ffffff"))
+    for x, y in ((0, 4), (8, 4), (4, 0), (4, 8)):
+        mote.putpixel((x, y), rgb("b04cd8", 200))
+    save(mote, "currency/motes.png")
+
 
 THEMES = {"farming": farming}
 

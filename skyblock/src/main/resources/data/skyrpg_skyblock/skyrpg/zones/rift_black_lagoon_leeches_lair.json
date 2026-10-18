@@ -1,0 +1,14 @@
+{
+  "name": "Leeches Lair",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -145,
+    20,
+    3
+  ],
+  "to": [
+    -87,
+    55,
+    50
+  ]
+}

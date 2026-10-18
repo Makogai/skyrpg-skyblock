@@ -1,0 +1,160 @@
+{
+  "name": "Black Lagoon",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -200,
+    56,
+    -30
+  ],
+  "to": [
+    -61,
+    130,
+    59
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:skeleton",
+      "name": "Deadgehog",
+      "level": 1,
+      "health": 150,
+      "damage": 9,
+      "xp": 6,
+      "coins": 150,
+      "max": 6,
+      "every": 8,
+      "from": [
+        -160,
+        66,
+        -25
+      ],
+      "to": [
+        -75,
+        80,
+        20
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "DEADGEHOG_SPINE",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "DEADGEHOG_SPINE",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:skeleton",
+      "name": "Deadgehog",
+      "level": 1,
+      "health": 150,
+      "damage": 9,
+      "xp": 6,
+      "coins": 150,
+      "max": 3,
+      "every": 10,
+      "from": [
+        -100,
+        66,
+        22
+      ],
+      "to": [
+        -62,
+        80,
+        50
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "DEADGEHOG_SPINE",
+          "chance": 1,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "DEADGEHOG_SPINE",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Lagoon Leech",
+      "level": 2,
+      "health": 80,
+      "damage": 3,
+      "xp": 6,
+      "coins": 40,
+      "max": 6,
+      "every": 6,
+      "from": [
+        -155,
+        66,
+        -10
+      ],
+      "to": [
+        -95,
+        72,
+        22
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Lagoon Leech",
+      "level": 2,
+      "health": 80,
+      "damage": 3,
+      "xp": 6,
+      "coins": 40,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -150,
+        66,
+        30
+      ],
+      "to": [
+        -105,
+        72,
+        50
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        },
+        {
+          "item": "LIL_PAD",
+          "chance": 0.5,
+          "min": 3,
+          "max": 3
+        }
+      ]
+    }
+  ]
+}

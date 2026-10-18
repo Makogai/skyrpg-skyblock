@@ -105,6 +105,11 @@ final class VitalsWidgets {
             if (player == null) {
                 return;
             }
+            com.skyrpg.core.client.hud.VitalOverride.Bar override = com.skyrpg.core.client.hud.VitalOverride.HEALTH.get();
+            if (override != null) {
+                drawBar(g, font, override.fill(), 0, override.color(), ABSORPTION_COLOR, override.text());
+                return;
+            }
             double health = player.getHealth() * StatTypes.HEALTH_SCALE;
             double max = Math.max(1, player.getMaxHealth() * StatTypes.HEALTH_SCALE);
             double absorption = player.getAbsorptionAmount() * StatTypes.HEALTH_SCALE;

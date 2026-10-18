@@ -1,0 +1,26 @@
+{
+  "name": "Dr. Edwin",
+  "role": "Portals",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/ari",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -78.5,
+    69.0,
+    36.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.portal.trigger",
+  "greetings": [
+    "The Leech Supreme lurks below.",
+    "I can open a way down, if you're brave."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Dr. Edwin"
+    }
+  }
+}

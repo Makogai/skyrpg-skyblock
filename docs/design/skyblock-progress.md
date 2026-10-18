@@ -633,7 +633,12 @@ phase so the next session can pick up where this one stopped.
       (Farming X, Hypixel's brackets plus score floors, tickets and medals claimed at Jacob, the sidebar), Anita's shop and
       medal trades.
 - [ ] The Garden, part 3: the Sprayonator, crop upgrades, chips, the Greenhouse.
-- [ ] Galatea and Hunting, Backwater Bayou, The Rift.
+- [x] **The Rift, part 1** (`rift/*`, `docs/design/rift.md`): the Hub's Wizard Tower and its portal, Dimensional
+      Infusions, the Rift dimension, Rift Time on the health bar and sidebar, Rift Damage combat, Motes (mobs, orbs, the
+      Motes Grubber), Enigma Souls and the Enigma Cloak, the Wyld Woods with the Rift Wizard Tower and the Black Lagoon
+      (helper-built), the Argofay/Shifted/Kay/Roy shops; the RIFT screen theme.
+- [ ] The Rift, part 2: the Leech Supreme, Montezuma, Porhtal, West Village, Dreadfarm, the Mirrorverse, Village Plaza.
+- [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)
 

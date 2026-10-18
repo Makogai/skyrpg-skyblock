@@ -1,0 +1,26 @@
+{
+  "name": "The Gill-Man",
+  "role": "Porhtal eye",
+  "color": "#00AAAA",
+  "hint": "Eye",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -116.5,
+    69.0,
+    30.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.guardian.ambient",
+  "greetings": [
+    "Blub.",
+    "The eye watches the lagoon."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "The Gill-Man"
+    }
+  }
+}

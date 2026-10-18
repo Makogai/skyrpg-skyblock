@@ -496,8 +496,12 @@ class Area:
             area_json["arrival"] = self.arrival_spot
             self.spots["arrival"] = self.arrival_spot
         (AREAS / f"{self.id}.json").write_text(json.dumps(area_json, indent=2) + "\n", encoding="utf-8")
+        used = set()
         for i, zone in enumerate(self.zones):
             name = self.id if i == 0 else self.id + "_" + re.sub(r"[^a-z0-9]+", "_", zone["name"].lower()).strip("_")
+            if name in used:
+                name += f"_{i}"    # the same zone name over several boxes
+            used.add(name)
             (ZONES / f"{name}.json").write_text(json.dumps(zone, indent=2) + "\n", encoding="utf-8")
         (OUT / f"{self.id}_spots.json").write_text(json.dumps(self.spots, indent=2) + "\n", encoding="utf-8")
         self.preview()

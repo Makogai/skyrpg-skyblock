@@ -1,0 +1,26 @@
+{
+  "name": "Argofay Threebrothers",
+  "role": "Wyld Sword",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/efe",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -88.5,
+    89.0,
+    154.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "My brothers lost their swords in the trees.",
+    "One sword for Motes and a few Shy Crux."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Argofay Threebrothers"
+    }
+  }
+}

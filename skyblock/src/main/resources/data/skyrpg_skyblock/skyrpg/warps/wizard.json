@@ -1,0 +1,14 @@
+{
+  "name": "Wizard Tower",
+  "description": "The Wizard's tower: the way into the Rift",
+  "icon": "minecraft:amethyst_cluster",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    168.5,
+    65.0,
+    151.5
+  ],
+  "yaw": 0.0,
+  "area": "Wizard Tower",
+  "order": 43
+}

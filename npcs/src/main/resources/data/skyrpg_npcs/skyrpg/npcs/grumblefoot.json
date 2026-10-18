@@ -1,0 +1,26 @@
+{
+  "name": "Grumblefoot",
+  "role": "Travel Scrolls",
+  "color": "#FFAA00",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    167.5,
+    65.0,
+    178.5
+  ],
+  "yaw": 270.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Scrolls for the weary traveller.",
+    "Why walk when you can read?"
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Grumblefoot"
+    }
+  }
+}

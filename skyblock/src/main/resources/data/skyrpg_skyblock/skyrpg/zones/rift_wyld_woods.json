@@ -1,0 +1,226 @@
+{
+  "name": "Wyld Woods",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -160,
+    0,
+    60
+  ],
+  "to": [
+    -58,
+    200,
+    199
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Shy",
+      "level": 1,
+      "health": 110,
+      "damage": 4,
+      "xp": 6,
+      "coins": 100,
+      "max": 5,
+      "every": 6,
+      "from": [
+        -108,
+        69,
+        112
+      ],
+      "to": [
+        -96,
+        76,
+        132
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SHAME_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Shy",
+      "level": 1,
+      "health": 110,
+      "damage": 4,
+      "xp": 6,
+      "coins": 100,
+      "max": 4,
+      "every": 6,
+      "from": [
+        -132,
+        69,
+        160
+      ],
+      "to": [
+        -120,
+        76,
+        170
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "SHAME_CRUX",
+          "chance": 1,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Larva",
+      "level": 1,
+      "health": 3,
+      "damage": 0,
+      "xp": 1,
+      "coins": 5,
+      "max": 6,
+      "every": 4,
+      "from": [
+        -126,
+        69,
+        94
+      ],
+      "to": [
+        -110,
+        78,
+        110
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LARVA_SILK",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Larva",
+      "level": 1,
+      "health": 3,
+      "damage": 0,
+      "xp": 1,
+      "coins": 5,
+      "max": 6,
+      "every": 4,
+      "from": [
+        -142,
+        69,
+        119
+      ],
+      "to": [
+        -128,
+        78,
+        135
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LARVA_SILK",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Larva",
+      "level": 1,
+      "health": 3,
+      "damage": 0,
+      "xp": 1,
+      "coins": 5,
+      "max": 5,
+      "every": 4,
+      "from": [
+        -80,
+        69,
+        140
+      ],
+      "to": [
+        -64,
+        78,
+        156
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LARVA_SILK",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:silverfish",
+      "name": "Larva",
+      "level": 1,
+      "health": 3,
+      "damage": 0,
+      "xp": 1,
+      "coins": 5,
+      "max": 5,
+      "every": 4,
+      "from": [
+        -146,
+        69,
+        160
+      ],
+      "to": [
+        -132,
+        78,
+        176
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "LARVA_SILK",
+          "chance": 0.5,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "type": "minecraft:wolf",
+      "name": "Barking Wolf",
+      "level": 2,
+      "health": 150,
+      "damage": 6,
+      "xp": 6,
+      "coins": 40,
+      "max": 4,
+      "every": 8,
+      "from": [
+        -132,
+        69,
+        150
+      ],
+      "to": [
+        -118,
+        76,
+        160
+      ],
+      "indoors": true,
+      "drops": [
+        {
+          "item": "MUTED_BARK",
+          "chance": 1,
+          "min": 1,
+          "max": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Wizard Tower",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -57,
+    0,
+    97
+  ],
+  "to": [
+    -33,
+    200,
+    123
+  ]
+}

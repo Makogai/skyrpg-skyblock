@@ -15,6 +15,8 @@ public enum ScreenTheme {
     FARMING("farming", 0xFFE5C34A, 0xFFF3EAD7, 0xFFB5A386, 0xFF7D705C, 0xFF8BD45A, 0xFF120E09, 10),
     /** SkyRPG's own look for general screens: dark slate with gold trim and ruby corner ornaments. */
     SKYBLOCK("skyblock", 0xFFF2B33D, 0xFFE9EDF4, 0xFF9AA3B5, 0xFF5E6779, 0xFF5CD68A, 0xFF0A0D12, 10),
+    /** The Rift: crying obsidian with glitches, a torn magenta seam, amethyst buttons. */
+    RIFT("rift", 0xFFFF5CF0, 0xFFF4E8FF, 0xFFB7A0CC, 0xFF76628A, 0xFFFF5CF0, 0xFF0C0612, 10),
     /** Mining: stone bricks with ore flecks, gem corners, a minecart-rail divider, stone buttons. */
     MINING("mining", 0xFF5CE1E6, 0xFFE6EDF2, 0xFF9AA6B2, 0xFF5E6874, 0xFF5CE1E6, 0xFF0B0D10, 10),
     /** The Crimson Isle: nether bricks with lava, gilded blackstone corners, a blaze-rod divider, magma buttons. */

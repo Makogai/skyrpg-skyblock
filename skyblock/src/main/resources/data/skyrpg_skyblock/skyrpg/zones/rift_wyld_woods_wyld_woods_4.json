@@ -1,0 +1,14 @@
+{
+  "name": "Wyld Woods",
+  "dimension": "skyrpg_skyblock:rift",
+  "from": [
+    -32,
+    0,
+    97
+  ],
+  "to": [
+    -11,
+    200,
+    123
+  ]
+}

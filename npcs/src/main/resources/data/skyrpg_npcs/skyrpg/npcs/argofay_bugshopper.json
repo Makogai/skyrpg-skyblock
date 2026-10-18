@@ -1,0 +1,26 @@
+{
+  "name": "Argofay Bugshopper",
+  "role": "Bug gear",
+  "color": "#55FF55",
+  "hint": "Shop",
+  "skin": "minecraft:entity/player/slim/ari",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -79.5,
+    69.0,
+    168.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Larva Hooks and bottles for the bug-minded.",
+    "Shy Crux is the currency of the woods."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Argofay Bugshopper"
+    }
+  }
+}

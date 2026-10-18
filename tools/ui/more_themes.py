@@ -429,4 +429,51 @@ def skyblock(out):
     buttons(out, rng, slate, rgb("8a6a22"), rgb("f2b33d"), [rgb("1c2029"), rgb("191c24"), rgb("20242e")])
 
 
-THEMES = {"skyblock": skyblock, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing}
+# ---------------------------------------------------------------- rift: crying obsidian with glitches, a torn seam
+
+def rift(out):
+    rng = random.Random(31)
+
+    def band(along, across, horizontal):
+        if rng.random() < 0.05:
+            return rng.choice([rgb("ff5cf0"), rgb("5cf0ff")])
+        if across == 1:
+            return rgb("b04cd8")
+        if across == 6:
+            return rgb("1c0a2a")
+        return shade(rgb("2d1240") if across in (2, 5) else rgb("3a1a55"), rng.choice([-0.06, 0.0, 0.06]))
+
+    def geode(img, cx, cy):
+        for x, y in ((4, 2), (3, 3), (4, 3), (5, 3), (2, 4), (3, 4), (5, 4), (6, 4), (3, 5), (4, 5), (5, 5), (4, 6)):
+            img.putpixel((cx + x, cy + y), rgb("c78cff"))
+        img.putpixel((cx + 4, cy + 4), rgb("ff5cf0"))
+        img.putpixel((cx + 3, cy + 3), rgb("f0d8ff"))
+    corner = plate_corner(rgb("241033"), rgb("3e1d57"), rgb("140820"), rgb("07030c"), geode)
+    save(framed(48, band, corner, rgb("07030c"), rgb("12071c"), rgb("26103a")), f"{out}/frame.png", nine(48, 48, 9))
+    save(noise_tile(rng, [rgb("140a1e"), rgb("170c22"), rgb("11081a")], [70, 15, 15], [(rgb("2c1640"), 10), (rgb("ff5cf0"), 2), (rgb("5cf0ff"), 1)]),
+         f"{out}/background.png", tile(32, 32))
+
+    def tear(img):
+        jag = [2, 3, 2, 1, 2, 3, 4, 3, 2, 3]
+        for x, y in enumerate(jag):
+            img.putpixel((x, y), rgb("ff5cf0"))
+            img.putpixel((x, y + 1), rgb("b04cd8"))
+            img.putpixel((x, min(6, y + 2)), rgb("000000", 110))
+        img.putpixel((3, 0), rgb("5cf0ff"))
+        img.putpixel((7, 6), rgb("5cf0ff"))
+
+    def orb(img):
+        pixels(img, [(5, 2, "ffd0fa"), (4, 3, "ff8cf4"), (5, 3, "ffffff"), (6, 3, "ff5cf0"), (3, 4, "ff5cf0"), (4, 4, "ff8cf4"),
+                     (5, 4, "ff8cf4"), (6, 4, "ff5cf0"), (7, 4, "b04cd8"), (4, 5, "ff5cf0"), (5, 5, "ff5cf0"), (6, 5, "b04cd8"),
+                     (5, 6, "b04cd8")])
+    divider(out, 10, 7, tear, orb)
+    cards_and_tabs(out, rgb("1a0d27"), rgb("3e1d57"), rgb("ff5cf0"), rgb("24123a"), rgb("12081c"),
+                   rgb("170b22"), rgb("361a4d"), rgb("2a1240"), rgb("ff5cf0"))
+
+    def facets(x, y):
+        return rgb("e0b8ff") if (x + y) % 7 == 0 else rgb("6a3a9a") if (x - y) % 9 == 0 else None
+    buttons(out, rng, [rgb("8a5ac8"), rgb("7a4ab8"), rgb("9a6ad8")], rgb("12071c"), rgb("ff5cf0"),
+            [rgb("2a2233"), rgb("241d2c"), rgb("30283a")], facets)
+
+
+THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing}

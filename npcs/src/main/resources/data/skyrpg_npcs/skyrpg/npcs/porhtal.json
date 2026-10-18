@@ -1,0 +1,26 @@
+{
+  "name": "Porhtal",
+  "role": "Eyes",
+  "color": "#AA00AA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/noor",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -137.5,
+    69.0,
+    150.5
+  ],
+  "yaw": 180.0,
+  "sound": "minecraft:block.portal.ambient",
+  "greetings": [
+    "Calm my seven eyes and I'll carry you across the Rift.",
+    "Each eye sees a different place."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Porhtal"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Enigma",
+  "role": "Enigma Souls",
+  "color": "#FF55FF",
+  "hint": "Souls",
+  "skin": "minecraft:entity/player/wide/noor",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -57.5,
+    69.0,
+    106.5
+  ],
+  "yaw": -90.0,
+  "sound": "minecraft:block.amethyst_block.resonate",
+  "greetings": [
+    "Souls are scattered all over the Rift.",
+    "Wear my cloak; it grows with every soul you find."
+  ],
+  "action": {
+    "type": "enigma"
+  }
+}

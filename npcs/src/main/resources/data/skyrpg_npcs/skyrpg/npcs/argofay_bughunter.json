@@ -1,0 +1,26 @@
+{
+  "name": "Argofay Bughunter",
+  "role": "Odonata",
+  "color": "#55FF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/sunny",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -82.5,
+    69.0,
+    168.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.bee.loop",
+  "greetings": [
+    "Have you seen the Odonata? Beautiful bugs.",
+    "Bottle them for me and I'll reward you."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Argofay Bughunter"
+    }
+  }
+}

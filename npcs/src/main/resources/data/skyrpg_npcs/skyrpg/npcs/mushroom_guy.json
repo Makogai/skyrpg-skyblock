@@ -1,0 +1,26 @@
+{
+  "name": "Mushroom Guy",
+  "role": "Mushrooms",
+  "color": "#FF5555",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/makena",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -167.5,
+    69.0,
+    41.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.fungus.place",
+  "greetings": [
+    "The mushrooms grow when you come close.",
+    "Solve their puzzle and something waits at the top."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Mushroom Guy"
+    }
+  }
+}

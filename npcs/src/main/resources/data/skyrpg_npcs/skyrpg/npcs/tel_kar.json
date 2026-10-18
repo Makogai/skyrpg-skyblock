@@ -1,0 +1,26 @@
+{
+  "name": "Tel Kar",
+  "role": "Wanderer",
+  "color": "#FFFF55",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -112.5,
+    69.0,
+    62.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "Time is short here. Listen closely.",
+    "I've walked these woods longer than the trees."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Tel Kar"
+    }
+  }
+}

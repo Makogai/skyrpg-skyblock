@@ -211,6 +211,7 @@ public final class SkyScreens {
             case "copper" -> "Copper";
             case "pests" -> "Pests";
             case "tickets" -> "Tickets";
+            case "motes" -> "Motes";
             case "medal_gold" -> "Gold";
             case "medal_silver" -> "Silver";
             case "medal_bronze" -> "Bronze";

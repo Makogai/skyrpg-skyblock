@@ -1,0 +1,19 @@
+{
+  "structure": "skyrpg_hub:areas/rift_black_lagoon",
+  "origin": [
+    -200,
+    0,
+    -30
+  ],
+  "version": 1,
+  "dimension": "skyrpg_skyblock:rift",
+  "island": "The Rift",
+  "arrival": {
+    "pos": [
+      -104.5,
+      69.0,
+      56.5
+    ],
+    "yaw": 0.0
+  }
+}

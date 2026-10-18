@@ -1,0 +1,23 @@
+{
+  "name": "Wizard",
+  "role": "The Rift",
+  "color": "#AA55FF",
+  "hint": "Rift",
+  "skin": "minecraft:entity/player/wide/zuri",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    173.5,
+    137.0,
+    179.5
+  ],
+  "yaw": 90.0,
+  "sound": "minecraft:block.amethyst_block.chime",
+  "greetings": [
+    "The Rift is open to those who are ready.",
+    "A Dimensional Infusion lets you step through."
+  ],
+  "action": {
+    "type": "rift_wizard"
+  }
+}

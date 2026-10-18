@@ -1,0 +1,26 @@
+{
+  "name": "Dr. Phear",
+  "role": "Leeches Lair",
+  "color": "#55FFFF",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -103.5,
+    31.0,
+    40.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:block.portal.travel",
+  "greetings": [
+    "Done down here? I'll take you back up.",
+    "Leeches everywhere. Horrible."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Dr. Phear"
+    }
+  }
+}

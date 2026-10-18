@@ -1,0 +1,26 @@
+{
+  "name": "Sad Jacquelle",
+  "role": "Lost cat",
+  "color": "#AAAAAA",
+  "hint": "Talk",
+  "skin": "minecraft:entity/player/slim/alex",
+  "model": "slim",
+  "dimension": "skyrpg_skyblock:rift",
+  "pos": [
+    -87.5,
+    89.0,
+    117.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.cat.ambient",
+  "greetings": [
+    "Have you seen my cat? His soul is all in pieces...",
+    "Montezuma was such a good boy."
+  ],
+  "action": {
+    "type": "rift_npc",
+    "params": {
+      "name": "Sad Jacquelle"
+    }
+  }
+}

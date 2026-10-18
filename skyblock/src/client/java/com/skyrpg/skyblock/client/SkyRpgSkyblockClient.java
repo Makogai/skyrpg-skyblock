@@ -88,6 +88,19 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         ClientPlayNetworking.registerGlobalReceiver(StoragePayloads.Summary.TYPE, (payload, context) -> StoragePage.set(payload));
         ClientPlayNetworking.registerGlobalReceiver(StoragePayloads.Show.TYPE, (payload, context) -> SkyRpgMenu.open(storage.id()));
         HudManager.register(new SidebarWidget());
+        // In the Rift the health bar shows your Rift Time.
+        com.skyrpg.core.client.hud.VitalOverride.HEALTH = () -> {
+            var player = net.minecraft.client.Minecraft.getInstance().player;
+            String hud = player == null ? null : player.getAttached(com.skyrpg.skyblock.rift.Rift.HUD);
+            if (hud == null) {
+                return null;
+            }
+            String[] parts = hud.split("/");
+            int left = Integer.parseInt(parts[0]);
+            int max = Math.max(1, Integer.parseInt(parts[1]));
+            int color = left <= 60 ? 0xFFFF5555 : 0xFF55FF55;
+            return new com.skyrpg.core.client.hud.VitalOverride.Bar("ф " + left / 60 + ":" + String.format("%02d", left % 60), left / (float) max, color);
+        };
         ClientPlayNetworking.registerGlobalReceiver(Zones.ZoneList.TYPE, (payload, context) -> Zones.replace(payload.zones()));
         ClientPlayNetworking.registerGlobalReceiver(Areas.AreaPayload.TYPE, (payload, context) -> SidebarWidget.setArea(payload.area()));
         ClientPlayNetworking.registerGlobalReceiver(ProfileListPayload.TYPE, (payload, context) -> ProfilesPage.set(payload));

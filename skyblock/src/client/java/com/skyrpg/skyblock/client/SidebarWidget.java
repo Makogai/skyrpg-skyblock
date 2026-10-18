@@ -112,6 +112,17 @@ public final class SidebarWidget implements HudWidget {
                     .append(Component.literal("-" + cold + "❄").withStyle(ChatFormatting.AQUA)));
         }
         lines.add(Component.empty());
+        // The Rift's scoreboard: Rift Time and Motes instead of the purse.
+        String rift = player == null ? null : player.getAttached(com.skyrpg.skyblock.rift.Rift.HUD);
+        if (rift != null) {
+            int left = Integer.parseInt(rift.split("/")[0]);
+            lines.add(Component.literal("Rift Time: ").withStyle(ChatFormatting.WHITE)
+                    .append(Component.literal("ф " + left / 60 + ":" + String.format("%02d", left % 60)).withStyle(ChatFormatting.GREEN)));
+            lines.add(Component.literal("Motes: ").withStyle(ChatFormatting.WHITE)
+                    .append(Component.literal(Msg.number(player.getAttachedOrElse(com.skyrpg.skyblock.rift.Motes.MOTES, 0L)))
+                            .withStyle(ChatFormatting.LIGHT_PURPLE)));
+            return lines;
+        }
         long purse = player == null ? 0 : Purse.get(player);
         lines.add(Component.literal("Purse: ").withStyle(ChatFormatting.WHITE)
                 .append(Component.literal(Msg.number(purse)).withStyle(ChatFormatting.GOLD)));
