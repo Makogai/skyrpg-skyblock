@@ -44,7 +44,34 @@ Visitors, SkyMart and Phillip are Mannequins kept while someone is in that Garde
   out for now.
 - SkyMart: NEU's `skymart.json` prices, the items we have.
 
+## Pests (`Pests.java`)
+
+- Hypixel's ten pests, one per crop, each from its Garden level (V for the first five, Earthworm VI ... Beetle X). A
+  broken Garden crop has a 0.2% chance (x (1 + Bonus Pest Chance / 100)) to bring its pest once the profile's 5-minute
+  pest cooldown is over (Pest Repellent / MAX: /2 / /4 for an hour). Decided: no Sprayonator sprays yet.
+- Pests are NoAI glowing endermites/silverfish drifting over the plots, 600 health; only a vacuum hurts them (the
+  vacuum ability: 0.2 x the item's Damage, five uses a second, at the pest nearest your aim within 10 blocks and 45
+  degrees). Reward: 1,000 coins, 1,500 Farming XP, 1 enchanted crop + 1 per 50 Farming Fortune.
+- Farming Fortune penalty in the Garden with 4+ alive (one more allowed per 100 Bonus Pest Chance): -5 / 15 / 30 / 50 /
+  75%.
+- Pests killed are Pesthunter Phillip's currency (`GardenData.pests`): the Pesthunter Badge 25, the four Pesthunter
+  equipment pieces 40 each (decided: our prices).
+
+## Jacob's Farming Contests and Anita (`Contests.java`)
+
+- On the calendar's "Jacob's Farming Contest" (every third SkyBlock day, 20 minutes). Three crops from a seed of the
+  contest's start, so Jacob's menu can show the next contest's crops. Farming X to enter; the first contest crop you
+  harvest on your Garden is your entry; the score counts crops as harvested (Fortune included).
+- Brackets: Hypixel's standing shares (Diamond 2%, Platinum 5%, Gold 10%, Silver 30%, Bronze 60%) with 10+ in a crop;
+  decided for small servers: also a score floor per bracket (100 / 5,000 / 15,000 / 40,000 / 70,000 / 100,000 Wheat;
+  times the crop's base drop), the better of the two counts. Tickets 1 / 10 / 15 / 25 / 30 / 35; medals Bronze, Silver,
+  Gold (Platinum adds a Bronze, Diamond a Silver).
+- Rewards wait in the `jacob_medals` attachment until claimed at Jacob. Decided: a contest running when the server
+  stops is dropped (scores live in memory).
+- Anita: NEU's prices for the ten items we have, and medal trades down (1 Gold -> 2 Silver, 1 Silver -> 2 Bronze).
+- Sidebar: time left, then the three crops, or your crop and "<Bracket> with <score>" (Hypixel's bracket colours).
+- Admin: `/sbgarden contest start|end|score <n>`, `/sbgarden pest`, `/sbgarden xp <n>`, `/sbgarden copper <n>`.
+
 ## Still to build
 
-Pests (spawning, the Farming Fortune penalty, vacuums, the Sprayonator, Phillip's shop), Jacob's Farming Contests and
-Anita, crop upgrades, Garden Chips, the Greenhouse, Barn skins, plot presets.
+The Sprayonator and sprays, crop upgrades, Garden Chips, the Greenhouse, Barn skins, plot presets.

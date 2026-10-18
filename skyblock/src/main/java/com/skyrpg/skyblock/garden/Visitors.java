@@ -106,8 +106,11 @@ final class Visitors {
                 if (tag.equals(TAG + ":skymart")) {
                     GardenMenu.open(server, GardenMenu.Tab.SKYMART);
                 } else if (tag.equals(TAG + ":phillip")) {
-                    server.sendSystemMessage(Component.literal("Pesthunter Phillip: Pests? Not in this Garden yet. Keep your crops clean!")
-                            .withStyle(ChatFormatting.GRAY));
+                    GardenMenu.open(server, GardenMenu.Tab.PHILLIP);
+                } else if (tag.equals(TAG + ":jacob")) {
+                    GardenMenu.open(server, GardenMenu.Tab.JACOB);
+                } else if (tag.equals(TAG + ":anita")) {
+                    GardenMenu.open(server, GardenMenu.Tab.ANITA);
                 } else if (tag.startsWith(TAG + ":visitor:")) {
                     GardenMenu.openVisitor(server, Integer.parseInt(tag.substring((TAG + ":visitor:").length())));
                 }
@@ -194,6 +197,8 @@ final class Visitors {
         LIVE.put(profile.id(), live);
         live.add(mannequin(level, c.offset(-18, 1, -2), 90, "SkyMart", 0xFFAA00, "Copper shop", "noor", TAG + ":skymart"));
         live.add(mannequin(level, c.offset(-14, 1, 10), 90, "Pesthunter Phillip", 0x55FF55, "Pests", "efe", TAG + ":phillip"));
+        live.add(mannequin(level, c.offset(-5, 1, 36), -90, "Jacob", 0xFFFF55, "Farming Contests", "kai", TAG + ":jacob"));
+        live.add(mannequin(level, c.offset(5, 1, 36), 90, "Anita", 0xFFFF55, "Contest shop", "alex", TAG + ":anita"));
         int[][] spots = {{-8, 18}, {-4, 20}, {0, 21}, {4, 20}, {8, 18}};
         for (int i = 0; i < state.visitors.size() && i < spots.length; i++) {
             Offer offer = Offer.decode(state.visitors.get(i));

@@ -96,6 +96,48 @@ public final class Garden {
         GardenMenu.init();
         Composter.init();
         Visitors.init();
+        Pests.init();
+        Contests.init();
+        net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback.EVENT.register((dispatcher, registry, environment) -> dispatcher.register(
+                net.minecraft.commands.Commands.literal("sbgarden").requires(net.minecraft.commands.Commands.hasPermission(
+                        net.minecraft.commands.Commands.LEVEL_GAMEMASTERS))
+                        .then(net.minecraft.commands.Commands.literal("contest").then(net.minecraft.commands.Commands.literal("start").executes(ctx -> {
+                            Contests.startNow(ctx.getSource().getServer());
+                            return 1;
+                        })).then(net.minecraft.commands.Commands.literal("end").executes(ctx -> {
+                            Contests.endNow(ctx.getSource().getServer());
+                            return 1;
+                        })).then(net.minecraft.commands.Commands.literal("score").then(net.minecraft.commands.Commands.argument("amount",
+                                com.mojang.brigadier.arguments.IntegerArgumentType.integer(0)).executes(ctx -> {
+                                    Contests.addScore(ctx.getSource().getPlayerOrException(),
+                                            com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "amount"));
+                                    return 1;
+                                }))))
+                        .then(net.minecraft.commands.Commands.literal("pest").executes(ctx -> {
+                            ServerPlayer player = ctx.getSource().getPlayerOrException();
+                            Profile owner = ownerAt(player.blockPosition());
+                            if (owner != null && player.level() instanceof ServerLevel level) {
+                                Pests.spawn(level, owner, Pests.KINDS.get(level.getRandom().nextInt(Pests.KINDS.size())), player.blockPosition());
+                            }
+                            return 1;
+                        }))
+                        .then(net.minecraft.commands.Commands.literal("xp").then(net.minecraft.commands.Commands.argument("amount",
+                                com.mojang.brigadier.arguments.IntegerArgumentType.integer(0)).executes(ctx -> {
+                                    ServerPlayer player = ctx.getSource().getPlayerOrException();
+                                    GardenData.State state = state(player);
+                                    if (state != null) {
+                                        giveXp(player, state, com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "amount"));
+                                    }
+                                    return 1;
+                                })))
+                        .then(net.minecraft.commands.Commands.literal("copper").then(net.minecraft.commands.Commands.argument("amount",
+                                com.mojang.brigadier.arguments.IntegerArgumentType.integer(0)).executes(ctx -> {
+                                    GardenData.State state = state(ctx.getSource().getPlayerOrException());
+                                    if (state != null) {
+                                        state.copper += com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "amount");
+                                    }
+                                    return 1;
+                                })))));
         ServerTickEvents.END_SERVER_TICK.register(Garden::tick);
         PlayerBlockBreakEvents.AFTER.register((level, player, pos, state, blockEntity) -> {
             if (level instanceof ServerLevel server && player instanceof ServerPlayer serverPlayer && isGarden(level) && !player.isCreative()) {
@@ -429,6 +471,8 @@ public final class Garden {
             Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.6f, 1.6f);
             giveXp(player, garden, xp);
         }
+        Pests.harvested(level, player, pos, crop);
+        Contests.harvested(player, crop, count);
     }
 
     /** Garden XP; level-ups are announced with their 10 SkyBlock XP. */

@@ -32,7 +32,7 @@ public final class GardenMenu extends AbstractContainerMenu {
     public static final int TAB = 10;
     public static final int ROW = 100;
 
-    public enum Tab { PLOTS, MILESTONES, COMPOSTER, SKYMART, VISITOR }
+    public enum Tab { PLOTS, MILESTONES, COMPOSTER, SKYMART, VISITOR, PHILLIP, JACOB, ANITA }
 
     /** A row: title, the line under it, colour, whether its button works, the button's label. */
     public record Row(String title, String detail, int color, boolean enabled, String button) {
@@ -197,6 +197,45 @@ public final class GardenMenu extends AbstractContainerMenu {
                 }
                 footer = "Copper comes from visitors' offers.";
             }
+            case PHILLIP -> {
+                header = state.pests + (state.pests == 1 ? " pest" : " pests") + " to spend";
+                for (Pests.Sale sale : Pests.PHILLIP) {
+                    ItemDefinition def = ItemRegistry.skyblock(sale.item());
+                    rows.add(new Row(def == null ? sale.item() : def.name(), sale.pests() + " pests", 0x55FF55,
+                            def != null && state.pests >= sale.pests(), "Buy"));
+                }
+                footer = "Vacuum up pests in your Garden; they're my currency.";
+            }
+            case JACOB -> {
+                header = "Jacob's Farming Contests";
+                if (Contests.running()) {
+                    rows.add(new Row("Contest running", String.join(", ", Contests.crops().stream().map(Contests::cropName).toList())
+                            + "  ·  farm one of them on your Garden", 0xFFFF55, false, ""));
+                } else {
+                    long next = com.skyrpg.skyblock.time.CalendarEvents.upcoming(System.currentTimeMillis(), 3 * 60 * 60 * 1000L).stream()
+                            .filter(o -> o.event().name().equals("Jacob's Farming Contest")).mapToLong(com.skyrpg.skyblock.time.CalendarEvents.Occurrence::start)
+                            .findFirst().orElse(0);
+                    rows.add(new Row("Next contest", next == 0 ? "soon" : "in " + com.skyrpg.skyblock.time.SkyBlockTime.countdown(next - System.currentTimeMillis())
+                            + "  ·  " + String.join(", ", Contests.cropsFor(next).stream().map(Contests::cropName).toList()), 0xFFFF55, false, ""));
+                }
+                int pending = Contests.medals(player, "pending_tickets");
+                rows.add(new Row("Rewards waiting", pending > 0 ? pending + " tickets and your medals" : "nothing yet", 0x55FF55, pending > 0, "Claim"));
+                rows.add(new Row("Your medals", Contests.medals(player, "gold") + " Gold  ·  " + Contests.medals(player, "silver") + " Silver  ·  "
+                        + Contests.medals(player, "bronze") + " Bronze", 0xFFAA00, false, ""));
+                footer = "Farming X to take part; 100 crops for a reward. Anita sells gear for tickets and medals.";
+            }
+            case ANITA -> {
+                header = Contests.medals(player, "gold") + " Gold, " + Contests.medals(player, "silver") + " Silver, "
+                        + Contests.medals(player, "bronze") + " Bronze";
+                for (Contests.Sale sale : Contests.ANITA) {
+                    ItemDefinition def = ItemRegistry.skyblock(sale.item());
+                    rows.add(new Row((sale.count() > 1 ? sale.count() + "x " : "") + (def == null ? sale.item() : def.name()), Contests.price(sale),
+                            0xFFFF55, def != null, "Buy"));
+                }
+                rows.add(new Row("2 Silver medals", "for 1 Gold medal", 0xFFFFFF, true, "Trade"));
+                rows.add(new Row("2 Bronze medals", "for 1 Silver medal", 0xFF5555, true, "Trade"));
+                footer = "Jacob's Tickets and medals come from his Farming Contests.";
+            }
             case VISITOR -> {
                 if (visitor >= 0 && visitor < state.visitors.size()) {
                     Visitors.Offer offer = Visitors.Offer.decode(state.visitors.get(visitor));
@@ -222,7 +261,14 @@ public final class GardenMenu extends AbstractContainerMenu {
 
             @Override
             public Component getDisplayName() {
-                return Component.literal(tab == Tab.SKYMART ? "SkyMart" : tab == Tab.VISITOR ? "Visitor" : "Desk");
+                return Component.literal(switch (tab) {
+                    case SKYMART -> "SkyMart";
+                    case VISITOR -> "Visitor";
+                    case PHILLIP -> "Phillip";
+                    case JACOB -> "Jacob";
+                    case ANITA -> "Anita";
+                    default -> "Desk";
+                });
             }
 
             @Override
@@ -242,7 +288,7 @@ public final class GardenMenu extends AbstractContainerMenu {
             return false;
         }
         GardenData.State state = Garden.state(owner.level().getServer(), profile);
-        if (id >= TAB && id < TAB + 4 && view.tab() != Tab.VISITOR) {
+        if (id >= TAB && id < TAB + 4 && view.tab().ordinal() < 4) {
             owner.level().getServer().execute(() -> open(owner, Tab.values()[id - TAB]));
             return true;
         }
@@ -259,6 +305,9 @@ public final class GardenMenu extends AbstractContainerMenu {
                 }
             }
             case SKYMART -> problem = buy(owner, state, row);
+            case PHILLIP -> problem = Pests.buy(owner, state, row);
+            case JACOB -> problem = Contests.claim(owner);
+            case ANITA -> problem = Contests.buy(owner, row);
             case VISITOR -> {
                 int rows = view.rows().size();
                 if (row == rows - 2) {

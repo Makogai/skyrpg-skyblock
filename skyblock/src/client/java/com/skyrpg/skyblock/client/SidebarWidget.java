@@ -93,6 +93,13 @@ public final class SidebarWidget implements HudWidget {
                     .append(Component.literal(where).withStyle(where.equals("Your Island") ? ChatFormatting.GREEN : ChatFormatting.AQUA)));
         }
         var player = Minecraft.getInstance().player;
+        // Jacob's Farming Contest, while one runs (in the Garden).
+        String contest = player == null ? null : player.getAttached(com.skyrpg.skyblock.garden.Contests.SIDEBAR);
+        if (contest != null) {
+            for (String line : contest.split("\n")) {
+                lines.add(Component.literal(line));
+            }
+        }
         // Faction reputation on the Crimson Isle.
         String rep = player == null ? null : player.getAttached(com.skyrpg.skyblock.crimson.Factions.SIDEBAR);
         if (rep != null) {

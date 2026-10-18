@@ -28,7 +28,7 @@ public final class GardenScreen extends AbstractContainerScreen<GardenMenu> {
     }
 
     private boolean tabbed() {
-        return menu.view().tab() != GardenMenu.Tab.VISITOR;
+        return menu.view().tab().ordinal() < 4;
     }
 
     private int listTop() {
@@ -47,8 +47,15 @@ public final class GardenScreen extends AbstractContainerScreen<GardenMenu> {
     public void extractBackground(GuiGraphicsExtractor g, int mouseX, int mouseY, float partialTick) {
         super.extractBackground(g, mouseX, mouseY, partialTick);
         GardenMenu.View view = menu.view();
-        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal(view.tab() == GardenMenu.Tab.SKYMART ? "SkyMart"
-                : view.tab() == GardenMenu.Tab.VISITOR ? "Visitor" : "The Garden"), Component.literal(view.header()).withColor(GREEN));
+        String title = switch (view.tab()) {
+            case SKYMART -> "SkyMart";
+            case VISITOR -> "Visitor";
+            case PHILLIP -> "Pesthunter Phillip";
+            case JACOB -> "Jacob";
+            case ANITA -> "Anita";
+            default -> "The Garden";
+        };
+        SkyScreens.window(g, font, leftPos, topPos, imageWidth, imageHeight, Component.literal(title), Component.literal(view.header()).withColor(GREEN));
         if (tabbed()) {
             for (int i = 0; i < TABS.length; i++) {
                 boolean active = view.tab().ordinal() == i;

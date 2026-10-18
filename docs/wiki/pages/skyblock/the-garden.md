@@ -3,13 +3,13 @@ title: The Garden
 category: skyblock
 order: 6
 icon: minecraft:wheat
-summary: Hypixel's Garden - your own 480 by 480 farm with 24 plots to unlock, Garden levels, crop milestones, visitors and their Copper, the Composter and SkyMart.
+summary: Hypixel's Garden - your own 480 by 480 farm with 24 plots to unlock, Garden levels, crop milestones, visitors and their Copper, the Composter, SkyMart, pests and Jacob's Farming Contests.
 ---
 **The Garden** is your profile's own farm, a separate island shared by your co-op. It opens at **SkyBlock Level 5**: `/warp garden` (or the Fast Travel menu) takes you there.
 
 ## The island
 
-The Garden is a 5 by 5 grid of 96 by 96 **plots**. The middle one holds the **Barn**: the **Desk** inside it, the **Composter** beside it, the **SkyMart** stall, **Pesthunter Phillip**'s shed and the **visitor yard**. The other 24 plots start fenced off. You can't leave the Garden's square; walking off the edge puts you back by the Barn.
+The Garden is a 5 by 5 grid of 96 by 96 **plots**. The middle one holds the **Barn**: the **Desk** inside it, the **Composter** beside it, the **SkyMart** stall, **Pesthunter Phillip**'s shed, the **visitor yard**, and **Jacob** and **Anita** south of the Barn. The other 24 plots start fenced off. You can't leave the Garden's square; walking off the edge puts you back by the Barn.
 
 You build and farm only on plots you've unlocked (anyone else visiting can look, not touch). The sidebar shows which plot you're on.
 
@@ -62,5 +62,52 @@ Five upgrades, 25 tiers each, for Copper (100 at tier 1 up to 4,000 at tier 25) 
 
 The SkyMart NPC (and the Desk's SkyMart tab) sells Hypixel's Garden gear for Copper (and a few things for coins): the Garden Scythe, gardening hoes and axes, the Lotus accessories, Copper Talisman and Ring, the Mk. I crop tools for each crop, vacuums, the Sprayonator and Pest Repellent, Biofuel and more.
 
+## Pests
+
+From **Garden V**, farming can stir up pests. Each crop you break has a **0.2% chance** to bring that crop's pest, at most one every **5 minutes** per Garden:
+
+| Pest | Crop | From Garden |
+| --- | --- | --- |
+| Fly, Cricket, Locust, Rat, Mosquito | Wheat, Carrot, Potato, Pumpkin, Sugar Cane | V |
+| Earthworm | Melon | VI |
+| Mite | Cactus | VII |
+| Moth | Cocoa Beans | VIII |
+| Slug | Mushroom | IX |
+| Beetle | Nether Wart | X |
+
+Pests float over your plots, glowing, with **600 health**. Swords and bows don't touch them: only a **vacuum** does (SkyMart sells them). Hold right-click and aim at a pest within 10 blocks; the vacuum's Damage hurts it every second. A pest you vacuum up gives **1,000 coins, 1,500 Farming XP** and an enchanted crop of its kind (one more for every 50 Farming Fortune).
+
+Leave them be and they cost you: with **4 or more pests** alive in your Garden, your Farming Fortune there drops by 5%, then 15%, 30%, 50% and at worst 75% (every 100 Bonus Pest Chance lets you carry one more before that, though it also brings pests more often). **Pest Repellent** halves the chance of pests for an hour; **Pest Repellent MAX** quarters it.
+
+## Pesthunter Phillip
+
+Phillip stands by his shed next to the Barn. Every pest you vacuum up is one to spend with him:
+
+| Item | Pests |
+| --- | --- |
+| Pesthunter Badge | 25 |
+| Pesthunter's Necklace, Cloak, Belt, Gloves | 40 each |
+
+## Jacob's Farming Contests
+
+Every **third SkyBlock day** (once an hour) Jacob runs a **20-minute contest** on three of the ten Garden crops (the calendar and Jacob's menu show the next one). You need **Farming X**. The first contest crop you harvest on your Garden is the one you compete in; the sidebar shows the time left, your crop, your score and the bracket you're in.
+
+At the end, everyone with at least **100 crops** gets a reward. With ten or more players in a crop, the brackets go by standing (Hypixel's: Diamond top 2%, Platinum 5%, Gold 10%, Silver 30%, Bronze 60%). With fewer, they go by score (counted in Wheat; Carrots and Potatoes count 3 times as much, Melon 5, Nether Wart 2.5):
+
+| Bracket | Score (Wheat) | Jacob's Tickets | Medals |
+| --- | --- | --- | --- |
+| Participation | 100 | 1 | - |
+| Bronze | 5,000 | 10 | 1 Bronze |
+| Silver | 15,000 | 15 | 1 Silver |
+| Gold | 40,000 | 25 | 1 Gold |
+| Platinum | 70,000 | 30 | 1 Gold + 1 Bronze |
+| Diamond | 100,000 | 35 | 1 Gold + 1 Silver |
+
+Rewards wait for you at **Jacob**, south of the Barn: right-click him and **Claim**.
+
+## Anita
+
+Anita, next to Jacob, sells farming gear for Jacob's Tickets and medals (Hypixel's prices): the InfiniDirt Wand, Prismapumps, the Hoes of Great, Greater and Greatest Tilling, the Basket of Seeds and Nether Wart Basket, and Anita's Talisman, Ring and Artifact (each upgrade takes the one before it). She also changes medals down: **1 Gold for 2 Silver**, **1 Silver for 2 Bronze**.
+
 > [!NOTE]
-> Not here yet: pests, Jacob's Farming Contests, crop upgrades, Garden Chips, the Greenhouse, Barn skins and plot presets.
+> Not here yet: crop upgrades, Garden Chips, the Greenhouse, Barn skins and plot presets.

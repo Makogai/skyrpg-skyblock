@@ -628,7 +628,11 @@ phase so the next session can pick up where this one stopped.
       the Barn plot (helper-built template), plot unlocks with Compost/Bundles and their Fortune, Garden levels (NEU),
       crop milestones (NEU thresholds), visitors with offers and Copper, the Composter and its upgrades, SkyMart; the
       Desk's tabbed screen (`GardenMenu` + `GardenScreen`); sidebar plot names; costs from sacks too.
-- [ ] The Garden, part 2: pests and vacuums, Jacob's Farming Contests and Anita, crop upgrades, chips, the Greenhouse.
+- [x] **The Garden, part 2** (`Pests`, `Contests`): the ten pests (Garden V+, 0.2% a crop, 5-minute cooldown), vacuums,
+      the Farming Fortune penalty, Pest Repellent, Pesthunter Phillip's shop; Jacob's Farming Contests on the calendar
+      (Farming X, Hypixel's brackets plus score floors, tickets and medals claimed at Jacob, the sidebar), Anita's shop and
+      medal trades.
+- [ ] The Garden, part 3: the Sprayonator, crop upgrades, chips, the Greenhouse.
 - [ ] Galatea and Hunting, Backwater Bayou, The Rift.
 
 ### Owner directions (2026-10-16)

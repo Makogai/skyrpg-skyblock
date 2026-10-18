@@ -31,10 +31,11 @@ final class GardenData extends SavedData {
         final List<String> visitors = new ArrayList<>();
         final Map<String, Integer> served = new HashMap<>();
         long nextVisitor;
+        int pests;
 
         record Saved(boolean built, int plots, long xp, long copper, Map<String, Long> crops, Map<String, Integer> upgrades, double organic,
                      double fuel, int compost, long composterAt, Map<String, Integer> composter, List<String> visitors,
-                     Map<String, Integer> served, long nextVisitor) {
+                     Map<String, Integer> served, long nextVisitor, int pests) {
         }
 
         static final Codec<State> CODEC = RecordCodecBuilder.<Saved>create(i -> i.group(
@@ -51,7 +52,8 @@ final class GardenData extends SavedData {
                 Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("composter", Map.of()).forGetter(Saved::composter),
                 Codec.STRING.listOf().optionalFieldOf("visitors", List.of()).forGetter(Saved::visitors),
                 Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("served", Map.of()).forGetter(Saved::served),
-                Codec.LONG.optionalFieldOf("next_visitor", 0L).forGetter(Saved::nextVisitor)).apply(i, Saved::new))
+                Codec.LONG.optionalFieldOf("next_visitor", 0L).forGetter(Saved::nextVisitor),
+                Codec.INT.optionalFieldOf("pests", 0).forGetter(Saved::pests)).apply(i, Saved::new))
                 .xmap(State::from, State::save);
 
         private static State from(Saved s) {
@@ -70,12 +72,13 @@ final class GardenData extends SavedData {
             state.visitors.addAll(s.visitors());
             state.served.putAll(s.served());
             state.nextVisitor = s.nextVisitor();
+            state.pests = s.pests();
             return state;
         }
 
         private Saved save() {
             return new Saved(built, plots, xp, copper, Map.copyOf(crops), Map.copyOf(upgrades), organic, fuel, compost, composterAt,
-                    Map.copyOf(composter), List.copyOf(visitors), Map.copyOf(served), nextVisitor);
+                    Map.copyOf(composter), List.copyOf(visitors), Map.copyOf(served), nextVisitor, pests);
         }
     }
 
