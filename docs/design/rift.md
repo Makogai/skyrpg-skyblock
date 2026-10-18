@@ -86,8 +86,29 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
 - Mobs: Autonull, Frozille (Living Cave), Autoboots (Colosseum), Thrall, Fledgling, Splatter (Chateau; Hemovibe and
   Vampiric Melons), Puff (Mountaintop). The Fairylosopher sells an Enigma Soul (10,000 Motes + 32 Splatter Crux).
 
+## Part 4 (`RiftQuests.java`, `Bacte.java`, `VampireSlayer.java`): the ways to the later Timecharms
+
+- **Living Metal**: lapis ore in the Living Cave breaks for Living Metal with the Self-Recursive Pickaxe (1 a block, 2 in
+  Living Stillness, times a multiplier that climbs 1x to 5x every 10 blocks; it resets when you leave the Rift). The
+  Living Timecharm is NEU's recipe (8 x 20 Living Metal around 20 Frosty Crux).
+- **Barry**: talk his seven protesters down, he gives you his Montgray Pen; the pen and 16 Scribe Crux buy the SkyBlock
+  Citizen Timecharm (Hypixel's trade).
+- **Bacte** in the Colosseum: 1,000 health, five phases (its name's letters on the bar), tentacles each phase (1, 2, 3,
+  4, 6; 60 health, 20 from phase 4) that must die before it can be hurt, spikes from phase 2, a slice from phase 3, a
+  bouncy floor in phase 5. 8 Bacte Fragments and 6,000 Motes; back after a minute. Decided: hitting tentacles stands in
+  for punching Globowls. The Globulate Timecharm is NEU's recipe (8 Bacte Fragments around 20 Shy Crux).
+- **The Vampire Slayer** (Maddox in the Chateau's great hall): tiers I-V for 2,000 / 4,000 / 5,000 / 7,000 / 10,000
+  Motes (Hypixel's), II-V each after the one before, IV Combat 15, V Combat 25. The quest fills from the Chateau's
+  vampires (Thrall 30, Fledgling 20, Splatter 30; decided 300 / 600 / 1,000 / 1,500 / 2,400). The Riftstalker
+  Bloodfiend (625 / 1,100 / 1,800 / 2,400 / 3,000 health): Coagulation takes 0.5 / 1 / 1 / 1 / 1.5 Hearts a second,
+  Twinclaws (II+) 3 / 5 / 6 / 8 Hearts in front of it every 7 s, Mania (II+ at 60%, III+ also 75% and 40%) 8 s
+  untouchable. Below 20% only a **Steak Stake** finishes it (Maddox sells them, 800 Motes, decided). Rewards: slayer XP
+  10 / 25 / 60 / 120 / 150 (levels at 20, 75, 240, 840, 2,400: +20 / 30 / 45 / 60 / 80 Rift Time, +15 / 25 / 35 / 50 / 75
+  SkyBlock XP), Hypixel's Coven Seals and rare drops, and Motes (decided: the fee plus a quarter). Its level unlocks the
+  recipes that need it (the Bloodbadge at 3, for the Vampiric Timecharm) through `SlayerLevels.installKey("vampire")`.
+
 ## Still to build
 
 Reed's boat, the Larva Hook, the Rift Transfer, Gunther's race, the hot dog
-contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse, Shen's auctions; the ways to the
-later Timecharms (Barry's pen, Living Metal mining, Bacte, the Vampire Slayer, Shen); the Rift Gallery itself.
+contest and the other area quests, the Dreadfarm's crops (Wand of Farming), the Mirrorverse (and its Timecharm) and the Dreadfarm's crops
+(Chicken N Egg), Shen's Celestial Timecharm, Shen's auctions, the Sun Gecko, the Rift Gallery itself.

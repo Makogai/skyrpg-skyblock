@@ -265,6 +265,18 @@ final class RiftNpcs {
                     : "The Chateau is open to you. Mind the vampires.").withStyle(ChatFormatting.WHITE)));
             return;
         }
+        if (name.startsWith("Maddox the Slayer")) {
+            VampireSlayer.maddox(player, npcNear(player, "Maddox"));
+            return;
+        }
+        if (name.startsWith("Protester")) {
+            RiftQuests.protester(player, name);
+            return;
+        }
+        if (name.equals("Barry")) {
+            RiftQuests.barry(player, npcNear(player, "Barry"));
+            return;
+        }
         if (name.equals("Elise")) {
             Timecharms.elise(player, npcNear(player, "Elise"));
             return;

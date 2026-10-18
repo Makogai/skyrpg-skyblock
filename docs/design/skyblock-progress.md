@@ -645,8 +645,11 @@ phase so the next session can pick up where this one stopped.
       the Photon Pathway, Stillgore Chateau with the Oubliette and the Mountaintop with the Time Chamber (helper-built,
       laid out so each meets another); their gates and drain speeds; Hearts in the Chateau; Porhtal's seven eyes and fast
       travel; Montezuma's nine pieces; 51 Enigma Souls in all.
-- [ ] The Rift, part 4: the Vampire Slayer, Bacte, Living Metal, Barry's pen and the other ways to the later Timecharms,
-      the Mirrorverse, the area quests.
+- [x] **The Rift, part 4** (`RiftQuests`, `Bacte`, `VampireSlayer`): Living Metal mining, Barry's protesters and pen
+      (the Citizen Timecharm), Bacte in the Colosseum (fragments for the Globulate), the Vampire Slayer (tiers I-V, Maddox,
+      Hearts, Mania, Twinclaws, the Steak Stake, levels and drops; Bloodbadges for the Vampiric).
+- [ ] The Rift, part 5: the Mirrorverse, the Dreadfarm's crops and Chicken N Egg, Shen and the Celestial charm, the area
+      quests, Reed's boat.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

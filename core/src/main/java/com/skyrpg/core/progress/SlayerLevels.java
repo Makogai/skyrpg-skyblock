@@ -12,6 +12,8 @@ import net.minecraft.world.entity.player.Player;
 public final class SlayerLevels {
     private static ToIntBiFunction<Player, String> server = (player, key) -> 0;
     private static ToIntBiFunction<Player, String> client = (player, key) -> 0;
+    /** Slayers kept by other mods (the Rift's Vampire Slayer): key -> their level, on both sides. */
+    private static final java.util.Map<String, java.util.function.ToIntFunction<Player>> EXTRA = new java.util.concurrent.ConcurrentHashMap<>();
 
     private SlayerLevels() {
     }
@@ -24,8 +26,17 @@ public final class SlayerLevels {
         client = installed;
     }
 
+    /** A slayer another mod keeps (both sides read it from the player). */
+    public static void installKey(String key, java.util.function.ToIntFunction<Player> lookup) {
+        EXTRA.put(key, lookup);
+    }
+
     /** The player's level (0 for none) in the slayer with that key. */
     public static int level(Player player, String key) {
+        java.util.function.ToIntFunction<Player> extra = EXTRA.get(key);
+        if (extra != null) {
+            return extra.applyAsInt(player);
+        }
         return (player.level().isClientSide() ? client : server).applyAsInt(player, key);
     }
 }

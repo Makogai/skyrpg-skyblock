@@ -109,6 +109,9 @@ public final class Rift {
         LeechSupreme.init();
         Porhtal.init();
         Montezuma.init();
+        RiftQuests.init();
+        Bacte.init();
+        VampireSlayer.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);
         // Your hits in the Rift deal your Rift Damage, whatever you hold.
@@ -326,6 +329,7 @@ public final class Rift {
     private static void end(ServerPlayer player) {
         VISITS.remove(player.getUUID());
         player.removeAttached(HUD);
+        RiftQuests.reset(player);
     }
 
     /** A step back from a portal you can't use yet. */
@@ -442,6 +446,24 @@ public final class Rift {
         Notice.of(Notice.Kind.WARN).tag("THE OUBLIETTE").send(player, Component.literal("You ran out of Hearts and were dragged to the Oubliette!")
                 .withStyle(ChatFormatting.RED));
         Msg.playSound(player, SoundEvents.IRON_DOOR_CLOSE, 1f, 0.6f);
+    }
+
+    /** Hearts taken by a boss's attack in the Chateau (the Bloodfiend's Coagulation and Twinclaws). */
+    static void takeHearts(ServerPlayer player, double hearts, String what) {
+        Visit visit = VISITS.get(player.getUUID());
+        if (visit == null || !visit.inChateau || player.isCreative()) {
+            return;
+        }
+        if (visit.hearts < 0) {
+            visit.hearts = maxHearts(player);
+        }
+        visit.hearts -= hearts;
+        player.sendOverlayMessage(Component.literal(what + "! -" + (hearts % 1 == 0 ? String.valueOf((int) hearts) : String.valueOf(hearts)) + " ❤")
+                .withStyle(ChatFormatting.RED));
+        if (visit.hearts <= 0) {
+            oubliette(player, visit);
+        }
+        hud(player, visit);
     }
 
     /** Hearts healed (Healing Melons), in the Chateau. */

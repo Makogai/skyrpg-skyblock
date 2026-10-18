@@ -125,5 +125,32 @@ In **Stillgore Château**, monsters take **Hearts** (you have 10) instead of Rif
 
 Sad Jacquelle's cat Montezuma lost his soul in **nine pieces** all over the Rift: under a tree, on a rooftop, behind a cracked wall, under the snow... Right-click a piece to take it, then bring it to her. Every piece back gives **+15 Rift Time**; from six on, each also gives Mana Regen in the Rift.
 
+## Earning the later Timecharms
+
+| Timecharm | How |
+| --- | --- |
+| SkyBlock Citizen | Talk Barry's seven protesters down outside the Barry Center. He gives you his **Montgray Pen**; bring it with **16 Scribe Crux** and he signs you in. |
+| Living | Mine the Living Cave's lapis with a **Self-Recursive Pickaxe** for **Living Metal** (twice as much in Living Stillness, and more the longer you keep mining). Craft it from 160 Living Metal and 20 Frosty Crux. |
+| Globulate | Beat **Bacte** in the Colosseum for **Bacte Fragments**; craft it from 8 of them and 20 Shy Crux. |
+| Vampiric | Craft it from Bloodbadges, which open at **Vampire Slayer 3**. |
+
+### Bacte
+
+Walk into the Colosseum's arena and Bacte, a giant slime with 1,000 health, oozes out. Each phase it raises tentacles (one, then two, three, four and six); it can't be hurt while any is up. Watch for spikes (stand clear of the green circles), its slice (jump) and, at the end, a floor that bounces. It drops **8 Bacte Fragments and 6,000 Motes**.
+
+### The Vampire Slayer
+
+**Maddox**, in Stillgore Château's great hall, starts the **Riftstalker Bloodfiend** for Motes:
+
+| Tier | Motes | Health | Hearts a second | Slayer XP | Needs |
+| --- | --- | --- | --- | --- | --- |
+| I | 2,000 | 625 | 0.5 | 10 | - |
+| II | 4,000 | 1,100 | 1 | 25 | a tier I kill |
+| III | 5,000 | 1,800 | 1 | 60 | a tier II kill |
+| IV | 7,000 | 2,400 | 1 | 120 | a tier III kill, Combat 15 |
+| V | 10,000 | 3,000 | 1.5 | 150 | a tier IV kill, Combat 25 |
+
+Kill the Château's vampires to fill the quest, then the Bloodfiend rises beside you. It drains your Hearts every second. From tier II it also slashes with **Twinclaws** (don't stand in front of it) and goes into **Mania** (it can't be hurt for 8 seconds). Below a fifth of its health only a **Steak Stake** (Maddox sells them) finishes it. Rewards are Coven Seals, rare drops (Bubba Blister, Guardian Lucky Block, McGrubber's Burger, Unfanged Vampire Part) and Motes. Slayer levels (20, 75, 240, 840 and 2,400 XP) give Rift Time and SkyBlock XP.
+
 > [!NOTE]
-> Not here yet: the Vampire Slayer, Bacte, Living Metal mining, Barry's quest and the other area quests (the ways to the later Timecharms), Reed's boat and the Mirrorverse.
+> Not here yet: the Mirrorverse and its Timecharm, the Dreadfarm's crops (Chicken N Egg), Shen's Celestial Timecharm, Reed's boat and the other area quests.
