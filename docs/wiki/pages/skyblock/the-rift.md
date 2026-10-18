@@ -85,7 +85,7 @@ It drops **8 Leech Supreme Fragments and 3,000 Motes** to everyone who fought it
 
 ## Timecharms
 
-**Timecharms** open the rest of the Rift. Craft them or earn them, then bring them to **Elise** in the Rift's Wizard Tower to secure them: +100 SkyBlock XP each, and your first earns the **Rift Necklace**.
+**Timecharms** open the rest of the Rift. Craft them or earn them, then bring them to **Elise** in the Rift's Wizard Tower to secure them: +100 SkyBlock XP each, and your first earns the **Rift Necklace**. In the Rift its stats grow with every Timecharm you've secured: from +60 Rift Time with one to +380 Rift Time, +6 Speed, +10 Intelligence, +25 Mana Regen, +1 Rift Damage and +1 Heart with all eight.
 
 The first is the **Supreme Timecharm**: 4 Bottled Odonata, 32 Lil' Pads, 24 Deadgehog Spines and 4 Leech Supreme Fragments. To bottle an **Odonata** (the dragonflies over the woods' ponds), hold an Empty Odonata Bottle (the Bugshopper sells them) and look at one for 3 seconds.
 
@@ -193,6 +193,16 @@ With the key, press the button by the iron door to reach the locked room and its
 
 Then he sells you the finished **Rift Boat** for 25,000 Motes.
 
+## Cowboy Nick and the Half-Eaten Cave
+
+**Cowboy Nick** (by the rabbit pen in the Village Plaza) lends you his **Horsezooka**: right-click to launch a horse that clears hay out of its way. The **Half-Eaten Cave** east of the Plaza is packed with hay that grows back after half a minute. Don't be standing there when it does: you get squashed (-60 seconds of Rift Time) and land back at the mouth.
+
+Clear 3,000 bales and Nick gives you a rabbit. It follows you; take it to the carrot patches at the back of the cave and it nibbles them into **Half-Eaten Carrots** (you can pick them by hand too). Eighty make a **Nearly-Whole Carrot**; bring Nick seven, one for each of his bunnies. An Enigma Soul hides behind the hay at the very end.
+
+## Shen's Auctions
+
+**Damia** on Barrier Street runs Shen's Auctions: a new one every SkyBlock year, with bids in Motes. Each lot goes to its top bidders: Dead Cat Food (60), Flex Helmet (15), Placeable Fairy Soul (15), Punchcard Artifact (25), Rift Prism (25) and Ancient Elevator (15). Your bid is paid when you make it; when the year ends, collect what you won (or your Motes, if you were outbid) from Damia.
+
 ## Earning the later Timecharms
 
 | Timecharm | How |
@@ -218,6 +228,19 @@ Youngite ore (light blue glass) grows round the Mountaintop's Continuum and on t
 **Madame Eleanor Q. Goldsworth X** (the summit) sells **Shen's Ringalia** for 25,000 Motes, 64 Puff Crux, 20 Youngite, 20 Timite, 20 Obsolite and the Disinfestor Gloves. **Obo** only lets its wearers into the **Cerebral Citadel**.
 
 Inside, **Shen's Hive Mind** fills the west wall: seven lamps over seven buttons. The oak button on the left picks the sequence (one per Shen), the one on the right resets it. Each button flips its own lamp and, in every sequence but the first, some others. Light all seven and that Shen will see you: **Shen Citrinitas** gives the **Celestial Timecharm**, **Shen Magnum Opus** the **Golden Belt** (+100 Rift Time, +10 Intelligence, +4 Speed).
+
+### The Sun Gecko
+
+**Oruo the Almighty** (by the Time Chamber's door, inside the mountain) lets you fight the **Sun Gecko** for 5,000 Motes (you need 2:00 of Rift Time left; it runs twice as fast in there). It has 250 health and you have 10 Hearts.
+
+- **Instant Transmission:** it appears right behind you. Move away.
+- **Perfect Volley:** it throws you into the air, unless your combo is 3 or more.
+- **Extreme Speed:** three clones charge round the room. Don't hit the wrong one.
+- **Spirit Beam:** it rises and fires where you stood: a second of Rift Time if you're still there.
+
+**Keep your combo going:** every hit before the timer runs out keeps it, and every third hit raises it (more damage each level). Lose it and you lose 4 Hearts.
+
+A win is **5 Sun Gecko Essence**. After two, Oruo shows you seven **modifiers** (Revival, Combo Maniac, Time Sliced, Buffantics, Collective, Brand New Dance and Culmination); each one you turn on makes the fight harder and pays 5 more essence. Spend it in his shop: Combo Mania (a longer combo timer), Extremely Real Shurikens, Grandma's Knitting Needle, Super Leech Modifiers, an Enigma Soul, and the **Blessing of Time** (three tiers of Speed, Rift Time, Mana Regen, Strength, Health, Intelligence and Defense in the Rift).
 
 ### Ubik's games
 
@@ -246,4 +269,4 @@ Walk into the Colosseum's arena and Bacte, a giant slime with 1,000 health, ooze
 Kill the Château's vampires to fill the quest, then the Bloodfiend rises beside you. It drains your Hearts every second. From tier II it also slashes with **Twinclaws** (don't stand in front of it) and goes into **Mania** (it can't be hurt for 8 seconds). Below a fifth of its health only a **Steak Stake** (Maddox sells them) finishes it. Rewards are Coven Seals, rare drops (Bubba Blister, Guardian Lucky Block, McGrubber's Burger, Unfanged Vampire Part) and Motes. Slayer levels (20, 75, 240, 840 and 2,400 XP) give Rift Time and SkyBlock XP.
 
 > [!NOTE]
-> Not here yet: the Sun Gecko, Cowboy Nick and the Half-Eaten Cave, the Living Metal snakes, the Wizardman Trials, the Rift Gallery, Shen's auctions and the other area quests.
+> Not here yet: the Living Metal snakes, the Wizardman Trials, the Rift Gallery's rooms and the other area quests.

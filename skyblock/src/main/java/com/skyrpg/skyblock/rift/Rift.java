@@ -120,6 +120,8 @@ public final class Rift {
         Reed.init();
         Kat.init();
         Mountaintop.init();
+        SunGecko.init();
+        CowboyNick.init();
         WestVillage.init();
         JsonDataLoader.register(SkyRpgSkyblock.id("rift_spots"), "skyrpg/spawn_spots", Rift::load);
         ServerTickEvents.END_SERVER_TICK.register(Rift::tick);
@@ -219,6 +221,7 @@ public final class Rift {
                     if (!secured.contains(charm)) {
                         secured.add(charm);
                         player.setAttached(Timecharms.SECURED, List.copyOf(secured));
+                        Stats.refresh(player);
                     }
                     return 1;
                 })))));

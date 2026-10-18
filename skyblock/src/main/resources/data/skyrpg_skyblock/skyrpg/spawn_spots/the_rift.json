@@ -713,6 +713,22 @@
       ],
       "yaw": 0.0
     },
+    "enigma:Horsing Around": {
+      "pos": [
+        49.5,
+        69.0,
+        -57.5
+      ],
+      "yaw": 0.0
+    },
+    "half_eaten_cave": {
+      "pos": [
+        36.5,
+        69.0,
+        -57.5
+      ],
+      "yaw": 90.0
+    },
     "enigma:Plaza Fleespook": {
       "pos": [
         -4.5,

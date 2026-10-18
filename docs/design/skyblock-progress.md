@@ -655,8 +655,11 @@ phase so the next session can pick up where this one stopped.
 - [x] **The Rift, part 6** (`Ubik`, `Reed`, `Kat`, `Mountaintop`): Ubik's three games, Reed's boat, Kat's Infested House
       (the Turbomax Vacuum, the Vermin Bin, her trades and the soul key), Timite (Youngite ore, the Time Gun, the
       Anti-Sentient/Eon/Chrono Pickaxes), Shen's Ringalia, Obo, Shen's Hive Mind (the Celestial Timecharm, the Golden Belt).
-- [ ] The Rift, part 7: the Sun Gecko, Cowboy Nick and the Half-Eaten Cave, the Living Metal snakes, the Wizardman
-      Trials, the Rift Gallery and Necklace, Shen's auctions, the Eleanors' outfit puzzles and the other area quests.
+- [x] **The Rift, part 7** (`SunGecko`, `CowboyNick`, `ShenAuction`): the Sun Gecko (attacks, combo, seven modifiers,
+      Sun Gecko Essence and Oruo's shop, the Blessing of Time), Cowboy Nick (the Horsezooka, the Half-Eaten Cave's hay,
+      the rabbit and carrots), the Rift Necklace's stats, Shen's Auctions.
+- [ ] The Rift, part 8: the Living Metal snakes, the Wizardman Trials, the Rift Gallery, the Eleanors' outfit puzzles,
+      Detective Amog, Kloon, Okron, Seraphine and the remaining souls.
 - [ ] Galatea and Hunting, Backwater Bayou.
 
 ### Owner directions (2026-10-16)

@@ -444,8 +444,9 @@ class Area:
                     break
                 below = (below[0], below[1] - 1, below[2])
         dropped = 0
+        keep_ids = getattr(self, "keep_ids", set())     # blocks the mod changes by hand (the Half-Eaten Cave's hay)
         for pos in list(full):
-            if pos not in keep and cells[pos][0]["id"] not in breakable:
+            if pos not in keep and cells[pos][0]["id"] not in breakable and cells[pos][0]["id"] not in keep_ids:
                 del cells[pos]
                 dropped += 1
         return dropped

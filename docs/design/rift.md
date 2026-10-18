@@ -181,9 +181,36 @@ Hypixel's Rift (Phase 4). Research: `docs/design/research/rift.md`. What's built
   **Golden Belt**.
 - Fixed: a card menu that opens another menu (a game, a sub-page) no longer closes it straight away.
 
+## Part 7 (`SunGecko`, `CowboyNick`, `ShenAuction`; the Rift Necklace in `Timecharms`)
+
+- **The Sun Gecko** (Oruo the Almighty, 5,000 Motes, at least 2:00 left; one fight at a time; Rift Time runs double in
+  the Time Chamber): a giant gold axolotl with 250 health and Hypixel's attacks: Instant Transmission (it appears behind
+  you; 1 Heart if you're still close), Perfect Volley (throws you skyward unless your combo is 3+), Extreme Speed (three
+  untouchable clones; they only hurt with Brand New Dance) and the Spirit Beam (a beam where you stood takes a second of
+  Rift Time). You fight in Hearts (10). **Combo**: each hit within the timer (2.5 s, +0.5 per Combo Mania, +0.2 a
+  modifier with Collective) keeps it, every 3 hits raise it (+25% damage a level), losing it costs 4 Hearts. The seven
+  modifiers (after two wins, toggled at Oruo, +5 essence and +50 Sun Gecko XP each): Revival, Combo Maniac, Time Sliced,
+  Buffantics (hazards and combo buffs), Collective, Brand New Dance (faster, harder, the Wyld Nuke: hit it 3 times in
+  5 s) and Culmination. A win is 5 Sun Gecko Essence (a new essence kind) and 50 XP. Oruo's essence shop: Combo Mania
+  50, Extremely Real Shuriken x16 32, Grandma's Knitting Needle 50, Super Leech Modifier x2 25, an Enigma Soul 25 (an NPC
+  soul) and the Blessing of Time I-III (5 / 50 / 100; in the Rift +1 Speed, +30 Rift Time, +1 Mana Regen, +2 Strength,
+  +5 Health, +2 Intelligence, +2 Defense a tier). Decided: the attack timings, damage and combo numbers (the wiki has
+  none), and hitting it with your fists or sword rather than Hypixel's own combo weapons.
+- **Cowboy Nick** (Village Plaza): his Horsezooka's Shoot launches a horse that clears hay in its path. The Half-Eaten
+  Cave is packed with hay (rebuilt, area v3) that grows back 30-35 s later and squashes whoever stands in it (-60 s Rift
+  Time, back to the mouth; rabbits too). Clear 3,000 bales and he gives you a rabbit that follows you and nibbles the
+  carrot patches at the back of the cave into Half-Eaten Carrots (you can pick them by hand too; patches grow back in
+  60 s). Seven Nearly-Whole Carrots (80 Half-Eaten each, the collection's recipe) finish his task. The cave's Enigma
+  Soul (Horsing Around) sits behind the hay. Decided: the regrow times.
+- **The Rift Necklace**'s stats now apply in the Rift, growing with each Timecharm secured (Hypixel's tiers, 1-8: +60 to
+  +380 Rift Time, up to +6 Speed, +10 Intelligence, +25 Mana Regen, +1 Rift Damage, +1 Heart). Decided: they apply
+  whether or not the necklace is worn (it's an accessory slot item on Hypixel).
+- **Shen's Auctions** (Damia, Barrier Street): a sealed auction each SkyBlock year, saved with the world. Each lot goes
+  to its top bidders (Hypixel's counts); bids are paid when placed; at the year's end the winners collect the lot and
+  the rest their Motes from Damia. Decided: a 1,000 Mote opening bid, raises of 1,000 or 10,000.
+
 ## Still to build
 
-The Sun Gecko and its essence shop, Cowboy Nick (the Horsezooka, the Half-Eaten Cave, Half-Eaten Carrots), the
-Living Metal snakes (Living Metal Hearts), the Wizardman Trials, the Rift Gallery and the Rift Necklace's stats, Shen's
-auctions, the Eleanors' outfit puzzles, Detective Amog, Kloon, Okron, Seraphine, Riftwart Roots, the Larva Hook, the Rift
-Transfer, growing the Great Beanstalk (the stalk is built full-grown).
+The Living Metal snakes (Living Metal Hearts), the Wizardman Trials, the Rift Gallery's building, the Eleanors' outfit
+puzzles, Detective Amog, Kloon, Okron, Seraphine, Riftwart Roots, the Larva Hook, the Rift Transfer, growing the Great
+Beanstalk (the stalk is built full-grown).

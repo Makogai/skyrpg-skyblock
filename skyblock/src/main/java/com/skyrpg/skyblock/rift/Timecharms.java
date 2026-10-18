@@ -45,8 +45,36 @@ final class Timecharms {
     private Timecharms() {
     }
 
-    /** Loads the class at startup: an attachment type made after a player's data is read drops what they secured. */
+    /** The Rift Necklace's stats by Timecharms secured (Hypixel's tiers, inside the Rift): Rift Time, Speed, Intelligence,
+     *  Mana Regen, Rift Damage, Hearts. */
+    private static final double[][] NECKLACE = {
+            {60, 0, 0, 0, 0, 0}, {110, 0, 0, 0, 0, 0}, {155, 1, 5, 0, 0, 0}, {200, 2, 5, 10, 0, 0}, {245, 3, 10, 10, 0, 0},
+            {290, 4, 10, 15, 1, 0}, {335, 5, 10, 20, 1, 1}, {380, 6, 10, 25, 1, 1}};
+
+    /** Loads the class at startup (an attachment type made after a player's data is read drops what they secured), and
+     *  the Rift Necklace's stats, which grow with every Timecharm secured. */
     static void init() {
+        com.skyrpg.core.stats.Stats.registerSource(new com.skyrpg.core.stats.Stats.Source() {
+            @Override
+            public String name() {
+                return "Rift Necklace";
+            }
+
+            @Override
+            public void contribute(ServerPlayer player, com.skyrpg.core.stats.Stats.Contributor out) {
+                int secured = player.getAttachedOrElse(SECURED, List.of()).size();
+                if (secured == 0 || !Rift.isRift(player.level())) {
+                    return;
+                }
+                double[] tier = NECKLACE[Math.min(NECKLACE.length, secured) - 1];
+                out.add(com.skyrpg.core.stats.StatTypes.RIFT_TIME, tier[0]);
+                out.add(com.skyrpg.core.stats.StatTypes.SPEED, tier[1]);
+                out.add(com.skyrpg.core.stats.StatTypes.INTELLIGENCE, tier[2]);
+                out.add(com.skyrpg.core.stats.StatTypes.RIFT_MANA_REGEN, tier[3]);
+                out.add(com.skyrpg.core.stats.StatTypes.RIFT_DAMAGE, tier[4]);
+                out.add(com.skyrpg.core.stats.StatTypes.RIFT_HEALTH, tier[5]);
+            }
+        });
     }
 
     static boolean secured(ServerPlayer player, String charm) {
@@ -85,6 +113,7 @@ final class Timecharms {
             boolean first = list.isEmpty();
             list.add(charm);
             p.setAttached(SECURED, List.copyOf(list));
+            com.skyrpg.core.stats.Stats.refresh(p);
             SkyBlockXp.give(p, 100, name(charm));
             if (first) {
                 ItemDefinition necklace = ItemRegistry.skyblock("RIFT_NECKLACE_INSIDE");

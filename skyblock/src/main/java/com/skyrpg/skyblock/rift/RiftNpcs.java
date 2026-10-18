@@ -270,6 +270,18 @@ final class RiftNpcs {
             VampireSlayer.maddox(player, npcNear(player, "Maddox"));
             return;
         }
+        if (name.equals("Damia")) {
+            ShenAuction.open(player, npcNear(player, "Damia"));
+            return;
+        }
+        if (name.equals("Cowboy Nick")) {
+            CowboyNick.open(player, npcNear(player, "Cowboy Nick"));
+            return;
+        }
+        if (name.equals("Oruo the Almighty")) {
+            SunGecko.oruo(player, npcNear(player, "Oruo"));
+            return;
+        }
         if (name.equals("Obo")) {
             Mountaintop.talkObo(player);
             return;

@@ -14,7 +14,7 @@ import math
 from kit import hash01, noise
 from rift_lib import new_area, GROUND, SEAM, CROSSINGS, LAND_BOTTOM
 
-area = new_area("village_plaza", version=1)
+area = new_area("village_plaza", version=3)
 area.shell = 13
 S = area.set
 X0, X1, Z0, Z1 = -30, 69, -120, -31
@@ -688,6 +688,29 @@ lamp(38, G + 3, -55)
 sign(34, G + 1, -61, ["Half-Eaten", "Cave"], "minecraft:spruce_sign[rotation=12]") if False else None
 S(34, G + 1, -61, "spruce_fence")
 sign(34, G + 2, -61, ["Half-Eaten", "Cave"], "minecraft:spruce_sign[rotation=4]")
+# part 7: the cave is stuffed with hay past its mouth (the mod: the Horsezooka clears it, it grows back), with carrot
+# patches at the back for Cowboy Nick's rabbit and an Enigma Soul (Horsing Around) at the very end.
+CARROTS = []
+for x in range(38, 52):
+    for z in range(-66, -49):
+        if (x, z) not in area.top or not cave_cell(x, z):
+            continue
+        ceil_y = G + 4 + (1 if x > 41 else 0)
+        carrot = x >= 46 and abs(z + 58) <= 2 and (x + z) % 2 == 0
+        if carrot:
+            S(x, G, z, "farmland[moisture=7]")
+            S(x, G + 1, z, "carrots[age=7]")
+            CARROTS.append((x, z))
+        if carrot:
+            S(x, G + 2, z, "light[level=15]")                       # crops die in the dark: a light over each patch
+        for y in range(G + (3 if carrot else 1), ceil_y + 1):
+            if (x, z) == (49, -58) and y <= G + 2:
+                S(x, y, z, AIR)                                     # the soul's pocket
+            else:
+                S(x, y, z, "hay_block[axis=y]")
+SOUL_HORSING = (49, G + 1, -58)
+area.keep_ids = {"minecraft:hay_block"}
+print("cave carrots", len(CARROTS))
 reserve(24, -62, 52, -53, 0)
 for x in range(30, 62):
     for z in range(-75, -42):
@@ -959,6 +982,8 @@ for i, (x, y, z) in enumerate(PROTESTERS, 1):
 area.npc("spawn:montezuma_6", *MONTEZUMA_6, 0.0, "in a book at the flower shop's bookshelf (stand at (6, 69, -92))")
 area.npc("spawn:montezuma_7", *MONTEZUMA_7, 0.0, "on the Deja Vu Alley islet at (38, 64, -117)")
 area.npc("enigma:Rabbit Hat", *SOUL_RABBIT, 0.0, "by the rabbit pen")
+area.npc("enigma:Horsing Around", *SOUL_HORSING, 0.0, "deep in the Half-Eaten Cave, behind the hay")
+area.npc("spawn:half_eaten_cave", 36, G + 1, -58, 90.0, "the Half-Eaten Cave's mouth, facing in")
 area.npc("enigma:Plaza Fleespook", *SOUL_FLEE, 0.0, "hidden nook behind Taylor's")
 area.npc("enigma:Plaza Balloons", *SOUL_BALLOONS, 0.0, "on top of the balloon bunch, high over the plaza")
 area.npc("enigma:Larva Silk Trail", *SOUL_LARVA, 0.0, "end of the cobweb trail in the north back alley")
