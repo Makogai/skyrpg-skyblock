@@ -9,6 +9,7 @@ import com.skyrpg.core.data.JsonDataLoader;
 import com.skyrpg.core.economy.Wallet;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.core.text.Notice;
+import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.SkyStacks;
 import com.skyrpg.pets.Pets;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
@@ -20,19 +21,23 @@ import java.util.Optional;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.ItemStack;
 
 /**
  * Hypixel's Kat, the pet sitter: she takes one pet at a time up one rarity, for coins and sometimes items, and it's
  * ready after the upgrade's time (real time, even offline). Kat's 216 upgrades come from NEU
- * ({@code skyrpg/kat}, {@code tools/skyblock/import_kat.py}). Per profile.
+ * ({@code skyrpg/kat}, {@code tools/skyblock/import_kat.py}). Per profile. A Kat Flower skips a day of the wait and a Kat
+ * Bouquet five: right-click Kat with one while she has your pet.
  */
 public final class Kat {
     public record Upgrade(String pet, int from, int to, long coins, long seconds, List<String> items) {
@@ -51,6 +56,7 @@ public final class Kat {
 
     /** Pet -> its upgrades by the rarity they start from. */
     private static Map<String, Map<Integer, Upgrade>> upgrades = Map.of();
+    private static final long DAY_MILLIS = 86_400_000L;
 
     private Kat() {
     }
@@ -73,6 +79,20 @@ public final class Kat {
                             target.setAttached(JOB, new Job(job.pet(), job.tier(), System.currentTimeMillis()));
                             return 1;
                         })))));
+        // Before Kat's own menu opens: a flower or a bouquet in hand pays her for time instead.
+        Identifier first = SkyRpgSkyblock.id("kat_gifts_first");
+        UseEntityCallback.EVENT.addPhaseOrdering(first, Event.DEFAULT_PHASE);
+        UseEntityCallback.EVENT.register(first, (player, level, hand, entity, hit) -> {
+            String id = SkyItems.skyblockId(player.getItemInHand(hand));
+            boolean kat = entity.entityTags().stream().anyMatch(tag -> tag.startsWith("skyrpg_npc:") && tag.endsWith(":kat"));
+            if (!kat || !"KAT_FLOWER".equals(id) && !"KAT_BOUQUET".equals(id)) {
+                return InteractionResult.PASS;
+            }
+            if (player instanceof ServerPlayer server) {
+                skipTime(server, player.getItemInHand(hand), "KAT_BOUQUET".equals(id) ? 5 : 1);
+            }
+            return InteractionResult.SUCCESS;
+        });
         // "Your pet is ready" once, when it is.
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (server.getTickCount() % 200 != 0) {
@@ -153,6 +173,24 @@ public final class Kat {
                         .withStyle(ChatFormatting.GRAY)));
         Msg.playSound(player, SoundEvents.ALLAY_ITEM_GIVEN, 1.0f, 0.9f);
         return "";
+    }
+
+    /** A Kat Flower (1 day) or Bouquet (5 days) pays for time of the upgrade: Kat has your pet that much sooner. */
+    private static void skipTime(ServerPlayer player, ItemStack gift, int days) {
+        Job job = player.getAttached(JOB);
+        long now = System.currentTimeMillis();
+        if (job == null || job.ready() <= now) {
+            Notice.send(player, Notice.Kind.ERROR, Component.literal(job == null ? "Kat isn't looking after a pet of yours!"
+                    : "Your pet is already ready, no need to wait!"));
+            return;
+        }
+        player.setAttached(JOB, new Job(job.pet(), job.tier(), Math.max(now, job.ready() - days * DAY_MILLIS)));
+        gift.shrink(1);
+        Notice.of(Notice.Kind.PET).tag("KAT").send(player, Component.literal("Kat skipped " + days + (days == 1 ? " day" : " days")
+                + " of the wait for your ").withStyle(ChatFormatting.GRAY).append(SkyBlockPets.name(job.pet()))
+                .append(Component.literal("! " + (job.ready() - days * DAY_MILLIS <= now ? "It's ready now."
+                        : duration(job.ready() - days * DAY_MILLIS - now) + " to go.")).withStyle(ChatFormatting.GRAY)));
+        Msg.playSound(player, SoundEvents.ALLAY_ITEM_GIVEN, 1.0f, 1.4f);
     }
 
     /** Takes the upgraded pet back. */

@@ -39,8 +39,9 @@ import net.minecraft.world.phys.AABB;
  * {@code tools/skyblock/import_pet_abilities.py}): stats (some only in a place, at night, per nearby player, per skill
  * level, per digit of a collection), a percent of your own stats, stats from other stats (Elephant's Defense per Speed),
  * more damage to a kind of mob or in a situation (Ender Dragon, T-Rex, Megalodon), and less damage taken (Enderman,
- * Turtle). The numbers are the pet's at its level and rarity (Tier Boost included). Abilities the importer doesn't know
- * stay text.
+ * Turtle). The numbers are the pet's at its level and rarity (Tier Boost included). Abilities with a mechanic of their own
+ * are {@code perk}s, which {@link PetPerks} makes work (wisdom towards a mob, coins, minion speed, drops, Last Stand,
+ * Laserbeam, the Phoenix's Rekindle...). Abilities the importer doesn't know stay text.
  *
  * <p>Percents and conversions read your stats from the last time they were added up, leaving out what the abilities
  * themselves added, so they don't feed on themselves.
@@ -48,7 +49,20 @@ import net.minecraft.world.phys.AABB;
 public final class PetAbilities {
     record Effect(String ability, String kind, String stat, List<String> stats, int num, double amount, String of, double per, int perNum,
                   double above, boolean pct, double cap, int capNum, String where, String when, String mobs, int perPlayer, int maxPlayers,
-                  List<String> perLevel, String perDigit) {
+                  List<String> perLevel, String perDigit, String perk, String arg, int num2, double seconds, String perMob) {
+    }
+
+    /** One perk of the pet out: its effect, the effect's number at the pet's level, and the pet. */
+    record Perk(Effect effect, double value, ItemStack pet) {
+        /** The effect's second number ({@code num2}) at the pet's level. */
+        double second() {
+            return effect.num2() >= 0 ? SkyBlockPets.number(pet, effect.num2()) : 0;
+        }
+
+        /** Its limit: the pet's number {@code cap_num}, else the fixed {@code cap}. */
+        double cap() {
+            return effect.capNum() >= 0 ? SkyBlockPets.number(pet, effect.capNum()) : effect.cap();
+        }
     }
 
     /** Pet type -> rarity -> its effects. */
@@ -110,7 +124,8 @@ public final class PetAbilities {
                 number(e, "amount"), string(e, "of"), number(e, "per"), e.has("per_num") ? e.get("per_num").getAsInt() : -1, number(e, "above"),
                 e.has("pct") && e.get("pct").getAsBoolean(), number(e, "cap"), e.has("cap_num") ? e.get("cap_num").getAsInt() : -1,
                 string(e, "where"), string(e, "when"), string(e, "mobs"), (int) number(e, "per_player"), (int) number(e, "max_players"),
-                List.copyOf(perLevel), string(e, "per_digit"));
+                List.copyOf(perLevel), string(e, "per_digit"), string(e, "perk"), string(e, "arg"), e.has("num2") ? e.get("num2").getAsInt() : -1,
+                number(e, "seconds"), string(e, "per_mob"));
     }
 
     private static String string(JsonObject e, String key) {
@@ -122,7 +137,7 @@ public final class PetAbilities {
     }
 
     /** The effects of the pet this player has out (at the rarity its stats use). */
-    private static List<Effect> active(ServerPlayer player, ItemStack[] petOut) {
+    static List<Effect> active(ServerPlayer player, ItemStack[] petOut) {
         ItemStack pet = Pets.active(player);
         if (!SkyBlockPets.isPet(pet)) {
             return List.of();
@@ -131,7 +146,35 @@ public final class PetAbilities {
         return effects.getOrDefault(SkyBlockPets.type(pet), Map.of()).getOrDefault(SkyBlockPets.statTier(pet), List.of());
     }
 
-    private static double value(Effect e, ItemStack pet) {
+    /** The perks of this name that the pet out has now. */
+    static List<Perk> perks(ServerPlayer player, String name) {
+        ItemStack[] pet = new ItemStack[1];
+        List<Perk> out = new ArrayList<>();
+        for (Effect e : active(player, pet)) {
+            if (e.kind().equals("perk") && e.perk().equals(name) && applies(player, e)) {
+                out.add(new Perk(e, value(e, pet[0]), pet[0]));
+            }
+        }
+        return out;
+    }
+
+    /** What the pet out's perks of this name add up to for this argument ("" = any), 0 without one. */
+    public static double perk(ServerPlayer player, String name, String arg) {
+        double total = 0;
+        for (Perk perk : perks(player, name)) {
+            if (arg.isEmpty() || perk.effect().arg().equals(arg)) {
+                total += perk.value();
+            }
+        }
+        return total;
+    }
+
+    /** Whether the pet out has a perk of this name (for the ones without a number). */
+    public static boolean has(ServerPlayer player, String name) {
+        return !perks(player, name).isEmpty();
+    }
+
+    static double value(Effect e, ItemStack pet) {
         return e.num() >= 0 ? SkyBlockPets.number(pet, e.num()) : e.amount();
     }
 
@@ -154,6 +197,7 @@ public final class PetAbilities {
             double v = value(e, pet[0]);
             switch (e.kind()) {
                 case "stat" -> add(out, e.stat(), v * times(player, e));
+                case "perk" -> PetPerks.contribute(player, e, v, pet[0], (id, value) -> add(out, id, value));
                 case "stat_pct" -> {
                     double percent = v;
                     if (!e.of().isEmpty() && e.per() > 0) {
@@ -198,6 +242,9 @@ public final class PetAbilities {
             long near = player.level().players().stream().filter(p -> p.distanceToSqr(player) <= r2).count();
             return Math.min(e.maxPlayers() > 0 ? e.maxPlayers() : near, near);
         }
+        if (!e.perMob().isEmpty()) {
+            return Math.min(e.maxPlayers(), PetPerks.nearby(player, e.perMob(), e.perPlayer()));
+        }
         if (!e.perLevel().isEmpty()) {
             double levels = 0;
             for (String skill : e.perLevel()) {
@@ -214,7 +261,7 @@ public final class PetAbilities {
     }
 
     /** Its place and time: a place we don't have yet (the Crimson Isle, the Garden...) never counts. */
-    private static boolean applies(ServerPlayer player, Effect e) {
+    static boolean applies(ServerPlayer player, Effect e) {
         ServerLevel level = player.level();
         if (e.when().equals("night") && level.isBrightOutside()) {
             return false;
@@ -230,6 +277,7 @@ public final class PetAbilities {
             case "public" -> com.skyrpg.hub.Hub.isHub(level) || com.skyrpg.hub.Hub.isPublic(level);
             case "private_island" -> Islands.isIslands(level);
             case "crystal_hollows", "dwarven_mines", "the_park" -> dimension.equals(e.where());
+            case "near_water", "near_fluid" -> PetPerks.nearFluid(player, e.where().equals("near_fluid"));
             case "mining_islands" -> MINING_ISLANDS.contains(dimension);
             case "magma_fields" -> {
                 Zones.Zone zone = Zones.at(level, player.blockPosition());
@@ -249,8 +297,10 @@ public final class PetAbilities {
                     multiplier *= 1 + more(attacker, target, source, e, value(e, pet[0]), pet[0]) / 100;
                 }
             }
+            multiplier *= PetPerks.dealt(attacker, target, source);
         }
         if (target instanceof ServerPlayer defender) {
+            multiplier *= PetPerks.taken(defender, source);
             Entity attacker = source.getEntity();
             for (Effect e : active(defender, pet)) {
                 if (!e.kind().equals("damage_from") || e.when().equals("low_health") && defender.getHealth() >= defender.getMaxHealth() * 0.4f) {
@@ -289,7 +339,7 @@ public final class PetAbilities {
     }
 
     /** Hypixel's mob kinds, by vanilla type. */
-    private static boolean is(Entity entity, String kind) {
+    static boolean is(Entity entity, String kind) {
         EntityType<?> type = entity.getType();
         return switch (kind) {
             case "ender" -> type == EntityTypes.ENDERMAN || type == EntityTypes.ENDERMITE || type == EntityTypes.ENDER_DRAGON
@@ -300,6 +350,11 @@ public final class PetAbilities {
             case "zombies" -> type.builtInRegistryHolder().is(EntityTypeTags.ZOMBIES);
             case "wolves" -> type == EntityTypes.WOLF;
             case "slimes" -> type == EntityTypes.SLIME || type == EntityTypes.MAGMA_CUBE;
+            case "blaze" -> type == EntityTypes.BLAZE;
+            case "enderman" -> type == EntityTypes.ENDERMAN;
+            case "zombie" -> type.builtInRegistryHolder().is(EntityTypeTags.ZOMBIES);
+            case "spider" -> type == EntityTypes.SPIDER || type == EntityTypes.CAVE_SPIDER;
+            case "wolf" -> type == EntityTypes.WOLF;
             default -> false;
         };
     }

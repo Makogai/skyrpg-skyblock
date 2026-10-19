@@ -298,7 +298,7 @@ phase so the next session can pick up where this one stopped.
       (`/pets`, the SkyBlock Menu tile): summon, put away, take out. The survival Pets page is retired in SkyBlock.
       Pets are SkyBlock ids too (`PetCatalog`: "BEE;4" resolves through the new item-registry resolvers and stack
       factories, the client gets the pet list on join): 25 NEU pet recipes in the Recipe Book and crafting table.
-      Not yet: abilities, pet items, Kat, pet drops and shops (admins: `/sbpet give`).
+      Not yet: pet drops and shops (admins: `/sbpet give`). Abilities, pet items and Kat: see the entries below.
 - [x] **The End** (Hypixel's): its own dimension `skyrpg_skyblock:the_end` (type `skyrpg_hub:public_end`: End sky and
       music, no vanilla dragon fight; `Hub.isPublic`), built by `tools/builds/hub_areas/the_end.py`: the arrival with the
       Pearl Dealer and Gregory, the main island (Endermen 42/45/50, Endermites, Guber, Lone Adventurer, Tyzzo), the Zealot
@@ -555,8 +555,39 @@ phase so the next session can pick up where this one stopped.
       `IncomingDamage` hit rule for the pet out, numbers at its level and stat rarity (`SkyBlockPets.number`); percents and
       conversions read the last totals minus the abilities' own share (no feedback). The skyblock module now depends on
       progress (collections). Decided: "per player within N blocks" counts you too; places we don't have yet never count.
-      Not yet: the ~220 abilities with their own mechanics (Last Stand, Laserbeam, Stampede, wisdom towards a mob,
-      minion speed, drop chances, dungeon/Crimson/Garden ones).
+      Not yet: the abilities with their own mechanics: see Pets, part 2.
+- [x] **Pets, part 2** (abilities with their own mechanics, pet items, Kat's gifts, the Phoenix): 348 of 685 ability
+      tiers work now (was 185 of 679; the 6 more are the Phoenix's), on 67 pets (was 48), and 56 of 98 pet items (was 29 of 42 imported).
+      Importer (`import_pet_abilities.py`): Hypixel's symbols are stripped before the rules read a text, "Damage" in any case,
+      and a new `perk` kind (`perk`, `arg`, `num`/`num2`/`amount`, `seconds`, `cap`) for the mechanics: wisdom_vs,
+      xp_mult_vs, coins_kill/level, minion_speed, skill_xp, tool_buff, stacks, absorption_reduction, last_stand, ricochet,
+      toss, tail_slam, fall_reduction, jump_boost, trample, knockback_immune, blizzard, hit_slow, hit_wither, mana_cost,
+      mana_free, laserbeam, skeletal_defense, crop_drop, block_extra, egg_drop, animal_extra, mob_double, mf_vs, powder,
+      rekindle, fourth_flare, fly_island, keep_coins; plus stats near water/lava (Flying Fish) and per nearby wolf (Wolf).
+      Its "Attack Speed" now maps to the real `attack_speed` stat (it pointed at one that doesn't exist). New `PetPerks`
+      (skyblock) runs the perks on their hooks (kills, block breaks, `AFTER_DAMAGE`, `ALLOW_DAMAGE`/`ALLOW_DEATH`, a
+      once-a-second tick) and `PetAbilities.perks/perk/has` is what other code asks (`Hotm.givePowder`, `Deaths`, `Diana`).
+      Core got two small hooks: `Stats.registerManaCost` (Sheep's Mana Saver, Crow's Insightful) and `MinionSpeed`
+      (asked by `MinionEntity.speedPercent`). The Phoenix is imported (`import_pets.py` now reads NEU's SPECIAL and
+      VERY_SPECIAL items): `SkyBlockPets.TIERS` gained those two (red); Rekindle saves you from death (resistance 5, extra
+      Strength, 60s cooldown), Fourth Flare, Magic Bird (flight on your island and in the Garden), Eternal Coins.
+      Pet items (`import_pet_items.py` now takes every "PET ITEM" lore, not only `PET_ITEM_*`: Minos Relic, Antique
+      Remedies, Crochet Tiger Plushie, Dwarf Turtle Shelmet, Reinforced Scales, Bigger Teeth, Serrated Claws, Washed-up
+      Souvenir, Hephaestus' set...): all pet stats +%, Quick Claw (stats per 2 pet levels), knockback immunity, Flying Pig
+      (only on a Pig), Exp Share. Kat Flower (skip 1 day) and Bouquet (5 days): right-click Kat with one.
+      Decided: Exp Share has no slots screen: a stored pet that holds one (the first three) earns 20% + the item's 15% of
+      the XP the pet out earns (put it on the pet out, then swap pets); Last Stand's reduction holds below 20% health and
+      its shield, +40% damage and 12 s window start at the first hit that finds you there (60 s cooldown); Rekindle heals to
+      20% and gives Resistance V for its seconds; Laserbeam zaps the nearest three enemies within 8 blocks; Skeletal Defense
+      the nearest within 4; Snowman's Blizzard slows with Slowness II and cuts the damage of mobs inside its radius; Spider's
+      slow is its percent in Slowness levels (15% each); Wither Skeleton's touch is vanilla's wither for 3 s; "near water or
+      lava" is 3 blocks around you; animals' extra item is their best common drop; Mooshroom's Tasty Cheese drops Dung (no
+      Tasty Cheese item); a wolf "nearby" is within 10 blocks; Exp Share, stacks, cooldowns and counters live in memory;
+      the Phoenix isn't obtainable except by `/sbpet give` (Hypixel's way is an event we don't have).
+      Not yet: the Jerry pet's joke penalties, Ridable (Rock, Rat, Armadillo), Giraffe's Swing Range, Titanium Minecart and
+      Mithril Affinity/Grunt Work (Mining Speed per block), Mosquito's visitors, Bubblegum, Parrot's potion boosts, Rabbit's
+      Chocolate Factory, Kuudra/Spooky/Fishing Festival/Year-of perks, Spirit and Jellyfish (dungeons), pest and Garden
+      bonuses, Mining Spread/Treasure drops (Scatha, Mole), the Wisps' pillars and pools.
 - [x] **Alchemy (brewing)**: research `docs/design/research/alchemy.md`. `tools/skyblock/import_potions.py` writes
       `skyrpg/skyblock_potions`: 44 brewable potions from NEU's POTION_<TYPE>;<LEVEL> items (each level's base time, rarity,
       text, stats and special effects read from it), 51 ingredients, the modifiers. In SkyBlock worlds a brewing stand

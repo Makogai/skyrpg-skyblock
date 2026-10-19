@@ -219,6 +219,11 @@ public class MinionEntity extends ArmorStand {
                 speed += 25;
             }
         }
+        // A pet's perk, for the player at home on this island
+        MinionType own = type();
+        if (own != null && profile != null) {
+            speed += (int) Math.round(com.skyrpg.core.world.MinionSpeed.of(profile, own.id(), own.category(), level(), blockPosition()));
+        }
         return speed;
     }
 

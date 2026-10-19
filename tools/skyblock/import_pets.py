@@ -29,7 +29,8 @@ DATA = ROOT / "skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg"
 OUT = DATA / "skyblock_pets"
 LEVELS = DATA / "skyblock_pet_levels"
 NEU = "NotEnoughUpdates-REPO-master/"
-RARITIES = ["COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC"]
+# NEU numbers a pet's rarities COMMON..MYTHIC 0-5; the Phoenix's SPECIAL and VERY_SPECIAL are its items ;7 and ;8
+RARITIES = {"COMMON": 0, "UNCOMMON": 1, "RARE": 2, "EPIC": 3, "LEGENDARY": 4, "MYTHIC": 5, "SPECIAL": 7, "VERY_SPECIAL": 8}
 TEXTURE = re.compile(r'Value:\\?"([A-Za-z0-9+/=]+)\\?"')
 FORMATTING = re.compile("§.")
 # Hypixel's own font icons (private-use characters) draw as boxes here: dropped.
@@ -62,7 +63,7 @@ def main():
     for pet, by_rarity in sorted(nums.items()):
         out = {"name": consts["id_to_display_name"].get(pet, pet.replace("_", " ").title()), "type": types.get(pet, "COMBAT"),
                "max_level": 200 if consts["custom_pet_leveling"].get(pet, {}).get("max_level") == 200 else 100, "rarities": {}}
-        for index, rarity in enumerate(RARITIES):
+        for rarity, index in RARITIES.items():
             name = f"{NEU}items/{pet};{index}.json"
             if rarity not in by_rarity or name not in neu.namelist():
                 continue

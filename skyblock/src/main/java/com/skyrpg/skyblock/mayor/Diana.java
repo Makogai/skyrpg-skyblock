@@ -480,7 +480,7 @@ final class Diana {
         int tier = tagInt(mob.entityTags(), TIER_TAG);
         Minos kind = MOBS.get(tagInt(mob.entityTags(), KIND_TAG));
         RandomSource random = player.getRandom();
-        double find = 1 + Stats.get(player, StatTypes.MAGIC_FIND) / 100;
+        double find = 1 + (Stats.get(player, StatTypes.MAGIC_FIND) + com.skyrpg.skyblock.pet.PetAbilities.perk(player, "mf_vs", "mythological")) / 100;
         Purse.add(player, kind.coins()[tier]);
         give(player, "ANCIENT_CLAW", kind.claws()[tier]);
         if (random.nextBoolean()) {

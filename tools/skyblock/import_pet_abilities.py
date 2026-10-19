@@ -15,6 +15,8 @@ Each effect's number is the pet's ability number {num} at its level, or a fixed 
 - convert: +number to stat for every "per" of stat "of" (above "above"); with "pct": number% of "of"; "cap" a maximum.
 - damage_vs: deal number% more damage to "mobs" (a mob kind, or a condition like "close" / "far" / "missing_health").
 - damage_from: take number% less damage from "mobs" (or "all", optionally "when": low_health).
+- perk: a mechanic of its own that the game code hooks ("perk" names it, "arg" says what for; the numbers are "num",
+  "num2", "amount"): wisdom_vs, coins_kill, minion_speed, tool_buff, stacks, last_stand, laserbeam... (see PetAbilities).
 Abilities none of the rules know stay as text on the pet (they do nothing yet); the run prints how many matched.
 """
 import json
@@ -35,10 +37,10 @@ STATS = {
     "Farming Fortune": "farming_fortune", "Foraging Fortune": "foraging_fortune", "Health Regen": "health_regen",
     "Bonus Pest Chance": "bonus_pest_chance", "Sweep": "sweep", "Combat Wisdom": "combat_wisdom", "Mining Wisdom": "mining_wisdom",
     "Farming Wisdom": "farming_wisdom", "Foraging Wisdom": "foraging_wisdom", "Fishing Wisdom": "fishing_wisdom",
-    "Enchanting Wisdom": "enchanting_wisdom", "Taming Wisdom": "taming_wisdom", "Damage": "damage", "Attack Speed": "bonus_attack_speed",
+    "Enchanting Wisdom": "enchanting_wisdom", "Taming Wisdom": "taming_wisdom", "Damage": "damage", "Attack Speed": "attack_speed",
     "Gemstone Fortune": "gemstone_fortune", "Block Fortune": "block_fortune", "Cold Resistance": "cold_resistance",
 }
-COMBAT = ["health", "defense", "strength", "intelligence", "crit_chance", "crit_damage", "ferocity", "bonus_attack_speed",
+COMBAT = ["health", "defense", "strength", "intelligence", "crit_chance", "crit_damage", "ferocity", "attack_speed",
           "true_defense", "health_regen", "vitality", "mending"]
 PLACES = {"Public Islands": "public", "the Crystal Hollows": "crystal_hollows", "Crystal Hollows": "crystal_hollows",
           "the Magma Fields": "magma_fields", "Mining Islands": "mining_islands", "The Park": "the_park",
@@ -47,9 +49,183 @@ PLACES = {"Public Islands": "public", "the Crystal Hollows": "crystal_hollows", 
           "the Glacite Mineshafts": "glacite_mineshafts", "the Glacite Tunnels": "glacite_tunnels", "the Mines of Divan": "mines_of_divan",
           "Foraging Islands": "foraging_islands"}
 MOBS = {"Ender mobs": "ender", "⊙ Ender mobs": "ender", "slimes": "slimes", "Pests": "pests", "Undead mobs": "undead",
-        "Wither mobs": "wither", "Skeletal mobs": "skeletal", "wolves": "wolves", "zombies": "zombies", "Ender": "ender"}
+        "Wither mobs": "wither", "Skeletal mobs": "skeletal", "skeletal mobs": "skeletal", "wolves": "wolves", "zombies": "zombies", "Ender": "ender"}
 STAT_NAMES = "|".join(sorted((re.escape(k) for k in STATS), key=len, reverse=True))
 N = r"\{(\d+)\}"
+
+
+# Hypixel's font symbols in the lore (☯ ⊙ ༕ 🦴 ❤ ❄ ᠅ ✯ and its private-use icons) mean nothing to a rule.
+SYMBOLS = re.compile("[☯⊙༕🦴❤❄᠅✯-]")
+WISDOM_MOBS = {"Blazes": "blaze", "Endermen": "enderman", "Zombies": "zombie", "Spiders": "spider", "Wolves": "wolf"}
+# What a minion perk is for: a category ("category:farming") or minion ids ("type:slime,magma_cube").
+MINION_KINDS = {"Slime and Magma Cube": "type:slime,magma_cube", "Foraging": "category:foraging", "Pig": "type:pig",
+                "Farming": "category:farming", "Red Sand": "type:red_sand", "Spider, Cave Spider and Tarantula": "type:spider,cave_spider,tarantula"}
+# The tool a "Buffs the ..." perk is for: "item:<SkyBlock id>", "tag:axes" or "contains:DRILL".
+TOOLS = {"Aspect of the Dragons": "item:ASPECT_OF_THE_DRAGON", "Pigman Sword": "item:PIGMAN_SWORD", "Ink Wand": "item:INK_WAND",
+         "Yeti Sword": "item:YETI_SWORD", "Aspect of the Jerry": "item:ASPECT_OF_THE_JERRY"}
+
+
+def perk(name, arg="", **rest):
+    return {"kind": "perk", "perk": name, "arg": arg, **rest}
+
+
+def perks(t):
+    """The mechanics of their own (see PetAbilities), or []."""
+    # Wisdom towards one kind of mob, more Combat XP against one
+    m = re.match(rf"Gain \+?{N} ?Combat Wisdom towards (\w+)", t)
+    if m and m.group(2) in WISDOM_MOBS:
+        return [perk("wisdom_vs", WISDOM_MOBS[m.group(2)], num=int(m.group(1)))]
+    m = re.match(rf"Gain {N}x Combat XP against (\w+)", t)
+    if m and m.group(2) in WISDOM_MOBS:
+        return [perk("xp_mult_vs", WISDOM_MOBS[m.group(2)], num=int(m.group(1)))]
+    # Coins
+    m = re.match(rf"Gain \+?{N} coins per monster kill", t)
+    if m:
+        return [perk("coins_kill", num=int(m.group(1)))]
+    m = re.match(rf"Gain {N} more coins per monster level on kill", t)
+    if m:
+        return [perk("coins_level", num=int(m.group(1)))]
+    # Minions
+    m = re.match(rf"(.+?) [mM]inions work {N}% faster while on your (?:Private )?[iI]sland", t)
+    if m and m.group(1) in MINION_KINDS:
+        return [perk("minion_speed", MINION_KINDS[m.group(1)], num=int(m.group(2)))]
+    # More skill XP
+    m = re.match(rf"Earn \+?{N}% more Exp when mining", t)
+    if m:
+        return [perk("skill_xp", "mining", num=int(m.group(1)))]
+    m = re.match(rf"Gain {N}% more Skill Experience", t)
+    if m:
+        return [perk("skill_xp", "all", num=int(m.group(1)))]
+    # Stats on one tool: "Buffs the Pigman Sword by {1} Damage and {2} Strength."
+    m = re.match(rf"Buffs the (.+?)(?: sword)? by {N} Damage and {N} Strength", t)
+    if m and m.group(1) in TOOLS:
+        return [perk("tool_buff", TOOLS[m.group(1)], stat="damage", num=int(m.group(2))),
+                perk("tool_buff", TOOLS[m.group(1)], stat="strength", num=int(m.group(3)))]
+    m = re.match(rf"Buffs the Yeti Sword by {N} Damage and Intelligence", t)
+    if m:
+        return [perk("tool_buff", TOOLS["Yeti Sword"], stat="damage", num=int(m.group(1))),
+                perk("tool_buff", TOOLS["Yeti Sword"], stat="intelligence", num=int(m.group(1)))]
+    m = re.match(rf"Actually adds {N} damage to the Aspect of the Jerry", t)
+    if m:
+        return [perk("tool_buff", TOOLS["Aspect of the Jerry"], stat="damage", num=int(m.group(1)))]
+    m = re.match(rf"Adds {N} ?Strength and {N} ?Speed to all your Axes", t)
+    if m:
+        return [perk("tool_buff", "tag:axes", stat="strength", num=int(m.group(1))), perk("tool_buff", "tag:axes", stat="speed", num=int(m.group(2)))]
+    m = re.match(rf"Grants \+{N} ?Gemstone Fortune to Drills", t)
+    if m:
+        return [perk("tool_buff", "contains:DRILL", stat="gemstone_fortune", num=int(m.group(1)))]
+    # Stacks from kills or bow hits
+    m = re.match(rf"Mob kills grant a stack of \+{N} (Speed|Attack Speed) and \+{N} Strength for (\d+)s\. \(Max (\d+) stacks\)", t)
+    if m:
+        first = "speed" if m.group(2) == "Speed" else "attack_speed"
+        return [perk("stacks", "kill", stat=first, num=int(m.group(1)), seconds=int(m.group(4)), cap=int(m.group(5))),
+                perk("stacks", "kill", stat="strength", num=int(m.group(3)), seconds=int(m.group(4)), cap=int(m.group(5)))]
+    m = re.match(rf"Gain a combo stack for every bow hit granting \+(\d+) Strength\. Max {N} stacks, stacks disappear after (\d+) seconds", t)
+    if m:
+        return [perk("stacks", "bow_hit", stat="strength", amount=int(m.group(1)), cap_num=int(m.group(2)), seconds=int(m.group(3)))]
+    # Defence and hits
+    m = re.match(rf"If you have any absorption active, gain \+{N}% Damage Reduction", t)
+    if m:
+        return [perk("absorption_reduction", num=int(m.group(1)))]
+    if t.startswith("While at less than 20% HP, reduce incoming damage by 20%"):
+        return [perk("last_stand")]
+    m = re.match(rf"Your iron plating causes {N}% of attacks to ricochet", t)
+    if m:
+        return [perk("ricochet", num=int(m.group(1)))]
+    if t.startswith("Every 5 hits, throw the enemy up into the air and deal 5x damage"):
+        return [perk("toss")]
+    m = re.match(rf"Every 5th hit deals {N}% of your final damage to enemies within 5 blocks", t)
+    if m:
+        return [perk("tail_slam", num=int(m.group(1)))]
+    m = re.match(rf"Reduces fall damage by {N}%", t)
+    if m:
+        return [perk("fall_reduction", num=int(m.group(1)))]
+    m = re.match(r"Grants permanent Jump Boost (II|IV)", t)
+    if m:
+        return [perk("jump_boost", amount=2 if m.group(1) == "II" else 4)]
+    m = re.match(rf"After falling 20 or more blocks, absorb your fall damage and deal {N}% of your weapon's Damage for every block", t)
+    if m:
+        return [perk("trample", num=int(m.group(1)))]
+    if t.startswith("Gain immunity to knockback"):
+        return [perk("knockback_immune")]
+    m = re.match(rf"Enemies within {N} blocks are slowed by 25% and deal {N}% less damage", t)
+    if m:
+        return [perk("blizzard", num=int(m.group(1)), num2=int(m.group(2)))]
+    m = re.match(rf"Upon hitting a monster, it becomes slowed by {N}%", t)
+    if m:
+        return [perk("hit_slow", num=int(m.group(1)))]
+    m = re.match(rf"Upon hitting an enemy inflict the wither effect for {N}% damage over 3 seconds", t)
+    if m:
+        return [perk("hit_wither", num=int(m.group(1)))]
+    # Mana
+    m = re.match(rf"Reduces the mana cost of abilities by {N}%", t)
+    if m:
+        return [perk("mana_cost", num=int(m.group(1)))]
+    m = re.match(rf"Gives a {N} chance to not consume Mana when using an ability", t)
+    if m:
+        return [perk("mana_free", num=int(m.group(1)))]
+    m = re.match(rf"Zaps your enemies for {N}x your Intelligence every 3s", t)
+    if m:
+        return [perk("laserbeam", num=int(m.group(1)))]
+    # Drops
+    m = re.match(rf"You have a {N}% chance to drop a Mushroom when farming crops", t)
+    if m:
+        return [perk("crop_drop", "minecraft:red_mushroom", num=int(m.group(1)))]
+    m = re.match(rf"You have a {N}% chance to find Tasty Cheese or Dung when farming crops", t)
+    if m:
+        return [perk("crop_drop", "DUNG", num=int(m.group(1)))]
+    m = re.match(rf"You have a {N}% chance to find Jelly or Plant Matter when farming crops", t)
+    if m:
+        return [perk("crop_drop", "JELLY,PLANT_MATTER", num=int(m.group(1)))]
+    m = re.match(rf"You have a {N}% chance to find a Honey Jar when farming crops", t)
+    if m:
+        return [perk("crop_drop", "HONEY_JAR", num=int(m.group(1)))]
+    m = re.match(rf"Gain more exp orbs for breaking end stone and gain a \+{N}% chance to get an extra block dropped", t)
+    if m:
+        return [perk("block_extra", "minecraft:end_stone", num=int(m.group(1)))]
+    m = re.match(rf"Chickens always drop an Egg when killed\. Grants a {N}% chance for animals to drop an additional item", t)
+    if m:
+        return [perk("egg_drop"), perk("animal_extra", num=int(m.group(1)))]
+    m = re.match(rf"Gain a {N}% chance to get double drops from squids", t)
+    if m:
+        return [perk("mob_double", "squid", num=int(m.group(1)))]
+    m = re.match(rf"Grants \+{N} ?Magic Find on Mythological mobs", t)
+    if m:
+        return [perk("mf_vs", "mythological", num=int(m.group(1)))]
+    # Stats near water or lava, per nearby wolf
+    m = re.match(rf"Gives {N} Strength and Defense when near (water or lava|water)", t)
+    if m:
+        where = "near_fluid" if "lava" in m.group(2) else "near_water"
+        return [{"kind": "stat", "stat": "strength", "num": int(m.group(1)), "where": where},
+                {"kind": "stat", "stat": "defense", "num": int(m.group(1)), "where": where}]
+    m = re.match(rf"Gain {N} Crit Damage for every nearby wolf monster Max (\d+) wolves", t)
+    if m:
+        return [{"kind": "stat", "stat": "crit_damage", "num": int(m.group(1)), "per_mob": "wolf", "per_player": 10, "max_players": int(m.group(2))}]
+    # Powder
+    m = re.match(rf"Grants \+{N}% Mithril Powder from all sources", t)
+    if m:
+        return [perk("powder", "mithril", num=int(m.group(1)))]
+    m = re.match(rf"Earn \+{N}% Gemstone Powder from all sources", t)
+    if m:
+        return [perk("powder", "gemstone", num=int(m.group(1)))]
+    m = re.match(rf"Gain {N}% more Glacite Powder from most sources", t)
+    if m:
+        return [perk("powder", "glacite", num=int(m.group(1)))]
+    m = re.match(rf"Your skeleton shoots an arrow dealing {N}x your Crit Damage when a mob gets close to you", t)
+    if m:
+        return [perk("skeletal_defense", num=int(m.group(1)))]
+    # The Phoenix
+    if t.startswith("You may always fly on your private island and garden"):
+        return [perk("fly_island")]
+    if t.startswith("Don't lose coins from death"):
+        return [perk("keep_coins")]
+    m = re.match(rf"Before death, become immune and gain {N} Strength for {N} seconds", t)
+    if m:
+        return [perk("rekindle", num=int(m.group(1)), num2=int(m.group(2)))]
+    m = re.match(rf"On 4th melee strike, ignite mobs, dealing {N}x your Crit Damage each second for {N} seconds", t)
+    if m:
+        return [perk("fourth_flare", num=int(m.group(1)), num2=int(m.group(2)))]
+    return []
 
 
 def stat(name):
@@ -62,8 +238,10 @@ def place(text):
 
 def effects(text):
     """The effects in one ability's text (color codes stripped, lines joined), or []."""
-    t = re.sub(r"\s+", " ", text).strip()
-    out = []
+    t = re.sub(r"\s+", " ", SYMBOLS.sub("", text)).strip()
+    out = perks(t)
+    if out:
+        return out
 
     # "For each player within 25 blocks: +{0}Intelligence +{1}Strength +{2}Defense Max 15 players"
     m = re.match(r"For each player within (\d+) blocks: (.+?) Max (\d+) players", t)
@@ -111,7 +289,7 @@ def effects(text):
         where = place(m.group(3))
         return [{"kind": "stat", "stat": stat(m.group(2)), "num": int(m.group(1)), "where": where or "unknown"}]
     # "Grants +{2}Magic Find." / "Grants +{3}☯ Fishing Wisdom." / "Passively grants +{1}☯ Taming Wisdom." / "Gain +{0}☯ ..."
-    m = re.match(rf"(?:Grants|Gain|Gives|Passively grants) \+?{N} ?(?:☯ ?)?({STAT_NAMES})(?:\.|, which.*)?$", t)
+    m = re.match(rf"(?:Grants|Gain|Gives|Passively grants) \+?{N} ?(?:☯ ?)?({STAT_NAMES})(?:\.| while mining Blocks\.?|, which.*)?$", t)
     if m:
         return [{"kind": "stat", "stat": stat(m.group(2)), "num": int(m.group(1))}]
     # "Increases your Speed and speed cap by +{0}."
@@ -190,7 +368,7 @@ def effects(text):
     if m:
         return [{"kind": "convert", "stat": stat(m.group(2)), "num": int(m.group(1)), "per": int(m.group(3)), "of": stat(m.group(4))}]
     # "Deal {0}% more damage to ⊙ Ender mobs." / "Deal {1}% more damage to slimes" / "Deal {1}% more damage to Undead mobs"
-    m = re.match(rf"Deal \+?{N}% (?:more )?damage (?:to|against) (.+?)\.?$", t)
+    m = re.match(rf"Deal \+?{N}% (?:more )?[dD]amage (?:to|against) (.+?)\.?$", t)
     if m:
         target = m.group(2).strip()
         mobs = MOBS.get(target)
