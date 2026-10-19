@@ -50,10 +50,11 @@ Every run is a new map: a grid of rooms (some long, square or L-shaped) joined b
   - **Three Weirdos**: three people before three chests. Talk to each; exactly one of them tells the truth. Open the chest with the reward.
   - **Higher Or Lower**: ten blazes float with their health over their heads. Kill them in the order the sign says (lowest to highest, or highest to lowest).
   - **Tic Tac Toe**: right-click a white tile on the floor to play. The AI never loses, so a draw is the way to solve it; if it wins, you fail.
-  - **Ice Fill** (Hypixel's room): walk over every ice block once; each turns to packed ice under you. Step back onto packed ice and the ice starts over.
-  - **Teleport Maze** (Hypixel's room): the end portal frames are pads that send you to other pads; find the one that takes you out to the room's middle.
+  - **Ice Fill** (Hypixel's room): three grids of ice, 3×3, 5×5 and 7×7, with polished andesite in the way. Each ice block turns to packed ice as you step on it; cover a whole grid without stepping on any block twice. Step back onto its packed ice and that grid starts over. Every grid has a way through, and a new layout each run.
+  - **Teleport Maze** (Hypixel's room): the end portal frames are pads that send you to other pads as you step onto them (step off the one you land on to go on); find the one that takes you out to the room's middle.
   - **Quiz** (Hypixel's room): three questions about the game, each with three answers on stands; right-click the right one. One wrong answer fails it.
   - **Higher or Lower** also comes in Hypixel's own blaze room.
+  - A run never has the same puzzle twice, and no room repeats while there are others of its shape.
 - **The Blood room**: opening it wakes **the Watcher**, who sends his undead in waves. Kill them all and he opens the way to the **boss**.
 - **The fairy** in the Fairy room revives everyone who's dead, once a run, when someone alive walks up to it.
 - **Dying** makes you a **ghost**: you float, unseen, and can't fight or open anything, until the boss room (everyone comes back for the boss). If the whole party is dead, the run fails.
@@ -147,4 +148,4 @@ Undead perks cost 1,000 Undead Essence and up (to 50,000); Wither perks 100 With
 Catacombs XP levels you up to 50 on Hypixel's table (50 XP for level 1 ... 569,809,640 in all); each level gives 20 SkyBlock XP (40 from level 40). Classes level the same way.
 
 > [!NOTE]
-> Not yet: more puzzles (Water Board, Ice Fill, Creeper Beams, Teleport Maze, Quiz, Boulder...), traps, ghost abilities, the dungeon map, Croesus.
+> Not yet: more puzzles (Water Board, Creeper Beams, Boulder...), ghost abilities, the dungeon map, Croesus.

@@ -58,8 +58,8 @@ final class RoomLibrary {
             case ENTRANCE -> "special/entrance";
             case BLOOD -> "special/blood";
             case FAIRY -> "special/fairy";
-            case PUZZLE -> rooms.containsKey("puzzle") ? "puzzle" : "one";
-            case TRAP -> rooms.containsKey("trap") ? "trap" : "one";
+            case PUZZLE -> rooms.containsKey("puzzle") || hypixel.containsKey("puzzle") ? "puzzle" : "one";
+            case TRAP -> rooms.containsKey("trap") || hypixel.containsKey("trap") ? "trap" : "one";
             default -> switch (room.shape()) {
                 case TWO -> "two";
                 case THREE -> "three";
@@ -71,13 +71,25 @@ final class RoomLibrary {
         };
     }
 
-    /** A random template of a category, or null if there's none. */
-    static Identifier pick(String category, RandomSource random) {
+    /** A random template of a category that the run hasn't used yet (any, once they're all used), or null if there's none. */
+    static Identifier pick(String category, RandomSource random, java.util.Set<Identifier> used) {
         // puzzles: ours and Hypixel's together (each room is a different puzzle); otherwise Hypixel's first
         List<Identifier> list = category.equals("puzzle")
                 ? java.util.stream.Stream.concat(rooms.getOrDefault("puzzle", List.of()).stream(), hypixel.getOrDefault("puzzle", List.of()).stream()).toList()
                 : hypixel.containsKey(category) ? hypixel.get(category) : rooms.get(category);
-        return list == null || list.isEmpty() ? null : list.get(random.nextInt(list.size()));
+        if (list == null || list.isEmpty()) {
+            return null;
+        }
+        // puzzle rooms are named by their puzzle (ours and Hypixel's alike): no puzzle twice in a run
+        java.util.Set<String> usedNames = used.stream().map(RoomLibrary::name).collect(java.util.stream.Collectors.toSet());
+        List<Identifier> fresh = list.stream().filter(id -> !used.contains(id) && !(category.equals("puzzle") && usedNames.contains(name(id)))).toList();
+        List<Identifier> from = fresh.isEmpty() ? list : fresh;
+        return from.get(random.nextInt(from.size()));
+    }
+
+    /** A template's own name (the last part of its path: a puzzle room's puzzle). */
+    static String name(Identifier template) {
+        return template.getPath().substring(template.getPath().lastIndexOf('/') + 1);
     }
 
     static int count(String category) {

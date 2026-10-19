@@ -462,7 +462,8 @@ def install(args):
                 marker(kx, FLOOR_Y + 1, kz, "key")
         compound = {"DataVersion": (3, 2586), "size": (9, (3, [tw, h, td])), "palette": (9, (10, [_typed(e)[1] for e in palette])),
                     "blocks": (9, (10, [b for b in blocks])), "entities": (9, (10, [m for m in markers]))}
-        out = out_dir / category / (f["id"] + ".nbt")
+        # a puzzle room is named by its puzzle (as ours are), so a run can tell two rooms of the same puzzle apart
+        out = out_dir / category / ((puzzle or f["id"]) + ".nbt")
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(gzip.compress(nbt.dump_typed(b"", compound)))
         written[category] += 1

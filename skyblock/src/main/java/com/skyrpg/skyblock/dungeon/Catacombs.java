@@ -382,6 +382,7 @@ public final class Catacombs {
                 run.broadcast(Component.literal("[NPC] Mort").withStyle(ChatFormatting.YELLOW).append(Component.literal(
                         ": Here we go! Good luck in there.").withStyle(ChatFormatting.WHITE)));
             }
+            run.tickPuzzles();
             if (tick % 10 == 0) {
                 run.tick(now);
                 ghostTick(run);

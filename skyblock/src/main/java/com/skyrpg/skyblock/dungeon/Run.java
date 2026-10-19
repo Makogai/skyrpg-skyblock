@@ -211,10 +211,16 @@ final class Run {
         }
     }
 
+    /** The room templates this run has built (no room twice while there are others, so no two of the same puzzle). */
+    private final java.util.Set<Identifier> usedTemplates = new java.util.HashSet<>();
+
     private void placeRoom(RoomState state) {
         Layout.Room room = state.room;
         String category = RoomLibrary.category(room);
-        Identifier template = RoomLibrary.pick(category, random);
+        Identifier template = RoomLibrary.pick(category, random, usedTemplates);
+        if (template != null) {
+            usedTemplates.add(template);
+        }
         state.min = origin.offset(room.x() * CELL, 0, room.z() * CELL);
         int cellsX = room.cells().stream().mapToInt(c -> c[0]).max().orElse(0) - room.x() + 1;
         int cellsZ = room.cells().stream().mapToInt(c -> c[1]).max().orElse(0) - room.z() + 1;
@@ -592,13 +598,17 @@ final class Run {
         return state.middle();
     }
 
-    /** Every half second: rooms walked into, keys and secret items picked up, the Blood room's waves. */
-    void tick(long now) {
+    /** Every tick: the puzzles you walk through (a running player crosses a block in a few ticks). */
+    void tickPuzzles() {
         for (RoomState state : rooms) {
             if (state.puzzle != null && state.puzzle.built && !state.puzzle.solved && !state.puzzle.failed) {
                 state.puzzle.tick();
             }
         }
+    }
+
+    /** Every half second: rooms walked into, keys and secret items picked up, the Blood room's waves. */
+    void tick(long now) {
         // The fairy revives everyone who's dead when a living teammate reaches it (once a run).
         RoomState fairyRoom = state(Layout.Type.FAIRY);
         if (!fairyUsed && !ghosts.isEmpty() && fairyRoom != null && fairyRoom.entered) {

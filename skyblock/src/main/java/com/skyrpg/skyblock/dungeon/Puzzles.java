@@ -148,12 +148,16 @@ final class Puzzles {
     // ---------------------------------------------------------------- Ice Fill
 
     /**
-     * <b>Ice Fill</b> (Hypixel's room): every ice block on its floor turns to packed ice as you step on it; cover them all.
-     * Stepping back onto packed ice you made starts the ice over.
+     * <b>Ice Fill</b> (Hypixel's room): three grids of ice on the room's floor, 3×3, 5×5 and 7×7, with polished andesite
+     * in the way. Every ice block turns to packed ice as you step on it; cover a whole grid without stepping on one twice
+     * (stepping back onto its packed ice starts that grid over). Decided: each grid is laid around a random path through
+     * it (the andesite is what the path leaves out), so every grid can be done; the room's own floor is all packed ice in
+     * the captures (they were saved solved), so the grids are laid on it when the puzzle starts.
      */
     static final class IceFill extends Puzzle {
-        private final List<BlockPos> ice = new ArrayList<>();
-        private final java.util.Set<BlockPos> packed = new java.util.HashSet<>();
+        private static final int[] SIZES = {3, 5, 7};
+        private final List<List<BlockPos>> grids = new ArrayList<>();
+        private final List<java.util.Set<BlockPos>> packed = new ArrayList<>();
         private final Map<UUID, BlockPos> standing = new HashMap<>();
 
         IceFill(Run run, Run.RoomState state, Vec3 center) {
@@ -167,40 +171,191 @@ final class Puzzles {
 
         @Override
         void build() {
-            for (BlockPos pos : find(Blocks.ICE)) {
-                if (run.level.getBlockState(pos.above()).isAir()) {
-                    ice.add(pos);
+            // the room's fountains would flow over the floor here (Hypixel's water doesn't flow): they go
+            for (BlockPos pos : find(Blocks.WATER)) {
+                set(pos, Blocks.AIR.defaultBlockState());
+            }
+            // the floor: packed ice (or ice) with room to stand on it, at its commonest height
+            List<BlockPos> floor = new ArrayList<>();
+            for (Block block : new Block[] {Blocks.PACKED_ICE, Blocks.ICE}) {
+                for (BlockPos pos : find(block)) {
+                    BlockState above = run.level.getBlockState(pos.above());
+                    if ((above.isAir() || above.is(Blocks.POLISHED_ANDESITE)) && run.level.getBlockState(pos.above(2)).isAir()) {
+                        floor.add(pos);
+                    }
                 }
             }
-            if (ice.isEmpty()) {
+            Map<Integer, Integer> heights = new HashMap<>();
+            floor.forEach(pos -> heights.merge(pos.getY(), 1, Integer::sum));
+            int y = heights.entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey).orElse(0);
+            floor.removeIf(pos -> pos.getY() != y);
+            if (floor.size() < 30) {
+                solve(null);
+                return;
+            }
+            // its main square: the rows and columns that are mostly floor
+            int[] xs = span(floor.stream().mapToInt(BlockPos::getX).toArray());
+            int[] zs = span(floor.stream().mapToInt(BlockPos::getZ).toArray());
+            boolean alongX = xs[1] - xs[0] >= zs[1] - zs[0];
+            int first = alongX ? xs[0] : zs[0];
+            int length = (alongX ? xs[1] - xs[0] : zs[1] - zs[0]) + 1;
+            int across = (alongX ? zs[1] - zs[0] : xs[1] - xs[0]) + 1;
+            int mid = alongX ? (zs[0] + zs[1]) / 2 : (xs[0] + xs[1]) / 2;
+            java.util.Set<BlockPos> onFloor = new java.util.HashSet<>(floor);
+            // the old andesite goes; the grids get their own
+            for (BlockPos pos : floor) {
+                if (run.level.getBlockState(pos.above()).is(Blocks.POLISHED_ANDESITE)) {
+                    set(pos.above(), Blocks.AIR.defaultBlockState());
+                }
+            }
+            int at = first;
+            int gap = Math.max(1, (length - 15) / 2);
+            for (int size : SIZES) {
+                int n = Math.min(size, Math.min(across, length));
+                if (n < 2 || at - first + n > length) {
+                    break;
+                }
+                List<BlockPos> tiles = new ArrayList<>();
+                java.util.Set<Integer> onPath = new java.util.HashSet<>();
+                path(n).forEach(c -> onPath.add(c[0] * 64 + c[1]));
+                for (int a = 0; a < n; a++) {
+                    for (int b = 0; b < n; b++) {
+                        int lateral = mid - n / 2 + b;
+                        BlockPos pos = alongX ? new BlockPos(at + a, y, lateral) : new BlockPos(lateral, y, at + a);
+                        if (!onFloor.contains(pos)) {
+                            continue;
+                        }
+                        if (onPath.contains(a * 64 + b)) {
+                            set(pos, Blocks.ICE.defaultBlockState());
+                            tiles.add(pos);
+                        } else {
+                            set(pos.above(), Blocks.POLISHED_ANDESITE.defaultBlockState());
+                        }
+                    }
+                }
+                if (!tiles.isEmpty()) {
+                    grids.add(tiles);
+                    packed.add(new java.util.HashSet<>());
+                }
+                at += n + gap;
+            }
+            if (grids.isEmpty()) {
                 solve(null);
             }
+        }
+
+        /** The span of the values that come up in at least half as many places as the commonest one. */
+        private static int[] span(int[] values) {
+            Map<Integer, Integer> counts = new HashMap<>();
+            for (int v : values) {
+                counts.merge(v, 1, Integer::sum);
+            }
+            int most = counts.values().stream().max(Integer::compare).orElse(0);
+            int lo = counts.entrySet().stream().filter(e -> e.getValue() * 2 >= most).mapToInt(Map.Entry::getKey).min().orElse(0);
+            int hi = counts.entrySet().stream().filter(e -> e.getValue() * 2 >= most).mapToInt(Map.Entry::getKey).max().orElse(0);
+            return new int[] {lo, hi};
+        }
+
+        /**
+         * A long path through an n×n grid from the middle of its first row, no cell twice (Warnsdorff's rule with random
+         * ties: the best of a few tries), cut a little short on the bigger grids so there's andesite to steer around.
+         */
+        private List<int[]> path(int n) {
+            List<int[]> best = List.of();
+            for (int attempt = 0; attempt < 40 && best.size() < n * n; attempt++) {
+                boolean[][] seen = new boolean[n][n];
+                List<int[]> walk = new ArrayList<>();
+                int a = 0;
+                int b = n / 2;
+                while (true) {
+                    seen[a][b] = true;
+                    walk.add(new int[] {a, b});
+                    List<int[]> next = new ArrayList<>();
+                    for (int[] d : STEPS) {
+                        int na = a + d[0];
+                        int nb = b + d[1];
+                        if (na >= 0 && nb >= 0 && na < n && nb < n && !seen[na][nb]) {
+                            next.add(new int[] {na, nb});
+                        }
+                    }
+                    if (next.isEmpty()) {
+                        break;
+                    }
+                    java.util.Collections.shuffle(next, new java.util.Random(run.random.nextLong()));
+                    next.sort(Comparator.comparingInt(c -> onward(seen, c[0], c[1], n)));
+                    a = next.getFirst()[0];
+                    b = next.getFirst()[1];
+                }
+                if (walk.size() > best.size()) {
+                    best = walk;
+                }
+            }
+            int keep = n <= 3 ? best.size() : Math.max(n * n * 3 / 4, best.size() - run.random.nextInt(n / 2 + 1));
+            return best.subList(0, Math.min(keep, best.size()));
+        }
+
+        private static final int[][] STEPS = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+        private static int onward(boolean[][] seen, int a, int b, int n) {
+            int count = 0;
+            for (int[] d : STEPS) {
+                int na = a + d[0];
+                int nb = b + d[1];
+                if (na >= 0 && nb >= 0 && na < n && nb < n && !seen[na][nb]) {
+                    count++;
+                }
+            }
+            return count;
         }
 
         @Override
         void tick() {
             for (ServerPlayer player : here()) {
-                BlockPos under = player.blockPosition().below();
+                BlockPos under = BlockPos.containing(player.getX(), player.getY() - 0.2, player.getZ());
                 BlockPos was = standing.put(player.getUUID(), under);
-                if (under.equals(was) || !ice.contains(under)) {
+                if (under.equals(was)) {
                     continue;
                 }
-                if (packed.contains(under)) {
-                    for (BlockPos pos : packed) {
-                        set(pos, Blocks.ICE.defaultBlockState());
+                for (int i = 0; i < grids.size(); i++) {
+                    if (!grids.get(i).contains(under)) {
+                        continue;
                     }
-                    packed.clear();
-                    player.sendSystemMessage(Component.literal("You stepped on the packed ice again: the ice starts over.").withStyle(ChatFormatting.RED));
-                    Msg.playSound(player, SoundEvents.GLASS_BREAK, 1.0f, 0.8f);
-                    continue;
-                }
-                packed.add(under);
-                set(under, Blocks.PACKED_ICE.defaultBlockState());
-                Msg.playSound(player, SoundEvents.GLASS_STEP, 1.0f, 1.4f);
-                if (packed.size() >= ice.size()) {
-                    solve(player);
+                    java.util.Set<BlockPos> done = packed.get(i);
+                    if (done.size() >= grids.get(i).size()) {
+                        break;
+                    }
+                    if (done.contains(under)) {
+                        for (BlockPos pos : done) {
+                            set(pos, Blocks.ICE.defaultBlockState());
+                        }
+                        done.clear();
+                        player.sendSystemMessage(Component.literal("You stepped on the packed ice again: this grid starts over.").withStyle(ChatFormatting.RED));
+                        Msg.playSound(player, SoundEvents.GLASS_BREAK, 1.0f, 0.8f);
+                        break;
+                    }
+                    done.add(under);
+                    set(under, Blocks.PACKED_ICE.defaultBlockState());
+                    Msg.playSound(player, SoundEvents.GLASS_STEP, 1.0f, 1.4f);
+                    if (done.size() >= grids.get(i).size()) {
+                        Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.8f, 1.6f);
+                        if (finished()) {
+                            solve(player);
+                        } else {
+                            player.sendSystemMessage(Component.literal("Grid " + (i + 1) + " of " + grids.size() + " done!").withStyle(ChatFormatting.AQUA));
+                        }
+                    }
+                    break;
                 }
             }
+        }
+
+        private boolean finished() {
+            for (int i = 0; i < grids.size(); i++) {
+                if (packed.get(i).size() < grids.get(i).size()) {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 
@@ -214,6 +369,7 @@ final class Puzzles {
         private final Map<BlockPos, BlockPos> to = new HashMap<>();
         private BlockPos exit;
         private final Map<UUID, Long> lastJump = new HashMap<>();
+        private final Map<UUID, BlockPos> onPad = new HashMap<>();
 
         TeleportMaze(Run run, Run.RoomState state, Vec3 center) {
             super(run, state, center);
@@ -246,11 +402,19 @@ final class Puzzles {
                 BlockPos feet = player.blockPosition();
                 BlockPos pad = run.level.getBlockState(feet).is(Blocks.END_PORTAL_FRAME) ? feet
                         : run.level.getBlockState(feet.below()).is(Blocks.END_PORTAL_FRAME) ? feet.below() : null;
-                if (pad == null || now - lastJump.getOrDefault(player.getUUID(), 0L) < 20) {
+                // a pad sends you on as you step onto it (you land on the next one: step off it to go on)
+                BlockPos was = pad == null ? onPad.remove(player.getUUID()) : onPad.put(player.getUUID(), pad);
+                if (pad == null || pad.equals(was) || now - lastJump.getOrDefault(player.getUUID(), 0L) < 10) {
                     continue;
                 }
                 lastJump.put(player.getUUID(), now);
-                Vec3 at = pad.equals(exit) ? center : Vec3.atBottomCenterOf(to.getOrDefault(pad, pad).above());
+                BlockPos next = to.getOrDefault(pad, pad);
+                if (pad.equals(exit)) {
+                    onPad.remove(player.getUUID());
+                } else {
+                    onPad.put(player.getUUID(), next);
+                }
+                Vec3 at = pad.equals(exit) ? center : Vec3.atBottomCenterOf(next.above());
                 player.teleportTo(run.level, at.x, at.y, at.z, java.util.Set.of(), player.getYRot(), player.getXRot(), true);
                 Msg.playSound(player, SoundEvents.ENDERMAN_TELEPORT, 0.8f, 1.2f);
                 if (pad.equals(exit)) {
