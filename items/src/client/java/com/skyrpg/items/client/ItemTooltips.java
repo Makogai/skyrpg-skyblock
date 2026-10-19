@@ -75,6 +75,7 @@ final class ItemTooltips {
         Map<StatType, Double> potato = ItemMods.potatoStats(stack, def);
         Map<StatType, Double> reforged = ItemMods.reforgeStats(stack, def);
         Map<StatType, Double> gemmed = ItemMods.gemStats(stack, def);
+        Map<StatType, Double> enriched = ItemMods.enrichmentStats(stack, def);
         for (StatType stat : order) {
             double value = total.getOrDefault(stat, 0.0);
             if (value != 0) {
@@ -91,6 +92,10 @@ final class ItemTooltips {
                 // ...and in pink for its gemstones.
                 if (gemmed.containsKey(stat)) {
                     line.append(Component.literal(" (" + stat.formatBonus(gemmed.get(stat)) + ")").withStyle(ChatFormatting.LIGHT_PURPLE));
+                }
+                // ...and in dark aqua for an accessory's enrichment.
+                if (enriched.containsKey(stat)) {
+                    line.append(Component.literal(" (" + stat.formatBonus(enriched.get(stat)) + ")").withStyle(ChatFormatting.DARK_AQUA));
                 }
                 out.add(line);
             }
@@ -118,6 +123,14 @@ final class ItemTooltips {
                     out.add(Component.literal((i == 0 ? "✔ " : "  ") + wrapped.get(i)).withStyle(ChatFormatting.GREEN));
                 }
             }
+        }
+
+        // Lines other mods add for an item (an accessory's effect, its enrichment).
+        List<Component> extra = new ArrayList<>();
+        ItemMods.TOOLTIP_EXTRAS.forEach(source -> source.accept(stack, extra));
+        if (!extra.isEmpty()) {
+            out.add(Component.empty());
+            out.addAll(extra);
         }
 
         // Keep what vanilla adds after the name (enchantments, lore).

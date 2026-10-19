@@ -213,8 +213,30 @@ phase so the next session can pick up where this one stopped.
       Accessory Powers from `tools/skyblock/import_powers.py` (the wiki's power and Power Stone lists: base stats ×
       29.97 × ln(0.0019 × MP + 1)^1.2, unique bonuses, Combat requirements), learned with 9 Power Stones. Equipment: the
       survival accessory slots are Hypixel's Necklace, Cloak, Belt and Gloves slots (by item category), with reforges.
-      Not yet: Tuning Points, enrichments, extra bag slots (Redstone Miner, Jacobus), Hegemony/Abicase specials,
-      accessory abilities, SkyBlock XP from Magical Power.
+      Part 2 below covers the rest.
+- [x] **Accessories, part 2**: Maxwell's screen (`MaxwellMenu` + `MaxwellScreen`) has three tabs: Powers, Stats Tuning, Bag Slots.
+      **Tuning Points** (`AccessoryTuning`): 1 per 10 Magical Power on eight stats (Health +5, Defense +1, Speed +1.5, Strength
+      +1, Crit Damage +1, Crit Chance +0.2, Attack Speed +0.3, Intelligence +2 a point, Hypixel's), +/- buttons (right-click
+      adds, Shift is ten), reset and one template; per profile (attachments), points past what the Magical Power pays for stop
+      counting. **Enrichments** (`ItemMods.ENRICHMENTS`, tag `talisman_enrichment`): the eleven items go on Legendary+ accessories
+      at the Anvil (`ItemWork`), the stat is part of `ItemMods.stats` (so the bag counts it) and shows in dark aqua; the
+      `EnrichmentSwapper` (Shift + right-click picks, right-click swaps every enriched accessory in the bag). **Bag slots**
+      (`BagUpgrades`): the Redstone Miner (4 slots for 128/256/512/1,024 Redstone) and Jacobus (NPC `jacobus` by Maxwell, 2 slots
+      a purchase, 99 purchases at 1.5M / 5M / 8M / 12M / 20M, his Register after the fifth); both open the Bag Slots tab, as
+      Maxwell does. **Specials**: Hegemony Artifact doubles its Magical Power, Abicase +1 per 2 contacts (contacts = NPCs talked
+      to, via `NpcInteractions.INTERACT`, up to 80), Rift Prism imbued at Maxwell's tab (200k coins, +11), Dungeon accessories
+      double inside a Catacombs run. **SkyBlock XP**: "Accessory Bag" 1 per Magical Power (only the increase, `accessory_power_xp`),
+      "Unlocking Powers" 15 per learned power, "Accessory Bag Upgrades" 2 per upgrade. **Effects** (`AccessoryEffects`, tooltip
+      lines through `ItemMods.TOOLTIP_EXTRAS`): the mob-kind damage cuts (Zombie, Spider, Sea Creature, Wolf, Skeleton, Blaze/Nether,
+      Ender, Wither), Feather fall, Haste Ring/Artifact, Night Vision Charm, Fire Talisman, Scavenger coins.
+      Decided: the bag still unlocks at Redstone II (not Hypixel's newer 9 free slots); Enrichments and the Swapper come from
+      admins (`/sbitem`) since SkyRPG has no Bits, and the Swapper acts on the whole bag as Hypixel's does, with its target picked by
+      Shift + right-click instead of a menu; only the first Tuning Template (Hypixel's free one) exists; Abicase contacts are the
+      NPCs you have talked to (no Abiphone yet), the Rift Prism is imbued from your inventory in Maxwell's tab (no Erihann);
+      Magical Power XP only counts upwards so removing and re-adding accessories can't farm it; Slayer-level requirements on rings
+      and artifacts are not checked; Feather's extra blocks cancel a short fall rather than shifting vanilla's curve.
+      Not yet: Community Center and Attribute bag slots, more templates, Bits, accessory effects that need other systems
+      (Intimidation, Potion Affinity, Vaccine, Candy, Magnetic, Piggy Bank, Night Crystal, Bat Person).
 - [x] **Pets** (Hypixel's): `tools/skyblock/import_pets.py` writes 87 pets (NEU: each rarity's lore template and head
       skin, stats and ability numbers at levels 1 and 100, the XP table, rarity offsets, the Golden Dragon's 200 levels)
       to `skyrpg/skyblock_pets` + `skyblock_pet_levels`. `SkyBlockPets` (skyblock): Hypixel's PET item (custom data `id`

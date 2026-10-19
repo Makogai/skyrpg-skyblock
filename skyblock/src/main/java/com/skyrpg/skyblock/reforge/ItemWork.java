@@ -20,7 +20,7 @@ import net.minecraft.world.item.ItemStack;
  *   <li>Reforge (the Blacksmith): a random reforge of his for coins by rarity, never the one it has; or the reforge of a
  *       reforge stone in the second slot, for that stone's price.</li>
  *   <li>Anvil: an enchanted book (for XP levels; two books combine for free), a Recombobulator 3000 (one rarity up,
- *       once), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to 15 in all) on the item in the first slot; a Wither scroll
+ *       once), an Accessory Enrichment (+stat on a Legendary accessory), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to 15 in all) on the item in the first slot; a Wither scroll
  *       (Implosion, Shadow Warp, Wither Shield, or the Ultimate Wither Scroll for all three) on a Necron's Blade.</li>
  * </ul>
  */
@@ -85,7 +85,7 @@ public final class ItemWork {
 
     private static Preview anvil(ItemStack item, ItemDefinition def, ItemStack extra) {
         if (extra.isEmpty()) {
-            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000, a Potato Book or a Wither scroll");
+            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000, a Potato Book, an Enrichment or a Wither scroll");
         }
         if (Books.isBook(extra)) {
             return book(item, def, extra);
@@ -114,6 +114,19 @@ public final class ItemWork {
                 return new Preview(null, 0, 0, action, fuming ? "This item has all 15 Potato Books" : "This item has 10 Hot Potato Books: use Fuming ones now");
             }
             ItemMods.addPotatoBook(result);
+            return new Preview(result, 0, 0, action, "");
+        }
+        // an Accessory Enrichment: +stat on a Legendary or better accessory (a new one replaces the old)
+        ItemMods.Enrichment enrichment = ItemMods.enrichmentOfItem(id);
+        if (enrichment != null) {
+            String action = enrichment.name() + " Enrichment";
+            if (!ItemMods.enrichable(item, def)) {
+                return new Preview(null, 0, 0, action, "Enrichments go on Legendary or better accessories");
+            }
+            if (ItemMods.enrichment(item) == enrichment) {
+                return new Preview(null, 0, 0, action, "This accessory already has the " + enrichment.name() + " Enrichment");
+            }
+            ItemMods.setEnrichment(result, enrichment);
             return new Preview(result, 0, 0, action, "");
         }
         // the Wither scrolls: on Necron's Blade and its upgrades (the Ultimate Wither Scroll is all three at once)
