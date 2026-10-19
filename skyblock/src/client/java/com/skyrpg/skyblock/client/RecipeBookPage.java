@@ -333,7 +333,7 @@ public final class RecipeBookPage implements MenuPage {
             if (cell.isEmpty()) {
                 continue;
             }
-            boolean enough = SkyStacks.count(inventory, cell.item()) >= need.get(cell.item());
+            boolean enough = Crafting.count(inventory, cell.item()) >= need.get(cell.item());
             g.fill(cx + 1, cy + 17, cx + 17, cy + 18, enough ? Theme.GREEN : Theme.RED);
             ItemStack icon = stack(cell.item());
             g.item(icon, cx + 1, cy + 1);
@@ -341,7 +341,7 @@ public final class RecipeBookPage implements MenuPage {
             if (ctx.hovered(cx, cy, 18, 18)) {
                 List<Component> lines = new ArrayList<>(icon.getTooltipLines(Item.TooltipContext.of(ctx.player().level()), ctx.player(), TooltipFlag.NORMAL));
                 lines.add(Component.literal("Needs " + Msg.number(need.get(cell.item())) + " in all, you have "
-                        + Msg.number(SkyStacks.count(inventory, cell.item()))).withColor(enough ? Theme.GREEN : Theme.RED));
+                        + Msg.number(Crafting.count(inventory, cell.item()))).withColor(enough ? Theme.GREEN : Theme.RED));
                 ctx.tooltip(lines, enough ? Theme.GREEN : Theme.RED);
             }
         }

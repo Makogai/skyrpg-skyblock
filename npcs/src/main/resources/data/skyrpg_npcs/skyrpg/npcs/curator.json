@@ -1,0 +1,24 @@
+{
+  "name": "Curator",
+  "role": "Museum",
+  "color": "#55FFFF",
+  "hint": "Milestones",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    14.5,
+    70.0,
+    -53.5
+  ],
+  "yaw": 158.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "Every hundred SkyBlock XP the Museum pays is a milestone.",
+    "Your contributions are the seeds of something magnificent!"
+  ],
+  "action": {
+    "type": "museum_curator",
+    "params": {}
+  }
+}

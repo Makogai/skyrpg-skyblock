@@ -1,0 +1,24 @@
+{
+  "name": "Madame Eleanor Q. Goldsworth III",
+  "role": "Museum",
+  "color": "#FFAA00",
+  "hint": "Museum",
+  "skin": "minecraft:entity/player/slim/makena",
+  "model": "slim",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    17.5,
+    70.0,
+    -53.5
+  ],
+  "yaw": 158.0,
+  "sound": "minecraft:entity.villager.trade",
+  "greetings": [
+    "Would you like to help me fill the Museum?",
+    "Donate an item and you can still borrow it back whenever you like."
+  ],
+  "action": {
+    "type": "museum_madame",
+    "params": {}
+  }
+}

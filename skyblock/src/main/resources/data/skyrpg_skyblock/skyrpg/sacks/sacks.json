@@ -1010,6 +1010,81 @@
    "sizes": {
     "TRICK_OR_TREAT_BAG": 100000
    }
+  },
+  {
+   "type": "Gold Trophy Fishing",
+   "icon": "GOLD_TROPHY_FISHING_SACK",
+   "items": [
+    "BLOBFISH_GOLD",
+    "FLYFISH_GOLD",
+    "GOLDEN_FISH_GOLD",
+    "GUSHER_GOLD",
+    "KARATE_FISH_GOLD",
+    "LAVA_HORSE_GOLD",
+    "MANA_RAY_GOLD",
+    "MOLDFIN_GOLD",
+    "SKELETON_FISH_GOLD",
+    "SLUGFISH_GOLD",
+    "SOUL_FISH_GOLD",
+    "STEAMING_HOT_FLOUNDER_GOLD",
+    "SULPHUR_SKITTER_GOLD",
+    "VANILLE_GOLD",
+    "VOLCANIC_STONEFISH_GOLD",
+    "OBFUSCATED_FISH_1_GOLD",
+    "OBFUSCATED_FISH_2_GOLD",
+    "OBFUSCATED_FISH_3_GOLD"
+   ],
+   "sizes": {
+    "GOLD_TROPHY_FISHING_SACK": 512
+   }
+  },
+  {
+   "type": "Diamond Trophy Fishing",
+   "icon": "DIAMOND_TROPHY_FISHING_SACK",
+   "items": [
+    "BLOBFISH_DIAMOND",
+    "FLYFISH_DIAMOND",
+    "GOLDEN_FISH_DIAMOND",
+    "GUSHER_DIAMOND",
+    "KARATE_FISH_DIAMOND",
+    "LAVA_HORSE_DIAMOND",
+    "MANA_RAY_DIAMOND",
+    "MOLDFIN_DIAMOND",
+    "SKELETON_FISH_DIAMOND",
+    "SLUGFISH_DIAMOND",
+    "SOUL_FISH_DIAMOND",
+    "STEAMING_HOT_FLOUNDER_DIAMOND",
+    "SULPHUR_SKITTER_DIAMOND",
+    "VANILLE_DIAMOND",
+    "VOLCANIC_STONEFISH_DIAMOND",
+    "OBFUSCATED_FISH_1_DIAMOND",
+    "OBFUSCATED_FISH_2_DIAMOND",
+    "OBFUSCATED_FISH_3_DIAMOND"
+   ],
+   "sizes": {
+    "DIAMOND_TROPHY_FISHING_SACK": 512
+   }
+  },
+  {
+   "type": "Rune",
+   "icon": "RUNE_SACK",
+   "items": [
+    "BITE_RUNE_1",
+    "COUTURE_RUNE_1",
+    "DARKNESS_WITHIN_RUNE_1",
+    "ENCHANT_RUNE_1",
+    "ENDERSNAKE_RUNE_1",
+    "END_RUNE_1",
+    "FIERY_BURST_RUNE_1",
+    "LAVATEARS_RUNE_1",
+    "PESTILENCE_RUNE_1",
+    "SNAKE_RUNE_1",
+    "SOULTWIST_RUNE_1",
+    "SPIRIT_RUNE_1"
+   ],
+   "sizes": {
+    "RUNE_SACK": 64
+   }
   }
  ]
 }

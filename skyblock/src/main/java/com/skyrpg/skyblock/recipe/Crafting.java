@@ -6,6 +6,7 @@ import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.SkyStacks;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
+import com.skyrpg.skyblock.sack.Sacks;
 import java.util.Map;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.Event;
@@ -31,9 +32,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 
 /**
- * Crafting a SkyBlock recipe straight from your inventory (Hypixel's Supercraft): the Recipe Book's Craft button, and
- * the crafting screen. The server checks the recipe is unlocked and the materials are there, takes them, and gives
- * what it makes.
+ * Crafting a SkyBlock recipe straight from your inventory and your sacks (Hypixel's Supercraft): the Recipe Book's Craft
+ * button, and the crafting screen. The server checks the recipe is unlocked and the materials are there (the inventory
+ * first, then the sacks), takes them, and gives what it makes.
  */
 public final class Crafting {
     /** Someone crafted {@code count} of a SkyBlock item (minions count unique crafts for their slots). */
@@ -122,11 +123,17 @@ public final class Crafting {
         }
     }
 
-    /** How many times the inventory holds this recipe's materials. */
+    /** How many of an item the player has to craft with: in the inventory and in the sacks (the client knows the sacks' contents too). */
+    public static int count(Inventory inventory, String skyblockId) {
+        long total = SkyStacks.count(inventory, skyblockId) + Sacks.contents(inventory.player).getOrDefault(skyblockId, 0L);
+        return (int) Math.min(Integer.MAX_VALUE, total);
+    }
+
+    /** How many times the inventory and the sacks hold this recipe's materials. */
     public static int craftable(Inventory inventory, Recipes.Recipe recipe) {
         int times = Integer.MAX_VALUE;
         for (Map.Entry<String, Integer> need : recipe.ingredients().entrySet()) {
-            times = Math.min(times, SkyStacks.count(inventory, need.getKey()) / need.getValue());
+            times = Math.min(times, count(inventory, need.getKey()) / need.getValue());
         }
         return times == Integer.MAX_VALUE ? 0 : times;
     }
@@ -149,7 +156,7 @@ public final class Crafting {
             return 0;
         }
         for (Map.Entry<String, Integer> need : recipe.ingredients().entrySet()) {
-            SkyStacks.take(inventory, need.getKey(), need.getValue() * times);
+            Sacks.takeAnywhere(player, need.getKey(), need.getValue() * times);
         }
         give(player, output, recipe, times);
         player.containerMenu.broadcastChanges();

@@ -21,7 +21,8 @@ import net.minecraft.world.item.ItemStack;
  *       reforge stone in the second slot, for that stone's price.</li>
  *   <li>Anvil: an enchanted book (for XP levels; two books combine for free), a Recombobulator 3000 (one rarity up,
  *       once), an Accessory Enrichment (+stat on a Legendary accessory), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to 15 in all) on the item in the first slot; a Wither scroll
- *       (Implosion, Shadow Warp, Wither Shield, or the Ultimate Wither Scroll for all three) on a Necron's Blade.</li>
+ *       (Implosion, Shadow Warp, Wither Shield, or the Ultimate Wither Scroll for all three) on a Necron's Blade, or a Pocket
+ *       Sack-in-a-Sack on a sack (three times the size; up to three).</li>
  * </ul>
  */
 public final class ItemWork {
@@ -85,7 +86,7 @@ public final class ItemWork {
 
     private static Preview anvil(ItemStack item, ItemDefinition def, ItemStack extra) {
         if (extra.isEmpty()) {
-            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000, a Potato Book, an Enrichment or a Wither scroll");
+            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000, a Potato Book, an Enrichment, a Pocket Sack-in-a-Sack or a Wither scroll");
         }
         if (Books.isBook(extra)) {
             return book(item, def, extra);
@@ -115,6 +116,18 @@ public final class ItemWork {
             }
             ItemMods.addPotatoBook(result);
             return new Preview(result, 0, 0, action, "");
+        }
+        // a Pocket Sack-in-a-Sack: a sack holds three times as much (up to three of them)
+        if (com.skyrpg.skyblock.sack.Sacks.POCKET.equals(id)) {
+            if (!com.skyrpg.skyblock.sack.Sacks.isSack(def.skyblockId())) {
+                return new Preview(null, 0, 0, "Pocket Sack-in-a-Sack", "That only goes on a sack");
+            }
+            if (com.skyrpg.skyblock.sack.Sacks.pockets(item) >= com.skyrpg.skyblock.sack.Sacks.MAX_POCKETS) {
+                return new Preview(null, 0, 0, "Pocket Sack-in-a-Sack", "This sack has all three Pocket Sack-in-a-Sacks");
+            }
+            int pockets = com.skyrpg.skyblock.sack.Sacks.pockets(item) + 1;
+            ItemMods.edit(result, tag -> tag.putInt(com.skyrpg.skyblock.sack.Sacks.POCKETS, pockets));
+            return new Preview(result, 0, 0, "Pocket Sack-in-a-Sack", "");
         }
         // an Accessory Enrichment: +stat on a Legendary or better accessory (a new one replaces the old)
         ItemMods.Enrichment enrichment = ItemMods.enrichmentOfItem(id);

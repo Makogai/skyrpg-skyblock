@@ -13,6 +13,7 @@ import io.netty.buffer.ByteBuf;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.ToDoubleFunction;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentSyncPredicate;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
@@ -72,6 +73,8 @@ public final class Bank {
     /** Daily interest: 1% of the balance, at most this much. */
     private static final double INTEREST_RATE = 0.01;
     private static final long INTEREST_CAP = 5000;
+    /** More interest (0.1 = 10% more coins) from outside the economy mod: the Museum's milestones. */
+    public static ToDoubleFunction<ServerPlayer> interestBonus = player -> 0;
 
     public static void init() {
         // Interest is paid on your first login of the day.
@@ -86,7 +89,8 @@ public final class Bank {
         if (last == today || last < 0 && balance == 0) {
             return;
         }
-        long interest = Math.min(INTEREST_CAP, (long) Math.floor(balance * INTEREST_RATE));
+        double bonus = 1 + Math.max(0, interestBonus.applyAsDouble(player));
+        long interest = (long) Math.floor(Math.min(INTEREST_CAP * bonus, balance * INTEREST_RATE * bonus));
         if (interest <= 0) {
             return;
         }
@@ -95,7 +99,8 @@ public final class Bank {
         log.addFirst(new Entry(true, interest, System.currentTimeMillis()));
         player.setAttached(LOG, List.copyOf(log.subList(0, Math.min(HISTORY, log.size()))));
         Notice.of(Notice.Kind.BANK).tag("INTEREST").send(player, Component.literal("Your bank paid ").withStyle(ChatFormatting.GREEN).append(Coins.text(interest))
-                .append(Component.literal(" in interest today (1%, up to " + com.skyrpg.core.text.Msg.number(INTEREST_CAP) + ").").withStyle(ChatFormatting.GREEN)));
+                .append(Component.literal(" in interest today (1%, up to " + com.skyrpg.core.text.Msg.number((long) (INTEREST_CAP * bonus))
+                        + (bonus > 1 ? ", +" + Math.round((bonus - 1) * 100) + "% from your Museum" : "") + ").").withStyle(ChatFormatting.GREEN)));
     }
 
     public static long balance(Player player) {

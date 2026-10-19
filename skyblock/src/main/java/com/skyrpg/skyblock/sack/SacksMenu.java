@@ -21,11 +21,14 @@ import net.minecraft.world.item.ItemStack;
 
 /**
  * Your Sacks: each sack type you have, its size and what's in it. Button {@code type * 100 + item} takes a stack out,
- * {@link #ALL} {@code +} that takes as much as fits, {@link #INSERT} puts your inventory in.
+ * {@link #ALL} {@code +} that takes as much as fits, {@link #INSERT} puts your inventory in, {@link #SACK_OF_SACKS} opens
+ * the Sack of Sacks.
  */
 public final class SacksMenu extends AbstractContainerMenu {
     public static final int ALL = 50000;
     public static final int INSERT = 99999;
+    /** Opens the Sack of Sacks. */
+    public static final int SACK_OF_SACKS = 99998;
 
     /** One item in a sack: what it is (count 1) and how many you have. */
     public record ItemView(ItemStack item, long count) {
@@ -121,6 +124,10 @@ public final class SacksMenu extends AbstractContainerMenu {
     public boolean clickMenuButton(Player clicker, int id) {
         if (owner == null || clicker != owner) {
             return false;
+        }
+        if (id == SACK_OF_SACKS) {
+            SackOfSacks.open(owner);
+            return true;
         }
         if (id == INSERT) {
             Sacks.insertInventory(owner);
