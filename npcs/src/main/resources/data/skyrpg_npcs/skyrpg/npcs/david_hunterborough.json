@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    23.5,
-    69.0,
-    -47.5
+    -593.5,
+    114.0,
+    -13.5
   ],
-  "yaw": 90.0,
+  "yaw": 78.0,
   "sound": "minecraft:item.lead.tied",
   "greetings": [
     "Every shard you catch lands in your Hunting Box.",

@@ -2,14 +2,14 @@
   "name": "Savanna Woodland",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -475,
+    -470,
     0,
-    -40
+    -30
   ],
   "to": [
-    -391,
+    -399,
     255,
-    55
+    57
   ],
   "blocks": {
     "minecraft:acacia_log": {

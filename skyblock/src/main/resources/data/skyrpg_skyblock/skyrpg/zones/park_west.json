@@ -2,12 +2,12 @@
   "name": "Birch Park",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -325,
+    -342,
     0,
-    -95
+    -100
   ],
   "to": [
-    -255,
+    -262,
     255,
     35
   ],

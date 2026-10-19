@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    35.5,
-    69.0,
-    -50.5
+    -705.5,
+    94.0,
+    33.5
   ],
-  "yaw": 0.0,
+  "yaw": -114.0,
   "sound": "minecraft:block.wood.place",
   "greetings": [
     "Traps, friend.",

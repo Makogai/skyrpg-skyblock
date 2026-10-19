@@ -1,0 +1,14 @@
+{
+  "name": "North Wetlands",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    -650,
+    84,
+    -108
+  ],
+  "to": [
+    -605,
+    125,
+    -60
+  ]
+}

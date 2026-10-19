@@ -1,14 +1,14 @@
 {
-  "name": "Murkwater Shallows",
+  "name": "Tangleburg's Path",
   "dimension": "skyrpg_skyblock:galatea",
   "from": [
-    -62,
-    8,
-    88
+    -575,
+    95,
+    -45
   ],
   "to": [
-    -14,
+    -536,
     150,
-    124
+    8
   ]
 }

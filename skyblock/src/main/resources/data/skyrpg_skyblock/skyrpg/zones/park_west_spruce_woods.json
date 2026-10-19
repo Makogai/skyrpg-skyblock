@@ -2,14 +2,14 @@
   "name": "Spruce Woods",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -390,
+    -398,
     0,
-    1
+    -34
   ],
   "to": [
-    -326,
+    -343,
     255,
-    95
+    57
   ],
   "blocks": {
     "minecraft:spruce_log": {

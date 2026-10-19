@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    -37.5,
-    69.0,
-    107.5
+    -619.5,
+    87.0,
+    -7.5
   ],
-  "yaw": 0.0,
+  "yaw": -105.0,
   "sound": "minecraft:entity.player.splash",
   "greetings": [
     "The Shallows are deeper than they look.",

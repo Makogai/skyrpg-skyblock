@@ -2,14 +2,14 @@
   "name": "Dark Thicket",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -390,
-    73,
-    -110
+    -420,
+    93,
+    -125
   ],
   "to": [
-    -326,
+    -343,
     255,
-    0
+    -35
   ],
   "blocks": {
     "minecraft:dark_oak_log": {

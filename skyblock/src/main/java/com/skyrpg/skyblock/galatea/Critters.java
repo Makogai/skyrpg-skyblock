@@ -51,8 +51,10 @@ public final class Critters {
     private static final int PER_PLAYER = 7;
     private static final int[] WEIGHT = {60, 25, 10, 4, 1};
     static final Set<String> FOREST_ZONES = Set.of("Evergreen Plateau", "North Reaches", "West Reaches", "South Reaches", "South Wetlands",
-            "Tangleburg", "Forest Temple");
-    static final Set<String> WATER_ZONES = Set.of("Murkwater Loch", "Murkwater Shallows", "South Wetlands", "Squid Cave", "Murkwater Outpost");
+            "Tangleburg", "Forest Temple", "Tangleburg's Path", "North Wetlands", "Moonglade's Edge", "Verdant Summit", "Westbound Wetlands",
+            "Moonglade Marsh");
+    static final Set<String> WATER_ZONES = Set.of("Murkwater Loch", "Murkwater Shallows", "South Wetlands", "Squid Cave", "Murkwater Outpost",
+            "Murkwater Depths", "Tomb Floodway", "North Wetlands");
 
     private record Kind(String shard, EntityType<? extends Mob> type, boolean water, boolean shy) {
     }

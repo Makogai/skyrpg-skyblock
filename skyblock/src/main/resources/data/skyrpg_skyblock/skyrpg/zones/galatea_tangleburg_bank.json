@@ -1,0 +1,14 @@
+{
+  "name": "Tangleburg Bank",
+  "dimension": "skyrpg_skyblock:galatea",
+  "from": [
+    -605,
+    110,
+    -44
+  ],
+  "to": [
+    -593,
+    125,
+    -33
+  ]
+}

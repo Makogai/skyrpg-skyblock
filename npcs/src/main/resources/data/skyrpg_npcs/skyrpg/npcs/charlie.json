@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -285.5,
-    81.0,
-    -16.5
+    -277.5,
+    80.0,
+    -17.5
   ],
-  "yaw": 93.0,
+  "yaw": 91.0,
   "sound": "minecraft:block.wood.place",
   "greetings": [
     "Birch is light and clean. Good wood.",

@@ -30,7 +30,7 @@ NEU_ZIP = ROOT / "tools/skyblock/cache/neu-repo.zip"
 WORLD = ROOT / "run/server/world"
 
 # Where NPCs face by default: the island's middle (the Hub: its village square).
-MIDDLE = {"hub": (-2, -85), "foraging_1": (-350, -20), "combat_3": (-560, -275), "dungeon_hub": (-50, 0)}
+MIDDLE = {"hub": (-2, -85), "foraging_1": (-385, -20), "foraging_2": (-610, -10), "combat_3": (-560, -275), "dungeon_hub": (-50, 0)}
 # Ours, or Hypixel's where neither the map nor NEU places them: [x, y, z, yaw] (feet; yaw None = face the middle), or
 # ["near", x, y, z]: the nearest spot a player can stand there (within 16 blocks).
 OVERRIDES = {
@@ -53,16 +53,18 @@ OVERRIDES = {
         "Wizard": [39.5, 131, 74.5, 180],
     },
     "foraging_1": {
-        # NEU's spots are in rock (Nyko: the hollow 9 blocks under it) and off this map's edge (Melody: the nearest ground)
-        "Old Shaman Nyko": [-371.5, 75, -65.5, None],
-        "Melody": ["near", -412, 109, 52],
-        # ours, beside their neighbours as in our build: Kelly with Gustave in the Spruce Woods, the Campfire Adept with
-        # Ryan, Worker Xavier with Master Tactician Funk on the Savanna, Juliette and Molbert by Galatea's pad
-        "Kelly": ["near", -381, 88, 54],
+        # ours, beside their neighbours on Hypixel's 2025 Park: Kelly with Gustave in the Spruce Woods, the Campfire Adept
+        # with Ryan, Worker Xavier with Master Tactician Funk on the Savanna, Juliette by Molbert on the Jungle Island
+        # NEU's Gustave stands off the Spruce Woods' edge here: the nearest ground
+        "Gustave": ["near", -385, 90, 52],
+        "Kelly": ["near", -382, 90, 53],
         "Campfire Adept": ["near", -361, 102, -88],
-        "Worker Xavier": ["near", -444, 107, 21],
-        "Juliette": ["near", -436, 127, -102],
-        "Molbert": ["near", -436, 127, -109],
+        "Worker Xavier": ["near", -449, 110, 25],
+        "Juliette": ["near", -462, 120, -46],
+    },
+    "foraging_2": {
+        # ours (Hypixel's Dragon's Lair is a cavern the capture doesn't reach): the West Reaches' north-west cliffs
+        "Jade Dragon": ["near", -740, 118, -60],
     },
     "combat_3": {
         # by the Lone Adventurer at the Dragon's Gate (NEU's spot isn't standable on this map)
@@ -124,7 +126,15 @@ def main():
     if hologram_file.exists():
         for h in json.loads(hologram_file.read_text(encoding="utf-8")):
             holograms.setdefault(h["name"], h)
-    blocks = Blocks(world_dir(args.map) / "region")
+    # the island as installed in our world (any save kind), else the map's own region folder
+    ns, path = args.dimension.split(":")
+    installed = WORLD / "dimensions" / ns / path / "region"
+    if installed.is_dir():
+        blocks = Blocks(installed)
+    else:
+        top = world_dir(args.map)
+        nested = top / "dimensions" / "minecraft" / "overworld" / "region"
+        blocks = Blocks(nested if nested.is_dir() else top / "region")
     neu = neu_positions(args.island)
     overrides = OVERRIDES.get(args.island, {})
     mx, mz = MIDDLE.get(args.island, (0, 0))

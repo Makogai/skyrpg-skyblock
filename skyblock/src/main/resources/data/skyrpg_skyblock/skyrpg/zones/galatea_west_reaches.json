@@ -2,14 +2,14 @@
   "name": "West Reaches",
   "dimension": "skyrpg_skyblock:galatea",
   "from": [
-    -150,
-    0,
-    -69
+    -756,
+    84,
+    -80
   ],
   "to": [
-    -36,
+    -708,
     200,
-    -1
+    18
   ],
   "mobs": [
     {

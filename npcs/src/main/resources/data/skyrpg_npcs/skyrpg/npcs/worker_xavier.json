@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -443.5,
-    107.0,
-    21.5
+    -448.5,
+    110.0,
+    25.5
   ],
-  "yaw": -114.0,
+  "yaw": -126.0,
   "sound": "minecraft:block.wood.hit",
   "greetings": [
     "Acacia is tough wood. Good for building.",

@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -435.5,
-    127.0,
-    -101.5
+    -461.5,
+    121.0,
+    -45.5
   ],
-  "yaw": -46.0,
+  "yaw": -72.0,
   "sound": "minecraft:block.cocoa.place",
   "greetings": [
     "The old temple has secrets.",

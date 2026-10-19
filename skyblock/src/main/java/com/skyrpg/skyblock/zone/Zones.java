@@ -445,6 +445,8 @@ public final class Zones {
                 SkyRpgSkyblock.LOGGER.error("Skipping invalid zone {}: {}", id, e.getMessage());
             }
         });
+        // where boxes overlap the smallest wins (a building inside its village), whatever order the files come in
+        out.sort(java.util.Comparator.comparingDouble(zone -> zone.box().getXsize() * zone.box().getYsize() * zone.box().getZsize()));
         return List.copyOf(out);
     }
 

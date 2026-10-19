@@ -1,0 +1,24 @@
+{
+  "name": "Viking Longhouse",
+  "dimension": "skyrpg_skyblock:the_park",
+  "from": [
+    -352,
+    0,
+    58
+  ],
+  "to": [
+    -322,
+    255,
+    92
+  ],
+  "blocks": {
+    "minecraft:spruce_log": {
+      "becomes": "minecraft:air",
+      "regrow": 20
+    },
+    "minecraft:spruce_leaves": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    }
+  }
+}

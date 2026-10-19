@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    -6.5,
-    69.0,
-    -39.5
+    -553.5,
+    110.0,
+    -16.5
   ],
-  "yaw": 270.0,
+  "yaw": 83.0,
   "sound": "minecraft:block.azalea_leaves.place",
   "greetings": [
     "Welcome to Galatea!",

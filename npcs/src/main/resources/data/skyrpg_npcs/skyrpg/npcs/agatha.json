@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    0.5,
-    69.0,
-    80.5
+    -648.5,
+    89.0,
+    -3.5
   ],
-  "yaw": 0.0,
+  "yaw": -100.0,
   "sound": "minecraft:entity.frog.ambient",
   "greetings": [
     "Contests every few hours, right here on the pier!",

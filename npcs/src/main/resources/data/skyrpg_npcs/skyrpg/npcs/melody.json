@@ -8,10 +8,10 @@
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
     -411.5,
-    109.0,
-    51.5
+    108.0,
+    71.5
   ],
-  "yaw": -139.0,
+  "yaw": -164.0,
   "sound": "minecraft:block.note_block.harp",
   "greetings": [
     "Play me a song?",

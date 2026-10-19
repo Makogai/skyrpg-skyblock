@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    10.5,
-    69.0,
-    -31.5
+    -653.5,
+    113.0,
+    -69.5
   ],
-  "yaw": 180.0,
+  "yaw": -36.0,
   "sound": "minecraft:entity.villager.trade",
   "greetings": [
     "Fresh from the Reaches!",

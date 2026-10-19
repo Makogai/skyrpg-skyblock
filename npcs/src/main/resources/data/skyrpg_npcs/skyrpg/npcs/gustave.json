@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -384.5,
-    88.0,
-    56.5
+    -398.5,
+    92.0,
+    40.5
   ],
-  "yaw": -156.0,
+  "yaw": -167.0,
   "sound": "minecraft:item.axe.strip",
   "greetings": [
     "Raiders need good axes.",

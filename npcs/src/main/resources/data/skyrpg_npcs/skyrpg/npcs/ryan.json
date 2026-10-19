@@ -8,10 +8,10 @@
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
     -364.5,
-    102.0,
+    103.0,
     -90.5
   ],
-  "yaw": -12.0,
+  "yaw": 16.0,
   "sound": "minecraft:block.campfire.crackle",
   "greetings": [
     "The fire never goes out here.",

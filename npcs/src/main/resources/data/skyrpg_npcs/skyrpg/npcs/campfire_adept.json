@@ -8,10 +8,10 @@
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
     -360.5,
-    103.0,
+    102.0,
     -87.5
   ],
-  "yaw": -9.0,
+  "yaw": 20.0,
   "sound": "minecraft:block.fire.ambient",
   "greetings": [
     "We keep the flame. The flame keeps us.",

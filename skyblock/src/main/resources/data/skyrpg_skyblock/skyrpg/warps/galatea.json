@@ -4,11 +4,11 @@
   "icon": "minecraft:mangrove_propagule",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    0.5,
-    69.0,
-    -39.5
+    -548.5,
+    109.0,
+    -21.5
   ],
-  "yaw": 180.0,
-  "area": "Tangleburg",
+  "yaw": 90.0,
+  "area": "Tangleburg's Path",
   "order": 36
 }

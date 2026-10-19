@@ -2,13 +2,13 @@
   "name": "SwampCut Inc.",
   "dimension": "skyrpg_skyblock:galatea",
   "from": [
-    100,
-    8,
-    100
+    -585,
+    108,
+    -3
   ],
   "to": [
-    149,
-    150,
-    159
+    -573,
+    125,
+    8
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "Murkwater Loch",
+  "description": "The middle of the Moonglade Marsh: Agatha's contests, the Shallows",
+  "icon": "minecraft:mangrove_roots",
+  "dimension": "skyrpg_skyblock:galatea",
+  "pos": [
+    -644.5,
+    90.0,
+    2.5
+  ],
+  "yaw": 180.0,
+  "area": "Murkwater Loch",
+  "order": 37
+}

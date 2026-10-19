@@ -2,22 +2,22 @@
   "name": "galatea_to_park",
   "dimension": "skyrpg_skyblock:galatea",
   "from": [
-    37,
-    69,
-    -11
+    -542,
+    107,
+    -25
   ],
   "to": [
-    39,
-    70,
-    -9
+    -538,
+    112,
+    -18
   ],
   "destination": {
     "dimension": "skyrpg_skyblock:the_park",
     "pos": [
-      -433.5,
-      127.0,
-      -105.5
+      -484.5,
+      116.0,
+      -40.5
     ],
-    "yaw": 90.0
+    "yaw": -90.0
   }
 }

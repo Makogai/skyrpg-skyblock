@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    0.5,
-    69.0,
-    -60.5
+    -601.5,
+    115.0,
+    -11.5
   ],
-  "yaw": 180.0,
+  "yaw": 80.0,
   "sound": "minecraft:block.amethyst_block.chime",
   "greetings": [
     "Two shards in, one new shard out.",

@@ -2,14 +2,14 @@
   "name": "Howling Cave",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -395,
+    -420,
     0,
-    -55
+    -125
   ],
   "to": [
-    -340,
-    72,
-    0
+    -343,
+    92,
+    -35
   ],
   "mobs": [
     {

@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    -28.5,
-    69.0,
-    -19.5
+    -691.5,
+    121.0,
+    81.5
   ],
-  "yaw": 0.0,
+  "yaw": -138.0,
   "sound": "minecraft:item.axe.strip",
   "greetings": [
     "Fig, Mangrove, I cut it all.",

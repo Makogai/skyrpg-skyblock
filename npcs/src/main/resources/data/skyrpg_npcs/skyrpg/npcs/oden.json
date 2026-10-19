@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    -22.5,
-    69.0,
-    -62.5
+    -584.5,
+    113.0,
+    -40.5
   ],
-  "yaw": 180.0,
+  "yaw": 40.0,
   "sound": "minecraft:item.book.page_turn",
   "greetings": [
     "Every shard has a story.",

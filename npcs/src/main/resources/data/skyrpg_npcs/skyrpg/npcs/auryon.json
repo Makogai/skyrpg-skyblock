@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:galatea",
   "pos": [
-    36.5,
-    69.0,
-    -42.5
+    -552.5,
+    111.0,
+    44.5
   ],
-  "yaw": 270.0,
+  "yaw": 133.0,
   "sound": "minecraft:item.lead.tied",
   "greetings": [
     "Keep your eyes on the critter.",

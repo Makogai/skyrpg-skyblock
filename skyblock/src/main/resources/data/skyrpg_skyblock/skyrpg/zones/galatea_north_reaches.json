@@ -2,14 +2,14 @@
   "name": "North Reaches",
   "dimension": "skyrpg_skyblock:galatea",
   "from": [
-    -35,
-    0,
-    -160
+    -722,
+    95,
+    -108
   ],
   "to": [
-    75,
+    -617,
     200,
-    -126
+    -41
   ],
   "mobs": [
     {
