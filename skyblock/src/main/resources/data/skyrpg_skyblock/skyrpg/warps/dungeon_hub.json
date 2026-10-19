@@ -4,11 +4,11 @@
   "icon": "minecraft:wither_skeleton_skull",
   "dimension": "skyrpg_skyblock:dungeon_hub",
   "pos": [
-    0.5,
-    65.0,
-    54.5
+    -30.5,
+    121.0,
+    0.5
   ],
-  "yaw": 180.0,
+  "yaw": 90.0,
   "area": "Dungeon Hub",
   "order": 30
 }

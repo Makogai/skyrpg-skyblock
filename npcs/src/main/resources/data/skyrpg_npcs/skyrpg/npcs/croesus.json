@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:dungeon_hub",
   "pos": [
-    28.5,
-    65.0,
-    -8.5
+    -20.5,
+    120.0,
+    -12.5
   ],
-  "yaw": 90.0,
+  "yaw": 67.0,
   "sound": "minecraft:entity.experience_orb.pickup",
   "greetings": [
     "Chests you leave behind come to me.",

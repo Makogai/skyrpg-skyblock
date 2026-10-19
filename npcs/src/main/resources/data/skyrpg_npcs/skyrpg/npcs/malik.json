@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:dungeon_hub",
   "pos": [
-    29.5,
-    65.0,
-    14.5
+    -62.5,
+    121.0,
+    6.5
   ],
-  "yaw": 90.0,
+  "yaw": -117.0,
   "sound": "minecraft:block.brewing_stand.brew",
   "greetings": [
     "Essence is the dungeon's true currency.",

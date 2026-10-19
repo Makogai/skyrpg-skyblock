@@ -12,7 +12,7 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | The Hub | `skyrpg_hub:hub` | The Hub.zip | in use |
 | The Park | `skyrpg_skyblock:the_park` | The Park.zip | in use |
 | The End | `skyrpg_skyblock:the_end` | The End.zip | in use |
-| The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | next |
+| The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | in use |
 
 ## Installing (`tools/worlds/hypixel_map.py`)
 
@@ -104,3 +104,11 @@ exist yet then).
 - **NPCs**: from NEU (the Pearl Dealer at the arrival, Guber above it, Gregory and the Lone Adventurer at the Gate);
   Tyzzo beside the Lone Adventurer.
 - **Fairy souls**: Hypixel's 12 of October 2022.
+
+## The Dungeon Hub on Hypixel's map
+
+- **Arrival** (`/warp dungeon_hub`, the Hub's fountain, back from a run): the courtyard at (-30.5 121 0.5), facing
+  Mort at the great gate.
+- **NPCs** from NEU: Mort, Ophelia, Malik, Adventurer Saul, Croesus. (The map's holograms are its parkour's best
+  times.)
+- **Fairy souls**: Hypixel's 7 of October 2022.

@@ -9,7 +9,7 @@ summary: Hypixel's Dungeons - the Dungeon Hub and Mort, runs through a new map e
 
 ## The Dungeon Hub
 
-**/warp dungeon_hub** (it unlocks the first time you're there). The crypt at the north end is the way into the Catacombs, and **Mort** stands in front of it.
+**/warp dungeon_hub** (it unlocks the first time you're there), or walk into the fountain portal by the Hub's village square. It's **Hypixel's own Dungeon Hub map**: you arrive in the courtyard, and **Mort** stands at the great gate in front of you, the way into the Catacombs.
 
 | NPC | What they do |
 | --- | --- |

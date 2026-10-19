@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:dungeon_hub",
   "pos": [
-    -27.5,
-    65.0,
+    -51.5,
+    119.0,
     -8.5
   ],
-  "yaw": -90.0,
+  "yaw": -10.0,
   "sound": "minecraft:block.campfire.crackle",
   "greetings": [
     "I've been down there more times than I can count.",

@@ -711,7 +711,10 @@ phase so the next session can pick up where this one stopped.
       (render, install with the download's entities sorted), `HubMaps` (no builds of ours on such islands, hub.json's
       "official" spawn), island portals to our warps (`HubPortals`), `place_npcs.py` (the map's holograms, NEU, overrides),
       the Hub's zones, launch pads, warps, Rift portal and Hypixel's 79 fairy souls of 2022 placed to fit the map.
-- [ ] The Park, The End and the Dungeon Hub on Hypixel's maps.
+- [x] **The Park, The End and the Dungeon Hub on Hypixel's maps**: the Park's zones from its woods and the Howling
+      Cave from its own mob nameplates, jump pads (a new launch pad kind, `"jump"`) up to the Jungle Island; the End's
+      altar found around a `dragon_altar` spot, its zones by Hypixel's Dragon's Gate; the Dungeon Hub's courtyard;
+      everyone's NPCs, pads, warps and Hypixel's 2022 fairy souls.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 
