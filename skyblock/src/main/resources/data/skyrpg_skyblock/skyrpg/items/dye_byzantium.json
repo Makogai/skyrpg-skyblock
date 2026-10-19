@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DYE_BYZANTIUM",
+ "base": "minecraft:player_head",
+ "name": "Byzantium Dye",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Combinable in Anvil",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0MTE2MDk1ODAyNiwKICAicHJvZmlsZUlkIiA6ICJmZDJlZDMzMzI0Mjk0ZThmOWVlZGNiN2RhMWJiNzlkZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJkcmFtYWdnIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlmMThjMDVlMTJjZmE0MTA4Y2UwZDlhYWY5MzMyYWMzZTI3Yzg4M2U4ZjRlZDIzODM0OWZlN2ZjZDBiYTU5NzEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

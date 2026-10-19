@@ -28,6 +28,7 @@ public final class SlayerPayloads {
         PayloadTypeRegistry.serverboundPlay().register(Cancel.TYPE, Cancel.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(Buy.TYPE, Buy.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(RequestPage.TYPE, RequestPage.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(PickMeter.TYPE, PickMeter.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(PageData.TYPE, PageData.CODEC);
     }
 
@@ -143,6 +144,26 @@ public final class SlayerPayloads {
         }
     }
 
+    /** Picks the drop an RNG Meter aims for ({@code item} is a SkyBlock id; empty clears the pick). */
+    public record PickMeter(String line, String item) implements CustomPacketPayload {
+        public static final Type<PickMeter> TYPE = new Type<>(SkyRpgCombat.id("slayer_meter_pick"));
+        public static final StreamCodec<ByteBuf, PickMeter> CODEC = StreamCodec.composite(
+                ByteBufCodecs.STRING_UTF8, PickMeter::line, ByteBufCodecs.STRING_UTF8, PickMeter::item, PickMeter::new);
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() {
+            return TYPE;
+        }
+    }
+
+    /** A drop an RNG Meter can aim for: its item, the slayer level it needs, Hypixel's odds label and its chance on each tier. */
+    public record MeterOption(String id, ItemStack item, int level, String odds, List<Double> chances) {
+        static final StreamCodec<RegistryFriendlyByteBuf, MeterOption> CODEC = StreamCodec.composite(
+                ByteBufCodecs.STRING_UTF8, MeterOption::id, ItemStack.STREAM_CODEC, MeterOption::item, ByteBufCodecs.VAR_INT, MeterOption::level,
+                ByteBufCodecs.STRING_UTF8, MeterOption::odds, ByteBufCodecs.DOUBLE.apply(ByteBufCodecs.list()), MeterOption::chances,
+                MeterOption::new);
+    }
+
     /** What a slayer level gives per level: a stat, e.g. "Health", 3, not a percent. */
     public record StatPer(String name, double per, boolean percent) {
         static final StreamCodec<ByteBuf, StatPer> CODEC = StreamCodec.composite(
@@ -192,14 +213,16 @@ public final class SlayerPayloads {
      * synced state. Hypixel's lines have a {@code key} ("zombie") and {@code levelViews}, one per level.
      */
     public record PageLine(String id, String name, int color, ItemStack icon, String counts, List<Integer> levels, List<StatPer> perLevel,
-                           List<Unlock> unlocks, ItemStack token, ItemStack rare, List<PageTier> tiers, String key, List<LevelView> levelViews) {
+                           List<Unlock> unlocks, ItemStack token, ItemStack rare, List<PageTier> tiers, String key, List<LevelView> levelViews,
+                           List<MeterOption> meter) {
         static final StreamCodec<RegistryFriendlyByteBuf, PageLine> CODEC = StreamCodec.composite(
                 ByteBufCodecs.STRING_UTF8, PageLine::id, ByteBufCodecs.STRING_UTF8, PageLine::name, ByteBufCodecs.INT, PageLine::color,
                 ItemStack.OPTIONAL_STREAM_CODEC, PageLine::icon, ByteBufCodecs.STRING_UTF8, PageLine::counts,
                 ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list()), PageLine::levels, StatPer.CODEC.apply(ByteBufCodecs.list()), PageLine::perLevel,
                 Unlock.CODEC.apply(ByteBufCodecs.list()), PageLine::unlocks, ItemStack.OPTIONAL_STREAM_CODEC, PageLine::token,
                 ItemStack.OPTIONAL_STREAM_CODEC, PageLine::rare, PageTier.CODEC.apply(ByteBufCodecs.list()), PageLine::tiers,
-                ByteBufCodecs.STRING_UTF8, PageLine::key, LevelView.CODEC.apply(ByteBufCodecs.list()), PageLine::levelViews, PageLine::new);
+                ByteBufCodecs.STRING_UTF8, PageLine::key, LevelView.CODEC.apply(ByteBufCodecs.list()), PageLine::levelViews,
+                MeterOption.CODEC.apply(ByteBufCodecs.list()), PageLine::meter, PageLine::new);
 
         public boolean hypixel() {
             return !levelViews.isEmpty();

@@ -451,7 +451,8 @@ final class MoreAbilities {
             return true;
         });
         // ---- calls
-        Abilities.register("whassup", (p, a) -> Actions.run("open_slayer", p, new JsonObject()));
+        Batphone.init();
+        Abilities.register("whassup", (p, a) -> Batphone.call(p));
         Abilities.register("wasssaaaaa", (p, a) -> Actions.run("open_slayer", p, new JsonObject()));
         Abilities.register("seek_the_king", (p, a) -> Actions.run("commissions", p, new JsonObject()));
 

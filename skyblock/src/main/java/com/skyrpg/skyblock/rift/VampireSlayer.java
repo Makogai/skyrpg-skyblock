@@ -72,10 +72,18 @@ final class VampireSlayer {
     static final int[] LEVEL_TIME = {20, 30, 45, 60, 80};
     static final int[] LEVEL_SBXP = {15, 25, 35, 50, 75};
     private static final Map<String, Integer> QUEST_XP = Map.of("Thrall", 30, "Fledgling", 20, "Splatter", 30);
-    /** Seals per tier (min, max) and rare drops (item, chance from tier). */
+    /** Seals per tier (min, max). */
     private static final int[][] SEALS = {{8, 10}, {10, 16}, {28, 48}, {52, 64}, {64, 128}};
-    private static final Object[][] RARES = {{"BUBBA_BLISTER", 0.10, 2}, {"GUARDIAN_LUCKY_BLOCK", 0.0625, 3}, {"MCGRUBBER_BURGER", 0.0122, 4},
-            {"UNFANGED_VAMPIRE_PART", 0.0122, 4}};
+    /** Hypixel's other drops: item, the Vampire slayer level it needs, and its chance on each tier (0 where it doesn't drop). */
+    private static final Object[][] RARES = {
+            {"ENCHANTED_BOOK_BUNDLE_QUANTUM", 2, new double[] {0, 0.1333, 0.125, 0.122, 0.1198}},
+            {"SOULTWIST_RUNE_1", 2, new double[] {0, 0.1176, 0.1111, 0.1087, 0.107}},
+            {"BUBBA_BLISTER", 3, new double[] {0, 0.10, 0.0938, 0.0915, 0.0898}},
+            {"GUARDIAN_LUCKY_BLOCK", 4, new double[] {0, 0, 0.0625, 0.061, 0.0599}},
+            {"MCGRUBBER_BURGER", 5, new double[] {0, 0, 0, 0.0122, 0.012}},
+            {"UNFANGED_VAMPIRE_PART", 5, new double[] {0, 0, 0, 0.0122, 0.012}},
+            {"ENCHANTED_BOOK_BUNDLE_THE_ONE", 5, new double[] {0, 0, 0, 0, 0.018}},
+            {"DYE_SANGRIA", 0, new double[] {0, 0, 0.00001, 0.0000125, 0.0000167}}};
 
     /** XP and the highest tier killed ("xp", "best"); and the quest running ("tier" 1-5, "progress"). */
     static final AttachmentType<Map<String, Integer>> STATE = AttachmentRegistry.create(SkyRpgSkyblock.id("vampire_slayer"),
@@ -428,7 +436,7 @@ final class VampireSlayer {
         give(player, "COVEN_SEAL", seals);
         List<String> rares = new ArrayList<>();
         for (Object[] rare : RARES) {
-            if (fight.tier >= (int) rare[2] && random.nextDouble() < (double) rare[1] && give(player, (String) rare[0], 1)) {
+            if (after >= (int) rare[1] && random.nextDouble() < ((double[]) rare[2])[fight.tier - 1] && give(player, (String) rare[0], 1)) {
                 rares.add(RiftNpcs.icon((String) rare[0]).getHoverName().getString());
             }
         }

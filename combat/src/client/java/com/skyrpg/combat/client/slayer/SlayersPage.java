@@ -3,6 +3,7 @@ package com.skyrpg.combat.client.slayer;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.platform.cursor.CursorTypes;
 import com.skyrpg.combat.SkyRpgCombat;
+import com.skyrpg.combat.slayer.RngMeter;
 import com.skyrpg.combat.slayer.SlayerPayloads;
 import com.skyrpg.combat.slayer.SlayerState;
 import com.skyrpg.combat.slayer.Slayers;
@@ -52,6 +53,7 @@ public final class SlayersPage implements MenuPage {
     private final Scroller trackScroll = new Scroller();
     private final Scroller infoScroll = new Scroller();
     private final List<Hit> hits = new ArrayList<>();
+    private final List<PickHit> pickHits = new ArrayList<>();
     private int overviewHeight;
     private int trackHeight;
     private int infoHeight;
@@ -65,6 +67,10 @@ public final class SlayersPage implements MenuPage {
     private int infoH;
 
     private record Hit(int x, int y, int w, int h, String line) {
+    }
+
+    /** A drop slot on the RNG Meter card: click to aim the meter at it. */
+    private record PickHit(int x, int y, int w, int h, String line, String item) {
     }
 
     /** One wrapped line of text in a tier card. */
@@ -180,6 +186,7 @@ public final class SlayersPage implements MenuPage {
     @Override
     public void render(PageContext ctx) {
         hits.clear();
+        pickHits.clear();
         SlayerPayloads.PageLine detail = null;
         if (selected != null) {
             for (SlayerPayloads.PageLine line : data) {
@@ -361,6 +368,9 @@ public final class SlayersPage implements MenuPage {
         g.enableScissor(infoX, infoY, infoX + infoW, infoY + infoH);
         int iy = infoY - (int) Math.round(is);
         int istart = iy;
+        if (!line.meter().isEmpty()) {
+            iy = drawMeter(ctx, line, state, level, iy) + GAP;
+        }
         iy = drawStats(ctx, line, state, level, xp, iy);
         iy += GAP;
         Draw.text(g, font, "Tiers", infoX + 2, iy + 1, Theme.MUTED);
@@ -608,6 +618,102 @@ public final class SlayersPage implements MenuPage {
         return y + h;
     }
 
+    /**
+     * The RNG Meter card: slayer XP from Tier III and higher kills fills the bar, the drop you aim at gets likelier as it
+     * fills and is guaranteed when it's full. Click a drop to aim at it (the aimed one again to let go). Returns the y below it.
+     */
+    private int drawMeter(PageContext ctx, SlayerPayloads.PageLine line, SlayerState state, int level, int y) {
+        GuiGraphicsExtractor g = ctx.graphics();
+        Font font = ctx.font();
+        int pink = 0xFFFF55FF;
+        boolean open = false;
+        for (int t = RngMeter.MIN_TIER; t <= line.tiers().size(); t++) {
+            open |= state.kills(line.id(), t) > 0;
+        }
+        int inner = infoW - 12;
+        int perRow = Math.max(1, (inner + 2) / 20);
+        int slotRows = (line.meter().size() + perRow - 1) / perRow;
+        String picked = state.pick(line.id());
+        SlayerPayloads.MeterOption aimed = null;
+        for (SlayerPayloads.MeterOption option : line.meter()) {
+            if (open && option.id().equals(picked) && level >= option.level() && RngMeter.required(line.id(), option.chances(), state) > 0) {
+                aimed = option;
+            }
+        }
+        int h = open ? 6 + 12 + 10 + (aimed == null ? 11 : 11 + 8 + 11) + 2 + slotRows * 20 + 4 : 6 + 12 + 10 + 10 + 6;
+        Draw.panel(g, infoX, y, infoW, h, Theme.CARD, Draw.mix(Theme.CARD_BORDER, pink, 0.3f));
+        g.fill(infoX + 2, y + 1, infoX + infoW - 2, y + 2, Draw.withAlpha(pink, 0.5f));
+        int x = infoX + 6;
+        Draw.text(g, font, "RNG Meter", x, y + 5, pink);
+        int ry = y + 18;
+        if (!open) {
+            Draw.fitText(g, font, "Slay a Tier III " + line.name() + " to open it.", x, ry, inner, Theme.MUTED);
+            Draw.fitText(g, font, "Tier III and higher kills fill it with slayer XP.", x, ry + 10, inner, Theme.DIM);
+            return y + h;
+        }
+        double stored = state.meter(line.id());
+        Draw.fitText(g, font, "Tier III+ kills fill it. Your drop gets up to 3x likelier, then sure.", x, ry, inner, Theme.DIM);
+        ry += 10;
+        if (aimed == null) {
+            Draw.fitText(g, font, Msg.number(Math.floor(stored)) + " XP stored  |  pick a drop below to aim the meter", x, ry, inner, Theme.MUTED);
+            ry += 11;
+        } else {
+            double price = RngMeter.required(line.id(), aimed.chances(), state);
+            float fill = (float) Math.min(1, stored / price);
+            Draw.fitText(g, font, aimed.item().getHoverName().getString(), x, ry, inner / 2, pink);
+            Draw.rightText(g, font, Math.round(fill * 100) + "%" + (stored >= price ? "  full: guaranteed!" : ""), x + inner, ry,
+                    stored >= price ? Theme.GREEN : Theme.TEXT);
+            ry += 11;
+            Draw.bar(g, x, ry, inner, 6, fill, pink);
+            ry += 8;
+            Draw.fitText(g, font, Msg.number(Math.floor(stored)) + " / " + Msg.number(Math.round(price)) + " slayer XP", x, ry, inner, Theme.DIM);
+            ry += 11;
+        }
+        ry += 2;
+        boolean areaHover = ctx.hovered(infoX, infoY, infoW, infoH);
+        for (int i = 0; i < line.meter().size(); i++) {
+            SlayerPayloads.MeterOption option = line.meter().get(i);
+            int sx = x + (i % perRow) * 20;
+            int sy = ry + (i / perRow) * 20;
+            boolean allowed = level >= option.level();
+            double price = RngMeter.required(line.id(), option.chances(), state);
+            boolean seen = price > 0;
+            boolean chosen = aimed == option;
+            int odds = Slayers.oddsColor(option.odds());
+            Draw.rounded(g, sx, sy, 18, 18, chosen ? Draw.withAlpha(pink, 0.45f) : Draw.mix(Theme.TRACK, odds, allowed && seen ? 0.25f : 0.08f));
+            if (chosen) {
+                Draw.outline(g, sx, sy, 18, 18, pink);
+            }
+            g.item(option.item(), sx + 1, sy + 1);
+            if (!allowed || !seen) {
+                g.nextStratum();
+                g.fill(sx, sy, sx + 18, sy + 18, 0xA0121620);
+            }
+            if (allowed && seen) {
+                pickHits.add(new PickHit(sx, sy, 18, 18, line.id(), chosen ? "" : option.id()));
+            }
+            if (areaHover && ctx.hovered(sx, sy, 18, 18)) {
+                g.requestCursor(CursorTypes.POINTING_HAND);
+                List<Component> tip = new ArrayList<>(itemTooltip(ctx, option.item()));
+                tip.add(Component.empty());
+                tip.add(Component.literal("Odds: ").withColor(Theme.MUTED).append(Component.literal(option.odds()).withColor(odds)));
+                if (price > 0) {
+                    tip.add(Component.literal("Meter price: ").withColor(Theme.MUTED)
+                            .append(Component.literal(Msg.number(Math.round(price)) + " slayer XP").withColor(pink)));
+                }
+                if (!allowed) {
+                    tip.add(Component.literal("Needs " + line.name() + " Slayer " + option.level()).withColor(Theme.RED));
+                } else if (!seen) {
+                    tip.add(Component.literal("Slay a tier that drops it first").withColor(Theme.RED));
+                } else {
+                    tip.add(Component.literal(chosen ? "Click to stop aiming at it" : "Click to aim the meter at it").withColor(Theme.GREEN));
+                }
+                ctx.tooltip(tip, pink);
+            }
+        }
+        return y + h;
+    }
+
     private void statRow(GuiGraphicsExtractor g, Font font, String label, String value, int left, int right, int y, int valueColor) {
         Draw.text(g, font, label, left, y, Theme.MUTED);
         Draw.fitRight(g, font, value, right, y, Math.max(20, right - left - font.width(label) - 6), valueColor);
@@ -775,6 +881,15 @@ public final class SlayersPage implements MenuPage {
     public boolean mouseClicked(PageContext ctx, double x, double y, int button) {
         if (button != InputConstants.MOUSE_BUTTON_LEFT || !ctx.hovered(ctx.x(), ctx.y(), ctx.width(), ctx.height())) {
             return false;
+        }
+        for (PickHit hit : pickHits) {
+            if (x >= hit.x() && x < hit.x() + hit.w() && y >= hit.y() && y < hit.y() + hit.h() && ctx.hovered(infoX, infoY, infoW, infoH)) {
+                if (ClientPlayNetworking.canSend(SlayerPayloads.PickMeter.TYPE)) {
+                    ClientPlayNetworking.send(new SlayerPayloads.PickMeter(hit.line(), hit.item()));
+                }
+                Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK.value(), 1.6f, 0.4f));
+                return true;
+            }
         }
         for (Hit hit : hits) {
             if (x >= hit.x() && x < hit.x() + hit.w() && y >= hit.y() && y < hit.y() + hit.h()) {

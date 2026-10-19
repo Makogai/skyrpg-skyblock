@@ -140,9 +140,18 @@ final class SlayerPage {
                 }
                 levelViews.add(new SlayerPayloads.LevelView(stats, reward.sbxp(), items, names));
             }
+            List<SlayerPayloads.MeterOption> meter = new ArrayList<>();
+            java.util.Set<String> seen = new java.util.HashSet<>();
+            for (SlayerLine.Drop drop : line.drops()) {
+                ItemDefinition def = ItemRegistry.skyblock(drop.item());
+                if (line.hypixel() && def != null && RngMeter.pickable(drop) && seen.add(drop.item())) {
+                    meter.add(new SlayerPayloads.MeterOption(drop.item(), SkyItems.create(def, 1), drop.level(), drop.oddsAt(RngMeter.chances(line, drop)
+                            .stream().mapToDouble(Double::doubleValue).max().orElse(0)), RngMeter.chances(line, drop)));
+                }
+            }
             lines.add(new SlayerPayloads.PageLine(line.id(), line.name(), line.color(), new ItemStack(line.icon()), line.countsText(), line.levels(),
                     perLevel, unlockViews, line.token() == Items.AIR ? ItemStack.EMPTY : new ItemStack(line.token()),
-                    line.rare() == Items.AIR ? ItemStack.EMPTY : new ItemStack(line.rare()), tiers, line.key(), levelViews));
+                    line.rare() == Items.AIR ? ItemStack.EMPTY : new ItemStack(line.rare()), tiers, line.key(), levelViews, meter));
         }
         ServerPlayNetworking.send(player, new SlayerPayloads.PageData(lines));
     }

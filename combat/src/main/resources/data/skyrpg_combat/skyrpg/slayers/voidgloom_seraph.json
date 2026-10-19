@@ -319,6 +319,103 @@
      0.0006
     ]
    }
+  },
+  {
+   "item": "ENCHANTMENT_MANA_STEAL_1",
+   "level": 2,
+   "odds": "",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0447
+    ],
+    "4": [
+     1,
+     1,
+     0.0423
+    ]
+   }
+  },
+  {
+   "item": "ENDERSNAKE_RUNE_1",
+   "level": 0,
+   "odds": "",
+   "tiers": {
+    "3": [
+     1,
+     1,
+     0.0242
+    ],
+    "4": [
+     1,
+     1,
+     0.053
+    ]
+   }
+  },
+  {
+   "item": "ENCHANTMENT_SMARTY_PANTS_1",
+   "level": 5,
+   "odds": "",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0176
+    ]
+   }
+  },
+  {
+   "item": "END_RUNE_1",
+   "level": 5,
+   "odds": "",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.0066
+    ]
+   }
+  },
+  {
+   "item": "ENCHANT_RUNE_1",
+   "level": 7,
+   "odds": "",
+   "tiers": {
+    "4": [
+     1,
+     1,
+     0.00046
+    ]
+   }
+  },
+  {
+   "item": "DYE_BYZANTIUM",
+   "level": 0,
+   "odds": "",
+   "tiers": {
+    "1": [
+     1,
+     1,
+     1e-07
+    ],
+    "2": [
+     1,
+     1,
+     4e-07
+    ],
+    "3": [
+     1,
+     1,
+     1e-06
+    ],
+    "4": [
+     1,
+     1,
+     2e-06
+    ]
+   }
   }
  ],
  "tiers": [
