@@ -19,5 +19,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Absorption",
+   "pieces": 4,
+   "description": "§7Grants the wearer §aAbsorption 3§7 for §a20 seconds§7 when they kill an enemy."
+  }
+ ]
 }

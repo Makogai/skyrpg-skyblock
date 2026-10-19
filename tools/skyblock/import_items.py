@@ -10,6 +10,9 @@ Hypixel field kept under "hypixel" for the systems that use them later (gemstone
 Items with an ability get it from their NEU lore (tools/skyblock/cache/neu-repo.zip, MIT): "ability": {"type":
 "instant_transmission", "name": "Instant Transmission", "trigger": "RIGHT CLICK", "mana": 50, "cooldown": 0,
 "description": "..."}, its type the ability's name in snake case (the game implements some of them).
+Armour (and a few belts and necklaces) get "set_bonuses": [{"kind": "full", "name": "Young Blood", "pieces": 4,
+"description": "..."}] from the same lore: Full Set, Tiered and Piece Bonuses, which the game shows on the tooltip and
+implements in SetAbilities.
 The output folder is generated: it's wiped and rewritten on every run.
 """
 import argparse
@@ -270,6 +273,48 @@ def neu_abilities():
     return out
 
 
+BONUS = re.compile(r"^(Full Set Bonus|Tiered Bonus|Piece Bonus): (.+?)(?:\s*\((\d+)/(\d+)\))?\s*$")
+BONUS_STOP = re.compile(r"^(?:Ability:|Item Ability:|This item|Right-click to equip|Requires|Next Upgrade:|Gear Score|[A-Z ]+(?:HELMET|CHESTPLATE|LEGGINGS|BOOTS|NECKLACE|CLOAK|BELT|GLOVES|BRACELET|GAUNTLET|SWORD)$)")
+
+
+def neu_set_bonuses():
+    """Item id -> its set bonuses from NEU's lore: [{"kind": full|tiered|piece, "name", "pieces", "description"}].
+    The description keeps Hypixel's colour codes (the tooltip shows it as written); "Piece Bonus: +0" counters are left out."""
+    out = {}
+    if not NEU.exists():
+        return out
+    with zipfile.ZipFile(NEU) as neu:
+        for name in neu.namelist():
+            if not (name.startswith(NEU_ITEMS) and name.endswith(".json")):
+                continue
+            try:
+                item = json.loads(neu.read(name))
+            except ValueError:
+                continue
+            lore = [ICONS.sub("", line).rstrip() for line in item.get("lore", [])]
+            bonuses = []
+            for i, line in enumerate(lore):
+                plain = FORMATTING.sub("", line).strip()
+                match = BONUS.match(plain)
+                if not match or match.group(2).startswith("+"):
+                    continue
+                words = []
+                for rest in lore[i + 1:]:
+                    text = FORMATTING.sub("", rest).strip()
+                    if not text or BONUS.match(text) or BONUS_STOP.match(text):
+                        break
+                    words.append(rest.strip())
+                bonus = {"kind": {"Full Set Bonus": "full", "Tiered Bonus": "tiered", "Piece Bonus": "piece"}[match.group(1)],
+                         "name": re.sub(r"\s+SNEAK$", "", match.group(2).strip()), "pieces": int(match.group(4)) if match.group(4) else 0,
+                         "description": re.sub(r"\s+", " ", " ".join(words)).strip()}
+                if bonus["kind"] == "full" and not bonus["pieces"]:
+                    bonus["pieces"] = 4
+                bonuses.append(bonus)
+            if bonuses:
+                out[item.get("internalname", "")] = bonuses
+    return out
+
+
 def description(text):
     """Hypixel's description text with formatting codes; lore is gray unless it says otherwise."""
     text = re.sub(r"%%([a-z_]+)%%", lambda m: ("§" + CODES[m.group(1)]) if m.group(1) in CODES else "", text)
@@ -294,6 +339,7 @@ def main():
     vanilla = vanilla_items()
     known_stats = our_stats()
     abilities = neu_abilities()
+    set_bonuses = neu_set_bonuses()
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
@@ -302,6 +348,8 @@ def main():
         definition = convert(item, known_stats)
         if item["id"] in abilities:
             definition["ability"] = abilities[item["id"]]
+        if item["id"] in set_bonuses:
+            definition["set_bonuses"] = set_bonuses[item["id"]]
         base = definition["base"].removeprefix("minecraft:")
         if base not in vanilla:
             missing.add((item["material"], item.get("durability"), base))

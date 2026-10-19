@@ -52,6 +52,8 @@ public final class Abilities {
     private static final Map<UUID, Long> LAST_LEFT_CLICK = new HashMap<>();
     /** Left clicks other mods take first (shortbows shoot); true when one took it. */
     private static final List<java.util.function.Predicate<ServerPlayer>> LEFT_CLICKS = new ArrayList<>();
+    /** Multipliers on every ability's mana cost (Wise Blood's 2/3). */
+    private static final List<java.util.function.ToDoubleFunction<ServerPlayer>> MANA_COSTS = new ArrayList<>();
     /** Who was sneaking last tick (SNEAK abilities go off as you start). */
     private static final Map<UUID, Boolean> SNEAKING = new HashMap<>();
     /** Cooldowns that ended while the player might still be holding the item: they get a "ready" ping. */
@@ -181,6 +183,9 @@ public final class Abilities {
         }
         // Ultimate Wise takes its percent off the mana cost.
         double mana = ability.mana() * Math.max(0, 1 - ultimateWise(stack) / 100);
+        for (java.util.function.ToDoubleFunction<ServerPlayer> factor : MANA_COSTS) {
+            mana *= factor.applyAsDouble(serverPlayer);
+        }
         if (mana > 0 && Stats.available() && Stats.mana(serverPlayer) < mana) {
             refuse(serverPlayer, now, "Not enough mana for " + ability.name() + ": " + Msg.number(Math.floor(Stats.mana(serverPlayer)))
                     + " / " + Msg.number(mana) + " " + StatTypes.MANA_ICON);
@@ -205,6 +210,11 @@ public final class Abilities {
             }
         }
         return InteractionResult.SUCCESS;
+    }
+
+    /** A multiplier on the mana an ability costs this player (1 for none), e.g. an armour set's discount. */
+    public static void manaCostFactor(java.util.function.ToDoubleFunction<ServerPlayer> factor) {
+        MANA_COSTS.add(factor);
     }
 
     /** A left click another mod takes before the held item's ability (true when it did). */

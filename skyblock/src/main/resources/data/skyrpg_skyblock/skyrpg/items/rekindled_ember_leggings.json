@@ -222,5 +222,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Rekindle",
+   "pieces": 4,
+   "description": "§7Increase all of your outgoing §7burning damage by §c200%§7. For each §7second you are on fire additionally §7increase all burning damage by §c1.2% §7up to §c50%§7. When wearing 2 or more §7armor pieces of this set, melee §7attacks from ignited mobs will set you §7on fire!"
+  }
+ ]
 }

@@ -49,5 +49,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Expert Miner",
+   "pieces": 4,
+   "description": "§7Grants §6+2 Mining Speed §7per Mining §7Skill level unlocked."
+  }
+ ]
 }

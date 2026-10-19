@@ -35,5 +35,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Heat Shield",
+   "pieces": 4,
+   "description": "§7You are immune to §c Heat§7."
+  }
+ ]
 }

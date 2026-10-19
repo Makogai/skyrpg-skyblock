@@ -119,5 +119,13 @@
     2
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Dungeon Lord",
+   "pieces": 4,
+   "description": "§7Gains §c+5 Strength §7and §9+10 Crit §9Damage §7every minute spent in the §7Dungeon."
+  }
+ ]
 }

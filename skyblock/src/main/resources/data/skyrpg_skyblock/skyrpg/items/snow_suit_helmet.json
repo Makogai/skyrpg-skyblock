@@ -33,5 +33,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Cold Thumb",
+   "pieces": 8,
+   "description": "§7Allows the wearer to shoot unlimited §7snowballs when using §9Frosty the §9Snow Cannon§7."
+  }
+ ]
 }

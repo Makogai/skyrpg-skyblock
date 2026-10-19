@@ -20,5 +20,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Refraction",
+   "pieces": 4,
+   "description": "§7The stats of this armor change from §a0§7 to §a200%§7 depending on the current §7light level."
+  }
+ ]
 }

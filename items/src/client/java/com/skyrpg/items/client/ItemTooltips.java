@@ -238,6 +238,29 @@ final class ItemTooltips {
             }
         }
 
+        // Hypixel's set bonuses: "Full Set Bonus: Young Blood (2/4)", with (Active) once enough pieces are worn.
+        List<com.skyrpg.items.SetBonuses.Bonus> bonuses = com.skyrpg.items.SetBonuses.of(def);
+        if (!bonuses.isEmpty()) {
+            Minecraft minecraft = Minecraft.getInstance();
+            Map<String, Integer> wornBonuses = minecraft.player == null ? Map.of() : com.skyrpg.items.SetBonuses.worn(minecraft.player);
+            for (com.skyrpg.items.SetBonuses.Bonus bonus : bonuses) {
+                int count = wornBonuses.getOrDefault(bonus.key(), 0);
+                int needed = bonus.pieces() > 0 ? bonus.pieces() : 1;
+                boolean active = count >= (bonus.kind().equals("tiered") ? Math.min(2, needed) : needed);
+                out.add(Component.empty());
+                MutableComponent header = Component.literal(bonus.label() + ": " + bonus.name() + " ").withStyle(ChatFormatting.GOLD);
+                if (bonus.pieces() > 0) {
+                    header.append(Component.literal("(" + Math.min(count, bonus.pieces()) + "/" + bonus.pieces() + ")")
+                            .withStyle(active ? ChatFormatting.GREEN : ChatFormatting.GRAY));
+                }
+                if (active) {
+                    header.append(Component.literal(" (Active)").withStyle(ChatFormatting.GREEN));
+                }
+                out.add(header);
+                wrapFormatted(bonus.description()).forEach(line -> out.add(Component.literal(line)));
+            }
+        }
+
         Reforges.Reforge reforge = ItemMods.reforge(stack);
         if (reforge != null && !reforge.ability().isEmpty()) {
             out.add(Component.empty());

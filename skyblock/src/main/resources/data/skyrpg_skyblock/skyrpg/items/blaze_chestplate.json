@@ -47,5 +47,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Blazing Aura",
+   "pieces": 4,
+   "description": "§7Damages mobs within §a5§7 blocks for §a3% §7of their max §c Health §7per second."
+  }
+ ]
 }

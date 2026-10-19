@@ -203,5 +203,13 @@
   "trigger": "SNEAK",
   "description": "At 10 stacks, sneak to reset your stacks and shoot 3 homing missiles dealing 5,000 Damage each.",
   "type": "homing_missiles"
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Arcane Energy",
+   "pieces": 4,
+   "description": "§7Every §a1s§7, dealing §bMagic Damage§7 from an §7ability grants §c1§7 stack of §6Ѫ Arcane Energy§7. §8Lose 1 stack after 4s of not gaining a stack."
+  }
+ ]
 }

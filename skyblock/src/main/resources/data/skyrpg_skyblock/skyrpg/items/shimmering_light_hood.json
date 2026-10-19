@@ -330,5 +330,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Shimmer",
+   "pieces": 4,
+   "description": "§7Increases all §aExperience Orbs §7gained from monsters and ores by §a200%§7."
+  }
+ ]
 }

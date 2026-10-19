@@ -76,5 +76,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Efficient training",
+   "pieces": 4,
+   "description": "§7Every §b5 §7Catacombs levels, this armor piece §7gains +§a2% §7stats."
+  }
+ ]
 }

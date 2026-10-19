@@ -22,5 +22,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Bonus Speed",
+   "pieces": 4,
+   "description": "§7Increases §f Speed §7by §a+20§7."
+  }
+ ]
 }

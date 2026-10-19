@@ -27,5 +27,13 @@
    },
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Starpower",
+   "pieces": 4,
+   "description": "§7Increases the duration of §6Starfall §7by §a2x §7and its range by §a+1§7."
+  }
+ ]
 }

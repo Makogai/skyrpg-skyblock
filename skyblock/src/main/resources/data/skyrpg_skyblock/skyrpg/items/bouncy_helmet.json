@@ -93,5 +93,13 @@
     10
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Bouncing Arrow",
+   "pieces": 4,
+   "description": "§7Your arrows have a §e25% §7chance to §7bounce to another target after it §7hits something."
+  }
+ ]
 }

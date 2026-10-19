@@ -59,5 +59,25 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Enrage",
+   "pieces": 4,
+   "description": "§7Enrage for §a6s §7gaining §f100 Speed§7, §c100 §cDamage§7, and §c100 Strength§7. §8Cooldown: §a25s"
+  },
+  {
+   "kind": "full",
+   "name": "Trolling The Reaper",
+   "pieces": 3,
+   "description": "§7Healing Wands heal §a+50%§7. §7Gain §a+100 §7against §2 Undead §7mobs. §7Deal §c+100% §7damage to §2 Undead §7mobs but §c1% §7to all other mobs."
+  },
+  {
+   "kind": "piece",
+   "name": "Zombie Bulwark",
+   "pieces": 0,
+   "description": "§7Kill Zombies to accumulate defense §7against them."
+  }
+ ]
 }

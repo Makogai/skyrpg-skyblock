@@ -71,5 +71,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Cold Thumb",
+   "pieces": 4,
+   "description": "§7Allows the wearer to shoot unlimited §7snowballs when using §9Frosty the §9Snow Cannon§7."
+  },
+  {
+   "kind": "full",
+   "name": "Battalion",
+   "pieces": 4,
+   "description": "§7Grants §b+1 Magic Find §7and §a+50 §aDefense §7to everyone within §a30 §7blocks. Stacks up to §c5 §7times."
+  }
+ ]
 }

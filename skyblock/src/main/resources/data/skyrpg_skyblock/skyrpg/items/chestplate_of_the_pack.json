@@ -26,5 +26,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Armor of the Pack",
+   "pieces": 4,
+   "description": "§7Gain §c+35 Strength §7and §a+80 §aDefense §7for each §cArmor of the Pack §7wearer within §a30 §7blocks. §8Max of 3 players!"
+  }
+ ]
 }

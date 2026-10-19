@@ -406,6 +406,34 @@ phase so the next session can pick up where this one stopped.
       Creeper Veil, Voodoo Doll, Grappleshot, Slug and Spring Boots. 109 of 147 types (229 of 289 items). Not yet: the
       ones whose systems aren't in (Greenhouse, hotspots, fallen stars, Rift vampires, necromancy, Hollow Wand, Kuudra
       perk shop, minion time), the Terminator's crit chance divided by 4, Hollow's Spirit stacks.
+- [x] **Items, part 4** (`SetAbilities`, `MiscAbilities`, `SetBonuses`; `import_items.py` reads NEU's lore): every
+      armour piece (and belt, necklace, cloak, gloves) now carries `set_bonuses` (Full Set, Tiered and Piece Bonus lines:
+      549 items, 130 bonus texts, kept with Hypixel's colour codes). The tooltip lists them as "Full Set Bonus: Young
+      Blood (2/4)" and turns "(Active)" green once the pieces are on (`SetBonuses` counts worn pieces by bonus name,
+      armour in its slot and accessories in theirs). `SetAbilities` makes about 55 armour sets' bonuses work: the dragon
+      sets (Young, Superior, Strong, Wise, Old, Protector, Unstable, Holy), Speedster, Miner Outfit, Glacite, Goblin,
+      the Dwarven Mines and Crystal Hollows pieces, Heavy, Mastiff, Adaptive, Crystal, the Lord sets, Skeleton Master and
+      Soldier, Shadow Assassin with its four piece bonuses, Tarantula and Primordial, Thunder's Static Charge, the
+      Tuxedos, Reaper and Revenant (Enrage on sneak), Final Destination, Blaze and Frozen Blaze, Witherborn (Necron,
+      Storm, Goldor, Maxor, Wither), Cactus, Zombie, Golem, Mercenary, Mushroom, Rabbit, Ember, Bouncy, Sponge and Shark
+      Scale, the nearby-wearer sets (Pack, Nutcracker, Zombie Soldier), Fairy, Emerald, the fishing sets and Star
+      Fisher, Molten, Magma Lord, Arachne, Berserker, Zombie Knight. New hooks: `Abilities.manaCostFactor` (Wise Blood).
+      Eight more ability types (117 of 147, 239 of 289 items): Nasty Bite (Mosquito Bow left click), Time Skip and Time
+      Warp (minions on your island work an hour ahead; registered by the minions mod), Weather, Farmer's Speed, Parley,
+      Phwomp, Spooker. Decided: shares of your own total (Superior, Mastiff, Smart Miner, Dashing's max Health) come from
+      the last recompute with this source's own part taken out, so they settle in a second without feeding on
+      themselves; a Tiered Bonus is on from 2 pieces; a teleport is a jump of 5+ blocks in one tick (so pearls, Etherwarp
+      and the Aspect of the End all count for the Shadow Assassin); "in combat" is 5 s after hitting or being hit;
+      Final Destination skips the Soulflow cost; Witherborn's wither is a flying spark that explodes for 1,000 ability
+      damage within 5 blocks of the nearest mob (the wiki gives no number); Blazing Aura's cap is 100 plus 100 per 5,000
+      Blaze Rods collected (the wiki only gives the growth); Old Blood adds Growth +10, Protection +2, Sugar Rush +1,
+      True Protection +3 a level (the wiki's 2019 numbers); Holy Blood works for the wearer too (the wiki says it is
+      bugged on Hypixel); the Weather Stick changes the sky for the players on the island only (packets, the world's
+      weather is shared); Farmer's Speed cycles 100 to 400 in steps of 25 with left clicks (Hypixel asks for a number
+      in a sign). Not yet: counters kept on pieces (Bulwarks, Absorb, Training, Skeletor, the Vanquished set), Soulflow,
+      Greenhouse drops, Necromancer Lord's souls, the Speed cap, Peace Treaty, Ferocity against Endermen, Venom and
+      Hollow's Spirit; the abilities left need the Greenhouse, hotspots, fallen stars, the Rift, necromancy, Soulflow
+      and dungeon revives.
 - [x] **Bestiary**: `tools/skyblock/import_bestiary.py` (NEU bestiary.json: 255 families on 19 islands, heads, caps,
       brackets) to `skyrpg/bestiary`. `Bestiary` (skyblock): kills by family (the mob's name, Hypixel's; aliases for Goblin
       variants, Zealot Bruisers, the dragons; unnamed vanilla mobs by type), tiers from the bracket up to the cap. Decided

@@ -108,8 +108,13 @@ These work now:
 | Builder's tools | Builder's Wand, Builder's Ruler, Block Zapper, Infinidirt Wand, Snow Shovel | On your own island: grow every connected face, lay a line, zap connected blocks (164 at most), place dirt (1 coin), lay snow |
 | Stun / Absorption Potion | the Tank's dungeon potions | Stun monsters within 10 blocks; 200 Health of absorption for your team |
 | Splash, Sparkle | Fish Hat, Sunflower Head | Just for show |
+| Nasty Bite | Mosquito Bow | Left click: an enhanced shot that heals you 189 Health on hit (right click shoots as usual) |
+| Time Skip, Time Warp | Enchanted Clock, Enchanted Time Clock | Every minion on your island works an hour ahead |
+| Weather | Weather Stick | On your island: clear, rain, thunderstorm for everyone there (their sky only) |
+| Farmer's Speed | Rancher's Boots | Left click with them in hand: the most Speed they allow, 100 to 400 in steps of 25, then none |
+| Parley, Phwomp, Spooker | Aspect of the Jerry, Carnival Dart Tube, Great Spook Staff | Jerry says something; a dart of sparks; punch a player in the full Great Spook Armor to spook them |
 
-Every other ability shows on its item but doesn't do anything yet (those need the systems they belong to: the Greenhouse, hotspots, fallen stars, the Rift's vampires, necromancy).
+Every other ability shows on its item but doesn't do anything yet (those need the systems they belong to: the Greenhouse, hotspots, fallen stars, the Rift's vampires, necromancy, Soulflow, dungeon revives, the Carnival and Doctor's Ubik's Cube games, the Garden's sprayer and water). The Egglocator works from the Chocolate Factory.
 
 ### Wither scrolls
 
@@ -129,6 +134,49 @@ Wearing two or more pieces of a Kuudra set builds **stacks** (at most one every 
 | Aurora (Arcane Energy) | ability damage | At 10, **sneak** to fire 3 to 5 homing missiles of 5,000 damage |
 | Terror (Hydra Strike) | arrow hits (every 0.2 s) | +2% to +5% arrow damage each per piece past one; at 10, two more arrows of 20% to 60% |
 | Fervor | attacking | At 10, **sneak** for a Ground Pound around you as hard as your Effective Health (25 million at most); the full set may turn three mobs onto you when you hit |
+
+### Armour set bonuses
+
+Armour (and some belts, necklaces and cloaks) shows Hypixel's **Full Set Bonus**, **Tiered Bonus** and **Piece Bonus** lines on its tooltip, read from the same lore as the abilities: **Full Set Bonus: Young Blood (2/4)**, turning **(Active)** and green once enough pieces are worn. A Tiered Bonus is on from two pieces. These work now:
+
+| Set | Bonus |
+| --- | --- |
+| Young Dragon | Young Blood: +70 Speed while above half health |
+| Superior Dragon | Superior Blood: +5% to every combat stat and Magic Find; the Aspect of the Dragons ability hits 50% harder |
+| Strong Dragon | Strong Blood: +75 damage with the Aspect of the End (melee hits do 175% of the sword's base 100) |
+| Wise Dragon | Wise Blood: every ability costs 2/3 of its mana |
+| Old Dragon | Old Blood: Growth gives 25 Health a level (15), Protection 5 Defense (3), Sugar Rush 3 Speed (2), True Protection 8 True Defense (5) |
+| Protector Dragon | Protective Blood: +1% of each piece's Defense for each missing percent of health |
+| Unstable Dragon | Unstable Blood: lightning on every mob within 8 blocks every 15 seconds, 3,000 damage (not on islands) |
+| Holy Dragon | Holy Blood: +75 Health Regen for you and every player near you who doesn't wear it |
+| Speedster, Miner Outfit | +20 Speed; +40 Mining Speed |
+| Glacite, Goblin | +2 Mining Speed per Mining level; all your Intelligence becomes Mining Speed (1 per 15) |
+| Mithril, Titanium, Amber, Sapphire... | +30 / +50 Mining Speed and +5 / +40 Mining Fortune in the Dwarven Mines; +25 Mining Fortune in the Crystal Hollows |
+| Heavy, Super Heavy | +1 Speed per 50 Defense |
+| Mastiff | Absolute Unit: +1% Health per 25 Crit Damage (40% at most), +1 Crit Damage per 2 Defense, Defense capped at 300, 20% less damage from animals |
+| Adaptive | Each piece gains +2% of its stats per 5 Catacombs levels |
+| Crystal | Its stats go from 0 to 200% with the light you stand in |
+| Skeleton Lord, Zombie Lord | +5 Strength and +10 Crit Damage a minute in a dungeon; +10 Strength and +10 Defense a minute |
+| Skeleton Master, Soldier | +25% arrow damage each |
+| Shadow Assassin | +1 Strength per kill in a dungeon (per run); the pieces: on a teleport (a jump of 5+ blocks) regen 10 Mana, +10 Strength for 10 s, +10% on your next hit, or invisibility and +20 Speed for 10 s (3 s apart); a kill heals 15 |
+| Tarantula, Primordial | Octodexterity: every 4th (3rd) hit deals +100% (+50%) damage |
+| Thunder | Static Charge: a charge every 30 / 25 / 20 / 10 s with 2 / 3 / 4 / 5 pieces (as many as pieces); your next hit adds 15 / 20 / 25 / 40% per charge |
+| Cheap, Fancy, Elegant Tuxedo | Dashing: max Health 75 / 150 / 250, and +50% / +100% / +150% damage |
+| Reaper, Revenant | Reaper: Enrage when you sneak (100 Speed and Strength, double damage, 6 s, 25 s apart); double damage to the undead and a hundredth to the rest; +100 Defense against the undead (Revenant: against Zombies) |
+| Final Destination | Vivacious Darkness: sneaking in combat gives +30 Strength, +20 Attack Speed, +10 Speed, Intelligence x1.25 and double damage to Endermen |
+| Blaze, Frozen Blaze | Blazing Aura: every mob within 5 blocks takes 3% of its health a second (at most 100 plus 100 per 5,000 Blaze Rods collected; Frozen adds 300 and slows) |
+| Witherborn (Necron, Storm, Goldor, Maxor, Wither) | A wither every 30 seconds flies to the nearest mob and explodes for 1,000 ability damage |
+| Cactus, Zombie, Golem, Mercenary | Rebound 33% of damage taken; heal 10 a second for 5 s when hit by a projectile; Absorption III for 20 s on a kill; +5 coins and 20 Health a kill on level 10+ mobs |
+| Mushroom, Rabbit, Ember | Night Vision; Jump Boost II while sneaking; immunity to fire and lava |
+| Bouncy | Arrows have a 25% chance to bounce to another mob |
+| Sponge, Shark Scale | Defense doubles in water |
+| Armor of the Pack, Nutcracker, Zombie Soldier | +35 Strength and +80 Defense per wearer within 30 blocks (3 at most); +1 Magic Find and +50 Defense for everyone near (5 at most); +30 Defense per wearer |
+| Fairy, Emerald | +1 Health per Fairy Soul found; +1 Health and Defense per 3,000 Emeralds collected (350 at most) |
+| Angler, Backwater, Hunter sets | 3% less damage from sea creatures; 5% more to them; +6 Health per Fishing level; Star Fisher: Fishing Speed per star on the piece (0.2, 0.4, 0.7 or 1 by tier) |
+| Molten, Magma Lord, Arachne, Berserker | 5% less damage in Kuudra; +1 Sea Creature Chance; +5 Health and Defense; half Health and Defense |
+| Zombie Knight | +50 Defense with the Zombie Knight Sword in hand, +30 Strength for the sword with the full armour |
+
+Not yet: the counters kept on the pieces (the Bulwarks, Absorb, Training, Skeletor), Soulflow, the Greenhouse drops, Necromancer Lord's souls, the Speed cap, Peace Treaty, Candy, Ferocity bonuses against Endermen, the Spooky festival and the Hollow set's Spirit stacks.
 
 ### Boots
 

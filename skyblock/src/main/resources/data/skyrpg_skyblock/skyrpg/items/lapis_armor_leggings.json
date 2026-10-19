@@ -28,5 +28,13 @@
    },
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Magnetic",
+   "pieces": 0,
+   "description": "§7Earn §a+50% §7more Exp when mining."
+  }
+ ]
 }

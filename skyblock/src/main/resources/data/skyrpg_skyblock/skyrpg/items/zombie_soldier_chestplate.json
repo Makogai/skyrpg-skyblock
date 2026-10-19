@@ -93,5 +93,13 @@
     100
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Shoal",
+   "pieces": 4,
+   "description": "§7Gain §a+30 Defense §7for each §cZombie §cSoldier Set §7within §a30 §7blocks."
+  }
+ ]
 }

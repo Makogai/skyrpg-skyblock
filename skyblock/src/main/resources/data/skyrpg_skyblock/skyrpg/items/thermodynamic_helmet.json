@@ -29,5 +29,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Newton's Demise",
+   "pieces": 4,
+   "description": "§7Grants §e+50 Attack Speed Cap§7."
+  }
+ ]
 }

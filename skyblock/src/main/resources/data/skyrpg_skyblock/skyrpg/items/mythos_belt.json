@@ -19,5 +19,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Unearthed",
+   "pieces": 8,
+   "description": "§7Reduces damage taken from §2 §2Mythological §7mobs by §a0%§7."
+  },
+  {
+   "kind": "tiered",
+   "name": "Mythological Greed",
+   "pieces": 4,
+   "description": "§7Grants §a+0% §7more §6Coins §7from killing §2 §2Mythological §7mobs."
+  }
+ ]
 }

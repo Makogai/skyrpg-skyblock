@@ -39,5 +39,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Smart Miner",
+   "pieces": 4,
+   "description": "§7Converts your Intelligence into §7Mining Speed. §6+1 Mining Speed §7for §7every §b15 Intelligence §7removed."
+  }
+ ]
 }

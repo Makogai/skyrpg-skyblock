@@ -24,5 +24,13 @@
    }
   ],
   "museum": true
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Nether Lord",
+   "pieces": 4,
+   "description": "§7Grants immunity to all damage from §cLava§7 and §cFire§7. §7Walking over §cLava§7 creates §5Obsidian §7under your feet. §8Disabled in some zones and near §8Fishing Hotspots."
+  }
+ ]
 }

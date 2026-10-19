@@ -69,5 +69,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Projectile Absorption",
+   "pieces": 3,
+   "description": "§7Heals the wearer for §a10§7 per second §7for §a5§7 seconds when hit by a §7projectile."
+  }
+ ]
 }

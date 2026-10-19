@@ -91,5 +91,13 @@
     40
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Zombie Knight",
+   "pieces": 4,
+   "description": "§7Gains §c+30 §7Strength when used with §7the Zombie Knight Armor"
+  }
+ ]
 }

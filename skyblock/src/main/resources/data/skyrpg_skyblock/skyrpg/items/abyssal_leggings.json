@@ -60,5 +60,19 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "One with the Fish",
+   "pieces": 4,
+   "description": "§7Grants the ability to breathe §9permanently §7while §9underwater§7."
+  },
+  {
+   "kind": "tiered",
+   "name": "Deep Sea Diver",
+   "pieces": 4,
+   "description": "§7Grants §6+0 Treasure Chance §7while §9underwater§7."
+  }
+ ]
 }

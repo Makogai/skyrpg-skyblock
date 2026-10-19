@@ -45,5 +45,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Absorb",
+   "pieces": 4,
+   "description": "§9Doubles§7 your §a Defense§7 while in §7water."
+  }
+ ]
 }

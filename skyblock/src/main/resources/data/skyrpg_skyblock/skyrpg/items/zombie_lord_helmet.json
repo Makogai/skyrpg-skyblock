@@ -118,5 +118,13 @@
     18
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Dungeon Lord",
+   "pieces": 4,
+   "description": "§7Gains §c+10 Strength §7and §a+10 §aDefense §7every minute spent in the §7Dungeon."
+  }
+ ]
 }

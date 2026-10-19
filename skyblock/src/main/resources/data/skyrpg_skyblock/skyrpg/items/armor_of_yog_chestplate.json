@@ -63,5 +63,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Absorb",
+   "pieces": 4,
+   "description": "§7Every §95 Yogs killed§7 grants the §7wearer §6+1 Mining Speed§7. §8(Max 500)."
+  }
+ ]
 }

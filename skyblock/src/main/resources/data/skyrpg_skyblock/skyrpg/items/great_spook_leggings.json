@@ -12,5 +12,19 @@
  "hypixel": {
   "museum": true,
   "npc_sell_price": 0
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Spooky",
+   "pieces": 4,
+   "description": "§7Lets you §8§ospook §7other players while §7worn by punching them with the §6Great §6Spook Staff§7."
+  },
+  {
+   "kind": "full",
+   "name": "Fearsome",
+   "pieces": 4,
+   "description": "§7Monsters at or below your total §5Fear §7level will run away from you."
+  }
+ ]
 }

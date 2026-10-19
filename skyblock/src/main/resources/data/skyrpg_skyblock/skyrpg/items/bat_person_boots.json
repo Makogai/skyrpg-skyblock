@@ -18,5 +18,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Bat Powers Activate!",
+   "pieces": 4,
+   "description": "§7Upgrades your grappling hook and §7turns you into a true vigilante! §7Grants a §a+5% §7chance to find rare §7Candy."
+  }
+ ]
 }

@@ -96,5 +96,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Old Blood",
+   "pieces": 4,
+   "description": "§7Increases the strength of §9Growth§7, §9Protection§7, §9Feather Falling§7, §9Sugar §9Rush§7, and §9True Protection§7 while worn."
+  }
+ ]
 }

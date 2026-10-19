@@ -19,5 +19,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Tank",
+   "pieces": 4,
+   "description": "§7Increases §c Health §7by §a+1§7 and §a §aDefense§7 by §a+1§7 for every §b3,000 §7Emeralds in your collection. Max 350 §7each."
+  }
+ ]
 }

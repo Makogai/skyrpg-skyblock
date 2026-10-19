@@ -23,5 +23,13 @@
    "category": "FARMING",
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Eradicator",
+   "pieces": 4,
+   "description": "§7Grants §6+0 Farming Fortune §7when §7vacuuming up §2 Pests"
+  }
+ ]
 }

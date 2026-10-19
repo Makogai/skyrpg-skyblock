@@ -27,5 +27,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Trolling The Reaper",
+   "pieces": 3,
+   "description": "§7Healing Wands heal §a+50%§7. §7Gain §a+100 §7against §2 Undead §7mobs."
+  },
+  {
+   "kind": "piece",
+   "name": "Zombie Bulwark",
+   "pieces": 0,
+   "description": "§7Kill Zombies to accumulate defense §7against them."
+  }
+ ]
 }

@@ -101,5 +101,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Soul Whisper",
+   "pieces": 4,
+   "description": "§7Increase the damage of your §7necromancer summoned mobs by §c20%§7."
+  }
+ ]
 }

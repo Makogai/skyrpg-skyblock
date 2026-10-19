@@ -265,5 +265,19 @@
   "trigger": "SNEAK",
   "description": "At 10 stacks, sneak to reset your stacks and perform 2 Ground Pounds dealing damage to mobs within 10 blocks. (Damage scales with your EHP).",
   "type": "ground_pound"
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Fervor",
+   "pieces": 4,
+   "description": "§7Every §a1.5s§7, attacking a mob grants §c1§7 stack of §6҉ Fervor§7. §8Lose 1 stack after 4s of not gaining §8a stack."
+  },
+  {
+   "kind": "full",
+   "name": "Intimidate",
+   "pieces": 4,
+   "description": "§7Attacking a mob has a §c50%§7 chance to direct §7aggro from 3 mobs to you."
+  }
+ ]
 }

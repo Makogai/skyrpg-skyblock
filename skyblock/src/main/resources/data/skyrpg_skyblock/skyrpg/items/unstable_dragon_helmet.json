@@ -102,5 +102,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Unstable Blood",
+   "pieces": 4,
+   "description": "§7Sometimes strikes nearby mobs with §7lightning. It's unstable!"
+  }
+ ]
 }

@@ -119,5 +119,13 @@
     4
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Skeleton Master",
+   "pieces": 4,
+   "description": "§7Increase the damage you deal with §7arrows by §c25%§7."
+  }
+ ]
 }

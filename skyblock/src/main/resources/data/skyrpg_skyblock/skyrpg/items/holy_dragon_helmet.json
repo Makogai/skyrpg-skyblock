@@ -95,5 +95,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Holy Blood",
+   "pieces": 4,
+   "description": "§7Grants §c+75 Health Regen §7to you §7and all players within §a10 §7blocks. §8Effect only applies once!"
+  }
+ ]
 }

@@ -190,5 +190,13 @@
     ]
    }
   ]
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Dominus",
+   "pieces": 4,
+   "description": "§7Every §a1.5s§7, melee attacks grant §c1§7 stack of §6ᝐ Dominus§7. §8Lose 1 stack after 4s of not §8gaining a stack."
+  }
+ ]
 }

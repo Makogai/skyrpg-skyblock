@@ -19,5 +19,13 @@
    },
    "game_stage": "STARTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Springsneak",
+   "pieces": 4,
+   "description": "§7While sneaking, you have permanent §bJump Boost II."
+  }
+ ]
 }

@@ -95,5 +95,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Wise Blood",
+   "pieces": 4,
+   "description": "§7Abilities have §a2/3 §7of the mana cost."
+  }
+ ]
 }

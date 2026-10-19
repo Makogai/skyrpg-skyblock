@@ -31,5 +31,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Cropier Crops",
+   "pieces": 4,
+   "description": "§7Farming Wheat, Carrots, and Potatoes §7has a §a0.03% §7chance of dropping a §7Cropie. Inside the Greenhouse gives §7a §a12.0%§7 chance to drop one from §7any crop grown inside. Grants §60 §6Farming Fortune§7."
+  }
+ ]
 }

@@ -122,5 +122,13 @@
    },
    "game_stage": "PROFESSIONAL"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Witherborn",
+   "pieces": 4,
+   "description": "§7Spawns a wither minion every §e30 §7seconds up to a maximum §a1 §7wither. §7Your withers will travel to and §7explode on nearby enemies."
+  }
+ ]
 }

@@ -76,6 +76,8 @@ public final class HypixelAbilities {
         MoreAbilities.init();
         Deployables.init();
         KuudraArmor.init();
+        SetAbilities.init();
+        MiscAbilities.init();
         Shortbows.init();
         UtilityAbilities.init();
         // The Blaze Slayer daggers: swap attunement (the Hellion Shield only lets the matching one through).
@@ -118,7 +120,7 @@ public final class HypixelAbilities {
     static double abilityDamage(ServerPlayer player, double base) {
         double intelligence = Math.max(0, Stats.get(player, StatTypes.INTELLIGENCE));
         double bonus = Math.max(0, Stats.get(player, StatTypes.ABILITY_DAMAGE));
-        return base * (1 + intelligence / 100) * (1 + bonus / 100);
+        return base * (1 + intelligence / 100) * (1 + bonus / 100) * SetAbilities.abilityFactor(player);
     }
 
     static void hurt(ServerPlayer player, LivingEntity target, double amount) {

@@ -20,5 +20,13 @@
    },
    "game_stage": "STARTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Beginner's Boost",
+   "pieces": 4,
+   "description": "§7Grants §6+40 Mining Speed§7."
+  }
+ ]
 }

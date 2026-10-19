@@ -24,5 +24,13 @@
    "parent": {},
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Gemstone Gatherer",
+   "pieces": 4,
+   "description": "§7Grants §6+25 Mining Fortune §7while in §7the §5Crystal Hollows§7."
+  }
+ ]
 }

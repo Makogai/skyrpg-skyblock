@@ -121,5 +121,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Molten Core",
+   "pieces": 4,
+   "description": "§7Gain §a5% §7damage resistance while §7fighting §6Kuudra§7."
+  }
+ ]
 }

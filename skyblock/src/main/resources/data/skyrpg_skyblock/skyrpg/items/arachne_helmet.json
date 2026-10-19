@@ -73,5 +73,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Arachne's Faithful",
+   "pieces": 8,
+   "description": "§7Grants §c+5 Health §7and §a+5 Defense§7."
+  }
+ ]
 }

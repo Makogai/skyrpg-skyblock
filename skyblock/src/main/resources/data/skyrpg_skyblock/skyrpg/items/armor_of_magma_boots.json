@@ -13,5 +13,13 @@
  "hypixel": {
   "npc_sell_price": 30000,
   "museum": true
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Absorb",
+   "pieces": 4,
+   "description": "§7Every §910 Magma Cubes killed§7 gives §7the wearer §a+1 §c Health §7and §b §bIntelligence§7 while wearing the set. §7Max 200 each."
+  }
+ ]
 }

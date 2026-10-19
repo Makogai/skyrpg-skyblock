@@ -94,5 +94,19 @@
     ]
    }
   ]
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Pursuit",
+   "pieces": 0,
+   "description": "§7On teleport, gain §8invisibility §7and §f+20 §fSpeed §7for §a10 §7seconds. §8Cooldown: §a3s"
+  },
+  {
+   "kind": "full",
+   "name": "Shadow Assassin",
+   "pieces": 4,
+   "description": "§7Grants §c+1 Strength §7for every mob §7you kill in §cThe Catacombs§7. §8(Strength resets after each run)"
+  }
+ ]
 }

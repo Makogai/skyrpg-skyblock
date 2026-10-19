@@ -105,5 +105,13 @@
     22
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Zombie Knight",
+   "pieces": 4,
+   "description": "§7Gains §a+50 Defense §7when used with §7the Zombie Knight Sword"
+  }
+ ]
 }
