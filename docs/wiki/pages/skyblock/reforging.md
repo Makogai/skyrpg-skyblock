@@ -33,8 +33,36 @@ Hypixel's 86 **reforge stones** each carry one special reforge (Warped for the A
 
 Some stone reforges have a special bonus as well as stats ("Ambered Bonus: find Goblins from mining 40% more often"); the tooltip shows it.
 
+## Reforge abilities
+
+The reforge of the item in your main hand and of each armour piece you wear counts; every item with the reforge adds its bonus again.
+
+| Reforge | What it does |
+| --- | --- |
+| Ancient | +1 Crit Damage per Catacombs level |
+| Withered | +1 Strength per Catacombs level |
+| Loving | +5% Ability Damage |
+| Perfect | +2% Defense (of what your held item and armour give) |
+| Renowned | +1 Magic Find and +1% of your Strength, Crit Damage, Crit Chance, Defense and Health from items |
+| Empowered | +10 Mending in the Catacombs |
+| Fruitful | +75 Defense on the mining islands |
+| Fleet | +50 Mining Spread |
+| Auspicious | +1% Mining Fortune |
+| Calcified | +25 Defense against sea creatures |
+| Cubic | -2% damage from the mobs of Crimson Isle and Kuudra |
+| Undead | -2% damage from undead |
+| Fanged | Every 7th melee hit deals +100% damage |
+| Headstrong, Precise | +8% and +10% damage for an arrow that hits a mob's head |
+| Buzzing | x2 damage against Garden pests |
+| Fabled | A crit deals up to 15% more damage |
+| Gilded | A kill has a 1% chance to pay 50,000 coins |
+| Bountiful | +0.2 coins for every crop you harvest in the Garden |
+| Magnetic | Double the XP orbs from mining |
+| Refined, Blessed | 0.25% chance for the enchanted form of a mined ore or a harvested Garden crop |
+| Stiff | A sea creature you kill drops +1 Chum |
+
 > [!NOTE]
-> The special bonuses are shown but don't work yet; the stats do.
+> The other special bonuses (Heat, Cold, the Wisp Pet, Griffin burrows, the Feast, the Spooky Festival, Mining Events and so on) are shown on the tooltip but don't work yet; the stats do.
 
 ## The anvil
 

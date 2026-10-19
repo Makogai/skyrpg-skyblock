@@ -188,6 +188,13 @@ phase so the next session can pick up where this one stopped.
       stone's reforge for its price; any anvil opens Combine Items: Recombobulator 3000, Hot Potato Book (10), Fuming
       Potato Book (15). `/sbitemmod` for admins. Not yet: reforge abilities (shown, no effect), stars, gemstones,
       enchanted books on the anvil.
+- [x] **Reforge abilities**: `ReforgeAbilities` (skyblock `reforge`) makes the ability text of the held item's and each worn
+      piece's reforge work: stats (Ancient, Withered, Loving, Perfect, Renowned, Empowered, Fruitful, Fleet, Auspicious),
+      damage (Calcified, Cubic, Undead, Fanged, Headstrong, Precise, Buzzing, Fabled) and rewards (Gilded, Bountiful, Magnetic,
+      Refined, Blessed, Stiff), through `Stats.registerSource`, `IncomingDamage`, `AFTER_DEATH`, and new `Garden.HARVESTED`
+      and `SkyMining.MINED` hooks. Percent ones take a share of the items' own stats. Not in: the reforges that need Heat,
+      Cold, Wisp, Griffin, Wormholes, the Feast, the Spooky Festival, Mining Events, Fallen Stars, Hunting, Thorns or
+      Jerry's Workshop.
 - [x] **Enchanting** (Hypixel's): `tools/skyblock/import_enchants.py` writes 145 enchantments (NEU: item categories,
       conflict pools, XP costs, table caps; each level's book lore and its number) to `skyrpg/skyblock_enchants`; items
       `Enchants` (synced with the item definitions), `ItemMods` keeps Hypixel's `enchantments` compound (conflicts and

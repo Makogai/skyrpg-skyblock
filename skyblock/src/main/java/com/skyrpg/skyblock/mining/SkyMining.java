@@ -245,7 +245,7 @@ public final class SkyMining {
     }
 
     /** What mining a block by hand gives here (Mithril, Titanium, Hard Stone, gemstones), or null for normal drops. */
-    static Metal metal(Level level, BlockState state) {
+    public static Metal metal(Level level, BlockState state) {
         Metal local = level.dimension().equals(CRYSTAL_HOLLOWS) ? HOLLOWS_METALS.get(state.getBlock())
                 : level.dimension().equals(GLACITE_TUNNELS) ? TUNNELS_METALS.get(state.getBlock()) : null;
         if (level.dimension().equals(GLACITE_MINESHAFTS)) {
