@@ -704,6 +704,14 @@ phase so the next session can pick up where this one stopped.
       Echolocator, the Headless Horseman (Horseman's Candle, swarms, projectile immunity, damage ranking), Spooky
       fishing (the five spooky sea creatures). Sacks can be added in the Hub again (the client refused head items).
 - [ ] Events part 3: Hoppity's Hunt and the Chocolate Factory, Jerry's Workshop and the Season of Jerry.
+
+### Hypixel's maps (2026-10-19, design in `hypixel-maps.md`)
+
+- [x] **The Hub on Hypixel's own map** (owners' local download, never committed): `tools/worlds/hypixel_map.py`
+      (render, install with the download's entities sorted), `HubMaps` (no builds of ours on such islands, hub.json's
+      "official" spawn), island portals to our warps (`HubPortals`), `place_npcs.py` (the map's holograms, NEU, overrides),
+      the Hub's zones, launch pads, warps, Rift portal and Hypixel's 79 fairy souls of 2022 placed to fit the map.
+- [ ] The Park, The End and the Dungeon Hub on Hypixel's maps.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 

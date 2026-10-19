@@ -2,14 +2,14 @@
   "name": "Forest",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    -233,
-    33,
-    49
+    -235,
+    0,
+    -49
   ],
   "to": [
-    -108,
-    106,
-    172
+    -81,
+    255,
+    20
   ],
   "blocks": {
     "minecraft:oak_log": {

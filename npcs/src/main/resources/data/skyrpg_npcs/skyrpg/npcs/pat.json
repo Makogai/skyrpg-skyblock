@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -150.5,
-    65.0,
-    -54.5
+    -87.5,
+    74.0,
+    -94.5
   ],
-  "yaw": 180.0,
+  "yaw": -84.0,
   "sound": "minecraft:item.shovel.flatten",
   "greetings": [
     "Flint and gravel, fresh from the graves.",

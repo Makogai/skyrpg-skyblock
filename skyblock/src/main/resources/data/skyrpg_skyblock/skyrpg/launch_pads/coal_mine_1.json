@@ -2,14 +2,14 @@
   "name": "the Gold Mine",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    -27,
-    72,
-    -184
+    -11,
+    64,
+    -232
   ],
   "to": [
-    -27,
-    73,
-    -182
+    -9,
+    65,
+    -231
   ],
   "warp": "gold",
   "requires": {

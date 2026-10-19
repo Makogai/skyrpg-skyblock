@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -28.5,
-    65.0,
-    28.5
+    -124.5,
+    73.0,
+    -42.5
   ],
-  "yaw": 225.0,
+  "yaw": -109.0,
   "sound": "minecraft:item.axe.strip",
   "greetings": [
     "Wood and axes, bought and sold.",

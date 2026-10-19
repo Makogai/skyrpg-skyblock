@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -22.5,
-    69.0,
-    -32.5
+    -17.5,
+    71.0,
+    -57.5
   ],
-  "yaw": 330.0,
+  "yaw": -151.0,
   "sound": "minecraft:entity.villager.work_mason",
   "greetings": [
     "Wool, glass and clay in every colour.",

@@ -1,0 +1,60 @@
+{
+  "name": "Crypts",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -150,
+    0,
+    -170
+  ],
+  "to": [
+    -70,
+    58,
+    -70
+  ],
+  "mobs": [
+    {
+      "type": "minecraft:zombie",
+      "name": "Crypt Ghoul",
+      "indoors": true,
+      "level": 30,
+      "health": 2000,
+      "damage": 350,
+      "xp": 36,
+      "coins": 13,
+      "max": 8,
+      "every": 4,
+      "from": [
+        -145,
+        38,
+        -165
+      ],
+      "to": [
+        -75,
+        57,
+        -75
+      ]
+    },
+    {
+      "type": "minecraft:zombie",
+      "name": "Golden Ghoul",
+      "indoors": true,
+      "level": 50,
+      "health": 45000,
+      "damage": 800,
+      "xp": 50,
+      "coins": 100,
+      "max": 1,
+      "every": 60,
+      "from": [
+        -145,
+        38,
+        -165
+      ],
+      "to": [
+        -75,
+        57,
+        -75
+      ]
+    }
+  ]
+}

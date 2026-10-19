@@ -5,6 +5,7 @@
   "mixins": [
     "DisplayAccess",
     "FarmlandBlockMixin",
+    "IslandPortalsMixin",
     "ItemDisplayAccess",
     "PodiumMannequinAccess",
     "TextDisplayAccess"

@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    153.5,
-    65.0,
-    -15.5
+    125.5,
+    73.0,
+    165.5
   ],
-  "yaw": 0.0,
+  "yaw": 153.0,
   "sound": "minecraft:block.chain.place",
   "greetings": [
     "A ring for the shady ones.",

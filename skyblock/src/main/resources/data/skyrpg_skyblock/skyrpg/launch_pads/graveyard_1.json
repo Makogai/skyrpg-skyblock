@@ -2,14 +2,14 @@
   "name": "the Spider's Den",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    -219,
-    65,
-    -37
+    -165,
+    73,
+    -164
   ],
   "to": [
-    -217,
-    66,
-    -35
+    -162,
+    74,
+    -161
   ],
   "warp": "spider",
   "requires": {

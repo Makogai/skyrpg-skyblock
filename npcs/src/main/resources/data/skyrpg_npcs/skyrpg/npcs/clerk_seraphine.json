@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -6.5,
-    65.0,
-    -10.5
+    11.5,
+    71.0,
+    -100.5
   ],
-  "yaw": -45.0,
+  "yaw": 41.0,
   "sound": "minecraft:item.book.page_turn",
   "greetings": [
     "Every SkyBlock year, a new Mayor.",

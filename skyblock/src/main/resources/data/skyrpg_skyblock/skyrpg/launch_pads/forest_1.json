@@ -2,14 +2,14 @@
   "name": "The Park",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    -213,
-    65,
-    117
+    -226,
+    73,
+    -17
   ],
   "to": [
-    -211,
-    66,
-    119
+    -224,
+    74,
+    -15
   ],
   "warp": "park",
   "requires": {

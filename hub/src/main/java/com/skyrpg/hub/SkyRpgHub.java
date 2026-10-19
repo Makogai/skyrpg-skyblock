@@ -17,6 +17,7 @@ public class SkyRpgHub implements ModInitializer {
     public void onInitialize() {
         Hub.init();
         HubBuild.init();
+        HubMaps.init();
         JsonDataLoader.register(id("hub"), HubConfig.DIRECTORY, HubConfig::load);
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> HubCommands.register(dispatcher));
         JsonDataLoader.register(id("hub_areas"), HubAreas.DIRECTORY, HubAreas::load);

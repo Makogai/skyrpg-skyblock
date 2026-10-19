@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    74.5,
-    65.0,
-    19.5
+    10.5,
+    70.0,
+    -53.5
   ],
-  "yaw": 270.0,
+  "yaw": 158.0,
   "sound": "minecraft:entity.cat.ambient",
   "greetings": [
     "Leave a pet with me and it'll come back a rarity higher.",

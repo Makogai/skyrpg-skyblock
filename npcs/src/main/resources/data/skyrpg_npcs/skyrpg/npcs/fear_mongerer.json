@@ -8,10 +8,10 @@
   "dimension": "skyrpg_hub:hub",
   "pos": [
     7.5,
-    65.0,
-    8.5
+    70.0,
+    -85.5
   ],
-  "yaw": 135.0,
+  "yaw": 87.0,
   "sound": "minecraft:entity.witch.ambient",
   "greetings": [
     "During the Spooky Festival, you can collect Candy by killing mobs.",

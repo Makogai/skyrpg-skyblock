@@ -1,14 +1,14 @@
 {
   "name": "Crypt",
-  "description": "The Hub Crypts, under the Coal Mine",
+  "description": "The Hub Crypts, under the Graveyard",
   "icon": "minecraft:skeleton_skull",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -9.5,
-    45.0,
-    -167.5
+    -105.5,
+    47.0,
+    -105.5
   ],
   "yaw": 0.0,
-  "area": "Coal Mine",
+  "area": "Crypts",
   "order": 41
 }

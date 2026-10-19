@@ -2,43 +2,19 @@
   "name": "Mountain",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    -67,
-    34,
-    119
+    -80,
+    0,
+    -19
   ],
   "to": [
-    70,
-    200,
-    255
+    34,
+    255,
+    115
   ],
   "blocks": {
     "minecraft:carrots": {
       "becomes": "minecraft:carrots",
       "regrow": 8
     }
-  },
-  "mobs": [
-    {
-      "type": "minecraft:skeleton",
-      "name": "Skeleton",
-      "level": 6,
-      "health": 200,
-      "damage": 40,
-      "xp": 6,
-      "coins": 1,
-      "max": 8,
-      "every": 4,
-      "time": "night",
-      "from": [
-        -44,
-        72,
-        236
-      ],
-      "to": [
-        44,
-        95,
-        255
-      ]
-    }
-  ]
+  }
 }

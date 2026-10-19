@@ -7,6 +7,12 @@
     "pitch": -6.0
   },
   "void_y": 0,
+  "official": {
+    "spawn": {"x": -2.5, "y": 70.0, "z": -69.5, "yaw": 180.0, "pitch": 0.0},
+    "void_y": 0,
+    "podiums": [],
+    "survival_portals": []
+  },
   "build": {
     "structure": "skyrpg_hub:hub",
     "version": 5,

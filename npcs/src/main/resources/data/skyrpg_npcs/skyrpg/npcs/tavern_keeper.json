@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    30.5,
-    65.0,
-    23.5
+    -83.5,
+    72.0,
+    -135.5
   ],
-  "yaw": 180.0,
+  "yaw": -58.0,
   "sound": "minecraft:entity.generic.drink",
   "greetings": [
     "Welcome in! Something to drink?",

@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    88.5,
-    65.0,
-    -18.5
+    80.5,
+    70.0,
+    -90.5
   ],
-  "yaw": 0.0,
+  "yaw": 86.0,
   "sound": "minecraft:item.bone_meal.use",
   "greetings": [
     "Ingredients for brewing, all in one place.",

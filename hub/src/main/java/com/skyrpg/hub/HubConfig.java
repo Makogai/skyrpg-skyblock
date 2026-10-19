@@ -35,9 +35,11 @@ public record HubConfig(Vec3 spawn, float spawnYaw, float spawnPitch, int voidY,
             new BlockPos(-64, 24, -64), new Vec3i(128, 96, 128), List.of(), List.of(), List.of(), List.of());
 
     private static HubConfig current = DEFAULT;
+    /** hub.json's "official" settings, for a hub running on Hypixel's map ({@link HubMaps}); null if it has none. */
+    private static HubConfig official;
 
     public static HubConfig get() {
-        return current;
+        return official != null && HubMaps.official(Hub.LEVEL) ? official : current;
     }
 
     public BlockPos spawnBlock() {
@@ -48,6 +50,7 @@ public record HubConfig(Vec3 spawn, float spawnYaw, float spawnPitch, int voidY,
         files.forEach((id, json) -> {
             try {
                 current = parse(json.getAsJsonObject());
+                official = json.getAsJsonObject().has("official") ? parseOfficial(json.getAsJsonObject().getAsJsonObject("official"), current) : null;
             } catch (RuntimeException e) {
                 SkyRpgHub.LOGGER.error("Skipping invalid hub config {}: {}", id, e.getMessage());
             }
@@ -78,6 +81,27 @@ public record HubConfig(Vec3 spawn, float spawnYaw, float spawnPitch, int voidY,
                 HubDecor.parsePieces(json.getAsJsonArray("decor")),
                 HubDecor.parseEmitters(json.getAsJsonArray("emitters")),
                 Podiums.parse(json.getAsJsonArray("podiums")));
+    }
+
+    /**
+     * The settings on Hypixel's map: its own spawn, void level, podiums and survival portals; no build or decor (the
+     * map is the build). Anything left out is as the build's.
+     */
+    private static HubConfig parseOfficial(JsonObject json, HubConfig base) {
+        JsonObject spawn = json.getAsJsonObject("spawn");
+        List<AABB> portals = new ArrayList<>();
+        if (json.has("survival_portals")) {
+            for (JsonElement element : json.getAsJsonArray("survival_portals")) {
+                JsonObject portal = element.getAsJsonObject();
+                portals.add(AABB.encapsulatingFullBlocks(blockPos(portal.getAsJsonArray("from")), blockPos(portal.getAsJsonArray("to"))));
+            }
+        }
+        return new HubConfig(
+                spawn == null ? base.spawn() : new Vec3(spawn.get("x").getAsDouble(), spawn.get("y").getAsDouble(), spawn.get("z").getAsDouble()),
+                spawn == null ? base.spawnYaw() : spawn.get("yaw").getAsFloat(), spawn == null ? base.spawnPitch() : spawn.get("pitch").getAsFloat(),
+                json.has("void_y") ? json.get("void_y").getAsInt() : base.voidY(),
+                base.structure(), base.buildVersion(), base.buildOrigin(), base.buildSize(), List.copyOf(portals), List.of(), List.of(),
+                json.has("podiums") ? Podiums.parse(json.getAsJsonArray("podiums")) : List.of());
     }
 
     private static BlockPos blockPos(JsonArray array) {

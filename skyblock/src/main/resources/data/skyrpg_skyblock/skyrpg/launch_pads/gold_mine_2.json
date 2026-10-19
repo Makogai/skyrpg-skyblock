@@ -14,10 +14,10 @@
   "destination": {
     "dimension": "skyrpg_hub:hub",
     "pos": [
-      -21.5,
-      72.0,
-      -183.5
+      -9.5,
+      64.0,
+      -227.5
     ],
-    "yaw": -90.0
+    "yaw": -3.0
   }
 }

@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -37.5,
-    69.0,
-    -36.5
+    -8.5,
+    68.0,
+    -124.5
   ],
-  "yaw": -45.0,
+  "yaw": -9.0,
   "sound": "minecraft:block.amethyst_block.chime",
   "greetings": [
     "Ores, stone and mining gear, right here.",

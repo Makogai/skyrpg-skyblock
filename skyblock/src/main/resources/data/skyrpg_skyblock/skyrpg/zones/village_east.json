@@ -1,0 +1,14 @@
+{
+  "name": "Village",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    26,
+    0,
+    -119
+  ],
+  "to": [
+    95,
+    255,
+    -20
+  ]
+}

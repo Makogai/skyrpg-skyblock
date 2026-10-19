@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -1.5,
-    161.0,
-    186.5
+    -39.5,
+    167.0,
+    57.5
   ],
-  "yaw": -90.0,
+  "yaw": -165.0,
   "sound": "minecraft:block.snow.break",
   "greetings": [
     "Snow up here all year round.",

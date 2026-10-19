@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -140.5,
-    65.0,
-    95.5
+    -123.5,
+    74.0,
+    -29.5
   ],
-  "yaw": 180.0,
+  "yaw": -115.0,
   "sound": "minecraft:item.axe.strip",
   "greetings": [
     "Chop away. The trees grow back.",

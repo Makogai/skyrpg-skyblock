@@ -1,0 +1,14 @@
+{
+  "name": "Fisherman's Hut",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    96,
+    0,
+    -119
+  ],
+  "to": [
+    205,
+    255,
+    60
+  ]
+}

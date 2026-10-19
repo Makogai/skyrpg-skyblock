@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    173.5,
-    137.0,
-    179.5
+    39.5,
+    131.0,
+    74.5
   ],
-  "yaw": 90.0,
+  "yaw": 180.0,
   "sound": "minecraft:block.amethyst_block.chime",
   "greetings": [
     "The Rift is open to those who are ready.",

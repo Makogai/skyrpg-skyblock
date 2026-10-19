@@ -1,0 +1,24 @@
+{
+  "name": "Forest",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -164,
+    0,
+    21
+  ],
+  "to": [
+    -81,
+    255,
+    115
+  ],
+  "blocks": {
+    "minecraft:oak_log": {
+      "becomes": "minecraft:air",
+      "regrow": 20
+    },
+    "minecraft:oak_leaves": {
+      "becomes": "minecraft:air",
+      "regrow": 15
+    }
+  }
+}

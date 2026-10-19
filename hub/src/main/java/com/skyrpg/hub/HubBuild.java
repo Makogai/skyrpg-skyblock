@@ -43,6 +43,9 @@ final class HubBuild {
             return;
         }
         makeHubTheWorldSpawn(server);
+        if (HubMaps.official(Hub.LEVEL)) {
+            return; // Hypixel's map: nothing of ours to place
+        }
         int placed = hub.getAttachedOrElse(PLACED_VERSION, 0);
         int shipped = HubConfig.get().buildVersion();
         if (placed < shipped && place(server, hub, placed > 0)) {

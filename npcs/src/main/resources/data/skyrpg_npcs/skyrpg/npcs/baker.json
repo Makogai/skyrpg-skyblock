@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -6.5,
-    65.0,
-    8.5
+    -5.5,
+    70.0,
+    -46.5
   ],
-  "yaw": -135.0,
+  "yaw": -175.0,
   "sound": "minecraft:block.cake.add_candle",
   "greetings": [
     "Happy New Year!",

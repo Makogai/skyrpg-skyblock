@@ -2,14 +2,14 @@
   "name": "Farm",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    80,
-    33,
-    -229
+    26,
+    0,
+    -240
   ],
   "to": [
-    199,
-    105,
-    -107
+    150,
+    255,
+    -120
   ],
   "blocks": {
     "minecraft:wheat": {

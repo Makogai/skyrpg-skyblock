@@ -134,6 +134,9 @@ public final class HubAreas {
                 SkyRpgHub.LOGGER.warn("Hub area {} is in {}, which doesn't exist", area.id(), area.dimension().identifier());
                 continue;
             }
+            if (HubMaps.official(area.dimension())) {
+                continue; // Hypixel's map is there instead
+            }
             if (has < area.version() && place(server, level, area, has > 0)) {
                 placed.put(area.id(), area.version());
                 changed = true;

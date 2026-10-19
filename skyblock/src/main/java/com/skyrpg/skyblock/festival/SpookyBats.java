@@ -126,9 +126,10 @@ final class SpookyBats {
 
     // ---------------------------------------------------------------- the Bat Firework
 
-    /** The Village: the Hub's plaza and the streets around it. */
+    /** The Village: the Hub's square and the streets around it (its zones). */
     private static boolean inVillage(ServerPlayer player) {
-        return Hub.isHub(player.level()) && player.getX() * player.getX() + player.getZ() * player.getZ() < 90 * 90;
+        Zones.Zone zone = Zones.at(player.level(), player.blockPosition());
+        return Hub.isHub(player.level()) && zone != null && zone.name().equals("Village");
     }
 
     private static void launch(ServerPlayer player, InteractionHand hand) {

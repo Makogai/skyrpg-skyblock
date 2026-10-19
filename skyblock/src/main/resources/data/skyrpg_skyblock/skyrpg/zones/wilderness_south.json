@@ -1,0 +1,14 @@
+{
+  "name": "Wilderness",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    -165,
+    0,
+    116
+  ],
+  "to": [
+    95,
+    255,
+    215
+  ]
+}

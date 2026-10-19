@@ -1,0 +1,14 @@
+{
+  "name": "Colosseum",
+  "dimension": "skyrpg_hub:hub",
+  "from": [
+    96,
+    0,
+    145
+  ],
+  "to": [
+    205,
+    255,
+    215
+  ]
+}

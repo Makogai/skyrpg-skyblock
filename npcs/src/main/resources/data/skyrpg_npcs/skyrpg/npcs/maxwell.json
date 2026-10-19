@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    46.5,
-    72.0,
-    67.5
+    -66.5,
+    70.0,
+    -66.5
   ],
-  "yaw": 180.0,
+  "yaw": -106.0,
   "sound": "minecraft:block.amethyst_block.chime",
   "greetings": [
     "Your accessories hold Magical Power. I can shape it into a power for you.",

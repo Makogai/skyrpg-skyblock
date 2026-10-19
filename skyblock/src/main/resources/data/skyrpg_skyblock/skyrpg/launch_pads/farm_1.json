@@ -2,14 +2,14 @@
   "name": "The Barn",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    185,
-    65,
-    -199
+    77,
+    72,
+    -186
   ],
   "to": [
-    187,
-    66,
-    -197
+    80,
+    73,
+    -183
   ],
   "warp": "barn",
   "requires": {

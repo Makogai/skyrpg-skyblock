@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    134.5,
-    65.0,
-    -163.5
+    44.5,
+    72.0,
+    -162.5
   ],
-  "yaw": 0.0,
+  "yaw": 31.0,
   "sound": "minecraft:item.hoe.till",
   "greetings": [
     "Wheat grows back fast here. Harvest all you like.",

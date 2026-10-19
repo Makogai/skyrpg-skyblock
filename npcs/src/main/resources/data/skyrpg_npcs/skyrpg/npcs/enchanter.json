@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    44.5,
-    72.0,
-    67.5
+    -36.5,
+    69.0,
+    -108.5
   ],
-  "yaw": 180.0,
+  "yaw": -56.0,
   "sound": "minecraft:block.enchantment_table.use",
   "greetings": [
     "Bring me a weapon, armour or a tool and some experience. I'll bind an enchantment to it.",

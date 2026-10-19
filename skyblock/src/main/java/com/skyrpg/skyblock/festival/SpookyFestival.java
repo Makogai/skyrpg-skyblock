@@ -119,8 +119,8 @@ public final class SpookyFestival {
             new Spooky("phantom_spirit", "Phantom Spirit", EntityTypes.ZOMBIE, 92, 10, 30, 138, 1, 2, 0.10, 0xD8DEE6, 3.57),
             new Spooky("trick_or_treater", "Trick or Treater", EntityTypes.ZOMBIE, 92, 10, 30, 138, 1, 3, 0, 0xFF8C1A, 3.06));
 
-    /** Where Spooky mobs come out at night: the Graveyard's lawns and the Wilderness. */
-    static final List<AABB> AREAS = List.of(new AABB(-199, 62, -61, -142, 75, -12), new AABB(117, 29, -50, 250, 107, 83));
+    /** Where Spooky mobs come out at night (Hypixel's Hub map): the Graveyard's grounds and the Wilderness by the Fairy Pond. */
+    static final List<AABB> AREAS = List.of(new AABB(-200, 60, -220, -89, 86, -99), new AABB(96, 60, 61, 206, 100, 145));
 
     /** The Candy Contest's brackets: the score each needs, its coins and Carnival Tickets (the last is the festival's best). */
     static final String[] BRACKETS = {"Wood", "Stone", "Iron", "Gold", "Diamond", "Emerald", "Top"};

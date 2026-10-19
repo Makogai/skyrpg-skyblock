@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -337.5,
-    74.0,
-    2.5
+    -250.5,
+    130.0,
+    41.5
   ],
-  "yaw": -90.0,
+  "yaw": -117.0,
   "sound": "minecraft:entity.villager.ambient",
   "greetings": [
     "The wolves never ask what any of it means.",

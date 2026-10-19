@@ -2,13 +2,13 @@
   "name": "Wilderness",
   "dimension": "skyrpg_hub:hub",
   "from": [
-    117,
-    29,
-    -50
+    96,
+    0,
+    61
   ],
   "to": [
-    249,
-    106,
-    82
+    205,
+    255,
+    144
   ]
 }

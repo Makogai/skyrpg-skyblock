@@ -101,6 +101,14 @@ public final class FastTravel {
     }
 
     public static void init() {
+        // Portals on Hypixel's maps: the Hub's fountain (and the old portal in the Mountain) lead to the Dungeon Hub.
+        com.skyrpg.hub.HubPortals.ENTERED.register((player, portal, pos) -> {
+            if (com.skyrpg.hub.Hub.isHub(player.level())) {
+                go(player, "dungeon_hub");
+            } else {
+                player.sendOverlayMessage(Component.literal("This portal doesn't lead anywhere yet.").withStyle(ChatFormatting.GRAY));
+            }
+        });
         VISITED.identifier();
         PayloadTypeRegistry.clientboundPlay().register(WarpList.TYPE, WarpList.CODEC);
         JsonDataLoader.register(SkyRpgSkyblock.id("warps"), DIRECTORY, FastTravel::load);
@@ -198,6 +206,16 @@ public final class FastTravel {
             entries.add(new Entry(warp.id(), warp.name(), warp.description(), warp.icon(), unlocked(player, warp)));
         }
         ServerPlayNetworking.send(player, new WarpList(entries));
+    }
+
+    /** Sends a player to a warp at once (a portal: no unlock check, no warmup). False if there's no such warp. */
+    public static boolean go(ServerPlayer player, String id) {
+        Warp warp = all().stream().filter(w -> w.id().equalsIgnoreCase(id)).findFirst().orElse(null);
+        if (warp == null) {
+            return false;
+        }
+        warp.go().accept(player);
+        return true;
     }
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {

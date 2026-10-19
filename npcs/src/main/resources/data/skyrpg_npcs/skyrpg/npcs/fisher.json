@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    79.5,
-    65.0,
-    33.5
+    112.5,
+    68.0,
+    -44.5
   ],
-  "yaw": 180.0,
+  "yaw": 109.0,
   "sound": "minecraft:entity.villager.work_fisherman",
   "greetings": [
     "Rods, bait and anything you fish up: I trade it all.",

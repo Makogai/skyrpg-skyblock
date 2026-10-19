@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    126.5,
-    65.0,
-    -155.5
+    54.5,
+    72.0,
+    -112.5
   ],
-  "yaw": 90.0,
+  "yaw": 64.0,
   "sound": "minecraft:block.note_block.chime",
   "greetings": [
     "That's a Wheat Minion. It works while you're away.",

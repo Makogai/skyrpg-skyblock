@@ -4,11 +4,11 @@
   "icon": "minecraft:mossy_stone_bricks",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -262.5,
-    65.0,
-    39.5
+    -255.5,
+    71.0,
+    61.5
   ],
-  "yaw": 90.0,
+  "yaw": -90.0,
   "area": "Ruins",
   "order": 40
 }

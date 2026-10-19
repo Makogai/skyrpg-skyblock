@@ -14,7 +14,8 @@ anyone's map (the NPC map is sent again whenever the set of event NPCs changes).
 
 The plaza's corners: Clerk Seraphine (north-west), Diana (north-east, during the Mythological Ritual), the Baker
 (south-west, New Year), and the event stand (south-east, 7.5 65 8.5): the Fear Mongerer and Oringo, whose visits never
-overlap (Hypixel puts both at its Event Stand too).
+overlap (Hypixel puts both at its Event Stand too). On Hypixel's Hub map (`hypixel-maps.md`) the event stand is the map's
+own Halloween stand on the square (7.5 70 -85.5), and Diana stands where the map's Mayor does.
 
 ## Admin
 
@@ -60,7 +61,7 @@ don't have); chest candy doesn't count for the score; a Trick or Treat Chest wai
 
 Part 2 (`SpookyBats`, `HeadlessHorseman`, `SkySeaCreatures`):
 
-- **Bat Firework**: hit the floor or a wall (or right-click) in the Village (the Hub within 90 blocks of the plaza);
+- **Bat Firework**: hit the floor or a wall (or right-click) in the Village (its zones on Hypixel's Hub map);
   needs a Trick or Treat Bag or Spooky Sack; 30s cooldown. 8-12 invulnerable Bat Piñatas burst out 14 blocks up and
   roam a minute (decided), each dropping a Green Candy on a player within 12 blocks now and then, at most 25 a player a
   firework, not scored. The launcher: 5/10/15/20/25/64 Purple Candy by weights 40/40/20/10/5/1.

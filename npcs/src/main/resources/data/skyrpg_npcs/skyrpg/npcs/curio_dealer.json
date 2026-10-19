@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    70.5,
-    65.0,
-    19.5
+    -35.5,
+    69.0,
+    -112.5
   ],
-  "yaw": 180.0,
+  "yaw": -51.0,
   "sound": "minecraft:block.amethyst_block.chime",
   "greetings": [
     "Books and bottles of experience, have a look.",

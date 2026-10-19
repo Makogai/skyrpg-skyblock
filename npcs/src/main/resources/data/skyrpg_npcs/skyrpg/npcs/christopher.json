@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_hub:hub",
   "pos": [
-    -26.5,
-    117.0,
-    171.5
+    -11.5,
+    70.0,
+    -77.5
   ],
-  "yaw": 90.0,
+  "yaw": -128.0,
   "sound": "minecraft:block.campfire.crackle",
   "greetings": [
     "Hold on to the ropes!",
