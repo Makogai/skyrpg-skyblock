@@ -40,18 +40,19 @@ public final class LevelingMenu {
         LevelingTasks.Category page = PAGE.get(player.getUUID());
         int xp = SkyBlockXp.xp(player);
         List<Chip> wallet = List.of(Chip.note(new ItemStack(Items.EXPERIENCE_BOTTLE), "Level " + xp / SkyBlockXp.PER_LEVEL, true),
-                Chip.note(new ItemStack(Items.LAPIS_LAZULI), Msg.number(xp) + " XP", true));
+                Chip.note(new ItemStack(Items.LAPIS_LAZULI), Msg.number(xp) + " SkyBlock XP", true));
         List<CardView.Card> cards = new ArrayList<>();
         if (page == null) {
             for (LevelingTasks.Category category : LevelingTasks.Category.values()) {
                 int earned = LevelingTasks.earned(player, category);
                 int max = LevelingTasks.max(category);
-                cards.add(new CardView.Card(category.title, category.about, category.color, true, "", new ItemStack(category.icon), "",
-                        List.of(Chip.note(new ItemStack(Items.LAPIS_LAZULI), Msg.number(earned) + " / " + Msg.number(max) + " XP", earned >= max)),
-                        max == 0 ? -1 : earned / (float) max, percent(earned, max)));
+                // a clickable card's chips read as a price, so its progress goes in the text and the bar
+                cards.add(new CardView.Card(category.title, Msg.number(earned) + " / " + Msg.number(max) + " XP (" + percent(earned, max) + ") · "
+                        + category.about, category.color, true, "", new ItemStack(category.icon), "", List.of(), max == 0 ? -1 : earned / (float) max,
+                        "Open"));
             }
-            cards.add(new CardView.Card("Emblems", "Show an emblem after your name in chat", 0xF2F2F2, true, "", new ItemStack(Items.NAME_TAG), "",
-                    List.of(Chip.note(new ItemStack(Items.NAME_TAG), Emblems.unlocked(player).size() + " unlocked", true)), -1, "Emblems"));
+            cards.add(new CardView.Card("Emblems", Emblems.unlocked(player).size() + " of " + Emblems.all().size()
+                    + " unlocked · show one after your name in chat", 0xF2F2F2, true, "", new ItemStack(Items.NAME_TAG), "", List.of(), -1, "Pick one"));
             int other = LevelingTasks.earned(player, "other");
             String footer = "Every 100 SkyBlock XP is a level." + (other > 0 ? " " + Msg.number(other) + " XP came from elsewhere (quests, older rewards)." : "");
             return new CardView("SKYBLOCK", "SkyBlock Leveling", "Tasks", -1, wallet, cards, footer, 2, 40);
@@ -61,7 +62,7 @@ public final class LevelingMenu {
             int earned = Math.min(task.max(), LevelingTasks.earned(player, task.id()));
             boolean done = earned >= task.max();
             cards.add(new CardView.Card(task.name(), task.how(), done ? 0x55FF55 : 0xF2F2F2, false, "", new ItemStack(task.icon()), "",
-                    List.of(Chip.note(new ItemStack(Items.LAPIS_LAZULI), Msg.number(earned) + " / " + Msg.number(task.max()) + " XP", done)),
+                    List.of(Chip.note(ItemStack.EMPTY, Msg.number(earned) + " / " + Msg.number(task.max()) + " SkyBlock XP", true)),
                     earned / (float) task.max(), percent(earned, task.max())));
         }
         int earned = LevelingTasks.earned(player, page);

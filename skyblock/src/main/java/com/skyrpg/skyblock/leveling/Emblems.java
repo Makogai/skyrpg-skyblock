@@ -168,10 +168,9 @@ public final class Emblems {
             boolean has = emblem.earned().test(player);
             boolean shown = emblem == picked;
             int color = has ? (emblem.color() == ChatFormatting.GOLD ? 0xFFAA00 : 0xF2F2F2) : 0x777777;
-            cards.add(new CardView.Card(emblem.symbol() + "  " + emblem.name(), emblem.requirement(), color, has && !shown, "",
-                    new ItemStack(has ? Items.NAME_TAG : Items.DYE.gray()), "",
-                    List.of(Chip.note(new ItemStack(has ? Items.DYE.lime() : Items.DYE.gray()), has ? "Unlocked" : "Locked", has)), -1,
-                    shown ? "Shown" : has ? "Show" : ""));
+            cards.add(new CardView.Card(emblem.symbol() + "  " + emblem.name(), (has ? "Unlocked · " : "Locked · ") + emblem.requirement(), color,
+                    has && !shown, "", new ItemStack(has ? Items.NAME_TAG : Items.DYE.gray()), "", List.of(), -1,
+                    shown ? "Shown" : has ? "Show it" : ""));
         }
         return new CardView("SKYBLOCK", "Emblems", unlocked(player).size() + " of " + ALL.size() + " unlocked", -1, List.of(), cards,
                 "Your emblem shows after your name in chat. Hover it there to see what it is.", 3, 36);
