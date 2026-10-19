@@ -381,8 +381,30 @@ phase so the next session can pick up where this one stopped.
       treasure lists came back short, so enchanted Pufferfish/Clownfish/Clay/Sponge/Ink/Prismarine fill them to 100;
       treasure XP is the item's or 50/200/800 by tier; Hollows lava catches are lava items Hypixel gives Fishing XP for;
       the Sea Guardian isn't in today's pool.
-      Not yet: trophy fish, hotspots, event sea creatures (Spooky, sharks, Jerry), Crimson Isle/Bayou/Galatea fishing,
-      Agarimoo, Fishing Fortune, rod parts, Fishing Bag and bait sacks.
+      Not yet: Jerry's Workshop's sea creatures, Bayou/Lotus Atoll/Galatea fishing (see Fishing, part 2).
+- [x] **Fishing, part 2** (`fishing/SkyHotspots`, `Roddy`, `items/RodParts`; `import_sea_creatures.py` extended): Hypixel's
+      Fishing Hotspots: rings with a name tag on the Hub's, Crimson Isle's (lava), Spider's Den's and The Park's water, up to
+      3/3/1/1 at once, four minutes each; a bobber inside gets the hotspot's one buff (Fishing Speed +15, Sea Creature Chance +5,
+      Double Hook +2, Trophy Fish Chance +5, Treasure Chance +1; a Hotspot Sinker doubles it) and 15% of its sea creature
+      bites are hotspot ones (+20% each from Hotspot Bait and Hook): Frog Man, Inkling, Snapping Turtle, Manta Ray, Blue Ringed
+      Octopus, Wiki Tiki, and on the Isle's lava Fried Chicken, Volcanic Snail, Fireproof Witch, Magma Pillar, Fiery Scuttler,
+      Ragnarok (the last three of those moved out of the normal pool, with the wiki's levels and weights). The Agarimoo: an Empty
+      Chumcap Bucket can be placed (as its head) and sea creature bites within 5 blocks are 15% Agarimoos. Rod Parts: Roddy (Hub
+      NPC, a card screen) puts a hook, line and sinker on a rod, removal costs coins by rarity and returns the part; lines add stats
+      to the rod, the tooltip lists the parts, Common/Hotspot/Phantom/Treasure hooks and the Prismarine/Icy/Sponge/Chum/Lotus,
+      Stingy and Hotspot sinkers work. Bait is taken from the Bait Sack when the inventory has none; Bait Ring, Spiked Atrocity,
+      Stingy Sinker and Caster save bait (up to 60%); Hot Bait gives Trophy Fish Chance. SkyBlock XP: first trophy fish of each
+      tier (4/8/16/32), Fishing Festival (1 per 50 sharks). The old survival-modpack hotspots no longer spawn in SkyBlock worlds.
+      `/sbfishing hotspot <stat>` for admins. The spooky and shark sea creatures already existed (Events part 2, Mayors part 2).
+      Decided: no Fishing Bag (Hypixel replaced it with the Bait Sack, which the sack system already has) and no Fishing Fortune
+      (Hypixel has no such stat; the stat from the survival modpack stays unused in SkyBlock); no Hattie NPC (the hotspot
+      explanation is on the wiki page and the name tag); Roddy stands in the Hub by Gerald's dock instead of the Bayou, which
+      isn't built; hotspots appear near a fisher on any open water instead of fixed spots; every hotspot has one buff, equal
+      odds; the hotspot sea creatures' Fishing XP, damage and Inkling/Manta Ray/Snail/Pillar health are decided (NEU/wiki have
+      none); any placed Chumcap Bucket counts, not only the owner's; the favourite-bait toggle isn't built (first bait wins);
+      Puddle Jumper Hook, Festive and Junk Sinker can be put on but do nothing (no Lotus Atoll, Jerry's Workshop or Bayou);
+      Dolphin pet milestone SkyBlock XP isn't hooked (no such milestone exists yet).
+      Not yet: Hotspot Tonic Mixin and the Hermit Crab pet's hotspot bonus, Chumcap/Chum Bucket Fishing Speed.
 - [x] **Experimentation Table**: research `docs/design/research/experimentation-table.md` (the wiki mirror's raw pages sit
       behind a bot check, so the Superpairs table came back scrambled). Hand-written `skyrpg/experiments/experiments.json`.
       The table is Hypixel furniture: items with `hypixel.furniture` may be placed (`SkyblockItemUse`), the head keeps the
