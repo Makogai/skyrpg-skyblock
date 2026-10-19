@@ -62,6 +62,9 @@ public final class Enchants {
         }
     }
 
+    /** NEU's conflict pools spell two Turbo enchants differently from their ids. */
+    private static final Map<String, String> ALIASES = Map.of("turbo_coco", "turbo_cocoa", "turbo_cactus", "turbo_cacti");
+
     private static Map<String, Enchant> byId = Map.of();
 
     private Enchants() {
@@ -130,7 +133,7 @@ public final class Enchants {
     private static Set<String> strings(JsonArray array) {
         Set<String> out = new HashSet<>();
         if (array != null) {
-            array.forEach(e -> out.add(e.getAsString()));
+            array.forEach(e -> out.add(ALIASES.getOrDefault(e.getAsString(), e.getAsString())));
         }
         return Set.copyOf(out);
     }

@@ -229,8 +229,23 @@ public final class SkyFishing {
         double speed = Stats.get(player, StatTypes.FISHING_SPEED) + (counts(bait, player.level()) ? bait.speed() : 0)
                 + SkyHotspots.bonus(hook, player, "fishing_speed");
         SkyHotspots.announce(hook, player);
-        int base = 200 + player.getRandom().nextInt(201);
+        ItemStack rod = player.getMainHandItem();
+        // Flash: the fish are there at once, now and then.
+        int flash = com.skyrpg.items.ItemMods.enchantment(rod, "ultimate_flash");
+        if (flash > 0 && player.getRandom().nextDouble() * 100 < enchantValue("ultimate_flash", flash)) {
+            return 5;
+        }
+        // Lure shortens the longest wait.
+        int lure = com.skyrpg.items.ItemMods.enchantment(rod, "lure");
+        int longest = (int) Math.round(400 * (1 - enchantValue("lure", lure) / 100));
+        int base = 200 + player.getRandom().nextInt(Math.max(1, longest - 200 + 1));
         return (int) Math.round(base * Math.max(0, 1 - speed / SPEED_CAP));
+    }
+
+    /** An enchant's lore number at a level (0 at level 0). */
+    private static double enchantValue(String id, int level) {
+        com.skyrpg.items.enchant.Enchants.Enchant enchant = com.skyrpg.items.enchant.Enchants.get(id);
+        return level <= 0 || enchant == null ? 0 : enchant.value(level);
     }
 
     /** A lava rod (Starter Lava Rod, Magma Rod...) in either hand, by its SkyBlock id. */
@@ -293,6 +308,11 @@ public final class SkyFishing {
             useBait(player, bait);
         }
         materialize(player, rod);
+        // Magnet: experience orbs with every catch.
+        int magnet = (int) enchantValue("magnet", com.skyrpg.items.ItemMods.enchantment(rod, "magnet"));
+        if (magnet > 0) {
+            net.minecraft.world.entity.ExperienceOrb.award(level, player.position(), magnet);
+        }
         Msg.playSound(player, SoundEvents.EXPERIENCE_ORB_PICKUP, 0.7f, 1.3f);
         Catches.CAUGHT.invoker().onCaught(player, caught, creature);
         return true;
@@ -355,7 +375,9 @@ public final class SkyFishing {
     /** Good, Great or Outstanding (Blessed Bait makes the better two likelier), and one thing from that tier's pool. */
     private static ItemStack treasure(ServerPlayer player, Bait bait) {
         RandomSource random = player.getRandom();
-        double boost = 1 + (bait == null ? 0 : bait.blessed());
+        // Blessed Bait and the Blessing enchantment make the better two catches likelier.
+        double boost = 1 + (bait == null ? 0 : bait.blessed())
+                + enchantValue("blessing", com.skyrpg.items.ItemMods.enchantment(player.getMainHandItem(), "blessing")) / 100;
         double great = tiers.getOrDefault("great", 10.0) * boost;
         double outstanding = tiers.getOrDefault("outstanding", 1.0) * boost;
         double roll = random.nextDouble() * (tiers.getOrDefault("good", 89.0) + great + outstanding);

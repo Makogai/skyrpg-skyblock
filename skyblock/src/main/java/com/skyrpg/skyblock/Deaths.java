@@ -10,7 +10,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.gamerules.GameRules;
 
-/** Dying, as on Hypixel: you keep everything you carry, but lose half the coins in your purse (the bank is safe; a Booster Cookie keeps them). */
+/** Dying, as on Hypixel: you keep everything you carry, but lose half the coins in your purse (the bank is safe; a Booster Cookie keeps them, Bank enchants keep part). */
 final class Deaths {
     private Deaths() {
     }
@@ -38,7 +38,8 @@ final class Deaths {
             return;
         }
         long purse = Wallet.balance(player);
-        long lost = purse / 2;
+        // Bank on your armour keeps part of what you'd lose (100% in total keeps it all).
+        long lost = Math.round(purse / 2 * (1 - com.skyrpg.skyblock.enchant.UltimateEnchants.bankSaved(player)));
         if (lost > 0 && Wallet.take(player, lost)) {
             player.sendSystemMessage(Component.literal("You died and lost " + Msg.number(lost) + " coins!").withStyle(ChatFormatting.RED));
         }

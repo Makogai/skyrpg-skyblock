@@ -285,7 +285,11 @@ public final class SkySeaCreatures {
         }
         RandomSource random = owner.getRandom();
         mob.snapTo(hook.getX(), hook.getY(), hook.getZ(), random.nextFloat() * 360, 0);
-        Zones.dressAs(mob, creature.name(), creature.level(), creature.health(), creature.damage(), creature.combatXp());
+        // Frail: sea creatures start with less health.
+        com.skyrpg.items.enchant.Enchants.Enchant frail = com.skyrpg.items.enchant.Enchants.get("frail");
+        int frailLevel = com.skyrpg.items.ItemMods.enchantment(owner.getMainHandItem(), "frail");
+        double health = creature.health() * (1 - (frail == null || frailLevel <= 0 ? 0 : frail.value(frailLevel)) / 100);
+        Zones.dressAs(mob, creature.name(), creature.level(), health, creature.damage(), creature.combatXp());
         dress(mob, look);
         mob.addTag(TAG);
         mob.addTag(ID_TAG + creature.id());

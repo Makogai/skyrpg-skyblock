@@ -195,6 +195,12 @@ public final class Garden {
         });
     }
 
+    /** How many different visitors this profile's Garden has served (Green Thumb counts them). */
+    public static int uniqueVisitors(ServerPlayer player) {
+        GardenData.State state = state(player);
+        return state == null ? 0 : state.served.size();
+    }
+
     public static boolean isGarden(Level level) {
         return level.dimension().equals(LEVEL);
     }
@@ -573,9 +579,11 @@ public final class Garden {
             return;
         }
         GardenData.State garden = state(level.getServer(), owner);
-        double fortune = Stats.get(player, StatTypes.FARMING_FORTUNE) + Stats.get(player, fortuneStat(crop));
-        long count = Math.max(1, Math.round(crop.perBlock() * (1 + fortune / 100)));
         long before = garden.crops.getOrDefault(crop.key(), 0L);
+        // Dedication: more Fortune the higher this crop's milestone.
+        double fortune = Stats.get(player, StatTypes.FARMING_FORTUNE) + Stats.get(player, fortuneStat(crop))
+                + com.skyrpg.skyblock.enchant.EnchantFarming.dedication(player, milestone(crop, before));
+        long count = Math.max(1, Math.round(crop.perBlock() * (1 + fortune / 100)));
         long after = before + count;
         garden.crops.put(crop.key(), after);
         int from = milestone(crop, before);
