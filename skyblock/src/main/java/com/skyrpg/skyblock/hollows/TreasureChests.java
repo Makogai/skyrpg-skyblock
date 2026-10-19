@@ -31,6 +31,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChestBlock;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.core.particles.ParticleTypes;
 
 /**
  * Hypixel's dug treasure chests in the Crystal Hollows: every Hard Stone you mine has a 1 in 500 chance (more with the
@@ -41,7 +43,21 @@ public final class TreasureChests {
     private static final double CHANCE = 0.002;
     private static final int LIFETIME = 60 * 20;
 
-    private record Chest(UUID owner, String zone, long expires) {
+    /** A dug chest: its owner, zone, when it goes, and its lockpick (locks left of {@code locks}, the spot to aim at). */
+    private static final class Chest {
+        final UUID owner;
+        final String zone;
+        final long expires;
+        int locks = -1;
+        int total;
+        Direction face = Direction.UP;
+        Vec3 point = Vec3.ZERO;
+
+        Chest(UUID owner, String zone, long expires) {
+            this.owner = owner;
+            this.zone = zone;
+            this.expires = expires;
+        }
     }
 
     private static final Map<BlockPos, Chest> CHESTS = new HashMap<>();
@@ -57,7 +73,7 @@ public final class TreasureChests {
                 return InteractionResult.PASS;
             }
             if (player instanceof ServerPlayer server && level instanceof ServerLevel world) {
-                open(world, server, hit.getBlockPos());
+                open(world, server, hit.getBlockPos(), hit.getDirection(), hit.getLocation());
             }
             return InteractionResult.SUCCESS;
         });
@@ -80,22 +96,72 @@ public final class TreasureChests {
         Msg.playSound(player, SoundEvents.CHEST_LOCKED, 1.0f, 1.2f);
     }
 
-    private static void open(ServerLevel level, ServerPlayer player, BlockPos pos) {
+    private static void open(ServerLevel level, ServerPlayer player, BlockPos pos, Direction face, Vec3 click) {
         Chest chest = CHESTS.get(pos);
-        if (!chest.owner().equals(player.getUUID())) {
+        if (!chest.owner.equals(player.getUUID())) {
             player.sendOverlayMessage(Component.literal("This isn't your treasure chest!").withStyle(ChatFormatting.RED));
             return;
         }
+        if (chest.locks < 0) {
+            // Hypixel's lockpick: aim at the sparkles on the chest five times in a row; Great Explorer takes locks away.
+            int explorer = Hotm.state(player).active("great_explorer");
+            chest.total = Math.max(0, 5 - explorer / 4);
+            chest.locks = chest.total;
+            newLock(chest, pos, level.getRandom());
+        }
+        if (chest.locks > 0) {
+            if (face == chest.face && click.distanceTo(chest.point) < 0.2) {
+                chest.locks--;
+                Msg.playSound(player, SoundEvents.NOTE_BLOCK_PLING.value(), 1.0f, 0.8f + 0.2f * (chest.total - chest.locks));
+                newLock(chest, pos, level.getRandom());
+            } else {
+                chest.locks = chest.total;
+                Msg.playSound(player, SoundEvents.NOTE_BLOCK_BASS.value(), 1.0f, 0.6f);
+            }
+            if (chest.locks > 0) {
+                player.sendOverlayMessage(Component.literal("Locks left: " + chest.locks).withStyle(ChatFormatting.BLUE));
+                return;
+            }
+        }
         CHESTS.remove(pos);
         level.setBlock(pos, Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
-        RandomSource random = level.getRandom();
-        String gem = gemOf(chest.zone());
+        reward(player, chest.zone, 3 + level.getRandom().nextInt(4), false);
+        com.skyrpg.skyblock.mining.Commissions.chestOpened(player);
+        Msg.playSound(player, SoundEvents.CHEST_OPEN, 1.0f, 1.0f);
+        Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.6f, 1.6f);
+    }
+
+    /** A new lock: a random spot on a random face of the chest (never the bottom). */
+    private static void newLock(Chest chest, BlockPos pos, RandomSource random) {
+        Direction[] faces = {Direction.UP, Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST};
+        chest.face = faces[random.nextInt(faces.length)];
+        double u = 0.2 + random.nextDouble() * 0.6;
+        double v = 0.2 + random.nextDouble() * 0.6;
+        chest.point = switch (chest.face) {
+            case UP -> new Vec3(pos.getX() + u, pos.getY() + 0.875, pos.getZ() + v);
+            case NORTH -> new Vec3(pos.getX() + u, pos.getY() + v * 0.875, pos.getZ());
+            case SOUTH -> new Vec3(pos.getX() + u, pos.getY() + v * 0.875, pos.getZ() + 1);
+            case EAST -> new Vec3(pos.getX() + 1, pos.getY() + v * 0.875, pos.getZ() + u);
+            default -> new Vec3(pos.getX(), pos.getY() + v * 0.875, pos.getZ() + u);
+        };
+    }
+
+    /**
+     * {@code rolls} rolls of a chest's loot for the player: Gemstone Powder, Mithril Powder, the zone's gems, Treasurite
+     * and rares; {@code temple} chests (the Jungle Temple's) also have a chance at a Jungle Heart each roll.
+     */
+    static void reward(ServerPlayer player, String zone, int rolls, boolean temple) {
+        RandomSource random = player.getRandom();
+        String gem = gemOf(zone);
         Map<String, Integer> items = new HashMap<>();
         long gemstonePowder = 0;
         long mithrilPowder = 0;
-        int rolls = 3 + random.nextInt(4);
         for (int i = 0; i < rolls; i++) {
             int roll = random.nextInt(100);
+            if (temple && random.nextInt(8) == 0) {
+                items.merge("JUNGLE_HEART", 1, Integer::sum);
+                continue;
+            }
             if (roll < 40) {
                 gemstonePowder += 200 + random.nextInt(301);
             } else if (roll < 65) {
@@ -139,9 +205,6 @@ public final class TreasureChests {
             panel.line(Component.literal((count > 1 ? count + "x " : "") + def.name()).withColor(def.rarity().color()));
         }
         panel.send(player, Component.literal("Opened!").withStyle(ChatFormatting.GOLD));
-        com.skyrpg.skyblock.mining.Commissions.chestOpened(player);
-        Msg.playSound(player, SoundEvents.CHEST_OPEN, 1.0f, 1.0f);
-        Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.6f, 1.6f);
     }
 
     /** The gemstone each zone's chests give. */
@@ -165,13 +228,24 @@ public final class TreasureChests {
     }
 
     private static void tick(MinecraftServer server) {
-        if (server.getTickCount() % 20 != 0 || CHESTS.isEmpty()) {
+        if (CHESTS.isEmpty()) {
             return;
         }
         ServerLevel level = server.getLevel(CrystalHollows.LEVEL);
+        if (server.getTickCount() % 5 == 0 && level != null) {
+            // The lock to aim at sparkles.
+            CHESTS.values().forEach(chest -> {
+                if (chest.locks > 0) {
+                    level.sendParticles(ParticleTypes.CRIT, chest.point.x, chest.point.y, chest.point.z, 2, 0.02, 0.02, 0.02, 0);
+                }
+            });
+        }
+        if (server.getTickCount() % 20 != 0) {
+            return;
+        }
         long now = server.getTickCount();
         CHESTS.entrySet().removeIf(entry -> {
-            if (entry.getValue().expires() > now) {
+            if (entry.getValue().expires > now) {
                 return false;
             }
             if (level != null && level.getBlockState(entry.getKey()).is(Blocks.CHEST)) {

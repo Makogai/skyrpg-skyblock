@@ -16,5 +16,8 @@
   "greetings": [
     "Beep. Six parts are missing.",
     "The Automatons carry them."
-  ]
+  ],
+  "action": {
+    "type": "hollows_robot"
+  }
 }

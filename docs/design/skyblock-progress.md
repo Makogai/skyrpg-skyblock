@@ -303,8 +303,34 @@ phase so the next session can pick up where this one stopped.
       Goblins, Automaton, Yog). `HollowsAccess`: Gwendolyn (The Lift) sells a 10,000-coin 6-hour pass (Mining XII, HotM
       IV), sends you to the Nucleus, takes you out when it runs out. Commissions got a second board for the Hollows
       (Emissary Sisko): Hard Stone, each gem, chests and mob slayers; 400 HotM XP, 1,500 Gemstone Powder, 10,000 Mining XP.
-      Not yet: crystals and Nucleus loot, the structures' quests and bosses (Bal, Corleone, Goblin Queen, Professor
-      Robot, Jungle Temple key), worms/Scatha, lockpicks, Fairy Grottos, the Glacite Tunnels.
+      Not yet: see "Crystal Hollows, part 2" below (the Glacite Tunnels are done separately).
+- [x] **Crystal Hollows, part 2**: `hollows/`. `HollowsState` (a per-player attachment of keys, forgotten when the Hollows
+      are made anew: `HollowsReset` publishes the world's creation stamp as the epoch; only `total.` counters stay).
+      `Crystals`: the five crystals (the existing `*_CRYSTAL` items), placed by right-clicking their Nucleus statue
+      (pedestals at (6,-8) Jade, (-10,3) Amber, (0,10) Topaz, (10,3) Sapphire, (-6,-8) Amethyst); all five give a Nucleus run
+      (`total.runs`, SkyBlock XP "Crystal Nucleus Runs" +4 for the first 50) and `NucleusLoot` (Hypixel's 66-row weighted
+      table, 14-19 rolls, 1 Fine of each gem, 800 HotM XP or 2,000-7,000 powder at HotM 10); no second crystal of a kind
+      until all five are placed. `Worms`: 1/600 per Hard Stone mined, 30 s cooldown, 80% Stoneworm / 20% Scatha, hit-based
+      (5 / 10 segments, every hit of anything is one hit), drops, Scatha Pet 0.24/0.12/0.04%. `HollowsBosses`: Boss Corleone
+      (Divan's chamber, Smog) and Bal (Khazad-dum arena, per-hit drops, Bald Blazes, Topaz Crystal). `HollowsNpcs` (CardMenu
+      screens): King Yolkar (a Goblin Egg for 20 minutes of King's Scent; water washes it off), Professor Robot (six parts or
+      an Apparatus: the Sapphire crystal), Odawa (Sludge Juice shop), the Kalhuiki Door Guardian (Jungle Key). `Keepers`: Metal
+      Detector hunt in the Mines of Divan, the four tools, the Jade pedestal. `TreasureChests`: Hypixel's lockpick (aim at
+      the sparkling lock on the chest 5 times in a row, Great Explorer takes locks away) and `reward` shared with the
+      temple's two chests. `FairyGrottos`: 3 pink Jasper caves carved per Hollows, Butterflies. Automatons drop the six parts
+      (2% each). `/sbhollows crystal|worm|scatha|boss|grotto|scent|key|parts|tools|reset|state` for admins.
+      Decided: crystals are items you carry to the Nucleus (as Hypixel), Sapphire and Topaz are handed over directly instead
+      of "appearing" in the world; the claim spots are the structures' recorded spots (Jade pedestal 145,103,-145, the Queen's
+      throne -128,102,121, the temple altar -140,101,-158); Corleone is placed in the Divan chamber (150.5,101,-140.5) and
+      Bal at the arena's centre (0.5,25,160.5); Bal 10M health/4,000 damage and Corleone 1M/4,000 (the wiki mirror has no
+      health for Bal); the Goblin Queen is her guards (3 Goblin Guards, 30,000 health, come for you without the scent) instead
+      of a boss; the Jungle temple is gated at the altar, not a door, and has no lava/parkour traps; Odawa's prices (key 20,
+      32 Rough Amethyst 8, mask 12, amulet 40, spear 60, pickaxe 120 Sludge Juice) are ours; worms give no powder (the wiki
+      lists none); locks = 5 minus Great Explorer level / 4; Divan treasure is dug up by right-clicking the detector within 3
+      blocks (one spot at a time per player, random open floor in the Mines), its loot by the wiki's shares (18% a missing
+      tool, 8% Mithril and 6% Gemstone Powder, 68% 4-64 Rough gems, Pickonimbus 0.06%); the Fairy Grotto's Butterflies are
+      Bees (1 in 50 for a Jasper Crystal). Not yet: Wishing Compass pointing, the Nucleus RNG Meter, Jade Dye, temple traps,
+      the Executives, fairy souls at the grottos, the Dragon's Lair and replicas. Untested in game: all spots, mob AI and timings.
 - [x] **Gemstones on items**: `tools/skyblock/import_gemstones.py` (NEU gemstones.json + gemstonecosts.json: 12 gems'
       stats by tier and rarity, 499 items' slots and unlock costs, removal costs) to `skyrpg/gemstones`; items
       `Gemstones` (loaded on the server, sent with the item definitions): Hypixel's `gems` custom data, stats in

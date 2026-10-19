@@ -16,5 +16,8 @@
   "greetings": [
     "Don't hurt the younglings.",
     "The Sludges grow big down here."
-  ]
+  ],
+  "action": {
+    "type": "hollows_odawa"
+  }
 }

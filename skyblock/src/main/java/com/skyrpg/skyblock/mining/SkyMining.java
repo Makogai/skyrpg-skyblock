@@ -332,6 +332,7 @@ public final class SkyMining {
         }
         if (metal.item().equals("HARD_STONE")) {
             com.skyrpg.skyblock.hollows.TreasureChests.dug(level, player, pos);
+            com.skyrpg.skyblock.hollows.Worms.dug(level, player, pos);
         }
         MINED.invoker().onMined(player, state, zoneName(level, pos));
     }

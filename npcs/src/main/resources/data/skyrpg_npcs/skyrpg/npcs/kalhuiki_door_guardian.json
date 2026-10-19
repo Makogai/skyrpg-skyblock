@@ -16,5 +16,8 @@
   "greetings": [
     "Only those with a Jungle Key may pass.",
     "The temple keeps its treasure well."
-  ]
+  ],
+  "action": {
+    "type": "hollows_guardian"
+  }
 }
