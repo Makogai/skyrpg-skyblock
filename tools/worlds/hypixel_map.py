@@ -125,7 +125,10 @@ def tops(world):
                         decoded[sec] = nbt.unpack(states, bits, 4096)
                 palette = sections[sec][0]
                 idx = decoded[sec][((y & 15) << 8) | (z << 4) | x]
-                return palette[idx]["Name"] if idx < len(palette) else "minecraft:air"
+                if idx >= len(palette):
+                    return "minecraft:air"
+                entry = palette[idx]
+                return entry if isinstance(entry, str) else entry.get("Name", entry.get("", "minecraft:air"))
 
             ys = sorted(sections)
             if not ys:

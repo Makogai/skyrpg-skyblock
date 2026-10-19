@@ -72,7 +72,10 @@ class World:
             return {"Name": "minecraft:air"}
         palette, data = section
         i = data[((y & 15) << 8) | ((z & 15) << 4) | (x & 15)]
-        return palette[i] if i < len(palette) else {"Name": "minecraft:air"}
+        entry = palette[i] if i < len(palette) else {"Name": "minecraft:air"}
+        if isinstance(entry, str):
+            return {"Name": entry}
+        return entry if "Name" in entry else {"Name": entry.get("", "minecraft:air")}
 
     def name(self, x, y, z):
         return self.state(x, y, z)["Name"]

@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-19",
-  "latest": "2026-10-19 Wither scrolls, shortbows, Kuudra armour stacks and more item abilities",
+  "latest": "2026-10-19 Hypixel's dungeon rooms and boss arenas, Fairy Souls to Hypixel's count",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -87,7 +87,7 @@
           "name": "Fairy Souls",
           "icon": "item/amethyst_shard",
           "weight": 2,
-          "done": 30
+          "done": 82
         },
         {
           "name": "Museum, Bestiary & Sacks",
@@ -141,7 +141,7 @@
           "name": "Dungeons",
           "icon": "item/bone",
           "weight": 12,
-          "done": 65
+          "done": 74
         },
         {
           "name": "Kuudra",
@@ -295,7 +295,7 @@
     },
     {
       "date": "2026-10-19",
-      "overall": 76.0
+      "overall": 77.2
     }
   ]
 }

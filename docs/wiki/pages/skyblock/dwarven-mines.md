@@ -32,7 +32,7 @@ The **Dwarven Mines** are a huge cavern kingdom of dwarves under the [Deep Caver
 | **Royal Palace** | the far south-east | The King and Queen Mismyla, the Grand Library and the Puzzler |
 | **Aristocrat Passage** | south of the Royal Mines | The corridor down to the Great Ice Wall |
 
-There are **11 Fairy Souls** in the Mines.
+There are **15 Fairy Souls** in the Mines.
 
 ## Mining here
 

@@ -168,4 +168,4 @@ What's left of your weight turns into the dragon's **Fragments** (one per 22 wei
 
 ## Fairy Souls
 
-Every island hides its own [Fairy Souls](the-hub#fairy-souls), four on each part: 8 on the Farming Islands, 8 in The Park, 4 in the Gold Mine, 4 in the Deep Caverns, 4 in the Spider's Den and 4 in The End. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.
+Every island hides as many [Fairy Souls](the-hub#fairy-souls) as on Hypixel: 20 on the Farming Islands, 11 in The Park, 12 in the Gold Mine, 21 in the Deep Caverns, 19 in the Spider's Den and 12 in The End. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.

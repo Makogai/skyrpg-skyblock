@@ -740,6 +740,13 @@ phase so the next session can pick up where this one stopped.
       their own files, NBT names, `equipment`), every leaf made persistent and `OfficialLeavesMixin` (no leaf decay on
       Hypixel's maps); `hypixel_garden.py` puts Hypixel's Barn plot in as the Garden's template, `GardenLayout` moves the
       Desk, Composter, NPCs, visitors and arrival to Hypixel's spots (`/sbgarden rebuild`).
+- [x] **The Catacombs on Hypixel's rooms and arenas** (`tools/worlds/hypixel_dungeons.py`, the owners' "[Dungeons]"
+      downloads): 53 of Hypixel's rooms (every shape, two Entrances, the Blood and Fairy rooms, two traps) with their
+      basements and secret chests, and Bonzo's to Sadan's arenas; `RoomLibrary` prefers them, `BossFight` takes the
+      arena's middle and way in from it.
+- [x] **Fairy Souls on every island to Hypixel's count** (`tools/skyblock/place_fairy_souls.py`): Gold Mine 12, Deep
+      Caverns 21, Spider's Den 19, Farming Islands 20, Crimson Isle 29, Dwarven Mines 15 (244 of Hypixel's 289; the rest
+      are on islands we don't have yet: Jerry's Workshop, Backwater Bayou, Lotus Atoll, the safari).
 - [ ] Galatea and the reworked Park (Hypixel's floating islands) from clean captures (the first ones had been opened in
       singleplayer and lost leaves); the Garden's other plots.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,

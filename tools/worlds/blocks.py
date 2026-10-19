@@ -41,7 +41,11 @@ class Blocks:
             return "minecraft:air"
         palette, data = section
         idx = data[((y & 15) << 8) | ((z & 15) << 4) | (x & 15)]
-        return palette[idx]["Name"] if idx < len(palette) else "minecraft:air"
+        if idx >= len(palette):
+            return "minecraft:air"
+        entry = palette[idx]
+        # 26.x writes a block with no properties as just its name (wrapped as {"": name} in a list with full entries)
+        return entry if isinstance(entry, str) else entry.get("Name", entry.get("", "minecraft:air"))
 
 
 PASSABLE = ("air", "grass", "fern", "flower", "torch", "sign", "carpet", "button", "lever", "pressure_plate", "rail", "vine", "snow",
