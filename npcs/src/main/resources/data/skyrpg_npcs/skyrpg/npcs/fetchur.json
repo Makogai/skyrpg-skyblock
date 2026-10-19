@@ -1,0 +1,23 @@
+{
+  "name": "Fetchur",
+  "role": "Dwarven Village",
+  "color": "#FFFF55",
+  "hint": "Daily request",
+  "skin": "minecraft:entity/player/wide/kai",
+  "model": "wide",
+  "dimension": "skyrpg_skyblock:dwarven_mines",
+  "pos": [
+    57.5,
+    201.0,
+    -141.5
+  ],
+  "yaw": 0.0,
+  "sound": "minecraft:entity.villager.ambient",
+  "greetings": [
+    "hi i need your help maybe",
+    "im looking for some stuff, dont remember the name tbh"
+  ],
+  "action": {
+    "type": "fetchur"
+  }
+}

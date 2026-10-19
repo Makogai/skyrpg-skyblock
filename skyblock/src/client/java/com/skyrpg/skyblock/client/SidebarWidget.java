@@ -108,6 +108,14 @@ public final class SidebarWidget implements HudWidget {
                 lines.add(Component.literal(line));
             }
         }
+        // A Dwarven Mines event (2x Powder, the wind, the Goblin Raid...), while one runs.
+        String mining = player == null ? null : player.getAttached(com.skyrpg.skyblock.mining.MiningEvents.SIDEBAR);
+        if (mining != null) {
+            lines.add(Component.empty());
+            for (String line : mining.split("\n")) {
+                lines.add(Component.literal(line));
+            }
+        }
         // Faction reputation on the Crimson Isle.
         String rep = player == null ? null : player.getAttached(com.skyrpg.skyblock.crimson.Factions.SIDEBAR);
         if (rep != null) {

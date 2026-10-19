@@ -127,6 +127,9 @@ public final class Hotm {
         Forge.init();
         Commissions.init();
         MinesMobs.init();
+        MinesGoblins.init();
+        MiningEvents.init();
+        DailyNpcs.init();
         Stats.registerSource(new Stats.Source() {
             @Override
             public String name() {
@@ -407,6 +410,10 @@ public final class Hotm {
     public static void givePowder(ServerPlayer player, String type, long amount) {
         if (amount <= 0 || !POWDERS.contains(type)) {
             return;
+        }
+        // 2x Powder (a Dwarven Mines event) doubles every gain on that island.
+        if (MiningEvents.doublePowder() && player.level().dimension().equals(SkyMining.DWARVEN_MINES)) {
+            amount *= 2;
         }
         set(player, state(player).withPowder(type, amount, true));
     }

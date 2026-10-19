@@ -14,10 +14,10 @@
   "yaw": 180,
   "sound": "minecraft:block.bell.use",
   "greetings": [
-    "Today the King is here, and he has work for you.",
+    "The King changes every SkyBlock day. Today it is my turn.",
     "Serve the Mines well and they'll serve you."
   ],
   "action": {
-    "type": "commissions"
+    "type": "king"
   }
 }

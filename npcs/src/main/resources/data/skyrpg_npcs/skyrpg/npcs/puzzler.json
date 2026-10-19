@@ -2,7 +2,7 @@
   "name": "Puzzler",
   "role": "Royal Palace",
   "color": "#FF55FF",
-  "hint": "Talk",
+  "hint": "Puzzle",
   "skin": "minecraft:entity/player/wide/noor",
   "model": "wide",
   "dimension": "skyrpg_skyblock:dwarven_mines",
@@ -16,5 +16,8 @@
   "greetings": [
     "A puzzle a day keeps the Goblins away.",
     "Come back tomorrow for a new one."
-  ]
+  ],
+  "action": {
+    "type": "puzzler"
+  }
 }
