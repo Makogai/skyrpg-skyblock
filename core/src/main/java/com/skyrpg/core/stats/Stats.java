@@ -38,7 +38,14 @@ public final class Stats {
         void refresh(ServerPlayer player);
     }
 
+    /** Told when a player spends mana on something (an ability), with how much. */
+    @FunctionalInterface
+    public interface ManaSpent {
+        void spent(ServerPlayer player, double amount);
+    }
+
     private static final List<Source> SOURCES = new CopyOnWriteArrayList<>();
+    private static final List<ManaSpent> MANA_LISTENERS = new CopyOnWriteArrayList<>();
     private static Backend backend;
 
     private Stats() {
@@ -72,7 +79,16 @@ public final class Stats {
 
     /** Takes mana if the player has enough. Without the stats mod, abilities are free. */
     public static boolean spendMana(ServerPlayer player, double amount) {
-        return backend == null || backend.spendMana(player, amount);
+        boolean spent = backend == null || backend.spendMana(player, amount);
+        if (spent && amount > 0) {
+            MANA_LISTENERS.forEach(listener -> listener.spent(player, amount));
+        }
+        return spent;
+    }
+
+    /** Listens for mana spent (Refrigerate turns it into Defense). Refunds (negative amounts) don't count. */
+    public static void onManaSpent(ManaSpent listener) {
+        MANA_LISTENERS.add(listener);
     }
 
     public static void refresh(ServerPlayer player) {

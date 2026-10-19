@@ -226,8 +226,37 @@ phase so the next session can pick up where this one stopped.
       enchantments; Bazaar ids `ENCHANTMENT_<ID>_<N>` resolve to them, 414 book products in Oddities) on the anvil: book
       on item for XP levels, equal books combine (to the table's cap). `EnchantEffects`: stat enchants, additive damage
       (new core `DamageBonus`, summed with Warrior in `CombatStats`), on-hit and on-kill effects; Ultimate Wise in
-      `Abilities`. `/sbenchant` for admins. Not yet: Looting/Luck/Experience, most ultimates and fishing/farming extras,
-      Bookshelf Power and Enchanting-level requirements, the Experimentation Table, book rarity by level.
+      `Abilities`. `/sbenchant` for admins. Not yet: Bookshelf Power and Enchanting-level requirements, book rarity by level
+      (the rest is in "Enchanting, part 2" below).
+- [x] **Enchanting, part 2** (the enchantments that did nothing): 104 of the 145 enchantments now do something (61 before;
+      107 with Flame, Punch and Magmarizer). Lore-driven: `EnchantEffects.numbers(id, level)` reads every number out of a level's
+      lore ("50% chance to rebound 12%" is 50, 12), so secondary values (windows, caps, cooldowns) come from the imported data.
+      `EnchantDrops`: **Looting** (swords) and **Chance** (bows) roll the mob's loot table once more at the lore percent (not on
+      sea creatures, Maniacs or dungeon mobs, which have their own drops); **Luck** drops the equipment a mob still carries at its
+      percent points over vanilla's 8.5%; **Experience** doubles the XP orbs of a kill or a block break at its chance (decided
+      in `ALLOW_DEATH` / `BEFORE`, the orbs doubled when they load). `UltimateEnchants`: Wisdom, Legion, Bobbin' Time, Chimera
+      (`SkyBlockPets.stats` times the %), Fatal Tempo, Flowstate, The One (maxed `Collections`), Last Stand, Refrigerate (new
+      `Stats.onManaSpent`), Counter-Strike, Respite, Combo, Habanero Tactics (damage), Soul Eater, Inferno, Duplex (the `reiterate`
+      id: second burning arrow, fire marks the mob for 60s), Bank (coins per kill, `Deaths` keeps that share of the coins lost),
+      No Pain No Gain, Thorns. Percent-of-stat enchants take the stat without their own last contribution (`LAST`), so they
+      never compound. Equipment enchants (Prosperity, Cayenne, Green Thumb: `Garden.uniqueVisitors`) count from the Accessory
+      slots. `EnchantFarming`: **Delicate** (BEFORE break, stems and young crops stay), **Replenish** (replants from SEEDS /
+      CARROT_ITEM / POTATO_ITEM / NETHER_STALK / INK_SACK:3 in the inventory), **Dedication** (`Garden.harvested` adds its Fortune
+      times the crop's milestone). Fishing: **Lure** (the longest wait shrinks), **Flash** (5-tick bite), **Magnet** (XP orbs per
+      catch), **Blessing** (treasure tiers), **Frail** (sea creature health), plus Piscary, Fortune, Lapidary, Pristine, Petalfall,
+      Absorb, Overload, Pesterminator, Small Brain, Ice Cold, Respiration as stats. Combat: Snipe, Thunderbolt, Venomous, Flame,
+      Punch, Magmarizer. NEU's conflict pools spelled two Turbo ids differently (`turbo_coco`, `turbo_cactus`): `Enchants` maps
+      them, so every Turbo enchant now conflicts with the others. Not yet: Rend, Missile, First Impression, Sunset, the Vitality
+      converters (Strong/Hardened/Ferocious Mana, Mana Vampire), Blast/Fire/Projectile Protection, Reflection, Transylvanian,
+      Corruption, Quick Bite, Spiked Hook, Silk/Smelting Touch, Lethality, Piercing, Tabasco, Titan Killer, Compact's drops, Feast,
+      Karma, Champion, Hecatomb, Toxophilite, Dragon Tracer, Paleontologist, Quantum, Tidal, Feather Falling, Depth Strider, Frost
+      Walker, Aqua Affinity.
+      Decided: Looting is "one more roll at the percent" (Hypixel's 100%+ means extra items, never reached below 75%); Luck's
+      percent is added to vanilla's drop chance as points; Habanero Tactics and Soul Eater work with any weapon (no slayer-weapon
+      test), Habanero's wand heal, Combat Wisdom and Magic Find parts are left out; Last Stand's Defense % is of your Defense
+      without it and several pieces add up; Bank on several pieces adds (100% keeps all coins); Legion counts players within 30
+      blocks, Bobbin' Time every bobber (yours too); Duplex's second arrow is its extra damage on the same hit, not a real arrow;
+      Inferno's trap is Slowness V for 3s; Dedication works in the Garden only; Venomous is Slowness plus Poison.
 - [x] **Accessories** (Hypixel's): the Accessory Bag (`AccessoryBag`, `AccessoryBagMenu` + `AccessoryBagScreen`; pages of
       45, Redstone collection II and +6 slots a tier; SkyBlock Menu tile and `/accessories`), accessory stats from the bag
       and inventory (each id once, only the highest of a line: NEU's talisman_upgrades), Magical Power by rarity

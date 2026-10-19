@@ -11,12 +11,17 @@ import com.skyrpg.economy.Purse;
 import com.skyrpg.items.ItemDefinition;
 import com.skyrpg.items.ItemMods;
 import com.skyrpg.items.SkyItems;
+import com.skyrpg.items.accessory.Accessories;
+import com.skyrpg.items.accessory.AccessorySlot;
 import com.skyrpg.items.enchant.Enchants;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.WeakHashMap;
 import java.util.function.IntToDoubleFunction;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
@@ -47,21 +52,35 @@ import net.minecraft.world.phys.AABB;
  *   <li>Damage: Sharpness, Power, Smite, Bane of Arthropods, Ender Slayer, Cubism, Impaling, Smoldering, Gravity, Dragon
  *       Hunter, First Strike, Triple Strike, Execute, Prosecute, Giant Killer, One For All and Swarm add their percent to
  *       the hit's additive bonus ({@link DamageBonus}).</li>
- *   <li>On a hit: Life Steal, Syphon, Mana Steal, Fire Aspect, Knockback, Thunderlord, Cleave. On a kill: Scavenger,
- *       Vampirism.</li>
+ *   <li>On a hit: Life Steal, Syphon, Mana Steal, Fire Aspect, Knockback, Thunderlord, Thunderbolt, Venomous, Cleave. On a
+ *       kill: Scavenger, Vampirism.</li>
+ *   <li>Drops and XP ({@link EnchantDrops}), crops ({@link EnchantFarming}), and the ultimates and defensive enchants that
+ *       follow a situation ({@link UltimateEnchants}). Fishing's Lure, Flash, Magnet, Blessing and Frail are in the fishing
+ *       code, Dedication in the Garden's.</li>
  * </ul>
  * The rest show on the item but don't do anything yet.
  */
 public final class EnchantEffects {
     /** Armour enchants that give a stat while worn: stat, and its amount at a level. */
-    private static final Map<String, Bonus> ARMOR = Map.of(
-            "protection", new Bonus(StatTypes.DEFENSE, null),
-            "growth", new Bonus(StatTypes.HEALTH, null),
-            "true_protection", new Bonus(StatTypes.TRUE_DEFENSE, null),
-            "big_brain", new Bonus(StatTypes.INTELLIGENCE, level -> 5 * level),
-            "smarty_pants", new Bonus(StatTypes.INTELLIGENCE, level -> 5 * level),
-            "sugar_rush", new Bonus(StatTypes.SPEED, level -> 2 * level),
-            "rejuvenate", new Bonus(StatTypes.HEALTH_REGEN, level -> 2 * level));
+    private static final Map<String, Bonus> ARMOR = Map.ofEntries(
+            Map.entry("protection", new Bonus(StatTypes.DEFENSE, null)),
+            Map.entry("growth", new Bonus(StatTypes.HEALTH, null)),
+            Map.entry("true_protection", new Bonus(StatTypes.TRUE_DEFENSE, null)),
+            Map.entry("big_brain", new Bonus(StatTypes.INTELLIGENCE, level -> 5 * level)),
+            Map.entry("smarty_pants", new Bonus(StatTypes.INTELLIGENCE, level -> 5 * level)),
+            Map.entry("small_brain", new Bonus(StatTypes.INTELLIGENCE, null)),
+            Map.entry("sugar_rush", new Bonus(StatTypes.SPEED, level -> 2 * level)),
+            Map.entry("rejuvenate", new Bonus(StatTypes.HEALTH_REGEN, level -> 2 * level)),
+            Map.entry("ice_cold", new Bonus(StatTypes.COLD_RESISTANCE, null)),
+            Map.entry("respiration", new Bonus(StatTypes.RESPIRATION, null)),
+            Map.entry("pesterminator", new Bonus(StatTypes.FARMING_FORTUNE, null)));
+    /** A second stat some armour enchants give (Small Brain's True Defense, Pesterminator's Bonus Pest Chance). */
+    private static final Map<String, Bonus> ARMOR_ALSO = Map.of(
+            "small_brain", new Bonus(StatTypes.TRUE_DEFENSE, level -> 0.6 * level),
+            "pesterminator", new Bonus(StatTypes.BONUS_PEST_CHANCE, level -> 0.5 * value("pesterminator", level)));
+    /** Enchants on belts, cloaks, gloves and necklaces (equipment) that give a stat. */
+    private static final Map<String, Bonus> EQUIPMENT = Map.of(
+            "prosperity", new Bonus(StatTypes.HEALTH, null));
     /** Weapon and tool enchants that give a stat while held. */
     private static final Map<String, Bonus> HELD = Map.ofEntries(
             Map.entry("critical", new Bonus(StatTypes.CRIT_DAMAGE, null)),
@@ -70,6 +89,13 @@ public final class EnchantEffects {
             Map.entry("efficiency", new Bonus(StatTypes.MINING_SPEED, level -> 10 + 20 * level)),
             Map.entry("harvesting", new Bonus(StatTypes.FARMING_FORTUNE, level -> 12.5 * level)),
             Map.entry("cultivating", new Bonus(StatTypes.FARMING_FORTUNE, level -> 2 * level)),
+            Map.entry("fortune", new Bonus(StatTypes.MINING_FORTUNE, null)),
+            Map.entry("lapidary", new Bonus(StatTypes.GEMSTONE_FORTUNE, null)),
+            Map.entry("pristine", new Bonus(StatTypes.PRISTINE, null)),
+            Map.entry("piscary", new Bonus(StatTypes.FISHING_SPEED, null)),
+            Map.entry("petalfall", new Bonus(StatTypes.TIMBER, null)),
+            Map.entry("absorb", new Bonus(StatTypes.FORAGING_FORTUNE, level -> 2 * level)),
+            Map.entry("overload", new Bonus(StatTypes.CRIT_DAMAGE, null)),
             Map.entry("compact", new Bonus(StatTypes.MINING_WISDOM, level -> level)),
             Map.entry("angler", new Bonus(StatTypes.SEA_CREATURE_CHANCE, level -> level)),
             Map.entry("luck_of_the_sea", new Bonus(StatTypes.TREASURE_CHANCE, level -> 0.5 * level)),
@@ -85,10 +111,17 @@ public final class EnchantEffects {
             Map.entry("turbo_warts", new Bonus(StatTypes.get("nether_stalk_fortune"), level -> 5 * level)),
             Map.entry("turbo_cocoa", new Bonus(StatTypes.get("cocoa_beans_fortune"), level -> 5 * level)));
 
+    /** A second stat of a held enchant (Cultivating's and Absorb's Wisdom, Overload's Crit Chance). */
+    private static final Map<String, Bonus> HELD_ALSO = Map.of(
+            "cultivating", new Bonus(StatTypes.FARMING_WISDOM, level -> level),
+            "absorb", new Bonus(StatTypes.FORAGING_WISDOM, level -> level),
+            "overload", new Bonus(StatTypes.CRIT_CHANCE, null));
+
     private static final Set<EntityType<?>> ENDER = Set.of(EntityTypes.ENDERMAN, EntityTypes.ENDERMITE, EntityTypes.ENDER_DRAGON);
     private static final Set<EntityType<?>> CUBIC = Set.of(EntityTypes.CREEPER, EntityTypes.SLIME, EntityTypes.MAGMA_CUBE);
     private static final Set<EntityType<?>> INFERNAL = Set.of(EntityTypes.BLAZE, EntityTypes.GHAST, EntityTypes.MAGMA_CUBE,
             EntityTypes.WITHER_SKELETON, EntityTypes.PIGLIN, EntityTypes.HOGLIN, EntityTypes.ZOMBIFIED_PIGLIN);
+    private static final Set<EntityType<?>> MAGMATIC = Set.of(EntityTypes.MAGMA_CUBE, EntityTypes.BLAZE, EntityTypes.STRIDER);
     private static final Set<EntityType<?>> AIRBORNE = Set.of(EntityTypes.BAT, EntityTypes.PHANTOM, EntityTypes.GHAST, EntityTypes.BLAZE,
             EntityTypes.VEX, EntityTypes.BEE, EntityTypes.PARROT, EntityTypes.ALLAY, EntityTypes.BREEZE);
 
@@ -110,17 +143,22 @@ public final class EnchantEffects {
 
             @Override
             public void contribute(ServerPlayer player, Stats.Contributor out) {
-                for (EquipmentSlot slot : SkyItems.ARMOR_SLOTS) {
-                    ItemStack stack = player.getItemBySlot(slot);
-                    ItemDefinition def = SkyItems.definition(stack);
-                    if (def != null && SkyItems.armorSlot(def.item()) == slot) {
-                        add(stack, ARMOR, out);
-                    }
+                for (ItemStack stack : worn(player)) {
+                    add(stack, ARMOR, out);
+                    add(stack, ARMOR_ALSO, out);
+                }
+                for (ItemStack stack : equipment(player)) {
+                    add(stack, EQUIPMENT, out);
+                    equipmentExtras(player, stack, out);
                 }
                 add(player.getMainHandItem(), HELD, out);
+                add(player.getMainHandItem(), HELD_ALSO, out);
             }
         });
         DamageBonus.register(EnchantEffects::damagePercent);
+        EnchantDrops.init();
+        EnchantFarming.init();
+        UltimateEnchants.init();
         ServerLivingEntityEvents.AFTER_DAMAGE.register((entity, source, base, taken, blocked) -> {
             if (source.getEntity() instanceof ServerPlayer player && entity != player && taken > 0 && !(entity instanceof Player)) {
                 onHit(player, entity, source, taken);
@@ -134,6 +172,62 @@ public final class EnchantEffects {
         });
     }
 
+    /** The armour pieces being worn (a helmet in the helmet slot...). */
+    static List<ItemStack> worn(ServerPlayer player) {
+        List<ItemStack> out = new ArrayList<>(4);
+        for (EquipmentSlot slot : SkyItems.ARMOR_SLOTS) {
+            ItemStack stack = player.getItemBySlot(slot);
+            ItemDefinition def = SkyItems.definition(stack);
+            if (def != null && SkyItems.armorSlot(def.item()) == slot) {
+                out.add(stack);
+            }
+        }
+        return out;
+    }
+
+    /** The equipment worn: necklace, cloak, belt and gloves. */
+    static List<ItemStack> equipment(ServerPlayer player) {
+        List<ItemStack> out = new ArrayList<>(4);
+        for (AccessorySlot slot : AccessorySlot.values()) {
+            ItemStack stack = Accessories.worn(player, slot);
+            if (!stack.isEmpty()) {
+                out.add(stack);
+            }
+        }
+        return out;
+    }
+
+    /** The equipment enchants that need the player: Green Thumb (Fortune per visitor served) and Cayenne (per digit of Magical Power). */
+    private static void equipmentExtras(ServerPlayer player, ItemStack stack, Stats.Contributor out) {
+        int thumb = ItemMods.enchantment(stack, "green_thumb");
+        if (thumb > 0) {
+            out.add(StatTypes.FARMING_FORTUNE, value("green_thumb", thumb) * com.skyrpg.skyblock.garden.Garden.uniqueVisitors(player));
+        }
+        int cayenne = ItemMods.enchantment(stack, "cayenne");
+        if (cayenne > 0) {
+            int digits = Integer.toString(com.skyrpg.skyblock.accessory.AccessoryBag.magicalPower(player)).length();
+            out.add(StatTypes.HEALTH, value("cayenne", cayenne) * digits);
+            out.add(StatTypes.TRUE_DEFENSE, value("cayenne", cayenne) * digits / 2);
+        }
+    }
+
+    /** Every number in an enchant level's lore, in order ("Grants a 50% chance to rebound 12%..." is 50, 12): its secondary values. */
+    static double[] numbers(String id, int level) {
+        Enchants.Enchant enchant = Enchants.get(id);
+        Enchants.Level at = enchant == null ? null : enchant.level(Math.min(level, enchant.max()));
+        if (at == null) {
+            return new double[0];
+        }
+        Matcher matcher = NUMBER.matcher(String.join(" ", at.lore()).replaceAll("\u00a7.", ""));
+        List<Double> out = new ArrayList<>();
+        while (matcher.find()) {
+            out.add(Double.parseDouble(matcher.group()));
+        }
+        return out.stream().mapToDouble(Double::doubleValue).toArray();
+    }
+
+    private static final Pattern NUMBER = Pattern.compile("\\d+(?:\\.\\d+)?");
+
     private static void add(ItemStack stack, Map<String, Bonus> table, Stats.Contributor out) {
         ItemMods.enchantments(stack).forEach((id, level) -> {
             Bonus bonus = table.get(id);
@@ -143,7 +237,7 @@ public final class EnchantEffects {
         });
     }
 
-    private static double value(String id, int level) {
+    static double value(String id, int level) {
         Enchants.Enchant enchant = Enchants.get(id);
         return enchant == null ? 0 : enchant.value(level);
     }
@@ -173,6 +267,7 @@ public final class EnchantEffects {
                 case "cubism" -> CUBIC.contains(target.getType()) ? value(id, level) : 0;
                 case "impaling" -> tagged(target, EntityTypeTags.AQUATIC) ? value(id, level) : 0;
                 case "smoldering" -> INFERNAL.contains(target.getType()) ? value(id, level) : 0;
+                case "magmarizer" -> MAGMATIC.contains(target.getType()) ? value(id, level) : 0;
                 case "gravity" -> AIRBORNE.contains(target.getType()) ? value(id, level) : 0;
                 case "dragon_hunter" -> target.getType() == EntityTypes.ENDER_DRAGON ? value(id, level) : 0;
                 case "first_strike" -> hits == 0 && !arrow ? 25 * level : 0;
@@ -180,6 +275,7 @@ public final class EnchantEffects {
                 case "execute" -> value(id, level) * missingPercent(target);
                 case "prosecute" -> value(id, level) * (100 - missingPercent(target));
                 case "giant_killer" -> giantKiller(player, target, id, level);
+                case "snipe" -> arrow ? value(id, level) * Math.floor(player.distanceTo(target) / 10) : 0;
                 case "ultimate_one_for_all" -> 500;
                 case "ultimate_swarm" -> value(id, level) * Math.min(16, nearbyMobs(player, 10) - 1);
                 default -> 0;
@@ -237,6 +333,15 @@ public final class EnchantEffects {
         if (fire > 0) {
             target.igniteForSeconds(3 + fire);
         }
+        boolean arrowHit = source.getDirectEntity() instanceof AbstractArrow;
+        int flame = enchants.getOrDefault("flame", 0);
+        if (flame > 0 && arrowHit) {
+            target.igniteForSeconds((float) value("flame", flame));
+        }
+        int punch = enchants.getOrDefault("punch", 0);
+        if (punch > 0 && arrowHit) {
+            target.knockback(0.4 * punch, player.getX() - target.getX(), player.getZ() - target.getZ(), source, taken);
+        }
         int knockback = enchants.getOrDefault("knockback", 0);
         if (knockback > 0) {
             target.knockback(0.4 * knockback, player.getX() - target.getX(), player.getZ() - target.getZ(), source, taken);
@@ -246,6 +351,29 @@ public final class EnchantEffects {
             level.sendParticles(ParticleTypes.ELECTRIC_SPARK, target.getX(), target.getY(0.8), target.getZ(), 30, 0.3, 0.8, 0.3, 0.2);
             level.playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.LIGHTNING_BOLT_IMPACT, player.getSoundSource(), 0.6f, 1.4f);
             target.hurtServer(level, level.damageSources().magic(), (float) (taken * value("thunderlord", thunderlord) / 100));
+        }
+        int thunderbolt = enchants.getOrDefault("thunderbolt", 0);
+        if (thunderbolt > 0 && hits % 3 == 0) {
+            // Lightning on the target's neighbours: its percent of the hit, to up to so many mobs within so many blocks.
+            double[] numbers = numbers("thunderbolt", thunderbolt);
+            if (numbers.length >= 4) {
+                List<Mob> near = level.getEntitiesOfClass(Mob.class, target.getBoundingBox().inflate(numbers[3]), mob -> mob != target && mob.isAlive());
+                for (Mob mob : near.subList(0, Math.min(near.size(), (int) numbers[2]))) {
+                    level.sendParticles(ParticleTypes.ELECTRIC_SPARK, mob.getX(), mob.getY(0.8), mob.getZ(), 20, 0.3, 0.8, 0.3, 0.2);
+                    mob.hurtServer(level, level.damageSources().magic(), (float) (taken * numbers[1] / 100));
+                }
+                level.playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.LIGHTNING_BOLT_IMPACT, player.getSoundSource(), 0.5f, 1.6f);
+            }
+        }
+        int venomous = enchants.getOrDefault("venomous", 0);
+        if (venomous > 0) {
+            // Slows the mob by its percent and poisons it for as long as the lore says.
+            double[] numbers = numbers("venomous", venomous);
+            if (numbers.length >= 4) {
+                target.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.SLOWNESS,
+                        (int) (numbers[3] * 20), (int) Math.round(numbers[0] / 15)));
+                target.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.POISON, (int) (numbers[3] * 20), 0));
+            }
         }
         int cleave = enchants.getOrDefault("cleave", 0);
         if (cleave > 0 && !(source.getDirectEntity() instanceof AbstractArrow)) {
