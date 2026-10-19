@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -85.5,
-    66.0,
-    -11.5
+    -311.5,
+    83.0,
+    -69.5
   ],
-  "yaw": 0.0,
+  "yaw": 38.0,
   "sound": "minecraft:entity.fishing_bobber.splash",
   "greetings": [
     "The lake is calm today.",

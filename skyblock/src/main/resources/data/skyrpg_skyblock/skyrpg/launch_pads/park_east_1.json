@@ -2,14 +2,14 @@
   "name": "Galatea",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    197,
-    65,
-    73
+    -440,
+    127,
+    -106
   ],
   "to": [
-    199,
-    66,
-    75
+    -439,
+    128,
+    -105
   ],
   "destination": {
     "dimension": "skyrpg_skyblock:galatea",

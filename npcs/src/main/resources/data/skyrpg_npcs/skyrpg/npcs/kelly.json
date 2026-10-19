@@ -7,11 +7,11 @@
   "model": "slim",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -170.5,
-    65.0,
-    -40.5
+    -380.5,
+    88.0,
+    54.5
   ],
-  "yaw": 90.0,
+  "yaw": -158.0,
   "sound": "minecraft:block.campfire.crackle",
   "greetings": [
     "The vikings tell a story every night.",

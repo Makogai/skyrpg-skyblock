@@ -2,14 +2,14 @@
   "name": "the Hub",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    -29,
-    65,
-    9
+    -274,
+    82,
+    -15
   ],
   "to": [
-    -27,
-    66,
-    11
+    -273,
+    83,
+    -13
   ],
   "destination": {
     "dimension": "skyrpg_hub:hub",

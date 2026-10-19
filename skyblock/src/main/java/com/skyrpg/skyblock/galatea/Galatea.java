@@ -42,7 +42,8 @@ public final class Galatea {
             }
             ServerLevel park = player.level().getServer().getLevel(PARK);
             if (park != null) {
-                player.teleportTo(park, 194.5, 65, 74.5, Set.of(), 90, 0, true);
+                // back by Galatea's pad on the Park's Jungle Island (launch_pads/galatea_north_1.json's destination)
+                player.teleportTo(park, -433.5, 127, -105.5, Set.of(), 90, 0, true);
             }
             player.sendSystemMessage(Component.literal("Galatea opens at Foraging " + FORAGING_NEEDED + ".").withStyle(ChatFormatting.RED));
         });

@@ -2,14 +2,14 @@
   "name": "Jungle Island",
   "dimension": "skyrpg_skyblock:the_park",
   "from": [
-    140,
-    40,
-    20
+    -445,
+    0,
+    -135
   ],
   "to": [
-    259,
-    125,
-    140
+    -391,
+    255,
+    -41
   ],
   "blocks": {
     "minecraft:jungle_log": {

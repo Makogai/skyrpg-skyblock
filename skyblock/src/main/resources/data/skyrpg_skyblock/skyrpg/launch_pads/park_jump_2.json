@@ -1,0 +1,19 @@
+{
+ "name": "jump pad",
+ "dimension": "skyrpg_skyblock:the_park",
+ "from": [
+  -355,
+  89,
+  -14
+ ],
+ "to": [
+  -353,
+  90,
+  -13
+ ],
+ "jump": [
+  -354,
+  103,
+  -21
+ ]
+}

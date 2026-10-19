@@ -1,14 +1,16 @@
 package com.skyrpg.hub;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.Set;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.storage.LevelResource;
 
 /**
@@ -31,14 +33,31 @@ public final class HubMaps {
         ServerLifecycleEvents.SERVER_STOPPED.register(server -> OFFICIAL.clear());
     }
 
+    /** The levels don't exist yet when the server starts: look for markers in the world's dimensions folder instead. */
     private static void scan(MinecraftServer server) {
         OFFICIAL.clear();
-        Path root = server.getWorldPath(LevelResource.ROOT);
-        for (ResourceKey<Level> key : server.levelKeys()) {
-            if (Files.exists(DimensionType.getStorageFolder(key, root).resolve(MARKER))) {
-                OFFICIAL.add(key);
-                SkyRpgHub.LOGGER.info("{} runs on Hypixel's map", key.identifier());
+        Path dimensions = server.getWorldPath(LevelResource.ROOT).resolve("dimensions");
+        if (!Files.isDirectory(dimensions)) {
+            return;
+        }
+        try (var namespaces = Files.list(dimensions)) {
+            for (Path namespace : namespaces.toList()) {
+                if (!Files.isDirectory(namespace)) {
+                    continue;
+                }
+                try (var paths = Files.list(namespace)) {
+                    for (Path path : paths.toList()) {
+                        if (Files.exists(path.resolve(MARKER))) {
+                            ResourceKey<Level> key = ResourceKey.create(Registries.DIMENSION,
+                                    Identifier.fromNamespaceAndPath(namespace.getFileName().toString(), path.getFileName().toString()));
+                            OFFICIAL.add(key);
+                            SkyRpgHub.LOGGER.info("{} runs on Hypixel's map", key.identifier());
+                        }
+                    }
+                }
             }
+        } catch (IOException e) {
+            SkyRpgHub.LOGGER.error("Couldn't look for Hypixel's maps: {}", e.getMessage());
         }
     }
 

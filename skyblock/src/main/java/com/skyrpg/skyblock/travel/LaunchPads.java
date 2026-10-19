@@ -38,12 +38,14 @@ import net.minecraft.world.phys.Vec3;
  * </pre>
  * The warp is a Fast Travel warp; arriving there unlocks it, as visiting its area does. A pad back to the Hub names a
  * spot instead: {@code "destination": {"dimension": "skyrpg_hub:hub", "pos": [186.5, 65, -194.5], "yaw": 180}}.
+ * A jump pad on the same island (Hypixel's Park climbs to its upper woods on them) names where it throws you:
+ * {@code "jump": [-354, 103, -20]}, and you fly there in an arc.
  */
 public final class LaunchPads {
     public static final String DIRECTORY = "skyrpg/launch_pads";
 
     public record Pad(String id, String name, ResourceKey<Level> dimension, AABB box, String warp, Identifier skill, int level,
-                      ResourceKey<Level> toDimension, Vec3 toPos, float toYaw) {
+                      ResourceKey<Level> toDimension, Vec3 toPos, float toYaw, Vec3 jump) {
     }
 
     private static List<Pad> pads = List.of();
@@ -84,9 +86,14 @@ public final class LaunchPads {
                     toPos = new Vec3(p.get(0).getAsDouble(), p.get(1).getAsDouble(), p.get(2).getAsDouble());
                     toYaw = to2.has("yaw") ? to2.get("yaw").getAsFloat() : 0;
                 }
+                Vec3 jump = null;
+                if (json.has("jump")) {
+                    JsonArray j = json.getAsJsonArray("jump");
+                    jump = new Vec3(j.get(0).getAsDouble() + 0.5, j.get(1).getAsDouble(), j.get(2).getAsDouble() + 0.5);
+                }
                 loaded.add(new Pad(id.getPath(), json.get("name").getAsString(),
                         ResourceKey.create(Registries.DIMENSION, Identifier.parse(json.get("dimension").getAsString())), box,
-                        json.has("warp") ? json.get("warp").getAsString() : "", skill, level, toDimension, toPos, toYaw));
+                        json.has("warp") ? json.get("warp").getAsString() : "", skill, level, toDimension, toPos, toYaw, jump));
             } catch (RuntimeException e) {
                 SkyRpgSkyblock.LOGGER.warn("Skipping launch pad {}: {}", id, e.getMessage());
             }
@@ -130,6 +137,15 @@ public final class LaunchPads {
             Msg.playSound(player, SoundEvents.VILLAGER_NO, 0.7f, 1.0f);
             return;
         }
+        if (pad.jump() != null) {
+            Vec3 velocity = jumpVelocity(player.position(), pad.jump());
+            player.setDeltaMovement(velocity);
+            player.syncVelocity = true;
+            player.resetFallDistance();
+            level.sendParticles(ParticleTypes.CLOUD, player.getX(), player.getY() + 0.2, player.getZ(), 12, 0.4, 0.1, 0.4, 0.05);
+            Msg.playSound(player, SoundEvents.SLIME_JUMP, 1.0f, 0.8f);
+            return;
+        }
         if (pad.toPos() != null) {
             ServerLevel to = level.getServer().getLevel(pad.toDimension());
             if (to != null) {
@@ -152,5 +168,46 @@ public final class LaunchPads {
                 .append(Component.literal(pad.name()).withStyle(ChatFormatting.AQUA)).append(Component.literal("...").withStyle(ChatFormatting.GRAY)));
         warp.go().accept(player);
         FastTravel.unlockOnArrival(player, warp);
+    }
+
+    /**
+     * The push that lands a player at {@code target}: a player in the air keeps 91% of their sideways speed and 98% of
+     * their upward speed each tick, less 0.08 for gravity. Of the flight times that come down onto the target, the
+     * shortest whose arc peaks at least 2.5 blocks above it (so it clears the ledge it lands on).
+     */
+    static Vec3 jumpVelocity(Vec3 from, Vec3 target) {
+        double dx = target.x - from.x;
+        double dz = target.z - from.z;
+        double dy = target.y - from.y;
+        double flat = Math.sqrt(dx * dx + dz * dz);
+        for (int ticks = 8; ticks <= 60; ticks++) {
+            // y(t) = a * vy + b, with vy the starting upward speed
+            double a = 0;
+            double b = 0;
+            double va = 1;
+            double vb = 0;
+            for (int k = 0; k < ticks; k++) {
+                a += va;
+                b += vb;
+                va *= 0.98;
+                vb = (vb - 0.08) * 0.98;
+            }
+            double vy = (dy - b) / a;
+            boolean falling = va * vy + vb < 0;
+            double vh = flat * (1 - 0.91) / (1 - Math.pow(0.91, ticks));
+            // the highest point of this arc
+            double peak = 0;
+            double y = 0;
+            double v = vy;
+            for (int k = 0; k < ticks && v > 0; k++) {
+                y += v;
+                v = (v - 0.08) * 0.98;
+                peak = Math.max(peak, y);
+            }
+            if (falling && vy > 0 && vy < 3.5 && vh < 3 && peak >= dy + 2.5) {
+                return new Vec3(flat == 0 ? 0 : dx / flat * vh, vy, flat == 0 ? 0 : dz / flat * vh);
+            }
+        }
+        return new Vec3(dx * 0.1, 1.5, dz * 0.1);
     }
 }

@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    -183.5,
-    65.0,
-    -117.5
+    -371.5,
+    75.0,
+    -65.5
   ],
-  "yaw": 90.0,
+  "yaw": -25.0,
   "sound": "minecraft:entity.wolf.ambient_baby",
   "greetings": [
     "The spirits of the wolves walk in that cave.",

@@ -74,14 +74,14 @@ Over the bridge from the Barn. Sand and red sand dunes with **Cactus** fields, *
 
 ## The Park
 
-The foraging island, through the launch pad in the Hub's Forest (Foraging I). A group of forest islands, each with its own wood, all of it choppable and regrowing:
+The foraging island, through the launch pad in the Hub's Forest (Foraging I). It's **Hypixel's own Park map**: woods of different trees, climbing to the west on **jump pads** (step on the slime and you're thrown up onto the next ledge). All the wood is choppable and grows back.
 
-- **Birch Park** (where you arrive): a bright birch wood around a lake. **Charlie** and **Vanessa**.
-- **Spruce Woods**, to the west: tall spruces and a viking camp with **Kelly**, **Gustave** and the **Melancholic Viking**.
-- **The Howling Cave**, north of the Spruce Woods: a dark cavern where **Pack Spirits**, **Howling Spirits** and the **Soul of the Alpha** roam. **Old Shaman Nyko** keeps a fire at the entrance and sells his wares.
-- **Dark Thicket**, east over the bridge: dense dark oak, and the Campfire Cult's clearing with **Ryan** and the **Campfire Adept**.
-- **Savanna Woodland**: acacia trees and a camp with **Melody**, **Master Tactician Funk** (a shop) and **Worker Xavier**.
-- **Jungle Island**: towering jungle trees and an old temple, with **Molbert** and **Juliette**. East of their campfire, a launch pad goes to [Galatea](galatea) (Foraging XII).
+- **Birch Park** (where you arrive, in the east): birches, **Charlie** by the launch pad back to the Hub, and **Vanessa**.
+- **Spruce Woods**, to the south: tall spruces and the vikings, **Kelly**, **Gustave** and the **Melancholic Viking**.
+- **Dark Thicket**, in the middle: dense dark oak, and **Ryan** and the **Campfire Adept** up on its heights.
+- **The Howling Cave**, under the Dark Thicket: a dark cavern where **Pack Spirits**, **Howling Spirits** and the **Soul of the Alpha** roam. **Old Shaman Nyko** sells his wares in his hollow nearby.
+- **Savanna Woodland**, up the jump pads to the west: acacia trees, **Melody**, **Master Tactician Funk** (a shop) and **Worker Xavier**.
+- **Jungle Island**, at the top: towering jungle trees, with **Molbert** and **Juliette**. At its far west edge, a launch pad goes to [Galatea](galatea) (Foraging XII).
 
 ## Gold Mine
 

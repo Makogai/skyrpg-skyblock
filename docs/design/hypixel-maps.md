@@ -10,7 +10,7 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | Island | Our dimension | Map | Status |
 | --- | --- | --- | --- |
 | The Hub | `skyrpg_hub:hub` | The Hub.zip | in use |
-| The Park | `skyrpg_skyblock:the_park` | The Park.zip | next |
+| The Park | `skyrpg_skyblock:the_park` | The Park.zip | in use |
 | The End | `skyrpg_skyblock:the_end` | The End.zip | next |
 | The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | next |
 
@@ -68,3 +68,24 @@ on the Bank's roof on this map); our Rift Wizard on the Wizard Tower's top floor
   other three in blocks (heads set into walls).
 - **Spooky Festival**: Spooky mobs in the Graveyard's grounds and the Wilderness by the Fairy Pond; the Bat Firework
   works in the Village's zones.
+
+The markers are found by looking through the world's `dimensions/` folder when the server starts (the levels don't
+exist yet then).
+
+## The Park on Hypixel's map
+
+- **Zones** from where each wood grows on the map: Birch Park (east, the entrance), Spruce Woods (south), Dark Thicket
+  (the middle, above y 73), the Howling Cave (under it: its own mob nameplates on the map put the wolves at x -390 to
+  -345, y 56-72, z -52 to -4), Savanna Woodland (west, y 108-116) and Jungle Island (north-west, the top, y 119-129).
+- **Jump pads** (a new kind of launch pad, `"jump": [x, y, z]`): Hypixel's Park climbs west on slime pads, each
+  throwing you onto a slime ledge above: (-328 81 -16) to (-334 88), (-354 88 -13) to (-354 102 -20), (-372 102 -20) to
+  (-377 109), (-407 109 -29) to the Jungle Island's top (-407 119 -37). The throw is worked out from Minecraft's air
+  drag and gravity, peaking 2.5 blocks above the ledge so it clears its edge.
+- **Launch pads**: the slime pad by Charlie at the entrance (-274 81 -14) back to the Hub (arriving at the Forest's
+  pad); the warp in arrives just west of it. Decided: Galatea's pad (not on Hypixel's 2022 map) at the Jungle Island's
+  far west edge (-440 127 -106), and arrivals from Galatea (and its Foraging gate) 6 blocks east of it.
+- **NPCs**: Charlie from the map's hologram; Gustave, Ryan, Vanessa, the vikings and Master Tactician Funk from NEU;
+  Old Shaman Nyko in the hollow under NEU's spot (which is in rock); Melody at the ground nearest NEU's spot (off this
+  map's edge); ours beside their neighbours (Kelly with Gustave, the Campfire Adept with Ryan, Worker Xavier with Funk,
+  Juliette and Molbert by Galatea's pad).
+- **Fairy souls**: Hypixel's 11 of October 2022.

@@ -30,7 +30,7 @@ NEU_ZIP = ROOT / "tools/skyblock/cache/neu-repo.zip"
 WORLD = ROOT / "run/server/world"
 
 # Where NPCs face by default: the island's middle (the Hub: its village square).
-MIDDLE = {"hub": (-2, -85)}
+MIDDLE = {"hub": (-2, -85), "foraging_1": (-350, -20)}
 # Ours, or Hypixel's where neither the map nor NEU places them: [x, y, z, yaw] (feet; yaw None = face the middle), or
 # ["near", x, y, z]: the nearest spot a player can stand there (within 16 blocks).
 OVERRIDES = {
@@ -51,6 +51,18 @@ OVERRIDES = {
         "Christopher": ["near", -12, 70, -78],
         # ours (the Rift): on the Wizard Tower's top floor, facing its portal (the spawn spot rift_portal)
         "Wizard": [39.5, 131, 74.5, 180],
+    },
+    "foraging_1": {
+        # NEU's spots are in rock (Nyko: the hollow 9 blocks under it) and off this map's edge (Melody: the nearest ground)
+        "Old Shaman Nyko": [-371.5, 75, -65.5, None],
+        "Melody": ["near", -412, 109, 52],
+        # ours, beside their neighbours as in our build: Kelly with Gustave in the Spruce Woods, the Campfire Adept with
+        # Ryan, Worker Xavier with Master Tactician Funk on the Savanna, Juliette and Molbert by Galatea's pad
+        "Kelly": ["near", -381, 88, 54],
+        "Campfire Adept": ["near", -361, 102, -88],
+        "Worker Xavier": ["near", -444, 107, 21],
+        "Juliette": ["near", -436, 127, -102],
+        "Molbert": ["near", -436, 127, -109],
     },
 }
 

@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_park",
   "pos": [
-    156.5,
-    65.0,
-    -31.5
+    -447.5,
+    107.0,
+    24.5
   ],
-  "yaw": 0.0,
+  "yaw": -115.0,
   "sound": "minecraft:item.armor.equip_iron",
   "greetings": [
     "A good plan beats a big sword.",
