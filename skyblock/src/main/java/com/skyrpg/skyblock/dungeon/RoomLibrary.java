@@ -73,7 +73,10 @@ final class RoomLibrary {
 
     /** A random template of a category, or null if there's none. */
     static Identifier pick(String category, RandomSource random) {
-        List<Identifier> list = hypixel.containsKey(category) ? hypixel.get(category) : rooms.get(category);
+        // puzzles: ours and Hypixel's together (each room is a different puzzle); otherwise Hypixel's first
+        List<Identifier> list = category.equals("puzzle")
+                ? java.util.stream.Stream.concat(rooms.getOrDefault("puzzle", List.of()).stream(), hypixel.getOrDefault("puzzle", List.of()).stream()).toList()
+                : hypixel.containsKey(category) ? hypixel.get(category) : rooms.get(category);
         return list == null || list.isEmpty() ? null : list.get(random.nextInt(list.size()));
     }
 

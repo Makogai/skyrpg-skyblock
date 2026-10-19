@@ -50,6 +50,10 @@ Every run is a new map: a grid of rooms (some long, square or L-shaped) joined b
   - **Three Weirdos**: three people before three chests. Talk to each; exactly one of them tells the truth. Open the chest with the reward.
   - **Higher Or Lower**: ten blazes float with their health over their heads. Kill them in the order the sign says (lowest to highest, or highest to lowest).
   - **Tic Tac Toe**: right-click a white tile on the floor to play. The AI never loses, so a draw is the way to solve it; if it wins, you fail.
+  - **Ice Fill** (Hypixel's room): walk over every ice block once; each turns to packed ice under you. Step back onto packed ice and the ice starts over.
+  - **Teleport Maze** (Hypixel's room): the end portal frames are pads that send you to other pads; find the one that takes you out to the room's middle.
+  - **Quiz** (Hypixel's room): three questions about the game, each with three answers on stands; right-click the right one. One wrong answer fails it.
+  - **Higher or Lower** also comes in Hypixel's own blaze room.
 - **The Blood room**: opening it wakes **the Watcher**, who sends his undead in waves. Kill them all and he opens the way to the **boss**.
 - **The fairy** in the Fairy room revives everyone who's dead, once a run, when someone alive walks up to it.
 - **Dying** makes you a **ghost**: you float, unseen, and can't fight or open anything, until the boss room (everyone comes back for the boss). If the whole party is dead, the run fails.

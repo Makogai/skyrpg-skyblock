@@ -364,7 +364,9 @@ def install(args):
         kind = types.get(f["id"], f["shape"])
         if kind == "skip" or f["shape"] is None:
             continue
-        category = {"entrance": "special/entrance", "blood": "special/blood", "fairy": "special/fairy"}.get(kind, kind)
+        # "puzzle:<kind>": a puzzle room (a puzzle() marker in its middle); "view": written only to look at
+        puzzle = kind.split(":", 1)[1] if kind.startswith("puzzle:") else ""
+        category = "puzzle" if puzzle else {"entrance": "special/entrance", "blood": "special/blood", "fairy": "special/fairy"}.get(kind, kind)
         world, cells, turns = f["world"], f["cells"], f["turns"]
         x0, z0, x1, z1 = box_of(cells)
         w, d = x1 - x0 + 1, z1 - z0 + 1
@@ -425,7 +427,12 @@ def install(args):
         rng.shuffle(spots)
         mid = ((x0 + x1) // 2, (z0 + z1) // 2)
         centre = min(spots, key=lambda s: abs(s[0] - mid[0]) + abs(s[1] - mid[1])) if spots else mid
-        if kind == "entrance":
+        if puzzle:
+            mx, mz = (x0 + x1) // 2, (z0 + z1) // 2
+            marker(mx, FLOOR_Y + 1, mz, "puzzle", puzzle=puzzle)
+        elif kind == "view":
+            pass
+        elif kind == "entrance":
             marker(centre[0], FLOOR_Y + 1, centre[1], "spawn")
         elif kind == "blood":
             marker(centre[0], FLOOR_Y + 3, centre[1], "watcher")

@@ -50,6 +50,9 @@ final class Puzzles {
             case "weirdos" -> new Weirdos(run, state, center);
             case "blaze" -> new BlazePuzzle(run, state, center);
             case "tictactoe" -> new TicTacToe(run, state, center);
+            case "icefill" -> new IceFill(run, state, center);
+            case "teleportmaze" -> new TeleportMaze(run, state, center);
+            case "quiz" -> new Quiz(run, state, center);
             default -> null;
         };
     }
@@ -81,6 +84,26 @@ final class Puzzles {
         }
 
         void died(Entity entity, ServerPlayer killer) {
+        }
+
+        /** Every tick while it's unsolved (puzzles you walk through). */
+        void tick() {
+        }
+
+        /** Every block of one kind in the room (Hypixel's rooms keep their puzzle's pieces), from its basement up. */
+        List<BlockPos> find(Block block) {
+            List<BlockPos> out = new ArrayList<>();
+            for (BlockPos pos : BlockPos.betweenClosed(state.min.below(RoomLibrary.HYPIXEL_DROP), state.max.above(40))) {
+                if (run.level.getBlockState(pos).is(block)) {
+                    out.add(pos.immutable());
+                }
+            }
+            return out;
+        }
+
+        /** The players in this puzzle's room. */
+        List<ServerPlayer> here() {
+            return run.online().stream().filter(p -> run.roomAt(p.position()) == state).toList();
         }
 
         BlockPos at(int dx, int dy, int dz) {
@@ -119,6 +142,221 @@ final class Puzzles {
 
         void set(BlockPos pos, BlockState block) {
             run.level.setBlock(pos, block, Block.UPDATE_CLIENTS);
+        }
+    }
+
+    // ---------------------------------------------------------------- Ice Fill
+
+    /**
+     * <b>Ice Fill</b> (Hypixel's room): every ice block on its floor turns to packed ice as you step on it; cover them all.
+     * Stepping back onto packed ice you made starts the ice over.
+     */
+    static final class IceFill extends Puzzle {
+        private final List<BlockPos> ice = new ArrayList<>();
+        private final java.util.Set<BlockPos> packed = new java.util.HashSet<>();
+        private final Map<UUID, BlockPos> standing = new HashMap<>();
+
+        IceFill(Run run, Run.RoomState state, Vec3 center) {
+            super(run, state, center);
+        }
+
+        @Override
+        String name() {
+            return "Ice Fill";
+        }
+
+        @Override
+        void build() {
+            for (BlockPos pos : find(Blocks.ICE)) {
+                if (run.level.getBlockState(pos.above()).isAir()) {
+                    ice.add(pos);
+                }
+            }
+            if (ice.isEmpty()) {
+                solve(null);
+            }
+        }
+
+        @Override
+        void tick() {
+            for (ServerPlayer player : here()) {
+                BlockPos under = player.blockPosition().below();
+                BlockPos was = standing.put(player.getUUID(), under);
+                if (under.equals(was) || !ice.contains(under)) {
+                    continue;
+                }
+                if (packed.contains(under)) {
+                    for (BlockPos pos : packed) {
+                        set(pos, Blocks.ICE.defaultBlockState());
+                    }
+                    packed.clear();
+                    player.sendSystemMessage(Component.literal("You stepped on the packed ice again: the ice starts over.").withStyle(ChatFormatting.RED));
+                    Msg.playSound(player, SoundEvents.GLASS_BREAK, 1.0f, 0.8f);
+                    continue;
+                }
+                packed.add(under);
+                set(under, Blocks.PACKED_ICE.defaultBlockState());
+                Msg.playSound(player, SoundEvents.GLASS_STEP, 1.0f, 1.4f);
+                if (packed.size() >= ice.size()) {
+                    solve(player);
+                }
+            }
+        }
+    }
+
+    // ---------------------------------------------------------------- Teleport Maze
+
+    /**
+     * <b>Teleport Maze</b> (Hypixel's room): its end portal frames are pads, each sending you to another one; one of them
+     * leads out, to the room's middle, and solves it.
+     */
+    static final class TeleportMaze extends Puzzle {
+        private final Map<BlockPos, BlockPos> to = new HashMap<>();
+        private BlockPos exit;
+        private final Map<UUID, Long> lastJump = new HashMap<>();
+
+        TeleportMaze(Run run, Run.RoomState state, Vec3 center) {
+            super(run, state, center);
+        }
+
+        @Override
+        String name() {
+            return "Teleport Maze";
+        }
+
+        @Override
+        void build() {
+            List<BlockPos> pads = new ArrayList<>(find(Blocks.END_PORTAL_FRAME));
+            if (pads.size() < 2) {
+                solve(null);
+                return;
+            }
+            java.util.Collections.shuffle(pads, new java.util.Random(run.random.nextLong()));
+            exit = pads.getFirst();
+            for (int i = 0; i < pads.size(); i++) {
+                // each pad to a pad of the next one along, so every pad goes somewhere else
+                to.put(pads.get(i), pads.get((i + 1 + run.random.nextInt(pads.size() - 1)) % pads.size()));
+            }
+        }
+
+        @Override
+        void tick() {
+            long now = run.level.getGameTime();
+            for (ServerPlayer player : here()) {
+                BlockPos feet = player.blockPosition();
+                BlockPos pad = run.level.getBlockState(feet).is(Blocks.END_PORTAL_FRAME) ? feet
+                        : run.level.getBlockState(feet.below()).is(Blocks.END_PORTAL_FRAME) ? feet.below() : null;
+                if (pad == null || now - lastJump.getOrDefault(player.getUUID(), 0L) < 20) {
+                    continue;
+                }
+                lastJump.put(player.getUUID(), now);
+                Vec3 at = pad.equals(exit) ? center : Vec3.atBottomCenterOf(to.getOrDefault(pad, pad).above());
+                player.teleportTo(run.level, at.x, at.y, at.z, java.util.Set.of(), player.getYRot(), player.getXRot(), true);
+                Msg.playSound(player, SoundEvents.ENDERMAN_TELEPORT, 0.8f, 1.2f);
+                if (pad.equals(exit)) {
+                    solve(player);
+                }
+            }
+        }
+    }
+
+    // ---------------------------------------------------------------- Quiz
+
+    /**
+     * <b>Quiz</b> (Hypixel's room): three questions, each with three answers on stands around the room's middle;
+     * right-click the right one. A wrong answer fails it. Decided: our questions are about the game itself (Hypixel
+     * asks about SkyBlock's lore).
+     */
+    static final class Quiz extends Puzzle {
+        private static final String[][] QUESTIONS = {
+                {"How many Fairy Souls does Tia take for each exchange?", "5", "10", "3"},
+                {"Who is the boss of Floor I?", "Bonzo", "Scarf", "The Professor"},
+                {"How many Hot Potato Books can an item take?", "10", "5", "15"},
+                {"What does a Recombobulator 3000 do?", "Raises an item's rarity", "Adds a reforge", "Repairs an item"},
+                {"Who stands at the Catacombs' gate in the Dungeon Hub?", "Mort", "Ophelia", "Malik"},
+                {"Which mayor brings the Mythological Ritual?", "Diana", "Paul", "Aatrox"},
+                {"What does SkyMart sell its gear for?", "Copper", "Bits", "Gems"},
+                {"What opens a Wither door?", "A Wither Key", "A Blood Key", "A lever"},
+                {"How many Garden plots can you unlock?", "24", "25", "20"},
+                {"Who runs Hoppity's Hunt?", "Hoppity", "Jerry", "Oringo"},
+                {"Which slayer is the Revenant Horror?", "Zombie", "Spider", "Wolf"},
+                {"Who sells the Accessory Powers in the Hub?", "Maxwell", "Elizabeth", "Rosetta"},
+                {"What wakes up when the Blood room is opened?", "The Watcher", "Bonzo", "The fairy"},
+                {"How much SkyBlock XP is one SkyBlock Level?", "100", "1,000", "10"},
+                {"What do you need for the Garden?", "SkyBlock Level 5", "Farming 10", "A Garden Key"},
+                {"Who reforges items with his own reforges?", "The Blacksmith", "Rosetta", "Maxwell"},
+                {"What do star mobs have before their name?", "A star (✯)", "A skull", "A heart"},
+                {"How many puzzles can fail before it costs score?", "None: every one costs 14", "Two", "One"},
+        };
+        private final List<String[]> asked = new ArrayList<>();
+        private final List<Entity> stands = new ArrayList<>();
+        private int question;
+        private int right;
+
+        Quiz(Run run, Run.RoomState state, Vec3 center) {
+            super(run, state, center);
+        }
+
+        @Override
+        String name() {
+            return "Quiz";
+        }
+
+        @Override
+        void build() {
+            List<String[]> all = new ArrayList<>(List.of(QUESTIONS));
+            java.util.Collections.shuffle(all, new java.util.Random(run.random.nextLong()));
+            asked.addAll(all.subList(0, 3));
+            ask();
+        }
+
+        private void ask() {
+            stands.forEach(Entity::discard);
+            stands.clear();
+            String[] q = asked.get(question);
+            List<String> answers = new ArrayList<>(List.of(q[1], q[2], q[3]));
+            java.util.Collections.shuffle(answers, new java.util.Random(run.random.nextLong()));
+            right = answers.indexOf(q[1]);
+            run.broadcast(Component.literal("[STATUE] Oruo the Omniscient: ").withStyle(ChatFormatting.RED)
+                    .append(Component.literal("Question " + (question + 1) + " of 3: " + q[0]).withStyle(ChatFormatting.WHITE)));
+            String[] letters = {"ⓐ", "ⓑ", "ⓒ"};
+            for (int i = 0; i < 3; i++) {
+                Vec3 at = center.add(-4 + i * 4, 0, 4);
+                net.minecraft.world.entity.decoration.ArmorStand stand = EntityTypes.ARMOR_STAND.create(run.level, EntitySpawnReason.EVENT);
+                if (stand == null) {
+                    continue;
+                }
+                stand.snapTo(at.x, at.y, at.z, 180, 0);
+                stand.setCustomName(Component.literal(letters[i] + " " + answers.get(i)).withStyle(ChatFormatting.GOLD));
+                stand.setCustomNameVisible(true);
+                stand.setNoGravity(true);
+                stand.addTag(run.tag);
+                stand.addTag(Catacombs.TAG);
+                run.level.addFreshEntity(stand);
+                stands.add(stand);
+            }
+        }
+
+        @Override
+        boolean useEntity(ServerPlayer player, Entity entity) {
+            int index = stands.indexOf(entity);
+            if (index < 0 || solved || failed) {
+                return index >= 0;
+            }
+            if (index != right) {
+                stands.forEach(Entity::discard);
+                fail(player, "answered the Quiz wrong!");
+                return true;
+            }
+            question++;
+            if (question >= asked.size()) {
+                stands.forEach(Entity::discard);
+                solve(player);
+            } else {
+                Msg.playSound(player, SoundEvents.EXPERIENCE_ORB_PICKUP, 1.0f, 1.2f);
+                ask();
+            }
+            return true;
         }
     }
 

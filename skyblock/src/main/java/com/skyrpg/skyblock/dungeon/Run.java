@@ -594,6 +594,11 @@ final class Run {
 
     /** Every half second: rooms walked into, keys and secret items picked up, the Blood room's waves. */
     void tick(long now) {
+        for (RoomState state : rooms) {
+            if (state.puzzle != null && state.puzzle.built && !state.puzzle.solved && !state.puzzle.failed) {
+                state.puzzle.tick();
+            }
+        }
         // The fairy revives everyone who's dead when a living teammate reaches it (once a run).
         RoomState fairyRoom = state(Layout.Type.FAIRY);
         if (!fairyUsed && !ghosts.isEmpty() && fairyRoom != null && fairyRoom.entered) {

@@ -743,7 +743,10 @@ phase so the next session can pick up where this one stopped.
 - [x] **The Catacombs on Hypixel's rooms and arenas** (`tools/worlds/hypixel_dungeons.py`, the owners' "[Dungeons]"
       downloads): 53 of Hypixel's rooms (every shape, two Entrances, the Blood and Fairy rooms, two traps) with their
       basements and secret chests, and Bonzo's to Sadan's arenas; `RoomLibrary` prefers them, `BossFight` takes the
-      arena's middle and way in from it.
+      arena's middle and way in from it. Puzzles in Hypixel's own rooms (`Puzzles`): Ice Fill (its ice, stepped
+      over once), Teleport Maze (its end portal frames as paired pads, one way out), Quiz (three questions about the
+      game; decided, Hypixel's are about its lore), and Higher or Lower in Hypixel's blaze room; Water Board, Boulder,
+      Ice Path and Creeper Beams rooms not yet (left out of the pool).
 - [x] **Fairy Souls on every island to Hypixel's count** (`tools/skyblock/place_fairy_souls.py`): Gold Mine 12, Deep
       Caverns 21, Spider's Den 19, Farming Islands 20, Crimson Isle 29, Dwarven Mines 15 (244 of Hypixel's 289; the rest
       are on islands we don't have yet: Jerry's Workshop, Backwater Bayou, Lotus Atoll, the safari).
