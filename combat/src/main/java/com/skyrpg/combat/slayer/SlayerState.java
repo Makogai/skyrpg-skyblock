@@ -14,11 +14,11 @@ import net.minecraft.network.codec.StreamCodec;
  * them, so the client knows its slayer levels (for recipe requirements and the HUD).
  */
 public record SlayerState(Map<String, Double> xp, Optional<Quest> quest, Map<String, Integer> kills, Map<String, Integer> best,
-                          Map<String, Integer> tokens) {
-    public static final SlayerState EMPTY = new SlayerState(Map.of(), Optional.empty(), Map.of(), Map.of(), Map.of());
+                          Map<String, Integer> tokens, Map<String, Double> meter, Map<String, String> picks) {
+    public static final SlayerState EMPTY = new SlayerState(Map.of(), Optional.empty(), Map.of(), Map.of(), Map.of(), Map.of(), Map.of());
 
     public SlayerState(Map<String, Double> xp, Optional<Quest> quest) {
-        this(xp, quest, Map.of(), Map.of(), Map.of());
+        this(xp, quest, Map.of(), Map.of(), Map.of(), Map.of(), Map.of());
     }
 
     /** The quest on hand: kills so far towards the bar, and whether its boss is up. */
@@ -38,14 +38,18 @@ public record SlayerState(Map<String, Double> xp, Optional<Quest> quest, Map<Str
             Quest.CODEC.optionalFieldOf("quest").forGetter(SlayerState::quest),
             Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("kills", Map.of()).forGetter(SlayerState::kills),
             Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("best", Map.of()).forGetter(SlayerState::best),
-            Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("tokens", Map.of()).forGetter(SlayerState::tokens))
+            Codec.unboundedMap(Codec.STRING, Codec.INT).optionalFieldOf("tokens", Map.of()).forGetter(SlayerState::tokens),
+            Codec.unboundedMap(Codec.STRING, Codec.DOUBLE).optionalFieldOf("meter", Map.of()).forGetter(SlayerState::meter),
+            Codec.unboundedMap(Codec.STRING, Codec.STRING).optionalFieldOf("picks", Map.of()).forGetter(SlayerState::picks))
             .apply(instance, SlayerState::new));
     public static final StreamCodec<ByteBuf, SlayerState> STREAM_CODEC = StreamCodec.composite(
             ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.DOUBLE), SlayerState::xp,
             ByteBufCodecs.optional(Quest.STREAM_CODEC), SlayerState::quest,
             ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.VAR_INT), SlayerState::kills,
             ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.VAR_INT), SlayerState::best,
-            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.VAR_INT), SlayerState::tokens, SlayerState::new);
+            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.VAR_INT), SlayerState::tokens,
+            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.DOUBLE), SlayerState::meter,
+            ByteBufCodecs.map(HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.STRING_UTF8), SlayerState::picks, SlayerState::new);
 
     /** The key of a line's tier in {@link #kills} and {@link #best}. */
     public static String key(String line, int tier) {
@@ -75,7 +79,7 @@ public record SlayerState(Map<String, Double> xp, Optional<Quest> quest, Map<Str
         nextBest.merge(key(line, tier), Math.max(1, ticks), Math::min);
         Map<String, Integer> nextTokens = new HashMap<>(tokens);
         nextTokens.merge(line, tokenCount, Integer::sum);
-        return new SlayerState(xp, quest, Map.copyOf(nextKills), Map.copyOf(nextBest), Map.copyOf(nextTokens));
+        return new SlayerState(xp, quest, Map.copyOf(nextKills), Map.copyOf(nextBest), Map.copyOf(nextTokens), meter, picks);
     }
 
     public double xp(String line) {
@@ -83,12 +87,38 @@ public record SlayerState(Map<String, Double> xp, Optional<Quest> quest, Map<Str
     }
 
     public SlayerState withQuest(Quest quest) {
-        return new SlayerState(xp, Optional.ofNullable(quest), kills, best, tokens);
+        return new SlayerState(xp, Optional.ofNullable(quest), kills, best, tokens, meter, picks);
     }
 
     public SlayerState addXp(String line, double amount) {
         Map<String, Double> next = new HashMap<>(xp);
         next.merge(line, amount, Double::sum);
-        return new SlayerState(Map.copyOf(next), quest, kills, best, tokens);
+        return new SlayerState(Map.copyOf(next), quest, kills, best, tokens, meter, picks);
+    }
+
+    /** RNG Meter XP stored for a line (Hypixel's Slayer RNG Meter). */
+    public double meter(String line) {
+        return meter.getOrDefault(line, 0.0);
+    }
+
+    /** The drop (a SkyBlock id) selected on a line's RNG Meter, or "". */
+    public String pick(String line) {
+        return picks.getOrDefault(line, "");
+    }
+
+    public SlayerState withMeter(String line, double amount) {
+        Map<String, Double> next = new HashMap<>(meter);
+        next.put(line, Math.max(0, amount));
+        return new SlayerState(xp, quest, kills, best, tokens, Map.copyOf(next), picks);
+    }
+
+    public SlayerState withPick(String line, String item) {
+        Map<String, String> next = new HashMap<>(picks);
+        if (item.isEmpty()) {
+            next.remove(line);
+        } else {
+            next.put(line, item);
+        }
+        return new SlayerState(xp, quest, kills, best, tokens, meter, Map.copyOf(next));
     }
 }

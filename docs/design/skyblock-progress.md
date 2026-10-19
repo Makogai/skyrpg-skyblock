@@ -171,8 +171,30 @@ phase so the next session can pick up where this one stopped.
       are our calls (Life Drain 1.5x DPS, Pestilence 0.25x, Enrage x3, slam-dunk 2x DPS true, TNT 15-60% of health).
       Core gained `TrueDamage` (True Defense cuts it; ability hits skip invulnerability frames) and Vitality now scales
       all healing (stats mixin); `SlayerCurses` is the debuff stat source.
-      Not yet: runes, enchanted books and dyes in the drops (not in our item set), Maddox's Batphone, the Slayer RNG
-      meter, slayer minibosses (Revenant Sycophant etc.), Aatrox's slayer perks, Inferno Demonlord and Riftstalker.
+      Not yet: slayer minibosses (Revenant Sycophant etc.), the shard drops (Revenant, Paragon), Wisp pets and upgrade
+      stones, the Mosquito pet, the Duplex book (no such enchant yet).
+- [x] **Slayers, part 2**: the Slayer RNG Meter, the Maddox Batphone, runes, enchanted books and dyes in the drops.
+      **RNG Meter** (`RngMeter`, state in `SlayerState.meter/picks`, a card on the Slayers page): slayer XP from Tier III+
+      kills fills each slayer's meter; pick one rare drop (a drop under 10% you've unlocked with the level and a tier
+      you've beaten that drops it) and its chance runs 1x to 3x as the meter fills, guaranteed when it holds
+      `500 x 100 / best chance in percent` slayer XP (the best over the tiers you've slain). Hitting it pays that price
+      (or empties a short meter); other drops leave the meter be. Magic Find counts when the boosted chance is under 5%;
+      the quest panel shows the meter after each kill. Slots on the card: click to aim, click again to let go; the
+      tooltip has the price. Dyes (1 in 10M to 500k a tier) roll on their own, out of Magic Find's reach.
+      **Batphone** (`Batphone`, the Whassup? ability): three rings, then Maddox picks up and his slayer screen opens;
+      20 s busy cooldown with Hypixel's no-answer lines (third try in a row scolds), no reception in the Catacombs or
+      the Rift. Craftable at Wolf Slayer 3 (the recipe was there). **Drops**: 12 rune items and 6 dyes from NEU
+      (`tools/skyblock/import_slayer_extras.py`, which also merges the new drops into the five slayer files; run it
+      after `import_slayers.py`), the books Smite VI, Bane of Arthropods VI, Critical VI, Mana Steal I, Smarty Pants I
+      and Fire Aspect III (as `ENCHANTMENT_<NAME>_<LEVEL>` book products), at the wiki's chances and level needs. The
+      Vampire slayer's table got its levels and per-tier chances, the Quantum and The One bundles, Soultwist Rune I and
+      Sangria Dye. First kill of each boss tier gives SkyBlock XP (25/25/50/50/75, "Defeat Slayers").
+      Decided: the meter's XP is the slayer XP the kill gave (boosts included) and stays per slayer when you change the
+      pick; the price uses the tiers you've slain, as Hypixel's formula does. Decided: the Batphone opens Maddox's screen
+      by itself after the answer (Hypixel shows a clickable OPEN MENU). Decided: only the first level of each rune
+      drops (level I); runes and dyes are items for now, applying them waits for the cosmetics. Decided: the Catacombs
+      RNG meters and the Vampire's meter are left out (the dungeon chests roll from score tables, the Rift screens
+      are card menus of their own); no shards (the hunting shards aren't in the item set).
 - [x] **SkyBlock Level** (the survival SkyRPG Level, renamed everywhere): 100 XP a level, +5 Health a level, +1 Strength
       every 5 (`SkyBlockLevels`, a stat source in SkyRpgLevel), Hypixel's feature unlocks and prefix colours listed in the
       level-up panel; the Wardrobe opens at level 5. SkyBlock Leveling page (`SkyBlockLevelingPage`, `/sblevel` through

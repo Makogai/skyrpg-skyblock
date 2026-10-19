@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DYE_CELESTE",
+ "base": "minecraft:player_head",
+ "name": "Celeste Dye",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Combinable in Anvil",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0MTE2MDk5NzIyMywKICAicHJvZmlsZUlkIiA6ICJjZjc4YzFkZjE3ZTI0Y2Q5YTIxYmU4NWQ0NDk5ZWE4ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXR0c0FybW9yU3RhbmRzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgwMjg5MTgxMmE1MmVkNmVkNDM3NjcyYjNlNmIyMTQ0OTViOTY1MTgwMGFlZjg3NTQ0YWM1YmQxOTM3NTgyOTciLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

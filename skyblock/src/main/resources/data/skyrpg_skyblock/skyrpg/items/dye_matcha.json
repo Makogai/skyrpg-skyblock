@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DYE_MATCHA",
+ "base": "minecraft:player_head",
+ "name": "Matcha Dye",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Combinable in Anvil",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0MTE2MTIxOTgwMCwKICAicHJvZmlsZUlkIiA6ICI5MWYwNGZlOTBmMzY0M2I1OGYyMGUzMzc1Zjg2ZDM5ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdG9ybVN0b3JteSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84NjQwMmI3ZjcyOGZmMjk5ZGYxMjM4NzIxMjY0MTMxODYwZjIzOWNkODAxNWUzZjAyNjAwNTE5NzMwN2Q1M2VhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

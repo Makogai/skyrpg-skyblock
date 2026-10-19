@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DYE_FLAME",
+ "base": "minecraft:player_head",
+ "name": "Flame Dye",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Combinable in Anvil",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0MTE2MTA5ODA0MSwKICAicHJvZmlsZUlkIiA6ICJmZDIwMGYwMDE4OTI0NzgxODI5OWIzZjE5Yzc4Y2E3MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ0dXNnIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UwNzIyNTBjNjIzN2ZiYTRmN2FkNzk1YzU0YzAxYzAyNTQyZTJkNzk1MGQzOTIwMzI4MmUwY2M1MTA5NWRlZGUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

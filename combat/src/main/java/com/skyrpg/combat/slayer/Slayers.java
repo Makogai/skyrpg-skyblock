@@ -134,6 +134,7 @@ public final class Slayers {
         Actions.register("open_slayer", (player, params) ->
                 open(player, params.has("tab") && params.get("tab").getAsString().equals("spawners") ? 1 : 0));
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Start.TYPE, (payload, context) -> start(context.player(), payload.line(), payload.tier()));
+        ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.PickMeter.TYPE, (payload, context) -> pickMeter(context.player(), payload.line(), payload.item()));
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Cancel.TYPE, (payload, context) -> cancel(context.player()));
         ServerPlayNetworking.registerGlobalReceiver(SlayerPayloads.Buy.TYPE, (payload, context) -> {
             if (!com.skyrpg.core.Features.on(com.skyrpg.core.Features.SLAYER_SPAWNERS)) {
@@ -323,6 +324,26 @@ public final class Slayers {
         return null;
     }
 
+    /** Picks the drop an RNG Meter aims for ("" clears it): an open meter, a drop you've unlocked with the level and a rare one. */
+    private static void pickMeter(ServerPlayer player, String lineId, String item) {
+        SlayerLine line = lines.get(lineId);
+        SlayerState state = state(player);
+        if (line == null || !RngMeter.open(line, state)) {
+            return;
+        }
+        if (!item.isEmpty()) {
+            SlayerLine.Drop drop = line.drops().stream().filter(d -> d.item().equals(item)).findFirst().orElse(null);
+            if (drop == null || !RngMeter.pickable(drop) || line.level(state.xp(lineId)) < drop.level() || RngMeter.required(line, drop, state) <= 0) {
+                return;
+            }
+        }
+        player.setAttached(STATE, state.withPick(lineId, item));
+        ItemDefinition def = item.isEmpty() ? null : ItemRegistry.skyblock(item);
+        Notice.send(player, Notice.Kind.SLAYER, def == null ? Msg.text("RNG Meter: no drop selected.", ChatFormatting.GRAY)
+                : Msg.text("RNG Meter: aiming for ", ChatFormatting.GRAY).append(Component.literal(def.name()).withColor(def.rarity().color())));
+        Msg.playSound(player, SoundEvents.EXPERIENCE_ORB_PICKUP, 0.6f, 1.4f);
+    }
+
     private static void cancel(ServerPlayer player) {
         SlayerState.Quest quest = quest(player);
         if (quest == null) {
@@ -387,6 +408,7 @@ public final class Slayers {
         MutableComponent drops = Msg.text("Rewards: ", ChatFormatting.GRAY);
         boolean first = true;
         int tokens = tier.tokensMax() <= 0 ? 0 : tier.tokensMin() + random.nextInt(Math.max(1, tier.tokensMax() - tier.tokensMin() + 1));
+        firstKill(player, line, tierNumber);
         player.setAttached(STATE, state(player).withKill(line.id(), tierNumber, ticks, line.token() != Items.AIR ? tokens : 0));
         if (tokens > 0 && line.token() != Items.AIR) {
             give(player, new ItemStack(line.token(), tokens));
@@ -420,15 +442,29 @@ public final class Slayers {
         int level = line.level(xpAfter);
         Notice.Panel panel = Notice.of(Notice.Kind.SLAYER).icon(Notice.TROPHY).tag("SLAYER QUEST COMPLETE").color(0xFFAA00).panel();
         int tokens = 0;
+        // The RNG Meter: the picked drop is likelier as it fills (1x to 3x, never past it), guaranteed when it's full.
+        SlayerState before = state(player);
+        SlayerLine.Drop target = RngMeter.picked(line, before, level);
+        double stored = before.meter(line.id());
+        double price = target == null ? 0 : RngMeter.required(line, target, before);
+        boolean targetHit = false;
+        boolean guaranteed = false;
         for (SlayerLine.Drop drop : line.drops()) {
             double[] at = drop.tiers().get(tierNumber);
             ItemDefinition def = ItemRegistry.skyblock(drop.item());
             if (at == null || def == null || level < drop.level()) {
                 continue;
             }
-            double chance = at[2] >= 1 ? 1 : at[2] < 0.05 ? at[2] * find : at[2];
+            boolean aimed = target != null && drop.item().equals(target.item());
+            double base = aimed ? RngMeter.boosted(at[2], stored, price) : at[2];
+            // Dyes roll on their own, out of Magic Find's reach.
+            double chance = base >= 1 ? 1 : base < 0.05 && !drop.item().startsWith("DYE_") ? base * find : base;
             if (random.nextDouble() >= chance) {
                 continue;
+            }
+            if (aimed) {
+                targetHit = true;
+                guaranteed |= stored >= price;
             }
             int amount = (int) at[0] + (at[1] > at[0] ? random.nextInt((int) (at[1] - at[0]) + 1) : 0);
             if (at[2] >= 1) {
@@ -471,12 +507,36 @@ public final class Slayers {
         panel.line(Msg.text("+" + Msg.number(Math.round(gained)) + " " + line.name() + " Slayer XP", ChatFormatting.LIGHT_PURPLE)
                 .append(Msg.text(next < 0 ? "  (max level)" : "  (" + Msg.number(Math.round(xpAfter)) + " / " + Msg.number(next) + " to level " + (level + 1) + ")",
                         ChatFormatting.DARK_GRAY)));
+        firstKill(player, line, tierNumber);
+        // Hit the target and the meter pays its price (all of it if it was short); a Tier III or higher kill fills it.
+        double meter = targetHit ? (stored >= price ? stored - price : 0) : stored;
+        if (tierNumber >= RngMeter.MIN_TIER) {
+            meter += gained;
+        }
+        if (meter != stored) {
+            player.setAttached(STATE, state(player).withMeter(line.id(), meter));
+        }
+        if (guaranteed) {
+            panel.line(Msg.text("RNG Meter: guaranteed drop!", ChatFormatting.LIGHT_PURPLE));
+        } else if (target != null && price > 0) {
+            panel.line(Msg.text("RNG Meter: " + Math.round(Math.min(100, meter / price * 100)) + "% to " + ItemRegistry.skyblock(target.item()).name(),
+                    ChatFormatting.LIGHT_PURPLE));
+        }
         player.setAttached(STATE, state(player).withKill(line.id(), tierNumber, ticks, tokens));
         panel.send(player, Msg.text(line.name() + " " + Msg.roman(tierNumber) + " slain!", ChatFormatting.GOLD));
         Msg.playSound(player, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 0.8f, 1.0f);
         addXp(player, line, gained, true);
         SkillLevels.giveXp(player, SkillLevels.COMBAT, combatXp);
         sendStatus(player);
+    }
+
+    /** SkyBlock XP for each tier's first kill of a boss (Hypixel's "Defeat Slayers" task), once per boss and tier. */
+    private static final int[] FIRST_KILL_SBXP = {25, 25, 50, 50, 75};
+
+    private static void firstKill(ServerPlayer player, SlayerLine line, int tierNumber) {
+        if (state(player).kills(line.id(), tierNumber) == 0 && tierNumber >= 1) {
+            SkyBlockXp.give(player, FIRST_KILL_SBXP[Math.min(tierNumber, FIRST_KILL_SBXP.length) - 1], "Defeat Slayers");
+        }
     }
 
     /** Hypixel's colour for an odds label. */

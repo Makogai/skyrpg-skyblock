@@ -1,0 +1,15 @@
+{
+ "skyblock_id": "DYE_BRICK_RED",
+ "base": "minecraft:player_head",
+ "name": "Brick Red Dye",
+ "rarity": "legendary",
+ "category": "COSMETIC",
+ "type": "Cosmetic",
+ "description": "§7Combinable in Anvil",
+ "skin": {
+  "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0MTE2MDk0Njc4NSwKICAicHJvZmlsZUlkIiA6ICJlYTA4ZjhlZTdiOTg0YmFlYWM3N2JhYzk3ZWVkYzE4NSIsCiAgInByb2ZpbGVOYW1lIiA6ICJXYXlkZXJUTSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jZTExMzE5OGE1NTg5NDZhZTM2ZTg4MGRiOWM1MTg1NzIyMWIyY2JlYzA5ZjRmZjUxOTJlMTM4NWU4ZjhlYzJhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+ },
+ "hypixel": {
+  "npc_sell_price": 1
+ }
+}

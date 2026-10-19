@@ -3,7 +3,7 @@ title: Slayers
 category: skyblock
 order: 12
 icon: minecraft:rotten_flesh
-summary: Maddox's slayer quests, Hypixel's five bosses, their drops and odds, slayer levels and the gear they unlock.
+summary: Maddox's slayer quests, Hypixel's five bosses, their drops and odds, the RNG Meter, the Batphone, slayer levels and the gear they unlock.
 ---
 Slayers are SkyBlock's boss quests. **Maddox the Slayer** stands in the Hub. Pay him for a quest, earn Combat XP from the right mobs, and the boss rises next to you. Beat it for slayer XP, Combat XP and its drops. Slayer levels give stats and SkyBlock XP, and unlock the crafting recipes for slayer gear. Everything here (bosses, costs, health, drops, odds and levels) comes from Hypixel SkyBlock.
 
@@ -94,6 +94,10 @@ Each boss has its own slayer level, 1 to 9. A level gives a stat for good and Sk
 | Revenant Viscera | 7 | Occasional | | | | | 1-2 (13.77%) |
 | Shredded Sinew | 7 | Pray RNGesus | | | | | 1 (0.06%) |
 | Warden Heart | 7 | RNGesus Incarnate | | | | | 1 (0.01%) |
+| Pestilence Rune I | 2 | Rare |  | 1 (0.67%) | 1 (2.6%) | 1 (6.3%) | 1 (5.4%) |
+| Enchanted Book (Smite VI) | 4 | Extraordinary |  |  | 1 (0.4%) | 1 (0.4%) | 1 (0.34%) |
+| Snake Rune I | 6 | Pray RNGesus |  |  |  | 1 (0.15%) | 1 (0.13%) |
+| Matcha Dye |  | RNGesus Incarnate | 1 (0.00001%) | 1 (0.00004%) | 1 (0.0001%) | 1 (0.0002%) | 1 (0.0004%) |
 
 Each level gives **Health**: +2 at levels 1 to 3, +3 at 4 and 5, +4 at 6 and 7, +5 at 8 and +6 at 9. Level 1 unlocks the Wand of Healing, 2 the Zombie Ring and Revenant Viscera, 3 the Revenant Falchion, Wand of Mending and Crystallized Heart, 4 the Revenant Leggings and Boots, 5 the Revenant Chestplate, Devour Ring and Revenant Minion, 6 the Reaper Falchion and Wand of Restoration, 7 the Reaper Scythe, Reaper Mask and Zombie Artifact, and 8 the Axe of the Shredded, Reaper Orb and Warden Helmet.
 
@@ -121,6 +125,10 @@ Each level gives **Health**: +2 at levels 1 to 3, +3 at 4 and 5, +4 at 6 and 7, 
 | Shriveled Wasp | 7 | Pray RNGesus | | | | | 1 (0.1%) |
 | Ensnared Snail | 7 | Pray RNGesus | | | | | 1 (0.06%) |
 | Primordial Eye | 7 | RNGesus Incarnate | | | | | 1 (0.02%) |
+| Bite Rune I |  | Rare |  | 1 (0.69%) | 1 (2.7%) | 1 (6.5%) | 1 (5.5%) |
+| Enchanted Book (Bane of Arthropods VI) | 4 | Extraordinary |  |  | 1 (0.21%) | 1 (0.42%) | 1 (0.35%) |
+| Darkness Within Rune I |  | Extraordinary |  |  |  | 1 (0.39%) | 1 (0.66%) |
+| Brick Red Dye |  | RNGesus Incarnate | 1 (0.00001%) | 1 (0.00004%) | 1 (0.0001%) | 1 (0.0002%) | 1 (0.0004%) |
 
 Each level gives **Crit Damage**: +1% at levels 1 to 4, +2% at 5 to 7 and +3% at 8 and 9. The recipes go from the Spider Ring (level 1) and Recluse Fang (2) through the Tarantula armour and Tarantula Fang (4), the Spider Shortbow (5) and Scorpion Foil (6) to the Mosquito Shortbow and Primordial armour (7) and The Primordial (8).
 
@@ -141,6 +149,10 @@ Each level gives **Crit Damage**: +1% at levels 1 to 4, +2% at 5 to 7 and +3% at
 | Red Claw Egg | 5 | Pray RNGesus | | | 1 (0.04%) | 1 (0.12%) |
 | Grizzly Salmon | 7 | Pray RNGesus | | | | 1 (0.06%) |
 | Overflux Capacitor | 7 | Pray RNGesus | | | | 1 (0.04%) |
+| Spirit Rune I | 2 | Rare |  | 1 (0.68%) | 1 (2.7%) | 1 (6.4%) |
+| Enchanted Book (Critical VI) | 4 | Extraordinary |  |  | 1 (0.41%) | 1 (0.81%) |
+| Couture Rune I | 6 | Pray RNGesus |  |  |  | 1 (0.24%) |
+| Celeste Dye |  | RNGesus Incarnate | 1 (0.00001%) | 1 (0.00004%) | 1 (0.0001%) | 1 (0.0002%) |
 
 Sven's levels alternate **Speed** (+1 at levels 1, 3 and 8), **Health** (+2 at 2 and 4, +3 at 6, +5 at 9) and **Crit Damage** (+1% at 5, +2% at 7). The recipes include the Red Claw Talisman (1), Shaman Sword (3), Mastiff armour (4), Red Claw Ring and Weird Tuba (5), the Pooch Sword and Armor of the Pack (6), and the Overflux Power Orb (7).
 
@@ -167,6 +179,12 @@ Sven's levels alternate **Speed** (+1 at levels 1, 3 and 8), **Health** (+2 at 2
 | Exceedingly Rare Ender Artifact Upgrade | 6 | RNGesus Incarnate | | | | 1 (0.03%) |
 | Etherwarp Merger | 7 | Pray RNGesus | | | | 1 (0.42%) |
 | Judgement Core | 7 | Pray RNGesus | | | | 1 (0.06%) |
+| Enchanted Book (Mana Steal I) | 2 | Rare |  |  | 1 (4.5%) | 1 (4.2%) |
+| Endersnake Rune I |  | Rare |  |  | 1 (2.4%) | 1 (5.3%) |
+| Enchanted Book (Smarty Pants I) | 5 | Extraordinary |  |  |  | 1 (1.8%) |
+| End Rune I | 5 | Extraordinary |  |  |  | 1 (0.66%) |
+| Enchant Rune I | 7 | Pray RNGesus |  |  |  | 1 (0.05%) |
+| Byzantium Dye |  | RNGesus Incarnate | 1 (0.00001%) | 1 (0.00004%) | 1 (0.0001%) | 1 (0.0002%) |
 
 Voidgloom's levels alternate **Health** (+1, +2, +3, +4, +5 at levels 1, 3, 5, 7 and 9) and **Intelligence** (+2 at 2 and 4, +5 at 6, +4 at 8). The recipes include the Voidwalker Katana (1), Null Ovoid and the Soulflow items (2), the Voidedge Katana and Final Destination armour (3), the Vorpal Katana and Juju Shortbow (5), the Aspect of the Void, Atomsplit Katana and Sinseeker Scythe (6), and the Terminator (7).
 
@@ -197,6 +215,10 @@ The Blaze Slayer. Its quest fills from the [Crimson Isle](crimson-isle)'s blazes
 | High Class Archfiend Dice | 7 | Pray RNGesus |  |  |  | 1 (0.25%) |
 | Wilson's Engineering Plans | 7 | Pray RNGesus |  |  |  | 1 (0.09%) |
 | Subzero Inverter | 7 | Pray RNGesus |  |  |  | 1 (0.09%) |
+| Lavatears Rune I | 1 | Rare |  |  | 1 (1.1%) | 1 (2.3%) |
+| Enchanted Book (Fire Aspect III) | 5 | Extraordinary |  |  |  | 1 (1.3%) |
+| Fiery Burst Rune I | 5 | Pray RNGesus |  |  |  | 1 (0.21%) |
+| Flame Dye |  | RNGesus Incarnate | 1 (0.00001%) | 1 (0.00004%) | 1 (0.0001%) | 1 (0.0002%) |
 
 Blaze's levels alternate **Health** (+3, +4, +5, +6, +7 at levels 1, 3, 5, 7 and 9), **Strength** (+1 at 2, +2 at 6) and **True Defense** (+1 at 4, +2 at 8). The recipes include the Firedust and Twilight Daggers (2), the Burststopper Talisman and the Inferno Minion (3), the Kindlebane and Mawdredge Daggers and the Demonslayer Gauntlet (4), the Destruction Cloak (5), the Pyrochaos and Deathripper Daggers (6), and the Burststopper Artifact and Annihilation Cloak (7).
 
@@ -253,8 +275,38 @@ A cave spider rides it. Hits on the rider go to the Broodfather.
 - **Fire Pillars** (II): below 66% health a pillar rises next to you every 20 seconds. Hit it 8 times within 7 seconds, or it blows up for more than your whole health.
 - **Apocalypse** (III): below 33% health, fire pits open around it every 7 seconds (one under you): smoke first, then fire. Standing in one burns 950 True Damage a second (2,865 at IV).
 
+## The Slayer RNG Meter
+
+Luck insurance for the rare drops. Every slayer has its own **RNG Meter**, on its page under the Slayers page (click a slayer, the pink card at the top). It opens once you've slain a **Tier III** or higher boss of that slayer.
+
+- Each Tier III or higher kill adds its slayer XP to the meter.
+- Click one of the drops on the card to **aim** the meter at it (click it again to let go). Only the rare ones can be aimed at (under 10%), once your slayer level has unlocked them and you've slain a tier that drops them.
+- As the meter fills, your aimed drop gets likelier: its chance goes from 1x up to 3x. Once the meter holds the drop's price, **the drop is guaranteed** on the next kill.
+- Getting the drop takes its price out of the meter (all of it, if the meter was short). Other drops leave the meter alone, and so does changing which drop you aim at.
+- Magic Find still counts for a boosted chance under 5%. A full meter's drop is always yours.
+
+The price in slayer XP is `500 x 100 / the drop's best chance (in percent)`, using the best of the tiers you've slain. A drop with a 0.5% chance costs 100,000 slayer XP; a 0.1% one costs 500,000. After each kill the quest panel shows how full the meter is.
+
+The Catacombs RNG meters and the Vampire slayer's aren't here yet.
+
+## Maddox's Batphone
+
+Reach Wolf Slayer 3 and you can craft the **Maddox Batphone** (Enchanted Cobblestone around an Enchanted Redstone and an Enchanted Iron). Right-click it, **Whassup?**, to call Maddox from anywhere:
+
+- The phone rings three times, then he picks up and his slayer screen opens.
+- After a call he's busy for 20 seconds. Ring him too soon and nobody answers; try three times in a row and he shouts.
+- There's no reception in the Catacombs or the Rift.
+
+## Runes, books and dyes
+
+Higher tiers also drop **runes** (level I), **enchanted books** and one **dye** each. They're in the drop tables above: Pestilence and Snake Runes with Smite VI and the Matcha Dye from the Revenant Horror, the Bite and Darkness Within Runes with Bane of Arthropods VI and the Brick Red Dye from the Tarantula Broodfather, the Spirit and Couture Runes with Critical VI and the Celeste Dye from Sven, the Endersnake, End and Enchant Runes with Mana Steal I, Smarty Pants I and the Byzantium Dye from the Voidgloom Seraph, and the Lavatears and Fiery Burst Runes with Fire Aspect III and the Flame Dye from the Inferno Demonlord. Dyes are 1 in 10 million on Tier I and 1 in 500,000 at the top tier, and Magic Find doesn't help. Runes and dyes are cosmetics: you can hold and trade them; applying them comes later.
+
 > [!NOTE]
-> Not here yet: the runes, enchanted books and dyes these bosses drop (they arrive with enchanting).
+> Not here yet: the slayer shards, minibosses, and the Wisp and Mosquito pets.
+
+## First kills
+
+The first time you slay each tier of a boss, you get SkyBlock XP for the **Defeat Slayers** task: 25 for tiers I and II, 50 for III and IV, 75 for V (see [SkyBlock Leveling](skyblock-leveling)).
 
 ## See also
 
