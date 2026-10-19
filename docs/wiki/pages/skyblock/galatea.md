@@ -9,23 +9,27 @@ summary: Moonglade Marsh, Galatea's first island - Fig and Mangrove trees with S
 
 ## Getting there
 
-You need **Foraging XII**. The launch pad on **The Park's Jungle Island**, just east of Molbert and Juliette's campfire, takes you to **Tangleburg**, the island's town. A pad in Tangleburg takes you back. Once you've been, `/warp galatea` works too.
+You need **Foraging XII**. The stone gate on **The Park's Jungle Island** ("Travel to: Moonglade Marsh"), by Molbert and Juliette, takes you to **Tangleburg's Path**, just outside the town, where **Hina** waits. The ruined gate east of it takes you back. `/warp galatea` and `/warp murkwater` (the Loch) work once you've been.
+
+The island is **Hypixel's own Moonglade Marsh**.
 
 ## The island
 
 | Area | What's there |
 | --- | --- |
-| Tangleburg | the town: Hina, the Hunting Lodge, the Fusion House, the Bank, shops |
-| Evergreen Plateau | high ground covered in fig groves; Chillblades |
-| North and West Reaches | woods, figs and critters |
-| Forest Temple | a ruined temple |
-| Dragon's Lair | the Jade Dragon's ledge |
-| Murkwater Loch | the lake, its mangroves, the long pier and Agatha's pavilion |
-| Murkwater Shallows | a sunken ruin under the water; Nemo's dock |
-| Murkwater Outpost | huts on stilts; Rosemary |
-| South Reaches and South Wetlands | channels, mud and mangroves; Bogged, and Phanpyres at night |
-| Squid Cave | a flooded cave full of Lumisquids |
-| SwampCut Inc. | the logging camp; Amaury sells axes |
+| Tangleburg | the town: the Fusion House (Kysha), the Bank (Banker Bonsai), the Library (Loras), SwampCut Inc. (Amaury), David Hunterborough, Oden, Swoop, Talia |
+| Tangleburg's Path | where you arrive, by Hina; the gate to The Park |
+| Evergreen Plateau | the south-east plateau with its fig trees; Auryon |
+| North Reaches | fig woods in the north; Alan, Kiara, Teddy, Vaeri |
+| North Wetlands | mangroves, and Coral's **Red House** |
+| West Reaches | fig woods in the west; the **Dragon's Lair** on its north-west cliffs (the Jade Dragon) |
+| Moonglade's Edge | the west edge; Dax and his Huntraps |
+| South Reaches | fig woods in the south and the **Moonglade Beacon**; Boris, Brian, Sawyer |
+| South Wetlands and the Tomb Floodway | mangroves and channels; Martin |
+| Murkwater Loch | the lake in the middle, its mangroves; Agatha and Jaeger |
+| Murkwater Shallows | the water by Nemo |
+| Murkwater Outpost | the tower over the Loch's west; Rosemary |
+| Murkwater Depths, Ancient Ruins, Squid Cave | under the Loch: Tilus by the Ruins (the way to the Forest Temple), the Lumisquids' cave |
 
 ## Trees
 

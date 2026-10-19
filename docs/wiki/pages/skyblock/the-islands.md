@@ -11,7 +11,7 @@ Past the [Hub](the-hub) lie Hypixel SkyBlock's other public islands, each one fl
 | --- | --- | --- | --- | --- |
 | [The Barn](#the-barn) | the Farm's launch pad | Farming I | `/warp barn` | Wheat, Carrots, Potatoes, Pumpkins, Melons; Cows, Pigs, Chickens |
 | [Mushroom Desert](#mushroom-desert) | over the bridge from the Barn | Farming V | `/warp desert` | Cactus, Sugar Cane, Cocoa, Mushrooms, Sand; Rabbits, Sheep, Mooshrooms |
-| [The Park](#the-park) | the Forest's launch pad | Foraging I | `/warp park` | Birch, Spruce, Dark Oak, Acacia and Jungle wood; the Howling Cave |
+| [The Park](#the-park) | the Forest's launch pad | Foraging I | `/warp park` | Birch, Spruce, Dark Oak, Acacia and Jungle islands; the Howling Cave |
 | [Gold Mine](#gold-mine) | the Coal Mine's gold gate | Mining I | `/warp gold` | Stone, Coal, Iron and Gold Ore |
 | [Deep Caverns](#deep-caverns) | the lift shaft at the bottom of the Gold Mine | Mining V | `/warp deep` | Six layers of ores and their mobs |
 | [Spider's Den](#spider-s-den) | the Graveyard's launch pad | Combat I | `/warp spider` | Spiders, Gravel; the Spider Mound and Arachne's Sanctuary |
@@ -74,14 +74,14 @@ Over the bridge from the Barn. Sand and red sand dunes with **Cactus** fields, *
 
 ## The Park
 
-The foraging island, through the launch pad in the Hub's Forest (Foraging I). It's **Hypixel's own Park map**: woods of different trees, climbing to the west on **jump pads** (step on the slime and you're thrown up onto the next ledge). All the wood is choppable and grows back.
+The foraging island, through the launch pad in the Hub's Forest (Foraging I). It's **Hypixel's own Park, as rebuilt in 2025**: a ring of floating islands, one for each kind of wood, joined by bridges. All the wood is choppable and grows back.
 
-- **Birch Park** (where you arrive, in the east): birches, **Charlie** by the launch pad back to the Hub, and **Vanessa**.
-- **Spruce Woods**, to the south: tall spruces and the vikings, **Kelly**, **Gustave** and the **Melancholic Viking**.
-- **Dark Thicket**, in the middle: dense dark oak, and **Ryan** and the **Campfire Adept** up on its heights.
-- **The Howling Cave**, under the Dark Thicket: a dark cavern where **Pack Spirits**, **Howling Spirits** and the **Soul of the Alpha** roam. **Old Shaman Nyko** sells his wares in his hollow nearby.
-- **Savanna Woodland**, up the jump pads to the west: acacia trees, **Melody**, **Master Tactician Funk** (a shop) and **Worker Xavier**.
-- **Jungle Island**, at the top: towering jungle trees, with **Molbert** and **Juliette**. At its far west edge, a launch pad goes to [Galatea](galatea) (Foraging XII).
+- **Birch Park** (where you arrive, in the east): birches, **Charlie** by the birch archway back to the Hub, and **Vanessa** by the pond.
+- **Dark Thicket**, to the north: dense dark oak, and **Ryan** and the **Campfire Adept** up on its heights.
+- **The Howling Cave**, under the Dark Thicket: a dark cavern where **Pack Spirits**, **Howling Spirits** and the **Soul of the Alpha** roam. **Old Shaman Nyko** sells his wares in it.
+- **Spruce Woods**, the snowy island in the middle: tall spruces, **Gustave** and **Kelly**, and the **Viking Longhouse** on the islet to its south with the **Joyful** and **Melancholic Vikings**.
+- **Savanna Woodland**, to the west: acacia trees, **Master Tactician Funk** (a shop) and **Worker Xavier**, with **Melody's Plateau** just south.
+- **Jungle Island**, in the north-west, the highest: towering jungle trees, with **Molbert** and **Juliette**. Its stone gate ("Travel to: Moonglade Marsh") goes to [Galatea](galatea) (Foraging XII).
 
 ## Gold Mine
 
@@ -168,4 +168,4 @@ What's left of your weight turns into the dragon's **Fragments** (one per 22 wei
 
 ## Fairy Souls
 
-Every island hides as many [Fairy Souls](the-hub#fairy-souls) as on Hypixel: 20 on the Farming Islands, 11 in The Park, 12 in the Gold Mine, 21 in the Deep Caverns, 19 in the Spider's Den and 12 in The End. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.
+Every island hides as many [Fairy Souls](the-hub#fairy-souls) as on Hypixel: 20 on the Farming Islands, 12 in The Park, 12 in the Gold Mine, 21 in the Deep Caverns, 19 in the Spider's Den and 12 in The End. Some sit in plain sight; others are on roofs, in tree tops, in caves or behind cobwebs. Nothing needs to be broken to reach them. **Tia the Fairy** in the Hub exchanges them all.

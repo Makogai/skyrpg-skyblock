@@ -10,12 +10,12 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | Island | Our dimension | Map | Status |
 | --- | --- | --- | --- |
 | The Hub | `skyrpg_hub:hub` | The Hub.zip | in use |
-| The Park | `skyrpg_skyblock:the_park` | The Park.zip | in use |
+| The Park (2022) | `skyrpg_skyblock:the_park` | The Park.zip | replaced by the 2025 capture |
 | The End | `skyrpg_skyblock:the_end` | The End.zip | in use |
 | The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | in use |
-| Galatea | `skyrpg_skyblock:galatea` | a WorldTools capture | waiting for a clean capture |
+| Galatea (Moonglade Marsh) | `skyrpg_skyblock:galatea` | a WorldTools capture (`galatea`) | in use |
 | The Garden's Barn plot | the `garden/barn` structure | a WorldTools capture of a fresh Garden | in use (`hypixel_garden.py`) |
-| The Park (2025 rework) | `skyrpg_skyblock:the_park` | a WorldTools capture | waiting for a clean capture |
+| The Park (2025 rework) | `skyrpg_skyblock:the_park` | a WorldTools capture (`park_unopened`) | in use |
 | The Catacombs' rooms and boss arenas | the dungeon templates | [Dungeons] The Entrance, Floor I-VI | in use (`hypixel_dungeons.py`) |
 
 The 2022 downloads miss islands Hypixel added since (Galatea, the Garden) and islands it rebuilt: the current Park is a
@@ -96,23 +96,24 @@ on the Bank's roof on this map); our Rift Wizard on the Wizard Tower's top floor
 The markers are found by looking through the world's `dimensions/` folder when the server starts (the levels don't
 exist yet then).
 
-## The Park on Hypixel's map
+## The Park on Hypixel's map (the 2025 rework)
 
-- **Zones** from where each wood grows on the map: Birch Park (east, the entrance), Spruce Woods (south), Dark Thicket
-  (the middle, above y 73), the Howling Cave (under it: its own mob nameplates on the map put the wolves at x -390 to
-  -345, y 56-72, z -52 to -4), Savanna Woodland (west, y 108-116) and Jungle Island (north-west, the top, y 119-129).
-- **Jump pads** (a new kind of launch pad, `"jump": [x, y, z]`): Hypixel's Park climbs west on slime pads, each
-  throwing you onto a slime ledge above: (-328 81 -16) to (-334 88), (-354 88 -13) to (-354 102 -20), (-372 102 -20) to
-  (-377 109), (-407 109 -29) to the Jungle Island's top (-407 119 -37). The throw is worked out from Minecraft's air
-  drag and gravity, peaking 2.5 blocks above the ledge so it clears its edge.
-- **Launch pads**: the slime pad by Charlie at the entrance (-274 81 -14) back to the Hub (arriving at the Forest's
-  pad); the warp in arrives just west of it. Decided: Galatea's pad (not on Hypixel's 2022 map) at the Jungle Island's
-  far west edge (-440 127 -106), and arrivals from Galatea (and its Foraging gate) 6 blocks east of it.
-- **NPCs**: Charlie from the map's hologram; Gustave, Ryan, Vanessa, the vikings and Master Tactician Funk from NEU;
-  Old Shaman Nyko in the hollow under NEU's spot (which is in rock); Melody at the ground nearest NEU's spot (off this
-  map's edge); ours beside their neighbours (Kelly with Gustave, the Campfire Adept with Ryan, Worker Xavier with Funk,
-  Juliette and Molbert by Galatea's pad).
-- **Fairy souls**: Hypixel's 11 of October 2022.
+The owners' clean capture (`park_unopened`, October 2026) has Hypixel's current Park: separate floating islands, and at
+its edges a slice of the Hub (east of x -260) and of Galatea (west of x -560), as Hypixel draws them from the Park.
+
+- **Zones** from the wood each island grows (`park_*.json`): Birch Park (east, by the Hub: x -342..-262), the Dark
+  Thicket (dark oak, north: its top from y 93) with the Howling Cave under it (its wolves), the Spruce Woods (the snowy
+  island in the middle) and the Viking Longhouse islet south of it, the Savanna Woodland (acacia, west) and Melody's
+  Plateau south of it, and the Jungle Island (north-west, the top). Where boxes overlap, the smallest wins.
+- **Ways in and out**: Hypixel's birch archway at (-265 79 -18) is the gate to the Hub (`park_west_1`); the warp in
+  (`/warp park`, the Hub's Forest pad) arrives 6 blocks inside it (-271.5 79 -17.5). The Jungle Island's stone gate
+  ("Travel to: Moonglade Marsh", barriers at x -491) leads to Galatea (Foraging 12, `park_east_1`). The 2022 map's
+  slime jump pads are gone (the islands have bridges now).
+- **NPCs** from NEU's current spots (Charlie, Vanessa, Ryan, Old Shaman Nyko, Master Tactician Funk, Melody, the
+  vikings) and the map's own hologram (Molbert); Gustave at the nearest ground to NEU's (off the Spruce Woods' edge here);
+  ours beside their neighbours (Kelly with Gustave, the Campfire Adept with Ryan, Worker Xavier with Funk, Juliette by
+  Molbert).
+- **Fairy souls**: NEU's current 12.
 
 ## The End on Hypixel's map
 
@@ -156,12 +157,27 @@ of the door, Jacob and Anita down the path (decided: Hypixel has them in the Hub
 nearest ground to their spot, as the plot isn't flat. The other 24 plots are still ours (fenced grass, wild growth when
 unlocked): the first capture only reached the plots beside the Barn.
 
-## Galatea (`foraging_2` in NEU)
+## Galatea (`foraging_2` in NEU): the Moonglade Marsh
 
-The first capture (October 2026) covers the main island (x -775..-408, z -127..212; NEU's 28 NPCs all on it), part of
-the south and a small island at (-480, -90), but it had been opened in singleplayer: it waits for a clean capture.
-Its holograms include the mobs' nameplates (Chillshot, Chillblade, Phanpyre with their levels), which say where
-Galatea's mobs live.
+The owners' clean capture (`galatea`, October 2026) covers the Moonglade Marsh (x -775..-408, z -127..212) with its
+south edge (Torrhus Canyon, a separate island on Hypixel: scenery here).
+
+- **Zones** (`galatea_*.json`): Hypixel's wiki says which area each NPC stands in, so the areas are anchored on them
+  (Tangleburg and its Fusion House, Bank, Library and SwampCut Inc.; Tangleburg's Path by Hina; the Murkwater Loch by
+  Agatha and Jaeger, its Shallows by Nemo, the Outpost up Rosemary's tower; the North Reaches by Alan, Kiara, Teddy and
+  Vaeri, the North Wetlands with Coral's Red House; Moonglade's Edge by Dax; the South Reaches by Boris, Brian and
+  Sawyer, with the Moonglade Beacon; the Evergreen Plateau by Auryon; the Tomb Floodway by Martin; the Ancient Ruins by
+  Tilus) and the island's lay for the rest (the West Reaches, the South Wetlands, the Murkwater Depths under the Loch),
+  all inside one "Moonglade Marsh" box. Decided: the underwater caverns the capture doesn't reach (the Squid Cave, the
+  Dragon's Lair) are boxes of ours: the Squid Cave under the Loch's north-west, the Dragon's Lair on the West Reaches'
+  north-west cliffs with our Jade Dragon.
+- **Arrival and gates**: `/warp galatea` arrives on Tangleburg's Path (-548.5 109 -21.5, NEU's warp), facing the village;
+  `/warp murkwater` at the Loch (NEU's). The ruined gate east of the arrival (barriers at x -537) leads back to the
+  Park's Jungle Island.
+- **NPCs** from NEU's current spots (all 28 are on this capture), the Jade Dragon ours (above). Our spots for Galatea's
+  systems sit with their NPCs: the Fusion Machine by Kysha, the Hunting box by David Hunterborough, Agatha's contest
+  spot, the Shallows by Nemo, the Forest Temple's altar by Tilus.
+- **Fairy souls**: NEU's current 12.
 
 ## The Catacombs: Hypixel's rooms and boss arenas (`tools/worlds/hypixel_dungeons.py`)
 
