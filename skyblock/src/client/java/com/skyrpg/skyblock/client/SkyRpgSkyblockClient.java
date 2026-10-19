@@ -33,6 +33,22 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         // FurfSky Reborn is how SkyBlock items look (read by Catharsis): always on, and only its item looks load (FurfSkyFilter).
         ToggledPacks.alwaysOn(FURFSKY);
         retireSurvival();
+        // What an accessory does (Hypixel's lore for the effects that work) and its enrichment, under its stats.
+        com.skyrpg.items.ItemMods.TOOLTIP_EXTRAS.add((stack, lines) -> {
+            String id = com.skyrpg.items.SkyItems.skyblockId(stack);
+            com.skyrpg.skyblock.accessory.AccessoryEffects.describe(id).forEach(line ->
+                    lines.add(net.minecraft.network.chat.Component.literal(line).withStyle(net.minecraft.ChatFormatting.GRAY)));
+            com.skyrpg.items.ItemMods.Enrichment enrichment = com.skyrpg.items.ItemMods.enrichment(stack);
+            if (com.skyrpg.skyblock.accessory.EnrichmentSwapper.ID.equals(id)) {
+                lines.add(net.minecraft.network.chat.Component.literal("Swaps to: " + com.skyrpg.skyblock.accessory.EnrichmentSwapper.target(stack).name()
+                        + " Enrichment").withStyle(net.minecraft.ChatFormatting.DARK_AQUA));
+                lines.add(net.minecraft.network.chat.Component.literal("Right-click: change every enriched accessory in your bag").withStyle(net.minecraft.ChatFormatting.GRAY));
+                lines.add(net.minecraft.network.chat.Component.literal("Shift + right-click: pick another").withStyle(net.minecraft.ChatFormatting.GRAY));
+            }
+            if (enrichment != null) {
+                lines.add(net.minecraft.network.chat.Component.literal("Enriched with " + enrichment.name()).withStyle(net.minecraft.ChatFormatting.DARK_AQUA));
+            }
+        });
         MenuScreens.register(SkyMenus.WARDROBE, WardrobeScreen::new);
         MenuScreens.register(SkyMenus.ENDER_PAGE, EnderPageScreen::new);
         MenuScreens.register(SkyMenus.CRAFT, CraftScreen::new);

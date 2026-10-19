@@ -26,6 +26,8 @@ public final class ItemMods {
     public static final String RARITY_UPGRADES = "rarity_upgrades";
     public static final String HOT_POTATO = "hot_potato_count";
     public static final String ENCHANTMENTS = "enchantments";
+    /** Hypixel's accessory enrichment ({@code talisman_enrichment}: "walk_speed", "health"...). */
+    public static final String ENRICHMENT = "talisman_enrichment";
     /** Dungeon stars (Hypixel's {@code upgrade_level}): 0 to 5, bought with essence. */
     public static final String STARS = "upgrade_level";
     private static final String STAR = "✪";
@@ -35,6 +37,10 @@ public final class ItemMods {
 
     private static final Set<String> WEAPONS = Set.of("SWORD", "LONGSWORD", "BOW", "FISHING_WEAPON", "FISHING_ROD");
     private static final Set<String> ARMOR = Set.of("HELMET", "CHESTPLATE", "LEGGINGS", "BOOTS");
+
+    /** Tooltip lines other mods add under an item's perks (the stack, where to add them): the client's tooltip calls them. */
+    public static final List<java.util.function.BiConsumer<ItemStack, List<net.minecraft.network.chat.Component>>> TOOLTIP_EXTRAS =
+            new java.util.concurrent.CopyOnWriteArrayList<>();
 
     private ItemMods() {
     }
@@ -155,13 +161,83 @@ public final class ItemMods {
         return reforge == null ? Map.of() : reforge.statsAt(rarity(stack, def));
     }
 
-    /** All of this item's stats: its own, plus its reforge's, its potato books', its gemstones' and its rod line's. */
+    /** One Accessory Enrichment: its item is {@code TALISMAN_ENRICHMENT_<ID>}, its stat is what it adds to an accessory. */
+    public record Enrichment(String id, String name, StatType stat, double value) {
+        public String itemId() {
+            return "TALISMAN_ENRICHMENT_" + id.toUpperCase(java.util.Locale.ROOT);
+        }
+    }
+
+    /** Hypixel's eleven enrichments (the wiki's Enrichments page). */
+    public static final List<Enrichment> ENRICHMENTS = List.of(
+            new Enrichment("walk_speed", "Speed", StatTypes.SPEED, 1),
+            new Enrichment("intelligence", "Intelligence", StatTypes.INTELLIGENCE, 2),
+            new Enrichment("critical_damage", "Critical Damage", StatTypes.CRIT_DAMAGE, 1),
+            new Enrichment("critical_chance", "Critical Chance", StatTypes.CRIT_CHANCE, 1),
+            new Enrichment("strength", "Strength", StatTypes.STRENGTH, 1),
+            new Enrichment("defense", "Defense", StatTypes.DEFENSE, 1),
+            new Enrichment("health", "Health", StatTypes.HEALTH, 3),
+            new Enrichment("magic_find", "Magic Find", StatTypes.MAGIC_FIND, 0.5),
+            new Enrichment("ferocity", "Ferocity", StatTypes.FEROCITY, 0.3),
+            new Enrichment("sea_creature_chance", "Sea Creature Chance", StatTypes.SEA_CREATURE_CHANCE, 0.3),
+            new Enrichment("attack_speed", "Attack Speed", StatTypes.ATTACK_SPEED, 0.5));
+
+    public static Enrichment enrichmentById(String id) {
+        for (Enrichment enrichment : ENRICHMENTS) {
+            if (enrichment.id().equals(id)) {
+                return enrichment;
+            }
+        }
+        return null;
+    }
+
+    /** The enrichment item's {@link Enrichment}, or null when this isn't one. */
+    public static Enrichment enrichmentOfItem(String skyblockId) {
+        for (Enrichment enrichment : ENRICHMENTS) {
+            if (enrichment.itemId().equals(skyblockId)) {
+                return enrichment;
+            }
+        }
+        return null;
+    }
+
+    /** Whether an enrichment can go on this: an accessory of Legendary or higher (after a Recombobulator). */
+    public static boolean enrichable(ItemStack stack, ItemDefinition def) {
+        return "ACCESSORY".equals(Reforges.category(def)) && rarity(stack, def).ordinal() >= Rarity.LEGENDARY.ordinal()
+                && rarity(stack, def) != Rarity.ADMIN;
+    }
+
+    /** The enrichment on this accessory, or null. */
+    public static Enrichment enrichment(ItemStack stack) {
+        CompoundTag tag = tag(stack);
+        return tag == null ? null : enrichmentById(tag.getString(ENRICHMENT).orElse(null));
+    }
+
+    public static void setEnrichment(ItemStack stack, Enrichment enrichment) {
+        edit(stack, tag -> {
+            if (enrichment == null) {
+                tag.remove(ENRICHMENT);
+            } else {
+                tag.putString(ENRICHMENT, enrichment.id());
+            }
+        });
+        SkyItems.normalize(stack);
+    }
+
+    /** What its enrichment adds. */
+    public static Map<StatType, Double> enrichmentStats(ItemStack stack, ItemDefinition def) {
+        Enrichment enrichment = enrichment(stack);
+        return enrichment == null || !enrichable(stack, def) ? Map.of() : Map.of(enrichment.stat(), enrichment.value());
+    }
+
+    /** All of this item's stats: its own, plus its reforge's, its potato books', its gemstones', its enrichment's and its rod line's. */
     public static Map<StatType, Double> stats(ItemStack stack, ItemDefinition def) {
         Map<StatType, Double> reforge = reforgeStats(stack, def);
         Map<StatType, Double> potato = potatoStats(stack, def);
         Map<StatType, Double> gems = gemStats(stack, def);
         Map<StatType, Double> rod = RodParts.stats(stack);
-        if (reforge.isEmpty() && potato.isEmpty() && gems.isEmpty() && rod.isEmpty()) {
+        Map<StatType, Double> enriched = enrichmentStats(stack, def);
+        if (reforge.isEmpty() && potato.isEmpty() && gems.isEmpty() && rod.isEmpty() && enriched.isEmpty()) {
             return def.stats();
         }
         Map<StatType, Double> out = new LinkedHashMap<>(def.stats());
@@ -169,6 +245,7 @@ public final class ItemMods {
         potato.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         gems.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         rod.forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        enriched.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         return out;
     }
 

@@ -2,6 +2,7 @@ package com.skyrpg.skyblock.accessory;
 
 import com.mojang.serialization.Codec;
 import com.skyrpg.core.progress.CollectionLevels;
+import com.skyrpg.core.progress.SkyBlockXp;
 import com.skyrpg.core.skills.SkillLevels;
 import com.skyrpg.core.stats.StatType;
 import com.skyrpg.core.stats.StatTypes;
@@ -36,7 +37,11 @@ import net.minecraft.world.item.component.ItemContainerContents;
  * Redstone collection (+6 slots a tier from II). Every accessory you have, in the bag or your inventory, gives its
  * stats; only the highest of a line counts (the Speed Ring, not also its Talisman), and each accessory once. Accessories
  * in the bag also give Magical Power by rarity (after a Recombobulator): Common 3, Uncommon 5, Rare 8, Epic 12,
- * Legendary 16, Mythic 22, Special 3, Very Special 5. Magical Power scales the stats of your Accessory Power (Maxwell).
+ * Legendary 16, Mythic 22, Special 3, Very Special 5. Magical Power scales the stats of your Accessory Power (Maxwell),
+ * pays Tuning Points (10 each, {@link AccessoryTuning}) and is SkyBlock XP (1 a point, once). Specials: the Hegemony
+ * Artifact gives double its own, an Abicase 1 for every 2 contacts (the NPCs you've talked to, up to 80), the imbued Rift
+ * Prism 11, and Dungeon accessories double inside the Catacombs. The bag's slots: the Redstone collection, the Redstone
+ * Miner and Jacobus ({@link BagUpgrades}).
  */
 public final class AccessoryBag {
     public static final int PAGE_SIZE = 45;
@@ -47,6 +52,14 @@ public final class AccessoryBag {
             builder -> builder.initializer(List::of).persistent(ItemContainerContents.CODEC.listOf()).copyOnDeath());
     static final AttachmentType<String> POWER = AttachmentRegistry.create(SkyRpgSkyblock.id("accessory_power"),
             builder -> builder.initializer(() -> "").persistent(Codec.STRING).copyOnDeath());
+    /** The Magical Power already paid out as SkyBlock XP (it only counts upwards). */
+    static final AttachmentType<Integer> POWER_XP = AttachmentRegistry.create(SkyRpgSkyblock.id("accessory_power_xp"),
+            builder -> builder.initializer(() -> 0).persistent(Codec.INT).copyOnDeath());
+    /** The NPCs the player has talked to: their Abiphone contacts, for the Abicase. */
+    static final AttachmentType<List<String>> CONTACTS = AttachmentRegistry.create(SkyRpgSkyblock.id("accessory_contacts"),
+            builder -> builder.initializer(List::of).persistent(Codec.STRING.listOf()).copyOnDeath());
+    /** Hypixel's most contacts an Abiphone holds. */
+    private static final int MAX_CONTACTS = 80;
     static final AttachmentType<List<String>> LEARNED = AttachmentRegistry.create(SkyRpgSkyblock.id("accessory_powers_learned"),
             builder -> builder.initializer(List::of).persistent(Codec.STRING.listOf()).copyOnDeath());
 
@@ -57,7 +70,32 @@ public final class AccessoryBag {
         PAGES.identifier();
         POWER.identifier();
         LEARNED.identifier();
+        POWER_XP.identifier();
+        CONTACTS.identifier();
         AccessoryPowers.init();
+        AccessoryTuning.init();
+        BagUpgrades.init();
+        AccessoryEffects.init();
+        EnrichmentSwapper.init();
+        com.skyrpg.core.event.NpcInteractions.INTERACT.register((player, npc) -> {
+            // Every NPC you speak to is an Abiphone contact.
+            String id = npc.toString();
+            List<String> contacts = player.getAttachedOrElse(CONTACTS, List.of());
+            if (contacts.size() < MAX_CONTACTS && !contacts.contains(id)) {
+                List<String> more = new ArrayList<>(contacts);
+                more.add(id);
+                player.setAttached(CONTACTS, List.copyOf(more));
+            }
+            return false;
+        });
+        // Magical Power is SkyBlock XP, which the bag also pays when a profile with accessories is loaded.
+        net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents.END_SERVER_TICK.register(server -> {
+            if (server.getTickCount() % 200 == 0) {
+                server.getPlayerList().getPlayers().forEach(AccessoryBag::rewardPower);
+            }
+        });
+        com.skyrpg.core.action.Actions.register("jacobus", (player, params) -> MaxwellMenu.open(player, MaxwellMenu.BAGS));
+        com.skyrpg.core.action.Actions.register("redstone_miner", (player, params) -> MaxwellMenu.open(player, MaxwellMenu.BAGS));
         com.skyrpg.core.action.Actions.register("maxwell", (player, params) -> MaxwellMenu.open(player));
         Stats.registerSource(new Stats.Source() {
             @Override
@@ -74,7 +112,9 @@ public final class AccessoryBag {
                         }
                     });
                 }
-                powerStats(player, magicalPower(player)).forEach(out::add);
+                int power = magicalPower(player);
+                powerStats(player, power).forEach(out::add);
+                AccessoryTuning.stats(player, power).forEach(out::add);
             }
         });
         CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> {
@@ -95,10 +135,16 @@ public final class AccessoryBag {
         return def != null && def.skyblock() && "ACCESSORY".equals(Reforges.category(def));
     }
 
-    /** How many slots the bag has: 0 before Redstone II, then 6 more a tier. */
-    public static int slots(Player player) {
+    /** The Redstone collection's slots: 0 before Redstone II, then 6 more a tier. */
+    public static int redstoneSlots(Player player) {
         int tier = CollectionLevels.tier(player, Recipes.collectionId("REDSTONE"));
         return Math.max(0, tier - 1) * SLOTS_PER_TIER;
+    }
+
+    /** How many slots the bag has: the Redstone collection's, the Redstone Miner's and Jacobus's. */
+    public static int slots(Player player) {
+        int upgrades = player instanceof ServerPlayer server ? BagUpgrades.miner(server) + 2 * BagUpgrades.jacobus(server) : 0;
+        return redstoneSlots(player) + upgrades;
     }
 
     public static int pages(Player player) {
@@ -121,7 +167,18 @@ public final class AccessoryBag {
         }
         pages.set(page, ItemContainerContents.fromItems(items));
         player.setAttached(PAGES, List.copyOf(pages));
+        rewardPower(player);
         Stats.refresh(player);
+    }
+
+    /** Pays 1 SkyBlock XP for each point of Magical Power the player hasn't been paid for yet. */
+    static void rewardPower(ServerPlayer player) {
+        int power = magicalPower(player, false);
+        int paid = player.getAttachedOrElse(POWER_XP, 0);
+        if (power > paid) {
+            player.setAttached(POWER_XP, power);
+            SkyBlockXp.give(player, power - paid, "Accessory Bag");
+        }
     }
 
     /** Everything in the bag. */
@@ -141,6 +198,15 @@ public final class AccessoryBag {
             }
         }
         return false;
+    }
+
+    /** The ids of the accessories that count, in the bag or the inventory. */
+    static List<String> countedIds(ServerPlayer player) {
+        List<String> out = new ArrayList<>();
+        for (ItemStack stack : counted(player, true)) {
+            out.add(SkyItems.skyblockId(stack));
+        }
+        return out;
     }
 
     /**
@@ -197,13 +263,42 @@ public final class AccessoryBag {
         };
     }
 
-    /** The player's Magical Power: the counted accessories in the bag. */
+    /** The Magical Power of one accessory: by rarity, twice for the Hegemony Artifact (and for a Dungeon one inside the Catacombs). */
+    static int magicalPower(ItemStack stack, boolean inDungeon) {
+        ItemDefinition def = SkyItems.definition(stack);
+        int power = magicalPower(rarity(stack));
+        if ("HEGEMONY_ARTIFACT".equals(SkyItems.skyblockId(stack)) || inDungeon && def != null && ItemMods.dungeonItem(def)) {
+            power *= 2;
+        }
+        return power;
+    }
+
+    /** The player's Magical Power: the counted accessories in the bag, and the specials. */
     public static int magicalPower(ServerPlayer player) {
+        return magicalPower(player, com.skyrpg.skyblock.dungeon.Catacombs.inRun(player));
+    }
+
+    private static int magicalPower(ServerPlayer player, boolean dungeon) {
         int total = 0;
+        boolean abicase = false;
         for (ItemStack stack : counted(player, false)) {
-            total += magicalPower(rarity(stack));
+            total += magicalPower(stack, dungeon);
+            // Only one Abicase counts: 1 Magical Power for every 2 contacts.
+            String id = SkyItems.skyblockId(stack);
+            if (!abicase && id != null && id.startsWith("ABICASE")) {
+                abicase = true;
+                total += contacts(player) / 2;
+            }
+        }
+        if (BagUpgrades.imbued(player)) {
+            total += BagUpgrades.IMBUE_POWER;
         }
         return total;
+    }
+
+    /** How many Abiphone contacts (NPCs spoken to) the player has. */
+    public static int contacts(ServerPlayer player) {
+        return Math.min(MAX_CONTACTS, player.getAttachedOrElse(CONTACTS, List.of()).size());
     }
 
     /** What the selected power gives at this much Magical Power (base × multiplier, plus its unique bonus). */
