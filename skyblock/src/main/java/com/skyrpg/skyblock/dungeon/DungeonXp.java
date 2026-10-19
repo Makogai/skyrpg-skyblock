@@ -66,6 +66,13 @@ public final class DungeonXp {
     }
 
     static void complete(ServerPlayer player, String code) {
+        // SkyBlock Leveling: the first clear of each floor (Entrance to Floor IV +20, V to VII +30, Master Mode +50)
+        if (code.startsWith("M")) {
+            com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "master_floors", code, 50);
+        } else {
+            int floor = code.equals("E") ? 0 : Integer.parseInt(code.substring(1));
+            com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "catacombs_floors", code, floor >= 5 ? 30 : 20);
+        }
         Map<String, Double> all = new HashMap<>(player.getAttachedOrElse(XP, Map.of()));
         all.merge("done_" + code.toLowerCase(java.util.Locale.ROOT), 1.0, Double::sum);
         player.setAttached(XP, Map.copyOf(all));
@@ -98,6 +105,10 @@ public final class DungeonXp {
         player.setAttached(XP, Map.copyOf(all));
         int from = levelFor(before);
         int to = levelFor(before + amount);
+        // SkyBlock Leveling: +4 a class level (the quiet quarter for the classes you didn't play counts too)
+        if (CLASSES.contains(key) && to > from) {
+            com.skyrpg.skyblock.leveling.LevelingTasks.give(player, "class_level", 4 * (to - from));
+        }
         for (int level = from + 1; level <= to && !quiet; level++) {
             String name = key.equals(CATACOMBS) ? "The Catacombs" : title(key);
             Notice.Panel panel = Notice.of(Notice.Kind.DUNGEON).tag("LEVEL UP").panel();

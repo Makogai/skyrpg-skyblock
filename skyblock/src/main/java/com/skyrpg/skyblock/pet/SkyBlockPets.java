@@ -534,6 +534,30 @@ public final class SkyBlockPets {
                     .append(name(pet)).append(Component.literal(" to your pet menu.").withStyle(ChatFormatting.GRAY)));
         }
         Msg.playSound(player, SoundEvents.ALLAY_ITEM_GIVEN, 0.8f, 1.3f);
+        com.skyrpg.skyblock.leveling.LevelingTasks.sync(player, "pet_score", 3 * petScore(player));
+    }
+
+    /**
+     * Hypixel's Pet Score: each kind of pet you have counts once, at its best rarity (Common 1 ... Mythic 6), +1 for each
+     * kind you have at its top level.
+     */
+    public static int petScore(ServerPlayer player) {
+        java.util.Map<String, Integer> best = new java.util.HashMap<>();
+        java.util.Set<String> maxed = new java.util.HashSet<>();
+        List<ItemStack> all = stored(player);
+        all.add(Pets.active(player));
+        for (ItemStack pet : all) {
+            if (!isPet(pet)) {
+                continue;
+            }
+            String type = type(pet);
+            int rarity = java.util.Arrays.asList(TIERS).indexOf(tier(pet)) + 1;
+            best.merge(type, Math.max(1, rarity), Math::max);
+            if (level(pet) >= maxLevel(type)) {
+                maxed.add(type);
+            }
+        }
+        return best.values().stream().mapToInt(Integer::intValue).sum() + maxed.size();
     }
 
     /** What share of skill XP the active pet gets (Hypixel's), before Zoologist. */

@@ -29,14 +29,20 @@ public final class SkyBlockLevelingPage implements MenuPage {
     private static final int GAP = 6;
     private static final int HERO_W = 128;
 
-    /** Where SkyBlock XP comes from today, and how much. */
+    /** Where SkyBlock XP comes from: Hypixel's task categories (the Tasks menu has every task and your progress). */
     private static final List<String[]> SOURCES = List.of(
-            new String[] {"Skill levels", "5 to 30 each"},
-            new String[] {"Collection tiers", "4 each"},
-            new String[] {"Unique minions", "1 to 24 each"},
-            new String[] {"Slayer levels", "15 to 150 each"},
-            new String[] {"Fairy Soul exchanges", "10 each"},
-            new String[] {"Bestiary, Museum...", "coming"});
+            new String[] {"Core Tasks", "skills, collections, minions"},
+            new String[] {"Slaying Tasks", "slayers, Bestiary, bosses"},
+            new String[] {"Dungeon Tasks", "levels, classes, floors"},
+            new String[] {"Skill Related", "HotM, Garden, trophy fish"},
+            new String[] {"Event Tasks", "festivals, contests"},
+            new String[] {"Essence, Misc, Story", "perks, the Rift, more"});
+
+    /** The "Earning SkyBlock XP" panel, as last drawn: clicking it opens the Tasks menu. */
+    private int tasksX;
+    private int tasksY;
+    private int tasksW;
+    private int tasksH;
 
     @Override
     public Identifier id() {
@@ -61,6 +67,18 @@ public final class SkyBlockLevelingPage implements MenuPage {
     @Override
     public int order() {
         return 983;
+    }
+
+    @Override
+    public boolean mouseClicked(PageContext ctx, double mx, double my, int button) {
+        if (tasksW > 0 && mx >= tasksX && mx < tasksX + tasksW && my >= tasksY && my < tasksY + tasksH) {
+            net.minecraft.client.Minecraft minecraft = net.minecraft.client.Minecraft.getInstance();
+            if (minecraft.player != null) {
+                minecraft.player.connection.sendCommand("sblevel tasks");
+            }
+            return true;
+        }
+        return false;
     }
 
     private static int rgb(ChatFormatting format) {
@@ -194,8 +212,20 @@ public final class SkyBlockLevelingPage implements MenuPage {
         if (sh < 22) {
             return;
         }
-        Draw.panel(g, x, sy, w, sh, Theme.CARD, Theme.CARD_BORDER);
+        tasksX = x;
+        tasksY = sy;
+        tasksW = w;
+        tasksH = sh;
+        boolean hover = ctx.hovered(x, sy, w, sh);
+        Draw.panel(g, x, sy, w, sh, hover ? Theme.CARD_HOVER : Theme.CARD, hover ? Theme.ACCENT : Theme.CARD_BORDER);
         Draw.fit(g, font, Component.literal("Earning SkyBlock XP"), x + 6, sy + 4, w - 12, 0.85f, 0.6f, Draw.Align.LEFT, Theme.ACCENT, false);
+        Draw.fit(g, font, Component.literal("Click for every task ▶"), x + w - 6, sy + 4, w / 2, 0.7f, 0.45f, Draw.Align.RIGHT,
+                hover ? Theme.TEXT : Theme.MUTED, false);
+        if (hover) {
+            ctx.tooltip(List.of(Component.literal("SkyBlock Leveling tasks").withColor(Theme.ACCENT),
+                    Component.literal("Every way to earn SkyBlock XP, with your progress").withColor(Theme.MUTED),
+                    Component.literal("Emblems are in there too").withColor(Theme.DIM)), Theme.ACCENT);
+        }
         // Two columns, so they fit under the rest.
         int colW = (w - 12) / 2;
         for (int i = 0; i < SOURCES.size(); i++) {
@@ -205,7 +235,7 @@ public final class SkyBlockLevelingPage implements MenuPage {
             if (ly > sy + sh - row) {
                 break;
             }
-            boolean coming = source[1].equals("coming");
+            boolean coming = false;
             int amountW = Math.round(font.width(source[1]) * 0.7f);
             Draw.fit(g, font, Component.literal("• " + source[0]), lx, ly, colW - amountW - 8, 0.75f, 0.45f, Draw.Align.LEFT,
                     coming ? Theme.DIM : Theme.TEXT, false);

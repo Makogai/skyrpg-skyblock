@@ -101,8 +101,13 @@ public final class ServerChat {
         MutableComponent header = Component.empty()
                 .append(Profiles.badge(level)).append(Component.literal(" "))
                 .append(Profiles.titlePrefix(sender))
-                .append(Profiles.name(sender, level))
-                .append(Component.literal(": ").withColor(ChatColors.MUTED));
+                .append(Profiles.name(sender, level));
+        // the SkyBlock Leveling emblem the player picked, after their name
+        Component emblem = com.skyrpg.core.progress.SkyBlockEmblems.of(sender);
+        if (emblem != null) {
+            header.append(Component.literal(" ")).append(emblem);
+        }
+        header.append(Component.literal(": ").withColor(ChatColors.MUTED));
         Component body = ChatBody.build(sender, raw, Style.EMPTY.withColor(ChatFormatting.WHITE));
         return ChatLines.line(ChatLines.PLAYER, header, body, sender.getGameProfile().name());
     }

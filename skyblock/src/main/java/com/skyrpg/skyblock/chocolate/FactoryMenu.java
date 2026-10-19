@@ -212,6 +212,8 @@ final class FactoryMenu {
                         });
                         p.sendSystemMessage(Component.literal("Your Chocolate Factory is now level " + Factory.LEVEL_NAMES[after.level - 1] + "!")
                                 .withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
+                        // SkyBlock Leveling: +25 each prestige
+                        com.skyrpg.skyblock.leveling.LevelingTasks.sync(p, "chocolate_prestige", 25 * (after.level - 1));
                         Msg.playSound(p, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 1f, 1f);
                     });
         }

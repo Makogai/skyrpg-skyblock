@@ -266,6 +266,50 @@ public final class Hotm {
 
     private static void set(ServerPlayer player, State state) {
         player.setAttached(STATE, state);
+        syncLeveling(player, state);
+    }
+
+    /** SkyBlock XP for each HotM tier reached (Hypixel's), from Tier 1. */
+    private static final int[] TIER_SBXP = {35, 45, 60, 75, 90, 110, 130, 180, 210, 240};
+    /** SkyBlock XP for each Peak of the Mountain (Core of the Mountain) level. */
+    private static final int[] PEAK_SBXP = {25, 35, 50, 65, 75, 100, 125, 150, 175, 200};
+
+    /**
+     * The SkyBlock Leveling tasks the mountain pays: its tiers, the Peak, and powder earned (+1 per 2,400 Mithril or
+     * 2,500 Gemstone or Glacite Powder up to 600,000 of each, then less and less up to Hypixel's 1,942 in all).
+     * Decided: past 600,000 the rest of each powder's share comes in as 1 - e^(-extra / scale), the scale such that it's
+     * all but full at Hypixel's 12.5M Mithril / 20M Gemstone and Glacite.
+     */
+    public static void syncLeveling(ServerPlayer player) {
+        syncLeveling(player, state(player));
+    }
+
+    private static void syncLeveling(ServerPlayer player, State state) {
+        int tier = level(state.xp());
+        int tiers = 0;
+        for (int i = 0; i < Math.min(tier, TIER_SBXP.length); i++) {
+            tiers += TIER_SBXP[i];
+        }
+        com.skyrpg.skyblock.leveling.LevelingTasks.sync(player, "hotm", tiers);
+        int peak = 0;
+        for (int i = 0; i < Math.min(state.perk("core_of_the_mountain"), PEAK_SBXP.length); i++) {
+            peak += PEAK_SBXP[i];
+        }
+        com.skyrpg.skyblock.leveling.LevelingTasks.sync(player, "peak_of_the_mountain", peak);
+        int powder = powderXp(state.earned().getOrDefault(MITHRIL, 0L), 2400, 397, 12_500_000)
+                + powderXp(state.earned().getOrDefault(GEMSTONE, 0L), 2500, 408, 20_000_000)
+                + powderXp(state.earned().getOrDefault(GLACITE, 0L), 2500, 408, 20_000_000);
+        com.skyrpg.skyblock.leveling.LevelingTasks.sync(player, "powder", powder);
+    }
+
+    private static int powderXp(long earned, int per, int beyond, long full) {
+        long cap = 600_000;
+        int xp = (int) (Math.min(earned, cap) / per);
+        if (earned > cap) {
+            double scale = (full - cap) / 4.6;
+            xp += (int) Math.floor(beyond * (1 - Math.exp(-(earned - cap) / scale)));
+        }
+        return xp;
     }
 
     /** The HotM level (1 to 10) for this much XP. */

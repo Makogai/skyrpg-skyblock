@@ -47,6 +47,16 @@ public final class SkyBlockXp {
     public static void give(ServerPlayer player, int xp, String reason) {
         if (xp > 0) {
             giver.give(player, xp, reason);
+            for (Giver listener : LISTENERS) {
+                listener.give(player, xp, reason);
+            }
         }
+    }
+
+    private static final java.util.List<Giver> LISTENERS = new java.util.concurrent.CopyOnWriteArrayList<>();
+
+    /** Told of every SkyBlock XP given through {@link #give} (after it's given): the SkyBlock Leveling tasks tally it. */
+    public static void onGiven(Giver listener) {
+        LISTENERS.add(listener);
     }
 }

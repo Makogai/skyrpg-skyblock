@@ -230,6 +230,10 @@ public final class Contests {
         }
         medals.merge("best_" + crop, 0, (a, b) -> (int) Math.max(a, Math.min(Integer.MAX_VALUE, score)));
         player.setAttached(MEDALS, Map.copyOf(medals));
+        if (bracket >= 3) {
+            // SkyBlock Leveling: +10 the first time you win gold in each crop
+            com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "jacob_gold", crop, 10);
+        }
         Notice.of(Notice.Kind.FARMING).tag("JACOB'S CONTEST").panel()
                 .line(Component.literal(" " + cropName(crop) + ": " + Msg.number(score) + "  ·  #" + place + " of " + of).withStyle(ChatFormatting.GRAY))
                 .line(Component.literal(" Claim your rewards from Jacob.").withStyle(ChatFormatting.GRAY))

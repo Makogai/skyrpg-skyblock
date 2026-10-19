@@ -114,6 +114,7 @@ final class CrimsonPerks {
             Map<String, Integer> levels = new HashMap<>(p.getAttachedOrElse(LEVELS, Map.of()));
             levels.put(perk.id(), level + 1);
             p.setAttached(LEVELS, Map.copyOf(levels));
+            com.skyrpg.skyblock.leveling.LevelingTasks.essencePerk(p, "crimson", level + 1);
             Stats.refresh(p);
             p.sendSystemMessage(Component.literal(perk.name() + " " + Msg.roman(level + 1) + "!").withStyle(ChatFormatting.GOLD));
             Msg.playSound(p, SoundEvents.BLAZE_SHOOT, 0.8f, 1.2f);

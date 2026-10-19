@@ -92,6 +92,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.festival.Festivals.init();
         com.skyrpg.skyblock.chocolate.ChocolateFactory.init();
         com.skyrpg.skyblock.glacite.GlaciteTunnels.init();
+        com.skyrpg.skyblock.leveling.LevelingTasks.init();
         Recipes.init();
         Crafting.init();
         SkyShops.init();
@@ -115,7 +116,10 @@ public final class SkyRpgSkyblock implements ModInitializer {
             dispatcher.register(Commands.literal("sblevel").executes(ctx -> {
                 OpenPage.send(ctx.getSource().getPlayerOrException(), id("leveling"));
                 return 1;
-            }));
+            }).then(Commands.literal("tasks").executes(ctx -> {
+                com.skyrpg.skyblock.leveling.LevelingMenu.open(ctx.getSource().getPlayerOrException());
+                return 1;
+            })));
         });
     }
 

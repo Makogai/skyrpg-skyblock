@@ -194,6 +194,8 @@ public final class FastTravel {
         Set<String> more = new HashSet<>(visited);
         more.add(warp.id());
         player.setAttached(VISITED, List.copyOf(more));
+        // SkyBlock Leveling's "Fast Travels Unlocked" (+15 a Travel Scroll on Hypixel; decided: a warp unlocked here counts as one)
+        com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "fast_travel", warp.id(), 15);
         return true;
     }
 

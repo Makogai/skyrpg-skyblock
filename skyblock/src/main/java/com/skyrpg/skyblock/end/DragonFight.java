@@ -284,6 +284,10 @@ public final class DragonFight {
             int eyes = f.eyes.getOrDefault(id, 0);
             double weight = rankBonus(rank, dealt) + 100.0 * eyes + 100.0 * dealt / top;
             loot(player, f.type, weight, eyes);
+            // SkyBlock Leveling: the first kill of each dragon (+25, the Superior +50)
+            if (dealt > 0) {
+                com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "slay_dragons", f.type.prefix(), f.type.prefix().equals("SUPERIOR") ? 50 : 25);
+            }
         }
         end(f, true);
     }

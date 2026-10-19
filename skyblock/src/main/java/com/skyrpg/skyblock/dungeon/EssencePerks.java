@@ -99,6 +99,7 @@ final class EssencePerks {
         Map<String, Integer> levels = new HashMap<>(player.getAttachedOrElse(LEVELS, Map.of()));
         levels.put(id, level + 1);
         player.setAttached(LEVELS, Map.copyOf(levels));
+        com.skyrpg.skyblock.leveling.LevelingTasks.essencePerk(player, perk.essence(), level + 1);
         player.sendSystemMessage(Component.literal("You upgraded " + perk.name() + " to level " + (level + 1) + "!").withStyle(ChatFormatting.GREEN));
         Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.8f, 1.4f);
         Stats.refresh(player);

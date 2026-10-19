@@ -206,6 +206,25 @@ public final class Commissions {
     public static final AttachmentType<Board> TUNNELS_BOARD = AttachmentRegistry.create(
             com.skyrpg.skyblock.SkyRpgSkyblock.id("tunnels_commissions"),
             builder -> builder.initializer(() -> Board.EMPTY).persistent(Board.CODEC).copyOnDeath());
+    /** Commissions done in all for each Commission Milestone (decided: Hypixel's thresholds weren't on the wiki page) and its SkyBlock XP. */
+    private static final int[] MILESTONES = {5, 15, 30, 50, 80, 150};
+    private static final int[] MILESTONE_SBXP = {20, 30, 30, 50, 50, 75};
+
+    /** The SkyBlock Leveling task for Commission Milestones, from every board's commissions done. */
+    public static void syncMilestones(ServerPlayer player) {
+        int done = 0;
+        for (Area area : Area.values()) {
+            done += player.getAttachedOrElse(area.attachment(), Board.EMPTY).completed();
+        }
+        int xp = 0;
+        for (int i = 0; i < MILESTONES.length; i++) {
+            if (done >= MILESTONES[i]) {
+                xp += MILESTONE_SBXP[i];
+            }
+        }
+        com.skyrpg.skyblock.leveling.LevelingTasks.sync(player, "commission_milestones", xp);
+    }
+
     /** HotM XP for a claimed Dwarven Mines commission at HotM 1, 2 and 3+. */
     private static final int[] HOTM_XP = {100, 200, 400};
     private static final int DAILY = 4;
@@ -519,6 +538,7 @@ public final class Commissions {
         player.setAttached(area.attachment(), new Board(slots, board.completed() + 1, board.day(), board.today()));
         Board daily = player.getAttachedOrElse(BOARD, Board.EMPTY);
         player.setAttached(BOARD, new Board(daily.slots(), daily.completed(), day, today + 1));
+        syncMilestones(player);
         Notice.Panel panel = Notice.of(Notice.Kind.MINING).tag("COMMISSION").panel();
         panel.heading("Rewards", 0x55FF55);
         panel.line(Component.literal("+" + Msg.number(xp) + " HotM Experience").withStyle(ChatFormatting.DARK_PURPLE));

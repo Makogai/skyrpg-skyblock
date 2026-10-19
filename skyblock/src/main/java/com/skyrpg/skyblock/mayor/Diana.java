@@ -197,6 +197,10 @@ final class Diana {
         });
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
             if (entity.entityTags().contains(TAG) && entity.level() instanceof ServerLevel level) {
+                if (source.getEntity() instanceof ServerPlayer killer) {
+                    // SkyBlock Leveling: +1 per 100 Mythological Creatures killed
+                    com.skyrpg.skyblock.leveling.LevelingTasks.count(killer, "mythological", 1, 100);
+                }
                 defeated(level, (Mob) entity);
             }
         });

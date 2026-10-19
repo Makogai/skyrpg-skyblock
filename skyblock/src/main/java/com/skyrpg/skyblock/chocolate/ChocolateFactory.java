@@ -113,6 +113,12 @@ public final class ChocolateFactory {
                 .append(Component.literal(")!").withStyle(ChatFormatting.GRAY)));
         if (had == 0 && factory.rabbits.size() < factory.barnSize()) {
             factory.rabbits.put(rabbit.name(), 1);
+            // SkyBlock Leveling: +10 for each Mythic and Divine rabbit found
+            if (Rabbits.RARITIES.get(rabbit.rarity()).equals("MYTHIC")) {
+                com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "mythic_rabbits", rabbit.name(), 10);
+            } else if (Rabbits.RARITIES.get(rabbit.rarity()).equals("DIVINE")) {
+                com.skyrpg.skyblock.leveling.LevelingTasks.once(player, "divine_rabbits", rabbit.name(), 10);
+            }
             player.sendSystemMessage(Component.literal("NEW RABBIT! ").withStyle(ChatFormatting.LIGHT_PURPLE, ChatFormatting.BOLD)
                     .append(Component.literal(rabbit.text()).withStyle(ChatFormatting.GRAY)));
             Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.8f, 1.6f);

@@ -32,6 +32,10 @@ final class MiningFiesta {
             return;
         }
         SkyMining.Info info = SkyMining.info(player.level(), state);
+        if (info != null && (info.ore() || SkyMining.isMetal(player.level(), state))) {
+            // SkyBlock Leveling: +1 per 5,000 ores in a Fiesta, each counting its Breaking Power
+            com.skyrpg.skyblock.leveling.LevelingTasks.count(player, "mining_fiesta", Math.max(1, info.power()), 5000);
+        }
         if (info == null || player.getRandom().nextDouble() >= info.power() / 5000.0) {
             return;
         }
