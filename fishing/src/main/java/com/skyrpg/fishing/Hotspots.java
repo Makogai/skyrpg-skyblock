@@ -283,7 +283,7 @@ public final class Hotspots {
 
     private static void trySpawn(ServerPlayer player, long now) {
         ServerLevel level = player.level();
-        if (player.isSpectator() || !fishing(player) || level.dimension().identifier().getNamespace().equals("skyrpg_hub")
+        if (player.isSpectator() || !fishing(player) || Catching.skyBlockFishing(level) || level.dimension().identifier().getNamespace().equals("skyrpg_hub")
                 || now < NEXT_SPAWN.getOrDefault(player.getUUID(), 0L)) {
             return;
         }

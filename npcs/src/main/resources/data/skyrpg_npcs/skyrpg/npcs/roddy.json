@@ -1,0 +1,23 @@
+{
+  "name": "Roddy",
+  "role": "Rod Parts",
+  "color": "#55AA55",
+  "hint": "Rod Parts",
+  "skin": "minecraft:entity/player/wide/steve",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    115.5,
+    68.0,
+    -38.5
+  ],
+  "yaw": 110.0,
+  "sound": "minecraft:entity.fishing_bobber.splash",
+  "greetings": [
+    "Hooks make you likelier to catch certain things.",
+    "Lines grant bonus stats, sinkers special tricks. I'll put them on your rod."
+  ],
+  "action": {
+    "type": "roddy"
+  }
+}

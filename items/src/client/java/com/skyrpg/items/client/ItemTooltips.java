@@ -99,6 +99,23 @@ final class ItemTooltips {
         if (slots != null) {
             out.add(slots);
         }
+        if (com.skyrpg.items.RodParts.isRod(stack)) {
+            // Hypixel's Rod Parts: the hook, line and sinker on the rod, each with what it does.
+            out.add(Component.empty());
+            for (String slot : com.skyrpg.items.RodParts.SLOTS) {
+                com.skyrpg.items.RodParts.Part part = com.skyrpg.items.RodParts.part(com.skyrpg.items.RodParts.on(stack, slot));
+                String label = Character.toUpperCase(slot.charAt(0)) + slot.substring(1);
+                ItemDefinition partDef = part == null ? null : ItemRegistry.skyblock(part.id());
+                if (part == null || partDef == null) {
+                    out.add(Component.literal(label + ": ").withStyle(ChatFormatting.GRAY)
+                            .append(Component.literal("[None]").withStyle(ChatFormatting.DARK_GRAY)));
+                    continue;
+                }
+                out.add(Component.literal(label + ": ").withStyle(ChatFormatting.GRAY)
+                        .append(Component.literal("[" + partDef.name() + "]").withColor(partDef.rarity().color())));
+                wrapFormatted(part.effect()).forEach(line -> out.add(Component.literal("  " + line)));
+            }
+        }
 
         enchantLines(stack, out);
 

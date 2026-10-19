@@ -220,7 +220,8 @@
    "sea_creature_chance": 6
   },
   "SPOOKY_BAIT": {
-   "speed": 25
+   "speed": 25,
+   "spooky": 0.15
   },
   "CARROT_BAIT": {
    "carrot_king": 0.05
@@ -237,7 +238,8 @@
    "sea_creature_chance": 3
   },
   "HOT_BAIT": {
-   "speed": 15
+   "speed": 15,
+   "trophy_chance": 5
   },
   "WORM_BAIT": {
    "speed": 60,
@@ -258,8 +260,12 @@
    "speed": 10,
    "treasure_chance": 2
   },
-  "SHARK_BAIT": {},
-  "HOTSPOT_BAIT": {},
+  "SHARK_BAIT": {
+   "shark": 0.2
+  },
+  "HOTSPOT_BAIT": {
+   "hotspot": 0.2
+  },
   "CORRUPTED_BAIT": {},
   "WOODEN_BAIT": {}
  }

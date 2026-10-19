@@ -155,18 +155,20 @@ public final class ItemMods {
         return reforge == null ? Map.of() : reforge.statsAt(rarity(stack, def));
     }
 
-    /** All of this item's stats: its own, plus its reforge's, its potato books' and its gemstones'. */
+    /** All of this item's stats: its own, plus its reforge's, its potato books', its gemstones' and its rod line's. */
     public static Map<StatType, Double> stats(ItemStack stack, ItemDefinition def) {
         Map<StatType, Double> reforge = reforgeStats(stack, def);
         Map<StatType, Double> potato = potatoStats(stack, def);
         Map<StatType, Double> gems = gemStats(stack, def);
-        if (reforge.isEmpty() && potato.isEmpty() && gems.isEmpty()) {
+        Map<StatType, Double> rod = RodParts.stats(stack);
+        if (reforge.isEmpty() && potato.isEmpty() && gems.isEmpty() && rod.isEmpty()) {
             return def.stats();
         }
         Map<StatType, Double> out = new LinkedHashMap<>(def.stats());
         reforge.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         potato.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         gems.forEach((stat, value) -> out.merge(stat, value, Double::sum));
+        rod.forEach((stat, value) -> out.merge(stat, value, Double::sum));
         return out;
     }
 

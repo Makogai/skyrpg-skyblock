@@ -12,6 +12,7 @@ import com.skyrpg.core.stats.IncomingDamage;
 import com.skyrpg.core.text.Msg;
 import com.skyrpg.core.text.Notice;
 import com.skyrpg.core.world.SkyBlockWorlds;
+import com.skyrpg.items.RodParts;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
 import com.skyrpg.skyblock.island.Islands;
 import com.skyrpg.skyblock.zone.Zones;
@@ -23,6 +24,7 @@ import java.util.UUID;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -72,6 +74,10 @@ public final class SkySeaCreatures {
     /** The Spooky Festival: the share of water sea creatures that are spooky ones, and Spooky Bait's extra (Hypixel's). */
     private static final double SPOOKY_CHANCE = 0.15;
     private static final double SPOOKY_BAIT = 0.15;
+    /** The Spooky (Phantom) Hook's extra chance of a spooky sea creature. */
+    private static final double SPOOKY_HOOK = 0.20;
+    /** How far from the bobber an Empty Chumcap Bucket still calls an Agarimoo. */
+    private static final int CHUMCAP_RANGE = 5;
 
     public record Drop(String item, double chance, int min, int max) {
     }
@@ -84,6 +90,11 @@ public final class SkySeaCreatures {
                     && (zones.isEmpty() || zones.contains(zone));
         }
     }
+
+    /** Sharks this profile has killed during a Fishing Festival (every 50 give 1 SkyBlock XP, up to 100 XP). */
+    private static final net.fabricmc.fabric.api.attachment.v1.AttachmentType<Integer> FESTIVAL_SHARKS =
+            net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry.create(SkyRpgSkyblock.id("festival_sharks"),
+                    builder -> builder.persistent(com.mojang.serialization.Codec.INT).copyOnDeath());
 
     private static List<Creature> creatures = List.of();
 
@@ -172,11 +183,13 @@ public final class SkySeaCreatures {
                 }
             }
         }
+        boolean commonHook = RodParts.has(player.getMainHandItem(), "COMMON_HOOK");
         boolean rareBoost = bait != null && (bait.rare().equals("always") || bait.rare().equals("day") && !night
                 || bait.rare().equals("night") && night);
         // The Spooky Festival (the hour before and after too): a share of the water's sea creatures are spooky ones.
         if (!lava && com.skyrpg.skyblock.time.CalendarEvents.near(System.currentTimeMillis(), "Spooky Festival", 3_600_000L)
-                && random.nextDouble() < Math.min(0.75, SPOOKY_CHANCE + (bait != null && bait.id().equals("SPOOKY_BAIT") ? SPOOKY_BAIT : 0))) {
+                && random.nextDouble() < Math.min(0.75, SPOOKY_CHANCE + (bait != null && bait.id().equals("SPOOKY_BAIT") ? SPOOKY_BAIT : 0)
+                + (RodParts.has(player.getMainHandItem(), "PHANTOM_HOOK") ? SPOOKY_HOOK : 0))) {
             List<Creature> spooky = creatures.stream().filter(c -> c.condition().equals("spooky_festival") && fishing >= c.fishingLevel()).toList();
             double sum = spooky.stream().mapToDouble(c -> c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1)).sum();
             double at = random.nextDouble() * sum;
@@ -197,10 +210,12 @@ public final class SkySeaCreatures {
             if (c.condition().equals("dark_bait_night") && !(night && bait != null && bait.id().equals("DARK_BAIT"))) {
                 continue;
             }
-            if (c.condition().equals("carrot_bait") || c.condition().equals("fishing_festival") || c.condition().equals("spooky_festival")) {
+            if (c.condition().equals("carrot_bait") || c.condition().equals("fishing_festival") || c.condition().equals("spooky_festival")
+                    || c.condition().equals("hotspot") || c.condition().equals("agarimoo")) {
                 continue;
             }
-            double weight = c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1);
+            // Common Hook: Common sea creatures 25% likelier.
+            double weight = c.weight() * (rareBoost && c.weight() < 300 ? 1.25 : 1) * (c.rarity().equals("COMMON") && commonHook ? 1.25 : 1);
             pool.add(c);
             weights.add(weight);
             total += weight;
@@ -213,6 +228,39 @@ public final class SkySeaCreatures {
             }
         }
         return null;
+    }
+
+    /**
+     * A sea creature of a special pool: {@code hotspot} ones (by weight) for a bobber in a hotspot, or the {@code agarimoo}.
+     * Null if none can come up here for this player's Fishing level.
+     */
+    static Creature rollSpecial(ServerPlayer player, ServerLevel level, boolean lava, String zone, String condition) {
+        int fishing = SkillLevels.level(player, SkillLevels.FISHING);
+        List<Creature> pool = creatures.stream().filter(c -> c.condition().equals(condition) && c.lava() == lava && fishing >= c.fishingLevel()
+                && c.livesAt(level, zone)).toList();
+        double total = pool.stream().mapToDouble(c -> Math.max(1, c.weight())).sum();
+        double pick = player.getRandom().nextDouble() * total;
+        for (Creature c : pool) {
+            pick -= Math.max(1, c.weight());
+            if (pick < 0) {
+                return c;
+            }
+        }
+        return null;
+    }
+
+    /** True if an Empty Chumcap Bucket (placed as its head) stands within a few blocks of the bobber. */
+    static boolean chumcapNear(ServerLevel level, FishingHook hook) {
+        BlockPos center = hook.blockPosition();
+        for (BlockPos pos : BlockPos.betweenClosed(center.offset(-CHUMCAP_RANGE, -3, -CHUMCAP_RANGE), center.offset(CHUMCAP_RANGE, 3, CHUMCAP_RANGE))) {
+            if (level.getBlockEntity(pos) instanceof net.minecraft.world.level.block.entity.SkullBlockEntity skull) {
+                net.minecraft.world.item.component.CustomData data = skull.components().get(DataComponents.CUSTOM_DATA);
+                if (data != null && "EMPTY_CHUMCAP_BUCKET".equals(data.copyTag().getStringOr("id", ""))) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /** True if this player can have another sea creature out. */
@@ -352,6 +400,14 @@ public final class SkySeaCreatures {
             com.skyrpg.core.event.ItemGains.give(killer, stack, com.skyrpg.core.event.ItemGains.Source.COMBAT);
             if (!stack.isEmpty()) {
                 killer.drop(stack, false, net.minecraft.util.Prediction.SERVER_ONLY);
+            }
+        }
+        if (creature.condition().equals("fishing_festival")
+                && com.skyrpg.skyblock.time.CalendarEvents.running("fishing_festival", System.currentTimeMillis()) != null) {
+            int sharks = killer.getAttachedOrElse(FESTIVAL_SHARKS, 0) + 1;
+            killer.setAttached(FESTIVAL_SHARKS, sharks);
+            if (sharks % 50 == 0 && sharks <= 5000) {
+                com.skyrpg.core.progress.SkyBlockXp.give(killer, 1, "Fishing Festival");
             }
         }
         // Hypixel: sea creatures killed on a private island give no Fishing XP.
