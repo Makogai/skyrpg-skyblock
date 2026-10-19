@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-19",
-  "latest": "2026-10-19 Hypixel's dungeon rooms and boss arenas, Fairy Souls to Hypixel's count",
+  "latest": "2026-10-19 Dungeon puzzles (Ice Fill, Teleport Maze, Quiz), reforge abilities, Dwarven Mines dailies and events",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -141,7 +141,7 @@
           "name": "Dungeons",
           "icon": "item/bone",
           "weight": 12,
-          "done": 74
+          "done": 77
         },
         {
           "name": "Kuudra",
@@ -165,7 +165,7 @@
           "name": "Reforges, stars & gems",
           "icon": "item/prismarine_crystals",
           "weight": 5,
-          "done": 55
+          "done": 63
         },
         {
           "name": "Accessories",
@@ -213,7 +213,7 @@
           "name": "Dwarven Mines & Hollows",
           "icon": "item/iron_pickaxe",
           "weight": 10,
-          "done": 80
+          "done": 85
         },
         {
           "name": "The End",
@@ -295,7 +295,7 @@
     },
     {
       "date": "2026-10-19",
-      "overall": 77.2
+      "overall": 77.9
     }
   ]
 }
