@@ -30,6 +30,13 @@ public final class CardScreen extends AbstractContainerScreen<CardMenu> {
     private static final int HEIGHT = 226;
     private static final int PANEL = 96;
     private static final int GAP = 4;
+    /**
+     * The server reopens a card menu after every click (and when it changes, as a stray rabbit turns up): a menu reopened
+     * right after the same one closed keeps where you'd scrolled to.
+     */
+    private static String lastTitle = "";
+    private static int lastScroll;
+    private static long lastClosed;
     private final ScreenTheme theme;
     private int scroll;
     private int hovered = -1;
@@ -43,6 +50,21 @@ public final class CardScreen extends AbstractContainerScreen<CardMenu> {
             // An unknown theme falls back to SkyRPG's own.
         }
         this.theme = chosen;
+        if (key().equals(lastTitle) && System.currentTimeMillis() - lastClosed < 1500) {
+            scroll = lastScroll;
+        }
+    }
+
+    private String key() {
+        return menu.view().title() + "|" + menu.view().subtitle();
+    }
+
+    @Override
+    public void removed() {
+        super.removed();
+        lastTitle = key();
+        lastScroll = scroll;
+        lastClosed = System.currentTimeMillis();
     }
 
     private CardView view() {

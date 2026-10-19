@@ -260,7 +260,7 @@ final class FactoryMenu {
             String names = mine.isEmpty() ? "None yet." : String.join(", ", mine.subList(0, Math.min(12, mine.size())))
                     + (mine.size() > 12 ? " and " + (mine.size() - 12) + " more" : "");
             int color = switch (rarity) {
-                case 0 -> 0xFFFFFF;
+                case 0 -> 0xF2F2F2; // not 0xFFFFFF: a white card with an item shows the item's own name
                 case 1 -> 0x55FF55;
                 case 2 -> 0x5555FF;
                 case 3 -> 0xAA00AA;

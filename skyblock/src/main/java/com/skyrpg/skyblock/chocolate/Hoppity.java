@@ -124,7 +124,7 @@ final class Hoppity {
 
     private static int colorOf(int rarity) {
         return switch (rarity) {
-            case 0 -> 0xFFFFFF;
+            case 0 -> 0xF2F2F2; // not 0xFFFFFF: a white card with an item shows the item's own name
             case 1 -> 0x55FF55;
             case 2 -> 0x5555FF;
             case 3 -> 0xAA00AA;

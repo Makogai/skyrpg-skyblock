@@ -63,7 +63,10 @@ Bake, Hire, Promote, Upgrade, Activate, Prestige).
 All spring (Early Spring 1st to Late Spring 31st, the SkyBlock calendar). Eggs come at 7am, 2pm and 9pm: Breakfast,
 Lunch and Dinner one day, Brunch, Déjeuner and Supper the next (Hypixel's names). The six newest are out, each on every
 island at once at one of that island's 15 spots; each player finds each egg once, and an egg holds a rabbit
-(the rarity weights above, residents on their island). Eggs are only spawned near players (48 blocks).
+(the rarity weights above, residents on their island). Eggs are only spawned near players (48 blocks). Spawns are
+numbered in a row (day x 3 + meal) and step through the island's spots by a stride sharing no factor with their count,
+so the six eggs out at once are always at six different spots. An egg's click box is a whole block, so the grass it
+often sits in doesn't take the click.
 
 Decided where Hypixel's spots don't fit our islands: each island's 15 spots are picked once, on open ground in its
 zones, at least 8 blocks apart, and kept in the world. The Egglocator points a particle trail at the nearest egg you

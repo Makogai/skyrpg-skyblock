@@ -183,10 +183,19 @@ final class HoppitysHunt {
     }
 
     /** Which of the island's spots a spawn uses. */
+    /**
+     * The spot an egg is at on an island. Spawns are numbered in a row (day x 3 + meal), so stepping through the
+     * island's spots by a stride that shares no factor with their count gives every egg out at once its own spot.
+     */
     private static int spotOf(long key, String dimension, int count) {
-        long h = key * 31 + dimension.hashCode();
-        h ^= h >>> 17;
-        return (int) Math.floorMod(h * 0x9E3779B97F4A7C15L >>> 32, count);
+        int stride = 1;
+        for (int s : new int[] {7, 11, 13, 4}) {
+            if (java.math.BigInteger.valueOf(s).gcd(java.math.BigInteger.valueOf(count)).intValue() == 1) {
+                stride = s;
+                break;
+            }
+        }
+        return (int) Math.floorMod(key * stride + dimension.hashCode(), (long) count);
     }
 
     // ---------------------------------------------------------------- spots and eggs
@@ -311,8 +320,8 @@ final class HoppitysHunt {
         egg.snapTo(at.x, at.y + 0.35, at.z, level.getRandom().nextFloat() * 360, 0);
         parts.add(egg);
         if (box != null) {
-            ((com.skyrpg.skyblock.mixin.InteractionAccess) box).skyrpg$setWidth(0.7f);
-            ((com.skyrpg.skyblock.mixin.InteractionAccess) box).skyrpg$setHeight(0.7f);
+            ((com.skyrpg.skyblock.mixin.InteractionAccess) box).skyrpg$setWidth(1.0f);
+            ((com.skyrpg.skyblock.mixin.InteractionAccess) box).skyrpg$setHeight(1.0f);
             box.snapTo(at.x, at.y, at.z, 0, 0);
             parts.add(0, box);
         }
