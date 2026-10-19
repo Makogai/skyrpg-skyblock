@@ -173,7 +173,7 @@ public final class TrophyFishing {
      * A lava catch on the Crimson Isle: a trophy fish if one bites (given to the player and returned for the catch
      * event), else empty.
      */
-    static ItemStack tryCatch(ServerPlayer player, FishingHook hook, SkyFishing.Bait bait, String zone) {
+    static ItemStack tryCatch(ServerPlayer player, FishingHook hook, SkyFishing.Bait bait, String zone, double extraChance) {
         if (!lavaRod(player)) {
             return ItemStack.EMPTY;
         }
@@ -183,7 +183,7 @@ public final class TrophyFishing {
             streak[0] = now;
         }
         streak[1] = now;
-        double boost = 1 + Stats.get(player, StatTypes.TROPHY_FISH_CHANCE) / 100.0;
+        double boost = 1 + (Stats.get(player, StatTypes.TROPHY_FISH_CHANCE) + extraChance) / 100.0;
         List<Fish> order = new ArrayList<>(fish);
         order.sort((a, b) -> Integer.compare(RARITIES.indexOf(b.rarity()), RARITIES.indexOf(a.rarity())));
         for (Fish f : order) {
@@ -300,6 +300,10 @@ public final class TrophyFishing {
                 .append(Component.literal(TIERS.get(tier)).withColor(TIER_COLORS[tier]).withStyle(ChatFormatting.BOLD))
                 .append(Component.literal(first ? ". New!" : ".")));
         SkillLevels.giveXp(player, SkillLevels.FISHING, 50.0 * (1 << RARITIES.indexOf(f.rarity())));
+        if (first) {
+            // SkyBlock XP for the first of each fish at each tier: 4 / 8 / 16 / 32.
+            com.skyrpg.core.progress.SkyBlockXp.give(player, 4 << tier, "Trophy Fish");
+        }
         Msg.playSound(player, tier >= 2 ? SoundEvents.PLAYER_LEVELUP : SoundEvents.NOTE_BLOCK_PLING.value(), 0.8f, 1.2f + tier * 0.1f);
         return shown;
     }

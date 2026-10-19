@@ -73,7 +73,7 @@ CREATURES = {
     # The Crimson Isle's lava (docs/design/research/crimson-isle.md). decision: the wiki pages with their weights, damage
     # and Fishing XP weren't fetched; Fishing levels are Hypixel's as remembered (XXVII Magma Slug to XLV Lord Jawbus),
     # weights fall as they get rarer, Fishing XP and damage grow with health.
-    "FRIED_CHICKEN": ("Fried Chicken", "lava", 10, 350, 300, 400, {"dimension": CRIMSON}, None, "Smells of burning. But Chicken."),
+    "FRIED_CHICKEN": ("Fried Chicken", "lava", 14, 5000, 300, 400, {"dimension": CRIMSON}, "hotspot", "Smells of burning. But Chicken."),
     "MAGMA_SLUG": ("Magma Slug", "lava", 27, 450, 730, 1200, {"dimension": CRIMSON}, None, "From beneath the lava appears a Magma Slug."),
     "MOOGMA": ("Moogma", "lava", 28, 400, 950, 1500, {"dimension": CRIMSON}, None, "You hear a faint Moo from the lava... A Moogma appears."),
     "LAVA_LEECH": ("Lava Leech", "lava", 30, 300, 1400, 2000, {"dimension": CRIMSON}, None, "A small but fearsome Lava Leech emerges."),
@@ -83,11 +83,11 @@ CREATURES = {
     "FIRE_EEL": ("Fire Eel", "lava", 34, 200, 2200, 3000, {"dimension": CRIMSON}, None, "A Fire Eel slithers out from the depths."),
     "TAURUS": ("Taurus", "lava", 35, 150, 2700, 3500, {"dimension": CRIMSON}, None, "Taurus and his steed emerge."),
     "THUNDER": ("Thunder", "lava", 36, 18, 8000, 8000, {"dimension": CRIMSON}, None, "You hear a massive rumble as Thunder emerges."),
-    "FIERY_SCUTTLER": ("Fiery Scuttler", "lava", 43, 12, 10000, 10000, {"dimension": CRIMSON}, None,
+    "FIERY_SCUTTLER": ("Fiery Scuttler", "lava", 37, 100, 10000, 10000, {"dimension": CRIMSON}, "hotspot",
                        "A Fiery Scuttler inconspicuously waddles up to you, friends in tow."),
     "LORD_JAWBUS": ("Lord Jawbus", "lava", 45, 8, 40000, 15000, {"dimension": CRIMSON}, None,
                     "You have angered a legendary creature... Lord Jawbus has arrived."),
-    "RAGNAROK": ("Ragnarok", "lava", 46, 5, 50000, 20000, {"dimension": CRIMSON}, None, "The sky darkens and the air thickens. Ragnarok has arrived."),
+    "RAGNAROK": ("Ragnarok", "lava", 47, 25, 50000, 20000, {"dimension": CRIMSON}, "hotspot", "The sky darkens and the air thickens. Ragnarok has arrived."),
     # Marina's Fishing Festival: sharks replace 15% of the water's sea creatures (weights within the shark pool, Hypixel's).
     "NURSE_SHARK": ("Nurse Shark", "water", 5, 2875, 220, 80, None, "fishing_festival",
                     "A tiny fin emerges from the water, you've caught a Nurse Shark."),
@@ -105,6 +105,21 @@ CREATURES = {
     "PHANTOM_FISHER": ("Phantom Fisher", "water", 21, 100, 3140, 1000, None, "spooky_festival",
                        "The spirit of a long lost Phantom Fisher has come to haunt you."),
     "GRIM_REAPER": ("Grim Reaper", "water", 26, 25, 7800, 2100, None, "spooky_festival", "This can't be! The manifestation of death himself!"),
+    # Fishing Hotspots (the wiki's "Sea Creatures/List/Hotspot": Fishing level and weight; the lava ones also above). They only
+    # come up in a hotspot, 15% of the sea creature bites there (more with Hotspot Bait and Hook).
+    # decision: Hypixel's Fishing XP and damage weren't found; they grow with the creature's rarity.
+    "FROG_MAN": ("Frog Man", "water", 5, 5000, 400, 150, None, "hotspot", "A Frog Man leaps out of the water."),
+    "INKLING": ("Inkling", "water", 7, 2875, 700, 200, None, "hotspot", "An Inkling squirts out of the water."),
+    "SNAPPING_TURTLE": ("Snapping Turtle", "water", 10, 1500, 1000, 300, None, "hotspot", "A Snapping Turtle snaps at your line."),
+    "MANTA_RAY": ("Manta Ray", "water", 19, 500, 2000, 500, None, "hotspot", "A Manta Ray glides up from the deep."),
+    "BLUE_RINGED_OCTOPUS": ("Blue Ringed Octopus", "water", 35, 100, 6000, 1500, None, "hotspot",
+                            "A Blue Ringed Octopus reaches up from the water, careful of its sting!"),
+    "WIKI_TIKI": ("Wiki Tiki", "water", 40, 25, 20000, 3000, None, "hotspot", "Wiki Tiki rises from the depths, and he's angry."),
+    "VOLCANIC_SNAIL": ("Volcanic Snail", "lava", 17, 2875, 1500, 1800, {"dimension": CRIMSON}, "hotspot", "A Volcanic Snail slowly crawls out of the lava."),
+    "FIREPROOF_WITCH": ("Fireproof Witch", "lava", 22, 1500, 2000, 2200, {"dimension": CRIMSON}, "hotspot", "A Fireproof Witch rises from the lava."),
+    "MAGMA_PILLAR": ("Magma Pillar", "lava", 31, 500, 3500, 3000, {"dimension": CRIMSON}, "hotspot", "A Magma Pillar erupts from the lava."),
+    # The Agarimoo: only near an Empty Chumcap Bucket you placed (15% of the sea creature bites there).
+    "AGARIMOO": ("Agarimoo", "water", 15, 0, 1012, 500, None, "agarimoo", "Your Chumcap Bucket trembles, it's an Agarimoo."),
 }
 # What NEU's render can't show as a mob (an invisible armour stand wearing the creature): decision.
 LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER": {"entity": "minecraft:spider"},
@@ -114,11 +129,11 @@ LOOK_OVERRIDE = {"FIRE_EEL": {"entity": "minecraft:silverfish"}, "FIERY_SCUTTLER
                  # NEU's render holds a "phantom_rod", which isn't an item
                  "PHANTOM_FISHER": {"entity": "minecraft:zombie", "hand": {"item": "minecraft:fishing_rod"}}}
 # Where NEU's sea creature data is out of date (the sharks: Hypixel's wiki, Oct 2026): level, Combat XP, coins.
-STATS_OVERRIDE = {"NURSE_SHARK": (22, 26, 22), "BLUE_SHARK": (52, 67, 65), "TIGER_SHARK": (99, 149, 148), "GREAT_WHITE_SHARK": (160, 401, 320),
+STATS_OVERRIDE = {"INKLING": (25, 30, 30), "MANTA_RAY": (124, 150, 186), "AGARIMOO": (81, 106, 101), "NURSE_SHARK": (22, 26, 22), "BLUE_SHARK": (52, 67, 65), "TIGER_SHARK": (99, 149, 148), "GREAT_WHITE_SHARK": (160, 401, 320),
                   "SCARECROW": (32, 39, 32), "NIGHTMARE": (77, 100, 96), "WEREWOLF": (69, 103, 103), "PHANTOM_FISHER": (157, 393, 314),
                   "GRIM_REAPER": (312, 1564, 1560)}
 # NEU's lore has "1.200,000" for the Pyroclastic Worm.
-HEALTH_OVERRIDE = {"PYROCLASTIC_WORM": 1_200_000, "SCARECROW": 4_500, "NIGHTMARE": 35_000, "WEREWOLF": 50_000,
+HEALTH_OVERRIDE = {"MANTA_RAY": 500_000, "VOLCANIC_SNAIL": 400_000, "MAGMA_PILLAR": 5_000_000, "PYROCLASTIC_WORM": 1_200_000, "SCARECROW": 4_500, "NIGHTMARE": 35_000, "WEREWOLF": 50_000,
                    "PHANTOM_FISHER": 1_000_000, "GRIM_REAPER": 3_000_000}
 
 # NEU has no recipe for the plain Squid: its drops from the wiki.
@@ -131,7 +146,7 @@ ENTITIES = {"Zombie": "minecraft:zombie", "Skeleton": "minecraft:skeleton", "Wit
             "Ocelot": "minecraft:ocelot", "Chicken": "minecraft:chicken", "Rabbit": "minecraft:rabbit", "Sheep": "minecraft:sheep",
             "Endermite": "minecraft:endermite", "Blaze": "minecraft:blaze", "Pigman": "minecraft:zombified_piglin",
             "Player": "minecraft:zombie", "MagmaCube": "minecraft:magma_cube", "Mooshroom": "minecraft:mooshroom",
-            "Pig": "minecraft:pig", "Horse": "minecraft:horse"}
+            "Pig": "minecraft:pig", "Phantom": "minecraft:phantom", "Horse": "minecraft:horse"}
 
 NORMAL = {
     "water": [{"item": "RAW_FISH", "weight": 220}, {"item": "RAW_FISH:1", "weight": 150},
@@ -161,12 +176,12 @@ TIERS = {"good": 89, "great": 10, "outstanding": 1}
 # Hypixel's baits: Fishing Speed, Sea Creature Chance, Treasure Chance and what else they do.
 BAITS = {
     "MINNOW_BAIT": {"speed": 25}, "FISH_BAIT": {"speed": 45}, "LIGHT_BAIT": {"rare": "day"}, "DARK_BAIT": {"rare": "night"},
-    "SPIKED_BAIT": {"sea_creature_chance": 6}, "SPOOKY_BAIT": {"speed": 25}, "CARROT_BAIT": {"carrot_king": 0.05},
+    "SPIKED_BAIT": {"sea_creature_chance": 6}, "SPOOKY_BAIT": {"speed": 25, "spooky": 0.15}, "CARROT_BAIT": {"carrot_king": 0.05},
     "BLESSED_BAIT": {"blessed": 0.5}, "ICE_BAIT": {"speed": 25, "sea_creature_chance": 4},
-    "GLOWY_CHUM_BAIT": {"speed": 25, "sea_creature_chance": 3}, "HOT_BAIT": {"speed": 15}, "WORM_BAIT": {"speed": 60, "hollows": True},
+    "GLOWY_CHUM_BAIT": {"speed": 25, "sea_creature_chance": 3}, "HOT_BAIT": {"speed": 15, "trophy_chance": 5}, "WORM_BAIT": {"speed": 60, "hollows": True},
     "GOLDEN_BAIT": {"treasure_chance": 4}, "FROZEN_BAIT": {"speed": 50, "sea_creature_chance": 8},
     "WHALE_BAIT": {"speed": 30, "rare": "always"}, "TREASURE_BAIT": {"speed": 10, "treasure_chance": 2},
-    "SHARK_BAIT": {}, "HOTSPOT_BAIT": {}, "CORRUPTED_BAIT": {}, "WOODEN_BAIT": {},
+    "SHARK_BAIT": {"shark": 0.2}, "HOTSPOT_BAIT": {"hotspot": 0.2}, "CORRUPTED_BAIT": {}, "WOODEN_BAIT": {},
 }
 
 
@@ -276,6 +291,9 @@ def main():
                     "level": recipe.get("level", 1), "health": health, "damage": damage, "fishing_xp": fxp,
                     "combat_xp": recipe.get("xp") or 0, "coins": recipe.get("coins") or 0, "message": message,
                     "look": LOOK_OVERRIDE.get(ident) or look(neu, recipe.get("render", "Zombie"), name), "drops": drops}
+        if ident == "INKLING":
+            # decision: NEU has no recipe for the Inkling: ink, as its name says.
+            creature["drops"] = [{"item": "INK_SACK", "chance": 1, "min": 2, "max": 4}, {"item": "ENCHANTED_INK_SACK", "chance": 0.05, "min": 1, "max": 1}]
         if ident in STATS_OVERRIDE:
             creature["level"], creature["combat_xp"], creature["coins"] = STATS_OVERRIDE[ident]
         if where:

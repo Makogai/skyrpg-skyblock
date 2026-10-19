@@ -17,7 +17,10 @@ import com.skyrpg.items.ItemRegistry;
 import com.skyrpg.items.SkyItems;
 import com.skyrpg.items.enchant.Books;
 import com.skyrpg.skyblock.SkyRpgSkyblock;
+import com.skyrpg.items.RodParts;
+import com.skyrpg.skyblock.accessory.AccessoryBag;
 import com.skyrpg.skyblock.island.Islands;
+import com.skyrpg.skyblock.sack.Sacks;
 import com.skyrpg.skyblock.mining.SkyMining;
 import com.skyrpg.skyblock.pet.SkyBlockPets;
 import com.skyrpg.skyblock.zone.Zones;
@@ -59,7 +62,7 @@ public final class SkyFishing {
 
     /** A Hypixel bait: what it adds while it's the bait you fish with. */
     public record Bait(String id, double speed, double seaCreatureChance, double treasureChance, String rare, double carrotKing,
-                       double blessed, boolean hollowsOnly) {
+                       double blessed, boolean hollowsOnly, double trophyChance, double hotspot) {
     }
 
     /** One catch in a pool: a SkyBlock item ({@code pet:SQUID:EPIC}, {@code coins:min-max}), how many, its weight. */
@@ -93,6 +96,8 @@ public final class SkyFishing {
                 && (player.getMainHandItem().getItem() instanceof FishingRodItem || player.getOffhandItem().getItem() instanceof FishingRodItem)
                 || level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL) && lavaRod(player));
         TrophyFishing.init();
+        SkyHotspots.init();
+        Roddy.init();
         SkySeaCreatures.init();
         // Testing: reel in the line a player has out as if a fish bit, or bring up a given sea creature at it.
         net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback.EVENT.register((dispatcher, context, selection) -> dispatcher.register(
@@ -110,6 +115,9 @@ public final class SkyFishing {
                                     hook.discard();
                                     return caught ? 1 : 0;
                                 })))
+                        .then(net.minecraft.commands.Commands.literal("hotspot").then(net.minecraft.commands.Commands.argument("stat",
+                                com.mojang.brigadier.arguments.StringArgumentType.word()).executes(ctx -> SkyHotspots.debugSpawn(
+                                        ctx.getSource().getPlayerOrException(), com.mojang.brigadier.arguments.StringArgumentType.getString(ctx, "stat")))))
                         .then(net.minecraft.commands.Commands.literal("creature").then(net.minecraft.commands.Commands.argument("player",
                                 net.minecraft.commands.arguments.EntityArgument.player()).then(net.minecraft.commands.Commands.argument("id",
                                         com.mojang.brigadier.arguments.StringArgumentType.word()).suggests((ctx, builder) ->
@@ -153,7 +161,7 @@ public final class SkyFishing {
             JsonObject b = e.getValue().getAsJsonObject();
             loadedBaits.put(e.getKey(), new Bait(e.getKey(), number(b, "speed"), number(b, "sea_creature_chance"), number(b, "treasure_chance"),
                     b.has("rare") ? b.get("rare").getAsString() : "", number(b, "carrot_king"), number(b, "blessed"),
-                    b.has("hollows") && b.get("hollows").getAsBoolean()));
+                    b.has("hollows") && b.get("hollows").getAsBoolean(), number(b, "trophy_chance"), number(b, "hotspot")));
         });
         normal = loadedNormal;
         treasure = loadedTreasure;
@@ -174,7 +182,7 @@ public final class SkyFishing {
         return json.has(key) ? json.get(key).getAsDouble() : 0;
     }
 
-    /** The first bait in the inventory (Hypixel uses up baits in inventory order), or null. */
+    /** The first bait in the inventory (Hypixel uses up baits in inventory order), else one in the Bait Sack, or null. */
     public static Bait bait(ServerPlayer player) {
         Inventory inventory = player.getInventory();
         for (int i = 0; i < inventory.getContainerSize(); i++) {
@@ -184,18 +192,30 @@ public final class SkyFishing {
                 return bait;
             }
         }
+        Map<String, Long> sacks = Sacks.contents(player);
+        for (Bait bait : baits.values()) {
+            if (sacks.getOrDefault(bait.id(), 0L) > 0) {
+                return bait;
+            }
+        }
         return null;
     }
 
+    /** Uses up one bait (the inventory's first, then the sacks'), unless a Bait Ring, Stingy Sinker or Caster saves it. */
     private static void useBait(ServerPlayer player, Bait bait) {
-        Inventory inventory = player.getInventory();
-        for (int i = 0; i < inventory.getContainerSize(); i++) {
-            ItemDefinition def = SkyItems.definition(inventory.getItem(i));
-            if (def != null && def.skyblockId().equals(bait.id())) {
-                inventory.getItem(i).shrink(1);
-                return;
-            }
+        if (player.getRandom().nextDouble() < saveChance(player)) {
+            return;
         }
+        Sacks.takeAnywhere(player, bait.id(), 1);
+    }
+
+    /** Hypixel's chance to not use up bait: Bait Ring 5% (Spiked Atrocity 10% instead), Stingy Sinker 10%, Caster 5% a level; at most 60%. */
+    private static double saveChance(ServerPlayer player) {
+        ItemStack rod = player.getMainHandItem();
+        double chance = AccessoryBag.has(player, "SPIKED_ATROCITY") ? 0.10 : AccessoryBag.has(player, "BAIT_RING") ? 0.05 : 0;
+        chance += RodParts.has(rod, "STINGY_SINKER") ? 0.10 : 0;
+        chance += 0.05 * com.skyrpg.items.ItemMods.enchantment(rod, "caster");
+        return Math.min(0.60, chance);
     }
 
     /** The bait's bonuses count here (Worm Bait only in the Crystal Hollows). */
@@ -206,7 +226,9 @@ public final class SkyFishing {
     /** Hypixel's wait: 200 to 400 ticks, less by Fishing Speed over its cap of 300. */
     static int waitTicks(FishingHook hook, ServerPlayer player) {
         Bait bait = bait(player);
-        double speed = Stats.get(player, StatTypes.FISHING_SPEED) + (counts(bait, player.level()) ? bait.speed() : 0);
+        double speed = Stats.get(player, StatTypes.FISHING_SPEED) + (counts(bait, player.level()) ? bait.speed() : 0)
+                + SkyHotspots.bonus(hook, player, "fishing_speed");
+        SkyHotspots.announce(hook, player);
         int base = 200 + player.getRandom().nextInt(201);
         return (int) Math.round(base * Math.max(0, 1 - speed / SPEED_CAP));
     }
@@ -234,18 +256,22 @@ public final class SkyFishing {
         boolean baitCounts = counts(bait, level);
         Zones.Zone zone = Zones.at(level, hook.blockPosition());
         String zoneName = zone == null ? "" : zone.name();
-        double chance = Stats.get(player, StatTypes.SEA_CREATURE_CHANCE) + (baitCounts ? bait.seaCreatureChance() : 0);
+        double chance = Stats.get(player, StatTypes.SEA_CREATURE_CHANCE) + (baitCounts ? bait.seaCreatureChance() : 0)
+                + SkyHotspots.bonus(hook, player, "sea_creature_chance");
         if (Islands.isIslands(level)) {
             chance /= 4;
         }
+        ItemStack rod = player.getMainHandItem();
+        boolean treasureHook = RodParts.has(rod, "TREASURE_HOOK");
         boolean creature = false;
-        if (random.nextDouble() * 100 < chance && SkySeaCreatures.room(player)) {
-            SkySeaCreatures.Creature first = SkySeaCreatures.roll(player, level, lava, zoneName, baitCounts ? bait : null);
+        if (!treasureHook && random.nextDouble() * 100 < chance && SkySeaCreatures.room(player)) {
+            SkySeaCreatures.Creature first = pickCreature(player, hook, level, lava, zoneName, baitCounts ? bait : null);
             if (first != null) {
                 creature = true;
                 SkySeaCreatures.surface(first, hook, player, false);
-                if (random.nextDouble() * 100 < Stats.get(player, StatTypes.DOUBLE_HOOK_CHANCE) && SkySeaCreatures.room(player)) {
-                    SkySeaCreatures.Creature second = SkySeaCreatures.roll(player, level, lava, zoneName, baitCounts ? bait : null);
+                if (random.nextDouble() * 100 < Stats.get(player, StatTypes.DOUBLE_HOOK_CHANCE) + SkyHotspots.bonus(hook, player, "double_hook_chance")
+                        && SkySeaCreatures.room(player)) {
+                    SkySeaCreatures.Creature second = pickCreature(player, hook, level, lava, zoneName, baitCounts ? bait : null);
                     if (second != null) {
                         SkySeaCreatures.surface(second, hook, player, true);
                     }
@@ -254,19 +280,60 @@ public final class SkyFishing {
         }
         ItemStack caught = ItemStack.EMPTY;
         if (!creature && lava && level.dimension().equals(com.skyrpg.skyblock.crimson.CrimsonIsle.LEVEL)) {
-            caught = TrophyFishing.tryCatch(player, hook, baitCounts ? bait : null, zoneName);
+            caught = TrophyFishing.tryCatch(player, hook, baitCounts ? bait : null, zoneName,
+                    (baitCounts ? bait.trophyChance() : 0) + SkyHotspots.bonus(hook, player, "trophy_fish_chance"));
         }
         if (!creature && caught.isEmpty()) {
-            double treasureChance = Stats.get(player, StatTypes.TREASURE_CHANCE) + (baitCounts ? bait.treasureChance() : 0);
+            double treasureChance = Stats.get(player, StatTypes.TREASURE_CHANCE) + (baitCounts ? bait.treasureChance() : 0)
+                    + SkyHotspots.bonus(hook, player, "treasure_chance");
             caught = !lava && random.nextDouble() * 100 < treasureChance ? treasure(player, baitCounts ? bait : null)
                     : fish(player, lava ? "lava" : "water");
         }
         if (bait != null) {
             useBait(player, bait);
         }
+        materialize(player, rod);
         Msg.playSound(player, SoundEvents.EXPERIENCE_ORB_PICKUP, 0.7f, 1.3f);
         Catches.CAUGHT.invoker().onCaught(player, caught, creature);
         return true;
+    }
+
+    /** The sea creature a bite brings up: a hotspot's (15%, more with Hotspot Bait and Hook), an Agarimoo by a Chumcap Bucket, or the island's. */
+    private static SkySeaCreatures.Creature pickCreature(ServerPlayer player, FishingHook hook, ServerLevel level, boolean lava, String zone, Bait bait) {
+        RandomSource random = player.getRandom();
+        SkySeaCreatures.Creature special = null;
+        if (SkyHotspots.at(hook) != null) {
+            double chance = 0.15 + (bait == null ? 0 : bait.hotspot()) + (RodParts.has(player.getMainHandItem(), "HOTSPOT_HOOK") ? 0.20 : 0);
+            if (random.nextDouble() < chance) {
+                special = SkySeaCreatures.rollSpecial(player, level, lava, zone, "hotspot");
+            }
+        }
+        if (special == null && !lava && random.nextDouble() < 0.15 && SkySeaCreatures.chumcapNear(level, hook)) {
+            special = SkySeaCreatures.rollSpecial(player, level, false, zone, "agarimoo");
+        }
+        return special != null ? special : SkySeaCreatures.roll(player, level, lava, zone, bait);
+    }
+
+    /** The sinker on the rod puts its item in the inventory with every catch (Prismarine: Shard or Crystals). */
+    private static void materialize(ServerPlayer player, ItemStack rod) {
+        String item = null;
+        if (RodParts.has(rod, "PRISMARINE_SINKER")) {
+            item = player.getRandom().nextBoolean() ? "PRISMARINE_SHARD" : "PRISMARINE_CRYSTALS";
+        } else if (RodParts.has(rod, "ICY_SINKER")) {
+            item = "ICE";
+        } else if (RodParts.has(rod, "SPONGE_SINKER")) {
+            item = "SPONGE";
+        } else if (RodParts.has(rod, "CHUM_SINKER")) {
+            item = "CHUM";
+        } else if (RodParts.has(rod, "LOTUS_SINKER")) {
+            item = "LOTUS";
+        }
+        if (item != null) {
+            ItemStack stack = stack(item, 1);
+            if (!stack.isEmpty()) {
+                Catching.give(player, stack);
+            }
+        }
     }
 
     /** A fish (or lava's catch), with the Fishing XP Hypixel gives for it. */

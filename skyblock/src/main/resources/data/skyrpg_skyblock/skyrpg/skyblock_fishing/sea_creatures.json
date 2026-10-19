@@ -1170,8 +1170,8 @@
    "name": "Fried Chicken",
    "rarity": "COMMON",
    "fluid": "lava",
-   "fishing_level": 10,
-   "weight": 350,
+   "fishing_level": 14,
+   "weight": 5000,
    "level": 30,
    "health": 65000.0,
    "damage": 400,
@@ -1210,7 +1210,8 @@
    ],
    "where": {
     "dimension": "skyrpg_skyblock:crimson_isle"
-   }
+   },
+   "condition": "hotspot"
   },
   {
    "id": "MAGMA_SLUG",
@@ -1556,8 +1557,8 @@
    "name": "Fiery Scuttler",
    "rarity": "LEGENDARY",
    "fluid": "lava",
-   "fishing_level": 43,
-   "weight": 12,
+   "fishing_level": 37,
+   "weight": 100,
    "level": 475,
    "health": 10000000.0,
    "damage": 10000,
@@ -1602,7 +1603,8 @@
    ],
    "where": {
     "dimension": "skyrpg_skyblock:crimson_isle"
-   }
+   },
+   "condition": "hotspot"
   },
   {
    "id": "LORD_JAWBUS",
@@ -1656,8 +1658,8 @@
    "name": "Ragnarok",
    "rarity": "MYTHIC",
    "fluid": "lava",
-   "fishing_level": 46,
-   "weight": 5,
+   "fishing_level": 47,
+   "weight": 25,
    "level": 666,
    "health": 125000000.0,
    "damage": 20000,
@@ -1709,7 +1711,8 @@
    ],
    "where": {
     "dimension": "skyrpg_skyblock:crimson_isle"
-   }
+   },
+   "condition": "hotspot"
   },
   {
    "id": "NURSE_SHARK",
@@ -2142,6 +2145,466 @@
     }
    ],
    "condition": "spooky_festival"
+  },
+  {
+   "id": "FROG_MAN",
+   "name": "Frog Man",
+   "rarity": "COMMON",
+   "fluid": "water",
+   "fishing_level": 5,
+   "weight": 5000,
+   "level": 10,
+   "health": 2500.0,
+   "damage": 150,
+   "fishing_xp": 400,
+   "combat_xp": 40,
+   "coins": 40,
+   "message": "A Frog Man leaps out of the water.",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "HALF_EATEN_MUSHROOM",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "CLAY_BALL",
+     "chance": 1.0,
+     "min": 1,
+     "max": 2
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "INKLING",
+   "name": "Inkling",
+   "rarity": "UNCOMMON",
+   "fluid": "water",
+   "fishing_level": 7,
+   "weight": 2875,
+   "level": 25,
+   "health": 6500.0,
+   "damage": 200,
+   "fishing_xp": 700,
+   "combat_xp": 30,
+   "coins": 30,
+   "message": "An Inkling squirts out of the water.",
+   "look": {
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "INK_SACK",
+     "chance": 1,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "ENCHANTED_INK_SACK",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "SNAPPING_TURTLE",
+   "name": "Snapping Turtle",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 10,
+   "weight": 1500,
+   "level": 30,
+   "health": 35000.0,
+   "damage": 300,
+   "fishing_xp": 1000,
+   "combat_xp": 30,
+   "coins": 100,
+   "message": "A Snapping Turtle snaps at your line.",
+   "look": {
+    "head": {
+     "skin": "ewogICJ0aW1lc3RhbXAiIDogMTczODk0Nzk5MzY4OCwKICAicHJvZmlsZUlkIiA6ICJkZjM1MjcwM2MxMzI0MjYwYjQ1NGQ3ODI3MjU5YjVhOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJMdW5jaGVyMTU1IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UwOGZjMWFlODdhNzAzNWQzMmIwYjBkYTU4ZGU0ODAxNDYzYWFmOGIyMzg2MTgwMjRhYWNiMGM1MTVhZTNiYmEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "CLAY_BALL",
+     "chance": 1.0,
+     "min": 8,
+     "max": 16
+    },
+    {
+     "item": "ENCHANTED_CLAY_BALL",
+     "chance": 0.02,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "BROKEN_RADAR",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "EDIBLE_SEAWEED",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_FISHING_SKILL_BOOST_RARE",
+     "chance": 0.0005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "MANTA_RAY",
+   "name": "Manta Ray",
+   "rarity": "EPIC",
+   "fluid": "water",
+   "fishing_level": 19,
+   "weight": 500,
+   "level": 124,
+   "health": 500000,
+   "damage": 500,
+   "fishing_xp": 2000,
+   "combat_xp": 150,
+   "coins": 186,
+   "message": "A Manta Ray glides up from the deep.",
+   "look": {
+    "entity": "minecraft:phantom"
+   },
+   "drops": [
+    {
+     "item": "CLAY_BALL",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "ENCHANTED_CLAY_BALL",
+     "chance": 0.1,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_CLAY_BLOCK",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "PET_ITEM_FISHING_SKILL_BOOST_EPIC",
+     "chance": 0.0005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "BLUE_RINGED_OCTOPUS",
+   "name": "Blue Ringed Octopus",
+   "rarity": "LEGENDARY",
+   "fluid": "water",
+   "fishing_level": 35,
+   "weight": 100,
+   "level": 15,
+   "health": 4000000.0,
+   "damage": 1500,
+   "fishing_xp": 6000,
+   "combat_xp": 5000,
+   "coins": 2500,
+   "message": "A Blue Ringed Octopus reaches up from the water, careful of its sting!",
+   "look": {
+    "head": {
+     "skin": "ewogICJ0aW1lc3RhbXAiIDogMTczOTIyODE2NzU4NCwKICAicHJvZmlsZUlkIiA6ICJjZjc4YzFkZjE3ZTI0Y2Q5YTIxYmU4NWQ0NDk5ZWE4ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXR0c0FybW9yU3RhbmRzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IyYjYwNzRkMGM5ZDZiODlhNDk0Y2Y0Zjc0MTU4MjgyYTY0ZWUyM2JhOGEwNzI1NjMzYWQ3MDkzMmFkYTFhOGYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "ENCHANTED_CLAY_BALL",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "BLUE_RING",
+     "chance": 1.0,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_CLAY_BLOCK",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "OCTOPUS_TENDRIL",
+     "chance": 0.002,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "WIKI_TIKI",
+   "name": "Wiki Tiki",
+   "rarity": "MYTHIC",
+   "fluid": "water",
+   "fishing_level": 40,
+   "weight": 25,
+   "level": 400,
+   "health": 75000000.0,
+   "damage": 3000,
+   "fishing_xp": 20000,
+   "combat_xp": 7500,
+   "coins": 7500,
+   "message": "Wiki Tiki rises from the depths, and he's angry.",
+   "look": {
+    "head": {
+     "skin": "ewogICJ0aW1lc3RhbXAiIDogMTczOTYzMjQ0MDEyOCwKICAicHJvZmlsZUlkIiA6ICJjNmViMzdjNmE4YjM0MDI3OGJjN2FmZGE3ZjMxOWJmMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJFbFJleUNhbGFiYXphbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mM2M4MDJlNTgwYmZlZmMxOGM0YWY5NGNjZWI4Mjk2OGI1YjRhZWFiMGQ4MzIzNDZhNjMzYTc0NzNhNDFkZmFjIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "ENCHANTED_JUNGLE_LOG",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "ENCHANTED_CLAY_BALL",
+     "chance": 1.0,
+     "min": 16,
+     "max": 32
+    },
+    {
+     "item": "BOBBIN_SCRIPTURES",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "TROUBLED_BUBBLE",
+     "chance": 0.002,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_CLAY_BLOCK",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "TIKI_MASK",
+     "chance": 0.001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "condition": "hotspot"
+  },
+  {
+   "id": "VOLCANIC_SNAIL",
+   "name": "Volcanic Snail",
+   "rarity": "UNCOMMON",
+   "fluid": "lava",
+   "fishing_level": 17,
+   "weight": 2875,
+   "level": 90,
+   "health": 400000,
+   "damage": 1800,
+   "fishing_xp": 1500,
+   "combat_xp": 108,
+   "coins": 90,
+   "message": "A Volcanic Snail slowly crawls out of the lava.",
+   "look": {
+    "head": {
+     "skin": "ewogICJ0aW1lc3RhbXAiIDogMTc3MzMyOTEwMDI3OCwKICAicHJvZmlsZUlkIiA6ICIzOTg5OGFiODFmMjU0NmQxOGIyY2ExMTE1MDRkZGU1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YjJjYTExMTUwNGRkZTUwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzliZjlkM2JkNGMzZGNjYTM1MGE0Mzg4MDRkZDQyZmFlMmIzNDc0ZGMwOTI4ZmEwYWQ1NDdhZDQwNzAyYWNmNzEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+    },
+    "entity": "minecraft:zombie"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "SEARED_ESCARGOT",
+     "chance": 0.04,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 0.01,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   },
+   "condition": "hotspot"
+  },
+  {
+   "id": "FIREPROOF_WITCH",
+   "name": "Fireproof Witch",
+   "rarity": "RARE",
+   "fluid": "lava",
+   "fishing_level": 22,
+   "weight": 1500,
+   "level": 75,
+   "health": 65000.0,
+   "damage": 2200,
+   "fishing_xp": 2000,
+   "combat_xp": 75,
+   "coins": 1250,
+   "message": "A Fireproof Witch rises from the lava.",
+   "look": {
+    "entity": "minecraft:witch"
+   },
+   "drops": [
+    {
+     "item": "SULPHUR",
+     "chance": 1.0,
+     "min": 8,
+     "max": 8
+    },
+    {
+     "item": "MAGMA_FISH",
+     "chance": 1.0,
+     "min": 60,
+     "max": 60
+    },
+    {
+     "item": "ENCHANTED_GLOWSTONE_DUST",
+     "chance": 0.5,
+     "min": 60,
+     "max": 60
+    },
+    {
+     "item": "ENCHANTED_GUNPOWDER",
+     "chance": 0.05,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "ENCHANTED_GLOWSTONE",
+     "chance": 0.005,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "SINGED_POWDER",
+     "chance": 0.025,
+     "min": 1,
+     "max": 1
+    },
+    {
+     "item": "book:fire_protection:6",
+     "chance": 0.0001,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   },
+   "condition": "hotspot"
+  },
+  {
+   "id": "MAGMA_PILLAR",
+   "name": "Magma Pillar",
+   "rarity": "EPIC",
+   "fluid": "lava",
+   "fishing_level": 31,
+   "weight": 500,
+   "level": 220,
+   "health": 5000000,
+   "damage": 3000,
+   "fishing_xp": 3500,
+   "combat_xp": 330,
+   "coins": 330,
+   "message": "A Magma Pillar erupts from the lava.",
+   "look": {
+    "mount": "minecraft:magma_cube",
+    "entity": "minecraft:magma_cube"
+   },
+   "drops": [
+    {
+     "item": "MAGMA_FISH_SILVER",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "ENCHANTED_MAGMA_CREAM",
+     "chance": 1.0,
+     "min": 2,
+     "max": 4
+    },
+    {
+     "item": "book:magmarizer:6",
+     "chance": 0.0005,
+     "min": 1,
+     "max": 1
+    }
+   ],
+   "where": {
+    "dimension": "skyrpg_skyblock:crimson_isle"
+   },
+   "condition": "hotspot"
+  },
+  {
+   "id": "AGARIMOO",
+   "name": "Agarimoo",
+   "rarity": "RARE",
+   "fluid": "water",
+   "fishing_level": 15,
+   "weight": 0,
+   "level": 81,
+   "health": 55000.0,
+   "damage": 500,
+   "fishing_xp": 1012,
+   "combat_xp": 106,
+   "coins": 101,
+   "message": "Your Chumcap Bucket trembles, it's an Agarimoo.",
+   "look": {
+    "entity": "minecraft:mooshroom"
+   },
+   "drops": [
+    {
+     "item": "RED_MUSHROOM",
+     "chance": 1.0,
+     "min": 35,
+     "max": 55
+    },
+    {
+     "item": "AGARIMOO_TONGUE",
+     "chance": 1.0,
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "condition": "agarimoo"
   }
  ]
 }

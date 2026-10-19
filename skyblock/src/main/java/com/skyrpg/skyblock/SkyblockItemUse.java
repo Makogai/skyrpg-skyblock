@@ -25,7 +25,7 @@ public final class SkyblockItemUse {
     }
 
     /** Utility blocks Hypixel lets you place on your island although their data doesn't say so. */
-    private static final java.util.Set<String> PLACEABLE = java.util.Set.of("BREWING_STAND_ITEM");
+    private static final java.util.Set<String> PLACEABLE = java.util.Set.of("BREWING_STAND_ITEM", "EMPTY_CHUMCAP_BUCKET");
 
     static void init() {
         UseItemCallback.EVENT.register((player, level, hand) ->
