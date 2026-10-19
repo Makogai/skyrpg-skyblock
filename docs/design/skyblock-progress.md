@@ -988,11 +988,27 @@ phase so the next session can pick up where this one stopped.
       Higher or Lower in Hypixel's blaze room. Puzzle rooms are named by their puzzle and a run takes no room twice
       while others are left (so no puzzle twice); traps take Hypixel's trap rooms. Water Board, Boulder, Ice Path and
       Creeper Beams rooms not yet (left out of the pool).
+- [x] **SkyBlock Leveling, part 2** (`leveling/LevelingTasks`, `LevelingMenu`, `Emblems`; core `SkyBlockXp.onGiven`,
+      `SkyBlockEmblems`): Hypixel's task categories (Core, Event, Dungeon, Essence Shop, Slaying, Skill Related,
+      Miscellaneous, Story, Consumables) with the wiki's tasks and their most XP (0.27.2); every grant is filed under a
+      task by its reason (a task's own name, or the older reasons: "Mining level", "collection tier"...), and the menu
+      (`/sblevel tasks`, the Leveling page's panel) shows each against its most. New sources: Pet Score (+3 a point: each
+      kind of pet at its best rarity, +1 at max level), HotM tiers, the Peak, powder (decided: past 600,000 of a powder
+      its share comes in as 1 - e^(-extra/scale)), Commission milestones (decided: at 5/15/30/50/80/150 commissions),
+      class levels, first floor and Master Mode clears, essence and Crimson perks, warps unlocked (decided: a warp
+      counts as Hypixel's Travel Scroll), first dragon kills, Mythological kills, Mining Fiesta ores, Chocolate Factory
+      prestiges, Mythic and Divine rabbits, Jacob gold medals; the helpers' Trophy Fish, Fishing Festival, Nucleus runs,
+      Defeat Slayers, Accessory Bag MP, Powers and bag upgrades. Emblems (51: SkyBlock Levels, skills, the Catacombs)
+      after your name in chat. Decided: XP given before the tally isn't split into tasks (it stays in the level).
+      Not yet: the Book of Progression and its bonuses, the Consumables' items, bank upgrades.
 - [x] **Fairy Souls on every island to Hypixel's count** (`tools/skyblock/place_fairy_souls.py`): Gold Mine 12, Deep
       Caverns 21, Spider's Den 19, Farming Islands 20, Crimson Isle 29, Dwarven Mines 15 (244 of Hypixel's 289; the rest
       are on islands we don't have yet: Jerry's Workshop, Backwater Bayou, Lotus Atoll, the safari).
-- [ ] Galatea and the reworked Park (Hypixel's floating islands) from clean captures (the first ones had been opened in
-      singleplayer and lost leaves); the Garden's other plots.
+- [x] **Galatea and the 2025 Park on Hypixel's maps** (the owners' clean captures `galatea` and `park_unopened`):
+      zones, NPCs (NEU's current spots; the wiki says which area each stands in), NEU's 12 Fairy Souls each, warps,
+      the gates where the captures' barriers are, Hypixel's nine custom biomes (`data/hypixel/worldgen/biome`; decided:
+      our colours) so the chunks keep theirs. See docs/design/hypixel-maps.md.
+- [ ] The Garden's other plots (a capture of a Garden with them).
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 

@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-19",
-  "latest": "2026-10-19 Dungeon puzzles (Ice Fill, Teleport Maze, Quiz), reforge abilities, Dwarven Mines dailies and events",
+  "latest": "2026-10-19 Galatea and the new Park on Hypixel's maps; Crystal Hollows, accessories, fishing, slayers, enchanting, set bonuses, pets, Museum and sacks, SkyBlock Leveling tasks and emblems",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -15,7 +15,7 @@
           "name": "Items & stats",
           "icon": "item/diamond_sword",
           "weight": 10,
-          "done": 74
+          "done": 80
         },
         {
           "name": "Profiles & co-ops",
@@ -81,19 +81,19 @@
           "name": "SkyBlock Level",
           "icon": "item/nether_star",
           "weight": 3,
-          "done": 60
+          "done": 78
         },
         {
           "name": "Fairy Souls",
           "icon": "item/amethyst_shard",
           "weight": 2,
-          "done": 82
+          "done": 83
         },
         {
           "name": "Museum, Bestiary & Sacks",
           "icon": "item/item_frame",
           "weight": 4,
-          "done": 75
+          "done": 83
         }
       ]
     },
@@ -135,7 +135,7 @@
           "name": "Slayers",
           "icon": "item/rotten_flesh",
           "weight": 6,
-          "done": 72
+          "done": 80
         },
         {
           "name": "Dungeons",
@@ -153,13 +153,13 @@
           "name": "Pets",
           "icon": "item/lead",
           "weight": 6,
-          "done": 78
+          "done": 85
         },
         {
           "name": "Enchanting",
           "icon": "item/enchanted_book",
           "weight": 5,
-          "done": 78
+          "done": 86
         },
         {
           "name": "Reforges, stars & gems",
@@ -171,7 +171,7 @@
           "name": "Accessories",
           "icon": "item/heart_of_the_sea",
           "weight": 5,
-          "done": 60
+          "done": 75
         }
       ]
     },
@@ -195,7 +195,7 @@
           "name": "The Park",
           "icon": "block/birch_sapling",
           "weight": 2,
-          "done": 72
+          "done": 85
         },
         {
           "name": "Gold Mine & Deep Caverns",
@@ -213,7 +213,7 @@
           "name": "Dwarven Mines & Hollows",
           "icon": "item/iron_pickaxe",
           "weight": 10,
-          "done": 85
+          "done": 90
         },
         {
           "name": "The End",
@@ -243,7 +243,7 @@
           "name": "Galatea & Hunting",
           "icon": "item/feather",
           "weight": 4,
-          "done": 75
+          "done": 82
         }
       ]
     },
@@ -255,7 +255,7 @@
           "name": "Fishing",
           "icon": "item/fishing_rod",
           "weight": 5,
-          "done": 65
+          "done": 74
         },
         {
           "name": "Events",
@@ -295,7 +295,7 @@
     },
     {
       "date": "2026-10-19",
-      "overall": 77.9
+      "overall": 80.7
     }
   ]
 }
