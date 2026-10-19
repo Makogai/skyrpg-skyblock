@@ -48,6 +48,8 @@ public final class Abilities {
     private static final Map<UUID, Long> NOTICED = new HashMap<>();
     /** Player -> server tick of their last right-click use (its arm swing isn't a left click). */
     private static final Map<UUID, Long> LAST_RIGHT_CLICK = new HashMap<>();
+    /** Player -> server tick of their last left click (a click at a block arrives twice: as a punch and as an attack). */
+    private static final Map<UUID, Long> LAST_LEFT_CLICK = new HashMap<>();
     /** Who was sneaking last tick (SNEAK abilities go off as you start). */
     private static final Map<UUID, Boolean> SNEAKING = new HashMap<>();
     /** Cooldowns that ended while the player might still be holding the item: they get a "ready" ping. */
@@ -120,9 +122,10 @@ public final class Abilities {
     /** A left click (at the air, a block or a mob): the held item's LEFT CLICK ability. Not right after a right-click use. */
     public static void leftClick(ServerPlayer player) {
         long now = player.level().getServer().getTickCount();
-        if (now - LAST_RIGHT_CLICK.getOrDefault(player.getUUID(), -100L) <= 2) {
+        if (now - LAST_RIGHT_CLICK.getOrDefault(player.getUUID(), -100L) <= 2 || now - LAST_LEFT_CLICK.getOrDefault(player.getUUID(), -100L) <= 1) {
             return;
         }
+        LAST_LEFT_CLICK.put(player.getUUID(), now);
         net.minecraft.world.item.ItemStack stack = player.getMainHandItem();
         ItemDefinition def = SkyItems.definition(stack);
         if (def != null && def.ability() != null && def.ability().trigger().contains("LEFT") && !com.skyrpg.core.items.ToolWear.isBroken(stack)) {
