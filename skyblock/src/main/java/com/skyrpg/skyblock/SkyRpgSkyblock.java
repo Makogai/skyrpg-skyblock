@@ -89,6 +89,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.galatea.Galatea.init();
         com.skyrpg.skyblock.mayor.Mayors.init();
         com.skyrpg.skyblock.festival.Festivals.init();
+        com.skyrpg.skyblock.chocolate.ChocolateFactory.init();
         com.skyrpg.skyblock.glacite.GlaciteTunnels.init();
         Recipes.init();
         Crafting.init();

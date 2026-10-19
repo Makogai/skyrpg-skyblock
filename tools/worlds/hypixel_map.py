@@ -11,11 +11,18 @@ install puts the map's chunks in place of one of our islands (stop the server fi
 entities and poi folders are moved into a backup folder beside them (or deleted, if they were a Hypixel map already),
 the map's chunks are copied in (Minecraft upgrades them as they load) and a hypixel_map.json marker tells the mod not
 to place our own builds there (HubMaps). Undo by deleting region/ and hypixel_map.json and moving the backup back.
-The download's entities are sorted on the way: decor stays (item frames, paintings, armour stands holding something),
-the rest goes (Hypixel's mobs, dropped items, and the name holograms over its NPCs, whose names and places are kept
-in hypixel_npcs.json beside the marker, for putting our NPCs where Hypixel's stood).
+The download's entities are sorted on the way: decor stays (item frames, paintings, item and block displays, armour
+stands holding something), the rest goes (Hypixel's mobs, dropped items, and the name holograms over its NPCs, whose
+names and places are kept in hypixel_npcs.json beside the marker, for putting our NPCs where Hypixel's stood).
+
+Both kinds of save work: Hypixel's old downloads (1.16, region/ at the top, entities inside the chunks) and captures
+made with WorldTools in a 26.x client (dimensions/minecraft/overworld/, entities in their own files). Every leaf is
+made persistent on the way (Hypixel never random-ticks, so its trees are full of leaves far from any log, which would
+all decay), and chunks the game had only begun generating (a capture opened in singleplayer) are left out.
+Never open a capture in singleplayer before installing it: random ticks start eating its trees at once.
 """
 import argparse
+import collections
 import colorsys
 import datetime
 import shutil
@@ -74,10 +81,20 @@ def world_dir(source):
     return next(p.parent for p in tmp.rglob("level.dat"))
 
 
+def dimension_dir(world):
+    """Where a save keeps its overworld: region/ at the top (to 1.21), or dimensions/minecraft/overworld/ (26.1 on)."""
+    if (world / "region").is_dir():
+        return world
+    modern = world / "dimensions" / "minecraft" / "overworld"
+    if (modern / "region").is_dir():
+        return modern
+    sys.exit(f"{world} has no region folder")
+
+
 def tops(world):
     """{(x, z): (y, block)} for every column with a block."""
     out = {}
-    for region in sorted((world / "region").glob("r.*.mca")):
+    for region in sorted((dimension_dir(world) / "region").glob("r.*.mca")):
         _, rx, rz, _ = region.name.split(".")
         for lx, lz, chunk in nbt.chunks(region):
             level = chunk.get("Level", chunk)
@@ -173,7 +190,8 @@ def install(args):
     target = Path(args.world_dir) / "dimensions" / namespace / path
     if not (Path(args.world_dir) / "level.dat").exists():
         sys.exit(f"{args.world_dir} isn't a world folder")
-    regions = sorted((world / "region").glob("r.*.mca"))
+    source = dimension_dir(world)
+    regions = sorted((source / "region").glob("r.*.mca"))
     if not regions:
         sys.exit(f"{world} has no region files")
     target.mkdir(parents=True, exist_ok=True)
@@ -190,27 +208,33 @@ def install(args):
             shutil.move(str(target / name), str(backup / name))
             moved.append(name)
     (target / "region").mkdir()
-    kept, dropped, holograms = 0, 0, []
+    counts, holograms = collections.Counter(), []
     for region in regions:
         out = {}
         for index, when, raw in nbt.raw_chunks(region):
             name, root = nbt.parse_typed(raw)
             level = root.get("Level", (10, root))[1]
+            if not level.get("Status", (8, b"full"))[1].endswith(b"full"):
+                counts["unfinished chunks left out"] += 1
+                continue
+            counts["leaf states made persistent"] += persist_leaves(level)
             if "Entities" in level:
-                _, (element, entities) = level["Entities"]
-                keep = []
-                for entity in entities:
-                    if decor(entity):
-                        keep.append(entity)
-                        kept += 1
-                    else:
-                        dropped += 1
-                        hologram = label(entity)
-                        if hologram:
-                            holograms.append(hologram)
-                level["Entities"] = (9, (element, keep))
+                level["Entities"] = (9, sort_entities(level["Entities"][1], counts, holograms))
             out[index] = (when, nbt.dump_typed(name, root))
-        nbt.write_region(target / "region" / region.name, out)
+        if out:
+            nbt.write_region(target / "region" / region.name, out)
+    # 1.17 on: the entities have region files of their own
+    if (source / "entities").is_dir():
+        (target / "entities").mkdir()
+        for region in sorted((source / "entities").glob("r.*.mca")):
+            out = {}
+            for index, when, raw in nbt.raw_chunks(region):
+                name, root = nbt.parse_typed(raw)
+                if "Entities" in root:
+                    root["Entities"] = (9, sort_entities(root["Entities"][1], counts, holograms))
+                out[index] = (when, nbt.dump_typed(name, root))
+            if out:
+                nbt.write_region(target / "entities" / region.name, out)
     (target / "hypixel_npcs.json").write_text(json.dumps(sorted(holograms, key=lambda h: h["name"]), indent=1, ensure_ascii=False) + "\n",
                                               encoding="utf-8")
     level = nbt.load(world / "level.dat")["Data"]
@@ -218,44 +242,101 @@ def install(args):
               "note": "Hypixel's map, installed by tools/worlds/hypixel_map.py: never commit or redistribute it."}
     (target / "hypixel_map.json").write_text(json.dumps(marker, indent=1) + "\n", encoding="utf-8")
     print(f"installed {len(regions)} region files into {target}" + (f" (old {', '.join(moved)} in {backup.name})" if moved else ""))
-    print(f"entities: {kept} decor kept, {dropped} dropped; {len(holograms)} name holograms -> hypixel_npcs.json")
+    print(f"entities: {counts['decor kept']} decor kept, {counts['dropped']} dropped; {len(holograms)} name holograms -> hypixel_npcs.json")
+    for what in ("leaf states made persistent", "unfinished chunks left out"):
+        if counts[what]:
+            print(f"{what}: {counts[what]}")
 
 
-def _text(raw):
-    """A JSON text component's plain text."""
-    try:
-        node = json.loads(raw)
-    except (ValueError, TypeError):
-        return str(raw)
+def sort_entities(entities, counts, holograms):
+    """A chunk's entity list with only the decor left; the holograms' names and places noted."""
+    element, items = entities
+    keep = []
+    for entity in items:
+        if decor(entity):
+            keep.append(entity)
+            counts["decor kept"] += 1
+        else:
+            counts["dropped"] += 1
+            hologram = label(entity)
+            if hologram:
+                holograms.append(hologram)
+    return element, keep
+
+
+def persist_leaves(level):
+    """Every leaf in a chunk made persistent (in its palettes): how many palette entries changed."""
+    changed = 0
+    for section in level.get("Sections", level.get("sections", (9, (10, []))))[1][1]:
+        states = section.get("block_states")
+        palette = states[1].get("palette") if states else section.get("Palette")
+        if not palette:
+            continue
+        for entry in palette[1][1]:
+            properties = entry.get("Properties")
+            if properties and properties[1].get("persistent", (8, b""))[1] == b"false":
+                properties[1]["persistent"] = (8, b"true")
+                changed += 1
+    return changed
+
+
+def _plain(tag, value):
+    """A tagged NBT value as plain Python."""
+    if tag == 10:
+        return {k: _plain(t, v) for k, (t, v) in value.items()}
+    if tag == 9:
+        return [_plain(value[0], v) for v in value[1]]
+    if tag == 8:
+        return value.decode("utf-8", "replace")
+    return value
+
+
+def _text(node):
+    """A text component's plain text, JSON (to 1.21.4) or NBT (since), without colour codes or Hypixel's own glyphs."""
+    if isinstance(node, str):
+        try:
+            node = json.loads(node)
+        except ValueError:
+            pass
+
     def walk(n):
         if isinstance(n, str):
             return n
         if isinstance(n, list):
             return "".join(walk(x) for x in n)
-        return n.get("text", "") + "".join(walk(x) for x in n.get("extra", []))
-    return re.sub("§.", "", walk(node)).strip()
+        if isinstance(n, dict):
+            return walk(n.get("text", "")) + "".join(walk(x) for x in n.get("extra", []))
+        return str(n)
+    return re.sub("[\ue000-\uf8ff]", "", re.sub("\u00a7.", "", walk(node))).strip()
+
+
+DECOR = ("minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:item_display", "minecraft:block_display")
 
 
 def decor(entity):
-    """Whether a saved entity is part of the build: frames, paintings, armour stands holding or wearing something."""
+    """Whether a saved entity is part of the build: frames, paintings, displays, armour stands holding or wearing something."""
     kind = entity.get("id", (8, b""))[1].decode("utf-8", "replace")
-    if kind in ("minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting"):
+    if kind in DECOR:
         return True
     if kind != "minecraft:armor_stand" or "CustomName" in entity:
         return False
-    for key in ("ArmorItems", "HandItems"):
-        for item in entity.get(key, (10, (10, [])))[1][1]:
-            if item and item.get("id", (8, b""))[1] not in (b"", b"minecraft:air"):
-                return True
-    return False
+    items = []
+    for key in ("ArmorItems", "HandItems"):  # to 1.21.4
+        items += entity.get(key, (9, (10, [])))[1][1]
+    items += [item for _, item in entity.get("equipment", (10, {}))[1].values()]  # since
+    return any(item and item.get("id", (8, b""))[1] not in (b"", b"minecraft:air") for item in items)
 
 
 def label(entity):
-    """A named, invisible armour stand (a hologram): its text and where it floats."""
+    """A hologram (a named, invisible armour stand, or a text display): its text and where it floats."""
     kind = entity.get("id", (8, b""))[1].decode("utf-8", "replace")
-    if kind != "minecraft:armor_stand" or "CustomName" not in entity:
+    if kind == "minecraft:armor_stand" and "CustomName" in entity:
+        raw = entity["CustomName"]
+    elif kind == "minecraft:text_display" and "text" in entity:
+        raw = entity["text"]
+    else:
         return None
-    name = _text(entity["CustomName"][1].decode("utf-8", "replace"))
+    name = _text(_plain(*raw))
     pos = [round(v, 2) for v in entity["Pos"][1][1]]
     return {"name": name, "x": pos[0], "y": pos[1], "z": pos[2]} if name else None
 

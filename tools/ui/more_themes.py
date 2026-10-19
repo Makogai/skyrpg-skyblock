@@ -580,5 +580,56 @@ def spooky(out):
             [rgb("3a2e28"), rgb("332822"), rgb("40342c")], ribs)
 
 
+# ---------------------------------------------------------------- chocolate: a milk chocolate bar, strawberry icing, a rabbit
+
+def chocolate(out):
+    rng = random.Random(61)
+    milk, dark, light = rgb("6b3e22"), rgb("4a2915"), rgb("8a5530")
+
+    def band(along, across, horizontal):
+        # chocolate squares (a groove every 6), pink icing along the inner edge
+        if across == 6:
+            return rgb("f3a6c0") if along % 4 else rgb("fbd3e1")
+        if across == 1:
+            return dark
+        if along % 6 == 0:
+            return dark
+        return light if across == 2 else (milk if rng.random() > 0.05 else rgb("5a331c"))
+
+    def bunny(img, cx, cy):
+        cream, pink = rgb("f6ead8"), rgb("f3a6c0")
+        for x, y in ((3, 1), (3, 2), (5, 1), (5, 2), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4),
+                     (3, 5), (4, 5), (5, 5)):
+            img.putpixel((cx + x, cy + y), cream)
+        img.putpixel((cx + 3, cy + 2), pink)
+        img.putpixel((cx + 5, cy + 2), pink)
+        img.putpixel((cx + 3, cy + 4), rgb("2a1a10"))
+        img.putpixel((cx + 5, cy + 4), rgb("2a1a10"))
+    corner = plate_corner(rgb("5a331c"), rgb("8a5530"), rgb("3a2010"), rgb("1e0f07"), bunny)
+    save(framed(48, band, corner, rgb("1e0f07"), rgb("2e180b"), rgb("4a2915")), f"{out}/frame.png", nine(48, 48, 9))
+    bg = noise_tile(rng, [rgb("1d110b"), rgb("20130c"), rgb("1a0f09")], [70, 15, 15], [(rgb("3a2215"), 9), (rgb("f3a6c0"), 1)])
+    save(bg, f"{out}/background.png", tile(32, 32))
+
+    def drizzle(img):
+        for x in range(10):
+            y = 3 + (1 if x % 5 in (1, 2) else 0)
+            img.putpixel((x, y), rgb("8a5530"))
+            img.putpixel((x, y - 1), rgb("f3a6c0") if x % 3 == 0 else rgb("6b3e22"))
+            img.putpixel((x, min(6, y + 1)), rgb("000000", 90))
+
+    def egg(img):
+        pixels(img, [(4, 1, "f6ead8"), (3, 2, "f6ead8"), (4, 2, "fbd3e1"), (5, 2, "f6ead8"), (2, 3, "e9b08a"), (3, 3, "f3a6c0"),
+                     (4, 3, "f6ead8"), (5, 3, "f3a6c0"), (6, 3, "e9b08a"), (2, 4, "c98a5c"), (3, 4, "e9b08a"), (4, 4, "f3a6c0"),
+                     (5, 4, "e9b08a"), (6, 4, "c98a5c"), (3, 5, "c98a5c"), (4, 5, "c98a5c"), (5, 5, "c98a5c")])
+    divider(out, 10, 7, drizzle, egg)
+    cards_and_tabs(out, rgb("2a170d"), rgb("5a331c"), rgb("f3a6c0"), rgb("3a2215"), rgb("1a0d06"),
+                   rgb("24140b"), rgb("4a2915"), rgb("3a2215"), rgb("f3a6c0"))
+
+    def squares(x, y):
+        return rgb("4a2915") if x % 6 == 0 or y == 7 else None
+    buttons(out, rng, [rgb("8a5530"), rgb("7b4a2a"), rgb("9c6338")], rgb("1e0f07"), rgb("fbd3e1"),
+            [rgb("3a2e28"), rgb("332822"), rgb("40342c")], squares)
+
+
 THEMES = {"skyblock": skyblock, "rift": rift, "mining": mining, "crimson": crimson, "dungeon": dungeon, "magic": magic, "fishing": fishing, "galatea": galatea,
-          "spooky": spooky}
+          "spooky": spooky, "chocolate": chocolate}

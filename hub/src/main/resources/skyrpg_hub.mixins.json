@@ -7,6 +7,7 @@
     "FarmlandBlockMixin",
     "IslandPortalsMixin",
     "ItemDisplayAccess",
+    "OfficialLeavesMixin",
     "PodiumMannequinAccess",
     "TextDisplayAccess"
   ],

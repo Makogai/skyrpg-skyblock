@@ -195,16 +195,22 @@ final class Visitors {
         BlockPos c = Garden.center(profile);
         List<Mannequin> live = new ArrayList<>();
         LIVE.put(profile.id(), live);
-        spawn(level, live, mannequin(level, c.offset(-18, 1, -2), 90, "SkyMart", 0xFFAA00, "Copper shop", "noor", TAG + ":skymart"));
-        spawn(level, live, mannequin(level, c.offset(-14, 1, 10), 90, "Pesthunter Phillip", 0x55FF55, "Pests", "efe", TAG + ":phillip"));
-        spawn(level, live, mannequin(level, c.offset(-5, 1, 36), -90, "Jacob", 0xFFFF55, "Farming Contests", "kai", TAG + ":jacob"));
-        spawn(level, live, mannequin(level, c.offset(5, 1, 36), 90, "Anita", 0xFFFF55, "Contest shop", "alex", TAG + ":anita"));
-        int[][] spots = {{-8, 18}, {-4, 20}, {0, 21}, {4, 20}, {8, 18}};
-        for (int i = 0; i < state.visitors.size() && i < spots.length; i++) {
+        GardenLayout layout = GardenLayout.get();
+        spawn(level, live, mannequin(level, c, layout.skymart(), "SkyMart", 0xFFAA00, "Copper shop", "noor", TAG + ":skymart"));
+        spawn(level, live, mannequin(level, c, layout.phillip(), "Pesthunter Phillip", 0x55FF55, "Pests", "efe", TAG + ":phillip"));
+        spawn(level, live, mannequin(level, c, layout.jacob(), "Jacob", 0xFFFF55, "Farming Contests", "kai", TAG + ":jacob"));
+        spawn(level, live, mannequin(level, c, layout.anita(), "Anita", 0xFFFF55, "Contest shop", "alex", TAG + ":anita"));
+        List<GardenLayout.Spot> spots = layout.visitors();
+        for (int i = 0; i < state.visitors.size() && i < spots.size(); i++) {
             Offer offer = Offer.decode(state.visitors.get(i));
-            spawn(level, live, mannequin(level, c.offset(spots[i][0], 1, spots[i][1]), 180, offer.name(), RARITY_COLORS[offer.rarity()],
+            spawn(level, live, mannequin(level, c, spots.get(i), offer.name(), RARITY_COLORS[offer.rarity()],
                     RARITIES[offer.rarity()] + " visitor", offer.skin(), TAG + ":visitor:" + i));
         }
+    }
+
+    private static Mannequin mannequin(ServerLevel level, BlockPos center, GardenLayout.Spot spot, String name, int color, String role, String skin,
+                                       String tag) {
+        return mannequin(level, GardenLayout.ground(level, spot.at(center)), spot.yaw(), name, color, role, skin, tag);
     }
 
     private static Mannequin mannequin(ServerLevel level, BlockPos at, float yaw, String name, int color, String role, String skin, String tag) {

@@ -38,15 +38,15 @@ final class GardenRules {
             if (player instanceof ServerPlayer server && member(server, against)) {
                 Profile owner = Garden.ownerAt(against);
                 BlockPos c = Garden.center(owner);
-                BlockPos desk = c.offset(0, 1, -18);
-                if (against.equals(desk) || against.equals(desk.above())) {
-                    GardenMenu.open(server, GardenMenu.Tab.PLOTS);
-                    return InteractionResult.SUCCESS;
-                }
                 int dx = against.getX() - c.getX();
                 int dy = against.getY() - c.getY();
                 int dz = against.getZ() - c.getZ();
-                if (dx >= 16 && dx <= 20 && dy >= 1 && dy <= 4 && dz >= -8 && dz <= -4) {
+                GardenLayout layout = GardenLayout.get();
+                if (layout.desk().contains(dx, dy, dz)) {
+                    GardenMenu.open(server, GardenMenu.Tab.PLOTS);
+                    return InteractionResult.SUCCESS;
+                }
+                if (layout.composter().contains(dx, dy, dz)) {
                     GardenMenu.open(server, GardenMenu.Tab.COMPOSTER);
                     return InteractionResult.SUCCESS;
                 }

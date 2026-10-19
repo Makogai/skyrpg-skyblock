@@ -309,6 +309,24 @@ def currencies():
         mote.putpixel((x, y), rgb("b04cd8", 200))
     save(mote, "currency/motes.png")
 
+    # chocolate: a little milk chocolate bar, three by two squares, one corner bitten off
+    bar = Image.new("RGBA", (9, 9), (0, 0, 0, 0))
+    milk, light, dark = rgb("7b4a2a"), rgb("9c6338"), rgb("4e2d18")
+    for y in range(1, 8):
+        for x in range(1, 8):
+            if (x, y) in ((7, 1), (6, 1), (7, 2)):
+                continue  # the bite
+            c = milk
+            if x in (3, 5) or y == 4:
+                c = dark
+            elif (x in (1, 4, 6) and y in (1, 5)) or (y in (1, 5) and x in (2,)):
+                c = light
+            bar.putpixel((x, y), c)
+    for x in range(1, 8):
+        if bar.getpixel((x, 7))[3]:
+            bar.putpixel((x, 7), shade(milk, -0.3))
+    save(bar, "currency/chocolate.png")
+
 
 THEMES = {"farming": farming}
 

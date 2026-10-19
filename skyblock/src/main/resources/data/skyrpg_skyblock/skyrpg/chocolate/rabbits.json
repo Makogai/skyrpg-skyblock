@@ -1,0 +1,4080 @@
+{
+ "rabbits": [
+  {
+   "name": "Aaron",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Able",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Acker",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Albus",
+   "rarity": "COMMON",
+   "resident": "Crimson Isle",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alfie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alice",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alley",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Almond Amaretto",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Alpha",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Angus",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Annabelle",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Archie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Arnie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Audi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Augustus",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Baby",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Badger",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bagel",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Baldwin",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Baloo",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Barney",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bartholomew",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Basket",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Baxter",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bayou",
+   "rarity": "COMMON",
+   "resident": "Backwater Bayou",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Backwater Bayou."
+  },
+  {
+   "name": "Beatrice",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bertha",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bibsy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Billy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bindi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Binky",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Blake",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bob",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bramble",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Breeze",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Brian",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Brie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bronson",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Brooks",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bruce",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bruno",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bud",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bugster",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bugsy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Buttercream Blossom",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Cadet",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Callie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Carrot",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Kill a Carrot King."
+  },
+  {
+   "name": "Cave",
+   "rarity": "COMMON",
+   "resident": "Deep Caverns",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Deep Caverns."
+  },
+  {
+   "name": "Chase",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chasm",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chester",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chip",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chomper",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chompsky",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Claude",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cobble",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cocoa Comet",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Collin",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Copper",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cottontail",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cricket",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Croak",
+   "rarity": "COMMON",
+   "resident": "Lotus Atoll",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Crush",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 100 duplicate rabbits."
+  },
+  {
+   "name": "Cuddles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cupcake",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Daisy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Delboy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Delilah",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Demi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Digger",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Duchess",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dulce Drizzle",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Dusty",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ellie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ember",
+   "rarity": "COMMON",
+   "resident": "Crimson Isle",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Crimson Isle."
+  },
+  {
+   "name": "Emerson",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Emma",
+   "rarity": "COMMON",
+   "resident": "Deep Caverns",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Espresso Eclair",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Eta",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Fergie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fievel",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fluffy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Francine",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Frank",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Frankie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fudge",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fuzzy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "George",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ginger",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ginny",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gizmo",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Glacier",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gloria",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gouda",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gracie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Granite",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Guinness",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gunther",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hadley",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Harland",
+   "rarity": "COMMON",
+   "resident": "Spider's Den",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Harley",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Haybale",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hazel",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hefner",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Heidie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Herbie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hershey",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hondo",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hopper",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hopscotch",
+   "rarity": "COMMON",
+   "resident": "Lotus Atoll",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Lotus Atoll."
+  },
+  {
+   "name": "Hubby",
+   "rarity": "COMMON",
+   "resident": "Hub",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Hub."
+  },
+  {
+   "name": "Huck",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hugo",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Humphrey",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hunter",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Iggy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Indie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jacqueline",
+   "rarity": "COMMON",
+   "resident": "The Park",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jade",
+   "rarity": "COMMON",
+   "resident": "Crystal Hollows",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Crystal Hollows."
+  },
+  {
+   "name": "Jake",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "James",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jammer",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jasmine",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jazmin",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jeffery",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jerry",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Kill a Golden Jerry."
+  },
+  {
+   "name": "Joey",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jonah",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Josephine",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kronk",
+   "rarity": "COMMON",
+   "resident": "Crystal Hollows",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lazy",
+   "rarity": "COMMON",
+   "resident": "Gold Mine",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lenny",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lily",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lone Ranger",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lotte",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Louie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mandy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Marlow",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Marshall",
+   "rarity": "COMMON",
+   "resident": "Moonglade Marsh",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Maui",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Max",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mickey",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Miles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Milly",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mimi",
+   "rarity": "COMMON",
+   "resident": "Dwarven Mines",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Dwarven Mines."
+  },
+  {
+   "name": "Mistral",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mite",
+   "rarity": "COMMON",
+   "resident": "The End",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mochi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Molly",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mona",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Moody",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mookie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mopsy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Morris",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Morty",
+   "rarity": "COMMON",
+   "resident": "Dungeon Hub",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Dungeon Hub."
+  },
+  {
+   "name": "Motfer",
+   "rarity": "COMMON",
+   "resident": "Dwarven Mines",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Natalie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ned",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nibbles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Niko",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Niza",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nu",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Nutmeg",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Oletta",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Oliver",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Olivette",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Olivier",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ollie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Onion",
+   "rarity": "COMMON",
+   "resident": "Backwater Bayou",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Paddy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Palm",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Patch",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pebbles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Penny",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Peon",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Peony",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Petunia",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pickles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Picky",
+   "rarity": "COMMON",
+   "resident": "Gold Mine",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Gold Mine."
+  },
+  {
+   "name": "Pinky",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Poppy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Porter",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Potato",
+   "rarity": "COMMON",
+   "resident": "The Farming Islands",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Quentin",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Razzie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Reginald",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Remi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ressie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ricky",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Riley",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rogue",
+   "rarity": "COMMON",
+   "resident": "Hub",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rolf",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Root",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rosco",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ross",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rowdy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ruben",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rupert",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ryder",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sandy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sassy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Scooter",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Scotch",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Scout",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Scuba",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Seashell",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Selene",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Skippe",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Smokey",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sniffles",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Snoppy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Snuffy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Soon",
+   "rarity": "COMMON",
+   "resident": "Dungeon Hub",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sophie",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sorbet",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Speedy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Spencer",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Splash",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Spot",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Stanley",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Stinky",
+   "rarity": "COMMON",
+   "resident": "The Farming Islands",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in The Farming Islands."
+  },
+  {
+   "name": "Striker",
+   "rarity": "COMMON",
+   "resident": "Spider's Den",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Stuart",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Subway",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Suri",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tagalong",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tan",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tau",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Teddy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Thalai",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Theo",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Theodore",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Thumper",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ticky",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Timber",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tobi",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Twigy",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Webb",
+   "rarity": "COMMON",
+   "resident": "Spider's Den",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the Spider's Den."
+  },
+  {
+   "name": "William",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Winston",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Woody",
+   "rarity": "COMMON",
+   "resident": "The Park",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in the The Park."
+  },
+  {
+   "name": "Zack",
+   "rarity": "COMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Zea",
+   "rarity": "COMMON",
+   "resident": "The End",
+   "source": "requirement",
+   "text": "Grants +1 Chocolate and 0.002x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 15 unique egg locations in The End."
+  },
+  {
+   "name": "Abi",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through getting called by Hoppity.",
+   "requirement": "Obtained through getting called by Hoppity."
+  },
+  {
+   "name": "Abigail",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alexa",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alexander",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alpaca",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Amazon",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Anchor",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Arachno",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Defeat Tarantula Broodfather 3."
+  },
+  {
+   "name": "Ashes",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Asterix",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Attila",
+   "rarity": "UNCOMMON",
+   "resident": "Crimson Isle",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Average",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 100 unique Common Rabbits."
+  },
+  {
+   "name": "Azure",
+   "rarity": "UNCOMMON",
+   "resident": "Deep Caverns",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bambam",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bandit",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Barcode",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Benji",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Beta",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Bilbo",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Blossom",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Blueberry",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Brick",
+   "rarity": "UNCOMMON",
+   "resident": "Gold Mine",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Brutus",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bubbles",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Buckwheat",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Buffalo",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bugs",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bumper",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Buster",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Butters",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Candi",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Canyon",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Carter",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Casper",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cassidy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Charmin",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chewy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chilli",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chubby",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cloudy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Clover",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cookie",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cooper",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cotton",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cotton Puff",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cottonball",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dalton",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dandelion",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Darla",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dash",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Demarcus",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Demetrious",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Destiny",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Domino",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Donkey",
+   "rarity": "UNCOMMON",
+   "resident": "Backwater Bayou",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Eastwood",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ella",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ender",
+   "rarity": "UNCOMMON",
+   "resident": "The End",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Figgy",
+   "rarity": "UNCOMMON",
+   "resident": "Moonglade Marsh",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fitch",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Flip Flop",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Forrest",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fudge Fountain",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Gadget",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gee-Gee",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ginger Glaze",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Goofy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Graffiti",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Grog",
+   "rarity": "UNCOMMON",
+   "resident": "Crystal Hollows",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Halmenrog",
+   "rarity": "UNCOMMON",
+   "resident": "Dwarven Mines",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Harmony",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Honey Hazelnut",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Hop-a-long",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Icefur",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Icing Ivy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Inferno",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Defeat Inferno Demonlord 3."
+  },
+  {
+   "name": "Irena",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jasmine Jello",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Jazz",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jelly Bean",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kobi",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lagoon",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Leopold",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lotus",
+   "rarity": "UNCOMMON",
+   "resident": "Lotus Atoll",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lulu",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Marigold",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Maybelline",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mediocrity",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 200 unique Common Rabbits."
+  },
+  {
+   "name": "Melon",
+   "rarity": "UNCOMMON",
+   "resident": "The Farming Islands",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Milo",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mocktail",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Modest",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 50 unique Uncommon Rabbits."
+  },
+  {
+   "name": "Morgan",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Moss",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nectar",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Oakley",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Oakly",
+   "rarity": "UNCOMMON",
+   "resident": "Hub",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Obelix",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Orchid",
+   "rarity": "UNCOMMON",
+   "resident": "The Park",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Oreo",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Otto",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ozwald",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pancake",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Patches",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Penelope",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pepsi",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pillsbury",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Polka Dot",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Porsche",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Prestige",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Reach Chocolate Factory III."
+  },
+  {
+   "name": "Pretzel",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Prudent",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 100 unique Uncommon Rabbits."
+  },
+  {
+   "name": "Quincy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Raven",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ringo",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ruina",
+   "rarity": "UNCOMMON",
+   "resident": "Dungeon Hub",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rusty",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sargent",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Scree",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Seabun",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Seinfield",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Skyrise",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Snoopy",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sprinkles",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Squish",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 500 duplicate Rabbits."
+  },
+  {
+   "name": "Stewart",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sven",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Defeat Sven Packmaster 3."
+  },
+  {
+   "name": "Sweetpea",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sylvester",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Theta",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Toby",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Traffic",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Trixie",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tunnel",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Una",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Upsilon",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Vally",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Void",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Defeat Voidgloom Seraph 3."
+  },
+  {
+   "name": "Wadsworth",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Waffle",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Xi",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Zombie",
+   "rarity": "UNCOMMON",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +2 Chocolate and 0.003x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Defeat Revenant Horror 3."
+  },
+  {
+   "name": "Aladdin",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Aloysius",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Aster",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Barbie",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bishop",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Blackberry",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Blackjack",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Boulder",
+   "rarity": "RARE",
+   "resident": "Gold Mine",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bugatti",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Bun Bun",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Burst",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 1,000 duplicate Rabbits."
+  },
+  {
+   "name": "Cajun",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Canopus",
+   "rarity": "RARE",
+   "resident": "The Park",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Caramel",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Carmine",
+   "rarity": "RARE",
+   "resident": "Deep Caverns",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Casanova",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chevy",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Cinnamon",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Coconut",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Coltron",
+   "rarity": "RARE",
+   "resident": "Crystal Hollows",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Crag",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Crystal",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dallas",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Draco",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Eagle",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Easter",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Egg",
+   "rarity": "RARE",
+   "resident": "The End",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Elvis",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Favor",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 50 unique Rare Rabbits."
+  },
+  {
+   "name": "Figaro",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Fish the Rabbit",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained by finding the Stray Rabbit in the Chocolate Factory menu.",
+   "requirement": "Obtained by finding a Golden Stray Rabbit in the Chocolate Factory menu."
+  },
+  {
+   "name": "Frodo",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gamma",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Gravler",
+   "rarity": "RARE",
+   "resident": "Spider's Den",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gremlin",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Honey",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hope",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hyde",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Iota",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Iris",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jasper",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Jynx",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kalumdai",
+   "rarity": "RARE",
+   "resident": "Dwarven Mines",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kiwi Kiss",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Lavender Lemon",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Linus",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lumie",
+   "rarity": "RARE",
+   "resident": "Moonglade Marsh",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Maple Mirage",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Midnight",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Monalisa",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Murphy",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mush Mush",
+   "rarity": "RARE",
+   "resident": "Dungeon Hub",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mutonio",
+   "rarity": "RARE",
+   "resident": "The Farming Islands",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Neptune",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nougat Nebula",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Oasis",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Olympe",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Omicron",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Onyx",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Orange Obsidian",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Orlando",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Paddington",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Peanut",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pepper",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Phantom",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Phi",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Popcorn",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pride",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pumpkin",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "River",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sage",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sherk",
+   "rarity": "RARE",
+   "resident": "Backwater Bayou",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Shortcut",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Silo",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Snowball",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Spirit",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Spooky",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Starfish",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Stormy",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sulfur",
+   "rarity": "RARE",
+   "resident": "Crimson Isle",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sunny",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Taxi",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Toad",
+   "rarity": "RARE",
+   "resident": "Lotus Atoll",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tornado",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Towny",
+   "rarity": "RARE",
+   "resident": "Hub",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tricky",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Tundra",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Uncle Buck",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Vlad",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Walker",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Wesson",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Widget",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Willow",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Zero",
+   "rarity": "RARE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +4 Chocolate and 0.004x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ace",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Achilles",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Alpine",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Angel",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Avalanche",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Calypso",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Castle",
+   "rarity": "EPIC",
+   "resident": "Hub Island",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Chi",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Comet",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Delta",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Dojo",
+   "rarity": "EPIC",
+   "resident": "Crimson Isle",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Dune",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Eisen",
+   "rarity": "EPIC",
+   "resident": "Deep Caverns",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Gatsby",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Grove",
+   "rarity": "EPIC",
+   "resident": "Moonglade Marsh",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Hole",
+   "rarity": "EPIC",
+   "resident": "Gold Mine",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Implode",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Find 2,000 duplicate Rabbits."
+  },
+  {
+   "name": "Jedi",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Juniper",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kappa",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Ken",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kiera",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kodo",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Krys",
+   "rarity": "EPIC",
+   "resident": "Dungeon Hub",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Lavender",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Maxima",
+   "rarity": "EPIC",
+   "resident": "Spider's Den",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Merlin",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Minister",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nearquaad",
+   "rarity": "EPIC",
+   "resident": "Backwater Bayou",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Necron",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory.",
+   "requirement": "The Catacombs Floor VII Completion"
+  },
+  {
+   "name": "Neon",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Octavia",
+   "rarity": "EPIC",
+   "resident": "Dwarven Mines",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Pearl",
+   "rarity": "EPIC",
+   "resident": "The End",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Peppermint Pearl",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Pi",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Prince",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Punch",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Quince Quark",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Rambo",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Raspberry Ripple",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Ribbit",
+   "rarity": "EPIC",
+   "resident": "Lotus Atoll",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Rochie",
+   "rarity": "EPIC",
+   "resident": "The Farming Islands",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Saga",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 25 unique Epic Rabbits."
+  },
+  {
+   "name": "Savannah",
+   "rarity": "EPIC",
+   "resident": "The Park",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Simba",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Strawberry Swirl",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Summit",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Surf",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Thor",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Toffee Tulip",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Trix",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Turbo",
+   "rarity": "EPIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Violet",
+   "rarity": "EPIC",
+   "resident": "Crystal Hollows",
+   "source": "egg",
+   "text": "Grants +10 Chocolate and 0.005x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Apollo",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "April",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Atlas",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Echo",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "El Dorado",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained by finding the Stray Rabbit in the Chocolate Factory menu.",
+   "requirement": "Obtained by finding a Golden Stray Rabbit in the Chocolate Factory menu."
+  },
+  {
+   "name": "Epsilon",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Extra",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Collect 20 unique Legendary Rabbits."
+  },
+  {
+   "name": "General",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Houdini",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Horizon",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Mountain Faction Rabbit! Grants 0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Kaeman",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "requirement",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory.",
+   "requirement": "Master Mode The Catacombs Floor VII Completion"
+  },
+  {
+   "name": "Lambda",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Magic",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mayor",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a City Faction Rabbit! Grants 0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Mystic",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Nova",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Psi",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Rho",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "shop",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Rosebud",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Country Faction Rabbit! Grants 0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Shadow",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Solomon",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Storm",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Sunset",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "faction",
+   "text": "This is a Beach Faction Rabbit! Grants 0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Ube Unicorn",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Vanilla Vortex",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Walnut Whirl",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Xoco Xanudu",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Yogurt Yucca",
+   "rarity": "LEGENDARY",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Dante",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +50 Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "Einstein",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Decreases the time it takes to charge your Time Tower to 7h."
+  },
+  {
+   "name": "Galaxy",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.02x Chocolate per second to your Chocolate Factory."
+  },
+  {
+   "name": "King",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "All duplicate Rabbits that you find give 30% more Chocolate."
+  },
+  {
+   "name": "Mu",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Increases Time Tower production by +0.7x. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Napoleon",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Increases the odds of finding RARE and higher Chocolate Rabbits by 10%."
+  },
+  {
+   "name": "Omega",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Doubles the odds of finding Golden Rabbits. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Sigma",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Each of your Mythic Rabbits grant +5 Chocolate per second. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Zest Zephyr",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "milestone",
+   "text": "Grants +30 Chocolate and 0.03x Chocolate per second to your Chocolate Factory. Obtained through your Chocolate Factory Milestones."
+  },
+  {
+   "name": "Zeta",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "shop",
+   "text": "Reduces the cost of your Employee upgrades by 1%. Obtained through your Chocolate Shop Milestones."
+  },
+  {
+   "name": "Zorro",
+   "rarity": "MYTHIC",
+   "resident": "",
+   "source": "egg",
+   "text": "Unlocks Zorro's Cape in the Chocolate Shop."
+  },
+  {
+   "name": "Aurora",
+   "rarity": "DIVINE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.025x Chocolate per second to your Chocolate Factory. Each Starborn Rabbit increases your max Employee level by 1."
+  },
+  {
+   "name": "Celestia",
+   "rarity": "DIVINE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.025x Chocolate per second to your Chocolate Factory. Each Starborn Rabbit increases your max Employee level by 1."
+  },
+  {
+   "name": "Orion",
+   "rarity": "DIVINE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.025x Chocolate per second to your Chocolate Factory. Each Starborn Rabbit increases your max Employee level by 1."
+  },
+  {
+   "name": "Starfire",
+   "rarity": "DIVINE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.025x Chocolate per second to your Chocolate Factory. Each Starborn Rabbit increases your max Employee level by 1."
+  },
+  {
+   "name": "Vega",
+   "rarity": "DIVINE",
+   "resident": "",
+   "source": "egg",
+   "text": "Grants +0.025x Chocolate per second to your Chocolate Factory. Each Starborn Rabbit increases your max Employee level by 1."
+  }
+ ]
+}

@@ -9,7 +9,7 @@ summary: Hypixel's Garden - your own 480 by 480 farm with 24 plots to unlock, Ga
 
 ## The island
 
-The Garden is a 5 by 5 grid of 96 by 96 **plots**. The middle one holds the **Barn**: the **Desk** inside it, the **Composter** beside it, the **SkyMart** stall, **Pesthunter Phillip**'s shed, the **visitor yard**, and **Jacob** and **Anita** south of the Barn. The other 24 plots start fenced off. You can't leave the Garden's square; walking off the edge puts you back by the Barn.
+The Garden is a 5 by 5 grid of 96 by 96 **plots**. The middle one holds the **Barn** (Hypixel's own, where the server has its Garden installed): the **Desk** inside it, the **Composter** beside it, **SkyMart**, **Pesthunter Phillip**'s shed, the **visitor yard** in front of the Barn, and **Jacob** and **Anita** down the path south of it. You arrive on that path, facing the Barn. The other 24 plots start fenced off. You can't leave the Garden's square; walking off the edge puts you back by the Barn.
 
 You build and farm only on plots you've unlocked (anyone else visiting can look, not touch). The sidebar shows which plot you're on.
 

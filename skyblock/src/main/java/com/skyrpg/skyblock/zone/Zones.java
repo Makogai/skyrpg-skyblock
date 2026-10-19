@@ -199,6 +199,11 @@ public final class Zones {
         zones = parseAll(raw);
     }
 
+    /** Every zone (all islands). */
+    public static List<Zone> all() {
+        return zones;
+    }
+
     /** The zone at this position, or null. */
     public static Zone at(Level level, BlockPos pos) {
         for (Zone zone : zones) {

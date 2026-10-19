@@ -1,0 +1,23 @@
+{
+  "name": "Hoppity",
+  "role": "Hoppity's Hunt",
+  "color": "#FF55FF",
+  "hint": "Rabbits",
+  "skin": "minecraft:entity/player/wide/sunny",
+  "model": "wide",
+  "dimension": "skyrpg_hub:hub",
+  "pos": [
+    56.5,
+    72.0,
+    -2.5
+  ],
+  "yaw": 145.0,
+  "sound": "minecraft:entity.rabbit.ambient",
+  "greetings": [
+    "My Chocolate Eggs are hidden all over SkyBlock!",
+    "Every rabbit you find works in your Chocolate Factory."
+  ],
+  "action": {
+    "type": "hoppity"
+  }
+}

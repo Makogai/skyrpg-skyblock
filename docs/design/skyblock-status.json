@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
-  "updated": "2026-10-18",
-  "latest": "The Hub, the Park, the End and the Dungeon Hub on Hypixel's own maps",
+  "updated": "2026-10-19",
+  "latest": "2026-10-19 The Chocolate Factory and Hoppity's Hunt; Hypixel's Garden Barn",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -195,7 +195,7 @@
           "name": "The Park",
           "icon": "block/birch_sapling",
           "weight": 2,
-          "done": 88
+          "done": 72
         },
         {
           "name": "Gold Mine & Deep Caverns",
@@ -231,7 +231,7 @@
           "name": "The Garden",
           "icon": "item/carrot",
           "weight": 6,
-          "done": 75
+          "done": 78
         },
         {
           "name": "The Rift",
@@ -261,7 +261,7 @@
           "name": "Events",
           "icon": "item/cookie",
           "weight": 4,
-          "done": 65
+          "done": 70
         },
         {
           "name": "Mayors & elections",
@@ -274,6 +274,12 @@
           "icon": "item/writable_book",
           "weight": 2,
           "done": 70
+        },
+        {
+          "name": "Chocolate Factory",
+          "icon": "item/cocoa_beans",
+          "weight": 3,
+          "done": 75
         }
       ]
     }
@@ -286,6 +292,10 @@
     {
       "date": "2026-10-18",
       "overall": 74.6
+    },
+    {
+      "date": "2026-10-19",
+      "overall": 75.3
     }
   ]
 }

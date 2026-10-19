@@ -703,7 +703,12 @@ phase so the next session can pick up where this one stopped.
 - [x] **Events part 2** (`SpookyBats`, `HeadlessHorseman`): the Bat Firework and its Bat Piñatas, Mega Bats and the
       Echolocator, the Headless Horseman (Horseman's Candle, swarms, projectile immunity, damage ranking), Spooky
       fishing (the five spooky sea creatures). Sacks can be added in the Hub again (the client refused head items).
-- [ ] Events part 3: Hoppity's Hunt and the Chocolate Factory, Jerry's Workshop and the Season of Jerry.
+- [x] **Events part 3: the Chocolate Factory and Hoppity's Hunt** (`chocolate/*`, `docs/design/chocolate-factory.md`):
+      Hypixel's 577 rabbits (`import_rabbits.py`), production online or not, the seven employees, Hand-Baked
+      Chocolate, the Rabbit Barn, Time Tower, Rabbit Shrine, Coach Jackrabbit, prestige to Factory VI, every milestone
+      rabbit, stray rabbits, the Chocolate Shop (CHOCOLATE card theme); the Hunt's eggs three times a day on every
+      island (15 spots each), pity, residents, the Egglocator, Hoppity's yearly shop.
+- [ ] Events part 4: Jerry's Workshop and the Season of Jerry.
 
 ### Hypixel's maps (2026-10-19, design in `hypixel-maps.md`)
 
@@ -715,6 +720,12 @@ phase so the next session can pick up where this one stopped.
       Cave from its own mob nameplates, jump pads (a new launch pad kind, `"jump"`) up to the Jungle Island; the End's
       altar found around a `dragon_altar` spot, its zones by Hypixel's Dragon's Gate; the Dungeon Hub's courtyard;
       everyone's NPCs, pads, warps and Hypixel's 2022 fairy souls.
+- [x] **Captures of Hypixel's current islands**: `hypixel_map.py` installs WorldTools captures (26.1 saves: entities in
+      their own files, NBT names, `equipment`), every leaf made persistent and `OfficialLeavesMixin` (no leaf decay on
+      Hypixel's maps); `hypixel_garden.py` puts Hypixel's Barn plot in as the Garden's template, `GardenLayout` moves the
+      Desk, Composter, NPCs, visitors and arrival to Hypixel's spots (`/sbgarden rebuild`).
+- [ ] Galatea and the reworked Park (Hypixel's floating islands) from clean captures (the first ones had been opened in
+      singleplayer and lost leaves); the Garden's other plots.
 - [ ] Mayors part 3: the Mythological mobs' special attacks, Griffin Upgrade Stones, Foxy's Carnival and Extra Event,
       Jerrypocalypse, Darker Auctions, the Stonks Auction and the rest.
 

@@ -11,9 +11,12 @@ public final class SkyBlockWorlds {
     private SkyBlockWorlds() {
     }
 
-    /** True in the Hub and in every skyrpg_skyblock dimension. */
+    /**
+     * True in the Hub and in every skyrpg_skyblock dimension. False with no level: a player logging in to the survival
+     * world has none yet while their commands are sent, and command {@code requires} checks run then.
+     */
     public static boolean isSkyBlock(Level level) {
-        return isSkyBlock(level.dimension());
+        return level != null && isSkyBlock(level.dimension());
     }
 
     /** True for the Hub and for every skyrpg_skyblock dimension. */

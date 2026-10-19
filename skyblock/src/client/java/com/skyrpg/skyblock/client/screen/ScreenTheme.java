@@ -30,7 +30,9 @@ public enum ScreenTheme {
     /** Galatea (foraging and hunting): mossy fig bark with vines, a moonlit vine divider, mossy plank buttons. */
     GALATEA("galatea", 0xFF7FE0B4, 0xFFE6F2EA, 0xFF9DB5A6, 0xFF61786A, 0xFF9BE07A, 0xFF08100B, 10),
     /** The Spooky Festival: charred dark oak with a pumpkin glow, jack o'lantern corners, a candy-stripe divider, pumpkin buttons. */
-    SPOOKY("spooky", 0xFFFF8C1A, 0xFFF6EBDD, 0xFFB9A48F, 0xFF7A6652, 0xFFB46CFF, 0xFF0E0810, 10);
+    SPOOKY("spooky", 0xFFFF8C1A, 0xFFF6EBDD, 0xFFB9A48F, 0xFF7A6652, 0xFFB46CFF, 0xFF0E0810, 10),
+    /** The Chocolate Factory: a milk chocolate bar with strawberry icing, rabbit corners, chocolate-square buttons. */
+    CHOCOLATE("chocolate", 0xFFF3A6C0, 0xFFF6EAD8, 0xFFC9AE93, 0xFF8A7058, 0xFFF3A6C0, 0xFF120A06, 10);
 
     private final String sprites;
     public final int accent;

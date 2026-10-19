@@ -57,7 +57,7 @@ Open the K menu and choose **Calendar and Events**. It shows:
 
 The Mayor adds their own events: Marina's Fishing Festival, Diana's Mythological Ritual and Cole's Mining Fiesta (see [Mayors](mayors)).
 
-Working in game now: the **Spooky Festival**, the **Traveling Zoo**, the **New Year Celebration** and **Jacob's Farming Contests** ([The Garden](the-garden)). Hoppity's Hunt and Jerry's Workshop come later.
+Working in game now: the **Spooky Festival**, the **Traveling Zoo**, the **New Year Celebration**, **Jacob's Farming Contests** ([The Garden](the-garden)) and **Hoppity's Hunt** ([The Chocolate Factory](chocolate-factory)). Jerry's Workshop comes later.
 
 Event NPCs only turn up for their event, and the map only shows them then.
 

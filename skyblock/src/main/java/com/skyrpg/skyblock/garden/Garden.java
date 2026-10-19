@@ -93,6 +93,7 @@ public final class Garden {
 
     public static void init() {
         GardenChips.init();
+        GardenLayout.init();
         Sprays.init();
         GardenRules.init();
         GardenMenu.init();
@@ -115,6 +116,15 @@ public final class Garden {
                                             com.mojang.brigadier.arguments.IntegerArgumentType.getInteger(ctx, "amount"));
                                     return 1;
                                 }))))
+                        .then(net.minecraft.commands.Commands.literal("rebuild").executes(ctx -> {
+                            ServerPlayer player = ctx.getSource().getPlayerOrException();
+                            Profile profile = Profiles.current(player);
+                            ServerLevel level = level(ctx.getSource().getServer());
+                            if (profile != null && level != null) {
+                                rebuild(level, profile);
+                            }
+                            return 1;
+                        }))
                         .then(net.minecraft.commands.Commands.literal("pest").executes(ctx -> {
                             ServerPlayer player = ctx.getSource().getPlayerOrException();
                             Profile owner = ownerAt(player.blockPosition());
@@ -367,8 +377,9 @@ public final class Garden {
         if (!state.built) {
             build(level, profile, state);
         }
-        Vec3 arrival = Vec3.atBottomCenterOf(c.offset(0, 1, 40));
-        player.teleport(new TeleportTransition(level, arrival, Vec3.ZERO, 180, 0, Set.of(), TeleportTransition.DO_NOTHING));
+        GardenLayout.Spot spot = GardenLayout.get().arrival();
+        Vec3 arrival = Vec3.atBottomCenterOf(GardenLayout.ground(level, spot.at(c)));
+        player.teleport(new TeleportTransition(level, arrival, Vec3.ZERO, spot.yaw(), 0, Set.of(), TeleportTransition.DO_NOTHING));
         player.resetFallDistance();
     }
 
@@ -391,6 +402,24 @@ public final class Garden {
         }
         state.built = true;
         SkyRpgSkyblock.LOGGER.info("Built the {} Garden in cell {}", profile.name(), profile.island());
+    }
+
+    /** The Barn plot built again from the template (admins, after a new one: Hypixel's, from tools/worlds/hypixel_garden.py). */
+    static void rebuild(ServerLevel level, Profile profile) {
+        BlockPos c = center(profile);
+        BlockState dirt = Blocks.DIRT.defaultBlockState();
+        BlockState grass = Blocks.GRASS_BLOCK.defaultBlockState();
+        BlockState air = Blocks.AIR.defaultBlockState();
+        for (BlockPos pos : BlockPos.betweenClosed(c.getX() - 48, GROUND - 4, c.getZ() - 48, c.getX() + 47, GROUND + 80, c.getZ() + 47)) {
+            BlockState want = pos.getY() < GROUND ? dirt : pos.getY() == GROUND ? grass : air;
+            if (level.getBlockState(pos) != want) {
+                level.setBlock(pos, want, Block.UPDATE_CLIENTS);
+            }
+        }
+        GardenData.State state = state(level.getServer(), profile);
+        build(level, profile, state);
+        GardenData.get(level.getServer()).setDirty();
+        Visitors.refresh(level.getServer(), profile);
     }
 
     /** Fences a plot's edge (or takes the fence down where no other locked plot needs it). */

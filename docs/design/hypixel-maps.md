@@ -13,6 +13,22 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | The Park | `skyrpg_skyblock:the_park` | The Park.zip | in use |
 | The End | `skyrpg_skyblock:the_end` | The End.zip | in use |
 | The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | in use |
+| Galatea | `skyrpg_skyblock:galatea` | a WorldTools capture | waiting for a clean capture |
+| The Garden's Barn plot | the `garden/barn` structure | a WorldTools capture of a fresh Garden | in use (`hypixel_garden.py`) |
+| The Park (2025 rework) | `skyrpg_skyblock:the_park` | a WorldTools capture | waiting for a clean capture |
+
+The 2022 downloads miss islands Hypixel added since (Galatea, the Garden) and islands it rebuilt: the current Park is a
+ring of separate floating islands (a snowy spruce island, a jungle island reached by a bridge), not the 2022 single
+island. Those come from captures: joining Hypixel with **WorldTools** (a Fabric mod) in a 26.1 client and flying over
+the whole island so every chunk loads. Hypixel's NPCs (fake players) aren't saved; their name holograms are.
+
+**Never open a capture in singleplayer.** Hypixel never random-ticks its islands, so their trees are full of leaves
+with no log within reach (`persistent=false`, distance 7): Minecraft starts decaying them the moment the world runs, and
+whatever stands on leaves (big dripleaf, azalea) drops with them. A minute of singleplayer cost the first Galatea
+capture thousands of leaves (its dropped saplings, sticks and dripleaf were still falling into the void), and the game
+also half-generates chunks around it and spawns animals. A capture that was opened shows it: chunks saved as
+`minecraft:full` (WorldTools writes `full`), chunks stuck at `minecraft:structure_starts` and the like, and item
+entities. Look at a copy if you must.
 
 ## Installing (`tools/worlds/hypixel_map.py`)
 
@@ -23,6 +39,13 @@ instead when the island already had a Hypixel map), the map's chunks are copied 
 as they load) and a `hypixel_map.json` marker is left there. On the way, the download's entities are sorted: decor
 stays (item frames, paintings, armour stands that hold or wear something); Hypixel's mobs, dropped items and the name
 holograms over its NPCs go. The holograms' names and places are kept in `hypixel_npcs.json` beside the marker.
+
+Both kinds of save install the same way: the 2022 downloads (1.16, `region/` at the top, entities inside the chunks,
+names as JSON) and WorldTools captures (26.1: `dimensions/minecraft/overworld/`, entities in their own region files,
+names as NBT text components, armour stands' items in an `equipment` compound). Item and block displays count as decor
+too. Every leaf is made persistent on the way, and chunks the game had only begun generating are left out (ours
+generates its own void there). On our side, leaves never decay on an island with Hypixel's map
+(`OfficialLeavesMixin`), whatever their state: the 2022 maps' leaves were already all persistent, the captures' weren't.
 
 `render` draws a map from above with NEU's NPCs on it, to find our way around:
 
@@ -112,3 +135,29 @@ exist yet then).
 - **NPCs** from NEU: Mort, Ophelia, Malik, Adventurer Saul, Croesus. (The map's holograms are its parkour's best
   times.)
 - **Fairy souls**: Hypixel's 7 of October 2022.
+
+## The Garden's Barn plot (`tools/worlds/hypixel_garden.py`)
+
+    python tools/worlds/hypixel_garden.py "<capture of a fresh Garden>" [--world-dir run/server/world]
+
+Every profile's Garden is stamped from the structure `skyrpg_skyblock:garden/barn` on its first visit. Minecraft looks
+in the world's `generated/<namespace>/structure/` folder before the mod's own structures, so the tool writes Hypixel's
+middle plot there (x and z -48..47 around the Garden's middle; its bedrock at y 66, dirt to 69, ground at 70, moved
+down 6 to our ground at 64), with `hypixel_garden.json` beside it. Block entities (the heads, signs, chests) come
+along, leaves made persistent. Gardens already built keep their Barn; `/sbgarden rebuild` (admins) clears your Barn plot
+and stamps it again. Undo by deleting both files.
+
+The marker switches the Garden to Hypixel's spots (`GardenLayout.HYPIXEL`): you arrive on the path 12 blocks south of
+the Barn's door, facing it; the Desk is the corner inside the Barn with the crafting table and chests (-8..-3, -30..-25
+from the middle); the Composter the cauldron pen under the hay roof east of the Barn (22..32, -44..-23); SkyMart in
+the Barn (NEU's spot), Pesthunter Phillip by the shed to its west (NEU's), the five visitors on the lawn either side
+of the door, Jacob and Anita down the path (decided: Hypixel has them in the Hub). NPCs and the arrival stand on the
+nearest ground to their spot, as the plot isn't flat. The other 24 plots are still ours (fenced grass, wild growth when
+unlocked): the first capture only reached the plots beside the Barn.
+
+## Galatea (`foraging_2` in NEU)
+
+The first capture (October 2026) covers the main island (x -775..-408, z -127..212; NEU's 28 NPCs all on it), part of
+the south and a small island at (-480, -90), but it had been opened in singleplayer: it waits for a clean capture.
+Its holograms include the mobs' nameplates (Chillshot, Chillblade, Phanpyre with their levels), which say where
+Galatea's mobs live.
