@@ -48,6 +48,11 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
             if (enrichment != null) {
                 lines.add(net.minecraft.network.chat.Component.literal("Enriched with " + enrichment.name()).withStyle(net.minecraft.ChatFormatting.DARK_AQUA));
             }
+            int pockets = com.skyrpg.skyblock.sack.Sacks.pockets(stack);
+            if (pockets > 0) {
+                lines.add(net.minecraft.network.chat.Component.literal("Pocket Sack-in-a-Sack: " + pockets + "/" + com.skyrpg.skyblock.sack.Sacks.MAX_POCKETS
+                        + " (holds " + (1 + 2 * pockets) + " times as much)").withStyle(net.minecraft.ChatFormatting.GREEN));
+            }
         });
         MenuScreens.register(SkyMenus.WARDROBE, WardrobeScreen::new);
         MenuScreens.register(SkyMenus.ENDER_PAGE, EnderPageScreen::new);
@@ -105,6 +110,7 @@ public final class SkyRpgSkyblockClient implements ClientModInitializer {
         ClientPlayNetworking.registerGlobalReceiver(Bazaar.Book.TYPE, (payload, context) -> BazaarPage.setBook(payload));
         ClientPlayNetworking.registerGlobalReceiver(Bazaar.Orders.TYPE, (payload, context) -> BazaarPage.setOrders(payload));
         ClientPlayNetworking.registerGlobalReceiver(RecipesPayload.TYPE, (payload, context) -> payload.apply());
+        ClientPlayNetworking.registerGlobalReceiver(com.skyrpg.skyblock.sack.Sacks.Contents.TYPE, (payload, context) -> com.skyrpg.skyblock.sack.Sacks.apply(payload));
         StoragePage storage = new StoragePage();
         SkyRpgMenu.registerPage(storage);
         ClientPlayNetworking.registerGlobalReceiver(StoragePayloads.Summary.TYPE, (payload, context) -> StoragePage.set(payload));

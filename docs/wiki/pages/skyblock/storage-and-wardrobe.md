@@ -51,13 +51,25 @@ The set you're wearing stays on its card, so you can change a piece there and it
 
 ## Sacks
 
-**Sacks** hold materials so they don't fill your inventory. There are Hypixel's 28 kinds: Mining, Combat, Foraging, Fishing, Agronomy, Husbandry, their Enchanted versions, Gemstone, Dwarven Mines, Crystal Hollows, Slayer, Nether, Dragon and more, each holding its own list of items (a Mining Sack holds Cobblestone, Coal, Iron, Gold, Mithril, Titanium...).
+**Sacks** hold materials so they don't fill your inventory. There are Hypixel's kinds (34 here): Mining, Combat, Foraging, Fishing, Agronomy, Husbandry, their Enchanted versions, Gemstone, Dwarven Mines, Crystal Hollows, Slayer, Nether, Dragon, the Rune Sack and the four Trophy Fishing Sacks (Bronze, Silver, Gold, Diamond) and more, each holding its own list of items (a Mining Sack holds Cobblestone, Coal, Iron, Gold, Mithril, Titanium...).
 
-- **Right-click a sack** to add it to your Sacks (it's used up). Whatever you're carrying that it holds goes in straight away.
+- **Right-click a sack** to put it in your **Sack of Sacks** (it's used up). Whatever you're carrying that it holds goes in straight away.
 - After that, what you gather that a sack holds (mined, farmed, chopped, fished or picked up) goes **straight into it** instead of your inventory. Every few seconds chat says how much went in: "[Sacks] +128 items. (Last 5s.)"
-- A sack holds a fixed amount **of each item**: Beginner 640, Small 2,240, Medium 6,720, Large 20,160 (Gemstone Sacks 128,000 to 2,560,000). When it's full, the rest goes to your inventory. A bigger sack of the same kind replaces the smaller one's size.
+- A sack holds a fixed amount **of each item**: Beginner 640, Small 2,240, Medium 6,720, Large 20,160 (Gemstone Sacks 128,000 to 2,560,000). The Rune Sack holds 64 of each rune, a Trophy Fishing Sack 512 of each fish of its tier. When it's full, the rest goes to your inventory. **Sacks of one kind add up**: a Medium and a Large Mining Sack together hold 26,880 of each item. Sacks of different kinds don't add up for an item both hold.
 - `/sacks` shows every sack you have and what's in it. **Click** an item to take a stack out, **shift-click** to fill your inventory with it; **Insert inventory** puts everything the sacks hold away.
 - `/gfs <item> <amount>` takes items out without opening the menu (`/gfs coal 64`).
+
+### Sack of Sacks
+
+The **Sack of Sacks** holds your sacks, so it limits how many you can use: it unlocks at **Tropical Fish IV** with **8 slots**, then 12 (V), 16 (VI), 20 (VII), 24 (VIII) and **29 (IX)**. Open it with `/sackofsacks` or the **Sack of Sacks** button in `/sacks`: every sack in it shows its size (and its Pocket Sack-in-a-Sacks), **Take out** gives the sack back as an item (what's inside your sacks stays), and empty slots show how many are free. Right-clicking a sack when it's full tells you so.
+
+### Pocket Sack-in-a-Sack
+
+A **Pocket Sack-in-a-Sack** (Hypixel sells it for 8,000 bits; there is no Bits Shop yet, so admins give it with `/sbitem give`) goes on a sack at the **Anvil** (the sack in the first slot, the Pocket in the second): that sack holds **three times as much**. Up to three can go on one sack: 3x, 5x, then 7x its size (a Large sack: 20,160, 60,480, 100,800, 141,120). The sack's tooltip shows how many it has, and it keeps them when you put it in the Sack of Sacks and take it out again.
+
+### Crafting from your sacks
+
+The Recipe Book's **Craft** button (and its counts of what you have) uses your sacks as well as your inventory: it takes ingredients from the inventory first, then the sacks. No need to take a stack out before you craft.
 
 Sacks belong to your profile. Gear never goes in a sack, only materials.
 
@@ -69,5 +81,6 @@ Sacks belong to your profile. Gear never goes in a sack, only materials.
 | `/ec [page]` | Opens an Ender Chest page (page 1 if you leave the number out). |
 | `/wardrobe` | Opens the Wardrobe. |
 | `/sacks` | Opens your Sacks. |
+| `/sackofsacks` | Opens your Sack of Sacks. |
 | `/gfs <item> <amount>` | Gets items from your Sacks. |
 | `/storage unlock <players> <pages>` | Admins: sets how many Ender Chest pages players have (1 to 9). |

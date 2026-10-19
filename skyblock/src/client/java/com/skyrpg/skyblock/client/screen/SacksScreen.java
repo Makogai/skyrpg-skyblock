@@ -60,6 +60,10 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
         return tops;
     }
 
+    private boolean overSacks(double mx, double my) {
+        return SkyScreens.inside(mx, my, leftPos + THEME.inset, topPos + 36, 90, 14);
+    }
+
     private boolean overInsert(double mx, double my) {
         return SkyScreens.inside(mx, my, leftPos + imageWidth - THEME.inset - 90, topPos + 36, 90, 14);
     }
@@ -73,8 +77,9 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
                 Component.literal(view.types().size() + " sack" + (view.types().size() == 1 ? "" : "s")).withColor(THEME.muted));
         boolean overButton = overInsert(mouseX, mouseY);
         SkyScreens.button(g, font, THEME, leftPos + imageWidth - THEME.inset - 90, topPos + 36, 90, 14, "Insert inventory", true, overButton);
+        SkyScreens.button(g, font, THEME, leftPos + THEME.inset, topPos + 36, 90, 14, "Sack of Sacks", true, overSacks(mouseX, mouseY));
         if (view.missing() > 0) {
-            Draw.fit(g, font, Component.literal(view.missing() + " more kinds of sack to find"), leftPos + THEME.inset + 2, topPos + 40, 150, 0.7f, 0.45f,
+            Draw.fit(g, font, Component.literal(view.missing() + " more kinds to find"), leftPos + THEME.inset + 96, topPos + 40, 90, 0.7f, 0.45f,
                     Draw.Align.LEFT, THEME.dim, false);
         }
         if (view.types().isEmpty()) {
@@ -82,7 +87,7 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
             SkyScreens.card(g, THEME, leftPos + (imageWidth - cw) / 2, topPos + 80, cw, 50, false, false);
             Draw.fit(g, font, Component.literal("You have no sacks yet."), leftPos + imageWidth / 2, topPos + 92, cw - 12, 1f, 0.6f,
                     Draw.Align.CENTER, THEME.text, false);
-            Draw.fit(g, font, Component.literal("Craft one (Small Mining Sack...) and right-click it to add it."), leftPos + imageWidth / 2, topPos + 108,
+            Draw.fit(g, font, Component.literal("Right-click a sack (Small Mining Sack...) to put it in your Sack of Sacks."), leftPos + imageWidth / 2, topPos + 108,
                     cw - 12, 0.75f, 0.45f, Draw.Align.CENTER, THEME.muted, false);
             return;
         }
@@ -163,6 +168,11 @@ public final class SacksScreen extends AbstractContainerScreen<SacksMenu> {
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         if (event.button() == InputConstants.MOUSE_BUTTON_LEFT) {
+            if (overSacks(event.x(), event.y())) {
+                minecraft.gameMode.handleInventoryButtonClick(menu.containerId, SacksMenu.SACK_OF_SACKS);
+                SkyScreens.click();
+                return true;
+            }
             if (overInsert(event.x(), event.y())) {
                 minecraft.gameMode.handleInventoryButtonClick(menu.containerId, SacksMenu.INSERT);
                 SkyScreens.click();

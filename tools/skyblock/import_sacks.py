@@ -10,7 +10,8 @@ Writes skyblock/src/main/resources/data/skyrpg_skyblock/skyrpg/sacks/sacks.json 
 
 Sources: constants/sacks.json (each sack type, its biggest sack item and what it holds) and the sack items' lore
 ("Capacity: 2,240 of each item"). A sack item belongs to the type whose biggest sack has the same name without its
-size word (SMALL_ / MEDIUM_ / LARGE_ / EXTRA_LARGE_ / BEGINNER_). Items we don't have are left out of the contents.
+size word (SMALL_ / MEDIUM_ / LARGE_ / EXTRA_LARGE_ / BEGINNER_). Items we don't have are left out of the contents. The
+Gold and Diamond Trophy Fishing Sacks and the Rune Sack aren't in NEU's list: they're added from the items we have.
 """
 import json
 import re
@@ -69,6 +70,20 @@ def main():
     if (ITEMS / "trick_or_treat_bag.json").exists():
         out.append({"type": "Candy", "icon": "TRICK_OR_TREAT_BAG", "items": ["GREEN_CANDY", "PURPLE_CANDY"],
                     "sizes": {"TRICK_OR_TREAT_BAG": 100000}})
+    # Hypixel's Trophy Fishing Sacks come in four tiers (NEU lists the Bronze and Silver ones): each holds 512 of its tier's
+    # fish, per fish (the 18 trophy fish, the three obfuscated ones included).
+    bronze = next((s for s in out if s["type"] == "Bronze Trophy Fishing"), None)
+    if bronze:
+        for tier in ("Gold", "Diamond"):
+            sack = f"{tier.upper()}_TROPHY_FISHING_SACK"
+            fish = [i.replace("_BRONZE", "_" + tier.upper()) for i in bronze["items"]]
+            fish = [i for i in fish if (ITEMS / (i.lower() + ".json")).exists()]
+            if (ITEMS / (sack.lower() + ".json")).exists() and fish:
+                out.append({"type": f"{tier} Trophy Fishing", "icon": sack, "items": fish, "sizes": {sack: 512}})
+    # The Rune Sack (14k bits at Elizabeth) holds 64 of each rune, every tier of it a rune of its own.
+    runes = sorted(f.stem.upper() for f in ITEMS.glob("*_rune_[0-9]*.json"))
+    if (ITEMS / "rune_sack.json").exists() and runes:
+        out.append({"type": "Rune", "icon": "RUNE_SACK", "items": runes, "sizes": {"RUNE_SACK": 64}})
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "sacks.json").write_text(json.dumps({"sacks": out}, indent=1) + "\n", encoding="utf-8")
     print(f"{len(out)} sack types, {sum(len(s['sizes']) for s in out)} sack items -> {OUT / 'sacks.json'}")

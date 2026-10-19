@@ -329,7 +329,43 @@ phase so the next session can pick up where this one stopped.
       size, "[Sacks] +N items. (Last 5s.)"; `SacksMenu` + `SacksScreen` (`/sacks`, a `sacks` action): take a stack or
       fill the inventory, insert inventory; `/gfs <item> <amount>`. Pets got the same UseBlock early phase (adding a pet
       while looking at a block was refused by the Hub).
-      Not yet: Sack of Sacks, Pocket Sack-in-a-Sack, Trophy Fish and Rune sacks, crafting straight from sacks.
+      Part 2 ("Museum and Sacks, part 2") added the Sack of Sacks, Pocket Sack-in-a-Sack, Rune and Trophy Fishing sacks and
+      crafting from sacks.
+- [x] **Museum and Sacks, part 2**. *Museum*: `Museum` keeps the very stacks you donate (`museum_items` attachment, reforges and
+      enchantments included) and **borrowing** gives them back (`museum_borrowed`): click a green donation to borrow it (a free
+      slot per piece), a blue-arrow one to return it (the items you hold then go in); sets come back piece by piece. Donations
+      that only counted via a higher one (the child chain) have nothing to lend. The Special tab holds 48 (`SPECIAL_LIMIT`).
+      Donations now pay "Museum Progression" (Hypixel's task name; it was "Museum donation", which still maps to the same
+      Leveling task). **Milestones** (`MuseumMilestones`): every 100 Museum XP, 40 in all; each +1% Bits Multiplier and +2%
+      Bank interest, bonus rewards from Hypixel's list (Bank upgrade tiers at 3/6/10/14/18, Appraisal at 3, Travel Scroll to
+      Museum at 5, the Hex at 8, Dust the Fish + Shen's Auction + Flower Minion XII at 10, Top Hat Emblem at 12, Eon the Fish
+      + Shen's Special at 20, Golden Emblem at 24). The Bank hook `Bank.interestBonus` (economy) multiplies the daily interest
+      and its cap. `MuseumScreen` got a milestone bar (hover: the next rewards; click: the Curator) and the loan states.
+      **Curator** and **Madame Eleanor Q. Goldsworth III** (`Curator`, NPCs `curator` and `madame_goldsworth` in the Hub next to
+      Kat, actions `museum_curator` / `museum_madame`, `/curator`): card screens for the 40 milestones with a Claim button, and
+      the Museum + Appraisal Service (10M coins once from Milestone 3: Museum Value = what an NPC pays for the items on
+      display) + the Special items' count. *Sacks*: the **Sack of Sacks** (`SackOfSacks`, `/sackofsacks`, a button in
+      `/sacks`): slots 8/12/16/20/24/29 at Tropical Fish IV-IX (none below IV; creative ignores the limit), right-click adds
+      a sack, "Take out" returns the item; sacks of one type now **add** their sizes (was the biggest). **Pocket
+      Sack-in-a-Sack**: anvil (`ItemWork`) on a sack, up to 3, each +200% of its size (3x, 5x, 7x), tag `sack_pockets`, kept when
+      the sack goes in and out of the Sack of Sacks, tooltip line. **Rune Sack** (64 of each of the 14 rune items) and the
+      **Gold and Diamond Trophy Fishing Sacks** (512 of each fish of the tier) added to `import_sacks.py` (34 types).
+      **Crafting from sacks**: `Crafting.count/craftable/craft` count and take the inventory first, then the sacks; the
+      client knows the sacks' contents through the `Sacks.Contents` payload (sent a few times a second after a change, and
+      on join). Decided: borrowed items still count for the milestones and progress (Hypixel's wiki: "It still counts towards
+      your Museum progress, but not towards your total item value"), they only drop out of the Museum Value; the brief had it
+      the other way round. Decided: the milestone XP is the donations' XP (Hypixel has no separate XP for reaching one).
+      Decided: the Bank interest bonus is +2% of the interest paid per milestone (not +2 percentage points of the rate).
+      Decided: rewards of systems that aren't in (Bank upgrade tiers, the Hex, Shen's, emblems, the Flower Minion XII recipe,
+      Bits) are listed as unlocked (`MuseumMilestones.unlocked`) and have no effect; only the three items are claimed.
+      Decided: the Sack of Sacks follows Hypixel's slot rule (Tropical Fish IV or nothing), so a fresh character can't add
+      sacks until then; sacks added before keep working. Decided: a Pocket applies at the anvil to the sack item (not in the
+      Sack of Sacks), and doesn't raise the sack's rarity. Decided: the Museum Value is NPC sell prices (no market for most
+      items). Decided: the Curator and Madame stand in the Hub next to Kat (14.5 / 17.5, 70, -53.5, a guess: look at it in
+      game); the Museum building isn't built. Not yet: the Museum building and display pedestals, other players' Museums,
+      Museum Search, the Bits Shop (so the Pocket Sack-in-a-Sack is given with `/sbitem give`), the Sack of Sacks' account
+      upgrades, crafting from sacks in the older bench screens (`BenchRecipes`, the crafting grid) and in NPC shops' costs
+      beyond what `takeAnywhere` already did.
 - [x] **Crystal Hollows** (Hypixel's): research `docs/design/research/crystal-hollows.md`. A **generated** world
       (`tools/skyblock/gen_hollows.py` writes the dimension, noise settings, material rule, 6 biomes, gem/metal vein features
       and the zones): 512 x 512 around 0, 0, y 0-192, vanilla's nether cave noise, walls from x/z gradients, lava sea at
@@ -416,7 +452,7 @@ phase so the next session can pick up where this one stopped.
       pieces, SkyBlock XP, game stage, and the lower donation each higher one counts for) to `skyrpg/museum`. `Museum` +
       `MuseumMenu` + `MuseumScreen` (`/museum`, a `museum` action): category tabs, ready-to-donate items first (gold),
       donated (green), unknown (?); donating takes the item (or the whole set) for good, pays its SkyBlock XP and counts
-      its child chain. Not yet: borrowing back, milestones, the Curator and building.
+      its child chain. Part 2 (below, "Museum and Sacks, part 2") added borrowing, milestones and the Curator.
 - [x] **Booster Cookie**: `BoosterCookie` (skyblock): eat one (right-click, early UseItem/UseBlock phases) for 4 real-time
       days of the Cookie Buff (stacking), per profile: +15 Magic Find and +5 Wisdom in every skill (a stat source), coins
       kept on death (`Deaths`); `/cookie`. Decided: no /ah or /bz gating (there are no Auction/Bazaar NPCs yet to fall back
