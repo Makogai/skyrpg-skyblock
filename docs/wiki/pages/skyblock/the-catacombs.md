@@ -36,7 +36,7 @@ Talk to Mort: click a **class** (Healer, Mage, Berserk, Archer, Tank), then a **
 
 ## A run
 
-Every run is a new map: a grid of rooms (some long, square or L-shaped) joined by doors. You start in the **Entrance** (green); the timer starts after 5 seconds.
+Every run is a new map: a grid of rooms (some long, square or L-shaped) joined by doors. You start in the **Entrance** (green); the timer starts after 5 seconds. Where the server has Hypixel's dungeon maps installed, the rooms are Hypixel's own (their basements and hidden corners too, with secret chests where Hypixel's chests are), and so are the boss arenas.
 
 - **Rooms**: their mobs appear when you first walk in. Mobs with a **✯** before their name are **star mobs**: kill them all and the room is cleared.
 - **Keys and doors**: some doors are black **Wither doors**. Clearing the right room drops a **Wither Key**; walk into it, then right-click the door. The **Blood room**'s red door needs the **Blood Key** the same way.

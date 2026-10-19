@@ -101,6 +101,9 @@ final class Run {
     final ServerLevel level;
     final BlockPos origin;
     final BlockPos bossOrigin;
+    /** Hypixel's arena's middle and way in (its markers), when it's installed; null for ours. */
+    Vec3 arenaCenter;
+    Vec3 arenaArrival;
     final List<UUID> players;
     final Map<UUID, String> classes = new LinkedHashMap<>();
     final RoomState[] rooms;
@@ -248,10 +251,17 @@ final class Run {
             case 3 -> state.min.offset(0, 0, sx - 1);
             default -> state.min;
         };
+        // Hypixel's rooms start deeper (basements), so their floor lines up with ours
+        int drop = RoomLibrary.isHypixel(template) ? RoomLibrary.HYPIXEL_DROP : 0;
+        offset = offset.below(drop);
+        if (drop > 0) {
+            loadChunks(state.min.below(drop), state.max.above(structure.getSize().getY()));
+        }
         structure.placeInWorld(level, offset, offset, new StructurePlaceSettings().setRotation(rotation), random,
                 Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
         // Read the room's markers, then remove them.
-        AABB box = new AABB(state.min.getX(), state.min.getY(), state.min.getZ(), state.max.getX() + 1, state.max.getY() + 1, state.max.getZ() + 1);
+        AABB box = new AABB(state.min.getX(), state.min.getY() - drop, state.min.getZ(), state.max.getX() + 1,
+                Math.max(state.max.getY() + 1, offset.getY() + structure.getSize().getY()), state.max.getZ() + 1);
         for (Marker marker : level.getEntitiesOfClass(Marker.class, box, m -> m.entityTags().contains(TEMPLATE_TAG))) {
             CompoundTag data = ((EntityDataAccess) marker).skyrpg$customData().copyTag();
             String kind = data.getStringOr("catacombs", "");
@@ -918,6 +928,8 @@ final class Run {
 
     /** The whole run's box (rooms and the boss arena), for clearing it away. */
     AABB area() {
-        return new AABB(origin.getX() - 4, origin.getY() - 4, origin.getZ() - 4, bossOrigin.getX() + 160, origin.getY() + 80, origin.getZ() + 6 * CELL + 64);
+        // Hypixel's rooms go 30 deeper and its arenas up to 120 high
+        return new AABB(origin.getX() - 4, origin.getY() - 4 - RoomLibrary.HYPIXEL_DROP, origin.getZ() - 4, bossOrigin.getX() + 160, origin.getY() + 130,
+                origin.getZ() + 6 * CELL + 64);
     }
 }

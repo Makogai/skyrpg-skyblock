@@ -74,7 +74,11 @@ def color(name, y, lowest, highest):
 def world_dir(source):
     source = Path(source)
     if source.is_dir():
-        return source
+        if (source / "level.dat").exists():
+            return source
+        # a download that keeps its world one folder down
+        found = next(iter(sorted(source.rglob("level.dat"))), None)
+        return found.parent if found else source
     tmp = Path(tempfile.mkdtemp(prefix="hypixel_map_"))
     with zipfile.ZipFile(source) as z:
         z.extractall(tmp)

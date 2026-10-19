@@ -16,6 +16,7 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | Galatea | `skyrpg_skyblock:galatea` | a WorldTools capture | waiting for a clean capture |
 | The Garden's Barn plot | the `garden/barn` structure | a WorldTools capture of a fresh Garden | in use (`hypixel_garden.py`) |
 | The Park (2025 rework) | `skyrpg_skyblock:the_park` | a WorldTools capture | waiting for a clean capture |
+| The Catacombs' rooms and boss arenas | the dungeon templates | [Dungeons] The Entrance, Floor I-VI | in use (`hypixel_dungeons.py`) |
 
 The 2022 downloads miss islands Hypixel added since (Galatea, the Garden) and islands it rebuilt: the current Park is a
 ring of separate floating islands (a snowy spruce island, a jungle island reached by a bridge), not the 2022 single
@@ -161,3 +162,32 @@ The first capture (October 2026) covers the main island (x -775..-408, z -127..2
 the south and a small island at (-480, -90), but it had been opened in singleplayer: it waits for a clean capture.
 Its holograms include the mobs' nameplates (Chillshot, Chillblade, Phanpyre with their levels), which say where
 Galatea's mobs live.
+
+## The Catacombs: Hypixel's rooms and boss arenas (`tools/worlds/hypixel_dungeons.py`)
+
+The thread's "[Dungeons] The Entrance" and "Floor I" to "Floor VI" downloads are seven real runs (October 2022): each a
+grid of rooms on Hypixel's 32-block cells from (-200, -200), bedrock at y 66, the floor at y 68, walls to y 99,
+basements to y 30 or so; and the floor's boss arena south-east of the rooms.
+
+    python tools/worlds/hypixel_dungeons.py survey "<capture>"... --sheet rooms.png --json rooms.json
+    python tools/worlds/hypixel_dungeons.py install "<capture>"... --types types.json
+    python tools/worlds/hypixel_dungeons.py arenas "<capture>"...
+
+- **survey** finds the rooms (cells of one room have their gap built over; between rooms the gap is empty air, all the
+  way down), their shapes, and the copies of one room (the same block counts whichever way it's turned): 65 different
+  rooms in the seven runs, every shape. A contact sheet shows them, to say which are special.
+- **install** writes each different room under `world/generated/skyrpg_skyblock/structure/catacombs/rooms/hypixel/
+  <category>/` (never committed): turned to our orientation (1xN along x, the L missing its +x+z cell; block states
+  turned too), y 30 to 98 (its floor at 38), the doorways walled up (the mod cuts the ones it uses), and our markers: a
+  secret chest on every chest, star mobs where the capture's own star mobs stood and on open floor (three a cell, an
+  elite in rooms of 3+ cells), a key spot; the Entrance's spawn, the Blood room's Watcher, the Fairy room's fairy.
+  Decided from the rooms' looks and how often they come up (every run has one Fairy and one Blood room): two Entrance
+  rooms, one Blood, one Fairy, two trap rooms (dispensers, TNT); the puzzle rooms (Teleport Maze, Ice Path, Ice Fill,
+  Water Board, Boulder, and the Quiz/Blaze/Creeper-looking ones) and the boss arenas' doorways are left out (our three
+  puzzle rooms stay ours until those puzzles are in). 53 rooms in all.
+- `RoomLibrary` takes Hypixel's rooms first for every category that has some; `Run` builds them 30 blocks deeper
+  (`HYPIXEL_DROP`) so their floor lines up with ours, and reads their markers from the basement up.
+- **arenas** writes each floor's arena (everything built outside the rooms, the biggest piece) as
+  `catacombs/boss/hypixel/<boss>.nbt` with two markers: its middle (the middle of the floor under its roof) and its way
+  in (the floor spot nearest the rooms). `BossFight` builds Hypixel's arena when it's there, takes those two from it,
+  and puts each boss's spots on the nearest standing ground (Hypixel's arenas aren't our 61-block square).

@@ -72,16 +72,41 @@ abstract class BossFight {
 
     // ---------------------------------------------------------------- the arena
 
-    /** The arena: its template if there is one, else a plain hall of blackstone. */
+    /**
+     * The arena: Hypixel's own if it's installed ({@code catacombs/boss/hypixel/<boss>}, in the world's generated folder
+     * from {@code tools/worlds/hypixel_dungeons.py arenas}; its middle and way in are markers in it), else ours, else a
+     * plain hall of blackstone.
+     */
     static void buildArena(Run run) {
         BlockPos o = run.bossOrigin;
-        for (int cx = o.getX() >> 4; cx <= (o.getX() + ARENA) >> 4; cx++) {
-            for (int cz = o.getZ() >> 4; cz <= (o.getZ() + ARENA) >> 4; cz++) {
+        var manager = run.level.getServer().getStructureTemplateManager();
+        StructureTemplate hypixel = manager.get(Identifier.fromNamespaceAndPath("skyrpg_skyblock", "catacombs/boss/hypixel/" + run.floor.boss()))
+                .orElse(null);
+        int sizeX = hypixel == null ? ARENA : hypixel.getSize().getX();
+        int sizeZ = hypixel == null ? ARENA : hypixel.getSize().getZ();
+        for (int cx = o.getX() >> 4; cx <= (o.getX() + sizeX) >> 4; cx++) {
+            for (int cz = o.getZ() >> 4; cz <= (o.getZ() + sizeZ) >> 4; cz++) {
                 run.level.getChunk(cx, cz);
             }
         }
+        if (hypixel != null) {
+            hypixel.placeInWorld(run.level, o, o, new StructurePlaceSettings(), run.random, Block.UPDATE_CLIENTS);
+            net.minecraft.world.phys.AABB box = new net.minecraft.world.phys.AABB(o.getX(), o.getY(), o.getZ(), o.getX() + sizeX,
+                    o.getY() + hypixel.getSize().getY(), o.getZ() + sizeZ);
+            for (net.minecraft.world.entity.Marker marker : run.level.getEntitiesOfClass(net.minecraft.world.entity.Marker.class, box,
+                    m -> m.entityTags().contains("skyrpg_catacombs"))) {
+                String kind = ((com.skyrpg.skyblock.mixin.EntityDataAccess) marker).skyrpg$customData().copyTag().getStringOr("catacombs", "");
+                if (kind.equals("arena_center")) {
+                    run.arenaCenter = marker.position();
+                } else if (kind.equals("arena_arrival")) {
+                    run.arenaArrival = marker.position();
+                }
+                marker.discard();
+            }
+            return;
+        }
         Identifier id = Identifier.fromNamespaceAndPath("skyrpg_skyblock", "catacombs/boss/" + run.floor.boss());
-        StructureTemplate template = run.level.getServer().getStructureTemplateManager().get(id).orElse(null);
+        StructureTemplate template = manager.get(id).orElse(null);
         if (template != null) {
             template.placeInWorld(run.level, o, o, new StructurePlaceSettings(), run.random, Block.UPDATE_CLIENTS);
             return;
@@ -101,21 +126,42 @@ abstract class BossFight {
     }
 
     Vec3 arrival() {
-        return Vec3.atBottomCenterOf(run.bossOrigin.offset(ARENA / 2, Run.FLOOR + 1, ARENA - 6));
+        return run.arenaArrival != null ? run.arenaArrival : Vec3.atBottomCenterOf(run.bossOrigin.offset(ARENA / 2, Run.FLOOR + 1, ARENA - 6));
     }
 
     Vec3 center() {
-        return Vec3.atBottomCenterOf(run.bossOrigin.offset(ARENA / 2, Run.FLOOR + 1, ARENA / 2));
+        return run.arenaCenter != null ? run.arenaCenter : Vec3.atBottomCenterOf(run.bossOrigin.offset(ARENA / 2, Run.FLOOR + 1, ARENA / 2));
     }
 
-    /** A spot in the arena: dx/dz blocks from the middle. */
+    /** A spot in the arena: dx/dz blocks from the middle (on Hypixel's arenas, moved onto the nearest ground). */
     Vec3 spot(double dx, double dz) {
-        return center().add(dx, 0, dz);
+        Vec3 at = center().add(dx, 0, dz);
+        if (run.arenaCenter == null) {
+            return at;
+        }
+        BlockPos base = BlockPos.containing(at);
+        for (int d = 0; d <= 6; d++) {
+            for (int sign : new int[] {1, -1}) {
+                BlockPos pos = base.above(d * sign);
+                if (run.level.getBlockState(pos).getCollisionShape(run.level, pos).isEmpty()
+                        && run.level.getBlockState(pos.above()).getCollisionShape(run.level, pos.above()).isEmpty()
+                        && !run.level.getBlockState(pos.below()).getCollisionShape(run.level, pos.below()).isEmpty()) {
+                    return Vec3.atBottomCenterOf(pos).add(at.x - Math.floor(at.x) - 0.5, 0, at.z - Math.floor(at.z) - 0.5);
+                }
+                if (d == 0) {
+                    break;
+                }
+            }
+        }
+        return center();
     }
 
     void teleportIn(ServerPlayer player) {
         Vec3 at = arrival();
-        player.teleport(new net.minecraft.world.level.portal.TeleportTransition(run.level, at, Vec3.ZERO, 180, 0, java.util.Set.of(),
+        // facing the arena's middle
+        Vec3 to = center().subtract(at);
+        float yaw = to.horizontalDistanceSqr() < 1 ? 180 : (float) (Math.atan2(to.z, to.x) * 180 / Math.PI) - 90;
+        player.teleport(new net.minecraft.world.level.portal.TeleportTransition(run.level, at, Vec3.ZERO, yaw, 0, java.util.Set.of(),
                 net.minecraft.world.level.portal.TeleportTransition.DO_NOTHING));
         player.resetFallDistance();
     }
