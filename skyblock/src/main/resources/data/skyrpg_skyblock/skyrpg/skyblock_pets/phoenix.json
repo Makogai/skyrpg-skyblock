@@ -1,0 +1,95 @@
+{
+ "name": "Phoenix",
+ "type": "COMBAT",
+ "max_level": 100,
+ "rarities": {
+  "SPECIAL": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Rekindle",
+    "§7Before death, become §eimmune §7and",
+    "§7gain §c{0} Strength §7for §a{1} §7seconds",
+    "§860s cooldown",
+    "",
+    "§6Fourth Flare",
+    "§7On 4th melee strike, §6ignite §7mobs,",
+    "§7dealing §c{2}x §7your §9Crit Damage §7each",
+    "§7second for §a{3} §7seconds"
+   ],
+   "stats": [
+    {
+     "intelligence": 51.0,
+     "strength": 10.5
+    },
+    {
+     "intelligence": 150.0,
+     "strength": 60.0
+    }
+   ],
+   "numbers": [
+    [
+     10.1,
+     2.0,
+     1.1,
+     2.0
+    ],
+    [
+     20,
+     4.0,
+     13,
+     4.0
+    ]
+   ]
+  },
+  "VERY_SPECIAL": {
+   "lore": [
+    "§7Strength: §c+{STRENGTH}",
+    "§7Intelligence: §b+{INTELLIGENCE}",
+    "",
+    "§6Rekindle",
+    "§7Before death, become §eimmune §7and",
+    "§7gain §c{0} Strength §7for §a{1} §7seconds",
+    "§860s cooldown",
+    "",
+    "§6Fourth Flare",
+    "§7On 4th melee strike, §6ignite §7mobs,",
+    "§7dealing §c{2}x §7your §9Crit Damage §7each",
+    "§7second for §a{3} §7seconds",
+    "",
+    "§6Magic Bird",
+    "§7You may always fly on your private",
+    "§7island and garden",
+    "",
+    "§6Eternal Coins",
+    "§7Don't lose coins from death."
+   ],
+   "stats": [
+    {
+     "intelligence": 51.0,
+     "strength": 10.5
+    },
+    {
+     "intelligence": 150.0,
+     "strength": 60.0
+    }
+   ],
+   "numbers": [
+    [
+     10.1,
+     2.0,
+     1.1,
+     2.0
+    ],
+    [
+     20,
+     4.0,
+     13,
+     4.0
+    ]
+   ]
+  }
+ },
+ "skin": "ewogICJ0aW1lc3RhbXAiIDogMTY0Mjg2NTc3MTM5MSwKICAicHJvZmlsZUlkIiA6ICJiYjdjY2E3MTA0MzQ0NDEyOGQzMDg5ZTEzYmRmYWI1OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJsYXVyZW5jaW8zMDMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjZiMWI1OWJjODkwYzljOTc1Mjc3ODdkZGUyMDYwMGM4Yjg2ZjZiOTkxMmQ1MWE2YmZjZGIwZTRjMmFhM2M5NyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+}

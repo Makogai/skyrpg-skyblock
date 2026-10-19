@@ -459,6 +459,8 @@ public final class Hotm {
         if (MiningEvents.doublePowder() && player.level().dimension().equals(SkyMining.DWARVEN_MINES)) {
             amount *= 2;
         }
+        // Mithril Golem's, Scatha's and Glacite Golem's pet perks: more of their Powder
+        amount = Math.round(amount * (1 + com.skyrpg.skyblock.pet.PetAbilities.perk(player, "powder", type) / 100));
         set(player, state(player).withPowder(type, amount, true));
     }
 

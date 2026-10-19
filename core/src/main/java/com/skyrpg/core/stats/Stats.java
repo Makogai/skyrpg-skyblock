@@ -38,7 +38,14 @@ public final class Stats {
         void refresh(ServerPlayer player);
     }
 
+    /** Changes what an ability costs in mana (Sheep's Mana Saver, Crow's Insightful): the cost so far in, the new cost out. */
+    @FunctionalInterface
+    public interface ManaCost {
+        double apply(ServerPlayer player, double cost);
+    }
+
     private static final List<Source> SOURCES = new CopyOnWriteArrayList<>();
+    private static final List<ManaCost> MANA_COSTS = new CopyOnWriteArrayList<>();
     private static Backend backend;
 
     private Stats() {
@@ -46,6 +53,10 @@ public final class Stats {
 
     public static void registerSource(Source source) {
         SOURCES.add(source);
+    }
+
+    public static void registerManaCost(ManaCost modifier) {
+        MANA_COSTS.add(modifier);
     }
 
     public static List<Source> sources() {
@@ -72,7 +83,11 @@ public final class Stats {
 
     /** Takes mana if the player has enough. Without the stats mod, abilities are free. */
     public static boolean spendMana(ServerPlayer player, double amount) {
-        return backend == null || backend.spendMana(player, amount);
+        double cost = amount;
+        for (ManaCost modifier : MANA_COSTS) {
+            cost = Math.max(0, modifier.apply(player, cost));
+        }
+        return backend == null || backend.spendMana(player, cost);
     }
 
     public static void refresh(ServerPlayer player) {

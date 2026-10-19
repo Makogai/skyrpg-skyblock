@@ -32,16 +32,20 @@ MULTIPLY = re.compile(r"Increases the pet's\s+([A-Za-z ]+?)\s+by\s+(\d+)%")
 
 
 def stat_id(name):
-    return name.strip().lower().replace(" ", "_")
+    name = name.strip().lower().replace(" ", "_")
+    return {"attack_speed": "attack_speed"}.get(name, name)
 
 
 def main():
     neu = zipfile.ZipFile(CACHE / "neu-repo.zip")
     out = {}
     for name in sorted(neu.namelist()):
-        if "/items/PET_ITEM_" not in name or not name.endswith(".json"):
+        if "/items/" not in name or not name.endswith(".json") or name.count("/") != 2:
             continue
         item = json.loads(neu.read(name))
+        # PET_ITEM_* and the older pet items without the prefix (Minos Relic, Serrated Claws...): their lore ends "PET ITEM"
+        if not item["internalname"].startswith("PET_ITEM_") and not (item.get("lore") and FORMATTING.sub("", item["lore"][-1]).endswith("PET ITEM")):
+            continue
         lines = [ICONS.sub("", FORMATTING.sub("", l)).strip() for l in item.get("lore", [])]
         body = [l for l in lines if l and not any(s in l for s in SKIP) and not l.endswith("PET ITEM")
                 and l not in ("COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC", "SPECIAL")]
@@ -60,8 +64,33 @@ def main():
                 effect["multiply"] = multiply
         if "rarity of your pet by 1" in text:
             effect["tier_boost"] = True
-        if text.startswith("Grants"):
-            stats = {stat_id(m.group(2)): float(m.group(1)) for m in STAT.finditer(text.split(".")[0])}
+        # "Increases all pet stats by 33.3%." (Minos Relic)
+        all_stats = re.search(r"Increases all pet stats by ([\d.]+)%", text)
+        if all_stats:
+            effect["multiply_all"] = float(all_stats.group(1))
+        # "Grants +10 True Defense and makes the pet's owner immune to knockback."
+        if "immune to knockback" in text:
+            effect["knockback_immune"] = True
+        # Quick Claw: "Every 2 pet levels, you gain +1 Mining Speed and +1 Mining Fortune."
+        every = re.match(r"Every (\d+) pet levels, you gain (.+?)\.", text)
+        if every:
+            effect["per_levels"] = {"every": int(every.group(1)),
+                                    "stats": {stat_id(m.group(2)): float(m.group(1)) for m in STAT.finditer(every.group(2))}}
+        # Flying Pig: "This pet item may only be used on a Pig pet."
+        only = re.search(r"may only be used on an? (\w+) pet", text)
+        if only:
+            effect["only"] = only.group(1).upper()
+        # Exp Share: "this pet gains +15% Exp Share rate."
+        share = re.search(r"gains \+(\d+)% Exp Share rate", text)
+        if share:
+            effect["exp_share"] = float(share.group(1))
+        # Titanium Minecart: "Grants +33.3 Mining Fortune while mining Titanium Ore."
+        if " while mining " in text:
+            effect["while_mining"] = text.split(" while mining ", 1)[1].rstrip(".").upper().replace(" ", "_")
+        # "Grants +40 Potato Fortune and +20 Speed." (after "may only be used on a Pig pet."); not "...while mining Titanium Ore"
+        if "Grants" in text and " while mining " not in text:
+            stats = {stat_id(m.group(2)): float(m.group(1)) for m in STAT.finditer(text[text.index("Grants"):].split(". ")[0].rstrip("."))
+                     if "_for_" not in stat_id(m.group(2))}
             if stats:
                 effect["stats"] = stats
         out[item["internalname"]] = effect

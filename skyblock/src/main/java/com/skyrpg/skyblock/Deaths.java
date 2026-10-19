@@ -10,7 +10,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.gamerules.GameRules;
 
-/** Dying, as on Hypixel: you keep everything you carry, but lose half the coins in your purse (the bank is safe; a Booster Cookie keeps them). */
+/** Dying, as on Hypixel: you keep everything you carry, but lose half the coins in your purse (the bank is safe; a Booster Cookie or a Phoenix pet keeps them). */
 final class Deaths {
     private Deaths() {
     }
@@ -34,7 +34,7 @@ final class Deaths {
 
     private static void losePurse(ServerPlayer player) {
         // The Booster Cookie's buff keeps your coins.
-        if (com.skyrpg.skyblock.cookie.BoosterCookie.active(player)) {
+        if (com.skyrpg.skyblock.cookie.BoosterCookie.active(player) || com.skyrpg.skyblock.pet.PetAbilities.has(player, "keep_coins")) {
             return;
         }
         long purse = Wallet.balance(player);

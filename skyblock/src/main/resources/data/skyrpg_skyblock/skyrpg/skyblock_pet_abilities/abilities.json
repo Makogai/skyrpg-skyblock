@@ -63,6 +63,123 @@
      "of": "defense",
      "cap": 500,
      "ability": "Armored Tank"
+    },
+    {
+     "kind": "perk",
+     "perk": "tail_slam",
+     "arg": "",
+     "num": 2,
+     "ability": "Clubbed Tail"
+    }
+   ]
+  },
+  "BABY_YETI": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Yeti Fury"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:YETI_SWORD",
+     "stat": "intelligence",
+     "num": 0,
+     "ability": "Yeti Fury"
     }
    ]
   },
@@ -335,6 +452,13 @@
      "stat": "mining_fortune",
      "num": 3,
      "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "HONEY_JAR",
+     "num": 4,
+     "ability": "Honey Harvester"
     }
    ],
    "MYTHIC": [
@@ -379,6 +503,81 @@
      "stat": "mining_fortune",
      "num": 3,
      "ability": "Busy Buzz Buzz"
+    },
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "HONEY_JAR",
+     "num": 4,
+     "ability": "Honey Harvester"
+    }
+   ]
+  },
+  "BINGO": {
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "all",
+     "num": 2,
+     "ability": "Fast Learner"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "all",
+     "num": 2,
+     "ability": "Fast Learner"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "all",
+     "num": 2,
+     "ability": "Fast Learner"
+    },
+    {
+     "kind": "perk",
+     "perk": "coins_level",
+     "arg": "",
+     "num": 4,
+     "ability": "Scavenger"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "all",
+     "num": 2,
+     "ability": "Fast Learner"
+    },
+    {
+     "kind": "perk",
+     "perk": "coins_level",
+     "arg": "",
+     "num": 4,
+     "ability": "Scavenger"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "all",
+     "num": 2,
+     "ability": "Fast Learner"
+    },
+    {
+     "kind": "perk",
+     "perk": "coins_level",
+     "arg": "",
+     "num": 4,
+     "ability": "Scavenger"
     }
    ]
   },
@@ -425,7 +624,32 @@
    ]
   },
   "BLUE_WHALE": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "absorption_reduction",
+     "arg": "",
+     "num": 0,
+     "ability": "Ingest"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "absorption_reduction",
+     "arg": "",
+     "num": 0,
+     "ability": "Ingest"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "absorption_reduction",
+     "arg": "",
+     "num": 0,
+     "ability": "Ingest"
+    },
     {
      "kind": "convert",
      "stat": "defense",
@@ -437,6 +661,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "absorption_reduction",
+     "arg": "",
+     "num": 0,
+     "ability": "Ingest"
+    },
+    {
      "kind": "convert",
      "stat": "defense",
      "num": 1,
@@ -446,6 +677,13 @@
     }
    ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "absorption_reduction",
+     "arg": "",
+     "num": 0,
+     "ability": "Ingest"
+    },
     {
      "kind": "convert",
      "stat": "defense",
@@ -488,6 +726,19 @@
      "num": 0,
      "where": "public",
      "ability": "Free Range"
+    },
+    {
+     "kind": "perk",
+     "perk": "egg_drop",
+     "arg": "",
+     "ability": "Eggstra Loot"
+    },
+    {
+     "kind": "perk",
+     "perk": "animal_extra",
+     "arg": "",
+     "num": 1,
+     "ability": "Eggstra Loot"
     }
    ],
    "EPIC": [
@@ -497,6 +748,19 @@
      "num": 0,
      "where": "public",
      "ability": "Free Range"
+    },
+    {
+     "kind": "perk",
+     "perk": "egg_drop",
+     "arg": "",
+     "ability": "Eggstra Loot"
+    },
+    {
+     "kind": "perk",
+     "perk": "animal_extra",
+     "arg": "",
+     "num": 1,
+     "ability": "Eggstra Loot"
     }
    ],
    "LEGENDARY": [
@@ -506,6 +770,37 @@
      "num": 0,
      "where": "public",
      "ability": "Free Range"
+    },
+    {
+     "kind": "perk",
+     "perk": "egg_drop",
+     "arg": "",
+     "ability": "Eggstra Loot"
+    },
+    {
+     "kind": "perk",
+     "perk": "animal_extra",
+     "arg": "",
+     "num": 1,
+     "ability": "Eggstra Loot"
+    },
+    {
+     "kind": "perk",
+     "perk": "fall_reduction",
+     "arg": "",
+     "num": 2,
+     "ability": "Light Feet"
+    }
+   ]
+  },
+  "CROW": {
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "mana_free",
+     "arg": "",
+     "num": 2,
+     "ability": "Insightful"
     }
    ]
   },
@@ -576,6 +871,17 @@
      "stat": "sea_creature_chance",
      "num": 1,
      "ability": "Echolocation"
+    }
+   ]
+  },
+  "DROPLET_WISP": {
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "blaze",
+     "num": 0,
+     "ability": "Blaze Slayer"
     }
    ]
   },
@@ -692,6 +998,22 @@
      "mobs": "ender",
      "num": 0,
      "ability": "End Strike"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_DRAGON",
+     "stat": "damage",
+     "num": 1,
+     "ability": "One With The Dragon"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_DRAGON",
+     "stat": "strength",
+     "num": 2,
+     "ability": "One With The Dragon"
     }
    ],
    "LEGENDARY": [
@@ -700,6 +1022,22 @@
      "mobs": "ender",
      "num": 0,
      "ability": "End Strike"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_DRAGON",
+     "stat": "damage",
+     "num": 1,
+     "ability": "One With The Dragon"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_DRAGON",
+     "stat": "strength",
+     "num": 2,
+     "ability": "One With The Dragon"
     },
     {
      "kind": "stat_pct",
@@ -770,6 +1108,69 @@
      "mobs": "ender",
      "num": 0,
      "ability": "Enderian"
+    },
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "enderman",
+     "num": 3,
+     "ability": "Enderman Slayer"
+    }
+   ]
+  },
+  "ENDERMITE": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "block_extra",
+     "arg": "minecraft:end_stone",
+     "num": 0,
+     "ability": "More Stonks"
     }
    ]
   },
@@ -780,6 +1181,20 @@
      "stat": "fishing_speed",
      "num": 0,
      "ability": "Quick Reel"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
     }
    ],
    "EPIC": [
@@ -788,6 +1203,20 @@
      "stat": "fishing_speed",
      "num": 0,
      "ability": "Quick Reel"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
     }
    ],
    "LEGENDARY": [
@@ -796,6 +1225,20 @@
      "stat": "fishing_speed",
      "num": 0,
      "ability": "Quick Reel"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 1,
+     "where": "near_water",
+     "ability": "Water Bender"
     }
    ],
    "MYTHIC": [
@@ -804,6 +1247,51 @@
      "stat": "fishing_speed",
      "num": 0,
      "ability": "Quick Reel"
+    },
+    {
+     "kind": "stat",
+     "stat": "strength",
+     "num": 1,
+     "where": "near_fluid",
+     "ability": "Lava Bender"
+    },
+    {
+     "kind": "stat",
+     "stat": "defense",
+     "num": 1,
+     "where": "near_fluid",
+     "ability": "Lava Bender"
+    }
+   ]
+  },
+  "FROST_WISP": {
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "blaze",
+     "num": 0,
+     "ability": "Blaze Slayer"
+    }
+   ]
+  },
+  "GHOUL": {
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "zombie",
+     "num": 0,
+     "ability": "Undead Slayer"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "zombie",
+     "num": 0,
+     "ability": "Undead Slayer"
     }
    ]
   },
@@ -855,8 +1343,35 @@
     }
    ]
   },
+  "GLACIAL_WISP": {
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "blaze",
+     "num": 0,
+     "ability": "Blaze Slayer"
+    }
+   ]
+  },
   "GLACITE_GOLEM": {
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "glacite",
+     "num": 0,
+     "ability": "Powder-powered"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "glacite",
+     "num": 0,
+     "ability": "Powder-powered"
+    },
     {
      "kind": "stat",
      "stat": "mining_fortune",
@@ -867,6 +1382,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "glacite",
+     "num": 0,
+     "ability": "Powder-powered"
+    },
+    {
      "kind": "stat",
      "stat": "mining_fortune",
      "num": 1,
@@ -875,6 +1397,13 @@
     }
    ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "glacite",
+     "num": 0,
+     "ability": "Powder-powered"
+    },
     {
      "kind": "stat",
      "stat": "mining_fortune",
@@ -929,6 +1458,44 @@
     }
    ]
   },
+  "GOLEM": {
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "last_stand",
+     "arg": "",
+     "ability": "Last Stand"
+    },
+    {
+     "kind": "perk",
+     "perk": "ricochet",
+     "arg": "",
+     "num": 0,
+     "ability": "Ricochet"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "last_stand",
+     "arg": "",
+     "ability": "Last Stand"
+    },
+    {
+     "kind": "perk",
+     "perk": "ricochet",
+     "arg": "",
+     "num": 0,
+     "ability": "Ricochet"
+    },
+    {
+     "kind": "perk",
+     "perk": "toss",
+     "arg": "",
+     "ability": "Toss"
+    }
+   ]
+  },
   "GRIFFIN": {
    "RARE": [
     {
@@ -955,6 +1522,13 @@
      "num": 0,
      "when": "health_above_85",
      "ability": "Sacred Strength"
+    },
+    {
+     "kind": "perk",
+     "perk": "mf_vs",
+     "arg": "mythological",
+     "num": 1,
+     "ability": "King of Kings"
     }
    ],
    "MYTHIC": [
@@ -964,11 +1538,43 @@
      "num": 0,
      "when": "health_above_85",
      "ability": "Sacred Strength"
+    },
+    {
+     "kind": "perk",
+     "perk": "mf_vs",
+     "arg": "mythological",
+     "num": 1,
+     "ability": "King of Kings"
     }
    ]
   },
   "GUARDIAN": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    },
     {
      "kind": "stat",
      "stat": "enchanting_wisdom",
@@ -978,6 +1584,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    },
+    {
      "kind": "stat",
      "stat": "enchanting_wisdom",
      "num": 1,
@@ -986,6 +1599,13 @@
    ],
    "LEGENDARY": [
     {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    },
+    {
      "kind": "stat",
      "stat": "enchanting_wisdom",
      "num": 1,
@@ -993,6 +1613,13 @@
     }
    ],
    "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "laserbeam",
+     "arg": "",
+     "num": 0,
+     "ability": "Laserbeam"
+    },
     {
      "kind": "stat",
      "stat": "enchanting_wisdom",
@@ -1011,8 +1638,165 @@
     }
    ]
   },
+  "HORSE": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 2,
+     "ability": "High Stride"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 2,
+     "ability": "High Stride"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 4,
+     "ability": "High Stride"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "speed",
+     "num": 0,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "strength",
+     "num": 1,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 4,
+     "ability": "High Stride"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "speed",
+     "num": 0,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "strength",
+     "num": 1,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 4,
+     "ability": "High Stride"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "speed",
+     "num": 0,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "strength",
+     "num": 1,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "trample",
+     "arg": "",
+     "num": 2,
+     "ability": "Trample"
+    }
+   ]
+  },
+  "HOUND": {
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "coins_kill",
+     "arg": "",
+     "num": 0,
+     "ability": "Scavenger"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "coins_kill",
+     "arg": "",
+     "num": 0,
+     "ability": "Scavenger"
+    },
+    {
+     "kind": "perk",
+     "perk": "xp_mult_vs",
+     "arg": "wolf",
+     "num": 2,
+     "ability": "Pack Slayer"
+    }
+   ]
+  },
   "JADE_DRAGON": {
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "tag:axes",
+     "stat": "strength",
+     "num": 0,
+     "ability": "Forest Power"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "tag:axes",
+     "stat": "speed",
+     "num": 1,
+     "ability": "Forest Power"
+    },
     {
      "kind": "convert",
      "stat": "foraging_fortune",
@@ -1020,6 +1804,28 @@
      "per": 5,
      "of": "sweep",
      "ability": "Dragon's Pride"
+    }
+   ]
+  },
+  "JERRY": {
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_JERRY",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Jerry"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:ASPECT_OF_THE_JERRY",
+     "stat": "damage",
+     "num": 0,
+     "ability": "Jerry"
     }
    ]
   },
@@ -1135,11 +1941,42 @@
      "stat": "strength",
      "num": 1,
      "ability": "Primal Force"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "attacked_you",
+     "num": 3,
+     "ability": "King of the Jungle"
     }
    ]
   },
   "MAGMA_CUBE": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:slime,magma_cube",
+     "num": 0,
+     "ability": "Slimy Minions"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:slime,magma_cube",
+     "num": 0,
+     "ability": "Slimy Minions"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:slime,magma_cube",
+     "num": 0,
+     "ability": "Slimy Minions"
+    },
     {
      "kind": "damage_vs",
      "mobs": "slimes",
@@ -1149,6 +1986,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:slime,magma_cube",
+     "num": 0,
+     "ability": "Slimy Minions"
+    },
+    {
      "kind": "damage_vs",
      "mobs": "slimes",
      "num": 1,
@@ -1156,6 +2000,13 @@
     }
    ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:slime,magma_cube",
+     "num": 0,
+     "ability": "Slimy Minions"
+    },
     {
      "kind": "damage_vs",
      "mobs": "slimes",
@@ -1259,6 +2110,13 @@
      "num": 1,
      "where": "mining_islands",
      "ability": "Subterranean Battler"
+    },
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "mithril",
+     "num": 2,
+     "ability": "The Smell Of Powder"
     }
    ],
    "MYTHIC": [
@@ -1281,6 +2139,13 @@
      "num": 1,
      "where": "mining_islands",
      "ability": "Subterranean Battler"
+    },
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "mithril",
+     "num": 2,
+     "ability": "The Smell Of Powder"
     },
     {
      "kind": "stat",
@@ -1348,7 +2213,32 @@
    ]
   },
   "MOOSHROOM_COW": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "minecraft:red_mushroom",
+     "num": 0,
+     "ability": "Mushroom Eater"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "minecraft:red_mushroom",
+     "num": 0,
+     "ability": "Mushroom Eater"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "minecraft:red_mushroom",
+     "num": 0,
+     "ability": "Mushroom Eater"
+    },
     {
      "kind": "convert",
      "stat": "farming_fortune",
@@ -1360,6 +2250,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "minecraft:red_mushroom",
+     "num": 0,
+     "ability": "Mushroom Eater"
+    },
+    {
      "kind": "convert",
      "stat": "farming_fortune",
      "amount": 0.7,
@@ -1370,12 +2267,26 @@
    ],
    "LEGENDARY": [
     {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "minecraft:red_mushroom",
+     "num": 0,
+     "ability": "Mushroom Eater"
+    },
+    {
      "kind": "convert",
      "stat": "farming_fortune",
      "amount": 0.7,
      "per_num": 1,
      "of": "strength",
      "ability": "Farming Strength"
+    },
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "DUNG",
+     "num": 2,
+     "ability": "Bovine Blessing"
     }
    ]
   },
@@ -1402,6 +2313,13 @@
      "stat": "foraging_wisdom",
      "num": 0,
      "ability": "Foraging Wisdom Boost"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "category:foraging",
+     "num": 1,
+     "ability": "Tree Hugger"
     }
    ],
    "EPIC": [
@@ -1410,6 +2328,13 @@
      "stat": "foraging_wisdom",
      "num": 0,
      "ability": "Foraging Wisdom Boost"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "category:foraging",
+     "num": 1,
+     "ability": "Tree Hugger"
     }
    ],
    "LEGENDARY": [
@@ -1418,6 +2343,13 @@
      "stat": "foraging_wisdom",
      "num": 0,
      "ability": "Foraging Wisdom Boost"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "category:foraging",
+     "num": 1,
+     "ability": "Tree Hugger"
     }
    ]
   },
@@ -1453,6 +2385,13 @@
      "per": 3,
      "num": 1,
      "ability": "Swift Sickles"
+    },
+    {
+     "kind": "perk",
+     "perk": "crop_drop",
+     "arg": "JELLY,PLANT_MATTER",
+     "num": 2,
+     "ability": "Orchid Nectar"
     }
    ]
   },
@@ -1485,8 +2424,149 @@
     }
    ]
   },
+  "PHOENIX": {
+   "SPECIAL": [
+    {
+     "kind": "perk",
+     "perk": "rekindle",
+     "arg": "",
+     "num": 0,
+     "num2": 1,
+     "ability": "Rekindle"
+    },
+    {
+     "kind": "perk",
+     "perk": "fourth_flare",
+     "arg": "",
+     "num": 2,
+     "num2": 3,
+     "ability": "Fourth Flare"
+    }
+   ],
+   "VERY_SPECIAL": [
+    {
+     "kind": "perk",
+     "perk": "rekindle",
+     "arg": "",
+     "num": 0,
+     "num2": 1,
+     "ability": "Rekindle"
+    },
+    {
+     "kind": "perk",
+     "perk": "fourth_flare",
+     "arg": "",
+     "num": 2,
+     "num2": 3,
+     "ability": "Fourth Flare"
+    },
+    {
+     "kind": "perk",
+     "perk": "fly_island",
+     "arg": "",
+     "ability": "Magic Bird"
+    },
+    {
+     "kind": "perk",
+     "perk": "keep_coins",
+     "arg": "",
+     "ability": "Eternal Coins"
+    }
+   ]
+  },
   "PIGMAN": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:pig",
+     "num": 0,
+     "ability": "Bacon Farmer"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:pig",
+     "num": 0,
+     "ability": "Bacon Farmer"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:pig",
+     "num": 0,
+     "ability": "Bacon Farmer"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Pork Master"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Pork Master"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:pig",
+     "num": 0,
+     "ability": "Bacon Farmer"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Pork Master"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Pork Master"
+    }
+   ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:pig",
+     "num": 0,
+     "ability": "Bacon Farmer"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Pork Master"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:PIGMAN_SWORD",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Pork Master"
+    },
     {
      "kind": "damage_vs",
      "mobs": "level_50",
@@ -1524,6 +2604,13 @@
      "stat": "farming_wisdom",
      "num": 1,
      "ability": "Farming Wisdom Boost"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "category:farming",
+     "num": 2,
+     "ability": "Efficient Farming"
     }
    ],
    "MYTHIC": [
@@ -1532,6 +2619,13 @@
      "stat": "farming_wisdom",
      "num": 1,
      "ability": "Farming Wisdom Boost"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "category:farming",
+     "num": 2,
+     "ability": "Efficient Farming"
     }
    ]
   },
@@ -1548,8 +2642,109 @@
     }
    ]
   },
-  "SILVERFISH": {
+  "SCATHA": {
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "contains:DRILL",
+     "stat": "gemstone_fortune",
+     "num": 1,
+     "ability": "Drill Infusion"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "contains:DRILL",
+     "stat": "gemstone_fortune",
+     "num": 1,
+     "ability": "Drill Infusion"
+    },
+    {
+     "kind": "perk",
+     "perk": "powder",
+     "arg": "gemstone",
+     "num": 2,
+     "ability": "Bejeweled Eyes"
+    }
+   ]
+  },
+  "SHEEP": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "mana_cost",
+     "arg": "",
+     "num": 0,
+     "ability": "Mana Saver"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "mana_cost",
+     "arg": "",
+     "num": 0,
+     "ability": "Mana Saver"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "mana_cost",
+     "arg": "",
+     "num": 0,
+     "ability": "Mana Saver"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "mana_cost",
+     "arg": "",
+     "num": 0,
+     "ability": "Mana Saver"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "mana_cost",
+     "arg": "",
+     "num": 0,
+     "ability": "Mana Saver"
+    }
+   ]
+  },
+  "SILVERFISH": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "mining",
+     "num": 0,
+     "ability": "Magnetic"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "mining",
+     "num": 0,
+     "ability": "Magnetic"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "mining",
+     "num": 0,
+     "ability": "Magnetic"
+    },
     {
      "kind": "stat",
      "stat": "mining_wisdom",
@@ -1559,6 +2754,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "mining",
+     "num": 0,
+     "ability": "Magnetic"
+    },
+    {
      "kind": "stat",
      "stat": "mining_wisdom",
      "num": 1,
@@ -1566,6 +2768,13 @@
     }
    ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "skill_xp",
+     "arg": "mining",
+     "num": 0,
+     "ability": "Magnetic"
+    },
     {
      "kind": "stat",
      "stat": "mining_wisdom",
@@ -1603,6 +2812,16 @@
      "mobs": "arrows",
      "num": 0,
      "ability": "Bone Arrows"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "bow_hit",
+     "stat": "strength",
+     "amount": 3,
+     "cap_num": 1,
+     "seconds": 8,
+     "ability": "Combo"
     }
    ],
    "EPIC": [
@@ -1611,6 +2830,16 @@
      "mobs": "arrows",
      "num": 0,
      "ability": "Bone Arrows"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "bow_hit",
+     "stat": "strength",
+     "amount": 3,
+     "cap_num": 1,
+     "seconds": 8,
+     "ability": "Combo"
     }
    ],
    "LEGENDARY": [
@@ -1619,6 +2848,54 @@
      "mobs": "arrows",
      "num": 0,
      "ability": "Bone Arrows"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "bow_hit",
+     "stat": "strength",
+     "amount": 3,
+     "cap_num": 1,
+     "seconds": 8,
+     "ability": "Combo"
+    }
+   ]
+  },
+  "SKELETON_HORSE": {
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "jump_boost",
+     "arg": "",
+     "amount": 4,
+     "ability": "High Stride"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "bonus_attack_speed",
+     "num": 0,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "stacks",
+     "arg": "kill",
+     "stat": "strength",
+     "num": 1,
+     "seconds": 5,
+     "cap": 20,
+     "ability": "Stampede"
+    },
+    {
+     "kind": "perk",
+     "perk": "trample",
+     "arg": "",
+     "num": 2,
+     "ability": "Trample"
     }
    ]
   },
@@ -1641,7 +2918,32 @@
    ]
   },
   "SNAIL": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:red_sand",
+     "num": 0,
+     "ability": "Red Sand Enjoyer"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:red_sand",
+     "num": 0,
+     "ability": "Red Sand Enjoyer"
+    }
+   ],
    "RARE": [
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:red_sand",
+     "num": 0,
+     "ability": "Red Sand Enjoyer"
+    },
     {
      "kind": "convert",
      "stat": "block_fortune",
@@ -1654,6 +2956,13 @@
    ],
    "EPIC": [
     {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:red_sand",
+     "num": 0,
+     "ability": "Red Sand Enjoyer"
+    },
+    {
      "kind": "convert",
      "stat": "block_fortune",
      "of": "speed",
@@ -1665,6 +2974,13 @@
    ],
    "LEGENDARY": [
     {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:red_sand",
+     "num": 0,
+     "ability": "Red Sand Enjoyer"
+    },
+    {
      "kind": "convert",
      "stat": "block_fortune",
      "of": "speed",
@@ -1672,11 +2988,25 @@
      "per_num": 1,
      "amount": 1.0,
      "ability": "Slow and Steady"
+    },
+    {
+     "kind": "stat",
+     "stat": "mining_spread",
+     "num": 2,
+     "ability": "Slimy Reach"
     }
    ]
   },
   "SNOWMAN": {
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "blizzard",
+     "arg": "",
+     "num": 0,
+     "num2": 1,
+     "ability": "Blizzard"
+    },
     {
      "kind": "damage_from",
      "mobs": "all",
@@ -1686,6 +3016,14 @@
    ],
    "MYTHIC": [
     {
+     "kind": "perk",
+     "perk": "blizzard",
+     "arg": "",
+     "num": 0,
+     "num2": 1,
+     "ability": "Blizzard"
+    },
+    {
      "kind": "damage_from",
      "mobs": "all",
      "num": 2,
@@ -1693,13 +3031,187 @@
     }
    ]
   },
-  "SQUID": {
+  "SPIDER": {
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "hit_slow",
+     "arg": "",
+     "num": 1,
+     "ability": "Web-weaver"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "hit_slow",
+     "arg": "",
+     "num": 1,
+     "ability": "Web-weaver"
+    }
+   ],
    "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "hit_slow",
+     "arg": "",
+     "num": 1,
+     "ability": "Web-weaver"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:spider,cave_spider,tarantula",
+     "num": 2,
+     "ability": "Spider Whisperer"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "hit_slow",
+     "arg": "",
+     "num": 1,
+     "ability": "Web-weaver"
+    },
+    {
+     "kind": "perk",
+     "perk": "minion_speed",
+     "arg": "type:spider,cave_spider,tarantula",
+     "num": 2,
+     "ability": "Spider Whisperer"
+    }
+   ]
+  },
+  "SQUID": {
+   "COMMON": [
+    {
+     "kind": "perk",
+     "perk": "mob_double",
+     "arg": "squid",
+     "num": 0,
+     "ability": "More Ink"
+    }
+   ],
+   "UNCOMMON": [
+    {
+     "kind": "perk",
+     "perk": "mob_double",
+     "arg": "squid",
+     "num": 0,
+     "ability": "More Ink"
+    }
+   ],
+   "RARE": [
+    {
+     "kind": "perk",
+     "perk": "mob_double",
+     "arg": "squid",
+     "num": 0,
+     "ability": "More Ink"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Ink Specialty"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Ink Specialty"
+    }
+   ],
+   "EPIC": [
+    {
+     "kind": "perk",
+     "perk": "mob_double",
+     "arg": "squid",
+     "num": 0,
+     "ability": "More Ink"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Ink Specialty"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Ink Specialty"
+    }
+   ],
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "mob_double",
+     "arg": "squid",
+     "num": 0,
+     "ability": "More Ink"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "damage",
+     "num": 1,
+     "ability": "Ink Specialty"
+    },
+    {
+     "kind": "perk",
+     "perk": "tool_buff",
+     "arg": "item:INK_WAND",
+     "stat": "strength",
+     "num": 2,
+     "ability": "Ink Specialty"
+    },
     {
      "kind": "stat",
      "stat": "fishing_wisdom",
      "num": 3,
      "ability": "Fishing Wisdom Boost"
+    }
+   ]
+  },
+  "SUBZERO_WISP": {
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "blaze",
+     "num": 0,
+     "ability": "Blaze Slayer"
+    }
+   ]
+  },
+  "TARANTULA": {
+   "LEGENDARY": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "spider",
+     "num": 2,
+     "ability": "Arachnid Slayer"
+    }
+   ],
+   "MYTHIC": [
+    {
+     "kind": "perk",
+     "perk": "wisdom_vs",
+     "arg": "spider",
+     "num": 2,
+     "ability": "Arachnid Slayer"
     }
    ]
   },
@@ -1768,6 +3280,12 @@
      "ability": "Turtle Tactics"
     },
     {
+     "kind": "perk",
+     "perk": "knockback_immune",
+     "arg": "",
+     "ability": "Unflippable"
+    },
+    {
      "kind": "damage_from",
      "mobs": "all",
      "num": 2,
@@ -1795,6 +3313,14 @@
      "ability": "Stronger Bones"
     }
    ],
+   "UNCOMMON": [
+    {
+     "kind": "damage_from",
+     "mobs": "skeletal",
+     "num": 0,
+     "ability": "Stronger Bones"
+    }
+   ],
    "RARE": [
     {
      "kind": "damage_from",
@@ -1835,6 +3361,13 @@
      "mobs": "wither",
      "num": 1,
      "ability": "Wither Blood"
+    },
+    {
+     "kind": "perk",
+     "perk": "hit_wither",
+     "arg": "",
+     "num": 2,
+     "ability": "Death's Touch"
     }
    ]
   },
@@ -1861,6 +3394,15 @@
      "mobs": "wolves",
      "num": 0,
      "ability": "Alpha Dog"
+    },
+    {
+     "kind": "stat",
+     "stat": "crit_damage",
+     "num": 1,
+     "per_mob": "wolf",
+     "per_player": 10,
+     "max_players": 10,
+     "ability": "Pack Leader"
     }
    ],
    "EPIC": [
@@ -1869,6 +3411,15 @@
      "mobs": "wolves",
      "num": 0,
      "ability": "Alpha Dog"
+    },
+    {
+     "kind": "stat",
+     "stat": "crit_damage",
+     "num": 1,
+     "per_mob": "wolf",
+     "per_player": 10,
+     "max_players": 10,
+     "ability": "Pack Leader"
     }
    ],
    "LEGENDARY": [
@@ -1877,6 +3428,15 @@
      "mobs": "wolves",
      "num": 0,
      "ability": "Alpha Dog"
+    },
+    {
+     "kind": "stat",
+     "stat": "crit_damage",
+     "num": 1,
+     "per_mob": "wolf",
+     "per_player": 10,
+     "max_players": 10,
+     "ability": "Pack Leader"
     },
     {
      "kind": "stat",
@@ -1909,6 +3469,12 @@
      "mobs": "zombies",
      "num": 0,
      "ability": "Bite Shield"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "undead",
+     "num": 1,
+     "ability": "Rotten Blade"
     }
    ],
    "EPIC": [
@@ -1917,6 +3483,12 @@
      "mobs": "zombies",
      "num": 0,
      "ability": "Bite Shield"
+    },
+    {
+     "kind": "damage_vs",
+     "mobs": "undead",
+     "num": 1,
+     "ability": "Rotten Blade"
     }
    ],
    "LEGENDARY": [

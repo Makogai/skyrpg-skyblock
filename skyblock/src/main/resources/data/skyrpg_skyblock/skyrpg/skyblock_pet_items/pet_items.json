@@ -1,4 +1,180 @@
 {
+ "ALL_SKILLS_SUPER_BOOST": {
+  "text": "Gives +20% pet exp for all skills.",
+  "exp": {
+   "ALL": 20.0
+  }
+ },
+ "ANTIQUE_REMEDIES": {
+  "text": "Increases the pet's Strength by 80%.",
+  "multiply": {
+   "strength": 80.0
+  }
+ },
+ "BARREL_OF_RICHES": {
+  "text": "Trophies are +10% more likely to be GOLD. A wooden barrel, stuffed to the brim with riches of all sorts. The lid won't even fit on it!"
+ },
+ "BEJEWELED_COLLAR": {
+  "text": "Grants +25 Mining Speed and +10 Mining Fortune.",
+  "stats": {
+   "mining_speed": 25.0,
+   "mining_fortune": 10.0
+  }
+ },
+ "BIGGER_TEETH": {
+  "text": "Grants +10 Crit Chance.",
+  "stats": {
+   "crit_chance": 10.0
+  }
+ },
+ "BROWN_BANDANA": {
+  "text": "Gain +0.2 Bonus Pest Chance for every Pest Bestiary tier unlocked."
+ },
+ "BURNT_TEXTS": {
+  "text": "Grants +5 Double Hook Chance, but reduces your Fishing Speed by 50.",
+  "stats": {
+   "double_hook_chance": 5.0
+  }
+ },
+ "CONTRABAND": {
+  "text": "Consumable Can be applied to Precursor Drone to grant it +7.5 Sea Creature Chance and unlock the Contraband perk. Contraband When Fishing, catching a Sea Creature has a 0.1-10% chance to also give you Treasure. Chances scale with pet level."
+ },
+ "CRETAN_URN": {
+  "text": "Grants +5 Pet Luck.",
+  "stats": {
+   "pet_luck": 5.0
+  }
+ },
+ "CROCHET_TIGER_PLUSHIE": {
+  "text": "Grants +35 Attack Speed.",
+  "stats": {
+   "attack_speed": 35.0
+  }
+ },
+ "DEAD_CAT_FOOD": {
+  "text": "Use on a mythological cat to transform this item. Pss-pss-pss-pss Good cats only! X Rift-Transferable X"
+ },
+ "DWARF_TURTLE_SHELMET": {
+  "text": "Grants +10 True Defense and makes the pet's owner immune to knockback.",
+  "knockback_immune": true,
+  "stats": {
+   "true_defense": 10.0
+  }
+ },
+ "EDIBLE_SEAWEED": {
+  "text": "Grants +10 Fishing Speed.",
+  "stats": {
+   "fishing_speed": 10.0
+  }
+ },
+ "EERIE_TOY": {
+  "text": "Obtained during the 2023 Alchemist experiments! Edition #331 Turns your RARE Eerie Pet into its LEGENDARY version. * Soulbound *"
+ },
+ "EERIE_TREAT": {
+  "text": "Obtained during the 2023 Alchemist experiments! Edition #270 Turns your COMMON Eerie Pet into its RARE version. * Soulbound *"
+ },
+ "FOUR_EYED_FISH": {
+  "text": "This pet item may only be used on a Griffin pet. Gain +2,000 coins when digging up any Griffin Burrow. Grants +13 Magic Find and +55 Defense.",
+  "only": "GRIFFIN",
+  "stats": {
+   "magic_find": 13.0,
+   "defense": 55.0
+  }
+ },
+ "GIANT_PIG_EAR": {
+  "text": "Use at Kat to upgrade Pig Pets from Epic to Legendary."
+ },
+ "GIANT_SEAL_PLUSHIE": {
+  "text": "Use at Kat to upgrade Seal Pets from Epic to Legendary."
+ },
+ "GIANT_SLOTH_CLAW": {
+  "text": "Use at Kat to upgrade Sloth Pets from Epic to Legendary."
+ },
+ "GIANT_WITCH_CAULDRON": {
+  "text": "Use at Kat to upgrade Witch Pets from Epic to Legendary."
+ },
+ "GOLD_CLAWS": {
+  "text": "Increases the pet's Crit Damage by 50% and Crit Chance by 50%.",
+  "multiply": {
+   "crit_damage": 50.0,
+   "crit_chance": 50.0
+  }
+ },
+ "GRANDMAS_KNITTING_NEEDLE": {
+  "text": "Can be applied to Grandma Wolf pets. Grants +5% Magic Find when getting a combo of 50 or above. X Rift-Transferable X"
+ },
+ "GREEN_BANDANA": {
+  "text": "Grants +4 Farming Fortune for each of your Garden Levels."
+ },
+ "GRUNGLE": {
+  "text": "Consumable Can be applied to Precursor Drone to grant it +50 Foraging Fortune and unlock the Grungle perk. Grungle When Foraging, you can now ONLY throw your Foraging Axe, but the Throwing Axe Penalty is reduced by 0-100%. Chances scale with pet level."
+ },
+ "HEPHAESTUS_PLUSHIE": {
+  "text": "Grants +50 Attack Speed.",
+  "stats": {
+   "attack_speed": 50.0
+  }
+ },
+ "HEPHAESTUS_RELIC": {
+  "text": "Increases all pet stats by 50%.",
+  "multiply_all": 50.0
+ },
+ "HEPHAESTUS_REMEDIES": {
+  "text": "Increases this pet's Strength by 100%."
+ },
+ "HEPHAESTUS_SHELMET": {
+  "text": "Grants +20 True Defense and makes the pet's owner immune to knockback.",
+  "knockback_immune": true,
+  "stats": {
+   "true_defense": 20.0
+  }
+ },
+ "HEPHAESTUS_SOUVENIR": {
+  "text": "Grants +10 Sea Creature Chance.",
+  "stats": {
+   "sea_creature_chance": 10.0
+  }
+ },
+ "HEPHAESTUS_URN": {
+  "text": "Grants +10 Pet Luck.",
+  "stats": {
+   "pet_luck": 10.0
+  }
+ },
+ "LARGE_PIG_EAR": {
+  "text": "Use at Kat to upgrade Pig Pets from Rare to Epic."
+ },
+ "LARGE_SEAL_PLUSHIE": {
+  "text": "Use at Kat to upgrade Seal Pets from Rare to Epic."
+ },
+ "LARGE_SLOTH_CLAW": {
+  "text": "Use at Kat to upgrade Sloth Pets from Rare to Epic."
+ },
+ "LARGE_WITCH_CAULDRON": {
+  "text": "Use at Kat to upgrade Witch Pets from Rare to Epic."
+ },
+ "LOTUS_CROWN": {
+  "text": "Trophies are +10% more likely to be DIAMOND. A splendid, yet tiny crown; just about the right size for your pet!"
+ },
+ "MEDIUM_PIG_EAR": {
+  "text": "Use at Kat to upgrade Pig Pets from Uncommon to Rare."
+ },
+ "MEDIUM_SEAL_PLUSHIE": {
+  "text": "Use at Kat to upgrade Seal Pets from Uncommon to Rare."
+ },
+ "MEDIUM_SLOTH_CLAW": {
+  "text": "Use at Kat to upgrade Sloth Pets from Uncommon to Rare."
+ },
+ "MEDIUM_WITCH_CAULDRON": {
+  "text": "Use at Kat to upgrade Witch Pets from Uncommon to Rare."
+ },
+ "MINING_OFF_CAMERA": {
+  "text": "Consumable Can be applied to Precursor Drone to grant it +75 Mining Fortune and unlock the Mining Off Camera perk. Mining Off Camera When Mining, each collection progress grants a 0.0005-0.005% chance to drop a random enchanted mining item. Chances scale with pet level."
+ },
+ "MINOS_RELIC": {
+  "text": "Increases all pet stats by 33.3%.",
+  "multiply_all": 33.3
+ },
  "PET_ITEM_ALL_SKILLS_BOOST_COMMON": {
   "text": "Gives +10% pet exp for all skills.",
   "exp": {
@@ -45,7 +221,8 @@
   }
  },
  "PET_ITEM_EXP_SHARE": {
-  "text": "While equipped in an Exp Share slot this pet gains +15% Exp Share rate."
+  "text": "While equipped in an Exp Share slot this pet gains +15% Exp Share rate.",
+  "exp_share": 15.0
  },
  "PET_ITEM_EXP_SHARE_DROP": {
   "text": "Used to craft the Exp Share pet item."
@@ -99,7 +276,12 @@
   }
  },
  "PET_ITEM_FLYING_PIG": {
-  "text": "This pet item may only be used on a Pig pet. Grants +40 Potato Fortune and +20 Speed."
+  "text": "This pet item may only be used on a Pig pet. Grants +40 Potato Fortune and +20 Speed.",
+  "only": "PIG",
+  "stats": {
+   "potato_fortune": 40.0,
+   "speed": 20.0
+  }
  },
  "PET_ITEM_FORAGING_SKILL_BOOST_COMMON": {
   "text": "Gives +20% pet exp for Foraging.",
@@ -170,7 +352,14 @@
   "text": "Use at Kat to upgrade Mithril Golem Pets to Mythic rarity."
  },
  "PET_ITEM_QUICK_CLAW": {
-  "text": "Every 2 pet levels, you gain +1 Mining Speed and +1 Mining Fortune."
+  "text": "Every 2 pet levels, you gain +1 Mining Speed and +1 Mining Fortune.",
+  "per_levels": {
+   "every": 2,
+   "stats": {
+    "mining_speed": 1.0,
+    "mining_fortune": 1.0
+   }
+  }
  },
  "PET_ITEM_SADDLE": {
   "text": "Grants +30 Speed.",
@@ -205,12 +394,83 @@
   "text": "Used to craft the Tier Boost pet item."
  },
  "PET_ITEM_TITANIUM_MINECART": {
-  "text": "Grants +33.3 Mining Fortune while mining Titanium Ore."
+  "text": "Grants +33.3 Mining Fortune while mining Titanium Ore.",
+  "while_mining": "TITANIUM_ORE"
  },
  "PET_ITEM_TOY_JERRY": {
   "text": "Use at Kat to upgrade Jerry Pets to Mythic rarity."
  },
  "PET_ITEM_VAMPIRE_FANG": {
   "text": "Use at Kat to upgrade Bat Pets to Mythic rarity."
+ },
+ "POIGNANT_LUCKY_CLOVER": {
+  "text": "Grants +13 Magic Find and +13 Overbloom.",
+  "stats": {
+   "magic_find": 13.0,
+   "overbloom": 13.0
+  }
+ },
+ "REAPER_GEM": {
+  "text": "Gain 8 Ferocity for 5s on kill. * Co-op Soulbound *"
+ },
+ "REINFORCED_SCALES": {
+  "text": "Grants +40 Defense.",
+  "stats": {
+   "defense": 40.0
+  }
+ },
+ "RUBBER_SNORKEL": {
+  "text": "Grants 5 Respiration, doubled while on Foraging Islands."
+ },
+ "SERRATED_CLAWS": {
+  "text": "Grants +25 Crit Damage.",
+  "stats": {
+   "crit_damage": 25.0
+  }
+ },
+ "SMALL_PIG_EAR": {
+  "text": "Use at Kat to upgrade Pig Pets from Common to Uncommon."
+ },
+ "SMALL_SEAL_PLUSHIE": {
+  "text": "Use at Kat to upgrade Seal Pets from Common to Uncommon."
+ },
+ "SMALL_SLOTH_CLAW": {
+  "text": "Use at Kat to upgrade Sloth Pets from Common to Uncommon."
+ },
+ "SMALL_WITCH_CAULDRON": {
+  "text": "Use at Kat to upgrade Witch Pets from Common to Uncommon."
+ },
+ "SNAKE_EYES": {
+  "text": "Grants +1.1 Treasure Chance.",
+  "stats": {
+   "treasure_chance": 1.1
+  }
+ },
+ "UNALLOYED_SPEED": {
+  "text": "Grants +50 Max Speed Cap.",
+  "stats": {
+   "max_speed_cap": 50.0
+  }
+ },
+ "UNCOMMON_PARTY_HAT": {
+  "text": "Adds particles matching your + color to your pet and yourself, defaulting to red. Editable in Hypixel lobbies."
+ },
+ "WASHED_UP_SOUVENIR": {
+  "text": "Grants +5 Sea Creature Chance.",
+  "stats": {
+   "sea_creature_chance": 5.0
+  }
+ },
+ "WINDING_IVY": {
+  "text": "Grants +10 Sweep.",
+  "stats": {
+   "sweep": 10.0
+  }
+ },
+ "YELLOW_BANDANA": {
+  "text": "Grants +30 Farming Fortune.",
+  "stats": {
+   "farming_fortune": 30.0
+  }
  }
 }

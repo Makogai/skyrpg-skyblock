@@ -60,9 +60,12 @@ import net.minecraft.world.item.component.ResolvableProfile;
  */
 public final class SkyBlockPets {
     public static final String PET_ID = "PET";
-    public static final String[] TIERS = {"COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC"};
+    /** The Phoenix is the only SPECIAL and VERY_SPECIAL pet. */
+    public static final String[] TIERS = {"COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC", "SPECIAL", "VERY_SPECIAL"};
     private static final ChatFormatting[] TIER_COLORS = {ChatFormatting.WHITE, ChatFormatting.GREEN, ChatFormatting.BLUE,
-            ChatFormatting.DARK_PURPLE, ChatFormatting.GOLD, ChatFormatting.LIGHT_PURPLE};
+            ChatFormatting.DARK_PURPLE, ChatFormatting.GOLD, ChatFormatting.LIGHT_PURPLE, ChatFormatting.RED, ChatFormatting.RED};
+    private static final int EXP_SHARE_SLOTS = 3;
+    private static final double EXP_SHARE_BASE = 20;
     private static final Pattern PLACEHOLDER = Pattern.compile("\\{([A-Z_0-9]+)}");
 
     /** One pet: its type, skill, head skin, top level, and per rarity the lore and the numbers at level 1 and 100. */
@@ -135,6 +138,7 @@ public final class SkyBlockPets {
         PetCatalog.init();
         PetItems.init();
         PetAbilities.init();
+        PetPerks.init();
         Kat.init();
     }
 
@@ -405,7 +409,13 @@ public final class SkyBlockPets {
         PetItems.Effect held = PetItems.effect(heldItem(stack));
         if (held != null) {
             held.multiply().forEach((stat, percent) -> out.computeIfPresent(stat, (k, v) -> v * (1 + percent / 100)));
+            if (held.multiplyAll() > 0) {
+                out.replaceAll((stat, v) -> v * (1 + held.multiplyAll() / 100));
+            }
             held.stats().forEach((stat, value) -> out.merge(stat, value, Double::sum));
+            if (held.every() > 0) {
+                held.perLevelStats().forEach((stat, value) -> out.merge(stat, value * (level / held.every()), Double::sum));
+            }
         }
         return out;
     }
@@ -569,6 +579,34 @@ public final class SkyBlockPets {
         return gained.equals("ALCHEMY") || gained.equals("ENCHANTING") ? 1.0 / 12 : 0.25;
     }
 
+    /** Pets in your menu that hold an Exp Share (up to three) earn a fifth of what the pet out earned, and what the item adds. */
+    private static void shareExp(ServerPlayer player, double petXp) {
+        List<ItemStack> all = stored(player);
+        boolean changed = false;
+        int slots = 0;
+        for (int i = 0; i < all.size() && slots < EXP_SHARE_SLOTS; i++) {
+            ItemStack pet = all.get(i);
+            PetItems.Effect held = PetItems.effect(heldItem(pet));
+            if (!isPet(pet) || held == null || held.expShare() <= 0) {
+                continue;
+            }
+            slots++;
+            ItemStack updated = pet.copy();
+            JsonObject info = info(updated);
+            int before = level(updated);
+            info.addProperty("exp", exp(updated) + petXp * (EXP_SHARE_BASE + held.expShare()) / 100);
+            setInfo(updated, info);
+            if (level(updated) > before) {
+                refreshLook(updated);
+            }
+            all.set(i, updated);
+            changed = true;
+        }
+        if (changed) {
+            setStored(player, all);
+        }
+    }
+
     private static void xpEarned(ServerPlayer player, Identifier skill, double xp) {
         ItemStack pet = Pets.active(player);
         if (!isPet(pet) || xp <= 0 || skill.equals(SkillLevels.TAMING)) {
@@ -591,6 +629,7 @@ public final class SkyBlockPets {
         info.addProperty("exp", exp(updated) + petXp * zoologist);
         setInfo(updated, info);
         SkillLevels.giveXpQuietly(player, SkillLevels.TAMING, petXp);
+        shareExp(player, petXp);
         int after = level(updated);
         if (after > before) {
             refreshLook(updated);
