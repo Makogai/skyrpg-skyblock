@@ -306,6 +306,15 @@ phase so the next session can pick up where this one stopped.
       factors, heals, the Batphone and Royal Pigeon, and the deployables (Power Orbs, Flares, Lanterns, Umberella with the
       wiki's buffs; the best one you're in applies). Not yet: armour set stack abilities (Kuudra armour), scroll
       abilities on Necron's Blade, Terminator's Salvation, trackers (hotspots, fallen stars, secrets), builder's wands.
+- [x] **Item abilities, part 3** (`ItemAbilities`, `KuudraArmor`, `Shortbows`, `UtilityAbilities`): the Wither scrolls
+      on Necron's Blade and its upgrades at the anvil (`ability_scroll`; Wither Impact with all three; a scroll alone
+      does nothing; admins `/sbitemmod scroll <id>`); the Kuudra sets' stacks (Dominus, Arcane Energy, Hydra Strike,
+      Fervor, with the wiki's numbers per tier and piece count); shortbows (instant shots on either click, cooldown by
+      Attack Speed, the Terminator's three arrows and Salvation); Critter Capsules, Bubbles of Air, trackers (Montezuma,
+      Emissaries), the Recall Potion, the builder's tools on your island, tank potions, Extreme Focus, Chain of Agony,
+      Creeper Veil, Voodoo Doll, Grappleshot, Slug and Spring Boots. 109 of 147 types (229 of 289 items). Not yet: the
+      ones whose systems aren't in (Greenhouse, hotspots, fallen stars, Rift vampires, necromancy, Hollow Wand, Kuudra
+      perk shop, minion time), the Terminator's crit chance divided by 4, Hollow's Spirit stacks.
 - [x] **Bestiary**: `tools/skyblock/import_bestiary.py` (NEU bestiary.json: 255 families on 19 islands, heads, caps,
       brackets) to `skyrpg/bestiary`. `Bestiary` (skyblock): kills by family (the mob's name, Hypixel's; aliases for Goblin
       variants, Zealot Bruisers, the dragons; unnamed vanilla mobs by type), tiers from the bracket up to the cap. Decided

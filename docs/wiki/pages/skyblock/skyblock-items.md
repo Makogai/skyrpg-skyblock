@@ -97,8 +97,42 @@ These work now:
 | Instant Heal, Succulence | Zombie Swords, Healing Melons | Heal you (the swords: players near you too) |
 | Wasssaaaaa, Seek the King | Batphones, Royal Pigeon | Maddox's slayer menu; the King's commissions |
 | Deploy | Power Orbs, Flares, Lanterns, Umberella | See below |
+| Extreme Focus | End Stone Sword and Bow | All your mana goes into your next hit, as extra damage |
+| Chain of Agony | Tormentor | Switches on or off: your melee hits chain to five mobs nearby |
+| Creeper Veil | Wither Cloak Sword | No damage taken for 10 seconds |
+| Acupuncture, Big Pull | Voodoo Doll, Moody Grappleshot | Arrows from all around the mob you look at; or pull it to you |
+| Capture | Critter Capsules | Catches the critter you throw it at (the Masterful one always) |
+| Inhale | Bubbles of Air | Your air back, under water on Galatea |
+| Meownar, True Dwarth | Dead Cat Detector, Royal Compass | Points to the nearest piece of Montezuma's soul, or the nearest Emissary |
+| Ancient Recall | Recall Potion | In the Crystal Hollows: sneak to save a spot, use it to go back |
+| Builder's tools | Builder's Wand, Builder's Ruler, Block Zapper, Infinidirt Wand, Snow Shovel | On your own island: grow every connected face, lay a line, zap connected blocks (164 at most), place dirt (1 coin), lay snow |
+| Stun / Absorption Potion | the Tank's dungeon potions | Stun monsters within 10 blocks; 200 Health of absorption for your team |
+| Splash, Sparkle | Fish Hat, Sunflower Head | Just for show |
 
-Every other ability shows on its item but doesn't do anything yet.
+Every other ability shows on its item but doesn't do anything yet (those need the systems they belong to: the Greenhouse, hotspots, fallen stars, the Rift's vampires, necromancy).
+
+### Wither scrolls
+
+**Implosion**, **Shadow Warp** and **Wither Shield** go on Necron's Blade, Hyperion, Astraea, Scylla or Valkyrie at the anvil (the **Ultimate Wither Scroll** is all three). A scroll on its own does nothing. With one or two, the blade has the last scroll's ability; with all three it has **Wither Impact**: you teleport 10 blocks ahead, implode for 10,000 damage around you (grown by Intelligence and Ability Damage), and get the Wither Shield (10% less damage taken and a 200 Health shield for 5 seconds), for 300 Mana.
+
+### Shortbows
+
+The Juju, Terminator, Artisanal, Spirit, Dragon, Machine Gun, Mosquito and Scorpion bows are **shortbows**: no drawing, a left or right click shoots a full-power arrow from your quiver at once (hold right click to keep shooting), every half second, faster with **Attack Speed** (0.15 seconds at the fastest). The **Terminator** shoots three arrows fanned out; after three hits its left click casts **Salvation**: a beam through up to five enemies that always crits.
+
+### Kuudra armour stacks
+
+Wearing two or more pieces of a Kuudra set builds **stacks** (at most one every 1.5 / 1 / 0.5 seconds with 2 / 3 / 4 pieces, up to 10; you lose one after 4 / 7 / 10 seconds without a new one). The lowest piece's prestige (plain, Hot, Burning, Fiery, Infernal) sets the tier. Your stacks show on the action bar.
+
+| Set | Stacks from | What they do |
+| --- | --- | --- |
+| Crimson (Dominus) | melee hits | +0.05 to +0.1 Swing Range each, +1 / +2 Ferocity from Burning / Fiery, Infernal +10% melee damage each; at 10, every hit also swipes a line in a random direction |
+| Aurora (Arcane Energy) | ability damage | At 10, **sneak** to fire 3 to 5 homing missiles of 5,000 damage |
+| Terror (Hydra Strike) | arrow hits (every 0.2 s) | +2% to +5% arrow damage each per piece past one; at 10, two more arrows of 20% to 60% |
+| Fervor | attacking | At 10, **sneak** for a Ground Pound around you as hard as your Effective Health (25 million at most); the full set may turn three mobs onto you when you hit |
+
+### Boots
+
+**Slug Boots** turn a fall that would hurt into a bounce. **Spring Boots** charge a jump while you sneak on the ground (up to 2 seconds); let go to launch.
 
 ### Deployables
 

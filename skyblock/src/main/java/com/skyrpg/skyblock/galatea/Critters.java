@@ -46,7 +46,7 @@ import net.minecraft.world.phys.Vec3;
  * you look at; Medium nets and up reach the shy ones), and Galatea's mobs give up their shard when they die with Charm
  * Chance on your side. Which shard a critter carries is its name; rarer ones are scarcer (decided weights).
  */
-final class Critters {
+public final class Critters {
     static final String TAG = "skyrpg_critter";
     private static final int PER_PLAYER = 7;
     private static final int[] WEIGHT = {60, 25, 10, 4, 1};
@@ -234,6 +234,28 @@ final class Critters {
     }
 
     /** The critter in your sights (forest or water), or null. */
+    /**
+     * A Critter Capsule thrown where you look: the first critter there (land or water, within 20 blocks) is caught; the
+     * Masterful Critter Capsule always, the plain one less often the rarer the critter's shard.
+     */
+    public static boolean capsule(ServerPlayer player, boolean certain) {
+        Mob target = aimed(player, 20, false);
+        if (target == null) {
+            target = aimed(player, 20, true);
+        }
+        if (target == null) {
+            say(player, Component.literal("The capsule hits nothing.").withStyle(ChatFormatting.GRAY));
+            return true;
+        }
+        Hunting.Shard shard = LIVE.get(target);
+        if (certain || player.getRandom().nextDouble() < 0.8 - 0.12 * Hunting.rarity(shard)) {
+            caught(player, target, shard, "capsule");
+        } else {
+            say(player, Component.literal("It broke out of the capsule!").withStyle(ChatFormatting.YELLOW));
+        }
+        return true;
+    }
+
     private static Mob aimed(ServerPlayer player, double range, boolean water) {
         Vec3 eye = player.getEyePosition();
         Vec3 look = player.getLookAngle();

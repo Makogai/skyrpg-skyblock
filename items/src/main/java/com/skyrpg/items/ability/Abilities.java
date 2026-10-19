@@ -50,6 +50,8 @@ public final class Abilities {
     private static final Map<UUID, Long> LAST_RIGHT_CLICK = new HashMap<>();
     /** Player -> server tick of their last left click (a click at a block arrives twice: as a punch and as an attack). */
     private static final Map<UUID, Long> LAST_LEFT_CLICK = new HashMap<>();
+    /** Left clicks other mods take first (shortbows shoot); true when one took it. */
+    private static final List<java.util.function.Predicate<ServerPlayer>> LEFT_CLICKS = new ArrayList<>();
     /** Who was sneaking last tick (SNEAK abilities go off as you start). */
     private static final Map<UUID, Boolean> SNEAKING = new HashMap<>();
     /** Cooldowns that ended while the player might still be holding the item: they get a "ready" ping. */
@@ -105,18 +107,19 @@ public final class Abilities {
         net.minecraft.world.item.ItemStack stack = player.getItemInHand(hand);
         ItemDefinition def = SkyItems.definition(stack);
         // A broken tool has no abilities until it is repaired (it says so on the action bar).
-        if (def == null || def.ability() == null || hand != InteractionHand.MAIN_HAND || com.skyrpg.core.items.ToolWear.isBroken(stack)) {
+        ItemDefinition.Ability ability = ItemAbilities.of(stack, def);
+        if (ability == null || hand != InteractionHand.MAIN_HAND || com.skyrpg.core.items.ToolWear.isBroken(stack)) {
             return InteractionResult.PASS;
         }
         // Left-click and sneak abilities are cast their own way; a bow's right click still draws it.
-        if (!def.ability().rightClick()) {
+        if (!ability.rightClick()) {
             return InteractionResult.PASS;
         }
         if (!(player instanceof ServerPlayer serverPlayer)) {
             return InteractionResult.SUCCESS; // the server decides; don't also run the item's vanilla use
         }
         LAST_RIGHT_CLICK.put(player.getUUID(), (long) serverPlayer.level().getServer().getTickCount());
-        return cast(serverPlayer, stack, def);
+        return cast(serverPlayer, stack, def, ability);
     }
 
     /** A left click (at the air, a block or a mob): the held item's LEFT CLICK ability. Not right after a right-click use. */
@@ -126,10 +129,16 @@ public final class Abilities {
             return;
         }
         LAST_LEFT_CLICK.put(player.getUUID(), now);
+        for (java.util.function.Predicate<ServerPlayer> listener : LEFT_CLICKS) {
+            if (listener.test(player)) {
+                return;
+            }
+        }
         net.minecraft.world.item.ItemStack stack = player.getMainHandItem();
         ItemDefinition def = SkyItems.definition(stack);
-        if (def != null && def.ability() != null && def.ability().trigger().contains("LEFT") && !com.skyrpg.core.items.ToolWear.isBroken(stack)) {
-            cast(player, stack, def);
+        ItemDefinition.Ability ability = ItemAbilities.of(stack, def);
+        if (ability != null && ability.trigger().contains("LEFT") && !com.skyrpg.core.items.ToolWear.isBroken(stack)) {
+            cast(player, stack, def, ability);
         }
     }
 
@@ -143,17 +152,17 @@ public final class Abilities {
         }
         for (net.minecraft.world.item.ItemStack stack : stacks) {
             ItemDefinition def = SkyItems.definition(stack);
-            if (def != null && def.ability() != null && def.ability().trigger().equals("SNEAK")
-                    && (TYPES.containsKey(def.ability().type()) || AbilityHandlers.get(def.ability().type()) != null)) {
-                cast(player, stack, def);
+            ItemDefinition.Ability ability = ItemAbilities.of(stack, def);
+            if (ability != null && ability.trigger().equals("SNEAK") && (TYPES.containsKey(ability.type()) || AbilityHandlers.get(ability.type()) != null)) {
+                cast(player, stack, def, ability);
                 return;
             }
         }
     }
 
     /** Casts an item's ability: cooldown and mana checked (and said when short), the ability run, mana spent, cooldown started. */
-    private static InteractionResult cast(ServerPlayer serverPlayer, net.minecraft.world.item.ItemStack stack, ItemDefinition def) {
-        ItemDefinition.Ability ability = def.ability();
+    private static InteractionResult cast(ServerPlayer serverPlayer, net.minecraft.world.item.ItemStack stack, ItemDefinition def,
+                                          ItemDefinition.Ability ability) {
         AbilityType type = TYPES.get(ability.type());
         if (type == null) {
             // Other mods' ability types (core's AbilityHandlers), like skyrpg_mining:echo_sense.
@@ -196,6 +205,11 @@ public final class Abilities {
             }
         }
         return InteractionResult.SUCCESS;
+    }
+
+    /** A left click another mod takes before the held item's ability (true when it did). */
+    public static void onLeftClick(java.util.function.Predicate<ServerPlayer> listener) {
+        LEFT_CLICKS.add(listener);
     }
 
     /** Ends an item's cooldown now (abilities whose cooldown resets, like Shadowstep on a kill). */

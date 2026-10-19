@@ -20,7 +20,8 @@ import net.minecraft.world.item.ItemStack;
  *   <li>Reforge (the Blacksmith): a random reforge of his for coins by rarity, never the one it has; or the reforge of a
  *       reforge stone in the second slot, for that stone's price.</li>
  *   <li>Anvil: an enchanted book (for XP levels; two books combine for free), a Recombobulator 3000 (one rarity up,
- *       once), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to 15 in all) on the item in the first slot.</li>
+ *       once), a Hot Potato Book (up to 10) or a Fuming Potato Book (up to 15 in all) on the item in the first slot; a Wither scroll
+ *       (Implosion, Shadow Warp, Wither Shield, or the Ultimate Wither Scroll for all three) on a Necron's Blade.</li>
  * </ul>
  */
 public final class ItemWork {
@@ -84,7 +85,7 @@ public final class ItemWork {
 
     private static Preview anvil(ItemStack item, ItemDefinition def, ItemStack extra) {
         if (extra.isEmpty()) {
-            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000 or a Potato Book");
+            return new Preview(null, 0, 0, "", "Add an enchanted book, a Recombobulator 3000, a Potato Book or a Wither scroll");
         }
         if (Books.isBook(extra)) {
             return book(item, def, extra);
@@ -113,6 +114,25 @@ public final class ItemWork {
                 return new Preview(null, 0, 0, action, fuming ? "This item has all 15 Potato Books" : "This item has 10 Hot Potato Books: use Fuming ones now");
             }
             ItemMods.addPotatoBook(result);
+            return new Preview(result, 0, 0, action, "");
+        }
+        // the Wither scrolls: on Necron's Blade and its upgrades (the Ultimate Wither Scroll is all three at once)
+        boolean ultimate = com.skyrpg.items.ability.ItemAbilities.ULTIMATE_WITHER_SCROLL.equals(id);
+        if (ultimate || com.skyrpg.items.ability.ItemAbilities.WITHER_SCROLLS.contains(id)) {
+            String action = "Apply " + SkyItems.definition(extra).name();
+            if (!com.skyrpg.items.ability.ItemAbilities.WITHER_BLADES.contains(def.skyblockId())) {
+                return new Preview(null, 0, 0, action, "Wither scrolls only go on Necron's Blade, Hyperion, Astraea, Scylla and Valkyrie");
+            }
+            java.util.List<String> on = ItemMods.scrolls(item);
+            java.util.List<String> adding = ultimate ? com.skyrpg.items.ability.ItemAbilities.WITHER_SCROLLS : java.util.List.of(id);
+            if (on.containsAll(adding)) {
+                return new Preview(null, 0, 0, action, ultimate ? "This blade has all three scrolls" : "This blade already has that scroll");
+            }
+            for (String scroll : adding) {
+                if (!on.contains(scroll)) {
+                    ItemMods.addScroll(result, scroll);
+                }
+            }
             return new Preview(result, 0, 0, action, "");
         }
         return new Preview(null, 0, 0, "", "That can't be combined with this item");

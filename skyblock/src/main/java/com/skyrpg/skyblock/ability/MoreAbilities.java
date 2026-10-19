@@ -63,7 +63,10 @@ import net.minecraft.world.phys.Vec3;
  * Fury, Tactical Insertion, the teammate leaps, Leaping Sword, scaffolding, the Salmon set in water); timed buffs
  * (Soulcry, Weird Tuba, Sword of Bad Health, Hellstorm, Holy Ice, Soul Esoward, Ragnarock Axe, Enrager, Wand of Strength,
  * Wither Shield, Edible Mace, Jingle Bells, Archfiend Dice); heals (the Zombie Swords, Healing Melons); and the
- * Batphone and Royal Pigeon (Maddox, the King's commissions).
+ * Batphone and Royal Pigeon (Maddox, the King's commissions); Extreme Focus (your mana into your next hit), the
+ * Tormentor's Chain of Agony (a toggle: melee hits chain to five mobs near), the Wither Cloak's Creeper Veil, the
+ * Voodoo Doll, the Moody Grappleshot's pull; Slug Boots (a hurting fall bounces you up instead) and Spring Boots (sneak
+ * to charge a jump).
  *
  * <p>Decided where Hypixel's rule needs systems we don't have: Soulcry's Ferocity counts against every mob (not only
  * Endermen); the Archfiend Dice's roll gives -120, -72, -24, +24, +72 or +120 Health; the Wither Shield's absorption is a
@@ -107,6 +110,12 @@ final class MoreAbilities {
     private static final Map<UUID, Integer> CLIMBED = new HashMap<>();
     /** Leaping Sword: waiting to land (until when). */
     private static final Map<UUID, Long> LEAPING = new HashMap<>();
+    /** Extreme Focus: the mana your next hit adds, until when. */
+    private static final Map<UUID, Map.Entry<Double, Long>> FOCUS = new HashMap<>();
+    /** Tormentor's Chain of Agony switched on. */
+    private static final Set<UUID> AGONY = new java.util.HashSet<>();
+    /** Spring Boots: ticks of sneaking charged. */
+    private static final Map<UUID, Integer> SPRING = new HashMap<>();
 
     private MoreAbilities() {
     }
@@ -183,7 +192,16 @@ final class MoreAbilities {
             return true;
         });
         Abilities.register("iron_punch", (p, a) -> around(p, 4, damage(p, a, 250), ParticleTypes.CRIT, SoundEvents.ANVIL_LAND) != null);
-        Abilities.register("implosion", (p, a) -> around(p, 10, damage(p, a, 35000), ParticleTypes.EXPLOSION, SoundEvents.GENERIC_EXPLODE.value()) != null);
+        // the Wither scrolls' 10,000 (NEU's lore shows one player's numbers, not the base)
+        Abilities.register("implosion", (p, a) -> around(p, 10, HypixelAbilities.abilityDamage(p, 10000), ParticleTypes.EXPLOSION,
+                SoundEvents.GENERIC_EXPLODE.value()) != null);
+        // all three scrolls on a Necron's Blade: teleport, implode, shield
+        Abilities.register("wither_impact", (p, a) -> {
+            blink(p, 10);
+            around(p, 10, HypixelAbilities.abilityDamage(p, 10000), ParticleTypes.EXPLOSION, SoundEvents.GENERIC_EXPLODE.value());
+            witherShield(p);
+            return true;
+        });
         Abilities.register("detonate", (p, a) -> {
             ServerLevel level = (ServerLevel) p.level();
             for (LivingEntity mob : mobs(p, p.position(), 20)) {
@@ -222,7 +240,7 @@ final class MoreAbilities {
             if (waiting != null && now < waiting.getValue()) {
                 Vec3 at = waiting.getKey();
                 for (LivingEntity mob : mobs(p, at, 6)) {
-                    HypixelAbilities.hurt(p, mob, damage(p, a, 35000));
+                    HypixelAbilities.hurt(p, mob, HypixelAbilities.abilityDamage(p, 10000));
                 }
                 AURAS.removeIf(aura -> aura.owner().equals(p.getUUID()) && aura.at() != null && aura.at().equals(at));
                 level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, at.x, at.y, at.z, 1, 0, 0, 0, 0);
@@ -358,9 +376,7 @@ final class MoreAbilities {
             return true;
         });
         Abilities.register("wither_shield", (p, a) -> {
-            factor(p, "wither_shield", 0.9, 1, 5, false);
-            p.setAbsorptionAmount((float) (200 / StatTypes.HEALTH_SCALE));
-            ((ServerLevel) p.level()).sendParticles(ParticleTypes.ENCHANTED_HIT, p.getX(), p.getY() + 1, p.getZ(), 30, 0.5, 0.8, 0.5, 0.1);
+            witherShield(p);
             return true;
         });
         Abilities.register("me_smash_head", (p, a) -> {
@@ -385,6 +401,53 @@ final class MoreAbilities {
             p.heal((float) (hearts.isEmpty() ? 7 : hearts.getFirst()) / (float) StatTypes.HEALTH_SCALE);
             sound(p, SoundEvents.GENERIC_EAT.value(), 1.0f);
             consume(p);
+            return true;
+        });
+        Abilities.register("extreme_focus", (p, a) -> {
+            double mana = Stats.mana(p);
+            if (mana < 1) {
+                return false;
+            }
+            Stats.spendMana(p, mana);
+            FOCUS.put(p.getUUID(), Map.entry(mana, (long) p.level().getServer().getTickCount() + 600));
+            p.sendOverlayMessage(Msg.text("Your next hit deals +" + Msg.number(Math.round(mana)) + " damage!", ChatFormatting.AQUA));
+            return true;
+        });
+        Abilities.register("chain_of_agony", (p, a) -> {
+            boolean on = AGONY.add(p.getUUID()) || !AGONY.remove(p.getUUID());
+            p.sendOverlayMessage(Msg.text("Chain of Agony " + (on ? "on" : "off"), on ? ChatFormatting.DARK_PURPLE : ChatFormatting.GRAY));
+            return true;
+        });
+        Abilities.register("creeper_veil", (p, a) -> {
+            factor(p, "creeper_veil", 0, 1, 10, false);
+            return aura(p, null, 1.2, 0, 0, 10, ParticleTypes.COMPOSTER);
+        });
+        Abilities.register("acupuncture", (p, a) -> {
+            LivingEntity target = looked(p, 20);
+            if (target == null) {
+                p.sendOverlayMessage(Msg.text("No enemy in sight!", ChatFormatting.RED));
+                return false;
+            }
+            ServerLevel level = (ServerLevel) p.level();
+            Vec3 at = target.getBoundingBox().getCenter();
+            for (int i = 0; i < 8; i++) {
+                Vec3 from = at.add(Vec3.directionFromRotation(0, i * 45).scale(3)).add(0, 1, 0);
+                for (double d = 0; d < 3; d += 0.4) {
+                    Vec3 step = from.add(at.subtract(from).normalize().scale(d));
+                    level.sendParticles(ParticleTypes.CRIT, step.x, step.y, step.z, 1, 0, 0, 0, 0);
+                }
+            }
+            HypixelAbilities.hurt(p, target, melee(p) * 2);
+            return true;
+        });
+        Abilities.register("big_pull", (p, a) -> {
+            LivingEntity target = looked(p, 25);
+            if (target == null) {
+                return false;
+            }
+            Vec3 to = p.position().subtract(target.position());
+            target.setDeltaMovement(to.normalize().scale(Math.min(2.5, to.length() * 0.25)).add(0, 0.4, 0));
+            target.syncVelocity = true;
             return true;
         });
         // ---- calls
@@ -442,6 +505,34 @@ final class MoreAbilities {
             if (entity instanceof ServerPlayer player) {
                 LAST_HURT.put(player.getUUID(), (long) player.level().getServer().getTickCount());
             }
+            if (!(source.getEntity() instanceof ServerPlayer player) || entity == player || !(entity instanceof Mob)) {
+                return;
+            }
+            boolean melee = source.is(net.minecraft.world.damagesource.DamageTypes.PLAYER_ATTACK);
+            boolean arrow = source.is(net.minecraft.tags.DamageTypeTags.IS_PROJECTILE);
+            Map.Entry<Double, Long> focus = melee || arrow ? FOCUS.remove(player.getUUID()) : null;
+            if (focus != null && player.level().getServer().getTickCount() < focus.getValue()) {
+                HypixelAbilities.hurt(player, entity, focus.getKey());
+            }
+            if (melee && AGONY.contains(player.getUUID())) {
+                ItemDefinition held = SkyItems.definition(player.getMainHandItem());
+                if (held != null && "TORMENTOR".equals(held.skyblockId())) {
+                    mobs(player, entity.position(), 5).stream().filter(m -> m != entity).limit(5).forEach(m -> {
+                        HypixelAbilities.hurt(player, m, taken * StatTypes.HEALTH_SCALE);
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.SOUL, m.getX(), m.getY() + 1, m.getZ(), 4, 0.2, 0.3, 0.2, 0.02);
+                    });
+                }
+            }
+        });
+        // Slug Boots: a fall that would hurt bounces you back up instead
+        ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
+            if (entity instanceof ServerPlayer player && source.is(net.minecraft.world.damagesource.DamageTypes.FALL) && wearing(player, "SLUG_BOOTS")) {
+                player.setDeltaMovement(player.getDeltaMovement().x, Math.min(1.6, 0.4 + player.fallDistance * 0.05), player.getDeltaMovement().z);
+                player.syncVelocity = true;
+                player.resetFallDistance();
+                return false;
+            }
+            return true;
         });
         ServerTickEvents.END_SERVER_TICK.register(MoreAbilities::tick);
     }
@@ -793,6 +884,14 @@ final class MoreAbilities {
         FACTORS.computeIfAbsent(player.getUUID(), id -> new HashMap<>()).put(key, new Factor(taken, dealt, until, once));
     }
 
+    /** Wither Shield: 10% less damage taken for 5 seconds and a 200 Health absorption shield. */
+    private static void witherShield(ServerPlayer player) {
+        factor(player, "wither_shield", 0.9, 1, 5, false);
+        // 200 Health = 40 vanilla: Absorption X (absorption needs the effect to raise its cap)
+        player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 9, false, false, true));
+        ((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANTED_HIT, player.getX(), player.getY() + 1, player.getZ(), 30, 0.5, 0.8, 0.5, 0.1);
+    }
+
     /** Archfiend Dice: 666.7k coins for a roll of 1 to 6, -120 to +120 Health for a day (a new roll replaces it). */
     private static boolean archfiendDice(ServerPlayer player, ItemDefinition.Ability ability) {
         if (!Wallet.take(player, 666_700)) {
@@ -821,12 +920,42 @@ final class MoreAbilities {
         player.level().playSound(null, player.blockPosition(), sound, SoundSource.PLAYERS, 1.0f, pitch);
     }
 
-    private static void later(MinecraftServer server, long ticks, Runnable task) {
+    static void later(MinecraftServer server, long ticks, Runnable task) {
         LATER.add(Map.entry(server.getTickCount() + ticks, task));
+    }
+
+    private static boolean wearing(ServerPlayer player, String boots) {
+        ItemDefinition def = SkyItems.definition(player.getItemBySlot(EquipmentSlot.FEET));
+        return def != null && boots.equals(def.skyblockId());
+    }
+
+    /** Spring Boots: sneaking on the ground charges a jump (up to 2 seconds); letting go launches you. */
+    private static void springBoots(MinecraftServer server) {
+        for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+            if (!wearing(player, "SPRING_BOOTS")) {
+                SPRING.remove(player.getUUID());
+                continue;
+            }
+            int charge = SPRING.getOrDefault(player.getUUID(), 0);
+            if (player.isShiftKeyDown() && player.onGround()) {
+                SPRING.put(player.getUUID(), Math.min(40, charge + 1));
+                if (charge % 8 == 0 && charge > 0) {
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CLOUD, player.getX(), player.getY() + 0.1, player.getZ(), 3, 0.2, 0, 0.2, 0);
+                }
+            } else if (charge > 0) {
+                SPRING.remove(player.getUUID());
+                if (charge >= 10 && !player.isShiftKeyDown()) {
+                    player.setDeltaMovement(player.getDeltaMovement().x, 0.6 + charge * 0.025, player.getDeltaMovement().z);
+                    player.syncVelocity = true;
+                    player.level().playSound(null, player.blockPosition(), SoundEvents.SLIME_JUMP, SoundSource.PLAYERS, 1.0f, 1.0f);
+                }
+            }
+        }
     }
 
     private static void tick(MinecraftServer server) {
         long now = server.getTickCount();
+        springBoots(server);
         if (!LATER.isEmpty()) {
             List<Runnable> due = new ArrayList<>();
             LATER.removeIf(e -> {

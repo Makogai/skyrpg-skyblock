@@ -144,12 +144,25 @@ final class ItemTooltips {
             out.add(Component.literal("Carry it in a backpack slot (E), press B to open").withStyle(ChatFormatting.DARK_GRAY));
         }
 
-        ItemDefinition.Ability ability = def.ability();
+        ItemDefinition.Ability ability = com.skyrpg.items.ability.ItemAbilities.of(stack, def);
+        if (ability == null && def.ability() != null) {
+            // a Wither scroll: its ability once it's on a Necron's Blade
+            out.add(Component.empty());
+            out.add(Component.literal("Scroll: " + def.ability().name()).withStyle(ChatFormatting.GOLD));
+            wrap(def.ability().description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.GRAY)));
+            out.add(Component.literal("Apply it to a Necron's Blade at an anvil.").withStyle(ChatFormatting.DARK_GRAY));
+        }
         if (ability != null) {
             out.add(Component.empty());
             // Hypixel's trigger ("RIGHT CLICK", "SNEAK"...) as NEU's lore names it; our own abilities are right-clicks.
-            com.google.gson.JsonObject abilityJson = def.json() != null && def.json().has("ability") ? def.json().getAsJsonObject("ability") : null;
-            String trigger = abilityJson != null && abilityJson.has("trigger") ? abilityJson.get("trigger").getAsString() : "RIGHT CLICK";
+            String trigger = ability.trigger();
+            java.util.List<String> scrolls = com.skyrpg.items.ItemMods.scrolls(stack);
+            if (!scrolls.isEmpty()) {
+                out.add(Component.literal("Scrolls: " + scrolls.stream().map(s -> {
+                    ItemDefinition scroll = com.skyrpg.items.ItemRegistry.skyblock(s);
+                    return scroll == null ? s : scroll.name();
+                }).collect(java.util.stream.Collectors.joining(", "))).withStyle(ChatFormatting.DARK_GRAY));
+            }
             out.add(Component.literal("Ability: " + ability.name() + " ").withStyle(ChatFormatting.GOLD)
                     .append(Component.literal(trigger).withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD)));
             wrap(ability.description()).forEach(line -> out.add(Component.literal(line).withStyle(ChatFormatting.GRAY)));

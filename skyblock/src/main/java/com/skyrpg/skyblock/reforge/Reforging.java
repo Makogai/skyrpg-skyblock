@@ -48,6 +48,17 @@ public final class Reforging {
                     ItemMods.recombobulate(stack);
                     return true;
                 })))
+                .then(Commands.literal("scroll").then(Commands.argument("scroll", StringArgumentType.word()).executes(ctx ->
+                        held(ctx.getSource().getPlayerOrException(), stack -> {
+                            String scroll = StringArgumentType.getString(ctx, "scroll").toUpperCase(java.util.Locale.ROOT);
+                            for (String each : scroll.equals(com.skyrpg.items.ability.ItemAbilities.ULTIMATE_WITHER_SCROLL)
+                                    ? com.skyrpg.items.ability.ItemAbilities.WITHER_SCROLLS : java.util.List.of(scroll)) {
+                                if (!ItemMods.scrolls(stack).contains(each)) {
+                                    ItemMods.addScroll(stack, each);
+                                }
+                            }
+                            return true;
+                        }))))
                 .then(Commands.literal("potato").executes(ctx -> held(ctx.getSource().getPlayerOrException(), stack -> {
                     ItemMods.addPotatoBook(stack);
                     return true;

@@ -202,6 +202,30 @@ public final class ItemMods {
     }
 
     /** Its enchantments, id to level, in the order they were put on (Hypixel's {@code enchantments} compound). */
+    /** Hypixel's {@code ability_scroll}: the Wither scrolls put on a Necron's Blade, in the order they went on. */
+    public static final String SCROLLS = "ability_scroll";
+
+    public static List<String> scrolls(ItemStack stack) {
+        CompoundTag tag = tag(stack);
+        if (tag == null || !(tag.get(SCROLLS) instanceof net.minecraft.nbt.ListTag list)) {
+            return List.of();
+        }
+        List<String> out = new java.util.ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            list.getString(i).ifPresent(out::add);
+        }
+        return out;
+    }
+
+    public static void addScroll(ItemStack stack, String scroll) {
+        edit(stack, tag -> {
+            net.minecraft.nbt.ListTag list = tag.get(SCROLLS) instanceof net.minecraft.nbt.ListTag had ? had : new net.minecraft.nbt.ListTag();
+            list.add(net.minecraft.nbt.StringTag.valueOf(scroll));
+            tag.put(SCROLLS, list);
+        });
+        SkyItems.normalize(stack);
+    }
+
     public static Map<String, Integer> enchantments(ItemStack stack) {
         CompoundTag tag = tag(stack);
         if (tag == null || !(tag.get(ENCHANTMENTS) instanceof CompoundTag enchants) || enchants.isEmpty()) {

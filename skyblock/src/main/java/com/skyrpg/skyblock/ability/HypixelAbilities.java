@@ -75,6 +75,9 @@ public final class HypixelAbilities {
         Abilities.register("speed_boost", HypixelAbilities::speedBoost);
         MoreAbilities.init();
         Deployables.init();
+        KuudraArmor.init();
+        Shortbows.init();
+        UtilityAbilities.init();
         // The Blaze Slayer daggers: swap attunement (the Hellion Shield only lets the matching one through).
         Abilities.register("attunement", (p, a) -> {
             net.minecraft.world.item.ItemStack held = p.getMainHandItem();
