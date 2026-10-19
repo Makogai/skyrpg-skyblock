@@ -2,14 +2,14 @@
   "name": "the Spider's Den",
   "dimension": "skyrpg_skyblock:the_end",
   "from": [
-    -1,
-    67,
-    130
+    -496,
+    101,
+    -277
   ],
   "to": [
-    1,
-    68,
-    132
+    -495,
+    102,
+    -274
   ],
   "destination": {
     "dimension": "skyrpg_skyblock:spiders_den",

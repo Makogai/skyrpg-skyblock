@@ -11,7 +11,7 @@ placed to fit them (NPC positions, zones, pads, warps, fairy souls).
 | --- | --- | --- | --- |
 | The Hub | `skyrpg_hub:hub` | The Hub.zip | in use |
 | The Park | `skyrpg_skyblock:the_park` | The Park.zip | in use |
-| The End | `skyrpg_skyblock:the_end` | The End.zip | next |
+| The End | `skyrpg_skyblock:the_end` | The End.zip | in use |
 | The Dungeon Hub | `skyrpg_skyblock:dungeon_hub` | The Dungeon Hub.zip | next |
 
 ## Installing (`tools/worlds/hypixel_map.py`)
@@ -89,3 +89,18 @@ exist yet then).
   map's edge); ours beside their neighbours (Kelly with Gustave, the Campfire Adept with Ryan, Worker Xavier with Funk,
   Juliette and Molbert by Galatea's pad).
 - **Fairy souls**: Hypixel's 11 of October 2022.
+
+## The End on Hypixel's map
+
+- **The altar**: the ring of 8 End Portal Frames at y 9 around (-671, -276), at the bottom of the Dragon's Nest (the
+  map's other frames are decor). `DragonAltar` now finds it around the spawn spot `dragon_altar`
+  (spawn_spots/the_end.json; 0, 0 when there's none, as on our own End); the fight centres there too.
+- **Zones** (Hypixel's wiki: the Dragon's Gate at -600 22 -275, the Void Sepulture's teleport pad at -562 7 -314): The
+  End east of the Gate (y 15 up), the Void Sepulture its depths below (y 0-14), the Dragon's Nest west of the Gate, and,
+  decided (Hypixel added it after 2022), the Zealot Bruiser Hideout in the Nest's north-west. Mobs as before, their
+  boxes moved.
+- **Arrival and pads**: `/warp end` and the pad from the Spider's Den arrive on Hypixel's platform (-502.5 101 -274.5);
+  the slime pad at its east end (-496 100 -277) goes back to the Spider's Den.
+- **NPCs**: from NEU (the Pearl Dealer at the arrival, Guber above it, Gregory and the Lone Adventurer at the Gate);
+  Tyzzo beside the Lone Adventurer.
+- **Fairy souls**: Hypixel's 12 of October 2022.

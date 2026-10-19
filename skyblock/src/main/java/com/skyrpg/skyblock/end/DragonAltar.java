@@ -31,7 +31,8 @@ import net.minecraft.world.level.block.EndPortalFrameBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 /**
- * The Dragon's Nest altar: the End Portal Frames around 0, 0 in The End. Right-click one with a Summoning Eye to place
+ * The Dragon's Nest altar: the End Portal Frames around its middle in The End (0, 0 on our own End; on Hypixel's map
+ * the spawn spot "dragon_altar" in spawn_spots/the_end.json says where). Right-click one with a Summoning Eye to place
  * it, right-click your own eye to take it back; the eighth eye hatches the dragon ({@link DragonFight}), and the frames
  * empty again when the fight is over. Who placed how many eyes counts for their loot.
  */
@@ -42,11 +43,26 @@ public final class DragonAltar {
     /** Who placed the eye in each filled frame, in order. */
     private static final Map<BlockPos, UUID> PLACED = new LinkedHashMap<>();
     private static List<BlockPos> frames;
+    /** The altar's middle (x, z). */
+    private static BlockPos middle = BlockPos.ZERO;
 
     private DragonAltar() {
     }
 
     static void init() {
+        com.skyrpg.core.data.JsonDataLoader.register(SkyRpgSkyblock.id("end_spots"), "skyrpg/spawn_spots", files -> {
+            BlockPos found = BlockPos.ZERO;
+            for (com.google.gson.JsonElement element : files.values()) {
+                com.google.gson.JsonObject root = element.getAsJsonObject();
+                if (root.has("dimension") && root.get("dimension").getAsString().equals(DragonFight.THE_END.identifier().toString())
+                        && root.getAsJsonObject("spots").has("dragon_altar")) {
+                    com.google.gson.JsonArray pos = root.getAsJsonObject("spots").getAsJsonObject("dragon_altar").getAsJsonArray("pos");
+                    found = BlockPos.containing(pos.get(0).getAsDouble(), pos.get(1).getAsDouble(), pos.get(2).getAsDouble());
+                }
+            }
+            middle = found;
+            frames = null;
+        });
         // Before the Hub's protection, which refuses every block use on a public island.
         Identifier early = SkyRpgSkyblock.id("end_altar_early");
         UseBlockCallback.EVENT.addPhaseOrdering(early, Event.DEFAULT_PHASE);
@@ -121,13 +137,13 @@ public final class DragonAltar {
         }
     }
 
-    /** The altar's frames (found once: the ones around 0, 0). */
+    /** The altar's frames (found once: the ones around its middle). */
     private static List<BlockPos> frames(ServerLevel level) {
         if (frames == null) {
             List<BlockPos> found = new ArrayList<>();
             BlockPos.MutableBlockPos at = new BlockPos.MutableBlockPos();
-            for (int x = -RADIUS; x <= RADIUS; x++) {
-                for (int z = -RADIUS; z <= RADIUS; z++) {
+            for (int x = middle.getX() - RADIUS; x <= middle.getX() + RADIUS; x++) {
+                for (int z = middle.getZ() - RADIUS; z <= middle.getZ() + RADIUS; z++) {
                     for (int y = level.getMinY(); y < level.getMaxY(); y++) {
                         if (level.getBlockState(at.set(x, y, z)).is(Blocks.END_PORTAL_FRAME)) {
                             found.add(at.immutable());
@@ -155,7 +171,7 @@ public final class DragonAltar {
     static BlockPos center(ServerLevel level) {
         List<BlockPos> all = frames(level);
         int y = all.isEmpty() ? level.getSeaLevel() : all.getFirst().getY();
-        return new BlockPos(0, y, 0);
+        return new BlockPos(middle.getX(), y, middle.getZ());
     }
 
     /** Empties the frames (after a fight, or eyes left in them over a restart). */

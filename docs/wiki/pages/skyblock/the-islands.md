@@ -112,12 +112,13 @@ The camp by the arrival has **Grandma Wolf**, **Haymitch**, **Rick**, **Shaggy**
 
 ## The End
 
-Through the launch pad on the Spider's Den's west edge (Combat XII). A cluster of End Stone islands floating in the dark:
+Through the launch pad on the Spider's Den's west edge (Combat XII). It's **Hypixel's own End map**: tunnels and caverns of End Stone and Obsidian under a dark sky.
 
-- **The arrival** (where `/warp end` puts you): the stalls of the **Pearl Dealer** (End Stone, Obsidian, Silent Pearls, the Remnant of the Eye) and **Gregory** (a shop), and a pad back to the Spider's Den.
-- **The main island**, to the south-east: Endermen roam it in three groups (level 42 near the arrival, 45 and 50 further out) with Endermites. **Guber**, the **Lone Adventurer** and **Tyzzo** live here. Under its east end a stair goes down to the **Zealot Bruiser Hideout**, a cavern of level 100 Zealot Bruisers.
-- **The Dragon's Nest**, north of the arrival: a huge bowl ringed by obsidian pillars, with **Zealots**, **Obsidian Defenders** and **Watchers** on its floor and the **altar** in the middle.
-- **The Void Sepulture**, over the bridge to the west: a dark island with Voidling Fanatics and Voidling Extremists, by far the toughest mobs here.
+- **The arrival** (where `/warp end` puts you), at the east end: the **Pearl Dealer** (End Stone, Obsidian, Silent Pearls, the Remnant of the Eye), and the slime pad back to the Spider's Den. **Guber** stands above it.
+- **The End**, the caverns west of the arrival: Endermen roam them in three groups with Endermites. **Gregory**, the **Lone Adventurer** and **Tyzzo** wait by the **Dragon's Gate**, the way into the Nest.
+- **The Dragon's Nest**, west of the Gate: a huge bowl of obsidian, with **Zealots**, **Obsidian Defenders** and **Watchers**, and the **altar** at the bottom.
+- **The Void Sepulture**, the End's depths below the caverns: Voidling Fanatics and Voidling Extremists, by far the toughest mobs here.
+- **The Zealot Bruiser Hideout**, at the Nest's north-west: level 100 Zealot Bruisers.
 
 **End Stone** and **Obsidian** can be mined anywhere on the main islands; they come back after a few seconds.
 

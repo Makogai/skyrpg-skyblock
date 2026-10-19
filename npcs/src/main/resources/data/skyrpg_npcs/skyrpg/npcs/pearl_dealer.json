@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_end",
   "pos": [
-    -8.5,
-    67.0,
-    113.5
+    -504.5,
+    101.0,
+    -284.5
   ],
-  "yaw": 0.0,
+  "yaw": 80.0,
   "sound": "minecraft:entity.enderman.ambient",
   "greetings": [
     "End Stone, Obsidian, pearls. All fresh.",

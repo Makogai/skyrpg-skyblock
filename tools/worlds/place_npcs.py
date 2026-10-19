@@ -30,7 +30,7 @@ NEU_ZIP = ROOT / "tools/skyblock/cache/neu-repo.zip"
 WORLD = ROOT / "run/server/world"
 
 # Where NPCs face by default: the island's middle (the Hub: its village square).
-MIDDLE = {"hub": (-2, -85), "foraging_1": (-350, -20)}
+MIDDLE = {"hub": (-2, -85), "foraging_1": (-350, -20), "combat_3": (-560, -275)}
 # Ours, or Hypixel's where neither the map nor NEU places them: [x, y, z, yaw] (feet; yaw None = face the middle), or
 # ["near", x, y, z]: the nearest spot a player can stand there (within 16 blocks).
 OVERRIDES = {
@@ -63,6 +63,10 @@ OVERRIDES = {
         "Worker Xavier": ["near", -444, 107, 21],
         "Juliette": ["near", -436, 127, -102],
         "Molbert": ["near", -436, 127, -109],
+    },
+    "combat_3": {
+        # by the Lone Adventurer at the Dragon's Gate (NEU's spot isn't standable on this map)
+        "Tyzzo": ["near", -592, 22, -278],
     },
 }
 

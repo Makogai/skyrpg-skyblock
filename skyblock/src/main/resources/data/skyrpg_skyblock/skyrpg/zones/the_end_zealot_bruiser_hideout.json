@@ -2,14 +2,14 @@
   "name": "Zealot Bruiser Hideout",
   "dimension": "skyrpg_skyblock:the_end",
   "from": [
-    -69,
-    12,
-    71
+    -795,
+    0,
+    -420
   ],
   "to": [
-    149,
-    55,
-    149
+    -601,
+    255,
+    -341
   ],
   "mobs": [
     {
@@ -22,16 +22,6 @@
       "coins": 40,
       "max": 8,
       "every": 3,
-      "from": [
-        90,
-        39,
-        94
-      ],
-      "to": [
-        110,
-        47,
-        114
-      ],
       "drops": [
         {
           "item": "ENDER_PEARL",
@@ -46,7 +36,17 @@
           "max": 1
         }
       ],
-      "indoors": true
+      "indoors": true,
+      "from": [
+        -785,
+        5,
+        -415
+      ],
+      "to": [
+        -610,
+        80,
+        -345
+      ]
     }
   ]
 }

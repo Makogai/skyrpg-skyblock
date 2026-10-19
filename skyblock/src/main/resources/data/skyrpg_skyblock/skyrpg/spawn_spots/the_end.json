@@ -1,0 +1,13 @@
+{
+  "dimension": "skyrpg_skyblock:the_end",
+  "spots": {
+    "dragon_altar": {
+      "pos": [
+        -671.0,
+        9.0,
+        -276.0
+      ],
+      "yaw": 0.0
+    }
+  }
+}

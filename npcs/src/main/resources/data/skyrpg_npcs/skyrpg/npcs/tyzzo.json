@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_end",
   "pos": [
-    126.5,
-    67.0,
-    98.5
+    -591.5,
+    22.0,
+    -277.5
   ],
-  "yaw": 90.0,
+  "yaw": -85.0,
   "sound": "minecraft:block.end_portal_frame.fill",
   "greetings": [
     "The pillars hum at night. Well, it's always night here.",

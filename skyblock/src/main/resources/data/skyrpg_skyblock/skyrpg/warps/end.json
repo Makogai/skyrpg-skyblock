@@ -4,11 +4,11 @@
   "icon": "minecraft:ender_eye",
   "dimension": "skyrpg_skyblock:the_end",
   "pos": [
-    0.5,
-    67.0,
-    120.5
+    -502.5,
+    101.0,
+    -274.5
   ],
-  "yaw": 180.0,
+  "yaw": 90.0,
   "area": "The End",
   "order": 26
 }

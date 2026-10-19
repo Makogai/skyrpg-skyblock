@@ -7,11 +7,11 @@
   "model": "wide",
   "dimension": "skyrpg_skyblock:the_end",
   "pos": [
-    10.5,
-    67.0,
-    113.5
+    -607.5,
+    22.0,
+    -284.5
   ],
-  "yaw": 0.0,
+  "yaw": -79.0,
   "sound": "minecraft:entity.villager.trade",
   "greetings": [
     "Pets go further out here, you know.",
