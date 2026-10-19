@@ -299,6 +299,13 @@ phase so the next session can pick up where this one stopped.
       Boost, the wands' heals; ability damage × (1 + Intelligence/100) × (1 + Ability Damage %). Temporary speed is a
       stat source. Not yet: the other ~270 abilities, scroll abilities (Hyperion's Wither Impact), sneak/left-click
       triggers, set bonuses.
+- [x] **Item abilities, part 2** (`MoreAbilities`, `Deployables`; triggers in `Abilities`): every ability keeps its
+      trigger; LEFT CLICK (a punch at the air, an attack, a block) and SNEAK (starting to sneak, the held item then worn
+      armour) work as well as RIGHT CLICK. 63 more types (85 of 147, 164 of 289 items): shots, beams, blasts, lingering
+      areas, arcs, bouncing roses, lightning, teleports (Etherwarp, Shadowstep, Shadow Fury...), timed buffs and damage
+      factors, heals, the Batphone and Royal Pigeon, and the deployables (Power Orbs, Flares, Lanterns, Umberella with the
+      wiki's buffs; the best one you're in applies). Not yet: armour set stack abilities (Kuudra armour), scroll
+      abilities on Necron's Blade, Terminator's Salvation, trackers (hotspots, fallen stars, secrets), builder's wands.
 - [x] **Bestiary**: `tools/skyblock/import_bestiary.py` (NEU bestiary.json: 255 families on 19 islands, heads, caps,
       brackets) to `skyrpg/bestiary`. `Bestiary` (skyblock): kills by family (the mob's name, Hypixel's; aliases for Goblin
       variants, Zealot Bruisers, the dragons; unnamed vanilla mobs by type), tiers from the bracket up to the cap. Decided

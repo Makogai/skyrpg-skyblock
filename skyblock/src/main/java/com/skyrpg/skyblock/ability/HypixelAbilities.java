@@ -73,6 +73,8 @@ public final class HypixelAbilities {
         });
         Abilities.register("fire_blast", (p, a) -> bolt(p, a, 25, 1.5, ParticleTypes.FLAME, SoundEvents.BLAZE_SHOOT, 0));
         Abilities.register("speed_boost", HypixelAbilities::speedBoost);
+        MoreAbilities.init();
+        Deployables.init();
         // The Blaze Slayer daggers: swap attunement (the Hellion Shield only lets the matching one through).
         Abilities.register("attunement", (p, a) -> {
             net.minecraft.world.item.ItemStack held = p.getMainHandItem();
@@ -104,19 +106,19 @@ public final class HypixelAbilities {
         ServerTickEvents.END_SERVER_TICK.register(HypixelAbilities::tick);
     }
 
-    private static double number(Pattern pattern, String text, int group, double fallback) {
+    static double number(Pattern pattern, String text, int group, double fallback) {
         Matcher m = pattern.matcher(text);
         return m.find() ? Double.parseDouble(m.group(group).replace(",", "")) : fallback;
     }
 
     /** Hypixel's ability damage: the base times (1 + Intelligence / 100) times (1 + Ability Damage %). */
-    private static double abilityDamage(ServerPlayer player, double base) {
+    static double abilityDamage(ServerPlayer player, double base) {
         double intelligence = Math.max(0, Stats.get(player, StatTypes.INTELLIGENCE));
         double bonus = Math.max(0, Stats.get(player, StatTypes.ABILITY_DAMAGE));
         return base * (1 + intelligence / 100) * (1 + bonus / 100);
     }
 
-    private static void hurt(ServerPlayer player, LivingEntity target, double amount) {
+    static void hurt(ServerPlayer player, LivingEntity target, double amount) {
         if (!(target.level() instanceof ServerLevel level) || target == player || target instanceof Player) {
             return;
         }
@@ -126,7 +128,7 @@ public final class HypixelAbilities {
 
     // ---------------------------------------------------------------- teleport
 
-    private static boolean instantTransmission(ServerPlayer player, ItemDefinition.Ability ability) {
+    static boolean instantTransmission(ServerPlayer player, ItemDefinition.Ability ability) {
         int distance = (int) number(TELEPORT, ability.description(), 1, 8);
         ServerLevel level = (ServerLevel) player.level();
         Vec3 eye = player.getEyePosition();
@@ -267,7 +269,7 @@ public final class HypixelAbilities {
         return true;
     }
 
-    private static void buffSpeed(ServerPlayer player, double amount, int seconds) {
+    static void buffSpeed(ServerPlayer player, double amount, int seconds) {
         long now = player.level().getServer().getTickCount();
         SPEED_BUFFS.put(player.getUUID(), new Buff(amount, now + seconds * 20L));
         Stats.refresh(player);

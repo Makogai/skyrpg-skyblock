@@ -46,6 +46,10 @@ public final class Abilities {
     private static final Map<UUID, Map<String, Long>> COOLDOWNS = new HashMap<>();
     /** Player -> server tick they were last told "no" (so holding the button does not machine-gun the message and click). */
     private static final Map<UUID, Long> NOTICED = new HashMap<>();
+    /** Player -> server tick of their last right-click use (its arm swing isn't a left click). */
+    private static final Map<UUID, Long> LAST_RIGHT_CLICK = new HashMap<>();
+    /** Who was sneaking last tick (SNEAK abilities go off as you start). */
+    private static final Map<UUID, Boolean> SNEAKING = new HashMap<>();
     /** Cooldowns that ended while the player might still be holding the item: they get a "ready" ping. */
     private static final List<Ready> READY = new ArrayList<>();
     /** Only cooldowns at least this long (seconds) announce that they are over. */
@@ -76,22 +80,76 @@ public final class Abilities {
         UseItemCallback.EVENT.register(early, (player, level, hand) -> tryUse(player, hand));
         UseBlockCallback.EVENT.addPhaseOrdering(early, Event.DEFAULT_PHASE);
         UseBlockCallback.EVENT.register(early, (player, level, hand, hit) -> tryUse(player, hand));
+        net.fabricmc.fabric.api.event.player.AttackBlockCallback.EVENT.register((player, level, hand, pos, direction) -> {
+            if (player instanceof ServerPlayer server) {
+                leftClick(server);
+            }
+            return InteractionResult.PASS;
+        });
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (server.getTickCount() % 4 == 0 && !READY.isEmpty()) {
                 announceReady(server.getTickCount(), server);
+            }
+            for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+                boolean sneaking = player.isShiftKeyDown();
+                if (!Boolean.valueOf(sneaking).equals(SNEAKING.put(player.getUUID(), sneaking)) && sneaking) {
+                    sneak(player);
+                }
             }
         });
     }
 
     private static InteractionResult tryUse(Player player, InteractionHand hand) {
-        ItemDefinition def = SkyItems.definition(player.getItemInHand(hand));
+        net.minecraft.world.item.ItemStack stack = player.getItemInHand(hand);
+        ItemDefinition def = SkyItems.definition(stack);
         // A broken tool has no abilities until it is repaired (it says so on the action bar).
-        if (def == null || def.ability() == null || hand != InteractionHand.MAIN_HAND || com.skyrpg.core.items.ToolWear.isBroken(player.getItemInHand(hand))) {
+        if (def == null || def.ability() == null || hand != InteractionHand.MAIN_HAND || com.skyrpg.core.items.ToolWear.isBroken(stack)) {
+            return InteractionResult.PASS;
+        }
+        // Left-click and sneak abilities are cast their own way; a bow's right click still draws it.
+        if (!def.ability().rightClick()) {
             return InteractionResult.PASS;
         }
         if (!(player instanceof ServerPlayer serverPlayer)) {
             return InteractionResult.SUCCESS; // the server decides; don't also run the item's vanilla use
         }
+        LAST_RIGHT_CLICK.put(player.getUUID(), (long) serverPlayer.level().getServer().getTickCount());
+        return cast(serverPlayer, stack, def);
+    }
+
+    /** A left click (at the air, a block or a mob): the held item's LEFT CLICK ability. Not right after a right-click use. */
+    public static void leftClick(ServerPlayer player) {
+        long now = player.level().getServer().getTickCount();
+        if (now - LAST_RIGHT_CLICK.getOrDefault(player.getUUID(), -100L) <= 2) {
+            return;
+        }
+        net.minecraft.world.item.ItemStack stack = player.getMainHandItem();
+        ItemDefinition def = SkyItems.definition(stack);
+        if (def != null && def.ability() != null && def.ability().trigger().contains("LEFT") && !com.skyrpg.core.items.ToolWear.isBroken(stack)) {
+            cast(player, stack, def);
+        }
+    }
+
+    /** Starting to sneak: the held item's SNEAK ability, else the first worn piece with one that works (armour sets). */
+    private static void sneak(ServerPlayer player) {
+        List<net.minecraft.world.item.ItemStack> stacks = new ArrayList<>();
+        stacks.add(player.getMainHandItem());
+        for (net.minecraft.world.entity.EquipmentSlot slot : new net.minecraft.world.entity.EquipmentSlot[] {net.minecraft.world.entity.EquipmentSlot.HEAD,
+                net.minecraft.world.entity.EquipmentSlot.CHEST, net.minecraft.world.entity.EquipmentSlot.LEGS, net.minecraft.world.entity.EquipmentSlot.FEET}) {
+            stacks.add(player.getItemBySlot(slot));
+        }
+        for (net.minecraft.world.item.ItemStack stack : stacks) {
+            ItemDefinition def = SkyItems.definition(stack);
+            if (def != null && def.ability() != null && def.ability().trigger().equals("SNEAK")
+                    && (TYPES.containsKey(def.ability().type()) || AbilityHandlers.get(def.ability().type()) != null)) {
+                cast(player, stack, def);
+                return;
+            }
+        }
+    }
+
+    /** Casts an item's ability: cooldown and mana checked (and said when short), the ability run, mana spent, cooldown started. */
+    private static InteractionResult cast(ServerPlayer serverPlayer, net.minecraft.world.item.ItemStack stack, ItemDefinition def) {
         ItemDefinition.Ability ability = def.ability();
         AbilityType type = TYPES.get(ability.type());
         if (type == null) {
@@ -103,14 +161,14 @@ public final class Abilities {
             type = (user, used) -> handler.use(user, used.params());
         }
         long now = serverPlayer.level().getServer().getTickCount();
-        Map<String, Long> cooldowns = COOLDOWNS.computeIfAbsent(player.getUUID(), id -> new HashMap<>());
+        Map<String, Long> cooldowns = COOLDOWNS.computeIfAbsent(serverPlayer.getUUID(), id -> new HashMap<>());
         long readyAt = cooldowns.getOrDefault(def.id().toString(), 0L);
         if (now < readyAt) {
             refuse(serverPlayer, now, ability.name() + " is recharging: " + Msg.number(Math.ceil((readyAt - now) / 2.0) / 10.0) + "s");
             return InteractionResult.FAIL;
         }
         // Ultimate Wise takes its percent off the mana cost.
-        double mana = ability.mana() * Math.max(0, 1 - ultimateWise(player.getItemInHand(hand)) / 100);
+        double mana = ability.mana() * Math.max(0, 1 - ultimateWise(stack) / 100);
         if (mana > 0 && Stats.available() && Stats.mana(serverPlayer) < mana) {
             refuse(serverPlayer, now, "Not enough mana for " + ability.name() + ": " + Msg.number(Math.floor(Stats.mana(serverPlayer)))
                     + " / " + Msg.number(mana) + " " + StatTypes.MANA_ICON);
@@ -129,12 +187,20 @@ public final class Abilities {
         if (ability.cooldownSeconds() > 0) {
             int ticks = (int) Math.round(ability.cooldownSeconds() * 20);
             cooldowns.put(def.id().toString(), now + ticks);
-            serverPlayer.getCooldowns().addCooldown(serverPlayer.getItemInHand(hand), ticks);
+            serverPlayer.getCooldowns().addCooldown(stack, ticks);
             if (ability.cooldownSeconds() >= READY_PING_MIN) {
-                READY.add(new Ready(player.getUUID(), def.id(), ability.name(), now + ticks));
+                READY.add(new Ready(serverPlayer.getUUID(), def.id(), ability.name(), now + ticks));
             }
         }
         return InteractionResult.SUCCESS;
+    }
+
+    /** Ends an item's cooldown now (abilities whose cooldown resets, like Shadowstep on a kill). */
+    public static void resetCooldown(ServerPlayer player, Identifier item) {
+        Map<String, Long> cooldowns = COOLDOWNS.get(player.getUUID());
+        if (cooldowns != null) {
+            cooldowns.remove(item.toString());
+        }
     }
 
     /** Says why it didn't work, in red on the action bar with a dull click, at most five times a second. */

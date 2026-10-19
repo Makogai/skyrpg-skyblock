@@ -1,7 +1,7 @@
 {
   "note": "How far each Hypixel SkyBlock system is from 1:1. weight = its share of the whole game; done = percent. tools/progress_card.py renders this into the Discord progress card. Keep it honest: old survival features count only once they work the Hypixel way.",
   "updated": "2026-10-19",
-  "latest": "2026-10-19 The Chocolate Factory and Hoppity's Hunt; Hypixel's Garden Barn",
+  "latest": "2026-10-19 The Chocolate Factory, Hypixel's Garden Barn, 63 more item abilities",
   "phase": {
     "name": "Phase 4: Late game",
     "done": 62
@@ -15,7 +15,7 @@
           "name": "Items & stats",
           "icon": "item/diamond_sword",
           "weight": 10,
-          "done": 64
+          "done": 70
         },
         {
           "name": "Profiles & co-ops",
@@ -295,7 +295,7 @@
     },
     {
       "date": "2026-10-19",
-      "overall": 75.3
+      "overall": 75.7
     }
   ]
 }

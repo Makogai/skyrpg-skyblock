@@ -48,9 +48,15 @@ public record ItemDefinition(Identifier id, String skyblockId, Item item, String
                              List<String> perks, JsonObject json) {
 
     /** An item's right-click ability. {@code params} holds type-specific settings like "distance". */
-    public record Ability(String type, String name, double mana, double cooldownSeconds, String description, JsonObject params) {
+    /** An item's ability; {@code trigger} is how it's cast, as Hypixel words it: RIGHT CLICK, LEFT CLICK, SNEAK, HOLD RIGHT CLICK. */
+    public record Ability(String type, String name, double mana, double cooldownSeconds, String description, JsonObject params, String trigger) {
         public double param(String key, double fallback) {
             return params.has(key) ? params.get(key).getAsDouble() : fallback;
+        }
+
+        /** Cast by right-clicking (also when held down). */
+        public boolean rightClick() {
+            return trigger.contains("RIGHT");
         }
     }
 
@@ -90,7 +96,8 @@ public record ItemDefinition(Identifier id, String skyblockId, Item item, String
                     a.has("mana") ? a.get("mana").getAsDouble() : 0,
                     a.has("cooldown") ? a.get("cooldown").getAsDouble() : 0,
                     a.has("description") ? a.get("description").getAsString() : "",
-                    a.has("params") ? a.getAsJsonObject("params") : new JsonObject());
+                    a.has("params") ? a.getAsJsonObject("params") : new JsonObject(),
+                    a.has("trigger") ? a.get("trigger").getAsString() : "RIGHT CLICK");
         }
         List<String> perks = new ArrayList<>();
         if (json.has("perks")) {
