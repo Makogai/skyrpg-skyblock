@@ -32,6 +32,14 @@ public final class HollowsReset {
 
     static void init() {
         ServerLifecycleEvents.SERVER_STARTING.register(HollowsReset::beforeWorlds);
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> {
+            // Which Hollows this is: what players did in an older one is forgotten (HollowsState).
+            try {
+                HollowsState.epoch = Long.parseLong(Files.readString(server.getWorldPath(LevelResource.ROOT).resolve(CREATED)).trim());
+            } catch (IOException | NumberFormatException e) {
+                HollowsState.epoch = 1;
+            }
+        });
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
             if (reset) {
                 reset = false;

@@ -16,5 +16,8 @@
   "greetings": [
     "Bring me a Goblin Egg and I'll give you my scent.",
     "The Queen guards the Amber Crystal."
-  ]
+  ],
+  "action": {
+    "type": "hollows_yolkar"
+  }
 }

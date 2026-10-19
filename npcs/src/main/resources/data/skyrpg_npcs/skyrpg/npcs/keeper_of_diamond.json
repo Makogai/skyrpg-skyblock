@@ -16,5 +16,11 @@
   "greetings": [
     "I guard Divan's diamond part.",
     "Bring what was lost."
-  ]
+  ],
+  "action": {
+    "type": "hollows_keeper",
+    "params": {
+      "gem": "Diamond"
+    }
+  }
 }

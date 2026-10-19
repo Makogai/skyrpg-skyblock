@@ -19,5 +19,13 @@ public final class CrystalHollows {
         TreasureChests.init();
         HollowsAccess.init();
         HollowsReset.init();
+        Crystals.init();
+        Keepers.init();
+        HollowsNpcs.init();
+        GoblinQueen.init();
+        Worms.init();
+        HollowsBosses.init();
+        FairyGrottos.init();
+        HollowsAdmin.init();
     }
 }
