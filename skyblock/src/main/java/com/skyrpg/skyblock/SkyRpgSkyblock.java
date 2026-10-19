@@ -64,6 +64,7 @@ public final class SkyRpgSkyblock implements ModInitializer {
         com.skyrpg.skyblock.travel.LaunchPads.init();
         com.skyrpg.skyblock.travel.Lifts.init();
         com.skyrpg.skyblock.reforge.Reforging.init();
+        com.skyrpg.skyblock.reforge.ReforgeAbilities.init();
         com.skyrpg.skyblock.enchant.SkyEnchanting.init();
         com.skyrpg.skyblock.accessory.AccessoryBag.init();
         com.skyrpg.skyblock.pet.SkyBlockPets.init();

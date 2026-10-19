@@ -69,6 +69,10 @@ final class Pests {
             "ENCHANTED_POTATO", "pumpkin", "ENCHANTED_PUMPKIN", "sugar_cane", "ENCHANTED_SUGAR", "melon", "ENCHANTED_MELON", "cactus",
             "ENCHANTED_CACTUS_GREEN", "cocoa", "ENCHANTED_COCOA", "mushroom", "ENCHANTED_RED_MUSHROOM", "nether_wart", "ENCHANTED_NETHER_STALK");
 
+    static String enchantedForm(String crop) {
+        return ENCHANTED.get(crop);
+    }
+
     /** When each profile's pest cooldown ends, and its repellent (until, factor). */
     private static final Map<UUID, Long> COOLDOWN = new HashMap<>();
     private static final Map<UUID, long[]> REPELLENT = new HashMap<>();

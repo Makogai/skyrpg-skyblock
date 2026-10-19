@@ -548,6 +548,24 @@ public final class Garden {
         return null;
     }
 
+    /** Someone harvested a Garden crop: its key ({@code wheat}, {@code sugar_cane}...) and how many it gave. */
+    @FunctionalInterface
+    public interface Harvested {
+        void onHarvested(ServerPlayer player, String crop, long count);
+    }
+
+    public static final net.fabricmc.fabric.api.event.Event<Harvested> HARVESTED = net.fabricmc.fabric.api.event.EventFactory
+            .createArrayBacked(Harvested.class, listeners -> (player, crop, count) -> {
+                for (Harvested listener : listeners) {
+                    listener.onHarvested(player, crop, count);
+                }
+            });
+
+    /** The SkyBlock id of a crop's enchanted form, or null. */
+    public static String enchantedForm(String crop) {
+        return Pests.enchantedForm(crop);
+    }
+
     private static void harvested(ServerLevel level, ServerPlayer player, BlockPos pos, BlockState state) {
         Crop crop = cropOf(state);
         Profile owner = ownerAt(pos);
@@ -571,6 +589,7 @@ public final class Garden {
             Msg.playSound(player, SoundEvents.PLAYER_LEVELUP, 0.6f, 1.6f);
             giveXp(player, garden, xp);
         }
+        HARVESTED.invoker().onHarvested(player, crop.key(), count);
         Pests.harvested(level, player, pos, crop);
         Contests.harvested(player, crop, count);
         GardenChips.harvested(player, crop, count);
