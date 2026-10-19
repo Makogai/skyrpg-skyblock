@@ -248,7 +248,9 @@ final class DailyNpcs {
             for (int move : moves(seed)) {
                 arrows.append(ARROWS[move]).append(' ');
             }
-            cards.add(CardView.Card.info("Start facing the door, take one block for each arrow", arrows.toString().trim(), 0xFF55FF, new ItemStack(Items.COMPASS)));
+            // the arrows as the card's title (a subtitle's text is too small to read them)
+            cards.add(CardView.Card.info(arrows.toString().trim(), "Start facing the door and take one block for each arrow.", 0xFF55FF,
+                    new ItemStack(Items.COMPASS)));
             for (int[] spot : options(seed)) {
                 cards.add(new CardView.Card(where(spot), "", 0xF2F2F2, true, "", new ItemStack(Items.GLOWSTONE), "", List.of(), -1, ""));
             }
