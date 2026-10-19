@@ -89,5 +89,54 @@ The **Forger** in the Forge (`/warp forge`) forges Hypixel's **123 Forge recipes
 
 Some recipes need a higher HotM tier, shown on the recipe.
 
+## Fetchur, the Puzzler and the King
+
+**Fetchur** (in the Dwarven Village, by Old Man Garry's hut) wants one item a day. He only gives hints, and everybody gets the same request, which changes at midnight UTC. Give him the amount and you get **20,000 coins** and **2,500 Mithril Powder**. The 12 requests cycle through the month, starting over on the 1st:
+
+| Hint | Item |
+| --- | --- |
+| yellow and see through | 20 Yellow Stained Glass |
+| circular and sometimes moves | Compass |
+| expensive minerals | 20 Mithril |
+| useful during celebrations | Firework Rocket |
+| hot and gives energy | a Coffee (Cheap, Decent or Black) |
+| tall and can be opened | an Iron Door or Wood Door |
+| brown and fluffy | 3 Rabbit's Foot |
+| explosive but more than usual | Superboom TNT |
+| wearable and grows | Pumpkin |
+| shiny and makes sparks | Flint and Steel |
+| green and some dudes trade stuff for it | 50 Emerald |
+| red and soft | 50 Red Wool |
+
+The **Puzzler** (in the Royal Palace) shows a row of arrows, one block each: up is straight ahead, right, down is back, left. Pick where the path ends from five places and you get **2,500 Mithril Powder**, once every 24 hours after you solve it. A wrong pick lets you try again.
+
+The **King** is one of seven who take turns in the Royal Palace, a new one every SkyBlock day (20 minutes): Brammor, Emkam, Redros, Erren, Thormyr, Emmor and Grandan. The one on the throne tells you who he is when you talk to him, then opens the Commissions board. Speak to all seven during their reigns for a **King Talisman**; the game counts them as you go.
+
+## Goblins and Powder Ghasts
+
+Every ore you mine here has a **0.1%** chance to call a **Golden Goblin** to you (3.33% of those are **Diamond Goblins**). It runs from you, only you can hit it, it takes **3 hits** (**5** for the Diamond one) and it's gone after 30 seconds.
+
+| | Level | Drops |
+| --- | --- | --- |
+| Golden Goblin | 99 | 5 Mithril, 2 Gold Essence (30% for a third), 500 Mithril Powder, 33 coins |
+| Diamond Goblin | 109 | 20 Mithril, 20 Diamond Essence, 1,000 Mithril Powder and 1,000 Gemstone Powder, 36 coins |
+
+Mining Mithril in the Cliffside Veins, Rampart's Quarry, Divan's Gateway or the Forge has a **1 in 5,000** chance to draw a **Powder Ghast** (one every 10 minutes at most). It hangs in the air and melee can't hurt it, but **every arrow that hits** pays **100-250 Mithril Powder**. It leaves after a minute without a hit.
+
+## Mining events
+
+Every half hour the Mines may hold an event, announced in chat 20 seconds ahead and shown in the sidebar while it runs. The Mines' events are shared by everyone there.
+
+| Event | Lasts | What it does |
+| --- | --- | --- |
+| 2x Powder | 10 min | Every powder you gain in the Mines doubles (Commissions, Fetchur, the Puzzler and mining) |
+| Gone with the Wind | 15 min | The wind blows from one direction (the sidebar names it); face it for **+600 Mining Speed**, nearly face it for +300 |
+| Better Together | 20 min | **+250 Mining Speed and +20 Mining Fortune** for each player in your zone, up to 5 players |
+| Goblin Raid | 5 min | Goblins flood the Goblin Burrows' hall; slay the goal's worth together (100 for each player in the Mines, up to 1,000) |
+
+In the Goblin Raid you fight Weaklings and Fireslingers, tough Creeperlobbers and Pitfighters, rare Murderlovers and **Superprotectrons** (Iron Golems that take 12 hits and count for 10 kills). When it ends everyone who slew goblins gets Mining XP, HotM XP and Mithril Powder; slaying **25 or more** and beating the goal pays the most (30,000 Mining XP, 250 HotM XP, 20,000 Mithril Powder plus 100 for each kill).
+
+Admins can start one with `/sbminingevent start <double_powder|wind|better_together|goblin_raid>` (also `stop`, `status` and `spawn golden|diamond|ghast`).
+
 > [!NOTE]
-> Not yet: the King's rotation (one King for now), mining events (Goblin Raids, Fallen Stars, 2x Powder, Raffles), Golden and Diamond Goblins, Powder Ghasts, the Puzzler's and Fetchur's daily tasks, the Royal Pigeon. The Crystal Hollows and the [Glacite Tunnels](glacite-tunnels) have pages of their own.
+> Not yet: the Raffle and Mithril Gourmand events, Fallen Stars, the Royal Pigeon, Goblin Eggs thrown for Golden Goblins, and the Luck of the Cave and Sky Mall effects on rare spawns. The Crystal Hollows and the [Glacite Tunnels](glacite-tunnels) have pages of their own.

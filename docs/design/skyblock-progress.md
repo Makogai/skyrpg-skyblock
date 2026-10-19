@@ -255,8 +255,22 @@ phase so the next session can pick up where this one stopped.
       `ForgeScreen`): NEU's 123 forge recipes (`import_forge.py`), slots by HotM (2 at HotM 2 to 6 at 6, +1 Core 2),
       real-time jobs, Quick Forge, ready notices, `/sbforge [finish]`. `MinesMobs`: Ghosts are charged invisible creepers
       that never explode and hit on contact.
-      Not yet: the King's rotation, mining events, Golden/Diamond Goblins, Powder Ghasts, daily Puzzler/Fetchur, Ticket
-      Masters, most perks' effects, Pickobulus and other abilities, drills (fuel, parts), the Crystal Hollows and Glacite.
+      Not yet: Ticket Masters, most perks' effects, Pickobulus and other abilities, drills (fuel, parts), the Crystal Hollows and Glacite.
+- [x] **Dwarven Mines, part 2** (Hypixel's wiki numbers): `DailyNpcs`: **Fetchur** (NPC in the village by Garry's hut; card
+      screen; the 12-item cycle by day of the month, 20,000 coins + 2,500 Mithril Powder, once a day UTC), the **Puzzler**
+      (arrow puzzle: pick where the path ends; 2,500 Mithril Powder per 24 hours) and the **King** (7 Kings in Hypixel's
+      order, one per SkyBlock day, told in chat, opens Commissions; all seven give the King Talisman). Powder rewards count
+      Powder Buff. `MinesGoblins`: 0.1% of mined ores call a **Golden Goblin** (3.33% Diamond): timid, owner-only, 3 hits
+      (5), gone in 30s, Hypixel's drops; **Powder Ghast** 1/5000 Mithril in four zones, 10 min cooldown, melee-immune, 100
+      hits, 100-250 powder per arrow hit. `MiningEvents`: a clock-driven schedule (half-hour slots, no saved state): **2x
+      Powder** (`Hotm.givePowder` doubles on the Mines island), **Gone with the Wind** (+600/+300 Mining Speed by facing the
+      wind), **Better Together** (+250 speed, +20 fortune per player in the zone, max 5) and the **Goblin Raid**
+      (`GoblinRaid`: raiders in the Burrows' hall, goal 100 per player, Hypixel's kill-tier rewards); 20 s warning, panels,
+      sidebar lines (`MiningEvents.SIDEBAR`), `/sbminingevent start|stop|status|spawn`.
+      Decided: the 7 Kings are one NPC, "N hits" mobs die on the Nth hit whatever the damage, Fetchur takes a card click
+      (not a right-click with the items). Not yet: Raffle, Mithril Gourmand, Fallen Stars, Goblin Eggs, the Luck of the Cave
+      and Sky Mall perks on spawns, Bits and Mining Item raid rewards. Fetchur's spot (57.5, 201, -141.5) is not in a
+      build script's spots (the NPC file is written by hand); look at it in game.
 - [x] **Sacks** (Hypixel's): `tools/skyblock/import_sacks.py` writes NEU's 28 sack types (contents, every sack item's
       size from its lore: Beginner 640, Small 2,240, Medium 6,720, Large 20,160, Gemstone 128k-2.56M) to `skyrpg/sacks`.
       `Sacks` (skyblock): right-click a sack to add it (early UseItem and UseBlock phases), per-profile contents and owned
