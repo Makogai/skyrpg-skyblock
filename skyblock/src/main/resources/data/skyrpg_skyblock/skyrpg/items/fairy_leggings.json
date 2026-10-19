@@ -22,5 +22,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Fairy's Outfit",
+   "pieces": 4,
+   "description": "§7Gain §c1❤ §7per Fairy Soul. §7You found: §d1 Fairy Soul"
+  }
+ ]
 }

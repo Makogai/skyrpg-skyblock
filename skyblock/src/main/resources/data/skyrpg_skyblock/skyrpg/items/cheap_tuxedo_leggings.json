@@ -21,5 +21,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Dashing",
+   "pieces": 3,
+   "description": "§7Max health set to §c75❤§7. §7Deal §c+50% §7damage! §8Very stylish."
+  }
+ ]
 }

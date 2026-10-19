@@ -85,5 +85,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Salubrious",
+   "pieces": 0,
+   "description": "§7On kill, heal §c+15§7. §8Cooldown: §a3s"
+  },
+  {
+   "kind": "full",
+   "name": "Shadow Assassin",
+   "pieces": 4,
+   "description": "§7Grants §c+1 Strength §7for every mob §7you kill in §cThe Catacombs§7. §8(Strength resets after each run)"
+  }
+ ]
 }

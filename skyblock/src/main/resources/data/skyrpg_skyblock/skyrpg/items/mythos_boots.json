@@ -36,5 +36,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Unearthed",
+   "pieces": 8,
+   "description": "§7Reduces damage taken from §2 §2Mythological §7mobs by §a0%§7."
+  },
+  {
+   "kind": "tiered",
+   "name": "Familiarity",
+   "pieces": 4,
+   "description": "§7Grants §b+0 Magic Find §7on §2 §2Mythological §7mobs."
+  }
+ ]
 }

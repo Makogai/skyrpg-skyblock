@@ -27,5 +27,19 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Vivacious Darkness",
+   "pieces": 4,
+   "description": "§7Costs §32⸎ Soulflow §7per 5s in combat §7while §asneaking§7: §3⁍ §c+30 Strength §3⁍ §e+20 Attack Speed §3⁍ §f+10 Speed §3⁍ §7Multiply §b Intelligence §7by §b1.25x §3⁍ §c+200 Ferocity §7against Endermen §3⁍ §a+100% §7damage against Endermen"
+  },
+  {
+   "kind": "piece",
+   "name": "Enderman Bulwark",
+   "pieces": 0,
+   "description": "§7Kill Endermen to accumulate defense §7against them."
+  }
+ ]
 }

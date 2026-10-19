@@ -64,5 +64,13 @@
    },
    "game_stage": "PROFESSIONAL"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Feast",
+   "pieces": 4,
+   "description": "§7Farming Wild Rose, Sunflower, and §7Moonflower have a §a0.002% §7chance of §7dropping a Helianthus. Inside the §7Greenhouse gives a §a0.8%§7 chance to §7drop one from any crop grown §7inside. Also combines the Tiered §7Bonuses of wearing §a0 pieces §7of the §7Tater Armor, Cropie Armor, and §7Squash Armor. Grants §60 Farming §6Fortune§7."
+  }
+ ]
 }

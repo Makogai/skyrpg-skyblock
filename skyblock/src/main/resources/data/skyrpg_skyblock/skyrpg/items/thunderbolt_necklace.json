@@ -28,5 +28,13 @@
    },
    "game_stage": "PROFESSIONAL"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Static Charge",
+   "pieces": 5,
+   "description": "§7Gains §c1§7 static charge every §e30 §7seconds. §7Hitting a target will cause a §7discharge, adding §a15%§7 damage to that §7hit for each charge collected."
+  }
+ ]
 }

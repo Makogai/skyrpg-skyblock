@@ -223,5 +223,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Berserk",
+   "pieces": 4,
+   "description": "§7Reduces your health and defense by §7half and reduces the cost of §7health-consuming abilities by §c20%§7."
+  }
+ ]
 }

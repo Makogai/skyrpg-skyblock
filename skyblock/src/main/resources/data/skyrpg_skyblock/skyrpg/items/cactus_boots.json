@@ -27,5 +27,13 @@
    },
    "game_stage": "STARTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Deflect",
+   "pieces": 4,
+   "description": "§7Rebound §a33% §7of the damage you take §7back at your enemy."
+  }
+ ]
 }

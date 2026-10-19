@@ -20,5 +20,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Glossy Mineralworks",
+   "pieces": 4,
+   "description": "§7Grants §e+0 Mining Spread §7on §6Ores §7and §9Blocks§7."
+  }
+ ]
 }

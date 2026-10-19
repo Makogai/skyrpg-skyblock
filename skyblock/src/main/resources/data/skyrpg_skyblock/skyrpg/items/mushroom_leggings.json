@@ -29,5 +29,13 @@
    },
    "game_stage": "STARTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Night Affinity",
+   "pieces": 4,
+   "description": "§7Grants the wearer permanent §aNight §aVision§7 while worn."
+  }
+ ]
 }

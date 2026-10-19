@@ -163,5 +163,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Ghast Blaster",
+   "pieces": 0,
+   "description": "§7Kill §aGhasts §7to accumulate §a Defense§7."
+  }
+ ]
 }

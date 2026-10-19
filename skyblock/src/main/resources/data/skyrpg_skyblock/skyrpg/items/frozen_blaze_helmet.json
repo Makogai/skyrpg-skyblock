@@ -124,5 +124,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Frozen Blazing Aura",
+   "pieces": 4,
+   "description": "§7Damages mobs in a §a5§7 block range for §a300 §7base damage + §a3%§7 of their max §c Health §7every second and applies §bSlowness I §7for §e4 §7seconds."
+  }
+ ]
 }

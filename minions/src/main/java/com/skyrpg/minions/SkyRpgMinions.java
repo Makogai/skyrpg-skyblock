@@ -51,6 +51,10 @@ public final class SkyRpgMinions implements ModInitializer {
         JsonDataLoader.register(id("minions"), Minions.DIRECTORY, Minions::load);
         JsonDataLoader.register(id("minion_fuels"), MinionFuels.DIRECTORY, MinionFuels::load);
         MinionSlots.init();
+        // The Enchanted Clock and the Enchanted Time Clock: every minion on your island works an hour ahead.
+        for (String type : new String[] {"time_skip", "time_warp"}) {
+            com.skyrpg.items.ability.Abilities.register(type, SkyRpgMinions::skipHour);
+        }
         UseBlockCallback.EVENT.register((player, level, hand, hit) -> {
             ItemStack held = player.getItemInHand(hand);
             Minions.Placed placed = Minions.fromItem(SkyItems.skyblockId(held));
@@ -62,6 +66,25 @@ public final class SkyRpgMinions implements ModInitializer {
             }
             return InteractionResult.SUCCESS;
         });
+    }
+
+    private static boolean skipHour(ServerPlayer player, com.skyrpg.items.ItemDefinition.Ability ability) {
+        if (!Islands.isIslands(player.level()) || !IslandRules.isMember(player, player.blockPosition())) {
+            player.sendOverlayMessage(Component.literal("You can only skip time on your own island.").withStyle(ChatFormatting.RED));
+            return false;
+        }
+        Profile profile = Profiles.current(player);
+        ServerLevel level = (ServerLevel) player.level();
+        int skipped = 0;
+        for (MinionEntity minion : level.getEntities(MINION, new AABB(Islands.center(profile.island())).inflate(Islands.BUILD_RADIUS + 8, 400, Islands.BUILD_RADIUS + 8),
+                minion -> true)) {
+            minion.skipTime(3_600_000L);
+            skipped++;
+        }
+        player.sendOverlayMessage(Component.literal(skipped == 0 ? "You have no minions here." : "Skipped an hour for " + skipped + " minion" + (skipped == 1 ? "" : "s") + ".")
+                .withStyle(skipped == 0 ? ChatFormatting.RED : ChatFormatting.GREEN));
+        level.playSound(null, player.blockPosition(), SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.PLAYERS, 1.0f, 1.5f);
+        return skipped > 0;
     }
 
     private static void place(ServerPlayer player, ServerLevel level, BlockPos against, Direction face, ItemStack held, Minions.Placed placed) {

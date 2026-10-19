@@ -49,5 +49,13 @@
    "mapped_item_ids": [],
    "game_stage": "MASTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Legacy",
+   "pieces": 1,
+   "description": "§7Grants §5+0.25 Pristine §7and §e+2.5 §eGemstone Spread §7while inside the §bGlacite Mineshafts§7."
+  }
+ ]
 }

@@ -30,5 +30,13 @@
    },
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Long Tuba",
+   "pieces": 4,
+   "description": "§7Grants §3+2 Respiration§7."
+  }
+ ]
 }

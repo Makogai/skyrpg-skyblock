@@ -93,5 +93,13 @@
     120
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Vindicate",
+   "pieces": 4,
+   "description": "§7Grants §f+1 walk speed §7for every §a50 §7defense that you have."
+  }
+ ]
 }

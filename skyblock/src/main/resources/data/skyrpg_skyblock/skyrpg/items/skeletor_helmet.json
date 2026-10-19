@@ -122,5 +122,13 @@
     4
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Skeletor",
+   "pieces": 4,
+   "description": "§7Grants §c+1 Strength §7and §9+1 Crit §9Damage §7for every §b10 §7Skeletor kills"
+  }
+ ]
 }

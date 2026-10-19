@@ -50,5 +50,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Squashbuckle",
+   "pieces": 4,
+   "description": "§7Farming Pumpkins, Melons, and Cocoa §7Beans have a §a0.01% §7chance of §7dropping a Squash. Inside the §7Greenhouse gives a §a4.0%§7 chance to §7drop one from any crop grown §7inside. Grants §60 Farming Fortune§7."
+  }
+ ]
 }

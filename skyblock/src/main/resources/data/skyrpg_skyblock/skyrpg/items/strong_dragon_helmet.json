@@ -95,5 +95,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Strong Blood",
+   "pieces": 4,
+   "description": "§7Improves §9Aspect of the End §8⋗ §c+75 Damage"
+  }
+ ]
 }

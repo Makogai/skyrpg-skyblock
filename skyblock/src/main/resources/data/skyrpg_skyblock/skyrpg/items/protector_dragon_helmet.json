@@ -94,5 +94,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Protective Blood",
+   "pieces": 4,
+   "description": "§7Increases the defense of each §7armor piece by §a+1%§7 §a Defense§7 for §7each missing percent of HP."
+  }
+ ]
 }

@@ -56,5 +56,13 @@
     "tier": 5
    }
   ]
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Bloodrush",
+   "pieces": 0,
+   "description": "§7On teleport: Your next melee hit §7within §a5s §7deals §c10% §7more damage. §8Cooldown: §a3s"
+  }
+ ]
 }

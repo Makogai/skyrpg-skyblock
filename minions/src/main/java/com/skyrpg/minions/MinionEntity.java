@@ -106,6 +106,19 @@ public class MinionEntity extends ArmorStand {
         return Minions.type(typeId);
     }
 
+    /** Time passes for this minion: what it did in the last {@code millis} it does now (the Enchanted Clock). */
+    void skipTime(long millis) {
+        if (lastAction != 0) {
+            lastAction -= millis;
+        }
+        if (fuelEnds != 0) {
+            fuelEnds -= millis;
+        }
+        if (soulflowAt != 0) {
+            soulflowAt -= millis;
+        }
+    }
+
     public int tier() {
         return tier;
     }

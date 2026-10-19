@@ -130,5 +130,25 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Peace Treaty",
+   "pieces": 2,
+   "description": "§7Gain immunity to §3Sea Creatures §7but §7they are immune to you and you can §7no longer catch them."
+  },
+  {
+   "kind": "tiered",
+   "name": "Odger's Blessing",
+   "pieces": 4,
+   "description": "§7Grants §6+0 Trophy Chance§7."
+  },
+  {
+   "kind": "full",
+   "name": "Star Fisher",
+   "pieces": 4,
+   "description": "§7Grants §b+0.4 Fishing Speed§7 per §6✪ §6Upgrade Star §7on your armor."
+  }
+ ]
 }

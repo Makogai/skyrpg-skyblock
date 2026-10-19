@@ -31,5 +31,19 @@
    },
    "game_stage": "MASTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Fireproof",
+   "pieces": 2,
+   "description": "§7Provides immunity to §cCrimson Isle §cLava§7."
+  },
+  {
+   "kind": "tiered",
+   "name": "Lord's Blessing",
+   "pieces": 5,
+   "description": "§7Grants §3+1 Sea Creature Chance§7. §7Grants §b+20 Magic Find §7on §c §cMagmatic§7 mobs."
+  }
+ ]
 }

@@ -26,5 +26,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Dwarf Wannabe",
+   "pieces": 4,
+   "description": "§7Grants §6+30 Mining Speed §7and §6+5 §6Mining Fortune §7while in the §2Dwarven §2Mines§7."
+  }
+ ]
 }

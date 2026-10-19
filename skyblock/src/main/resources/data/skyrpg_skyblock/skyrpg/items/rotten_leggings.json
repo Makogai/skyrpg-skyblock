@@ -93,5 +93,13 @@
     33
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Sieve Body",
+   "pieces": 4,
+   "description": "§7Gain an additional §e20% §7knockback §7resistance to arrows."
+  }
+ ]
 }

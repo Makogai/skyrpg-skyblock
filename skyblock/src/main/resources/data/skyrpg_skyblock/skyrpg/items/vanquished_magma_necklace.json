@@ -162,5 +162,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Magma Cube Absorber",
+   "pieces": 0,
+   "description": "§7Kill §aMagma Cubes §7to accumulate §9 §9Crit Damage§7."
+  }
+ ]
 }

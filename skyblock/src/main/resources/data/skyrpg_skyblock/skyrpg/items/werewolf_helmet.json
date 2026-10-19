@@ -72,5 +72,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Regenerative Howl",
+   "pieces": 4,
+   "description": "§7Upon activating §c Ferocity §7gain §a50 §aDefense §7for 5s (up to 10 stacks)."
+  }
+ ]
 }

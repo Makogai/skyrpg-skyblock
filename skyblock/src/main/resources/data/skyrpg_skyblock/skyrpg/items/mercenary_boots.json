@@ -28,5 +28,13 @@
    },
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Death Tax",
+   "pieces": 4,
+   "description": "§7Earn §6+5 coins §7and heal §c20❤ §7each kill. §8Only against level 10+ mobs!"
+  }
+ ]
 }

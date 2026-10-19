@@ -119,5 +119,13 @@
     11
    ]
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Training",
+   "pieces": 4,
+   "description": "§7Every §950 Zombies killed§7 gives the §7wearer §a+5 §c Health§7 while wearing §7the set. Max 500."
+  }
+ ]
 }

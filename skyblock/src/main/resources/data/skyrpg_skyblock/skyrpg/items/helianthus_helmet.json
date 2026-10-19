@@ -62,5 +62,13 @@
    },
    "game_stage": "MASTER"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Feast",
+   "pieces": 4,
+   "description": "§7Combines the Tiered Bonuses of §7wearing §a0 pieces §7of the Tater Armor, §7Cropie Armor, Squash Armor, and §7Fermento Armor. Grants §60 Farming §6Fortune§7."
+  }
+ ]
 }

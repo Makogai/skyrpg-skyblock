@@ -110,5 +110,19 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Octodexterity",
+   "pieces": 4,
+   "description": "§7Every 3rd strike, deal §c+50% §cDamage §7and apply §2Venom§7 reducing §7healing by §210% §7for §a4 §7seconds."
+  },
+  {
+   "kind": "piece",
+   "name": "Spider Bulwark",
+   "pieces": 0,
+   "description": "§7Kill Spiders to accumulate defense §7against them."
+  }
+ ]
 }

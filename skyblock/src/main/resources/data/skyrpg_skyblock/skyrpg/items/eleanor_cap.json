@@ -22,5 +22,13 @@
    "parent": {},
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Riches",
+   "pieces": 4,
+   "description": "§7Gain §a1.5x §9Scavenger §7Coins."
+  }
+ ]
 }

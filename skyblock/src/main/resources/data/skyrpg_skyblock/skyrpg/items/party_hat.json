@@ -15,5 +15,13 @@
    "parent": {},
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Carnival Craze",
+   "pieces": 5,
+   "description": "§7Gain §a+4% §7more §eCarnival Tokens§7."
+  }
+ ]
 }

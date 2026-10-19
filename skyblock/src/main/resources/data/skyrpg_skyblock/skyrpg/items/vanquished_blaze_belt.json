@@ -263,5 +263,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Blaze Consumer",
+   "pieces": 0,
+   "description": "§7Kill §aBlazes §7to accumulate §c Strength§7."
+  }
+ ]
 }

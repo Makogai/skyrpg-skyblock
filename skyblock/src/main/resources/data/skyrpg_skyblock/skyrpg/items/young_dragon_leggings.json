@@ -107,5 +107,13 @@
    },
    "game_stage": "INTERMEDIATE"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Young Blood",
+   "pieces": 4,
+   "description": "§7Gain §a+70§7 Walk Speed while you are §7above §a50%§7 HP. §8+100 Walk Speed Cap"
+  }
+ ]
 }

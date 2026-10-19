@@ -21,5 +21,19 @@
    },
    "game_stage": "AMATEUR"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Depth Champion",
+   "pieces": 8,
+   "description": "§7Reduces the damage taken from §3Sea §3Creatures §7by §a3%§7."
+  },
+  {
+   "kind": "tiered",
+   "name": "Deepness Within",
+   "pieces": 4,
+   "description": "§7Gain §c6❤ §7per Fishing level. §7Fishing: §eLevel 0"
+  }
+ ]
 }

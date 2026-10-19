@@ -38,6 +38,7 @@ final class Shortbows {
     static final Set<String> SHORTBOWS = Set.of("JUJU_SHORTBOW", "TERMINATOR", "ARTISANAL_SHORTBOW", "ITEM_SPIRIT_BOW", "STARRED_ITEM_SPIRIT_BOW",
             "DRAGON_SHORTBOW", "MACHINE_GUN_BOW", "MOSQUITO_BOW", "SCORPION_BOW");
     private static final String TERMINATOR = "TERMINATOR";
+    private static final String NASTY_BITE = "skyrpg_nasty_bite";
     private static final Map<UUID, Long> NEXT_SHOT = new HashMap<>();
     /** Terminator hits toward Salvation (3 charge it). */
     private static final Map<UUID, Integer> HITS = new HashMap<>();
@@ -60,14 +61,21 @@ final class Shortbows {
             if (!isShortbow(held)) {
                 return false;
             }
-            // a charged Terminator's left click is Salvation (the ability); otherwise it shoots
-            if (TERMINATOR.equals(SkyItems.skyblockId(held)) && HITS.getOrDefault(player.getUUID(), 0) >= 3) {
+            // a charged Terminator's left click is Salvation, the Mosquito Bow's is Nasty Bite (the abilities); otherwise it shoots
+            if (TERMINATOR.equals(SkyItems.skyblockId(held)) && HITS.getOrDefault(player.getUUID(), 0) >= 3
+                    || "MOSQUITO_BOW".equals(SkyItems.skyblockId(held))) {
                 return false;
             }
             shoot(player);
             return true;
         });
         ServerLivingEntityEvents.AFTER_DAMAGE.register((entity, source, base, taken, blocked) -> {
+            // Nasty Bite: the enhanced shot heals the shooter
+            if (source.getDirectEntity() instanceof AbstractArrow bite && bite.getOwner() instanceof ServerPlayer healed && entity instanceof Mob
+                    && bite.entityTags().contains(NASTY_BITE)) {
+                healed.heal((float) (189 / StatTypes.HEALTH_SCALE));
+                bite.removeTag(NASTY_BITE);
+            }
             if (source.getDirectEntity() instanceof AbstractArrow arrow && arrow.getOwner() instanceof ServerPlayer shooter && entity instanceof Mob
                     && arrow.getWeaponItem() != null && TERMINATOR.equals(SkyItems.skyblockId(arrow.getWeaponItem()))) {
                 int hits = Math.min(3, HITS.getOrDefault(shooter.getUUID(), 0) + 1);
@@ -78,6 +86,7 @@ final class Shortbows {
             }
         });
         Abilities.register("salvation", Shortbows::salvation);
+        Abilities.register("nasty_bite", (player, ability) -> shoot(player, true));
     }
 
     static boolean isShortbow(ItemStack stack) {
@@ -86,16 +95,21 @@ final class Shortbows {
     }
 
     private static void shoot(ServerPlayer player) {
+        shoot(player, false);
+    }
+
+    /** An enhanced shot (Nasty Bite) heals on hit; false when it couldn't shoot. */
+    private static boolean shoot(ServerPlayer player, boolean enhanced) {
         long now = player.level().getServer().getTickCount();
         if (now < NEXT_SHOT.getOrDefault(player.getUUID(), 0L)) {
-            return;
+            return false;
         }
         ItemStack bow = player.getMainHandItem();
         ItemStack ammo = Quiver.ammo(player);
         if (ammo.isEmpty()) {
             player.sendOverlayMessage(Msg.text("You don't have any arrows in your quiver!", ChatFormatting.RED));
             NEXT_SHOT.put(player.getUUID(), now + 10);
-            return;
+            return false;
         }
         double attackSpeed = Math.max(0, Stats.get(player, StatTypes.ATTACK_SPEED));
         NEXT_SHOT.put(player.getUUID(), now + Math.max(3, Math.round(10 / (1 + attackSpeed / 100))));
@@ -105,11 +119,15 @@ final class Shortbows {
             Arrow arrow = new Arrow(level, player, ammo.copyWithCount(1), bow);
             arrow.shootFromRotation(player, player.getXRot(), player.getYRot() + i * 5, 0, 3.0f, 0.5f);
             arrow.setCritArrow(true);
+            if (enhanced) {
+                arrow.addTag(NASTY_BITE);
+            }
             arrow.pickup = AbstractArrow.Pickup.DISALLOWED;
             level.addFreshEntity(arrow);
         }
         Quiver.used(player, bow, ammo);
         level.playSound(null, player.blockPosition(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0f, 1.2f);
+        return true;
     }
 
     /** Salvation: after three Terminator hits, a beam through up to five enemies, always a crit. */

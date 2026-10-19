@@ -257,5 +257,13 @@
     }
    ]
   ]
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Hydra Strike",
+   "pieces": 4,
+   "description": "§7Every §a0.2s§7, arrow attacks grant §c1 §7stack of §6⁑ Hydra Strike§7. §8Lose 1 stack §8after 4s of not gaining a stack."
+  }
+ ]
 }

@@ -31,5 +31,13 @@
    },
    "game_stage": "EXPERT"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "piece",
+   "name": "Florist",
+   "pieces": 0,
+   "description": "§7Complete §aGarden Visitor Offers §7to §7gain §6 Farming Fortune§7."
+  }
+ ]
 }

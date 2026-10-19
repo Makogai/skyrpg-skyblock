@@ -25,5 +25,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "tiered",
+   "name": "Mineralworks",
+   "pieces": 4,
+   "description": "§7Grants §e+0 Mining Spread §7on §6Ores §7and §9Blocks§7."
+  }
+ ]
 }

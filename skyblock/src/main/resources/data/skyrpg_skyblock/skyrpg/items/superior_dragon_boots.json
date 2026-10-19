@@ -111,5 +111,13 @@
    },
    "game_stage": "SKILLED"
   }
- }
+ },
+ "set_bonuses": [
+  {
+   "kind": "full",
+   "name": "Superior Blood",
+   "pieces": 4,
+   "description": "§7Increases all §cCombat §7stats and §b §bMagic Find §7by §a5%§7 and §6Aspect of the §6Dragons§7 ability deals §a50%§7 more §7damage."
+  }
+ ]
 }
